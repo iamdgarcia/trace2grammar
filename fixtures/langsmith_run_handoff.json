@@ -1,0 +1,100 @@
+{
+  "runs": [
+    {
+      "id": "run-3002-a",
+      "name": "VoiceAgent Root",
+      "run_type": "chain",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:00.000Z",
+      "end_time": "2026-02-05T11:00:25.000Z",
+      "parent_run_id": null,
+      "inputs": {"message": "Buenas, una duda con la hipoteca"},
+      "outputs": {"final": "escalated"},
+      "error": null
+    },
+    {
+      "id": "run-3002-b",
+      "name": "greet_reply",
+      "run_type": "llm",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:00.000Z",
+      "end_time": "2026-02-05T11:00:02.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"message": "Buenas, una duda con la hipoteca"},
+      "outputs": {"text": "Buenos días. Le ayudo con la hipoteca, primero verifico su identidad."},
+      "error": null
+    },
+    {
+      "id": "run-3002-c",
+      "name": "verify_identity",
+      "run_type": "tool",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:02.000Z",
+      "end_time": "2026-02-05T11:00:04.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"doc": "***7777"},
+      "outputs": {"verified": true},
+      "error": null
+    },
+    {
+      "id": "run-3002-d",
+      "name": "mortgage_query",
+      "run_type": "tool",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:04.000Z",
+      "end_time": "2026-02-05T11:00:09.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"topic": "hipoteca", "question": "cuota"},
+      "outputs": null,
+      "error": "BackendTimeout: mortgage-service did not respond in 5000ms"
+    },
+    {
+      "id": "run-3002-e",
+      "name": "mortgage_query",
+      "run_type": "tool",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:09.000Z",
+      "end_time": "2026-02-05T11:00:14.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"topic": "hipoteca", "question": "cuota"},
+      "outputs": {"monthly": "612.30 EUR", "rate": 3.15},
+      "error": null
+    },
+    {
+      "id": "run-3002-f",
+      "name": "clarify_reply",
+      "run_type": "llm",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:14.000Z",
+      "end_time": "2026-02-05T11:00:17.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"message": "perdona, ¿se refería a la cuota de este mes?"},
+      "outputs": {"text": "Disculpe, ¿se refería a la cuota de este mes o al plan general?"},
+      "error": null
+    },
+    {
+      "id": "run-3002-g",
+      "name": "human_transfer",
+      "run_type": "tool",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:17.000Z",
+      "end_time": "2026-02-05T11:00:20.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"reason": "complex_mortgage_question"},
+      "outputs": {"queue": "mortgage_specialist"},
+      "error": null
+    },
+    {
+      "id": "run-3002-h",
+      "name": "closing",
+      "run_type": "chain",
+      "session_id": "conv-3004",
+      "start_time": "2026-02-05T11:00:20.000Z",
+      "end_time": "2026-02-05T11:00:25.000Z",
+      "parent_run_id": "run-3002-a",
+      "inputs": {"event": "transfer_complete"},
+      "outputs": {"text": "Le comunico con el especialista de hipotecas."},
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {"key": "service.name", "value": {"stringValue": "voice-banking-agent"}},
+          {"key": "gen_ai.system", "value": {"stringValue": "openai"}}
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {"name": "voice-agent-runtime"},
+          "spans": [
+            {
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4744",
+              "spanId": "00f067aa0ba902c1",
+              "name": "send_message",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700002000000000000",
+              "endTimeUnixNano": "1700002002000000000",
+              "attributes": [
+                {"key": "gen_ai.conversation.id", "value": {"stringValue": "conv-1002"}},
+                {"key": "gen_ai.prompt.0.role", "value": {"stringValue": "assistant"}},
+                {"key": "gen_ai.prompt.0.content", "value": {"stringValue": "Buenos días, banco. Dígame."}},
+                {"key": "gen_ai.event.role", "value": {"stringValue": "user"}},
+                {"key": "gen_ai.event.content", "value": {"stringValue": "Quería denunciar un cargo que no reconozco"}}
+              ]
+            },
+            {
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4744",
+              "spanId": "00f067aa0ba902c2",
+              "name": "execute_tool",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700002002000000000",
+              "endTimeUnixNano": "1700002005000000000",
+              "attributes": [
+                {"key": "gen_ai.conversation.id", "value": {"stringValue": "conv-1002"}},
+                {"key": "gen_ai.tool.name", "value": {"stringValue": "verify_identity"}},
+                {"key": "gen_ai.tool.call.result", "value": {"stringValue": "{\"verified\": false, \"reason\": \"answers_mismatch\"}"}}
+              ]
+            },
+            {
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4744",
+              "spanId": "00f067aa0ba902c3",
+              "name": "agent",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700002005000000000",
+              "endTimeUnixNano": "1700002009000000000",
+              "attributes": [
+                {"key": "gen_ai.conversation.id", "value": {"stringValue": "conv-1002"}},
+                {"key": "gen_ai.event.name", "value": {"stringValue": "caller_hangup"}},
+                {"key": "gen_ai.event.silence_before_s", "value": {"doubleValue": 12.5}}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

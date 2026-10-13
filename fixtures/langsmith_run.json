@@ -1,0 +1,52 @@
+{
+  "runs": [
+    {
+      "id": "run-3001-a",
+      "name": "VoiceAgent Root",
+      "run_type": "chain",
+      "session_id": "conv-3003",
+      "start_time": "2026-02-05T10:00:00.000Z",
+      "end_time": "2026-02-05T10:00:12.000Z",
+      "parent_run_id": null,
+      "inputs": {"message": "Quiero hacer una transferencia urgente"},
+      "outputs": {"final": "abandoned_before_auth"},
+      "error": null
+    },
+    {
+      "id": "run-3001-b",
+      "name": "greet_reply",
+      "run_type": "llm",
+      "session_id": "conv-3003",
+      "start_time": "2026-02-05T10:00:00.000Z",
+      "end_time": "2026-02-05T10:00:02.000Z",
+      "parent_run_id": "run-3001-a",
+      "inputs": {"message": "Quiero hacer una transferencia urgente"},
+      "outputs": {"text": "Con gusto. Antes necesito verificar su identidad, ¿me facilita su documento?"},
+      "error": null
+    },
+    {
+      "id": "run-3001-c",
+      "name": "verify_identity",
+      "run_type": "tool",
+      "session_id": "conv-3003",
+      "start_time": "2026-02-05T10:00:02.000Z",
+      "end_time": "2026-02-05T10:00:05.000Z",
+      "parent_run_id": "run-3001-a",
+      "inputs": {"doc": "***5555"},
+      "outputs": null,
+      "error": null
+    },
+    {
+      "id": "run-3001-d",
+      "name": "user_hangup",
+      "run_type": "chain",
+      "session_id": "conv-3003",
+      "start_time": "2026-02-05T10:00:05.000Z",
+      "end_time": "2026-02-05T10:00:05.500Z",
+      "parent_run_id": "run-3001-a",
+      "inputs": {"event": "caller_disconnected"},
+      "outputs": {"reason": "no_response_from_caller", "silence_before": 8.0},
+      "error": null
+    }
+  ]
+}
