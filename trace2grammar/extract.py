@@ -38,6 +38,7 @@ PROGRESS_STATES = (
     "q_close",
 )
 TERMINALS = ("theta_cont", "theta_aban", "theta_hand", "theta_esc")
+ALPHABET = PROGRESS_STATES + TERMINALS
 
 
 @dataclass

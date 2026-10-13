@@ -75,6 +75,49 @@ print(r["outcome"], "cycle_depth =", r["cycle_depth"])
 # theta_cont cycle_depth = 1
 ```
 
+## Region coverage — what are we NOT testing?
+
+The headline use: given **real** production walks and a **simulated** (or candidate-agent) set,
+which regions of conversational-behavior space does the sim set cover, and which does it miss?
+Made measurable, per outcome class.
+
+**Method** (deterministic, stdlib-only):
+1. **Features** — each walk becomes a vector, two encodings: `grammar` (n_states, duration,
+   cycle_depth, per-state visit counts, tool calls, errors, terminal one-hot) or `bigram`
+   (first-K transition histogram); columns z-normalized (constant columns → 0, no NaN).
+2. **Projection** — PCA (power iteration, hand-rolled) fit on the REAL set; sim points projected
+   onto the same axes (production defines the space; sim must not move it).
+3. **Density** — Gaussian-bump accumulation on a res×res grid over the real extent + smoothing
+   (box blur), normalized by the real peak so both clouds share a scale.
+4. **Coverage** — a cell is *occupied* when real density > eps·core; *covered* when a sim point
+   falls inside it or the sim kernel puts ≥ eps·core mass there. Uncovered cells carry their
+   nearest real exemplar + local density; `top_k_uncovered()` dedups neighbors and returns the
+   highest-density exemplars: **the tests you are not running**.
+
+**CLI** (real output from the shipped fixtures — 2 real conversations, 1 simulated):
+
+```
+$ python -m trace2grammar.coverage \
+    --real fixtures/otel_genai_trace.json \
+    --real fixtures/openinference_trace.json \
+    --sim fixtures/langsmith_run.json --top 3
+real n=2  sim n=1  features=grammar
+grid 24x24  occupied 256 cells (eps=0.05, bw=0.12)
+coverage: 40.2% overall | per class: contained 45.3%, handoff 35.2%
+top-3 uncovered regions (the tests you are not running):
+ 1. cell (2,11) density 0.86 | nearest real: "No puedo entrar en mi banca online" [handoff, D=1, 19.0s]
+ 2. cell (21,12) density 0.86 | nearest real: "Hola, quiero consultar el saldo de mi cuenta" [contained, D=1, 11.5s]
+ 3. cell (2,14) density 0.54 | nearest real: "No puedo entrar en mi banca online" [handoff, D=1, 19.0s]
+written: coverage_report.html, coverage_report.json
+```
+
+`coverage_report.html` renders the atlas: real = blue dots, sim = orange diamonds, uncovered
+cells shaded red with nearest-exemplar tooltips.
+
+**Honest scope:** this 2-D projection + grid density is the deterministic baseline (any learned
+feature step can replace `conversation_features` without touching the coverage math). The
+MiniLM-embedding variant, KDE-calibrated bandwidth, and voice-physics channels are future work.
+
 ## Relation to the research program
 
 - **Paper**: *Turn-Level Trajectory Grammars for Voice Agents* — the grammar G = (Q, Σ, δ) this
