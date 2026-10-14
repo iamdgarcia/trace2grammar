@@ -42,6 +42,7 @@ for fname, fmt in [
     ("openinference_trace.json", "openinference"),
     ("langsmith_run.json", "langsmith"),
     ("langsmith_run_handoff.json", "langsmith"),
+    ("taubench_episodes.json", "taubench"),
 ]:
     obj = load(fname)
     events = normalize_trace(obj, fmt)
@@ -134,6 +135,25 @@ with open(os.path.join(ROOT, "atlas_demo.html"), "w", encoding="utf-8") as fh:
 check(
     "atlas_demo.html written (open in browser)",
     os.path.exists(os.path.join(ROOT, "atlas_demo.html")),
+)
+
+# --- tau-bench: environment-verified outcomes vs heuristic walker ------------
+tb = load("taubench_episodes.json")
+tb_pass = extract(tb[0], "taubench")
+tb_fail = extract(tb[1], "taubench")
+check("taubench pass episode: outcome theta_cont", tb_pass["outcome"] == "theta_cont")
+check("taubench fail episode: outcome theta_hand (public analogue)", tb_fail["outcome"] == "theta_hand")
+check(
+    "taubench: tool calls extracted from antml markup",
+    any(e["kind"] == "tool_call" for e in tb_pass["events"]),
+)
+check(
+    "taubench: auth channel recognized (find_user_* tools)",
+    "q_auth" in [w["state"] for w in tb_pass["walk"]],
+)
+check(
+    "taubench: multi-episode list ordered (fail episode after pass)",
+    extract(list(tb), "taubench")["events"][-1]["attrs"].get("task_id") == tb[1]["task_id"],
 )
 
 # --- summary ---------------------------------------------------------------------

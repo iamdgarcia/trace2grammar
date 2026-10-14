@@ -117,7 +117,9 @@ def normalize_trace(
     """Convert a raw export into a canonical event stream sorted by time.
 
     fmt: 'otel' (OTel ResourceSpans with GenAI semconv), 'openinference'
-    (OpenInference span attributes), 'langsmith' ({runs: [...]} API export).
+    (OpenInference span attributes), 'langsmith' ({runs: [...]} API export),
+    'taubench' (tau-bench episode: {task_id, reward, info, traj[...]} — accepts a
+    single episode dict or a list; environment-verified outcome drives the terminal).
     """
     cfg = config or ExtractionConfig()
     if fmt == "otel":
@@ -126,9 +128,68 @@ def normalize_trace(
         return _normalize_otel(obj, cfg, openinference=True)
     if fmt == "langsmith":
         return _normalize_langsmith(obj, cfg)
+    if fmt == "taubench":
+        return _normalize_taubench(obj, cfg)
     raise ValueError(
-        f"unknown format: {fmt!r} (use 'otel' | 'openinference' | 'langsmith')"
+        f"unknown format: {fmt!r} (use 'otel' | 'openinference' | 'langsmith' | 'taubench')"
     )
+
+
+# Tuned config for tau-bench episodes: its identification tools (find_user_id_*) are
+# the q_auth channel; everything else maps through the default patterns.
+TAUBENCH_CONFIG = ExtractionConfig(
+    auth_tool_patterns=("verify", "identity", "auth", "otp", "login", "find_user"),
+)
+
+
+def _antml_tool_names(content: str) -> list[str]:
+    """Tool names from tau-bench assistant markup (<antml:invoke name="...">)."""
+    return re.findall(r'<antml:invoke name="([^"]+)"', content or "")
+
+
+def _normalize_taubench(obj, cfg: ExtractionConfig) -> list[Event]:
+    """tau-bench episode export -> canonical events.
+
+    The export carries NO wall-clock timestamps, so monotonic synthetic stamps
+    (message index * 1000) preserve ordering only. Terminal outcome comes from the
+    environment-verified reward: pass -> session_end (the walker closes into
+    theta_cont); fail -> handoff, the documented public analogue for 'the episode
+    needed capabilities the agent could not provide' (NO write-check refinement is
+    derivable from the export: only gt_data_hash survives, not the env DB diff).
+    Heuristic-vs-environment outcome agreement is therefore a measurable quantity,
+    not an assumption.
+    """
+    episodes = obj if isinstance(obj, list) else [obj]
+    events: list[Event] = []
+    for ep in episodes:
+        base = 0 if not events else events[-1]["t_ms"] + 2000
+        traj = ep.get("traj") or []
+        for i, msg in enumerate(traj):
+            role = msg.get("role")
+            content = str(msg.get("content") or "")
+            name = msg.get("name")
+            t = base + i * 1000
+            if role == "user":
+                events.append({"t_ms": t, "kind": "user_msg", "name": None, "attrs": {"content": content}})
+            elif role == "assistant":
+                calls = _antml_tool_names(content)
+                if calls:
+                    events.append({"t_ms": t, "kind": "assistant_msg", "name": None, "attrs": {"content": content}})
+                    for cname in calls:
+                        events.append({"t_ms": t, "kind": "tool_call", "name": cname, "attrs": {}})
+                else:
+                    events.append({"t_ms": t, "kind": "assistant_msg", "name": None, "attrs": {"content": content}})
+            elif role == "tool":
+                kind = "tool_error" if content.lower().startswith("error") else "tool_result"
+                events.append({"t_ms": t, "kind": kind, "name": name, "attrs": {"content": content}})
+        reward = ep.get("reward")
+        t_end = base + len(traj) * 1000
+        if reward == 1.0:
+            events.append({"t_ms": t_end, "kind": "session_end", "name": "taubench_pass", "attrs": {"task_id": ep.get("task_id")}})
+        else:
+            # Public analogue: fail -> handoff (see docstring for why not theta_esc).
+            events.append({"t_ms": t_end, "kind": "handoff", "name": "taubench_fail", "attrs": {"task_id": ep.get("task_id")}})
+    return events
 
 
 def _flatten_attrs(raw) -> dict:
@@ -569,6 +630,8 @@ def infer_states(events: list[Event], config: ExtractionConfig | None = None) ->
 
 def extract(obj, fmt: str, config: ExtractionConfig | None = None) -> dict:
     """One-call convenience: normalize + infer."""
+    if config is None and fmt == "taubench":
+        config = TAUBENCH_CONFIG
     cfg = config or ExtractionConfig()
     events = normalize_trace(obj, fmt, cfg)
     result = infer_states(events, cfg)

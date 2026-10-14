@@ -33,6 +33,7 @@ LangSmith ─┘        (attribute mapping)   {t_ms, kind, name}    (rule baseli
 | **OTel GenAI semconv** | `fmt='otel'` | `resourceSpans[].scopeSpans[].spans[]` with `gen_ai.*` attributes |
 | **OpenInference** | `fmt='openinference'` | same span envelope, `openinference.span.kind` (LLM/AGENT/TOOL/CHAIN), `input.value`/`output.value`, `llm.tool_calls` |
 | **LangSmith API export** | `fmt='langsmith'` | `{runs: [{name, run_type, inputs, outputs, start_time, end_time, parent_run_id, error}]}` |
+| **tau-bench episode** | `fmt='taubench'` | `{task_id, reward, info, traj[]}` (single or list) from `historical_trajectories/*.json` — environment-verified outcome drives the terminal (pass→contained, fail→handoff as documented public analogue) |
 
 To add a format: write one `_normalize_<fmt>(obj, cfg) -> list[Event]` function producing the
 canonical stream (`{t_ms, kind, name, attrs}` with `kind ∈ user_msg | assistant_msg | tool_call |
