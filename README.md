@@ -76,6 +76,17 @@ print(r["outcome"], "cycle_depth =", r["cycle_depth"])
 # theta_cont cycle_depth = 1
 ```
 
+Same one-call shape for the other dialects — e.g. a tau-bench episode (single dict or list of
+episodes from `historical_trajectories/*.json`); the environment-verified reward drives the
+terminal class (pass → contained, fail → the handoff public analogue):
+
+```python
+obj = json.load(open("fixtures/taubench_episodes.json"))
+r = extract(obj, "taubench")   # accepts one episode or a list
+print(r["outcome"], "cycle_depth =", r["cycle_depth"])
+# theta_hand cycle_depth = 1
+```
+
 ## Region coverage — what are we NOT testing?
 
 The headline use: given **real** production walks and a **simulated** (or candidate-agent) set,
