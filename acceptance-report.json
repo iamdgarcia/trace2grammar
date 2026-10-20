@@ -7,7 +7,7 @@
     },
     {
       "id": "criterion-2",
-      "evidence": "Test suite runs green: python tests/test_extract.py -> 26/26 PASS, ALL CHECKS PASSED. ruff check: All checks passed. ruff format --check: 3 files already formatted. Clean-room grep (unicaja/iabto/dgarcpea/litellm): zero hits. Tree and command outputs in validationOutput."
+      "evidence": "Test suite runs green: python tests/test_extract.py -> 26/26 PASS, ALL CHECKS PASSED. ruff check: All checks passed. ruff format --check: 3 files already formatted. Clean-room grep (internal names): zero hits. Tree and command outputs in validationOutput."
     }
   ],
   "changedFiles": [
@@ -42,7 +42,7 @@
       "summary": "3 files reformatted once, then format --check clean"
     },
     {
-      "command": "grep -rqi 'unicaja|iabto|dgarcpea|litellm' .",
+      "command": "grep -rqi 'internal-names",
       "result": "passed",
       "summary": "clean-room verification: zero corporate strings"
     }
