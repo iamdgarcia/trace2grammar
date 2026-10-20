@@ -1,0 +1,41 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {},
+      "scopeSpans": [
+        {
+          "spans": [
+            {
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+              "spanId": "00f067aa0ba902b8",
+              "name": "execute_tool",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000002000000000",
+              "endTimeUnixNano": "1700000003500000000",
+              "attributes": [
+                {"key": "gen_ai.conversation.id", "value": {"stringValue": "conv-split"}},
+                {"key": "gen_ai.tool.name", "value": {"stringValue": "verify_identity"}},
+                {"key": "gen_ai.tool.call.id", "value": {"stringValue": "call_abc123"}},
+                {"key": "gen_ai.tool.call.arguments", "value": {"stringValue": "{\"doc_id\": \"***1234\"}"}}
+              ]
+            },
+            {
+              "traceId": "4bf92f3577b34da6a3ce929d0e0e4736",
+              "spanId": "00f067aa0ba902b9",
+              "name": "execute_tool",
+              "kind": "SPAN_KIND_INTERNAL",
+              "startTimeUnixNano": "1700000003500000000",
+              "endTimeUnixNano": "1700000004000000000",
+              "attributes": [
+                {"key": "gen_ai.conversation.id", "value": {"stringValue": "conv-split"}},
+                {"key": "gen_ai.tool.name", "value": {"stringValue": "verify_identity"}},
+                {"key": "gen_ai.tool.call.id", "value": {"stringValue": "call_abc123"}},
+                {"key": "gen_ai.tool.call.result", "value": {"stringValue": "{\"verified\": true}"}}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

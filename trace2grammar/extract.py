@@ -170,25 +170,73 @@ def _normalize_taubench(obj, cfg: ExtractionConfig) -> list[Event]:
             name = msg.get("name")
             t = base + i * 1000
             if role == "user":
-                events.append({"t_ms": t, "kind": "user_msg", "name": None, "attrs": {"content": content}})
+                events.append(
+                    {
+                        "t_ms": t,
+                        "kind": "user_msg",
+                        "name": None,
+                        "attrs": {"content": content},
+                    }
+                )
             elif role == "assistant":
                 calls = _antml_tool_names(content)
                 if calls:
-                    events.append({"t_ms": t, "kind": "assistant_msg", "name": None, "attrs": {"content": content}})
+                    events.append(
+                        {
+                            "t_ms": t,
+                            "kind": "assistant_msg",
+                            "name": None,
+                            "attrs": {"content": content},
+                        }
+                    )
                     for cname in calls:
-                        events.append({"t_ms": t, "kind": "tool_call", "name": cname, "attrs": {}})
+                        events.append(
+                            {"t_ms": t, "kind": "tool_call", "name": cname, "attrs": {}}
+                        )
                 else:
-                    events.append({"t_ms": t, "kind": "assistant_msg", "name": None, "attrs": {"content": content}})
+                    events.append(
+                        {
+                            "t_ms": t,
+                            "kind": "assistant_msg",
+                            "name": None,
+                            "attrs": {"content": content},
+                        }
+                    )
             elif role == "tool":
-                kind = "tool_error" if content.lower().startswith("error") else "tool_result"
-                events.append({"t_ms": t, "kind": kind, "name": name, "attrs": {"content": content}})
+                kind = (
+                    "tool_error"
+                    if content.lower().startswith("error")
+                    else "tool_result"
+                )
+                events.append(
+                    {
+                        "t_ms": t,
+                        "kind": kind,
+                        "name": name,
+                        "attrs": {"content": content},
+                    }
+                )
         reward = ep.get("reward")
         t_end = base + len(traj) * 1000
         if reward == 1.0:
-            events.append({"t_ms": t_end, "kind": "session_end", "name": "taubench_pass", "attrs": {"task_id": ep.get("task_id")}})
+            events.append(
+                {
+                    "t_ms": t_end,
+                    "kind": "session_end",
+                    "name": "taubench_pass",
+                    "attrs": {"task_id": ep.get("task_id")},
+                }
+            )
         else:
             # Public analogue: fail -> handoff (see docstring for why not theta_esc).
-            events.append({"t_ms": t_end, "kind": "handoff", "name": "taubench_fail", "attrs": {"task_id": ep.get("task_id")}})
+            events.append(
+                {
+                    "t_ms": t_end,
+                    "kind": "handoff",
+                    "name": "taubench_fail",
+                    "attrs": {"task_id": ep.get("task_id")},
+                }
+            )
     return events
 
 
@@ -221,6 +269,22 @@ def _iso_to_ms(iso: str) -> int:
 def _normalize_otel(
     obj, cfg: ExtractionConfig, openinference: bool = False
 ) -> list[Event]:
+    # First pass: collect tool spans keyed by gen_ai.tool.call.id (required by
+    # otel-genai #489/#525 on execute_tool spans). Newer exports emit the call and
+    # its result as SEPARATE spans sharing the id; pairing them here prevents
+    # phantom duplicate tool_calls (inflated n_tool_calls, false retry cycles).
+    # Older exports without ids fall back to per-span self-contained handling.
+    by_call_id: dict[str, dict] = {}
+    for rs in obj.get("resourceSpans", []):
+        for scope in rs.get("scopeSpans", []):
+            for span in scope.get("spans", []):
+                a = _flatten_attrs(span.get("attributes"))
+                cid = a.get("gen_ai.tool.call.id")
+                if cid and (
+                    a.get("gen_ai.tool.name") or "execute_tool" in span.get("name", "")
+                ):
+                    by_call_id.setdefault(cid, []).append((span, a))
+
     events: list[Event] = []
     for rs in obj.get("resourceSpans", []):
         for scope in rs.get("scopeSpans", []):
@@ -248,6 +312,46 @@ def _normalize_otel(
                         m = re.search(r'"name"\s*:\s*"([^"]+)"', tc)
                         tool_name = m.group(1) if m else name
                 if is_tool and tool_name:
+                    cid = a.get("gen_ai.tool.call.id")
+                    paired = by_call_id.get(cid, []) if cid else []
+                    if len(paired) > 1:
+                        # call/result live on separate spans sharing the id: the call
+                        # span (no result attr) emits only tool_call; its result span
+                        # carries the tool_result. Skip the result half here.
+                        has_own_result = "gen_ai.tool.call.result" in a or bool(
+                            a.get("output.value")
+                        )
+                        if not has_own_result:
+                            events.append(
+                                {
+                                    "t_ms": t0,
+                                    "kind": "tool_call",
+                                    "name": tool_name,
+                                    "attrs": a,
+                                }
+                            )
+                            continue
+                        # result half: skip its phantom tool_call duplicate
+                        errored = "error.type" in a
+                        if errored:
+                            events.append(
+                                {
+                                    "t_ms": t1,
+                                    "kind": "tool_error",
+                                    "name": tool_name,
+                                    "attrs": a,
+                                }
+                            )
+                        else:
+                            events.append(
+                                {
+                                    "t_ms": t1,
+                                    "kind": "tool_result",
+                                    "name": tool_name,
+                                    "attrs": a,
+                                }
+                            )
+                        continue
                     errored = "error.type" in a
                     if errored:
                         events.append(

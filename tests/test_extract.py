@@ -96,6 +96,33 @@ r5 = extract(lsh, "langsmith")
 check("langsmith handoff: outcome theta_hand", r5["outcome"] == "theta_hand")
 check("langsmith handoff: timeout retry counted (D>=1)", r5["cycle_depth"] >= 1)
 
+# --- 7b. otel split call/result spans: correlate by gen_ai.tool.call.id --------
+# otel-genai #489/#525: execute_tool spans carry a provider tool call ID; newer
+# exporters emit call and result as separate spans sharing it. Without id
+# correlation each span became a self-contained phantom (2 tool_calls, 2 results).
+split = load("otel_genai_split_spans.json")
+ev_split = normalize_trace(split, "otel")
+check(
+    "otel split spans: one tool_call (id correlation, no phantom duplicate)",
+    sum(1 for e in ev_split if e["kind"] == "tool_call") == 1,
+)
+check(
+    "otel split spans: one tool_result paired via call id",
+    sum(1 for e in ev_split if e["kind"] == "tool_result") == 1,
+)
+check(
+    "otel split spans: result timestamped after call",
+    [e["t_ms"] for e in ev_split if e["kind"] == "tool_call"][0]
+    < [e["t_ms"] for e in ev_split if e["kind"] == "tool_result"][0],
+)
+r_split = extract(split, "otel")
+check(
+    "otel split spans: walker sees one clean auth step (no false retry cycle)",
+    r_split["cycle_depth"] == 0
+    and "q_auth" in [w["state"] for w in r_split["walk"]]
+    and not any(w["transition_type"] == "tool-fail" for w in r_split["walk"]),
+)
+
 # --- 6. config adaptability ----------------------------------------------------
 custom = ExtractionConfig(auth_tool_patterns=("kyc",))
 r6 = extract(otel, "otel", custom)
@@ -142,7 +169,10 @@ tb = load("taubench_episodes.json")
 tb_pass = extract(tb[0], "taubench")
 tb_fail = extract(tb[1], "taubench")
 check("taubench pass episode: outcome theta_cont", tb_pass["outcome"] == "theta_cont")
-check("taubench fail episode: outcome theta_hand (public analogue)", tb_fail["outcome"] == "theta_hand")
+check(
+    "taubench fail episode: outcome theta_hand (public analogue)",
+    tb_fail["outcome"] == "theta_hand",
+)
 check(
     "taubench: tool calls extracted from antml markup",
     any(e["kind"] == "tool_call" for e in tb_pass["events"]),
@@ -153,7 +183,8 @@ check(
 )
 check(
     "taubench: multi-episode list ordered (fail episode after pass)",
-    extract(list(tb), "taubench")["events"][-1]["attrs"].get("task_id") == tb[1]["task_id"],
+    extract(list(tb), "taubench")["events"][-1]["attrs"].get("task_id")
+    == tb[1]["task_id"],
 )
 
 # --- summary ---------------------------------------------------------------------
