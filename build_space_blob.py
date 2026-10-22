@@ -21,7 +21,7 @@ def load(prefix):
 
 real = load("cont") + load("aban") + load("hand")
 sim = load("sim")
-cov = coverage_from_walks([r["res"] for r in real], [r["res"] for r in sim], res=24, eps=0.05, mode="grammar")
+cov = coverage_from_walks([r["res"] for r in real], [r["res"] for r in sim], res=24, eps=0.10, mode="grammar")
 print("coverage:", cov["coverage_pct"], "% |", cov["covered_cells"], "/", cov["occupied_cells"])
 
 LBL = {"theta_cont": "contained", "theta_aban": "abandoned", "theta_hand": "handoff"}
