@@ -1,0 +1,6 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I want to check my account balance
+tool(verify_identity): ok
+tool(check_balance): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?
+user:

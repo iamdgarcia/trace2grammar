@@ -1,0 +1,8 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I want to dispute a charge
+tool(verify_identity): ok
+tool(file_dispute): error timeout
+tool(file_dispute): ok
+assistant: All set. Is there anything else?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

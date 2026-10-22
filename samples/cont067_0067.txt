@@ -1,0 +1,7 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to check my account balance
+tool(verify_identity): ok
+tool(check_balance): ok
+assistant: Done. Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

@@ -1,0 +1,12 @@
+assistant: Northside Clinic, how may I help you?
+user: My medication ran out, I need a refill
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: Come again?
+assistant: Of course: could you confirm the last four digits?
+user: Yes
+tool(request_refill): error timeout
+tool(request_refill): ok
+assistant: That's completed. Anything else today?
+user: No, that's everything.
+assistant: Anything else we can do for you? ... Have a good day!

@@ -1,0 +1,6 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need to cancel my appointment
+tool(verify_identity): ok
+tool(cancel_appointment): ok
+assistant: We have two options: morning or afternoon. Which do you prefer?
+user:

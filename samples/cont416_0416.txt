@@ -1,0 +1,8 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Can you tell me how much money I have?
+tool(verify_identity): ok
+tool(check_balance): error timeout
+tool(check_balance): ok
+assistant: That's completed. Anything else today?
+user: No, thank you.
+assistant: Is there anything else I can help you with? ... Have a great day!

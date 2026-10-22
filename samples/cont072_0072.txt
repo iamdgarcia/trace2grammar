@@ -1,0 +1,11 @@
+assistant: Acme Bank support, how can I help?
+user: I want to cancel my subscription
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: Come again?
+assistant: Of course: which day would you prefer?
+user: Yes
+tool(cancel_subscription): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

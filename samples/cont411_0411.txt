@@ -1,0 +1,11 @@
+assistant: Acme Bank support, how can I help?
+user: My card doesn't work, I think it's broken
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: Come again?
+assistant: Of course: which day would you prefer?
+user: Sure
+tool(order_card): ok
+assistant: That's completed. Anything else today?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

@@ -1,0 +1,7 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Add a new payee to my account
+tool(verify_identity): ok
+assistant: That's above what I can arrange here. Let me pass you to a human agent.
+user: Yes, put me through.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, one moment please.

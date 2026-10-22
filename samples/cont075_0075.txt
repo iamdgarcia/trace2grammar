@@ -1,0 +1,11 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I want to send money to a new payee
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: Come again?
+assistant: Of course: which day would you prefer?
+user: Yes please
+tool(add_payee): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

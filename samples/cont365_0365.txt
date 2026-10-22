@@ -1,0 +1,11 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: I need to cancel my appointment
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: What do you mean?
+assistant: Of course: which day would you prefer?
+user: Yes please
+tool(cancel_appointment): ok
+assistant: That's completed. Anything else today?
+user: No, thank you.
+assistant: Thanks for calling, have a nice day!

@@ -1,0 +1,12 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Add a new payee to my account
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: Can you repeat that?
+assistant: Of course: which day would you prefer?
+user: Yes please
+tool(add_payee): error timeout
+tool(add_payee): ok
+assistant: Done. Anything else I can do for you?
+user: No, that's everything.
+assistant: Is there anything else I can help you with? ... Have a great day!

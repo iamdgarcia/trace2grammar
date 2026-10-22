@@ -1,0 +1,7 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: What's my balance?
+tool(verify_identity): ok
+assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
+user: Yes, put me through.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, one moment please.

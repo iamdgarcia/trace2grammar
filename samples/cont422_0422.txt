@@ -1,0 +1,11 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: You charged me twice, I want my money back
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: Can you repeat that?
+assistant: Of course: could you confirm the last four digits?
+user: Yes
+tool(file_dispute): ok
+assistant: Done. Anything else I can do for you?
+user: No, that's everything.
+assistant: Is there anything else I can help you with? ... Have a great day!

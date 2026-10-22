@@ -1,0 +1,12 @@
+assistant: Hello, Northside Clinic support. What do you need?
+user: Can you renew my prescription?
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: I don't understand
+assistant: Of course: which day would you prefer?
+user: Yes
+tool(request_refill): error timeout
+tool(request_refill): ok
+assistant: Done. Anything else I can do for you?
+user: No, that's everything.
+assistant: Anything else we can do for you? ... Have a good day!

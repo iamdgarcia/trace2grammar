@@ -1,0 +1,11 @@
+assistant: Northside Clinic, how may I help you?
+user: Can I change my Monday appointment?
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: Come again?
+assistant: Of course: could you confirm the last four digits?
+user: Yes, that's correct
+tool(reschedule_appointment): ok
+assistant: That's completed. Anything else today?
+user: No, that's everything.
+assistant: Thanks for calling, have a nice day!

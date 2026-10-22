@@ -1,0 +1,8 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I was overcharged last week
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+assistant: I can't verify your identity automatically, so for security I need to pass you to a human agent.
+tool(escalate_to_human): ok
+assistant: Connecting you with our verification team, please hold.

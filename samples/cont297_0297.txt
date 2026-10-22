@@ -1,0 +1,8 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: I need to cancel my appointment
+tool(verify_identity): ok
+tool(cancel_appointment): error timeout
+tool(cancel_appointment): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Thanks for calling, have a nice day!

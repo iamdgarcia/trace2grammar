@@ -1,0 +1,6 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: I can't make it to my visit, I need another time
+tool(verify_identity): ok
+tool(reschedule_appointment): ok
+assistant: We have two options: morning or afternoon. Which do you prefer?
+user:

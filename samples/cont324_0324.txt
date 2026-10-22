@@ -1,0 +1,8 @@
+assistant: Northside Clinic, how may I help you?
+user: I can't make it to my visit, I need another time
+tool(verify_identity): ok
+tool(reschedule_appointment): error timeout
+tool(reschedule_appointment): ok
+assistant: All set. Is there anything else?
+user: No, thank you.
+assistant: Thank you for choosing Northside Clinic, have a great day!

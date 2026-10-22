@@ -1,0 +1,8 @@
+assistant: Northside Clinic, how may I help you?
+user: Can I get a dental cleaning?
+tool(verify_identity): ok
+tool(book_appointment): error timeout
+tool(book_appointment): ok
+assistant: All set. Is there anything else?
+user: No, that's everything.
+assistant: Thank you for choosing Northside Clinic, have a great day!

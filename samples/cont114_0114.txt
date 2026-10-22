@@ -1,0 +1,8 @@
+assistant: Acme Bank support, how can I help?
+user: Add a new payee to my account
+tool(verify_identity): ok
+tool(add_payee): error timeout
+tool(add_payee): ok
+assistant: All set. Is there anything else?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

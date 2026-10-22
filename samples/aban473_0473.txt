@@ -1,0 +1,6 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Do you have anything available tomorrow?
+tool(verify_identity): ok
+tool(book_appointment): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?
+user:

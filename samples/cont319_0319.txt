@@ -1,0 +1,12 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: There is a charge I don't recognize
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: Sorry, what did you say?
+assistant: Of course: could you confirm the last four digits?
+user: Yes
+tool(file_dispute): error timeout
+tool(file_dispute): ok
+assistant: That's completed. Anything else today?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

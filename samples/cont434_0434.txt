@@ -1,0 +1,7 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Can you tell me how much money I have?
+tool(verify_identity): ok
+tool(check_balance): ok
+assistant: Done. Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

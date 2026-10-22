@@ -1,0 +1,6 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Cancel my visit on Thursday please
+tool(verify_identity): ok
+tool(cancel_appointment): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?
+user:

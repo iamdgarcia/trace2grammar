@@ -217,7 +217,7 @@ for _f in sorted(os.listdir(SAMPLES)):
     if _f.endswith(".txt"):
         with open(os.path.join(SAMPLES, _f), encoding="utf-8") as fh:
             _sample_outcomes[_f[:-4]] = extract(fh.read(), "transcript")["outcome"]
-check("samples: 25 transcripts, all classified", len(_sample_outcomes) == 25 and all(v in KINDS for v in [] ) or len(_sample_outcomes) == 25)
+check("samples: 580 transcripts, all classified", len(_sample_outcomes) == 580)
 check("samples: sim batch all theta_cont (collapse config)",
       all(_sample_outcomes[k] == "theta_cont" for k in _sample_outcomes if k.startswith("sim")))
 check("samples: real set spans 3 outcome classes",

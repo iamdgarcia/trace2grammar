@@ -1,0 +1,11 @@
+assistant: Northside Clinic, how may I help you?
+user: Can I get a dental cleaning?
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: What do you mean?
+assistant: Of course: could you confirm the last four digits?
+user: Sure
+tool(book_appointment): ok
+assistant: All set. Is there anything else?
+user: No, that's everything.
+assistant: Thanks for calling, have a nice day!

@@ -1,0 +1,8 @@
+assistant: Northside Clinic, how may I help you?
+user: My medication ran out, I need a refill
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+assistant: I can't verify your identity automatically, so for security I need to pass you to a human agent.
+tool(escalate_to_human): ok
+assistant: Connecting you with our verification team, please hold.

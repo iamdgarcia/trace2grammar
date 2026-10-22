@@ -1,0 +1,8 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: My medication ran out, I need a refill
+tool(verify_identity): ok
+tool(request_refill): error timeout
+tool(request_refill): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Anything else we can do for you? ... Have a good day!

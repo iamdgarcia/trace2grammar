@@ -1,0 +1,12 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: My password doesn't work anymore
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: What do you mean?
+assistant: Of course: could you confirm the last four digits?
+user: Sure
+tool(reset_password): error timeout
+tool(reset_password): ok
+assistant: All set. Is there anything else?
+user: No, thank you.
+assistant: Thanks for calling Acme Bank, have a great day!

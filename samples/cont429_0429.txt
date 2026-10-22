@@ -1,0 +1,11 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I sent money on Friday, where is it?
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: Come again?
+assistant: Of course: could you confirm the last four digits?
+user: Sure
+tool(lookup_payment): ok
+assistant: Done. Anything else I can do for you?
+user: No, that's everything.
+assistant: Is there anything else I can help you with? ... Have a great day!

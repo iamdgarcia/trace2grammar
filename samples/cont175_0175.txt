@@ -1,0 +1,7 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I sent money on Friday, where is it?
+tool(verify_identity): ok
+tool(lookup_payment): ok
+assistant: That's completed. Anything else today?
+user: No, that's everything.
+assistant: Thanks for your call, have a nice day!

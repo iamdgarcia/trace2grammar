@@ -1,0 +1,11 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Please cancel my account
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: Come again?
+assistant: Of course: which day would you prefer?
+user: Yes, that's correct
+tool(cancel_subscription): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

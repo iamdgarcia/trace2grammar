@@ -1,0 +1,8 @@
+assistant: Northside Clinic, how may I help you?
+user: I need to see the doctor this week
+tool(verify_identity): ok
+tool(book_appointment): error timeout
+tool(book_appointment): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Anything else we can do for you? ... Have a good day!

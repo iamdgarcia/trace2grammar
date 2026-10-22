@@ -1,0 +1,12 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I forgot my password
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: Come again?
+assistant: Of course: which day would you prefer?
+user: Yes, that's correct
+tool(reset_password): error timeout
+tool(reset_password): ok
+assistant: That's completed. Anything else today?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

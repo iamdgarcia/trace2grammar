@@ -1,0 +1,11 @@
+assistant: Acme Bank support, how can I help?
+user: Add a new payee to my account
+tool(verify_identity): ok
+assistant: Just to confirm, could you repeat the details?
+user: Can you repeat that?
+assistant: Of course: which day would you prefer?
+user: Yes
+tool(add_payee): ok
+assistant: That's completed. Anything else today?
+user: No, thank you.
+assistant: Thanks for calling Acme Bank, have a great day!

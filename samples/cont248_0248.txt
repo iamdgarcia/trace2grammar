@@ -1,0 +1,11 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: The ATM ate my card, I need a new one
+tool(verify_identity): ok
+assistant: Which account or date would that be?
+user: I don't understand
+assistant: Of course: could you confirm the last four digits?
+user: Yes please
+tool(order_card): ok
+assistant: Done. Anything else I can do for you?
+user: No, thank you.
+assistant: Is there anything else I can help you with? ... Have a great day!
