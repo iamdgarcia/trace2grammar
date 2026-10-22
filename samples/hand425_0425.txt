@@ -1,7 +1,7 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: Can you tell me how much money I have?
+assistant: Acme Bank support, how can I help?
+user: I never received the card I ordered two weeks ago
 tool(verify_identity): ok
-assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
-user: Yes, please transfer me.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: I'm really sorry about that. Let me look into it right away.
+user: I don't want a robot, I want a person. Now.
+tool(escalate_to_human): ok
+assistant: Understood, connecting you with a human agent. Please hold the line.

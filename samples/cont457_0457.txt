@@ -1,0 +1,8 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Can you send me a proof of payment?
+tool(verify_identity): ok
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for your call, have a nice day!

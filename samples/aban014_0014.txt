@@ -1,6 +1,6 @@
-assistant: Northside Clinic, how may I help you?
-user: What time does the clinic close?
-tool(verify_identity): error no_answer
-tool(verify_identity): error no_answer
-assistant: I'm having trouble verifying your identity. Could you confirm your date of birth?
-user:
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I need to change the date of my direct debit
+tool(verify_identity): ok
+tool(lookup_debits): ok
+assistant: I can process that now, it takes a minute. Shall I go ahead?
+user: Hmm, let me think.

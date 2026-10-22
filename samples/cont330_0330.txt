@@ -1,0 +1,8 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Can you tell me how much money I have?
+tool(verify_identity): ok
+tool(check_balance): ok
+assistant: Your checking account balance is 36.50 dollars and savings has 741.99.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thank you for banking with Acme. Goodbye!

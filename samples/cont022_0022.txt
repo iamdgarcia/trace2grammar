@@ -1,7 +1,9 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: My medication ran out, I need a refill
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I need a statement of the last three months
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for your call, have a nice day!

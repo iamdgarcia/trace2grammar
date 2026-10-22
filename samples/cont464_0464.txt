@@ -1,0 +1,11 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: What are your opening hours?
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes please
+tool(lookup_hours): ok
+assistant: Monday to Friday 8:00 to 20:00, Saturdays 8:00 to 18:30. Closed Sundays.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Take care and see you at the clinic. Goodbye!

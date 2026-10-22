@@ -1,7 +1,9 @@
-assistant: Northside Clinic, how may I help you?
-user: Cancel my visit on Thursday please
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I need a statement of the last three months
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(cancel_appointment): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

@@ -1,7 +1,9 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Can I change my Monday appointment?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need a first consultation
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: You're booked for Thursday at 12:30 with Dr. Reeves.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
 assistant: Thanks for calling, have a nice day!

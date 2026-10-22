@@ -1,0 +1,8 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Cancel everything, I don't use it anymore
+tool(verify_identity): ok
+tool(cancel_subscription): error internal
+tool(cancel_subscription): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

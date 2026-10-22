@@ -1,0 +1,9 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want out of my plan
+tool(verify_identity): ok
+tool(lookup_plan): ok
+tool(cancel_subscription): ok
+assistant: Your subscription is cancelled, effective at the end of the billing period.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

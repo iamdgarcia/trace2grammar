@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I want to check my account balance
+user: How much is left in my current account?
 tool(verify_identity): ok
 tool(check_balance): ok
-assistant: All done. Anything else?
+assistant: Your checking account balance is 1958.10 dollars and savings has 570.90.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

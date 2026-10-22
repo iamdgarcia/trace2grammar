@@ -1,0 +1,5 @@
+assistant: Acme Bank support, how can I help?
+user: Can you send me a proof of payment?
+tool(verify_identity): ok
+tool(generate_statement): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?

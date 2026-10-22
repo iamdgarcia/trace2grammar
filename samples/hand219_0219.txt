@@ -1,7 +1,6 @@
 assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: I need to cancel my appointment
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-assistant: That's above what I can arrange here. Let me pass you to a human agent.
-user: Yes, put me through.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
+tool(escalate_to_human): ok
+assistant: Connecting you now, please stay on the line.

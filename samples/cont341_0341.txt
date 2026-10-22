@@ -1,7 +1,15 @@
 assistant: Hello, Northside Clinic support. What do you need?
-user: Cancel my visit on Thursday please
+user: I need to move my appointment
 tool(verify_identity): ok
-tool(cancel_appointment): ok
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Do you want it processed now or later today?
+user: Sorry, which one?
+assistant: Of course: I said, which option do you prefer?
+user: That's right
+tool(lookup_appointment): error timeout
+tool(lookup_appointment): ok
+tool(reschedule_appointment): error timeout
+tool(reschedule_appointment): ok
+assistant: Moved to Wednesday at 16:15. Anything else?
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling, have a nice day!

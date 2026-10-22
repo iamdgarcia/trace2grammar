@@ -1,12 +1,10 @@
-assistant: Acme Bank support, how can I help?
-user: Add a new payee to my account
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I want to cancel my subscription
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Can you repeat that?
-assistant: Of course: could you confirm the last four digits?
-user: Sure
-tool(add_payee): error timeout
-tool(add_payee): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Thanks for your call, have a nice day!
+tool(lookup_plan): ok
+tool(cancel_subscription): ok
+assistant: Your subscription is cancelled, effective at the end of the billing period.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

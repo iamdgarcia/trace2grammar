@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Do you have anything available tomorrow?
+user: What's my balance?
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(check_balance): ok
+assistant: The current balance is 1417.50 dollars. Anything else?
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

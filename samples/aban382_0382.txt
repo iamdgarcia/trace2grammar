@@ -1,6 +1,6 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I want to check my account balance
-tool(verify_identity): ok
-tool(check_balance): ok
-assistant: I can process that now. Shall I go ahead?
-user:
+assistant: Northside Clinic, how may I help you?
+user: My lab results are ready?
+tool(verify_identity): error no_answer
+tool(verify_identity): error no_answer
+assistant: I'm having trouble verifying your identity. Could you confirm your date of birth?
+user: Sorry, one second, I'm looking for the document.

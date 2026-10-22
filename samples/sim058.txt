@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I want to know the status of a transfer
+user: A direct debit failed, why?
 tool(verify_identity): ok
-tool(lookup_payment): ok
-assistant: All done. Anything else?
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: The direct debit is rescheduled to the 5th. The fee is refunded.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

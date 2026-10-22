@@ -1,7 +1,9 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to check my account balance
+assistant: Hello, Northside Clinic support. What do you need?
+user: I need to move my appointment
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+tool(lookup_appointment): ok
+tool(reschedule_appointment): ok
+assistant: Moved to Friday at 15:15. Anything else?
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for choosing Northside Clinic, have a great day!

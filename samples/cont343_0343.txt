@@ -1,9 +1,12 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Are you open on Saturdays?
-assistant: Which account or date would that be?
-user: Can you repeat that?
-assistant: Of course: could you confirm the last four digits?
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: I want to check my account balance
+tool(verify_identity): ok
+assistant: Do you want it processed now or later today?
+user: Sorry, what did you say?
+assistant: Of course: I said, which option do you prefer?
 user: Correct
-assistant: All set. Is there anything else?
-user: No, that's everything.
-assistant: Thanks for calling, have a nice day!
+tool(check_balance): ok
+assistant: Your checking account balance is 1830.90 dollars and savings has 2351.20.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

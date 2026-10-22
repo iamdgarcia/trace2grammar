@@ -1,7 +1,12 @@
-assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: I need a refill of my prescription
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I forgot my password
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+tool(send_otp): ok
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Your password has been reset, check your email.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thank you for banking with Acme. Goodbye!

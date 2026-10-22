@@ -1,0 +1,13 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: I want to dispute a charge
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Correct
+tool(lookup_transactions): ok
+tool(file_dispute): ok
+assistant: Dispute registered for 1595.20 dollars, case 70532.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

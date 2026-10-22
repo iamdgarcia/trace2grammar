@@ -1,6 +1,6 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Do you have anything available tomorrow?
-tool(verify_identity): ok
-tool(book_appointment): error rejected
-assistant: I'm sorry, that didn't go through. Do you want me to try again?
-user:
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: What are your opening hours?
+tool(verify_identity): error no_answer
+tool(verify_identity): error no_answer
+assistant: I'm having trouble verifying your identity. Could you confirm your date of birth?
+user: Sorry, one second, I'm looking for the document.

@@ -1,0 +1,17 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I lost my card
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Friday one?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Yes
+assistant: Which of the two would you prefer?
+user: I don't understand
+assistant: Of course: I said, which option do you prefer?
+user: Yes
+tool(order_card): error timeout
+tool(order_card): ok
+assistant: Done: new card on its way, delivery in 5 days.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

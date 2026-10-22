@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: My card is damaged, I need a replacement
+user: Cancel everything, I don't use it anymore
 tool(verify_identity): ok
-tool(order_card): ok
-assistant: All done. Anything else?
+tool(lookup_plan): ok
+tool(cancel_subscription): ok
+assistant: Your subscription is cancelled, effective at the end of the billing period.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

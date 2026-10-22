@@ -1,0 +1,6 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I sent money on Friday, where is it?
+tool(verify_identity): ok
+tool(lookup_payment): ok
+assistant: I can process that now, it takes a minute. Shall I go ahead?
+user: One second.

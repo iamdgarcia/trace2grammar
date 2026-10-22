@@ -1,7 +1,13 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: I need a refill of my prescription
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: I need to cancel my appointment
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: Of course: I said, which option do you prefer?
+user: Sure
+tool(lookup_appointment): ok
+tool(cancel_appointment): ok
+assistant: The appointment is cancelled. Anything else?
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for choosing Northside Clinic, have a great day!

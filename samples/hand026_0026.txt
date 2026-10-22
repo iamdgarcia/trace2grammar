@@ -1,7 +1,8 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: What are your opening hours?
+assistant: Northside Clinic, how may I help you?
+user: I need to see the doctor this week
 tool(verify_identity): ok
-assistant: That's above what I can arrange here. Let me pass you to a human agent.
-user: Yes, put me through.
+tool(book_appointment): error internal
+tool(book_appointment): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
 tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: Transferring you now, please hold.

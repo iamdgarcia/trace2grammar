@@ -1,8 +1,14 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I want to dispute a charge
+assistant: Northside Clinic, how may I help you?
+user: I need to move my appointment
 tool(verify_identity): ok
-tool(file_dispute): error timeout
-tool(file_dispute): ok
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Thanks for calling, have a good day!
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: Correct
+tool(lookup_appointment): ok
+tool(reschedule_appointment): error timeout
+tool(reschedule_appointment): ok
+assistant: Moved to Monday at 16:30. Anything else?
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling, have a nice day!

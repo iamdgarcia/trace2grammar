@@ -1,7 +1,10 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Can you renew my prescription?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: Done. Anything else I can do for you?
+tool(check_coverage): ok
+tool(book_appointment): error timeout
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Thursday between 10:15 and 15:30.
+assistant: Anything else I can do for you?
 user: No, that's everything.
 assistant: Thanks for calling, have a nice day!

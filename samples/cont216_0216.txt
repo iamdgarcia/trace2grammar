@@ -1,0 +1,13 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: How much is left in my current account?
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Can you repeat that?
+assistant: Of course: I said, should I process it now?
+user: Sure
+tool(check_balance): ok
+tool(check_balance): ok
+assistant: The current balance is 1451.99 dollars. Anything else?
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thank you for banking with Acme. Goodbye!

@@ -1,6 +1,8 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Check my balance please
+assistant: Acme Bank support, how can I help?
+user: I was overcharged last week
 tool(verify_identity): ok
-assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
-tool(escalate_to_human): ok
-assistant: Connecting you now, please stay on the line.
+tool(file_dispute): error internal
+tool(file_dispute): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

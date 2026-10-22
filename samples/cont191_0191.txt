@@ -1,5 +1,9 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: What are your opening hours?
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Thanks for calling, have a nice day!
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need a nurse to come home for a blood draw
+tool(verify_identity): ok
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: Home visit booked: Tuesday, 15:45 window. You'll get a call to confirm.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Take care and see you at the clinic. Goodbye!

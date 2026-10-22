@@ -1,0 +1,12 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Add a new payee to my account
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Come again?
+assistant: Of course: I said, which option do you prefer?
+user: Yes, that's correct
+tool(add_payee): ok
+assistant: Payee added and confirmed by SMS.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thank you for banking with Acme. Goodbye!

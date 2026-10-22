@@ -1,8 +1,13 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+assistant: Acme Bank support, how can I help?
 user: Add a new payee to my account
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(add_payee): error timeout
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
+user: Yes, that's correct
 tool(add_payee): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
+assistant: The payee is registered. The first payment to a new payee has a 24 hour hold.
+assistant: Is there anything else today?
+user: No, thank you.
 assistant: Thanks for calling, have a good day!

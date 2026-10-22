@@ -1,7 +1,7 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: Can I get a dental cleaning?
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Cancel everything, I don't use it anymore
 tool(verify_identity): ok
-assistant: That's above what I can arrange here. Let me pass you to a human agent.
-user: Yes, put me through.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: I'm really sorry about that. Let me look into it right away.
+user: I don't want a robot, I want a person. Now.
+tool(escalate_to_human): ok
+assistant: Understood, connecting you with a human agent. Please hold the line.

@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: Check my balance please
+user: I need to cancel my appointment
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: All done. Anything else?
+tool(lookup_appointment): ok
+tool(cancel_appointment): ok
+assistant: The appointment is cancelled. Anything else?
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

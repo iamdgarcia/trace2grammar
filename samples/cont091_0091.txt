@@ -1,8 +1,14 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I can't log in, I need to reset my password
+assistant: Hello, Northside Clinic support. What do you need?
+user: My medication ran out, I need a refill
 tool(verify_identity): ok
-tool(reset_password): error timeout
-tool(reset_password): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: Correct
+tool(lookup_prescription): ok
+tool(request_refill): error timeout
+tool(request_refill): ok
+assistant: Refill requested, ready for pickup in 4 hours.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thank you for choosing Northside Clinic, have a great day!

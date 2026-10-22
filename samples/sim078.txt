@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: Can I get a dental cleaning?
+user: I can't make it to my visit, I need another time
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(lookup_appointment): ok
+tool(reschedule_appointment): ok
+assistant: The appointment is now Wednesday at 16:30.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,11 +1,16 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: The ATM ate my card, I need a new one
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: My lab results are ready?
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: I don't understand
-assistant: Of course: could you confirm the last four digits?
+assistant: Which of the two would you prefer?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
 user: Yes please
-tool(order_card): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: Of course: I said, which option do you prefer?
+user: Yes please
+tool(lookup_results): ok
+assistant: The results are in the app, released by your doctor this morning.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Take care and see you at the clinic. Goodbye!

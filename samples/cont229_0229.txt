@@ -1,8 +1,0 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to check my account balance
-tool(verify_identity): ok
-tool(check_balance): error timeout
-tool(check_balance): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thanks for your call, have a nice day!

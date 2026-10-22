@@ -1,0 +1,6 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: My medication ran out, I need a refill
+tool(verify_identity): ok
+tool(lookup_prescription): ok
+assistant: We have two options: morning or afternoon. Which do you prefer?
+user: Hmm, let me think.

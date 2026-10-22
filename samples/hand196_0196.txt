@@ -1,7 +1,7 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Do you have anything available tomorrow?
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: A payment I'm expecting hasn't shown up
 tool(verify_identity): ok
-assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
-user: Yes, please transfer me.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: I'm really sorry about that. Let me look into it right away.
+user: I don't want a robot, I want a person. Now.
+tool(escalate_to_human): ok
+assistant: Understood, connecting you with a human agent. Please hold the line.

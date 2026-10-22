@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: There is a charge I don't recognize
+user: I want to know the status of a transfer
 tool(verify_identity): ok
-tool(file_dispute): ok
-assistant: All done. Anything else?
+tool(lookup_payment): ok
+assistant: The transfer of 2327.50 dollars is pending.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

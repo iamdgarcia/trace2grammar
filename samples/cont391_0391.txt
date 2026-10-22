@@ -1,11 +1,15 @@
-assistant: Acme Bank support, how can I help?
-user: Can you tell me how much money I have?
+assistant: Hello, Northside Clinic support. What do you need?
+user: Can I get a dental cleaning?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
-user: Sure
-tool(check_balance): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Just to confirm: is it the Wednesday one?
+user: Sorry, what did you say?
+assistant: No problem, let me repeat it.
+user: That's right
+tool(check_availability): error timeout
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: Booked: Friday at 9:45. You'll get a reminder SMS.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Take care and see you at the clinic. Goodbye!

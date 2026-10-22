@@ -1,0 +1,14 @@
+assistant: Acme Bank support, how can I help?
+user: My password doesn't work anymore
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
+user: Yes please
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

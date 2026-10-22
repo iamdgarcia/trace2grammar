@@ -1,12 +1,9 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I forgot my password
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I was overcharged last week
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: Come again?
-assistant: Of course: which day would you prefer?
-user: Yes, that's correct
-tool(reset_password): error timeout
-tool(reset_password): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
+tool(lookup_transactions): ok
+tool(file_dispute): ok
+assistant: Dispute registered for 1904.20 dollars, case 69208.
+assistant: Anything else I can do for you?
+user: No, thank you.
 assistant: Thanks for calling Acme Bank, have a great day!

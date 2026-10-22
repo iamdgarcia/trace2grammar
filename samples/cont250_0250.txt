@@ -1,7 +1,13 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I want to cancel my subscription
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need a refill of my prescription
 tool(verify_identity): ok
-tool(cancel_subscription): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thanks for your call, have a nice day!
+assistant: Just to confirm: is it the Friday one?
+user: I don't understand
+assistant: Of course: I said, which option do you prefer?
+user: Correct
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: Refill requested, ready for pickup in 5 hours.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thank you for choosing Northside Clinic, have a great day!

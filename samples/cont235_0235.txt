@@ -1,0 +1,10 @@
+assistant: Acme Bank support, how can I help?
+user: Please cancel my account
+tool(verify_identity): ok
+tool(lookup_plan): ok
+tool(cancel_subscription): error timeout
+tool(cancel_subscription): ok
+assistant: Cancelled. You keep access until June.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for calling Acme Bank, have a great day!

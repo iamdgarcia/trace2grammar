@@ -1,0 +1,8 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Has the doctor seen my results yet?
+tool(verify_identity): ok
+tool(lookup_results): ok
+assistant: The results are in the app, released by your doctor this morning.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thank you for choosing Northside Clinic, have a great day!

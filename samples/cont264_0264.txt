@@ -1,0 +1,13 @@
+assistant: Acme Bank support, how can I help?
+user: I need a certificate for my taxes
+tool(verify_identity): ok
+assistant: Do you want it processed now or later today?
+user: Sorry, which one?
+assistant: No problem, let me repeat it.
+user: Sure
+tool(generate_statement): error timeout
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

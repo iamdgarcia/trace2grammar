@@ -1,0 +1,17 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I need to change the date of my direct debit
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: That's right
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: Correct
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: The direct debit is rescheduled to the 7th. The fee is refunded.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

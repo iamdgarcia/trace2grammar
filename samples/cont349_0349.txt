@@ -1,7 +1,15 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: Cancel my visit on Thursday please
-tool(verify_identity): ok
-tool(cancel_appointment): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Hello, Northside Clinic support. What do you need?
+user: What time does the clinic close?
+assistant: Which of the two would you prefer?
+user: What do you mean?
+assistant: Of course: I said, which option do you prefer?
+user: Correct
+assistant: Do you want it processed now or later today?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Sure
+tool(lookup_hours): ok
+assistant: Monday to Friday 9:00 to 20:00, Saturdays 9:00 to 20:00. Closed Sundays.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

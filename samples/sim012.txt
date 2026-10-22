@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Do you have anything available tomorrow?
+user: I sent money on Friday, where is it?
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(lookup_payment): ok
+assistant: It shows completed since this morning.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

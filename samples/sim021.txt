@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Can you tell me how much money I have?
+user: How do I register a company as a payee?
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: All done. Anything else?
+tool(add_payee): ok
+assistant: Payee added and confirmed by SMS.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,7 +1,13 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to cancel my subscription
+assistant: Northside Clinic, how may I help you?
+user: How do I get my test results?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(cancel_subscription): ok
-assistant: Done. Anything else I can do for you?
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(lookup_results): ok
+assistant: Results are ready; the doctor added notes to them.
+assistant: Anything else I can do for you?
 user: No, thank you.
-assistant: Thanks for your call, have a nice day!
+assistant: Thanks for calling, have a nice day!

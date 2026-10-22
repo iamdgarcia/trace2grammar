@@ -1,0 +1,8 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to know the status of a transfer
+tool(verify_identity): ok
+tool(lookup_payment): ok
+assistant: The transfer of 770.99 dollars is pending.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

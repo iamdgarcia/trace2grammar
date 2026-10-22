@@ -1,6 +1,5 @@
-assistant: Acme Bank support, how can I help?
-user: Can you tell me how much money I have?
+assistant: Northside Clinic, how may I help you?
+user: Cancel my visit on Thursday please
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: We have two options: morning or afternoon. Which do you prefer?
-user:
+tool(cancel_appointment): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?

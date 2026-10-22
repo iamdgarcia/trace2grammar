@@ -1,6 +1,7 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Check my balance please
-tool(verify_identity): error no_answer
-tool(verify_identity): error no_answer
-assistant: I'm having trouble verifying your identity. Could you confirm your date of birth?
-user:
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I want to send money to a new payee
+tool(verify_identity): ok
+assistant: Could you give me a few more details?
+user: Sorry, what did you say?
+assistant: Sure, let me repeat: could you confirm the details on your screen?
+user: I can't find it now. Forget it.

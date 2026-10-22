@@ -1,8 +1,13 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: I need to cancel my appointment
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I want to send money to a new payee
 tool(verify_identity): ok
-tool(cancel_appointment): error timeout
-tool(cancel_appointment): ok
-assistant: Done. Anything else I can do for you?
+assistant: Sure: could you confirm the last four digits?
+user: What do you mean?
+assistant: Of course: I said, should I process it now?
+user: Yes
+tool(add_payee): ok
+tool(add_payee): ok
+assistant: Payee added and confirmed by SMS.
+assistant: Anything else I can do for you?
 user: No, thank you.
-assistant: Thanks for calling, have a nice day!
+assistant: Thanks for calling, have a good day!

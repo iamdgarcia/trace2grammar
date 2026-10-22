@@ -1,0 +1,13 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Can you send me a proof of payment?
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Yes please
+tool(generate_statement): error timeout
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

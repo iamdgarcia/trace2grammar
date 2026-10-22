@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: My medication ran out, I need a refill
+user: I want to block my card temporarily
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All done. Anything else?
+tool(block_card): ok
+assistant: The card is blocked. You can unblock it from the app whenever you want.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

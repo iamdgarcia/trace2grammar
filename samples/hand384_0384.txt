@@ -1,0 +1,8 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: I need a first consultation
+tool(verify_identity): ok
+tool(book_appointment): error internal
+tool(book_appointment): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

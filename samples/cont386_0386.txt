@@ -1,7 +1,13 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I want out of my plan
+assistant: Northside Clinic, how may I help you?
+user: Can I get a dental cleaning?
 tool(verify_identity): ok
-tool(cancel_subscription): ok
-assistant: That's completed. Anything else today?
+assistant: Just to confirm: is it the Wednesday one?
+user: Come again?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: You're booked for Tuesday at 13:45 with Dr. Chen.
+assistant: Is there anything else today?
 user: No, that's everything.
-assistant: Thanks for calling, have a good day!
+assistant: Take care and see you at the clinic. Goodbye!

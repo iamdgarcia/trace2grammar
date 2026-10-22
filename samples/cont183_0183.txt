@@ -1,0 +1,17 @@
+assistant: Acme Bank support, how can I help?
+user: Did my transfer arrive?
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Sorry, what did you say?
+assistant: No problem, let me repeat it.
+user: Yes
+assistant: Which of the two would you prefer?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(lookup_payment): ok
+tool(lookup_payment): ok
+assistant: The transfer of 66.20 dollars is completed.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for your call, have a nice day!

@@ -1,11 +1,18 @@
-assistant: Northside Clinic, how may I help you?
-user: Can I change my Monday appointment?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Cancel my visit on Thursday please
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
+assistant: Just to confirm: is it the Thursday one?
+user: I don't understand
+assistant: Of course: I said, should I process it now?
 user: Yes, that's correct
-tool(reschedule_appointment): ok
-assistant: That's completed. Anything else today?
+assistant: Sure: could you confirm the last four digits?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: That's right
+tool(lookup_appointment): ok
+tool(cancel_appointment): error timeout
+tool(cancel_appointment): ok
+assistant: The appointment is cancelled. Anything else?
+assistant: Is there anything else today?
 user: No, that's everything.
-assistant: Thanks for calling, have a nice day!
+assistant: Take care and see you at the clinic. Goodbye!

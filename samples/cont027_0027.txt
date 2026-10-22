@@ -1,7 +1,9 @@
-assistant: Northside Clinic, how may I help you?
-user: Can I change my Monday appointment?
+assistant: Hello, Northside Clinic support. What do you need?
+user: Can you renew my prescription?
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: Refill requested, ready for pickup in 4 hours.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Take care and see you at the clinic. Goodbye!

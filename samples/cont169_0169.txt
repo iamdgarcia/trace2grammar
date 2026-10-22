@@ -1,7 +1,18 @@
-assistant: Acme Bank support, how can I help?
-user: I want to dispute a charge
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: There is a charge I don't recognize
 tool(verify_identity): ok
+assistant: Do you want it processed now or later today?
+user: Sorry, what did you say?
+assistant: Of course: I said, should I process it now?
+user: That's right
+assistant: Do you want it processed now or later today?
+user: Can you repeat that?
+assistant: Of course: I said, should I process it now?
+user: Correct
+tool(lookup_transactions): ok
+tool(lookup_transactions): ok
 tool(file_dispute): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
+assistant: Dispute registered for 1349.20 dollars, case 81674.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
 assistant: Thanks for calling, have a good day!

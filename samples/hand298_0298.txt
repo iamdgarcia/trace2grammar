@@ -1,0 +1,8 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: Can you send me a proof of payment?
+tool(verify_identity): ok
+tool(generate_statement): error internal
+tool(generate_statement): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

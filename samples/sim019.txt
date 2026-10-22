@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I want to check my account balance
+user: A payment I'm expecting hasn't shown up
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: All done. Anything else?
+tool(lookup_payment): ok
+assistant: It shows pending since this morning.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

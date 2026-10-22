@@ -1,7 +1,13 @@
-assistant: Acme Bank support, how can I help?
-user: I can't log in, I need to reset my password
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I lost my card
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, what did you say?
+assistant: No problem, let me repeat it.
+user: Yes
+tool(order_card): ok
+assistant: Done: new card on its way, delivery in 4 days.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

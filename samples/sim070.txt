@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: My card is damaged, I need a replacement
+user: Can you tell me how much money I have?
 tool(verify_identity): ok
-tool(order_card): ok
-assistant: All done. Anything else?
+tool(check_balance): ok
+assistant: Your checking account balance is 1588.90 dollars and savings has 1623.10.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

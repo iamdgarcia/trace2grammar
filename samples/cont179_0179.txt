@@ -1,7 +1,8 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Did my transfer arrive?
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to block my card temporarily
 tool(verify_identity): ok
-tool(lookup_payment): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
+tool(block_card): ok
+assistant: Card frozen as requested.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
 assistant: Thanks for calling Acme Bank, have a great day!

@@ -1,0 +1,9 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: Did my transfer arrive?
+tool(verify_identity): ok
+tool(lookup_payment): ok
+tool(lookup_payment): ok
+assistant: The transfer of 1970.90 dollars is pending.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

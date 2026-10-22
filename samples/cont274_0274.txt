@@ -1,0 +1,15 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: I forgot my password
+tool(verify_identity): ok
+assistant: Sure: could you confirm the last four digits?
+user: Can you repeat that?
+assistant: Of course: I said, can you confirm it?
+user: Yes
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): error timeout
+tool(reset_password): ok
+assistant: Your password has been reset, check your email.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

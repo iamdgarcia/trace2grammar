@@ -1,0 +1,13 @@
+assistant: Northside Clinic, how may I help you?
+user: Do you have anything available tomorrow?
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Correct
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: You're booked for Friday at 9:30 with Dr. Patel.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Take care and see you at the clinic. Goodbye!

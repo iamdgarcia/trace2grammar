@@ -1,12 +1,19 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I sent money on Friday, where is it?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Can I change my Monday appointment?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: Can you repeat that?
-assistant: Of course: which day would you prefer?
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
 user: Sure
-tool(lookup_payment): error timeout
-tool(lookup_payment): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: No problem, let me repeat it.
+user: That's right
+tool(lookup_appointment): ok
+tool(reschedule_appointment): error timeout
+tool(reschedule_appointment): ok
+assistant: Moved to Wednesday at 10:30. Anything else?
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Take care and see you at the clinic. Goodbye!

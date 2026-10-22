@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: My medication ran out, I need a refill
+user: How do I register a company as a payee?
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All done. Anything else?
+tool(add_payee): ok
+assistant: The payee is registered. The first payment to a new payee has a 24 hour hold.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

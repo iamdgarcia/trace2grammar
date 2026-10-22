@@ -1,8 +1,10 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Can you tell me how much money I have?
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: A direct debit failed, why?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(check_balance): error timeout
-tool(check_balance): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: The direct debit is rescheduled to the 4th. The fee is refunded.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

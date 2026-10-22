@@ -1,8 +1,16 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Cancel my visit on Thursday please
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I never received the card I ordered two weeks ago
 tool(verify_identity): ok
-tool(cancel_appointment): error timeout
-tool(cancel_appointment): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: Of course: I said, which option do you prefer?
+user: Yes please
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(order_card): ok
+assistant: A replacement card is ordered, it arrives in 3 business days.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

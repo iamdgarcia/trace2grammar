@@ -1,8 +1,16 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: I can't make it to my visit, I need another time
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I need a statement of the last three months
 tool(verify_identity): ok
-tool(reschedule_appointment): error timeout
-tool(reschedule_appointment): ok
-assistant: That's completed. Anything else today?
+assistant: Sure: could you confirm the last four digits?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: Of course: I said, can you confirm it?
+user: Yes, that's correct
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Anything else I can do for you?
 user: No, thank you.
-assistant: Thanks for calling, have a nice day!
+assistant: Thanks for calling Acme Bank, have a great day!

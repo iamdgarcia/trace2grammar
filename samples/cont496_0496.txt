@@ -1,7 +1,12 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I forgot my password
+assistant: Hello, Northside Clinic support. What do you need?
+user: How do I get my test results?
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: That's completed. Anything else today?
+assistant: Sure: could you confirm the last four digits?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Yes please
+tool(lookup_results): ok
+assistant: Results are ready; the doctor added notes to them.
+assistant: Anything else I can do for you?
 user: No, that's everything.
-assistant: Thanks for calling, have a good day!
+assistant: Thanks for calling, have a nice day!

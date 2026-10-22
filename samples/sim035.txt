@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: My card is damaged, I need a replacement
+user: Has the doctor seen my results yet?
 tool(verify_identity): ok
-tool(order_card): ok
-assistant: All done. Anything else?
+tool(lookup_results): ok
+assistant: Results are ready; the doctor added notes to them.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

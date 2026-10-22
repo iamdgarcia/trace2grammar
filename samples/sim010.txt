@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I can't make it to my visit, I need another time
+user: Can I get a home visit? I can't move well
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Thursday between 10:30 and 10:15.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

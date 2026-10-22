@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Can you renew my prescription?
+user: I need a statement of the last three months
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All done. Anything else?
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

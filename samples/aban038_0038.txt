@@ -1,0 +1,6 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to dispute a charge
+tool(verify_identity): ok
+tool(lookup_transactions): ok
+assistant: Could you confirm the address we have on file?
+user: Hmm, let me think.

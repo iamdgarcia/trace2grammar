@@ -1,7 +1,12 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Can you tell me how much money I have?
-tool(verify_identity): ok
-tool(check_balance): ok
-assistant: Done. Anything else I can do for you?
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Do you open during lunch?
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: Of course: I said, can you confirm it?
+user: That's right
+tool(lookup_hours): ok
+tool(lookup_hours): ok
+assistant: We're open 9:00 to 20:00 on weekdays and 9:30 to 20:30 on Saturdays.
+assistant: Anything else I can do for you?
 user: No, that's everything.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Thanks for calling, have a nice day!

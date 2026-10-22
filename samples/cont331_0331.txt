@@ -1,7 +1,17 @@
-assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: Cancel my visit on Thursday please
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I need to change the date of my direct debit
 tool(verify_identity): ok
-tool(cancel_appointment): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thanks for calling, have a nice day!
+assistant: Do you want it processed now or later today?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Sure
+assistant: Just to confirm: is it the Monday one?
+user: What do you mean?
+assistant: Of course: I said, should I process it now?
+user: Yes
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: The direct debit is rescheduled to the 7th. The fee is refunded.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

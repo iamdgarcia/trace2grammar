@@ -1,0 +1,8 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: My card doesn't work, I think it's broken
+tool(verify_identity): ok
+tool(order_card): ok
+assistant: A replacement card is ordered, it arrives in 6 business days.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for your call, have a nice day!

@@ -1,9 +1,19 @@
-assistant: Northside Clinic, how may I help you?
-user: What are your opening hours?
-assistant: Which account or date would that be?
-user: What do you mean?
-assistant: Of course: which day would you prefer?
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: There is a charge I don't recognize
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Monday one?
+user: Come again?
+assistant: Of course: I said, can you confirm it?
 user: Yes, that's correct
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Do you want it processed now or later today?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
+user: Correct
+tool(lookup_transactions): ok
+tool(lookup_transactions): ok
+tool(file_dispute): ok
+assistant: The dispute is filed, case 24186. You'll hear from us in 2 business days.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

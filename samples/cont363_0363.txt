@@ -1,7 +1,12 @@
-assistant: Acme Bank support, how can I help?
-user: I want to send money to a new payee
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I lost my card
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thanks for calling, have a good day!
+assistant: Just to confirm: is it the Thursday one?
+user: What do you mean?
+assistant: Of course: I said, can you confirm it?
+user: Sure
+tool(order_card): ok
+assistant: A replacement card is ordered, it arrives in 2 business days.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for your call, have a nice day!

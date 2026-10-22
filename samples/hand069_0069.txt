@@ -1,7 +1,8 @@
 assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: I can't make it to my visit, I need another time
-tool(verify_identity): ok
-assistant: That's above what I can arrange here. Let me pass you to a human agent.
-user: Yes, please transfer me.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+user: I need a nurse to come home for a blood draw
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+assistant: I can't verify your identity automatically, so for security I need to pass you to a human agent.
+tool(escalate_to_human): ok
+assistant: Connecting you with our verification team, please hold.

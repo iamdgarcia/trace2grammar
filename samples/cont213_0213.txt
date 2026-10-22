@@ -1,11 +1,12 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Cancel my visit on Thursday please
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I need a statement of the last three months
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: What do you mean?
-assistant: Of course: could you confirm the last four digits?
-user: Sure
-tool(cancel_appointment): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Which of the two would you prefer?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: Yes
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thanks for calling, have a good day!

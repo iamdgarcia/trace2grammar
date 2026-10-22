@@ -1,0 +1,8 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: A payment I'm expecting hasn't shown up
+tool(verify_identity): ok
+tool(lookup_payment): error internal
+tool(lookup_payment): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

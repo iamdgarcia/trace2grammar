@@ -1,7 +1,18 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I want out of my plan
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Can I change my Monday appointment?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(cancel_subscription): ok
-assistant: That's completed. Anything else today?
+assistant: Sure: could you confirm the last four digits?
+user: What do you mean?
+assistant: Of course: I said, which option do you prefer?
+user: Sure
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: No problem, let me repeat it.
+user: Correct
+tool(lookup_appointment): ok
+tool(reschedule_appointment): ok
+assistant: The appointment is now Monday at 12:45.
+assistant: Is there anything else today?
 user: No, thank you.
-assistant: Thanks for your call, have a nice day!
+assistant: Take care and see you at the clinic. Goodbye!

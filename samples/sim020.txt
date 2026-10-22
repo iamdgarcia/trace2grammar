@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I want to send money to a new payee
+user: Can I change my Monday appointment?
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: All done. Anything else?
+tool(lookup_appointment): ok
+tool(reschedule_appointment): ok
+assistant: Moved to Wednesday at 12:00. Anything else?
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,0 +1,8 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: My direct debit bounced and I got a fee
+tool(verify_identity): ok
+tool(reschedule_debit): error internal
+tool(reschedule_debit): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

@@ -1,0 +1,8 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: I want to block my card temporarily
+tool(verify_identity): ok
+tool(block_card): ok
+assistant: Card frozen as requested.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for your call, have a nice day!

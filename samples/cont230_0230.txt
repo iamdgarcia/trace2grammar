@@ -1,8 +1,13 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Add a new payee to my account
+assistant: Northside Clinic, how may I help you?
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-tool(add_payee): error timeout
-tool(add_payee): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thanks for your call, have a nice day!
+assistant: Do you want it processed now or later today?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Yes
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: Home visit booked: Tuesday, 14:15 window. You'll get a call to confirm.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Take care and see you at the clinic. Goodbye!

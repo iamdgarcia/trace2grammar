@@ -1,12 +1,13 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: You charged me twice, I want my money back
+assistant: Acme Bank support, how can I help?
+user: Cancel everything, I don't use it anymore
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
-user: Yes please
-tool(file_dispute): error timeout
-tool(file_dispute): ok
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Thanks for calling, have a good day!
+assistant: Just to confirm: is it the Thursday one?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: Sure
+tool(lookup_plan): ok
+tool(cancel_subscription): ok
+assistant: Your subscription is cancelled, effective at the end of the billing period.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for banking with Acme. Goodbye!

@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Can you renew my prescription?
+user: I need a certificate for my taxes
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All done. Anything else?
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

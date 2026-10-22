@@ -1,7 +1,13 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I forgot my password
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Can I get a home visit? I can't move well
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: All set. Is there anything else?
-user: No, that's everything.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: Of course: I said, should I process it now?
+user: Yes
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: Home visit booked: Wednesday, 16:00 window. You'll get a call to confirm.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

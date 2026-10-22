@@ -1,7 +1,6 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Did my transfer arrive?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Do you open during lunch?
 tool(verify_identity): ok
-assistant: That's above what I can arrange here. Let me pass you to a human agent.
-user: Yes, please transfer me.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
+tool(escalate_to_human): ok
+assistant: Connecting you now, please stay on the line.

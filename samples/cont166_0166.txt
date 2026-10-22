@@ -1,0 +1,13 @@
+assistant: Northside Clinic, how may I help you?
+user: I need a first consultation
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Friday one?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Correct
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: You're booked for Wednesday at 14:45 with Dr. Novak.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

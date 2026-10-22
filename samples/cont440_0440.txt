@@ -1,0 +1,10 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need a nurse to come home for a blood draw
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Friday between 13:45 and 9:00.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

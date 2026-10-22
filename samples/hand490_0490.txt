@@ -1,6 +1,7 @@
 assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I forgot my password
+user: Please cancel my account
 tool(verify_identity): ok
-assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
-tool(escalate_to_human): ok
-assistant: Connecting you now, please stay on the line.
+assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
+user: Yes, please transfer me.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, one moment please.

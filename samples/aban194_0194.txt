@@ -1,6 +1,0 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Add a new payee to my account
-tool(verify_identity): ok
-tool(add_payee): error rejected
-assistant: I'm sorry, that didn't go through. Do you want me to try again?
-user:

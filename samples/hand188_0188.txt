@@ -1,7 +1,8 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I sent money on Friday, where is it?
-tool(verify_identity): ok
-assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
-user: Yes, put me through.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: Northside Clinic, how may I help you?
+user: I need a nurse to come home for a blood draw
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+assistant: I can't verify your identity automatically, so for security I need to pass you to a human agent.
+tool(escalate_to_human): ok
+assistant: Connecting you with our verification team, please hold.

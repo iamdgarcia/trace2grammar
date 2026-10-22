@@ -1,0 +1,8 @@
+assistant: Acme Bank support, how can I help?
+user: The app locked me out after three attempts
+tool(verify_identity): ok
+tool(reset_password): error internal
+tool(reset_password): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

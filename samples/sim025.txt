@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I want to dispute a charge
+user: A payment I'm expecting hasn't shown up
 tool(verify_identity): ok
-tool(file_dispute): ok
-assistant: All done. Anything else?
+tool(lookup_payment): ok
+assistant: The transfer of 917.50 dollars is completed.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

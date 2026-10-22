@@ -1,7 +1,13 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I want to know the status of a transfer
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: Did my transfer arrive?
 tool(verify_identity): ok
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(lookup_payment): error timeout
 tool(lookup_payment): ok
-assistant: All set. Is there anything else?
-user: No, that's everything.
-assistant: Thanks for your call, have a nice day!
+assistant: It shows pending since this morning.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a good day!

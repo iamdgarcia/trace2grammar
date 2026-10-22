@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I can't make it to my visit, I need another time
+user: I want to send money to a new payee
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+tool(add_payee): ok
+assistant: Payee added and confirmed by SMS.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

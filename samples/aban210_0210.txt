@@ -1,7 +1,6 @@
-assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: Can I get a dental cleaning?
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: Can you send me a proof of payment?
 tool(verify_identity): ok
-assistant: Could you give me a few more details?
-user: What do you mean?
-assistant: Sure: could you confirm the details on your screen?
-user: I can't find it now. Forget it.
+tool(generate_statement): ok
+assistant: I can process that now, it takes a minute. Shall I go ahead?
+user: Hmm, let me think.

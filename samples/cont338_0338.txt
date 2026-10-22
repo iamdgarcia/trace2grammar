@@ -1,0 +1,18 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I forgot my password
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
+user: Correct
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

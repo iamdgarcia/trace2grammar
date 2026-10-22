@@ -1,0 +1,16 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: What's my balance?
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Tuesday one?
+user: Can you repeat that?
+assistant: Of course: I said, which option do you prefer?
+user: Yes
+assistant: Just to confirm: is it the Friday one?
+user: What do you mean?
+assistant: Of course: I said, which option do you prefer?
+user: Correct
+tool(check_balance): ok
+assistant: The current balance is 2293.50 dollars. Anything else?
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thank you for banking with Acme. Goodbye!

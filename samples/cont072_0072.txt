@@ -1,11 +1,15 @@
-assistant: Acme Bank support, how can I help?
-user: I want to cancel my subscription
+assistant: Hello, Northside Clinic support. What do you need?
+user: Can I get a home visit? I can't move well
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: Come again?
-assistant: Of course: which day would you prefer?
+assistant: Just to confirm: is it the Tuesday one?
+user: Can you repeat that?
+assistant: Of course: I said, can you confirm it?
 user: Yes
-tool(cancel_subscription): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Thanks for your call, have a nice day!
+tool(check_coverage): error timeout
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Friday between 11:15 and 14:15.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Take care and see you at the clinic. Goodbye!

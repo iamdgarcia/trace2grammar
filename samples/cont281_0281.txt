@@ -1,0 +1,13 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Did my transfer arrive?
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Friday one?
+user: What do you mean?
+assistant: Of course: I said, can you confirm it?
+user: Sure
+tool(lookup_payment): ok
+assistant: It shows pending since this morning.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

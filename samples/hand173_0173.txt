@@ -1,7 +1,7 @@
 assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: What time does the clinic close?
+user: Has the doctor seen my results yet?
 tool(verify_identity): ok
-assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
-user: Yes, put me through.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.
+assistant: I'm really sorry about that. Let me look into it right away.
+user: I don't want a robot, I want a person. Now.
+tool(escalate_to_human): ok
+assistant: Understood, connecting you with a human agent. Please hold the line.

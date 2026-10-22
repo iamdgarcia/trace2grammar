@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I can't make it to my visit, I need another time
+user: Add a new payee to my account
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+tool(add_payee): ok
+assistant: The payee is registered. The first payment to a new payee has a 24 hour hold.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,8 +1,14 @@
-assistant: Acme Bank support, how can I help?
-user: My card doesn't work, I think it's broken
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: My password doesn't work anymore
 tool(verify_identity): ok
-tool(order_card): error timeout
-tool(order_card): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Do you want it processed now or later today?
+user: Sorry, what did you say?
+assistant: Of course: I said, should I process it now?
+user: That's right
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Your password has been reset, check your email.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for banking with Acme. Goodbye!

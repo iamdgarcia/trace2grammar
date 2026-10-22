@@ -73,6 +73,7 @@ class ExtractionConfig:
         r"\bgracias por su llamada\b",
         r"\bque tenga\b",
         r"\bhave a (good|great|nice)\b",
+        r"\bgoodbye\b",
         r"\bchao\b",
         r"\badi[oó]s\b",
     )
@@ -500,11 +501,22 @@ def _normalize_transcript(obj, cfg: ExtractionConfig) -> list[Event]:
     """
     events: list[Event] = []
     last_role = "user"
+    t = 0
     for i, raw in enumerate(str(obj).splitlines()):
         line = raw.strip()
         if not line:
             continue
-        t = i * 10
+        # synthetic but content-aware pacing: user lines ~3.5s (speech), assistant ~4.5s
+        # (response), tools ~1.2s; plus a per-line hash jitter so identical shapes still
+        # differ in duration. Timestamps preserve ORDER only; magnitudes are illustrative.
+        import hashlib
+        h = int(hashlib.sha1(line.encode('utf-8')).hexdigest()[:6], 16) / 0xFFFFFF
+        if line.lower().startswith('tool'):
+            t += int(900 + 600 * h)
+        elif line.lower().startswith(('assistant', 'agente', 'bot', 'agent', 'sistema', 'system', 'ai')):
+            t += int(3000 + 3000 * h)
+        else:
+            t += int(2200 + 2600 * h)
         m = TRANSCRIPT_ROLE_RE.match(line)
         if not m:
             # continuation of the previous message

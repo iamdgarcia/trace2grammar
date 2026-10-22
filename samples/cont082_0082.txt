@@ -1,12 +1,10 @@
-assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: I can't make it to my visit, I need another time
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I need to change the date of my direct debit
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
-user: Yes, that's correct
-tool(reschedule_appointment): error timeout
-tool(reschedule_appointment): ok
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Anything else we can do for you? ... Have a good day!
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: Done: new date the 6th, and the bounced fee reversed.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

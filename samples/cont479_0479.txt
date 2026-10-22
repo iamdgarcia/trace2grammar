@@ -1,7 +1,9 @@
-assistant: Northside Clinic, how may I help you?
-user: I can't make it to my visit, I need another time
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I want to know the status of a transfer
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+tool(lookup_payment): ok
+assistant: The transfer of 50.90 dollars is returned.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

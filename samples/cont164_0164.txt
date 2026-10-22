@@ -1,7 +1,17 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I forgot my password
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need to cancel my appointment
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: All set. Is there anything else?
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: Of course: I said, should I process it now?
+user: Correct
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, which option do you prefer?
+user: Yes please
+tool(lookup_appointment): ok
+tool(cancel_appointment): ok
+assistant: Cancelled; you can rebook any time.
+assistant: Is there anything else today?
 user: No, that's everything.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Thank you for choosing Northside Clinic, have a great day!

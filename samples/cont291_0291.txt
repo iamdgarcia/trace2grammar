@@ -1,7 +1,13 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to check my account balance
+assistant: Acme Bank support, how can I help?
+user: Can you tell me how much money I have?
 tool(verify_identity): ok
+assistant: Do you want it processed now or later today?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Yes
 tool(check_balance): ok
-assistant: All set. Is there anything else?
-user: No, that's everything.
-assistant: Is there anything else I can help you with? ... Have a great day!
+tool(check_balance): ok
+assistant: The current balance is 2117.99 dollars. Anything else?
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

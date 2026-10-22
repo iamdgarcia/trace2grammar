@@ -1,0 +1,12 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I need a certificate for my taxes
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: What do you mean?
+assistant: Of course: I said, can you confirm it?
+user: Yes, that's correct
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

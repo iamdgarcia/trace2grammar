@@ -1,0 +1,16 @@
+assistant: Acme Bank support, how can I help?
+user: I need a statement of the last three months
+tool(verify_identity): ok
+assistant: Sure: could you confirm the last four digits?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Yes please
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: Of course: I said, should I process it now?
+user: Yes
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

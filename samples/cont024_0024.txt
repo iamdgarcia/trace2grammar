@@ -1,0 +1,12 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I lost my card
+tool(verify_identity): ok
+assistant: Sure: could you confirm the last four digits?
+user: I don't understand
+assistant: Of course: I said, can you confirm it?
+user: Yes, that's correct
+tool(order_card): ok
+assistant: A replacement card is ordered, it arrives in 3 business days.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for banking with Acme. Goodbye!

@@ -1,7 +1,9 @@
-assistant: Acme Bank support, how can I help?
-user: I can't log in, I need to reset my password
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: That's completed. Anything else today?
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Wednesday between 17:30 and 13:15.
+assistant: Is there anything else today?
 user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Thanks for calling, have a nice day!

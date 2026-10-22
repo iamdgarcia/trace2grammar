@@ -1,0 +1,19 @@
+assistant: Northside Clinic, how may I help you?
+user: Can you renew my prescription?
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Monday one?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
+user: Yes
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: Correct
+tool(lookup_prescription): error timeout
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: Refill requested, ready for pickup in 3 hours.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Take care and see you at the clinic. Goodbye!

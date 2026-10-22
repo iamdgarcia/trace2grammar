@@ -1,9 +1,8 @@
-assistant: Northside Clinic, how may I help you?
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
 user: What time does the clinic close?
-assistant: Which account or date would that be?
-user: I don't understand
-assistant: Of course: could you confirm the last four digits?
-user: Yes
-assistant: That's completed. Anything else today?
-user: No, that's everything.
+tool(lookup_hours): error timeout
+tool(lookup_hours): ok
+assistant: We're open 9:30 to 17:30 on weekdays and 8:30 to 20:00 on Saturdays.
+assistant: Anything else I can do for you?
+user: No, thank you.
 assistant: Thank you for choosing Northside Clinic, have a great day!

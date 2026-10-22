@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Can I change my Monday appointment?
+user: How much is left in my current account?
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+tool(check_balance): ok
+assistant: Your checking account balance is 1777.10 dollars and savings has 2295.99.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

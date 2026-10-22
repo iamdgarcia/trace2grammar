@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I need to move my appointment
+user: My medication ran out, I need a refill
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: The pharmacy will have it tomorrow morning.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

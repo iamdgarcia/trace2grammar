@@ -1,0 +1,16 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: I want to check my account balance
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Sorry, what did you say?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+assistant: Which of the two would you prefer?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: That's right
+tool(check_balance): ok
+assistant: Your checking account balance is 646.10 dollars and savings has 597.99.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

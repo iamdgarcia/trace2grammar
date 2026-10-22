@@ -1,6 +1,0 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I lost my card
-tool(verify_identity): ok
-assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
-tool(escalate_to_human): ok
-assistant: Connecting you now, please stay on the line.

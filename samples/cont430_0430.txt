@@ -1,11 +1,17 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: Can I get a dental cleaning?
+assistant: Northside Clinic, how may I help you?
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
+assistant: Just to confirm: is it the Tuesday one?
+user: What do you mean?
+assistant: No problem, let me repeat it.
 user: Yes please
+assistant: Sure: could you confirm the last four digits?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(check_coverage): ok
 tool(book_appointment): ok
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Thanks for calling, have a nice day!
+assistant: Home visit booked: Tuesday, 9:15 window. You'll get a call to confirm.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for choosing Northside Clinic, have a great day!

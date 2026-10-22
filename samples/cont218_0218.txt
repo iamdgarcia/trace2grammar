@@ -1,7 +1,17 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I want to send money to a new payee
+assistant: Acme Bank support, how can I help?
+user: The ATM ate my card, I need a new one
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Just to confirm: is it the Tuesday one?
+user: Sorry, which one?
+assistant: Of course: I said, can you confirm it?
+user: Yes
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: That's right
+tool(order_card): error timeout
+tool(order_card): ok
+assistant: A replacement card is ordered, it arrives in 2 business days.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for your call, have a nice day!

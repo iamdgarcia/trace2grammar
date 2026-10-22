@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I want to cancel my subscription
+user: Has the doctor seen my results yet?
 tool(verify_identity): ok
-tool(cancel_subscription): ok
-assistant: All done. Anything else?
+tool(lookup_results): ok
+assistant: The results are in the app, released by your doctor this morning.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

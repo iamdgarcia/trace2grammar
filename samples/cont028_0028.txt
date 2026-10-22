@@ -1,0 +1,13 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Freeze my card please
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Can you repeat that?
+assistant: No problem, let me repeat it.
+user: Correct
+tool(block_card): ok
+assistant: The card is blocked. You can unblock it from the app whenever you want.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling Acme Bank, have a great day!

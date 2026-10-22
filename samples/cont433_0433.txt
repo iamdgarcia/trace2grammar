@@ -1,7 +1,13 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: Add a new payee to my account
+assistant: Hello, Northside Clinic support. What do you need?
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Which of the two would you prefer?
+user: Sorry, which one?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: Home visit booked: Friday, 16:15 window. You'll get a call to confirm.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling, have a nice day!

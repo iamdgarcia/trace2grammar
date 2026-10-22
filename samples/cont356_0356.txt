@@ -1,7 +1,10 @@
-assistant: Northside Clinic, how may I help you?
-user: I need to cancel my appointment
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: My direct debit bounced and I got a fee
 tool(verify_identity): ok
-tool(cancel_appointment): ok
-assistant: That's completed. Anything else today?
+tool(lookup_debits): error timeout
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: Done: new date the 3th, and the bounced fee reversed.
+assistant: Is there anything else today?
 user: No, thank you.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Thanks for calling, have a good day!

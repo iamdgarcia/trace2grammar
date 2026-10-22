@@ -1,9 +1,11 @@
-assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
-user: Are you open on Saturdays?
-assistant: Just to confirm, could you repeat the details?
-user: What do you mean?
-assistant: Of course: could you confirm the last four digits?
-user: Yes please
-assistant: Done. Anything else I can do for you?
-user: No, thank you.
-assistant: Thanks for calling, have a nice day!
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I need to change the date of my direct debit
+tool(verify_identity): ok
+tool(lookup_debits): ok
+tool(lookup_debits): ok
+tool(reschedule_debit): error timeout
+tool(reschedule_debit): ok
+assistant: Done: new date the 2th, and the bounced fee reversed.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

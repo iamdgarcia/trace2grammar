@@ -1,0 +1,8 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Freeze my card please
+tool(verify_identity): ok
+tool(block_card): ok
+assistant: Card frozen as requested.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a good day!

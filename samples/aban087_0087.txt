@@ -1,7 +1,6 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Please cancel my account
+assistant: Acme Bank support, how can I help?
+user: I forgot my password
 tool(verify_identity): ok
-assistant: Could you give me a few more details?
-user: Come again?
-assistant: Sure: could you confirm the details on your screen?
-user: I can't find it now. Forget it.
+tool(send_otp): ok
+assistant: We have two options: morning or afternoon. Which do you prefer?
+user: Hmm, let me think.

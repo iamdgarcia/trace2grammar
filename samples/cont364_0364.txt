@@ -1,0 +1,12 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Are you open on Saturdays?
+assistant: Just to confirm: is it the Tuesday one?
+user: I don't understand
+assistant: Of course: I said, can you confirm it?
+user: Correct
+tool(lookup_hours): error timeout
+tool(lookup_hours): ok
+assistant: Monday to Friday 9:30 to 18:30, Saturdays 8:30 to 20:00. Closed Sundays.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

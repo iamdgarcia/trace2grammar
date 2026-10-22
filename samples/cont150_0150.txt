@@ -1,11 +1,10 @@
-assistant: Northside Clinic, how may I help you?
-user: Can I get a dental cleaning?
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to cancel my subscription
 tool(verify_identity): ok
-assistant: Which account or date would that be?
-user: What do you mean?
-assistant: Of course: could you confirm the last four digits?
-user: Sure
-tool(book_appointment): ok
-assistant: All set. Is there anything else?
-user: No, that's everything.
-assistant: Thanks for calling, have a nice day!
+tool(lookup_plan): ok
+tool(cancel_subscription): error timeout
+tool(cancel_subscription): ok
+assistant: Your subscription is cancelled, effective at the end of the billing period.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

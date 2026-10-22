@@ -1,6 +1,7 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Add a new payee to my account
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to block my card temporarily
 tool(verify_identity): ok
-assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
+assistant: I'm really sorry about that. Let me look into it right away.
+user: I don't want a robot, I want a person. Now.
 tool(escalate_to_human): ok
-assistant: Connecting you now, please stay on the line.
+assistant: Understood, connecting you with a human agent. Please hold the line.

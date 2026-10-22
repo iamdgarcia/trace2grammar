@@ -1,12 +1,9 @@
-assistant: Northside Clinic, how may I help you?
-user: My medication ran out, I need a refill
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I want to block my card temporarily
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
-user: Yes
-tool(request_refill): error timeout
-tool(request_refill): ok
-assistant: That's completed. Anything else today?
+tool(block_card): error timeout
+tool(block_card): ok
+assistant: Card frozen as requested.
+assistant: Anything else I can do for you?
 user: No, that's everything.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Thanks for calling Acme Bank, have a great day!

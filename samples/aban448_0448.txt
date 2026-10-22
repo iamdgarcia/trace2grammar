@@ -1,6 +1,5 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: My card doesn't work, I think it's broken
-tool(verify_identity): error no_answer
-tool(verify_identity): error no_answer
-assistant: I'm having trouble verifying your identity. Could you confirm your date of birth?
-user:
+assistant: Northside Clinic, how may I help you?
+user: How do I get my test results?
+tool(verify_identity): ok
+tool(lookup_results): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?

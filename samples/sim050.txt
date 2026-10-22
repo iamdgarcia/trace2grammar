@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: Can I change my Monday appointment?
+user: I need a first consultation
 tool(verify_identity): ok
-tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: Booked: Monday at 14:45. You'll get a reminder SMS.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,7 +1,8 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Can you renew my prescription?
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Can you tell me how much money I have?
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All set. Is there anything else?
+tool(check_balance): ok
+assistant: The current balance is 2000.50 dollars. Anything else?
+assistant: Anything else I can do for you?
 user: No, thank you.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Thanks for calling Acme Bank, have a great day!

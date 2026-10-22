@@ -1,0 +1,10 @@
+assistant: Northside Clinic, how may I help you?
+user: Can I get a home visit? I can't move well
+tool(verify_identity): ok
+tool(check_coverage): error timeout
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: Home visit booked: Friday, 14:45 window. You'll get a call to confirm.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thank you for choosing Northside Clinic, have a great day!

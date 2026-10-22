@@ -1,8 +1,0 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: My card is damaged, I need a replacement
-tool(verify_identity): ok
-tool(order_card): error timeout
-tool(order_card): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Is there anything else I can help you with? ... Have a great day!

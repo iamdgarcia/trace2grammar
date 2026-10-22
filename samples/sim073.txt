@@ -1,7 +1,10 @@
 assistant: Hello! How can I help you today?
-user: Can you renew my prescription?
+user: I can't log in, I need to reset my password
 tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All done. Anything else?
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

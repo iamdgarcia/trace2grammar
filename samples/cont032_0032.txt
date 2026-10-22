@@ -1,11 +1,13 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Did my transfer arrive?
+assistant: Hello, Northside Clinic support. What do you need?
+user: Can I get a home visit? I can't move well
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: I don't understand
-assistant: Of course: could you confirm the last four digits?
-user: Yes
-tool(lookup_payment): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thanks for calling, have a good day!
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: Of course: I said, can you confirm it?
+user: Sure
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Tuesday between 10:30 and 16:30.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Take care and see you at the clinic. Goodbye!

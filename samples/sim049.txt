@@ -1,7 +1,7 @@
 assistant: Hello! How can I help you today?
-user: My medication ran out, I need a refill
-tool(verify_identity): ok
-tool(request_refill): ok
-assistant: All done. Anything else?
+user: Are you open on Saturdays?
+tool(lookup_hours): ok
+assistant: We're open 9:30 to 19:00 on weekdays and 8:00 to 20:00 on Saturdays.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,0 +1,10 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: The app locked me out after three attempts
+tool(verify_identity): ok
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

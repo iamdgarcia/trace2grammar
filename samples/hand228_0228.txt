@@ -1,7 +1,8 @@
-assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: I'd like to book an appointment
+assistant: Acme Bank support, how can I help?
+user: I lost my card
 tool(verify_identity): ok
-assistant: I'm really sorry about that. Let me look into it right away.
-user: I don't want a robot, I want a person. Now.
-tool(escalate_to_human): ok
-assistant: Understood, connecting you with a human agent. Please hold the line.
+tool(order_card): error internal
+tool(order_card): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

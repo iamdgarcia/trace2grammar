@@ -1,7 +1,13 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: I need to see the doctor this week
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: How much is left in my current account?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Just to confirm: is it the Monday one?
+user: Come again?
+assistant: Of course: I said, should I process it now?
+user: Sure
+tool(check_balance): ok
+assistant: Your checking account balance is 1941.99 dollars and savings has 1643.50.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

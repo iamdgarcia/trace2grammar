@@ -1,7 +1,9 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: My card doesn't work, I think it's broken
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: I never received the card I ordered two weeks ago
+tool(verify_identity): error timeout
 tool(verify_identity): ok
 tool(order_card): ok
-assistant: All set. Is there anything else?
+assistant: A replacement card is ordered, it arrives in 3 business days.
+assistant: Is there anything else today?
 user: No, thank you.
-assistant: Thanks for calling Acme Bank, have a great day!
+assistant: Thanks for calling, have a good day!

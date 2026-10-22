@@ -1,7 +1,8 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I want to send money to a new payee
-tool(verify_identity): ok
-assistant: I'm really sorry about that. Let me look into it right away.
-user: I don't want a robot, I want a person. Now.
+assistant: Acme Bank support, how can I help?
+user: You charged me twice, I want my money back
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+assistant: I can't verify your identity automatically, so for security I need to pass you to a human agent.
 tool(escalate_to_human): ok
-assistant: Understood, connecting you with a human agent. Please hold the line.
+assistant: Connecting you with our verification team, please hold.

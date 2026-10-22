@@ -1,7 +1,5 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to dispute a charge
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I never received the card I ordered two weeks ago
 tool(verify_identity): ok
-assistant: Could you give me a few more details?
-user: Come again?
-assistant: Sure: could you confirm the details on your screen?
-user: I can't find it now. Forget it.
+tool(order_card): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?

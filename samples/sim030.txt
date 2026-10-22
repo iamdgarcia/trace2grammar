@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: My password doesn't work anymore
+user: Freeze my card please
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: All done. Anything else?
+tool(block_card): ok
+assistant: Card frozen as requested.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

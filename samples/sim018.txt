@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: There is a charge I don't recognize
+user: Can I get a home visit? I can't move well
 tool(verify_identity): ok
-tool(file_dispute): ok
-assistant: All done. Anything else?
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Monday between 17:30 and 10:15.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

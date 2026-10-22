@@ -1,0 +1,7 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Do you have anything available tomorrow?
+tool(verify_identity): ok
+assistant: That's above what I can arrange here. Let me pass you to a human agent.
+user: Yes, please transfer me.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, one moment please.

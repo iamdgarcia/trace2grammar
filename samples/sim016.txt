@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Can I get a dental cleaning?
+user: I found my card but I had blocked it, can you unblock it?
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(block_card): ok
+assistant: The card is blocked. You can unblock it from the app whenever you want.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,8 +1,9 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to check my account balance
+assistant: Acme Bank support, how can I help?
+user: My direct debit bounced and I got a fee
 tool(verify_identity): ok
-tool(check_balance): error timeout
-tool(check_balance): ok
-assistant: All set. Is there anything else?
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: The direct debit is rescheduled to the 6th. The fee is refunded.
+assistant: Anything else I can do for you?
 user: No, that's everything.
 assistant: Thanks for your call, have a nice day!

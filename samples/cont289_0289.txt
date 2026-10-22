@@ -1,7 +1,16 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Add a new payee to my account
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: How do I get my test results?
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: Of course: I said, which option do you prefer?
+user: Yes
+assistant: Sure: could you confirm the last four digits?
+user: Come again?
+assistant: Of course: I said, can you confirm it?
+user: Sure
+tool(lookup_results): ok
+assistant: The results are in the app, released by your doctor this morning.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

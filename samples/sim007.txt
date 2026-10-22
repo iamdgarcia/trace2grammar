@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
 user: I need to move my appointment
 tool(verify_identity): ok
+tool(lookup_appointment): ok
 tool(reschedule_appointment): ok
-assistant: All done. Anything else?
+assistant: The appointment is now Tuesday at 17:30.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

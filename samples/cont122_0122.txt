@@ -1,0 +1,12 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I forgot my password
+tool(verify_identity): ok
+tool(send_otp): ok
+tool(verify_otp): error timeout
+tool(verify_otp): ok
+tool(reset_password): error timeout
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thank you for banking with Acme. Goodbye!

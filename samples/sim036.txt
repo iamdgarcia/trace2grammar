@@ -1,7 +1,10 @@
 assistant: Hello! How can I help you today?
-user: Can I get a dental cleaning?
+user: The app locked me out after three attempts
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

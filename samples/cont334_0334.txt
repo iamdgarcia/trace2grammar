@@ -1,7 +1,8 @@
-assistant: Acme Bank support, how can I help?
-user: I can't log in, I need to reset my password
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: Did my transfer arrive?
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Is there anything else I can help you with? ... Have a great day!
+tool(lookup_payment): ok
+assistant: The transfer of 2091.20 dollars is returned.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thank you for banking with Acme. Goodbye!

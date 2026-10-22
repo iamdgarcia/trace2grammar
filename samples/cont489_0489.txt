@@ -1,0 +1,12 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: Did my transfer arrive?
+tool(verify_identity): ok
+assistant: Sure: could you confirm the last four digits?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes
+tool(lookup_payment): ok
+assistant: The transfer of 1281.50 dollars is returned.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Thanks for your call, have a nice day!

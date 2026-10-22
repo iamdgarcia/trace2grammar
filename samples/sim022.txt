@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I can't log in, I need to reset my password
+user: I need a nurse to come home for a blood draw
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: All done. Anything else?
+tool(check_coverage): ok
+tool(book_appointment): ok
+assistant: A nurse visit is arranged for Thursday between 14:45 and 12:15.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

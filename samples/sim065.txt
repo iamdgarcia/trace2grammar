@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I want to send money to a new payee
+user: Can you send me a proof of payment?
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: All done. Anything else?
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

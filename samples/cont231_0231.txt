@@ -1,7 +1,11 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: Did my transfer arrive?
-tool(verify_identity): ok
-tool(lookup_payment): ok
-assistant: That's completed. Anything else today?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: Are you open on Saturdays?
+assistant: Do you want it processed now or later today?
+user: Come again?
+assistant: Of course: I said, should I process it now?
+user: Yes, that's correct
+tool(lookup_hours): ok
+assistant: Monday to Friday 9:00 to 18:00, Saturdays 9:00 to 17:00. Closed Sundays.
+assistant: Anything else I can do for you?
 user: No, thank you.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Take care and see you at the clinic. Goodbye!

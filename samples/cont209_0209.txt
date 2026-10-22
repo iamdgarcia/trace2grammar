@@ -1,12 +1,16 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Can I change my Monday appointment?
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: How do I get my test results?
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Come again?
-assistant: Of course: which day would you prefer?
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: Of course: I said, can you confirm it?
+user: Correct
+assistant: Do you want it processed now or later today?
+user: Sorry, what did you say?
+assistant: Of course: I said, can you confirm it?
 user: Yes, that's correct
-tool(reschedule_appointment): error timeout
-tool(reschedule_appointment): ok
-assistant: All set. Is there anything else?
+tool(lookup_results): ok
+assistant: Results are ready; the doctor added notes to them.
+assistant: Anything else I can do for you?
 user: No, thank you.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Take care and see you at the clinic. Goodbye!

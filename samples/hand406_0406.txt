@@ -1,6 +1,8 @@
 assistant: Acme Bank support, how can I help?
-user: The ATM ate my card, I need a new one
-tool(verify_identity): ok
-assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
+user: I want to know the status of a transfer
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+tool(verify_identity): error mismatch
+assistant: I can't verify your identity automatically, so for security I need to pass you to a human agent.
 tool(escalate_to_human): ok
-assistant: Connecting you now, please stay on the line.
+assistant: Connecting you with our verification team, please hold.

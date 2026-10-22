@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: Add a new payee to my account
+user: I want to check my account balance
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: All done. Anything else?
+tool(check_balance): ok
+assistant: Your checking account balance is 1159.10 dollars and savings has 2153.10.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

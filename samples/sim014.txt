@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I need to see the doctor this week
+user: Can you tell me how much money I have?
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(check_balance): ok
+assistant: Your checking account balance is 1839.20 dollars and savings has 1121.50.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

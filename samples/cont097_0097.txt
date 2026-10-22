@@ -1,7 +1,13 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to send money to a new payee
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Cancel my visit on Thursday please
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Thanks for your call, have a nice day!
+assistant: Just to confirm: is it the Tuesday one?
+user: Sorry, which one?
+assistant: Of course: I said, should I process it now?
+user: Correct
+tool(lookup_appointment): ok
+tool(cancel_appointment): ok
+assistant: Cancelled; you can rebook any time.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a nice day!

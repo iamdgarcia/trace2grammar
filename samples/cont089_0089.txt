@@ -1,11 +1,9 @@
-assistant: Northside Clinic, how may I help you?
-user: I need to move my appointment
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: I need to change the date of my direct debit
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Can you repeat that?
-assistant: Of course: could you confirm the last four digits?
-user: Sure
-tool(reschedule_appointment): ok
-assistant: Done. Anything else I can do for you?
+tool(lookup_debits): ok
+tool(reschedule_debit): ok
+assistant: The direct debit is rescheduled to the 2th. The fee is refunded.
+assistant: Anything else I can do for you?
 user: No, that's everything.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Thanks for calling Acme Bank, have a great day!

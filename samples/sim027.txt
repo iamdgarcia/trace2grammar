@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: What's my balance?
+user: There is a charge I don't recognize
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: All done. Anything else?
+tool(lookup_transactions): ok
+tool(file_dispute): ok
+assistant: The dispute is filed, case 68959. You'll hear from us in 6 business days.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

@@ -1,6 +1,8 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Please cancel my account
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I want to cancel my subscription
 tool(verify_identity): ok
-assistant: The amount is above the limit I can approve. I'll connect you with a human agent who can decide it.
-tool(escalate_to_human): ok
-assistant: Connecting you now, please stay on the line.
+tool(cancel_subscription): error internal
+tool(cancel_subscription): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I'd like to book an appointment
+user: There is a charge I don't recognize
 tool(verify_identity): ok
-tool(book_appointment): ok
-assistant: All done. Anything else?
+tool(lookup_transactions): ok
+tool(file_dispute): ok
+assistant: The dispute is filed, case 24374. You'll hear from us in 2 business days.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

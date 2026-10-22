@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: Add a new payee to my account
+user: I need a first consultation
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: All done. Anything else?
+tool(check_availability): ok
+tool(book_appointment): ok
+assistant: You're booked for Friday at 16:30 with Dr. Reeves.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

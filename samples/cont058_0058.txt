@@ -1,8 +1,0 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: I want to send money to a new payee
-tool(verify_identity): ok
-tool(add_payee): error timeout
-tool(add_payee): ok
-assistant: That's completed. Anything else today?
-user: No, thank you.
-assistant: Thanks for calling Acme Bank, have a great day!

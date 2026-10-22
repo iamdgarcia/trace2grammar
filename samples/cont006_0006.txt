@@ -1,5 +1,16 @@
 assistant: Northside Clinic, how may I help you?
-user: What are your opening hours?
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Anything else we can do for you? ... Have a good day!
+user: How do I get my test results?
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Sorry, which one?
+assistant: No problem, let me repeat it.
+user: Sure
+assistant: Sure: could you confirm the last four digits?
+user: Sorry, what did you say?
+assistant: Of course: I said, which option do you prefer?
+user: Yes
+tool(lookup_results): ok
+assistant: The results are in the app, released by your doctor this morning.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for choosing Northside Clinic, have a great day!

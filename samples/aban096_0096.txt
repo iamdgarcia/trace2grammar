@@ -1,6 +1,6 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I forgot my password
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: My direct debit bounced and I got a fee
 tool(verify_identity): error no_answer
 tool(verify_identity): error no_answer
 assistant: I'm having trouble verifying your identity. Could you confirm your date of birth?
-user:
+user: Sorry, one second, I'm looking for the document.

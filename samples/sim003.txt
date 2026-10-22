@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I want to send money to a new payee
+user: My medication ran out, I need a refill
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: All done. Anything else?
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: Refill requested, ready for pickup in 4 hours.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

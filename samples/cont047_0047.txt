@@ -1,11 +1,15 @@
-assistant: Hello, Northside Clinic support. What do you need?
-user: Can I change my Monday appointment?
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: The app locked me out after three attempts
 tool(verify_identity): ok
-assistant: Just to confirm, could you repeat the details?
-user: Come again?
-assistant: Of course: could you confirm the last four digits?
-user: Correct
-tool(reschedule_appointment): ok
-assistant: All set. Is there anything else?
-user: No, thank you.
-assistant: Anything else we can do for you? ... Have a good day!
+assistant: Which of the two would you prefer?
+user: Can you repeat that?
+assistant: Of course: I said, should I process it now?
+user: Yes please
+tool(send_otp): ok
+tool(send_otp): ok
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Password updated. Try logging in again in a minute.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling, have a good day!

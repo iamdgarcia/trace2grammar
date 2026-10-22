@@ -1,7 +1,14 @@
-assistant: Hello and welcome to Acme Bank. What can I do for you today?
-user: I want to send money to a new payee
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Can you renew my prescription?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(add_payee): ok
-assistant: That's completed. Anything else today?
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: Yes please
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: The pharmacy will have it tomorrow morning.
+assistant: Anything else I can do for you?
 user: No, that's everything.
-assistant: Is there anything else I can help you with? ... Have a great day!
+assistant: Take care and see you at the clinic. Goodbye!

@@ -1,0 +1,16 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: Freeze my card please
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Thursday one?
+user: Sorry, which one?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+assistant: Do you want it processed now or later today?
+user: I don't understand
+assistant: Of course: I said, should I process it now?
+user: Yes, that's correct
+tool(block_card): ok
+assistant: Card frozen as requested.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for your call, have a nice day!

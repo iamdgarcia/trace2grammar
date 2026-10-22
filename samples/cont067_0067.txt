@@ -1,7 +1,12 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: I want to check my account balance
+assistant: Hello, Northside Clinic support. What do you need?
+user: Can I get a dental cleaning?
+tool(verify_identity): error timeout
 tool(verify_identity): ok
-tool(check_balance): ok
-assistant: Done. Anything else I can do for you?
-user: No, that's everything.
-assistant: Thanks for calling, have a good day!
+tool(check_availability): error timeout
+tool(check_availability): ok
+tool(book_appointment): ok
+tool(book_appointment): ok
+assistant: Booked: Wednesday at 16:00. You'll get a reminder SMS.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Take care and see you at the clinic. Goodbye!

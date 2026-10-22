@@ -1,7 +1,0 @@
-assistant: Hi, this is the Acme Bank assistant. How can I help you today?
-user: Check my balance please
-tool(verify_identity): ok
-assistant: That request is handled by our specialist team, I can't do it myself. Shall I transfer you?
-user: Yes, please transfer me.
-tool(transfer_to_agent): ok
-assistant: Transferring you now, one moment please.

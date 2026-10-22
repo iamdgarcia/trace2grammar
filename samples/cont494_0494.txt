@@ -1,7 +1,8 @@
-assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
-user: Please cancel my account
+assistant: Acme Bank support, how can I help?
+user: I found my card but I had blocked it, can you unblock it?
 tool(verify_identity): ok
-tool(cancel_subscription): ok
-assistant: That's completed. Anything else today?
+tool(block_card): ok
+assistant: The card is blocked. You can unblock it from the app whenever you want.
+assistant: Is there anything else today?
 user: No, that's everything.
 assistant: Thanks for calling Acme Bank, have a great day!

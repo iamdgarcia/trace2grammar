@@ -1,7 +1,9 @@
 assistant: Hello! How can I help you today?
-user: I sent money on Friday, where is it?
+user: I want to cancel my subscription
 tool(verify_identity): ok
-tool(lookup_payment): ok
-assistant: All done. Anything else?
+tool(lookup_plan): ok
+tool(cancel_subscription): ok
+assistant: Cancelled. You keep access until June.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

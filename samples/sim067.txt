@@ -1,7 +1,8 @@
 assistant: Hello! How can I help you today?
-user: I can't log in, I need to reset my password
+user: I need a statement of the last three months
 tool(verify_identity): ok
-tool(reset_password): ok
-assistant: All done. Anything else?
+tool(generate_statement): ok
+assistant: Generated: the PDF is in your documents section.
+assistant: Anything else?
 user: No.
 assistant: Thanks for calling, have a great day!

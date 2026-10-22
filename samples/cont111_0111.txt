@@ -1,0 +1,10 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: How much is left in my current account?
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+tool(check_balance): error timeout
+tool(check_balance): ok
+assistant: Your checking account balance is 1670.50 dollars and savings has 1730.20.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

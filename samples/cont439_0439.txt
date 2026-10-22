@@ -1,9 +1,9 @@
-assistant: Good morning, this is Northside Clinic booking. How can I help?
-user: What are your opening hours?
-assistant: Which account or date would that be?
-user: Sorry, what did you say?
-assistant: Of course: could you confirm the last four digits?
-user: Correct
-assistant: That's completed. Anything else today?
-user: No, that's everything.
-assistant: Thank you for choosing Northside Clinic, have a great day!
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: My lab results are ready?
+tool(verify_identity): ok
+tool(lookup_results): ok
+tool(lookup_results): ok
+assistant: The results are in the app, released by your doctor this morning.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Take care and see you at the clinic. Goodbye!
