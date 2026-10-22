@@ -1,0 +1,152 @@
+[
+ {
+  "name": "cont01_balance_straight",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "cont02_card_replace_clarify",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "cont03_booking_simple",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "cont04_reschedule_clarify",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "cont05_otp_retry",
+  "outcome": "theta_cont",
+  "cycle_depth": 2,
+  "error_count": 1
+ },
+ {
+  "name": "cont06_dispute_two_clarifies",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "cont07_refill_declines_human",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "cont08_cancel_subscription",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "aban01_never_replies",
+  "outcome": "theta_aban",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "aban02_hangs_mid_auth",
+  "outcome": "theta_aban",
+  "cycle_depth": 3,
+  "error_count": 3
+ },
+ {
+  "name": "aban03_silent_after_offer",
+  "outcome": "theta_aban",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "aban04_after_two_clarify",
+  "outcome": "theta_aban",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "aban05_silent_on_date",
+  "outcome": "theta_aban",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "aban06_after_tool_error",
+  "outcome": "theta_aban",
+  "cycle_depth": 1,
+  "error_count": 1
+ },
+ {
+  "name": "hand01_angry_demands_human",
+  "outcome": "theta_hand",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "hand02_mortgage_out_of_scope",
+  "outcome": "theta_hand",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "hand03_auth_fail_forced",
+  "outcome": "theta_hand",
+  "cycle_depth": 3,
+  "error_count": 3
+ },
+ {
+  "name": "hand04_special_request",
+  "outcome": "theta_hand",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "hand05_refund_over_authority",
+  "outcome": "theta_hand",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "sim01_balance",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "sim02_book",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "sim03_card",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "sim04_refill",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "sim05_transfer_question",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ },
+ {
+  "name": "sim06_cancel",
+  "outcome": "theta_cont",
+  "cycle_depth": 0,
+  "error_count": 0
+ }
+]

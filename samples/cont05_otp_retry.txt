@@ -1,0 +1,11 @@
+assistant: Acme Bank support, how can I help?
+user: I can't log in, I need to reset my password.
+tool(send_otp): error timeout
+tool(send_otp): ok
+assistant: I've sent a code to your phone. Can you read it to me?
+user: Yes, it's 448210.
+tool(verify_otp): ok
+tool(reset_password): ok
+assistant: Your password has been reset, check your email. Anything else?
+user: No, perfect.
+assistant: Thanks for calling Acme Bank, have a great day!

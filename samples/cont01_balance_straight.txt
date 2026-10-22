@@ -1,0 +1,7 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: Hi, I just want to check my account balance.
+tool(verify_identity): ok
+tool(check_balance): ok
+assistant: Your checking account balance is 1,240.50 dollars. Anything else I can do for you?
+user: No, that's everything. Thanks!
+assistant: Thanks for calling Acme Bank, have a great day!

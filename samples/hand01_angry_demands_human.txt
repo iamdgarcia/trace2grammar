@@ -1,0 +1,8 @@
+assistant: Acme Bank support, how can I help?
+user: This is ridiculous, I've been charged twice and nobody fixes it!
+assistant: I'm really sorry about that. Let me look into the duplicate charge right away.
+tool(verify_identity): ok
+tool(lookup_charges): ok
+user: I don't want a robot, I want a person. Now.
+tool(escalate_to_human): ok
+assistant: Understood, connecting you with a human agent. Please hold the line.

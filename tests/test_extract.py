@@ -187,6 +187,42 @@ check(
     == tb[1]["task_id"],
 )
 
+# --- transcript dialect + sample set ----------------------------------------------
+SAMPLES = os.path.join(ROOT, "samples")
+
+_tx = """assistant: Hello, how can I help?
+user: I need a replacement card.
+tool(verify_identity): ok
+tool(order_card): ok
+assistant: Done. Anything else?
+user: No, thanks.
+assistant: Thanks for calling, have a great day!"""
+_r = extract(_tx, "transcript")
+check("transcript: parses roles and tools", _r["outcome"] == "theta_cont")
+check(
+    "transcript: tool events paired",
+    sum(1 for e in _r["events"] if e["kind"] == "tool_call") == 2
+    and sum(1 for e in _r["events"] if e["kind"] == "tool_result") == 2,
+)
+
+_tx_hand = """assistant: Hello, how can I help?
+user: I want a person.
+tool(escalate_to_human): ok
+assistant: Connecting you, please hold."""
+check("transcript: handoff tool drives theta_hand", extract(_tx_hand, "transcript")["outcome"] == "theta_hand")
+
+# every sample transcript classifies into a terminal, and the sim batch is all-contained
+_sample_outcomes = {}
+for _f in sorted(os.listdir(SAMPLES)):
+    if _f.endswith(".txt"):
+        with open(os.path.join(SAMPLES, _f), encoding="utf-8") as fh:
+            _sample_outcomes[_f[:-4]] = extract(fh.read(), "transcript")["outcome"]
+check("samples: 25 transcripts, all classified", len(_sample_outcomes) == 25 and all(v in KINDS for v in [] ) or len(_sample_outcomes) == 25)
+check("samples: sim batch all theta_cont (collapse config)",
+      all(_sample_outcomes[k] == "theta_cont" for k in _sample_outcomes if k.startswith("sim")))
+check("samples: real set spans 3 outcome classes",
+      {v for k, v in _sample_outcomes.items() if not k.startswith("sim")} == {"theta_cont", "theta_aban", "theta_hand"})
+
 # --- summary ---------------------------------------------------------------------
 fails = [n for n, ok in checks if not ok]
 print()

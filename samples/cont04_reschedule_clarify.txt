@@ -1,0 +1,12 @@
+assistant: Northside Clinic, how may I help you?
+user: I need to move my appointment on Monday.
+tool(verify_identity): ok
+tool(lookup_appointment): ok
+assistant: You have a check-up on Monday at 9:00. What day would you like instead?
+user: What was the appointment again?
+assistant: Your check-up with Dr. Reeves, Monday at 9:00.
+user: Ah yes, move it to Wednesday afternoon.
+tool(reschedule_appointment): ok
+assistant: Done, moved to Wednesday at 16:00. Anything else?
+user: No, thanks.
+assistant: Thanks for calling, have a nice day!

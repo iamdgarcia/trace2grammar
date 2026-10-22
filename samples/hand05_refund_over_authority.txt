@@ -1,0 +1,7 @@
+assistant: Acme support, how can I help?
+user: The washing machine I bought broke in a week, I want all my money back.
+tool(verify_identity): ok
+tool(lookup_order): ok
+assistant: The refund for that order is above the limit I can approve. I'll connect you with a human agent who can decide it.
+tool(escalate_to_human): ok
+assistant: Connecting you now, please stay on the line.

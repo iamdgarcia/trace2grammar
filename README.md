@@ -34,6 +34,7 @@ LangSmith ─┘        (attribute mapping)   {t_ms, kind, name}    (rule baseli
 | **OpenInference** | `fmt='openinference'` | same span envelope, `openinference.span.kind` (LLM/AGENT/TOOL/CHAIN), `input.value`/`output.value`, `llm.tool_calls` |
 | **LangSmith API export** | `fmt='langsmith'` | `{runs: [{name, run_type, inputs, outputs, start_time, end_time, parent_run_id, error}]}` |
 | **tau-bench episode** | `fmt='taubench'` | `{task_id, reward, info, traj[]}` (single or list) from `historical_trajectories/*.json` — environment-verified outcome drives the terminal (pass→contained, fail→handoff as documented public analogue) |
+| **Plain transcript** | `fmt='transcript'` | pasted text: `assistant:`/`user:` lines, `tool(name): ok|error <msg>` — the one export every human owns |
 
 To add a format: write one `_normalize_<fmt>(obj, cfg) -> list[Event]` function producing the
 canonical stream (`{t_ms, kind, name, attrs}` with `kind ∈ user_msg | assistant_msg | tool_call |
@@ -50,6 +51,34 @@ code**:
 - `clarify_user_patterns` / `confirm_user_patterns` — regexes over the user's words
 - `close_assistant_patterns` — farewell phrases
 - `complete_event_names` / `hangup_event_names` / `handoff_event_names` — explicit terminal events
+
+## Sample conversations (samples/)
+
+**25 hand-written synthetic transcripts, English**, two verticals — customer support (Acme Bank)
+and appointment booking (Northside Clinic) — so you can run the whole pipeline with zero
+infrastructure. Outcomes are **not labeled in the files**: the walker decides them. The set:
+
+- `cont01…cont08` — 8 contained conversations: straight through, clarify loops, an OTP retry
+  (D=2), a dispute with two clarifies, a declined human-transfer offer
+- `aban01…aban06` — 6 abandoned: silent mid-auth, silent after an offer, giving up after two
+  clarify rounds, hanging up right after a tool error
+- `hand01…hand05` — 5 handoffs: angry caller demands a human, out-of-scope vertical, three
+  failed identity checks forcing escalation, refund above bot authority
+- `sim01…sim06` — 6 **deliberately over-cooperative simulated** conversations (never err, never
+  leave, never escalate): the collapse configuration of the atlas, shipped as the built-in sim set
+
+```python
+from trace2grammar.extract import extract
+r = extract(open("samples/hand02_mortgage_out_of_scope.txt").read(), "transcript")
+print(r["outcome"])   # theta_hand
+```
+
+`python render_samples_atlas.py` paints the full set into the 2-D behavior plane
+(`samples_atlas.png` + `samples_coverage.json`): 19 real walks vs the 6-walk sim batch
+→ coverage 67.3%, per-class contained 64.9 / abandoned 76.4 / handoff 55.3 — the sim set
+reaches the easy contained lobe and misses most handoff/abandoned geometry, exactly the
+collapse-with-holes pattern §5 describes. `make_samples.py` regenerates the set and prints
+the walker's summary table.
 
 ## Honest status: this is a heuristic baseline
 

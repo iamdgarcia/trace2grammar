@@ -1,0 +1,7 @@
+assistant: Hello! How can I help you today?
+user: Did my transfer arrive?
+tool(verify_identity): ok
+tool(lookup_payment): ok
+assistant: Yes, the transfer arrived this morning. Anything else?
+user: No, thanks.
+assistant: Thanks for calling, have a great day!

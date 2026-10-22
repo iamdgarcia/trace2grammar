@@ -1,0 +1,9 @@
+assistant: Acme support, how can I help?
+user: I want to cancel my subscription.
+tool(verify_identity): ok
+assistant: Before I do it: I can offer you a 20 percent discount for 3 months if you stay. Interested?
+user: No, thank you, I really want to cancel it.
+tool(cancel_subscription): ok
+assistant: Your subscription is cancelled, effective at the end of the billing period. Anything else?
+user: No, that's all.
+assistant: Thanks for calling Acme, have a great day!

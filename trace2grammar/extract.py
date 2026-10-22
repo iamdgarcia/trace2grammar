@@ -72,7 +72,7 @@ class ExtractionConfig:
     close_assistant_patterns: tuple[str, ...] = (
         r"\bgracias por su llamada\b",
         r"\bque tenga\b",
-        r"\bhave a (good|great)\b",
+        r"\bhave a (good|great|nice)\b",
         r"\bchao\b",
         r"\badi[oó]s\b",
     )
@@ -119,7 +119,8 @@ def normalize_trace(
     fmt: 'otel' (OTel ResourceSpans with GenAI semconv), 'openinference'
     (OpenInference span attributes), 'langsmith' ({runs: [...]} API export),
     'taubench' (tau-bench episode: {task_id, reward, info, traj[...]} — accepts a
-    single episode dict or a list; environment-verified outcome drives the terminal).
+    single episode dict or a list; environment-verified outcome drives the terminal),
+    'transcript' (plain text: 'assistant:'/'user:' lines plus 'tool(name): ok|error <msg>').
     """
     cfg = config or ExtractionConfig()
     if fmt == "otel":
@@ -130,8 +131,10 @@ def normalize_trace(
         return _normalize_langsmith(obj, cfg)
     if fmt == "taubench":
         return _normalize_taubench(obj, cfg)
+    if fmt == "transcript":
+        return _normalize_transcript(obj, cfg)
     raise ValueError(
-        f"unknown format: {fmt!r} (use 'otel' | 'openinference' | 'langsmith' | 'taubench')"
+        f"unknown format: {fmt!r} (use 'otel' | 'openinference' | 'langsmith' | 'taubench' | 'transcript')"
     )
 
 
@@ -479,6 +482,65 @@ def _normalize_otel(
     return _dedupe(events)
 
 
+TRANSCRIPT_ROLE_RE = re.compile(
+    r"^(?P<role>assistant|user|tool)\s*(?:\((?P<tool>[\w.\-]+)\))?\s*[:>]\s*(?P<rest>.*)$",
+    re.IGNORECASE,
+)
+
+
+def _normalize_transcript(obj, cfg: ExtractionConfig) -> list[Event]:
+    """Plain-text transcript -> canonical events.
+
+    The one export format every human owns. Lines:
+      'assistant: <text>' / 'user: <text>'  (also 'agente:', 'bot:', 'agent:')
+      'tool(name): ok <text>'               -> tool_call + tool_result (same tick)
+      'tool(name): error <text>'            -> tool_call + tool_error
+    A continuation line with no role marker continues the previous message.
+    Synthetic monotonic timestamps (10ms per line) preserve order only.
+    """
+    events: list[Event] = []
+    last_role = "user"
+    for i, raw in enumerate(str(obj).splitlines()):
+        line = raw.strip()
+        if not line:
+            continue
+        t = i * 10
+        m = TRANSCRIPT_ROLE_RE.match(line)
+        if not m:
+            # continuation of the previous message
+            if events:
+                events[-1]["attrs"]["content"] += " " + line
+                events[-1]["attrs"]["end_line"] = i + 1
+            continue
+        role, tool, rest = m.group("role").lower(), m.group("tool"), m.group("rest").strip()
+        if role == "tool":
+            name = tool or "tool"
+            failed = rest.lower().startswith("error")
+            if re.search("|".join(cfg.handoff_tool_patterns), name, re.I):
+                # parity with the otel/langsmith normalizers: handoff-typed tools
+                # emit the handoff event that drives theta_hand
+                events.append({"t_ms": t + 1, "kind": "handoff", "name": name, "attrs": {}})
+                last_role = "assistant"
+                continue
+            events.append({"t_ms": t, "kind": "tool_call", "name": name, "attrs": {}})
+            events.append(
+                {
+                    "t_ms": t + 1,
+                    "kind": "tool_error" if failed else "tool_result",
+                    "name": name,
+                    "attrs": {"content": rest},
+                }
+            )
+            last_role = "assistant"
+        else:
+            kind = "assistant_msg" if role in ("assistant", "agente", "bot", "agent", "sistema", "system", "ai") else "user_msg"
+            events.append(
+                {"t_ms": t, "kind": kind, "name": None, "attrs": {"content": rest}}
+            )
+            last_role = "user" if kind == "user_msg" else "assistant"
+    return events
+
+
 def _normalize_langsmith(obj, cfg: ExtractionConfig) -> list[Event]:
     events: list[Event] = []
     for run in obj.get("runs", []):
@@ -741,3 +803,8 @@ def extract(obj, fmt: str, config: ExtractionConfig | None = None) -> dict:
     result = infer_states(events, cfg)
     result["events"] = events
     return result
+
+
+def extract_transcript(text: str, config: ExtractionConfig | None = None) -> dict:
+    """extract() for pasted/plain transcripts (fmt='transcript')."""
+    return extract(text, "transcript", config)

@@ -1,0 +1,8 @@
+assistant: Hello! How can I help you today?
+user: I lost my card.
+tool(verify_identity): ok
+tool(block_card): ok
+tool(order_card): ok
+assistant: Card blocked and a replacement ordered. Anything else?
+user: No, that's it.
+assistant: Thanks for calling, have a great day!
