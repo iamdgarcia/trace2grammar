@@ -16,6 +16,7 @@ of that claim: **real trace formats in, grammar walk + outcome class + cycle dep
 OTel GenAI ─┐
 OpenInference ─┼─► normalize_trace() ─► canonical events ─► infer_states() ─► walk σ
 LangSmith ─┘        (attribute mapping)   {t_ms, kind, name}    (rule baseline)   {state, transition_type}
+transcript (paste) ┘
                                                                     │
                                                     report.py ──────┤
                                                         ├─ outcome class (θ_cont/θ_aban/θ_hand/θ_esc)
@@ -25,6 +26,13 @@ LangSmith ─┘        (attribute mapping)   {t_ms, kind, name}    (rule baseli
                                                         └─ atlas SVG: (cycle_depth, duration) plane,
                                                            color = outcome
 ```
+
+**Live in a browser:** the walker ships as a verified JavaScript port
+(`autopsy_space/tau_port.js`, transcript parity 585/585 via `check_parity_transcript.py`)
+powering two Hugging Face Spaces: [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space)
+(paste a conversation, watch where and why it died) and
+[Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space)
+(the latent-space atlas of untested behavior).
 
 ## Supported formats (and how to add one)
 
