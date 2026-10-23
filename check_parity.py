@@ -1,8 +1,9 @@
+import os
 # Parity check: tau_port.js (JS) vs trace2grammar/extract.py (python) on the golden
 # outputs of the 7 shipped fixtures. Any mismatch = port bug; the Space claims parity.
 import json, subprocess, os
 
-ROOT = "C:/Users/U77225D/Desktop/proyectos/hf"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GOLDEN = json.load(open(ROOT + "/runtime/tau_golden.json", encoding="utf-8"))
 
 runner = """

@@ -1,3 +1,4 @@
+import os
 # Parity check for the TRANSCRIPT dialect: python _normalize_transcript+infer_states
 # vs tau_port.js normalizeTranscript+inferStates, on the trace2grammar sample files
 # + crafted edge cases (handoff tool, continuation lines, tool error, alias roles).
@@ -5,7 +6,7 @@
 # timestamps; this one covers the pasted-text path the autopsy Space actually runs.
 import json, subprocess, os, sys
 
-ROOT = "C:/Users/U77225D/Desktop/proyectos/hf"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT + "/builds/trace2grammar")
 from trace2grammar.extract import extract_transcript  # noqa: E402
 

@@ -4,10 +4,11 @@
 # the demo can show the conversation behind every point without a server.
 import json, os, sys
 
-ROOT = "C:/Users/U77225D/Desktop/proyectos/hf/builds/trace2grammar"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 from trace2grammar.extract import extract
 from trace2grammar.coverage import coverage_from_walks, _grid_transform
+from trace2grammar.operativa import label_operativa
 
 def load(prefix, exclude_prefix=None):
     out = []
@@ -46,6 +47,7 @@ def buildPts(entries, coords, meta, kind):
             "y": round(coords[i][1], 4),
             "kind": kind,
             "outcome": m["outcome"],
+            "op": label_operativa(e["transcript"], __import__("re").findall(r"tool\(([\w.\-]+)\)", e["transcript"])),
             "D": m["cycle_depth"],
             "dur_s": round(m["duration_ms"] / 1000, 1),
             "n_states": m["n_states"],
@@ -71,7 +73,9 @@ blob = {
     "points": real_pts + sim_pts,
     "labels": LBL,
 }
-out = "C:/Users/U77225D/Desktop/proyectos/hf/builds/where-conversations-die/atlas_data.js"
+# ponytail: fixed absolute output path to the sibling Space build; move to config when a second consumer appears
+out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                   "where-conversations-die", "atlas_data.js")
 os.makedirs(os.path.dirname(out), exist_ok=True)
 with open(out, "w", encoding="utf-8") as fh:
     fh.write("var ATLAS = ")
