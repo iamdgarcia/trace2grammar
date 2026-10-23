@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversation Autopsy: paste a conversation, watch it die</title>
+<meta name="description" content="Paste any support conversation and watch a verified decision walker dissect it live: which decisions fired, where the conversation died, and the exact line that killed it.">
+<style>
+:root{
+ --bg:#141210;--surface:#1d1a17;--ink:#ede7de;--soft:#a89f92;--line:#38322b;
+ --alive:#7fb069;--dead:#e05252;--hand:#e0a458;--accent:#d9c8a9;
+ --mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--mono),monospace}
+main{max-width:1100px;margin:0 auto;padding:24px 20px 90px}
+h1{font-size:1.35rem;margin:18px 0 4px;letter-spacing:.02em}
+h1 .morgue{color:var(--dead)}
+.sub{color:var(--soft);margin:0 0 22px;font-size:.85rem}
+.sub a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+textarea{width:100%;min-height:340px;background:var(--surface);color:var(--ink);
+ border:1px solid var(--line);border-radius:8px;padding:14px;font:13px/1.55 var(--mono);resize:vertical}
+textarea:focus{outline:1px solid var(--accent)}
+button.run{background:var(--accent);color:#141210;border:0;border-radius:6px;padding:11px 26px;
+ font:600 14px var(--mono);cursor:pointer;margin-top:12px}
+button.run:hover{filter:brightness(1.08)}
+.hint{color:var(--soft);font-size:.78rem;margin-top:10px}
+.hint code{color:var(--accent)}
+.panel h2{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:2px 0 12px}
+#verdict{border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:var(--surface);margin-bottom:16px}
+#verdict .big{font-size:1.05rem;font-weight:600}
+#verdict.alive{border-color:var(--alive)} #verdict.alive .big{color:var(--alive)}
+#verdict.dead{border-color:var(--dead)} #verdict.dead .big{color:var(--dead)}
+#verdict.hand{border-color:var(--hand)} #verdict.hand .big{color:var(--hand)}
+#verdict .why{color:var(--soft);font-size:.85rem;margin-top:6px}
+#steps{list-style:none;padding:0;margin:0}
+#steps li{border-left:2px solid var(--line);padding:7px 0 7px 16px;margin-left:4px;opacity:.25;
+ transition:opacity .5s}
+#steps li.on{opacity:1;border-left-color:var(--accent)}
+#steps li .st{color:var(--accent);font-weight:600}
+#steps li .tt{color:var(--soft);font-size:.78rem;margin-left:8px}
+#steps li .quote{display:block;color:var(--ink);font-size:.82rem;margin-top:2px;white-space:nowrap;
+ overflow:hidden;text-overflow:ellipsis}
+#steps li.killer{border-left-color:var(--dead)}
+#steps li.killer .st{color:var(--dead)}
+footer{margin-top:34px;color:var(--soft);font-size:.78rem;border-top:1px solid var(--line);padding-top:16px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>Conversation <span class="morgue">Autopsy</span></h1>
+<p class="sub">Paste a conversation. A decision walker (verified against the Python
+implementation, 7/7 fixtures) dissects it decision by decision and rules on the cause of death.
+Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
+<a href="https://github.com/iamdgarcia/trace2grammar">trace2grammar</a></p>
+
+<div class="grid">
+ <div>
+  <textarea id="input" spellcheck="false"></textarea>
+  <button class="run" id="run">Dissect</button>
+  <p class="hint">Format: lines starting <code>user:</code> / <code>assistant:</code> /
+  <code>tool(name):</code> with <code>ok</code> or <code>error</code> as the first
+  word (e.g. <code>tool(verify_identity): error timeout</code>). ES/EN both work.
+  Or <button id="load" style="background:none;border:0;color:var(--accent);cursor:pointer;font:inherit;text-decoration:underline;padding:0">load a sample that died</button></p>
+ </div>
+ <div class="panel">
+  <h2>Verdict</h2>
+  <div id="verdict"><div class="why">Waiting for a body.</div></div>
+  <h2>Decision walk</h2>
+  <ol id="steps"></ol>
+ </div>
+</div>
+
+<footer>Runs entirely in your browser: nothing is uploaded, there is no backend.
+The walker is a line-for-line JavaScript port of trace2grammar's infer_states
+(<a href="https://github.com/iamdgarcia/trace2grammar">repo</a>), parity-checked 7/7
+against the Python on the shipped fixtures. Part of the
+<a href="https://iamdgarcia-where-conversations-die.static.hf.space">where-conversations-die</a> atlas.</footer>
+
+<script src="tau_port.js"></script>
+<script>
+const SAMPLE = `assistant: Buenos días, le atiende el asistente del banco.
+user: quiero cancelar mi seguro de vida
+assistant: antes tengo que verificar su identidad, ¿me confirma su documento?
+user: sí, el 1234
+tool(verify_identity): ok
+user: gracias
+assistant: gracias, ya le tengo identificado. ¿Qué desea hacer con el seguro?
+user: cancelarlo, me marcho del país
+assistant: lo siento, para la cancelación necesito que hable con un agente humano
+tool(escalate_to_human): ok transferred`;
+
+const $ = id => document.getElementById(id);
+const STATE_NAMES = {q_greet:'GREETING', q_auth:'AUTHENTICATING', q_intent:'INTENT',
+ q_tool:'EXECUTING', q_clarify:'CLARIFYING', q_confirm:'CONFIRMING', q_close:'CLOSING'};
+const OUTCOME = {
+ theta_cont:{cls:'alive', title:'Contained: the conversation survived.',
+  why:'It reached a close with the goal attended. Nothing to autopsy: this is what your agent looks like when it works.'},
+ theta_aban:{cls:'dead', title:'Abandoned: the conversation died mid-flow.',
+  why:'No terminal, no handoff: the user stopped answering while the agent still owed them something. The killer line below is where they gave up.'},
+ theta_hand:{cls:'hand', title:'Handoff: this conversation escaped the machine.',
+  why:'An escalation event fired. Human territory. Not a death exactly, but your automation ended here.'},
+ theta_esc:{cls:'hand', title:'Escalated out.', why:'Escalation terminal.'}
+};
+
+function render() {
+  const text = $('input').value;
+  if (!text.trim()) return;
+  let events, r;
+  try {
+    const norm = TAU.normalizeTranscript(text);
+    events = norm.events;
+    r = TAU.inferStates(events);
+  } catch (e) {
+    $('verdict').className = '';
+    $('verdict').innerHTML = '<div class="big">Parse error</div><div class="why">' + e.message + '</div>';
+    return;
+  }
+  if (!events.length) {
+    $('verdict').className = '';
+    $('verdict').innerHTML = '<div class="why">No user:/assistant:/tool: lines found. Nothing to dissect.</div>';
+    $('steps').innerHTML = '';
+    return;
+  }
+  const o = OUTCOME[r.outcome] || OUTCOME.theta_aban;
+  const v = $('verdict');
+  v.className = o.cls;
+  v.innerHTML = '<div class="big">' + o.title + '</div><div class="why">' + o.why +
+    ' Cycle depth D=' + r.cycle_depth + (r.error_count ? ', ' + r.error_count + ' tool error(s)' : '') +
+    ', ' + r.walk.length + ' decisions.</div>';
+
+  // pair walk steps with the transcript line that caused them (t_ms match), for the quote
+  const evAt = new Map();
+  events.forEach(ev => { evAt.set(ev.t_ms, ev); });
+  const lines = text.split(/\r?\n/);
+  const ol = $('steps');
+  ol.innerHTML = '';
+  r.walk.forEach((w, i) => {
+    const li = document.createElement('li');
+    const tt = w.transition_type === 'start' ? 'session start' : w.transition_type;
+    li.innerHTML = '<span class="st">' + (STATE_NAMES[w.state] || w.state) + '</span>' +
+      '<span class="tt">' + tt + '</span>';
+    const ev = evAt.get(w.t_ms);
+    if (ev && ev.attrs && ev.attrs.content != null) {
+      const q = document.createElement('span');
+      q.className = 'quote';
+      q.textContent = '“' + String(ev.attrs.content).slice(0, 90) + '”';
+      li.appendChild(q);
+    } else if (ev && ev.name) {
+      const q = document.createElement('span');
+      q.className = 'quote';
+      q.textContent = 'tool: ' + ev.name + (ev.kind === 'tool_error' ? ' (error)' : '');
+      li.appendChild(q);
+    }
+    ol.appendChild(li);
+  });
+  // light the walk one step at a time; mark the terminal as the killer when not contained
+  const items = ol.children;
+  if (r.outcome !== 'theta_cont' && items.length) items[items.length - 1].classList.add('killer');
+  let i = 0;
+  const iv = setInterval(() => {
+    if (i >= items.length) { clearInterval(iv); return; }
+    items[i++].classList.add('on');
+  }, 260);
+}
+
+$('run').onclick = render;
+$('load').onclick = () => { $('input').value = SAMPLE; render(); };
+$('input').addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') render();
+});
+$('input').value = SAMPLE;
+</script>
+</body>
+</html>
