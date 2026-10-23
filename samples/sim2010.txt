@@ -1,0 +1,16 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: Did my transfer arrive?
+tool(verify_identity): ok
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes please
+assistant: Which of the two would you prefer?
+user: I don't understand
+assistant: Of course: I said, can you confirm it?
+user: Sure
+tool(lookup_payment): ok
+assistant: It shows completed since this morning.
+assistant: Anything else I can do for you?
+user: No, that's everything.
+assistant: Thanks for your call, have a nice day!

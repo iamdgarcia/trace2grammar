@@ -1,0 +1,16 @@
+assistant: Hello and welcome to Acme Bank. What can I do for you today?
+user: My card is damaged, I need a replacement
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: Come again?
+assistant: No problem, let me repeat it.
+user: Yes
+assistant: Which of the two would you prefer?
+user: Sorry, what did you say?
+assistant: No problem, let me repeat it.
+user: Correct
+tool(order_card): ok
+assistant: Done: new card on its way, delivery in 3 days.
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Thanks for your call, have a nice day!

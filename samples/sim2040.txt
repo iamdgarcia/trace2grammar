@@ -1,0 +1,7 @@
+assistant: Good afternoon, Acme Bank assistant speaking. What can I help you with?
+user: A payment I'm expecting hasn't shown up
+tool(verify_identity): ok
+assistant: That's above what I can arrange here. Let me pass you to a human agent.
+user: Yes, please transfer me.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, one moment please.

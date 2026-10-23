@@ -1,0 +1,16 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: How do I get my test results?
+tool(verify_identity): ok
+assistant: Which of the two would you prefer?
+user: I don't understand
+assistant: No problem, let me repeat it.
+user: That's right
+assistant: Which of the two would you prefer?
+user: What do you mean?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(lookup_results): ok
+assistant: Results are ready; the doctor added notes to them.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thank you for choosing Northside Clinic, have a great day!

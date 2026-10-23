@@ -1,0 +1,19 @@
+assistant: Northside Clinic, how may I help you?
+user: I need to move my appointment
+tool(verify_identity): error timeout
+tool(verify_identity): ok
+assistant: Do you want it processed now or later today?
+user: What do you mean?
+assistant: Of course: I said, can you confirm it?
+user: That's right
+assistant: Just to confirm: is it the Thursday one?
+user: Sorry, which one?
+assistant: No problem, let me repeat it.
+user: Yes
+tool(lookup_appointment): error timeout
+tool(lookup_appointment): ok
+tool(reschedule_appointment): ok
+assistant: The appointment is now Tuesday at 16:00.
+assistant: Is there anything else today?
+user: No, thank you.
+assistant: Take care and see you at the clinic. Goodbye!

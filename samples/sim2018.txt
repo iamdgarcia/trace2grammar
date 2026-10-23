@@ -1,0 +1,9 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: I need a refill of my prescription
+tool(verify_identity): ok
+tool(lookup_prescription): ok
+tool(request_refill): ok
+assistant: The pharmacy will have it tomorrow morning.
+assistant: Anything else I can do for you?
+user: No, thank you.
+assistant: Thank you for choosing Northside Clinic, have a great day!

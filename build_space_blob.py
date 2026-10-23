@@ -9,10 +9,10 @@ sys.path.insert(0, ROOT)
 from trace2grammar.extract import extract
 from trace2grammar.coverage import coverage_from_walks, _grid_transform
 
-def load(prefix):
+def load(prefix, exclude_prefix=None):
     out = []
     for f in sorted(os.listdir(os.path.join(ROOT, "samples"))):
-        if f.startswith(prefix) and f.endswith(".txt"):
+        if f.startswith(prefix) and f.endswith(".txt") and not (exclude_prefix and f.startswith(exclude_prefix)):
             with open(os.path.join(ROOT, "samples", f), encoding="utf-8") as fh:
                 txt = fh.read()
             r = extract(txt, "transcript")
@@ -20,7 +20,7 @@ def load(prefix):
     return out
 
 real = load("cont") + load("aban") + load("hand")
-sim = load("sim")
+sim = load("sim", exclude_prefix="sim2") + load("sim2")
 cov = coverage_from_walks([r["res"] for r in real], [r["res"] for r in sim], res=24, eps=0.10, mode="grammar")
 print("coverage:", cov["coverage_pct"], "% |", cov["covered_cells"], "/", cov["occupied_cells"])
 
@@ -60,7 +60,7 @@ sim_pts = buildPts(sim, cov["sim2d"], cov["sim_meta"], "sim")
 
 x0, y0, cw, ch = _grid_transform(cov["real2d"], 24, 0.15)
 blob = {
-    "generated": "2026-10-22",
+    "generated": "2026-10-23",
     "grid": {"res": 24, "x0": x0, "y0": y0, "cw": cw, "ch": ch,
              "eps": cov["grid"]["eps"], "bw": cov["grid"]["bw_frac"]},
     "coverage": {"pct": cov["coverage_pct"], "occupied": cov["occupied_cells"],

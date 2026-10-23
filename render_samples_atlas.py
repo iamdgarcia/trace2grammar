@@ -12,19 +12,20 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-def load(prefix):
+def load(prefix, exclude_prefix=None):
     out = []
     for f in sorted(os.listdir(os.path.join(ROOT, "samples"))):
-        if f.startswith(prefix) and f.endswith(".txt"):
+        if f.startswith(prefix) and f.endswith(".txt") and not (exclude_prefix and f.startswith(exclude_prefix)):
             with open(os.path.join(ROOT, "samples", f), encoding="utf-8") as fh:
                 out.append(extract(fh.read(), "transcript"))
     return out
 
 real = [r for r in load("cont") + load("aban") + load("hand")]
-sim = load("sim")
-print("real walks:", len(real), "| sim walks:", len(sim))
+sim = load("sim", exclude_prefix="sim2")
+sim2 = load("sim2")
+print("real walks:", len(real), "| sim control:", len(sim), "| sim2 diverse:", len(sim2))
 
-cov = coverage_from_walks(real, sim, res=24, eps=0.05, mode="grammar")
+cov = coverage_from_walks(real, sim + sim2, res=24, eps=0.05, mode="grammar")
 print("coverage:", cov["coverage_pct"], "% |", cov["covered_cells"], "/", cov["occupied_cells"],
       "cells | per class:", cov["per_class_coverage"])
 
@@ -48,20 +49,23 @@ colors = {"theta_cont": "#2e8b57", "theta_aban": RED, "theta_hand": "#7b3fa0"}
 for (x, y), m in zip(cov["real2d"], cov["real_meta"]):
     ax.plot([x], [y], markers[m["outcome"]], color=colors[m["outcome"]], ms=9,
             mec="white", mew=1.0, zorder=4)
-for (x, y), m in zip(cov["sim2d"], cov["sim_meta"]):
+for (x, y), m in zip(cov["sim2d"][:len(sim)], cov["sim_meta"][:len(sim)]):
     ax.plot([x], [y], "D", color=ORANGE, ms=8, mec="white", mew=1.0, zorder=4)
+for (x, y), m in zip(cov["sim2d"][len(sim):], cov["sim_meta"][len(sim):]):
+    ax.plot([x], [y], "D", color="#b8860b", ms=7, mec="white", mew=1.0, zorder=4)
 
 from matplotlib.lines import Line2D
 leg = [Line2D([], [], marker=markers[k], ls="none", color=colors[k],
               label="real: " + LBL[k]) for k in ("theta_cont", "theta_aban", "theta_hand")]
-leg.append(Line2D([], [], marker="D", ls="none", color=ORANGE, label="sim (over-cooperative v1)"))
+leg.append(Line2D([], [], marker="D", ls="none", color=ORANGE, label="sim control (over-cooperative)"))
+leg.append(Line2D([], [], marker="D", ls="none", color="#b8860b", label="sim2 (diverse 20/20/20)"))
 leg.append(Rectangle((0, 0), 1, 1, fc=RED, alpha=0.16, label="uncovered cells"))
 ax.legend(handles=leg, loc="upper left", fontsize=8, framealpha=0.9)
 
 ax.set_xlabel("PC 1"); ax.set_ylabel("PC 2")
 ax.set_xticks([]); ax.set_yticks([])
 for s in ax.spines.values(): s.set_color("#cccccc")
-ax.set_title("sample-set atlas: %d real + %d simulated conversations\n(samples/ in the trace2grammar repo)" % (len(real), len(sim)), fontsize=9)
+ax.set_title("sample-set atlas: %d real + %d+sim control + %d diverse simulated\n(samples/ in the trace2grammar repo)" % (len(real), len(sim), len(sim2)), fontsize=9)
 fig.tight_layout()
 fig.savefig(os.path.join(ROOT, "samples_atlas.pdf"), bbox_inches="tight", dpi=300)
 fig.savefig(os.path.join(ROOT, "samples_atlas.png"), bbox_inches="tight", dpi=150)

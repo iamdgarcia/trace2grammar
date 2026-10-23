@@ -1,0 +1,9 @@
+assistant: Hi, this is the Northside Clinic assistant. How can I help you today?
+user: Can I change my Monday appointment?
+tool(verify_identity): ok
+tool(lookup_appointment): ok
+tool(reschedule_appointment): ok
+assistant: Moved to Thursday at 11:30. Anything else?
+assistant: Is there anything else today?
+user: No, that's all, thanks.
+assistant: Take care and see you at the clinic. Goodbye!

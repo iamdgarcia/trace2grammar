@@ -1,0 +1,8 @@
+assistant: Good morning, this is Northside Clinic booking. How can I help?
+user: My medication ran out, I need a refill
+tool(verify_identity): ok
+tool(request_refill): error internal
+tool(request_refill): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.

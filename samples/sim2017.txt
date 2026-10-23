@@ -1,0 +1,9 @@
+assistant: Welcome to Acme Bank support. I can help with accounts, cards and payments. What do you need?
+user: I need a certificate for my taxes
+tool(verify_identity): ok
+tool(generate_statement): error timeout
+tool(generate_statement): ok
+assistant: The statement is on its way to your email.
+assistant: Anything else I can do for you?
+user: No, that's all, thanks.
+assistant: Thanks for calling, have a good day!

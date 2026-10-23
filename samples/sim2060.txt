@@ -1,0 +1,12 @@
+assistant: Hi, this is the Acme Bank assistant. How can I help you today?
+user: I found my card but I had blocked it, can you unblock it?
+tool(verify_identity): ok
+assistant: Just to confirm: is it the Friday one?
+user: Come again?
+assistant: No problem, let me repeat it.
+user: Yes, that's correct
+tool(block_card): ok
+assistant: The card is blocked. You can unblock it from the app whenever you want.
+assistant: Is there anything else today?
+user: No, that's everything.
+assistant: Thanks for calling Acme Bank, have a great day!

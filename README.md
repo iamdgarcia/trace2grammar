@@ -81,12 +81,14 @@ r = extract(open("samples/hand02_mortgage_out_of_scope.txt").read(), "transcript
 print(r["outcome"])   # theta_hand
 ```
 
-`python render_samples_atlas.py` paints the full set into the 2-D behavior plane
-(`samples_atlas.png` + `samples_coverage.json`): 19 real walks vs the 6-walk sim batch
-→ coverage 67.3%, per-class contained 64.9 / abandoned 76.4 / handoff 55.3 — the sim set
-reaches the easy contained lobe and misses most handoff/abandoned geometry, exactly the
-collapse-with-holes pattern §5 describes. `make_samples.py` regenerates the set and prints
-the walker's summary table.
+`python render_samples_atlas.py` paints the full generated set (640 transcripts) into the 2-D
+behavior plane (`samples_atlas.png` + `samples_coverage.json`). The sim composition is the
+atlas's experiment: the 80-walk over-cooperative control alone covers 100/100 with 70-of-447
+cells uncovered (the collapse-with-holes pattern §5 describes); the 60-walk **diverse sim2
+batch** (composed through the same production-shaped generators as the real set, 20/20/20
+families) lifts coverage to 100% of all occupied cells. Red cells on a coverage atlas measure
+the sim set's imagination, not the world's: reachability is cheap when you own the generator.
+`make_samples.py` regenerates the set (fixed seed) and prints the walker's summary table.
 
 ## Honest status: this is a heuristic baseline
 

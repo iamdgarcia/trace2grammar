@@ -310,7 +310,7 @@ def story_sim(intent, clinic):
     return L
 
 # ---------------- compose ----------------
-N_REAL, N_SIM = 500, 80
+N_REAL, N_SIM, N_SIM2 = 500, 80, 60
 written = []
 counts = {"cont": 0, "aban": 0, "hand": 0}
 
@@ -348,7 +348,31 @@ for j in range(N_SIM):
         fh.write("\n".join(L) + "\n")
     written.append(name)
 
-print("wrote", len(written), "transcripts:", counts, "+", N_SIM, "sim")
+# sim2: DIVERSE simulated batch (consejo del rojo, 23-oct): the over-cooperative set
+# above is the labeled collapse control, but a sim set with NO handoff/abandoned mass
+# makes every uncovered cell tautological (sim is blind by design, red proves nothing).
+# sim2 composes 20/20/20 through the SAME production-shaped generators as the real set,
+# so red cells now mean "neither the cooperative control NOR a diverse LLM-style set
+# reaches this region" — an actual diagnostic.
+n_sim2 = {"cont": 0, "aban": 0, "hand": 0}
+for j in range(N_SIM2):
+    clinic = rng.random() < 0.45
+    intents = INTENTS_CLINIC if clinic else INTENTS_SUPPORT
+    intent = rng.choice(intents)
+    r = rng.random()
+    if r < 0.34:
+        L, fam = story_contained(intent, clinic), "cont"
+    elif r < 0.67:
+        L, fam = story_abandoned(intent, clinic), "aban"
+    else:
+        L, fam = story_handoff(intent, clinic), "hand"
+    name = f"sim2{j+1:03d}"
+    with open(os.path.join(SAMPLES, name + ".txt"), "w", encoding="utf-8") as fh:
+        fh.write("\n".join(L) + "\n")
+    written.append(name)
+    n_sim2[fam] += 1
+
+print("wrote", len(written), "transcripts:", counts, "+", N_SIM, "sim +", n_sim2, "sim2")
 
 # ---------------- walker decides; summary is the check ----------------
 sys.path.insert(0, ROOT)

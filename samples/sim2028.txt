@@ -1,0 +1,5 @@
+assistant: Acme Bank support, how can I help?
+user: The ATM ate my card, I need a new one
+tool(verify_identity): ok
+tool(order_card): error rejected
+assistant: I'm sorry, that didn't go through. Do you want me to try again?

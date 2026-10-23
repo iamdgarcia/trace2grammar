@@ -1,0 +1,8 @@
+assistant: Hello, Northside Clinic support. What do you need?
+user: How do I get my test results?
+tool(verify_identity): ok
+tool(lookup_results): error internal
+tool(lookup_results): error internal
+assistant: The system isn't letting me complete this. I'll transfer you to someone who can.
+tool(transfer_to_agent): ok
+assistant: Transferring you now, please hold.
