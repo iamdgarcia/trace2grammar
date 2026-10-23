@@ -119,3 +119,21 @@ if fails:
     print(f"{len(fails)} CHECKS FAILED")
     sys.exit(1)
 print("ALL CHECKS PASSED")
+
+# (d) instance coverage: kernel-free companion (kernel-masking failure mode, #6471-wave)
+from trace2grammar.coverage import instance_coverage
+
+r_pts = [(0.0, 0.0), (1.0, 1.0), (2.0, 2.0), (3.0, 3.0), (4.0, 4.0)]
+ic = instance_coverage(r_pts, [(0.1, 0.1), (3.9, 3.9)])
+# the middle points (1,1)-(3,3) sit >r from both sim points: 80% is the honest number
+check("instance: endpoints covered", ic["instance_coverage"] == 80.0)
+ic = instance_coverage(r_pts, [(10.0, 10.0)])
+check("instance: disjoint support uncovered", ic["instance_coverage"] == 0.0)
+ic = instance_coverage(r_pts, [])
+check("instance: empty sim set", ic["instance_coverage"] == 0.0)
+# interior hole not blurred away: real ring + sim blob at center
+import math as _m
+ring = [(_m.cos(2 * _m.pi * i / 60) * 5, _m.sin(2 * _m.pi * i / 60) * 5) for i in range(60)]
+center = [(0.0, 0.0), (0.1, 0.0), (0.0, 0.1)]
+ic_ring = instance_coverage(ring, center)
+check("instance: ring + center blob does NOT count as covering", ic_ring["instance_coverage"] < 10.0)

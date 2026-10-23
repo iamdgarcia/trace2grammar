@@ -304,6 +304,50 @@ def top_k_uncovered(cov: dict, k: int) -> list[dict]:
     return picked
 
 
+def instance_coverage(
+    real2d: list[tuple[float, float]],
+    sim2d: list[tuple[float, float]],
+    classes: list[str] | None = None,
+) -> dict:
+    """Instance-level coverage: fraction of real conversations with a sim neighbor within r.
+
+    r = median real nearest-neighbor distance (read off the real collection, not swept);
+    the kernel does not participate, so interior holes cannot be blurred away (the
+    kernel-masking failure mode of region coverage, §4).
+    Returns overall, per-class (when classes given), and the radius used.
+    """
+    if not real2d:
+        raise ValueError("real set is empty")
+    if not sim2d:
+        return {"instance_coverage": 0.0, "per_class": {}, "r": 0.0}
+    nn = []
+    for i, (rx, ry) in enumerate(real2d):
+        best = min(
+            (rx - x) ** 2 + (ry - y) ** 2
+            for j, (x, y) in enumerate(real2d)
+            if j != i
+        )
+        nn.append(math.sqrt(best))
+    nn.sort()
+    r = nn[len(nn) // 2] if len(nn) % 2 else (nn[len(nn) // 2 - 1] + nn[len(nn) // 2]) / 2
+    hit = []
+    r2 = r * r
+    for rx, ry in real2d:
+        hit.append(any((rx - x) ** 2 + (ry - y) ** 2 <= r2 for x, y in sim2d))
+    overall = 100.0 * sum(hit) / len(hit)
+    per_class: dict[str, float] = {}
+    if classes:
+        for cl in sorted(set(classes)):
+            idx = [i for i, c in enumerate(classes) if c == cl]
+            if idx:
+                per_class[cl] = round(100.0 * sum(hit[i] for i in idx) / len(idx), 1)
+    return {
+        "instance_coverage": round(overall, 1),
+        "per_class": per_class,
+        "r": round(r, 6),
+    }
+
+
 # --------------------------------------------------------------- walk-level plumbing
 
 
