@@ -10,6 +10,38 @@ The paper's claim is deliberately machine-level: every grammar state (`q_greet �
 grammaticality can be checked from telemetry alone. This library is the first, rule-based instance
 of that claim: **real trace formats in, grammar walk + outcome class + cycle depth out.**
 
+## What this repo probes
+
+**The question:** when you evaluate a conversational agent with simulated users, which behaviors
+does your evaluation actually exercise — and can you trust the outcome your transcript shows?
+
+**The three instruments in this repo answer it:**
+
+1. **Extraction (τ)** — deterministic mapping from any agent-observability format to a grammar
+   walk + terminal outcome + cycle-depth drift `D`. Validated verbatim on three third-party
+   corpora: MultiWOZ 2.2 (1,000 dialogues), Schema-Guided Dialogue (4,201 test dialogues, 20
+   services), and 1,980 official tau-bench episodes of real agents (gpt-4o, claude-3.5-sonnet).
+2. **Coverage** — which regions of the behavior plane your simulated users never reach: the
+   tests you are not running. With the real tau-bench anchor: kernel-masked coverage stays 100%
+   at every bandwidth of the ladder (101/130/243 cells), but kernel-free instance coverage is
+   0.0% (of 961 unique real positions, no simulated episode lands on one). And 628 of 1,980 real
+   episodes (31.7%) re-enter settled states (D up to 9) where every human wizard corpus shows D=0:
+   real agents exercise the loop benchmarks never do.
+3. **Verdict-vs-truth confrontation** — on the tau-bench anchor every episode carries the
+   environment-verified reward: the closing phrase does not predict the delivered outcome, and
+   its sign **inverts** (polite close in 66.8% of PASS episodes vs 76.4% of FAILED ones). In SGD,
+   the "confident closing, silent failure" mode appears as 5 confirmed courteous-closes over
+   failed service calls (plus 4.6% of contained verdicts carrying the tool-ok/empty-result
+   signal as candidates). If you count outcomes from transcripts alone, you absorb this silently.
+
+**Who consumes this:** the paper (*Turn-Level Trajectory Grammars for Voice Agents*), the three
+live demos it powers (below), and anyone with agent traces — paste a transcript or load an OTel
+export and get a verdict you can reproduce bit-for-bit (JS↔Python parity 645/645).
+
+**What it is NOT:** it is not an LLM, not an NLU classifier, not a topic or intent model. It is
+a deterministic state machine over conversation shape; it sees structure, not meaning. Every
+number above has a source file in the repo (`runtime/` reports and `results*.json` fixtures).
+
 ## What it does
 
 ```
@@ -28,7 +60,7 @@ transcript (paste) ┘
 ```
 
 **Live in a browser:** the walker ships as a verified JavaScript port
-(`autopsy_space/tau_port.js`, transcript parity 585/585 via `check_parity_transcript.py`)
+(`autopsy_space/tau_port.js`, transcript parity 645/645 via `check_parity_transcript.py`)
 powering three Hugging Face Spaces: [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space)
 (paste a conversation, watch where and why it died),
 [Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space)
