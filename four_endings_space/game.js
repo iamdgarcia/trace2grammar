@@ -196,6 +196,14 @@
         g.stage = 'otp';
         return finishTurn(g, replies, appended, null);
       }
+      if (g.stage === 'intent') {
+        /* no intent match: answer capabilities + re-ask (fall-through here used to close the call) */
+        var help = 'I can order a replacement card for you, or pass you to a human agent. '
+          + M.intentAsk;
+        replies.push(ask(g, M, help));
+        appended.push('assistant: ' + help);
+        return finishTurn(g, replies, appended, null);
+      }
       if (g.stage === 'otp') {
         if (/\b\d{6}\b/.test(text)) {
           appended = appended.concat(M.otpToolOk);
@@ -239,6 +247,14 @@
       replies.push(ask(g, M, M.intentReply[0]));
       appended.push('assistant: ' + M.intentReply[0]);
       g.stage = 'amount';
+      return finishTurn(g, replies, appended, null);
+    }
+    if (g.stage === 'intent') {
+      /* no intent match: answer capabilities + re-ask (fall-through here used to close the call) */
+      var help = 'I can process refunds up to 200 dollars myself, or pass anything '
+        + 'bigger to a human agent. ' + M.intentAsk;
+      replies.push(ask(g, M, help));
+      appended.push('assistant: ' + help);
       return finishTurn(g, replies, appended, null);
     }
     if (g.stage === 'amount') {

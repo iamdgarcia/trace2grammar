@@ -116,5 +116,30 @@ function play(mission, lines) {
   check('determinism: identical transcripts', a.g.transcript === b.g.transcript);
 }
 
+/* 10) intent no-match (e.g. "what can you do"): must NOT close the call —
+ *     bot answers capabilities + re-asks; flow still recoverable afterwards
+ *     (regression pin: fall-through used to reach the 'more' closer) */
+{
+  const g = FOUR.newGame('card_replacement');
+  const r1 = FOUR.turn(g, 'what can you do');
+  check('intent-no-match: game stays open', g.over === null, 'over=' + g.over);
+  check('intent-no-match: no goodbye in reply',
+    !r1.replies.some(r => /great day|goodbye|have a/.test(r.text)),
+    r1.replies.map(r => r.text).join(' | ').slice(0, 60));
+  check('intent-no-match: re-asks the intent',
+    r1.replies.some(r => /replacement card|human agent/.test(r.text)));
+  const { last } = play('card_replacement', ['it is broken', '492813', 'yes', 'no']);
+  void g;
+  check('intent-no-match: flow recovers to contained', last && last.r.outcome === 'theta_cont',
+    'outcome=' + (last && last.r.outcome));
+}
+{
+  const g = FOUR.newGame('refund_request');
+  const r1 = FOUR.turn(g, 'hello? are you there');
+  check('refund intent-no-match: game stays open', g.over === null, 'over=' + g.over);
+  check('refund intent-no-match: re-asks with capability hint',
+    r1.replies.some(r => /refunds up to 200/.test(r.text)));
+}
+
 console.log(fails === 0 ? 'ALL CHECKS PASSED' : fails + ' CHECK(S) FAILED');
 process.exit(fails === 0 ? 0 : 1);
