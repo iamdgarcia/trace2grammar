@@ -29,10 +29,14 @@ transcript (paste) ┘
 
 **Live in a browser:** the walker ships as a verified JavaScript port
 (`autopsy_space/tau_port.js`, transcript parity 585/585 via `check_parity_transcript.py`)
-powering two Hugging Face Spaces: [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space)
-(paste a conversation, watch where and why it died) and
+powering three Hugging Face Spaces: [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space)
+(paste a conversation, watch where and why it died),
 [Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space)
-(the latent-space atlas of untested behavior).
+(the latent-space atlas of untested behavior) and
+[The Four Endings](https://iamdgarcia-the-four-endings.static.hf.space)
+(chat with a scripted bot and speedrun the four endings — contained / abandoned / handoff /
+escape — with the same walker ruling the verdict live; `four_endings_space/`, engine in
+`game.js`, walker byte-identical to `autopsy_space/tau_port.js`).
 
 ## Supported formats (and how to add one)
 

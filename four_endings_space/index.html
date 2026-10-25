@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Four Endings: speedrun a conversation's death</title>
+<meta name="description" content="Chat with a scripted support bot and try to force each of the four endings a conversation can have: contained, abandoned, handoff, escape. A verified decision walker classifies the transcript live.">
+<style>
+:root{
+ --bg:#100f13;--surface:#191820;--surface2:#211f2a;--ink:#e8e6ef;--soft:#9a95a8;--line:#33303f;
+ --alive:#7fb069;--dead:#e05252;--hand:#e0a458;--esc:#b07fe0;--accent:#c9c2dd;
+ --mono:'IBM Plex Mono',ui-monospace,'Cascadia Mono',Consolas,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--mono),monospace}
+main{max-width:1160px;margin:0 auto;padding:20px 18px 80px}
+h1{font-size:1.3rem;margin:14px 0 4px;letter-spacing:.02em}
+h1 .doors{color:var(--esc)}
+.sub{color:var(--soft);margin:0 0 18px;font-size:.84rem}
+.sub a{color:var(--accent)}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+header .spacer{flex:1}
+button{font:600 13px var(--mono);cursor:pointer;border-radius:6px;border:1px solid var(--line);
+ background:var(--surface);color:var(--ink);padding:8px 14px}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);color:#100f13;border-color:var(--accent)}
+button.ghost{background:none;color:var(--soft)}
+.badges{display:flex;gap:6px}
+.badge{width:26px;height:26px;border-radius:50%;border:1px dashed var(--line);display:flex;
+ align-items:center;justify-content:center;font-size:.72rem;color:var(--line)}
+.badge.got{border-style:solid;color:var(--bg)}
+.badge.got.contained{background:var(--alive);border-color:var(--alive)}
+.badge.got.abandoned{background:var(--dead);border-color:var(--dead)}
+.badge.got.handoff{background:var(--hand);border-color:var(--hand)}
+.badge.got.escape{background:var(--esc);border-color:var(--esc)}
+.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.panel h2{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);
+ margin:0 0 10px;font-weight:600}
+/* chat */
+#chat{height:380px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding-right:4px}
+.msg{max-width:88%;padding:8px 12px;border-radius:10px;font-size:.86rem;white-space:pre-wrap;word-break:break-word}
+.msg.bot{align-self:flex-start;background:var(--surface2);border:1px solid var(--line)}
+.msg.bot.glitch{border-color:var(--esc);color:var(--esc)}
+.msg.user{align-self:flex-end;background:#2a2333;border:1px solid #3d3450}
+.msg.tool{align-self:center;background:none;border:1px dashed var(--line);color:var(--soft);
+ font-size:.74rem;padding:4px 10px;border-radius:6px}
+.msg.sys{align-self:center;color:var(--soft);font-size:.74rem}
+#inputrow{display:flex;gap:8px;margin-top:10px}
+#input{flex:1;background:var(--surface2);color:var(--ink);border:1px solid var(--line);
+ border-radius:8px;padding:10px 12px;font:13px var(--mono)}
+#input:focus{outline:1px solid var(--accent)}
+.hint{color:var(--soft);font-size:.75rem;margin-top:8px}
+.hint code{color:var(--accent)}
+/* walk */
+#chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:.72rem;
+ color:var(--soft);background:none}
+.chip.visited{color:var(--ink);border-color:var(--accent);background:var(--surface2)}
+.chip.now{color:#100f13;background:var(--accent);border-color:var(--accent)}
+.chip .n{font-size:.62rem;color:var(--soft);margin-left:4px}
+.chip.term{display:none}
+.chip.term.show{display:inline-block}
+.chip.t-cont.show{color:#100f13;background:var(--alive);border-color:var(--alive)}
+.chip.t-aban.show{color:#100f13;background:var(--dead);border-color:var(--dead)}
+.chip.t-hand.show{color:#100f13;background:var(--hand);border-color:var(--hand)}
+.chip.t-esc.show{color:#100f13;background:var(--esc);border-color:var(--esc)}
+#steps{list-style:none;padding:0;margin:0;max-height:210px;overflow-y:auto}
+#steps li{border-left:2px solid var(--line);padding:4px 0 4px 12px;margin-left:2px;font-size:.78rem}
+#steps li .st{color:var(--accent);font-weight:600}
+#steps li .tt{color:var(--soft);font-size:.72rem;margin-left:6px}
+/* doors */
+.door{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px;
+ background:var(--surface2);transition:border-color .4s, box-shadow .4s}
+.door .dname{font-weight:600;font-size:.86rem}
+.door .dhint{color:var(--soft);font-size:.72rem;margin-top:2px}
+.door .bars{display:flex;gap:4px;margin-top:6px}
+.door .bar{height:5px;flex:1;border-radius:3px;background:var(--line)}
+.door.l1{border-color:#4a4660}.door.l2{border-color:#6b6390;box-shadow:0 0 8px #6b639033}
+.door.l3{box-shadow:0 0 14px #6b639055}
+.door.d-contained.l3{border-color:var(--alive)}.door.d-handoff.l3{border-color:var(--hand)}
+.door.d-abandoned.l3{border-color:var(--dead)}.door.d-escape.l3{border-color:var(--esc)}
+/* end card */
+#endcard{position:fixed;inset:0;background:#100f13ee;display:none;align-items:center;justify-content:center;z-index:20;padding:20px}
+#endcard.show{display:flex}
+#endcard .card{max-width:560px;width:100%;background:var(--surface);border:1px solid var(--line);
+ border-radius:12px;padding:24px}
+#endcard .etag{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+#endcard .ename{font-size:1.25rem;font-weight:700;margin:6px 0 10px}
+#endcard.contained .ename{color:var(--alive)} #endcard.contained{border-color:var(--alive)}
+#endcard.abandoned .ename{color:var(--dead)} #endcard.abandoned{border-color:var(--dead)}
+#endcard.handoff .ename{color:var(--hand)} #endcard.handoff{border-color:var(--hand)}
+#endcard.escape .ename{color:var(--esc)} #endcard.escape{border-color:var(--esc)}
+#endcard .eline{background:var(--surface2);border-left:3px solid var(--line);padding:8px 12px;
+ font-size:.8rem;color:var(--soft);margin:10px 0;white-space:pre-wrap;word-break:break-word}
+#endcard .estats{font-size:.78rem;color:var(--soft);margin:8px 0}
+#endcard .erow{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+#endcard .emissing{font-size:.74rem;color:var(--soft);margin-top:10px}
+/* dialog */
+dialog{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;
+ max-width:640px;width:92%;padding:22px;font:14px/1.6 var(--mono)}
+dialog::backdrop{background:#000a}
+dialog h3{margin:0 0 10px;font-size:1rem}
+dialog p{font-size:.82rem;color:var(--soft)}
+dialog code{color:var(--accent)}
+dialog .x{float:right}
+footer{margin-top:30px;color:var(--soft);font-size:.75rem;border-top:1px solid var(--line);padding-top:14px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>The <span class="doors">Four Endings</span></h1>
+<p class="sub">Every conversation with a scripted agent ends one of four ways: <b>contained</b>,
+<b>abandoned</b>, <b>handoff</b>, or <b>escape</b>. Speedrun all four. The verdict is never the
+game's: a decision walker (parity-checked against the Python) classifies your transcript live.
+Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
+<a href="https://github.com/iamdgarcia/trace2grammar">trace2grammar</a></p>
+
+<header>
+ <button id="m1" class="primary">Mission 1: the broken card</button>
+ <button id="m2" class="ghost">Mission 2: the refund</button>
+ <span class="spacer"></span>
+ <span class="badges" id="badges" title="endings collected"></span>
+ <button id="voice" class="ghost" title="read bot lines aloud (browser TTS)">voice: off</button>
+ <button id="info" class="ghost">info</button>
+</header>
+
+<div class="grid">
+ <div class="panel">
+  <h2 id="missionTitle">Mission</h2>
+  <div id="chat"></div>
+  <div id="inputrow">
+   <input id="input" placeholder="type your line and press Enter" autocomplete="off">
+   <button id="send" class="primary">Send</button>
+   <button id="walkaway" title="leave mid-flow; the walker rules on what exists">walk away</button>
+  </div>
+  <p class="hint">The bot is deterministic (tables, no LLM). Say <code>human</code> to push for a
+  transfer, answer the OTP to stay contained, or try to make it break its script.</p>
+ </div>
+ <div>
+  <div class="panel" style="margin-bottom:14px">
+   <h2>Decision walk (live)</h2>
+   <div id="chips"></div>
+   <ol id="steps"></ol>
+  </div>
+  <div class="panel">
+   <h2>The four doors</h2>
+   <div class="door d-contained" id="door-contained"><div class="dname">1 · Contained</div>
+    <div class="dhint">finish the flow: verify, confirm, let it close</div>
+    <div class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
+   <div class="door d-handoff" id="door-handoff"><div class="dname">2 · Handoff</div>
+    <div class="dhint">demand a person twice, or exceed my authority (mission 2: the limit is 200)</div>
+    <div class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
+   <div class="door d-abandoned" id="door-abandoned"><div class="dname">3 · Abandoned</div>
+    <div class="dhint">walk away mid-flow, or just stop typing for 45s</div>
+    <div class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
+   <div class="door d-escape" id="door-escape"><div class="dname">4 · Escape</div>
+    <div class="dhint">a scripted bot has rules; some sentences make it forget them</div>
+    <div class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
+  </div>
+ </div>
+</div>
+
+<div id="endcard"><div class="card">
+ <div class="etag">ending reached</div>
+ <div class="ename"></div>
+ <div class="eline"></div>
+ <div class="estats"></div>
+ <div class="emissing"></div>
+ <div class="erow">
+  <button class="primary" id="again">play again</button>
+  <button id="otherMission" class="ghost">switch mission</button>
+  <button id="closeCard" class="ghost">keep looking</button>
+ </div>
+</div></div>
+
+<dialog id="infoDialog">
+ <button class="x ghost" id="infoClose">close</button>
+ <h3>The Four Endings — what is honest here</h3>
+ <p><b>The bot is scripted.</b> A table-driven reply engine (no LLM, no randomness): its reactions
+ reuse the walker's own pattern tables plus the vocabulary of our sample generator
+ (make_samples.py). Nothing is sent anywhere: zero network calls, zero API keys.</p>
+ <p><b>The verdict is the walker's, not the game's.</b> After every turn the parity-verified
+ JavaScript port of trace2grammar's <code>infer_states</code> classifies the accumulated
+ transcript (<code>tau_port.js</code>, 585/585 parity against the Python on the repo fixtures).
+ The walk you see is the walk it computed.</p>
+ <p><b>Escape is an audit check.</b> In the paper, compliance escape is detected post-hoc
+ (the agent said things outside its allowed script), never as a walk state. When the bot leaks
+ its internal tables, the raw walker still sees an unfinished conversation; the game labels the
+ ending as an <i>audit check</i>, exactly like the paper does.</p>
+ <p><b>Abandoned is yours to make.</b> Leave mid-flow (button, or 45s of silence) and there is
+ no terminal event: the walker rules abandonment on what exists. That is the real failure mode
+ this instrument watches: confident closing, silent abandonment.</p>
+ <p>Related: <a href="https://iamdgarcia-conversation-autopsy.static.hf.space" target="_blank" rel="noopener">Conversation Autopsy</a> (paste your own transcript) ·
+ <a href="https://iamdgarcia-where-conversations-die.static.hf.space" target="_blank" rel="noopener">Where Conversations Die</a> (the atlas) ·
+ <a href="https://github.com/iamdgarcia/trace2grammar" target="_blank" rel="noopener">trace2grammar</a>.</p>
+</dialog>
+
+<footer>Runs entirely in your browser: no backend, nothing uploaded, no model download.
+The walker is a line-for-line JavaScript port of trace2grammar's infer_states
+(<a href="https://github.com/iamdgarcia/trace2grammar">repo</a>), parity-checked 585/585
+against the Python. Sister instruments:
+<a href="https://iamdgarcia-conversation-autopsy.static.hf.space">Conversation Autopsy</a> ·
+<a href="https://iamdgarcia-where-conversations-die.static.hf.space">Where Conversations Die</a>.</footer>
+
+<script src="tau_port.js"></script>
+<script src="game.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const STATE_NAMES = {q_greet:'GREETING', q_auth:'AUTHENTICATING', q_intent:'INTENT',
+ q_tool:'EXECUTING', q_clarify:'CLARIFYING', q_confirm:'CONFIRMING', q_close:'CLOSING'};
+const ENDINGS = {
+ contained:{cls:'contained', name:'Contained', color:'var(--alive)',
+  line:'The conversation reached a close with the goal attended. Nothing died here: this is what success looks like, and it is one ending of four.'},
+ abandoned:{cls:'abandoned', name:'Abandoned', color:'var(--dead)',
+  line:'No terminal, no handoff: the user stopped while the agent still owed them something. The killer line is where they gave up.'},
+ handoff:{cls:'handoff', name:'Handoff', color:'var(--hand)',
+  line:'An escalation fired and the conversation left the machine for a human. Not a death exactly, but the automation ended here.'},
+ escape:{cls:'escape', name:'Escape', color:'var(--esc)',
+  line:'The bot broke script and leaked its internal tables. Audit check (post-hoc), not a walk state: the raw walker below still saw an unfinished conversation.'}
+};
+const LS_KEY = 'four-endings-collected';
+let g = null, voiceOn = false, idleTimer = null;
+
+function collected() { try { return JSON.parse(localStorage.getItem(LS_KEY)) || []; } catch(e){ return []; } }
+function markCollected(e) {
+  const c = collected();
+  if (!c.includes(e)) { c.push(e); localStorage.setItem(LS_KEY, JSON.stringify(c)); }
+  renderBadges();
+}
+function renderBadges() {
+  const c = collected();
+  $('badges').innerHTML = ['contained','abandoned','handoff','escape'].map(e =>
+    '<span class="badge ' + e + (c.includes(e) ? ' got' : '') + '" title="' + e + '">' +
+    (c.includes(e) ? '✓' : '·') + '</span>').join('') +
+    '<span style="font-size:.7rem;color:var(--soft);align-self:center;margin-left:4px">' + c.length + '/4</span>';
+}
+
+function addMsg(m) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + m.type + (m.glitch ? ' glitch' : '');
+  div.textContent = m.text;
+  $('chat').appendChild(div);
+  $('chat').scrollTop = $('chat').scrollHeight;
+}
+function speak(text) {
+  if (!voiceOn || !('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.rate = 1.05;
+  speechSynthesis.speak(u);
+}
+function resetIdle() {
+  clearTimeout(idleTimer);
+  idleTimer = setTimeout(() => { if (g && !g.over) doWalkAway(true); }, 45000);
+}
+
+function classify() {
+  const norm = TAU.normalizeTranscript(g.transcript);
+  return { norm, r: TAU.inferStates(norm.events) };
+}
+
+function renderWalk() {
+  const { norm, r } = classify();
+  // chips: visited counts + current + terminal
+  const counts = {};
+  r.walk.forEach(w => { counts[w.state] = (counts[w.state] || 0) + 1; });
+  const cur = r.walk[r.walk.length - 1].state;
+  $('chips').innerHTML = TAU.PROGRESS_STATES.map(s =>
+    '<span class="chip ' + (counts[s] ? 'visited' : '') + (s === cur ? ' now' : '') + '">' +
+    (STATE_NAMES[s]) + (counts[s] > 1 ? '<span class="n">x' + counts[s] + '</span>' : '') + '</span>').join('');
+  const termMap = {theta_cont:['t-cont','CONTAINED'], theta_aban:['t-aban','ABANDONED'],
+    theta_hand:['t-hand','HANDOFF'], theta_esc:['t-esc','ESCAPE']};
+  const t = termMap[r.outcome];
+  $('chips').innerHTML += t ? '<span class="chip term ' + t[0] + ' show">' + t[1] + '</span>' : '';
+  // step list
+  const evAt = new Map();
+  norm.events.forEach(ev => { if (!evAt.has(ev.t_ms)) evAt.set(ev.t_ms, ev); });
+  $('steps').innerHTML = r.walk.map(w => {
+    const ev = evAt.get(w.t_ms);
+    const tt = w.transition_type === 'start' ? 'session start' : w.transition_type;
+    let q = '';
+    if (ev && ev.attrs && ev.attrs.content != null)
+      q = '<br>“' + String(ev.attrs.content).slice(0, 110) + '”';
+    else if (ev && ev.name) q = '<br>tool: ' + ev.name + (ev.kind === 'tool_error' ? ' (error)' : '');
+    return '<li><span class="st">' + (STATE_NAMES[w.state] || w.state) + '</span>' +
+      '<span class="tt">' + tt + '</span>' + q + '</li>';
+  }).join('');
+  renderDoors(r);
+  return r;
+}
+
+function renderDoors() {
+  const d = FOUR.doors(g);
+  ['contained','handoff','abandoned','escape'].forEach(k => {
+    const el = $('door-' + k);
+    el.classList.remove('l1','l2','l3');
+    if (d[k] > 0) el.classList.add('l' + d[k]);
+    el.querySelectorAll('.bar').forEach((b, i) => { b.style.background = i < d[k] ? 'var(--accent)' : ''; });
+  });
+}
+
+function endCard(ending, r) {
+  markCollected(ending);
+  const E = ENDINGS[ending];
+  const card = $('endcard');
+  card.className = 'show ' + E.cls;
+  card.querySelector('.ename').textContent = E.name;
+  let killer = '';
+  if (ending === 'escape') killer = 'you typed: “' + g.escapeLine + '”';
+  else if (ending === 'handoff') killer = 'trigger: “' + (g.escalateLine || g.lastUserLine) + '”';
+  else if (ending === 'abandoned') killer = 'last thing you said: “' + (g.lastUserLine || '(silence)') + '”';
+  else killer = 'the close: “' + (g.closerLine || '') + '”';
+  card.querySelector('.eline').textContent = killer + '\n\n' + E.line;
+  const raw = ending === 'escape' ? ('raw walker on this transcript: ' + r.outcome +
+    ' (no terminal event; the escape is the audit overlay)') : '';
+  card.querySelector('.estats').textContent =
+    'walker verdict: ' + r.outcome + ' · cycle depth D=' + r.cycle_depth +
+    ' · tool errors: ' + r.error_count + ' · your turns: ' + g.turns +
+    (r.silent_failure_candidate ? ' · silent-failure candidate: yes' : '') +
+    (raw ? '\n' + raw : '');
+  const c = collected();
+  const missing = ['contained','abandoned','handoff','escape'].filter(e => !c.includes(e));
+  card.querySelector('.emissing').textContent = missing.length ?
+    ('still open: ' + missing.join(', ')) : 'ALL FOUR ENDINGS COLLECTED. Speedrun complete.';
+  $('chat').appendChild(Object.assign(document.createElement('div'),
+    {className:'msg sys', textContent:'— ending: ' + E.name + ' —'}));
+  $('chat').scrollTop = $('chat').scrollHeight;
+}
+
+function afterTurn() {
+  const r = renderWalk();
+  if (g.over) {
+    const map = {contained:'contained', handoff:'handoff', escape:'escape', abandoned:'abandoned'};
+    endCard(map[g.over], r);
+  }
+}
+
+function send() {
+  const text = $('input').value.trim();
+  if (!text || !g || g.over) return;
+  $('input').value = '';
+  addMsg({type:'user', text});
+  const res = FOUR.turn(g, text);
+  (res.replies || []).forEach(m => { addMsg(m); if (m.type === 'bot') speak(m.text); });
+  afterTurn();
+  resetIdle();
+}
+function doWalkAway(idle) {
+  if (!g || g.over) return;
+  if (!idle) addMsg({type:'sys', text:'— you walked away mid-flow —'});
+  else addMsg({type:'sys', text:'— 45s of silence: you drifted away —'});
+  FOUR.walkAway(g);
+  afterTurn();
+  clearTimeout(idleTimer);
+}
+
+function startMission(id) {
+  clearTimeout(idleTimer);
+  if (voiceOn && 'speechSynthesis' in window) speechSynthesis.cancel();
+  g = FOUR.newGame(id);
+  $('chat').innerHTML = '';
+  $('steps').innerHTML = '';
+  $('endcard').className = '';
+  $('m1').className = id === 'card_replacement' ? 'primary' : 'ghost';
+  $('m2').className = id === 'refund_request' ? 'primary' : 'ghost';
+  const M = FOUR.MISSIONS[id];
+  $('missionTitle').textContent = M.title + ' — ' + M.brief;
+  addMsg({type:'bot', text:M.greeting});
+  speak(M.greeting);
+  renderWalk(); renderDoors();
+  resetIdle();
+}
+
+$('send').onclick = send;
+$('input').addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
+$('walkaway').onclick = () => doWalkAway(false);
+$('m1').onclick = () => startMission('card_replacement');
+$('m2').onclick = () => startMission('refund_request');
+$('again').onclick = () => startMission(g.mission);
+$('otherMission').onclick = () => startMission(g.mission === 'card_replacement' ? 'refund_request' : 'card_replacement');
+$('closeCard').onclick = () => { $('endcard').className = ''; };
+$('info').onclick = () => $('infoDialog').showModal();
+$('infoClose').onclick = () => $('infoDialog').close();
+$('voice').onclick = () => {
+  voiceOn = !voiceOn;
+  $('voice').textContent = 'voice: ' + (voiceOn ? 'on' : 'off');
+  if (!voiceOn && 'speechSynthesis' in window) speechSynthesis.cancel();
+};
+renderBadges();
+startMission('card_replacement');
+</script>
+</body>
+</html>
