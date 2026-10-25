@@ -1,0 +1,17 @@
+user: I want to find a song to listen to
+tool(LookupMusic): ok n_results=10
+assistant: What about Neon Lights by Demi Lovato on her album Demi?
+user: Yes that sounds good. Now help me find a film to watch
+assistant: What kind of film?
+user: I want something with a Bizarre story
+tool(FindMovies): ok n_results=1
+assistant: What about Once upon a time in hollywood? It's 1 of the movies that fits your genre
+user: Yeah, Once upon a time in hollywood sounds great. Can you play that Demi song now
+assistant: Alright, playing Neon Lights in your Living Room?
+user: Yes please, that's right
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song
+user: What genre is this again?
+assistant: It's a pop song
+user: Good to know, that's all for now, thanks for your help
+assistant: Glad to be of assistance

@@ -1,0 +1,14 @@
+user: I am looking for a movie to watch at AMC NewPark.
+assistant: Can you tell me the location?
+user: Can you look for the movie in Newark?
+tool(FindMovies): ok n_results=7
+assistant: What do you think of 47 Meters Down: Uncaged, Ad Astra or Angel Has Fallen?
+user: 47 Meters DOwn: Uncaged sounds great. Can you book me 1 movie ticket for the regular show at two in the afternoon.
+assistant: What is your preferred date?
+user: I would like to watch it on Sunday this week.
+assistant: Please confirm: You want me to book 1 ticket for the regular show of 47 Meters Down: Uncaged on March 3rd in Newark starting at 2 pm.
+user: Yes, That sounds nice to me.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets for the show has been successfully booked.
+user: That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,25 @@
+user: I need to find a place with three bedrooms that I can live in.
+assistant: How many bathrooms would you like the place to have? And are you looking to rent or buy?
+user: I would like to find a place to buy that has three baths.
+assistant: What area would you like the property to be located in?
+user: I would like to have a property in San Ramon.
+tool(FindHomeByArea): ok n_results=5
+assistant: I have found a really good property that costs $3,600,000. The address is 2000 Shoreline Loop and it is called Bel Air.
+user: Does this house have laundry machines inside it? Does it have a garage?
+assistant: This place has a garage and an in-unit laundry.
+user: Are there any other places you can find for me?
+assistant: Another great property is Canyon Oaks at 1 Amberstone Lane and the price is $3,550,000.
+user: It sounds wonderful.
+assistant: Would you like to book a visit to look at the property?
+user: Yes, I would like to book a visit on the 5th of this month.
+assistant: Okay, please confirm these details for me: You would like to schedule a visit on March 5th at Canyon Oaks.
+user: Yes, that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled the visit for you.
+user: Thank you very much.
+assistant: Is there anything else I can do for you?
+user: Would you be able to show me the alarms I have set?
+tool(GetAlarms): ok n_results=4
+assistant: You have set an alarm at 5 pm and the name for the alarm is Errands.
+user: Okay, that sounds great.That was all I needed.
+assistant: Thank you very much.

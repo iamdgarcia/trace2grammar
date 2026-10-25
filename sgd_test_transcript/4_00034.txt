@@ -1,0 +1,20 @@
+user: Hello, I am looking for a place to eat. I am hoping to get take-out and for the restaurant to have vegetarian options.
+assistant: Hello! Yes, I can help you with that. What city are you looking in?
+user: Please find restaurants in San Jose.
+tool(FindRestaurants): ok n_results=4
+assistant: I have found 4 restaurants that match. 4th St Pizza Co has good ratings and is located in San Jose.
+user: How is the pricing? Cheap or expensive?
+assistant: They seem to be a moderate restaurant.
+user: Do they have outdoor seating?
+assistant: They do not have outdoor seating.
+user: Are there any other restaurants you can recommend?
+assistant: There is a Mimi's Cafe in San Jose and also had good reviews.
+user: Yes, that will work. Can you please book a reservation for me? It will be for half past 11 in the morning.
+assistant: Please confirm the reservation details: It will be for Mimi's Cafe in San Jose on March 1st at 11:30 am. The reservation is for 2 people.
+user: Yes, that is correct. Are they not very costly?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You reservation is set. They have moderate pricing.
+user: Thank you for your help!
+assistant: You're welcome. Is there anything else I can help you with?
+user: No, that will be all. Thank you!
+assistant: Have a good rest of your day.

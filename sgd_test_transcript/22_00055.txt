@@ -1,0 +1,31 @@
+user: I need a therapist.
+assistant: What kind of therapist and which location?
+user: A psychologist in Mill Valley.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 in Mill Valley. Brown Brooke A. is a psychologist.
+user: What is the phone number and address?
+assistant: The location is 247 Miller Ave and phone is 415-458-3177.
+user: Can you make an appointment on the 2nd of March at half past 2 in the afternoon.
+assistant: Confirming appointment wih Brown Brooke A on March 2nd at 2:30 pm.
+user: That is great.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is booked.
+user: Oh, I need to request a paymnent.
+assistant: What is the amount and contact?
+user: That amount is 105 bucks with Svetlana.
+assistant: Please confirm transaction of $105 with Svetlana.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: The request has been made.
+user: Great, I also would like a restaurant.
+assistant: What type of cuisine?
+user: Something with a gastrobar.
+tool(FindRestaurants): ok n_results=1
+assistant: OK, there is Mill Valley Beerworks in Mill Valley.
+user: Please book a table for 12 pm.
+assistant: Confirming a table for 2 at Mill Valley Beerworks in Mill Valley at 12 pm on March 2nd.
+user: That will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is confirmed.
+user: Thanks, I am all set.
+assistant: Have a nice day.

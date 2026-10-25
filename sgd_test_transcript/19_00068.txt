@@ -1,0 +1,17 @@
+user: I need to travel for a meeting . will you find me a rental car? i like any type of car.
+assistant: In which date you need that car? From which place you need that rental car?
+user: i need it From the 11th and i need that car in Vancouver.
+assistant: Till which date you need that car? At what time you need to pick up the car?
+user: i need to pick it up at evening 4:30. i need it till 14th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available. The car is available at Pacific central Station which is a sedan Audi A8.
+user: Ok thats great. What about the buses going over there? i need to leave on March 10th and i need a direct bus which should be from seattle, wa.
+tool(FindBus): ok n_results=10
+assistant: How about the bus starting at 6:10 am ? it costs $27.
+user: ok thats great. I need to find a one-way flight going there. i need two tickets.
+assistant: whether you leave on March 10th?
+user: I need to start my travel on Next friday.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: i found 4 flights as per your need. What about the American Airlines? The flight takes off at 2:20 pm and it is a connecting flight. the ticket costs $272.
+user: ok thats great. that is all i need
+assistant: bye take care have a wonderful day

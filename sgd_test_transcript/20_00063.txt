@@ -1,0 +1,21 @@
+user: I need you to find me a car which I can rent.
+assistant: Can you tell me when can you pick up the car, and from where you want to rent it, also could you tell me when do you want to start having the car rented?
+user: I will need to have the car from the 10th till March 12th, and I can pick it up in afternoon 12:30. The car I am looking for would be nice to be a Hatchback one and for it to be in Berlin.
+tool(GetCarsAvailable): ok n_results=5
+assistant: A nice car I found is a Hatchback Kia Ceed which can be found at Schoenefeld Airport.
+user: That seems good. I also am in need of finding a house where I can stay there, which also has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I good house I can recommend that has a 4.4 rating is located at Alt-Moabit 99, 10559.
+user: This house is a nice option
+assistant: Do you want to book this house for you?
+user: No, for the moment I do not want to do that.
+assistant: Can I do something else for you?
+user: You can book the car which you found earlier.
+assistant: Do you want the car to have insurance included?
+user: I am not in need of having the insurance with the car.
+assistant: Can you then please confirm that you want to rent a Hatchback car without insurance which you will be picking up on March 10th at 12:30 pm at Schoenefeld Airport, and that you will need it till March 12th?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked.
+user: Thank you very much for the help. That would be all.
+assistant: Have a good time!

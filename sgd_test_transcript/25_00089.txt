@@ -1,0 +1,36 @@
+user: What alarms do I currently have at the moment?
+tool(GetAlarms): ok n_results=4
+assistant: You have one alarm set for 9 am under the name Badminton.
+user: All right, would you help me find a restaurant in that area?
+assistant: Can you specify which location I should search in?
+user: I want to find restaurants in Santa Rosa.
+assistant: Do you have a preference in types of food you enjoy eating?
+user: Italian sounds good, find me restaurants that serves it.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants matching your description in Santa Rosa, how about Basilico?
+user: That restaurant works, thanks for finding it.
+assistant: Shall I make a reservation to this establishment?
+user: Not at the moment, I need to reserve a car in that area that I plan on picking up at eleven am on the 9th of March.
+assistant: What location will you pick up the car from?
+user: I think Union Station works best for me, its seems convenient for a pick up.
+assistant: When will you drop off the car, what specific date?
+user: The car rental will be needed until the 14th of this month.
+assistant: Would you like to add insurance to the rental, and are you interested in a Hatchback, SUV, or other type of car?
+user: I think a hatchback sounds nice, and no insurance will be needed for this rental.
+assistant: You will pick up a hatchback car with no insurance from Union Station on March 9th at 11 am, and will plan on dropping it off on March 14th correct?
+user: That all sounds correct, can you tell me the make and model of the car and the cost per day for the rental?
+tool(ReserveCar): ok n_results=1
+assistant: The car rental costs $29.00 per day, it is a Nissan Qashqai and the car has been reserved.
+user: Great, many thanks for all the help.
+assistant: Will that be all that I can help you with for today?
+user: Can you share the location with somebody?
+assistant: To whom will you share the location, 4776 Sonoma Highway?
+user: Actually share the location of Union Station, specifically with Linda.
+assistant: Linda will receive the location of Union Station, is that fine?
+user: That sounds good, please share the location.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared with Linda.
+user: Awesome, you been a great help for me today.
+assistant: Anything else that I can help you with?
+user: Not really, that's was all I needed, you've been pretty helpful.
+assistant: Your welcome, have a nice day!

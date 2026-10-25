@@ -1,0 +1,32 @@
+user: Search for me some attractions to visit that are child-friendly.
+assistant: Where you want to be?
+user: I want to be in Berlin.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 attractions that you may like.You should check out a Museum called Alte Nationalgalerie.
+user: Is the entrance free?What is the phone number for this?
+assistant: 30 266424242 is the phone number and no,the entrance is paid here.
+user: Okay very good.Find me a rental car there because I will need a car till the 4th.
+assistant: You will make the pick up from Berlin?At what time?
+user: Sounds good.I want to pick up on March 1st at evening 5.Any type of car will be okay for me.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 cars for you.A nice SUV Alfa Romeo Stelvio available at Schoenefeld Airport.
+user: How much is the price per day?
+assistant: $39.00 is the cost per day.
+user: Sounds good.Reserve for me please.
+assistant: You want to add insurance?
+user: Yes, I want insurance too.
+assistant: You want a SUV car from Schoenefeld Airport.Pick up date is March 1st at 5 pm and dropp off date is March 4th.Is that correct?
+user: Yes that sounds very good for me.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.
+user: Thank you for your help.Share please the location.
+assistant: You want to share the location Alte Nationalgalerie?
+user: Sounds good to me.
+assistant: Who you want to share it with?
+user: With Sharon I would like.
+assistant: You share location Alte Nationalgalerie with Sharon.I'm right?
+user: Yes, very good.
+tool(ShareLocation): ok n_results=1
+assistant: The location is successfully shared.
+user: Thank you.You have been very helpful.That's what I wanted for now.
+assistant: Have a good day!

@@ -1,0 +1,26 @@
+user: Please look for a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: Daredevils & Queens is nice one in Santa Rosa. Or you can go to 9 other ones.
+user: Sounds good. Can I go to a regular show there?
+tool(FindMovies): ok n_results=10
+assistant: 10 movies are there. After the Wedding, Fiddler: A Miracle of Miracles and Good Boys are found good.
+user: I wish to enjoy Good Boys.
+assistant: Do you need tickets?
+user: Not now. Can I watch it at Airport Stadium Cinemas? What is the show time?
+assistant: I think you are watching it on March 2nd.
+user: Yes, thats it.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one show at 9:30 pm. It is at Airport Stadium 12.
+user: Ok, now go on with booking in the salon chosen.
+assistant: When do you want the appointment?
+user: Fix it at evening 6:30.
+assistant: go through your demand, service at Daredevils & Queens on March 2nd at 6:30 pm.
+user: Please change the time to four pm.
+assistant: Your request is visit at Daredevils & Queens at 4 pm.
+user: Correct, go on.
+tool(BookAppointment): ok n_results=1
+assistant: You got successful reservation.
+user: Thats great, thank you.
+assistant: Any other help?
+user: No, thats all.
+assistant: Enjoy a great day.

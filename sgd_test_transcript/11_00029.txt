@@ -1,0 +1,16 @@
+user: Hi, could you get me a house to stay for 4 in London, England?
+tool(SearchHouse): ok n_results=10
+assistant: How about a house at 1 Addington Street with a 4.3 rating?
+user: Sure, that sounds good!
+assistant: Would you like me to make a reservation for you?
+user: Could you do so for me please?
+assistant: What is your intended period of stay there?
+user: I will likely be staying from the 4th of March till the 8th of March.
+assistant: Please confirm your reservation for 4 from the March 4th to March 8th in London.
+user: Sure, that is fine with me.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much for your kind assistance!
+assistant: Do you need any other help?
+user: No, that is all. Thank you!
+assistant: No worries, glad to be of help! Goodbye.

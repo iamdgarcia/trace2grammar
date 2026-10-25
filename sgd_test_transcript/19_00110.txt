@@ -1,0 +1,31 @@
+user: I'm trying to find a car to rent.
+assistant: When do you need the car until and where would you like to pick it up from? And what time do you want to do the pick up?
+user: I need the car until the 9th and I would like to pick it up in Walnut Creek in the afternoon 2.
+assistant: On what date would you like to pick it up?
+user: I'd like to have it on the 2nd.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I have 4 possible cars for you. There is a Fiat Panda hatchback available at Walnut Creek BART Station.
+user: What's the price of that one?
+assistant: That car costs $27.00 per day to rent.
+user: That sounds fine. I'd also like to buy tickets for some kind of invent there, something around Seattle, WA.
+assistant: Is there a date in particular that you're interested in? And how many tickets would you like to purchase?
+user: I'd like three tickets and I want to find something on the 13th of March.
+assistant: What type of event would you like to go to?
+user: I've heard that Digi Boi The Musical is a great one.
+assistant: Confirming 3 tickets to Digi Boi The Musical on March 13th in Seattle.
+user: Sounds great, thank you. What time does the show start?
+tool(BuyEventTickets): ok n_results=1
+assistant: The show begins at 4:30 PM and your reservation is complete.
+user: What is the address of the venue?
+assistant: The address is 8312 Greenwood Avenue North.
+user: Thank you very much. Could you also reserve that rental car that we talked about?
+assistant: Would you like insurance for the rental?
+user: No, I don't need it.
+assistant: Confirming pick up of a hatchback from Walnut Creek BART Station on March 2nd at 2 PM and returning March 9th. The vehicle will not come with insurance.
+user: Yes, that's perfect.
+tool(ReserveCar): ok n_results=1
+assistant: The reservation is complete.
+user: Thanks for all your help, I appreciate it.
+assistant: How else may I help you today?
+user: I'm all set, thank you.
+assistant: Thank you very much.

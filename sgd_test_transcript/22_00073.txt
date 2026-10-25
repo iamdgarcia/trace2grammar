@@ -1,0 +1,48 @@
+user: Hi, could you get me a therapist please?
+assistant: Which city are you interested in?
+user: Something in St. Helena will be great!
+assistant: I see, would you need a Family Counselor or Psychiatrist?
+user: A psychologist will be great.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 psychologist in St. Helena, how about Schmall Rahima S.?
+user: May I have their address please?
+assistant: You can visit them at 1030 Main Street #205.
+user: And how can I contact them?
+assistant: You can try calling them at 707-318-4470.
+user: Sure, could you get me an appointment then?
+assistant: And which date would you like the appointment for?
+user: Could you make it on the 8th of March?
+assistant: Sure, and what is your preferred time?
+user: At afternoon 3:30, please.
+assistant: Please confirm your appointment with Schmall Rahima S at 3:30 pm on March 8th.
+user: Sounds great to me!
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, your appointment could not be made. How about an appointment with Schmall Rahima S at 4 pm on March 8th.
+user: Yes, I am fine with that too.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made, and you should get an email confirmation soon.
+user: Thank you, could you request a payment from Diego please?
+assistant: How much are you requesting?
+user: Just 130 bucks please.
+assistant: Please confirm your public payment request from Diego for $130.
+user: Yes, that is right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been made.
+user: Thanks, could you get me a reasonably priced restaurant with vegetarian options?
+assistant: Any preferred type of food?
+user: Some Taiwanese food will be great.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant you may like in St. Helena, how about Golden Harvest?
+user: May I have their address and user rating please.
+assistant: Their address is 61 Main Street and they have a rating of 4.1.
+user: Sounds great to me!
+assistant: Would you like to reserve a table there?
+user: Sure please. Thanks!
+assistant: And what time would you like your reservation?
+user: At 12:30 pm please.
+assistant: Please confirm your reservation for 2 at Golden Harvest in St. Helena at 12:30 pm on March 8th.
+user: Sure, I am fine with that.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much!
+assistant: Have a great day ahead.

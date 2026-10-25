@@ -1,0 +1,26 @@
+user: I want to go for a short trip for which I need to find a bus to travel. Can you help me to book the tickets on a bus?
+assistant: Yes. Let me know your expected time and date to leave from your place to book the tickets and also tell me the number of tickets required by you.
+user: I need three tickets on March 5th at 08:45.
+assistant: Where do you want to go?
+user: I need a bus to go to Fresno, CA.
+assistant: What is your current location?
+user: Get me a bus from Vegas.
+assistant: Please confirm to book 3 tickets in a bus which is leaving from Las Vegas on March 5th at 8:45 am to Fresno without any extra luggage.
+user: That is confirmed to proceed further.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, I was not able to buy the tickets in that bus. Shall I purchase tickets to the bus which is leaving at 9 am for the ticket cost $44?
+user: That is also okay to me. Go head.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked the tickets.
+user: Thanks. Now, I want to book one room in a nice Hotel in the same area. Can you find me the suitable one?
+tool(SearchHotel): ok n_results=4
+assistant: Yes, I got 4 hotels in that area. What do you think about a hotel called Doubletree By Hilton Hotel Fresno Convention Center which is a 3 star hotel?
+user: It looks good. Please reserve rooms for me at this hotel.
+assistant: Okay, let me know your check in and check out dates to book the rooms.
+user: Please book it for 5 days from March 3rd.
+assistant: Okay please confirm to book 1 room for 5 days in a hotel called Doubletree By Hilton Hotel Fresno Convention Center from March 3rd in Fresno.
+user: That is confirmed to proceed.
+tool(ReserveHotel): ok n_results=1
+assistant: Your rooms are booked now.
+user: Thanks you a lot and that's all I want.
+assistant: Have a good day.

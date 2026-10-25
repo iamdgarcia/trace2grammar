@@ -1,0 +1,12 @@
+user: I'm looking for a movie online to watch. I like thriller movies and movies with Leland Orser.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like. How about The Art of Self-Defense?
+user: Yes, The Art of Self-Defense sounds good. I'd like to watch it now.
+assistant: Okay, I'm playing The Art of Self-Defense with English subtitles, correct?
+user: No, I'd like to watch it with Hindi subtitles.
+assistant: Okay, playing The Art of Self-Defense with Hindi subtitles, correct?
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie.
+user: Thank you, that is all I needed.
+assistant: Have a great day.

@@ -1,0 +1,32 @@
+user: I am searching for a round trip United Airlines flight on Monday next week.
+assistant: Where do you want to go? From which city do you want to start?
+user: I am searching for flights from Atlanta to San Fran.
+assistant: When will you return?
+user: I need three tickets. I will return on March 10th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Are you interested in flying with United Airlines flight? It will take off at 9:45 pm and the returning flight will take off at 9:20 am. The price is $421.
+user: It is nice. I wish to search for a house.
+tool(SearchHouse): ok n_results=10
+assistant: I searched and find 10 houses for you. There is a nice house situated at 1095 Market Street with the rating 4.0.
+user: It is nice. Please book the house.
+assistant: Are you interested in check in on March 4th?
+user: I will check in on 7th of March.
+assistant: Whether your check out date is March 10th or some other date?
+user: Yes. It is nice.
+assistant: How many people are there?
+user: I need it for two persons.
+assistant: Kindly ensure that, The home is for 2 persons at San Francisco. Your check in is March 7th and check out is March 10th.
+user: Nope. I wish to check out on the 8th and it is for one person.
+assistant: Kindly ensure that, the check out is on March 8th and it is for 1 person.
+user: Nope. I wish to check in on Monday next week.
+assistant: Kindly ensure that, the location is San Francisco and the check in is on March 4th.
+user: Yes. It is good.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is booked.
+user: Thank you so much for your help. I wish to see some attractions which are child friendly.
+tool(FindAttractions): ok n_results=10
+assistant: Your check out is Alcatraz. It is a Historical Landmark.
+user: Okay, nice.
+assistant: Do you need any other help?
+user: Nope. You are highly helpful. Thank you so much.
+assistant: Enjoy the day.

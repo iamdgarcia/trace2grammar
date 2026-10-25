@@ -1,0 +1,28 @@
+user: Can you please find some interesting attractions for me to visit?
+assistant: Sure, but first tell me in which area should I search.
+user: Please search in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions matching your criteria out of which I think you should see a great Historical Landmark, the 30 St Mary Axe (The Gherkin)
+user: Do you know if they charge entrance?
+assistant: No, entrance is free to this attraction.
+user: OK, sounds perfect!
+assistant: Is there anything else I could do for you?
+user: Yes, please find me a house to stay there, for two persons, rated at least 4.0.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses matching your criteria, out of which I recommend 1 Addington Street rated at 4.0.
+user: Anything else, rated at least 3.9?
+tool(SearchHouse): ok n_results=10
+assistant: There's also 1 Baffin Way, rated at 3.9.
+user: This one sounds perfect. Now let's find me a round trip flight to there.
+assistant: OK, but first tell me from where will you be departing?
+user: I'm travelling from Washington.
+assistant: When do you plan on travelling?
+user: I'd like to travel on the 1st of March.
+assistant: Perfect, now tell me when do you plan to return.
+user: I'd like to return on March 12th. I forgot to mention that I am not particular about ticket class.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights matching your criteria, out of which I would recommend an American Airlines flight, with a layover, taking off at 2:55 pm. The return flight is at 12:45 pm and tickets are $599.
+user: Sounds perfect to me.
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks for everything.
+assistant: My pleasure. Have a nice day.

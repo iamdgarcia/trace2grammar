@@ -1,0 +1,18 @@
+user: I need to find a hotel.
+assistant: In which city do you want to look for a hotel?
+user: I am looking in NY for a hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I have found 10 hotels, including a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: That sounds great. I need to make a reservation for one room.
+assistant: When would you like to check in and how long will you be staying?
+user: I will be stay at the hotel four days and want to check in next Wednesday.
+assistant: So you want me to Book a Hotel for 1 room at the 1 Hotel Brooklyn Bridge in New York for March 6th for 4 days?
+user: Yes, I do. Thanks!!
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made at the hotel.
+user: Can I smoke at the hotel?
+assistant: Yes, you can smoke at this hotel?
+user: Thanks for all your help.
+assistant: Can I do anything else?
+user: No. You have been great. Thanks.
+assistant: Goodbye. Have a great day.

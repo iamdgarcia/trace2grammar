@@ -1,0 +1,17 @@
+user: I am in a nice mood and I like to listen to some nice songs from two years ago. Search for something like Pop songs.
+tool(LookupMusic): ok n_results=10
+assistant: Do you like the song Airplane Mode by Limbo from the album Holo?
+user: Yes, I like this song. Thanks. I want to check the weather condition in Cupertino on 5th of March. Can you check it for me>
+tool(GetWeather): ok n_results=1
+assistant: Of-course, Please note that the temperature will be 76 degree Fahrenheit in average and the chance of rain will be at 15 percent.
+user: And what about wind speed?
+assistant: It will be around 2 miles per hour in average.
+user: Also check about the humidity.
+assistant: It is around 23 percent.
+user: Okay. Now please play the song selected by me before on any device.
+assistant: I need your confirmation to play the song Airplane Mode in living room.
+user: confirmed. You can proceed now.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing and you can enjoy the same now.
+user: Thanks and that's all for now.
+assistant: Have a great day.

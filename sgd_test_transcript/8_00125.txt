@@ -1,0 +1,19 @@
+user: Can you find me a train with tickets for later today from New York City.
+assistant: What city are you going to?
+user: I'm going from Washington and need Business tickets.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains working that depart 7:20 am costing $110 total.
+user: Would there be any other trains that work because I need economy premium tickets.
+tool(FindTrains): ok n_results=9
+assistant: Leaving 8:20 am costing $88 total.
+user: That sounds great and I'd like to book train tickets.
+assistant: Do you like to have travel insurance?
+user: I would like trip insurance.
+assistant: How many tickets do you want?
+user: I'm gonna want 1 seat.
+assistant: Please confirm the following details that you want a ticket on the train leaving New York with a destination of Washington. The train is leaving March 1st at 8:20 am for 1 person with trip insurance is a flexible ticket.
+user: That works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets were booked successfully.
+user: That was very helpful from you and all I need thanks.
+assistant: See you later.

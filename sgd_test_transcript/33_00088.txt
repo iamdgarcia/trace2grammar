@@ -1,0 +1,21 @@
+user: I'm looking for a free tourist attraction in Philly.
+tool(FindAttractions): ok n_results=2
+assistant: One Liberty Observation Deck is a tourist attraction in the area.
+user: Is it kid-friendly and what is their direct line?
+assistant: This is not a kid-friendly location. Their direct line is 215-561-3325.
+user: Are there any other attractions in the area?
+assistant: Rocky Steps is an area tourist attraction.
+user: I also need a home for 3 in the area with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: 1 Logan Square is nice home with a 4.5 rating.
+user: That one sounds good.
+assistant: Would you like me to book it for you?
+user: Not at the moment but I will also need a round trip flight to go there for the 2nd.
+assistant: From which city will you depart on what is your return date?
+user: Departing from Chi-town and returning on March 5th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Is American Airlines okay? There is a flight with a layover leaving at 5:05 am and returning at 5:45 pm for a total of $225.
+user: What is the arrival time of the departure flight?
+assistant: The departure flight will arrive at 9:26 am.
+user: Okay, that will be all for now.
+assistant: Please enjoy your day. Goodbye.

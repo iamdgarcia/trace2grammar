@@ -1,0 +1,42 @@
+user: Can you help me find something fun to do?
+assistant: Did you want me to look in a particular city?
+user: I'd like to find something near NYC.
+assistant: Any preference for the type of event?
+user: I am interested in Drama.
+tool(FindEvents): ok n_results=10
+assistant: Acting For Teens is very popular and takes place at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm.
+user: How much will one ticket be?
+assistant: It will be $35.
+user: That sounds good. How about buses going there for four people? I will be leaving from Philly.
+assistant: Were you planning to leave March 4th?
+user: I'm thinking of leaving on the 3rd.
+tool(FindBus): ok n_results=6
+assistant: A bus departs at 9 am for $25.
+user: How many stops will this bus have?
+assistant: It will be a direct bus.
+user: That sounds great.
+assistant: Did you want to buy tickets for this bus?
+user: No, not right now.
+assistant: Did you need help with anything else?
+user: I'd like a round trip flight there.
+assistant: Did you wish to leave on March 4th, March 3rd, or another day
+user: I'd like to depart on the 3rd.
+assistant: On which day did you want to take the return flight?
+user: I'd like to come back on the 14th of March.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I found 3 flights for you. American Airlines has a direct flight with the onward flight taking off at 1:20 pm and the return flight at 11:20 am for $97.
+user: Did you find anything else? I will need four tickets.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found 2 flights. Southwest Airlines has a direct flight with the onward flight taking off at 2:45 pm and the return flight at 10:50 am for $99.
+user: That works. Could you help find hotels in that area too?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you. One hotel is called 1 Hotel Brooklyn Bridge and it is a 5 star hotel.
+user: That sounds good. I'd like to buy tickets for the event you found.
+assistant: Please confirm you're buying 4 tickets for Acting for Teens on March 4th in New York.
+user: Yes, that is correct. What is the address of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked. Have fun! It is at 520 8th Ave. - Personal Valet.
+user: Thank you for your help.
+assistant: Did you need help with anything else?
+user: No, but thanks again.
+assistant: Have a wonderful day.

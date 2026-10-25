@@ -1,0 +1,17 @@
+user: I'd like to find a movie online featuring Stephanie Vogt. Action movies would be fun.
+tool(FindMovies): ok n_results=1
+assistant: How about Hobbs and Shaw?
+user: Hobbs and Shaw is great. I'd like to watch it now and don't care about subtitles.
+assistant: Please confirm the following: You want to watch Hobbs and Shaw with English subtitles.
+user: Yes, that works.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: How's the weather?
+assistant: Where would you like to check the weather at?
+user: Show me the weather in Rio Vista.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 85 degrees Fahrenheit with a 6 percent chance of rain.
+user: Awesome, thanks.
+assistant: Is there anything else?
+user: Nope, thanks so much!
+assistant: Have a great day!

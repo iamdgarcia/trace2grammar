@@ -1,0 +1,20 @@
+user: I need to make a payment from my app Cash, for 84 bucks. The transaction is with Yumi.
+assistant: Please confirm: From the app balance, the amount is $84, and you would like it with Yumi. Your transaction is Public.
+user: Yes that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is now successful. The recipient should see the money now.
+user: I need a train now to Seattle.
+assistant: On which date would you like to leave?
+user: I need tickets from Portland. I need tickets for the 11th of this month and need fully refundable tickets.
+tool(FindTrains): ok n_results=9
+assistant: There is a train departing at 9:10 AM, with a ticket price of $79. Okay?
+user: Yeah, get that. How is weather on March 12th in Seattle?
+tool(GetWeather): ok n_results=1
+assistant: The temperature average is 66 degrees Fahrenheit. There is a 34 percent chance of rain.
+user: Okay, I need tickets for those, with trip insurance and one seat.
+assistant: Please confirm the following: A ticket from Portland, to Seattle and the train leaves on March 11th, to leave at 9:10 AM. This is for 1 person, with trip insurance. It is a Flexible ticket.
+user: This works. Which station will it arrive at? Which station will it leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have now been booked successfully. The train is to arrive at King Street Station, to leave from Union Station.
+user: Thanks for that.
+assistant: Of course. Have a wonderful day.

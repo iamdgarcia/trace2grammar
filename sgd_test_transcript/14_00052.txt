@@ -1,0 +1,19 @@
+user: I'm looking for a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies for you. What about Overcomer? It has a rating of 46 out of 100.
+user: That sounds good. I'm also looking for a song to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. How about the song I Like It by Enrique Iglesias from the album Euphoria?
+user: Did it come out in 2019? What type of song is it?
+assistant: The song came out in 2010 and it is a pop song.
+user: Okay, that's the one!
+assistant: Do you want the play the song?
+user: Yes, play it on the patio.
+assistant: Okay, you want to play the song I Like It in the patio, right?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: I have started playing the song.
+user: Okay, thanks!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

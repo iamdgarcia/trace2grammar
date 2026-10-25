@@ -1,0 +1,25 @@
+user: I'd like to find a movie to watch.
+assistant: Where are you located?
+user: Can you find a movie in Santa Rosa?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies you might like. Would you be interested in After the Wedding, Good Boys, or Fiddler: A Miracle of Miracles?
+user: What other movies do you have? Just something regular please.
+tool(FindMovies): ok n_results=7
+assistant: I have 7 possibilities for you. Perhaps you would like Hustlers, IT Chapter Two or Hobbs and Shaw.
+user: IT2 would be fine.
+assistant: Do you wanna purchase tickets?
+user: Not at the moment, no. I wonder if you could search for songs please.
+tool(LookupMusic): ok n_results=3
+assistant: How about the song Better from the album Free Spirit by Khalid?
+user: Could you find something else, maybe from one years ago? The Expectations album is supposed to be very good.
+tool(LookupMusic): ok n_results=3
+assistant: I have 3 songs you might enjoy. How about the song Curious from the Expectations album bye Hayley Kiyoko?
+user: That would be great. I'd like to hear that.
+assistant: Confirming playback of the song Curious on the living room device.
+user: That's right, thanks.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: I certainly will.
+assistant: May I help you with anything else?
+user: Not that I can think of.
+assistant: Have a great day, thank you.

@@ -1,0 +1,16 @@
+user: I need 1 seat on the train.
+assistant: What is your departure and destination city?
+user: I need tickets from Seattle, WA to Vancouver, BC.
+assistant: On which date will you be travelling?
+user: I need tickets for March 7th.
+tool(FindTrains): ok n_results=9
+assistant: I have 9 options. There is a train departing at 6:20 am for a total of $55.
+user: That one is great.
+assistant: Should I book your ticket?
+user: No, but I need a place to stay.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options. 1018 Granville Street has a 4.2 rating.
+user: Is there laundry service?
+assistant: No, there is no laundry service.
+user: That home sounds great. Thanks for now.
+assistant: You're welcome. Goodbye.

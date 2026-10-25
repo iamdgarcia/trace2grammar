@@ -1,0 +1,27 @@
+user: I'm looking for a rental car in Paris.
+assistant: What dates do you want the car from and what time will you be picking it up?
+user: I need the car from today at 4:30 in the evening to Tuesday next week.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars that are available. There is a Alfa Romeo Stelvio SUV at Orly International Airport.
+user: Okay, that sounds good.
+assistant: Do you want to reserve the car?
+user: Yes, but not right now. I'd like to purchase tickets to an event there.
+assistant: When do you want to go to the event?
+user: I want to go on March 12th.
+assistant: What city is the event in, what is the name of the event, and how many tickets do you want to purchase?
+user: I'm looking for three tickets to the Philadelphia Orchestra in New York City.
+assistant: Okay, you want 3 tickets to the Philadelphia Orchestra in New York City on March 12th, right?
+user: Yes, that is correct. What is the address of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: I have purchased the tickets, enjoy! The venue is at 881 7th Avenue.
+user: Okay, thanks! I'd like to reserve that rental car now.
+assistant: Do you want to add insurance?
+user: No, I don't.
+assistant: Okay, you want to reserve an SUV without insurance at Orly International Airport from March 1st at 4:30 pm to March 5th, right?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation.
+user: Thank you!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

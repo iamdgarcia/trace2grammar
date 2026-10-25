@@ -1,0 +1,31 @@
+user: Can you find me a movie online?
+assistant: What kind of movie would you like to watch?
+user: I'd like a Suspense film.
+tool(FindMovies): ok n_results=4
+assistant: What about Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: Madeline's Madeline sounds great. Can you show me some attractions?
+assistant: Where would you like to go?
+user: Look for something in Philly.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you might like. There's the Barnes Foundation Museum.
+user: Great, thanks! Could you look up some songs by Pharrell Williams for me?
+tool(LookupMusic): ok n_results=2
+assistant: How about Come Get It Bae from the G I R L album by Pharrell Williams?
+user: Perfect, I'd like to hear that one now.
+assistant: To confirm: You would like the song Come Get It Bae in the living room.
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Can you play the movie too?
+assistant: To confirm: You want to watch Madeline's Madeline with English Subtitles.
+user: No, make it Hindi subtitles.
+assistant: To confirm: You would like to watch Madeline's Madeline with Hindi subtitles.
+user: You got it.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie will start now.
+user: Who is in this movie?
+assistant: Helena Howard is in it.
+user: Great. Thank you.
+assistant: Is there anything else I can do for you?
+user: No thanks. I'm good.
+assistant: Have a nice day.

@@ -1,0 +1,39 @@
+user: Would you purchase bus tickets for me?
+assistant: Where will you leave from and how many tickets do you need?
+user: I'll be leaving from Sacramento and need tickets for 4.
+assistant: What time will you leave and when? Where will you go?
+user: I would like to leave at half past 11 in the morning and go to Long Beach, CA next Wednesday.
+assistant: Could you confirm that you want to book 4 tickets on the bus leaving from Sacramento and going to Long Beach on March 6th at 11:30 am?
+user: Sounds good. What station will it leave from?
+tool(BuyBusTicket): ok n_results=0
+assistant: Sorry, but the purchase did not go through. Could I assist with something else?
+user: Try again please. It's for two people from SD going to Sacramento.
+assistant: Would you ocnfirm that you want to leave from San Diego and go to Sacramento on March 6th at 11:30 am for 2 people?
+user: No, make that 9:30 am on the 4th of March.
+assistant: Okay, so you want to leave on March 4th at 9:30 am.
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry but the purchase did not go through. What do you think about the bus leaving at 9:10 am? It costs $62.
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket was confirmed.
+user: What station will it arrive at?
+assistant: It's the 65th Light Rail Station.
+user: Thanks for helping. Would you find hotels in the area as well?
+tool(SearchHotel): ok n_results=10
+assistant: There's a 3 star hotel called Courtyard By Marriott Sacramento Cal Expo.
+user: Can I smoke there?
+assistant: No, smoking isn't allowed.
+user: What is the address and phone number for the place?
+assistant: The address is 1782 Tribute road and the phone number is +1 916-929-7900.
+user: Sounds good to me.
+assistant: Book the hotel for me.
+user: Yes, that sounds good.
+assistant: How long will you stay? When will you check in?
+user: I will check in for two days on March 3rd.
+assistant: Could you confirm that you want to book at Courtyard By Marriott Sacramento Cal Expo on March 3rd for 2 days? This hotel is in Sacramento and you need 1 room.
+user: Sounds good. What is the nightly price?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been booked successfully. It's $261 per night.
+user: Thanks, that's been helpful. That's it for now.
+assistant: Have a great day.

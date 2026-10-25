@@ -1,0 +1,21 @@
+user: Can you help me find a therapist?
+assistant: I'd be happy to. Where should I begin to search? What type of therapist would you like to see?
+user: I'd like to find a Psychologist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: Alameda Children's Specialized is a Psychologist located in Oakland.
+user: I don't need a children's psychologist. Who else can you recommend?
+assistant: Brown Timothy A is another well-rated Psychologist in Oakland.
+user: That sounds like it will work better. What is the weather expected to be?
+tool(GetWeather): ok n_results=1
+assistant: It should be 72 degrees Fahrenheit with a 16 percent chance of rain.
+user: Thank you. Can you make an appointment for me with that therapist?
+assistant: Would March 1st work for you?
+user: Yes, that would be fine.
+assistant: What time works best with your schedule?
+user: I'd like something at quarter to 11 in the morning.
+assistant: Let me make sure I have the details correct. You'd like to visit Brown Timothy A at 10:45 am on March 1st.
+user: That's correct. Can you tell me their contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Of course. The phone number of the office is 510-752-6706. Your appointment has been confirmed and you will receive an email with the details shortly.
+user: Great! Thank you for the assistance!
+assistant: You're very welcome. Have a wonderful day!

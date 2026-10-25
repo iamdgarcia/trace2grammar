@@ -1,0 +1,22 @@
+user: Can you help me find some attractions to visit?
+assistant: Sure. What location should I search in?
+user: Any kind of attractions in SF would be cool.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that might interest you. How about Alcatraz? It is an Historical Landmark.
+user: Great. I would also like to watch a movie while I'm there. Preferably a Family movie.
+tool(FindMovies): ok n_results=2
+assistant: How about Steel Magnolias? Maybe you would like The Farewell?
+user: The Farewell would be perfect. Are there any good Comedy-drama movies online?
+tool(FindMovies): ok n_results=1
+assistant: How about Give Me Liberty?
+user: Give Me Liberty sounds good. I'd like to watch the movie now.
+assistant: Confirming that you want to watch Give Me Liberty with English subtitles.
+user: Yes, please play it.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing your movie.
+user: Who starred in this movie?
+assistant: This movie stars Chris Galust.
+user: Thank you.
+assistant: Is there anything else that I can help you with?
+user: No, thank you.
+assistant: You're welcome. Have a nice day.

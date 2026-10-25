@@ -1,0 +1,46 @@
+user: Can you please find me a therapist?
+assistant: What type of therapist do you need?
+user: I need to find a Psychologist.
+assistant: In what city?
+user: Find me someone in Pleasant Hill.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 therapist for you. How about Christopher J. Celio? They are a Psychologist located in Pleasant Hill.
+user: That sounds good. Can you book me an appointment for next Thursday?
+assistant: What time would you prefer?
+user: Try to make it for 11:15 in the morning.
+assistant: Confirming that you want to book an appointment with Christopher J. Celio for March 7th at 11:15 am?
+user: Yes, that will work. Can you get me their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 101 Gregory Lane and can be contacted at 925-827-9876. Sorry, but I was unable to book your appointment with Christopher J. Celio. How about I try for March 7th at 11 am?
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked you appointment and you should be getting an email confirmation soon.
+user: Thanks, I appreciate it.
+assistant: Is there anything else that I can help you with?
+user: I need to request a payment. Make the transfer private, and for $89.
+assistant: What is the contact name?
+user: I want to make the transaction with Svetlana for $105.
+assistant: Confirming that you want to make a private transaction with Svetlana for $105?
+user: Yes that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was successful.
+user: Can you also find me a restaurant for the day of my appointment? Any price will do. I want some Burgers.
+tool(FindRestaurants): ok n_results=2
+assistant: How about Kobe Japan Restaurant? It is a nice restaurant located in Pleasant Hill.
+user: Do they serve vegetarian options?
+assistant: No, they do not.
+user: What's the phone number?
+assistant: You can contact them at 925-705-7066.
+user: Yes, that sounds good.
+assistant: Would you like to make a reservation?
+user: Yes, please reserve me a table.
+assistant: What time should I make the reservation for?
+user: Make it for 12:30 pm.
+assistant: Confirming that you want to book a table for 2 at Kobe Japan Restaurant in Pleasant Hill for March 7th at 12:30 pm?
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, but I was unable to make a reservation for 2 at Kobe Japan Restaurant. How about I try March 7th for 1 pm?
+user: No thanks.
+assistant: Do you need anything else?
+user: No, thank you very much.
+assistant: You're welcome. Have a good day.

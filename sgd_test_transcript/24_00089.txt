@@ -1,0 +1,22 @@
+user: Is there a supernatural movie you can find for me in Healdsburg? I want to see a regular showing however.
+tool(FindMovies): ok n_results=1
+assistant: Would you be interested in IT Chapter Two?
+user: I think IT two is perfect for me to watch, can you also book me a table at a restaurant in the area?
+assistant: What time should I make the appointment, and to which restaurant?
+user: Try making a reservation at Baci for 1 pm.
+assistant: You wish to make a reservation for 2 at Baci | Cafe & Wine Bar, located in Healdsburg on March 1st at 1 pm, is that correct?
+user: That is all correct, what kind of food do they serve at the restaurant, do they have vegetarian options?
+tool(ReserveRestaurant): ok n_results=0
+assistant: The reservation was not made, may I assist you with something else?
+user: How about making a reservation at the Brass Rabbit, would that work?
+assistant: You wish to reserve a table at The Brass Rabbit in Healdsburg for 2 on March 1st at 1 pm, correct?
+user: The reservation should instead be set at evening 5.
+assistant: The reservation will be at 5 pm for 2 people instead.
+user: That is correct, thanks.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was made successfully.
+user: Great, thank you so much. What showings are available for the movie you found on that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for the movie, it is at 8 pm in Raven Film Center.
+user: That is all I needed, thanks for all the help.
+assistant: Your welcome, have a good day.

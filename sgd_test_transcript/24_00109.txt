@@ -1,0 +1,29 @@
+user: I have a transaction, can you do it?
+assistant: Please give the name of contact and amount of transaction.
+user: Transact $116 to Mary.
+assistant: You need transaction with debit card or app balance?
+user: Use my UnionPay.
+assistant: Please confirm, you need transaction with your credit card to Mary for an amount of $116. The transaction is public.
+user: Yes, details are correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is successful. Mary will receive the money soon.
+user: Awesome, please find a restaurant there.
+assistant: What type of food are you interested?
+user: I prefer Pizza.
+assistant: Where do you want the restaurant?
+user: Look for one in SF.
+tool(FindRestaurants): ok n_results=10
+assistant: 10 restaurants are there. 54 Mint Ristorante Italiano is a nice one in San Francisco.
+user: Will they serve outdoor seating?
+assistant: Yeah they have outdoor seating.
+user: Give me the address and phone number.
+assistant: Address is 16 Mint plaza and phone number is 415-543-5100.
+user: Please book a table there at evening 5.
+assistant: Please confirm you need a table for 2 people in 54 Mint Ristorante Italiano in San Francisco at 5 pm on March 1st.
+user: Correct. will I get vegetarian food there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They provide vegetarian food too. Your table is fixed.
+user: Great help. thank you.
+assistant: Do you need any other help?
+user: No, thats all.
+assistant: Have a delicious day.

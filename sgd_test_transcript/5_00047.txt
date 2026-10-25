@@ -1,0 +1,9 @@
+user: I need to set an alarm.
+assistant: Sure, I can do that. What time?
+user: Set it for 15:15.
+assistant: Please confirm that you'd like a new alarm set at 3:15 pm.
+user: Yup, thanks!
+tool(AddAlarm): ok n_results=1
+assistant: It was added.
+user: Thanks, that's it.
+assistant: Have a good day.

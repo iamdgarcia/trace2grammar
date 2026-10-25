@@ -1,0 +1,26 @@
+user: Could you search me a hotels in NYC?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: Did they allow smoking and i want the contact number?
+assistant: They allow smoking and contact number is +1 347-696-2500
+user: Can you find some other hotels of my choice with 3 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 5 star hotel called 1 Hotel Central Park.
+user: This is cool.
+assistant: Do you want me to book this hotel?
+user: No, may be later..What about the weather there on 13th of march?
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is running at 59 degrees Fahrenheit and the chances of rain is 33 percent
+user: What about the humidity there? Is it windy there?
+assistant: The wind speed is 7 miles per hour and humidity is around 19 percent.
+user: This is perfect. I want to book the hotel you just found for me.
+assistant: For how many days you want me to book?
+user: Book the hotel for 6 days.
+assistant: Is your checking date is on march 13th?
+user: No, i like to check in on 7th of march.
+assistant: Please give confirmation details: You want to book the hotel 1 Hotel Central Park in New York with 3 rooms for 6 days and checking date is march 7th.
+user: Okay..this is cool..Can i know the contact number and address?
+tool(ReserveHotel): ok n_results=1
+assistant: The address is 1414 6th Avenue with phone number +1 212-703-2001. I successfully booked your hotel.
+user: This much is okay for now..thanks for your great help.
+assistant: Have a nice day..bye.

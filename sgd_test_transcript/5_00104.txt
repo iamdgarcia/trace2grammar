@@ -1,0 +1,12 @@
+user: I need help finding a therapist in Walnut Creek.
+assistant: Please tell me the kind of therapist you're looking for.
+user: Search for a Psychiatrist.
+tool(FindProvider): ok n_results=3
+assistant: You may be interested in Churchill Pat, a Psychiatrist based in Walnut Creek.
+user: Could you please give me their street address and telephone contacts?
+assistant: They are located at 45 Quail Ct # 102, and can be reached at 925-876-4708.
+user: Okay, thanks. Could you also look for a a Family Counselor?
+tool(FindProvider): ok n_results=4
+assistant: Sure. You may be interested in Andreotti Daniel, a Family Counselor based in Walnut Creek.
+user: Sounds perfect. See you!
+assistant: Happy to have been of help.

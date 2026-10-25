@@ -1,0 +1,41 @@
+user: I'm helping my friend find interesting places to visit. Any recommendations?
+assistant: Did you have a particular city in mind?
+user: Please search for interesting places in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: Your search yielded 10 that you may like. I recommend visiting the Historical Landmark called 30 St Mary Axe (The Gherkin).
+user: Very nice. Any other interesting places you can recommend?
+assistant: Admiralty Arch is another Historical Landmark you should see.
+user: Sounds good. How about setting our sights on Toronto, Ontario now? Could you search for a place of interest there?
+tool(FindAttractions): ok n_results=3
+assistant: Sure. No problem. I found 3 attractions that might appeal to you. The Tourist Attraction known as 3D Toronto sign is a must-see.
+user: Is this a no-charge attraction?
+assistant: No, this place charges an entry fee.
+user: My friend will be with his children. Is it a good place for kids?
+assistant: Yes, the place is kid-friendly.
+user: All right cool. That's settled then. Please find me a rental car in Toronto, Ontario. I'd like to pick it up at two pm, and keep it until 12th of March.
+assistant: Please confirm the day you'd like to start renting the car.
+user: I'd like to pick it up next Thursday.
+tool(GetCarsAvailable): ok n_results=9
+assistant: Okay. I found a nice Buick Regal Sportback Sedan ready for pick up at Toronto Pearson International Airport.
+user: That works for me.
+assistant: Shall I book this car?
+user: Yes, please rent me the vehicle.
+assistant: Would you like to buy insurance?
+user: No, I don't need insurance.
+assistant: One moment. Please confirm that you'd like to pick a sedan car without insurance, from Toronto Pearson International Airport on March 7th at 2 pm, and drop it off on March 12th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Car successfully reserved.
+user: Wait, I'd like to share the address.
+assistant: hich address would you like to share? You can say 3D Toronto sign, Toronto Pearson International Airport or another address.
+user: Please share the Toronto Pearson International Airport location.
+assistant: Please say the name of the person to share it with.
+user: I'd like to share it with Dennis.
+assistant: One more while I confirm that I got everything correctly: You'd like to send Dennis the Toronto Pearson International Airport address?
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Address successfully shared.
+user: Thank you very much. You've been very helpful.
+assistant: Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Thank you, and have a wonderful day!

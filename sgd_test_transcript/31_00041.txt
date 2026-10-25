@@ -1,0 +1,30 @@
+user: I would like to find a Santa Rosa salon.
+tool(FindProvider): ok n_results=9
+assistant: I have 9 salons for you. Daredevils & Queens is a nice Santa Rosa salon.
+user: Sounds great. Find me a movie to watch there.
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies. What about After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: After The Wedding is great.
+assistant: Would you buy me tickets?
+user: No, I do not want to buy tickets.
+assistant: Could I assist with anything further?
+user: What time can I watch it?
+assistant: How about March 2nd?
+user: Sounds good to me.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I have 1 showtime for the movie. There's a show at 8:30 pm in Summerfield Cinemas.
+user: What sort of movie is it?
+assistant: It's a drama.
+user: That sounds great. I'd like teo book an appointment at the salon you just found.
+assistant: What time do you want your appointment?
+user: Make the appointment at evening 6:30.
+assistant: Could you confirm that you would like an appointment with the hair stylist Daredevils & Queens for 6:30 pm on March 2nd?
+user: No, make the appointment for afternoon 1:15.
+assistant: Would you confirm that you want to book with Daredevils & Queens for 1:15 pm?
+user: Sounds good. Is it a unisex salon? What is the address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed. The address is 122 4th Street. It is not a unisex salon.
+user: Thanks so much.
+assistant: Would I be able eto assist with anything further?
+user: No, that's all. Thanks so much.
+assistant: Have a good one.

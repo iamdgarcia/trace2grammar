@@ -1,0 +1,14 @@
+user: I really like Jakob Dylan, what movies online is he in?
+assistant: What genre are you thinking of?
+user: Try musical for this one.
+tool(FindMovies): ok n_results=1
+assistant: Well, there is Echo in the Canyon for one.
+user: Echo in the Canyon sounds great, get it with Spanish subtitles though.
+assistant: Sure, to confirm: play Echo in the Canyon with spanish subtitles?
+user: You got it toots.
+tool(PlayMovie): ok n_results=1
+assistant: I'm starting the movie now.
+user: Perfectly ideal.
+assistant: What may I help with now?
+user: Nothing else, thanks.
+assistant: Playing it now, enjoy.

@@ -1,0 +1,24 @@
+user: I want to go for a short travel and I need a bus. Can you search for me?
+assistant: Yes, let me know the starting date of your travel so that I can search accordingly.
+user: I am planning to start my travel on 4th of March.
+assistant: Okay, then let me know the place where you want to go and from where you will start your travel?
+user: I am leaving from Fresno and go to Sacramento, CA.
+tool(FindBus): ok n_results=6
+assistant: Got 6 results. what about a bus which is leaving at 6:20 am costs $34?
+user: I think, this is okay. Please let me know the number of stops for this bus.
+assistant: It is the direct bus and hope it is okay to you.
+user: Yes, I also need to know about the origin and destination stations for this bus to decide.
+assistant: This bus will leave from 2660 Tulare St. and will reach at 65th Light Rail Station.
+user: That is great. Thanks. Now I want to purchase the tickets. Help me to do so.
+assistant: Let me know the number of tickets you need to book.
+user: I need it for three persons.
+assistant: Please confirm to book 3 tickets in a bus which is leaving from Fresno on March 4th at 6:20 am to Sacramento.
+user: Please make one change. book the tickets for two persons only and I have extra luggage too. Kindly make the booking accordingly.
+assistant: Please confirm to book the bus tickets for 2 persons along with extra luggage.
+user: That is correct. Please proceed.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your tickets.
+user: Thank you so much for your help.
+assistant: That's okay. Anything else?
+user: Nothing for now and thanks.
+assistant: Have a good day.

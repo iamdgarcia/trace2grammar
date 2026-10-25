@@ -1,0 +1,26 @@
+user: I need to book a round trip flight please help.
+assistant: Sure thing, First, I need to know where will you be traveling to and which city will you be departing from? Do you have a preferred date that you want to leave?
+user: Let's search flights from CDMX departing on March 9th and returning on March 11th.
+assistant: Great! Where would you like to travel to?
+user: Seattle, WA please.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found a flight on American Airlines departing at 4:25 pm and the return flight will leave at 4:15 pm. This ticket is $386.
+user: I will only need one ticket. Find out if the ticket you quoted me a Business class ticket?
+assistant: This is for 1 traveller and Economy class seating.
+user: Great, I would also need to locate a house to stay at there. Make sure it is for two people.
+tool(SearchHouse): ok n_results=10
+assistant: I've located a great property at 1000 1st Avenue with a 4.5 rating.
+user: This will be perfect, Let's book it now.
+assistant: Ok, great, please confirm you would like to check in on March 11th or a different date?
+user: Yes thats great.
+assistant: Ok, would you like to check in on March 9th?
+user: Yes, that is fine.
+assistant: Please confirm we are booking 2 people in your group for a check in on March 9th and check out on March 11th in Seattle for a house rental. is this correct?
+user: Yes, that is correct.
+tool(BookHouse): ok n_results=1
+assistant: Great news, I was able to successfully reserve this rental for you.
+user: Great, Pull up some attractions there as well.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you may be interested in. Let's start with a park called Alki Beach Park.
+user: Ok, thanks for your help, Good bye!
+assistant: Ok, Good bye!

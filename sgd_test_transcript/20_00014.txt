@@ -1,0 +1,29 @@
+user: I want to search for a nice hotel to book one room. Three -star hotel will be perfect for me. Can you help me to search the suitable one.
+assistant: Yes, where do you want to find the hotel?
+user: I want to search it in Paris, France.
+tool(SearchHotel): ok n_results=10
+assistant: What about your opinion to stay in the hotel named Aparthotel Adagio Access Paris La Villette with 3 stars.
+user: Can you please check whether they will allow to smoke there?
+assistant: Sorry, they will not allow to smoke there. Shall I search for some other hotel?
+user: No, Its okay for me.
+assistant: Oh, that's nice. Do you want me to reserve room at this hotel now?
+user: I will decide it later. Now, please search a car for rent.
+assistant: Shall I search it from March 2nd?
+user: No, please search for a car from day after tomorrow.
+assistant: Is there any convenient time for you to pick up the car?
+user: Yes, I want to book the car for pick up at 3 in the afternoon.
+assistant: How many days you need to book the car for rent?
+user: Book it to the 9th.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I got 5 cars. What about a Sedan Buick Regal Sportback car available for pick up at Charles De Gaulle International Airport? Do you feel comfortable to travel on this car?
+user: Yes, I think so.
+assistant: What about booking? Shall I try this now?
+user: Yes, do it now.
+assistant: How about the booking, do you need this with insurance?
+user: No, I don't want to add insurance.
+assistant: Please confirm to book a Sedan car available for pick up at Charles De Gaulle International Airport from March 3rd at 3 pm to March 9th without insurance.
+user: That is confirmed to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: Your car was booked successfully.
+user: Thank you so much and that's all for today.
+assistant: Have a nice day.

@@ -1,0 +1,30 @@
+user: I am bored and fancy doing something interesting. Any suggestions?
+assistant: Which city will I look in?
+user: in Seattle please.
+assistant: What kind of events do you like?
+user: i do like Musical shows.
+tool(FindEvents): ok n_results=4
+assistant: There is one that is good called Claudia Oshry at Illsley Ball Nordstrom Recital Hall at 4:30 pm on March 1st.
+user: How much does it cost and where abouts is that place?
+assistant: tickets are $45 each and you will find it at 200 University Street.
+user: that is great.
+assistant: Do you need anything more today?
+user: Could you search for houses for me, just for one person with at least a 4.3 rating or better.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options, one is 1000 1st Avenue which has a rating of 4.3.
+user: That is a fab suggestion. Are there direct buses going there for 2 people from Portland, OR.
+assistant: will you be departing on March 5th?
+user: that is correct.
+tool(FindBus): ok n_results=10
+assistant: There is a bus at 7 am which costs $27.
+user: sounds perfect.
+assistant: Do you need tickets purchased for the bus?
+user: not right now.
+assistant: Do you need anything else?
+user: yes can we go back to that event you suggested and buy some tickets?
+assistant: to confirm then that is 2 tickets for Claudia Oshry on March 1st in Seattle.
+user: yes that is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: your tickets are now booked, I really hope you enjoy it.
+user: great, thanks for all your help.
+assistant: have a good one.

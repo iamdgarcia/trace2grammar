@@ -1,0 +1,15 @@
+user: I'm searching for a film to view; get it one with the fight type.
+tool(FindMovies): ok n_results=1
+assistant: I discovered 1 film for you. What do you think about Pulp Fiction, which has a mean rating of 92 out of 100?
+user: That's fine. I'd like to look for some fun activity to do near Phoenix on the 9th.
+assistant: Do you enjoy any specific type? You may say music, theater, or something else.
+user: I love musical shows.
+tool(FindEvents): ok n_results=7
+assistant: Dodie is in vogue. The activity will occur at The Van Buren on March 9th at 5 pm.
+user: What location will the event occur at, and what is the price of one ticket?
+assistant: The location is 401 West Van Buren Street, and the price is $55.
+user: That's fine. However, could you look for some other activity? I enjoy stage show, and I'm searching for an activity near London, UK.
+tool(FindEvents): ok n_results=10
+assistant: I discovered 10 activities you'll enjoy. A Right Royale Tea is in vogue, and will occur at the Amba Hotel Charing Cross on MArch 9th, 7 pm.
+user: That's lovely; that's all for now.
+assistant: Have a pleasant afternoon.

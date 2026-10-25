@@ -1,0 +1,31 @@
+user: What will the weather be in Novato on the 9th of March?
+tool(GetWeather): ok n_results=1
+assistant: The normal temperature is 80 degrees with only a 1 percent chance of precipitation.
+user: That is nice.
+assistant: Do you need something more?
+user: I want to see a property that day.
+assistant: Which property do you wish to visit?
+user: Anton La Moraga Apartments is the name of the place that I wish to visit.
+assistant: You wish to schedule a visit Anton La Moraga Apartments on March 9th, correct?
+user: No, change the name to Chatelaine Apartments.
+assistant: You wish to schedule a visit to Chatelaine Apartments on March 9th, correct?
+user: That is right. Does it have a garage and 1 bathroom?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been confirmed. The place has 1 bathroom and a garage.
+user: Thanks for that.
+assistant: Do you need help with something else?
+user: I need to rent a car there on the 9th of March.
+assistant: Should I add insurance to your order?
+user: I need the car next Friday and would like to add insurance to my order.
+assistant: Where and when do you wish to pick up the car?
+user: I want to get the car at 4:15 in the evening at Port Authority Station.
+assistant: Do you prefer a SUV, Hatchback or another type of car and when will you return it?
+user: I would like a Sedan until March 12th.
+assistant: You wish to rent a Sedan with insurance and will pick it up at 4:15 pm on March 8th at Port Authority Station and will return it on March 12th, correct?
+user: No, make that a Hatchback.
+assistant: You want to rent a Hatchback with insurance, correct?
+user: That is right. Can you tell me the price per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your order is confirmed and the price is $38.00 a day.
+user: Thanks for everything. That is everything for now.
+assistant: Have a great day.

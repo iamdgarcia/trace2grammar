@@ -1,0 +1,9 @@
+user: Can you check restaurants in Pacifica, I'm looking to make a reservation.
+assistant: Is there a particular restaurant you want? What time did you want the reservation?
+user: See if you can get one at Puerto 27 for 1:15 pm.
+assistant: To verify: You would like a reseravation at Puerto 27 in Pacifica for 1:15 pm on March 1st for 2.
+user: Yes that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is reserved.
+user: Thanks so much. That's all I need for now.
+assistant: Have a great day.

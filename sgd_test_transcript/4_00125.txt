@@ -1,0 +1,24 @@
+user: I need to find a bus
+assistant: And where are you going?
+user: I need to go to Philly
+assistant: When are you leaving?
+user: I want to leave Sunday this week please
+assistant: Sure, but from where?
+user: I'll be coming from New York City
+tool(FindBus): ok n_results=7
+assistant: How about this cheap $23 bus that leaves at 7:40 am
+user: Find me another option
+assistant: How about a 7:50 am bus for $22
+user: No, give me something else
+assistant: 8:50 am for $25?
+user: Is that a direct bus?
+assistant: Yes it is a direct bus
+user: OK, thats great, book me four tickets
+assistant: Confirming you want 4 tickets for the 8:50 am bus on March 3rd from New York to Philadelphia with no excess luggage
+user: Yes please, and what station does it arrive at in Philly?
+tool(BuyBusTicket): ok n_results=1
+assistant: It arrives at 10th and Filbert, and your tickets have been reserved
+user: Great, thanks for that
+assistant: Can I do something else?
+user: For now we're all set
+assistant: OK, enjoy your bus journey!

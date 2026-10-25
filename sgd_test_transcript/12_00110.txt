@@ -1,0 +1,33 @@
+user: I'm looking for something fun to do.
+assistant: What type of acticity or event are you looking for? Music, Theater, or something different?
+user: I would be interested in seeing a musical performance.
+assistant: Which city should the event be in?
+user: Can you find something in Los Angeles?
+tool(FindEvents): ok n_results=10
+assistant: Yes, Ain Gordon at the Ralph Freud Playhouse is taking place on March 9th at 7 pm.
+user: What else is there that happens this Sunday?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events yu may enjoy. Aldous Harding at the Lodge Room is on March 3rd at 6 pm.
+user: What events are there in the Atlanta, GA area?
+tool(FindEvents): ok n_results=8
+assistant: How about Benjamin Francis Leftwich at the Vinyl on March 3rd at 7 pm?
+user: Where is that venue located and what is the price of a ticket?
+assistant: The venue is located at 1374 West Peachtree Street Northwest and a ticket is $30.
+user: That would be great.
+assistant: Would you like to purchase tickets for the event?
+user: Not right now. I do need to made a private transfer payment request for 7 dollars though.
+assistant: Sure, who will be making the transaction?
+user: The transaction is with Jerry.
+assistant: Please confirm you are making a private transaction with Jerry for $7.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment has been requested.
+user: Thanks! I think I do want to get tickets for the event. I need three of them.
+assistant: Please verify you would like to buy 3 tickets for Benjamin Francis Leftwich on March 3rd in Atlanta.
+user: Actually I just need 1 ticket.
+assistant: You would like 1 ticket for the event in Atlanta, correct?
+user: Yes, please purchase it.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket has been reserved. Have fun!
+user: Thanks, I'm done now.
+assistant: Have a wonderful day!

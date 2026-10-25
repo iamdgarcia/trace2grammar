@@ -1,0 +1,32 @@
+user: I wanted child friendly museum and would you help me some attractions?
+assistant: Which place you wanted attractions in?
+user: I wanted attractions in San Francisco
+tool(FindAttractions): ok n_results=10
+assistant: You can look into Cable Car Museum which is a museum
+user: Is the attraction free there and can i have their contact number?
+assistant: The attraction is not free there and their contact number is 415-474-1887
+user: I wanted to watch a regular show movie Balboa Theatre there
+tool(FindMovies): ok n_results=3
+assistant: What is your opinion on Ad Astra, IT Chapter Two and Official Secrets?
+user: I want you to look for other movies
+tool(FindMovies): ok n_results=0
+assistant: Sorry, i failed your choice.Any other help?
+user: I want you to try again with movie SFMOMA - Phyllis Wattis Theater as i like 3d THriller movie shows
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion about Madeline's Madeline?
+user: Madeline is great..Is there any online movies?
+assistant: Type of movies you like?
+user: For me action movies is better.
+tool(FindMovies): ok n_results=5
+assistant: I found 5 movies of your choice. What about Angel Has Fallen, Hobbs and Shaw or Mission Mangal?
+user: For me Angel Has Fallen is better. I like to watch the movie now.
+assistant: Please give confirmation details: Running Angel Has Fallen in English
+user: Okay..fine..
+tool(PlayMovie): ok n_results=1
+assistant: The movie started playing now..
+user: Can i know the actor?
+assistant: The actor is Antonio Bustorff.
+user: Thank you so much.
+assistant: Any other help you want?
+user: No, thanks a lot
+assistant: Have a nice day.

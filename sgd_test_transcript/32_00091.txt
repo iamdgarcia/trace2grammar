@@ -1,0 +1,36 @@
+user: Hi, could you get me a place to stay please?
+assistant: How many bedrooms are you looking to get?
+user: Something with three bedrooms will suffice.
+assistant: And will you like to rent or buy the property?
+user: I will likely buy it.
+assistant: Any specific place of interest and how many baths would you like?
+user: Something with two bathes in the Hayward area will do.
+tool(FindHomeByArea): ok n_results=10
+assistant: How about Amberwood Garden Apartments located at 26100 Gading Road? This will cost you $3,650,000.
+user: Are there any alternatives?
+assistant: How about Cypress Glen locateed at 25100 Cypress Avenue costing $3,350,000?
+user: Do they have a garage and how can I contact them?
+assistant: Yes, it has a garage and you cant call them up at 510-887-4406.
+user: I see, thanks alot!
+assistant: How can I further assist you then?
+user: Could you schedule a visit to the property for me?
+assistant: And when will you be visiting the property?
+user: Likely on the 6th of this month.
+assistant: Please confirm your visit to Cypress Glen on March 6th.
+user: Sorry, could you schedule it on the 13th instead?
+assistant: Please confirm your visit to Cypress Glen on March 13th.
+user: Yes, that is fine with me. Do they have laundry machines in the house?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled, and yes, it does have laundry.
+user: I see, could you share the location with Johnny please?
+assistant: Please confirm your request to share the location 25100 Cypress Avenue with Johnny.
+user: Sounds great to me!
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Thank you for your help. Could you get me a regular ride for three there?
+assistant: Please confirm your booking for a regular ride for 3 to 25100 Cypress Avenue.
+user: That is fine with me. How long will it reach me?
+tool(GetRide): ok n_results=1
+assistant: Your booking has been made and will arrive at your location in 2 minutes.
+user: I see, thanks so much! That is all the help I need.
+assistant: Have a great day ahead!

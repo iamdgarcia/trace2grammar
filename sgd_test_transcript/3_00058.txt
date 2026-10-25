@@ -1,0 +1,15 @@
+user: Get for me a cab please.
+assistant: Tell me where you want to go.
+user: I want a ride to Vancouver Aquarium and I prefer a The most comfortable ride.
+assistant: You need how many seats?
+user: I am part of a group of one.
+assistant: You want a Luxury ride to Vancouver Aquarium and you need 1 seats.Is that okay?
+user: Yes is very good.
+tool(GetRide): ok n_results=1
+assistant: The ride was booked and the cab is on its way.
+user: The cab when will reach here and what is the cost?
+assistant: The cab should arrive in 11 minutes.Cost is $17.82.
+user: Thank you for all.
+assistant: Whit something else can I help you?
+user: No.Thank you.
+assistant: Have a good day!

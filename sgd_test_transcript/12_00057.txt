@@ -1,0 +1,23 @@
+user: I need to find a bus.
+assistant: What is your departure date and destination?
+user: I'm going to Long Beach, CA on the 6th.
+assistant: What is your departure city?
+user: Leaving from SD.
+tool(FindBus): ok n_results=10
+assistant: There is a bus departing at 6:50 am for a total of $24.
+user: Is there anything else?
+assistant: There is a bus departing at 7:10 am for a total of $24.
+user: Great. I will need tickets.
+assistant: How many tickets will you need?
+user: I will need 2 tickets.
+assistant: Please confirm you want me to reserve 2 tickets on the bus leaving from San Diego and arriving at Long Beach on March 6th at 7:10 am and you do no have extra baggage.
+user: Yes, that's right. Does the bus only make one-stop?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct bus and you're tickets are confirmed.
+user: Thanks a lot. I also need 1 hotel room in the area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options. Best Western of Long Beach is a 3 star hotel in the area.
+user: That one sounds okay.
+assistant: Is there anything else I can do for you?
+user: No, that will be all.
+assistant: Okay. Have a great day.

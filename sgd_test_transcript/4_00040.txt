@@ -1,0 +1,18 @@
+user: Can you find me some place to eat?
+assistant: Where should I search?
+user: Look for restaurants in Moraga.
+assistant: What type of cuisine do you prefer?
+user: I want some Take-out.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant that you may like. How about Mountain Mike's Pizza? It is a nice restaurant located in Moraga.
+user: Is it a cheap restaurant?
+assistant: They are a moderate priced restaurant.
+user: Okay, that sounds good. I need to book a table for 1. How about on the 12th at 5 in the evening?
+assistant: Confirming that you need a table for 1 for March 12th at Mountain Mike's Pizza in Moraga. You want the reservation for 5 pm.
+user: Yes that works. Does the restaurant have vegetarian options?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You're reservation is confirmed. Yes, they do have good options for vegetarians.
+user: Thank you very much.
+assistant: Can I help you with anything else?
+user: No. Thank you.
+assistant: My pleasure. Have a good day.

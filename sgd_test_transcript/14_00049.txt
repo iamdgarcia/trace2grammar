@@ -1,0 +1,17 @@
+user: Can you find me a movie in the Play genre, directed by Paul Downs Colaizzo?
+tool(FindMovies): ok n_results=1
+assistant: There is only 1 movie based on your preferences and it is Brittany Runs a Marathon which has an average rating of 90 out of 100. Would you like to watch it?
+user: Who were the lead actors in the movie?
+assistant: Jillian Bell starred in this movie.
+user: Thank you. Can you help me find some songs now?
+tool(LookupMusic): ok n_results=10
+assistant: Would you like to listen to Dusk Till Dawn by Zayn Malik from the album Icarus Falls?
+user: That's a perfect pick!
+assistant: Is there anything else I can do for you?
+user: Can you play that song in the Living room?
+assistant: Please confirm that you want to play the song Dusk Till Dawn in the Living room.
+user: Yes, please go ahead. Was it released one years back and what genre is it?
+tool(PlayMedia): ok n_results=1
+assistant: It's a Pop song from 2017.
+user: Thank you. That'll be all.
+assistant: Have a great day!

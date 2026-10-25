@@ -1,0 +1,12 @@
+user: Hi, I am going to be visiting SD to visit my grandmother. My brother had told me there was a one-stop bus that I could take to get there.
+assistant: What day are planning to depart on your trip and what city are you leaving from.
+user: Oh sorry, I will be departing from Sacramento on the 9th of March.
+tool(FindBus): ok n_results=7
+assistant: Alright, there are 7 buses available that day. One of the buses costs $67 and departs at 7:10 am.
+user: Well, actually, I forgot my sister and her husband might want to go too. They can't go until the 14th of March. Are there any buses with seats available for the three of us on that day.
+tool(FindBus): ok n_results=6
+assistant: Sure, there are 6 buses taking that route. One of them departs at 7:40 am and costs $65.
+user: What bus stations does that one depart from and arrive at?
+assistant: It departs from 65th Light Rail Station and arrives at El Cajon Bus Stop.
+user: That bus sounds perfect. Thank you so much for helping!
+assistant: You're welcome! I hope you have a great day!

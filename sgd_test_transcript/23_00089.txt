@@ -1,0 +1,36 @@
+user: Will you find me a train?
+assistant: What city are you going to and departing from?
+user: I am going to San Diego and looking for tickets from LA.
+assistant: Which date will you want to travel?
+user: Can you find tickets for the 6th of March.
+tool(FindTrains): ok n_results=10
+assistant: There will be 10 trains that work. How about the train leaving 6:50 am for $52?
+user: What station does it arrive at?
+assistant: The train comes at Santa Fe Depot.
+user: That sounds nice, I'd like to book train tickets.
+assistant: Will you want travel insurance and how many tickets do you want?
+user: I would like trip insurance and need one seat.
+assistant: Please confirm details that you want a ticket on the train departing Los Angeles to San Diego March 6th at 6:50 am for 1 person with trip insurance a value ticket.
+user: That works for me and which station will it leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets were a success to be booked leaving from Union Station.
+user: You have been of help. Thank you.
+assistant: What else can I assist you with?
+user: I would like some interesting things to do that day there.
+assistant: Will you have a preference for event types?
+user: I like Play a lot.
+tool(FindEvents): ok n_results=10
+assistant: About time is popular and takes place at Talent to aMuse Theatre Co on March 9th 4 pm.
+user: That sounds nice.
+assistant: Will you want to buy tickets for that event?
+user: No not now, but can you share the location with Lauren.
+assistant: Please confirm details to share the location Talent to aMuse Theatre Co with Lauren.
+user: No, I'd like to share it with Kyle.
+assistant: Please confirm details to share location Talent to aMuse Theatre Co with Kyle.
+user: That sounds nice.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Thanks you have been helpful.
+assistant: What else can I help with.
+user: No, thanks for the help.
+assistant: Have a good day.

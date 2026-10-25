@@ -1,0 +1,24 @@
+user: Hi, could you help me search for some nice Supernatural movies please?
+assistant: Any preference on the location?
+user: A movie in Campbell is great.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you might like, how about IT Chapter Two?
+user: IT2 is great! Thanks!
+assistant: Would you like me to purchase the tickets for you?
+user: No, not now. Could you get me a reservation as Patxi's in that area please?
+assistant: And what time do you intend to dine there?
+user: Likely at 1 in the afternoon.
+assistant: Please confirm your reservation for 2 at Patxi's Pizza in Campbell at 1 pm on March 1st.
+user: I am fine with that. Thanks!
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry, your reservation could not be made, could I further assist you then?
+user: Could you try to make the reservation at half past 1 in the afternoon instead?
+assistant: Sure, please confirm your reservation for 2 at Patxi's Pizza in Campbell at 1:30 pm on March 1st.
+user: That is fine with me. May I have their address please?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made, and you can located them at 1875 South Bascom Avenue #405.
+user: I see, and what time will I be watching the movie you found earlier?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There are 1 showtime for the movie at 9:30 pm in CineLux Plaza Theatre.
+user: I see, that is all I need. Thank you!
+assistant: Have a great day ahead!

@@ -1,0 +1,30 @@
+user: Can you help me find a therapist?
+assistant: What city are you looking to find one, and what kind? Perhaps a Psychologist or a Psychiatrist?
+user: I need a Psychologist in Lafayette please
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in in Lafayette including Psychologist Alissa Scanlin Psyd
+user: Where are they located?
+assistant: They can be found at 3468 Mount Diablo Boulevard
+user: What's their contact number?
+assistant: You can reach them at 707-371-2433
+user: Great, but what about a Psychiatrist in Palo Alto if I need one?
+tool(FindProvider): ok n_results=2
+assistant: You can try Ariela Ora Karasov who is a Psychiatrist in Palo Alto
+user: Cool that's great
+assistant: Do you want me to book you an appointment
+user: Yes please do that
+assistant: For what date and time?
+user: I'm free on the 13th at around six in the evening
+assistant: Confirm you want to book aa 6 pm appointment with Ariela Ora Karasov on March 13th?
+user: Yes that's right
+tool(BookAppointment): ok n_results=0
+assistant: Sorry I couldn't book that one, can I try another time?
+user: Try doing it but in the afternoon 12 pm
+assistant: OK so a 12 pm with Ariela Ora Karasov on March 13th yes?
+user: Actually do the 14th pelase
+assistant: So 12 pm on March 14th?
+user: Yes that's right
+tool(BookAppointment): ok n_results=1
+assistant: It's booked and the confirmation e-mail will come soon
+user: Thanks so much, that's all, bye!
+assistant: Bye for now, take care

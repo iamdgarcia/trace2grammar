@@ -1,0 +1,29 @@
+user: Can you find me three tickets to an event in the SF area on March 11th?
+assistant: Sure, but first tell me the event's name.
+user: I was thinking about The Infinite Wrench.
+assistant: Can you please confirm that you want 3 tickets to The Infinite Wrench on March 11th in San Francisco?
+user: On second thought, better make it for the one on the 12th.
+assistant: Can you please confirm that you want me to get you 3 tickets for the show on March 12th?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully booked your tickets. Enjoy the show!
+user: Thanks a lot for everything.
+assistant: Is there anything else I could do for you?
+user: Yes, I'd like to know what bus I could take to go there.
+assistant: On March 12th, right? Please tell me from where are you departing.
+user: I plan to travel there on March 8th from Long Beach.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses matching your criteria out of which I recommend the one leaving at 6:20 am costing $47.
+user: Can you please tell me the number of stops as well as the destination station.
+assistant: Sure, the bus arrives at Transbay Terminal and it doesn't have any stops - it's a direct one.
+user: Sounds perfect.
+assistant: Do you want me to get you tickets for the bus?
+user: Yes, I'd like one ticket please.
+assistant: Can you please confirm that you want me to get you 3 tickets for the bus at 6:20 am on March 8th from Long Beach to San Francisco?
+user: Yes, that's correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've successfully booked your ticket.
+user: Thank you so much.
+assistant: Is there anything else I could do for you?
+user: No, that will be all for now. Thanks!
+assistant: My pleasure. Have a nice day!

@@ -1,0 +1,22 @@
+user: Hello. Can you help me find a house to stay in?
+assistant: Of course! What city would you like to stay in?
+user: I'm staying in Sydney. If you could, I'd like to find a house with a rating of 3.6 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: That's fine! I found 10 houses you might like. I recommend a house at 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia. The house has a rating of 3.6.
+user: Does it have laundry service?
+assistant: It does!
+user: Okay. Can I get the phone number?
+assistant: The phone number is +61 2 9634 9634.
+user: Okay, I'll go with that house.
+assistant: Would you like me to reserve the house for you?
+user: Yes, please!
+assistant: Great! Which day would you like to check in?
+user: That'll be on March 8th.
+assistant: And what's your check out date? How many people are in your group?
+user: My check out date is the 12th of this month. There are 2 of us.
+assistant: Great, thanks! Can you confirm the following details, please? You're staying at a house in Sydney. There are 2 of you, and you are checking in on March 8th and checking out on March 12th.
+user: Yes, great. How much will this set me back?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made! The total price will be $480.
+user: Thanks so much! That'll be all.
+assistant: You're welcome! Bye!

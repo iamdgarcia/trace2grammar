@@ -1,0 +1,21 @@
+user: My necessity is to find a hotel in the city of Chicago. Can you help me with that?
+tool(SearchHotel): ok n_results=10
+assistant: I've found a 3 star hotel called acme hotel company
+user: I may be interested. Check the weather there for the 6th
+tool(GetWeather): ok n_results=1
+assistant: My research tells me that the temperature will be 69 degrees fahrenheit with a 5 percent probability of rain
+user: what can you tell me about the wind?
+assistant: It's going to be 8 miles per hour.
+user: got it. book the hotel for me please.
+assistant: When where you thinking to check in? Is March 6th a good day? How long do you want to stay there?
+user: you got it right, I'll stay there for three days
+assistant: Confirm the input data: you are looking for 1 hotel room at acme hotel company in chicago on march 6th and you'll check out after 3 days.
+user: wrong. The rooms I need are two and I will stay for 7 days
+assistant: I've updated the data, tell me if this is what you want me to do. You want 2 hotel rooms for 7 days
+user: yes. I want the contact number too.
+tool(ReserveHotel): ok n_results=1
+assistant: you got your rooms, the number to call is +1 312-894-0800
+user: Thank you.
+assistant: May I help you with some other task?
+user: No, you may not. bye
+assistant: goodbye sir

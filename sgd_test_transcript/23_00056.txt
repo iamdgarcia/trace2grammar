@@ -1,0 +1,28 @@
+user: I would like to make a payment.
+assistant: What is the amount of the payment?
+user: The payment is from my check card for 44 dollars and goes to Mary.
+assistant: Sending $44 from your debit card to Mary.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made.
+user: Can you find me a train going to Sacramento on the 14th?
+assistant: Which city are you departing from?
+user: I'm leaving from San Diego.
+tool(FindTrains): ok n_results=9
+assistant: There is a train departing at 6:10 am for $145.
+user: Yes, that sounds good.
+assistant: Do you want to purchase tickets?
+user: I would like to know what the weather will be like in Sacramento on the 14th.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 92 degrees and there is a 16 percent chance of rain.
+user: How will the humidity be?
+assistant: The humidity should be around 18 percent
+user: I would like to book one economy seat on the train.
+assistant: Booking 1 value ticket from San Diego to Sacramento on March 14th at 6:10 am.
+user: Yes, that works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket was purchased.
+user: Thank you for you help.
+assistant: Can I help with anything else?
+user: No, that is all I needed.
+assistant: Have a good day.

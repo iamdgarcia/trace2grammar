@@ -1,0 +1,24 @@
+user: I need your assistance to buy bus tickets
+assistant: which city are you leaving from?
+user: seattle, WA
+assistant: okay, what I need to know now is the city you need to reach, the date and the time you wish to leave
+user: I need to be in portland. I was thinking about leaving on the 2nd of march at 10 am
+assistant: I need to know the number of tickets you need.
+user: I need 4 tickets and we wanted to leave on the 1st
+assistant: confirm the data I have acquired: you intend to buy 4 bus tickets to go from seattle to portland on march 1st at 10 am
+user: exactly
+tool(BuyBusTicket): ok n_results=1
+assistant: I was unable to complete the procedure. there's another option for a bus leaving at 9:50 am and the ticket is $35
+user: works for me
+tool(BuyBusTicket): ok n_results=1
+assistant: tickets are bought
+user: great. now it's time to look for one hotel room, check if the facility has three star
+tool(SearchHotel): ok n_results=10
+assistant: aloft portland airport at cascade station is a 3 star hotel as you requested
+user: I think I'll stay there for 5 days, I'll be checking in on the 7th of this month
+assistant: confirm the reservation: you want me to book 1 room at aloft portland airport at cascade station in portland on march 7th. you'll need the room for 5 days
+user: that sounds alright
+tool(ReserveHotel): ok n_results=1
+assistant: it's done
+user: well done. bye
+assistant: goodbye to you sir

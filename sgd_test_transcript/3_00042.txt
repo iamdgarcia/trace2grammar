@@ -1,0 +1,11 @@
+user: I need round trip tickets for four for the 1st of this month, returning on March 9th.
+assistant: Where are you heading?
+user: I am heading to Washington on March 5th.
+assistant: Where would you be leaving from?
+user: I will be traveling from Chicago.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: You can take an American Airlines flight for $211. The flight leaves at 8:35 pm and returns on 7:10 pm.
+user: That would be great.
+assistant: Is there anything else you need assistance with?
+user: No. Thanks very much
+assistant: Enjoy your day.

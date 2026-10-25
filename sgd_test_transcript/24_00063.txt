@@ -1,0 +1,17 @@
+user: Find me a movie to watch.
+assistant: Tell me your location.
+user: Search for movie shown in Mill Valley.
+tool(FindMovies): ok n_results=1
+assistant: I have for you 1 movie.What do you think about IT Chapter Two?
+user: IT Chapter Two sounds great.Book for me a table at a restaurant in that area.
+assistant: At which restaurant you want to be and at what time?
+user: Try please to book at Frantoio at 12:00.
+assistant: Book a table for 2 people at Frantoio Ristorante in Mill Valley in March 1st at 12 pm.Is that correct?
+user: Yes that works for me.Tell me what type of food they serve and if they have vegetarians option?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation was made.There are good options for vegetarians and serve Seafood.
+user: At what time can I watch the movie that you found on that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's one at 7 pm in CineArts Sequoia.
+user: Sounds very goo.That's all that I wanted.
+assistant: Have a great day!

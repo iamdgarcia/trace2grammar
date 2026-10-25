@@ -1,0 +1,26 @@
+user: Would you help me to find a bus which leaving from Fresno, CA.
+assistant: When do you decided to leave?
+user: I like to leave on the 4th.
+assistant: To which place you decided to go?
+user: I planned to go San Francisco.
+tool(FindBus): ok n_results=8
+assistant: What is your opinion about the bus leaving at 10:50 am with cost $36.
+user: This is cool..Do you know some attractions which is child-friendly? I am searching for a museum.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Museum called Cable Car Museum
+user: Fine...Do you know any other attractions?
+assistant: There is a Museum called California Academy of Sciences.
+user: This is perfect
+assistant: Any other help you want?
+user: I want you to buy the tickets in the bus you just found for me.
+assistant: Number of tickets you want?
+user: Only 1 ticket is enough.
+assistant: Please give confirmation details: You like to book the ticket in a bus which leaving from Fresno to San Francisco for march 4th at 10:50 am and the ticket requirement is 1. There is no extra luggage.
+user: This is perfect for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I confirmed your ticket.
+user: Thanks a lot..Can you search for me a hotel there with 1 star rating and i need only 1 room.
+tool(SearchHotel): ok n_results=3
+assistant: I have selected 3 hotels of your choice. One among them is Amsterdam Hostel San Francisco with 1 star rating.
+user: This is cool..This much is enough for now.
+assistant: Have a great day..bye

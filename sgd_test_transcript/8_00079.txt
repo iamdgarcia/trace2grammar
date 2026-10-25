@@ -1,0 +1,11 @@
+user: I'm trying to find a train going to LA.
+assistant: On what date please?
+user: I'm going to be going on the 3rd.
+assistant: Leaving from what city please?
+user: I'll be going from the city of Fresno.
+tool(FindTrains): ok n_results=9
+assistant: I have 9 trains which fit your description. There is one departing at 7:20 AM which is a $76 ticket.
+user: I'm sorry, going from where to where?
+assistant: It departs from Fresno Station and the destination is Union Station.
+user: Sounds perfect, thank you for your help.
+assistant: It's my pleasure to be able to help you.

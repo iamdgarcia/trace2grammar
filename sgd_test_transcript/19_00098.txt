@@ -1,0 +1,23 @@
+user: I'll be needing a rental car starting the 1st. Could you help me find one?
+assistant: How long will you be keeping the car?
+user: I'd like to keep it until Wednesday next week.
+assistant: In what city would you like to rent the car? What's your preferred pick-up time?
+user: Please find cars in London, England, available for pick up at half past 9 in the morning.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a nice Audi A8 Sedan car, ready for pick up at Heathrow International Airport.
+user: I like the sound of that. I'd like you to help me find my friends 3 tickets for an event around NY on the 4th.
+assistant: I can help you with that, but first tell me the type of event you'd like.
+user: My friends say that the Boston Symphony Orchestra is great, and will be performing in New York on that day.
+assistant: No problem. Please confirm that you'd like to book 3 tickets to attend the Boston Symphony Orchestra performance on March 4th in New York.
+user: That's correct. Please tell me the event's venue and the cost per ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy yourself there! The venue is Stern Auditorium / Perelman Stage and the cost per ticket is $30.
+user: Thank you very much. You've been very helpful. Please also reserve the rental car that you found for me earlier.
+assistant: Would you like to add insurance?
+user: No. I won't be needing insurance.
+assistant: Please confirm that you'd like to pick a Sedan car without insurance from Heathrow International Airport on March 1st at 9:30 am and drop it off on March 6th.
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Have a wonderful day!

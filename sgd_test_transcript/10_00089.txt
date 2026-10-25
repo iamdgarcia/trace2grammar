@@ -1,0 +1,9 @@
+user: I need a house to stay in.
+assistant: What city are you going to?
+user: I'm going to London, England. It should have at least a 4.4 rating. I'll also need laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. One is located at 1 Ham Yard and has a 4.4 rating.
+user: That's a good one.
+assistant: Would you like a reservation?
+user: Not right now. That's all for now.
+assistant: Have a nice day.

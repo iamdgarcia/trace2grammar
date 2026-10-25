@@ -1,0 +1,18 @@
+user: I'm looking for train tickets.
+assistant: When are you traveling and where are you traveling to?
+user: I'm traveling on March 12th to LAX.
+assistant: Where are you departing from?
+user: I'm departing from San Diego.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6:10 am for $60, does that work?
+user: What station does the train arrive at?
+assistant: The train arrive at Union Station.
+user: What station does it depart from?
+assistant: The train departs from Santa Fe Depot.
+user: Okay, that sounds good.
+assistant: Would you like to purchase a ticket?
+user: No, not right now. I'd like to find a house to stay at.
+tool(SearchHouse): ok n_results=10
+assistant: How about a house at 1020 South Figueroa Street with a 4.1 rating?
+user: Yes, that sounds great. That is all I need.
+assistant: Have a great day.

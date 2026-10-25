@@ -1,0 +1,7 @@
+user: I need a sedan for my trip to Chicago.
+assistant: What time do you need the car? On what day? When do you want to return the car?
+user: I need the car from the 1st to the 7th of this month. I'll be picking it up at 16:00.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 cars available at Chicago Union Station. One is a Buick Regal Sportback sedan.
+user: That will work. That is all.
+assistant: Have a nice day.

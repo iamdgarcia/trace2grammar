@@ -1,0 +1,26 @@
+user: I want to hear some popular songs.
+tool(LookupMusic): ok n_results=10
+assistant: What about Acapella by Karmin from the Pulses album?
+user: What else is there?
+assistant: What about African Beauty by Diamond Platnumz from the A Boy from Tandale?
+user: What else? Show me something from two years ago.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. What about Airplane mode by Limbo from the Holo album?
+user: That's a good one.
+assistant: Do you want to hear it?
+user: Not right now.
+assistant: Do you need anything else?
+user: What's the weather like in Phoenix, AZ?
+tool(GetWeather): ok n_results=1
+assistant: It should be around 89 degrees Fahrenheit with a 15 percent chance of rain.
+user: I want to hear the song now on my patio.
+assistant: Play Airplane Mode in your patio. Is this right?
+user: No, play it in my living room device.
+assistant: Play Airplane Mode iin your living room. Is this right?
+user: Yes it is.
+tool(PlayMedia): ok n_results=1
+assistant: The song has begun.
+user: Thank you.
+assistant: Do you want anything else?
+user: No, that's all.
+assistant: Have a nice day.

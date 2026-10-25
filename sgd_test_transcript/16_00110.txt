@@ -1,0 +1,26 @@
+user: Hello, I'm looking for a salon please.
+assistant: In what city please?
+user: I'd like something in Oakley.
+tool(FindProvider): ok n_results=2
+assistant: I have 2 possibilities for you. There is a salon in Oakley called Great Clips which I recommend.
+user: Is that a unisex salon?
+assistant: Yes, it is.
+user: That's fine. I'd also like to share that location with Melissa.
+assistant: Is the address you would like to share 2589 Main Street?
+user: Yes, that's right.
+assistant: Confirming location sharing of 2589 Main Street with Melissa.
+user: That's right, thank you.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Now would you mind showing me my alarms please?
+tool(GetAlarms): ok n_results=4
+assistant: you have an alarm called breakfast which is set for 9 AM.
+user: Thank you. I'd like to set a new one please.
+assistant: At what time please?
+user: Please set it for 4:15 in the evening.
+assistant: Confirming a new alarm at 4:15 PM.
+user: That's right, thank you.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been created.
+user: Thanks so much, that's all I need.
+assistant: You're very welcome.

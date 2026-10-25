@@ -1,0 +1,44 @@
+user: can you find me something fun to do on march 10th
+assistant: what city should i search in
+user: please find something in nyc
+assistant: you can say anything from music to theater
+user: i want to go to theater
+tool(FindEvents): ok n_results=10
+assistant: what about advanced acting scene study at tgw acting studio at 4:30 pm on march 10th
+user: that sounds good
+assistant: would you like to buy ticket
+user: no not right now
+assistant: what else can i do for you
+user: please find me a direct bus to go there
+assistant: is this leaving on march 10th
+user: no i want to leave on wednesday next week
+assistant: where are you traveling from
+user: i will be traveling from philadelphia
+tool(FindBus): ok n_results=6
+assistant: what about 9 am departure for $22
+user: what station are you leaving from and arrive at
+assistant: you will depart from 10th and filbert and arrive at penn station
+user: ok perfect, please also find me a round trip flight there
+assistant: is this leaving on march 10th
+user: i want to leave on the 5th with economy class tickets
+assistant: when would you like to return
+user: i will return on march 13th
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: what about american airlines for $100. you will depart at 7:25 am with returning flight depart at 11:20 am
+user: perfect. please also find me a hotel for one room
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 hotels. what about a 5 star hotel called 1 hotel brooklyn bridge
+user: can you find me a four star hotel
+tool(SearchHotel): ok n_results=10
+assistant: i found a 4 star hotel called 6 columbus - central park hotel
+user: what else can you find
+assistant: what about a 4 star hotel called ac hotel new york times square
+user: perfect. now please purchase 3 tickets for the event
+assistant: please confirm your purchase of 3 tickets to the advanced acting scene study in new york on march 10th
+user: yes pleas. how much is the ticket and where is it located
+tool(BuyEventTickets): ok n_results=1
+assistant: this is located at 358 west 44th street and the ticket is $20
+user: thank you for your assistance
+assistant: what else can i do for you
+user: no that is all i need
+assistant: have a nice day

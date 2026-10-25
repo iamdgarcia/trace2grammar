@@ -1,0 +1,28 @@
+user: I need your help with a payment
+assistant: Will that come from your credit card or an app balance
+user: Make it for 152 dollars. It need to be a private transfer from my visa account. It will be for my niece Emma.
+assistant: To confirm: We're transferring $152 to Emma from your credit card.
+user: That's it, thanks
+tool(MakePayment): ok n_results=1
+assistant: That transferred was confirmed just now. Emma should have the funds by now.
+user: Great. Thanks. I need to have dinner and am looking Someplace in Oakland with outdoor seating that has Spicy Noodles.
+tool(FindRestaurants): ok n_results=2
+assistant: I've got Bangkok Garden. Nice place in Oakland.
+user: Can you give me their location?
+assistant: You'll find them at 5231 College Avenue.
+user: That's perfect. thanks
+assistant: How would you like me to reserve a table?
+user: Go ahead and reserve that.
+assistant: For what time?
+user: I should be able to make it by 12:15 pm.
+assistant: To confirm: Bangkok Garden in Oakland at 12:15 pm on March 1st for 2.
+user: Great. Do you know if they have vegetarian dishes on their menu? And could you get me their phone number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a number of excellent vegetarian dishes. The number is 510-653-8587. My apologies. That time is not available. Bangkok Garden is nice place. How about March 1st for 2 at 12 pm?
+user: Great. Let's go with that.
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's reserved for you.
+user: Great. Thank you
+assistant: Will you be needing me for anything else?
+user: No, that'll do it.
+assistant: take care now.

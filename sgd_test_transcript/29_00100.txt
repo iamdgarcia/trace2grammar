@@ -1,0 +1,28 @@
+user: Hi, could you help me find interesting Broadway things to do around LA on the 4th of this month?
+tool(FindEvents): ok n_results=10
+assistant: Sure, how about A Year In Dragonfly taking place at Studio C Artists on March 4th at 6 pm?
+user: That sounds great to me!
+assistant: Do you need any other help then?
+user: Could you get me a house to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: How about a 4.1 rated house at 1020 South Figueroa Street?
+user: Do they provide any laundry service?
+assistant: Yes, they do.
+user: That sounds good to me!
+assistant: Would you like a reservation there then?
+user: No, not now. Could you check buses travelling there for me?
+assistant: When and where do you plan to depart? On the March 3rd or March 4th?
+user: I will be departing this Saturday from SF.
+tool(FindBus): ok n_results=9
+assistant: There are 9 buses you may like, how about one departing at 7:30 am costing $48?
+user: Sure, could you purchase the event tickets you mentioned just now?
+assistant: How many tickets are you looking to get?
+user: Just two will do, thanks!
+assistant: Please confirm your reservation for 2 tickets to A Year In Dragonfly in Los Angeles on March 4th.
+user: That is fine with me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, enjoy!
+user: May I have their venue please?
+assistant: It is taking place at 6448 California 2.
+user: I see, that is all I need. Thank you so much!
+assistant: Have a great day ahead.

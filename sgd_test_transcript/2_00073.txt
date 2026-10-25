@@ -1,0 +1,21 @@
+user: I need your help finding an interesting activity please. Would you look in Portland please?
+assistant: I sure will. Is there a specific category you prefer, Music or Theater, for instance?
+user: My preference would be for a Stage show.
+tool(FindEvents): ok n_results=10
+assistant: Excellent. Here's a recommendation you might like at Newmark Theatre: it's their Annual School Performance, which is held on March 2nd, 5 pm.
+user: What's the price for a ticket?
+assistant: Admission is $45.
+user: That could be good, but let me see what else there is first. How about a Concert or something on the 6th of this month.
+tool(FindEvents): ok n_results=4
+assistant: Yes, there are 4 options to choose from. Bastille is a popular choice at Theater Of The Clouds. That's at 4:30 pm on March 6th.
+user: Sounds terrific.
+assistant: Are you ready to buy tickets at this time?
+user: I am, thank you.
+assistant: What is the number of tickets would you like?
+user: Just 2 please.
+assistant: Confirming a reservation for 2 on March 6th to see Bastille in Portland.
+user: All right, great! Thanks.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased. Enjoy your evening!
+user: Thank you, that takes care of it.
+assistant: You are welcome, thank you.

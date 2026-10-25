@@ -1,0 +1,30 @@
+user: Can you find me a one way flight?
+assistant: What will be your departure city?
+user: I am leaving from NY.
+assistant: What are you travel dates? What is your destination?
+user: I want to leave for Atlanta, GA tomorrow.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: How about a flight with American Airlines? There is a 9:45 am departure for $133. It is a direct flight.
+user: Is the ticket for one person? What is the arrival time?
+assistant: The flight lands at 12:07 pm. The ticket is for 1 person.
+user: Can you find me something else?
+assistant: How about Delta Airlines? There is a direct flight leaving at 4:20 pm. The ticket costs $119.
+user: Can you find me something else? I need four tickets on Economy class.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: How about Southwest Airlines? They have a direct flight departing at 9:25 pm. It costs $130.
+user: Sounds good. Can you find me some trains going there? Find some conditionally refundable tickets for the 4th.
+tool(FindTrains): ok n_results=3
+assistant: How about a 8:20 am train? It costs $729 total.
+user: That sounds good.
+assistant: Would you like to book tickets?
+user: Yes, make me a reservation.
+assistant: Will you be needing travel insurance?
+user: Yes, I want trip insurance.
+assistant: Confirming that you want to book a ticket on the March 4th New York to Atlanta train. You need 4 Value tickets. You will be departing at 8:20 am. Is this information correct?
+user: That works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked your tickets.
+user: What are the departure and arrival stations?
+assistant: The train departs from Grand Central Station and arrives at Peachtree Station.
+user: Thanks for your helpfulness. That's all I need.
+assistant: You're welcome!

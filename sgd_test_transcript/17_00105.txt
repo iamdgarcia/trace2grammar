@@ -1,0 +1,21 @@
+user: Please check the weather forecast for me.
+assistant: Ok what city should I check the forecast in?
+user: Please check the weather in San Francisco on the 9th of March.
+tool(GetWeather): ok n_results=1
+assistant: The weather on that day should be around 70 degrees Fahrenheit with a 2 percent chance of rain.
+user: What is the humidity supposed to be?
+assistant: The humidity on that day should be about 16 percent.
+user: Is it going to be windy?
+assistant: The wind speed on that day should be about 9 miles per hour.
+user: Ok, great. I'd like to book a one-way flight there.
+assistant: What city will you be departing from and is this on March 9th?
+user: I'd like three tickets and I want to depart on March 7th from Washington.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: How about travelling with American Airlines? The flight will takeoff at 10:30 am and has a layover. The price of the ticket will be $269.
+user: That works for me. Can you also book me a rental car there? I'd like to pick up the car at 17:15 and I need it from the 9th of March until March 13th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I managed to find 10 cars. There's a Salesforce Transit Center that have a car you may like. It's a Sedan Audi A8.
+user: What is the cost of the rental per day?
+assistant: The cost of the rental is $25.00 per day.
+user: That's all I needed, thank you so much.
+assistant: Have a wonderful day!

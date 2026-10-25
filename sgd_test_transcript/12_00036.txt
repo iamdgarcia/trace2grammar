@@ -1,0 +1,29 @@
+user: Assistant. I'm thinking of leaving SF for a bit. I need to buy bus tickets however.
+assistant: I can assist with that. What time do you wish to leave?
+user: I plan on leaving at around afternoon 3:30.
+assistant: What date will you be making your trip and how many tickets do you require?
+user: I want you to see if there are 4 tickets available for a bus ride on the 12th of this month.
+assistant: What is your chosen destination?
+user: I'm planning to leave SF and head to Los Angeles.
+assistant: If you could, confirm that I have the details of your trip correct. You will be departing from San Francisco on March 12th at 3:30 pm. Your destination is Los Angeles. You require passage for 4 people with no extra luggage. If this is correct, I can proceed to purchase the tickets.
+user: That works wonderfully.
+tool(BuyBusTicket): ok n_results=1
+assistant: I can now confirm that your tickets have been purchased.
+user: Awesome. Thank you. Can you help me find a rental car for when we arrive there?
+assistant: Until what date will you require this rental vehicle?
+user: As far as I know, I will rent the car until the 14th of March.
+assistant: Will you be picking up the car in Los Angeles on March 12th? Please provide a pick-up time as well.
+user: That sounds fine to me. I'll be picking the car up on the 13th of march at evening 5.
+tool(GetCarsAvailable): ok n_results=10
+assistant: 10 rental cars are available for you. At LAX International Airport, there is a Dacia Duster for rent. It is an SUV.
+user: An SUV should work fine for me. Go ahead and reserve the rental vehicle now.
+assistant: Do you think you will need insurance?
+user: No thanks. I don't need rental insurance at the moment.
+assistant: You will be renting an SUV from LAX International Airport from March 13th at 5 pm until March 14th. Is that right?
+user: As far as I know that sounds correct. What's the price per day on that rental?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved for when you arrive. The cost associated with the rental is $43.00 per day.
+user: Thank you for your help. That should sort out most of what I need.
+assistant: If I can help in any other way, please let me know.
+user: No. I think that's all for now. Once again, thanks for helping me.
+assistant: I hope you have a good day. Bye.

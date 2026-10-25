@@ -1,0 +1,49 @@
+user: Can you look for something interesting for me to do?
+assistant: Yes, but first tell me if you'd like specific type of event.
+user: Yes, I'd want something on Broadway.
+assistant: In which city do you want me to search?
+user: Please find me something in New York.
+tool(FindEvents): ok n_results=10
+assistant: How about Acting for Teens at 520 8th Ave. - Personal Valet Parking, on March 4th at 6 pm?
+user: Sounds nice, but can you find me something else in Seattle, WA on the 5th of this month?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events matching your criteria, out of which I recommend Blood Water Paint at 12th Avenue Arts, on March 5th at 7 pm.
+user: Can you please tell me the address for the venue?
+assistant: Yes, the venue is located at 1620 12th Avenue.
+user: Sounds nice, but please find me some Music events on the 8th.
+tool(FindEvents): ok n_results=2
+assistant: On March 8th at 6 pm there's Cody Johnson playing at Flamingo Lot.
+user: Sounds perfect.
+assistant: Do you want me to get tickets for you?
+user: Not at the moment.
+assistant: Is there anything else I could do for you today?
+user: Please find me a house to stay there/
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses matching your criteria, out of which I recommend 1000 1st Avenue rated at 4.5.
+user: Do you know if they provide laundry service?
+assistant: Yes, they do have laundry service.
+user: Anything else available for three people, rated 4.4 or higher?
+tool(SearchHouse): ok n_results=9
+assistant: Yes, there are 9 houses matching your criteria, with a very nice house at 1007 1st avenue rated at 4.4.
+user: Anything else?
+assistant: There's also a very nice 4.4 rated house at 1150 Fairview Avenue North.
+user: Do they provide laundry service.
+assistant: Yes, they also provide laundry service.
+user: This house is perfect. Now let's find 4 bus tickets to there.
+assistant: Do you plan on leaving on March 8th, March 9th or some other day?
+user: I want to travel Thursday next week.
+assistant: Can you please tell me from where will you be deprating?
+user: Sure, I'm departing from Vancouver, BC.
+tool(FindBus): ok n_results=10
+assistant: There's a bus departing at 7:40 am with tickets priced at $25.
+user: Sounds OK. Let's now go back and get tickets to the event you found earlier.
+assistant: Can you please confirm that you want 4 tickets to Cody Johnson on March 8th in Seattle?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully placed your reservation. Enjoy the show!
+user: Can you please tell me the address for the venue as well as the price for one ticket?
+assistant: Sure, the venue is located at 5500 Phinney Avenue North and tickets are $60?
+user: Thanks for everything.
+assistant: Is there anything else I could help you with?
+user: No, that will be all for now.
+assistant: Have a nice day!

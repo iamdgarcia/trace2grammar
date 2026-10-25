@@ -1,0 +1,30 @@
+user: I want to hear songs from Outsider.
+tool(LookupMusic): ok n_results=2
+assistant: Right Left Wrong by Three Days Grace from Outsider is really good.
+user: Anything else? I do like Three Days Grace!
+tool(LookupMusic): ok n_results=2
+assistant: The Mountain is another great song by Three Days Grace from Outsider.
+user: What year did it come out? '12?
+assistant: It come out in 2018.
+user: Yes, that is it!
+assistant: Would you like to play the song?
+user: Later, I want to watch a movie now.
+assistant: What kind of movies?
+user: Movies based on a play are my favorite.
+tool(FindMovies): ok n_results=10
+assistant: I found A Faithful Man, After The Wedding, and Blinded By The Light.
+user: Anything else? I would like to watch a bizarre story with Rebecca Rittenhouse.
+tool(FindMovies): ok n_results=1
+assistant: Once Upon A Time In Hollywood is new and is bizarre.
+user: Once Upon A Time In Hollywood is perfect! Can you play the song you found earlier?
+assistant: Confirm, playing the Mountain in the living room.
+user: No, play it on the speaker outside.
+assistant: Confirming, playing the Mountain outside on the Patio.
+user: Yes, what is the music genre?
+tool(PlayMedia): ok n_results=1
+assistant: It is a rock song.
+user: Can you tell me about the alarms I have set?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms including one at 10 am called Study.
+user: Ok, thanks! That is all I need.
+assistant: Have a nice day.

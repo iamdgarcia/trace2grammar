@@ -1,0 +1,12 @@
+user: My sister is coming to visit next month and I would like to find something interesting to do in my hometown, Portland, OR. Can you help me search for events that take place on the 9th of March?
+assistant: Yes, I can help with that, but first help me narrow it down a bit. What type of event should I search for? You can say things like Music for concerts, or Theater for plays, or any other category you like.
+user: Both her and I are really into anything involving Drama.
+tool(FindEvents): ok n_results=9
+assistant: Of the 9 events I found matching that description, the top one is the Annual School Performance located at Newmark Theatre, on March 9th, at 7 pm. Does this sound like something that may interest you?
+user: While that does sound interesting, can you find something different? How about we look for events on March 3rd instead.
+tool(FindEvents): ok n_results=10
+assistant: Sure, Beirut by Alan Bowne, located at Shoe Box Theater pn March 3rd, beginning at 5:30 pm seems to be a choice event.
+user: Yes, that one sounds more like what I am looking for.
+assistant: Great, would you like me to reserve the tickets for you?
+user: No, I can do that when it gets a little closer, but thank you.
+assistant: My pleasure, have a pleasant day.

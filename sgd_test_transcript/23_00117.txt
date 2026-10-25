@@ -1,0 +1,40 @@
+user: Find me a train please.
+assistant: In what date you want to travel and from what city?In which city you go?
+user: I want tickets from Los Angeles to San Diego on 11th of March.
+tool(FindTrains): ok n_results=10
+assistant: What you think about the train that depart at 6:50 am and cost $54 in total?
+user: Something else you have for me.I need 4 seats and I don't have preferences about the fare class.
+tool(FindTrains): ok n_results=8
+assistant: What about the train that depart at 8:10 am and cost $172 in total?
+user: From which station will leave?
+assistant: From Union Station will leave.
+user: Other train that could work you have?I would like Value tickets.
+tool(FindTrains): ok n_results=2
+assistant: 2 trains I have for you.What you think about a train that depart at 12:40 pm and cost $174 in total.
+user: Sounds very good.Book for me tickets.
+assistant: You want travel insurance too?
+user: Yes.I want trip insurance.
+assistant: You want 4 Value tickets at the train that leave from Los Angeles to San Diego on March 11th at 12:40 pm.
+user: This works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: The ticket was bought.
+user: Find me something interesting to do there in that day.I enjoy Musical performance on the 14th.
+tool(FindEvents): ok n_results=10
+assistant: I have for you 10 options.Very popular is Bastille and is taking place at Cal Coast Credit Union Amphitheater on March 14th at 5 pm.
+user: Tell me where is located the venue and what is the cost per ticket.
+assistant: 5500 Campanile Drive is the location and $60 is the cost.
+user: Sounds great for me.
+assistant: You want to buy tickets at this event?
+user: No,not now maybe later.
+assistant: Can I do something else for you?
+user: Share for me please the location with Eric.
+assistant: You share location Cal Coast Credit Union Amphitheater with Eric.I'm right?
+user: No,share it please with Bruce.
+assistant: You share location Cal Coast Credit Union Amphitheater with Bruce .Is okay for you?
+user: Sounds very good.
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared.
+user: Thank you.You have been a great help to me today.
+assistant: With something else I can help you?
+user: No.Thank you very mush for all.
+assistant: Have a great day!

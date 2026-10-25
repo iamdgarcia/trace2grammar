@@ -1,0 +1,29 @@
+user: I want you to find a unisex salon for me in Morgan Hill.
+tool(FindProvider): ok n_results=3
+assistant: I have selected 3 salons of your choice. One among them is Great Clips a beautiful salon in Morgan Hill.
+user: Okay..this is cool.
+assistant: Do you want me to book the appointment there?
+user: Okay..book the appointment for me.
+assistant: At what time and date you want the appointment?
+user: I need the appointment on the 8th at 18:15.
+assistant: Please give confirmation details: You want me to book the appointment with Great Clips at 6:15 pm on march 8th.
+user: This is perfect.
+tool(BookAppointment): ok n_results=1
+assistant: Oh..i was not able to book the appointment. Great Clips is a beautiful Salon. can i book the appointment at 6 pm on march 8th?
+user: Okay..this is fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your booking is over.
+user: I want you to find a restaurant there for meals on that day. I want the American food.
+tool(FindRestaurants): ok n_results=5
+assistant: I have selected 5 restaurants of your choice. One among them is 88 keys cafe a nice restaurant in Morgan Hill.
+user: Can i know the address? Are they serving vegetarian food?
+assistant: No, there don;t have vegetarian food and the address is 1295 East Dunne Avenue.
+user: Okay..fine..I want to book a table at 19:00
+assistant: Please give confirmation details: You want to book the table on march 8th at 88 Keys Cafe in Morgan Hill at 7 pm for 2 people.
+user: Sorry, book the table for four people at 12 o'clock in the afternoon.
+assistant: Please give confirmation details: Table booking for 4 people at 12 pm.
+user: Okay..this is cool.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table booking is confirmed.
+user: Thank you so much.
+assistant: Have a great day.

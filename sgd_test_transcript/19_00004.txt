@@ -1,0 +1,21 @@
+user: I would like to look up some places to eat please.
+assistant: Sure, I can help you with that. What city would you like to search? I will also need to know what type of food your interested in?
+user: Let's pull Oriental restaurants that are moderate in price in the Mountain View area.
+tool(FindRestaurants): ok n_results=3
+assistant: Sure, one moment. I've located a great one for you in Mountain View called Hangen Szechuan. How does this sound?
+user: Perfect, I appreciate that!
+assistant: No problem! Should we book a table at this time?
+user: Yes, Let's reserve the table now.
+assistant: Ok, what time should we reserve for?
+user: I would prefer twelve in the afternoon if possible.
+assistant: Sure thing, please go ahead and confirm we are booking a table for 2 people on March 1st at 12 pm at the Hangen Szechuan restaurant in Mountain View. Is this correct?
+user: Yes, that is perfect!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Great, your reservation was created successfully.
+user: Thanks, let's also set up a cab as well to get there. I would like to ride to 134 Castro Street, let's also make sure this is an expensive ride too!
+assistant: Alright, please confirm we are setting up a Luxury ride for 2 passengers to go to 134 Castro Street. Is this detail correct?
+user: Yes it is. Find out how much the ride will cost please.
+tool(GetRide): ok n_results=1
+assistant: Great news, I've booked your ride and the cab is on it's way now. The total for the ride will be $22.71
+user: Great, thanks for that. Good bye!
+assistant: Your welcome, Good bye!

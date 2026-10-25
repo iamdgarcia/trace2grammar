@@ -1,0 +1,25 @@
+user: I'm looking for a rental car.
+assistant: What time do you want to pick it up?
+user: I want to pick it up at 12:30 pm.
+assistant: What day do you want to pick it up and when do you want to drop it off?
+user: I need it from Thursday next week until the 8th of this month.
+assistant: Where do you want to pick up the car?
+user: I want to pick it up from Portland, OR.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV Alfa Romeo Stelvio at Portland Bus Station.
+user: That sounds great.
+assistant: Do you want to reserve the car?
+user: No, not now. Are there any buses going there?
+assistant: When are you leaving and where are you leaving from?
+user: I'm leaving from Vancouver on the 4th.
+tool(FindBus): ok n_results=8
+assistant: There is a bus departing at 7:10 am for $39.
+user: That sounds good.
+assistant: Do you want to purchase ticket?
+user: No, not now. I want to find a one-way flight there.
+assistant: Are you leaving on March 4th?
+user: I need four tickets. I'm leaving this Saturday.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: There is an American Airlines flight that leaves at 11:20 am for $251.
+user: Thanks, that's all.
+assistant: Have a great day!

@@ -1,0 +1,25 @@
+user: I would like to make a payment. Please set up a transaction with Wilson for forty four dollars.
+assistant: Which account would you like to transfer the money from?
+user: Please send it from my balance.
+assistant: You would like to transfer $44 to Wilson from your app balance is this correct? This transaction will be visible to the public.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successful. The recipient should be able to view the transaction soon.
+user: I would like to request a payment. Please make a transaction with Bob for seventy one bucks, and that is a private transfer.
+assistant: You would like to set up a private transaction Bob in the amount of $71, is this correct?
+user: No, I meant to say please make the transaction with Amelia for 53 dollars.
+assistant: You would like to set up a transaction with Amelia for $53.
+user: Yes, that is right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request is successful.
+user: I would like to make a payment.
+assistant: What is the amount, please?
+user: It is for 73 dollars.
+assistant: Which account should I transfer from? Who will the payment be transferred to?
+user: Please make the transaction with Mahmoud from my saving account.
+assistant: You would like to send Mahmoud $73 from your debit card, and this transaction will be visible to the public, is this correct?
+user: Yes, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successful. The recipient should be able to view the transaction soon.
+user: Thank you very much, that is all for now.
+assistant: Have a great day!

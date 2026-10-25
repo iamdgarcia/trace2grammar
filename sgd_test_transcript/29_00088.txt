@@ -1,0 +1,33 @@
+user: I feel like I am getting Cabin Fever and need to find something to do outside of my work and home. Can you help me find something like a play to attend on the 9th of this month in or around San Fran?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events I was able to find that match that criteria. It looks like Above Ground is very popular and it will be playing at Mojo Theatre on March 9th, at 6:30 pm.
+user: Okay, that sounds great. It would be nice to just stay there overnight so do you think you can help me find a place to stay while I am there?
+tool(SearchHouse): ok n_results=10
+assistant: Sure, I've found 10 you may be interested in, and the first has a 4.0 rating, located at 1095 Market Street.
+user: That sounds like just what I need!
+assistant: Should I go ahead with the reservation then?
+user: Not quite yet.
+assistant: Was there something else you needed my assistance with?
+user: Yes, I will also need transportation and was thinking of taking a direct bus ride there from Vegas.
+assistant: Okay, is March 9th the day you intend to leave?
+user: No, I would like to leave on the 1st of March and make a mini vacation out of it.
+tool(FindBus): ok n_results=7
+assistant: There is a bus that will be departing at 6:40 am costing a total of $56. Does that interest you?
+user: It depends, what station will the bus arrive at?
+assistant: That bus will be arriving at Transbay Terminal.
+user: What about a different bus that leaves tomorrow?
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses leaving tomorrow, one of which leaves at 11:30 am and the ticket costs $48.
+user: Yes, that sounds great.
+assistant: Would you like me to reserve your bus ticket now?
+user: No, but I would like to go ahead and buy the ticket to the event you were able to find earlier.
+assistant: Sure, how many tickets will you need?
+user: I'm going to go with some friends so I will need three tickets.
+assistant: Okay I think I have everything, please correct me if I am wrong. You would like 3 tickets for the play titled Above Ground, located in San Francisco, playing on March 9th. Is that right?
+user: Yes, that is perfect, I can't wait!
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully reserved your tickets, I hope you have a wonderful time!
+user: Thanks so much, i'm sure I will.
+assistant: Is there anything else I can do for you?
+user: No, you've taken care of everything.
+assistant: Have a good day and a pleasant trip!

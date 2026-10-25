@@ -1,0 +1,33 @@
+user: Hello. I need your assistance finding a unisex salon to go to.
+assistant: Hello. I can help you with that. In which city would you like me to look for unisex salons?
+user: Look in Los Gatos.
+tool(FindProvider): ok n_results=6
+assistant: I've found 6 salons that may interest you. Great Clips is a nice salon in Los Gatos.
+user: That sounds find. Can you find me a Family Counselor in Los Gatos?
+tool(FindProvider): ok n_results=5
+assistant: You may want to try Emily Rosenbaum who is a Family Counselor in Los Gatos.
+user: Are there any other therapists you could find?
+assistant: Fredkin Susan is also a Family Counselor in Los Gatos.
+user: That sounds fine.
+assistant: Would you like to book an appointment with this therapist?
+user: Yes I would.
+assistant: At what time and date would you like to make the appointment?
+user: I'd like to make it for 2:45 in the afternoon on the 12th if at all possible.
+assistant: Please confirm the following: You would like an appointment with Fredkin Susan at 2:45 pm on March 12th.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry but I was unable to book an appointment at that time. Would an appointment on March 12th at 3 pm with Fredkin Susan work?
+user: Yes, that works perfectly.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked. You may get an email confirmation soon.
+user: Can you also book me an appointment at the salon from earlier? Make it for the evening 6.
+assistant: Please confirm the following: Book an appointment at Great Clips for 6 pm on March 12th.
+user: I confirm. Can you tell me their contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. Their contact phone number is listed as 925-210-0613.
+user: What's their address and average rating?
+assistant: Their address is listed as 1833 Ygnacio Valley Road and they have a rating of 4.0.
+user: Great. Thank you for all your help.
+assistant: You are welcome. Will that be all?
+user: Yes, for now.
+assistant: Okay. Have a pleasant day.

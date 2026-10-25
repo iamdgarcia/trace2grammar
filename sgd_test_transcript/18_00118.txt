@@ -1,0 +1,23 @@
+user: I want to find a restaurant in SFO that serves Izakaya and it needs to be cheap or fairly inexpensive.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant in San Francisco that is called Izakaya Kou.
+user: That sounds right. What is their address and phone number?
+assistant: The address is 1560 Fillmore Street and the phone number is 415-441-9294.
+user: Could you book a table for me? So for one person on the 12th of this month for 1 o'clock in the afternoon at Izakaya Kou.
+assistant: Please confirm the following for me: You want a table for 1 at Izakaya Kou in San Francisco at 1 pm on March 12th.
+user: Yes, that's it. Could you tell me if they have a vegetarian selection?
+tool(ReserveRestaurant): ok n_results=1
+assistant: No, they do not offer vegetarian selections. Your reservation has been confirmed.
+user: Great. Thanks. Now I need a cab to go to the restaurant.
+assistant: Would you like regular, pool, luxury, or another type of ride?
+user: I would like a shared ride if possible.
+assistant: Please confirm the following information: A pool ride for 1 to 1560 Fillmore Street.
+user: Yes, that's it.
+tool(GetRide): ok n_results=1
+assistant: The cab has been contacted and it is on its way.
+user: How much will that cost and how long will it take to get here?
+assistant: The fare is $16.64 and it should be arriving in 5 to 10 minutes.
+user: Great. Thanks for everything.
+assistant: Do you need assistance with anything else?
+user: No. That's all I need. Thanks.
+assistant: Enjoy the rest of your day.

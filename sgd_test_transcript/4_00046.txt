@@ -1,0 +1,21 @@
+user: I'm hungry, where should I go?
+assistant: Hmm, which location should I check? What type food are you in the mood for?
+user: How about some pasta in San Mateo?
+tool(FindRestaurants): ok n_results=6
+assistant: Why not try Capellini Restaurant in San Mateo?
+user: Nah, what about some Barbecue?
+tool(FindRestaurants): ok n_results=4
+assistant: What about Central Park Bistro? It's in San Mateo?
+user: Do they have vegetarian options? How much will this cost me?
+assistant: They have moderate pricing but no Barbequed Vegetables.
+user: I guess I can eat meat once. Get me a table.
+assistant: When would you like to go?
+user: Make it for 7:15 pm.
+assistant: Ok, I have: 2 for dinner at Central Park Bistro in San Mateo. It is for 7:15 pm on March 1st.
+user: Ok, You twisted my arm. Do they have outdoor cafe style seating? What's their user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You have a table and you can sit outdoors. Their rating is 4.3
+user: Cool, thanks.
+assistant: Can I help with another thing?
+user: Not just yet.
+assistant: Have a pleasant meal.

@@ -1,0 +1,41 @@
+user: Could you help me make a payment please?
+assistant: Of course. What is the payment amount?
+user: It will be for thirty two bucks.
+assistant: Where shall I transfer that from?
+user: Take it out of my MasterCard please.
+assistant: And the name of the recipient?
+user: Her name is Victoria.
+assistant: Confirming a credit card transaction with Victoria in the amount of $32. Please be aware this transaction can be seen by the public.
+user: Yes, that's fine.
+tool(MakePayment): ok n_results=1
+assistant: The payment has processed successfully. The funds will arrive momentarily.
+user: I appreciate it. Now I need some help getting a train please and I'd like tickets that are fully refundable.
+assistant: What city will you be leaving from and what is the date you will be going?
+user: I'll be going on the 1st from Anaheim and I need 3 tickets please.
+assistant: And your destination?
+user: Yes, that is SFO.
+tool(FindTrains): ok n_results=6
+assistant: I have a train with a 7:20 AM departure and the ticket price is $268 total.
+user: What is its destination station?
+assistant: That train goes to the Salesforce Transit Center.
+user: Could you look for something else? And it'll just be two seats.
+tool(FindTrains): ok n_results=7
+assistant: There is a train leaving at 6:40 AM and the tickets are $196 total.
+user: Where does that one go?
+assistant: That also has the Salesforce Transit Center as its destination.
+user: OK, that will work. Could you tell me the weather forecast next Monday?
+assistant: For San Francisco?
+user: Yes, that's correct.
+tool(GetWeather): ok n_results=1
+assistant: The temperature that day will be an average of 71 degrees Fahrenheit with a rain chance of 16 percent.
+user: Great. Now I'd like to purchase some train tickets for that one you mentioned.
+assistant: Shall I add travel insurance for you?
+user: Yes, I think I should.
+assistant: Confirming 2 flexible tickets for the 6:40 AM train on March 1st from Anaheim to San Francisco. This includes travel insurance.
+user: Perfect. Where does it depart from?
+tool(GetTrainTickets): ok n_results=1
+assistant: That train departs from Anaheim Intermodal Center and your ticket purchase is complete.
+user: You've been a big help, thank you.
+assistant: Certainly, may I do anything else for you?
+user: Nope, you've done it all.
+assistant: Thank you very much.

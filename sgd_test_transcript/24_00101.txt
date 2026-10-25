@@ -1,0 +1,31 @@
+user: Hello, I need to make a payment to Svetlana. The total payment will be for 31 bucks.
+assistant: Okay, just let me know which account you'd like to transfer from.
+user: Send the money from my bank account.
+assistant: Okay, please confirm the following for me. Making a public transaction with Svetlana for a total payment of $31 using your debit card. Correct?
+user: Yes, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Okay, your payment has been made successfully. The recipient should receive their money soon.
+user: Thanks! Can you also help me search for a restaurant?
+assistant: No problem, just let me know which city you would like to search in and the type of food you would prefer.
+user: I need to find a place that serves Breakfast in Rohnert Park.
+tool(FindRestaurants): ok n_results=1
+assistant: Okay, how about the Mcdonald's in Rohnert Park?
+user: No, I'm looking for something better than that. Also, can you make the search in Oakland instead?
+tool(FindRestaurants): ok n_results=3
+assistant: Sure thing. There is a nice restaurant called Lungomare in Oakland that serves breakfast.
+user: What's their number? Do they have outdoor seating?
+assistant: Yes they do have outdoor seating! They can be reached at 510-990-7007.
+user: Okay thanks. Do you have any other recommendations? Any places have good vegetarian options?
+tool(FindRestaurants): ok n_results=1
+assistant: The Terrace Room Restaurant in Oakland is really nice, I hear they have a great assortment of vegetarian options.
+user: Okay, that sounds good. I'd like to go ahead and reserve a table for 2. Can you make the reservation for the 14th of this month at seven in the evening?
+assistant: Sure thing, just confirm the following for me. Booking a table for 2 at The Terrace Room Restaurant in Oakland for March 14th at 7 pm. Is this information correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Okay, your reservation was a success. Anything else?
+user: Yeah, can I get their phone number? And I forgot to ask, but do they have outdoor seating by any chance?
+assistant: No, I'm sorry they do not have outdoor seating. You can reach them at the following number: 510-903-3771.
+user: Okay, thanks a lot.
+assistant: Anything else I can help you with today?
+user: No, that's all. Thanks.
+assistant: My pleasure. Have a good day.

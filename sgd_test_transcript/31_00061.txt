@@ -1,0 +1,28 @@
+user: Since long back i didn't do my hair cut. will you find me a salon in Fremont?
+tool(FindProvider): ok n_results=10
+assistant: what about 3Sixty salon and Boutique which is a nice salon in Fremont?
+user: ok that sounds good. WIll you book an appointment at a salon on the 12th?
+assistant: at what time would you like for an appointment?
+user: i need the appointment at 10:30 am
+assistant: Please check and review the following details. The name of the hair stylist is 3Sixty Salon and Boutique, the appointment should be at 10:30 am and the appointment is on March 12th.
+user: ok that's sound good. What is its contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Appointment is confirmed successfully. its phone number is 510-574-0881.
+user: thanks a lot for your immense help. Will you find a restaurant there for a meal on that day?
+assistant: what type of food you wish to search in for?
+user: i like something as Fast food.
+tool(FindRestaurants): ok n_results=1
+assistant: There is a Mcdonald's restuarant . it is located in Fremont.
+user: ok that's good.Will you book a table at a restaurant?
+assistant: at what time should i reserve a table for?
+user: Please reserve the table for morning 11:30
+assistant: please check and confirm the following details. Book a table at Mcdonald's in the city Fremont. The reservation is at 11:30 am. the reservation is for 2 people and the date is March 12th.
+user: no, make the reservation at 19:00
+assistant: please check and review the following details. The city is fremont. the reservation is at 7 pm.
+user: ok that suits for me
+tool(ReserveRestaurant): ok n_results=1
+assistant: Table reservation is successful.
+user: Whether they have outdoor seating?
+assistant: they do not have outdoor seating.
+user: thanks a lot . that's all i need.
+assistant: have a wonderful day. bye

@@ -1,0 +1,31 @@
+user: I'm going to be in Philadelphia on the 4th and need help finding interesting things to do.
+assistant: What kind of events interest you?
+user: Concert events would be perfect.
+tool(FindEvents): ok n_results=10
+assistant: The very popular Babymetal will be performing at The Fillmore Philadelphia on March 4th from 5 pm.
+user: What's the price for a ticket?
+assistant: The ticket price is $50.
+user: Sounds like a plan! Can you search for two tickets on buses going there?
+assistant: Sure. I can help you with that. Are you leaving on March 4th? Which city are you leaving from?
+user: I'll be leaving on the 3rd of this month from New York. Wait, there's been a change of plans, so just find a seat for one person.
+tool(FindBus): ok n_results=7
+assistant: Your search yielded 7 available buses. Will the $23 bus leaving at 7:40 am work for you?
+user: Yes, that works for me. Now search for a round-trip flight there. The return date is 9th of this month.
+assistant: When would you like to leave? You can say March 3rd, or March 4th, or another day.
+user: I'd like to leave on 2nd of March, on an Economy class ticket.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: American Airlines has a direct outbound flight leaving at 11:20 am. The inbound flight leaves at 1:20 pm. The price of the ticket is $89. Will this flight work for you?
+user: That works for me. I need somewhere to stay while there. Please search for hotels around there also.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels meeting your requirements. How about the 4 star Aka Rittenhouse Square hotel?
+user: It sounds interesting.
+assistant: Should I go ahead and make hotel reservations?
+user: No. At the moment, I'm not interested in reserving.
+assistant: Would you like my help with something else?
+user: Yes. Please buy tickets to the performance you found earlier.
+assistant: Sure, no problem. Let me see if I got everything correctly: You'd like to reserve 1 ticket to the March 4th Babymetal performance in Philadelphia.
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy yourself over there.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Goodbye, and have a wonderful day!

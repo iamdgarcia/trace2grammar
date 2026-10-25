@@ -1,0 +1,25 @@
+user: Help me find some entertaining music.
+tool(LookupMusic): ok n_results=10
+assistant: Here are 10 songs that may peak your interest. A popular song right now is Paradise by Bazzi. It's from their album Soul Searching.
+user: Oh that's perfect. I'd love to hear it. How about movies? Particularly ones featuring Gene Rader.
+assistant: Can you tell me what type of movie you'd like to see?
+user: How about something that's Imaginative fiction? That should do fine.
+tool(FindMovies): ok n_results=1
+assistant: I have found a movie that fits that description called Close Encounters of the Third Kind.
+user: Is there anything else besides that movie?
+tool(FindMovies): ok n_results=0
+assistant: I apologize but I cannot find any other movies that match your criteria.
+user: Let's change my criteria then. Try finding a Mystery movie starting Matt Smith.
+tool(FindMovies): ok n_results=1
+assistant: Official Secrets would be suitable for you.
+user: Yes! Official Secrets sounds like a great time.
+assistant: I can play the movie for you if you want.
+user: No, not right now. Maybe later.
+assistant: Okay then. Please allow me to assist you with anything else you might need.
+user: Go ahead and play the song Paradise that you found a moment ago.
+assistant: You want me to play the song Paradise in the Living Room correct?
+user: Yes please do.
+tool(PlayMedia): ok n_results=1
+assistant: Now playing Paradise. Please enjoy your song.
+user: Awesome. Thank you for helping me find this song. I love it. That's all I need for now.
+assistant: Enjoy the rest of your day.

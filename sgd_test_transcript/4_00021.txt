@@ -1,0 +1,25 @@
+user: Can you help me find a place to eat?
+assistant: Yes, which location are you interested in?
+user: I'm interested in Napa.
+assistant: Do you have a preference in food?
+user: Yes, I'm interested in Japanese.
+tool(FindRestaurants): ok n_results=4
+assistant: There is a nice restaurant in Napa called Kenzo.
+user: Are there any others you can recommend?
+assistant: There is another one in Napa called Miminashi that is very nice.
+user: Can you give me their phone number please?
+assistant: Yes, there phone number is 707-254-9464.
+user: Can you give me their user rating and tell me if they have any outdoor seating?
+assistant: Their user rating is around 4.5 but they do not have any outdoor seating.
+user: Are there any other restaurants you can recommend that have vegetarian options?
+tool(FindRestaurants): ok n_results=2
+assistant: Yes, there is one in Napa called Morimoto Napa that is very nice.
+user: That sounds good! I am looking to book a table on the 3rd.
+assistant: What time would you like the reservation for?
+user: I am thinking evening 4:45.
+assistant: Please confirm that you would like to book at table on March 3rd at 4:45 pm for 2 people at Morimoto Napa in Napa.
+user: Yes, that is correct!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Ok, I have booked your reservation.
+user: Thank you, that is all I need for now.
+assistant: Have a beautiful day!

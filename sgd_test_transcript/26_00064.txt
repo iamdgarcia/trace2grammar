@@ -1,0 +1,36 @@
+user: I need a round-trip flight.
+assistant: When and where are you going?
+user: I am going to NYC until March 12th.
+assistant: When are you flying out?
+user: I want to leave on the 6th of this month.
+assistant: What city are you flying out of?
+user: I am flying out of Cape Town.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight on American Airlines with one layover. The departure flight leaves at 2:05 pm and the return flight leaves at 6:20 am. The ticket is $297.
+user: When does the return flight arrive?
+assistant: The return flight arrives at 7:57 pm.
+user: That is good.
+assistant: May I further assist you?
+user: I need a place to stay with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a 4.4 rated house at 100 Greenwich Street.
+user: What is the phone number?
+assistant: The phone is +1 917-409-0800.
+user: That is good.
+assistant: Do you want to reserve it?
+user: Yes, I want to reserve the house for 1 person on the 6th of this month.
+assistant: Is the checkout still March 12th?
+user: I am checking out on 11th of March.
+assistant: Please confirm you are checking in for 1 person on March 6th and checking out on March 11th in New York.
+user: That is correct. How much does it cost?
+tool(BookHouse): ok n_results=1
+assistant: The reservation is confirmed and costs $1,080.
+user: Is there any child-friendly theme park there?
+tool(FindAttractions): ok n_results=6
+assistant: Central Park Carousel is a theme park.
+user: Is it free admission? Do they have a phone number?
+assistant: They do have free admission and can be contacted at 212-439-6900.
+user: Thank you.
+assistant: May I further assist you?
+user: No, that will be all.
+assistant: Have fun!

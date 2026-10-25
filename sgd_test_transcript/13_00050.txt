@@ -1,0 +1,20 @@
+user: I want to see a musical performance in London on the 12th.
+tool(FindEvents): ok n_results=9
+assistant: I found 9 options including Hansard! It is occurring at Lyttleton Theatre on March 12th at 7:30 pm.
+user: I would rather see something on Broadway.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 Broadway shows like A Right Royale Tea at Amba Hotel Charing Cross on March 12th at 6 pm.
+user: Where is this happening?
+assistant: The Strand.
+user: Cool! Can you find some hotels too?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels like 45 Park Lane, a 5 star hotel.
+user: Sounds perfect!
+assistant: Are you ready to make a reservation?
+user: Not now, but I want to buy two tickets to the event at the Strand.
+assistant: Please confirm, 2 tickets for A Right Royale Tea on March 12th in London.
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation was a success! Have a nice time!
+user: Thanks! That is all for now.
+assistant: Have a nice time in London.

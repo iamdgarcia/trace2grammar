@@ -1,0 +1,24 @@
+user: I need train tickets to Sacramento for the 13th of March. And I want them to be luxurious tickets.
+assistant: Where will you be departing from?
+user: I'll be departing from SD.
+tool(FindTrains): ok n_results=9
+assistant: There's a train at 6:10 am for a total cost of $194.
+user: What are the departure and arrival stations?
+assistant: Departure is from Santa Fe Depot. Arrival is at Sacramento Valley Station.
+user: Alright, that's good.
+assistant: Would you like me to purchase the tickets?
+user: No, I don't need to do that just yet. I do want to find interesting things to do there.
+assistant: What kind of things are you interested in?
+user: I'm a big fan of Musical shows.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events that you might enjoy. People seem to like Aftershock Festival. It's at Discovery Park on March 5th at 5:30 pm.
+user: That seems cool. How about attractions over there.
+tool(FindAttractions): ok n_results=8
+assistant: There are 8 attractions you might enjoy. There's a Museum called the California State Capitol Museum that might interest you.
+user: Sounds nice. Now I also need a house to stay in. It'll be for 2 people and I want it rated 4.4 or higher.
+tool(SearchHouse): ok n_results=1
+assistant: There's 1 house that matches. It's a nice 4.4 rated house on 500 J Street.
+user: That seems very good.
+assistant: Do you want me to book the house?
+user: No, I won't do that now. That's all the help I need.
+assistant: I'ts been my pleasure to serve you. Take care.

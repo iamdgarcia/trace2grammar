@@ -1,0 +1,15 @@
+user: Can you help me search for a bus? I would like to go to LA, departing from Fresno on the 10th.
+tool(FindBus): ok n_results=8
+assistant: How about a bus departing at 7:50 am that costs $35?
+user: What station does it arrive at?
+assistant: It arrives at North Hollywood Station.
+user: Sounds good. I would like to but tickets for 4 people.
+assistant: Please confirm the following details: Purchasing tickets for 4 people on the bus leaving from Fresno to Los Angeles on March 10th, departing at 7:50 am, and there is no additional luggage being brought on.
+user: Yes, that is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Could you please search hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: There is a hotel called the AC Hotel By Marriott Beverly Hills, that is a 3 star hotel?
+user: That sounds good. That is all for now, thank you.
+assistant: Good bye, and have a nice day!

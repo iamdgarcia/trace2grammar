@@ -1,0 +1,32 @@
+user: Search for me some songs by Ariana Grande because I really like.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 options for you.What is your opinion about album Yours Truly by Ariana Grande with song Baby I.
+user: Something else you have?
+assistant: What is your opinion about album Dangerous Woman by Ariana Grande with song Be Alright?
+user: This song come out in seven years ago?
+assistant: It is from 2016.
+user: What type of music is ?
+assistant: Is a Pop song.
+user: I like this one.
+assistant: You want to play this song?
+user: No, not now maybe later.You can find me some good movies online?
+assistant: What type of movies you prefer?
+user: Will be great some Fantasy movies.
+tool(FindMovies): ok n_results=2
+assistant: I have 2 options that you may like.What you think about Labyrinth or The Lord of the Rings: The Return of the King?
+user: Something else you have?I really enjoy Suspense movies.
+tool(FindMovies): ok n_results=4
+assistant: 4 movies I have for you.How about Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: Rojo sounds great.
+assistant: You want to play the movie?
+user: No,not now.
+assistant: With something else I can help you?
+user: Play the song that you just found.
+assistant: Play the song Be Alright in Living room.Is okay?
+user: Yes that's good for me.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thank you very much.
+assistant: Can I still be useful?
+user: No.Thank you a lot.
+assistant: Have a nice day!

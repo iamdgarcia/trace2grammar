@@ -1,0 +1,21 @@
+user: Can you please help me make a payment?
+assistant: Of course, for what amount? What's the name of the contact and what account should I transfer the money from?
+user: I'd like to make a transaction to Svetlana for fifty eight dollars sent from my visa.
+assistant: So you'd like to transfer $58 to Svetlana from your credit card. It is a public transaction. Does this sound ok?
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made, the recipient should get the money soon.
+user: Thanks so much. Please find me some persian restaurants in Oakland.
+tool(FindRestaurants): ok n_results=4
+assistant: I managed to find 4 restaurants that you may like. I suggest Dyafa in Oakland.
+user: That works for me.
+assistant: Should I book you a table reservation here?
+user: Yes, I'd like to make a reservation.
+assistant: What time should I make the reservation for?
+user: Please book the table for 11 o'clock in the morning.
+assistant: So you'd like a table for 2 people at Dyafa on March 1st at 11 am in Oakland. Is this correct?
+user: That sounds good. What's their contact number and address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been booked. You can call them at 510-250-9491 and their address is 44 Webster Street.
+user: Thank you for all your help, that's all I needed.
+assistant: Have a wonderful day!

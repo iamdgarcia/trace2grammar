@@ -1,0 +1,25 @@
+user: Shall I get a rental car from 3rd of this month.
+assistant: When and where do you want it?
+user: I need it at afternoon 3. I prefer Hatchback and in Anaheim.
+assistant: How long will you need it?
+user: Until next Monday
+tool(GetCarsAvailable): ok n_results=5
+assistant: 5 such cars are ready. One is Hatchback Kia Ceed available at John Wayne Airport.
+user: Thats enough.
+assistant: How can I help you more?
+user: I need a stay for two people with laundry service and 4.1 rating.
+tool(SearchHouse): ok n_results=10
+assistant: One stay with 4.1 rating is there at 1050 West Ball Road.
+user: That will be the right one.
+assistant: Shall I fix a reservation?
+user: No, not now.
+assistant: What service then can I offer you?
+user: Please reserve the car found for me.
+assistant: I think insurance can be added.
+user: No, not needed.
+assistant: Please verify: you need a Hatchback car without insurance from March 3rd to March 4th. You will pick it up from John Wayne Airport at 3 pm
+user: Correct , carry on.
+tool(ReserveCar): ok n_results=1
+assistant: It is reserved for you.
+user: Thanks for your dedication.
+assistant: My pleasure, enjoy the day.

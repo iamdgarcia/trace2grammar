@@ -1,0 +1,21 @@
+user: I would lake to make a transaction with Diego.
+assistant: Should the transfer be from your debit card or credit card and in what amount?
+user: Please send from app cash for 34 bucks.
+assistant: Please confirm you want to send $34 to Diego from your app balance in a visible public transaction.
+user: Yes. That's right.
+tool(MakePayment): ok n_results=1
+assistant: Your transaction was a success. Your recipient should receive their funds shortly.
+user: I need to request a payment in the amount of eighty six dollars from Emma.
+assistant: Please confirm you are making a visible public transaction with Emma for $86.
+user: Yes. That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your transaction was a success.
+user: Thanks. I need to make another payment for 65 bucks.
+assistant: Who will the transfer be sent to and will it come from your app balance or your credit card?
+user: The transaction will be to Amelia from my credit card.
+assistant: Please confirm you want to make a transaction from your credit card to Amelia in the amount of $65.
+user: Yes. That's right.
+tool(MakePayment): ok n_results=1
+assistant: Your transaction was a success. Your recipient should receive their funds shortly.
+user: Thanks so much. That's all for today.
+assistant: You're welcome. Goodbye.

@@ -1,0 +1,17 @@
+user: Hi, could you find me a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: How about Once Upon a Time in Hollywood with a 85 rating?
+user: Sounds great! Could you search for me some nice songs to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs you may like, how about What Now by Rihanna from her album Unapologetic?
+user: Sounds great! Could you play it for me then?
+assistant: Please confirm your request to play What Now in the Living room.
+user: Sorry, could you play it in the kitchen instead?
+assistant: Please confirm your request to play What Now in the Kitchen instead.
+user: Yes, that will do.
+tool(PlayMedia): ok n_results=1
+assistant: Your music has been played. Enjoy!
+user: Thank you so much!
+assistant: Do you need any other help?
+user: No, that is all.
+assistant: Have a great day ahead!

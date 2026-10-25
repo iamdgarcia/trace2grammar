@@ -1,0 +1,27 @@
+user: I want to spend my free time with some interesting things and I need your help to find the good one for me.
+assistant: In which city you want me to search for the events and what is your favorite type of event to search for?
+user: I want to search for some nice songs in LA.
+tool(FindEvents): ok n_results=10
+assistant: What about your opinion on Ain Gordon which is going to take place at Ralph Freud Playhouse on March 9th at 7 pm? I thin this is the suitable one to you among the 10 results that I have searched.
+user: Let me decide before that I want to know the ticket cost and venue address.
+assistant: The venue is situated at 245 Charles E Young Drive East and the cost per ticket will be $60. Is it okay to you?
+user: Yes, I like this event and also I want to find a hotel there for 1 room. Can you search for the one with three -stars.
+tool(SearchHotel): ok n_results=10
+assistant: What do you think about a Hotel named Ac Hotel By Marriott Beverly Hills with 3 stars?
+user: I want more details. Let me know the cost per night and address this hotel.
+assistant: Please note down that the address is 6399 Wilshire Boulevard and the cost per night will be around $75.
+user: That's nice and thanks.
+assistant: Shall I book rooms in this hotel now?
+user: No, not now and may be later.
+assistant: How can I help you further?
+user: Now, I need your help to book the tickets to the event that I have selected before.
+assistant: Okay, let me know the number of tickets required by you.
+user: its for 2 persons.
+assistant: then give me your confirmation to book 2 tickets to the event Ain Gordon on March 9th in Los Angeles.
+user: That is confirmed to proceed.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets to that event.
+user: Thank you so much.
+assistant: Anything else you want?
+user: Nothing for now and that's all.
+assistant: Have a nice day.

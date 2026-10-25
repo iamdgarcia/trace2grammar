@@ -1,0 +1,29 @@
+user: I need to make a payment to Rachel using my debit card
+assistant: For what amount is that?
+user: I owe her eighty nine bucks
+assistant: Confirming you want to make a public transaction to Rachel from your debit card in the amount of $89
+user: Yes that's right
+tool(MakePayment): ok n_results=1
+assistant: It is successful, and they will get their money soon
+user: Thanks, now I need to request a payment
+assistant: For how much?
+user: I need to request a private transaction of 130 bucks
+assistant: Sure, from who?
+user: I need it from Tom
+assistant: Confirming your private transaction from Tom for $130
+user: Yes please do that
+tool(RequestPayment): ok n_results=1
+assistant: It has been requested successfully
+user: OK thanks for that
+assistant: What else can I do?
+user: I need to make another payment, this time to Yumi from my amex
+assistant: For how much?
+user: I need to send 169 dollars
+assistant: Confirming you want to make a public transaction of $169 to Yumi from your credit card
+user: Yes please do that
+tool(MakePayment): ok n_results=1
+assistant: It has been transferred successfully and will reflect on their account soon
+user: Cool thanks for doing that
+assistant: What else can I assist with?
+user: For now that's all
+assistant: OK, thanks and have a good day

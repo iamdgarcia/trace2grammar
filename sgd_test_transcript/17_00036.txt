@@ -1,0 +1,16 @@
+user: Could you look a locomotive for me? I require 1 spot.
+assistant: What metropolis do you intend to leave from?
+user: I'm searching for tickets departing New York city.
+assistant: What day would you like to depart, and to what metropolis will you head to?
+user: Get me tickets for later today that are headed to Philly.
+tool(FindTrains): ok n_results=8
+assistant: What do you think about the locomotive leaving at 7:40 am, which costs $54?
+user: That's fine with me.
+assistant: Would you like me to reserve tickets?
+user: Nope, I do not intend to reserve tickets for now.
+assistant: Could I assist with something else?
+user: I'd like to look for a residence to live there.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely residence situated at 1 Logan Square with a 4.5 rating.
+user: That residence is lovely; that is all.
+assistant: I am happy to be of assistance; Farewell.

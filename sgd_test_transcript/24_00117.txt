@@ -1,0 +1,27 @@
+user: Could you make a payment for me?
+assistant: For how much and will you be paying with debit card or with an app balance?
+user: Send the payment from my balance please, in the amount of $168.
+assistant: What name do I send it too?
+user: That would be Mary.
+assistant: You want to make a payment of $168 using your app balance and Mary should receive it is that correct? Your transaction will be public.
+user: That is the correct information.
+tool(MakePayment): ok n_results=1
+assistant: The money was sent, Mary should be receiving it momentarily.
+user: Would you find a restaurant for me please.
+assistant: Where should I look?
+user: Look in Oakland if you would please.
+assistant: What cuisine did you have in mind?
+user: I would like you to find a Mexican restaurant.
+tool(FindRestaurants): ok n_results=8
+assistant: I pulled up 8 so far in Oakland, what do you think of Agave Uptown?
+user: What others did you find?
+assistant: Bar Cesar is supposed to be nice and in Oakland.
+user: I like that one, would you make reservations for me please?
+assistant: Would you like to specify a time?
+user: Certainly a table for one at 18:00 please.
+assistant: That is a table for 1 on March 1st at 6 pm in Oakland at the Bar Cesar is that right?
+user: It sure is.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I could not get that reservation for you what else do you have for me?
+user: Nothing else, thank you.
+assistant: Have a nice day.

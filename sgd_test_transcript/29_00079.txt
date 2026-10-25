@@ -1,0 +1,27 @@
+user: I need to find something interesting to do in Seattle, WA on the 7th. Perhaps a stage show.
+tool(FindEvents): ok n_results=10
+assistant: The Beatleconcert at 12th Avenue Arts on March 7th at 6:30 pm is popular.
+user: Can you find me something on the 6th of this month?
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events. One is Blood Water Paint at 12th Avenue Arts and is happening on March 6th at 5:30 pm.
+user: Sounds good! I need a laundry service rated 4.2 or greater.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available. One is 1000 1st Avenue and the rating is 4.2.
+user: Sounds great thank you.
+assistant: Would you like to reserve this house?
+user: Not at this time. I need to find 4 seats on a direct bus going there.
+assistant: Do you want to depart on March 5th? Where are you leaving from?
+user: I am leaving from Vancouver, BC on March 5th.
+tool(FindBus): ok n_results=10
+assistant: I found one departing at 7:40 am that costs $29.
+user: To which station will it arrive?
+assistant: It will arrive at Westlake Station.
+user: Great, please buy the tickets for the event you found for me.
+assistant: You want to reserve tickets for 4 on March 6th to see Blood Water Paint in Seattle.
+user: Yes that is perfect, where is it located?
+tool(BuyEventTickets): ok n_results=1
+assistant: At 1620 12th Avenue. Your tickets are reserved.
+user: How much is each ticket?
+assistant: A ticket is $20.
+user: Thank you, that's all I needed.
+assistant: Have a great day!

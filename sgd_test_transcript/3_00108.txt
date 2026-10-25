@@ -1,0 +1,20 @@
+user: I need a rental car in Anaheim.
+assistant: What time and day do you need to pick up the car?
+user: I need it on the 13th of this month at eight in the night.
+assistant: When are you dropping off the car?
+user: I need it until the 14th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I found 8 cars at Anaheim Intermodal Center. I found a sedan like Audi A8.
+user: What is the cost per day?
+assistant: It is $33.00 a day.
+user: Perfect, please reserve me a car.
+assistant: Do you want the insurance?
+user: No, I have my own.
+assistant: Please confirm, picking up a sedan and March 13th at Anaheim Intermodal Center at 8 pm. The pick up day is March 14th.
+user: Yes, that will be great.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved.
+user: Thanks for your help!
+assistant: Anything else today?
+user: No, that is all.
+assistant: Have a nice day.

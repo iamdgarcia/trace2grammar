@@ -1,0 +1,13 @@
+user: Can you find me something in the Broadway genre in Los Angeles on the 11th of March?
+tool(FindEvents): ok n_results=10
+assistant: Anything Goes is playing on March 11th at 4 pm at the Upright Citizens Brigade Sunset.
+user: That works for me. I need to find a hotel for that also.
+tool(SearchHotel): ok n_results=10
+assistant: Search revealed 10 results. Ac Hotel By Marriott Beverly Hills has a 3 star rating.
+user: That is perfect. Get me 3 tickets to the show.
+assistant: You want 3 tickets to see Anything Goes in Los Angeles on March 11th, correct?
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are booked. Have fun!
+user: Thanks a bunch. That is all.
+assistant: Have a good day.

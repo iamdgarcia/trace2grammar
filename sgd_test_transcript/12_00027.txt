@@ -1,0 +1,30 @@
+user: Hey, can you help me get some bus tickets?
+assistant: How many will be going and at what time do you plan to leave?
+user: Three people, and we plan to leave at 6:15 am.
+assistant: Where are you leaving from and when?
+user: Well be leaving from Fresno this Sunday.
+assistant: And where are you going?
+user: To Sacramento city.
+assistant: So 3 tickets on a bus leaving From Fresno to Sacramento on March 3rd at 6:15 am?
+user: All correct. Is it a direct bus? In which station does it arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: It's a direct bus that arrives at 65th Light Rail Station. Sorry, I couldn't book the ticket you wanted, but there's another bus leaving at 6:20 am and costing $32 if it works for you.
+user: Yes, works for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is now confirmed.
+user: Can you help me find a car I can rent there?
+assistant: In Sacramento? At what time do you want it? Will you pick it up on March 3rd?
+user: I want to pick it up at 19:30 and on the 9th of March.
+assistant: And until when will you need it?
+user: Until the 12th I believe.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There's a nice SUV Alfa Romeo Stelvio available at Sacramento Valley Station.
+user: Sounds good. Please make a reservation.
+assistant: Will you want the insurance to go with it?
+user: No, no need.
+assistant: So you'll pick up a SUV from Sacramento Valley Station on March 9th at 7:30 pm and you'll return it on March 12th. Is that all correct?
+user: Yes, it's all right.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation was successful.
+user: Thanks a lot, that's all I need.
+assistant: Have an amazing day.

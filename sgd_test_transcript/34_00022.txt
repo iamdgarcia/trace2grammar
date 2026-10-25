@@ -1,0 +1,30 @@
+user: I am interested in finding a hotel.
+assistant: Can you tell me the city where I should look for the hotel?
+user: The hotel I am interested in should be in Paris.
+tool(SearchHotel): ok n_results=10
+assistant: There is a nice 4 star hotel which you might like called Ac Hotel By Marriott Paris Porte Maillot.
+user: That seems nice. Can you also tell me about some attractions that can be found there, more specifically I am interested in a Place of Worship.
+tool(FindAttractions): ok n_results=10
+assistant: You might consider visiting American Church in Paris, which is a Place of Worship.
+user: Can you tell me if this place is suitable for children?
+assistant: I can confirm that the place does welcome children.
+user: Alright, though can you recommend some other attraction without an entry fee, and which is a Museum?
+tool(FindAttractions): ok n_results=10
+assistant: You might like visiting Choco-Story Paris - Musee du Chocolat which is a Museum.
+user: Is there some other attractions which you can suggest?
+assistant: You can also consider going to Cite de l'architecture et du patrimoine, which is a Museum.
+user: Is this place considered to be child-friendly?
+assistant: This attraction is quite appropriate for kids.
+user: Alright, that is good.
+assistant: Is there something else I can help you with?
+user: Now I would like to make a booking at the hotel you found earlier.
+assistant: Can you tell me when are you planning to go there?
+user: I will be going at the hotel on 6th of March.
+assistant: How long is your staying there going to to be?
+user: I need to be at the hotel for four days.
+assistant: Can you please confirm that you want to book 1 room for 4 days at the Ac Hotel By Marriott Paris Porte Maillot in Paris, and that you will go there on March 6th?
+user: Yes, that is what I want.
+tool(ReserveHotel): ok n_results=1
+assistant: Your requested reservation for the hotel has been made.
+user: I appreciate it, you have helped me a lot. That's all I need at the moment.
+assistant: Goodbye, and enjoy your day!

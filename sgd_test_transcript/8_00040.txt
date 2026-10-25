@@ -1,0 +1,25 @@
+user: I want to make a payment to Margaret from my master card
+assistant: How much are you paying?
+user: I need to pay her $83
+assistant: Confirming you are paying Margaret $83 via your credit card
+user: Yes that's correct
+tool(MakePayment): ok n_results=1
+assistant: Your payment is successful and they should get their money soon
+user: Now I'd like to request a payment
+assistant: For how much and from who?
+user: Yumi owes me thirty five dollars
+assistant: Confirming that you are asking for $35 from Yumi and it's a public transaction
+user: Yes that's right
+tool(RequestPayment): ok n_results=1
+assistant: Your request is successful
+user: Thanks for that, I would like to now make a private payment transfer
+assistant: To who are you transferring to?
+user: I want to pay Mary
+assistant: How much and from what account?
+user: Pay her $16 from my bank account
+assistant: Confirming this private $16 transfer from your debit card to Mary
+user: Yes please do that
+tool(MakePayment): ok n_results=1
+assistant: It has been done and the money will be available to them soon
+user: Thanks for that, that's it for now, see ya
+assistant: See ya later!

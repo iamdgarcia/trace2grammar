@@ -1,0 +1,18 @@
+user: Could you find me a house rated 4.1 or higher to stay in?
+assistant: Where?
+user: London, UK.
+tool(SearchHouse): ok n_results=10
+assistant: There's 10 options. How about 1 addington street? They have a 4.1
+user: Okay, could you book it for me on the 1st for 3?
+assistant: When are you checking out?
+user: I'd like to check out next thursday.
+assistant: Please confirm: you want to check in on march 1st, check out on march 7th, and it's for 3 people in London?
+user: Actually, do it for the 2nd of this month for four.
+assistant: Please confirm: Yo uwant to check in on march 2nd and it's for 4.
+user: Correct, what's the total price.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was successful! it's $1,600.
+user: Thank you. Does it have laundry service, and could I get a contact number?
+assistant: They have laundry service, and their number is +44 333 400 6116.
+user: Thank you, that's all I need
+assistant: No problem, goodbye.

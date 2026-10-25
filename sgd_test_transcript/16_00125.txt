@@ -1,0 +1,37 @@
+user: I would like to go to the salon. Please find me a salon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons in San Francisco, including 1512 Barber Shop.
+user: I would really rather go to a unisex salon. Try looking in Cupertino.
+tool(FindProvider): ok n_results=6
+assistant: Great Clips has a location in Cupertino.
+user: What is the customer rating?
+assistant: The average rating is 3.6.
+user: What is the phone number?
+assistant: The phone number is 408-255-2178.
+user: OK, good, thank you. Oh, by the way, I will need to share that location.
+assistant: Would you like to share the address 20686 Homestead Road? Who would you like to share it with?
+user: Yes, that's the one. I would like to share it with Emma.
+assistant: You are sharing the location 20686 Homestead Road with Emma, is this correct?
+user: Oh, no, um, I want to share it with Mary.
+assistant: You are sharing the location 20686 Homestead Road with Mary, is this correct?
+user: Yes, now that's it.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thank you for your help. Can you show me my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms currently. There is an alarm for 3 pm with the name Piano time.
+user: OK. What is the second alarm?
+assistant: There is an alarm at 6:30 am with the name Get up.
+user: OK, great, thanks.
+assistant: Would you like to add an alarm?
+user: Yes, I do want to add an alarm.
+assistant: What time would you like to set it for?
+user: Make it at 5 o'clock in the evening.
+assistant: You are creating an alarm at 5 pm with the name New alarm, is this correct?
+user: Yes, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm is set.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, I'm done for now, thanks!
+assistant: Have a great day!

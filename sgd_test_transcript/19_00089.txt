@@ -1,0 +1,35 @@
+user: I'd like to look for a rental vehicle. I'm okay with any sort of vehicle.
+assistant: How long do you desire the vehicle until? When would you like to pick up the vehicle?
+user: I require it until 11th of March. I'd like to pick it up at six pm.
+assistant: What time would you like to begin vehicle rental?
+user: I require it beginning on the 6th.
+assistant: What location do you wish to rent the vehicle from?
+user: I am searching for vehicles in London, England.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There is a lovely Sedan Audi A8 vehicle available at Heathrow International Airport.
+user: That's fine with me.
+assistant: Would you like to rent the vehicle?
+user: Yeah, but perhaps later. I'd like to book tickets to an even there.
+assistant: How many tickets do you desire? What event are you intrigued in?
+user: I heard Alice in Glitterland is a lovely on. I'd like one ticket.
+assistant: What specific metropolis ought I look in?
+user: I am searching for one near Vancouver, BC.
+assistant: Do you have a preferred time regarding the event?
+user: I'd like one on the 2nd.
+assistant: Please verify the following information: reserving 1 ticket for Alice in Glitterland on March 2nd in Vancouver.
+user: Yeah, that's fine with me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is completed. Have fun there!
+user: Could you book the rental vehicle you discovered for me?
+assistant: Would you like to include insurance?
+user: I do not require insurance.
+assistant: Please verify the following information: you are ypicking up a sedan from Heathrow International Airport on March 6th at 6 pm, with the drop off day being March 11th. This does not include insurance.
+user: Nope; I'd like to purchase insurance.
+assistant: Please verify the following information: the drop-off day is MArch 11th, and it includes insurance.
+user: Yeah, that's fine with me.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: Thank you for the assistance.
+assistant: Could I assist with something else?
+user: Nope; thank you for your assistance.
+assistant: Have a pleasant afternoon.

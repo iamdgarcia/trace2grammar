@@ -1,0 +1,13 @@
+user: Help me to find hotel in Petaluma to book a table at evening 7:30.
+assistant: Do you have any particular restaurant to choose?
+user: yeah, get me at Cattlemens.
+assistant: Then please confirm, you need a table for 2 people in Cattlemens in Petaluma at 7:30 pm on March 1st.
+user: Good, thats all.
+tool(ReserveRestaurant): ok n_results=1
+assistant: It is booked.
+user: Shall I get veg food there. What is their phone number?
+assistant: No, you won't get veg. Their address is 5012 Petaluma Boulevard North.
+user: Great service, thank you.
+assistant: Do you need any other help?
+user: No, thats all.
+assistant: Have a great day.

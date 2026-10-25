@@ -1,0 +1,41 @@
+user: Find me something interesting to do.
+assistant: In what city you prefer to be?
+user: Around Philadelphia will be okay.
+assistant: What type of event you want? Music or Theater or something else?
+user: I like Music and I want something on the 9th.
+tool(FindEvents): ok n_results=10
+assistant: Very popular is Babymetal and is taking place at The Fillmore Philadelphia on march 9th at 4 pm.
+user: Tell me where is located the venue.
+assistant: 29 East Allen Street is the address.
+user: Tell me the cost per ticket.
+assistant: $45 is the cost per one ticket.
+user: Good, but something else you can find me?
+assistant: Very popular is Brockhampton that take place at The Fillmore Philadelphia on March 9th at 7:30 pm.
+user: Sounds really good.
+assistant: You want to book tickets for this?
+user: No,not now maybe later.
+assistant: With something else I can help you?
+user: Find me a direct or other bus that goes there.I want to leave today and we are 3 people.
+assistant: From where you want to go?
+user: From New York I will leave.
+tool(FindBus): ok n_results=7
+assistant: What do you think about the bus that depart at 7:40 am and cost $26.
+user: Sounds okay for me.
+assistant: You want to buy tickets?
+user: No,not now.Find me a round trip to get there with Delta Airlines.I want Premium Economy class tickets.
+assistant: You will leave on March 1st?
+user: My travel will start on 3rd of March.I want Economy class tickets.
+assistant: In which day you want the return flight?
+user: I will return on 12th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have 1 flight for you.How about Delta Airlines?The onward flight takes off at 12:20 pm and return takes off at 3 pm.This is a direct flight and cost $90.
+user: Sounds okay.Find me 3 star hotels in that area because I need 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: A 3 star hotel called Aka University City.
+user: Sounds okay.Buy for me tickets at the event taht you have found.
+assistant: Book 3 tickets for Brockhampton in Philadelphia on March 9th.Is that correct?
+user: Yes is okay.Tell me the cost per tickets.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is confirmed.$25 is the cost per ticket.Have fun!
+user: Thank you.That's all that I wanted.
+assistant: Have a good day!

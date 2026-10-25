@@ -1,0 +1,27 @@
+user: I hope you can assist me to find a hotel in Toronto.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options for you, one is a 3 star called Best Western Plus Toronto North York Hotel & Suites.
+user: Can you give me their address and number?
+assistant: This address is 50 Norfinch Drive, North York, Ontario M3N 1X1, Canada and you can contact them on +1 416-663-9500.
+user: great thanks. Now I want you to find me a Park attaction there.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Park called Allan Gardens.
+user: Do you think this is a place where you could bring children?
+assistant: Yes it child-friendly and a lovely place to take them.
+user: that is fab.
+assistant: would you like help with anything else?
+user: I think I will book the hotel you mentioned.
+assistant: for how long?
+user: four days please.
+assistant: What will you check in date be?
+user: 2nd of this month.
+assistant: To confirm then you want 1 room at Best Western Plus Toronto North York Hotel & Suites in Toronto, from March 2nd for 4 nights.
+user: that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: the booking is now finalised.
+user: How much will it cost and will I be able to smoke there?
+assistant: It costs $117 each night but there is no smoking allowed.
+user: Thanks for all your help.
+assistant: Can I assist you with anything else?
+user: nothing else but thanks a million.
+assistant: goodbye and enjoy your day.

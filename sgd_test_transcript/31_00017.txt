@@ -1,0 +1,31 @@
+user: I would like to find a salon in Burlingame.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons in Burlingame that you might like. There is a lovely salon called Burlingame Barber shop.
+user: I do not want to go to a barber shop. Find me a salon in Sonoma.
+tool(FindProvider): ok n_results=3
+assistant: There are 3 available in Sonoma. You can try C C Beauty Salon.
+user: Yes, I will give it a try.
+assistant: Would you like to book an appointment there?
+user: Not right now. I want to see a movie in that area.
+tool(FindMovies): ok n_results=3
+assistant: Would you like to see Angel Has Fallen, Hustlers or Toy Story 4?
+user: I prefer to see Toy story four. I want to watch a regular show at Sonoma Cinema on March 2nd. What time does it start?
+tool(GetTimesForMovie): ok n_results=1
+assistant: Showtime is at 4:30 pm only in Sonoma Cinema.
+user: What type of movie is it?
+assistant: It is an animation.
+user: Where is the theater located?
+assistant: It is on 200 Siesta Way #4451.
+user: That would be great.
+assistant: You would like to get tickets?
+user: Not right now. I want to book the appointment at the salon for that day.
+assistant: For what time?
+user: For 3:45 pm.
+assistant: You would like an appointment at C C Beauty Salon on March 2nd for 3:45 pm?
+user: Yes, that would be great. What is the average rating of the establishment?
+tool(BookAppointment): ok n_results=1
+assistant: It is 4.4. I am sorry but I was not able to make the appointment for that time. How about an appointment at C C Beauty Salon on march 2nd at 4 pm?
+user: No, that would not work.
+assistant: Is there anything else I can assist you with?
+user: No, but thanks for asking.
+assistant: Enjoy your day.

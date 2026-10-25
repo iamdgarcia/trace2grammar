@@ -1,0 +1,19 @@
+user: I need to get bus tickets to Long Beach, CA for Thursday next week.
+assistant: What is your departure date and city and how many tickets do you need?
+user: It's for four people leaving from Fresno at 9 in the morning.
+assistant: Please confirm you want to buy 4 tickets from Fresno to Long Beach for March 7th at 9 am and don't have extra baggage.
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation was a success.
+user: I also need a hotel.
+tool(SearchHotel): ok n_results=10
+assistant: The Best Western of Long Beach is a 3 star hotel in the area.
+user: Is it a nonsmoking hotel and what is the daily rate?
+assistant: There is no smoking at the property and the daily rate is $78 nightly.
+user: I would like to reserve two rooms for one day on March 6th.
+assistant: Please confirm you want 2 rooms for 1 day at the Best Western of Long Beach on March 6th in Long Beach.
+user: That sounds right.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been successfully booked.
+user: Thanks for all your all. That's it.
+assistant: You're welcome. Goodbye.

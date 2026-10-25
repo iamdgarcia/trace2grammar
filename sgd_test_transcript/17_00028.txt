@@ -1,0 +1,30 @@
+user: Find me a unisex salon.
+assistant: What city shall I look in?
+user: Find a unisex salon in Petaluma.
+tool(FindProvider): ok n_results=7
+assistant: Dukes And Dolls Salon is in Petaluma and is 1 of 7 results that search found.
+user: That works for me.
+assistant: Shall I schedule a session for you now?
+user: No, not right now.
+assistant: Do you need something more?
+user: I need you to share the location 25 Kentucky Street with Sara.
+assistant: You want me to share the location 25 Kentucky Street with Sara, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared with Sara.
+user: Thanks a lot. Tell me what alarms I have set.
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm named Call set for 10:30 am.
+user: What other alarms are there?
+assistant: You have an alarm named Wake up set for 8:30 am.
+user: That is perfect.
+assistant: Shall I add another alarm for you?
+user: Yes, add an alarm for me.
+assistant: What time do you want the alarm set for?
+user: Set the alarm for 16:45.
+assistant: You want an alarm named New Alarm set for 4:45 pm, correct?
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been set.
+user: Thanks a lot. That is everything for now.
+assistant: Thank you for allowing me to help you.

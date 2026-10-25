@@ -1,0 +1,19 @@
+user: Find me songs.
+tool(LookupMusic): ok n_results=10
+assistant: Do you like Beautiful Now by Zedd from the True Colors album?
+user: What sort of music is it?
+assistant: It's a House song.
+user: That's the one. What's the weather like there?
+assistant: What city should I search in?
+user: Check Phoenix.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 89 degrees Fahrenheit with a 15 percent chance of rain.
+user: Okay, could you play the song you just found? Cast it on my kitchen.
+assistant: Could you confirm that you want to play the song Beautiful Now in Kitchen?
+user: That's good. What year did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: It's from 2015. Please enjoy.
+user: Thanks!
+assistant: Shall I assist with something else?
+user: No, thanks.
+assistant: Have a great day.

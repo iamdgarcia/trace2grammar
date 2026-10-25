@@ -1,0 +1,25 @@
+user: Find me a place to live.
+assistant: In which area you want to be and what is the number of the bed rooms and baths that you need?
+user: I want to be in Santa Rosa with three bed rooms and two baths.
+assistant: Would you like to buy or to rent?
+user: I want to buy the place.
+tool(FindHomeByArea): ok n_results=10
+assistant: I have for you 10 nice houses.A very good property located at 2001 Range Avenue called Coddingtown Mall Apartments.Cost is $3,600,000.
+user: What is their phone number?Does the house have a garage?
+assistant: 707-578-1150 is the phone number.No, the garage is not present.
+user: Sounds very good.
+assistant: You want to schedule a visit?
+user: Yes I would like that.
+assistant: When you want to be?
+user: On next Tuesday will be good for me.
+assistant: You schedule a visit to Coddingtown Mall Apartments on March 5th.Is okay?
+user: Yes very good.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled.
+user: Show me please my alarms.
+tool(GetAlarms): ok n_results=5
+assistant: I found one named Meeting at 4:30 pm.
+user: Any more alarms you can find?
+assistant: With name Get up at 8 am.
+user: Great.That is all that I needed.
+assistant: Thank you very much.

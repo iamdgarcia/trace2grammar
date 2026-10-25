@@ -1,0 +1,23 @@
+user: I'm looking for a bus leaving on Thursday next week and going to Seattle, WA.
+assistant: Where will you depart from?
+user: I will leave from Portland, OR.
+tool(FindBus): ok n_results=10
+assistant: What about the 7 am bus? It costs $28.
+user: Does the bus go direct?
+assistant: Yes, it is a direct bus.
+user: What station will it arrive at?
+assistant: It will arrive at Westlake Station.
+user: Sounds great.
+assistant: Could I assist with something else?
+user: I would like to purchase two bus tickets.
+assistant: So you would like to leave from Portland and go to Seattle on March 7th at 7 am for 2 people. You do not have extra luggage. Is this accurate?
+user: Sounds good. What station does it leave from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed. It leaves from SW Arthur & 1st.
+user: Would you find me hotels in that area as well? I would like a three star hotel and I need two rooms.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that should match. There's a hotel called Best Western Plus Pioneer Square Hotel Downtown, and it's a 3 star.
+user: Could you tell me the phone number and street address?
+assistant: The phone number is +1 206-340-1234 and the address is 77 Yesler Way.
+user: Sounds good. That's it for now.
+assistant: Bye and have a fantastic day.

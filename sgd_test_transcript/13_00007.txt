@@ -1,0 +1,17 @@
+user: I want you to find me something interesting which I can do. More specifically I am interested for something around Philadelphia.
+assistant: Is there a kind of event you particularly prefer?
+user: I usually enjoy Concert events.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events which match what you requested. One of the events which is a popular one is Anthony Green which will be happening at The Foundry on March 10th at 6 pm.
+user: That seems nice. I just recalled that I need to request a payment. I will be having the transaction with Bob, and it will be for 23 bucks, also I want for the transfer to be private.
+assistant: Can you please confirm that you want to make a private transaction with Bob for the amount of $23?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request for payment has been done.
+user: I appreciate it! Now let's get back to buying tickets for the event you found earlier, for which I need to have 3 tickets.
+assistant: Can you please confirm that you want to buy 3 tickets for the Anthony Green event which will happen in Philadelphia on March 10th?
+user: Yes, that is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested tickets have been booked. Enjoy your time at the event.
+user: I am grateful for your help. That would be all.
+assistant: Have a good time!

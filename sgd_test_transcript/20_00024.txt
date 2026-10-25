@@ -1,0 +1,37 @@
+user: I want to find a hotel in London and I need to book 3 rooms. Can you help me to find the suitable one?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, I got 10 hotel details. What do you think about the one located at 45 park Lane which is also a 5 star hotel? Do you like to stay there?
+user: I don't think so. Please search for some other hotels.
+assistant: I got another hotel named Abbey Court Hotel (Hyde Park) with 3 stars. I think this hotel will suit you. What do you think?
+user: I want to know some more details about this hotel. Let me know the cost per night and also please check for permission for smoking there.
+assistant: They will allow to smoke there and the cost will be around $324 per night.
+user: That's okay. Search for a car for rent and I want to go there.
+assistant: What is your convenient time to pick up the car and how many days you need the same?
+user: Search for the one to pick up at 11 in the morning and up to the date of the 11th.
+assistant: Shall book it from March 1st?
+user: Book it from the 10th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I got results about 10 cars. What is your opinion about to travel through a nice car available for pick up at Heathrow International Airport which is a Sedan Audi A8 model car.
+user: Can you search for more cars? I need to find some other cars.
+assistant: Yes, I got another car which is a Sedan Buick Regal Sportback model car available for pick up at Gatwick International Airport. Do you like to book this car?
+user: What is the total cost for one day to travel through this car?
+assistant: It will come around $32.00 per day. Shall I book it now.?
+user: No, I want to find some other car for me.
+assistant: One more car found at Heathrow International Airport in SUV Citroen C5 model. Do you want to fix this?
+user: What is the total cost for this car to book for one day?
+assistant: The will charge $41.00 per day.
+user: That is good and thanks.
+assistant: That's nice. Shall I book this car now?
+user: Yes, do it now.
+assistant: Do you want to add insurance to this booking?
+user: No, please book it without insurance.
+assistant: I need your confirmation to book a SUV model car for the pick up at Heathrow International Airport from March 10th at 11 am to March 11th without insurance.
+user: Sorry, I changed my mind. Please include insurance.
+assistant: Please confirm to book a SUV car with insurance.
+user: That is correct to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked the car as per your request.
+user: Thank you so much.
+assistant: Anything else you need?
+user: Nothing for now. Thanks for every thing.
+assistant: Have a great day.

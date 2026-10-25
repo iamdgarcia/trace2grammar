@@ -1,0 +1,24 @@
+user: Can you please help me find a train?
+assistant: Sure, but first please tell me your departure date and city.
+user: Please find me tickets out of Sacramento, CA on the 14th of this month.
+assistant: OK. Now please tell me your desired destination.
+user: I'm travelling to SFO.
+tool(FindTrains): ok n_results=10
+assistant: I found 10 trains matching your criteria. How about the one at 7:30 am with tickets priced at $48?
+user: Sounds OK. Now let's find something interesting to do there.
+assistant: Any particular interest? Maybe Music or Theater?
+user: I would like something involving Songs.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events which I think you might like. How about Alex Cameron playing at August Hall on March 8th at 7 pm?
+user: Can you please tell me the ticket price?
+assistant: Sure, tickets are priced at $25.
+user: Sounds perfect. Now please show me some attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: You shouldn't miss seeing Alcatraz, an awesome Historical Landmark.
+user: OK, got it.
+assistant: Is there anything else I could do for you?
+user: Yes, please find me a house to stay there, for 4 persons.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 matching your criteria out of which I recommend the one t 1095 Market Street, rated at 4.0.
+user: Sounds perfect for me. That will be all for now! Thank you!
+assistant: My pleasure, as always. Have a nice day!

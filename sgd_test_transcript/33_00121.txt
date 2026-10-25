@@ -1,0 +1,15 @@
+user: I would like to visit a historical spot in Portland.
+tool(FindAttractions): ok n_results=2
+assistant: There are 2 that might interest you. St. Johns Bridge is a Historical Landmark.
+user: That would be fine. Find me a house close to there to stay in.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available. There is a lovely house at 1000 Northeast Multnomah Street that has a rating of 4.1.
+user: I would like the phone number for there. Do they have laundry service?
+assistant: The number is +1 503-281-6111 and there is laundry service.
+user: I would like that house. I would also need a round trip tickets for three on a flight returning on March 10th. Any class of ticket would be fine.
+assistant: Which city would you be leaving from and when would you like to leave?
+user: I would like to leave LA on the 3rd.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: I have found 5 available flights. There is a 4:40 am Alaska Airlines flight that would be returning at 10:05 am. The cost is $298
+user: That would work. That would be all.
+assistant: Enjoy your day.

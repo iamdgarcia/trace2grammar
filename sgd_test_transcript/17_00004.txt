@@ -1,0 +1,24 @@
+user: I am looking for a hair dresser in the San Lorenzo vicinity.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 place that matches your search preferences. It is a great place in San Lorenzo called Inspire Hair.
+user: Great, that works!
+assistant: Do you schedule a visit for this place?
+user: Not at this time, thanks.
+assistant: Will there be anything further?
+user: Yes please. I would like to share the address for this place with Betty. So, the address that I want shared is 15824 Hesperian Blvd.
+assistant: To confirm, you'd like to share an address with Betty. This address is, 15824 Hesperian Blvd, correct?
+user: Great, that's perfect!
+tool(ShareLocation): ok n_results=1
+assistant: That address has been shared with Betty.
+user: And now I would like to take a look at my alarms please.
+tool(GetAlarms): ok n_results=4
+assistant: You currently have an alarm for 3:30 pm titled Busy.
+user: Sounds good.
+assistant: Would you like to create a new alarm?
+user: Yes please. I would like to create a 3:45 in the afternoon alarm with the name Phone home.
+assistant: So you want to add an alarm titled Phone home for 3:45 pm, correct?
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: That alarm has been created.
+user: Great, thank you. That was everything I needed.
+assistant: Have a nice day!

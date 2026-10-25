@@ -1,0 +1,19 @@
+user: Please find me a Family Therapist.
+assistant: Where should I search for one?
+user: I'd like to find one in Pleasant Hill.
+tool(FindProvider): ok n_results=7
+assistant: There's a Family Counselor in Pleasant Hill you might like to try called Aguilar Churchill Spence.
+user: Sounds great. What's the weather there looking like on the 10th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 91 degrees Fahrenheit with a 19 percent chance of rain.
+user: That's fine. I'd like to book the appointment with that therapist you found on that day.
+assistant: What time would you like the appointment at?
+user: I'd like it at 5 in the evening.
+assistant: Please confirm the following: You want an appointment with Aguilar Churchill Spence at 5 pm on March 10th.
+user: Yes, that would be great.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked. You will receive an email confirmation soon.
+user: Thanks so much! I appreciate your help.
+assistant: Is there anything else that I can help you with?
+user: Nope, that's all for now. Thanks so much!
+assistant: My pleasure.

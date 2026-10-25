@@ -1,0 +1,39 @@
+user: I would like to see my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: I found an alarm for 6 am with the name wake up.
+user: Okay, That sounds good.
+assistant: Can I assist you with anything else?
+user: Find me a nice restaurant in Milpitas.
+assistant: What type food do you prefer?
+user: I am looking for a restaurant which serves Freshwater Fish.
+tool(FindRestaurants): ok n_results=4
+assistant: How about a nice restaurant called Fortunes Restaurant Milpitas located in Milpitas.
+user: Are there any other restaurant you can suggest?
+assistant: How about a nice restaurant called Golden Sun Palace located in Milpitas.
+user: Are there any other restaurant located in San Jose Which has vegetarian options in the menu you can suggest?
+tool(FindRestaurants): ok n_results=6
+assistant: How about a nice restaurant called Olive Garden Italian Restaurant located in San Jose.
+user: Can you confirm whether the restaurant is pricey?
+assistant: No, They are moderate.
+user: Find me their address.
+assistant: They are located at 940 Blossom Hill Road.
+user: Okay, That sounds good.
+assistant: Do you want me to reserve a table here?
+user: No, maybe some other time.
+assistant: Is there anything else I can assist you with?
+user: Find me a car for rent available to pick up on the 8th at ten am with the drop off date as 9th of this month.
+assistant: Which type of car like Sedan, SUV or something else do you prefer and would you like to have insurance?
+user: Please book a Hatchback with insurance.
+assistant: Can you tell me the name of the place you want the pick up the car from?
+user: I would like to pick up to pick up the car from Walnut Creek BART Station.
+assistant: Please confirm: You want me to reserve a Hatchback car for pick up at Walnut Creek BART Station on March 8th at 10 am with the drop off date as March 9th.
+user: Yes, That is correct. Find me the cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved the car for you and the cost is $37.00 per day.
+user: Okay. Thank you! And can you share the location 940 Blossom Hill Road with Roy?
+assistant: Please confirm: You want me to share the location 940 Blossom Hill Road with Roy.
+user: Yes, That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has successfully been shared.
+user: Okay. That will be all. Thank you!
+assistant: I am glad I could hep. Have a nice day!

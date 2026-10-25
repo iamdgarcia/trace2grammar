@@ -1,0 +1,17 @@
+user: Hi can you search for any drama movies playing in San Ramon at the Regal Crow Canyon?
+tool(FindMovies): ok n_results=2
+assistant: There's 2 movies that fit, including Hustlers and The Art of racing in the Rain.
+user: Racing in rain sounds good. Can you search for a theme song for me, maybe something from about one years ago.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 songs that fit, including African Beauty by Diamond Platnumz from the Album A Boy from Tandale.
+user: Oh yes please
+assistant: Do you want me to play it for you?
+user: Yes can you play it on the speaker in kitchen
+assistant: Okay confirming African Beauty playing in Kitchen
+user: Great, whats the genre?
+tool(PlayMedia): ok n_results=1
+assistant: This is a pop song.
+user: Okay great
+assistant: Is that all for now?
+user: No that's it
+assistant: Enjoy your music.

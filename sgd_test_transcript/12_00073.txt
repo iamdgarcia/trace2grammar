@@ -1,0 +1,30 @@
+user: I need to find a bus
+assistant: What is the destination?
+user: The destination city is LAX
+assistant: Which city do you want to leave from?
+user: The city of departure is Long Beach
+assistant: What is the day of the trip?
+user: I should leave on 14th of March
+tool(FindBus): ok n_results=10
+assistant: There's a bus at 6 am which costs $11
+user: Are there any other solutions? I need a direct bus for two people
+tool(FindBus): ok n_results=9
+assistant: There are 9 solutions for you. For example a bus at 6:20 am which costs $12
+user: What is the departure station? What is the arrival station?
+assistant: The departure station is Downtown Station; North Hollywood Station is the arrival station.
+user: Can you give me any other suggestions?
+assistant: I suggest the 6:50 am bus which costs $12
+user: Oh, yes! It's perfect for me! Book the ticket!
+assistant: 2 tickets for the 6:50 am bus from Long Beach to Los Angeles, on March 14th. Do you confirm?
+user: Yes, I confirm! Which station does it depart from? What is the arrival station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The departure station is Downtown Station; the destination is North Hollywood Station. Your tickets have been purchased!
+user: Thank you very much! Now I need to find a hotel with smokers allowed.
+tool(SearchHotel): ok n_results=10
+assistant: In the area there's Banana Bungalow Hollywood, a 1 star hotel
+user: I prefer another hotel
+assistant: I suggest the 2 star hotel Beverly Laurel Motor Hotel
+user: Yes, It's fine for me!
+assistant: Can I help you again?
+user: No, It's all for now. Thanks!
+assistant: Have a nice day!

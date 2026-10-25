@@ -1,0 +1,16 @@
+user: I want to go to SD and I need 2 seats..Find me please a train.
+assistant: In what date you want to travel?
+user: March 9th will be good for me.
+assistant: From which city will you depart?
+user: From Anaheim I will depart.
+tool(FindTrains): ok n_results=7
+assistant: 7 option may work for you.What do you think about the train that go at 6:30 am and cost $82 in total?
+user: At which station will arrive and leave?
+assistant: The train will leave from Anaheim Intermodal Center and arrive at Santa Fe Depot.
+user: Sounds very good.Find me a house there for 1 people with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 options according to your requirements.A nice house located at 1003 Coast Boulevard, La Jolla, California 92037, United States with rating 4.6.
+user: This house sounds very good.
+assistant: You want to meke a reservation?
+user: No.Not now.That's all!
+assistant: Happy to help.Bye!

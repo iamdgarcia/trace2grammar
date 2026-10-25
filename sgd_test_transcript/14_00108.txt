@@ -1,0 +1,23 @@
+user: I need to search for songs.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 songs including sick like me by In This Moment buy Black widow.
+user: Yes that is it.
+assistant: Do you want to play this song?
+user: is there some dramatic story online maybe later I would like one
+tool(FindMovies): ok n_results=10
+assistant: would you like a faithful man after the wedding or Blinded by the Light
+user: Will there be anything else
+assistant: Do you want Brittany runs a marathon live flesh or Hustlers?
+user: Live flesh is good can you play the song you just found
+assistant: Please confirm the details that were playing sick like me in the living room
+user: No I'd like it cast on the kitchen speaker
+assistant: Please confirm details Play the song sick like me in the kitchen
+user: Yes that would be it
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music
+user: What type of music is it
+assistant: It would be a metalcore song
+user: What year did it come out
+assistant: The year is 2014 that it came out
+user: Thanks that will be it
+assistant: Have a nice day

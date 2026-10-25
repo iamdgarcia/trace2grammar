@@ -1,0 +1,28 @@
+user: I'm looking for attractions to visit
+assistant: In which city?
+user: I would like attractions in London, England
+tool(FindAttractions): ok n_results=10
+assistant: There's a Historical Landmark: 30 St Mary Axe (The Gherkin)
+user: Is entry free? What is the contact number?
+assistant: The number is 20 7071 5029. No, unfortunately entry isn't free.
+user: Not a problem, this attraction is fine. Can you find me a car to rent in London, England?
+assistant: What day would you like to rent a car? At what time? How long do you need the car?
+user: I want to pick it up at 14:00, from 8th of this month till March 12th
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a Sedan Audi A8 at Heathrow International Airport
+user: Very well! I want this car!
+assistant: Do you also want insurance?
+user: Without insurance, please
+assistant: A Sedan car without insurance from Heathrow International Airport, from March 8th at 2 pm, till March 12th. Is it correct?
+user: Yes, It's correct! How much does the rental cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The rental costs $28.00 per day. The car has been booked!
+user: I want to share the location Heathrow International Airport
+assistant: Who would you like to share this location with?
+user: I want to share with Thomas
+assistant: Sharing Heathrow International Airport with Thomas. Is it correct?
+user: Yes, It is! Thank you
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared!
+user: Thanks for your valuable help. That's all for now
+assistant: Have a good day!

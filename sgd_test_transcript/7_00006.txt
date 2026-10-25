@@ -1,0 +1,10 @@
+user: I must verify the weather in Foster City later today.
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for today ought to be 80 degrees Fahrenheit, with a 22 percent possibility of raining.
+user: How wet will it be, and how much wind will there be?
+assistant: The mean wind speed ought to be 8 miles per hour, and the wetness is near 38 percent.
+user: Alright, what about Valley Ford?
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for today ought to be 72 degrees Fahrenheit, along with a 6 percent probability of raining.
+user: Okay, that's all; see ya!
+assistant: Goodbye.

@@ -1,0 +1,21 @@
+user: Find me a rental car in Long Beach.
+assistant: What time and date will you pick up the car?
+user: I'd like to pick up a Sedan at afternoon 3 on the 9th.
+assistant: When will you return the car?
+user: I'll return it 11th of March.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a nic Sedan AUdi A8 at LGB Airport.
+user: SOunds great. Find me a house there too with a 4.5 rating or higher, with laundry service.
+tool(SearchHouse): ok n_results=1
+assistant: There's a nic house at 3771 North Lakewood Boulevard with a 4.5 rating.
+user: That sounds perfect. Would you reserve the rental car you mentioned?
+assistant: Would you like insurance?
+user: No, that's not necessary.
+assistant: Could you confirm that you wanted to pick up the car from LGB Airport on March 9th at 3 pm and that you'll drop it off on March 11th? It's a Sedan without insurance.
+user: No. I want to purchase insurance.
+assistant: Could you confirm that you want to rent a sedan with insurance?
+user: Sounds good. What is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved and it's $39.00 per day.
+user: Thank you for helping. That's all I needed.
+assistant: Have a great day.

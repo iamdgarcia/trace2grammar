@@ -1,0 +1,21 @@
+user: I'm looking for a place to live.
+assistant: Are you wanting to rent or buy? How many bathrooms?
+user: I want to rent a place with 3 bathrooms.
+assistant: How many bedrooms?
+user: I want 3 bedrooms as well.
+assistant: Where would you like me to look?
+user: Look around the Los Gatos area.
+tool(FindHomeByArea): ok n_results=3
+assistant: I found 3 houses that fit your request. Casa Vasona Garden Apartments has good reviews. It's at 859 University Avenue and rents for $3,900 a month.
+user: Does it have a garage? What's their phone number?
+assistant: It doesn't have a garage. The number is 408-395-1222.
+user: That sounds like a good possibility. Can you schedule a visit for March 4th?
+assistant: To confirm: you would like to visit the Casa Vasona Garden Apartments on March 4th.
+user: That is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is confirmed.
+user: Perfect, thanks. Can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have one called Catch bus for 9 am.
+user: Perfect. That's all I need.
+assistant: Have a great day.

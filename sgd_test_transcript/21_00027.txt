@@ -1,0 +1,23 @@
+user: I'd like a cab.
+assistant: How many seats will you need, where are you going, and what type of ride would you like? You can take a pool ride, luxury ride, or anything else.
+user: I'd like the most comfortable ride possible headed to the national maritime museum for 1.
+assistant: Please confirm: You want a luxury ride for 1 to the national maritime museum.
+user: How much will it cost, and how long will it take to reach here?
+tool(GetRide): ok n_results=1
+assistant: it will cost $28.47, and reach you in 11 minutes.
+user: Can you find some music for me? I've heard good things about Carrie Underwood and her new album Cry Pretty.
+tool(LookupMusic): ok n_results=2
+assistant: What about Southbound by Carrie underwood from Cry Pretty?
+user: Is it from '18? What kind of music is it?
+assistant: It's from 2018, and it's a pop song.
+user: What else do you have?
+assistant: There's The Champion by Carrie Underwood from Cry Pretty too.
+user: Great, play that on the speaker outside.
+assistant: Please confirm: Play The Champion on the patio.
+user: Actually, do the living room.
+assistant: Please confirm: Play the champion in the living room.
+user: Yes. What kind of music is it and when did it come out again?
+tool(PlayMedia): ok n_results=1
+assistant: 2018, it's a pop song.
+user: Thank you, that's all I need.
+assistant: Have a good day!

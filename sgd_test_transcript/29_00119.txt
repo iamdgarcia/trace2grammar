@@ -1,0 +1,28 @@
+user: I want to do something interesting. Do you have any suggestions?
+assistant: What type of event do you prefer? Also what city should I look into?
+user: I am in the Seattle area on the 11th of March and oh I love Broadway.
+tool(FindEvents): ok n_results=10
+assistant: You will like Blood Water paint and it is at 12th Avenue Arts on March 11th at 5:30 pm.
+user: What is the cost of one ticket and where is the venue?
+assistant: The ticket is priced at $55 and the location is 1620 12th Avenue.
+user: That is fantastic. Now look for a house that I can stay in when I am there.
+tool(SearchHouse): ok n_results=10
+assistant: I have found you a nice house at 1000 1st Avenue and it is rated a 4.5.
+user: I like the house.
+assistant: Shall I book you this house?
+user: Not right now.
+assistant: Shall I do anything else?
+user: Tell me about the buses to there. I leave Portland on 1st of this month and we are three people.
+tool(FindBus): ok n_results=10
+assistant: I can find you 10 buses. What do you think of the bus leaving at 7 am and it will cost you $28?
+user: What station is it leaving?
+assistant: SW Arthur & 1st will be the departure point.
+user: Will this be a direct bus and what station is it reaching?
+assistant: The destination is Westlake Station and it is a direct bus.
+user: Fantastic. Buy me the tickets for the event.
+assistant: So you confirm that you want tickets for Blood Water Paint on March 11th at Seattle for 3 people?
+user: That will be great.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have your reservation and I hope you enjoy there.
+user: Thanks a ton. That will be all.
+assistant: Have a wonderful day!

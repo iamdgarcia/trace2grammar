@@ -1,0 +1,19 @@
+user: Could you help me find a property in Sunnyvale?
+assistant: Sure, how many bedrooms and bathrooms do you need, and are you looking to rent or buy?
+user: I would like to buy a property with two bedrooms and 1 baths.
+tool(FindHomeByArea): ok n_results=10
+assistant: Sure, would you like Aster Park Apartments at 1059 Reed Avenue costing $2,750,000.
+user: Sounds great, could you get me a visit to the property please?
+assistant: When would you like to visit it?
+user: On the March 14th, please.
+assistant: Please confirm your visit to Aster Park Apartments on March 14th.
+user: That sounds great. May I also have their phone number please?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled, and you can contact them at 408-984-1060.
+user: I see, could you show me my alarms please?
+tool(GetAlarms): ok n_results=2
+assistant: You currently have 2 alarms set, one at 5 pm titled Errands.
+user: I see, that is great.
+assistant: Could I further assist you then?
+user: No, thanks a bunch!
+assistant: Have a great day ahead!

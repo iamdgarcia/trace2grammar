@@ -1,0 +1,36 @@
+user: I want to get bus tickets please
+assistant: What time are you leaving and from where? Also how many tickets?
+user: I want to leave San Francisco at quarter to 10 in the morning, it'll be three of us
+assistant: Where are you heading?
+user: We're going to Long Beach, CA
+assistant: And when do you plan on departing?
+user: We plan to leave SD on the 1st
+assistant: Confirmin 3 tickets to Long Beach from San Diego from March 1st 9:45 am?
+user: Yes please, what station does that arrive at and what's the total cost?
+tool(BuyBusTicket): ok n_results=1
+assistant: It arrives at Downtown Station and it costs $20, however I couldn't book it, do you want to try the 9:50 am bus instead?
+user: Yes try that
+tool(BuyBusTicket): ok n_results=1
+assistant: It's been booked successfully!
+user: Awesome, now can you find me one room at a three star hotel
+tool(SearchHotel): ok n_results=8
+assistant: Sure, there's a Best Western of Long Beach, a 3 star hotel you might like
+user: What else matches the criteria?
+assistant: How about the Courtyard By Marriott Long Beach Airport which has a 3 star rating as well?
+user: Give me their phone number
+assistant: It's +1 562-429-5803
+user: What else matches my search criteria
+assistant: How about the Courtyard By Marriott Long Beach Downtown? Also 3 stars
+user: What's their number?
+assistant: You can reach them at +1 562-435-8511
+user: OK cool, book me there
+assistant: When are you checking in
+user: On the 9th
+assistant: And how long will you be there?
+user: I'll be there for two days
+assistant: Confirming your stay at the Courtyard By Marriott Long Beach Downtown starting on March 9th for 2 days and 1 room in Long Beach
+user: Yes that's perfect
+tool(ReserveHotel): ok n_results=1
+assistant: It's booked for you
+user: Thanks for your help, that's all!
+assistant: OK then enjoy your trip!

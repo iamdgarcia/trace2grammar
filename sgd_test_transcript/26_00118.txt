@@ -1,0 +1,23 @@
+user: I need help looking for a train.
+assistant: Where will you be travelling from and to?
+user: I'll be travelling from Sacramento, CA to SFO.
+assistant: And what date will that be on?
+user: I want to go on the 6th of this month.
+tool(FindTrains): ok n_results=10
+assistant: There's a train leaving at 7:30 am for $53. How does that sound?
+user: I like the sound of that. I'm also looking for things to do over there, on the 9th of this month. Something like a stage show.
+tool(FindEvents): ok n_results=10
+assistant: A lot of people like Above Ground. It's at the Mojo Theatre on March 9th at 6:30 pm.
+user: That sounds good, but what else is there?
+assistant: A lot of people like As You Like it. It's at the Main Post Lawn on March 9th at 5 pm.
+user: That's good too, but how about some events with songs.
+tool(FindEvents): ok n_results=7
+assistant: There are 7 events you might enjoy. A lot of people like Alex Cameron. It's at August Hall on March 9th at 6 pm.
+user: That sounds very good. Now how about some child friendly attractions that are over there.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might like. How about Alcatraz which is a Historical Landmark?
+user: That sounds interesting. And I also need a house to stay at that is suitable for two people. It should rated 4.4 or higher.
+tool(SearchHouse): ok n_results=3
+assistant: 3 Houses match your criteria. There's a nice 4.4 rated house on 138 King Street.
+user: That sounds like a great house. Thanks for helping, that's all I need right now.
+assistant: It's been my pleasure, take care.

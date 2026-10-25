@@ -1,0 +1,35 @@
+user: I'd like to find a movie to watch online, something with Lee Eisenberg in it.
+assistant: What genre are you interested in?
+user: I'd like to see a good comedy.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 movie to recommend, which is the film Good Boys.
+user: Yes, I think Good Boys is a good choice.
+assistant: Shall I play the film for you now?
+user: Not just yet, thank you.
+assistant: May I help you with anything else?
+user: I'd like to find a good attraction to see.
+assistant: In what location?
+user: Yes, I'm hoping to find something that's good for kids in the District of Columbia.
+tool(FindAttractions): ok n_results=10
+assistant: I can recommend 56 Signers of the Declaration of Independence Memorial, which is an impressive nature preserve.
+user: OK, is that free admission? And may I have the phone number?
+assistant: No, there is an admission charge. The telephone number is 202-426-6841.
+user: All right, thanks. Would you help me find a song now? I'd love something in the metal genre from '19.
+tool(LookupMusic): ok n_results=10
+assistant: There is a song of the album The Great War by Sabaton called A Ghost In The Trenches, which I recommend.
+user: That's fine, thank you.
+assistant: Shall I play the song for you now?
+user: Sure, why not?
+assistant: Confirming playback of A Ghost In The Trenches on the living room speaker.
+user: Great, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks. I'd also like to start watching the movie that you found.
+assistant: Confirming playback of the film Good Boys with English subtitles enabled.
+user: Actually I need that with French subtitles.
+assistant: Confirming playback of the film Good Boys with French subtitles turned on.
+user: That's right, thanks.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Thank you for all your help.
+assistant: It's entirely my pleasure.

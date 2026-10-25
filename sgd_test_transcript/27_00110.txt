@@ -1,0 +1,29 @@
+user: Will you help me search for a bus for one to Los Angeles?
+assistant: When will you leave and where from?
+user: I will leave the 2nd of this month from Fresno, CA.
+tool(FindBus): ok n_results=8
+assistant: I have 8 buses for you. What about one leaving at 7:50 am for $35?
+user: What station does it leave from?
+assistant: It leaves from 2660 Tulare St.
+user: What station does it arrive at?
+assistant: It comes to North Hollywood Station.
+user: Will you find me something else?
+assistant: What about the bus departing at 8:10 am costing $35?
+user: Will you find me something else for three people going to Anaheim?
+tool(FindBus): ok n_results=4
+assistant: I have 4 buses for you. What about the bus leaving at 1:50 pm costing $42?
+user: That sounds nice. Will you show me some attractions there that are child-friendly without an entry fee?
+tool(FindAttractions): ok n_results=6
+assistant: There would be 6 attractions of interest including Angel Stadium of Anaheim a Sports Venue you should check out.
+user: Okay that is good. Can you buy the bus ticket you just found?
+assistant: Please confirm details that you want a ticket on the bus departing from Fresno to Anaheim leaving March 2nd leaving 1:50 pm for 3 people. You don't need extra luggage.
+user: Yes, that will work.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed.
+user: Thanks so much for the help. Can you find me hotels in the area too that are three star and with 2 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that match including one called Anaheim Majestic Garden Hotel rated 3 stars.
+user: That sounds good to me.
+assistant: Will you like to reserve the hotel?
+user: I don't need a reservation now. That is all.
+assistant: Bye and have a nice day.

@@ -1,0 +1,23 @@
+user: i need to spend my leisure hours by watching a movie. will you find a movie to watch?
+assistant: What is the location you wish to see a movie?
+user: will you find me movies in Hayward?
+tool(FindMovies): ok n_results=4
+assistant: How about the movies, Ad Astra, IT Chapter Two or Overcomer?
+user: Please find some other movies, I need to watch movies at CineLux Tennant Station. Will you find movies which are shown in Morgan Hill?
+tool(FindMovies): ok n_results=5
+assistant: I found 5 movies as per your need. How about Good Boys, Hobbs and Shaw or Hustlers?
+user: Hobbs and Shaw is Perfect and i like to buy movie tickets. I need to watch it a regular show and the day is on this saturday.
+assistant: At what time you prefer to watch the show?
+user: I need to watch the show at 9:30 pm.
+assistant: How many tickets do you want to see the movie?
+user: i need 3 tickets.
+assistant: please check and confirm the details. Movies need to watch is Hobbs and Shaw . Number of ticket is 3 and the date is on March 2nd and the location is Morgan hill starting at 9:30 pm . It is a regular movie.
+user: Ok that sounds good to me.
+tool(BuyMovieTickets): ok n_results=1
+assistant: movie ticket is booked successfully.
+user: How much is the ticket cost? What kind of a movie is it?
+assistant: The price is $13 per person and it is a Action movie.
+user: Thanks for your immense help
+assistant: Whether i need to find anything else?
+user: no, not for now.
+assistant: Have a wonderful day

@@ -1,0 +1,53 @@
+user: I need to go to a therapist, any recommendations?
+assistant: In which city shall I look for a therapist, and which kind do you need?
+user: Look for a psychologist in Campbell.
+tool(FindProvider): ok n_results=5
+assistant: There is 5 therapists that could work in Campbell, how about Bacheler Janet who is a psychologist?
+user: Can you give me their address?
+assistant: Sure, the address is Campbell, California 95008, United States.
+user: How about their phone number, what is it?
+assistant: Call them via the number 408-850-9418.
+user: Okay, any other therapists you could find?
+assistant: Another psychologist in Campbell is Clausen June.
+user: They sound good, can you book me an appointment?
+assistant: At what time will you make the appointment to?
+user: Make the appointment at 1:30 pm.
+assistant: How about the date, when should the appointment be made?
+user: Set the appointment to the 8th of March if possible.
+assistant: An appointment will be made to Clausen June at 1:30 pm on March 8th, all correct?
+user: That is all correct, thanks.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked, an email confirmation will be sent shortly.
+user: Thanks, can you also tell me their address and phone number?
+assistant: No problem, their address is 621 East Campbell Avenue # 7, and their phone number is 408-271-5996.
+user: All right, thanks for the information, I also need to request a private payment of 52 dollars.
+assistant: From whom are you requesting a payment?
+user: Request a payment from Emma.
+assistant: You will make a private transaction with Emma, for a payment request of $52 is that acceptable?
+user: That works for me, thank you.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was made successfully.
+user: Also can you find me a restaurant near the therapist I can visit on that day?
+assistant: Any particular kind of food you are looking for?
+user: A place that serves pizza and pasta would be ideal.
+tool(FindRestaurants): ok n_results=5
+assistant: There are 5 restaurants you may like in Campbell, how about A Bellagio Italian Restaurant.
+user: Any other restaurants you can recommend, with outdoor seating and that serves freshwater fish?
+tool(FindRestaurants): ok n_results=2
+assistant: How about Capers Eat & Drink, also located in Campbell?
+user: More interested in a restaurant with an intermediate priced menu, any fitting that description?
+tool(FindRestaurants): ok n_results=2
+assistant: Would Pacific Catch be of interest, it is located in Campbell?
+user: Can you tell me their address and average rating?
+assistant: The address is 1875 South Bascom Avenue #550, average rating is 4.3.
+user: That works for me, book me a table for three people.
+assistant: At what time shall I make the reservation.
+user: The reservation should be at 11:00.
+assistant: A table will be booked at Pacific Catch in Campbell for 3 people, on March 8th at 11 am, correct?
+user: All correct, is there vegetarian options at this restaurant and how can I contact them?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Vegetarian options are available at this establishment, contact them by calling 408-879-9091, and your reservation is all set.
+user: I appreciate all your help, thanks.
+assistant: Anything else I can help you with?
+user: That was all I needed, thanks once again for everything.
+assistant: Your welcome, enjoy your day.

@@ -1,0 +1,30 @@
+user: I need to book a train, help me out?
+assistant: What's your destination, and from which city will you depart on train?
+user: I am planning on heading out to Sacramento, and will be leaving from SD.
+assistant: When will you be traveling on train?
+user: I need tickets to depart from the 14th of March.
+tool(FindTrains): ok n_results=9
+assistant: From 9 trains I found, would a train departing at 6:10 am work for you, it costs $145 in total?
+user: At which station will the train arrive at?
+assistant: Sacramento Valley Station is the destination of this train.
+user: Sounds good to me, thanks for the information.
+assistant: Would you like to book tickets to this train?
+user: Sure, please make a reservation to this train, it should have trip insurance and I don't care about which fare class I get.
+assistant: Would you be purchasing only 1 ticket for this train or more?
+user: It will only be a purchase for 1 seat.
+assistant: You wish to buy 1 value ticket with trip insurance for a train leaving from San Diego to Sacramento, it leaves on March 14th at 6:10 am, is that fine by you?
+user: That all works for me, thanks.
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets were booked successfully.
+user: Thanks for the help, can you also find me something interesting to do on the 14th of March, something music related.
+tool(FindEvents): ok n_results=4
+assistant: There were 4 events you may like, what about the Aftershock Festival at Discovery Park, it is occurring on March 14th at 5 pm?
+user: Sounds great to me, can you share the location for me?
+assistant: To whom will you be sharing this event's location?
+user: Please share the location with Judy.
+assistant: Judy will receive the location of Discovery Park, correct?
+user: That is correct, thanks.
+tool(ShareLocation): ok n_results=1
+assistant: The location was successfully shared.
+user: Great, much appreciated. That's all I needed for today.
+assistant: Your welcome, have a nice day!

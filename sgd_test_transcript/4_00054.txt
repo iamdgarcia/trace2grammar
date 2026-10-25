@@ -1,0 +1,16 @@
+user: Its boring to eat at home for a change i wish to eat outside. Will you find me a restaurant tagged intermediate priced for price?
+assistant: At which location should i search in? What type of food you like it most?
+user: Please find something like Lobster and find restaurants in Belmont.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant as per your taste. it is CHina VIllage Seafood Restaurant which is a nice restaurant and it is located in Belmont.
+user: ok thats great. it sound good to me.
+assistant: Whether i need to reserve a table over there?
+user: Yes I need to reserve a table.
+assistant: At what time should i confirm the reservation ?
+user: Make the reservation at afternoon 12:30
+assistant: Please review the details so that i will confirm. Table need to book at China Village Seafood Restaurant. The city is Belmont and the reservation timing is at 12:30 Pm. The date is March 1st and the reservation is for 2 people.
+user: ok thats great. please fix it. DO they have vegetarians options on the menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful. THey don't have vegetarian options.
+user: THanks a lot and thats all i need.
+assistant: have a wonderful day.

@@ -1,0 +1,32 @@
+user: I'm looking for a place to live with a garage and 1 bath.
+assistant: How many rooms do you want? What area do you want to look in? Are you trying to rent or buy?
+user: I want to find a 1 bedroom place to buy in Palo Alto.
+tool(FindHomeByArea): ok n_results=3
+assistant: I found 3 houses. There is a great property at Casa Carolina Apartments at 3820 Park Boulevard for $1,600,000.
+user: Are there laundry machines?
+assistant: No, there are no laundry machines.
+user: That sounds okay, I want to schedule a visit.
+assistant: When would you like to visit?
+user: I want to make an appointment to visit on March 3rd.
+assistant: Please confirm: an appointment to visit Casa Carolina Apartments on March 3rd.
+user: That sounds good. What's the phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been booked. The phone number is 650-493-2424.
+user: Can you share the location with Margaret?
+assistant: Please confirm: sharing the location 3820 Park Boulevard with Margaret.
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks so much.
+assistant: Anything else I can do?
+user: Can you find me a cab there?
+assistant: How many seats are you looking for?
+user: I have a group of four.
+assistant: What kind of ride would you like? Pool, luxury, or something else?
+user: A pool ride is great.
+assistant: Please confirm: a pool ride for 4 to 3820 Park Boulevard.
+user: Sounds good. When will the cab arrive?
+tool(GetRide): ok n_results=1
+assistant: The cab will be there in about 9 minutes?
+user: Thanks so much. That's all.
+assistant: Have a great day!

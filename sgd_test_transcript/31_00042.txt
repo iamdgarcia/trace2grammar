@@ -1,0 +1,26 @@
+user: Can you help me find a salon in Santa Rosa?
+tool(FindProvider): ok n_results=9
+assistant: I found an option for you; Daredevils & Queens is a nice place in Santa Rosa.
+user: That one sounds good. Can you find me a movie around there too?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 options for you. How about something like Good Boys, After the Wedding, or Fiddler: A Miracle of Miracles?
+user: I think I'd like After The Wedding.
+assistant: Do you want me to get you tickets?
+user: No thank you.
+assistant: Do you need help with anything else?
+user: What time is it playing at Summerfield Cinemas in the regular format?
+assistant: On March 2nd?
+user: Yes, that sounds good.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's 1 showtime at 8:30 pm at Summerfield Cinemas.
+user: What's its genre?
+assistant: It's a drama film.
+user: What's the theater's address and how much do tickets cost?
+assistant: Tickets are $10 per person, and it's located at 551 Summerfield Road.
+user: That sounds great. Can you book me an appointment at the salon now for 6 in the evening?
+assistant: Please confirm: 6 pm appointment on March 2nd at Daredevils & Queens.
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: I've successfully reserved the time for you.
+user: Thanks so much, that'll be all.
+assistant: Have a wonderful day!

@@ -1,0 +1,40 @@
+user: Hi, could you show me my alarms please?
+tool(GetAlarms): ok n_results=1
+assistant: You currently have 1 alarm set titled Busy at 5 pm.
+user: I see, thank you.
+assistant: Would you like to add an alarm?
+user: No, that is not necessary.
+assistant: How can I further help you then?
+user: Could you help me find a cheap restaurant please?
+assistant: Which location and type of food would you prefer?
+user: I would prefer some Izakaya in San Jose please.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants you may like in San Jose, how about Bluefin?
+user: Are there any alternatives?
+assistant: How about Dan Izakaya Restaurant in San Jose?
+user: Sounds great to me!
+assistant: Would you like me to make a reservation there?
+user: No, that is not needed.
+assistant: How can I further assist you then?
+user: Could you get me a car reservation in that area please?
+assistant: And would you require insurance?
+user: Yes please, can I also pick up the car at Gatwick International Airport?
+assistant: And when do you need the car till?
+user: I will need the car later today at 08:30 to the 2nd.
+assistant: And any preference on the type of car?
+user: Could you get me a Sedan please?
+assistant: Please confirm your booking for a Sedan car from Gatwick International Airport with insurance for pickup at 8:30 am on March 1st till March 2nd.
+user: Sorry, could I pick the car at 9 o'clock in the morning instead?
+assistant: Please confirm your pickup at 9 am on March 1st.
+user: Sounds great to me!
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Could you share the location 1306 Saratoga Avenue please?
+assistant: And who are you sharing the location with?
+user: I would like to share with Amy, please.
+assistant: Please confirm your request to share the location 1306 Saratoga Avenue with Amy.
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you for your help, that is all I need.
+assistant: Have a great day ahead!

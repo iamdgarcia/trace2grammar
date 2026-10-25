@@ -1,0 +1,20 @@
+user: I need a house to stay because i have a plan to travel. Will you find a house to stay?
+assistant: In which city you are planning to stay in?
+user: I need a house in Chi-town area.
+tool(SearchHouse): ok n_results=10
+assistant: THere are 10 houses as per your search. One nice house is located at 1 South Franklin Street and its rating is 4.4.
+user: What is the phone number for that place? whether they have laundry service in that place?
+assistant: THe phone number is +1 312-558-1020. There is no laundry service in that place.
+user: this house is great. I need to book a house. I need to check out on 12th of this month, i need it for 2 people.
+assistant: In which day you will be check in that house?
+user: I need to check in on next wednesday.
+assistant: Please check and review the following details. The location is Chicago. There are 2 people to stay and the check in date is March 6th and the check out date is March 12th.
+user: Ok that sounds good.confirm it.
+tool(BookHouse): ok n_results=1
+assistant: Reservation made scuccessfully.
+user: what is the total price for that place?
+assistant: THe total price of that place is $1,728.
+user: thanks a lot and that's all i need.
+assistant: Whether i need to do anything else?
+user: No, thanks a lot. not for now
+assistant: Have a wonderful day. take care.

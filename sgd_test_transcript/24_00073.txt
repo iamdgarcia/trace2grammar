@@ -1,0 +1,26 @@
+user: I would like to see an offbeat movie in Berkeley.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie available. Would you like to see Once upon a time in Hollywood?
+user: Yes, Once upon a Time would be great. Can you book a table at a restaurant in the area for me?
+assistant: At which restaurant?
+user: I want to dine at priya.
+assistant: For what time?
+user: For 12:45 in the afternoon.
+assistant: You would like a table for 2 at priya Indian Cuisine in Berkeley for 12:45 pm on march 1st?
+user: Yes, that would be fien.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was unable to make the reservation. Would you like a table for 2 at priya Indian cuisine on March 1st at 12:30 pm?
+user: Yes, that would be great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made the reservation.
+user: What is the contact number and may I have an address for the establishment?
+assistant: It is located on 2072 San pablo Avenue and the number is 510-644-3977.
+user: Great. What movie is showing at the California Theatre that day. Any kind of show would be fine by me.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is an 8:30 pm show at Landmark's California Theatre.
+user: That could work.
+assistant: You would like to get tickets?
+user: No, that would not be necessary at this time.
+assistant: Anything else you need?
+user: No. Thanks a lot.
+assistant: Enjoy your day.

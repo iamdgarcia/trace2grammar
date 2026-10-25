@@ -1,0 +1,38 @@
+user: Find me a salon.
+assistant: In which city you want to be?
+user: In SF would be nice.
+tool(FindProvider): ok n_results=10
+assistant: A nice salon in San Francisco is 1512 Barber Shop.
+user: Where can I find it?
+assistant: 1532 20th Street is the address.
+user: Tell me if this is a unisex salon and what is the average rating.
+assistant: Yes, is a unisex salon with average rating 4.8.
+user: Sounds very good.
+assistant: You want an appointment here?
+user: No, not now maybe later.
+assistant: Can I do something else for you?
+user: I want to search for me a Psychologist in that area in SF.
+tool(FindProvider): ok n_results=4
+assistant: You may try a Psychologist in San Francisco called Adam E. Pollock.
+user: Tell me the phone number and the address.
+assistant: 100 Masonic Avenue is their address and 415-346-2356 is the phone number.
+user: Something else you can find?
+assistant: You may try an Psychologist in San Francisco called Deardorff Julianna.
+user: Okay.Book for me an appointment here.
+assistant: In what date you want to be and at what time you prefer to be?
+user: Try make it on the 10th at 5 in the evening.
+assistant: Book an appointment at Deardorff Julianna on March 10th at 5 pm.Is that correct?
+user: Yes, that's true.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is booked and you should get an confirmation email soon.
+user: Tell me their phone number.
+assistant: 415-502-8336 is the phone number.
+user: Thank you for all.Book an appointment at 1 in the afternoon at the salon that you just found on that day.
+assistant: You want an appointment at 1512 Barber Shop on March 10th at 1 pm.Are this data okay for you?
+user: No.Make it at 11 in the morning.
+assistant: You want an appointment at 11 am at hair stylist 1512 Barber Shop.
+user: Yes, that works for me.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry the appointment failed.Can I do something else for you now?
+user: No.Thank you for all.
+assistant: Have a great day!

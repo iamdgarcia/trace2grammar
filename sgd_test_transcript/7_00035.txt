@@ -1,0 +1,24 @@
+user: I need a new apartment can you help? I only need 1 bath.
+assistant: Sure, are you in the market to buy are just rent?
+user: I need to buy a home.
+assistant: Where do you think you might like living? How many bedrooms will you need?
+user: I want to live in San Leandro. I only need 1 bedroom.
+tool(FindHomeByArea): ok n_results=3
+assistant: You probably should just buy a place at Ashland Village Apartments. You will find it at 1300 Kentwood Lane. The price is $1,900,000.
+user: Wow, that's quite a lot. Isn't there something cheaper?
+assistant: Sure, If you're on a budget then check out Quail Run Apartments on 1511 163rd Avenue. It's only $1,700,000.
+user: Hmm, does it have a garage for my car?
+assistant: Yes, it does.
+user: Fine, I'll go there tomorrow. Set up a visit please.
+assistant: Sure, to confirm: You will visit Quail Run Apartments tomarrow on March 2nd.
+user: No silly, I want to go on the 6th of March.
+assistant: Sure to confirm: Visit on March 6th to Quail Run Apartments.
+user: You nailed it this time.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is all set.
+user: How may I phone them?
+assistant: You can call them at 510-276-2693.
+user: Perfect, thanks.
+assistant: Any other things for you?
+user: Not a bit, thanks.
+assistant: Have a pleasant visit.

@@ -1,0 +1,38 @@
+user: I would to see my alarms.
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm set for 4:30 pm and the name on it is Busy.
+user: Do I have any other alarms?
+assistant: Yes, there is also one with the name Class set for 10 am.
+user: Okay, thank you. I would like to find a restaurant in Livermore that preferable has outdoor seating.
+assistant: What type of food are you interested in finding?
+user: I would like something that serves Tapas Bar. I want a restaurant that is tagged as reasonably priced.
+tool(FindRestaurants): ok n_results=1
+assistant: A nice restaurant in Livermore that I have located is called Pura Vida - Cocina Latina & Sangria Bar.
+user: Yes, that is very good. I would also like to reserve a car there.
+assistant: Would you like a Sedan, SUV, or are you interested in something different?
+user: I would like to have a hatchback.
+assistant: What time would you like to pick the car up?
+user: I am interested in picking it up at quarter to 11 in the morning.
+assistant: When would you like the car rental to begin?
+user: I would like to have it from the day after tomorrow.
+assistant: Would you like to add insurance? Also, what location would you be wanting to get the car?
+user: I would like to pick it up at Palo Alto Caltrain Station I would also like to purchase insurance.
+assistant: Until what date do you want to keep the car?
+user: I would like to pick it up at 11:30 and want to keep it up till 8th of March.
+assistant: Okay, confirm the following details for me: You will be picking up the car from Palo Alto Caltrain Station on March 3rd at 11:30 am and drop it off on March 8th. The car is a Hatchback and it will come with insurance.
+user: No, I want to get the car from next Monday.
+assistant: Okay, please confirm these details: The pickup date for the car is March 4th and I will drop it off on March 8th.
+user: Yes, that sounds fine.
+tool(ReserveCar): ok n_results=1
+assistant: The car has successfully been reserved for you.
+user: What is the price for the car each day?
+assistant: The price of this car is $41.00 each day.
+user: What is the name of the car?
+assistant: The car is called Vauxhaull Astra.
+user: Thank you for the help. Would you be able to share the location? The address I want to share is 2241 First Street and I want to share it with Samuel.
+assistant: Okay, confirm these details: You want the location of 2241 First Street shared with Samuel.
+user: That sounds very good.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thanks, that is very helpful. That was all was needing for now.
+assistant: Have a great day!

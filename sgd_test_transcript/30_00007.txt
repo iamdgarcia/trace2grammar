@@ -1,0 +1,30 @@
+user: Can you find me something fun to do in New York City on March 7th?
+assistant: What type of event are you looking to do?
+user: I am interested in Broadway
+tool(FindEvents): ok n_results=10
+assistant: What about Advanced acting scene study at TGW Acting studio on march 7th at 6:30 pm
+user: thats great, can you also find me a house to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: There is a 4.4 rating house located at 100 greenwich street
+user: thats perfect
+assistant: would you like me to reserve this house?
+user: no, not right now. Can you find me a bus going there
+assistant: Are you leaving on March 7th
+user: i want to leave on the day after tomorrow
+assistant: where are you traveling from?
+user: i will be traveling from philly
+tool(FindBus): ok n_results=6
+assistant: i found 6 buses for you. What about 9 am bus for $25
+user: what station does it arrive at and depart from
+assistant: this will depart from 10th and filbert and arrive at penn station
+user: perfect
+assistant: would you like me to purchase a ticket for you
+user: no not right now, but please but the three event tickets for me
+assistant: Please confirm your purchase of 3 tickets for advanced acting scene study in new york on march 7th
+user: yes please. where does it located and how much is the ticket
+tool(BuyEventTickets): ok n_results=1
+assistant: it is located at 358 west 44th street. the ticket is $30
+user: thanks
+assistant: what else can i do for you today
+user: no that's it
+assistant: have a nice day

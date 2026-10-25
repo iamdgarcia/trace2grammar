@@ -1,0 +1,34 @@
+user: I'm looking for a place to live.
+assistant: How many baths do you want to have?
+user: I found 2 bedrooms 1 bath.
+assistant: What area are you looking in?
+user: I want to find a property in Palo Alto.
+assistant: Are you looking to rent or buy?
+user: I want to buy.
+tool(FindHomeByArea): ok n_results=6
+assistant: I found 6 houses. 275 Hawthorne Apartments is a great property located at 275 Hawthorne Avenue for $2,750,000.
+user: Is there a garage?
+assistant: Yes, there's a garage.
+user: Sounds good. I want to schedule a visit on the 5th of this month.
+assistant: Please confirm: a visit to 275 Hawthorne Apartments on March 5th.
+user: Yes, sounds good.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been booked.
+user: I want to share the location with Emma.
+assistant: Please confirm: sharing the location 275 Hawthorne Avenue with Emma.
+user: Sounds great.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Thanks. I want to find a normal cab there for three people.
+assistant: Please confirm: a regular ride for 3 to 275 Hawthorne Avenue.
+user: Yes, sounds great.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked.
+user: How long until the cab is here?
+assistant: The cab will be there in 3 minutes.
+user: How much is it?
+assistant: The cab is $29.27.
+user: Thanks so much/
+assistant: Anything else I can do for you?
+user: No, that's all. Thanks.
+assistant: Have a great day!

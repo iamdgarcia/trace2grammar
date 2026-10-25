@@ -1,0 +1,15 @@
+user: I would like to find a home in Phoenix, AZ, with a rating of 4.1 or higher
+tool(SearchHouse): ok n_results=10
+assistant: At 10 East Thomas Road there's one with 4.1
+user: Yes, It sounds good!
+assistant: Do you want to book this house?
+user: Yes, please! I need it for one people, from 6th of March to March 13th
+assistant: A house for 1 people in Phoenix, from March 6th to March 13th: do you confirm?
+user: Yes, I confirm. How much does this house cost? What is the phone number?
+tool(BookHouse): ok n_results=1
+assistant: It costs $1,344 in total. Phone number is +1 602-220-4400. The house has been booked!
+user: Are there any interesting attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Yes. There's a Museum: Arizona Capitol Museum
+user: Yes, It's fine for me! Thank you!
+assistant: Have a good time!

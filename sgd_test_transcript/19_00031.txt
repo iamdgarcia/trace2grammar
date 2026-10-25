@@ -1,0 +1,29 @@
+user: Find me a rental
+assistant: Whats the pick up time and the place of pickup
+user: Looking for cars in Vancouver, BC around 8 in the night
+assistant: Can you tell me the start time of the car rental?
+user: I want to start it from March 9th
+assistant: For what duration do you want the car?
+user: I want it till 13th of this month
+tool(GetCarsAvailable): ok n_results=7
+assistant: SUV Dacia Duster is the best car available at YVR International Airport.
+user: That's great
+assistant: Can I book the car?
+user: I want to reserve it later
+assistant: Do you need any more help?
+user: Is there a direct bus from Seattle?
+assistant: When is your leaving date?
+user: I am leaving on 2nd of March
+tool(FindBus): ok n_results=10
+assistant: 10 buses are listed. There is a bus departing at 6:10 am costing $28
+user: what is the departing station?
+assistant: Departing station is Westlake Station
+user: That's great. Find a one-way flight going there.
+assistant: What is your final date to leave March 9th, or March 2nd, or some other day?
+user: My travel starts on next Tuesday.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Is Delta Airlines fine with you? The onward flight takes off at 4:10 am and costs $219 and has a layover.
+user: That's cool
+assistant: Do you want any more help?
+user: No, thank you
+assistant: Have a great day.

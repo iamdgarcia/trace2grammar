@@ -1,0 +1,34 @@
+user: I need a train ticket.
+assistant: To where and when are you needing a train?
+user: I need to get to SD on March 7th.
+assistant: Where are you leaving from?
+user: I need to leave from Anaheim, CA.
+tool(FindTrains): ok n_results=7
+assistant: There is one that costs $48, it leaves at 6:30 am.
+user: What station is it at?
+assistant: That would be the Anaheim Intermodal Center.
+user: That would work. Get me a ticket please.
+assistant: How many seats do you want?
+user: Just for 1 person.
+assistant: Would you like to get travel insurance?
+user: Trip insurance, yes.
+assistant: Okay,let's see you want 1 Value ticket for March 7th for the train leaving Anaheim and going to San Diego at 6:30 am right?
+user: Yes that's it.
+tool(GetTrainTickets): ok n_results=1
+assistant: The purchase went through you have your ticket.
+user: Is there anything fun to do on March 7th there?
+assistant: Like what? What do you like to do?
+user: I enjoy a good Musical performance.
+tool(FindEvents): ok n_results=10
+assistant: There are several, here are 10, this one is at 7:30 pm on March 7th it will be at the Cal Coast Credit Union Amphitheater they are featuring Alejandro Sanz.
+user: What does a seat cost?
+assistant: They are $50 each.
+user: I think I'd really like that. Would you share that location for me?
+assistant: With whom.
+user: I want to let Emma know about it.
+assistant: You want to let Emma know the location Cal Coast Credit Union Amphitheater is that right?
+user: Yes it is.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Great, thank you, and goodbye.
+assistant: Have a wonderful day.

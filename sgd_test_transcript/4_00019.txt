@@ -1,0 +1,23 @@
+user: Would you help me to search rental car?
+assistant: For how many days you want the car for rental and what time you want to pick up?
+user: I want the SUV car from next monday till the 5th and pick up time is afternoon 2:15.
+assistant: From which place you want the car for rent?
+user: I want the car from SD.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I found one nice SUV of Alfa Romeo Stelvio which available at Santa Fe Depot.
+user: Any other help you need? I like to pick up at twelve in the afternoon.
+tool(GetCarsAvailable): ok n_results=1
+assistant: I found 1 nice SUV of Jaguar F-Pace which available at SAN International Airport.
+user: This is cool..I like to book a car.
+assistant: Are you in need of insurance?
+user: No, i don't need..
+assistant: please give confirmation details: You need a rental SUV car on march 4th to be pick up from SAN International Airport at 12 pm and the drop-off date is march 5th. There is no insurance.
+user: Sorry, i like to add insurance.
+assistant: please give confirmation details: You need a rental car on march 4th with insurance.
+user: This is fine.
+tool(ReserveCar): ok n_results=1
+assistant: I booked your car.
+user: Can i know the cost per day?
+assistant: Per day it cost around $54.00
+user: Thanks for your help.
+assistant: Have a nice day.

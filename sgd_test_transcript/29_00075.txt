@@ -1,0 +1,34 @@
+user: Can you help me find some cool things to do?
+assistant: Sure where should I look?
+user: I want to look around SFO
+assistant: What kind of event do you want
+user: I want something music related
+tool(FindEvents): ok n_results=10
+assistant: Alex Cameron is a popular attraction at August Hall, there's a show at 7 pm on March 8th
+user: Where is the venue and how much is a ticket?
+assistant: It's $25 and it's at 420 Mason Street
+user: That sounds good
+assistant: Do you want tickets?
+user: Not right now, but help me find a 4.1 or higher rated house
+tool(SearchHouse): ok n_results=10
+assistant: There's a 4.1 rated place at 1100 Market Street Hotel entrance is at, 45 McAllister Street that you might like
+user: Do they have laundry? And what's their number?
+assistant: It does, and it's +1 415-735-7777
+user: That's great, what about buses headed there?
+assistant: When are you leaving? March 7th, March 8th? Or another time
+user: I want to leave March 6th actually
+assistant: From where though?
+user: I'll be coming from Fresno
+tool(FindBus): ok n_results=8
+assistant: How about the $30 bus that leaves at 10:50 am
+user: Where does it depart from and how many stops?
+assistant: It's a direct bus leaving from 2660 Tulare St
+user: Great, now let's get three tickets to that show
+assistant: Confirming you want 3 tickets to Alex Cameron on March 8th in San Francisco
+user: Yes that's great
+tool(BuyEventTickets): ok n_results=1
+assistant: You're booked, have a good time
+user: Thanks so much
+assistant: Can I help you with something else?
+user: No, that's it for now
+assistant: Enjoy your day!

@@ -1,0 +1,37 @@
+user: I'm looking for bus tickets.
+assistant: Where are you traveling to?
+user: I'm going to Portland, OR.
+assistant: When are you departing?
+user: I am leaving on Sunday this week.
+assistant: Where are you departing from?
+user: I'm leaving from Seattle.
+assistant: How many tickets do you want to purchase and what time do you plan on leaving?
+user: I need two tickets and I'd like to leave at half past 12 in the afternoon.
+assistant: Okay, you want 2 tickets for the bus traveling from Seattle to Portland on March 3rd at 12:30 pm and you don't have extra luggage, right?
+user: No, I'm traveling from San Diego to Long Beach.
+assistant: Okay, you want 2 tickets for the bus traveling from San Diego to Long Beach and you don't have extra luggage, right?
+user: No, I do have extra luggage.
+assistant: Okay, you need 2 bus tickets and you do have extra luggage, correct?
+user: Yes, that works. What bus station does it depart from and arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have purchased the tickets. The bus departs from El Cajon Bus Stop and arrives at Downtown Station.
+user: Thank you. I also need a rental car there.
+assistant: What time do you want to pick it up? Are you picking up the car on March 3rd? How long do you need the car?
+user: I need the car from March 9th at 3:30 in the afternoon until the 10th of this month.
+assistant: Are you picking it up from Long Beach?
+user: Yes, that works.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is an Alfa Romeo Stelvio SUV available at LGB Airport.
+user: How much is it per day?
+assistant: It is $44.00 per day.
+user: That sounds good.
+assistant: Do you want to reserve the car?
+user: Yes, I do.
+assistant: Do you want to add insurance?
+user: No, I don't.
+assistant: Okay, you want to rent a SUV from LGB Airport from March 9th at 3:30 pm until March 10th and you don't need insurance, correct?
+user: Yes, that is right.
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation.
+user: Thank you, that is all I needed.
+assistant: Have a great day.

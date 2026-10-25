@@ -1,0 +1,27 @@
+user: I am interested in finding a rental car which I need to have till 5th of March, and I will be available to pick it up at five in the evening.
+assistant: Can you tell me from where you want to rent the car, and when you want to start renting the car?
+user: The car I am looking for should be in Vancouver, and I want to have it from 1st of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found 10 cars which you might be interested in. One of the cars which you can consider is a Sedan Audi A8, and you can pick it up at Pacific Central Station.
+user: Can you tell me how much it will be costing me per day?
+assistant: Renting this car will be costing you $27.00 per day.
+user: That seems nice. Now I would like to have tickets for an event there.
+assistant: Can you tell me the number of tickets you want to buy, and also could you tell me the date and the city that I should search of the event?
+user: I am interested to have four tickets to an event which happens around Portland on the 10th.
+assistant: Can you tell me the specific event you are looking for?
+user: Some friends told me that Benjamin Francis Leftwich event is a nice one.
+assistant: Can you please confirm that you want to buy 4 tickets for the Benjamin Francis Leftwich event which will happen in Portland on March 10th?
+user: That is not right, because I only need 1 ticket, and would be nice to have it for Annual School Performance.
+assistant: Can you please confirm that you want to book 1 ticket for the Annual School Performance event?
+user: Yes, that suits me just fine.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested booking has been made, and I wish you have a good time there.
+user: Can you now help me with renting the car you found earlier?
+assistant: Do you want to have insurance in the car?
+user: I am not interested to have insurance with the car.
+assistant: Can you please confirm that you want to rent a Sedan car without insurance, which you will be picking up from Pacific Central Station on March 1st at 5 pm, and that you will need it till March 5th?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been reserved for you.
+user: I appreciate your help. That would be all for now.
+assistant: Have a good time!

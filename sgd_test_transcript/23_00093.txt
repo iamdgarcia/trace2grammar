@@ -1,0 +1,29 @@
+user: I would like to find a train, can you help me with that?
+assistant: What date do you plan to depart? What city do you plan to depart from?
+user: I will be leaving from Washington on March 3rd.
+assistant: What is your destination city?
+user: I am planning to go to Philadelphia.
+tool(FindTrains): ok n_results=8
+assistant: There is a train departing at 6 am that costs $58 in total.
+user: What other trains are available? There are four of us who will need seats.
+tool(FindTrains): ok n_results=4
+assistant: There are 4 trains. One is departing at 7:20 am and will cost $187 in total.
+user: That sounds good, I would like to book the train tickets. Please include the trip insurance.
+assistant: You would like 4 Value tickets with trip insurance for the train from Washington to Philadelphia leaving March 3rd at 7:20 am, is this correct?
+user: Yes, that's right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked successfully.
+user: Thank you for your help. I would also like to find something interesting to do while there. I would like an activity on March 3rd.
+assistant: Is there any particular category you prefer, for example Music or Theater?
+user: Music would be my first choice.
+tool(FindEvents): ok n_results=10
+assistant: Charlotte Lawrence is performing at The Fillmore Philadelphia on March 3rd at 5:30 pm.
+user: Where is the venue located?
+assistant: The venue is at 29 East Allen Street.
+user: OK, that sounds great. Oh, can you share the location with Keith?
+assistant: You would like to share the location The Fillmore Philadelphia with Keith, is this correct?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thank you, that's very helpful. That's all I need for now.
+assistant: Have a great day!

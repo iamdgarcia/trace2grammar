@@ -1,0 +1,25 @@
+user: I would like to send funds from my saving account to Amelia in private.
+assistant: Can you confirm me the amount please?
+user: I would like to send one hundred and sixteen bucks.
+assistant: Please confirm: You want me to send $116 from your debit card to Amelia in private.
+user: Yes, That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment. It will reflect in receiver's account.
+user: Thank you so much for your help.
+assistant: Is there anything else I can help you with?
+user: I want to request funds.
+assistant: What amount and from whom do you want request the fund from?
+user: I want to request 49 bucks from Mahmoud.
+assistant: Please confirm: You want me to make a transaction of $49 with Mahmoud in public.
+user: Yes, That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made your request.
+user: I want to make a payment to Margaret.
+assistant: How much funds and from which account do you want me transfer?
+user: I would like to transfer 33 dollars from visa.
+assistant: Please confirm: You want me to make a transfer of $33 from your credit card to Margaret in public.
+user: Yes, That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment and the money should reflect in receiver's bank account shortly.
+user: That is all I need for now. Thank you! Bye!
+assistant: I am glad I could help. Have a nice day! Bye!

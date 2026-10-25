@@ -1,0 +1,30 @@
+user: Are you able to suggest a stimulating event?
+assistant: Of course. Which area would you care for me to check?
+user: Please search for something happening in Rio.
+tool(FindAttractions): ok n_results=10
+assistant: I found a Museum in that area. You might enjoy the Air And Space Museum.
+user: That's a magnificent idea. I will also need you to search for a rental vehicle in the area. The dates I need the transportation rental are the 5th of this month until the 12th of this month.
+assistant: Am I checking rentals in the Rio de Janeiro area?
+user: Yes, that's right.
+assistant: Is there a time of day you prefer to start the rental?
+user: I would like to begin the rental at 3:30 in the afternoon.
+tool(GetCarsAvailable): ok n_results=2
+assistant: One excellent option is a SUV Suzuki Grand Vitara. You can pick this rental up at the Galeao International Airport.
+user: I like that option.
+assistant: Let me know what else I can assist you with.
+user: Yes. Book the rental in my name please.
+assistant: Would you care to include coverage on the vehicle.
+user: Skip the coverage.
+assistant: I will book the rental vehicle for you to pick up at Galeao International Airport. I understand you need the rental from March 5th at 3:30 pm until March 12th. You prefer to pick up a SUV. Is everything right?
+user: You have the details exactly like I want. Thanks for checking. Do you know how much money I will pay per day?
+tool(ReserveCar): ok n_results=1
+assistant: The rental has been booked in your name. The fee will be $46.00 every day.
+user: Please send an exact point on the map where I am getting the rental.
+assistant: Should I send the location to you or someone else? Am I sending a map of where to find the Galeao International Airport?
+user: Send the location to Kevin please. The location to send him is the Air And Space Museum.
+assistant: I will send Kevin a map of where to find the Air And Space Museum with your approval.
+user: Yes. I approve.
+tool(ShareLocation): ok n_results=1
+assistant: The location details have been sent.
+user: That will make my day so much easier. Much gratitude. I will not need anymore help right now.
+assistant: Do have fun today.

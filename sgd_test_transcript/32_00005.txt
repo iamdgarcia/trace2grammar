@@ -1,0 +1,27 @@
+user: Hey, can you help me get a therapist?
+assistant: Do you want a family counselor, a psychologist or some other kind of therapist?
+user: A psychologist would be great?
+assistant: In which city should I look for it?
+user: In Martinez please.
+tool(FindProvider): ok n_results=3
+assistant: A great psychologist in Martinez is Miller Nicole G.
+user: Can you find me a psychiatrist instead!
+tool(FindProvider): ok n_results=2
+assistant: I found 2. In Martinez a great psychiatrist is Andreas R. Bollinger.
+user: Sounds great, book me an appointment.
+assistant: For what date and time?
+user: At 12:30 on March 9th please.
+assistant: So an appointment with Andreas R. Bollinger on March 9th at 12:30 pm?
+user: Yes. What's their phone number and address?
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, I couldn't book it at the time you wanted. Can I help you with something else?
+user: Can you try to book the appointment at twelve in the afternoon instead?
+assistant: So an appointment with Andreas R. Bollinger on March 9th at 12 pm?
+user: Yes, that's it.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked and you'll soon get a confirmation email.
+user: Great. Can you recommend me a comedy movie with Enid-Raye Adams and directed by Gene Stupnitsky please?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. It's title is Good Boys and it has a 79 out of 100 rating.
+user: Sounds good, that's all I need for now.
+assistant: I'm glad I could help, have a great day.

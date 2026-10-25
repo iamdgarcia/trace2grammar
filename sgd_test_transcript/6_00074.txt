@@ -1,0 +1,18 @@
+user: I'm looking for a salon.
+assistant: What area do you want to search in?
+user: I'm looking for a salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. How about Aya Salon & Spa in Berkeley?
+user: What is the phone number and is it unisex?
+assistant: The phone number is 510-527-3100 and it is not a unisex salon.
+user: Okay, that sounds good. I'd like to make an appointment there.
+assistant: What date and time do you want the appointment?
+user: I want the appointment for March 13th at evening 4.
+assistant: Okay, I have an appointment at Aya Salon & Spa on March 13th at 4 pm, right?
+user: No, I'd like to visit it on March 10th.
+assistant: Okay, the appointment is now on March 10th at 4 pm, correct?
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment.
+user: Thank you, that is all I needed.
+assistant: Have a great day.

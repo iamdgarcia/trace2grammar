@@ -1,0 +1,22 @@
+user: I need a 3 star hotel with two rooms.
+assistant: Where would you like to look?
+user: I need the hotel in London.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 possibilities. There is a 3 star hotel called Abbey Court Hotel (Hyde Park).
+user: Do they allow smoking?
+assistant: Yes, smoking is allowed.
+user: Sounds perfect.
+assistant: Would you like to go ahead and reserve the room?
+user: Not right now. I need a round trip flight to get there. Can you look for flights from Washington leaving Monday next week and coming back March 12th ?
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I found 3 possibilities. There is a $570 American Airlines tick leaving at 2:55 pm. It has one layover and the return flight leaves at 12:45 pm.
+user: That works. Can you also reserve that hotel you found? I need a check in date of the 7th of March and I'll be there for 1 day.
+assistant: Please confirm. You want to book 2 rooms at Abbey Court Hotel (Hyde Park) in London checking in on March 7th and staying for 1 day.
+user: Sure, that sounds good. What's the phone number and cost per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation in complete. Their phone number is +44 20 7402 0281 and it costs $270 per night.
+user: I'd also like to know what attractions there are. I'd like to go to a child-friendly museum.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 possible attractions. The Apsley House is a museum.
+user: Ok, cool. That's all I needed, thank you.
+assistant: Enjoy your travels!

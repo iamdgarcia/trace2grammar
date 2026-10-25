@@ -1,0 +1,23 @@
+user: I'd like to check the weather in Chicago.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 73 Fahrenheit with a 29 percent chance of rain.
+user: Okay. I want to book a one-way flight there.
+assistant: What city are you leaving from? Are you leaving on March 1st?
+user: Yes please. I'm leaving from CDMX.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I found 3 flights. There is an American Airlines flight that takes off at 4:25 pm for $285.
+user: Is it for 1 person?
+assistant: Yes, 1 person.
+user: Is it a business class ticket? When does the flight arrive at the destination?
+assistant: It is economy class seating and arrives at 3:57 am.
+user: Ok sounds great.
+assistant: Anything else I can do for you?
+user: I'd like to find a rental car. I need it from the 10th of this month to the 11th of this month.
+assistant: When do you want to pick it up?
+user: I'd like to pick it up at 5 o'clock in the evening.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars available. There is a SUV Dacia Duster available at Chicago Union Station.
+user: Okay, sounds good.
+assistant: Would you like to reserve this car?
+user: No, not right now. Thanks.
+assistant: Have a great day!

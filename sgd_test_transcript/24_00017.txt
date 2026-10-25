@@ -1,0 +1,25 @@
+user: i have a plan to travel so will you find me a one way flight.
+assistant: in which date would you like to travel?
+user: i want to start my travel on 1st of March.
+assistant: from which city do you need to depart?
+user: i need to depart from San Fran
+assistant: to which place are you planning to go?
+user: i need to go to LA. I need 1 tickets. Find me Economy class tickets.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: i found 5 flights that suits your needs. I like to fly with Alaska Airlines. The onward flight takes off at 12:25 pm and it is a direct flight. the ticket costs $83.
+user: ok that sounds good. i need to find trains going over there.
+assistant: Whether you will start travelling on March 1st?
+user: no i need to start my travel on the 10th.
+tool(FindTrains): ok n_results=9
+assistant: there are 9 trains as per your needs. What about the train depart at 6:20 am ? it costs about $89 in total.
+user: whether is there any other trains available?
+assistant: what about the train depart at 8:40 am ? it costs $92 in total.
+user: ok thats great.
+assistant: Whether you want me to book tickets in that train?
+user: yes, i want to make the reservation. i need to have trip insurance. i need value tickets.
+assistant: please check and confirm the following details. Train ticket need to be booked from San Francisco and the destination is Los Angeles. The train leaves on March 10th. It leaves at 8:40 am. the number of passengers is 1 people and it comes with trip insurance and it is a Value ticket
+user: Ok it suits for me. WHich is the origin station of this train ? which is the destination station for this train?
+tool(GetTrainTickets): ok n_results=1
+assistant: tickets have been booked successfuly. the origin station is Salesforce Transit Center and destination station is Union station.
+user: thanks a lots for your immense help. that's all i need.
+assistant: Have a wonderful day. bye

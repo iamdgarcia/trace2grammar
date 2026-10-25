@@ -1,0 +1,28 @@
+user: Hello. I'm looking for a place to live.
+assistant: Are you interested in a place to rent or buy? How many baths do you require?
+user: I'd like to rent a place with three baths and a garage.
+assistant: Where should I begin the search? How many bedrooms will you need?
+user: I'd like to find a four bed room place in San Jose.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 that might meet your needs. May I suggest Alameda Gardens Apartments? It is $4,900 per month and located at 73 North Keeble Avenue.
+user: I'd like to see it first.
+assistant: When would you like to have a showing?
+user: Please check if there is anything today.
+assistant: You'd like to visit Alameda Gardens Apartments today, March 1st. Is this correct?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: You are scheduled to see the apartment today.
+user: Great. Can you share it's location with Russell?
+assistant: You'd like to share 73 North Keeble Avenue with Russell. Is that correct?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Perfect. Now I need a cab to get there.
+assistant: DO you prefer a pool or luxury ride? How many are in your party?
+user: There is a group of four of us and a normal ride is fine.
+assistant: I'm making a reservation for a regular ride for 4 to 73 North Keeble Avenue.
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab is on the way.
+user: Thanks for the assistance.
+assistant: You're welcome. Enjoy the rest of your day.

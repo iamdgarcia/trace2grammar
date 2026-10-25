@@ -1,0 +1,27 @@
+user: Can you find me a place to eat?
+assistant: Which type of food would you like to eat?
+user: I am looking for a place which serves Burrito.
+assistant: Which area do you want me to search in?
+user: I am looking for a restaurant in Los Gatos.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 restaurants you may like. How about a nice restaurant called Pedro's located in Los Gatos?
+user: Okay, That sounds good to me. Can you book me a table at the restaurant for 3 people at 6:30 pm?
+assistant: Please confirm: You want me to book a table for 3 people at Pedro's located in Los Gatos for 6:30 pm on March 1st.
+user: No, Book the table for 2 people.
+assistant: Please confirm: You want me to book a table for 2 people at Pedro's located in Los Gatos for 6:30 pm on March 1st.
+user: Yes, That is correct. Can you check whether they serves vegetarians?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked the table and they don't serve enough vegetation.
+user: Can you check whether they have outdoor seating?
+assistant: No, There is no outdoor seating.
+user: Thank you for the help.
+assistant: Is your destination 316 North Santa Cruz Avenue? And which type of ride like Regular or pool or anything else do you prefer?
+user: Yes, That is correct. I want to book a luxury ride.
+assistant: Please confirm: You want me to book a luxury ride in a cab for 2 people going to 316 North Santa Cruz Avenue.
+user: Yes, That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your ride is successfully booked and the cab is on the way.
+user: Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

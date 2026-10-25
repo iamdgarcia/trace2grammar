@@ -1,0 +1,13 @@
+user: Hey, could you please find me regular movie tickets for Friday next week at 22:45?
+assistant: Please tell me the number of tickets you need.
+user: I'd like three tickets, please.
+assistant: Do you know what movie you'd like to watch? Any particular city I should search in?
+user: Please search for IT two in Milpitas.
+assistant: Okay. Please confirm that you're purchasing 3 regular tickets to watch IT Chapter Two at 10:45 pm on March 8th, in Milpitas.
+user: Yes, that is correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: I have successfully purchased your tickets.
+user: Thank you very much. You've been very helpful.
+assistant: Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Do have yourself a great day!

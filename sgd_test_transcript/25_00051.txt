@@ -1,0 +1,25 @@
+user: Hi, could you help me search for some nice movies to watch please?
+assistant: And where are you interested to watch the movie at?
+user: Find me a movie showing in the Santa Rosa area.
+tool(FindMovies): ok n_results=10
+assistant: Would you like to watch After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: Fiddler: A Miracle of Miracles sounds great to me!
+assistant: Would you like me to purchase the tickets for you?
+user: No, that is not necessary.
+assistant: Could I further assist you then?
+user: Could you help me search for songs too?
+tool(LookupMusic): ok n_results=10
+assistant: Would you like to listen to the Final Masquerade by Linkin Park from their album The Hunting Party?
+user: Are there any alternatives?
+assistant: How about The Red Baron by Sabaton from their album The Great War?
+user: Yes, that sounds good to me.
+assistant: Would you like me to play this song for you?
+user: Sure, you can play it on any device. Thanks!
+assistant: Please confirm your request to play The Red Baron in the living room.
+user: That is fine with me. Was this song released two years back, and what genre does this song belong to?
+tool(PlayMedia): ok n_results=1
+assistant: Your music has been played, enjoy! This is a metal song released in 2019.
+user: I see, thank you so much!
+assistant: No worries, do you need any other assistance?
+user: No, that is all I need. Thanks a bunch.
+assistant: Have a great day ahead!

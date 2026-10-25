@@ -1,0 +1,19 @@
+user: I want to find a place where I can have a meal.
+assistant: Is there some specific kind of food you are interested in? Do you have a preferred location that I can look into?
+user: The place should have vegetarian alternatives, more specifically some place that serves Sushi in Berkeley.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 restaurants which match what you want, with one of the restaurants being Iyasare which is a good restaurant in Berkeley.
+user: Alright, this seems nice.
+assistant: Do you want to have a table booked for you at this restaurant?
+user: Yes, I want to have a table booked for me at this restaurant. I want to have the table to be reserved for two people on the 11th, as for the time, it should be for 2 pm.
+assistant: Can you please confirm that you want to have a table booked for 2 people at 2 pm on March 11th at the Iyasare restaurant in Berkeley?
+user: Yes, that is what I want.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I apologize but I could not complete the reservation you asked for. Is there something else I can help you with?
+user: Would you mind trying again to book a table, but make it for four people at 7:15 pm
+assistant: Can you confirm that you want to have a table for 4 people booked for March 11th at 7:15 pm at Iyasare restaurant in Berkeley?
+user: Alright, that suits me well. Can you check if they have places to sit outside since I like fresh air.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I can confirm that they can provide you with outdoor seats, though I could not make the reservation you asked for. Iyasare is really a good restaurant so do you want to have the reservation for 4 people on March 11th at 7:30 pm?
+user: I do not want that. That would be all.
+assistant: Have a wonderful time!

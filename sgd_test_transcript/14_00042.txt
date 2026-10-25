@@ -1,0 +1,17 @@
+user: I want to find a movie online
+assistant: What kind of movie?
+user: I want to watch something with suspense in it
+tool(FindMovies): ok n_results=4
+assistant: OK, there are 4 suspense films including Rojo, The Art of Self-Defense, and Madeline's Madeline that you might enjoy
+user: How about Rojo, let's watch that now
+assistant: OK, I'll play Rojo with English subtitles if that's ok?
+user: Yes that's fine
+tool(PlayMovie): ok n_results=1
+assistant: Playing it for you now
+user: Thanks, now can you see what the weather is like in Hayward
+tool(GetWeather): ok n_results=1
+assistant: Sure, it'll be 80 degrees with a 9 percent chance of rain
+user: OK thanks for letting me know
+assistant: What else do you need?
+user: For now nothing else
+assistant: OK then, see you

@@ -1,0 +1,9 @@
+user: I will be in Vegas and need a rental car, preferably an SUV. I will need it until the 12th of this month.
+assistant: Do you know what time you will be picking up the vehicle?
+user: I should be able to pick it up by 5:15 pm.
+assistant: What day would you like to begin the rental for the SUV?
+user: I want it to start the 6th of March.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is an Alfa Romeo Stelvio SUV available at Union Plaza. There are also 4 other cars available.
+user: No, that SUV sounds good. Thanks for your help.
+assistant: You're most welcome.

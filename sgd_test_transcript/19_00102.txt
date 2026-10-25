@@ -1,0 +1,37 @@
+user: I would like to rent a car.
+assistant: Until when do you need the car?
+user: I need the car until the 12th.
+assistant: What time would you like to pick up the car?
+user: I would like to pick it up at 5 o'clock in the evening.
+assistant: When are you picking up the car?
+user: I would like to pick it up next Thursday in NYC.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV Alfa romeo stelvio available at port authority station.
+user: Do you have another option?
+assistant: There is a sedan dodge charger at grand central station.
+user: yes, that sounds good.
+assistant: Would you like to rent the car?
+user: Not at the moment.
+assistant: Can I help with something else?
+user: I would like to find something in London, England on the 3rd of March for 2 people.
+assistant: What is the event you are looking for?
+user: I would like to see Broken English.
+assistant: Booking 2 tickets for Broken English on March 3rd in London.
+user: Yes. What is the address of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: It's taking place at the honor oak pub.
+user: How much does a ticket cost and when does it start?
+assistant: The ticket is $45 and it starts at 6 pm.
+user: Can you reserve the rental car you previously found?
+assistant: Do you need insurance?
+user: I don't need insurance.
+assistant: Booking Sedan at Grand Central Station on March 7th at 5 pm and return is March 12th.
+user: I do not want insurance.
+assistant: Grand Central station comes with insurance.
+user: How much does it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The cost is $53.00 per day.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

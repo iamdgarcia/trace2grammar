@@ -1,0 +1,29 @@
+user: Could you find me a train to new york for march 13th? I don't care about the fare class.
+assistant: Where are you heading?
+user: Chi-town.
+tool(FindTrains): ok n_results=6
+assistant: How about this one, it leaves at 6 am and costs $96 total.
+user: Where does it arrive, and where is it leaving from?
+assistant: It leaves from grand central station and arrives at chicago union station.
+user: That works.
+assistant: Would you like to book tickets?
+user: No thanks. I'd like to find something interesting to do in chicago on that day.
+assistant: What category of thing? You can say music, theater, or anything else.
+user: I'd like something music based on the 14th of this month.
+tool(FindEvents): ok n_results=3
+assistant: I have 3 options. How about Duster, it's taking place in the sleeping village on march 14th at 6:30 pm.
+user: How costly is it, and where is the venu?
+assistant: It's $55 for the ticket, and found at 3734 west belmont avenue.
+user: Do you have anything else there?
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 options. How about 360 CHICAGO, it's a tourist attraction.
+user: Anything child friendly?
+tool(FindAttractions): ok n_results=9
+assistant: I have 9 options. How about Big BUs Tours Chicago (Tours Begin at 98 E. Upper Wacker Dr.), it's a tourist attraction.
+user: Great, could you find me a house there?
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 options. THis one is a 4.4 /5, at 1 south franklin street
+user: What's their contact number, and do they have laundry?
+assistant: They do not, and their number is +1 312-558-1020
+user: That's great, that's all I need
+assistant: Hope you have a great day.

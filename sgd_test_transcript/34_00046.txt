@@ -1,0 +1,19 @@
+user: I would like to find a hotel room.
+assistant: Where should I search for a hotel for you?
+user: I'd like to find a hotel in Kuala Lumpur.
+tool(SearchHotel): ok n_results=10
+assistant: I have found 10 hotels that would work. There's a 5 star hotel called Alila Bangsar.
+user: That sounds great. What are some of the attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that might be of interest to you, including a Nature Preserve called Aquaria KLCC.
+user: Awesome, please reserve a room for me at the hotel you found.
+assistant: How long do you want to stay? And when will you be checking in?
+user: I'd like to check in on the 10th of this month and stay for 4 days. I'll be needing 3 rooms.
+assistant: Please confirm the following: You want 3 rooms for 4 days starting March 10th at Alila Bangsar in Kuala Lumpur?
+user: Yes, that would work.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation was successful.
+user: Where is the hotel located? And is smoking allowed?
+assistant: They are located at East Side, 58, Jalan Ang Seng, Brickfields, 50470. And there's no smoking allowed.
+user: Thanks, that'll be all for now.
+assistant: Have a great day!

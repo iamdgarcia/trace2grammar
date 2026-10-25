@@ -1,0 +1,20 @@
+user: I am looking for a nice movie with Martin Kove as an actor to watch.
+tool(FindMovies): ok n_results=1
+assistant: What do you think of Once upon a Time In Hollywood with an average rating of 85 out of 100?
+user: That sounds nice to me. Can you find me a restaurant there?
+assistant: Which city would you like to search in?
+user: I am looking for a restaurant serving Barbecue in SF.
+tool(FindRestaurants): ok n_results=10
+assistant: There is nice restaurant called 1760 located in San Francisco.
+user: Can you check whether the restaurant is ultra high-end?
+assistant: The restaurant is a pricey restaurant.
+user: Okay, That sounds great to me. Can you book a table at the restaurant for 9th of this month with the timing for the reservation as 13:15?
+assistant: Please confirm: You want me to book a table for 2 people at 1760 located in San Francisco on March 9th at 1:15 pm.
+user: Yes, That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, Your reservation could not be made due to some reasons. Do you want me to try booking a table for 2 people at 1760 for March 9th at 1:30 pm?
+user: Yes, That sounds good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation.
+user: That is all I need for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

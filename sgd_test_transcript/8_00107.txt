@@ -1,0 +1,24 @@
+user: I'd like to find a train.
+assistant: Where will you be departing from?
+user: I'll be leaving from NY.
+assistant: Where do you plan to go and on what date?
+user: I need to go to Washington on the 12th of March.
+tool(FindTrains): ok n_results=9
+assistant: Of the 9 suitable trains, there is one that departs at 7:20 am and a ticket costs $67.
+user: That sounds like a good option.
+assistant: Shall I book tickets for you?
+user: Yes, please reserve tickets for me.
+assistant: How many tickets do you need?
+user: I'll only need one seat.
+assistant: Would you like to include travel insurance?
+user: Yes, that would be great.
+assistant: Please confirm that you want 1 Value ticket from New York to Washington on the train that leaves at 7:20 am on March 12th.
+user: That's perfect.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your reservation is successful.
+user: From which station does the train depart?
+assistant: The train departs from the Grand Central Station.
+user: Thank you very much for the assistance.
+assistant: Is there anything else I can do for you?
+user: No. Thank you. That's all I need.
+assistant: See you and have a great day!

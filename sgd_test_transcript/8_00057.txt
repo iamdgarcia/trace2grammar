@@ -1,0 +1,20 @@
+user: I want to request a payment from Diego for one hundred and eight dollars.
+assistant: Please confirm: requesting payment from Diego for $108. This transaction is visible to the public.
+user: No, I want to make the transaction private.
+assistant: Please confirm: requesting a private transaction from Diego.
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been sent.
+user: Thank you. I want to make a payment to Mary.
+assistant: Do you want to transfer the money from app balance or debit card?
+user: Send from my check card, please.
+assistant: How much are you sending?
+user: Send 105 bucks from UnionPay.
+assistant: Please confirm: Sending $105 to Mary from your credit card. This transaction is public.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made. The money will be in the account shortly.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day.

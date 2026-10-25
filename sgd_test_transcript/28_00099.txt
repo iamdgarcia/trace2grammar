@@ -1,0 +1,37 @@
+user: I'm looking for some attractions.
+assistant: What city do you want to search in?
+user: I want an attraction in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: How about the Historical Landmark 30 St Mary Axe (The Gherkin)?
+user: That sounds good. I also need to pick up a rental car in London, England at six in the evening on the 5th.
+assistant: How long do you need the car?
+user: I need it until the 9th of this month.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I found 9 available cars. How about an Audi A8 Sedan at Heathrow International Airport?
+user: How much is it per day?
+assistant: It is $32.00 per day.
+user: What else is there? I'd like a hatchback in Fresno.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 cars for you. There is a Peugeot 208 Hatchback at Fresno Yosemite International Airport.
+user: Okay, that sounds good.
+assistant: Do you want to reserve the car?
+user: Yes, I do.
+assistant: Do you want to add insurance?
+user: No, I don't need insurance.
+assistant: Okay, you'd like to rent a hatchback from Fresno Yosemite International Airport on March 5th at 6 pm until March 9th and you don't want insurance, right?
+user: No, I do want insurance.
+assistant: Okay, you want to rent the hatchback with insurance, correct?
+user: Yes, that sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation.
+user: Thank you. I also need to share the location of Fresno Yosemite International Airport.
+assistant: Who do you want to share it with?
+user: I want to share it with Judy.
+assistant: Okay, you want to share the location of Fresno Yosemite International Airport with Judy, right?
+user: No, I want to share the address of Lake Terrace Apartments with Bobby.
+assistant: Okay, you want to share the location of Lake Terrace Apartments with Bobby, right?
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location..
+user: Thank you! That is all I need.
+assistant: Have a great day.

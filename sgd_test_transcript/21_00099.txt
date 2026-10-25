@@ -1,0 +1,23 @@
+user: Can you get me the weather for the 11th of March?
+assistant: Sure. For what city?
+user: For the ATL.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 87 degrees Fahrenheit. There is a 0 percent chance of rain.
+user: Okay. Can you find me some local attractions?
+tool(FindAttractions): ok n_results=10
+assistant: You might like Al-Farooq Masjid. It is a Place of Worship.
+user: Can you get me the phone number?
+assistant: You can reach them at 678-886-3457.
+user: Great. Can you find me a cab to get there?
+assistant: Do you have a ride preference?
+user: I prefer the Cheapest ride.
+assistant: How many seats will you be needing?
+user: I have a group of three.
+assistant: Can you confirm the following: you need a Pool ride with 3 seats to Al-Farooq Masjid.
+user: Yes, that works.
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your ride. Your cab is on its way.
+user: Thanks for your help.
+assistant: Do you need help with anything else?
+user: No. Thanks a lot.
+assistant: You're welcome. Have a wonderful day!

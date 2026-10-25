@@ -1,0 +1,19 @@
+user: I am bored and want to watch a movie.
+assistant: Where would you like to see the movie?
+user: I want to see a regular show in Emeryville.
+tool(FindMovies): ok n_results=7
+assistant: There are 7 suitable movies. Would you like to see Angel Has Fallen, Hobbs and Shaw or Hustlers?
+user: I saw those already. What else is showing?
+assistant: There is also Midsommar, Scary Stories to Tell in the Dark or The Angry Birds Movie 2.
+user: I saw those already as well. What else can I see?
+assistant: There is The Farewell.
+user: Great. I haven't seen The Farewell as yet. I would also need to have something to eat when I get there. I would like a reservation at 19:00 at Townhouse.
+assistant: You would like a reservation for 2 at Townhouse Bar & Grill at Emeryville at 7 pm on March 1st?
+user: That would be great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made the reservation.
+user: What time is the movie showing at AMC Bay Street on that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for the movie at AMC Bay Street 16 at 4 pm.
+user: That would be perfect. That's all I need for now.
+assistant: Enjoy your day.

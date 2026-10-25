@@ -1,0 +1,36 @@
+user: Transfer some funds for me.
+assistant: What account should I use?
+user: Transfer money out of my checking account.
+assistant: Who are you sending money to and what amount?
+user: I want to send 38 bucks to Amelia.
+assistant: You wish to make a public transaction to Amelia for $38 using your debit card, correct?
+user: That is right.
+tool(MakePayment): ok n_results=1
+assistant: Your money was sent and she will receive the money in a couple of days.
+user: Search for a train for me.
+assistant: What is your departure city?
+user: I am departing out of LAX.
+assistant: What is your departure date?
+user: I am departing on the 5th of March.
+assistant: What is your destination city?
+user: I will be travelling to San Diego.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6:50 am with a cost or $57 and is 1 of 10 trains that search found.
+user: That is perfect. What will the weather be like in San Diego on next Thursday?
+tool(GetWeather): ok n_results=1
+assistant: The normal temperature is 90 degrees with a 17 percent chance of precipitation.
+user: What is the average wind speed?
+assistant: The wind normally blows around 8 miles an hour.
+user: I see. Order me some train tickets.
+assistant: Shall I add travel insurance to your purchase?
+user: Yes, add travel insurance.
+assistant: How many people are going?
+user: I need one Value ticket.
+assistant: You want 1 Value train ticket with insurance that departs Los Angeles on March 5th at 6:50 am and heads to San Diego, correct?
+user: That is correct. What is the arrival station?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your train ticket has been ordered. The arrival station is Santa Fe Depot.
+user: What is the departure station?
+assistant: Union Station is the departing station.
+user: Thanks for you help. That is everything for now.
+assistant: Bye for now.

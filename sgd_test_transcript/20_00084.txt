@@ -1,0 +1,21 @@
+user: Please find me a house to stay.
+assistant: In which city are you planning to stay?
+user: Find me something in Chi-town.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house at 1 South Franklin Street which is rated 4.4.
+user: Does it have a laundry service? Can you get me their phone number?
+assistant: Sorry they don't offer laundry service. Their phone number is +1 312-558-1020.
+user: That's a great house.
+assistant: Do you want me to reserve this house for you?
+user: Yes please. We are three people and we will be checking in on the 6th and checking out on the 12th.
+assistant: Please confirm that you want to reserve a house for 3 people in Chicago from March 6th to March 12th.
+user: Yes that's perfect.
+tool(BookHouse): ok n_results=1
+assistant: Your house has been successfully booked.
+user: Can you find me some attractions there, preferably ones that are child friendly?
+tool(FindAttractions): ok n_results=10
+assistant: You might be interested in 360 CHICAGO which is a Tourist Attraction
+user: That's great, thank you.
+assistant: Is there anything else I can do for you?
+user: No, that's all for now. Thank you.
+assistant: Have a great day!

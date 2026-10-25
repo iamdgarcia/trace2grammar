@@ -1,0 +1,39 @@
+user: I'm looking for a unisex salon.
+assistant: What city do you want to search in?
+user: I want a salon in San Mateo.
+tool(FindProvider): ok n_results=10
+assistant: How about Elite Hair Design in San Mateo?
+user: What else is there?
+assistant: There is Great Clips in San Mateo.
+user: That sounds good, I'd like to make an appointment there.
+assistant: What date and time do you want the appointment?
+user: I want the appointment on the 14th at 1 pm.
+assistant: Okay, you want an appointment at Great Clips on March 14th at 1 pm, right?
+user: No, I want the appointment at quarter to 7 in the evening.
+assistant: Okay, you want the appointment at 6:45 pm on March 14th, correct?
+user: Yes, that works. What is their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, I was unable to book the appointment at that time. Does 6:30 pm on March 14th at Great Clips work? Their address is 211 Primrose Road and their phone number is 650-343-8579.
+user: Yes, that works.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed the appointment.
+user: Thanks! I'd also like to find a restaurant there on that day/
+assistant: What type of food do you want?
+user: I want something serving fish food.
+tool(FindRestaurants): ok n_results=9
+assistant: There is Andes Cafe San Mateo in San Mateo.
+user: That sounds good.
+assistant: Do you want to reserve a table?
+user: Yes, I do.
+assistant: What time do you want the reservation for?
+user: I want it at 12 pm.
+assistant: Okay, you want a reservation for 2 people at Andes Cafe San Mateo in San Mateo on March 14th at 12 pm, correct?
+user: No, I want it for four people at half past 5 in the evening.
+assistant: Okay, you want the reservation for 4 people at 5:30 pm, correct?
+user: Yes, that sounds good. What is their address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have confirmed the reservation. Their address is 2317 South El Camino Real.
+user: What is their user rating and do they have outdoor seating?
+assistant: Their user rating is 4.2 and they don't have outdoor seating.
+user: Thank you, that is all.
+assistant: Have a great day.

@@ -1,0 +1,27 @@
+user: I want you to help me find a direct bus.
+assistant: Can you tell me from where will you be leaving?
+user: I will be departing for my trip from SF.
+assistant: Can you tell me your destination, and when you are planning to leave for your trip?
+user: I have my mind set to leave on Sunday this week, and my destination is Long Beach, CA.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses which you might want to have. How would you like having the bus which leave at 7 am, and the ticket of which costs $47?
+user: Can you tell me the station from where this bus leaves, and the arrival station of this bus?
+assistant: This bus will be leaving from Transbay Terminal, and it's arrival station is Downtown Station.
+user: That seems a nice choice.
+assistant: Are you willing to have tickets bought for this bus?
+user: Yes, I actually want to have a seat booked for me at this bus.
+assistant: Can you tell me the number of tickets you want to buy?
+user: I want to have tickets for three people.
+assistant: Can you please confirm that you want to buy tickets for 3 people without extra luggage for the bus which departs from San Francisco on March 3rd at 7 am to arrive in Long Beach?
+user: Yes, that is what I want.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested tickets have been booked.
+user: I am grateful for your help.
+assistant: Is there something else I can help you with?
+user: I also need to find 1 room in a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which match what you requested, with one of them being a nice 3 star hotel which is called Best Western Of Long Beach.
+user: That seems a good one.
+assistant: Do you want to make a booking at this hotel?
+user: I am not interested to make a booking at this moment. That would be all at this moment.
+assistant: Goodbye, and have a good time!

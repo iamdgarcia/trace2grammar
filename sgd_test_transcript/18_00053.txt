@@ -1,0 +1,27 @@
+user: I need to schedule a visit to see someone. Can you help me find a Psychiatrist in the San Mateo area.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 psychiatrist matching your criteria; Lola Vildavskaia and they are located in San Mateo.
+user: Okay, that works for me
+assistant: Are you interested in scheduling a visit to this office?
+user: Yes please, I'd like to go ahead and schedule a visit.
+assistant: Do you have a date and time in mind for this visit?
+user: Sure, I'd like to go this Sunday at half past 2 in the afternoon
+assistant: Okay, you would like to schedule a visit with Lola Vildavskaia for MArch 3rd at 2:30 pm, correct?
+user: No, actually I would like the visit scheduled for the 4th of this month
+assistant: To confirm then,you would like to schedule the visit for March 4th at 2:30 pm, correct?
+user: Sure, that works for me. Cam you also give me their exact location as well as contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Your visit has been scheduled and an email confirmation will be sent to you. They are located at 327 North San Mateo Drive Suite 7, and their contact number is 415-407-3638.
+user: I'd also like to find a taxi to take me to the appointment
+assistant: Do you have a specific preference for the type of taxi you want to book, such as Luxury, Pool, or any other?
+user: Actually, I would like just a Regular ride
+assistant: And for how many passengers?
+user: I need seats for four people altogether
+assistant: So you'd like a Regular ride to 327 North San Mateo Drive Suite 7, and the numver of passengers is 4, correct?
+user: Perfect. Can you tell me the approximate time until the taxi arrives as well as the price?
+tool(GetRide): ok n_results=1
+assistant: Your taxi has been reserved and is en route. The fare is $28.04 and your driver should arrive in roughly 2 minutes.
+user: Excellent. Thanks so much!
+assistant: Do you need assistance with anything further?
+user: No, that's it. Thanks!
+assistant: Take care and enjoy your day.

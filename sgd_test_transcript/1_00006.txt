@@ -1,0 +1,13 @@
+user: I'm looking to book a table. Can you try Triptych in SF?
+assistant: Of course, what time would you prefer?
+user: Give me 6:15 in the evening please.
+assistant: Here's what I heard: 2 people for a table at triptych in San Francisco at 6:15 pm on March 1st.
+user: No, wrong. Give me Friday next week instead.
+assistant: Sure, I have booking table at Triptych on March 8th.
+user: No, one more time. One person.
+assistant: I have March 8th 1 person.
+user: Yes, that's a winner thanks. Do they have vegetarian options?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Well, good news bad news. First they DO have vegetarian options at Triptych. Bad news, no availability at your preferred time. How about March 8th at 6 pm for 1?
+user: No, that will not do.
+assistant: Sorry about that, have a good day.

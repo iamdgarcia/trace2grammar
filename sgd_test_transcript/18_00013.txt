@@ -1,0 +1,26 @@
+user: I need some information about how the weather will be on the 5th of March.
+assistant: What city do you wish for me to find the forecast for?
+user: Find the weather forecast for Cotati.
+tool(GetWeather): ok n_results=1
+assistant: Cotati will have an average temperature of 86 degrees with an 18 percent chance of rain on March 5th.
+user: Thank you. I need another weather forecast. This time for Nairobi.
+tool(GetWeather): ok n_results=1
+assistant: There temperature for Nairobi is 90 degrees with a 9 percent chance of there being rain.
+user: Okay, thank you very much. I want a one-way flight to that location please.
+assistant: Please name your departure city.
+user: I'm planning to leave from Chi-town. I'll need 3 tickets preferably from Delta Airlines.
+assistant: Is your departure date March 5th or another date?
+user: I plan on traveling sooner than that. I plan to travel later today.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Delta Airlines has a flight leaving at 8 am. The cost of the ticket is $425. Is that acceptable?
+user: Is the ticket Economy class at that price? Also, when will the flight arrive at my destination?
+assistant: It is an Economy -class ticket. The arrival time for your flight is 12:17 pm.
+user: That sounds great. Can you find me a rental car that I can pick up on the 9th?
+assistant: How long will you be needing the car, and when do you wish to pick up the car?
+user: I will be picking up the car at 4:45 pm and I will keep it until the 11th of March.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There are 5 cars that should fit your needs. There is an Audi A8 Sedan for pick-up at Jomo Kenyatta International Airport.
+user: That sounds like a great car. Thanks for providing me with that info.
+assistant: Can I help you with anything else right now?
+user: I can't think of anything else right now. Thank you for helping me.
+assistant: Please have a great day today.

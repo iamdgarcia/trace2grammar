@@ -1,0 +1,24 @@
+user: I'm in the mood for music. Can you find me some songs?
+tool(LookupMusic): ok n_results=10
+assistant: How about Judas from the album Born This Way by Lady Gaga?
+user: What other songs can you find?
+assistant: There's Honeymoon Avenue by Ariana Grande from the Yours Truly album.
+user: That sounds good.
+assistant: Shall I play it now?
+user: Not just yet.
+assistant: Is there anything else you need?
+user: Can you look up some movies online?
+assistant: What kind of movie do you feel like watching?
+user: A good suspense would be great.
+tool(FindMovies): ok n_results=4
+assistant: How about Madeline's Madeline, Rojo or the Art of Self-Defense?
+user: What else do you have? I'd like to see a play movie featuring Grady Sutton.
+tool(FindMovies): ok n_results=1
+assistant: How about Stage Door?
+user: Stage Door sounds good. Can you play the song now on the patio speaker?
+assistant: To confirm: You would like to hear Honeymoon Avenue on the patio.
+user: That's right. What genre is that considered?
+tool(PlayMedia): ok n_results=1
+assistant: It's considered a pop song.
+user: Great. Thanks. That's all I need for now.
+assistant: Have a wonderful day and enjoy the music.

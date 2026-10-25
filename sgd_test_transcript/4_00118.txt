@@ -1,0 +1,23 @@
+user: I love Philadelphia but I need to leave it for a bit. Can you book me bus tickets for four people?
+assistant: What city are you headed to and what date will you be leaving?
+user: We'll be leaving Philly on March 1st to head to New York City for a bit.
+tool(FindBus): ok n_results=6
+assistant: Okay. I found bus tickets that departs from Philadelphia at 9 am on March 1st. It will cost you $23.
+user: Which stations will the bus be leaving and arriving from?
+assistant: The bus departs from 10th and Filbert in Philadelphia and arrives at Penn Station in New York City.
+user: Okay change of plans. Forget the details I just told you. I rather have a direct bus leaving from Washington.
+tool(FindBus): ok n_results=7
+assistant: Would a bus leaving from Washington at 6:20 am be acceptable? The cost associated with this ticket is $40.
+user: I don't see why not. That should be fine.
+assistant: I can purchase those for you right now if you wish.
+user: I think that should work. Go ahead and reserve a seat for me.
+assistant: Purchasing 4 tickets for a bus departing from Washington on March 1st at 6:20 am and arriving in New York. Confirm the transaction?
+user: That's fine. Process the purchase for me please.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have bought your 4 train tickets to New York City.
+user: What Washington bus station will the bus be leaving from?
+assistant: It will depart for the trip at the Silver Spring Bus Stop.
+user: Silver Spring? Okay that will work fine. Thank you for helping me out.
+assistant: Do you need anything else?
+user: Not at the moment no. Thank you for your help as always.
+assistant: Farewell for now. Have a wonderful day.

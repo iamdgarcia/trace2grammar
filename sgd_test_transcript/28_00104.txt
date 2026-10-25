@@ -1,0 +1,37 @@
+user: I am interested in finding some attractions that I can visit.
+assistant: Can you tell me the location where I should look for the attractions?
+user: I am interested in attractions in Kuala Lumpur.
+tool(FindAttractions): ok n_results=10
+assistant: You might consider visiting Aquaria KLCC, which is a Nature Preserve.
+user: Alright, though can you suggest some other attractions, which do not have entry fee.
+tool(FindAttractions): ok n_results=7
+assistant: I found 7 attractions for you to consider, with one of them being Jamek Mosque, which is a Place of Worship.
+user: Alright, nice. I need you to also find me a car which I can rent there.
+assistant: Can you tell me the suitable time for you to pick up the car?
+user: I would like to have a Sedan car which I can pick up at three pm.
+assistant: From when do you want to rent the car, and till will you need it? Are you willing to pick up the car from Kuala Lumpur?
+user: That seems nice. I want to rent the car from Friday next week, till 9th of this month.
+tool(GetCarsAvailable): ok n_results=2
+assistant: You can consider a Sedan Hyundai Ioniq car which you can have at KLIA International Airport.
+user: Can you tell me how much renting this car will cost me per day?
+assistant: If you rent this car it will cost you $20.00 per day.
+user: That seems nice. I would like to book this car for me.
+assistant: Do you want insurance to be included with the car?
+user: No I am not interested in having insurance with the car.
+assistant: Can you please confirm that you want to rent a Sedan car without insurance which you will pick up from KLIA International Airport on March 8th at 3 pm, and that you will need it till March 9th.
+user: I actually changed my mind, because I want to have insurance on the car.
+assistant: Can you please confirm that you want to pick up a car with insurance included from KLIA International Airport?
+user: That is what I want.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked.
+user: Is it possible for you to share the location with Emily?
+assistant: Is the address Jamek Mosque the one you want to share?
+user: In fact the address that I want to share is KLIA International Airport.
+assistant: Can you please confirm that you want to share the KLIA International Airport location with Emily?
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: Thank you. You have been very helpful.
+assistant: Can I do something else to help you?
+user: Nothing. Thank you, you have been very helpful.
+assistant: Have a good time!

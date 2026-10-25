@@ -1,0 +1,23 @@
+user: How is the weather in Graton on the 9th of March?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is looking like 89 degrees F with a 19 percent chance of rain.
+user: What is the humidity looking like?
+assistant: It should be about 38 percent.
+user: How windy is it likely to be?
+assistant: It is looking like 4 miles per hour.
+user: Sounds good. I would like to visit the property called Brookside Oaks.
+assistant: Please confirm you're booking a visit to Brookside Oaks on March 9th.
+user: Yes, that is correct. Is there a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your reservation has been confirmed. Yes, it does have a garage.
+user: Thank you. I'd also like to reserve a car at Union Station at 15:00.
+assistant: What kind of car were you looking for?
+user: I'd like a Sedan.
+assistant: When did you need the car until and would you like to add insurance?
+user: I will need the car from the 6th of this month until the 10th of March, and yes I'd like to buy insurance.
+assistant: Please confirm you're picking the Sedan up from Union Station on March 6th at 3 pm and dropping it off on March 10th. The car comes with insurance.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thank you. That will be all I need for now.
+assistant: Have a wonderful day.

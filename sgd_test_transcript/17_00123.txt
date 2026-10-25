@@ -1,0 +1,23 @@
+user: Can you tell me the weather?
+assistant: Where would you like to know the weather?
+user: What's the weather in LA?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 76 degree F, with a 28 percent chance of rain.
+user: How windy and humid is it supposed to be?
+assistant: The humidity for today is around 75 percent. The average wind is 4 miles an hour.
+user: Okay, thanks for that. Can you find me a one-way ticket there?
+assistant: Where would you like to leave from? Would you like a departure date of March 1st?
+user: Yes, that works. Find a flight from Chicago.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 possible flights. There is a $164 American Airlines flight leaving at 10:20 am.
+user: That works. Could you also find me a rental car there? I need it starting Friday next week?
+assistant: And when would you like to return the car?
+user: I need it until the 13th of this month.
+assistant: At what time do you want to pick up the rental car?
+user: I need a pick up of 16:45.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 possible cars. There is a Hatchback Ford Focus at Union Station.
+user: That will work for me.
+assistant: Is there anything else I can help with?
+user: No, that was it, thank you.
+assistant: Enjoy your trip!

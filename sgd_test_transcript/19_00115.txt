@@ -1,0 +1,31 @@
+user: I need a rental car, like an SUV from Portland, OR.
+assistant: Until when would you like this car? When would you like it?
+user: I need it until March 8th and from tomorrow.
+assistant: At what time would you like it for pick up?
+user: I need it at 3:30 in the afternoon.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 cars available and a nice car at Portland Bus Station. It is an SUV Alfa Romeo Stelvio.
+user: How much is the daily price?
+assistant: It is $39.00.
+user: Okay, that's good.
+assistant: Would you like to book this car?
+user: No, not now. I need ticket reservations.
+assistant: Is there a preferred date and city?
+user: Yes, in Philadelphia on the 6th of March.
+assistant: What event are you interested in and how many tickets?
+user: There is Melanie Martinez, and one ticket.
+assistant: So, book 1 tickets for Melanie Martinez on March 6th in Philadelphia?
+user: Yes, that is it. Where is it?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is now confirmed and the event will be held at The Fillmore Philadelphia.
+user: I need a rental car too.
+assistant: Would you like insurance?
+user: No, I'm good without.
+assistant: So, pick up the car from Portland Bus Station on March 2nd at 3:30 PM and the drop-off date is March 8th and an SUV.
+user: Yes, that is good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has now been reserved.
+user: Thanks for that.
+assistant: Of course. Is there anything else to help with?
+user: No, thank you.
+assistant: Of course. Enjoy.

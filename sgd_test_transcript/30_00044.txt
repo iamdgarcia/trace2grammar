@@ -1,0 +1,30 @@
+user: I am looking for some nice events to spend my free time. Can you help me to find the good one and I also want to book the tickets now.
+assistant: Do you want me to search for an event in any particular date?
+user: Yes, I have free time on 11th of March only. So please get me some nice events on that day.
+assistant: Okay. I can get you on the same day but I want some more details to search for. What is your favorite kind of event and favorite place to search for? Let me also know the number tickets you required.
+user: I need only one ticket to an event like Chaos Theory in NYC.
+assistant: Please confirm to book 1 ticket to the event Chaos Theory on March 11th in New York.
+user: That is confirmed to proceed and let me know the ticket cost and venue address.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have booked the tickets and cost for same was $35. The venue is located at 21 A Clinton Street.
+user: Can you get me a bus to go there?
+assistant: Yes, When do you want to leave, is it on March 11th? What is your current location from where you want to start your travel?
+user: I want to get a bus from Philadelphia on next Friday.
+tool(FindBus): ok n_results=6
+assistant: That is okay. Please confirm to book tickets on a bus departing at 9 am for the cost $23.
+user: No, I want to search for some other buses.
+assistant: What about the one departing at 10:10 am for the cost $24.
+user: What about finding a direct bus to me?
+tool(FindBus): ok n_results=4
+assistant: I got 4 direct bus details. One is departing at 12:30 pm for the cost $21. Is it okay to you?
+user: Let me know the origin and destination station of this bus.
+assistant: It will leave from 10th and Filbert and reaches finally to Penn Station.
+user: That is nice and I prefer this bus. Book the tickets now.
+assistant: Please confirm to book 1 ticket on the bus which is leaving from Philadelphia and reaches to New York for the date on March 8th and at time 12:30 pm without any extra luggage.
+user: All are okay but I have extra luggage to carry withe me.
+assistant: Please confirm to book tickets with extra luggage on a bus from Philadelphia.
+user: Okay, proceed as it is.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have booked the tickets successfully.
+user: Thanks and that's all.
+assistant: Have a good day.

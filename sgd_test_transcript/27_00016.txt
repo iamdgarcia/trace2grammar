@@ -1,0 +1,33 @@
+user: I'd like to find an attraction to go to please.
+assistant: In what area please?
+user: I'm looking for something in Delhi, India.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 options to tell you about. There is a theme park that I can recommend called Adventure Island.
+user: Okay. What else can you find?
+assistant: Another possibility is Akshardham, which is a place of worship.
+user: What's the telephone number of the place please?
+assistant: That number is 11 4344 2344.
+user: Is it free admission and okay for kids to go to?
+assistant: No, it's got an admission price, but it is a good place for children.
+user: Thanks, but I'm wondering too about any attractions in San Fran that you would recommend.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 to share with you. How about the historical landmark Alcatraz?
+user: Yes, good. I'm looking for a movie to see as well, something at the AMC Kabuki 8.
+tool(FindMovies): ok n_results=7
+assistant: There are 7 films you might like. Do you want to see Ad Astra, Hustlers, or Brittany Runs a Marathon?
+user: I'd like to see Hustlers.
+assistant: Is there anything else you need today?
+user: Yes, I want to watch an online movie, too. I want a comedy with Kate McKinnon in it.
+tool(FindMovies): ok n_results=1
+assistant: How about the film Yesterday?
+user: Yes, I'll watch Yesterday.
+assistant: Shall I play that for you now?
+user: Sure, and I'd like the French subtitles turned on.
+assistant: Confirming playback of Yesterday with French subtitles enabled.
+user: Great, thank you.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Thank you for all your help.
+assistant: Anything else I can help you with now?
+user: No, that's everything.
+assistant: Thank you very much.

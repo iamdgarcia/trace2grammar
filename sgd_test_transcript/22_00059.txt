@@ -1,0 +1,37 @@
+user: can you find me a psychiatrist in santa rosa?
+tool(FindProvider): ok n_results=6
+assistant: there's 6 i found. there's a psychiatrist in santa rosa named Beck Jennifer P.
+user: that sounds perfect, can you get me an appointment?
+assistant: what time works best for you?
+user: i want something at evening 4.
+assistant: when do you want to go?
+user: can you book it for march 12th?
+assistant: so you want an appointment with beck jennifer p on march 12th at 4 pm?
+user: yes that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: it's been booked, you'll be emailed soon with confirmation.
+user: what's the address and phone number of the offices?
+assistant: it's located on 1400 north dutton avenue #6 and they can be reached at 707-566-4600.
+user: thanks so much. can you help me make a request for a payment privately?
+assistant: how much will it be?
+user: it will be for $18.
+assistant: what is the contact's name?
+user: I want to make it with victoria.
+assistant: so you want to make a private transaction with victoria for $18?
+user: yes that's right.
+tool(RequestPayment): ok n_results=1
+assistant: it's been made successfully.
+user: can you find me somewhere to eat that day.
+assistant: what type of cuisine?
+user: i want pizza for not very costly in terms of price.
+tool(FindRestaurants): ok n_results=10
+assistant: i found 10 places for you. there's basilico in santa rosa.
+user: that sounds good. can you book a table?
+assistant: what time works best?
+user: can you make it for 11 in the morning?
+assistant: so you want a table for 2 on march 12th at 11 am at basilico in santa rosa?
+user: yes that's correct. where are they located?
+tool(ReserveRestaurant): ok n_results=1
+assistant: it's been booked. they're located on 4776 sonoma highway.
+user: thanks so much, that's it.
+assistant: have a great day.

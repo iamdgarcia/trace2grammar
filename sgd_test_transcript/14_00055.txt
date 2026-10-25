@@ -1,0 +1,17 @@
+user: Can you please find some Action movies for me, which are directed by Sujeeth and that are featuring Supreet Reddy?
+tool(FindMovies): ok n_results=1
+assistant: Sure. There's 1 movie that matches your criteria - Saaho, rated at 10 out of 100.
+user: Sounds perfect. Now let's find some Popular songs from '18, maybe something from the Expectations album, which I heard that is supposed to be awesome.
+tool(LookupMusic): ok n_results=3
+assistant: There's 3 songs matching your criteria, out of which I'd recommend Hayley Kiyoko playing Curious on the album Expectations.
+user: That's perfect.
+assistant: Do you want me to play this song for you?
+user: Yes, please do.
+assistant: Can you please confirm that you want me to play Curious on your Living room speakers?
+user: No, please play it on the Kitchen speaker.
+assistant: Can you please confirm that you want me to play Curious on your Kitchen speaker?
+user: Yes, please do.
+tool(PlayMedia): ok n_results=1
+assistant: Started playing. Enjoy!
+user: Thanks a lot. That will be all for now.
+assistant: My pleasure. Have a nice day!

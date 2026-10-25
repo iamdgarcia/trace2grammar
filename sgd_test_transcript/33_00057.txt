@@ -1,0 +1,15 @@
+user: I need to find something interesting to do on the 10th of this month. I really like drama, and i'm looking for something in the Chi-town area.
+tool(FindEvents): ok n_results=10
+assistant: Ada And The Engine is a very popular event in that area. It's taking place at The Artistic Home on March 10th 5:30 pm.
+user: Sounds awesome. Can you reserve four tickets for me?
+assistant: Please confirm the following: Book 4 tickets to Ada And The Engine on March 10th in Chicago.
+user: Yes, that is all correctamundo and good to go.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased.
+user: Ca you also get a luxurious ride to the event? A cab?
+assistant: You would like a luxury ride to The Artistic Home that will accommodate 4. Is that correct?
+user: Yes. How long before the cab will get here and how much does it cost?
+tool(GetRide): ok n_results=1
+assistant: I book your ride and the cab is on the way. It is expected to arrive in 7 minutes and cost $35.82.
+user: Okay. Thanks a lot for your help, you've made everything so much easier.
+assistant: I'm always glad to help. Enjoy yourself out there and good bye.

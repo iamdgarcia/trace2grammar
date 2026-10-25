@@ -1,0 +1,20 @@
+user: Help me look for a place where I can live.
+assistant: Are you looking for a place to rent or buy? And how many baths do you need?
+user: I'm just looking to rent. And I want 2 baths.
+assistant: Where do you want to rent a place? And how many bed rooms do you need?
+user: I want to rent a place in Fairfield. And I want it to have three bed rooms.
+tool(FindHomeByArea): ok n_results=7
+assistant: I've found 7 properties that you might like. There's a very good property called Fairfield Vista Apartments on 201 Pennsylvania Avenue. It's $3,600.
+user: That might be good.
+assistant: Would you like to schedule a visit there?
+user: Yes, I'd like to do that.
+assistant: On what day do you want to visit?
+user: I want to go on the 10th of this month.
+assistant: I'll schedule you a visit to Fairfield Vista Apartments on March 10th, is that good?
+user: Yes, that's good. Does the place have a garage? And what's their contact number?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled the visit. Their phone number is 707-421-2155. There is a garage.
+user: Thanks so much.
+assistant: Do you need any further help?
+user: No, thanks again.
+assistant: Have a wonderful day.

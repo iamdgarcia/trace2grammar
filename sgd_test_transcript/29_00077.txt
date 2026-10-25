@@ -1,0 +1,29 @@
+user: Help me find something interesting to do on the 13th ,I enjoy Stage show.
+assistant: In which city do you prefer to be ?
+user: Around LA will be good.
+tool(FindEvents): ok n_results=10
+assistant: A popular variant is Asssscat at Upright Citizens Brigade Sunset on March 13th at 6:30 pm.
+user: Sounds great.Fine me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: A nice house with rating 4.1 is located at 1020 South Figueroa Street.
+user: Laundry service is available here?
+assistant: Yes,they have laundry service.
+user: Find me a contact number for this place.
+assistant: +1 213-748-1291 is the contact phone number.
+user: Something else you have.I want with minimum rate 4.3 and for two people.
+tool(SearchHouse): ok n_results=10
+assistant: 10 houses I have found for you.A nice house with rating 4.3 located at 1224 Beverwil Drive.
+user: I like this one.Find me a bus that goes there.
+assistant: From where you will leaving and you plan to go on March 4th?
+user: I plan to go from Long Beach, CA on this Sunday.
+tool(FindBus): ok n_results=10
+assistant: What you think about a bus that depart at 6 am am cost $11?
+user: Good.I would like to buy tickets at the event that you have found.
+assistant: Tell me how many tickets you want to buy.
+user: Two tickets are enough.
+assistant: Book 2 tickets for Asssscat in Los Angeles on March 13th.I'm right?
+user: Yes is good for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is confirmed.Have fun!
+user: Thank you for all.That's all.
+assistant: Have a good day!

@@ -1,0 +1,28 @@
+user: Hey, can you help me find a hotel I can stay in?
+assistant: In which city?
+user: In London please.
+tool(SearchHotel): ok n_results=10
+assistant: 45 Park Lane is a great 5 star hotel over there.
+user: Sounds good. Can you also help me find some premium Economy round trip flight to get there? I'll return on the 10th.
+assistant: Are you leaving on March 7th? Where will you be departing from?
+user: Yes, I will. I'll depart from SFO.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found a $918 American Airlines flight departing at 4:55 am. It's a layover flight. The return time is at 12:45 pm.
+user: Is it for 4 people? At what time will I arrive at my destination?
+assistant: It's just for 1 and you'll arrive in London at 6:47 am.
+user: Sounds good. By the way, I want to make a reservation at the hotel you found.
+assistant: Checking in on March 7th?
+user: On the 8th actually, I'll need 2 rooms for 6 days.
+assistant: So 2 rooms for 6 days at the 45 Park Lane Hotel in London, checking in on March 8th. All correct?
+user: Yes, sounds good.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel was successfully booked.
+user: Is smoking alllwed there? What's their address?
+assistant: Their address is 45 Park Lane and smoking is not allowed.
+user: Thanks a lot, that's quite a help. Can you find me attractions I can go to over there? It's better if it's a Park with no entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: The Barbican Conservatory is a great Park over there.
+user: Sounds very good.
+assistant: Anything else I can help you with?
+user: No, that was all. Thanks a lot.
+assistant: Enjoy your trip!

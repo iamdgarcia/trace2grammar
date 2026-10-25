@@ -1,0 +1,33 @@
+user: Please search for a train for me to take.
+assistant: What are your departure and arrival cities, and when do you want to take the train?
+user: I need tickets for March 14th. I am going to LA from San Fran.
+tool(FindTrains): ok n_results=9
+assistant: There is one train that leaves at 6:20 am. The trip will cost $85.
+user: What are the departure and arrival stations?
+assistant: The train departs from Salesforce Transit Center and arrives at Union Station.
+user: Please find a different train for me. I need one ticket, and I don't care about the class.
+tool(FindTrains): ok n_results=9
+assistant: There is a train that leaves at 8:40 am, and the trip will cost $86.
+user: That works for me.
+assistant: Would you like to reserve a ticket?
+user: Not at this time. Please look for things to do there on that day.
+assistant: What kind of events do you like. There are things like Music or Theater or other events.
+user: I like to see Musical Shows.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 results that meet your criteria. There is a popular event called Ain Gordon at the Ralph Freud Playhouse. This takes place at 7 pm on March 9th.
+user: What is the address of that venue?
+assistant: It is located at 245 Charles E young Drive East.
+user: That works for me. Please find attractions in that area.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 results that meet your criteria. There is a Historical Landmark called the Angels Flight Railway.
+user: What is the contact information for that attraction? Is the attraction good for children?
+assistant: The attraction is child friendly. The contact information for the attraction is 213-626-1901.
+user: That sounds good. Please find a rental house for me there.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house with a 4.1 rating located at 1020 South Figueroa Street.
+user: That sounds good.
+assistant: Do you want to book that house?
+user: No not right now.
+assistant: Do you require any further assistance?
+user: No thank you.
+assistant: Enjoy the rest of your day.

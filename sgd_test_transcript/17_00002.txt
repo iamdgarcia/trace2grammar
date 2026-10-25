@@ -1,0 +1,33 @@
+user: Its time to visit a unisex salon. Please look for one in SFO.
+tool(FindProvider): ok n_results=10
+assistant: In San Francisco 1512 Barber Shop is having a good rating.
+user: Do you have address?
+assistant: Their address is 1532 20th Street.
+user: Is there any in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: In San Jose, Atelier Salon Willow Glen would be nice one.
+user: That will be better.
+assistant: Do you need appointment?
+user: No, not now. Please share the location.
+assistant: What address to be shared, 1047 Lincoln Highway suite 101?
+user: Yeah share that address.
+assistant: What is the name of person?
+user: Its Daniel, Share with him
+assistant: Will you please confirm your request, you want to share the location 1047 Lincoln Highway suite 101 with Daniel.
+user: No the address should be 613 Cabot Way and share it with Raymond.
+assistant: Ok, please confirm, you need to share the address 613 Cabot Way with Raymond.
+user: Good, thats all.
+tool(ShareLocation): ok n_results=1
+assistant: The location is shared successfully.
+user: Please show my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 live alarms. One is Pick up Kids set at 3:30 pm.
+user: Good, thank you.
+assistant: Any more alarm to be added?
+user: Yeah, set one at 5 in the evening.
+assistant: You requested to set alarm at 5 pm with title New alarm, right?
+user: Yes the details are correct.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm is added.
+user: Great, thank you for the help.
+assistant: Its my pleasure.

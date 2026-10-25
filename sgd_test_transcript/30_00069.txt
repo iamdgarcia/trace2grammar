@@ -1,0 +1,26 @@
+user: How's the weather like in Lagunitas?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 92 degrees Fahrenheit with an 18 percent chance of rain.
+user: And how about the weather in Campbell on Wednesday next week?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be around 75 degrees Fahrenheit with an 8 percent chance of rain.
+user: Is it going to be very humid?
+assistant: Humidity will be close to 24 percent.
+user: Okay, can you schedule a property visit to Village At Town Center Apartments on that day, for me?
+assistant: Please confirm that you would like to schedule a property visit to Village At Town Center Apartments on March 6th.
+user: Yes, that sounds right. How much does the apartment cost?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit has been scheduled. The apartment cost is $5,200.
+user: I'd like to book a car there.
+assistant: Do you want the car from March 6th? What kind of car would you like and would you like to include insurance?
+user: I'd like a Sedan from March 6th and i don't need insurance.
+assistant: At what time will you be picking up the car and until when will you need it?
+user: Find me something that I can pick up from Walnut Creek BART Station at 10:45 in the morning and use till the 7th of this month.
+assistant: Please confirm that you need a Sedan without insurance for pickup from Walnut Creek BART Station at 10:45 am on March 6th with a drop-off date of March 7th.
+user: That's perfect!
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked successfully.
+user: Thank you for the assistance.
+assistant: Is there anything else I can help with?
+user: No. Thank you. That's all for now.
+assistant: Have a great day!

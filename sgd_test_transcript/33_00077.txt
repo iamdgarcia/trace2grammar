@@ -1,0 +1,32 @@
+user: Hi, are there any interesting things I could do?
+assistant: Any preferred city and type of events, such as Music or Theater?
+user: I would like a Broadway event in SF.
+tool(FindEvents): ok n_results=10
+assistant: I see, how about Above Ground at Mojo Theatre on March 6th at 5 pm?
+user: I see, are there any alternatives taking place on 13th of March?
+tool(FindEvents): ok n_results=8
+assistant: There are 8 events you might like, how about Above Ground Festival at Mojo Theatre on March 13th at 6 pm?
+user: Sounds great, could you reserve tickets for me please?
+assistant: And how many tickets do you need?
+user: Just 4 will do.
+assistant: Please confirm your purchase for 4 tickets to Above Ground Festival at Mojo Theatre on March 13th in San Francisco.
+user: Sorry, could you get 2 tickets instead?
+assistant: Please confirm your purchase for 2 tickets on March 13th.
+user: Yes, that is fine with me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, have fun!
+user: How much does each ticket cost and where is the event held at?
+assistant: The ticket will cost you $45 each and it is held at 2940 16th Street #217.
+user: I see, could you get me a cab ride there?
+assistant: Any preferred type of ride, such as a pool or luxury ride?
+user: Just a normal one will do.
+assistant: Please confirm your booking for 2 seats on a regular ride to Mojo Theatre.
+user: Yes, that is fine with me.
+tool(GetRide): ok n_results=1
+assistant: Your booking has been made and is on its way.
+user: How long does the cab take to reach me?
+assistant: It will arrive at your location in 7 minutes.
+user: I see, thanks for your assistance.
+assistant: Do you need any other help?
+user: No, that is all. Thank you!
+assistant: No worries, have a great day ahead!

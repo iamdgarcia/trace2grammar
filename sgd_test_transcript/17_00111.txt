@@ -1,0 +1,21 @@
+user: I am going to be outside. Let me know the weather forecast please.
+assistant: I will check the weather but I need to know the city you need the weather checked in.
+user: New Delhi is the place I need the weather checked for.
+tool(GetWeather): ok n_results=1
+assistant: New Delhi has a forecast predicting a 4 percent chance of showers. You should expect the temperature during the day to be 99 degrees Fahrenheit.
+user: Thank you. Will you also check for a one-way flight to New Delhi.
+assistant: Where would you like your flight to take off from? Is the date of travel March 1st?
+user: I would like to board the plane in Las Vegas. The date is correct.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: One of 2 one-way flights found is on American Airlines. The plane leaves at 10:25 am, the price is $339. This flight has a layover.
+user: Great. I also need to rent a vehicle at my destination. The dates for the car rental will be the 11th until March 13th.
+assistant: At what hour do you prefer to pick up the vehicle?
+user: I would like to get the car rental at 6:30 pm.
+tool(GetCarsAvailable): ok n_results=8
+assistant: Indira Gandhi International Airport is showing 8 rental cars available. One of the cars is a lovely Sedan Audi A8.
+user: I would like to hear more rental car choices please.
+assistant: Another good rental choice at the Indira Gandhi International Airport is a Hatchback Fiat Panda.
+user: I like that choice.
+assistant: I can reserve the vehicle for you if you wish.
+user: Not at the moment but thanks. I do not need any more help.
+assistant: Hope your day goes well.

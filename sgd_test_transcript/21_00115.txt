@@ -1,0 +1,44 @@
+user: Is there something interesting I can do you can recommend for me?
+assistant: Which city are you interested in finding events for, and would you like to see a music, theater, or another particular genre of event?
+user: Find something akin to a musical performance around LAX.
+tool(FindEvents): ok n_results=10
+assistant: May I recommend Ain Gordon, playing at the Ralph Freud Playhouse on March 9th at 7 pm?
+user: Sounds great, thanks for the find!
+assistant: Is that all that I can help you with for today?
+user: Any buses heading to the event you can find?
+assistant: From which city will you depart on bus, and will you depart on March 9th?
+user: Planning on leaving on the 5th of March, from San Fran.
+tool(FindBus): ok n_results=9
+assistant: There are 9 buses available for your route, what about a bus that costs $42 and departs at 7:30 am?
+user: That bus sounds good to me, can you also find a round trip flight to the area?
+assistant: Will you leave on March 5th, and when will you be returning?
+user: Will plan on leaving on flight on March 9th, and returning on the 11th of this month.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There are 5 flights available, may I recommend an Alaska Airlines direct flight that costs $159 and takes off at 12:25 pm? The return flight will take off at 11:55 am.
+user: Anything else you can find, any ticket class will do.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: From 4 flights, how about an American Airlines direct flight that takes off at 7:10 pm, its return flight takes off at 9:30 am, and its tickets cost $254?
+user: At what time will the flight arrive at my destination, and when does the return flight arrive?
+assistant: For the onward flight, the expected time of arrival is 8:35 pm, and the return flight arrives at 10:55 am.
+user: Anything else you can find, for 1 ticket only?
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: Would a Delta Airlines direct flight suffice, it costs $149 and will take off at 9:45 am, its return flight taking off at 5:15 am?
+user: That flights sounds good, thanks!
+assistant: Anything else I can help you with for today?
+user: I need two rooms for a four star hotel, any you can find in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels you may be interested in, how about the Beverly Hills Marriott, a 4 star hotel?
+user: What about 3 star hotels, any you can find?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels matching your description, one 3 star hotel you may be interested in is the Ac Hotel by Marriott Beverly Hills.
+user: The hotel sounds good to me, many thanks?
+assistant: Would you like to make a reservation to the hotel?
+user: Not right now, purchase tickets to the event you found earlier.
+assistant: 1 ticket will be booked for Ain Gordon playing in Los Angeles on March 9th, correct?
+user: That is correct, thanks!
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made, hope you enjoy the event!
+user: I appreciate all your help, thanks for everything.
+assistant: Will that be all I can help you with for today?
+user: Yes, that is all, thank you.
+assistant: Your welcome, have a great day.

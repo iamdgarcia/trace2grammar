@@ -1,0 +1,29 @@
+user: I'll be taking a trip and could use some help in securing a rental car.
+assistant: Where would like to pick up the rental car? What time and date would you like the reservation?
+user: I'll be picking up the car at 15:30 on March 5th in Seattle, WA.
+assistant: What day will you be returning the car?
+user: It will be returned on the 11th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I've located a nice Sedan Audi A8 available for pickup at King Street Station.
+user: That sounds great.
+assistant: Would you like me to book this reservation?
+user: No thank you. Not yet.
+assistant: May I assist you with anything else?
+user: Can you help me to locate a bus route?
+assistant: Where and when do you plan on leaving?
+user: I'll be leaving from Vancouver, BC on the 4th of March. I'd like a direct route.
+tool(FindBus): ok n_results=10
+assistant: There is a bus departing at 7:40 am for $25.
+user: Where is the departure station?
+assistant: It will be departing from Pacific Central Station.
+user: What are the other available options?
+assistant: There is a departing bus at 9:10 am for $27.
+user: Thank you.
+assistant: Would you like to purchase tickets for this bus?
+user: Not right now.
+assistant: Is there anything else I can assist you with?
+user: What is the cost of a one-way flight with two tickets? I'd like to leave later today.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I've found a flight with American Airlines departing at 11:20 am. There will be a layover and the flight cost is $253.
+user: Thanks, that is all I need for now.
+assistant: Talk to you later.

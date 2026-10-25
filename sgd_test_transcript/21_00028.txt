@@ -1,0 +1,19 @@
+user: can you help me in finding new songs?
+tool(LookupMusic): ok n_results=10
+assistant: My search tells me that there's 10 songs for you. how do you feel about I apologize by five finger death punch from the album got your six?
+user: I think I like this one
+assistant: do you want me to play it?
+user: not really
+assistant: can I do something for you then?
+user: yes, update me about the weather in concord on the 1st of this month
+tool(GetWeather): ok n_results=1
+assistant: temperature is around 71 degrees fahrenheit and the probability of rain is equal to 16 percent
+user: do you know the level of humidity? can you also tell me about the wind?
+assistant: yes, humidity value is 29 percent circa and the wind speed is 6 miles per hour
+user: fine. now it's the right time for you to play the song you proposed me earlier. use the kitchen speaker
+assistant: tell me if I got this right. you want me to play the song I apologize in kitchen
+user: do it please. can you tell me the genre of this particular song? do you know if it has been released two years ago?
+tool(PlayMedia): ok n_results=1
+assistant: it's a metal song from the year 2015
+user: great, let me enjoy it quietly now
+assistant: bye

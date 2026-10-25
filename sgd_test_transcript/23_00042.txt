@@ -1,0 +1,30 @@
+user: I want to make a money transfer for the amount of 106 dollars from my money in app. please make it in private.
+assistant: To whom you want me to transfer the money?
+user: Transfer it to Rachel.
+assistant: Please confirm to transfer $106 to Rachel from your app balance in private.
+user: Please go ahead.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully transferred the money and the recipient will receive it shortly.
+user: Thaks. Now, I want to search for a Train to go to Anaheim, CA. I need to book 1 seat only. Help me to do the same.
+assistant: When and where are you going to start your travel?
+user: I will start my travel from San Diego on March 13th.
+tool(FindTrains): ok n_results=8
+assistant: I got 8 results. What about a train leaving at 8:30 am for the ticket cost $48 in total?
+user: I want to know the origin and destination stations of this train.
+assistant: It will leave from Santa Fe Depot and reaches finally to Anaheim Intermodal Center.
+user: Thanks for this information.
+assistant: Do you want to book the tickets now?
+user: No, I may need it later. kindly check about the weather condition there on 14th of this month.
+assistant: Shall I check it for Anaheim?
+user: Yes, check it there on that day.
+tool(GetWeather): ok n_results=1
+assistant: The temperature will be 88 degrees Fahrenheit in average and there may be a chance of 20 percent for rain.
+user: That's okay. Now, please book the tickets to the train that you have found for me before.
+assistant: Shall I include travel insurance while booking the tickets?
+user: I need trip insurance.
+assistant: Please confirm to gook 1 Value ticket on the train from San Diego on March 13th at 8:30 am to Anaheim including Trip insurance.
+user: confirmed to proceed.
+tool(GetTrainTickets): ok n_results=1
+assistant: Tickets are booked successfully.
+user: Thanks and that's all.
+assistant: Have a good day.

@@ -1,0 +1,32 @@
+user: Can you find me a place to live with in-unit laundry? I'd like to buy.
+assistant: What area do you want me to search? How many baths would you prefer?
+user: It needs to have 2 baths and be located in Cupertino.
+assistant: How many bedrooms do you prefer?
+user: I need three bedrooms please.
+tool(FindHomeByArea): ok n_results=2
+assistant: How about Forge Homestead Apartments? That's located at 20667 Forge Way. The cost is $3,400,000.
+user: That sounds great.
+assistant: Do you want me to schedule a visit for you?
+user: Yes, please, for the 12th of March.
+assistant: Please confirm: schedule a visit at Forge Homestead Apartments on March 12th.
+user: Yes, that sounds good. Can you tell me their phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled. Their phone number is 408-739-0870.
+user: Can you share the location of that with Helen?
+assistant: Please confirm: You want to share the location 20667 Forge Way with Helen.
+user: Yes, that's all correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you, you've been helpful. Can you get me a cab to travel there?
+assistant: How many seats will you require?
+user: There will be three of us.
+assistant: Do you prefer a certain type of ride? Maybe Regular or Pool?
+user: I'd just like the cheapest ride please.
+assistant: Please confirm: a pool ride with 3 seats to 20667 Forge Way.
+user: Yes, that's all correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab is confirmed and on the way.
+user: Thanks so much for the help!
+assistant: Do you need help with anything else?
+user: No thank you, that'll be all.
+assistant: Have a great day!

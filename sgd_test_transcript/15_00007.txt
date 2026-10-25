@@ -1,0 +1,19 @@
+user: Can you help me find some good songs to listen to? I'm looking for music are '10. I hear that the album Speak Now is great. Can you find something off of there?
+tool(LookupMusic): ok n_results=3
+assistant: No problem. I've found 3 songs off the album Speak Now. How about Long Live by Taylor Swift?
+user: Okay, that sounds great.
+assistant: Would you like to play the song now?
+user: No, maybe later. Can you find any good movies online for me? I'd like to find something with a nice Dramatic story. I really like Trace Lysette, so if you can find something starring them that would be great.
+tool(FindMovies): ok n_results=1
+assistant: I've found 1 movie for you. How about the movie Hustlers?
+user: Okay, I've heard of Hustlers. That sounds great.
+assistant: Would you like to play the movie now?
+user: No, not right now. Thanks for finding it for me though.
+assistant: Anything else I can help with?
+user: Yeah, can you go ahead and play that Taylor Swift song you found earlier?
+assistant: Sure thing, just confirm the following for me first. Playing song Long Live in the Living room. Correct?
+user: Yes, that's correct. Can you tell me what genre it is?
+tool(PlayMedia): ok n_results=1
+assistant: No problem. It's a Pop song. Your music is now playing, enjoy!
+user: Thanks! That's all for now.
+assistant: My pleasure. Have a good day.

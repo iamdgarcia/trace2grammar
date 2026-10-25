@@ -1,0 +1,46 @@
+user: I need help finding interesting things to do.
+assistant: What city do you want to find these things to do in?
+user: They should be around LA.
+assistant: Is there anything in particular you find interesting such as Music, Theater, or something else?
+user: I'm a big fan of songs.
+tool(FindEvents): ok n_results=10
+assistant: Ain Gordon might interest you. They're at the Ralph Freud Playhouse on March 9th at 7 pm.
+user: That sounds interesting. But let's keep looking, maybe something on Saturday this week around SFO.
+tool(FindEvents): ok n_results=6
+assistant: Jeanette Tietze might interest you. They're at The Episcopal Church of the Incarnation on March 2nd at 7:30 pm.
+user: What's the address of the venue and what's the cost of a ticket?
+assistant: The address is 1750 29th Avenue and a ticket is $55.
+user: I can do that. Can you find me buses going there from LA?
+assistant: Will you be leaving on March 2nd?
+user: Yes, and four people will be travelling.
+tool(FindBus): ok n_results=10
+assistant: There's a bus that leaves at 6:40 am that is $47.
+user: Is the bus direct?
+assistant: Yes, it is direct.
+user: Okay, nice.
+assistant: Would you like to purchase tickets?
+user: No, not right now.
+assistant: What else can I do for you?
+user: I want to search for round trip flights on American Airlines returning on the 13th of March.
+assistant: And you'll be leaving on March 2nd?
+user: Yes I will.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight on American Airlines for $202. The onward flight leaves at 8:45 pm. There is a layover. The return flight leaves at 4 am. Is this okay?
+user: Yeah, that's okay. Now let's look for hotels there.
+tool(SearchHotel): ok n_results=10
+assistant: There's a 1 star hotel called Amsterdam Hostel San Francisco that might interest you.
+user: Can you tell me their address?
+assistant: They are located at 749 Taylor Street.
+user: And do they allow smoking?
+assistant: No, smoking is prohibited at the hotel.
+user: What other hotels are there?
+assistant: There's a 4 star hotel call Argonaut Hotel that might interest you.
+user: 4 stars is good.
+assistant: Do you want to book a room?
+user: No, not yet. Let's go back and get some tickets to that event from earlier.
+assistant: I'll book you 4 tickets to Jeanette Tietze in San Francisco on March 2nd, is that right?
+user: Yeah, that's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been booked. Have fun there!
+user: Thanks so much, I'll be going now.
+assistant: Have a terrific day.

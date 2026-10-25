@@ -1,0 +1,13 @@
+user: Will you find me a train?
+assistant: Which date would you like to travel and to which city?
+user: Get me tickets for the 10th of March to Washington.
+assistant: What city will you depart from?
+user: I need tickets from NY.
+tool(FindTrains): ok n_results=9
+assistant: I'm leaving at 7:20 am costing $65 total.
+user: Will there be other trains that work?
+assistant: Leaving at 8:20 am costing $72 total.
+user: That is great.
+assistant: Would you like me to book tickets?
+user: No, I don't want to book tickets right now that is all that is needed.
+assistant: See you later.

@@ -1,0 +1,32 @@
+user: I need help finding a good salon.
+assistant: Sure, what city should the salon be located in?
+user: I'm looking for something in Richmond.
+tool(FindProvider): ok n_results=1
+assistant: I recommend Tommy Cuts in Richmond.
+user: That would work for me.
+assistant: Would you like me to make an appointment for you?
+user: No, I don't need an appointment right now.
+assistant: Alright, what else can I do for you?
+user: Can you share the location 12221 San Pablo Avenue?
+assistant: Who should I share the location with?
+user: I need to share the location with Grace.
+assistant: You would like to share with Grace the location 12221 San Pablo Avenue, is that correct?
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: Alight, the location has been shared.
+user: Thanks for your help. Can you tell me what alarms I have set?
+tool(GetAlarms): ok n_results=3
+assistant: Yes, you have 3 alarms. Your Get up alarm is set for 6:30 am.
+user: Good, that is the correct time.
+assistant: Would you like to set any additional alarms?
+user: Yes, I need to add one.
+assistant: When would you kike the new alarm to be set for?
+user: Make the alarm for half past 4 in the evening.
+assistant: You would like to set a New alarm for 4:30 pm, is that right?
+user: Yes, that is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Your new alarm has been set.
+user: Thank you so much.
+assistant: Is there anything else I can do for you?
+user: No, that is all I needed.
+assistant: Ok, have a nice day.

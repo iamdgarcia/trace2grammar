@@ -1,0 +1,41 @@
+user: can you get me a rental car?
+assistant: where do you want it from? when will you need it until?
+user: i want it in philadelphia and i'll need it until march 9th.
+assistant: when do you want to pick it up?
+user: i'll need it on the 8th of march.
+assistant: what time works best?
+user: i want to pick it up at 13:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: there's a nice suv alfa romeo stelvio at intercity terminal.
+user: how much is the daily rate?
+assistant: it's $31.00 a day.
+user: is there anything else?
+assistant: there's also a sedan dodge charger on 30th street station.
+user: what's the daily rate for that?
+assistant: that one is $33.00 a day.
+user: that works. are there buses to that location?
+assistant: where are you leaving from and when do you want to travel?
+user: i want to leave from new york city on march 1st on a direct bus.
+tool(FindBus): ok n_results=7
+assistant: there's 7 results for you. how about a bus that leaves at 7:40 am that costs $26.
+user: is there anything else?
+assistant: there's also a bus that leaves at 7:50 am that costs $24.
+user: are there any others?
+assistant: there's another bus that leaves at 8:50 am and costs $17.
+user: where does it leave from?
+assistant: it leaves from penn station.
+user: where does it arrive?
+assistant: it arrives at 10th and filbert.
+user: that works for me.
+assistant: do you want a ticket?
+user: not at the moment.
+assistant: is there something else i can do?
+user: can you look for one way flights there?
+assistant: do you want to leave on march 8th?
+user: i want to leave next tuesday.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: okay, i found 4 flights that match that. there's an american airlines flight that leaves at 11:20 am and costs $54.
+user: can you find another?
+assistant: there's also a delta airlines flight that leaves at 12:20 pm with no layovers, and costs $67.
+user: that works for me, thanks. that's it.
+assistant: have a great day.

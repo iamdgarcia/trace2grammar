@@ -1,0 +1,41 @@
+user: I'm looking for some attractions to visit while I'm vacationing.
+assistant: Sure, where will you be visiting?
+user: I'm looking for things to do in London.
+tool(FindAttractions): ok n_results=10
+assistant: Alright, one of the top attractions is 30 St Mary Axe (The Gherkin). It's a historical landmark.
+user: That sounds perfect. Can you help me find a rental car there?
+assistant: Sure, what time would you like to get the car? Also, when will you be dropping it off?
+user: I'll pick it up in the morning 9:30 and I'll need it until Tuesday next week.
+assistant: Alright, will you be picking it up in London?
+user: Yes, that's right.
+assistant: Ok, what day will you be picking up the car?
+user: Oh, I guess I forgot to mention that. I'll need it the 1st of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a Sedan Audi A8 available at Heathrow International Airport. That's a really nice car.
+user: How much does it cost?
+assistant: It costs $30.00 per day.
+user: I'm not sure if that will work out. Are there any hatchbacks or SUV's available?
+assistant: Yeah, there is a Sedan available at Gatwick International Airport. It's a Buick Regal Sportback. I think that's a hatchback.
+user: Well, what else is there. I really might just rather have an SUV.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a SUV available at Heathrow International Airport. It's a Citroen C5.
+user: That one might work. How much is it?
+assistant: The cost for this SUV is $40.00 per day.
+user: That will work. I'd like to reserve it.
+assistant: Sure, do you want to add insurance.
+user: No, my personal insurance will cover it.
+assistant: Ok, can you please confirm. You would like a SUV from March 1st at 9:30 am until March 5th. The car will be picked up at Heathrow International Airport.
+user: Yes that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Ok, the car has been reserved.
+user: OK, can you share the location of 30 St Mary Axe (The Gherkin) with Ashley?
+assistant: Sure, would you like to share the location of 30 St Mary Axe (The Gherkin) with Ashley now?
+user: No, actually share the address for Heathrow International Airport.
+assistant: OK, you will be sharing the location for Heathrow International Airport with Ashley.
+user: Oh my gosh, I am losing my mind. I need to share that location with Emma, not Ashley.
+assistant: No problem, would you like to share the location for Heathrow International Airport with Emma now?
+user: Yes, that's correct. Sorry for all of the confusion.
+tool(ShareLocation): ok n_results=1
+assistant: No problem, the location has been shared.
+user: Thanks so much for all of your help! I don't need anything else right now.
+assistant: I hope you have a great day!

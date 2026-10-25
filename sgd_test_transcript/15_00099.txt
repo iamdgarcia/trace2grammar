@@ -1,0 +1,20 @@
+user: Can you search me a therapist please?
+assistant: In which city i should search the therapist and which type of therapist you want like Family Counselor, Psychiatrist etc?
+user: I want Psychiatrist somewhere in Napa.
+tool(FindProvider): ok n_results=2
+assistant: I found psychiatrist called Garcia Daniel in Napa. You can consult there.
+user: This is cool.
+assistant: Can i book the appointment with this therapist?
+user: Not now. What about the weather there on 12th of March?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 84 degrees Fahrenheit and there is a 25 percent chances of rain.
+user: Okay fine..you book the appointment with that therapist at 12:15 in the afternoon.
+assistant: please give confirmation details: Appointment with therapist Garcia Daniel at 12:15 pm on march 12th.
+user: Okay..this is fine.
+tool(BookAppointment): ok n_results=1
+assistant: Oh...sorry..i am not able to book the appointment with Garcia Daniel. You may get the appointment at 12 pm on march 12th.
+user: Okay...i will manage
+tool(BookAppointment): ok n_results=1
+assistant: I booked your appointment successfully and you will receive confirmation email soon.
+user: Thank you so much for your help.
+assistant: Thank you once again..bye

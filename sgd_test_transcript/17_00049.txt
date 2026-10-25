@@ -1,0 +1,16 @@
+user: Would you be able to find me a train?
+assistant: Can you tell me the date that you will be having your trip, and the city which is you destination?
+user: I am interested in tickets for March 10th to arrive in Phoenix.
+assistant: Can you tell me the city from where you will start your trip?
+user: I will be leaving for my journey from Fresno, CA.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains which you might consider. One of the trains which you might one to have departs at 6 am with it's ticket costing $174.
+user: That seems nice to me.
+assistant: Are you willing to have tickets booked?
+user: No, I do not want to buy the tickets at this moment.
+assistant: Is there something else I can do to help you?
+user: I would like to find a houre where I can stay there
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses which you can have according to your search. One of the good houses with a rating of 4.6 is 10 East Thomas Road.
+user: This house seems as a good option. That would be all.
+assistant: I enjoy helping you. Later!

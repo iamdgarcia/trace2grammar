@@ -1,0 +1,23 @@
+user: I'm looking for something to do with my grandchildren. Hopefully something that's free.
+assistant: Is there a particular city or area that I should search in?
+user: I'm looking for something in London England.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Place of Worship called All Saints, Margaret Street.
+user: Could you give me their telephone number?
+assistant: The telephone number for All Saints, Margaret Street is 20 7636 1788.
+user: Okay. And I'd like to find a house or apartment to stay in while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house with a rating of 4.3 at 1 Addington Street.
+user: That sounds good. Now I'd like to find round trip ticket information.
+assistant: What date would you be returning?
+user: I would be returning on the 13th of March.
+assistant: And what city or airport will you be departing from?
+user: I'm be looking for flights out of LAX.
+assistant: What is the date or range of dates that you would like to leave?
+user: I will need two tickets and I want to travel this Saturday.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There is a Delta Airlines flight at 6:05 am with a layover, with the returning flight leaving at 9:30 am. The cost per ticket is $629.
+user: That sounds like exactly what I need.
+assistant: Do you need assistance with anything else?
+user: No. That's all I need. Thanks.
+assistant: Enjoy your trip to London.

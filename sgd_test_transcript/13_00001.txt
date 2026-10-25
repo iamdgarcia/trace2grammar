@@ -1,0 +1,25 @@
+user: i need to use my leisure hours in a useful way. will you find me some thing interesting to do? i like concert.
+assistant: In which city should i search in for?
+user: I need to find something around SD.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events as per your interest. The event alejandro sanz is very popular. It is taking place at Cal COast Credit Union Amphitheater. It is taking place on March 7th and will be start at 7:30 pm.
+user: That sounds great.
+assistant: Whether i need to buy tickets for this event?
+user: No, not now, will you request a payment?
+assistant: What is the amount and the name of the contact?
+user: Amount will be 162 bucks and the name of the person to make transaction is with DIego.
+assistant: Please confirm the following details. A payment request need to be made with Diego for amount $162. Your transaction is public
+user: ok that sounds good.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was made successfully.
+user: I need to purchase tickets for the event you found earlier. I need 1 ticket.
+assistant: Please check and review the following details. Ticket is booked for ALejandro Sanz.You need 1 ticket as reservation. The date of it is March 7th. the event is taking place in San diego.
+user: No, i need three tickets.
+assistant: Please check and review the following details. Ticket is booked for ALejandro Sanz.You need 3 ticket as reservation
+user: Ok that suits for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Ticket reservation is confirmed. Enjoy the show
+user: Thanks a lot for your immense help
+assistant: Whether i need to do anything else?
+user: No, thanks for now.
+assistant: Have a wonderful day.

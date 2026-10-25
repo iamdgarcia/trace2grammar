@@ -1,0 +1,16 @@
+user: My family is visiting soon and I need to find something interesting for us to do. Can you help me find something?
+assistant: Sure, what kind of event and what city do you want to look in?
+user: I'd like to go to a drama event around NY if you can find one.
+tool(FindEvents): ok n_results=10
+assistant: Sure, I found 10 events that you might like. There's a popular one called Acting for Teens at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm. How about that?
+user: That might be good. What else did you find?
+assistant: There's also Advanced Acting Scene Study at TGW Acting Studio on March 10th at 4:30 pm. How about that?
+user: That sounds good. Can you get me four tickets?
+assistant: Sure. To confirm, you'd like 4 tickets to Advanced Acting Scene Study in New York on March 10th. Is that right?
+user: Yes, that's right. Where is the event and how much are the tickets?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets are $20 and the venue address is 358 West 44th Street. I've booked your tickets, have fun!
+user: Great, thanks for your help.
+assistant: Sure, anything else I can do?
+user: No, that's all, thanks.
+assistant: Sure, have a good day.

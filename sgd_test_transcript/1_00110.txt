@@ -1,0 +1,16 @@
+user: I'm searching for a hotel in Cape town that has five stars.
+tool(SearchHotel): ok n_results=10
+assistant: I discovered 10 hotels suitable for you. There's a 5 star hotel known as 12 Apostles Hotel & Spa.
+user: Does the hotel permit smoking, and where is the hotel located?
+assistant: Smoking is not permitted, and the hotel is located at Victoria Street, Camps Bay.
+user: That's fine for me.
+assistant: Do you wish to book the hotel?
+user: Yeah, I intend to book for two days with a check-in date on the 3rd.
+assistant: Please verify the following information: you are checking in the 12 Apostles Hotel & Spa on March 3rd for 2 days and with 1 room, situated in Cape Town.
+user: Yeah, that's good for me. How much does it cost per day?
+tool(ReserveHotel): ok n_results=1
+assistant: I completed the hotel reservation, and the price is $320 per day.
+user: Thank you; you have been a great help.
+assistant: Could I assist you with something else?
+user: Nope; thank you; you have been a great assistance.
+assistant: Have a pleasant afternoon; goodbye!

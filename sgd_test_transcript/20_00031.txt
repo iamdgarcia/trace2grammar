@@ -1,0 +1,23 @@
+user: I need a rental car in NY for Tuesday next week.
+assistant: What is your pick-up date?
+user: Picking up on the 1st of this month.
+assistant: At what time?
+user: Picking up at half past 3 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 options. There is a SUV Alfa Romeo Stelvio available at the Port Authority Station.
+user: What is the daily cost?
+assistant: The cost is $46.00 daily.
+user: Sounds good. I need a home too.
+tool(SearchHouse): ok n_results=10
+assistant: There is a 4.4 rated home at 100 Greenwich Street.
+user: Sounds great. I would like to book the rental car.
+assistant: Will you be adding insurance.
+user: No, I don't need it.
+assistant: Please confirm you are booking an SUV with no insurance to be picked up from Port Authority Station on March 1st at 3:30 pm and dropped off on March 5th.
+user: Yes, that's right.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental has been booked.
+user: Thanks so much.
+assistant: Is there anything else I can assist you with?
+user: No. That will be all.
+assistant: Have a great day. Goodbye.

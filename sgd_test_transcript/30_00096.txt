@@ -1,0 +1,23 @@
+user: Hi, could you help me check the weather in Walnut Creek on the 2nd of this month?
+tool(GetWeather): ok n_results=1
+assistant: Sure, the average temperature is 76 degrees Fahrenheit with a 26 percent chance of rain.
+user: I see, could you schedule a visit to a property on that day?
+assistant: Any specific property you are looking at?
+user: I am looking to visit the Courtyard Terrace.
+assistant: Please confirm your visit to Courtyard Terrace on March 2nd.
+user: Yes, may I know how much does the place cost?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled, and the property will cost you $1,850,000.
+user: May I have their contact number please?
+assistant: You can contact them at 510-669-1325.
+user: I see, could you get me a car ride there too?
+assistant: May I know what time will you be picking up the car and when do you need the car till?
+user: I will need the car from afternoon 2:30 and use it till Monday next week.
+assistant: Are you referring to March 2nd, and where do you need the car from? Do you also require insurance?
+user: No, I do not need insurance. I would like to pick the car up today from Estacion Buenavista, preferably a Sedan.
+assistant: Sure, please confirm your pickup of a Sedan from Estacion Buenavista fromm March 1st at 2:30 pm to March 4th.
+user: Sounds great! How much will this cost me each day and what is the car called?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made. The car is a Volvo S90 which will cost you $22.00 each day.
+user: I see, that is all I need. Thank you!
+assistant: No worries, have a great day ahead!

@@ -1,0 +1,25 @@
+user: I'm looking for a rental car.
+assistant: When do you need the car and for how long?
+user: I need it from next Friday at three pm until the 9th.
+assistant: Where do you want to pick up the car?
+user: I want to find a car in Vancouver, BC.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 available cars. There is a sedan Audi A8 at Pacific Central Station.
+user: How much is it per day?
+assistant: The rental is $30.00 per day.
+user: Sounds good. I want to find tickets to an event in London, England on March 12th. I need 3 tickets.
+assistant: What kind of event are you interested in?
+user: I heard good things about Twin Peaks.
+assistant: Please confirm: 3 tickets for Twin Peaks in London on March 12th.
+user: Yes, sounds good. How much is each ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been reserved. Each ticket is $50.
+user: I want to reserve the rental car.
+assistant: Would you like to add insurance?
+user: No, that's okay.
+assistant: Please confirm: picking up a sedan rental car from Pacific Central Station on March 8th at 3 pm until March 9th.
+user: Yes, sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental has been booked.
+user: Thank you, that's all.
+assistant: Have a great day.

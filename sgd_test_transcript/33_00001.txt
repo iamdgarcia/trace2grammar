@@ -1,0 +1,38 @@
+user: i'm looking to move house so i'm after some options
+assistant: Are you looking to rent or buy? How many room will you need?
+user: Umm three bedrooms would be good and i want to buy
+assistant: What are are you interested in?
+user: can you look for me in sunnyvale
+assistant: How many bathrooms do you need
+user: can you find places with two bathrooms
+tool(FindHomeByArea): ok n_results=10
+assistant: I have 10 properties that might suit, including Apricot pit apartments 400 east remington drive. The listing price is $3,650,000
+user: Does this place have a garage?
+assistant: There's no garage at this property
+user: Is there an internal laundry, also can you give me the phone number
+assistant: The property has an internal laundry. You can reach them on 408-738-4862
+user: Okay sounds great. Can you schedule me a visit on the 6th of march?
+assistant: confirming you want to book a visit to apricot pit apartments on march 6th
+user: Yes thank you
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled
+user: I'll need the location to share with sophia
+assistant: Confirming you want to shate 400 east remington drive with sophia
+user: yes thank you
+tool(ShareLocation): ok n_results=1
+assistant: You've shared the location
+user: I need you to book me a cab there
+assistant: for how many people
+user: two people please
+assistant: Do you want a pool, regular or other sort of ride?
+user: Just a normal ride thanks and just for one now
+assistant: Confirming you want to book a regular cab for 1 to 400 east Remington drive
+user: Thanks, how much is it going to be?
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and on route. The cost is $12.33
+user: How long do i have before the cab gets here
+assistant: Expected arrival time is in 6 minutes
+user: thank for that
+assistant: Do you need anything else right now?
+user: No that's all
+assistant: Have a safe journey

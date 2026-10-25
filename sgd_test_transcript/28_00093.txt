@@ -1,0 +1,34 @@
+user: What attractions are there I would like to go to?
+assistant: Where would be going to them at?
+user: Search for attractions in Seattle.
+tool(FindAttractions): ok n_results=10
+assistant: Alki Beach Park is a Park, you might like.
+user: That sounds interesting, but I'm going to need a rental car to get there.
+assistant: When would you want to pick it up and return it?
+user: I would pick it up this Sunday and bring it back on the 4th.
+assistant: What time would you want to get the car?
+user: Five in the evening would work best for me.
+assistant: And would you be getting it in Seattle?
+user: Of course silly.
+tool(GetCarsAvailable): ok n_results=10
+assistant: These are the first 10 I came up with. The Sedan Audi A8 is a great car and you could pick it up at King Street Station.
+user: What does it run a day to rent it?
+assistant: They ask $28.00 a day for it.
+user: That's reasonable.
+assistant: Should I hold the car for you?
+user: Yes, do I would love to drive one.
+assistant: Do you need their insurance?
+user: No I have my own.
+assistant: Is this right you will pick the Sedan up at King Street Station on March 3rd and return it on March 4th and you want get it at 5 pm?
+user: Yes that's what I said.
+tool(ReserveCar): ok n_results=1
+assistant: All went well the car will be there waiting for you.
+user: I want Bryan to know about this place please share the location Alki Beach Park with him.
+assistant: You want Bryan to get the share about Alki Beach Park, yes?
+user: No, sorry share the location of King Street Station instead please.
+assistant: Okay share with Bryan the address of the King Street Station right?
+user: Yes please do.
+tool(ShareLocation): ok n_results=1
+assistant: Bryan has received the address.
+user: Great thanks for your help, that will be all for now.
+assistant: May the sun shine on your shoulders.

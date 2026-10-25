@@ -1,0 +1,34 @@
+user: Could you help me to find some interesting things to do?
+assistant: Is there any preference? Like Music, Theater etc and any choice on city to search in?
+user: I want something around NYC and i want Drama.
+tool(FindEvents): ok n_results=10
+assistant: I have short listed 10 events of your choice and one among them is a popular Acting For Teens at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm
+user: This is cool.I like to find me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 available houses and there is a good house at 100 Greenwich Street with rating 4.4
+user: Can i have the contact number and do they provide laundry service?
+assistant: Contact number is +1 917-409-0800
+user: This is cool..Can i know the buses going there?
+assistant: Are you decided to leave on march 5th?
+user: I decided to leave on 1st of this month.
+assistant: From where you are leaving?
+user: I starting from washington
+tool(FindBus): ok n_results=7
+assistant: I have short listed 7 buses and what is your opinion on a bus departing at 6:20 am costing $40?
+user: This is cool.
+assistant: Are you like to buy the tickets?
+user: No, i don't want to buy now.
+assistant: Any other help you want?
+user: I like to buy the tickets for the event you found.
+assistant: Number of tickets you want?
+user: I need three tickets.
+assistant: Please give confirmation details: Booking 3 tickets for Acting For Teens on March 4th at New York
+user: Okay..this is perfect for me..Can i know the ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket cost is $35 and your ticket booked successfully..Have fun there..
+user: Can i know the location address?
+assistant: The address is 520 8th Ave. - Personal Valet.
+user: Thank you so much.
+assistant: Any other help you need today?
+user: No, thanks a lot.
+assistant: Have a nice day..

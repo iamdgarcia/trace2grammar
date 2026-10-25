@@ -1,0 +1,52 @@
+user: Help me find a therapist please.
+assistant: What city should I search?
+user: Find someone who is in Martinez.
+assistant: What type of therapist do you want?
+user: I need someone who is a Family Counselor in Los Gatos.
+tool(FindProvider): ok n_results=5
+assistant: I have 5 therapist that could work in Los Gatos that are a family counselor. You could try Emily Rosenbaum.
+user: What is the phone number and address?
+assistant: The address is 401 Alberto Way #1 and they can be called at 408-641-7353.
+user: Can you find any other therapists because I need a psychologist.
+tool(FindProvider): ok n_results=3
+assistant: You can try Jacome Paulette D. a psychologist in Los Gatos.
+user: Could you find any other therapists?
+assistant: You can try Kirmil-Gray Kathleen a psychologist in Los Gatos.
+user: That sounds nice.
+assistant: Would you wish to book an appointment with the therapist?
+user: Yes, I'd like to book an appointment for the 8th of this month.
+assistant: Tell me your preferred time for the appointment.
+user: The appointment will be at 1:30 pm.
+assistant: Please confirm details to book an appointment with Kirmil-Gray Kathleen 1:30 pm March 8th.
+user: Yes, that will work. Tell me the address and phone number.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you'll get an email confirmation soon. The address is 430 Monterey Avenue # 1B and you can call them on 408-358-8650.
+user: I remember now that I have to request a payment.
+assistant: What is the contact name?
+user: The person making a transaction will be Svetlana.
+assistant: Tell me the amount.
+user: That will be $128.
+assistant: Please confirm details that you are making a transaction with Svetlana for $128 and the transaction will be visible to the public.
+user: Yes, that is.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was made successfully.
+user: Thanks so much. I'd like to find a restaurant there for a meal that day serving California and pricey with vegetarian options.
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 restaurant you might like called The Lexington House in Los Gatos.
+user: Tell me their address.
+assistant: The street address is 40 North Santa Cruz Avenue.
+user: Tell me the restaurant's user rating.
+assistant: The user rating is around 4.5.
+user: Yes, that will be good. I'm seeking to book a table at a restaurant.
+assistant: What time can I try to reserve for?
+user: Make a reservation at 11 am.
+assistant: Please confirm details that you are booking a table at the Lexington House in Los Gatos for 11 am on March 8th for 2 people.
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is successful.
+user: Do they include outdoor seating?
+assistant: They have outdoor seating available.
+user: Thanks a lot.
+assistant: Can I assist you with anything else?
+user: No, thanks a lot.
+assistant: Have a nice day.

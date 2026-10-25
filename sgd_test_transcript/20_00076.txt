@@ -1,0 +1,29 @@
+user: Can you help me rent a car?
+assistant: Can you tell me when you want to start the car rental, and until when you will need the vehicle?
+user: Going to start the rental on the 9th of March, and will need it till the 10th of this month.
+assistant: At what time will you be ready to pick up the car?
+user: Eleven in the morning would be an ideal time for the pick up.
+assistant: What location will you pick up the car from?
+user: Seattle, WA is the city I am looking for car rentals, so are any available?
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars available for rental, how about a sedan, you can pick up an Audi A8 from King Street Station.
+user: That car sounds good, thanks for finding it!
+assistant: Would you like to book the car for rental?
+user: Not at the moment, but eventually yes.
+assistant: Can I help you with anything else today?
+user: Is there a house there that I can stay in?
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice house available at 1000 1st Avenue, it has a 4.5 rating.
+user: That house sounds perfect, thanks.
+assistant: Shall I make a reservation for this house for you?
+user: Not right now, actually I will need you to rent the car you found earlier for me.
+assistant: Do you want to add insurance to your rental?
+user: Not really, I don't need insurance.
+assistant: Reconfirm the following details of your reservation, it will be a sedan car from King Street Station that you will pick up on March 9th at 11 am, and will drop it off on March 10th.
+user: That all is correct, please make the reservation and tell me the cost per day for the rental.
+tool(ReserveCar): ok n_results=1
+assistant: The car costs $32.00 per day, and has been reserved.
+user: Great, many thanks for all the help.
+assistant: Will that be all that I can help you with for today, or is there something else you need?
+user: Not really, that just about covers everything, thanks for all the help.
+assistant: Your welcome, have a good day.

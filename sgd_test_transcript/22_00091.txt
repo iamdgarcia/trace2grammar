@@ -1,0 +1,49 @@
+user: Please find me a psychologist therapist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: You can try Alameda Children's Specialized a psychologist in Oakland.
+user: That sounds nice.
+assistant: Would you like to book an appointment with the therapist.
+user: Yes, I'd like to book the appointment.
+assistant: What is the preference for your appointment?
+user: The appointment should be around 1:30 pm.
+assistant: Tell me the date for the appointment.
+user: Will you make an appointment for the 3rd of this month?
+assistant: Please confirm details for an appointment with Alameda Children's Specialized at 1:30 pm March 3rd.
+user: Yes, that works for me.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, something is wrong and I couldn't book the appointment. Will there be anything I can assist with?
+user: Can you try booking the appointment again with an appointment time of 11:45 in the morning? Can you book the appointment for Wednesday next week.
+assistant: Please confirm details to book an appointment with Alameda Children's specialized at 11:45 am March 6th.
+user: Yes, that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, it didn't go right and I couldn't book the appointment so you may want to try Alameda Children's Specialized. You may get a March 6th appointment for 11:30 am.
+user: Yes, that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was a success in being booked. You should receive an email confirmation soon.
+user: I need to request a payment I remembered with Wilson a private transfer for 60 bucks.
+assistant: Please confirm details for a private transaction with Wilson for $60.
+user: No, the person to make the transaction with will be Mary for 104 dollars.
+assistant: Please confirm details that you are making a transaction with Mary for $104.
+user: Yes, that is it.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was a success.
+user: I need to find a restaurant for a meal that day.
+assistant: What type of food are you searching for?
+user: I need something Cambodian.
+tool(FindRestaurants): ok n_results=8
+assistant: In Oakland is 3 Seasons Thai Bistro a nice restaurant.
+user: Yes, that will be good.
+assistant: Will you assist with anything else?
+user: I need to book a table at a restaurant.
+assistant: What time should I reserve for?
+user: The reservation is needed at 1:15 pm.
+assistant: Please confirm details that you are booking a table at 3 Seasons Thai Bistro in Oakland for 1:15 pm March 6th for 2 people.
+user: No, I'd like the reservation at 1:30 pm for 1 person.
+assistant: Please confirm details for a reservation at 1:30 pm for 1 person.
+user: No, the table is for 2 people.
+assistant: Please confirm details for a reservation at 1:30 pm for 2 people.
+user: Yes that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is a success.
+user: Thanks so much and that is it.
+assistant: Have a nice day.

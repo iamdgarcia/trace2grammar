@@ -1,0 +1,20 @@
+user: Could you look a locomotive for me?
+assistant: What metropolis do you intend to leave from?
+user: I'm searching for tickets leaving San Diego.
+assistant: What metropolis are you headed to?
+user: I'm headed to Sacramento; look for tickets on Friday next week.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 locomotives suitable for you, departing at 6:10 am with a price of $145.
+user: What location does the train depart from?
+assistant: It departs from Santa Fe Depot.
+user: That's find with me.
+assistant: Would you like me to reserve tickets?
+user: Yeah, I'd like to make the booking. I'd like a conditionally refundable ticket for 1, with trip insurance.
+assistant: Please verify the following information: you'd like a value ticket for 1 person departing from San Diego on March 8th, 6:10 am, and headed to Sacramento.
+user: That's perfect for me. What location does the train come to?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been reserved, and the train will go to Sacramento Valley Station.
+user: Thank you for your assistance.
+assistant: Could I assist with something else?
+user: Nope; thank you for your assistance.
+assistant: I hope to see you later.

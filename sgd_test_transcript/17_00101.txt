@@ -1,0 +1,17 @@
+user: Can you check the weather for me?
+assistant: In which city?
+user: I want to see the weather in Mexico City on the 14th of this month.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 92 degrees Fahrenheit with a 1 percent chance of rain.
+user: Okay, that sounds great. Can you find me a one-way flight there? I'll be traveling from Portland on Wednesday next week. Any airline will do.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: Do you want to fly with Alaska Airlines? I found a flight for you at 3:10 pm for $251 with one layover.
+user: That sounds great. Can you find me a rental car there?
+assistant: Do you want to pick the car up on March 14th? When will you be returning it? What time do you want to pick it up?
+user: I'll need it from the 9th of this month until the 14th of this month. I'll pick up at half past 10 in the morning.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a great option available at Benito Juarez International Airport. It's a SUV Citroen C5.
+user: How much will that be per day?
+assistant: It'll be $30.00 per day.
+user: That sounds great. That's all I need.
+assistant: Thanks, have a great day.

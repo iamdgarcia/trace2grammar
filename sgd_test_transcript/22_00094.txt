@@ -1,0 +1,46 @@
+user: Can you find me a Family Counselor in Los Gatos?
+tool(FindProvider): ok n_results=5
+assistant: How about Emily Rosenbaum? They are a Family Counselor located in Los Gatos.
+user: What's the address?
+assistant: They are located at 401 Alberto Way #1.
+user: Have you found any other therapists?
+assistant: You might want to try Fredkin Susan. They are a Family Counselor located in Los Gatos.
+user: Can you get me their phone number and address?
+assistant: They are located at 401 Alberto Way # 2C and you can contact them at 408-472-1773.
+user: That sounds good.
+assistant: Would you like to book an appointment?
+user: Yes, book the appointment. Can you make it for the 13th of this month?
+assistant: Do you have a preferred time?
+user: Try to make it for the afternoon 12:15.
+assistant: Confirming that you want to book an appointment with Fredkin Susan on March 13th at 12:15 pm?
+user: Nope. Can you make the appointment for the 3rd of March at 11:00.
+assistant: Confirming that you want to make the appointment for March 3rd at 11 am?
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry but something went wrong and I couldn't book your appointment with Fredkin Susan. Would you like me to try to make your appointment for March 3rd at 11:30 am?
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been successfully booked. You will be receiving an email confirmation soon.
+user: Thanks! I appreciate your help. Can you also request a payment from Yumi? I want the transaction to be private and for 50 dollars.
+assistant: Confirming that you want to make a private transaction with Yumi in the amount of $50?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was successful.
+user: Can you find me a restaurant for the day of my appointment?
+assistant: Sure. What type of cuisine do you prefer?
+user: I want some Spicy Noodles.
+tool(FindRestaurants): ok n_results=2
+assistant: How about Coup De Thai? It is a nice restaurant located in Los Gatos.
+user: Yes, that sounds good.
+assistant: Would you like to reserve a table?
+user: Yes, please reserve me a table.
+assistant: For what time?
+user: Make the reservation for around 1:30 pm.
+assistant: Confirming that you want to book at table at Coup De Thai in Los Gatos. You want to reserve a table for 2 for March 3rd at 1:30 pm. Is this information correct?
+user: Yes, that will work. Is this restaurant ultra high-end?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is moderate. Your reservation has been successfully made.
+user: What's the address?
+assistant: They are located at 137 North Santa Cruz Avenue.
+user: Thank you. That's all.
+assistant: You're welcome. Have a good day!

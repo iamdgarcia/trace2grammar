@@ -1,0 +1,13 @@
+user: Please get me tickets to the movie Official Secrets.
+assistant: Sure, how many? Do you want a 3d or regular showing and which date do you want?
+user: I just want one ticket to a regular show on 4th of March.
+assistant: Where do you want to go? What time do you want to see it?
+user: I need Santa Rosa at 8:15 in the night.
+assistant: Ok, here's what I have: 1 ticket for Official Secrets on March 4th in Santa Rosa at 8:15 pm. Regular format.
+user: Fine, that works.
+tool(BuyMovieTickets): ok n_results=1
+assistant: You have tickets. It is at 551 Summerfield Road.
+user: Fine, what kind of movie is it? How much must I pay?
+assistant: It's a Mystery and your total is $15 per person.
+user: Wow, great. Thank you.
+assistant: Enjoy your Mystery movie.

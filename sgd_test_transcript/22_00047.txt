@@ -1,0 +1,50 @@
+user: Can you find me something fun to do in NY next friday
+assistant: what are you interested in? you can say anything from music to theater
+user: i want to watch some play
+tool(FindEvents): ok n_results=10
+assistant: there are 10 plays. what about acting for teens at 520 8th ave. - personal valet parking on march 8th at 4:30 pm
+user: that sounds good
+assistant: what else can i do for you today
+user: can you find me bus going there
+assistant: where are you traveling from
+user: i will be traveling from philadelphia
+assistant: is this leaving on march 8th
+user: i am leaving on wednesday next week for two people
+tool(FindBus): ok n_results=6
+assistant: i found 6 buses for you. what about 9 am departure for $22
+user: what station will i arrive at
+assistant: you will arrive at penn station
+user: is this a one-stop bus? where will i depart from
+assistant: you will depart from 10th and filbert with a direct bus
+user: ok perfect, please find me a round trip flight returning on 11th of this month
+assistant: is this leaving on march 6th or march 8th
+user: this is leaving on thursday next week
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: i found 3 flights for you. what about american airlines depart at 1:20 pm with returning flight depart at 11:20 am for $95
+user: will this be economy or business class
+assistant: this is a economy
+user: ok perfect, please find me a hotel stay in that area
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 hotels for you. what about a 5 star hotel at 1 hotel brooklyn bridge
+user: what else can you find
+assistant: what about 5 star hotel with 1 hotel central park
+user: what else can you find with 4 star hotel
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 4 star hotel for you. what about 6 columbus - central park hotel
+user: how much is the stay per night
+assistant: this will be $176 per night
+user: ok that sounds good
+assistant: do you want to reserve the hotel
+user: no not right now
+assistant: what else can i do for you
+user: please buy the event ticket for me
+assistant: please confirm your purchase of 2 ticket for acting for teens in new york on march 8th
+user: no i need 3 tickets
+assistant: please confirm your changes to 3 tickets on march 8th
+user: yes that is correct. how much is the ticket
+tool(BuyEventTickets): ok n_results=1
+assistant: your ticket is booked. it is $50 per ticket
+user: what is the venue address
+assistant: the address is 520 8th ave. - personal valet
+user: thank you that is all i want now
+assistant: have a nice day

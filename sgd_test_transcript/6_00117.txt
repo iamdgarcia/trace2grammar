@@ -1,0 +1,11 @@
+user: I want updates about the weather.
+assistant: Where exactly?
+user: Orinda.
+tool(GetWeather): ok n_results=1
+assistant: Temperature is 81 degrees Fahrenheit and the chance of rain is 3 percent.
+user: Can you also tell me about humidity and wind speed please?
+assistant: Humidity is 16 percent and the wind will blow at 9 miles per hour.
+user: Got it.
+assistant: What can I help you with now?
+user: Nothing, I'm fine. Goodbye.
+assistant: Have a great day.

@@ -1,0 +1,23 @@
+user: Pull up child friendly park attractions in Vancouver I can visit please.
+tool(FindAttractions): ok n_results=7
+assistant: Sure, may I suggest checking out Dr. Sun Yat-Sen Classical Chinese Garden Park.
+user: Pull up the phone number there please.
+assistant: Sure, the number is 604-662-3207
+user: Okay, thanks. I will be needing to find a house to stay at while i'm there. There will be two people in my party. I would prefer ratings of 3.1 or higher please.
+tool(SearchHouse): ok n_results=10
+assistant: Alright, I've located 10 options for your search. May i start with a nice house located at 1018 Granville Street with a rating of 3.1.
+user: Find out if they have laundry service and I will also need the contact number for this location as well.
+assistant: Unfortunately there is no laundry service. The phone number you requested is +1 877-972-6378
+user: This house will work just fine. I'll also be needing round trip flight information to get there as well.
+assistant: Which city will you plan to depart from?
+user: Lets say Las Vegas.
+assistant: Alright,which day would you like to return home?
+user: Return date will be on the 14th of March.
+assistant: Great, what date will you be departing on?
+user: I would like to head out on the 2nd of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Alright, i've located 1 flight for you on United Airlines. The onward flight takes off at 4:30 am and has a layover. Your returning flight departs at 9:25 am the total will be $368.
+user: Is this for 1 person or 2? Also is this a premium economy class ticket?
+assistant: this quote is for 1 traveller and is Economy -class seating.
+user: Sounds good. thanks for that help.
+assistant: your welcome. have a great day

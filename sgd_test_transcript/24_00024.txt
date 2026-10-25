@@ -1,0 +1,21 @@
+user: I need to find a one way flight.
+assistant: Which city will you be departing from?
+user: I need a flight from Los Angeles for 1.
+assistant: Where will you be flying to? On which day would you like to depart?
+user: I want to leave on the 1st of this month to go to Phoenix, AZ.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Would you like a flight on Alaska Airlines for $84 at 9:45 am.
+user: Sounds great, please find trains going there on the 6th of March.
+tool(FindTrains): ok n_results=5
+assistant: There are 5 trains. One costs $87 and departs at 6:30 am.
+user: That is perfect, please book conditionally refundable tickets in case something changes.
+assistant: You want a value ticket for 1 person on March 6th from Los Angeles to Phoenix at 6:30 am.
+user: That is great thanks.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been reserved.
+user: Which station does it leave from? To which does it arrive?
+assistant: The train arrives at Phoenix Union Station and is leaving from Union Station.
+user: Thanks for all your help.
+assistant: Can I assist with anything more?
+user: No that is all thanks.
+assistant: Okay, talk to you later. Enjoy your day.

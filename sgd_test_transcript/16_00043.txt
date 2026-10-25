@@ -1,0 +1,29 @@
+user: I would ike to find a unisex salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options. One is 18/8 Fine Men's Salons - Palo Alto in Palo Alto.
+user: What is the rating of the salon and phone number?
+assistant: The rating is 3.9 and number is 650-460-8290.
+user: OK, that's fine.
+assistant: Can I do anything else for you?
+user: Yes, I would like to fins a psychiatrist in Palo Alto, as well.
+tool(FindProvider): ok n_results=2
+assistant: I found 2 in Palo Alto. There is a psychiatrist named Ariela Ora Karasov.
+user: Let's try that.
+assistant: Would you like an appointment?
+user: Yes, at ten am for Tuesday next week.
+assistant: Confirming an appointment on March 5th at 10 am with Ariela Ora Karasov.
+user: Good and the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You appointment is confirmed with an e-mail following. The phone number is 650-723-8659.
+user: I want to make appointment at the salon, too at quarter to 6 in the evening.
+assistant: Confirming a 5:45 pm appointment at 18/8 Fine Men's Salons - Palo Alto on March 5th.
+user: Great and what is the address?
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately, I was not able to make the appointment. Can I do anything else for you?
+user: Please try for a time in the afternoon 12:30.
+assistant: Okay, confirming a 12:30 pm pm appointment at 18/8 Fine Men's Salons - Palo Alto on March 5th.
+user: That is good.
+tool(BookAppointment): ok n_results=1
+assistant: I was unable to book the appointment. What about 18/8 Fine Men's Salons - Palo Alto on March 5th at 1 pm?
+user: No, that's okay.
+assistant: Have a nice day.

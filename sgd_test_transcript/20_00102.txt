@@ -1,0 +1,24 @@
+user: I am going to Los Angeles and want a house I can stay in. I need the house to have a rating of 3.7 or above and it should have laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a very good house rated 3.7 at 1020 South Figueroa Street.
+user: Are there any other houses that you can find. I would like one with a rating of 4.3 or above.
+tool(SearchHouse): ok n_results=10
+assistant: There is a very good house at 1224 Beverwil Drive rated at 4.3.
+user: That house sounds very good.
+assistant: Do you want to reserve this house?
+user: Yes, I would like to make a reservation at this house and would check in on March 4th.
+assistant: How many people do you have in your group?
+user: I have 2 people.
+assistant: What day will you be checking out?
+user: I am planning to check out on March 6th.
+assistant: Okay, confirm these details for me: You have 2 people in your group checking in on March 4th in Los Angeles and checking out on March 6th.
+user: Yes, that sounds very good. Do you have a phone number for this place?
+tool(BookHouse): ok n_results=1
+assistant: I have made your reservation successfully and the phone number is +1 877-334-5623.
+user: Thank you very much for your help.
+assistant: Is there anything else you want help with?
+user: Can you find some attractions for me there?
+tool(FindAttractions): ok n_results=10
+assistant: I have located 10 attractions you might like. One of these is a historical landmark called Angels Flight Railway.
+user: Fine, that was all I wanted. Goodbye for now.
+assistant: Have a good time!

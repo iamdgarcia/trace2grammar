@@ -1,0 +1,55 @@
+user: Can you please look for something interesting for me to do?
+assistant: Yes, but please tell me in which area to search as well as if you prefer a specific type of event.
+user: I'd like some Theater events in San Fran.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events matching your criteria, out of which I'd recommend Above Ground at Mojo Theatre on March 6th at 5 pm.
+user: Sounds nice, but is there anything else available?
+assistant: There's also the Above Ground Festival at Mojo Theatre on March 2nd at 4 pm.
+user: Can you please tell me the address for the venue as well as the ticket price?
+assistant: Sure, the venue is located at 2940 16th Street #217 and tickets are $55.
+user: Sounds nice, but can you find me something for next Thursday?
+tool(FindEvents): ok n_results=8
+assistant: How about As You Like It at Main Post Lawn on March 7th at 6:30 pm.
+user: Sounds perfect. Let's find a bus to go there today for 1 person.
+assistant: From where will you be departing?
+user: I'm travelling from Las Vegas and I do not specifically need a direct bus.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses matching your criteria, the first one leaving at 6:40 am with tickets priced at $56.
+user: What's its arrival station.
+assistant: The bus arrives at Transbay Terminal.
+user: Can you please also tell me its departure station?
+assistant: Sure, it departs from Union Plaza.
+user: Is there anything else available?
+assistant: There's also one departing at 11:30 am with tickets priced at $52.
+user: Can you please find me another one, this time I'll be needing 2 tickets.
+tool(FindBus): ok n_results=5
+assistant: There are 5 buses matching your criteria. There's one leaving at 12:30 pm with tickets priced at $51.
+user: Sounds nice, but let's also find some round trip flights to there, preferably Southwest Airlines.
+assistant: Sure, but first tell me when do you plan to return.
+user: I want to come back on the 10th of March.
+assistant: And you'll be travelling on March 7th, right?
+user: No, I plan to fly out on the 4th of March. Please look for Economy tickets.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's a direct Southwest Airlines flight taking off at 12:35 pm, with the returning flight at 7:15 am. Tickets are $157.
+user: Sounds nice.
+assistant: Is there anything else I could help you with?
+user: Yes, please find me some hotels in the area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which I think you'd like, out of which I recommend Amsterdam Hostel San Francisco, a nice 1 star hotel.
+user: Anything else available?
+assistant: There's also a very nice 4 star hotel, the Argonaut Hotel.
+user: Can you please tell me the per night price?
+assistant: Rooms are $208 per night.
+user: Can you please tell me if they allow smoking as well as their phone number?
+assistant: You can reach them at +1 415-563-0800 but unfortunately they do not allow smoking.
+user: Is there anything else matching my criteria?
+assistant: There's also the 2 star Beck's Motor Lodge.
+user: OK. Now let's go back and purchase the tickets I found earlier.
+assistant: Can you please confirm that you want me to purchase 2 tickets for you for As You Like It in San Francisco on March 7th?
+user: Yes, that's correct. Also, please tell me the ticket price as well as the venue's address.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully placed your reservation. Tickets are $50 and the venue is located on Montgomery Street.
+user: Thanks a lot for everything.
+assistant: Is there anything else I could do for you?
+user: No, that will be all for now.
+assistant: Have a nice day!

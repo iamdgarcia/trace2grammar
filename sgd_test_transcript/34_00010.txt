@@ -1,0 +1,21 @@
+user: Can you help me search for hotels in London, England for my upcoming visit there?
+tool(SearchHotel): ok n_results=10
+assistant: You may like 45 Park Lane, which is a 5 star hotel
+user: Can you tell me the cost for a one night stay at this hotel? Also, does this hotel permit smoking?
+assistant: The price for a night is $375. This hotel does not permit smoking.
+user: Great. I'm looking for events and activities to do. Are there any sights or events that are kid friendly and free to attend? Garden related sights and events would be nice
+tool(FindAttractions): ok n_results=10
+assistant: Sure. So far. there are at least 10 events and sights you might enjoy. There's a Park called Barbican Conservatory that you may like.
+user: Are there other options that you can suggest?
+assistant: Sure, there's another Park called Clissold Park.
+user: Excellent. Can I go ahead and book a room at the hotel you mentioned earlier?
+assistant: What's your check in date and length of your stay?
+user: I'd like to check in on the 5th and I'll be there for five days.
+assistant: So you would like to book 1 room at 45 Park Lane hotel in London from March 5th for a total of 5 days, correct?
+user: Actually, my check in date is March 9th.
+assistant: So again, that a room at 45 Park Lane from MArch 9th, do I have this right?
+user: Yes, that works perfectly. Can you also give me a contact number for the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: That room has been reserved with the dates as requested. They can be reached at +44 20 7493 4545
+user: Great, that's everything I needed. Thanks so much for your help.
+assistant: Take care and have a nice day.

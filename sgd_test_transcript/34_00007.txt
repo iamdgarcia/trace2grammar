@@ -1,0 +1,19 @@
+user: Please find a suitable hotel in Sydney NSW.
+tool(SearchHotel): ok n_results=10
+assistant: You can enjoy the facilities of any of 10 such hotels there. One 1831 Boutique Hotel which is a 3 star hotel.
+user: What about smoking, allowed? Please give the details of price.
+assistant: You have to pay $225 per night. You can enjoy smoking there.
+user: Thank you. Are there any attractions?
+tool(FindAttractions): ok n_results=10
+assistant: Please check out ANZ Stadium which is a Sports Venue.
+user: What about entrance fee, free? Do you have contact number?
+assistant: You can contact on 2 8765 2000. You can enter without any fee.
+user: Fine, Please reserve a seat in the hotel selected on next Wednesday.
+assistant: How long do you wish to stay there?
+user: Book it for 4 days with check in date as 10th of this month.
+assistant: Please confirm, that you need a booking in 1831 Boutique Hotel on March 10th for 4 days in Sydney. You need 1 room.
+user: Ok, please give their address and phone number.
+tool(ReserveHotel): ok n_results=1
+assistant: The booking is succesfull. Address in 631-635 George Street and phone number is +61 2 9265 8888
+user: Great service, thank you.
+assistant: Enjoy a great day.

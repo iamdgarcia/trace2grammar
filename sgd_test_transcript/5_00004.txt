@@ -1,0 +1,19 @@
+user: I need a one-stop bus, can you help?
+assistant: Absolutely, where will you leave from and where will you go?
+user: I leave Sacramento, CA saturday this week. I am going to Las Vegas baby.
+tool(FindBus): ok n_results=10
+assistant: How about the early 7:10 am bus? It's total cost is $63.
+user: What station am I leaving from, and where am I headed?
+assistant: You're leaving from the 65th Light Rail Station and headed to Union Plaza.
+user: How about another option. I need three tickets.
+tool(FindBus): ok n_results=9
+assistant: There are 9 options. What about the 7:40 am. bus? It's ticket price is $65.
+user: Sounds like a winner. Get them.
+assistant: Sure, let's confirm: 3 tickets for a bus leaving Sacramento going to Las Vegas on March 2nd. It leaves at 7:40 am.
+user: Fine, what is the terminus again?
+tool(BuyBusTicket): ok n_results=1
+assistant: You will arrive at Union Plaza. You're all set.
+user: What's the departing station again?
+assistant: It's 65th Light Rail Station.
+user: Great, you make my heart sing.
+assistant: Have a fun trip.

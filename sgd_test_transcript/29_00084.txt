@@ -1,0 +1,41 @@
+user: I am looking for something interesting to do on 7th of March.
+assistant: What is your preferred city and type like Music or Theater or anything else for the event?
+user: I am looking for some Drama events in NYC.
+tool(FindEvents): ok n_results=10
+assistant: How about a popular show called Advanced Acting Scene Study taking place at TGW Acting Studio on March 7th at 6:30 pm?
+user: Okay, This sounds good. But Can you show me any other events taking place on the 11th?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like. How about a popular event called Acting For Teens taking place at 520 8th Ave. - Personal Valet Parking on March 11th at 7 pm.
+user: okay, That sounds perfect to me.
+assistant: Would you like me to buy the tickets for you?
+user: No, Not now. Please find me a house for 4.5 or higher rating for four people.
+tool(SearchHouse): ok n_results=10
+assistant: How about a nice house with 4.5 rating located at 111 North 12th Street, Brooklyn?
+user: Find me their phone number.
+assistant: You can call them on +1 718-631-8400.
+user: Okay, That sounds good. Find me buses going there.
+assistant: Would you like to depart on March 9th?
+user: No, I will be leaving on 7th of March.
+assistant: Which city do you want to depart from?
+user: I would like to depart from Washington.
+tool(FindBus): ok n_results=7
+assistant: What do you think about a bus departing at 6:20 am with the cost of ticket as $31?
+user: can you please tell me the number of stops and the name of the station it depart from?
+assistant: The bus is a direct bus and it departs from Silver Spring Bus Stop.
+user: Are there any other buses you can suggest?
+assistant: What do you think of a bus departing at 12:10 pm with the cost of the ticket as $42?
+user: This bus sounds good to me.
+assistant: Would you like me to buy the tickets for the bus?
+user: No, Please don't buy the ticket now.
+assistant: Is there anything else I can assist you with?
+user: Please purchase four tickets for the event you just found.
+assistant: Please confirm: You want me to purchase 4 tickets for the event called Acting For Teens taking place in New York on March 11th.
+user: Yes, That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets. Enjoy!
+user: Find me the address of the venue and the cost for one ticket.
+assistant: The address of the venue is 520 8th Ave. - Personal Valet and the cost for one ticket is $45.
+user: Thank you so much!
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

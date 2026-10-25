@@ -1,0 +1,20 @@
+user: I want to purchase film tickets to a regular movie. Could you look for films playing in Santa Clara?
+assistant: What time do you wish to view it on?
+user: I'd like to view it on March 9th.
+assistant: How many tickets would you like?
+user: I desire 1 ticket.
+assistant: What film would you like to see?
+user: I'd like to see Hustlers.
+assistant: What time do you wish to see the film?
+user: I'd like to see the film at 11 in the night.
+assistant: Please verify the following information: you'd like to purchase 1 ticket to see the regular film Hustlers at March 9th, 11 pm, in Santa Clara.
+user: Yeah, that's perfect for me. What type of film is it, and where is the theater located?
+tool(BuyMovieTickets): ok n_results=0
+assistant: I apologize, but I could not buy the tickets. Could I assist you with something else?
+user: Can you attempt to buy again? I'd like to watch it at Walnut creek on next Tuesday, during night 9:45.
+assistant: Please verify the following information: you want to buy 1 ticket to see the regular film Hustlers at Walnut Creek on March 5th, 9:45 pm.
+user: Yeah, that's right.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have bee purchased.
+user: Thank you for your assistance; that's all.
+assistant: Have a pleasant afternoon.

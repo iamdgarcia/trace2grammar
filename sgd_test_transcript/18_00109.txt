@@ -1,0 +1,25 @@
+user: I want to find someplace to eat. Please look for restaurants.
+assistant: What kind of food would you like to look for?
+user: I would like to find Latin American food.
+assistant: What city would you like to search in?
+user: Please find restaurants in San Jose.
+tool(FindRestaurants): ok n_results=10
+assistant: Chacho's is a restaurant in San Jose matching the criteria you requested.
+user: Yes, that would be good.
+assistant: Would you like to reserve a table there?
+user: Yes, I would like to reserve a table.
+assistant: What time would you like the reservation for?
+user: Please make it for eleven am.
+assistant: You would like to book a table for 2 people at Chacho's in San Jose on March 1st at 11 am, is that right?
+user: Yes, that's correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: Can you help me get a cab to go there?
+assistant: Are you going to 87 East San Fernando Street? Is there a type of ride you prefer, such as Regular or Pool?
+user: Yes, that is the address. I would prefer a Pool ride.
+assistant: You would like 2 seats in a Pool ride to 87 East San Fernando Street, is that correct?
+user: Yes, that is right. How long will it be before the cab gets here? How much is it?
+tool(GetRide): ok n_results=1
+assistant: Your cab ride is booked and on its way. The expected time is 5 minutes. The ride costs $21.04.
+user: Thank you for your help, that's all for now.
+assistant: Have a wonderful day!

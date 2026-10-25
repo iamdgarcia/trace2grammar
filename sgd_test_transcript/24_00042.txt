@@ -1,0 +1,30 @@
+user: I will be flying to Portland, OR today and need a one way flight
+assistant: Which is the place you will be starting from?
+user: I need to fly from Seattle
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I have selected 2 flights of your choice. One among them is Southwest Airlines which leaves at 5:15 am and the ticket cost is $64
+user: I wanted Premium Economy tickets
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I have selected 2 flights of your choice. One among them is Delta Airlines which is a direct flight leaving at 5:35 pm and the ticket cost is $121
+user: Cool and i need to search for train to reach there
+assistant: Are you planning to start traveling on March 1st?
+user: I require tickets for 11th of this month
+tool(FindTrains): ok n_results=10
+assistant: I have selected 10 flights of your choice. What is your opinion on train departing at 8 am costing total $61?
+user: That is fine
+assistant: You require ticket booking?
+user: Yes i want ticket booking
+assistant: Do you also require travel insurance and how many tickets you need?
+user: I wanted 1 ticket and also i need travel insurance
+assistant: Please give confirmation details: You need 1 ticket on train leaving from seattle to Portland on March 11th at 8 am. It will have travel insurance with value ticket
+user: That is fine
+tool(GetTrainTickets): ok n_results=1
+assistant: Ticket booking is done
+user: Which is the station you will be arriving?
+assistant: The train arrival at Union Station
+user: Which is the station train starting from?
+assistant: The train starting from King Street Station
+user: Thank you very much
+assistant: Any other help?
+user: No, thanks a lot
+assistant: See you very soon

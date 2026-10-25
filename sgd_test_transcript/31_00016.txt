@@ -1,0 +1,30 @@
+user: can you find me a unisex salon?
+assistant: where should i look?
+user: look in sfo please.
+tool(FindProvider): ok n_results=10
+assistant: there's 1512 barber shop in san francisco.
+user: are there any others?
+assistant: there's also 20th salon and barber in san francisco.
+user: what are the ratings like?
+assistant: it has a 4.5 rating.
+user: that works. can you find me a mystery movie to watch?
+tool(FindMovies): ok n_results=2
+assistant: i found 2 you might like. there's luce and official secrets.
+user: official secrets sounds cool. can you find me a regular show for the day after tomorrow at amc kabuki 8?
+tool(GetTimesForMovie): ok n_results=1
+assistant: there's one at 4 pm in amc kabuki 8.
+user: that one sounds good.
+assistant: is there something else i can help with?
+user: can you book me an appointment for that salon you found earlier?
+assistant: what time do you want it for?
+user: can you make it for evening 4?
+assistant: so you want an appointment at 20th salon and barber on march 3rd at 4 pm?
+user: yes please. where is it?
+tool(BookAppointment): ok n_results=1
+assistant: it's been booked. they're located on 2737 20th street.
+user: what's their number?
+assistant: you can call them at 415-824-1335.
+user: thanks so much.
+assistant: is there anything else?
+user: no that's it, thanks.
+assistant: have a great day.

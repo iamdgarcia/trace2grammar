@@ -1,0 +1,23 @@
+user: I am looking for an interesting attraction.
+assistant: What city are you looking in? Do you like music, theater, or something else?
+user: I am looking for a musical performance around LA.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events including Ain Gordon at Ralph Freud Playhouse on March 9th at 7 pm.
+user: That is perfect.
+assistant: Do you want to buy a ticket?
+user: Not at this time. Are there any hotels in the area?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including a 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: Do they allow smoking? What is the price?
+assistant: There is no smoking. The cost is $75 per night.
+user: That is perfect. I want to buy tickets to the concert.
+assistant: How many tickets do you need?
+user: There are two of us going to the concert.
+assistant: Please confirm you want 2 tickets for the Ain Gordon concert on March 9th in Los Angeles.
+user: That is perfect.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been successfully purchased. Have fun!
+user: Thank you very much.
+assistant: May I further assist you?
+user: No, that will be all.
+assistant: See you soon!

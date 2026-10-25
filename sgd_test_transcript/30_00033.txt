@@ -1,0 +1,23 @@
+user: Hi, could you get me tickets to The Blue Room event please?
+assistant: Any preference on the date and location of the event?
+user: Something in NY on the 12th of March is fine.
+assistant: And how many tickets are you looking to get?
+user: Just 2 will do, thanks!
+assistant: Please confirm your reservation for 2 tickets to The Blue Room on the March 12th in New York.
+user: That is fine with me. May I know when does the event start and how much does a ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, enjoy! This ticket will cost you $25 each and it starts at 5:30 pm.
+user: Thank you, could you also help me find a bus ride there departing on the 1st?
+assistant: And where will you be departing from?
+user: From the Washington, please.
+tool(FindBus): ok n_results=7
+assistant: There are 7 available buses, how about one departing at 6:20 am costing $40?
+user: Is this a one-stop bus?
+assistant: No, this is a direct bus.
+user: I see, could you get me the tickets then?
+assistant: Please confirm your purchase for 2 bus tickets from Washington to New York on March 1st at 6:20 am.
+user: That is fine with me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you for your kind assistance. That is all I need!
+assistant: Have a great day ahead!

@@ -1,0 +1,36 @@
+user: Would you help me to find a salon in Mill Valley?
+tool(FindProvider): ok n_results=7
+assistant: I have short listed 7 salons of your choice..There is a nice salon called Ap Luxe Salon in Mill Valley.
+user: Do you know any other salon?
+assistant: There is a salon called D&O Salon in Mill Valley.
+user: Is it a unisex salon and can i know the address?
+assistant: Yes..it is a unisex salon at 800 Redwood Highway #220
+user: Is there any other salons?
+assistant: There is a nice salon called Edward's salon in Mill Valley.
+user: This is cool..I like to book appointment in this salon.
+assistant: At what time you want the appointment?
+user: I like to have the appointment at 5:30 pm.
+assistant: what is your appointment date?
+user: I like to visit the saloon day after tomorrow.
+assistant: Please give confirmation details: The appointment with the stylist Edward'S Salon at 5:30 pm on March 3rd
+user: This is cool..can i know the phone number and street address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is fixed and location is 655 Redwood Highway #140 and their contact number is 415-381-1950
+user: Thanks a lot and i need to look for a restaurant for meals which is tagged intermediate priced for price
+assistant: what is your choice of food?
+user: I need something serving pizza
+tool(FindRestaurants): ok n_results=3
+assistant: There is a nice restaurant called La Ginestra in Mill Valley
+user: can i know their address and user rating?
+assistant: The rating is around 4.5 and address is 127 Throckmorton Avenue.
+user: Okay..fine..Can you reserve a table at the restaurant at evening 7 and it is for two people.
+assistant: Please give confirmation details: Booking a table for 2 people at La Ginestra at Mill Valley on March 3rd at 7 pm
+user: That is fine
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is done
+user: what is their contact number? do they provide outdoor eating?
+assistant: No, there is no seating and the contact number is 415-388-0224
+user: Thanks a lot.
+assistant: Any other help you want?
+user: No, thank you so much.
+assistant: Have a nice day.

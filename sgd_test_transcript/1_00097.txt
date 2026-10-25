@@ -1,0 +1,14 @@
+user: I need to stay in a hotel for a meeting. Please find a three star hotel.
+assistant: At which city should i need to search for?
+user: Please look for hotels in Washington.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels as per your need. There is a hotel called Arc the. Hotel Washington D.C. It is a 3 star hotel
+user: Ok That's sound good.
+assistant: Whether i need to reserve room in that hotel?
+user: Yes, I need to 2 rooms. I'll be staying for three days. I'm looking to check in on 1st of this month.
+assistant: Please check and confirm the following details. Hotel is booked at Arc The. Hotel Washington D.C. Check in Date is on March 1st. Number of days is 3 to stay. It's located in Washington D.C. Need 2 rooms.
+user: Sure, please book it. What is their Phone number? What is their street address?
+tool(ReserveHotel): ok n_results=1
+assistant: Booked successfully. Their address is 824 New Hampshire Avenue Northwest, Washington, DC 20037, USA. THeir PHone Number is +1 202-337-6620.
+user: THanks a Lot for your help. That's all i need.
+assistant: Bye have a wonderful day.

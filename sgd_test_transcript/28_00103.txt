@@ -1,0 +1,38 @@
+user: What does NY have in the way of attractions?
+tool(FindAttractions): ok n_results=10
+assistant: Here are 10, maybe you would like to visit a Museum like the 9/11 Tribute Museum.
+user: Do you think a kid would like it?
+assistant: It is considered a place that children can be taken to.
+user: Do they charge to get in?
+assistant: No entry does not cost anything.
+user: That's good. I want to rent a Hatchback car during my visti there. Can you find me one?
+assistant: When would you need to pick it up?
+user: I wanted it beginning the 10th of this month.
+assistant: At what time?
+user: Oh I'd say in the morning 11.
+assistant: And how long did you want it for?
+user: Probably until the 13th.
+assistant: Did you want to get it in New York?
+user: Yes that's what I was planning to do.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found a Kia Ceed Hatchback you could pick it up at the Port Authority Station.
+user: I'll take it could you arrange it so it will be waiting for me please?
+assistant: Will you want their insurance?
+user: No, that won't be necessary.
+assistant: I believe you want to pick up the vehicle - a Hatchback car -on March 10th at 11 am at the Port Authority Station and you plan to return it March 13th, also you do not want insurance, do I have all of this right?
+user: Yes you do, what will that run me a day?
+tool(ReserveCar): ok n_results=1
+assistant: The arrangements were successful the car will be ready when you requested and you will be charged $24.00 each day.
+user: Thanks. I am going to have you share th Port Authority Station address with someone okay?
+assistant: That's fine who should I send it to?
+user: I want to send the address to Denise but I want you to send her the address to the 9/11 Tribute Museum.
+assistant: Alright send Denise the address to the 9/11 Tribute Museum correct?
+user: No, wait Matthew should get that.
+assistant: Okay so send Matthew the address of the 9/11 Tribute Museum are you sure?
+user: That right.
+tool(ShareLocation): ok n_results=1
+assistant: The share went through.
+user: Thanks for the help.
+assistant: Can I be of any more assistance?
+user: No I appreciate it. Thank you.
+assistant: Have a good day!

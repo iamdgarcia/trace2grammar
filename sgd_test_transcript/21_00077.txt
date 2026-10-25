@@ -1,0 +1,25 @@
+user: I must verify the climate on the 3rd.
+assistant: What metropolis would you like to verify the climate for?
+user: It should be in Sydney, NSW.
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for that day ought to be 101 degrees Fahrenheit. There is a 4 percent probability of raining.
+user: What will the wind speed be like?
+assistant: The mean wind speed ought to be 2 mile per hour.
+user: How much humidity will there be?
+assistant: the humidity is expected to be near 17 percent.
+user: Okay, fine. Could you tell me several attractions there? I am searching for a historical spot.
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 attraction that may suit your tastes. You ought to check out Sydney Harbour Bridge, which is a historical landmark.
+user: Alright, fine. Could you get me a cab to go there?
+assistant: What sort of vehicle would you like? You may have regular, luxury, or something else.
+user: I'd like the cheapest vehicle.
+assistant: How many spots would you require?
+user: There is one person in my group.
+assistant: Please verify the following information: you'd like a ride to Sydney Harbour Bridge for a pool ride with 1 seat.
+user: Yeah, that's fine with me. How long will the cab take to arrive, and what is the price?
+tool(GetRide): ok n_results=1
+assistant: I reserved ride and the taxi is coming. The taxi will arrive in about 8 minutes, and the price is $17.97.
+user: Thank you for your assistane.
+assistant: Could I assist you with something else?
+user: Nope; thank you for your assistance.
+assistant: Have a pleasant afternoon.

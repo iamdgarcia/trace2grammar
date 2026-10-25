@@ -1,0 +1,16 @@
+user: I'm trying to find a home to stay at in NYC with a 4.4 or higher rating.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 homes available with a 4.4 rating. 111 North 12th Street, Brooklyn is one option.
+user: Can I have their contact number and do they have laundry service?
+assistant: Yes. There is laundry service. Their number is +1 718-631-8400.
+user: The house sounds perfect. I would like to book it.
+assistant: How many will be in your group.
+user: It's only for one person.
+assistant: What are your check in and check out dates?
+user: Checking in on March 4th and checking out Tuesday next week.
+assistant: Please confirm your reservation for a party of 1 in New York checking in on March 4th and checking out on March 5th.
+user: Yes. That's right.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was successfully booked.
+user: Thanks. That's all.
+assistant: You're welcome. Have a great day.

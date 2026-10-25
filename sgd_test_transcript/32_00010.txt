@@ -1,0 +1,33 @@
+user: I want to search for a Therapist and I need your help to find someone suitable to me.
+assistant: Let me know your required type of Therapist to search for whether you want to meet a Psychologist or a Psychiatrist? and also do you have any particular city in your mind to search for the Therapist?
+user: Yes, Search for the one in SFO and I want to meet a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: Got 4 results about various therapists. What about your opinion on Adam E. Pollock? They are the best Psychologist in San Francisco.
+user: I want to search for some other Therapist who is a Family Therapist and search for someone in Lafayette.
+tool(FindProvider): ok n_results=5
+assistant: Got 5 results about therapists. What about your opinion on Building Better Relationships? They are the Family Counselor in Lafayette.
+user: Search for someone else.
+assistant: Okay, do you want to visit a Family Counselor named Cynthia Mansur? who is also in Lafayette.
+user: This is fine. I want to book an appointment with this Therapist and I need to book it for the time at afternoon 1:45.
+assistant: What is your convenient date to book the same?
+user: It is for 12th of March.
+assistant: Please confirm to book an appointment with Cynthia Mansur on March 12th for the time 1:45 pm.
+user: That is confirmed and you can go ahead. Let me know their phone number for my future reference.
+tool(BookAppointment): ok n_results=1
+assistant: Note down their contact number as 510-508-2169. But I can't book an appointment with Cynthia Mansur on March 12th for that time. Shall I try it for another time 1:30 pm?
+user: That's okay. If possible get me an appointment for the new time as you said.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirm your appointment on that time and they will send a confirmation shortly by e-mail.
+user: That's nice and thank you actually. Now, I want to search for some nice movies to watch and can you suggest something better?
+tool(FindMovies): ok n_results=10
+assistant: Of-course. You can watch The Art of Self-Defense. The average rating of this movie is 83 out of 100. Shall I book it now?.
+user: Please wait. I want to know the kind of this movie.
+assistant: This is a Thriller type and more interesting one.
+user: What is the name of the actor and director of this movie?
+assistant: Actor name is Jason Burkey and this movie was directed by Riley Stearns.
+user: Suggest me something else.
+assistant: What about the one named This is not Berlin with average rating of 86 out of 100?
+user: That's great. Thanks.
+assistant: Shall I book the tickets now?
+user: No and that's all for now.
+assistant: Have a nice day.

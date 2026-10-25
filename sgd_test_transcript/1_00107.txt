@@ -1,0 +1,24 @@
+user: I am searching for a hotel.
+assistant: In which city do you need the hotel?
+user: I need hotels in Phoenix.
+tool(SearchHotel): ok n_results=10
+assistant: I searched and found 10 hotels. A 3 star hotel Ac Hotel By Marriott Phoenix Biltmore.
+user: Whether the smoking is permitted in hotel?
+assistant: Nope. Smoking is prohibited in the property.
+user: What is the cost per night? What is the street address?
+assistant: The address is 2811 East Camelback Road. The cost is $117 per night.
+user: Please search for some other hotels with my criteria.
+assistant: A 3 star hotel Aloft Phoenix-Airport.
+user: It is good.
+assistant: Shall I reserve the hotel?
+user: Yes. I wish to reserve it.
+assistant: When do you want to check in? For how many days do you want to stay?
+user: I wish to check in on March 12th and I want to stay for 2 days.
+assistant: Kindly ensure that, on March 12th, you need 1 room in Aloft Phoenix-Airport at Phoenix. You need it for 2 days.
+user: Sure. It is good. What is their contact phone number? Whether the smoking is allowed?
+tool(ReserveHotel): ok n_results=1
+assistant: Booking made successfully. No, smoking is not allowed there. The contact number if +1 602-275-6300.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: Nope. Thank you. You are highly helpful.
+assistant: Bye, have a fantastic day.

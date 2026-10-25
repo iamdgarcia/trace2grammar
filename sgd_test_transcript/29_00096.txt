@@ -1,0 +1,26 @@
+user: Hi! I'm interested in finding something to do in Portland, OR on the 5th of March.
+assistant: Would you be interested in a music or theater event?
+user: I do enjoy musical shows.
+tool(FindEvents): ok n_results=6
+assistant: Theater Of The Clouds is presenting Bastille on March 5th at 6:30 pm.
+user: What is the price of a ticket and where is the venue?
+assistant: Tickets cost $45 and the address is 1016-1098 North Center Court Street.
+user: That works for me. I also need to find a house to stay at while I am there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 homes available nearby. There is one with a 4.1 rating located at 1000 Northeast Multnomah Street.
+user: Can you tell me if they offer laundry service and the number I can contact them at?
+assistant: They do offer laundry service. You can reach them at +1 503-281-6111.
+user: Thanks, this is perfect.
+assistant: Do you want to reserve this house?
+user: Not right now. Can you find me 2 bus tickets first?
+assistant: Where will you be leaving form? Are you leaving on March 3rd?
+user: Yes, and I will be departing Seattle, WA.
+tool(FindBus): ok n_results=8
+assistant: The 7:30 am bus costs $32.
+user: Okay, that will work. Can you purchase tickets to the show now?
+assistant: Let me make sure I've got the details right. You'd like 2 tickets to Bastille on March 5th in Portland.
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been successfully purchased. Enjoy the show!
+user: Thank you for all of your assistance!
+assistant: You're very welcome. Have a wonderful time!

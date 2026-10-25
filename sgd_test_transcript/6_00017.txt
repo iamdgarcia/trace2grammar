@@ -1,0 +1,21 @@
+user: I'd like a therapist.
+assistant: What kind of therapist? Where would you like one?
+user: Look in San Jose for a family counselor.
+tool(FindProvider): ok n_results=8
+assistant: I found 8 therapists. Banner Linda L is a family counselor in San Jose.
+user: That's good. I'd like an appointment.
+assistant: What date and time would you like for it?
+user: I'd like it for today for 11:30 in the morning.
+assistant: An appointment with Banner Linda L at 11:30 am on March 1st. Is this right?
+user: No. Make it on the 5th at a quarter past 5 in the evening.
+assistant: At 5:15 pm on March 5th. Is this right?
+user: Yes. What's their number and address?
+tool(BookAppointment): ok n_results=1
+assistant: Their phone number is 408-358-7401. Their address is 2516 Samaritan Drive. Sorry, I was not able to book your appointment with Banner Linda L. 5:30 pm on March 5th would work.
+user: That's fine then.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked. You'll get an email confirmation soon.
+user: Thank you.
+assistant: Do you need anything else?
+user: No, that's all.
+assistant: Glad to have helped you.

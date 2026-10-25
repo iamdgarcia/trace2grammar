@@ -1,0 +1,19 @@
+user: I need to get my hair styled in Walnut Creek.
+tool(FindProvider): ok n_results=10
+assistant: You have at least 10 options. Let's start with Blow Dry Bar, it's in Walnut Creek.
+user: Ohhh, I hate them, what about someone else?
+assistant: Try Dipietro Todd Salon in Walnut Creek.
+user: Fine, try to get me in there on the 1st of this month. Say, what's the weather like there?
+tool(GetWeather): ok n_results=1
+assistant: Well, it's going to be 72 degrees with a 13 % chance of rain.
+user: Do you have a wind and humidity reading for me?
+assistant: No wind really 1 mph and it will have 22 % humidity.
+user: Fine, get me an appointment at 10:30 in the morning.
+assistant: To be clear: 10:30 am appointment at Dipietro Todd Salon on March 1st.
+user: Fine, what's their rating?
+tool(BookAppointment): ok n_results=1
+assistant: It's good at 4.8.
+user: What's the phone number there?
+assistant: It's 650-328-4855.
+user: Great, you're a real mensch.
+assistant: I appreciate your saying that, thanks.

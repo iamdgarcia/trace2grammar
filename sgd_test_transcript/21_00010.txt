@@ -1,0 +1,21 @@
+user: I need a Shared ride for 2. The destination is the Park Branham Apartments.
+assistant: Confirm your ride details: Finding a Pool ride with seating for 2 to the Park Branham Apartments.
+user: You got it right it. That should work
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is on the way as we speak.
+user: Cool. While we wait, how about playing some music? Something popular right now. Maybe a song by Ariana Grande. I heard her album Dangerous Woman is amazing.
+tool(LookupMusic): ok n_results=4
+assistant: I can play Be Alright from the Ariana Grande album Dangerous woman.
+user: Tell me what year that song and album was released.
+assistant: The song came out in the year of 2016.
+user: Then that's the one I'm looking for. Perfect.
+assistant: Play the song now?
+user: Yeah go ahead.
+assistant: Preparing to play the song Be Alright in the Living Room. Is that okay?
+user: Play that song but cast it on the speaker outside.
+assistant: Now playing the song Be Alright in the Patio area. Is this correct?
+user: Yep. That's correct. Please play it for me.
+tool(PlayMedia): ok n_results=1
+assistant: Now playing the song. I hope you enjoy your music.
+user: Awesome. Thank you for your help. That's all I need.
+assistant: Then I hope you have a pleasant day.

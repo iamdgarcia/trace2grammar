@@ -1,0 +1,23 @@
+user: Hi I would like to transfer a payment to somebody.
+assistant: Who would you like to send the payment to and for how much? Also, which account should I transfer from?
+user: I'd like to make a payment to Wilson, sent from my balance for the amount of one hundred and thirty one bucks.
+assistant: So you'd like to make a payment to Wilson from your app balance for $131, is this correct? Your transaction will be public.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been successfully made and the recipient should receive the money shortly.
+user: Thank you very much.
+assistant: Is there anything else I can assist you with?
+user: Please find me some restaurants that serve a good burger. I need some vegetarian options too.
+assistant: Where should I search for restaurants?
+user: Please looks for restaurants in Danville.
+tool(FindRestaurants): ok n_results=2
+assistant: I recommend a nice restaurant called Blackhawk Grille located in Danville.
+user: That works for me. I need to book a table there for this Sunday.
+assistant: What time do you want your reservation to be?
+user: Please make the reservation for 6:45 pm.
+assistant: So you'd like a table for 2 at Blackhawk Grille in Danville for 6:45 pm on March 3rd. Is this correct?
+user: Yes, that's correct. Where can I contact them and is the restaurant ultra high-end?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been booked. You can call them at 925-736-4295 and yes, it is a pricey restaurant.
+user: Thank you very much, that's all I needed.
+assistant: Have a wonderful day!

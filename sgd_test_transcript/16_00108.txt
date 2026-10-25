@@ -1,0 +1,26 @@
+user: I'm looking for a unisex salon in San jose
+tool(FindProvider): ok n_results=10
+assistant: Atelier salon willow glen is a noce salon in san jose
+user: What's the average rating
+assistant: The average rating is 4.3
+user: Could you please find me a different salon?
+assistant: barba & co. san jose is another nice salon in san jose
+user: What's the average rating and their address?
+assistant: The average rating is 5.0 and their address is 1775 Park avenue
+user: Could you please find me a different one?
+assistant: In san jose there's also Beautique salon
+user: This sounds good. Could you please share the location 1186 south 2nd street with joe?
+assistant: Please confirm the following details: Share with joe 1186 south 2nd street
+user: Yes, that's it
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared
+user: Thanks, for your help. Could you please show me my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms surrently set: one is at 7:30 am called wake up
+user: Perfect. I'd like to add an alarm at evening 5 called music practice
+assistant: Please confirm me the following details: alarm at 5 pm named music practice
+user: Yes, that's it
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been successfully added
+user: Thanks for your help, that's all I needed
+assistant: Have a good day

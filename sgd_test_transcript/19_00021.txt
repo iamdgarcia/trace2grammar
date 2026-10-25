@@ -1,0 +1,35 @@
+user: I am looking for a rental car
+assistant: what time would you like to pick up the car
+user: i need to pick up the car at 13:30
+assistant: how long do you need the car for? when would you like to rent the car and where do you want to rent the car from
+user: I need the car in washington from day after tomorrow until march 6th
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars for you. What about a suv alfa romeo stelvio from union station
+user: that sounds good for me
+assistant: what else can i do for you
+user: can you find me a bus going there
+assistant: when do you want to leave and where are you leaving from
+user: i will be leaving from philadelphia later today
+tool(FindBus): ok n_results=8
+assistant: i located 8 buses for you. what about $23 ticket depart at 6:20 am
+user: what else can you find for me
+assistant: what about $30 ticket departing at 10 am
+user: what station will i arrive at
+assistant: you will be arriving at silver spring bus stop
+user: what station am i departing from
+assistant: you will depart from 10th and filbert
+user: ok perfect for me
+assistant: would you like to book the ticket
+user: no, not right now
+assistant: what else can i do for you
+user: i am looking for a one way flight there
+assistant: please confirm that you are leaving on march 3rd
+user: no i want to leave later today
+tool(SearchOnewayFlight): ok n_results=4
+assistant: what about a layover flight with american airlines for $233 departing at 5:45 pm
+user: When will this arrive at destination
+assistant: This will arrive at 11:33 pm
+user: How many people is this for and is this economy or business
+assistant: this is a economy class for 1
+user: perfect, that's all i need
+assistant: have a nice day

@@ -1,0 +1,38 @@
+user: Three of us will be traveling soon. Please help me find a bus?
+assistant: What city will you be traveling from?
+user: From Washington to Philadelphia.
+assistant: Your travel date, please?
+user: I intent to leave on 4th of March.
+tool(FindBus): ok n_results=7
+assistant: All right. There are 7 suitable buses. Would you like to take the $29 bus leaving at 8:30 am?
+user: That won't work. Please find another bus. It doesn't matter whether it's direct or not.
+tool(FindBus): ok n_results=7
+assistant: All right. There's another $29 bus leaving at 11:30 am. How does that sound?
+user: From which station does it leave, and where does it arrive at?
+assistant: It leaves Silver Spring Bus Stop and arrives at 10th and Filbert.
+user: On second thoughts, please find me something leaving from NYC.
+tool(FindBus): ok n_results=7
+assistant: All right. There are 7 that might interest you. There's the $23, 7:40 am bus. Does that work for you?
+user: That works.
+assistant: Would you like to purchase tickets for this bus?
+user: No, not right away. I might, later. Any attractions there that you'd recommend?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you might like. I suggest visiting the Museum known as Barnes Foundation.
+user: Is visiting this place free-of-charge? Do you have their phone number?
+assistant: No, this attraction has an entrance charge. Their contact information is 215-278-7000.
+user: Nice! Any other places you would recommend visiting?
+assistant: I suggest visiting Bartram's Garden Park.
+user: All right, cool. Now please buy the bus tickets you found earlier.
+assistant: Just a moment. Let me see if I got everything correctly: You want 3 bus tickets on the March 4th, 7:40 am bus from New York to Philadelphia, and you have no extra luggage?
+user: Yes, that is correct. What's the destination station?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your ticket. The destination is 10th and Filbert.
+user: Thank you very much. You've been very helpful. I also need help finding hotels around there. Please find me 2 rooms in a three -star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: Your search yielded 10 suitable hotels. How about Aka University City, a 3 star hotel?
+user: Do you have their contact number?
+assistant: +1 215-372-9000 is their contact number.
+user: Where are they situated? Can you get me the nightly price?
+assistant: They're situated at Cira Centre South, 2929 Walnut Street. The nightly price is $342
+user: Very cool. At the moment, that's all I need.
+assistant: Goodbye, and have a wonderful day!

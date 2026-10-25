@@ -1,0 +1,37 @@
+user: I need a rental car on 9th of this month
+assistant: What time you pick up the car and till which date you need the car?
+user: I will pick up the car on 11th of March at 12:00
+assistant: Which is the place you need rental car from?
+user: I need cars from London and i need it till the 10th
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found a nice available Sedan Audi A8 car at Heathrow International Airport
+user: What is its cost per day?
+assistant: It will be costing at $35.00 per day
+user: Anything else?
+assistant: I have found a nice available Sedan Buick Regal Sportback car at Gatwick International Airport
+user: Any other thing?
+assistant: I have found a nice available SUV Citroen C5 car at Heathrow International Airport
+user: What is the cost per day?
+assistant: It will cost $39.00 per day
+user: It looks perfect
+assistant: You need car booking?
+user: Yes i need car booking, but later
+assistant: Is there any other help?
+user: I have to book 2 event tickets there on March 14th
+assistant: Which is your interested event?
+user: I know that Dead End Comedy Show is a nice one
+assistant: Which city i should look in?
+user: I need it around New York City
+assistant: Please give confirmation details: 2 Ticket bookings for Dead End Comedy Show on March 14th at New York
+user: That is fine
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is done
+user: Can you reserve the car now?
+assistant: Do you also require add insurance?
+user: No, i do not want insurance
+assistant: Please give confirmation details: You are picking up a SUV car from Heathrow International Airport on March 9th at 12 pm with drop off date on March 10th and it does not have insurance
+user: That is perfect
+tool(ReserveCar): ok n_results=1
+assistant: Your car booking is done
+user: Thank you very much
+assistant: Have a nice day

@@ -1,0 +1,11 @@
+user: I need to book a one way flight. I'm not sure when I'll be able to return.
+assistant: Ok, which city are going to be flying out of and what city are you visiting?
+user: I will be flying out of Los Angeles and I will going to SD.
+assistant: Alright, which date will you be traveling?
+user: I want to fly out on the 10th of this month.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I found 2 flights that you might be interested in. The first one is with Alaska Airlines. This is a direct flight that costs $58 and takes off at 12:15 pm.
+user: Wow, that sounds great! That's a good price!
+assistant: Do you need help with anything else?
+user: No, that's all I need right now.
+assistant: Glad I could help! Have a great day!

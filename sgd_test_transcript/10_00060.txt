@@ -1,0 +1,20 @@
+user: Can you help me find some movies online?
+assistant: What kind of movies would you like to watch?
+user: A Fantasy movie featuring Lawrence Makoare would be great.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to watch The Lord of the Rings: The Return of the King?
+user: Are there any others?
+tool(FindMovies): ok n_results=0
+assistant: Sorry, I couldn't find any others that match your preferences.
+user: In that case, look for one featuring Shelley Thompson.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. Would you like to watch Labyrinth?
+user: Labyrinth would be great. Can you find one I can watch now, with French subtitles?
+assistant: To confirm: You would like me to play Labyrinth with French subtitles.
+user: Yes, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: You can start watching it now.
+user: Perfect. Thank you.
+assistant: Is there anything else you need?
+user: No I'm good, thanks.
+assistant: Enjoy your film.

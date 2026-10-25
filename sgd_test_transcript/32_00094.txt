@@ -1,0 +1,36 @@
+user: I would like do find a place where I can live.
+assistant: How many bed rooms and baths would you want to have? In which area would you like the property to be?
+user: I wold like a property in San Jose and I want it to have three bed rooms and two baths.
+assistant: Would you like a place that you can rent or buy?
+user: I would like I place I can rent.
+tool(FindHomeByArea): ok n_results=10
+assistant: One very good property is 1546 Maurice Lane called 888 Golden Saratoga-Cupertino Apartment Homes. The price of it is $3,950.
+user: Can I get the phone number of the property? Also, are there laundry machines in the house?
+assistant: There are no laundry machines in the house and their phone number is 408-818-0710.
+user: That sounds very good. I would like to schedule a visit to this property for Sunday this week.
+assistant: Okay, confirm these details for me: You would like to schedule a visit to 888 Golden Saratoga-Cupertino Apartment Homes for March 3rd.
+user: Yes, that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit to this property has been scheduled for you.
+user: Thanks very much> Would you also be able to share the location?
+assistant: Who would you like to share the location with?
+user: I want to share it with Lawrence.
+assistant: Thank you. Confirm these details for me: You would like to share the location 1546 Maurice Lane with Lawrence.
+user: No, I want to share the location Lori.
+assistant: Please confirm these details: You want to share the location 1546 Maurice Lane with Lori.
+user: That sounds very good.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Would you also be able to get me a cab to take me there?
+assistant: What number of seats do you need? Is there a type of you ride you have a preference for?
+user: I would like a regular ride and have four people.
+assistant: Okay, confirm these details: You would like a ride to take you to 1546 Maurice Lane. You need a regular ride with 4 seats.
+user: Yes, that would work for me.
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked you a ride and the cab is headed to get you.
+user: What is the price of the ride?
+assistant: The price of the ride is $45.04.
+user: How soon can I expect the cab to get here?
+assistant: the cab should be there in 3 minutes.
+user: Thanks very much for the help. That was all I wanted.
+assistant: Have a fantastic day.

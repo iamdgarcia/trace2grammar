@@ -1,0 +1,23 @@
+user: Hi, I'm in the mood to watch a movie. Can you find me just a regular show?
+assistant: Where are you located?
+user: Please search for some movies in the Los Gatos area.
+tool(FindMovies): ok n_results=1
+assistant: I suggest watching IT Chapter Two if you're into horror movies.
+user: It Chapter Two sounds good to me!
+assistant: Would you like to purchase tickets for the movie?
+user: Not at this time, no.
+assistant: Is there anything else I can assist you with?
+user: Please find a table at a restaurant in the same area. I'd like a table on the 10th at 1 pm.
+assistant: At which restaurant are you looking to dine at?
+user: Please reserve me a table at Thai Spice.
+assistant: So you'd like to reserve a table for 2 people at Thai Spice in Los Gatos for March 10th at 1 pm. Is this correct?
+user: That works great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been successfully booked.
+user: Thank you very much. What time is the movie on that day at Los Gatos Theatre?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for that movie and it starts at 9 pm at Los Gatos Theatre.
+user: What sort of movie is it and what is the price?
+assistant: It's a supernatural film and the price is $12 per ticket.
+user: That's great, that's all I needed. Thank you so much.
+assistant: Have a wonderful day!

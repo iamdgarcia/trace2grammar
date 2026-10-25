@@ -1,0 +1,38 @@
+user: I want to do something! I like Broadway shows and want to see one on Tuesday next week.
+assistant: Which city should I check?
+user: I like Musical performance a lot. How about Philadelphia?
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events which you may like. Anthony Green will be at The Foundry on March 5th at 7:30 pm.
+user: Sounds great. What buses are headed there?
+assistant: Do you want to leave on March 5th? Where are you leaving from?
+user: I leaving from NYC on Saturday this week.
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses for you. How about the bus leaving at 7:40 am and costs $23.
+user: Can you find me another bus? I want a direct one.
+tool(FindBus): ok n_results=7
+assistant: How about the bus departing at 7:50 am and is $20?
+user: That sounds great!
+assistant: Do you want a to buy tickets.
+user: Not now, I'd like to to find a round trip flight to get there that returns on the 7th of March.
+assistant: Do you want to leave on March 5th or March 2nd?
+user: I want to leave on the 1st.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I found 3 flights that will work for you. Do you want to fly on American Airlines. The flight takes off at 8:35 am and is a direct flight. The returning flight departs at 1:20 pm. A ticket is $97.
+user: What else is there?
+assistant: How about Southwest Airlines? The onward flight takes off at 10:50 am. It's a direct flight. The returning flight leaves at 2:45 pm. A ticket is $94.
+user: Sounds great. Could you look for hotels nearby?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 4 star hotel called Aka Rittenhouse Square.
+user: What else is there?
+assistant: There is a hotel called Aka University City. It has a 3 star ranking.
+user: Sounds Great! I want to buy tickets to the event you found earlier.
+assistant: How many do you want.
+user: I want three.
+assistant: Please confirm the following: 3 tickets for Anthony Green on March 5th in Philadelphia.
+user: Yes, that works for me. Where is the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed! The venue is 29 East Allen Street 2nd Floor.
+user: Thanks for the help.
+assistant: Can I help you with something else?
+user: No, thanks for the help.
+assistant: Have a fine day!

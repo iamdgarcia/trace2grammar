@@ -1,0 +1,14 @@
+user: Can you find me something interesting to do on the 12th, in or around San Diego?
+assistant: Are you interested in any specific types of events like Music or Theater?
+user: I really enjoy Music.
+tool(FindEvents): ok n_results=10
+assistant: There is an event by Fidlar, who are quite popular, at The Observatory North Park at 4:30 pm on March 12th.
+user: That sounds perfect. Can you get me three tickets to the event?
+assistant: Please confirm that you need 3 tickets to the Fidlar event in San Diego on March 12th.
+user: Yes, that sounds right to me. Can you get me the address of the venue and the ticket price please?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked successfully. The venue is at 2891 University Avenue and tickets cost $25.
+user: Thank you for helping out.
+assistant: Is there anything else I can do for you?
+user: No. Thank you. That's all for now.
+assistant: Have a great day!

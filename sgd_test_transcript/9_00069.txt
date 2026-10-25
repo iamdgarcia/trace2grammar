@@ -1,0 +1,18 @@
+user: I need a movie to see please.
+assistant: What is your current location?
+user: I need it at Century 20 Great Mall and XD, for movies in Milpitas. I want to see Action.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies like this. Some are Hobbs and Shaw and Mission Mangal.
+user: I want tickets for Mission Mangal.
+assistant: When would you like to see it and on what date?
+user: I want it at 10 o"clock in the night on the 2nd of March.
+assistant: What is the show type?
+user: I want a regular one.
+assistant: How many tickets?
+user: I need 2 tickets.
+assistant: So 2 tickets for Mission Mangal on March 2nd in Milpitas at 10 PM. It is a regular movie.
+user: Yes, perfect.
+tool(BuyMovieTickets): ok n_results=0
+assistant: These tickets could not be purchased. Anything else?
+user: No, thanks.
+assistant: Have a wonderful day.

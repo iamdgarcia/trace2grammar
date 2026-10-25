@@ -1,0 +1,19 @@
+user: I want to transfer the amount of $122 from my visa
+assistant: Can i know the name of the receiver?
+user: The name of the receiver is Diego
+assistant: please give confirmation details: The amount of $122 should transfer to the account of Diego from your credit card.
+user: Okay..this is cool.
+tool(MakePayment): ok n_results=1
+assistant: I have transferred the amount successfully and receiver will get the amount soon.
+user: Would you help me to search a seafood restaurant in Fremont which tagged with moderate for price.
+tool(FindRestaurants): ok n_results=4
+assistant: I have short listed 4 restaurants of your choice and one among them is Aniki's Sushi a beautiful restaurant located in Fremont.
+user: Okay..fine.. I want to reserve the table there.
+assistant: At what time you want me to reserve?
+user: I want the reservation at 12:45 pm.
+assistant: please give confirmation details:Table booking at restaurant Aniki's Sushi at Fremont on march 1st at 12:45 pm for 2 people.
+user: This is perfect..can i know the phone number? Is there a vegetarian food on the menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed. There is no vegetarian food and contact number is 510-797-3474
+user: Thanks a lot..
+assistant: Have a great day.

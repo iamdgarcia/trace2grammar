@@ -1,0 +1,34 @@
+user: Can you make a payment for me?
+assistant: Can you please tell me the name of the contact?
+user: The contact whom I would like to make a payment is Mary.
+assistant: Which account do you want me to use to make the transfer?
+user: I would like to make the transfer from Master Card.
+assistant: How much fund do you need to transfer?
+user: Make a transfer of eleven dollars.
+assistant: Please confirm: You want me to make a transfer of $11 from your credit card to Mary.
+user: Yes, That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made the transfer and Mary should receive the amount shortly.
+user: Thank you so much! Now, Find me a train.
+assistant: What is your destination, date and city of departure?
+user: I will be going to Sacramento from SFO on Thursday next week.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 trains that match your requirements. How about a train departing at 6:10 am with the ticket cost of $47?
+user: Find me the names of the stations it arrives and departs from.
+assistant: The train departs from Salesforce Transit Center and arrives at Sacramento Valley Station.
+user: Okay. That sounds nice to me. Can you show me the weather in Sacramento on March 13th?
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature through the day is 93 degrees Fahrenheit with 12 percent chance of rain.
+user: Okay. Book me the tickets of the train you just found.
+assistant: Would you like me to add trip insurance?
+user: Yes, Please add trip insurance.
+assistant: Can you tell me the number of required tickets?
+user: I want to book only 1 ticket.
+assistant: Please confirm: You want me to buy 1 value ticket for a train going from San Francisco to Sacramento on March 7th at 6:10 am.
+user: No. Please book me Fully refundable ticket.
+assistant: Please confirm: You want me to buy flexible ticket to Sacramento.
+user: Yes, That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked your tickets.
+user: Okay. That is all I need for now. Thank you for all your help!
+assistant: I am glad I could help. Have a nice day!

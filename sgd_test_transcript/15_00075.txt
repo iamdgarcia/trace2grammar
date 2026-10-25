@@ -1,0 +1,26 @@
+user: I'm looking for a psychologist.
+assistant: What location are you looking for one in?
+user: I want one in Walnut Creek.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 therapists that you may like. How about the psychologist Alvarez Scott in Walnut Creek?
+user: What is their address and phone number?
+assistant: Their phone number is 925-274-1881 and their address is 43 Quail Court.
+user: Thank you. What is the weather going to be like on the 12th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature on the 12th should be 86 degrees Fahrenheit with a 29 percent chance of rain.
+user: How humid and windy is it going to be?
+assistant: The humidity should be around 37 percent with a wind speed of 10 miles per hour.
+user: Okay, thanks. I'd like to book an appointment with the therapist on the 12th.
+assistant: What time do you want the appointment for?
+user: I'd like it to be at five in the evening.
+assistant: Okay, you'd like an appointment with Alvarez Scott on March 12th at 5 pm, right?
+user: No, I want the appointment for 10:45 in the morning.
+assistant: Alright, you'd like the appointment with Alvarez Scott at 10:45 am, correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately, I was unable to book the appointment. How does 10:30 am on March 12th with Alvarez Scott sound?
+user: Yes, that works.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment and you should get an email shortly.
+user: Thank you, that is all I needed.
+assistant: Have a great day.

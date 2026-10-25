@@ -1,0 +1,22 @@
+user: I would like to find a round trip flight from SFO.
+assistant: What date would you like to travel? What is your destination?
+user: I plan to travel to NYC tomorrow. Any ticket class is fine.
+assistant: What day would you like the return flight on?
+user: I will be departing from Chi-town, and returning on the 8th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: American Airlines has a flight departing at 5:05 am. It has a layover. The return flight takes off at 1:35 pm. The ticket price is $223.
+user: Are there other flight options?
+assistant: Delta Airlines has a direct flight that departs at 8 am and returns at 9:05 am, with a ticket price of $212.
+user: OK, sounds good. I would like to find a house to stay in while there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available during your stay. 100 Greenwich Street has a rating of 4.4.
+user: That will be great, I would like to book the house for one person on Thursday next week. I plan to check in on the 3rd.
+assistant: You would like to book the house for 1 person in New York from March 3rd until March 7th, is that correct?
+user: Yes, that sounds great.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been created.
+user: Thank you for your help. I would like to find some activities. Can you show me some attractions there without an entry fee?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that may interest you, including a Park, Alley Pond Park.
+user: OK, that's great. That's all for now, thank you.
+assistant: Have a great day!

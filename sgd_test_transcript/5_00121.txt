@@ -1,0 +1,18 @@
+user: Will you find a therapist?
+assistant: Psychiatrist or Family Counselor? Which city?
+user: I'm looking for a psychologist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: Found Alameda Children's Specialized, a psychologist in Oakland.
+user: Their address?
+assistant: They are located at 7200 Bancroft Ave # 125C.
+user: Great. Make an appointment for 11:30.
+assistant: What date is the appointment?
+user: I would like to see a psychologist on 11th of this month.
+assistant: Confirm Alameda Children's Specialized at 11:30 am on March 11th.
+user: Will you make it for this Sunday at 1:45 in the afternoon?
+assistant: Confirm 1:45 pm on March 3rd.
+user: Wonderful. Their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You can reach them at 510-383-5100. Appointment is scheduled. You'll get an email confirmation.
+user: Thanks.
+assistant: Anytime.

@@ -1,0 +1,28 @@
+user: I'm looking for an hotel
+assistant: In which city are you looking?
+user: I need 1 room at a 3 star hotel in london
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you: Abbey Court Hotel (Hyde Park) is a nice 3 star hotel
+user: Sounds good. Could you also help me finding flights with delta airlines to get there?
+assistant: Which city will you depart from?
+user: I'll be leaving from philadelphia
+assistant: Will you leave on march 6th? when will you return?
+user: I'd like to leave this saturday and come back on the 12th of march
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: With delta airlines the flight departs at 3 pm and has a layover and returns at 9:40 am. the total price is $424
+user: How many people is this option for?
+assistant: Just 1 traveller
+user: That's perfect. I'd also like to book the hotel you found me from the 7th of this month for 2 days
+assistant: Please confirm the following details: reservartion at Abbey Court Hotel (Hyde Park) in london from march 7th for 2 days for 1 person
+user: Yes, that's it
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been successfully booked
+user: Could you also show me some Historical Landmark possibly child-friendly in london, please?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you may like: 30 St Mary Axe (the Gherkin) is an historical landmark you should check out
+user: Is the entrance free?
+assistant: No, it's not
+user: Fine, thanks
+assistant: Is there anything else I can do for you?
+user: No, thanks, that was all
+assistant: Have a good day

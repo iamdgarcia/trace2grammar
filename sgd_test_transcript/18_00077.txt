@@ -1,0 +1,21 @@
+user: Help find me a hotel please.
+assistant: Which city do you prefer?
+user: Give me Philly.
+tool(SearchHotel): ok n_results=10
+assistant: Well, there are at least 10, starting with Aka Rittenhouse Square. It is a 4 star hotel.
+user: Fine, that's good.
+assistant: Do you want a room there?
+user: Perhaps, how's the weather in Philly? What will it be like on the 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: It will be 84 degrees with an 8 % chance of rain.
+user: Fine, get me that hotel room next Thursday.
+assistant: For how long?
+user: I need 6 nights.
+assistant: Sure, to confirm? 1 room for 6 nights starting on March 7th at Aka Rittenhouse Square in Philadelphia.
+user: Fine, how much? What's their number?
+tool(ReserveHotel): ok n_results=1
+assistant: You will pay $240 nightly and you may phone them at +1 215-825-7000.
+user: Fine, that'll do.
+assistant: May I assist further?
+user: Not now, thanks.
+assistant: Have a great trip.

@@ -1,0 +1,28 @@
+user: Can you help me find an Asian Fusion restaurant in Santa Clara.
+tool(FindRestaurants): ok n_results=7
+assistant: Beijing Restaurant is a nice place to eat in Santa Clara.
+user: Please give me their phone number. And do they have an outdoor seating area?
+assistant: You can reach them at 408-423-0001. They do not have an outdoor seating area.
+user: What other restaurants do you recommend? I want something that has a moderate price range.
+tool(FindRestaurants): ok n_results=7
+assistant: Korean Spring in Santa Clara might be a good match.
+user: Yeah, that sounds nice. Can you book me a table for quarter past 1 in the afternoon?
+assistant: I'll book you a table for 2 at Korean Spring in Santa Clara for March 1st at 1:15 pm. Do you want to confirm?
+user: I actually want the table for the 13th of March.
+assistant: I'll book you a table for MArch 13th at 1:15 pm. Do you want to confirm?
+user: Wait, no. It should be eleven am.
+assistant: I'll book you a table for 11 am in Santa Clara. Do you want to confirm?
+user: Yes, I confirm that. Are there vegetarian items there? And what's the user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've booked your table. There are no vegetarian items. They have a 4.2 user rating.
+user: Thanks a lot. I'll need a cab to get there. I prefer a Luxury cab.
+assistant: The cab is to 1062 Kiely Boulevard?
+user: Yes, that's right.
+assistant: I'll get you a Luxury cab for 2 to 1062 Kiely Boulevard. Do you want to confirm?
+user: Yes, that's good. What's the cost?
+tool(GetRide): ok n_results=1
+assistant: The cost is $27.65. I've book the cab and it's on route now.
+user: Thanks for helping me out.
+assistant: How else can I help you?
+user: I'm good. Thanks again.
+assistant: Have a great day.

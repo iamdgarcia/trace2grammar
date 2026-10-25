@@ -1,0 +1,29 @@
+user: I'd like some assistance locating a therapist please.
+assistant: Of course, are you looking for a family counselor, a psychiatrist or another kind of therapist and what city would you like?
+user: I'd like to find someone in San Jose who's a family therapist.
+tool(FindProvider): ok n_results=8
+assistant: I have a family counselor located in San Jose, Banner Linda L.
+user: Where are they located exactly?
+assistant: The address of the office is 2516 Samaritan Drive.
+user: May I have the telephone number?
+assistant: The office number is 408-358-7401.
+user: I think that will be fine.
+assistant: Shall I set up an appointment for you with the doctor?
+user: Yes, please do.
+assistant: What date and time are you interested in?
+user: I'd like to go in on the 12th of this month at 10 in the morning.
+assistant: Confirming an appointment on March 12th at 10 AM with Banner Linda L.
+user: Excellent, thanks for your help.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been scheduled successfully and you will soon be sent a confirmation email.
+user: Thanks again. I'm also going to need a cab please for the appointment.
+assistant: For how many people?
+user: Just one, just for me.
+assistant: What type of cab? You can specify pool or regular or any other choice.
+user: I would like the ride that is the most comfortable.
+assistant: Confirming a luxury ride for 1 passenger to 2516 Samaritan Drive.
+user: Correct, thank you.
+tool(GetRide): ok n_results=1
+assistant: The cab has been dispatched successfully and will be here shortly.
+user: Thanks again, I'm all set.
+assistant: You are very welcome, goodbye.

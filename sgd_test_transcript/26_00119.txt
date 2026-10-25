@@ -1,0 +1,26 @@
+user: I would like to find a train. I need 4 Business seats for the 8th.
+assistant: What city are you going to?
+user: We will be travelling from Sacramento, CA to SD.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains for that route. There is a train departing at 6:30 am that would cost $721 in total.
+user: What station does the train leave from and arrive at?
+assistant: The train departs from Sacramento Valley Station, and arrives at Santa Fe Depot.
+user: OK, that sounds great, thanks.
+assistant: Would you like to book the tickets?
+user: No, thank you. I would like to find something to do while we are there. Something with songs on the 14th of March.
+tool(FindEvents): ok n_results=10
+assistant: Bastille will be at Cal Coast Credit Union Amphitheater on March 14th at 5 pm.
+user: That sounds great. What other attractions are there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that might interest you, including a Park called Balboa Park.
+user: Is that place child-friendly? What is the phone number?
+assistant: There is not a lot at that location for kids to do. The phone number is 619-239-0512.
+user: OK, thank you. I would like to find a house to stay in while we are there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available in the area. 1003 Coast Boulevard, La Jolla, California 92037, United States has a rating of 4.6.
+user: What is the contact number? Is there laundry service on site?
+assistant: The phone number is +1 858-224-7600. There is laundry service at the house.
+user: OK, thank you, that sounds great.
+assistant: Would you like to reserve the house?
+user: No, not right now. Thank you, that's all I need.
+assistant: It's my pleasure to help you, have a great day.

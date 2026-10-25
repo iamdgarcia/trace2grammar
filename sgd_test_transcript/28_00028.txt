@@ -1,0 +1,32 @@
+user: Can you find me a movie to watch?
+tool(FindMovies): ok n_results=5
+assistant: Would you like to consider Theatre of Blood which has an average rating of 93 out of 100?
+user: Who is the director of this movie and who played the lead?
+assistant: The movie stars Diana Dors and is directed by Douglas Hickox.
+user: Can you find me a movie from the Comic genre?
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies that you might like. Would you like to watch Chhichhore that has an average rating of 60 out of 100?
+user: Sounds good to me.
+assistant: Is there anything else I can do for you?
+user: Can you help me find a restaurant there?
+assistant: In which location would you like to dine and are you looking for any specific cuisine?
+user: Find me something that serves American in Campbell.
+tool(FindRestaurants): ok n_results=3
+assistant: Effie's Restaurant & Bar is a nice restaurant in Campbell.
+user: Can you help me with their phone number?
+assistant: Their phone number is 408-374-3400.
+user: Thank you for getting that for me.
+assistant: Shall I reserve a table for you at the restaurant?
+user: Yes, that would be brilliant!
+assistant: At what time do you plan to reach the restaurant?
+user: I'll be there by 17:30.
+assistant: Please confirm that you would like to reserve a table for 2 at Effie's Restaurant & Bar in Campbell at 5:30 pm on March 1st.
+user: That's absolutely right!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved.
+user: Are there any options available for vegetarians?
+assistant: Sorry, the do not offer vegetarian options.
+user: Thanks a lot!
+assistant: Is there anything else I can assist with?
+user: No. Thank you very much. That's all I need for now.
+assistant: Have a great day!

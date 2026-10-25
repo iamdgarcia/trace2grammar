@@ -1,0 +1,27 @@
+user: What's the weather gonna be like in Toronto, Ontario on Thursday next week?
+tool(GetWeather): ok n_results=1
+assistant: In Toronto, Ontario, there is a 15 percent chance of rain with a temperature of 61 degrees.
+user: I need to know the about the wind and humidity too.
+assistant: Humidity will be roughly 25 percent with the wind blowing at 12 miles per hour.
+user: Alrigt. I plan to visit there on the 2nd of March. I need a flight to Toronto from SD. Any airline will do fine.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Alaska Airlines has a flight departing from SD on March 2nd at 1:05 pm. The ticket price is $220.
+user: I don't think I want those tickets. Try another airline please.
+assistant: How about Southwest Airlines instead? This flight in particular departs at 12:20 pm. It will cost you $216.
+user: Will it be available for four people?
+assistant: I apologize but no. It is for 1 passenger.
+user: Okay then. Let's move on to another option please.
+assistant: Is United Airlines acceptable? The flight to Toronto leaves at 9:15 am and has a price of $214. It is worth noting that this flight has a layover.
+user: How many people does this include? Oh yeah. And when does it arrive in Toronto?
+assistant: It is for 1 passenger and has an arrival time of 0:14 am in the morning.
+user: Okay that sounds like what I'm looking for. Can you help me find a rental car as well?
+assistant: How long do you wish to rent this car for?
+user: I'll be needing it until Friday next week.
+assistant: Please provide the pick-up date for the vehicle. March 2nd or March 7th for example. I need to know the time as well.
+user: I'm looking for a sedan on March 5th. I'll be picking the car up at 17:00.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There are 4 cars available.There is a nice Buick Regal Sportback Sedan available at Toronto Pearson International Airport.
+user: I'm not too picky about what vehicle I get. That sounds fine.
+assistant: Okay. Want me to schedule the pick-up?
+user: No thanks. I'll reserve one another time. That's all the information I need for now.
+assistant: Certainly. Have a great day.

@@ -1,0 +1,25 @@
+user: What will the weather be in Nairobi on March 9th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 103 degrees with 0 chance of rain.
+user: Okay, I see.
+assistant: Do you need something else?
+user: I want a one-way plane ride to get there.
+assistant: What is your departure city?
+user: I am departing from Chicago.
+assistant: Are you departing on March 9th?
+user: Yes, I am departing that day.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: American Airlines has a flight that departs at 5:05 am and costs $410. It has a layover and is 1 of 2 search results that were found.
+user: How many people did you search for?
+assistant: I searched for 1 person.
+user: I see. Can you find a car to rent when I am there?
+assistant: When are you returning the car and what time do you wish to get the car?
+user: I will get the car at 1 o'clock in the afternoon and will return it on the 13th.
+assistant: Are you picking up the car on March 9th?
+user: No, I will get it on the 12th.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a Sedan Audi A8 available at Jomo Kenyatta International Airport.
+user: That is perfect.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Have a great day.

@@ -1,0 +1,25 @@
+user: I'm searching for a hotel.
+assistant: What metropolis ought I search for hotels in?
+user: I am searching for hotels inside NYC.
+tool(SearchHotel): ok n_results=10
+assistant: There's a 5 star hotel known as 1 Hotel Brooklyn Bridge.
+user: Does the hotel permit smoking? What is the cost per day?
+assistant: The hotel does allow smoking, and the price is $465 per day.
+user: That's fine with me.
+assistant: Could I assist you with something else?
+user: What is the climate like at there during the 12th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for that day ought to be 70 degrees Fahrenheit, with a 4 percent probability of raining.
+user: Sure, alright. I'd like to book 2 rooms the hotel you discovered.
+assistant: Would you like to check in during March 12th?
+user: I am searching to check in on March 10th.
+assistant: Until when do you intend to stay for?
+user: I intend to check in during the 9th of this month for 4 days.
+assistant: Please verify the following information: you'd like to stay for 4 days at 2 rooms in 1 Hotel Brooklyn Bridge, located in New York. You intend to check in on March 9th.
+user: Yeah, that's lovely. What is their contact number?
+tool(ReserveHotel): ok n_results=1
+assistant: Your booking is complete. The contact number is +1 347-696-2500.
+user: Thank you for your assistance.
+assistant: Could I assist you with something else?
+user: Nope; thank you for your assistance.
+assistant: Farewell, and have a wonderful afternoon!

@@ -1,0 +1,19 @@
+user: I want to find something fun to do in San Diego on the 2nd, perhaps a nice musical performance?
+tool(FindEvents): ok n_results=10
+assistant: I found something on March 2nd at 7:30 pm happening at the Cal Coast Credit Union Amphitheater, wanna see Alejandro Sanz?
+user: That's good, but what else can you find?
+assistant: Ingrid Michaelson will be in town at The Observatory North Park at 7 pm also on March 2nd
+user: How much is a ticket for that?
+assistant: It's $35 to see her
+user: That's good, find me two tickets to that
+assistant: Confirming you want me to book 2 tickets to Ingrid Michaelson on March 2nd in San Diego yes?
+user: Yes that's correct, where's the venue address?
+tool(BuyEventTickets): ok n_results=1
+assistant: It's been booked and you can head to 2891 University Avenue on the day of the concert
+user: Awesome, can you find me the most comfortable cab ride there?
+assistant: Sure, you want a luxury ride for 2 to The Observatory North park correct?
+user: Yes that's correct
+tool(GetRide): ok n_results=1
+assistant: It's book and on the way
+user: Alright that's all for now, thanks!
+assistant: Of course, enjoy your concert!

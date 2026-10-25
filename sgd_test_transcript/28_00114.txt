@@ -1,0 +1,32 @@
+user: I want to find some attractions. Something free.
+assistant: What kind of attractions are you looking for?
+user: I'm looking for attractions in NY.
+tool(FindAttractions): ok n_results=10
+assistant: Alley Pond Park is a great park.
+user: What's the phone number? Is it kid friendly?
+assistant: Yes it's very kid friendly. The phone number is 212-639-9675.
+user: Great. I want to find a sedan rental car there.
+assistant: When do you want to pick up the rental?
+user: I want to pick it up on the 5th of March.
+assistant: Are you picking it up in New York? What time do you want to pick it up and when do you want to drop it off?
+user: Yes, that's correct. I want to pick it up at half past 12 in the afternoon and I need it until the 8th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There is a sedan Audi A8 available at JFK International Airport.
+user: That sounds good.
+assistant: Anything else I can do for you?
+user: I want to book a rental car.
+assistant: Do you want insurance?
+user: No, that's okay.
+assistant: Please confirm: picking up a sedan from JFK International Airport on March 5th at 12:30 pm until March 8th without insurance.
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental has been booked.
+user: How much per day?
+assistant: The cost is $33.00 per day.
+user: Thanks so much. I want to share the location, Alley Pond Park, with Kimberly.
+assistant: Please confirm: sharing the location Alley Pond Park with Kimberly.
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks so much. That's all.
+assistant: Have a great day!

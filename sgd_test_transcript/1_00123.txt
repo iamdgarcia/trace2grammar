@@ -1,0 +1,14 @@
+user: I am looking for some nice songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about Black Widow by Iggy Azalea from the album The New Classic?
+user: Yes, That is music I am looking for.
+assistant: Do you want me to play the song for you?
+user: Yes, Play the song on my living room.
+assistant: Please confirm: You want me to play Black Widow in Living room.
+user: Yes, That sounds perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. Enjoy!
+user: Can you confirm whether it came out three years back and find the type of the music?
+assistant: The type is Pop song and it came out in 2014.
+user: That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,13 @@
+user: Could you look for a train for me?
+assistant: What metropolis are you headed to, and what metropolis will you leave from? What day would you like to depart?
+user: I am searching for tickets for SFO on the 10th of March, since I'm headed to Sacramento.
+tool(FindTrains): ok n_results=9
+assistant: There's 9 trains that fit your criteria that depart at 6:10 am and costs $45.
+user: Do you have some other alternative trains?
+assistant: There is one that leaves at 6:20 am and costs $50.
+user: What station does it go to?
+assistant: It will head to the Sacramento Valley Station.
+user: That's perfect for me.
+assistant: Would you like for me to reserve tickets?
+user: Nope, I do not plan on reserving tickets now. That's all.
+assistant: Have a pleasant afternoon.

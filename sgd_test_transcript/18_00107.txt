@@ -1,0 +1,17 @@
+user: I want to stay at a hotel.
+assistant: What city are you traveling to?
+user: I need one hotel room in SD.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Bahia Resort Hotel.
+user: That is good. What is their weather like?
+tool(GetWeather): ok n_results=1
+assistant: The average weather is 90 degrees F with a 1 percent chance of rain.
+user: I would like to stay at that hotel for five days, checking in on the 1st.
+assistant: Please confirm you want to check into 1 room on March 1st and stay for 5 days at the Bahia Resort Hotel in San Diego.
+user: That is correct. Do they allow smoking? Where are they located?
+tool(ReserveHotel): ok n_results=1
+assistant: They are at 998 West Mission Bay Drive and do not allow smoking.
+user: Thank you very much!
+assistant: May I further assist you?
+user: No, that will be all.
+assistant: See you soon!

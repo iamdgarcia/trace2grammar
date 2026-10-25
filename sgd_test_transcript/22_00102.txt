@@ -1,0 +1,47 @@
+user: Please help me to find a therapist.
+assistant: In which city shall I search in?
+user: Search a someone in Lafayette.
+assistant: Whom you need? A Family Counselor or a Psychologist or perhaps another kind?
+user: I want to meet a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I searched and found 10 therapists for you. Do you want to meet Alissa Scanlin Psyd, a Psychologist at Lafayette?
+user: Nice. Can you make an appointment on March 8th at afternoon 12?
+assistant: Kindly ensure that, on March 8th appointment is confirmed with Alissa Scanlin Psyd at 12 pm.
+user: Yes. it is good. What is their contact address?
+tool(BookAppointment): ok n_results=0
+assistant: I am sorry that, I am unable to book the appointment. DO you need any other help?
+user: Please try again and make an appointment for 11th of this month at quarter past 3 in the afternoon.
+assistant: Kindly ensure that, on March 11th appointment is confirmed with Alissa Scanlin Psyd at 3:15 pm.
+user: Yes. It is good.
+tool(BookAppointment): ok n_results=1
+assistant: I am sorry that, I am unable to book the appointment. Are you interested in meeting Alissa Scanlin Psyd on March 11th appointment at 3 pm
+user: Yes. It is good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is done. You will receive an email about it.
+user: Thank you so much. Your efforts are appreciable. I wish to make a request for a payment.
+assistant: To whom the request is made?
+user: I wish to have transaction with Emma.
+assistant: How much?
+user: It will be 75 bucks.
+assistant: Kindly ensure that, $75 has been transferred to Emma and it is visible to public.
+user: Correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request is done.
+user: I am searching for a restaurant for a meal.
+assistant: What type of food do you need?
+user: I wish to have Italian type.
+tool(FindRestaurants): ok n_results=3
+assistant: I searched and found 3 restaurants for you. Locanda Positano is a great restaurant in Lafayette.
+user: What is their contact number and address?
+assistant: Their contact number is 925-310-4337 and their address is 1005 Brown Avenue.
+user: It is good. I wish to reserve a table there.
+assistant: In what time do you need it?
+user: I wish to reserve a table there at 11:15.
+assistant: Kindly ensure that, On March 11th, booking is done for 2 persons at Locanda Positano in Lafayette at 11:15 am.
+user: It is fine. Is it a vegetarian hotel? What about outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is done. Yes they have outdoor seating and they will provide vegetarian.
+user: Thank you very much.
+assistant: Do you need any other help?
+user: Nope. thank you very much.
+assistant: Have a nice day.

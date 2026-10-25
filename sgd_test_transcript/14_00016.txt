@@ -1,0 +1,19 @@
+user: Can you suggest some movies that I can stream?
+assistant: I'd be happy to help. What type of movie would you prefer?
+user: I'd like to watch an Action movie.
+tool(FindMovies): ok n_results=5
+assistant: May I suggest Angel Has Fallen, Hobbs and Shaw, or Mission Mangal?
+user: I'm interested in Mission Mangal.
+assistant: Would you like to stream it?
+user: Yes, please being the movie.
+assistant: Would you like English subtitles for Mission Mangal?
+user: English subtitles would be perfect.
+tool(PlayMovie): ok n_results=1
+assistant: Your selection has begun streaming.
+user: Can you tell me the weather forecast for the 1st?
+assistant: Where would you like to know the weather for?
+user: Please check Ross.
+tool(GetWeather): ok n_results=1
+assistant: There is a 14 percent chance of rain with an average temperature of 79 degrees Fahrenheit.
+user: Great. Thank you for the help.
+assistant: You're welcome. Enjoy the movie!

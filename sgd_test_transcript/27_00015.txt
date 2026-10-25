@@ -1,0 +1,26 @@
+user: Hey, can you find me some attractions to visit, like a performance venue, in SFO please?
+tool(FindAttractions): ok n_results=1
+assistant: Sure, a great Performing Arts Venue there it's the War Memorial Opera House.
+user: Good. Can you find me a movie I can watch there at the Roxie Theater?
+tool(FindMovies): ok n_results=6
+assistant: How about Give Me Liberty, In Fabric or Labyrinth? These are great movies.
+user: Give Me Liberty sounds like it's very good.
+assistant: Would you like to buy the tickets?
+user: Not now, thank you.
+assistant: Can I help you with anything else?
+user: Can you see if there are any good movies available online?
+assistant: What kind of movies do you want to watch?
+user: Some scientific fiction ones would be great.
+tool(FindMovies): ok n_results=2
+assistant: So how about Ad Astra or Close Encounters of the Third Kind?
+user: Close Encounters of the Third Kind sounds great.
+assistant: Should I play it?
+user: Please do, and play it with Hindi subtitles.
+assistant: So play Close Encounters of the Third Kind with Hindi subtitles?
+user: Actually, play it with Spanish subtitles.
+assistant: So Close Encounters of the Third Kind with Spanish subtitles?
+user: Yes, please. By the way, who's in it?
+tool(PlayMovie): ok n_results=1
+assistant: Just started playing it. Richard L. Hawkins is one of the main actors in it.
+user: Thanks a lot, that's all I need for now.
+assistant: Have a great day.

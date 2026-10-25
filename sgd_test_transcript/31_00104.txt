@@ -1,0 +1,43 @@
+user: I'd like to find a Unisex Salon.
+assistant: What city do you want me to search in? F
+user: ind me a San Bruno Salon.
+tool(FindProvider): ok n_results=2
+assistant: I have 2 possible options. Cut right Barber Shop is a nice San Bruno salon.
+user: would you find me a different Salon?
+assistant: Salon Mia Bella is a good San Bruno Salon.
+user: What is the rating and contact number?
+assistant: You can reach them by phone at 650-808-9828. They have a 4.7 average rating.
+user: Sounds good to me. Book me an appointment.
+assistant: What time would you like your appointment?
+user: I would like the appointment to be at 3:30 in the afternoon.
+assistant: What date should the appointment be on?
+user: Make an appointment for next Monday.
+assistant: Could you confirm that you want to go to the hair stylist Salon Mia Bella at 3:30 pm on March 4th?
+user: That's right. Could you tell me the address?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully made. The address is 725 Camino Plaza.
+user: thanks a whole lot. Find me a restaurant around there too.
+assistant: What sort of food would you like to eat that day?
+user: Find some noodles.
+tool(FindRestaurants): ok n_results=3
+assistant: I have 3 restaurants they could be good option. China Garden is a nice restaurant in San Bruno.
+user: would you recommend some other options?
+assistant: Dumpling Era is a good restaurant in San Bruno. W
+user: hat is the user rating for that restaurant? Is outdoor seating available?
+assistant: No, outdoor seating is not available and the user rating is around 3.9.
+user: okay, sounds good to me. Book me a table at that restaurant.
+assistant: What time should I try to make the reservation for?
+user: Make a reservation at 12:15 in the afternoon.
+assistant: Could you confirm that you want to book at Dumpling Era in San Bruno for 12:15 pm on March 4th for 2 people?
+user: Sounds good to me. What is the restaurant expensive?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is cheap. I apologize but the reservation did not go through. Would you like to book at Dumpling Era for 2 people on March 4th at 12 pm?
+user: That should work for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made successfully.
+user: What is the phone number of the restaurant?
+assistant: The phone number is 650-737-9899.
+user: Thanks a whole lot.
+assistant: Do you want me to help you with anything else?
+user: No, that's all. Thank you.
+assistant: Have a wonderful day.

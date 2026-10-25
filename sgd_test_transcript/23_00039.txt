@@ -1,0 +1,34 @@
+user: I need to make a payment.
+assistant: Who do you want to make the payment to?
+user: Make the payment to Victoria.
+assistant: Shall I transfer money from app balance or credit card?
+user: Send the money from my debit card.
+assistant: How much do you want to send?
+user: Send 158 dollars.
+assistant: Could you confirm that you want to send $158 to Victoria on your debit card? The transaction is visible to the public.
+user: Right.
+tool(MakePayment): ok n_results=1
+assistant: You have made your payment successfully. You should see the money soon.
+user: Thank you. Would you find me a train now? I need one seat going to Atlanta, GA.
+assistant: What date would you like to travel and what city do you want to leave from?
+user: I want tickets from Washington for the 14th.
+tool(FindTrains): ok n_results=6
+assistant: I have 6 possible trains. How about a train leaving at 10 am that costs $100 in total?
+user: What station will it leave from and arrive at?
+assistant: The train will arrive at Peachtree Station from Union Station.
+user: Sounds good tome. What will the weather be like on the 14th in Atlanta, GA?
+tool(GetWeather): ok n_results=1
+assistant: The temperature on that day should be about 86 degrees Fahrenheit with a 1 percent chance of rain.
+user: How windy and humid will it be?
+assistant: The wind speed on average will be 6 miles per hour and the humidity is around 16 percent.
+user: Okay. Are you able to get tickets on that train with trip insurance? The fare class isn't important.
+assistant: I would like a ticket on the train leaving from Washington to Atlanta on March 14th at 10 am. I need 1 Value ticket.
+user: No, I want flexible tickets.
+assistant: Could you confirm that you want a flexible ticket for 1 person?
+user: That works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket was booked successfully.
+user: That's a great help, thank you.
+assistant: Could I help with something else
+user: No, you were a great help though.
+assistant: See you later.

@@ -1,0 +1,29 @@
+user: Would you find me some attractions that I can visit? Without an entry fee is best. I'm searching for a museum, something child friendly.
+assistant: Where should I find attractions?
+user: Find me attractions in Paris, France.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 attractions that should be of interest. Please check out Cite de l'architecture et du patrimoine. It's a museum.
+user: Any other attractions that you can think of? Find me San Francisco attractions.
+tool(FindAttractions): ok n_results=6
+assistant: Check out Cartoon Art Museum. It's a Museum.
+user: Okay, sounds fantastic. I'd like to watch a movie in that area.
+tool(FindMovies): ok n_results=10
+assistant: What about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Fiddler: A Miracle of Miracles sounds great.
+assistant: Do you want to purchase tickets?
+user: Not at the moment.
+assistant: Shall I assist with anything else?
+user: Do you have any goodmovies online? I am into movies with Jamie Kennedy.
+assistant: What sort of movies are yeou into?
+user: I'm into Sci-fi movies.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie that you may like. What do you think about Ad Astra?
+user: Ad Astra is good.
+assistant: Would you like to play the movie?
+user: Yes, play me the movie. Subtitles do not matter.
+assistant: Please confirm that you want to play Ad Astra with English subtitles.
+user: Okay.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie.
+user: Thanks. That's it for now.
+assistant: Have a great day.

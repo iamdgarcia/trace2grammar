@@ -1,0 +1,30 @@
+user: Could you please show me any alarms I have set.
+tool(GetAlarms): ok n_results=1
+assistant: There is 1 alarm and it is called Wake up, set for 8 am.
+user: that is good. Now could you assist me to find a restaurant?
+assistant: What type of food do you prefer?
+user: Somewhere that serves Soup & Salad.
+assistant: Where do you want me to search?
+user: in Fairfield please.
+tool(FindRestaurants): ok n_results=1
+assistant: There is a good McDonalds in Fairfield.
+user: yes perfect, I want to get a car there. I want to collect it at 4:30 pm at Portland Bus Station until March 10th.
+assistant: On what date will you collect it and what type of car do you prefer? Also will you be needing insurance?
+user: no I dont need insurance. I want it from Monday next week and I would prefer a Hatchback.
+assistant: To confirm then you will collect the Hatchback car on March 4th at Portland Bus Station at 4:30 pm. You will then return the car on March 10th.
+user: yes that is all correct. How much will it be per day?
+tool(ReserveCar): ok n_results=1
+assistant: the booking is now confirmed and is will cost you $28.00 per day.
+user: Great, thanks for that. Now could you share the location for me?
+assistant: With whom will I share it?
+user: with Tyler please.
+assistant: Is it the address for Portland Bus Station?
+user: the address is 2212 North Texas Street.
+assistant: To confirm then you want to share with Tyler the address 2212 North Texas Street.
+user: no sorry could I share it with Henry?
+assistant: to confirm then you want to share with Henry the address 2212 North Texas Street.
+user: that is it.
+tool(ShareLocation): ok n_results=1
+assistant: the location has now been shared.
+user: Great, thanks for everything, I dont need anything else for now.
+assistant: have a great day.

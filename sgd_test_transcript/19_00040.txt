@@ -1,0 +1,23 @@
+user: I would like to rent a car on the 6th of march at afternoon 3:30
+assistant: Where do you want it from, and for how long?
+user: Until the 10th of march, in SF.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 options. How about a nice Audi A8 Sedan from Salesforce Transit Center?
+user: How much is it per day?
+assistant: $30.00.
+user: That works.
+assistant: Do you want to book it?
+user: NOt right now. What about a bus going there?
+assistant: When do you want to leave, and from where?
+user: I want to leave from LA Tuesday next week.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses for you, how about this one, it leaves at 6:40 am for $49.
+user: That works. Could you find me a one-way flight going there, premium economy please?
+assistant: Are you leaving march 6th?
+user: I"m leaving Tuesday next week, and I need 2 tickets
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I have 3 options. How about AMerican Airlines, leaving 9:30 am for $166?
+user: That works.
+assistant: Can I help you with anything else?
+user: No thank you.
+assistant: Have a great day.

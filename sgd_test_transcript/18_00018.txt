@@ -1,0 +1,25 @@
+user: Tell me the weather in Portland on the 10th of March.
+tool(GetWeather): ok n_results=1
+assistant: Portland has an average temperature of 58 degrees on March 10th. There is also a 25 percent chance of rain occurring.
+user: What's the humidity going to be like that day?
+assistant: The humidity will be about 39 percent that day.
+user: Will it be windy on the 10th?
+assistant: It should be only 4 miles per hour when it comes to wind speed.
+user: Okay thanks. I wanted to know that because I'm traveling to Portland soon. I want a one way flight with Alaska Airlines if possible.
+assistant: What city do you want to depart from? Also, will it be on March 10th?
+user: Okay that sounds pretty good. I'll be leaving from LAX and I'll be needing 3 tickets.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 flight that matches your criteria. It is a flight with Alaska Airlines that takes off at 5:30 am. The cost of the flight will be $145.
+user: Perfect. I'm glad you could find one with Alaska Airlines. Oh right. I'll be needing a rental car as well. Please help me.
+assistant: What time do you wish to pick up the car and how long will you be needing it?
+user: I'll be needing the car until the 13th of March and I'll pick it up at 1:30 in the afternoon.
+assistant: Do you wish for the pick up date to be March 10th?
+user: No not the 10th. I'll be needing from the 11th of this month until the 12th of this month. I have no preference when it comes to the type of car.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars that I have found for you. There is a nice SUV available from the Portland Bus Station. It is an Alfa Romeo Stelvio.
+user: I'm fine with that type of car. Anything works.
+assistant: Shall I proceed with the reservation?
+user: No I just wanted some information about it.
+assistant: Okay. Do you require any more help at the moment?
+user: That's all for now. Thanks for helping me out.
+assistant: Have a wonderful day.

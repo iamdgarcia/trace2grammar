@@ -1,0 +1,23 @@
+user: I want to go for a short trip for which I need a car for rent. Can you help me to find the one on the 9th up to March 10th? I like to book a Sedan car.
+assistant: What is your convenient time to pick up the car and from which place?
+user: Book it from Seattle, WA at the time half past 12 in the afternoon.
+tool(GetCarsAvailable): ok n_results=4
+assistant: Okay. Tell me whether you like to take a ride on the car which is available for pickup at King Street Station and the same is Sedan Audi A8 model as required by you.
+user: What is the total cost for that ride will be?
+assistant: It will be around $32.00 per day.
+user: Okay, I fix this. And I need to search for a bus also.
+assistant: For which date?
+user: Search it for the date on March 2nd.
+assistant: Okay, from which place?
+user: I am planning to leave from Vancouver, BC and please find a bus from here to travel.
+tool(FindBus): ok n_results=10
+assistant: What about the bus which is departing at 7:40 am for the cost $27?
+user: This is okay for me. Thanks. I also want to search for a flight and it should be one-way flight.
+assistant: Shall I search it for leaving date on March 9th?
+user: Please find the one on next Wednesday.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Do you like to travel through American Airlines? How about an onward flight which takes off at 11:10 am for the ticket cost $244?
+user: Yes, it is okay to me. Thanks.
+assistant: Anything else you need?
+user: That's all for now and thanks for everything.
+assistant: Have a great day.

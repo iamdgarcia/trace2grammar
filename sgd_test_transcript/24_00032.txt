@@ -1,0 +1,15 @@
+user: Book me a one-way flight for tomorrow.
+assistant: What is your departure and arrival city?
+user: I am departing Seattle, WA and headed to Vancouver.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Delta Airlines has a departure at 4:10 am with a layover and a cost of $244.
+user: That works for me. Find me two trains tickets in any class to get there on the 11th.
+tool(FindTrains): ok n_results=9
+assistant: Search revealed 9 results. There is a departure at 6:20 am with a cost of $102.
+user: That is good. Get me train tickets and some trip insurance too.
+assistant: You want 2 Value train tickets from Seattle to Vancouver on March 11th with a departure time of 6:20 am with trip insurance, correct?
+user: That is perfect.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your order is complete.
+user: Thanks a bunch. That is all.
+assistant: Have a good day.

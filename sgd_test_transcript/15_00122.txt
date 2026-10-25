@@ -1,0 +1,37 @@
+user: I'd like to find a unisex salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. One nice salon is 1512 Barber Shop in San Francisco.
+user: That should work. I'd also like to find a Psychologist in SF.
+tool(FindProvider): ok n_results=4
+assistant: I found Adam E. Pollock who is a Psychologist in San Francisco.
+user: Did you find any other therapists?
+assistant: I also found Deardorff Julianna who is a Psychologist in San Francisco.
+user: What is the phone number?
+assistant: Their number is 415-502-8336.
+user: Were there any other therapists?
+assistant: I also found Perez Linda M. who is a Psychologist in San Francisco.
+user: What is their address and phone number?
+assistant: They are at 100 Masonic Avenue, San Francisco, CA 94118 and you can reach them at 415-567-8370.
+user: That works. Could you book an appointment?
+assistant: What time did you prefer it at?
+user: I'd like it at 9:45 in the morning.
+assistant: For which date would you like the appointment?
+user: Can you make it on the 14th?
+assistant: Please confirm you're booking an appointment for Perez Linda M on March 14th at 9:45 am.
+user: No, can you actually make an appointment for March 7th at 12:45?
+assistant: Please confirm March 7th at 12:45 pm.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, your appointment could not be made. You may want to try Perez Linda M on March 7th at 1 pm.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked and you should receive an email confirmation soon.
+user: Thank you! I'd also like to book an appointment at the salon you found.
+assistant: When did you want to book it?
+user: I'd like to book it for 7 in the evening.
+assistant: Please confirm you're booking an appointment for 1512 Barber Shop on March 7th at 7 pm.
+user: That is correct. What is its address and average rating?
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, your appointment could not be made. Its address is 1532 20th Street and it has a rating of 4.8. How about an appointment for 1512 Barber Shop on March 7th at 6:30 pm?
+user: No, but thank you, that will be all I need.
+assistant: Have a good day.

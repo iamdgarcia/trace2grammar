@@ -1,0 +1,36 @@
+user: I need to freshen up my look. I would like to find a salon.
+assistant: What city would you like to look in?
+user: Please search for a salon in Novato.
+tool(FindProvider): ok n_results=1
+assistant: Best Hair is a salon in Novato.
+user: Let's keep looking. Search for a unisex salon in San Jose, please.
+tool(FindProvider): ok n_results=10
+assistant: Atelier Salon Willow Glen is a salon meeting your criteria in San Jose.
+user: Does it have good reviews and ratings?
+assistant: The average rating for that salon is 4.3.
+user: What are the address and phone number?
+assistant: The address is 1047 Lincoln Highway Suite 101. The phone number is 408-293-3494.
+user: What other salons are in that area?
+assistant: Barba & Co. San Jose is in San Jose.
+user: Yes, that sounds good. I would like to look for a regular showing of a Biographical movie in that area at the 3 Below Theaters and Lounge.
+tool(FindMovies): ok n_results=1
+assistant: Fiddler: A Miracle of Miracles is showing at that location.
+user: Fiddler is just right. What time will it be showing on the 4th?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 showtime at 4:30 pm at the 3 Below Theaters and Lounge.
+user: What is the address?
+assistant: The address is 288 South 2nd Street.
+user: OK, thanks, that sounds good.
+assistant: Would you like to buy tickets?
+user: No, not right now. I would like to book an appointment at the salon you found.
+assistant: What time would you like to book the appointment for?
+user: I'll make the appointment for 10:15 am.
+assistant: You would like to make an appointment at the salon Barba & Co. San Jose at 10:15 am on March 4th, is this correct?
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, the time you selected is not available for booking at Barba & Co. San Jose. There is an appointment available on March 4th at 10:30 am.
+user: Yes, I'll take that one.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been scheduled.
+user: Thank you very much, that's all I need.
+assistant: Have a great day!

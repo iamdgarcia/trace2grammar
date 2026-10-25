@@ -1,0 +1,41 @@
+user: Please find me a psychologist in san jose
+tool(FindProvider): ok n_results=10
+assistant: what about a psychologist called barskyex bryna g in san jose
+user: ok that sounds good
+assistant: would you like to book an appointment
+user: yes please do
+assistant: when would you like to go
+user: i want to go on 14th of this month
+assistant: what time would you like to go
+user: i want to be there at 11 in the morning
+assistant: please confirm your appointment with barskyex bryna g at 11 am on march 14th
+user: no, please change it to day after tomorrow
+assistant: pleas confirm your changes to 11 am on march 3rd
+user: yes that is correct, please tell me their number and address
+tool(BookAppointment): ok n_results=1
+assistant: your appointment is booked. their address is 5755 cottle road # 4 and number is 408-363-4418
+user: thank you. please also request a payment from Emma for me for $39
+assistant: please confirm the request for payment of $39 from emma. This will be visible to the public
+user: yes that is correct
+tool(RequestPayment): ok n_results=1
+assistant: your request for payment has been submitted
+user: i also want to find something to eat on that day
+assistant: what kind of restaurant do you want
+user: i want some asian fusion
+tool(FindRestaurants): ok n_results=10
+assistant: i found 10 asian restaurants. what about china garden restaurant in san jose
+user: is this a reasonably priced restaurant? do they have vegetarian menu
+assistant: they are really cheap and they dont have vegetarian options
+user: what else can you find
+assistant: what about dynasty in san jose
+user: ok that sounds good
+assistant: would you like me to reserve a table for you
+user: yes please do
+assistant: what time do you want to be there
+user: please reserve for 1 people at 1:15 pm
+assistant: please confirm your reservation for 1 with dynasty in san jose at 1:15 pm on march 3rd
+user: yes that is correct
+tool(ReserveRestaurant): ok n_results=1
+assistant: sorry i wasn't able to reserve for 1 with Dynasty. how is 1:30 pm on march 3rd working for you
+user: no that is all i need
+assistant: have a nice day

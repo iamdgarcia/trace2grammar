@@ -1,0 +1,7 @@
+user: I'd like train tickets for next Thursday. I'll be going to San Diego.
+assistant: Where are you coming from?
+user: I'm coming from Phoenix, AZ. I'll need 3 tickets.
+tool(FindTrains): ok n_results=5
+assistant: I've found 5 trains. One's departing at 8:30 am and costs $199.
+user: That's a good one. That's all.
+assistant: See you next time.

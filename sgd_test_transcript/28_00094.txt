@@ -1,0 +1,44 @@
+user: I want to find some attractive places to visit. Can you find me a suitable one?
+assistant: Yes, I can search and let me know whether you want to go to any particular to City to visit the attractive places? If so let me know the same.
+user: Yes, I want some attractive places in San Diego to visit.
+tool(FindAttractions): ok n_results=10
+assistant: That's nice City and I got 10 attractions in that City. What about a Park named Balboa park? Do you like this place?
+user: Yes, I like it.
+assistant: What do you want to do now?
+user: I want to book a car for rent to go to that place. can you help me?
+assistant: Yes. From which date to which date you need the car for rent?
+user: I need it from 6th of this month to 8th of March.
+assistant: Shall I search it for the pick up from San Diego?
+user: Yes Do the same.
+assistant: At what time, you need the car for pickup?
+user: Book it for the pick time 15:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Okay. What is your opinion to take a ride on a SUV Citroen C5 model car available for the pick up at SAN International Airport?
+user: What is the total cost per day?
+assistant: It is $49.00 per day.
+user: Okay, I need to search for some other cars.
+assistant: What about a Sedan Hyundai Ioniq model car available at Santa Fe Depot? Do you like to book this car?
+user: And what is the cost?
+assistant: It cost $28.00 for one day.
+user: That is great and I prefer this.
+assistant: Shall I book it now?
+user: Yes, do it so.
+assistant: Do you want to include insurance to that booking.
+user: No, pleas book it without insurance.
+assistant: Please confirm to book a Sedan model car for pick up at Santa Fe Depot from March 6th at 3:30 pm to March 8th without insurance.
+user: That is okay to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have booked the car successfully.
+user: Thanks. Now I want to share the location.
+assistant: Which address? Balboa Park or Santa Fe Depot?
+user: Share the address Santa Fe Depot.
+assistant: To Whom you want to share it?
+user: Share it with Margaret.
+assistant: Please confirm to share Santa Fe Depot with Margaret.
+user: That is correct to proceed.
+tool(ShareLocation): ok n_results=1
+assistant: Successfully shared the location as you wish.
+user: Thanks for your heip.
+assistant: Anything else you need?
+user: No, that's all and thanks.
+assistant: have a good day.

@@ -1,0 +1,32 @@
+user: Hi, could you help me find some attractions to visit please?
+assistant: And which location should I search at?
+user: A child-friendly museum in CDMX will be great.
+tool(FindAttractions): ok n_results=10
+assistant: How about a museum called Arte Carrillo Gil Museum?
+user: Sure, that is fine with me.
+assistant: How can I further assist you?
+user: Could you get me a rental Sedan for use till the 13th?
+assistant: Are you picking the car from Mexico City, and what time and date do you need the car from?
+user: I will be picking up the car on next Friday at 14:00.
+tool(GetCarsAvailable): ok n_results=4
+assistant: How about a Sedan Dodge Charger at Benito Juarez International Airport?
+user: How much will this cost me each day?
+assistant: This will set you back $21.00 each day.
+user: Sounds great to me!
+assistant: Would you like me to book the car for you?
+user: Sure, could you rent it for me please?
+assistant: And do you require insurance?
+user: No, that is not necessary.
+assistant: Please confirm your reservation for a Sedan from Benito Juarez International Airport from March 8th at 2 pm to March 13th.
+user: Sure, that is fine with me.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Could you share the location of Arte Carrillo Gil Museum with Eric please?
+assistant: Please confirm your request to share the location of Arte Carrillo Gil Museum with Eric.
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you so much for your help.
+assistant: Do you require further assistance then?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead.

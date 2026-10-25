@@ -1,0 +1,14 @@
+user: I need to take a train trip.
+assistant: What is your departure and arrival city and what date are you travelling?
+user: I want to leave Sacramento, CA next Friday and go to SD.
+tool(FindTrains): ok n_results=10
+assistant: There is a train leaving at 6:30 am with a ticket price of $149.
+user: That works for me.
+assistant: Shall I order you tickets now?
+user: No, not right now. I need a house to stay in for one person, with a 4.4 rating or higher and that has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: Search revealed 10 results. What about 1003 Coast Boulevard, La Jolla, California 92037, United States with a 4.4 rating?
+user: What is their phone number?
+assistant: You can reach them at +1 858-224-7600.
+user: That is perfect. I don't need any more help right now.
+assistant: Have a good day.

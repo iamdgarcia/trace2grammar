@@ -1,0 +1,30 @@
+user: Hi, could you find me a place to live please?
+assistant: How many baths and bedrooms would you prefer, and which area are you looking at?
+user: I would prefer one with 2 bedrooms and 2 baths in Antioch.
+assistant: Are you looking to rent or buy the apartment?
+user: I will likely buy it.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 houses you might like, how about Bella Rose Apartments at 4900 Canada Valley Road costing $2,850,000.
+user: Do they have laundry machines and what is the property's phone number.
+assistant: Yes, it does, and you can contact them at 925-754-2900.
+user: I see, are there any alternatives?
+assistant: How about Buchanan Gardens at 1600 Buchanan Road costing $3,000,000.
+user: Sounds great, could you schedule an appointment on March 1st?
+assistant: Please confirm your appointment for a visit to Buchanan Gardens on March 1st.
+user: Yes, that is right. Thanks.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Could you share the location with Melissa too?
+assistant: Please confirm your request to share the location 1600 Buchanan Road with Melissa.
+user: Sounds great to me!
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you, could you get me a cab ride there too?
+assistant: How many seats and what type of ride would you prefer, such as a Regular or Pool ride?
+user: Get me the most comfortable ride for 4. Thanks!
+assistant: Please confirm your booking for a Luxury ride for 4 to 1600 Buchanan Road.
+user: Yes, that is great! How much does this cost me?
+tool(GetRide): ok n_results=1
+assistant: Your booking has been made, which will cost you $30.82.
+user: I see, thanks for your help! That is all I need.
+assistant: Have a great day ahead.

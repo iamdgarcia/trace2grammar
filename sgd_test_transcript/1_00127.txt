@@ -1,0 +1,17 @@
+user: I'd like to look for music right now.
+tool(LookupMusic): ok n_results=1
+assistant: What is your opinion regarding Medicine by Jennifer Lopez from her album Medicine Remixes?
+user: Do you have something else? I enjoy music by Greta Van Fleet.
+tool(LookupMusic): ok n_results=1
+assistant: I discovered 1 music for you. What is your opinion regarding Highway Tune by Greta Van Fleet from the album Black Smoke Rising?
+user: Yeah, that's perfect for me.
+assistant: Do you wish to cast this music?
+user: Yup. Play it on patio speaker.
+assistant: Please verify the following information: cast the music Highway Tune in Patio.
+user: Nope; play it on speaker in kitchen.
+assistant: Please verify the following information: cast the music Highway Tune in Kitchen.
+user: Yeah, that's the right one.
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your song.
+user: Thank you for your help; that's all.
+assistant: Have a pleasant afternoon.

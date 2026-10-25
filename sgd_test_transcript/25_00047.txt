@@ -1,0 +1,21 @@
+user: I would like to watch a move at Century at Tanforan and XD and I like play movies.
+assistant: What location are you located in?
+user: I would like to see a movie in San Bruno.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie, Hustlers?
+user: Hustlers sounds good. I would like to play a song.
+tool(LookupMusic): ok n_results=10
+assistant: They are 10 songs. There is Centipede by Knife Party from the album Rage Valley.
+user: Yes, play that song in the kitchen.
+assistant: Playing Centipede in the kitchen.
+user: Cast in the living room speaker instead please.
+assistant: Playing Centipede in the living room.
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music that is playing.
+user: Did the song come out in 2013?
+assistant: No it's from the year 2012.
+user: What type of music is this?
+assistant: It's a dubstep song.
+user: That is all I needed.
+assistant: Have a good day.

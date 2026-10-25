@@ -1,0 +1,23 @@
+user: I'd like to search for a hotel for an upcoming trip
+assistant: In what region would you like to search for a hotel?
+user: Can you search for hotels in NY.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that fit with your preferences. One such hotel is a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: Super. Can you tell me what the weather will be like on March 11th in this area?
+tool(GetWeather): ok n_results=1
+assistant: For that day, the temperate will be around 65 degrees Fahrenheit, with a 34 percent likelihood of rain.
+user: Sounds good. I need to go ahead and book a room at the hotel you mentioned with the reservation beginning on March 9th.
+assistant: And for what length of time?
+user: I would like the room for 4 days
+assistant: So, you would like to reserve 1 room in 1 Hotel Brooklyn Bridge, in New York, beginning on March 9th for 4 days. Correct?
+user: Yes, that's correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been confirmed
+user: Can you give me the exact location of the hotel
+assistant: They are located at 60 Furman Street, Brooklyn.
+user: And can you tell me if this hotel permits smoking, as well as the per night rate?
+assistant: This hotel does allow smoking and the rate is $350 for a night
+user: Great, thanks so much for your help
+assistant: Do you need further assistance?
+user: No, that was it. Thanks again!
+assistant: Have a lovely day.

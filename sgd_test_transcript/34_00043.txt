@@ -1,0 +1,19 @@
+user: I want to find a hotel please
+assistant: What city are we looking in
+user: I need 1 room only, in London please
+tool(SearchHotel): ok n_results=10
+assistant: Sure, how about this highly rated 5 star place called 45 Park Lane
+user: That sounds awesome, now find me some cool attractions around the area
+tool(FindAttractions): ok n_results=10
+assistant: There's a great historical landmark called 30 St Mary Axe (The Gherkin)
+user: What's their phone number, and is entrance there free?
+assistant: No, you have to pay to get in, and it's 20 7071 5029
+user: OK understood. Let's get back to booking that hotel we found
+assistant: when are you checking in and how long are you staying?
+user: I wanna check in on the 5th of March for 5 days
+assistant: OK, confirming you want a 5 day stay starting March 5th at 45 Park Lane in London, and you need 1 room yes?
+user: Yes that's right. Can I smoke there by the way? And what's their phone?
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked, and sorry no smoking allowed on the property. You can call them at +44 20 7493 4545
+user: Thanks you've been a big help, have a good one
+assistant: You too, later!

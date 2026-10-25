@@ -1,0 +1,19 @@
+user: I am search of a normal cab ride for three people, can you help me with that?
+assistant: Yes I can. Where will you need to go?
+user: I will be going to Bosque de Chapultepec.
+assistant: Okay, so that will be a regular cab ride for 3 to Bosque de Chapultepec?
+user: Yes that is correct. Can you tell me the estimated arrival time for this ride and the total cost?
+tool(GetRide): ok n_results=1
+assistant: Okay, I have successfully completed your reservation for a cab ride for 3 and your total cost will be $40.46.
+user: Thank you, now I need your help finding a good song to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: How about Pour It Up by Rihanna off of her Unapologetic album?
+user: When was that song released?
+assistant: The song was released in 2012.
+user: Cool, I would like to hear that song please.
+assistant: Would you like to hear Pour It Up in your living room?
+user: Yes, that would be fine. What genre is this artist again?
+tool(PlayMedia): ok n_results=1
+assistant: The artist is of the Pop genre. I hope you enjoy your music.
+user: Thank you, I will. That will be all for today, bye.
+assistant: You are welcome and safe travels.

@@ -1,0 +1,19 @@
+user: Hi I'm hoping the weather is good in New Delhi on Wednesday next week. Can you check it for me?
+tool(GetWeather): ok n_results=1
+assistant: It looks like the temperature that day should be around 93 degrees Fahrenheit with a 0 percent chance of rain.
+user: What is the humidity expected to be?
+assistant: The humidity should be about 15 percent.
+user: Okay, good. What about some attractions? Please find me a shopping district.
+tool(FindAttractions): ok n_results=1
+assistant: I suggest you fo to Khan Market, it is a shopping area.
+user: Sounds good to me. Please get me a cab for two people.
+assistant: Do you have a ride preference? There's Pool, Luxury, etc.
+user: I would like a pool ride.
+assistant: So you want a ride for 2 people to Khan Market and you'd like a pool ride. Is this correct?
+user: Sounds good. What will the cost be and when should I expect the cab to be here?
+tool(GetRide): ok n_results=1
+assistant: I booked the cab and it should arrive shortly, in about 5 minutes. The cost for the ride should be $13.77
+user: Thank you so much for your help.
+assistant: Is there anything else I can assist you with?
+user: That will be all, thank you again.
+assistant: Have a great day!

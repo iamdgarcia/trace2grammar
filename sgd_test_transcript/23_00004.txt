@@ -1,0 +1,33 @@
+user: I would like to find some movies online.
+assistant: What type of movies do you like?
+user: I like Crime story movies that would be great.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you might like. What do you think about Pulp Fiction?
+user: Pulp Fiction is good.
+assistant: Would you like to play the movie?
+user: Maybe at a later time. Will you show me some attractions there?
+assistant: Where should I look for attractions in?
+user: Find some attractions in Washington D.C.
+tool(FindAttractions): ok n_results=10
+assistant: Check out 56 Signers of the Declaration of Independence Memorial a Nature Preserve.
+user: Okay good. What about searching for some songs for me now. I hear Love Town album is good. I like the songs by Kolohe Kai and love Reggaeton songs.
+tool(LookupMusic): ok n_results=1
+assistant: I have 1 song for you. What do you think about First True Love by Kolohe Kai from the album Love Town.
+user: Yes, that will be the one.
+assistant: Do you wish to play this song.
+user: Sure I will.
+assistant: Please confirm details to play the song First True Love in the living room.
+user: Yes, that is is. Did it come out three years back?
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music from the year 2011.
+user: Thanks to you. Will you play the movie you found?
+assistant: Please confirm details to play pulp Fiction with subtitles in English.
+user: No, I'd like to watch it with French subtitles.
+assistant: Please confirm details to play pulp fiction with subtitles in French.
+user: Yes, please who are the actors in it?
+tool(PlayMovie): ok n_results=1
+assistant: Bruce Willis acted in the movie and I started it.
+user: Thanks so much.
+assistant: What else can I assist you with.
+user: No thank you.
+assistant: Have a nice day.

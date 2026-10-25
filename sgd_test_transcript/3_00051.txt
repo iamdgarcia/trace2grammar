@@ -1,0 +1,13 @@
+user: Hello! Can you help me call a cab?
+assistant: I'd be happy to help. Would you like a Luxury or Pool ride?
+user: I'd like a normal ride to Cafe New Honolulu.
+assistant: How many people are in your party.
+user: It's just me so I will need 1 seat.
+assistant: You'd like 1 regular seat for a ride to Cafe New Honolulu. Is this correct?
+user: Yes, that is correct. Can you tell me how much it will be?
+tool(GetRide): ok n_results=1
+assistant: Certainly. The ride is estimated to be $23.62 and should be here soon.
+user: Great. I appreciate the assistance.
+assistant: Is there something else I can help you with today?
+user: No, that will be everything. Thank you.
+assistant: You're welcome. Have a nice ride.

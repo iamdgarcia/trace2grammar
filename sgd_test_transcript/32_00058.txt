@@ -1,0 +1,29 @@
+user: I'm bored and I think some music might help. I'd like to find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs that I have found. How about a song called Fortunately I Met You by Witwisit Hiranyawongkul from the album called Quarter.
+user: What genre of music is this?
+assistant: It's a pop song.
+user: Is it from 2012?
+assistant: It was released in 2014.
+user: Can you keep searching, It's not really my thing.
+assistant: Sure, how about Soul Provider by Silly Walks Movement? It is from the album called Silly Walks Discotheque Presents Brighter Days Riddim.
+user: This just isn't what I'm looking for. Can you find something more modern from at least '18?
+tool(LookupMusic): ok n_results=10
+assistant: How about African Beauty by Diamond Platnumz from their album called A Boy From Tandale?
+user: Okay great I'll settle on that one. Now I'd like to find a movie to watch online. Can you find something that stars Brenda Vaccaro?
+assistant: Do you have any preferences on the kind of movie?
+user: I'm in the mood for a bizarre story.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie called Once Upon a Time in Hollywood.
+user: That's just what I'd like to watch. Once Upon a Time is perfect!
+assistant: Do you want to watch the movie now?
+user: Not right now thanks. Can you play me the song you found first. I'd like to listen to it in the living room.
+assistant: Okay so you'd like to listen to African Beauty in the living room.
+user: Yes that's correct. What genre of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: It's a pop song. I hope you like it.
+user: Thanks. Now can you show me my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set at the moment.There is one called Wake Up set for 6:30 am.
+user: Okay thanks. That's it for now.
+assistant: Thanks a lot.

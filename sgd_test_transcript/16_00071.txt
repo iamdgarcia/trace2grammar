@@ -1,0 +1,31 @@
+user: I need to purchase some bus tickets for an upcoming trip, please.
+assistant: Okay, what time would you like to depart? And how many tickets would you like to purchase?
+user: I should be leaving on Friday next week. I need to purchase 4 tickets, please.
+assistant: Okay, from where are you going to depart?
+user: I will be leaving Vancouver, BC.
+assistant: Okay, what is your destination? And when would you like to leave?
+user: I need to leave around 15:00. And the conference is in Seattle, WA.
+assistant: Would you confirm these details? You would like to purchase 4 tickets for a bus departing from Vancouver. Your destination is Seattle and the bus leaves at 3 pm on March 8th. You do not have extra luggage for this trip.
+user: That sounds correct to me. Can you tell me which station the bus will arrive at? And what is the price for the tickets?
+tool(BuyBusTicket): ok n_results=1
+assistant: You have purchased the tickets for $28. Your bus will arrive at Westlake Station.
+user: Thanks so much. Can you search for hotels in the area as well? I would like just one room.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 star hotel called Ace Hotel Seattle.
+user: Does the hotel allow smoking inside?
+assistant: No, smoking is not allowed there.
+user: Okay, what is the price for one night?
+assistant: This hotel costs $126 per night.
+user: Okay, that will be fine.
+assistant: Would you like to book a room there?
+user: Yes, I need to make a reservation for my conference.
+assistant: What time would you like to check in?
+user: I need to check in sometime on the 3rd of March.
+assistant: And how long would you like to stay there?
+user: I need a booking for three days, please.
+assistant: Would you confirm the following details: You want to book 1 room at Ace Hotel Seattle in Seattle on March 3rd. You will be staying for 3 days.
+user: That sounds right, yes. Could you tell me the street address please? And what is the phone number for the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: You have booked the hotel. The phone number for Ace Hotel Seattle is +1 206-448-4721. The street address is 2423 1st Avenue.
+user: Thank you for the help! That is all I need for the moment.
+assistant: Okay, goodbye. And have a wonderful day.

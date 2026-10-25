@@ -1,0 +1,19 @@
+user: Get a hotel in KL. I require two rooms.
+tool(SearchHotel): ok n_results=10
+assistant: What about trying a nice 5 star hotel like Alila Bangsar?
+user: What is their contact information?
+assistant: The address there is East Side, 58, Jalan Ang Seng, Brickfields, 50470 and the phone is +60 3-2268 3888.
+user: Fine what Museum is near there?
+tool(FindAttractions): ok n_results=4
+assistant: Seems like there are 4 but you might prefer national Art Gallery because it is a great museum.
+user: Fine, reserve the hotel please.
+assistant: What dates will you go?
+user: How about checking in on the 8th of March?
+assistant: How many days please?
+user: I need it for 4 nights.
+assistant: To be clear: Checking into the Alila Bangsar on March 8th in Kuala Lumpur for 4 days. You have 2 rooms.
+user: Fine but what is the nightly fee? Can I smoke tobacco while sleeping there?
+tool(ReserveHotel): ok n_results=1
+assistant: You DO have the rooms and you will be charged $360 per night. Unfortunately you may not smoke anything there.
+user: Fine, you are an asset.
+assistant: Have a safe trip.

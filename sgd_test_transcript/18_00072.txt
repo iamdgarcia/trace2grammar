@@ -1,0 +1,34 @@
+user: I'd like to find a hotel to stay in.
+assistant: Where would you like to search?
+user: Please search in Sydney, NSW.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star place called 1831 Boutique Hotel?
+user: Can you find me their phone number and address?
+assistant: Their phone number is +61 2 9265 8888 and they are located at 631-635 George Street.
+user: I would like to see if there are any other options available.
+assistant: How about a 4 star Hotel called 28 Hotel Sydney?
+user: I'm looking for a three star place. I'm trying to keep the costs down.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star place called Blues Point Hotel?
+user: I like the sound of that.
+assistant: Do you want to make a reservation now?
+user: Not right now thanks.
+assistant: Do you need help with anything else?
+user: What is the weather like there?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is around 94 degrees and there is only a 4 percent chance of rain.
+user: What about the wind and humidity?
+assistant: The humidity is around 15 percent and the estimated wind speed is only estimated to be 2 mph.
+user: That's great thanks. Now can you make the hotel reservation for me please?
+assistant: Will you be checking in on March 1st?
+user: Yes that's right. I only need one room.
+assistant: How many days would you like to stay for?
+user: For six days in total.
+assistant: Okay so before I go ahead and book I'd just like to double check. You want to 1 room at the Blues Point Hotel in Sydney, checking in on March 1st and staying for 6 days.
+user: That's correct thanks.
+tool(ReserveHotel): ok n_results=1
+assistant: Your booking has been made successfully.
+user: Thanks for your help.
+assistant: Do you need help with anything else?
+user: No thanks that's all.
+assistant: Enjoy your day.

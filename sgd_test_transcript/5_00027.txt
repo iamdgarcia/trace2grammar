@@ -1,0 +1,14 @@
+user: I want to see my alarms.
+tool(GetAlarms): ok n_results=5
+assistant: Alarm is set at 7 am in the name of Wake up.
+user: Is there any other alarms?
+assistant: Alarm is set at 8 am in the name of Workout.
+user: Okay, nice. Please include an alarm at 5:15 in the evening.
+assistant: Kindly ensure that, alarm has been included at 5:15 pm in the name of New alarm.
+user: Okay.
+tool(AddAlarm): ok n_results=1
+assistant: Alarm has been included successfully.
+user: Thank you so much.
+assistant: Do you need any other help?
+user: Nope. Thanks a lot.
+assistant: Thank you so much.

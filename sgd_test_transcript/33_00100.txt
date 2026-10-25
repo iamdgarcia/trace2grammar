@@ -1,0 +1,17 @@
+user: I am planning to visit some attractive places for which I need your help to search for the best one.
+assistant: Do you want to search for the attractions in any particular City?
+user: Yes, do it in Chicago.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 places from which I think a Tourist Attraction at 360 Chicago is the best one for you. Do you want to visit there?
+user: Yes, I want to visit there and I need to stay there for a while. Please search for a house with rating at 4.1 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: Okay, I have found one house at 1 South Franklin Street with rating 4.1. I think this is the suitable one for you. What is your opinion?
+user: Let me decide and I need their phone number and please check about laundry service there.
+assistant: Please note down their phone number as +1 312-558-1020 and they do not have laundry service. Is it okay to you?
+user: That is okay and thanks. Now I need one more help to find a round trip flight to go there.
+assistant: What is your planned date of travel and return and from where are you going to start your travel?
+user: I want a flight from Los Angeles on 11th of this month and I planned to return on March 14th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Do you want to travel through an American Airlines direct Flight which takes off at 5:15 am and return flight takes off at 10:20 am and the total ticket cost will be $253?
+user: Yes, that is okay for me. Thanks for all.
+assistant: Have a great day.

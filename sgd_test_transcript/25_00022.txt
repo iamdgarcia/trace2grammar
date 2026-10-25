@@ -1,0 +1,17 @@
+user: I am looking for a regular Thriller movie to watch.
+assistant: What location are you in?
+user: Can you search in Palo Alto please?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie called The Ladykillers.
+user: The Ladykillers would be great! Can you also search for a song from 2019, preferably Metal like the album The Great War?
+tool(LookupMusic): ok n_results=7
+assistant: I found 7 songs, Do you like A Ghost In The Trenches by Sabaton from the album The Great War?
+user: Yes, I wold like you to hear that song!
+assistant: Please confirm you would like for me to play A Ghost In The Trenches in the Living room.
+user: Yes, that would be perfect!
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy!
+user: Thanks so much!
+assistant: Can I assist you with anything else?
+user: No thank you, that will be all I need!
+assistant: Okay, have a great day then!

@@ -1,0 +1,16 @@
+user: Can you help me find a movie to see?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 already, one of which has an average rating of 78 called A Faithful Man what do you think?
+user: That sounds okay.What something engaging happening here and now?
+assistant: What kind of something? Music, Theater, something else and where are you looking?
+user: I love Broadway and I was thinking of something in London.
+tool(FindEvents): ok n_results=10
+assistant: There is a popular event at the Amba Hotel Charing Cross on March 14th at 7 pm called A Right Royale Tea.
+user: Where is that?
+assistant: At the Strand.
+user: That sounds interesting.
+assistant: Would you like me to acquire tickets for you?
+user: Not just yet.
+assistant: Is there something else you need?
+user: No thanks but that will be all.
+assistant: Have a most wonderful day then.

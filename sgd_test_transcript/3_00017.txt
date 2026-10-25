@@ -1,0 +1,9 @@
+user: I would like to find a round trip flight.
+assistant: What is the date you are wanting to travel. Which city do you want to leave from and where do you want to go?
+user: I would like to leave on the 8th, departing from Berlin and going to NYC.
+assistant: What is the day you want the return flight to be?
+user: I am coming back on March 12th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: What do you think of flying with American Airlines? This flight will leave at 1:35 am and it's a direct flight. The return flight leaves at 4:45 pm and the price is $374.
+user: That sounds fine. Thanks very much, that's all I wanted.
+assistant: Have a great day.

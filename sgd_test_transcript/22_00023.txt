@@ -1,0 +1,38 @@
+user: can you find me something like a concert next monday around portland, or?
+tool(FindEvents): ok n_results=5
+assistant: there's 5 events for you. how about bryan adams at the theater of the clouds on march 4th at 6:30 pm?
+user: that sounds cool. are there any buses going there? i want a direct one leaving from vancouver, bc for 3 people/
+assistant: do you want to leave on march 4th?
+user: yes that's good.
+tool(FindBus): ok n_results=8
+assistant: there's a bus that leaves at 7:10 am for $39.
+user: where does it leave from?
+assistant: it leaves from pacific central station.
+user: where does it arrive?
+assistant: it arrives at sw arthur & 1st.
+user: that works for me.
+assistant: do you want tickets?
+user: not at the moment.
+assistant: is there anything else i can help with?
+user: can you find me a roundtrip flight there with delta airlines? i want to leave on the 3rd of march and come back on the 9th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: i found 1 flight for you with delta airlines. it leaves at 6:35 am with a layover. the flight back comes in at 4:35 am and costs $315.
+user: when does the flight home arrive?
+assistant: it'll land at around 10:47 am.
+user: okay that works. can you find me a 3 star hotel there too?
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 matches for you. how about aloft portland airport at cascade station? it has a 3 star rating.
+user: are there any others? i'll be needing two rooms.
+tool(SearchHotel): ok n_results=10
+assistant: there's also Clarion Hotel Portland international airport which also has 3 stars.
+user: where are they located? is smoking allowed?
+assistant: smoking is allowed, and it's located on 11518 northeast glenn widing drive.
+user: okay, can you buy those tickets to the concert you mentioned earlier.
+assistant: you want 3 tickets to bryan adams in portland on march 4th?
+user: yes that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: it's been booked.
+user: thanks so much.
+assistant: is there anything else?
+user: no that's it.
+assistant: have a good day.

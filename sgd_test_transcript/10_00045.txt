@@ -1,0 +1,11 @@
+user: I am feeling like watching a movie now, and I want it to have Spanish subtitles.
+assistant: Can you tell me the movie you would like to watch?
+user: Actually I want to watch the movie with English subtitles, and it is called Fabric.
+assistant: Can you please confirm that you want to watch the movie In Fabric with English subtitles?
+user: That is not right, because I want to watch Blinded by the Light.
+assistant: Can you confirm that you want to watch now the movie Blinded by the Light with English subtitles?
+user: That is correct. Can you tell me who acts in it?
+tool(PlayMovie): ok n_results=1
+assistant: Your requested movie is playing, and Meera Ganatra is in the movie.
+user: Thank you. That would be all.
+assistant: Have a nice day!

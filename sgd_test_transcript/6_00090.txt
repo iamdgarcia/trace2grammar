@@ -1,0 +1,22 @@
+user: Can you help me find a unisex salon?
+assistant: Sure. What city should I search in?
+user: I'd like a salon in Santa Rosa.
+tool(FindProvider): ok n_results=8
+assistant: How about Elle Lui Hair Salon? It is a nice salon in Santa Rosa.
+user: Can you give me the phone number and average rating?
+assistant: The average rating of the salon is 4.8. Their phone number is 707-575-1474.
+user: Sounds good.
+assistant: Would you like to schedule an appointment?
+user: Yes, book me an appointment.
+assistant: What time would you like your appointment?
+user: Book the appointment for 11:15 am.
+assistant: What date should I try for?
+user: Try to schedule the appointment for March 7th at 12 pm.
+assistant: Can you confirm the following? You want an appointment at the Elle Lui Hair Salon for March 7th at 12 pm?
+user: No, scheduled it for Saturday this week.
+assistant: Confirming that you want to visit the Elle Lui Hair Salon on March 2nd.
+user: Yes, that sounds good. Can you find me the address?
+tool(BookAppointment): ok n_results=1
+assistant: The salon is located at 205 5th Street D. Your appointment is confirmed.
+user: Thank you for your help. That's all I need.
+assistant: You're welcome. Have a wonderful day.

@@ -1,0 +1,19 @@
+user: Can you find me something interesting to do on the 6th in or around Cape Town? I am a fan of Broadway.
+tool(FindEvents): ok n_results=1
+assistant: There is 1 event that you may like. There is a Klippies van Die Grond event, which is very popular, at Theatre Arts Admin Collective at 7:30 pm on March 6th.
+user: That sounds perfect!
+assistant: Would you like me to get tickets to this event, for you?
+user: Yes, please get me 1 ticket.
+assistant: Please confirm that you want 1 ticket to the Klippies Van Die Grond event scheduled for March 6th in Cape Town.
+user: Yes, that's right. Can you get me the details of the venue and the ticket price?
+tool(BuyEventTickets): ok n_results=1
+assistant: You ticket has been booked successfully. The venue is located at 26 Wesley Street, Observatory and the ticket costs $20. Have fun!
+user: Can you get me an Expensive cab to go there?
+assistant: Please confirm that you want a Luxury cab for 1 to go to Theatre Arts Admin Collective.
+user: That sounds right to me.
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and it is on its way.
+user: Thank you for the assistance.
+assistant: Is there anything else I can do for you?
+user: No. Thank you once again.
+assistant: Have a great day! Bye!

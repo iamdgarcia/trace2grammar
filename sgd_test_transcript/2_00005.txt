@@ -1,0 +1,14 @@
+user: I want to find a song now, and I know that there are some really good songs in the album called We Are Not Your Kind, also I enjoy Rock-and-roll songs which are from the '19.
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song which you might like. How would you like listening to the Birth Of The Cruel by Slipknot from the album called We Are Not Your Kind?
+user: Yes, that is the song I want.
+assistant: Do you want this song to start playing now?
+user: Yes, I do. Play the song on the patio speaker.
+assistant: Can you please confirm that you want to play the son Birth Of The Cruel on the Patio?
+user: That is not right, because I changed my mind and I want it to be played in my living room.
+assistant: Can you please once again confirm that you want the song Birth Of The Cruel to be played in your Living Room?
+user: Yes, that is what I want.
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time listening to the music
+user: I appreciate it! That would be all.
+assistant: Have a wonderful day!

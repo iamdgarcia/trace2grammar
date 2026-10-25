@@ -1,0 +1,10 @@
+user: Can you find me some attractions to visit?
+assistant: Where should I search?
+user: Look for attractions in London, UK.
+tool(FindAttractions): ok n_results=10
+assistant: How about a Historical Landmark, 30 St Mary Axe (The Gherkin).
+user: Great, can you also find some child-friendly attractions?
+tool(FindAttractions): ok n_results=10
+assistant: How about another Historical Landmark, Admiralty Arch.
+user: Okay, that is all I needed.
+assistant: Enjoy your trip.

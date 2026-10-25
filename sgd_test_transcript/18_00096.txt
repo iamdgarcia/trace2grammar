@@ -1,0 +1,38 @@
+user: Find me a hotel please.
+assistant: In which city you want to be?
+user: I would like in Paris, France.
+tool(SearchHotel): ok n_results=10
+assistant: A 4 star hotel is Ac Hotel By Marriott Paris Porte Maillot.
+user: Tell me their street address.
+assistant: 6 Rue Gustave Charpentier, 75017.
+user: What is the phone number and the price per night?
+assistant: +33 1 84 82 49 09 is the phone number and $432 is the price per night.
+user: Something else you have for me?I would like a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 options for you.A 3 star hotel called Aparthotel Adagio Access Paris La Villette.
+user: Sounds very good.
+assistant: You want to make a reservation?
+user: No.Not now maybe later.
+assistant: Whit something else can I help you?
+user: Tell me how is the weather there.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 77 degrees Fahrenheit and 26 percent chance of rain.
+user: And windy how will be?
+assistant: Average speed should be 7 miles per hour.
+user: And humidity how will be?
+assistant: Will be around 32 percent.
+user: Good, but tomorrow how will be?
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 72 degrees Fahrenheit and 16 percent chance of rain.
+user: Okay,but on next Thursday?
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 87 degrees Fahrenheit and 12 percent chance of rain.
+user: Good.I want to make a reservation for four days at the hotel that you have found.Check in will be on next Tuesday.
+assistant: You want 1 room at hotel Aparthotel Adagio Access Paris La Villette in Paris on March 5th and you will stay 4 days.Is correct?
+user: Sure,sounds good.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is booked.
+user: Tell me their phone number.
+assistant: +33 1 44 72 42 00 is their phone number
+user: Thank you very much.That's all for now.
+assistant: Have a great day!Bye.

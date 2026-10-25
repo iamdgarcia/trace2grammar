@@ -1,0 +1,37 @@
+user: Find me a salon
+assistant: What city would you like me ot look?
+user: Find me a salon in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 salons that you may be interested in. 17 Jewels Salon is a nice Oakland salon.
+user: What is the phone number?
+assistant: The phone number is 510-653-1059.
+user: Sounds good to me.
+assistant: Should I make the appointment?
+user: In a bit. Find me a therapist in the area.
+assistant: You want me to look in Oakland?
+user: That is correct.
+assistant: Would you like a Psychologist, a Psychiatrist or a different type of Therapist?
+user: I need a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 therapists that may be of interest. How about Alameda Children's Specialized. This is an Oakland Psychologist.
+user: Do you have anything else? Search Lafayette.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 therapists that could work. How about Alissa Scanlin Psyd? She is a Psychologist in Lafayette.
+user: Could you tell me their address?
+assistant: They are located at 3468 Mount Diablo Boulevard.
+user: Okay then. Book the appointment.
+assistant: What date would you like the appointment on?
+user: Could you make it 4th of March
+assistant: Is there a time that you prefer?
+user: Make it 4:30 pm.
+assistant: Could you confirm that you want to book with Alissa Scanlin Psyd at 4:30 pm on March 4th?
+user: Okay.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was made successfully. You should be getting an email confirmation.
+user: I'd like to make an appointment at the salon you mentioned for that day. Make it morning 10:45.
+assistant: Could you confirm that you want to book for March 4th at 10:45 am with 17 Jewels Salon?
+user: Yeah that's good.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been confirmed.
+user: Thanks. That is what I needed.
+assistant: Have a good day.

@@ -1,0 +1,17 @@
+user: What Museum is best in New York City?
+tool(FindAttractions): ok n_results=10
+assistant: Well, there are at least 10 choices and first alphabetically is 9/11 Tribute Museum. It's listed as a Museum.
+user: Fine, how about another choice?
+assistant: Next, alphabetically is American Folk Art Museum. It's listed as Museum.
+user: Fine, get a house for me to stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: We have at least 10 options. First up is 100 Greenwich Street. It has 4.4 stars.
+user: That address seems like a great one. I need to fly American Airlines on Sunday this week. Can you help?
+assistant: What city are you boarding from?
+user: I'm leaving Chicago.
+assistant: What day do you want to get back to Chicago?
+user: On March 11th. I need Economy pricing please.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 option with American Airlines. It takes off at 5:05 am. The return flight takes off at 1:35 pm and your fee will be $227.
+user: Fine, that information is exhaustive.
+assistant: Have a safe flight.

@@ -1,0 +1,36 @@
+user: Hi, are there any interesting musical performance in New York I can attend on Sunday this week?
+tool(FindEvents): ok n_results=10
+assistant: Yes, how about the Alma Deutscher event taking place at Stern Auditorium / Perelman Stage happening on March 3rd at 7 pm?
+user: Sounds great! May I know which buses travel there?
+assistant: Are you departing on March 3rd?
+user: No, I plan to depart tomorrow.
+assistant: And where are you departing from?
+user: I will depart from Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses you might like, how about one departing at 9 am costing $22?
+user: Sounds great, could you also help me find two round trip economy class tickets with United Airlines heading there?
+assistant: And which date are you going to return?
+user: I will be travelling from Sunday this week to March 6th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Would you like a direct United Airlines flight departing at 11:30 am and returning at 5:35 am costing $99?
+user: Sounds great! Could you also help me search for hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, there are 10 hotels you may like, how about a 5 star hotel called 1 HOtel Brooklyn Bridge?
+user: Are there any alternatives, preferably one which allows smoking?
+tool(SearchHotel): ok n_results=10
+assistant: How about a 5 star hotel called 1 Hotel Central Park?
+user: No thanks, give me some other alternatives.
+assistant: How about a 3 star hotel called 11 Howard?
+user: May I know their nightly rates?
+assistant: This will cost you $66 each night.
+user: Sounds great to me!
+assistant: How can I further assist you?
+user: Could you purchase the event tickets now?
+assistant: Please confirm your purchase for 2 tickets for the Alma Deutscher event in New York on March 3rd.
+user: Sounds great! How much will this cost per ticket and where is it held at?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, which will cost you $50 per ticket and is held at 881 7th Avenue.
+user: I see, thank you so much!
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a pleasant day ahead!

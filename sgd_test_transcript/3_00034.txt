@@ -1,0 +1,11 @@
+user: I need a premium economy round trip to Washington on United Airlines
+assistant: What date are you departing, and from what city?
+user: I'm flying out on the 11th of this month, from Ciudad de mexico.
+assistant: What is your return date?
+user: I'm coming back on the 13th of march.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have a united Airlines flight departing at 1:40 am, which is a connecting flight. The return flight departs at 4:35 pm. Total cost is $574.
+user: Okay thanks for the info.
+assistant: Do you need anything else?
+user: no that's it
+assistant: Talk to you later.

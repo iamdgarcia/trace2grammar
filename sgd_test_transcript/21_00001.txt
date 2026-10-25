@@ -1,0 +1,23 @@
+user: I want a cab!
+assistant: How many people are traveling with you? Where are you going? And what type of ride do you prefer? You can say Pool or Regular or something else.
+user: I want a ride to 800 Pollard Road # B201. I prefer a Shared ride and I just want 1 seat.
+assistant: Please confirm the following details: You want a ride to 800 Pollard Road # B201. You prefer a pool rid and want 1 seat.
+user: Yes, that works.
+tool(GetRide): ok n_results=1
+assistant: Your cab has been booked and is on its way.
+user: Can you search for songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about The Archer by Taylor Swift from her album Lover.
+user: Is that from five years back? What type of music is it?
+assistant: It's from 2019 and is a pop song.
+user: Yes, that's it.
+assistant: Do you want to play the song?
+user: Yes, play it on any device.
+assistant: Please confirm playback details: Play The Archer in the Living Room.
+user: No, play it on the kitchen speaker.
+assistant: Please confirm the following: play The Archer in Kitchen.
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: Thank you! That's all I wanted.
+assistant: Have a great day!

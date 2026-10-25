@@ -1,0 +1,24 @@
+user: Can you locate a 4 star hotel in LA for me?
+tool(SearchHotel): ok n_results=10
+assistant: The Beverly Hills Marriott is there and has a 4 star rating.
+user: Great, now locate a flight there, round trip.
+assistant: When do you plan to fly back and where do you want to leave from?
+user: I want to fly out of San Francisco and come back on the 14th of March.
+assistant: Would you be departing March 9th?
+user: No, that would be the 1st of March, thank you.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: I have a list of 5 flights. What would you think about a $145 seat with Alaska Airlines that would depart at 12:25 pm and then at 11:55 am for the flight home, nonstop.
+user: What else is available?
+assistant: American Airlines offers a $135 ticket with a direct flight departure time of 7:10 pm and 9:30 am to come home.
+user: That's the one. I want one room at that hotel we decided on and I will get there the 4th of March.
+assistant: Do you know what the length of your stay will be?
+user: That will be 3 days.
+assistant: Is this correct - 1 room on Los Angeles beginning March 4th and lasting 3 days at the Beverly Hills Marriott?
+user: That is correct. Do they let you smoke?
+tool(ReserveHotel): ok n_results=1
+assistant: A strict no smoking policy cover the entire property and you reservation is confirmed.
+user: What is there to do there? I'd like to find a free, child-friendly historical spot.
+tool(FindAttractions): ok n_results=2
+assistant: I found 2 and I would suggest Angels Flight Railway which is a Historical Landmark as the better of the 2.
+user: Fantastic, talk at you later.
+assistant: Have fun!

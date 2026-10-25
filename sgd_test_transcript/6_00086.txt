@@ -1,0 +1,16 @@
+user: I need to correct my hairstyle for which I need to find a good salon. I want you to search for the one in Milpitas which should be an Unisex one.
+tool(FindProvider): ok n_results=4
+assistant: What about Apple Salon Hair & Nails located in Milpitas?
+user: I want to know their address first to decide.
+assistant: It is located in 1216 south Abel Street. Is it comfortable to you?
+user: I think so, please also let me know their contact number and rating.
+assistant: It has 4.1 rating and phone number is 408-644-5852.
+user: That is good. I want to book an appointment with this Salon at 14:30
+assistant: In which date?
+user: Make it on 1st of this month.
+assistant: Please confirm to book an appointment with Apple Salon Hair & Nails at 2:30 pm on March 1st.
+user: That is correct to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully made the appointment.
+user: Thanks and that's all.
+assistant: Have a great day.

@@ -1,0 +1,19 @@
+user: Hello. What's the weather like in Atlanta, GA?
+tool(GetWeather): ok n_results=1
+assistant: The weather is 86 degrees F with a 28 percent chance of rain.
+user: Okay. I need to book a one-way flight there.
+assistant: Okay, great! Are you leaving on March 1st? Which city are you leaving from?
+user: That will be my departure date, yes. I'm leaving from London, UK.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Perfect! I found 3 flights for you. I recommend the American Airlines flight that leaves at 8:05 pm. It's a direct flight and costs $249.
+user: That would be great! I also need a rental car there until the 10th.
+assistant: Great! What time would you like to pick up the car?
+user: 15:45 would be ideal.
+assistant: Okay! And the pick up date would be March 1st?
+user: Actually, I only need it starting on March 7th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Okay, perfect! I found 10 cars you might like. I recommend a car available at the Hartsfield-Jackson International Airport. It's a Sedan Buick Regal Sportback.
+user: How much is the cost per day?
+assistant: It's $34.00 per day.
+user: Sounds good! That's all I need.
+assistant: Have a good day!

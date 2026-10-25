@@ -1,0 +1,21 @@
+user: Can you make a payment to Tom?
+assistant: Sure, how much and from what account?
+user: Send $110 from my check card.
+assistant: Okay, confirm you'd like to send $110 to Tom from your debit card? It will be visible to the public.
+user: Sure, that works.
+tool(MakePayment): ok n_results=1
+assistant: I've made your payment and they will receive the money soon.
+user: Can you also request $161 from Jerry?
+assistant: Sure, please confirm you'd like me to request $161 from Jerry. It will be visible to the public.
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: It was made successfully.
+user: Can you also make a private transfer from my in-app balance?
+assistant: Sure, how much and to whom?
+user: Send $79 to Victoria.
+assistant: Confirm you'd like a private payment from your app balance to Victoria for $79.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Great, it was successful and they will receive the money soon.
+user: That's all for now, thank you.
+assistant: My pleasure, enjoy your day!

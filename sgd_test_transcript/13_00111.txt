@@ -1,0 +1,12 @@
+user: I would like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: There is Angel Has Fallen that as a rating of 39 out of 100.
+user: I would like to find something to do on that day.
+assistant: What type of event would you like Music or Theater or something else?
+user: I would like to see a Broadway around London, UK.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events. There is A Right Royale Tea at Amba Hotel Charing Cross on March 14th at 7 pm.
+user: Yes, that event sounds good.
+assistant: Would you like to purchase a ticket?
+user: No, I just needed the information.
+assistant: Have a good day.

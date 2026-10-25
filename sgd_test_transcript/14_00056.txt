@@ -1,0 +1,16 @@
+user: Can you find me a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: You might like Brittany Runs a Marathon. The movie has an average rating of 90 out of 100.
+user: That sounds good. Can you find me some songs?
+tool(LookupMusic): ok n_results=10
+assistant: How about Dark Necessities by Red Hot Chili Peppers? It is from the album The Getaway.
+user: What else do you have? How about some House music?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs that might suit you. How about Beautiful Now by Zedd? It is from the album True Colors.
+user: Yes, that's the one. Can you play the song?
+assistant: Confirming that you want me to play the song Beautiful Now in the Living room?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy your music.
+user: Thanks! That's all for now.
+assistant: You're welcome. Have a good day.

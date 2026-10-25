@@ -1,0 +1,39 @@
+user: I want you took for a train, can you find me one?
+assistant: which is the city you need to travel?
+user: I have to go to Fresno
+assistant: Which is the city you are departing from and when?
+user: I need tickets from Anaheim on the 7th
+tool(FindTrains): ok n_results=6
+assistant: I have found 6 trains for you and how about the train starting at 7:10 am and costing total $85?
+user: that is fine
+assistant: You need ticket booking?
+user: No, i don't need tickets now
+assistant: Any other help you need?
+user: I have to find something interesting around 14th of this month
+assistant: Do you have choice of events?
+user: I really wanted show
+tool(FindEvents): ok n_results=1
+assistant: I have short listed 1 event of your liking and what is your opinion on popular The Government Inspector at California Arts Academy on March 14th at 5:30 pm?
+user: What is the venue location?
+assistant: The venue location is 1401 North Wishon Avenue
+user: That is fine
+assistant: Do you need event tickets?
+user: No, not now
+assistant: Can i help you with any other thing?
+user: I want you to search for child-friendly attractions there
+tool(FindAttractions): ok n_results=3
+assistant: You have to look into Christmas Tree Lane as it is a Tourist Attraction
+user: Ok, are there any other attractions?
+assistant: You have to check out Fresno Chaffee Zoo which is a Nature Preserve
+user: Ok, are there any other attractions you find as i need a Theme Park
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 attraction of your liking and you can check out Island Waterpark which is a theme park
+user: Can i know their contact number and is it entrance free?
+assistant: Their contact number is 559-277-6800 and it is entrance free
+user: Okay fine and i need to look for a house to stay there
+tool(SearchHouse): ok n_results=4
+assistant: I have found 4 houses and one among them is a house located at 1055 Van Ness Avenue with rating 3.8 is a nice one
+user: This is perfect
+assistant: You want house reservation?
+user: No, not now. Nothing more
+assistant: Bye and my pleasure helping you

@@ -1,0 +1,37 @@
+user: Tell me about my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms active right now. There is an alarm for 6 am with the title Get up.
+user: Alright, fine. I'd like to look for a diner here.
+assistant: What place ought I look in?
+user: Look for diners in San Jose.
+assistant: What type of cuisine are you searching for?
+user: Get diners inside Morgan Hill that offer pasta. I'ma searching for diners with an economical price tag.
+tool(FindRestaurants): ok n_results=3
+assistant: I discovered 3 diners you might enjoy. There's a lovely diner called Betto's Bistro situated in Morgan Hill.
+user: Could you offer alternative diners? I require vegetarian options.
+tool(FindRestaurants): ok n_results=3
+assistant: There's a lovely diner in Morgan Hill called Maurizio's.
+user: Alright, that's fine. I've like to book a vehicle here. I'd like a hatchback, and Phoenix Sky Harbor Airport is a convenient location for me to pick it up.
+assistant: Would you like to include insurance? When would you like to pick up the vehicle, and up to what day would you like the vehicle?
+user: I'd like to pick it up at 11 in the morning until 9th of March, and do not require insurance.
+assistant: What time would you like to begin the vehicle rental?
+user: I require it from 1st of March until March 6th.
+assistant: Please verify the following information: you are picking up a Hatchback vehicle from Sky Harbor International Airport on March 1st 11 am with a drop off date at March 6th. It does not include insurance.
+user: Nope; I'd like to pick up the vehicle on 11:30 in the morning.
+assistant: Please verify the following information: the Hatchback vehicle pickup is at 11:30 am.
+user: Yeah, that's fine with me.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: Ah, can you share the address?
+assistant: What location do you wish to share? 25 East 1st Street, Sky Harbor International Airport, or something else? What individual would you like to share it with?
+user: The location for sharing is 25 East 1st Street, and the person to share it with is Evelyn.
+assistant: Please verify the following information: you are sharing the address 25 East 1st Street with Evelyn.
+user: Nope; the location to share is Sky Harbor International Airport, and the person I'm sharing it is Elizabeth.
+assistant: Please verify the following information: you are sharing the address Sky Harbor International Airport with Elizabeth.
+user: That's fine with me.
+tool(ShareLocation): ok n_results=1
+assistant: You have been successful in sharing the address.
+user: Thank you for your help.
+assistant: Could I assist with something else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

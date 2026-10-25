@@ -1,0 +1,18 @@
+user: I want you to locate 2 rooms in a hotel in LAX please.
+tool(SearchHotel): ok n_results=10
+assistant: Here are 10 possibilities I'll start with a 3 star one called Ac Hotel By Marriott Beverly Hills.
+user: Sorry, I want hotels in London, England instead, same requirements.
+tool(SearchHotel): ok n_results=10
+assistant: Here are the first 10 starting with the 45 Park Lane rated 5 stars.
+user: What does that run a night?
+assistant: That would be $375.
+user: That would work, what kind of weather can I expect on the 10th?
+tool(GetWeather): ok n_results=1
+assistant: 6 percent chance of showers and an average daytime temperature of 92 Fahrenheit.
+user: Thanks, now about that hotel you found, make reservations for five days beginning on Thursday next week.
+assistant: You want me to reserve 2 rooms at the 45 Park Lane hotel in London for 5 days beginning March 7th is that correct?
+user: That is correct, I will need their phone number and do they allow smoking?
+tool(ReserveHotel): ok n_results=1
+assistant: Sorry, no smoking anywhere on the property, but your reservations are made and that number is +44 20 7493 4545.
+user: Thank you you can go now.
+assistant: Alright, enjoy your day!

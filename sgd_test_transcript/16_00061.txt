@@ -1,0 +1,29 @@
+user: I want to go for a short trip and I need a bus to go there. Can you help me to buy tickets to a suitable bus?
+assistant: Yes, Where do you want to book a bus from and at what time you want to book the same. Also tell me your required number of tickets.
+user: Book it from LAX at 14:00 for two persons to go to San Diego.
+assistant: That's all okay. What is your leaving date?.
+user: Book it on the 9th.
+assistant: Okay. Now, I want to confirm to book 2 tickets on a bus leaving from Los Angeles on march 9th sat 2 pm to San Diego without any extra luggage.
+user: Yes, confirmed, you can proceed with the booking.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have booked your tickets successfully.
+user: Thanks. And what is the cost for that booking?
+assistant: It is $30. Is that okay?
+user: Yes, let me also know about the bus whether it is a direct one or not?
+assistant: Yes, it is a direct bus.
+user: That's nice. Now, I want to find some nice hotels in that area.
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 hotel details. What do you think about the one named Bahia Resort Hotel which is a 3 star hotel? Do you like to stay there?
+user: That is great and thanks.
+assistant: Shall I book the tickets now?
+user: Yes, I want to do it now.
+assistant: What is your check in date and how many days you have planed to stay there?
+user: Book the rooms in that hotel from March 7th and I want to stay there for three days. Book it accordingly.
+assistant: Okay. Pleas confirm to book 1 room for 3 days from March 7th at Bahia Resort Hotel in San Diego.
+user: That is okay to proceed. And I want some more details, what about the cost per night in this hotel and let me know their phone number also.
+tool(ReserveHotel): ok n_results=1
+assistant: They are available at +1 858-488-0551. I have successfully booked the rooms and the cost for the same is $306.
+user: That's nice and thank you.
+assistant: How can I help you further?
+user: Nothing for today. Thank you so much.
+assistant: Have a great day.

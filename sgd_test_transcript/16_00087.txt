@@ -1,0 +1,29 @@
+user: I would like to purchase bus tickets.
+assistant: What time will you leave? How many tickets would you like? When will you leave?
+user: I would like to leave on March 13th at 8 o'clock in the morning for one.
+assistant: Where do you want to go?
+user: I'd like to go to Vancouver.
+assistant: Where will you leave from?
+user: I will leave from Portland.
+assistant: Could you confirm that you want to leave on the bus from Portland and go to Vancouver on March 13th at 8 am? You need 1 ticket and don't have extra luggage.
+user: No, I will leave from Seattle and there are four people.
+assistant: Coudl you confirm that you want to go on the bus from Seattle and that you need 4 ticketes?
+user: Yes, that's great. What station oes it go to? Is it a one-stop bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed. It arrives at Pacific Central Station and it's a direct bus.
+user: Would you find hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: There's a 3 star hotel called Atrium Inn Vancouver.
+user: What is the street address?
+assistant: The street address is 2889 East Hastings Street.
+user: That's good. Reserve that hotel.
+assistant: When will you check in and how long will you stay?
+user: I want to stay for three days and would like to check in on March 6th.
+assistant: Could you confirm that you want to stay at Atrium Inn Vancouver on March 6th for 3 days in Vancouver, and that you need 1 room?
+user: That's good.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully made the booking.
+user: Thanks, that was a good help.
+assistant: Is there something else I could help with?
+user: No, that has been a good help.
+assistant: Bye and have a fantastic day.

@@ -1,0 +1,20 @@
+user: I'd like to watch a movie directed by Riley Stearns, with C.J. Rush acting in it.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie: The Art of Self-Defense, with a rating of 83 out of 100
+user: What kind of movie is it?
+assistant: The Art of Self-Defense is a Thriller
+user: I like it! Now I want to listen a song
+tool(LookupMusic): ok n_results=10
+assistant: I suggest you Battle Symphony by Linkin Park, from the album One More Light
+user: What year is it? Is it a rock song?
+assistant: No, It's a Electropop song. It was released in 2017
+user: I prefer pop songs: I would like a song from four years ago
+tool(LookupMusic): ok n_results=10
+assistant: Do you like Back It Up by Prince Royce from the album Double Vision?
+user: Yes, It's fine for me! I want to play it on the speaker outside
+assistant: Playing Back It Up in Patio: do you confirm?
+user: Yes, I confirm! Thank you!
+tool(PlayMedia): ok n_results=1
+assistant: Good listening!
+user: Thanks, It's all for now!
+assistant: Have a great day!

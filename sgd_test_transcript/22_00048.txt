@@ -1,0 +1,35 @@
+user: I need your help to find some Music events.
+assistant: Are you looking for events in a specific city?
+user: Yeah, find me events around Los Angeles.
+tool(FindEvents): ok n_results=10
+assistant: Of the 10 events that you'll like Ain Gordon is very popular and it is scheduled to take place at Ralph Freud Playhouse at 7 pm on March 9th.
+user: That sounds like a great event! Can you find me a direct bus that goes there from San Diego on the 9th?
+tool(FindBus): ok n_results=10
+assistant: There is a bus departing at 9:10 am with tickets priced at $24.
+user: From which station does it depart and at which station does it arrive?
+assistant: It departs from El Cajon Bus Stop and arrives at North Hollywood Station.
+user: That should work for me. Thank you.
+assistant: Shall I get you tickets on this bus?
+user: Nope, not now.
+assistant: Is there anything else I can assist with?
+user: Can you find me three tickets on a round trip flight to go there, with the outbound flight on the 9th and the return flight on the 14th of March?
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 suitable flights. Does a direct flight with Alaska Airlines with the onward flight leaving at 1:05 pm and return flight leaving at 10:05 am work for you? The ticket costs $108.
+user: Yes, that works for me. Can you help me to find hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels based on your preferences. There is a 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: What are the other hotels matching my criteria?
+assistant: There is a 3 star hotel called Airtel Plaza Hotel.
+user: Can you give me more options based on my preferences please?
+assistant: There is a 1 star hotel called Banana Bungalow Hollywood.
+user: That one sounds good to me.
+assistant: Shall I book rooms for you at the hotel?
+user: No, hold on. Can you buy me tickets to the event that you found?
+assistant: Please confirm that you would like to book 3 tickets to the Ain Gordon event scheduled for March 9th in Los Angeles.
+user: Yes, that's right. Can you get me the cost of the tickets and the address of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked successfully. Have fun at the event! The ticket costs $60 and the venue is located at 245 Charles E Young Drive East.
+user: Thanks a bunch for your assistance!
+assistant: Is there anything else I can do for you today?
+user: No. Thank you for the help. That's all I need for now.
+assistant: Have a great day!

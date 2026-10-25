@@ -1,0 +1,14 @@
+user: I'm looking for a restaurant that serves Oriental food.
+assistant: What area do you want me to look in?
+user: Find a restaurant in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: How about 8 Immortals Restaurant in San Francisco?
+user: Yes, that sounds good. I'd like to make a reservation for 3 people today at 1 pm.
+assistant: Okay, I have a reservation for 3 people at 8 Immortals Restaurant in San Francisco on March 1st at 1 pm, correct?
+user: Yes, that is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully confirmed the reservation.
+user: Thank you!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

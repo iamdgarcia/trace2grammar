@@ -1,0 +1,21 @@
+user: Could you help me to search for a hotel?
+assistant: Which city i should search the hotel?
+user: Search hotels in NY with three -star rating.
+tool(SearchHotel): ok n_results=10
+assistant: I searched 10 hotel of your choice called 11 Howard with 3 star rating.
+user: Can you tell me the street address?
+assistant: The location of the hotel is 11 Howard Street.
+user: Can i know the contact number? Are they allowing to smoke?
+assistant: The contact number is +1 212-235-1111 and smoking is allowed.
+user: This is cool. what about the weather there?
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is 66 degrees Fahrenheit with 37 percent rain chance.
+user: This is fine..I like to book a hotel you searched and want to check on 1st of march for three days with 2 rooms.
+assistant: please give the confirmation details: You want to book hotel in 11 Howard Street for march 1st with 2 rooms for 3 days which is in New York.
+user: This is perfect.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel booking is over.
+user: Can i know the cost per night?
+assistant: $174 is the price per night.
+user: Thanks a lot for your great help.
+assistant: Have a great day..bye for now.

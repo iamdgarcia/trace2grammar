@@ -1,0 +1,21 @@
+user: Can you please find me a house to stay?
+assistant: Sure, in which city?
+user: London, England, please.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses which match your criteria, out of which I recommend a very nice house at 1 Addington Street, rated at 4.3.
+user: Sounds perfect for me.
+assistant: Do you want me to place a reservation for you?
+user: Yes, please do. I want a reservation for 3 persons from Wednesday next week to the 10th.
+assistant: Can you please confirm that you want a reservation for a house in London, for 3 persons from March 6th to March 10th?
+user: Yes, that's correct.
+tool(BookHouse): ok n_results=1
+assistant: I've successfully placed your reservation.
+user: Great. Can you please tell me the total cost for the booking?
+assistant: Yes, the total price of the booking is $828.
+user: Perfect. Thanks a lot. Now can you please tell me which attractions are worth seeing there - I'm particularly looking to see a good Museum.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions which I think you'd like, out of which I'd recommend seeing the Apsley House Museum.
+user: Perfect. Thanks.
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks a lot for everything!
+assistant: My pleasure. Have a nice day!

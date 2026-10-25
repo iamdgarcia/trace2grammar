@@ -1,0 +1,17 @@
+user: I need to talk to someone about how to deal with my boss at work. I would really appreciate your help locating a therapist. I'd like to find a therapist that works out of Sunnyvale.
+assistant: I'm happy to help you with that. Please tell me the kind of therapist you're looking for. Would you like to visit someone that's a Family Counselor or a Psychiatrist?
+user: I'd prefer to see a Psychologist, please.
+tool(FindProvider): ok n_results=1
+assistant: Okay. There is a Psychologist named Akins Faren R. whose office is located in Sunnyvale. Does that one interest you?
+user: Yes, it does.
+assistant: Do you need more information?
+user: Well, I'm considering making an appointment for March 4th. What's the weather going to be like on that day?
+tool(GetWeather): ok n_results=1
+assistant: I'm showing a forecast of 71 degrees Fahrenheit on average for that day with a 28 percent possibility of rain.
+user: I see. In that case, let's try making an appointment with the therapist you suggested for that day at 17:00, please.
+assistant: I'm on it. Would you like to confirm an appointment with Akins Faren R on March 4th at 5 pm?
+user: Sure, confirm it, please.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is now confirmed. You are to receive a confirmation email shortly.
+user: That's great. I'm so grateful for your help.
+assistant: I'm happy to be of assistance to you.

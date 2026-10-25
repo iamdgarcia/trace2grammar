@@ -1,0 +1,23 @@
+user: Can you tell me what the weather will be like in Santa Rosa on the 9th?
+tool(GetWeather): ok n_results=1
+assistant: Yes, the average temperature should be 92 degrees, there is a 26 percent chance of rain that day.
+user: What will the humidity level be?
+assistant: The humidity will be around 41 percent that day.
+user: Okay, sounds good, I would like to schedule a visit to see the property Park View Apartments that day.
+assistant: Please confirm that you are scheduling a visit to Park View Apartments on March 9th.
+user: Yes, that's right!
+tool(ScheduleVisit): ok n_results=1
+assistant: Ok, I have scheduled your visit to the property.
+user: Can you tell me the price?
+assistant: Yes, the price for the property is $2,050.
+user: Thank you, I would also like to reserve a Sedan at Santa Fe Depot and I would like to buy insurance.
+assistant: Would you be needing the car from March 9th then? I just need to know the time you would like to pick up the car and when you want to return it.
+user: I need it from March 8th until the 10th and I would like to pick it up at afternoon 2.
+assistant: Please confirm that you are picking up a Sedan from Santa Fe Depot on March 8th at 2 pm and dropping off on March 10th.
+user: That sounds perfect! What is the name of the car?
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved a SEAT Cordoba for you.
+user: Thank you so much for all of your help!
+assistant: Can I do anything else for you?
+user: No thank you, that will be all!
+assistant: Okay, have a great day!

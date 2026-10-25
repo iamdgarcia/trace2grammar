@@ -1,0 +1,19 @@
+user: Update me about the weather please, the day is wednesday next week
+assistant: Okay, just tell me which city you're interested in
+user: los angeles
+tool(GetWeather): ok n_results=1
+assistant: I checked and I have to inform you that the temperature should be around 78 degrees fahrenheit and the chance of rain is equal to 19 percent
+user: Got it. Now, go to see if there's an united airlines flight to fly there.
+assistant: Okay, where are you leaving from? Is the date of your departure March 6th?
+user: Yes, it is. I'm leaving from berlin
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 option suitable for you if United airlines it's fine with you. there's thise flight leaving at 4:05 am and it's direct. the price for the ticket is $263
+user: Perfect. I think I'll have to rent a Sedan car there, my idea is to pick it up at 4:45 pm on the 7th of this month
+assistant: tell me the last day you think you'll need the car
+user: it's march 10th
+tool(GetCarsAvailable): ok n_results=4
+assistant: I've found a sedan hyundai ioniq at lax international airport
+user: how much will I pay it for every single day?
+assistant: it's $32.00
+user: fine. bye
+assistant: bye sir

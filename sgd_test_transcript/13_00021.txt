@@ -1,0 +1,25 @@
+user: What interesting thing can I do?
+assistant: Is there a certain city you'd like me to search in?
+user: I'm trying to find something in Berlin.
+assistant: Do you have any preferences?
+user: I enjoy the Theater.
+tool(FindEvents): ok n_results=2
+assistant: There are 2 events on March 14th at 5 pm. The most popular event is the Intro To Musical Improv at Comedy Cafe Berlin.
+user: That works. Are there any hotels in that area? I need two rooms in a 4 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 4 star hotels that match in your area. A popular choice is Adina Apartment Hotel Berlin Mitte.
+user: Are there any others?
+assistant: Sure, there is Ameron Hotel Abion Spreebogen Waterside, another 4 star hotel.
+user: Is that it?
+assistant: There is another called Arcotel John f Berlin, also a 4 star.
+user: That would be perfect.
+assistant: Would you like to have the room reserved?
+user: Not right now.
+assistant: Is there anything else I can help you with?
+user: I would like to purchase two tickets to the event you found for me.
+assistant: Sure. Just to confirm, you will be reserving 2 tickets for the March 14th show Intro To Musical Improv in Berlin.
+user: Yes, that is it.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, have a wonderful time.
+user: Thank you, that's all I need.
+assistant: Have a nice day.

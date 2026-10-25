@@ -1,0 +1,34 @@
+user: Hi, could you make a payment to Jerry please?
+assistant: Sure, how much and from which account are you transferring from?
+user: I will be sending sixty four dollars from my balance please.
+assistant: Please confirm your transfer of $64 from your public app balance to Jerry.
+user: Sure thing, thanks!
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made and it should be reflected in your payee's balance soon.
+user: Thank you so much.
+assistant: How can I further assist you?
+user: Could you help me find economy class train tickets from Anaheim, CA too?
+assistant: Which city are you travelling to and when?
+user: I will be travelling to Sacramento on 14th of March.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains you might like, how about one departing at 6:50 am costing $120?
+user: That sounds great to me!
+assistant: Would you like me to book tickets for you?
+user: Perhaps at a later time. Thank you.
+assistant: Do you need any other assistance?
+user: May I know the weather there on the 14th of March?
+assistant: Are you referring to Sacramento?
+user: Yes, that is right.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature there should be 92 degrees Fahrenheit with a 16 percent chance of rain.
+user: I see, can you make the booking for the train tickets now?
+assistant: Would you like travel insurance, and how many tickets do you need?
+user: I just need one seat with travel insurance please.
+assistant: Please confirm your purchase of 1 Value train ticket from Anaheim to Sacramento on March 14th at 6:50 am.
+user: Yes, that is right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your booking has been made.
+user: Thank you so much for your help.
+assistant: How can I further assist you?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

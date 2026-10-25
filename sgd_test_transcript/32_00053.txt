@@ -1,0 +1,19 @@
+user: I want you to scan for songs that I can listen.
+tool(LookupMusic): ok n_results=10
+assistant: Would you like to listen to Love Me Like You by Little Mix picked from the album Get Weird?
+user: Sure. Can you get me good movies online? I want to see a Family movie with Julia Roberts.
+tool(FindMovies): ok n_results=1
+assistant: I can recommend you 1 movie called Steel Magnolias.
+user: I think Steel Magnolias would be fantastic. Could you start the song you told me about?
+assistant: So you confirm that you want to play the song Love Me Like You in the Living room?
+user: Sure. Was it released nine years ago?
+tool(PlayMedia): ok n_results=1
+assistant: It came out in 2015 and I hope you like the music.
+user: I want you to tell me about my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm to Pick up kids at 3 pm.
+user: Do I have any more alarms?
+tool(GetAlarms): ok n_results=0
+assistant: Unfortunately I have no alarms on your device. Shall I be of any other help?
+user: Nope, thanks for everything.
+assistant: Thanks very much.

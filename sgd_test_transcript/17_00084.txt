@@ -1,0 +1,17 @@
+user: I need to find a train.
+assistant: Which city will you be departing from and on which date?
+user: I need ticket from Anaheim, CA for the 14th.
+assistant: What is your destination?
+user: Headed to LAX.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6:30 am for a total of $32.
+user: Do you have any other conditionally refundable options for one passenger.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6:40 am for a total of $36.
+user: Okay, sounds good. I also need a home to stay at.
+tool(SearchHouse): ok n_results=10
+assistant: There is a home located at 1020 South Figueroa Street with a rating of 4.1.
+user: That one sounds good.
+assistant: Would you like me to reserve it?
+user: Not at this moment. That will be all.
+assistant: Okay, Have a great day! Goodbye.

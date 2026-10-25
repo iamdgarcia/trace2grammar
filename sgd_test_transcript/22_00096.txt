@@ -1,0 +1,57 @@
+user: Can you help me in finding a therapist?
+assistant: What type of therapist are you interested in? What city do you want to me to look in?
+user: Find a psychiatrist for me in Redwood City.
+tool(FindProvider): ok n_results=1
+assistant: There is a psychiatrist in Redwood City you might want to try named Paul Wilson.
+user: What are his address and phone number?
+assistant: His phone number is 650-299-2015 and his address is 4 Tower Support Bldg, 1150 Veterans Boulevard.
+user: Are there any other therapists you can locate for me?
+tool(FindProvider): ok n_results=0
+assistant: Sorry, I was unable to locate any therapists that match what you are looking for. Is there anything else I can do for you?
+user: Please try again to find a therapist. I would a family therapist in Mountain View.
+tool(FindProvider): ok n_results=2
+assistant: I have found 2 therapists that may work for you. One of these is a family counselor located in Mountain View named Kane Monique.
+user: That sounds fine. Would you be able to book an appointment for me?
+assistant: What date would you like the appointment to be?
+user: I would like to make the appointment for Saturday this week?
+assistant: What time would you prefer to have this appointment?
+user: I would like the appointment to be at 10:30.
+assistant: Confirm these details for me: You would like to book an appointment with Kane Monique at 10:30 am on March 2nd.
+user: Yes, that is good.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, I was unable to book the appointment. Something went wrong. Is there anything else you would like help with?
+user: Would you try to book the appointment for me again? I would like it to be made for the 8th of this month.
+assistant: Okay, confirm these details for me: You would like an appointment on March 8th at 10:30 am with Kane Monique.
+user: Yes, that is good for me. What is the phone number there?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been successfully made for you. You should get an email confirmation shortly. The phone number of the therapist is 650-964-6993.
+user: Thanks very much! I really appreciate your help. I also need to make a payment request.
+assistant: What is the amount you want to pay and who is the contact?
+user: The person's name for the payment is Svetlana and it will be for 68 bucks.
+assistant: Please confirm these details for me: You would like to make a $68 payment to Svetlana.
+user: Yes, that sounds good.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been successfully made.
+user: I would like to find a restaurant to eat at on that day. Please find one that serves Latin American that has a price tagged as intermediate priced.
+tool(FindRestaurants): ok n_results=7
+assistant: A good restaurant in Mountain View I found is called Agave Mexican Bistro.
+user: Would you be able to recommend other restaurants? I need something that serves Persian.
+tool(FindRestaurants): ok n_results=1
+assistant: A good one I was able to locate in Mountain View is called Ephesus.
+user: Are there vegetarian options at this restaurant?
+assistant: There are good vegetarian options at this restaurant.
+user: What is the phone number there and do they have outdoor seating?
+assistant: They have outdoor seating available and the phone number there is 650-625-8155.
+user: Yes, that would be very good.
+assistant: Do you want to make a reservation for a table at this restaurant?
+user: Yes, I would like to reserve a table there. Please reserve a table for me at 12 pm for 2 people.
+assistant: Okay, confirm these details for me: You would like to book a table at Ephesus in Mountain View. You want the reservation to be for 2 people at 12 pm on March 8th.
+user: Yes that is fine. Can you tell me the user rating of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation has been successfully made for you. The user rating of this restaurant is 4.2.
+user: What is the address there?
+assistant: The address of this place is 185 Castro Street.
+user: Thank you very much.
+assistant: Is there anything else I can do for you?
+user: No, that is all. Thanks very much.
+assistant: Have a wonderful day.

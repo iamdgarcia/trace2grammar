@@ -1,0 +1,35 @@
+user: I am bored I want to do something Tuesday next week in NY and I love Broadway what can you find for me?
+tool(FindEvents): ok n_results=10
+assistant: March 5th at 6:30 pm Advanced Acting Scene Study will be at TGW Acting Studio.
+user: That might be interesting.
+assistant: Would you like tickets for that now?
+user: Not right now.
+assistant: What else do you need?
+user: Are there any buses from Washington to there? I would be going Tuesday next week and just need 1 seat.
+tool(FindBus): ok n_results=7
+assistant: I came up with 7 buses there's one that leaves at 6:20 am and it is $38 for a seat.
+user: Tell me some more options.
+assistant: There is another one for $33 that leaves at 12:10 pm.
+user: No, what else do you have.
+assistant: Okay how about the one that leaves at 1:30 pm it is $37.
+user: Does it make many stops?
+assistant: No it is a direct bus.
+user: Alright,what about a round trip flight there I would be coming back on the 11th of March and I want Economy class please.
+assistant: You would be leaving March 5th?
+user: If I fly I would want to leave on the 4th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: You could book a flight with American Airlines, it leaves at 9:25 pm and the return flight leaves at 5 pm it would cost you $135.
+user: When would I get home?
+assistant: You would be landing from the return flight at about 6:10 pm.
+user: What time would I reach where I am traveling to?
+assistant: It is scheduled to land at 10:35 pm.
+user: That would work for me. Now I need a hotel.
+tool(SearchHotel): ok n_results=10
+assistant: Here are the first 10 that came up, one has 5 stars and it is the 1 Hotel Brooklyn Bridge.
+user: Okay now you can purchase my ticket for the show please.
+assistant: You want 1 seat for Advanced Acting Scene Study in New York on March 5th right?
+user: Correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your seat is reserved have fun!
+user: Thank you I won't be needing you for a while.
+assistant: Have a happy day.

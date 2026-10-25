@@ -1,0 +1,21 @@
+user: Hello, I'm hoping to find an interesting event to attend.
+assistant: What city were you interested in?
+user: I am going to be in London, England.
+assistant: And is there a particular type of event you are looking for?
+user: Some kind of theater, and the date would be the 10th of March. Let's try and find something in the Chicago area.
+tool(FindEvents): ok n_results=10
+assistant: The Artistic Home will be presenting Ada And The Engine on March 10th at 5:30 PM.
+user: OK, sounds like fun. Oh, I just remembered, I also need to request a payment in the amount of $51.
+assistant: And the name of the other party?
+user: Her name is Mary.
+assistant: Confirming Hey $51 transaction with Mary. Please be aware of this is a public transaction.
+user: OK, that's perfectly fine.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request has processed successfully.
+user: Thank you very much. I think we should go ahead and purchase tickets now for that event, just one please.
+assistant: Confirming admission for 1 to Ada And The Engine on March 10th in Chicago.
+user: That's good, thanks. What is the address of that show and how much is the ticket price?
+tool(BuyEventTickets): ok n_results=1
+assistant: The event takes place at 1376 West Grand Avenue #7761 and the admission price is $25. Your ticket has been purchased successfully.
+user: Terrific, thank you. I'm all set.
+assistant: Thank you very much.

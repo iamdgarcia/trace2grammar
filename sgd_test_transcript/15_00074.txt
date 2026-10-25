@@ -1,0 +1,26 @@
+user: I'm looking for a family therapist in Gilroy.
+tool(FindProvider): ok n_results=5
+assistant: I found 5 therapists that might work. What about the family counselor Leininger Anne in Gilroy?
+user: What is their phone number and address?
+assistant: Their phone number is 408-847-2100 and the address is 8339 Church Street # 212.
+user: Okay, thanks. What is the weather like there?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature in Gilroy should be 91 degrees fahrenheit with a 29 percent chance of rain.
+user: What date is that fore?
+assistant: That forecast is for March 1st.
+user: What is the humidity expected to be?
+assistant: The humidity should be around 35 percent.
+user: Okay, thanks. I'd like to book an appointment with that therapist on March 1st.
+assistant: What time do you want the appointment for?
+user: I want it at five pm.
+assistant: Okay, you want an appointment at Leininger Anne on March 1st at 5 pm, right?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, I couldn't book an appointment at that time. Does 5:30 pm on March 1st with Leininger Anne work?
+user: Yes, that is fine.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment.
+user: Thank you!
+assistant: Is there anything else I can help with?
+user: No, thank you.
+assistant: Have a great day/

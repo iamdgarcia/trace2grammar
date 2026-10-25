@@ -1,0 +1,13 @@
+user: I have a plan for a short trip for which I need to find for a Train to travel. Can you find me the one in Portland, OR.
+assistant: Yes, for which date you want to me to book the train.
+user: I need it on March 9th.
+assistant: From where you want to start your travel?
+user: I think you can search for the train from Vancouver, BC.
+tool(FindTrains): ok n_results=8
+assistant: What about a Train departing at 6:50 am with total cost $80 which is the suitable one for you I think from the 8 results I got.
+user: What is the final Station to which the Train will arrive?
+assistant: The destination is Union Station.
+user: What is the origin station?
+assistant: This train will leave from Pacific Central Station.
+user: That is okay for me and thanks a lot.
+assistant: Have a nice trip.

@@ -1,0 +1,21 @@
+user: I want to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: I recommend Brittany Runs a Marathon. Its average rating is 90 out of 100.
+user: Who wast the actor of this movie and what is the genre ?
+assistant: Jillian Bell acted in the movie and the genre is Drama.
+user: Interesting. Can you find me a restaurant nearby there.
+assistant: In what location ? What kind of food do you prefer ?
+user: I want a Diner located in in San Francisco.
+tool(FindRestaurants): ok n_results=10
+assistant: I recommend 1760 its a good restaurant and is located in San Francisco.
+user: What is their contact number ? Is the food pricey?
+assistant: Their number is 415-359-1212. And yes they are a pricey restaurant.
+user: Okay that's good. Please book me a table for 2 people on the 10th of this month at exactly seven pm.
+assistant: Please do confirm your reservations. A table for 2 people at 1760 located in San Francisco at exactly 7 pm on the March 10th.
+user: Okay that's all.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thanks a lot.
+assistant: Is there anything else ?
+user: No that's all
+assistant: Have a nice day.

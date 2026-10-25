@@ -1,0 +1,12 @@
+user: I would like to find a direct bus for 1 person and I'm leaving from Vancouver.
+assistant: When are you departing and arriving?
+user: I would like to leave on next Monday and go to Portland.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses. There is one leaving at 7:10 am and the cost is $39.
+user: I would like to purchase tickets.
+assistant: Booking ticket for 1 person leaving at 7:10 am from Vancouver to Portland on March 4th.
+user: Yes, which station does it reach?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is booked and the station is SW Arthur & 1st.
+user: That is all I needed.
+assistant: Have a good day.

@@ -1,0 +1,21 @@
+user: I need some bus tickets from Anaheim, CA and to SD. I need to leave on the 9th of this month.
+assistant: At what time would you like to depart?
+user: This is for three people and at 10:30.
+assistant: Please confirm the following: You would like a bus ticket from Anaheim and to San Diego. The bus will depart on March 9th at 10:30 AM and is for 3 people, with no extra luggage.
+user: Yes, indeed correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is successful.
+user: Okay, i also need a rental until March 11th. I'm fine with a Sedan.
+assistant: Would you like it for pick-up from San Diego? At what time and which date, March 9th?
+user: Yeah, sounds good. i need it from the 10th at 1:30 PM.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a nice car available from Santa Fe Depot and it is a Sedan Hyundai Ioniq.
+user: Sounds good. I need to reserve a rental car.
+assistant: Would you like to add insurance?
+user: Yes, I would like to buy some.
+assistant: Please confirm: You would like a car from Santa Fe Depot, on March 10th at 1:30 PM. The drop-off date is March 11th, correct? You would like a Sedan with insurance.
+user: Yes, that is perfect.
+tool(ReserveCar): ok n_results=1
+assistant: Reservation booked successfully. The price is $38.00 per dau.
+user: Thanks for that.
+assistant: Of course; Take care.

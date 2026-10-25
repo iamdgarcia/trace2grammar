@@ -1,0 +1,30 @@
+user: I am planning on visiting friends and will need a flight. Will you find me a round trip flight?
+assistant: What date do you plan on leaving?
+user: I plan to leave on the 6th of this month.
+assistant: When do you plan on returning?
+user: I am coming back on the 8th of this month.
+assistant: Where will you be departing from and are you going?
+user: I will be traveling from SF to Sydney.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have found 1 Delta airlines flight that is direct and leaves at 9:35 am. The return flight departs at 2:30 am and the cost of the ticket is $347.
+user: Is this ticket economy or business?
+assistant: This is an economy ticket.
+user: That one sounds fine. I would like to to stay at a house while I am visiting. It will be for 1 person and I would like it to have at least a 4.2 rating.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 houses that meet your criteria. There is one with a 4.2 rating and its address is 1 Kensington Street, Chippendale New South Wales 2008, Australia.
+user: Can you tell if there is laundry service available?
+assistant: Yes, there is laundry service available.
+user: Perfect. This house should work for me.
+assistant: Are you interested in reserving this house?
+user: Yes, please reserve the house from the 6th of this month to the 7th of March.
+assistant: Please confirm you will be reserving a house for 1 person in Sydney from March 6th to March 7th.
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: You reservation is confirmed.
+user: What are some attractions there I may enjoy?
+tool(FindAttractions): ok n_results=10
+assistant: There is a sports venue that is interesting called ANZ Stadium.
+user: Thank you. That sounds interesting.
+assistant: Do you need any further assistance?
+user: No, thank you. I appreciate your help!
+assistant: Enjoy your trip!

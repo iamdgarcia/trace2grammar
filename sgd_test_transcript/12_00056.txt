@@ -1,0 +1,23 @@
+user: Would you help me look for a bus?
+assistant: When are you leaving
+user: I will be leaving the 11th of March going to LA.
+assistant: Where will you be leaving from?
+user: I will be leaving from SFO.
+tool(FindBus): ok n_results=9
+assistant: I have 9 buses for you. What about the one leaving at 7:30 am? That costs $54.
+user: What station does it leave from?
+assistant: It leaves from Transbay Terminal.
+user: That sounds great. I'd like to buy bus tickets.
+assistant: What number of tickets do you want?
+user: I would like for four people.
+assistant: Please confirm details that you want a ticket on the bus leaving from San Francisco to Los Angeles March 11th at 7:30 am for 4 people with no extra luggage.
+user: Yes, that will work for me. At which station will it arrive and how many stops are there?
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed as a direct bus arriving at North Hollywood Station.
+user: Thanks for the help. Can you look for hotels that are for smokers in that area too?
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that are matching including 1 hotel called Banana Bungalow Hollywood that is 1 star.
+user: That sounds good to me.
+assistant: Do you wish to reserve the hotel?
+user: I don't want to make a reservation now and that is all.
+assistant: Bye and have a nice day.

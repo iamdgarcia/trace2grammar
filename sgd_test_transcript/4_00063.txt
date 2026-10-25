@@ -1,0 +1,9 @@
+user: I am taking a trip on March 7th and I would like to find a bus that I can take. Can you look this up for me?
+assistant: What is your departure city for this trip? And what is your destination city?
+user: I am going to San Fran and I would like to depart from Fresno, CA.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses that may work for you. What about the bus that leaves at 10:50 am with a fare of $35?
+user: Can you tell me the number of stops for this bus?
+assistant: There are no stops. This bus is a direct one.
+user: Great! That's everything for me!
+assistant: Enjoy your day!

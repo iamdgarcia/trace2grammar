@@ -1,0 +1,25 @@
+user: Can you help me to find a cab?
+assistant: How many people are travelling?
+user: I want to go to 4067 Transport Street b and it is just for 1 person.
+assistant: What type of cab would you prefer? Regular or Luxury?
+user: Get me the Cheapest ride.
+assistant: Please confirm that you need a pool ride for 1 person to 4067 Transport Street b.
+user: That works for me. How much does it cost and when will the cab reach here?
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked, is on its way and is expected to be here in 9 minutes. The ride will cost $16.86.
+user: Thank you for the assistance. Can you find me some House songs from the album The Martin Garrix Experience that were released one years ago?
+tool(LookupMusic): ok n_results=1
+assistant: There is only 1 song based on your preferences and it is the Ocean by Martin Garrix from the Martin Garrix Experience.
+user: Yes, that's the one I was looking for.
+assistant: Shall I play the song for you?
+user: Sure, please go ahead.
+assistant: Please confirm that you would like to play the song Ocean in the Living room.
+user: No, please cast it on the patio speaker.
+assistant: Sure. So, you want to listen to the song Ocean in the Patio. Is that correct?
+user: Hold on. Can you play it on the kitchen speaker?
+assistant: Okay, shall I proceed to play Ocean in the Kitchen?
+user: Yes, please do.
+tool(PlayMedia): ok n_results=1
+assistant: The song is playing. Enjoy your music!
+user: Thank you. That'll be all.
+assistant: Have a great day!

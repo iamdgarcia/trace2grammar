@@ -1,0 +1,19 @@
+user: Will you find child-friendly attractions to visit in Paris, France?
+tool(FindAttractions): ok n_results=10
+assistant: Found American Church in Paris, a Place of Worship.
+user: Nice. Will you find a house to stay that offers laundry service with a rating of 4.4 or higher for 2 people?
+tool(SearchHouse): ok n_results=10
+assistant: Found 10 houses. One of them is 1 Rue Bayard, 75008 with a 4.4 rating.
+user: Their contact number?
+assistant: You may reach them at +33 1 53 75 62 62.
+user: Fantastic.
+assistant: Reserve this house?
+user: Not now. Will you find 2 round-trip flight tickets with United Airlines with return date of 12th of this month?
+assistant: Departing city? Date of travel?
+user: I want to fly out of ATL on the 2nd.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Found 1 flight with United Airlines with departure at 7:25 am and returning flight takes off at 3 pm for $561.
+user: Great.
+assistant: Anything else?
+user: That's all.
+assistant: Have a nice day.

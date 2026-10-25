@@ -1,0 +1,17 @@
+user: I'm looking for a salon.
+assistant: What city do you want to search in?
+user: I'm looking for a unisex salon in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons you may like. How about 17 Jewels Salon in Oakland?
+user: Yes, that sounds good. What is the weather like on the 5th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the 5th should be around 92 degrees Fahrenheit with a 15 percent chance of rain.
+user: Okay, thanks. I'd like to book an appointment at half past 12 in the afternoon at the salon.
+assistant: Okay, I have an appointment at 17 Jewels Salon at 12:30 pm on March 5th, correct?
+user: Yes, that is right.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed the appointment.
+user: Thank you!
+assistant: Is there anything else I can help with?
+user: No, thank you.
+assistant: Have a great day.

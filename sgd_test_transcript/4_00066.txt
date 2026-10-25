@@ -1,0 +1,11 @@
+user: I'm looking for what bus to take from San Diego.
+assistant: Where are you headed?
+user: I need to get to LAX.
+assistant: When will you go?
+user: I am leaving on the 3rd of March.
+tool(FindBus): ok n_results=10
+assistant: What about the 9:10 am bus? It sells tickets for $25.
+user: What stations originate and end this trip?
+assistant: It departs from El Cajon Bus Stop and goes to North Hollywood Station.
+user: Fine, you're a great help.
+assistant: Have a safe trip.

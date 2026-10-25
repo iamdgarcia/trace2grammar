@@ -1,0 +1,29 @@
+user: Hi, could you show me some nice attractions to visit?
+assistant: Any specific place of interest?
+user: Something in SF will be great.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like, how about a Historical Landmark called Alcatraz?
+user: I see, could you search for movies shown around that area?
+tool(FindMovies): ok n_results=10
+assistant: How about Ad Astra, Brittany Runs a Marathon or Fiddler: A MIracle of Miracles?
+user: Are there any alternative movies? I would prefer a regular Scary movie please.
+tool(FindMovies): ok n_results=3
+assistant: Would you like to watch In Fabric, One Cut of the Dead or Theatre of Blood?
+user: One Cut of the Dead sounds great to me!
+assistant: Would you like me to purchase tickets for you?
+user: No, that is not necessary. Thanks anyway.
+assistant: Could I further assist you then?
+user: Could you help me find a nice online movie featuring Ian Holm?
+assistant: Any genre preference in particular?
+user: Some Fantasy movie would be great.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you might like, how about The Lord of the Rings: The Return of the King?
+user: The Lord of the Rings three sounds perfect, could you play it with English subtitles now?
+assistant: Please confirm your request to play The Lord of the Rings: The Return of the King with English subtitles.
+user: Yes, that sounds great to me!
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has started playing, enjoyed!
+user: Thank you so much.
+assistant: How can I further assist you?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead then!

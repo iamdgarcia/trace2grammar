@@ -1,0 +1,32 @@
+user: Assistant. I need a rental car for a trip.
+assistant: I'm happy to help you with that. What is the day you wish to start the rental? Also provide the pick up time and return date of the vehicle.
+user: I'll need it starting March 4th at afternoon 1:30. I'll keep it until the 11th of March.
+assistant: What city are you looking to rent a car in?
+user: I want a rental car in New York please.
+tool(GetCarsAvailable): ok n_results=6
+assistant: Could I interest you in a Dodge Charger? It is a Sedan that is one of 6 cars I have found for you. You can pick it up at Grand Central Station.
+user: I don't want a Dodge charger. Find me something else I can drive until Tuesday next week.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about an SUV? There is an Alfa Romeo Stelvio for rent at Port Authority Station.
+user: How much is that per day? I need to know.
+assistant: The cost will be $36.00 a day.
+user: That sounds good to me.
+assistant: Shall I book the car for you?
+user: No thank you. I'll focus on that later on.
+assistant: When do you plan to leave and where are you departing from?
+user: I'm leaving Washington on the 1st of this month.
+tool(FindBus): ok n_results=7
+assistant: There is a bus departing from Washington at 6:20 am on that day. It will cost $40.
+user: I want another option please.
+assistant: There is another bus leaving Washington at 12:10 pm. The cost of this ticket is $1 less at $39.
+user: That sounds more like what I'm looking for.
+assistant: Do you want me to buy these tickets now?
+user: No. Don't buy them for me yet. I just wanted information int it.
+assistant: If you need anything else, please let me know.
+user: I want a one way flight to that location please.
+assistant: Will you want to leave on March 1st, March 4th, or another day?
+user: I'll be traveling starting on the 1st of this month. Find a flight for that date.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Would you be okay with flying with American Airlines? The departing flight takes off at 9:25 pm. The cost of the the ticket is $85. Is this an acceptable option?
+user: That flight should do just fine. Thanks for the assistance. That's all for now.
+assistant: That's what I'm here for. Have a good day.

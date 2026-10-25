@@ -1,0 +1,29 @@
+user: I'm going to be moving for my new job and I need to find a new place.
+assistant: What area will you be moving to?
+user: I'm looking for something in San Rafael.
+assistant: Are you interested in renting or buying? How many bedrooms and bathrooms are you looking for?
+user: I'd like to buy and I need a 1 bedroom, 1 bathroom.
+tool(FindHomeByArea): ok n_results=6
+assistant: I found a property you might like at Casa Vista Apartments which is located at 55 Fairfax Street #27, which costs $1,900,000.
+user: Okay, what else is available?
+assistant: There is a nice property called Deer Valley located at 2500 Deer Valley Road which costs $1,700,000.
+user: Anything else available?
+assistant: I found another property called Franciscan Manor located at 201 D Street which costs $1,850,000.
+user: Can you give me their phone number and tell me if it has a garage?
+assistant: It does have a garage and the phone number is 415-720-6977.
+user: That sounds good.
+assistant: Would you like to schedule a visit to this property?
+user: Yes, let's schedule a visit.
+assistant: When would you like to schedule the visit?
+user: I want to schedule it for March 1st.
+assistant: Okay, let's confirm the details: We are scheduling a visit to Franciscan Manor on March 1st.
+user: Yes, that's it. Does this property have a washer and dryer?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit and the property does have a washer and dryer.
+user: Thank you. Can you tell me what alarms I have set?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set. You have an alarm named wake up set for 9 am.
+user: Do I have any other alarms set?
+assistant: There is another alarm set for 10 am named coffee.
+user: Okay, great thanks, that's all.
+assistant: No problem.

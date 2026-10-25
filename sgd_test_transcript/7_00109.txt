@@ -1,0 +1,17 @@
+user: Can you buy me movie tickets for movie shown in Rohnert Park?
+assistant: What is your preferred date and the number of tickets for the movie?
+user: I want 2 tickets for the show on March 1st.
+assistant: What movie would you like me to buy the tickets for?
+user: I would like to watch Good Boys.
+assistant: What is preferred timning for the show?
+user: I would like to watch it at night 9:45.
+assistant: What is your preferred type of show?
+user: I prefer imax show.
+assistant: Please confirm: You want me to buy 2 tickets for imax show of Good Boys for March 1st in Rohnert Park starting at 9:45 pm.
+user: Yes, That is correct. Can you find me the address of the theater and the cost of the ticket?
+tool(BuyMovieTickets): ok n_results=1
+assistant: I have successfully bought your tickets and the address of the theater is 555 Rohnert Park Expressway West. The cost per ticket is $9.
+user: Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

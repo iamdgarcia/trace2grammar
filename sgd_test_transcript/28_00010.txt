@@ -1,0 +1,23 @@
+user: Search for a movie to see.
+tool(FindMovies): ok n_results=10
+assistant: Tel Aviv on Fire has a high 92 out of 100 rating.
+user: Who directed it?
+assistant: Sameh Zoabi was the director.
+user: That works. I need you fo find me a place to eat.
+assistant: What type of food do you like and in what city do you wish to eat?
+user: Search for Barbecue restaurants in San Jose.
+tool(FindRestaurants): ok n_results=2
+assistant: dickey's Barbecue Pit is in San Jose and is 1 of 2 restaurants that I found.
+user: That works for me.
+assistant: Do you want to make a reservation now?
+user: Yes, book me a table for 3 people.
+assistant: What time do you want to eat?
+user: I wish to eat at afternoon 1:15.
+assistant: You want a table for 3 at Dickey's Barbecue Pit in San Jose at 1:15 pm on March 1st, correct?
+user: That is right. What is the restaurant's address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table at 5391 Prospect Road is confirmed.
+user: Thanks a lot.
+assistant: Do you need more help?
+user: No, not right now. Thanks again.
+assistant: Have a pleasant day.

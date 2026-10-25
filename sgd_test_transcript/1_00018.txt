@@ -1,0 +1,9 @@
+user: I need to reserve a table at a restaurant in SF for 7 pm.
+assistant: What restaurant do you want to reserve a table at?
+user: Can you reserve a table at Regent?
+assistant: Please confirm: Reserve a table at Regent Thai in San Francisco for 2 people on March 1st at 7 pm.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thanks, that is all.
+assistant: Enjoy your day.

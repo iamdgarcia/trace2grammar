@@ -1,0 +1,13 @@
+user: I'd like to schedule a property visit.
+assistant: For which property?
+user: For the Sonoma Village Apartments.
+assistant: When would you like to schedule the visit?
+user: I want to visit the Villa Monterey on the 13th.
+assistant: Confirming that you want to schedule a visit to the Villa Monterey on March 13th?
+user: No, make it for the 1st.
+assistant: Confirming that you want to schedule a visit to the Villa Monterey on March 1st?
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thanks a lot. That's all I need.
+assistant: My pleasure. Have a great day.

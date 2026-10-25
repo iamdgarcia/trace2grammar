@@ -1,0 +1,19 @@
+user: I would like to buy a train ticket.
+assistant: Which date would you like to travel and where are you traveling?
+user: I'm going to San Diego on the 14th of this month.
+assistant: Which city are you departing from?
+user: I'm departing from Sacramento.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6:30 am for $155.
+user: Which station does it leave from and arrive at?
+assistant: It leaves from Sacramento Valley Station and the destination is Santa Fe Depot.
+user: Is there another train available?
+assistant: There is one departing at 7:20 am for $157.
+user: Is there another train leaving from SF?
+tool(FindTrains): ok n_results=6
+assistant: There is a train leaving at 6 am and the cost is $104.
+user: Yes, I would like to find a house for two people and the rating needs to be 4.3 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house located at 1003 Coast Boulevard, La Jolla, California 92037, United States and the rating is 4.3.
+user: Yes, that is all I needed.
+assistant: Have a good day.

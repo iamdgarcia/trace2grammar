@@ -1,0 +1,23 @@
+user: I am interested to find a one way flight which goes to NY.
+assistant: Can you tell me the date when you will be having the travel, and the city from where you will be leaving?
+user: I am planning to fly from Washington on the 10th.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: How would you like to have a direct flight with American Airlines, which leaves at 9:25 pm, and the ticket of which costs $84.
+user: Can you give me some other alternative?
+assistant: You might also consider the Delta Airlines direct flight which leaves at 12:55 pm, and with a ticket that costs $85
+user: This one seems nice, though I want to know also about trains that go there.
+assistant: Will you be having the travel on March 10th?
+user: I will be leaving for my trip on March 12th.
+tool(FindTrains): ok n_results=9
+assistant: You can have the train which leaves at 6:20 am, and the ticket of which has a price of $66.
+user: This is nice. I would like to make a reservation for 1 seat in this train.
+assistant: Are you interested in having travel insurance?
+user: Indeed I want to have insurance for the trip?
+assistant: Can you please confirm that you want to have a Value ticket for 1 person for the train which leaves from Washington on March 12th at 6:20 am to go to New York?
+user: This one suits me well. Can you tell me the station from where the train leaves, and the station where the train arrives at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your requested tickets have been reserved for you. The train will be departing from Union Station to go at Grand Central Station.
+user: You have helped me very much, thank you.
+assistant: Is there something else I can help you with?
+user: Nothing. You did really help me, and I appreciate it.
+assistant: We'll be in touch again!

@@ -1,0 +1,18 @@
+user: I want you to find me a one-stop bus, and I need it for three people.
+assistant: Can you tell me from where will you depart, and the destination you are going to go? Could you also let me know when are you planning to leave?
+user: I plan to leave on Sunday this week, and I will depart from Sacramento, CA to go to Las Vegas.
+tool(FindBus): ok n_results=10
+assistant: How would you consider having a $57 ticket for the bus which departs at 7:10 am?
+user: That seems as a nice option.
+assistant: Are you willing to have tickets booked for this bus?
+user: Yes I want to have seats reserved for me.
+assistant: Can you please confirm that you do not have extra luggage, and that you will need tickets for 3 people for the bus which leaves on March 3rd at 7:10 am from Sacramento to go to Las Vegas?
+user: That is not right, because I actually have excess luggage which I will take with me.
+assistant: Can you please then confirm again that you want the tickets for 3 people, and that you also have extra luggage which you will take on the bus?
+user: Yes that is right. Can you tell me the station of my destination?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked, and your bus will arrive at Union Plaza station.
+user: I appreciate your help very much.
+assistant: Is there something else I can do to help you?
+user: Nothing. I am thankful for the help you have provided to me.
+assistant: Have a wonderful time!

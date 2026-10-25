@@ -1,0 +1,21 @@
+user: I want to search for me songs.I would like something from one years back by Insideeus.
+tool(LookupMusic): ok n_results=1
+assistant: How about album Ecstacy by Insideeus with song called Ecstasy?
+user: What kind of music is that?
+assistant: It is part of Reggae category.
+user: Yes,I like this one.
+assistant: You want to to listen to the song?
+user: No.Not now.
+assistant: Something else I can do for you?
+user: You can find me some good movies online.I really enjoy Funny movies.
+tool(FindMovies): ok n_results=5
+assistant: What you you think about Chhichhore, Good Boys or My Big Fat Greek Wedding?
+user: Good Boys sounds great.Play for me the song that you just found on kitchen device.
+assistant: Play the song Ecstasy in Kitchen.Is that correct?
+user: No.I changed my mind cast it on speaker in patio.
+assistant: Play the song Ecstasy in Patio.Is okay?
+user: Yes is very good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: Thank you very much.That's all that I wanted.
+assistant: Have a great day!

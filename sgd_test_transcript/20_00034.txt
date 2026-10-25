@@ -1,0 +1,32 @@
+user: I'm looking for a vehicle to rent until the 3rd of this month. I'd like a sedan please and I'd like to pick it up at 6 in the evening.
+assistant: When would you like to get the car and where would you like to obtain it from?
+user: I need the car on March 2nd and I'd like it in Berlin.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I have 6 options to tell you about. I have a Buick Regal Sportback, which is a sedan, available at Schoenefeld Airport.
+user: What else is there?
+assistant: I also have a Dodge Charger, which is a sedan, and is available at Schoenefeld Airport.
+user: Is there anything else? I'll need it starting on the 1st until March 2nd.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I have 4 options for you. There is a Lexus GS sedan at Schoenefeld Airport.
+user: That sounds fine.
+assistant: Would you like to reserve that car?
+user: Not right now. I also would like to find a house where I could stay.
+tool(SearchHouse): ok n_results=10
+assistant: Of course. There is a house available at Alt-Moabit 99, 10559. That house is rated 4.4.
+user: Do they have laundry service there?
+assistant: Yes, they do.
+user: That will work, thank you.
+assistant: Would you like to reserve that house?
+user: Not at the moment.
+assistant: How else may I help you today?
+user: I'd like to reserve that rental vehicle please.
+assistant: Shall I add insurance for you?
+user: No, don't worry about it.
+assistant: Confirming pick up of a rental vehicle on March 1st at 6 PM from Schoenefeld Airport and returning March 2nd. The vehicle is a sedan and will not include insurance.
+user: That's great, thank you.
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has been reserved.
+user: Can you tell me the price?
+assistant: Yes, it's $34.00 for each day of the rental.
+user: Thank you very much, I'm all set.
+assistant: Thank you, have a great day.

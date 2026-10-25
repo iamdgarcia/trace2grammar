@@ -1,0 +1,16 @@
+user: Can you find me a nice salon in the Sonoma area please
+tool(FindProvider): ok n_results=3
+assistant: There's a salon called C C Beauty Salon in Sonoma that might work?
+user: Yeah that will do
+assistant: Should I book you an appointment then?
+user: Yes please, I'm free at 17:30 on Monday next week
+assistant: Confirming you want a 5:30 pm appointent on March 4th at C C Beauty Salon?
+user: Yes that's confirmed
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation is made!
+user: What is C C Beauty Salon's rating?
+assistant: They currently hold a 4.4 rating
+user: OK thanks for that
+assistant: Can I do something else for you?
+user: No you've been a huge help already
+assistant: OK, have a good day then!

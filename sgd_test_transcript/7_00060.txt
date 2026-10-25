@@ -1,0 +1,20 @@
+user: I'm looking for a place to live and buy. I'll need an in-unit laundry.
+assistant: What area should I search in? How many bed rooms and bathrooms do you need?
+user: I need three bathrooms and three bed rooms. Search in Hayward.
+tool(FindHomeByArea): ok n_results=10
+assistant: I have 10 nice houses. Baywood Apartments is a good property at 31108 Brae Burn Avenue and it costs $3,500,000.
+user: Is there a garage? What is the phone number of the property?
+assistant: The phone number for the place is 510-471-7075. There is no garage.
+user: Would you find me another place?
+assistant: City View is a nice property. The address is 25200 Carlos Bee Boulevard. It's $3,700,000.
+user: Sounds good to me.
+assistant: Would you like to schedule a visit at the property?
+user: I'd like to visit on the 9th of this month.
+assistant: Could you confirm that you want to visit City View on March 9th?
+user: That's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled your visit.
+user: What is the phone number for the property? Is there a garage?
+assistant: There is a garage and the phone number is 510-822-2617.
+user: Thanks so much. That is what I needed.
+assistant: Have a nice day.

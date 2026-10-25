@@ -1,0 +1,25 @@
+user: Hi, what kind of activities are there to do around SFO? I'm interested in the 11th of March.
+assistant: What activities are fun to you?
+user: I like a Concert.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 things, Finneas is best, It is in August Hall on March 11th at 5:30 pm.
+user: How much will that run me? Where is it?
+assistant: $55 and it's at 420 Mason Street.
+user: Fine, but get me another option.
+assistant: Jeanette Tietze is good, It's at the Episcopal Church of the Incarnation at 5:30 pm on March 11th.
+user: Fine, try again for something better.
+assistant: Lucy Dacus is great, she's at August Hall on March 11th at 7 pm.
+user: Fine, just fine.
+assistant: How about tickets?
+user: No, Hotels instead.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options. Try Amsterdam Hostel San Francisco, it has 1 star.
+user: What's the phone there? May I smoke in my room there?
+assistant: Sorry no smoking, the phone number is +1 415-673-3277.
+user: Sounds fine, I want tickets to the event, 1 please.
+assistant: To confirm clearly: 1 ticket for Lucy Dacus on March 11th in San Francisco.
+user: Yes, That's fine, how much will the ticket cost, where is the event?
+tool(BuyEventTickets): ok n_results=1
+assistant: Tickets are $35 and it's located at 420 Mason Street.
+user: Thanks for that.
+assistant: Have a great time.

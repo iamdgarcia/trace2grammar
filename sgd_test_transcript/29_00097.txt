@@ -1,0 +1,40 @@
+user: I want to search for some interesting events and I need the same in New York on the 12th. Can you help me to find the one like Musical Performance.
+tool(FindEvents): ok n_results=10
+assistant: I got 10 results and what about the one named Alma Deutscher will be take place at Stern Auditorium / Perelman Stage on March 12th at 5 pm.
+user: That is okay for me.
+assistant: Shall I book the tickets to this event now?
+user: I will ask it later. Now, search for some house there to stay for a while and I need it with Laundry service for three people. Find me a one with 4.2 user rating.
+tool(SearchHouse): ok n_results=10
+assistant: I got 10 results and what about the one at 100 Greenwich Street with rating 4.2?.
+user: Is there any other houses in your search list?
+assistant: Yes, another house located at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA with user rating 4.2. Do you like it?
+user: Search for something else.
+assistant: How about a nice house located at 1033 6th Avenue with rating 4.2?
+user: Let me know the contact number of this place.
+assistant: It is +1 212-768-0007.
+user: Okay, we can fix this.
+assistant: Shall I reserve it now?
+user: No, not now. Will be later.
+assistant: How can I help you further?
+user: Search for some buses to go there.
+assistant: From which place you want to book the bus?
+user: Book it from Philly.
+assistant: Shall I book it on March 12th?
+user: Please book it from today.
+tool(FindBus): ok n_results=6
+assistant: Got 6 buses and what about the one which is departing at 9 am for the cost $23?
+user: What is the name of origin station and let me know the number of stops does this bus have.
+assistant: It is a direct bus and the same will leave from 10th and Filbert.
+user: That's nice.
+assistant: Shall I book the tickets now?
+user: No, do it later. Now, buy the tickets for the event that I have selected before. I need two tickets.
+assistant: Please confirm to book 2 tickets for Alma Deutscher on March 12th in New York.
+user: Please book three tickets.
+assistant: Please confirm finally to book 3 tickets to the event in New York
+user: That is find. Proceed.
+tool(BuyEventTickets): ok n_results=1
+assistant: That is confirmed to proceed.
+user: Thank you so much.
+assistant: What else you want to do now?
+user: Nothing. Thanks so much.
+assistant: Have a good day.

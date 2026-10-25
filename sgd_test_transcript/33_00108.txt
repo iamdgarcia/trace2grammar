@@ -1,0 +1,30 @@
+user: Will you show me some attractions to visit?
+assistant: Where should I look for attractions?
+user: Please find attractions at London, England.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 attractions of interest including 30 St Mary Axe (The Gherkin) you can check out. It Is a historical Landmark.
+user: Okay that is good. I'd like to find a house to stay there.
+tool(SearchHouse): ok n_results=8
+assistant: There's a nice home at 1 Addington Street rated 4.3.
+user: Would there be other homes?
+assistant: There's a nice home at 1 Baffin Way rated 4.1.
+user: What other house are there rated 2.7 or higher?
+tool(SearchHouse): ok n_results=8
+assistant: There are 8 houses for the search including one house located at 1 Connaught Road rated 2.7.
+user: Would this place have laundry service?
+assistant: The place doesn't have laundry service.
+user: Can you give me a contact number for this place?
+assistant: The phone number is +44 871 984 6290.
+user: The house is great and I'd like to find a round trip flight there. You can find me Economy class tickets.
+assistant: What day would you like to have the return flight and what city are you departing from?
+user: Please search flights from NYC returning the 13th of March.
+assistant: Which date do you want to travel?
+user: I would like to start my travel Tuesday next week.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I have 2 flights taking off. Do you want to fly with Delta Airlines taking off at 8:50 pm a direct flight and the returning flight taking off 9:40 am costing $311.
+user: When will the flight arrive at the destination and when is the return flight arriving?
+assistant: The return flight arrives 2:02 pm and the onward flight comes at 9:12 am.
+user: That sounds good.
+assistant: Am I able to assist you with something else?
+user: No thanks for the help.
+assistant: Have a nice day.

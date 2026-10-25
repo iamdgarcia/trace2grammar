@@ -1,0 +1,26 @@
+user: I would like to find a movie with Jennifer Lopez.
+tool(FindMovies): ok n_results=1
+assistant: There is Hustlers? It has a rating of 94 percent.
+user: Who is the director of the movie?
+assistant: The director is Lorene Scafaria.
+user: I would like to find a restaurant.
+assistant: In what location and what type of food would you like?
+user: I would like a restaurant in Pescadero that serves burger.
+tool(FindRestaurants): ok n_results=1
+assistant: Duarte's Tavern is located in Pescadero.
+user: How expensive is this restaurant?
+assistant: The restaurant is moderate priced.
+user: Yes, I would like to book a table.
+assistant: What time would you like your reservation?
+user: I would like to go at 11:15 am.
+assistant: Booking a table for 2 at Duarte's Tavern in Pescadero on March 1st at 11:15 am.
+user: Yes, that is perfect
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was unable to book a table for 2 at Duarte's Tavern for that time, would 11 am work on March 1st?
+user: Yes, that would work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: Do they have a vegetarian menu?
+assistant: They do not have vegetarian options.
+user: That is all I needed.
+assistant: Have a good day.

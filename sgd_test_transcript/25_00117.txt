@@ -1,0 +1,28 @@
+user: Tell me about my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm titled Busy at 4 pm.
+user: Alright, fine. I'd like to look for a diner there in Oakland that are cheap in price.
+assistant: What sort of cuisine are you seaarching for?
+user: Get me one that offers American.
+tool(FindRestaurants): ok n_results=1
+assistant: Mcdonald's is a lovely diner situated in Oakland.
+user: Yeah, that's fine. I'd like to book a vehicle there from March 10th.
+assistant: What location do you wish to pick up the vehicle from? Would you like to include insurance?
+user: Chicago Union Station is a convenient location for me to pick the vehicle. I'd like to purchase insurance.
+assistant: When do you desire the vehicle until?
+user: I require it until the 14th.
+assistant: Would you like a sedan, SUV, or something else? When would you like to pick up the vehicle?
+user: A Hatchback would be lovely. I'd like to pick it up at 14:30.
+assistant: Please verify the following information: you are picking up a Hatchback vehicle from Chicago Union Station from March 10th at 2:30 pm with the drop off date at March 14th.
+user: Yeah, that's fine with me.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been reserved.
+user: Ah, can you tell me the location?
+assistant: What address would you like to share? Chicago Union Station, 640 Hegenberger Road, or something else? With whom would you like to share with?
+user: The location to share is 640 Hegenberger Road. I'd like to share it with Samuel.
+assistant: Please verify the following information: you are sharing the address 640 Hegenberger Road with Samuel.
+user: That's fine with me.
+tool(ShareLocation): ok n_results=1
+assistant: You have share the address.
+user: Thank you for your help; that's all for now.
+assistant: Have a pleasant afternoon!

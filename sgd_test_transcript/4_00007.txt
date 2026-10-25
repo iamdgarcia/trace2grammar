@@ -1,0 +1,20 @@
+user: Could you get me a rental car?
+assistant: What time do you want and what date do you want to pick it up? What area will you rent it from?
+user: I want to pick it up morning 10:30 on Saturday this week. Look in Paris.
+assistant: When will you return it?
+user: Return it on March 9th.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I have 2 cars. There is a nice car at Orly International Airport. It's a Kia Ceed Hatchback.
+user: How much is it per day?
+assistant: It's $31.00 per day.
+user: Is anything else available?
+assistant: There is a nice Mazda CX-5 SUV at Orly International Airport.
+user: Okay reserve this car.
+assistant: Would you like insurance?
+user: Yes, buy me insurance.
+assistant: Would you confirm that you want to pick up the SUV from Orly International Airport on March 2nd at 10:30 am and drop off on March 9th?
+user: Sounds good to me. How much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car. It's $67.00 per day.
+user: Thanks for helping. That is what I needed.
+assistant: Have a fantastic day.

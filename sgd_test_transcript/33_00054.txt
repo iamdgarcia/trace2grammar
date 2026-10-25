@@ -1,0 +1,23 @@
+user: can you help me find something cool to do? i'm in london, england, and i want something for the 5th.
+assistant: do you prefer a certain type of event?
+user: i like broadway shows.
+tool(FindEvents): ok n_results=10
+assistant: i found 10 things for you. there's all the little lights that's palying at tristan bates theatre on march 5th at 6:30 pm.
+user: that sounds good.
+assistant: do you want me to get tickets?
+user: yes, please.
+assistant: how many would you like?
+user: just 1 ticket.
+assistant: so you want 1 ticket for all the little lights on march 5th in london?
+user: yes. how much is a ticket? where's the theatre at?
+tool(BuyEventTickets): ok n_results=1
+assistant: it's $30 a ticket, and they're located on 1a tower street.
+user: thanks so much.
+assistant: is there something else?
+user: can you book a cab there? i just want the most comfortable one.
+assistant: you want 1 luxury ride to tristan bates theatre?
+user: that's fine with me. how much will it be?
+tool(GetRide): ok n_results=1
+assistant: it's been booked. it'll cost $15.47.
+user: thanks a lot, that's everything.
+assistant: have a great day.

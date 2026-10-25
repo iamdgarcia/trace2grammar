@@ -1,0 +1,43 @@
+user: I want to search for some nice events to spend my free time there. find me the best one to go there.
+assistant: What type of events you are looking for? Any desired type that you have in your mind like Music or Theater, then let me know the same to search for it?
+user: I like to find something in SF. You can search for songs type events which is liked by me the most.
+tool(FindEvents): ok n_results=10
+assistant: I got 10 events and what about the one like Alex Cameron will be held at August Hall on March 8th at 7 pm?
+user: That's nice. Let me know the ticket cost.
+assistant: It costs $25 per ticket.
+user: that's okay. Find some other events on 5th of this month.
+tool(FindEvents): ok n_results=7
+assistant: What about the one at August Hall which is in the name Finneas and this is the popular event will be take place on March 5th at 6:30 pm.
+user: What is the location of the venue?
+assistant: It is located at 420 Mason Street.
+user: That is okay and thanks. Now, I want to search for a bus to go there.
+assistant: When an where are you leaving from? Shall I search for the leaving date on March 5th?
+user: I need a bus from LAX on Sunday this week.
+tool(FindBus): ok n_results=10
+assistant: I got 10 results and what about the one leaving at 6:40 am for the ticket cost $51?
+user: Find me some other buses and I need the one which should be a direct bus.
+tool(FindBus): ok n_results=10
+assistant: Another bust which is going to depart at 7:30 am for the cost $48. Do you choose this one?
+user: Let me decide before that I want to know the origin and destination station of this bus.
+assistant: This bus will leave from North Hollywood Station and reaches finally to Transbay Terminal.
+user: All are okay but search for something else.
+assistant: Okay, what about a bus at 8:40 am for the ticket cost $56?
+user: That's okay. Thanks. Now, I need to book a round trip flight on 5th of this month and return date on 10th of this month. Can you search for the suitable one?
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: Yes, I got 5 results. What about an onward direct flight with Alaska Airlines which takes off at 11:40 pm and the return flight takes off at 6:35 pm for the ticket cost $139?
+user: Search for something else and I need to book three tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I got 4 results. What about an onward direct flight with American Airlines which takes off at 9:30 am and the return flight takes off at 7:10 pm for the ticket cost $155?
+user: That's good. Now I want to search for some hotels around that area to stay for a while. Find me a suitable one.
+tool(SearchHotel): ok n_results=10
+assistant: Do you like to stay in Amsterdam Hostel San Francisco which is a 1 star hotel.
+user: I need to book two rooms in a three star hotel. Can you search for the suitable one to me?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, what about you opinion to stay in Bei Hotel San Francisco with 3 stars?
+user: Yes. Thanks. Now I want to book the tickets to the events that I have selected before.
+assistant: Please confirm to book 3 tickets to the event Finneas on March 5th in San Francisco.
+user: That is confirmed to proceed.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets to the event.
+user: Thanks for the help and that's all.
+assistant: Have a good day.

@@ -1,0 +1,47 @@
+user: I'd like to find a therapist.
+assistant: What city should I search in and did you need a Family Counselor, Psychologist, or perhaps another type?
+user: I will need a Psychiatrist in Santa Rosa.
+tool(FindProvider): ok n_results=6
+assistant: I found Beck Jennifer P who is a Psychiatrist in Santa Rosa.
+user: Did you find any other therapists? I will need a Family Therapist.
+tool(FindProvider): ok n_results=8
+assistant: I also found Auer Patience who is a Family Counselor in Santa Rosa.
+user: That sounds good.
+assistant: Did you need help with anyone else?
+user: Could you also book an appointment for 8th of this month?
+assistant: What time did you prefer?
+user: I'd like it at 4:30 in the evening.
+assistant: Please confirm you're booking an appointment with Auer Patience on March 8th at 4:30 pm.
+user: No, can you make the appointment for the 13th instead?
+assistant: Please confirm March 13th at 4:30 pm.
+user: That is correct. What is their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed and you should receive an email confirmation soon. It is at 2455 Bennett Valley Road and their number is 707-526-7604.
+user: I will also need to request a payment.
+assistant: For how much?
+user: It will be for 50 bucks.
+assistant: What is the name of the contact person?
+user: The person's name is Rachel.
+assistant: Please confirm you're making a transaction for $50 with Rachel and it will be visible to the public.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was successful.
+user: Thank you! I'd also like to find a restaurant there for that day.
+assistant: What type of food did you prefer?
+user: I'd like something serving Dumplings.
+tool(FindRestaurants): ok n_results=3
+assistant: I found 3 restaurants for you. Gary Chu's is a nice restaurant in Santa Rosa.
+user: Did you have any other restaurants? I will need vegetarian options.
+tool(FindRestaurants): ok n_results=3
+assistant: Kirin is another nice restaurant in Santa Rosa.
+user: That sounds good.
+assistant: Did you want to book a table there?
+user: Yes, I'd like to.
+assistant: What time should I try and book for?
+user: I'd like to make it at afternoon 12:15
+assistant: Please confirm you're booking a table for 2 at Kirin in Santa Rosa on March 13th at 12:15 pm.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you, that is all.
+assistant: Have a great day.

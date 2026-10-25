@@ -1,0 +1,14 @@
+user: I am in NY and I would like to find something interesting in this area to do. Can you find a Show for me?
+tool(FindEvents): ok n_results=10
+assistant: Acting For Teens is a popular event at 6 pm on March 4th. The event takes place at 520 8th Ave. - Personal Valet Parking.
+user: Where will that be? How much is it for one ticket?
+assistant: The venue is at 520 8th Ave. - Personal Valet Parking. The ticket cost is $35.
+user: OK, that sounds great. I would like to reserve three tickets for that event, please.
+assistant: You would like to book 3 tickets for Acting For Teens on March 4th in New York, is this correct?
+user: Yes, that all sounds right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is made. Enjoy the event!
+user: Thank you very much for your help.
+assistant: Is there anything else I can help you with today?
+user: No, I'm all set, thanks.
+assistant: Have a great day!

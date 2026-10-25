@@ -1,0 +1,15 @@
+user: Could you find me a musical performance in Sacramento, CA on march 10th?
+tool(FindEvents): ok n_results=5
+assistant: I have 5 options for you. How about the aftershock music festival happening at discovery park at 5 pm on march 10th?
+user: Sounds good to me, could you find a hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels in that area. How about Courtyard by Marriott Sacramento Cal Expo, it has 3 stars
+user: Sounds good, can I purchase a ticket to that event?
+assistant: How many tickets do you want?
+user: 1
+assistant: Please confirm: You want 1 ticket for the aftershock music festival in Sacramento on March 10th.
+user: Exactly.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket is confirmed!
+user: Thanks, i'm all set.
+assistant: Have a great day.

@@ -1,0 +1,45 @@
+user: I have planned to go for a short trip and I need to book two tickets in a Train from Fresno, CA. Can you help me to find a suitable train?
+assistant: Yes, Where are you going to visit?
+user: To San Francisco.
+assistant: I want some more details. Let me know on which date you want to book the train?
+user: I want to book it for March 13th.
+tool(FindTrains): ok n_results=7
+assistant: Okay. I got a Train detail. This train will leave at 6:50 am for the ticket cost $111 in total. Do you want to book this train?
+user: Let me know the station name from where this train will leave.
+assistant: The origin station of this train is Fresno Station.
+user: Okay. noted. Thanks.
+assistant: Shall I book the tickets now?
+user: No, I will ask it later.
+assistant: How can I assist you further?
+user: Find some events to go on that day. I like the Music events and find me the one on 14th of March.
+tool(FindEvents): ok n_results=9
+assistant: What about Alex Cameron? This event will take place at August Hall on March 14th at 4:30 pm. Do you like to go to this event?
+user: Let me know the venue to decide.
+assistant: The venue is located at 420 Mason Street.
+user: Also I want to know the ticket cost.
+assistant: It costs $45 per ticket.
+user: That's fine. Thanks. But I want to find some other events like a Stage Show on March 13th.
+tool(FindEvents): ok n_results=8
+assistant: Okay, I got 8 events. What about your opinion on an event named Above Ground Festival will be held at Mojo Theatre on March 13th at 6 pm.
+user: Search for something else.
+assistant: How about Bats Improv Comedy taking place at BATS Improv Theatre on March 13th at 7:30 pm?
+user: I think I lie to prefer this one.
+assistant: That's good. Shall I book the tickets now?
+user: No, may be later.
+assistant: What else you want now?
+user: I want to find some attractive places there to visit. Find me the one like Museum which should have free entrance.
+tool(FindAttractions): ok n_results=9
+assistant: What about a Museum named Cartoon Art Museum?
+user: Check for the safe of Kids there.
+assistant: Yes, this place is safe for kids.
+user: That's nice. find me a house to stay there and I need the one with 3.5 or higher rating.
+tool(SearchHouse): ok n_results=10
+assistant: I got 10 houses and what about the one located at 1095 Market Street with rating 3.5.
+user: Search for some other houses.
+assistant: What about a house located at 1100 Market Street Hotel entrance is at, 45 McAllister Street with rating 3.5?
+user: This seems good. Thanks.
+assistant: Shall I book this house now?
+user: No, I will ask it later.
+assistant: How can I help you now?
+user: Nothing and thanks.
+assistant: Have a great day.

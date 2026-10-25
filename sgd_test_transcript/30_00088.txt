@@ -1,0 +1,27 @@
+user: What's the weather like in San Mateo on the 11th of March?
+tool(GetWeather): ok n_results=1
+assistant: It'll be around 91 degrees Fahrenheit with a 15 percent chance of rain.
+user: Okay then.
+assistant: What else do you need?
+user: I want to visit Middle Park Apartments that day.
+assistant: A visit to Middle Park Apartments on March 11th. Is this right?
+user: No, I'm visiting The Hamptons Apartment Homes.
+assistant: You want to visit The Hamptons Apartment Homes on March 11th?
+user: Yes I do.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is now scheduled.
+user: I want to rent a car with insurance. A hatchback sounds nice.
+assistant: How long will you need the car?
+user: Until the 14th of this month.
+assistant: When will you pick up the car?
+user: I'll pick it up at 15:30.
+assistant: Where are you going to pick it up? Will you need it on March 11th?
+user: I need it on the 9th of this month. I'll pick it up at PDX Airport.
+assistant: Picking up a hatchback car from PDX International Airport on March 9th at 3:30 pm until March 14th. Is this right?
+user: Yes it is. How much will it cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved. It'll cost $45.00 per day.
+user: What is the car?
+assistant: It's a Vauxhaull Astra.
+user: Thanks. That's all.
+assistant: Have a nice day.

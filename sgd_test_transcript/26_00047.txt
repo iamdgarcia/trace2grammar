@@ -1,0 +1,24 @@
+user: I have a plan for a trip to Los Angeles for which I want to search for a round trip flight. I am comfortable with Economy seats in Delta Airlines flight. Find me the suitable one.
+assistant: Okay, I want more details to search for the flight. Let me know the start and return dates of your travel and What is your present location?
+user: I need a flight from Sydney, NSW and my travel will start on Friday next week to 13th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Got 1 flight with Delta Airlines. How about an onward flight which will take off at 10:55 am and the return flight take off time is at 5:15 am under the ticket cost $368?
+user: May I know the number of ticket that you have searched for and also I want to know the arrival time of this flight at the final place.
+assistant: It arrives at 0:22 am and I have searched for 1 person only.
+user: That is okay and thanks. Can you search for a house to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: Yes, what about the one at 1020 South Figueroa Street with rating 4.1?
+user: I think I need to know whether they have laundry service in that house and also get met their contact number for my reference.
+assistant: Yes, they have laundry service and please note down their contact number as +1 213-748-1291.
+user: This looks good. Please book this house from the 13th of March to 9th of March for one person.
+assistant: Once again please confirm to book a house for 1 person from March 9th to March 13th in Los Angeles.
+user: Yes, confirmed and you can proceed. Let me know the cost.
+tool(BookHouse): ok n_results=1
+assistant: I have booked the house and the cost is $1,200.
+user: Thanks for your help. Also search for some attractive places there like a Tourist Attraction.
+tool(FindAttractions): ok n_results=8
+assistant: I got 8 results. Hope you like the one which is Hollywood Walk of Fame and same is a Tourist Attraction.
+user: That's nice and thanks.
+assistant: What else you want me to do?
+user: No, thanks for everything.
+assistant: With my pleasure. Enjoy your trip.

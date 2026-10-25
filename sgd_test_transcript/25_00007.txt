@@ -1,0 +1,36 @@
+user: I would like to set up a payment to someone please.
+assistant: Sure. What is the amount? Would you like to transfer the money from your app balance or credit card?
+user: It will 129 bucks. Send it from my debit card.
+assistant: Who would you like to send the payment to?
+user: I need to pay Emma back.
+assistant: You would like to send $129 to Emma from your debit card, is this correct? This transaction will be public.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been sent successfully. The transaction should be viewable by the recipient soon.
+user: OK, thanks. Can you help me find a restaurant serving California style cuisine?
+assistant: What city would you like to look in?
+user: Find restaurants in San Francisco.
+tool(FindRestaurants): ok n_results=10
+assistant: Al's Place is located in San Francisco.
+user: What is the phone number?
+assistant: The phone number is 415-416-6136.
+user: What is the address? Do they have some vegetarian options on the menu?
+assistant: The street address is 1499 Valencia Street. They have several vegetarian options.
+user: What other restaurants are in that area? I'm looking for a fancy restaurant, something pricey.
+tool(FindRestaurants): ok n_results=8
+assistant: Alta Msp is in San Francisco and meets those criteria.
+user: What else is there?
+assistant: Central Kitchen is another restaurant like that in San Francisco.
+user: Yes, let's go with that one. I would like to book a table, please.
+assistant: What time would you like the reservation for?
+user: Make the reservation for 5:45 pm.
+assistant: You would like to book a table for 2 at Central Kitchen in San Francisco at 5:45 pm on March 1st, is this correct?
+user: No, change of plans, make it for 6:30 in the evening.
+assistant: You would like a table for 2 at 6:30 pm, is this correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: What are the reviews like for that restaurant?
+assistant: The average rating is 4.5.
+user: Thank you very much, that's all.
+assistant: Have a great day!

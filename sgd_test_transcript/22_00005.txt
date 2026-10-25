@@ -1,0 +1,46 @@
+user: I need to spice up my life. Can you find me some fin things to do?
+assistant: In what city should I search?
+user: Please look in the city of New York.
+assistant: Do you have certain events you enjoy more than others?
+user: Please for something that has to do with a concert.
+tool(FindEvents): ok n_results=10
+assistant: I found a great concert featuring Abbi Jacobson at Kaufmann Concert Hall on March 11th starting at 7:30 pm.
+user: What is the ticket cost and where is this venue located?
+assistant: Your ticket will cost $60 and the venue is at 1395 Lexington Avenue.
+user: This event sounds great. Is it possible to take a bus to this event?
+assistant: Where will you be departing from on that day?
+user: I will be leaving from Philly.
+assistant: Will you be leaving on March 11th?
+user: No, I am actually leaving on the 3rd.
+tool(FindBus): ok n_results=6
+assistant: There is a bus that day departing at 9 am and will cost you $25.
+user: What station does the bus leave from and does this bus make stops?
+assistant: No, it has a direct route and depars from 10th and Filbert.
+user: Great. Now please search for a round trip flight to this area.
+assistant: Do you plan on leaving March 3rd or March 11th?
+user: I am planning to begin travel on the 11th.
+assistant: When would you like make the return flight?
+user: I will be returning on the 14th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: American Airlines has a 1:20 pm direct flight with a return flight leaving at 11:20 am. The ticket is $94.
+user: I am not particular about the airline but would like an economy ticket. Please continue searching.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Southwest Airlines has a direct flight departing at 2:45 pm with a return flight at 10:50 am. This ticket is $105.
+user: Thank you. Now will you search for a 4 star hotel in this area?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels in the area you may like. One of them is the 4 star 6 Columbus - Central Park Hotel.
+user: Is there some other hotels you can recommend?
+assistant: There is the 4 star Ac Hotel New York Times Square hotel you may enjoy.
+user: Does this hotel allow smoking and what is their address?
+assistant: Smoking is not allowed here and their address in 260 West 40th Street.
+user: Thank you for your help.
+assistant: Would you like to make hotel reservations?
+user: No, not right now. I would like to purchase two tickets to the event you found earlier.
+assistant: Please confirm you would like to purchase 2 tickets to Abbi Jacobson for March 11th in New York.
+user: No, I changed my mind and only want 1 ticket.
+assistant: Please confirm you would like to purchase 1 tickets to Abbi Jacobson for March 11th in New York.
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased. Enjoy the concert!
+user: Thank you for your help! I don't need anything further right now.
+assistant: Enjoy the day!

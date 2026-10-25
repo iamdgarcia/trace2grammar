@@ -1,0 +1,16 @@
+user: I'm looking for something fun to do on March 13th.
+assistant: Would you prefer Music, Theater or something else?
+user: I'm interested in Musical performance.
+assistant: In which city?
+user: Can you check Philly?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 options. Babymetal is an event taking place on March 13th at 7 pm at The Fillmore Philadelphia and is trending right now.
+user: Sounds awesome. Book me 1 ticket please.
+assistant: Please confirm you want me to book 1 ticket for Babymetal in Philadelphia on March 13th.
+user: Yes. That's perfect. What's the price and on what date is it taking place?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking was a success. The venue is located at 29 East Allen Street and the cost is $60.
+user: Thank you for your assistance.
+assistant: Is there anything else you need today?
+user: No. Thanks so much.
+assistant: Please enjoy your day. Goodbye.

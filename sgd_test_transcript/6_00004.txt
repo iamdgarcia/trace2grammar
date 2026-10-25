@@ -1,0 +1,14 @@
+user: Hi, could you help me search for a therapist please?
+assistant: Any specific therapist and area you are looking at?
+user: A psychologist in Vacaville will do.
+tool(FindProvider): ok n_results=4
+assistant: There are 4 psychologist in the Vacaville area, how about Caldwell Leslie?
+user: Sounds great! Could you get me an appointment at quarter past 12 in the afternoon on 14th of March?
+assistant: Sure, please confirm your appointment with Caldwell Leslie at 12:15 pm on March 14th.
+user: That is fine with me. May I have their address please?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made, and a email confirmation will be sent soon. You can visit them at 1 Quality Drive.
+user: That is great! Thank you for your kind assistance.
+assistant: No worries, do you need any other help?
+user: No, that is all I need. Thanks!
+assistant: Have a pleasant day ahead!

@@ -1,0 +1,19 @@
+user: I need to get a train ticket.
+assistant: Can you tell me which city you will be going to and when you want to travel.
+user: I want to go from SFO later today. I will be going to Fresno.
+tool(FindTrains): ok n_results=8
+assistant: I have a train that will depart at 6:20 am and it costs $62.
+user: Is there anything else I could get? I need one seat.
+tool(FindTrains): ok n_results=8
+assistant: What about this one at 4 pm. It costs $70.
+user: That sounds like the best option.
+assistant: Would you like me to book the tickets?
+user: No. I don't need that right this minute.
+assistant: Can I help with something else then?
+user: I need a house to stay there.
+tool(SearchHouse): ok n_results=4
+assistant: I have 4 places you might like, but this one at 1055 Van Ness Avenue is rated 3.8.
+user: Does it have a laundry service?
+assistant: Yes, it does have that.
+user: That sounds perfect then, that will be all.
+assistant: No, problem enjoy your trip.

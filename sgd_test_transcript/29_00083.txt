@@ -1,0 +1,32 @@
+user: Search for something fun for me to do.
+assistant: What type of events shall I search for?
+user: Search for Concert events.
+assistant: What city do you want to see concerts in?
+user: Search for concerts in Sacramento, CA.
+tool(FindEvents): ok n_results=6
+assistant: Aftershock Festival is playing at Discovery Park on March 5th at 5:30 pm and is 1 of 6 events that search found.
+user: What is their address?
+assistant: They are located at 1600 Garden Highway.
+user: What is the price for a ticket?
+assistant: A single ticket costs $20.
+user: That is perfect. Search for a house for me to stay in nearby.
+tool(SearchHouse): ok n_results=10
+assistant: 100 Capitol Mall has a 4.4 rating and is 1 of 10 houses that search found.
+user: That is perfect. I need a bus for 1 person to get there from Los Angeles.
+assistant: Are you departing on March 5th?
+user: Yes, that is right.
+tool(FindBus): ok n_results=3
+assistant: There is a bus leaving at 10:30 am and costs $51. This is 1 of 3 results available.
+user: What is the arrival station?
+assistant: The arrival station is 65th Light Rail Station.
+user: What is the departure station?
+assistant: North Hollywood Station is the departure station.
+user: What else do you have?
+assistant: There is a bus leaving at 3:20 pm with a $42 cost.
+user: That works for me. Purchase that event ticket for me.
+assistant: You want a ticket for 1 person to the Aftershock Festival on March 5th in Sacramento, correct?
+user: That is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket is ordered. Have fun!
+user: Thanks a bunch. That is everything for now.
+assistant: Have a good day.

@@ -1,0 +1,43 @@
+user: I'm looking for a train travelling from Sacramento, CA on the 1st.
+assistant: What's your destination?
+user: My destination is Anaheim.
+tool(FindTrains): ok n_results=6
+assistant: There's a train that departs at 6:30 am for $116 altogether, how does that sound?
+user: What other trains are there? I just want one economy ticket.
+tool(FindTrains): ok n_results=6
+assistant: There's a train that departs at 7:20 am for $121 altogether.
+user: I want to keep looking. How about something from San Fran that's a business ticket.
+tool(FindTrains): ok n_results=7
+assistant: There's a train that departs at 7:10 am for $128 altogether.
+user: I like that one.
+assistant: Do you want to purchases the ticket?
+user: Not right now, but I do want to know about things I can do when I'm there that day.
+assistant: Is there anything in particular you're looking for, like Music or Theater?
+user: Music related things interest me.
+tool(FindEvents): ok n_results=1
+assistant: Brown Sabbath might be for you. It's at Crossroads at House of Blues Anaheim on March 2nd at 7:30 pm.
+user: What's the price of a ticket?
+assistant: A ticket is $55.
+user: And what's the address of the venue?
+assistant: The venue is located at 1530 Disneyland Monrail System.
+user: That sounds pretty good, but let's keep looking. I'd like to find a show on the 10th of this month.
+tool(FindEvents): ok n_results=1
+assistant: You might enjoy Jesus Christ Superstar. It's at Stage Door Repertory Theatre on March 10th at 7:30 pm.
+user: I'd enjoy that a lot.
+assistant: Would you like to purchase tickets?
+user: No, we can do that later.
+assistant: What else can I help you with?
+user: How about looking for an attraction like a stadium?
+tool(FindAttractions): ok n_results=2
+assistant: There are 2 attractions that match the criteria. Angel Stadium of Anaheim is a Sports Venue that you might enjoy?
+user: Is it okay for kids to go there?
+assistant: Yes, kids would enjoy it too.
+user: Okay, that can work.
+assistant: What else can I do for you?
+user: I also need a house for three people to stay at there, it should be rated 3.9 or high with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice 3.9 rated house at 1050 West Ball Road.
+user: What's their phone number?
+assistant: You can reach them at +1 714-860-4660.
+user: Okay, thanks. The house seems good. I'll be going now.
+assistant: It's been enjoyable helping you, take care.

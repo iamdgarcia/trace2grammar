@@ -1,0 +1,20 @@
+user: I need a direct bus on the 1st.
+assistant: Where do you want to go and from which place?
+user: I am moving from Las Vegas to San Diego.
+tool(FindBus): ok n_results=1
+assistant: I searched and found 1 bus for you. What is your opinion about the bus starting at 10:50 am. The cost is $41.
+user: It is good.
+assistant: Shall I get the tickets?
+user: Yes Please book a seat.
+assistant: Number of tickets you need.
+user: I need ticket for 4 persons.
+assistant: Kindly ensure that, on March 1st, 4 tickets have been booked in the bus from Las Vegas to San Diego at 10:50 am.
+user: Yes. It is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is reserved.
+user: What is the name of the starting station and reaching station?
+assistant: It starts from Union Plaza and reaches at El Cajon Bus Stop.
+user: Thank you so much for your help.
+assistant: Do You need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

@@ -1,0 +1,27 @@
+user: I'm bored, can you help me find something to do?
+assistant: What kind of event or activity are you interested in?
+user: I'm in the mood for a musical performance.
+assistant: Where would you like me to search?
+user: Please can you search in the Napa area.
+tool(FindEvents): ok n_results=5
+assistant: How about Braxton Cook? There is a performance on at Blue Note Napa on March 2nd at 5 pm.
+user: What is the address of the venue?
+assistant: The address is 1030 Main Street.
+user: I like the sound of that.
+assistant: Would you like to buy tickets now?
+user: Not right now thanks.
+assistant: Is there anything else you'd like help with?
+user: Yeah I'd like to request a payment of 134 bucks from Mahmoud.
+assistant: Ok no problem, so that's a $134 transaction with Mahmoud.
+user: Yes that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been successful.
+user: Now can I buy 1 ticket to the event you found for me?
+assistant: Sure so that's 1 ticket to see Braxton Cook in Napa on March 2nd.
+user: Yes that's correct. How much are tickets?
+tool(BuyEventTickets): ok n_results=1
+assistant: Tickets are priced at $25. Your tickets have been purchased. I hope you enjoy the show!
+user: Thanks for your help.
+assistant: Do you need help with anything else?
+user: Not right now thanks.
+assistant: Enjoy your day.

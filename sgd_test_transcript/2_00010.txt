@@ -1,0 +1,19 @@
+user: Hello, I am hoping you can help me find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: I have found 10 songs for you. What do you think about Cool Girl by Tove Lo from the album Lady Wood?
+user: What year did it come out and what genre of music is it?
+assistant: It is an electropop song from 2016.
+user: Can you give me some other options? I do enjoy the Lady Gaga album Joanne.
+tool(LookupMusic): ok n_results=2
+assistant: What do you think about Million Reasons by Lady Gaga from her album Joanne?
+user: Yes, that is the one.
+assistant: Would you like to play this song now?
+user: Yes, please cast it in my living room.
+assistant: I will now play the song Million Reasons in the living room.
+user: Thank you! What genre of music is it and when did the song release?
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music. It is a pop song and she released this song in 2016.
+user: Thank you!
+assistant: Is there anything else I can help you with today?
+user: No, that will be all, thank you!
+assistant: Have a good rest of your day!

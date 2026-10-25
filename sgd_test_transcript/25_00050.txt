@@ -1,0 +1,26 @@
+user: I need to find an imax movie to watch.
+assistant: What will be your location?
+user: Will you search for movies in Livermore?
+tool(FindMovies): ok n_results=5
+assistant: What about Blinded by the Light, Hustlers, or IT Chapter Two?
+user: Hustlers will be perfect. How about search for some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: What are your thoughts on Thursday by Jess Glynne from the album Always In Between.
+user: What else will you have? I like House songs.
+tool(LookupMusic): ok n_results=10
+assistant: What are your thoughts about Beautiful Now by Zedd from the album True Colors.
+user: Was it released two years ago?
+assistant: It's from the year 2015.
+user: Yes, that would be the one.
+assistant: Do you like to play this song?
+user: Sure I would like that.
+assistant: Please confirm details to play the song Beautiful Now in the living room.
+user: No, cast it on the patio speaker.
+assistant: Please confirm details for the song Beautiful Now in Patio.
+user: No, put it on the speaker in kitchen.
+assistant: Please confirm details to play the song Beautiful Now in the kitchen.
+user: Yes, that would be correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks so much. That will be all.
+assistant: Have a nice day.

@@ -1,0 +1,24 @@
+user: Get me an Economy class round trip filght.
+assistant: What is your departure city and what date are you leaving?
+user: I want 3 American Airlines tickets on the 1st from San Fran.
+assistant: What is your destination and when are you returning?
+user: I am going to Atlanta, GA and will be arriving back on March 10th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Search revealed 1 result. American Airlines has a flight departing at 9:20 pm with the return flight departing at 3:45 pm for a total cost of $306.
+user: That works for me. Now, I need a house to stay at while there.
+tool(SearchHouse): ok n_results=10
+assistant: 101 Andrew Young International Boulevard Northwest has a 4.3 rating and is one of 10 houses that search found.
+user: That works for me. Book that date for me.
+assistant: Are you arriving March 1st and leaving March 10th and how many people are in your party?
+user: There are 3 people arriving the day after tomorrow and departing on the 5th of March.
+assistant: You want a house in Atlanta for 3 people from March 3rd to March 5th, correct?
+user: That is right and can you give me the total bill?
+tool(BookHouse): ok n_results=1
+assistant: Your booking is complete and the total bill comes to $1,000.
+user: Thanks a bunch. Can you find me some free attractions near there?
+tool(FindAttractions): ok n_results=10
+assistant: Al-Farooq Masjid is a a Place of Worship and is one of 10 locations that search found.
+user: That is perfect.
+assistant: Do you need something more?
+user: No, that is all. Thanks.
+assistant: Have a good trip.

@@ -1,0 +1,12 @@
+user: Find for me a one way flight from Portland, OR.
+assistant: Where you want to go and when?
+user: I will start my travel on 11th of this month to Vancouver.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I have 2 options for you.What to you think about Delta Airlines?There is a connecting flight that takes off at 4:35 am and cost $230.
+user: I want something at Economy class for four people.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: I have 1 flight for you.A connecting flight with United Airlines at 9:50 am.Cost is $230.
+user: Sounds very good.
+assistant: With something else I can help you?
+user: No.Thank you very much!
+assistant: Have a great day!

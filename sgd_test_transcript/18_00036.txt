@@ -1,0 +1,22 @@
+user: Could you find me a psychologist in Vallejo?
+tool(FindProvider): ok n_results=2
+assistant: There's Dwyer patricia J, they're a psychologist in Vallejo.
+user: Sure, could you book an appointment?
+assistant: What's your preferred time? What date would you like it for?
+user: Can it be for Thursday next week? At 2:30 pm?
+assistant: Please confirm: Book an appointment with Dwyer Patricia J at 2:30 pm on march 7th?
+user: That works, what's their address.
+tool(BookAppointment): ok n_results=1
+assistant: 975 sereno drive. Sorry, something went wrong. I couldn't book that appointment, how about Dwyer Patricia J on march 7th at 2 pm?
+user: Sure, that works
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. an email should be confirming that soon too.
+user: Great, could you get me a cab there?
+assistant: What type of ride? Luxury, Regular, or something else? ANd how many seats?
+user: a luxury ride for 1.
+assistant: Confirm: You want a luxury ride for 1 to 975 sereno drive
+user: That works for me.
+tool(GetRide): ok n_results=1
+assistant: Your cab is en route
+user: Thanks a lot for your help, that's all I need.
+assistant: Have a wonderful day.

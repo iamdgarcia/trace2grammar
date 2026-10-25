@@ -1,0 +1,40 @@
+user: Can you find me a movie to watch online?
+assistant: What kind of movie?
+user: I want to see a dramatic story starring Madeline Brewer if possible
+tool(FindMovies): ok n_results=1
+assistant: I found 1 called Hustlers you might enjoy
+user: Hustlers sounds good
+assistant: Should I play it?
+user: Maybe in a bit, but right now find me some attractions
+assistant: Where should I search
+user: Let's search in Ciudad de Mexico
+tool(FindAttractions): ok n_results=10
+assistant: Check out this Nature Preserve called Acuario Inbursa you might like
+user: Give me their phone number please
+assistant: It's 55 5395 4586
+user: OK what else can you think of?
+assistant: How about a museum? I hear Arte Carrillo Gil Museum is nice?
+user: Is it child friendly you think?
+assistant: Yes it's a good place for kids
+user: What about other museum destinations?
+tool(FindAttractions): ok n_results=9
+assistant: There are 9 other places, for a museum I would recommend Estanquillo Museum
+user: OK cool. Now find me a song off the album My World Untouched, what's a popular song from five years back on that album
+tool(LookupMusic): ok n_results=1
+assistant: All I want by Emma Bale on her album My World Untouched sounds right
+user: Yes that sounds good, stream it to the living room please
+assistant: Confirming you want to play All I want in the Living room yes?
+user: Actually no, make that my kitchen
+assistant: So All I want in the Kitchen instead?
+user: Yes that's right
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: Thanks, now can you play the movie earlier but with French Subtitles
+assistant: So play Hustlers with French subtitles?
+user: Yes that's right
+tool(PlayMovie): ok n_results=1
+assistant: It's playing for you
+user: Thank you for doing that
+assistant: Sure thing, anything else I can help with?
+user: No that's it, see you
+assistant: Enjoy your music and movie!

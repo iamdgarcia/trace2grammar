@@ -1,0 +1,30 @@
+user: I will be in the SF area soon and I would like to look up some events and activities that are free there. I'm really interested in finding a Museum that's worth visiting.
+tool(FindAttractions): ok n_results=9
+assistant: There are 9 events and activities that you may like. One museum you can visit is the Cartoon Art Museum.
+user: And is this museum considered suitable for children?
+assistant: Sure, this is a great place for parents to take children.
+user: Great. Can you give me the number to contact them?
+assistant: Their contact number is 415-227-8666
+user: Excellent. I am also hoping that I can take in a movie while in that area. Can you give me some suggestions?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies playing in the area. There's Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles.
+user: Are there other options?
+assistant: There's also Give Me Liberty, Hobbs and Shaw, as well as Hustlers.
+user: Great. Hobbs and Shaw sounds like theone.
+assistant: Do you want to purchase tickets for a showing?
+user: Not at this time. Can you search for movies online. I prefer movies with Eric Clark.
+assistant: And what particular type of films are you interested in?
+user: I like Cult movies
+tool(FindMovies): ok n_results=1
+assistant: There is a good movie you might like, Pulp Fiction is the title.
+user: Pulp Fiction sounds like a good one
+assistant: Shall I load that movie now?
+user: Sure, I'd like to watch it.
+assistant: You would like to play Pulp Fiction with English subtitles now, correct?
+user: That is correct. Thanks!
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun playing
+user: Excellent. Thanks so much!
+assistant: Will there be anything else?
+user: Nope. All set. thanks
+assistant: Enjoy your day.

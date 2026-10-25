@@ -1,0 +1,39 @@
+user: I need to find a unisex salon in Livermore.
+tool(FindProvider): ok n_results=5
+assistant: I found 5 salons like Great Clips in Livermore you may like.
+user: Will you find me a different salon?
+assistant: Livermore Barber Shop Third Street Og is nice in Livermore.
+user: What is the contact number and average rating?
+assistant: The phone number is 925-292-5328 rated the 4.7.
+user: Yes, that sounds nice. I would like to book and appointment for a salon at 16:30.
+assistant: Which date would you want your appointment on?
+user: I would like visit the salon today.
+assistant: Please confirm details that the name of the hair stylist is Livermore Barber Shop Third Street Og at 4:30 pm on March 1st.
+user: No, I'd like an appointment at afternoon 2:15 for the salon Monday next week.
+assistant: Please confirm details for an appointment 2:15 pm March 4th.
+user: Yes, that is good sounding.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry I couldn't book the appointment. Livermore Barber Shop Third Street Og is a nice salon. What about an appointment March 4th at 2 pm.
+user: Yes, that sounds nice.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is confirmed.
+user: I would like to find a restaurant for a meal on that day. I'm looking for a restaurant tagged intermediate priced for price. I would like outdoor seating.
+assistant: What type of food would you be looking for?
+user: Find something serving something Spanish.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant you could like Pura Vida - Cocina Latina & Sangria Bar a nice restaurant in Livermore.
+user: Yes, that is sounding good.
+assistant: Do you want a table reserved here?
+user: Yes, I'd like to reserve a table.
+assistant: What time should I attempt to reserve for?
+user: Please make the reservation at 1:15 in the afternoon.
+assistant: Please confirm details to book a table at Pura Vida - Cocina Latina & Sangria Bar in the city of Livermore at 1:15 pm for 2 people March 4th.
+user: No, the table should be for one person at 7 in the evening.
+assistant: Please confirm details for a reservation at 7 pm for 1 person.
+user: Yes, that will work for me. What is the address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is a success and the street address is 2241 First Street.
+user: Thanks a lot.
+assistant: What else can I help you with?
+user: No, thanks so much.
+assistant: Have a nice day.

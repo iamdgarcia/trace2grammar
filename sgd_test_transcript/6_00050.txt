@@ -1,0 +1,10 @@
+user: I need a salon.
+assistant: Which city do you prefer?
+user: I would like one in SFO.
+tool(FindProvider): ok n_results=10
+assistant: There is a nice one called 1512 Barber Shop in San Francisco.
+user: Id there another one that is unisex?
+tool(FindProvider): ok n_results=9
+assistant: Yes, there are 9. One is called 20Th Salon and Barber in San Francisco.
+user: Great, that's all I need.
+assistant: Have a nice day.

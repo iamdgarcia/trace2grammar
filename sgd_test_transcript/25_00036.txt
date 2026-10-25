@@ -1,0 +1,21 @@
+user: Find for me a movie because I want to watch.
+assistant: Tell me your location, please.
+user: Search for me for movies shown in Sebastopol.
+tool(FindMovies): ok n_results=3
+assistant: I have 3 movies for you.What do you think about After The Wedding, Blinded by the Light or IT Chapter Two?
+user: Blinded by the Light sounds very good.Search for me some songs from eight years ago.I heard that album Who You Are is really good.Songs by Jessie J I like.
+tool(LookupMusic): ok n_results=4
+assistant: What is you opinion about Domino by Jessie J from album Who You Are.
+user: Tell me what type of music is it.
+assistant: This is a Electropop song.
+user: Something else you have?
+assistant: How about Mamma Knows Best by Jessie J from album Who You Are.
+user: Yes I like this one.
+assistant: With something else I can help you?
+user: Play for me this song on any device.
+assistant: Play in Living room the song Mamma Knows Best.I'm right?
+user: Yes very good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: Thank you!That's all that I wanted.
+assistant: Have a great day!

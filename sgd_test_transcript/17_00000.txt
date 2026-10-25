@@ -1,0 +1,44 @@
+user: I need to find a unisex salon.
+assistant: In which city should I look?
+user: I need one in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: I found 10, one is Berkeley Hair Studio in Berkeley.
+user: What is the address?
+assistant: THey are located at 2556 Telegraph Avenue #4.
+user: Can you find me a salon in Napa please?
+tool(FindProvider): ok n_results=4
+assistant: I found 4, one is Stags Barbershop in Napa.
+user: What is the rating and contact number?
+assistant: The average rating is 4.9 and the number is 707-266-1108.
+user: That sounds great thanks.
+assistant: Should I book you an appointment?
+user: NOt at this time thanks.
+assistant: Can I do anything else for you?
+user: Could you share the location?
+assistant: Do you want to share 1637 Lincoln Avenue?
+user: Sounds good thanks.
+assistant: Who would you like to share the location with?
+user: I want to share it with Melissa please.
+assistant: You want to share 1637 Lincoln Avenue with Melissa, correct?
+user: Sounds great thank you.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location.
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: Yes there is one set for 7:30 am called wake up.
+user: Great thank you.
+assistant: Can I do anything else for you?
+user: I need to add an afternoon 3:15 alarm.
+assistant: You want an alarm at 3:15 pm called new alarm, correct?
+user: Yes that's correct.
+tool(AddAlarm): ok n_results=0
+assistant: Sorry, I wasn't able to set the alarm. Can I do anything more for you?
+user: I need one more for three in the afternoon.
+assistant: You want an alarm named new alarm at 3 pm, correct?
+user: Yes that is right.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been added.
+user: Thanks a bunch.
+assistant: Can I do anything more for you?
+user: No, but thank you.
+assistant: THank you have a great day.

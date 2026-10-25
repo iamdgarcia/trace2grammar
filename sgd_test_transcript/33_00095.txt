@@ -1,0 +1,21 @@
+user: I am looking for a museum in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. How about a museum called Apsley House.
+user: Great, Can you show me any other attractions?
+assistant: How about a museum called BODY WORLDS London?
+user: Okay, nice. Can you find me a house with laundry to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. How about a house with 4.3 rating located at 1 Addington Street?
+user: Can you show me any other available house?
+assistant: How about a house with 4.1 rating located at 1 Baffin Way?
+user: This house sounds nice to me.
+assistant: Do you want me to make a reservation for the house?
+user: No, Not now. I want to find a round trip flight.
+assistant: What is the city and date for your departure?
+user: I will be leaving from SFO on 2nd of March.
+assistant: Which date will be returning?
+user: I am getting back on the 12th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 flights suitable for you. How about an American Airlines flight whose onward flight takes off at 4:55 am and the returning flight takes off at 12:45 pm and the total cost for the ticket is $586.
+user: That sounds great to me. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

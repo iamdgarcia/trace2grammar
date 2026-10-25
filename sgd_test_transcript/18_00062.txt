@@ -1,0 +1,19 @@
+user: Please search for a three star hotel in NYC for two rooms.
+tool(SearchHotel): ok n_results=10
+assistant: Are you ok with 11 Howard, 3 star one? Otherwise you can choose from 10 such hotels there.
+user: That will be fine. tell me about the weather there.
+tool(GetWeather): ok n_results=1
+assistant: The temperature found to 66 degrees and with 37 percent chance of rain.
+user: Date today please and wind condition.
+assistant: Forecast of March 1st and wind speed is 12 miles per hour.
+user: Fine,please the book the hotel you mentioned.
+assistant: Do you like to check in on March 1st? How long will you be there?
+user: Book it for three days.
+assistant: Please verify, you need 2 rooms in 11 Howard on March 1st for 3 days in New York.
+user: Correct, thank you.
+tool(ReserveHotel): ok n_results=1
+assistant: It is booked.
+user: Cost and address please.
+assistant: Cost is $174 and address is 11 Howard Street.
+user: Great help, thank you.
+assistant: Have a great day.

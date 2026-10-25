@@ -1,0 +1,20 @@
+user: I need to find a seat on the bus.
+assistant: When are you going?
+user: I am leaving on Friday next week.
+assistant: Where are you leaving from? Going to?
+user: I am leaving from SD and going to Fresno, CA.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses including one leaving at 6:50 am for $39.
+user: Perfect! What are some things to do there?
+tool(FindAttractions): ok n_results=5
+assistant: There is a theme park that is pretty cool, Blackbeard's Family Entertainment.
+user: Cool. Can you buy four tickets for the bus you found?
+assistant: Please confirm, 4 tickets on the bus leaving San Diego on March 8th at 6:50 am to Fresno.
+user: That is great. What are the names of the bus stations?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are purchased. You are leaving from El Cajon Bus Stop and arriving at 2660 Tulare St.
+user: Thanks! Can you find me a three star hotel in Fresno?
+tool(SearchHotel): ok n_results=4
+assistant: The Doubletree By Hilton Hotel Fresno Convention Center is a 3 star hotel in Fresno.
+user: Perfect, that is all I need.
+assistant: Have a nice day!

@@ -1,0 +1,10 @@
+user: Can you please find a therapist for me?
+assistant: What city should I search in? What type of therapist would you like to search for?
+user: Please locate a psychologist in Lafayette.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in Lafayette. Alissa Scanlin Psyd is a Psychologist.
+user: Can you also search for therapists in Oakland?
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in Oakland. Alameda Children'S Specialized is a Psychologist.
+user: OK, sounds good, thanks, bye.
+assistant: Glad to assist.

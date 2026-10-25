@@ -1,0 +1,11 @@
+user: I'm looking for a one way flight and I'd like to fly in economy class.
+assistant: Where will you be leaving from and what date will you be traveling?
+user: I'll be going from Seattle, WA and that should be for Monday next week.
+assistant: What is your destination please?
+user: I'm going to Washington.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: I have a flight on Alaska Airlines which departs at 6:15 PM. It's a direct flight with a $205 ticket price.
+user: OK. Sounds good to me.
+assistant: Is there anything else you need today?
+user: Nothing I can think of, thank you.
+assistant: Thank you very much.

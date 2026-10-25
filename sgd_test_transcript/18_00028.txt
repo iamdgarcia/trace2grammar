@@ -1,0 +1,31 @@
+user: I need to locate a therapist please.
+assistant: Are you looking for a psychologist, family counselor or something else? And in what city please?
+user: I need a psychiatrist in Sunnyvale.
+tool(FindProvider): ok n_results=1
+assistant: I recommend Sunnyvale Psychiatry, which is a Sunnyvale psychiatrist.
+user: That sounds fine, thank you.
+assistant: Would you like to make an appointment?
+user: Yes, I would.
+assistant: At what time please?
+user: Please make it for 12:30 PM.
+assistant: On what date?
+user: I'd like it for Saturday this week.
+assistant: Confirming an appointment on March 2nd at 12:30 PM at Sunnyvale Psychiatry.
+user: No, please make it for the 11th.
+assistant: Confirming an appointment on March 11th at 12:30 PM.
+user: Thank you, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked and you will receive a confirming email shortly.
+user: I also need a taxi please.
+assistant: Is your destination 505 West Olive Avenue and is there a specific type of ride you would like?
+user: Yes, the address is correct and I would like a luxury ride.
+assistant: For how many people?
+user: It's for two and the destination is Century at Pacific Commons & XD.
+assistant: Confirming a luxury ride for 2 to Century at Pacific Commons & XD.
+user: Yes, thank you.
+tool(GetRide): ok n_results=1
+assistant: The ride is been booked and the taxi will arrive shortly.
+user: When will it be here and how much will it cost?
+assistant: The fare will be $43.29 and the taxi will arrive in 14 minutes.
+user: Thanks so much for your help.
+assistant: You're very welcome.

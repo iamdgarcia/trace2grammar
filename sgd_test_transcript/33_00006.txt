@@ -1,0 +1,22 @@
+user: I would like to find a unisex salon.
+assistant: In which area should I look?
+user: I would like a salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons. There is Berkeley Hair Studio located in Berkeley.
+user: How's the weather there on the 14th of March?
+tool(GetWeather): ok n_results=1
+assistant: It should be around 81 degrees with a 16 percent chance of rain.
+user: How windy is the day going to be?
+assistant: The wind speed should be around 10 miles per hour.
+user: I would like to book an appointment at the salon previously found at a quarter past 6 in the evening.
+assistant: Booking appointment at Berkeley hair studio on March 14th at 6:15 pm.
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: I was unable to book appointment at Berkeley hair studio on March 14th at that time, would you like to go at 6 pm?
+user: Yes, that time works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was confirmed.
+user: Thank you for that.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

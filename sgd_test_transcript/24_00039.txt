@@ -1,0 +1,36 @@
+user: I'd like to find a one way flight from San Diego.
+assistant: Where are you traveling to?
+user: I'm visiting Los Angeles.
+assistant: When would you like to leave?
+user: I'll be leaving on the 7th of March.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There is an Alaska Airlines flight leaving at 11:55 pm for $64.
+user: Is there anything else available? That's pretty late.
+assistant: Southwest Airlines has a flight at 12:20 pm for $67.
+user: Is that an Economy ticket and when will it arrive at the destination?
+assistant: It is an economy ticket and is expected to arrive at 1:14 pm.
+user: That works for me. I'd like to compare train rates.
+assistant: Would that be for March 7th.
+user: No, show me what's available for the 1st.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains that meet your criteria. The first departs at 6:10 am and the tickets cost $57.
+user: I'd like to hear some other options for 3 travelers.
+tool(FindTrains): ok n_results=8
+assistant: The 6:40 am train would be $141 in total.
+user: Are there any departing a little later?
+assistant: For $131, there is a train leaving at 7:30 am.
+user: Perfect. I'd like to buy tickets.
+assistant: Would you like to add trip insurance?
+user: Yes, I definitely want to add insurance.
+assistant: You'd like 3 value tickets with insurance for the 7:30 am train on March 1st leaving San Diego bound for Los Angeles. Is this correct?
+user: Yes, that is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket purchase was successful. You'll receive an email confirmation soon.
+user: Where does this train depart from?
+assistant: It will be departing out of Santa Fe Depot.
+user: Where does it drop off?
+assistant: You will arrive at Union Station.
+user: Great. Thanks for all the help.
+assistant: You're welcome. Is there something else I can help you with?
+user: No, that will be all.
+assistant: Have a wonderful day!

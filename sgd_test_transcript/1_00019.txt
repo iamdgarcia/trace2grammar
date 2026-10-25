@@ -1,0 +1,11 @@
+user: I'd like to make a reservation at a restaurant.
+assistant: Is there a specific restaurant you'd like to make the reservation for?
+user: It's a restaurant called Amalfi, please try that.
+assistant: Where is the restaurant located and what time do you want the reservation for?
+user: I want it for 5:30 in the evening and it should be in Larkspur.
+assistant: I'll make you a reservation at Amalfi in Larkspur for 5:30 pm on March 1st for 2 people. Is that correct?
+user: Yeah, that sounds awesome.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've booked the reservation.
+user: Thanks a lot. That's it for now.
+assistant: Have an excellent rest of your day.

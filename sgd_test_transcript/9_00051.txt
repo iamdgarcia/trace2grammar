@@ -1,0 +1,15 @@
+user: Can you find me a regular movie show that I can watch in Santa Rosa?
+tool(FindMovies): ok n_results=10
+assistant: Would you like to watch movies like After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: I think After the Wedding would be perfect. Can you get me three tickets for the 4:30 pm show on March 10th?
+assistant: Confirm that you want 3 tickets for the 4:30 pm regular show for the movie After The Wedding on March 10th in Santa Rosa.
+user: Yes, that's right. Which is the preferred theater?
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, the reservation failed. Is there anything else I can help you with?
+user: Can you check whether tickets are available for the show at quarter to 4 in the afternoon on March 7th?
+assistant: Please confirm that you want 3 tickets for the 3:45 pm regular show for the movie After The Wedding on March 7th in Santa Rosa.
+user: That's correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you. That's all I need for now.
+assistant: Have a great day!

@@ -1,0 +1,24 @@
+user: Find for me a therapist please.
+assistant: In which city you want to be and what kind of therapist you need?
+user: I need a Psychologist in Santa Rosa.
+tool(FindProvider): ok n_results=10
+assistant: You can try a Psychologist in Santa Rosa called Bert Epstein.
+user: Tell me their phone number.
+assistant: 707-242-1989 is the phone number.
+user: Something else you can find?
+assistant: You may try a Psychologist in Santa Rosa named Blank Gary A.
+user: Something else you could find?I want a Family Therapist and to be someone in San Ramon.
+tool(FindProvider): ok n_results=1
+assistant: You could try a Family Counselor in San Ramon called Withington Deborah.
+user: Sounds very good.Tell me how will be the weather there on 13th of March.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 70 degrees Fahrenheit and a 15 percent chance of rain.
+user: Great.Get back please to book an appointment at 12:30 for the therapist that you found in that day.
+assistant: Book an appointment with Withington Deborah on March 13th at 12:30 pm.
+user: Yes it's okay.Tell me their phone number.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was booked.You should receive an confirmation email soon.925-824-2555.
+user: Tell me their address.
+assistant: 2400 Old Crow Canyon Road is the address.
+user: Thank you for all.Bye!
+assistant: Happy to help!

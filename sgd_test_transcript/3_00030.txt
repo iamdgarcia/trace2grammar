@@ -1,0 +1,13 @@
+user: I am looking for a round trip flight to book
+assistant: Where are you headed and what day do you leave?
+user: I want to leave next Monday heading to Las vegas
+assistant: OK, and when are you coming back?
+user: I want to be back by the 11th of this month
+assistant: What city are you leaving from again?
+user: I'll be coming from Paris
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight via American Airlines at 9:40 am with a 4:25 am return flight for $543 total
+user: That sounds awesome
+assistant: Can I do something else for you
+user: No we're ok for now, thanks for assisting
+assistant: I'm happy I could help, bye!

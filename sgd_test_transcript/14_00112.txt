@@ -1,0 +1,25 @@
+user: I want to search for some songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about the song Khuc Hat Mung Sinh Nhat by Phan Dinh Tung from the album Hat Nhan?
+user: Do you have any metal songs?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. How about A Ghost in the Trenches from the album The Great War by Sabaton?
+user: What else do you have ? I love Pop Songs and heard that album Wake Up Dreaming is good.
+tool(LookupMusic): ok n_results=1
+assistant: How about the song The Zombie Song from the album Wake Up Dreaming by Stephanie Mabey?
+user: Did that come out eight years ago?
+assistant: It is from 2012.
+user: That's it. Are there any good movies online?
+assistant: What genre of movies do you like?
+user: I like future scientific fiction movies. I also like Kirk Raymond.
+tool(FindMovies): ok n_results=1
+assistant: How about Close Encounters of the Third Kind?
+user: Close Encounters of the Third Kind is good. Can you cast that song you found to the speaker outside?
+assistant: Please confirm you want to play The Zombie Song on the Patio.
+user: Yes.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy!
+user: Thank you!
+assistant: Is there anything else I can assist you with?
+user: No thanks.
+assistant: Have a great day!

@@ -1,0 +1,15 @@
+user: Can you find me a movie to watch in Pittsburg at the Maya Pittsburg Cinemas?
+tool(FindMovies): ok n_results=2
+assistant: I found two suggestions for you. How about Overcomer or IT Chapter Two?
+user: Overcomer sounds good. Can you find me a song to listen to? I like Reggaeton songs. Maybe something from '19? I've heard good things about Sexability.
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 suggestion for you. How about Fuckability from Sexability by Vybz Kartel?
+user: That sounds great!
+assistant: Do you want me to play it?
+user: Yes, please.
+assistant: Please confirm: Playing Fuckability in Living Room.
+user: Yes, that sounds great.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: Thanks! That'll be all.
+assistant: Have a great day!

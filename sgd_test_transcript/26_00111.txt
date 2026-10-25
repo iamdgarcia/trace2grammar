@@ -1,0 +1,26 @@
+user: I need to get tickets for a train from Washington to Chi-town. I need the tickets to be fully refundable just in case.
+assistant: Okay. On which date would you like to travel?
+user: I would like to leave on March 14th.
+tool(FindTrains): ok n_results=5
+assistant: How about a train that departs at 9:40 am and costs $128?
+user: That would work for me. Can you also find me something interesting to do there on that day?
+assistant: Are there any particular categories of events that you would be interested in? Such as Music, Theater, or anything else.
+user: I really like Songs and Music.
+tool(FindEvents): ok n_results=9
+assistant: I've found 9 events you might like. How about Ashe which is taking place at Chop Shop on March 11th at 7:30 pm.
+user: They are good, but find me something else. I'm not really interested in that.
+assistant: Conor Maynard is a very popular event. It's also taking place at the Chop Shop, but on March 4th at 7 pm.
+user: That's sounds more like my style.
+assistant: Would you like to purchase tickets to this event?
+user: Nah. Another time. Find me some attractions there that I can have a good time checking out.
+tool(FindAttractions): ok n_results=10
+assistant: I've found 10 attractions which I believe will interest you. You should check out 360 CHICAGO which is a tourist attraction.
+user: Sounds cool, I'll check it out. Can you find me a house to stay at while i'm there? Something with a rating of 4.2 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house located at 1 South Franklin Street with a rating of 4.2. Would that work for you?
+user: Probably. I would like to see some pictures but I'll check it out later.
+assistant: Would you like to make a reservation for the house?
+user: No. Like I said, not right now.
+assistant: Is there anything else that I can assist you with then?
+user: Not right now. That you for your help though, you've been great.
+assistant: I'm always glad to help out. Enjoy the rest of your day.

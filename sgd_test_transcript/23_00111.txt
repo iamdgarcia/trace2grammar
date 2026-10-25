@@ -1,0 +1,36 @@
+user: I'm looking for 2 fully refundable train tickets departing from Sacramento.
+assistant: Where are you traveling to?
+user: I'm going to SFO.
+assistant: When are you departing?
+user: I'm leaving on Wednesday next week.
+tool(FindTrains): ok n_results=10
+assistant: I found 10 trains for you. There is a train departing at 7:30 am for $134.
+user: That sounds good. I'd like to purchase tickets with trip insurance.
+assistant: Okay, you want 2 flexible train tickets for the train traveling from Sacramento to San Francisco on March 6th at 7:30 am, right?
+user: Yes, that is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have purchased the tickets.
+user: What station does it depart from?
+assistant: The train departs from Sacramento Valley Station.
+user: Thank you! I also need to find something interesting to do on that day.
+assistant: Do you prefer any type of event?
+user: I'd like a music event.
+tool(FindEvents): ok n_results=10
+assistant: How about Alex Cameron at August Hall on March 8th at 7 pm?
+user: What else is there?
+assistant: There is Carmina Burana at the San Francisco Symphony on March 14th at 6:30 pm.
+user: How much do the tickets cost and what is the address of the venue?
+assistant: The tickets cost $20 and the address is 201 Van Ness Avenue.
+user: Okay, that sounds good.
+assistant: Do you want to purchase tickets for the event?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: Yes, I want to share the address with Kyle.
+assistant: Okay, you want to share the location of the San Francisco Symphony with Kyle, right?
+user: No, I want to share it with Alan.
+assistant: Okay, you want to share the location of the San Francisco Symphony with Alan, correct?
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: Thanks, that is all I needed.
+assistant: Have a great day.

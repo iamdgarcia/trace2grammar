@@ -1,0 +1,36 @@
+user: I am needing to seek counseling and need a therapist. Will you search for a family counselor?
+assistant: In what city would you like me to search?
+user: Please look in the area of Lafayette.
+tool(FindProvider): ok n_results=5
+assistant: I found one that may work for you in Lafayette. They are under family counselor and are called Building Better Relationships.
+user: Please provide me with their phone number.
+assistant: You may reach them at 925-212-7483.
+user: Also, please give me their address.
+assistant: The address listed is 3470 Mount Diablo Boulevard A200.
+user: Would you also provide me with some other therapists listed?
+assistant: Here is another family counselor in Lafayette. Her name is Cynthia Mansur.
+user: That one sounds good.
+assistant: Would you like to schedule an appointment?
+user: Yes, please schedule an appointment for Monday next week.
+assistant: Do you have a time preference for the appointment?
+user: Yes, please try to schedule around 12 pm.
+assistant: Please confirm you would like a 12 pm appointment on March 4th with Cynthia Mansur.
+user: That is correct.
+tool(BookAppointment): ok n_results=0
+assistant: Unfortunately I was not able to schedule that appointment. May I help with anything else?
+user: Yes, please try scheduling the appointment on the 14th for 1 in the afternoon.
+assistant: Please confirm you would like a 1 pm appointment on March 14th with Cynthia Mansur.
+user: Yes, that is right.
+tool(BookAppointment): ok n_results=1
+assistant: That day worked! Your appointment has been scheduled and you wi receive a confirmation email shortly.
+user: Please provide me with her contact number.
+assistant: You may reach her at 510-508-2169.
+user: Great. Thanks for being so helpful today Now, do you have any movie recommendations?
+tool(FindMovies): ok n_results=10
+assistant: I found the movie The Load which has an average rating of 100.
+user: Does it list the movie director?
+assistant: The movie director of the movie is Ognjen Glavonic.
+user: Great. Thanks very much for your help!
+assistant: Do you need further assistance?
+user: No, that is all for now. Thanks again!
+assistant: You are welcome! It's always a pleasure to assist you!

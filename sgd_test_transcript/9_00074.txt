@@ -1,0 +1,18 @@
+user: Can you help me find a movie?
+assistant: Sure. What is your location?
+user: I want to find movies in Palo Alto.
+tool(FindMovies): ok n_results=4
+assistant: I found you 4 movies: Blinded by the Light, Brittany Runs a Marathon, and Stage Door.
+user: Can you find something else?
+assistant: How about The Ladykillers?
+user: Ladykillers is perfect. Can you buy me some tickets for quarter to 8 in the evening? I want to watch the movie in 3d.
+assistant: For what date?
+user: Get me one ticket for March 1st.
+assistant: Confirming that you want 1 ticket for the 7:45 pm 3d showing of The Ladykillers on March 1st in Palo Alto.
+user: That sounds good. What is the address of the theater?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The Stanford Theatre is located at 221 University Avenue. Your tickets have been confirmed.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: No. Thanks for your help.
+assistant: You're welcome. Have a good day.

@@ -1,0 +1,21 @@
+user: I have some time to relax myself. I am planning to go for a movie and I need your help to find a best movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: Found one movie which is Chhichhore with rating at 60 out of 100. Do you want to watch this movie? Shall I proceed?
+user: That is great and I like it. I also want to search for a restaurant there with Non Meat and affordable price range. I need this in Palo Alto.
+tool(FindRestaurants): ok n_results=1
+assistant: Do you like to eat at Darbar Indian Cuisine which is located in Palo Alto?
+user: Let me confirm before that please get their address for my reference. I addition to that please also check for Vegetarian food there.
+assistant: Yes, they have and also they are having special options for Vegetarian varieties. Please note that their address is 129 Lytton Avenue.
+user: This looks perfect. Thanks.
+assistant: Do you want to reserve the table now? Tell me to do the same.
+user: Yes, of-course. I need a table for 1 on the 6th at evening 5.
+assistant: I want to confirm that you need to book a table for 1 person at Darbar Indian Cuisine in Palo Alto on the date of March 6th for the time 5 pm.
+user: Please change the booking to the time at 12 in the afternoon.
+assistant: Okay. please confirm to book the table at 12 pm in Palo Alto.
+user: That is confirmed. You can book now.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked a table for you in that restaurant for your required time.
+user: It's great and thank you so much.
+assistant: Anything else you want me to do?
+user: Nothing for now and thanks.
+assistant: Have a great day.

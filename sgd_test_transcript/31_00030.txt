@@ -1,0 +1,34 @@
+user: Hi, is there a salon I can visit?
+assistant: Which city are you looking at?
+user: Something in Santa Rosa is great.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salons you might like in Santa Rosa, how about Daredevils & Queens?
+user: Sounds great to me!
+assistant: Do you need an appointment there?
+user: Perhaps at a later time. Could you get me a 3D Play movie at 3rd Street Cinema in that area please?
+tool(FindMovies): ok n_results=1
+assistant: Would you like to watch The Art of Racing in the Rain?
+user: Are there any alternatives?
+tool(FindMovies): ok n_results=0
+assistant: Unfortunately no. Could I further assist you?
+user: Could you search for any comedy movies then?
+tool(FindMovies): ok n_results=1
+assistant: How about a movie titled yesterday?
+user: Yesterday sounds good to me. What time can I watch it?
+assistant: Are you watching it on the March 2nd?
+user: Yes, I am.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is a show at 9 pm at 3rd Street Cinema.
+user: May I have their address please and how much will the ticket cost?
+assistant: The tickets cost $15 and they are located at 620 3rd Street.
+user: I see, sounds great to me!
+assistant: Would you like me to purchase tickets for you?
+user: No, that is not necessary. Thanks!
+assistant: Could I further assist you then?
+user: Could you get me an appointment at the salon at half past 6 in the evening?
+assistant: Please confirm your appointment with Daredevils & Queens at 6:30 pm on March 2nd.
+user: Sounds great! What is their contact number?
+tool(BookAppointment): ok n_results=1
+assistant: You can contact them at 707-575-5123, and your appointment has been made.
+user: Thank you so much, that is all I need.
+assistant: Have a great day ahead!

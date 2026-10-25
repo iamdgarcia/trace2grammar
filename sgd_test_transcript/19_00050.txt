@@ -1,0 +1,19 @@
+user: I need to book a rental car
+assistant: Which location, and from which date?
+user: Can you search in Portland, pick up on the 10th.
+assistant: What time is the pickup and when will you drop off?
+user: Can you make the pickup time 1:30 in the afternoon. i'll return it on the 12th of march.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have located a SUV Alfa Romeo Stelvio pickup from Portland bus Station.
+user: Okay great. Can you check buses to there?
+assistant: What date do you want to leave, and whats your departure location?
+user: I want to go from Seattle, WA on the 3rd. Can you find a direct bus for 4 people.
+tool(FindBus): ok n_results=8
+assistant: I have found a bus departing 7:30 am. The cost is $32.
+user: Any other times?
+assistant: There's also a bus departing 9 am. The cost if $29.
+user: Okay. Can you find a one-way premium economy flight instead? I want to leave next Tuesday, any airline is fine.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I have a direct Delta Airlines flight departing at 5:35 pm. The cost is $109.
+user: Okay thanks that's all for now
+assistant: No worries.

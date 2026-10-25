@@ -1,0 +1,20 @@
+user: I need a hotel in Toronto, Ontario.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options, such as Best Western Plus Toronto North York Hotel & Suites, as a 3 star hotel.
+user: Okay, what about attractions there. I need Place of Worship, and something with no entry fee.
+tool(FindAttractions): ok n_results=1
+assistant: You should see Madinah Masjid, as a Place of Worship.
+user: Any other attractions, such as a garden?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions to interest you, such as Allan Gardens, as a Park.
+user: Okay, I need to reserve a hotel.
+assistant: When would you like to check in? Length of stay?
+user: I need to stay for seven days and to enter on the day after tomorrow.
+assistant: So, 1 room in Best Western Plus Toronto North York Hotel & Suites, on March 3rd for 7 days in Toronto.
+user: Yes, indeed. Contact number? Smoking allowed?
+tool(ReserveHotel): ok n_results=1
+assistant: Booking is successful. The reception number is +1 416-663-9500, and no smoking is allowed on property.
+user: Thank you for that.
+assistant: Anything else?
+user: No, thanks for that.
+assistant: Of course. Have a wonderful day.

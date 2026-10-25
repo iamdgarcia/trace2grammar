@@ -1,0 +1,32 @@
+user: I want to go to see some tourist attractions,
+assistant: Which city will I search for?
+user: In London, England, I fancy a performance venue.
+tool(FindAttractions): ok n_results=10
+assistant: There is Alexandra Palace which is a Performing Arts Venue.
+user: That sound fab. Could you also assist me in finding a rental car?
+assistant: For what date and at what time will you be collecting the car?
+user: I want it on the 9th and will be collecting it at half past 12 in the afternoon.
+assistant: collecting it from London?
+user: yes that all sounds right.
+assistant: What date will you be returning the car?
+user: on the 12th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 options for you. There is Sedan Audi A8 at Heathrow International Airport.
+user: I like the sound of that, please book it for me.
+assistant: Do you need insurance?
+user: yes I do want insurance.
+assistant: To confirm then you will be renting a Sedan car from March 9th to March 12th, with insurance. You will be collecting it at 12:30 pm from Heathrow International Airport.
+user: that is all correct. How much will it cost each day.
+tool(ReserveCar): ok n_results=1
+assistant: It will cost $48.00 each day and I can confirm your booking is successful.
+user: Great, now will you share the location?
+assistant: Which location - Heathrow International Airport? or Alexandra Palace or somewhere else?
+user: Share Alexandra Palace.
+assistant: With whom will I share it?
+user: With Linda please.
+assistant: To confirm then you are sharing Alexandra Palace with Linda.
+user: that is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has now been shared.
+user: That is all I need but thanks for your help, much appreciated.
+assistant: have a lovely day.

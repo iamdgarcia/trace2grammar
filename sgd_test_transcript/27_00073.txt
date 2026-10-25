@@ -1,0 +1,41 @@
+user: I want to go for a short trip and I want you to help me to find a nice bus and any type of bus is okay with me whether it is a direct or not.
+assistant: From which place you want me to book the bus?
+user: Book it from Long Beach.
+assistant: To which place you are planning to visit? and let me know the starting date of your travel.
+user: I need to book a bus on 4th of March to LA.
+tool(FindBus): ok n_results=10
+assistant: Okay, can you tell whether you want to travel through a bus which is departing at 6 am for the ticket cost $12?
+user: Let me know the origin and destination stations of this bus to decide.
+assistant: It will leave from Downtown Station and the same will reach finally to North Hollywood Station. Any more information you need?
+user: No, please search for some other buses and I need to book three tickets in that bus.
+tool(FindBus): ok n_results=10
+assistant: I think a bus which is leaving at 6:20 am is the convenient one to you and the ticket cost for the same is $13.
+user: This is also not okay to me. Please search to find some other buses.
+assistant: Okay. What about a bus which is going to depart at 6:50 am for the ticket cost $11?
+user: Yes, this is okay. Thanks for your help to find a good bus.
+assistant: Shall I book the tickets now?
+user: No, I will ask for the tickets later.
+assistant: What else you want me to do now?
+user: Find me some attractive places to visit and any type of places with free entrance is okay to me.
+tool(FindAttractions): ok n_results=10
+assistant: What about you opinion on a Historical Landmark. Do you like to visit this kind place, if so then you can try to go to Angels Flight Railway which is the most popular attractive place.
+user: Please check whether this place is safe for kids also.
+assistant: Yes, you can bring your kids to that place and this place is safe to Children.
+user: That's nice. Get me their contact number for my future reference.
+assistant: It is 213-626-1901.
+user: That's okay and thanks.
+assistant: How can I assist you further?
+user: I want your help to book the tickets to the bus that I have selected before.
+assistant: Please confirm to book 3 tickets on the bus from Long Beach on March 4th at 6:50 am to Los Angeles without any extra luggage.
+user: Sorry, book it with extra luggage.
+assistant: Please confirm to book the tickets to the bus from Long Beach with extra luggage.
+user: That is confirmed to proceed and inform me the station name to which the bus will reach finally.
+tool(BuyBusTicket): ok n_results=1
+assistant: This bus will reach finally to North Hollywood Station and your tickets are booked.
+user: Thanks for the booking and what about the station from which the bus will leave?
+assistant: I will leave from downtown Station.
+user: Thanks for the details. Now, I want to find hotels in that area and I need your help to find the same.
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 results and what about the one named Ac Hotel By Marriott Beverly Hills with 3 stars?
+user: This is nice and thanks for the same. That's all for now.
+assistant: Have a good day.

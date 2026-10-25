@@ -1,0 +1,28 @@
+user: I have a plan to go for a short trip for which I need a bus. I want your help to search for the suitable one.
+assistant: Let me know the following details to search for the same. What is your expected place and date of leaving from and to which place you are going to visit?
+user: I need a bus from Fresno on this Sunday to Las Vegas.
+tool(FindBus): ok n_results=10
+assistant: I got 10 results. What about the one which will leave at 7:10 am and the cost of ticket is $37. Do you want this bus?
+user: Yes, I prefer this bus.
+assistant: Shall I book the tickets now?
+user: No, not now. We will discuss it later. Now, I want to go to some attractive places for which I need your help to find the good one.
+tool(FindAttractions): ok n_results=10
+assistant: What about your opinion on a Museum. Do you like to go there? If so then you can try to visit DISCOVERY Children's Museum.
+user: Let me know their contact number and I will decide and tell you.
+assistant: Please note down their phone number as 702-382-5437.
+user: Also get me some more details. Whether this place is safe for Kids? Entry is free there?
+assistant: Sorry, this place is not good for little Children and no free entrance is available there.
+user: That's okay. Please buy the bus tickets to one that I have selected before.
+assistant: Let me know the number of tickets required by you.
+user: I need four tickets.
+assistant: Please confirm to book 4 tickets on a bus from Fresno to Las Vegas for the date March 3rd at 7:10 am without any extra luggage.
+user: That is okay to proceed. Check about the number of stops as I need one-stop bus.
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct bus and your tickets are booked.
+user: Thanks for that help. Also I need a hotel to stay there and it should be a three -star hotel. Please book 1 room for me.
+tool(SearchHotel): ok n_results=3
+assistant: What about your convenience to stay in a hotel named Best Western Plus Las Vegas West which is also a 3 star hotel? I think this is the best one among the 3 hotels that I searched for you.
+user: I want to know their address for my reference. I will tell my opinion later.
+assistant: Their address is 8669 West Sahara Avenue and I will wait for your confirmation on this hotel.
+user: Thanks for the information and we will discuss some times later. That's all for now and Bye.
+assistant: Have a good day.

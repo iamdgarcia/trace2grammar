@@ -1,0 +1,18 @@
+user: I'm looking for a train. Can you help?
+assistant: Sure, but first please tell me your destination.
+user: My destination is San Francisco.
+assistant: Perfect, now tell me when and from where are you departing.
+user: I'll be travelling on the 11th from LAX.
+tool(FindTrains): ok n_results=8
+assistant: There's a train with tickets costing $86 departing at 7:50 am.
+user: Can you please tell me the departure and destination stations?
+assistant: Sure, it departs from Union Station, arriving at Salesforce Transit Center.
+user: Sounds perfect. Now lets find a house to stay for three people at destination, with laundry service, rated at least 3.8.
+tool(SearchHouse): ok n_results=10
+assistant: I found a very nice house at 1095 Market Street, rated at 3.8.
+user: Sounds perfect.
+assistant: Do you want me to place a reservation for you?
+user: No, not at this time.
+assistant: Is there anything else I can help you with?
+user: No, not at the moment. Thanks for everything.
+assistant: My pleasure. Have a nice day!

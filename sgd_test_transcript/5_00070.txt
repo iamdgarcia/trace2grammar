@@ -1,0 +1,11 @@
+user: I need to see a therapist.
+assistant: What type of therapist?
+user: I want to see a psychologist in SFO.
+tool(FindProvider): ok n_results=4
+assistant: There are 4 therapists available in San Francisco. What about a psychologist called Adam E. pollock?
+user: Yes, that would be fine.
+assistant: Would you like me to schedule an appointment for you
+user: No, not at this time.
+assistant: Would you be needing anything else?
+user: Not at this time, but thanks for asking.
+assistant: That was my pleasure.

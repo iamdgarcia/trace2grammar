@@ -1,0 +1,17 @@
+user: I am looking for some child friendly attractions in Nairobi.
+tool(FindAttractions): ok n_results=2
+assistant: How about a Nature Preserve called Giraffe Centre?
+user: That sounds great. Can you find me a house to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: How about a house with 4.5 rating located at 9042/1044 Tower Avenue Jomo Kenyatta Intl Airport, Kenya?
+user: Find me their contact number please?
+assistant: You can contact them at +254 709 760000.
+user: This house sounds nice to me. Can you find me a round trip flight to there?
+assistant: Which is your city and date of departure?
+user: I will be leaving from NYC on March 3rd.
+assistant: And What will the date of departure for the return flight?
+user: I will be returning on March 14th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: How about an American Airlines flight with time of departure for onward flight as 10:55 am and for return flight as 10:50 pm. The total cost for the ticket is $488.
+user: The flight sounds great to me. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

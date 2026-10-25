@@ -1,0 +1,22 @@
+user: Is there a salon in Santa Rosa that you can find for me?
+tool(FindProvider): ok n_results=9
+assistant: In Santa Rosa, may I recommend Daredevils & Queens as a potential salon?
+user: Sounds good, is there any movies I can watch in that area?
+tool(FindMovies): ok n_results=10
+assistant: There is 10 movies showing in that area, would you be interested in watching After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: I think I will go with Good Boys, what showings are available for it?
+assistant: Would you be watching this movie on March 2nd?
+user: That is correct, so what showtimes can you find?
+tool(GetTimesForMovie): ok n_results=2
+assistant: At the Airport Stadium 12, there is one showtime at 9:30 pm.
+user: Also, what kind of movie is it?
+assistant: The movie is considered a comedy movie.
+user: All right, please make an appointment to the salon you found at quarter to 12 in the morning.
+assistant: An appointment will be made on March 2nd at 11:45 am at Daredevils & Queens.
+user: Sounds good, what is the average rating of the salon, and is it a unisex salon?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been made to the salon, which has an average rating of 4.6 and is not a unisex salon.
+user: Understood, thanks for all the help.
+assistant: May I assist you with anything else for today?
+user: That will be all, thank you very much.
+assistant: Your welcome, have a pleasant day.

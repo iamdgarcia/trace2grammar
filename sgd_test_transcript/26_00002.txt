@@ -1,0 +1,37 @@
+user: I need a round trip flight from New York City please
+assistant: What date are you travelling and when are you coming back?
+user: I want to start on the 4th of this month and return on the 14th
+assistant: Where are you going?
+user: I am flying to Seattle, WA via American Airlines
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight on American Airlines that has a 1:40 pm onward flight with a layover and has a returning flight at 4:15 pm for $493, how's that sound?
+user: That sounds good. Now find me a 4.5 rated place or higher to stay in with laundry service
+tool(SearchHouse): ok n_results=10
+assistant: There's a house at 1000 1st Avenue with a 4.5 rating you might be keen on
+user: What's their number?
+assistant: You can reach them at +1 206-957-1000
+user: OK that's great
+assistant: Do you want to reserve that house?
+user: Yes please book it
+assistant: Are you checking out on March 14th or another date?
+user: I want to check out on the 10th, and there will be two of us
+assistant: Do you want to Check in on March 4th?
+user: I want to check in on Friday next week
+assistant: Confirming your stay in Seattle for 2 on March 8th till March 10th
+user: Yes confirm that
+tool(BookHouse): ok n_results=1
+assistant: It has been reserved
+user: How much will that cost me?
+assistant: It'll be $396 total
+user: Thanks for your help!
+assistant: What else can I help with?
+user: Find me an attraction to visit
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 uncluding Alki Beach Park which is a beautiful park there
+user: Is it child friendly? Is it free to visit?
+assistant: No there's an entrance fee but it is a great place for kids
+user: What else can you find for me then?
+tool(FindAttractions): ok n_results=9
+assistant: I found 9 attractions, how about Bill Speidel's Underground Tour, it's a neat Tourist Attraction
+user: I see, ok thanks for the info, that's it for now though
+assistant: OK got you, thanks!

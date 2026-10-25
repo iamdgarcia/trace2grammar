@@ -1,0 +1,18 @@
+user: Would you find me a bus?
+assistant: Where will you leave from and where will you go?
+user: I will go from Las Vegas to Anaheim, CA.
+assistant: When will the trip be?
+user: I will leave on March 10th.
+tool(FindBus): ok n_results=4
+assistant: How about a 6:40 am departure for $31?
+user: That's great. I'd like to buy bus tickets.
+assistant: How many tickets do you need?
+user: I need 1 ticket.
+assistant: Could you confirm that you want to leave from Las Vegas and go to Anaheim on March 10th at 6:40 am and that you need 1 ticket? You do not have extra luggage.
+user: Sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have confirmed your ticket.
+user: Thanks for helping.
+assistant: Could I help with something else?
+user: No, that's it.
+assistant: Have a good one.

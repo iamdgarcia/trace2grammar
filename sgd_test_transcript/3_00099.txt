@@ -1,0 +1,15 @@
+user: I need a rental car.
+assistant: What are your pick up and drop off dates?
+user: Find me a nice Sedan for March 6th until March 9th.
+assistant: What city will you be needing the car in?
+user: Find me cars in Seattle.
+assistant: What is your pick up time?
+user: I want to pick the car up at 14:00.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I found you a nice Buick Regal Sportback Sedan. It is available at the Seattle-Tacoma International Airport.
+user: For how much?
+assistant: The car rental is $34.00 per day.
+user: That sounds good.
+assistant: Would you like to reserve the rental car?
+user: No, not now. That's all I need. Thanks!
+assistant: You're welcome. Have a good day.

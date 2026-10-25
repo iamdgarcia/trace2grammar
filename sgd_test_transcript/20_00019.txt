@@ -1,0 +1,26 @@
+user: Hi, please find me some htels.
+assistant: What city should I look for hotels in?
+user: Please find me hotels in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I managed to find a hotel called 45 Park Lane, it's a 5 star hotel.
+user: Is there anything else I might like? I need one room and I need a hotel that allows smoking.
+tool(SearchHotel): ok n_results=10
+assistant: I found Abbey Court Hotel (Hyde Park) which is a 3 star hotel.
+user: How much is the room per night and where are they located?
+assistant: You can find them at Sussex Gardens and the cost is $93 per night.
+user: That works. Can you also find me a rental car, preferably a Sedan? I'd like to pick it up at 15:30 on March 8th.
+assistant: Would you like to pick up the car on March 6th?
+user: Yes, that would be great.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I managed to find 6 cars that you may like. There's a car available at Heathrow International Airport, it's a Sedan Audi A8.
+user: That sounds good to me, please reserve the car for me.
+assistant: Would you like any added insurance?
+user: No, I think I'll be fine.
+assistant: So you'd like to pick up a car from Heathrow International Airport on March 6th at 3:30 pm until March 8th. You'd like a Sedan with no added insurance. Is this correct?
+user: Sounds good to me. How much will I be paying per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car rental has been booked. You will be paying $34.00 per day.
+user: Thanks, I appreciate your help.
+assistant: Is there anything else I can assist you with today?
+user: That will be all, thank you.
+assistant: Have a wonderful day.

@@ -1,0 +1,31 @@
+user: I know I can count on you to help me find a hotel so I can go to the studio sessions. Would you please help me with that now?
+assistant: Sure, I can help you with that. What city do you want for the hotel?
+user: Check on hotels in KL, please.
+tool(SearchHotel): ok n_results=10
+assistant: Okay. Of the 10 hotel options I'm showing, do you want to consider the Alila Bangsar that has 5 stars?
+user: Does the hotel permit smoking?
+assistant: No smoking is permitted at this hotel.
+user: Okay. What about two rooms in a hotel that has three stars?
+tool(SearchHotel): ok n_results=10
+assistant: The Alpha Genesis Hotel has 3 stars.
+user: What's the nightly rate at that hotel?
+assistant: The hotel's nightly rate is $144.
+user: That's a good one.
+assistant: Shall I make a reservation for you at that hotel?
+user: Hmm, let me think about that. Would you also check on round-trip flights out of SF, please?
+assistant: Okay. Is your departure date March 8th, and what is the date for your return?
+user: Yep, correct departure date and I want to return on March 10th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: All right. I see that American Airlines has 1 flight available, departing at 4 am, with a return time of 10:30 am for a fare of $587. Is that of interest to you?
+user: That is quite nice. First, let's go back and set up a reservation for the hotel you suggested.
+assistant: Okay. Please tell me if your check-in date is March 8th and how many days you want for your stay.
+user: Yep, a March 8th check in for six days would be highly appreciated.
+assistant: Got it. Are you ready to confirm a reservation for 2 rooms on March 8th at the Alpha Genesis Hotel in Kuala Lumpur and a stay of 6 days?
+user: I'm ready for you to confirm that, please. Does this hotel permit smoking, and what's the address there?
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel reservation is confirmed. This hotel permits smoking, and the address there is 45, Tengkat Tong Shin, Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan.
+user: Great. You're a super assistant. Now, please check for attractions, perhaps a child-friendly Place of Worship that has no entry fee.
+tool(FindAttractions): ok n_results=1
+assistant: Sure. Would you like to go to the Thean Hou Temple that I'm showing is a Place of Worship?
+user: That could be a very nice choice. Let's call it a day for now.
+assistant: Okay. Enjoy your day.

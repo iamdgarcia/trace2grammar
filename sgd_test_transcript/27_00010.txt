@@ -1,0 +1,27 @@
+user: Hi, could you find me attractions to visit in the SF area?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, how about a Historical Landmark called Alcatraz?
+user: I see, could you get me a movie at AMC Kabuki 8 in that area? Preferably a regular Drama movie.
+tool(FindMovies): ok n_results=2
+assistant: Would you like to watch Brittany Runs a Marathon or Hustlers?
+user: Are there any alternatives? Could I watch an iMax show at Roxie Theater please?
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you may like, how about This Is Not Berlin.
+user: This Is Not Berlin is great!
+assistant: Would you like me to purchase tickets for you?
+user: No, that is not needed.
+assistant: Could I further help you then?
+user: Could you find me movies online please.
+assistant: Any specific genre you are looking at?
+user: Some drama movies will be great.
+tool(FindMovies): ok n_results=10
+assistant: Would you like to watch A Faithful Man, After The Wedding or Blinded by the Light?
+user: After The Wedding sounds great! Could you play the movie now with French Subtitles.
+assistant: Please confirm your request to play After The Wedding with French subtitles.
+user: Yes, that is great.
+tool(PlayMovie): ok n_results=1
+assistant: Your movies has been played. Enjoy!
+user: Thank you so much.
+assistant: Could I further assist you then?
+user: No, that is all I need. Thanks!
+assistant: Have a great day ahead!

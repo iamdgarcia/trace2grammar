@@ -1,0 +1,17 @@
+user: I'm looking for a movie to watch.
+assistant: What city do you want to search in?
+user: I want to see a movie in San Ramon.
+tool(FindMovies): ok n_results=6
+assistant: I found 6 movies for you. How about Angel Has Fallen, Hustlers, or IT Chapter Two?
+user: What else is there?
+assistant: There is Once Upon a Time in Hollywood, The Angry Birds Movie 2, and The Art of Racing in the Rain as well.
+user: Racing in Rain sounds great. I'm also looking for a song from two years ago by Linkin Park.
+tool(LookupMusic): ok n_results=3
+assistant: There is the song Battle Symphony by Linkin Park from the album One More Light.
+user: Yes, that is the one! I want to play the song on the patio.
+assistant: Okay, you want to play the song Battle Symphony on the Patio, right?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: I have started playing the song, enjoy!
+user: Thanks! That is all I needed.
+assistant: Have a great day.

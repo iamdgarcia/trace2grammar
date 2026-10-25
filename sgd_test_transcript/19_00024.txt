@@ -1,0 +1,21 @@
+user: I would like to find a rental car and I want to pick it up at 8 pm.
+assistant: Where do you want to pick the car up and until when do you want to keep the car?
+user: I want the car until March 13th and I would like to get it in Portland.
+assistant: When are you wanting to start the car rental?
+user: I would like to start on the 10th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found 10 cars available. I found a nice SUV Alfa Romeo Stelvio at Portland Bus Station.
+user: What is the price of the car per day?
+assistant: The price is $40.00 per day.
+user: Is there anything else you can find?
+assistant: There is a nice SUV Dacia Duster that you can get at Portland Bus Station.
+user: That sounds good. How about buses going there? I need tickets for 4 people leaving from Seattle and we want to leave on the 8th.
+tool(FindBus): ok n_results=8
+assistant: I have located 8 buses for you. What do you think of the bus that leaves at 7:30 am? This bus costs $31.
+user: That sounds very good.
+assistant: Would you like to buy tickets to ride this bus?
+user: I don't want to do that now. I want to find a one-way flight that goes there and I would like to leave on the 1st.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: Do you want to fly with Southwest Airlines? There is a direct flight costing $64 that leaves at 5:15 am.
+user: That sounds fine. Thank you, that was all I wanted.
+assistant: Have a wonderful day.

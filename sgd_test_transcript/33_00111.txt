@@ -1,0 +1,17 @@
+user: I want to find some new attractions.
+assistant: Where would you like to search?
+user: London.
+tool(FindAttractions): ok n_results=10
+assistant: 30 St Mary Axe (The Gherkin) is a cool historical landmark.
+user: Cool! I also need a house to stay at while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: I found a house rated 4.3 at 1 Addington Street.
+user: Is laundry service available?
+assistant: Yes, there is!
+user: That house will be perfect! I also need a flight from Washington on March 2nd. I prefer economy seats.
+assistant: On what day are you returning?
+user: 8th of this month.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found 2 flights including a Delta Airlines flight that leaves at 12:55 pm for $490. The return flight leaves at 3:55 am.
+user: Thanks! That is all I need!
+assistant: Have a nice trip!

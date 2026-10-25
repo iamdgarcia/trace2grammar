@@ -1,0 +1,19 @@
+user: I am looking for a rental car.
+assistant: When do you want to return the car?
+user: I would like to keep the car till 8th of this month.
+assistant: What will be the time of pick up?
+user: I would like to pick it up at morning 11:15.
+assistant: What will be the date of pick up?
+user: I would like to pick the car on the 5th.
+assistant: What is your preferred city?
+user: I would like to book the car in Portland, OR.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a nice Sedan car of Buick Regal Sportback available for pick up at PDX International Airport?
+user: Is there anything else?
+assistant: How about a nice SUV car of Dacia Duster available for pick up at Union Station?
+user: Can you find me it's cost per day?
+assistant: The cost for the car per day is $38.00.
+user: Okay, That sounds good.
+assistant: Can I help you anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

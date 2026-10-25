@@ -1,0 +1,38 @@
+user: Hey, I was wondering if you could maybe find me some interesting stuff to do.
+assistant: I can do that for you, but first I'll need to know which city you would like me to search in, and whether or not you have a preference for the type of events.
+user: I'm in the Vancouver, BC area so I'd like something around there, maybe a play or something.
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events which match the criteria you've given me. How about Alice In Glitterland, which is taking place at The Wise on March 13th at 4 pm.
+user: That's would be fantastic. Sounds like fun.
+assistant: Would you like to purchase tickets to this event?
+user: Not right now, but possibly later. Find me buses going there.
+assistant: Would you like to leave on March 13th? Also where would you be leaving from?
+user: No, I'd like to leave on the 9th of this month from Seattle, WA.
+tool(FindBus): ok n_results=10
+assistant: I've found 10 buses that would meet that criteria. How about a bus with a ticket price of $30 that departs at 6:10 am?
+user: That would work for what I need.
+assistant: Would you like to purchase tickets for this bus?
+user: I would not. I'm actually thinking about a round trip flight. Find me a flight with Delta Airlines that offers a Premium Economy class ticket. I want to travel on the 11th of this month.
+assistant: You said you would like a round trip flight. On which day would you like to take the return flight?
+user: On the 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I've found a flight with Delta Airlines. The onward flight takes off at 4:10 am and has a layover. The returning flight takes off at 6:35 am. The ticket cost is $534.
+user: That is a decent price. I'll keep it in mind. How about hotels in the area? I need 2 rooms and would like a 4 star hotel. I need to be able to smoke in the hotel as well.
+tool(SearchHotel): ok n_results=2
+assistant: There is a nice 4 star hotel in the area called the Auberge Vancouver Hotel.
+user: What's their street address and phone number?
+assistant: Their street address is 837 West Hastings Street and the phone number is +1 604-678-8899.
+user: That's not going to work for me. Find me a 3 star hotel instead.
+tool(SearchHotel): ok n_results=1
+assistant: There is a nice 3 star hotel called Gec Granville Suites Hotel.
+user: That sounds decent enough.
+assistant: Would you like to make a reservation?
+user: No, I need more time to think about it, but thank you.
+assistant: You're welcome. Is there anything else that I could help you with?
+user: Yes. Buy me 3 tickets to the event you found earlier.
+assistant: You would like 3 tickets to Alice In Glitterland in Vancouver on March 13th. Is that correct?
+user: Yes that is correct. Can you also tell me where the venue is located and how much each ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased. The ticket price was $20 each and the venue address is 1882 Adanac Street.
+user: Great, thank you again. That will be all.
+assistant: You're welcome. Have a great day.

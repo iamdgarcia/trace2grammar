@@ -1,0 +1,21 @@
+user: I want to find an event. I think Calliope Musicals At Alphaville is the good one. Please search for some thing in NYC and I need to book two tickets.
+assistant: In which date you want to go for the event?
+user: Find the one on the 13th.
+assistant: Okay, give me your confirmation to book 2 tickets for the event Calliope Musicals At Alphaville on March 13th in New York.
+user: Yes, confirmed and you can proceed now.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking was successfully confirmed and you can enjoy there.
+user: Thanks for the same and let me know the Venue address.
+assistant: Please note that the venue address is 140 Wilson Avenue, Brooklyn.
+user: Okay, thanks. I want to search for a bus to go there. Please find me a direct bus from Washington on next Tuesday.
+tool(FindBus): ok n_results=7
+assistant: Found a bus which is going to leave at 6:20 am for the cost $38. Do you want to travel on this bus?
+user: Yes, I want the same. please book the tickets for me.
+assistant: I need your confirmation to book 2 tickets on the bus which is going to leave at 6:20 am from Washington on March 5th to New York without extra luggage.
+user: Okay to proceed.
+tool(BuyBusTicket): ok n_results=1
+assistant: Tickets were booked successfully.
+user: Let me know the origin and destination station.
+assistant: The bus will leave from Silver Spring Bus Stop and reach finally at Penn Station.
+user: Thanks a lot and that's all.
+assistant: Have a good day.

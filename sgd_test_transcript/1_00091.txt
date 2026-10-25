@@ -1,0 +1,16 @@
+user: I would like to search a hotel.
+assistant: Which is your preferred city?
+user: Search for the hotels in SD.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which might interest you. What about a 3 star hotel called Bahia Resort Hotel?
+user: That sounds great to me.
+assistant: Do you want me to reserve the hotel?
+user: Yes, Please reserve the hotel for me.
+assistant: What is your expected date of check in and the duration of stay?
+user: I would like to check in on March 1st and I will be staying for 5 days.
+assistant: Please confirm: You want me to reserve 1 room in Bahia Resort Hotel located in San Diego for 5 days. And My check in date will be March 1st.
+user: Okay! That sounds great to me.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked the room in the hotel.
+user: That will be all for now. Thank you for all your help!
+assistant: I am glad I could help. Bye! Have a nice day!

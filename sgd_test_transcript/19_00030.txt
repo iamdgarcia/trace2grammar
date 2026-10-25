@@ -1,0 +1,32 @@
+user: I'm going on a business trip for conference and need to find a rental car.
+assistant: First tell me where you would like to pick the rental car up from.
+user: I will be picking it up from Las Vegas.
+assistant: Okay, and what day and time would you like to pick the vehicle up?
+user: I would like to pick it up at 3 o'clock in the afternoon on the 5th of March.
+assistant: And when will you be returning the vehicle?
+user: As of right now I plan to return the vehicle on March 8th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Of the 10 cars that I have found I think you will like the Sedan, it is an Audi A8 at Union Plaza.
+user: That sounds okay but how must does it cost per day?
+assistant: The cost of that particular vehicle is $31.00 a day.
+user: That sounds good. Next I need to find a bus that is traveling there.
+assistant: Sure, first I need to know the location you will be departing from.
+user: I am leaving my home in SF.
+assistant: Okay, and when are you planning to leave?
+user: I have to leave this Sunday.
+tool(FindBus): ok n_results=6
+assistant: There is a bus that leaves at 7:50 am and the ticket price is $50.
+user: First can you tell me the name of the stations that it leaves from and arrives at?
+assistant: Sure, It will be departing Transbay Terminal and arriving at Union Plaza.
+user: No, that's not going to work for me. Can you find me a bus for four people, and I have no preference on whether or not it is a district bus.
+tool(FindBus): ok n_results=5
+assistant: The one I think you may be most interested in out of the 5 I found leaves at 9:30 am costing $53.
+user: Great, now I need to find a one way flight to get me there.
+assistant: Okay, but first tell me if you are planning on leaving on March 3rd, March 5th, or another day entirely.
+user: This mode of travel will be on the 4th of March.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: I can see here that Alaska Airlines has a direct flight that departs at 3:40 pm and costs $103.
+user: That sounds like exactly what I am looking for!
+assistant: Is there anything else I can help you find?
+user: No, thank you, you've been a great help and I really appreciate it!
+assistant: I'm happy to help, have yourself a great day.

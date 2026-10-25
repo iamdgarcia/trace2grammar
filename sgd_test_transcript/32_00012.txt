@@ -1,0 +1,29 @@
+user: I want to meet a Therapist and I need your help to find someone suitable for me.
+assistant: What kind of Therapist that you want to meet. A Psychologist or a Family Counselor or any other Therapist? If you tell me your option the I can search it quickly.
+user: I need to meet a Family Therapist in San Jose.
+tool(FindProvider): ok n_results=8
+assistant: Okay, I searched and got 8 results. Do you want to meet a Family Counselor named Banner Linda L. in San Jose?
+user: I have to decide, before that please let me know their address and phone number. Later will discuss about the appointment.
+assistant: They are located at 2516 Samaritan Drive and you can contact them on 408-358-7401.
+user: I want to find some other Therapist.
+assistant: You can meet Carney-Carder Gail D who is also a Family Counselor in San Jose. What do you think?
+user: Yes, I prefer this Therapist.
+assistant: Shall I make fix the appointment now?
+user: Yes, do it for me. I need to book it for the time evening 4:15 on 11th of this month.
+assistant: I need your confirmation to book an appointment with Carney-Carder Gail D for the time 4:15 pm on March 11th.
+user: That is confirmed to proceed. I want to know their contact details like address, phone numbers.
+tool(BookAppointment): ok n_results=1
+assistant: Please note that their address is 1101 South Winchester Boulevard # A101 and phone number is 408-296-2926. But I was not able to book the appointment for your required time. I can get the same for 4 pm on the same day March 11th. Do you want to continue to fix an appointment for the new time with Carney-Carder Gail D.
+user: Yes, this time is also okay for me.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment at the new time.
+user: Thank you so much. Do you have any options for nice movies?
+tool(FindMovies): ok n_results=10
+assistant: Yes, What about In Fabric? which is a nice movie with rating 96 out of 100.
+user: I want to watch a Scientific fiction movies. Search for something which will meet my requirement.
+tool(FindMovies): ok n_results=2
+assistant: What about Ad Astra. Which is a Sci-fi movie and it got rating at 84 out of 100 in average. Do you like to watch it?
+user: Yes, I like this movie.
+assistant: How can I assist you further?
+user: No, Thanks for your help.
+assistant: Have a good day.

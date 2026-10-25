@@ -1,0 +1,34 @@
+user: Hey, can you get me a conditionally refundable ticket on a train leaving from Anaheim on the 1st of this month?
+assistant: What's your planned destination?
+user: It is Sacramento.
+tool(FindTrains): ok n_results=10
+assistant: There's a train departing at 6:50 am and the ticket costs $134.
+user: Any other option?
+assistant: There's one departing at 7:10 am costing $148.
+user: Sounds like a good one.
+assistant: Should I book the tickets?
+user: Not now, thanks. First find me something fun to do then.
+assistant: What kind of events do you like the most? Like something with Music or a Theater...
+user: I love anything with Songs.
+tool(FindEvents): ok n_results=6
+assistant: Great. The Aftershock Festival at Discovery Park should be a great option for you, it will occur on March 5th at 5:30 pm.
+user: Oh, good. Any other event?
+assistant: The Aftershock Music Festival at Discovery Park will also take place on March 5th at 4 pm.
+user: How much is the tickets?
+assistant: It costs $55.
+user: Good to know. Any other events available?
+assistant: Popa Chubby at the Sofia Tsakopoulos Center for The Arts is also very popular, it will happen on March 3rd at 6 pm.
+user: Sounds real good.
+assistant: Should I book the tickets?
+user: Not now, but thank you.
+assistant: Anything else I can help you with?
+user: Can you show me some attractions I could go to there?
+tool(FindAttractions): ok n_results=8
+assistant: The California State Capitol Museum is a great Museum over there.
+user: Is it child friendly? So they charge an entrance fee?
+assistant: They don't charge an entrance fee but unfortunately it's not a great place for kids.
+user: Oh, okay. Help me find a house for two I can stay in over there please.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 options. There's a nice one rated 4.4 at 100 Capitol Mall if you're interested.
+user: Sounds great. This is all I need for now, thanks.
+assistant: Have an amazing day.

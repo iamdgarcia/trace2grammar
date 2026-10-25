@@ -1,0 +1,28 @@
+user: I'm looking for event tickets. I'll need at least 4 around the Los Angeles. I hear No More Toys is a good one.
+assistant: Is there a particular day you would like the tickets for?
+user: March 6th please.
+assistant: Okay. Just to confirm, you would like to book 4 tickets to the March 6th show No More Toys in Los Angeles, is that correct?
+user: Yes, that'll work.
+tool(BuyEventTickets): ok n_results=1
+assistant: Okay, your reservation has been confirmed. Have a wonderful time.
+user: Where is it located? When will it start?
+assistant: It starts at 7:30 pm at 1157 North McCadden Place.
+user: Awesome, thank you. Are there any buses going there from Sacramento, CA?
+assistant: Will you be departing on March 6th?
+user: No, I'll leave on Monday next week.
+tool(FindBus): ok n_results=3
+assistant: Sure. There's a $51 bus leaving at 7:40 am. Will that work?
+user: No, I'm looking for a direct bus from Anaheim.
+tool(FindBus): ok n_results=10
+assistant: Okay, there are 10 buses that fit your search. There is a $13 bus that departs at 7:50 am. Will that work?
+user: Where does it leave from?
+assistant: It will depart from Anaheim Bus Station.
+user: Sure, that works.
+assistant: Is there anything else I can help you with.
+user: I'd like to buy the tickets to the bus.
+assistant: Sure, just to confirm, you'd like to book tickets for the 7:50 am bus from Anaheim to Los Angeles on March 4th for 4 people, is that correct?
+user: Yes, that works. Where does it arrive?
+tool(BuyBusTicket): ok n_results=1
+assistant: Alright, your bus ticket has been booked. It will arrive at North Hollywood Station.
+user: Thank you, that's all.
+assistant: Have a wonderful day.

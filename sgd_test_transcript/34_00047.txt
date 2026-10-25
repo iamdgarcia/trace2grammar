@@ -1,0 +1,17 @@
+user: I want to find a hotel in Portland, OR.
+tool(SearchHotel): ok n_results=10
+assistant: What about Aloft Portland Airport at Cascade Station? It was 3 stars.
+user: Sounds good. What are some attractions nearby?
+tool(FindAttractions): ok n_results=10
+assistant: Crystal Springs Rhododendron Garden is a popular park.
+user: Awesome. I want to make a reservation at the hotel. I want to check in next Tuesday and I need 3 rooms.
+assistant: How long are you staying?
+user: We are staying for 6 days.
+assistant: Please confirm: 3 rooms at the Aloft Portland Airport At Cascade Station in Portland. Check in on March 5th for 6 days.
+user: No, I want to check in on the 10th of this month, staying for 3 days.
+assistant: Please confirm: checking in on March 10th and staying for 3 days.
+user: Yes, that's correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks so much.
+assistant: Have a great day!

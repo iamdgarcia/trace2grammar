@@ -1,0 +1,36 @@
+user: I want to stay in a hotel and I will need 2 rooms.
+assistant: What city do you want me to search for the hotel?
+user: Search Nairobi, Kenya for a nice hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I can recommend you 10 hotels. You would like the Azure Hotel Nairobi Westlands which is a 5 star hotel.
+user: That is great.
+assistant: Shall I book you the hotel?
+user: Not now. Some other time.
+assistant: Shall I be of any other help?
+user: I want to catch a flight to go there.
+assistant: What city are you leaving from and what is the date of your return flight?
+user: I want flights from Chi-town and I will return on 12th of this month.
+assistant: So will you leave on March 1st.
+user: Yes that is right.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Shall I recommend you Delta Airlines which has an onward flight taking off at 8 am and it has a layover. The flight that is returning will take off at 5:45 am and it is priced at $685.
+user: That is great.
+assistant: Shall I do anything else for you?
+user: Now you can reserve that hotel we found earlier.
+assistant: How many days will you stay there and is your check in date March 1st?
+user: I will check in on the 5th and I will stay there for 1 day.
+assistant: So do you confirm that you want 2 rooms for 1 day at the Azure Hotel Nairobi Westlands in Nairobi on March 5th?
+user: Not really, I will check in on next Thursday and I will stay there for 6 days.
+assistant: So do you confirm that you are staying there for 6 days and your check in date is March 7th?
+user: Yes it is good. Can you tell me if smoking is allowed and what street is that hotel located at?
+tool(ReserveHotel): ok n_results=1
+assistant: I have booked your hotel and they do allow smoking. You can find them at Lantana Road, Kenya.
+user: Thank you very much. Can you suggest some attractions to me while I am there?
+tool(FindAttractions): ok n_results=2
+assistant: I can suggest you 2 attractions. Would you like the Giraffe Centre which is a Nature Preserve?
+user: Nice but are there any other attractions?
+assistant: I think you will like the Nature Preserve called Nairobi National Park.
+user: All right. Fantastic.
+assistant: Shall I do anything else for you?
+user: Nope. That will be all. Thanks.
+assistant: Have fun there!

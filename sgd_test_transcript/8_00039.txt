@@ -1,0 +1,31 @@
+user: I want to make a payment please
+assistant: Do you want to transfer it via app balance or credit card?
+user: Let's transfer it from my in-app balance
+assistant: Who are you paying?
+user: I need to pay Emma
+assistant: What is the total amount?
+user: I will pay her 21 bucks
+assistant: OK confirming a public transaction of $21 from your app balance headed to Emma
+user: Yes please do that
+tool(MakePayment): ok n_results=1
+assistant: It is successful and she'll get it soon
+user: OK, now help me request a payment
+assistant: From who and for how much?
+user: I need 61 bucks from Mahmoud
+assistant: OK, confirm that you are requesting a public request of $61 from Mahmoud
+user: Yes that's correct
+tool(RequestPayment): ok n_results=1
+assistant: It has been requested!
+user: OK thanks, now help me make another payment
+assistant: Who are you paying this time?
+user: I am paying Margaret
+assistant: From what account?
+user: Send it from UnionPay please
+assistant: How much are we talking?
+user: Let's send her $29
+assistant: Confirming you want to send a public transaction of $29 to Margaret from your credit card yes?
+user: Yes that is right
+tool(MakePayment): ok n_results=1
+assistant: It has been made and the money will reach her shortly
+user: OK, thats all then, bye
+assistant: Thanks, take it easy

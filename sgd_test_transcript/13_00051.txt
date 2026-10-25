@@ -1,0 +1,17 @@
+user: I'm looking to hear some Music on the 14th of March in NY.
+tool(FindEvents): ok n_results=10
+assistant: Why not try Alma Deutscher? You can catch her act on March 14th at 7 pm at the Stern Auditorium / Perelman stage.
+user: fine, that seems good.
+assistant: Do you want tickets?
+user: Not right now. Get me a four star hotel. I need 2 rooms please.
+tool(SearchHotel): ok n_results=10
+assistant: Try 6 Columbus - Central Park Hotel. It has a rating of 4.
+user: Fine, get event tickets please.
+assistant: How many do you need?
+user: I want 1 please.
+assistant: To confirm: 1 ticket to see Alma Deutscher on March 14th in New york.
+user: Fine, how much?
+tool(BuyEventTickets): ok n_results=1
+assistant: You are confirmed and the charge will be $55.
+user: Thanks a lot.
+assistant: Enjoy the show.

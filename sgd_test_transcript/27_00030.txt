@@ -1,0 +1,37 @@
+user: Hi, are there any nice attractions without an entry fee in the San Fran area?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, there are 10 you may like, how about a Historical Landmark called Alcatraz?
+user: Sounds great to me!
+assistant: Do you need any other help?
+user: Yes, can you help me find a Drama movie showing at AMC Kabuki 8 in that area?
+tool(FindMovies): ok n_results=2
+assistant: Would you like to watch Brittany Runs a Marathon or Hustlers?
+user: Are there any alternatives showing at Roxie Theater?
+tool(FindMovies): ok n_results=1
+assistant: How about This Is Not Berlin?
+user: No, anything else?
+tool(FindMovies): ok n_results=0
+assistant: Sorry, there are no more available movies. How can I help you then?
+user: Could you help me find for a 3d ghost movie instead?
+tool(FindMovies): ok n_results=1
+assistant: Would you like to watch In Fabric?
+user: Fabric sounds great!
+assistant: Would you like to purchase the movie tickets?
+user: No, that is not necessary.
+assistant: How can I further assist you?
+user: Can you help me find some good movies to watch online now?
+assistant: Any preference on the movie genre?
+user: A comedy-drama movie will be great.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you might like titled Give Me Liberty.
+user: I see, Give Me Liberty sounds great!
+assistant: Would you like me to play the movie for you?
+user: Yes please, thank you!
+assistant: Please confirm your request to play Give Me Liberty with English subtitles.
+user: Sure, may I also know who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has been played. Chris Galust was featured in the movie.
+user: I see, thanks alot!
+assistant: How can I further assist you?
+user: No, that is all I need. Thank you!
+assistant: Enjoy your movie and have a great day ahead!

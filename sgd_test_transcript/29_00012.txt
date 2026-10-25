@@ -1,0 +1,28 @@
+user: I need a hotel.
+assistant: What city should i look for hotels in?
+user: I'm looking for hotels from London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels matching the criteria including a hotel called 45 park Lane a 5 star hotel.
+user: What is the nightly price?
+assistant: The price is $375 a night.
+user: That sounds good and I'd like to find a round trip there.
+assistant: What city are you departing from and will it be on March 7th? What day do you want to take the return flight?
+user: Seek flights from ATL starting travel on Sunday this week and returning on the 10th of March.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I have 3 flights for you. Do you want to fly American Airlines taking off at 8:50 am a direct flight returning 8:05 pm costing $368 per ticket.
+user: That sounds great.
+assistant: What else can I help you with?
+user: I would like to reserve a hotel checking in on the 6th of March.
+assistant: How long are you staying?
+user: I will be staying 7 days.
+assistant: Please confirm details you'd like to find a hotel at 45 Park Lane checking in March 6th staying for 7 days located in London with 1 room.
+user: Sure that is nice. Tell me the street address and phone number.
+tool(ReserveHotel): ok n_results=1
+assistant: It is successfully booked and the address is 45 Park Lane with a phone number of +44 20 7493 4545.
+user: Will you show me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There is an attraction that is a Historical Landmark at 30 St Mary Axe (The Gherkin).
+user: Will the attraction entrance be free?
+assistant: No, entry to the place isn't free.
+user: Okay that is great. That will be all. Bye.
+assistant: Enjoy yourself.

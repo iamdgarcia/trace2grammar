@@ -1,0 +1,28 @@
+user: I'm going on a trip with a friend and need to buy bus tickets. Can you look them up for me?
+assistant: Sure, how many tickets and when do you want to leave?
+user: It's for 2 people and I'd like to leave at 10:15.
+assistant: Ok, and where are you leaving from?
+user: I want to take a bus out of Long Beach.
+assistant: Ok, and what day are you leaving and where to?
+user: I am planning to leave on the 6th of this month to Sacramento, CA.
+assistant: Alright, to confirm, you want 2 bus tickets from Long Beach to Sacramento on March 6th at 10:15 am. Is that right?
+user: Yes, that's right. Is it a direct ride and how much is it?
+tool(BuyBusTicket): ok n_results=1
+assistant: It's a one-stop trip. Unfortunately there was an error and I couldn't book your tickets. How about this other ticket for $53 that leaves at 10:40 am?
+user: Sure, that's fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Ok, your tickets have been booked.
+user: Great, thanks. Can you also search for hotels there?
+tool(SearchHotel): ok n_results=10
+assistant: No problem. I found 10 options in that area. How about this 3 star hotel, Courtyard By Marriott Sacramento Cal Expo?
+user: Yes, that sounds fine.
+assistant: Ok, anything else I can help with?
+user: Yes, can you make a reservation for the hotel? I need one room starting the 7th of this month for six days.
+assistant: Ok, to confirm, you want to book 1 room at the Courtyard By Marriott Sacramento Cal Expo in Sacramento on March 7th for 6 days. Is that right?
+user: Yes, that's right. What's the address and do they allow smoking?
+tool(ReserveHotel): ok n_results=1
+assistant: I've booked your hotel room. Their address is 1782 Tribute Road, and no smoking allowed.
+user: Ok, thanks for your help.
+assistant: Sure, anything else I can do?
+user: No, thanks. You've been very helpful.
+assistant: No problem, have a good day!

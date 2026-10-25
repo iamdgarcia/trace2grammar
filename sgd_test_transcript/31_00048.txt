@@ -1,0 +1,35 @@
+user: I want to make my hairstyle to good looking one for which I need to search for a Salon. Could you help me?
+assistant: Yes, Where do you want to search for the Salon? Tor ell me your current location to search the Salon near to your Residence.
+user: I want to search it in Walnut Creek.
+tool(FindProvider): ok n_results=10
+assistant: I found a Salon named Blow Dry Bar in Walnut Creek. Do you feel convenient to visit there?
+user: I want some other details. Let me know the average rating of that Salon.
+assistant: They got 4.4 in average from their users.
+user: That's great. Please book an appointment with that salon.
+assistant: What is your convenient date and time to book it?
+user: I can visit there at 16:15 on day after tomorrow and you please book it on the same time.
+assistant: Okay. Please confirm to book an appointment to the Salon called Blow Dry Bar on March 3rd at 4:15 pm.
+user: No, please change the time and date to 10 o'clock in the morning on March 13th.
+assistant: Okay. Please confirm to book an appointment to the Salon called Blow Dry Bar on March 13th at 10 am.
+user: It is correct and proceed please. I want some more details about this Salon. Can you check whether this is an Unisex salon and let me know their contact number.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked. And note down their phone number as 925-837-2990. It is an Unisex Salon.
+user: Thanks for the details. That's enough. I want to find a restaurant there. Find the one to eat Vegetarian meals available for any price range.
+assistant: Noted that you love to eat Vegetarian food but is there any special kind of food that you are looking for?
+user: Yes, find me something serving Pizza and Pasta.
+tool(FindRestaurants): ok n_results=7
+assistant: What about a restaurant named Caffe Delle Stelle Restaurant which is in Walnut Creek. I think you can try this as it is a good one among the 7 places that I have searched.
+user: I want to know their address and phone number to decide further.
+assistant: They are located at 1532 North Main Street and their contact number is 510-943-1094.
+user: That is nice and thanks for the details. I want to book a table in this restaurant and my convenient time is morning 11:15.
+assistant: Okay, once again please confirm to book a table for 2 at Caffe Delle Stelle Restaurant in Walnut Creek on March 13th for the time 11:15 am.
+user: It's correct. Go ahead.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was unable to book the table as you required. How can I help you further in this regard.
+user: I think you can continue your search and try to book it for different time something like seven pm.
+assistant: Please confirm to book a table for 2 at Caffe Delle Stelle Restaurant in Walnut Creek on March 13th for the time 7 pm.
+user: That's confirmed to proceed and check for outdoor seating there.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table was booked there and they do not have out door seating.
+user: That's okay. Thanks and that's all.
+assistant: Have a nice day.

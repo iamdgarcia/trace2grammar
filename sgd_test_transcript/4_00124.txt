@@ -1,0 +1,16 @@
+user: I need a bus to take me from Portland to Seattle. I need 2 tickets please.
+assistant: Of course, on which date?
+user: I'm not leaving until March 9th.
+tool(FindBus): ok n_results=10
+assistant: There are a lot of options, at least 10. What about leaving at 7 am? It will only cost you $33.
+user: From which station would this depart?
+assistant: It's from SW Arthur & 1st.
+user: Ugh, get me a different option.
+assistant: Well, you could leave at 11:20 am for $37.
+user: Fine get them tickets now.
+assistant: Sure, just to confirm: 2 tickets for a bus leaving Portland and going to Seattle on March 9th at 11:20 am.
+user: That's ideal, thanks.
+tool(BuyBusTicket): ok n_results=1
+assistant: You're all set.
+user: You're really a lifesaver, thanks.
+assistant: Have a fun trip.

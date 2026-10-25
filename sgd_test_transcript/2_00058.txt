@@ -1,0 +1,14 @@
+user: I'm in the mood to see a play, can you find me one?
+assistant: In what city?
+user: I'm looking in the San Diego area.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 plays. About Time is popular and is at Talent to aMuse Theatre Co March 9th at 4 pm.
+user: Perfect. I'd like to book some tickets.
+assistant: How many would you like?
+user: 2 tickets would be great.
+assistant: To verify: You would like 2 tickets to see About Time on March 9th in San Diego.
+user: That's right. How much is each ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: They are $40 each. Your tickets are confirmed.
+user: Great! Thank you. That's all I need.
+assistant: Enjoy the rest of your day.

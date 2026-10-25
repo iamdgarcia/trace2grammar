@@ -1,0 +1,27 @@
+user: Find me a hotel to stay in.
+assistant: What city shall I search in?
+user: Search for hotels in New York City.
+tool(SearchHotel): ok n_results=10
+assistant: 1 Hotel Brooklyn Bridge is a 5 star hotel and is available.
+user: What is cost per room per night and do they allow smoking?
+assistant: The cost is $465 a night and smoking is allowed.
+user: That is perfect.
+assistant: Shall I book a room for you?
+user: No, not right now. I need a rental car to get there.
+assistant: Will you be getting the car on March 8th?
+user: No, I will pick it up on the 10th.
+assistant: What time do you want to get the car and when will you return it?
+user: I will get the car at half past 1 in the afternoon and will return in on the 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV Alfa Romeo Stelvio for rent at Port Authority Station.
+user: How much does it cost for a day?
+assistant: The price is $45.00 each day.
+user: That is perfect. Get me that car.
+assistant: Shall I add insurance to your order?
+user: No, I don't need that.
+assistant: You want to pickup the SUV from Port Authority Station at 1:30 pm on March 10th and will return it on March 12th and do not want insurance, correct?
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

@@ -1,0 +1,45 @@
+user: Is there something interesting you can find for me to do?
+assistant: Do you like music or theater events or something else, and in which city are you looking for events?
+user: I want to find a theater event in NY, on March 5th.
+tool(FindEvents): ok n_results=10
+assistant: How about Advanced Acting Scene Study, taking place at TGW Acting Studio on March 5th at 6:30 pm?
+user: Sounds good, but can you find an event on March 1st and is a musical performance?
+tool(FindEvents): ok n_results=10
+assistant: Would you be interested in seeing Alma Deutscher, playing at Stern Auditorium / Perelman Stage on March 1st at 5:30 pm?
+user: That could work, but how about another kind event in Seattle?
+tool(FindEvents): ok n_results=3
+assistant: 3 events you may be interested in, how about Claudia Oshry playing in Illsley Ball Nordstrom Recital Hall on March 1st at 4:30 pm?
+user: What's the address of the venue, and how much does one ticket cost?
+assistant: Ticket costs $45 to this venue, and it is located at 200 University Street.
+user: Sounds great, thanks for the help.
+assistant: Would you like to buy tickets to this event?
+user: Perhaps some other time, what about a bus heading there for three people if I plan on leaving on March 1st from Portland, OR.
+tool(FindBus): ok n_results=10
+assistant: What about a bus that departs at 7 am, it costs $28?
+user: Anything else you can find, for four people, a direct bus or anything will do.
+tool(FindBus): ok n_results=9
+assistant: There are 9 buses you may be interested in, how about a bus departs at 11:20 am that costs $30.
+user: That sounds good, but what about a round trip flight heading there if I plan on traveling on March 1st?
+assistant: On which date will you take the return flight?
+user: I want to return on Thursday next week?
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: How about a Delta Airlines direct flight that costs $112, its onward flight takes off at 12:20 pm and return flight takes off at 5:35 pm?
+user: Anything else you can find, any ticket class works for me?
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: How about a Southwest Airlines direct flight that departs at 2:10 pm, its return flight takes off at 5:15 am, and ticket costs $187?
+user: That sounds good, any hotels you can find in that area that has three star hotels?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels matching your description, one 3 star hotel you may be interested in is Best Western Plus Pioneer Square Hotel Downtown.
+user: That sounds alright, but any other hotel matching my criteria?
+assistant: What about another 3 star hotel, the Courtyard By Marriott Seattle Downtown/Lake Union?
+user: That sounds good, thanks for finding it?
+assistant: Shall I make the reservation for this hotel?
+user: Not right now, I don't want to make a reservation at the moment?
+assistant: Anything else I can help you with today?
+user: Purchase tickets to the event you found earlier.
+assistant: You want to buy 4 tickets to Claudia Oshry on March 1st in Seattle, correct?
+user: That works for me, thanks.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been confirmed, have a great time there!
+user: Thank you for everything, that was all I needed.
+assistant: Your welcome, have a great day.

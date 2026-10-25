@@ -1,0 +1,15 @@
+user: Find me please a cab.
+assistant: What type of ride you want to be?Maybe a Pool or Luxury or something else.How many seats you want?
+user: I am in a group of one and I prefer a Cheapest ride.
+assistant: Where you want to go?
+user: I would like to go to Newport Street Gallery.
+assistant: You want a Pool ride to Newport Street Gallery.This will be for 1 person.Is that okay for you?
+user: Yes perfect.When will rich the cab here?
+tool(GetRide): ok n_results=1
+assistant: The ride is booked and the cab is on its way.In 4 minutes is expected to arrive.
+user: Tell me the cost please.
+assistant: $14.43 is the cost for your ride.
+user: Thank you for all.
+assistant: With something else I can help?
+user: No.Thank you.
+assistant: Have a great day!

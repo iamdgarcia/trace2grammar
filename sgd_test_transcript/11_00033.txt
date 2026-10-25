@@ -1,0 +1,23 @@
+user: I'd like to find a house to stay at.
+assistant: What city should I search?
+user: I am traveling to New York, so search there.
+tool(SearchHouse): ok n_results=10
+assistant: I found you a nice house located at 100 Greenwich Street. It has a 4.4 rating.
+user: Did you find anything else? I need a house rated 4.0 or higher with laundry service.
+tool(SearchHouse): ok n_results=9
+assistant: I found 9 houses available. How about a 4.0 rated house located at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA.
+user: That house sounds great. I want to book it.
+assistant: What will be your check out date?
+user: I will be checking out on March 11th.
+assistant: What is you your check in date?
+user: I will be checking in on March 5th.
+assistant: How many people are in your group?
+user: 3 people.
+assistant: Please confirm the following: 3 people will be checking in to a house in New York on March 5th and checking out on March 11th.
+user: Yes, that is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is successful.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: No, thanks for your help.
+assistant: My pleasure. Good bye.

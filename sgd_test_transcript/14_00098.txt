@@ -1,0 +1,19 @@
+user: I'd like to listen a song
+tool(LookupMusic): ok n_results=10
+assistant: There're 10 songs for you. Do you like Taylor Swift? I propose you You Need To Calm Down from the album Lover
+user: Yes, I like it! Can you find me a movie online?
+assistant: What kind of film do you prefer?
+user: I prefer Cartoon movies!
+tool(FindMovies): ok n_results=2
+assistant: I've found 2 movies: do you prefer The Angry Birds Movie 2 or Toy Story 4?
+user: I definitely prefer Toy Story 4!
+assistant: Want to watch this movie right away?
+user: Not now, thanks! Now I want to listen the song
+assistant: Do you want to play You Need To Calm Down in Living Room?
+user: No, I want to play it on kitchen speaker
+assistant: Playing You Need To Calm Down in Kitchen: do you confirm?
+user: Yes, I confirm! Is it a pop song? Was it published nine years ago?
+tool(PlayMedia): ok n_results=1
+assistant: Yes, It's a pop song. No, It was published in 2019. Good listening!
+user: Thanks! It's all for now!
+assistant: Have a great day!

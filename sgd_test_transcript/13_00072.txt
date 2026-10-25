@@ -1,0 +1,16 @@
+user: My brother and I are going out this weekend and I need to find a movie to see.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies you might like. How about Theatre of Blood? The movie got a rating of 93 out of 100.
+user: Who directed the movie?
+assistant: It was directed by Douglas Hickox.
+user: What other movies are playing?
+assistant: You might like Zama. It received a rating of 96 out of 100.
+user: What's the genre of this movie?
+assistant: This is a World movie.
+user: Okay sounds good. I'd also like to find something interesting to do on that same day, the 13th. Maybe a stage show?
+assistant: Any certain city I should search in?
+user: I'll be in Toronto, Ontario.
+tool(FindEvents): ok n_results=6
+assistant: One show you might like is Anne of Green Gables. This is playing on March 13th at 6 pm at the Lower Ossington Theatre.
+user: Sounds great, that's it for now.
+assistant: Have a great day!

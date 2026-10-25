@@ -1,0 +1,48 @@
+user: I want to take a round-trip flight starting on the 4th.
+assistant: What day would you like the return flight to be? What city will you be leaving from?
+user: Find flights from ATL returning on 12th of March.
+assistant: Where will you be headed?
+user: I'm going to be going to Seattle.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: How about this flight with American Airlines that leaves at 1:50 pm? It has a layover. The return flight leaves at 8:50 am. This flight costs $383.
+user: When will the flight arrive at my destination? Is this an economy or business-class ticket?
+assistant: The outbound flight leaves at 4:22 PM. This is an economy.-class ticket.
+user: Do you have anything else available?
+assistant: how about flying with Delta Airlines? The outbound flight takes off at 12:05 PM. It's a direct flight. The return flight takes off at 12:40 pm. This ticket cost $272.
+user: Anything else?
+assistant: what do you think about Southwest Airlines? The outbound flight takes off at 11:05 am. There is a layover. The return flight leaves at 1:35 PM. This ticket costs $377.
+user: Okay, find me a house to stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 houses that may suit your needs. How about this nice house on 1000 1st Avenue with a 4.5 rating?
+user: What else do you have?
+assistant: There's a nice house available at 1006 Spring Street with a 3.9 rating.
+user: Is laundry service available? Do you have a contact number for this place?
+assistant: Yes, there is laundry service. The phone number is +1 206-583-6453.
+user: that sounds great.
+assistant: Would you like me to book that house?
+user: Yes, book that house.
+assistant: Would you like to check out on March 12th or another day? How many people are there in your party?
+user: we are a party of 2 and I want to check out on the 6th.
+assistant: Would you like to check in on March 4th?
+user: No, check me in on 5th of March.
+assistant: Okay, so you want to go to Seattle and there are 2 people in your group. You will check in on March 5th and check out on March 6th.
+user: No, actually I will check out on March 10th.
+assistant: Okay, could you confirm this? You are going to Seattle and you will check out on March 10th.
+user: Yes, perfect.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was made successfully.
+user: Thank you for helping. Would you like to show me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I think you should go to the park Alki Beach Park.
+user: What is the phone number for that attraction?
+assistant: The phone number is 206-684-4075
+user: cool, but do you have any other ideas?
+assistant: How about Bill speidel's Underground Tour? This is a tourist attraction.
+user: What is the phone number for this attraction?
+assistant: The phone number is 206-682-4646.
+user: do you have any other Texans you can think of?
+assistant: I think you should check out Bruce Lee and Brandon Lee Grave Sites. That's a tourist attraction.
+user: Cool.
+assistant: Would I be able to help with something else?
+user: No, but thanks, it's been a good help
+assistant: Have a good day.

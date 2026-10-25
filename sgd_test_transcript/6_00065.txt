@@ -1,0 +1,26 @@
+user: I'd like to look for a salon.
+assistant: What metropolis ought I look in?
+user: I'd like a salon from San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: I discovered 10 salons you may enjoy. There is a lovely salon known as 1512 Barber Shop in San Francisco.
+user: Is the salon unisex? Where is it located?
+assistant: The barber shop is unisex, and is located at 1532 20th Street.
+user: Could you look for a different hair shop?
+assistant: There is a lovely barber shop called 20th Salon and Barber in San Francisco.
+user: Could you look for a different hair shop, preferably in Woodside?
+tool(FindProvider): ok n_results=1
+assistant: I discovered 1 salon you might enjoy. There is a lovely hair shop called Olive Hill Salon in Woodside.
+user: Yeah, that's fine with me. I'd like to reserve a spot at the hair shop on this Sunday, at quarter past 5 in the evening.
+assistant: Please verify the following information: a reservation at Olive Hill Salon on March 3rd, at 5:15 pm.
+user: Nope; I'd like th ereservation at 10:30 am.
+assistant: Please verify the following information: a reservation on March 3rd, at 10:30 am.
+user: Yeah, that's fine. What is the salon's mean rating?
+tool(BookAppointment): ok n_results=0
+assistant: I apologize, but I could not make the reservation. Could I assist with something else?
+user: Can you attempt the reservation once more? I'd like to go to the hair shop today.
+assistant: Please verify the following information: a reservation for Olive Hill Salon on March 1st, 10:30 am.
+user: Yeah, that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation is complete.
+user: Thank you so much; that is all.
+assistant: Have a good afternoon.

@@ -1,0 +1,19 @@
+user: can you look for songs?
+tool(LookupMusic): ok n_results=10
+assistant: there's Salam Alaikum by Harris J off the Salam album.
+user: when did it come out? what genre is it?
+assistant: it's a pop song from 2015.
+user: that's the one. are there any good films online?
+assistant: what genre do you like?
+user: i like sci-fi movies.
+tool(FindMovies): ok n_results=2
+assistant: there's 2 i found for you. how about Ad Astra or Close Encounters of the Third Kind?
+user: Ad Astra works for me. Can you play the song you mentioned earlier?
+assistant: you want me to play salam alaikum in the living room?
+user: yes.
+tool(PlayMedia): ok n_results=1
+assistant: enjoy the song!
+user: thanks!
+assistant: is there anything else?
+user: no, thanks.
+assistant: have a great day.

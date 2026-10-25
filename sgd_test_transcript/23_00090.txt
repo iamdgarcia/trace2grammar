@@ -1,0 +1,30 @@
+user: Could you help me to find a train for 14th of this month to Anaheim, CA
+assistant: From which city you want to depart?
+user: I want the ticket from Sacramento, CA
+tool(FindTrains): ok n_results=6
+assistant: What is your opinion about the train starting at 6:30 am with cost $125.
+user: Can you tell me the arrival station and leaving station?
+assistant: The arrival station is Anaheim Intermodal Center and train leaves from Sacramento Valley Station.
+user: This is cool..I like you to book the train tickets.
+assistant: Number of tickets you want and are you like to add insurance?
+user: I need only 1 seat and there should be trip insurance.
+assistant: Please give confirmation details: You like to book the train ticket which leaves from sacramento to Anaheim on march 14th at 6:30 am and it is for 1 people with value ticket with trip insurance.
+user: Sorry..i want two seats.
+assistant: Please give confirmation details: The train ticket is for 2 people with trip insurance.
+user: Okay..this is perfect.
+tool(GetTrainTickets): ok n_results=1
+assistant: I booked your hotel successfully.
+user: Can you search something interesting to do there?
+assistant: In which category you want like music or theater or other thing?
+user: I want Broadway.
+tool(FindEvents): ok n_results=1
+assistant: I searched 1 event of your choice. There is a Jesus Christ Superstar which is very famous and it is taking place at Stage Door Repertory Theatre on march 1st at 7 pm.
+user: This is cool.
+assistant: Any other help you want today?
+user: I want you to share the location with Jose.
+assistant: Please give confirmation details: The location you want to share with Jose is Stage Door Repertory Theatre.
+user: This is perfect.
+tool(ShareLocation): ok n_results=1
+assistant: Your location is shared successfully.
+user: Thanks a lot.
+assistant: Have a great day.

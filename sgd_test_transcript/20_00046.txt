@@ -1,0 +1,25 @@
+user: I need a rental car im looking in berlin
+assistant: Until when you need it
+user: I need it till the 4th
+assistant: From when you want it
+user: Make it from 2nd of march
+assistant: At what time you wanna pick it up
+user: Make it up at 12 pm
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available in that there is a good car at schoenefeld airport which is a SUV Alfa Romeo stelvio
+user: Great
+assistant: Can I help you anything else
+user: Get me a house to stay there for 1 people
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses in that a good house located at alt-moabit 99, 10559 rated 4.4
+user: It's nice
+assistant: Shall I get an reservation there
+user: No not now reserve the rental car
+assistant: Do you need insurance to be added
+user: Not needed
+assistant: Please confirm you pickup the car from schoenefeld airport on March 2nd at 12 pm till March 4th. The car is a SUV without insurance
+user: Great what's the total cost
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved. The cost is $46.00 per day
+user: Thanks a lot that's all I need
+assistant: Have a nice day

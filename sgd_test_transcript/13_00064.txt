@@ -1,0 +1,13 @@
+user: I am planning to watch a movie now. Generally I like to watch Comedy-drama type of movies. Can you find something like the one which is directed by Kirill Mikhanovsky.
+tool(FindMovies): ok n_results=1
+assistant: I got 1 result that is Give Me Liberty which has the rating of 92 out of 100. do you like this movie?
+user: Yes, It looks okay. Also I want to search for some events to do for which you need to help me.
+assistant: Let me know your interested type of events and also desired City to search for?
+user: Search something like Concert events in Philly.
+tool(FindEvents): ok n_results=10
+assistant: What about an event like Anthony Green will be taking place at The Foundry on March 10th at 6 pm.
+user: Yes, it sounds good. But I want to search something else on March 7th.
+tool(FindEvents): ok n_results=9
+assistant: Okay. I got 9 results. What bout the one like Babymetal at The Fillmore Philadelphia on March 7th at 6:30 pm.
+user: Yes, This is good and thanks.
+assistant: Have a good day.

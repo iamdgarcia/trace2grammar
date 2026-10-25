@@ -1,0 +1,18 @@
+user: Find me a rental car.
+assistant: When will you return it?
+user: I will return it on the 8th.
+assistant: Where would you like to rent the car from and when will you pick it up?
+user: I'd like to pick it up at half past 1 in the afternoon and I need cars in Washington.
+assistant: When will you begin the car rental?
+user: I need it from Tuesday next week.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice car at Dulles International Airport. It's a Alfa Romeo Stelvio SUV.
+user: Sounds good. Reserve this rental car for me.
+assistant: Would you like to add insurance?
+user: Yes, buy me insurance.
+assistant: Could you confirm that you are picking up the car from Dulles International Airport on March 5th at 1:30 pm and drop it off on March 8th? It's an SUV with insurance.
+user: Sounds great. What does it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been made and costs $57.00.
+user: Thank you for helping. That is all.
+assistant: Have a fantastic day.

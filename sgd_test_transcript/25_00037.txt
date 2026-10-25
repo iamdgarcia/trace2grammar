@@ -1,0 +1,21 @@
+user: I am looking for a movie to watch. I will be in San Ramon and look for something at the Regal Crow Canyon. Make sure it is an imax show.
+tool(FindMovies): ok n_results=4
+assistant: There are 4 such movies. Would you like to choose something from Hustlers, IT Chapter Two or Once Upon a Time in Hollywood?
+user: Can you suggest other movies?
+assistant: What do you think of The Art of Racing in the Rain?
+user: I would love Racing in the rain.
+assistant: Shall I get you the tickets?
+user: Not at the movement. Can you look for some other songs? I want something from seven years ago. Also someone told me that A war you cannot win album is pretty good.
+tool(LookupMusic): ok n_results=1
+assistant: I can suggest you 1 song from the album A War You cannot win and it is What If I was nothing by All That Remains.
+user: Can you tell me what genre of music it is?
+assistant: The song is Metalcore.
+user: Yeah that is it and I would like that song played.
+assistant: So do you confirm that you want the song What If I was Nothing in the Living Room?
+user: Nope. I want it played on the speaker outside.
+assistant: So do you confirm that you want the song What If I Was Nothing played in Patio?
+user: Yeah that is right.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you have fun with the music.
+user: Thanks a lot. That will be all.
+assistant: Have a wonderful day!

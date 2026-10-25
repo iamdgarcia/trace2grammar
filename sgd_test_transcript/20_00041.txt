@@ -1,0 +1,26 @@
+user: I'd like a rental.
+assistant: Until when would you like it?
+user: I'll need it until the day after tomorrow.
+assistant: Where will you be renting from?
+user: I'd like it from LAX until the 13th of this month.
+assistant: When would you like to pick it up, and at what time?
+user: 6:30 pm on the 12th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There are 8 cars that match your search. There's an SUV at the LAX International Airport, a Dacia Duster, does that work?
+user: How much does it cost?
+assistant: $45.00 per day.
+user: That works, I'd also like a house for three people. Please make it at least 4.3 or higher rating.
+tool(SearchHouse): ok n_results=10
+assistant: Sure, there is a 4.3 rated house at 1224 Beverwil Drive. Does that work?
+user: Are there any others? I need laundry as well.
+tool(SearchHouse): ok n_results=9
+assistant: Sure, there are 9 available. There's a 4.3 house at 1800 Argyle Avenue. Does that work?
+user: Sure, that's great. Will you reserve my car rental?
+assistant: Would you like insurance?
+user: No, thank you.
+assistant: Alright, just to confirm, you'd like an SUV at the LAX International Airport at March 12th at 6:30 pm to March 13th. Is that correct?
+user: Yep, sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is complete.
+user: Thank you, that's all.
+assistant: Have a great day.

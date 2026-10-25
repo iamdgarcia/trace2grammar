@@ -1,0 +1,29 @@
+user: I am looking for something interesting to do around London on Thursday next week.
+assistant: Which type of event are you looking for?
+user: I am looking for stage show.
+tool(FindEvents): ok n_results=10
+assistant: There is a very popular show called A Right Royale Tea taking place at Amba Hotel Charing Cross at 7:30 pm on March 7th.
+user: Can you find me the cost of one ticket and the address of the venue?
+assistant: The venue is located in Strand and the cost for one ticket is $35.
+user: That sounds great to me.
+assistant: Is there anything else I can help you with?
+user: Can you request a payment of seventy one bucks for me?
+assistant: What is the name of the contact you want to request the payment from?
+user: The name of the contact is Isabella.
+assistant: Please confirm: You want me to request a payment of $71 from Isabella.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made the request for the payment.
+user: Thank you for that! Can you buy me tickets for the event you just found?
+assistant: Can you please confirm me the number of required tickets?
+user: I would like to book one ticket.
+assistant: Please confirm: You want me to book 1 ticket for for A Right Royale Tea taking place in London on March 7th.
+user: No, Make it three tickets.
+assistant: Please confirm: You want me to book 3 tickets for March 7th.
+user: Yes, That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked your tickets. Enjoy the show.
+user: Okay. Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,16 @@
+user: I need train tickets. I'll be riding from Anaheim, CA on the 13th of the month.
+assistant: Can you provide me the arrival city?
+user: Oh right. I'll be traveling to Sacramento, CA.
+tool(FindTrains): ok n_results=10
+assistant: I have found tickets for you. There is a train departing to Sacramento, CA at 6:50 am. The tickets will cost $132.
+user: Perfect. Go ahead and book those train tickets for me.
+assistant: How many tickets do you require? It is recommended that you have travel insurance as well.
+user: Travel insurance is a good idea. I'll take travel insurance along with one economy class ticket.
+assistant: Your train will be departing from Anaheim on March 13th at 6:50 am. The arrival destination is Sacramento. You wish to purchase 1 Value ticket for this trip correct?
+user: Yep. That's all correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked your train ride.
+user: Great. Thanks for the help!
+assistant: My pleasure. What else can I assist you with?
+user: Nothing else. You were a big help to me. Thank you.
+assistant: You are welcome. Let me know if you need anything else. Bye.

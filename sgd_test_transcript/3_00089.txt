@@ -1,0 +1,13 @@
+user: Can you help me find a sedan to rent on Sunday this week?
+assistant: Sure, when do you need the car until and where do you want to pick it up?
+user: I'll be picking up in Rio and I'll need it until the 6th.
+assistant: Great, and what time will you be picking up?
+user: It'll be at 2:30 in the afternoon, and could you search for a hatchback?
+tool(GetCarsAvailable): ok n_results=4
+assistant: I found 4 that you may like. There's a hatchback Fiat Panda available at Galeao International Airport.
+user: How much per day?
+assistant: It'll cost $28.00 a day.
+user: Great, that one sounds good.
+assistant: Anything else I can do for you at the moment?
+user: Nope, but thanks for that help.
+assistant: Enjoy your day!

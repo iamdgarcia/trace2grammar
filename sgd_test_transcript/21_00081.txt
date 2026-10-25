@@ -1,0 +1,19 @@
+user: I want to search weather on 4th of this month in Seattle, wa
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 69 degrees Fahrenheit and there is a 43 percent chance to rain
+user: Great can you show me some attractions there
+tool(FindAttractions): ok n_results=10
+assistant: You should check out a park called alki beach park
+user: Cool I prefer regular ride shall I get a cab to there
+assistant: For how many seats do you need
+user: Make it for 1
+assistant: Please confirm the following you want to write to alki beach park and you prefer a regular ride for 1 seat
+user: Correct that works with me
+tool(GetRide): ok n_results=1
+assistant: I booked your cap and it is on its way
+user: What is its cost and how long before the cab reaches here
+assistant: The cost is $21.14 for and the cab will reach in 4 minutes
+user: Thanks a lot
+assistant: Can I help you with anything more
+user: No thanks for this
+assistant: Have a great day

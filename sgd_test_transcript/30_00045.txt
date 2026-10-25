@@ -1,0 +1,25 @@
+user: Hey, I'd like to reserve one ticket to an event. I'm looking for something happening on the 10th.
+assistant: Is there a city you'd like the event to be in?
+user: Sure, Los Angeles is what I'm looking for.
+assistant: Which event are you looking to book?
+user: Mandy Picks a Husband, please.
+assistant: Okay. Just to confirm, we are booking 1 ticket to the March 10th event Mandy Picks a Husband in Los Angeles. Is this correct?
+user: Yes, that'll work.
+tool(BuyEventTickets): ok n_results=1
+assistant: Alright, your reservation has been made. Have a great time.
+user: Thank you. Are there any buses going there?
+assistant: Where will you be leaving from?
+user: Long Beach, CA.
+assistant: Will it be on March 10th?
+user: No, I will be leaving on the 3rd of this month.
+tool(FindBus): ok n_results=10
+assistant: Okay. There are 10 buses that match your request. There is an $11 bus departing at 6 am, will that work?
+user: Which station does it depart from? Is it direct?
+assistant: Yes, it is a direct bus departing from Downtown Station.
+user: That'll do. I would like to buy the bus tickets.
+assistant: Okay, just to confirm, you are going to purchase 1 ticket for the bus leaving on March 3rd from Long Beach to Los Angeles at 6 am. Is this correct?
+user: Yes, that works.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed.
+user: Thank you, that'll be all.
+assistant: Have a nice day.

@@ -1,0 +1,16 @@
+user: I am in the mood to watch a good movie online.
+assistant: What type of movie are you in the mood to watch.
+user: I would love to see a good thriller movie.
+tool(FindMovies): ok n_results=4
+assistant: Would you like to watch The Art of Self-Defense, Rojo or Madeline's Madeline?
+user: I think I would like to see The Art of Self-Defense.
+assistant: I can start playing the movie for you if you like.
+user: I would like you to start the movie but with Hindi subtitles please.
+assistant: I understand you would like me to play The Art of Self-Defense with Hindi subtitles.
+user: That is correct.
+tool(PlayMovie): ok n_results=1
+assistant: I have started the show for you, enjoy.
+user: You're the best help.
+assistant: Is there anything else you need help with?
+user: I'm fine for now, thsnk you though.
+assistant: See you later.

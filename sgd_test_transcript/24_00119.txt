@@ -1,0 +1,27 @@
+user: Hi, could you make a payment to Isabella please?
+assistant: Would you be paying with a credit card or app balance?
+user: Do it with my MasterCard please.
+assistant: And how much will you be paying?
+user: Just 74 bucks will do.
+assistant: Please confirm your public payment of $74 to Isabella with your credit card.
+user: Yes, that is right.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made and will be processed soon.
+user: Thank you. Could you get me a restaurant booking please?
+assistant: Which location are you looking at, and do you have any cuisine preference?
+user: I would like a restaurant in Montara serving Lobster please.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 you might like, how about La Costanera in Montara?
+user: Do they have outdoor seating?
+assistant: Yes, they do have outdoor seating.
+user: May I have their address too?
+assistant: You can visit them at 8150 Cabrillo Highway.
+user: Okay, sounds great to me.
+assistant: Would you like a reservation there?
+user: Sure, could you make a reservation for four at half past 5 in the evening on the 7th?
+assistant: Please confirm your reservation at La Costanera in Montara for 4 on March 7th at 5:30 pm.
+user: Sure, may I have their user rating please?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made, and they have a rating of 4.5.
+user: I see, that is all I need. Thanks!
+assistant: Have a great day ahead!

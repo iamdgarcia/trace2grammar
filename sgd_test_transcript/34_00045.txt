@@ -1,0 +1,19 @@
+user: i need to find a hotel in paris, france that has three stars.
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 that you may like. there's a 3 star hotel called aparthotel adagio access paris la villette.
+user: that works. can you show me places to go there? something good for children, but anything works.
+tool(FindAttractions): ok n_results=10
+assistant: you can check out the american church in paris, which is a place of worship.
+user: okay that's good. can you reserve the hotel you found and make the check in date the 1st of march?
+assistant: how long will your stay be?
+user: it'll be for five days.
+assistant: so you want me to book 1 room for 5 days at the aparthotel adagio access paris la villette in paris on march 1st?
+user: actually, make it 2 rooms.
+assistant: okay, so 2 rooms for 5 days?
+user: yes. do they allow smoking at the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: it's been booked. smoking isn't allowed at the hotel.
+user: thanks, you've helped a lot.
+assistant: is there anything else?
+user: no, that's it thank you.
+assistant: bye, enjoy your day!

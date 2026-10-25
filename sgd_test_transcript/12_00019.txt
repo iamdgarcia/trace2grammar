@@ -1,0 +1,27 @@
+user: Could you help me to buy bus tickets to San Francisco for four people and i like to leave at 10:30
+assistant: From where you leaving and on what date?
+user: I decided to leave on next thursday from SD.
+assistant: Please give confirmation details: You want me to buy bus ticket from San Diego to San Francisco for march 7th at 10:30 am and the ticket is for 4 people and there is no extra luggage.
+user: This is perfect. Can i know the departing station?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your booking is over and it departs from El Cajon Bus Stop.
+user: Do you know the number of stops this bus have? What about the cost?
+assistant: The bus cost is $52 and it is a direct bus.
+user: Thank you so much..Can you search rental car for me there and i want to pick it up at 17:00.
+assistant: To what date you want the rental car and is it from San Francisco you want to pick it up? Do you need the car from march 7th?
+user: This is cool..I want the car from 9th of march to 10th of march.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have selected 10 cars for you. One among them is Sedan Audi A8 nice car available at Salesforce Transit Center.
+user: Tell me about some other cars?
+assistant: What about the Sedan Buick Regal Sportback which available at Salesforce Transit Center.
+user: Okay..this is good..I like to book this rental car.
+assistant: Are you like to add insurance to this?
+user: No, no need of insurance.
+assistant: Please give confirmation details: you like to pick up the Sedan car from Salesforce Transit Center on march 9th at 5 pm and you want the car till march 10th. There is no need of insurance.
+user: This is perfect..can i know the rent per day?
+tool(ReserveCar): ok n_results=1
+assistant: The rent is $32.00 per day and i booked the car
+user: Thanks a lot.
+assistant: Any other help you want?
+user: No, thanks for now.
+assistant: Have a wonderful day.

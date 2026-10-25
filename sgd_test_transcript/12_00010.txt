@@ -1,0 +1,32 @@
+user: I need a bus ticket departing on the 2nd of March. I have excess carry on luggage.
+assistant: What is your departure city?
+user: I'm leaving from San Diego.
+assistant: What is your departure time? How many tickets do you want? What is your destination?
+user: I am leaving this Sunday from Sacramento, CA. I want to depart at 3:30 pm. I need 2 tickets.
+assistant: Confirming that you want 2 tickets from San Diego to Sacramento. The bus departs on March 3rd at 3:30 pm. You have extra carry on luggage. Is this information correct?
+user: No. I'm leaving at a quarter to 7 in the morning.
+assistant: Confirming that you are leaving on March 3rd at 6:45 am?
+user: Yes, that works. How much will this cost? How many stops does this bus make?
+tool(BuyBusTicket): ok n_results=1
+assistant: This is a one-stop bus. I'm sorry but I was unable to purchase your tickets. How about a 6:50 am departure instead? The ticket cost $75.
+user: Yes, that will do.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have confirmed your ticket.
+user: I need to find a rental car.
+assistant: Will you be picking the car up in Sacramento on March 3rd? How long will you need the car?
+user: I need the car from Thursday next week until the 14th of March.
+assistant: What is your pick up time?
+user: I want to pick up at around afternoon 1:30.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found you 6 available cars. How about a nice Alfa Romeo Stelvio SUV? It is available at the Sacramento Valley Station.
+user: That sounds good. I want to reserve the car.
+assistant: Do you need insurance?
+user: No, I don't.
+assistant: Confirming that you will be picking up a SUV at the Sacramento Valley Station on March 7th at 1:30 pm. You will be dropping it off on March 14th. It does not come with insurance. Is this information correct?
+user: Yes, that's good.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is successful.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: No, thank you.
+assistant: You're welcome. Have a good day.

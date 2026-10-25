@@ -1,0 +1,37 @@
+user: Get me a train ticket.
+assistant: What is your departure date?
+user: I wish to depart on the 13th of this month.
+assistant: What are you departure and arrival cities?
+user: I am departing SF and headed to Fresno.
+tool(FindTrains): ok n_results=8
+assistant: There is a train departing at 6:20 am with a total bill of $70.
+user: What else can you find? Find me something going to SD that is fully refundable.
+tool(FindTrains): ok n_results=6
+assistant: There is a train leaving at 6 am with a total cost of $121.
+user: What is the arrival station?
+assistant: Santa Fe Depot is the arrival station.
+user: What is the departure station?
+assistant: Salesforce Transit Center is the departing station.
+user: What else can you find?
+assistant: There is a train leaving at 9:20 am with a total bill of $128.
+user: That works for me. What fun things are there to do there?
+assistant: Shall I search in Music, Theater, or another category?
+user: Search for something under the Music genre on the 14th.
+tool(FindEvents): ok n_results=10
+assistant: Bastille is playing at Cal Coast Credit Union Amphitheater on March 14th at 5 pm.
+user: That is perfect.
+assistant: Shall I reserve tickets for you?
+user: No, not at the moment.
+assistant: Do you need more help?
+user: Search for some Park attractions.
+tool(FindAttractions): ok n_results=8
+assistant: Balboa Park is a neat Park.
+user: I see. Search for a house for one person to stay in near there.
+tool(SearchHouse): ok n_results=10
+assistant: 1003 Coast Boulevard, La Jolla, California 92037, United States has a 4.6 rating and meets your preferences.
+user: That is perfect.
+assistant: Shall I book the house for you?
+user: No, not at the moment.
+assistant: Do you need more help?
+user: No, not right now. Thanks.
+assistant: I am happy to help you anytime. Bye for now.

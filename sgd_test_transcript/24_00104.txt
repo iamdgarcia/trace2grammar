@@ -1,0 +1,29 @@
+user: Make a payment for me please.
+assistant: Shall I use your credit card or app balance to make the money transfer?
+user: Choose my saving account for sending.
+assistant: Name your contact and the amount.
+user: Transact with Victoria for $149.
+assistant: So you want me to send Victoria an amount of $149 from your debit card. Is that right?
+user: Yeah that is right.
+tool(MakePayment): ok n_results=1
+assistant: I have made your payment and your recipient will see the amount soon.
+user: Thanks, now I want a restaurant there.
+assistant: What place should I look into?
+user: Look in San Jose for the restaurant.
+assistant: What type of food do you want to eat?
+user: I want to eat some Sichuan food.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants and you might like Chef Li in San Jose.
+user: Is there seating outdoors and what user rating do they have?
+assistant: There is no seating outdoors and 4.3 is what they got for user rating.
+user: Okay, sounds pretty great.
+assistant: Shall I book you a table there?
+user: Sure, reserve a table.
+assistant: What time will you want the reservation?
+user: I want to reserve it for evening 5.
+assistant: So you confirm that you want a table at Chef Li in San Jose for 5 pm on March 1st and you want it for 2?
+user: Yep, give me their phone and is the restaurant expensive?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have your booking made and it is a moderate restaurant. You can call them at 408-377-8310.
+user: Thanks for the help. That is it.
+assistant: Enjoy your day!

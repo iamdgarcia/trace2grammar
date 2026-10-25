@@ -1,0 +1,35 @@
+user: I need to find a salon.
+assistant: What city should I look in?
+user: I would like a salon in Fremont.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 salons you might like including 3Sixty Salon and Boutique a nice salon in Fremont.
+user: What is the average rating and would it be unisex?
+assistant: It isn't unisex with a rating of 4.7.
+user: Yes, that is good and could you share the location?
+assistant: Who will you share it with and would you want to share this address of 5154 Mowry Avenue?
+user: That sounds good and I wish to share it with Gerald.
+assistant: Please confirm details that you're sharing the location 5154 Mowry Avenue with Gerald.
+user: That sounds great.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully shared the location.
+user: Thanks that is helpful. Could you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm at 8 am with the name catch bus.
+user: Okay that is great. I'd like to add an alarm called phone home.
+assistant: What time should I set the alarm for that is new?
+user: It will be for five in the evening time.
+assistant: Please confirm details to create an alarm at 5 pm with the name phone home.
+user: No please call the new alarm to leave for home.
+assistant: Please confirm details to create an alarm at 5 pm with the name leave for home.
+user: Yes, that is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Sorry I wasn't able to set an alarm but can I help you with anything else?
+user: Could you try once more for 16:30?
+assistant: Please confirm details for creating an alarm at 4:30 pm with the name leave for home.
+user: Yes, that is correct.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm was added successfully.
+user: Thanks so much.
+assistant: Is there anything else I can assist with?
+user: No thanks so much.
+assistant: Thanks so much.

@@ -1,0 +1,15 @@
+user: Hey, get me an American Airlines flight from Chicago please.
+assistant: Where will you go and when will you leave?
+user: I'm headed to Washington on the 5th.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: I have only 1 option. It is American Airlines flight leaving at 8:35 pm. It has no stops and runs $102.
+user: Fine, get me tickets on the 11th of March, two please.
+tool(FindTrains): ok n_results=6
+assistant: On that date, what about departing at 6:20 am? Your total on that purchase will be $195.
+user: Fine, get me train tickets with trip insurance, economy please.
+assistant: To confirm: You want a train leaving Chicago on March 11th at 6:20 am, 2 tickets. You are going to washington and need a value ticket that is insured?
+user: That's fine, thanks. What station do I board at?
+tool(GetTrainTickets): ok n_results=1
+assistant: You have tickets and you'll board at Chicago Union Station.
+user: Great, you're helpful.
+assistant: Have a great train ride.

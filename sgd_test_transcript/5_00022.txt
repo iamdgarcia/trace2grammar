@@ -1,0 +1,12 @@
+user: Will you show me my alarms timings? ,i need to sleep according to that
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm for 6 am with name Wake Up.
+user: Okay, thats good. I need to add an alarm. Name the alarm as Music PRactice and it should be for 16:45.
+assistant: Please review the details so that i will confirm. Creating an alarm at 4:45 pm with name Music Practice.
+user: ok thats great. fix it.
+tool(AddAlarm): ok n_results=1
+assistant: Alarm created successfully.
+user: Thanks a lot for your help
+assistant: Whether anything else i need to do?
+user: No, thanks. not now.
+assistant: Have a great day

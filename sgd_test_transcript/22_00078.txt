@@ -1,0 +1,33 @@
+user: I can't figure out why my dreams are so scary lately. I think I'll go to a therapist. Would you help me locate a Psychologist in Vacaville, please?
+tool(FindProvider): ok n_results=4
+assistant: Would you consider seeing Caldwell Leslie, a Psychologist in Vacaville?
+user: Yes, I can give that one a try. Would you make a appointment for me, please?
+assistant: I'm on it. What appointment date and time would you like?
+user: I hope you can set up an appointment for later today, around 3:30 pm.
+assistant: Got it. Are you ready to confirm an appointment to see Caldwell Leslie on March 1st at 3:30 pm?
+user: Yes, I'm ready.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed, and you are to receive a confirmation email shortly.
+user: Okay, great. Now, would you assist me with a payment request?
+assistant: Sure. Please tell me the contact name and the amount of the transaction.
+user: The person's name is Svetlana and the transaction amount is 32 bucks.
+assistant: All right. I can confirm your payment transaction with Svetlana for $32, which can be seen by the public. Shall I do it now?
+user: Yes. Please go ahead and confirm that.
+tool(RequestPayment): ok n_results=1
+assistant: Your request for payment is confirmed.
+user: Really appreciate that. Now, would you check for a nice restaurant that serves good food?
+assistant: What type of restaurant do you prefer?
+user: I'm looking for American food.
+tool(FindRestaurants): ok n_results=2
+assistant: Got it. Of the 2 restaurants available, you might want to consider Bj's Restaurant & Brewhouse in Vacaville.
+user: Yeah? What user-review rating does the restaurant have, and are vegetarian selections available?
+assistant: The restaurant has a 4.0 rating, and I'm showing several vegetarian offerings.
+user: Okay, fine. Go on and reserve a table for 3 persons at that restaurant for twelve pm?
+assistant: All right. Would you like to confirm a 12 pm table reservation for 3 persons at Bj's Restaurant & Brewhouse in Vacaville on March 1st?
+user: Absolutely, let's go for it. Is outdoor dining available, and what's the street address there, please?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table reservation is confirmed, and the address to the restaurant is 190 Nut Tree Parkway. No outdoor dining is offered.
+user: Okay, that's fine, and your assistance is highly appreciated.
+assistant: Would you like further assistance?
+user: Nope. I'm so grateful to you.
+assistant: Happy to assist you. Have a pleasant day.

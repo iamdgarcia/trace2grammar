@@ -1,0 +1,43 @@
+user: Can you help me find a therapist?
+assistant: What type did you need?
+user: I'd like to find a Family Therapist.
+assistant: In what city should I look in?
+user: I need someone in Campbell.
+tool(FindProvider): ok n_results=6
+assistant: I found Beth Kane who is a Family Counselor in Campbell.
+user: That sounds right. Could you book an appointment?
+assistant: What time did you prefer?
+user: I'd like it at 5:30 pm.
+assistant: What date would you like it for?
+user: Can you make it for March 1st?
+assistant: Please confirm you're booking an appointment for Beth Kane on March 1st at 5:30 pm.
+user: No, can you make it for 11th of March instead?
+assistant: Please confirm it for March 11th at 5:30 pm.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you should receive an email confirmation soon.
+user: What is the phone number?
+assistant: It is 408-378-7868.
+user: Thank you! I remember I need to request a payment and the person to make it with is Amelia.
+assistant: How much was it for?
+user: It will be for 109 bucks.
+assistant: Please confirm you're making a transaction with Amelia for $109 and it will be visible to the public.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been completed.
+user: I'd also like to find a restaurant there that day.
+assistant: What type of food?
+user: I'd like something Italian.
+tool(FindRestaurants): ok n_results=5
+assistant: A nice restaurant in Campbell is called A Bellagio Italian Restaurant.
+user: That sounds good.
+assistant: Did you want to reserve a table there?
+user: Yes, I'd like to book a table for 3 at afternoon 1:15.
+assistant: Please confirm you're booking a table for 3 at A Bellagio Italian Restaurant in Campbell on March 11th at 1:15 pm.
+user: No, could you make it at 12:00 for one instead?
+assistant: Please confirm the reservation at 12 pm for 1.
+user: Yes, that is correct. Did they have outdoor seating and what is their number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed. It is 408-370-7705 and they do have outdoor seating.
+user: Thank you. That is all I need.
+assistant: Have a nice day.

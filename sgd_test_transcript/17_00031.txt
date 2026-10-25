@@ -1,0 +1,26 @@
+user: I'm looking for a salon in Sunnyvale.
+tool(FindProvider): ok n_results=10
+assistant: A+ Haircuts For Men is a great salon located in Sunnyvale.
+user: Sounds good. I want to share the locatoin.
+assistant: The address is 450 East El Camino Real. Is this the address you want to share?
+user: Yes, that's correct.
+assistant: Who do you want to share the location with?
+user: I want to share the location with Alan.
+assistant: Please confirm: Sharing the location 450 East El Camino Real with Alan.
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thank you. Can you tell me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm called jogging at 9 am.
+user: Okay, sounds good.
+assistant: Would you like to add an alarm?
+user: Yes, add an alarm called music practice for 3:30 pm.
+assistant: Please confirm: adding a new alarm called music practice at 3:30 pm.
+user: No, 3:45 pm actually.
+assistant: Please confirm: adding a new alarm called music practice at 3:45 pm.
+user: Yes, that's correct.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added, successfully.
+user: Thank you, that's all.
+assistant: Have a great day!

@@ -1,0 +1,36 @@
+user: Show me my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms. There is one for 3 pm with Errands.
+user: Ok, thank you for checking.
+assistant: Would you like to add an alarm?
+user: No, I would like to find a restaurant reasonably priced in San Jose.
+assistant: What type of food would you like?
+user: I would like a restaurant in St. Helena serving California for a ultra high-end price.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant The Grill At meadowood in St. Helena.
+user: Yes, that works for me.
+assistant: Can I help with something else?
+user: I would like to rent a car.
+assistant: When do you want the car and where would you like to pick up?
+user: I would like a car from Fresno Station from 9th of March.
+assistant: Would you like a hatchback, suv or something else? When are you picking up the car?
+user: I would like a SUV at 11 am.
+assistant: Until when do you need the car?
+user: I need the car until March 13th.
+assistant: Would you like insurance?
+user: I would like insurance.
+assistant: Bookin SUV wit insurance from Fresno station on march 9th at 11 am until march 13th.
+user: I will need the car until the 14th.
+assistant: The drop-off date will be March 14th for the SUV.
+user: I will need it from march 7th now.
+assistant: Pick up date will be on March 7th.
+user: Yes, that is correct. What is the price per day and what is the brand of the car?
+tool(ReserveCar): ok n_results=1
+assistant: The car is GMC Terrain and the cost is $61.00 per day.
+user: I would like to share this address 900 Meadowood Lane with Rebecca.
+assistant: sharing location 900 Meadowood Lane with Rebecca.
+user: Yes, that sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: Your location was shared.
+user: That is all I needed for now.
+assistant: Have a good day.

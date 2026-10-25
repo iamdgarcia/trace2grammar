@@ -1,0 +1,19 @@
+user: I need to find a house to stay in.
+assistant: What city are you staying in?
+user: I'm staying in London, England.
+tool(SearchHouse): ok n_results=10
+assistant: There's a house at 1 Addington Street rated 4.3.
+user: Sounds great. I want to book it.
+assistant: What days are you checking in and out?
+user: I want to check in on March 12th and check out on the 13th of March
+assistant: How many people in your group?
+user: Just 1 person.
+assistant: Please confirm: house in London for 1 person. Check in is March 12th and check out is March 13th.
+user: Yes, sounds good.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks. Can you find some attractions? I want to find a park that's child-friendly without an entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: Barbican Conservatory is a park.
+user: Okay, thanks. That's all for now.
+assistant: Have a great day.

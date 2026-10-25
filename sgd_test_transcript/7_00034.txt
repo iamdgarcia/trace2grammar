@@ -1,0 +1,20 @@
+user: I'd like to find a place to buy in Mountain View.
+assistant: How many baths do you need?
+user: I need 2 baths.
+assistant: How many bed rooms would you like?
+user: I need 3 bed rooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: Arbors at Mountain view is a very nice property at 2290 California Street that costs $3,500,000.
+user: What is the phone number for the property?
+assistant: The phone number for the property is 650-965-8290.
+user: Is there a garage and is there a laundry machine inside the house?
+assistant: There is an in-unit laundry and a garage.
+user: Sounds great. Schedule a visit for me.
+assistant: When do you want to visit?
+user: I'd like to visit March 13th.
+assistant: Could you confirm that you want to schedule ae visit to Arbors At Mountain View for March 13th?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled your visit to the property.
+user: Thank you. That is all I wanted.
+assistant: Have a good one.

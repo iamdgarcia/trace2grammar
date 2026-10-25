@@ -1,0 +1,28 @@
+user: Can you find me a therapist in Novato that is a family therapist?
+tool(FindProvider): ok n_results=2
+assistant: I have 2 therapists including Jones Jeannette a family counselor in Novato that may work.
+user: Tell me their phone number.
+assistant: They can be called at 415-883-1088.
+user: That sounds very good.
+assistant: Is there anything else I can assist with?
+user: Will you book an appointment at quarter to 3 in the afternoon?
+assistant: Which date do you want the appointment for?
+user: I would like the appointment for the 8th if you can.
+assistant: Please confirm details for an appointment with Jones Jeannette at 2:45 pm March 8th.
+user: Yes, that will work. Tell me their address.
+tool(BookAppointment): ok n_results=1
+assistant: The address is 250 Bel Marin Keys Boulevard. Sorry I couldn't book an appointment but you can try Jones Jeannette March 8th at 3 pm.
+user: Yes that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you'll get an email confirmation soon.
+user: Would you have recommendations on movies to watch directed by Thurop Van Orman.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 movie for you called The Angry Birds Movie 2 rated 72 out of 100.
+user: Who is in the movie?
+assistant: In the movie is Britta Steffenhagen.
+user: What type of movie is this?
+assistant: The movie is an animation.
+user: That sounds good to me.
+assistant: What else can I assist with?
+user: No thank you for the help.
+assistant: I'm happy to have helped you.

@@ -1,0 +1,19 @@
+user: Will you find exciting events?
+assistant: Any preference? Music, Theater or something else?
+user: I prefer Stage show around Philly.
+tool(FindEvents): ok n_results=6
+assistant: Found 6 events. There's Comedysportz at The Playground At The Adrienne on March 14th at 7:30 pm.
+user: Cool. Will you request a payment?
+assistant: Contact name? Amount?
+user: Transaction with Peter for 101 bucks.
+assistant: Confirm a public transaction with Peter for $101.
+user: Cool.
+tool(RequestPayment): ok n_results=1
+assistant: Payment request is successful.
+user: Will you buy 3 tickets to the event you found?
+assistant: Confirm 3 tickets for Comedysportz on March 14th in Philadelphia.
+user: Nice. Location?
+tool(BuyEventTickets): ok n_results=1
+assistant: I've reserved your tickets. Location is 2030 Sansom Street.
+user: Thanks. That's all.
+assistant: Have a wonderful day.

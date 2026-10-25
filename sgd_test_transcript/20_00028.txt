@@ -1,0 +1,33 @@
+user: I am searching for a hotel.
+assistant: In which city do you need hotel?
+user: I am searching it in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I searched and found 10 hotels for you. 45 Park Lane is a fantastic hotel with 5 star.
+user: May I know the price per night? What is their contact number?
+assistant: The price per night is $375. Their contact number is +44 20 7493 4545.
+user: Could you please find some other hotels that matches my criteria?
+assistant: Abbey Court Hotel (Hyde Park) is a fantastic hotel with 3 stars.
+user: Could you please find some other hotels that matches my criteria?
+assistant: Abercorn House is a fantastic hotel with 1 star.
+user: It is nice.
+assistant: Shall I book the hotel?
+user: Nope. Not now. I need a rental car to go there.
+assistant: Shall I book the car from March 3rd? Up to which date do you need it?
+user: I need it from 8th of this month to 10th of March.
+assistant: When will you need to pick up the car?
+user: I wish to pick it up at 3 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A Sedan Audi A8 car is available at Heathrow International Airport.
+user: What is the cost per day?
+assistant: It is $35.00 per day.
+user: It is nice. Please reserve the rental car.
+assistant: Shall I add insurance?
+user: No, I don't need insurance.
+assistant: Kindly ensure that, On March 8th, You are going to pick up a Sedan car from Heathrow International Airport at 3 pm. The drop off date is March 10th.
+user: It is nice.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked.
+user: Thank you so much for your help.
+assistant: Do you need any other help from me?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

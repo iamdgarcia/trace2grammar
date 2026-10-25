@@ -1,0 +1,29 @@
+user: I'm in need of a five star hotel
+assistant: where do you want it to be?
+user: NY is fine
+tool(SearchHotel): ok n_results=10
+assistant: there's 10 of them. I can suggest you a 5 star hotel called 1 hotel brooklyn bridge
+user: skip to the next, it must be in kl and smoke must be allowed
+tool(SearchHotel): ok n_results=10
+assistant: you got 10 possibilities. banyan tree kuala lumpur is a 5 star hotel that can work for you
+user: send me the info about the address
+assistant: it is in 2, jalan conlay, 50450 kuala lumpur, wilayah persekutuan
+user: how much will it cost me for one single night?
+assistant: it's $310 for one night
+user: ok, now I need a round trip flight to be able to reach the place
+assistant: where are you leaving from?
+user: I'll start my flight from sf
+assistant: were you thinking about leaving on march 2nd? when do you want to be back?
+user: I want to leave today and be back next monday
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: you got 1 option and it's with american airlines. you'll leave at 4 am and make a layover. your return flight will start at 10:30 am. The ticket is $593
+user: fine, ma the reservation at the hotel you found a second ago. book 3 rooms on march 8th, I'll stay there for one day only.
+assistant: confirm the procedure: you need to book 3 rooms at banyan tree kuala lumpur in kuala lumpur on march 8th and your stay is only for 1 day.
+user: I confirm. send me the contact number
+tool(ReserveHotel): ok n_results=1
+assistant: you got your rooms there. the number to call is +60 3-2113 1888
+user: I wrote it down. List me some of the attractions I can find there.
+tool(FindAttractions): ok n_results=10
+assistant: the best one is aquaria klcc, it's a nature preserve
+user: wonderful. bye bye
+assistant: have a lovely day

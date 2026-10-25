@@ -1,0 +1,18 @@
+user: I need to find a hotel.
+assistant: In which city do you want me to look?
+user: I need one in Seattle, WA.
+tool(SearchHotel): ok n_results=10
+assistant: The Ace Hotel Seattle is a 2 star hotel.
+user: Do they allow smoking? What is the contact number?
+assistant: They do not allow smoking and the number is +1 206-448-4721
+user: That's perfect.
+assistant: .Would you like to make the reservation?
+user: Yes please reserve the room.
+assistant: Which day is your check in day? How long will you be staying?
+user: I want to check in Monday next week and stay for five days.
+assistant: You want to reserve 1 room at the Ace Hotel Seattle, in Seattle for 5 days beginning March 4th.
+user: Yes that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks for your help, that's all I needed.
+assistant: Okay, bye! Have a good day.

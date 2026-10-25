@@ -1,0 +1,25 @@
+user: I am looking for a movie to watch.
+assistant: Which city do you want me to search for the movie?
+user: I am looking for a movie in Napa.
+tool(FindMovies): ok n_results=4
+assistant: There are 4 movies you may like. What do you think of Angel has Fallen, Hustlers or Once Upon a Time in Hollywood?
+user: Angel Has Fallen sounds nice to me.
+assistant: Do you want me to buy the tickets for the movie?
+user: No, Don't buy the tickets now.
+assistant: Is there anything else I can help you with?
+user: Can you find me some nice songs ?
+tool(LookupMusic): ok n_results=10
+assistant: How about Perfect Illusion by Lady Gaga from the album Joanne?
+user: Can you find me the type of the song?
+assistant: It's a Pop song.
+user: Yes, That is the song I am looking for.
+assistant: Do you want me to play it for you?
+user: Yes, Play it on speaker in Patio.
+assistant: Please confirm: You want me to play Perfect Illusion in Patio.
+user: Yes, That works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. Enjoy!
+user: Thank you so much!
+assistant: Can I help you with anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. have a nice day!

@@ -1,0 +1,14 @@
+user: I need to rent a home.
+assistant: Which city are you travelling to?
+user: I'm going to London.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 options. 1 Addington Street has 4.3 rating.
+user: What other options do you have with a 4.0 or higher rating?
+tool(SearchHouse): ok n_results=9
+assistant: I have 9 options. 1 Baffin Way has a 4.0 rating.
+user: Do you have any other options?
+assistant: 1 Craven Hill Gardens has a 4.0 rating.
+user: That house sounds awesome.
+assistant: Should I book it for you?
+user: No. That will be all for now. Thank you.
+assistant: You're welcome. Please enjoy the rest of your day.

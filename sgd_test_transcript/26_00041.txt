@@ -1,0 +1,28 @@
+user: I have planned to go for a trip and I want your help to search for a round trip flight.
+assistant: To which place you want to search for the flight?
+user: I am planning to go to Phoenix, AZ. Search for the one to go there.
+assistant: I want to know more information to search. Let me know the date and place from where you want to start your travel and what is your return date of trip.
+user: Search for the flights from CDMX on Wednesday next week and I am planning to return on 8th of this month.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Searched and got 2 results. What about your opinion to fly on a onward flight from American Airlines which will take off at 3:05 am and take off time of return flight will be at 5:40 am under ticket cost $403?
+user: Search for some other flights which should match my requirements.
+assistant: What about your opinion to fly on a onward flight from Delta Airlines which will take off at 3:10 pm and take off time of return flight will be at 9:15 am under ticket cost $406?
+user: What is the time of arrival of this place to the destination and tell me whether you have searched for Business class tickets?
+assistant: It is Economy class ticket and the flight will reach your destination place at 10:47 pm.
+user: That is okay. Now, I want to search for a nice house to stay there and I need the same with 4.1 rating or higher for one person.
+tool(SearchHouse): ok n_results=10
+assistant: got 10 results and what about a house at 10 East Thomas Road with 4.1 rating?
+user: This is perfect.
+assistant: Any other help you want from me?
+user: Yes, pleas book the house for me.
+assistant: Shall I book it from March 6th to March 8th?
+user: Yes, go ahead.
+assistant: Need your final confirmation to book a house for 1 person in Phoenix on from March 6th to March 8th.
+user: That is confirmed to proceed.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully booked the house.
+user: Thanks for your help and at last I want your help to search for some attractive places to visit.
+tool(FindAttractions): ok n_results=10
+assistant: What about a Museum. Do you like to visit Arizona Capitol Museum which is the best among 10 places I searched for you.
+user: That is fine and that's all for now. Thanks. Bye.
+assistant: Have a nice day.

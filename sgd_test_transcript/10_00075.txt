@@ -1,0 +1,20 @@
+user: I would love to find some online Anime movies with Shinichiro Ohta.
+tool(FindMovies): ok n_results=1
+assistant: Would Paprika interest you?
+user: Do you have another option?
+tool(FindMovies): ok n_results=0
+assistant: Sorry no. Is there anything else I can help you with?
+user: What about a Fantasy movie starring Ian McKellen?
+tool(FindMovies): ok n_results=1
+assistant: I have 1 option. The Lord of the Rings: The Return of the King. Would that interest you?
+user: The Lord of the Rings: The Return of the King works.
+assistant: Should I play the film?
+user: Yes. Thank you.
+assistant: Please confirm you want me to play the film The Lord of the Rings: The Return of the King with English subtitles.
+user: Yes. That's right.
+tool(PlayMovie): ok n_results=1
+assistant: The film has started playing.
+user: Thanks for your help.
+assistant: Is there anything else?
+user: No. That's all.
+assistant: Okay. Enjoy your film. Goodbye.

@@ -1,0 +1,27 @@
+user: I want to check the weather in Lafayette on 1st of March.
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is running at 87 degrees Fahrenheit and the chances of rain is 29 percent
+user: What is the wind pressure there?
+assistant: The wind speed is 11 miles per hour.
+user: Okay..this is cool
+assistant: Any other help you want?
+user: I like to visit the property Chateau Chillon Apartments on that day.
+assistant: Please give confirmation details: Your property visit to Chateau Chillon Apartments for march 1st.
+user: Okay..this is fine..Can i know the address? Is the apartment have a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed. There is no garage and the apartment is located at 10 Milland Drive.
+user: I want you to book a car there and my pick up is union plaza which is convenient to me.
+assistant: Are you like to have the car from march 1st?
+user: Yes...this is perfect.
+assistant: Are you like to add insurance and at what time you want to pick up?
+user: Yes..i like to buy insurance and pick up is at 5:30 pm.
+assistant: To which date you want the car?
+user: I want the car till the 2nd.
+assistant: What type of car you want? SUV, Sedan or any other?
+user: For me Sedan is perfect.
+assistant: Please give confirmation details:You want to pick up the Sedan car from Union Plaza on march 1st at 5:30 pm and want the car till march 2nd. You want to add insurance.
+user: Okay..this is perfect.
+tool(ReserveCar): ok n_results=1
+assistant: Your car booking is confirmed.
+user: Thanks a lot.
+assistant: Have a nice day.

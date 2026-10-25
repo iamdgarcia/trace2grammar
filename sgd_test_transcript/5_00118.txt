@@ -1,0 +1,16 @@
+user: I need help looking for a Family Therapist in Mountain View.
+tool(FindProvider): ok n_results=2
+assistant: I've found 2 that match the criteria. One of them is Kane Monique, a Family Counselor in mountain View.
+user: Okay, I'm interested.
+assistant: Would you like me to make an appointment for you?
+user: Yes, please do.
+assistant: What date would you like it for?
+user: Can you make it for this Saturday?
+assistant: And what time do you want it?
+user: I'd like it to be at quarter past 10 in the morning.
+assistant: I'll make you an appointment with Kane Monique for March 2nd at 10:15 am. Does that work for you?
+user: Yeah, that's good. Can you also give me their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: Their phone number is 650-964-6993 and they are located at 1059 El Monte Avenue # B. I'm sorry but I was not able to book it for this time. Would you like to try for March 2nd at 10 am with Kane Monique?
+user: No, I'll talk to you later.
+assistant: I'm happy to help.

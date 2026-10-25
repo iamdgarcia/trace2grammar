@@ -1,0 +1,14 @@
+user: Can you find me some movies to watch online?
+assistant: What kind of movie are you feeling right now?
+user: I want to watch a comedy-drama film right now
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie called Give Me Liberty which you might like?
+user: Yes, Give Me Liberty sounds like a fun movie, please play it with English subtitles
+assistant: Confirming you want to play Give Me Liberty with English Subtitles
+user: Yes, that's cool. Can you tell me who stars in it?
+tool(PlayMovie): ok n_results=1
+assistant: The movie is playing now, and it is Chris Galust who acts in it
+user: Thanks for doing that
+assistant: Sure thing, can I do anything else?
+user: No, that's all at the moment
+assistant: Enjoy watching Give Me Liberty!

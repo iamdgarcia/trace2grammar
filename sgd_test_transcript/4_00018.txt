@@ -1,0 +1,26 @@
+user: I want to go out on town and would require a rental car.
+assistant: Where would you be renting it from and from when?
+user: I need it on the 10th in Sydney, Australia.
+assistant: What time would you like to pick it up and till when would you be using it?
+user: I will pick it up at 3:30 in the afternoon and return it on March 12th:
+tool(GetCarsAvailable): ok n_results=6
+assistant: There are 6 options available. There is a dodge charger sedan available at kingsford smith International Airport.
+user: What is the daily cost?
+assistant: The daily cost is $39.00.
+user: For that price I would want a better car. Is there something else?
+assistant: You can pick up a Ford Focus Hatchback at Kingsford Smith International Airport.
+user: That would be fine.
+assistant: Should I go ahead and book the car?
+user: Yes, I want to rent it.
+assistant: Would you like to add insurance?
+user: No, I would not need it.
+assistant: You would like to pick up an uninsured hatchback vehicle at Kingsford Smith International Airport on March 10th at 3:30 pm and drop it off on March 12th?
+user: Yes, that would be fine.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved the car for you.
+user: What is the daily cost?
+assistant: That would be $29.00 a day.
+user: Thanks a lot.
+assistant: Would you be needing anything else?
+user: No. Everything is fine.
+assistant: Enjoy your day.

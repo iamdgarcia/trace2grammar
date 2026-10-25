@@ -1,0 +1,32 @@
+user: i am searching for a place to live , will you find a place to live?
+assistant: how many bed rooms do you want in the property and in which are i need to search in for? How many baths you prefer?
+user: I need a property in Morgan Hill and it should have four bed rooms and should have three baths.
+assistant: Whether do you need to find a place to rent of buy?
+user: i need to find a place to buy.
+tool(FindHomeByArea): ok n_results=6
+assistant: i found 6 nice houses. What about creekside village which is a good property located at 17055 creekside cir, it costs $4,550,000.
+user: Whether it have laundry machines inside the house and garage?
+assistant: it doesn't have a garage. It doesn't have laundry machines inside the house.
+user: WIll you find me some other places?
+assistant: What about Jasmine Square Apartments which is a good property located at 16530 Monterey Road ? it costs $4,000,000
+user: Ok that sounds good . I need to visit to that property. will you schedule a visit to a property on 12th of this month?
+assistant: please check and review the following details. Schedule a visit to Jasmine Square Apartments and visit to property on March 12th.
+user: ok thats good.
+tool(ScheduleVisit): ok n_results=1
+assistant: Visit to the property is scheduled.
+user: Thanks a lot , will you share the location?
+assistant: to whom you want to share it with?
+user: i wish to share it with Danielle.
+assistant: Please check and confirm the following details. Sharing the location at 16530 Monterey Road with Danielle.
+user: That sounds good
+tool(ShareLocation): ok n_results=1
+assistant: Your location is shared successfully.
+user: will you find a cab to go there?
+assistant: how many seats do you need in the cab?
+user: i prefer a normal ride. i need one seat in a group
+assistant: please check and confirm the following details. Cab ride has been booked to 16530 Monterey Road and need 1 seats with a regular ride.
+user: Ok that suits for me. How long before the cab reaches here? how much does it cost?
+tool(GetRide): ok n_results=1
+assistant: cab ride has been booked successfully. the cab is on its way. the cab is expected in 5 minutes . the ride costs $17.91
+user: thanks a lot for your immense help. that's all i need
+assistant: Take care, Have a wonderful day

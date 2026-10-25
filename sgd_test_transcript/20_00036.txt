@@ -1,0 +1,26 @@
+user: I want to find rental car from friday next week
+assistant: From where when you need it
+user: I need it till the 9th and make up the pickup at six in the evening I prefer Vancouver BC
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a good car available at Pacific Central station it's a sedan Audi A8
+user: It sounds great I want to find a house to stay there for 1 people with an average rating of 4.2 or higher
+tool(SearchHouse): ok n_results=10
+assistant: There is a good house located at 1018 granville street rating of 4.2
+user: Do they have laundry services whats their phone number
+assistant: They do not have laundry service the contact number is +1 877-972-6378
+user: Is there any other houses for three people
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house at 111 robson street with a rating 4.2
+user: Is there any other houses
+assistant: There is a house located at 1128 alberni Street with rating 4.2
+user: The house is great can you reseverthe house which we found just now
+assistant: Do you want to add insurance
+user: No I don't need it
+assistant: Please confirm the details you are picking up the sedan car from Pacific Central station on March 8th at 6 pm. the drop of his March 9th and there is no insurance
+user: That sounds good what's the cost
+tool(ReserveCar): ok n_results=1
+assistant: The cost is $33.00 per day and your car is reserved
+user: Thanks a lot for the help
+assistant: Can I help you with anything else
+user: No thanks for it
+assistant: Bye have a nice day

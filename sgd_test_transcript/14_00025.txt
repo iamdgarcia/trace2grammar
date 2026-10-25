@@ -1,0 +1,17 @@
+user: I'd like to stream a movie. Can you help me find one?
+assistant: I'd be happy to help. Did you have a specific genre in mind?
+user: I'd like an eccentric story.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 that might suit you. Have you seen Once Upon a Time In Hollywood?
+user: I've been meaning to watch Once Upon a Time In Hollywood. That's perfect!
+assistant: Would you like to begin streaming now?
+user: Yes, please start the movie.
+assistant: Would you like to view Once Upon a Time In Hollywood with English subtitles?
+user: That would be perfect.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has begun.
+user: Great! Can you tell me what the weather is predicted to be on the 14th of March in Moraga?
+tool(GetWeather): ok n_results=1
+assistant: The forecast has an average temperature of 82 degrees Fahrenheit with a 14 percent chance of precipitation.
+user: I think that's all I need right now. Thank you for the assistance.
+assistant: You're very welcome. Enjoy the movie.

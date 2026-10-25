@@ -1,0 +1,29 @@
+user: I would like to make a payment of ninety dollars, from my bank account.
+assistant: Can you give me the name of the contact please?
+user: The person I want to make the payment for is Mahmoud.
+assistant: Can you please confirm that you want to make a public transaction with Mahmoud for the amount of $90 which will be from your debit card?
+user: Yes, that is what I want to do.
+tool(MakePayment): ok n_results=1
+assistant: Your requested payment has been made, and the person receiving it will be able to see the money soon.
+user: I appreciate it very much. Now I want to find a restaurant there, so I can eat something.
+assistant: Can you tell me the kind of food you are interested in, and which is the location I should look for the restaurant?
+user: The restaurant I am looking for should be serving Light meal, and it should be located in San Francisco.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants which you might be interested in, with one of them being a good restaurant called 1300 On Fillmore, which is in San Francisco.
+user: Is this restaurant considered to be intermediate priced?
+assistant: The restaurant is considered to be a moderate one.
+user: Is there some other restaurant you can suggest?
+assistant: Another good restaurant in San Francisco is Absinthe Brasserie & Bar.
+user: That is nice. I would like to make a reservation for a table at this restaurant.
+assistant: Can you tell me the time for when you want to have the table booked for you?
+user: The reservation should be set for one pm.
+assistant: Can you please confirm that you want to book a table for 2 people at the Absinthe Brasserie & Bar restaurant in San Francisco on March 1st at 1 pm?
+user: That is not right, because I will be available to go there at morning 11:30.
+assistant: Can you please once again confirm that you want to book a table at Absinthe Brasserie & Bar for 11:30 am?
+user: That is not correct, because I want to have the table booked for the 6th.
+assistant: Can you please confirm that you want to have the table at the Absinthe Brasserie & Bar restaurant booked for you on March 6th?
+user: Yes, that is what I want.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made.
+user: I appreciate it very much. That's all I needed for now.
+assistant: Have a good time!

@@ -1,0 +1,37 @@
+user: I want to do something interesting, anything you can recommend for me?
+assistant: Any particular category of events you are looking for, like music or theater?
+user: Find me events related to songs, I really like those kinds of events.
+assistant: What city are you interested in finding events to do?
+user: Find me events in New York City.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like, may I interest you in Abbi Jacobson playing in Kaufmann Concert Hall on March 11th at 7:30 pm?
+user: Where is this venue located, and how much will it cost to buy one ticket?
+assistant: Address for this venue 1395 Lexington Avenue, and one ticket costs $60.
+user: Sounds great, is there buses heading to this venue?
+assistant: From which city will you depart on bus, and will you be leaving on March 11th?
+user: Actually I will leave on March 9th from Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: There is a bus departing on that day at 9 am, it will cost $24.
+user: That bus works for me, thanks for finding it!
+assistant: Would you like to purchase a ticket for this bus?
+user: Not ready yet to buy bus tickets, what about a round trip flight to the venue?
+assistant: On which day would you prefer the return flight to be on, March 9th, March 11th, or another date?
+user: The plane should depart on Thursday next week, and ideally should return on the 13th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There is an American Airlines direct flight available, it costs $91, and will depart at 1:20 pm, with its return flight taking off at 11:20 am.
+user: Anything else you can find for this trip?
+assistant: What about a Delta Airlines direct flight that costs $94, this flight takes off at 8:40 am with its return flight taking off at 12:20 pm?
+user: That flight sounds good, is there a hotel available in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found a 5 star hotel in that location, the 1 Hotel Brooklyn Bridge.
+user: Whats the address of this hotel, and is smoking allowed?
+assistant: Smoking is allowed on the premises, the address is 60 Furman Street, Brooklyn.
+user: Thanks for the information, I appreciate it.
+assistant: Shall I make a reservation to the hotel.
+user: Not right now, purchase tickets to the event you found, one in total.
+assistant: You wish to reserve 1 ticket to Abbi Jacobson playing on March 11th in New York, correct?
+user: That is all correct, please buy the tickets.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made, enjoy the event!
+user: Thank you so much for all your help today, that will be all.
+assistant: Understood, have a great day.

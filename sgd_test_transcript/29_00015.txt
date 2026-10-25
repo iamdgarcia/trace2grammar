@@ -1,0 +1,30 @@
+user: Hey, can you help me book one room in a hotel in New York?
+tool(SearchHotel): ok n_results=10
+assistant: The 1 Hotel Brooklyn Bridge is a great 5 star hotel.
+user: What's their price per night and phone number?
+assistant: They charge $465 per night and their number is +1 347-696-2500.
+user: That's interesting, it's good to know.
+assistant: Should I make a reservation?
+user: Maybe later, thank you.
+assistant: Can I help you with something else?
+user: Help me find some premium economy round trip flights going there and returning on the 9th of this month. I'm not picky about the airline.
+assistant: Will you be leaving on March 8th?
+user: On the 7th of March actually, and I'll be leaving from Berlin.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There's a direct American Airlines flight leaving at 1:35 am and returning on 4:45 pm. The tickets costs $544.
+user: Is it for just one? When does the return flight arrives?
+assistant: Yes, it's for 1, and the return flight arrives at 8:16 am.
+user: Good! Sounds great.
+assistant: Can I help you further?
+user: I want to make a reservation on the hotel you found. I'll check in on the 8th of this month and I'll stay there for 5 days.
+assistant: So 1 room for 5 days at the 1 Hotel Brooklyn Bridge in New York, checking in on March 8th?
+user: Sure, all correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation was successful.
+user: Can you also find me something to do there? I'd love to go to a park.
+tool(FindAttractions): ok n_results=10
+assistant: The Alley Pond Park is a great park there.
+user: What's their phone number? By the way.
+assistant: It's 212-639-9675.
+user: Good to know, that's all. Thank you, goodbye!
+assistant: Enjoy your trip! Goodbye.

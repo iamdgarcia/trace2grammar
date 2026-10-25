@@ -1,0 +1,24 @@
+user: I need to check weather in Cloverdale on the 4th of march.
+tool(GetWeather): ok n_results=1
+assistant: It'll be 71 degrees with a 24 % chance of rain.
+user: How windy and humid will it be?
+assistant: The wind speed will be 1 mph with a 26 % humidity.
+user: How about Fresno, CA on the 10th?
+tool(GetWeather): ok n_results=1
+assistant: It'll be 90 degrees with a 13 % chanc eof rain.
+user: Cool. Can you show me some attractions there?
+tool(FindAttractions): ok n_results=5
+assistant: How about Blackbeard's Family Entertainment? It's a theme park.
+user: is it free? What is their contact number?
+assistant: 559-292-9000, and it is free.
+user: Cool, anything else?
+assistant: There's the Christmas tree lane, a tourist attraction.
+user: Great, I'd like to get a cab there. The cheapest possible for 3.
+assistant: Please confirm: A pool cab ride for 3 to Christmas Tree Lane
+user: Exactly. how much will it cost, and how long until it arrives?
+tool(GetRide): ok n_results=1
+assistant: It'll cost $23.54, and be there in 5 minutes.
+user: Thank you.
+assistant: Do you need anything else?
+user: No thanks.
+assistant: Have a good day!

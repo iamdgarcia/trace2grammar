@@ -1,0 +1,34 @@
+user: I need help finding a therapist, a Psychologist to be exact.
+assistant: Sure. Any particular city I should search in?
+user: Look for someone practicing in Santa Rosa.
+tool(FindProvider): ok n_results=10
+assistant: Would you like to try Bert Epstein, a Psychologist practicing in Santa Rosa?
+user: Where are they located?
+assistant: They're at 2455 Bennett Valley Road.
+user: That's fine. I'd like to book an appointment for later today.
+assistant: What appointment time is convenient for you?
+user: afternoon 2:45 is fine with me.
+assistant: Okay. Let me see if I got everything correctly: You want to schedule an appointment at 2:45 pm. on March 1st with Bert Epstein.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, there was a glitch and I was unable to book the appointment. Bert Epstein has an opening at 3 pm on March 1st. How does that sound?
+user: Sound good.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment, and a confirmation email will be sent to you shortly.
+user: On what number can I contact them?
+assistant: Their contact number is 707-242-1989.
+user: Thank you very much. You've been very helpful. Could you also get me one seat in a cab going there?
+assistant: Do you have a preferred type of ride? You can choose Regular or Luxury or something else.
+user: My friend has offered to accompany me. Please get a Regular ride for two.
+assistant: No problem. Please confirm that you'd like 2 Regular ride seats in a cab going to 2455 Bennett Valley Road.
+user: Yes, that is correct.
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your cab and it should be here shortly.
+user: What's the cab's estimated arrival time?
+assistant: The cab should be here in 2 minutes.
+user: What is the price?
+assistant: The price of the ride is $25.41.
+user: Thank you very much. You've been very helpful.
+assistant: Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Goodbye, and have a great day!

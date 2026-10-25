@@ -1,0 +1,19 @@
+user: I want to find a Train to go for a short trip. Can you help to find the suitable one?
+assistant: From when and where are you leaving and to which place are you planing to visit?
+user: I want to search for the Train from Philadelphia on 3rd of March to Atlanta.
+tool(FindTrains): ok n_results=5
+assistant: I got details of one Train which is departing at 9:20 am under the ticket cost $171. Is this okay for you?
+user: What are the origin and Destination stations of this train?.
+assistant: The origin station is 30th Street Station and it will reach finally at Peachtree Station.
+user: Okay, search for something else and I need three seats.
+tool(FindTrains): ok n_results=5
+assistant: Found another one at 11:40 am for the total cost $497. Do you choose this train?
+user: No, please find some other Train.
+assistant: What about the train departing at 12:20 pm for the total cost $502?
+user: Yes, I choose this and thanks. Now I want to find a house there to stay and I need this for one person.
+tool(SearchHouse): ok n_results=10
+assistant: What about the house located at 101 Andrew Young International Boulevard Northwest with 4.3 rating? I think this will the suitable one among the 10 results that I got.
+user: Let me check and I want to know the contact number of this house.
+assistant: Please note down it as +1 404-524-5555.
+user: Okay, This will work for me. Thanks and that's all.
+assistant: Have a good day.

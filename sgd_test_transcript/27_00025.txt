@@ -1,0 +1,30 @@
+user: I'm looking for attractions in SF. Something child-friendly that would be cool to view. Can you list something like that?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that fall under your requirements. How about the Historical Landmark Alcatraz?
+user: Does such a Landmark have a phone number to contact them with?
+assistant: The number to that location is 415-561-4900.
+user: I'll find out more about it later. Thanks. Now, I want to watch a movie. I'd like to view a Supernatural movie at Balboa Theatre.
+tool(FindMovies): ok n_results=1
+assistant: IT Chapter Two is showing at the Balboa Theatre.
+user: That's not what I had in mind. Can you help me find other movies?
+tool(FindMovies): ok n_results=0
+assistant: I apologize but there are no other showings for movies that fit your tastes.
+user: Could you try that search again? With different criteria this time. I want to watch a Family movie with a regular showing. If possible, I want to view it at Regal UA Stonestown Twin.
+tool(FindMovies): ok n_results=1
+assistant: 1 movie seems to be what you are looking for. Would you be interested in seeing The Farewell?
+user: The Farewell should be more than fine honestly. Are there quality movies online for viewing?
+assistant: What type of movie are you referring to?
+user: Drama movies are what I am in the mood for.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies that fall under the Drama category. Would you be interested in A Faithful Man? How about After The Wedding? Lastly, Blinded by the Light is another good match.
+user: I would be ecstatic to see After The Wedding.
+assistant: Do you want me to start playing the movie?
+user: You might as well. I'm ready to relax and watch something for a bit.
+assistant: You want me to play After The Wedding with subtitles in English?
+user: Yeah. Go for it.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie you have requested. Enjoy.
+user: Who acted in this film?
+assistant: Will Chase is a well known actor who starred in this movie.
+user: I won't need anything else for now. Going to enjoy the movie. Thank you.
+assistant: Enjoy your film and have a great day.

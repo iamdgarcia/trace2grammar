@@ -1,0 +1,19 @@
+user: I want something to do around Oakland on the 11th, I really like Drama.
+tool(FindEvents): ok n_results=1
+assistant: I have 1 event for you. The Threepenny Opera. It is taking place at Bridge Yard on March 11th and it starts at 4 pm.
+user: Where is Bridge Yard and how much will it cost?
+assistant: The tickets will be $20. And it is 210 Burma Road.
+user: That sounds awesome. I have to request a payment for $67.
+assistant: Who are you requesting it from.
+user: I need to request it from Tom.
+assistant: Okay, let's confirm the details. You are requesting a public transaction with Tom for $67.
+user: That's the one.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: Thanks that is perfect. Can you get me one ticket to that event now.
+assistant: Let's confirm the details. There is 1 ticket to reserve. The Threepenny Opera. It is taking place at Bridge Yard on March 11th and it starts at 4 pm. It is taking part in Oakland.
+user: Yes that is perfect.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thanks for your help. That will be all.
+assistant: Have a good day.

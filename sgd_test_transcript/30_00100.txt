@@ -1,0 +1,25 @@
+user: Give me the weather forecast for the 1st of March please.
+assistant: Which city are we checking for ?
+user: Millbrae on this sunday please.
+tool(GetWeather): ok n_results=1
+assistant: I show an average temperature for that day should be 73 degrees Fahrenheit with a 23 percent chance of rain.
+user: What is the wind factor going to be?
+assistant: The wind factor factor will be 7 miles per hour.
+user: What is the expected humidity going to be?
+assistant: The humidity should be around 20 percent.
+user: Ok, thank you. Let's schedule a visit to the Birchwood Apartments property for that day please.
+assistant: Alright, please confirm we are scheduling a visit to the Birchwood Apartments on March 3rd.
+user: Yes, that is correct. Find out if there is a Garage there and how much does it cost?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your request has been scheduled and there is no garage. the cost is $3,550,000.
+user: I want to also reserve an SUV. An afternoon 2:15 pick up would be best.
+assistant: Should we add insurance also?
+user: No thank you.
+assistant: Should we reserve from March 3rd? Where would you like to pickup the vehicle and how long do you plan to keep the vehicle for?
+user: I will need the car from this Saturday until the 6th. Kingsford Smith Airport would be the most convenient pick up location for me.
+assistant: Ok, please confirm you are picking up at Kingsford smith international airport on March 2nd at 2:15 pm and returned on March 6th. this suv does not come with insurance. is this correct?
+user: yes perfect. How much will this cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your car was reserved and will be $42.00 per day.
+user: thank you for you help.
+assistant: your welcome.

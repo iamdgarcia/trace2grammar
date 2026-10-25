@@ -1,0 +1,34 @@
+user: I'm going to my best friends wedding and still haven't found a hotel, can you help me please?
+assistant: Sure, first tell me the name of the city you would like the hotel to be in.
+user: I need it to be near the wedding, in Toronto, Ontario.
+tool(SearchHotel): ok n_results=10
+assistant: There are a total of 10 hotels for you to choose from. What do you think about Best Western Plus Toronto North York Hotel & Suites with a 3 star rating?
+user: I'm not sure, how much do they charge per night and do they have a phone number listed?
+assistant: They can be reached at +1 416-663-9500 and they charge an average of $63 per night.
+user: Perfect, that definitely fits in my budget.
+assistant: Did you want me to proceed with reserving it for you?
+user: Fist I have a few other items on my agenda I could use your help with like a round trip flight to get me there.
+assistant: No problem, where are you traveling from and do you wish to depart on March 6th?
+user: No, I will be leaving Philly this Saturday.
+assistant: Okay and do you have a date in mind for the return flight?
+user: Yes, I need to get back home on the 7th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: American Airlines offers a flight that departs at 5:45 pm, and the return flight leaves at 4:15 am that only costs $293.
+user: How many people is that for, I need 2 tickets because someone will be coming with me.
+assistant: No, that deal is only for 1 person.
+user: What time does that flight reach the destination?
+assistant: That flight is scheduled to arrive at 11:08 pm.
+user: Okay, I think I would like to go ahead and book a room, checking in next Friday, with the hotel reservation you mentioned earlier, and I plan to stay for five days.
+assistant: No problem, I just want to make sure that I still have the details correct. You would like to book 1 room at Best Western Plus Toronto North York Hotel & Suites, located in Toronto, checking in on March 8th, and you will be staying a total of 5 days. Is that correct?
+user: Yes, I would also like to know if they allow smoking in the rooms and I will also need the address.
+tool(ReserveHotel): ok n_results=1
+assistant: I have confirmed your room at 50 Norfinch Drive, North York, Ontario M3N 1X1, Canada.
+user: I think I would like to do something fun while I am there as well so could you help me find some attractions I could visit as well?
+tool(FindAttractions): ok n_results=10
+assistant: I see here that there are 10 attraction you may like and one is a tourist attraction called 3D Toronto sign.
+user: Is this somewhere I could take my children?
+assistant: Yes, most children are easily amused by this location.
+user: Awesome, that was really easy.
+assistant: Can I help you with anything else?
+user: No, you've gone above and beyond, thanks.
+assistant: Have fun on your trip!

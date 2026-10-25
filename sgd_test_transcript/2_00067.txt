@@ -1,0 +1,16 @@
+user: I'm super bored right now. Can you find me something interesting to do?
+assistant: No problem. What city would you like to search in? Are you looking for anything in particular? You can say something like Music, Theater or another activity you enjoy.
+user: I'd like to find something at a theater in NYC. Can you find something happening on the 5th?
+tool(FindEvents): ok n_results=10
+assistant: There is a popular event happening at the TGW Acting Studio on March 5th. It's called the Advanced Acting Scene study and will be starting at 6:30 pm.
+user: That sounds amazing. Can you get me tickets?
+assistant: Sure, how many tickets do you need?
+user: Order one ticket for me please.
+assistant: Okay, just confirm the following for me. Booking 1 ticket for the Advanced Acting Scene Study on March 5th in New York. Correct?
+user: Yes, that's exactly what I want.
+tool(BuyEventTickets): ok n_results=1
+assistant: Okay, your reservation is complete. Have a great time!
+user: Thanks alot! Truly appreciate your help. You've been great.
+assistant: Is there anything else I can help you with today?
+user: No thanks. That will be all. Thanks again.
+assistant: My pleasure. Have a great day.

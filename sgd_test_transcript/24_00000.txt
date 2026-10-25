@@ -1,0 +1,30 @@
+user: Would you help me set up a trip, leaving from San Diego on the 12th of March so I can attend the upcoming festival? A one-way flight is what I need to accomplish that, my travel agent friend.
+assistant: I'll be happy to help you with that. Where are you going for this trip?
+user: I'll be heading to SFO.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Does an Alaska Airlines flight, departing at 9:10 pm for a fare of $171 interest you?
+user: Hmm. Would that be an economy or business fare?
+assistant: Your ticket would be for Economy seating.
+user: Okay, and what's the arrival time for the flight?
+assistant: The flight is scheduled for a 0:50 am arrival time at your destination.
+user: I see. Actually, I need to make a couple of changes. I'd like a United Airlines flight that departs on the 14th of March, please.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Okay. I'm showing that 1 seat on a United Airlines direct flight is available, departing at 11:15 pm, for a ticket fare of $99. Does that interest you?
+user: That's great. Now, would you also see if I can catch a train going that way with seating for 1 person?
+assistant: Sure. Is your date of departure March 14th?
+user: Please make that departure date March 7th.
+tool(FindTrains): ok n_results=7
+assistant: I'm showing 7 choices available, with the departure time of 6:40 am for one train at a cost of $100. Would you like that one?
+user: What's the departure station?
+assistant: The train would depart from the Santa Fe Depot.
+user: And, what's the arrival station?
+assistant: The train would take you to the Salesforce Transit Center.
+user: Alrighty then. I'll go with that. Please reserve my ticket.
+assistant: Shall I add insurance for your trip?
+user: Yes, please, tack on some insurance.
+assistant: Got it. Do you want me to confirm a Value train ticket for 1 person, departing from San Diego on March 7th at 6:40 am and going to San Francisco?
+user: That's what I want.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your train ticket is now confirmed.
+user: Great help, my friend, and we're done.
+assistant: Happy to assist you. Enjoy your day.

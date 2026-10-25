@@ -1,0 +1,30 @@
+user: I need to find a salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: 18/8 Fine Men's Salons - Palo Alto is a salon in the Palo Alto area.
+user: Can I have their direct line?
+assistant: They can be reached at 650-460-8290.
+user: Can I also have their address?
+assistant: They're located at 855 El Camino Real Building #1 Suite #3.
+user: Great. Sounds like a good one.
+assistant: Would you like me to book an appointment.
+user: Yes, please book it for me.
+assistant: For what time would you like the appointment and on which date?
+user: I need the appointment for the day after tomorrow at 4:30 pm.
+assistant: Please confirm you want me to book an appointment at 18/8 Fine Men's Salons - Palo Alto on March 3rd at 4:30 pm.
+user: Yep. That's correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked.
+user: Can you help me find a pricey coffeehouse to eat there that day.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 option. Terrain Cafe is a coffeehouse in Palo Alto.
+user: Okay, sounds good.
+assistant: Would you like me to reserve a table?
+user: Yes, please reserve for me.
+assistant: For what time?
+user: For 5:30 in the evening.
+assistant: Please confirm you want me to book a table for 2 at Terrain Cafe in Palo Alto on March 3rd at 5:30 pm.
+user: Okay, great. Do they have seats outside and what's their rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are rated 4.2 and do have outside seating.
+user: Thanks. That's all for now.
+assistant: You're welcome. Goodbye.

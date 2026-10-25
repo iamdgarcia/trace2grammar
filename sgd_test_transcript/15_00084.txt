@@ -1,0 +1,25 @@
+user: I am suffering from some illness. Can you find me a Therapist?
+assistant: Are you looking for Family Counselor or Psychologist or any other faculty?
+user: I want to consult a Family Therapist.
+assistant: Where do you want the service?
+user: Get one in Lafayette.
+tool(FindProvider): ok n_results=5
+assistant: You will get a Family Counselor at Building Better Relationships in Lafayette.
+user: That will be ok.
+assistant: Do you need appointment?
+user: Not now, thanks.
+assistant: You need any other favor?
+user: What is the weather condition on 7th of March?
+tool(GetWeather): ok n_results=1
+assistant: 89 degrees Fahrenheit of temperature and 26 percent chance for shower is forecast.
+user: Great, now please continue with fixing appointment with therapist.
+assistant: When do you want it?
+user: Fix it at 10:45 am.
+assistant: Ok, see the details, you need appointment at Building Better Relationships at 10:45 am on March 7th.
+user: Correct, continue.
+tool(BookAppointment): ok n_results=1
+assistant: Failed to fix it. You may get appointment with Building better Relationships on March 7th at 10:30 am.
+user: Not needed, thank you.
+assistant: Do you need any other help?
+user: No, that's all.
+assistant: Thanks for the nice time with you.

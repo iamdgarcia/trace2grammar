@@ -1,0 +1,18 @@
+user: I am searching for a train.
+assistant: From which city do you want to depart and in which city will you reach? In what date will you travel?
+user: On March 3rd, I am starting from Sacramento to Anaheim.
+tool(FindTrains): ok n_results=6
+assistant: I found 6 trains for you. What is your opinion about a train staring at 6:30 am? The total price is $116 in total.
+user: It is nice.
+assistant: Shall I book tickets?
+user: Nope. I don't want to book it now. I need a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: An excellent house is situated at 1050 West Ball Road with 4.2 rating.
+user: Do you any other house?
+assistant: An excellent house is situated at 1057 West Ball Road with 4.0 rating.
+user: It is nice.
+assistant: Shall I book a reservation for this house?
+user: No, I don't need it now.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: I am happy to help you. Bye.

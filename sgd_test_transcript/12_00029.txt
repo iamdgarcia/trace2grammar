@@ -1,0 +1,30 @@
+user: Can you help me with purchasing bus tickets, please?
+assistant: I can help you with that. Please tell me a few things, like the number of tickets, the station for your departure and the time you want to catch the bus.
+user: Right. Can you find a seat for 1 person on a bus that heads out from Portland, OR, on next Monday at 07:00?
+assistant: I'm on it, and what destination do you want?
+user: I'll be heading to Vancouver, BC, please.
+assistant: All right. If you're ready, I can confirm 1 ticket for a bus ride with no extra luggage, leaving Portland on March 4th at 7 am and arriving in Vancouver.
+user: Nice one but, first, tell me if the bus makes stops along the way and the station of arrival.
+tool(BuyBusTicket): ok n_results=1
+assistant: This is a direct trip with the bus arriving at the Pacific Central Station. However, I do see that a purchase for that time cannot be made due to an unforeseen glitch. Can you catch a bus leaving at 7:10 am instead for a cost of $46?
+user: Oh, sure, I can do that.
+tool(BuyBusTicket): ok n_results=1
+assistant: All right. Your bus reservation is confirmed.
+user: Great work, my friend. Now, please help me rent a car for when I get there.
+assistant: Okay. So you want the rental car ready for you at your Vancouver destination? And, what's the time you want for pick up and drop off, please?
+user: Vancouver is right, and I'd like the pick-up time to be the morning 10:30 and drop off on the 8th.
+assistant: Is your pickup date March 4th?
+user: Actually, I want to pick up the rental on the 6th, please.
+tool(GetCarsAvailable): ok n_results=7
+assistant: Sure thing. I show a Dacia Duster SUV would be available at YVR International Airport. Does that interest you?
+user: What's the daily rental charge?
+assistant: The daily rental charge is $43.00.
+user: Nice. I'll go for that rental, please.
+assistant: Would you like to include insurance in the rental?
+user: No, thanks, not this time.
+assistant: Okay. Are you ready to confirm an SUV car rental for pick up on March 6th at 10:30 am from YVR International Airport, with a drop-off date of March 8th?
+user: That works. Go ahead and confirm it, please.
+tool(ReserveCar): ok n_results=1
+assistant: Done. Your car rental reservation is confirmed.
+user: That's all for now, and I thank you.
+assistant: Certainly. Enjoy your day.

@@ -1,0 +1,16 @@
+user: I have a plan for a short trip and I want to stay there for a while for which I need a house with rating 4.0 or higher. Search for the one in Anaheim for two persons.
+tool(SearchHouse): ok n_results=10
+assistant: What about a house located at 1050 West Ball Road with rating 4.0 which is the good one I think from the 10 results I got for you.
+user: What is their contact number and can you please check about laundry service there?
+assistant: Yes, they have laundry service with them and please note down their phone number as +1 714-860-4660.
+user: That is great and okay for me.
+assistant: Shall I make a reservation for this house?
+user: Yes, book this house for me untill the 11th.
+assistant: From which date you need this house?
+user: Book it from Monday next week.
+assistant: I need your confirmation to book the house at Anaheim for 2 persons from March 4th March 11th.
+user: That is okay and let me know the cost details.
+tool(BookHouse): ok n_results=1
+assistant: Total cost will be $1,596 and your reservation was confirmed.
+user: Thanks and that's all.
+assistant: Have a great day.

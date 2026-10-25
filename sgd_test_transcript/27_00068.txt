@@ -1,0 +1,20 @@
+user: Can you help me find any child-friendly attractions in SFO?
+tool(FindAttractions): ok n_results=10
+assistant: No problem. I've found 10 attractions that may interest you. I recommend checking out Alcatraz. It's a very popular Historical Landmark.
+user: Okay, that sounds great. Are their any good movies playing in the area? Find something good at the Roxie Theater, any type of show is fine with me.
+tool(FindMovies): ok n_results=6
+assistant: I've found 3 movies you may like. How about Give Me Liberty, In Fabric or Labyrinth? I hear they are all good.
+user: Labyrinth sounds great! Could you also check and see if their are any good movies to watch online?
+assistant: Sure thing. What kind of movie would you like to see?
+user: I'm really into anything with an Eccentric story.
+tool(FindMovies): ok n_results=1
+assistant: How about Once Upon a Time In Hollywood?
+user: Once upon a Time in Hollywood sounds great.
+assistant: Anything else I can help you with?
+user: Yeah, I'd like to watch the movie now please.
+assistant: Okay, just confirm the following. Now playing Once Upon a Time In Hollywood with English subtitles. Correct?
+user: Yeah that's it. Can you also tell me who stars in it?
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is now playing. One of the stars of the movie is Timothy Olyphant.
+user: Okay, thanks. that's all I need.
+assistant: My pleasure. Have a good day.

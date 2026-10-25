@@ -1,0 +1,23 @@
+user: I want to go to my favorite place and I like to travel in Train. Can you find me a suitable train?
+assistant: Where are going to visit?
+user: I am planning to visit NY.
+assistant: What is your current location?
+user: I am in Chi-town and I want the Train from this place also I need two seats in it.
+assistant: For which date I have to book the tickets in the Train?
+user: Book it for 2nd of this month.
+tool(FindTrains): ok n_results=7
+assistant: What about a Train which is leaving at 7:30 am and the cost for the same will be $229 in total.
+user: May I know the origin station for this Train?
+assistant: Yes, it will be leaving from Chicago Union Station.
+user: Okay. Search for some other available Trains and I need to book flexible tickets.
+tool(FindTrains): ok n_results=7
+assistant: What about the one which is going to leave at 8 am for the total cost $248? Hope this will suit for you.
+user: Yes, I think the same. Can you help me to book the tickets and I need trip insurance also.
+assistant: Please confirm to book 2 Flexible tickets including Trip insurance on the Train from Chicago on March 2nd at 8 am to New York.
+user: That is okay to proceed. Also let me know the origin station of this train.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked the tickets and the train will leave from Chicago Union Station.
+user: That is okay and thanks for your help
+assistant: Anything else you need?
+user: Nothing for now and thanks.
+assistant: Have a nice Journey.

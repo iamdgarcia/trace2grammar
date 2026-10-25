@@ -1,0 +1,23 @@
+user: I need to reserve 4 tickets. Mason Jennings is a good one I heard and it's something around New York City.
+assistant: Is there a preferred date for the event?
+user: I need something the 8th of this month.
+assistant: Please confirm details that you are booking 4 tickets for Mason Jennings on March 8th in New York.
+user: Yes, that will work for me. What does one ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time. The ticket costs $55.
+user: Thanks for the help. What do you think about buses going there. I'm leaving from Washington March 3rd.
+tool(FindBus): ok n_results=7
+assistant: What about the bus leaving 6:20 am costing $38?
+user: That sounds good to me.
+assistant: Would I be able you with anything else?
+user: I would like to buy bus tickets.
+assistant: Please confirm details that you want a ticket on the bus leaving from Washington to New York leaving March 3rd at 6:20 am for 4 people without extra luggage.
+user: Yes, that will work for me. What station does it depart from?
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed departing from Silver Spring Bus Stop.
+user: What station does it arrive at?
+assistant: It comes to Penn Station.
+user: Thanks for the help much.
+assistant: Would I be able to assist you with anything else?
+user: No thanks for your help a lot.
+assistant: Have a nice day.

@@ -1,0 +1,13 @@
+user: Could you help me find Premium Economy class tickets for a round trip with a return date of March 5th?
+assistant: Please tell me your destination.
+user: My destination is Atlanta.
+assistant: What's your departure city, please?
+user: Search for flights originating from New York City.
+assistant: What departure date would you prefer?
+user: I'd like to depart today.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Among the 4 suitable flights I found is a direct, outbound American Airlines flight leaving at 9:45 am. The inbound flight departs at 10:30 pm. The ticket price is $304.
+user: Could you tell me how many tickets you got? What's the inbound flight's arrival time?
+assistant: I got a ticket for 1 passenger. The inbound flight lands at 0:52 am.
+user: Cool! Thank you very much. You've been very helpful. That will be all.
+assistant: Do have yourself a great day!

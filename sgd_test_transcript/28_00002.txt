@@ -1,0 +1,28 @@
+user: I'm bored and I'd like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: I have found a great film called Give Me Liberty that has a rating of 92 out of 100
+user: I'd like you to keep searching please.
+assistant: The Angry Birds Movie 2 has a rating of 72 out of 100.
+user: That sounds more like my kind of film. Now I'd like to find a place to eat in the same area, preferably with outdoor seating.
+assistant: Where would you like me to search and what kind of food do you like?
+user: Please look for somewhere that I can get a Burrito in Mountain View.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 places that you might like. How about Casa Lupe in Mountain View?
+user: Can you find me their phone number and address?
+assistant: Sure no problem. Their number is 650-965-2944 and they are located at 459 Castro Street.
+user: Thanks for that.
+assistant: Do you need help with anything else?
+user: Yeah can you book me a table at the restaurant please. I don't go anywhere without a reservation.
+assistant: What time are you looking to make a reservation for?
+user: At 4:30 in the evening.
+assistant: So that's a table for 2 at Casa Lupe in Mountain View on March 1st at 4:30 pm.
+user: That's correct yes. Do they serve vegetarian food?
+tool(ReserveRestaurant): ok n_results=0
+assistant: Unfortunately the reservation was not successful. Do you need anything else.
+user: How about trying to book a table for 12:30 in the afternoon?
+assistant: Okay so just to double check: You would like to book a table for 2 at Casa Lupe in Mountain View on March 1st at 12:30 pm.
+user: Yes that's all correct. What is the restaurant's customer rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been successful. The restaurant has a rating of 4.3.
+user: Thanks for your help.
+assistant: Enjoy your day!

@@ -1,0 +1,9 @@
+user: I want you to find me a direct bus for 3 people.
+assistant: Can you tell me the time when you want to have the bus for, and also could you tell me from where you will leave, and which will be your destination?
+user: I will be having my trip on 4th of this month, and I will be leaving frim Seattle, WA to arrive at Portland, OR.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses which you might consider, with one of them being a bus which departs at 7:30 am, and with a ticket which costs $28.
+user: That is nice.
+assistant: Are you interested in having the tickets bought for this bus?
+user: I am not willing to buy tickets at the moment. That would be all.
+assistant: Have a nice day!

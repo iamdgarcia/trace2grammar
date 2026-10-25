@@ -1,0 +1,17 @@
+user: Hi, I'm wanting to see a movie. I want something at 8:30 pm.
+assistant: Do you prefer regular or 3d?
+user: Just regular please.
+assistant: Where are you? Do you have a movie title in mind? How many?
+user: I want IT two. I need 4 for the Brentwood theatre.
+assistant: When do you want to go?
+user: I want tickets for March 7th.
+assistant: Ok, just to be clear: 4 for It Chapter Two on March 7th at Brentwood for the 8:30 pm show. You just want the regular movie?
+user: That's a go.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets are purchased now.
+user: What style movie is this?
+assistant: It's Supernatural.
+user: What is the street address?
+assistant: The theater is at 2525 Sand Creek Road.
+user: Thanks that's a real load off.
+assistant: Enjoy the scary show.

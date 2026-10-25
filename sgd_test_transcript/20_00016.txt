@@ -1,0 +1,27 @@
+user: I'm searching for a hotel in Seattle, WA.
+tool(SearchHotel): ok n_results=10
+assistant: I discovered 10 hotels meeting your requirements. There is a 2 star hotel known as Ace Hotel Seattle.
+user: That's fine with me.
+assistant: Do you wish to book the hotel?
+user: I do not wish to make the booking right now.
+assistant: Could I assist with something else?
+user: Can you get me a rental vehicle there that I can pick up at 6:30 in the evening?
+assistant: Would you like to have the vehicle from March 9th?
+user: Yeah, that's fine.
+assistant: What day do you need the vehicle for?
+user: I require it until the 14th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 vehicles available. There is a lovely Audi A8 sedan available at King Street Station.
+user: That sounds lovely. I'd like to book the rental vehicle.
+assistant: Would you like to include insurance?
+user: I do not require insurance.
+assistant: Please verify the following information: you are picking up a sedan from King Street Station on March 9th, 6:30 pm, with a drop-off day at March 14th. It does not include insurance.
+user: Yeah, that's fine with me.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: What is its price per day?
+assistant: The price is $34.00 per day.
+user: Thank you for your assistance.
+assistant: Could I assist with something else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

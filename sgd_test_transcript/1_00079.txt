@@ -1,0 +1,22 @@
+user: Can you find hotels for me?
+assistant: Which is your preferred city for the hotel?
+user: I would like a hotel in Seattle.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that you may like. How about a 2 star hotel called Ace Hotel Seattle?
+user: Okay, That sounds good to me.
+assistant: Do you want me to reserve a room in the hotel?
+user: Yes, Please reserve a room for me.
+assistant: What is the duration of your stay?
+user: I will need the room for four days.
+assistant: What will be the date of check in?
+user: I want to check in on 7th of this month.
+assistant: Please confirm: You want me to reserve 1 room in Ace Hotel Seattle located in Seattle for 4 days and date of check in will be March 7th.
+user: No, I want the room for seven days.
+assistant: Please confirm again: You want me to book a room in Ace Hotel Seattle for 7 days.
+user: Yes, That is correct. Find me their Phone number and street address.
+tool(ReserveHotel): ok n_results=1
+assistant: Your room has been successfully reserved. You can call them on +1 206-448-4721 and their address is 2423 1st Avenue.
+user: Thank you so much!
+assistant: Can I help you with anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day! Bye!

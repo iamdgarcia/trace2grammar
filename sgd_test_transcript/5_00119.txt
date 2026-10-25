@@ -1,0 +1,21 @@
+user: I would like a Family Therapist in Novato.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 therapists. There is Jones Jeannette who is a Family Counselor in Novato.
+user: Is there a therapist in El Cerrito?
+tool(FindProvider): ok n_results=1
+assistant: There is 1. Rigg Christie is a Family Counselor in el Cerrito.
+user: Can you book an appointment?
+assistant: What time do you prefer?
+user: I would like an appointment at 10:45 am.
+assistant: When is the appointment for?
+user: The appointment is for the 11th of March.
+assistant: Booking appointment with Rigg Christie on March 11th at 10:45 am.
+user: Can you make the appointment for the 5th of March instead?
+assistant: Booking appointment with Rigg Christie on March 5th.
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Would you like to Rigg Christie on March 5th at 10:30 am instead?
+user: No, that does not work for me.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

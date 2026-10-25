@@ -1,0 +1,19 @@
+user: I would like to see a Broadway show in Chi-town on the day after tomorrow. What is available?
+tool(FindEvents): ok n_results=10
+assistant: I found 10 shows. How about Ada and the Engine at The Artistic Home on March 3rd at 5:30 pm.
+user: What is the address? How much are tickets.
+assistant: The tickets are $55 and the venue is 1376 West Grand Avenue #7761.
+user: Great, please request a payment from Amelia for 171 dollars.
+assistant: You are requesting $171 from Amelia, correct?
+user: Yes that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: Thank you. I would like tickets to the show you found.
+assistant: How many do you need?
+user: Two tickets please.
+assistant: You want 2 tickets to Ada and the Engine on March 3rd in Chicago, is that correct?
+user: Yes that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been reserved.
+user: Thanks, that is all I needed.
+assistant: Have a wonderful day.

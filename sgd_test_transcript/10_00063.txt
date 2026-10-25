@@ -1,0 +1,12 @@
+user: I need help finding something good to watch online. I feel like family movies featuring Ronald Young.
+tool(FindMovies): ok n_results=1
+assistant: I've found 1 movie you might like. How about Steel Magnolias?
+user: I've heard of that. Steel Magnolias sounds great.
+assistant: Will that be all?
+user: I want to watch the movie now.
+assistant: Please confirm: play Steel Magnolias with subtitles on English.
+user: I confirm.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie will begin playing shortly.
+user: I appreciate it thanks.
+assistant: Anytime, enjoy the movie.

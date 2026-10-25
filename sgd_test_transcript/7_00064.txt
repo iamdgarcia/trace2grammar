@@ -1,0 +1,18 @@
+user: I'm looking for a place to live.
+assistant: In which city and are you looking to rent or buy?
+user: I want to buy a property in Fremont.
+assistant: How many bedrooms and baths are you looking for?
+user: I need a two bed one bath home.
+tool(FindHomeByArea): ok n_results=10
+assistant: There is one option at Birchwood Apartments located at 3500 Pennsylvania Avenue # 101 for a cost of $2,300,000.
+user: Please schedule a viewing.
+assistant: For what date?
+user: For the 13th.
+assistant: Please confirm you want me to book a visit to Birchwood Apartments on March 13th.
+user: Yes. And can I have their address and is there a washer and dryer in the home?
+tool(ScheduleVisit): ok n_results=1
+assistant: The homes have laundry units. The viewing has been confirmed. Their direct line is 510-943-8264.
+user: Thanks so much!
+assistant: Is there anything else I can do for you?
+user: No. That's it. Thanks.
+assistant: You're welcome. Have a great day.

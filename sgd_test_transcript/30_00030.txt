@@ -1,0 +1,23 @@
+user: I want 3 tickets to an event on the 5th of March.
+assistant: In which city should I search for events?
+user: I am looking for an event in NY, maybe Crooked Colours.
+assistant: Please confirm you want 3 tickets to Crooked Colours on March 5th in New York.
+user: That is correct. Where is the event?
+tool(BuyEventTickets): ok n_results=1
+assistant: The venue is 64 North 9th Street, Brooklyn, and the tickets have been successfully purchased.
+user: Thank you very much. Are there any buses going there?
+assistant: Which city are you leaving from?
+user: I am leaving Philly.
+assistant: Are you leaving on March 5th?
+user: I am leaving on the 1st of this month.
+tool(FindBus): ok n_results=6
+assistant: There is a bus leaving at 9 am for $23.
+user: Which station does it leave?
+assistant: It leaves from 10th and Filbert.
+user: I want to buy tickets for that bus.
+assistant: Please confirm you want 3 tickets on the bus traveling from Philadelphia to New York on March 1st at 9 am.
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: The tickets have been purchased.
+user: Thank you, that will be all.
+assistant: See you soon!

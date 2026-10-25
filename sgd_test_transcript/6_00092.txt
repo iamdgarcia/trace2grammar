@@ -1,0 +1,14 @@
+user: I need a new salon.
+assistant: In what city?
+user: I am interested in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: 18/8 Fine Men's Salons - Palo Alto is a stylish place to get your hair did in Palo Alto.
+user: Yes, book me an appointment there please.
+assistant: What day and time works for you?
+user: I want to go around 12:00 on the 7th.
+assistant: Please confirm, appointment at 18/8 Fine Men's Salons - Palo Alto on March 7th at 12 pm.
+user: Yes, that will be perfect.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is complete.
+user: Thanks, that is all I need.
+assistant: Have a nice day.

@@ -1,0 +1,19 @@
+user: Search for me please for a bus.
+assistant: Tell me from where you will leave.
+user: I want for 2 people from San Diego.
+assistant: Where you plan to go and when?
+user: I would like to go from Fresno, Ca on 5th of March.
+tool(FindBus): ok n_results=6
+assistant: I have 6 buses for you.What you think about a bus that depart at 6:50 am and cost $41?
+user: This is a one-stop bus?
+assistant: No.Is a direct bus.
+user: Sounds good for me.Buy tickets please.
+assistant: You want tickets for 2 people from San Diego to Fresno on March 5th at 6:50 am.Is that okay?
+user: Yes, perfect.At which station will arrive and at witch station will depart?
+tool(BuyBusTicket): ok n_results=1
+assistant: Tickets is confirmed.Will arrive at 2660 Tulare St and departs from El Cajon Bus Stop.
+user: Thank you.Find me a hotel in that area, please.
+tool(SearchHotel): ok n_results=4
+assistant: I found 4 options available for you.A 3 star hotel called Doubletree By Hilton Hotel Fresno Convention Center.
+user: Sounds very good.That's all.
+assistant: Have a great day!Bye.

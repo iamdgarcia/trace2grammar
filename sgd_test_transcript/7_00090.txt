@@ -1,0 +1,15 @@
+user: Hello! I'm interested in seeing a movie. Can you help me get tickets?
+assistant: I'd be happy to help. Let's get some details out of the way first. Did you have a preference on the type of movie? Would you prefer imax or 3d? What day will you be attending the movie and how many are in your party?
+user: I'd like 1 regular movie ticket for a show this Sunday.
+assistant: Where are you located and which movie would you like to see?
+user: I'd like to find a showing of Brittany Runs a Marathon in San Francisco.
+assistant: What time works best for you?
+user: I'm interested in 3d shows at 6:45 in the evening. You can search in Palo Alto as well.
+assistant: You'd like 1 ticket to see Brittany Runs a Marathon in 3d on March 3rd at 6:45 pm in Palo Alto. Is that right?
+user: No, I'm sorry. I need to make that 2 tickets for March 9th.
+assistant: Okay, you'd like 2 tickets for the show on March 9th. Is that correct?
+user: Yes, that is correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your ticket purchase has been confirmed.
+user: Great. Thanks for the assistance.
+assistant: You're welcome. Have a wonderful day.

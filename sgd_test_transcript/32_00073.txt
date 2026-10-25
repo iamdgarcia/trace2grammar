@@ -1,0 +1,28 @@
+user: I would like to search for some songs to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you, including Stay by Rihanna from the album Unapologetic.
+user: What kind of music is it?
+assistant: It is a Pop song.
+user: OK, thank you for finding that.
+assistant: Would you like to play the song now?
+user: Not yet, thanks.
+assistant: Is there anything else I can help you with?
+user: I want to look for a good movie. What are some movies online?
+assistant: What kind of movies are you interested in?
+user: I think I might watch a crime movie.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie in that category, Pulp Fiction.
+user: Pulp Fiction is great, thanks.
+assistant: Would you like to play the movie now?
+user: Not yet, thanks.
+assistant: Is there anything else I can help you with?
+user: Yes, I'm ready to play the song you found. Please play it in the living room.
+assistant: You would like to play the song Stay in the Living room, is this right?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: I think I should check my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm for 6:30 am with the name Get up.
+user: OK, that's good. That's all, thank you.
+assistant: Have a good evening!

@@ -1,0 +1,27 @@
+user: I am bored and fancy doing something today. Can you help me find something to amuse me?
+assistant: What kind of events do you like?
+user: I do love Broadway.
+assistant: Which city are you in?
+user: Can you find something in Toronto, Ontario.
+tool(FindEvents): ok n_results=9
+assistant: Well Anne of Green Gables is on at Lower Ossington Theatre on March 2nd at 7 pm.
+user: where abouts is that and how much would it cost?
+assistant: It is located at 100 Ossington Avenue and the ticket costs $60.
+user: That is right up my street.
+assistant: Will I purchase tickets for you?
+user: not right now. I just thought about something I need to do. I need to request a payment for six bucks from Svetlana. It has to be a private transfer.
+assistant: To confirm then you want to make a private transaction for $6 with Svetlana.
+user: yes that is right.
+tool(RequestPayment): ok n_results=1
+assistant: the payment has gone through.
+user: now can we purchase those tickets?
+assistant: how many do you require?
+user: I need 2 please.
+assistant: To confirm then that is 2 tickets for Anne of Green Gables on March 2nd in Toronto.
+user: actually can I change that to 1?
+assistant: To confirm then that is 1 ticket for the event in Toronto.
+user: yes that is absolutely correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: your booking has gone though I hope you have the best time.
+user: thanks so much, that is all I need.
+assistant: have a lovely day.

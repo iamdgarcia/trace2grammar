@@ -1,0 +1,24 @@
+user: Can you put on some rock-and-roll music while I work? I've heard the Red Hot Chili Peppers album The Getaway is pretty good.
+tool(LookupMusic): ok n_results=3
+assistant: Sure, I could play Dark Necessities by the Red Hot Chili Peppers form the album The Getaway?
+user: Is that from '13?
+assistant: No, it's from 2016.
+user: Ok, that sounds perfect. Can you also see if there are any good scary movies online?
+tool(FindMovies): ok n_results=6
+assistant: Sure, I found 6 you might like. How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: What else did you find?
+assistant: There's also One Cut of the Dead, Scary Stories to Tell in the Dark, and Theatre of Blood.
+user: Ah, scary stories is good.
+assistant: Ok, do you want me to play it now?
+user: No, not right now.
+assistant: Ok, anything else I can help with?
+user: Yes, can you go back and play that song you found on the kitchen speaker?
+assistant: Sure, to confirm, you'd like to play Dark Necessities on the Kitchen speaker, is that right?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Your song is playing, enjoy!
+user: Thanks. Can you tell me what alarms I have set really quick?
+tool(GetAlarms): ok n_results=4
+assistant: Sure, you have an alarm called Paper set for 10 am.
+user: Great, thanks. That's all for now.
+assistant: Ok, thank you.

@@ -1,0 +1,19 @@
+user: I need some attractions to visit, and something without an entry fee.
+assistant: In which city would you like to search in?
+user: I need attractions in NYC, and a Park.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 options matching your search. You should see Alley Pond Park, a Park.
+user: Is it good for children? And what is their phone number?
+assistant: Yes, it is child-friendly. The contact number is 212-639-9675.
+user: Okay, I need a house there, with laundry service. I need a rating of 3.9 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available, such as one at 100 Greenwich Street, with a rating of 3.9.
+user: Okay, that is great. I need a round trip flight with three tickets that are Economy class.
+assistant: On which date are you traveling?
+user: I want to go on the 2nd of March.
+assistant: From which city would you like to depart? On which date to return?
+user: I want to come back on March 14th, from Paris, France.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Would you like to go with American Airlines to take off at 2:35 PM? The flight is to return at 9:40 AM and the ticket price i $486.
+user: Okay then, thanks.
+assistant: Have a wonderful day.

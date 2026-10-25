@@ -1,0 +1,28 @@
+user: I'd like a rental car.
+assistant: Sure. When are you wanting to pick it up, and for how long?
+user: I'll need it until March 12th, and I can pick it up at 1:30 in the afternoon.
+assistant: Okay. When would you like to start your rental, and where will you be renting from?
+user: I will need it on the 8th in London.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Sure. There's a Sedan Audi A8 available at Heathrow International Airport if you're interested.
+user: How much will it be?
+assistant: It will be $32.00 per day.
+user: Is there anything else? I'm thinking about picking it up at 10:30 in the morning instead, for any type of car.
+tool(GetCarsAvailable): ok n_results=9
+assistant: Sure. There are 9 cars available. A Sedan Buick Regal Sportback is available at the Gatwick International Airport if you'd like.
+user: How much is it?
+assistant: It will be $34.00 per day.
+user: Perfect! Can you help me find a house available for my stay?
+tool(SearchHouse): ok n_results=10
+assistant: Sure. There are 10 houses that fit your search. A 4.3 star home is located at 1 Addington Street.
+user: That will work. Will you reserve my rental car, please?
+assistant: Are you interested in adding insurance?
+user: No, that's alright. I don't need it.
+assistant: Just to confirm, you are reserving a car rental for a Sedan car, from March 8th to March 12th, and will be picking it up at 10:30 am from the Gatwick International Airport. Is that correct?
+user: Yes, thank you.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental has been reserved.
+user: Thank you for helping.
+assistant: Is there anything else I can assist you with?
+user: No, thank you.
+assistant: Have a wonderful day.

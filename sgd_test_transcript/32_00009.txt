@@ -1,0 +1,23 @@
+user: I need to see a therapist.
+assistant: Do you want to see a Psychologist, Family Counselor, or another kind of mental health specialist.
+user: A Family Counselor could probably help me.
+assistant: In what city?
+user: Search in Lafayette.
+tool(FindProvider): ok n_results=5
+assistant: I found 5 therapists that may work for you. In Lafayette, there is a Family Counselor working at Building Better Relationships.
+user: Sounds great. Can you make an appointment. Make it for a quarter to 10 in the morning.
+assistant: What date should I make it for?
+user: Make it for March 14th.
+assistant: Please confirm the following appointment details: Booking an appointment with Building Better Relationships on March 14th at 9:45 am.
+user: No, make it for 11 am.
+assistant: Please confirm the following details: booking an appointment at 11 am with Building Better Relationships.
+user: Yes, that works well.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. You will get an email confirmation too.
+user: What's the address?
+assistant: 3470 Mount Diablo Boulevard A200.
+user: Thank you! Do you have film recommendations? I like watching movies with Tony Hale and animation is good too. I want to watch something directed by Thurop Van Orman.
+tool(FindMovies): ok n_results=1
+assistant: How about The Angry Birds Movie 2. It has a 72 out 100 rating.
+user: Sounds like a good movie. That will be all.
+assistant: Goodbye and have a great day!

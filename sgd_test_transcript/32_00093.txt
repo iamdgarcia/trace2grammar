@@ -1,0 +1,34 @@
+user: Can you find me a place to live?
+assistant: Sure. Can you give me the following information: where do you want to live? How many bedrooms do you need? How many bathrooms do you need?
+user: Find me a 2 bedroom, one bathroom property in Fairfield.
+assistant: Are you looking to rent or to buy?
+user: I am looking to buy.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 10 properties for you. How about Aspen Village Apartments? It is a very nice house located at 2355 Fairfield Avenue. The property costs $2,300,000.
+user: Can you give me the phone number?
+assistant: You can contact them at 707-429-1271.
+user: Does the house have a laundry machine inside? Is there a garage?
+assistant: The house doesn't have a garage but there is a in-unit laundry.
+user: That sounds good. I want to schedule a visit for March 11th.
+assistant: Confirming that you want to schedule a visit to Aspen Village Apartments for March 11th?
+user: No, I want to visit on March 7th.
+assistant: Confirming that you want to schedule a visit to Aspen Village Apartments for March 7th?
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thanks. Can you share the location?
+assistant: Who would you like me to share the location with?
+user: I want to share it with Terry.
+assistant: Confirming that you want to share the location 2355 Fairfield Avenue with Terry?
+user: Yes, that sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: Location successfully shared.
+user: I need to arrange a cab to visit the property.
+assistant: How many seats do you need? Do you have a preferred type of ride?
+user: I want a Pool ride for 2.
+assistant: Confirming that you want to arrange a Pool ride for 2 to 2355 Fairfield Avenue?
+user: Yes, that is right.
+tool(GetRide): ok n_results=1
+assistant: Your cab is on its way.
+user: Thanks for your help. That is all for now.
+assistant: You're welcome. Have a wonderful day!

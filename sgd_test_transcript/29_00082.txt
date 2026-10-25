@@ -1,0 +1,30 @@
+user: I would like to find an event.
+assistant: What type of event would you like, music, theater or something else?
+user: I would like a Theater event.
+assistant: Is there a city I should search in?
+user: Something in the area of Portland, OR would be great.
+tool(FindEvents): ok n_results=10
+assistant: There is Annual School Performance taking place at Newmark Theatre on March 2nd at 5 pm.
+user: I would like a house to stay there for 2 people. The house should have laundry service and the rating 4.3 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house located at 1150 Northwest 9th Avenue and the rating is 4.3.
+user: What buses are going to that house?
+assistant: Where are you leaving from?
+user: I will be leaving from Vancouver.
+assistant: Are you leaving on March 2nd or March 4th?
+user: I would like to leave on the 1st of this month.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses. There is one departing at 7:10 am for $41.
+user: Yes, that sounds good.
+assistant: Would you like to purchase a ticket for the bus?
+user: No, but I would like a ticket for the event previously found.
+assistant: How many tickets would you like?
+user: I would like 3 tickets.
+assistant: Booking 3 tickets for the Annual School Performance on March 2nd in Portland.
+user: Yes, that is correct. How much is a ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket is $45.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

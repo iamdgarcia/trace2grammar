@@ -1,0 +1,25 @@
+user: Find me a 2 star hotel in Kuala Lumpur.I want 2 rooms.
+tool(SearchHotel): ok n_results=6
+assistant: I found for you a 2 start hotel called Ceria Hotel Bukit Bintang.
+user: Are there other options for me? I want to smoke in the hotel.
+tool(SearchHotel): ok n_results=5
+assistant: 5 options are available according to your requirements.A 2 star hotel named Container Hotel.
+user: Great.Find me a round trip flight to get there.I want to fly with American Airlines and any ticket class is good for me.
+assistant: On which day you want to be the return flight and from which city you will depart?You will leave on March 6th?
+user: I want to travel today from San Francisco and return on Thursday next week.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: You would like to fly with the company American Airlines?Onward flight take off at 4 am and the return takes off at 10:30 am.Cost per ticket is $599.
+user: The returning flight when will arrive?
+assistant: At 4:25 pm will arrive.
+user: Sounds really good.Reserve for me the hotel that you found for six days.
+assistant: You want to check in on March 1st?
+user: I would like to check in on 10th of this month and I will stay for three days.
+assistant: You want 2 rooms at a hotel in Container Hotel located in Kuala Lumpur with check in date on March 10th and you will stay 3 days.Is that correct?
+user: Sure,this is good.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel was booked.
+user: Thank you for your help.Can you find me some attractions there? Nature Preserve will be great.
+tool(FindAttractions): ok n_results=3
+assistant: I have 3 attractions that you may like.You may check out a Nature Preserve called Aquaria KLCC.
+user: Okay,good.That's all for now.Bye!
+assistant: Have fun!

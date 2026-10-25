@@ -1,0 +1,36 @@
+user: Can you help me locate something interesting to do?
+assistant: Is there a particular category that you prefer? This can be music or theater or anything else? Is there any specific city you want me to search in?
+user: I like music a lot and I would like you to find something around San Francisco.
+tool(FindEvents): ok n_results=10
+assistant: One that is very popular is Alex Cameron. This event will happen at August Hall on March 8th at around 7 pm.
+user: What is the price of one ticket?
+assistant: The price of the ticket is $25.
+user: These would be good. Would you help me find other events around LA? I would like something on 6th of this month.
+tool(FindEvents): ok n_results=10
+assistant: A popular event is Aldous Harding at Masonic Lodge at Hollywood Forever. This will take place on March 6th at 6 pm.
+user: That sounds very good.
+assistant: Would you like to purchase tickets to go to this event?
+user: I might do that later.
+assistant: Is there anything else I can do for you today?
+user: Can you find me a hotel near there as well?
+tool(SearchHotel): ok n_results=10
+assistant: I have located 10 hotels matching what you are looking for. One is called Ac Hotel By Marriott Beverly Hills. This is a 3 star hotel.
+user: What is the street address of this location?
+assistant: The address there is 6399 Wilshire Boulevard.
+user: Are there any other hotels that fit with my criteria
+assistant: There is another 3 star one called Airtel Plaza Hotel.
+user: What is the phone number there and does this hotel allow smoking?
+assistant: No, you cannot smoke on the property. The phone number here is +1 818-997-7676.
+user: That sounds fine. I would like to buy tickets to that event you found for me.
+assistant: What number of tickets do you want to buy?
+user: I would to get one ticket.
+assistant: Confirm these details for me: booking 1 ticket to the Aldous Harding Event on March 6th in Los Angeles.
+user: Yes, that is very good for me. What is the price of one ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been confirmed for you. I hope you have a great time there! The price of the ticket is $25.
+user: What is the location of the venue.
+assistant: The venue is located at 5970 Santa Monica Boulevard.
+user: Thanks very much for your help.
+assistant: Is there anything else I can help you with today?
+user: No. I appreciate all your help.
+assistant: Have a wonderful day.

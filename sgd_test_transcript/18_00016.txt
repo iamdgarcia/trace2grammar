@@ -1,0 +1,34 @@
+user: I want to check about the weather condition on 13th of March and I need your help to do the same.
+assistant: Where do you want to check for the Weather?
+user: Check it in Toronto, Ontario.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 62 degrees Fahrenheit in average and there may be a 1 percent chance of rain.
+user: What about the Humidity there?
+assistant: It will be around 15 percent. What else do you need to know?
+user: I want to check the same on March 8th.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 67 degrees Fahrenheit in average and there may be a 6 percent chance of rain.
+user: That's fine. Find me an one-way flight to go there. I want to book three Economy class tickets for the leaving date on 5th of March.
+assistant: What is your present location to search for the flight?
+user: Search it from SD.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Do you like to travel through Alaska Airlines? There is an onward flight which will take off at 1:05 pm for the ticket cost $278. How about your convenience in travel through this flight?
+user: I prefer to travel through United Airlines on Premium Economy Class tickets. Search for the one according to my requirement.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: What about an onward flight with United Airlines for the take off time 9:15 am under the ticket cost $362?
+user: I need to search for some other flights.
+tool(SearchOnewayFlight): ok n_results=0
+assistant: I can't find anything else. How can I help you further?
+user: Please make a search with Southwest Airlines for two tickets on 6th of March.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Got 1 onward flight with Southwest Airlines which will take off at 12:20 pm. It has a layover and the ticket cost is $420.
+user: It looks good and I want a car for rent. I need the same for pick up at 6:15 pm. I prefer a Sedan Car. Can you get me the one?
+assistant: Yes, please confirm whether you want the car on March 6th or March 8th and for how many days?
+user: I want to book it from the 12th to March 14th.
+tool(GetCarsAvailable): ok n_results=4
+assistant: Do you like to take a ride on a Sedan Buick Regal Sportback Car which will be available for pick up at Toronto Pearson International Airport?
+user: Can you search for some other car for the date 13th of March?
+tool(GetCarsAvailable): ok n_results=4
+assistant: Yes, what about the one like Sedan Hyundai Ioniq Car which will be available for pick up at Toronto Pearson International Airport?
+user: That looks fine and that's all.
+assistant: Have a great day.

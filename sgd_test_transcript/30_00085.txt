@@ -1,0 +1,39 @@
+user: I want to check for the weather condition on the 7th. Can you help me to check the same?
+assistant: Where to you want to check for the weather condition?
+user: I need to check it in Petaluma and please check it for the date on March 1st.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the average temperature will be 82 degrees Fahrenheit and there may be a chance of 29 percent for rain.
+user: That is okay. Can you make me a Schedule to visit that property on that day?
+assistant: Let me know the details of property that you want to visit.
+user: Please note that the property that I want to visit is located at Orchard Glen Apartments.
+assistant: I need your confirmation to book a schedule of visit to Orchard Glen Apartments on March 1st.
+user: That is confirmed and you can proceed now.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully booked the schedule.
+user: Thank you so much and now please find a car for rent there.
+assistant: When do you want the same? Shall I find it for the date March 1st?
+user: That is correct.
+assistant: Is there any particular model of car that you want to book now?
+user: Yes, a SUV is fine.
+assistant: what is your expected time to pick up the car and to which date you need the same?
+user: I want to pick it up at 6:30 pm and I need the same to 4th of March.
+assistant: Shall I include the insurance?
+user: Yes, please add insurance and make the booking for pickup time at afternoon 2:45.
+assistant: At which place you need to pick up this car?
+user: Find the one for the pick up at Port Authority Station.
+assistant: I need your confirmation once again to book a SUV car for the pick up at Port Authority Station from March 1st at 2:45 pm to March 4th including insurance.
+user: Please find the one at Heathrow International Airport and I need to book a Hatchback model.
+assistant: Please confirm to book a Hatchback model car from Heathrow International Airport.
+user: That is correct and you can proceed.
+tool(ReserveCar): ok n_results=1
+assistant: Unfortunately I was not able to book that car. Shall I book another car in Nissan Qashqai model available for pick up at Heathrow International Airport on March 1st and the total cost is $42.00 per day?
+user: That's okay and you can book the same.
+tool(ReserveCar): ok n_results=1
+assistant: This time also I was not able to book that car. Shall I book another car in Nissan Qashqai model available for pick up at Heathrow International Airport on March 1st and the total cost is $42.00 per day?
+user: That's okay to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have booked the car successfully.
+user: Thanks for your help.
+assistant: How can I help you further?
+user: No, thanks a lot.
+assistant: Have a great day.

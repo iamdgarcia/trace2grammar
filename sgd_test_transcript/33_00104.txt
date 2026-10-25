@@ -1,0 +1,23 @@
+user: Which attractions can you find for me to visit?
+assistant: Any particular city I should be checking for attractions?
+user: NY, find me any kind of attractions in that city.
+tool(FindAttractions): ok n_results=10
+assistant: What about seeing a museum, specifically the 9/11 Tribute Museum?
+user: Sounds great, please find me a place that will allow 1 person to stay for a day, with a rating of 3.5 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: A 3.5 rated house is available at 100 Greenwich Street.
+user: What is the contact number for this house?
+assistant: You may contact the house via the number +1 917-409-0800.
+user: Great, also find me a round trip flight to this area.
+assistant: From which city will you depart from?
+user: I will depart from LAX.
+assistant: On what day will you be taking a return flight?
+user: I plan to return on the 10th of this month, from Cape Town.
+assistant: On what date will you depart from your initial location?
+user: Planning on leaving on the 2nd of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight available from American Airlines, it costs $302 leaves at 2:05 pm and has a layover, and its return flight leaves at 6:20 am.
+user: That flight works well for me, thanks.
+assistant: Is there anything else I can help you with?
+user: That will be all, thanks for the help.
+assistant: Understood, have a good day.

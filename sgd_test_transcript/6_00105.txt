@@ -1,0 +1,16 @@
+user: I want to find a unisex salon in Petaluma please
+tool(FindProvider): ok n_results=7
+assistant: I found 7 spots in Petaluma including Dukes and Dolls Salon which you might be interested in
+user: What is their rating score?
+assistant: They have a really high 4.9 average score
+user: Then that sounds good, book me an appointment?
+assistant: What date and time do you prefer?
+user: Let's do it on the 2nd of this month at 15:30 if possible
+assistant: Confirming you want a 3:30 pm appointment at Dukes And Dolls Salon on March 2nd yes?
+user: Yes that's awesome
+tool(BookAppointment): ok n_results=1
+assistant: It has been confirmed
+user: What's their phone number in case I need it
+assistant: You can reach them at 707-769-8000
+user: Great, that's helpful, thanks for all your help that's it
+assistant: Sure, enjoy your salon appointment!

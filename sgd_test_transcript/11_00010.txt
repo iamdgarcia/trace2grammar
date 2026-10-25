@@ -1,0 +1,14 @@
+user: I need a house with 4.6 or higher rating for 1 person.
+assistant: In which city do you need a house?
+user: I am moving to NYC.
+tool(SearchHouse): ok n_results=10
+assistant: There is a great house at 120 West 41st Street with the rating 4.6.
+user: It is nice. Please book it. I will check out on 5th of this month and check out on this Sunday.
+assistant: Kindly ensure that, ticket has been booked to New York for 1 person. The check in at March 3rd and check out is at March 5th.
+user: Yes. It is good. Whether is there a laundry service? May I know the total price?
+tool(BookHouse): ok n_results=1
+assistant: The reservation has been done successfully. The cost is $900. Yes, the laundry service is available there.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: I am very happy to help you. Bye.

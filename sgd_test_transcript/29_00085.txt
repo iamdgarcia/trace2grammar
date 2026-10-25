@@ -1,0 +1,31 @@
+user: I have a friend visiting and want to find something interesting for us to do around Fresno, CA on the 10th. Can you see what events are going on? I like events with songs.
+tool(FindEvents): ok n_results=1
+assistant: Sure, there is 1 event I found on March 10th at 6:30 pm that you might like. What do you think of Brockhampton at Rainbow Ballroom?
+user: That sounds great, actually.
+assistant: Great, do you want to buy tickets?
+user: No, not yet. I want to find a house to stay around there first.
+tool(SearchHouse): ok n_results=4
+assistant: Ok, there's a nice one at 1055 Van Ness Avenue with a 3.8 rating. How about that?
+user: Do they have laundry service? And what's their phone number?
+assistant: They do have laundry service. You can reach them at +1 559-233-6650.
+user: That house seems perfect. Can you look up direct buses to go there from Long Beach, CA on March 5th?
+tool(FindBus): ok n_results=5
+assistant: There's one I found for $42 that leaves at 8:10 am. How about that?
+user: What else is there on the 3rd? It's for three people by the way.
+tool(FindBus): ok n_results=4
+assistant: Ok, I found 4 options. How about this one for $33 that leaves at 11:20 am?
+user: Which station does it go to and from?
+assistant: It goes from Downtown Station to 2660 Tulare St.
+user: Ok, that sounds good.
+assistant: Do you want to buy bus tickets?
+user: No, not right now.
+assistant: Ok, can I help with anything else then?
+user: Yes, can you go back and buy tickets to that event you had found?
+assistant: Sure. To confirm, you want 3 tickets to Brockhampton in Fresno on March 10th. Is that right?
+user: Yes, that's right. How much is each ticket by the way?
+tool(BuyEventTickets): ok n_results=1
+assistant: I've booked your tickets, have fun! It's $45 each.
+user: Ok, thanks. And where is the venue at?
+assistant: It's at 1725 Broadway Street.
+user: Great, thanks for your help. That's all for now.
+assistant: No problem, have a good day.

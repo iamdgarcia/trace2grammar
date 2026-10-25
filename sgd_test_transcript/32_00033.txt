@@ -1,0 +1,30 @@
+user: I'm looking for a song.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. How about the song Tough Lover by Christina Aguilera from the song Burlesque Original Motion Picture Soundtrack?
+user: What type of song is it and when did it come out?
+assistant: It is a soundtracks song and it came out in 2010.
+user: Yes, that is the one. I'm also looking for an online ghost movie.
+tool(FindMovies): ok n_results=6
+assistant: How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: What else is there?
+assistant: There is One Cut of the Dead, Scary Stories to Tell in the Dark, or Theatre of Blood.
+user: Theatre of Blood sounds great.
+assistant: Do you want to watch the movie?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: I'd like to play that song now.
+assistant: You want to play the song Tough Lover in the living room, right?
+user: No, play it in my kitchen.
+assistant: Okay, you want to play the song Tough Lover in the kitchen, correct?
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: I have started playing the song.
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms set. There is an alarm for 4:30 pm titled piano time.
+user: Okay, thanks.
+assistant: Do you want to add an alarm?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

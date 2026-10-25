@@ -1,0 +1,32 @@
+user: I would like your assistance in finding a salon.
+assistant: I can help you with that. In which city would you like me to look for salons?
+user: Find me something in Woodside. Make sure it's a unisex salon.
+tool(FindProvider): ok n_results=1
+assistant: I've found 1 salon that matches your criteria. How about Olive Hill Salon in Woodside?
+user: That sounds fine to me. Can you book me an appointment there?
+assistant: Sure. What date and time would you like me to make the appointment for?
+user: I want an appointment for 10:30 in the morning on Friday next week if that's possible.
+assistant: You would like an appointment at Olive Hill Salon on March 8th at 10:30 am. Is that correct?
+user: Yes that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked.
+user: Great. Can you tell me what their average rating and address is?
+assistant: They have an average rating of 4.8 and they are located at 2920 Woodside Road.
+user: Awesome. Thank you for that.
+assistant: You're welcome. Can I help you with anything else?
+user: Yes. Can you find me a restaurant to get a meal at on that day. Find me something in the pricey price range.
+assistant: What kind of food would you like.
+user: I like southern food.
+tool(FindRestaurants): ok n_results=1
+assistant: The Mountain House is a nice restaurant in Woodside.
+user: Yea I know that place, that's a good suggestion.
+assistant: Would you like to reserve a table there?
+user: Yes I think that would be best.
+assistant: At what time would you like to make the reservation for?
+user: Make it for eleven in the morning.
+assistant: Please confirm the following: You would like to book a table for 2 at The Mountain House in Woodside for March 8th at 11 am.
+user: Yes that is what I would like. I confirm that. Can you tell me their address and average rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made without issue. They have an average rating of 4.7 and their street address is listed as 13808 Skyline Boulevard.
+user: Awesome. Thank you for making that so easy.
+assistant: You're welcome. Have a nice day.

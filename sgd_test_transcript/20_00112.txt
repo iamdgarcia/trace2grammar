@@ -1,0 +1,17 @@
+user: I'm taking a trip and need help finding a nice house to stay in. Can you help me out?
+assistant: No problem, just let me know what city you are planning to stay in.
+user: I need a place for 2 people in KL.
+tool(SearchHouse): ok n_results=10
+assistant: I've found a very nice house rated at 3.7 stars. It's located at 1, Jalan 2/142a, Taman Len Seng, 56000 Kuala Lumpur, Wilayah Persekutuan.
+user: Okay, that sounds great.
+assistant: Would you like to make a reservation today?
+user: Yes I would. Can you make a reservation for me for the 10th of March through March 14th?
+assistant: Just confirm the following for me. You are making a reservation for 2 people for the house in Kuala Lumpur from March 10th through March 14th. Correct?
+user: Yes, that's right.
+tool(BookHouse): ok n_results=1
+assistant: Okay. Your reservation was a success! Anything else?
+user: Thanks a lot! Can you also recommend any nice attractions in the area?
+tool(FindAttractions): ok n_results=10
+assistant: Sure thing. There is a really nice Nature Preserve I think you'd love. It's called the Aquaria KLCC.
+user: Okay, thanks! That's all for today. Bye!
+assistant: My pleasure. Enjoy!

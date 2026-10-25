@@ -1,0 +1,35 @@
+user: I would like your help finding a rental car.
+assistant: When would you like to start the car rental?
+user: I'll need to pick it up on Thursday next week in Philadelphia.
+assistant: Okay. For how long would you like the car, and at what time would you like to pick it up on Thursday of next week?
+user: I'll need it until March 9th and would like to pick it up at half past 9 in the morning.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice Hatchback Mazda 3 available at the PHL International Airport.
+user: What's the price per day?
+assistant: The price per day is $26.00.
+user: What else is available?
+assistant: There is also a nice SUV Mitsubishi Outlander available at PHL International Airport.
+user: How much does this one cost per day?
+assistant: The price per day is $39.00.
+user: What else do I have for options?
+assistant: There is also a nice Hatchback SEAT Leon available at the PHL International Airport.
+user: Great, thanks for that information. Can you find me a bus to get there from New York?
+assistant: When would you like to leave?
+user: On Wednesday next week would be best.
+tool(FindBus): ok n_results=7
+assistant: How about a bus that departs at 7:40 am and costs $21 for a ticket?
+user: Maybe. Which station does it depart from and how many stops does it have?
+assistant: The bus will depart from Penn Station and is a direct bus.
+user: What else is there for buses?
+assistant: There is also a bus that departs at 7:50 am and costs $24.
+user: What else is an option?
+assistant: How about a bus departing at 8:50 am and costing $21?
+user: That's all I need to know. Find me information on one-way flights there now.
+assistant: Would you still like the departure date to be March 7th?
+user: No make it for today.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There is an American Airlines flight that takes off at 3:05 pm and has a ticket price of $49.
+user: Okay. Good to know, thank you.
+assistant: You're welcome. Can I help you with anything else?
+user: No, that will be all.
+assistant: Okay, have a good day.

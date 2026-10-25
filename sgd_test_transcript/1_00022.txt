@@ -1,0 +1,13 @@
+user: Can you find me a restaurant table for 3 people in Alameda, please?
+assistant: What time would you like a reservation?
+user: I'd like it for 11:30 in the morning on March 13th. It'll just be one person dining.
+assistant: Do you want a particular restaurant?
+user: How about Cafe Jolie?
+assistant: Please confirm: reserve a table for Cafe Jolie in Alameda for 11:30 am on March 13th. The reservation will be for 1 person.
+user: Yes, that's perfect.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've successfully confirmed your reservation.
+user: Thank you very much!
+assistant: Will that be all?
+user: Yes, that's everything for today.
+assistant: Have a nice day!

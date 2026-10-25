@@ -1,0 +1,54 @@
+user: I need something interesting to do.
+assistant: In which city should I look?
+user: I need something around NY.
+assistant: What type of event do you like?
+user: I like Broadway very much.
+tool(FindEvents): ok n_results=10
+assistant: Acting for Teens will be at 520 8th Ave. - Personal Valet Parking, on March 4th at 6 pm.
+user: How much are the tickets?
+assistant: Tickets are $35 each.
+user: Where is it located?
+assistant: It is at 520 8th Ave. - Personal Valet.
+user: What else can you find? Maybe a concert on March 2nd.
+tool(FindEvents): ok n_results=10
+assistant: Abbi Jacobson will be at Kaufmann Concert Hall on March 2nd at 6:30 pm.
+user: That sounds perfect.
+assistant: Do you want to buy tickets now?
+user: Not yet thanks.
+assistant: Can I do anything else for you?
+user: I need to find buses going there.
+assistant: Where will you leave from?
+user: I am departing from Philly.
+assistant: Will you leave on March 2nd?
+user: YEs that is fine.
+tool(FindBus): ok n_results=6
+assistant: There is one departing at 9 am that costs $22.
+user: Can you find me anything else?
+assistant: There is a 10:10 am bus that costs $25.
+user: That is perfect thanks.
+assistant: Do you need tickets for this bus?
+user: Not at this time.
+assistant: Can I do anything else for you?
+user: I need a round trip flight for 2 on American Airlines.
+assistant: When will you return?
+user: On March 9th.
+assistant: Will you depart on March 2nd?
+user: Yes that will work.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight on American Airlines which departs at 1:20 pm and returns at 11:20 am. It is $103.
+user: WHen will the returning flight arrive?
+assistant: It will arrive at 12:11 pm.
+user: Is this ticket a premium economy ticket?
+assistant: It's an Economy class ticket and arrives at 2:11 pm.
+user: Great, Can you find any hotels in the area that are rated 3 stars. I need one room.
+tool(SearchHotel): ok n_results=10
+assistant: 11 Howard is a nice 3 star.
+user: What is the number? How much per night?
+assistant: THeir phone number is +1 212-235-1111 and is $66 a night.
+user: Great, I want to buy tickets to the concert you found.
+assistant: You want 2 tickets to Abbi Jacobson on March 2nd in New York, correct?
+user: Yes, that is correct. How much is each ticket and where is it located?
+tool(BuyEventTickets): ok n_results=1
+assistant: Tickets are $45 each and it is located at 1395 Lexington Avenue.
+user: Thanks, that is all I need for now.
+assistant: Have a great day.

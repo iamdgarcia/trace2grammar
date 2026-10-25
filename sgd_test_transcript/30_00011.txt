@@ -1,0 +1,30 @@
+user: I need to make ticket booking for an event
+assistant: Which is your preferred event and in which city?
+user: I know that Louis The Child is good and need it around Philadelphia
+assistant: What number of tickets you need?
+user: I need three tickets
+assistant: What is your choice of date for the event?
+user: I need it around 12th of March
+assistant: Please give confirmation details: Booking 3 tickets for Louis The Child in Philadelphia on March 12th
+user: This is perfect for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is confirmed. Have a nice time there.
+user: Can you tell me about the buses going there? I decided to leave on 11th of march from Washington. No problem if it is a direct bus or not.
+tool(FindBus): ok n_results=7
+assistant: I searched 7 buses of your choice. What about the bus departing at 8:30 am with cost $27.
+user: From which station it departs?
+assistant: It starts from Silver Spring Bus Stop.
+user: Do you know some other buses and i need direct bus now which leaves from NYC.
+tool(FindBus): ok n_results=7
+assistant: I searched 7 buses of your choice. One departing at 7:40 am with cost $21.
+user: To which station it arrive?
+assistant: 10th and Filbert is the station it arrives.
+user: Do you know some other buses?
+assistant: What is your opinion about the bus departing at 7:50 am with cost $20.
+user: This is cool. I like to buy the tickets.
+assistant: Please give confirmation details: Your bus ticket to Philadelphia from New York for the date march 11th which leaves at 7:50 am and the ticket is for 3 people. There is no extra luggage.
+user: This is perfect.
+tool(BuyBusTicket): ok n_results=1
+assistant: I confirmed your ticket.
+user: Thanks you so much.
+assistant: Have a nice day

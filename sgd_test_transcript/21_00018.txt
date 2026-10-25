@@ -1,0 +1,21 @@
+user: Hi, could you get me a cab ride please?
+assistant: How many seats do you require?
+user: Just three will suffice.
+assistant: Any preference on the type of ride and where are you heading to?
+user: I would like a Normal ride to 421-b March Avenue please.
+assistant: Please confirm your booking for 3 seats on a regular ride to 421-b March Avenue.
+user: Yes that is fine with me. May I know how long does it take to reach me?
+tool(GetRide): ok n_results=1
+assistant: Your booking has been made and your taxi is on its way, which will arrive at your location in 3 minutes.
+user: Could you help me search for some songs?
+tool(LookupMusic): ok n_results=10
+assistant: How about Summer time by Vybz Kartel in her album the Gaza Don?
+user: Yes, that is what I was looking for. Could you play it for me please?
+assistant: Sure, please confirm your request to play Summer Time in the Living room.
+user: Yes, may I know when was the song released?
+tool(PlayMedia): ok n_results=1
+assistant: Your music has been played, enjoy! It was released in 2011.
+user: I see, thanks alot!
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

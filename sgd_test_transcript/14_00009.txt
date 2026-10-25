@@ -1,0 +1,17 @@
+user: Will you find movies online?
+assistant: What genre?
+user: I prefer Future scientific fiction.
+tool(FindMovies): ok n_results=2
+assistant: Found 2 movies. Do you prefer Ad Astra or Close Encounters of the Third Kind?
+user: Will you play Close encounters now?
+assistant: Confirm playing of Close Encounters of the Third Kind in English.
+user: Who's in it?
+tool(PlayMovie): ok n_results=1
+assistant: Stephen Powers is in it. The movie has started playing.
+user: Cool. What's the weather like in Daly City next Friday?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 91 degrees Fahrenheit with a 6 percent chance of rain.
+user: Great.
+assistant: Anything else?
+user: That's all.
+assistant: Have a great day.

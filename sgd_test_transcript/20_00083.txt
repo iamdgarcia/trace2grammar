@@ -1,0 +1,25 @@
+user: Can you please help me find a house to stay?
+assistant: Sure, in which city?
+user: I'd like a house to stay in LAX.
+tool(SearchHouse): ok n_results=10
+assistant: I found a very nice house, rate at 4.1, at 1020 South Figueroa Street.
+user: Awesome! Can you please give my their number?
+assistant: Sure, you can reach them at +1 213-748-1291.
+user: Perfect. Do you know if they provide laundry service?
+assistant: Yes, they do have laundry service.
+user: Perfect. Let's place a reservation.
+assistant: Sure! When do you plan to check in?
+user: I'm checking in on the 4th of March.
+assistant: OK. Now please tell me how many people should the reservation be for as well as your desired check-out date.
+user: Just me, 1 person. I plan to check out on the 10th of this month.
+assistant: Can you please confirm that you want to place a reservation for 1 for a house in Los Angeles, checking in on March 4th and checking out on March 10th?
+user: Yes, that's correct. Go right ahead!
+tool(BookHouse): ok n_results=1
+assistant: Perfect! I've successfully placed your reservation.
+user: Thanks a lot! Now please find me some nice attractions in the are, preferably with free admission and child friendly. If you could find a historical spot it would be awesome!
+tool(FindAttractions): ok n_results=2
+assistant: There's an awesome Historical Landmark that I think you should check out - the Angels Flight Railway.
+user: Got it, thanks!
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks!
+assistant: My pleasure. Have a nice day!

@@ -1,0 +1,29 @@
+user: I need to make a payment from my visa.
+assistant: What is the amount and who is the contact I am sending it to?
+user: I am sending it to Rachel and the amount is $162.
+assistant: Please confirm the following details: From your credit card, you are making a transaction to Rachel for $162, and the transaction is visible to the public.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made successfully. The recipient should have the money soon.
+user: Thank you. I need to request a payment.
+assistant: What is the name of the contact and what is the requested amount?
+user: The transactions is to be made with Emma and this will be for 20 bucks.
+assistant: Please confirm the following details: You are making a request transaction with Emma for the amount of $20. Your transaction is visible to the public.
+user: No, the transaction is to be made with Bob for $134.
+assistant: Please confirm the following details: You are making a request transaction with Bob for $134.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was made successfully.
+user: Thank you. I would like to make a payment.
+assistant: What amount do you want to pay and should I transfer the money from an app balance or credit card?
+user: Send from my balance, and this will be for 53 dollars.
+assistant: What is the contact I am sending the payment to?
+user: Please make the transaction with Mary, and I want the transaction to be private.
+assistant: Please confirm the following details: This will be a transfer from your app balance in the amount of $53 to Mary. The transaction is private.
+user: Correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made successfully.
+user: Thank you very much.
+assistant: Is there anything else that I can help you with?
+user: No thank you.
+assistant: That will be all, good bye.

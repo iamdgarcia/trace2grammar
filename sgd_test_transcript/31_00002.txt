@@ -1,0 +1,24 @@
+user: I need to find a salon.
+assistant: What city should I search?
+user: Search for a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: A nice salon in Santa Rosa is Daredevils & Queens
+user: That sounds good. I want to watch a movie there.
+tool(FindMovies): ok n_results=10
+assistant: I located 10 movies. Would you prefer After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: Good Boys sounds perfect. What time does it start?
+assistant: Would you liek to watch it on March 2nd?
+user: Yes, that is fine.
+tool(GetTimesForMovie): ok n_results=2
+assistant: I found 2 showtimes; one showtime is 9:30 pm at Airport Stadium 12
+user: What kind of movie is it and how much is a ticket?
+assistant: Its a Comedy and the ticket price is $13 per person.
+user: Sounds good. Book me an appointment for the salon on that day in the evening 6:15
+assistant: Please confirm: Book a hair stylist appointment at Daredevils & Queens for March 2nd at 6:15 pm.
+user: Yes, that is correct. What is the address?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been confirmed. The address is 122 4th Street.
+user: Thank you very much.
+assistant: Can I assist you with anything else.
+user: No thank you.
+assistant: Have a great day.

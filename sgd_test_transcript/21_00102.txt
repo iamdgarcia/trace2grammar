@@ -1,0 +1,21 @@
+user: Please update me on the weather.
+assistant: Certainly. Name the city for which you wish to know the forecast.
+user: Oh I forgot to say. I want to know about weather in Phoenix.
+tool(GetWeather): ok n_results=1
+assistant: Phoenix will have an average temperature of 89 degrees Fahrenheit with a 15 percent chance of rain.
+user: Okay. I needed to know the weather because I plan on visiting an attraction there. Please help me find attractions that are child-friendly.
+tool(FindAttractions): ok n_results=10
+assistant: There is a museum that children may enjoy. It is called Arizona Capitol Museum.
+user: Okay that can work. Thanks for that info.
+assistant: Sure. I can help you with more if you still require assistance.
+user: I'll be needing a ride to get there. Find me a cab.
+assistant: Before I find your ride, how many seats do you need? Would you prefer a Pool or Regular or something entirely different?
+user: If you can, find me a shared ride for a group of 1.
+assistant: Finding a Pool ride for 1 person to Arizona Capitol Museum. Is that acceptable?
+user: Oh yeah that's fine. What's the cost? Oh and when will it be here?
+tool(GetRide): ok n_results=1
+assistant: The cost of the cab is $11.51. The cab is on the way now and should arrive within 8 minutes.
+user: You make things so much easier. Thanks so much.
+assistant: Anytime. What else can I help you with?
+user: Nothing. That's all I'll be needing for the moment. Once again, thank you.
+assistant: Please enjoy the rest of your day. See you next time.

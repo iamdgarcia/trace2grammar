@@ -1,0 +1,30 @@
+user: Assistant. I need to book a hotel room.
+assistant: In what city will I be booking this room?
+user: I'm traveling to Portland soon. Find me a room there.
+tool(SearchHotel): ok n_results=10
+assistant: In Portland, there is the Aloft Portland Airport At Cascade Station. This particular establishment is a 3 star hotel.
+user: I think that'll work for me. Sounds good.
+assistant: I can reserve that now if you wish.
+user: Another time. I'm more concerned with finding a plane ticket there. I only need one and want to return on March 12th. Any airline is fine by me.
+assistant: What city will you be departing from on March 4th?
+user: I'm not leaving on the 4th. I plan to leave on the 2nd out of Las Vegas.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: American Airlines has tickets priced at $313 for that flight. The plane leaves at 7:35 am. The returning flight is at 9:35 am.
+user: Okay. That'll be alright for me. Let's move back a bit. I want you reserve a room for me at the hotel you found earlier.
+assistant: How long do you plan on staying at the hotel? Will you be checking on March 2nd?
+user: After I check in next Tuesday, I plan to stay there for 7 days.
+assistant: Tell me if this is correct. You want 1 room in Portland for 7 days at the Aloft Portland Airport At Cascade Station starting on March 5th.
+user: Yep. That's what I'm looking for. Two questions though. What's the hotel's phone number and is smoking allowed there?
+tool(ReserveHotel): ok n_results=1
+assistant: First, I'd like to let you know the hotel has been booked. Unfortunately, there is no smoking allowed on the premises. Lastly, the phone number is +1 503-200-5678.
+user: Ah okay. Thank you for all that information. You've been a great help to me.
+assistant: My pleasure. Can I assist you with anything else?
+user: You certainly can. Help me find some attractions in Portland.
+tool(FindAttractions): ok n_results=10
+assistant: There is a very nice park in Portland. The Crystal Springs Rhododendron Garden is a well known attraction.
+user: How much is entry to this attraction? Please give me the phone number as well.
+assistant: There is no entry fee for this park. The phone number to this location is 503-771-8386.
+user: The price of free sounds great to me.
+assistant: How else can I help you today?
+user: I don't need anything else at the moment. You've been helpful as usual. Thank you.
+assistant: Enjoy the rest of your day!

@@ -1,0 +1,17 @@
+user: Can you find me a Family Therapist in Gilroy?
+tool(FindProvider): ok n_results=5
+assistant: There are 5 in Gilroy that may work for you. Leininger Anne is a Family Counselor that is highly recommended.
+user: Can you tell me the contact number of the office?
+assistant: Yes, it is 408-847-2100.
+user: Thank you. What's the weather supposed to be there on the 6th of March?
+tool(GetWeather): ok n_results=1
+assistant: It should be 76 degrees Fahrenheit with a 0 percent chance of rain.
+user: Perfect! Can you make the appointment for half past 11 in the morning?
+assistant: You'd like to see Leininger Anne on March 6th at 11:30 am. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: You will be receiving an email confirmation with the details of your appointment shortly.
+user: Thank you for the assistance.
+assistant: Is there something else I can do for you today?
+user: No, thank you.
+assistant: You're welcome. Have a wonderful day.

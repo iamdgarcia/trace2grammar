@@ -1,0 +1,13 @@
+user: Can you help me schedule a cab, please?
+assistant: Sure, how many seats would you like? Where would you like to go? Do you have a preferred type of ride?
+user: There are four in our group, and we are going to Capers Eat & Drink. I prefer a Regular ride.
+assistant: You would like a Regular cab ride that seats 4 to Capers Eat & Drink, correct?
+user: Yes, that is correct. How long is the wait time?
+tool(GetRide): ok n_results=1
+assistant: The cab is booked and on its way. The expected time is 7 minutes.
+user: How much will it cost?
+assistant: The cost of the ride is $47.16.
+user: Thank you very much for your help.
+assistant: Is there anything else I can help you with?
+user: No, that's all for today, thank you.
+assistant: Have a great day!

@@ -1,0 +1,33 @@
+user: I'm looking for a salon please.
+assistant: What city would you like to look in?
+user: I'd like to find something in Sunnyvale.
+tool(FindProvider): ok n_results=10
+assistant: There is a nice salon in Sunnyvale called A+ Haircuts for Men.
+user: Actually how about something in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options for you in San Jose. Perhaps you would like Atelier Salon Willow Glen.
+user: Is that a unisex salon?
+assistant: Yes, it is.
+user: Could you tell me the average rating please?
+assistant: Certainly, the salon is rated an average of 4.3.
+user: OK, that sounds fine. Also I'd like to share the location. The address for sharing is 1047 Lincoln Highway suite 101. Please share it with Vincent.
+assistant: Confirming location sharing with Vincent of 1047 Lincoln Highway suite 101.
+user: I'm sorry, I meant to say Jason.
+assistant: Confirming location sharing with Jason of 1047 Lincoln Highway suite 101.
+user: I'm sorry, my mistake. Please share Theatre Deli - Deli Bar & Rehearsal Studios instead.
+assistant: Confirming location sharing with Jason of Theatre Deli - Deli Bar & Rehearsal Studios.
+user: That's correct, thank you.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you for the help. I'd like to know what my alarms are please.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm that is currently enabled for 8:30 AM. The alarm is titled Workout.
+user: Thank you very much.
+assistant: Would you like to create another alarm?
+user: Yes please set an alarm for afternoon 3:30. It should be called Cooking.
+assistant: Confirming an alarm for 3:30 PM called Cooking.
+user: Thank you very much.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been successfully created.
+user: I appreciate your help. That's all I need.
+assistant: Thank you so much.

@@ -1,0 +1,19 @@
+user: I need to find a Family Therapist please
+assistant: In what city?
+user: I need a Psychiatrist in the Novato area
+tool(FindProvider): ok n_results=2
+assistant: What about Dillon Charles R? They are a Psychiatrist in Novato
+user: Sure thing. Also how's the weather there on March 10th
+tool(GetWeather): ok n_results=1
+assistant: It'l be 71 degrees with a 10 percent chance of rain in Novato
+user: Awesome, thanks for that
+assistant: What else can I do?
+user: Let's book that therapist, try for 12:00
+assistant: Confirming you want a meeting at 12 pm on March 10th with Dillon Charles R?
+user: Yes that's correct
+tool(BookAppointment): ok n_results=1
+assistant: It's been booked and an e-mail should come in soon confirming that
+user: What is their address and phone number?
+assistant: They are addressed at 250 Bel Marin Keys Boulevard # C3 and you can reach them at 415-382-1299
+user: Thanks so much, I appreciate it, see ya!
+assistant: See you, take care

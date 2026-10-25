@@ -1,0 +1,26 @@
+user: I need you to locate a hotel for me.
+assistant: Where should I search?
+user: In San Francisco.
+tool(SearchHotel): ok n_results=10
+assistant: These are the first 10 I found one is the Amsterdam Hostel San Francisco t has only a 1 star rating.
+user: I like it.
+assistant: Should I book a room for you?
+user: Not just yet first I need a round trip airplane ticket.
+assistant: And where are you going to leave from?
+user: I believe out of Los Angeles.
+assistant: Is March 1st when you plan to leave and when do you think you will come back?
+user: First half is right but I want to come back on the 6th of March.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There is a direct flight for $148 that leaves at 11:55 am and you would catch the plane for home at 12:25 pm it is with Alaska Airlines what do you think?
+user: How many people does that price include?
+assistant: It is for just 1.
+user: Okay that works, now you can book me a room in that hotel. Make the check in date Thursday next week and tell them I plan to stay only 2 days.
+assistant: I have a 2 day stay for 1 in 1 room the arrival date is March 7th at the Amsterdam Hostel San Francisco and in San Francisco right?
+user: That would be great.
+tool(ReserveHotel): ok n_results=1
+assistant: Your room is reserved.
+user: What is there to do there attraction wise?
+tool(FindAttractions): ok n_results=10
+assistant: There is Alcatraz, an Historical landmark
+user: Fine then, and bye for now.
+assistant: Have a great time!

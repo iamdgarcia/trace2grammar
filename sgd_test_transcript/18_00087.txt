@@ -1,0 +1,28 @@
+user: Can you help me find a hotel?
+assistant: Sure, in what city?
+user: Look in Chi-Town.
+tool(SearchHotel): ok n_results=10
+assistant: Great, there are 10 you may like. How about Ac Hotel By Marriott Chicago Downtown. It's 3 stars.
+user: Sounds fine to me.
+assistant: Should I reserve your room?
+user: Not yet, what's the weather like there?
+tool(GetWeather): ok n_results=1
+assistant: There's a 29 percent chance of rain and the average temperature is 73.
+user: What's it like on the 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: There's a 24 percent chance of rain and an average temperature of 68.
+user: Okay, reserve that room.
+assistant: For March 14th?
+user: Friday next week, actually.
+assistant: Okay, and for how long?
+user: Book it for 4 days.
+assistant: Just confirm you'd like 1 room at the Ac Hotel By Marriott Chicago Downtown in Chicago for 4 days with a check in date of March 8th.
+user: Yeah, what's the address?
+tool(ReserveHotel): ok n_results=1
+assistant: I've booked your room. They're located at 630 North Rush Street.
+user: What's the number and is it smoking?
+assistant: No smoking, and they can be reached at +1 312-981-6600.
+user: Thank you, that's very helpful.
+assistant: Anything else you need?
+user: Nope, thanks again.
+assistant: My pleasure, enjoy your day.

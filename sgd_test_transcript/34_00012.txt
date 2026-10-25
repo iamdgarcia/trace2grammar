@@ -1,0 +1,17 @@
+user: I'm going on a trip soon and need to book a hotel. Can you find one for me?
+assistant: Sure, in what city?
+user: I need a hotel in Rio.
+tool(SearchHotel): ok n_results=10
+assistant: Ok, how about this 2 star one, Atlantico Copacabana Hotel?
+user: That sounds fine. Can you also look up some child-friendly attractions they have around there?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, if you're interested in going to a museum, you should check out Air and Space Museum.
+user: Cool, thanks. Can you go back and make a reservation at that hotel?
+assistant: No problem. When will you be checking in and for how long?
+user: I'd be checking in on the 4th of this month and staying for 4 days.
+assistant: Ok, to confirm, you want to book 1 room at Atlantico Copacabana Hotel in Rio de Janeiro, starting March 4th for 4 days. Is that right?
+user: Yes, that's right.
+tool(ReserveHotel): ok n_results=1
+assistant: Ok, I've booked your hotel.
+user: Great, thanks for your help. That's all for now.
+assistant: No problem, have a good day!

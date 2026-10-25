@@ -1,0 +1,19 @@
+user: Find me something to do in Portland, OR, something related to music
+tool(FindEvents): ok n_results=8
+assistant: There is a popular event, the Bastille at the Theater of the Clouds on march 10th at 5:30 pm
+user: That is good
+assistant: should i get the tickets?
+user: No, but find hotels there for 1 person.
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 hotels of which there is a 3 star hotel, the Aloft Portland Airport at Cascade Station
+user: whats the contact number?
+assistant: Its +1 503-200-5678
+user: sounds good, please get me those tickets
+assistant: how many to buy?
+user: please get me 2
+assistant: Please Confirm: Booking 2 tickets to the Bastille at the Theater of the Clouds on march 10th in Portland.
+user: yes, thats fine, whats the cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: Its done, the ocst is $20
+user: Thanks a lot, thats all
+assistant: have a good day!

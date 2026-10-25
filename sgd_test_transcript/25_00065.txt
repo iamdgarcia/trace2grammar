@@ -1,0 +1,34 @@
+user: I want to view my list of alarms. Can you show it now?
+tool(GetAlarms): ok n_results=4
+assistant: Yes, You have an alarm for 5 pm in the name of Meeting.
+user: That's okay. I want to take my meals outside and I need your help to find a restaurant.
+assistant: Let me know your interested type of food to search for the restaurants which is serving the same.
+user: I like Korean Hot pot.
+assistant: Where do you want to search for the restaurants?
+user: Find the one in Oakland.
+tool(FindRestaurants): ok n_results=3
+assistant: I got 3 places. What about the one named Azit in Oakland?
+user: This is okay to me.
+assistant: Do you want to book a table at this restaurant now?
+user: I will ask it later. Now, find me a car in Hatchback model for the final date March 7th.
+assistant: What is your starting date and place of travel?
+user: Find me the one from 2nd of March at PHL International Airport.
+assistant: What is your convenient time to pick up the car and also let me know your opinion to book it with insurance.
+user: I don't need insurance for this booking and I want the car from Tuesday Next week and for the time afternoon 12:30. Please change your searching process accordingly.
+assistant: Okay, I need your confirmation once again to book a Hatchback model car available at PHL International Airport from March 5th for the time 12:30 pm up to March 7th without insurance.
+user: That is confirmed. I want to know the name of this car.
+tool(ReserveCar): ok n_results=1
+assistant: It is SEAT Leon and the same was booked successfully.
+user: That's great. What is the total cost per day?
+assistant: It is $25.00 for one day.
+user: That's okay. Now, please help me to share the location now.
+assistant: Do you want to share the address 4390 Telegraph Avenue A or PHL International Airport and to whom do you want to share the same?
+user: I want to share the location PHL International Airport with Nicholas.
+assistant: I need your confirmation to share PHL International Airport with Nicholas
+user: That is correct to proceed.
+tool(ShareLocation): ok n_results=1
+assistant: Your location was shared successfully.
+user: Thanks so much.
+assistant: How can I help you further?
+user: No, thanks for all.
+assistant: Have a great day.

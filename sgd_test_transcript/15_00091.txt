@@ -1,0 +1,33 @@
+user: My family is having trouble processing the horrible gas explosion and traffic pile-up we witnessed. Would you please help me locate a therapist?
+assistant: I can help you with that. What's the city and type of therapist you want?
+user: Would you please check in Gilroy for a Psychologist?
+tool(FindProvider): ok n_results=3
+assistant: Sure. Of the 3 available options for a Psychologist in Gilroy, I'm showing that Rachelle Coate may be a consideration.
+user: Well, I'm looking for a Family Counselor, actually. What do you have for that?
+tool(FindProvider): ok n_results=5
+assistant: Of the 5 Gilroy therapists in the specialty of Family Counselor, Leininger Anne is available.
+user: What contact phone number do you have?
+assistant: The contact phone number is 408-847-2100.
+user: And, what address do you have?
+assistant: The address is listed as 8339 Church Street # 212.
+user: Okay, and please tell me the weather forecast for the 6th.
+tool(GetWeather): ok n_results=1
+assistant: I'm showing a temperature of 76 degrees Fahrenheit on average with a 0 percent possibility of rain.
+user: Nice, and what about the wind factor?
+assistant: The wind speed is supposed to be 12 miles per hour overall.
+user: And, how humid will it be there?
+assistant: There is a forecast of 15 percent humidity.
+user: Excellent information. Now let's return to the info on the last therapist you suggested and make an appointment for 6 o'clock in the evening, please.
+assistant: All right. Are you ready to confirm an appointment with Leininger Anne on March 6th at 6 pm?
+user: I'm ready. Please confirm that.
+tool(BookAppointment): ok n_results=0
+assistant: Oh, apologies. The appointment cannot be made due to some sort of glitch.
+user: Oh, what if we try to make the appointment for 11 in the morning instead?
+assistant: I'll try that. Are you ready to confirm an appointment with Leininger Anne for March 6th at 11 am?
+user: Yep, please go for it.
+tool(BookAppointment): ok n_results=1
+assistant: Done. Your appointment is confirmed. You are to receive a confirmation email shortly.
+user: Good deal. You're exceptional, and I thank you.
+assistant: Would you like further assistance?
+user: We're done for now, and thanks again.
+assistant: Happy to assist you.

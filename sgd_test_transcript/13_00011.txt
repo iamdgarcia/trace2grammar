@@ -1,0 +1,30 @@
+user: I want something to do, like a Concert on the 5th of March
+assistant: Where should I look?
+user: Atlanta and look for the 11th.
+tool(FindEvents): ok n_results=10
+assistant: These are things for March 11th I have 10 listed here, one is at the Atlanta Symphony Orchestra, it features Adam Ant and begins at 5 pm.
+user: I love it.
+assistant: Should I find you seats?
+user: Not yet.
+assistant: How else can I be of assistance?
+user: I need a hotel around there.
+tool(SearchHotel): ok n_results=2
+assistant: A 4 star rated hotel with the name of Ac Hotel By Marriott Atlanta Buckhead At Phipps Plaza is a possibility.
+user: Where are they located?
+assistant: They are at 3600 Wieuca Road Northeast.
+user: I want a 5 five star one so how many will meet my needs?
+tool(SearchHotel): ok n_results=2
+assistant: There are 2 I located The St. Regis Atlanta has 5 stars.
+user: Can I get their number?
+assistant: Of course that would be +1 404-563-7900.
+user: Are those all the ones you could find?
+assistant: I located another that is rated 5 stars called The Whitley, A Luxury Collection Hotel, Atlanta Buckhead.
+user: I like that one. I am ready to purchase those tickets now.
+assistant: How many of you will there be?
+user: I will need 4 seats.
+assistant: Is this correct you want 4 tickets for the March 11th Atlanta Adam Ant concert right?
+user: Yes what do tho seats run?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket purchase succeeded at a cost of $25 a seat.
+user: I appreciate your effort, you can go now.Ha
+assistant: Have an exceptional day.

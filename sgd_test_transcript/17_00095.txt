@@ -1,0 +1,18 @@
+user: Can you find me a train from Philly to NYC
+assistant: What date are you gonna do that?
+user: I wanna leave Tuesday next week
+tool(FindTrains): ok n_results=8
+assistant: There's a 10:40 am train that'll run you $53
+user: Where does it leave from?
+assistant: It leaves from 30th Street Station
+user: And it arrives where?
+assistant: It will arrive at Grand Central Station
+user: That sounds perfect
+assistant: Do you want tickets for that?
+user: Right now not yet, but I do need a house to stay in
+tool(SearchHouse): ok n_results=10
+assistant: There's a place along 100 Greenwich Street with a 4.4 rating
+user: That sounds really good
+assistant: Can I do anything else at the moment
+user: No that's it for now
+assistant: Sure thing, take care!

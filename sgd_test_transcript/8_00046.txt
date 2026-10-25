@@ -1,0 +1,29 @@
+user: I want to make a payment of 166 bucks from my debit card.
+assistant: Can i know the name of the receiver?
+user: Rachel is the name of the receiver.
+assistant: please give confirmation details: You want to transfer the amount of $166 from your debit card to Rachel with visible transaction to the public.
+user: Okay..you are right..
+tool(MakePayment): ok n_results=1
+assistant: Your transaction done successfully and the receiver get the money soon.
+user: Thank you very much. I want to request a amount.
+assistant: Can i know the receiver name and amount?
+user: The receiver name is Margaret and the amount is $94.
+assistant: please give confirmation details:You want to transfer the amount of $94 to Margaret with visible transaction to the public.
+user: Okay..this is perfect.
+tool(RequestPayment): ok n_results=1
+assistant: Your transaction done successfully.
+user: Thank you so much. I want to transfer the amount again..
+assistant: From which account i should transfer the amount?
+user: Transfer the money from my amex account.
+assistant: Can i know the amount?
+user: it is 16 dollars.
+assistant: Can i know the receiver name?
+user: Isabella is the name of the receiver.
+assistant: please give confirmation details:You want to transfer the amount of $16 from your credit card to Isabella with visible transaction to the public.
+user: Yes..this is fine..
+tool(MakePayment): ok n_results=1
+assistant: Your payment done successfully to Isabella and she will receive the money soon.
+user: Thank you so much.
+assistant: Any other help you need?
+user: No, thank you so much.
+assistant: This much is okay..bye for now..

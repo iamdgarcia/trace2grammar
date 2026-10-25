@@ -1,0 +1,24 @@
+user: Can you find me some attractions in San Fran?
+tool(FindAttractions): ok n_results=10
+assistant: You should check the historical landmark named Alcatraz.
+user: Is this a free kid-friendly place?
+assistant: Yes, it is both kid-friendly and free.
+user: Great. I want to watch a movie at the Regal UA Stonestown Twin.
+tool(FindMovies): ok n_results=1
+assistant: The Farewell is one option.
+user: Farewell sounds great.
+assistant: Should I reserve tickets?
+user: Not right now. Do you have any online movies with Megan Mullally?
+assistant: What kind of movie?
+user: I would prefer a comedy.
+tool(FindMovies): ok n_results=1
+assistant: Where'd You Go, Bernadette is one option.
+user: Where would you go sounds good. I want to see it with English subtitles.
+assistant: Please confirm you want to see Where'd You Go, Bernadette with English subtitles.
+user: Yes, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started playing.
+user: Great. Thank you.
+assistant: Is there anything else I can do for you?
+user: No. Thank you.
+assistant: You're welcome. Goodbye.

@@ -1,0 +1,20 @@
+user: pull up local salons please.
+assistant: Which city would you prefer?
+user: Salons in san jose please.
+tool(FindProvider): ok n_results=10
+assistant: Ok, I found a great salon in San Jose, called Atelier Salon Willow Glen.
+user: ok, yes sounds good. Can you share the location? please send over this address 1047 Lincoln Highway Suite 101. I want to share this with Billy please.
+assistant: Please confirm you would like to share the location 1047 Lincoln Highway suite 101 with Billy. Is that correct?
+user: Yes, perfect.
+tool(ShareLocation): ok n_results=1
+assistant: Ok, I've successfully shared the location with Billy.
+user: Can you review my upcoming alarms please?
+tool(GetAlarms): ok n_results=4
+assistant: Sure thing. I have an alarm for 7:30 am named Jogging. would you like to edit?
+user: Okay, thanks. I would like to add an additional alarm. Let's call the new alarm Leave for home and set for 3:45 pm.
+assistant: OK, please confirm we are creating a new alarm titled Leave for home and at 3:45 pm. Is this correct?
+user: Yes it is.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm was successfully created.
+user: Great, that will be all for now.
+assistant: Ok, Good Bye.

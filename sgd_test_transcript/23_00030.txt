@@ -1,0 +1,23 @@
+user: can you fine ma cartoon movie to watch? i like movies with anri katsu.
+tool(FindMovies): ok n_results=1
+assistant: how about paprika?
+user: paprika is good. can you show me some cool places here?
+assistant: where should i look?
+user: somewhere in london.
+tool(FindAttractions): ok n_results=10
+assistant: you can visit 30 st mary axe (the gherkin), which is a historical landmark.
+user: okay thanks, can you look for some songs for me that are similar to ariana grande?
+tool(LookupMusic): ok n_results=10
+assistant: how about baby i by ariana grande, off the yours truly album?
+user: yes that's a good one, can you play it?
+assistant: you want me to play baby i in the living room?
+user: yes. what year was it released?
+tool(PlayMedia): ok n_results=1
+assistant: enjoy. it was released in 2013.
+user: can you play that movie you mentioned earlier?
+assistant: you want me to play paprika with english subtitles?
+user: yes, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: it's now playing.
+user: thanks, that's everything.
+assistant: have a great day.

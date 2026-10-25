@@ -1,0 +1,32 @@
+user: I'm afraid of flying and need to travel soon. Could you help me find a train?
+assistant: Sure, I can help you with that. Please say your destination.
+user: My destination is Vancouver.
+assistant: What is your preferred travel date?
+user: I'd like to leave March 2nd. I'm looking for one luxurious ticket.
+assistant: Please tell me your departure city.
+user: Search for tickets from Portland, OR.
+tool(FindTrains): ok n_results=7
+assistant: How does the 7:40 am train sound? The total ticket price is $123.
+user: What's its origin station?
+assistant: The train's origin station is Union Station.
+user: What's its destination station?
+assistant: The train's destination station is Pacific Central Station.
+user: That works.
+assistant: Should I go ahead and reserve tickets?
+user: No. At the moment, I don't want to reserve tickets.
+assistant: Would you like my help with anything else?
+user: Yes. Search for something interesting for me to do there on the 12th. I love Broadway.
+tool(FindEvents): ok n_results=6
+assistant: Your search yielded 6 events that might interest you. The first is the very popular Alice In Glitterland, taking place at The Wise on March 12th from 5 pm.
+user: What's the price of a ticket?
+assistant: The ticket price is $45.
+user: What is the venue's street address?
+assistant: The venue is at 1882 Adanac Street.
+user: That works. Could you find some places to visit around that area?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. I highly recommend visiting the Bloedel Conservatory Park.
+user: All right. Very cool. My friend will be joining me. Please find me a house for 2, over there.
+tool(SearchHouse): ok n_results=10
+assistant: Your search yielded 10 available houses. The first nice house has a rating of 4.2 and is situated at 1018 Granville Street.
+user: This is a very good house. At the moment, that's all I need.
+assistant: Glad to have been of service. Goodbye.

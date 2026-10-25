@@ -1,0 +1,30 @@
+user: I need a place to live.
+assistant: How many baths would you like?
+user: I want 3 baths.
+assistant: How many bedrooms would you like and is for rent or buy?
+user: I want a property in San Ramon with 3 bedrooms, and I want to buy,
+tool(FindHomeByArea): ok n_results=5
+assistant: Bel Air is a good property at 2000 Shoreline Loop with a price of $3,600,000.
+user: Okay, I want to visit that property on the 14th of March.
+assistant: Please confirm: You would like to visit Bel Air and visit on March 14th.
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is now scheduled.
+user: Play, can I share this location with Henry?
+assistant: You are sharing the location 2000 Shoreline Loop with Henry.
+user: Okay, sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully shared it.
+user: Thanks for that. I need a cab too.
+assistant: Which type of ride would you like, out of Pool, Regular, etc.
+user: I don't know, whatever is the most comfortable.
+assistant: How many seats would you like?
+user: I'm in a group of 3.
+assistant: So a ride to 2000 Shoreline Loop, with 3 seats and a Luxury ride?
+user: Yes, indeed. What is the price?
+tool(GetRide): ok n_results=1
+assistant: Your cab is now on the way. The ride price is $46.82.
+user: Thanks for that.
+assistant: Is there anything else to help with?
+user: No, thanks a bunch.
+assistant: Of course. Enjoy.

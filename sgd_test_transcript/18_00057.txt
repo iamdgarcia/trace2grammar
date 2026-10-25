@@ -1,0 +1,20 @@
+user: Please find me a therapist.
+assistant: What city should I search? What type of therapist do you need?
+user: I would like someone in Menlo Park that is a psychologist.
+tool(FindProvider): ok n_results=4
+assistant: I have 4 therapists that could work including Kate Corcoran a psychologist in Menlo Park.
+user: That sounds nice. Would you please book an appointment for the 14th of this month at 11:45 am?
+assistant: Please confirm an appointment with Kate Corcoran 11:45 am March 14th.
+user: Yes, that will work. What would be their address?
+tool(BookAppointment): ok n_results=1
+assistant: The address is 845 El Camino Real but something is wrong and I couldn't book the appointment. You could try Kate Corcoran on March 14th for an appointment at 12 pm.
+user: Yes, that would work.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you'll get an email confirmation soon.
+user: Will you get me a cab to go there for a group of one the cheapest ride?
+assistant: Please confirm details that you want a ride to 845 El Camino Real for 1 seat pool ride.
+user: Yes, that will work for me.
+tool(GetRide): ok n_results=1
+assistant: I have booked the ride and the cab is on the way.
+user: Thanks so much for the help and that is all I want.
+assistant: Have a nice day.

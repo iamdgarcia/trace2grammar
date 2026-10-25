@@ -1,0 +1,28 @@
+user: I want to find some interesting events to spend my free time there and I need the one in Las Vegas. I like Theater events in particular and search it for the date March 7th.
+tool(FindEvents): ok n_results=1
+assistant: Searched and got 1 event named Marriage Can Be Murder which is going to be held at Showroom at the D Las Vegas on March 7th at 5 pm. Do you want to go to this event or you need something else?
+user: I have to think and now I want to know the ticket cost for that show and venue address.
+assistant: This event will be held at 301 Fremont Street and the total ticket cost will be around $50 each.
+user: That's great. Thanks for your help to find a nice event.
+assistant: That is my pleasure and shall I book the tickets now?
+user: I will tell you later and Now I need one more help from you. Can you find a house there to stay for a while and I need the same with laundry service. I am the only 1 person to stay there.
+tool(SearchHouse): ok n_results=5
+assistant: I got a result. A nice house is situated at 1215 South Las Vegas Boulevard and the rating is 3.7. If it is okay for you then I will book this house now.
+user: Yes, this house is okay for me.
+assistant: What about booking? Shall I try now?
+user: No, not now and I will decide it later.
+assistant: How can I help you further?
+user: A bus. I want a bus to go there and which should be a one-stop bus.
+assistant: Let me know your current location to search for the bus and shall I try to book the bus tickets for the date March 7th?
+user: No please book it on Saturday this week and I need the bus from Sacramento.
+tool(FindBus): ok n_results=10
+assistant: Noted and what about a bus departing at 7:10 am for the ticket cost $63?
+user: Is there any other buses available in your searched list?
+assistant: Yes, another bus which is going to leave at 7:40 am for the cost $65? Do you like to travel in this bus?
+user: Yes, I prefer this bus. Let us go back to the booking of tickets to the event that I have selected before. I need three tickets.
+assistant: Okay, please confirm to book 3 tickets to the event Marriage Can Be Murder which will be held in Las Vegas for the date March 7th.
+user: That is okay to proceed.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have booked the tickets to the event successfully.
+user: Thanks and that's all for now.
+assistant: Have a good day.

@@ -1,0 +1,28 @@
+user: I need help finding a bus.
+assistant: I can help you with that. Please say your preferred departure date and destination.
+user: I'd like to travel to Vegas on the 8th of March.
+assistant: What's your origin city?
+user: My origin city is Fresno.
+tool(FindBus): ok n_results=10
+assistant: Your search yielded 10 buses that might interest you. Would you like the $39 bus leaving at 7:10 am?
+user: What's the destination station and how many stops does this bus have?
+assistant: The bus will go direct to its destination station, which is Union Plaza.
+user: That time won't work for me. Please look for something else. It doesn't matter whether the bus is direct or not.
+tool(FindBus): ok n_results=10
+assistant: Will the $38 bus leaving at 7:40 am work for you?
+user: That works for me.
+assistant: Would you like to purchase tickets for this bus?
+user: Yes, please reserve me a seat.
+assistant: Tell me the number of tickets you'd like.
+user: 3 tickets please.
+assistant: Please confirm that you'd like to buy 3 tickets on the March 8th, 7:40 am bus from Fresno to Las Vegas, and that you don't have excess luggage.
+user: That is correct. May I know the origin and destination stations?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your tickets. It leaves from 2660 Tulare St. destined for Union Plaza.
+user: Please find me one room in a 3 star hotel that's smoker-friendly.
+tool(SearchHotel): ok n_results=1
+assistant: The Hampton Inn Las Vegas/Summerlin is a good 3 star hotel meeting your requirements.
+user: That works for me.
+assistant: Should I go ahead and reserve a room at the hotel?
+user: No, I won't be making a reservation right away. At the moment, that's all I need.
+assistant: Goodbye and have a wonderful day!

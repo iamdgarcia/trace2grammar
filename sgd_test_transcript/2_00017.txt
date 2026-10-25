@@ -1,0 +1,10 @@
+user: Find me something interesting to do?
+assistant: Anything in particular, like Music or Theater etc and which city to look in?
+user: I like Songs, search in Philadelphia
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events of them Anthony Green is quite popular. The event is at The foundry, starting at 6 pm on March 10th.
+user: good, find me something else on 14th of March.
+tool(FindEvents): ok n_results=10
+assistant: There is another event at The Foundry, Ayokay on march 14th at 6:30 pm.
+user: Thats good, thats all!
+assistant: Have a good day!

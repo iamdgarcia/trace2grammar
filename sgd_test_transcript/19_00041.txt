@@ -1,0 +1,33 @@
+user: Find me a rental car.I will need a car from 12th of March at 5 pm till March 13th.
+assistant: From where you want to rent the car?
+user: In Seattle.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A nice Sedan Audi A8 available at King Street Station.
+user: What is the cost per day?
+assistant: $28.00 is the cost per day.
+user: something else you have?I will need it from the 6th.
+tool(GetCarsAvailable): ok n_results=7
+assistant: A nice SUV Citroen C5 is available at Seattle-Tacoma International Airport.
+user: Tell me the cost per day.
+assistant: $39.00 is the cost per day.
+user: Something else you have?
+assistant: A nice SUV Dacia Duster available at King Street Station.
+user: Sounds good.Find me some direct buses that goes there for one people on 2nd of March.
+assistant: From where you leave?
+user: I will leave from Portland.
+tool(FindBus): ok n_results=10
+assistant: How about a bus that depart at 7 am am cost $30.
+user: Find me something else from Vancouver, BC.
+tool(FindBus): ok n_results=10
+assistant: I have 10 options for you.One that cost $27 and depart at 7:40 am.
+user: At which station is depart and arrive?
+assistant: The train depart from Pacific Central Station and arrives at Westlake Station.
+user: Good.find me one-way flight going there.
+assistant: You want to go on March 2nd, or March 6th or?
+user: On 2nd of March is okay.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I have 3 flight for you.You like American Airlines?The onward flight takes of at 11:20 am and has a layover.Price per ticket is $254
+user: Sounds good for me.
+assistant: With anything else can I help?
+user: No.Thank you for all.
+assistant: Have a great day!

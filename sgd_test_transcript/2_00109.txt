@@ -1,0 +1,13 @@
+user: I'm looking for a one way flight ticket.
+assistant: Where are you traveling to?
+user: I'm going to Berlin.
+assistant: What date would you like to travel on?
+user: I'm leaving on the 1st of March.
+assistant: Where are you departing from?
+user: I'm looking for a flight from Chi-town.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 flights for you. There is a connecting American Airlines flight departing at 4:35 pm for $407.
+user: That works for me.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

@@ -1,0 +1,36 @@
+user: Can you find me a train to ride
+assistant: What date are you traveling and where are you coming and going from?
+user: I need tickets in Washington on the 14th heading to Chi-Town
+tool(FindTrains): ok n_results=5
+assistant: There's a 9:40 am train for $104 how does that sound?
+user: That sounds good for me
+assistant: Do you want tickets?
+user: Yes please, make a reservation?
+assistant: For how many tickets? Do you want travel insurance?
+user: Yes please, include insurance and I need 1 seat
+assistant: Confirming you train from Washington to Chicago that leaves on March 14th at 9:40 am for 1 person, and it's a value ticket with insurance
+user: Yes that works fine
+tool(GetTrainTickets): ok n_results=1
+assistant: It's been booked for you
+user: Great, now find me some interesting things to do that day
+assistant: Do you prefer any kind of event?
+user: I want to catch a Broadway show if possible
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events including Ada And the Engine which is a popular show taking place at The Artistic Home, catch it on March 3rd at 5:30 pm if you want
+user: Yes I want that
+assistant: Do you want tickets then?
+user: No, not at the moment
+assistant: OK cool, what else can I do?
+user: For now can you share a location
+assistant: To who are you sharing it to?
+user: I want to share it with Mark
+assistant: Confirming you want to share to location of The Artistic Home with Mark
+user: Sorry I meant Sophia, not Mark
+assistant: OK so share the location of The Artistic Home to Sophia instead right?
+user: Yes that's right
+tool(ShareLocation): ok n_results=1
+assistant: It's been shared
+user: Great, that's a big help
+assistant: What else can I do?
+user: Nothing else, thanks so much
+assistant: You're welcome see you

@@ -1,0 +1,35 @@
+user: Find me a unisex salon in Petaluma.
+tool(FindProvider): ok n_results=7
+assistant: Dukes And Dolls Salon is a unisex salon in Petaluma.
+user: What else can you find?
+assistant: Modern Classics Barber Shop is a unisex salon in Petaluma.
+user: Can you give me their phone number?
+assistant: You can contact them at 707-364-6469.
+user: What is their rating and their location?
+assistant: They have a 5.0 rating and are located at 410 Petaluma Boulevard South.
+user: What other places can you find?
+assistant: Salon Method is a unisex salon in Petaluma.
+user: That works for me. Find me a movie to see near there.
+tool(FindMovies): ok n_results=5
+assistant: Search revealed 5 results. Do you like Blinded by the Light, Scary Stories to Tell in the Dark, or The Angry Birds Movie 2?
+user: The Angry Birds works for me. What time is it playing?
+assistant: Do you wish to see it on March 3rd?
+user: Yes, I want to see it then.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for it at Boulevard 14 Cinema and it is at 4 pm.
+user: That is perfect.
+assistant: Shall I get you movie tickets?
+user: No, not right now.
+assistant: Do you need more help?
+user: Book me a session at that salon for that day.
+assistant: What time do you want to go?
+user: I want to go there at 10:45 am.
+assistant: You want an appointment at Salon Method for 10:45 am on March 3rd, correct?
+user: That is right. What is the venue's location and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 145 1st Street and you can contact them at 707-981-8469. I couldn't book that appointment time. Would you like a 10:30 am appointment on March 3rd at Salon Method?
+user: That works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is booked.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a good day.

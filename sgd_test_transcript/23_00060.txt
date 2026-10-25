@@ -1,0 +1,39 @@
+user: There is something that I need to pay, I want to make a payment.
+assistant: From which account do you want to make the payment and how much?
+user: Use my credit card for the payment and make it for twenty five dollars.
+assistant: To whom do you want to send it to?
+user: Send it to Yumi.
+assistant: Please confirm: Making a transaction for $25 to Yumi from your credit card. The transaction is visible to public.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment has been successful. The recipient should see the money soon.
+user: Thanks a lo. I also need to find a train. Find a Flexible ticket for the 11th of this month departing rom New York City.
+assistant: Where are you going to?
+user: Look for something to Atlanta, GA.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains you might like. There is a train departing at 7:20 am and has a cost of $202.
+user: What other trains are there?
+assistant: There is also a train departing at 8:20 am and it has a cost of $225.
+user: From which station does it depart and to which one does it arrive?
+assistant: It leaves from Grand Central Station and arrives to Peachtree Station.
+user: That sounds great.
+assistant: Do you want to buy some tickets?
+user: I am still thinking about it. Do you know how will the weather be on the 11th of this month in Atlanta, GA?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 87 degrees with a 0 percent chance of rain.
+user: And what about the 13th of March?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 80 degrees with a 2 percent chance of rain.
+user: What about the wind?
+assistant: The wind will be around 3 miles per hour.
+user: What about the humidity?
+assistant: There will be a 17 percent of humidity.
+user: THat is great. Could you get one ticket for the train ride you found?
+assistant: Do you wish also travel insurance?
+user: Yes, please add travel insurance.
+assistant: Please confirm: Booking 1 Flexible train ticket with trip insurance for March 11th departing at 8:20 am from New York to Atlanta.
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: The ticket has been booked.
+user: Thanks a lot, that would be all.
+assistant: Have a great day.

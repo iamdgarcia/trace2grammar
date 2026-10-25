@@ -1,0 +1,17 @@
+user: I need you to find me a Family Therapist in Walnut Creek.
+tool(FindProvider): ok n_results=4
+assistant: Search revealed 4 results. Do you like Andreotti Daniel. He is a Family Counselor in Walnut Creek.
+user: That works for me. Book me a session.
+assistant: What date do you want to go?
+user: I want to go Wednesday next week at 3:30 pm.
+assistant: You want to see Andreotti Daniel at 3:30 pm on March 6th, correct?
+user: That is right. Can you give me their address and contact information?
+tool(BookAppointment): ok n_results=1
+assistant: Your session is all set up and you should receive an email confirmation. You can find them at 45 Quail Court # 200 and can contact them at 925-930-9650.
+user: Can you find me some Cartoon movies to see?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 listing for you which is Paprika. It has a rating of 84 out of 100.
+user: That is perfect.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: Have a great day.

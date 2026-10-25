@@ -1,0 +1,30 @@
+user: I am looking for a Unisex salon.
+assistant: Which is your preferred city?
+user: I am looking for a salon in Cupertino.
+tool(FindProvider): ok n_results=6
+assistant: There are 6 salons that might interest you. How about a nice salon called Great Clips located in Cupertino.
+user: Okay. Find me their contact number.
+assistant: You can reach them at 408-255-2178.
+user: Find me their average rating.
+assistant: The average rating is 3.6.
+user: Okay. That sounds good to me. Can you share the location with Tyler? The address is 20686 Homestead Road.
+assistant: Please confirm: You want me to share the location 20686 Homestead Road with Tyler.
+user: No. Share the address Sutro Baths with Lauren.
+assistant: Please confirm: You want me to share the location Sutro Baths with Lauren.
+user: Okay. That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared successfully.
+user: Thank you for the help. I would like to see my alarms.
+tool(GetAlarms): ok n_results=5
+assistant: I found an alarm for 9 am with the name as Wake up.
+user: Did you find any more alarm?
+assistant: I found an alarm for 10 am with the name as running.
+user: Okay. That sounds good.
+assistant: Would you like me to add an alarm for you?
+user: Yes, Please add an alarm for 16:00 with the name as Leave for home.
+assistant: Please confirm: You want me to add an alarm for 4 pm with the name Leave For Home.
+user: Yes, That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Sorry, Your alarm could not be added due to some reasons. Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

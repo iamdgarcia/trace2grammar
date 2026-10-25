@@ -1,0 +1,16 @@
+user: If I need to request a payment, can you help me to do so?
+assistant: How much are you requesting, and from which contact?
+user: I want to request 79 dollars from Isabella.
+assistant: You will request a $79 payment from Isabella, this transaction will be made public, is that fine by you.
+user: No objections here, thank you.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was made successfully, anything else I can help you with?
+user: Thanks for the help with the payment request, I will also like to make a one hundred and sixty nine bucks payment.
+assistant: To whom are you making a payment to , and shall I transfer the money from an app balance or credit card?
+user: I am going to make a payment from my checking account to Svetlana.
+assistant: From your debit card, you will be making a public visible payment to Svetlana, the total amount being $169 is that correct?
+user: Correct, thank you.
+tool(MakePayment): ok n_results=1
+assistant: The payment was made successfully, the recipient will confirm the amount shortly.
+user: Thank you so much for all the help, I need nothing else at the moment, bye!
+assistant: No problem, have a good day.

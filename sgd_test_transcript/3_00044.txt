@@ -1,0 +1,11 @@
+user: I need a round trip flight, and need 1 ticket with Delta Airlines. Also, I need a return flight on the 11th.
+assistant: What is your travel date?
+user: I'm leaving on the 3rd.
+assistant: From which city will you depart? Where would you like to go?
+user: I need some from Ciudad de Mexico. I'm going to Chi-town.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight for you, with Delta Airlines. It will depart at 6:55 AM and is connecting. The return flight will take off at 4:10 PM. The ticket price is $420. Is this okay?
+user: Sounds good.
+assistant: Is there anything else to help with?
+user: No, but thanks!
+assistant: Of course. Have a great day.

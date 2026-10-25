@@ -1,0 +1,15 @@
+user: I'm looking for a movie to watch. A regular showing would be fine.
+assistant: Where are you located?
+user: I'm in San Francisco, please look for movies there.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies you can watch. What do you think of Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: Ad Astra would be great to see. Now can you look for songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about Legendary by Skillet from the album Victorious?
+user: I like that. Please play it on the speaker in patio.
+assistant: I'll play you Legendary in the Patio, is that right?
+user: Yes, please play it. What kind of song is it?
+tool(PlayMedia): ok n_results=1
+assistant: It's a Rock song, it is now playing.
+user: Thanks, that's all I need.
+assistant: Have a great time.

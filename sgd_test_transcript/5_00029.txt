@@ -1,0 +1,12 @@
+user: I would like you to look for my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There's one for 6 am and it's called Wake up.
+user: Perfect, I need to add another one for 16:15 and you should call it Phone home.
+assistant: I can easily do that if you just confirm me the procedure. You want me to add another alarm for 4:15 pm and it must be called Phone home.
+user: That's wrong, it should be called Cleaning and it must be scheduled for 4:30 pm.
+assistant: Okay, confirm the following please. I'm about to create an alarm at 4:30 pm and name it Cleaning.
+user: That's right.
+tool(AddAlarm): ok n_results=1
+assistant: It's done.
+user: Great! You can turn off now, bye.
+assistant: Bye Bye.

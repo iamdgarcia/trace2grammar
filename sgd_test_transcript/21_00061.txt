@@ -1,0 +1,17 @@
+user: Find me some song please.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 options for you.What do you think about album Happiness Begins by Jonas Brothers with song Sucker?
+user: Yes, I like this one.Tell me how is the weather in Sausalito on March 5th.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 82 degrees Fahrenheit and 27 percent chance of rain.
+user: Tell me how windy will be and humidity how is expected to be?
+assistant: Around 36 percent will is the humidity and average wind speed should be 4 miles er hour.
+user: Okay.Play for me on Kitchen the song that you just found.
+assistant: Play the song Sucker in Kitchen.Is OK?
+user: Yes,perfect.From '17 did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: From 2019 it is.Enjoy!
+user: Thank you for all.
+assistant: Can I help you with something else?
+user: No.Thank you very much.
+assistant: Have a great day!

@@ -1,0 +1,25 @@
+user: I need a weather update for Chi-town for 13th of this month.
+tool(GetWeather): ok n_results=1
+assistant: The temperature will average 65 degrees Fahrenheit with a 37 percent chance that it would rain.
+user: What is the expected humidity?
+assistant: It's around 47 percent humid.
+user: What is the wind situation like?
+assistant: 5 miles per hour will be the wind speed on average.
+user: Fine. Look for a one-way flight to there.
+assistant: What city will you leave from?
+user: Find flights from San Francisco.
+assistant: Do you leave on March 13th?
+user: I start my visit on 11th of this month?
+tool(SearchOnewayFlight): ok n_results=5
+assistant: What do you think of flying Alaska Airlines. It's direct onward plane leaves at 6:10 am and will cost you $183.
+user: Perfect. I would be needing a rental car there as well.
+assistant: What will the time of pick up for the car be? Will you be needing it from March 11th and till when do you want the car?
+user: I want it on 13th of this month till the 14th and the pick up time is at 16:00.
+tool(GetCarsAvailable): ok n_results=10
+assistant: You can choose from 10 cars. A nice SUV Dacia Duster is available at Chicago Union Station.
+user: What is the daily cost?
+assistant: The daily cost will be $41.00
+user: That sounds fine.
+assistant: Shall I be of any other help?
+user: Not really. Thank you.
+assistant: Have a nice day!

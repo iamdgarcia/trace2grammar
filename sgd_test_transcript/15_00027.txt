@@ -1,0 +1,21 @@
+user: I'm looking to buy a place to live.
+assistant: In which city are you looking and how many bedrooms and baths do you need?
+user: I'm looking for a property with four beds 3 baths in Sunnyvale.
+tool(FindHomeByArea): ok n_results=10
+assistant: Apricot Pit Apartments is a property located at 400 East Remington Drive for a cost of $4,400,000.
+user: Can you find me something somewhere else?
+assistant: Balboa Apartments is located at 151 South Bernardo Avenue for a total of $4,550,000.
+user: Sounds good. Please schedule a visit.
+assistant: On which date would you like to visit?
+user: On the 9th please.
+assistant: Please confirm you want to book an appointment to view Balboa Apartments on March 9th.
+user: Yes. That's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your appointment was successfully booked.
+user: Thanks for all your help.
+assistant: Is there anything else I can help with?
+user: I would like to see my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm named Wake up for 6:30 am.
+user: Great, that's all.
+assistant: Thanks and goodbye.

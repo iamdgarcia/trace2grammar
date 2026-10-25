@@ -1,0 +1,9 @@
+user: Can you order me a luxurious cab to 1270 Linford Lane?
+assistant: How many seats will you be needing?
+user: It's for a small group of two.
+assistant: Please confirm: a 2 seater Luxury cab to 1270 Linford Lane.
+user: Yes, that's perfect. When will the cab arrive and how much does it cost?
+tool(GetRide): ok n_results=1
+assistant: The cost of the ride will be $42.40, and it will be there in 8 minutes. It's on it's way!
+user: Thanks for the help! That'll be everything.
+assistant: Have a great day!

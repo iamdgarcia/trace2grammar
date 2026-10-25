@@ -1,0 +1,20 @@
+user: I want to make a request for a payment of 12 dollars.
+assistant: Can you tell me the name of the contact?
+user: The name of the person with whom to make the transaction is Diego.
+assistant: Can you please confirm that you want to make a transaction of $12 which will be visible to the public with Diego?
+user: That is what I want.
+tool(RequestPayment): ok n_results=1
+assistant: Your requested payment has been done.
+user: Now I want to do a payment which should be a private transfer.
+assistant: Do you want to use the app balance or debit card for the money transfer?
+user: I want the money to be send from my JCB.
+assistant: Can you tell me the amount of the transfer?
+user: The transfer should be for an amount of $44.
+assistant: Can you give me the name of the contact?
+user: I want to make the transaction with the person called Amelia.
+assistant: Can you please confirm that you want to make a transaction of $44 from your credit card with Amelia, and that the transaction should be private?
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your requested payment has been completed, the recipient of the amount should be able to see it soon.
+user: I appreciate it very much! That's all I need for now, take care!
+assistant: Alright, have a good time!

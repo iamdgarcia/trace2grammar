@@ -1,0 +1,23 @@
+user: Can you find me a nice place to live?
+assistant: How may baths should the house have? Is this house for rent or buy?
+user: I want to rent a place with three baths.
+assistant: Can you tell me the number of bedrooms you need in the property?
+user: I am looking for a property with three bed rooms.
+assistant: Which area would you like me to search for the property?
+user: I am looking for a property in Fremont.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 nice houses. How about a nice property called Alborada Apartments located at 1001 Beethoven Common with the total cost of $4,100.
+user: Can you find me their contact number?
+assistant: You can contact them on 510-797-1800.
+user: Okay, That sounds nice to me.
+assistant: Would you like me to schedule a visit to the property?
+user: Yes, Please schedule a visit the property on 9th of this month.
+assistant: Please confirm: you want me to schedule a visit to Alborada Apartments on March 9th.
+user: Yes, That works for me.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled the visit.
+user: I would like to see my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: You currently have 2 alarms set. One of them is at 9:30 am with the name as Exercise.
+user: Okay, cool. That is all I need for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

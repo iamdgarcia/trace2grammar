@@ -1,0 +1,28 @@
+user: I need to find a salon.
+assistant: In which city?
+user: In El Cerrito.
+tool(FindProvider): ok n_results=1
+assistant: Chop Salon & Spa is a lovely salon in El Cerrito.
+user: Is it a unisex salon and where is it located?
+assistant: It is not unisex and the location is 6493 Portola Drive.
+user: That would be fine. I want to share the location with Joseph.
+assistant: You would like the share the location 6493 Portola Drive with Joseph?
+user: No, I want to share it with Betty.
+assistant: You would liek to share the location 6493 Portola Drive with Betty?
+user: That would be great.
+tool(ShareLocation): ok n_results=1
+assistant: I have share the location with her.
+user: Thanks very much. I want to review my alarms now.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm for 8 am titled Jogging.
+user: Well, that is great.
+assistant: You want to add another alarm?
+user: Yes, another one.
+assistant: What would you like to name it?
+user: Set it for 15:00 and call it phone home.
+assistant: You would like to create an alarm for 3 pm and call it phone home?
+user: Yes, that is correct.
+tool(AddAlarm): ok n_results=1
+assistant: I have added the alarm.
+user: Thanks. That would be all.
+assistant: You are welcome.

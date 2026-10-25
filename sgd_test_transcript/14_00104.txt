@@ -1,0 +1,19 @@
+user: i want to look for some songs.
+tool(LookupMusic): ok n_results=10
+assistant: how about ecstasy by insideeus off the ecstacy album?
+user: that's a good one. how about some movies? i like movie with shaun dooley.
+assistant: what genre do you like?
+user: i like mystery movies.
+tool(FindMovies): ok n_results=1
+assistant: how about Official Secrets?
+user: Official Secrets sounds good.
+assistant: do you want me to play the movie?
+user: no, not now.
+assistant: what else is there?
+user: can you play that song you mentioned earlier on the patio?
+assistant: you want me to play ecstasy on the patio?
+user: yes.
+tool(PlayMedia): ok n_results=1
+assistant: enjoy the song!
+user: thanks, that's it.
+assistant: have a great day.

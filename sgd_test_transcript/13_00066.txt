@@ -1,0 +1,18 @@
+user: Find me a movie.
+tool(FindMovies): ok n_results=10
+assistant: There is the movie with 70 % approval rating, Labyrinth
+user: who is the lead in it?
+assistant: Ron Mueck is the lead in it.
+user: Whats the genre and the director of this movie?
+assistant: Its a Fantasy genre and is directed by Jim Henson.
+user: Sounds good, find me some activity for that day?
+assistant: Any specific type of event to search?
+user: I like Theater, something for Wednesday next week.
+assistant: Any specific city?
+user: Find something in Los Angeles.
+tool(FindEvents): ok n_results=10
+assistant: There is a Anything Goes event at Upright Citizens Brigade Sunset at 5:30 pm on March 6th
+user: that is great
+assistant: Should i get the tickets?
+user: no, not now. Thats all!
+assistant: Have a good day!

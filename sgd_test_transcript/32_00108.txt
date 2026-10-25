@@ -1,0 +1,36 @@
+user: I am searching for a place to live.
+assistant: Whether is it for rent or buy? How many bed rooms and baths do you need?
+user: It should have 2 bed rooms and 1 bath. I want to buy.
+assistant: Which is your preferred area?
+user: I need it in Sunnyvale.
+tool(FindHomeByArea): ok n_results=10
+assistant: Aster Park Apartments is an excellent property situated at 1059 Reed Avenue. The price is $2,750,000.
+user: What is their contact number?
+assistant: Their contact number is 408-984-1060
+user: Whether it has laundry machines in house?
+assistant: Yes. It has.
+user: It is nice.
+assistant: Shall I fix a schedule to visit the property?
+user: Yes. Please.
+assistant: When do you need to schedule?
+user: I wish to visit it on Monday next week.
+assistant: Kindly ensure that, you wish to have the schedule on March 4th to visit Aster Park Apartments.
+user: Yes. it is correct. Whether is has garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is confirmed. Sorry, it don't have garage.
+user: Thank you so much. Please share the location with Thomas.
+assistant: Kindly ensure that, the location 1059 Reed Avenue is shated with Thomas.
+user: Nope. Please share it with Emma.
+assistant: Kindly ensure that, the location 1059 Reed Avenue is shared with Emma.
+user: It is good.
+tool(ShareLocation): ok n_results=1
+assistant: Locations is shared.
+user: Thank you so much for your nice help. Please search for a cab to go there for 2 persons.
+assistant: Which type of ride do you prefer?
+user: I need Regular ride.
+assistant: Kindly ensure that, you need Regular ride to 1059 Reed Avenue for 2 persons.
+user: It is nice for me. When will be the cab reach here? what is the cost?
+tool(GetRide): ok n_results=1
+assistant: It is booked and it is on the way. It will reach in 5 minutes. the cost of the ride is $21.26.
+user: Thank you so much for your help. That is what I need.
+assistant: Have a nice day.

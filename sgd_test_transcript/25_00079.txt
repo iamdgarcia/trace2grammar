@@ -1,0 +1,35 @@
+user: Please show my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: I found one for 4:30 pm called Event.
+user: Find me an restaurant there in Palo Alto that serve Oriental food.
+tool(FindRestaurants): ok n_results=3
+assistant: I have 3 options that you may like.A nice restaurant located in Palo Alto called Burma Ruby Burmese Cuisine.
+user: Is this a cheap place?Tell me their phone number.
+assistant: This place is moderate priced.650-285-2770 is the contact number.
+user: I like this one.I want to reserve a SUV car there from 2nd of March.
+assistant: At what time you will pick up the card and tell me if you need insurance too.
+user: I will pick it up at 12:45.No, I don't need insurance.
+assistant: From where you want to pick up the car and until when you want it?
+user: I would like to pick it up from Portland Bus Station and I will need it till 7th of this month.
+assistant: You want a SUV car without insurance.Pick up will be from Portland Bus Station on March 2nd at 12:45 pm and drop-off on March 7th.Is that correct?
+user: Yes very good for me.
+tool(ReserveCar): ok n_results=1
+assistant: Reservation failed.With something else I can help you?
+user: Try please again the reservation but change on this date:pick up on Monday next week at 12:30 pm till March 9th.
+assistant: You want a SUV car without insurance.Pick up will be from Portland Bus Station on March 4th at 12:30 pm and drop-off on March 9th.Is that okay?
+user: Sounds good.Tell me the cost per day and the name of the car.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.Name of car is Alfa Romeo Stelvio and cost $38.00 per day.
+user: Share for me please the location.
+assistant: You want to share this address Portland bus Station?To who you want to be?
+user: Sounds very good.Share it with Katherine.
+assistant: You share with Katherine the location Portland Bus Station.I'm right?
+user: No.Share it with Carol.
+assistant: You share with Carol the location Portland Bus Station.Is this correct?
+user: Sounds okay for me.
+tool(ShareLocation): ok n_results=1
+assistant: The locations is successfully shared.
+user: Thank you.You have been of great help to me.
+assistant: Can I do something else for you?
+user: No.Thank you for all your help.
+assistant: Have a great day!

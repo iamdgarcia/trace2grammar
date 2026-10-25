@@ -1,0 +1,24 @@
+user: I want to go for a short trip and I need your help to find a bus to travel.
+assistant: What is your present location? I ask this to search for a bus in that area.
+user: I need the bus from Las Vegas.
+assistant: I need some more information. Let me know your starting date of travel and place of visit.
+user: I like to visit Long Beach, CA and I need the bus on 4th of this month.
+tool(FindBus): ok n_results=4
+assistant: I searched and got 4 buses details. What about the one leaving at 6:30 am for ticket cost $34?
+user: It is okay. Now I want to go to some nice and attractive places there and I would prefer Museum. Search for something like that.
+tool(FindAttractions): ok n_results=2
+assistant: Got 2 results. Do you like to visit to Long Beach Museum of Art which is also a Museum?
+user: Yes, I like this place. Now please book the tickets to the bus that I have confirmed before and I need 2 tickets.
+assistant: Please confirm once again to book 2 tickets to the bus leaving from Las Vegas to Long Beach on March 4th at 6:30 am without extra luggage.
+user: I need 2 more tickets. Please book for 4 persons including extra luggage.
+assistant: Okay Finally confirm to book 4 tickets with extra luggage.
+user: Okay, that is correct to proceed. Let me know the origin and destination stations.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed and this bus will leave from Union Plaza and will reach Downtown Station finally.
+user: Okay. Thanks for your help.
+assistant: What else you want me to do?
+user: I want your help to search for a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: What about the one named Best Western of Long Beach with 3 stars?
+user: Okay, I will go with this hotel and thanks for all.
+assistant: Have a good day.

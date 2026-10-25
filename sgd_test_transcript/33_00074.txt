@@ -1,0 +1,23 @@
+user: Will you get me something fun in London, England? I like things like Broadway in New york.
+tool(FindEvents): ok n_results=10
+assistant: Well, there are 10 theatre type events, one is A Right Royale Tea. It is at Amba Hotel Charing Cross. It is on March 14th at 7 pm.
+user: Fine, that's good.
+assistant: How about some tickets?
+user: Yes, lets do.
+assistant: How many would you like?
+user: Get me two.
+assistant: To confirm: 2 for A right Royale Tea on March 14th in London.
+user: You got it. Where is it?
+tool(BuyEventTickets): ok n_results=1
+assistant: You're set, It's at Strand.
+user: How much will this run me per ticket?
+assistant: Cost is $50.
+user: Fine, thanks, get me a ride there.
+assistant: What type ride do you want, Regular or Luxury?
+user: Just regular please.
+assistant: To be clear: 2 for Regular ride to Amba Hotel Charing Cross.
+user: Yes, how long until the cab finally gets here? How much must I pay?
+tool(GetRide): ok n_results=1
+assistant: It will arrive in 6 min. and costs you $20.83.
+user: Fine, I'll live with that I guess.
+assistant: Glad I could help.

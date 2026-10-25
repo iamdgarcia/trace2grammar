@@ -1,0 +1,36 @@
+user: I need to buy bus tickets.
+assistant: How many tickets do you need?
+user: I need 4.
+assistant: What is your departure city and time?
+user: I want to leave Fresno, CA at 1:30 pm.
+assistant: What is your destination?
+user: My destination is SF.
+assistant: And your departure date?
+user: I'm leaving this Sunday.
+assistant: Confirming that you want 4 tickets to San Francisco from Fresno. You will be departing on March 3rd at 1:30 pm. You have no extra luggage. Is this information correct?
+user: Yes, that works. How many stops does this bus have? How much does the bus cost?
+tool(BuyBusTicket): ok n_results=1
+assistant: This is a direct bus. The ticket coast $29. Your tickets are confirmed.
+user: Can you find me a rental car?
+assistant: Will you be picking it up in San Francisco? What will be your pick up time?
+user: I'd like to pick up a Hatchback at four pm. I need it till the 13th. Yes, I will pick it up in San Francisco.
+assistant: Will you be picking the car up on March 3rd?
+user: No, I need it from the 12th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found a nice Hatchback Fiat Panda available at SFO International Airport.
+user: Anything else? I need cars in London, England. I want to pick it up at 12:00.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I found 5 cars available. How about a nice Ford Focus Hatchback? It is available at Gatwick International Airport.
+user: That sounds good. I want to make a reservation.
+assistant: Would you like to add insurance?
+user: Yes, I want insurance.
+assistant: Confirming that you want to pick up a Hatchback from Gatwick International Airport. You will be picking it up on March 12th at 12 pm. You will be dropping it off on March 13th. You do require insurance. Is this information correct?
+user: Yes, that sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved.
+user: How much will it cost per day?
+assistant: It will cost you $38.00 per day.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: No. Thank you.
+assistant: You're welcome. Have a good day!

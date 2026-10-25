@@ -1,0 +1,23 @@
+user: Hi! I'm looking for 4 tickets to an event in the Los Angeles area.
+assistant: I'd be happy to assist you. When will you be attending the event and did you have a specific event in mind?
+user: I'd like to see Mamma Mia on the 9th.
+assistant: Let me make sure I have the details correct. You'd like 4 tickets to see Mamma Mia on March 9th in Los Angeles.
+user: That is correct. Can you tell me where it is playing and what time it starts?
+tool(BuyEventTickets): ok n_results=1
+assistant: It is showing at 5:30 pm at 120 Judge John Aiso Street. Your ticket purchase was successful.
+user: Great! Are there any buses going to Los Angeles from Anaheim on the 1st of March?
+tool(FindBus): ok n_results=10
+assistant: There are 10 options that could work for you. Would you be interested in the 7:50 am bus for $12?
+user: Maybe. Where does it arrive at?
+assistant: It will arrive at North Hollywood Station.
+user: Where does it leave from?
+assistant: It will depart from the Anaheim Bus Station.
+user: That will work.
+assistant: Will there be anything else I can do for you today?
+user: Yes, I'd like to purchase the bus tickets.
+assistant: You would like 4 tickets for the 7:50 am bus departing Anaheim to Los Angeles on March 1st. Is that correct?
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket purchase was successful. You should expect an email confirmation soon.
+user: Thank you for the assistance. I think that's everything for now.
+assistant: You're very welcome. Have a wonderful day!

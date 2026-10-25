@@ -1,0 +1,25 @@
+user: Would you help me find something interesting to do?
+assistant: Would you have a preference for the event type?
+user: I like Concert a lot.
+assistant: Would there be any particular city I should search?
+user: I would like something around Phoenix.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events you might like. Bad Suns is popular taking place at The Van Buren on March 2nd at 4:30 pm.
+user: Where would the venue be located?
+assistant: The venue is at 401 West Van Buren Street.
+user: That will sound great.
+assistant: Would you like to buy tickets for this event?
+user: Maybe later because I need to remember to request a payment for $175 with the transaction being with Emma.
+assistant: Please confirm details for a public transaction with Emma for $175.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was a success.
+user: I would like to purchase four tickets to the event I found.
+assistant: Please confirm details to book 4 tickets reserved for the Bad Suns March 2nd in Phoenix.
+user: Yes, that will work for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time there.
+user: Thanks so much for the help.
+assistant: Would I be able to help you with anything else today?
+user: No thanks so much for the help.
+assistant: Have a nice day.

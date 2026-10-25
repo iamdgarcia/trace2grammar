@@ -1,0 +1,9 @@
+user: I need a round flight plane ticket.
+assistant: What day are you returning?
+user: On March 9th.
+assistant: What city are you leaving from? Where are you going? On what date?
+user: I am traveling from SF to ATL on the 6th of March for 2 people.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 options including American Airlines. The flight departs at 4:55 am and it returns at 3:45 pm. The ticket price is $379.
+user: Thanks, that is everything.
+assistant: Have a nice day.

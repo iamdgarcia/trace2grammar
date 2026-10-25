@@ -1,0 +1,11 @@
+user: Can you help me in scheduling a visit to a property?
+assistant: Which property are you talking about?
+user: I would like to visit the property called Brookside Oaks.
+assistant: Can you tell me the date of your visit?
+user: I would like to visit this Saturday.
+assistant: Please confirm: You want me to schedule a visit to Brookside Oaks on March 2nd.
+user: Yes, That sounds great.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled the visit.
+user: Thank you! That will be all!
+assistant: I am glad I could help. Have a nice day.

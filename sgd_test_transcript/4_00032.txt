@@ -1,0 +1,20 @@
+user: I need a place to eat.
+assistant: Where should I search? What type of cuisine do you like?
+user: Find me a Neapolitan restaurant in Cupertino.
+tool(FindRestaurants): ok n_results=1
+assistant: I found you 1 restaurant. How about Doppio Zero? It is a nice restaurant located in Cupertino.
+user: Can you get me the address and phone number?
+assistant: The address is 10088 North Wolfe Road #120. The phone number is 408-863-0308.
+user: Yes, that's good.
+assistant: Would you like a reservation?
+user: Yes, please. Reserve a table for four people.
+assistant: What time should I make the reservation for?
+user: Make it for morning 11:15 for 3 people.
+assistant: Please confirm the following: you want a reservation for March 1st at Doppio Zero in Cupertino. You want to book a table for 3 for 11:15 am.
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, but I was unable to make your reservation at Doppio Zero. Should I attempt to make a reservation for 3 for March 1st at 11 am instead?
+user: No, that's alright.
+assistant: Is there anything else I can help you with?
+user: No. Thank you very much.
+assistant: You're welcome. Have a good day.

@@ -1,0 +1,33 @@
+user: I'd like to work on my look some. Can you help me find a salon?
+assistant: For what city?
+user: I want a Salon in the SFO area please.
+tool(FindProvider): ok n_results=10
+assistant: There is 1512 Barber Shop in San Francisco. It is a nice salon located there.
+user: Not sure that's what I'm looking for. Trying to another one. Specifically a unisex salon.
+tool(FindProvider): ok n_results=10
+assistant: How about 20th Salon and Barber in San Francisco?
+user: That's more like it. I think that will do fine. Now, find me showing for movies at AMC Kabuki 8.
+tool(FindMovies): ok n_results=7
+assistant: There are 7 movies that I have found. There is Ad Astra, Brittany Runs a Marathon, and Hustlers. Are any of these to your liking?
+user: I don't think so. Try some more movies please.
+assistant: What about IT Chapter Two, Official Secrets, or Once Upon a Time in Hollywood?
+user: I think I would be interested in viewing Official Secrets. Find a regular showing for me for this Sunday.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 movie sh owing that matches your time. It is at 4 pm in AMC Kabuki 8.
+user: What type of movie is that anyway? And what is the address of AMC Kabuki 8?
+assistant: Official Secrets is a Mystery movie. The address of the theatre is 1881 Post Street.
+user: A mystery movie? That sounds good to me. I want you to also book an appointment at the 20th Salon and Barber for me.
+assistant: I can help with that. What time do you want to attend this appointment?
+user: Make the appointment for 12 o'clock in the afternoon if you please.
+assistant: Making a salon appointment for you at 20Th Salon and Barber. The time for the appointment is 12 pm on March 3rd.
+user: That's right except the time. I want the appointment to be at 4:30 in the evening.
+assistant: You want an appointment at 20th Salon and Barber at 4:30 pm? Is that correct?
+user: Sounds correct to me.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed your salon appointment for 4:30 PM.
+user: What number can they be reached at?
+assistant: The phone number to the salon is 415-824-1335.
+user: Thank you for your assistance with that appointment.
+assistant: Anytime. Can I help you with anything else before you go?
+user: No that's all for now. Thank you very much.
+assistant: I hope you enjoy the rest of your day.

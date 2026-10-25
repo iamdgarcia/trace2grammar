@@ -1,0 +1,29 @@
+user: I am interested in find a rental car for a trip. Please search for a rental car,
+assistant: When do you need this rental car and where will you be picking up this car?
+user: I will be picking up the car in London on March 4th at 2 pm.
+assistant: How long will you need the car?
+user: I will be returning it on the 7th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found 10 cars for you. One of them is a sedan Audi A8 and is available at Heathrow International Airport.
+user: What is the daily cost?
+assistant: It will cost you $28.00 per day.
+user: That sounds good. I also would like to find a house for one person that has a 4.5 rating and also has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I have found one house for you with a 4.5 5 rating located at 1 Ham Yard.
+user: What are my other choices?
+assistant: There is another one with a 4.5 rating at 1 Seething Lane.
+user: Are there other options?
+assistant: There is another with a 4.5 rating at 1 Suffolk Place.
+user: That one sounds perfect. Will you now reserve the rental car you found earlier?
+assistant: Would you like insurance added?
+user: No, I don't need any insurance.
+assistant: Please confirm you wish to pick up your Sedan at Heathrow International Airport on March 4th at 2 pm. you will be returning the car on March 7th and you have added no insurance.
+user: I changed my mind. I would like to add the insurance.
+assistant: Please confirm you on picking up the car on March 4th and have added insurance.
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved.
+user: Thank you for your assistance!
+assistant: Do you need help with anything else?
+user: No, that is all at the moment.
+assistant: Enjoy your trip!

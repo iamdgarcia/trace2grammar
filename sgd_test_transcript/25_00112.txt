@@ -1,0 +1,32 @@
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set for a Wake up at 8 am.
+user: okay, good. Thanks.
+assistant: Did you want to add another?
+user: Not just now. I'd like to find a Pizza restaurant in SF. I'd prefer one with outdoor seating.
+tool(FindRestaurants): ok n_results=10
+assistant: How about 54 Mint Ristorante Italiano in San Francisco?
+user: Sounds good. I'll want to rent a care there for Wednesday next week.
+assistant: What kind of care and where and what time do you want to pick it up?
+user: I'd like an SUV that I can pick up at 2:30 in the afternoon at Norman Y. Mineta Airport.
+assistant: Would you like to add insurance?
+user: Yes, I would.
+assistant: When did you want to return it?
+user: On March 10th.
+assistant: To confirm: You would like to pick up an SUV at Norman Y. Mineta Airport at 2:30 pm on March 6th and return it March 10th. You would like to include insurance.
+user: Yes that's right. What kind of SUV is it?
+tool(ReserveCar): ok n_results=1
+assistant: A GMC Terrain.
+user: Sounds great! Can you share the location?
+assistant: Did you want to share Norman Y. Mineta Airport? Who should I share it with?
+user: No, share 16 Mint Plaza with Jerry.
+assistant: To confirm: You would like to share the location 16 Mint Plaza with Jerry.
+user: On second thought, share it with Douglas.
+assistant: So that's sharing 16 Mint Plaza with Douglas.
+user: Yes that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you so much.
+assistant: Is there anything else you need?
+user: No thanks, that's all for now.
+assistant: Have a good day.

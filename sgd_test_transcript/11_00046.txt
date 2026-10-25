@@ -1,0 +1,20 @@
+user: I would like to rent a house.
+assistant: Which city do you prefer?
+user: I will be in SD.
+tool(SearchHouse): ok n_results=10
+assistant: There is a 4.6 rated hotel at 1003 Coast Boulevard, La Jolla, California 92037, United States.
+user: Can you give me the number.
+assistant: The number is +1 858-224-7600.
+user: That seems good.
+assistant: Would you like a booking?
+user: Yes, for one person.
+assistant: Which day will you check out?
+user: On the 11th of March.
+assistant: And when will you check in?
+user: On the 4th of March.
+assistant: Confirming the reservation for 1 person in San Diego from March 4th until March 11th.
+user: Perfect, what is the cost and do they have laundry services?
+tool(BookHouse): ok n_results=1
+assistant: The reservation is confirmed. The total price is $1,470 and it does offer laundry services.
+user: Oh good, thanks.
+assistant: You are welcome.

@@ -1,0 +1,28 @@
+user: I need a beauty treatment. Can you locate a nice parlor?
+assistant: Where would you like your treatment?
+user: Please make sure the parlor is for men and women. Somewhere in San Mateo would be nice.
+tool(FindProvider): ok n_results=10
+assistant: My first recommendation is a salon called Elite Hair Design. They are located in San Mateo.
+user: I like the name. That will work.
+assistant: I can schedule a time there for you if you like?
+user: Not yet but thanks.
+assistant: Do you have any other requests?
+user: Please get the weather prediction there on the 14th of March.
+tool(GetWeather): ok n_results=1
+assistant: The prediction states an average 87 degree Fahrenheit reading. There is a 18 percent possibility of a cloudburst.
+user: How harsh will the breezes be?
+assistant: The breeze should be light. The prediction is 1 mile per hour.
+user: Hope I don't get too sweaty.How much water vapor is expected to be present in the air?
+assistant: The water vapor level expected in the air is 27 percent.
+user: I see. I do want you to reserve a spot for me at the beauty parlor we were just discussing. Please try 4:30 pm.
+assistant: I will attempt to reserve a spot for you at the Elite Hair Design salon on March 14th at 4:30 pm with your approval.
+user: Please try for me.
+tool(BookAppointment): ok n_results=0
+assistant: I was not able to secure a spot at your requested time. Would you like help with anything else?
+user: I really want and need to set an appointment at the parlor. Try for five in the evening please.
+assistant: I will attempt to secure a spot at Elite Hair Design on March 14th at 5 pm if you approve.
+user: You have my approval.
+tool(BookAppointment): ok n_results=1
+assistant: I failed to get the appointment set. Is there something else I can help with.
+user: I am a little frustrated. Right now I don't need any help.
+assistant: Hope you feel better. Bye.

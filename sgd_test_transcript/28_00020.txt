@@ -1,0 +1,27 @@
+user: Can you help me find a movie?
+tool(FindMovies): ok n_results=10
+assistant: I'd be happy to. Have you seen Saaho? It is rated 10 out of 100.
+user: What kind of movie is it?
+assistant: It's considered an action movie.
+user: Who directed it and who stars in it?
+assistant: It was directed by Sujeeth and starts Prabhas.
+user: That works for me. Can you find me a restaurant near the movie theater?
+assistant: Where would you like me to search?
+user: Please find a pricey restaurant in Danville.
+assistant: What type of cuisine are you hungry for?
+user: I'd like something that specializes in burgers.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant that meets your criteria. Would you like to visit Forbes Mill Steakhouse in Danville?
+user: Do they offer vegetarian meals?
+assistant: No, they do not have vegetarian options.
+user: What is the address of the restaurant?
+assistant: They are located at 200 Sycamore Valley Rd W.
+user: Okay, that works. Can you reserve me a table on March 11th?
+assistant: I'd be happy to. What time works best for you?
+user: I'd like to arrive at 11:15 am.
+assistant: You'd like a table for 2 at Forbes Mill Steakhouse in Danville on March 11th at 11:15 am. Is this correct?
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved.
+user: Great. That will be everything for now. Thank you.
+assistant: You're welcome. Have an wonderful day.

@@ -1,0 +1,24 @@
+user: Can you show me attractions top visit in SF? I prefer a Museum.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. One Museum you should check out is Cable Car Museum.
+user: Great, are there any other attractions you can think of?
+assistant: You could also check out the museum California Academy of Sciences.
+user: Is it child-friendly? Is the attraction free?
+assistant: No, it is not free but it is pretty nice to take your kids to.
+user: Great. I want to watch a movie around there. Any type is fine.
+tool(FindMovies): ok n_results=10
+assistant: I located 10 movies. Would you like to see Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Fiddler sounds good. Are there any good online movies featuring Alexandre Bourgeois?
+assistant: What genre of movies do you like?
+user: I prefer action movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like. How about Riot Girls?
+user: Riot Girls sounds great. I want to watch it now.
+assistant: Please confirm: play Riot Girls with subtitles in English.
+user: No I want the Spanish subtitles.
+assistant: Please confirm: play Riot Girls with Spanish subtitles.
+user: Yes, please.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: Thanks, that is all I need.
+assistant: Enjoy your day.

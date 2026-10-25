@@ -1,0 +1,22 @@
+user: I want to watch a movie at Century 25 Union Landing and XD. I like dramatic story movies.
+assistant: Where should I look?
+user: Look for movies in Union City.
+tool(FindMovies): ok n_results=1
+assistant: Do you want to watch Hustlers?
+user: Hustlers is perfect.
+assistant: Do you want to buy tickets?
+user: Yes, that is correct.
+assistant: When do you want to watch it?
+user: I want 1 ticket to a regular movie on Friday next week.
+assistant: At what time do you want to watch it?
+user: I want to watch it at quarter to 11 in the night.
+assistant: Please confirm: You want 1 regular ticket to Hustlers at 10:45 pm on March 8th at Union City.
+user: Yes, that is correct. What is the address of the cinema.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your ticket are booked. The cinema is located at 32100 Union Landing Boulevard.
+user: How much was the ticket?
+assistant: The ticket was $12.
+user: Thanks for your help.
+assistant: Do you need help with anything else?
+user: No, that is all.
+assistant: Have a good day.

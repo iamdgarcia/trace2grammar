@@ -1,0 +1,45 @@
+user: I'd like to find a therapist in Fremont.
+assistant: Did you need a Psychiatrist, Psychologist, or another type?
+user: I'd like to find a Family Therapist.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 therapists for you. One Family Counselor in Fremont is Center for Well Being.
+user: What is the address?
+assistant: It is 1301 Mowry Avenue.
+user: That works. Could you book an appointment for 5th of March at 1:30 pm?
+assistant: Please confirm you're booking an appointment with Center for Well Being on March 5th at 1:30 pm.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, your appointment was unsuccessful. Did you need help with anything else?
+user: Can you try another appointment for 9th of March?
+assistant: Please confirm you're booking an appointment with Center for Well Being on March 9th at 1:30 pm.
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you should receive an email confirmation soon.
+user: Thank you. I also need to request a payment for 13 bucks.
+assistant: What is the name of the contact person?
+user: The name is Jerry.
+assistant: Please confirm you're making a transaction for $13 with Jerry and it will be visible to the public.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been confirmed.
+user: Thank you! I'd also like to find a restaurant near there that day.
+assistant: What type of food did you want?
+user: I'm looking for Pasta. I'd love outdoor seating and I will need vegetarian options.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant for you. Campo Di Bocce Of Fremont is a nice restaurant in Fremont
+user: That sounds good. I'd like to book a reservation at half past 10 in the morning.
+assistant: Please confirm you're booking a table for 2 at Campo Di Bocce Of Fremont in Fremont on March 9th at 10:30 am.
+user: That is correct. What is its user rating?
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry, your reservation was unsuccessful. Did you need help with anything else?
+user: Could you try the reservation again for half past 11 in the morning?
+assistant: Please confirm you're booking a table for 2 at Campo Di Bocce Of Fremont in Fremont on March 9th at 11:30 am.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: What is its user rating?
+assistant: The restaurant has a rating of 4.3.
+user: Thank you for everything.
+assistant: Did you need help with anything else?
+user: No, but thanks again.
+assistant: Have a wonderful day.

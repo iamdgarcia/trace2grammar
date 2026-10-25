@@ -1,0 +1,38 @@
+user: Can you find me a salon in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: There is a nice salon in San Jose calle Atelier Salon Willow Glen.
+user: Can you tell me if it is unisex?
+assistant: Yes, it is a unisex salon!
+user: Are there any other salons?
+assistant: There is another nice salon in San Jose called Barba & Co. San Jose.
+user: Can you give me their contact number and tell me if it is unisex?
+assistant: There phone number is 669-258-9601 and it is a unisex salon.
+user: That one sounds good, can you book it for me for the 2nd of March at 15:45.
+assistant: Please confirm that you would like an appointment at the Barba & Co. San Jose on March 2nd at 3:45 pm.
+user: Perfect! Can you give me their address and tell me what their average rating is?
+tool(BookAppointment): ok n_results=1
+assistant: Yes, their address is 1775 Park Avenue and has a rating of 5.0 but I could not book the appointment. Would you like for me to book it at the Barba & Co. San Jose for March 2nd at 4 pm?
+user: Yes, that will be perfect!
+tool(BookAppointment): ok n_results=1
+assistant: Ok, I have confirmed your appointment!
+user: I would also like to find an economical restaurant for that same day. I am looking for outdoor seating and would like American food.
+tool(FindRestaurants): ok n_results=9
+assistant: There is a nice restaurant in San Jose called 71 Saint Peter.
+user: Are there any other restaurants you can recommend?
+assistant: There is also a nice one in San Jose called Bj's Restaurant & Brewhouse.
+user: Can you give me their user rating and tell me what their address is?
+assistant: Yes, their street address is 511 Coleman Avenue and they have a user rating of 3.9.
+user: That sounds good! I would like to book a reservation for a table for 6:45 in the evening.
+assistant: Please confirm you are booking a reservation for 2 people at Bj's Restaurant & Brewhouse in San Jose for March 2nd at 6:45 pm.
+user: That will be perfect!
+tool(ReserveRestaurant): ok n_results=1
+assistant: I apologize but I could not book the reservation! Would you like a reservation for 2 people at Bj's restaurant & brewhouse for March 2nd at 6:30 pm?
+user: That will be fine!
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made your reservation!
+user: Can you please give me their phone number?
+assistant: Yes, their phone number is 408-284-4260.
+user: Thank you for all your help!
+assistant: Is there anything else I can assist you with?
+user: No, that will be all thank you!
+assistant: Have a beautiful day!

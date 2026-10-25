@@ -1,0 +1,41 @@
+user: I'd like to make a payment for 139 dollars with Victoria and I'd like to make the transfer private.
+assistant: Did you wish to transfer the money from credit card or app balance?
+user: I'd like it from my in-app balance.
+assistant: Please confirm you're making a private transaction for $139 with Victoria from your app balance.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been confirmed and the receiver should get the money soon.
+user: Could you help me find a train now?
+assistant: On which date did you want to travel?
+user: I'd like tickets for 1st of this month.
+assistant: From which city did you want to leave from?
+user: I will need one seat from San Diego and any fare class will do.
+assistant: Which city were you going to?
+user: I'm going to Anaheim.
+tool(FindTrains): ok n_results=8
+assistant: I found 8 trains for you. One train leaves at 8:30 am and costs $54.
+user: What is the name of the arriving station?
+assistant: It is Anaheim Intermodal Center.
+user: Which station will the train leave from?
+assistant: It will leave from Santa Fe Depot.
+user: Were there any other trains available? I'm looking for Business tickets from Phoenix.
+tool(FindTrains): ok n_results=4
+assistant: There is a train leaving at 7 am for $172.
+user: That works for me.
+assistant: Did you need help with anything else?
+user: How will the weather be in Anaheim on the 8th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 86 degrees F with a 9 % chance of rain.
+user: What will the humidity be?
+assistant: It should be around 16 %.
+user: Sure, that sounds right. Could you get tickets for the train you found?
+assistant: Did you need travel insurance?
+user: I would like trip insurance.
+assistant: Please confirm you're booking a Business train from Phoenix to Anaheim on March 1st at 7 am for 1.
+user: That is correct. What are the departing and arriving stations?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your booking has been confirmed. The train will leave from Phoenix Union Station and arrive at Anaheim Intermodal Center.
+user: Thank you, you have helped a lot.
+assistant: Did you need help with anything else?
+user: No, but thanks again for your help.
+assistant: See you again soon.

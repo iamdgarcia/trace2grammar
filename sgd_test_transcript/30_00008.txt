@@ -1,0 +1,36 @@
+user: Search for something under the Play genre near Seattle.
+tool(FindEvents): ok n_results=10
+assistant: Beatleconcert is playing at 12th Avenue Arts on March 10th at 5 pm and is 1 of 10 results that I found.
+user: Where is this located at and how much is the price of a single ticket?
+assistant: They are located at 1620 12th Avenue and the price per ticket is $50.
+user: That is perfect. Now find me a house to stay in near there.
+tool(SearchHouse): ok n_results=10
+assistant: 1000 1st Avenue is a nice house with a 4.5 rating and is 1 of 10 results that I found.
+user: What else do you have?
+assistant: 1006 Spring Street has a 3.9 rating.
+user: What is their phone number?
+assistant: You can contact them at +1 206-583-6453.
+user: Is laundry service available there?
+assistant: Sorry, they do not offer any laundry services.
+user: That is perfect.
+assistant: Shall I book a reservation there?
+user: No, not right now.
+assistant: Do you need anymore help?
+user: I need to find a bus to get there.
+assistant: Are you departing March 2nd and what city are you departing?
+user: I am departing March 2nd out of Vancouver.
+tool(FindBus): ok n_results=10
+assistant: There is a bus leaving at 7:40 am with a ticket price of $27.
+user: What else can you find?
+assistant: There is a bus leaving at 9:10 am with a ticket price of $28.
+user: That is perfect. Purchase those event tickets from earlier.
+assistant: How many people are going?
+user: There are 4 people going.
+assistant: You want 4 tickets to see Beatleconcert on March 10th in Seattle, correct?
+user: No, change it to 2 tickets.
+assistant: You want 2 tickets to the March 10th show, correct?
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are booked. Have fun!
+user: Thanks for everything. I don't need any more help right now.
+assistant: Have a pleasant day.

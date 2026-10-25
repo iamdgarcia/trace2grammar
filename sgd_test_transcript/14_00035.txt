@@ -1,0 +1,19 @@
+user: I wanna find a movie to watch online featuring James Keane
+assistant: What kind of movies do you wanna see?
+user: I'm feeling the scientific fiction genre right now
+tool(FindMovies): ok n_results=1
+assistant: There's 1 you might like, have you ever seen Close Encounters of the Third Kind?
+user: Close Encounters of the Third Kind sounds good
+assistant: Should I play it for you
+user: Yes please do
+assistant: Confirming you want to watch Close Encounters of the Third Kind? with English subtitles
+user: Yes that's correct
+tool(PlayMovie): ok n_results=1
+assistant: It's playing for you
+user: Great, now what's the weather like
+assistant: Which city are you asking about?
+user: I wanna know what it's like in Saratoga
+tool(GetWeather): ok n_results=1
+assistant: It'll be 78 degrees fahrenheit with a really low 1 percent chance of rain
+user: Sure thing, that's it for now, bye!
+assistant: See ya, bye!

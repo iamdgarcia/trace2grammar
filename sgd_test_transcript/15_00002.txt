@@ -1,0 +1,19 @@
+user: Can you find me some songs?
+tool(LookupMusic): ok n_results=10
+assistant: Sure. I found 10 songs for you. How about Sick Love Red Hot Chili Peppers? It is from the album The Getaway.
+user: What genre is this? What year was it released?
+assistant: It is a Rock song from the year 2016.
+user: Yes, that's the one I want. Can you find me some good Julia Stiles movies online?
+assistant: What genre would you like?
+user: Play movies would be nice.
+tool(FindMovies): ok n_results=1
+assistant: How about the movie Hustlers?
+user: Hustlers would be great. Can you play that song that you just found? Play it on any device.
+assistant: I will play the song Sick Love in the Living room. Is this correct?
+user: No. Cast it on the speaker in kitchen.
+assistant: Confirming that you want me to play the song Sick Love in the Kitchen?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music!
+user: Thank you. That's all for now.
+assistant: You're welcome. Have a good day.

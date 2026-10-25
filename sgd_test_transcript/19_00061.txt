@@ -1,0 +1,15 @@
+user: I would like to rent a car at LAX on the 10th of March at 13:30.
+assistant: How long will you need it?
+user: I would like to return it on March 12th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice SUV Dacia Duster available at LAX International Airport.
+user: Great, can you check out buses to the airport?
+assistant: Where will you leave from? When do you prefer to leave?
+user: I am leaving from San Diego on the 9th of this month.
+tool(FindBus): ok n_results=10
+assistant: The bus costs $24 and departs at 9:10 am.
+user: Great, I need a one-way flight later today.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I found 3 flights. How about one on Alaska Airlines at 11:55 pm for $64.
+user: That sounds great thanks.
+assistant: Have a great day.

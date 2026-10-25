@@ -1,0 +1,33 @@
+user: Find a hair salon for me please.
+assistant: I would be happy to, which city would you like me to search?
+user: Find salons in San Fran please.
+tool(FindProvider): ok n_results=10
+assistant: ok, how about 1512 Barber Shop in San Francisco?
+user: Yes sounds good to me.
+assistant: great, shall I book an appointment for you now?
+user: Maybe later. I want to search for a therapist in San Fran please. Make sure they are a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: No problem. You may want to try out Adam E. Pollock they are a Psychologist located in San Francisco
+user: Great, let's book now.
+assistant: Ok, and what is your preferred appointment time and date you would like?
+user: How about the 9th of March in the afternoon 1:30.
+assistant: Alright, please confirm you would like to book with Adam E. Pollock at 1:30 pm on March 9th. Is that right?
+user: Yes, perfect. what is his address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: I was able to book your appointment you should receive an email confirmation shortly. His address is 100 Masonic Avenue and the number there is 415-346-2356.
+user: Great, thanks. I want to also book an appointment at the salon you found today as well.
+assistant: ok, no problem. what time are you available?
+user: I would like to schedule for 16:30 if possible.
+assistant: Please confirm you would like to schedule an appointment for 4:30 pm at the 1512 Barber Shop on March 9th. Is that right?
+user: yes, that is
+tool(BookAppointment): ok n_results=0
+assistant: Sorry that appointment slot is not available. Can I help you with a different time slot perhaps?
+user: yes, could you please try for 5:45 in the evening?
+assistant: Ok, please confirm an appointment for 5:45 pm on March 9th at 1512 Barber Shop.
+user: yes that is right. what is the address and average rating for this shop?
+tool(BookAppointment): ok n_results=1
+assistant: your appointment has been confirmed at 1532 20th street and the shop rating is 4.8.
+user: thank you for you help.
+assistant: Can I help with anything else
+user: No that was all
+assistant: great have a good night

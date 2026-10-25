@@ -1,0 +1,22 @@
+user: I want to find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: What about Options by Pitbull from the album Climate Change?
+user: Yes, that's correct. Are there any good movies online?
+assistant: What kind of movies are you looking for?
+user: I want to find Supernatural movies.
+tool(FindMovies): ok n_results=1
+assistant: IT Chapter Two is a supernatural.
+user: IT Chapter Two is a good movie.
+assistant: Do you want to play it now?
+user: No, not now.
+assistant: Anything else I can do for you?
+user: I want to play the song you found on the living room device.
+assistant: Please confirm: playing Options in the living room.
+user: Yes, that's right. Did it come out six years back? What's the genre?
+tool(PlayMedia): ok n_results=1
+assistant: The song is from 2017. It is a pop song.
+user: Thank you. Can you tell me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm called workout at 8 am.
+user: Okay thanks. That's all.
+assistant: Have a great day!

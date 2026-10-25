@@ -1,0 +1,31 @@
+user: My date and I want to get a new hairstyle for the prom. So, I would really appreciate your help locating a unisex hair salon in Menlo Park.
+tool(FindProvider): ok n_results=2
+assistant: I can help you with that. How about Great Clips in Menlo Park?
+user: Hmm. How many stars does it have?
+assistant: I show the salon has 3.7 stars.
+user: I see. Can you suggest another salon, one in San Fran?
+tool(FindProvider): ok n_results=10
+assistant: Would you be interested in the 1512 Barber Shop in San Francisco?
+user: Hmm, keep looking, please.
+assistant: Another hair salon in San Francisco is the 20th Salon And Barber.
+user: What's the star rating and what address do you have for that salon?
+assistant: The salon has 4.5 stars and the address is 2737 20th Street.
+user: Well, that seems like a winner.
+assistant: Would you like to make an appointment at that salon?
+user: Not right now. Can you tell me what the weather will be like there on the 3rd?
+tool(GetWeather): ok n_results=1
+assistant: I'm showing there will be a 27 percent possibility of rain with a temperature of 83 degrees Fahrenheit on average throughout the day.
+user: That's good. Let's go ahead and set up an appointment for that day at the hair salon you suggested.
+assistant: All right. What appointment time do you want?
+user: An appointment for a quarter to 6 in the evening would be great.
+assistant: Got it. If you like, I can confirm a March 3rd appointment for you at 5:45 pm with a hair stylist at the 20th Salon And Barber.
+user: Good deal. Please confirm that.
+tool(BookAppointment): ok n_results=1
+assistant: Oh, apologies. That appointment time could not be set for you at the 20th Salon And Barber. Can you make an appointment for March 3rd at 5:30 pm?
+user: I can do that.
+tool(BookAppointment): ok n_results=1
+assistant: Your hair appointment is now confirmed.
+user: Very cool. Many thanks.
+assistant: Do you need more information?
+user: Nope, that'll do it for now. Thanks again.
+assistant: Sure thing. Enjoy the rest of your day.

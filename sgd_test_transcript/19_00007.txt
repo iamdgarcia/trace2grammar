@@ -1,0 +1,25 @@
+user: Some friends will be in town soon and I'd really like to find a cool place with outdoor seating where we can meet for dinner.
+assistant: In what area are you looking to dine? And do you have a cuisine preference?
+user: Oh, I need a restaurant in San Francisco and Korean Barbeque would be nice.
+tool(FindRestaurants): ok n_results=3
+assistant: There is a great restaurant in San Francisco that you might like; it's called Stone Korean Kitchen.
+user: How many stars does it have? And is it a pricey place?
+assistant: They have 3.8 stars and the price range is considered moderate
+user: Perfect. That sounds wonderful!
+assistant: Do you want to make a reservation for this restaurant now?
+user: Yes please. I'd like to book a table for three at 1:30 in the afternoon on the 12th of this month.
+assistant: So you would like me to make a reservation for 3 at Stone Korean Kitchen in San Francisco, for 1:30 pm on March 12th. Do I have this right?
+user: Ye. That's it. Can you also give me their exact location as well as a contact number for the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking has been confirmed. The restaurant is located at 4 Embarcadero Center and their number is 415-839-4070
+user: I also need to reserve a taxi to get to the restaurant
+assistant: Are you looking for a specific type of taxi, like Pool, Luxury, or some other option?
+user: Oh, I definitely want a Luxurious ride.
+assistant: Okay, so you would like a Luxury taxi for 3 and the drop off destination is 4 Embarcadero Center. Correct?
+user: Yes, that's what I want
+tool(GetRide): ok n_results=1
+assistant: Your taxi has been ordered and your driver is on their way
+user: Great. Thank you!
+assistant: Was there anything further?
+user: Nope. You've helped me with everything I needed. Thanks!
+assistant: Have a great time!

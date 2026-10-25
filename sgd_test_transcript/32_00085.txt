@@ -1,0 +1,38 @@
+user: Help me look for a home.
+assistant: What area are you interested in? What's the number of bed rooms that you want?
+user: I want a place in Alameda with four bed rooms.
+assistant: And is this to rent or buy?
+user: I want to rent it.
+assistant: And what's the number of baths you want?
+user: I'd like three baths.
+tool(FindHomeByArea): ok n_results=4
+assistant: There's a place you might like at 1901 Shoreline Apartments at 1901 Shore Line Drive. It is $4,850.
+user: I like the sound of that.
+assistant: Would you like to schedule a visit?
+user: Yes, please schedule a visit for this Saturday?
+assistant: A visit will be scheduled to 1901 Shoreline Apartments for March 2nd, is this right?
+user: Yes, that's right. And is there a laundry machine in the place?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled there visit. And, sadly, there is no laundry machine in the property.
+user: Is there a garage?
+assistant: There is no garage.
+user: Okay, thanks. And I want to share a location.
+assistant: Who will you be sharing with?
+user: I want Bryan to get the location.
+assistant: Okay, Bryan will be given the location 1901 Shore Line Drive, is that right?
+user: Actually, share it with Juan.
+assistant: Okay, Juan will be given the location 1901 Shore Line Drive, is that right?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for the help. Now I need a cab to go there.
+assistant: Is there a type of cab you prefer? And how many people will be travelling?
+user: I just need a pool cab for one.
+assistant: I'll get you a pool cab for 1 to 1901 Shore Line Drive. Is that correct?
+user: Yes, that's correct.
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and will be here shortly.
+user: How many minutes until arrival? And how much is it?
+assistant: It will arrive in 3 minutes. It is $10.93.
+user: Thanks so much. I don't need anything else.
+assistant: Have a great day.

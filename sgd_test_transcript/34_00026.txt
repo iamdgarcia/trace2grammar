@@ -1,0 +1,32 @@
+user: I need your assistance to get a hotel.
+assistant: which city are you interested in?
+user: in Rio please.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 star called Atlantico Copacabana Hotel.
+user: Anything else? I want 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 4 star called Best Western Plus Copacabana Design hotel.
+user: What else can you find?
+assistant: There is a 3 star called Clh Suites Copacabana Domingos Ferreira.
+user: What is there address and is there smoking permitted?
+assistant: Yes smoking is indeed allowed and they are located at Rua Domingos Ferreira, 71 - Copacabana.
+user: I like the sound of that.
+assistant: Do you want to book it?
+user: not right now.
+assistant: Can I assist you with anything else?
+user: Could you find me an Amusement park?
+tool(FindAttractions): ok n_results=2
+assistant: there is a theme park called Play City.
+user: is it free entry and do you have their contact number?
+assistant: no it is not free but you can contact them on 21 2753-9489
+user: brilliant, now can you reserve that hotel for 3 nights starting from March 10th.
+assistant: To confirm then that is 1 room for 3 days from March 10th in Clh Suites Copacabana Domingos Ferreira, in Rio de Janeiro.
+user: no actually I want to check in on the 9th of this month.
+assistant: To confirm then you are checking in on March 9th to Clh Suites Copacabana Domingos Ferreira,.
+user: I will now be staying for 1 day.
+assistant: To confirm then you will be staying 1 night in Rio de Janeiro.
+user: yes that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: you hotel is now booked.
+user: that is everything, thank you so much for your help.
+assistant: goodbye, I hope you have a lovely day.

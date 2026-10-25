@@ -1,0 +1,32 @@
+user: I need to find a bus.
+assistant: Where are you heading and when do you want to leave?
+user: I want to go to Las Vegas on the 13th of March.
+assistant: Where would you be leaving from?
+user: From Long Beach, CA.
+tool(FindBus): ok n_results=4
+assistant: There is a bus leaving at 9:10 am and costs $38.
+user: Is it one-stop?
+assistant: It is a direct bus trip.
+user: That would be great.
+assistant: You would like tickets?
+user: Not now. What fun places can I visit when I get there?
+tool(FindAttractions): ok n_results=10
+assistant: There is a museum called Discovery Children's Museum.
+user: What is the number for there and is there an entry fee?
+assistant: There is no entry fee and the number is 702-382-5437.
+user: Great. I want you to buy the tickets for me.
+assistant: How many tickets?
+user: I need 3 tickets.
+assistant: You would like 3 tickets on a bus from Long Beach to Las VEgas leaving on march 13th at 9:10 am, with no extra luggage?
+user: Great. What station would it be leaving and which one would it be arriving at?
+tool(BuyBusTicket): ok n_results=1
+assistant: It leaves Downtown Station and arrives at Union plaza. The ticket has been confirmed.
+user: I would like a hotel to stay in when I get there.
+tool(SearchHotel): ok n_results=7
+assistant: There are 7 suitable hotels. Best Western plus Las Vegas West is a 3 star hotel.
+user: That would be great.
+assistant: Would you like to reserve a room at the hotel?
+user: Not right now
+assistant: Is there anything else you need?
+user: No, thanks a lot though.
+assistant: Enjoy your day.

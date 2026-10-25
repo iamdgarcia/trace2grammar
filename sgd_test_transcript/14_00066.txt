@@ -1,0 +1,17 @@
+user: I would like to see a movie directed by Sameh Zoabi.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to see Tel Aviv on Fire, which has an average rating of 92 out of 100.
+user: Ok. I want to listen to a pop song.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 available. Would you like to listen to Acapella by Karmin from the album Pulses?
+user: Yes, I want to hear that one.
+assistant: You would like to hear the song?
+user: That would be ok.
+assistant: You would like to listen to Acapella in the living room?
+user: Yes, that would be great.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy the music.
+user: Was it first shown six years back?
+assistant: It is from 2013.
+user: Thanks. That would be all.
+assistant: Enjoy your day.

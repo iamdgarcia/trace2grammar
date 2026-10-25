@@ -1,0 +1,20 @@
+user: Hey, I feel like listening to some tunes right now. Can you play me something by Carrie Underwood? Pop music is my jam.
+tool(LookupMusic): ok n_results=2
+assistant: What about the song Southbound from the album Cry Pretty? It's one of the Carrie Underwood classics.
+user: Yes, I love it. Any good movies available today?
+assistant: What kind do you usually like to watch?
+user: I really like thriller ones.
+tool(FindMovies): ok n_results=4
+assistant: I found 4 you may enjoy. Madeline's Madeline, Rojo and The Art of Self-Defense are a few of the options.
+user: Anything else? I love the ones with Katie Johnson.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 with him. It's called The Ladykillers, do you want to watch it?
+user: The Ladykillers does sound awesome. Can you play me the song you found, by the way? Whatever device is fine.
+assistant: So the song Southbound on the living room device?
+user: Yes, that's it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: Thanks a lot.
+assistant: Can I help you some more?
+user: No, thanks. That's it.
+assistant: Have a great day!

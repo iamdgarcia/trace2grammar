@@ -1,0 +1,9 @@
+user: Find for me please a round trip flight.I want to fly with American Airlines to Seattle.
+assistant: Tell me the return date and from which city you want to depart.
+user: From Vegas will be the return on 14th of this month.
+assistant: On what date you want to start your travel?
+user: On March 4th will be the start.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: What do you think about American Airlines because I found 1 option for you.Is a connecting flight at 7:35 am and return at 4:15 pm.Cost per ticket is $343.
+user: Sounds very good.Thank you. That's what I wanted for the moment.
+assistant: Have a great day!

@@ -1,0 +1,18 @@
+user: I would like to find a unisex salon in Fremont.
+tool(FindProvider): ok n_results=8
+assistant: Alex'S Classic Barber Shop is a salon on Fremont that meets your criteria.
+user: Yes, that sounds good.
+assistant: Would you like to book an appointment there?
+user: Yes, I would like to book an appointment.
+assistant: What day would you like to make the appointment for?
+user: The best day for me to go to the salon is next Friday.
+assistant: What time would you like the appointment to be?
+user: I would like to make the appointment for 1:30 in the afternoon.
+assistant: You would like to make an appointment for Alex'S Classic Barber Shop at 1:30 pm on March 8th, is that correct?
+user: No, I would like to go to the salon on the 11th of March.
+assistant: You would like to make an appointment at Alex'S Classic Barber Shop on March 11th, is that correct?
+user: Yes, that's right. What is the contact number for the salon? What is the salon's average rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked. The contact number for the barber shop is 510-623-1635. The average rating for the salon is 4.7.
+user: That sounds good, thank you very much, that's all I need for now.
+assistant: Have a pleasant day!

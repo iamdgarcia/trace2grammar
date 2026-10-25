@@ -1,0 +1,13 @@
+user: Hello! Can you help me find a one way flight?
+assistant: I'd be happy to. Where will you be departing from and where are you going?
+user: I'm looking for a flight from Paris to Los Angeles.
+assistant: When will you be going?
+user: I'd like to leave on the 12th.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights that may work for you. If you like Air France, there is a flight leaving at 7:35 am for $344. There is one connection.
+user: What type of seat is it? Is that the cost for a Premium Economy ticket?
+assistant: No, it is for a standard Economy seat.
+user: Was that for 2 tickets?
+assistant: No, that was the price for 1 ticket.
+user: Okay, thank you for the help.
+assistant: You're welcome. Have a wonderful day.

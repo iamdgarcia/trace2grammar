@@ -1,0 +1,17 @@
+user: Hello, I am hoping you can help me find a hotel.
+assistant: Yes, I can certainly help you with that. What city are you looking to stay in?
+user: I am hoping to find hotels in Sydney, Australia.
+tool(SearchHotel): ok n_results=10
+assistant: I have found a 3 star hotel in Sydney that is called the 1831 Boutique Hotel. Would this be of interest to you?
+user: Sounds good to me. How is the weather there for the 13th of March?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for that day is 101 degrees Fahrenheit. There is a 5 percent chance of rain.
+user: Okay, thank you. I would like to reserve the hotel you recommended. I will be staying for 7 nights and I am hoping to check in the 1st.
+assistant: Please confirm the booking details: You will be staying for 7 nights in the 1831 Boutique Hotel in Sydney. Your check-in date is March 1st and it is for 1 room.
+user: Actually, I will need 3 rooms and the check-in date changed to March 2nd.
+assistant: Please confirm the changes: You are checking in on March 2nd and it will be for 3 rooms.
+user: Yes, that is correct. What is the address and phone number of the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked your rooms. Their address is 631-635 George Street and the phone number is +61 2 9265 8888.
+user: Thank you, that helps so much. That is all for now.
+assistant: Have a wonderful time.

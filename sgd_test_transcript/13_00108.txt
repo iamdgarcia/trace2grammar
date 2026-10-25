@@ -1,0 +1,16 @@
+user: I'd like to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies which you might like, out of which I'd recommend Angel Has Fallen which is rated at 39 out of 100.
+user: Perfect. Can you find me something nice to do there?
+assistant: Sure, but first please tell me in which city I should search as well as the type of event you'd like.
+user: Can you find me a Play in Seattle?
+tool(FindEvents): ok n_results=10
+assistant: There's 10 events on March 10th in Seattle, out of which I'd recommend Beatleconcert, which happens at 5 pm at 12th Avenue Arts.
+user: Sounds nice. Can you please tell me the price of a ticket?
+assistant: Tickets are $50 each.
+user: Can you please tell me the venue's address?
+assistant: Sure, the address is 1620 12th Avenue.
+user: OK, perfect.
+assistant: Can I help you with the tickets purchase?
+user: No, not at the moment. That will be all for now.
+assistant: OK. Have a nice day!

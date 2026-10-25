@@ -1,0 +1,19 @@
+user: Some of my friends are coming over and we would like to watch a movie. Will you search for a movie?
+tool(FindMovies): ok n_results=10
+assistant: I find the movie called Luce that has a rating of 92. Would you like to watch this movie?
+user: That one sounds good. Now will you search for some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: Well there are 10 songs I found that may interest you. Would you like to listen to Easy World from Alex Angel Sex Rock album?
+user: Hmm,, sounds interesting. What genre of music is this and was it released about eight years ago?
+assistant: No, it was released in 2018 and the genre is Rock.
+user: Okay, that is the one.
+assistant: Are you interested in listening to this song
+user: Yes, that would be great.
+assistant: Please confirm you would like to hear Easy World in the living room.
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy listening to your music!
+user: Thank you so much!
+assistant: May I assist you with anything else at the moment?
+user: No, not at this time. Thanks again!
+assistant: Enjoy your day!

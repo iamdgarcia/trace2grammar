@@ -1,0 +1,19 @@
+user: Find me a three star hotel in Washington D.C.
+tool(SearchHotel): ok n_results=10
+assistant: The Arc The. Hotel Washington D.C. is a 3 star hotel
+user: that is good
+assistant: should i reserve it?
+user: no, not now
+assistant: is there any thing else?
+user: hows the weather there?
+tool(GetWeather): ok n_results=1
+assistant: There is a small chance of 13 % rain and temperature is 75 degrees
+user: ok, book me one room at the hotel you found for five days with check-in later today
+assistant: Please confirm: Booking 1 room at the Arc The. Hotel Washington D.C. for 5 days with a check in on March 1st in Washington D.C.
+user: sure, thats good
+tool(ReserveHotel): ok n_results=1
+assistant: it is booked
+user: thanks a lot
+assistant: any thing else?
+user: no, thats all
+assistant: bye, have a great day!

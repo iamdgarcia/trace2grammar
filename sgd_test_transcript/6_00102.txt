@@ -1,0 +1,20 @@
+user: I'm looking for a unisex salon in Pleasant Hill.
+tool(FindProvider): ok n_results=3
+assistant: Cool Tops is a popular salon in Pleasant Hill.
+user: Are there any other salons?
+assistant: Great Clips is a salon located in Pleasant Hill.
+user: What's the phone number?
+assistant: The phone number is 925-681-2547.
+user: Sounds great.
+assistant: Do you want to make an appointment?
+user: Yes, I want to make an appointment, please.
+assistant: What date would you like the appointment on?
+user: I want the appointment for the 8th of March.
+assistant: What time would you look to book?
+user: I want an appointment in the evening 5:30.
+assistant: Please confirm: an appointment at Great Clips salon on March 8th at 5:30 pm.
+user: Sounds great. What is the address? What are they rated?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. The address is 790 Oak Grove Road Ste B. They're rated 3.3
+user: Thank you, that's all.
+assistant: Have a great day.

@@ -1,0 +1,38 @@
+user: Hi, could you help me find some child-friendly attractions please?
+assistant: Any preferred location?
+user: Something in Paris, France will be great.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like, how about a Place of Worship called American Church in Paris?
+user: Great! Could you get me a rental car there?
+assistant: What is your desired period of rental and what time would you like to pick it up?
+user: I will need the car later today at 13:30 for use till Monday next week.
+assistant: And will you be picking it up from Paris?
+user: Yes, I am.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a SUV Alfa Romeo Stelvio for pickup at Orly International Airport?
+user: Are there any alternatives?
+assistant: Would you like a Sedan Buick Regal Sportback for pickup at Charles de Gaulle International Airport instead>
+user: Sounds great to me.
+assistant: Would you like me to book it for you?
+user: Could you do so please?
+assistant: And would you require insurance?
+user: No, that is not necessary.
+assistant: Please confirm your booking of a Sedan Car from Charles de Gaulle International Airport from March 1st at 1:30 pm to March 4th. You do not have insurance.
+user: Sorry, could you get me insurance too?
+assistant: Please confirm your reservation dropping of at March 4th with insurance
+user: Yes, that sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Could you share the location too please?
+assistant: And which address would you like to share? Were you referring to Charles de Gaulle International Airport or American Church in Paris?
+user: I was referring to American Church in Paris. Thanks!
+assistant: And who are you sharing the location with?
+user: Please share it with Katherine please.
+assistant: Please confirm your location sharing of American Church in Paris with Katherine please.
+user: Sounds great to me.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for you help!
+assistant: No worries, how can I further assist you?
+user: No, that is all I need. Thanks!
+assistant: Have a nice day ahead.

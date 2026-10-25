@@ -1,0 +1,14 @@
+user: I need to watch movies online. Will you find movies featuring Katharine Hepburn?
+assistant: What kind of movies you like it most?
+user: Dramatic Story movies would be great.
+tool(FindMovies): ok n_results=1
+assistant: What about Stage Door?
+user: Ok Stage Door is great.
+assistant: WHether i need to play the movie?
+user: Yes, i want to play the movie. I need it with french subtitles.
+assistant: Please review the details and confirm it . Playing Stage door with subtitles in French.
+user: Ok Thats great. Play it.
+tool(PlayMovie): ok n_results=1
+assistant: Started Playing the movie.
+user: THanks a lot , that's all i need
+assistant: Have a wonderful day.

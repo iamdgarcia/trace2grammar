@@ -1,0 +1,30 @@
+user: Please search for a beauty parlor.
+assistant: Where do you want the parlor to be located?
+user: I would like the parlor to be in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: San Jose has a good parlor. It is known as the Atelier Salon Willow Glen.
+user: I like the suggestion. Please reserve a spot for me.
+assistant: Is there a time you prefer to visit the salon?
+user: Yes. Please try to get the reservation at 12 in the afternoon. Next Tuesday works best for me.
+assistant: I understand you are requesting me to book an appointment on March 5th at 12 pm at the Atelier Salon Willow Glen. Do I understand your request?
+user: The details you just gave me are correct. I also would like the location details.
+tool(BookAppointment): ok n_results=1
+assistant: This salon is located at 1047 Lincoln Highway suite 101. A stylist will be ready for you when you arrive.
+user: Have their customers given them a review score? I also need the contact number please.
+assistant: You can reach the salon at 408-293-3494. Their score is 4.3.
+user: Awesome. Please look for somewhere for me to dine that day.
+assistant: Do you have a type of food in mind?
+user: I was thinking about having a Southern meal.
+tool(FindRestaurants): ok n_results=10
+assistant: One diner that meets your needs is known as 71 Saint Peter. They can be found in San Jose.
+user: Do I have any other options?
+assistant: Another recommendation is Bazille. You can also find them in San Jose.
+user: I like the way that restaurant sounds. Please get a table saved for me there.
+assistant: When should I schedule your reservation?
+user: Half past 11 in the morning would be perfect.
+assistant: I will book a table for 2 at Bazille in San Jose on March 5th at 11:30 am if my understanding of your request is right.
+user: You understand exactly what I am requesting. Please provide a physical address and phone number if possible.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table has been saved in your name. I was able to find an address and phone number. The address is 2400 Forest Avenue. The contact number is 408-261-5787.
+user: Much gratitude for the excellent assistance. I'm going to take a rest.
+assistant: If you need anything else just ask. Until then.

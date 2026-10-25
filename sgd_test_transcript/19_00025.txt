@@ -1,0 +1,23 @@
+user: I'm looking for a rental car
+assistant: What are date and time for the pick up of the car?
+user: I'd like to pick it up on March 2nd at 12 o'clock in the afternoon
+assistant: Where do you need the car? How long will you need the car for?
+user: I'll need it until monday next week in NY
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available: Port Authority station has a nice SUV Alfa Romeo Stelvio
+user: That's good. Are there any buses going there?
+assistant: When would you like to leave?
+user: I'll leave on the 1st
+assistant: Where will you be leaving from?
+user: I'll be leaving from Philadelphia
+tool(FindBus): ok n_results=6
+assistant: There a bus departing at 9 am for $23
+user: Which station does it arrive to? is it a one-stop bus?
+assistant: It's a direct bus arriving at Penn Station
+user: That's perfect. Could you please help me finding one-way flights to get there?
+assistant: Will you leave on march 2nd or march 1st?
+user: I'd like to fly with Southwest Airlines in premium economy on the 1st
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There's a flight with Southwest Airlines taking off at 10:05 pm. The cost is $101
+user: That's all i needed, thanks for your help
+assistant: Have a good day

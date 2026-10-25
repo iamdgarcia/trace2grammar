@@ -1,0 +1,16 @@
+user: Hi! I'd like to find a bus.
+assistant: I'd be happy to help. When do you plan to depart and where will you be traveling to?
+user: I'd like to leave for Sacramento, CA later today.
+assistant: Where are you departing from?
+user: I will be coming from Fresno.
+tool(FindBus): ok n_results=6
+assistant: There are 6 options that might suit you. The earliest bus is leaving at 6:20 am and tickets cost $31.
+user: That works for me. I'll need 4 tickets.
+assistant: Let me make sure I have the details correct. You'd like 4 tickets for the bus leaving Fresno at 6:20 am on March 1st. The bus is bound for Sacramento and you have no extra luggage.
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been purchases.
+user: Perfect! Can you tell me which station is the destination?
+assistant: It will arrive at the 65th Light Rail Station.
+user: Great. Thank you for your assistance.
+assistant: You're welcome. Have a wonderful trip.

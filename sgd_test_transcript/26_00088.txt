@@ -1,0 +1,26 @@
+user: I would like to find a train leaving from San Diego.
+assistant: What date would you like to depart? What city is your destination?
+user: I would like to go to Los Angeles on the 7th.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains that match those criteria. There is one leaving at 6:10 am that would cost $56 in total.
+user: OK, sounds good, thanks.
+assistant: Would you like to book tickets?
+user: No, I'm not going to be booking tickets right now.
+assistant: Is there anything else I can help you with?
+user: Yes, I would like to find something interesting to do there.
+assistant: Do you have a preference for the type of events?
+user: I would like to watch a Stage show while we are there. Try the 11th of March.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events for you. Anything Goes will be playing at Upright Citizens Brigade Sunset on March 11th at 4 pm.
+user: OK, that sounds great, thanks.
+assistant: Would you like to buy tickets for the play?
+user: No, not at the moment. What other activities are there in the area? I would like to find something child-friendly without any entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that match those criteria. Angels Flight Railway is a Historical Landmark to visit.
+user: What is the phone number?
+assistant: The phone number is 213-626-1901.
+user: OK, thanks. I would also like to find a house to stay at in the city. It will be for 2 people, and I would like the rating to be 3.8 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house at 1020 South Figueroa Street with a rating of 3.8.
+user: The house sounds good. That's all I need for now, thank you.
+assistant: It's my pleasure to help you, have a good day.

@@ -1,0 +1,15 @@
+user: Would you help me search for a bus?
+assistant: Where would you be living from?
+user: I will be leaving Philly.
+assistant: When will you leave?
+user: I will leave March 2nd.
+assistant: Where will you be going?
+user: I would like to go to Washington.
+tool(FindBus): ok n_results=8
+assistant: I found 8 buses so what about the one leaving at 6:20 am? It is $25.
+user: That is good.
+assistant: Would you want to buy tickets for this bus?
+user: I don't want to buy that now.
+assistant: Would I be able to help you with anything else?
+user: No, thanks so much for your help.
+assistant: Have a nice day.

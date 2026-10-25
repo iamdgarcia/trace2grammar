@@ -1,0 +1,42 @@
+user: Find me a tourist attraction in New York City.
+tool(FindAttractions): ok n_results=10
+assistant: One tourist attraction I can recommend for a visit is the Balto Statue.
+user: How can I contact this tourist attraction?
+assistant: Contact the tourist attraction by calling 212-310-6600.
+user: Is this attraction a good place to bring along a child?
+assistant: Unfortunately this attraction is not really child friendly.
+user: That's unfortunate, can you find any other attractions I can see then?
+assistant: Another tourist attraction you can check out is Bethesda Terrace.
+user: That sounds great, can you find me a rental car to there, I need it till the 14th and will pick it up on March 9th.
+assistant: Would you be picking up the rental from New York?
+user: That is correct, I am also fine with whatever kind of car you can find.
+assistant: At what time will you pick up the rental car?
+user: The car should be ready at six in the evening.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I found 9 cars available, how about a SUV from JFK International Airport, an Alfa Romeo Stelvio?
+user: What will it cost to rent it per day?
+assistant: The car will cost $50.00 per day to rent.
+user: That sounds good, thanks for the find.
+assistant: Would you like to book the car for rental?
+user: Of course, please rent the vehicle for me.
+assistant: Are you going to add insurance to your rental?
+user: No, don't add insurance to this rental.
+assistant: You will pick up a SUV from JFK International Airport on March 9th at 6 pm, and will drop it off on March 14th is that correct?
+user: All correct, please make the reservation.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been successfully reserved.
+user: Can you also share the location with somebody?
+assistant: Would you like to share Bethesda Terrace or JFK International Airport, and to whom will you share the location?
+user: Share the location of Bethesda Terrace with Peter.
+assistant: Peter will receive the location of Bethesda Terrace, correct?
+user: My mistake, I meant share the location with Rose.
+assistant: Understood, Rose will receive the location of Bethesda Terrace.
+user: Oh wait, actually share the location of JFK International Airport.
+assistant: Rose will receive the JFK International Airport location, is that right?
+user: That is correct, thanks.
+tool(ShareLocation): ok n_results=1
+assistant: The location was successfully shared.
+user: Great, you been of much help for me today.
+assistant: Anything else I can help you with?
+user: Not really, you've been pretty helpful, thank you.
+assistant: Your welcome, have a nice day!

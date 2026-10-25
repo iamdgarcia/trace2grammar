@@ -1,0 +1,18 @@
+user: I need to find a hotel.
+assistant: What city would you like to look for hotels?
+user: I want to look for hotels in Kuala Lumpur please.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 5 star hotel called Alila Bangsar.
+user: That sounds great.
+assistant: Would you like to make a reservation at this hotel?
+user: Yes. I want to make a reservation please.
+assistant: When would you be arriving and how long are you staying for?
+user: I am staying four days and arriving on the 10th of March.
+assistant: So you want me to make a reservation for 4 days at Alila Bangsar for 1 room I Kuala Lumpur for March 10th?
+user: Yes I do. What is the smoking policy at the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: There is no smoking allowed on the property. Your reservation is all set.
+user: Thanks for all your help.
+assistant: Can I do anything else for you?
+user: No, I am all set. You have been very helpful.
+assistant: Goodbye, Have a great day.

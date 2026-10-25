@@ -1,0 +1,19 @@
+user: Can you find me a train ticket from Fresno, CA for the 14th of this month? I will need tickets for one seat.
+assistant: No problem. What city will you be traveling to?
+user: I want to get a Business class ticket headed to Los Angeles.
+tool(FindTrains): ok n_results=9
+assistant: Okay, there are 9 trains that could work for you. There is a train leaving at 7:20 am with a ticket price of $114 total. Sound good?
+user: No, that won't work for me. Can you find anything else? I'm headed from SD to Anaheim.
+tool(FindTrains): ok n_results=8
+assistant: How about the train departing at 8:30 am? The ticket will cost you $90 total.
+user: Okay, that sounds great.
+assistant: Would you like to book your ticket today?
+user: No not right now. Can you help me find a house to stay out there? I need a room for 4 people. Can you find something rated 4.4 or higher? I also need laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: Sure thing. There is a nice house located at 1160 West Ball Road that is rated at 4.4.
+user: Okay, that sounds great.
+assistant: Would you like to make a reservation?
+user: No, not right now.
+assistant: Is there anything else I can do for you?
+user: No thanks. That's all for now.
+assistant: My pleasure. Bye!

@@ -1,0 +1,26 @@
+user: Can you find me a song from the album High Expectations, I heard it was great, or a song that was released in '19.
+tool(LookupMusic): ok n_results=3
+assistant: There are 3 songs applicable to your preferences, would you be interested in Bad Behaviour by Mabel from the High Expectations album?
+user: What genre is Bad Behaviour classified under?
+assistant: Bad Behaviour is considered a pop song.
+user: That song sounds perfect, can you also find me a good movie to watch online?
+assistant: Any particular movie genre you enjoy watching?
+user: I tend to enjoy watching drama movies.
+tool(FindMovies): ok n_results=10
+assistant: Would you be interested in A Faithful Man, After The Wedding, or Blinded by the Light.
+user: I think A Faithful Man sounds good to watch, please play the song you found earlier for me.
+assistant: The song Bad Behaviour will now play in the Living Room.
+user: Actually cast the song on the speaker in kitchen.
+assistant: Understood, the song Bad Behaviour will now play in the Kitchen.
+user: That is correct, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: The song is now playing, please enjoy.
+user: What alarms do I have active at the moment.
+tool(GetAlarms): ok n_results=4
+assistant: You currently have an alarm at 9 am, titled Catch train.
+user: Good to know, thanks.
+assistant: Would you like to add another alarm at the moment?
+user: Not right now, I don't need a new alarm at the moment.
+assistant: Is there anything else I can help you with for today?
+user: I don't need any further help, thanks a ton for everything.
+assistant: Your welcome, enjoy your day.

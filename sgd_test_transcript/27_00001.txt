@@ -1,0 +1,28 @@
+user: I need to get a train for a work trip
+assistant: What is your departure and arrival cities?
+user: Can you check for trains from NY to chi-town
+assistant: What's your travel date?
+user: Can you look for the 9th of this month
+tool(FindTrains): ok n_results=6
+assistant: I have found 6 services including a 6 am departure for a total cost of $111
+user: Okay sounds good
+assistant: Do you want to book a seat?
+user: No not right now
+assistant: Is there anything else I can help with?
+user: Yeah I want to find something fun to do in chi-town
+assistant: Would you prefer music, theater or something else?
+user: Music is good, check out stuff on the 9th of this month
+tool(FindEvents): ok n_results=6
+assistant: I have found 6 events including conor maynard playing at the chop shop on March 9th at 6:30 pm
+user: How much are tickets, where is chop shop exactly?
+assistant: The venue is located at 2033 west north avenue, and tickets are $35
+user: Cool, any attractions nearby?
+tool(FindAttractions): ok n_results=10
+assistant: 360 chicago is a popular tourist attraction
+user: Awesome, can you find me a house to stay in while I am there, something 4.5 stars or higher. It's just for one person
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 options for you including a nice place at 1 west wacker drive. It's rated 4.5 stars.
+user: Okay thanks so much
+assistant: Would you like me to make you a reservation?
+user: No not right now
+assistant: okay, happy to help

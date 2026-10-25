@@ -1,0 +1,25 @@
+user: i have a plan to travel in order to attend a meeting. i need to find a rental car. will you find me a rental car?
+assistant: At which date you need the car and at what time you need to pick up the car?
+user: i need it from next Tuesday at three in the afternoon.
+assistant: From which place you wish to pickup the car? till which date you want to use the car?
+user: i need it till 10th of March and i am looking for cars in NYC.
+tool(GetCarsAvailable): ok n_results=10
+assistant: there are 10 cars available. There is a car available at JFK International Airport. It is a Sedan Buick Regal Sportback.
+user: ok it sounds good. What about the buses going over there?
+assistant: From which place are you leave from and at which date you are plan to leave?
+user: i am leaving from Washington and i plan to leave on 1st of March.
+tool(FindBus): ok n_results=7
+assistant: how about the bus depart at 6:20 am? it costs $40.
+user: ok that's great.
+assistant: Whether i need to buy tickets for this bus?
+user: i don't want to buy it now.
+assistant: Whether i need to do anything else?
+user: i need a one-way flight going over there. i don't have any preference on airline.
+assistant: whether you want to leave on March 5th ,or March 1st, or some other day?
+user: I need to start my travel on tomorrow.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: i found 4 flights as per your need. What about the American airlines? the onward flight takes off at 9:25 pm and it is a direct flight. the ticket costs $81.
+user: ok but not interested. find some other flight?
+assistant: what about the flight Delta Airlines? the onward flight takes off at 12:55 pm which is a direct flight. it costs $83.
+user: ok that sounds good to me. That is all i need.
+assistant: bye take care ,Have a wonderful day.

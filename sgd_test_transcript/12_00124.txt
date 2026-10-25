@@ -1,0 +1,25 @@
+user: I'm looking for a Concert on the 12th. Is there anything interesting?
+assistant: Which city would you like to search in?
+user: Philadelphia would work.
+tool(FindEvents): ok n_results=10
+assistant: Ayokay at The Foundry is playing March 12th at 7 pm.
+user: That's cool but are there any others?
+assistant: There is another at 5:30 pm on March 12th, also at the Foundry. It is Bars and Melody.
+user: Where is it at? And how much?
+assistant: It will cost $25, and is located at 29 East Allen Street 2nd Floor.
+user: That will work. I also need to request a payment from Victoria.
+assistant: What amount for the payment?
+user: This will be 84 bucks.
+assistant: Alright, just to confirm, you would like a transaction with Victoria of $84, is that correct?
+user: Yes, it is.
+tool(RequestPayment): ok n_results=1
+assistant: Your transaction request has been made
+user: Thank you. I'd like to buy 2 tickets to the event you found as well, please.
+assistant: Okay, just to confirm, you are booking 2 tickets for the March 12th show of Bars And Melody in Philadelphia, is that correct?
+user: Yes, that'll work.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Have a good time there.
+user: Thank you for the help.
+assistant: Is there anything else you're needing help with today?
+user: No, thank you.
+assistant: Have a nice day.

@@ -1,0 +1,32 @@
+user: I need to find a hotel.
+assistant: Which city would you like to search?
+user: I need one in Philly.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10. How about Aka Rittenhouse Square which is a 4 star?
+user: Sounds great thanks.
+assistant: Would you like to make a reservation?
+user: Not at this time thank you.
+assistant: Can I do anything more for you?
+user: I need a round trip flight there.
+assistant: Will you leave on March 8th? Where do you depart from?
+user: I will leave on Sunday this week in New York City.
+assistant: Which day will you return?
+user: I will return on March 11th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Would you like to fly with American Airlines which leavesT 11:20 am and returns at 1:20 pm and costs $101.
+user: When does the flight return? When does the outgoing flight arrive?
+assistant: THe onward flight arrives at 12:11 pm. The return flight will arrive at 2:11 pm.
+user: Sounds great, I would like to reserve the hotel as well.
+assistant: How long will you stay? Are you checking in on March 3rd?
+user: Sure that is good. I need to stay for five days.
+assistant: Youwant 1 room at Aka Rittenhouse Square for 5 days starting on March 3rd in Philadelphia, correct?
+user: Yes that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel is reserved.
+user: Can you find attractions?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10, one is Barnes Foundation which is a museum.
+user: What is the number? Is it child friendly?
+assistant: Yes, the number is 215-278-7000.
+user: Great thank you. THat's all I needed.
+assistant: Enjoy your trip!

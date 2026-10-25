@@ -1,0 +1,24 @@
+user: I want to look for a therapist. Can you find a Psychologist in Oakland?
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in Oakland, including Alameda Children's Specialized, a Psychologist.
+user: OK, that one sounds good.
+assistant: Would you like to book an appointment with the therapist?
+user: Yes, I want to book an appointment for a quarter to 1 in the afternoon on Saturday this week, if it is available.
+assistant: You want to book an appointment with Alameda Children's Specialized at 12:45 pm on March 2nd, is that correct?
+user: Yes, that's right. What is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: The phone number is 510-383-5100. I'm sorry, I was not able to book the appointment for that time. It looks like there is an opening at Alameda Children's Specialized at 1 pm March 2nd.
+user: Yes, that will be fine, thank you.
+tool(BookAppointment): ok n_results=1
+assistant: You appointment was successfully booked. You should get a confirmation email soon.
+user: What is the address?
+assistant: The address is 7200 Bancroft Ave # 125C.
+user: Thank you very much! I appreciate it. Can you recommend some movies to watch?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies for you. Chhichhore has an average rating of 60 out of 100.
+user: Who are the director and star of this movie?
+assistant: The movie stars Sushant Singh Rajput and is directed by Nitesh Tiwari.
+user: OK, sounds good.
+assistant: Is there anything else I can help with?
+user: No, that's all, thank you for your help.
+assistant: Happy to help.

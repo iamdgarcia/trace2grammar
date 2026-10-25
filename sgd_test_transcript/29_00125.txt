@@ -1,0 +1,32 @@
+user: Are there any interesting things to do in or around SD?
+assistant: What are your interests, Music or Theater maybe something else?
+user: Broadway is intriguing.
+tool(FindEvents): ok n_results=10
+assistant: In that case there is a show on March 9th, it starts at 4 pm at the Talent to aMuse Theatre Co. called About Time.
+user: Do they give an address? What do the tickets go for?
+assistant: Tickets are $40 and they are at 3919 Normal Street.
+user: I like it, find me a house near there please.
+tool(SearchHouse): ok n_results=10
+assistant: These 10 came up one is rated 4.6, pretty good, at 1003 Coast Boulevard, La Jolla, California 92037, United States.
+user: That one sounds really good.
+assistant: Should I book the house for you?
+user: No I am not ready for that yet.
+assistant: Will you be needing more assistance?
+user: Do any buses go there?
+assistant: Are you leaving on March 9th and where from.
+user: The 3rd is when I was thinking from LA.
+tool(FindBus): ok n_results=10
+assistant: There are at least 10 buses this one costs $22 and leaves at 6:50 am.
+user: That might be okay.
+assistant: Do you need the bus tickets now?
+user: No but be sure and get the tickets to the show right now.
+assistant: How many seats will your party need?
+user: I just want 1.
+assistant: Okay that's 1 ticket for About Time in San Diego on March 9th correct?
+user: Yes, that's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket was purchased you are set. Have fun!
+user: Appreciate it thanks.
+assistant: Is there something else?
+user: No you can go thank you.
+assistant: Have a good day then.

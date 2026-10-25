@@ -1,0 +1,13 @@
+user: I'm looking for a movie to watch, it must be have Hindi subtitles.
+assistant: Cool, just tell me the title and I'll do the rest.
+user: Title is Good Boys
+assistant: Confirm my my next move. You want me to play the movie Good Boys with Hindi subtitles.
+user: Wrong. The movie I want to watch is Toy Story 4 with French subs.
+assistant: Confirm again then. I'll play Toy Story 4 with French subs.
+user: Correct. Can you name me the actors?
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started. I can tell you that Flea acted in it.
+user: Great!
+assistant: Do you still need my services?
+user: No I don't
+assistant: Enjoy your movie.

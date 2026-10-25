@@ -1,0 +1,25 @@
+user: I need an event for something around NYC.
+assistant: Is there a date you'd like, such as one you're interested in? How many tickets?
+user: I need 3 tickets and heard Tom Foster is wonderful. I want something on the 11th of March.
+assistant: So, book tickets for Tom Foster, and 3 tickets on March 11th in New York?
+user: Yes, indeed. Where is the venue at?
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation booked successfully. The venue is 154 West 57th Street.
+user: Where is this taking place? How much is one ticket?
+assistant: It is at Weill Recital Hall and the ticket is to be $20.
+user: Thanks for that, any buses to there?
+assistant: Would you like to go on March 11th?
+user: I want to go on the 1st of March.
+assistant: Where is this from?
+user: I want to leave on Wednesday next week from Philly and I have no preference of direct bus or not.
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses matching your request, such as one departing at 9 AM with a price of $22.
+user: That sounds good. And I need bus tickets.
+assistant: So you want a ticket on the bus leaving from Philadelphia to New York? The bus is to leave on March 6th, at 9 AM, for 3 people. There is no extra baggage.
+user: Yes, that is perfect. What station it leaves from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Ticket now confirmed. It is to depart from 10th and Filbert.
+user: Thank you for that.
+assistant: Anything else to help with?
+user: No, thanks for that.
+assistant: Of course. Enjoy.

@@ -1,0 +1,42 @@
+user: I need assistance looking for new housing.
+assistant: Sure, what is the number of bathrooms you are looking for?
+user: I would like a place with three baths and a garage.
+assistant: Are you looking for a place to buy or that canbe rented and how many bedrooms do you need?
+user: I am looking to buy and need three bedrooms.
+assistant: What city would you like to search in?
+user: Can you look for something available in Mill Valley?
+tool(FindHomeByArea): ok n_results=1
+assistant: Yes, I found 1 property called Strawberry Shores Apartments located at 111 Seminary Drive. It is for sale for $3,400,000
+user: Does the property have laundry facilities?
+assistant: Yes, there is in-unit laundry available.
+user: I would like to check it out can you schedule an appointment for me to look at it?
+assistant: Yes, when would you like to see the property?
+user: The 12th of this month works good for me.
+assistant: Please confirm you would like to visit Strawberry Shores Apartments on March 12th.
+user: Actually, I would like to go there next Tuesday.
+assistant: Please verify you would like to schedule your visit to Strawberry Shores Apartments for March 5th.
+user: Yes, that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit has been successfully scheduled.
+user: Can you share that location with Andrew please?
+assistant: You would like to share 111 Seminary Drive with Andrew, correct?
+user: Yes, please share it.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Perfect! Can you arrange a cab ride to the property for me?
+assistant: How many people need a ride?
+user: I need a cab for 2 people please.
+assistant: Ok, what type of ride do you prefer?
+user: I would like an expensive ride.
+assistant: Please verify you would like a Luxury ride for 2 people to 111 Seminary Drive.
+user: Yes, that's perfect.
+tool(GetRide): ok n_results=1
+assistant: Your cab has been booked and is on the way.
+user: Great, what is the cab fare?
+assistant: The cost of the ride is $48.25.
+user: How long will it take the cab to reach me?
+assistant: Your cab should be there in 11 minutes.
+user: Thanks for your assistance.
+assistant: Is there anything further I can do for you right now?
+user: That's all. Thanks!
+assistant: Great, have a nice day.

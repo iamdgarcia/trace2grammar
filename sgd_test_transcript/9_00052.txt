@@ -1,0 +1,18 @@
+user: I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
+assistant: Yes, in which area you want to search for the movies?
+user: I want to search for the movies in Mountain View.
+tool(FindMovies): ok n_results=6
+assistant: Got 6 results and what about your choice among these movies like Ad Astra, Chhichhore or Hobbs and Shaw?
+user: I think I will go with Hobbs and Shaw. Do you buy the tickets for me?
+assistant: Yes, for which date?
+user: Make it on 2nd of this month.
+assistant: Okay, let me know the number of tickets required by you and also I want to know your convenient time to book the show.
+user: Book it for one person at ten in the night.
+assistant: Is there any special show you need to book?
+user: No, regular show is enough to me.
+assistant: Please confirm to book 1 ticket for a regular show of the Movie Hobbs and Shaw on March 2nd at 10 pm in Mountain View.
+user: That is perfect. please go ahead. What is the name of the theater that you have booked the show for me?
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, I was not able to book the tickets for this movie. How can I help you further?
+user: No, that is okay. Thanks.
+assistant: Have a great day.

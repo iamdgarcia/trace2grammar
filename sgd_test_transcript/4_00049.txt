@@ -1,0 +1,18 @@
+user: Can you help me find a restaurant to eat dinner?
+assistant: What city would you like to search in? Is there a particular cuisine you prefer?
+user: Yes, I am looking for Greek food in Los Altos.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant in Los Altos, Opa! Los Altos.
+user: That one is good.
+assistant: Would you like to reserve a table there?
+user: Yes, please reserve a table.
+assistant: What time would you like to make reservations for?
+user: Make the reservations for half past 7 in the evening.
+assistant: You would like to book a table for 2 at Opa! Los Altos in Los Altos at 7:30 pm on March 1st, is that correct?
+user: No, let me make that for March 7th at two pm.
+assistant: You would like the reservations for 2 pm on March 7th, is that correct?
+user: You got it, thank you.
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry, reservations were not available for that time. Is there anything else I can help you with?
+user: No, that's OK, thank you.
+assistant: Have a great day!

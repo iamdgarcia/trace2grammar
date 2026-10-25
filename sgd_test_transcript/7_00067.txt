@@ -1,0 +1,22 @@
+user: I would like to find a place to live with an in-unit laundry please!
+assistant: Do you know how many bedrooms you would like?
+user: Yes, I would like four bed rooms.
+assistant: In which area are you interested in and would you like to rent or buy?
+user: I would like to rent a property in Fremont.
+assistant: How many baths do you desire?
+user: I would like to have 3 baths.
+tool(FindHomeByArea): ok n_results=7
+assistant: Ok, I found 7 that are really nice, one of which is Americana Apartments located at 4445 Stevenson Boulevard and is going for $4,750.
+user: That sounds just great!
+assistant: Would you like to see the property?
+user: Yes, can I schedule a visit?
+assistant: Yes, when would you like to visit the property?
+user: I would like to see it on March 14th.
+assistant: Please confirm that you would like to schedule a visit on March 14th to the Americana Apartments.
+user: Yes, perfect and does it have a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit and yes it does have a garage.
+user: Thank you so much!
+assistant: Is there anything else I can assist you with?
+user: No, that will be all.
+assistant: Ok, by then, have a wonderful day!

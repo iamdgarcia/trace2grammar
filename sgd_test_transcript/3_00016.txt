@@ -1,0 +1,13 @@
+user: I need to attend a conference and i wish to go through a flight. Will you find a round trip flight?
+assistant: Where are you planning to go?
+user: I am planning to go to SFO.
+assistant: At which city you need to depart from?
+user: Please search from Atlanta, GA
+assistant: In which day do you wish to take the return flight?
+user: I wish to return on March 14th.
+assistant: At which date you wish to start your travel ?
+user: I want to start my travel on Day after tomorrow.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flights as per your need. What about American Airlines? the flight takes off at 3:45 Pm. It is a direct Flight and the returning flight takes off at 9:20 pm. and the ticket cost is $313.
+user: Ok that sounds good. that's all i need.
+assistant: Have a wonderful day

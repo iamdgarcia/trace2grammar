@@ -1,0 +1,36 @@
+user: I'm hoping to find some movies online to watch.
+assistant: What type of movies are you interested in?
+user: I want to find something with Stro in it and I like mysterious films.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 movie to recommend, which is called Luce.
+user: Yes, I'd like to see Luce.
+assistant: Shall I play that for you now?
+user: Let's hold off a bit.
+assistant: How else may I help you then?
+user: I want to find an attraction that is good for children in the Warsaw area and I'm hoping to find something with no admission price.
+tool(FindAttractions): ok n_results=10
+assistant: I recommend the Center for Contemporary Art Ujazdowski Castle, which is a museum.
+user: Is there anything else that's good?
+assistant: I also recommend the Copernicus Science Centre, which is a museum as well.
+user: I'd like the phone number please.
+assistant: Of course, it's 22 596 41 00.
+user: Thank you. I'd like to find some songs now, hopefully something from '19 in the pop genre. See if there's anything good by Madonna.
+tool(LookupMusic): ok n_results=2
+assistant: I have 2 songs to recommend. There is a track by Madonna called Batuka from the Madame X album.
+user: I like the Madame X album. What else do you suggest?
+tool(LookupMusic): ok n_results=1
+assistant: I have 1 song to suggest, which is the song God Control from the Madame X album by Madonna.
+user: That works, thank you.
+assistant: Do you want to hear that now?
+user: Yes, I do.
+assistant: Confirming playback of the song God Control on the living room speaker.
+user: Great, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks again. I think I'd like to start watching that movie now.
+assistant: Confirming playback of the film Luce with English subtitles.
+user: Thank you for that.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Thanks again, I appreciate all your help.
+assistant: You are very welcome.

@@ -1,0 +1,32 @@
+user: I need to make a payment.
+assistant: Who would you like to send it to and how much?
+user: I want to send forty five bucks to Isabella.
+assistant: You would like to use your app balance or your credit card?
+user: Use my master card.
+assistant: You would like to send $45 to Isabella from your credit card? Your transaction would be visible to the pubic.
+user: Go ahead and do it.
+tool(MakePayment): ok n_results=1
+assistant: The transaction has been successfully completed and Isabella should receive the money shortly.
+user: Thanks. Now I need train tickets.
+assistant: When would you need it for and which city would you be leaving from.
+user: I wantto leave phoenix, AZ on the 4th.
+assistant: Where are you heading?
+user: I need two economy premium tickets to LAX.
+tool(FindTrains): ok n_results=5
+assistant: There is a train leaving at 7 am and the cost is $214.
+user: That is too early. Is there a later train?
+assistant: There is one leaving at 7:20 am and it costs $190.
+user: Which station would it be leaving from?
+assistant: phoenix Union station.
+user: that could work. What would the weather be like in LAX next Tuesday?
+tool(GetWeather): ok n_results=1
+assistant: It should be 87 degrees Fahrenheit with a 12 percent chance of rain.
+user: Great. I want to get the tickets.
+assistant: Would you like travel insurance?
+user: Yes, I will take it.
+assistant: You would like 2 flexible tickets on a train leaving phoenix for Los Angeles on March 4th at 7:20 am, with trip insurance?
+user: That is correct. Which station would it be arriving at.
+tool(GetTrainTickets): ok n_results=1
+assistant: It arrives at Union Station. I have booked the tickets.
+user: Thanks a lot. That would be all.
+assistant: Enjoy your day.

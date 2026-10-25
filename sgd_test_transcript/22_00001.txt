@@ -1,0 +1,48 @@
+user: I'd like to find something fun to do.
+assistant: No problem. Which city should I search in and would you like music, theater or another category?
+user: Look in LA and I want a stage show.
+tool(FindEvents): ok n_results=10
+assistant: How about A year in dragonfly at the studio c artists on march 1st at 7:30 pm?
+user: No, I rather something else. What else can you find?
+assistant: Sure. How about the Adieu monsieur haffmann at the theatre raymond kabbaz on march 4th at 6:30 pm?
+user: Hmm, what else is there?
+assistant: You can see Anything Goes at the Upright Citizens Brigade Sunset on march 6th at 5:30 pm.
+user: Perfect, I'll go with that one.
+assistant: Would you like anything else?
+user: Yes, I need a direct bus to get there for 4 people leave from San Fran.
+assistant: Will this be on March 6th?
+user: Yes, that's correct.
+tool(FindBus): ok n_results=9
+assistant: There's a 7:30 am bus for $51
+user: Where is the arrival location?
+assistant: North Hollywood Station
+user: Great.
+assistant: Would you like to purchase tickets now?
+user: No, not yet.
+assistant: Is there anything else you'd like?
+user: Yes, I need a round trip Southwest Airlines economy ticket for the 5th.
+assistant: What's the return date?
+user: I want to leave later today and return on the 11th of this month
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There's a 12:25 pm Alaska Airlines flight that returns at 11:55 am for $138.
+user: What time is the returning arrival flight?
+assistant: 1:20 pm
+user: Great, please search for hotels with 1 room for me.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels. Would you like to stay at a 3 star hotel called Ac Hotel by Marriott Beverly Hills?
+user: Can you please provide me with their number.
+assistant: The number is +1 323-852-7000.
+user: Can I smoke and what's their address?
+assistant: There is no smoking allowed anywhere on their property and the address is 6399 Wilshire Boulevard
+user: I need a hotel with two rooms please.
+tool(SearchHotel): ok n_results=9
+assistant: The system pulled up 9 hotels. How about a 3 star hotel called Airtel Plaza Hotel?
+user: What other hotels are there?
+assistant: There's a 1 star hotel called Banana Bungalow Hollywood.
+user: Nice, please purchase a ticket to the event earlier.
+assistant: Please confirm: 4 tickets to Anything Goes on March 6th in Los Angeles
+user: Perfect, thanks so much.
+tool(BuyEventTickets): ok n_results=1
+assistant: This reservation is now complete. Enjoy.
+user: Awesome, thanks for all your help.
+assistant: Have a wonderful day.

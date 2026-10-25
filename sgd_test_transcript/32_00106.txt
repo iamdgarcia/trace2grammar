@@ -1,0 +1,39 @@
+user: Hi, could you get me a place to live in Alameda with in-unit laundry?
+assistant: How many bedrooms do you require and are you looking to rent or buy?
+user: I would like a property for rent with 1 bedroom in Concord.
+assistant: And how many baths would you need?
+user: Just 1 will do.
+tool(FindHomeByArea): ok n_results=4
+assistant: There are 4 houses you might like, how about Hidden Creek Town Homes at 1032 Mohr Lane costing $1,800?
+user: Are there any alternatives, preferably one with 2 bed rooms?
+tool(FindHomeByArea): ok n_results=7
+assistant: How about City Walk Apartment Homes at 1688 Clayton Road costing $2,800?
+user: Sure, may I have their contact number and does it have a garage?
+assistant: No, it does not. You can contact them at 925-671-3845.
+user: Sounds great! Could you schedule a visit to the property on the 3rd of this month please?
+assistant: Sure, please confirm your visit to City Walk Apartment Homes on March 3rd.
+user: Yes, that is correct!
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thank you so much.
+assistant: How can I further assist you?
+user: Could you share the location with Lisa please?
+assistant: Please confirm your request to share 1688 Clayton Road with Lisa.
+user: Sorry, could you share it with Janice instead?
+assistant: Please confirm your request to share 1688 Clayton Road with Janice.
+user: Sounds great to me!
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been successfully shared.
+user: Could you get me a cab ride for 2 there please?
+assistant: And would you prefer a pool or luxury ride?
+user: A regular ride will do.
+assistant: Please confirm your booking for a regular ride for 2 to 1688 Clayton Road.
+user: Sure, how much will this cost me?
+tool(GetRide): ok n_results=1
+assistant: Your booking has been made, which will cost you $19.74.
+user: I see, and how long will it take to reach me?
+assistant: Likely around 4 minutes.
+user: I see, thank you for your kind assistance.
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a pleasant day ahead!

@@ -1,0 +1,19 @@
+user: I am looking for a unisex salon
+assistant: What's your preferred City
+user: Please look San Jose
+tool(FindProvider): ok n_results=10
+assistant: Atelier salon Willow Glen is a good salon in San Jose
+user: What's their contact number and address
+assistant: The phone number is 408-293-3494 anti addresses 1047 Lincoln highway suite 101
+user: Find some other salon
+assistant: Barba & Co. San jose is a nice salon in San Jose
+user: Good how's the weather there on March 4th
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be 75 degree fahrenheit and a 19 percent chance to rain
+user: Ok make an appointment at one pm. on the salon which are so now
+assistant: Please confirm the name of the hairstylist is barba & Co. San Jose and your appointment is at 1 pm. on March 4th
+user: Yes correct
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked
+user: Thank you that's what I need
+assistant: Have a nice day

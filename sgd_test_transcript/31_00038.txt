@@ -1,0 +1,20 @@
+user: I need to find a salon.
+assistant: What city should I search?
+user: I need a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: Daredevils & Queens is a nice salon located in Santa Rosa.
+user: That sounds good. I would like to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: Would you prefer After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: Good Boys sound perfect. What time is it? I would like to watch it at the Airport Stadium Cinemas in imax on the 2nd of this month.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 9:30 pm showtime at the Airport Stadium 12.
+user: Sounds good. Book an appointment at the salon you found on that day for 17:45.
+assistant: Please confirm: Book a hair stylist appointment at Daredevils & Queens for March 2nd, 5:45 pm.
+user: Yes, that is correct. What is the address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed. The address is 122 4th Street.
+user: What is the contact number and the average rating
+assistant: The phone number is 707-575-5123 and the average rating is 4.6.
+user: Thanks, that is all I needed.
+assistant: Enjoy your day.

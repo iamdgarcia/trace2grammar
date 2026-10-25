@@ -1,0 +1,30 @@
+user: Can you please check the weather for me for the 8th of March?
+assistant: Sure, but first tell me for which city.
+user: For Gilroy, please.
+tool(GetWeather): ok n_results=1
+assistant: There's a 20 percent chance of rain with average temperatures around 85 degrees Fahrenheit.
+user: Is it going to be humid or windy?
+assistant: The average wind speed is forecast to be 9 miles per hour and the humidity should be around 40 percent.
+user: OK, now let's check the weather for SFO.
+tool(GetWeather): ok n_results=1
+assistant: There's a 13 percent change of rain with an average temperature of 70 degrees Fahrenheit.
+user: OK, now let's see it for the 12th of this month.
+tool(GetWeather): ok n_results=1
+assistant: There's a 23 percent change of rain with an average temperature of 76 degrees Fahrenheit.
+user: OK, perfect. Now let's find a one-way flight to there.
+assistant: Please tell me from where will you be taking off as well as if you plan to travel on March 12th.
+user: I plan to fly out of Los Angeles on the 3rd.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: There's an Alaska Airlines flight taking off at 11:40 pm with tickets priced at $91.
+user: Please tell me for how many people is this ticket and for which class.
+assistant: The tickets are in Economy an the price is for 1 person.
+user: OK, thanks. Now let's find something else, in Premium Economy.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 flights matching your criteria, out of which I recommend the American Airlines flight taking off at 9:30 am with tickets priced at $170.
+user: Sounds perfect. Now let's find a car rental at destination.
+assistant: Please tell me the rental period as well as the desired pick up time. Do you plan to rent the car from March 12th?
+user: No, I'll be needing the car from March 10th to the 14th of March. I would like to pick it up at 8:30 pm.
+tool(GetCarsAvailable): ok n_results=7
+assistant: There are 7 cars matching your criteria out of which I recommend a very nice Audi A8 Sedan available for pick up from Salesforce Transit Center.
+user: Sounds perfect. That will be all for now!
+assistant: Have a great day!

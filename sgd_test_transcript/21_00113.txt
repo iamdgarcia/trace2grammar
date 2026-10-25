@@ -1,0 +1,37 @@
+user: I am looking for something interesting to do around NY.
+assistant: What kind of event are you looking for?
+user: I like songs.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events including an Abbi Jacobson concert at Kaufmann Concert Hall on March 11th at 7:30 pm.
+user: That sounds like fun.
+assistant: Do you want to buy tickets?
+user: Not at this time.
+assistant: May I further assist you?
+user: I need 3 tickets for a bus going there direct.
+assistant: Are you traveling on March 11th?
+user: We are leaving on the 5th of March.
+assistant: What city are you traveling from?
+user: We are leaving Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: There is a bus leaving at 9 am for $23.
+user: Which stations does it travel between?
+assistant: It departs from 10th and Filbert and arrives at Penn Station.
+user: That is okay. I also want a round trip flight to get there.
+assistant: What day are you returning?
+user: We are returning on the 12th.
+assistant: Are you leaving on March 5th, March 11th, or a different day?
+user: We want to travel later today.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There is a direct flight on American Airlines, leaving at 1:20 pm, and the return flight leaves at 11:20 am. The ticket is $97.
+user: That is perfect. I also would like to reserve a hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: That is good.
+assistant: Do you want to make a reservation?
+user: Not at this time, but I would like to purchase tickets for the concert.
+assistant: Please confirm you want 3 tickets to the Abbi Jacobson concert in New York on March 11th.
+user: That is correct. What is the venue and ticket price?
+tool(BuyEventTickets): ok n_results=1
+assistant: The $60 ticket has been successfully purchased and the venue is at 1395 Lexington Avenue.
+user: Thank you, that will be all.
+assistant: See you soon!

@@ -1,0 +1,24 @@
+user: I want to search for a bus to go to Vancouver, BC. I need your help to do the same and it is for 1 person from Portland.
+assistant: What is your expected date of leaving?
+user: I want to leave on 4th of this month. Search for the one on that day.
+tool(FindBus): ok n_results=7
+assistant: Do you want to book a bus which is going to leave at 7:10 am for the ticket cost $46
+user: Yes, that is fine.
+assistant: Shall I book the tickets now?
+user: We will decide it later and now please search for some attractive places to visit and I need the one with free entrance. Any type of places is okay for me.
+tool(FindAttractions): ok n_results=10
+assistant: What do you think about a Park at Dr. Sun Yat-Sen Classical Chinese Garden. Do you like to visit there?
+user: That is good and I like it. Please help me to book the tickets in the bus that we have discussed before.
+assistant: Okay, once again confirm to book 1 ticket on the bus from Portland to Vancouver for the leaving date on March 4th at 7:10 am with extra luggage.
+user: Okay, confirmed. You can go ahead. What is the origin station of this bus and let me know the number of stops.
+tool(BuyBusTicket): ok n_results=1
+assistant: This is a direct bus which is leaving from SW Arthur & 1st. I have booked your tickets.
+user: Thank you so much. I want to stay there for a while and I need to book 1 room in a nice hotel around that area. Please search for the one suitable to me.
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 hotel details. A hotel named Atrium Inn Vancouver with 3 stars. Do you like to stay here?
+user: Yes, I like to stay there. Thanks.
+assistant: Shall I reserve the rooms now?
+user: No, not now.
+assistant: Anything else you want?
+user: Nothing and that's all for now. Thanks.
+assistant: Have a good day.

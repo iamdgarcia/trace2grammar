@@ -1,0 +1,42 @@
+user: Can you look for something interesting to do?
+assistant: Which is your preferred city to search for and what type of events?
+user: I wanted Musical shows in New York
+tool(FindEvents): ok n_results=10
+assistant: I have short listed 10 events of your likings and one among them is a very famous Abbi Jacobson at Kaufmann Concert Hall on March 11th at 7:30 pm
+user: What is the one ticket cost?
+assistant: The ticket is costing at $60
+user: Ok, can you look for other events on March 9th?
+tool(FindEvents): ok n_results=10
+assistant: I have short listed 10 events of your likings and one among them is a very famous Alpha Blondy at Sony Hall on March 9th at 7:30 pm
+user: Fine and what about buses?
+assistant: Are you moving on March 9th?
+user: I will be moving on 5th of March
+assistant: Which place are you starting from?
+user: I will be starting from Philadelphia
+tool(FindBus): ok n_results=6
+assistant: What is your opinion on a bus departing at 9 am costing $23
+user: Which is the station bus arriving/
+assistant: Bus will arrive at Penn Station
+user: That is fine
+assistant: You need bus tickets?
+user: No, i do not need it now. I want to find around trip flight to get there on the 11th
+assistant: Do You require to start on March 5th or March 9th or some other day?
+user: I need to fly with United Airlines on the 4th
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: What is your opinion on flying with United Airlines direct flight taking off at 11:30 am and returning flight takes off at 5:35 am with ticket cost at $92
+user: That is fine.I need to look for hotel room and can you please find me one room in a 2 star hotel there?
+tool(SearchHotel): ok n_results=10
+assistant: I have short listed 10 hotels of your liking and one among them is Bklyn House Hotel which is a 2 star hotel
+user: Fine and i need to buy four event tickets
+assistant: Please give confirmation details: Booking 4 tickets for Alpha Blondy on March 9th in New York
+user: No, i need 2 tickets
+assistant: Please give confirmation details: You need 2 tickets for the evnt in New York
+user: That is perfect
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is done
+user: Where is the venue and what is the ticket cost?
+assistant: The location is 235 West 46th street with ticket cost at $25
+user: Thank you very much
+assistant: Is there any other help you need/
+user: No, thank you very much
+assistant: Have a wonderful day

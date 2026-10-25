@@ -1,0 +1,19 @@
+user: Would you help me find something interesting to do around Chi-town?
+assistant: Do you like any category in particular like music or theater or something else?
+user: I'd like something March 13th like Broadway.
+tool(FindEvents): ok n_results=10
+assistant: All That He Was is a popular event taking place at The Buena, Pride Arts Center happening March 13th at 5 pm.
+user: What does one ticket cost and where is the event taking place?
+assistant: The event venue is 4147 North Broadway with tickets costing $25.
+user: These events are good but can you find me some others like something on the 1st of March around Los Angeles.
+tool(FindEvents): ok n_results=10
+assistant: A Year in Dragonfly is popular and taking place at Studio C Artists on March 1st at 7:30 pm starting.
+user: That is wonderful.
+assistant: Would you like to buy tickets for this event?
+user: Yes, I'd like to buy two tickets.
+assistant: Please confirm the following details that you are booking 2 tickets for A year in Dragonfly March 1st in Los Angeles.
+user: Yes, that will work for me. Where is the event going on and how much does a ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed and have a great time. The venue is at 6448 California 2 costing $55.
+user: Thanks so much for your help and that's all I need.
+assistant: Have a nice day.

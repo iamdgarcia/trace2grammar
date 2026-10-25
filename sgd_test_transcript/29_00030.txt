@@ -1,0 +1,22 @@
+user: I want to search for a Hotel to stay and I need your help to find the suitable one for me.
+assistant: Do you have any particular City in your mind to search for the Hotel?
+user: Yes, search it in London.
+tool(SearchHotel): ok n_results=10
+assistant: What about the one called 45 Park Lane with 5 stars.
+user: I want more details about that hotel. Get me their phone number and check for the permission for Smoking.
+assistant: Please note that their phone number is +44 20 7493 4545 and no permission for smoking that hotel.
+user: That's okay for me. Can you search for a round trip flight to go there?
+assistant: Yes, from which City you are going to take the flight and please confirm the leaving date as March 7th. I need one more information to search for the flight that please tell me your required date of return flight.
+user: I want to take flight from Philly on 1st of this month and want to return on March 11th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Pleas tell me whether an onward flight from American Airlines is comfortable to you. Also note that this flight will take off at 1:20 pm and the return flight will take off at 12:35 pm for the ticket cost $425.
+user: Yes, it is comfortable to me and this flight is okay. I also want to search for a hotel there for five days from Saturday this week. please search and book one room for me.
+assistant: I need your confirmation to book 1 room for 5 days in a Hotel 45 Park Lane from March 2nd in London.
+user: That is okay to proceed. Also let me know their address and cost per night.
+tool(ReserveHotel): ok n_results=1
+assistant: I have booked the rooms and the cost will be $195. Their address is 45 Park Lane.
+user: Okay. Thanks. I also want to visit some attractive places there which should be a Child-friendly one. Find me a nice place.
+tool(FindAttractions): ok n_results=10
+assistant: What about a Historical landmark at 30 St Mary Axe (The Gherkin)?
+user: This is perfect and thanks. That's all.
+assistant: Have a great day.

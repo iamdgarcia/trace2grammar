@@ -1,0 +1,13 @@
+user: I have a high school reunion and I need to get a train to go there.
+assistant: Where would you be going to and when would you like to travel?
+user: I need tickets to Fresno for the 9th.
+assistant: Where would you be leaving from?
+user: I am leaving SD
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains leaving that day. There is one that leaves at 6:50 am and costs $85.
+user: Which station would it be leaving from and where would it arrive?
+assistant: The train departs Santa Fe Depot and stops at Fresno Station.
+user: That would be awesome.
+assistant: Would you like to book the tickets?
+user: Not at this time. Thanks for your assistance.
+assistant: Take care of yourself.

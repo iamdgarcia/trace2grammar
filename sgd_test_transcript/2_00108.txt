@@ -1,0 +1,11 @@
+user: Can you find me four Economy class one way tickets from Washington?
+assistant: When do you plan to travel?
+user: I'm planning to depart on the 13th of this month.
+assistant: Where are you going to?
+user: I'm flying to San Fran.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There is a Delta Airlines flight that departs at 6:50 pm and a ticket costs $252. Does that sound okay?
+user: Yes. That's perfect.
+assistant: Is there anything else I can do for you?
+user: No. Thank you. That'll be all.
+assistant: Have a great day!

@@ -1,0 +1,35 @@
+user: Please help me find a therapist
+assistant: What kind of therapist did you need and in what city?
+user: I'd like to find a Psychiatrist in Sunnyvale.
+tool(FindProvider): ok n_results=1
+assistant: I found a Psychiatrist Sunnyvale Psychiatry in Sunnyvale.
+user: Awesome. Can you help me book an appointment?
+assistant: What date did you want to book it for and what time?
+user: I'd like to book it on March 12th at 11 in the morning.
+assistant: Please confirm you're booking an appointment with Sunnyvale Psychiatry on March 12th at 11 am.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you should receive an email confirmation soon.
+user: Thank you. I would like to request a payment with Mahmoud for 115 dollars and I would like to make the transfer private.
+assistant: Please confirm you're making a private transaction with Mahmoud for $115.
+user: Correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request was successfully made.
+user: I would like to find a Take-out restaurant there that day as well.
+tool(FindRestaurants): ok n_results=2
+assistant: I found Bombay to Goa in Sunnyvale which is a nice restaurant.
+user: Did you have any other restaurants?
+assistant: I also found a nice restaurant in Sunnyvale called Marie Callender's.
+user: Yes, that sounds good.
+assistant: Did you want to book a table here?
+user: Yes, I'd like to.
+assistant: What time did you want to book it for?
+user: I'd like to book a table for 3 at 1 in the afternoon.
+assistant: Please confirm you're booking a table for 3 at Marie Callender's in Sunnyvale on March 12th at 1 pm.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking has been made.
+user: How pricey is the restaurant and where is it located?
+assistant: It is at 751 East El Camino Real and they are a moderate restaurant.
+user: Thank you, that's all.
+assistant: Have a nice day.

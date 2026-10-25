@@ -1,0 +1,19 @@
+user: Can you help me find online movies featuring Rebecca Gayheart?
+assistant: What kind of movies do you like?
+user: Bizarre story movies are my preference.
+tool(FindMovies): ok n_results=1
+assistant: What about Once Upon a Time In Hollywood?
+user: Is there anything else? I like movies featuring Jakob Dylan especially musical movies.
+tool(FindMovies): ok n_results=1
+assistant: What about Echo In The Canyon?
+user: Echo is great. I'd like to watch it now with French subtitles.
+assistant: Please confirm the following details: playing Echo In The Canyon with subtitles in French.
+user: No, please change it to Spanish subtitles.
+assistant: Please confirm the following details: playing Echo In The Canyon with subtitles in Spanish.
+user: Yes thank you.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is starting.
+user: Thank you.
+assistant: What else can I help?
+user: That will be all.
+assistant: Have a nice day.

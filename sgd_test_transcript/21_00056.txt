@@ -1,0 +1,21 @@
+user: Search for me some songs.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 songs for you.How about the album All The Little Lights by Passenger with song Let Her Go.
+user: What type of music is and in which year did it come out?
+assistant: This is a Pop song from 2012.
+user: Yes I like this one.
+assistant: With something else I can help?
+user: On 4th of March how will be the weather?
+assistant: On which city you want to check?
+user: I want in Mill Valley.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 90 degrees Fahrenheit and a 7 percent chance of rain.
+user: Tell me how windy will be and how humid is expected to be.
+assistant: Humidity is around 18 percent and average speed should be 5 miles per hour.
+user: Okay.Play for me the song that you just found on speaker in kitchen.
+assistant: Play the song Let Her Go in Kitchen.Is okay?
+user: Yes very good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music.
+user: Thank you for all.That's all that I wanted.
+assistant: Have a great day!

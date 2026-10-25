@@ -1,0 +1,38 @@
+user: I'll be requiring a rental car from March 13th until March 14th. Can you help me Assistant?
+assistant: I certainly can. Where city will you be renting the car from?
+user: I need a rental car from Long Beach, CA.
+assistant: What time will you be picking the rental vehicle up?
+user: I'll go by the rental office to get the car about two in the afternoon. Set it for that.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 results for a rental that meet your needs. at the LGB Airport, there is a nice Alfa Romeo Stelvio SUV for rent.
+user: That's not what I'm looking for. Can you find something other than an SUV?
+assistant: At the same LGB Airport, there is an Audi A8 for rent. This is not an SUV but a sedan.
+user: Okay. How much will it cost for me to rent that vehicle per day?
+assistant: The price of renting the vehicle is $33.00 a day.
+user: I hate to be a bother but try and find something else.
+assistant: At the Downtown station, the rental office has a Buick Regal Sportback Sedan.
+user: Nice. That's what I had in mind.
+assistant: Do you wish to book the reservation?
+user: I do, but not at the moment.
+assistant: Okay. What can I assist you with?
+user: I rather stay in a house than a hotel while I'm there. Find me one please.
+tool(SearchHouse): ok n_results=10
+assistant: 10 homes are available for you. A nice home located at 1133 Atlantic Avenue has a rating of 4.0.
+user: I want a rating higher than 4.0. It needs to be at least 4.4 and have laundry service.
+tool(SearchHouse): ok n_results=1
+assistant: How about a home located at 3771 North Lakewood Boulevard. The rating of this home 4.4.
+user: Is there a number in which I can contact the owners of the property?
+assistant: The contact number listed is +1 562-425-0010.
+user: Okay thank you. This house looks simply magnificent.
+assistant: Is there any other concerns I can help you with?
+user: If possible, please go ahead and book the rental for the car you found earlier.
+assistant: Would you like me to add insurance on top of the rental fee?
+user: Yes. It would be best to have renter's insurance on the vehicle.
+assistant: If you can, confirm the following details: Booking a rental car pick up for March 13th at Downtown Station. The pick up time for the Sedan is 2 pm and the drop-off date is March 14th.
+user: You got it right. Thank you.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your rental vehicle.
+user: Awesome. Thanks for assisting me with that.
+assistant: Do you require anything else before you leave?
+user: No thanks. If I think of anything else, I'll let you know.
+assistant: Please do. Have a lovely evening.

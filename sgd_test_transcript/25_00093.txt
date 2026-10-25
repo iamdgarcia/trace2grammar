@@ -1,0 +1,32 @@
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set currently. There is an alarm for 9 am with the name Gym.
+user: OK, thanks. Let's look for a restaurant in Santa Clara. Something afforadable.
+assistant: Is there a particular kind of food you would like to look for?
+user: Yes, I would like a restaurant that has Izakaya.
+tool(FindRestaurants): ok n_results=5
+assistant: Amakai Japanese Cuisine is located in Santa Clara.
+user: That's right, I remember it now, thank you.
+assistant: Would you like to reserve a table there?
+user: No, that's ok.
+assistant: Is there anything else I can help you with?
+user: I would like to reserve a rental car starting next Friday, can you find me one?
+assistant: What kind of car do you prefer? Where would you like to pick up the car, and when do you plan to return it?
+user: If you can get me a hatchback, that would be my first choice. The best place for me to pick it up is Estacion Buenavista. I will need the car until the 13th of March.
+assistant: What time would you like to pick up the car?
+user: I would like to pick it up at eleven in the morning.
+assistant: Would you like to include insurance?
+user: Yes, I will need to buy the insurance.
+assistant: You would like to pick up a Hatchback car rental with insurance from Estacion Buenavista at 11 am on March 8th, and return it on March 13th, is that correct?
+user: Yes, that's right.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been reserved.
+user: What make and model is the car, and how much does it cost per day?
+assistant: The car is a Peugeot 208, and it costs $29.00 per day.
+user: Thank you for your help. Oh, I need to share the location for Estacion Buenavista with Walter.
+assistant: You would like to share the location Estacion Buenavista with Walter, is that correct?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you for your help, that's all for now.
+assistant: Have a great day!

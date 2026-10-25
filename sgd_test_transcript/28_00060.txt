@@ -1,0 +1,30 @@
+user: I'm looking for a foreign movie to watch with Camila Sosa in it.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie for you, it is Zama and it has a rating of 96 out of 100.
+user: Who directed the movie?
+assistant: Lucrecia Martel directed it.
+user: Okay, thanks. I'd like to find a restaurant now.
+assistant: What kind of food do you want?
+user: I want something with Tapas.
+assistant: What city do you want to search in?
+user: I want a place in San Fran.
+tool(FindRestaurants): ok n_results=8
+assistant: I found 8 restaurants for you. What about Aatxe in San Francisco?
+user: Yes, that sounds good.
+assistant: Do you want to make a reservation here?
+user: Yes, I'd like a table for one on the 14th of this month.
+assistant: What time do you want the reservation?
+user: I want it at 11:45 in the morning.
+assistant: Okay, you want a reservation for 1 at Aatxe in San Francisco on March 14th at 11:45 am, right?
+user: Yes, that sounds good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Unfortunately, I was unable to make the reservation. How about a reservation for 1 at Aatxe on March 14th at 12 pm?
+user: Yes, that works.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have placed the reservation.
+user: What is the rating of the restaurant and do they have vegetarian options?
+assistant: The rating is 4.2 and they do have vegetarian options.
+user: Thank you!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

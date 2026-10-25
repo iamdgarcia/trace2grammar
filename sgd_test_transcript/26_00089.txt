@@ -1,0 +1,36 @@
+user: I'm looking for a train that I could take this Saturday please.
+assistant: Where will you be leaving from and what is your destination?
+user: I'm going from Anaheim, CA to Phoenix and I'll need three tickets.
+tool(FindTrains): ok n_results=4
+assistant: There is a train with a 6:30 AM departure and a ticket price of $343.
+user: OK, that works.
+assistant: Would you like to purchase tickets now?
+user: No, not at the moment. I'd also like to find an interesting thing to do there on the 12th of March.
+assistant: Is there a particular kind of event or attraction you're looking for? Perhaps a music or theater event?
+user: Yes, I'm a big fan of songs.
+tool(FindEvents): ok n_results=10
+assistant: The Van Buren is presenting Dreamers, which is very popular. That is on March 12th at 5 pm.
+user: Where is that please and what does it cost?
+assistant: The theater is at 401 West Van Buren Street and the ticket price is $55.
+user: OK comma I like the sound of that.
+assistant: Would you like to purchase tickets now?
+user: I don't think so.
+assistant: How else may I help you today?
+user: I wanna find a cool attraction to go to.
+tool(FindAttractions): ok n_results=10
+assistant: I recommend a museum called the Arizona Capitol Museum.
+user: OK, do you have anything else?
+assistant: There is another museum I recommend called the Arizona Science Center.
+user: What's the telephone number please?
+assistant: That is 602-716-2000.
+user: Is that a place that's good for kids and is there a charge to get in?
+assistant: Yes, it's appropriate for children and there is free admission.
+user: OK, that's terrific. I also need to find a house in that area. I'd like something that has a rating of 4.1 or more and it's just for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: There is a home at 10 East Thomas Road which is rated 4.1.
+user: That sounds perfect.
+assistant: Shall I reserve that for you?
+user: Not right now, no.
+assistant: How else may I help you today?
+user: I think that's everything.
+assistant: Thank you very much.

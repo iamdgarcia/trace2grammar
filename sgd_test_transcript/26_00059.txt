@@ -1,0 +1,30 @@
+user: I need help finding a round-trip plane ride.
+assistant: I can help. Do you know which day you would like to leave? Also provide the day of the month you would like to return.
+user: Yes. I have dates for you. My itinerary schedule is leaving on Monday next week and returning on the 6th of March.
+assistant: What location is your destination?
+user: I am planning visit to Portland, OR for this trip.
+assistant: Is there a certain location that you would like your journey to begin in?
+user: I would like this journey to start in New York City.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Is United Airlines a suitable company for you to fly with? One of their flights is scheduled to leave at 6:35 pm. The flight coming back is scheduled at 8:40 am. The current price is $493.
+user: That flight is an excellent option. While I am there I will need you to help me find a residence to stay in. The adobe should be for only 1 person. I would like the abode to have a score of 3.6 or better.
+tool(SearchHouse): ok n_results=10
+assistant: I discovered a total of 10 residences that meet your criteria. One good one I found has a score of 3.6. This residence is located at 1000 Northeast Multnomah Street.
+user: Is there a service at this location that washes and dries clothing. I would also like a contact number please.
+assistant: One feature of this residence is Laundry service. The number to reach them at is +1 503-281-6111.
+user: I am very pleased that you found this home for me.
+assistant: I would like to book the home in your name if you agree.
+user: That's a good suggestion. I would like you to make a reservation for me.
+assistant: Will March 6th be the date you would like the reservation to begin?
+user: The date is correct. Thanks for double checking.
+assistant: I understand the reservation will end on March 4th. Correct me if I am mistaken.
+user: No correction necessary. You have the date correct.
+assistant: Before I book the home I want to make sure the details are correct. Your reservation will be for 1 starting March 4th and ending March 6th. The city is Portland.
+user: You have the right details. Thanks fr checking. How much money will I be spending?
+tool(BookHouse): ok n_results=1
+assistant: The home has been held in your name. Your expense total will be $558.
+user: Can you also look for stimulating events for me to enjoy while I am at the location?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 sights that match your preferences. One is a Park I highly suggest visiting. It's named the Crystal Springs Rhododendron Garden.Fantastic suggestion.
+user: Thank you. I'll check back with you later. Take it easy.
+assistant: Hope your day is filled with pleasant happenings!

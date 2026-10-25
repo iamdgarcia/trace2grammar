@@ -1,0 +1,32 @@
+user: Please show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There was an alarm for 10 am called Running.
+user: Okay that is good. I'd like to find a vegetarian options restaurant there.
+assistant: What type of food are you looking for?
+user: I want something serving burger.
+assistant: What location should I search?
+user: Please look for restaurants in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: 25 Lusk is a fine restaurant in San Francisco.
+user: Yes, that is great. I'd like to reserve a car there till the 13th of this month.
+assistant: What type of car do you like and where will you want to pick it up?
+user: I would like a Sedan from Peachtree Station as that is convenient for me to pick it up there.
+assistant: What time do you wish to pick up the car and would you like to add insurance?
+user: I would like to pick it up half past 2 in the afternoon and I don't need insurance.
+assistant: When will you want to start the car rental.
+user: Heathrow Airport is convenient as a location for pick up on the 7th of this month.
+assistant: Please confirm details that you are picking up the sedan car from Heathrow International Airport March 7th at 2:30 pm with a drop-off of March 13th and it doesn't come with insurance.
+user: Yes, that sound nice and what is the car's name?
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved and its name is the Volvo S90.
+user: Thanks for helping. Could you share the location as 25 Lusk Street with Jerry.
+assistant: Please confirm details to share the location as 25 Lusk Street with Jerry.
+user: No, the address to share with Ronald is Heathrow International Airport.
+assistant: Please confirm details to share the location Heathrow International Airport with Ronald.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Thanks and you are pretty helpful.
+assistant: .What else can I help with?
+user: No thanks that's been pretty helpful.
+assistant: Have a great day.

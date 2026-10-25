@@ -1,0 +1,30 @@
+user: I'm searching for a round trip flight.
+assistant: What metropolis would you like to leave from? When do you wish to go on the return flight?
+user: Search for flights out of Philadelphia that return on the 10th of this month.
+assistant: What location do you intend to go? When do you wish to go?
+user: I am traveling to New Delhi and I'd like to begin my trip on next Monday.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I discovered 1 flight for you. Do you wish to fly on United Airlines? The onward flight leaves at 9:35 pm, and the return flight is at 1:20 pm. It has a layover, and the price is $545.
+user: Is the flight for 4 people? What time will the returning flight come?
+assistant: It is for 1 person, and the returning flight comes at 9:01 pm.
+user: That's lovely. I'd like to look for a residence to stay there for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: There's 10 residences matching your query. There is a lovely residence situated at 12, Doctor APJ Abdul Kalam Road, New Delhi, with a 4.4 rating.
+user: Does the residence possess laundry service? Could I get the phone number for this place?
+assistant: This residence does possess laundry service, and the contact number is +91 11 3955 5000.
+user: This residence is lovely; I'd like to reserve the place.
+assistant: Do you wish to check in on March 4th?
+user: Yeah, that's be lovely. I'd like to check out on the 10th of this month.
+assistant: Please verify the following information: the place is Delhi, and there is 1 person in the group. The check in day is March 4th, and the check out date is March 10th.
+user: Yeah, that'd be fine.
+tool(BookHouse): ok n_results=1
+assistant: Your booking is complete.
+user: How much does it cost?
+assistant: The cost is $2,160.
+user: Thank you for your assistance. Could you tell me about several attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that may be interesting. You ought to try the Adventure Island, which is a theme park.
+user: Alright, that's fine.
+assistant: Could I help you with something else?
+user: Nope; thank you for your assistance.
+assistant: Enjoy your day!

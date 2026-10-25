@@ -1,0 +1,16 @@
+user: I'd like to look for a film to view at the raven Film Center. Could you look for a film playing in Healdsburg? I'd like to view a 3d film.
+tool(FindMovies): ok n_results=3
+assistant: What is your opinion regarding Blinded by the Light, IT Chapter Two, or Where'd You Go, Bernadette?
+user: The film Where would you go is fine for me.
+assistant: Do you wish to purchase tickets?
+user: Yeah, I'd like to purchase three tickets right now.
+assistant: What day do you wish to view it on?
+user: I'd like to view the film on the 2nd of this month.
+assistant: What time do you wish to view the show?
+user: I'd like to view the show during 5:15 in the evening.
+assistant: Please verify the following information: you'd like to 3 tickets for March 2nd in Healdsburg to view the 3d film Where'd You Go, Bernadette at 5:15 pm.
+user: Yeah, that's perfect for me. What is the ticket price?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased, and cost $15 per person.
+user: Thank you for your assistance; that's all.
+assistant: Have a pleasant afternoon.

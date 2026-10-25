@@ -1,0 +1,19 @@
+user: I would like a Luxury cab ride.
+assistant: Where is your destination and how many seats will you be needing?
+user: I am in a group of 2 and we will be going to La Casita 2.
+assistant: Please confirm that you will be needing 2 seats on a Luxury ride to La Casita 2.
+user: Yes, perfect! Can you tell me the price and when the cab will arrive?
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and is expected in 14 minutes and the total cost will be $35.82.
+user: Thank you for all your help! Can you search now for some Rock songs from '18, maybe from the album Kamayanbaghi?
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song you might like called Mchat by Hoba Hoba Spirit from the album Kamayanbaghi.
+user: Yes, that is the one I would like you to play.
+assistant: Please confirm you would like to hear the song Mchat in your Living room.
+user: Yes, that will be great!
+tool(PlayMedia): ok n_results=1
+assistant: Hope you enjoy the music!
+user: Thanks!
+assistant: Can I assist with anything else?
+user: No, that will be all thank you!
+assistant: Have a great day!

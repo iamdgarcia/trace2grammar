@@ -1,0 +1,28 @@
+user: I would like to find songs. Could you look for songs from one years back? The album Slow Air by Still Corners is nice.
+tool(LookupMusic): ok n_results=2
+assistant: I have 2 songs that should wor. How about Black Lagoon by Still Corners from the Slow Air album?
+user: What sort of music is it?
+assistant: It's a pop song.
+user: Yes, that's the right one.
+assistant: Shall I play the song?
+user: In a little bit. Do you have any good movies online?
+assistant: What sort of movies do you like?
+user: I would like movies with Kumiko Izumi in them, and kids movies are best.
+tool(FindMovies): ok n_results=1
+assistant: How about Paprika?
+user: Paprika is fantastic.
+assistant: Would you like to play the movie?
+user: No, not right now.
+assistant: Could I assist with anything else?
+user: Would you play the song you just found?
+assistant: Could you confirm the following details, like playing the song Black Lagoon in Living room?
+user: No, cast it on the speaker in patio.
+assistant: Would you confirm that I should play Black Lagoon in Patio?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy your music.
+user: Thanks. Please show me my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms at the moment. There's a 4 pm alarm called Event.
+user: Sounds good. That'll be it.
+assistant: Thanks.

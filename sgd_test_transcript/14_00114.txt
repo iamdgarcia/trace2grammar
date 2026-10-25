@@ -1,0 +1,17 @@
+user: Can you find some pop songs from 2014? Find something from the album Globalization. I've heard it's pretty great and has gotten rave reviews.
+tool(LookupMusic): ok n_results=3
+assistant: I've found 3 songs you may like. How about Celebrate by Pitbull off the album Globalization?
+user: Yeah, that sounds good.
+assistant: Would you like to play the song now?
+user: Maybe a little later. Can you find any good Thriller movies online? Anything starring Leonard Sharp.
+tool(FindMovies): ok n_results=1
+assistant: How about The Ladykillers?
+user: Ladykillers sounds great! I may watch it a little later. Can you go ahead and play that Pitbull song for me?
+assistant: No problem, just confirm the following for me. Playing the song Celebrate by Pitbull in the Living room. Correct?
+user: Yeah, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Now playing. Enjoy your music.
+user: Thank you! I appreciate it.
+assistant: Anything else I can do for you today?
+user: No, that's it. Thanks!
+assistant: My pleasure. Have a good day!

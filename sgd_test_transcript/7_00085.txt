@@ -1,0 +1,17 @@
+user: I am looking to book movie tickets.
+assistant: When would you like to watch the movie?
+user: I would like to watch the show at 10:30 pm.
+assistant: Can you tell me your preferred date and number of tickets for the movie?
+user: I want one ticket for Saturday this week.
+assistant: Can you tell me your location, name of the movie and type of show like regular or imax show?
+user: I want to watch a regular show of Angel Has Fallen shown in Concord.
+assistant: Please confirm: You want me to buy 1 ticket for a regular show of Angel Has Fallen in Concord for March 2nd and starting at 10:30 pm.
+user: No. I would like to book 2 tickets in Newark.
+assistant: Please confirm: You want me to book 2 tickets in Newark.
+user: Yes, That sounds perfect.
+tool(BuyMovieTickets): ok n_results=1
+assistant: I have successfully booked the tickets for you.
+user: Okay. Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,23 @@
+user: Could you find me a family counselor
+assistant: Where should I search?
+user: St. Helena.
+tool(FindProvider): ok n_results=2
+assistant: I found 2 options. How about Ellsworth Elizabeth, she's a family counselor in St. Helena.
+user: What's their address and phone number?
+assistant: You can reach them at 707-963-1374 and their address is 999 Adams Street # 300
+user: Anything else?
+assistant: How about Mosher Kathy A, a family counselor in St. Helena?
+user: That works, how's the weather there on the 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: It'll be 74 degrees with a 24 % chance of rain.
+user: Okay.
+assistant: Do you need anything else?
+user: I'd like to book an appointment with that therapist.
+assistant: What time would you prefer?
+user: 1:30 in the afternoon.
+assistant: Please confirm: Book an appointment with Mosher Kathy A on March 14th at 1:30 pm?
+user: Correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked, a confirmation email will arrive shortly.
+user: Thank you, bye bye!
+assistant: Have a good day.

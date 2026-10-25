@@ -1,0 +1,28 @@
+user: I want a train.
+assistant: When do you want to go?
+user: I need tickets on the 11th
+assistant: Where do you want to go?
+user: I wish to go to Anaheim.
+assistant: Where do you want to go?
+user: I wish to go to Phoenix.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains for you. Starting at 6:30 am. It costs $118.
+user: What is the name of the reaching station?
+assistant: It will reach Phoenix Union Station.
+user: What is the name of the starting station?
+assistant: It will start from Anaheim Intermodal Center.
+user: It is good.
+assistant: Shall I book tickets?
+user: Yes. I wish to reserve.
+assistant: Number of tickets you need?
+user: I need 1 ticket.
+assistant: Do you need travel insurance?
+user: Yes. I need trip insurance. I need conditionally refundable tickets.
+assistant: Kindly ensure that, on March 11th, you need 1 Value ticket from Anaheim to Phoenix at 6:30 am. It is with insurance.
+user: It is good for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are booked.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Thank you. See you later.

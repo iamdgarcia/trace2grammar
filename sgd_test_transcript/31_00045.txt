@@ -1,0 +1,33 @@
+user: Can you please find me a salon?
+assistant: Sure, but first tell me in which city.
+user: I'd like to find one in SFO.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons matching your criteria in San Francisco, out of which I'd recommend 1512 Barber Shop.
+user: Anything else available?
+assistant: In San Francisco there's also 20Th Salon And Barber.
+user: This one sounds nice.
+assistant: Do you want me to book an appointment for you?
+user: No, not at the moment.
+assistant: Is there anything else I could do for you?
+user: Yes, please find me a Mystery movie to watch in the area at AMC Kabuki 8.
+tool(FindMovies): ok n_results=1
+assistant: There's just 1 movie matching your criteria, Official Secrets.
+user: Official Secrets sounds great.
+assistant: Do you want me to purchase tickets for you?
+user: No, not at the moment. Can you please tell me at what time can I watch the movie on the 3rd, in a regular show?
+tool(GetTimesForMovie): ok n_results=1
+assistant: AMC Kabuki 8 has a show at 4 pm for your desired movie.
+user: Perfect. Now please tell me the address for the theater as well as the price of a ticket.
+assistant: Tickets are priced at $5 each and the theater is located at 1881 Post Street.
+user: Perfect. Now let's go back and book an appointment to the salon on that day at afternoon 3:45.
+assistant: Can you please confirm that you want me to book an appointment for you on March 3rd at 3:45 pm at 20Th Salon And Barber?
+user: Yes, that's correct. Could you please also tell me their rating?
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately I wasn't able to book you appointment. Is there anything else I could do for you?
+user: Yes, please try again, this time at 1 in the afternoon.
+assistant: Can you please confirm that you want me to book an appointment for you on March 3rd at 1 pm at 20Th Salon And Barber?
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: I've successfully booked your appointment.
+user: Thanks a lot. That will be all for now.
+assistant: My pleasure. Have a nice day!

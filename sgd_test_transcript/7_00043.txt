@@ -1,0 +1,16 @@
+user: Can you help me find a house?
+assistant: How many bedrooms would you like in the house?
+user: Find me one with three bedrooms please.
+assistant: In which area are you looking for and would you like to rent it out or are you planning to buy it? How many baths would you like?
+user: I'm looking to buy a house with three baths in Napa.
+tool(FindHomeByArea): ok n_results=4
+assistant: Bristol Apartments, a very good property located at 135 Freeway Drive is available for $3,700,000.
+user: That sounds good to me. Can you schedule a property visit for me?
+assistant: When would you like to visit?
+user: I prefer this Saturday.
+assistant: Please confirm that you want to schedule a property visit to Bristol Apartments on March 2nd.
+user: Yes, that's right. Does it have in-unit laundry machines and a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit has been scheduled successfully. Unfortunately, the property neither has in-unit laundry machines, nor a garage.
+user: Thank you for the assistance. That'll be all.
+assistant: Have a great day!

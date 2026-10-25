@@ -1,0 +1,41 @@
+user: I am looking for a salon
+assistant: What city should i look for
+user: Please search in Vallejo
+tool(FindProvider): ok n_results=4
+assistant: What about Eyebrow Hub - vallejo in vallejo
+user: is this for unisex
+assistant: no, this is not unisex salon
+user: ok perfect, please also search for a psychologist for me in vallejo
+tool(FindProvider): ok n_results=2
+assistant: what about a psychologist called Dwyer Patricia j in vallejo
+user: ok perfect, please book an appointment for me
+assistant: what is your preferred time and date for your appointment
+user: i am free afternoon 3 on march 9th
+assistant: Please confirm your appointment with dwyer patricia j at 3 pm on march 9th
+user: yes please, what is their number and address
+tool(BookAppointment): ok n_results=0
+assistant: sorry i wasn't able to book the appointment for you. what else can i do for you
+user: Can you try again for next friday at 10:15
+assistant: please confirm your appointment with dwyer patricia j at 10:15 am on march 8th
+user: yes please
+tool(BookAppointment): ok n_results=1
+assistant: sorry i wasn't able to book it. What about appointment with dwyer patricia j on march 8th at 10:30 am
+user: that will work
+tool(BookAppointment): ok n_results=1
+assistant: your appointment is booked, you will receive an email confirmation shortly
+user: please also book an appointment at the salon for me
+assistant: what time would you like to go
+user: please book it at quarter to 6 in the evening
+assistant: please confirm your appointment to eyebrow hub - vallejo at 5:45 pm on march 8th
+user: that is great
+tool(BookAppointment): ok n_results=1
+assistant: sorry they are booked. what about appointment with eyebrow hub - vallejo on march 8th at 5:30 pm
+user: yes please do that
+tool(BookAppointment): ok n_results=1
+assistant: your appointment is booked
+user: what is their number and average rating
+assistant: their rating is 4.3 and number is 707-643-3358
+user: thank you for your help
+assistant: what else can i do for you
+user: no that is it
+assistant: have a nice day

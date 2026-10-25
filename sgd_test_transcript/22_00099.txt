@@ -1,0 +1,35 @@
+user: Can you find a therapist please?
+assistant: In what city you want to be?You need a Psychologist or a Psychiatrist or what kind?
+user: I need a Psychologist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I have for you 10 therapist that could work.You can try a Psychologist in Oakland called Alameda Children'S Specialized
+user: Sounds good for me.Make an appointment for next Monday at 10:30 am.
+assistant: Book an appointment with Alameda Children'S Specialized at 10:30 am on March 4th.Is that okay for you?
+user: No.Make it please for 1st of this month.
+assistant: Book an appointment with Alameda Children'S Specialized on March 1st.Is correct?
+user: Yes, that's good.Tell me their address.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is booked and you should get an confirmation email soon.7200 Bancroft Ave # 125C is the address.
+user: Thank you for all.Now I remembered that I need to request a payment.Make the transactions with Wilson and make it the transfer private.
+assistant: Tell me the amount.
+user: Make it for 180 dollars.
+assistant: You make an private transaction with Wilson and amount is $180.I'm right?
+user: Yes that's true.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request is done.
+user: Thank you for all.Find me an restaurant tagged intermediate priced there for a meal on that day.Something where Peruvian food is served will be great.
+tool(FindRestaurants): ok n_results=2
+assistant: I have for you 2 options that you may like.A nice restaurant in Oakland is La Furia Chalaca.
+user: Outdoor seating they have?
+assistant: No,they don't have.
+user: Okay is good.Book for me a table there.
+assistant: At what time you want to be?
+user: Make it at 1 in the afternoon.
+assistant: Book a table for 2 people at La Furia Chalaca in Oakland on March 1st at 1 pm.Is okay for you?
+user: No, change it for 2 people at 12:15.
+assistant: Reservation for 2 people at 12:15 pm.I'm right?
+user: Yes that's good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation was made.
+user: Thank you very much.That's all.
+assistant: Have a good day!

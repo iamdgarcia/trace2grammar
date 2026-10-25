@@ -1,0 +1,24 @@
+user: Its time to visit some attractions, can you help?
+assistant: Which location do you prefer?
+user: I am looking for something in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: There Alcatraz will be a nice experience. It is a Historical Landmark.
+user: Should I pay at the entrance?
+assistant: Yes you have to take entry tickets.
+user: Good, now look for some movie to watch there. I am fond of Bizarre Story movie. Find a regular show at AMC Kabuki 8.
+tool(FindMovies): ok n_results=1
+assistant: There is 1, Once upon a Time in Hollywood.
+user: Once Upon a Time is ok. What about online movies? are there funny movies especially Ed Sheeran featuring?
+tool(FindMovies): ok n_results=1
+assistant: Yesterday is there.
+user: Yesterday is right choice, play it online.
+assistant: Please confirm your request, online play of Yesterday with English subtitles.
+user: Please play with Spanish subtitles.
+assistant: Ok, your request is playing Yesterday with Spanish subtitles, correct?
+user: Yeah, thank you.
+tool(PlayMovie): ok n_results=1
+assistant: It started, enjoy it.
+user: Great, thank you.
+assistant: Any other help needed?
+user: Not thats all.
+assistant: Have a great day.

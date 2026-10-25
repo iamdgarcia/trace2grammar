@@ -1,0 +1,12 @@
+user: I need help finding a therapist.
+assistant: What kind of therapist do you need? You can say Psychiatrist or a Family Counselor, or anything else.
+user: Please find me a Psychologist.
+assistant: Any particular city I should search in?
+user: I'd like to see someone in Redwood City.
+tool(FindProvider): ok n_results=9
+assistant: The search yielded 9 therapist that might interest you. Would you like to see Becker Hubert J. , a Psychologist in Redwood City?
+user: Please continue searching for other therapists. Find a Psychiatrist in Santa Rosa.
+tool(FindProvider): ok n_results=6
+assistant: How about Beck Jennifer P. , a Psychiatrist in Santa Rosa?
+user: All right. Goodbye!
+assistant: Happy to have been of help.

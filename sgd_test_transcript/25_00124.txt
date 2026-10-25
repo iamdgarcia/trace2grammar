@@ -1,0 +1,30 @@
+user: Tell me about my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There exists an alarm at 5 pm under the title shopping.
+user: Alright, that's fine.
+assistant: Do you wish to include an alarm?
+user: Nope, I do not wish to include new alarms. I want to look for a diner that offers burrito.
+assistant: What place ought I look in?
+user: Get diners inside Daly City.
+tool(FindRestaurants): ok n_results=2
+assistant: There is a lovely diner in Daly City called Celia's.
+user: Could you recommend alternative diners?
+assistant: There is a lovely diner in Daly City called Lisa's.
+user: Yeah, that's fine. I'd like to book a vehicle there. McCarran International Airport is a convenient location for my to pick it up.
+assistant: Do you enjoy Hatchback, SUV, or something else? When would you like to pick up the vehicle?
+user: A SUV would be lovely, and I'd like to pick it up at two pm.
+assistant: What time would you like to begin the vehicle rental, and would you like to include insurance?
+user: I require it from today until the 3rd of this month, and I'd like to purchase insurance.
+assistant: Please include the following information: you are picking up a SUV vehicle from McCarran International Airport on MArch 1st, 2 pm, and the drop of date is March 3rd. It includes insurance.
+user: Yeah, that's fine. What is the vehicle title, and what is its price per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked, the name of the vehicle is Mazda CX-5, and the price is $54.00 per night.
+user: Thank you for your asssitance; could you also share the location? I'd like to share it with Alexis.
+assistant: What location do you wish to share? McCarran International Airport, 6582 Mission Street, or something else?
+user: The location for sharing is McCarran International Airport.
+assistant: Please verify the following information: you are sharing the address McCarran International Airport with Alexis.
+user: That sounds perfect.
+tool(ShareLocation): ok n_results=1
+assistant: Your sharing of address is complete.
+user: Thank you for your help; that's all.
+assistant: Have a pleasant afternoon.

@@ -1,0 +1,21 @@
+user: Find a psychologist therapist for me please.
+assistant: What city should I search in?
+user: Find one in Corte Madera.
+tool(FindProvider): ok n_results=3
+assistant: You can try Jeff Greenwald a psychologist in Corte Madera.
+user: What other therapists could you find?
+assistant: You could try Leslie M. Simon a psychologist in Corte Madera.
+user: Find another therapist in Sebastopol.
+tool(FindProvider): ok n_results=2
+assistant: I have 2 therapists that might work including trying Pamela Culver, psy a psychologist in Sebastopol.
+user: Sounds nice.
+assistant: Would you like to book an appointment with the therapist?
+user: Yes, I'd like to book an appointment for the 6th at quarter to 6 in the evening.
+assistant: Please confirm an appointment with Pamela Culver, Psy at 5:45 pm on March 6th.
+user: Yes, that will work and what is their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You are able to call them at 707-823-7300 at Sebastopol, California 95472, United States. Sorry something was wrong and I couldn't book an appointment. You can try Pamela Culver, Psy for an appointment possibly on March 6th at 5:30 pm.
+user: No thanks for that.
+assistant: What else can I assist with?
+user: Nope, thanks so much and I appreciate it.
+assistant: Glad to help you.

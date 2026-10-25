@@ -1,0 +1,46 @@
+user: Hello! Can you help me find a unisex salon.
+assistant: I'd be happy to. Where should I look?
+user: Please look in SF.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons that meet your criteria in San Francisco. 1512 Barber Shop is very popular.
+user: What's available in Sunnyvale?
+tool(FindProvider): ok n_results=8
+assistant: A+ Haircuts For Men is a well rated salon in Sunnyvale.
+user: Can you tell me the rating and what the phone number is?
+assistant: It has a user rating of 4.1 and you may reach them at 408-743-5780.
+user: Great. Can you help me find a therapist in the area?
+assistant: Would you like me to find someone in Sunnyvale?
+user: Yes, Sunnyvale please.
+assistant: Would you like to visit a family counselor or a psychologist?
+user: I actually would like to visit a psychiatrist.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 psychiatrist in Sunnyvale. The name of the office is Sunnyvale Psychiatry.
+user: What's the contact number?
+assistant: The phone number is 650-380-3823.
+user: Where are they located?
+assistant: They are located at 505 West Olive Avenue.
+user: That works for me.
+assistant: Would you like to make an appointment?
+user: Yes, please book a time for me.
+assistant: What time works best for you?
+user: I'd like it at 11 in the morning, if possible.
+assistant: What day should I schedule your appointment?
+user: I'd like to visit on the 13th of this month.
+assistant: Have I got the details right? You'd like to visit Sunnyvale Psychiatry on March 13th at 11 am.
+user: I'm sorry. Can you make that for the 9th at 3:45 in the afternoon.
+assistant: Of course. You'd like to visit on March 9th at 3:45 pm.
+user: That would be fine.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry but there is no availability at that time. Would you like me to try Sunnyvale Psychiatry on March 9th at 4 pm instead?
+user: That would be okay too.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. You will receive an email confirmation soon.
+user: Great. Can you make me an appointment at the salon for the same day?
+assistant: What time works best for you?
+user: I'd like it at 9:45 in the morning.
+assistant: You'd like to make an appointment at A+ Haircuts For Men on March 9th at 9:45 am. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: You appointment has been made.
+user: Great. That will be everything. Thanks for the help.
+assistant: You're very welcome. Have a wonderful day.

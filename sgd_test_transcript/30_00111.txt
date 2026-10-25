@@ -1,0 +1,37 @@
+user: Please locate salon in Cupertino, a unisex salon.
+tool(FindProvider): ok n_results=6
+assistant: I have 6 located in Cupertino one is Great Clips.
+user: Can you tell me how they are rated?
+assistant: It has a 3.6 rating on average.
+user: How about something in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: This is supposed to be a pretty good one in San Jose called Atelier Salon Willow Glen.
+user: Do they have a listed number?
+assistant: Yes, its 408-293-3494.
+user: Suggest another one please.
+assistant: Okay what about this one in San Jose called Barba & Co. San Jose?
+user: Yes, I like that one.
+assistant: Would you like to book a time slot?
+user: Not right now thank you.
+assistant: What else do you need?
+user: Find a regular show at the 3 Below Theaters And Lounge for me.
+tool(FindMovies): ok n_results=4
+assistant: Do any of these appeal to you - After The Wedding, Fiddler: A Miracle of Miracles or The Art of Self-Defense?
+user: What are the show times for Fiddler, I'll watch that.
+assistant: Should I give you the show times for March 4th?
+user: That is what I was thinking.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 time listed for that show for that day at the 3 Below Theaters and Lounge at this for 4:30 pm.
+user: That great.
+assistant: Do you need more assistance?
+user: Book at the salon we discussed for the same day please.
+assistant: Do you have a preferred time?
+user: Make it for 2 in the afternoon.
+assistant: I am going to schedule you for 2 pm on March 4th at Barba & Co. San Jose do I have the details correct?
+user: You have them right.
+tool(BookAppointment): ok n_results=1
+assistant: Your visit is scheduled just as you requested.
+user: I will need the address and I would like a phone number please.
+assistant: The number is 669-258-9601 and they are located at 1775 Park Avenue.
+user: That will be all thank you.
+assistant: Have a wonderful day.

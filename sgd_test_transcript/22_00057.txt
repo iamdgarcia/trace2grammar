@@ -1,0 +1,51 @@
+user: Can you help me search for a therapist?
+assistant: No problem. Can you tell me where you would like to search and what type of therapist are you looking for?
+user: Can you find a good Family Therapist in Novato?
+tool(FindProvider): ok n_results=2
+assistant: There is a good therapist in Novato who is a Family Counselor I think you may like. Their name is Jones Jeannette.
+user: Actually can you find me a therapist in Gilroy instead?
+tool(FindProvider): ok n_results=5
+assistant: Sure thing. I've found 5 therapist in Gilroy that may work for you. There is a Family Counselor by the name of Leininger Anne that may work for you.
+user: Actually, can you find me a good Psychiatrist instead?
+tool(FindProvider): ok n_results=3
+assistant: No problem. I've found a good Psychiatrist in Gilroy by the name of Bacosa Frances that I think will work for you.
+user: Okay, sounds good. Can you book an appointment for me?
+assistant: Sure. What date would you like to make an appointment?
+user: Make it for March 10th.
+assistant: Okay, what time would you prefer?
+user: Make it for sometime in the morning 11.
+assistant: Okay, just confirm the following for me. Now booking an appointment with Bacosa Frances at 11 am on March 10th. Correct?
+user: No, actually I want to make the appointment for half past 11 in the morning on the 6th of this month.
+assistant: Okay, please confirm the following. Booking appointment for 11:30 am on March 6th.
+user: Yeah, that works.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. You should receive your email confirmation soon.
+user: Thanks. What's their address and phone number?
+assistant: They are located at 8339 Church St # 106 and their number is 408-842-1119.
+user: Thanks a lot! I really appreciate it. I just remembered I also need to make a Payment request from Peter. Please make this transfer private.
+assistant: No problem. What is the amount of the transfer?
+user: Make it for $71.
+assistant: Okay, just confirm the following details. Making a private transacting with Peter for $71. Correct?
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was a success.
+user: Thanks a lot! Can you help find a good restaurant in the area that has good vegetarian options? Any price range is okay.
+assistant: Do you have any particular food preference?
+user: Yeah. Can you find any place with good Noodles?
+tool(FindRestaurants): ok n_results=2
+assistant: I think you should try Great China Garden in Gilroy, I hear it is really nice there.
+user: Sounds interesting. What's the average rating?
+assistant: The user rating averages at around 4.2.
+user: Nah, you got any other recommendations?
+assistant: Another nice restaurant in Gilroy is the Pineapple Village. I think you will enjoy it there.
+user: What is there average rating? Also, grab their phone number for me.
+assistant: The are rated at around 4.3 and their number is 408-842-2888.
+user: Okay, thanks. They sound good.
+assistant: Would you like to reserve a table?
+user: Yeah, I would like to make a reservation for the afternoon 1:30 and I will need a table for three.
+assistant: Okay, please confirm the following for me. Booking a table for 3 at the Pineapple Village in Gilroy on March 6th at 1:30 pm. Correct?
+user: Yea, that works for me. Thanks.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been successful.
+user: Thanks! That will be all for now.
+assistant: My pleasure. Have a good day.

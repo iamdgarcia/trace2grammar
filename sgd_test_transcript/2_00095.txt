@@ -1,0 +1,7 @@
+user: I'm looking for a flight, just one way from Seattle, it'll be for four people. And I want to go on American Airlines.
+assistant: What's the date you want to fly on? And what's your destination?
+user: I want to go on the 4th of this month. My destination is New York.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There's 1 flight that's available. It's with American Airlines. It departs at 4:15 pm. There is a connection. For one ticket it's $304.
+user: Okay, I think I like that. Thank you, I no longer need any more help.
+assistant: Have a fine day, take care.

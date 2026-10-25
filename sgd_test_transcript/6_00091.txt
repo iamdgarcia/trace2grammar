@@ -1,0 +1,18 @@
+user: Can you help me locate a salon that is unisex?
+assistant: In what location would you like me to find a salon?
+user: Can you find me one in Santa Clara.
+tool(FindProvider): ok n_results=8
+assistant: There are 8 salons in Santa Clara that may suit your needs. One such salon is About Time Barber Shop.
+user: Great, that works! I'd like to go ahead and schedule a visit to this salon.
+assistant: For which day and at what time would you like this visit scheduled?
+user: I'd like to go next Thursday morning 11.
+assistant: So, you would like to schedule a visit to About Time Barber Shop for March 7th at 11 am, correct?
+user: Sure, that works. Can you tell me what the average rating is for this place?
+tool(BookAppointment): ok n_results=1
+assistant: Your visit has been scheduled. The establishment has an average rating of 4.8
+user: and can you tell me their exact location?
+assistant: They are located at 2485 De La Cruz Boulevard
+user: Great, thank you!
+assistant: Will there be anything additional?
+user: No, that's it. Thanks again.
+assistant: Take care

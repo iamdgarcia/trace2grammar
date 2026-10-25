@@ -1,0 +1,20 @@
+user: I'm looking for attractions to visit.
+assistant: Any particular city I should search in?
+user: Please search for Portland attractions.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. How about the Park Crystal Springs Rhododendron Garden?
+user: All right, cool. Please find my party of 4 a house rated 4.4 stars or higher, that also offers laundry service.
+tool(SearchHouse): ok n_results=8
+assistant: Sure. no problem. I found 8 houses that you may like. May I suggest the 4.4 star rated house at 1150 Northwest 9th Avenue?
+user: Please give me their phone number first.
+assistant: Okay. They can be reached on +1 503-220-1339.
+user: Please widen the search to include houses rated 4.0 stars or higher.
+tool(SearchHouse): ok n_results=10
+assistant: Sure. Okay. You might be interested in the nice, 4.0 star rated house at 1000 Northeast Multnomah Street.
+user: This house will work for me. Please search for a round trip flight going there.
+assistant: Sure, no problem. Please tell me your origin city, and your preferred departure and return dates.
+user: Find flights leaving Los Angeles Tuesday next week, with a return date of the 12th.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: Your search yielded 5 suitable flights. There's a $247 ticket on an outbound Alaska Airlines connecting flight leaving at 4:40 am. The inbound flight will depart at 5:10 pm. Will that work for you?
+user: That works for me. Thank you, That will be all.
+assistant: Have a wonderful day.

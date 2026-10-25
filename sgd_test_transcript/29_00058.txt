@@ -1,0 +1,24 @@
+user: I need your help finding a 4 star hotel for me. I am looking for one room.I would like a room I can smoke in.
+assistant: Where would you like me to search?
+user: I'm hoping you can locate something in NYC.
+tool(SearchHotel): ok n_results=10
+assistant: I was able to locate 10 lodging choices that fit your needs. I suggest 6 Columbus - Central Park Hotel. This hotel has a 4 star rating.
+user: I will take your advice.
+assistant: I can book a spot there for you if you like.
+user: First I will need a round trip winging to the destination. I am fine with any type of quality ticket.
+assistant: I will need more information first. I think you want to leave March 7th but I do not know when you would like to come back. It would also help to have the location you prefer to depart from.
+user: I would like the flight to leave on the 6th and come back on the 14th. Chi-town is the location I would like to catch the flight at.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Is American Airlines suitable? The total price for the flight comes to $256. You will depart at 5:05 am, have one stop and arrive at your destination at 7 pm.
+user: That flight will be just fine. Now I am ready to book the room you previously found. The start date will be the 8th. I would like the room for six days.
+assistant: I understand to book 1 room on March 8th at 6 Columbus - Central Park Hotel in New York. The reservation will be for 6 days. Is this information correct?
+user: Yes, everything is understood properly.
+tool(ReserveHotel): ok n_results=1
+assistant: I have made the lodging reservation for you.
+user: Are you able to locate happenings in the area for me?
+tool(FindAttractions): ok n_results=10
+assistant: I did find one Museum. I think you will like the 9/11 Tribute Museum.
+user: That is a great idea.
+assistant: Do you need me to search for something else?
+user: Not right now. Thanks so much.
+assistant: Have a nice day.

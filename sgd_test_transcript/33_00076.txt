@@ -1,0 +1,23 @@
+user: Hi! I'm bored. Can you help me find something to do?
+assistant: I'd be happy to assist you. Would you like to see a music or theater event? Where should I search?
+user: I'd like to attend the theater somewhere in London.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 shows that may interest you. May I suggest the very popular A Right Royale Tea showing at Amba Hotel Charing Cross. It is happening on March 14th at 7 pm.
+user: That actually sounds pretty good.
+assistant: Would you like to purchase your tickets now?
+user: Yes, I'd like to go ahead and purchase now.
+assistant: How many do you need?
+user: I only need 1 ticket.
+assistant: You are purchasing 1 ticket to see A Right Royale Tea on March 14th in London. Is that correct?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket purchase has been successful. You'll receive an email confirmation soon.
+user: Can you tell me how much the ticket was and what the address of the venue is?
+assistant: The show is at the Strand and ticket prices are $50.
+user: Great. I'd like to book a luxurious cab ride there.
+assistant: You'd like 1 seat for a luxury ride to Amba Hotel Charing Cross. Is this correct?
+user: That's correct. Can you tell me how much it costs and when it will arrive?
+tool(GetRide): ok n_results=1
+assistant: Your cab should be here in 10 minutes and the ride is estimated to be $34.05.
+user: Thank you for the assistance. That will be all for now.
+assistant: You're welcome. Enjoy the show!

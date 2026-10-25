@@ -1,0 +1,21 @@
+user: I want to hear a song. I'm in the mood for Hillbilly style from three years back. I had heard that the album Gotta Be Me is really good.
+tool(LookupMusic): ok n_results=1
+assistant: There's a song by Cody Johnson called With You I Am on the album Gotta Be Me
+user: That's perfect. Can you check the weather in Richmond for the 13th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should average 83 degrees with a 4 percent chance of rain?
+user: Is it supposed to be windy?
+assistant: Average wind speed should be around 7 miles an hour.
+user: What about the humidity?
+assistant: That will be around 18 percent.
+user: Great thanks. I'd like to hear the song now, any device will do.
+assistant: To confirm: you would like to hear the song With You I Am in the living room.
+user: On second thought play it on the speaker outside.
+assistant: To confirm: you would like to hear With You I Am on the patio.
+user: That's right. Thanks
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thank you for your help.
+assistant: Is there anything else you need?
+user: Not just now, thanks.
+assistant: Have a great day.

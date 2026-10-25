@@ -1,0 +1,23 @@
+user: I want to find some restaurants that have been tagged as intermediate priced for cost. Please include outdoor seating areas.
+assistant: What is your preferred location search?
+user: Look in Calistoga for restaurants.
+assistant: What is your desired kind of food?
+user: Search for places that serve Gastropub.
+tool(FindRestaurants): ok n_results=1
+assistant: I was able to locate 1 restaurant in Calistoga that you may enjoy. Johnny's is a lovely restaurant.
+user: Okay, sounds nice.
+assistant: Do you want me to book a table there?
+user: Yep, go ahead and book a table for 1 person. I'd like a reservation at 1 o'clock in the afternoon on the 9th of March.
+assistant: Making a reservation for 1 person on March 9th at 1 pm at the restaurant Johnny's in Calistoga. Is that right?
+user: Yep, that's it. Can you tell me their user rating and where they are located?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a user rating that is close to 4.2 and are located at 1457 Lincoln Avenue. The reservation has been completed.
+user: Thanks ever so much. Would you get me a shared ride cab to take me there?
+assistant: Find a pool ride for 1 seat that will take you to 1457 Lincoln Avenue. Are these details correct?
+user: Right, that's what I need. What is the estimated time before the cab gets here?
+tool(GetRide): ok n_results=1
+assistant: The ride is booked and headed your way. It should be there in about 7 minutes.
+user: What will be the price?
+assistant: The price of the ride is $13.81.
+user: Your help has been great and that's it.
+assistant: Enjoy the day!

@@ -1,0 +1,25 @@
+user: Hey, I'm so bored, can you find me a bizarre story movie with Maya Hawke and directed by Quentin Tarantino I can watch?
+tool(FindMovies): ok n_results=1
+assistant: How about Once Upon a Time in Hollywood? It has a rating of 85 out of 100 so it's probably good.
+user: Sounds like a fun one.
+assistant: Anything else I can help you with?
+user: Help me find a restaurant I can go to.
+assistant: What kind of food do you feel like eating?
+user: I'd love something Oriental right now.
+assistant: And in which city should I look for it?
+user: In Sunnyvale please.
+tool(FindRestaurants): ok n_results=3
+assistant: Barn Thai is one of the good restaurants in Sunnyvale you may want to check out.
+user: Good. Can you get me a reservation for 4 there?
+assistant: For what time?
+user: At 12 in the afternoon please.
+assistant: So a table for 4 at 12 pm on March 1st at the Barn Thai in Sunnyvale. Is that correct?
+user: Yes, it is. Do they have outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was successful but unfortunately they don't have outdoor sitting.
+user: Okay. What's their user rating?
+assistant: It's around 4.2.
+user: Thanks a lot.
+assistant: Can I help you further?
+user: No, thanks a lot.
+assistant: Have a great day.

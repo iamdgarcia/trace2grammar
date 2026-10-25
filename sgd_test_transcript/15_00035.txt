@@ -1,0 +1,25 @@
+user: Can you please help me find a place to live in Fremont, with 2 baths and a garage?
+assistant: Sure, but first please tell me if you plan to rent or to buy?
+user: I'd like to rent.
+assistant: OK, now please tell me the number of bedrooms you require.
+user: The property must have 3 bedrooms.
+tool(FindHomeByArea): ok n_results=6
+assistant: I would recommend Lincoln Glen. It's a very nice property, located at 4261 Stevenson Boulevard. Rent is $3,750.
+user: Can you please give me the phone number for this property?
+assistant: Sure, you can reach them at 510-656-8200.
+user: Sounds perfect.
+assistant: Do you want me to schedule a visit for you at the property?
+user: Yes, please do.
+assistant: When would you like to visit the property?
+user: I'd like to schedule something for the 4th.
+assistant: Can you please confirm that you want me to schedule a visit to Lincoln Glen on March 4th?
+user: Yes, that's right. Also, please tell me if the house has laundry machines.
+tool(ScheduleVisit): ok n_results=1
+assistant: I've successfully scheduled your visit. They do have laundry machines in the house.
+user: Perfect. Now please show me my active alarms.
+tool(GetAlarms): ok n_results=3
+assistant: At the moment you have 3 alarms set. The first one is named Shopping and it's at 3:30 pm.
+user: Perfect! Thanks!
+assistant: Do you want me to add an alarm for you?
+user: No, not at the moment, thanks! That will be all for now!
+assistant: Have a nice day!

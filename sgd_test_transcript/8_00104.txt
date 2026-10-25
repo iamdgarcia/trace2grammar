@@ -1,0 +1,13 @@
+user: Can you help me find a train to get to where I'm going?
+assistant: Well where are you going?
+user: I'm heading to LAX
+assistant: Where are you coming from and what date do you plan to leave?
+user: I am leaving on the 9th of March from SD
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains that fit that route, including a 6:10 am train for $59
+user: What other options do I have?
+assistant: There's one that leaves a little later at 6:40 am and is $52
+user: That's $7 cheaper, so that sounds great
+assistant: Do you want me to book tickets then?
+user: No I just wanted to know the options for now, thanks
+assistant: See you and just update me if you need help

@@ -1,0 +1,25 @@
+user: I want to meet a Therapist. Can you find someone for me?
+assistant: Where do you want to meet the Therapist? Do you have any particular place to search for?
+user: Yes, find someone in Pleasant Hill. Please search for a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: Do you want to meet Christopher J. Celio who is also a Psychologist in Pleasant Hill?
+user: Let me decide and get me their contact number.
+assistant: Please note down it as 925-827-9876.
+user: Also get the address details.
+assistant: They are located at 101 Gregory Lane.
+user: That is okay and thanks.
+assistant: Shall I book an appointment with that Therapist now?
+user: Of-course, I want to make it now. Please book an appointment on 14th of this month for the time at 4:30 in the evening.
+assistant: Okay, please confirm to book an appointment with Christopher J. Celio on March 14th for the time 4:30 pm.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully confirmed and they will send a confirmation email to you shortly.
+user: Thank you so much. I want to book a cab now to go there.
+assistant: For how many persons and what is your required type of ride? You can select Pool or Regular or anything else.
+user: I want to book the cab for 3 persons and I prefer Luxurious ride.
+assistant: Please confirm to book a cab for 3 with Luxury ride to 101 Gregory Lane.
+user: That is confirmed to proceed. Also I want to know more information. what is the cost for this ride and time taken by the cab to reach here?
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked the car under cost $28.91 and the same will reach you within 14 minutes.
+user: Thanks for your help. That's all for today.
+assistant: Have a nice day .

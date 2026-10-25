@@ -1,0 +1,14 @@
+user: I am interested in going for a movie in mountain view. Can you help in this?
+tool(FindMovies): ok n_results=6
+assistant: What is your opinion about Ad Astra, Chhichhore or Hobbs and Shaw?
+user: I would like to buy tickets for the movie Ad Astra and want to see it on 10th of this month at 22:00. I need 3 tickets.
+assistant: Which show you want? imax or regular
+user: Regular show is okay for me.
+assistant: Please give the confirmation details: You want to buy 3 tickets for the movie Ad Astra in mountain view on march 10th which starts at 10 pm and the show is regular.
+user: Okay..this is perfect...can i know the ticket cost?
+tool(BuyMovieTickets): ok n_results=1
+assistant: I already purchased the tickets and the cost is $10 per head
+user: Thanks a lot.
+assistant: Do you need any other help?
+user: No, thanks a lot
+assistant: Have a nice day

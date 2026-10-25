@@ -1,0 +1,21 @@
+user: I would like to reserve ticket to an event I want 2 tickets for an event versus 10th of this month I heard Anthony green is a good one
+assistant: Whats you prefer City
+user: Look something around Philly
+assistant: Please confirm the following booking tickets for Anthony Green for 2 tickets the date is on March 10th in Philadelphia
+user: Yes that looks for me
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket is booked have a nice time
+user: Cancel North fort what about the buses going I'm looking for four people I don't care if it is adorable or not
+assistant: When are you leaving from and do you have a plan to leave on March 10th
+user: I am planning to leave on this Sunday from NYC
+tool(FindBus): ok n_results=7
+assistant: What about a bus departing please confirm you on the ticket on the bus to New York Sam New York at 7:40 am. and cost $23
+user: That sounds good I want to get the tickets
+assistant: Please confirm the following you want a ticket on the bus from New York to Philadelphia on March 3rd at 7:40 am. for 4 people you don't have any extra luggage
+user: Yes that works for me to which station does it arrive and from which station will it departs
+tool(BuyBusTicket): ok n_results=1
+assistant: You ticket is confirmed it arrives at 10th and filBert it will be departs from Penn station
+user: Thanks a lot for it
+assistant: Can I help you with anything else
+user: Thanks a lot for your help
+assistant: Have a nice day

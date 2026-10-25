@@ -1,0 +1,22 @@
+user: Can you find me a movie to watch?
+assistant: Sure. What is your location?
+user: Find me some Biographical movies in San Jose.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. You might like Fiddler: A Miracle of Miracles.
+user: Fiddler would be perfect. Can you find me some songs now?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. How about Rocketeer by Far East Movement from the album Free Wired?
+user: What type of music is this? What year did it come out?
+assistant: This is a Electropop song from the year 2010.
+user: What else did you find? Can you find me some Simply Three songs from 2017?
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song. How about Rain by Simply Three? It is from the album Undefined.
+user: Yes, that's the one that I want.
+assistant: Do you want to play this song?
+user: Sure. Play it on any device.
+assistant: Confirming that you want to play the song Rain in the Living room?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music.
+user: Thanks! That's all.
+assistant: You're welcome. Have a good day.

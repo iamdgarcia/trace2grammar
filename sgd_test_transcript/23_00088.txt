@@ -1,0 +1,36 @@
+user: Could you help me find train tickets from Phoenix, AZ?
+assistant: Where are you going and on which date did you want to travel?
+user: I'm going to SF and I'd like to find tickets for next Thursday.
+tool(FindTrains): ok n_results=5
+assistant: I found a train leaving at 7 am for $174.
+user: Sure, that works.
+assistant: Did you need me to book tickets?
+user: Yes, I'd like to make a reservation for one seat in economy and I want trip insurance.
+assistant: Please confirm you're booking a Value ticket for 1 with trip insurance on the train from Phoenix to San Francisco on March 7th at 7 am.
+user: That is correct. Which station will the train arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked. The train will arrive at Salesforce Transit Center.
+user: I'd also like to find something interesting to do there on that day.
+assistant: Did you have a category in mind? You can say Music, Theater, or something else.
+user: I'd like something in Theater.
+tool(FindEvents): ok n_results=10
+assistant: Above Ground will take place at Mojo Theatre on March 6th at 5 pm and it is very popular.
+user: That sounds good, but did you have any other events? I'd like something on March 14th.
+tool(FindEvents): ok n_results=10
+assistant: Above Ground Festival will take place at Mojo Theatre on March 14th at 7:30 pm and it is very popular.
+user: Could you help me find something else? I'd like to find something on 9th of March and I like Songs.
+tool(FindEvents): ok n_results=7
+assistant: Alex Cameron will take place at August Hall on March 9th at 6 pm and it is very popular.
+user: That sounds awesome.
+assistant: Did you want to buy tickets for this event?
+user: Not as of now.
+assistant: Did you need help with anything else?
+user: Yes, could you share the location?
+assistant: Who would you like to share it with?
+user: I'd like to share it with Helen.
+assistant: Please confirm you're sharing the location August Hall with Helen.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you. That was helpful. That's all I need.
+assistant: Have a great day!

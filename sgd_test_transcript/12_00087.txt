@@ -1,0 +1,17 @@
+user: Pull up bus schedules please.
+assistant: Sure, I would love to help, can you first tell me when you are planning to leave and where you are headed?
+user: I would like to go to New York on a direct bus. Leaving Washington on March 4th.
+tool(FindBus): ok n_results=7
+assistant: I've located 7 bus options for you. Let's review now. first up is a bus for $36 departing at 6:20 am. Would this work? or is that too early for you?
+user: Which station would I be departing from and arriving at?
+assistant: You would depart from Silver Spring Bus Stop and arrive at Penn station.
+user: This sounds great. I will be needing 4 tickets please.
+assistant: Sure, please confirm you would like to purchase 4 tickets for the bus departing from Washington and arriving in New York on March 4th at 6:20 am. Is this correct?
+user: Yes, that is perfect.
+tool(BuyBusTicket): ok n_results=1
+assistant: Great, I have confirmed your ticket reservations for you
+user: Pull up some 4 star hotel options in the area as well please.
+tool(SearchHotel): ok n_results=10
+assistant: I've located 10 options for you. I'll start with 6 Columbus - Central Park Hotel which has a 4 star rating as you requested.
+user: That sounds ok, That will be all for now. Thanks for your help today.
+assistant: Ok, Your welcome! Have a great day. Good Bye!

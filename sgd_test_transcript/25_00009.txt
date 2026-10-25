@@ -1,0 +1,25 @@
+user: Hi, I'd like to do a private transfer out of my saving account for $127.
+assistant: Who is it going to?
+user: His name is Diego.
+assistant: Confirming a debit card payment of $127 to Diego and this is a private transfer.
+user: That's right, thank you.
+tool(MakePayment): ok n_results=1
+assistant: The payment transfer was successful and should be received by the other party shortly.
+user: Thanks. I also need a restaurant please and I don't care about the price range. Anything is fine.
+assistant: What kind of cuisine are you interested in?
+user: I really have a hankering for noodles.
+assistant: All right, what city would you like?
+user: I am going to be in Antioch.
+tool(FindRestaurants): ok n_results=3
+assistant: Very good, Antioch. How about the restaurant Double Dragon?
+user: Sounds good to me thanks. May I get a table for 3 please next Wednesday? Let's try for 11 o'clock in the morning.
+assistant: Confirming a reservation for a party of 3 at Double Dragon on March 6th at 11 am in the city of Antioch.
+user: Sorry, can you please set that for five in the evening instead?
+assistant: Confirming a 5 pm reservation for 3.
+user: Great, thanks. Could you tell me, is there patio seating there and do they serve vegetarian dishes in addition to their regular menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: There's no outdoor dining, I'm sorry, and they do have vegetarian options. Your table has been reserved.
+user: Thanks a lot, I appreciate it.
+assistant: May I help you with anything else today?
+user: Nope, that's all I need.
+assistant: Thank you very much.

@@ -1,0 +1,21 @@
+user: Get me a bus, leaving from SF to Long Beach, a direct bus.
+assistant: When are you leaving?
+user: Leaving Thursday next week
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses and there is one departing at 7 am and costs $48
+user: Whats the arrival and departing station?
+assistant: The departure is from Transbay Terminal and arrival at Downtown Station
+user: That is great
+assistant: Should i get the tickets?
+user: Yes, please do
+assistant: how many tickets?
+user: Make it for four people
+assistant: Please confirm: Booking 4 bus tickets from San Francisco to Long Beach on March 7th at 7 am, without extra luggage
+user: Yes thats right
+tool(BuyBusTicket): ok n_results=1
+assistant: your tickets are booked
+user: Please find me a two star hotel there.
+tool(SearchHotel): ok n_results=1
+assistant: There is a 2 star hotel known as Hampton Inn Long Beach Airport
+user: sounds right, thats all
+assistant: have a great day!

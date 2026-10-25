@@ -1,0 +1,31 @@
+user: I need to make a payment.
+assistant: What is the name of the contact you would like to make a payment to?
+user: I need to send it to Amelia.
+assistant: From which account would you like me to transfer from?
+user: Send it from my in-app balance.
+assistant: What amount would you like to transfer?
+user: sixty two dollars.
+assistant: Please confirm the following: You would like to transfer $62 from account app balance to Amelia.
+user: Yes that is correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment was made without issue.
+user: Great, thank you. Can you find me a restaurant now?
+assistant: What kind of food would you like?
+user: Find me a place that serves Ramen.
+assistant: In which location would you like me to search in?
+user: Find me a restaurant in San Jose.
+tool(FindRestaurants): ok n_results=10
+assistant: I've found 10 restaurants that meet your criteria. Would Bluefin in San Jose work?
+user: Yes, I've been there before. That sounds good.
+assistant: Would you like to reserve a table there?
+user: Yes. Get me a table for 4 on March 13th.
+assistant: What time would you like me to make the reservation for?
+user: Make it for the afternoon 12.
+assistant: Please confirm the following: You would like to reserve a table for 4 at Bluefin in San Jose. You would like the reservation to be for March 13th at 12 pm.
+user: Yes, I confirm. What is their address by the way?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was made without issue. The street address of Bluefin is 754 The Alameda #10.
+user: Can you tell me if this restaurant is reasonably priced?
+assistant: The restaurant is reported as having a moderate price ring.
+user: Great. Thank you, that will be all.
+assistant: You're welcome. Have a nice day.

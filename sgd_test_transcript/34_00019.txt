@@ -1,0 +1,27 @@
+user: Can you find me a hotel in Cape Town?
+tool(SearchHotel): ok n_results=10
+assistant: There's a nice 5 star hotel called 12 Apostles Hotel & Spa.
+user: That sounds great.
+assistant: Shall I make a reservation?
+user: Not just yet.
+assistant: Can I help you with anything else?
+user: Can you look up some attractions without an entry fee?
+tool(FindAttractions): ok n_results=6
+assistant: I found 6. You might like the Bo-Kaap Museum.
+user: What's their phone number?
+assistant: It's 21 481 3938.
+user: Thanks. Now let's reserve the hotel. I'll need 2 rooms.
+assistant: What date are you checking in and how long are you staying?
+user: The 2nd of this month for five days.
+assistant: To verify: You would like to reserve 2 rooms at the 12 Apostles Hotel & Spa in Cape Town for 5 days starting March 2nd.
+user: No make it 7 days instead.
+assistant: To verify: you want 2 rooms for 7 days.
+user: Actually make it for later today and I'll need 3 rooms.
+assistant: To confirm: You would like to reserve 3 rooms starting March 1st.
+user: Yes, that's perfect.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thanks for all your help.
+assistant: Is there anything else you need?
+user: No thanks, I appreciate your patience.
+assistant: Have a nice day. Bye.

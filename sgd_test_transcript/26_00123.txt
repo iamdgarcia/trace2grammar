@@ -1,0 +1,38 @@
+user: can you fine me train tickets leaving from portland?
+assistant: where are you going?
+user: i'm going to seattle, wa.
+assistant: when did you want to leave?
+user: i want tickets for the 6th of march.
+tool(FindTrains): ok n_results=9
+assistant: there's 9 trains for you. how about one that leaves at 9:10 am and costs $61.
+user: that works for me.
+assistant: do you want to reserve them?
+user: not at the moment. can you find me something fun to do on that day?
+assistant: do you like music or theater or any topic like that?
+user: i like theater. can you find me something for march 7th?
+tool(FindEvents): ok n_results=10
+assistant: there's a beatleconcert happening on 12th avenue arts on march 7th at 6:30 pm.
+user: that sounds cool.
+assistant: do you want tickets?
+user: no, not at the moment.
+assistant: is there something else i can do?
+user: can you find me a kid-friendly garden?
+tool(FindAttractions): ok n_results=10
+assistant: there's a park there called alki beach park.
+user: is it free? what's the number?
+assistant: no, there's a fee. you can call them at 206-684-4075.
+user: are there any other places you know of?
+assistant: there's also a park called carkeek park.
+user: okay, can you find me a house around there?
+tool(SearchHouse): ok n_results=10
+assistant: there's 10 i found for you. there's a house with a 4.5 rating on 1000 1st avenue.
+user: does it offer laundry service?
+assistant: yes it does.
+user: what is their number?
+assistant: you can call them at +1 206-957-1000.
+user: okay, looks perfect.
+assistant: do you want to reserve it?
+user: no thanks.
+assistant: is there anything else?
+user: no that's it.
+assistant: have a great day.

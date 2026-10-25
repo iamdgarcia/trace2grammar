@@ -1,0 +1,17 @@
+user: Hello, I was wondering if you could help me find a place to eat?
+assistant: Yes, I can certainly do that. Is there a city you would like to focus on? And what type of cuisine?
+user: I would like to eat at a barbecue restaurant. Preferably somewhere in Emeryville.
+tool(FindRestaurants): ok n_results=1
+assistant: I have found 1 restaurant that matches your inquiry. The Bureau 510 is a barbecue restaurant located in Emeryville.
+user: Yes, that works for me. Can you help me book a table there? It will be a reservation for one person on March 10th at 11:45 am.
+assistant: Please confirm the reservation details: A table for 1 at The Bureau 510 in Emeryville for March 10th at 11:45 am.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, it seems as though the 11:45 am time slot is unavailable. Would you be fine with a reservation for 1 at The Bureau 510 on March 10th at 12 pm instead?
+user: Yes, I can do that.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been booked.
+user: Thank you for your help!
+assistant: Is there anything else I can do for you today?
+user: No, that will be all. Thank you again.
+assistant: Have a good day, goodbye!

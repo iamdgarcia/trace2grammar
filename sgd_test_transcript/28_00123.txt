@@ -1,0 +1,38 @@
+user: Would you show any attractions of visit with child-friendly and any type of attractions is okay for me.
+assistant: In which city you want the attractions in?
+user: Search attractions around Toronto, Canada.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions of your choice ..among them one 3D Toronto Sign and it is a tourist attraction.0000000
+user: Is there a entrance fees and can i know the phone number?
+assistant: There is a entry fee and contact number is 416-392-2489
+user: Do you know any other attractions?
+assistant: There is a attraction called Aga Khan Museum and this is a museum.
+user: Okay...fine..can you find me a rental car there?
+assistant: Which date you start car rental? till what date you need the car and do you need to pick the car from Toronto?
+user: It is fine and i need the car from 8th of March and need it till 10th of this month
+assistant: What time you need to pick up the car?
+user: I require to pick the car at 7:30 pm
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found a nice Sedan Buick Regal Sportback car available at Toronto Pearson International Airport
+user: What is it's cost per day?
+assistant: It costs at $33.00 per day
+user: Fine and i need to book the rental car
+assistant: You need to add insurance?
+user: I need insurance
+assistant: Please give confirmation details: You are picking the Sedan car from Toronto Pearson International Airport on March 8th at 7:30 pm and drop off date is on March 10th. It comes with insurance
+user: That is okay
+tool(ReserveCar): ok n_results=1
+assistant: Your car booking is done
+user: Thank you.I want you to share the location and address to share is Aga Khan Museum
+assistant: With whom you to share with?
+user: I want to share with Abigail
+assistant: Please give confirmation details: You will be sharing location Aga Khan Museum with Abigail
+user: No, i will be sharing it with Steven
+assistant: Please give confirmation details: You will be sharing location Aga Khan Museum with Steven
+user: That is fine
+tool(ShareLocation): ok n_results=1
+assistant: Your sharing location is done
+user: thank you very much
+assistant: Any other help?
+user: No, thanks a lot
+assistant: Have a wonderful day

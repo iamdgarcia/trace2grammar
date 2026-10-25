@@ -1,0 +1,25 @@
+user: i like to travel in order to attend a meeting. Will you find me a train?
+assistant: In which city you like depart from? At what date do you wish to travel? TO which city you are planning to go?
+user: Going to Anaheim, CA from SD. I need tickets on 13th of MArch.
+tool(FindTrains): ok n_results=8
+assistant: There is one train which is departing at 8:30 am . Its costs $48 in total.
+user: Not interested. Whether any other train available? I want value tickets.
+tool(FindTrains): ok n_results=8
+assistant: There is one train which is departing at 9:10 am . Its costs $52 in total.
+user: ok thats great. it suits for me.
+assistant: Whether i need to book tickets in that train?
+user: Yes, i want to make reservation. I need also trip insurance.
+assistant: HOw many tickets do you need?
+user: i need one seats.
+assistant: Please check and confirm the following details. Train ticket need to be booked which will depart from San Diego. The destination place is Anaheim. The train leaves on march 13th and Leaves at 9:10 am. Number of Passengers is 1 people. It is a value ticket and it has trip insurance.
+user: ok thats great. its suits for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Ticket has been booked successfully.
+user: what is the station name from which train depart?
+assistant: the train is leaving from Santa Fe Depot.
+user: What is the destination station name?
+assistant: The train arrives at Anaheim Intermodal Center.
+user: THanks a lot for you immense help.
+assistant: Whether i need to do anything else?
+user: No, Not now . thanks for your care.
+assistant: Bye , have a wonderful day.

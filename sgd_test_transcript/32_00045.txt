@@ -1,0 +1,24 @@
+user: Can you help me look up some good tunes from one years ago. The album Narrated For You is definitely worth hearing, I've been informed.
+tool(LookupMusic): ok n_results=6
+assistant: There are 6 tunes that you may enjoy. One is Boy in The Bubble by Alec Benjamin and it is from the Narrated For You album.
+user: Perfect. That's what I was looking for!
+assistant: You want to listen to this track?
+user: Not this second. I want to search for some films worth watching right now instead.
+assistant: Shall I search in a specific movie category?
+user: Sure, I would love a good Suspense movie.
+tool(FindMovies): ok n_results=4
+assistant: There are at least 4 movies that match your tastes. There's Madeline's Madeline, Rojo, and The Art of Self-Defense, all good choices.
+user: Madeline's Madeline sounds like a winner. Now I'd like to go ahead and listen to the song you told me about earlier.
+assistant: You want to listen to Boy In The Bubble in your Living Room, correct?
+user: Yes, that would be awesome. What genre of music is this song?
+tool(PlayMedia): ok n_results=1
+assistant: The song is in the Pop music category. Hope you like it.
+user: Oh, I'd like to review my current alarms, please.
+tool(GetAlarms): ok n_results=3
+assistant: Presently, you have 3 alarms. One is called Coffee and it is an 8:30 am alarm.
+user: What are the other ones?
+assistant: There is also an alarm, Catch bus, with a time of 9:30 am.
+user: What are the remaining alarms?
+assistant: You also have an alarm called Pick up Kids that has a 4:30 pm time.
+user: Excellent, thank you. That's everything for me for now.
+assistant: Have a nice day.

@@ -1,0 +1,20 @@
+user: I'm going to see a movie with some friends this weekend and I'm trying to find something to see. Help me find an Action movie.
+tool(FindMovies): ok n_results=5
+assistant: I found 5 movies you might like. How about Angel Has Fallen? It received a rating of 39 out of 100.
+user: Who is in this movie and who directed it?
+assistant: The movie stars Nick Nolte and was directed by Ric Roman Waugh.
+user: What other movies are playing? What about something for Kids that has Doug Erholtz in it?
+tool(FindMovies): ok n_results=1
+assistant: I found the movie Paprika that was rated 84 out of 100.
+user: Okay, that sounds good. How about some music? I'm looking for something from 2015.
+tool(LookupMusic): ok n_results=10
+assistant: How about Back It Up by Prince Royce from the Double Vision album?
+user: Yes, that's the one I was thinking of.
+assistant: Would you like me to play it?
+user: Yes, play it on any device.
+assistant: Okay, just to confirm: I'm playing Back It Up in the Living room.
+user: Yes, perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: Thanks, that's all for now.
+assistant: Have a great day!

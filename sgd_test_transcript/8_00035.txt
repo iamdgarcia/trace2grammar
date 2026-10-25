@@ -1,0 +1,27 @@
+user: I need to pay for something and I'd like to transfer the money privately from my checking account. It's for one hundred and fifty four dollars.
+assistant: Who are you sending the money to?
+user: It will be sent to Mary.
+assistant: I'll sent Mary $154 from you debit card in a private transaction. Is this correct?
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: I've successfully complete the transaction. Mary should have the money quickly.
+user: Thanks so much. I also need to request money.
+assistant: How much do you want to request?
+user: The amount is 132 bucks.
+assistant: And who do you want to request from?
+user: The person I'm requesting is Rachel.
+assistant: You will make a transaction for $132 with Rachel, this will be publicly visible. Is that correct?
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: I've successfully made the payment request.
+user: Thanks so much.
+assistant: What else can I do for you?
+user: I need to make a payment now. It's to Svetlana for $84 from my UnionPay.
+assistant: I'll send Svetlana $84 from your credit card. This will be publicly visible. Is everything correct?
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: I've successfully made the payment request. Svetlana should have the funds quickly.
+user: Thank you for the help.
+assistant: Do you need anything else?
+user: No, thanks again.
+assistant: Take care then, farewell.

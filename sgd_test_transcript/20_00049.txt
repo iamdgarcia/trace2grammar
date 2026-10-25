@@ -1,0 +1,25 @@
+user: I need to find a car to rent. I'd like a pickup in the evening 4:30.
+assistant: Starting on what date please?
+user: The 8th of this month please in Portland. Any kind of car is okay.
+assistant: When will you need the car until?
+user: Just till the 9th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 options for you. At the Portland Bus Station, I have an Alfa Romeo Stelvio, which is an SUV.
+user: For what price please?
+assistant: That one is $39.00 daily.
+user: Sounds like a nice one, okay. I also need a house to stay in for two, and I'd like a place with laundry service please.
+tool(SearchHouse): ok n_results=10
+assistant: There's a house with a 4.1 rating located at 1000 Northeast Multnomah Street.
+user: Yes, that sounds perfect.
+assistant: Shall I make a reservation there for you?
+user: Not at the moment, no.
+assistant: Anything else right now?
+user: Yes, I want to book the car rental.
+assistant: Are you interested in adding insurance?
+user: No, I'm not.
+assistant: Confirming your pickup of a rental SUV at Portland Bus Station on March 8th at 4:30 pm and a March 9th return. There is no insurance, per your request.
+user: Thanks, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: The booking is complete.
+user: Okay, I'm good then.
+assistant: Thank you very much.

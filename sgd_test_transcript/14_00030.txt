@@ -1,0 +1,19 @@
+user: Is there a movie you can find online that I can watch?
+assistant: Which types of movies are you interested in?
+user: I like watching action movies in general.
+tool(FindMovies): ok n_results=5
+assistant: I found 5 movies you may like, would you be interested in Angel Has Fallen, Hobbs and Shaw, or Mission Mangal?
+user: I think Mission Mangal sounds great, please play it with Hindi subtitles.
+assistant: The movie Mission Mangal will play shortly with Hindi subtitles, is that correct?
+user: That is correct, thanks.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is now playing, hope you enjoy it.
+user: What actor starred in this movie?
+assistant: One notable actor in this movie is Sharman Joshi.
+user: Great, thanks for the tidbit.
+assistant: Anything else that I can help with?
+user: Tell me the what the weather will be in Point Reyes Station, on the 8th of March.
+tool(GetWeather): ok n_results=1
+assistant: Weather for that city should be 91 degrees Fahrenheit, with a 14 percent chance of rain.
+user: Thanks for telling me the weather, that is all I needed, good bye.
+assistant: Your welcome, cheers.

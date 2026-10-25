@@ -1,0 +1,12 @@
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=4
+assistant: There is a Wake up alarm for 7 am.
+user: Ok.
+assistant: Would you like to add an alarm?
+user: Yes. I want to add an alarm for 5 o"clock in the evening.
+assistant: Please confirm: add a alarm named New alarm for 5 pm.
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been successfully added.
+user: Thanks, that is all I needed.
+assistant: Your welcome.

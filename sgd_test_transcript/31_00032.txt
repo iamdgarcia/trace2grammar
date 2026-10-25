@@ -1,0 +1,32 @@
+user: I haven't gotten my hair cut in way too long. Can you look up salons for me?
+assistant: Sure, in what city?
+user: Anywhere in Santa Rosa would be great.
+tool(FindProvider): ok n_results=9
+assistant: Ok, I found 9 possible options. It looks like Daredevils & Queens is a nice salon in Santa Rosa. How about that?
+user: What's their phone number?
+assistant: It's 707-575-5123
+user: Ok, that sounds good.
+assistant: Do you want to go ahead and make an appointment with them?
+user: No, maybe later. I also want to see a movie while I'm there. Can you check what's playing?
+tool(FindMovies): ok n_results=10
+assistant: sure, it looks like After The Wedding, Fiddler: A Miracle of Miracles, and Good Boys are all playing right now.
+user: Good Boys sounds good.
+assistant: Ok, do you want to buy tickets?
+user: No, not yet.
+assistant: Ok, anything else i can help with?
+user: Yes, actually, can you look up showtimes for this Saturday at Airport Stadium Cinemas?
+tool(GetTimesForMovie): ok n_results=1
+assistant: Sure, I found 1 showtime at 9:30 pm in Airport Stadium 12.
+user: Ok, that sounds good. I also want to book an appointment at that salon you found.
+assistant: No problem, for what time?
+user: I'd like it for half past 6 in the evening
+assistant: Sure. To confirm, you'd like to book an appointment at Daredevils & Queens for 6:30 pm on March 2nd. Is that right?
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Ok, your appointment is booked.
+user: Great, thanks. What's the address?
+assistant: It's at 122 4th Street.
+user: Ok, and what's their rating?
+assistant: It's a 4.6 average.
+user: Ok, thanks for the info. That's all I need.
+assistant: Sure, have a pleasant day.

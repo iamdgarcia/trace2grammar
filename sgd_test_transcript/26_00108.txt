@@ -1,0 +1,36 @@
+user: Find me a train from Washington. I need 2 seats
+assistant: Where do you want to go?
+user: I want to go to NYC
+assistant: On what date?
+user: Look for the tickets on 9th of this month
+tool(FindTrains): ok n_results=9
+assistant: I found 9 trains. How about the train that departs at 6:20 am? The cost is $127 in total
+user: Is there any other train? I want the train from Chicago with fully refundable tickets
+tool(FindTrains): ok n_results=7
+assistant: How about the train which departs at 7:30 am and the cost is $273 in total
+user: Find another train. Look for economy tickets on 7th of this month
+tool(FindTrains): ok n_results=6
+assistant: I found 6 trains. How about the train that departs at 8 am and the cost is $202 in total
+user: On which station it arrives and fro where does it leaves?
+assistant: The train leaves from Chicago Union Station and arrives at Grand Central Station
+user: That's nice one
+assistant: Can I book the tickets?
+user: No Not now
+assistant: Do you need anything else?
+user: Find me something interesting to do there on that day
+assistant: Is there any particular category you prefer like Music or theater or anything else?
+user: Look for Drama
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events. How about Acting For Teens at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm
+user: That's good one
+assistant: Can I buy ticket?
+user: No I don't want to buy ticket now
+assistant: Do you need anything else?
+user: Find me some attractions there which should be child-friendly
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. How about 9/11 Tribute Museum which is a museum
+user: That's great. Find me a house to stay there with laundry service. Look for the room with 4.4 rating and for one person
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. How about the house at 111 North 12th Street, Brooklyn. The rating is 4.4
+user: That's nice one. That's all for now
+assistant: I am glad to help you.

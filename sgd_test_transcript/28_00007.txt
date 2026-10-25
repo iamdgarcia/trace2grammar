@@ -1,0 +1,21 @@
+user: I would like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies. What about Steel Magnolias the movie has a rating of 70 /100.
+user: Sounds good. Can you find a restaurant?
+assistant: In which location and what type of food should I search for?
+user: I would like a restaurant in San Fran that serves Sushi.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants. There is 2g Japanese Brasserie located in San Francisco.
+user: What is their address?
+assistant: They are located on 601 Van Ness Avenue.
+user: What is the rating of the restaurant.
+assistant: The rating is 3.5.
+user: I would like to book a table at that restaurant
+assistant: What time should I make the reservation for?
+user: I would like the reservation for 1 o'clock in the afternoon.
+assistant: Booking a table for 2 people, at 2g Japanese Brasserie in San Francisco for 1 pm on March 1st.
+user: Yes, that is perfect.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: Thank you that is all I needed.
+assistant: Have a good day.

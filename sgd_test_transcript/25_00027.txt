@@ -1,0 +1,24 @@
+user: I would really enjoy seeing a movie.
+assistant: Where would you like to see the movie?
+user: I would like to find a show in San Jose.
+tool(FindMovies): ok n_results=10
+assistant: You have 10 choices. You may like Ad Astra, After The Wedding or 47 Meters Down: Uncaged. Let me know if you like the choices I made.
+user: Yes. I would like to see Ad Astra. At the moment I would also like to listen to music.
+tool(LookupMusic): ok n_results=10
+assistant: I think you will enjoy a song from the album Love Songs From A Lolita.It is called New Friends and written by Maty Noyes.
+user: I have not heard o that song. Which type of music is it?
+assistant: The music is labeled as Pop.
+user: Is this piece from "19.
+assistant: No. This piece was done in 2018.
+user: I'm not sure if I would like to listen to that. Can you find a record called Nayutan Sei Kara No Buttai Y. I heard it is really good.
+tool(LookupMusic): ok n_results=1
+assistant: I found Nayutan Sei Kara No Buttai Y. Have you heard the song Planet Loop done by Nayutalien.
+user: That is the sone I was trying to remember. I would love to hear that song. You may start it on the gadget of your choice.
+assistant: I will play Planet Loop in the Living room for you. Okay?
+user: Please and thank you.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you like the tune.
+user: I know I will, thanks.
+assistant: What else may I assist you with today?
+user: I'm fine, but thanks for asking.
+assistant: No Problem. Have a good one.

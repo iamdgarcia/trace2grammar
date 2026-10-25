@@ -1,0 +1,20 @@
+user: Hi, could you help me search for a train please?
+assistant: Which city will you be departing from and rravelling to?
+user: I will be travelling from LA to Anaheim, CA.
+assistant: And which date will you be travelling on?
+user: Likely on the 14th of March.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains available, one of which departs at 6 am and costs $35.
+user: I see, and which station will I be departing from and travelling to.
+assistant: You will be travelling from Union Station to Anaheim Intermodal Center.
+user: That sounds great!
+assistant: Would you like me to make a reservation for you?
+user: Sure, could you do so please?
+assistant: How many tickets do you need and do you require insurance?
+user: Yes, help me 1 seat with insurance please.
+assistant: Please confirm your value ticket for 1 travelling from Los Angeles to Anaheim on March 14th at 6 am.
+user: That sounds great!
+tool(GetTrainTickets): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much for your kind assistance, that is all I need.
+assistant: Sure, have a great day ahead!

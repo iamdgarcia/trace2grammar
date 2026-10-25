@@ -1,0 +1,18 @@
+user: I'm looking for something interesting to do.
+assistant: Is there any particular type of event you are looking for? What area do you want to look in?
+user: I'm looking for an event around Philly and I really would like a musical performance.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events you may like. How about Anthony Green at The Foundry on March 10th at 6 pm?
+user: How much does the event cost and where is it taking place?
+assistant: The event costs $60 and is located at 29 East Allen Street 2nd Floor.
+user: Okay, that sounds great.
+assistant: Would you like to purchase tickets for the event.
+user: Yes, I do.
+assistant: How many tickets do you need?
+user: I need to buy 4 tickets.
+assistant: Okay, I have an order with 4 tickets for Anthony Green on March 10th in Philadelphia, right?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have purchased the tickets, enjoy!
+user: Thank you, that is all I need.
+assistant: Have a great day.

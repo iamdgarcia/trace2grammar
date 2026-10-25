@@ -1,0 +1,37 @@
+user: I'd like to rent a car, preferably a sedan, until 14th of March. Please help me.
+assistant: I can help you with that. What date and time would you like to pick up the car?
+user: I'd like to pick it up next Thursday at 10:00.
+assistant: What city would you like to rent the car from?
+user: Please search for cars in Seattle, WA.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found a nice Lexus GS Sedan car, available at Seattle-Tacoma International Airport.
+user: Any other recommendation?
+assistant: There's a nice Audi A8 GS Sedan car, available at King Street Station.
+user: What are the daily charges?
+assistant: The daily charges are $35.00.
+user: Do you have anything else available from the 8th of this month?
+tool(GetCarsAvailable): ok n_results=4
+assistant: Sure. How about the nice Hyundai Ioniq Sedan car, available at Seattle-Tacoma International Airport?
+user: What's the daily cost?
+assistant: The daily cost is $26.00
+user: That works for me.
+assistant: Would you like to reserve the car?
+user: I don't want to reserve it right away.
+assistant: Would you like my help with anything else?
+user: Could you find me buses going there? It doesn't matter whether the bus is direct or not.
+assistant: I'm sorry. I did not understand the city you want to leave from. Please say the city you want to depart from, and the date of departure.
+user: I'll be leaving from Portland, Or on the 6th.
+tool(FindBus): ok n_results=10
+assistant: There's a $32 bus leaving at 7 am.
+user: There's been a change of plans. I now want a bus for 3 people leaving on March 4th.
+tool(FindBus): ok n_results=10
+assistant: I found a $32 bus leaving at 11:20 am.
+user: What other recommendations do yo have?
+assistant: Will the $29 bus leaving at 11:50 am work for you?
+user: Yes, that works for me.
+assistant: Will there be anything else?
+user: Please find me a one-way United Airlines flight going there on 5th of this month. I'm comfortable with any ticket class.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: I found a direct, United Airlines flight departing at 4:40 am, costing $64 per ticket.
+user: That works. Thank you. I don't need anything else.
+assistant: Have a lovely day.

@@ -1,0 +1,17 @@
+user: I have some free time for me and I want to spend it by visiting attractive places for which I need your help.
+assistant: Which is your convenient place to search for the attractions?
+user: I want to visit attractive places in LA.
+tool(FindAttractions): ok n_results=10
+assistant: What about your opinion on visiting a Historical Landmark like Angels Flight Railway?
+user: This is fine and I also want to stay there for a while for which I need a house with rating 4.4 or higher which I need for two persons.
+tool(SearchHouse): ok n_results=10
+assistant: I got 10 houses from which the one located at 1753 Orchid Avenue is the best one which also having the rate is 4.4. Is this okay for you?
+user: Yes, of-course. I also want to search for a round trip flight to go there. I need 3 tickets from Washington and the returning date will be the 10th.
+assistant: On which date you want to start your travel?
+user: I want the flight from Saturday this week.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Please confirm to book a connecting flight from American Airlines which takes off at 10:30 am and return flight takes off at 7:40 am under the ticket cost $366.
+user: Yeah, that is correct. Book the same.
+assistant: Anything else you need from me?
+user: No, nothing and thanks.
+assistant: Have a great day.

@@ -1,0 +1,44 @@
+user: Make a payment for me
+assistant: To who? And for how much?
+user: I need to pay Yumi 15 dollars
+assistant: Should I transfer it from your app balance or debit card?
+user: Send it from my JCB
+assistant: Confirming a public transfer of $15 from your credit card to Yumi
+user: Yes confirmed, thanks
+tool(MakePayment): ok n_results=1
+assistant: It's been made and they'll see the money in a bit
+user: Thanks for that, now can you find me a train.
+assistant: What city are you looking to leave from?
+user: I am coming from Fresno, CA
+assistant: What date do you want to travel and where are you going?
+user: I need to travel to Anaheim, CA on the 1st
+tool(FindTrains): ok n_results=6
+assistant: There are 6 trains that could work including a 7 am train for $72
+user: What other trains could work? I need 2 seats and I want a conditionally refundable ticket
+tool(FindTrains): ok n_results=5
+assistant: There are 5 trains that work including a 9:30 am train for $126
+user: What else could work, just one seat is needed
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains that work including a 10:50 am train for $66
+user: What station does this leave from?
+assistant: The train is leaving from Fresno Station
+user: What station does this arrive at?
+assistant: It will arrive at Anaheim Intermodal Center
+user: That sounds great
+assistant: Do you want me to book you tickets?
+user: Not right now, I'll think about it. But can you check the eather on the 10th in Anaheim, CA
+tool(GetWeather): ok n_results=1
+assistant: The temperature is gonna be 76 degrees with a 9 percent chance of it raining
+user: How windy is it gonna be?
+assistant: It's gonna be around 8 miles per hour winds
+user: Sure that works
+assistant: Anything else you'd like
+user: Can you get tickets for the train earlier, and add trip insurance to it
+assistant: Confirming you want a ticket for 1 in Anaheim leaving Fresno on March 1st at 10:50 am and it's a value ticket with insurance
+user: That works for me
+tool(GetTrainTickets): ok n_results=1
+assistant: It's been booked
+user: Great, thanks for being so easy to work with
+assistant: Sure, what else can I do?
+user: Nothing else, that's all
+assistant: OK then, take care!

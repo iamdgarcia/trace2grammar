@@ -1,0 +1,36 @@
+user: I am looking for something fun to do. Will you help me find some interesting events?
+assistant: Are there certain type of events you prefer?
+user: Yes, I enjoy anything that has music.
+assistant: In which city should I search?
+user: Please look in the city of Philly.
+tool(FindEvents): ok n_results=10
+assistant: I have found 10 events that meet your criteria. You may like seeing Anthony Green at the Foundry. This event is on March 10th at 6 pm.
+user: That does sound good.
+assistant: Are you interested in purchasing tickets?
+user: No, not right now.
+assistant: What else may I assist you with today?
+user: I am interested in finding a house with laundry service in the area. This will be for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: Well there is a beautiful house, with a 4.5 rating, located at 1 Logan square.
+user: That does sound nice. I wonder if taking a bus there an option.
+assistant: Is the date you are planning to leave March 10th?
+user: No, I am planning to leave later today.
+assistant: What area will you be leaving from?
+user: I am departing from New York City.
+tool(FindBus): ok n_results=7
+assistant: There is a 7:40 am bus that costs $26.
+user: That one would work.
+assistant: Are you interested in purchasing a bus ticket?
+user: No, not right now.
+assistant: What else can I help you with today?
+user: I would like to purchase two tickets to the event you found earlier.
+assistant: Please confirm you are wishing to buy 2 tickets to Anthony Green in Philadelphia on March 10th.
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have confirmed your ticket purchase. Enjoy the concert!
+user: How much is each ticket?
+assistant: The ticket is $60.
+user: What is the venue address?
+assistant: The venue is located at 29 East Allen Street 2nd Floor.
+user: Thanks so much! I appreciate your help!
+assistant: Have a wonderful day!

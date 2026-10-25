@@ -1,0 +1,28 @@
+user: Please help me to find a therapist in Pleasant Hill. I want to meet a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: I searched and found 4 therapists for you. Do you want to meet Christopher J. Celio, a Psychologist at Pleasant Hill.
+user: Could you find any other therapists?
+assistant: Do you want to meet David A. Flakoll, a Psychologist at Pleasant Hill.
+user: What is their contact address?
+assistant: Their contact address is 101 Gregory Lane.
+user: It is nice.
+assistant: Shall I book an appointment?
+user: Yes. Please go ahead.
+assistant: When do you want to meet him and in which time do you want the appointment?
+user: Confirm my appointment on March 7th at 11:30.
+assistant: Kindly ensure that, on March 7th appointment is confirmed with David A. Flakoll at 11:30 am.
+user: Yes. it is good. What is their contact address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Their contact number is 925-827-1008. I am sorry to say that, I am unable to complete your request. Do you want to meet David A. Flakoll, a Psychologist at Pleasant Hill on March 7th at 11 am?
+user: Yes. It is good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is done. You will receive an email regarding that.
+user: Please recommend some movies.
+tool(FindMovies): ok n_results=10
+assistant: What is your opinion about IT Chapter Two with the rating of 64 for 100.
+user: Do you have any other moive?
+assistant: What is your opinion about Chhichhore Two with the rating of 60 for 100.
+user: What type of movie it is? Who is the director?
+assistant: It is a Comedy based movie which is directed by Nitesh Tiwari.
+user: It is nice. That is what I want from my side.
+assistant: Happy to help you.

@@ -1,0 +1,13 @@
+user: Get me a one way ticket to Seattle, WA please.
+assistant: Easy enough, from which city please?
+user: Get it out of Ciudad de Mexico.
+assistant: Oh what date?
+user: I need to do it on Friday next week.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: What about using American Airlines: You can depart at 3:05 am It has a connecting flight and costs $283.
+user: When will this flight arrive?
+assistant: Arrival is at 9:21 am.
+user: Fine, I like that.
+assistant: What may I get next for you?
+user: Nothing now, maybe later.
+assistant: Have a safe trip.

@@ -1,0 +1,43 @@
+user: Hello, I am in need of a family therapist in the St. Helena area.
+tool(FindProvider): ok n_results=2
+assistant: In St. Helena, I recommend Ellsworth Elizabeth. She is a family counselor.
+user: That seems fine.
+assistant: Would you like to schedule an appointment at this time?
+user: I would, yes.
+assistant: On what date and at what time please?
+user: I'd prefer March 14th at 5 PM.
+assistant: Confirming a 5 PM appointment with Ellsworth Elizabeth on March 14th.
+user: Yes, thanks. May I get that phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Of course, it's 707-963-1374. The appointment was scheduled successfully and you will be sent a confirming email shortly.
+user: I'm also going to need a payment request please.
+assistant: Sure, in what amount?
+user: I need it for $115.
+assistant: May I have the contact name?
+user: Yes, it's Tom.
+assistant: Confirming a transaction in the amount of $115 with Tom. Please be advised that this transaction is publicly visible.
+user: That's fine, thank you.
+tool(RequestPayment): ok n_results=1
+assistant: The transaction has processed.
+user: Thanks! Now I'd like to figure out a restaurant to go to.
+assistant: What type of cuisine please?
+user: Something with California food and a menu that has vegetarian dishes as well. The price range doesn't matter.
+tool(FindRestaurants): ok n_results=2
+assistant: I have 2 possibilities for you. In St. Helena, I recommend Acacia House by Chris Cosentino.
+user: How about something else please?
+assistant: No problem. Another option in St. Helena is The Grill At Meadowood.
+user: Do they have patio dining as well?
+assistant: Yes, they do.
+user: And the telephone number please?
+assistant: Yes, the telephone number is 707-967-1200.
+user: Thank you so much.
+assistant: Shall I make a reservation for you?
+user: Sure, thanks, at seven PM please.
+assistant: Confirming a table for 2 on March 14th at 7 PM at The Grill At Meadowood which is located in St. Helena.
+user: Excellent. I just need the address and I'm also curious about the rating that they have.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is located at 900 Meadowood Lane and is rated 4.7 on average. The reservation is complete.
+user: Thanks a lot.
+assistant: Of course, anything else today?
+user: No, I appreciate all the help.
+assistant: It's entirely my pleasure.

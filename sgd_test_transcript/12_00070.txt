@@ -1,0 +1,19 @@
+user: I have plan to go for a trip and I need your help to search for a bus.
+assistant: From which place to which place are you planning to travel?
+user: Search for a bus from LAX to Long Beach, CA.
+assistant: In which date you need the bus.
+user: I need it on 3rd of March.
+tool(FindBus): ok n_results=10
+assistant: What about your convenience to go on a bus departing at 6:50 am under ticket cost $11.
+user: That is great and I want to buy the tickets now.
+assistant: Let me know the number of tickets that you want to purchase.
+user: I need three tickets.
+assistant: I need your confirmation to buy 3 tickets on a bus leaving from Los Angeles on March 3rd at 6:50 am to Long Beach without any extra luggage.
+user: That is correct to proceed.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have purchased the tickets successfully.
+user: Thank you and I need a hotel there for me. 2 -star hotel will okay.
+tool(SearchHotel): ok n_results=1
+assistant: How about Hampton Inn Long Beach Airport which is also a 2 -star hotel?
+user: That is great. That's all and thanks.
+assistant: Have a great day.

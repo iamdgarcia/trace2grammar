@@ -1,0 +1,27 @@
+user: My idea is to go to an event on the 5th of this month, that means that I need 1 ticket, can you help me?
+assistant: Rest assured, I can help you with that. Where do you want me to look? What kind of event would you like to attend?
+user: The area should be seattle, wa and one particular event that I like is improv for content creators
+assistant: noted. tell me if I'm doing the right thing, you want me to buy 1 ticket for improv for content creators happening on march 5th in seattle
+user: yup
+tool(BuyEventTickets): ok n_results=1
+assistant: I've bought the ticket
+user: can you specify where do I have to go exactly and the price I've paid for the ticket?
+assistant: The ticket is $25 and the address is 3509 fremont avenue north
+user: I need a bus ride then, I'll leave from vancouver on the 1st of this month
+tool(FindBus): ok n_results=10
+assistant: you can travel on board of a bus leaving at 7:40 am, it will cost you $31
+user: Where will it arrive to?
+assistant: westlake station is the final destination
+user: it can work for me
+assistant: I can buy the tickets if you want me to
+user: yes, I would love it
+assistant: tell me if this is what you want me to do. You need 1 bus ticket to go from vancouver to seattle on march 1st at 7:40 am. you're not carrying extra luggage
+user: go on
+tool(BuyBusTicket): ok n_results=1
+assistant: your seat has been reserved
+user: can you check if it it a one-stop bus? Where will it leave from?
+assistant: it's a direct bus as you wished. you'll leave from pacific central station
+user: cool
+assistant: can I still help you?
+user: no, it's okay
+assistant: goodbye

@@ -1,0 +1,19 @@
+user: Can you help me find a movie to stream?
+assistant: Absolutely. Do you have a specific genre in mind?
+user: I'd like to watch a cartoon.
+tool(FindMovies): ok n_results=2
+assistant: May I suggest The Angry Birds Movie 2 or Toy Story 4?
+user: I'd love to see Toy Story 4.
+assistant: Would you like me to begin streaming the movie?
+user: Yes, please. Can you play Spanish subtitles with it?
+assistant: Yes, I will begin Toy Story 4 with Spanish subtitles.
+user: Great! Can you tell me who was in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: Lori Alan is one of the featured performers. Your selection has begun.
+user: Can you tell me what the weather is like in Napa?
+tool(GetWeather): ok n_results=1
+assistant: It is expected to be 85 degrees Fahrenheit with a 24 percent chance of precipitation.
+user: Is it supposed to be windy? Also, can you tell me today's date?
+assistant: Today is March 1st. The wind speed is expected to reach 6 miles per hour.
+user: Great. Thank you for the help.
+assistant: You're welcome. Enjoy the movie!

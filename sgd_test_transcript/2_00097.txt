@@ -1,0 +1,12 @@
+user: I need to get out of town and would need a one way flight.
+assistant: When would you like to travel and where would you be leaving from? Which city are you heading to?
+user: I want to leave SF and head to LA on March 4th.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: There are 5 flights available. You can get a ticket for $97 on Alaska Airlines for a flight that leaves at 12:25 pm.
+user: That time is not convenient to me. I would like four Premium Economy tickets.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights available. There is an American Airlines flight for $159 that leaves at 7:10 pm.
+user: That would be fine.
+assistant: Would you need anything else?
+user: No, not at this time. Thanks.
+assistant: Enjoy your day.

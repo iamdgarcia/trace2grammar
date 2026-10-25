@@ -1,0 +1,49 @@
+user: Can you help me find a family therapist?
+assistant: Sure I can. What city do you want me to look?
+user: Can you look up therapist in Santa Rosa?
+tool(FindProvider): ok n_results=8
+assistant: Okay, I have located 8 therapist in the Santa Rosa area. Would you like to try Auer Patience, she's a family counselor.
+user: Do you have the address and phone number for her?
+assistant: Yes I do. The phone number that is listed is 707-526-7604 and the address is 2455 Bennett Valley Road.
+user: Okay, Can you look up psychologist in Campbell please?
+tool(FindProvider): ok n_results=5
+assistant: I have located 5 therapist in Campbell. How about the psychologist Bacheler Janet?
+user: That would be just great.
+assistant: Would you like for me to shcedule your appointment?
+user: Yes please and thank you.
+assistant: Do you have a preferred date and time for your appointment?
+user: Can you see if their is something in the morning, 11:30 on the 14th of March?
+assistant: That will be an appointment with Bacheler Janet at 11:30 am on March 14th?
+user: Yess that is correct. Can I also have the address and phone number to for this location please.
+tool(BookAppointment): ok n_results=0
+assistant: I am so sorry, however after looking through their schedule, there are no available appointments for the 14th of March, would another date work for you?
+user: Is there something available on the 8th of March?
+assistant: Okay, so that will be March 8th, with Bacheler Janet at 11:30 am?
+user: Yes, that will be just fine.
+tool(BookAppointment): ok n_results=1
+assistant: Great! I have located that date and time, and your appointment has been successfully scheduled. You will receieve an confirmation email shortly.
+user: Can you also help me request a payment?
+assistant: How much and from whom?
+user: I am requesting one hundred and forty five bucks from Mary.
+assistant: Okay, that will be $145 that you are requesting from Mary, correct?
+user: Yes, that is right.
+tool(RequestPayment): ok n_results=1
+assistant: Great! Your transaction has been completed.
+user: Thank you. Next, can you help me find a great Cambodian restarant?
+tool(FindRestaurants): ok n_results=1
+assistant: How about Chez Sovan Restaurant located in Campbell.
+user: That would be great.
+assistant: Did you need me to make your reservation?
+user: Yes please and thank you.
+assistant: Do you have a time preference?
+user: Yes at a quarter to 2 in the afternoon please.
+assistant: That will be reservation for 2 at 1:45 pm at Chez Sovan Restaurant in Campbell on March 8th.
+user: Yes that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Great!I have successfully reserved your table.
+user: Can you tell me if this restaurant offers vegetarian meals?
+assistant: Yes, they have a great vegetarian meals.
+user: Can I have the phone number? What is the rating on this restaurant?
+assistant: The phone number is 408-371-7711, and they actually have a 4.3 customer satisfaction rating.
+user: Great! Thank you for all of your help today, that is all for me.
+assistant: You are welcome and I hope you enjoy the rest of your day.

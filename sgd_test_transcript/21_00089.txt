@@ -1,0 +1,17 @@
+user: Tell me what the weather is in Phoenix, AZ.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 89 degrees with a 15 percent chance of precipitation.
+user: I see. What is there to do around there?
+tool(FindAttractions): ok n_results=10
+assistant: Arizona Capitol Museum is under the Museum category and is a nice place to see.
+user: Would kids like it?
+assistant: Yes, kids would enjoy it.
+user: That is perfect. I need a ride for four people to get there.
+assistant: What type of ride do you want?
+user: Get me a Pool ride.
+assistant: You want a Pool ride for 4 people to Arizona Capitol Museum, correct?
+user: That is right.
+tool(GetRide): ok n_results=1
+assistant: Your ride is confirmed and is coming for you right now.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a good day.

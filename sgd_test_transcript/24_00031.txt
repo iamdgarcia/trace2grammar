@@ -1,0 +1,27 @@
+user: I'm looking for 2 one way tickets on an economy flight.
+assistant: What is your departure city?
+user: Leaving from Washington.
+assistant: On what date will you depart and what is your destination?
+user: I will be going to Philadelphia Monday next week.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights. There is a Delta Airlines flight departing at 10:30 am for a total of $243.
+user: What is the arrival time?
+assistant: Arriving at 4:11 pm.
+user: Is there anything else?
+assistant: There is a Southwest Airlines flight departing at 8:40 am for a total of $232.
+user: Great. Can you find me 3 tickets on a train going there on the 8th of March.
+tool(FindTrains): ok n_results=8
+assistant: There is a train departing at 6 am for a total of $275.
+user: Sounds good. Can you book me the tickets?
+assistant: Will you need travel insurance?
+user: Yes, please provide insurance.
+assistant: Please confirm you want to book 3 value tickets on a train leaving from Washington on March 8th at 6 am and going to Philadelphia.
+user: Yes, that's right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your booking was a success.
+user: What are the departure and arrival stations?
+assistant: The train depart from the Union Station and arrives at 30th Street Station.
+user: Thanks for your help.
+assistant: Is there anything else I can help you with?
+user: No. That will be all.
+assistant: Okay. Have a great day. Goodbye.

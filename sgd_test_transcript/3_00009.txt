@@ -1,0 +1,11 @@
+user: Can you find me find flights for a round trip?
+assistant: Can I please have your destination and planned departure and return dates?
+user: I want to fly to London tomorrow and return on March 13th.
+assistant: Where will you be departing from?
+user: Find me flights from Chi-town.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 options available. Would you be interested in an American Airlines connecting flight that departs at 1:25 pm with the return flight taking off at 12:45 pm? The ticket costs $596.
+user: Can I know the arrival times of both the flights?
+assistant: The onward flight arrives in London at 7:49 am and the return flight arrives at 3:32 am.
+user: Sounds good to me. Thank you very much. That's all I need for now.
+assistant: Have a great day!

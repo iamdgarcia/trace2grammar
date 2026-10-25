@@ -1,0 +1,25 @@
+user: How's the weather in LA on March 9th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be 94 degrees Fahrenheit with a 13 percent chance of rain.
+user: Thank you. Can you find me a one way flight from London, UK, to go there?
+assistant: Are you planning to leave on March 9th?
+user: I'll be departing on Tuesday next week.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 suitable flights. Would you like to consider an American Airlines direct flight that leaves at 12:45 pm, for $292 per ticket?
+user: How many people is the the cost for and in which class?
+assistant: The price is for 1 traveler in Economy class.
+user: Find me another option. I'm okay with any class.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: How about the British Airways direct flight that departs at 2:30 pm and costs $410 per ticket?
+user: Can you find me other options that are available on March 9th? I'm not looking for any specific airline.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: There are 2 suitable flights and one of them is a Delta Airlines flight that leaves at 9:30 am and has a layover. The ticket price is $386.
+user: That one sounds good. Can you find me a Sedan that I can rent once I get there? I'll need it by 7:30 in the evening and will return it on the 12th of this month.
+assistant: Will you be picking up the car on March 9th?
+user: No, I only need it on March 11th.
+tool(GetCarsAvailable): ok n_results=2
+assistant: The is a nice Hyundai Ioniq Sedan available for pickup from the LAX International Airport. Is that okay?
+user: Sounds good to me.
+assistant: Shall I book the car for you?
+user: Not now; I'll do it later. That's all I need for now.
+assistant: Have a great day!

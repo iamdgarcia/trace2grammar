@@ -1,0 +1,20 @@
+user: I'm going to need 2 train tickets.
+assistant: I can help you with that. Which city would you like the train to depart from, and where would you like to go? As well, It would help if I knew what date you would to travel on.
+user: I'd like to get a train from Phoenix, AZ to Los Angeles on the 9th of March.
+tool(FindTrains): ok n_results=5
+assistant: I've found 5 trains that match your criteria. How about one that leaves at 6:30 am and costs $157 in total?
+user: That sounds good to me. Can you buy the tickets?
+assistant: Would you like to have travel insurance?
+user: Yes, I think that would be best.
+assistant: Please confirm the following: 2 value tickets for train from Los Angeles to Phoenix on March 9th at 6:30 am.
+user: No, I want a fully refundable ticket instead of a value ticket.
+assistant: The train leaves at 6:30 am. You would like a flexible ticket. Is that correct?
+user: Yes that is correct. What station will we arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have successfully been purchased. The train will arrive at Phoenix Union Station.
+user: Awesome. And what station does it leave from?
+assistant: It will leave from the Union Station.
+user: Great. You have been very helpful, I appreciate it.
+assistant: I'm always glad to be of assistance. Will that be all?
+user: Yes that is it for now. Goodbye.
+assistant: See you again.

@@ -1,0 +1,21 @@
+user: Can you help me reserve event tickets?
+assistant: How many tickets? In any particular city? What type of event.
+user: I need 4 tickets to something on Monday next week. I want something around SD; maybe Arsenic And Old Lace?
+assistant: Please confirm: 4 tickets to Arsenic and Old Lace on March 4th in San Diego.
+user: Yes, that's great.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation was successful. Have a wonderful time!
+user: Thanks for the help! Can you find me a bus going there today?
+assistant: Where will you be traveling from?
+user: I'm in LA.
+tool(FindBus): ok n_results=10
+assistant: What about a $22 option leaving at 6:50 am?
+user: That sounds great!
+assistant: Do you want to buy tickets?
+user: Yes, I'd like to reserve a seat.
+assistant: Please confirm: 4 tickets on the bus leaving from Los Angeles and traveling to San Diego on March 1st at 6:50 am.
+user: Yes, that's perfect. How many stops will there be and what station will I end up at.
+tool(BuyBusTicket): ok n_results=1
+assistant: The reservation is confirmed. It's a direct bus that will arrive at El Cajon Bus Stop.
+user: Thanks for the help! That'll be all.
+assistant: Have a nice trip!

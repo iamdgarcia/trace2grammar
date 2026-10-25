@@ -1,0 +1,19 @@
+user: I'd like to find a house to stay in for 4 people, with a 3.8 rating.
+assistant: What city would you like to stay in?
+user: Actually, I need a house for one in Kuala Lumpur.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available, this one, the 1, Jalan Pantai Jaya Tower 3, 59200 has a 3.8
+user: SOunds great, I want to book it.
+assistant: When are you checking in and out?
+user: I want to check out on the 4th of march and check in tomorrow.
+assistant: Please confirm the following; You want to check in on march 2nd and check out march 4th in Kuala Lumpur, and it's for 1.
+user: That'd be great.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is successful.
+user: Can you show me some attractions there? I'd like a child friendly mall.
+tool(FindAttractions): ok n_results=2
+assistant: I have 2 attractions that could interest you. How about the central market kuala lumpur, it's a shopping area.
+user: Cool, anything else?
+assistant: The ICC Pudu! It's also a shopping area.
+user: Great, i'm all set.
+assistant: Have a good day!

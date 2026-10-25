@@ -1,0 +1,17 @@
+user: I need your advice in finding a movie to watch. I want it to be an action movie with ryan reynolds and directed by david leitch
+tool(FindMovies): ok n_results=1
+assistant: there's 1 title that fulfills your request, the title is hobbs and shaw and it has been rated 67 out of 100
+user: It may be interesting. do something different now, look for some music.
+tool(LookupMusic): ok n_results=10
+assistant: there's 10 songs to chose from. One could be break free by ariana grande, it's from the album my everything
+user: I adore that one, play it please
+assistant: confirm me your request. you want me to play the song break free in living room
+user: no, the room is my kitchen
+assistant: confirm again then. I'll play the song break free in kitchen
+user: yes, that's what I asked you to do. can you tell me the genre?
+tool(PlayMedia): ok n_results=1
+assistant: it's pop music
+user: love it!
+assistant: do you need me to do something else for you?
+user: not really. bye
+assistant: goodbye

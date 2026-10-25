@@ -1,0 +1,19 @@
+user: Check the weather for Nairobi, Kenya for next Thursday.
+tool(GetWeather): ok n_results=1
+assistant: For that day the average temperature should be 86 degrees Fahrenheit with a 8 percent chance of rain.
+user: Ok. I want to schedule a visit to the Capri Creek Apartments property on that day.
+assistant: Please confirmat: Schedule a visit to Capri Creek Apartments on March 7th.
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: I need to reserve car there for Monday next week. I would like to pick it up at 12 o'clock in the afternoon.
+assistant: Where would you like to pick up the car?
+user: I would like to pick it up at Gatwick International Airport.
+assistant: Would you like to add insurance? What kind of car do you want? How long will you need the car?
+user: I don't need insurance. I would like a nice Sedan and I will need it until March 9th.
+assistant: Please confirm: Pick up a Sedan at Gatwick International Airport on March 4th at 12 pm with a drop-off date of March 9th.
+user: Yes, that is good. What is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: The car reservation is complete. The cost is $35.00 per day.
+user: Thanks for the assistance. That is all I need.
+assistant: Enjoy your day.

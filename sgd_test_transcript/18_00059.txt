@@ -1,0 +1,19 @@
+user: I want to find a therapist in San Jose. Preferably a psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists. What about Barskyex Bryna G. They're a psychologist in San Jose.
+user: What is the address?
+assistant: They're located at 5755 Cottle Road # 4.
+user: Sounds good. I want to make an appointment. The appointment time would be quarter past 2 in the afternoon.
+assistant: What date is the appointment for?
+user: I'd like the appointment for the 10th of March at 5:30 pm.
+assistant: Please confirm: an appointment with Barskyex Bryna G on March 10th at 5:30 pm.
+user: Yes, sounds great.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. You will receive a confirmation email soon.
+user: Thanks so much. I need a cab to get there. I want to find the cheapest ride for three people.
+assistant: Please confirm: a pool ride for 3 people to 5755 Cottle Road # 4
+user: Yes, sounds great. How long before the cab gets here?
+tool(GetRide): ok n_results=1
+assistant: Your cab will be there in about 5 minutes.
+user: Thanks so much.
+assistant: Have a great day. Happy to help.

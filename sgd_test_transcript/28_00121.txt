@@ -1,0 +1,35 @@
+user: Can you please find me some interesting attractions, a Museum if possible?
+assistant: In which area?
+user: Mexico City, please.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions matching your criteria, out of which I recommend a very nice Museum, the Arte Carrillo Gil Museum.
+user: Perfect. Can you also please find me a car to rent there?
+assistant: Sure. Until when do you plan on keeping it?
+user: I just need it till tomorrow.
+assistant: When do you want to pick it up.
+user: I want to pick it up on the 1st of March.
+assistant: Can you please tell me if you plan on picking it up in Mexico City as well as the time you want to pick it up?
+user: Yes, that's correct. I'll pick it up at 3 pm.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a nice SUV for you, a Citroen C5, available for pick up at Benito Juarez International Airport.
+user: How much is the daily rate for this car?
+assistant: The daily rate for it is $34.00
+user: Is there anything else available? This time search in London, England with no particular preference regarding car type.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a nice Sedan available for pick up at Heathrow International Airport, an Audi A8.
+user: Sounds perfect. Let's place a reservation for it.
+assistant: Will you be needing insurance?
+user: No, don't add insurance.
+assistant: Can you please confirm that you want me to place a reservation for a Sedan car to be picked up on March 1st at 3 pm from Heathrow International Airport, due for drop off on March 2nd, without insurance?
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully placed your reservation.
+user: Can you please share the location?
+assistant: Yes, but please tell me which one - Heathrow International Airport, Arte Carrillo Gil Museum or another one and with whom.
+user: Please share the location for Heathrow International Airport with Richard.
+assistant: Can you please confirm that you want me to share the location for Heathrow International Airport with Richard?
+user: Yes, that's right!
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thank you, you've been very helpful! That will be all for now.
+assistant: My pleasure. Have a great day!

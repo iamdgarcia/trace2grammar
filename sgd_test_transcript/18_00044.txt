@@ -1,0 +1,31 @@
+user: Can you find a Psychologist in Novato?
+tool(FindProvider): ok n_results=5
+assistant: In Novato there's Christina M. Walker, a Psychologist
+user: It's perfect, thank you!
+assistant: Do you want an appointment with this psychologist?
+user: Yes, please, make an appointment.
+assistant: What day do you want the appointment? What time do you prefer?
+user: I'd like an appointment for the 13th of this month and I prefer at 13:30
+assistant: An appointment with Christina M. Walker on March 13th at 1:30 pm. Is it correct?
+user: Yes, It's correct, thank you
+tool(BookAppointment): ok n_results=0
+assistant: The appointment could not be booked. Can I help you in any other way?
+user: Yes, please: try to book at half past 5 in the evening
+assistant: An appointment with Christina M. Walker on March 13th at 5:30 pm. Do you confirm?
+user: Yes, I confirm. Can you give me the psychologist's phone number? What is the adress?
+tool(BookAppointment): ok n_results=1
+assistant: Phone number is 415-887-8329 and the address is 250 Bel Marin Keys Boulevard. Unfortunately it is not possible to book at that time. An appointment with Christina M. Walker is possible on March 13th at 5 pm
+user: Okay at that time, thanks
+tool(BookAppointment): ok n_results=1
+assistant: Good! Your appointment is confirmed and you will soon receive a confirmation email
+user: Very well, thanks! Now I need a cab in The most comfortable ride to go there.
+assistant: How many seats do you need?
+user: I need two seats.
+assistant: 2 seats in a Luxury ride to 250 Bel Marin Keys Boulevard: do you confirm?
+user: Yes, I confirm, thanks!
+tool(GetRide): ok n_results=1
+assistant: The cab is coming!
+user: You have been a great help, thank you very much!
+assistant: You need anything else??
+user: No, It's all for now. Thanks!
+assistant: Have a good day!

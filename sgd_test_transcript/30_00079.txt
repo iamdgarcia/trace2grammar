@@ -1,0 +1,25 @@
+user: Would you mind finding the Petaluma weather forecast for me please?
+tool(GetWeather): ok n_results=1
+assistant: Certainly, the temperature will average 82 degrees Fahrenheit with a 29 percent possibility of precipitation.
+user: Great, thank you.
+assistant: How else may I help you?
+user: Yes, I need to schedule a property visit to the Casa Del Sol Apartments.
+assistant: Is that on March 1st?
+user: Yes, it is.
+assistant: Confirming a March 1st visit to Casa Del Sol Apartments.
+user: Excellent, thank you.
+tool(ScheduleVisit): ok n_results=1
+assistant: The property visit has been booked.
+user: Thanks again. Oh, do you know if it has laundry machines inside and also a garage?
+assistant: The property does have a garage but does not have laundry machines.
+user: OK, thanks. I'm going to need to get a rental car as well. I'd like to get something on the 1st from O'Hare International Airport at 4:45 pm if possible.
+assistant: Would you like an SUV, a sedan, or a different vehicle? And when would you like the car? And should I add insurance?
+user: I do want insurance and I'll need it until the 2nd please. I'm thinking an SUV.
+assistant: Confirming an SUV rental pick up from O'Hare International Airport on March 1st at 4:45 pm and a return of March 2nd. The vehicle will include insurance.
+user: Sounds great, thank you.
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has been booked.
+user: Thank you so much.
+assistant: How else may I help you today?
+user: I think we've done it all.
+assistant: Have a wonderful day.

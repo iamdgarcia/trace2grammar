@@ -1,0 +1,14 @@
+user: Can you please help me find a 3d family movie shown in San Jose.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie, The Farewell.
+user: Farewell is great. I'm buying tickets for ten pm on 4th of March.
+assistant: How many tickets would you like to get?
+user: Just one ticket.
+assistant: Please confirm the details: You are buying 1 ticket for a 3d movie The Farewell showing on March 4th at 10 pm in San Jose.
+user: Sounds great!
+tool(BuyMovieTickets): ok n_results=1
+assistant: The purchase is processed.
+user: Thanks for helping me.
+assistant: Is there anything else I can help you with?
+user: That would be all. Thank you!
+assistant: Have a great day.

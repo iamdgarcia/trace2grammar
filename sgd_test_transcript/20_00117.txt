@@ -1,0 +1,19 @@
+user: I need help locating a house where I can stay in Philly. I'd like something with a 4.1 rating or more and it's for one person.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 options I can tell you about. There is a house with a location of 1 Logan Square and it's rated 4.1.
+user: I think that sounds perfect.
+assistant: Shall I reserve that house for you?
+user: Yes, I'd like that.
+assistant: When will you be checking in and when do you plan to check out?
+user: I'll be getting there on March 10th and I plan to check out on the 12th of this month.
+assistant: Confirming your reservation for 1 from March 10th until March 12th in Philadelphia.
+user: You've got it right.
+tool(BookHouse): ok n_results=1
+assistant: The reservation is complete.
+user: Could you also help me find an attraction there, a good place of interest?
+tool(FindAttractions): ok n_results=2
+assistant: I have 2 possible options to share. There is an interesting tourist attraction, One Liberty Observation Deck.
+user: I think that should work.
+assistant: May I help you with anything else?
+user: I don't think so right now.
+assistant: Have a great day, thank you.

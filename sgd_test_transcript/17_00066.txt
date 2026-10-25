@@ -1,0 +1,16 @@
+user: Could you search a locomotive for me?
+assistant: What metropolis will you head to, what day do you intend to leave, and what metropolis do you intend to leave from?
+user: I'm searching for tickets leaving Portland, OR on the 2nd of this month that is headed to Vancouver, BC.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 suitable locomotives. What do you think about the locomotive leaving at 7:40 am, which has a price of $84?
+user: What station does it come to, and which one does it depart from?
+assistant: The locomotive is departing the Union Station and will come to Pacific Central Station.
+user: That's fine. I'd like to search for a resident to live there, one for two people and a rating of 4.2 or greater.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely residence located at 1018 Granville Street with a 4.2 rating.
+user: The residence is lovely.
+assistant: Do you wish for me to book the residence?
+user: Nah, I do not wish to do that right now.
+assistant: Could I assist with something else?
+user: No, thank you for your assistance.
+assistant: I am happy to be of service. Farewell.

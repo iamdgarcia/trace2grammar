@@ -1,0 +1,18 @@
+user: I need to find a train
+assistant: What is the day of the trip?
+user: I have to travel on the 2nd of this month
+assistant: What is the city of departure? What is the destination?
+user: I leave Sacramento, CA and I have to go to LAX
+tool(FindTrains): ok n_results=5
+assistant: There's a train at 6:30 am which costs $94
+user: What is the station of departure and which one of arrival?
+assistant: It leaves from Sacramento Valley Station. The arrival station is Union Station
+user: Ok, It's fine for me!
+assistant: Do you want to buy the ticket?
+user: Not now. I would like to find a home there
+tool(SearchHouse): ok n_results=10
+assistant: At 1020 South Figueroa Street there's a nice house with rating of 4.1
+user: Oh, it's perfect for me!
+assistant: Do you want to book the house immediately?
+user: No, it's all for now, thanks.
+assistant: It's a pleasure helping you. Have a good day

@@ -1,0 +1,10 @@
+user: I want to know how the weather is going to be on March 8th.
+assistant: Can you tell me the city you are interested that I check the weather at?
+user: I am interested in Millbrae.
+tool(GetWeather): ok n_results=1
+assistant: For your requested location the average temperature for the day should be 92 degrees Fahrenheit, and with a chance of raining at 0 percent.
+user: Alright, can you also tell me about it in San Anselmo on Wednesday next week?
+tool(GetWeather): ok n_results=1
+assistant: In the location you are interested the temperature for the day should be at 91 degrees Fahrenheit, and there will be a raining chance of 15 percent.
+user: Fine, right. Got what I wanted. Bye for now!
+assistant: Enjoy.

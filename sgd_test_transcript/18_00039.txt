@@ -1,0 +1,28 @@
+user: Hey, can you find me a therapist in Pleasant Hill? A family therapist, please?
+tool(FindProvider): ok n_results=7
+assistant: In Pleasant Hill there's a great Family Counselor, Aguilar Churchill Spence is their name.
+user: What's their address and phone number?
+assistant: Their number is 925-945-1221 and their address is 140 Mayhew Way # 702.
+user: Sounds like a good one. Can you book me an appointment?
+assistant: For when would you like that?
+user: For the 9th of March please.
+assistant: And for what time?
+user: For 12:15 pm please.
+assistant: So a 12:15 pm appointment on March 9th with Aguilar Churchill Spence?
+user: Yes, sounds correct.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, I couldn't book it at the time you wanted, but Aguilar Churchill Spence is free on March 9th at 12:30 pm if that works for you.
+user: It does, please book it.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation was successful. You'll get an email confirmation soon.
+user: Can you book me a luxurious cab ride to go there?
+assistant: How many people will be going?
+user: Just two please.
+assistant: So 2 seats on a Luxury ride to 140 Mayhew Way # 702?
+user: Yes, correct. How much will it cost and how long is the trip?
+tool(GetRide): ok n_results=1
+assistant: Your cab is booked and on the way. It's an 8 minutes trip costing $21.57.
+user: Thanks a lot.
+assistant: Can I help you further?
+user: No, that's all. Thanks.
+assistant: Have an incredible day.

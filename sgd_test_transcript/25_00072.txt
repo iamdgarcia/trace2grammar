@@ -1,0 +1,38 @@
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm named Errands and it is set for 3:30 pm.
+user: I see. I need a place to eat at.
+assistant: What city shall I look in?
+user: Find a place in Napa.
+assistant: What type of food do you like?
+user: Search for something under the Burger category.
+tool(FindRestaurants): ok n_results=10
+assistant: Brix Restaurant And Gardens is in Napa and is 1 of 10 results that search found.
+user: What is the venue location?
+assistant: They are located at 7377 Saint Helena Highway.
+user: Are their prices economical.
+assistant: No, they are a pricey place.
+user: That is perfect.
+assistant: Shall I book a reservation for you?
+user: No, but I do need you to get me a rental car.
+assistant: When will you pick up and drop off the car?
+user: I will pick it up on March 9th and return it on the 13th.
+assistant: Do you have a car preference and do you need insurance? What time do you wish to get it?
+user: I want to pick up a nice SUV without insurance from Seattle-Tacoma International Airport.
+assistant: What time are you getting it?
+user: I wish to get it at morning 10:30.
+assistant: You wish to get a SUV without insurance on March 9th at 10:30 am from Seattle-Tacoma International Airport and wish to return it on March 13th, correct?
+user: That is right. What is the name of the car and the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your Suzuki Grand Vitara is reserved and the daily price is $47.00.
+user: Share the location of 7377 Saint Helena Highway for me.
+assistant: Who should I send the location to?
+user: Send the location to Logan.
+assistant: You wish to share 7377 Saint Helena Highway with Logan, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: Your location is now shared with him.
+user: Thanks for the help.
+assistant: Do you need something more?
+user: No, not right now. Thanks for the help.
+assistant: Have a pleasant day.

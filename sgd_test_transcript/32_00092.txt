@@ -1,0 +1,34 @@
+user: I need some help finding a place to move to
+assistant: How many bed rooms and bath rooms would you like.
+user: Looking for a property in San Jose with 2 bed room and one bath.
+assistant: are you looking to rent or buy.
+user: rent please
+tool(FindHomeByArea): ok n_results=10
+assistant: I've located Almaden Lake Apartments at 978 Almaden Lake Drive for $2,750
+user: Is there a garage?
+assistant: No unfortunately no garage.
+user: Oh ok, what is the property phone number?
+assistant: the phone number is 408-323-8020
+user: Let's schedule a tour of the property on the 14th of March
+assistant: please confirm you would like to schedule a property Almaden Lake Apartments on March 14th
+user: Yes, that is right. Is there is a laundry machine on the inside of the house.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your tour is scheduled and unfortunately there is no laundry machine on the inside of the house.
+user: Oh ok. can you please share the location
+assistant: Who should we share the location with?
+user: I would like to share with Dylan
+assistant: Ok, please confirm your sharing your location of 978 Almaden Lake Drive with Dylan.
+user: Sound right to me.
+tool(ShareLocation): ok n_results=1
+assistant: Ok, i've successfully shared your location with Dylan
+user: Schedule a cab for me to get there please.
+assistant: Would you like a Pool or Regular ride?
+user: Regular ride please.
+assistant: How many seats should I reserve?
+user: three seats please.
+assistant: Please confirm we are reserving 3 seats to 978 Almaden Lake Drive, this will be a regular ride.
+user: Yes that is right.
+tool(GetRide): ok n_results=1
+assistant: I have reserved your cab and it's in route.
+user: thank you for you help. that will be all
+assistant: ok have a great day.

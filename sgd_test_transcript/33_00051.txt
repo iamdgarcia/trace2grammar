@@ -1,0 +1,21 @@
+user: I have some leisure time and i need to spend it in a very interesting way. will you find me some thing interesting to do?
+assistant: In which city i need to search in for?
+user: i like to find something around chicago.
+assistant: Whether do you prefer any type of events?
+user: i like only musical performance.
+tool(FindEvents): ok n_results=9
+assistant: THere is an event called Ashe.it is very popular. it take place at chop shop. it is on March 11th starting at 7:30 pm.
+user: ok that sounds great.
+assistant: whether i need to buy any tickets for this event?
+user: yes, i like to buy tickets. i need 2 tickets.
+assistant: Please check and confirm the following details. Booking tickets for Ashe. You need 2 tickets and the date of it is MArch 11th. THe event is taking place in chicago.
+user: Yes that suits for me. How much does one ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is made successfully. The ticket costs $20.
+user: Please find me a cab to go there? I prefer a The most comfortable ride.
+assistant: Please check and confirm the following details. Cab ride to Chop Shop. Need 2 seats and Prefer a Luxury ride.
+user: Ok that suits for me. How long before the cab reaches here? How much does the ride costs?
+tool(GetRide): ok n_results=1
+assistant: cab ride is booked and the cab is on its way. the cab is expected in 12 minutes. the ride costs is around $24.00
+user: thanks a lot for your immense help, that's all i need.
+assistant: Have a great day

@@ -1,0 +1,16 @@
+user: I'm bored what is happening that I would enjoy?
+assistant: Where are you interested in finding something to do? What are you interested in doing maybe Music, Theater, or make your own suggestion.
+user: A San Francisco Stage Show would be perfect.
+tool(FindEvents): ok n_results=10
+assistant: I have come up with 10 ideas that fit the bill. There is something at the Mojo Theatre on March 6th, Above Ground scheduled to start at 5 pm.
+user: Good choice how about getting me two seats for that show.
+assistant: So, that's March 6th in San Francisco, 2 tickets to Above Ground, is that correct?
+user: Actually I should get four tickets and take the kids too.
+assistant: So change that to 4 Above Ground seats is that right?
+user: Perfect that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have purchased your seats have a good time!
+user: Wonderful, thank you.
+assistant: Will there be anything else?
+user: No, thank you anyway.
+assistant: Have a very nice day.

@@ -1,0 +1,27 @@
+user: I need help finding a hotel.
+assistant: Where do you need me to search for hotels?
+user: Can you you in New York City?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 5 star Hotel, 1 Hotel Brooklyn Bridge, you may like.
+user: Can you tell me the address adn how much does a room cost per night.
+assistant: The address I show listed is 60 Furman Street, Brooklyn, and the room costs $465 per night.
+user: Great! that sounds good to me.
+assistant: Did you want me to make your reservations?
+user: Not at this time please.
+assistant: Did you need my help with anything else?
+user: Yes, can you tell me how the weather will be in NYC on the 14th?
+tool(GetWeather): ok n_results=1
+assistant: I can help with that. It shows that the temperature will be 60 degrees adn and there is a 6 percent chance for rain.
+user: Will it be really windy or humid?
+assistant: The wind speeds will be 9 miles per hour and the humidity level is 19 percent.
+user: Great! That sounds just great.
+assistant: Did you need anything else today?
+user: Yes, can you please make me 1 room reservation at the previously discussed hotel for 5 days please.
+assistant: Is March 14th the day you will like to check in?
+user: I will actually have to check out next Friday, so I will be staying for six days.
+assistant: Okay, so that will be a room for 1 at 1 Hotel Brooklyn Bridge in New York. You will check in on March 8th and will be staying for 6 days. Is that correct?
+user: Yes, that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Great! Your reservation was successful.
+user: Thank you, you were very help. Have a great day.
+assistant: You are welcome, enjoy your trip to NY.

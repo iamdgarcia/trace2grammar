@@ -1,0 +1,46 @@
+user: I need help finding Stage show type events happening on March 12th around NY.
+tool(FindEvents): ok n_results=10
+assistant: Your search yielded 10 events meeting your criteria. The very popular Broadway Brunch will be happening at Engine Room New York, on March 12th from 7 pm.
+user: Awesome. That works.
+assistant: Would you like to purchase tickets for this event?
+user: No, not right away. Find me buses going there.
+assistant: Is March 12th your departure date?
+user: No. I'd like to leave on 7th of this month.
+assistant: Which city will you be leaving from?
+user: Philadelphia is my departure city.
+tool(FindBus): ok n_results=6
+assistant: How does the $26 bus leaving at 9 am sound?
+user: What is its destination station?
+assistant: Its destination station is Penn Station.
+user: All right, cool. Let's cover all bases just in case I miss the bus. Please find me 2 round trip ticket going there, the day after tomorrow.
+assistant: When would you like to fly back?
+user: Flying back on 13th of this month.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Among the 4 suitable flights I found is an outbound American Airlines flight with zero stops, leaving at 1:20 pm, while the inbound flight leaves at 11:20 am. The price of a ticket is $100.
+user: What time does the inbound flight land?
+assistant: The inbound flight lands at 12:11 pm.
+user: Is the ticket class Economy?
+assistant: Yes, the ticket class is Economy.
+user: That works. Now look for hotels over there, also.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels might like. Among them is 1 Hotel Brooklyn Bridge, rated 5 stars.
+user: Please look for three star hotels.
+tool(SearchHotel): ok n_results=10
+assistant: How about 11 Howard, rated 3 stars?
+user: Where are they located?
+assistant: They're situated at 11 Howard Street.
+user: Do you have their phone number?
+assistant: You can contact them on +1 212-235-1111.
+user: That works for me.
+assistant: Shall I reserve the hotel?
+user: No, I don't want to reserve right away.
+assistant: Will you be needing my help with anything else?
+user: Yes, please buy tickets to the event you found earlier.
+assistant: Okay. Please confirm that you're reserving 2 tickets for the Broadway Brunch event taking place on March 12th in New York.
+user: That is correct. What's the price per ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation successful. Enjoy! The price per ticket is $45.
+user: Thank you very much. You've been very helpful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Goodbye, and have a wonderful day!

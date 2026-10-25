@@ -1,0 +1,19 @@
+user: I'd like to find a salon
+assistant: In which city?
+user: Walnut Creek.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options. How about Blow Dry Bar in Walnut Creek?
+user: Sounds good, how's the weather there on the 10th of this month?
+tool(GetWeather): ok n_results=1
+assistant: There's a 26 percent chance of rain with a temp of 91 degrees.
+user: How windy will it be?
+assistant: The average wind speed will be around 11 mph.
+user: Okay. I'd like to book an appointment on that day at 17:30 please.
+assistant: Please confirm: Book an appointment with the blow dry bar at 5:30 pm on march 10th?
+user: Yes. what's their address?
+tool(BookAppointment): ok n_results=1
+assistant: Appointment confirmed. Their address is 1639 north California boulevard.
+user: Thank you very much.
+assistant: DO you need anything else?
+user: Nope. i'm all set.
+assistant: Have a good day.

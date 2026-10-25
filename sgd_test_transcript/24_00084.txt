@@ -1,0 +1,23 @@
+user: What movies are out to watch?
+assistant: Where are you located?
+user: I'm located in Santa Rosa.
+tool(FindMovies): ok n_results=10
+assistant: What do you think of After The Wedding, Fiddler: A Miracle of Miracles, or Good Boys?
+user: I really want to see After The Wedding.
+assistant: Shall I purchase tickets?
+user: Let's hold off on that.
+assistant: What else can I help you with?
+user: I want to book a table at Sea Thai for later today. It's in the same area.
+assistant: What time would like the table for?
+user: I want the table at morning 11:30.
+assistant: I'll book you a table for 2 at Sea Thai Bistro in Santa Rosa on March 1st at 11:30 am. Is that good?
+user: Yes, that's good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've booked the table.
+user: Thanks a lot. Now what time is that movie playing?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's 1 showing. It's 8:30 pm at Summerfield Cinemas.
+user: That'll work.
+assistant: What else can I help you with?
+user: Nothing else, thanks for all the help.
+assistant: Have a very fine day.

@@ -1,0 +1,29 @@
+user: I could use some help finding movies to watch online.
+assistant: What kind of movies are you interested in?
+user: Action movies. They are the best.
+tool(FindMovies): ok n_results=5
+assistant: Would you like Angel Has Fallen, Hobbs and Shaw, or Mission Mangal?
+user: What else is there?
+assistant: There is Riot Girls, and Saaho as well.
+user: Saaho looks super cool. Thanks. Can you find me an attraction in New York City now? Anything will be cool.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that might interested you. You could check out the Museum called 9/11 Tribute Museum.
+user: Cool. What else?
+assistant: You could also check out the 92nd Street Y, which is a performing arts venue.
+user: Sounds alright. Anything else you can think of?
+assistant: You could also check out Alley Pond Park, which is a park.
+user: Cool, I'll have to check them all out. Can you find some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: I've found 10 sounds for you already. How about In Summer by Josh Gad from the album Frozen?
+user: How did you know I wanted to hear that!? Play it for me please.
+assistant: You would like In Summer to play in Living room. Is that correct?
+user: Yes, that's correct. Can you tell me what genre this is considered? Also didn't this come out in 2015?
+tool(PlayMedia): ok n_results=1
+assistant: It is considered to be a soundtracks song, and is from the year 2013.
+user: Can you play the movie you found earlier actually? With Spanish subtitles please.
+assistant: You would like to watch Saaho with Spanish subtitles. Is that correct?
+user: Yes that is correct. Can you tell me who acts in it before it boots up?
+tool(PlayMovie): ok n_results=1
+assistant: The movie will begin playing shortly. Mahesh Manjrekar acted in the movie.
+user: Okay, cool. That will be all for now thank you.
+assistant: You're welcome. Enjoy the movie.

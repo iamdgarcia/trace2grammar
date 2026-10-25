@@ -1,0 +1,29 @@
+user: I want to find some new movies to watch.
+assistant: What type of movies do you like?
+user: Funny movies would be good.
+tool(FindMovies): ok n_results=5
+assistant: I found Chhichhore, Good Boys, and My Big Fat Greek Wedding.
+user: Chhichhore is perfect! Can you find some cool things to do in Chi-town?
+tool(FindAttractions): ok n_results=10
+assistant: 360 Chicago is a cool tourist attraction.
+user: What is the cost of the enterence fee? Is it child-friendly?
+assistant: It is not free, but they allow you to bring children.
+user: I'd like to hear some electropop music right now.
+tool(LookupMusic): ok n_results=10
+assistant: Battle Symphony by Linkin Park from the CD One More Light is really good.
+user: When did it come out? 2018?
+assistant: No, 2017.
+user: Yes! Play that song.
+assistant: Playing Battle Symphony in the living room now.
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Plays Music
+user: Thanks! Can you also play that movie you found with English subtitles?
+assistant: Please confirm, playing Chhichhore with English subtitles.
+user: No, Spanish subtitles. Si?
+assistant: Please confirm, playing Chhichhore with Spanish subtitles.
+user: Yes, and who stars in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Naveen Polishetty is excellent in it.
+user: Thanks, that is all.
+assistant: Have a nice day!

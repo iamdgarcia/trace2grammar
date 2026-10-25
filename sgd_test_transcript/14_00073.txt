@@ -1,0 +1,15 @@
+user: Can you help me to search a movie acted by Ronald Young and directed by Herbert Ross and i want the movie with Family Genre.
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion about the movie Steel Magnolias with average rating of 70 out of 100.
+user: This is cool. Can you search some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: What is your opinion about the song Come Over from the album Welcome to the Fishbowl by Kenny Chesney?
+user: Okay..this i want..please play it on kitchen device.
+assistant: please give confirmation details: Run the song come over in kitchen.
+user: Okay..this is fine..can i know the music type and which year the song come out?
+tool(PlayMedia): ok n_results=1
+assistant: This song is from the year 2012 and it is a country song..have fun with your music..
+user: Thank you so much..
+assistant: Any other help you need?
+user: No, thank you so much.
+assistant: Have a great day.

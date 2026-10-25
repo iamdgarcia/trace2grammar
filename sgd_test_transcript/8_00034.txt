@@ -1,0 +1,27 @@
+user: I just got paid today and need to take care of some finances.
+assistant: I'm happy to help. Can you tell me the name of the person you would like to pay?
+user: I need to pay Amelia some money I owe her.
+assistant: I can do that for you. First tell me how much you need to send and if you would like the funds to come from your credit card or app balance?
+user: I need to send her ninety six dollars from my checking account please.
+assistant: Okay, before I transfer that I just want to go over it with you for confirmation. You would like me to assist you in transferring $96 to Amelia from your debit card, right?
+user: Perfect, please proceed with the transaction.
+tool(MakePayment): ok n_results=1
+assistant: I have confirmed that payment for you and Amelia should receive the funds soon.
+user: Great, I also need to request funds, privately from Mahmoud.
+assistant: Okay, how much money do you need to request?
+user: I would like to request the total amount owed of two hundred and fifteen bucks please.
+assistant: So I will be helping you with a private transaction, requesting $215 from Mahmoud, correct?
+user: Yes, the information you have is right.
+tool(RequestPayment): ok n_results=1
+assistant: I was also able to confirm that transaction for you.
+user: I have another transaction I need to make. This one will be a payment being made to Victoria, using my app balance.
+assistant: First I will need the payment amount.
+user: Can you make this payment for 42 dollars?
+assistant: So you would like me to make a publicly visible payment to Victoria for $42 from your app balance?
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have finished making that transaction for you and she should have confirmation of your payment shortly.
+user: Great, I really appreciate it!
+assistant: No problem, can I help with something else?
+user: Nope, that will be all, for now anyway.
+assistant: Okay, goodbye until next time!

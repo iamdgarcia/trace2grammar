@@ -1,0 +1,9 @@
+user: Can you find me a bus with a direct route to LAX?
+assistant: Sure thing, where are you leaving from?
+user: I am headed out of SD.
+assistant: What is the date of your departure?
+user: I plan on leaving on the 7th of this month.
+tool(FindBus): ok n_results=10
+assistant: Okay, how about the bus departing at 9:10 am? The ticket will be $26.
+user: Sounds good to me. That's all I need for now. Thanks.
+assistant: My pleasure. Have a great day!

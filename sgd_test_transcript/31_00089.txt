@@ -1,0 +1,35 @@
+user: I need help looking for a salon.
+assistant: What city do you want to look in?
+user: I want to look for a place in SFO.
+tool(FindProvider): ok n_results=10
+assistant: There's a nice salon called 1512 Barber Shop in San Francisco.
+user: Okay, nice. Let's book an appointment.
+assistant: What's the date and time you'd like for the appointment?
+user: I want it for the day after tomorrow at 10:15.
+assistant: I'll make you an appointment at 1512 Barber Shop for March 3rd at 10:15 am, is that right?
+user: Yeah, you got it.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, but they're booked at that time. How about an appointment at 1512 Barber Shop for March 3rd at 10:30 am?
+user: Yeah, that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked.
+user: Thanks a lot. I also want to look for a restaurant I can go to on that day.
+assistant: What type of food do you prefer?
+user: I want food from Beijing.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 restaurants you might like. Hang Ah Dim Sum Tea House is a nice restaurant in San Francisco.
+user: What's their telephone number?
+assistant: You can call them at 415-982-5608.
+user: I think I'd go there.
+assistant: Do you want to reserve a table?
+user: Yes, let's do that.
+assistant: What time do you want the table?
+user: I want it at 12 o'clock in the afternoon.
+assistant: I'll reserve you a table for 2 at Hang Ah Dim Sum Tea House in San Francisco for March 3rd at 12 pm. Is that okay?
+user: Yeah, that's it. Do they have dining outdoors?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I made the reservation. There is not outdoor dining.
+user: Thanks a lot.
+assistant: What else can I do for you?
+user: Nothing else, thanks again.
+assistant: Have a fine day.

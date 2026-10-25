@@ -1,0 +1,48 @@
+user: Find me a place to live.
+assistant: You want to rent or to buy?
+user: I want to rent and I need to have 1 baths.
+assistant: Tell me the number of bed rooms and in which area you want to be.
+user: I want to have two bed rooms and to be in Rohnert Park.
+tool(FindHomeByArea): ok n_results=4
+assistant: A very popular is Camino Creek Apartments located at 5425 Snyder Lane and cost $2,600.
+user: Something else you can find with in-unit laundry?
+tool(FindHomeByArea): ok n_results=2
+assistant: A very good property is Park Meadows Apartments located at 7425 Camino Colegio # 61 and cost $2,400.
+user: Tell me the phone number for this property.
+assistant: 707-792-0669 is their phone number.
+user: Garage is available?
+assistant: Yes,the property have garage.
+user: Other place you can find because I want to buy.
+tool(FindHomeByArea): ok n_results=2
+assistant: A very good property is Willow Creek Apartments located at 611 Enterprise Drive and cost $2,500,000.
+user: This sounds good.
+assistant: You want to schedule a visit ?
+user: Yes I would like to visit today.
+assistant: You schedule a visit to Willow Creek Apartments on March 1st.Is correct?
+user: No.I would like to be on 11th of March
+assistant: You are scheduling a visit to Willow Creek Apartments on March 11th.Is okay for you?
+user: Yes is good.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit is scheduled.
+user: Tell me the phone number for this property.
+assistant: 707-584-3520 is the phone number.
+user: Garage is available?
+assistant: No, don't have a garage.
+user: Thank you.Share the location please.
+assistant: With who you want to share?
+user: With Sarah I want to share.
+assistant: You share with Sarah the location 611 Enterprise Drive.Is okay?
+user: No, share it with Ann.
+assistant: You want to share location 611 Enterprise Drive with Ann.I'm right?
+user: Yes, sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: The location is shared.
+user: Get for me please a cab to go there.
+assistant: Tell me how many seats you need and what type of ride you prefer? Regular or Pool or anything else?
+user: I would like a Shared ride and I am part of a group of three.
+assistant: You need 3 seats with a Pool ride to 611 Enterprise Drive.
+user: Yes is good for me.Tell me the cost.
+tool(GetRide): ok n_results=1
+assistant: The ride is booked and the cab is on its way.$27.26 is the cost.
+user: Thank you very much.That's all that I wanted.
+assistant: Have a good day!

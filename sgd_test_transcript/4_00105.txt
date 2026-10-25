@@ -1,0 +1,22 @@
+user: Please help me to find a bus.
+assistant: Please let me know your origin, destination and the planned date of travel.
+user: I'm going from Anaheim, CA to SFO on the 2nd.
+tool(FindBus): ok n_results=8
+assistant: Out of the 8 suitable buses, there is one departing at 8:50 am with tickets priced at $52.
+user: From which station does it leave and at which station does it arrive?
+assistant: It departs from Anaheim Bus Station and arrives at the Transbay Terminal.
+user: Find me another bus please.
+assistant: There's another one that leaves at 9:10 am with tickets costing $51.
+user: That one sounds good to me.
+assistant: Would you like me to reserve tickets for you?
+user: Yes, I would like to reserve seats.
+assistant: How many tickets would you like?
+user: I'll need 4 tickets.
+assistant: Please confirm that you need 4 tickets from Anaheim to San Francisco on the bus that departs at 9:10 am on March 2nd.
+user: That works for me. At which station does it arrive?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been booked successfully. The bus arrives at the Transbay Terminal.
+user: Thank you for the assistance.
+assistant: Is there anything else I can help you with?
+user: No. Thank you. That'll be all.
+assistant: Have a great day!

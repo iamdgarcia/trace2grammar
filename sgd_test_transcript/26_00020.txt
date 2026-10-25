@@ -1,0 +1,30 @@
+user: I wish to find a round trip Airlines flight
+assistant: When will you travel? When will you need the return flight? Where do you want to go?
+user: I am moving to NYC on the 2nd and will return on next Thursday.
+assistant: What is your departing city?
+user: I will depart from Chi-town.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I searched and found 4 flights. Are you interested in layover American Airlines flight? It will take off at 5:05 am and the returning flight will start at 11:20 am. The ticket price is $242.
+user: It is nice. I wish to search for a house to stay.
+tool(SearchHouse): ok n_results=10
+assistant: There is a beautiful house at 100 Greenwich Street with the rating 4.4
+user: Shall I have the contact number?
+assistant: Their contact number is +1 917-409-0800
+user: Whether the laundry service is available there?
+assistant: yes. That place has laundry service.
+user: Please find some other house.
+assistant: There is a beautiful house at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA with the rating 4.2
+user: It is good. I wish to book the house.
+assistant: Are you interested in checking out on March 7th or some other date? What about on March 2nd? Number of persons in your group is?
+user: It is nice. I will check out on this Sunday. It is for one person.
+assistant: Kindly ensure that, on March 2nd, 1 ticket has been reserved and the check out date is March 3rd at New York.
+user: yes, It is nice.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is done.
+user: Thank you so much for your help. I wish to see some attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: Your check out is 9/11 Tribute Museum. It is a Museum.
+user: yes. Thanks.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Enjoy the day. Bye.

@@ -1,0 +1,18 @@
+user: I am interested in listening to some music. Would you search for some songs?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs I found that you may enjoy. Would you like to hear The Way I am by Charlie Puth? This is from the Voicenotes album.
+user: Was this the one published in 2012?
+assistant: No, it came out in 2018.
+user: Oh yes, that is the one I wanted to hear. Please play the song on any device.
+assistant: Please confirm you would like to hear The way I Am in the Living Room.
+user: No, please play it on the speaker in patio.
+assistant: Please confirm you wish to hear the song The way I Am in the Patio.
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Here you go and enjoy your music!
+user: Would you tell me the genre of this music?
+assistant: This is considered a Pop song.
+user: Great, thank you for your help!
+assistant: Do you need assistance with anything today?
+user: No, that is all for now. Thanks again!
+assistant: Enjoy and have a great day!

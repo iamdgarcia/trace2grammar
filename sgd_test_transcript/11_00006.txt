@@ -1,0 +1,10 @@
+user: Hello, I need to find a house where I can stay.
+assistant: In what city please?
+user: The city I'm going to is Chi-town.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 possible options for you. How about 1 South Franklin Street, which is a house with a rating of 4.4.
+user: Could you look for some with a rating of 4.5 or more?
+tool(SearchHouse): ok n_results=10
+assistant: Of course, I have 10 possibilities for you. One of them is at 1 West Wacker Drive and it is rated 4.5.
+user: That sounds like it will work. I think I'm all set.
+assistant: I'm happy I could help, have a nice day.

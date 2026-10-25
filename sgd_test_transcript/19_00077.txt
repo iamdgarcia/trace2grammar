@@ -1,0 +1,29 @@
+user: I am in need of finding a car which I can rent from the 14th till 12th of March, and I do not mind what kind of car it is.
+assistant: Can you tell me the time when you want to pick up the car and from where you want to rent it?
+user: The car I am looking for should be in San Diego, and the time I want to pick it up is 1:30 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice SUV Citroen C5 which you may like and that you can pick it up SAN International Airport.
+user: Can you tell me how much renting this car will cost me per day?
+assistant: Renting this car will cost you $44.00 per day.
+user: That seems a nice one.
+assistant: Are you interested to have the car booked for you?
+user: Yes I do but some other time.
+assistant: Can I do something else to help you?
+user: I am interested to have tickets booked for me for an event there.
+assistant: Can you tell me the event which you are interested in, and the date for the event you are interested in?
+user: Some friends told me that Good People is nice, and the event I am looking for is March 4th.
+assistant: Can you tell me the specific city I should search for the event, and the number of tickets you are interested in?
+user: The event should be happening around London, and I want to have just 1 ticket.
+assistant: Can you please confirm that you want to buy 1 ticket for the Good People event in London on March 4th.
+user: That suits me well. Which is the place where the event will happen?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested tickets have been booked, and I wish you enjoy your time there. The event will be happening at The Blues Kitchen Brixton.
+user: Now I would like to make a reservation for the rental car which you found earlier.
+assistant: Would you like to have insurance on the car?
+user: I am not in need of having the insurance.
+assistant: Can you please confirm that you want to rent a SUV car without insurance which you will be picking up on March 12th at 1:30 pm in SAN International Airport, and that you will need it till March 14th?
+user: That is what I want.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked for you.
+user: I appreciate your help. That would be all.
+assistant: Have a wonderful time!

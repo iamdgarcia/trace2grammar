@@ -1,0 +1,44 @@
+user: I would like to buy bus tickets.
+assistant: How many tickets do you need and where you going?
+user: I need 1 ticket and I'm going to Sacramento.
+assistant: What time will you leave?hat time will you leave?
+user: I am planning on leaving at 06:30.
+assistant: Where will you depart from?
+user: I will leave from San Diego.
+assistant: Do you have a time in mind when you are leaving?
+user: I will leave tomorrow.
+assistant: Please confirm these details. You'd like a ticket on the bus going from San Diego to Sacramento on March 2nd at 6:30 am and you need 1 ticket. You do not have extra luggage.
+user: Sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed.
+user: Is the bus a one-stop?
+assistant: Yes, it's a one-stop bus.
+user: What station will it bring me to?
+assistant: It will drop you off at 65th Light Rail station.
+user: Thanks for helping. Would you find me a rental car there?
+assistant: Do you want to pick up the rental car from Sacramento?
+user: that's correct.
+assistant: What time will you pick up the car?
+user: I'd like to pick it up at 4:30 in the evening.
+assistant: When will you return the car? Would you like to pick up the car on March 2nd?
+user: I'd like to pick up the car next Monday and will return it on March 6th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars that you can choose from. How about this nice SUV Alfa Romeo stelvio at Sacramento Valley Station?
+user: How much is the daily rate?
+assistant: It's $40.00 per day.
+user: Are there other options? I'm good with any type of car.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I have 9 options for you. How about this nice sedan Audi A8 at SMF International Airport?
+user: Sounds good to me.
+assistant: would you like to make the booking?
+user: Yes, book that car.
+assistant: Would you like insurance with it?
+user: No, I'm good.
+assistant: Please confirm that you want to pick up the car from SMF International Airport on March 4th at 4:30 pm and drop it off on March 6th. It's a sedan and does not come with insurance.
+user: Sounds great to me.
+tool(ReserveCar): ok n_results=1
+assistant: The car was reserved.
+user: How much is the daily rate?
+assistant: It's $36.00 per day.
+user: Thanks for helping. That's it.
+assistant: Have a great day.

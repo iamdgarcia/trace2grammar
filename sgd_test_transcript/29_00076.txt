@@ -1,0 +1,36 @@
+user: I would like to find an event on the 11th of this month and I really like Drama.
+assistant: Where should I search?
+user: I am looking for something in NY.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events. Acting for teens is at 520 8th ave. - personal valet parking. It's on March 11th at 7 pm.
+user: Yes, that sounds good.
+assistant: Would you like to purchase a ticket?
+user: Not a the moment.
+assistant: Can I help with something else?
+user: I would like to find a house with a rating of 4.2 or more with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house at 100 Greenwich Street that has a 4.2 rating.
+user: That house sounds good.
+assistant: Would yo like to make a reservation for this house?
+user: Not at the moment.
+assistant: Is there something else I can help with?
+user: I would like to find a direct bus from Philly.
+assistant: Would you like to leave on March 5th?
+user: No, i would like to leave Monday next week.
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses. There is one leaving at 9 am for $24
+user: Which station does the bus depart from and arrive at?
+assistant: It departs from 10th and Filbert at Penn Station.
+user: Yes, that sounds good.
+assistant: Would you like to purchase a bus ticket?
+user: Not at the moment. I would like a ticket for the previous event found.
+assistant: How many tickets would you like?
+user: I would like four tickets.
+assistant: Booking 4 tickets for Acting for teens on March 11th in New York.
+user: How much is the ticket and what is the address?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket is $45 and the location of the venue is 520 8th Ave. - Personal Valet.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: Not at the moment.
+assistant: Have a good day.

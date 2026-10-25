@@ -1,0 +1,22 @@
+user: Hey. I need to ride a train for a trip. Help me book some tickets.
+assistant: What is the departure and arrival city for the trip? Please also provide the date for the tickets.
+user: On the 9th of this month, I'll be traveling from Vancouver to Seattle, WA by train.
+tool(FindTrains): ok n_results=9
+assistant: I have found tickets for you. The departure time is 6:20 am on the 9th of this month. The total cost will be $55.
+user: Exactly what I needed. It's in my price range too. Buy the tickets for me if you can.
+assistant: How many tickets do you wish to purchase?
+user: I only need one ticket for the trip.
+assistant: I can help you get travel insurance as well.
+user: Yeah please do. That'll come in handy for my trip.
+assistant: Confirm the details for your train ticket. On March 9th at 6:20 am, you will be leaving Vancouver to arrive at Seattle. The transaction will be for 1 Value ticket. Is this correct?
+user: I'm sorry. I actually need two seats not one. Not sure what I was thinking.
+assistant: Booking a 2 train tickets for the trip to Seattle. Travel Insurance will be included with the purchase.
+user: That works fine for me. Please confirm as soon as possible.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your two tickets to Seattle have been purchased.
+user: Good. Can you tell me the departure station for the ride?
+assistant: The train is leaving at 6:20 am from Pacific Central Station.
+user: Okay and what is the arrival station?
+assistant: The train will arrive at the King Street Station after departure.
+user: Awesome. I couldn't have booked this trip so easily without you. Thank you very much.
+assistant: Anytime. If you need anything else, please let me know. See you soon.

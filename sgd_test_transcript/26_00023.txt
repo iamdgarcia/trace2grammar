@@ -1,0 +1,33 @@
+user: I need a round trip flight
+assistant: What is the city of departure? What day do you want to leave and what day do you want to return?
+user: The city of departure is Berlin. I want to leave on next Tuesday and I want to return on 13th of this month
+assistant: What is the destination city?
+user: I want to go to Chi-town
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: With American Airlines the onward flights takes off at 2:55 am, with layover, and the returning flights takes off at 4:35 pm. It costs $507 in total
+user: Are there other flights available? Any class is fine
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 flights. With Delta Airlines the onward flight takes off at 3:50 pm, with layover, and the returinig flights takes off at 7:35 am. It costs $515 in total
+user: What time is the onward flight scheduled to land?
+assistant: It's scheduled to 3:57 am
+user: Very good! Now I need a house there, with a rating of 4.5 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There's a house at 1 west wacker drive with rating 4.5
+user: Yes, It's fine for me! I want to book there
+assistant: Is the check-out date March 13th?
+user: Yes, It's correct.
+assistant: For how many people?
+user: I need for 1 people
+assistant: Is the arrival date March 5th?
+user: No, It's March 9th
+assistant: A house for 1 people in Chicago, from March 9th till March 13th. Is it correct?
+user: Yes, it's correct. Thanks
+tool(BookHouse): ok n_results=1
+assistant: The house has been booked
+user: I would like to find attractions for children, of any kind it's fine
+tool(FindAttractions): ok n_results=10
+assistant: There's 360 CHICAGO, a Tourist Attraction
+user: Good. Do you have any other suggestions?
+assistant: There's Big Bus Tours Chicago (Tours begin at 98 E. Upper Wacker Dr.), a Tourist Attraction
+user: Yes, It's fine for me! It's all for now, thanks!
+assistant: Have a good day

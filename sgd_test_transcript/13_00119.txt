@@ -1,0 +1,19 @@
+user: I feel like watching some movies online.
+assistant: I can find you some movies to watch. What kind do you like?
+user: I like Comedy-drama movies.
+tool(FindMovies): ok n_results=1
+assistant: I've found 1 movie you might like. What about Give Me Liberty?
+user: Give Me Liberty sounds great.
+assistant: Would you like me to play the movie now?
+user: Yes, please play it.
+assistant: Please confirm that you would like me to play the movie Give Me Liberty with subtitles on English.
+user: Yes, please. Can you tell me who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: The movie will begin playing momentarily. Chris Galust acted in this movie.
+user: Great. Can you tell me about the weather?
+assistant: In what area?
+user: Tell me about the weather in CDMX.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be 102 degrees Fahrenheit, and there is a 0 percent chance of rain.
+user: Great. That will be all, going to watch my movie.
+assistant: Enjoy the movie and I will talk to you later.

@@ -1,0 +1,14 @@
+user: I am in a nice mood and I like to listen some nice songs. Can you search for me the best one?
+tool(LookupMusic): ok n_results=10
+assistant: Yes, what about your opinion on Nixta Ginontai Ta Thavmata by Malou Kyriakopoulou from the album Ores Aixmis. Hope you will like it.
+user: Let me know the type of this song and also check whether it is from '16?
+assistant: No, it is from the year 2019 and it is a Pop type song.
+user: That's great and I like the same.
+assistant: Shall I play it for you now?
+user: Yes, do it for me.
+assistant: Please confirm to play the song Nixta Ginontai Ta Thavmata in Living Room.
+user: That is confirmed to proceed.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing. Enjoy the same.
+user: Thanks & that's all.
+assistant: Have a good day.

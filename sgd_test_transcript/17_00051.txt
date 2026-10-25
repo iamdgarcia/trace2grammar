@@ -1,0 +1,17 @@
+user: Could you find me one seat on a train?
+assistant: Where are you going to and leaving from and on what date would you like to travel?
+user: I'd like 2 seats from Portland going to Vancouver, BC on the 6th of March.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains that would potentially work. How does a train leaving at 7:40 am that costs $139 sound?
+user: Where is it leaving from and where will it arrive at?
+assistant: It's leaving from Union Station and will arrive at Pacific Central Station.
+user: Are there other options going to Seattle?
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains that might work. How about one leaving at 9:10 am that costs $105?
+user: That would be great.
+assistant: Would you like to book tickets?
+user: No, not now. I'd like to find a house to stay at there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 available. There's a nice one at 1000 1st Avenue with a 4.5 rating.
+user: That would be great. That's all for now.
+assistant: Have a great day!

@@ -1,0 +1,14 @@
+user: Find me a Fantasy movie to watch that was directed by Jim Henson and starred Steve Whitmire.
+tool(FindMovies): ok n_results=1
+assistant: Search revealed 1 result. Labyrinth has a 70 out of 100 rating.
+user: That works for me. Find me something cool to do on the 12th of this month in SD.
+assistant: Do you want me to search in the Music, Theater, or any other particular genre?
+user: Search under the Stage show genre.
+tool(FindEvents): ok n_results=3
+assistant: Search revealed 3 results. American Idiot The Musical is playing on March 12th at 6 pm at OB Playhouse & Theatre Company.
+user: That is perfect.
+assistant: Shall I order you tickets now?
+user: No, I don't want to order tickets now.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: Have a good day.

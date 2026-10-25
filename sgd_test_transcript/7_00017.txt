@@ -1,0 +1,15 @@
+user: What is the weather in New York going to be like on the 11th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature in New York on the 11th should be around 65 degrees Fahrenheit with a 34 percent chance of rain.
+user: What about in Stinson Beach?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature in Stinson Beach on the 11th should be around 78 degrees Fahrenheit with a 15 percent change of rain.
+user: What about on March 5th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature in Stinson Beach on March 5th should be around 90 degrees Fahrenheit with a 18 percent chance of rain.
+user: How windy and humid will it be?
+assistant: The average wind speed should be around 7 miles per hour with a 28 percent humidity.
+user: Okay, thanks.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

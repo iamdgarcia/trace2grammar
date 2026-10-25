@@ -1,0 +1,23 @@
+user: Find me a house to stay in near New York City.
+tool(SearchHouse): ok n_results=10
+assistant: Do you like 100 Greenwich Street with a 4.4 rating?
+user: What else do you have?
+assistant: 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA has a 4.2 rating.
+user: Do they have laundry service and what is their phone number?
+assistant: They do offer laundry service and you can contact them at +1 718-512-0248.
+user: That is perfect.
+assistant: Shall I book you a room there?
+user: Yes, I want to stay in this house.
+assistant: How many people are there and what day are you arriving?
+user: Two people will be arriving on the 8th of March.
+assistant: What day will you be departing?
+user: I will be departing on March 12th.
+assistant: You want a booking for 2 people in New York from March 8th through March 12th, correct?
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your booking is complete.
+user: What is there to do around there?
+tool(FindAttractions): ok n_results=10
+assistant: Search revealed 10 results. There is the 9/11 Tribute Museum under the Museum category.
+user: That is good. Thanks for everything.
+assistant: Have a great time.

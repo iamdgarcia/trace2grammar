@@ -1,0 +1,37 @@
+user: Can you show me my alarms please
+tool(GetAlarms): ok n_results=2
+assistant: Sure, you have 2 alarms, one at 11 am called Catch Bus
+user: Ok thanks for that
+assistant: Do you want to add any more?
+user: No thanks, but I do need to find a restaurant
+assistant: Where are you looking?
+user: I want to eat in Belmont
+assistant: What kind of food?
+user: I want some Italian!
+tool(FindRestaurants): ok n_results=3
+assistant: I found 3 Italian places in Belmont including Caprinos which you might like
+user: What else can you fine that is intermediate priced?
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 in Belmont including Divino Ristorante
+user: Yes that's good! Now let's book a rental car
+assistant: What time do you need the car
+user: I want to get it at 12:30 and I wanna purchase insurance
+assistant: What kind of car? And till when do you need it?
+user: I need a sedan vehicle till the 9th of this month
+assistant: When do you want to start using it?
+user: I need it starting the 7th of March
+assistant: And where do you want to get it?
+user: I think the Portland Bus Station is a good place to get it
+assistant: Confirming your March 7th 12:30 pm pick up of the Sedan at Portland Bus Station and you'll be returning in on March 9th
+user: Yes that's correct
+tool(ReserveCar): ok n_results=1
+assistant: It has been booked then
+user: Thanks so much, now can you share the location
+assistant: To whom? And is 968 Ralston Avenue the address you're referring to?
+user: Yes please, share it with Heather
+assistant: Confirming you're sharing the address 968 Ralston Avenue to Heather
+user: Confirmed, yes please
+tool(ShareLocation): ok n_results=1
+assistant: You've share it
+user: Thanks so much, that's all for now
+assistant: Happy I could help, see ya!

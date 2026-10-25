@@ -1,0 +1,38 @@
+user: I have planned to go for a short trip and I want to travel through a Train. Can you find me the one from Portland for the date of the 14th?
+assistant: Yes, Where do you want to visit? Let me know it, so that I can book the train as per your requirement.
+user: Find the one to go to Seattle.
+tool(FindTrains): ok n_results=9
+assistant: I got results about 9 trains and please note that the one departing at 9:10 am for the ticket cost $66 is the suitable one to you. What do you think?
+user: I want to book something else. Can you search more?
+assistant: Yes, what about another train departing at 10:10 am for the total ticket cost $68?
+user: What is the origin and destination stations names of this train?
+assistant: This train will leave from Union Station and reaches finally to King Street Station.
+user: That is nice and thanks.
+assistant: Shall I book the tickets now?
+user: I think so. Pleas book the tickets to this train now.
+assistant: Shall I book it with Travel insurance.
+user: I need to book it with trip insurance.
+assistant: Okay, one more detail I need to know that is number of tickets required by you. Let me know the same.
+user: I want to book 1 seat only.
+assistant: I need your confirmation to book 1 Value ticket to the train which is leaving at Portland on March 14th at 10:10 am to Seattle including trip insurance.
+user: Yes, that's right. Go ahead.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are booked and you can enjoy your journey.
+user: Thanks for your help. Now, I want to search for some interesting events and especially I like Theater events. Can you find me the one on the 14th?
+tool(FindEvents): ok n_results=10
+assistant: Yes, What about your opinion on Beatleconcert will be held at 12th Avenue Arts on March 14th at 5 pm.
+user: Let me know the ticket cost and venue address.
+assistant: The venue is located at 1620 12th Avenue and the cost of ticket will be around $25.
+user: That is okay and thanks.
+assistant: Shall I book the tickets to this event now? Or do you need it later?
+user: No, may be later. I will ask it later. Now, I want only to share the location.
+assistant: To Whom you want to do the same?
+user: Share it with Austin.
+assistant: I need your confirmation to share the location 12th Avenue arts with Austin.
+user: That is confirmed to proceed.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location successfully.
+user: That is nice. Thanks for the same.
+assistant: Anything else you need?
+user: Nothing there for now. Thanks.
+assistant: Have a good day.

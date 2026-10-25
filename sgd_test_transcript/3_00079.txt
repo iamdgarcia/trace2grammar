@@ -1,0 +1,13 @@
+user: Find me a cab please.
+assistant: Where you want to go and how many seats you need?
+user: I am part of a group of 3 and I want a ride to 4906 West El Camino Real # A.
+assistant: What preferences do you have about the ride?
+user: I would like to be a Pool ride.
+assistant: You prefer a Pool ride for 3 people to 4906 West El Camino Real # A.I'm right?
+user: Yes that's okay.The cab when will rich here?
+tool(GetRide): ok n_results=1
+assistant: Your ride was booked and the cab is on its way.Should arrive in 8 minutes.
+user: Tell me the cost, please.
+assistant: $22.17 is the total cost.
+user: Thank you.That's all for now.
+assistant: Have a great day!

@@ -1,0 +1,16 @@
+user: I'd like to look for a location to reside in, preferably with three bed rooms.
+assistant: How many baths do you desire, and what location would you like th residence in? Are you looking for a residence to rent or buy?
+user: I'd like to look for a location to buy, preferably in Sebastopol with 2 baths and an in-unit laundry.
+tool(FindHomeByArea): ok n_results=1
+assistant: I discovered 1 nice residence. There is a lovely residence called Redwood Grove Apartments in 7015 Fellers Lane with a pricetag of $3,550,000.
+user: That's perfect for me.
+assistant: Would you like to plan a trip to the residence?
+user: Yeah, I'd like to plan a trip on the 3rd.
+assistant: Please verify the following information: you are planning a trip to Redwood Grove Apartments on March 3rd.
+user: Yeah, that's right. Does the residence possess a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your trip to the residence has been planned, and the residence does not possess a garage.
+user: Thank you for your assistance.
+assistant: Could I assist with something else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

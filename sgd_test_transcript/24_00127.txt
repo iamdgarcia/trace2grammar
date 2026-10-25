@@ -1,0 +1,25 @@
+user: I want to make a payment.
+assistant: Can you tell me the following information: what account should I transfer from? How much should an transfer? What is the name of the contact?
+user: I am sending Margaret $89 from my debit card.
+assistant: Can you confirm the following: you are sending Margaret $89 from your debit card via a public transaction.
+user: No. Send it from my balance.
+assistant: Can you confirm the following: you will be sending $89 from your app balance.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been successfully made. The recipient should receive the money soon.
+user: I need to find a restaurant.
+assistant: What type of cuisine do you prefer? What city should I search in?
+user: Find me a Diner in San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10 restaurants that you might like. 1760 is a nice restaurant in San Francisco.
+user: That sounds good. I want to book a table.
+assistant: What time should I make the reservation for?
+user: Make it for 12 pm.
+assistant: Confirming that you want to make a reservation for 2 at 1760 in San Francisco. The reservation is for 12 pm on March 1st.
+user: Yes, that works. Can you tell me the rating and address of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The average rating is 4.4. The address of the restaurant is 1760 Polk Street. Your reservation is successful.
+user: Thank you very much.
+assistant: Is there anything else that you need help with?
+user: No. Thank you very much.
+assistant: You're welcome. Have a good day!

@@ -1,0 +1,27 @@
+user: I want to find something interesting to do, can you help me search for some activities?
+assistant: Is there any particular city you would like to search in?
+user: Yes, I am looking for something to do in the Portland area.
+assistant: Is there a particular type of events you prefer?
+user: Yes, I would really like to watch a Musical performance.
+tool(FindEvents): ok n_results=8
+assistant: I found 8 events that match your criteria. Bastille will be taking place at Theater Of The Clouds at 5:30 pm on March 10th.
+user: Where is the venue located? How much is it for one ticket?
+assistant: The venue address is 1016-1098 North Center Court Street. The ticket price is $20.
+user: OK, sounds great, thanks. I just remembered that I need to request a payment.
+assistant: Who are you sending the payment request to?
+user: Please set up a transaction with Wilson.
+assistant: What is the amount of the request?
+user: It is for 132 dollars.
+assistant: You are setting up a public transaction with Wilson in the amount of $132, is that correct?
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been sent successfully.
+user: Thank you very much! I would like to buy four tickets for the event you found.
+assistant: You would like to book 4 tickets for Bastille in Portland on March 10th, is this correct?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket reservation has been confirmed. Enjoy the show!
+user: Thank you very much for your help!
+assistant: Is there anything else I can help you with?
+user: No, that's all, thank you.
+assistant: Have a great day!

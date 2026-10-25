@@ -1,0 +1,18 @@
+user: I need a hotel in San Fran.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options, what about a 1 star called Amsterdam Hostel San Francisco.
+user: How much do they cost per night and can you smoke in your room?
+assistant: No smoking is permitted and it costs $54 per night.
+user: What else did you find?
+assistant: A 4 star called Argonaut Hotel.
+user: I like the sound of that one.
+assistant: Do you want me to book a room.
+user: Yes I do.
+assistant: What date will you arrive and how many nights will you be staying?
+user: On Thursday next week for five nights.
+assistant: To confirm then that is 1 room for 5 nights from March 7th in the Argonaut Hotel in San Francisco.
+user: Yes that is right. How much do they charge per night and what is their address?
+tool(ReserveHotel): ok n_results=1
+assistant: 495 Jefferson Street and they charge $396 per night.
+user: Thanks so much for your help, that is all I need.
+assistant: goodbye, enjoy your day.

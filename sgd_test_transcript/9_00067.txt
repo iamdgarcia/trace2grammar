@@ -1,0 +1,20 @@
+user: Life is boring and i need to spend my leisure time by watching movie. Will you find a good movie to watch?
+assistant: At which place you wish to see the movie?
+user: Can you search for movies in Santa ROsa.
+tool(FindMovies): ok n_results=10
+assistant: How about After the Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: Fiddler is perfect.
+assistant: Whether i need to book tickets for that movie?
+user: yes, Please buy the ticket and i need to watch in on tuesday next week.
+assistant: How many tickets do you want?
+user: i need 1 tickets.
+assistant: At what time i should reserve the tickets to watch the show? Do you want to watch a regular or imax show?
+user: I need to watch at half past 11 in the morning. i want to watch a regular show.
+assistant: please confirm the details . Movie to watch is Fiddler: A Miracle of Miracles. You need 1 tickets on march 5th in Santa ROsa starting at 11:30 am and it is a regular movie.
+user: Ok that sounds good. How much is the ticket costs? what is the address of the theater?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets are bought. it costs $8 per person. the theatre's address is 551 Summerfield Road.
+user: Ok thanks a lot.
+assistant: whether i need to find anything else?
+user: no, thanks for now.
+assistant: have a wonderful day.

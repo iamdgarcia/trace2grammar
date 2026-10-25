@@ -1,0 +1,53 @@
+user: Find me a therapist please.
+assistant: What type of therapist you need?
+user: I would need a Psychologist.
+assistant: In which city you want to be?
+user: In San Jose will be okay for me.
+tool(FindProvider): ok n_results=10
+assistant: You may try a Psychologist in San Jose called Barskyex Bryna G
+user: Tell me the phone number and address for this place.
+assistant: 5755 Cottle Road # 4 is the address and 408-363-4418 is the phone number.
+user: something else you have?
+assistant: You may try a Psychologist in San Jose called Burdge Sarah.
+user: Something else you can find?A family Counselor will be good.
+tool(FindProvider): ok n_results=8
+assistant: I have for you 8 options that could work.You can try a Family Counselor in San Jose named Banner Linda L.
+user: Sounds very good.
+assistant: You want an appointment here?
+user: Yes I would like an appointment on the 9th at eleven in the morning.
+assistant: Book a an appointment with Banner Linda L on March 9th at 11 am.I'm right?
+user: Yes is okey.Tell me the address and the phone number.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is done and you should get an confirmation email soon.2516 Samaritan Drive is the address and 408-358-7401 is the phone number.
+user: Thank you for all.I appreciate.I want to make a request payment.
+assistant: Tell me the amount.
+user: Will be one hundred and sixty seven dollars.
+assistant: Tell me the name of the contact.
+user: The name is Yumi.
+assistant: You want to make an public transactions with Yumi with amount $167.
+user: Yes that's true.
+tool(RequestPayment): ok n_results=1
+assistant: The payment was made.
+user: Thank you.Find me please a restaurant for a meal on that day.
+assistant: What type of food do you prefer?
+user: Something where Pho is served will be great.
+tool(FindRestaurants): ok n_results=5
+assistant: A nice restaurant in San Jose is Bowl & Plate At White Shallot.
+user: Other restaurants you can find?
+assistant: A nice restaurant in San Jose is Dong Que Restaurant.
+user: Do you have any other recommendations?I would like to be tagged affordable for price.
+tool(FindRestaurants): ok n_results=3
+assistant: I have 3 options for you.A nice restaurant located in San Jose called Elevenfifty.
+user: Yes, I like this one.
+assistant: With something else I can help you?
+user: I want to book a table at a restaurant.
+assistant: At what time you want to be the reservation?
+user: I would like to be at 1 o'clock in the afternoon.
+assistant: Book a table for 2 people at Elevenfifty in San Jose on March 9th at 1 pm.I'm right?
+user: Yes is okay.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation is done.
+user: Thank you very much.
+assistant: Is there something else that I can do for you?
+user: No.Thank you very much.
+assistant: Have a great day!

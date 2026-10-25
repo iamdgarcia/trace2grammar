@@ -1,0 +1,36 @@
+user: Would yodu find me a bus for four going to Anaheim?
+assistant: When will you leave?
+user: I will leave March 14th.
+assistant: Where will you depart from?
+user: I will leave from LAX.
+tool(FindBus): ok n_results=10
+assistant: What about a $13 bus leaving at 6 am?
+user: How many stops will there be?
+assistant: It's a direct bus.
+user: That work.
+assistant: Would you like to purchase tickets?
+user: Not at the moment. Would you find me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: How about Angel Stadium of Anaheim? It's a Sports Venue.
+user: Do you have other attractions?
+assistant: Check out Cars Land. It's a Tourist Attraction.
+user: Do you know of any other attractions?
+assistant: How about Disney California Adventure Park? It's a Theme Park.
+user: Do you have to pay to get in? Is the place kid friendly?
+assistant: It's a pretty kid friendly place. No, it's not free.
+user: Okay, but could you buy the bus ticket you found?
+assistant: Could you confirm that you want 4 tickets on the bus leaving from Los Angeles and going to Anaheim on March 14th at 6 am? You will not be carrying any extra luggage.
+user: Sounds good. What station will it arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket has been confirmed. It will arrive at Anaheim Bus Station.
+user: What station will it leave from?
+assistant: It leaves from North Hollywood Station.
+user: Thanks for helping. Could you find me hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 star hotel called Alamo Inn & Suites.
+user: Could I smoke in the hotel? What is its address?
+assistant: No, smoking is not allowed. The address is 1140 West Katella Avenue.
+user: That's great.
+assistant: Could I assist with anything further?
+user: No, that is all. It's been very helpful.
+assistant: Have a great day.

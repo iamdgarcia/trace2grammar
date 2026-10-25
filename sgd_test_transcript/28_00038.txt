@@ -1,0 +1,25 @@
+user: I'd like to find a movie to watch, something with Christopher Malcolm in it. I would like to find movies directed by Jim Henson.
+tool(FindMovies): ok n_results=1
+assistant: I found Labyrinth, it has an average rating of 70 out of 100.
+user: Yeah, that's a good movie. I would also like to find a restaurant. Please search for non meat restaurants that are average priced.
+assistant: What city would you like to search in?
+user: Look for one in SF.
+tool(FindRestaurants): ok n_results=3
+assistant: Ben Wah Restaurant is in San Francisco.
+user: Are there vegetarian options on the menu there?
+assistant: No, they don't have vegetarian options.
+user: What are the restaurant's reviews like? Is there outdoor seating?
+assistant: The average rating is 3.6. The restaurant does not have outdoor seating.
+user: OK, thank you.
+assistant: Would you like to reserve a table?
+user: Yes, I would like to make reservations.
+assistant: What time would you like the reservations for?
+user: Let's make it for 6:15 in the evening.
+assistant: You would like to book a table for 2 at Ben Wah Restaurant in San Francisco at 6:15 pm on March 1st, is that correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, that's all, thank you
+assistant: Have a great day!

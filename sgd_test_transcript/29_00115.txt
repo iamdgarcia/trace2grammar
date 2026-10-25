@@ -1,0 +1,29 @@
+user: I am looking for something interesting to do. Can you help me find a Musical performance on March 5th?
+assistant: Is there any particular city you would like to look in?
+user: Yes, I will be in the Philadelphia area.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events that match those criteria. Anthony Green will be performing at The Foundry at 7:30 pm on March 5th.
+user: How much is it for a ticket to that show? Where is the venue located?
+assistant: The venue is located at 29 East Allen Street 2nd Floor. One ticket costs $40.
+user: Sounds good so far. Can you find me some more events? Are there any Drama events on the 12th of March?
+tool(FindEvents): ok n_results=6
+assistant: Comedysportz will be taking place at The Playground At The Adrienne on March 12th at 7:30 pm.
+user: Yeah, I think I might want to go to that. But first I would like to find a house to stay in for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: There's a house at 1 Logan Square with a rating of 4.5.
+user: Good, that house sounds great.
+assistant: Would you like to reserve the house?
+user: No, no right now. Let me find out about the bus to get there. I would like a direct bus and I am leaving later today.
+assistant: What city are you leaving from?
+user: I am leaving from New York.
+tool(FindBus): ok n_results=7
+assistant: There is a bus departing at 7:40 am with a ticket price of $26.
+user: That will be fine. I would like to buy two tickets for the event you found.
+assistant: You would like 2 tickets for Comedysportz in Philadelphia on March 12th, is that correct?
+user: Yes, that's right. How much is it for each ticket? What is the address of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket purchase is complete. The ticket cost is $40 each. The venue is located at 2030 Sansom Street.
+user: Thanks a lot for your help.
+assistant: Is there anything else I can help you with?
+user: No, I'm good for now, thank you.
+assistant: Have a great day!

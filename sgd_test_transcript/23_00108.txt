@@ -1,0 +1,36 @@
+user: I'm travelling for work on business and need to find train tickets from Sacramento, CA to Fresno on the 10th of March.
+tool(FindTrains): ok n_results=7
+assistant: There is a train departing at 8 am, would this be a suitable option? The ticket price is $66.
+user: What is the destination station?
+assistant: The train is travelling to Fresno Station.
+user: What station does the train depart from?
+assistant: It leaves from Sacramento Valley station.
+user: Okay sure that's fine.
+assistant: Would you like to book tickets now?
+user: Yes please but I might need to change my mind as it is a business trip. Can you find me one conditionally refundable ticket? I also need travel insurance.
+assistant: Okay so just to check the details: You want to book 1 ticket for the train leaving at 8 am from Sacramento travelling to Fresno on March 10th. You would also like a value ticket with trip insurance included.
+user: That's correct yes.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked successfully.
+user: Thanks for your help. Now can you help me find something to do while I'm there.
+assistant: What kind of thing are you looking for? Perhaps Music or Theater?
+user: I'd prefer a stage show.
+tool(FindEvents): ok n_results=1
+assistant: How about The Government Inspector at the California Arts Academy on March 8th at 6:30 pm?
+user: I like the sound of that!
+assistant: Do you want to buy these tickets now?
+user: Not right now thanks.
+assistant: Do you need anything else?
+user: Yeah can you share the location please.
+assistant: Sure, who do you want to share it with?
+user: Please send it to Jennifer.
+assistant: So that's the California Arts Academy location with Jennifer.
+user: Actually Jennifer won't need the location, please share it with Abigail instead.
+assistant: Sure. So that's the California Arts Academy with Abigail.
+user: Yes that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: No thanks, that's all for now.
+assistant: Enjoy your day.

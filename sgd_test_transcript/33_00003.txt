@@ -1,0 +1,30 @@
+user: Can you help me search for a place to live?
+assistant: Are you looking to rent or buy? What area would you like to search in?
+user: I am looking for property to buy in Antioch.
+assistant: How many bedrooms and bathrooms would you like the property to have?
+user: It only needs to have 1 bedroom and 1 bathroom.
+tool(FindHomeByArea): ok n_results=9
+assistant: Antioch Rivertown Senior Housing at 1400 A Street has a property for sale for $1,900,000.
+user: Let's start with that one. I would like to schedule an appointment to visit the property on the 9th of this month.
+assistant: You would like to make an appointment to visit Antioch Rivertown Senior Housing on March 9th, is this correct?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your appointment is scheduled.
+user: Thanks a lot. I also need to share that location.
+assistant: Who would you like to share the location with?
+user: I need to share it with Janet.
+assistant: You would like to share the location 1400 A Street with Janet, is that correct?
+user: Yes, please go ahead.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you, that's very helpful. Can you also help me get a cab to get there? I would like an Expensive ride for 1.
+assistant: You would like a Luxury ride for 1 to 1400 A Street, is that correct?
+user: No, sorry, I should have said there are two of us.
+assistant: You would like a Luxury ride for 2, is that correct?
+user: Yes, that's right. How long will the cab take to get here?
+tool(GetRide): ok n_results=1
+assistant: You cab has been booked and is on its way. The car should arrive in about 12 minutes.
+user: Thank you very much for your help.
+assistant: Is there anything else I can help you with?
+user: No, that's all, thanks.
+assistant: Have a wonderful day!

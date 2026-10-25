@@ -1,0 +1,32 @@
+user: Can you please find some attractions for me to visit?
+assistant: Sure, but first please tell me in which area.
+user: New York City, please.
+tool(FindAttractions): ok n_results=10
+assistant: There's a Museum which you shouldn't miss, the 9/11 Tribute Museum.
+user: OK, got it.
+assistant: Is there anything else I could help you with?
+user: I would need a car rental there from 12 o'clock in the afternoon on the 1st to next Monday.
+assistant: You'll be picking the car up from New York, right?
+user: Yes, that's correct.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars matching your criteria, out of which I'd recommend a very nice SUV, the Alfa Romeo Stelvio, which is available for pick-up from Port Authority Station.
+user: Great. Can you please place a reservation for me?
+assistant: Sure, but first please tell me if you want me to add insurance to the rental.
+user: No, I do not want insurance.
+assistant: Can you please confirm that you want me to place a reservation for you for a rental SUV to be picked up on March 1st at 12 pm from Port Authority Station, due to be returned on March 4th.
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully placed your reservation.
+user: Can you please tell me the per day price for this rental.
+assistant: Sure, the car is priced at $42.00 per day.
+user: Thanks for everything! Could you also please share the location with Janet?
+assistant: Do you want me to share the address for the 9/11 Tribute Museum, the Port Authority Station or some other location?
+user: Please share the address for the 9/11 Tribute Museum.
+assistant: Can you please confirm that you want me to share the location for the 9/11 Tribute Museum with Janet?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thank you so much for your help!
+assistant: My pleasure. Is there anything else I could do for you?
+user: No, that will be all for now. You've been very helpful!
+assistant: Have a great day!

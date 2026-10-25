@@ -1,0 +1,30 @@
+user: I am interested in finding a salon which is in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: A nice salon which you might consider is the 17 Jewels Salon in Oakland.
+user: This one seems nice.
+assistant: Do you want to have an appointment reserved for you here?
+user: Actually I do not want to do that now. Can you help me to share the location, the address of which is 4801 Telegraph Avenue?
+assistant: Can you tell me with whom you want to share this address?
+user: The person I want to share the address with, is Sharon.
+assistant: Can you please confirm that you want to share with Sharon the address 4801 Telegraph Avenue?
+user: That is not right, because I actually want to share the address with Peter.
+assistant: Can you please once again confirm that you want to share the address 4801 Telegraph Avenue with Peter?
+user: It is not correct, because the address I want to share is Tao Tao
+assistant: Can you confirm that the location you are going to share with Peter is Tao Tao.
+user: That is what I want.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: I want to know the alarms which I have set.
+tool(GetAlarms): ok n_results=2
+assistant: There are 2 alarms which are set, with one of them being for 5 pm, and it is titled Event.
+user: Are there other alarms which are set?
+assistant: Another alarm titled Get up is set for 8 am.
+user: Alright, nice. Now I want another alarm to be added, and for it to be called Leave for home.
+assistant: Can you tell me the time you want to set for the new alarm?
+user: The new alarm should be set for three pm.
+assistant: Can you please confirm that you want to set a new alarm for 3 pm, and for it to be called Leave for home?
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Your requested alarm has been set.
+user: I appreciate it very much. That's all I needed.
+assistant: Have a good time!

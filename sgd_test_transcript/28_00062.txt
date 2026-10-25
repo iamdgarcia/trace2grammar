@@ -1,0 +1,25 @@
+user: Im searching for a movie to watch which is directed by Herbert ross.
+tool(FindMovies): ok n_results=1
+assistant: What about steel magnolias ?it has an average rating of 70 out of 100.
+user: What is the genre of it?
+assistant: Kind of Family movie.
+user: Songs perfect wanna a find restaurant over there.
+assistant: Whats your preferred food?
+user: Get something Oriental I'm looking for a restaurant with moderate price.
+assistant: what is the Location to search?
+user: Need restaurants at Novato.
+tool(FindRestaurants): ok n_results=2
+assistant: I got 2 restaurant which you may like it, Anokha cuisine of india is a nice choice and it's in Novato.
+user: Can you look forfsome other restaurants?
+assistant: Its Chao praya at Novato.
+user: What is the contact number and their address?
+assistant: Contact number is 415-892-9303 and address is 1553 south novato Boulevard G.
+user: Yes that's all I need wanna book table at a restaurant on next Friday for 3 people it should be half past 12 in the afternoon
+assistant: Confirm the following details : Booking table at Chao praya for 3 people at 12:30 pm in Novato on march 8th.
+user: No make it for four people.
+assistant: Confirm the details the city is novato for group of 4 people.
+user: Yes that's good
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation has been made.
+user: Thanks a lot that's all i need.
+assistant: Have a great day.

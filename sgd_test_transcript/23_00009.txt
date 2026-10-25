@@ -1,0 +1,34 @@
+user: I want to find movies.
+assistant: What kind of movies do you like?
+user: Comic movies are my favorite.
+tool(FindMovies): ok n_results=5
+assistant: What about Chhichhore, Good Boys, or My Big Fat Greek Wedding.
+user: What about a movie featuring Camilla Rutherford?
+tool(FindMovies): ok n_results=1
+assistant: How about the movie, Yesterday?
+user: Yesterday sounds great.
+assistant: Do you want to play it.
+user: Not right now.
+assistant: Anything else I can do?
+user: I want to find attractions in Warsaw.
+tool(FindAttractions): ok n_results=10
+assistant: How about Bazylika Archikatedralna w Warszawie p.w. Meczenstwa sw. Jana Chrzciciela? It is a place of worship.
+user: Is it child-friendly? What's the phone number?
+assistant: It is kid-friendly. The phone number is 22 831 02 89.
+user: Great. I want to find some popular songs. Something from the album Tell Me You Love Me.
+tool(LookupMusic): ok n_results=2
+assistant: I found 2 songs. What about No Promises by Cheat Codes from the album Tell Me You Love Me?
+user: Yes, I want to play that song.
+assistant: Please confirm: playing No Promises in the living room.
+user: Yes, that's correct. What year was it released? '14
+tool(PlayMedia): ok n_results=1
+assistant: It came out in the year 2017.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: I want to play the movie now.
+assistant: Please confirm: playing Yesterday with English subtitles.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is playing. Enjoy.
+user: Thanks so much.
+assistant: Have a great day.

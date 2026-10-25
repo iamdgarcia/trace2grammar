@@ -1,0 +1,36 @@
+user: Show me the alarms I have.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set now for 7 am with the name running.
+user: Okay that is good. I'd like to find a restaurant there that is tagged intermediate priced.
+assistant: What type of food are you looking for?
+user: Please find something Italian.
+assistant: What location should I search?
+user: Please find restaurants in Santa Rosa.
+tool(FindRestaurants): ok n_results=10
+assistant: Basilico is nice for a restaurant in Santa Rosa.
+user: What is the phone number and are vegetarian options on the menu?
+assistant: There aren't vegetarian options but their phone is 707-539-0260.
+user: Yes, that is great.
+assistant: Do you wish to reserve a table there?
+user: No thanks, I'd like to reserve a car there to pick up ten am at Union Plaza which is convenient for me.
+assistant: What type of car do you want and until when do you want it? When would you like to start the car rental?
+user: A Hatchback is a nice selection which I need from March 7th till the 10th of this month.
+assistant: Would you like to add insurance?
+user: I won't need insurance.
+assistant: Please confirm details you are picking up a car from Union Plaza March 7th 10 am and dropping off March 10th in a Hatchback car without insurance.
+user: Yes, that is sounding good.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Oh, will you share the location of Union Plaza with Matthew.
+assistant: Please confirm details that you are sharing the location Union Plaza with Matthew.
+user: No, I wish to share the information with Alice.
+assistant: Please confirm details that you're sharing the location of Union Plaza with Alice.
+user: No, the address I want to share is Staten Island Children's Museum.
+assistant: Please confirm details you are sharing the location Staten Island Children's Museum with Alice.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully share the location.
+user: Thanks that is helpful very much.
+assistant: What else can I assist you with?
+user: No thank you. That has been pretty helpful.
+assistant: Have a great day.

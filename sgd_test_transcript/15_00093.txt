@@ -1,0 +1,19 @@
+user: Can you please find me a therapist which is a Psychologist, that is located in San Rafael?
+tool(FindProvider): ok n_results=1
+assistant: You might consider having Rose Light which is a Psychologist in San Rafael
+user: That seems as a good one
+assistant: Are you willing to have an appointment booked with this therapist?
+user: Some other time. Though could you tell me how the weather will be there on March 11th?
+tool(GetWeather): ok n_results=1
+assistant: In your requested location the temperature should be about 79 degrees Fahrenheit, and the chance of raining at 1 percent.
+user: Alright fine. Now I would like to check again with the reservation of the appointment with the therapist on that day.
+assistant: Can you tell me which is the time when you want to have the appointment?
+user: I will be free to have the appointment at three pm.
+assistant: Can you please confirm that you want to have an appointment reserved for you with Rose Light at 3 pm on March 11th?
+user: That suits me well. Can you give me their address, and the contact number I can use to get in touch with them?
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been reserved, which will be confirmed with an email that you will receive soon. The address of the therapist is 7 Mount Lassen Drive # D110, and if you want to get in touch with them you can at 707-782-1948.
+user: I am very thankful! Your help is appreciated.
+assistant: Is there something else I can help you with?
+user: Nothing. I thank you! I am grateful.
+assistant: I am happy I could help.

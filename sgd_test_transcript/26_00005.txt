@@ -1,0 +1,35 @@
+user: Help me find a round trip flight.
+assistant: I can help you with that. Tell me your destination and preferred return date.
+user: My destination is Seattle, WA and I'd like to return on March 7th.
+assistant: Your departure city, please?
+user: Washington is my departure city, please find flights from there.
+assistant: When would you like to leave?
+user: I'd like to leave on March 4th. Find me 1 ticket in any class.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Among the 4 suitable flights I found is an outbound American Airlines flight with a layover, leaving at 10:30 am. The inbound flight leaves at 4:55 pm. The price of the ticket is $486. Does this work for you?
+user: That works. Now, I'm looking for a house to stay while there. It must have a 4.5 or higher rating and also offer laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice, 4.5 star rated house situated at 1000 1st Avenue.
+user: On what number can I reach this place?
+assistant: The contact number is +1 206-957-1000.
+user: What other houses for 1 person would you recommend?
+tool(SearchHouse): ok n_results=10
+assistant: How about the nice, 4.5 star rated house situated at 1007 1st Avenue?
+user: This house works for me.
+assistant: Should I go ahead and reserve this house?
+user: Yes, please book me the house.
+assistant: Will you be checking in on March 4th?
+user: Yes, that's perfect.
+assistant: Do you wish to check out on March 7th, or another date?
+user: Yes, that is fine.
+assistant: We're almost done. Please confirm that you'd like to check into a house for 1 person in Seattle on March 4th, and check out on March 7th.
+user: Yes, that is correct. Tell me the total cost, please.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. That will be a total of $252.
+user: Thank you very much. You've been very helpful. Please also recommend some attractions there. I'm fine with any kind.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. I recommend visiting the Park known as Alki Beach Park.
+user: All right. Cool!
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a great time!

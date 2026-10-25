@@ -1,0 +1,25 @@
+user: I am interested in finding a movie which I can watch.
+assistant: Can you tell me the location you are interested to watch the movie?
+user: I would like to know about movies which are shown in San Fran.
+tool(FindMovies): ok n_results=10
+assistant: You might consider watching Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: It would be great to watch Fiddler: A Miracle of Miracles.
+assistant: Do you want to have tickets bought for this movie?
+user: Actually I am not interested to buy the tickets at this moment, though I would like to book a table at a restaurant which is in the same area.
+assistant: Can you tell me the time you prefer to have the reservation be made for you?
+user: I want to have the booking at the restaurant at half past 7 in the evening.
+assistant: Can you tell me the restaurant which you would like to have the table reserved for you?
+user: Would it be possible to have the table booked at Anh Hong restaurant?
+assistant: Can you please confirm that you want to book a table for 2 people at Anh Hong restaurant in San Francisco on March 1st at 7:30 pm?
+user: That is not right. Can you try booking a table at the Baby Blues restaurant for the 9th of this month?
+assistant: Can you once again confirm that you want to make a reservation at the Baby Blues Bbq on March 9th?
+user: It is not right because the table I want to have should be for 3 people.
+assistant: Can you confirm that you want to book a table for 3 people at the city of San Francisco?
+user: Yes, that is what I want.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested table has been booked.
+user: Can you tell me the time when I can be able to watch the movie you found earlier on that day? I am interested in a regular show which will be at Clay Theatre.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime which you might like, which is at 7 pm in Landmark's Clay Theatre.
+user: That seems nice. That would be all.
+assistant: Have a good time!

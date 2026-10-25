@@ -1,0 +1,11 @@
+user: I would like to buy a movie ticket in San Jose at 11 o"clock in the night.
+assistant: How many tickets are you looking to buy? Also which type of show are you looking for?
+user: I want to book three tickets for regular show.
+assistant: Which movie do you want to watch and on which date do you want to watch it?
+user: I want to want Angel has fallen on day after tomorrow.
+assistant: Can you please confirm the details- Movie is Angel Has Fallen for March 3rd in San Jose for 3 people starting at 11 pm and it is a regular movie.
+user: Yes. This sounds good.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Unfortunately, the ticket were not booked. Is there anything else I can help you with?
+user: No. Thanks for all your help.
+assistant: Have a nice day.

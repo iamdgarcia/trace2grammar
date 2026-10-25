@@ -1,0 +1,14 @@
+user: Can you find me a Ramen restaurant?
+assistant: Where would you like me to search?
+user: I'd like something in Belmont.
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 options for you. How about Sushi Kuu in Belmont?
+user: That sounds great. Can you reserve me a table? How about the 9th of March at 5:30 in the evening?
+assistant: Please confirm: a table for 2 on March 9th at 5:30 pm at Sushi Kuu in Belmont.
+user: That's correct. Do you have their address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed. They're located at 1001 Alameda de las Pulgas.
+user: Thank you very much!
+assistant: Do you need anything else today?
+user: No, that'll be all, thanks!
+assistant: Have a great day!

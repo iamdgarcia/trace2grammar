@@ -1,0 +1,25 @@
+user: Can you find me a therapist please
+assistant: What city and what kind of therapist?
+user: I need a Family Counselor in San Jose
+tool(FindProvider): ok n_results=8
+assistant: OK, how about Banner Linda L who is a Family Counselor in San Jose?
+user: What's their address?
+assistant: They can be found at 2516 Samaritan Drive
+user: And their number?
+assistant: Call them at 408-358-7401
+user: What other therapists are there?
+assistant: There's another Family Counselor in San Jose named Carney-Carder Gail D
+user: Sounds better, book me an appointment there
+assistant: OK, for what time and date?
+user: Let's try for the 9th of this month at 14:00 please
+assistant: Confirming your meeting with Carney-Carder Gail D at 2 pm on March 9th
+user: Yes please, also what's their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You can reach them at 408-296-2926 and they can be found at 1101 South Winchester Boulevard # A101. But wait, I couldn't book that time and date with Carney-Carder Gail D. Do you want me to try for 2:30 pm on March 9th?
+user: Yes try that instead
+tool(BookAppointment): ok n_results=1
+assistant: That worked! It's booked and confirmed
+user: Thank so much for that
+assistant: Can I assist you in any other way?
+user: For now that's it, thanks
+assistant: Sure thing, have a great day

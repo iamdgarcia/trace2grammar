@@ -1,0 +1,34 @@
+user: I'm looking for a salon.
+assistant: What city do you want to search in?
+user: I want a salon in Lafayette.
+tool(FindProvider): ok n_results=6
+assistant: How about 18|8 Fine Men'S Salons - Lafayette in Lafayette?
+user: What is their phone number?
+assistant: Their phone number is 925-297-5127.
+user: Okay, thank you.
+assistant: Do you want to book an appointment?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: Yes, I'd like to share the location with Robert.
+assistant: Do you want to share the address 15 Fiesta Lane?
+user: Yes, that is the one.
+assistant: Okay, you want to share the address 15 Fiesta Lane with Robert, right?
+user: No, I want to share the address 2305 Camino Ramon #202.
+assistant: Okay, you'd like to share the address 2305 Camino Ramon #202 with Robert, right?
+user: No, I want to share it with Sean.
+assistant: You want to share the address 2305 Camino Ramon #202 with Sean, yes?
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: Thank you. What alarms do I have set?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms set. There is an alarm for 8 am titled wake up.
+user: Okay, cool. I'd like to add an alarm for afternoon 3:30 titled cooking.
+assistant: Okay, you want to add an alarm at 3:30 pm titled cooking, right?
+user: Yes, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: I have added the alarm.
+user: Thanks for the help.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

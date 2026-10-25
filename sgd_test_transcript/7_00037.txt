@@ -1,0 +1,18 @@
+user: Help me find a home.
+assistant: Do you want to rent or buy? Where do you want to live?
+user: I wanna rent a place in Campbell.
+assistant: How many baths?
+user: One bath is fine.
+assistant: How many bedrooms?
+user: One bedroom is fine. It also needs in-unit laundry.
+tool(FindHomeByArea): ok n_results=1
+assistant: I found 1 place. The Greenery Apartments Homes is at 999 West Hamilton Avenue and costs $1,650.
+user: What's their number? Is there a garage?
+assistant: The property's number is 408-796-4545. There is no garage.
+user: That's fine. I'd like to visit it Friday next week.
+assistant: A visit to The Greenery Apartments Homes on March 8th. Is this right?
+user: Yes, that's it.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thanks. That's all.
+assistant: Have a nice day.

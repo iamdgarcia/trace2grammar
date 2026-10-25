@@ -1,0 +1,18 @@
+user: I need a place to live and it should have 3 baths with a garage.
+assistant: How many beds and in what area do you want the property in? Would you like to rent or buy?
+user: I would like to find a place to buy for a property in Hayward having 4 bed rooms.
+tool(FindHomeByArea): ok n_results=8
+assistant: I found 8 houses that are nice in City Centre with a very good property at 22800 Meridian Drive costing $4,250,000.
+user: That sounds great.
+assistant: Would you like to schedule a property visit?
+user: Yes, I'd like to schedule a property visit.
+assistant: When would you like to schedule the visit?
+user: I would like to visit on the 1st.
+assistant: Please confirm the details that you are scheduling a visit to City Centre and want to visit on March 1st the property.
+user: No, I'd like to visit on the 5th of March.
+assistant: Please confirm the details that you are scheduling a visit to City Centre and would like to visit the property March 5th.
+user: Yes, that would be correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit to the property is scheduled.
+user: Thanks so much. Thanks and that's all I want.
+assistant: Have a nice day.

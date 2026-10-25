@@ -1,0 +1,38 @@
+user: Can you help me find a train?
+assistant: No problem. Just let me know the date you wish to travel, your destination and where you are departing from.
+user: I'm traveling to San Francisco from Phoenix, AZ. I'll need tickets for the 13th of this month.
+tool(FindTrains): ok n_results=5
+assistant: Okay, I have located 5 trains that match your search. Would you like to take the 7 am train? The ticket will be $190 total.
+user: No, that one won't work. What other trains do you have?
+assistant: Okay, there is another train departing at 7:20 am. The tickets are $194 total.
+user: Nah, that won't work either. What else can you find?
+assistant: How about the 8:30 am train? Tickets for this train are $187.
+user: Can you tell me what station this train is leaving from as well as the name of the station it will arrive at?
+assistant: No problem. The train will depart from Salesforce Transit Center and will arrive at Phoenix Union Station.
+user: Okay, thanks. That train sounds good.
+assistant: Would you like to book your tickets now?
+user: Yeah, can you reserve a seat for one for me. I'd also like to order insurance for the trip as well.
+assistant: Okay, please confirm the following details. You would like to purchase 1 value ticket for the train leaving from Phoenix to San Francisco on March 13th at 8:30 am.
+user: No, I want to order Flexible tickets.
+assistant: Okay, please confirm the following. For the train leaving from Phoenix you would like to order a Flexible ticket. Correct?
+user: Yeah, that's correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Okay, your ticket was booked successfully.
+user: Okay, thanks for your help. Could you also help me find something interesting to do in the area that day?
+assistant: Sure thing. Do you have anything particular in mind? You can say something like Music, Theater or anything else you enjoy.
+user: I'd really to see something on Broadway.
+tool(FindEvents): ok n_results=10
+assistant: Okay, I've 10 events that may interest you. How about Above Ground at the Mojo Theatre? I hear it's very popular. The event starts at 5 pm on March 6th.
+user: Cool. Where is the venue?
+assistant: The venue is at 2940 16th Street #217.
+user: Okay, how much would a ticket cost me?
+assistant: A ticket would cost you $35.
+user: Okay that sounds great. Can you share the location with Edward for me?
+assistant: No problem, just confirm the following for me. Sharing the location of Mojo Theatre with Edward. Correct?
+user: Yup, sounds good to me.
+tool(ShareLocation): ok n_results=1
+assistant: Okay, the location has been shared successfully.
+user: Okay, thanks a lot. You've been a great help.
+assistant: Anything else I can do for you today?
+user: Nope. That's all. Thanks a ton.
+assistant: My pleasure. Have a nice day!

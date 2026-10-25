@@ -1,0 +1,20 @@
+user: Can you find me some attractions to visit in SF?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might find interesting. If you would like to visit a Historical landmark, you should visit Alcatraz.
+user: Thank you. Can you find me some Scary movies that I can watch at Roxie Theater while I am there? I am fine with any type of show.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to watch In Fabric?
+user: In Fabric is a great option!
+assistant: Shall I get you tickets to the movie?
+user: No, not now. Maybe later. Can you find some Drama movies starring Aliza Vellani that I can watch online?
+tool(FindMovies): ok n_results=1
+assistant: There's only 1 movie based on your preferences and it is The Art of Racing in the Rain. Would you like to watch it?
+user: racing in rain is a fantastic suggestion! Please play the movie now.
+assistant: Please confirm that you would like to watch The Art of Racing in the Rain with English subtitles.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: Movie is playing now. Enjoy!
+user: Thank you for the assistance.
+assistant: Is there anything else I can do for you?
+user: No. That's all. Thank you.
+assistant: Have a great day!

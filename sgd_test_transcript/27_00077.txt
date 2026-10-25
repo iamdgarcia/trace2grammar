@@ -1,0 +1,34 @@
+user: I'm looking for a direct bus to Fresno for three people.
+assistant: When is your departure date?
+user: The departure date is the 5th.
+assistant: And where will you be departing from?
+user: I'm departing from Long Beach.
+tool(FindBus): ok n_results=5
+assistant: There are 5 buses I've found. There's a departure at 8:10 am for $42.
+user: And what's the arrival station?
+assistant: The arrival is at 2660 Tulare St.
+user: What other buses are there?
+assistant: There's a departure at 11:20 am for $42.
+user: That can work. What are some attractions over there?
+tool(FindAttractions): ok n_results=5
+assistant: There's a theme park called Blackbeard's Family Entertainment.
+user: Would kids enjoy this place?
+assistant: I don't think kids would enjoy it.
+user: Please give me their telephone number. And is it free to go ot.
+assistant: You can call them at 559-292-9000 and it is free to go to.
+user: That sounds great. Back to the buses, can you get me a ticket for the last one you found.
+assistant: I'll get you 3 tickets for Long Beach to Fresno on March 5th at 11:20 am, no extra luggage. Is that right?
+user: Yeah, you got it.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've purchases the tickets.
+user: Thanks for that.
+assistant: What else can I do for you?
+user: I also need a hotel when I'm there. Something that's three stars. I need three rooms.
+tool(SearchHotel): ok n_results=4
+assistant: There are 4 hotels that I've found. There's a 3 star hotel called Doubletree By Hilton Hotel Fresno Convention Center.
+user: That sounds suitable.
+assistant: Do you want to make a reservation?
+user: No, not right now.
+assistant: What else can I do for you?
+user: Nothing right now, thanks for all the help.
+assistant: Have a great day, take care!

@@ -1,0 +1,27 @@
+user: I'm planning to travel and need help finding a bus to take me to my destination.
+assistant: What city will you be leaving from and on which day? And what is you intended destination?
+user: I would like to take off from Fresno to get to San Francisco and my departure date is the 7th of this month.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses that might work. One is a bus for $35 that leaves at 10:50 am.
+user: I would like to hear more options and my departure location is SD.
+tool(FindBus): ok n_results=6
+assistant: There is a bus with a $59 fare that leaves at 6:30 am.
+user: Where does this bus leave from? And can you tell me if this bus is a direct one?
+assistant: Yes, the bus is direct and it leaves from the El Cajon Bus Stop
+user: I would like to hear other options. I need seats for three.
+tool(FindBus): ok n_results=6
+assistant: There is also a bus with a fare of $60 that leaves at 7:20 am.
+user: Excellent. This option is perfect!
+assistant: Would you like to go ahead and purchase tickets?
+user: Yes please. I'd like to buy a ticket
+assistant: To confirm, you would like to buy tickets for 3 people for the scheduled 7:20 am bus departing from San Diego on March 7th, and arriving in San Francisco. Is this correct?
+user: Perfect. That sounds excellent!
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been successfully purchased.
+user: Can you tell me the arrival station for this bus? And what is the total number of stops that the bus makes?
+assistant: The bus is a direct one that goes to Transbay Terminal.
+user: Great. Thanks. Can you also do a search for available hotels in the vicinity?
+tool(SearchHotel): ok n_results=10
+assistant: There is a hotel with a rating of 1 star, the Amsterdam Hostel San Francisco.
+user: Okay,great. That's everything I need at the moment.
+assistant: Enjoy your day.

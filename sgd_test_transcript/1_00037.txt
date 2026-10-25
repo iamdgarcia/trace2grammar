@@ -1,0 +1,11 @@
+user: I would like to book a hotel room.
+assistant: In which city would you like?
+user: I'm looking for a three star hotel in Seattle, WA.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels. Would you like Best Western Plus Pioneer Square Hotel Downtown, It's 3 star.
+user: Yes, that sounds good.
+assistant: Would you like to make a reservation?
+user: Not at the moment thank you.
+assistant: Can I help with anything else?
+user: No, that is all I needed.
+assistant: Have a good day.

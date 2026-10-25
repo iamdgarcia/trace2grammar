@@ -1,0 +1,26 @@
+user: I need you to make a 121 dollars payment from the app balance.
+assistant: Who will that be sent to?
+user: Her name is Isabella.
+assistant: Is the following correct - the transaction will be publicly visible and it is with Isabella who you want $121 sent out of the app balance?
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment went through and she should have the money shortly.
+user: Next I need one train ticket from Fresno luxurious class please.
+assistant: I will need a place and day please.
+user: Right that will be Los Angeles on the 11th.
+tool(FindTrains): ok n_results=9
+assistant: I found one that leaves at 7:20 am and it will cost $108 per seat.
+user: I like that one moving on what should I expect for weather the 14th of this month?
+assistant: Are you asking for the Los Angeles weather?
+user: Of course, where else.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should average out around 86 Fahrenheit but there is a 17 percent chance of showers.
+user: Okay thanks. Purchase the train ticket you mentioned and add trip insurance alright?
+assistant: You would like 1 seat on the train from Fresno to Los Angeles which departs the station at 7:20 am on March 11th. It is Business class and comes with trip insurance.
+user: That should do. Which stations will I be dealing with?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is paid for and you will end up at Union Station from a start at Fresno Station.
+user: You helped a lot thanks.
+assistant: Can I do something else for you?
+user: No that will be it thanks
+assistant: See you later.

@@ -1,0 +1,34 @@
+user: I need tickets to anaheim, ca for 4 people, departing from los angeles
+assistant: What date do you want to leave
+user: We're heading out on the 8th of this month
+assistant: What time do you want to leave?
+user: Can you make it for 2:45 in the afternoon
+assistant: Confirming you want to book 4 bus tickets from los angeles to anaheim, departing at 2:45 pm on March 8th.
+user: Yes thank you, how many stops are there?
+tool(BuyBusTicket): ok n_results=1
+assistant: this is a direct bus. unfortunately the booking failed due to unexpected errors. Do you want to book seats on the 2:50 pm departure instead? tickets are $14
+user: yes that's fine
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been confirmed and you'll get a confirmation email shortly
+user: Whats the departure station?
+assistant: The bus departs from north hollywood station
+user: Okay great. Oh, i also need a rental car
+assistant: What time do you want to pick it up?
+user: Pick up around 5 in the evening on 9th of march. I'd prefer a hatchback
+assistant: When will you be returning the car?
+user: I'll need the car an anaheim, ca until 14th of march
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a hatchback kia ceed available at john wayne airport
+user: Ho wmuch is it?
+assistant: The cost is $25.00 per day
+user: Okay yes please
+assistant: Do you want me to book the car?
+user: Yes do that thanks
+assistant: do you need insurance?
+user: No its a rip off
+assistant: Confirming you want to rent a hatchback from john wayne airport. Pickup 5 pm on March 9th and drop off March 14th. Insurance is not included
+user: Yes that is all correct
+tool(ReserveCar): ok n_results=1
+assistant: Your rental reservation has been made
+user: Okay great thats all for now
+assistant: Talk to you later

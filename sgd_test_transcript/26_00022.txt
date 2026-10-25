@@ -1,0 +1,31 @@
+user: I need a round trip flight please.
+assistant: From which city will you depart?
+user: From Cape Town please.
+assistant: What are your departure and return dates?
+user: I am flying to New York on the day after tomorrow and returning on the 6th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight on American Airlines at 4:20 am and returning at 6:20 am. It costs $257.
+user: At what time will my outgoing flight arrive at the destination? When will the incoming flight arrive?
+assistant: The incoming flight arrives at 2:11 am and the return flight will be here at 7:57 pm.
+user: Sounds great, I need a house for three people.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 available at 100 Greenwich Street and is rated 4.4.
+user: Are there other houses for 2 that are rated 4.0 or higher?
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 house available. One is 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA and is rated 4.0.
+user: Can I get a contact phone number please?
+assistant: The number is +1 718-512-0248.
+user: Do they have laundry service?
+assistant: Yes they do have laundry service.
+user: Sounds great, I want to book a house from the day after tomorrow until the 6th.
+assistant: You need tickets for 2 to New York from March 3rd until March 6th, is that correct?
+user: Yes that is perfect.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: What is the total?
+assistant: The total is $1,044.
+user: Thank you, can you also find me some attractions with no entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10, one is a park called Alley Pond Park.
+user: Great, that is all I need at this time.
+assistant: Enjoy!

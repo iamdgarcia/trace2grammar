@@ -1,0 +1,19 @@
+user: Could you find me some attractions?
+assistant: Where should I search?
+user: Toronto, Ontario.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 options. How about the tourist attraction, the 3d Toronto sign!
+user: That'd be great, I'd like to find a house there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options for you. There's a nice one rated 4.2 stars at 108 chestnut street.
+user: That'd be great.
+assistant: Do you need anything else?
+user: Can you find me a round trip flight to there, leaving from chi-town?
+assistant: When do you want to travel?
+user: I want to leave Monday next week, and return on the 11th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have 1 option. Does Delta Airlines work? They have a flight leaving at 9:50 am outbound, and returning at 12:50 pm, for $157.
+user: Is it premium economy? and when does the return flight land?
+assistant: The return flight lands at 1:28 pm and it's an economy class seat
+user: That sounds good, that's all I need.
+assistant: Have a good day.

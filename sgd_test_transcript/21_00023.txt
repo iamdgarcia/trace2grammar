@@ -1,0 +1,23 @@
+user: I'm trying to get the cheapest cab to the China Station Restaurant.
+assistant: How many seats will you need?
+user: I will need at least three.
+assistant: Okay, just to confirm, you are looking for a Pool ride with at least 3 seats open to the China Station Restaurant, is this correct?
+user: No, I am actually only needing 1 seat.
+assistant: Okay, I'll change that. Just to confirm, you are looking for 1 seat in a ride to the China Station Restaurant, is this correct?
+user: Actually, no. Instead, I'd like a regular ride.
+assistant: Okay. After changing those details, I am now confirming that you are looking for a Regular ride with just 1 seat, is that correct?
+user: Yes, that'll work.
+tool(GetRide): ok n_results=1
+assistant: Okay, your ride has been booked and is on it's way.
+user: Okay. I'd also like to listen to some music. Can you find me a song from Kesha from '17?
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song, it is Praying by Kesha from the album Rainbow. Would you like that song?
+user: Yes, please. I'd like to play that song.
+assistant: Okay, just to confirm, I will play the song Praying in the Living room, is that correct?
+user: Yes, thank you. What type of song is it?
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy. The song is a pop song.
+user: Thank you so much!
+assistant: Is there anything else I can assist you with today?
+user: No, thank you.
+assistant: Have a wonderful day.

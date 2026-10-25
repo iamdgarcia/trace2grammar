@@ -1,0 +1,34 @@
+user: Can you do a search for a rental car for me?
+assistant: Sure, just let me know when you want to pick the car up and how long you need it.
+user: I would like to pick the car up sometime in the evening 6:30 and I will need it until the 8th.
+assistant: Okay, please let me know what date you want to rent the car and which city you will be renting in.
+user: I will need the car on the 7th of this month and will be renting in Long Beach.
+tool(GetCarsAvailable): ok n_results=8
+assistant: Okay, I've located 8 cars that are available for you. Would you like to rent a nice SUV Alfa Romeo Stelvio? There is one located at the Downtown Station in Long Beach.
+user: Nah, can you find me anything else? Also, change that pick up time to 5 in the evening, I need to leave a bit earlier than expected.
+tool(GetCarsAvailable): ok n_results=9
+assistant: Okay, I've found 9 cars for you. Would you like to rent a nice Sedan Audi A8? There is one located at LGB Airport.
+user: No, don't like that one. Anything else available?
+assistant: How about a nice Sedan Buick Regal Sportback? I've found one available to rent at the Downtown Station.
+user: How much is it per day?
+assistant: It will cost you $31.00 a day.
+user: Okay, that's not bad. I'll think about it. Can you also help me reserve tickets for an event on the 1st of this month?
+assistant: Sure, what city would you like me to search in?
+user: The event will be in London.
+assistant: Okay, is there a particular event you are interested in? How many tickets do you require?
+user: I'd like to order 4 tickets to The Good Soldier Schwejk.
+assistant: Okay, please confirm the following. Booking 4 tickets for The Good Soldier Schwejk in London on March 1st. Correct?
+user: Yeah, that's it. Thanks. Can you give me the venue location? Oh, and also I forgot to ask about the ticket cost.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed! Have a great time. Your tickets wer $40 and the venue is located at the Sands Films Studio.
+user: Okay, great. Can you go ahead and reserve the rental car we talked about earlier?
+assistant: Okay, would you like to add insurance?
+user: No thanks. I don't really need any insurance.
+assistant: Okay, just confirm the following for me. You are reserving one Sedan from the Downtown Station on March 7th at 5 pm. You will return the vehicle on March 8th. Correct?
+user: Yup, that's right. Thanks.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle reservation has been complete.
+user: Awesome. Thanks for you help.
+assistant: No problem. Anything else I can help you with today?
+user: No thanks. Really appreciate your help. Goodbye.
+assistant: My pleasure. Have a good day.

@@ -1,0 +1,28 @@
+user: I am planning a trip and would like to look at round trip flights.
+assistant: Which city do you which to leave from and on what day are you returning?
+user: I will be flying from Portland, OR and traveling to LA. I plan to return on the 10th. Please search for an economy ticket.
+assistant: What date are you leaving?
+user: I plan to leave on Tuesday next week.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: I found an Alaska Airlines flight, with a layover, that departs at 5:10 pm with the return flight leaving at 4:40 am. The cost of the ticket is $272.
+user: What are my other options?
+assistant: American airlines has a direct flight departing at 9:35 am with the return flight leaving at 7:15 pm. This ticket is $195.
+user: That one sounds good. I would also like to find a house for 2 people in that area, preferrably with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found one that you may enjoy, with a 4.1 rating, located at 1020 South Figueroa Street.
+user: That house would be great.
+assistant: Would you like to reserve this house?
+user: Yes, please reserve this house.
+assistant: Are you planning to arrive on March 5th and leave on March 10th?
+user: That is correct, however; I would like to leave next Wednesday.
+assistant: Pease confirm you are reserving a house for 2 people in Los Angeles from March 5th to March 6th.
+user: Yes, that is correct. Please provide me with the price and the phone number of this place.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is confirmed. The price will be $252 and their phone number is +1 310-215-1000.
+user: Thank you for your help. What are some attractions in that area?
+tool(FindAttractions): ok n_results=10
+assistant: There is an historical landmark you may enjoy called Angels Flight Railway.
+user: Great. Thanks for your help!
+assistant: Do you need anything further?
+user: No, not at this time. You have been quite helpful!
+assistant: Enjoy your trip!

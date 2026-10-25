@@ -1,0 +1,24 @@
+user: I need to get my hair done. Can you help me find a salon in Lafayette?
+tool(FindProvider): ok n_results=6
+assistant: I found 6 salons in Lafayette, including 18|8 Fine Men'S Salons - Lafayette.
+user: OK, that sounds great, thanks.
+assistant: Is there anything else I can help you with?
+user: Yes, can you share the location? It's 15 Fiesta Lane.
+assistant: Who would you like to share the location with?
+user: Share it with Bruce.
+assistant: You would like to share the location 15 Fiesta Lane with Bruce, is that correct?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: OK, can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm for 4:30 pm called Shopping.
+user: Thank you, I would like to add another alarm. Set it for 5:15 in the evening. Call it Leave for home.
+assistant: You would like to create an alarm for 5:15 pm with the name Leave for home, is that correct?
+user: No, let's call it Music practice instead.
+assistant: You would like an alarm at 5:15 pm with the name Music practice, is that correct?
+user: Yes, that is right.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added.
+user: Thank you very much, that's all.
+assistant: Have a good day.

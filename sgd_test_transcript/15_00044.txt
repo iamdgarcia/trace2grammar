@@ -1,0 +1,34 @@
+user: Would you kindly find a place to live for me.
+assistant: in which area you prefer the property?
+user: I like to have a property in Mountain view.
+assistant: Which property you want like rent or buy?
+user: I like to find a rent
+assistant: How many bed rooms and baths you want in that property?
+user: there should be 3 bed rooms and two baths.
+tool(FindHomeByArea): ok n_results=10
+assistant: I searched 10 houses of your choice. There is a nice property at 2290 California Street called Arbors At Mountain View with cost $3,600.
+user: Can i know the contact number?
+assistant: the contact number is 650-965-8290
+user: Do you know any other property. I really want in-unit laundry.
+tool(FindHomeByArea): ok n_results=5
+assistant: There are 5 nice houses. One among them is Dana Garden Apartments at 200 East Dana Street with cost $4,000.
+user: Can i know the contact number?
+assistant: 650-967-3870 is the phone number.
+user: this is cool.
+assistant: Can i book the visit to this property?
+user: Okay..do it now..
+assistant: When do you want to visit this property?
+user: I like to visit on March 13th.
+assistant: Please give confirmation details: Your visit to the property Dana Garden Apartments on march 13th is scheduled.
+user: Okay..fine..is there a garage in that property?
+tool(ScheduleVisit): ok n_results=1
+assistant: There don't have garage. Your visit is confirmed.
+user: thank you so much.I want you to show my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: Now there is 3 alarms. One alarm is at 9:30 am with name Catch train.
+user: Okay..this is cool.
+assistant: Are you like add alarm?
+user: No, i am not interested to add.
+assistant: Any other help you want?
+user: No, thank you so much.
+assistant: Thanks a lot, bye

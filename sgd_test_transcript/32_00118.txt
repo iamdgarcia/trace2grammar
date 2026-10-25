@@ -1,0 +1,44 @@
+user: I want to book a house in nice place. Can you search and find a good house for me to live?
+assistant: Yes, Let me know the number of bedrooms required by you in that house. Also I want to know whether you need this house for rent or you want to buy this?
+user: I want to buy this house and I need 2 bed rooms.
+assistant: What about the baths? How many baths you need?
+user: I need only 1 bath in that house.
+assistant: Is there any particular area to search for the house?
+user: Yes, search it in Santa Rosa. I want to buy a new property in that area.
+tool(FindHomeByArea): ok n_results=10
+assistant: I got 10 houses and do you want to buy the one named Behringer Harvard located at 4656 Quigg Drive and the cost for this house is $2,250,000.
+user: Check for the availability of garage and laundry service there.
+assistant: They have both garage and in-unit laundry machines.
+user: That is nice to know. Thanks.
+assistant: Shall I proceed with booking of visit schedule?
+user: Yes, make it now.
+assistant: On which date you want to visit that house?
+user: I need to book a schedule of visit on 7th of March.
+assistant: I need your confirmation to book a Schedule of visit to the house named Behringer Harvard for the date March 7th.
+user: That is confirmed to proceed further.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled the visit for that day.
+user: Thanks and I want to share the location now for which I need your help.
+assistant: To whom you want to share the location?
+user: Share it with Christian.
+assistant: Please confirm to share the location 4656 Quigg Drive with Christian.
+user: Sorry, please share the location to Carol.
+assistant: Please confirm to share the location 4656 Quigg Drive with Carol.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: Thanks and I want to get a cab to go there and I prefer Normal ride.
+assistant: Let me know the number of seats required by you.
+user: I need three seats.
+assistant: Please confirm to book a cab with regular ride to 4656 Quigg Drive and it is for 3 persons.
+user: Make it for 1 person.
+assistant: Please confirm to book a cab for regular ride for 1 person.
+user: Yes, please continue.
+tool(GetRide): ok n_results=1
+assistant: Your cab was booked and the same is on its way.
+user: Let me know the cost for this ride.
+assistant: It costs $12.43.
+user: I want to know the time will be taken by the Cab to reach my place.
+assistant: It will reach you in 6 minutes.
+user: That is great and thank. That's all.
+assistant: Have a good day.

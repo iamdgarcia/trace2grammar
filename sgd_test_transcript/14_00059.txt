@@ -1,0 +1,17 @@
+user: I would like help finding a movie to watch, please.
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies you may like. How about The Angry Birds Movie 2, it has a rating of 72 out of 100.
+user: Can you tell me what genre does the movie belong to?
+assistant: Sure, it is an animation movie.
+user: That will work for me. I also can use some help looking for Pop songs, preferably something from the album Slow Air.
+tool(LookupMusic): ok n_results=2
+assistant: I have Black Lagoon by Still Corners from the Slow Air album.
+user: Yes, can you play that one?
+assistant: Sure, would you like to hear Black Lagoon in the living room?
+user: Yes, the living room would be just fine. What year was this song released?
+tool(PlayMedia): ok n_results=1
+assistant: The song was released in 2018. I hope you enjoy the song.
+user: Thank you for the recommendation.
+assistant: You are welcome, would there be anything else I could do for you today?
+user: No, that will be all.
+assistant: I hope you enjoy the rest of your evening.

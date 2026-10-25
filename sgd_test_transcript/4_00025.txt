@@ -1,0 +1,20 @@
+user: Will you please help me find a good, reasonably priced place to eat in San Jose?
+assistant: I sure will. What type of food do you prefer?
+user: I think I'm in the mood for Cantonese.
+tool(FindRestaurants): ok n_results=10
+assistant: In San Jose, I recommend the Chef Li restaurant.
+user: Okay. How about some other suggestions?
+assistant: Certainly. Also in San Jose, I recommend China Delight.
+user: That's possible. But what else is there?
+assistant: China Station Restaurant is also a good San Jose option.
+user: Can you let me know what their user rating is? I'm also wondering if they have seating outdoors.
+assistant: No, they have no outdoor seating, sorry. Their rating is 4.1.
+user: Okay, sounds good. Let's book a table for 4 please in the evening 5:30.
+assistant: Confirming a table for 4 on March 1st at 5:30 pm at the China Station Restaurant in San Jose.
+user: Okay, sounds like you got it all!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Great. The table has been booked.
+user: Thanks for all your help today.
+assistant: My pleasure. May I do anything else for you?
+user: I don't think so. Thanks again.
+assistant: You are very welcome, of course.

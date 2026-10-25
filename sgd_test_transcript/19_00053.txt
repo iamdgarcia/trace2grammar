@@ -1,0 +1,28 @@
+user: Find me a rental car because I need a car from Monday next week.
+assistant: Tell me until when you want the car from where you want to rent.
+user: I want to be in Vancouver, BC and I will need it till next Thursday.
+assistant: At what time you want to make the pick up?
+user: At 4:30 in the evening will be okay.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A nice Sedan Audi A8 available at Pacific Central Station.
+user: Something else you have.I would like a SUV.
+tool(GetCarsAvailable): ok n_results=3
+assistant: A SUV Dacia Duster is a nice car available at YVR International Airport.
+user: What is the cost per day?
+assistant: $36.00 is the cost per day.
+user: Sounds good.Find me a bus that go there for 3 people on March 3rd.
+assistant: From where are you leaving?
+user: I will go from Portland, OR.
+tool(FindBus): ok n_results=7
+assistant: I have 7 options for you.What do you think about a bus that depart at 7:10 am and cost $38.
+user: Sounds great.Search for me for a one-way flight going there.
+assistant: You want to leave on March 3rd or March 4th or in another day?
+user: My travel will start on March 3rd.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: What about American Airlines?Onward flight takes off at 11:20 am and has a layover.$275 is the cost.
+user: This is an economy or business class ticket?When will arrive this flight at destination?
+assistant: This is a Economy -class.Will arrive at 10:44 pm.
+user: Sounds good for me.
+assistant: With something else can I help?
+user: No.Thank you for all.
+assistant: Have a wonderful day!

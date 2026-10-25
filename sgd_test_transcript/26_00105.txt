@@ -1,0 +1,33 @@
+user: Look for a train
+assistant: On when and to where are you looking for. From where do you want to depart?
+user: Look the train from LA to Anaheim on the 12th
+tool(FindTrains): ok n_results=10
+assistant: How about a train departing at 6 am. The cost is $35
+user: Where does it arrive?
+assistant: It arrives at Anaheim Intermodal Center
+user: That's perfect
+assistant: Can I book ticket?
+user: No. I don't want to book ticket now
+assistant: Do you need anything else?
+user: Find me something interesting to do?
+assistant: Do you prefer any category like Music or theater or anything else
+user: Look for Musical performance on the 13th
+tool(FindEvents): ok n_results=1
+assistant: There is 1 event which is Brown Sabbath at Crossroads at House of Blues Anaheim on March 13th at 4:30 pm
+user: That's perfect. Find me some attractions there which is child-friendly. It should be without entry fee.
+tool(FindAttractions): ok n_results=6
+assistant: I found 6 attractions. How about Angel Stadium of Anaheim which is Sports Venue
+user: Nice. Look for another attraction. I want a place of interest
+tool(FindAttractions): ok n_results=2
+assistant: I found 2 attractions. How about Cars Land which is a Tourist Attraction
+user: Get me the phone number
+assistant: The number is 714-781-4565
+user: That's nice. Find me a house to stay there. I also need laundry service
+tool(SearchHouse): ok n_results=10
+assistant: How about 1050 West Ball Road which has a rating of 4.2
+user: Is there any other house?
+assistant: How about 1057 West Ball Road which has a rating of 4.0
+user: That's perfect
+assistant: Do you want me to make a reservation?
+user: No Not now. That's all for now. Thank you so much.
+assistant: You are welcome. Bye

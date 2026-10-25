@@ -1,0 +1,35 @@
+user: Can you find a Psychologist for me?
+assistant: In which city?
+user: I need it in San Jose
+tool(FindProvider): ok n_results=10
+assistant: In San Jose there are 10 Psychologist, for example Barskyex Bryna G
+user: Good. I want to book an appointment there
+assistant: What day do you want the appointment for? Do you have preferences about the time?
+user: I want an appointment on 8th of this month. I prefer on evening 4:30
+assistant: An appointment with Barskyex Bryna G on March 8th at 4:30 pm. Do you confirm?
+user: Yes, It's correct, I confirm
+tool(BookAppointment): ok n_results=1
+assistant: Well, the appointment is booked and you will soon receive a confirmation email
+user: I need to request a payment with Tom, in a private transfer.
+assistant: How much do you have to transfer to Tom?
+user: I want to transer one hundred and fifty nine dollars
+assistant: A private transaction with Tom, of $159. Do you confirm?
+user: Yes, I confirm. Thanks
+tool(RequestPayment): ok n_results=1
+assistant: The transfer was successful
+user: Very good! Thanks! I want to book a table in a restaurant for that day.
+assistant: What kind of restaurant do you want to look for?
+user: A restaurant serving Steakhouse
+tool(FindRestaurants): ok n_results=9
+assistant: In San Jose there are 9 restaurant, for example Black Angus Steakhouse
+user: Yes, It sounds good! Book a table there
+assistant: What time do you want to book?
+user: I prefer at 1 pm
+assistant: A table for 2 people at Black Angus Steakhouse in San Jose, on March 8th at 1 pm. Is it correct?
+user: Yes, It is. Give me the phone number. What is the user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The phone number is 408-266-6602. The rating is around 4.1. Your table has been booked!
+user: Thanks a lot!
+assistant: Can I help you again?
+user: No, thanks, It's all
+assistant: Have a nice day

@@ -1,0 +1,32 @@
+user: I'm travelling and need to rent a car, can you help me
+assistant: Where would you like to rent a car?
+user: I'd like to rent a car in Atlanta on the 11th and need it in the morning 11 am.
+assistant: How long will you need the car for?
+user: Until the 14th of this month.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I have found a Hatchback Fiat Panda at Peachtree Station that you might like.
+user: That sounds great.
+assistant: Do you want to book the car now?
+user: Not right now thanks.
+assistant: Do you need help with anything else?
+user: Yeah can you help me find a house to stay in in Atlanta?
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 houses that you might like. How about a house with a rating of 4.3 at 101 Andrew Young International Boulevard Northwest?
+user: Can you keep searching please? There will be 2 people staying so I'd like Something with a customer rating of at least 4.2.
+tool(SearchHouse): ok n_results=10
+assistant: I have found a place with a 4.2 rating at 1065 Peachtree Street Northeast.
+user: Can you get me the phone number for this place please?
+assistant: Yeah sure, the number is +1 404-745-5000.
+user: Are there laundry service options available?
+assistant: Yes this place has a laundry service.
+user: Can you show me any other options?
+assistant: There is another great place with a 4.2 rating at 110 Marietta Street NorthWest.
+user: Okay great, I like the sound of this place. Now can you go ahead and book the rental car for me.
+assistant: Would you like any insurance with this rental?
+user: No thanks I'm good.
+assistant: So to confirm, you would like to rent a Hatchback car from Peachtree Station on March 11th at 11 am and will be returning the car on March 14th.
+user: That's perfect thanks. How much is the cost of the rental per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been successful. The cost for the rental is $25.00 per day
+user: Thanks. I don't need anything else right now.
+assistant: Enjoy your day!

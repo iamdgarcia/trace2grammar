@@ -1,0 +1,19 @@
+user: I need to find a bus for a trip to Anaheim on Wednesday next week. I'd like something that's one-stop.
+assistant: Where are you planning to depart from?
+user: From San Diego and I'll be going to Sacramento. Just one person.
+tool(FindBus): ok n_results=10
+assistant: There are 10 options for you. I have a bus with a 6:30 AM departure and that is a fare of $58.
+user: Great, let's get tickets.
+assistant: Confirming a ticket for 1 on the March 6th 6:30 am bus from San Diego to Sacramento. I trust you will not have extra luggage?
+user: Yes, that's fine. Where does it leave from and go to?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus travels from El Cajon Bus Stop to 65th Light Rail Station.
+user: Thanks, I appreciate that.
+assistant: Is there anything else you need?
+user: I'd like to find a hotel there too please.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels I can recommend. The Courtyard By Marriott Sacramento Cal Expo has a 3 star rating.
+user: Great, I'm happy with that.
+assistant: Shall I book a room for you now?
+user: Not just yet. I'm good for now.
+assistant: Thanks, have a great day.

@@ -1,0 +1,14 @@
+user: I'd like to find a movie to stream. Can you help?
+assistant: I'd be happy to. What type of movie would you like to watch?
+user: I'd like to see a Play movie.
+tool(FindMovies): ok n_results=10
+assistant: Have you seen A Faithful Man, After The Wedding, or Blinded by the Light?
+user: Yes. I'd like to watch After The Wedding now.
+assistant: You'd like to watch After The Wedding with English subtitles. Is that right?
+user: No, I'd like to have Hindi subtitles please.
+assistant: You'd like to have Hindi subtitles for After The Wedding. Is that correct.
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: Your selection has begun streaming.
+user: Thank you for the help!
+assistant: You're welcome. Enjoy the movie!

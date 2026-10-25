@@ -1,0 +1,11 @@
+user: I wish to book a cab.
+assistant: Which is your most wanted type of ride? how many seats and where do you go?
+user: I need Luxurious ride to The Villa for 3 persons.
+assistant: Kindly ensure that, you wish to go to The Villa. The Luxury ride has been booked for 3 persons.
+user: Yes. It is good me.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been reserved and it is on its way.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: No, Thank you so much for your help.
+assistant: Have a fantastic day.

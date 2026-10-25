@@ -1,0 +1,35 @@
+user: I want to go to a Salon which should be an Unisex one. I am now in Walnut Creek so please search for the one located here.
+tool(FindProvider): ok n_results=10
+assistant: Blow Dry Bar is the best Salon in Walnut Creek based on my search. Do you want to go there?
+user: Yes, it is okay to me.
+assistant: How about the appointment, shall I book it now?
+user: No, not now. I will ask it later. Now, I need to meet a Family counselor. Search for someone in Walnut Creek.
+tool(FindProvider): ok n_results=4
+assistant: Got 4 Therapist details. What about your opinion to meet Andreotti Daniel who is also a best Family Counselor in Walnut Creek.
+user: Search for someone else.
+assistant: Then, I can suggest you to meet Beitler Penny. I think this Family Counselor is the better one in Walnut Creek.
+user: No, this is also not suitable for me. Find me some other Therapists.
+assistant: Okay, what about Keith-Davies Joan who is a Family Counselor in Walnut Creek. I think you can try this contact.
+user: Get me their phone number and address.
+assistant: They are located at 43 Quail Court # 203B and you can contact them by 925-937-6247.
+user: That's nice. I want to book an appointment to this Therapist now.
+assistant: What is your convenient date and time to book an appointment.
+user: Make it on 11th of March for the time 2:15 pm.
+assistant: That's okay. I need your final confirmation to book an appointment with Keith-Davies Joan on March 11th for the time 2:15 pm.
+user: That is confirmed to proceed now.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately I was not able to book it with Keith-Davies Joan on March 11th for that preferred time. Shall I try to get it at 2 pm instead?
+user: Yes, this time is also okay for me.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment at the new time. They will send an email to you soon with the confirmation of appointment.
+user: Thank you so much. Now please make an another appointment for me. This is for he Salon that I have selected before. Make it at evening 4 for the same day mentioned previously.
+assistant: Please confirm once again to book an appointment at the Salon Blow Dry Bar on March 11th at 4 pm.
+user: That is confirmed. You can book it now.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked it successfully.
+user: Let me know the rating and contact number of that Salon.
+assistant: They can be contacted by the phone number 925-837-2990 and they are having 4.4 rating in average.
+user: That's nice. Thanks.
+assistant: Anything else you need from me?
+user: Nothing for now and that's all.
+assistant: Have a good day.

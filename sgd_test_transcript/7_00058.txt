@@ -1,0 +1,33 @@
+user: I need a place to live.
+assistant: Number of baths do you need?
+user: I need 2 baths.
+assistant: Which is your preferred area of property?
+user: I need a property in Santa Clara.
+assistant: Number of bed rooms you need. Whether the place is meant for rent or buy?
+user: I wish to have a place to rent with three bed rooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: I searched and found 10 houses. Alderwood Apartments is a nice property at 900 Pepper Tree Lane. The total cost is $3,650.
+user: What is the contact number?
+assistant: The contact number is 866-472-2645.
+user: Whether the house have laundry machines?
+assistant: Sorry, laundry machines are not available in the home.
+user: Could you please search for some other place with laundry. It must have 2 bed rooms.
+tool(FindHomeByArea): ok n_results=4
+assistant: Family Tree Apartments is a nice property at 1000 Kiely Boulevard. The total cost is $3,150.
+user: It is nice.
+assistant: Shall I make a schedule to visit?
+user: Yes. Please.
+assistant: When shall I schedule it?
+user: I wish to see it on 1st of March.
+assistant: Kindly ensure that, on March 1st schedule has been done to see Family Tree Apartments.
+user: Yes. It is good.
+tool(ScheduleVisit): ok n_results=1
+assistant: The schedule is confirmed.
+user: Whether it have garage?
+assistant: Sorry, it don't have a garage.
+user: What is the contact number?
+assistant: The contact number is 408-247-6228.
+user: Thank you so much.
+assistant: DO you need any other help?
+user: Nope. Thank you so much.
+assistant: Have a fantastic day.

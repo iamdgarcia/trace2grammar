@@ -1,0 +1,32 @@
+user: I need to move closer to work. Can you look up places for me?
+assistant: Sure, how many bedrooms and baths do you want?
+user: I'd like a 3 bedroom and 2 bath please.
+assistant: Ok, and are you looking to rent or buy?
+user: I'd like to rent.
+assistant: Ok, and which area do you want to live in?
+user: I'm hoping to find some place in Hayward.
+tool(FindHomeByArea): ok n_results=10
+assistant: Ok, I found 10 houses you might like. There's a unit for $3,900 in Amberwood Garden Apartments at 26100 Gading Road. How about that?
+user: What else did you find?
+assistant: There's also a place in Cypress Glen at 25100 Cypress Avenue for $3,900.
+user: What else is available to buy?
+tool(FindHomeByArea): ok n_results=8
+assistant: I found 8 houses to buy that you might like. There's a house with Cypress Point Villas at 25221 Cypress Avenue for $3,550,000.
+user: That sounds good.
+assistant: Ok, do you want to schedule a visit?
+user: Yes, can you book that for me?
+assistant: Sure, when do you want it?
+user: I'd like to visit on the 1st of this month.
+assistant: Ok, to confirm, you're scheduling a visit with Cypress Point Villas on March 1st. Is that right?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Ok, I've scheduled your visit.
+user: Great, thanks. Does it have a garage?
+assistant: Yes, it has a garage.
+user: Does it have laundry machines also? And what's their phone number?
+assistant: It has in-unit laundry, and you can call them at 510-781-0217.
+user: Great, thanks. Can you pull up my alarms for me also?
+tool(GetAlarms): ok n_results=4
+assistant: Sure, your next alarm is to wake up at 7:30 am.
+user: Ok, perfect. That's all I need for now.
+assistant: Sure, have a good day.

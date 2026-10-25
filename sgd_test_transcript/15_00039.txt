@@ -1,0 +1,27 @@
+user: I need to find a new pace to live.
+assistant: I can help with that. Would you prefer to rent or buy?
+user: I can't afford to buy, I need to rent.
+assistant: Okay. In what area would you like me to look for apartments? Also how many bed rooms and baths would you like?
+user: I'd like a property in San Jose with four bedrooms and 3 baths.
+tool(FindHomeByArea): ok n_results=10
+assistant: How about Aegena located at 1290 San Tomas Aquino Road? The cost is $5,100.
+user: Maybe. Do they have laundry machines inside? Can you also give me the phone number for the place?
+assistant: They have in-unit laundry. The property's phone number is listed as 408-984-8888.
+user: Great, i'll look into it.
+assistant: Would you like to schedule a visit to see the property?
+user: Yes, a visit would be nice.
+assistant: When would you like me to schedule the visit for?
+user: Make it for Tuesday next week if possible.
+assistant: Please confirm the following: Schedule a visit to Aegena on March 5th.
+user: Yes. Confirmed.
+tool(ScheduleVisit): ok n_results=1
+assistant: The property visit has successfully been scheduled.
+user: Great. Can you also check my alarms for me real quick?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm set for 7:30 am with the name Wake up.
+user: Awesome, I thought so but I couldn't remember.
+assistant: Would you like to add another alarm?
+user: No, not right now.
+assistant: Will that be all then?
+user: Yes, for now.
+assistant: Okay. Have a nice day.

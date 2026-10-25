@@ -1,0 +1,24 @@
+user: My family is visiting and I am looking for something to do. Will you search for some attractions.
+assistant: Do you have a particular city you would like me to search?
+user: Please search in the San Francisco area.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 choices for you. One of them is an historical landmark called Alcatraz.
+user: Is this place kid-friendly and is their an admission fee?
+assistant: The place is kid-friendly and there is no charge for admittance.
+user: Great. I would like to see a 3d movie in the same area.
+tool(FindMovies): ok n_results=10
+assistant: Here are some options for you: Ad Astra, Brittany Runs a Marathon or Fiddler: A miracle of Miracles.
+user: I would enjoy Ad Astra.
+assistant: Are you interested in purchasing tickets?
+user: No, not at this time. I would like to see an on-line movie on Play.
+tool(FindMovies): ok n_results=10
+assistant: Would you like to see A faithful Man, After the Wedding or Blinded by the Light?
+user: No, what else is there to watch?
+assistant: How about Brittany runs a Marathon, Hustlers, or Live Flesh?
+user: I would enjoy watching Brittany Runs a Marathon. Please play this with english sibtitles.
+assistant: Please confirm you would like to watch Brittany Runs a Marathon with english subtitles.
+user: Yes, and who is the actor starring in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Jillian Bell is in this movie and it has starte playing.
+user: Thank you. that is all I need at the moment.
+assistant: Have a wonderful day!

@@ -1,0 +1,18 @@
+user: Can you find me songs?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 options. How about Pyramid by Jake Zyrus from his album Charice?
+user: Yes, that's great. Can you find me a movie too? Maybe a drama?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 options for you. How about A Faithful Man, After The Wedding, or Blinded by the Light?
+user: Blinded by the Light sounds great. Can you play the song?
+assistant: Please confirm: play Pyramid in living room.
+user: Actually, cast it on the patio device.
+assistant: Please confirm: play Pyramid on the patio.
+user: Yes, that's right. What's the genre?
+tool(PlayMedia): ok n_results=1
+assistant: It's a pop song.
+user: Can you show my set alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There's a 5 pm alarm called errands.
+user: Okay, that's great. That'll be everything.
+assistant: Thanks, have a nice day.

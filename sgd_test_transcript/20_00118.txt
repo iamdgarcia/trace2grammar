@@ -1,0 +1,19 @@
+user: I'll be visiting Anaheim and need a house to stay, for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: May I suggest the nice, 4.2 star rated house at 1050 West Ball Road?
+user: This house works for me. Please go ahead and reserve the house.
+assistant: Tell me your preferred check-in and check-out dates, please.
+user: I'll be checking in this Sunday, and checking out on 2nd of this month.
+assistant: Sure. Let me see if I got everything correctly: 1 person will be checking into the house in Anaheim on March 2nd, and checking out on March 3rd. Is that correct?
+user: No. Something just came up. I'd like the check in date to be 13th of this month. instead I plan to check out the next day, March 14th.
+assistant: No problem. Please confirm that you'll be checking in on March 13th, and checking out on March 14th.
+user: That is correct. Do know know whether the place provides laundry service? Also, let me know the total cost.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. The place offers laundry service, and the total cost is $124.
+user: Thank you very much. You've been very helpful. Now please find me some attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: I highly recommend visiting Angel Stadium of Anaheim, a Sports Venue.
+user: All right. Cool!
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a great time!

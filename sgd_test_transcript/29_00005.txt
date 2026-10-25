@@ -1,0 +1,24 @@
+user: Can you find me a hotel in LA that I will be able to smoke in?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 1 star hotel called Banana Bungalow Hollywood.
+user: Can you give me their address and how much it is per night please?
+assistant: They are located at 5920 Hollywood Boulevard, Hollywood, California 90028, United States and the cost is $21 per night.
+user: That sounds perfect! I also will need a round trip flight there, leaving today and returning on the 14th.
+assistant: What is your destination city?
+user: I will be leaving from Chi-town.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There is an American Airlines flight that departs at 10:20 am and returns at 5:15 am and costs $263.
+user: Sounds great! Please reserve the hotel you found.
+assistant: How long do you need the hotel for?
+user: For 2 days please!
+assistant: Is your check in date March 1st?
+user: No, I wish to check in on the 6th.
+assistant: Please confirm you want 1 room for March 6th at Banana Bungalow Hollywood in Los Angeles for 2 days.
+user: Yes, Perfect! Can you provide their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked the hotel and their phone number is +1 323-469-2500.
+user: Can you tell me what attractions they have there?
+tool(FindAttractions): ok n_results=10
+assistant: They have a Historical Landmark called Angels Flight Railway.
+user: Sounds great! That will be all for now.
+assistant: Okay, enjoy your time!

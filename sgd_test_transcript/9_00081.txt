@@ -1,0 +1,18 @@
+user: I have some free time and I want to spend it with some nice movies. Can you search for the one for me?
+assistant: Yes, Where do you want to watch the Movie to search for?
+user: I want to search it in San Leandro.
+tool(FindMovies): ok n_results=4
+assistant: Got 4 results. Which is your choice among Ad Astra, Angel Has Fallen, Hobbs and Shaw?
+user: I think all are nice but I need to search for something else.
+assistant: Do you like to watch Overcomer?
+user: Yes, Overcomer is good and I want to purchase the tickets now. Please buy one ticket on March 7th for the show time at 10:30 pm.
+assistant: Shall I book it for Imax or regular show?
+user: I need to watch a Imax Show. Make it accordingly.
+assistant: Okay. Please give me your confirmation to book 1 ticket to the movie Overcomer for a Imax show at 10:30 pm on March 7th in San Leandro.
+user: That is perfect. Please proceed and let me know the type of movie.
+tool(BuyMovieTickets): ok n_results=1
+assistant: It is a Drama type movie and hope you will like it. I have booked the tickets successfully.
+user: Thanks so much for your work.
+assistant: Anything else you need to do?
+user: No, thanks and that's all.
+assistant: Have a great day.

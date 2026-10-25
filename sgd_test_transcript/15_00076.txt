@@ -1,0 +1,17 @@
+user: Hi, could you get me a therapist please?
+assistant: What type of therapist and where are you looking at?
+user: A Psychologist in Oakland will be great.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 Psychologist you may like in Oakland, how about Alameda Children'S Specialized?
+user: I see, may I know the weather there on 11th of this month?
+tool(GetWeather): ok n_results=1
+assistant: It will be 76 degrees Fahrenheit on average with a 24 percent chance of rain.
+user: I see, that is great!
+assistant: Do you need any other assistance?
+user: Yes, could you get me an appointment with the therapist at 5:15 in the evening on that day?
+assistant: Please confirm your appointment with Alameda Children'S Specialized at 5:15 pm on March 11th.
+user: Sure, how can I contact them and where are they located at?
+tool(BookAppointment): ok n_results=1
+assistant: Sorry your appointment could not be made. Would you like an appointment at Alameda Children'S Specialized at 5:30 pm on March 11th instead? You can visit them at 7200 Bancroft Ave # 125C and contact them at 510-383-5100.
+user: No thanks, goodbye.
+assistant: Sure, have a great day ahead!

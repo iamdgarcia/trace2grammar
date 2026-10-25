@@ -1,0 +1,19 @@
+user: Would you help me to search for a action movies shown in Sonoma?
+tool(FindMovies): ok n_results=1
+assistant: I searched 1 movie for you. What is your opinion about Angel Has Fallen?
+user: Oh..Angel Has Fallen is great movie. Can you search some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: What is your opinion about Lose My Mind from the album Illinois by Brett Eldredge
+user: Okay..this is perfect.
+assistant: Can i play this song now?
+user: Okay..fine..play it on my kitchen.
+assistant: Please confirm the following details: To play the song Lose My Mind in Kitchen
+user: Okay..this is cool.
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your music.
+user: Do you know the type of music? Is this song released in 2017?
+assistant: This song is a country song and released in the year 2015.
+user: Thanks a lot
+assistant: Any other help you want?
+user: No, thank you so much.
+assistant: Have a nice day.

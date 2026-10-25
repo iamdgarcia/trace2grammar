@@ -1,0 +1,15 @@
+user: Can you find me a salon in Sunnyvale?
+tool(FindProvider): ok n_results=10
+assistant: Absolutely. May I suggest A+ Haircuts For Men? It's located in Sunnyvale.
+user: That will work for me. What's the weather forecast for the 4th?
+tool(GetWeather): ok n_results=1
+assistant: It should be 71 degrees Fahrenheit with a 28 percent chance of rain.
+user: Can you make me an appointment at that salon for four in the evening?
+assistant: You'd like an appointment at A+ Haircuts For Men on March 4th for 4 pm. Is that correct?
+user: Yes, that is correct. Can you tell me their contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. You may reach them at 408-743-5780.
+user: What is the salon rated?
+assistant: It has an average rating of 4.1.
+user: That's great. Thank you for the help.
+assistant: You're welcome. Have a great day.

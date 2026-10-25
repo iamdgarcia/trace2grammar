@@ -1,0 +1,26 @@
+user: I need assistance finding a bus. Three will be riding to Vancouver. I prefer a direct bus.
+assistant: What location would you like to board the bus?
+user: Portland, OR will be the location.
+assistant: Is there a specific date you have in mind?
+user: I would prefer to travel the 2nd of March.
+tool(FindBus): ok n_results=7
+assistant: You have 7 choices. One choice leaves at 7:10 am. The charge is $42.
+user: What is my other choice?
+assistant: There is a $44 fee for one leaving at 7:20 am.
+user: Thanks for the information.
+assistant: What else may I assist you with?
+user: Something to do while I am in the area would be nice. I hope you can locate a free Nature Preserve.
+tool(FindAttractions): ok n_results=1
+assistant: The Vancouver Aquarium may suit your needs. The Aquarium is 1 Nature Preserve found.
+user: Would this place be safe for children?
+assistant: According to my information the attraction is not suitable for children.
+user: I see. I would like a ticket for the bus ride you told me about earlier.
+assistant: I will reserve 3 seats on the bus from Portland to Vancouver. The reservation will be for March 2nd at 7:20 am. Shall I book the trip with these details?
+user: Please and thank you.
+tool(BuyBusTicket): ok n_results=1
+assistant: The passes are in your name.
+user: I almost forgot. I would also like a hotel in the area.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel called Atrium Inn Vancouver.
+user: Nice. I'm set for now.
+assistant: Have a good one.

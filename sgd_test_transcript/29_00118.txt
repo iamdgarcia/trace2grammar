@@ -1,0 +1,39 @@
+user: I want to search for some nice events to spend my free time there. find me the best one to go there.
+assistant: What type of events you are looking for? Any desired type like Music or Theater, then let me know the same to search for it? and also let me know your current location to search for the one
+user: Find me a one like a Stage show something around LAX.
+tool(FindEvents): ok n_results=10
+assistant: I got 10 events that suit to you. What about the one like A Year In Dragonfly will be held at Studio C Artists on March 1st at 7:30 pm?
+user: I want to know the venue address of this event.
+assistant: The address of the venue is located at 6448 California 2.
+user: And what about the ticket cost?
+assistant: It is $55.
+user: Okay. Search for some other events to match my requirement.
+assistant: Another one named Adieu Monsieur Haffmann will be taking place at Theatre Raymond Kabbaz on March 4th at 6:30 pm. Do you like to go there?
+user: Sounds good but I like to find something else on March 5th which may be Songs.
+tool(FindEvents): ok n_results=10
+assistant: What about the event like Aldous Harding at lodge Room on March 5th at 5 pm?
+user: This is okay to me and thanks.
+assistant: What else you want now?
+user: I need to book a house there to stay for a while and I need the one with 4.2 or higher rating.
+tool(SearchHouse): ok n_results=10
+assistant: Got a house located at 10740 Wilshire Boulevard with rating at 4.2. Is this house is okay to you?
+user: That is okay and thanks. Now I want to Search for some buses to go there and It is for one person only.
+assistant: Shall I serach it for March 5th or any other dates?
+user: Search for the one on 2nd of this month.
+assistant: To which place you want me to search for the bus?
+user: Search for something from SD.
+tool(FindBus): ok n_results=10
+assistant: What about a bus leaving at 9:10 am and the ticket cost is $26.
+user: That's nice and thanks.
+assistant: Shall I book the tickets now?
+user: No, not now. I will ask it later.
+assistant: Anything else you need me to do?
+user: Yes, please buy the tickets to the event that you have searched for me before.
+assistant: Please confirm to book 1 ticket to the event Aldous Harding on March 5th in Los Angeles.
+user: That is correct to proceed. What is the cost per ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: It cost $30 per ticket and Your tickets are booked successfully.
+user: Thank you so much.
+assistant: How can I help you further?
+user: Nothing for today. Thanks.
+assistant: Have a good day.

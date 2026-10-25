@@ -1,0 +1,19 @@
+user: I need help locating a bus.
+assistant: I can help with that. When will you be traveling? Where are you departing and where do you wish to go?
+user: I will need a ticket from San Fran for one person, going to Los Angeles for March 7th.
+tool(FindBus): ok n_results=9
+assistant: I have located 9 buses that match your need. I have a bus that will be leaving at 7:30 am for $47.
+user: That works fine, I want that ticket.
+assistant: Okay, that will be 1 ticket, leaving from San Francisco and traveling to Los Angeles. You will be departing at 7:30 am on March 7th, is that correct?
+user: Yes, that is perfect.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully reserved your bus ticket.
+user: I really appreciate your help with that.
+assistant: Would there be anything else you need today?
+user: Yes, I would like to book one room at a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: How about the 3 star hotel, Ac Hotel By Marriott Beverly Hills?
+user: Can I have the contact number?
+assistant: Yes, the number is +1 323-852-7000.
+user: Thank you, that will be all.
+assistant: Great, I hop you enjoy your trip and have a great day.

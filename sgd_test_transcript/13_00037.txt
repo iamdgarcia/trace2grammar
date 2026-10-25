@@ -1,0 +1,38 @@
+user: You know any Broadway shows playing around Long Beach on the 12th of this month?
+tool(FindEvents): ok n_results=3
+assistant: Yeah, at least 3. There is Beast On The Moon at The Beverly O'Neill Theater on March 12th at 5 pm.
+user: Cool. What else is happening? I'm into songs. Find something in New York.
+tool(FindEvents): ok n_results=10
+assistant: I found 10. Alma Deutscher is playing at Stern Auditorium / Perelman Stage on March 12th at 5 pm.
+user: Anything happening on the 14th of this month?
+tool(FindEvents): ok n_results=10
+assistant: There's Alpha Blondy at Sony Hall on March 14th at 5:30 pm.
+user: I like the sound of that.
+assistant: I can pick you up some tickets.
+user: Hold off on that.
+assistant: Ok. What's up?
+user: I need a hotel there.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 for you. Try 1 Hotel Brooklyn Bridge. It has 5 stars.
+user: What about something in the 2 star range.
+tool(SearchHotel): ok n_results=10
+assistant: Bklyn House Hotel is among 10 I have with 2 stars.
+user: What's the damage per night.
+assistant: It will cost you $42 a night.
+user: Where's it at. Can I pull bongs there?
+assistant: Smoking is permitted. They are at 9 Beaver Street, Brooklyn.
+user: OK. Very cool.
+assistant: I can reserve a room if you like.
+user: No now. Grab me those tickets though.
+assistant: How many you want?
+user: Get 3 tiks.
+assistant: 3 seats at the Alpha Blondy concert on March 14th in New York?
+user: Make it 2.
+assistant: 2 seats at the Alpha Blondy concert on March 14th in New York?
+user: You got it.
+tool(BuyEventTickets): ok n_results=1
+assistant: Tickets are confirmed!
+user: Whats the cost per tik? And where is this place exactly?
+assistant: $60. Go to 235 West 46th Street.
+user: Nice thanks. I'm good to go.
+assistant: Great. Take care.

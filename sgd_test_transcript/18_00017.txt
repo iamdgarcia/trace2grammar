@@ -1,0 +1,23 @@
+user: Can you get me the weather for Phoenix for the 4th of March?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 90 degrees Fahrenheit. There is a 29 percent chance of rain.
+user: Okay. Can you find me a one-way flight there?
+assistant: What is your departure city? Will you be leaving on March 4th?
+user: I want to leave on the 2nd of this month. I am departing from Portland, OR.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: I found 5 flights for you. How about a flight on Alaska Airlines? It is a direct flight that departs at 10:20 am. The ticket is $135.
+user: Is the flight for 1 person? Is it a business class ticket?
+assistant: It is an Economy -class seat for 1 person.
+user: Can you find me something else?
+assistant: How about American Airlines? There is a 11:20 am departure that costs $207.
+user: That sounds good. Can you get me a rental car? I need to pick it up at evening 7:45.
+assistant: What will be your pick up and drop off dates? March 2nd, March 4th, or some other date?
+user: I need it from the 6th of this month until the 11th of March.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found a nice Sedan Audi A8 available at the Phoenix Union Station.
+user: How much does it cost per day?
+assistant: The rental costs $29.00 per day.
+user: That sounds good.
+assistant: Is there anything else that I can help you with?
+user: No. Thank you for your help.
+assistant: You're welcome. Have a good day.

@@ -1,0 +1,18 @@
+user: I want to find a house to stay in.
+assistant: What city are you staying in?
+user: I want to stay in NY.
+tool(SearchHouse): ok n_results=10
+assistant: There's a house at 100 Greenwich Street that's rated 4.4
+user: Sounds great. I want to book it.
+assistant: What date are you checking out?
+user: I'm checking out on the 3rd of this month.
+assistant: What day are you checking in?
+user: I want to check in on the 1st of this month.
+assistant: How many people in your group?
+user: There are only 2 people.
+assistant: Please confirm: A house in New York for 2 people. Check in is March 1st and checkout is March 3rd.
+user: Sounds great.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you, that's all.
+assistant: Glad I could help. Have a great day.

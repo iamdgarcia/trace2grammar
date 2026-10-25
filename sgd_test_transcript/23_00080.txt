@@ -1,0 +1,30 @@
+user: Could you send a payment from my in-app balance to Svetlana?
+assistant: How much should I send?
+user: 153 bucks.
+assistant: PLease confirm: send $153 from your app balance to svetlana publicily
+user: Exactly.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made, the recipient should see the money soon.
+user: Cool, can you find me a train now?
+assistant: From where, and when? Oh, and going where?
+user: I'd like to go from portland, OR to seattle on the 1st of march.
+tool(FindTrains): ok n_results=9
+assistant: I have 9 options. How about this one, departing at 9:10 am for $61?
+user: Anything else?
+assistant: THis one leaves at 10:10 am for $62.
+user: That works. How's the weather in seattle next tuesday?
+tool(GetWeather): ok n_results=1
+assistant: The temp will be $61 degrees, with an 18 % chance of rain.
+user: HOw windy and humid will it be?
+assistant: The wind speed will be 15 mph, with a 23 % humidity.
+user: Cool, could you book me tickets for that train?
+assistant: FOr how many people, and do you wnat insurance?
+user: I do, for 1.
+assistant: Please confirm: YOu want 1 value ticket with insurance leaving from portland to seattle on march 1st at 10:10 am.
+user: Works for me, what station does it arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is successfully booked. It arrives at king street station.
+user: Thank you.
+assistant: Do you need anything else?
+user: NO thanks.
+assistant: Have a great day!

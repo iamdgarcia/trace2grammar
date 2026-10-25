@@ -1,0 +1,26 @@
+user: Let's rent a car please.
+assistant: How long will you require the car for?
+user: I will need to rent the car until the 13th of March.
+assistant: What day would you like to pick up the vehicle?
+user: March 11th please.
+assistant: Great, and for what time would you like to schedule the pick up?
+user: 1:30 in the afternoon would be the best time.
+assistant: Where would you like to pick the car up from?
+user: I need a car in Rio.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I understand. I do see a Sedan Buick Regal Sportback that is available at Galeao International Airport
+user: Find other options please. I would like to keep the car until the 12th of March.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I've found a Hatchback Ford Focus at Galeao International Airport. How does that sound?
+user: Sounds great! I'm going to also need to find a house to stay at with laundry service availabe for two people please.
+tool(SearchHouse): ok n_results=10
+assistant: I've located a great house at Avenida Almirante Silvio de Noronha, 365 - Centro with a rating 4.6. Will this work or would you like more options?
+user: This house sounds pretty good, Let's reserve the rental car we just discussed.
+assistant: Should we add insurance as well to this reservation?
+user: No, I don't need insurance.
+assistant: Ok, I understand. Please confirm you would like to pick up the Hatchback at Galeao International Airport on March 11th at 1:30 pm and return date of March 12th. Is this correct?
+user: Yes, you got it right. Find out how much the rental is per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car was successfully reserved and the cost will be $31.00 per day.
+user: Great, thank you for your help.
+assistant: your welcome.

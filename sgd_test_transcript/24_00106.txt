@@ -1,0 +1,25 @@
+user: I need to make a payment right now.
+assistant: Okay. From which account should I make the transfer from? And to who?
+user: Make it to Yumi from my bank account.
+assistant: How much would you like to transfer?
+user: Send one hundred and fifty five bucks, but from my app balance actually.
+assistant: You would like to transfer $155 from app balance to Yumi. Is that correct?
+user: Yes that is correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment has been sent.
+user: Great. I'm glad I got that over with. Find me a restaurant in SF.
+assistant: What kind of food are would you like to eat?
+user: Sushi. Something reasonably priced.
+tool(FindRestaurants): ok n_results=10
+assistant: 2g Japanese Brasserie is a nice restaurant in San Francisco.
+user: Sounds alright. What's their phone number?
+assistant: The phone number is 415-292-9997.
+user: Okay. Sounds good. Book me a table for 1:30 pm
+assistant: You would like to book a table for 2 at 2g Japanese Brasserie in San Francisco for 1:30 pm on March 1st. Is that correct?
+user: Yes that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation has been made.
+user: Great, thanks.
+assistant: You're welcome. Will that be all?
+user: Yes that is all, I'll let you know if I need anything further.
+assistant: Okay, have a nice day.

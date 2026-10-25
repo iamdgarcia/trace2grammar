@@ -1,0 +1,35 @@
+user: I'm after a unisex salon in san jose i need a haircut badly
+tool(FindProvider): ok n_results=10
+assistant: Atelier salon willow glen is a highly rated salong in san jose
+user: What are they rated? Also can you tell me their phone number
+assistant: The salon is rated 4.3. You can contact them on 408-293-3494
+user: Okay can you find another option for me
+assistant: Barba & co. san jose is another good option also located in san jose
+user: Okay sounds good, i want to share the location with someone
+assistant: Who do you want to share it to?
+user: Can you send it to bobby
+assistant: You want to share the location 1775 park avenue
+user: yes thank you
+assistant: Confirming you want to share the address 1775 park avenue with bobby
+user: No can you send another location, Kuya's asian cuisine, to albert?
+assistant: Confirming you want to share the location Kuya's asian cuisine with albert
+user: Yes thank you
+tool(ShareLocation): ok n_results=1
+assistant: I've sent the location
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms, the next one is 10 am, labeled breakfast
+user: can you add another alarm for me
+assistant: What time do you want the alarm to be set for?
+user: Set it for evening 4
+assistant: Confirming you want to set a new alarm at 4 pm
+user: yes thank you
+tool(AddAlarm): ok n_results=0
+assistant: I'm sorry, i was unable to set that alarm for you
+user: Can you try again and make it for afternoon 3:45
+assistant: Confirming you want to set a new alarm at 3:45 pm
+user: yes thank you
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been created
+user: Thanks so much, that's it for now
+assistant: Have a good day

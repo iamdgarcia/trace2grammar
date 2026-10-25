@@ -1,0 +1,24 @@
+user: i didn't went to salon for a long time. will you find me a unisex salon in Hayward?
+tool(FindProvider): ok n_results=3
+assistant: i found 3 salons as per your interest. King of Kutz barbershop is a nice salon in Hayward.
+user: Will you find me a different salon? i need it in saratoga.
+tool(FindProvider): ok n_results=2
+assistant: i found 2 salons in that area. How about D & H Hair salon which is a nice salon in Saratoga
+user: what is its average rating?
+assistant: its average rating is 4.7
+user: ok that sounds good to me
+assistant: Whether i need to book an appointment here?
+user: No not now. How is the weather over there on 8th of march?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 81 degrees fahrenheit. there is a 19 percent chance of rain.
+user: okay then , i need to book an appointment at the salon which you found earlier
+assistant: at what time you need to book an appointment?
+user: i need to fix it at 17:00
+assistant: please check and review the following details. The name of the hair stylist is D & H Hair salon, the appointment is at 5 pm. and the appointment is on march 8th.
+user: Ok that sounds good. what is its address?
+tool(BookAppointment): ok n_results=1
+assistant: appointment is fixed. its address is 14531 big basin way
+user: thanks a lot
+assistant: whether i need to find anything else?
+user: no , thanks for now.
+assistant: have a wonderful day

@@ -1,0 +1,26 @@
+user: I need help finding a rental car.
+assistant: When would you like to start the rental?
+user: On Saturday this week.
+assistant: Okay. Where would you like to rent the car from, and when would be the best time for you to pick it up.
+user: I need a car in Kuala Lumpur for next Monday. I'd like to pick it up at 16:30.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There are 8 cars that meet that criteria. How about an SUV Alfa Romeo Stelvio from KLIA International airport?
+user: Do you have something else? I wouldn't mind a SUV.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There is a nice SUV Dacia Duster available at KLIA International Airport.
+user: How much will it cost me per day?
+assistant: The cost per day is $32.00.
+user: That will work for me. Can you also find a house for me to stay at that has laundry service and a rating of 4.5 or higher?
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house located at 1020, Jalan Sultan Ismail, 50250 with a rating of 4.5. Would that work?
+user: That sounds awesome. Can you reserve the rental car we were discussing earlier?
+assistant: Sure. Would you like insurance?
+user: No I don't need it.
+assistant: You would like to rent an SUV from KLIA International Airport from March 2nd at 4:30 pm util March 4th. Is that correct?
+user: No. I want to get insurance.
+assistant: You would like the car rental on March 4th to come with insurance. is that correct?
+user: Yes that sounds good to me.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Awesome thank you. That will be all.
+assistant: You're welcome. Good bye.

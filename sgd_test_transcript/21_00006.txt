@@ -1,0 +1,21 @@
+user: Get me a luxurious cab for two
+assistant: Whats the destination?
+user: Its 503 West San Carlos Street
+assistant: Please confirm: Booking a Luxury ride to 503 West San Carlos Street for 2 seats.
+user: Yes, thats right
+tool(GetRide): ok n_results=1
+assistant: Its booked and on its way.
+user: How long it it and whats the cost?
+assistant: It will arrive in 14 minutes for $21.81
+user: Thanks a lot, find me some songs
+tool(LookupMusic): ok n_results=10
+assistant: Should i play Find U Again by Mark Ronson from the album Late Night Feelings
+user: Yes, thats right
+assistant: should i play it?
+user: yes, on the speaker in kitchen
+assistant: Please confirm: Playing Find U Again in Kitchen
+user: yes, thats right
+tool(PlayMedia): ok n_results=1
+assistant: enjoy your song
+user: thanks, thats all
+assistant: good day !

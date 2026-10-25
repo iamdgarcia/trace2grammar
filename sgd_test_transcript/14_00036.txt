@@ -1,0 +1,19 @@
+user: Find me some movies online
+assistant: Do you prefer any type?
+user: Find movies of dramatic story
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies. How about A Faithful Man, After The Wedding or Blinded by the Light?
+user: A Faithful Man is perfect. Play the movie now
+assistant: P please confirm this: playing A Faithful Man with English subtitles
+user: That's it. Who acted in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: Movie is playing. Bakary Sangare is the actor
+user: Check the weather there
+assistant: In which city do you want to check?
+user: Find in Belmont
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 90 degree Fahrenheit and a 22 percent chance of rain
+user: That's good
+assistant: Do you want anything else?
+user: No that's all for now. Thank you
+assistant: Have a nice day.

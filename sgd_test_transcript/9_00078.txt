@@ -1,0 +1,16 @@
+user: Will you find a movie?
+assistant: Which location?
+user: Anything in Mill Valley?
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie, the IT Chapter Two.
+user: IT Chapter Two sounds great. Will you buy tickets?
+assistant: What showing?
+user: Anything at seven in the evening on March 1st. I would like three tickets.
+assistant: Any preference? 3d or imax?
+user: Just a regular show.
+assistant: Please confirm 3 regular tickets for IT Chapter Two on March 1st in Mill Valley at 7 pm.
+user: Sounds great. What genre? Address of theater?
+tool(BuyMovieTickets): ok n_results=1
+assistant: It's a Supernatural movie at 25 Throckmorton Avenue.
+user: Thanks. That's all for now.
+assistant: Have a wonderful day.

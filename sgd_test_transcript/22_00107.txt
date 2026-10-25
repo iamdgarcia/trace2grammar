@@ -1,0 +1,37 @@
+user: Can you find me a therapist please
+assistant: Where at? And do you need a Psychologist? Or perhaps a Psychiatrist?
+user: I need a Psychologist in Redwood City actually
+tool(FindProvider): ok n_results=9
+assistant: How about Psychologist Becker Hubert J in Redwood City?
+user: That's good, book me an appointment please
+assistant: What date and time do you prefer?
+user: I want to go at 16:00 on the 1st of March if possible
+assistant: Confirming you want a 4 pm meeting on March 1st with Becker Hubert J yes?
+user: Yes please! What's their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: It's been booked and you'll get confirmation in a bit. They're addressed at 1150 Veterans Boulevard and it's 650-299-4827
+user: Thanks so much! Now can you request a payment from Mahmoud please
+assistant: For how much?
+user: I need $198 from them
+assistant: Confirming you are requesting $198 from Mahmoud?
+user: Yes that's right
+tool(RequestPayment): ok n_results=1
+assistant: It's been made successfully
+user: Awesome, now I need a restaurant to eat at
+assistant: What kind of food?
+user: I am craving some Ramen right now
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 places in Redwood City including Sakura 2 Teppanyaki and Sushi
+user: What's their user rating?
+assistant: They have a 4.2 average user rating
+user: Good enough, book me a table
+assistant: What time did you want to go
+user: I'm free this afternoon 1:30 pm
+assistant: Confirming a table for 2 on March 1st at 1:30 pm at Sakura 2 Teppanyaki and Sushi in Redwood City?
+user: Yes that's right, what's the price range of the place?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's been booked and it's in the moderate price range
+user: Thanks so much for doing that
+assistant: Sure thing, what else can I do?
+user: Nothing else for now, thank you
+assistant: Sure, enjoy your day!

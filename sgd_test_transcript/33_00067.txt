@@ -1,0 +1,21 @@
+user: I need to find a theater event on Monday next week in Chicago.
+tool(FindEvents): ok n_results=10
+assistant: All that He Was will be at The Buena, Pride Arts Center on March 4th at 5:30 pm.
+user: What else can you find?
+assistant: Casa Valentina is popular and takes place at Pride Arts Center on March 4th at 4:30 pm.
+user: Sounds great thanks!
+assistant: Can I do anything else for you today?
+user: I need to reserve 2 event tickets.
+assistant: You want 2 tickets for Casa Valentina on March 4th in Chicago, correct?
+user: Yes that is great thank you.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed, enjoy!
+user: Can you find me the most comfortable ride to go there?
+assistant: You want a luxury ride for 2 to Pride Arts Center, correct?
+user: Yes that is correct thanks.
+tool(GetRide): ok n_results=1
+assistant: Your cab is on the way.
+user: Thanks for all your help.
+assistant: Can I do anything else for you?
+user: No that is all thanks.
+assistant: Have a great day!

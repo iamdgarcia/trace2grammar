@@ -1,0 +1,13 @@
+user: Can you please find me some Fantasy movies to watch online, featuring Bret McKenzie.
+tool(FindMovies): ok n_results=1
+assistant: Would you like The Lord of the Rings: The Return of the King?
+user: Yes, The Lord of the Rings three is awesome. Let's play it now.
+assistant: Can you please confirm that you want me to play The Lord of the Rings: The Return of the King with English subtitles.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: I've started playing the movie for you.
+user: Thanks. Can you please tell me the weather for Pittsburg on the 14th of March?
+tool(GetWeather): ok n_results=1
+assistant: There's a 20 percent chance of rain with a predicted average temperature of 87 degrees Fahrenheit.
+user: Perfect. Thanks a lot! That will be all for now! Bye!
+assistant: My pleasure. Have a nice day.

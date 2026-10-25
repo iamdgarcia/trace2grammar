@@ -1,0 +1,15 @@
+user: I want to create a new alarm and name it Cleaning
+assistant: What time do you want the alarm for?
+user: For quarter past 3 in the afternoon.
+assistant: You would like to create a new alarm called Cleaning for 3:15 pm
+user: No, I want it for three in the afternoon.
+assistant: You would like to create a new alarm called Cleaning for 3 pm?
+user: No. I want it to be called Music practice.
+assistant: You would like to create an alarm for 3 pm and call it Music practice?
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: I have created the alarm for you.
+user: Thanks a million.
+assistant: Do you need help with anything else?
+user: No. Thanks a lot.
+assistant: Thank you very much.

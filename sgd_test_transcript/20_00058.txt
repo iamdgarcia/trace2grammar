@@ -1,0 +1,23 @@
+user: I want to get a rental car on March 1st and keep it until the 5th of this month. I would really like a hatchback.
+assistant: What is the location where you want to rent the car and what time would you like to pick it up?
+user: I would like to pick it up at 11 o'clock in the morning in Portland.
+tool(GetCarsAvailable): ok n_results=7
+assistant: There is a nice Hatchback that you can get at PDX International Airport. It's a Ford Focus.
+user: That sounds find. I would also like to find a house that I can stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: I have located 10 houses that fit your search. There is one very nice one rated at 4.1 and the address is 1000 Northeast Multnomah Street.
+user: Is there laundry service at this house? What is their phone number?
+assistant: Their phone number is +1 503-281-6111 and they do offer laundry service.
+user: Did you find any other houses?
+assistant: Another nice house with a rating of 4.5 is located at 1150 Northwest 9th Avenue.
+user: This house sounds really good. Would you reserve for me the rental car you found earlier?
+assistant: Would you like to add insurance?
+user: No, I won't need insurance.
+assistant: Okay, confirm these details for me: You will pick up the car on March 1st at 11 am at PDX International Airport. You will drop the car off on March 5th. This car is a Hatchback and you are not getting insurance.
+user: Yes, that sounds fine. What is the price of the car per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved for you. The price is $31.00 a day.
+user: Thank you very much for your help.
+assistant: Is there anything else I can do for you?
+user: No, that will be all. I appreciate your help.
+assistant: Have a wonderful day.

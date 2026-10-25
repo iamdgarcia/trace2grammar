@@ -1,0 +1,29 @@
+user: Can you search for a nice salon for me?
+assistant: Which city do you want me search for the salon?
+user: I am looking for a salon in Alameda.
+tool(FindProvider): ok n_results=8
+assistant: There are 8 salons you may like. How about a salon called Al'S Barber Shop located in Alameda?
+user: Can you find me their contact number and average rating?
+assistant: The average rating of the salon is 5.0 and you can contact them on 510-473-7869.
+user: Are there any other salon in San Francisco?
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons you may like. How about 1512 barber shop located in San Francisco?
+user: Are there any other salon?
+assistant: How about 20Th Salon And Barber located in San Francisco?
+user: Okay, That sounds good to me. Can you find me a show of a Mystery movie to watch there?
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies you may like. What do you think of Luce or Official Secrets?
+user: Official Secrets sounds good to me. Can you tell me the available show timings?
+assistant: Is the date you want to watch the movie March 3rd?
+user: Yes, That is correct.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime that might suit your requirement. How about a show at 4 pm in AMC Kabuki 8?
+user: That sounds good to me.
+assistant: Do you want me to buy the tickets for the show?
+user: No, not now. Can you book an appointment for 4:30 in the evening with the salon you just found.
+assistant: Please confirm: You want me to book an appointment with 20Th Salon And Barber on March 3rd at 4:30 pm.
+user: Yes, That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment.
+user: Okay. That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

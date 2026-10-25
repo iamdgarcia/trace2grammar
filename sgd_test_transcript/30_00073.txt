@@ -1,0 +1,21 @@
+user: I want to know how the weather will be in Castro Valley for March 9th.
+tool(GetWeather): ok n_results=1
+assistant: For your requested location the average temperature should be at 86 degrees Fahrenheit, and with a chance of raining at 7 percent.
+user: Alright, fine. I want to book a visit in a property for that day.
+assistant: Can you tell me the kind of property you like?
+user: The property I am looking to visit is Epic.
+assistant: Can you please confirm that you want to book a visit for March 9th for the Epic property?
+user: Yes, that is what I want.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your requested visit has been reserved.
+user: Now I need to find a car which I can rent there, more specifically I need the car to be a Hatchback one which I will have from 5th of March, and that I will pick up at 11:30 in the morning.
+assistant: Can you tell me the location where you want to pick up the car, and till when are you going to have the car? Also could you tell me if you want the insurance with the car?
+user: I am not in need of insurance. I will need to have the car till 11th of this month, and Union Station is a suitable place for me to pick up the car.
+assistant: Can you please confirm that you want to have a Hatchback car without insurance which you will be picking up at Union Station on March 5th at 11:30 am, and that you will need it till March 11th?
+user: That is correct. Can you tell me how much this car will be costing me per day, and what is the name of it?
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked, and it will be costing you $28.00 per day. The car is called Kia Ceed.
+user: I appreciate your help.
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful for your help.
+assistant: Have a wonderful day!

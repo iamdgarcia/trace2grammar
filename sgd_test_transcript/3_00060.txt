@@ -1,0 +1,11 @@
+user: Hi! Can you help me get a cab?
+assistant: I'd be happy to help. How many people are in your party?
+user: It's a party of three.
+assistant: Do you prefer a Luxury or Regular ride? Where are you traveling to?
+user: I'd like a Luxurious ride to 900 Blake Wilbur Drive 1st Floor.
+assistant: You'd like 3 seats for a Luxury ride to 900 Blake Wilbur Drive 1st Floor. Is this correct?
+user: That's correct.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been confirmed and will arrive shortly.
+user: Thanks for all of your assistance. That's everything for right now.
+assistant: You're welcome. Enjoy your ride!

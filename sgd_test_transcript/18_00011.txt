@@ -1,0 +1,21 @@
+user: Can you check the weather in SD next Tuesday please
+tool(GetWeather): ok n_results=1
+assistant: It's gonna be 84 degrees with an 8 percent chance of rain
+user: Sure thing, I need a one way flight getting there next Tuesday
+assistant: Where are you coming from?
+user: I'll be flying from Portland, OR
+tool(SearchOnewayFlight): ok n_results=5
+assistant: I found 5 flights including one via Alaska Airlines that leaves at 10:05 am and has a layover for $208
+user: Is it just for 1?
+assistant: Yes it's for 1 person only
+user: Sounds good, now find me a rental car
+assistant: What time are you picking it up and till when do you need it?
+user: I need it till the 11th of this month and am picking it up at 19:15
+assistant: Do you want it from March 5th onwards
+user: Actually I need it starting Thursday next week
+tool(GetCarsAvailable): ok n_results=6
+assistant: There's a Hyundai Ioniq Sedan you can get from Santa Fe Depot
+user: That sounds good for me
+assistant: What else can I do?
+user: Nothing else for now, thanks
+assistant: Sure thing, bye!

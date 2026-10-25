@@ -1,0 +1,31 @@
+user: I want to search for some movies to watch online. Can you help me to do the same.
+assistant: What is your favorite type of movie?
+user: I prefer Cartoon movies. Search for the one in this genre.
+tool(FindMovies): ok n_results=2
+assistant: I got 2 and what about The Angry Birds Movie 2 and do you like Toy Story 4?
+user: I like The Angry Birds Movie 2 and this is nice.
+assistant: Shall I play it now?
+user: No, not now. I will watch it later.
+assistant: Then what else you want now?
+user: I want to go to some attractive places for which I need your help to find the best for me.
+assistant: Do you want me to search the attractions in any particular City?
+user: Yes, search it in London.
+tool(FindAttractions): ok n_results=10
+assistant: Got 10 places. How about a Historical Landmark? The name of which is 30 St Mary Axe (The Gherkin). Do you want to try this place?
+user: Yes, that is okay. thanks. I need one more help that I want to search for a nice song especially Reggae songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about your opinion on a song name Addicted by Popcaan from album Where We Come From?
+user: Let me know the year of release of this song.
+assistant: This song was released in the year 2014.
+user: Thanks and now please play it for me in any of my devices.
+assistant: I need your confirmation to play the song Addicted in your Living room speaker.
+user: Please go ahead.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing and you can enjoy the same.
+user: Thanks. I am so happy. What about watching a movie that I have selected before. Can you play it now?
+assistant: of-course. please confirm to play the movie The Angry Birds Movie 2 with English subtitles.
+user: Please go ahead. What is the name of actor of this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Britta Steffenhagen acted in this movie and the same was started playing now.
+user: Thanks and that's all.
+assistant: Have a nice day.

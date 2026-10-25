@@ -1,0 +1,17 @@
+user: Please do a transaction with Margaret for me.
+assistant: How much to be transferred? Which is the account of transfer?
+user: Send 79 bucks from my app balance.
+assistant: Please confirm, you need a money transfer from you app balance for an amount $79 with Margaret, which is visible to public.
+user: Correct, make it.
+tool(MakePayment): ok n_results=1
+assistant: It is done successfully.
+user: Now, please find some restaurant providing Latin American in SFO. Look for one tagged reasonably priced.
+tool(FindRestaurants): ok n_results=3
+assistant: You can then choose Alegrias in San Francisco
+user: Fine, book one table for two people on 13th of March at 1:30 pm.
+assistant: Please verify, you need one table at 1:30 pm at Alegrias in San Francisco for 2 people on March 13th.
+user: Right, continue please.
+tool(ReserveRestaurant): ok n_results=1
+assistant: It is booked successfully.
+user: Obliged for the help.
+assistant: Have a great day.

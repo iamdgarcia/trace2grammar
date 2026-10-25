@@ -1,0 +1,25 @@
+user: I want to find three tickets for a round trip flight returning on the 8th of March.
+assistant: What date are you leaving?
+user: I'm leaving on the 5th of March. I want to find a Southwest Airlines flight.
+assistant: Where are you going? Where are you departing from?
+user: I am leaving from Chicago to Los Angeles.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 Southwest Airlines flight. The onward flight leaves at 7:20 pm and the returning flight leaves at 12 pm. The ticket is $266.
+user: Sounds great. I want to find a house to stay at while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. There's a house at 1020 South Figueroa Street that's rated 4.1.
+user: Any other houses? I want to find something rated 4.1 or higher.
+tool(SearchHouse): ok n_results=9
+assistant: I found 9 houses that match your search. There's a house at 10320 West Olympic Boulevard that's rated 4.1.
+user: Sounds good. I want to book the house for two people. I want to check in on Wednesday next week and check out on the 8th of March.
+assistant: Please confirm: a house for 2 people in Los Angeles. Check in is March 6th and Check out is March 8th.
+user: Yes, sounds great. Is there laundry service? What's the contact number?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made. Laundry service is available. The phone number is +1 310-825-2923.
+user: What are some attractions there? I want to find a nice garden.
+tool(FindAttractions): ok n_results=7
+assistant: Exposition Park is a popular park in the area.
+user: Okay, thank you.
+assistant: Anything else I can do for you?
+user: No, that's all. Thanks!
+assistant: Have a wonderful day!

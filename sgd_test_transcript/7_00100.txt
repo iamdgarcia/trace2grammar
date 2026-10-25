@@ -1,0 +1,20 @@
+user: I'm interested in getting 2 movie tickets please, something for a regular show.
+assistant: Where and when would you like to watch the movie?
+user: I want to see something on Wednesday next week, around ten pm or so. And I'm in San Rafael.
+assistant: Could you tell me the name of the movie you're interested in?
+user: Yeah, I want to see Hustlers.
+assistant: Confirming 2 regular admission tickets for Hustlers on March 6th at 10 pm in San Rafael.
+user: Perfect, thanks so much.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Oh, I apologize, but the transaction did not process successfully. May I help with something else?
+user: Let's try that ticket purchase again please. How about a 10:45 pm imax show?
+assistant: Confirming 2 tickets for the 10:45 pm imax showing of Hustlers in San Rafael on March 6th.
+user: Whoops, let's make that next Friday instead. And I think I want to go in Santa Clara.
+assistant: Confirming a March 8th showing in Santa Clara.
+user: Excellent, thanks for that.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Of course, happy to help. Your tickets have been successfully purchased.
+user: I appreciate your help, thank you.
+assistant: You're welcome. May I assist you in any other way?
+user: Not right now, you did it all!
+assistant: I'm glad that I was able to help you. Have a great day.

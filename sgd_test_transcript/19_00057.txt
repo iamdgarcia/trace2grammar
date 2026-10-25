@@ -1,0 +1,35 @@
+user: I need a rental SUV for Saturday this week.
+assistant: What time would you like to pick it up? On which day will you be returning it?
+user: I will keep it till the 6th and want to pick it up at 12 o'clock in the afternoon.
+assistant: Who would you like to rent from?
+user: Someone in Washington.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There are 6 available at Union Station. One is an SUV Alfa Romeo Stelvio.
+user: How much is it per day?
+assistant: It will be $38.00 daily.
+user: What else is available?
+assistant: There is a nice Citroen C5 SUV at Dulles International Airport.
+user: Sounds good, are there buses to the airport?
+assistant: From where will you depart?
+user: I am departing from NY.
+assistant: On which day?
+user: I will depart later today.
+tool(FindBus): ok n_results=8
+assistant: There are 8. One leaves at 6 am and costs $42.
+user: Which station does the bus leave from?
+assistant: From PEnn Station.
+user: Where does it arrive? How many stops are on this trip?
+assistant: It is direct to Silver Spring Bus Stop.
+user: What else can you find?
+assistant: One departing at 6:20 am and costs $34.
+user: That sounds good. I need a one-way there.
+assistant: Do you want to leave March 1st, March 2nd, or another day?
+user: I need to leave Saturday this week.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I found 3 flights. One is on American Airlines. It is a direct flight leaving at 5 pm and the ticket is $84.
+user: When does it arrive at the destination?
+assistant: It will arrive at 6:10 pm.
+user: Great thank you.
+assistant: Can I do anything more for you?
+user: No that is all thank you.
+assistant: Have a great day.

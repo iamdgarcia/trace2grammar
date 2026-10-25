@@ -1,0 +1,12 @@
+user: What is the weather going to be like on the 1st of March?
+assistant: For which city?
+user: For Oakley on March 10th.
+tool(GetWeather): ok n_results=1
+assistant: It should be 83 degrees Fahrenheit with a 20 percent chance of rainfall.
+user: What about in Brentwood?
+tool(GetWeather): ok n_results=1
+assistant: It should be 71 degrees Fahrenheit with a 21 percent chance of rainfall.
+user: How humid would it be?
+assistant: Around 29 percent.
+user: Well, that would be all. Thank you.
+assistant: Ok, take care.

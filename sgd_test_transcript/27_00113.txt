@@ -1,0 +1,31 @@
+user: I need to find a bus
+assistant: I need to know your destination, where and when you plan to depart.
+user: I will depart from Vancouver, BC on the 7th and my destination is Seattle, WA.
+tool(FindBus): ok n_results=10
+assistant: I've got 10 choices. There's a 7:40 am departure with a $25 fare.
+user: What's its destination?
+assistant: It's going to Westlake Station.
+user: I need a direct connection for four people.
+tool(FindBus): ok n_results=9
+assistant: I see 9 that fit your needs. there's one at 9:10 am that charges $30.
+user: That'll work just fine.
+assistant: Do need to purchase that now?
+user: No, I think I'll wait.
+assistant: Is there anything else i can do for you?
+user: I'm taking my grand-kids. Do you have any kid- friendly venues there? Maybe in a Park
+tool(FindAttractions): ok n_results=10
+assistant: Alki Beach Park would be perfect for the kids. It's a park.
+user: Fine. Please get me that bus ticket now, if possible.
+assistant: To confirm: I'll be buying a ticket for 4 on a bus from Vancouver to Seattle departing March 7th at 9:10 am. This does not cover extra luggage.
+user: I need coverage for extra baggage.
+assistant: To confirm: Your bus departs from Vancouver and you will be carrying extra luggage
+user: Great. That'll work.
+tool(BuyBusTicket): ok n_results=1
+assistant: I just now confirmed that.
+user: We're going to need 1 room in a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I can get you a room at Best Western Plus Pioneer Square Hotel Downtown. It has 3 stars.
+user: That's perfect. Thanks
+assistant: Do you need that booked now?
+user: No, thanks. I'll deal with that later.
+assistant: Take care now.

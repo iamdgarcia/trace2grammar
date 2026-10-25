@@ -1,0 +1,25 @@
+user: I would like to find a car rental.
+assistant: In what area do you need the car and when?
+user: I need the car in Philly from the 2nd of March at eleven am.
+assistant: Until when do you need the car?
+user: I need the car till the 3rd of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV alfa romeo stelvio available at Intercity Terminal.
+user: That sounds good.
+assistant: Would you like to reserve the car?
+user: Not at the moment. Can you find a direct bus for 2 leaving from NYC?
+assistant: When are you leaving?
+user: I would like to leave on the 1st of this month.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses. There is a bus leaving at 7:40 am for the cost of $26.
+user: Which station does the bus depart from?
+assistant: It leaves from Penn Station.
+user: Which station is the destination?
+assistant: The destination station is 10th and Filbert.
+user: I would like to find a premium economy ticket for the 2nd of March.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 flights. there is one with American Airlines that leaves at 1:35 pm and the cost is $94
+user: That flight sounds good.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

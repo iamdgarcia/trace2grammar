@@ -1,0 +1,30 @@
+user: Can you help me to find some tourist attractions?
+assistant: In which city?
+user: in San Francisco please.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 options for you. One is Alcatraz, it is a popular Historical Landmark.
+user: How much does it cost and could you give me a contact number?
+assistant: it is free and you can contact them on 415-561-4900.
+user: great, what else do you have?
+assistant: There is also Alcatraz island, it is also a Historical Landmark.
+user: okay fine.
+assistant: Do you need anything else?
+user: Yes, I would like to go to the movies when I am there. I like life history movies and I want to watch it at Clay Theatre.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 option for you called Fiddler: A Miracle of Miracles.
+user: Fiddler is an excellent suggestion.
+assistant: Will I purchase tickets for you?
+user: not right now, but could you help me find a good online movie.
+assistant: What genre do you prefer?
+user: Scary movies are fab especially ones that have Dennis Price in them.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie called Theatre of Blood.
+user: Theatre of Blood is Fab!
+assistant: Do you want the movie played now?
+user: yes please, with spanish subtitles.
+assistant: To confirm then you want Theatre of Blood played wih Spanish subtitles.
+user: yes that is right.
+tool(PlayMovie): ok n_results=1
+assistant: movie has started.
+user: that is all for now, thanks.
+assistant: have a lovely day.

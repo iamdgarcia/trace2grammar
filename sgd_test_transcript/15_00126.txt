@@ -1,0 +1,38 @@
+user: I'm new in town and would like to find a new salon to go to, can you help me?
+assistant: Sure but I will need the name of the city first.
+user: I've heard that Fremont is a nice little area.
+tool(FindProvider): ok n_results=10
+assistant: There's a cut salon in Fremont called 3Sixty Salon and Boutique.
+user: What else do you have?
+assistant: There is another one in Fremont called Alex's Classic Barber Shop.
+user: No, I don't think that's quite what i'm looking for, do you have anything else else?
+assistant: Yes, I also see that there is another Salon named Beauology in Fremont.
+user: Oh, that sounds perfect!
+assistant: Would you like me to go ahead ans set you up with an appointment?
+user: Not at this moment, I have something else that is more important. Can you help me find a Family Counselor as well?
+assistant: Would you like me to look in Fremont for this too?
+user: Yes, like I said, I heard it's a nice area so I would like to stay around there.
+tool(FindProvider): ok n_results=3
+assistant: There is a Family Counselor called Center For Well Being in Fremont that looks like something you may be interested in.
+user: Okay, that does sound good.
+assistant: Would you like me to try to get you an appointment here?
+user: Yes, please, I would greatly appreciate it.
+assistant: What time did you have in mind for this appointment?
+user: I'm usually always free at half past 2 in the afternoon.
+assistant: And what about the date, when would you like that to be?
+user: Is there any way you could get me an appointment today?
+assistant: Okay, let me just make sure that I have everything right before I proceed. You would like an appointment at the Center For Well Being on March 1st, at 2:30 pm, is that right?
+user: Yes, that would be great, but I will also need their address to get there.
+tool(BookAppointment): ok n_results=1
+assistant: I am pleased to let you know that I was able to schedule your appointment at the office with an address of 1301 Mowry Avenue.
+user: Is there a telephone number listed as well?
+assistant: Yes, the contact number they have listed is 510-797-3941.
+user: Okay, great, Now from necessity to luxury. I want to get an appointment at the salon you found, in the evening, 5:30.
+assistant: Okay, I will see if they have an opening for you at Beauology on March 1st, at 5:30 pm.
+user: Yes, that would be great!
+tool(BookAppointment): ok n_results=1
+assistant: I was able to get you all set up and they will be waiting for you at you scheduled time.
+user: Can you tell me what there rating is before I let them go near my hair with scissors?
+assistant: They currently have an average rating of 4.2.
+user: Thanks so much, you were very helpful and efficient.
+assistant: It was my pleasure, have a great day!

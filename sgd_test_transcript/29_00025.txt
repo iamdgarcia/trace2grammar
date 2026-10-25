@@ -1,0 +1,41 @@
+user: I need to find a hotel in London
+tool(SearchHotel): ok n_results=10
+assistant: I propose you a 5 star hotel called 45 Park Lane
+user: How much does it cost per night? Which way is it?
+assistant: Its price s $375 per night. It's in 45 Park Lane
+user: It's fine for me, thanks
+assistant: Do you want to book a room?
+user: Not now, thanks.
+assistant: What else do you need?
+user: I want to find a round flight in Economy class to go there. I prefer American Airlines
+assistant: What is the city of departure? Do you want to leave on March 7th?
+user: The citi of departure is Chicago. I want to leavev on Sunday this week
+assistant: Which day do you want to go back to?
+user: I want to go back on March 13th
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's 1 flight with American Airlines. It has a layover and takes off at 1:25 pm. The returning flight is at 12:45 pm. It costs $598 in total
+user: Yes, It's good for me. Now I want to book the hotel
+assistant: Is the arrival day March 3rd? How many nights do you want to book?
+user: No, the arrival day is the 9th. I want to book for 3 days
+assistant: 1 room for 3 days in 45 Park Lane hotel in London, form March 9th. Do you confirm?
+user: Yes, I confirm, thanks
+tool(ReserveHotel): ok n_results=1
+assistant: The room has been booked!
+user: Is it a smoking hotel? What is the phone number?
+assistant: No, the hotel is non-smoking. Phone number is +44 20 7493 4545
+user: Thank you so much! What attractions could I visit in London?
+tool(FindAttractions): ok n_results=10
+assistant: There a Historical Landmark: 30 St Mary Axe (The Gherkin)
+user: I like it! Is it for a fee?
+assistant: No, admission is charged.
+user: Is it a child-friendly attraction?
+assistant: Yes, it's good for kids!
+user: Good, but I prefer a Park without an entry fee
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. What about Barbican Conservatory? It's a Park
+user: Do you have any other suggestions?
+assistant: There's Brockwell Park, this is also a park
+user: Yes, It's fine for me!
+assistant: Can I do anything else for you?
+user: No, It's all for now, thanks!
+assistant: Have a good time!

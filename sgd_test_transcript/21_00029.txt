@@ -1,0 +1,21 @@
+user: Can you play music? I want to hear something from '17 , how about something from the Sucker Punch album?
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 possible song, what about Strangers by Sigrid from the album Sucker Punch.
+user: What's the genre?
+assistant: It's a pop song.
+user: Yup, that's the one.
+assistant: Is there anything else I can help with?
+user: Can you tell me the weather in Gilroy today?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for today should be 91 degree F with a 29 percent chance of rain.
+user: Okay, cool. Can you play the song you found on the patio?
+assistant: Please confirm: play strangers in patio?
+user: No actually, cast it in the my kitchen.
+assistant: Please confirm: play strangers in kitchen?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: Thanks for the help!
+assistant: Can I help with anything else?
+user: Nope, thank you!
+assistant: Enjoy your day!

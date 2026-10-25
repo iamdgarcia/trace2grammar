@@ -1,0 +1,34 @@
+user: I'm going out of town and i need bus tickets for the 12th of march
+assistant: Whats your departure and arrival locations?
+user: I'm leaving philly and heading to washington
+assistant: How many tickets are you after
+user: Can you book 3 tickets for me
+assistant: What time would you prefer to leave
+user: Um about half past 11 in the morning
+assistant: Confirming you want to book 3 bus tickets from Philadelphia to Washington departing March 12th at 11:30 am, and you don't need extra luggage
+user: Yes that's right
+tool(BuyBusTicket): ok n_results=1
+assistant: Unfortunately the booking failed due to unexpected errors. There is another service departing at 11:10 am instead. Tickets are $32
+user: yeah sure thats fine
+tool(BuyBusTicket): ok n_results=1
+assistant: Your booking has been confirmed
+user: I'm going to need a rental car as well
+assistant: Pick up from washington?
+user: yes thank you
+assistant: Do you want to pick it up on March 12th? Any particular time?
+user: Can you book it from the 13th of this month, i'll get it at 10:30 in the morning
+assistant: When will you drop off the car?
+user: Can you book it until the 14th of this month
+tool(GetCarsAvailable): ok n_results=7
+assistant: I have 7 options for you, including an SUV Citroen C5 pickup from Dulles international airport.
+user: How much is it?
+assistant: This car is $46.00 per day
+user: Okay reserve that one for me
+assistant: Do you want to add any insurance?
+user: No not right now i have insurance on my credit card
+assistant: Confirming you want to book a SUV rental car from Dulles international Airport, pick up 10:30 am on March 13th, drop off March 14th. Insurance has not been selected
+user: Yes that's all correct
+tool(ReserveCar): ok n_results=1
+assistant: Your booking has been successful
+user: Okay great that's all for now
+assistant: Talk to you later.

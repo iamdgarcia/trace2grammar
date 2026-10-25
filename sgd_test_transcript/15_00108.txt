@@ -1,0 +1,46 @@
+user: I would like to get my hair done. Will you please find a salon in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: I found a nice salon in San Jose called Atelier Salon Willow Glen.
+user: That one sounds great.
+assistant: would you like to make an appointment?
+user: No, not now but maybe later.
+assistant: Do you need further assistance?
+user: Yes, I would like to find a psychiatrist in San Jose.
+tool(FindProvider): ok n_results=6
+assistant: I have found 6 therapists in san JOse that may work for you. There is a psychiatrist named Dr. Manuj K. Nangia you may want to try.
+user: Please provide me with their phone number and address.
+assistant: Their address is 2516 Samaritan Drive and you may reach them at 408-357-0105.
+user: Thank you. Perfect.
+assistant: Would you like to make an appointment?
+user: Yes, please make an appointment.
+assistant: Do you have a preference for time?
+user: Please try to make the appointment for eleven in the morning.
+assistant: Do you have a preferred date?
+user: Please make the appointment for Friday next week.
+assistant: Please confirm you would like a March 8th appointment at 11 am with Dr. Manuj K. Nangia.
+user: No, change that to today.
+assistant: Please confirm you would like a March 1st appointment with Dr. Manuj K. Nangia.
+user: No, the appointment time should be in the morning 11:30.
+assistant: Please confirm you would like a March 1st appointment at 11:30 am with Dr. Manuj K. Nangia.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately I was not able to make a March 1st appointment at 11:30 am with Dr. Manuj K. Nangia. Would you like me try 11 am?
+user: Yes, that would work for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been scheduled. You will receive a confirmation email shortly.
+user: I would also like to make a salon appointment on the same day.
+assistant: What time would you like your appointment?
+user: Please schedule the appointment for one pm.
+assistant: Please confirm you would like a 1 pm appointment on March 1st with Atelier Salon Willow Glen.
+user: No, please change the appointment to a quarter to 6 in the evening.
+assistant: Please confirm you would like a 5:45 pm appointment on March 1st.
+user: Yes. Is this a unisex salon?
+tool(BookAppointment): ok n_results=1
+assistant: yes, it is a unisex salon. Unfortunately I was not able to make the appointment on March 1st with Atelier Salon Willow Glen. Would you like me to try a 5:30 pm appointment?
+user: That would be great.
+tool(BookAppointment): ok n_results=1
+assistant: You appointment has been scheduled.
+user: Thank you so much!
+assistant: do you need anything further today?
+user: No, that is all for now. Thanks again!
+assistant: Enjoy your day!

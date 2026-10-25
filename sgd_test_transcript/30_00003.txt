@@ -1,0 +1,26 @@
+user: I'll be travelling and need help finding something interesting to do while away. I love Musical shows.
+assistant: Sure. I can help you with that. What city should I search in?
+user: Please find something around New York.
+tool(FindEvents): ok n_results=10
+assistant: Your search yielded 10 events that might interest you. The popular Abbi Jacobson will have a show at Kaufmann Concert Hall on March 11th, at 7:30 pm.
+user: That works for me. Please also find me a house for one person, rated 3.8 or higher there. It must have laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: Your search yielded 10 available houses that might interest you. The first is a nice 3.8 star rated house at 100 Greenwich Street.
+user: Please get me the phone number for this place.
+assistant: The contact number is +1 917-409-0800.
+user: I really like the house. Now, could you search for buses going there?
+assistant: What's your travel date? You can say March 5th, or March 11th, or another date.
+user: I intend to leave on the 4th.
+assistant: What is your origin city?
+user: My origin city is Washington.
+tool(FindBus): ok n_results=7
+assistant: I found a $36 bus leaving at 6:20 am.
+user: That's a bit early. Please find me something else.
+assistant: Sure, no problem. Will the $39 bus leaving at 12:10 pm work?
+user: That works for me. Now, please buy me one ticket to the event you found earlier.
+assistant: Sure, no problem. Let me see if I got everything correctly: You'd like to reserve 1 ticket for the Abbi Jacobson event taking place in New York on March 11th.
+user: That is correct. Check for the cost of a ticket, and the event venue.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Have a blast over there! The location is 1395 Lexington Avenue, and a ticket costs $60.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Goodbye, and have a wonderful day!

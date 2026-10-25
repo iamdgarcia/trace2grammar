@@ -1,0 +1,19 @@
+user: Can you please search pop songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. What about Acapella by Karmin off of the album Pulses?
+user: What year did it come out?
+assistant: The song is from 2013.
+user: Yes, that is the one.
+assistant: Would you like to play this song?
+user: Maybe later. Are there some good scary movies online that I could watch?
+tool(FindMovies): ok n_results=6
+assistant: Would you like 47 Meters Down: Uncaged, In Fabric or Midsommar?
+user: Fabric sounds great.
+assistant: What else can I help you with?
+user: Can you please play the song you just found?
+assistant: Please confirm the following details: playing the song Acapella in the Living Room.
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music
+user: Thank you, that is all I need.
+assistant: Okay, have a great day.

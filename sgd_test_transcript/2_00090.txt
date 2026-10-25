@@ -1,0 +1,18 @@
+user: I wonder if you can help me find something interesting to do?
+assistant: Is there a particular category you prefer? This might be Music or Theater or anything else.
+user: I really enjoy Theater.
+assistant: Is there a specific city you want me to search in?
+user: I want to find something around SD.
+tool(FindEvents): ok n_results=10
+assistant: About Time is a popular event happening at Talent to aMuse Theatre Co on March 9th at 4 pm.
+user: What is the cost of one ticket?
+assistant: The price of the ticket is $40.
+user: Where will the event happen?
+assistant: The venue for the event is 3919 Normal Street.
+user: That sounds fine. I would like to reserve 3 tickets for this event.
+assistant: Confirm these details: Booking 3 tickets for About Time on March 9th in San Diego.
+user: Yes, that is good for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed. I hope you have a great time!
+user: Thanks very much for your help. That was all I wanted.
+assistant: Have a wonderful day.

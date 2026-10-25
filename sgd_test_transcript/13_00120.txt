@@ -1,0 +1,19 @@
+user: I need to spend my time wisely and relax. Will you find me some movies online?
+assistant: what type of movies do you like?
+user: I like action movies.
+tool(FindMovies): ok n_results=5
+assistant: What about movie Angel Has Fallen, Hobbs and SHaw or Mission Mangal?
+user: The Indian Mars Movie is nice. I like to watch the movie now. Will you play that movie with French Subtitles?
+assistant: Ok Please confirm the following details . Playing Mission Mangal with subtitles in French
+user: No, I need to play it with English Subtitles.
+assistant: Please confirm the following details . Playing Mission Mangal with subtitles in English
+user: Ok thats Great.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing
+user: Who acted in that movie?
+assistant: The actor name is Mohan Kapoor.
+user: THanks a lot. How is the weather on Wednesday next week in Dublin?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 92 degrees Fahrenheit. There is a 7 percent chance of rain.
+user: Ok sure. That all i need. bye for now
+assistant: take care . Have a wonderful day

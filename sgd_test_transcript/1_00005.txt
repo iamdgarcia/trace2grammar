@@ -1,0 +1,11 @@
+user: I need to book a table at a restaurant.
+assistant: At which time would you like to reserve it for?
+user: I want it at 1:15 in the afternoon, please.
+assistant: In which location would you like it? What is the restaurant name?
+user: I need a table at Saap Ver, in San Francisco.
+assistant: Please confirm the following information: Book a table at Saap Ver, in San Francisco at 1:15 PM on the day of March 1st. This is for a party of 2, correct?
+user: Yes, that is everything. Address?
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry, but the reservation could not be placed. Is there anything else to help with?
+user: No, but thanks.
+assistant: Of course. Have a wonderful day.

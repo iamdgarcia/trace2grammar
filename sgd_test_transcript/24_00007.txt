@@ -1,0 +1,31 @@
+user: Hi, could you get me some Premium Economy class one way flights please?
+assistant: What date will you be departing and where are you heading to?
+user: I will be flying to Washington on the 2nd of this month.
+assistant: And where will you be departing from?
+user: Likely from Chicago.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: There are 2 flights you might like, how about an American Airlines flight departing at 8:35 pm costing $181?
+user: Is this for two people?
+assistant: No, it is only for 1.
+user: And when does the flight arrive at the destination>
+assistant: Your flight will arrive at 11:33 pm.
+user: I see, could you find trains heading there too?
+assistant: And will you be heading there on March 2nd?
+user: No, I will be going over next Wednesday.
+tool(FindTrains): ok n_results=6
+assistant: How about a train departing at 6:20 am costing $119?
+user: That sounds great!
+assistant: Would you like me to make a reservation for you?
+user: Yes please, could you get me one ticket with trip insurance, regardless of the fare class?
+assistant: Please confirm your purchase of 1 value ticket from Chicago to Washington, departing on March 6th at 6:20 am with trip insurance.
+user: Sorry, could you get me flexible tickets instead?
+assistant: Sure, please confirm your purchase for flexible tickets to Washington.
+user: That is fine with me. Which station am I departing from?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your reservation has been made, and you will depart from Chicago Union Station.
+user: I see, and where will I arrive at?
+assistant: You will arrive at Union Station.
+user: I see, thank you for your kind assistance.
+assistant: Do you need further help then?
+user: No, that is all I need. Thank you!
+assistant: No worries, have a pleasant day ahead.

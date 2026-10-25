@@ -1,0 +1,17 @@
+user: I have a specific request about an action movie for you. it must have been directed by david leitch and ryan reynolds must be in it
+tool(FindMovies): ok n_results=1
+assistant: there's one movie answering to your request and it's hobbs and shaw, rating is 67 out on 100
+user: cool, let's switch to music now
+tool(LookupMusic): ok n_results=10
+assistant: my research showed me 10 songs good for you. do you like the song scuse me by lizzo? it's taken from the album coconut oil
+user: do you know the release year? can you tell me the genre?
+assistant: sure thing, it's pop music from the year 2016
+user: how nice
+assistant: I can play it now if you wish so
+user: that would be lovely
+assistant: confirm the procedure then, I'll play the song scuse me in living room
+user: yup
+tool(PlayMedia): ok n_results=1
+assistant: I hope you'll love the tune
+user: you're very considerate, bye
+assistant: enjoy the rest of your day

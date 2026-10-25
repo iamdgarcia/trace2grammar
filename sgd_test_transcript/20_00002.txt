@@ -1,0 +1,21 @@
+user: I need a hand to book a hotel room
+assistant: sure, where do you want me to look?
+user: look in chicago for a hotel where I am allowed to smoke
+tool(SearchHotel): ok n_results=10
+assistant: surprisingly, there are 10 available options. I think acme hotel company would be great for you, it's a 3 star hotel.
+user: I like your pick. now let's do something different, let's rent a hatchback from the 2nd of this month until next monday
+assistant: at what time do you want to pick it up?
+user: 11 am please
+tool(GetCarsAvailable): ok n_results=5
+assistant: you got 5 cars to chose from. you can drive if you want, a hatchback fiat panda available at o'hare international airport
+user: I can't wait, let me have this one
+assistant: you can add insurance if you like
+user: yes, I think it's a good idea
+assistant: confirm the procedure. you are about to rent a hatchback from o'hare international airport from march 2nd at 11 am until march 4th. you also want to purchase insurance
+user: yes, can you tell me the cost of the rental for a day?
+tool(ReserveCar): ok n_results=1
+assistant: it's $42.00 per day and I can confirm you that the car is yours.
+user: I can't wait to try it!
+assistant: I see. do you want me to do something else?
+user: no, I'm fine
+assistant: enjoy your day

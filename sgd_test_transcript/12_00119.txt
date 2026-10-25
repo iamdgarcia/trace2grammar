@@ -1,0 +1,27 @@
+user: Can you find me some interesting things to do around Chicago? I really like Theater.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events that you might like. How about Ada And The Engine? It is taking place on March 3rd at 5:30 pm at The Artistic Home. It is very popular.
+user: How much does a ticket cost? What is the address?
+assistant: Tickets cost $55. The address is 1376 West Grand Avenue #7761.
+user: That sounds great.
+assistant: Do you need anything else today?
+user: Yes. I need to request a payment.
+assistant: For what amount?
+user: For two dollars.
+assistant: What's the contact's name?
+user: I want to make a private transfer to Isabella.
+assistant: Confirming that you want to make a private transaction to Isabella in the amount of $2?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request was made successfully.
+user: I want to buy three tickets to that event that you found.
+assistant: Confirming that you want to purchase 3 tickets for Ada And The Engine taking place on March 3rd in Chicago?
+user: No, I want two dollars tickets.
+assistant: Confirming that you want $2 tickets for the event taking place in Chicago?
+user: Yes, that will work.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is successful. Have a great time!
+user: Thanks for your help.
+assistant: Is there anything else?
+user: No, thank you for your help.
+assistant: You're welcome. Have a great day!

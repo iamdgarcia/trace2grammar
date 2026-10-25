@@ -1,0 +1,28 @@
+user: Find for me something interesting to do.
+assistant: In what city to you prefer to be?
+user: Around Seattle, Wa will be great.
+assistant: In what category you want to be? Music or Theater or something else?
+user: I enjoy Stage show.
+tool(FindEvents): ok n_results=10
+assistant: I have for you 10 events that you may like,A very popular option is Beatleconcert at 12th Avenue Arts on March 10th at 5 pm.
+user: Great.Find me a house there with laundry service and rating minimum 4.3 for one people.
+tool(SearchHouse): ok n_results=10
+assistant: With rating 4.3 is a nice house located at 1000 1st Avenue.
+user: Tell me their phone number.
+assistant: +1 206-957-1000 is their phone number.
+user: I like this house.
+assistant: You want to make an reservation?
+user: No.I don't want for now.
+assistant: With something else I can help now?
+user: Find me a bus for 2 people from Portland.
+assistant: On what date you want to leave on March 5th, March 10th os in another day?
+user: In the 3rd I plan to leave.
+tool(FindBus): ok n_results=10
+assistant: What do you think about one that depart at 7 am and cost $30?
+user: Good.Purchase for me tickets at the event that you have found.
+assistant: Book 2 tickets for Beatleconcert in Seattle on March 10th.I'm right?
+user: Yes is very good.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is done.Have fun!
+user: Thank you.That's all.
+assistant: Have a good day!

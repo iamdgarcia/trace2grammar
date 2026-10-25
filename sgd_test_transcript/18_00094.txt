@@ -1,0 +1,31 @@
+user: Will you find me some hotels?
+assistant: What is your desired city?
+user: I would like to find out about hotels in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: I was able to find 10 hotels that meet your specifications. There is a 5 star hotel with the name of 45 Park Lane.
+user: Is the room non-smoking? What's the nightly cost?
+assistant: The property doesn't allow smoking and it will be a nightly cost of $375.
+user: Can you see if there are other similar hotels I may like?
+assistant: I found a 3 star hotel that is named Abbey Court Hotel (Hyde Park).
+user: Do you know if there are more hotels that would meet my needs?
+assistant: There's a 1 star hotel and has a name of Abercorn House.
+user: Well, that will work fine for me.
+assistant: Do you want me to book a room for you?
+user: Perhaps some other time. Can you tell me about the weather on March 7th?
+tool(GetWeather): ok n_results=1
+assistant: There could be rain with a 27 percent chance and the average temperature is 71 degrees Fahrenheit.
+user: Okay, I got it. Will you go ahead and reserve a room for me at the hotel you suggested.
+assistant: What is the amount of your stay?
+user: I will need the room for five days.
+assistant: Will you be checking in on March 7th?
+user: I would like to check in on the 1st.
+assistant: You want 1 room at the Abercorn House in London for 5 days and will check in on March 1st. Are all the details correct?
+user: Not quite, I want to check in on Tuesday next week.
+assistant: You will be checking in on March 5th and stay for 5 days. Is that right?
+user: Yes, it's all good.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been booked with no issues.
+user: Can you tell me their address and give me their phone number?
+assistant: You can call them at +44 20 8563 8692 and their address is 28-30 Bute Gardens.
+user: You have been so much help for me and I appreciate it, but that's all I need for the time.
+assistant: Goodbye, and enjoy this beautiful day.

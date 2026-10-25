@@ -1,0 +1,20 @@
+user: I am new in San Francisco. I need to find some attractions to visit that are also kid-friendly. I am not particular about the attraction type.
+tool(FindAttractions): ok n_results=10
+assistant: I recommend that you visit this Historical Landmark called Alcatraz.
+user: Alright. Sounds good. I am also thinking of watching a movie in that area.
+tool(FindMovies): ok n_results=10
+assistant: I can list you 10 movies. What do you think of Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: I like the sound of Brittany Runs a Marathon
+assistant: Shall I book you the tickets?
+user: Not really. Do you have any good movies online that are Fantasy based? I am a fan of Sean Astin.
+tool(FindMovies): ok n_results=1
+assistant: I can suggest you The Lord of the Rings: The Return of the King.
+user: Oh I would love The Lord of the Rings.
+assistant: Shall I play you the movie?
+user: Yeah good ahead and play the movie.
+assistant: So you confirm that you want The Lord of the Rings: The Return of the King played with English subs?
+user: Yeah do that.
+tool(PlayMovie): ok n_results=1
+assistant: I am playing the movie.
+user: Thank you. That will do.
+assistant: I wish you a wonderful day.

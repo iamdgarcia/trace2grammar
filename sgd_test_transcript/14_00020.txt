@@ -1,0 +1,17 @@
+user: Find me some Dramatic story movies online.
+tool(FindMovies): ok n_results=10
+assistant: How about A Faithful Man, After The Wedding, or Blinded by the Light?
+user: A Faithful Man would be great. I'd like to watch that movie now.
+assistant: Can you confirm the following: you want me to play A Faithful Man with subtitles in English?
+user: No. Play it with Hindi subtitles.
+assistant: I am playing A Faithful Man with Hindi subtitles, is this correct?
+user: Yes, please. Who starred in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Dali Benssalah is one of the stars of this film. I have started playing your movie.
+user: Thanks. Can you get me the weather for Discovery Bay for 3rd of March 3rd?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 71 degrees Fahrenheit. There is a 26 percent chance of rain.
+user: Okay, thank you.
+assistant: Is there anything else that you'd like?
+user: No. Thanks a lot!
+assistant: You're welcome!

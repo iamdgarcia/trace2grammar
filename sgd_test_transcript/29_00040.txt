@@ -1,0 +1,33 @@
+user: I need to find a hotel.
+assistant: In what city?
+user: London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including 45 Park Lane. It is a 5 star hotel.
+user: Is there smoking rooms? What is the phone number?
+assistant: No smoking is permitted on the property. The phone number is +44 20 7493 4545.
+user: I would like a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel called Abbey Court Hotel (Hyde Park).
+user: That will be good.
+assistant: Are you ready to make your reservation?
+user: Not now. I want to find a flight on American Airlines in economy on the 2nd of this month.
+assistant: What day are you returning?
+user: 12th of this month.
+assistant: Where are you leaving from?
+user: Washington.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: American Airlines has a flight that leaves at 4:30 pm. The returning flight leaves at 12:45 pm. The ticket price is $590.
+user: Great! Please make a reservation at the hotel.
+assistant: Are you checking in on March 2nd? How long are you staying?
+user: I am arriving on the 4th of this month and staying for four days.
+assistant: Please confirm, 1 room staying at Abbey Court Hotel (Hyde Park) in London beginning on March 4th for 4 days.
+user: No, I need 2 rooms.
+assistant: Please confirm, 2 rooms at Abbey Court Hotel (Hyde Park).
+user: Thanks! What is the price per night? What is the address?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is complete. The cost per night is $324. The address is Sussex Gardens.
+user: Can you find me some things to do there?
+tool(FindAttractions): ok n_results=10
+assistant: 30 St Mary Axe (The Gherkin) is a cool historical landmark.
+user: Ok, that is all.
+assistant: Have a nice trip.

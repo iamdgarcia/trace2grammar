@@ -1,0 +1,12 @@
+user: Can you find me some child-friendly Museum that does not have an entry fee?
+assistant: Where should I search?
+user: Search in SD.
+tool(FindAttractions): ok n_results=5
+assistant: I found 5 attractions. You shoudl visit the Fleet Science Center Museum?
+user: Can you give me their phone number?
+assistant: The phone number is 619-238-1233.
+user: Cool. Can you find me attractions in London.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. You should visit the BODY WORLDS London Museum.
+user: That's great. That's all I needed.
+assistant: Enjoy your day.

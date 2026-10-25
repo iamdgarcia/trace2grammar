@@ -1,0 +1,26 @@
+user: Show me the weather of Mexico City on March 13th.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature through the day is 91 degrees Fahrenheit with 8 percent chance of rain.
+user: Can you check for the wind speed?
+assistant: The expected average wind speed is 6 mph.
+user: Okay, That sounds good.
+assistant: Is there anything else I can help you with?
+user: I would like to book one-way flight going there.
+assistant: What will be your city of departure and is your date of departure March 13th?
+user: I will be leaving from Seattle on 1st of this month.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: How about an American Airlines flight, whose onward flight takes of at 4:15 pm with the ticket price of $266?
+user: Is the price for economy class or business class?
+assistant: The price is for Economy class seat.
+user: That sounds good to me. Now, Can you find me a rental car for rent from 10th of this month till March 14th?
+assistant: What will be time for pickup?
+user: I would like to pick it up at quarter past 12 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a nice SUV Citroen C5 available for pick up at Benito Juarez International Airport?
+user: Can you find me the cost per day?
+assistant: The cost per day is $35.00.
+user: Can you show me any other Sedan car for pick up at 11:30 am?
+tool(GetCarsAvailable): ok n_results=6
+assistant: How about a nice Sedan Dodge Charger available for pick up at Benito Juarez International Airport?
+user: That sounds nice to me. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

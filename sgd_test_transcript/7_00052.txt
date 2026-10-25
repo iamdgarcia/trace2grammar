@@ -1,0 +1,20 @@
+user: i am now residing in a lodge. I need to shift to a home. Will you find me a place to live?
+assistant: How many baths do you want? How many bed rooms do you like to have and whether it should be a rent home or to buy?
+user: i want to find a place to rent and it should have 2 bath and 3 bed rooms.
+assistant: In which area i need to search for?
+user: I need a property in Santa Rosa
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 1 property Coddingtown Mall APartments which is a good one. it is located at 2001 Range avenue and it costs $4,000
+user: Whether that house consists of Laundry machine?
+assistant: It doesn't have laundry machines inside the house.
+user: ok it sounds good.
+assistant: Whether i need to schedule a visit to that property?
+user: Yes, Please fix a schedule to that house and i will visit on 11th of this month.
+assistant: Please check and confirm the following details. Visit has been scheduled to Coddingtown Mall Apartments and the date of the visit to the property on March 11th
+user: Yes, that's correct. Please confirm it. Whether it consists of Garage and what is the property's phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: your visit to the property is scheduled. The Property's phone number is 707-578-1150. it doesn't have a garage.
+user: Thanks a lot.
+assistant: Whether i need to do anything else?
+user: No, thanks .not for now.
+assistant: Have a wonderful day

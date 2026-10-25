@@ -1,0 +1,18 @@
+user: I'm looking for a house to stay in.
+assistant: What city should the house be in?
+user: It should be in New York City.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice 4.4 rated house at 100 Greenwich Street.
+user: What's their phone number?
+assistant: You can call them at +1 917-409-0800.
+user: What else is there?
+assistant: There's a nice 4.2 rated house at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA.
+user: That sounds excellent. Please book that house for me.
+assistant: When do you want your check in and check out and how large is your group?
+user: Check in will be on the 4th and check out on March 6th. There are 4 people in total.
+assistant: I'll book you the house in New York for 4 people with a check in March 4th and check out March 6th, is that all correct?
+user: Yeah, you got everything.
+tool(BookHouse): ok n_results=1
+assistant: I've booked the house for you.
+user: Thanks so much for the help. I don't need anything else.
+assistant: I've enjoyed helping you, take care.

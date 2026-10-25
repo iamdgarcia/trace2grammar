@@ -1,0 +1,17 @@
+user: Would you help me search for a bus?
+assistant: Where will you be going and when are you leaving and where from?
+user: I would like to go to LAX. I am planning to leave the 2nd of this month from Long Beach.
+tool(FindBus): ok n_results=10
+assistant: I have 10 buses for you. What about the one leaving at 6 am costing $12.
+user: That sounds great. I would like to buy bus tickets for one person.
+assistant: Please confirm details for a ticket on the bus leaving from Long Beach to Los Angeles leaving March 2nd at 6 am for 1 person not having extra luggage.
+user: Yes, that is good. Will it be a direct bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed as a direct bus.
+user: What station will it depart from and at which station will it arrive?
+assistant: It will arrive at North Hollywood Station departing from Downtown Station.
+user: Thanks for your help. Will you look for hotels in the area as well because I need one room.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 matching hotels with one called Ac Hotel By Marriott Beverly Hills which is 3 stars.
+user: That sounds good and is all for now.
+assistant: Bye, and have a nice day!

@@ -1,0 +1,38 @@
+user: Could you look a therapist in Oakland for my sake?
+assistant: What type of therapist do you require?
+user: I require a psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I discovered 10 therapists that may be acceptable. You ought to try Alameda Children's Specialized, a psychologist based in Oakland.
+user: That's fine with me.
+assistant: Would you like to schedule a reservation with the therapist?
+user: Yeah, I'd like to schedule a reservation.
+assistant: What day do you wish to have the reservation on, and at what time?
+user: The reservation time ought to be evening 5:30. Could you make the reservation for the 13th of this month?
+assistant: Please verify the following information: scheduling a reservation with Alameda Children's Specialized on March 13th, 5:30 pm.
+user: Yeah, that's fine with me. What is their contact number and location?
+tool(BookAppointment): ok n_results=1
+assistant: Their location is 7200 Bancroft Ave # 125C, and their phone number is 510-383-5100. I apologize, but something went wrong and I could not make the reservation. You ought to try Alameda Children's Specialized for a reservation on March 13th, 5 pm.
+user: Yeah, that's fine with me.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation is complete, and you ought to receive an email verification shortly.
+user: thank you for your help! I recall that I must request a payment.
+assistant: Who is the recipient?
+user: The recipient for the transaction is diego.
+assistant: How much is it for?
+user: The transaction is 40 dollars.
+assistant: Please verify the following information: you are make a $40 transaction with Diego that will be publicly visible.
+user: Yeah, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment query was completed.
+user: Thank you for your help! I'd like to look for a diner there for a meal on that date.
+assistant: What type of cuisine are you searching for?
+user: Get me one that offers Chinese.
+tool(FindRestaurants): ok n_results=7
+assistant: There's a lovely diner called Becky's in Oakland.
+user: Yeah, that's perfect. I'm searching to reserve a spot at a diner at 12:45 pm for two people.
+assistant: Please verify the following information: reserve a spot at Becky's on March 13th, 12:45 pm, for 2 people in Oakland.
+user: Yeah, that's fine with me. What is the diner's review rating, and what is its cost?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete. The review rating is near 4.3, and it is a cheap diner.
+user: Thank you for your help; that is all.
+assistant: Have a pleasant afternoon.

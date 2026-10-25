@@ -1,0 +1,28 @@
+user: I would like to search for flight information for a round trip I'm taking soon
+assistant: What is your destination and return date?
+user: I need to go to Seattle, WA and I plan to come back on Wednesday next week
+assistant: And do you have a departure date?
+user: Sure. I would like to leave later today
+assistant: And what is the departure city?
+user: I am leaving from Chicago
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There is an American Airlines outbound flight leaving at 7 pm and flying non-stop, with a return flight that leaves at 5 am. The fare for this flight is $283.
+user: Are there other choices?
+assistant: Sure. There is a Delta Airlines flight departing at 5:50 am and coming back at 4:25 am. The price of this flight is $382.
+user: Can you tell me if the ticket is economy or business class, as well as the number of persons included?
+assistant: This is for an Economy class ticket for 1 passenger.
+user: Are there more options?
+assistant: Yes. Southwest Airlines has a non-stop flight departing at 6:40 am and coming back at 3:10 pm. The fare for this flight is $263.
+user: Great. Can you also look for housing options there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 places that you may be interested in. One is a house that has a 4.5 star rating and is located at 1000 1st Avenue.
+user: Perfect. That works for me. I'd like reserve this option beginning Saturday this week and checking out Wednesday next week for 1 person.
+assistant: Okay then. You want to make a reservation for the Seattle location, checking in on March 2nd and leaving March 6th, for 1 person, correct?
+user: Perfect. That works for me
+tool(BookHouse): ok n_results=1
+assistant: Your accommodations have been confirmed.
+user: Excellent. Thanks so much. What about attractions in the area. Can you search for some free options?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 tourist attractions that you might like. One is Bill Speidel's Underground Tour which is considered a Tourist Attraction.
+user: That's sounds good. That's everything at the moment. Thanks again.
+assistant: Have a nice day.

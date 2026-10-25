@@ -1,0 +1,21 @@
+user: I'd like to watch a movie. What do you recommend?
+tool(FindMovies): ok n_results=10
+assistant: May I recommend The Farewell? It is very highly rated with an average user rating of 99 out of 100.
+user: That sounds good. Can you find me a restaurant in Campbell that serves Italian food? The price doesn't matter.
+tool(FindRestaurants): ok n_results=5
+assistant: There are 5 in Campbell that you may like. A Bellagio Italian Restaurant is very popular.
+user: Do they offer vegetarian selections? What's the contact number?
+assistant: You can reach them at 408-370-7705. They do not have vegetarian options.
+user: That's okay.
+assistant: Do you want to make a reservation?
+user: Yes, please make me a reservation.
+assistant: What time works best for you?
+user: I'd like something around evening 7.
+assistant: You'd like a table for 2 at A Bellagio Italian Restaurant in Campbell on March 1st at 7 pm. Is that correct?
+user: Yes, that's correct. Can you tell me what the restaurant is rated and if they have out door seating.
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a great rating of 4.5. They do offer outdoor seating. Your reservation has been confirmed.
+user: Great. Thank you.
+assistant: You're welcome. Is there anything else I can do for you?
+user: No, that will be all.
+assistant: Have a wonderful night.

@@ -1,0 +1,42 @@
+user: I need to set up reservations for my upcoming trip and really need your help to get this done with a minimal amount of stress. Would you help me find something fun to do during my trip, please?
+assistant: I'm ready to assist you. What's the city you want for your search?
+user: Search for some nice attraction in NY, please.
+assistant: Would you like to attend a particular kind of event?
+user: Well, Theater is my first choice.
+tool(FindEvents): ok n_results=10
+assistant: All right. There's a well-known attraction called Acting for Teens, occurring at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm. Does that interest you?
+user: Now, that's grabbing my attention.
+assistant: Would you like to get tickets for that event?
+user: Hmm, I'll need to check out some more information first? What do you show for buses heading that way?
+assistant: What is the bus depot you want for your departure?
+user: Well, I'd like to depart from Washington on the 4th of this month?
+tool(FindBus): ok n_results=7
+assistant: Would you like to catch a bus departing at 6:20 am, with a ticket price of $36?
+user: Oh, sorry, I need to change my departure date to the 2nd, and four seats would be needed.
+tool(FindBus): ok n_results=7
+assistant: Would catching a bus at 12:10 pm, with tickets costing $38 each work for you?
+user: Yep, that would be fine.
+assistant: Are you interested in purchasing the bus tickets now?
+user: Well, that's a good option, but I'd now like to check out round-trip flights, leaving on the 3rd of this month, flying Premium Economy, please?
+assistant: What is your preferred date for the flight to return?
+user: A return flight for the 8th of March would be great.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I'm showing 3 available flights, with American Airlines offering an outbound flight at 9:25 pm, returning at 6:20 am, for $231.
+user: I see, and what are the arrival times to and from my destination?
+assistant: Your destination arrival time is set for 10:35 pm and the arrival time for your return is set for 7:30 am.
+user: Very nice. Now, what about a nice three star hotel for when I get there?
+tool(SearchHotel): ok n_results=10
+assistant: Of the 10 hotel options I'm showing, the 11 Howard hotel is rated a 3 star hotel.
+user: Okay. Is that a smoking-permitted hotel, and what's their street location, please?
+assistant: Guests can smoke at this hotel, and 11 Howard Street is their street location.
+user: Great information.
+assistant: Do you want to set up a reservation at that hotel?
+user: Not now, thanks. Let's get those event tickets, first.
+assistant: All right. Are you ready to confirm a reservation for 4 persons to attend Acting for Teens in New York on March 4th?
+user: Yep, all's clear to go. and what's the per-ticket price?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation for the event is now all set, and the price for each ticket is $35.
+user: Wonderful, and what's the address there, again?
+assistant: The street address for the event is 520 8th Ave. - Personal Valet.
+user: Okay, a job well done, and so helpful you are. Really appreciate that.
+assistant: My pleasure. Enjoy your day.

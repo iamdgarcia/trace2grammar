@@ -1,0 +1,23 @@
+user: I have a journey, check one way flights are available
+assistant: Please give details of destination, date and place of departure?
+user: Going to Washington on 6th of this month from ATL.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Do you prefer American Airlines? It takes off at 2:55 pm and cost $110 and it is a direct flight.
+user: That will be fine. Are there trains going over there?
+assistant: You need it on March 6th?
+user: No, find one for the 11th.
+tool(FindTrains): ok n_results=6
+assistant: There is one departing at 1 pm with ticket fare $108
+user: That will be ok.
+assistant: Are you interested in booking tickets?
+user: Yea, get a reservation with trip insurance.
+assistant: How many persons travelling?
+user: book 1 seat.
+assistant: Please check, you need 1 ticket to Washington from Atlanta on the train leaving on march 11th at 1 pm, with trip insurance. The ticket is Value one.
+user: Right, tell me the name of arriving station and departure?
+tool(GetTrainTickets): ok n_results=1
+assistant: you got seats booked. It arrives at Union Station and leaves from Peachtree Station.
+user: Your service is awesome , thank you.
+assistant: My pleasure, any more service.
+user: No, thank you.
+assistant: have a memorable journey.

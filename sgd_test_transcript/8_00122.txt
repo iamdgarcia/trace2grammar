@@ -1,0 +1,20 @@
+user: Hey, can you find get a ticket for 2 seats on a train?
+assistant: Sure. Which locations would you like the train to depart from and arrive at, and when would you like to travel?
+user: I'm going to Seattle from Vancouver on the 7th.
+tool(FindTrains): ok n_results=9
+assistant: I've found 9 trains that meet your criteria. How about one that departs at 6:20 am and costs $101 in total?
+user: What else is available.
+assistant: There is also a train departing at 6:40 am that will cost $106 in total.
+user: That sounds better to me. Can you book the tickets for me?
+assistant: Certainly. Would you like travel insurance?
+user: Yes I would. Also I would like the value tickets.
+assistant: You would like 2 value tickets for a train from Vancouver to Seattle on March 7th at 6:40 am. Is that correct?
+user: No, I changed my mind. Make it a fully refundable ticket.
+assistant: You would like a flexible ticket on the train from Vancouver. Is that correct?
+user: Yes that is correct. Please buy the tickets.
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets have successfully been purchased.
+user: Great! Thank you.
+assistant: You're welcome. Will that be all?
+user: Yes that is all, i'll let you know if I need anything else.
+assistant: Okay, goodbye.

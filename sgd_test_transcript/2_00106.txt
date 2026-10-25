@@ -1,0 +1,11 @@
+user: Hello. Can you help me get two tickets for a one way flight from Los Angeles?
+assistant: Certainly. On which date would you like me to look for flights?
+user: Look on the 8th please.
+assistant: Where would you like to go?
+user: I need to get to Philadelphia.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: Would you like to fly with American Airlines? They have a connecting flight leaving at 12:05 pm, and the ticket costs $226.
+user: That will work for me.
+assistant: Okay. Will there be anything else you need?
+user: No, that's all for now. Thanks.
+assistant: You're welcome. Have a nice day.

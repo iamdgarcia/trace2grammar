@@ -1,0 +1,27 @@
+user: I have a few errands to run outside. Can you check what the weather is for March 10th?
+assistant: Sure, in what city?
+user: It's San Anselmo, and can you actually check it for the 13th of March instead?
+tool(GetWeather): ok n_results=1
+assistant: Sure, it looks like the average temperature will be 83 degrees Fahrenheit with a 2 percent chance of rain.
+user: Ok, and how windy and humid will it be?
+assistant: The average wind speed should be 1 mile per hour with a humidity of 16 percent.
+user: Great, thanks. Can you schedule a property visit for me that day at Capri Creek Apartments?
+assistant: Sure, to confirm, you want to schedule a visit at Capri Creek Apartments on March 13th, is that right?
+user: No, actually, change that to Cherry Creek Apartments.
+assistant: Ok. To confirm, you want to schedule a visit at Cherry Creek Apartments on March 13th, is that right?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Ok, your visit has been scheduled.
+user: Great, can you also reserve a car for me there?
+assistant: Sure, with insurance? Is this for March 13th and where do you want to pick it up?
+user: No insurance. I actually need it starting March 10th and would like to pick it up from 30th Street Station if available.
+assistant: Ok. What kind of car? Also, what time do you want to pick it up and when do you need it until?
+user: If possible, I'd like to pick up a Sedan around 4:45 in the evening and I need it until the 13th of March.
+assistant: Ok, to confirm, you'd like to book a Sedan to be picked up from 30th Street Station on March 10th at 4:45 pm, to be returned on March 13th, and no insurance. Is that right?
+user: Yes, that's right. What's the car brand?
+tool(ReserveCar): ok n_results=1
+assistant: I've made your reservation for a Volvo S90.
+user: Great, thanks for your help.
+assistant: Sure, anything else I can help with?
+user: No, that's all. Thanks.
+assistant: No problem, have a good day.

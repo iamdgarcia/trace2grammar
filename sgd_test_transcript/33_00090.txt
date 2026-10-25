@@ -1,0 +1,21 @@
+user: I've been thinking of some attractions to visit. Something without fees that is child-friendly. I think a Museum would be best. Can you assist me in finding one?
+assistant: What location do you wish for me to search in?
+user: I'm looking for Museums in the San Diego area.
+tool(FindAttractions): ok n_results=5
+assistant: There is a very interesting Museum called the Fleet Science Center. It is quite-well known.
+user: Cool. Can you provide me with their phone number?
+assistant: If you wish to contact them, their phone number is 619-238-1233.
+user: I'll call them in a bit. Thank you.
+assistant: What else can I assist you with today?
+user: I'll be needing somewhere to stay if I visit. It needs to accommodate one person and have a rating of 4.4 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses that meet your criteria in San Diego. It is located at 1003 Coast Boulevard, La Jolla, California 92037, United States. It has a rating of 4.4.
+user: That sounds like an amazing home. Find me a round trip flight to get to that location.
+assistant: What day will you be flying home?
+user: I'm looking to fly back on March 12th.
+assistant: From what city and what date will you be departing for your trip?
+user: I'm going to be leaving the day after tomorrow from Vegas.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Is Southwest Airlines okay? Their flight takes off at 8:15 pm with a return time of 5:35 am. The tickets will cost you $130.
+user: That sounds great. I think that's all I need for now. Thank you for your assistance today.
+assistant: You are welcome. Have a pleasant evening.

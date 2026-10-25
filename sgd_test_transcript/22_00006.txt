@@ -1,0 +1,39 @@
+user: I was wondering if You could find me something cool to do in New York on March 2nd. I've been wanting to see a Musical Performance so something like that might be nice.
+tool(FindEvents): ok n_results=10
+assistant: Abbi Jacobson is a popular event taking place at the Kaufmann Concert Hall on March 2nd at 6:30 pm. Would that interest you?
+user: Maybe. How much does a ticket cost?
+assistant: A single ticket costs $45.
+user: Sounds cool. I'll have to check it out. Can you find me some buses that are going there? I'm planning to leave later today and need 2 tickets.
+assistant: Where would you like to leave from?
+user: From Philadelphia, and make sure it's a direct bus please.
+tool(FindBus): ok n_results=6
+assistant: I've found 6 buses that meet your criteria. How about a bus that leaves at 9 am and costs $23?
+user: That would be great.
+assistant: Would you like to purchase tickets?
+user: No, I haven't ironed out the plans yet.
+assistant: Okay. Can I help you with something else then?
+user: Yes. Can you help me check out what a round trip flight to get there would be like?
+assistant: Would you like to leave on March 2nd, March 1st, or some other day? Also, on what date would you like to take the return flight?
+user: I would like to start the trip on March 2nd and return next Monday. See what kind of flights that comes up with.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I've found a flight with American Airlines that matches your criteria. The onward flight takes off at 1:20 pm, and the return flight takes off at 11:20 am. The ticket price is $106.
+user: Okay, interesting good to know.
+assistant: Is there anything else I can help you with?
+user: Yes. Find me some hotels in the area too.
+tool(SearchHotel): ok n_results=10
+assistant: There is a nice 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: What's their phone number?
+assistant: Their phone number is listed as +1 347-696-2500.
+user: What is the price per night of a room at the hotel?
+assistant: The price per night is $465.
+user: Okay. Good to know thank you.
+assistant: You're welcome. Would you like to make a reservation at the hotel?
+user: No, not right now. I would like to buy tickets to event from earlier though.
+assistant: You would like to purchase 2 tickets to Abbi Jacobson in New York on March 2nd. Is that correct?
+user: Yes that is correct. Can you tell me the venues location?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased without issue. The venues address is 1395 Lexington Avenue.
+user: Awesome. Thank you for your help.
+assistant: I'm always glad to help. Will that be all?
+user: Yes, for now. I'll talk to you later.
+assistant: Okay, good bye and have a great day.

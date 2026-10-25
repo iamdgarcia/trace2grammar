@@ -1,0 +1,20 @@
+user: I am looking for a house to stay in.
+assistant: What city are you going to?
+user: I'm going to SFO.
+tool(SearchHouse): ok n_results=10
+assistant: How about this house rated 4.0 tht is at 1095 Market Street?
+user: Is there a phone number for the house? Is there laundry service available?
+assistant: The phone number is +1 415-829-0000. Yes, there is laundry service.
+user: That sounds perfect.
+assistant: Do you want to make a reservation?
+user: Yes, book me the house.
+assistant: How many people are in the group and which day are you checking in?
+user: I want to check in on March 7th, and it's only for one.
+assistant: What day will you check out?
+user: I'll check out Friday next week.
+assistant: So, the house is in San Francisco and the reservtaion is for 1 person. You will check in on March 7th and check out on March 8th. Is this correct?
+user: Sounds good. How much is it in total?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been confirmed. It is $189 in total.
+user: Thank you for helping. That's all for now.
+assistant: I was happy to help. See you.

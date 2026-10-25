@@ -1,0 +1,20 @@
+user: I would like to find some songs at this time.
+tool(LookupMusic): ok n_results=10
+assistant: The album King of Everything has a song named Pisces by Jinjer. What about it?
+user: can you tell me some others?
+assistant: What is your opinion about the song Final Masquerade from the album The Hunting Party and singer Linkin Park.
+user: Can you tell me the music genre and if it was released in 2019?
+assistant: The song is Metal and was released in 2014.
+user: Okay, that's what I want.
+assistant: Do you want me to play the song?
+user: Please. Would you let it play on the kitchen device.
+assistant: Turn on the song Final Masquerade in the kitchen. Is that correct?
+user: No, go ahead and play it on the patio speaker.
+assistant: Turn the song Final Masquerade on in the patio. Is that right?
+user: Yes, you got it.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you like your music.
+user: Thanks, I hope so.
+assistant: Would you like my assistance with something else?
+user: No, that's all and thanks.
+assistant: Please have a great day.

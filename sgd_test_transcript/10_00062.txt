@@ -1,0 +1,14 @@
+user: Look for some online movies for me please.
+assistant: sure, just tell me what kind you like
+user: I'm into play movies
+tool(FindMovies): ok n_results=10
+assistant: I can tell you 10 titles. How do you feel about a faithful man, after the wedding or blinded by the light?
+user: a faithful man works for me
+assistant: I can play it now
+user: yes please
+assistant: confirm me the data I've acquired. You want to watch the movie a faithful man with english subtitles.
+user: yes, name me some actors from the movie.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is playing. There's bakary sangare in it.
+user: okay, leave me alone now.
+assistant: as you wish. bye

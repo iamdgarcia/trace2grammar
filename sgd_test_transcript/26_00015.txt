@@ -1,0 +1,30 @@
+user: I need a round trip flight to Chi-Town to return on the 11th of this month.
+assistant: On which date for travel?
+user: I would like to start on March 9th.
+assistant: To which city to depart from?
+user: I need flights from New York and need Economy class tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Would you like to fly with American Airlines? The onward flight will take off at 11:20 AM and has a layover. The return flight will take off at 5:05 AM and the ticket price is $216.
+user: When will the return flight arrive?
+assistant: The return flight will arrive at 8:24 AM.
+user: Okay, I need a house with at least 4.6 rating and with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house at 1118 North State Street with a rating of 4.6
+user: The house is great.
+assistant: Would you like to make a reservation?
+user: Yes, I need to book a house.
+assistant: How many people in your party and checking in on March 9th? Checking out on March 11th, or another date?
+user: Yes, that is great. I need to check out on March 10th with one person.
+assistant: So, location is Chicago with 1 person, check in on March 9th and check out on March 10th?
+user: Yes that sounds good. What's the price?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been booked and the total price is $112.
+user: Thanks for that, I need attractions now.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions such as 360 Chicago, a tourist attraction.
+user: Are there any other attractions?
+assistant: You should see Big Bus Tours Chicago (Tours begin at 98 E. Upper Wacker Dr.), a Tourist attraction.
+user: Is this place child-friendly and what is the number?
+assistant: Their phone number is 877-285-4796. It is suitable for children.
+user: Thanks for all that.
+assistant: Of course. Enjoy.

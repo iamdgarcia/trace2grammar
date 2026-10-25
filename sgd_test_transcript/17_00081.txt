@@ -1,0 +1,18 @@
+user: Could you find me a train please?
+assistant: Where are you wanting to go?
+user: I'd like to find business tickets for the 3rd to Anaheim, CA.
+assistant: Where are you leaving from?
+user: I'd like to find tickets from Sacramento, CA.
+tool(FindTrains): ok n_results=6
+assistant: How about a train leaving at 6:30 am? It costs $156.
+user: Where is it leaving from?
+assistant: The train will be leaving from Sacramento Valley Station.
+user: That would be great. I'd like to find a house to stay at there.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house with a 4.2 rating at 1050 West Ball Road.
+user: Are there other houses to choose from?
+assistant: There's a house with a 4.0 at 1057 West Ball Road.
+user: That would be great.
+assistant: Would you like to reserve the house?
+user: No, I don't want to right now. That's all for now.
+assistant: I'm glad I could be of help. Have a great day!

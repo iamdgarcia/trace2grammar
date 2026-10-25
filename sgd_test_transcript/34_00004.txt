@@ -1,0 +1,23 @@
+user: I am interested in finding a hotel.
+assistant: Can you tell me the city where I should search for hotels?
+user: The hotel I am looking for should be in Anaheim, CA.
+tool(SearchHotel): ok n_results=10
+assistant: I have found a nice 2 star hotel which is called Alamo Inn & Suites.
+user: Can you tell me the price per night this hotel has?
+assistant: If you stay at this hotel, it will cost you $52 per night.
+user: Can you give me the address of this hotel, and the phone number I can use to call them?
+assistant: If you want to get in touch with them you can at +1 714-635-8070, and the hotel can be found at 1140 West Katella Avenue.
+user: That seems nice. Can you tell me about some attractions there which have no entry fee, and more specifically I would enjoy Tourist Attraction.
+tool(FindAttractions): ok n_results=4
+assistant: There are 4 attractions which match what you want, with one of them being Cars Land which is a Tourist Attraction.
+user: Alright, nice. Now I want to make a booking for the hotel you found earlier.
+assistant: Can you tell me the duration of your stay there?
+user: I will need to be in the hotel for 5 days.
+assistant: Can you also please tell me when you are going to go at the hotel?
+user: I have it planned to go there on 9th of March.
+assistant: Can you please confirm that you want to book 1 room for 5 days at the Alamo Inn & Suites hotel in Anaheim, and that you will go there on March 9th?
+user: Yes, that is quite good.
+tool(ReserveHotel): ok n_results=1
+assistant: Your requested booking for the hotel has been made.
+user: I appreciate it very much, you have helped me a lot. That's all I need for now.
+assistant: Goodbye, and I wish you a wonderful day!

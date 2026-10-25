@@ -1,0 +1,13 @@
+user: Can you locate a train for me?
+assistant: What is your destination city and where are you leaving from?
+user: I would like tickets leaving out of Sacramento and going to SD.
+assistant: What is the date that you would like to travel?
+user: Find me tickets for the 5th of March.
+tool(FindTrains): ok n_results=10
+assistant: I have found a train that leaves at 6:30 am and the total price is $154.
+user: That sounds very good.
+assistant: Would you like me to book the tickets for you?
+user: No, I'm not wanting to book the tickets at the moment.
+assistant: Is there any other thing I can assist you with?
+user: No, this has been very helpful, I appreciate it.
+assistant: See you again another time.

@@ -1,0 +1,32 @@
+user: I need a 2 star hotel in NY.
+tool(SearchHotel): ok n_results=10
+assistant: The Bklyn House Hotel is a 2 star hotel.
+user: Anything else? I need 2 rooms in a 5 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels like 1 Hotel Brooklyn Bridge. It is a 5 star hotel.
+user: Anything else in London?
+tool(SearchHotel): ok n_results=10
+assistant: I found another 10 hotels, like 45 Park Lane. It is a 5 star hotel.
+user: What is the phone number? What is the cost per night?
+assistant: The phone number is +44 20 7493 4545. The cost is $375 a night.
+user: Sounds perfect.
+assistant: Are you ready to make a reservation.
+user: Not now.
+assistant: Do you need anything else?
+user: What is the weather there?
+tool(GetWeather): ok n_results=1
+assistant: The average is 81 degrees with a 23 percent chance of rain.
+user: What is the humidity expected to be?
+assistant: The humidity is going to be around 35 percent.
+user: Ok, what about on the 13th of March.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 94 degrees with a 25 percent chance of rain.
+user: Ok, Please reserve me the hotel you found beginning on next Monday.
+assistant: How long are you staying?
+user: Seven days.
+assistant: Please confirm, 2 rooms for 7 days beginning on March 4th at 45 Park Lane in London.
+user: Sure, that is great.
+tool(ReserveHotel): ok n_results=1
+assistant: Hotel is reserved.
+user: Thanks, that is all for now.
+assistant: Have a nice day,

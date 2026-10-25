@@ -1,0 +1,12 @@
+user: I need help finding a train.
+assistant: No problem! What city are you traveling to? What city are you departing from?
+user: I'm leaving from Fresno, CA, and I'm traveling to San Diego.
+assistant: Great! What date would you like to leave?
+user: Actually, I need to depart from Anaheim. Can I get tickets leaving on the 9th of this month?
+tool(FindTrains): ok n_results=7
+assistant: No problem! There's a train leaving at 6:30 am that costs $48. How does that sound?
+user: That's great! Now I need to find a house to stay in. It must have laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: Can do! I recommend a house located at 1003 Coast Boulevard, La Jolla, California 92037, United States. It has a rating of 4.6.
+user: That's great! That's all I need.
+assistant: Bye!

@@ -1,0 +1,36 @@
+user: Can you find me a nice salon in Alameda?
+tool(FindProvider): ok n_results=8
+assistant: There are 8 salons you may like. How about a nice salon called Al'S Barber Shop located in Alameda?
+user: Are there any other salons you can suggest?
+assistant: How about a nice salon called Great Clips Shop located in Alameda?
+user: Find me their address.
+assistant: The street address of the salon is 2221 South Shore Center.
+user: Can you check whether the salon is Unisex?
+assistant: Yes, It is an unisex salon.
+user: Okay. That sounds nice to me.
+assistant: Would you like me to book an appointment with them?
+user: No. Not now. Can you please share the location with Alice?
+assistant: Please confirm: You want me to share the location 2221 South Shore Center with Alice.
+user: Yes, That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been successfully shared.
+user: I would like to see my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: I found an alarm for 10:30 am with the name Catch Bus.
+user: Okay, That sounds good.
+assistant: Would you like me to add an alarm?
+user: Yes, Please add an alarm.
+assistant: What time do you want me to add the alarm for?
+user: I would like to add an alarm for quarter to 5 in the evening.
+assistant: Please confirm: You want me to add an alarm at 4:45 pm with the name New alarm.
+user: No, Change the time to 3:15 in the afternoon and the name to Leave for home.
+assistant: Please confirm: You want me to add an alarm at 3:15 pm with the name Leave for home.
+user: No, Change the name to Music practice.
+assistant: Please confirm: You want me to add an alarm at 3:15 pm with the name Music practice.
+user: Yes, That works for me.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been added successfully.
+user: Thank you so much!
+assistant: Can I assist you with anything else?
+user: No. That will be all. Thank you so much!
+assistant: I am glad I could help. Have a nice day!

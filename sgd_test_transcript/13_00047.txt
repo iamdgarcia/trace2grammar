@@ -1,0 +1,19 @@
+user: I want to do something interesting in San Diego, like a musical performance, or something on the 8th of this month.
+tool(FindEvents): ok n_results=10
+assistant: There is 10 events you may like that match your description, how about Angel Olsen taking place in The Observatory North Park at 5 pm on March 8th?
+user: What is the address of this event, and how much does one ticket cost?
+assistant: Tickets cost $25, and the event is located at 2891 University Avenue.
+user: Sounds great, thanks for the information.
+assistant: Would you like to purchase tickets now for the event?
+user: Not right now, perhaps some other time.
+assistant: Understandable, can I help you with anything else?
+user: Is there a hotel you can find in that area?
+tool(SearchHotel): ok n_results=10
+assistant: 10 hotels were found, how about Bahia Resort hotel, it is rated 3 stars.
+user: Great, also please purchase 2 tickets to the event.
+assistant: You wish to purchase 2 tickets to Angel Olsen playing in San Diego on March 8th correct?
+user: That is all correct, please make the purchase.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made, hope you enjoy the event!
+user: I appreciate all you help today, that is all I needed.
+assistant: Your very welcome, have a great day.

@@ -1,0 +1,30 @@
+user: Help me look for a salon.
+assistant: What city do you want to look in?
+user: Let's look in Sonoma.
+tool(FindProvider): ok n_results=3
+assistant: There's a nice salon in Sonoma called C C Beauty Salon.
+user: Can you tell me their average rating and phone number.
+assistant: There have a 4.4 average rating and you can call them at 707-935-8329.
+user: That sounds like a good spot.
+assistant: Do you want me to make an appointment?
+user: Not right now. I do want to look for Animation movies that are playing near there.
+tool(FindMovies): ok n_results=1
+assistant: What do you think of Toy Story 4?
+user: I would love to see Toy Story 4. When is it showing at Sonoma Cinema? Any kind of showing is fine.
+assistant: Is this for March 2nd?
+user: Yes, it is.
+tool(GetTimesForMovie): ok n_results=1
+assistant: At Sonoma Cinema it's showing at 4:30 pm.
+user: And where's the theater located?
+assistant: It is located at 200 Siesta Way #4451.
+user: And what's the price of a ticket?
+assistant: A ticket is $11.
+user: Alright, nice. Now can you book me an appointment for 12:45 in the afternoon at the salon you recommended earlier.
+assistant: I'll book you an appointment at C C Beauty Salon for March 2nd at 12:45 pm. Is that correct?
+user: Yes, that would be great. Is the salon unisex, and what's their address?
+tool(BookAppointment): ok n_results=1
+assistant: I've made the appointment. The salon is not unisex. The address is 18615 California 12.
+user: Thanks a lot.
+assistant: Do you need any additional help?
+user: No, thanks for the help.
+assistant: Have a great day.

@@ -1,0 +1,25 @@
+user: Could you check the weather in Delhi India on the 11th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temp will be 103 degrees with a 7 % chance of rain.
+user: Great, could I visit a property that day?
+assistant: Which property?
+user: Amador Royal.
+assistant: Please confirm: Book a visit to the amador royal on march 11th
+user: Yes, correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled!
+user: Thank you, does it have a garage? And what is their phone number?
+assistant: It does, and the numb er is 510-782-8753
+user: Thank you, i'd like to reserve a car for pickup at 5:15 in the evening.
+assistant: Do you want insurance? And would you like it frmo march 11th? And until when?
+user: I'd like insurance, and I need it from next thursday to the 12th of march.
+assistant: Where do you want to pick up the car, and what kind of car?
+user: I'd like a sedan from portland bus station.
+assistant: Please confirm: You'd like to pick up a car from the portland bus station on march 7th at 5:15 pm, with a drop off on march 12th, and it's a sedan.
+user: Sounds good, how much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: $52.00 per day
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: Nope.
+assistant: Have a good day!

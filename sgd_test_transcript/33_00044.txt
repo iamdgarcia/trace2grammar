@@ -1,0 +1,15 @@
+user: Where is a good place to get my hair styled?
+assistant: What city are you in?
+user: Find something in Redwood city.
+tool(FindProvider): ok n_results=5
+assistant: There are 5 choices. First up is August Barbershop in Redwood city.
+user: Fine, pull the trigger on that. What will the weather be like there on March 11th?
+tool(GetWeather): ok n_results=1
+assistant: It will be about 79 degrees and there will be a 25 % chance of rain.
+user: Get the appointment then at half past 2 in the afternoon.
+assistant: Sure, to be clear: Appointment at August Barbershop on March 11th at 2:30 pm.
+user: Yes, I agree. What is their rating and address?
+tool(BookAppointment): ok n_results=1
+assistant: They have a high 5.0 rating and you can find them at 704 Winslow Street.
+user: Great, I appreciate this.
+assistant: Have a great time.

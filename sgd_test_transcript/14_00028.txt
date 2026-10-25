@@ -1,0 +1,19 @@
+user: Will you find Future scientific fiction movies online?
+tool(FindMovies): ok n_results=2
+assistant: Ad Astra or Close Encounters of the Third Kind?
+user: I prefer Ad Astra.
+assistant: Play the movie?
+user: Yes, play it with English subtitles.
+assistant: Confirm Ad Astra playing with English subtitles.
+user: Cool.
+tool(PlayMovie): ok n_results=1
+assistant: Movie is starting.
+user: What the weather there on the 10th?
+assistant: Which city?
+user: Ciudad de Mexico
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 96 degrees Fahrenheit with a 3 percent chance of rain.
+user: Nice.
+assistant: Anything else?
+user: That's all for now.
+assistant: Have a great day.

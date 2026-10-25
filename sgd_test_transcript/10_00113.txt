@@ -1,0 +1,12 @@
+user: I'm looking for a house to stay in while I'm in Long Beach, CA. I'd like the rating to be 4.2 or higher. It's just for 1.
+tool(SearchHouse): ok n_results=9
+assistant: I found 9 that fit. There's one at 200 South Pine Avenue with a 4.2 rating.
+user: Actually make it for two people. Are there other houses?
+tool(SearchHouse): ok n_results=8
+assistant: I found 8 that are possible. There's a good one located at 285 Bay Street with a 4.2 rating.
+user: That sounds perfect.
+assistant: Shall I make a reservation for you?
+user: No, not just now.
+assistant: Is there anything else you need?
+user: No, thank you though.
+assistant: Happy to help. Bye.

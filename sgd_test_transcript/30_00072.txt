@@ -1,0 +1,21 @@
+user: Can you get me the weather for San Jose?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 78 degrees Fahrenheit. There is also a 19 percent chance of rain.
+user: Okay. I'd like to schedule a property visit.
+assistant: Will that be for March 1st? What property would you like to visit?
+user: I would like to visit Pine Meadows Apartments on March 1st.
+assistant: Can you confirm that you want to schedule a visit to Pine Meadows Apartments for March 1st?
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been successfully scheduled.
+user: Thanks. I also need to reserve a car for this visit. I'd like a Sedan for the 1st of this month.
+assistant: Can you tell me the following: how long do you want the car until? Where will you be picking the car up from? And finally, will you be needing insurance?
+user: I need the car until the day after tomorrow. I would like to pick it up from the Fremont BART Station at around 12:30 pm, if possible. Yes, I will be needing insurance.
+assistant: Can you confirm the following: you would like to pick the Sedan up on March 1st at 12:30 pm from the Fremont BART Station. You will be dropping it off on March 3rd. You will also need insurance.
+user: Yes, that sounds right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been successfully reserved.
+user: Thanks for your help.
+assistant: Is there anything else that I can help you with?
+user: No, thank you for your help.
+assistant: My pleasure. Have a good day.

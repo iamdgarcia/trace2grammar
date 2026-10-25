@@ -1,0 +1,25 @@
+user: Could you please help me to find a Sedan rental car on next Monday in Philly.
+assistant: When will you need it?
+user: I nee to pick it up at 10:30.
+assistant: When do you need it?
+user: I want the car from 3rd of this month.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a nice Sedan Dodge Charger available at Intercity Terminal.
+user: It is nice.
+assistant: Shall I book the car?
+user: Nope. It can be done later.
+assistant: DO you need any other help?
+user: Is there any buses available from New York for three persons on this Saturday?
+tool(FindBus): ok n_results=7
+assistant: What is you opinion about a bus starting at 7:40 am? The price is $23.
+user: It is nice. I wish to search for a one way flight to go there.
+assistant: When do you want to leave? Whether on March 3rd, March 2nd or any other day?
+user: I wish to start on this Saturday.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I searched and found 4 flights for you. What about a direct American Airlines starting at 11:20 am? The cost is $58.
+user: Whether it is an economy or business class?
+assistant: It is an Economy class.
+user: It is nice.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

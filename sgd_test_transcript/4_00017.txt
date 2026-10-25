@@ -1,0 +1,20 @@
+user: I need a rental car.
+assistant: What time will you pick up the car?
+user: I will pick it up at six in the evening.
+assistant: Where do you want to pick it up and when will you pick it up?
+user: I would lik to pick it up on 8th of this month from Sacramento.
+assistant: When do you want to return the car?
+user: I will need the car until the 10th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a good car at Sacramento Valley Station. It's a Buick Regal Sportback Sedan.
+user: Sounds great. Reserve the car.
+assistant: Would you like to add insurance?
+user: No, thanks.
+assistant: Could you confirm that you want to pick up the Sedan from Sacramento Valley Station on March 8th at 6 pm and drop it off on March 10th?
+user: Sounds good. How much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved and costs $25.00 per day.
+user: Thank you for helping.
+assistant: Could I assist with anything further?
+user: No, that is all.
+assistant: Have a great day.

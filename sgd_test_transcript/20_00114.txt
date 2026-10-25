@@ -1,0 +1,15 @@
+user: Can you help me find a house to stay in Portland, OR, with laundry service, rated 4.2 or higher?
+tool(SearchHouse): ok n_results=10
+assistant: Sure, how about a very nice property, rated at 4.2 - 1150 Northwest 9th Avenue?
+user: Sounds perfect. Let's book it for two people, checking in tomorrow.
+assistant: OK. When do you plan on checking out?
+user: I plan to check out on the 9th of this month.
+assistant: Can you please confirm that you want to place a reservation for 2 people for the house in Portland, from March 2nd to March 9th?
+user: Yes, that's correct. Can you please tell me the total reservation price as well as a phone number to reach the property?
+tool(BookHouse): ok n_results=1
+assistant: I've successfully placed your reservation, which costs $2,520. You can reach the property at +1 503-281-2500.
+user: Awesome, thank you! Now, let's find some child-friendly attractions in the area.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 which you may like, out of which I recommend an awesome Park, the Crystal Springs Rhododendron Garden.
+user: Perfect. Thanks a lot. That will be all for now.
+assistant: My pleasure. Have a nice day.

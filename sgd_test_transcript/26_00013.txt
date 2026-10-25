@@ -1,0 +1,37 @@
+user: I require three tickets for a round trip flight and i will be returning on the 5th
+assistant: Which is the departing city and when?
+user: I will be starting from San Fran on 2nd of March
+assistant: which city are you intending to move?
+user: I will be flying to vegas
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I have short listed 4 flights of your choice and what is your opinion on American Airlines which takes off at 1:20 pm which is also a direct flight? the returning flight is at 8:20 am with ticket cost $159
+user: what time does flight reach my detination?
+assistant: The onward flight will be arriving at 2:55 pm
+user: do you mean this is a business class ticket and when is the returning flight arrive?
+assistant: The returning flight arrival time is at 9:55 am and ticket is Economy class
+user: Any other thing? returning on 6th of March
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Do you prefer Delta Airlines which takes off at 5:50 pm and it is also a direct flight and returning flight will be at 4:55 pm with ticket cost at $158
+user: Any other thing?
+assistant: Do you prefer Southwest Airlines which takes off at 7:15 am and it is also a direct flight and returning flight will be at 12:35 pm with ticket cost at $156
+user: Fine and i also need a house with rating 3.4 or higher for 1 people
+tool(SearchHouse): ok n_results=4
+assistant: I have found a house at 1215 South Las Vegas Boulevard with rating 3.4
+user: Can i get their phone number ad do they provide laundry service?
+assistant: They do provide laundry service and their contact number is +1 702-489-7500
+user: The house is good
+assistant: Do you want house booking?
+user: Yes i require to make reservation of house as i will be checking in on March 3rd and checking out on the 5th
+assistant: Please give confirmation details: The place is Las Vegas for 1 people in your group with check in date on March 3rd and check out date on March 5th
+user: That is fine
+tool(BookHouse): ok n_results=1
+assistant: Your booking is done
+user: How much is the total cost?
+assistant: The total cost is $76
+user: Thank you. Can you also show me some attractions like child-friendly Museum
+tool(FindAttractions): ok n_results=3
+assistant: I have short listed 3 attractions of your liking and you can look into Las Vegas Natural History Museum and this is a Museum
+user: That is fine
+assistant: Any other help?
+user: No, thank you very much
+assistant: Enjoy and have fun

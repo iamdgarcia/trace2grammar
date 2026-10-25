@@ -1,0 +1,31 @@
+user: I need to pay something.
+assistant: Who is the recipient?
+user: To Diego, please.
+assistant: From which account will be transferring?
+user: From my app balance.
+assistant: In what amount is the transfer?
+user: For $77 please.
+assistant: Please confirm you want to make a public transfer to Diego from your app balance in the amount of $77.
+user: Yes, thank you.
+tool(MakePayment): ok n_results=1
+assistant: Your transfer was a success and the funds should be available to your recipient shortly.
+user: I also need help finding a restaurant.
+assistant: In which city and what type of food are you interested in?
+user: I'm looking for Caribbean food in San Francisco.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 options. Cha Cha Cha is a restaurant in the San Francisco area.
+user: Can I have their address and price range?
+assistant: They are in the moderate price range and are location at 2327 Mission Street.
+user: Sounds like a good one.
+assistant: Should I reserve a table for you?
+user: Yes, please reserve a table for the 2nd of this month at 7:15 pm.
+assistant: Please confirm you want me to reserve a table for 2 at Cha Cha Cha in San Francisco at 7:15 pm on March 2nd.
+user: Can you make it for 3 at five in the evening instead?
+assistant: Please confirm you want a reservation for 3 at 5 pm.
+user: Yes, thank you.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table was successfuly reserved.
+user: Thanks for all your help.
+assistant: Is there anything else I can assist you with?
+user: No. Thanks for your help.
+assistant: You're welcome. Have a great day.

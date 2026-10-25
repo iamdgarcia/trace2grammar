@@ -1,0 +1,19 @@
+user: Can you help me find a nice park in Toronto, Ontario?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, how about the Allan Gardens park?
+user: What is the contact number to that park?
+assistant: The number I have is 416-392-7288.
+user: Cool, I will be needing a house for one that includes laundry services as well.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 homes in that area. How about 108 Chestnut Street, it has an 4.2 customer satisfaction rating.
+user: That would be perfect.
+assistant: Did you want me to reserve this house for you?
+user: No, not right now. I first need help booking one round trip flight.
+assistant: Where are you coming from? When are you wanting to travel?
+user: I will be leaving out next Monday from Atlanta, GA.
+assistant: Do you have a specific return date?
+user: Yes, I will be returning on the 14th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I have a flight with American Airlines for $289. This flight leaves at 5:10 am and the return take off time is midnight.
+user: Thank you for that information. That will be all for me right now.
+assistant: You are very welcome. Have a great day.

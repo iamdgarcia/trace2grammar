@@ -1,0 +1,21 @@
+user: I can't figure out where to go to eat. Can you help?
+assistant: Sure. In which location would you like to find a place to eat? Also what kind of food are you looking for?
+user: Find me a place in the San Jose area, maybe something Asian.
+tool(FindRestaurants): ok n_results=10
+assistant: How about the China Garden Restaurant in San Jose?
+user: That sounds good to me.
+assistant: Will that be all you need?
+user: Uh, can you book me a table for one at that restaurant?
+assistant: Sure. When would you like me to make the reservation for?
+user: Make it for 5:45 in the evening, please.
+assistant: You would like me to make a reservation at China Garden Restaurant in San Jose for 1 people. The reservation will be for March 1st at 5:45 pm. Is that correct?
+user: Yes that works for me. Confirmed.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry but I was unable to make the reservation. What would you like to do?
+user: Can you try booking another table for two at 6 in the evening?
+assistant: You would like me to make a reservation at China Garden Restaurant in San Jose for 2 people. The reservation will be for March 1st at 6 pm. Is that correct?
+user: Yes that is all correct.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry I was unable to make the reservation. What would you like to do?
+user: Just forget about it, I'll call them directly. Thank you for trying.
+assistant: You're welcome. Good luck.

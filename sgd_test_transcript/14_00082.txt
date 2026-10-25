@@ -1,0 +1,20 @@
+user: I am trying to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: Of the 10 movie that you might like, may I recommend Hobbs and Shaw which has an average rating of 67 out of 100?
+user: Thank you. Can you find some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs that you may like. Would you like to listen to Rise by Katy Perry from the album Rise Remixes?
+user: Do you have any Pop songs? I have heard good reviews of the album Climate Change.
+tool(LookupMusic): ok n_results=2
+assistant: Would you like to listen to Greenlight by Pitbull from the album Climate Change?
+user: Yes, that's the one I was looking for. Play it on the the speaker in kitchen.
+assistant: Please confirm that you want to listen to Greenlight in the Kitchen.
+user: Yes, that's perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Playing the song now. Enjoy your music!
+user: In which year was the song released?
+assistant: It was released in 2016.
+user: Thank you for the information.
+assistant: Is there anything else I can do for you?
+user: No. Thank you!
+assistant: Have a great day!

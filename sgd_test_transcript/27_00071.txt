@@ -1,0 +1,24 @@
+user: I need to drop off some stuff in SD. Could you find a bus going there?
+assistant: I can help you with that. Please tell me your departure city and date.
+user: I'd like to leave on March 13th from Long Beach, CA.
+tool(FindBus): ok n_results=9
+assistant: I found 9 buses that you may like. Would you like to take the $24 bus leaving at 6:50 am?
+user: That's a bit too early. What else do you have?
+assistant: There's a $26 bus leaving at 7:30 am.
+user: Tell me the origin and destination stations, please.
+assistant: The origin station is Downtown Station, and the destination is El Cajon Bus Stop.
+user: That works for me. Once I drop off the stuff I'll be free to check out the city. Could you also find me places to visit while there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 places that you may want to visit. One of them is the Park known as Balboa Park.
+user: All right, cool! Please buy me 1 ticket on the bus that you found a short while ago.
+assistant: Okay. Let me see if I got everything correctly: You'd like 1 ticket on the bus leaving at 7:30 am on March 13th from Long Beach to San Diego, and you have no extra luggage. Is that correct?
+user: No. I'll be carrying extra luggage.
+assistant: Okay. No problem. Please confirm that you'll be taking the bus to San Diego and you have excess luggage.
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your ticket.
+user: Could you tell me the names of some reasonably-priced hotels around there also, in the event that I have to spend the night?
+tool(SearchHotel): ok n_results=10
+assistant: Your search yielded 10 suitable hotels. How about the 3 star hotel known as Bahia Resort Hotel?
+user: That should work. At the moment, that's all I need.
+assistant: Goodbye, and have a great day!

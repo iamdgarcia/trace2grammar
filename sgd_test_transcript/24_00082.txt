@@ -1,0 +1,19 @@
+user: I am in the mood for a movie. Find me something that I can watch with Family. I will be around the Piedmont Theatre.
+assistant: What area will you be in?
+user: Look for movies in Oakland.
+tool(FindMovies): ok n_results=1
+assistant: What do you think of The Farewell?
+user: I would love Farewell.
+assistant: Shall I get you the tickets?
+user: Not at the moment. Book a restaurant table in that location on the 4th. I will be in a group of three and try Mcdonald's.
+assistant: What time will you be making the reservation for?
+user: Reserve it for 19:00
+assistant: So you want a table for 3 at Mcdonald's on March 4th at 7 pm. The location city would be Oakland.
+user: Yeah. Can you call the restaurant as ultra high-end?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have your reservation made successfully. It is considered to be a cheap restaurant.
+user: What are the timings of the movie we found earlier for that date and I want to catch the regular show.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for the movie. It is at 9:30 pm at the Landmark's Piedmont Theatre.
+user: Perfect, that will be all.
+assistant: Have a nice day.

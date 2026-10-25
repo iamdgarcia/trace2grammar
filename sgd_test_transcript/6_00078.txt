@@ -1,0 +1,22 @@
+user: I'm looking for a salon.
+assistant: In which city would you like to find the salon?
+user: I'm looking for a unisex salon in Lafayette.
+tool(FindProvider): ok n_results=4
+assistant: 18|8 Fine Men'S Salons - Lafayette is a nice salon that you can consider in Lafayette.
+user: Can you please get me their address?
+assistant: They are located at 15 Fiesta Lane.
+user: Can you also find their average rating and contact number?
+assistant: They have an average rating of 4.3 and their phone number is 925-297-5127.
+user: That sounds good. Can you book an appointment for me at the salon?
+assistant: On what date and at what time do you prefer the appointment?
+user: Can you check if something is available for quarter to 10 in the morning on the 10th of March?
+assistant: Please confirm that you want an appointment at 18|8 Fine Men'S Salons - Lafayette at 9:45 am on March 10th.
+user: Hold on a second. Can you make that for afternoon 2:15 on the 9th of this month?
+assistant: Sure. So, you would like the appointment at 2:15 pm on March 9th. Is that correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully.
+user: Thanks a lot!
+assistant: Is there anything else you would like me to do for you?
+user: No. Thank you for the assistance.
+assistant: Have a great day!

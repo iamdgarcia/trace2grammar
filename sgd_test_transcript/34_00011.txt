@@ -1,0 +1,17 @@
+user: I have a plan to travel to SF , and i need a place to stay. will you find me a hotel over there?
+tool(SearchHotel): ok n_results=10
+assistant: there is a hotel called Amsterdam Hostel San Francisco, which is a 1 star hotel.
+user: ok that sounds good. Will you show me some attractions over there? I like something which is child-friendly which should be free entry .
+tool(FindAttractions): ok n_results=10
+assistant: there are 10 attractions as per your need. What about ALcatraz which is a historical Landmark?
+user: What is their phone number?
+assistant: their phone number is 415-561-4900.
+user: ok thats great. whether any other attractions in that place?
+assistant: what about Aquarium of the Bay which is a Nature preserve?
+user: okay thats fine. I would like to reserve the hotel which you told before? I need to check in on 1st of March. i will be staying for 4 days and i need 2 rooms.
+assistant: please check and review the following details. Room need to be booked in hotel Amsterdam Hostel San francisco. THe check in date is on March 1st. The number of days need to stay is for 4 days and it is located in San francisco and number of rooms is 2
+user: Ok thats great and it sounds good to me.
+tool(ReserveHotel): ok n_results=1
+assistant: Hotel is booked successfully.
+user: thanks a lot for your immense help. thats all i need
+assistant: bye have a wonderful day.

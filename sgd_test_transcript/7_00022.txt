@@ -1,0 +1,12 @@
+user: Can you help me check the weather?
+assistant: In which city would you like me to check the weather?
+user: Please check the weather for Anaheim, CA.
+tool(GetWeather): ok n_results=1
+assistant: There is a 29 percent chance of rain, with an expected temp of 78 degrees Fahrenheit.
+user: What is the humidity expected to be?
+assistant: The humidity is expected to be 45 percent.
+user: Thanks, can you tell me the weather for March 12th?
+tool(GetWeather): ok n_results=1
+assistant: There is a 16 percent chance of rain and the temp should be 71 degrees Fahrenheit.
+user: Okay. Thanks I am all set. Goodbye.
+assistant: Have a great day.

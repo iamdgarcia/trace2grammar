@@ -1,0 +1,21 @@
+user: I want to check the weather condition in particular area. Do you help me?
+assistant: Yes, in which area you want to check about the weather?
+user: Check it in Toronto.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 58 degree Fahrenheit in average and the chance of rain will be at 13 percent.
+user: Thanks. Now I want to go there. Please search for an one-way flight.
+assistant: What is your current location to search for the flight from and shall I search it for the leaving date on March 1st?
+user: Yes, date is okay and I want the flight from Atlanta.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Do you feel free to travel through American Airlines? I found 4 flights with this Airlines. What about the one which takes off at 5:10 am for the ticket cost $202?
+user: I think you have to search for some other flights.
+assistant: What about your opinion on a travel through Delta Airlines flight? Please confirm whether a flight which takes off at 6:50 am for ticket cost $195 is okay for you?
+user: Okay, this will be good to me. I need one more help. Can you find a Car for rent to go there and please book it from the 3rd to 6th of March. Any type of ride is okay with me.
+assistant: What is your convenient time?
+user: I need it at quarter past 4 in the evening.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I got 10 cars and What about a car available for pickup at Toronto Pearson International Airport. This car is Sedan Buick Regal Sportback.
+user: What is the cost per day?
+assistant: It will be around $35.00 per day.
+user: Okay. This is the car I want. Thanks and that's all.
+assistant: Have a great day.

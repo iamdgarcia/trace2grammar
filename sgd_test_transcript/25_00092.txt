@@ -1,0 +1,36 @@
+user: Let me see my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: You currently have 3 alarms set. One is for 3 pm with name Dentist.
+user: Ok, sounds good.
+assistant: Did you want to add an alarm?
+user: No, not right now. I'd like to find a restaurant tagged economical for price.
+assistant: Which location did you want me to look in and what type of food were you looking for?
+user: I'd like to find a Pho restaurant in SFO.
+tool(FindRestaurants): ok n_results=4
+assistant: I found 4 restaurants for you. Anh Hong is a nice restaurant in San Francisco.
+user: Yes, that sounds good.
+assistant: Did you want to book a table here?
+user: No, I did not.
+assistant: Did you need help with anything else?
+user: I'd like to reserve a car. I'd like a Sedan and Gatwick International Airport is convenient for me to pick it up.
+assistant: When did you want to pick up the car? Did you want to add insurance?
+user: I'd like to pick it up at 9:30 am and I'd like to buy insurance.
+assistant: When did you want to begin the rental?
+user: I'll need it from March 3rd.
+assistant: Until when did you need the car?
+user: I'll need it until the 5th of this month.
+assistant: Please confirm you're picking up a Sedan car from Gatwick International Airport on March 3rd at 9:30 am and dropping it of on March 5th.
+user: Yes, that is correct. What is the name of the car?
+tool(ReserveCar): ok n_results=1
+assistant: Your booking has been confirmed and the car is a Volvo S90.
+user: How much will the car cost per day?
+assistant: It will be $45.00 per day.
+user: Thank you for your help. Could you help me share the location?
+assistant: Which address did you want to share: 808 Geary Street, Gatwick International Airport, or something else? Who were you sharing it with?
+user: I'll share Gatwick International Airport I'd like to share it with Jean.
+assistant: Please confirm you're sharing the location Gatwick International Airport with Jean.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you, that's very helpful. That'll be all I need for now.
+assistant: Have a great day!

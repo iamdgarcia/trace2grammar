@@ -1,0 +1,25 @@
+user: I want to make a payment to Victoria. I want the transaction to be private.
+assistant: What account are you transferring from? How much?
+user: I want to transfer one hundred and seventy one bucks from my credit card.
+assistant: Please confirm: Sending $171 from your credit card to Victoria. The transaction is private.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made.
+user: Thanks so much!
+assistant: Anything else I can do for you?
+user: I want to find a restaurant.
+assistant: What kind of food do you want to eat? What location are you looking in?
+user: I want to find restaurants in SFO. I'm looking for a tapas bar.
+tool(FindRestaurants): ok n_results=8
+assistant: Alegrias is a nice restaurant located in San Francisco.
+user: Are there vegetarian options? What is the rating?
+assistant: There are no vegetarian options. The rating is 4.4.
+user: Sounds great. I want to book a table at the restaurant.
+assistant: What time is the reservation for?
+user: I want to make the reservation for 7 o'clock in the evening.
+assistant: Please confirm: A reservation for 2 at Alegrias in San Francisco on March 1st at 7 pm.
+user: Yes, that's correct. Is it pricey?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. The price range is moderate.
+user: Thanks so much. That's all for now.
+assistant: Have a great day!

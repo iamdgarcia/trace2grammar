@@ -1,0 +1,27 @@
+user: I am taking a trip and will need a rental car starting the day after tomorrow until next Tuesday. Please search for one.
+assistant: Where you will be picking up the rental car?
+user: Please search in Mexico City for a rental car.
+assistant: What time do you expect to pick up the car?
+user: I plan on picking it up at 15:00.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found 10 cars that you may like. One of them is a SUV Citroen C5 available at the Benito Juarez International Airport.
+user: What is the daily cost?
+assistant: It will cost you $38.00 per day.
+user: That one will work. I also would like to buy 2 tickets for the Every Brilliant Thing on Monday next week.
+assistant: In what city would you like me to search?
+user: Please look in the chicago area.
+assistant: Please confirm 2 tickets for the Every Brilliant Thing on March 4th in Chicago.
+user: Yes, that is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been reserved. Enjoy your event!
+user: Thank you for your assistance.
+assistant: Do you need anything else right now?
+user: Please reserve the rental car you found.
+assistant: Do you want to add the insurance option?
+user: No, I don't wish to purhase the insurance.
+assistant: Please confirm your are reserving a SUV from March 3rd to March 5th, with a pick up time of 3 pm at the Benito Juarez International Airport.
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thank you for your help! I don't need anything else at the moment.
+assistant: Enjoy your day!

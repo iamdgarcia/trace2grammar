@@ -1,0 +1,13 @@
+user: Could you help me search for a bus?
+assistant: When are you leaving?
+user: I would like to leave Saturday this week.
+assistant: Where will you be going?
+user: I would like to go to Los Angeles.
+assistant: Where will you be leaving from?
+user: I will be leaving from Sacramento.
+tool(FindBus): ok n_results=3
+assistant: I have 3 buses for you leaving 7:40 am costing $46.
+user: Will you find something else?
+assistant: How about the bus leaving at 9:40 am costing $50.
+user: That sounds good and is all I need.
+assistant: Have a nice day.

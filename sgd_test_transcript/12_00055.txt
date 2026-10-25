@@ -1,0 +1,19 @@
+user: Hey, I'm going on a short trip and I need to find a one-stop bus leaving on the 7th of March. Can you help me?
+assistant: Sure. What's your destination and where will you be leaving from?
+user: I'll be leaving from a Sacramento to a Vegas.
+tool(FindBus): ok n_results=10
+assistant: How about a bus departing at 7:10 am and costing $62?
+user: Sounds good. I'll want three tickets.
+assistant: So 3 tickets on a bus leaving on March 7th at 7:10 am from a Sacramento to Las Vegas?
+user: Yes, works for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket was successfully confirmed.
+user: Thanks a lot. Can you also help find a hotel there?
+tool(SearchHotel): ok n_results=7
+assistant: I found 7 hotels available. The Best Western Plus Las Vegas West is a great one with a 3 star rating.
+user: What's their address and how much do they cost?
+assistant: They cost $105 per night and they're located at 8669 West Sahara Avenue.
+user: Sounds real good.
+assistant: Should I book it?
+user: Not now, that's all. Thanks a lot.
+assistant: Goodbye, have a great day.

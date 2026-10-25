@@ -1,0 +1,25 @@
+user: I am interested in finding a hotel, and more specifically which is in London.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels for you to consider, with one of them being 45 Park Lane hotel which is a 5 star hotel.
+user: Can you tell me the price per night at this hotel?
+assistant: Staying at this hotel costs $375 per night.
+user: Can you tell me the phone number I can use to call them, and could you also tell me if smoking is allowed at this hotel?
+assistant: If you want to call them you can at +44 20 7493 4545, though unfortunately smoking is not allowed at this hotel.
+user: That seems nice. Can you tell me how the weather will be there on 8th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The temperature for the date you requested should be at 93 degrees Fahrenheit, and with a chance of raining at 24 percent.
+user: Can you tell me also how windy is going to be, and also the expected level of humidity?
+assistant: From what I can see the humidity should be at about 19 percent, and with the wind at an average of 4 miles per hour.
+user: Alright, nice. Now I would like to make a booking for the hotel you found.
+assistant: Can you tell me the duration of the stay?
+user: I will be at the hotel for 3 days.
+assistant: Will you be going there on March 8th?
+user: Actually I will go there on the 6th.
+assistant: Can you please confirm that you want to book 1 room for 3 days at 45 Park Lane in London on March 6th?
+user: That is good for me.
+tool(ReserveHotel): ok n_results=1
+assistant: Your request for the hotel booking has been made.
+user: I appreciate it, you have helped me a lot.
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful because you have been quite helpful.
+assistant: Goodbye and have a good time!

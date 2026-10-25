@@ -1,0 +1,22 @@
+user: Can you help me find a movie to see? I'd like to find something by Riley Stearns.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie available for streaming that meets that criteria. With an average rating of 83 out of 100, we have The Art of Self-Defense.
+user: What kind of movie is it? Do you know who starred in it?
+assistant: It is a thriller starring Jason Burkey.
+user: I think that will work. Can you help me find a nearby restaurant?
+assistant: Where should I begin the search? Do you have a preferred cuisine?
+user: I'd like to find a Punjabi restaurant in SF.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 in the San Francisco area. May I suggest Amber?
+user: That sounds find. Can you reserve a table for me?
+assistant: I'd be happy to. What time should I make the reservation for?
+user: I'd like something in the evening 6:15.
+assistant: Let me make sure I've got the details correct. You'd like a table for 2 at Amber in San Francisco at 6:15 pm on March 1st.
+user: That's correct. Can you tell me if it's a cheap restaurant with outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It is considered a pricey restaurant but it does not offer outdoor seating. There are no reservations available at Amber for that time. Should I try for a table for 2 on March 1st at 6 pm instead?
+user: That would be fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Great! Your table has been confirmed.
+user: Perfect. Thank you for the assistance.
+assistant: You're welcome. Have a wonderful day!

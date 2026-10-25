@@ -1,0 +1,30 @@
+user: Could you help me find a salon in Campbell and preferably one that services both men and women?
+tool(FindProvider): ok n_results=5
+assistant: I found one called Bella Capelli Salon that is located in Campbell.
+user: Okay, that was fast! Can I have the address and phone number?
+assistant: Sure, the phone number for the establishment located at 2160 South Bascom Avenue is 408-371-2051.
+user: Okay,perfect! that's not too far from me.
+assistant: Would you like me to go ahead and make an appointment for you?
+user: Not quite yet, there are other things I need to do first.
+assistant: Is there anything else I can assist you with?
+user: Yes, can you share the location you just found for me with Jennifer please?
+assistant: So you would like me to share the address 2160 South Bascom Avenue with Jennifer, is that correct?
+user: No, I'm sorry, I think I would rather you share it with Brenda.
+assistant: Okay, I've changed that to sharing the location 2160 South Bascom Avenue with Brenda, does that sound right now?
+user: Yes, that's great!
+tool(ShareLocation): ok n_results=1
+assistant: I am happy to report that I was able to share that location for you.
+user: Thanks so much, that's one thing off my list. Would you mind telling me when my alarms are now?
+tool(GetAlarms): ok n_results=1
+assistant: I see that you only have 1 alarm set right now at 9 am and it is titled jogging.
+user: Thanks.
+assistant: Is there an additional alarm you would like me to add?
+user: Yes, please.
+assistant: No problem, first tell me the time you would like the alarm to be set for.
+user: The new alarm should be set for 3:30 in the afternoon and titled Music Practice please.
+assistant: I have a, alarm set for 3:30 pm titled Music Practice, is that right?
+user: Yes, that is right.
+tool(AddAlarm): ok n_results=1
+assistant: Okay, I'v confirmed that your new alarm is set.
+user: Thanks so much, that is all I need for now.
+assistant: My pleasure!

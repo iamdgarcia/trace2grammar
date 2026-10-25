@@ -1,0 +1,21 @@
+user: Can you search for an event on 13th of March around Palo Alto, one like a Drama?
+tool(FindEvents): ok n_results=1
+assistant: You can enjoy Belarus To Brooklyn at Albert & Janet Schultz Cultural Arts Hall on March 13th at 4:30 pm.
+user: Please book three tickets for that event.
+assistant: Please see the demand, you need 3 tickets for Belarus To Brooklyn on March 13th in Palo Alto.
+user: Please get one ticket only.
+assistant: Ok, request changed to 1 ticket on March 13th, right.
+user: Right, where is the location and price of ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: It is at San Antonio Road, and you will cost $50.
+user: Please arrange a cab to reach there.
+assistant: Are you particular about the cab?
+user: I need a Shared ride.
+assistant: Please confirm, you need a Pool ride for 1 seat to Albert & Janet Schultz Cultural Arts Hall.
+user: Fine, when will it reach here.
+tool(GetRide): ok n_results=1
+assistant: it will reach there in 3 minutes.
+user: What is the cost?
+assistant: The cost is $15.40
+user: Awesome, thank you.
+assistant: Have a nice day.

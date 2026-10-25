@@ -1,0 +1,35 @@
+user: Can you arrange me a car on rent?
+assistant: How long will you need it?
+user: Till next Thursday I want it.
+assistant: When and where do you want it?
+user: Get it me on 6th of March from New York City.
+assistant: When will you pick it up?
+user: I will pick it up at 15:30
+tool(GetCarsAvailable): ok n_results=10
+assistant: You can ride in SUV Alfa Romeo Stelvio from Port Authority Station.
+user: What is the cost per day?
+assistant: You have to spend $42.00 for one day.
+user: Are there any other car? I will use it till next friday.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Another one is a Sedan Audi A8 available at JFK International Airport.
+user: That will be a right choice.
+assistant: Shall I reserve it for you?
+user: Not needed now.Are there buses available from Philly on Monday next week? It should be a direct bus.
+tool(FindBus): ok n_results=6
+assistant: 6 buses are there, one is leaving at 9 am with ticket charge of $24.
+user: Any other option?
+assistant: Another one leaving at 10:10 am with $21.
+user: From where will it start?
+assistant: It is leaving from 10th And Filbert.
+user: Seems good. Can you search for one-way flight there?
+assistant: When will you depart, March 4th, March 6th or other days?
+user: I want to leave on the 2nd.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: You can have 4 flights. American Airlines will take of at 1:20 pm which is a direct flight with ticket fare of $68.
+user: Look for another one. Is there United Airlines getting two tickets?
+tool(SearchOnewayFlight): ok n_results=1
+assistant: One United Airlines takes off at 11:30 am which is direct and entire cost is $63.
+user: Thats great.
+assistant: Any other help you need.
+user: No, that's all.
+assistant: Have a nice day.

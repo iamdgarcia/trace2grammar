@@ -1,0 +1,20 @@
+user: I'd like to watch a movie
+assistant: In which city?
+user: In Mountain View. I prefer an action movie. Any show is good for me.
+tool(FindMovies): ok n_results=1
+assistant: Do you like Hobbs and Shaw?
+user: No, I prefer Scary movies in Century Cinema
+tool(FindMovies): ok n_results=1
+assistant: I found Scary Stories to Tell in the Dark.
+user: Oh yes! Scary stories is good! I'd like to book in a restaurant in the area
+assistant: What time do you prefer to book the table? In which restaurant?
+user: I prefer at twelve pm at Le Petit
+assistant: A table for 2 people at Le Petit Bistro in Mountain View, on March 1st at 12 pm. Is it correct?
+user: Yes, It's correct, thanks
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been booked!
+user: Very good! Thanks! What time does the movie start?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's 1 showtime at 10 pm in Century Cinema 16
+user: Yes, it's good for me! It's all for now
+assistant: Have a nice day!

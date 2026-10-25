@@ -1,0 +1,29 @@
+user: Can you help me find a rental SUV?
+assistant: Sure, for what day?
+user: The day after tomorrow.
+assistant: Okay, what time do you want to pick it up?
+user: Half past 10 in the morning.
+assistant: When do you want to drop it off and where will you be renting?
+user: I'll drop off on March 6th and will be in Fresno.
+tool(GetCarsAvailable): ok n_results=3
+assistant: Okay, I found 3 you may like. There's a GMC Terrain SUV available at Fresno Station.
+user: Great, I also want to get tickets to an event.
+assistant: Sure, what day and what city?
+user: Look in Philly for the 14th of March.
+assistant: How many tickets do you need?
+user: Find 1 ticket to Anthony Green.
+assistant: Just confirm you'd like 1 ticket for Anthony Green in Philadelphia on March 14th.
+user: Yes, that's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've confirmed your ticket purchase.
+user: When does the show start?
+assistant: It will begin at 7 pm.
+user: Thanks, and can you get me that rental car?
+assistant: Sure, do you want insurance?
+user: Nope, don't need it.
+assistant: Just confirm you'd like to reserve an SUV for pick up at Fresno Station on March 3rd at 10:30 am with a drop off date of March 6th.
+user: Yes, that's all correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved.
+user: Thanks, that's all for now.
+assistant: My pleasure, enjoy your day.

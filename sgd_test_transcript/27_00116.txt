@@ -1,0 +1,30 @@
+user: I want you to help me look for a bus.
+assistant: Can you tell me from where you will be leaving, and what your destination is?
+user: The place from where I will leave is San Fran, and I want to arrive in Las Vegas.
+assistant: Can you tell me when you have planned on leaving?
+user: I have my plans arranged to leave on 4th of March.
+tool(FindBus): ok n_results=6
+assistant: How would you like taking the bus which leaves at 7:50 am, and the ticket of which costs $48.
+user: That seems nice to me.
+assistant: Would you like to have tickets bought for this bus?
+user: Not at the moment, though maybe some other time. Can you tell me about some attractions which can be found there?
+tool(FindAttractions): ok n_results=10
+assistant: You might consider visiting DISCOVERY Children's Museum, which is a Museum.
+user: Can you tell me if this place is considered to be friendly to kids? Can you also give me their phone number that I can use to get in touch with them?
+assistant: In fact this place is not suitable for kids. If you want to call them you can at 702-382-5437.
+user: Alright though can you suggest some other attractions?
+assistant: You might also consider visiting Floyd Lamb Park, which is a Park.
+user: Alright, nice. Is it possible for you now to buy tickets for three people for the bus which you found earlier?
+assistant: Can you please confirm that you want to buy tickets for 3 people without extra luggage for the bus which leaves from San Francisco on March 4th at 7:50 am, to go in Las Vegas?
+user: Yes, that is what I want. Can you tell me the station of the destination of the bus, and if the bus is a direct one?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked, and yes this bus is a direct one. The station where the bus will arrive at is Union Plaza.
+user: I also need to find 1 room in a hotel in that area.
+tool(SearchHotel): ok n_results=7
+assistant: A nice 3 star hotel I can suggest is called Best Western Plus Las Vegas West.
+user: Can you recommend some other hotel that might suit me?
+assistant: Another hotel which you might consider is a 1 star one called Budget Suites Of America.
+user: Can you give me the phone number I can use to give them a call?
+assistant: If you want to get in touch with them you can at +1 702-638-1800
+user: That seems okay. That's all I needed for the moment.
+assistant: Goodbye, and have a good time!

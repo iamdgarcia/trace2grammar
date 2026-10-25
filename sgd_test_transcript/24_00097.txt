@@ -1,0 +1,19 @@
+user: I would like to go watch a movie
+assistant: In which city would you like to watch the movie?
+user: I'd like to watch it in Santa Rosa
+tool(FindMovies): ok n_results=10
+assistant: Do you prefer After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: I prefer After The Wedding
+assistant: So I book the ticket?
+user: Not now, thanks! I want to book a table at Yeti at evening 6:30
+assistant: A table for 2 people at Yeti Restaurant in Santa Rosa, on March 1st at 6:30 pm. Is it correct?
+user: Yes, It's correct. Thanks
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked!
+user: Very good! I want to watch the movie at Summerfield Cinemas. What time is a regular show?
+tool(GetTimesForMovie): ok n_results=1
+assistant: In Summerfield Cinemas there's a show at 8:30 pm
+user: Yes, this is fine.
+assistant: You need anything else?
+user: No, It's all for now
+assistant: Have a nice day

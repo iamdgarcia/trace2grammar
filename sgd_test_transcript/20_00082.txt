@@ -1,0 +1,23 @@
+user: Three of us need help finding a house to stay. I should be rated 4.1 stars or higher.
+assistant: I can help you with that. Tell me the city you'd like to stay in.
+user: I'm headed for SD.
+tool(SearchHouse): ok n_results=10
+assistant: How about the nice 4.1 stars rated house situated at 1003 Coast Boulevard, La Jolla, California 92037, United States?
+user: Could you find out whether this place has laundry service, and also get me their phone number?
+assistant: This place offers laundry service and can be reached on +1 858-224-7600.
+user: I love this house and would like to book it.
+assistant: When would you like to check out?
+user: A check-out date of March 7th works for me.
+assistant: When would you like to check in?
+user: I'd like to check in on 2nd of March.
+assistant: All right. Let me see if I got everything correctly: Your group of 3 will be checking into the house in San Diego on March 2nd and checking out on March 7th?
+user: No. Sorry, there's been a change of plans. Please change the check-in date to 3rd of March, and the check-out date to 10th of this month. Thanks.
+assistant: Sure, no problem. Please confirm that the check-in date is March 3rd and the check-out date is March 10th.
+user: yes, that is correct. May I know the total price, please?
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. That comes to a total of $2,688.
+user: Any suggestions for attractions in that area?
+tool(FindAttractions): ok n_results=10
+assistant: I recommend visit the park known as Balboa Park.
+user: All right, awesome. At the moment, that's all I need. Goodbye.
+assistant: Have a great time!

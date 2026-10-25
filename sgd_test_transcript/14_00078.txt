@@ -1,0 +1,17 @@
+user: I'd like to watch a Cartoon movie directed by Josh Cooley, preferably with the actor Bill Hader.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie: Toy Story 4, with a rating of 97 out of 100
+user: Perfect, thanks! Now I want to listen some songs
+tool(LookupMusic): ok n_results=10
+assistant: Do you like James Blunt? There's Always Hate Me from the album Moon Landing
+user: Is it a '19 album?
+assistant: No, It's from 2013
+user: This song is fine and I would like to listen it in the Kitchen
+assistant: Playing Always Hate Me in the Kitchen: do you confirm?
+user: Yes, I confirm, thank you!
+tool(PlayMedia): ok n_results=1
+assistant: Good listening!
+user: What kind does it belong to?
+assistant: It is of the pop genre
+user: Very well! It's all, thanks!
+assistant: Have a nice day!

@@ -1,0 +1,41 @@
+user: can you find me cool things to do in vancouver, bc?
+assistant: do you have any preferences?
+user: i like theater a lot.
+tool(FindEvents): ok n_results=10
+assistant: alice in glitterland is playing at the wise on march 13th at 4 pm.
+user: how much is a ticket? where's it at?
+assistant: a ticket is $20 and it's located on 1882 adanac street.
+user: that sounds good to me.
+assistant: do you want tickets?
+user: not right now. can you get me a bus for one to seattle next friday?
+tool(FindBus): ok n_results=10
+assistant: there's a bus that leaves at 6:10 am and costs $27.
+user: are there any others?
+assistant: there's a bus that leaves at 7:20 am and costs $29.
+user: where does it arrive?
+assistant: it arrives at pacific central station.
+user: that works for me.
+assistant: do you want a ticket?
+user: not at the moment.
+assistant: is there something else i can help with?
+user: can you get me a round trip flightt here?
+assistant: when do you want to leave? march 8th, march 13th, or another date?
+user: i want to leave on the 5th of march and come back on the 14th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: there's 2 flight i found. there's one with delta airlines that leaves at 4:10 am without stops, and the flight back leaves at 6:35 am and costs $354.
+user: when does the flight get to my destination? is it a business seat?
+assistant: it's an economy seat, and it'll arrive at 10:47 am.
+user: are there any others?
+assistant: there's a flight with united airlines that leaves at 10:35 am with a stop, and the flight back leaves at 9:25 am, and costs $464.
+user: that's fine. can you find me a hotel there too?
+tool(SearchHotel): ok n_results=10
+assistant: there's a 3 star hotel called the atrium inn vancouver.
+user: that sounds nice.
+assistant: do you want to book it?
+user: not now. can you book me a ticket to the event you mentioned earlier?
+assistant: you want 1 ticket to alice in glitterland on march 13th in vancouver?
+user: yes that's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: it's been booked.
+user: thanks, that's all.
+assistant: have a nice day.

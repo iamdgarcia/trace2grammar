@@ -1,0 +1,16 @@
+user: Is there something interesting I can do, hopefully music related?
+assistant: Which city should I look for music events?
+user: Can you try looking for music events in Atlanta, GA?
+tool(FindEvents): ok n_results=10
+assistant: For that city I found an upcoming event on March 11th at 5 pm, would you be interested in seeing Adam Ant at the Atlanta Symphony Orchestra.
+user: Sounds great, thanks for finding this event.
+assistant: Would you like to purchase tickets to this event?
+user: Sure, buy me tickets for the event.
+assistant: What amount would you like to purchase at the moment?
+user: I only want to buy one ticket at the moment.
+assistant: You would like to buy 1 ticket for Adam Ant performing in Atlanta on March 11th, is that correct?
+user: That is all correct, no problems here.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made, hope you enjoy the event.
+user: Great, thanks for all the help, that is all I needed for now.
+assistant: Understood, enjoy the rest of your day.

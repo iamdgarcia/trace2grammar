@@ -1,0 +1,16 @@
+user: I'm going on a short trip soon. Can you help me find a bus ride with one-stop to Anaheim?
+assistant: Sure, when do you want to leave and where from?
+user: I'd be leaving from Sacramento on the 11th of this month. Oh, and change the destination to Long Beach.
+tool(FindBus): ok n_results=10
+assistant: Ok, there's a bus at 7:40 am for $58. How about that?
+user: Yeah, that sounds fine.
+assistant: Ok, anything else I can help with?
+user: Yes, can you go ahead and book bus tickets for me?
+assistant: Sure, how many?
+user: It's for two people.
+assistant: Ok. To confirm, you'd like to book 2 bus tickets from Sacramento to Long Beach on March 11th at 7:40 am with no extra luggage. Is that right?
+user: Yes, that sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Ok, your tickets have been booked.
+user: Great, thanks for your help. That's all for now.
+assistant: Ok, have a good day.

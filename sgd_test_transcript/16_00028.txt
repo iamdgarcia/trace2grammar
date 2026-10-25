@@ -1,0 +1,34 @@
+user: I need to find a unisex salon.
+assistant: Which city will I search in?
+user: In San Jose please.
+tool(FindProvider): ok n_results=10
+assistant: I found 10, one is Atelier Salon Willow Glen which is a nice one in San Jose.
+user: What is their average rating? What is the address?
+assistant: It is located at 1047 Lincoln Highway suite 101 and is rated 4.3.
+user: That sounds good. I need to find a Psychologist in the area.
+assistant: You want someone in San Jose?
+user: Yes I need a psychiatrist.
+tool(FindProvider): ok n_results=6
+assistant: I found 6. How about Dr. Manuj K. Nangia who is a Psychiatrist in San Jose?
+user: What is the number?
+assistant: The number is 408-357-0105.
+user: Sounds great, can you make an appointment at quarter past 5 in the evening on the 2nd please?
+assistant: You want a 5:15 pm appointment on March 2nd with Dr. Manuj K. Nangia, correct?
+user: No I need one at 14:30 please.
+assistant: You want a 2:30 pm appointment with Dr. Manuj K. Nangia, correct?
+user: No please make it for the 6th of March.
+assistant: You need an appointment with Dr. Manuj K. Nangia on March 6th, correct?
+user: Yes that is right thanks.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successful and you will get an email confirmation soon.
+user: I want an appointment at the salon you found at 11 o'clock in the morning.
+assistant: You want an 11 am appointment with Atelier Salon Willow Glen on March 6th, correct?
+user: No at ten in the morning please.
+assistant: You want a 10 am appointment on March 6th, correct?
+user: Yes that is right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed.
+user: Thank you, what is the contact number?
+assistant: The number is 408-293-3494.
+user: Thanks that is all.
+assistant: Have a great day.

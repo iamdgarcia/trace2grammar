@@ -1,0 +1,13 @@
+user: I need to search for a bus, can you help me out?
+assistant: When and where do you plan on leaving on bus, and to which destination?
+user: I'm leaving on the 11th of this month to Fresno, Ca, from Las Vegas.
+tool(FindBus): ok n_results=10
+assistant: 10 buses match your description, how about a bus departing at 7:20 am, it costs $38?
+user: Is there anything else you can find for this trip?
+assistant: What about a bus departing at 9 am, it will cost $38?
+user: How many stops will this bus have, and to which station will head to?
+assistant: This bus is a direct route bus with no stops, it arrives at 2660 Tulare St.
+user: That all sounds good, thanks?
+assistant: Will you like to purchase tickets to this bus?
+user: Not at the moment, thanks for all the help.
+assistant: Understood, have a great day.

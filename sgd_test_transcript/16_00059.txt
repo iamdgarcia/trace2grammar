@@ -1,0 +1,34 @@
+user: I'd like to buy bus tickets
+assistant: Where will you be leaving from?
+user: I'll leave from Sacramento, CA
+assistant: Could you please tell the time you plan to leave, the number of tickets you need and the final destination
+user: I'd like to leave at 8 am for San diego. I need only one ticket
+assistant: What date are you planning to leave?
+user: I'm planning to leave on the 13th
+assistant: Please confirm the following details: 1 ticket from Sacramento to San Diego on march 13th at 8 am
+user: No please change the destination to Long Beach, CA and leaving on the 1st
+assistant: Please confirm the following details: one ticket to Long Beach on march 1st
+user: Yes, that's it. Is it a one-stop bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: Yes, it is a one-stop bus. Sorry but I was unable to purchase the ticket. How about leaving at 7:50 am with a $60 ticket?
+user: Yes, that's fine
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed
+user: Could you please find me some hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 suitable hotels: Best Western of long Beach is a good 3 star hotel in the area
+user: Sounds good. Could you please help me making a reservation please?
+assistant: When would you like to check in and check out?
+user: I'd like to check in the day after tomorrow and I'll be stayng four days
+assistant: Please confirm the following details: 1 room for 4 days at Best western of long beach, in long beach, checking in on march 3rd
+user: Yes, that's it
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been successfully booked
+user: Is smoking allowed at the hotel?
+assistant: No, it's not
+user: What's their address?
+assistant: The address is 1725 Long beach boulevard
+user: Thanks for your help
+assistant: Is there anything else I can do for you?
+user: No, thanks, that's all
+assistant: Have a good day

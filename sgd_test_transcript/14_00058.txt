@@ -1,0 +1,16 @@
+user: Can you please help me find a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: Yes, there's 10 movies which you might like, out of which I recommend Hustlers rated at 94 out of 100.
+user: Sounds perfect. Can you also help me find some songs?
+tool(LookupMusic): ok n_results=3
+assistant: Sure. How about Story, from the Borbena album by Teodora?
+user: Is there anything else available? I'd like a Popular song by Hayley Kiyoko.
+tool(LookupMusic): ok n_results=3
+assistant: There are 3 songs matching your criteria, out of which I recommend Curious from the album Expectations by Hayley Kiyoko.
+user: Yes, that's perfect. Can you please play it on my patio device?
+assistant: Sure! Can you please confirm that you want me to play Curious on the Patio?
+user: Yes, please do.
+tool(PlayMedia): ok n_results=1
+assistant: Started playing. Enjoy!
+user: Thanks! That will be all for now.
+assistant: My pleasure. Have a nice day!

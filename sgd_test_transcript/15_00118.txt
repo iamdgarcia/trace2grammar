@@ -1,0 +1,37 @@
+user: Could you help me in finding a salon in Antioch.
+tool(FindProvider): ok n_results=4
+assistant: Divine Beauty Salon is a great salon in Antioch.
+user: Please help me to find a therapist in that area. I wish to meet a Family Counselor in Antioch.
+tool(FindProvider): ok n_results=2
+assistant: Do you want to meet Kappl & Wilson, a Family Counselor at Antioch.
+user: Can you find some other therapist?
+assistant: Do you want to meet Morales Miliciades, a Family Counselor at Antioch.
+user: Can you find some other therapist?
+tool(FindProvider): ok n_results=0
+assistant: I am sorry to inform you that, I am unable to find a therapist for your interest. Do you need any other help?
+user: Please try to find some other therapist once again. I wish to see a Psychologist in Redwood City.
+tool(FindProvider): ok n_results=9
+assistant: Do you want to meet Becker Hubert J, a Psychologist at Redwood City.
+user: It is nice.
+assistant: Shall I make an appointment?
+user: Yes. Please. I need it in ten in the morning.
+assistant: When do you want to meet him?
+user: Confirm my appointment on 10th of this month.
+assistant: Kindly ensure that, on March 10th appointment is confirmed with Becker Hubert J at 10 am.
+user: No. It would be afternoon 3:45. Is it possible to have an appointment for later today?
+assistant: Kindly ensure that, at 3:45 pm on March 1st.
+user: It is good.
+tool(BookAppointment): ok n_results=1
+assistant: I am sorry that I am unable to make an appointment. Do you want to meet Becker Hubert J, on March 1st at 3:30 pm?
+user: Yes. It is good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. You will receive an email about it.
+user: I wish to visit the salon at evening 6:15.
+assistant: Kindly ensure that, on March 1st, an appointment is made with the hair stylist Divine Beauty Salon at 6:15 pm.
+user: yes it is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I am sorry that, I am unable to make an appointment. Divine Beauty Salon is a great salon. Shall I confirm the appointment on March 1st at 6:30 pm?
+user: Nope.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

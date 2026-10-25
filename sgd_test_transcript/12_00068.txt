@@ -1,0 +1,26 @@
+user: I'd like to find a bus from Philadelphia to NYC on March 14th.
+tool(FindBus): ok n_results=6
+assistant: I'd be happy to assist you. There is a bus leaving at 9 am and the tickets cost $23.
+user: Can you tell me which station it will be leaving from?
+assistant: It will leave from 10th and Filbert.
+user: I'd prefer a direct bus if you can find one.
+tool(FindBus): ok n_results=6
+assistant: The 10:10 am bus is direct and costs $22.
+user: That's perfect. Can you purchase my tickets for me?
+assistant: How many people are in your party?
+user: I'll need 3 tickets.
+assistant: Let me review the details. You'd like 3 tickets on the bus leaving Philadelphia bound for New York on March 14th at 10:10 am.
+user: That's perfect. Can you tell me which station it is departing from?
+tool(BuyBusTicket): ok n_results=1
+assistant: It will be leaving from 10th and Filbert. You will receive an email confirmation shortly.
+user: Can you tell me which station it will arrive at?
+assistant: It is destined for Penn Station.
+user: Great. Can you help me locate a 2 -star hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options that may suit your needs. May I suggest Bklyn House Hotel? It has an average rating of 2 stars.
+user: What are some other options?
+assistant: Another 2 star hotel in the area is the Bogart Hotel.
+user: That sounds better to me.
+assistant: Would you like to book a room?
+user: No, I have to check with my friends first. Thank you.
+assistant: You're welcome. Have a wonderful day!

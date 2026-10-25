@@ -1,0 +1,19 @@
+user: I like Michael Garza movies. Can you find me some online?
+assistant: What genre would you like?
+user: Horror movies would be nice.
+tool(FindMovies): ok n_results=1
+assistant: You might like Scary Stories to Tell in the Dark.
+user: scary stories sounds great.
+assistant: Would you like to watch the movie now?
+user: Yes. Please play it with Hindi subtitles.
+assistant: You want me to play Scary Stories to Tell in the Dark with Hindi subtitles. Is this correct?
+user: Yes, please do that.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie.
+user: Can you get me the weather for Wednesday next week?
+assistant: What city are you checking for?
+user: Check the weather for Tiburon for March 13th.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 86 degrees Fahrenheit with a 16 percent chance of rain.
+user: Okay, that will be all. Bye for now!
+assistant: Good bye!

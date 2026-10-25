@@ -1,0 +1,32 @@
+user: Tell me about the weather for the date of March 4th.
+assistant: I can do that for you if you provide the city name.
+user: I want information on weather in Tomales.
+tool(GetWeather): ok n_results=1
+assistant: In Tomales, the average temperature is 85 degrees Fahrenheit. There is a 28 percent of there being rainfall.
+user: Okay tell me about another city. This time, tell me the forecast for next Tuesday in Toronto.
+tool(GetWeather): ok n_results=1
+assistant: There is a 55 percent chance of there being rain in Toronto. The temperature will hover around 66 degrees Fahrenheit.
+user: What is the humidity and wind speed for that day?
+assistant: The humidity is around 23 percent with a wind speed of 12 miles per hour.
+user: That's all I need concerning forecasts. I want one ticket for a one-way flight to Toronto. Can you assist me?
+assistant: Will you be departing on March 5th? If so, what city will you be flying out of?
+user: I'll be traveling starting on the 1st. Find me Economy class tickets for flights leaving from SFO and heading to Toronto.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: 4 flights match your needs. A ticket with a cost of $240 will fly with you American Airlines. The flight leaves at 4 am.
+user: It leaves at 4 am but when will it arrive in Toronto?
+assistant: The onward flight will be arriving at 7:34 pm.
+user: That sounds fine to me. Thank you.
+assistant: Do you require any other assistance with your trip?
+user: Now that you ask, I do need help with finding a rental car. Wanna help?
+assistant: Certainly. Do you plan to pick up the car on March 1st?
+user: I'll be needing it on March 12th.
+assistant: How long will you need the car and what time can I set for you to pick it up?
+user: I'll pick up the car at 20:15 and return it on the 14th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Would you like a Sedan? There is a Buick Regal Sportback ready for rental at Toronto Pearson International Airport.
+user: How much will it cost to rent that per day?
+assistant: It will cost you $38.00 a day to rent the car.
+user: That's not too bad. Sounds pretty good actually.
+assistant: Do you need help with anything else involving your trip?
+user: That will be all. I appreciate everything you helped me with
+assistant: Have a great day today. Bye for now.

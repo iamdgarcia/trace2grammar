@@ -1,0 +1,25 @@
+user: Would you please give me a hand finding something fun to do, maybe some musical shows or something?
+assistant: In which city please?
+user: I'm going to be in NYC and this is for the 7th of March please.
+tool(FindEvents): ok n_results=10
+assistant: Maybe you would enjoy a show with Abbi Jacobson who will be at the Kaufmann Concert Hall on March 7th at 4:30 pm.
+user: Sounds great, I love it.
+assistant: Do you want to obtain tickets for the event at this time?
+user: Yes, I would like to.
+assistant: How many tickets do you want?
+user: I'm going to need 3 tickets.
+assistant: Confirming 3 tickets for Abbi Jacobson on March 7th in New York.
+user: That will be fun, thanks.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is complete, enjoy the show.
+user: Thanks. I'd like to book a cab, too.
+assistant: Which type of ride would you like?
+user: A shared ride is fine.
+assistant: Confirming a pool ride for 3 to Kaufmann Concert Hall.
+user: That sounds fine. How much is it please?
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and it will arrive soon. The amount of the fare is $19.35.
+user: When will it get here?
+assistant: The cab should arrive in 6 minutes.
+user: Thank you very much, I'm good now.
+assistant: You're very welcome.

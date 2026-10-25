@@ -1,0 +1,28 @@
+user: Can you look for a rental car on Friday next week, preferably a Sedan ?
+assistant: On which date do you intend to pick it up and how long will you use?
+user: Get it at afternoon 2:30 and until the 12th.
+assistant: What will be the location of pick up?
+user: I need one in Philly.
+tool(GetCarsAvailable): ok n_results=6
+assistant: 6 cars are there. One Sedan Dodge Charger is available at 30th Street Station. Do you like it.
+user: What will be the cost per day?
+assistant: You have to pay $35.00 for one day.
+user: Can you look for one to be picked up at 12:30 in the afternoon?
+tool(GetCarsAvailable): ok n_results=6
+assistant: One nice car available at 30th Street station is a Sedan Hyundai Ioniq. Is it ok?
+user: Any other option?
+assistant: Another option is Sedan SEAT Cordoba available at Intercity Terminal. Do you prefer it?
+user: What is its cost?
+assistant: It costs $35.00 per day.
+user: Fine, are there buses going there?
+assistant: Date and place of leaving please.
+user: Departure is on 5th of this month from Washington.
+tool(FindBus): ok n_results=7
+assistant: 7 buses are going there. do you prefer one leaving at 8:30 am?. The ticket charge is $28.
+user: Looks good. Shall I get one-way flight to there. Preferably in Economy class on 7th of March. Need only one tickets.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Do you wish to fly with American Airlines which takes off at 7:10 pm with one layover? The cost of ticket is $225.
+user: That seems apt one.
+assistant: What other help you need?
+user: Thats all, thank you.
+assistant: My pleasure, meet again

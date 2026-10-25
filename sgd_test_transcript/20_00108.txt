@@ -1,0 +1,21 @@
+user: Can you find me a house to stay at?
+assistant: Sure. For what city?
+user: Find something for 1 person in LA. It should be rated 4.3 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice house located at 1224 Beverwil Drive. It is rated 4.3.
+user: Can you get me a contact number? Does the house have laundry service?
+assistant: Yes, the house offers laundry service. Their contact number is +1 877-334-5623.
+user: This house sounds great.
+assistant: Would you like to make a reservation?
+user: Yes. Book the reservation. I will be staying until the 8th of March.
+assistant: What is your check in date?
+user: I will be checking in on March 4th.
+assistant: Please confirm the following: you will be booking a house in Los Angeles for 1. You will be checking in on March 4th and checking out on March 8th. Is this information correct?
+user: Yes, that works. What is the total price?
+tool(BookHouse): ok n_results=1
+assistant: Your total cost will be $1,152. Your reservation is successful.
+user: Can you find me some child-friendly attractions? How about a museum?
+tool(FindAttractions): ok n_results=10
+assistant: You might like Autry Museum of the American West. It is a nice Museum.
+user: Okay, sounds great. That's all for now. Bye.
+assistant: Goodbye!

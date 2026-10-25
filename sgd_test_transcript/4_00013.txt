@@ -1,0 +1,16 @@
+user: I need a rental car in ATL.
+assistant: I can help you with that, but first i'll need some information. At what date and time would you like to pick the car up, and when would you like the car until?
+user: I'd like to pick it up at 17:00 on the 11th of this month and I will need it till the 12th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice SUV of Alfa Romeo Stelvio available at the Hartsfield-Jackson International airport. Would that work?
+user: Yes that sounds good, please reserve that for me.
+assistant: Would you like to add insurance?
+user: No, I shouldn't need insurance.
+assistant: You would like to reserve a SUV from the Hartsfield-Jackson International Airport to pick picked up at 5 pm on March 11th and returned on March 12th. Is that correct?
+user: Yes that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: The car has successfully been reserved.
+user: Awesome, thank you for your help.
+assistant: You're welcome. Will that be all?
+user: Yes that is all for now.
+assistant: Okay, have a nice day.

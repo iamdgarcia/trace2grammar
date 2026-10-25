@@ -1,0 +1,21 @@
+user: I want to meet a Therapist especially a Family Counselor will be perfect. Please find someone in Gilroy.
+tool(FindProvider): ok n_results=5
+assistant: Do you want to meet Leininger Anne who is also a Family Counselor in Gilroy?
+user: Yes, I want to meet them. Check about weather condition on Wednesday next week there.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 76 degree Fahrenheit in average and the chance of rain will be at 0 percent.
+user: Okay, please fix an appointment with that Therapist that you have found for me.
+assistant: What is your convenient time to fix the appointment to that Therapist?
+user: Make it at 5 o'clock in the evening.
+assistant: I need your final confirmation to fix appointment with Leininger Anne at 5 pm on March 6th.
+user: Please change the time to 14:00
+assistant: Please confirm to fix at 2 pm on March 6th.
+user: That is confirmed and get me their address.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed your appointment and they will send an email soon. Please note down their address is 8339 Church Street # 212.
+user: Also get me their phone number.
+assistant: It is 408-847-2100.
+user: Thank you a lot.
+assistant: What else you need from me?
+user: That's all thanks.
+assistant: Have a good day.

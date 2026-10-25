@@ -1,0 +1,18 @@
+user: Can you request a payment for me?
+assistant: Can you tell me the amount and the name of the contact?
+user: The name of the contact is Amelia and the amount is 115 bucks.
+assistant: Please confirm: You want me to make a transaction of $115 with Amelia. And your transaction is visible to public.
+user: No. I would like to keep the transaction private.
+assistant: Please confirm: You want me to make a private transaction with Amelia.
+user: Yes, That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made the request for you.
+user: Thank you so much!I would like to make a payment of 82 dollars to Jerry.
+assistant: Do you want me to transfer the money from app balance or debit card?
+user: I would like to transfer it from my bank account.
+assistant: Please confirm: You want me to make a payment of $82 to Jerry from your debit card. And this transaction is visible to public.
+user: Yes, That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment. It will shortly be in recipient's bank account.
+user: Thank you so much for your help. Bye!
+assistant: I am glad I could help. Bye!

@@ -1,0 +1,26 @@
+user: I need a one way flight on Alaska Airlines to San Fran.
+assistant: On which date will you depart and from which city?
+user: Leaving on the 14th from SD.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is a flight on Alaska Airlines leaving at 9:10 pm with a layover for a total of $143.
+user: At what time will I arrive at my destination?
+assistant: The flight arrives at 0:50 am.
+user: Great. Can you help me find trains going there?
+assistant: Will you departing on March 14th?
+user: I'll be departing Tuesday next week.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains. One leaves at 6:40 am for a total of $102.
+user: Do you have any other options for 1 passenger?
+tool(FindTrains): ok n_results=6
+assistant: There are 6 options. A train departs at 8 am for a total of $97.
+user: Sounds good. Can you book the train for me?
+assistant: Will you require travel insurance?
+user: Yes, I need insurance.
+assistant: Please confirm you want me to book 1 value seat on the train from San Diego to San Francisco on March 5th at 8 am.
+user: That one is great.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were successfully booked.
+user: What is the departure and arrival station?
+assistant: The train leaves from Santa Fe Depot and arrives at Salesforce Transit Center.
+user: Thanks, that's all.
+assistant: You're welcome. Have a great day.

@@ -1,0 +1,44 @@
+user: Please show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm for Running at 7 am.
+user: Ok, sounds good.
+assistant: Did you want to add another alarm?
+user: Not right now. I'd like to find a restaurant in Pinole and I will need vegetarian options.
+assistant: What type of food did you prefer?
+user: I'd like something serving noodles.
+tool(FindRestaurants): ok n_results=3
+assistant: I found 3 restaurants for you. China Delights is a nice restaurant in Pinole.
+user: Yes, that sounds good.
+assistant: Did you want to book a table here?
+user: Not right now.
+assistant: Did you need help with anything else?
+user: I'd like to book a car. I will need it from tomorrow and I'd like to pick it up at half past 10 in the morning.
+assistant: Until when did you need the car?
+user: I will need it until the day after tomorrow.
+assistant: What type of car did you prefer?
+user: I'd like a SUV.
+assistant: Did you need insurance?
+user: No, I don't.
+assistant: Where did you want to pick the car up?
+user: Peachtree Station is convenient for me.
+assistant: Please confirm you're picking up a SUV car from Peachtree Station on March 2nd at 10:30 am and dropping it off on March 3rd.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked.
+user: How much will it cost per day and what is the car's name?
+assistant: The name of the car is GMC Terrain and it will cost $34.00 a day.
+user: Thank you. Could you help share the location?
+assistant: Which address did you wish to share: Peachtree Station, 1501 Tara Hills Drive, or something else?
+user: I'd like to share 1501 Tara Hills Drive.
+assistant: Who did you want to share it with?
+user: I'd like to share it with Karen.
+assistant: Please confirm you're sharing the location 1501 Tara Hills Drive with Karen.
+user: No, I am actually sharing the address Peachtree Station.
+assistant: Please confirm you're sharing the location Peachtree Station with Karen.
+user: No, I'd like to share it with Theresa.
+assistant: Please confirm you're sharing the location Peachtree Station with Theresa.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you, that was helpful. That's all I need for now.
+assistant: Have a great day!

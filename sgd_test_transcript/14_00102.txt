@@ -1,0 +1,25 @@
+user: Can you find me a pop song by Meghan Trainor from five years ago?
+tool(LookupMusic): ok n_results=1
+assistant: How about All about That Bass by Meghan Trainor from the album Title?
+user: Can you show me some other songs?
+tool(LookupMusic): ok n_results=0
+assistant: Sorry, But there are no other song which meets your requirements. Can I assist you with anything else?
+user: Can you search again for songs by Redfoo from the album Party Rock Mansion?
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song called New Thang by Redfoo from the album Party Rock Mansion.
+user: Yes, That is the song I am looking for. Now, Find me an online Fantasy movie featuring Warwick Davis.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie called Labyrinth.
+user: Labyrinth sounds perfect to me.
+assistant: Would you like me to play the movie for you?
+user: No, Maybe some other time.
+assistant: Is there anything else I can assist you with?
+user: Play me the song you just found on speaker in patio.
+assistant: Please confirm: You want me to play New Thang in Patio.
+user: No. Play it on my living room.
+assistant: Please confirm: you want me to play New Thang in Living room.
+user: Yes, That works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. Enjoy!
+user: Okay. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

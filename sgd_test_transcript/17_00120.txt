@@ -1,0 +1,23 @@
+user: Hello, could you help me check the weather on 7th of March in Los Angeles please?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 86 degrees Fahrenheit with a 5 percent chance of rain.
+user: I see, could you get me a one-way flight there?
+assistant: Will you be departing on the March 7th?
+user: No, it will be on Wednesday next week.
+assistant: And which city are you departing from?
+user: Likely from San Francisco.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: There are 5 available flights. How about the flight with Alaska Airlines departing at 12:25 pm costing $99?
+user: Sounds great! Could you get me a rental car there please?
+assistant: And when do you need the car till?
+user: On the 11th please.
+assistant: And which date do you need the car from? On the March 6th or March 7th?
+user: On the 9th of March please.
+assistant: When do you intend to pick up the car?
+user: At 5:45 in the evening probably.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Would you like a SUV Dacia Duster available for your pickup at LAX International Airport?
+user: Sounds great!
+assistant: Do you need any further assistance?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

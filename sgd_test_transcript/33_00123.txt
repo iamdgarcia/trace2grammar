@@ -1,0 +1,19 @@
+user: Can you please find me some cool attractions?
+assistant: Sure, but first please tell me the area in which in should search.
+user: Rio de Janeiro, please.
+tool(FindAttractions): ok n_results=10
+assistant: There's a Museum which you should not miss, the Air And Space Museum.
+user: Perfect. Now let's find a house to stay in the area.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses which you might like, out of which I recommend Avenida Almirante Silvio de Noronha, 365 - Centro, rated at 4.6
+user: Sounds perfect. Let's now find one ticket for a round trip flight there, airline is not important.
+assistant: Sure, but first please tell me the date on which you plan on travelling.
+user: I'd like to fly there next Friday.
+assistant: And when do you plan on returning?
+user: I'm flying out of ATL and I plan to return on the 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's 1 flight from ATL, with Delta Airlines, taking off at 5:50 pm, with the returning flight at 10:25 pm. The flight is a connecting flight and the ticket is priced at $512.
+user: Sounds perfect.
+assistant: Is there anything else I could do for you?
+user: No, that will be all for now. Thanks for everything.
+assistant: My pleasure. Have a nice day.

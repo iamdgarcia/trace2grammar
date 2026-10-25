@@ -1,0 +1,14 @@
+user: I am in the Chicago area, and I am looking for something interesting to do. I would especially like to find a Musical performance.
+tool(FindEvents): ok n_results=9
+assistant: Ashe will be playing at Chop Shop on March 11th at 7:30 pm.
+user: That would be great. I would like to reserve a ticket for that event.
+assistant: How many tickets would you like?
+user: I would like 1 ticket, please.
+assistant: You would like 1 ticket for Ashe on March 11th in Chicago, is this correct?
+user: Yes, that sounds correct. What is the address for the event?
+tool(BuyEventTickets): ok n_results=1
+assistant: The address for the venue is 2033 West North Avenue. Your reservation is confirmed. Enjoy the show!
+user: Thank you very much for your help!
+assistant: Is there anything else I can help you with today?
+user: No, I'm all set, thanks.
+assistant: Have a great day!

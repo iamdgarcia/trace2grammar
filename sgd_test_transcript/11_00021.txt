@@ -1,0 +1,12 @@
+user: I'll be travelling to NYC and need to find a house for 2 people.
+tool(SearchHouse): ok n_results=10
+assistant: Your search yielded 10 available houses, among them a nice, 4.4 star rated one at 100 Greenwich Street.
+user: The house sounds good.
+assistant: Should I go ahead and reserve this house?
+user: Yes, please. Please book the house with check in date of the 8th, and a check-out date of 13th of this month.
+assistant: Okay, no problem. Please confirm that your party of 2 will be checking into the house in New York on March 8th, and checking out on March 13th.
+user: Yes, sounds perfect. Could you tell me the total price? Also, please give me this place's contact information.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. The total cost of your reservation is $2,160. The place can be reached at +1 212-262-3200.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Glad to have been of service. Goodbye.

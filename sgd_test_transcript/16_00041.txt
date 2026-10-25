@@ -1,0 +1,40 @@
+user: I need service of salon, can you look for one?
+assistant: Where do you want the salon?
+user: I am looking for one in Cupertino.
+tool(FindProvider): ok n_results=6
+assistant: 6 salons are there in Cupertino. The name of shop is Great Clips.
+user: Can I get its number? I would like to know if its unisex.
+assistant: Its a unisex one. Call them at 408-255-2178.
+user: good, that will do.
+assistant: You want to get seat assured?
+user: Not now.thank you.
+assistant: What else do you need?
+user: Find one therapist there?
+assistant: Are you looking for Family Counselor or Psychologist? Do you want it in Cupertino?
+user: Right, better a Psychologist.
+tool(FindProvider): ok n_results=1
+assistant: In Cupertino the Psychologist could be Center For Learning. Is it ok?
+user: It is better.
+assistant: Do you like to get reservation there?
+user: Surely, make it now.
+assistant: When do you want it?
+user: Get it at 2 o'clock in the afternoon.
+assistant: Date please.
+user: Date should be 9th of March.
+assistant: Please verify the details, consult with Center for Learning on March 9th at 2 pm.
+user: No, try for booking at 11:30 am on 12th of this month
+assistant: please verify, you changed request to March 12th at 11:30 am.
+user: Yeah, right. Please give their address and phone number.
+tool(BookAppointment): ok n_results=1
+assistant: It is booked successfully. You will receive email in this regard. They are at 20823 Stevens Creek Boulevard # C3 and contact number is 408-973-9332.
+user: Thank you. Can you book a seat at the salon we found on that day.
+assistant: What is the time of visit?
+user: Get it at quarter past 3 in the afternoon.
+assistant: Please verify that you are visiting Great Clips salon at 3:15 pm on March 12th.
+user: Please change the time to afternoon 1:30.
+assistant: Ok, you are visiting at 1:30 pm on March 12th.
+user: Great. What about their rating and address?
+tool(BookAppointment): ok n_results=1
+assistant: The rating is 4.3 and addres is 4045 East Castro Valley Boulevard. Your reservation is successful.
+user: Good service, thank you.
+assistant: Have a great day.

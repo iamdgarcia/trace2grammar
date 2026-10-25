@@ -1,0 +1,12 @@
+user: I want to see a War movie.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 available. How about The Load?
+user: The Load would be excellent. I want to see it now.
+assistant: You want to see the Load with English subtitles.
+user: Yes, that would be fine.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: Thanks a lot.
+assistant: Would you need anything else?
+user: No, thank you.
+assistant: Enjoy your day.

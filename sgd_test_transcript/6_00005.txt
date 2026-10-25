@@ -1,0 +1,22 @@
+user: Can you help me find a therapist please?
+assistant: What kind? Maybe a Psychologist or a Family Counselor?
+user: I'm looking for a Psychologist
+assistant: OK, in what city?
+user: I need a Psychologist in St. Helena
+tool(FindProvider): ok n_results=1
+assistant: There's a Psychologist in St. Helena named Schmall Rahima S you might want to visit
+user: That sounds like a plan
+assistant: Do you want an appointment then?
+user: Yes that would be lovely
+assistant: For what time?
+user: I think afternoon time, around 3:45 pm is good
+assistant: What date do you want to visit?
+user: Can you make one for March 1st please?
+assistant: Confirming a 3:45 pm appointment on March 1st with Schmall Rahima S right?
+user: Yes please, also where is their office?
+tool(BookAppointment): ok n_results=1
+assistant: It's been booked and you'll get an e-mail confirmation in a bit, also find them at 1030 Main Street #205
+user: And their phone number?
+assistant: You can reach them at 707-318-4470
+user: Cool that's it for now, later!
+assistant: Take care, laters!

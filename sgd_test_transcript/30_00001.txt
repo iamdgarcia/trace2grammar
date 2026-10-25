@@ -1,0 +1,37 @@
+user: I want to find something in Las Vegas to do on the 6th of March, any ideas?
+assistant: Are you interested in music, theater, or any other particular category?
+user: Tend to like events in the drama category.
+tool(FindEvents): ok n_results=2
+assistant: There are 2 events you may like, how about Marriage Can Be Murder? This event is taking place on March 6th at 5 pm at the Showroom at the D Las Vegas.
+user: Sounds good, but can I hear some more events that you found?
+assistant: What about Young Frankenstein, taking place at Summerlin Library on March 6th at 6 pm?
+user: Can you tell me the address of the event?
+assistant: Sure, the even is located at 1771 Inner Circle Drive.
+user: What about the ticket prices, what's one ticket going to cost?
+assistant: One ticket costs $25 for this event.
+user: Sounds great, thanks for finding the event.
+assistant: Would you like to buy tickets to this event right now?
+user: Not right now, I actually need to find a house to stay in that area that has a 3.3 rating or higher.
+tool(SearchHouse): ok n_results=7
+assistant: I found a nice house with a 3.3 rating at 1215 South Las Vegas Boulevard, interested?
+user: The house sounds like it would be a great choice for me, thanks.
+assistant: Shall I make a reservation for this house?
+user: Not right now, thank you.
+assistant: Is that all that I can help you with for today?
+user: Any direct buses heading to that location, I want to leave from SF on the 1st of this month.
+tool(FindBus): ok n_results=6
+assistant: There is a bus departing at 7:50 am, it costs $44.
+user: Is there any other bus you can find for 1 person that leaves tomorrow?
+tool(FindBus): ok n_results=6
+assistant: I found a bus that departs at 9:30 am, it costs $56.
+user: That bus sounds good, please purchase tickets to the event you found.
+assistant: You wish to buy 1 ticket to Young Frankenstein, playing in Las Vegas on March 6th, correct?
+user: Actually make it four tickets instead of one.
+assistant: Understood, 4 tickets will be reserved for the event taking place in Las Vegas.
+user: That works for me, thanks for the help.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been reserved, enjoy your event!
+user: Great, thanks a lot for all your help.
+assistant: Is that all that I can help you with for today?
+user: Yes, that just about covers everything, thank you.
+assistant: No problem, have a great day.

@@ -1,0 +1,36 @@
+user: I need to buy bus tickets leaving from Sacramento and i will be leaving on 6th of this month
+assistant: What is your departure time and your ticket requirement?
+user: I have to depart at quarter past 6 in the evening and i need 2 tickets
+assistant: which is your destination?
+user: I need to go to Fresno
+assistant: Please give confirmation details: You require 2 bus tickets from Sacramento to Fresno on March 6th at 6:15 pm with no extra luggage
+user: No, i have to depart from San Francisco and need 3 tickets
+assistant: Please give confirmation details: Your bus ticket requirement is 3 from San Francisco
+user: I prefer to start on later today with excess luggage to carry
+assistant: Please give confirmation details: The bus starting on March 1st and you have extra luggage with you on bus
+user: Yes that is perfect
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry i failed due to errors and what is your opinion on catching a bus starting at 6:20 pm & costing $42?
+user: That is fine
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket booking is done
+user: Can i know the number of bus stops?
+assistant: This bus is a direct one
+user: Thank you very much. Please search for a rental car for 11th of this month and i need to pick it up at 14:00
+assistant: Till which date you need the car and are you picking it from Fresno?
+user: That is perfect and i require it till March 13th
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found a nice available Sedan Dodge Charger car at Fresno Yosemite International Airport
+user: what is its cost per day?
+assistant: The car costs at $31.00 per day
+user: That is fine and i require to book the rental car
+assistant: Are you needing add insurance?
+user: Bo, i don't require insurance
+assistant: Please give confirmation details: You require a sedan car from Fresno Yosemite International Airport on March 11th at 2 pm and drop off date will be on march 13th and car is without insurance
+user: That is good
+tool(ReserveCar): ok n_results=1
+assistant: Your car booking is done
+user: Thank you very much
+assistant: Any other help you require?
+user: No, thanks a lot
+assistant: Have a wonderful day

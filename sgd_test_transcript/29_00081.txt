@@ -1,0 +1,36 @@
+user: I have some friends visiting and need something interesting to do. Preferably something in the Los Angeles area on March 10th.
+assistant: Is there anything you're interested in? For example Music, Theater, etc.
+user: I would really like to go to a show.
+tool(FindEvents): ok n_results=10
+assistant: I suggest A Year In Dragonfly, it's quite a popular show. It takes place at Studio C Artists on March 10th at 5:30 pm.
+user: That works for me. I also need a house to stay at that has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I managed to find 10 houses you may like. I recommend the house at 1020 South Figueroa Street. It has a rating of 4.1.
+user: Great, what's the contact number for that house?
+assistant: You can call them at +1 213-748-1291.
+user: The house seems really nice.
+assistant: Would you like me to book a reservation for you at this house?
+user: Not at this time, no.
+assistant: Is there anything else I can assist you with?
+user: Can you find me a bus that goes there?
+assistant: You're planning on leaving on March 3rd, correct?
+user: Yes, that is correct.
+assistant: Where will you be departing from?
+user: I'd like to leave from San Diego.
+tool(FindBus): ok n_results=10
+assistant: Would you like to take the bus leaving at 9:10 am? The ticket costs $25.
+user: Can you tell me if it's a one-stop bus?
+assistant: It's a direct bus ride.
+user: That works for me.
+assistant: Is there anything else I can assist you with?
+user: I'd like to buy tickets for that event you found earlier.
+assistant: How many tickets would you like to buy?
+user: I'd like to buy just 1 ticket.
+assistant: So you'd like 1 ticket for A Year In Dragonfly for March 10th in Los Angeles, is this correct?
+user: No, actually I want to buy two tickets.
+assistant: So you'd like 2 tickets for your reservation on March 10th, is this correct?
+user: Yes, that sounds good. How much does a ticket cost and where can I find the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been booked, hope you like it! You can find the venue at 6448 California 2. The cost per ticket is $55.
+user: Thank you so much, that's all I needed.
+assistant: Have a wonderful day!

@@ -1,0 +1,28 @@
+user: Help me search for a hotel.
+assistant: What city do you want to search in?
+user: I want to search in New York City.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels in New York City. There is a 5 star hotel called 1 Hotel Brooklyn Bridge you might like.
+user: How much is it for a night?
+assistant: It is $465 for a night.
+user: What other hotels can you recommend? I want 1 room.
+tool(SearchHotel): ok n_results=9
+assistant: There are 9 hotels that match. There is a 5 star hotel called 1 Hotel Central Park you might like.
+user: What are some of the other hotels that came up?
+assistant: There is a 3 star hotel called 11 Howard you might like.
+user: I like the sound of that.
+assistant: Do you want me to book a room?
+user: We can do that later.
+assistant: What else can I do for you?
+user: What are some attractions to do in New York City?
+tool(FindAttractions): ok n_results=10
+assistant: You can visit the 9/11 Tribute Museum, it's a museum.
+user: What's a number I can call them at? And is it okay for kids?
+assistant: You can call them at 866-737-1184. And it's okay for kids.
+user: Nice. Now back to that hotel, please book me a room. I want to check in next Friday and stay for three days.
+assistant: I'll book you 1 room at 11 Howard in New York starting on March 8th for 3 days, do you confirm this?
+user: Yes, please book it.
+tool(ReserveHotel): ok n_results=1
+assistant: I've booked the room for you.
+user: Thanks for all the help. I'll be going now.
+assistant: Goodbye and have a terrific day.

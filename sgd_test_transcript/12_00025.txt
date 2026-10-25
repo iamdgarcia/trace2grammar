@@ -1,0 +1,42 @@
+user: Please purchase a bus ticket for me.
+assistant: No problem, how many tickets and what time did you need?
+user: 1 person for 12:30 in the afternoon.
+assistant: Where would you like to go? Where are you located and when did you want to leave?
+user: I'm in Fresno and would like to leave for vegas on Monday next week.
+assistant: PLease confirm: 1 bus ticket departing from Fresno on march 4th at 12:30 pm and set to arrive in las vegas.
+user: No, make it long beach.
+assistant: Please confirm: 1 ticket leaving fresno and arriving at long beach.
+user: Yes, that's correct. Please provide me with the station it arrives at.
+tool(BuyBusTicket): ok n_results=1
+assistant: It will be the Downtown station. Unfortunately, we weren't able to book that ticket due to a failure in the system. However, there's a 12:20 pm bus for $35. Would you like this instead?
+user: Yes, please book that.
+tool(BuyBusTicket): ok n_results=1
+assistant: This ticket is now confirmed.
+user: I'll need a rental car, what do you have?
+assistant: Would you like this car on march 4th?
+user: The 10th of this month.
+assistant: What time would you like to pick this car up?
+user: 12 pm.
+assistant: How long will you be using this car?
+user: Until the 11th please.
+assistant: Will the pickup be at Long Beach?
+user: Yes, that's correct, thanks.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have a SUV alfa romeo stelvio which could pick you up at the LGB Airport.
+user: No, I'd rather something else.
+assistant: How about a sedan audi a8 available at LGB airport?
+user: What's does this cost per day?
+assistant: It's $32.00 per day.
+user: What else is there?
+assistant: There's a sedan buick regal sportback available for the downtown station.
+user: What's the cost per day?
+assistant: It's $31.00 per day.
+user: Perfect, now I'll need a rental car.
+assistant: Shall I add insurance?
+user: No need for insurance
+assistant: Please confirm: A sedan is set to arrive at 12 pm with a Downtown station pick up on march 10th and a drop off on march 11th.
+user: Great, thanks so much.
+tool(ReserveCar): ok n_results=1
+assistant: This car reservation is now complete.
+user: I really appreciate all your help.
+assistant: Have a wonderful day.

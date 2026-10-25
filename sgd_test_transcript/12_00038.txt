@@ -1,0 +1,32 @@
+user: I want bus tickets! I am heading to Seattle, WA.
+assistant: What day are you leaving? Where are you leaving from? And how many tickets do you want?
+user: I want to leave on the 11th and I will be departing from Vancouver. And I want 4 tickets.
+assistant: What time do you want to depart?
+user: I changed my mind, I want to leave on the 3rd of March. I want to depart at 3:45 in the afternoon.
+assistant: Please confirm the following details: You want 4 tickets for the March 3rd bus leaving at 3:45 pm. It's departing from Vancouver and arrives in Seattle.
+user: Yes, that is fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry the booking was unsuccessful. How about the bus departing at 3:40 pm. It's $24.
+user: Yes, that works.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thank you. Can you find a rental car there too. I want it from next Friday.
+assistant: What time do you want to pick up the car and how long do you want to use it.
+user: I want it until the 12th and I want to pick it up at 2 o'clock in the afternoon.
+assistant: Do you want to pick up the rental from Seattle?
+user: Yes, I do.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars you may like. A Audi A8 Sedan is available at King Street Station.
+user: How much does it cost?
+assistant: $32.00 per day.
+user: It sounds great. I want to reserve it.
+assistant: Do want insurance too?
+user: No thanks.
+assistant: please confirm the following details: Renting a Sedan from King Street Station. You will be picking up the car on March 8th at 2 pm and dropping it off on March 12th.
+user: I changed my mind. I want insurance.
+assistant: Please confirm the following details: Buying insurance and picking up the car from King Street Station.
+user: Yes, that works.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thank you! That's all I wanted.
+assistant: Have a nice day!

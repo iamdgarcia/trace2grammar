@@ -1,0 +1,25 @@
+user: Hello! Can you help me find a hotel?
+assistant: I'd be happy to. Where would you like to stay?
+user: I need a hotel in Paris, France.
+tool(SearchHotel): ok n_results=10
+assistant: May I suggest the 4 star Ac Hotel By Marriott Paris Porte Maillot?
+user: That sounds nice.
+assistant: Would you like to reserve a room?
+user: Not right now.
+assistant: Is there something else I can help you with?
+user: Yes, I'd like to find a rental car there from the 5th of this month.
+assistant: When would you be picking it up and how long will you need it?
+user: I'd like to pick it up at five in the evening and I'll return it on the 10th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is an SUV, an Alfa Romeo Stelvio, available at Orly International Airport.
+user: I'd like that one.
+assistant: Would you like to reserve the car at this time?
+user: Yes, I would like to make a reservation.
+assistant: Would you like to include insurance?
+user: No, I'd like to decline the insurance.
+assistant: You would like to pick up the SUV from Orly International Airport on March 5th at 5 pm and return it on March 10th. You have declined the additional insurance. Is that correct?
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Great! Thanks so much for the assistance.
+assistant: You're welcome. Enjoy your trip!

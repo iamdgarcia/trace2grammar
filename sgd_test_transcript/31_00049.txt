@@ -1,0 +1,38 @@
+user: I am interested in finding a salon.
+assistant: Can you tell me the city where I should look for the salon?
+user: The salon I am looking for should be in Livermore.
+tool(FindProvider): ok n_results=6
+assistant: There are 6 salons which you might want to visit. One of the salons is the Fusion 3 Salon Livermore in Livermore.
+user: Can you tell me if this salon is a unisex one?
+assistant: This salon is not considered a unisex salon.
+user: Can you give me the phone number I can use to call them, and could you also tell me their address?
+assistant: The address of the salon is 1776 First Street, and if you want to give them a call you can at 925-447-1776.
+user: Can you suggest me some other salon?
+assistant: Another nice salon is Great Clips which can be found in Livermore.
+user: That seems nice. I want to have the appointment reserved for me at this salon.
+assistant: Can you tell me the time you prefer for the appointment, and also the date when you want to have the appointment?
+user: I will be available to have the appointment on March 9th at five pm.
+assistant: Can you please confirm that you want to book an appointment with Great Clips salon on March 9th at 5 pm?
+user: Yes that is what I want. Is this salon a unisex one?
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been made, and I can confirm that the salon is a unisex one.
+user: Can you tell me the average rating this salon has, and the phone number I can use to call them?
+assistant: If you want to call them you can at 408-255-2178, and the average rating of the salon is 3.6
+user: I appreciate it very much. Though I also need to find a restaurant there where I can eat something. The restaurant I am interested in should be considered cheap.
+assistant: Is there some specific kind of food you would like the restaurant to serve?
+user: I want to find a restaurant which serves Asian Fusion.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant which you can consider going. The restaurant is Sai's T Restaurant which can be found in Livermore.
+user: Can you check if they have outdoor seating?
+assistant: From what I can see they do not have outdoor seating.
+user: That seems nice. I want to have a table booked for me at the restaurant, and it should be for two people.
+assistant: Can you tell me the time you prefer to book the table for?
+user: The time which suits me for booking the table at the restaurant is 12:45 pm.
+assistant: Would you please confirm that you want to have a table for 2 people booked at the Sai's T Restaurant in Livermore on March 9th at 12:45 pm?
+user: Yes that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made.
+user: Can you tell me the user rating of the restaurant, and if they serve vegetarian options.
+assistant: I am glad to say that they have vegetarian options, and the rating of the users of the restaurant is 4.5.
+user: I am grateful. That would be all.
+assistant: Have a good time!

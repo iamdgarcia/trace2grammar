@@ -1,0 +1,30 @@
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=3
+assistant: You have one for 9 am titled Get up.
+user: Great. I want to find a restaurant.
+assistant: What kind of cuisine?
+user: Some Korean Barbeque.
+assistant: In which area?
+user: I want to find somewhere in Burlingame that is average priced.
+tool(FindRestaurants): ok n_results=1
+assistant: Sesame is a lovely restaurant in Burlingame.
+user: Do they serve vegetarian food and where is it located?
+assistant: It is located at 1355 Broadway and there are no vegetarian options.
+user: I want to reserve a nice hatchback when I get there. I want to pick it up at Lawrence Station and keep it till the 9th.
+assistant: What time would you like to pick up the car?
+user: At half past 10 in the morning.
+assistant: When would you like the car and would you be needing insurance?
+user: I need it from the 6th of March and I do not require insurance.
+assistant: You would like to pick up a hatchback at Lawrence Station from March 6th at 10:30 am and drop it off at March 9th, with no insurance?
+user: Yes, that is right.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: I want to share the location
+assistant: Would you like to share the location Lawrence Station, 1355 Broadway or somewhere else? Who would you like to share it with?
+user: I would like to share the location 1355 Broadway with Jacob.
+assistant: You would like to share the location 1355 broadway with Jacob?
+user: Yes, I do.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location for you.
+user: Thanks, you have been very helpful. That's all.
+assistant: Enjoy your day.

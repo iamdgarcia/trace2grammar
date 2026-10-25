@@ -1,0 +1,19 @@
+user: Will you find a place buy with a garage and 2 baths?
+assistant: How many bedrooms? Which area?
+user: I prefer 2 bed rooms in Vacaville with in-unit laundry.
+tool(FindHomeByArea): ok n_results=2
+assistant: Found 2 houses. There's Meadowood Apartments located at 199 Aegean Way for $2,700,000.
+user: Great.
+assistant: Schedule a visit?
+user: I would like to visit on the 2nd of this month.
+assistant: Confirm visit of Meadowood Apartments on March 2nd.
+user: Cool. Their phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit. You may reach them at 707-448-7056.
+user: Thanks. What are my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: 9 am Wake up.
+user: Nice.
+assistant: Add an alarm?
+user: No, that's all.
+assistant: Thanks.

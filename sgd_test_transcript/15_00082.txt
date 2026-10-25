@@ -1,0 +1,22 @@
+user: I want to meet a Therapist especially a Family Counselor will be great. Search for some one.
+assistant: Which is the City where you want me to search for the Therapist?
+user: Search for someone in Santa Rosa.
+tool(FindProvider): ok n_results=8
+assistant: I searched and got 8 results. What about your opinion on a Family Counselor name Auer Patience in Santa Rosa.
+user: Yes, this contact is okay for me. I want to check for the weather condition on Monday next week there.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 87 degree Fahrenheit in average and the chance of rain will be at 7 percent.
+user: I also want to check about the wind speed and Humidity.
+assistant: 24 percent of Humidity and wind speed is will be 11 miles per hour in average. Hope this information useful to you.
+user: Thanks for the information. Now I need your help to book an appointment with the Therapist that I have selected before. And I need to meet them at 2:15 in the afternoon.
+assistant: Please confirm to fix an appointment with Auer Patience at 2:15 pm on March 4th.
+user: Please change the time to 5:15 pm.
+assistant: Please confirm to fix an appointment with Auer Patience at 5:15 pm.
+user: It is confirmed and you can proceed. Also let me know their address details for my reference.
+tool(BookAppointment): ok n_results=1
+assistant: Please note that their address is 2455 Bennett valley Road. Unfortunately I was not able to book the appointment on your required time. But I can get the appointment with auer Patience at 5:30 pm on the same day i.e. March 4th. Shall I fix it?
+user: Okay, that is good. Proceed.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully confirmed and the same will be emailed you soon.
+user: Than you very much for your help and that's all I want.
+assistant: Have a good day.

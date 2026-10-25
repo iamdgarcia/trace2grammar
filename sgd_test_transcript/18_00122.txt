@@ -1,0 +1,23 @@
+user: I want to go out to eat at an average priced place in Oakland.
+assistant: What kind of food would you like?
+user: I'm needing some comfort food.
+tool(FindRestaurants): ok n_results=2
+assistant: Bowl'd Bbq is a nice place in Oakland.
+user: That will work. Can you book a table there for three people on the 9th?
+assistant: What time would you like the reservation?
+user: I need the reservation for 6 in the evening.
+assistant: Please confirm: You want to book a table for 3 at Bowl'd Bbq in Oakland on March 9th at 6 pm?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: I also need a cab there. Can you get me a normal ride to 4869 Telegraph Avenue.
+assistant: Please confirm: You need a regular cab to 4869 Telegraph Avenue with 3 seats. Is this right?
+user: Yes, that's right.
+tool(GetRide): ok n_results=1
+assistant: Your cab is booked and on the way.
+user: How much will it cost? And how long until they get here?
+assistant: The ride will be $34.49 and it will be here in about 5 minutes.
+user: Thanks for the assistance.
+assistant: Is there anything else I can help with?
+user: Nope, that was it, thank you.
+assistant: Enjoy your evening!

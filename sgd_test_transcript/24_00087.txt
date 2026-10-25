@@ -1,0 +1,24 @@
+user: I want to see an Imax movie in San Rafael. Can you tell me what is showing in the near future?
+tool(FindMovies): ok n_results=4
+assistant: There are 4 movies located in the San Rafael area. Your options include A Faithful Man, Angel Has Fallen, and Hustlers. Do any of these movies seem appropriate?
+user: No thank you. Can you find me something else with the same details?
+assistant: The Farewell is a nice movie that may be what you are looking for.
+user: The Farewell? Oh I completely forgot about that movie. That should be perfect.
+assistant: Do you need anything else right now?
+user: I want to find a place to eat in the same area as the show.
+assistant: What time should I make the reservation for?
+user: The reservation should be for 13:00 please.
+assistant: Is there a particular restaurant that you wish to book a table at?
+user: Try booking a table at Rangecafe. That would be nice.
+assistant: I am about to book a table for 2 people at the Rangecafe Bar and Grill in San Rafael. This reservation is for 1 pm on March 1st. Proceed with these details?
+user: That should work fine. How are the prices of the food? Is it intermediate priced? Tell me the phone number to the establishment as well.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is moderate priced based on what I found. The Rangecafe Bar and Grill has a phone number of 415-454-6450. Unfortunately, I could not book a table with those details. I can however book a table for 2 on March 1st at 12:30 pm.
+user: 12:30 should be fine. It's not much different from the original reservation time.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved at Rangecafe Bar and Grill.
+user: Thank you very much. The movie you found earlier, can you find out what time it is showing at Century Regency?
+tool(GetTimesForMovie): ok n_results=1
+assistant: The Farewell will be showing at 8 pm at Century Regency.
+user: That time should work out fine. That's all I need for now. Thank you.
+assistant: Please have a wonderful day. Bye for now.

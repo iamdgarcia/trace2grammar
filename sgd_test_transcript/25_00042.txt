@@ -1,0 +1,23 @@
+user: I think I might go see a movie. Can you see what ones are playing right now?
+assistant: Sure, where at?
+user: Can you see what's showing in San Leandro?
+tool(FindMovies): ok n_results=4
+assistant: Sure, I found 4 movies. Are you interested in Ad Astra, Angel Has Fallen, or Hobbs and Shaw?
+user: Nah, what else did you find?
+assistant: There's also Overcomer - how about that?
+user: Overcomer sounds good.
+assistant: Ok, would you like to buy tickets?
+user: No, not right now. For now, can you just find some music to put on? I've heard good things about the Yours album.
+tool(LookupMusic): ok n_results=3
+assistant: Ok, I found 3 songs you might like. How about Blue Tacoma by Russell Dickerson from the album Yours?
+user: Yes, that would be perfect.
+assistant: Would you like me to put it on?
+user: Yes, can you?
+assistant: Sure, to confirm, you'd like to play Blue Tacoma on the Living room speakers. Is that right?
+user: Yes, that's right. What year is that from again?
+tool(PlayMedia): ok n_results=1
+assistant: Your song is playing. It's from 2016.
+user: Great, thank you.
+assistant: Sure, anything else I can do?
+user: No, that's all. Thanks!
+assistant: Sure, have a good day.

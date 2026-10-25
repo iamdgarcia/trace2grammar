@@ -1,0 +1,33 @@
+user: Hi I'll be travelling with some friends and need to find a hotel for three rooms in Philadelphia.
+tool(SearchHotel): ok n_results=10
+assistant: I recommend a hotel called Aka Rittenhouse Square, it has a 4 star rating.
+user: Is there anything else with a 4 star rating you could find?
+tool(SearchHotel): ok n_results=10
+assistant: I recommend a hotel called Hilton Philadelphia At Penn'S Landing, it has a 4 star rating.
+user: That works for me.
+assistant: Do you want me to reserve the rooms?
+user: Not at this time, no.
+assistant: Can I assist you with anything else?
+user: I'd like to book a flight with American Airlines departing on Saturday this week. Any class is fine.
+assistant: Which city will you be departing from?
+user: I want to depart from Berlin.
+assistant: On what day will your returning flight be?
+user: I will be coming back on the 13th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Are you ok with flying with American Airlines? The flight will depart at 2:55 am and it has one layover. The returning flight will leave at 1:20 pm and the total cost is $723.
+user: That works for me. Now back to the hotel you found. I'd like to check in on the 3rd of this month.
+assistant: What will be the duration of your stay?
+user: I plan to stay for two days.
+assistant: So you'd like 3 rooms at Hilton Philadelphia At Penn'S landing in Philadelphia, checking in on March 3rd and staying for 2 days. Is this correct?
+user: That is perfect.
+tool(ReserveHotel): ok n_results=1
+assistant: Your rooms have been successfully booked!
+user: Is smoking permitted in the hotel and what is the cost per night?
+assistant: Smoking is not allowed, no. The cost per night will be $276.
+user: Thank you for all your help. Can you also suggest some attractions?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. I suggest Barnes Foundation, it's a museum.
+user: Is there anything else?
+assistant: I also suggest Bartram's Garden, it's a park.
+user: Thank you so much, that's all I needed.
+assistant: Enjoy your stay!

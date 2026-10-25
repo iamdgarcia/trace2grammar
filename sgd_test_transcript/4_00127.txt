@@ -1,0 +1,26 @@
+user: Could you help me in searching a bus?
+assistant: Where do you want to start from and where do you want to go? When will you leave?
+user: I am starting from Anaheim to Vegas on the 12th.
+tool(FindBus): ok n_results=4
+assistant: I searched and found 4 buses. It is starting at 6:50 am. The cost is $39.
+user: Do you search for some other thing?
+assistant: What do you think about a bus starting at 8:10 am? The cost is $38.
+user: Number of stops the bus have?
+assistant: It is a direct bus only.
+user: What is the starting station of the bus?
+assistant: It starts from Anaheim Bus Station.
+user: It is good.
+assistant: Shall I book tickets in this bus?
+user: Yes. Please go ahead.
+assistant: Number of tickets do you need?
+user: I need it for 1 person.
+assistant: Kindly ensure that, on March 12th, you need 1 ticket from Anaheim to Las Vegas at 8:10 am. You are not having any extra luggage.
+user: Nope. I don't have any excess luggage.
+assistant: Kindly ensure that, you need a ticket to Anaheim. You have extra luggage.
+user: Yes. It is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked.
+user: Thank you so much.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a fantastic day.

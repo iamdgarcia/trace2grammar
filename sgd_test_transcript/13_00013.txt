@@ -1,0 +1,21 @@
+user: Can you find me a Broadway show on March 8th?
+assistant: What city should i search in?
+user: Something around ATL.
+tool(FindEvents): ok n_results=4
+assistant: I found 4 events you may like. Grounded is playing at 7 Stages Theatre on March 8th at 6:30 pm.
+user: How much is a ticket and where is the venue located?
+assistant: $30. The venue is at 1105 Euclid Avenue Northeast.
+user: Can you find a four star hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: How about the 4 star hotel called Ac Hotel By Marriott Atlanta Buckhead at Phipps Plaza?
+user: Sounds nice.
+assistant: Would you like me to make the reservation?
+user: Not right now. I do want to purchase tickets to that event though.
+assistant: How many?
+user: Three tickets.
+assistant: Please confirm the following: 3 tickets to Grounded on March 8th in Atlanta.
+user: Yes.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed. I hope you have a good time!
+user: Thank you for everything. That is all.
+assistant: Have a good day.

@@ -1,0 +1,20 @@
+user: Find me a movie to watch in Fremont at Century at Pacific Commons and XD
+tool(FindMovies): ok n_results=3
+assistant: How about the 3 that is Hobbs and Shaw, Mission Mangal or Saaho?
+user: Mission Mangal is good
+assistant: Should i get the tickets?
+user: No, not now. Get a table for one at the Elephant Bar
+assistant: At what time?
+user: 12:45 pm please
+assistant: Please confirm: booking a table for 1 at Elephant Bar restaurant in Fremont at 12:45 pm on March 1st
+user: Yes, thats right
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry there was an error, Should i try booking a table for 1 at Elephant Bar restaurant in Fremont at 12:30 pm on March 1st
+user: Yes, even that works
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked
+user: Thanks a lot, what time is the movie you found
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 show at 1:30 pm for the movie at Century at Pacific Commons and XD
+user: sounds good, thats all
+assistant: have a great day!

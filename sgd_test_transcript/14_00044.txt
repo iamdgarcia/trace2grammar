@@ -1,0 +1,15 @@
+user: I want to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies. What about Give Me Liberty? It is rated 92 out of 100.
+user: Sounds great. Can you find me some songs? I like Alex Angel and I love the album Sex Rock. Rock is my favorite genre.
+tool(LookupMusic): ok n_results=2
+assistant: What about Easy World by Alex Angel from the Album Sex Rock?
+user: I want to play it on the patio.
+assistant: Please confirm: playing the song Easy World on the patio.
+user: Yes, sounds good. Was the song released in 2012?
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy. The song was released in 2018.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No that's all.
+assistant: Have a great day!

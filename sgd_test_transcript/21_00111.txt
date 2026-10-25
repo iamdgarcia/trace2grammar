@@ -1,0 +1,30 @@
+user: Locate something I would find interesting that will be happening in or near Los Angeles in the Theater category on the 11th.
+tool(FindEvents): ok n_results=10
+assistant: These are the 10 that came up as ones you would enjoy the Upright Citizens Brigade Sunset is presenting Anything Goes on March 11th at 4 pm.
+user: That would be a wonderful show. Can you find me a bus ticket from San Fran for next Tuesday?
+tool(FindBus): ok n_results=9
+assistant: There are these 9 buses that are going that way one is $42 a seat and you would be leaving at 7:30 am.
+user: What station would I be leaving from?
+assistant: That would be the Transbay Terminal.
+user: Super.Next a round trip ticket.
+assistant: When did you want to head home - March 11th and leave on March 5th?
+user: No, almost, I won't be heading home until the 12th and I will be leaving March 2nd.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: I found a seat on Alaska Airlines for $152 your departure would be at 12:25 pm and to return home you would leave at 11:55 am, how does that sound?
+user: Sounds alright. I will also need a room at a three star hotel, for one.
+tool(SearchHotel): ok n_results=10
+assistant: Here are the first 10 that came up, you could stay at the Ac Hotel By Marriott Beverly Hills it is rated with 3 stars.
+user: Do any of them allow smoking in the rooms, maybe look for a four star hotel.
+tool(SearchHotel): ok n_results=9
+assistant: Dream Hollywood has 4 stars.
+user: I'll need the address and phone number from you.
+assistant: They are located at 6417 Selma Avenue, Hollywood, CA 90028, USA and can be reached at +1 323-844-6417.
+user: Thank you and that show we talked about - get three tickets.
+assistant: Alright that will be 3 seats for Anything Goes playing in Los Angeles on March 11th, correct?
+user: You got it right, good going.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are taken care of have fun!
+user: Appreciate it now.
+assistant: Will you be needing me further?
+user: No, you go on.
+assistant: Have a very nice day.

@@ -1,0 +1,24 @@
+user: Can you help me find a train ticket from Anaheim for one on the 14th of this month?
+assistant: Which city were you going to?
+user: I'm traveling to Phoenix, Az.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains for you. One leaves at 6:30 am and costs $112.
+user: That sounds good. I'd like to book train tickets with trip insurance and fare class doesn't matter to me.
+assistant: Please confirm you're booking a value ticket for 1 on the train from Anaheim to Phoenix leaving March 14th at 6:30 am.
+user: That works for me. What is the destination station?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked. The train will arrive at Phoenix Union Station.
+user: Thank you for your help. I'd also like to find something interesting to do there on 14th of this month and I really like Concert.
+tool(FindEvents): ok n_results=8
+assistant: Dodie is a very popular event taking place at The Van Buren on March 14th starting 5:30 pm.
+user: How much will one ticket be?
+assistant: One ticket will be $55.
+user: That works. Could you help share the location?
+assistant: Who did you want to share it with?
+user: I'd like to share it with Noah.
+assistant: Please confirm you're sharing the location The Van Buren with Noah.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks, that was very helpful. That will be all I need for now.
+assistant: Have a great day!

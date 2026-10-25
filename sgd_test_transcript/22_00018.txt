@@ -1,0 +1,57 @@
+user: I'm looking for something interesting to do on the 6th of March.
+assistant: What city should I search in?
+user: I'm interested in New York City.
+assistant: Which categories are you interested in? You can say Music or Theater or something else that interests you.
+user: I'm interested in Theater.
+tool(FindEvents): ok n_results=10
+assistant: Okay, I found 10 events that might interest you. Acting For Teens is popular and is taking place at 520 8th Ave. - Personal Valet Parking and is happening on March 6th at 7:30 pm.
+user: Can you tell me the cost of one ticket and where the venue is located please?
+assistant: The venue is at 520 8th Ave. - Personal Valet and costs $50.
+user: Okay, perfect!
+assistant: Would you like to purchase the tickets for the event?
+user: Yes, but not at this time.
+assistant: Is there anything else I can assist you with?
+user: Are there any buses that go there?
+assistant: Are you leaving on March 6th?
+user: No, I am planning to leave 1st of this month.
+assistant: And where are you leaving from?
+user: I will be leaving from Washington.
+tool(FindBus): ok n_results=7
+assistant: Okay, there are 7 buses, there is one departing at 6:20 am and the price is $40.
+user: Can you tell me the arrival and departure stations?
+assistant: The arrival station is Penn Station and the departure station is Silver Spring Bus Stop.
+user: Can you find me something leaving from Philly?
+tool(FindBus): ok n_results=6
+assistant: There is a bus that departs at 9 am and costs $23.
+user: Is there anything else?
+assistant: There is one departing at 10:10 am that costs $21.
+user: That sounds great!
+assistant: Would you like to purchase these tickets?
+user: No, not at this time.
+assistant: Is there anything else I can assist you with?
+user: Yes, I need to find a round trip flight there.
+assistant: Will you be leaving on March 6th or March 1st or some other day?
+user: I'll be leaving on the 1st of this month and I prefer Premium Economy class tickets.
+assistant: Which day are you returning?
+user: I'll be returning on the 10th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Okay, I found 4 flights. There is one on American Airlines that is a direct flight taking off at 1:20 pm and returning at 1:35 pm and the price is $162.
+user: Will it be for three people and when does it arrive at my destination?
+assistant: It is for 1 traveler and arrives at 2:11 pm.
+user: That sounds perfect! I also will be needing a two star hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels. There is a 2 star hotel called Bklyn House Hotel.
+user: Does that hotel allow smoking?
+assistant: Yes, it does allow smoking.
+user: Are there any other hotels with one room matching my criteria?
+tool(SearchHotel): ok n_results=9
+assistant: I found 9 more hotels. There is another 2 star hotel called Bogart Hotel.
+user: Are there any others?
+assistant: There is a 2 star hotel called Broadway International Hotel & Hostel.
+user: That sounds perfect! I would like to purchase three tickets to the event you found earlier.
+assistant: Please confirm that you are booking 3 tickets for Acting For teens taking place in New York on March 6th.
+user: Sounds good!
+tool(BuyEventTickets): ok n_results=1
+assistant: I have confirmed your reservation, Have a great time!
+user: Thank you for all your help, that will be all I need for now.
+assistant: Okay, have a wonderful day!

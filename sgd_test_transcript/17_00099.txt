@@ -1,0 +1,24 @@
+user: I want to check about the weather condition in American canyon on 12th of March for which I need your help.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the average temperature on that day will be 75 degrees Fahrenheit and there may be a chance of 15 percent for rain fall there on that day.
+user: Please check the same on the 11th in London also.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the average temperature on that day will be 71 degrees Fahrenheit and there may be a chance of 15 percent for rain fall there on that day.
+user: And what about Humidity? Please check it in average.
+assistant: It will be around 41 percent.
+user: Then also check about wind speed.
+assistant: It will be around 11 miles per hour in average. Anymore information you need to check?
+user: That's enough and thank you. Now I want to search for a one-way flight to go there.
+assistant: Do you want the flight on March 11th? If so, from which City you need the flight?
+user: I need to take the flight from Seattle, WA and please find it on 7th of this month.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I searched and got 2 results. One is an onward flight from Alaska Airlines which is going to be take off at 7:05 am for the cost $398. What about your opinion on this flight?
+user: This is okay to me and thanks. Please search for a car to go there and I need it for rent.
+assistant: Please confirm whether you want the car for rent on March 11th or March 7th and tell me the number of days you want the car and also let me know your convenient time to book the same.
+user: Book the car for pick up at quarter to 3 in the afternoon from next Friday to 12th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Okay, How about a Sedan Audi A8 Car available for pick up at Heathrow International Airport?
+user: I think this will be the suitable one for me.
+assistant: What else you want from me?
+user: No, thanks and that's all.
+assistant: Have a great day.

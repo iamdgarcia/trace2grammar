@@ -1,0 +1,23 @@
+user: I'm in the mood for some Funk music. Can you find me songs from the Isolation album, I heard it's really good.
+tool(LookupMusic): ok n_results=2
+assistant: How about After the Storm by Kali Uchis from the Isolation album?
+user: Perfect. What's the weather like?
+assistant: In what city?
+user: Check in Campbell.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should average 91 degrees with a 4 percent chance of rain.
+user: Is it supposed to be windy?
+assistant: Wind speeds should average 9 miles an hour.
+user: Okay. Thank you.
+assistant: Is there anything else I can help you with?
+user: I'd like to hear the song now.
+assistant: Okay, to confirm: You would like to listen to After The Storm in the living room.
+user: No. Play it on the kitchen speaker.
+assistant: To confirm: You would like to listen to After the Storm in the kitchen.
+user: No wait. Make it on the patio device instead.
+assistant: To confirm: You want to hear After The Storm on the patio.
+user: That's right. When did it come out? Was it three years ago?
+tool(PlayMedia): ok n_results=1
+assistant: It came out in 2018. Enjoy the song.
+user: Thanks. That's all I needed.
+assistant: Have a great day.

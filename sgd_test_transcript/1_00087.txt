@@ -1,0 +1,16 @@
+user: Find me 1 room in a four star hotel located in London, England please.
+tool(SearchHotel): ok n_results=10
+assistant: I found the Ace Hotel London, it has 4 stars.
+user: That would be pretty good.
+assistant: Should I book you a room?
+user: Alright make the arrival time for 4th of March.
+assistant: What will be the length of your stay?
+user: I would say 6 days.
+assistant: Do I have this right? You want me to reserve you 1 room at the Ace Hotel London in London for a 6 day stay beginning March 4th.
+user: That is correct. Where is that located exactly?
+tool(ReserveHotel): ok n_results=1
+assistant: You will find the room I booked for you at 100 Shoreditch High Street.
+user: Does the hotel permit smoking?
+assistant: You can not smoke anywhere on the property.
+user: You are great, I appreciate all your help you can go now.
+assistant: Alright then have a nice day.

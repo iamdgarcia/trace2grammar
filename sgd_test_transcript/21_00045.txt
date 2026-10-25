@@ -1,0 +1,15 @@
+user: Hey, I feel a little bored right now. Can you play me some metal songs by Sabaton? I love their album The Great War.
+tool(LookupMusic): ok n_results=7
+assistant: Would the song A Ghost in The Trenches from the album The Great War by Sabaton appeal to you?
+user: Yes, sounds awesome.
+assistant: Can I help you with anything else?
+user: Can you tell me how's the weather in Emeryville?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is currently about 86 degrees Fahrenheit with a 17 percent chance of rain.
+user: Good to know. Can you play me the song you found, on my kitchen please?
+assistant: So play the song A Ghost in the Trenches in the kitchen device?
+user: Yes, that's it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song!
+user: Thanks! That's all I need for now.
+assistant: Have an amazing day.

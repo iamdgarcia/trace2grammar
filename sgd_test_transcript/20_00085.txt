@@ -1,0 +1,15 @@
+user: I'm going with a friend to Los Angeles. We would like to find a house for 2 people with a rating of 3.7 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house with a 3.7 rating located at 1020 South Figueroa Street.
+user: That looks like a great option. Please book this house for us.
+assistant: I'll need to know the date you need to check in and check out.
+user: I'd like to check in next Thursday and will be checking out March 10th.
+assistant: Please confirm you will be checking into Los Angeles with 2 people on March 7th. You'll be checking out March 10th.
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is now complete.
+user: Thank you! What are some fun things to do while we are there?
+tool(FindAttractions): ok n_results=10
+assistant: I've found 10 attractions that may interest you. There is a great historical landmark called Angels Flight Railway.
+user: Thank you for your help. That is all for now.
+assistant: Have a great day.

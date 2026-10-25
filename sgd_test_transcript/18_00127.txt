@@ -1,0 +1,29 @@
+user: I need to get some dinner.
+assistant: Where are you looking for?
+user: I'll be in Mill valley at lunch time.
+assistant: Do you have any preferences?
+user: I could go for some Barbecue today.
+tool(FindRestaurants): ok n_results=3
+assistant: I found a place in Mill Valley called Lighthouse Bar & Grill.
+user: OK. Do you have any others?
+assistant: There's a Mcdonald's in Mill Valley. You might like it.
+user: All right. Let's go ahead and book a table for two next Tuesday at 1:15 in the afternoon.
+assistant: to confirm: You want a table for 2 at Mcdonald's in Mill Valley at 1:15 pm on March 5th.
+user: No. Let's make that 3 at 1:30 pm.
+assistant: To confirm: There will be 3 people at 1:30 pm.
+user: Actually I would like it on the 11th.
+assistant: To confirm: You want Mcdonald's on March 11th.
+user: That's it. thanks
+tool(ReserveRestaurant): ok n_results=1
+assistant: You are now confirmed.
+user: I need a ride to the restaurant. How about a cab, preferrably a Pool ride?
+assistant: Is your destination 600 Redwood Highway?
+user: Sure, that'll work.
+assistant: To confirm: We're ordering a cab for 3, preferably a Pool ride, to 600 Redwood Highway
+user: Great. Now how much will it run me? how long before it arrives?
+tool(GetRide): ok n_results=1
+assistant: Your cab is on its way and will cost $10.55. It will be there in 7 minutes.
+user: thanks, i appreciate your help.
+assistant: Will there be anything ales?
+user: No, again, thanks.
+assistant: Take care now.

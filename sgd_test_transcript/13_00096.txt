@@ -1,0 +1,10 @@
+user: I'd like to find a movie to watch in the Comedy genre with Vanessa Przada acting in it.
+tool(FindMovies): ok n_results=1
+assistant: What about Good Boys? It has a rating of about 79 out of 100.
+user: That's good. Find me something fun to do there on that day.
+assistant: Is there any city I should search in in particular? Is there a certain type of event you like?
+user: I am into Broadway and would like you to check around London, England.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events that may work. A Right Royale Tea is a popular one at Amba Hotel Charing Cross. That is on March 14th at 7 pm.
+user: Sounds good. That's all for now.
+assistant: Enjoy your day.

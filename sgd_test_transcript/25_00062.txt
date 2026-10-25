@@ -1,0 +1,30 @@
+user: May I see my alarms please?
+tool(GetAlarms): ok n_results=2
+assistant: Yes, you have 2 current alarms. There is a 7:30 AM alarm titled wake up.
+user: Thank you very much.
+assistant: Would you like to set a new alarm?
+user: No, thank you. I'd like to find a restaurant though.
+assistant: In what location and what kind of cuisine would you like?
+user: I'd like a restaurant in SF, some place with Irish food.
+tool(FindRestaurants): ok n_results=2
+assistant: I recommend Johnny Foley's Irish House in San Francisco.
+user: Do they have vegetarian dishes and patio dining?
+assistant: I'm sorry, they don't have vegetarian dishes nor do they have patio dining.
+user: That's fine. I'd also like to book a car please, something I can pick up from Union Plaza. I'm thinking of an SUV.
+assistant: When would you like to get the car and Start the rental and until what date will you need it?
+user: I'd like to pick it up in the morning 9:30. I'll need it from next Thursday until the 11th.
+assistant: Would you like to purchase insurance for the vehicle?
+user: No, that's OK.
+assistant: Confirming rental of an SUV with pick up from Union Plaza on March 7th at 9:30 AM and returning March 11th. The vehicle will not include insurance.
+user: That's good, thank you. What kind of car is it?
+tool(ReserveCar): ok n_results=1
+assistant: The car is a GMC Terrain and the reservation is complete.
+user: Thanks, I need to share the location as well. With John please.
+assistant: What is the address you want to share? Is it 243 O'Farrell Street, union Plaza or a different address?
+user: Yes, the address is 243 O'Farrell Street.
+assistant: Confirming location sharing of 243 O'Farrell Street with John.
+user: That's right, thank you.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Great, I guess that's everything.
+assistant: Have a wonderful day.

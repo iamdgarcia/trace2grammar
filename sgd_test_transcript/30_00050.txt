@@ -1,0 +1,19 @@
+user: Get me tickets to an event for tomorrow, something around New York City. I have good things of The Blue Room
+assistant: How many tickets?
+user: Only one please
+assistant: Please Confirm: Booking 1 ticket to the The Blue Room on march 2nd in New York
+user: Yes, thats right, what the starting time and the cost of it?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is done, The cost is $30 and starts at 4:30 pm
+user: I am going tomorrow, are there any buses to reach there?
+assistant: whats the city of departure?
+user: leaving from Philly
+tool(FindBus): ok n_results=6
+assistant: I got 6 buses on which there is one departing at 9 am and costs $22
+user: thats good, please buy it
+assistant: Please confirm: Booking 1 bus ticket to Philadelphia, for New York on March 2nd 9 am
+user: Whats the arrival and departing station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The departure is from 10th and Filbert and arrival at Penn Station
+user: thanks a lot, thats all
+assistant: have a good time

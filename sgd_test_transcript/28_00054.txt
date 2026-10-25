@@ -1,0 +1,17 @@
+user: Hi, could you get me movies to watch directed by Herbert Ross and featuring James Shapkoff III?
+tool(FindMovies): ok n_results=1
+assistant: Would you like Steel Magnolias with a 70 percent rating?
+user: Sounds great! Could you get me restaurants there?
+assistant: What type of food would you like to eat?
+user: Some place which serves Tacos is great.
+assistant: And where are you looking to dine at?
+user: I would prefer a not very costly restaurant in the Novato area with outdoor seating please.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 restaurants in Novato which you might like, how about Las Guitarras Restaurant?
+user: Sure, could you get me a reservation there at 6 in the evening please?
+assistant: Please confirm your booking for a table for 2 at Las Guitarras Restaurant in Novato at 6 pm on March 1st.
+user: Sure, could you get me their phone number and address please?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You can call them at 415-892-3171 and visit them at 1017 Reichert Avenue. Your reservation has been made.
+user: Sweet! Thank you so much for your help, that is all I need.
+assistant: Have a great day ahead!

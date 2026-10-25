@@ -1,0 +1,17 @@
+user: Hey, can you tell me how's the weather gonna be in Chicago on Saturday this week please?
+tool(GetWeather): ok n_results=1
+assistant: Sure! The average temperature should be 61 degrees Fahrenheit with a 33 percent chance of rain.
+user: Good to know. Help me book some one-way flights going there please.
+assistant: Where will you be departing from?
+user: I want Economy tickets with Delta Airlines on a plane leaving from Vancouver.
+assistant: Are you leaving on March 2nd or some other day?
+user: I want to leave on the 1st of March.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: I found 1 flight you may like. It's a Delta Airlines one costing $173 that takes off at 12:20 pm. Sounds good?
+user: Sure. Can you help me rent a car there? I'll pick it up on 7:30 in the evening on Monday next week and I'll return it on the 7th of this month.
+tool(GetCarsAvailable): ok n_results=6
+assistant: Sure, I found 6 cars you may like. There's a great Sedan Dodge Charger at O'Hare International Airport. Does it appeal to you?
+user: Sounds real good.
+assistant: Should I book it?
+user: Not now, thanks. That's all I need.
+assistant: Have an amazing day.

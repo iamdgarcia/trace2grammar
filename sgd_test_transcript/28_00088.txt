@@ -1,0 +1,42 @@
+user: Can you show me some cool attractions to visit, something child friendly would be better
+assistant: In what city?
+user: I wanna find attractions in LA
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions including Angels Flight Railway which is a neat Historical Landmark
+user: That sounds great. Can you book me a rental car there too?
+assistant: What time do you want to pick it up an do you want it in Los Angeles? And till when do you want the car
+user: Yes please, I need it till the 8th of this month at 19:45 please
+assistant: When do you want to pick it up
+user: I need it till the 2nd of March and I'll get it on the 1st of this month
+tool(GetCarsAvailable): ok n_results=8
+assistant: There is a nice car available at LAX International Airport, it's a Dacia Duster SUV model
+user: How much is that a day?
+assistant: It'll be $44.00 a day
+user: Do you have something that I can pickup at 11 o'clock in the morning in Sunnyvale?
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars including a Sedan Buick Regal Sportback from Sunnyvale Caltrain Station
+user: Do you have something else, any kind of car
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a nice car you can get at Murphy and Evelyn, it's a SUV Citroen C5
+user: How much is that gonna cost?
+assistant: It's gonna be $38.00 a day
+user: OK cool, let's get that one
+assistant: Do you want insurance on that
+user: No thanks on the insurance
+assistant: Confirming a Murphy and Evelyn pickup of an SUV with no insurance on March 1st at 11 am with a March 2nd drop off
+user: Yes that's right
+tool(ReserveCar): ok n_results=1
+assistant: It's been booked for you
+user: OK cool, now can you share the location
+assistant: With who do you want to share this with?
+user: Share it with Judy
+assistant: So share the address of Angels Flight Railway
+user: Yes that's right
+assistant: So share the location of Angels Flight Railway to Judy?
+user: Yes please do that
+tool(ShareLocation): ok n_results=1
+assistant: It's been share
+user: Thanks, you've been a big help
+assistant: Is there something else I can do?
+user: No that's it. Thank you for that!
+assistant: Sure, take care!

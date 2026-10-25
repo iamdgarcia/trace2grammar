@@ -1,0 +1,24 @@
+user: I want to find a song now, and more specifically I like songs from Harris J. I usually enjoy Pop songs, also some friends told me that Salam album is a good one.
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song which you might like. How would you like listening to Salam Alaikum by Harris J from the Salam album?
+user: That is the song I want.
+assistant: Do you want this song to be played now?
+user: Some other time, though is it possible for you to find some good movie online?
+assistant: Is there some specific kind of movie you enjoy?
+user: It would be nice if it would be a Suspense movie.
+tool(FindMovies): ok n_results=4
+assistant: How would you like watching Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: Madeline would be nice to watch. Is it possible for you to start playing the song you found earlier?
+assistant: Can you please confirm that you want the song Salam Alaikum to be played in your Living room?
+user: That is what I want. Can you tell me the year when the song came out?
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time listening to the song. The song was released in the year 2015.
+user: Can you tell me my set alarms?
+tool(GetAlarms): ok n_results=1
+assistant: There is 1 alarm which is active. This alarm has been set for 3:30 pm and it is titled Errands.
+user: Alright, that is good.
+assistant: Are you interested to have another alarm added?
+user: I am not interested to add a new alarm at the moment.
+assistant: Is there something else I can help you with?
+user: Nothing. Much appreciated!
+assistant: Thank you too, have a good time!

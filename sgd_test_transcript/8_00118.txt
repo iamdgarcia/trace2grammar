@@ -1,0 +1,23 @@
+user: I want to go visit some relatives in NY. I need one seat on a train.
+assistant: When would you be leaving and which city are you heading to?
+user: I will be going to philly on the 10th of this month.
+tool(FindTrains): ok n_results=8
+assistant: There are 8 trains available. There is one departing at 10:40 am and it costs $46.
+user: That would be too later. I will be leaving from Chicago.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains available. There is one leaving at 7:30 am and it costs $118.
+user: Which station would it be arriving in?
+assistant: The train would be arriving at Grand Central Station.
+user: Which station would it be leaving from?
+assistant: It would be leaving Chicago Union Station.
+user: That would be great.
+assistant: You would like to get the ticket
+user: Yes, I do.
+assistant: Would you be needing any travel insurance.
+user: Yes, I will have the trip insurance.
+assistant: You want 1 value ticket on a train leaving Chicago and heading New York on March 10th at 7:30 am?
+user: That would be great.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have booked the ticket for you.
+user: Thanks a lot. That would be all.
+assistant: Take care of yourself.

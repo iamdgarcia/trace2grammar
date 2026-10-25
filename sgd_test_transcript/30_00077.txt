@@ -1,0 +1,29 @@
+user: Can you tell me the weather?
+assistant: In which city?
+user: In Napa, please.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 85 degrees Fahrenheit with a 24 percent chance of rain.
+user: Great. I need to schedule a property visit.
+assistant: Which property would you like to visit?
+user: I want to visit Sunnyhills Apartments on the 1st of March.
+assistant: Please confirm you want to visit Sunnyhills Apartments on March 1st.
+user: Yes. Do the properties have garages?
+tool(ScheduleVisit): ok n_results=1
+assistant: The property does not have a garage. Your visit has been confirmed.
+user: Can I have their address and can you tell me the cost?
+assistant: They're located at 1724 Sunnyhills Court and the cost is $4,300.
+user: Thank you. I also need to reserve a car from Gatwick International Airport.
+assistant: What is your pick up time and Will you require insurance?
+user: I need to pick up the vehicle at eleven in the morning and I already have insurance.
+assistant: Will you be picking up on March 1st?
+user: Yes, that's right.
+assistant: What type of vehicle are you looking for and what is your return date?
+user: I want a hatchback un next Thursday.
+assistant: Please confirm you want to rent a Hatchback from Gatwick International Airport on March 1st at 11 am until March 7th.
+user: Yes. Correct. What's the daily rate?
+tool(ReserveCar): ok n_results=1
+assistant: The daily rate is $27.00. Your booking was a success.
+user: Thanks so much.
+assistant: Can I help you with anything else?
+user: No. That will be all.
+assistant: Okay. Have a great day.

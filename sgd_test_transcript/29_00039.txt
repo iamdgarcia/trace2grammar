@@ -1,0 +1,28 @@
+user: I am interested in finding a hotel.
+assistant: Can you tell me the city where I should search for hotels?
+user: The hotel I am looking for should be in Philadelphia.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which you might like staying in, with one of them being a nice 4 star hotel called Aka Rittenhouse Square.
+user: That seems nice. Now I need to have four Premium Economy class tickets for a round trip flight which will get me there, and I will be leaving from Berlin.
+assistant: Can you tell me the day when you are going to be having the return flight, and are you going to depart on March 8th?
+user: I actually will be leaving for my trip next Thursday, and will be returning on 9th of this month.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: How would you like flying with American Airlines, which is a flight with layover and that will be leaving at 1:35 am when going onward, and when returning will be flying at 3:20 pm? The ticket for this flight has a price of $683.
+user: Can you recommend some other flight?
+assistant: You might also consider the flight with United Airlines which has layover and when going onward leaves at 4:25 pm, and when returning flies at 11:30 am. The ticket for this flight will cost you $701.
+user: This seems nice. Now I would like to make a booking at the hotel you mentioned.
+assistant: Can you tell me how long is your stay at the hotel going to be?
+user: I will need to be at the hotel for 6 days.
+assistant: Will you be going at the hotel on March 7th?
+user: Yes, that suits me just fine.
+assistant: Can you please confirm that you want to book 1 room for 6 days at the Aka Rittenhouse Square hotel in Philadelphia, and that you are going to go there on March 7th?
+user: Yes, that is what I want.
+tool(ReserveHotel): ok n_results=1
+assistant: Your requested reservation for the hotel has been made.
+user: I appreciate it, you have helped me a lot. Would it be possible for you to recommend some attractions which are found there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions which you might like to visit, with one of them being Barnes Foundation, which is a Museum.
+user: Is this attraction considered to be child-friendly?
+assistant: I can confirm that the kids are welcomed at this attraction.
+user: Alright, good. That's all I needed, goodbye for now.
+assistant: Have a good time!

@@ -1,0 +1,14 @@
+user: I am looking for a train.
+assistant: What is date and city of your departure and your destination?
+user: I will be leaving from LAX to SFO on Sunday this week.
+tool(FindTrains): ok n_results=8
+assistant: What do you think of a train departing at 7:50 am with total cost $99?
+user: Can you tell me the names of arrival and departure stations?
+assistant: The train will depart from Union station and will arrive at Salesforce Transit Center.
+user: The train sounds good to me. Can you find me a house for one people with 4.2 or higher ratings there?
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses suitable to your choice. How about a nice house with 4.2 rating located at 1100 Market Street Hotel entrance is at, 45 McAllister Street?
+user: That house sounds good to me.
+assistant: Do you want me to make a reservation for this house?
+user: No, Not now. That will be all. Thank you!
+assistant: I am glad I could help. Bye!

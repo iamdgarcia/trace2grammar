@@ -1,0 +1,16 @@
+user: Can you find me luxurious train tickets heading to Chicago on the 12th please
+assistant: What city are you coming from?
+user: I am gonna be starting at Washington
+tool(FindTrains): ok n_results=5
+assistant: There's one for $157 at 9:40 am if that works for you?
+user: That works, book that for me
+assistant: Do you want travel insurance for this?
+user: Yes that would be lovely
+assistant: How many tickets then?
+user: I only need 1 seat please
+assistant: Confirming you want 1 business ticket to Chicago from Washington on the 9:40 am train that leaves on March 12th?
+user: Yes please, what station does this train leave from and arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are booked! And it leaves from Union Station with a final destination at Chicago Union Station
+user: Thanks for everything, you were super helpful
+assistant: I am glad I could help, see you soon

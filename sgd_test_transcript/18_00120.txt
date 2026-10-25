@@ -1,0 +1,27 @@
+user: I want to find a place to eat.
+assistant: What kind of food would you like to eat?
+user: I want to find Middle eastern food.
+assistant: Where should I look for restaurants?
+user: I want to find some Greek food in Oakland. Preferably with outdoor seating.
+tool(FindRestaurants): ok n_results=1
+assistant: Ikaros Greek Restaurant is a popular spot located in Oakland.
+user: What's the address? Is it ultra high-end?
+assistant: The price range is moderate. The restaurant is located at 3268 Grand Avenue.
+user: That sounds great.
+assistant: Do you want to make a reservation?
+user: Yes, I want to book a table.
+assistant: What time would you like to make the reservation.
+user: Make the reservation for 18:00, please.
+assistant: Please confirm: A table for 2 at Ikaros Greek Restaurant in Oakland on March 1st at 6 pm.
+user: Yes, sounds good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you. Can you find me a cab there? Preferable a pool ride.
+assistant: Please confirm: a pool ride for 2 at 3268 Grand Avenue.
+user: Yes, that's correct.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is on its way.
+user: How long until the cab is here?
+assistant: The cab will be there in about 7 minutes.
+user: Thanks so much. That's all for now.
+assistant: Have a great day!

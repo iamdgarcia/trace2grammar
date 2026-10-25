@@ -1,0 +1,19 @@
+user: I need a bus heading San Diego. It can be direct or not.
+assistant: When would you like to leave?
+user: I want to leave on March 5th.
+assistant: Where would you be leaving from?
+user: I am going to be leaving Sacramento, CA.
+tool(FindBus): ok n_results=7
+assistant: There is a bus that leaves at 7:10 am and it costs $63.
+user: I would need a ticket for one person.
+assistant: You would like 1 ticket on a bus from Sacramento to San Diego that leaves on March 5th at 7:10 am and you would be traveling without extra luggage?
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have ordered your ticket.
+user: Thank you. I now need a hotel to stay in when I get there.
+tool(SearchHotel): ok n_results=10
+assistant: I have been able to locate 10 suitable hotels. There is Bahia Resort Hotel, which is a 3 star hotel.
+user: That would be fine.
+assistant: Would you be needing anything else?
+user: Not at this time.
+assistant: Enjoy your day.

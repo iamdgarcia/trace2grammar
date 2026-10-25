@@ -1,0 +1,11 @@
+user: I need a one-way flight now please.
+assistant: On which day would you like to book your travel, and what is your intended destination?
+user: I want to start on the 8th and I want to visit Seattle, please.
+assistant: From which city do you intend to leave?
+user: I need a flight from Toronto, Ontario.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights matching your selection. Would you like to fly with Air Canada? The flight is set to depart at 4:35 PM. It is a connecting flight and the ticket price is $328.
+user: I'm good with that!
+assistant: Is there anything else I may help you with?
+user: No, but thanks a lot.
+assistant: Of course. Have a wonderful day.

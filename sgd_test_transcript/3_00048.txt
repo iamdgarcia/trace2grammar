@@ -1,0 +1,11 @@
+user: Hey I need an Economy round trip ticket to Philly and I'll be returning on March 6th.
+assistant: What city will you be departing from?
+user: I will be leaving from Berlin.
+assistant: And what date would you like to fly?
+user: I need the travel to start on the 1st.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found 2 flights for you with American Airlines.The ticket would be $499. The first flight departs at 2:55 am and the return flight leaves at 5:45 pm.
+user: That sounds like what I need.
+assistant: Do you need assistance with anything else?
+user: No, that's it. Thanks.
+assistant: Enjoy your flight.

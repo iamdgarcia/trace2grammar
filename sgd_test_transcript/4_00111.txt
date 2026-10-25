@@ -1,0 +1,22 @@
+user: can you help me to search for a bus
+assistant: When are you planning to leave
+user: Im planning to leave on the 13th
+assistant: Where you want to go
+user: to SD
+assistant: From where you want to start
+user: from Lax
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses. What about bus starts at 6:50 am and costs $26
+user: from which station does it start
+assistant: From north Hollywood station
+user: sounds good to me. I want to get the tickets
+assistant: how many tickets you want?
+user: make it for 2
+assistant: Please confirm you are booking ticket on march 13th for 2 people from los angeles to san diego at 6:50 am without extra luggage
+user: No its for 3 people.I have excess luggage to carry
+assistant: Please confirm it is for 3 people with the extra luggage to carry
+user: Yes thats correct
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed
+user: Thanks a lot for it.
+assistant: have a nice day

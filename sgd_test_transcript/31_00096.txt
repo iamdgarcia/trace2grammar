@@ -1,0 +1,44 @@
+user: I am looking for a nice salon.
+assistant: Tell me the name of the city you want me to look for the salon.
+user: I am looking for a Unisex salon in Menlo Park.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 salons you may like. How about Great Clips located in Menlo Park?
+user: Find me the average rating and the street address.
+assistant: The average rating is 3.7 and the street address is 325 Sharon Park Drive Ste F-2.
+user: Are there any other salons you can suggest which is located in Albany?
+tool(FindProvider): ok n_results=2
+assistant: There are 2 salons you may like. How about Grove Salon located in Albany?
+user: Okay, That sounds nice to me.
+assistant: Would you like me to book an appointment with them?
+user: Yes, Please book me an appointment with them.
+assistant: Can you tell me your preferred time and date for the appointment?
+user: I would like to book the appointment for half past 2 in the afternoon on the 7th of March.
+assistant: Please confirm: You want me to book an appointment with Grove Salon for 2:30 pm on March 7th.
+user: Yes, That is correct. Also find me their contact number and the address.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment. The contact number is 510-526-9874 and the address is 1483 Solano Avenue.
+user: Thank you so much! Now, Find me a restaurant which serves vegetarian and offers To-go.
+tool(FindRestaurants): ok n_results=2
+assistant: How about a nice restaurant called Nizza La Bella located in Albany?
+user: How much rating did it get from the users?
+assistant: The users gave it a 3.9 rating.
+user: Can you confirm me whether the restaurant is Ultra high-end and do they have outdoor seating?
+assistant: No, They do not have a outdoor seating and they are a moderate restaurant.
+user: Okay, That sounds good. Can you book me a table there?
+assistant: What time do you want me to book the table for?
+user: I want to reserve the table for 6:15 in the evening.
+assistant: Please confirm: You want me to book a table for 2 people at Nizza La Bella located in Albany for 6:15 pm on March 7th.
+user: Yes, That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, Your reservation could not be made. Is there anything else I can assist you with?
+user: can you try booking again at evening 7:45?
+assistant: Please confirm: You want me to book a table for 2 people at Nizza La Bella located in Albany for 7:45 pm on March 7th.
+user: Yes, That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made the reservation.
+user: Okay. Find me their address and their phone number.
+assistant: You can call them at 510-526-2552 and the address is 825 San Pablo Avenue.
+user: Thank you for the help!
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

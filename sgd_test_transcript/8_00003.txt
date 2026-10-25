@@ -1,0 +1,13 @@
+user: I need to schedule a visit to a property. Will you schedule to visit the property Stevenson Place Apartments?
+assistant: When do you want to schedule the visit?
+user: i need to visit on 3rd of March.
+assistant: Please check and confirm the details. A schedule is fixed to visit to Stevenson Place Apartments and the date of visit on March 3rd.
+user: No, please change the visiting date on the 9th
+assistant: Please check and confirm the details. A schedule is fixed to visit to Stevenson Place Apartments and the date of visit on March 9th.
+user: Ok Thats good and suits for me.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit to the property is scheduled.
+user: What is its address and how many baths are there in the apartment?
+assistant: It has 2 bathrooms and the address is 4141 stevenson Boulevard.
+user: Ok thanks a lot. that's all i need.
+assistant: have a wonderful day.

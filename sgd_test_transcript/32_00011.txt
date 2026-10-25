@@ -1,0 +1,25 @@
+user: Can you help me find a therapist please?
+assistant: Are you interested in a Family Counselor, Psychiatrist or some other type of therapist? Can you tell me the city where I should search in?
+user: I am in a Psychologist in the Redwood City.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 therapist which you might consider. A suggestion would be the Becker Hubert J. which is a Psychologist, and is located in Redwood City.
+user: Can you give me the address of this therapist, and also a phone number I can use for contact?
+assistant: The address of the therapist is 1150 Veterans Boulevard, and if you want to get in touch, you can at 650-299-4827.
+user: That seems good to me.
+assistant: Would you like to have an appointment reserved with this therapist?
+user: Yes, I actually want to have the appointment reserved for me.
+assistant: Can you tell me the time when you want to have the appointment, and the date which you want for the appointment?
+user: I will be available to have the appointment at three pm on next Thursday, could you do that?
+assistant: Can you please confirm that you want to book an appointment with the therapist Becker Hubert J at 3 pm on March 7th?
+user: That is not right, because the appointment should be for half past 1 in the afternoon.
+assistant: Can you please confirm that you want to have an appointment booked with Becker Hubert J at 1:30 pm?
+user: Yes, that suits me well.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested reservation has been made, and you should receive an email soon to confirm that.
+user: Thank you, I am grateful. I wonder if you have some suggestions for a movie which I can watch, and more specifically some movie which is considered to be a Horror genre.
+tool(FindMovies): ok n_results=6
+assistant: How would you like watching 47 Meters Down: Uncaged, which has a rating of 45 out of 100?
+user: That seems a nice choice.
+assistant: Can I do something else to help you with?
+user: Nothing. I thank you for the help you provided to me.
+assistant: I am glad to help you.

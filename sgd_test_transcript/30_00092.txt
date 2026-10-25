@@ -1,0 +1,28 @@
+user: I want to check the weather in Novato on 4th of March.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day will be 87 degree Fahrenheit and there is a chance of 7 percent rain.
+user: How windy will it be and also how humid is it going to be?
+assistant: The humidity is around 19 percent and average wind speed would be 5 miles per hour.
+user: Okay. how about Atherton.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature would be 78 degrees Fahrenheit and there is 10 percent chance of rain.
+user: Sure. Okay. I am looking to schedule my visit to the property Brentwood Parks Apartments.
+assistant: Can you please confirm the details: The visit is scheduled to Brentwood Parks Apartments on March 4th.
+user: Yes. That's perfect
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit to property has now been scheduled.
+user: Thanks a lot. I also wanted to reserve a car there.
+assistant: From which place do you want to pick up the car? Also do you want the car from March 4th and at which time do you want to pick up the car?
+user: I need the car from 1st of March. Murphy and Evelyn would be a convenient place for me to pick it up and I want to pick it up at half past 6 in the evening.
+assistant: Would you like to add the insurance?
+user: No. I don't need an insurance.
+assistant: Do you have preference for Sedan, Hatchback, or anything else?
+user: A SUV would be nice.
+assistant: Until when do you want the car?
+user: I want the car till 7th of March.
+assistant: Can you please confirm the following details: The car will be picked from Murphy and Evelyn and pickup date is March 1st at 6:30 pm. The drop off date is March 7th and it is a SUV car without any insurance.
+user: Yes. This sounds good. How much will it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved. It will cost you $37.00 per day.
+user: Thanks for all your help. That's all I needed.
+assistant: Have a nice day.

@@ -1,0 +1,24 @@
+user: Can you find me some 2019 Madonna songs?
+tool(LookupMusic): ok n_results=2
+assistant: What is your opinion of the song Batuka that's by Madonna and from her album Madame X?
+user: That's exactly the one I wanted.
+assistant: Do you want to listen to the song?
+user: Not right now. Can you find me some interesting movies that are online?
+assistant: What are the type of movies you want?
+user: I would like some violent movies that have Michael Gilden in them.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie that may work. What do you think about Pulp Fiction?
+user: Pulp Fiction would be awesome.
+assistant: Would you like me to play the movie for you?
+user: Not at this time, no. Will you play the song you found on the patio speaker?
+assistant: Begin the song Batuka in Patio. Is that correct?
+user: Yes, that would be right. What is the music genre?
+tool(PlayMedia): ok n_results=1
+assistant: It's pop genre and hope you like it.
+user: Will you tell me the alarms I have?
+tool(GetAlarms): ok n_results=4
+assistant: There is on alarm set for 10 am and titled Commute.
+user: Alright, good.
+assistant: Do you need more help with anything else?
+user: Nope, thanks so much!
+assistant: Thanks right back at you.

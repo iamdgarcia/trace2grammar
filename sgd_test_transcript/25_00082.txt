@@ -1,0 +1,30 @@
+user: Tell me about my alarms.
+tool(GetAlarms): ok n_results=1
+assistant: You posses 1 set alarm right now. there is an alarm called Catch Bus at 11 am.
+user: Alright, fine. I'd like to search for a diner in Oakland with vegetarian options and intermediate priced tag.
+assistant: What sort of cuisine are you searching for?
+user: Get me one that offers Cambodian.
+tool(FindRestaurants): ok n_results=1
+assistant: There is a lovely diner callled Phnom Penh Restaurant in Oakland.
+user: Where is it located?
+assistant: The location is at 3912 MacArthur Boulevard.
+user: Yeah, that's right. I'd like to book a vehicle there from the 10th of March.
+assistant: Would you like to include insurance?
+user: I'd like to purchase insurance.
+assistant: How long do you desire the vehicle until?
+user: I require it until the 12th of March.
+assistant: What location would you like to pick up the vehicle?
+user: Walnut Creek Bart Station is a convenient location for pick up.
+assistant: When would you like to pick up the vehicle, and what type of vehicle do you enjoy?
+user: I'd like to pick it up at 10:30, and an SUV would be lovely.
+assistant: Please verify the following information: you are picking the SUV vehicle from Walnut Creek Bart Station on March 10th, 10:30 am, with a drop-off date at March 12th.
+user: Yeah, that sounds alright.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: Thank you for your assistance. Can you also share the address? The location to share is 3912 MacArthur Boulevard, and I'd like to share it with Abigail.
+assistant: Please verify the following information: you are sharing the address 3912 MacArthur Boulevard with Abigail.
+user: That sounds perfect.
+tool(ShareLocation): ok n_results=1
+assistant: The address has been shared.
+user: Thank you for your help; that's all.
+assistant: Have a pleasant afternoon.

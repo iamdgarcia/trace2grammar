@@ -1,0 +1,28 @@
+user: I need to check the weather on March 2nd in Long Beach, CA.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 77 degrees F with a 15 percent chance of rain.
+user: How humid is it and windy?
+assistant: The average wind speed should be 8 mph and humidity 35 %.
+user: Sure that is fine. Can you show me attractions that are there?
+tool(FindAttractions): ok n_results=5
+assistant: Please check out the Aquarium of the Pacific a Nature Preserve.
+user: Is the entrance to the attraction free and what is their phone number?
+assistant: The phone number is 562-590-3100 and isn't free.
+user: Cool, any other attractions you know of because I'd like something without an entry fee.
+tool(FindAttractions): ok n_results=5
+assistant: There would be 5 attractions of interest including Earl Burns Miller Japanese Garden a Park you should check out.
+user: Okay that is great.
+assistant: Is there anything else I could assist with?
+user: Can you get me a cab going there?
+assistant: What type of ride do you prefer? Could you take Pool or Regular or anything else?
+user: I prefer a ride that is expensive.
+assistant: What number of seats do you need?
+user: I am a with a group of 1.
+assistant: Please confirm details for a ride to Earl Burns Miller Japanese Garden 1 seat luxury.
+user: Yes, that will work for me.
+tool(GetRide): ok n_results=1
+assistant: I booked the ride and the cab is coming.
+user: Thanks so much for your help.
+assistant: Could I assist you with anything else?
+user: No, thanks so much for the help.
+assistant: Have a nice day.

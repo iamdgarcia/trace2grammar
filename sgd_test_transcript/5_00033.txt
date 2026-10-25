@@ -1,0 +1,20 @@
+user: Show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm set for 6:30 am with the name Wake Up.
+user: Okay, thank you.
+assistant: Would you like to add another alarm?
+user: Yes, I would like to add an alarm.
+assistant: What time should I set the new alarm for?
+user: Let's set it for afternoon 3:30.
+assistant: You would like to set an alarm for 3:30 pm with the name New alarm, is this accurate?
+user: No, call the new alarm Cleaning, and let's change that to 5:15 in the evening.
+assistant: You would like to create an alarm for 5:15 pm with the name Cleaning, is that correct?
+user: Call the new alarm Music practice instead.
+assistant: You would like to create an alarm at 5:15 pm with the name Music practice, is that correct?
+user: Yes, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added successfully.
+user: Thanks a lot.
+assistant: Is there anything else I can help with?
+user: No, that's all, thanks.
+assistant: Have a good day!

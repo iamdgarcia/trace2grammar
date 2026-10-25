@@ -1,0 +1,12 @@
+user: Can you please find a therapist for me?
+assistant: Sure thing, what city would you like me to search in?
+user: Find me someone in Walnut Creek.
+assistant: Okay, what type of therapist are you looking for?
+user: Find a good Family Therapist for me.
+tool(FindProvider): ok n_results=4
+assistant: Okay, I've found 4 therapists in Walnut Creek for you. How about Andreotti Daniel? They are a very highly rated Family Counselor in the area.
+user: Can you find another therapist for me? How about someone in Pleasant Hill?
+tool(FindProvider): ok n_results=7
+assistant: You should try Aguilar Churchill Spence. They are a great Family Counselor in Pleasant Hill.
+user: Sounds great! Thank you, goodbye!
+assistant: No problem, happy to help.

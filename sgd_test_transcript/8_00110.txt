@@ -1,0 +1,20 @@
+user: I need to find a train.
+assistant: Where are you leaving from and where would you like to go?
+user: I am leaving Seattle and going to Vancouver.
+assistant: When would you like to go?
+user: I want to travel on March 2nd.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 trains. One costs $57 and leaves at 6:20 am.
+user: That will work.
+assistant: Would you like me to reserve the tickets.
+user: Yes I would. I am already all set on trip insurance.
+assistant: How many tickets do you want?
+user: I only need one train ticket.
+assistant: So you would like me to reserve 1 Value ticket leaving Seattle and going to Vancouver for March 2nd with 6:20 am departure?
+user: Yes please. Can you tell me what station the train departs from?
+tool(GetTrainTickets): ok n_results=1
+assistant: The train will depart from King Street Station. Your ticket has been confirmed.
+user: Thanks for all your help.
+assistant: Is there anything else I can do?
+user: No. I am all set. Thanks for all your help.
+assistant: Have a great day.

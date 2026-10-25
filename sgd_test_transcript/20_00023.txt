@@ -1,0 +1,27 @@
+user: I'm need to find a hotel in Paris, France for 2 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels matching the criteria with one called Ac Hotel By Marriott Paris Porte Maillot a 4 star hotel.
+user: Are there other hotels matching my criteria?
+assistant: There's a hotel named Amastan Paris which is 4 stars.
+user: That sounds great.
+assistant: Do you wish to reserve the hotel?
+user: I don't want any reservation now, but can you find me a rental car there for the 5th of March to the 12th of March.
+assistant: What time would you want to pick up the car?
+user: I would like to pick it up at 16:30.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There's a good car available at Orly International Airport an SUV Alfa Romeo Stelvio.
+user: Would you like something else?
+assistant: There's a good car available at Orly International Airport a Hatchback Ford Focus.
+user: Do you need something else?
+assistant: There's a good car available at Charles de Gaulle International Airport SUV Mitsubishi Outlander.
+user: What does it cost per day?
+assistant: It will cost $38.00 per day.
+user: That sounds good and I'd like to reserve the rental car.
+assistant: Would you like to add insurance?
+user: I don't need some insurance.
+assistant: Please confirm details that you are picking up the car from Charles de Gaulle International Airport with a pickup date of March 5th with a time of pickup at 4:30 pm and drop-off date of March 12th. It is an SUV that doesn't come with insurance.
+user: Yes, that sounds nice.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Thanks for all your help and that is all I need.
+assistant: Have a nice day.

@@ -1,0 +1,23 @@
+user: Can you show me the weather?
+assistant: What is the name of the city you want to know the weather of?
+user: I want to know the weather of Brentwood on the 1st.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature for the day iis 77 degrees Fahrenheit with 3 percent chance of rain.
+user: Okay. I would like to schedule a visit to a property called Palm Court Apartment.
+assistant: Please confirm: You want me to schedule a visit to Palm Court Apartment on March 1st.
+user: Yes, That works for me. Can you check whether it has Laundry service and a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your visit. Yes it has a garage and an in-Unit laundry.
+user: Can you reserve a car available for pickup at Heathrow Airport at 10:30 in the morning.
+assistant: What will be the date of the return?
+user: I will return it on next Tuesday.
+assistant: What type of car do you want me to find?
+user: I am looking for SUV.
+assistant: Do you want to book it from March 1st with insurance?
+user: Yes, that sounds nice to me. I want to book the car with insurance would like 5 o'clock in the evening.
+assistant: Please confirm: You want me book a SUV car for pick up at Heathrow International Airport on March 1st at 5 pm with the returning date March 5th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved the car.
+user: Okay. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

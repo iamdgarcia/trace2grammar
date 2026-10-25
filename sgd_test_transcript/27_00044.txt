@@ -1,0 +1,22 @@
+user: Where are some good places to check out in San Fran?
+tool(FindAttractions): ok n_results=10
+assistant: There's Alcatraz, it's a famous historical landmark.
+user: Sounds good. What about movies. Any type is fine.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies. Would you like to see Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Brittany Runs a Marathon sounds good. Can you look for some movies online? Something with Joseph Millson in it?
+assistant: What kind of movie would you like to watch?
+user: I'd like to see an action film.
+tool(FindMovies): ok n_results=1
+assistant: How about Angel Has Fallen?
+user: Yes, Angel Has Fallen would be great.
+assistant: Shall I play it now?
+user: Yes, please. I would like one with English subtitles.
+assistant: To verify: You would like to watch the film Angel Has Fallen with English subtitles.
+user: That is correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie will start now.
+user: Perfect. Thank you.
+assistant: Did you need anything else?
+user: No thanks. I'm good.
+assistant: Have a great day.

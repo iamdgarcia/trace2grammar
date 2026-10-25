@@ -1,0 +1,17 @@
+user: Hey, can you find me some attractions to visit? I'm on a short trip and I'm looking for a garden in London, UK without an entry fee, please?
+tool(FindAttractions): ok n_results=10
+assistant: The Barbican Conservatory is a great park.
+user: Is it child-friendly? What's their phone number?
+assistant: Yes, it's a great place for kids. Their number is 20 7638 4141.
+user: Okay, good. Help me find a house where I can stay there. It's for one, just me. It should have at least a 4.6 rating and laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There's a real nice one at 1 Suffolk Place with a 4.6 rating.
+user: Sounds great. Help me book some round trip flight to get there, I want to go on the 6th and leave from San Fran. Any ticket class is good.
+assistant: When do you which to return?
+user: On the 12th of this month would be great.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: How about a connecting American Airlines flight taking off at 4 am and costing $552? The return time is at 12:45 pm.
+user: Sounds very good.
+assistant: Can I help you further?
+user: No, thanks a lot.
+assistant: Have an amazing day.

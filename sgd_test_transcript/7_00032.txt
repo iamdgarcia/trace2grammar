@@ -1,0 +1,20 @@
+user: I am hoping to locate someplace to live.
+assistant: Would that be to buy or to rent? And what number of bedrooms and bathrooms will you be needing?
+user: Oh, I want to rent. And I need 3 bedrooms and 2 bathrooms.
+assistant: In what area would you like to search?
+user: Let's look for something in Union City please.
+tool(FindHomeByArea): ok n_results=2
+assistant: Of course. How about Parkside Apartments, which is located at 1501 Decoto Road, and is on the market for $4,050?
+user: Two questions: is there a garage and laundry machines?
+assistant: No, there's no garage but it does have laundry in the unit.
+user: Sounds like that should work.
+assistant: Terrific. How else may I help you?
+user: Would you please set up a property visit for me? Let's try for next Friday.
+assistant: Confirming your March 8th property visit to Parkside Apartments.
+user: Right, perfect. I'll need their telephone number please.
+tool(ScheduleVisit): ok n_results=1
+assistant: No problem, that's 510-487-2733. The appointment has been successfully set.
+user: I appreciate that, thanks.
+assistant: Is there anything else you need help with?
+user: I'm all set, thanks so much.
+assistant: My pleasure. Thank you very much.

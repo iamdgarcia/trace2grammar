@@ -1,0 +1,21 @@
+user: Help me in finding a movie
+assistant: where exactly?
+user: search in the healdsburg area for comic movies
+tool(FindMovies): ok n_results=1
+assistant: there's 1 option good for you and it's where'd you go, bernadette
+user: I like where'd you go, bernadette. now look for a table in a restaurant nearby
+assistant: do you know the time you want to be there?
+user: 6:30 pm would be awesome
+assistant: do you have a favorite restaurant in mind?
+user: yes, spoonbar would be an excellent place
+assistant: read and confirm the next step. you want a table for 2 at spoonbar in healdsburg on march 1st at 6:30 pm
+user: that would be lovely. I also need the phone number and the rating
+tool(ReserveRestaurant): ok n_results=1
+assistant: you got your table for two. the contact number is 707-473-9078 and the rating is 4.5
+user: nice. now tell me the time to watch the movie you told me about a minute ago
+tool(GetTimesForMovie): ok n_results=1
+assistant: there's only 1 showtime for that movie and it's at 5:30 pm in raven film center
+user: noted. where is the venue located?
+assistant: you'll find it at 415 center street
+user: fine. bye for now
+assistant: enjoy your day

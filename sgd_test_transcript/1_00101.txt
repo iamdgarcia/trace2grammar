@@ -1,0 +1,24 @@
+user: I need to find a 3 star hotel please
+assistant: What city do you want to stay in
+user: I need a hotel in London, England
+tool(SearchHotel): ok n_results=10
+assistant: What about the 3 star Abbey Court Hotel (Hyde Park) branch?
+user: What else can you find for me?
+assistant: There's a 3 star Accommodation London Bridge hotel
+user: How can I reach them?
+assistant: You can phone them at +44 20 7407 7566
+user: That's great then
+assistant: Can I help with something else?
+user: Yes book me a room there please
+assistant: For how long will you be staying?
+user: I'll be there for 5 days starting on the 8th
+assistant: Confirming you want to stay at Accommodation London Bridge in London starting March 8th for 5 days, and you need 1 room
+user: Actually I need 3 rooms please
+assistant: Confirming you want 3 rooms in London
+user: Yes please, also what's their address?
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked and you can head to 58 Great Dover Street on your check-in date
+user: Can I smoke there? And what's the price per night?
+assistant: It's $342 a night and sorry no smoking allowed
+user: Understood. That's all for now, thanks
+assistant: Enjoy your stay in London!

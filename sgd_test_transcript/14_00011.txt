@@ -1,0 +1,18 @@
+user: Are there any movies of Comedy type preferably featuring Ellise Chappell.
+tool(FindMovies): ok n_results=1
+assistant: Do you like Yesterday?
+user: Can you look for movies like Alex Kendrick Play?
+tool(FindMovies): ok n_results=1
+assistant: Do you prefer Overcomer?
+user: Overcomer will be fine. Please play it now with English subtitles.
+assistant: Please verify, you need Overcomer with English subtitles.
+user: Yes, carry on.
+tool(PlayMovie): ok n_results=1
+assistant: Enjoy the movie, it started.
+user: Now, tell me about weather on March 3rd.
+assistant: Weather report of which city do you need?
+user: I need report of Pleasanton.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 79 degrees Fahrenheit and the chance of rain is 16 percent.
+user: Great, thanks for the service.
+assistant: happy day, keep fine.

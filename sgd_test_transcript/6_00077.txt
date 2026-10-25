@@ -1,0 +1,16 @@
+user: I need a unisex salon in SFO.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options. There is one called 1512 Barber Shop in San Francisco.
+user: OK, I would like an appointment at 11:15 on the 4th of this month.
+assistant: Confirming appointment at 11:15 am on March 4th at 1512 Barber Shop.
+user: Change it to 2 pm.
+assistant: OK, Confirming appointment at 2 pm on March 4th.
+user: Actually, March 8th is better.
+assistant: Confirming appointment at 2 pm on March 8th at 1512 Barber Shop.
+user: Good, what is the number?
+tool(BookAppointment): ok n_results=1
+assistant: Your time is confirmed. The number is 415-286-4371.
+user: And the address?
+assistant: The address is 1532 20th Street.
+user: Thank you very much.
+assistant: You are welcome.

@@ -1,0 +1,9 @@
+user: I would like 1 ticket to see a 3D movie called Ad Astra.
+assistant: Where would you like to see it on which date and time?
+user: I would like the 16th of March, in San Francisco at seven pm.
+assistant: OK, please confirm 1 ticket on March 16th, in San Francisco at 7 pm for the 3D movie Ad Astra.
+user: Yes, what is the address of the theater ans price of ticket?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The ticket is $10 and location is 1881 Post Street.
+user: Great, thank you.
+assistant: Have a good day.

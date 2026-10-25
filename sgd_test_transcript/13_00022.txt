@@ -1,0 +1,19 @@
+user: Can you help me find something interesting to do in London? I am looking for a stage show on the 11th of this month.
+tool(FindEvents): ok n_results=10
+assistant: A Taste For Murder is popular and is taking place at the Wanstead Library at 6:30 pm on March 11th.
+user: That sounds great.
+assistant: Do you want to purchase tickets for this event?
+user: Maybe later. Could you please search hotels in that area too?
+tool(SearchHotel): ok n_results=10
+assistant: There is a hotel called 45 Park Lane, which is a 5 star hotel.
+user: Sounds good. I would like to purchase tickets to the event that you found.
+assistant: How many tickets would you like?
+user: Just 1 ticket please.
+assistant: Please confirm the following details: Booking 1 ticket for A Taste For Murder in London on March 11th.
+user: Correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed. Enjoy the show.
+user: How much does the ticket cost?
+assistant: The ticket is $55.
+user: Thank you for your help, that is all I need for now.
+assistant: Okay, have a great day.

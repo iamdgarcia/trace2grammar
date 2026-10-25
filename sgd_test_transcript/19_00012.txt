@@ -1,0 +1,30 @@
+user: I'm searching for a location to dine. I'm searching for a diner with an average priced tag.
+assistant: What type of cuisine are you searching for?
+user: Get me one that offers burger.
+assistant: What place ought I look in?
+user: Look for diners in San Jose.
+tool(FindRestaurants): ok n_results=10
+assistant: 71 Saint Peter is a lovely diner, and is located in San Jose.
+user: Could you recommend alternative diners? Get me one that offers pasta.
+tool(FindRestaurants): ok n_results=10
+assistant: Al Castello Ristorante is a lovely diner, and is placed in San Jose.
+user: Yeah, that's lovely.
+assistant: Do you wish to book a spot there?
+user: Yeah, I'd like to book a spot.
+assistant: When ought I attempt to book for?
+user: Book it on half past 12 in the afternoon.
+assistant: Please verify the following information: reserve a spot at Al Castello Ristorante in San Jose for March 1st, 12:30 pm. The booking is for 2 people.
+user: Yeah, that's fine with me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete.
+user: Could you get me a taxi to head there?
+assistant: What sort of taxi do you like? You may take pool or luxury, or something else. Will you head to 2083 Camden Avenue?
+user: Yeah, that's fine with me. I'd prefer a The most comfortable ride.
+assistant: Please verify the following information: you'd like a taxi to 2083 Camden Avenue. You require 2 seats, and prefer a luxury ride.
+user: Yeah, that's fine with me.
+tool(GetRide): ok n_results=1
+assistant: I reserved your taxi and it is coming.
+user: What is its price?
+assistant: The taxi price is $39.60.
+user: Thank you for your assistance; that's all.
+assistant: Have a pleasant afternoon.

@@ -1,0 +1,19 @@
+user: Can you book me a cab please?
+assistant: Sure, how many seats and where do you want to go? Also what kind of ride?
+user: I want a normal ride for 1 to 3339 Walnut Avenue
+assistant: Confirming your 1 regular seat to 3339 Walnut Avenue
+user: Yes that's great, how long till it gets here, and how much?
+tool(GetRide): ok n_results=1
+assistant: It's booked and will be there in 4 minutes, it's $10.55 total
+user: Thanks for your help. Now help me find a song to listen to, maybe something throwback from nine years ago, I wanna hear an Electropop song from the album Free Wired
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song by Far East Movement called Rocketeer from their album Free Wired
+user: Yup that's good, play it on my living room speaker
+assistant: Please confirm you want to play Rocketeer in your living room
+user: Yes that's good for now
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: Thanks so much
+assistant: What else can I do
+user: Nothing else for now, thanks agian
+assistant: Sure thing, have a wonderful day

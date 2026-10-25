@@ -1,0 +1,42 @@
+user: I need to find a therapist.
+assistant: I'd be happy to help. Where would you like me to look?
+user: I'd like to find someone based in Novato please.
+assistant: What type of therapist are you interested in seeing?
+user: I'd like to see a family counselor.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 in Novato. Would you like to see Jones Jeannette? She is a Family Counselor.
+user: Who is the other therapist?
+assistant: The other family counselor in Novato is Lowe Richard.
+user: Can you tell me where their office is located?
+assistant: He is located at 250 Bel Marin Keys Blvd # D4.
+user: That's the one I want to see.
+assistant: Would you like to make an appointment?
+user: Yes, please make me an appointment.
+assistant: What day works best for you? What time would you like to visit?
+user: I'd like to see if there is an appointment available on the 4th of March at 14:00.
+assistant: You'd like to see Lowe Richard on March 4th at 2 pm. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you will receive an email confirmation shortly.
+user: Can you request a payment from Margaret of $106?
+assistant: You'd like a public transaction from Margaret in the amount of $106. Is that right?
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: I'd like to find an affordable restaurant.
+assistant: What type of cuisine do you prefer?
+user: I'd like American food.
+tool(FindRestaurants): ok n_results=4
+assistant: May I suggest Finnegan's Marin Restaurant & Bar in Novato?
+user: That sounds great. Can you make a reservation for one at quarter to 12 in the morning?
+assistant: You'd like a table for 1 at Finnegan's Marin Restaurant & Bar in Novato on March 4th at 11:45 am. Is that correct?
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Unfortunately, there is no availability at that time. Would you like me to see if Finnegan's Marin Restaurant & Bar has a table for 1 on March 4th at 12 pm instead?
+user: That works for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved.
+user: Great! Can you tell me what the restaurant is rated?
+assistant: It has an average user rating of 4.2.
+user: Perfect. Thank you for the help.
+assistant: You're very welcome. Have a wonderful day!

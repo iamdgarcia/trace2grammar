@@ -1,0 +1,18 @@
+user: Can you find me a train please
+assistant: Sure, when are you travelling and where are you leaving from?
+user: I want to leave NY on the 5th of March
+assistant: OK and headed where?
+user: I need 1 flexible seat going to Philly
+tool(FindTrains): ok n_results=8
+assistant: I found 8 trains including a 7:40 am train that will cost you $66
+user: What else did you find?
+assistant: I also found a 7:50 am train for $69
+user: That sounds good to me
+assistant: Do you want tickets then?
+user: No not yet, but I do need to find a house to stay in for 1 person with laundry and a 3.9 rating or higher
+tool(SearchHouse): ok n_results=10
+assistant: How about this place at 1 Logan Square which has a 3.9 rating
+user: That sounds good
+assistant: Do you want to book it?
+user: No, not as of yet, that's it
+assistant: Thanks then, take care

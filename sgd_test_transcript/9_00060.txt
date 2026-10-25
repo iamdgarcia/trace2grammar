@@ -1,0 +1,16 @@
+user: I would like to find a movie I can watch.
+assistant: Where are you located?
+user: Can you look for movies showing in Healdsburg?
+tool(FindMovies): ok n_results=3
+assistant: I have found 3 movies. What do you think of Blinded by the Light, IT Chapter Two or Where'd You Go, Bernadette?
+user: IT two sounds perfect for me, please buy me tickets for it.
+assistant: On what day do you want to watch this movie and what number of tickets do you want? What type of show do you want?
+user: I would like to see an imax show tomorrow and I would like two tickets.
+assistant: When would you like to see the show?
+user: I would like to see the show at half past 8 in the night.
+assistant: Confirm these details for me: You would like 2 tickets for IT Chapter Two for the March 2nd imax show in Healdsburg that begins at 8:30 pm.
+user: Yes that sounds fine.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased.
+user: Thanks very much for your help. That's all I needed help with.
+assistant: Have a great day.

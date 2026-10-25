@@ -1,0 +1,29 @@
+user: Hi I'm hungry and want to go out to eat. Preferably something with vegetarian options that serves Pizza and Pasta.
+assistant: In what location would you like it to be in?
+user: Please find me restaurants in Palo Alto.
+tool(FindRestaurants): ok n_results=2
+assistant: I would recommend Italico Restaurant located in Palo Alto.
+user: Are the prices cheap? What is the average rating?
+assistant: The restaurant is pretty pricey. They have an average rating of 4.4.
+user: Is there anything else you can recommend me?
+assistant: I would suggest Vina Enoteca in Palo Alto.
+user: That sounds good.
+assistant: Would you like me to book you a table here?
+user: Yes that would be great, book me a table.
+assistant: What time would you like the reservation to be?
+user: I would like to make a reservation for 4:30 in the evening.
+assistant: So you'd like a table at Vina Enoteca in Palo Alto at 4:30 pm on March 1st for 2 people. Is this correct?
+user: Yes, that is wonderful.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry I was unable to make the reservation. Is there anything else I can help you with?
+user: Please try booking the table for half past 12 in the afternoon.
+assistant: So you'd like a table for 2 at Vina Enoteca in Palo Alto at 12:30 pm on March 1st. Is this correct?
+user: That works for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been successfully booked.
+user: What is their contact number and address?
+assistant: You can call them at 650-646-3477 and their address is 700 Welch Road.
+user: Thank you very much.
+assistant: Is there anything else I can assist you with?
+user: No, that will be all. Thank you.
+assistant: Have a wonderful day.

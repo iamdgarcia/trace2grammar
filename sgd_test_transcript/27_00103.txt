@@ -1,0 +1,22 @@
+user: I want you to find me a bus.
+assistant: Can you tell me from where will you be living and which is your destination, also could you tell me when are you planning to leave?
+user: I will be departing from Fresno to arrive to Anaheim, CA, and I have planned to depart on 1st of this month.
+tool(FindBus): ok n_results=4
+assistant: How would you like taking the bus which departs at 1:50 pm, which has a cost of $34?
+user: Can you tell me the station from where this bus leaves and the station where the bus will be arriving at?
+assistant: The bus will be leaving from 2660 Tulare St. , and it's arrival station is Anaheim Bus Station.
+user: Alright, that is nice. Can you tell me about some attractions there? More specifically I am interested in something which is child-friendly, for example an Amusement park.
+tool(FindAttractions): ok n_results=3
+assistant: I found 3 attractions which match what you want. You might consider visiting Disney California Adventure Park, which is a Theme Park.
+user: That is nice. Is it possible for you to buy me the bus tickets which you told me earlier?
+assistant: Can you tell me the number of tickets you want to buy?
+user: I need tickets just for one person.
+assistant: Can you please confirm that you want to buy tickets for 1 person without extra luggage for the bus which leaves from Fresno on March 1st at 1:50 pm to go to Anaheim?
+user: That suits me quite well.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked.
+user: Can you also find me 2 rooms in a hotel there, but also for it to allow smoking?
+tool(SearchHotel): ok n_results=10
+assistant: A nice 2 star hotel called Anaheim Executive Inn is a good option for you.
+user: That is good. That is all I need at the moment.
+assistant: Later then, have a wonderful day!

@@ -1,0 +1,40 @@
+user: Find me a salon.
+assistant: What city should I look in?
+user: Find a salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: 18/8 Fine Men's Salons - Palo Alto is a good Palo Alto salon.
+user: What is the phone number for the salon and the average rating?
+assistant: The phone number is 650-460-8290 and it has an average rating of 3.9.
+user: Will you look for another option?
+assistant: California Barber Shop is a good one in Palo Alto.
+user: Okay that works for me.
+assistant: would you like me to make an appointment there?
+user: Yes, make me that appointment.
+assistant: What day would you like the appointment to be and what time?
+user: Make the appointment at 2 pm on the 14th.
+assistant: Could you confirm the details? You want to go to California Barber Shop at 2 pm on March 14th. Right?
+user: No make it the 1st of March.
+assistant: could you confirm that you want to go to California Barber Shop on March 1st?
+user: Yes that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made.
+user: What is the phone number and address?
+assistant: The address is 441 Cambridge Avenue and the phone is 650-326-4820.
+user: Thanks so much. I'd like to find a restaurant there to eat and I'd like it to have outdoor seating.
+assistant: What sort of Cuisine would you like?
+user: Find some Japanese food.
+tool(FindRestaurants): ok n_results=2
+assistant: Jin Sho is a good one in Palo Alto.
+user: Yes that will work for me. Book me a table there.
+assistant: What time should I make the reservation for?
+user: Make a reservation for 7:45 pm.
+assistant: Please confirm the details. You want to book at Jin Sho in Palo Alto for 7:45 pm on March 1st. You're making a reservation for 2 people.
+user: No, the reservation is for 1 person for quarter to 12 in the morning.
+assistant: Could you confirm that you want to make the reservation for 11:45 am for 1?
+user: Sounds good to me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was not able to make the reservations. But would you like to try Jin Sho for 1 person on March 1st at 12 pm?
+user: That won't work.
+assistant: Could I assist with anything further?
+user: No but thanks.
+assistant: Enjoy your day.

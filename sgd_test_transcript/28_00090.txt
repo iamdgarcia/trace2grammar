@@ -1,0 +1,28 @@
+user: Can you help me find attractions?
+assistant: Where do you want to search?
+user: I'd like to search in Paris.
+tool(FindAttractions): ok n_results=10
+assistant: How about a place of worship? American Church in Paris is nice.
+user: Okay, that sounds awesome. Can you find me a rental car in Paris?
+assistant: What time will you be picking up?
+user: Around afternoon 1:30 please.
+assistant: What date do you need the car, and what date will you be returning it?
+user: I'll be picking it up this Saturday, and returning it on Wednesday next week.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a great option available at Orly International Airport. It's a SUV; an Alfa Romeo Stelvio.
+user: That sounds great. Can you reserve it?
+assistant: Will you be needing insurance?
+user: No thank you.
+assistant: Please confirm: Pick up the SUV from Orly International Airport on March 2nd at 1:30 pm. Drop off on March 6th. You do not need insurance.
+user: On second thought, better add the insurance.
+assistant: Please confirm: picking up a car with insurance from Orly International Airport.
+user: Yes, that's perfect.
+tool(ReserveCar): ok n_results=1
+assistant: Your SUV has been reserved.
+user: Can you share the location of Orly International Airport with Jordan?
+assistant: Please confirm: share the location of Orly International Airport with Jordan.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thanks, that'll be all for now!
+assistant: Have a wonderful evening!

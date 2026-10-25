@@ -1,0 +1,30 @@
+user: I would like to find something interesting to do.
+assistant: Did you have a preference for the type of event? Which city should I look in?
+user: I really like Drama and I'm trying to find something near San Rafael.
+tool(FindEvents): ok n_results=5
+assistant: Cabaret Kids is a very popular event taking place at Marin Center Showcase Theater on March 2nd at 5:30 pm.
+user: That sounds good, but could you find me another event? I really like Music.
+tool(FindEvents): ok n_results=2
+assistant: I found 2 events for you. One very popular event is Abba the Concert at Marin Veterans' Memorial Auditorium on March 11th at 6 pm.
+user: What is the address of the venue?
+assistant: It is 10 Avenue of the Flags.
+user: That sounds awesome.
+assistant: Did you want to buy tickets for this event?
+user: Perhaps later.
+assistant: Did you need help with anything else?
+user: I will need to request a payment.
+assistant: Who is the contact person and for what amount?
+user: The amount is fifty two bucks and the contact person is Wilson.
+assistant: Please confirm you're making a transaction with Wilson for $52.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request was successful.
+user: Thank you! I'd also like to buy 2 tickets to the event you found
+assistant: Please confirm you're booking 2 tickets for Abba The Concert in San Rafael on March 11th.
+user: That is correct. How much will one ticket be?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Have fun! One ticket will be $20.
+user: Thank you for your help.
+assistant: Did you need help with anything else?
+user: No, but thanks again.
+assistant: Have a wonderful day.

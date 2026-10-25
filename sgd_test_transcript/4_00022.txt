@@ -1,0 +1,20 @@
+user: Think you could find me a place to eat?
+assistant: I think so. What kind of food are you looking for? Also in what area would you like me to look?
+user: Find me a place that serves burgers in San Jose and you will be my hero.
+tool(FindRestaurants): ok n_results=9
+assistant: I've found 9 restaurants that serve burgers in San Jose. How about Black Angus Steakhouse?
+user: Wow, that sounds delicious. What's their phone number?
+assistant: Their phone number is 408-266-6602.
+user: Great, thanks.
+assistant: Would you like to reserve a table here?
+user: Yes, I would.
+assistant: What time would you like the reservation to be for?
+user: Make the reservation for 3. No, actually, make it for a quarter past 5 in the evening.
+assistant: You would like to make a reservation for 2 at Black Angus Steakhouse in San Jose. The time of this reservation will be 5:15 pm on March 1st. Is that all correct?
+user: Yes that is all correct. Can you tell me the restaurants user rating and address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation has successfully been made. Their average user rating is 4.1 and the street address is listed as 1011 Blossom Hill Road.
+user: Great. Thank you very much for your help.
+assistant: I'm always glad to be of assistance. Will that be all you need?
+user: For now, yes. I'll let you know if I need anything further.
+assistant: Okay, until then.

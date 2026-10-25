@@ -1,0 +1,17 @@
+user: I want to watch an action movie featuring Morgan Freeman online.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie called Angel Has Fallen.
+user: Angel Has Fallen is a good movie.
+assistant: Do you want to watch it now?
+user: Yes, please play the movie with English subtitles.
+assistant: Please confirm you want to watch Angel Has Fallen with English subtitles.
+user: That is correct.
+tool(PlayMovie): ok n_results=1
+assistant: Now playing the movie.
+user: How is the weather in Martinez?
+tool(GetWeather): ok n_results=1
+assistant: The temperature is 80 degrees F with a 24 percent chance of rain.
+user: Thank you.
+assistant: May I further assist you?
+user: No, that will be all.
+assistant: Bye!

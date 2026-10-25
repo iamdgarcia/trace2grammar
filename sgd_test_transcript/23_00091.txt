@@ -1,0 +1,42 @@
+user: i am looking for a train ride
+assistant: when are you traveling? where are you traveling to and from?
+user: i am traveling from anaheim to phoenix on 9th of march
+tool(FindTrains): ok n_results=4
+assistant: what about 6:30 am departure for $126
+user: what station does this traveling from and to
+assistant: you will be traveling from anaheim intermodal center and arrive at phoenix union station
+user: what else can you find
+assistant: what about 6:40 am departure for $125
+user: ok that sounds perfect
+assistant: would you like to book a ticket
+user: yes please purchase a ticket for m
+assistant: would you like travel insurance
+user: yes i need trip insurance
+assistant: how many seat do you need
+user: this is for 1 ticket
+assistant: please confirm your purchase of 1 value ticket from anaheim to phoenix on march 9th at 6:40 am
+user: yes that is correct
+tool(GetTrainTickets): ok n_results=1
+assistant: your ticket is booked
+user: thank you, i am also looking for something fun to do
+assistant: what do you prefer
+user: i want to go to broadway show
+tool(FindEvents): ok n_results=3
+assistant: i found 3 broadway show. what about boondocks improv at dearing acting studio on march 10th at 6:30 pm
+user: how much is the ticket
+assistant: it is $50 per ticket
+user: what else is good that you can find
+assistant: what about chaos comedy improv show at dearing acting studio on march 7th at 5 pm
+user: what is the price of the ticket
+assistant: it will be $20 per ticket
+user: ok that is great
+assistant: would you like to purchase a ticekt
+user: no, not right now. i want to share location with teresa
+assistant: please confirm to share dearing acting studio with teresa
+user: no please share it nicholas
+assistant: please confirm to share dearing acting studio with nicholas
+user: yes that is correct
+tool(ShareLocation): ok n_results=1
+assistant: your location has been shared
+user: thank you thats all i need
+assistant: have a great day

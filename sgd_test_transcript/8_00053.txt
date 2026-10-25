@@ -1,0 +1,16 @@
+user: I would like to request a payment. Please make the transfer private. The transaction is for $147 with Peter.
+assistant: You would like to make a private transaction with Peter for $147, is this correct?
+user: Yes, that is right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request is complete.
+user: I would like to make a payment.
+assistant: Who would you like to make the payment to? Are you paying from debit card or credit card?
+user: Please make the transaction with Victoria from my in-app balance.
+assistant: What is the amount?
+user: Make it for 151 bucks.
+assistant: You would like to send Victoria $151 from your app balance, is this correct? This transaction is visible to the public.
+user: Yes, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made successfully. The recipient should be able to view the transaction soon.
+user: Thank you very much, that will be all!
+assistant: Have a great day!

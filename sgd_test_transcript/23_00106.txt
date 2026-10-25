@@ -1,0 +1,34 @@
+user: Could you help me to find a train?
+assistant: can i know the travel date and city?
+user: I want 1 ticket for today and want to go to Anaheim, CA.
+assistant: From which city you want to depart?
+user: I like to have the tickets from Phoenix, AZ.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains of your choice. One is departing at 7 am with $131 cost.
+user: Can i know the arrival station?
+assistant: The arrival station is Anaheim Intermodal Center.
+user: This is perfect.
+assistant: Any other help you want?
+user: can you book the train tickets and i want trip insurance.
+assistant: Please give confirmation details: You want to book the tickets from Phoenix to Anaheim for march 1st at 7 am and the ticket is for 1 people with trip insurance and i need value ticket.
+user: This is perfect..can i know from where you leaving?
+tool(GetTrainTickets): ok n_results=1
+assistant: I booked the ticket successfully. The leaving station is Phoenix Union Station.
+user: can you find something interesting to do there?
+assistant: Do you prefer any particular category like Music or Theater or any other?
+user: I want in the category of Concert.
+tool(FindEvents): ok n_results=1
+assistant: I searched 1 event which you may like..There is a event called Brown Sabbath which is taking place at crossroads at House of Blues Anaheim on march 2nd at 7:30 pm.
+user: Can i know the location address and the ticket cost?
+assistant: The address is 1530 Disneyland Monrail System with cost of $55.
+user: Okay..fine..I want you to share the location.
+assistant: To whom do you want to share?
+user: I want to share with Nathan.
+assistant: Please give confirmation details: You want to share the location crossroads at House of Blues Anaheim with Nathan.
+user: Sorry, i want to share with Brittany.
+assistant: Please give confirmation details: You want to share the location crossroads at House of Blues Anaheim with Brittany.
+user: This is great.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the location.
+user: Thank you so much..This much is okay for now.
+assistant: Have a great day..

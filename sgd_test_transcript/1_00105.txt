@@ -1,0 +1,14 @@
+user: I am interested in finding a four star hotel in Toronto, and I am in need of one room.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 4 star hotel which you might consider called Bisha Hotel Toronto.
+user: Can you tell me how much it will cost me per night?
+assistant: The room at this hotel will cost you $208 per night.
+user: That seems nice. I want to make a booking at this hotel.
+assistant: Can you tell me when you are going to the hotel, and for how long you need the room?
+user: I will be going at the hotel today, and I need to have the room for seven days.
+assistant: Can you please confirm that you want to have 1 room for 7 days at Bisha Hotel Toronto in Toronto, and that you are going to go there on March 1st?
+user: Yes, that is good. Can you give me the address of the hotel, and a phone number I can use to call them?
+tool(ReserveHotel): ok n_results=1
+assistant: Your requested room has been booked. The hotel can be found at 80 Blue Jays Way, and if you want to call them you can at +1 416-551-2800.
+user: Thank you, you did help me a lot. That would be all.
+assistant: Later then, and have a nice day!

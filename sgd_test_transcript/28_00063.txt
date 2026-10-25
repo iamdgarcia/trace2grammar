@@ -1,0 +1,32 @@
+user: Please find me a movie to watch. I like moves that have Animation and Pete Davidson as an actor. Films directed by Thurop Van Orman are good too.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 result that fits your criteria. It is The Angry Birds Movie 2. It has a 72 out of 100 rating.
+user: It seems like I'll like it.
+assistant: Do you require any further assistance?
+user: I want to find a place to eat near the movie theater.
+assistant: What type of restaurant would you like to search for?
+user: Please look for a Punjabi restaurant.
+assistant: What are would you like to search for this restaurant in?
+user: Please search in the Mountain View area.
+tool(FindRestaurants): ok n_results=5
+assistant: There is a restaurant called Chaat Paradise in Mountain View.
+user: Please find other restaurants, and include vegetarian restaurants.
+tool(FindRestaurants): ok n_results=4
+assistant: There are 4 restaurants that meet your criteria. One of them is Dosa Paratha Indian Cuisine in Mountain View.
+user: Please find other restaurants.
+assistant: Another restaurant is Mantra India located in Mountain View.
+user: What is the price range at the restaurant? Please find the contact information for the restaurant.
+assistant: The price range is moderate. The restaurant phone number is 650-960-1000.
+user: Thank you.
+assistant: Do you want to book a table at that restaurant?
+user: Yes, please reserve a table for three on March 13th.
+assistant: What time would you like to make the reservation for?
+user: Please reserve the table for 11:00.
+assistant: Please verify the following details are correct. You would like a table for 3 at Mantra India on March 13th at 11 am. The restaurant is located in Mountain View. Is this correct?
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: A table has been successfully reserved.
+user: Thank you.
+assistant: Do you require any further assistance?
+user: No thank you.
+assistant: Enjoy the rest of your day.

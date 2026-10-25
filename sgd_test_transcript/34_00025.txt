@@ -1,0 +1,25 @@
+user: I'll be travelling soon and need help finding a hotel.
+assistant: I can help you with that. Please tell me the city in which to search for hotels.
+user: Search for hotels in Paris.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels that might interest you. How about Ac Hotel By Marriott Paris Porte Maillot, a 4 star hotel?
+user: Is the hotel smoker-friendly?
+assistant: I'm sorry, the hotel has a no-smoking policy.
+user: May have have their contact number and location?
+assistant: Sure. They're located at 6 Rue Gustave Charpentier, 75017, and can be reach by phone on +33 1 84 82 49 09.
+user: That works for me, since I don't smoke. I'd like to explore the area while there. Can you recommend places to visit?
+tool(FindAttractions): ok n_results=10
+assistant: Sure. You might be interested in the Place of Worship called American Church in Paris.
+user: Please get me their contact number and find out whether they welcome children, because I'll be taking care of my niece who lives in Paris on that day.
+assistant: Yes, they welcome children, and you can reach them on 1 40 62 05 00.
+user: All right. Very cool. Please go ahead and reserve the hotel you found earlier. I'd like to check in on 1st of this month.
+assistant: May I know the duration of your stay?
+user: I intend on staying for 6 days.
+assistant: Just a moment please. Let me see if I got everything correctly: You'd like to check into 1 room at Ac Hotel By Marriott Paris Porte Maillot in Paris on March 1st, and will be staying for 6 days.
+user: That is correct. What's the nightly price?
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully confirmed your reservation. The nightly cost is $160.
+user: Thank you very much. You've been very helpful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Glad to have been of service. Goodbye, and have a great day!

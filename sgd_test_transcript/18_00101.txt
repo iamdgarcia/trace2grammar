@@ -1,0 +1,19 @@
+user: I want to find a hotel room for 1 in NY please
+tool(SearchHotel): ok n_results=10
+assistant: What about the 5 star 1 Hotel Brooklyn Bridge?
+user: That sounds good, what will the weather be like over there?
+tool(GetWeather): ok n_results=1
+assistant: It'll be 66 degrees with a 37 percent chance of it raining
+user: How humid is it gonna be?
+assistant: It'll be around 41 percent humidity
+user: That's good, let's book that hotel then
+assistant: How long are you staying?
+user: I'll be there for seven days starting on the 1st of March
+assistant: Confirm you want to book 1 room for 7 days starting on March 1st at the 1 Hotel Brooklyn Bridge in New York yes?
+user: Yes that's great. What's their address and nightly cost?
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked for $375 a night and you can find them at 60 Furman Street, Brooklyn
+user: Cool, thanks for all the help
+assistant: What else can I do for you?
+user: Nothing else, that's it for now
+assistant: OK enjoy your stay in New York

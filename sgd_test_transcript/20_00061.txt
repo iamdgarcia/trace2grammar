@@ -1,0 +1,30 @@
+user: Very soon I'll need a car, rent one for me
+assistant: tell me the date and the time when you want to pick it up.
+user: I want it today from 2 in the afternoon
+assistant: tell me the last day you'll need it and where you want to pick it up
+user: the place is seattle and the last day is next tuesday
+tool(GetCarsAvailable): ok n_results=10
+assistant: on that day there are 10 cars perfect for you. if you go at king street station there's a sedan audi a8
+user: tell me the price of it for a single day
+assistant: it's $32.00
+user: show me some more
+assistant: seattle-tacoma international airport has a suv citroen c5
+user: tell me the price for a single day for this one
+assistant: it's $38.00
+user: I see. find me a house there
+tool(SearchHouse): ok n_results=10
+assistant: you can find one at 1000 1st avenue, the rating is 4.5
+user: look for more results with a 3.3 rating and laundry service too
+tool(SearchHouse): ok n_results=10
+assistant: if you reach 1007 1st avenue you'll finnd a 3.3 rated house
+user: I'll keep that in mind. book the car now
+assistant: of course, do you think you'll need insurance too?
+user: No, don't add it
+assistant: confirm the next data: you are about to rent a suv at seattle-tacoma international airport from march 1st at 2 pm until march 5th. you don't want any extra insurance
+user: yeah that's right
+tool(ReserveCar): ok n_results=1
+assistant: you got your rented car
+user: that'scool
+assistant: is there anything else you need my help with?
+user: no, nothing.
+assistant: fine then, have a great time!

@@ -1,0 +1,29 @@
+user: I'm looking for interesting things to do.
+assistant: Is there anything in particular you like such as music or theater?
+user: I really enjoy Musical shows.
+assistant: And what location are you interested in looking for shows?
+user: The Sacramento area would be good.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events you might enjoy. Aftershock Festival is one that a lot of people enjoy. It's at Discovery Park on March 5th at 5:30 pm.
+user: And where is the park located?
+assistant: The park is at 1600 Garden Highway.
+user: I like the sound of that. Now I'll need a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: There's a 3 star hotel called Courtyard By Marriott Sacramento Cal Expo in that area.
+user: Can you give me their address?
+assistant: They are on 1782 Tribute Road.
+user: And how much is it per night.
+assistant: For a night it is $102.
+user: That could work.
+assistant: Do you want to reserve a room?
+user: That's not necessary right now.
+assistant: What else can I help you with?
+user: That event from before, I want to buy tickets for it.
+assistant: How many tickets do you need?
+user: I need three tickets.
+assistant: You want 3 tickets to Aftershock Festival in Sacramento on March 5th. Is everything correct?
+user: Yeah, that's all correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased. Have a fun time at the event!
+user: Thanks for all the help. I don't need anything else.
+assistant: Have a wonderful rest of you day.

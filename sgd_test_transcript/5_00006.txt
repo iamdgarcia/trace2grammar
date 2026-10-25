@@ -1,0 +1,12 @@
+user: I have a plan on a short trip to Los Angeles on 6th of this month and I need a bus for three persons.
+assistant: From which City you have planned to start your travel?
+user: I have planned to start my trip from San Francisco and change it for two people.
+tool(FindBus): ok n_results=9
+assistant: Okay, what about a bus starting at 7:30 am which costs $51?.
+user: I think this is suitable for me. Kindly buy the tickets now.
+assistant: I need your confirmation to buy 2 tickets on a bus from San Francisco on March 6th at 7:30 am to Los Angeles.
+user: that is confirmed to proceed. Let me know the origin and destination stations for my reference.
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus will leave from Transbay Terminal station and it will reach to North Hollywood Station for which the tickets are booked successfully.
+user: Thank you so much and that's all.
+assistant: Have good day.

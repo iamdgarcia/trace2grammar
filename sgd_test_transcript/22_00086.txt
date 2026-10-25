@@ -1,0 +1,42 @@
+user: Hi, could you help me find a psychologist please?
+assistant: Which city are you interested in?
+user: A Psychiatrist in Santa Rosa will be great.
+tool(FindProvider): ok n_results=6
+assistant: I see, how about a Psychiatrist in Santa Rosa called Beck Jennifer P.?
+user: May I have their address please?
+assistant: They are located at 1400 North Dutton Avenue #6.
+user: Sounds great. Could you make an appointment at 4 in the evening please?
+assistant: Sure, and which date are you looking at?
+user: Next friday will do.
+assistant: Please confirm your appointment with Beck Jennifer P at 4 pm on March 8th.
+user: Sounds great to me, may I have their phone number please?
+tool(BookAppointment): ok n_results=1
+assistant: You can contact them at 707-566-4600. Unfortunately, I was not able to make the appointment. How about an appointment with Beck Jennifer P at 3:30 pm on March 8th.
+user: I am fine with that too.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and a confirmation is on its way.
+user: Could I make a payment request for 124 dollars please?
+assistant: And who are you requesting from?
+user: Victoria, please. Thank you.
+assistant: Please confirm your public payment request from Victoria for $124.
+user: Sure, that is right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been made.
+user: Thank you, could you find me a restaurant please?
+assistant: And what type of food are you looking at?
+user: Something Taiwanese will be great.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 restaurants you may like, how about Gary Chu's in Santa Rosa?
+user: Are there any alternatives?
+assistant: How about Kirin in Santa Rosa?
+user: Sounds great to me!
+assistant: Would you like me to make a reservation for you?
+user: Sure, could you do so please?
+assistant: And what time would you like the reservation for?
+user: At 11:45 in the morning please.
+assistant: Please confirm your reservation for 2 at Kirin in Santa Rosa at 11:45 am on March 8th.
+user: That is fine with me!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, your reservation could not be made. How about a reservation for 2 at Kirin in Santa Rosa at 12 pm on March 8th instead?
+user: No, that is all I need then. Thank you.
+assistant: Have a great day ahead!

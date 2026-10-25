@@ -1,0 +1,31 @@
+user: Search for me some songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about California King Bed by Rihanna from album Loud?
+user: Something else you have.I would like something from three years back.The album Your Name I heard that is very good.
+tool(LookupMusic): ok n_results=4
+assistant: What is your opinion about Dream Lantern by Radwimps from album Your Name.
+user: What music is this?
+assistant: This is a Rock song.
+user: Yes, I like this one.
+assistant: You want to play the song now?
+user: No, maybe later.
+assistant: Can I do something else?
+user: Tell me how will be the weather in FAIRFAX ON wEDNESDAY NEXT WEEK.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 91 degrees Fahrenheit and 12 percent chance of rain.
+user: And the humidity how will be?
+assistant: Will be around 17 percent.
+user: Windy how will be?
+assistant: Average wind speed should be 11 miles per hour.
+user: Good, and in New Delhi on 14th of this month.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 96 degrees Fahrenheit and 7 percent chance of rain.
+user: Good.Play for me if you can the song that you have found.
+assistant: Play the song Dream Lantern in Living room.I'm right?
+user: Yes is good for me.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thank you very much.
+assistant: With something else I can help you?
+user: No.Thank you for all.
+assistant: Have a great day!

@@ -1,0 +1,34 @@
+user: Can you please find me some child-friendly attractions to visit?
+assistant: Sure, but first tell me in which area.
+user: Please find me something in San Francisco.
+tool(FindAttractions): ok n_results=10
+assistant: You should definitely check out Alcatraz, which is an amazing Historical Landmark.
+user: Can you please give me a contact number for the location?
+assistant: You can reach them at 415-561-4900.
+user: Perfect. Can you please find me a rental car there that I can pick up at 15:00. I plan to keep it until the 3rd.
+assistant: Will you be picking it up in San Francisco?
+user: Yes, that's correct, but on second thought I'll be needing it until March 11th. It would be great if you could find me a Hatchback.
+assistant: On which date do you plan on picking it up?
+user: I want to pick the car up on the 10th of this month.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found 6 cars matching your criteria, out of which I recommend a nice Hatchback, a Fiat Panda, which you could pick up at SFO International Airport.
+user: Sounds perfect. Let's place a reservation for it.
+assistant: Do you want me to add insurance to your rental?
+user: No, I do not want insurance.
+assistant: Can you please confirm that you want me to book a Hatchback for you to be picked up on March 10th at 3 pm from SFO International Airport, due for drop off on March 11th.
+user: Yes, that's correct. Can you please tell me the daily rate for the car?
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully booked your rental, which is priced at $26.00 per day.
+user: Can you please share the location?
+assistant: Sure, with whom? Just to confirm, you want me to share the address for SFO International Airport, right?
+user: Yes, that's correct. Please share it with Louis.
+assistant: Can you please confirm that you want me to share the location for SFO International Airport with Louis?
+user: On second thought, please share the address for Alcatraz with Nicholas.
+assistant: Can you please confirm that you want me to share the location for Alcatraz with Nicholas?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks a lot for your help!
+assistant: Is there anything else I could help you with?
+user: No, not at the moment. Thanks!
+assistant: My pleasure! Have a great day!

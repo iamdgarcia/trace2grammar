@@ -1,0 +1,32 @@
+user: I want a train to go to Seattle.
+assistant: What city are you coming from? What day are you leaving?
+user: I'm coming from Portland, OR and am leaving on the 7th of this month.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 trains. One is leaving at 9:10 am and costs $59.
+user: Good. I want to do something that day.
+assistant: What type of events do you like?
+user: I like play events.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events. Beatleconcert is taking place at 12th Avenue Arts on March 10th at 5 pm.
+user: I want something else.
+assistant: Blood Water Paint is taking place at 12th Avenue Arts on March 2nd at 6 pm.
+user: Good. I want to see some attractions there. Any type is fine.
+tool(FindAttractions): ok n_results=10
+assistant: Alki Beach Park is a park there.
+user: Is it child-friendly?
+assistant: Yes, you can take your kids.
+user: I also want a place to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: One is located at 1000 1st Avenue with a 4.5 rating.
+user: Does it offer laundry services?
+assistant: It does offer laundry services.
+user: What else is there?
+assistant: One is located at 1006 Spring Street with a 3.9 rating.
+user: Does it offer laundry services?
+assistant: It does not.
+user: That's a good one.
+assistant: Would you like to reserve it?
+user: Not right now.
+assistant: Do you need anything else?
+user: No, that is all.
+assistant: Have a nice day.

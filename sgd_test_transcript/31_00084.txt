@@ -1,0 +1,33 @@
+user: Can you help me search for a salon in Mountain View?
+tool(FindProvider): ok n_results=9
+assistant: I found 9 salons in Mountain View, including Bollywood Beauty Salon.
+user: What is the phone number?
+assistant: The phone number is 650-938-2400.
+user: Yes, that sounds good. I would like to book an appointment at the salon, please.
+assistant: What time would you like the appointment to be?
+user: Let's make it for 16:15.
+assistant: What date would you like to make the appointment on?
+user: I would like to go to the salon on the 13th of March.
+assistant: You would like to book an appointment at Bollywood Beauty Salon on March 13th at 4:15 pm, is this correct?
+user: Yes, you have it.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, I was not able to book the appointment at Bollywood Beauty Salon for that time. Would you like to take the opening on March 13th at 4:30 pm?
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked.
+user: Thank you very much. I would also like to find a restaurant to eat at while I am out.
+assistant: Is there a particular type of food that you would like to look for?
+user: Yes, I would like to get Japanese food.
+tool(FindRestaurants): ok n_results=9
+assistant: Bushido is a restaurant in Mountain View matching your cuisine.
+user: Yes, that sounds great.
+assistant: Would you like to reserve a table there?
+user: Yes, I would like to reserve one, thank you.
+assistant: What time would you like to reserve the table for?
+user: Please reserve a table for one person at 1 in the afternoon.
+assistant: You would like to reserve a table for 1 at Bushido in Mountain View on March 13th at 1 pm, is that correct?
+user: Yes, that's right. Is the restaurant reasonably priced? Are there vegetarian options on the menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. The price range for the restaurant is moderate. There are several options available for vegetarians.
+user: Thank you very much.
+assistant: Have a great day!

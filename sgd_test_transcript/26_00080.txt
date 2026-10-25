@@ -1,0 +1,22 @@
+user: I need to find a train. Can you help?
+assistant: I'd be happy to. Let's get some details first. Where are you traveling from and where are you going? When will you begin your travels?
+user: I'd like to find a ticket from LAX to San Diego on March 10th.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 options that may work for you. Would you be interested in the 6:50 am train for $50?
+user: Can you tell me what station it will be departing from?
+assistant: It leaves from Union Station.
+user: That will work. Can you suggest some fun things to do in San Diego?
+assistant: Would you be interested in music or theater events?
+user: I'd be interested in Musical shows.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that you may be interested in. Cal Coast Credit Union Amphitheater is hosting Alejandro Sanz on March 7th at 7:30 pm. It's a very popular show.
+user: I have been wanting to see that. Can you suggest some kid-friendly things to do as well?
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 that meet your criteria. Belmont Park is a popular theme park.
+user: Perfect! Can you help me find a house to stay at while I'm there? I really need somewhere that offers laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I have a list of 10 options that could work for you. With a strong rating of 4.6, 1003 Coast Boulevard, La Jolla, California 92037, United States is a beautiful property.
+user: What is the phone number for the house?
+assistant: You can reach them at +1 858-224-7600.
+user: That sounds like it will be perfect. Thank you for the help.
+assistant: You're welcome. Enjoy your trip!

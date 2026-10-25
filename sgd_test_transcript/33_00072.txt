@@ -1,0 +1,31 @@
+user: Let's find stuff do around NY please.
+assistant: Alright, first can you let me know if your looking for Music or Theater or any particular category?
+user: Sure, Let's check out Broadway.
+tool(FindEvents): ok n_results=10
+assistant: Great idea! On March 4th at 6 pm Acting for teens is showing at 520 8th Ave. - Personal Valet Parking is available. I hear the show is very popular!
+user: Whats the address to this venue please?
+assistant: The address is 520 8th Ave. - Personal valet.
+user: Alright, Find out how much 1 ticket will be please?
+assistant: One ticket would be $35.
+user: That sounds reasonable.
+assistant: Great, should we book now for this event?
+user: Yes that would be great.
+assistant: How many tickets would you like to buy?
+user: two tickets please.
+assistant: Ok, got it! Please confirm we are buying 2 tickets for Acting For Teens in New York on March 4th. Is this information correct before i proceed and purchase?
+user: Yes, go ahead.
+tool(BuyEventTickets): ok n_results=1
+assistant: Great news, I was able to purchase your tickets, You will receive a confirmation email shortly.
+user: thanks, let's also schedule a shared ride cab to get there as well
+assistant: Alright, please confirm you would like to schedule a pool ride for 2 , headed to 520 8th Ave. - Personal Valet Parking. Is that right?
+user: Yes perfectly done!
+tool(GetRide): ok n_results=1
+assistant: Great, your ride is book and your cab is in route.
+user: How long before he gets here?
+assistant: Your expected wait time is 7 minutes.
+user: How much will this cost?
+assistant: your ride cost will be $24.82
+user: thank you that will be all today
+assistant: great, glad to help. enjoy your day
+user: OK ,good bye
+assistant: good bye

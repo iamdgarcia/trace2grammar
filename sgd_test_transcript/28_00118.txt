@@ -1,0 +1,37 @@
+user: Can you please find me some attractions worth visiting?
+assistant: Sure, but first tell me in which area.
+user: Please find me some in SD.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions matching your criteria, out of which I recommend a very nice Park, the Balboa Park.
+user: Do they charge entrance? Can you please give me their phone number?
+assistant: They do charge entrance and you can reach them at 619-239-0512.
+user: Perfect. Can you please help me find a car for rent there from the day after tomorrow to March 5th?
+assistant: You plan on picking it up from San Diego, right?
+user: Yes, that's correct.
+assistant: At what time would you like to pick it up?
+user: I'd like to pick it up at quarter past 6 in the evening.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found 6 cars matching your criteria, out of which I recommend a very nice Sedan, a Hyundai Ioniq available for pick up at Santa Fe Depot.
+user: Is there anything else available? I'd like a Hatchback that I can pick up at three pm.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 cars matching your criteria, out of which I recommend a very nice hatchback, a Mazda 3, available for pick up from SAN International Airport.
+user: What's the per day price for this vehicle?
+assistant: The car is $29.00 per day.
+user: Sounds perfect. Let's place a reservation.
+assistant: Would you like me to add insurance?
+user: No, I do not wantinsurance.
+assistant: Can you please confirm that you want me to place a reservation for a Hatchback with no extra insurance available for pickup from SAN International Airport on March 3rd at 3 pm, due for drop-off on March 5th.
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully placed your reservation.
+user: Thanks a lot for everything. Can you please share the location?
+assistant: Do you mean the address for Balboa Park?
+user: No, the address to be shared is the one for SAN International Airport.
+assistant: OK, with who?
+user: Please share it with Kayla.
+assistant: Can you please confirm that you want me to share the location for SAN International Airport with Kayla?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks for everything. That will be all for now!
+assistant: Have a great day!

@@ -1,0 +1,35 @@
+user: I need you to search for a salon for me.
+assistant: What city shall I look in?
+user: Search for a salon in Larkspur.
+tool(FindProvider): ok n_results=3
+assistant: Barber Lane Marin is a salon in Larkspur and is 1 of 3 salons that search found.
+user: That works for me.
+assistant: Do you want to make an appointment there?
+user: Yes, make me an appointment on March 2nd?
+assistant: What time do you want?
+user: Book me a session for 10:30 in the morning.
+assistant: You want a session at Barber Lane Marin at 10:30 am on March 2nd, correct?
+user: That is right.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is booked.
+user: What ratings do they have and how can I contact them?
+assistant: You can contact them at 415-419-5260 and they have a 3.9 rating.
+user: Thanks a lot. Find me a not very costly priced restaurant near there on that day.
+assistant: What type of food do you like?
+user: Search for something that has Brasserie.
+tool(FindRestaurants): ok n_results=1
+assistant: Left Bank Larkspur Brasserie is in Larkspur.
+user: Where are they located at?
+assistant: They are located at 507 Magnolia Avenue.
+user: That works for me. Get me a table for four people there at 10:45 in the morning.
+assistant: You want a table for 4 people at Left Bank Larkspur Brasserie in Larkspur for 10:45 am on March 2nd, correct?
+user: That is right. Do they foods for vegetarians and what kind of ratings do they have?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a 4.3 rating, but do not serve vegetarian foods. I can't book your time there. Is a table for 4 at Left Bank Larkspur Brasserie at 11 am on March 2nd okay with you?
+user: That is fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked.
+user: Thanks a lot.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Have a great day.

@@ -1,0 +1,33 @@
+user: I need to make a payment please!
+assistant: Can you give me the contact name?
+user: Yes, I would like to make the transaction with Emma.
+assistant: And what is the amount?
+user: I would like it in the amount of 97 dollars.
+assistant: From what account would you like it transferred from?
+user: I would like you to send it from my bank account.
+assistant: Please confirm that you would like the amount of $97 transferred to Emma from your debit card and you would like your transaction to be visible to the public.
+user: Yes, that is correct!
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successful and the recipient will be seeing the money soon.
+user: Thank you, I would also like to request a payment please!
+assistant: Can you give me the amount?
+user: Yes, the amount is 161 bucks.
+assistant: And can you give me the contact name please?
+user: Yes, I would like to make the transaction with Isabella.
+assistant: Please confirm that you would like to make a transaction with Isabella in the amount of $161 and you would like it to be visible to the public.
+user: Yes, that is correct!
+tool(RequestPayment): ok n_results=1
+assistant: Your payment was successful.
+user: Thank you so much!
+assistant: Is there anything else you need me to help you with?
+user: Yes, I would like to make a payment please.
+assistant: I will need the name of the contact and the amount. Do you want me to transfer the money from your debit card or your app balance?
+user: I would like to make the transaction to Rachel in the amount of 31 dollars from my credit card please.
+assistant: Please confirm that you would like to make a transaction from your credit card in the amount of $31 to Rachel and you would like your transaction visible to the public.
+user: Yes, that is correct!
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successful and the recipient will see the money soon.
+user: Thank you so much!
+assistant: Is there anything else I can do for you?
+user: No thank you!
+assistant: That will be all I need. Have a nice day!

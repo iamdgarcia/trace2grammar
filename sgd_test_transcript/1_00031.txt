@@ -1,0 +1,13 @@
+user: Hi there, could you get me a table at a restaurant on the 14th of March at 1:30 pm please?
+assistant: Sure, any particular restaurant are you interested in ?
+user: Could you get me a reservation at Schroeder's please?
+assistant: Sure, and which location would you prefer?
+user: A table for two at San Francisco will be fine.
+assistant: Please confirm you reservation at Schroeder's in San Francisco for 2 at 1:30 pm on the March 14th.
+user: That sounds great to me!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much!
+assistant: Do you require any further assistance?
+user: No, that is all I need. Really appreciate it!
+assistant: No worries, have a great day!

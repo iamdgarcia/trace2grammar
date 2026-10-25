@@ -1,0 +1,11 @@
+user: I would like to find a rental car
+assistant: from where do you want it and when do you start the journey and at what time
+user: I'm looking for cars in portland at half past 9 in the morning from 8th of this month
+assistant: until when do you need it
+user: till 10th of this month
+tool(GetCarsAvailable): ok n_results=10
+assistant: there are 10 cars available there is a nice car available at pdx International airport which is sedan of buick regal sportback
+user: Whats the cost per day
+assistant: it is $27.00 per day
+user: that sounds great that's all I need
+assistant: thank you have a good day

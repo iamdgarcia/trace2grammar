@@ -1,0 +1,19 @@
+user: I am in a nice mood and I think watching a movie will be perfect for this time. Can you search for nice movies?
+tool(FindMovies): ok n_results=10
+assistant: What do you think about a movie named Tel Aviv on Fire which is having 92 rating in average out of 100?
+user: Yes, that will be good. Also search for some Popular songs.
+tool(LookupMusic): ok n_results=10
+assistant: I got 10 songs and what about the one Acapella by Karmin in the album Pulses.
+user: Search for something else.
+assistant: Then, tell me your interest on African Beauty song by Diamond Platnumz from the album A Boy from Tandale.
+user: When this song was released? Is this from seven years ago?
+assistant: It is from the year 2018. Is it Okay?
+user: Yes, it is okay and thanks.
+assistant: Any other help you want from me?
+user: Yes, please play this song on the speaker outside.
+assistant: Please confirm to play the song African Beauty in Patio.
+user: Yes, that is confirmed to proceed.
+tool(PlayMedia): ok n_results=1
+assistant: The song was started playing now and you can enjoy the same.
+user: Thanks and that's all.
+assistant: Have a great day.

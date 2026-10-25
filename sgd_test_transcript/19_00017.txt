@@ -1,0 +1,23 @@
+user: I want to find a place to eat.
+assistant: What kind of food do you want to eat? Where are you looking in?
+user: I want to find Filipino restaurants in San Fran.
+tool(FindRestaurants): ok n_results=1
+assistant: Pampalasa is a nice Filipino restaurant in San Francisco.
+user: Is it expensive?
+assistant: No, they are cheap.
+user: Okay, sounds good. I want to book a table for 1 person.
+assistant: What time would you like the reservation for?
+user: I want to make the reservation for 12:30 pm.
+assistant: Please confirm: A table at Pampalasa in San Francisco at 12:30 pm for 1 person on March 1st.
+user: Yes, that sounds great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks. Can you find me a cab to get there? I'm looking for a pool ride to 1261 Folsom Street.
+assistant: Please confirm: a pool ride for 1 to 1261 Folsom Street.
+user: Yes, sounds good.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is on its way.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day!

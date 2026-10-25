@@ -1,0 +1,25 @@
+user: I am planning a visit to Larkspur on the 10th of this month. I need to know what the weather will be like so I can pack accordingly.
+tool(GetWeather): ok n_results=1
+assistant: You probably will not need an umbrella as the rain chance is only 20 percent. Summer clothing will be fine as the temperature should average 85 degrees.
+user: Thanks. I will also like to check out a place to live during my visit. Can you help me book a tour of the Alderwood Apartments please.
+assistant: I gather I am booking a tour of the Alderwood Apartments on March 10th in your name. Is that right?
+user: You understood my request right. Thanks for verifying. Oh and also could you check if the units have clothes washers inside.
+tool(ScheduleVisit): ok n_results=1
+assistant: The tour has been booked in your name. There are no clothes washing machines inside the units.
+user: Is there a separate unit designed for parking the car?
+assistant: No. There is no covered parking.
+user: Thanks for checking. I will also need to rent a vehicle while I am visiting.
+assistant: Which dates will you need the rental. Will March 10th be the day you would like to pick up the rental?
+user: I will need the rental beginning March 5th. I would like to return the vehicle March 11th.
+assistant: Do you know where you would like to start the rental? Is there a type of car you have in mind?
+user: I would like to pick up the rental Monday next week at the Anaheim Intermodal Center. I would prefer a Hatchback.
+assistant: Would you like to add coverage to the rental?
+user: Don't add coverage to the rental but thanks for checking. I would like to get the rental at 9:15 am.
+assistant: I will secure a rental in your name from March 4th to March 11th. The reservation will be available at 9:15 am at the Anaheim Intermodal Center. You would prefer a Hatchback. Do you approve?
+user: Yes. You have my permission to proceed with those details.
+tool(ReserveCar): ok n_results=1
+assistant: Something happened. I could not secure the vehicle with those details. There is a Mazda 3 available at the Anaheim Intermodal Center that can be picked up March 4th. This car has a charge of $26.00 every day.
+user: Thanks for the suggestion but no thanks.
+assistant: What else may I assist you with?
+user: Nothing. I will check back when I need you.
+assistant: Enjoy the rest of your day.

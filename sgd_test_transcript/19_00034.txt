@@ -1,0 +1,23 @@
+user: Hello! I need to make a reservation for a rental car in Las Vegas from the 10th of this month until March 14th.
+assistant: I'd be happy to help. When would you be picking up the car?
+user: I'd like to get it at half past 4 in the evening, if possible.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars that match your criteria. There is a nice Sedan Audi A8 available at Union Plaza.
+user: Can you tell me the price of the rental?
+assistant: The car is $34.00 per day.
+user: What are my other options?
+assistant: There is a Sedan Buick Regal Sportback available at McCarran International Airport.
+user: That suits me better.
+assistant: Would you like to make the reservation now?
+user: Not yet. Can you tell me what buses are traveling there from San Diego? I'd need 1 ticket for the 9th of March.
+tool(FindBus): ok n_results=1
+assistant: There is a bus for $48 that leaves at 3:10 pm.
+user: That would work for me.
+assistant: Would you like to purchase your ticket?
+user: No, I'd like to compare the cost of a one-way flight there first.
+assistant: Will you still be leaving on March 10th?
+user: I'd like to go Friday next week.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: If you like Alaska Airlines, there is a flight that leaves at 6:30 pm for $85.
+user: Great. Thanks for the information.
+assistant: You're welcome. Have a wonderful day!

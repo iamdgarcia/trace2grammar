@@ -1,0 +1,20 @@
+user: I need to find some movies online like ones featuring Vanessa Przada Comic movies as that would be good.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you might like called Good Boys.
+user: Good Boys is good.
+assistant: Would you like to play the movie?
+user: Yes, I'd like to play the movie with Spanish subtitles.
+assistant: Please confirm details for playing Good Boys with subtitles in Spanish.
+user: Yes, I'd like that please.
+tool(PlayMovie): ok n_results=1
+assistant: I started playing the movie.
+user: Thank you . What is the weather there on the 13th of this month in Walnut Creek?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 82 degrees F with a 14 % chance of rain.
+user: Okay what about in San Francisco.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 94 Degrees F with a 9 % chance of rain.
+user: How windy will it be and how humid?
+assistant: The average wind speed is 6 mph with humidity 22 percent.
+user: Sure that is fine. That is all so bye for now.
+assistant: Cheers to you today.

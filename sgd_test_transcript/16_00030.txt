@@ -1,0 +1,38 @@
+user: I need to locate a salon.
+assistant: In what city?
+user: I'd like to find something in SFO.
+tool(FindProvider): ok n_results=10
+assistant: There is a good salon in San Francisco, 1512 Barber Shop.
+user: Is it a unisex salon and what is the average rating?
+assistant: Its rating is 4.8 and yes, it is a unisex salon.
+user: What else is there please?
+assistant: Also in San Francisco, you might like 20Th Salon and Barber.
+user: That should work. I'm also going to need a therapist around there.
+assistant: Also in San Francisco?
+user: That's correct, thanks.
+assistant: Are you looking for a family counselor, a psychologist or something else?
+user: A psychologist please.
+tool(FindProvider): ok n_results=4
+assistant: I have 4 possibilities for you. One of them is Adam E. Pollock, who is a San Francisco based psychologist.
+user: OK. I'd like to schedule an appointment please.
+assistant: On what date please?
+user: Could you try for the 1st of March?
+assistant: At what time please?
+user: I'd like to do it Friday next week at 10:15.
+assistant: Confirming an appointment March 8th at 10:15 AM with Adam E. Pollock.
+user: No, make it for 10:00 please.
+assistant: Confirming an appointment at 10 AM with Adam E. Pollock.
+user: Perfect, thanks. May I have the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Yes, the phone number is 415-346-2356. The appointment has been booked and you will receive an email confirming it shortly
+user: Great! I'd like to make an appointment at that salon as well please, at 12:00.
+assistant: Confirming an appointment at 20Th Salon And Barber on March 8th at 12 PM.
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been scheduled.
+user: May I have the address and telephone number?
+assistant: Yes, they are located at 2737 20th Street, and the phone number is 415-824-1335.
+user: Thanks for all your help.
+assistant: Is there anything else I can help you with?
+user: Not right now, thanks.
+assistant: Thank you very much.

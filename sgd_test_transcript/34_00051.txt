@@ -1,0 +1,17 @@
+user: I want to stay in a Hotel for a while and I need your help to find the suitable one for me.
+assistant: I which City do I search for?
+user: Search it in LA.
+tool(SearchHotel): ok n_results=10
+assistant: Got one hotel named Ac Hotel by Marriott Beverly Hills which is having 3 stars and what about your opinion on this?
+user: I think this is good. I also want your help to search for some attractive places to visit there.
+tool(FindAttractions): ok n_results=10
+assistant: What about a Historical Landmark like Angels Flight Railway?
+user: I like it and thanks. Now, help me to book the hotel that you have found for me from the date on next Tuesday.
+assistant: What is your check-out date.
+user: Book it for 6 days from the date that I have said before.
+assistant: Please confirm to book 1 room in Ac Hotel By Marriott Beverly Hills on March 5th for 6 days in Los Angeles.
+user: That is okay to proceed.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked the rooms.
+user: Thanks and that's all for now.
+assistant: Have a great day.

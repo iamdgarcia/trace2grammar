@@ -1,0 +1,19 @@
+user: Hi, could you get me a Comic movie featuring Josh Barclay Caras and directed by Gene Stupnitsky?
+tool(FindMovies): ok n_results=1
+assistant: There is 1 you may like, titled Good Boys with a 79 out of 100 rating.
+user: Sure, could you find me some songs in the album Sick Boy one years back?
+tool(LookupMusic): ok n_results=3
+assistant: There are 3 songs which you may like, how about Everybody Hates Me by The Chainsmokers in their album Sick Boy?
+user: Yes, that is the one.
+assistant: Would you like me to play it for you?
+user: Sure, could you play it on the living room device please?
+assistant: Please confirm your request to play Everybody Hates Me in the living room.
+user: Yes, that is greatt.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy listening to your music!
+user: May I know what genre does the music belong to?
+assistant: It is a pop song.
+user: I see, thanks alot!
+assistant: Do you need any further assistance?
+user: No, that is all I need. Thank you!
+assistant: No worries, have a great day ahead!

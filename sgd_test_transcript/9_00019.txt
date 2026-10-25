@@ -1,0 +1,18 @@
+user: I would like to go see my dad for his birthday and need to find a train ticket to get there.
+assistant: Okay, can you tell me the name of the city you are traveling to?
+user: I will be traveling to LA, where my dad lives.
+assistant: Okay, next I need to know where you will be departing from and on what date.
+user: I will be leaving my hometown of San Francisco on the 8th of this month.
+tool(FindTrains): ok n_results=9
+assistant: The first of 9 tickets I was able to find leaves at 6:20 am and cost $88.
+user: Okay, I would like to book that one please.
+assistant: Are you interested in purchasing travel insurance and how many tickets will you need in total?
+user: Yes, I would like the added insurance for protection and it will just be me traveling, so one ticket is fine but can you look into a value ticket?
+assistant: Okay, so far I have you booking a value ticket for 1 person, traveling from San Francisco, to Los Angeles, leaving on March 8th at 6:20 am. Does that sound right?
+user: I'm sorry no, can you change that to a Flexible ticket instead?
+assistant: No problem, I've changed that to a Flexible ticket, leaving on March 8th.
+user: That sounds good, can you tell me which station that train departs from?
+tool(GetTrainTickets): ok n_results=1
+assistant: The train ticket I have just reserved for you will be leaving from Salesforce Transit Center.
+user: Great, that was easy, thanks.
+assistant: Your welcome and I look forward to helping you again.

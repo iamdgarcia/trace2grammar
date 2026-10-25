@@ -1,0 +1,37 @@
+user: I want to find a bus.
+assistant: Where are you departing from?
+user: I'm leaving from Fresno, CA.
+assistant: Where are you traveling to?
+user: I'm going to Las Vegas. 3 people.
+assistant: When do you want to leave?
+user: I'm leaving on the 8th of March.
+tool(FindBus): ok n_results=10
+assistant: There is a bus leaving at 7:10 am for $39.
+user: Any other buses?
+assistant: There's a bus leaving at 7:40 am for $38.
+user: Are there other buses?
+assistant: There's a bus leaving at 10:50 am for $45.
+user: What station does it leave from? Is it one-stop?
+assistant: It is a direct bus departing from 2660 Tulare St.
+user: Sounds good to me. What are some attractions? I want to find something child-friendly with no entry fee.
+tool(FindAttractions): ok n_results=3
+assistant: I found 3 attractions. Las Vegas Natural History Museum is a popular museum.
+user: Great. I want to purchase the bus tickets you just found.
+assistant: Please confirm: 3 bus tickets leaving from Fresno to Las Vegas on March 8th at 10:50 am. No extra luggage.
+user: I have extra luggage.
+assistant: Please confirm: a ticket on the bus leaving Fresno with extra luggage.
+user: Yes, that's correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked.
+user: Thanks so much. I want to find a hotel room in the area for one.
+tool(SearchHotel): ok n_results=7
+assistant: Best Western Plus Las Vegas West is a 3 star hotel.
+user: Any other hotels? I want to find a 3 star hotel.
+tool(SearchHotel): ok n_results=3
+assistant: Hampton Inn Las Vegas/Summerlin is a 3 star hotel.
+user: That sounds good.
+assistant: Do you want to make a reservation?
+user: No, not now.
+assistant: Anything else I can do for you?
+user: No, that's all for now.
+assistant: Have a wonderful day!

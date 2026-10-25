@@ -1,0 +1,19 @@
+user: Can you help me locate a salon?
+assistant: Sure, where do you want me to look?
+user: Can you search for salons in Walnut Creek?
+tool(FindProvider): ok n_results=10
+assistant: Yes, I have located 10 salons in Walnut Creek. Would you like to try Blow Dry Bar?
+user: Yes, that will work just fine. Can you tell me what the weather for be like in Walnut Creek on the 10th?
+tool(GetWeather): ok n_results=1
+assistant: I show that the temperature will be 91 degrees with a 26 percent chance of rain.
+user: Do you know what the humidity level will be?
+assistant: I see the humidity level to be around 45 percent.
+user: Would there be strong winds?
+assistant: The wind speed should be no more than 11 miles per hour.
+user: Great! Does that salon have appointments at quarter past 6 in the evening on that day?
+assistant: Yes. I can book you for an appointment at Blow Dry Bar for 6:15 pm on March 10th, would that be okay?
+user: Yes, that is just fine.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, the only time slot available on March 10th for Blow Dry Bar is at 6 pm, would that work for you?
+user: No, that will be okay. Thank you for all of your help.
+assistant: You are welcome, enjoy the rest of your day.

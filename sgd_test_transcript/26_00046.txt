@@ -1,0 +1,26 @@
+user: I would like a round trip flight.
+assistant: When would you like to travel and where would you be leaving from?
+user: I want to leave Atlanta on the 5th of March.
+assistant: When would you like to return
+user: On the 11th. I would be needing two tickets.
+assistant: Where are you heading to?
+user: I am going to SF.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: You can get an American Airlines direct onward flight that departs at 3:45 pm and returns at 9:20 pm for $291.
+user: That would be great. I would also need a house to stay in when I get there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 suitable accommodation. There are a lovely house located at 1095 Market Street that has a rating of 4.0.
+user: That house sounds ideal.
+assistant: Is there anything else you need?
+user: Yes, go ahead and book the house for three individuals. I want to check in on the 5th of March and leave on the 9th of this month.
+assistant: You would like accommodation for 3 people at a house in San Francisco. You would be checking in on March 5th and checking out on March 9th?
+user: Yes, that would be fine.
+tool(BookHouse): ok n_results=1
+assistant: I have made the reservation.
+user: What fun stuff can I do when I get there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 possible places of interest. You can visit the Historical Landmark called Alcatraz.
+user: Would my kids enjoy going there?
+assistant: Yes, they certainly would.
+user: Ok. I will try it. Take care.
+assistant: Enjoy your day.

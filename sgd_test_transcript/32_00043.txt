@@ -1,0 +1,26 @@
+user: I would like to search for a song to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs available, including Airplane Mode by Limbo from the album Holo.
+user: What kind of music is that song?
+assistant: It's a Pop song.
+user: What other music do you have?
+assistant: There is Ik Vaari Aa by Arijit Singh from the album Raabta.
+user: What year did it come out?
+assistant: It was released in 2017.
+user: Yeah, that one sounds good, thanks. Are there any good movies online?
+assistant: What kind of movies would you like to find?
+user: We are looking for Kids movies.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies in that category, The Angry Birds Movie 2 and Toy Story 4.
+user: They will probably like The Angry Birds.
+assistant: Would you like to play the movie now?
+user: No, not right now, thank you. Can you play the song you found?
+assistant: You would like to play the song Ik Vaari Aa in the Living room, is that correct?
+user: Yes, that's right. What kind of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: Your song is starting, enjoy the music! It is a song from South Asia.
+user: OK, thanks. Can I take look at my alarms, please?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm for 3:30 pm with the name Dentist.
+user: OK, good. That'll be all, thank you.
+assistant: Have a great day!

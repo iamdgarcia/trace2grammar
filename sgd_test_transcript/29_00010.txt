@@ -1,0 +1,30 @@
+user: Find for me a hotel.
+assistant: In which city you want to be?
+user: In New York will be okay.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels that fit your needs.A 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: Tell me if you can smoke here and what is the location.
+assistant: Yes,smoking is allowed here.60 Furman Street, Brooklyn is the address.
+user: Good.Find me a round trip flight with Delta Airlines to get there.
+assistant: In which city you will depart and in what date you want to return?
+user: Search for flight from San Fran.I will return on the 11th.
+assistant: You will leave on March 8th?
+user: Sounds very good.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: How about Delta Airlines?The onward flight takes off at 2:55 pm and return at 9:35 pm.This is a direct flight and cost $286.
+user: Good.Make a reservation at the hotel that you have found.
+assistant: Check in date would be on March 8th?
+user: Sure, that's great.
+assistant: How many days you want to stay?
+user: Four days will be good.
+assistant: You want 1 room at a hotel in 1 Hotel Brooklyn Bridge in New York.Check in will be on March 8th and you will stay 4 days.Is that correct?
+user: Sure is okay.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is booked.
+user: Thank you for your help.Find me some attractions there.I don't have any preference.
+tool(FindAttractions): ok n_results=10
+assistant: You may check out a Museum called 9/11 Tribute Museum.
+user: Sounds great for me.
+assistant: With something else I can help you?
+user: No, it is enough.Thank you.
+assistant: Have fun!

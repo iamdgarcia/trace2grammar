@@ -1,0 +1,19 @@
+user: Help me find a hotel, I'm going to need two rooms.
+assistant: Where would you like me to search?
+user: Search in Paris please.
+tool(SearchHotel): ok n_results=10
+assistant: There's a 4 star hotel called Ac Hotel By Marriott Paris Porte Maillot.
+user: That sounds nice. How will the weather be there next Friday?
+tool(GetWeather): ok n_results=1
+assistant: The temperature will be 78 degrees Fahrenheit on average with a 25 percent chance it will rain.
+user: Alright, let's go ahead and make a hotel reservation at the one you recommended.
+assistant: Will you be checking in on March 8th and how long will your stay be?
+user: I want to check in on the 7th of March and I'll be there for 6 days.
+assistant: I'll book you 2 rooms at Ac Hotel By Marriott Paris Porte Maillot in Paris starting on march 7th for 6 days. Is everything correct?
+user: Yeah, you got it all. Can you tell me their phone number.
+tool(ReserveHotel): ok n_results=1
+assistant: I have booked the rooms. You can reach them at +33 1 84 82 49 09.
+user: And what street are they on? Also, what's the price per night?
+assistant: They are located on 6 Rue Gustave Charpentier, 75017. It is $432 for a night.
+user: Thanks for all the help. I don't need anything else right now.
+assistant: Have a wonderful day, take care.

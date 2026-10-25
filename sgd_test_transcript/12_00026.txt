@@ -1,0 +1,30 @@
+user: I need to arrange a trip. I would like to buy bus tickets to Long Beach, CA.
+assistant: How many tickets would you like? What date are you leaving, and what city are you leaving from?
+user: There are four people, and we are planning to leave from Sacramento, CA on the 7th of this month.
+assistant: What time would you like to leave?
+user: We would be leaving around 12:30.
+assistant: You would like 4 bus tickets from Sacramento to Long Beach on March 7th, leaving at 12:30 pm, without extra luggage, is this correct?
+user: No, I meant that we are leaving from San Diego. And we do have extra luggage.
+assistant: You would like a ticket on the bus leaving from San Diego, with extra luggage to carry on, is that correct?
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your bus ticket purchase is confirmed.
+user: Thank you very much for your help. We're going to need a rental car when we get there. Can you help me find a rental car there?
+assistant: What times would you like to pick up and return the car? Will the car be picked up from Long Beach?
+user: Yes, that's where we will need the car. I would like to pick the car up at 5 in the evening, and we will need it until the 13th of this month.
+assistant: Do you want to pick up the car on March 7th?
+user: No, I will not need it until March 9th. Any type of car is fine.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is an Alfa Romeo Stelvio SUV available at the LGB Airport.
+user: Is there something else, like a Hatchback? I will need that starting the 8th of March, I read my schedule wrong.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There are 5 cars like that available. There is a Fiat Panda Hatchback at the LGB Airport.
+user: That one sounds good. I would like to reserve the car.
+assistant: Would you like to add insurance?
+user: No, I don't need to add it, my work provides it.
+assistant: You would like to pick up a Hatchback car from LGB Airport at 5 pm on March 8th and rent it until March 13th, is this correct?
+user: Yes, that's right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car reservation is successful.
+user: Thank you for your help, that's all for now.
+assistant: Have a great day!

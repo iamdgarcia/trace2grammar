@@ -1,0 +1,25 @@
+user: What will the weather in Portland be on the 14th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 57 Fahrenheit with a 13 percent chance of rain.
+user: What about the wind speed?
+assistant: There will be a wind speed of 6 miles per hour.
+user: What about the humidity
+assistant: The humidity will be approximately 20 percent.
+user: I would like a one way ticket to get there.
+assistant: What is your departure city and will your departure date be March 14th?
+user: I'm looking for flights from SD on March 10th.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There is a direct Alaska Airlines flight departing at 2:20 pm for a total of $139.
+user: Great. Can you also help me find a rental car.
+assistant: What is your pick up time?
+user: Picking up at evening 7:30.
+assistant: Is your pick up date March 10th and what is your drop off date?
+user: I will need the rental from March 11th until the 14th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV Alfa Romeo Stelvio available at Portland Bus Station.
+user: Is there anything else?
+assistant: There is a SUV Dacia Duster at Portland Bus Station.
+user: What is the daily cost?
+assistant: Is is $42.00 per day.
+user: Great. That will be all.
+assistant: Okay. Have a great day. Goodbye.

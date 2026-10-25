@@ -1,0 +1,21 @@
+user: I want to meet a Therapist and I need your help to find someone suitable for me.
+assistant: Do you want to meet any particular kind of Therapist in which area?
+user: Find for someone like a Psychologist in San Pablo.
+tool(FindProvider): ok n_results=1
+assistant: Got 1 result. How about a Psychologist named Ureta Cesar G in San Pablo?
+user: Yes, this is okay for me.
+assistant: Shall I book an appointment with this Therapist?
+user: Yes, do it for me now.
+assistant: What is your convenient time and date to book the same?.
+user: I want to meet them at four pm on 10th of March. Fix an appointment for this time and date.
+assistant: I need your confirmation to book an appointment with Ureta Cesar G at 4 pm on March 10th.
+user: That is correct to proceed and get me their contact number and address.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked your appointment and please note their phone number is 415-577-0101 and address is 2301 Rumrill Boulevard # 28. They will send an confirmation e-mail to you shortly.
+user: Thank you so much for your help. Now I want to search for a Comedy movie particularly directed by Nitesh Tiwari. do you help me to find the best one?
+tool(FindMovies): ok n_results=1
+assistant: Yes, I searched and got 1 movie named Chhichhore which has an rating of 60 out 100 in average. Do you like to watch this movie?
+user: Let me know the actor of this movie.
+assistant: Sushant Singh Rajput is the actor.
+user: That is perfect. Thanks and that's all.
+assistant: Have a nice day.

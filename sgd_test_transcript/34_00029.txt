@@ -1,0 +1,17 @@
+user: I need to find a hotel in Paris please
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including the Ac Hotel By Marriott Paris Porte Maillot which is a 4 star place
+user: Great! How about attractions with no entrance fee
+tool(FindAttractions): ok n_results=10
+assistant: How about a Place of Worship like the American Church in Paris?
+user: That sounds great, let's book that hotel then
+assistant: When do you want to check in
+user: I need one room starting on the 1st of March
+assistant: How long are you gonna be there
+user: I'll be there for three days
+assistant: Confirm you want 1 room for 3 days at the Ac Hotel By Marriott Paris Porte Maillot on March 1st in Paris?
+user: Yes that's exactly right
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked for you
+user: Thanks, that's all I need from you right now
+assistant: Let me know if I can help later!

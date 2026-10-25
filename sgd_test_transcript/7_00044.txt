@@ -1,0 +1,24 @@
+user: I would like to find me a place to leave.A wpoperty in Walnut Creek will be perfect.
+assistant: Tell me the number of baths.
+user: I want to have 1 baths.
+assistant: You want to rent or to buy?
+user: I want to rent and a garage will be perfect.
+assistant: Tell me the number of bed rooms you need.
+user: Two bed room I need.
+tool(FindHomeByArea): ok n_results=3
+assistant: I found for you 3 nice options.First cost $2,800 and is located at 150 Sierra Drive.Is called Affordable Housing Associates.
+user: Sounds very good schedule for me a visit please.
+assistant: When you want to be?
+user: On March 6th will be great.
+assistant: You schedule a visit to Affordable Housing Associates on March 6th.Is that correct?
+user: No.Make it please on 7th of March.
+assistant: You schedule a visit to Affordable Housing Associates on March 7th.I'm right?
+user: Yes that's true.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit is scheduled.
+user: Tell me their phone number and if they have laundry machine inside the house.
+assistant: 925-945-1701 is the contact number.Laundry machines inside the house is not available.
+user: Thank you very much.
+assistant: Can I do something else for you?
+user: No.Thank you!
+assistant: Have a good day!

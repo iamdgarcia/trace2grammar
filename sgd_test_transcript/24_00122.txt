@@ -1,0 +1,23 @@
+user: I want to make a private transfer to Emma for 50 bucks.
+assistant: What account do you want to send the money?
+user: Use my master card.
+assistant: You want to send $50 in a private transaction to Emma with your credit card, correct?
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your transfer is successful. Emma will see the money soon.
+user: Thanks a bunch. Find me a restaurant to eat at.
+assistant: What type of food do you prefer?
+user: I prefer Izakaya.
+assistant: What city shall I look in?
+user: Find a place in Castro Valley.
+tool(FindRestaurants): ok n_results=3
+assistant: Genghix Asian Fusion serves Izakaya in Castro Valley.
+user: That is perfect. Get me a table there.
+assistant: What time do you want to eat?
+user: I wish to eat at 12:30 in the afternoon.
+assistant: You want a table for 2 at Genghix Asian Fusion in Castro Valley on March 1st at 12:30 pm, correct?
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked.
+user: Thanks a bunch. That is everything.
+assistant: Have a great day.

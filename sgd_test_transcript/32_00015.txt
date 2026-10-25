@@ -1,0 +1,26 @@
+user: I want to meet a Therapist. Find me someone who is a Psychologist.
+assistant: Where do you want to search for the Therapist? Do you have any particular place in your mind?
+user: Yes, search it in Portola Valley.
+tool(FindProvider): ok n_results=2
+assistant: Got 2 results and what about a Psychologist named Mayer Johanna M in Portola Valley?.
+user: This contact is okay for me.
+assistant: Shall I book an appointment with that Therapist now?
+user: Yes, do it for me.
+assistant: I want to some information to book the same. Let me know your required time and date to book the appointment.
+user: Please book it at two in the afternoon on Wednesday next week.
+assistant: Okay, please confirm to book an appointment with Mayer Johanna M at 2 pm on March 6th.
+user: It is correct. Go ahead. And get me their address and phone number for my reference.
+tool(BookAppointment): ok n_results=0
+assistant: Unfortunately I was not able to book this appointment. How can I help you further?
+user: Is it possible to book it on March 1st?
+assistant: Yes, please confirm to book an appointment with Mayer Johanna M at 2 pm on March 1st.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully confirmed and they will send you a confirmation email shortly.
+user: Thank you so much. And I need one more help from you. Can you search for a movie to watch. I need some Cartoon movies particularly directed by Josh Cooley and acted by Timothy Dalton.
+tool(FindMovies): ok n_results=1
+assistant: Got 1 which is Toy Story 4 with rating of 97 out of 100. Do you like to watch it?
+user: Yes, okay. Thanks.
+assistant: What else you want me to do?
+user: No, That's all and thanks.
+assistant: Have a good day.

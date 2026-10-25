@@ -1,0 +1,33 @@
+user: Help me search for some songs.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 song you might like. How about The Way I talk by Morgan Wallen from the album If I know Me?
+user: What other songs are there. Do you have anything from California Sunrise by Jon Pardi, I like him.
+tool(LookupMusic): ok n_results=2
+assistant: How about Head Over Boots by Jon Pardi from the album California Sunrise?
+user: When was it released?
+assistant: It was released in 2015?
+user: What other songs are there?
+assistant: How about Night Shift by Jon Pardi from the album California Sunrise?
+user: Okay, I like that one.
+assistant: Do you want to listen to it?
+user: Not right now.
+assistant: What else can I do for you?
+user: What are some movies online that are enjoyable.
+assistant: What genre do you like?
+user: I love Funny movies.
+tool(FindMovies): ok n_results=5
+assistant: How about Chhichhore, Good Boys, or My Big Fat Greek Wedding?
+user: I really like My Big Fat Greek Wedding.
+assistant: Do you want to watch it?
+user: No, not right now. Actually, can you play the song we talked about?
+assistant: Night Shift will be played in the Living room, is that good for you?
+user: Yes, that's good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy listening to the song.
+user: Thanks a lot!
+assistant: What else can I do for you?
+user: I want to know what alarms I have.
+tool(GetAlarms): ok n_results=4
+assistant: You have a 7 am alarm called Get up.
+user: Okay, that's all I need to know.
+assistant: Take care and enjoy the song.

@@ -1,0 +1,20 @@
+user: Hi, could you help me find a unisex salon in San Jose please?
+tool(FindProvider): ok n_results=10
+assistant: How about Atelier Salon Willow Glen in San Jose?
+user: Are there any alternatives?
+assistant: How about Barba & Co. San Jose in San Jose?
+user: May I have their address and average rating please?
+assistant: You can visit them at 1775 Park Avenue and they have an average rating of 5.0.
+user: Wow, that sounds great!
+assistant: Could I further assist you?
+user: Yes, could you get me an appointment on the 10th of March please?
+assistant: And what time will you be visiting them?
+user: I think on the 6 in the evening.
+assistant: Sure, please confirm your reservation with Barba & Co. San Jose at 6 pm on March 10th.
+user: Sorry, could you get the appointment at 12:30 in the afternoon instead?
+assistant: No problem, please confirm your reservation with Barba & Co. San Jose at 12:30 pm on March 10th.
+user: That sounds great! May I have their contact number please?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made, and you can call them at 669-258-9601.
+user: Sure, that is all I need. Thank you!
+assistant: Have a great day ahead!

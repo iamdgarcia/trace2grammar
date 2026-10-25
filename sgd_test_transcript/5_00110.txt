@@ -1,0 +1,19 @@
+user: I need a therapist in Los Gatos. Look for a psychologist.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 therapists. Jacome Paulette D is a psychologist in Los Gatos.
+user: Who else is there? Look in Corte Madera.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 therapists. Jeff Greenwald is a psychologist in Corte Madera.
+user: That's good. I'd like an appointment for next Thursday.
+assistant: What time would you like it?
+user: At 5:30 in the evening.
+assistant: An appointment with Jeff Greenwald at 5:30 pm on March 7th. Is this right?
+user: Yes. What's their number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. You'll get an email confirmation. Their number is 415-640-6928.
+user: Where are they?
+assistant: They are at 45 San Clemente Drive.
+user: Thanks. That is all.
+assistant: Do you need anything else?
+user: No, thanks for your help.
+assistant: Always love to help.

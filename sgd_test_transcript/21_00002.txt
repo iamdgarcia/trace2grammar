@@ -1,0 +1,36 @@
+user: I need to hail a cab, anything you can find?
+assistant: What kind of ride would you prefer for this trip?
+user: Just a regular ride, if any are available.
+assistant: To which location will you be traveling in cab to?
+user: The cab should head to the National Museum of Natural History.
+assistant: What about the amount of seats you require for this trip?
+user: Just one seat is needed, I don't have a large group with me.
+assistant: You wish to take a regular ride with 1 seat to the National Museum of Natural History, is that right?
+user: Scratch that, I actually need two seats and the most comfortable ride available.
+assistant: Understood, you will be taking a luxury ride with 2 seats available.
+user: That works for me, how long will the cab costs and when will it arrive.
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked, it will arrive in 14 minutes and it costs $46.58.
+user: Can you search for some songs for me to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs you may like, how about Never Grow Up by Taylor Swift from her Speak Now album?
+user: When did that song come out, what year specifically?
+assistant: The song was released in the year 2010.
+user: Anything else you can find, I do tend to like rock songs?
+tool(LookupMusic): ok n_results=10
+assistant: From 10 songs, may I interest you in Be Somebody by Thousand Foot Krutch, from their The End is Where We Begin album?
+user: When did that song come out?
+assistant: The song came out in the year 2012.
+user: Anything else you can find?
+assistant: What about a song from Slipknot from their We Are Not Your Kind album, would you like to listen to Birth of The Cruel.
+user: That song sounds perfect, thanks for finding it.
+assistant: Shall I begin playing the song for you?
+user: Of course, play the song in my kitchen.
+assistant: The song Birth of The Cruel will now play in the Kitchen.
+user: Great, was this song released in the year 2015?
+tool(PlayMedia): ok n_results=1
+assistant: The song is now playing, it actually was released this year in 2019.
+user: Good to know, thank you so much!
+assistant: Anything else that I can help you with for today?
+user: That is all I needed for today, many thanks for the help!
+assistant: Your welcome, have a good day.

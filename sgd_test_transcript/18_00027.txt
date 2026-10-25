@@ -1,0 +1,23 @@
+user: Please inform me about the weather in Portland, OR.
+tool(GetWeather): ok n_results=1
+assistant: The temperature is found to be 75 degrees Fahrenheit. 9 percent chance of rain is forecast.
+user: What about the condition on this Saturday.
+tool(GetWeather): ok n_results=1
+assistant: The temperature is found to be 65 degrees and 15 percent chance for shower.
+user: Please find a one way flight to there.
+assistant: Date of location of departure please. Are you departing on March 2nd?
+user: Look for flights from Toronto, Canada on March 1st.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: 2 flights are available. The Air Canada will take off at 4:35 pm with one layover. The cost is $277.
+user: Look for another option. One ticket to leave this Saturday.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: You can get 1 flight, United Airlines departing at 4:45 am with one layover and charging $283.
+user: What is the type of class?
+assistant: It is Economy class ticket.
+user: Great, now look for a Sedan there on March 7th.
+assistant: Do you need it from March 2nd? what is the time of pick up?
+user: I need it from 6th of March and will pick up at half past 7 in the evening.
+tool(GetCarsAvailable): ok n_results=4
+assistant: At Portland Bus Station you will get one, a Sedan Hyundai Ioniq.
+user: Great, that will do.
+assistant: Make a memorable day.

@@ -1,0 +1,24 @@
+user: Can you help me find a hotel in New York City with 1 room?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, I found 10 that match your criteria. There is a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: That's perfect, I need a round trip flight there.
+assistant: Do you want to leave on March 8th? I will need to know what city you want to depart from and which day you would like your return flight?
+user: That sounds good. I will be returning on March 12th, can you search from LAX.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Yes, I found 3 flights. There is a direct flight on American Airlines that takes off at 12:05 pm returning at 1:40 pm that costs $278.
+user: Can you tell me what time the returning flight is?
+assistant: It arrives at 4:50 pm.
+user: That sounds perfect. Please book the hotel you found for 4 days, I would like to check in on the 9th of March.
+assistant: Please confirm that you would like to check in on March 9th for 4 days for 1 room at the 1 Hotel Brooklyn Bridge in New York.
+user: No, actually I would like to check in on the 8th of March for six days.
+assistant: Please confirm that you are checking in on March 8th for 6 days.
+user: That's perfect, can you give me their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: Yes, their phone number is +1 347-696-2500 and I have successfully booked your hotel.
+user: Thank you so much for all your help! I would also like to see some attractions there that don't have an entry fee, preferably something that is child-friendly.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Park called Alley Pond Park that you would like.
+user: Sounds great!
+assistant: Can I assist you with anything else?
+user: No thank you, that will be all!
+assistant: Enjoy your trip!

@@ -1,0 +1,15 @@
+user: Would you kindly help me to find a house for rent and I like to have a garage.
+assistant: Is there any area of your choice..where i should search the house? Number of bed rooms and baths you want?
+user: I like to have a house in San Rafael with two bed rooms and two baths.
+tool(FindHomeByArea): ok n_results=1
+assistant: I searched 1 beautiful house Deer Park Apartments of your choice which costs $3,150 at 99 Professional Center Parkway.
+user: This is cool. I want to visit this house on sunday this week.
+assistant: please give confirmation details: Your schedule to visit the property on march 3rd to Deer Park Apartments.
+user: This is right..can i know the contact number of this house? Is there a laundry machines inside the house?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit to the house is confirmed. There is a in-unit laundry and contact number is 415-472-6644.
+user: Thank you so much..Show my alarms please..
+tool(GetAlarms): ok n_results=4
+assistant: There is a alarm named Badminton at 8:30 am
+user: okay..That's fine...
+assistant: Thank you so much.

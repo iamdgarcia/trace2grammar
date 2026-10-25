@@ -1,0 +1,27 @@
+user: I need a hotel when I go on my trip.
+assistant: A hotel in what city?
+user: Find me hotels that are located in NY please.
+tool(SearchHotel): ok n_results=10
+assistant: A lovely 5 star hotel in NY is the 1 Hotel Brooklyn Bridge.
+user: Where in New York is this establishment located exactly?
+assistant: The address to the hotel is 60 Furman, Street Brooklyn.
+user: I will be needing their phone number as well.
+assistant: The phone number to the 1 Hotel Brooklyn Bridge is +1 347-696-2500.
+user: That information should suffice. Now, can you find me a rental car in NY as well?
+assistant: Do you wish to get the car on March 8th? If so, what time do you wish to pick the car up and how long will you need it?
+user: I will pick it up at 15:00 on the 10th of March. I'll be using the vehicle until the 12th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: The Port Authority Station has an SUV you may enjoy. It is an Alfa Romeo Stelvio.
+user: That car sounds like it'll be good enough.
+assistant: Do you wish for me to proceed with the rental?
+user: Yeah go ahead and reserve the Alfa Romeo for me.
+assistant: I can add on insurance for the vehicle if you need it.
+user: No thank you. I don't think I need the insurance add-on.
+assistant: Confirm your rental details: Renting an SUV from the Port Authority Station. The pick-up time for the car is 3 pm on March 10th with a drop-off date of March 12th.
+user: I changed my mind. I do want insurance after all. Sorry about that. Can you make those changes?
+assistant: Confirm the following: You will be picking up an SUV from the Port Authority Station on March 10th. You wish to add insurance to the rental. Correct?
+user: Yes go ahead with the rental. Tell me how much it will cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car for pick-up on March 10th. It will cost $48.00 a day.
+user: Thanks for helping me schedule my trip. That's all the assistance I require.
+assistant: I hope you enjoy your day. Bye.

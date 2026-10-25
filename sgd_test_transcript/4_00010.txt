@@ -1,0 +1,16 @@
+user: I need help finding a rental car. I'd like a sedan that I can pick up at 6 in the evening in Phoenix.
+assistant: I can help you with that, but first I'll need the dates on which you'd like to pick the car up, and return the car.
+user: I need it from the 4th of March until the 6th of March.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a nice Buick Regal Sportback sedan available at the Phoenix Union Station.
+user: That sounds fine to me.
+assistant: Would you like to book the car now?
+user: Yes, please.
+assistant: Would you like to add insurance?
+user: No, I shouldn't need it.
+assistant: You would like to rent a Sedan car from Phoenix Union Station to be picked up on March 4th at 6 pm and returned on March 6th. Is that correct?
+user: Yes that is all correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has successfully been reserved.
+user: Awesome, thank you for your help. That will be all.
+assistant: I'm always glad to help out. Let me know if you need anything further.

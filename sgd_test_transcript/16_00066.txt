@@ -1,0 +1,36 @@
+user: I would like to buy tickets leaving at half past 6 in the evening and I have extra luggage that I will be carrying.
+assistant: Where are you heading to? When will you leave and what is the number of tickets that you want?
+user: I will be leaving on the 7th and going to LAX. There will be 4 people.
+assistant: What is your point of departure?
+user: I will be departing from SD.
+assistant: Please confirm these details: You would like to buy tickets for 4 people leaving on March 7th at 6:30 pm from San Diego and going to Los Angeles. You also have excess luggage you need to carry on the bus.
+user: Yes, that is great for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, there were errors that caused the purchase to fail. What do think of the bus leaving at 6:10 pm? The cost of the bus is $34.
+user: Yes that is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket confirmation has been made.
+user: What station does the bus arrive at?
+assistant: Its place of arrival at North Hollywood Station.
+user: Thanks very much for the help. Would you like to look for area hotels as well? I want one room in a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: What is the phone number of this place?
+assistant: The phone number there is +1 323-852-7000.
+user: What is the address there?
+assistant: They are located at 6399 Wilshire Boulevard.
+user: That sounds fine with me.
+assistant: Do you want to reserve the hotel?
+user: Yes, I want to make a reservation.
+assistant: What is the length of your stay going to be and when would you like to check in?
+user: I will be staying for two days and want to check in on the 5th of March.
+assistant: Okay, confirm these details for me: You would like find 1 room at the hotel Ac Hotel By Marriott Beverly Hills and will check in on March 5th and stay for 2 days. This hotel is located in Los Angeles.
+user: Sure, this is very good. Do they allow smoking in this hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: Yes, I have made the hotel reservation successfully and no, they don't allow smoking here.
+user: What is the price for each night?
+assistant: The cost each night $78.
+user: Thank you, you have been really helpful today.
+assistant: Is there anything else you would like help with?
+user: No, thank you. You have helped me a lot.
+assistant: Bye, have a great day!

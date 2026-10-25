@@ -1,0 +1,16 @@
+user: Hello. Can you help me find a three star hotel in London? I need a hotel that allows smoking.
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels that match your criteria. How about the 3 star hotel called Abbey Court Hotel (Hyde Park)?
+user: Okay, that sounds good. Go ahead and start making the reservation, I will be staying for two days.
+assistant: No problem, what is your preferred check in date?
+user: I'd like to check on on Thursday next week.
+assistant: Before we get started, please confirm the following for me. You want to reserve 1 room at Abbey Court Hotel (Hyde Park) in London for March 7th. You will be staying for a total of 2 days. Correct?
+user: Yes, that sounds good. What's the price per night?
+tool(ReserveHotel): ok n_results=1
+assistant: The price will be $315 a night. Your room has been successfully booked.
+user: Okay, thanks. What is their number?
+assistant: The phone number is +44 20 7402 0281.
+user: Okay, thanks. You've been a great help.
+assistant: Is there anything else I can help you with?
+user: No thanks. Appreciate the assist.
+assistant: My pleasure. Have a great day.

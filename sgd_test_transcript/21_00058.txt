@@ -1,0 +1,21 @@
+user: Search for me some Popular songs.
+tool(LookupMusic): ok n_results=10
+assistant: Search revealed 10 results. Do you like Acapella by Karmin on the Pulses album?
+user: Was it released in '19?
+assistant: It was released in 2013.
+user: That is perfect.
+assistant: Shall I cast the song for you?
+user: No, not right now. What will the weather be in Lagunitas Tuesday next week?
+tool(GetWeather): ok n_results=1
+assistant: The normal temperature is 92 degrees with a 10 percent chance of rain.
+user: What is the average humidity?
+assistant: The average humidity is 23 percent.
+user: I see. Can you cast the song for me?
+assistant: You want to cast the song Acapella to the Living room, correct?
+user: That is right.
+tool(PlayMedia): ok n_results=1
+assistant: Your song is now playing.
+user: Thanks a bunch.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: Have a great day.

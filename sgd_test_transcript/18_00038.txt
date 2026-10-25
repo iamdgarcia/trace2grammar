@@ -1,0 +1,23 @@
+user: I need to find a therapist. Someone in Menlo Park that's a Psychiatrist.
+tool(FindProvider): ok n_results=3
+assistant: Dr. Kalpana I. Nathan is a Psychiatrist in Menlo Park that is available.
+user: Yeah, I'd like to go there. Please make an appointment for the afternoon 12:30.
+assistant: What date is that for?
+user: Make it for the 10th of this month. And I actually want it to be for 13:00.
+assistant: I'll make you an appointment with Dr. Kalpana I. Nathan at 1 pm on March 10th, is that right?
+user: Yes, please make it. And can you tell me their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: I've made the appointment, you'll receive an email confirmation shortly. The phone number is 650-493-5000 and they address is 795 Willow Road #321.
+user: Thanks so much. I also need a cab to get there for 4 people.
+assistant: Is there a ride type you prefer?
+user: I want a pool ride.
+assistant: I'll get you a pool cab for 4 to 795 Willow Road #321, is that correct?
+user: Yes, that's all correct. What's the cost?
+tool(GetRide): ok n_results=1
+assistant: The cost for the cab is $22.78. I've booked the cab and it will be here soon.
+user: How many minutes until it's here?
+assistant: It will be here in 6 minutes.
+user: Thank so much for the help.
+assistant: What else can I help you with?
+user: I don't need anything else, thanks again.
+assistant: Have a great trip and take care.

@@ -1,0 +1,11 @@
+user: I need a cab for 4 people to take us to Astoria Park.
+assistant: Would you prefer a Luxury or Pool ride?
+user: We'll take the Luxury ride.
+assistant: Please confirm the following details: You would like a Luxury ride for 4 to Astoria Park.
+user: Yes, confirmed. How long will it be before the cab reaches us?
+tool(GetRide): ok n_results=1
+assistant: I have booked your ride and the cab is on its way. It's reported as being 9 minutes away.
+user: Awesome, thank you for your help.
+assistant: You're welcome. Will that be all?
+user: Yes that will be all.
+assistant: Okay, goodbye.

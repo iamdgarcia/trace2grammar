@@ -1,0 +1,23 @@
+user: I want to go to a salon.
+assistant: What city are you in?
+user: I am looking in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: There is a salon in Santa Rosa called Daredevils & Queens.
+user: I want to watch a funny movie at 3rd Street Cinema with a regular ticket.
+tool(FindMovies): ok n_results=1
+assistant: Do you want to see Yesterday?
+user: Yesterday is a good movie. What time can I watch it on the 2nd of March?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one 9 pm show at 3rd Street Cinema.
+user: I want to book an appointment at that salon for the same day.
+assistant: When do you want your appointment?
+user: I want it at evening 4:15.
+assistant: Please confirm you want a 4:15 pm appointment at Daredevils & Queens on March 2nd.
+user: That is correct. What is their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: The phone number is 707-575-5123. The appointment at Daredevils & Queens is not available but they might have one on March 2nd at 4:30 pm.
+user: That is okay.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked.
+user: Thank you, that will be all.
+assistant: See you soon!

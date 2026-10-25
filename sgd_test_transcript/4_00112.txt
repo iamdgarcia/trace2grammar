@@ -1,0 +1,12 @@
+user: please help in finding a bus.
+assistant: Where are you going, when and from where?
+user: Going from Long Beach on March 6th to San Francisco
+tool(FindBus): ok n_results=7
+assistant: There is a bus leaving at 6:20 am and costs $52
+user: ok, please get me three tickets of it.
+assistant: Please confirm: Booking 3 tickets for a bus from Long Beach on March 6th at 6:20 am to San Francisco without extra luggage.
+user: that is right
+tool(BuyBusTicket): ok n_results=1
+assistant: your ticket if booked
+user: thanks, thats all
+assistant: have a good day!

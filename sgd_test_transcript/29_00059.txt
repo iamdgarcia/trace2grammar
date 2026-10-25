@@ -1,0 +1,30 @@
+user: I want to search for lot of things first I need a Hotel to stay. Can you help me to find a suitable one?
+assistant: Yes, I am always ready to help you. Let me know your convenient place to search for the Hotel.
+user: Find something in New York City.
+tool(SearchHotel): ok n_results=10
+assistant: I searched and got 10 hotels details. What about the one named 1 Hotel Brooklyn Bridge which is a 5 star hotel?
+user: That's nice and okay to me.
+assistant: Shall I reserve room here?
+user: We will do it later.
+assistant: Then, what else you want to search for?
+user: I want to find a round trip flight to reach there. Make a search for me.
+assistant: What is your current location and expected return date. If you tell me the details then I can search for the suitable one to you. Also confirm to search for the flight for the starting date March 8th?
+user: No, I am planning to start my travel on March 4th from VAncouver. So please search the one from this date to the return date on the 12th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: What about your opinion on an onward flight from American Airlines which will take off at 11:20 am and the return flight takes off at 1:40 pm under the ticket cost $477?.
+user: Let me know whether you have searched this flight for Business class tickets and also let me know the time at which this flight will reach its destination.
+assistant: This will reach your final place at 4:16 am and I have searched for Economy class tickets only.
+user: That's okay. Now, we will go back and book the rooms in the hotel that you have found for me.
+assistant: How many days you want to book the rooms?
+user: Book it for 7 days.
+assistant: Shall I book it from March 4th as your check-in date or do you want to check in on any other dates?
+user: Book it from 5th of March.
+assistant: Please confirm to book 1 room in the hotel 1 Hotel Brooklyn Bridge from March 5th for 7 days in New York.
+user: That is confirmed to proceed. Check for smoking permission there and their phone number.
+tool(ReserveHotel): ok n_results=1
+assistant: Their phone number is +1 347-696-2500 and please note that they will allow smoking. I have booked your rooms successfully.
+user: That's great and thanks. I also want to visit some attractive places and could you find nice place?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, Do you want to visit to a Museum? Is so you can try 9/11 Tribute Museum.
+user: That's perfect and thanks.
+assistant: Have a good day.

@@ -1,0 +1,38 @@
+user: Can you find a unisex salon in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: Out of the 10 salons in San Jose Atelier Salon Willow Glen is a nice one.
+user: Can you find me some other salon?
+assistant: How about Barba & Co. San Jose in San Jose?
+user: Thank you. Can you find me a psychologist in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: Out of the 10 therapists in San Jose, you may want to consider Barskyex Bryna G. who is a Psychologist.
+user: Can you get me their address?
+assistant: Their address is 5755 Cottle Road # 4.
+user: Can you find their phone number for me?
+assistant: They can be reached at 408-363-4418.
+user: Are there any other therapists that I could consider?
+assistant: Burdge Sarah is a Psychologist from San Jose.
+user: Can you find some therapists in Santa Rosa?
+tool(FindProvider): ok n_results=10
+assistant: Bert Epstein is a Psychologist in Santa Rosa.
+user: Thank you, sounds good.
+assistant: Would you like to book an appointment with the therapist?
+user: Yes, please. Can you get me an appointment at 4 in the evening for the 4th of this month?
+assistant: Please confirm that you would like to book an appointment with Bert Epstein at 4 pm on March 4th.
+user: Yes, that's right. Can you find their address and phone number for me?
+tool(BookAppointment): ok n_results=1
+assistant: Their address is 2455 Bennett Valley Road and their phone number is 707-242-1989. Sorry, but I could not book the appointment. What you like to book an appointment with Bert Epstein at 3:30 pm on March 4th?
+user: Yes, that should work for me. Please go ahead.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked successfully and you should receive an e-mail confirmation soon.
+user: Thanks a bunch! Much appreciated. I would now like to book an appointment at the salon that you found for me for the same day.
+assistant: At what time would you like your appointment?
+user: Make it 10:15.
+assistant: Please confirm that you want an appointment at Barba & Co. San Jose at 10:15 am on March 4th.
+user: Yes, that's correct. What is their average rating?
+tool(BookAppointment): ok n_results=1
+assistant: Their average rating is 5.0. Apologies, but the appointment could not be booked. Would you like to book one at Barba & Co. San Jose at 10:30 am on March 4th.
+user: No, thank you.
+assistant: Is there anything else I can help with?
+user: No, that's all for now. Thank you.
+assistant: Have a great day!

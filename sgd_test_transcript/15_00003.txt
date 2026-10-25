@@ -1,0 +1,15 @@
+user: I would like to search for some songs please.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. How about Tyrant by Kali Uchis from the album Isolation?
+user: What kind of music is it?
+assistant: It is a funk song.
+user: Yes, that sounds cool. Are there some good movies online? I like action movies featuring Piper Perabo.
+tool(FindMovies): ok n_results=1
+assistant: How about Angel Has Fallen?
+user: Angel Has Fallen sounds great. Can you please play the song that you just found?
+assistant: Please confirm the following details: playing the song Tyrant in the Living Room.
+user: Yes, that is correct. Did the song come out five years ago?
+tool(PlayMedia): ok n_results=1
+assistant: The song is from 2016. Enjoy your music.
+user: Thank you, that is all for now.
+assistant: Okay, have a good day!

@@ -1,0 +1,19 @@
+user: I am in need of songs now, can you help?
+tool(LookupMusic): ok n_results=10
+assistant: You can choose from 10 songs. Do you like the Mountain by Three Days Grace from the album Outsider
+user: That will be right choice.
+assistant: Shall I play it now.
+user: Not now. what is weather condition there?
+assistant: Name of city please.
+user: Loo for that of Half Moon Bay.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 81 degrees Fahrenheit and 18 percent chance of rain.
+user: Fine, now play the song selected on any device.
+assistant: Please verify, you need The mountain played in Living room
+user: Thats it, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Listen to it now.
+user: Great service.
+assistant: Any other help?
+user: No, thats all.
+assistant: See you later.

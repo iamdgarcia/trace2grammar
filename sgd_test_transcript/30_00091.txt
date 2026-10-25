@@ -1,0 +1,27 @@
+user: Hi, could you help me check the weather in Phoenix on 11th of this month please?
+tool(GetWeather): ok n_results=1
+assistant: The temperature is 86 degrees Fahrenheit and there is a 8 percent chance of rain.
+user: And how windy is it going to be?
+assistant: The average wind speed is 11 miles per hour.
+user: May I also know the expected humidity?>
+assistant: It will be around 27 percent.
+user: I see, could you schedule a visit to Rutherford Townhomes for me on that day?
+assistant: Please confirm your visit to Rutherford Townhomes on March 11th.
+user: Yes, may I know where are they located?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled, and you can visit them at 1624 Pueblo Avenue.
+user: I see, how many bedrooms do they have and does it has a garage?
+assistant: This apartment has 4 bedrooms and it has a garage.
+user: I see. Could you get me a Sedan reservation for pickup at two in the afternoon?
+assistant: Will you be using the car from March 11th, and when will you be using it till? Also, where would you like to pick the car up?
+user: I will need the car from March 7th at Diridon Station till the 13th.
+assistant: Do you require any insurance?
+user: Sure, that will be great.
+assistant: Please confirm your reservation for a Sedan at Diridon Station from March 7th at 2 pm to March 13th, with insurance.
+user: That sounds great to me.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: May I have the car name?
+assistant: You have reserved an Audi A8.
+user: I see, that is great, that is all I need.
+assistant: Have a great day ahead!

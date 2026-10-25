@@ -1,0 +1,31 @@
+user: I want 3 tickets for an event! I want to do something on March 12th.
+assistant: What event are you thinking of? In which city?
+user: I heard Weirdass is good and I am looking around LAX.
+assistant: Please confirm the following: Booking 3 ticket for Weirdass on March 12th in Los Angeles.
+user: Yes, that works!
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has gone through successfully. Enjoy!
+user: How much is a ticket?
+assistant: It costs $20.
+user: Thanks for the help. What buses are going there? I want a direct bus leaving from Long Beach.
+assistant: Do you want to leave on March 12th?
+user: No, I want to leave on the 6th of this month. I am leaving from Anaheim, CA.
+tool(FindBus): ok n_results=10
+assistant: There is a bus that costs $13 and departs at 7:50 am.
+user: What station is it leaving from?
+assistant: It leaves from Anaheim Bus Station.
+user: Where does it arrive at?
+assistant: At North Hollywood Station.
+user: Sounds great.
+assistant: Do you want to buy tickets?
+user: Yes, I do.
+assistant: Please confirm the following details: Booking 3 tickets for the bus departing Anaheim and arriving in Los Angeles on March 6th. The bus leaves at 7:50 am.
+user: No, I have excess luggage too.
+assistant: Please confirm the following: The bus leaves at 7:50 am and you have extra luggage to carry.
+user: Yes, that is good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thanks for the help!
+assistant: May I assist you further?
+user: No, thanks for your help, I am fine!
+assistant: Have a fantastic day!

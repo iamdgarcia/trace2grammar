@@ -1,0 +1,12 @@
+user: I need to find train tickets going to Phoenix, AZ to San Diego, can you help?
+assistant: When would you like to travel?
+user: I want to travel on the 6th of March.
+tool(FindTrains): ok n_results=5
+assistant: I have found 5 results including a train that costs $80 and leaves at 11:20 am.
+user: That sounds great.
+assistant: Would you like me to make reservations?
+user: No. Not at this time. Can you find me a house to stay at while I am there.
+tool(SearchHouse): ok n_results=10
+assistant: Yes. There is one with a 4.6 rating located at 10 East Thomas Road.
+user: That's great, I am all set.
+assistant: My pleasure. Goodbye.

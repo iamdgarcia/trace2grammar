@@ -1,0 +1,17 @@
+user: I like Music and I'm looking for something intresting to do around NY on 9th of this month
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events for you. What about Alpha Blondy at Sony Hall on March 9th at 7:30 pm?
+user: Yes, It's good for me! Now I want to request a payment
+assistant: What is the amount you want to transfer? Who is the beneficiary?
+user: I need to transfer 150 bucks to Margaret
+assistant: $150 in a public transaction with Margaret. Do you confirm?
+user: Yes, It's correct. Thanks
+tool(RequestPayment): ok n_results=1
+assistant: The payment was successful!
+user: Now I want to buy one ticket for the event
+assistant: 1 ticket for Alpha Blondy in New York on March 9th: do you confirm?
+user: Yes, It's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Good! Your ticket has been purchased. Have fun!
+user: Thank you so much! It's all for today!
+assistant: Have a nice day

@@ -1,0 +1,18 @@
+user: Help me find somewhere to eat.
+assistant: Sure, where and what kind of food?
+user: Find an Italian restaurant in Belmont.
+tool(FindRestaurants): ok n_results=3
+assistant: There's 3 you may like. How about Caprinos in Belmont?
+user: What's the phone number?
+assistant: They're at 650-591-4156.
+user: Great, thank you.
+assistant: Should I reserve a table?
+user: Yeah, reserve a table for 2 for the 14th of this month at morning 11:30.
+assistant: Sure, please confirm you'd like a table for 2 at Caprinos in Belmont at 11:30 am on March 14th.
+user: Correct, is it cheap and what's their address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've reserved your table. They are moderate and at 1000 6th Avenue.
+user: Thank you again.
+assistant: Need anything else?
+user: Nope, thank you!
+assistant: My pleasure, enjoy your day.

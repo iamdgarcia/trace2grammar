@@ -1,0 +1,36 @@
+user: I am interested in some attractions that I can visit, which is suitable for kids, and is considered to be a Museum.
+assistant: Can you tell me where I should look for the attractions?
+user: I am interested in attractions which are found in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions which you might consider, with one of the attractions being Apsley House, which is a Museum.
+user: Alright, nice. I am interested in finding a car which I can rent there. I would like having a Hatchback car which I will need till Sunday this week.
+assistant: Will you be picking the car up from London? Can you tell me your suitable time for picking up the car, and from when would you like to start renting it?
+user: That is okay. I will be able to pick up the car at half past 12 in the afternoon, and I want to start renting the car from the 1st.
+tool(GetCarsAvailable): ok n_results=6
+assistant: A nice car for you to consider is a Hatchback Fiat Panda, which you can pick up at Heathrow International Airport.
+user: That seems nice.
+assistant: Would you like having this car booked.
+user: Yes, I want this car to be reserved for me.
+assistant: Are you interested in having insurance with the car?
+user: I do not want to have insurance included.
+assistant: Can you please confirm that you want to rent a Hatchback car without insurance, which you will pick up from Heathrow International Airport on March 1st at 12:30 pm, and that you need to have it till March 3rd?
+user: That is not right, because I changed my mind, and I want to have insurance included.
+assistant: Can you please once again confirm that the car you want to rent is a Hatchback one, and that you want to have insurance included?
+user: Yes that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked for you.
+user: Can you tell me how much renting this car will cost me per day?
+assistant: Renting this car will be costing you $40.00 per day.
+user: I appreciate your help!
+assistant: Can I do something else to help you?
+user: Actually yes, because you can share the location.
+assistant: With whom do you want to have the location shared with?
+user: I want to share the address Apsley House with Victoria.
+assistant: Can you please confirm that you want to share the address Apsley House with Victoria?
+user: Yes, that is good.
+tool(ShareLocation): ok n_results=1
+assistant: The location you specified has been shared.
+user: Thank you. You have been quite helpful.
+assistant: Do you want me to do something else to help you?
+user: No, I am grateful for the help you have provided.
+assistant: Have a good time!

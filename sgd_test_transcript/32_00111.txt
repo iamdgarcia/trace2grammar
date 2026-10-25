@@ -1,0 +1,34 @@
+user: Can you please help me find a place to live?
+assistant: Sure, but first please tell me whether you're planning on buying or renting, as well as the number of bathrooms you require.
+user: I'm looking for a place to rent with 3 bathrooms.
+assistant: How about the number of bedrooms?
+user: The property must have four bedrooms.
+assistant: In which area should the property be located.
+user: Please find me something in Pleasant Hill.
+tool(FindHomeByArea): ok n_results=3
+assistant: I found Devon Apartments, a nice property located at 100 Devon Avenue, with rent priced at $5,200.
+user: Perfect. Please give me their contact number as well as tell me whether or not they have laundry machines inside the apartments.
+assistant: You can reach the property at 925-930-9630 but the property does not have laundry machines.
+user: OK, sounds perfect. Let's schedule a visit.
+assistant: Sure, when do you plan to visit the property.
+user: Please schedule the visit for the 13th of March.
+assistant: Can you please confirm that you want me to schedule a visit on March 13th to Devon Apartments.
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I've successfully scheduled your visit.
+user: Can you please share the location to Amy?
+assistant: Can you please confirm that you want me to share the location of 100 Devon Avenue with Amy?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've successfully shared the location.
+user: Perfect. Now please get me a cab for two, a Normal ride, to the location.
+assistant: Can yoo please confirm that you want me to book a Regular cab ride for 2 to 100 Devon Avenue?
+user: Strike that, there will be just 1 person, me.
+assistant: Can you please confirm that you need a Regular ride for 1?
+user: Yes, that' correct. How long until the cab reaches my location?
+tool(GetRide): ok n_results=1
+assistant: I've successfully booked your cab which should be with you in about 7 minutes.
+user: Thanks for everything.
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks again!
+assistant: Have a nice day!

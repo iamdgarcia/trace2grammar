@@ -1,0 +1,23 @@
+user: I am so bored. Can you find me something that sparks my interest.
+assistant: Do you have a certain type of activity you would like me to find for you?
+user: I enjoy watching Broadway.
+assistant: I can search for broadway. Any place in particular you would like me to look?
+user: I will be in the Portland, OR area.
+tool(FindEvents): ok n_results=10
+assistant: On event that a lot of people have expressed delight with is the Annual School Performance. The Newmark Theatre will be holding the event. The date is March 2nd. The time is 5 pm.
+user: Fantastic suggestion. Thank you. I would also like to receive wages. The amount to request is 138 dollars.
+assistant: Who will I be asking to send the wage to you?
+user: Please send the request to Peter.
+assistant: I understand I am requesting a non-private payment of $138 from Peter. Let me know if I made a mistake.
+user: You understood my request. Thanks for checking.
+tool(RequestPayment): ok n_results=1
+assistant: The request for the wage has been successfully sent.
+user: Remember the show you just suggested? I would like to secure four passes please.
+assistant: If you approve I will secure 4 passes for the Annual School Performance being held March 2nd in Portland.
+user: You have my approval.
+tool(BuyEventTickets): ok n_results=1
+assistant: You now have passes for the event saved in your name.
+user: What was the amount I paid for each pass. Exactly where will the show be held.
+assistant: Each pass was purchased for $45. The show will be presented at 1111 Southwest Broadway.
+user: You're the best. You can take a break now.
+assistant: Hope the rest of your day is wonderful.

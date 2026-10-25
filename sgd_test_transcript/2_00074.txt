@@ -1,0 +1,14 @@
+user: I will be in Toronto, Canada next Monday and I want to see if you can find some Musical shows I could attend.
+tool(FindEvents): ok n_results=7
+assistant: I came up with 7 of those. One would be called Funtcase and it seems to be a big hit, it is on March 4th and is set to begin at 6:30 pm at the NEST.
+user: I think I would like that one. I will be needing you to get me 4 tickets alright?
+assistant: Would the following be correct? 4 tickets for the March 4th showing of Funtcase in Toronto.
+user: That's right you got it.
+tool(BuyEventTickets): ok n_results=1
+assistant: You're seats will be waiting for you, enjoy the show!
+user: Wait where is it going to be?
+assistant: That address would be 423 College Street.
+user: Great I do appreciate it.
+assistant: Do you have any other requests?
+user: No, thanks anyway goodbye
+assistant: Have a most satisfying day then.

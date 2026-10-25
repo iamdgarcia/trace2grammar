@@ -1,0 +1,20 @@
+user: Can you give me some help in finding a bus?
+assistant: When are you planning to leave?
+user: I would like to leave on 1st of March.
+assistant: Where will you be leaving from and where are you going?
+user: I will leave from Fresno, CA and go to Las Vegas.
+tool(FindBus): ok n_results=10
+assistant: What do you think of the bus leaving at 7:10 am? The price is $37.
+user: What station will this bus arrive at?
+assistant: This bus arrives at Union Plaza.
+user: Are you able to find anything else?
+assistant: What about the bus leaving at 7:40 am? The price is $38.
+user: That sounds fine. I would like to purchase bus tickets for one person.
+assistant: Okay, confirm these details for me: You would like a ticket for 1 person on the bus departing from Fresno on March 1st at 7:40 am and going to Las Vegas. You have no extra luggage.
+user: Yes that is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed.
+user: Thanks very much for your help.
+assistant: Is there anything else you would like help with?
+user: No, thanks very much for the help.
+assistant: Have a wonderful day.

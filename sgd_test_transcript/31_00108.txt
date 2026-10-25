@@ -1,0 +1,29 @@
+user: Would you find me a therapist?
+assistant: Would you like a Family Counselor, a Psychiatrist or something else? What city should I search in?
+user: Find a Psychologist in Lafayette.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 therapists that you may like. How about the Psychologist Alissa Scanlin Psyd? They are in Lafayette.
+user: Could you tell me their phone number and address?
+assistant: The address is 3468 Mount Diablo Boulevard. Call them at 707-371-2433.
+user: That sounds good. Would you book an appointment? The appointment should be afternoon 1:45.
+assistant: What date would you like the appointment?
+user: Would you schedule an appointment on March 6th?
+assistant: Please confirm tat you want to book an appointment with Alissa Scanlin Psyd at 1:45 pm on March 6th.
+user: That sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, there was an error. I was unable to book an appointment. Could I help with something else?
+user: Would you try booking an appointment again? The appointment time should be evening 5. Would you make an appointment for 8th of this month?
+assistant: Please confirm that you want to book an appointment with Alissa Scanlin Psyd at 5 pm on March 8th.
+user: Yes, that's good.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, but I could not make the reservation. I was unable to book an appointment. You may want to try Alissa Scanlin Psyd. You could probably get an appointment on March 8th at 5:30 pm.
+user: That sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was made successfully. You will be getting an email confirmation soon.
+user: Thank you, it is much appreciated. Do you have any movie recommendations? I want movies with Lena Dunham. Find something that is an Eccentric story.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 movie for you. How about Once Upon a Time in Hollywood? It has an 85 out of 100 rating.
+user: Sounds great.
+assistant: Could I assist with anything further?
+user: No, that's it. Thank you for helping.
+assistant: I am glad to have been of assistance.

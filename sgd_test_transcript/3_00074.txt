@@ -1,0 +1,11 @@
+user: I wish to book a cab.
+assistant: What numbers do you want to have? Which is your most preferred ride? Do you need Regular or Pool or something else.
+user: I need Regular ride for 3 persons.
+assistant: Which place?
+user: I wish to go to 7880 Wren Avenue.
+assistant: Kindly ensure that, you wish to go to 7880 Wren Avenue. Regular ride has been booked for 3 persons.
+user: It is nice. What is the cost?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been reserved and it is on its way. The cost is $30.54.
+user: Thank you so much for your help. That is what I want.
+assistant: Have a fantastic day.

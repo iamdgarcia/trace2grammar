@@ -1,0 +1,30 @@
+user: I need a hotel room in SD please.
+tool(SearchHotel): ok n_results=10
+assistant: Well, I have a listing of 10 to start with. First up Alphabetically is Bahia Resort Hotel. It has 3 stars.
+user: May I smoke there? What street are they on?
+assistant: Sorry no smoking but you may find them at 998 West Mission Bay Drive.
+user: Sounds fine, thanks.
+assistant: How about a room?
+user: Later, let's get me there first. What about a round trip ticket returning from ATL on March 14tH?
+assistant: Will you leave on March 7th?
+user: No start this on the 6th of this month.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: How about fling Delta Airlines. You can board at 5:50 am and the returning flight will leave there at 6:15 pm, all this for the low low price of $405.
+user: No, something better please.
+assistant: Well, try Southwest Airlines. You can board to leave at 10:20 am, have a layover and you'll board to return at 12:20 pm. The price is higher, $414.
+user: Fine, Lets do the hotel now then.
+assistant: How long will your stay be?
+user: I'm going to check in on march 10th, but only for three nights.
+assistant: To confirm: 1 room for 3 days and nights starting on March 10th at bahia Resort Hotel in San Diego.
+user: Fine, do it.
+tool(ReserveHotel): ok n_results=1
+assistant: You are booked.
+user: Thanks a lot, are there any local things there, like a park? Something free for my kids?
+tool(FindAttractions): ok n_results=4
+assistant: A good park there is Cabrillo national monument.
+user: How my I phone them?
+assistant: Dial 619-557-5450.
+user: Ok, I got it.
+assistant: What may I do now?
+user: No, I'm good, I'm armed with data.
+assistant: Have a fun trip.

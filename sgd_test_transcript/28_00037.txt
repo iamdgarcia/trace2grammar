@@ -1,0 +1,17 @@
+user: I want to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: How about Ad Astra? It has an average rating of 84 out of 100.
+user: That sounds good. I'd also like to find a restaurant.
+assistant: In what location? Also, what type of cuisine do you prefer?
+user: Find me some Japanese restaurants in SF.
+tool(FindRestaurants): ok n_results=10
+assistant: How about 2g Japanese Brasserie? It is a nice restaurant located in San Francisco.
+user: Yes, that would be nice. I want to book a table.
+assistant: What time would you like to reserve a table for?
+user: Make it for twelve in the afternoon.
+assistant: Can you confirm the following details? You want me to book a table for 2 at 2g Japanese Brasserie in San Francisco. Your reservation is for 12 pm on March 1st. Is this correct?
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thank you! That's all.
+assistant: You're welcome. Have a good day.

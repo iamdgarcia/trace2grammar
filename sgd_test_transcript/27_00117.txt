@@ -1,0 +1,34 @@
+user: I need a bus for one person.
+assistant: Sure. What is your departure city and destination? What is your departure date?
+user: I'm leaving Washington and headed towards Philadelphia. I want to leave on the 3rd of March.
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses for you. How about a 8:30 am departure? The ticket cost $29.
+user: That sounds good.
+assistant: Would you like to buy tickets?
+user: No, maybe later.
+assistant: Do you need help with anything else?
+user: Yes. Can you show me some child-friendly attractions?
+tool(FindAttractions): ok n_results=10
+assistant: You might like the Barnes Foundation. It is a Museum.
+user: Can you give me their phone number?
+assistant: You can contact them at 215-278-7000.
+user: Is this attraction free?
+assistant: No, the admission is not free.
+user: Did you find anything else?
+assistant: You might want to check out Bartram's Garden. It is a Park.
+user: Cool. Anything else?
+assistant: How about the Ben Franklin Bridge. It is a Historical Landmark.
+user: Okay, great. I'd like to purchase that bus ticket now.
+assistant: Confirming that you want a ticket for 1 on the bus leaving Washington on March 3rd at 8:30 am. Your destination is Philadelphia. You have no extra luggage.
+user: No. I do have excess luggage.
+assistant: Confirming that you need a ticket for one from Washington to Philadelphia with extra carry on luggage?
+user: Yes, that works. How many stops are there? What is the arrival station?
+tool(BuyBusTicket): ok n_results=1
+assistant: This is a direct bus that arrives at 10th and Filbert. Your ticket is confirmed.
+user: Thanks for your help. Can you find me a local hotel? Something that is three -star.
+tool(SearchHotel): ok n_results=10
+assistant: How about the Aka University City? It is a 3 star hotel.
+user: That sounds good.
+assistant: Would you like to make a reservation?
+user: No, not now. That's all for now.
+assistant: Have a nice day. Goodbye!

@@ -1,0 +1,33 @@
+user: I'd like to search for a salon.
+assistant: What metropolis ought I look in?
+user: I'd like a salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: There is a lovely salon called Atelier salon Willow glen in san Jose.
+user: Yeah, that's fine with me.
+assistant: Should I reserve an appointment there?
+user: Nope, I do not wish to reserve right now.
+assistant: Could I assist you with something else?
+user: Ah, can you share the address? The location to share is 1047 Lincoln Highway Suite 101 with Sarah.
+assistant: Please verify the following information: you are sharing the address 1047 Lincoln Highway suite 101 with Sarah.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your sharing of the address is complete.
+user: Could you tell me about my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set for now, with one called dentist for 3:30 pm.
+user: Alright, wonderful. I'd like to include an alarm.
+assistant: When ought I set the new alarm at?
+user: The alarm should be for evening 4:15.
+assistant: Please verify the following information: make an aalrm called New alarm for 4:15 pm.
+user: Yeah, that's right.
+tool(AddAlarm): ok n_results=0
+assistant: I apologize, but I could not set the alarm. Could I assist with something else?
+user: Could you attempt once more for 16:45?
+assistant: Please verify the following information: make an alarm called New alarm for 4:45 pm.
+user: Yeah, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been included.
+user: Thank you so much.
+assistant: Could I assist with something else?
+user: No, thank you for your assistance.
+assistant: IT was my pleasure.

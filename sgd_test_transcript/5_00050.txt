@@ -1,0 +1,11 @@
+user: Create an alarm for me for evening 5 and name it Music practice.
+assistant: You would like to create an alarm for 5 pm and name it Music practice?
+user: Call the alarm Grocery run instead.
+assistant: You would like to create an alarm for 5 pm and name it Grocery run?
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been created.
+user: Thanks a million.
+assistant: Do you need anything else?
+user: No. Thanks a million.
+assistant: Thanks a lot.

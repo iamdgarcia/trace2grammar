@@ -1,0 +1,14 @@
+user: Is there anything interesting to do near LAX on the 7th of this month?
+assistant: What are you looking for? Music, Theater, something else?
+user: Since you asked, I do enjoy Broadway.
+tool(FindEvents): ok n_results=10
+assistant: I've come up with 10 such occurrences. Perhaps Adieu Monsieur Haffmann, it seems to be well-liked. It is on March 7th at the Theatre Raymond Kabbaz and will begin at 6 pm.
+user: Do you have a more exact location. What are the ticket prices like?
+assistant: The address is 10361 West Pico Boulevard. And tickets would be $55.
+user: I think I would enjoy that. I will need 3 tickets.
+assistant: Am I correct that you are requesting 3 tickets for the March 7th show Adieu Monsieur Haffmann in Los Angeles?
+user: You got it that's exactly what I want.
+tool(BuyEventTickets): ok n_results=1
+assistant: Success, you're all set.Have a blast!
+user: Appreciate it, that will be all.
+assistant: Have a most wonderful day.

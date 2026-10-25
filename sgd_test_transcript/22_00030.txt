@@ -1,0 +1,37 @@
+user: Hey, I could use your help finding something interesting to do.
+assistant: Is there any particular city that you would like me to search for events in?
+user: Yes. Look for events on the 10th of this month in New York.
+assistant: Is there any type of event you would like me to look for? You can say Music, Theater, or anything else?
+user: Yes. I like Musical shows.
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events which meet the criteria you've laid out for me. How about the event Alma Deutscher at the Stern Auditorium / Perelman Stage on March 10th at 6 pm.
+user: It sounds interesting. How much does a ticket cost?
+assistant: The ticket price is $30 per.
+user: That sounds nice and affordable. Can you find me a bus there that leaves on the 4th of March?
+assistant: Where would you like to leave from?
+user: Leaving from Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: How about a bus that departs at 9 am and costs $24 for a ticket?
+user: There's nothing wrong with that, but let me check out the flight prices too. Find me a round trip flight to get there.
+assistant: Would you still like to leave on March 10th? When would you like to take the return flight?
+user: I would like to leave on the 3rd and come back on the 13th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I've found 4 flights that could work for you. Would a flight with American Airlines that costs $100 work? The onward flight takes off at 1:20 pm and the return flight takes off at 11:20 am.
+user: Yes that would work. Can you find me a three star hotel in the area?
+tool(SearchHotel): ok n_results=10
+assistant: There is a nice 3 star hotel in the area called 11 Howard.
+user: Yea, it sounds like a nice place.
+assistant: Would you like to book a room at the hotel?
+user: No I would not. Not right now anyways.
+assistant: Is there anything else that I could help you with then?
+user: Yes. I would like to buy three tickets to the event from earlier in New York.
+assistant: Please confirm the following: Buy 3 tickets to Alma Deutscher on March 10th in New York.
+user: Make it four tickets instead of three.
+assistant: Please confirm the following: You would like 4 tickets to the event which is taking place in New York.
+user: That is correct. Can you tell me the venues location?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased. The address of the venue is 881 7th Avenue.
+user: Great. Thank you.
+assistant: You're welcome. Can I help you with anything else?
+user: Not right now, that will be all.
+assistant: Okay, good bye.

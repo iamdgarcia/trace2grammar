@@ -1,0 +1,18 @@
+user: Can you help me find a train please
+assistant: When are you leaving?
+user: I plan to leave on the 14th of this month heading to Chicago and there will be 2 of us
+assistant: What city are you coming from?
+user: I'll be coming from New York
+tool(FindTrains): ok n_results=6
+assistant: There are 6 trains that work including a 6 am train for $243
+user: That's cool, now find me a house to stay in
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 places that fit, including a 4.4 rated place along 1 South Franklin Street
+user: Can I get a phone number for that place
+assistant: Sure, it's +1 312-558-1020
+user: That's a great place
+assistant: Do you want to reserve it then?
+user: For now it's fine
+assistant: Can I assist with something else?
+user: No for now we're all set
+assistant: OK then, have a great day glad I could help

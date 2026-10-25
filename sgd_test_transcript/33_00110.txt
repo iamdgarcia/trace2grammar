@@ -1,0 +1,24 @@
+user: Could you help me find some child-friendly attractions please?
+assistant: Which area should i look at?
+user: I'm looking for something in New York City
+tool(FindAttractions): ok n_results=10
+assistant: 9/11 tribute Museum is a Museum you could check
+user: That's perfect. Could you also help me finding a house there please?
+tool(SearchHouse): ok n_results=9
+assistant: There's a nice house with rating 4.4 at 100 greenwich street
+user: Does it have laundry service? could you please send me the phone number?
+assistant: Yes, it has laundry service. The number is +1 917-409-0800
+user: Are there any other houses for just one person wiht rating 4.1 or higher?
+tool(SearchHouse): ok n_results=9
+assistant: I found other 9 houses: at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA there's a nice house with rating 4.1
+user: That's great. Could you please help me finding round trip flights in economy class to get there?
+assistant: Of course. Just tell me date and place of departure and return
+user: I'd like to leave tomorrow from Phoenix and retunr on the 9th
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found an American Airlines flight taking off at 4:10 pm with a layover and returning at 1:40 pm. The price is $449
+user: Is it for three people?
+assistant: No, it's just for 1 person
+user: Sounds good
+assistant: Is there anything else I can do for you?
+user: No, that's it, thanks for your help
+assistant: Have a good day

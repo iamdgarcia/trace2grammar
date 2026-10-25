@@ -1,0 +1,23 @@
+user: Hi can you help me find some songs to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: I managed to find 10 songs that you may like. How about Dangerously by Charlie Puth from the album Nine Track Mind?
+user: What genre is the song?
+assistant: The genre of the song is pop.
+user: When did it come out? Seven years back?
+assistant: The song was released in 2015.
+user: Ok, that sounds good.
+assistant: Should I play the song for you?
+user: Not right now. What's the weather like in Olema, California on March 2nd?
+tool(GetWeather): ok n_results=1
+assistant: The temperature for that day should be around 88 degrees Fahrenheit with a 9 percent chance of rain.
+user: Is it going to be windy and what is the expected humidity?
+assistant: It should be about 25 percent humidity and the wind speeds will be around 9 miles per hour.
+user: Okay. Now back to that song, can you play it? Any device is fine.
+assistant: So you'd like to play Dangerously in the living room, is this correct?
+user: Yes please play the song.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy the song!
+user: Thank you so much!
+assistant: Anything else I can assist you with?
+user: No, that will be all. Thanks again.
+assistant: Have a wonderful day!

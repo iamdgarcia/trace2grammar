@@ -1,0 +1,27 @@
+user: I'm looking for a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies. How about The Art of Racing in the Rain? The movie has an average rating of 43 out of 100.
+user: That sounds good.
+assistant: Is there anything else I can help you with?
+user: Yes. Can you find me a Turkish restaurant?
+assistant: What location should I search in?
+user: Find me something in SFO.
+tool(FindRestaurants): ok n_results=5
+assistant: A La Turca is a nice restaurant located in San Francisco.
+user: How expensive is it?
+assistant: It is a moderate priced restaurant.
+user: What is their user rating?
+assistant: They are rated around 4.4 by users.
+user: Can you recommend any other restaurants?
+assistant: How about Bursa Restaurant? It is a nice restaurant located in San Francisco.
+user: Yes, that sounds good. I'd like to book a table.
+assistant: For what time?
+user: Make it for 1:30 in the afternoon.
+assistant: Confirming that you want to book a table for 2 at Bursa Restaurant in San Francisco for March 1st at 1:30 pm?
+user: Yes, that works. Can you get me their phone number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You can contact them at 415-564-4006. Your reservation is successful.
+user: Does the restaurant have vegetarian options?
+assistant: Yes, they do have good options for vegetarians.
+user: Thank you so much. That's all.
+assistant: You're welcome. Have a good day!

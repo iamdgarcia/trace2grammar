@@ -1,0 +1,15 @@
+user: i need to travel , find me a cab? i want a ride to Bowl & Plate at White Shallot.Number of passenger is 1 and i prefer a Pool ride.
+assistant: Please check and review the following details. You want a ride to Bowl & Plate at white shallot. You need 1 seats and you prefer a pool ride
+user: ok that works for me. How long before the cab reaches here ?
+tool(GetRide): ok n_results=1
+assistant: ride is booked successfully. the cab is on its way. the cab will be in 9 minutes.
+user: will you search me some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: i found 10 songs for you. what about Wolf Totem by the hu from the album the Gereg.
+user: Ok that's the one i need. I need to play this song.
+assistant: Please check and review the following details. Playing the song Wolf Totem in Living room
+user: ok thats great. Whether this song come out in one years ago?
+tool(PlayMedia): ok n_results=1
+assistant: Yes it is from the year 2018. Song is played successfuly.
+user: Thanks a lot .
+assistant: enjoy , have a wonderful day.

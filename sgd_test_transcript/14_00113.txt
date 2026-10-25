@@ -1,0 +1,23 @@
+user: Can you find some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: Are you interested in The Trip by Still Corners from the album Strange Pleasures?
+user: Yes, I like that one!
+assistant: Would you like to hear the song now?
+user: No, not at this time! Can you check movies online?
+assistant: What is your preference of movies?
+user: I like Action movies!
+tool(FindMovies): ok n_results=5
+assistant: I found The Angel Has Fallen, Hobbs and Shaw, and Mission Mangal.
+user: I like the indian mars movie!
+assistant: Would you like me to play the movie now?
+user: No, not at this time thanks!
+assistant: Can I help you with anything else?
+user: I'd like to hear the song you just found on my kitchen speaker.
+assistant: Please confirm that you would like me to play the song The Trip in the Kitchen.
+user: Yes, that would be great!
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy it!
+user: Thanks!
+assistant: Can I assist you with anything else?
+user: No, that will be all for now!
+assistant: Okay, have a great day!

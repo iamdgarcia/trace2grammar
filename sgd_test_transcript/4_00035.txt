@@ -1,0 +1,21 @@
+user: I'm searching for location to dine at, preferably ones not very costly for cost. Get me one in San Mateo.
+assistant: What sort of cuisine are you searching for?
+user: Get me one that offers Oriental cuisine.
+tool(FindRestaurants): ok n_results=5
+assistant: I discovered 5 diners you may enjoy. There is a lovely diner called Izakaya Ginji in San Mateo.
+user: Yeah, that's fine with me.
+assistant: Do you wish to book a spot there?
+user: Yeah, I'd like to book a spot there.
+assistant: When ought I attempt to book for?
+user: Book it for quarter to 2 in the afternoon.
+assistant: Please verify the following information: reserve a spot for 2 people at the Izakaya Ginji in San Mateo for March 1st, 1:45 pm.
+user: Yeah, that's fine with me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I apologize, but I could not make the booking. There is a lovely diner called Izakaya Ginji; should I try to book for 2 people on 1:30 pm, March 1st?
+user: Yeah, that's fine with me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete.
+user: Does the diner offer outdoor seating? What is the contact number?
+assistant: They don't offer outdoor seating, and the contact number is 925-408-4891.
+user: Thank you for your help; that's all.
+assistant: Have a pleasant afternoon.

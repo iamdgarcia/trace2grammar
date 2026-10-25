@@ -1,0 +1,29 @@
+user: I need one train ticket. I'm coming from Fresno, CA.
+assistant: Where are you going?
+user: I'm going to Anaheim.
+assistant: When are you traveling?
+user: I'm leaving on the 9th of this month.
+tool(FindTrains): ok n_results=6
+assistant: I found 6 trains. One's leaving at 7 am and costs $66.
+user: What station does it come to? What station does it leave?
+assistant: The train is coming from Fresno Station and arrives at Anaheim Intermodal Center.
+user: That's good. I want something to do there on the 10th of this month.
+assistant: What are you interested in? What about music or theater?
+user: I like musical shows.
+tool(FindEvents): ok n_results=1
+assistant: Brown Sabbath are performing at Crossroads at House of Blues Anaheim on March 10th at 7 pm.
+user: Sounds fun. What other attractions are there? I want something free.
+tool(FindAttractions): ok n_results=8
+assistant: I found 8 attractions. Angel Stadium of Anaheim is a sports venue there.
+user: What else? I want a theme park.
+tool(FindAttractions): ok n_results=2
+assistant: Disneyland Park is a theme park there.
+user: Okay. I want a house to stay at there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. One is located at 1050 West Ball Road with a 4.2 rating.
+user: What's their number?
+assistant: Their number is +1 714-860-4660.
+user: Do they offer laundry?
+assistant: They offer laundry services.
+user: Good. That's all.
+assistant: Have a nice day.

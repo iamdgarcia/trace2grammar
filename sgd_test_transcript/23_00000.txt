@@ -1,0 +1,38 @@
+user: Hi I'm having a movie night with some friends, can you find some movies online for us?
+assistant: What kind of movies are you interested in?
+user: I'd really like to watch a ghost movie.
+tool(FindMovies): ok n_results=6
+assistant: How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: Midsommar sounds good to me.
+assistant: Would you like me to play the movie for you?
+user: Not right now, no.
+assistant: Is there anything else I can assist you with?
+user: Can you please show me some attractions in Paris, France?
+tool(FindAttractions): ok n_results=10
+assistant: How about American Church in Paris? It's a place of worship.
+user: Does it cost anything to get in? What's their contact number?
+assistant: You can contact them at 1 40 62 05 00 and entry is free.
+user: That sounds good. Please find some popular songs for me to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs that you may enjoy. How about Acapella by Karmin from the album Pulses?
+user: What year was the song released?
+assistant: The song came out in 2013.
+user: Is there anything else? I like Rihanna.
+tool(LookupMusic): ok n_results=5
+assistant: I found 5 Rihanna songs that you may like. How about California King Bed from the album Loud?
+user: Yes, I like that song.
+assistant: Would you like me to play that song for you?
+user: Yes, please play the song on the living room speaker.
+assistant: So you'd like to play California King Bed in the living room, is this correct?
+user: Yes, please play that song.
+tool(PlayMedia): ok n_results=1
+assistant: Hope you like the song.
+user: Now back to the movie you found, I'd like to watch it with subtitles in spanish.
+assistant: So you'd like to play Midsommar with spanish subtitles, is this correct?
+user: Yes. Can you tell me who plays in it?
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is now playing. Florence Pugh stars in it.
+user: Thank you so much.
+assistant: Anything else I can help with?
+user: That's all, thank you.
+assistant: Have a wonderful day!

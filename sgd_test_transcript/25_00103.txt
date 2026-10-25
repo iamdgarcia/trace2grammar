@@ -1,0 +1,36 @@
+user: I'd like to see my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: You have a 10 am alarm named Call.
+user: Alright. I'm looking for a restaurant.
+assistant: What kind of food do you enjoy?
+user: I want French food.
+assistant: What city do you want to search in?
+user: I want to find a place in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: There's a nice place called Amelie San Francisco in San Francisco.
+user: Can you tell me their address and if they have outdoor dining.
+assistant: They are at 1754 Polk Street and unfortunately there is no outdoor dining.
+user: Okay, that's still good.
+assistant: Do you want to reserve a table?
+user: No, I do need a car rental though.
+assistant: When do you want the rental to start and where will you be picking it up?
+user: I want it starting on the 3rd of this month and from Dulles International Airport.
+assistant: What time will you be picking it up and do you prefer a Hatchback, Sedan, or something else?
+user: I'd like to pick it up at ten in the morning. And I'd prefer an SUV.
+assistant: And until when do you want the car?
+user: I want it until March 4th.
+assistant: And would you like insurance?
+user: Yes, I will need insurance.
+assistant: I'll reserve you an SUV with insurance at Dulles International Airport for pick up on March 3rd at 10 am and drop off on March 4th. How does that sound?
+user: That's what I want.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved for you.
+user: And I also want to share the 1754 Polk Street location with Lauren.
+assistant: I'll share the location of 1754 Polk Street with Lauren, is that right?
+user: Yes, please share it.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks for the help.
+assistant: What else can I do for you?
+user: Nothing else, you've been plenty helpful.
+assistant: Have a terrific day!

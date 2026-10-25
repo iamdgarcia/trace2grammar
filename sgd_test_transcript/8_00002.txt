@@ -1,0 +1,11 @@
+user: I need to schedule a visit to The Meadows at Fountaingrove on the 11th.
+assistant: Okay. Please confirm the following: You want to schedule a visit on March 11th to The Meadows at Fountaingrove.
+user: No, let me change that to visiting Redwood Grove Apartments on March 12th.
+assistant: Okay. Please confirm that you want to schedule a visit for March 12th to Redwood Grove Apartments.
+user: Yes, that's what I need.
+tool(ScheduleVisit): ok n_results=1
+assistant: Okay. Your visit to Redwood Grove Apartments has been scheduled.
+user: Great. Thanks for your help.
+assistant: Is there anything else I can help you with?
+user: No, that's it. Thanks.
+assistant: You're very welcome. Enjoy your day.

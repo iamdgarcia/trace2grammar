@@ -1,0 +1,34 @@
+user: I want to look for movies that are online.
+assistant: Is there a type of movie you prefer?
+user: I'm looking for Ghost movies.
+tool(FindMovies): ok n_results=6
+assistant: There are 6 movies you might enjoy. How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: Let's keep looking.
+assistant: How about One Cut of the Dead, Scary Stories to Tell in the dark, or Theatre of Blood?
+user: I like Theatre of Blood. I also want to look for attractions.
+assistant: Where would you like to look?
+user: I want to look in Atlanta, GA.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions there you might enjoy. Al-Farooq Masjid is an interesting Place of Worship.
+user: Alright, what else do you recommend? I don't have any preferences.
+tool(FindAttractions): ok n_results=10
+assistant: Atlanta Botanical Garden is a nice Park.
+user: Sounds nice. Now let's look for some songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about So Long by Nadia Batson from the album The Purple Heart Riddim?
+user: Good suggestion, I like it.
+assistant: Do you want to listen to the song.
+user: Yeah, put it on.
+assistant: I'll put on So Long in the living room, is that good?
+user: Yes, that's good. When was it released?
+tool(PlayMedia): ok n_results=1
+assistant: It was released in 2018. Enjoy the song.
+user: And can you play the movie we found earlier?
+assistant: I'll play Theatre of Blood with English captions, is that okay?
+user: Yes, that's okay. Who's in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: Michael Hordern is in the movie.
+user: Thanks a lot.
+assistant: Do you need any further help?
+user: No, I'm good, thank you.
+assistant: Enjoy the movie and have a fun day.

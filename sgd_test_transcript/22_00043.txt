@@ -1,0 +1,48 @@
+user: Hi, could you find interesting things to do on 14th of March?
+assistant: What types of events do you like, such as Music or Theater? And what is your preferred location?
+user: I would like Musical Shows in the Vancouver area.
+tool(FindEvents): ok n_results=4
+assistant: How about Cavetown, taking place at Venue Nightclub on March 14th at 7:30 pm?
+user: How much does the ticket cost and where is the venue located?
+assistant: This event is located at 881 Granville Street and will cost you $25.
+user: I see, could you get me another event on March 1st in the NYC area?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like, how about Alma Deutscher at Stern Auditorium / Perelman Stage on March 1st at 5:30 pm?
+user: Sounds great!
+assistant: Would you like me to purchase the tickets for you?
+user: Not now, could you get me a direct bus there please?
+assistant: And are you departing on the March 1st?
+user: Yes, I am.
+assistant: Where are you departing from?
+user: I will depart from Philly.
+tool(FindBus): ok n_results=6
+assistant: Would you like a bus departing at 9 am costing $23?
+user: Which station will I arrive at?
+assistant: You will arrive at Penn Station.
+user: And which station will it depart from?
+assistant: You will depart from 10th and Filbert.
+user: I see, could you find a round trip there for four on American Airlines please?
+assistant: And when will you be returning?
+user: I will be returning on the 3rd of March.
+assistant: Are you departing on March 1st?
+user: Yes, I am.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 direct American Airlines flight departing at 1:20 pm and returning at 11:20 am costing $103.
+user: May I know when does it arrive at the destination, and what is the type of seating?
+assistant: This is an economy class seat which will arrive at 2:11 pm.
+user: I see, could you get me 1 room at three star hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star hotel called 11 Howard?
+user: May I have their contact number and is smoking allowed there?
+assistant: Yes, smoking is allowed, and you can call them at +1 212-235-1111.
+user: I see, sounds great to me!
+assistant: Would you like me to make a reservation for you then?
+user: No, could you purchase the event tickets instead?
+assistant: Please confirm your purchase for 4 tickets for the Alma Deutscher event in New York on March 1st.
+user: Sure, and how much will each ticket cost and where is it located?
+tool(BuyEventTickets): ok n_results=1
+assistant: The event is held at 881 7th Avenue and will cost $25 for each ticket. Your reservation has been made.
+user: Thanks for your help!
+assistant: How can I further assist you?
+user: No, that is all I need. Thanks!
+assistant: Have a great day ahead!

@@ -1,0 +1,34 @@
+user: Show me my alarms.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set for 4:30 pm called Busy.
+user: Sounds good.
+assistant: Would you like to add an alarm?
+user: Not at the moment. Find a restaurant there instead.
+assistant: What sort of food and what area?
+user: Find restaurants in Sebastopol that sell tacos.
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 restaurant, El Coronel Mexican Restaurant. It's a nice restaurant in Sebastopol.
+user: Is it a pricey restaurant? What is the phone number?
+assistant: They are moderate priced. The phone number is 707-829-7010.
+user: That's good. Reserve the car there. A Hatchback works. I'll purchase insurance too.
+assistant: What time will you pick it up?
+user: I'd like to pick it up at 2 pm.
+assistant: When do you want to start and end the rental? Where would you like to pick it up?
+user: I'd like to pick it up at Indira Gandhi Airport from today till next Monday.
+assistant: Please confirm that you want to pick up the Hatchback car from Indira Gandhi International Airport on March 1st ta 2 pm. You will drop it off on March 4th. Insurance is included.
+user: No, a Sedan works but I want to pick it up on evening 6:30.
+assistant: Could you confirm that you want to pick up at 6:30 pm and that you need a Sedan?
+user: Sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: Your car was reserved.
+user: Would you share the location?
+assistant: So you want to share the address Indira Gandhi International Airport?
+user: Yep.
+assistant: Who would you like to share weith?
+user: Share with Theresa.
+assistant: Could you confirm that you want to share Indira Gandhi International Airport with Theresa?
+user: Sounds great.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Thank you, that was a good help. That's it for now.
+assistant: Have a good day.

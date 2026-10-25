@@ -1,0 +1,17 @@
+user: Can you search for a hotel for me?
+assistant: What city would you like to look in?
+user: I'm looking for a hotel in Kuala Lumpur.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels in that city. Alila Bangsar is a 5 star hotel.
+user: OK, sounds good.
+assistant: Would you like to reserve the hotel?
+user: Not right now, thank you. How will the weather be there on March 10th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be 90 degrees Fahrenheit. There is a 5 percent chance of rain.
+user: OK, thanks. Let's reserve the hotel. I would like to reserve 2 rooms. We would like to check in on the 2nd of March and stay five days.
+assistant: You would like to book 2 rooms at Alila Bangsar in Kuala Lumpur on March 2nd for 5 days, is that correct?
+user: Yes, that all sounds right. Does the hotel allow smoking? What is the phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is successful. Smoking is not allowed on the property. The phone number is +60 3-2268 3888.
+user: Thank you, you have been really helpful. That's all for now.
+assistant: Have a great day!

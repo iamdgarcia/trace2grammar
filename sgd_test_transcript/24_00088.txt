@@ -1,0 +1,27 @@
+user: I need to find a movie to watch in SFO.
+tool(FindMovies): ok n_results=10
+assistant: I found 10, three are Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: No find something else please.
+assistant: How about Give Me Liberty, Hobbs and Shaw, or Hustlers?
+user: What else can you find?
+assistant: How about IT Chapter Two, In Fabric, or Labyrinth?
+user: IT Chapter Two is perfect.
+assistant: Do you need to buy tickets?
+user: Not at this time, I need to book a table at a restuarant in the area.
+assistant: Which restaurant would you like to reserve a table at?
+user: Try Original Joe's please.
+assistant: What time would you like the table reserved?
+user: Please reserve a table at half past 1 in the afternoon.
+assistant: You need a table for 2 at Original Joe's in San Francisco at 1:30 pm on March 1st, correct?
+user: Yes that is perfect. Do they have outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. There is no outdoor seating.
+user: Do they vegetarian options? What is their number?
+assistant: Their phone number is 415-775-4877 and they do not offer vegetarian alternatives.
+user: Thanks, What time can I watch the movie at AMC Kabuki 8?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 showtime at 7:30 pm AMC Kabuki 8.
+user: Sounds good thanks.
+assistant: Can I do anything more for you?
+user: Thank you, that is all.
+assistant: Have a fabulous day!

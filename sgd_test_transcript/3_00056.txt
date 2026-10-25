@@ -1,0 +1,13 @@
+user: I am in need of having a cab.
+assistant: Can you tell me the kind of ride you would want to have? It can be for example a Luxury ride or Pool ride or something else
+user: I want to have a Normal ride for three people.
+assistant: Can you tell me your destination?
+user: I want to arrive at 2758 Old Sonoma Road.
+assistant: Can you please confirm that you want to have 3 seats in a Regular ride to go to 2758 Old Sonoma Road?
+user: That is not right, because I want to have a Shared ride to go to Atlanta.
+assistant: Can you once again confirm that you want to have a Pool ride to go to Atlanta?
+user: Yes that suits me well. How much should I wait till the cab comes here?
+tool(GetRide): ok n_results=1
+assistant: Your requested cab is already on the way, and it should arrive to you in about 4 minutes.
+user: I appreciate your help very much. That would be all.
+assistant: Have a wonderful time!

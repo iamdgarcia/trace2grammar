@@ -1,0 +1,20 @@
+user: Can you help me find a Psychologist in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: I found you 10 therapists. Barskyex Bryna G is a Psychologist located in San Jose that might be suitable for you.
+user: Anyone else? I need to find a Family Therapist in Santa Rosa.
+tool(FindProvider): ok n_results=8
+assistant: I found you 8 therapists. How about Auer Patience. They are a Family Counselor located in Santa Rosa.
+user: What is the phone number?
+assistant: Their phone number is 707-526-7604.
+user: Sounds good. Can you get me the weather for Santa Rosa for the 4th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 87 degrees Fahrenheit with a 7 percent chance of rain.
+user: Okay. I want to book an appointment with the therapist that you found. Make it for evening 5:30.
+assistant: Can you confirm the following information? I am booking an appointment with Auer Patience at 5:30 pm for March 4th. Is this correct?
+user: Nope. I need to see them at 11 o"clock in the morning.
+assistant: Confirming that you want to book an appointment for 11 am on March 4th?
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry. Something went wrong and I was unable to book your appointment. Can I help you with something else?
+user: No. Thanks a lot, I really appreciate it.
+assistant: Glad to be of help.

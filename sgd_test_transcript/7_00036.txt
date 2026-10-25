@@ -1,0 +1,19 @@
+user: Hi, i need a help, i need to find a property to live, it should have 2 bed rooms and i need it in unit laundry
+assistant: Sure, i will help you, Please tell me which area do you need the property and are you looking to rent or buy?
+user: i am interested to buy the property in hayward
+assistant: Okay, Please tell me how many baths do you need in that apartment?
+user: it should have one baths.
+tool(FindHomeByArea): ok n_results=8
+assistant: okay, i found 8 nice houses for you, One of the best property is Alpine Vista Apartments and it is located at 1282 Mattox Road, price of that house is $2500000
+user: Okay, could you find me property in Pleasant Hill
+tool(FindHomeByArea): ok n_results=3
+assistant: Okay, i found a good property at Pleasant hill, Camelback North Apartments is a good apartment and it is located at 630 tempe Court, Apartment cost is $2400000
+user: It seems good to me.
+assistant: Are you interested to visit the property?
+user: Yes, i need to schedule a visit on tomorrow
+assistant: Okay, please confirm the following details: Scheduling a visit to Camelback North Apartments on march 2nd
+user: yes, you are right, Does it have a garage? Give me their phone number.
+tool(ScheduleVisit): ok n_results=1
+assistant: congratulations, Your visit to the property is scheduled,yes,it has a garage and Their phone number is 925-825-1220, shall i help you with anything more?
+user: No, thanks a lot for your help
+assistant: you are welcome, have a great day.

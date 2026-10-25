@@ -1,0 +1,32 @@
+user: I am in the mood to watch movies online.
+assistant: Is there any particular type of movie you like?
+user: I want to see a Comic movie.
+tool(FindMovies): ok n_results=5
+assistant: Would you want to see Chhichhore, Good Boys or My Big Fat Greek Wedding?
+user: Can you suggest something else? I would like to see Scientific fiction especially with Donnie Keshawarz in it.
+tool(FindMovies): ok n_results=1
+assistant: I can recommend you 1 movie called Ad Astra.
+user: I would love Ad Astra.
+assistant: Shall I be of any other help?
+user: I would love to see some attractions.
+assistant: What place do you want me to look for attractions?
+user: I want to see attractions in Paris, France.
+tool(FindAttractions): ok n_results=10
+assistant: I think you should see American Church in Paris which is a Place of Worship.
+user: Fantastic. Can you look for the songs?
+tool(LookupMusic): ok n_results=10
+assistant: I can show you 10 songs. Would you like Drunk Me by Mitchell Tenpenny in the album Telling All My Secrets?
+user: What genre of music is it and what was the year of the release?
+assistant: The genre is Country and it came out in 2018.
+user: Yeah that is it and I want the song played on the speaker outside.
+assistant: So do you confirm that you want the song Drunk Me played in Patio?
+user: Yeah that is right.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you have fun with the music.
+user: I want you to play the movie you found.
+assistant: So do you confirm that you want Ad Astra played with English subs?
+user: Sure go ahead.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: Thank you, that will be all.
+assistant: Have a wonderful day!

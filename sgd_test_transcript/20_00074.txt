@@ -1,0 +1,32 @@
+user: I'd like to search for a rental vehicle.
+assistant: What place would you like to rent the vehicle from?
+user: I am searching for vehicles inside Las Vegas.
+assistant: When would you like to pick up the vehicle? When do you wish to begin renting, and how long do you need it until?
+user: I'd like to pick it up at morning 9 the day after tomorrow, and I require it until next Thursday.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 vehicles available. There is a lovely Sedan Audi A8 available at Union Plaza.
+user: What is its price per day?
+assistant: The price is $27.00 each day.
+user: That sounds perfect.
+assistant: Would you like to reserve the vehicle?
+user: Yeah, but perhaps later.
+assistant: Could I assist with something else?
+user: I'd like to look for a residence to live in.
+tool(SearchHouse): ok n_results=7
+assistant: There is a lovely place situated in 1215 South Las Vegas Boulevard with a 3.7 rating.
+user: Could I receive the phone number for this location?
+assistant: The contact number is +1 702-489-7500.
+user: Do you have alternative residences?
+assistant: There is a lovely residence situated at 1236 South Las Vegas Boulevard with a 4.3 rating.
+user: Are there some alternative residences? I require laundry service.
+tool(SearchHouse): ok n_results=5
+assistant: There is a lovely residence situated at 129 North 8th Street with a 3.3 rating.
+user: This residence is lovely; could you book the rental vehicle you recently discovered for me?
+assistant: Would you like to include insurance?
+user: I do not require insurance.
+assistant: Please verify the following information: you are picking up the sedan vehicle from Union Plaza on MArch 3rd at 9 am with a drop-off day being March 7th.
+user: Yeah, that's fine.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: Thank you for your assistance; that is all.
+assistant: Have a pleasant afternoon.

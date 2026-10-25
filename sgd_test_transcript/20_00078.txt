@@ -1,0 +1,23 @@
+user: Can you arrange a house for me to stay?
+assistant: Can you please mention the city you wish to stay at?
+user: I want one in Paris, France.
+tool(SearchHouse): ok n_results=10
+assistant: There you can stay at 1 Rue Bayard, 75008 with 4.5 rating.
+user: Do they have laundry service? Please give the phone number?
+assistant: You can avail of laundry service. Phone number is +33 1 53 75 62 62.
+user: That will be the right one.
+assistant: What about getting reservation there?
+user: Surely, try to get it.
+assistant: please give the date of check-n, check out and number of people to stay.
+user: We will be 2 people. We will check in on march 7th of March and check-out on March 12th.
+assistant: Please verify you request. You need a house in Paris for 2 people from March 7th to March 12th.
+user: Yes, your are right.
+tool(BookHouse): ok n_results=1
+assistant: The reservation is successful.
+user: What about attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: You can enjoy out of 10 attractions there. One is American Church in Paris, which is a place of worship.
+user: That will be fine, thank you.
+assistant: What else can I do for you?
+user: No, thats all.
+assistant: thank you giving opportunity to help you. Meet again.

@@ -1,0 +1,26 @@
+user: i have some leisure time , i have a plan to visit some places. will you show me some cool attractions to visit in Berlin?
+tool(FindAttractions): ok n_results=10
+assistant: What about Alte Nationalgalerie which is a museum?
+user: ok that's cool, whether any other attractions is there other than this?
+assistant: what about Altes Museum, which is a good Museum?
+user: okay that's great. I need to find a house to stay over there.
+tool(SearchHouse): ok n_results=9
+assistant: there is a nice house located at Alt-Moabit 99, 10559. the rating is 4.4.
+user: Whether any other houses available? i need it for 2 people with laundry service.
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 houses available as per your need. there is a nice house locatd at Alt-Reinickendorf 4-5, 13407. the rating is 3.6.
+user: That house is great.
+assistant: Whether i need to make a reservation for this house?
+user: No Need , not for now.
+assistant: whether i need to do anything else?
+user: Will you find a round trip flight to get there? i need to fly with United AIrlines. I have to plan to start my travel on day after tomorrow.
+assistant: In which day you want to take the return flight?
+user: Return flight need to be on 10th of March.
+assistant: In which city you want to depart from?
+user: Please check for flights from Chi-town.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flights. FLight name is United airlines. The onward flight takes off at 9:20 pm ,which is a direct flight. the return flight takes off at 10:30 pm. the ticket costs $372.
+user: Is it for 3 people ? whether this is a Economy class ticket?
+assistant: It is for 1 travellers which is a Economy -class seat.
+user: ok that's great. that's all i need
+assistant: Have a wonderful day.

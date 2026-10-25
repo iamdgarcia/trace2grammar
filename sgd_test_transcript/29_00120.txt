@@ -1,0 +1,39 @@
+user: Can you find me something interesting to do around NYC on the 14th of March.
+assistant: What kind of events are you looking for?
+user: I love Broadway.
+tool(FindEvents): ok n_results=10
+assistant: Acting For Teens is a popular event taking place at 520 8th Ave. - Personal Valet Parking. The event takes place on March 14th at 4:30 pm.
+user: Are there other events? I want to find something around Seattle, WA.
+tool(FindEvents): ok n_results=10
+assistant: Beatleconcert is a popular event taking place at 12th Avenue Arts on March 14th at 5 pm.
+user: Where is the venue at?
+assistant: The venue is located at 1620 12th Avenue.
+user: That sounds good.
+assistant: Anything else I can do for you?
+user: I need to find a house for 2 people with laundry service. I want a rating of 4.0 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses available. I found a house rated 4.0 at 1000 1st Avenue.
+user: What is the phone number?
+assistant: The contact phone number is +1 206-957-1000.
+user: That house sounds wonderful.
+assistant: Do you want to make a reservation?
+user: No, not now. I want to find a bus there.
+assistant: Are you leaving on March 14th? Where do you plan to leave from?
+user: I'm leaving from Portland, OR on the 3rd.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses. There's a bus departing at 7 am for $30.
+user: What station does it leave form?
+assistant: It leaves from SW Arthur & 1st.
+user: Are there any other buses?
+assistant: There's a bus leaving at 11:20 am for $29.
+user: What station does it leave from?
+assistant: It also leaves from SW Arthur & 1st.
+user: Sounds good to me.
+assistant: Anything else I can do for you?
+user: I want to purchase three tickets to the event.
+assistant: Please confirm: 3 tickets for Beatleconcert on Seattle on March 14th.
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservations have been made.
+user: Thanks so much.
+assistant: Have a wonderful rest of your day.

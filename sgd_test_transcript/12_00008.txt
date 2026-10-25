@@ -1,0 +1,39 @@
+user: I'm going to be visiting Long Beach and am hoping to get bus tickets.
+assistant: I can help you with that. How many tickets will you need and where are you traveling from?
+user: There are four of us going. We are going to meet in Fresno, CA and go from there.
+assistant: Ok, what time do you want to leave?
+user: We are hoping pretty early, probably around 9 am.
+assistant: What day will you be heading out?
+user: We are leaving on Thursday next week.
+assistant: OK, would you like to make the bus reservation for 4 leaving Fresno at 9 am on March 7th and arriving in Long Beach?
+user: Yes, that sounds correct? Does the bus have one-stop?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus is traveling direct and the ticket is confirmed.
+user: Ok thanks. I also need to rent a car once I get there.
+assistant: Ok, will you be picking the car up on March 7th?
+user: No, actually I won't need it until the 8th of March.
+assistant: OK, will you be picking it up in Long Beach? I also need to know what time you want to pick it up and when you'll be returning it.
+user: Yeah, Long Beach will work. I would like to pick it up about six in the evening and I'll return it on the 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available. There is an Alfa Romeo Stelvio which is a really nice SUV at the LGB Airport.
+user: It sounds nice! How much does it cost?
+assistant: The cost for this SUV is $46.00 per day.
+user: Is there anything a little less expensive?
+assistant: Sure, there is an Audi A8 Sedan available at LGB Airport.
+user: How much is that car?
+assistant: It will be $33.00 per day.
+user: Maybe, is there anything that is not at the airport? I'd rather pick it up somewhere smaller.
+assistant: Yes, there is a downtown station that you might like. They have a Buick Regal Sportback Sedan available.
+user: That sounds perfect!
+assistant: Would you like to book the car now?
+user: Yes, please make the reservations.
+assistant: Alright, would you like to add insurance?
+user: No, I think my personal insurance covers rentals.
+assistant: Ok, please confirm: You will be picking up a Sedan at Downtown Station on March 8th at 6 pm and dropping it off on March 12th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: The reservations have been made.
+user: Thanks so much for helping.
+assistant: No problem, do you need anything else today?
+user: No, that's all I need for now.
+assistant: Ok, I hope you have a great day.

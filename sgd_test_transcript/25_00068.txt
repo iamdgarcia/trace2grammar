@@ -1,0 +1,34 @@
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=4
+assistant: I found an alarm for 8 am with name Commute.
+user: Ok, that sounds right.
+assistant: Did you want to add another alarm?
+user: No, not right now. I'd also like to find a restaurant there.
+assistant: Where did you want me to look in?
+user: I'd like something in San Jose.
+assistant: What type of food were you looking for?
+user: I'd like something Cambodian.
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10 restaurants for you. Erawan Thai Cuisine is a nice restaurant in San Jose.
+user: That sounds good. I'd like to book a car there.
+assistant: When did you want to start the rental?
+user: I'd like it starting Wednesday next week.
+assistant: When did you want to pick the car up?
+user: I'd like to pick it up at 10:30.
+assistant: Did you want SUV, Sedan, or something else? Where did you want to pick up the car and until when did you need it?
+user: I'm looking for a Hatchback. I'd like to pick it up at Intercity Terminal and I will need it till the 10th.
+assistant: Did you wish to add insurance?
+user: I will not need insurance.
+assistant: Please confirm you're picking up a Hatchback car from Intercity Terminal on March 6th at 10:30 am and dropping it off on March 10th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked.
+user: Could you help me share the location?
+assistant: Who did you want to share it with and what address: 5945 Almaden Expressway #150, Intercity Terminal, or something else?
+user: I'd like to share 5945 Almaden Expressway #150 with Judy.
+assistant: Please confirm you're sharing 5945 Almaden Expressway #150 with Judy.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you, that was helpful. That's all I need for now.
+assistant: Have a great day!

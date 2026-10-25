@@ -1,0 +1,19 @@
+user: Please help me to find a therapist in Sausalito. I prefer Psychologist.
+tool(FindProvider): ok n_results=1
+assistant: Do you want to meet Richard J. Leary, a Psychologist at Sausalito.
+user: It is good.
+assistant: Can I make an appointment?
+user: It may be later. I wish to find the weather there on 5th of March.
+tool(GetWeather): ok n_results=1
+assistant: The temperature is 82 degree Fahrenheit and 27 % chance of rain.
+user: Get back to the therapist appointment. It should be at 10:15 am.
+assistant: Kindly ensure that, on March 5th appointment is confirmed with Richard J. Leary at 10:15 am.
+user: No. The time should be at 11:15.
+assistant: Kindly ensure that, on March 5th appointment is confirmed with Richard J. Leary at 11:15 am.
+user: Yes. it is good. What is their contact address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is done. You will get the confirmation email later. Their contact address is 630 Drake Avenue and their phone number is 415-339-8814.
+user: Thank you so much. I appreciate your efforts.
+assistant: Do you need any other help?
+user: No. Thank you so much. I appreciate your efforts.
+assistant: Happy to help you.

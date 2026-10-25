@@ -1,0 +1,27 @@
+user: I'm bored. Please find something interesting for me to do.
+assistant: OK. In which city?
+user: Let's find something around LA.
+assistant: Is there a specific event type you'd like?
+user: I'd like a Music event.
+tool(FindEvents): ok n_results=10
+assistant: I'd recommend Ain Gordon at Ralph Freud Playhouse, on March 9th at 7 pm.
+user: OK. What is the ticket price?
+assistant: Tickets are $60.
+user: Sounds perfect!
+assistant: Would you like me to get you tickets for this event?
+user: No, not at the moment. Now please find me a hotel in the area.
+tool(SearchHotel): ok n_results=10
+assistant: I would recommend a very nice 3 star hotel, the Ac Hotel By Marriott Beverly Hills.
+user: Sounds perfect!
+assistant: Do you want me to place a reservation for you?
+user: No, not at the moment.
+assistant: Is there anything else I could do for you?
+user: I'd like to get two tickets for the event we were talking about.
+assistant: Can you please confirm that you want me to get you 2 tickets to Ain Gordon in Los Angeles on March 9th?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully booked your tickets. Enjoy!
+user: Thanks a lot for everything!
+assistant: Is there anything else I could help you with?
+user: No, not at the moment. Thanks a lot!
+assistant: My pleasure. Have a nice day!

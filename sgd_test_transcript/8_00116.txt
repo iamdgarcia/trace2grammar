@@ -1,0 +1,18 @@
+user: Would you find me a train?
+assistant: What date would you like to travel on and what city are you leaving from?
+user: Find tickets for 7th of March from San Diego.
+assistant: What city will you go to?
+user: I'm going to LAX.
+tool(FindTrains): ok n_results=10
+assistant: The flight will leave at 6:10 am and costs $56.
+user: Do you have any other trains that will work?
+assistant: How about one that leaves at 6:40 am and costs $52?
+user: Sounds good. Book me the train tickets.
+assistant: How many tickets would you like? Is there travel insurance?
+user: I'd like 1 seat on economy.
+assistant: Could you confirm that you want to book a ticket on the train departing from San Diego and going to Los Angeles on March 7th at 6:40 am for 1? There is trip insurance and it's a value ticket.
+user: That works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have made the reservation successfully.
+user: Thank you, that was a great help. That's all that I needed.
+assistant: See you later.

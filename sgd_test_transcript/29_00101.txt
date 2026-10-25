@@ -1,0 +1,32 @@
+user: Would you find me something interesting to do?
+assistant: Do you like any particular category? You can say music, theater, or something else.
+user: I'm into musical performance.
+assistant: What city should I seach in?
+user: Find me something around NYC.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events that should fit your needs. What about Abbi Jacobson? This event is taking place at Kaufmann Concert Hall on March 11th starting at 7:30 pm.
+user: Where is the venue located?
+assistant: The venue is 1395 Lexington Avenue.
+user: Sounds good to me.
+assistant: Would you like to purchase tickets for this event?
+user: Maybe later. I would like to find a house to stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 houses available for your query. How about this house that's rated 4.4 at 100 Greenwich Street?
+user: That house sounds good.
+assistant: Shall I make a reservation there?
+user: Not right now.
+assistant: Could I do anything else for you?
+user: How about buses going there for two? I will leave next Tuesday and do not mind if it's a direct bus or not.
+assistant: Where will you depart rom?
+user: I will depart from Washington.
+tool(FindBus): ok n_results=7
+assistant: What about the bus leaving at 6:20 am? It's $38.
+user: That sounds nice. I want to buy tickets to the event you mentioned.
+assistant: Could you confirm that you want to book tickets for Abbi Jacobson and that you want 2 tickets in your reservation for March 11th in New York?
+user: That's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been confirmed. Enjoy your time there.
+user: What is the price for one ticket?
+assistant: One ticket is $60.
+user: Thank you for helping. That's all I needed.
+assistant: Have a good day.

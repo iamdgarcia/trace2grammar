@@ -1,0 +1,20 @@
+user: Can you find me a Psychologist in Novato?
+tool(FindProvider): ok n_results=5
+assistant: Search revealed 5 results. Would you like Christina M. Walker? She is a Psychologist in Novato.
+user: That works for me. Can you get me an appointment for 3:15 in the afternoon?
+assistant: What date do you want to go?
+user: I want to go on March 12th.
+assistant: You want an appointment with Christina M. Walker for 3:15 pm on March 12th, correct?
+user: That is right. What is their location and contact number?
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 250 Bel Marin Keys Boulevard and can contact them at 415-887-8329. Unfortunately, I couldn't schedule your appointment. Would you like a 3:30 pm appointment with Christina M. Walker on March 12th?
+user: Yes, that is fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is booked and you will get an email confirming your booking.
+user: Thanks a bunch. Can you find me some movies that I would like?
+tool(FindMovies): ok n_results=10
+assistant: Search revealed 10 results. Chhichhore received a rating of 60 of 100. Do you like that?
+user: That is perfect.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: I am glad to help you.

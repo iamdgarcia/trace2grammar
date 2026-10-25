@@ -1,0 +1,30 @@
+user: Would you look for a therapist?
+assistant: What city should I search in and what sort of therapist do you need?
+user: Find me a Family Counselor in Campbell.
+tool(FindProvider): ok n_results=6
+assistant: How about Beth Kane? They are a Campbell Family Counselor.
+user: Do you have any other alternatives? Find someone in Sausalito. I'm in need of a Psychologist.
+tool(FindProvider): ok n_results=1
+assistant: I have 1 therapists that should work. How about Richard J. Leary, who is a Psychologist in Sausalito?
+user: What is the phone number and address?
+assistant: Call them on 415-339-8814. They are located at 630 Drake Avenue.
+user: That sounds good. Would you book me an appointment? The appoinment time is 17:30.
+assistant: What date should I make the appointment?
+user: Please make me an appointment for the 9th.
+assistant: Could you confirm that I should book an appointment with Richard J. Leary at 5:30 pm on March 9th?
+user: That sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked successfully. You will get an email confirmation soon.
+user: Would you grab me a cab?
+assistant: Is there a sort of ride that you prefer?
+user: I would prefer a luxury ride.
+assistant: How many seats would you like?
+user: I'll be in a group of 1.
+assistant: So you would like ea ride to 630 Drake Avenue and you need 1 seat on a luxury ride. Is that right?
+user: Sounds good for me.
+tool(GetRide): ok n_results=1
+assistant: I have booked your ride. The cab is coming.
+user: Thanks for helping.
+assistant: Would I be able to help with something else?
+user: No, thank you for helping.
+assistant: Have a good day.

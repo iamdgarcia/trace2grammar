@@ -1,0 +1,37 @@
+user: Will you help me find something interesting to do around Las Vegas?
+assistant: Will you have a preference for the type of events?
+user: I like Songs a lot.
+tool(FindEvents): ok n_results=1
+assistant: I have found 1 event you'll like. Adam London is a popular choice and taking place at The D Casino & Hotel March 3rd 7:30 pm.
+user: That is great. What about some buses going to there?
+assistant: Where are you departing from?
+user: I am departing from Los Angeles.
+assistant: Will you plan to leave on March 3rd?
+user: I will leave the 1st of this month.
+tool(FindBus): ok n_results=4
+assistant: I have 4 buses for you. What about he one departing 8:50 am costing $36?
+user: What number of stops does the bus have and which station is it leaving from?
+assistant: The bus is direct and leaving from North Hollywood Station.
+user: That sounds nice. I'd like to find a round trip flight there and any class tickets will work for me.
+assistant: Will you be leaving on March 1st?
+user: I will start my travel the 3rd of March.
+assistant: What day do you want to make the return flight?
+user: I'm returning the 10th of this month.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I have 4 flights for you. Do you wish to fly with American Airlines. The onward flight leaves 8:45 pm with a layover and the returning flight is taking off 10:25 am costing $160.
+user: Will there be anything else?
+assistant: Do you wish to fly with Delta Airlines taking off at 4:35 pm for a direct flight and returning at 8 pm costing $118 per ticket.
+user: When will the flight arrive at my destination and is it for 2 people?
+assistant: It will be for 1 traveler arriving at 5:45 pm.
+user: That sounds great and could you seek hotels in that area too?
+tool(SearchHotel): ok n_results=7
+assistant: There's a hotel called Best Western Plus Las Vegas West a 3 star hotel.
+user: That sounds good.
+assistant: Do you wish to reserve the hotel?
+user: I don't want the reservation now, but I want to purchase three tickets to the event you found.
+assistant: Please confirm details for 3 tickets for Adam London March 3rd in Las Vegas.
+user: Yes, that will work for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time.
+user: Thanks for all the help and that is all I need.
+assistant: Have a nice day.

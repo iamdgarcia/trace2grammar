@@ -1,0 +1,47 @@
+user: I am looking for a Family Therapist.
+assistant: Which city do you want me to search in?
+user: I am looking for a Family Therapist Campbell.
+tool(FindProvider): ok n_results=6
+assistant: There are 6 therapists you may like. How about Beth Kane who is a Family Counselor located in Campbell?
+user: Okay, That sounds good to me. I would like you to book me an appointment with them for March 1st.
+assistant: What time do you want me to book the appointment?
+user: I would like to book the appointment at half past 12 in the afternoon.
+assistant: Please confirm: You want me to book an appointment with Beth Kane at 12:30 pm on March 1st.
+user: Yes, That is correct. Find me their address.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, Due to some reasons I could not book the appointment. Can I assist you with anything else?
+user: Can you please try again with time as 11:30 am?
+assistant: Please confirm: You want me to book an appointment with Beth Kane at 11:30 am on March 1st.
+user: Yes, That sounds fine.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, Due to some reasons I could not book the appointment. Can I assist you with anything else?
+user: Can you please try again on the 12th?
+assistant: Please confirm: You want me to book an appointment with Beth Kane at 11:30 am on March 12th.
+user: Yes, That sounds fine.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment and you will shortly receive a confirmation mail.
+user: Okay. Make a payment request from Peter for me please.
+assistant: How much fund would you like to request?
+user: I want to request one hundred and forty nine bucks.
+assistant: Please confirm: You want me to make a payment request of $149 from Peter in public.
+user: Yes, That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made the payment request.
+user: Thank you so much! Now, Find me a restaurant there.
+assistant: What type of food do you prefer?
+user: I am looking for a restaurant which serves Freshwater fish.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 restaurants you may like. How about Capers Eat & Drink located in Campbell?
+user: Okay, That sounds nice to me.
+assistant: Do you want me to reserve a table here?
+user: Yes, Please reserve a table there.
+assistant: What should I put the time for the reservation?
+user: Put the time as 1:45 in the afternoon.
+assistant: Please confirm: You want me to make a reservation at Capers Eat & Drink located in Campbell for 2 people for 1:45 pm on March 12th.
+user: Yes, That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation.
+user: Thank you for your help!
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

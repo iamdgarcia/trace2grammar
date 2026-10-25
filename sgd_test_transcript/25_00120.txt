@@ -1,0 +1,36 @@
+user: Show me alarms that I have set.
+tool(GetAlarms): ok n_results=2
+assistant: Sure, you currently have 2 alarms set. One of the alarms is for an Event at 3 pm.
+user: Ok, thanks. I need to find a restaurant near the event.
+assistant: I can help with that. Please tell me the location that you would like to search in and if you have any preferences for type of food.
+user: I am going to be in Rio Vista so anywhere in that vicinity will work. I have really been craving a place that makes great burgers.
+tool(FindRestaurants): ok n_results=1
+assistant: Alright, The Point Restaurant in Rio Vista is 1 restaurant that you might be interested in.
+user: Yeah, that sounds good. I heard they have good burgers.
+assistant: Would you like to make a reservation?
+user: No, I think I'll just hope there is not too long of a wait when I get there.
+assistant: Sure, do you need help with anything else today?
+user: Yeah, I need to rent a car for while I'm there.
+assistant: Ok, where and when would you like to pick up the car? Also, do you have a preference for type of car?
+user: I would love a hatchback. They work out great for me. I'll be picking it up on the 8th at Gatwick International Airport.
+assistant: When will you be returning the car?
+user: I'll be leaving on the 11th, so I'll return it that day.
+assistant: Do you know what time you will be picking up the car?
+user: Yes, I hope to pick it up at about 09:30.
+assistant: Ok, would you like to add the optional insurance?
+user: No, I think my personal car insurance will cover it.
+assistant: Alright, can you please confirm the details of the car rental? You will be picking up a hatchback at 9:30 am on March 8th at Gatwick International Airport and returning the car on March 11th. You are declining the insurance.
+user: Oh, silly me. I actually need it from Heathrow International Airport on the 6th of this month.
+assistant: Ok, so you will be picking the car up at Heathrow International Airport on March 6th.
+user: Yes, that will work. Please tell me what the model of the car is and how much the cost is per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car is a Nissan Qashqai and rents for $28.00 per day. The car reservation has been made.
+user: Thanks so much for all of your help. One more thing, can you share the location?
+assistant: Would you like to share the address for Heathrow International Airport? And with whom?
+user: I'm sorry, I need to share the address 120 Marina Drive with Carolyn.
+assistant: Sure, you are sharing the location 120 Marina Drive with Carolyn. Correct?
+user: Yes, that sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: Ok, the location has been shared.
+user: Thanks so much. I don't need anything else right now.
+assistant: Ok, I hope you have a great day!

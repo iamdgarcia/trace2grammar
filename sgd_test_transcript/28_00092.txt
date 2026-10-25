@@ -1,0 +1,36 @@
+user: Will you find me some events that don't have entry fees?
+assistant: What city should I search?
+user: look for attractions in NYC.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you may enjoy. Alley Pond Park is a park that you may like.
+user: Is it a park that is friendly for kids?
+assistant: Yes, it's a good place for children to visit.
+user: Okay, sounds good. Will you find me a rental car for Monday next week that I can pick up in afternoon 12:30?
+assistant: How long will you keep it? Will you pick it up in New York?
+user: I will need to have it until Friday next week and that sounds great.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV Alfa Romeo Stelvio that is a good car and can be found at Port Authority Station.
+user: What is the daily rental cost?
+assistant: The price is $51.00 daily.
+user: I like how it sounds so I'd like to reserve it.
+assistant: Would you like to get additional insurance?
+user: No, insurance isn't necessary.
+assistant: You will be picking up an SUV car from Port Authority Station on March 4th at 12:30 pm and returning on March 8th. You do not want to add insurance. Are these details correct?
+user: No, I want to get the extra insurance.
+assistant: you will be returning the car on March 8th and want to add insurance. Is that right?
+user: Yep, that's right.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your rental car.
+user: I appreciate all the help. Also, can you share the location with me?
+assistant: Which person do you want to share it with? Is the share address Alley Pond Park, Port Authority Station or another?
+user: Share Port Authority Station with Samuel.
+assistant: You have opted to share the Port Authority Station address with Samuel. Is that right?
+user: No, share it with Lawrence.
+assistant: You are sharing your address location of Port Authority Station with Lawrence. Is that correct?
+user: Yep, that is great.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successful in sharing.
+user: Thank you, that helps me so much.
+assistant: Would you like anything else?
+user: No, that's been tons of help.
+assistant: Have a fantastic day!

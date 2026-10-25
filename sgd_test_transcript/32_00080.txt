@@ -1,0 +1,22 @@
+user: I'm looking for a three bedroom place in Menlo Park.
+assistant: Do you want to rent or buy? How many baths would you like?
+user: I want three baths. I'm looking to rent.
+tool(FindHomeByArea): ok n_results=1
+assistant: Country Sharon Apartments has places for rent. They are located at 2225 Sharon Road. They start at $4,050.
+user: Sounds great. I'd like to visit the property later today.
+assistant: Please confirm: scheduling a visit to Country Sharon Apartments on March 1st.
+user: Yes, thank you.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Can you share the location with Christopher?
+assistant: Please confirm: sharing location 2225 Sharon Road with Christopher.
+user: Yes, thank you.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you. Can you find me a cab for 1? Pool ride is good.
+assistant: Please confirm: pool ride for 1 to 2225 Sharon Road.
+user: Yes, sounds good. How much is it?
+tool(GetRide): ok n_results=1
+assistant: Your cab is on the way. It will be $17.93.
+user: Thanks, that's all.
+assistant: Have a great day!

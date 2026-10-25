@@ -1,0 +1,33 @@
+user: Can you find me a rental car?
+assistant: Where will you be picking up the rental car from?
+user: Find me a car in London.
+assistant: What will be your pick up time?
+user: I will be picking it up at half past 10 in the morning.
+assistant: What is your pick up date?
+user: On this Sunday.
+assistant: When is your drop off date?
+user: The 9th of this month.
+tool(GetCarsAvailable): ok n_results=7
+assistant: How about a nice Audi A8 Sedan? It is available at Heathrow International Airport.
+user: How much will it cost per day?
+assistant: It will be $30.00 per day.
+user: That sounds good.
+assistant: Would you like to reserve the car?
+user: Yes, but not now. Maybe later.
+assistant: Can I help you with something else?
+user: I want to reserve one event ticket.
+assistant: Can you give me the following information: What type of event? What location should I search? What dates do you prefer?
+user: How about Murder In The Cathedral? Search for something in Chicago for March 12th.
+assistant: Confirming that you want to book 1 ticket for Murder In The Cathedral taking place in Chicago on March 12th?
+user: Yes, that works. Where is the venue for this event?
+tool(BuyEventTickets): ok n_results=1
+assistant: The event is being held at the Poetry Foundation. Your reservation is confirmed. Have a great time!
+user: Can you reserve that rental car for me?
+assistant: Would you like to add insurance?
+user: No, I don't need insurance.
+assistant: Confirming that you will pick up a Sedan rental car from the Heathrow International Airport on March 3rd at 10:30 am. You will be dropping it off on March 9th. You do not require insurance. Is this information correct?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been successfully reserved.
+user: Thanks for your help. That's all I need.
+assistant: You're welcome. Have a good day!

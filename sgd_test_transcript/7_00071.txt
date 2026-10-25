@@ -1,0 +1,16 @@
+user: I'm looking for a new place to live. Can you help me find something?
+assistant: Okay no problem. What area are you looking to stay in? Are you looking to rent or buy? Also, how many baths do you need?
+user: I'm looking for a place to rent out in San Jose. I only need one bath.
+assistant: Okay. How many bedrooms?
+user: I need a place with 2 bedrooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: Okay, I've found a nice property for you at the Almaden Lake Apartments. They are located at 978 Almaden Lake Drive. Rent will be $2,750.
+user: Okay that sounds great. Can you help me schedule a visit to see the property?
+assistant: Sure thing. What date would you like to visit?
+user: Can you set an appointment for the 10th of March?
+assistant: Okay, before I get start please confirm the following details. You are scheduling a visit to Almaden Lake Apartments on March 10th. Correct?
+user: Yes, that's correct. Also, can you find out if they have laundry service?
+tool(ScheduleVisit): ok n_results=1
+assistant: Okay, your visit has been scheduled. Unfortunately, they do not have laundry machines at the house.
+user: Okay, thanks a lot. That's all for today.
+assistant: My pleasure. Have a great day.

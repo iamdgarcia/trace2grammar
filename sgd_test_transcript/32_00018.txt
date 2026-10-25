@@ -1,0 +1,31 @@
+user: I want to find a therapist in Santa Rosa, can you search for one?
+assistant: What type of therapist are you searching for, for example a Family Counselor, Psychiatrist, or another type?
+user: I would like to find a Psychologist in Campbell.
+tool(FindProvider): ok n_results=5
+assistant: I found 5 therapist that meet those criteria. Bacheler Janet is a Psychologist in Campbell.
+user: OK, can we also search for a Family Counselor?
+tool(FindProvider): ok n_results=6
+assistant: Beth Kane is a Family Counselor in Campbell.
+user: Could you find any other therapists?
+assistant: Flores Michelle M is another Family Counselor in Campbell.
+user: What is the phone number?
+assistant: The phone number is 408-425-5730.
+user: OK, and what is the address?
+assistant: The address is 251 Llewellyn Avenue.
+user: OK, that will work. Can you book an appointment for afternoon 2:45?
+assistant: What date would you like the appointment for?
+user: I would like it for the 11th of March, please.
+assistant: You would like to book an appointment with Flores Michelle M at 2:45 pm on March 11th, is this correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, I was not able to book an appointment with Flores Michelle M for that time. Would you like to try booking an appointment at 2:30 pm on March 11th?
+user: Yes, that will be okay.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been successfully booked. An email confirmation should reach you soon.
+user: Thank you very much, I appreciate it.
+assistant: Is there anything else I can help you with?
+user: Yes, can you recommend some movies to watch?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies for you, including The Art of Self-Defense, which has an average rating of 83 out of 100.
+user: OK, that sounds good. Thanks, that's all for now.
+assistant: Happy to be of service.

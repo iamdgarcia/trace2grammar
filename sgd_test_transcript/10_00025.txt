@@ -1,0 +1,13 @@
+user: I'd like to watch a nice movie right now. I need something with English subtitles.
+assistant: Okay, what movie would you like to watch?
+user: I'd like to check out Chhichhore.
+assistant: Okay, please confirm the following for me: Play the movie Chhichhore with English subtitles. Correct?
+user: No, actually make that Blinded by the Light with Hindi subtitles.
+assistant: Please confirm: Playing Blinded by the Light with Hindi subtitles.
+user: Yes that is correct. Can you tell me what type of movie it is and who stars in it?
+tool(PlayMovie): ok n_results=1
+assistant: It is a Drama starring Viveik Kalra. Your movie is now playing.
+user: Okay, thanks.
+assistant: Anything else I can do for you?
+user: No, that is all for today.
+assistant: My pleasure have a good day.

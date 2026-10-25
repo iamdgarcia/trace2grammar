@@ -1,0 +1,30 @@
+user: I want to go for a short trip for which I need a Train. Can you search for the suitable one?
+assistant: Yes, Where do you want to find the train?
+user: Search the one from Fresno.
+assistant: When and Where do you want to go?
+user: Find a train to go to San Fran on the 9th and I need conditionally refundable tickets.
+tool(FindTrains): ok n_results=7
+assistant: Got 7 results based on your requirement. What about a train which is going to leave at 6:50 am and the cost for the ticket is $64 in total.
+user: This is perfect and I want to travel through this train.
+assistant: What else you want me to do now?
+user: Book the tickets to the train now.
+assistant: For how many persons you need the tickets and shall I include the travel insurance?
+user: Please book 1 ticket with trip insurance.
+assistant: Please confirm to book 1 Value ticket to the train leaving from Fresno on March 9th at 6:50 am to San Francisco including trip insurance.
+user: That is confirmed to proceed. What are the stations names of origin and destination of this train?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your train tickets are booked and this train will leave from Fresno Station and reaches finally to Salesforce Transit Center.
+user: Thanks. Please find me some nice events will be held on 10th of March at Broadway.
+tool(FindEvents): ok n_results=6
+assistant: Got 6 results. How about an event like Above Ground will take place at Mojo Theatre on March 10th at 6:30 pm.
+user: That is great and thanks.
+assistant: Shall I book the tickets now?
+user: No, I will ask it later.
+assistant: Anything else you want now?
+user: Yes, I want to share a location to Olivia.
+assistant: Please confirm to share the location Mojo Theatre with Olivia.
+user: Yes, proceed as it is.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location successfully.
+user: Thanks and that's all for now.
+assistant: Have a good day.

@@ -1,0 +1,24 @@
+user: Find some songs by Little Mix on the Get Weird album.
+tool(LookupMusic): ok n_results=2
+assistant: Black Magic by Little Mix is from the Get Weird album and is 1 of 2 songs that I found.
+user: What music genre is it?
+assistant: It is under the Pop genre.
+user: What other result did you find?
+assistant: Love Me Like You by Little Mix is also on the Get Weird album.
+user: Was the song released in '19?
+assistant: No, it was released in 2015.
+user: That is perfect.
+assistant: Do you need more help?
+user: Find me a Comic movie starring Shishir Sharma on the Internet.
+tool(FindMovies): ok n_results=1
+assistant: Chhichhore is the 1 result that I did find.
+user: Chhichhore works for me. Play that song from earlier on the speaker outside.
+assistant: You wish to cast Love Me Like You to the Patio, correct?
+user: That is right. What music genre is it?
+tool(PlayMedia): ok n_results=1
+assistant: Your Pop song has started.
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=3
+assistant: There is an alarm set for 4:30 pm named Piano time and it is 1 of 3 alarms you have set.
+user: That is perfect. I don't need more help right now.
+assistant: Thanks for letting me help you.

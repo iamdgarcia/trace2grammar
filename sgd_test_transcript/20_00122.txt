@@ -1,0 +1,19 @@
+user: Hey, I'm going on a short trip. Can you help me find a house for one in London, England? It needs to have laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: Sure! There's a real nice one at 1 Addington Street with a 4.3 rating.
+user: Any other available?
+assistant: There's one with a 4.1 rating at 1 Baffin Way.
+user: Can you get me their number?
+assistant: Their number is +44 20 7517 1100.
+user: Sounds great. Can you book it for me? I'll check in on March 9th and check out on the 14th.
+assistant: So you want me to book this house in London, for 1 guest, checking in on March 9th and checking out on March 14th. Is that correct?
+user: Yes, all correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was successful.
+user: What will be the total cost?
+assistant: $400 dollars in all.
+user: Thanks a lot. Can you help me find something to do around there?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, I found 10 attractions you may like. The 30 St Mary Axe (The Gherkin) is a great Historical Landmark.
+user: Okay, that's all. Thanks a lot.
+assistant: Enjoy your trip!

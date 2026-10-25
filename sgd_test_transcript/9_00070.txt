@@ -1,0 +1,16 @@
+user: I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
+assistant: From which place you want to watch the movie?
+user: I want to watch it in Dublin.
+tool(FindMovies): ok n_results=3
+assistant: Got 3 results and what about Good boys, Hustlers and Saaho?
+user: Hustlers is great and can you purchase tickets for me?
+assistant: Yes, on which date you want to watch it and at what time. Also let me know the number of tickets required by you to purchase the same.
+user: I need 2 tickets for the movie on Tuesday next week at 11 o"clock in the night.
+assistant: Let me whether you need any special show or normal?
+user: I like to prefer with regular one.
+assistant: I need your confirmation to purchase 2 tickets for the regular show to the movie Hustlers on March 5th at 11 pm in Dublin.
+user: That is correct. Let me know the type of movie and location of the theater.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, I could not book the tickets now. How can I help you further?
+user: No, thanks. That's all now.
+assistant: Have a great day.

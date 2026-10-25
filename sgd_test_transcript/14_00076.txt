@@ -1,0 +1,15 @@
+user: I want to find a movie to see
+tool(FindMovies): ok n_results=10
+assistant: How about the perfect rated Riot Girls, it got 100!
+user: That's perfect, literally! Also find me a song from the album The Mountain from maybe one years ago
+tool(LookupMusic): ok n_results=2
+assistant: How about Burning Man by Dierks Bentley off his album The Mountain
+user: Yes that's a good one, play it on the patio device
+assistant: Sure, confirming you want to play Burning Man on the Patio
+user: Yes that's right
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song
+user: Thanks so much
+assistant: What else can I help with?
+user: For now we're all set, thanks
+assistant: Thank you too

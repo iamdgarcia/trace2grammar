@@ -1,0 +1,35 @@
+user: I wish to search for a direct bus for 1 person.
+assistant: Where do you want to go?
+user: I wish to go to SFO.
+assistant: From where are you leaving? When will you leave?
+user: I will leave from Sacramento, CA on day after tomorrow.
+tool(FindBus): ok n_results=10
+assistant: What is your opinion about a bus start from 7:40 am? The price is $20.
+user: What is the name of the starting station?
+assistant: It starts from 65th Light Rail Station.
+user: What is the name of the reaching station?
+assistant: It will reach at Transbay Terminal.
+user: It is good.
+assistant: Shall I get the tickets?
+user: It can be done later. I need some attractions without an entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: Your check out is Alcatraz. It is a Historical Landmark.
+user: Is it a child-friendly?
+assistant: It is nice place to rake your kids.
+user: Nice. Please get the bus tickets now.
+assistant: Kindly ensure that, On March 3rd, 1 ticket is booked in the bus starting from Sacramento to San Francisco at 7:40 am. You don't have extra luggage.
+user: Yes. It is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is booked.
+user: Thank you so much for your help. I am looking for a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: There is a hotel Amsterdam Hostel San Francisco with 1 star.
+user: Do you find some other hotel that matches my criteria?
+assistant: There is a Argonaut Hotel with 4 stars.
+user: What is their contact address? Whether the smoking is permitted?
+assistant: Nope. Smoking is prohibited in the property. Their contact address is 495 Jefferson Street.
+user: Do you find some other hotel that matches my criteria? I am looking for 3 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There is a Bei Hotel San Francisco with 3 stars.
+user: It is nice. That is what I want.
+assistant: Bye. Have a nice day.

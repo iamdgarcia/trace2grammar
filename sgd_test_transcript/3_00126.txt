@@ -1,0 +1,20 @@
+user: I need to have a car rented, more specifically I would like a Hatchback one for March 13th, and for it to be in Warsaw.
+assistant: From when will you be renting the car, and at what time do you want to have the car?
+user: I will be needing to rent the car from Thursday next week, and for the pick up time I want it to be afternoon 1:30.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 cars which you might consider. One good cars which can be picked up at Warsaw Chopin Airport is a Hatchback model of Mazda 3.
+user: Can you tell me how much it will cost me per day to rent this car?
+assistant: Renting this car will be costing you $31.00 per day.
+user: Is there some other option you can suggest?
+assistant: Another good car which can be taken at Warsaw Chopin Airport, is a Hatchback of Nissan Qashqai.
+user: That seem nice. I want to have this car booked for me.
+assistant: Would you like to have insurance with the car?
+user: Actually I do not want to have the insurance.
+assistant: Can you then please confirm to me that you want to rent a Hatchback car without insurance which you will pick up from Warsaw Chopin Airport on March 7th at 1:30 pm, and that you will need it till March 13th?
+user: That is not right, because I changed my mind and I want to have insurance bought.
+assistant: Can you then once again confirm that the car you want to book is a Hatchback one and for it to also have insurance?
+user: Yes that is what I want. How much will this car cost me per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked for you, and it will be costing you $50.00 per day.
+user: I appreciate your help very much. That would be all.
+assistant: Have a wonderful time!

@@ -1,0 +1,14 @@
+user: I need a train ticket with a fully refundable feature.
+assistant: Start by giving me the city you are leaving and where you are going.
+user: I'm leaving San Fran and going to Sacramento, CA.
+assistant: What date will you need tickets?
+user: On the 9th of March please.
+tool(FindTrains): ok n_results=9
+assistant: well, there are 9 options, first up is 6:10 am and it will cost $69 total.
+user: Fine set me up with one ticket. Make sure I have trip insurance though.
+assistant: Sure to confirm: 1 ticket for a train Leaving San Francisco and heading to Sacramento. The train takes off on March 9th and leaves at 6:10 am. Your ticket will have a flexible feature.
+user: Sure, tell me what stations are involved in this ticket?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are set, You'll leave Salesforce Transit Center and will arrive at Sacramento Valley Station.
+user: That is totally ideal.
+assistant: Nice, have a safe trip.

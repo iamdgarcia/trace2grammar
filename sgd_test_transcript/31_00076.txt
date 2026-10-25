@@ -1,0 +1,35 @@
+user: I'd like to find a salon.
+assistant: In which city should I look in?
+user: I'm looking for one in San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. One nice salon is 1512 Barber Shop in San Francisco.
+user: Can you help me find something else? I'm looking for a unisex salon in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. One nice salon is 17 Jewels Salon in Oakland.
+user: Yes, that works.
+assistant: Did you want to book an appointment?
+user: Yes, I would.
+assistant: On which day did you want your appointment?
+user: I'd like to book it for today.
+assistant: For what time did you want it?
+user: I'd like it at 11 o'clock in the morning.
+assistant: Please confirm you're booking an appointment at 17 Jewels Salon on March 1st at 11 am.
+user: Yes, that is correct. What is the salon's address and contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. It is at 4801 Telegraph Avenue and its phone number is 510-653-1059.
+user: I would like to find a restaurant for a meal there that day as well.
+assistant: What type of food were you looking for?
+user: I'd like to find something California.
+tool(FindRestaurants): ok n_results=3
+assistant: I found a nice restaurant in Oakland called Dopo.
+user: Yes, that sounds good.
+assistant: Did you want to book a table here?
+user: Yes, I would like to.
+assistant: What time did you want the reservation for?
+user: I'd like it at 7 o'clock in the evening.
+assistant: Please confirm you're booking a table for 2 at Dopo in Oakland on March 1st at 7 pm.
+user: Yes, that is correct. What is the address of the place and do they have outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. They are at 4293 Piedmont Avenue and they do have outdoor seating.
+user: Thank you very much. That is all.
+assistant: Have a great day.

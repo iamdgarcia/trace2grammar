@@ -1,0 +1,25 @@
+user: Will you give me some help to find fun things to do? I love drama and want to find some things in London to do on March 14th.
+tool(FindEvents): ok n_results=10
+assistant: There is a popular event named A Right Royale Tea that is going on at Amba Hotel CHaring Cross on March 14th. It begins at 7 pm.
+user: Can you tell me where it is at and how much the ticket price is?
+assistant: The ticket price is $50 and the venue is Strand.
+user: I think that sounds cool!
+assistant: Would you like to purchase tickets to it?
+user: I might do it later on.
+assistant: Would you like some additional help?
+user: I need one room at a hotel. Can you look for 3 star hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I was able to find 10 hotels that fall into your specifications. There is a 3 star hotel with the name of Abbey Court Hotel (Hyde Park).
+user: Give me their contact number and tell me how much each night is.
+assistant: You can reach them at +44 20 7402 0281 and it is a nightly cost of $93.
+user: I think I would enjoy it so I'd like to buy tickets to the event you earlier.
+assistant: What is the number of tickets you want?
+user: I would like to get 2 tickets.
+assistant: Reserving 2 tickets for A Right Royale Tea in London on March 14th. Are these correct details?
+user: Right, that's what I want.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have verified your reservations. Have an awesome time!
+user: Thank you for all of your aid!
+assistant: Would you like help with anything else?
+user: Nope, I really appreciate it.
+assistant: Enjoy the day!

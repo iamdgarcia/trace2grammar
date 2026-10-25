@@ -1,0 +1,20 @@
+user: Help me find a therapist please.
+assistant: On which city you want to be?
+user: I need a Psychologist in Lafayette.
+tool(FindProvider): ok n_results=10
+assistant: You can try a Psychologist in Lafayette called Alissa Scanlin Psyd.
+user: Sounds very good.
+assistant: You want to buy an appointment ?
+user: Yes I would like to be at five pm on Tuesday next week.
+assistant: Book an appointment with Alissa Scanlin Psyd on March 5th at 5 pm.Is that correct?
+user: No. I changed my mind. Change please if you can for March 10th in afternoon 3:30.
+assistant: On March 10th at 3:30 pm.Is that okay for you?
+user: Yes very good.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is done.You will receive soon an email with confirmation.
+user: Tell me their phone number and the address.
+assistant: 707-371-2433 is the contact number and the address is 3468 Mount Diablo Boulevard.
+user: Thank you for your help.
+assistant: Can I still be useful to you?
+user: No.Thank you for all that you do for me.
+assistant: Happy to help!

@@ -1,0 +1,19 @@
+user: I'd like to look for several films online.
+assistant: What type of films do you enjoy?
+user: I'd love some fantasy films.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 films you might enjoy. What do you think of Labyrinth or The Lord of the Rings: The Return of the King?
+user: Labyrinth would be lovely.
+assistant: Could I assist with something else?
+user: I'd like to view the film now with subtitles in English.
+assistant: Please verify the following information: cast Labyrinth with English subtitles.
+user: Yeah, that's right. Who are the actors?
+tool(PlayMovie): ok n_results=1
+assistant: The film began to play, and the actor is Ron Mueck.
+user: What is the climate like within Berkeley on March 11th?
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for that day ought to be 83 degrees Fahrenheit with a 28 probability of raining.
+user: How much wind will there be?
+assistant: The mean wind velocity ought to be 4 miles per hour.
+user: Okay, fine. That's all; see ya!
+assistant: Have a pleasant afternoon.

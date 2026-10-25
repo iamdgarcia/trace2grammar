@@ -1,0 +1,31 @@
+user: Book me a salon.
+assistant: What city do you want me to look in?
+user: Book me a salon in Cotati.
+tool(FindProvider): ok n_results=1
+assistant: Cotati Barbershop is located in Cotati.
+user: Can you find me something else? I want a unisex salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: Atelier Salon Willow Glen is in San Jose and is 1 of 10 search results.
+user: What else do you have?
+assistant: Barba & Co. San Jose is located in San Jose.
+user: That is perfect.
+assistant: Shall I set up a session for you?
+user: No, not at the moment.
+assistant: Do you need more help?
+user: I want to watch a Biographical movie near there at 3 Below Theaters And Lounge.
+tool(FindMovies): ok n_results=1
+assistant: Search revealed only 1 result which is Fiddler: A Miracle of Miracles.
+user: Fiddler: A Miracle of Miracles works for me. What time is it playing?
+assistant: Do you wish to see it on March 4th?
+user: Yes, I want to see it then.
+tool(GetTimesForMovie): ok n_results=1
+assistant: Search revealed 1 result and it is playing at 4:30 pm at 3 Below Theaters and Lounge.
+user: That is perfect.
+assistant: Shall I buy you movie tickets?
+user: No, not right now. Get me a 11:45 salon booking for that day.
+assistant: You want a 11:45 am appointment on March 4th at Barba & Co. San Jose, correct?
+user: That is correct. What is their rating and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your session is all set up. They have a 5.0 rating and you can get in touch with them at 669-258-9601.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

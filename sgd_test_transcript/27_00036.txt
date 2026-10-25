@@ -1,0 +1,32 @@
+user: I am looking for a pleasurable activity to engage in.
+assistant: Do you have a certain location in mind?
+user: Select something in the San Fran area please.
+tool(FindAttractions): ok n_results=10
+assistant: I recommend a Historical Landmark known as Alcatraz.
+user: Good recommendation. Are there any good films playing in that zone?
+tool(FindMovies): ok n_results=10
+assistant: I have populated 10 choices for you. Three flicks I think you may enjoy are Brittany Runs a Marathon, Ad Astra and Fiddler: A Miracle of Miracles.
+user: Ad Astra would be just right for me.
+assistant: Would you like me to acquire passes for you?
+user: No thanks. I do not want to spend any money right now.
+assistant: Do you have any other needs I can help you with?
+user: Find me an interesting feature I can watch on the internet please.
+assistant: Is there a certain category you are interested in?
+user: I need to laugh. Look for a comedy please.
+tool(FindMovies): ok n_results=5
+assistant: I found 5 comedies that may be of interest. Are you interested in seeing My Big Fat Greek Wedding, Good Boys ,or Chhichhore?
+user: I have seen those shows. Can you find something starring Camilla Rutherford?
+tool(FindMovies): ok n_results=1
+assistant: Yesterday fits your stated needs.
+user: I can't make up my mind. Look for a Supernatural flick starring Ari Cohen please.
+tool(FindMovies): ok n_results=1
+assistant: IT Chapter Two may be desirable for you to view.
+user: I like IT Two. Fantastic suggestion. Is it possible to view with the subtitles in English?
+assistant: With your approval I will start IT Chapter Two. I will make sure I play the one with English Subtitles.
+user: Thank you so much. Please play the flick for me.
+tool(PlayMovie): ok n_results=1
+assistant: The show you chose has begun.
+user: What would I do without you?
+assistant: I can assist you with more needs if you like.
+user: Thank you for offering. I'm okay for now.
+assistant: Enjoy the movie.

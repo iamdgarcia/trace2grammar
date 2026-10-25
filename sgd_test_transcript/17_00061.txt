@@ -1,0 +1,16 @@
+user: Can you help me find one economy train ticket
+assistant: Sure, where are you coming from?
+user: I'm leaving Anaheim, CA
+assistant: When do you want to leave
+user: I want to leave on the 2nd please
+assistant: And heading to which city?
+user: I'll be going to Phoenix, AZ
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains including a 6:30 am train for $123
+user: Where does it leave and come from?
+assistant: It leaves from Anaheim Intermodal Center and arrives at Phoenix Union Station
+user: That's great, now find me a house to stay in
+tool(SearchHouse): ok n_results=10
+assistant: I found 1 4.6 rated place at 10 East Thomas Road!
+user: OK that's all the info I need for now, thanks
+assistant: Sure thing, let me know if I can help later!

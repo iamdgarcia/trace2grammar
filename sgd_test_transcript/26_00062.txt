@@ -1,0 +1,32 @@
+user: Find me a round trip plane ticket.
+assistant: What day will you be returning?
+user: I want to return on the 14th of this month.
+assistant: What are your departing and arrival cities?
+user: I am departing London and headed to Los Angeles.
+assistant: What day are you departing London?
+user: I am departing London on March 2nd.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Search revealed 2 results. Delta Airlines has a departing flight at 3:55 am and a return flight at 6:05 am. It has a layover and the total cost is $591.
+user: That is perfect. I also need a house to stay in Los Angeles.
+tool(SearchHouse): ok n_results=10
+assistant: 1020 South Figueroa Street has a 4.1 rating.
+user: Do they offer laundry service?
+assistant: They do have laundry service.
+user: The house works for me.
+assistant: Shall I book the house for you now?
+user: Yes, get me a house reservation for there.
+assistant: Are you arriving March 2nd and how many people are going?
+user: The booking is for 2 people and we will arrive on the 5th.
+assistant: Will you be departing on March 14th?
+user: I wish to arrive ont he 11th of this month and will depart on March 13th.
+assistant: You want a house reservation for 2 people in Los Angeles from March 11th to March 13th, correct?
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your booking is complete.
+user: What is their phone number and what did the total price come to?
+assistant: You can contact them at +1 323-600-5396 and the total bill is $348.
+user: Thanks a lot. What is there to do around there?
+tool(FindAttractions): ok n_results=10
+assistant: Angels Flight Railway is a Historical Landmark nearby.
+user: I see. Thanks for everything. I don't need anymore help right now.
+assistant: Have a great time!

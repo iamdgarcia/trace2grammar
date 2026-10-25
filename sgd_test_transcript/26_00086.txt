@@ -1,0 +1,44 @@
+user: Can you find me a train to catch
+assistant: What date and what city are you going to and coming from?
+user: I want to head to Sacramento, Ca on March 7th from SD
+tool(FindTrains): ok n_results=9
+assistant: What about the 6:10 am train that costs $148
+user: What station does it arrive at and leave from
+assistant: The train is leaving from Santa Fe Depot and arriving at Sacramento Valley Station
+user: Are there other trains that could work?
+assistant: What about this $146 train that leaves at 6:40 am
+user: Are there any other trains that work, any class ticket is fine
+tool(FindTrains): ok n_results=7
+assistant: I found 7 trains including the 7:30 am train for $152
+user: That sounds great
+assistant: Do you want me to book that for you?
+user: Not now thanks
+assistant: Anything else I can help you with?
+user: I want to find something interesting to do, I wanna watch some Musical Shows on March 7th
+tool(FindEvents): ok n_results=4
+assistant: I found 4 events including the Aftershock Festival that's at Discovery Park and it's happening on March 7th at 5:30 pm
+user: How much does one ticket cost and where is the venue?
+assistant: It's $55 and located at 1600 Garden Highway
+user: Thanks that sounds good
+assistant: Do you want tickets to that then?
+user: No not right now
+assistant: OK what else can I do then?
+user: Can you show me more attractions without an entrance fee?
+tool(FindAttractions): ok n_results=5
+assistant: You should check out a museum like the California State Capitol Museum
+user: What is the phone number of the place and is it child friendly?
+assistant: No it's not a good place for kids to be frank, and it's 916-445-2841
+user: OK can you find me another museum then?
+tool(FindAttractions): ok n_results=2
+assistant: There are 2 attractions including another museum called the California State Railroad Museum
+user: Cool, what else is there
+assistant: Another Museum? How about the Crocker Art Museum
+user: OK cool, now find me a house with laundry service and a 4.1 rating for one
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses including the 4.1 rated 100 Capitol Mall
+user: What about other houses?
+assistant: How about this place at 1121 15th Street with a 4.1 rating
+user: OK that's good
+assistant: What else can I do
+user: No that's it for now
+assistant: OK thanks so much. Bye!

@@ -1,0 +1,29 @@
+user: I'd like to make a payment.
+assistant: Tell me the name of the contact.
+user: The person I am making the transaction with is Yumi.
+assistant: Should I have the money transferred from app balance or debit card?
+user: Send that from my balance.
+assistant: What is the total?
+user: That will be for 25 bucks.
+assistant: Please confirm details from the app balance $25 with Yumi a public transaction.
+user: Yes, that is it.
+tool(MakePayment): ok n_results=1
+assistant: The payment was a success and the recipient should see the money soon.
+user: I need to find a restaurant there.
+assistant: What location am I looking in and what type of food am I looking for?
+user: Please find restaurants in Half Moon Bay serving Ramen.
+tool(FindRestaurants): ok n_results=3
+assistant: Monster Chef is a nice choice in Half Moon Bay.
+user: Yes, that will be good.
+assistant: Do you wish to reserve a table here?
+user: I would like to reserve a table at half past 6 in the evening.
+assistant: Please confirm details for a table at Monster Chef in Half Moon Bay at 6:30 pm March 1st for 2 people.
+user: Yes, that will work. Is there outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is a success and they don't have outdoor seating.
+user: Would they have vegetarian options on the menu?
+assistant: They don't have any vegetarian options.
+user: Thanks a lot.
+assistant: Will I be able you with anything else?
+user: No thanks a lot.
+assistant: Have a nice day.

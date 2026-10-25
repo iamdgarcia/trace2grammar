@@ -1,0 +1,16 @@
+user: I need to travel along with my family through train. could you find a train for 3 seats ?the train should depart from Fresno.
+assistant: At which city you plan to go? at what date do you need to travel?
+user: Going to LA and The date is for the 12th.
+tool(FindTrains): ok n_results=6
+assistant: I found one train which is depart at 8:30 am and its costs $188 in total.
+user: Ok that sounds good.
+assistant: Whether i need to book tickets in that train?
+user: yes, i need to make the reservation and i want to have trip insurance and i need economy tickets.
+assistant: Please check and confirm the details. Train ticket is needed and the train depart from Fresno and the destination is Los Angeles. The train leaves on march 12th and leaves at 8:30 am . Number of passengers is 3 and it comes with trip insurance and it is a Value ticket.
+user: Ok That suits for me. please Book it.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were successfully booked.
+user: THanks a lot for your help.
+assistant: Whether i need to find anything else?
+user: No, Not for now.
+assistant: Have a wonderful day.

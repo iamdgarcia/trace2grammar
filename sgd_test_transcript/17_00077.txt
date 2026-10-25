@@ -1,0 +1,12 @@
+user: Can you help me find a train going to san fran? I need one value seat
+assistant: What date are you leaving and where are you coming from?
+user: I want to leave Fresno, CA on March 9th
+tool(FindTrains): ok n_results=7
+assistant: Sure thing, there are 7 trains including a $64 train that leaves at 6:50 am
+user: That's cool, find me a house to stay there for two people while we're at it
+tool(SearchHouse): ok n_results=10
+assistant: How about this 4.0 rated place at 1095 Market Street
+user: Do they have laundry service? Can I also get their number?
+assistant: They do have laundry, and it's +1 415-829-0000
+user: The house is good, thanks for now, that's it
+assistant: OK, glad I could help, see you!

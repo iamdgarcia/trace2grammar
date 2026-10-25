@@ -1,0 +1,14 @@
+user: I need train tickets on the 14th of this month.
+assistant: Where do you need to go?
+user: I want to be in SFO.
+assistant: Where did you want to leave from?
+user: I would like economy seating out of San Diego
+tool(FindTrains): ok n_results=7
+assistant: I found one for $109 that leaves at 6:40 am what do you think?
+user: What stations are involved?
+assistant: You would be departing from Santa Fe Depot and would end up at Salesforce Transit Center.
+user: That will do, I also need to find somewhere to stay, a house rated 3.9 or more with laundry service available for 1.
+tool(SearchHouse): ok n_results=10
+assistant: This one sounds right it has a 3.9 rating and can be found on 1095 Market Street.
+user: That will work, you can go now.
+assistant: I have enjoyed being of service, bye bye.

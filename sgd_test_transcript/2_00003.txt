@@ -1,0 +1,16 @@
+user: I am interested in finding songs.
+tool(LookupMusic): ok n_results=10
+assistant: Well how about houdini by Foster The People from their album Torches?
+user: Yes sounds good.
+assistant: Shall I play it?
+user: Please in the living room.
+assistant: So I am playing the song Houdini in the living room.
+user: No actually play it on the kitchen speaker.
+assistant: To confirm them that is Houdini song playing in the kitchen.
+user: Yes thanks. What genre of music is it and when was it released?
+tool(PlayMedia): ok n_results=1
+assistant: It is indie music, released in 2011, I hope you like it.
+user: thanks so much.
+assistant: Anything else I can assist you with?
+user: No that is all thanks.
+assistant: Enjoy your day.

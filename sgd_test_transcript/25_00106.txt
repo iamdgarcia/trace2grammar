@@ -1,0 +1,32 @@
+user: Could you tell me what alarms I have set?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm titled Wake up at 6:30 am.
+user: Could you find me a restaurant please?
+assistant: What city do I need to search in and what type of food?
+user: Maybe a Gastropub in SF or the surrounding area?
+tool(FindRestaurants): ok n_results=10
+assistant: B-side is a highly rated Gastropub in San Francisco.
+user: Do they have outside tables? Could you give me their telephone number?
+assistant: Their number is 415-287-6599. I'm sorry, they do not have tables outside.
+user: Okay. So I'd like to rent a car.
+assistant: What date would you like to start and what type of car do you want?
+user: I want the rental to start Monday next week and I think I want a sedan.
+assistant: What is the date that you'll return the vehicle and what time would you like to pick it up?
+user: I need it until the 9th. I'll pick it up around 10:30 am.
+assistant: What location do you want to get the car and would you like insurance added?
+user: I don't need insurance and I'll pick it up at Phoenix Sky Harbor Airport.
+assistant: Please confirm the following information: You want to rent a sedan beginning March 4th at 10:30 am, dropping it off March 9th. You will pick it up from Sky Harbor International Airport and you do not need insurance.
+user: Could you please change that to picking it up Tuesday next week at Heathrow International Airport?
+assistant: Please confirm the following information: You want to pick the vehicle up on March 5th at Heathrow International Airport.
+user: And could you change that to a hatchback?
+assistant: Please confirm the following information. You want to pick up a hatchback at Heathrow International Airport.
+user: Yes. That's it. What is the cost per day for the hatchback?
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has been reserved. It will be $25.00 per day.
+user: Okay. Could you share the location of Heathrow International Airport with Victoria?
+assistant: Please confirm the following information: The location of Heathrow International Airport will be shared with Victoria.
+user: Great. That's an amazing service.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with Victoria.
+user: Wow. Thanks for your assistance. That's all.
+assistant: Enjoy the rest of your day.

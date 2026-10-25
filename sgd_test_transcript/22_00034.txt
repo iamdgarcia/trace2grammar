@@ -1,0 +1,42 @@
+user: I'm looking for some fun things to do where there is a how. Please search for an interesting show on the 10th.
+assistant: In what city would you like me to search?
+user: Please look in the area around LA.
+tool(FindEvents): ok n_results=10
+assistant: I found the very popular A Year in Dragonfly at the Studio C Artists. It starts at 5:30 pm on March 10th.
+user: What is the address of the venue and how much are tickets?
+assistant: Your ticket is $55 and the address is 6448 California 2.
+user: Great. Will I be able to take a bus to this place leaving on the 5th of March? It doesn't matter if this is a direct route. There will be 4 people.
+assistant: What is the area you are leaving from that day?
+user: I am departing from San Diego.
+tool(FindBus): ok n_results=10
+assistant: There are actually 10 buses you could take. Would you like to leave on the 9:10 am bus which will cost $28?
+user: What is the station it will arrive at that day?
+assistant: You will arrive at the North Hollywood station.
+user: What station will I depart from that day?
+assistant: You will depart from the El Cajon Bus Stop.
+user: Okay. Let's now search for a round trip flight to this area.
+assistant: Will you be leaving on March 10th?
+user: No, I will actually I will begin travel on the 5th of March.
+assistant: What day would you like to return?
+user: I will be returning on the 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I have found 2 flights for you. Alaska Airlines has a direct flight leaving at 1:05 pm and the return flight departing at 10:05 am. This ticket is $115.
+user: Great. Will you now please search for two star hotels in that area. I will need 3 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 star hotel called the Best Western Hollywood Plaza Inn.
+user: Is this a smoking friendly hotel?
+assistant: No, there is no smoking allowed at this hotel.
+user: Are there any 4 star hotels that allow smoking> I will need one room.
+tool(SearchHotel): ok n_results=10
+assistant: I have found 10 hotels for you. There is the Beverly Hills Marriott which is a 4 star hotel.
+user: That one sounds good.
+assistant: Would you like to make reservations?
+user: No, not at this time.
+assistant: Do you need any further assistance?
+user: Yes, I would like to purchase tickets to the event you found earlier.
+assistant: Please confirm you would like 4 tickets to the A Year in Dragonfly on March 10th in Los Angeles.
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=0
+assistant: Unfortunately there are no available tickets. Do you help with anything else?
+user: No. I appreciate your help.
+assistant: Enjoy your day!

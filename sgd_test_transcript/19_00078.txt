@@ -1,0 +1,29 @@
+user: I need a rental car.
+assistant: What date would you need the car rental?
+user: Starting the 4th of March.
+assistant: Where do you want to pick up the car and at what time? What date will you be returning the vehicle?
+user: I need a rental car in Paris at morning 10:30. I'll need it from the 4th of March until the 10th of March.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a Hatchback Ford Focus at Orly International Airport. There are 5 other cars available.
+user: How much is that going to be for each day?
+assistant: The rental will be $27.00 per day for the Ford Focus.
+user: Okay. I want to buy tickets to an event in Paris.
+assistant: What event do you want to go to and how many tickets do you need?
+user: I need 4 tickets for Mxmtoon.
+assistant: Do you have a date that you want to go to Mxmtoon? And what city is the concert in?
+user: It's on the 9th of March in NYC.
+assistant: Please confirm the following information. You want 4 tickets for the Mxmtoon concert on March 9th in New York City.
+user: Yes, that's what I want. Could you let me know the address and what time it starts?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are confirmed. The Mxmtoon concert is at 185 Orchard Street and begins at 6:30 pm.
+user: Now could you book that rental car too?
+assistant: Do you need to add the optional insurance?
+user: No. I don't need any more insurance.
+assistant: Please confirm the following information: You want to rent a Ford Focus Hatchback on March 4th at 10:30 am at Orly International Airport. You will drop it off on March 10th. It does not have any insurance with it.
+user: In that case, I need to get insurance for the rental.
+assistant: Please confirm the following information: The car will have insurance and the pickup date is March 4th.
+user: Okay. That sounds better.
+tool(ReserveCar): ok n_results=1
+assistant: Your Ford Focus Hatchback has been reserved in Paris.
+user: Great. Thanks for the assistance. I don't need anything else right now.
+assistant: Enjoy the rest of your day.

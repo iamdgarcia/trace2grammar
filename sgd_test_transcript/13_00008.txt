@@ -1,0 +1,19 @@
+user: Is there a stage show I can go to in SF, or anything else interesting to do?
+tool(FindEvents): ok n_results=10
+assistant: There is one popular event taking place at Mojo Theatre on March 6th at 5 pm, can I interest you in Above Ground?
+user: What is the price of admission, and what's the address of the theatre?
+assistant: The theatre is located at 2940 16th Street #217, tickets cost $35.
+user: Sounds great, I also want to request a payment from Margaret, for a total of $46. The transaction should also be private.
+assistant: You wish to make a private transaction with Margaret, for $46 correct?
+user: That is all correct.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was made successfully.
+user: Also, can I purchase three tickets to the event?
+assistant: You wish to buy 3 tickets to Above Ground, taking place in San Francisco on March 6th, is that right?
+user: No actually make it 4 tickets.
+assistant: Your reservation will be for 4 tickets, the event is taking place in San Francisco.
+user: That works for me, thanks.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been confirmed, have a great time there!
+user: Thank you for all the help, that is all I need.
+assistant: Understood, have a great day.

@@ -1,0 +1,17 @@
+user: Tell me what the weather is like in Ciudad de Mexico.
+tool(GetWeather): ok n_results=1
+assistant: It averages a temperature of 102 degrees Fahrenheit with a 0 percent chance of rain.
+user: Oh fine. Are there any attractions in the area. I want to take my kids there and I would prefer a Museum.
+tool(FindAttractions): ok n_results=10
+assistant: I have a list of 10 attractions. I recommend the Arte Carrillo Gil Museum which is a Museum.
+user: Fantastic. I want you to fetch me a cab for four people.
+assistant: Is there a particular ride you prefer?
+user: I want the cheapest ride.
+assistant: So you would like a ride of 4 seats to the Arte Carrillo Gil Museum. Also you want a pool ride. Is that right?
+user: Yep, sounds good. What is the price?
+tool(GetRide): ok n_results=1
+assistant: Your cab will be here soon as I have booked your ride. It will be a total of $32.86.
+user: How much time will it take for the cab to get here?
+assistant: You can count on the cab to here in 4 minutes.
+user: Thanks very much, that will be all.
+assistant: Have a great day!

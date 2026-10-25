@@ -1,0 +1,29 @@
+user: I need the weather forecast for the 12th.
+assistant: Do you want the weather forecast for your current location or some other place?
+user: I need the weather forecast for Dixon.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature in Dixon on the 12th is expected to be 93 degrees Fahrenheit with a 21 percent chance of precipitation.
+user: Is it supposed to be very humid?
+assistant: The humidity level is expected to be around 28 percent.
+user: Is it going to be very windy that day?
+assistant: The average wind speed is predicted to be 4 miles per hour.
+user: Okay. I want to schedule an appointment to visit Bella Rose Apartments on that day.
+assistant: Please confirm the following information. You want to make an appointment to visit Bella Rose Apartments on March 12th.
+user: No, sorry. I need to schedule an appointment at Village Lake Apartments.
+assistant: Please confirm the following information: You want to schedule a visit to Village Lake Apartments on March 12th.
+user: Yes, that's right. And do you have the telephone number for Village Lake?
+tool(ScheduleVisit): ok n_results=1
+assistant: Yes. The telephone number is 650-961-0948 and your appointment has been booked.
+user: Okay. Now I need to book a car rental until the 13th. I'll pick it up at Nairobi International Airport.
+assistant: Would you like an SUV, Hatchback, compact car or something else? Did you want the car beginning on March 12th? And what time do you want to pick it up?
+user: I need a Hatchback and I'll pick it up at half past 9 in the morning on the 12th.
+assistant: Would you like to purchase insurance on this rental?
+user: Yes, I'd better add insurance to it.
+assistant: Please confirm the following information. You want to pick up a Hatchback with insurance on March 12th at 9:30 am from Jomo Kenyatta International Airport. You will return the car on March 13th.
+user: Can you make that a pick up date of 6th of March? And I need to pick it up at Heathrow Airport.
+assistant: Please confirm the following information: You will pick up the car on March 6th at Heathrow International Airport.
+user: Yes. And what kind of car is it? What is it going to cost?
+tool(ReserveCar): ok n_results=1
+assistant: The car is a Nissan Qashqai and is $51.00 per day. It has been reserved for you.
+user: Great. That's all I need right now.
+assistant: Enjoy the rest of your day.

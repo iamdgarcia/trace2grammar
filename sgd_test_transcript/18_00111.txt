@@ -1,0 +1,28 @@
+user: Find me somewhere to eat at.
+assistant: What type of food do you like?
+user: I am looking for a place that serves Seafood.
+assistant: What city shall I look in?
+user: Search for places in Millbrae.
+tool(FindRestaurants): ok n_results=3
+assistant: Little Whale Seafood is in Millbrae.
+user: That is perfect. Book me a table there.
+assistant: What time do you want to eat?
+user: I wish to eat at 6:45 in the evening.
+assistant: You want a table for 2 at Little Whale Seafood in Millbrae on March 1st at 6:45 pm, correct?
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I can't book that time. Is a table for 2 at Little Whale Seafood on March 1st at 7 pm okay with you?
+user: That is good too.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked.
+user: What is their average rating?
+assistant: They have an average rating of 4.1.
+user: Thanks a bunch. I need to get a Shared ride to go to 716 Magnolia Avenue.
+assistant: You want a Pool ride for 2 people to 716 Magnolia Avenue, correct?
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your ride is ordered and is coming for you.
+user: What is the total price and how long do I have to wait for the ride?
+assistant: The total bill is $23.94 and will be there in 5 minutes.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

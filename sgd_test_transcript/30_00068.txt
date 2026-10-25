@@ -1,0 +1,21 @@
+user: I'd like to find out what the weather is going to be like on 2nd of March in Vancouver, BC.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day will be about 67 degrees Fahrenheit and there's a 49 percent chance of rain.
+user: That sounds good. I'd like to schedule a visit to Golf Club Manor Apartments.
+assistant: Could you confirm that you want to visit Golf Club Manor Apartments on March 2nd?
+user: Sounds good.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: I would like to reserve a car there till the 3rd.
+assistant: Do you like Hatchback, SUV or another type of car? Would you like to pick up the car from March 2nd and from where?
+user: Sounds good. Delhi Airport is a good place for me to pick it up. A hatchback sounds perfect.
+assistant: Would you like insurance? What time will you pick it up?
+user: I'd like insurance and will pick it up at afternoon 3.
+assistant: So you want to pick up the car from Indira Gandhi International Airport on March 2nd at 3 pm and drop it off on March 3rd? It's a Hatchback that comes with insurance.
+user: Sounds perfect.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation was made successfully.
+user: What is the name of the car and how much is it per day?
+assistant: It is $39.00 per day and it's called a Fiat Panda.
+user: Thanks for helping. That's it for now.
+assistant: Have a great day.

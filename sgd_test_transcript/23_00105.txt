@@ -1,0 +1,33 @@
+user: I want to find a train on March 6th. I need one seat. Any fare class is fine.
+assistant: What city are you leaving from?
+user: I'm leaving from Philadelphia.
+assistant: Where are you traveling to?
+user: I'm going to Chi-town.
+tool(FindTrains): ok n_results=3
+assistant: I found 3 trains. There is a train leaving at 12:10 pm for $113.
+user: Are there other trains? I want to find something from New York City.
+tool(FindTrains): ok n_results=6
+assistant: I found 6 trains. There is a train leaving at 6 am for $112.
+user: Sounds great. Can you book some train tickets for me?
+assistant: Do you want to add trip insurance?
+user: Yes, I want to add insurance.
+assistant: Please confirm: a value ticket for 1 from New York to Chicago on March 6th at 6 am.
+user: That sounds great.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been booked.
+user: Can you find some attractions there? I like theater a lot.
+tool(FindEvents): ok n_results=10
+assistant: Ada and the Engine is a popular theater play taking place at The Artistic Home on March 3rd at 5:30 pm.
+user: Where is the venue?
+assistant: It is located at 1376 West Grand Avenue #7761.
+user: Sounds good. Can you share the location?
+assistant: Who do you want to share the location with?
+user: I want to share it with Emma.
+assistant: Please confirm: sharing the location The Artistic Home with Emma.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: The locaiton has been shared.
+user: Thanks so much.
+assistant: Anything else I can do?
+user: No that's all.
+assistant: Have a great day!

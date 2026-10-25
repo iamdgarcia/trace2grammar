@@ -1,0 +1,36 @@
+user: I am moving to Hayward and I need to find a place to live there.
+assistant: Do you want the property for rent or to buy? What number of bathrooms do you want?
+user: I want a house to rent and it must have 2 bathrooms.
+assistant: What number of bed rooms should I look for?
+user: Find me a place with three bed rooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 such places and I think you will like the Amberwood Garden Apartments at 26100 Gading Road and it will cost you $3,900.
+user: Do they have laundry machines and what is their phone number?
+assistant: The property has laundry in-unit and you can call them at 510-785-3281.
+user: That is cool.
+assistant: Shall I book you a property visit?
+user: Sure I will see it on 5th of this month.
+assistant: So you confirm that you want to schedule a visit to Amberwood Garden Apartments on March 5th?
+user: Not really I will go there the day after tomorrow.
+assistant: So you will visit Amberwood Garden Apartments on March 3rd?
+user: That is absolutely right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have your property visit booked.
+user: Thank you very much. Can you also share that location?
+assistant: What contact should I share it with?
+user: Share the thing with Bryan.
+assistant: So you want me to share the location 26100 Gading Road with Bryan?
+user: Yes that is right.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared your location.
+user: Thank you. Fetch me a cab to get there.
+assistant: What type of ride do you want and How many seats. Will it be regular or luxury?
+user: I want a luxurious ride for one.
+assistant: So you want a luxury ride for 1 to 26100 Gading Road?
+user: Yeah that is correct.
+tool(GetRide): ok n_results=1
+assistant: I have your cab ready on it its way
+user: What does it cost me?
+assistant: It will cost you $31.00
+user: Thanks a lot, that is it
+assistant: Have a nice day!

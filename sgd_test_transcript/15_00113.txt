@@ -1,0 +1,32 @@
+user: I need to visit a salon, can you help me find something?
+assistant: Sure, what area should I look in?
+user: I need a salon that is in Concord.
+tool(FindProvider): ok n_results=6
+assistant: How about Breds Barbershop, it is in Concord.
+user: That would work.
+assistant: Would you like to make an appointment there?
+user: Not right now, but I also need to find a Family Counselor in the area?
+assistant: Are you looking for someone in Concord?
+user: Yes, that is the correct location.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 Family Counselor in Concord named Julie Weigel.
+user: Can you give me their phone number and location?
+assistant: Sure, they are located at 1026 Oak Grove Road and can be contacted at 915-646-5102.
+user: I would like to make an appointment there please.
+assistant: What date and time would you like the appointment for?
+user: This Saturday at half past 10 in the morning would work best for me.
+assistant: Please verify you would like to make and appointment with Julie Weigel on March 2nd at 10:30 am.
+user: Yes, book it please.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made an an email confirmation will be sent shortly.
+user: Great, I also want to make an appointment for the salon you found for the same day at one in the afternoon.
+assistant: You would like to make an appointment at Breds Barbershop on March 2nd and 1 pm, is that correct?
+user: Yes, reserve it please and also give me their address.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and the address is 4330 Clayton Road suite j.
+user: Is this a unisex place?
+assistant: Yes, the salon is unisex.
+user: Perfect! Thanks for your help.
+assistant: Yoou're welcome, do you need anything else?
+user: No, that was all.
+assistant: Have a wonderful day.

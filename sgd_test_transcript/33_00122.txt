@@ -1,0 +1,15 @@
+user: I want to visit a garden in New York City.
+tool(FindAttractions): ok n_results=10
+assistant: There is a park called Alley Pond Park.
+user: I would like to stay at a 4.4 or higher rated house there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses including one with rating 4.4 at 111 North 12th Street, Brooklyn.
+user: That is a perfect house. I need a round trip flight departing on March 9th and returning on the 14th of this month.
+assistant: Which city are you leaving?
+user: I am traveling out of Chi-town.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flights including one on American Airlines for $253. The flight leaves at 5:05 am and the returning flight leaves at 7 pm.
+user: That is perfect.
+assistant: May I further assist you?
+user: No, that will be all.
+assistant: See you soon!

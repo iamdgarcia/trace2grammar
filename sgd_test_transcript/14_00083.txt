@@ -1,0 +1,15 @@
+user: I am looking for a Action movie to watch.
+tool(FindMovies): ok n_results=5
+assistant: I have found a movie called Angel Has Fallen with an average rating of 39 out of 100.
+user: Who directed this movie?
+assistant: Ric Roman Waugh is the director.
+user: Sounds great. Can you search songs for me? I am looking for Soundtracks by Josh Gad. I am particularly interested with songs from six years back.
+tool(LookupMusic): ok n_results=1
+assistant: How about In Summer from the album Frozen by Josh Gad.
+user: Yes. I want to play that song.
+assistant: So you want me to play In Summer in the Living room?
+user: Yes I do.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song.
+user: Thanks, I am all set.
+assistant: Have a great day.

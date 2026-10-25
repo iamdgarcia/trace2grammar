@@ -1,0 +1,45 @@
+user: Find a bus for me.
+assistant: When are you going and what is are your departure and arrival cities?
+user: I am departing San Diego on March 5th and headed to Long Beach, CA.
+tool(FindBus): ok n_results=10
+assistant: There is a bus leaving at 6:50 am. The total price is $25 and it is 1 of 10 buses available.
+user: What else do you have?
+assistant: There is a bus leaving at 7:10 am with a cost of $21.
+user: What else can you find?
+assistant: There is a bus leaving at 8:30 am with a cost of $24.
+user: What is the arrival station?
+assistant: Downtown Station is the arrival station.
+user: What is the departing station and is the bus one-stop?
+assistant: El Cajon Bus Stop is the departing station and it is a direct trip.
+user: That works for me. Find me fun stuff to do there.
+tool(FindAttractions): ok n_results=8
+assistant: Aquarium of the Pacific is a Nature Preserve and is 1 of 8 results that I found.
+user: That is good. Find some Park attractions for me.
+tool(FindAttractions): ok n_results=4
+assistant: Earl Burns MIller Japanese Garden is a cool Park.
+user: Can you find some other things that are child-friendly?
+tool(FindAttractions): ok n_results=4
+assistant: El Dorado Nature Center is a Park that kids will love.
+user: How can I contact them?
+assistant: You can contact them at 562-570-3100.
+user: Do they offer free admission?
+assistant: No, they do charge for admission.
+user: I see. Buy that bus ticket for me.
+assistant: How many tickets should I order?
+user: Order three tickets for me.
+assistant: You want 3 bus tickets without extra bags for a trip departing San Diego at 8:30 am on March 5th and goes to Long Beach, correct?
+user: That is right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are ordered.
+user: Thanks a bunch. Now can you find me a hotel near there too?
+tool(SearchHotel): ok n_results=10
+assistant: Best Western of Long Beach has 3 stars and is 1 of 10 hotels that I found.
+user: What other three star hotels can you find?
+tool(SearchHotel): ok n_results=8
+assistant: Courtyard By Marriott Long Beach Airport is also a 3 star hotel.
+user: That works for me.
+assistant: Shall I make a hotel reservation for you?
+user: No, not right now.
+assistant: Do you need any more help?
+user: No, that is everything. Thanks for the help.
+assistant: Have a pleasant day.

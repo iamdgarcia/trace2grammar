@@ -1,0 +1,9 @@
+user: I would like to find a rental car.
+assistant: At what time would you like to pick the car up? Where do you want to rent the car from and when would you like to begin the car rental.
+user: I am looking for cars in Los Angeles and I would like to get the car at 3 in the afternoon beginning on the 6th.
+assistant: Until what date would you like to keep the car?
+user: I would like it until March 9th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars I have found. One nice car is available at LAX International Airport, it's a sedan of Audi A8.
+user: That sounds fine. This was all I needed.
+assistant: Have a wonderful day.

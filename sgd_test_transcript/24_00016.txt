@@ -1,0 +1,25 @@
+user: Can you locate a one way flight please?
+assistant: Detail are needed where to from where and when?
+user: March 14th to San Diego and leaving from San Francisco.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: Do you use Alaska Airlines they have a direct flight for $106 that departs at 4:20 pm.
+user: When would I get there?
+assistant: At about 6 pm according to the schedule.
+user: Is that price for just one person and what class is it Business?
+assistant: No it is Economy class and the price is for 1 person.
+user: That might work okay can you find a train to there that has a Value ticket available?
+assistant: Will you be heading out on March 14th?
+user: I don't know the dates but I want it for Wednesday next week.
+tool(FindTrains): ok n_results=6
+assistant: I found 6 contenders, the first leaves at 6 am and is $91.
+user: That could work well.
+assistant: Should I purchase your seats now?
+user: Yes book 1 seat please.
+assistant: Will you be getting travel insurance?
+user: If it is the same as trip insurance, I do want trip insurance.
+assistant: Let me know if this is right you want 1 Value seat o the train that leaves San Francisco on March 6th at 6 am and you are going to San Diego trip insurance is included. did I get it all?
+user: Yes you did.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your seat is secured.
+user: Thanks much I don't need anything else.
+assistant: Talk at you later.

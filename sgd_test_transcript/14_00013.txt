@@ -1,0 +1,19 @@
+user: Can you help me find some movies online?
+assistant: Are you interested in any specific genre?
+user: I like Thriller moview.
+tool(FindMovies): ok n_results=4
+assistant: There are 4 thrillers that you might like. Would you like to watch Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: I like The Art of Self-Defense.
+assistant: Shall I play the movie for you?
+user: Yes, please go ahead.
+assistant: Please confirm that you want to watch The Art of Self-Defense with English subtitles.
+user: Yes, that's correct. Who are the lead actors in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started playing. Davey Johnson stars in the movie.
+user: How's the weather in Dublin on the 13th of March?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be around 84 degrees Fahrenheit with a 19 percent probability of rain.
+user: Okay, thank you.
+assistant: Is there anything else I can help with?
+user: No. That's all I need for now. Thank you.
+assistant: Have a great day! Bye!

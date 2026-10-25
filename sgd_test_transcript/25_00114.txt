@@ -1,0 +1,30 @@
+user: I'd like to check my alarms please.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set for 5 pm which is called Pick up kids.
+user: Okay thanks. I'm looking to celebrate, can you help me find a restaurant for me to have dinner?
+assistant: What kind of food would you like to eat?
+user: I'm in the mood for Oriental food.
+assistant: Where would you like me to search?
+user: Please search in Santa Clara.
+tool(FindRestaurants): ok n_results=7
+assistant: How about the Beijing Restaurant in Santa Clara?
+user: That sounds nice.
+assistant: Do you want to make a reservation now?
+user: Not right now thanks. I'd like to rent a car with insurance, can you help?
+assistant: Sure, when do you want the rental to begin and for how long? Also, what kind of car are you looking for? For example you could rent a Sedan or a Hatchback.
+user: I need an SUV from the 1st until next Tuesday.
+assistant: What time do you want to collect the car?
+user: I'd like to collect the car at 1:30 pm at Norman Y. Mineta Airport.
+assistant: So you'd like to rent an SUV from Norman Y. Mineta Airport on March 1st at 1:30 pm until March 5th?
+user: That's correct yes. What model is the car and what will the cost per day be?
+tool(ReserveCar): ok n_results=1
+assistant: Your GMC Terrain has been reserved for you. It will cost $56.00 per day.
+user: Now I'd like to share a location with my friend Anna. Can you send her the address, it's 1460 Halford Avenue.
+assistant: Sure so you'd like to share the 1460 Halford Avenue address with Anna?
+user: Yes that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: Not right now thanks.
+assistant: Enjoy your day.

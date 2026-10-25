@@ -1,0 +1,16 @@
+user: Find me some music okay?
+tool(LookupMusic): ok n_results=10
+assistant: I came up with 10 so far. Would you like to hear a song from the Miley Cyrus album Younger Now? It's called Malibu.
+user: What year was that in?
+assistant: 2017 is the release date.
+user: Okay play that one.
+assistant: Play that song?
+user: Yes if you would please.
+assistant: So I will play Malibu in the Living Room right?
+user: That is right.
+tool(PlayMedia): ok n_results=1
+assistant: Have a pleasant listening experience.
+user: I appreciate that.
+assistant: Can I be of further assistance?
+user: Not right now thanks.
+assistant: Have a most wonderful day!

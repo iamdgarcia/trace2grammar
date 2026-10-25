@@ -1,0 +1,21 @@
+user: Please look for something interesting to do?
+assistant: What city and type of event please?
+user: Look around Philadelphia for Concert.
+tool(FindEvents): ok n_results=10
+assistant: The popular Anthony Green at The Foundry on March 10th at 6 pm.
+user: Thats the one, please book tickets.
+assistant: Number of tickets please.
+user: Boo 4 tickets.
+assistant: Please verify, You need 4 tickets on March 10th in Philadelphia for Anthony Green.
+user: Right , proceed please.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets confirmed.
+user: Please find a Regular cab to reach there.
+assistant: Please look into the request, need ride to The Foundry by Regular ride for 4 people.
+user: Right, when will it reach here and cost please.
+tool(GetRide): ok n_results=1
+assistant: It will be there in 7 minutes. Please pay $23.28
+user: Thanks for your service.
+assistant: Do you need any other help?
+user: No, thats all I wanted.
+assistant: Enjoy the day.

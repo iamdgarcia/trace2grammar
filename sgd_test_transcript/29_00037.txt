@@ -1,0 +1,30 @@
+user: I'll be needing a place to stay on my trip. I think I'll want a 4 star hotel.
+assistant: What city should I search in?
+user: Find me 4-star hotels in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: Presenting you with 10 hotel options for London. There is a 4 star-hotel called Ace Hotel London.
+user: Sounds like a good place to stay.
+assistant: Do you want me to confirm this reservation?
+user: Not at this point in time.
+assistant: It would be my pleasure to help you with anything else you may need.
+user: I want to book a round trip flight to London. I only need 1 ticket.
+assistant: What is your departure city and will you be leaving on March 8th? Lastly, what day will you be making your return flight?
+user: I'll be flying out from Philly next Tuesday. I should be coming back on the 10th of this month.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Okay. Here are 3 flights for you. The best option is with American Airlines. The cost of the ticket is $448. The departure flight is at 7:25 am and the returning flight is at 12:35 pm.
+user: When will the returning flight land in Philly?
+assistant: The returning flight should touch down in Philly at 6:56 pm.
+user: That should work with my schedule. Sounds good. Go ahead and reserve 1 room for me.
+assistant: Will you be checking in the Ace Hotel London on March 5th? If so, when will you be checking out of your hotel?
+user: I'll check-in into the hotel on March 6th. I'll be staying there for six days.
+assistant: Confirm your hotel reservation. You will check in at the Ace Hotel London on March 6th. You intend to stay for 6 days. The hotel is in London and you are reserving 1 room. Correct?
+user: That sounds right to me. Should be a nice stay there. Can you tell me the address of the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: I have confirmed that your room is reserved for you. The address of the Ace Hotel London is 100 Shoreditch High Street.
+user: I'll need something to do while I'm there. Tell me about attractions in London. Something that's free and child-friendly.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 well-known attractions in that area. How would you like to check out a Place of Worship called All Saints, Margaret Street?
+user: That sounds just lovely.
+assistant: I'm glad to hear that. Do you need anything else?
+user: I can't think of anything else. You were very helpful, thank you.
+assistant: Enjoy your trip!

@@ -1,0 +1,36 @@
+user: I want to find a round trip flight.
+assistant: What day would you like to make the return flight and which date do you want to travel? What is the city you would like to fly out of?
+user: I would like to start traveling on the 3rd of March, leaving from Sydney, Australia. I want to come back on the 13th of March.
+assistant: Where do you want to go to?
+user: I would like to go to Seattle, WA. I would like three tickets on Delta Airlines.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Do you want to fly with Delta Airlines? The onward flight leaves at 10:55 am and there is a layover. The return flight leaves at 4:10 am and it costs $495.
+user: When does the plane get to the destination and when does the return flight arrive?
+assistant: The onward flight gets there at 7:27 am and the return flight will arrive at 10:16 am.
+user: That sounds fine. I would also like to find a house to stay in for 1 person and it should be rated 4.1 or above.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses that fit your search. There is a nice house at the address of 1000 1st Avenue that is rated 4.1.
+user: Is there a contact number I can get? Does this place have laundry service?
+assistant: Their phone number is +1 206-957-1000 and they do have laundry service.
+user: This house looks really good.
+assistant: Do you want to make a reservation for the house?
+user: Yes, I want to book the house.
+assistant: Would you be checking out on March 13th, or another date?
+user: Yes, that would be fine.
+assistant: Do you want to check in on March 3rd?
+user: I would like March 7th to be my check in date.
+assistant: Confirm these details for me: The location is in Seattle and you have 1 person in your group checking in on March 7th and checking out on March 13th.
+user: No, I would like to check in on the 3rd of March and check out on the 4th.
+assistant: Okay, confirm these details. The day you would check in is March 3rd and you will check out on March 4th.
+user: Yes that would be fine. What is the total cost?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been successfully made and the total cost is $372.
+user: Thank you very much for helping me. Can you show me some of the attractions there? I would be fine with any type of attraction.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might be interested in. One of these is a park called Alki Beach Park.
+user: Is this place considered child-friendly and is entrance to this attraction free?
+assistant: The entry is not free but the place is very nice to take your kids to.
+user: Okay, that is great.
+assistant: Is there anything else I can help you with?
+user: No. That was very helpful. I appreciate your help.
+assistant: Have a great time!

@@ -1,0 +1,30 @@
+user: Find me something fun that I would enjoy doing.
+assistant: What genre of events should I search in?
+user: Search for something under Musical performance.
+assistant: What city shall I look in?
+user: Find me something near Philadelphia and is happening tomorrow.
+tool(FindEvents): ok n_results=10
+assistant: Anthony Green is at The Foundry on March 2nd at 6 pm.
+user: That is perfect. Can you find me a house to stay in near there?
+tool(SearchHouse): ok n_results=10
+assistant: 1 Logan Square has a 4.5 rating.
+user: That is perfect. Find me a direct bus to get there.
+assistant: What is your departure city and are you leaving on March 2nd?
+user: I am departing later today out of Washington.
+tool(FindBus): ok n_results=7
+assistant: There is a bus leaving at 8:30 am that costs $29 and is 1 of 7 buses that I found.
+user: That is perfect.
+assistant: Shall I order bus tickets for you now?
+user: No, not right now.
+assistant: Do you need something more?
+user: Order four event tickets from earlier.
+assistant: You want 4 tickets to Anthony Green in Philadelphia on March 2nd, correct?
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are ordered. Have fun!
+user: What is the cost per ticket?
+assistant: The cost of one ticket is $45.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, that is all. Thanks.
+assistant: Have a good day.

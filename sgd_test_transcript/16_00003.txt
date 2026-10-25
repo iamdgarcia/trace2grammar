@@ -1,0 +1,34 @@
+user: Could you help me in finding a salon?
+assistant: In which city do you need the salon?
+user: I wish to visit a salon in Concord.
+tool(FindProvider): ok n_results=6
+assistant: Breds Barbershop is a great salon in Concord.
+user: It is nice.
+assistant: Shall I confirm the appointment?
+user: It may be done later. Please help me to find a therapist in that area.
+assistant: Shall I search someone in Concord? Do you want to meet Psychiatrist or a Family Counselor or any other type?
+user: I want to meet a Psychologist.
+tool(FindProvider): ok n_results=1
+assistant: I searched and found 1 therapist for you. Do you want to meet Karrah T. Fowler, MS, a Psychologist at Concord.
+user: What is their contact address?
+assistant: Their contact address is 1026 Oak Grove Road.
+user: What is their phone number?
+assistant: Their phone number is 925-682-8000.
+user: Nice. Can you make an appointment?
+assistant: When do you want to meet him?
+user: Confirm my appointment on 10th of this month?
+assistant: In which time do you want the appointment?
+user: Confirm it at 11:30.
+assistant: Kindly ensure that, on March 10th appointment is confirmed with Karrah T. Fowler, MS at 11:30 am.
+user: Yes. It is good
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is done. You will receive an email about it.
+user: Please make an appointment in that salon at 7 in the evening.
+assistant: Kindly ensure that, on March 10th, an appointment is made with the hair stylist Breds Barbershop at 7 pm.
+user: It is good. What is their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Their phone number is 925-446-4144. Sorry I am unable to book an appointment. Breds Barbershop is a great salon. Shall I make on March 10th at 6:30 pm?
+user: Nope.
+assistant: Do you need any other help?
+user: Nope. Thank you so much.
+assistant: Have a fantastic day.

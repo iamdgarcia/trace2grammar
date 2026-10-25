@@ -1,0 +1,18 @@
+user: Can you help me to find some songs?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs that you might like. Do you like the song Dance Macabre by Ghost from the album Prequelle?
+user: What genre is it?
+assistant: It is a Metal song.
+user: Yes, that's the one I was looking for. Can you find some Family movies starring Tom Hodges that I can watch online?
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie based on your preferences and it is Steel Magnolias.
+user: Steel magnolias is a great movie! Can you play the song that you found for me?
+assistant: Please confirm that you would like to listen to the song Dance Macabre in the Living room.
+user: Yes, that's right. Please proceed.
+tool(PlayMedia): ok n_results=1
+assistant: Song is now playing. Enjoy the music!
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set for 4:30 pm named Meeting.
+user: Great! Thank you. That's all for now.
+assistant: Have a great day!

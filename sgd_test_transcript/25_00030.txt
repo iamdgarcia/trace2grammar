@@ -1,0 +1,17 @@
+user: I need to find a movie to watch at Lark Theater in Larkspur.
+tool(FindMovies): ok n_results=6
+assistant: Echo in the Canyon, Luce and Tel Aviv on Fire are good options.
+user: Echo in the Canyon sounds good. Please find me songs from '18.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. How about African Beauty by Diamond Platnumz from A Boy From Tandale?
+user: Yes that is great thank you.
+assistant: Would you like to play it?
+user: Yes thank you.
+assistant: You want to play African Beauty in the Living room, correct?
+user: That's right, what genre is it?
+tool(PlayMedia): ok n_results=1
+assistant: It is pop music.
+user: Thank you very much.
+assistant: Can I do anything more for you?
+user: No that will be all.
+assistant: Have a great day!

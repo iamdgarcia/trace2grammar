@@ -1,0 +1,20 @@
+user: Find me some movies to watch on the Internet.
+assistant: What genre of movies do you like?
+user: Find me some Fight movies.
+tool(FindMovies): ok n_results=1
+assistant: Search revealed 1 result. Do you like Pulp Fiction?
+user: I love Pulp Fiction. Play the movie now for me.
+assistant: You want me to play the movie Pulp Fiction with English subtitles. Is that correct?
+user: That is correct. Who starred in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is beginning and Quentin Tarantino starred in it.
+user: What is the weather like in Moraga?
+tool(GetWeather): ok n_results=1
+assistant: It should be 70 degrees with a 23 percent chance of rain.
+user: I see. What will the weather be like on the 8th in Lafayette?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 71 degrees with a 12 percent chance of rain.
+user: Okay. I see.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: Have a good day.

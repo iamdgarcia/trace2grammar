@@ -1,0 +1,36 @@
+user: Can you help me find a house to live?
+assistant: How many bedrooms and how many baths do you prefer?
+user: Find me something with 2 bedrooms and 2 baths.
+assistant: Are you planning to rent or buy the property?
+user: Find me a place to rent please.
+assistant: In which area would you like the property in?
+user: I'm looking for something in San Jose.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 houses based on your preferences and 888 Golden Saratoga-Cupertino Apartment Homes at 1546 Maurice Lane is a very good property with a monthly rental of $2,850.
+user: That sounds like a good house.
+assistant: Would you like me to schedule a property visit to this property?
+user: Yes, please schedule a visit on the 1st of this month.
+assistant: Please confirm that you want to schedule a property visit to 888 Golden Saratoga-Cupertino Apartment Homes on March 1st.
+user: Yes, please go ahead. Can you get me their phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit has been scheduled successfully. Their phone number is 408-818-0710.
+user: Does the property have a in-unit laundry and garage?
+assistant: No, it doesn't have a garage or a in-unit laundry.
+user: Thanks a ton! Can you please share the location with Carolyn?
+assistant: Please confirm that you want to share the location 1546 Maurice Lane with Carolyn.
+user: No, on second thoughts, share it with Frank.
+assistant: Okay. So you want to share the location 1546 Maurice Lane with Frank. Right?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with Frank.
+user: Thank you. You have been of great help! Can you now find a cab for me to go there?
+assistant: Do you have a ride preference like Regular or Luxury and how many people will be travelling?
+user: Get me a Pool ride for one.
+assistant: Please confirm that you want a Pool ride for 1 person to 1546 Maurice Lane.
+user: Yes, that sounds perfect. How much will the ride cost and how long will it take for the cab to get here?
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked, it is on its way and should be here in 3 minutes. The ride costs $8.07.
+user: Thank you very much for the assistance.
+assistant: Is there anything else I can do for you?
+user: No, thank you. That'll be all for now.
+assistant: Have a great day!

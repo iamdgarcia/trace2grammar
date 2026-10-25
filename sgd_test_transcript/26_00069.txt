@@ -1,0 +1,30 @@
+user: I want to find one luxurious seat ticket from LA.
+assistant: What city are you traveling to?
+user: I'm going to San Diego.
+assistant: What date are you leaving?
+user: I'm leaving on the 10th of March.
+tool(FindTrains): ok n_results=10
+assistant: I found 10 trains. There is a train leaving at 6:50 am for $93.
+user: What station does it arrive at?
+assistant: It arrives at Santa Fe Depot.
+user: What station does it leave from?
+assistant: This train leaves from Union Station.
+user: Sounds great. I want to find something fun to do there that day. I really enjoy music.
+tool(FindEvents): ok n_results=10
+assistant: Alejandro Sanz is a popular musician playing at Cal Coast Credit Union Amphitheater on March 7th at 7:30 pm.
+user: How much is one ticket?
+assistant: The ticket is $50.
+user: Great. Are there any other events?
+assistant: Angel Olsen is playing at The Observatory North Park on March 4th at 5 pm.
+user: Are there any other events?
+assistant: Bastille is taking place at Cal Coast Credit Union Amphitheater on March 7th at 6:30 pm.
+user: Sounds good. I want to find some attractions there. Is there anything without an entry free that's also kid-friendly?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. Belmont Park is a popular theme park.
+user: What is the phone number?
+assistant: The phone number is 858-228-9283.
+user: Okay, thanks. Can you find me a house to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses available. There's a house rated 4.6 at 1003 Coast Boulevard, La Jolla, California 92037, United States.
+user: That sounds great. That's all for now.
+assistant: Have a great day!

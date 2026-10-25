@@ -1,0 +1,19 @@
+user: I would like to go to the movies. Can you help me search for a movie to watch?
+assistant: What city would you like to watch the movie in?
+user: Please search for movie showings in Oakland.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies, including Blinded by the Light, Good Boys, and Hobbs and Shaw.
+user: Blinded by the Light will work.
+assistant: Would you like to buy tickets?
+user: No, I don't want to purchase the tickets yet.
+assistant: Is there anything else I can help you with?
+user: Yes, I would like to book a restaurant table in the same city. Can you find out if there is a table for one available at Encuentro at twelve pm?
+assistant: You would like to book a table for 1 at Encuentro in Oakland at 12 pm on March 1st, is that correct?
+user: Yes, that's right, thank you. How is the restaurant rated in reviews?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful. The restaurant has a rating of 4.5.
+user: Thank you very much. What are the showtimes for Grand Lake Theatre for the movie you found? Any type of show.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one show at 6:30 pm at Grand Lake Theatre.
+user: That sounds great. That's all I need for now, thank you!
+assistant: Have a great day!

@@ -1,0 +1,14 @@
+user: I would like to put in another alarm.
+assistant: What would be the best time to set for this alarm?
+user: Name it Phone home and make it for 5:15 pm.
+assistant: Verify the upcoming information: Name the new alarm as Phone home and set it for 5:15 pm.
+user: Right, that sounds good.
+tool(AddAlarm): ok n_results=0
+assistant: I apologize but I wasn't able to get the new alarm set. Would you need additional help with anything else?
+user: Would you be able to give it another go? Make the title Cleaning.
+assistant: Please verify the upcoming details: The new alarm will be called Cleaning and the time will be 5:15 pm.
+user: Right, that will do.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm was created without an issue.
+user: Thanks so very much for your help and that's takes care of it for now.
+assistant: Thanks!

@@ -1,0 +1,23 @@
+user: Hi, i need a help, I am looking for a two star smoking allowed hotel in NY, could you help me?
+tool(SearchHotel): ok n_results=10
+assistant: Sure, i will help you, I have found a 2 star hotel, Hotel name is Bklyn House Hotel
+user: Okay, it seems good to me.
+assistant: Okay, Can i book the hotel for you?
+user: No, may be later
+assistant: Okay, Can i help you with anything else?
+user: Please tell me How is the weather there on the 12th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 70 degrees Fahrenheit and There is a 4 Percent chance of rain
+user: Okay, How windy is it gonna be and How humid is it expected to be?
+assistant: The average wind speed should be 7 miles per hour and The humidity is around 17 percent.
+user: Okay, i need to book the hotel
+assistant: okay, Do you want to check in on March 12th and How long will you be staying?
+user: I am looking to check in on the 3rd and i will be staying for three days
+assistant: Please confirm the following details: The hotel name is Bklyn House Hotel and it is located in New York. Your checking in date is march 3rd and you will be staying for 3 days, you need 1 rooms.
+user: Yes, you are right.
+tool(ReserveHotel): ok n_results=1
+assistant: Congratulations, your reservation has been made.
+user: Thank you very much for your help
+assistant: You are welcome, Can i help you with anything more?
+user: No thank you, bye
+assistant: have a great day, bye

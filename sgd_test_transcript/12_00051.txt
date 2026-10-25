@@ -1,0 +1,25 @@
+user: I'm looking for a bus ticket.
+assistant: Where are you departing from and traveling to? When do you plan on leaving?
+user: I'm departing on next Friday from Los Angeles to Fresno.
+tool(FindBus): ok n_results=9
+assistant: There is a bus at 7:40 am for $36.
+user: That sounds good, I'd like to buy a ticket.
+assistant: How many tickets do you need?
+user: I just need one ticket.
+assistant: Okay, you'd like to purchase 1 bus ticket departing on March 8th at 7:40 am from Los Angeles to Fresno without any extra luggage, correct?
+user: No, I need 3 tickets and I do have extra luggage.
+assistant: Okay, you need 3 bus tickets and you have extra luggage, right?
+user: Yes, that is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully purchased the tickets.
+user: Thanks! I also need a hotel in that are. I'm looking for one room at a 3 star hotel that allows smoking.
+tool(SearchHotel): ok n_results=1
+assistant: What about the PIccadilly Inn Airport hotel with a 3 star rating?
+user: What is the address?
+assistant: The address is 5115 East McKinley Avenue.
+user: Okay, that sounds good.
+assistant: Do you want to make a reservation at the hotel?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

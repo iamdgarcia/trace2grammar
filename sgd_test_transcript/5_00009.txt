@@ -1,0 +1,18 @@
+user: Hey, I need to go in a short trip. Can you help me find a bus?
+assistant: What's your destination and where will you be leaving from? Do you have a date in mind?
+user: I'm leaving from NY to Washington next Thursday.
+tool(FindBus): ok n_results=8
+assistant: I found 8 buses that could work. How about one departing at 6 am and that costs $35?
+user: Sounds real good.
+assistant: Should I buy the tickets?
+user: Yes, please. Just 1.
+assistant: So 1 ticket on a bus leaving from New York towards Washington in March 7th at 6 am? And with no extra luggage?
+user: That's all correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed, have a great trip.
+user: How many stops does the bus have?
+assistant: No stops, it's a direct bus.
+user: Thanks a lot.
+assistant: Can I help you further?
+user: No, thanks a lot.
+assistant: Have an amazing day.

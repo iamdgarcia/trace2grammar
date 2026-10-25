@@ -1,0 +1,14 @@
+user: I've heard great things about Fatma Mohamed. Please do an online search for movies that she's acted in.
+assistant: Any particular genre I should search for?
+user: I prefer Ghost movies.
+tool(FindMovies): ok n_results=1
+assistant: All right. The 1 movie I found that may interest you is In Fabric.
+user: Fabric is a good movie.
+assistant: Will there be anything else?
+user: Yes. Please play the movie, with English subtitles.
+assistant: Sure, no problem. Please confirm that you'd like to watch In Fabric with English subtitles.
+user: That is correct, thanks.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is now playing.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Have yourself a great day!

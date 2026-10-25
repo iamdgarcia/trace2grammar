@@ -1,0 +1,25 @@
+user: I'm so bored. I need help finding something interesting to do.
+assistant: Is there anything in particular you would be interested in, such as Music or Theater?
+user: I wouldn't mind seeing a Play.
+assistant: Okay. What city or area would be most convenient for you?
+user: Something around LA would be best.
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events which match the given criteria. How about A Year In Dragonfly at Studio C Artists on March 1st at 7:30 pm?
+user: That's a weird name but it sounds good to me.
+assistant: Would you like to purchase tickets now?
+user: Yes, two tickets.
+assistant: You would like to purchase 2 tickets to A Year In Dragonfly in Los Angeles on March 1st. Is that correct?
+user: No that is not correct. I changed my mind and I actually want 3 tickets.
+assistant: Please confirm the following: You would like 3 tickets and the date of the event is March 1st.
+user: Yes, that is all correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased without issue.
+user: Great. Can you also get me a cab there?
+assistant: What type of ride would you like? You can take request a Luxury ride, Pool ride, or anything else.
+user: A luxury ride would be nice.
+assistant: You would like a luxury ride that can accommodate 3 to Studio C Artists. Is that correct?
+user: Yep. That is.
+tool(GetRide): ok n_results=1
+assistant: The ride has been booked and is reported as being on the way.
+user: Great. Thanks for your assistance.
+assistant: You're welcome. Have a wonderful day.

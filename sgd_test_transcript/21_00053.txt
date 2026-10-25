@@ -1,0 +1,19 @@
+user: would you be so kind to look for songs for me from 2015?
+tool(LookupMusic): ok n_results=10
+assistant: you have a pool of 10 songs, do you think that back it up by prince royce from the album double vision would be a wise choice?
+user: absolutely!
+assistant: do you want to listen to it now?
+user: not now
+assistant: do you have any other request for me to help you with?
+user: yes, I need info about the weather in newark on march 5th
+tool(GetWeather): ok n_results=1
+assistant: the temperature will be around 90 degrees fahrenheit and the probability of rain is 23 percent
+user: I see. play that song now
+assistant: confirm what you want me to do. you want to listen to the song back it up in living room
+user: that's right. I also wish to learn the genre of the song
+tool(PlayMedia): ok n_results=1
+assistant: it's pop music
+user: great
+assistant: do you still need me?
+user: no I don't
+assistant: goodbye

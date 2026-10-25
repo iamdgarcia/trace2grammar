@@ -1,0 +1,22 @@
+user: Are there songs like Reggae by Vybz Kartel of 2019?
+tool(LookupMusic): ok n_results=1
+assistant: 1 song is there from Sexability by Vybz Kartel, the Fuckability.
+user: I like that.
+assistant: Shall I play it now.
+user: Not now, search good movies online.
+assistant: What type movies you like.
+user: Comedy will do.
+tool(FindMovies): ok n_results=5
+assistant: What about, Chhichhore, Good Boys or My Big Fat Greek Wedding?
+user: Search for something else like Violent movies as Brad parker.
+tool(FindMovies): ok n_results=1
+assistant: You have 1 movie Pulp Fiction.
+user: Pulp Fiction is nice. Now play the song we selected.
+assistant: Please confirm, you want to hear Fuckability in Living Room.
+user: Fine, thats all.
+tool(PlayMedia): ok n_results=1
+assistant: Please listen to the song.
+user: Thank you very much.
+assistant: Any other service?
+user: No thats all.
+assistant: Great day, see later.

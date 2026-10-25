@@ -1,0 +1,33 @@
+user: Hi, are there any interesting things I could do?
+assistant: Any preference on the location and type of event, such as a Music or Theater event?
+user: I would like Musical shows in the New York City area please.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like, how about Abbi Jacobson held at Kaufmann Concert Hall on March 11th at 7:30 pm?
+user: Sounds great to me, could you get me a house to stay there too?
+tool(SearchHouse): ok n_results=10
+assistant: Sure, there are 10 houses you may like, how about one with a 4.4 rating at 100 Greenwich Street?
+user: What is their contact number and do they provide laundry service?
+assistant: Yes, they provide laundry service and you cant contact them at +1 917-409-0800.
+user: Are there any other houses for two people?
+tool(SearchHouse): ok n_results=10
+assistant: How about a 4.2 rated house at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA?
+user: Sounds great to me!
+assistant: Would you like me to make a reservation for you?
+user: No, not now. Thanks!
+assistant: How can I further help you then?
+user: Could you help me find direct buses travelling there which will be departing this Saturday from Washington?
+tool(FindBus): ok n_results=7
+assistant: Would you like a bus departing at 6:20 am costing $34?
+user: Sounds great to me!
+assistant: Would you like me to purchase the tickets for you?
+user: No, that is not needed. Thanks!
+assistant: How can I further help you then?
+user: Could you purchase the tickets for the event you found previously?
+assistant: Sure, and how many tickets do you need?
+user: Just 3 will do, thanks.
+assistant: Please confirm your purchase of 3 tickets for the Abbi Jacobson event in New York on March 11th.
+user: Sounds great to me!
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, enjoy!
+user: Thanks so much for your help, that is all I need.
+assistant: Have a great day ahead!

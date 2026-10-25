@@ -1,0 +1,27 @@
+user: I want to hear some electronic musical songs. Could you give me some choices?
+tool(LookupMusic): ok n_results=3
+assistant: I have 3 electronic musical songs. Would you like to hear Gold from the album Built On Glass by Nick Murphy?
+user: Did that album come out in '16?
+assistant: No. That album came out in 2014.
+user: Okay. Yes, that's the song I like.
+assistant: Would you like me to play Gold?
+user: Not right now. I need to check the weather for the 2nd of March.
+assistant: Do you want to check the weather for the 2nd of March in Sacramento?
+user: No. I need to check the weather for Los Altos.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature on the 2nd of March in Los Altos will be 94 degrees Fahrenheit with a 17 percent chance of precipitation.
+user: Yuck. Is it going to be humid or windy?
+assistant: The average wind speed will be 5 miles per hour and the humidity is expected to be around 42 percent.
+user: Oh, okay. Now could you play the song?
+assistant: Please confirm the following information. You want to hear the song Gold, to be played in the living room.
+user: No, could you please cast on the speaker outside?
+assistant: Please confirm the following information. Play the song Gold on the patio.
+user: Sorry, no. I need to have it played on my kitchen speaker.
+assistant: Please confirm the following information: play the song Gold in the kitchen.
+user: Yes, play it in the kitchen.
+tool(PlayMedia): ok n_results=1
+assistant: Playing Gold in the kitchen.
+user: Thanks for your assistance.
+assistant: Do you need help with anything else?
+user: No, that's all. Thanks.
+assistant: Enjoy your music.

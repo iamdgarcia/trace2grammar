@@ -1,0 +1,17 @@
+user: Can you please find me some attractions to visit? I'd like to find a museum without an entry fee in San Francisco.
+tool(FindAttractions): ok n_results=9
+assistant: I found a museum. How about the Cartoon Art Museum?
+user: Would you say this place is child friendly? What is their phone number?
+assistant: Yes, the museum is kid friendly. There phone number is 415-227-8666.
+user: Okay, great. I would like to find a house to stay there. I also need laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house located on 1095 Market Street with a 4.0 rating.
+user: This house is great. I'd also like to find a round trip flight on American Airlines to get there.
+assistant: Which city do you want to fly out of and what dates are you looking to leave and return?
+user: I would like to start my travel tomorrow, leaving out of Portland, OR and return on the 11th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found a flight with American Airlines that departs at 9:15 pm and is a connecting flight. The return flight departs at 2:30 pm and costs $227.
+user: That sounds good.
+assistant: Can I help you with anything else?
+user: No thank you, that is all.
+assistant: Okay, have a good day.

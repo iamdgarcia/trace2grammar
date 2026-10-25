@@ -1,0 +1,39 @@
+user: I am badly in a need for a haircut. So find me a unisex salon in the SF area.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options for you. There is one good salon in San Francisco called 1512 Barber shop.
+user: Get me their phone number.
+assistant: You can call them at 415-286-4371.
+user: Tell me their location and average rating.
+assistant: You will locate them at 1532 20th Street and they have a rating of 4.8 on average.
+user: Yeah sounds great.
+assistant: Do you want me to book you an appointment there?
+user: Yeah go ahead and make the appointment for four pm.
+assistant: What will be the day of your appointment?
+user: I want the salon visit to be at 1:30 pm on 12th of this month.
+assistant: So do you confirm that you want an appointment at 1:30 pm at 1512 Barber Shop for March 12th?
+user: Nope. I will visit it on the 5th of March.
+assistant: So you want the appointment on March 5th at 1:30 pm?
+user: Yeah that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I got your appointment.
+user: Thanks. Now I need to eat there on the same day so find me some restaurant.
+assistant: What type of cuisine do you want.
+user: I really like something that serves Barbecue.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 such restaurants. What about the 1760 at San Francisco?
+user: Are there other restaurant options you can suggest?
+assistant: You will like the 25 Lusk which is a nice restaurant in San Francisco.
+user: Tell me other restaurant options.
+assistant: What would you think of 3rd Cousin in San Francisco? It is a popular restaurant.
+user: Is it an expensive restaurant.
+assistant: That restaurant is quite pricey.
+user: Cool. I want a table for two booked at the restaurant for evening 7:15.
+assistant: So would you confirm that you want a table for 2 people a the 3rd Cousin in San Francisco at 7:15 pm on March 5th?
+user: Sure. What is the user rating for the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a user rating of 4.6 and unfortunately I failed to make the reservation. Would you like reservation for 2 people at 3rd Cousin restaurant on March 5th at 7:30 pm?
+user: Yeah that will do.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have your reservation made.
+user: Thanks a lot. That is it.
+assistant: Have a enjoyable day!

@@ -1,0 +1,48 @@
+user: I'm looking for a therapist.
+assistant: What city do you want to search in? Do you want a Psychiatrist, Psychologist, or something else?
+user: I'm looking for a Family Therapist in Santa Rosa.
+tool(FindProvider): ok n_results=8
+assistant: How about the Family Counselor Auer Patience in Santa Rosa?
+user: What is their address/
+assistant: Their address is 2455 Bennett Valley Road.
+user: What is their phone number?
+assistant: Their phone number is 707-526-7604.
+user: What other Family Counselors are there?
+assistant: There is the Family Counselor Ayne Shore in Santa Rosa.
+user: That sounds good.
+assistant: Do you want to make an appointment?
+user: Yes, I do.
+assistant: What time do you want the appointment for?
+user: I want it at 10:00.
+assistant: What date do you want the appointment?
+user: I'd like it on the 3rd of March.
+assistant: Okay, you want an appointment with Ayne Shore on March 3rd at 10 am, right?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=0
+assistant: Unfortunately, I was unable to confirm the appointment. Is there anything else I can help you with?
+user: Can you try booking the appointment at 15:00?
+assistant: You want to make an appointment with Ayne Shore on March 3rd at 3 pm, right?
+user: Yes, that is correct. What is their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed the appointment and you will get an email soon. Their phone number is 707-696-6978.
+user: Okay, thanks. I also need to request a payment.
+assistant: How much do you want to request? Who do you want to request it from?
+user: I want to request 45 dollars from Jerry.
+assistant: Okay, you want to make a public request for $45 from Jerry, right?
+user: Yes, that works.
+tool(RequestPayment): ok n_results=1
+assistant: I have requested the money.
+user: Thank you! I also need to find a restaurant serving Pho on that day.
+tool(FindRestaurants): ok n_results=1
+assistant: How about Kettles Vietnamese Bistro in Santa Rosa?
+user: Yes, that works. I'd like to make a reservation there.
+assistant: What time do you want it for?
+user: I want the reservation for half past 11 in the morning.
+assistant: Okay, you want to reserve a table for 2 at Kettles Vietnamese Bistro in Santa Rosa on March 3rd at 11:30 am, right?
+user: Yes, that is correct. How expensive is the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have confirmed the reservation. It is moderate priced.
+user: Thanks!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

@@ -1,0 +1,30 @@
+user: Find me something fun to do.
+assistant: What type of events do you like and what city shall I look in?
+user: Find me something involving Drama in London, UK.
+tool(FindEvents): ok n_results=10
+assistant: A Right Royale Tea is happening at Amba Hotel Charing Cross on March 14th at 7 pm.
+user: What is the price per ticket?
+assistant: The ticket price is $50.
+user: Where is the place at?
+assistant: They are located at Strand.
+user: That is fine. Find me something else to do on the 14th of March.
+tool(FindEvents): ok n_results=10
+assistant: Armia is happening at The Dome on March 14th and starts at 4:30 pm.
+user: That is perfect.
+assistant: Shall I get you tickets now?
+user: No, not right now. Find me a hotel to stay in near there.
+tool(SearchHotel): ok n_results=10
+assistant: 45 Park Lane is a 5 star hotel and is 1 of 10 results that search found.
+user: How can I contact them?
+assistant: You can contact them at +44 20 7493 4545.
+user: Do they allow smoking and what does a room cost per night?
+assistant: They do not allow smoking and a room is $375 a night.
+user: That is good.
+assistant: Shall I make hotel reservations for you?
+user: No, not right now. Purchase 2 event tickets for me.
+assistant: You want 2 tickets to see Armia in London on March 14th, correct?
+user: That is right. What is the ticket price and what is their address?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are booked. A ticket costs $60 and they are playing at 2A Dartmouth Park Hill. Have fun!
+user: Thanks a bunch. That is everything for now.
+assistant: Have a good day.

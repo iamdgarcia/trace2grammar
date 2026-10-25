@@ -1,0 +1,32 @@
+user: Do you have any attraction recommendations for London, England.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like. 30 St Mary Axe (The Gherkin) is a Historical Landmark that could be interesting for you.
+user: Is it okay to bring kids there?
+assistant: Yes, it's a good place to bring kids.
+user: Can you give me their phone number. And is does it have free entry?
+assistant: You can call them at 20 7071 5029. And there is no free entry.
+user: Alright, cool. I also need a rental car when I'm there.
+assistant: What is the date range for having the car? And what time would you like to pick it up?
+user: I want it from today at 2 pm until March 4th.
+assistant: And pick up will be in London?
+user: Yes, that's right.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I've found 10 available cars. There's a nice Sedan Audi A8 at Heathrow International Airport you might prefer.
+user: What else is available?
+assistant: There's a nice Sedan Buick Regal Sportback available at Gatwick International Airport.
+user: Let's keep looking.
+assistant: There's a nice SUV Citroen C5 at Heathrow International Airport.
+user: I like that one, let's reserve it.
+assistant: Will you need insurance?
+user: No, that won't be necessary.
+assistant: I'll reserve you the SUV at Heathrow International Airport for pick up on March 1st at 2 pm and drop off on March 4th, is that correct?
+user: Yes, that's correct. What's the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: It is $45.00 for a day. I have reserved the car for you.
+user: Thanks a lot. I also want to share a location with Lori, it's 30 St Mary Axe (The Gherkin).
+assistant: I'll share 30 St Mary Axe (The Gherkin) with Lori, is that right?
+user: Yes, please do.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks, you've been great. I'll be going now.
+assistant: Have a pleasant day!

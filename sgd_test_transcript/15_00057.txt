@@ -1,0 +1,19 @@
+user: I just got a new job and I'm moving. Can you help me find a new place to live?
+assistant: Okay, what area should I search in? How many bathrooms would you like?
+user: I'm moving to San Jose and I need a two bathroom.
+assistant: And how many bedrooms will you need? Would you like to rent or buy?
+user: I'd like to buy a place. I'll need two bedrooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found a place at 888 Golden Saratoga-Cupertino Apartment Homes that you might like. The cost is $2,600,000 and the address is 1546 Maurice Lane.
+user: Does this place have a garage? And can you give me the phone number to the property?
+assistant: There is no garage. The phone number is 408-818-0710.
+user: Okay, sounds good. Let's schedule a visit to the property on the 14th of March.
+assistant: Okay, let's confirm: You are scheduling a visit at 888 Golden Saratoga-Cupertino Apartment Homes on March 14th.
+user: Yes, that's right. Does the house have a washer dryer?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit. No, it doesn't have a washer dryer.
+user: Can you also tell me my scheduled alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm for Get up set for 7 am.
+user: Okay, thanks. That's all for now.
+assistant: Thanks.

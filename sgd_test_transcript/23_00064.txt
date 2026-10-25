@@ -1,0 +1,34 @@
+user: I would like to make a payment for 118 bucks and I would like to make this transfer private.
+assistant: Did you want me to use app balance or credit card and what is the name of the contact?
+user: I would like to use my in-app balance and make it with Mahmoud.
+assistant: Please confirm you're making a private transaction for $118 from your app balance with Mahmoud.
+user: Correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successful and the recipient should receive it soon.
+user: Thank you! Can you help me find a train?
+assistant: Which city did you wish to leave from and which date did you want to travel?
+user: I'd like to find tickets from Los Angeles on the 13th.
+assistant: Which city are you traveling to?
+user: I am going to San Diego.
+tool(FindTrains): ok n_results=10
+assistant: I found a train leaving at 6:50 am for $51.
+user: That should work.
+assistant: Did you want me to get tickets?
+user: Perhaps later. I need to think about it.
+assistant: Did you need help with anything else?
+user: How is the weather looking like in San Diego on the 13th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is looking like 75 degrees F with a 19 % chance of rain.
+user: Sure, that sounds right. Could you help me get tickets on the train you found>
+assistant: Did you wish to get travel insurance?
+user: Yes, I would like to get trip insurance.
+assistant: How many tickets were you looking for?
+user: I will need one ticket.
+assistant: Please confirm you're booking a Value ticket for 1 from Los Angeles to San Diego on March 13th leaving at 6:50 am.
+user: No, I will need two tickets.
+assistant: Please confirm your booking is for 2 people and has trip insurance.
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been confirmed.
+user: Thank you very much for your help. That's all I need for now.
+assistant: Have a good day.

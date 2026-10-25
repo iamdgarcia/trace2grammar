@@ -1,0 +1,25 @@
+user: Could you help me find a rental car in Sunnyvale from next Wednesday?
+assistant: What time will you be picking it up?
+user: Preferably at 6:30 pm.
+assistant: When will you be returning it?
+user: On March 10th please. And can you make it a sedan?
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 available options. One is a nice car at Murphy and Evelyn. It's a Dodge Charger, which is a sedan.
+user: What's the other option?
+assistant: The other is a Subaru Impreza at Murphy and Evelyn, which is also a Sedan.
+user: That one sounds good. Can you reserve me event tickets too? I'd like to see Drunk Shakespeare.
+assistant: How many tickets do you need? In which city? Do you have a preferred date?
+user: I'd like something in Vancouver, maybe Cinderella Kids. I need 2 tickets for next Wednesday.
+assistant: Please confirm: 2 tickets to Cinderella Kids for March 6th in Vancouver.
+user: Yes, that's great.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed. Have fun!
+user: Can you also reserve that rental car?
+assistant: Will you need insurance?
+user: Yes, please. I would like insurance.
+assistant: Please confirm: a sedan with insurance from March 6th at 6:30 pm until March 10th from Murphy and Evelyn.
+user: Yes, that's correct. How much does it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: It's been reserved. It'll be $49.00 per day.
+user: Thanks for your assistance, that'll be all.
+assistant: Have a great night!

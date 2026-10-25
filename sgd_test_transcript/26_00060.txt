@@ -1,0 +1,32 @@
+user: I am searching for a round trip flight.
+assistant: When will you take the return flight?
+user: It will be on March 14th.
+assistant: Where do you want to go? From which city are you start from? When will you travel?
+user: On Monday next week, I will move to San Diego from SFO. I need Economy tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Are you interested in Alaska Airlines layover flight and it will start at 12:25 pm. The return flight will start at 1:05 pm. The price is $204.
+user: Shall I book it for 1 person?
+assistant: Yes. You are correct. It is for 1 person.
+user: What is the arriving time of the return flight?
+assistant: It will reach at 4:25 pm.
+user: It is nice. I wish to search for a house with 3.9 or higher rating to stay there. I prefer laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: A fantastic house is situated at 1003 Coast Boulevard, La Jolla, California 92037, United States with the rating 3.9.
+user: I need their contact number.
+assistant: Their contact number is +1 858-224-7600
+user: It is good.
+assistant: Shall I confirm this house.
+user: Yes. Please. I wish to check in on 6th of March. It is for 1 person.
+assistant: Will you check out on March 14th or any other date?
+user: I will check out on March 9th.
+assistant: Kindly ensure that, On March 6th, the house is booked for 1 person at San Diego. You will check out on March 9th.
+user: Yes. It is good.
+tool(BookHouse): ok n_results=1
+assistant: Your booking is done.
+user: I wish to see some attractions like Theme Park.
+tool(FindAttractions): ok n_results=3
+assistant: I searched and found 3 attractions for you. You will check out Belmont Park. It is a Theme Park.
+user: Okay. Nice.
+assistant: Shall I help you in some other things?
+user: Nope. Thank you so much for your help.
+assistant: Enjoy the day.

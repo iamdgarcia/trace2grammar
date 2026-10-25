@@ -1,0 +1,25 @@
+user: I want to find a hotel in London, England and I need to book rooms there. Can you help me to find the suitable one?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, I got 10 hotel details. What do you think about the one located at 45 park Lane which is also a 5 star hotel? Do you like to stay there?
+user: That's great and thanks.
+assistant: Shall I reserve rooms in this Hotel?
+user: I will ask it later.
+assistant: What do you want to do now?
+user: I want to search for some attractive places around there. Find me a one with free entrance and I generally like to go to Museum.
+tool(FindAttractions): ok n_results=10
+assistant: I got a Museum named BODY WORLDS London which is the popular one in London among the 10 results.
+user: How Can I contact them?
+assistant: You can contact them over phone using number 330 223 3233.
+user: That's nice. Now, I need your help to book rooms at the Hotel that you have found for me before. Book it from March 2nd.
+assistant: What is your check out date?
+user: I need to stay there for five days and you can book it accordingly.
+assistant: That's okay. Please confirm finally to book 1 room in a Hotel called 45 Park Lane for 5 days from March 2nd in London.
+user: Please change the booking for two rooms for six days.
+assistant: Please confirm to proceed with booking for 2 rooms in the same hotel for 6 days.
+user: Yes, correct and you can go ahead. Also let me know their address for my reference.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked the rooms and please note that they are located at 45 park Lane.
+user: It's okay. Thanks for the details and booking.
+assistant: What else you want now?
+user: No, that's all for now. Thanks.
+assistant: Have a great day.

@@ -1,0 +1,32 @@
+user: I'm going on a trip soon. Can you find me train tickets for the 8th of this month? Any class is fine.
+assistant: Sure, what city are you leaving from?
+user: I'm leaving from San Francisco.
+assistant: Ok, and where are you going?
+user: I'm going to Sacramento.
+tool(FindTrains): ok n_results=9
+assistant: Alright, I found 9 possible train rides. There's one for $48 that leaves at 6:10 am. How about that?
+user: Sure, that sounds fine.
+assistant: Ok, do you want me to book tickets?
+user: No, not yet.
+assistant: Ok, anything else I can do?
+user: Yeah, can you look up some interesting things to do around there on the 10th of March? A music event would be nice.
+tool(FindEvents): ok n_results=5
+assistant: Sure, I found 5 events that you might like. There's the Aftershock Music Festival in Discovery Park on March 10th starting at 5 pm. How about that?
+user: Yes, that sounds fun.
+assistant: Do you want to get tickets for it?
+user: No, not right now.
+assistant: Ok, anything else I can do then?
+user: Yes, can you look up some other attractions that are kid-friendly, like a Theme Park maybe?
+tool(FindAttractions): ok n_results=2
+assistant: Sure, I found 2 theme park events you might like. How about Fairytale Town?
+user: Is that free? And what's their number?
+assistant: No, it's not free entry unfortunately. Their number is 916-808-5233.
+user: Ok, that's fine. Can you look up houses to stay around there while you're at it?
+tool(SearchHouse): ok n_results=10
+assistant: Sure, I found 10 possible options. There's a nice 4.4 star house at 100 Capitol Mall. How about that?
+user: Sure, that sounds great.
+assistant: Ok, do you want to make a reservation?
+user: No, not right now.
+assistant: Ok, anything else I can help with then?
+user: No, that's all for now. Thanks.
+assistant: No problem, have a good day.

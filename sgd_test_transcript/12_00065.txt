@@ -1,0 +1,24 @@
+user: Would you help me to find bus for the date 13th of March for three people.
+assistant: To which place are you going?
+user: I like to visit Vegas.
+assistant: Which is your departing place?
+user: I am staring from Anaheim.
+tool(FindBus): ok n_results=4
+assistant: I have short listed 4 buses of your choice..What is your opinion about the bus starting at 6:50 am with cost $37.
+user: Would you search some other buses?
+assistant: What is your opinion about the bus departing at 8:10 am with cost $37.
+user: Any other buses can you find? I like to leave on march 8th.
+tool(FindBus): ok n_results=4
+assistant: What is your opinion about the bus starting at 8:30 am with price $38.
+user: This is cool. I like buy the tickets in this bus.
+assistant: please give the confirmation details: Your bus ticket from Anaheim for the date march 8th for 3 people at 8:30 am with destination Las Vegas.
+user: This is perfect.
+tool(BuyBusTicket): ok n_results=1
+assistant: I confirmed your ticket.
+user: Can i know from which station it departs?
+assistant: Departing station is Anaheim Bus Station.
+user: Thanks for your help. Can you search me hotels in that area?
+tool(SearchHotel): ok n_results=7
+assistant: What is your opinion about the hotel Best Western Plus Las Vegas West with 3 star rating?
+user: This is fine..This much is okay for now.
+assistant: Have a great day..bye..take care.

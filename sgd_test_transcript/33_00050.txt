@@ -1,0 +1,15 @@
+user: Hey, can you help me find a unisex salon in San Mateo?
+tool(FindProvider): ok n_results=10
+assistant: How about Elite Hair Design in San Mateo?
+user: Sounds good to me. How's the weather going to be there on the 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is expected to be 87 degrees Fahrenheit, and there is an 18 percent chance of rain.
+user: How humid do they expect it to be?
+assistant: Around 27 percent.
+user: Works for me. Can you book me an appointment at the salon for morning 11 on that day?
+assistant: Please confirm the following: You would like me to book you an appointment at Elite Hair Design in San Mateo for March 14th at 11 am.
+user: Yes, I confirm. What's their address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has successfully been booked. The address of the salon is 2260 Palm Avenue.
+user: Cool. Thank you for your help.
+assistant: You're welcome. Enjoy the rest of your day.

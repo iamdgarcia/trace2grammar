@@ -1,0 +1,9 @@
+user: I would like to reserve a rental car in Washington, to pick up at 12:45.
+assistant: What dates would you like to rent the car?
+user: I will need it from the 6th until the 10th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available. One is an Alfa Romeo Stelvio SUV available at Dulles International Airport.
+user: How much does that one cost per day?
+assistant: It will be $49.00 per day.
+user: Sounds great, thanks, that's all I need.
+assistant: Have a great day!

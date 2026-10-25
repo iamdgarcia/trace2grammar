@@ -1,0 +1,26 @@
+user: Hey, I want to find some tunes to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: You might like If I Told You. It's by Darius Rucker from the album When Was The Last Time.
+user: Sure, that sounds perfect. Can you tell me if there are any movies worth seeing online?
+assistant: Are you interested in any specific genre of movies?
+user: Sure, Fight films are cool, especially if John Travolta is in them.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie like that, it's called Pulp Fiction.
+user: Pulp Fiction sounds like a winner!
+assistant: Would you like to watch this movie now?
+user: No, not right at this time. Actually, can you play the song you mentioned earlier? Any device is fine.
+assistant: So you would like to hear If I Told You in your Living Room, right?
+user: No. Actually let me hear it on my patio device please.
+assistant: So again, you want to hear If I Told You on Patio, correct?
+user: Yes, that's it exactly. Do you know what genre of music this song falls under and the year it was released?
+tool(PlayMedia): ok n_results=1
+assistant: The song is considered a Country song and it was released in 2017. Happy listening!
+user: I would like to see my existing alarms now, please.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm titled Wake Up for 7:30 am
+user: Excellent. Thank you.
+assistant: Are you looking to create a new alarm now?
+user: Not at the present time, thanks.
+assistant: Was there anything additional that you need assistance with?
+user: No, you've been really helpful. Thanks again
+assistant: Have a lovely day.

@@ -1,0 +1,28 @@
+user: Hey, can you help me find a train? I'm going on a short trip.
+assistant: For which date? Where are you departing from and where are you going?
+user: I'm going from LA to Anaheim, CA on Friday next week.
+tool(FindTrains): ok n_results=10
+assistant: I found 10 possible trains. There's a $35 one departing at 6 am.
+user: Any other ones?
+assistant: There's a $36 one departing at 6:10 am.
+user: From which station does it depart and where does it arrive?
+assistant: It leaves from Union Station towards Anaheim Intermodal Center.
+user: Sounds like a good one.
+assistant: Should I buy the tickets?
+user: No, not now, thanks.
+assistant: Can I help you with anything else?
+user: Can you find me something to do then? Like a play I could go to.
+tool(FindEvents): ok n_results=1
+assistant: There's 1 very popular play called Jesus Christ Superstar at Stage Door Repertory Theatre on March 1st at 7 pm.
+user: How much is the ticket?
+assistant: It costs $45 dollars.
+user: Shoulda great. Any other attractions happening there too?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 others. There's a Sports Venue, the Angel Stadium of Anaheim, that's very popular.
+user: Is it child friendly? What's their phone number?
+assistant: It's very child friendly. Their number is 714-940-2000.
+user: Okay, good. I also need help finding a house over there.
+tool(SearchHouse): ok n_results=10
+assistant: I found a great one with a 4.2 rating at 1050 West Ball Road.
+user: Sounds awesome, that's all I need.
+assistant: Glad to be of help, goodbye!

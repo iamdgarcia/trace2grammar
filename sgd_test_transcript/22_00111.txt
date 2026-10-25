@@ -1,0 +1,29 @@
+user: Find for me some movies featuring Michelle Caspar.
+assistant: What type of movie do you prefer?
+user: Some Comedy-drama will be great for me.
+tool(FindMovies): ok n_results=1
+assistant: 1 movie I have for you that you may like.How about Give Me Liberty?
+user: Give Me Liberty sounds great.
+assistant: You want to watch now the movie?
+user: No,not now.Find me some attractions in LA ,I don't have certain preferences.
+tool(FindAttractions): ok n_results=10
+assistant: I have for you 10 attractions who may like you.You may check out a Historical Landmark called Angels Flight Railway.
+user: Great.Search for me please some Pop song.I like songs by Eurielle and I heard that the album Arcadia is really good.
+tool(LookupMusic): ok n_results=1
+assistant: What is your opinion about Hate Me by Eurielle from album Arcadia.
+user: Yes, I like this one.
+assistant: You want to listen now?
+user: Sure.Play it on kitchen speaker.
+assistant: Play the song Hate Me in Kitchen.Is that correct?
+user: Yes very good.This song come out in seven years ago?
+tool(PlayMedia): ok n_results=1
+assistant: Is from 2015.Enjoy it!
+user: Thanks.Play for me the movie that you found.
+assistant: Play Give Me Liberty with subtitles in English.I'm right?
+user: Yes is good.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is started.
+user: Thank you very much.
+assistant: May I help you with something else?
+user: No.Thank you for all.
+assistant: Have a great day!

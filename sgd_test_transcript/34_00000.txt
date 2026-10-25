@@ -1,0 +1,20 @@
+user: Think you can help me find a shopping area in Paris?
+tool(FindAttractions): ok n_results=1
+assistant: Sure. I've found 1 in that area. You should check out Le Village Royal, which is a shopping area.
+user: Definitely. Can you find me a house to stay there? It's just for one person, me. The rating should be 4.6 or higher, and I need laundry service.
+tool(SearchHouse): ok n_results=9
+assistant: I've found 9 houses in the area that match your criteria. There's a nice house with a rating of 4.6 at 15 Rue Boissy d'Anglas, 75008.
+user: What else is there? And change the criteria to accommodate three people.
+tool(SearchHouse): ok n_results=8
+assistant: I've found 8 houses in the area that match your criteria. There's a nice house with a rating of 4.6 at 18 Rue du Cirque, 75008. How does that sound?
+user: Sounds alright. Can I get a contact number?
+assistant: Their phone number is listed as +33 1 43 87 10 10.
+user: That house will do perfect. Can you help me book a round trip flight to Paris now?
+assistant: Certainly. On which day would you like to depart and return? As well, which city would you like to depart from?
+user: I'd like to leave on the 3rd of this month from Philadelphia and return on March 14th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I've found 1 ticket that would work for you. Would you like to fly with American Airlines? The departing flight is a connecting flight and leaves at 1:20 pm. The return flight will leave at 8:25 am, and the ticket cost is $426.
+user: Okay, nice. That will be all for now. Thank you.
+assistant: You are most welcome. Never hesitate to ask for anything.
+user: Okay. I'll talk to you later, bye.
+assistant: Good bye.

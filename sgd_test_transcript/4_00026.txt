@@ -1,0 +1,26 @@
+user: I need help finding somewhere to eat.
+assistant: What area are you interested in and what kind of food do you like?
+user: I want a Barbecue place in San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: 1760 is a good place in San Francisco.
+user: What else is there?
+assistant: 25 Lusk is a good place in San Francisco.
+user: Can you give me their phone number?
+assistant: You can reach them at 415-495-5875.
+user: And what is their user rating?
+assistant: They have 4.4 user rating.
+user: Alright, that seems good.
+assistant: Do you want me to book you a table?
+user: Yes, please do that.
+assistant: What time do you want the table?
+user: I want it for 7:15 pm.
+assistant: I'll book you a table for 2 at 25 Lusk in San Francisco for March 1st at 7:15 pm. Does that work for you?
+user: No, it should be a table for 4 and for seven pm.
+assistant: So a table for 4 at 7 pm. Are these the changes you wanted?
+user: Yes. And can you tell me their address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are located at 25 Lusk Street. I have booked you table.
+user: Thanks a lot.
+assistant: Do you need me to help with anything else?
+user: No, thanks again.
+assistant: Have a fine day.

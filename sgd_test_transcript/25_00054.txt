@@ -1,0 +1,23 @@
+user: I am bored and want to watch a movie.
+assistant: Where are you located?
+user: I am in Morgan Hill.
+tool(FindMovies): ok n_results=5
+assistant: Would you like to see Good Boys, Hobbs and Shaw or Hustlers?
+user: I want to see a comedy, so I guess it would have to be Good Boys. What music can I listen to right now?
+tool(LookupMusic): ok n_results=10
+assistant: Would you like to hear Rocketeer by Far East Movement from the album Free Wired?
+user: Not really. What else is there?
+assistant: Would you like to hear Lose My Mind by Brett Eldredge from the album Illinois?
+user: Yes, that would be fine.
+assistant: Would you like to listen to the song?
+user: Yes, I do.
+assistant: You would like to listen to Lose My Mind in the Living room?
+user: No, on the patio speaker.
+assistant: You would like to listen to Lose My Mind on the patio?
+user: No, I want to hear it on the speaker in kitchen.
+assistant: You would like to listen to Lose My Mind in the kitchen?
+user: Yes. What kind of music is it and when was it first released?
+tool(PlayMedia): ok n_results=1
+assistant: It is a country song from 2015. Enjoy the music.
+user: Thanks very much.
+assistant: Sure, no problem.

@@ -1,0 +1,31 @@
+user: I want to visit some nice and attractive places in San Fran. Do you help me to find the one with free entrance?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, what about a Historical Landmark named Alcatraz. Do you like to visit there? This is the best place among the 10 results that I got searched.
+user: Okay, Let me know other places that you have searched for me.
+assistant: Do you want to visit to a Nature Preserve? If so please visit Aquarium of the Bay which will be nice place to visit.
+user: I want some other places and please suggest something different from your search list.
+assistant: How about a Museum?. I think all people like to visit Museum once. Do you like the same then you can try to visit Cartoon Art Museum.
+user: I need a place that is suitable and safest place for Kids also. Is this Museum is safe for Kids.
+assistant: Of-course, you can bring your kids to this place as this is safe and enjoyable place for kids.
+user: Let me know their contact number to decide.
+assistant: It is 415-227-8666.
+user: Thanks for the details. We will discuss about this later. Now I want to search for a movie to watch at AMC Kabuki 8. I like Mystery movies and please find me the one for regular show.
+tool(FindMovies): ok n_results=1
+assistant: What about Official Secrets? This is also the same genre as you like.
+user: Search for something else which could be a Family movie.
+tool(FindMovies): ok n_results=1
+assistant: I got a movie named The Farewell. Do you like to watch it?
+user: Yes, that is great. I like to watch the Farewell movie. I also want another movie which I prefer to watch online. Can you search for the one?
+assistant: Let me know your favorite kind of movies to search for.
+user: Find me the one with Eccentric story.
+tool(FindMovies): ok n_results=1
+assistant: Is the movie named Once Upon a Time In Hollywood is okay to you?
+user: Yes, Once upon a Time is nice and I like to watch it.
+assistant: Shall I play it now?
+user: Yes, please do the same.
+assistant: Please confirm to play the movie Once Upon a Time In Hollywood with English subtitles.
+user: That is confirmed and you can proceed now. What is the name of actor of this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Timothy Olyphant was acted in it and the movie was started playing now.
+user: Thanks and that's all I want.
+assistant: Have a good day.

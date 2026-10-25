@@ -1,0 +1,42 @@
+user: I want to find a salon to get my hair done. Can you search for a unisex salon in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: Atelier Salon Willow Glen is located in San Jose.
+user: OK, that sounds good, thanks.
+assistant: Would you like to book an appointment there?
+user: Um, not right now, maybe later.
+assistant: Is there anything else I can help you with?
+user: Yes, I also need to find a therapist in that area.
+assistant: Should I look in San Jose?
+user: Yes, that's where.
+assistant: What type of therapist are you looking for, for example, a Psychiatrist, a Family Counselor, or another type?
+user: I want to look for a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists that match those criteria in San Jose, including Barskyex Bryna G., a Psychologist.
+user: Can you look for some more therapists? Search for a Family Therapist in Walnut Creek.
+tool(FindProvider): ok n_results=4
+assistant: Andreotti Daniel is a Family Counselor in Walnut Creek.
+user: What is the address and phone number?
+assistant: The address is 45 Quail Court # 200. The phone number is 925-930-9650.
+user: That sounds good.
+assistant: Do you want to book an appointment with the therapist?
+user: Yes, I will go ahead and do that.
+assistant: What date and time would you prefer to make the appointment for?
+user: Let's try to make the appointment on the 13th at 11 am.
+assistant: You are booking an appointment with Andreotti Daniel at 11 am on March 13th, is this correct?
+user: No, I think I would rather just make it for later today. Is there an opening at half past 2 in the afternoon?
+assistant: You are making an appointment for 2:30 pm on March 1st, is that correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, I was not able to book the appointment with Andreotti Daniel for that time. There is an available appointment at 2 pm on March 1st.
+user: Yes, I'll take that appointment.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been successfully booked. An email confirmation should reach you soon.
+user: OK thanks. I would also like to make an appointment today at the salon you found.
+assistant: What time would you like the appointment to be at?
+user: I would like it to be at 09:45.
+assistant: You are booking an appointment at the hair stylist Atelier Salon Willow Glen at 9:45 am on March 1st, is this correct?
+user: Yes, that's right. What are the customer reviews like?
+tool(BookAppointment): ok n_results=1
+assistant: The salon's average rating is 4.3. I'm sorry, I was not able to book the appointment at Atelier Salon Willow Glen for that time. There is time on March 1st at 10 am, would you like to book the appointment for that time?
+user: No, that's ok. Thank you, that's all for now.
+assistant: Have a pleasant day!

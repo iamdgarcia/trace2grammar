@@ -1,0 +1,11 @@
+user: I need a bus for two people.
+assistant: Where would you be going and from where would you be leaving?
+user: I am leaving San Francisco for Fresno.
+assistant: When would you like to leave?
+user: I want to leave on the 7th of March.
+tool(FindBus): ok n_results=9
+assistant: There is a bus ride for $31 that leaves for 7 am.
+user: That would be great.
+assistant: You would like tickets?
+user: No, not at this time. That would be all.
+assistant: Enjoy your day.

@@ -1,0 +1,30 @@
+user: Hey, can you help me get 1 room at a four star hotel?
+assistant: In which city?
+user: In London, UK please.
+tool(SearchHotel): ok n_results=10
+assistant: The Ace Hotel London is a great 4 star hotel there.
+user: What's their phone number and address?
+assistant: Their number is +44 20 7613 9800 and they're located at 100 Shoreditch High Street.
+user: Sounds like a good one.
+assistant: Should I make a reservation?
+user: Maybe later, help me find some round trip flights going there first.
+assistant: Are you leaving on March 8th? Where will you be departing from and when do you plan to return?
+user: I want to leave from Washington on the 4th of March and return on the 10th of this month.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I found a great American Airlines flight costing $582. It's a layover flight. It departs at 2:55 pm and it returns at 12:45 pm.
+user: Great. I'll want to make a reservation at the hotel you found.
+assistant: Will you check in on March 4th?
+user: Yes, I will.
+assistant: And for how long will you be staying?
+user: For 5 days I believe.
+assistant: So a 5 days reservation for 1 room at the Ace Hotel London in London, checking in on March 4th. Is that correct?
+user: Yes, all correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation was successful.
+user: Thanks a lot. Can you find me some child friendly attractions over there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10. The 30 St Mary Axe (The Gherkin) is a great Historical Landmark there.
+user: Good to know.
+assistant: Anything else I can do to help?
+user: That was all, thank you.
+assistant: Have a wonderful day.

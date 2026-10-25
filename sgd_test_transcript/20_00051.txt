@@ -1,0 +1,32 @@
+user: I need to find a car to rent in Portland, OR.
+assistant: What are the dates you will need the car and for how long?
+user: I will need to get it on the 6th of March and have it until the 11th.
+assistant: What is the ideal pick up time to get it?
+user: I would prefer to pick it up at 6 pm.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I have 9 cars that fit your needs. There is a SUV Alfa Romeo Stelvio that is good and located at the Portland Bus Station.
+user: What it the daily cost?
+assistant: The price each day is $39.00.
+user: Can you look for other options?
+assistant: There is a good Sedan Buick Regal Sportback that is at the PDX International Airport.
+user: What is the price of it each day?
+assistant: The daily cost is $33.00.
+user: Can you check for other choices? I would like a Sedan.
+tool(GetCarsAvailable): ok n_results=3
+assistant: I found 3 cars matching your needs. There is an attractive Sedan Hyundai Ioniq that can be picked up at the Portland Bus Station.
+user: I like that. Can you look for house for me there?
+tool(SearchHouse): ok n_results=10
+assistant: I was able to locate 10 houses that you may like. There is a lovely house with a 4.1 rating and it can be found at 1000 Northeast Multnomah Street.
+user: Is there a laundry facility there? Could you give me their phone number?
+assistant: There is a laundry facility and they can be reached at +1 503-281-6111.
+user: This sounds like a fantastic house. Will you go ahead and reserve that rental car you located for me?
+assistant: Would you like to purchase insurance for extra?
+user: Yes, I do want to purchase insurance.
+assistant: You will be picking up a Sedan from Portland Bus Station on March 6th at 6 pm and dropping off on March 11th. The rental will include insurance. Are these details correct?
+user: Yep, that is correct. What will be the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: The price each day is $50.00 and the rental car has been booked for you.
+user: I really appreciate all your help.
+assistant: Would you like any more help with anything else?
+user: Nope, thanks for helping me.
+assistant: Enjoy the day.

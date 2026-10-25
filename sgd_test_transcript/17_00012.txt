@@ -1,0 +1,29 @@
+user: I need a unisex salon in SF can you find me one please?
+tool(FindProvider): ok n_results=10
+assistant: I pulled up 10 so far - 1512 Barber Shop is supposed to be good and are in San Francisco.
+user: Wait, I meant in Mountain View please.
+tool(FindProvider): ok n_results=6
+assistant: I have located 6 in Mountain View one of which is Christine'S Salon.
+user: I would like to try that one.
+assistant: Should I schedule you?
+user: Not just yet.
+assistant: What else can I do for you?
+user: I want Thomas to know about it share the location with him.
+assistant: Is 2425 California Street # C the correct address to share?
+user: Yes it is.
+assistant: Just to be sure you want me to send Thomas this address - 2425 California Street # C correct?
+user: That's what I want.
+tool(ShareLocation): ok n_results=1
+assistant: The location share is completed.
+user: That was nice, thank you. What are my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: There are 2 set alarms. Busy is for 4:30 pm.
+user: Alright then I would like to create another one. Let's call it Leave for home and set if for 15:30.
+assistant: I will make an alarm for 3:30 pm then and call it Leave for home is this right.
+user: You got it.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been created.
+user: Thank a lot.
+assistant: Do you need more help?
+user: No but thanks again.
+assistant: I appreciate your gratitude.

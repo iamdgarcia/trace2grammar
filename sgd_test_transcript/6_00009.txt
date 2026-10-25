@@ -1,0 +1,14 @@
+user: Hi, could you get me a therapist please?
+assistant: Sure, what type of therapist would you like and where should I look at?
+user: I would prefer a Family Therapist in Santa Rosa please.
+tool(FindProvider): ok n_results=8
+assistant: Sure, how about a Family Counselor in Santa Rosa called Auer Patience?
+user: Are there any alternatives? Would prefer a psychologist in Redwood City.
+tool(FindProvider): ok n_results=9
+assistant: How about a psychologist in Redwood City. called Becker Hubert J?
+user: Sure! Could you get me an appointment at 3:45 in the afternoon on 14th of March?
+assistant: Sure, please confirm your appointment at 3:45 pm on March 14th with Becker Hubert J.
+user: Yes, I am fine with that.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you should get an appointment confirmation soon through email.
+user: Thanks alot for your kind assistance! That is all I need.

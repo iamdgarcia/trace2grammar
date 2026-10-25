@@ -1,0 +1,16 @@
+user: I would like to create an alarm notification.
+assistant: For which time?
+user: For 3:45 in the afternoon.
+assistant: You would like to create a New alarm for 3:45 pm?
+user: Yes, that's right.
+tool(AddAlarm): ok n_results=0
+assistant: I was unable to set the alarm for that time. Would you need anything else?
+user: please try again for evening 4:45
+assistant: You would like to create an alarm called New alarm for 4:45 pm
+user: Yes, I do.
+tool(AddAlarm): ok n_results=1
+assistant: I have created the alarm.
+user: Thanks a lot.
+assistant: You need assistance with anything else?
+user: No, that would be all.
+assistant: My pleasure to assist.

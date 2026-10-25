@@ -1,0 +1,11 @@
+user: I'm searching for a round trip flight.
+assistant: What day do you wish to depart at?
+user: I'd like to begin my trip on next Friday.
+assistant: What metropolis do you wish to leave from, what day do you intend to take the return flight, and what location do you intend to visit?
+user: Look for flights from Seattle to Atlanta, GA that return on the 10th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Do you wish to travel with American Airlines? There is a connecting flight departing at 8:50 am with a return flight leaving at 1:50 pm, and it costs $386.
+user: That sounds perfect.
+assistant: Could I assist you with anything else?
+user: Nope; thank you for your assistance.
+assistant: Have a pleasant afternoon.

@@ -1,0 +1,35 @@
+user: Will you search for a train with 2 seats that's going to Seattle?
+assistant: Can you give me your travel date and city departure location?
+user: I will be leaving from Vancouver, BC and need the tickets for March 8th.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 suitable trains. Would you like a train that has a ticket price of $85 and leaves at 6:20 am?
+user: What is the arrival station?
+assistant: It will arrive at King Street station.
+user: Could you check for comparable trains? Business tickets and heading to Portland.
+tool(FindTrains): ok n_results=8
+assistant: I found 8 suitable trains. Would a train that leaves at 6:50 am and has a ticket cost of $227 work?
+user: What are the departing and arriving stations?
+assistant: It will depart Pacific Central Station and arrive at Union Station.
+user: That would be great. I'd like to book tickets with insurance.
+assistant: You need 2 business tickets for the train that is departing Vancouver on March 8th at 6:50 am and will arrive in Portland. There is travel insurance included. Are these details correct?
+user: The details are correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: I successfully booked the tickets.
+user: You've been tons of helps so thanks. Will you look for some fun and interesting things to do there.
+assistant: Is there a specific category of interest? You can tell me if it's Music, Theater or something else.
+user: I love theater.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events you will enjoy. There is a popular event at Newmark Theatre and is called Annual School Performance. It will be on March 2nd and begins at 5 pm.
+user: Will you give me ticket price and venue location?
+assistant: The tickets will be $45 and the venue can be found at 1111 Southwest Broadway.
+user: That sounds really awesome.
+assistant: Would you need more help?
+user: Uh, actually, will you share the location?
+assistant: Whom would you like to share it with?
+user: Ethan is who to share with.
+assistant: Sharing location of Newmark Theatre with Ethan. Is that right?
+user: Yes, sounds right.
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared.
+user: That's it and thanks for all your wonderful help!
+assistant: Hope you have a lovely day!

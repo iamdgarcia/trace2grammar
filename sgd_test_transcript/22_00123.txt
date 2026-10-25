@@ -1,0 +1,25 @@
+user: I'd like to find a Foreign story movie starring Ula Tabari to watch online.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 option that meets your criteria. Have you seen Tel Aviv on Fire?
+user: Tel Aviv on Fire would be great. I'd like to find something to do. Can you help me find some attractions?
+assistant: Where should I search?
+user: I'd like to find something in Ciudad de Mexico that doesn't require an entrance fee.
+tool(FindAttractions): ok n_results=10
+assistant: Acuario Inbursa is a very popular nature preserve.
+user: I might check it out. I'm in the mood to hear some Metal music. Do you have anything from the album The Unforgiving by Within Temptation?
+tool(LookupMusic): ok n_results=1
+assistant: May I suggest the song Faster from the album The Unforgiving by Within Temptation?
+user: That would be great. Please stream it for me. It can be on any device.
+assistant: You'd like to hear the song Faster played in the living room. Is that right?
+user: Yes, can you tell me if the song was released three years ago?
+tool(PlayMedia): ok n_results=1
+assistant: The song was released in 2010.
+user: Great. After the music, can you play the movie with English subtitles?
+assistant: You'd like to watch Tel Aviv on Fire with English subtitles. Is that correct?
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie will begin shortly.
+user: Thank you for the assistance.
+assistant: Is there anything else I can do for you?
+user: No, that will be all. Thank you very much.
+assistant: You're welcome. Enjoy the movie!

@@ -1,0 +1,18 @@
+user: I would like to find a new place to rent.
+assistant: How many bedrooms do you need? What area do you want to live in?
+user: I need two bedrooms in Martinez.
+assistant: How many bathrooms?
+user: At least 1.
+tool(FindHomeByArea): ok n_results=1
+assistant: Vista Oaks Apartments is a nice property at 3883 Vista Oaks Drive. The rent is $2,300.
+user: Perfect, I want to schedule a visit.
+assistant: When do you want to visit?
+user: March 13th.
+assistant: Please confirm, visiting Vista Oaks Apartments on March 13th.
+user: Yes, that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Does the home have laundry machines? A garage?
+assistant: It has laundry machines, but no garage.
+user: Ok, that is all I need.
+assistant: Have a nice day.

@@ -1,0 +1,15 @@
+user: I need your help with movies, I need your advices
+assistant: where are you?
+user: berkeley
+tool(FindMovies): ok n_results=8
+assistant: I've found 8 movies there, how do you feel about these 3 titles: a faithful man, blinded by the light and good boys?
+user: I feel positive vibes about a faithful man. now you should check is there's a table at gio's pizza on the 9th at 6 o'clock in the evening
+assistant: tell me if this is what you want me to do. you want me to book a table for 2 at gio's pizza and bocce in berkeley on march 9th at 6 pm
+user: yup
+tool(ReserveRestaurant): ok n_results=1
+assistant: the table has been reserved
+user: let's go back to the movie thing now, I want to watch a regular show at shattuck cinemas, can you tell me the time of the shows?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I've checked and I'e found out that there's only one show at 9:30 pm at landmark's shattuck cinemas
+user: that's fine. bye
+assistant: Goodbye sir

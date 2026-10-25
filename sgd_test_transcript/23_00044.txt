@@ -1,0 +1,30 @@
+user: I need to make a payment to Peter.
+assistant: For how much? Do you want to use a credit card or app balance?
+user: From my app balance for 7 bucks.
+assistant: To confirm: You would like to pay Peter $7 from your app balance. This transaction is visible to the public.
+user: Yes that's correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment has gone through.
+user: Great! Can you find me a train, there will be two of us.
+assistant: When did you want to travel and from where to where?
+user: March 13th from SD to LA.
+tool(FindTrains): ok n_results=10
+assistant: There's one that will cost $94 total leaving at 6:10 am.
+user: That works. What is the weather supposed to be like in LA March 13th?
+tool(GetWeather): ok n_results=1
+assistant: Temperatures should average $94 degrees with a 19 percent chance of rain.
+user: What about wind and humidity?
+assistant: Wind speeds should average 5 miles an hour with the humidity around 22 percent.
+user: Okay. I'd like to buy tickets for that train.
+assistant: Did you want to purchase travel insurance?
+user: Yes, I'd like that.
+assistant: To verify: You would like 2 Value tickets on the train from San Diego to Los Angeles leaving 6:10 am on March 13th.
+user: Yes, that's right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Which stations does it leave from and arrive at?
+assistant: You will leave from Santa Fe Depot and arrive at Union Station.
+user: Thank you so much for your help.
+assistant: Is there anything else you need?
+user: No I'm good for now. Thanks
+assistant: You're welcome.

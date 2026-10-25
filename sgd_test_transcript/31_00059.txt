@@ -1,0 +1,32 @@
+user: Can you suggest some good Salons for me to change my look. I want the one which is to be an Unisex and situated in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I suggest the one at 17 Jewels Salon in Oakland. Do you wish to visit there?
+user: Yes, what is their address and phone number?
+assistant: They are located at 4801 Telegraph Avenue and you can contact them on 510-653-1059.
+user: Thanks for the details. Now I want to book an appointment with that Salon. Can you do it for me?
+assistant: Yes, let me know your convenient date and time to book the same.
+user: Book it at 10 am on 11th of March.
+assistant: Okay, please confirm to book an appointment to the Salon at 17 Jewels Salon on March 11th for the time at 10 am.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked it successfully.
+user: I want some more details of that Salon. Let me know their average rating among the user.
+assistant: They got 4.7 rating in average. What else you need?
+user: That's enough and okay to me. Now, please search for some nice restaurant there to get my meals on the same day.
+assistant: Is there any favorite kind of food that you are looking for?
+user: I like to have Burrito and I need the one with food which should not very costly in price range.
+tool(FindRestaurants): ok n_results=8
+assistant: I got 8 places which may match your requirements and the one is Agave Uptown in Oakland which is also a nice place to eat.
+user: I want to know their contact number to decide.
+assistant: Please note down their phone number as 510-288-3668.
+user: Let me also know their rating among the users.
+assistant: It is around 4.3.
+user: That's great. Please book me a table there.
+assistant: What is your convenient time to book the same?
+user: Make it at twelve pm.
+assistant: I want your confirmation to book a table for 2 at Agave Uptown restaurant in Oakland for the time 12 pm on March 11th.
+user: That is confirmed to proceed and also check for the availability of Vegetarian food there.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table was successfully booked and they also have nice Vegetarian food varieties.
+user: Thanks and that's all.
+assistant: Have a great day.

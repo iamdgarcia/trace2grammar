@@ -1,0 +1,30 @@
+user: I want to search for some nice songs to hear now and I need your help to find the one which should be a Rock-and-roll song.
+tool(LookupMusic): ok n_results=10
+assistant: I got 10 songs and what about the one named Be Somebody by Thousand Foot krutch from the Album The End is Where We Begin.
+user: That is nice song and I choose this one. Now, I want to find some nice movies to watch it online and can you help me to find the good one?
+assistant: yes, let me know your interested kind of movies to search for the similar one.
+user: I like to watch the movie featuring mikey day and I like Drama type of movies the most.
+tool(FindMovies): ok n_results=1
+assistant: Do you like the movie named Brittany Runs a Marathon which is the 1 I got for you in the requested type.
+user: Yes Brittany Runs a Marathon is great movie and I fix this.
+assistant: Shall I play it now?
+user: No, I will watch it later.
+assistant: How can I assist you further?
+user: Now, I want to hear the song that I have selected before and can you play it now?
+assistant: Yes, please confirm to play the song Be Somebody in Living room speaker.
+user: Please continue to play.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing now and you can enjoy the same.
+user: Thanks. now do me one more favor. I want to view my listed alarms and please show me the same.
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm for 9 am in the name Get up.
+user: Okay. Do I have some other alarms in my list?
+assistant: Yes, another alarm at 11 am in the name Study.
+user: What else I have in my list?
+assistant: One more alarm name Busy for the time 3 pm.
+user: That's all okay.
+assistant: Do you want to add a new alarm now?
+user: No, I just want to view my alarm list. That's all.
+assistant: Okay. what else you need to do now?
+user: Nothing and thanks for your help.
+assistant: Have a good day.

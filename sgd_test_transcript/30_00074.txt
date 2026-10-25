@@ -1,0 +1,23 @@
+user: I would like to check the weather in Bodega Bay.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 80 degrees and there is a 28 percent chance of rain.
+user: I would like to schedule a visit for that day.
+assistant: Which property would you like to visit on March 1st?
+user: I would like to visit the Marymount Apartments.
+assistant: Scheduling a visit to Marymount Apartments on March 1st.
+user: Yes, what is their address?
+tool(ScheduleVisit): ok n_results=1
+assistant: They are located on 1405 Marshall Street.
+user: I would like to rent a car.
+assistant: When do you want the car and where do you want to pick up the car?
+user: I would like to pick up the car downtown around 5:15 pm.
+assistant: Do you want the car on March 1st? Would you like a SUV, Hatchback or something else?
+user: I would like a hatchback and I don't need insurance.
+assistant: When are you returning the car?
+user: I will be returning the car on the 7th of this month.
+assistant: Booking a hatchback car from downtown on March 1st at 5:15 pm and return is March 7th.
+user: What is the car? What is the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car is a Ford Focus and it's $28.00 per day.
+user: That is all I needed.
+assistant: Have a good day.

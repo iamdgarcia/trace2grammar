@@ -1,0 +1,21 @@
+user: I am planning to go for a short tour and I need a bus to travel. Please search for a direct bus for four persons and I need this on the 9th.
+assistant: From which place to Which place you need the bus?
+user: I need the bus from Sacramento to LAX.
+tool(FindBus): ok n_results=3
+assistant: Found a bus which is going to depart at 7:40 am and the ticket cost for the same is $51. Do you want to book this bus?
+user: Yes, it is okay for me.
+assistant: Shall I book the tickets in this bus now?
+user: Yes, Dot it now for me.
+assistant: I need your confirmation to book 4 tickets on the bus which is going to leave from Sacramento on March 9th at 7:40 am to Los Angeles without any extra luggage.
+user: That is correct to proceed further.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked the tickets.
+user: Thank you so much. I want to stay there for a while and I need your help to find a good hotel with smoking permission. Search for suitable one. one room is enough to me.
+tool(SearchHotel): ok n_results=10
+assistant: How about the hotel Banana Bungalow Hollywood which is a 1 star Hotel?
+user: I think it is okay.
+assistant: Do you want me to reserve the room now?
+user: No, will do later.
+assistant: Anything else you want me to do?
+user: Nothing for now. Thanks.
+assistant: Have a good day.

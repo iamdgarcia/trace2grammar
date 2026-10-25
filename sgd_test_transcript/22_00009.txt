@@ -1,0 +1,41 @@
+user: I need to find something fun to do in Seattle.
+assistant: What type of events do you enjoy?
+user: I would live to see a show.
+tool(FindEvents): ok n_results=10
+assistant: Beatleconcert is an arts show that takes place on March 10th at 5 pm and is located on 12th avenue arts.
+user: Great! I need to find a bus going there that leaves from Vancouver on the 7th for four people.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses. How about the 7:40 am departure that costs $25.
+user: Which station will it depart from?
+assistant: It will leave from Pacific central station.
+user: Great, I also need a round trip flight to get there.
+assistant: Would you like to depart on March 7th or March 10th? Or some other day.
+user: I'd like to start on the 5th.
+assistant: When would you like to return?
+user: I'd like to start out on March 3rd and return on March 12th please.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I found 3 flights. How about the American airlines flight that leaves at 11:20 am and returns at 2:20 pm? It costs $395.
+user: What else did you find?
+assistant: There is also a Delta airlines flight with a layover which costs $361 and leaves at 6:35 am. The return flight leaves srry 4:10 am.
+user: Is it economy or business class?
+assistant: It's economy class.
+user: Sounds great, I also need to find a hotel in the area.
+tool(SearchHotel): ok n_results=10
+assistant: Ace hotel Seattle is a nice 2 star hotel in the area.
+user: What is their contact number?
+assistant: Their number is +1 206-448-4721.
+user: How much do they cost a day.
+assistant: Their rate is $126 daily.
+user: Great that sounds perfect.
+assistant: Would you like to make a reservation?
+user: Not at this time. I need to buy the tickets to the show you found.
+assistant: You want 4 tickets to Beatleconcert in Seattle on March 10th, correct?
+user: Yes that it's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made.
+user: How much per ticket?
+assistant: They are $50 each.
+user: Thanks for everything.
+assistant: Can I do anything else for you?
+user: No that is all for now.
+assistant: Enjoy your day!

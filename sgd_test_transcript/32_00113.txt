@@ -1,0 +1,35 @@
+user: I need to locate a place to reside.
+assistant: Will you be paying rent or are you looking to buy and how many bedrooms will you need?
+user: I am looking to buy a 3 bedroom residence in Martinez.
+assistant: How manu bathroom would you prefer?
+user: It would be nice to find one with 3 bathrooms.
+tool(FindHomeByArea): ok n_results=2
+assistant: 3979 Alhambra Avenue, the Lotus Apartments have a possibility for you at $3,750,000.
+user: Search again and look for 4 bedrooms this time.
+tool(FindHomeByArea): ok n_results=1
+assistant: I located 1 priced for $4,250,000 its at 1241 Arnold Drive called the Muir Park Condominiums.
+user: Is there a garage and are there washer and dryer hook ups inside?
+assistant: It does come with a garage but no washers or dryers,
+user: That would work. Can you make an appointment for me to view the place on the 9th?
+assistant: Your requesting scheduled visit to Muir Park Condominiums on March 9th correct?
+user: Yes it is correct and give a phone number for them please.
+tool(ScheduleVisit): ok n_results=1
+assistant: I made the necessary arrangements for your viewing and the listed number is 925-372-8078.
+user: Please share the address to my friend Walter.
+assistant: Okay I will send this address to Walter - 1241 Arnold Drive right?
+user: No,my mistake, send it to Samantha instead.
+assistant: The 1241 Arnold Drive address will be sent to Samantha.
+user: Perfect thanks
+tool(ShareLocation): ok n_results=1
+assistant: The share is completed.
+user: Great, you are helpful.Please get me a Shared cab to there.
+assistant: How may fares will there be?
+user: Just me so 1.
+assistant: You want a Pool ride for 1 to 1241 Arnold Drive correct?
+user: Yes, how long do I have before the cab gets here?
+tool(GetRide): ok n_results=1
+assistant: The cab is aware of your destination, in en route and should arrive in about 5 minutes.
+user: What will the charge be like?
+assistant: It will run $15.18.
+user: I appreciate your assistance, you can go now.
+assistant: Have a most happy day.

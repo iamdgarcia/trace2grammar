@@ -1,0 +1,27 @@
+user: Can you help me find a train?
+assistant: Which city will you be departing?
+user: I'd like tickets from Anaheim, CA.
+assistant: Where will you be going? Which dates will you be traveling?
+user: I'll be heading to Sacramento, CA on the 11th of this month.
+tool(FindTrains): ok n_results=10
+assistant: How about a 6:50 am departure? It'll be $127.
+user: That sounds great. Can you find me something interesting to do there?
+assistant: Do you prefer a certain type of event?
+user: I do like songs.
+tool(FindEvents): ok n_results=6
+assistant: How about Aftershock Festival at Discovery Park? It'll be happening on March 5th at 5:30 pm.
+user: That's good, but can you find me something else? Maybe Play, and maybe on the 14th of this month?
+tool(FindEvents): ok n_results=1
+assistant: You might also like Dear Evan Hansen. It'll be happening at Sacramento Memorial Auditorium on March 14th at 6 pm.
+user: I like the sound of that.
+assistant: Do you want me to get you tickets?
+user: No thanks, not right now. Can you find nearby attractions?
+tool(FindAttractions): ok n_results=8
+assistant: There are 8 attractions nearby that might be of interest. Perhaps a museum? I found California State Capitol Museum.
+user: Okay, that sounds great. Can you find me a house with laundry serve with a 4.4 rating or higher?
+tool(SearchHouse): ok n_results=1
+assistant: I found 1 house at 500 J Street with a 4.4 rating.
+user: Can you give me a number to contact them?
+assistant: Sure, it's +1 916-545-7100.
+user: That sounds great, that'll be all then.
+assistant: It's been a pleasure, thank you!

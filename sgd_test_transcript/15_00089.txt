@@ -1,0 +1,23 @@
+user: Will you find a Psychologist?
+assistant: Which city?
+user: Psychologist in Sausalito.
+tool(FindProvider): ok n_results=1
+assistant: Found Richard J. Leary, a Psychologist in Sausalito.
+user: Great.
+assistant: Anything else?
+user: What's the weather like there on 5th of this month?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 82 degrees Fahrenheit with a 27 percent chance of rain.
+user: Nice.
+assistant: Anything else?
+user: Will you schedule an appointment with the psychologist on that day?
+assistant: What time?
+user: Schedule the appointment for 14:15.
+assistant: Confirm an appointment with Richard J. Leary at 2:15 pm on March 5th.
+user: Great. Their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: You should receive an email confirmation for your scheduled appointment soon. You may reach them at 415-339-8814. They are located at 630 Drake Avenue.
+user: Thanks.
+assistant: Anything else?
+user: That's all for now.
+assistant: Have a wonderful day.

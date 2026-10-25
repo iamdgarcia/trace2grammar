@@ -1,0 +1,31 @@
+user: I'm looking for movies online. I like movies with Mette Towley.
+assistant: What type of movies do you like?
+user: I'm looking for Dramatic story movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you may like. How about Hustlers?
+user: Hustlers sounds great. Could you help me find some attractions in Chi-town without an entry fee?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you. One tourist attraction is Big Bus Tours Chicago (Tours begin at 98 E. Upper Wacker Dr.)
+user: Ok, sounds good. Could you help me find some songs now?
+tool(LookupMusic): ok n_results=10
+assistant: What did you think about Her World Or Mine from Amos by Michael Ray?
+user: What type of music is it and did the song come out in '14?
+assistant: The song is from 2018 and it is a Country song.
+user: Yes, that sounds about right.
+assistant: Did you want to play this song?
+user: Yes, I did.
+assistant: Please confirm you're playing the song Her World Or Mine in Living room.
+user: That is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thank you very much. Can you also play the movie you found?
+assistant: Please confirm you're playing Hustlers with subtitles in English.
+user: No, I'd like to watch it with Hindi subtitles.
+assistant: Please confirm you're playing Hustlers with Hindi subtitles.
+user: That is correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started playing.
+user: Thank you very much.
+assistant: Did you need help with anything else?
+user: No, but thank you.
+assistant: Have a great day.

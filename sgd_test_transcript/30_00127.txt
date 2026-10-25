@@ -1,0 +1,32 @@
+user: I need a unisex salon now please.
+assistant: In which city to search in?
+user: I want one in SF.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is a nice one in San Francisco.
+user: What is the average rating and contact number?
+assistant: Its phone number is 415-286-4371 and the rating is 4.8.
+user: Can you find a different salon?
+assistant: 20Th Salon and Barber is an excellent one in San Francisco.
+user: Yes, that sounds good. I also want a movie like in the Mystery genre and any type of show.
+tool(FindMovies): ok n_results=2
+assistant: There is Luce or Official Secrets.
+user: Official Secrets sounds interesting.
+assistant: Would you like to purchase tickets now?
+user: No, not right now though.
+assistant: Is there anything else to help with?
+user: What show times are there at AMC Kabuki 8?
+assistant: Would you like to watch it on March 3rd?
+user: Yes, that day please.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime, one at 4 PM in AMC Kabuki 8.
+user: What is the address?
+assistant: The theater address is 1881 Post Street.
+user: Okay then I want an appointment at the salon at half past 2 in the afternoon.
+assistant: So the name of the hair stylist is 20Th Salon and Barber at 2:30 PM and the appointment is on March 3rd.
+user: Yes that is good, and address? Rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked and the address is 2737 20th Street with an average rating of 4.5
+user: Thanks for that.
+assistant: Is there anything else?
+user: No, thanks a lot.
+assistant: Of course. Have a wonderful day.

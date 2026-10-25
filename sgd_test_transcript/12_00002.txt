@@ -1,0 +1,32 @@
+user: I want to have tickets for a bus which goes to SD, and that leaves at quarter to 10 in the morning.
+assistant: Can you tell me when you are planning to leave?
+user: I have my plans set to leave on this Saturday, and I need the tickets for 2 people.
+assistant: From where will you be departing?
+user: I will be departing from LAX at 11 am.
+assistant: Can you please confirm that you want to buy tickets for 2 people for the bus which leaves from Los Angeles on March 2nd at 11 am, and that arrives in San Diego.
+user: That suits me well.
+tool(BuyBusTicket): ok n_results=1
+assistant: I apologize but I encountered some problems with the purchase, how would you like having tickets for the bus which leaves at 11:10 am, and the price of the ticket is $24.
+user: That is alright with me too.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked.
+user: I also want you to help me find a car there, which I will need till 12th of this month, and that I will pick up at 16:30.
+assistant: Are you going to need to rent the car from March 2nd?
+user: Actually I want to have the car rented from next Thursday.
+assistant: Would you like picking the car up from San Diego?
+user: Yes that suits me well.
+tool(GetCarsAvailable): ok n_results=8
+assistant: A nice car which you might consider is a SUV Jaguar F-Pace which is at Santa Fe Depot.
+user: That seems as a nice choice.
+assistant: Would you like having this car booked for you?
+user: Yes, I want this car to be booked for me.
+assistant: Do you want to have insurance on the car?
+user: I am not interested in having the insurance.
+assistant: Can you please confirm that you want to rent a SUV car without insurance which you will be picking up from Santa Fe Depot on March 7th at 4:30 pm, and that you need it till March 12th?
+user: Yes, that is correct. Can you tell me how much renting this car will cost me?
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked, and renting this car will cost you $41.00 per day.
+user: I appreciate your help very much.
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful for your help.
+assistant: Have a wonderful time!

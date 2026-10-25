@@ -1,0 +1,10 @@
+user: I'm looking for things to do that are interesting.
+assistant: What kinds of things interest you?
+user: I'm fond of Drama. And I'd like these things to be close to LAX.
+tool(FindEvents): ok n_results=10
+assistant: There's an event called A Year In Dragonfly that people like. It's at Studio C Artists on March 1st at 7:30 pm.
+user: That sounds cool. Do you have anything that's close to Chi-town.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that might interest you. There's Ada And The Engine which is popular, there's also The Artistic Home on March 3rd at 5:30 pm.
+user: Those all seem very interesting. That's it for now.
+assistant: Have a terrific day.

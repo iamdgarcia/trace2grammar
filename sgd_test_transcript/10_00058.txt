@@ -1,0 +1,12 @@
+user: I want to watch a movie online and I need your help to find something for me?
+assistant: May I know your interested kind of movies to search for?
+user: I am always like to watch Fantasy type of movies and I want the same now. Can you search it for me?
+tool(FindMovies): ok n_results=2
+assistant: Yes, What is your interest to watch a movies like Labyrinth or The Lord of the Rings: The Return of the King?
+user: Labyrinth is the one I choose and I am ready to watch it now. Can you play it now for me?
+assistant: Yes, I need your final confirmation to play Labyrinth with subtitles in English language.
+user: Confirmed, please proceed.
+tool(PlayMovie): ok n_results=1
+assistant: The movie was started playing now.
+user: Thank you so much.
+assistant: Have a great day.

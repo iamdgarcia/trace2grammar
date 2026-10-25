@@ -1,0 +1,9 @@
+user: I need to visit to a property which i plan to buy. will you schedule a visit to that property?
+assistant: Ok sure. When do you want to schedule that visit?
+user: I need to visit on 4th of this month. I want to visit the property Betel Apartments.
+assistant: Ok please review the details so that i confirm it. Scheduling a visit to Betel Apartments and the visit to the property should be on March 4th.
+user: Ok thats sounds good to me . fix it.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit to that property is confirmed.
+user: Thanks a lot for your help. thats all i need
+assistant: have a wonderful day. bye

@@ -1,0 +1,35 @@
+user: I plan are getting some highlghts in my hair and would like to find a salon for both men and women. Please search for a unisex salon.
+assistant: Do you have a specific city I should search?
+user: Yes, please search in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I found the Atelier Salon Willow Glen in San Jose. Would you be interested in this one?
+user: No, please continue searching for a different one.
+assistant: How about the Barba & Co. San Jose located in San Jose.
+user: That one sounds perfect.
+assistant: Would you be interested in scheduling an appointment?
+user: No, not right now, though I would like you to share the address.
+assistant: Who would you like to share this address with: 1775 Park Avenue?
+user: Please share this with Carl.
+assistant: Please confirm you would like to share 1775 Park Avenue with Carl.
+user: No, the address is Covington Way.
+assistant: Please confirm you would like to share the location Covington Way with Carl.
+user: No, I changed my mind. Please share this with James.
+assistant: Please confirm you would like to share the location Covington Way with James.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: This has been shared.
+user: Thank you for your help. Will you now please tell e what alarms I have currently.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm set for 9 am labeled Workout
+user: Great. Will you please add an alarm for 4:45 pm?
+assistant: Please confirm you would like me to create an alarm for 4:45 pm named New Alarm.
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Unfortunately I was unable to set that alarm. Do you need anything else?
+user: Please try to set for 5 pm.
+assistant: Please confirm you would like me to create an alarm for 5 pm named New Alarm.
+user: Yes, that is right.
+tool(AddAlarm): ok n_results=1
+assistant: You alarm has been added.
+user: Thank you for your assistance. I will not be needing anything further at the moment.
+assistant: You are most welcomed!

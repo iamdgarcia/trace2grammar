@@ -1,0 +1,32 @@
+user: Can you find me a nice salon?
+assistant: In which city do you want me to search for the salon?
+user: I am looking for a salon in San Rafael.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 nice salons. How about Best Coast cuts located in San Rafael?
+user: Find me it's address?
+assistant: The street address of the salon is 294 North San Pedro Road.
+user: Find me it's average rating.
+assistant: The salon has an average rating of 5.0.
+user: Okay. That sounds great to me.
+assistant: Do you want me to book an appointment here?
+user: No. Maybe some other time.
+assistant: Is there anything else I can help you with?
+user: I am looking for a movie there.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies you may like. What do you think about A Faithful man, Angel has Fallen or Brittany Runs a Marathon?
+user: A Faithful Man sounds nice to me.
+assistant: Do you want me to purchase the tickets for you?
+user: No. Not now. Can you show me the show timings for this movie?
+assistant: Would you like to watch it on March 8th?
+user: Y&es, That works for me.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 show at 6:30 pm in Smith Rafael Film Center.
+user: That sounds great. I would like to book an appointment with the salon you just found on that day.
+assistant: Can you tell me your preferred timing for the appointment?
+user: I would like the appointment to be at 5:45 pm.
+assistant: Please confirm: You want me to book an appointment with Best Coast Cuts at 5:45 pm on March 8th.
+user: Yes, That is correct. Find me the contact number and whether the salon is Unisex?
+tool(BookAppointment): ok n_results=1
+assistant: Yes, It is an Unisex salon and you can contact them on 415-250-4370. Sorry, Your appointment could not be booked due to some reasons. Do you want me to try again booking an appointment with Best Coast Cuts at 6 pm on March 8th?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,31 @@
+user: I wish to search a movie to watch online. Fantasy movie will be nice. I love movies with David Shaughnessy.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie for you. What about Labyrinth?
+user: Labyrinth is good. I wish to see some attractions there.
+assistant: Where shall I search in?
+user: Search attractions in Chicago.
+tool(FindAttractions): ok n_results=10
+assistant: Your check out is 360 CHICAGO. It is a Tourist Attraction.
+user: Whether the entrance ticket is free? What is their contact number?
+assistant: No. The entry is not free and their contact number is 888-875-8439.
+user: I wish to play the song.
+tool(LookupMusic): ok n_results=10
+assistant: I searched and found 10 songs for you. What is your opinion about Beautiful In White by Shane Filan from Love Always album.
+user: In which year the song released?
+assistant: It is released in the year 2017.
+user: What type of genre is it?
+assistant: I like Pop song.
+user: yes. it is correct. Play the song on my living room.
+assistant: Kindly ensure that, the song Beautiful In White is played in Living room.
+user: Nope. Play it on patio device.
+assistant: Kindly ensure that, the song Beautiful In White is played in patio.
+user: yes. It is perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Happy with the music.
+user: Thank you so much. Please play the movie now.
+assistant: Kindly ensure that, the movie Labyrinth is played with subtitles in English.
+user: Yes. Go ahead.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started.
+user: Thank you so much. That is what I want.
+assistant: Have a nice day.

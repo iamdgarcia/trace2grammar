@@ -1,0 +1,35 @@
+user: Can you please find something interesting for me to do in LA this Saturday, particularly something involving Music?
+tool(FindEvents): ok n_results=10
+assistant: Sure, how about Aldous Harding at the Lodge Room on March 2nd at 5 pm?
+user: What's the ticket price?
+assistant: Tickets are $40 each.
+user: Can you please tell me the address for the venue?
+assistant: The address is 104 North Avenue 56 2nd Floor.
+user: Sounds perfect.
+assistant: Do you want me to get you tickets for this event?
+user: Not at the moment.
+assistant: Is there anything else I could help you with?
+user: Can you also find me a bus to there from San Francisco for this Saturday. I will just be needing one ticket.
+tool(FindBus): ok n_results=9
+assistant: There are 9 buses meeting your criteria. How about the one at 7:30 am, with tickets priced at $48?
+user: Do you know how many stops does it have?
+assistant: None - it's direct.
+user: Can you please tell me the departure and arrival stations?
+assistant: The bus departs from Transbay Terminal and arrives at North Hollywood Station.
+user: Sounds OK. Now let's try and find a round trip flight to there, in Economy, flying out this Saturday and returning on March 5th.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There's a direct Alaska Airlines flight taking off at 12:25 pm and returning at 11:55 am, with tickets priced at $151.
+user: Do you know the arrival times for both the onward and return flights?
+assistant: Sure, the onward flight lands at 1:50 pm, while the returning flight lands at 1:20 pm.
+user: Sounds perfect.
+assistant: Is there anything else I could help you with?
+user: Can you please find me a hotel in the area?
+tool(SearchHotel): ok n_results=10
+assistant: I'd recommend a very nice 3 star hotel, the Ac Hotel By Marriott Beverly Hills.
+user: Sounds perfect. Let's now buy tickets to the previously found event.
+assistant: Can you please confirm that you want 1 ticket to Aldous Harding on March 2nd in Los Angeles?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully booked your ticket. Enjoy the show!
+user: Thank you, you've been very helpful. That will be all for now!
+assistant: My pleasure. Have a nice day!

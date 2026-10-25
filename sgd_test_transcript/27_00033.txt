@@ -1,0 +1,30 @@
+user: Could you tell me about several attractions to go to?
+assistant: What location ought I look for attractions in?
+user: Look for attractions in SF. I want something that is friendly to children.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you may be interested in. You ought to try Alcatraz, a historical landmark.
+user: Is entry to this attractions at no cost?
+assistant: Yeah, the entrance is free.
+user: Can you tell me their contact number?
+assistant: Their contact number is 415-561-4900.
+user: Alright, fine. I'd like to view a film near there.
+tool(FindMovies): ok n_results=10
+assistant: I discovered 10 films. What do you think about Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: Brittany Runs a Marathon is lovely. Are there several decent films online?
+assistant: What sort of film do you enjoy?
+user: Cult films would be lovely.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 film you might enjoy. What do you think about Pulp Fiction?
+user: Pulp Fiction would be lovely.
+assistant: Would you like to cast the film?
+user: Yeah, I'd like to cast the film.
+assistant: Please verify the following information: casting Pulp Fiction with English subtitles.
+user: Nope; I'd like to view it with subtitles in French.
+assistant: Please verify the following information: casting Pulp Fiction with French subtitles.
+user: Yeah, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: The film began casting.
+user: Thank you for your assistance.
+assistant: Could I assist with something else?
+user: Nope; thank you for your help.
+assistant: Have a pleasant afternoon.

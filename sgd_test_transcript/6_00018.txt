@@ -1,0 +1,18 @@
+user: I really need to see a therapist. Please find one in Sebastopol.
+assistant: What type of therapy are you looking for?
+user: I would like to set up a Psychologist appointment.
+tool(FindProvider): ok n_results=2
+assistant: I located 2 psychologists. How does Pamela Culver Psy, a Psychologist in Sebastopol, sound?
+user: I will try Pamela Culver.
+assistant: Would would like to reserve an appointment at her office?
+user: Yes. Please make me an appointment.
+assistant: Is there a time of day that works best for you?
+user: Yes. 1:15 in the afternoon is the best time for me.
+assistant: Would you like your visit scheduled for a specific day?
+user: The 2nd of this month works best for me.
+assistant: With your approval I will set the appointment up on March 2nd at 1:15 pm with Pamela Culver Psy.
+user: Approval granted. I also need their phone number please.
+tool(BookAppointment): ok n_results=1
+assistant: The office can be reached at 707-823-7300. I was unable to make the appointment. Try march 2nd at 1:30 pm with Pamela Culver Psy.
+user: That will not work. See you later.
+assistant: I am always happy to help.

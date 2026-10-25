@@ -1,0 +1,37 @@
+user: i am looking for a bus ticket
+assistant: when and what time are you leaving? where are you leaving from
+user: i am traveling from fresno on the 5th at 6:45 pm
+assistant: where are you traveling to and how many tickets are you looking for
+user: i need two tickets going to long beach
+assistant: please confirm your ticket for 2 people from fresno to long beach on march 5th at 6:45 pm
+user: yes please, what station will i arrive at
+tool(BuyBusTicket): ok n_results=1
+assistant: you will be in downtown station. Sorry the purchase failed. are you ok with departure time at 6:50 pm for $39
+user: that is fine with me
+tool(BuyBusTicket): ok n_results=1
+assistant: your ticket is booked
+user: thank you, can you also find me a rental car in long beach pick up at 15:30
+assistant: when would you like to return the car? is this renting from march 5th
+user: i need the car from 10th of march to the 11th
+tool(GetCarsAvailable): ok n_results=10
+assistant: i found a suv alfa romeo stelvio at lgb airport for you
+user: how much is the rental fee per day
+assistant: this car will be $49.00 per day
+user: what else can you find
+assistant: what about a sedan audi a8 at lgb airport
+user: how much is it
+assistant: this iwll be $32.00 per day
+user: what else can you find in london, england
+tool(GetCarsAvailable): ok n_results=9
+assistant: there are 9 cars at gatwick international airport. it is sedan buick regal sportback
+user: this is good, please reserve it
+assistant: do you need an insurance
+user: no i dont need one
+assistant: please confirm your booking for a sedan at gatwick international airport from march 10th at 3:30 pm and return on march 11th
+user: this is good for me
+tool(ReserveCar): ok n_results=1
+assistant: your car is booked
+user: how much is the car
+assistant: this is $33.00 per day
+user: thank you this is all i need
+assistant: have a nice day

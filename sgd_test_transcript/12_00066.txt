@@ -1,0 +1,17 @@
+user: pull up bus schedules for me. I will be going to SFO and leaving from Sacramento. I will need just 1 ticket!
+assistant: Sure, I can help with this. First, what day to you plan to travel?
+user: Ideally I would like to go on March 1st if possible.
+tool(FindBus): ok n_results=10
+assistant: I found a bus leaving at 7:40 am for a total of $22. Would that work?
+user: Yes that is great. Go ahead and purchase tickets now please.
+assistant: Sure thing, please confirm that you would like to buy 1 ticket for the bus leaving on March 1st at 7:40 am. This bus will be leaving form Sacramento and your destination would be San francisco. Is this correct?
+user: Perfect. Which station would I be arriving at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Ticket is confirmed and you will be arriving at Transbay Terminal.
+user: Great, lets pull up some hotels in that area too.
+tool(SearchHotel): ok n_results=10
+assistant: Sure, I have located 10 hotels matching your request. I will start with Amsterdam Hostel San Francisco. This hotel has a 1 star rating.
+user: I would like to hear more options please.
+assistant: How about Argonaut Hotel with a 4 star rating?
+user: Sounds good. I was just curious what was there. This will be all for now.
+assistant: Alright , Good bye!

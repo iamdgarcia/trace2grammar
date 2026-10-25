@@ -1,0 +1,34 @@
+user: Can you find me a salon please
+assistant: Sure in what city?
+user: I want a place in San Fran please
+tool(FindProvider): ok n_results=10
+assistant: How about 1512 Barber Shop in San Francisco
+user: Yes please, now book me an appointment there at 15:00 please
+assistant: What date do you want that?
+user: I want to visit on the 12th please
+assistant: Confirming you want a 3 pm appointment on March 12th at 1512 Barber Shop yes?
+user: Yes that's good, also what's their location?
+tool(BookAppointment): ok n_results=1
+assistant: It's been booked and they are at 1532 20th Street
+user: Is it a unisex salon? Also what's their number
+assistant: Yes it is, and it's 415-286-4371
+user: Thanks so much for that
+assistant: What else can I do?
+user: I want to find a restaurant to eat at
+assistant: What kind of cuisine?
+user: Something Greek sounds good
+tool(FindRestaurants): ok n_results=5
+assistant: I found 5 places in San Francisco including a place called Ayola
+user: Do they have vegetarian options there?
+assistant: No they don't sorry
+user: OK that's great then
+assistant: What else can I do?
+user: Book me a table there
+assistant: What time do you want it for?
+user: Let's do it at half past 10 in the morning
+assistant: Confirming a table for 2 on March 12th at 10:30 am at Ayola in San Francisco
+user: Yes that's confirmed
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry I couldn't book it, do you want me to try another date or time?
+user: No for now that's ok
+assistant: OK got it, let me know!

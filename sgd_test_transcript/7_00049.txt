@@ -1,0 +1,22 @@
+user: I am looking for a place with 2 baths to rent.
+assistant: Where do you want me to search for the property?
+user: I am looking for a place in Concord.
+assistant: Can you tell me the number of bedrooms the property must have?
+user: I would like a property with 3 bed rooms.
+tool(FindHomeByArea): ok n_results=7
+assistant: There are 7 houses which you may like. How about a very good property called Clayton Creek Apartments located at 5255 Clayton Road and it costs $4,050.
+user: Do you any other place?
+assistant: How about a very good property called Lakeshore Apartments located at 1530 Ellis Street and it costs $3,500.
+user: This house sounds good to me.
+assistant: Would you like me to schedule a visit to the property?
+user: Yes, Please schedule a visit to the property on 9th of March.
+assistant: Please confirm: You want me to schedule a visit to Lakeshore Apartments on March 9th.
+user: Yes, Please do that.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled the visit.
+user: Can you confirm whether they have laundry Machine and also find me their phone number?
+assistant: No, They do not have a laundry machine and you can contact them on 925-521-8333.
+user: Okay, Thank you so much for the help.
+assistant: Is there anything else I can help you with?
+user: No. That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

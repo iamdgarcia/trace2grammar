@@ -1,0 +1,22 @@
+user: Will you show me some attractions to visit because I need a historical spot?
+assistant: Where should I look for attractions in?
+user: Please find attractions in San Fran.
+tool(FindAttractions): ok n_results=8
+assistant: There are 8 attraction that might interest you so check out Alcatraz a Historical Landmark.
+user: Okay that is great. I'd like to watch a movie around here.
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies including Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles.
+user: Fiddler is good and are there good movies online?
+assistant: Which kind of movies do you like?
+user: Thriller movies are great.
+tool(FindMovies): ok n_results=4
+assistant: Would you like Madeline's Madeline, Rojo, or The Art of Self-Defense?
+user: The Art of Self-Defense is good. I would like to watch the movie now.
+assistant: Please confirm details for The Art of Self-Defense with subtitles in English.
+user: Yes, please do so.
+tool(PlayMovie): ok n_results=1
+assistant: I started playing the movie.
+user: Who was acting in it?
+assistant: Davey Johnson was an actor in it.
+user: Thanks, that is all I want.
+assistant: Have a nice day.

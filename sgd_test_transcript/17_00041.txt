@@ -1,0 +1,18 @@
+user: I want to go for a short trip and I need to search for a Train. Can you help me?
+assistant: What is the name of the City that you are going to visit?
+user: I am going to visit LA and I need to book the train tickets for the date 9th of March.
+assistant: I will book it for your for which I need to know your starting place.
+user: Search for the Train from SD and book tickets according to my requirement.
+tool(FindTrains): ok n_results=10
+assistant: I got 10 Train details. one is departing at 6:10 am under cost $59 in total. Do you choose this?
+user: Yes, this time is convenient to me. Thanks.
+assistant: Shall I book the tickets now?
+user: No, not now. Will be later. Find me a house for four persons to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: What about the one house located at 1020 South Figueroa Street which is the suitable one that I think among the 10 results I got for you. This house also got rating 4.1. Do you like it?
+user: I think so. Please search for something better.
+assistant: What about the one located at 10320 West Olympic Boulevard with rating 4.1?
+user: Let me decide, before that I want to know their phone number and als I want to know whether they have laundry service.
+assistant: Yes, they have laundry service and please note down their phone number as +1 310-556-2777.
+user: This house is okay for me and thanks for everything. That's all.
+assistant: Have a nice day.

@@ -1,0 +1,16 @@
+user: I'm trying to find a place to eat in Sunnyvale. Can you find me any afforadable Spicy Indian restaurants in the area?
+tool(FindRestaurants): ok n_results=3
+assistant: Sure thing. I've found 3 restaurants for you in Sunnyvale. How about the Arka Indian Restaurant? I hear it is really nice.
+user: Is this a good restaurant for vegetarians? What is their rating?
+assistant: They have great vegetarian options. They are rated at 3.8 stars.
+user: Okay, this place sounds great. Let's go ahead and start booking a table.
+assistant: Sure thing. What time would like to make the reservation for?
+user: I need a table for 2 on March 14th at 12:00.
+assistant: Okay, first confirm the following details for me. Booking a table for 2 at the Arka Indian Restaurant in Sunnyvale for 12 pm on March 14th. Is this right?
+user: Yes, that's perfect. Also can I get their number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Okay, your table is booked! Their phone number is 408-774-1540.
+user: You you so much! I appreciate your help.
+assistant: Anything else I can help you with today?
+user: No thanks. That's all. Thanks again.
+assistant: My pleasure. You have a nice day now.

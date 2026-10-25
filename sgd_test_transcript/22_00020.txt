@@ -1,0 +1,33 @@
+user: Will you look for some interesting activities for me?
+assistant: What is your preferred city?
+user: I would like to be in the area of NY.
+assistant: Is there a specific category you want? How about Theater, music or something else?
+user: I love Musical performance.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that I believe you will enjoy. A well-known event is at the Kaufmann Concert Hall on March 11th at 7:30 pm. It is Abbi Jacobson.
+user: I think that will be awesome.
+assistant: Do you need more help?
+user: Can you tell me the direct buses that will be going there? I will be coming from Washington.
+assistant: Will you be heading there on March 11th?
+user: Yes, that is the plan.
+tool(FindBus): ok n_results=7
+assistant: There is a bus leaving at 6:20 am and will be $38.
+user: Okay, I like that.
+assistant: Would you like to purchase a bus ticket?
+user: Not right now. Can you check out economy class tickets that are going there? I'll need 4 tickets and would prefer flying with United Airlines.
+assistant: Will you need to go on March 11th? What will be the date of your flight returning back?
+user: I will be going on the day after tomorrow and come back on the 14th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight. Is United Airlines good? There is a direct onward flight that leaves at 4:35 pm and the return flight will leave at 10:15 am. The price of the ticket is $131.
+user: That works. Will you search for hotels there?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that match your desires. There's a 5 star hotel with the name of 1 Hotel Brooklyn Bridge.
+user: Great, I like that.
+assistant: Do you want to reserve a room there?
+user: No, not at this time. I would like to get 3 tickets to the event you were able to find for me.
+assistant: Reserving 3 tickets for Abbi Jacobson that will be held March 11th in New York. Is this correct?
+user: Yes, that's just what I want.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have made the reservations for you and I hope you have a really good time!
+user: You've been tons of help and that's it!
+assistant: I hope you have a fantastic day!

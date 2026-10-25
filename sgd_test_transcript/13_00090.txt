@@ -1,0 +1,16 @@
+user: I like to watch movie and I want to search for the one which is a Family type and Tzi Ma acting in it.
+tool(FindMovies): ok n_results=1
+assistant: What about the 1 I got for you that is The Farewell which has an average rating of 99 out of 100?
+user: Let me know the director of this movie to decide further.
+assistant: This movie is directed by Lulu Wang and hope this is okay to you.
+user: Yes, that is okay for me and thanks.
+assistant: What else you want me to do?
+user: I also want to search for an interesting event to do on that day.
+assistant: Let me know your interested category like Music or Theater or any other event and also tell me your interested City to search there.
+user: Search for something like Play in London, UK.
+tool(FindEvents): ok n_results=10
+assistant: An event named A Right Royale Tea will be held at Amba Hotel Charing Cross on March 14th at 7 pm. Do you like to book this?
+user: Where is the venue situated and what is the cost of ticket?
+assistant: Cost of ticket is $50 each and the Venue is Strand.
+user: Okay, good. Thanks and that's all.
+assistant: Have a good day.

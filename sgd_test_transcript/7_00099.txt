@@ -1,0 +1,15 @@
+user: I would love to buy some movie tickets please
+assistant: When do you want to watch the movie?
+user: I want to catch a night showing, maybe around quarter to 7 in the evening?
+assistant: How many people are you watching with?
+user: It's gonna be 3 of us
+assistant: What movie and what date and place?
+user: I wanna watch IT Chapter Two on the 7th, preferably in Mill Valley
+assistant: Do you prefer a 3d or regular screening?
+user: A regular one is fine for us
+assistant: Confirming you want 3 regular tickets to the film IT Chapter Two at 6:45 PM on March 7th in Mill valley
+user: Yes please. What theater is good? And what would the address of that theater be?
+tool(BuyMovieTickets): ok n_results=1
+assistant: I've purchased you tickets to the recommended CineArts Sequoia theater at 25 Throckmorton Avenue
+user: OK, thanks so much, that's all for now then
+assistant: Sure, enjoy your movie!

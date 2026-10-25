@@ -1,0 +1,35 @@
+user: Can you find me some music events around NYC on March 2nd?
+tool(FindEvents): ok n_results=10
+assistant: There is an event by Abbi Jacobson, who is very popular, at Kaufmann Concert Hall at 6:30 pm on March 2nd.
+user: That sounds like a great event.
+assistant: Would you like me to buy tickets for you to this event?
+user: Not now, maybe later.
+assistant: Is there anything else I can assist you with today?
+user: Can you find me buses to go there?
+assistant: Where do you plan to leave from?
+user: It's for 4 people departing from Washington.
+assistant: Will you be leaving on March 2nd?
+user: Yes, that should be fine.
+tool(FindBus): ok n_results=7
+assistant: There is a bus departing at 6:20 am and a ticket costs $34.
+user: That should work. Thank you.
+assistant: Would you like to get tickets for this bus?
+user: No. I don't want them now.
+assistant: Is there anything else I can do for you?
+user: Can you find a United Airlines round trip flight to go there on March 2nd and return on the 7th of March?
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is only 1 suitable United Airlines direct flight that departs at 4:35 pm. The return flight takes off at 10:15 am and the ticket costs $133.
+user: Thank you for the details. Can you help me find three rooms in a hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: That should be just fine. Thank you.
+assistant: Would you like to reserve your rooms now?
+user: No, not now. I'm still undecided.
+assistant: Can I help you with anything else?
+user: Can you buy me tickets to the event that you found?
+assistant: Please confirm that you would like to buy 4 tickets to the Abbi Jacobson event scheduled fro March 2nd in New York.
+user: Yes, that sounds right to me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked successfully. Have fun there!
+user: Thanks a bunch for the assistance! That'll be all for now.
+assistant: Have a great day!

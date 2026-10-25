@@ -1,0 +1,23 @@
+user: Can you help me find something interesting to do on the 10th of this month.
+assistant: Do you have any preferences for the type of event?
+user: I enjoy a good Drama.
+assistant: What city should I search?
+user: Search for something around LAX.
+tool(FindEvents): ok n_results=10
+assistant: A Year In Dragonfly is taking place at Studio C Artists on March 10th at 5:30 pm. It is very popular.
+user: That sounds good. I want to reserve a ticket.
+assistant: How many tickets do you need?
+user: I would like two tickets.
+assistant: Please confirm: Reserve 2 tickets for A Year In Dragonfly taking place in Los Angeles on March 10th.
+user: No, I need 3 tickets.
+assistant: Please confirm: Reser 3 tickets for the event in Los Angeles.
+user: Yes, that is correct. Where is the venue located and how much does each ticket cost.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed. The venue location is 6448 California 2 and the ticket cost $55. Have a great time.
+user: Thanks for the help. Can you get me a Regular cab to go there?
+assistant: Please confirm: You need 3 sears for a Regular ride to Studio C Artists.
+user: Yes, that is correct. How long before the cab arrives and how much does it cost.
+tool(GetRide): ok n_results=1
+assistant: I booked your ride and the cab should arrive in 7 minutes. The cost of the ride is $35.75
+user: Thanks for the help. That is all I needed.
+assistant: Enjoy your day.

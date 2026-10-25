@@ -1,0 +1,34 @@
+user: I'm still not feeling myself lately so I think it's time to find a Psychologist, can you help me find one.
+assistant: First I will need the location where you would prefer the therapist be.
+user: I want the office to be in an area I am familiar with so Menlo Park would be ideal.
+tool(FindProvider): ok n_results=4
+assistant: There is a Psychologist by the name of Kate Corcoran that is located in Menlo Park.
+user: That works for me, can you help me set up an appointment?
+assistant: I will first need the date you would like the appointment to be on.
+user: I'm free the 6th of March.
+assistant: And what about the time of the appointment?
+user: Around lunch would be good, so let's try for 12:30 in the afternoon.
+assistant: Okay, I will see if there is an opening with Kate Corcoran, on March 6th, at 12:30 pm. Do I have everything correct?
+user: No, I'm sorry, March 1st at eleven am would be better.
+assistant: I've went ahead and changed the time and date to March 1st at 11 am, is that right?
+user: Yes, that sounds great!
+tool(BookAppointment): ok n_results=1
+assistant: I'm terribly sorry but I was not able to confirm that appointment for you. Would you like me to try and book the appointment with Kate Corcoran on March 1st at 11:30 am instead?
+user: Yes, please. I can move things around in my schedule if need be.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed that appointment for you and you should receive an email correspondence shortly.
+user: I would also like assistance getting a cab there please.
+assistant: Is there a specific type of ride such as a pool or regular ride?
+user: Neither of those, I much prefer a luxury ride.
+assistant: Is the address you will be headed to 845 El Camino Real?
+user: Yes, that was convenient.
+assistant: And how many people will be traveling with you or how many seats will you need?
+user: It will only be me so one is fine.
+assistant: I will get you a luxury ride for 1, headed to the office located at 845 El Camino Real. Is that right?
+user: Perfect, do you have a current ETA and cost of the ride?
+tool(GetRide): ok n_results=1
+assistant: The ride that I have just confirmed will be there in 8 minutes and you will owe a total of $34.05 for it.
+user: Okay, that's really affordable, thanks.
+assistant: Is there something else I can find for you?
+user: No, that takes care of everything for now.
+assistant: Have a great day.

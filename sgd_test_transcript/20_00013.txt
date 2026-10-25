@@ -1,0 +1,25 @@
+user: I need to search for a hotel to book for my upcoming travel.
+assistant: Where would you like me to search for a hotel?
+user: I need to find a hotel in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that may work for you. The first is a 5 star hotel named 45 Park Lane.
+user: Can you tell me if there are more choices that fit my search?
+assistant: Sure. There's one that has a rating of 3 stars named Abbey Court Hotel (Hyde Park).
+user: Okay, thank you for that. I also need to look up car rentals to get around while there.
+assistant: Is March 6th the date you would like the reservation to begin? And for how long will you need the rental?
+user: I want the rental car from next Thursday and up until March 13th.
+assistant: Do you have a preference for the time you'd like to pick it up?
+user: Yes. 4:30 in the evening is when I want to get it
+tool(GetCarsAvailable): ok n_results=10
+assistant: OK. 10 cars fit with you search options. One is a Sedan Audi A8 and it is located at Heathrow International Airport.
+user: What is the per day price for this option?
+assistant: The price for this car is $40.00 per day.
+user: Great. That works for me. I'd like to go ahead and book this car.
+assistant: Will you be needing insurance?
+user: Yes please, I'd like to obtain insurance
+assistant: Okay then, you would like to reserve the Sedan rental car beginning on March 7th at 4:30 pm and returning on March 13th. The pick up location is Heathrow International Airport and the rental includes insurance. Is this all correct?
+user: Yes, that works perfectly!
+tool(ReserveCar): ok n_results=1
+assistant: That car rental has been successfully confirmed
+user: Great, thanks! That was everything for now
+assistant: Enjoy your day

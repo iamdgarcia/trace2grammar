@@ -1,0 +1,37 @@
+user: Would you find me some attractions I can go to?
+assistant: What area should I look in?
+user: Check New York City.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 attractions that may interest you. What about the Museum 9/11 Tribute Museum?
+user: Is there anything else? Something free and kit friendly is best.
+tool(FindAttractions): ok n_results=10
+assistant: Check out Alley Pond Park. It's a Park.
+user: Sounds good. Would you look for a rental car there?
+assistant: When will you return the car?
+user: I will return it March 10th
+assistant: Are you going to pick it up in New York? When will you pick it up?
+user: Yeah, that's good. I'll pick it up 7th of March.
+assistant: What time will you pick it up?
+user: I'll pick it up at half past 1 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have a nice car at Port Authority Station. It's a SUV Alfa Romeo Stelvio.
+user: Sounds nice. I'd like to book it.
+assistant: Do you need insurance?
+user: No, thanks.
+assistant: Please confirm that you will pick up the SUV car on March 7th and return it on March 10th at 1:30 pm. You will pick it up from Port Authority Station. No insurance is included.
+user: That is right. What is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been booked. It's $40.00 per day.
+user: Would you share the location?
+assistant: YOu want to share the address Port Authority Station, right? Who do you want to share it with?
+user: Yep. Share it with Gerald.
+assistant: Could you confirm that you want to share Port Authority Station with Gerald?
+user: No, make that Jacqueline, and share the address Alley Pond Park.
+assistant: Could you confirm that you want to share Alley Pond Park with Jacqueline?
+user: Yep.
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared successfully.
+user: Thanks. That was a good help.
+assistant: Shall I assist with anything further?
+user: No, that's it. That has been a help.
+assistant: Have a good one.

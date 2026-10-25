@@ -1,0 +1,17 @@
+user: I am looking for Drama movies directed by Gregory La Cava and with Franklin Pangborn acting in it.
+tool(FindMovies): ok n_results=1
+assistant: I found one with a 95 average rating out of a 100 called Stage Door.
+user: That sounds great. Can you search some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: I have found 10 songs, including one from the album Badlands by Halsey called Colors.
+user: What genre of music is that.
+assistant: The genre is Electropop.
+user: Great. Id like you to play this on my patio device.
+assistant: So you want me to cast Colors on your Patio device.
+user: Yes. I do.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Can you tell me when this song came out?
+assistant: Yes. It came out in 2015.
+user: Thanks I am all set.
+assistant: Have a great day.

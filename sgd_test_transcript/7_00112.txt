@@ -1,0 +1,13 @@
+user: I was thinking about going to the cinema, I need three tickets.
+assistant: Sounds like a good idea. Are you looking for a 3d or a regular show? When do you want to go? Have you decided what movie do you want to watch?
+user: A regular show is just fine. The movie is Good Boys and the date is the 5th of this month.
+assistant: Okay, just tell me the time you want to watch it.
+user: Nine pm.
+assistant: Where should I look?
+user: Brentwood please.
+assistant: Before I proceed, tell me if I got this right. You're looking to buy 3 tickets for Good Boys on March 5th in Brentwood at 9 pm. You want regular tickets, not 3d.
+user: That's absolutely correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Tickets are yours.
+user: Great! You helped me a lot! Bye!
+assistant: Goodbye to you.

@@ -1,0 +1,28 @@
+user: Can you locate me a salon in Alameda?
+tool(FindProvider): ok n_results=8
+assistant: I have 8 choices. First listed is Al's Barber Shop. It's in Alameda.
+user: Fine I like that name.
+assistant: How about an appointment then?
+user: Not yet, thanks.
+assistant: What else may I help with?
+user: Well, can you just share their address with Denise, It's 1502 1/2 Webster St.
+assistant: Please verify: Sharing 1502 1/2 Webster St address with Denise.
+user: No, I want to now share Plumed Horse with Brandon.
+assistant: Please verify: Sharing Plumed Horse with Brandon.
+user: That's the ticket.
+tool(ShareLocation): ok n_results=1
+assistant: You've shared now.
+user: Show what alarms are set.
+tool(GetAlarms): ok n_results=4
+assistant: You have a 7 am get up alarm.
+user: Fine, add a new alarm called Cleaning.
+assistant: What time do you want that set?
+user: Do it at quarter to 5 in the evening.
+assistant: To confirm, set alarm for Cleaning at 4:45 pm.
+user: That is it.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm is added.
+user: You are great, thanks.
+assistant: What else might you need?
+user: I'm good thanks.
+assistant: Have a good one.

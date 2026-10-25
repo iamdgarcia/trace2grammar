@@ -1,0 +1,37 @@
+user: I am looking to buy bus tickets from Anaheim, CA.
+assistant: What is time of departure, number of required tickets and the destination?
+user: I need 4 tickets in bus leaving at 13:15 for Sacramento, CA.
+assistant: And what is your date of departure?
+user: I will be leaving on the 8th.
+assistant: Please confirm: You want me to book 4 tickets in a bus going from Anaheim to Sacramento on March 8th at 1:15 pm.
+user: No, I want the tickets from Fresno, CA.
+assistant: Please confirm again: You want me to book tickets in a bus leaving from Fresno on March 8th.
+user: Yes, That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, Due to some problems your tickets could not be booked. Would you like me to retry booking in a bus leaving at 1:10 pm with the ticket cost of $35?
+user: Okay. That sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked your tickets.
+user: Thank you so much! Now, Find me a rental car there?
+assistant: Are you looking for a car for pick up in Sacramento on March 8th?
+user: Yes, That is correct. And I will be picking it up on the 11th.
+assistant: What will be the time of pick up and the date of drop off?
+user: I would like to pick up at Six in the evening and the date of drop off is 14th of March.
+tool(GetCarsAvailable): ok n_results=8
+assistant: How about a nice SUV Alfa Romeo Stelvio available for pic up at Sacramento Valley Station?
+user: Find me the cost per day?
+assistant: The total cost per day is $36.00.
+user: Can you show me other cars of any type with the drop off date as 12th of this month?
+tool(GetCarsAvailable): ok n_results=7
+assistant: I found 7 cars you may like. How about a nice sedan Buick Regal Sportback available for pick up at Sacramento Valley Station?
+user: Okay! That sounds nice. Book me the car please.
+assistant: Would you like to have trip insurance?
+user: No, I don't want to have the trip insurance.
+assistant: Please confirm: You want me to reserve a sedan car without insurance for pick up at Sacramento Valley Station on March 11th at 6 pm with the drop off date as March 12th.
+user: No, Please add insurance.
+assistant: Please confirm: You want me to book a car available for pick up at 6 pm with insurance.
+user: Yes, That is correct. Find me the cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved the car for you. The cost per day is $41.00.
+user: Okay. That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

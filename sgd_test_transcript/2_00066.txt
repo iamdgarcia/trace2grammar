@@ -1,0 +1,22 @@
+user: I need help finding interesting things to do
+assistant: Do you want to do something music related? Or perhaps theater?
+user: I want to watch some musical shows today!
+assistant: But where do you want to watch?
+user: I want to watch around the LA area
+tool(FindEvents): ok n_results=10
+assistant: Sure, I found 10 events including Ain Gordon which is a popular show taking place at Ralph Freud Playhouse which is happening today, March 1st at 7:30 pm
+user: Where is the venue?
+assistant: It's at 245 Charles E Young Drive East
+user: And how much is admission?
+assistant: It's gonna be $40
+user: That sounds awesome
+assistant: Should I get you a ticket?
+user: Yes please, just 1 for me
+assistant: Confirming you want 1 ticket to see Ain Gordon on March 1st in Los Angeles?
+user: Yes that's great
+tool(BuyEventTickets): ok n_results=1
+assistant: It's been booked, I hope you enjoy the show
+user: I think I will, thanks for helping me out
+assistant: Sure thing, can I do anything else?
+user: No that's it, thanks again
+assistant: It was my pleasure!

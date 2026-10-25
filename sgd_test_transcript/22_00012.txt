@@ -1,0 +1,39 @@
+user: Hello! I'm trying to find something to do.
+assistant: I'd be happy to help. Are you interested in seeing a music or theater event? Where should I begin the search?
+user: I'd like to find a play in NYC.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 showing right now that you may be interested in. May I suggest Acting For Teens? It is showing at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm.
+user: I heard it was good but I'd like to see what else is available.
+assistant: Another popular event is Advanced Acting Scene Study at TGW Acting Studio. It begins at 4:30 pm on March 10th.
+user: Can you tell me what a ticket costs?
+assistant: Tickets begin at $20.
+user: What is the address of the venue?
+assistant: It is located at 358 West 44th Street.
+user: I'd like to do that.
+assistant: Would you like to buy the ticket now?
+user: No, not right now. I'll need to find a direct bus from Philly for two first.
+assistant: Will you be leaving on March 10th?
+user: No, I will be traveling on the 7th of this month.
+tool(FindBus): ok n_results=6
+assistant: There is a bus leaving at 9 am for $26.
+user: Can you tell me the stations of origin and destination?
+assistant: It will leave from 10th and Filbert and arrive at Penn Station.
+user: I'd like to compare the price of a round trip flight.
+assistant: Will you need to travel on March 7th, March 10th, or another day? When will you return?
+user: I'd leave next Tuesday and return on the 14th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There is a direct American Airlines flight leaving Philly at 7:25 am and returning at 11:20 am. Tickets are priced at $97 each.
+user: Okay, thank you. Can you help me find a 4 star hotel near there that allows smoking?
+tool(SearchHotel): ok n_results=10
+assistant: May I suggest the 4 star 6 Columbus - Central Park Hotel?
+user: That sounds nice.
+assistant: Do you want to reserve your room?
+user: No, I have to check with my friend first. I would like to purchase tickets to the event though.
+assistant: You'd like 2 tickets for Advanced Acting Scene Study on March 10th in New York. Is this correct?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased. You will receive an email confirmation shortly.
+user: Great! Thanks for the assistance.
+assistant: Is there anything else I can help you with?
+user: No, that will be all. Thank you again.
+assistant: You're welcome. Enjoy your trip.

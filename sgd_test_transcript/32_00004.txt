@@ -1,0 +1,22 @@
+user: i am not feeling well , will you please find a therapist for me?
+assistant: in which city should i need to search in for?
+user: find some therapist in Lafayette.
+assistant: Whether you need a Psychologist or a Family Counselor or any other kind?
+user: i need a family therapist.
+tool(FindProvider): ok n_results=5
+assistant: i found 5 therapist as per your need. What about Building better relationships ? they are a family counselor in Lafayette.
+user: Ok that sound good to me. Will you book an appointment?
+assistant: at which time do you need to fix the appointment?
+user: i need appointment time to be 4:15 in the evening. Will you make an appointment for 11th of this month?
+assistant: please check and review the following details. Appointment need to be booked with building better relationships at 4:15 pm on March 11th.
+user: ok that suits for me. What is their address?
+tool(BookAppointment): ok n_results=1
+assistant: their address is 3470 Mount diablo Boulevard A200. Sorry i couldn't fix an appointment. What about an appointment on MArch 11th at 4:30 pm with Building Better relationships?
+user: ok that sound good to me
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is fixed successfully. You will be getting an email of your appointment.
+user: thanks a lot! Whether do you have some recommendation of any movies to watch? i love movies with Robert R. Morgan acting in it. Find some movies of Family Genre , which is directed by Herbert Ross?
+tool(FindMovies): ok n_results=1
+assistant: How about Steel Magnolias? The average rating of this movie is 70 out of 100.
+user: that's great. that is all i need.
+assistant: have a wonderful day.

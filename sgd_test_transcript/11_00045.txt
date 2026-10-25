@@ -1,0 +1,14 @@
+user: I need to find a house to stay in.
+assistant: What city are you plaaning to stay in?
+user: Search NYC as that is where I am travelling to.
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice house with a 4.4 rating at 100 Greenwich Street.
+user: Great. I want to book the house. I want to check in on Sunday this week and check out on March 8th.
+assistant: How many people are in your group
+user: Only 1 person.
+assistant: Please confirm: The location is New York for a group of 1. The check in date is March 3rd and check out date is March 8th.
+user: Correct. What is the cost?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is complete. The total cost is $2,475.
+user: That is all I needed. Thanks for the help.
+assistant: My pleasue. Goodbye.

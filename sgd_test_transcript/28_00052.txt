@@ -1,0 +1,23 @@
+user: I like o watch a movie
+tool(FindMovies): ok n_results=10
+assistant: What is your opinion about the film Live Flesh with average rating of 80 out of 100.
+user: This is cool..Can you search me a restaurant there?
+assistant: Which area you prefer the restaurant?
+user: Search some where in Cupertino.
+assistant: Can i know the type of food you want?
+user: Search something Quick meal.
+tool(FindRestaurants): ok n_results=1
+assistant: I have searched 1 good restaurant of your choice called Bj's Restaurant & Brewhouse located in Cupertino.
+user: Can i know the address? Is there a outdoor seating?
+assistant: There is a outdoor seating and the address is 10690 North De Anza Boulevard.
+user: Okay..this is cool..I like to book table at this Restaurant.
+assistant: What is the time of reservation?
+user: Do booking for four people at 1 in the afternoon.
+assistant: Please give confirmation details: Booking a table for 4 people at Bj's Restaurant & Brewhouse at 1 pm on March 1st in the city of Cupertino.
+user: This is perfect.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I confirmed your booking.
+user: Is there a vegetarian option in this hotel and is the hotel is a ultra high-end?
+assistant: Yes..there is a vegetarian food and it is a moderate restaurant.
+user: Thanks for the help.
+assistant: Have a great day.

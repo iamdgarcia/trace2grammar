@@ -1,0 +1,9 @@
+user: I'm looking for a flight that is one way.
+assistant: Where will you be leaving from, on what date, and where you are heading to?
+user: I'm leaving from New York on Tuesday next week, and I'm heading to Toronto, Canada.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I've found 3 flights that can work. There's an American Airlines flight at 7 pm, it's direct, and it is $124 per ticket.
+user: Is the ticket from Premium Economy?
+assistant: It's an Economy ticket.
+user: Okay, cool. That's all for now, thank you.
+assistant: Have a pleasant day.

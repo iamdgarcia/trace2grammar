@@ -1,0 +1,15 @@
+user: Get me economy premium train tickets from Anaheim
+assistant: which city are you going?
+user: Going from Sacramento to Phoenix, AZ on March 8th
+tool(FindTrains): ok n_results=1
+assistant: There is a train departing at 6:30 am and costs $203
+user: whats the arrival and departure station?
+assistant: Its leaving from Sacramento Valley station to Phoenix Union station
+user: great, find me a house for 3 people rated 4.6 or higher
+tool(SearchHouse): ok n_results=5
+assistant: there are 5 houses of which 10 east thomas road is ratde 4.6
+user: find me a house for two people rated 4.2 or higher
+tool(SearchHouse): ok n_results=9
+assistant: there are 9 houses, of which there is one located at 10601 North 56th Street, Scottsdale, Arizona 85254, united states and is rated 4.2
+user: that is great
+assistant: it is my pleasure

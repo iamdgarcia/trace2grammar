@@ -1,0 +1,19 @@
+user: Please help me find a hotel in San Fran with 1 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 hotels and one is Amsterdam Hostel San Francisco which is a 1 star hotel.
+user: May I know their street address and price per night?
+assistant: They are located at 749 Taylor Street and room costs $54 per night.
+user: Can you find any other hotels? I prefer four - star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 hotels and one is Argonaut Hotel which is a 4 star hotel.
+user: That's good!
+assistant: Will I reserve you the hotel?
+user: Yes, I want to check in on March 8th for two days.
+assistant: Okay, you want 1 rooms at Argonaut Hotel in San Francisco on March 8th for 2 days. Please confirm.
+user: Good. May I know their street address and phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: They are located at 495 Jefferson Street and their phone number is +1 415-563-0800. Your reservation is now confirmed!
+user: Thank you.
+assistant: Anything else I can help you with?
+user: No, thanks.
+assistant: You are welcome!

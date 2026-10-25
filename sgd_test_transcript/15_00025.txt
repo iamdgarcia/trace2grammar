@@ -1,0 +1,27 @@
+user: I want to find a two bedroom property in Santa Rosa.
+assistant: Do you want to rent or buy? How many baths do you want?
+user: I want to rent. I want 1 bath.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 10 nice houses for you. How about Behringer Harvard? It is a very good property located at 4656 Quigg Drive. It costs $2,450.
+user: That sounds good. Can you schedule a visit?
+assistant: Sure. When would you like to visit?
+user: How about the 1st of this month?
+assistant: Confirming that you want to schedule a visit to Behringer Harvard on March 1st?
+user: No. I want to visit on the 11th.
+assistant: Confirming that you want to visit Behringer Harvard on March 11th?
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been successfully scheduled.
+user: Thanks! Can you show me my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: You currently have 3 alarms set. There is an alarm for 4 pm named Busy.
+user: Any more alarms?
+assistant: There's an alarm for 10 am named Catch bus.
+user: Any more alarms?
+assistant: You have an alarm for 8 am named Wake up.
+user: Okay, that's great.
+assistant: Would you like to add an alarm?
+user: No, not now.
+assistant: Do you need anything else?
+user: No, thanks a lot.
+assistant: You're welcome.

@@ -1,0 +1,19 @@
+user: Are there any online movies?
+assistant: What genre do you prefer?
+user: I really like War films.
+tool(FindMovies): ok n_results=1
+assistant: Here's one called The Load would you like to see it?
+user: The Load might be interesting, play it now and don't worry about the subtitles.
+assistant: The Load with English subtitles is your request right?
+user: Yes I want to watch it.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: What should the weather be like on March 13th?
+assistant: Where would you like the weather for.
+user: I want the weather for Berkeley please.
+tool(GetWeather): ok n_results=1
+assistant: They are saying an average temperature around 74 degrees and an 18 percent chance of showers.
+user: Any idea what the wind will be like?
+assistant: The forecast is for 12 mile per hour winds.
+user: Alrighty then, you can go now good bye.
+assistant: Toodle do.

@@ -1,0 +1,15 @@
+user: I want to find a rock-and-roll song please
+tool(LookupMusic): ok n_results=10
+assistant: Sure, I found 10 tracks including Be Somebody by Thousand Foot Krutch off the album The End is Where We Begin that fits your taste
+user: Sure, that's a good one
+assistant: Want me to play it?
+user: Maybe in a bit, right now though help me find a Suspense movie with Cecil Parker in it
+tool(FindMovies): ok n_results=1
+assistant: What about The Ladykillers
+user: I love the Ladykillers! Let's play that song we found earlier on my living room speaker
+assistant: Sure, confirming you want to play Be Somebody in the Living room right?
+user: That is right!
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song
+user: Thanks for doing that, that's it
+assistant: OK, have a great rest of your day

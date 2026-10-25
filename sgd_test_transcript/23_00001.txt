@@ -1,0 +1,36 @@
+user: Would you look for some online movies, please?
+assistant: no problem, tell me the genre you prefer
+user: action is my thing
+tool(FindMovies): ok n_results=5
+assistant: I got 5. Pick one from angel has fallen, hobbs and shaw and last but not least mission mangal.
+user: I pick hobbs and shaw
+assistant: may I play it now?
+user: in a moment, first, you have to find some attactions in mexico city
+tool(FindAttractions): ok n_results=10
+assistant: there's 10 of them ready for you. I thinkk you'll love acuario inbursa, it is a nature preserve
+user: I'm more into historical landmark
+tool(FindAttractions): ok n_results=3
+assistant: then you should visit diana the huntress fountain, it is listed as an historical landmark
+user: do I have to pay for a ticket to visit this? Do you think children may like it?
+assistant: Entry is not free and the children won't have fun there
+user: you could help me with songs now, I'm a martin garrix fan, pick something from the martin garrix experience album
+tool(LookupMusic): ok n_results=2
+assistant: I got 2 for you. I could play no sleep by martin garrix taken from the album the martin garrix experience
+user: can you tell me the genre? Do you happen to know if it is a '16 song?
+assistant: It's a house song released in 2019
+user: I think I know it, let me listen to it on the kitchen device
+assistant: confirm the next action: I'll play no sleep in kitchen
+user: I confirm it
+tool(PlayMedia): ok n_results=1
+assistant: have fun listening to your favorite tune
+user: thanks, you're nice
+assistant: what's your next request?
+user: I want you to play the movie you told me about, subs are not my concern
+assistant: confirm what you asked me to do: I'll play hobbs and shaw with english subtitles
+user: I confirm it. do you know who's in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: tthe movie has started, you'll see helena holmes in it
+user: cool
+assistant: what can I for you now?
+user: you could let me enjoy the movie. thank you and bye bye
+assistant: sure, enjoy it!

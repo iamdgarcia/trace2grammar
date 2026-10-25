@@ -1,0 +1,15 @@
+user: I am in the mood to go to the movie theater. I would like to purchase tickets in advance.
+assistant: Which city would you prefer the theater to be in? How many tickets are you looking for.
+user: I would like to go to a theater in Mill Valley. I only need one ticket.
+assistant: Do you have a certain movie in mind? Does it matter if it is an imax or 3d show?
+user: I was hoping to see IT2. A regular show would be fine.
+assistant: What day would you like to see the movie?
+user: I am thinking the 2nd of March would be a good day.
+assistant: Do you have a preferred showtime?
+user: Yes, thanks for asking. I would like to visit at 6:45 in the evening.
+assistant: I want to make sure I understand your request. You need 1 ticket on March 2nd for IT Chapter Two. You would like to see a regular show in MIll Valley at 6:45 pm.
+user: You are one hundred percent correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your ticket has been bought.
+user: I don't need anything else. Thank you so much.
+assistant: Hope you have a great day.

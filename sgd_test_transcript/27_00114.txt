@@ -1,0 +1,30 @@
+user: I want you to help me look for a direct bus for three people to go to Seattle.
+assistant: Can you tell me when you are going to leave?
+user: I have my plans made for leaving on 11th of this month.
+assistant: From where will you be departing?
+user: I will be starting my trip from Portland, OR.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses which you might consider, with on of them that I suggest leaving at 7 am, and the ticket of which costs $26.
+user: That is a good one.
+assistant: Would you like having tickets bought for this bus?
+user: Not at the moment, maybe some other time. Can you find me some attractions there that I can visit?
+tool(FindAttractions): ok n_results=10
+assistant: I have found 10 attractions which you might be interested in. How would you like visiting Alki Beach Park which is a Park?
+user: Is this place considered to be friendly to kids?
+assistant: Yes, this attraction is quite suitable for kids.
+user: Alright fine. Now I would like to buy the bus tickets you found earlier.
+assistant: Can you please confirm that you want to buy tickets for 3 people without extra luggage, for the bus which leaves from Portland on March 11th at 7 am to go in Seattle?
+user: Yes, that suits me well. Can you tell me the station where the bus will arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked, and the station where the bus will arrive is Westlake Station.
+user: Could you also tell me the station from where the bus departs?
+assistant: The bus should leave from SW Arthur & 1st.
+user: I appreciate your help very much. I am also interested to find a 2 star hotel in that area.
+tool(SearchHotel): ok n_results=8
+assistant: There are 8 hotels which you might consider, with one of them being a 2 star hotel called Ace Hotel Seattle.
+user: That seems as a nice one.
+assistant: Do you want to make a booking for this hotel?
+user: I am not in need of making the reservation at this moment.
+assistant: Is there something else I can do to help you?
+user: Nothing. Thank you, you have helped me a lot.
+assistant: Goodbye, and have a good time!

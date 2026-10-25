@@ -1,0 +1,13 @@
+user: I need to find a round trip flight please.
+assistant: Ill be happy to help you with that. Where will you be leaving from?
+user: I want to go out of ATL.
+assistant: What is your destination and when would you like to return?
+user: Going to San Fran and planning on coming back March 12th.
+assistant: What is the travel date you were planning on?
+user: That's going to be the 7th of March.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Very good. There are 4 possible flights to choose from. I have an American Airlines direct flight leaving at 3:45 pm with a 9:20 pm return. The fare is $295.
+user: Yes, I'll take it.
+assistant: Of course. How else may I help you?
+user: I don't need anything else, thanks a lot.
+assistant: It's always a pleasure, thank you.

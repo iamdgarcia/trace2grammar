@@ -1,0 +1,29 @@
+user: Could you please help me find a unisex salon?
+assistant: Sure. Any particular city I should search in?
+user: Please find a salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: Of the 10 nice, Berkeley salons I found, you may want to try Berkeley Hair Studio.
+user: Okay. I'd like to know its average star rating, as well as its phone number.
+assistant: Sure. It's rated 4.8 stars, and its contact number is 510-540-1261.
+user: That won't work. I'd like to find another salon.
+assistant: Okay. How about Edge Hair Salon, another nice salon in Berkeley?
+user: No. I didn't like their service the last time I was there. Please search for a different salon.
+assistant: Sure, no problem. May I suggest Elixir Salon An Aveda And Eufora Eco Boutique Salon, another nice salon in Berkeley?
+user: Yes, that works for me. Please go ahead and book an appointment at the salon.
+assistant: Sure. What's your preferred date and time?
+user: Let's go with a 3:15 pm on Wednesday next week salon appointment.
+assistant: Sure. Let me see if I got everything correctly: You'd like to book a 3:15 pm appointment on March 6th, with Elixir Salon An Aveda And Eufora Eco Boutique Salon. Is that correct?
+user: No, sorry. I've just remembered that I have another appointment that day. Please make it March 12th instead.
+assistant: Sure, no problem. Please confirm that you'd like to book a March 12th appointment with Elixir Salon An Aveda And Eufora Eco Boutique Salon.
+user: No. Let's make it 11:15 am instead.
+assistant: Okay. You'd like to book an 11:15 am appointment with Elixir Salon An Aveda And Eufora Eco Boutique Salon. Is that correct?
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately, I was unable to make your preferred appointment at the nice Elixir Salon An Aveda And Eufora Eco Boutique Salon. Would March 12th at 11 am work for you?
+user: Yes, that works for me.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment.
+user: Thanks a lot.
+assistant: Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Do have yourself a lovely day.

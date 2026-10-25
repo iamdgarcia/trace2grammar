@@ -1,0 +1,14 @@
+user: Find me a movie to see.
+tool(FindMovies): ok n_results=10
+assistant: Do you like A Faithful Man? It is rated 78 out of 10.
+user: That works for me. Can you find me something interesting to do there?
+assistant: What city shall I look in?
+user: Look in NY.
+assistant: Do you have any particular genre in mind such as Music, Theater, or something else?
+user: Search in the Musical performance genre.
+tool(FindEvents): ok n_results=10
+assistant: Search revealed 10 results. Abbi Jacobson is playing March 11th at 7:30 pm at Kaufmann Concert Hall.
+user: That works for me.
+assistant: Shall I get you tickets?
+user: No, I don't want tickets. That is everything for now.
+assistant: Have a good day.

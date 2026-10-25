@@ -1,0 +1,28 @@
+user: I would like to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: Would you like to see Mission Mangal? It has a rating of 67 out of 100.
+user: That sounds good. I'd like to find a restaurant there.
+assistant: What type of food do you want?
+user: Find a place serving Diner.
+assistant: What location should I search?
+user: Search for restaurants in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: One nice restaurant in San Francisco is 1760.
+user: Yes, that sounds good.
+assistant: Would you like to reserve a table?
+user: Yes. Make a reservation for a table for 2 on the 9th of this month at 1:30 pm.
+assistant: Please confirm: Reserve a table for 2 at 1760 in San Francisco for March 9th at 1:30 pm.
+user: No, actually I want the table next Wednesday the morning 11:15.
+assistant: Please confirm: The reservation date is March 6th at 11:15 am?
+user: Yes, that is correct. How expensive is the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It is a pricey restaurant. Sorry, I was unable to reserve a table for 2 at 1760. Would you like me to try March 6th at 11:30 am?
+user: Yes, that is fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: What is the restaurant's user rating and do they have vegetarian options.
+assistant: The rating is 4.4. They do not have vegetarian options.
+user: Thanks you so much.
+assistant: Can I assist you with anything else.
+user: No thank you.
+assistant: Enjoy your day

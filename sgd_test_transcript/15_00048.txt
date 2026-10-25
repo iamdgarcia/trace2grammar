@@ -1,0 +1,22 @@
+user: I'm looking for a place to live with 3 bedrooms, 2 baths, and in-unit laundry.
+assistant: What area do you want to look in?
+user: I want a place in Union City.
+assistant: Are you wanting to rent or buy?
+user: I want to buy a place.
+tool(FindHomeByArea): ok n_results=2
+assistant: How about Parkside Apartments at 1501 Decoto Road? The price is $3,500,000.
+user: Can you show me some other places? I'd like it to have a garage.
+tool(FindHomeByArea): ok n_results=1
+assistant: I found 1 nice place for you, it is Summerhill Place Apartments at 3900 Horner Street for $3,150,000.
+user: Okay, that sounds good.
+assistant: Do you want to schedule a visit to the property?
+user: Yes, I'd like to visit in March 9th.
+assistant: Okay, you'd like to visit Summerhill Place Apartments on March 9th, correct?
+user: Yes, that is right. What is the phone number of the property.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled a visit. The phone number is 510-489-2220.
+user: Thank you. What alarms do I have set?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm titled Gym at 8:30 am.
+user: Okay, thanks. That is all I needed.
+assistant: Have a great day.

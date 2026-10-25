@@ -1,0 +1,23 @@
+user: Please find me a movie to watch at Century Northgate.
+assistant: What city are you in?
+user: Century Northgate is in San Rafael. Please search for movies there.
+tool(FindMovies): ok n_results=2
+assistant: Between the 2 movies I found, which do you prefer? Angel Has Fallen or Hustlers?
+user: I prefer Hustlers. Now try and make me a reservation for 1 at Kamikaze Sushi for the 12th.
+assistant: For what time would like the reservation made?
+user: Reserve it for quarter to 1 in the afternoon.
+assistant: Okay. Please confirm that you'd like to reserve a table for 1 at Kamikaze Sushi Bar & Cuisine in San Rafael, for 12:45 pm on March 12th.
+user: No.I forgot that I have something else scheduled for that day. Please try booking me a table at Lavier on Monday next week instead.
+assistant: Sure, no problem. Please confirm that you'd like to reserve a table at Lavier Latin Fusion Restaurant on March 4th.
+user: No. I forgot to mention that I'll be on a date. Please make that a table for 2, at half past 6 in the evening.
+assistant: Sure, no problem. It is a 6:30 pm reservation for 2. Is that correct?
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation.
+user: Is it an ultra high-end restaurant?
+assistant: No, it's a moderate restaurant.
+user: Thanks a lot. Please tell me what time I can watch a regular show of the movie you found earlier.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's only 1 regular showtime for the movie at Century Northgate. It's at 10:30 pm.
+user: That should work. At the moment, that's all I need.
+assistant: Have a great day.

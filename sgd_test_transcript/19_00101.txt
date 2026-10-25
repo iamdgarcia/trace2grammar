@@ -1,0 +1,29 @@
+user: Can you find me a car to rent?
+assistant: At what time and date will you pick up the car, and from which location?
+user: I want to pick up a car at six in the evening, in Portland, OR, on the 11th of March.
+assistant: What about the drop off date, until when do you need the car?
+user: Going to need the rental car till the 13th of this month, the car should ideally be a hatchback.
+tool(GetCarsAvailable): ok n_results=7
+assistant: I found 7 cars you may be interested, one hatchback is available at PDX International Airport, would you be interested in a Ford Focus?
+user: That car sounds perfect for me, thanks.
+assistant: Would you like to book the car for pickup?
+user: Sure, but not at the moment. Please help me reserve tickets to an event.
+assistant: Which city and date will you be interested in making a reservation for an event, and what kinds of event did you have in mind?
+user: Was looking for events in Sydney on the 9th, although I did hear West Side Story was a good one to look out for.
+assistant: Would you like tickets to the event in question?
+user: Sure, book me 1 ticket to the event.
+assistant: You wish to book 1 ticket to West Side Story, taking place on March 9th in Sydney, is that right?
+user: That is all correct, please make the reservation.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation was successfully made, have a great time there!
+user: Great, thanks for the help, please reserve the rental car you found earlier.
+assistant: Would you like to add insurance to your rental?
+user: No insurance will be necessary for this rental.
+assistant: You wish to pick up a hatchback from PDX International Airport on March 11th at 6 pm, and you plan on dropping it off on March 13th correct?
+user: That all sounds correct, quick question, how much does it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved, it will cost $30.00 per day.
+user: Great, thanks for all the help and the information.
+assistant: Will that be all that I can help you with, or is there something else you need?
+user: Not really, I am all set, thanks once again.
+assistant: Your welcome, have a good day.

@@ -1,0 +1,11 @@
+user: I'd like to view the film right now.
+assistant: What film would you like to view?
+user: I'd like to view the film Once Upon a Time in Hollywood with subtitles in English.
+assistant: Please verify the following information: cast Once Upon a Time in Hollywood with English subtitles.
+user: Nope; I'd like to view it with subtitles in Spanish.
+assistant: Please verify the following information: cast Once Upon a Time in Hollywood with Spanish subtitles.
+user: Yeah, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: The film has begun playing.
+user: Thank you; that's all for now.
+assistant: Have a pleasant afternoon.

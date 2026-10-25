@@ -1,0 +1,17 @@
+user: I'm traveling soon and need to know the weather about my destination. Can you tell me the forecast for Phoenix, AZ on Friday next week?
+tool(GetWeather): ok n_results=1
+assistant: Phoenix, AZ should have a temperature of 77 degrees Fahrenheit and a 15 percent chance of rain next Friday. Do you require more information?
+user: I could use some information about the wind speed and humidity as well. Please.
+assistant: Certainly. The humidity should be 21 percent and the wind speed will be 11 miles per hour.
+user: Nice weather. Perfect for taking a trip. Let's get starting on finding me a one-way flight to Phoenix please.
+assistant: Will you be leaving on Friday, March 8th? If so, can you tell me what your departure city is?
+user: I plan on leaving from San Francisco today actually.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: Would you mind flying with Alaska Airlines? The flight will be leaving at 11:50 pm and costs only $114.
+user: No I don't mind at all. That should be fine. When I get there, I'll be needing a rental car. I want to pick it up around afternoon 3:30.
+assistant: From what date? March 8th, March 1st, or another day entirely? Once you tell me the pick-up date, we can set the drop off date as well.
+user: I need it starting next Monday until March 9th.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I have found a Sedan at Sky Harbor International Airport. It is a Buick Regal Sportback. Will this suit your needs?
+user: That should do just fine. Thanks for your help. I'll be going now to get ready for the trip.
+assistant: Enjoy your trip and have a great day.

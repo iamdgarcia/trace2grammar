@@ -1,0 +1,39 @@
+user: I'm looking for a place to live in in San Jose with three baths.
+assistant: Do you want to rent or buy? And how many bed rooms do you want?
+user: I want to rent, and I want 4 bed rooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: There'a very good property called Aegena at 1290 San Tomas Aquino Road for $5,100.
+user: What else is there? And I want something with in-unit laundry.
+tool(FindHomeByArea): ok n_results=9
+assistant: There are 9 properties that match your preferences. There's a very good property at Alameda Gardens Apartments on 73 North Keeble Avenue for $4,900.
+user: Can you give me their phone number? And is there a garage?
+assistant: There is a garage. Their phone number is 408-998-7266.
+user: Let's keep looking for places.
+assistant: There's a very good property at Baker Park Apartments on 4748 West Campbell Avenue for $4,700.
+user: Okay, that's in my range. I'd like to visit it, can you schedule that?
+assistant: When do you want to visit?
+user: I want to go on March 12th.
+assistant: I'll schedule a visit for you to Baker Park Apartments on March 12th. Is that correct?
+user: Yes, please schedule it.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit has been scheduled.
+user: And can you share the location with someone?
+assistant: Who would you like to share the location with?
+user: Share it with Louis.
+assistant: I'll share 4748 West Campbell Avenue with Louis, is this right?
+user: Actually, I want to share it with Teresa.
+assistant: I'll share 4748 West Campbell Avenue with Teresa, is this right?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: I also need a cab to travel there.
+assistant: How many people will be going. And is there a type of cab you prefer such as pool or regular?
+user: I'd like a shared cab for 2.
+assistant: I'll get you a pool cab for 2 to 4748 West Campbell Avenue, is that correct?
+user: Yes, that's correct. What's the cost and when will the cab be here?
+tool(GetRide): ok n_results=1
+assistant: The cab is $23.38. It has been booked and will be here in 3 minutes.
+user: Thanks for all the help.
+assistant: Do you need any further help?
+user: No, thanks again.
+assistant: Have a great day.

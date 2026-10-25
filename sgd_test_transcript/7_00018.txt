@@ -1,0 +1,12 @@
+user: Hi, what is the weather in London, England on the 5th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The weather on that day is about 94 degrees Fahrenheit with a 28 percent chance of rain.
+user: May I know the windiness and humidity on that day too?
+assistant: Thea average wind speed is expected to be 12 miles per hour with an average humidity of 23 percent.
+user: Sure, how about at Novato on the 3rd of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature there should be 82 degrees with a 15 percent chance of rain.
+user: I see, thank you!
+assistant: Do you need any further assistance?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

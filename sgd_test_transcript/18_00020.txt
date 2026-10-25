@@ -1,0 +1,19 @@
+user: What's the weather like on the 9th of March?
+assistant: What's the location you want to check?
+user: I want to check SF.
+tool(GetWeather): ok n_results=1
+assistant: The temperature will be 70 degrees Fahrenheit on average with a 2 percent chance it will rain.
+user: Alright. I want to book a one way flight to go there.
+assistant: Will your departure be March 9th?
+user: Yes it will.
+assistant: And where will you be departing from?
+user: I'll be departing from Kuala Lumpur.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: There are 2 flights that might work. There's an American Airlines flight that leaves at 10:30 am, but it has a layover. The ticket is $407.
+user: Yeah, I like that. I'll also need a rental car for when I'm there. I'd like a Hatchback. And I want it on the 13th of March at 19:00.
+assistant: And when will you return the car?
+user: I'll return it on the 14th of this month.
+tool(GetCarsAvailable): ok n_results=2
+assistant: There's a nice Hatchback Mazda 3 at Salesforce Transit Center that meets your criteria.
+user: Alright, nice. That's all the help I need.
+assistant: Have a pleasant rest or your day.

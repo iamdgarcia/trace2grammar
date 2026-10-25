@@ -1,0 +1,25 @@
+user: I'd like to reserve a ticket to something like As You Like It Next Thursday around SFO
+assistant: How many tickets?
+user: 3 tickets, maybe to Remo drive?
+assistant: Please confirm: You want 3 tickets to Remo Drive on March 7th in San Francisco?
+user: Exactly.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed! Have a great time.
+user: What buses go there?
+assistant: Do you want to leave march 7th? And from where?
+user: I want to leave from LA. on the 5th.
+tool(FindBus): ok n_results=10
+assistant: How about one departing at 6:40 am for $49?
+user: Where does it depart from?
+assistant: North Hollywood Station
+user: That works, I'd like to buy tickets.
+assistant: Please confirm: You want 3 tickets for a bus leaving from Los Angeles to San Francisco on March 5th at 6:40 am and you have no excess Luggage
+user: actually, I have excess luggage.
+assistant: Please confirm: You want to leave on march 5th and you have extra luggage to carry onto the bus.
+user: That works for me, what station does it arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: It arrives at Transbay Terminal, your ticket is confirmed.
+user: Thank you
+assistant: Do you need anything else?
+user: I'm all set.
+assistant: Have a great day.

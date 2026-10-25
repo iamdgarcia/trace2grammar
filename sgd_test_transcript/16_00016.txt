@@ -1,0 +1,29 @@
+user: Find me a unisex salon in Petaluma as soon as possible.
+tool(FindProvider): ok n_results=7
+assistant: I've found 7 salons you might like. How about Dukes and Dolls Salon in Petaluma?
+user: Sounds good, I just needed the name. Find me a Psychiatrist in Petaluma as well.
+tool(FindProvider): ok n_results=1
+assistant: You should try Tony L. Johnson, who is a Psychiatrist in Petaluma.
+user: Sounds good to me. Can you book me an appointment?
+assistant: I can, but first I'll need to know on which date and time you would like the appointment?
+user: Make it for tomorrow afternoon 1 about.
+assistant: Please confirm the following: Book appointment with Tony L. Johnson for 1 pm on March 2nd.
+user: Yes that is correct. I'll need their address to get there though, can you give me that?
+tool(BookAppointment): ok n_results=0
+assistant: I'm so but something went wrong and I couldn't book the appointment. What would you like me to do?
+user: Try it again for the 12th of March.
+assistant: Please confirm the following: Book appointment with Tony L. Johnson for 1 pm on March 12th.
+user: Yes. And if it works give me their address and phone number.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked. Their address is 720 Southpoint Boulevard, and you can call them at 707-763-4915. You should be getting an email confirmation of the appointment soon.
+user: Can you also book me an appointment at the salon you found earlier?
+assistant: Yes, I can. At what point would you like your appointment.
+user: Make it for the evening 5 about.
+assistant: You would like to schedule an appointment at Dukes And Dolls Salon for March 12th at 5 pm. Is that correct?
+user: No, make it for the evening 4:30 about.
+assistant: Please confirm the following: The name of the stylist is Dukes And Dolls Salon and the appointment is for 4:30 pm.
+user: Yes, I confirm that that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked.
+user: Great. That will be all for now I suppose.
+assistant: Enjoy the rest of your day.

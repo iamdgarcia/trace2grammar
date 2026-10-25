@@ -1,0 +1,13 @@
+user: I need help finding a one way flight.
+assistant: Please tell me your origin and destination cities.
+user: Please find flights from Chicago to Mexico City.
+assistant: What's your preferred travel date?
+user: I'd like to leave on the 8th.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Among the 4 suitable flights I found is an American Airlines flight with a connection, leaving at 2:05 pm, at $326 per ticket.
+user: That won't work. Please look for another flight.
+assistant: How about Delta Airlines, which has a 4:10 pm flight, with a connection, at a price of $305 per ticket?
+user: That should work.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Goodbye, and have a great day!

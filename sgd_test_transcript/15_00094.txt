@@ -1,0 +1,32 @@
+user: Can you help me to find a therapist?
+assistant: Can you tell me the city I should search for the therapist?
+user: I am interested in someone which is in Walnut Creek.
+assistant: Can you tell me the kind of therapist you are interested in?
+user: Specifically I am interested in a Family Counselor.
+tool(FindProvider): ok n_results=4
+assistant: You might consider the Andreotti Daniel, which is a Family Counselor, and that can be found in Walnut Creek.
+user: Can you recommend some other therapist?
+assistant: You might also consider the Beitler Penny, which is a Family Counselor, and that is in Walnut Creek.
+user: Can you tell me the address of this therapist, and the number I can use for contacting?
+assistant: If you want to phone the therapist you can at 925-381-8682, and the address of the therapist is 45 Quail Ct # 200.
+user: That seems right to me.
+assistant: Are you willing to have an appointment reserved for you with this therapist?
+user: Some other time maybe, though can you tell me how the weather is there?
+tool(GetWeather): ok n_results=1
+assistant: The temperature for your requested location should be 72 degrees Fahrenheit, and with a chance of raining at 13 percent.
+user: Alright, what about the weather on 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: For the date you requested the temperature should be 87 degrees Fahrenheit, and the chance of raining at 28 percent.
+user: What about the humidity there, and the windy conditions?
+assistant: The humidity should be about 27 percent, and the wind should average at about 12 miles per hour.
+user: Alright, that is fine.
+assistant: Do you want something else?
+user: Now I would like to book an appointment for 13:00 with the therapist which you found earlier on that day.
+assistant: Can you please confirm that you want to book an appointment with Beitler Penny at 1 pm on March 14th?
+user: That is not right, because I want the appointment to be for 12:30.
+assistant: Can you please confirm that you want to have an appointment booked with Beitler Penny at 12:30 pm.
+user: Alright, that suits me well.
+tool(BookAppointment): ok n_results=0
+assistant: I apologize but there has been a problem, and I was unable to make the appointment. Can I do something else to help you?
+user: Nothing. I am grateful, thank you!
+assistant: I enjoy helping you!

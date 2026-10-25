@@ -1,0 +1,11 @@
+user: I am interested in finding a round trip flight, I will be going to LA, and I will have my returning flight on 10th of this month.
+assistant: Can you tell me the date when you start your travel?
+user: I will be leaving for my destination on next Monday.
+assistant: Can you tell me the city from where you will leave for your trip?
+user: I want to know about flights which leave from Las Vegas.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights which match what you asked for, with one of the being a direct flight with Delta Airlines, which takes off at 7:45 pm, and when it returns it leaves at 4:35 pm. The price of the ticket for this flight is $140.
+user: That seems right.
+assistant: Is there something else I can help you with?
+user: Nothing. I am thankful for the help you provided to me.
+assistant: Have a wonderful time!

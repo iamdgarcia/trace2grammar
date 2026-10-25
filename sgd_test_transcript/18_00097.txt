@@ -1,0 +1,23 @@
+user: I need a 2 star hotel.
+assistant: In which city would you like?
+user: I need one in Anaheim.
+tool(SearchHotel): ok n_results=10
+assistant: There is one called Alamo Inn & Suites, and is a 2 star hotel.
+user: Okay, sounds good.
+assistant: Would you like a reservation?
+user: Not now but how is the weather, on March 14th?
+tool(GetWeather): ok n_results=1
+assistant: The average temp should be 88 degrees Fahrenheit. There is a 20 percent rain chance.
+user: How windy is it and how humid?
+assistant: Wind speed is predicted to be 6 MPH and humidity is 44 percent.
+user: Sounds good then.
+assistant: Anything else to help with?
+user: Yes, I need a hotel and I need 1 room.
+assistant: Would you like it on March 14th?
+user: I need it on Tuesday next week and I need 2 rooms for 1 day.
+assistant: So 2 rooms for 1 day at Alamo Inn & Suites on March 5th in Anaheim?
+user: Yes, that is exact.
+tool(ReserveHotel): ok n_results=1
+assistant: Booking is successful.
+user: Thanks for all that.
+assistant: Of course. Take care.

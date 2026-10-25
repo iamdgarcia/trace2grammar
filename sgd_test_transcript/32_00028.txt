@@ -1,0 +1,26 @@
+user: I'm looking for some hillbilly songs.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. How about A Little Bit Stronger by Sara Evans from the album Stronger?
+user: Yes, that sounds great.
+assistant: Do you want to play the song?
+user: Not right now. What movies are available to watch online? I like movies with Devan Richardson.
+assistant: What type of movies do you like?
+user: A fight movie would be awesome.
+tool(FindMovies): ok n_results=1
+assistant: How about Pulp Fiction?
+user: Pulp Fiction sounds great.
+assistant: Do you want to play the movie?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: I'd like to play that song in the kitchen.
+assistant: Okay, you want to play A Little Bit Stronger in the kitchen, right?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: I have started playing the song.
+user: Thank you! What alarms do I have set?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set, it is for 6 am and is titled wake up.
+user: Okay, thanks.
+assistant: Do you want to add a new alarm?
+user: No, thank you. That is all I needed.
+assistant: Have a great day.

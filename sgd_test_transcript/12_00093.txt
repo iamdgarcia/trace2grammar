@@ -1,0 +1,17 @@
+user: Can you please help me find four bus tickets?
+assistant: Sure! Please tell me your departure time and location.
+user: I'm leaving on the 11th of this month from SFO.
+assistant: Perfect. What is your desired destination?
+user: My destination is Sacramento.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses matching your criteria, out of which I recommend the one leaving at 6 am with tickets priced at $23.
+user: Perfect. Let's buy the tickets.
+assistant: Can you please confirm that you want 4 tickets with no extra luggage for the bus leaving at 6 am on March 11th from San Francisco to Sacramento?
+user: Yes, that's correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've successfully booked your tickets.
+user: Perfect. Thanks a lot. Can you please help me find one room in a 3 star hotel at destination?
+tool(SearchHotel): ok n_results=10
+assistant: I would recommend a room at the very nice, 3 star, Courtyard By Marriott Sacramento Cal Expo.
+user: Sounds perfect. That would be all for now.
+assistant: OK. Have a nice day!

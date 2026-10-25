@@ -1,0 +1,24 @@
+user: I need a bus for two people from SD, and want to go to LAX.
+assistant: When do you plan to leave at?
+user: I want to leave on the 6th of March?
+tool(FindBus): ok n_results=10
+assistant: I want a bus at 9:10 AM, at $24.
+user: Is there anything else?
+assistant: I want a bus departing at 9:20 AM with a price of $27.
+user: That sounds good. Are there any attractions there? I want something there that is child friendly. I want something with no entry fee with a garden.
+tool(FindAttractions): ok n_results=3
+assistant: There are 3 attractions to interest you, such as Grand Park, a Park.
+user: What is their phone number?
+assistant: The number is 213-972-8080.
+user: Ojkay then. I need to purchase that bus ticket.
+assistant: Please confirm: You would like a bus ticket from San Diego to Los Angeles on March 6th at 9:20 AM. There are 2 people in your party, and with no extra luggage.
+user: No I do have excess luggage.
+assistant: Please confirm the following: it will depart at 9:20 AM and you have extra luggage.
+user: Yes, that is all.
+tool(BuyBusTicket): ok n_results=1
+assistant: Ticket now confirmed.
+user: Thanks for that, I need a hotel also though, like with two rooms and I need a two star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options, such as Best Western Hollywood Plaza Inn, as a 2 star hotel.
+user: Sounds good then. Thanks!
+assistant: Of course. Enjoy!

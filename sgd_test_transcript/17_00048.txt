@@ -1,0 +1,14 @@
+user: I need a train ticket.
+assistant: Where are you traveling from and to, and when?
+user: I would like to travel from Sacramento to Fresno, CA on March 8th.
+tool(FindTrains): ok n_results=7
+assistant: There is a train leaving at 8 am for $69.
+user: That is perfect.
+assistant: Do you want to buy the ticket?
+user: Not yet, but I need a place to stay.
+tool(SearchHouse): ok n_results=4
+assistant: There are 4 available houses including one with rating 3.8 at 1055 Van Ness Avenue.
+user: That is perfect.
+assistant: Do you want to make a reservation?
+user: Not at this time.
+assistant: See you soon!

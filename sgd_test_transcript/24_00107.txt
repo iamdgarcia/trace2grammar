@@ -1,0 +1,33 @@
+user: Hi, could you help me make a payment please?
+assistant: And whom would you like to make the payment to?
+user: I would like to pay Mary please.
+assistant: And how much would you like to transfer from your debit card or credit card?
+user: Could you transfer $47 from the money in app?
+assistant: Sure, please confirm your public payment to Mary for the amount of $47 from your app balance.
+user: That will do.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made, and they should see the money soon.
+user: Thank you, could you get me a restaurant please?
+assistant: And which area would you like to dine at?
+user: Something in San Jose will be great.
+assistant: Are there any food preferences you might have?
+user: Something which serves Izakaya will be great.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants you may like, how about Bluefin in San Jose?
+user: Are there any alternatives?
+assistant: How about Dan Izakaya Restaurant in San Jose then?
+user: May I have their address and how can I contact them?
+assistant: They are located at 1306 Saratoga Avenue and you can call them up at 408-249-6020.
+user: I see, sounds great!
+assistant: Would you like to make a reservation there?
+user: Sure, could you do so for me please?
+assistant: And what time would you like to make the reservation?
+user: Could you reserve a table for 1 at twelve in the afternoon?
+assistant: Please confirm your reservation for 1 at Dan Izakaya Restaurant in San Jose at 12 pm on March 1st.
+user: Sounds great to me!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much for your help.
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a great day!

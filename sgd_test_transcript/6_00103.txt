@@ -1,0 +1,10 @@
+user: My hair is a mess! Please find me a salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: Your search yielded 10 suitable salons. How about 1512 Barber Shop, a nice salon in San Francisco?
+user: Sure, I like that. Could you schedule a 10:15 appointment at the salon, on 1st of this month?
+assistant: Let me see if I got everything correctly: You'd like to schedule a 10:15 am appointment with 1512 Barber Shop, on March 1st?
+user: Yes, you got that right.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully made your appointment.
+user: Thanks a lot. That will be all, thanks.
+assistant: Goodbye, and have yourself a great day!

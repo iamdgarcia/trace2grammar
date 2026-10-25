@@ -1,0 +1,31 @@
+user: I desire to locate a unisex salon in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I discovered 10 salons you might enjoy. There is a lovely salon called 17 Jewels Salon in Oakland.
+user: What is its mean rating, and where is it located?
+assistant: The location is 4801 Telegraph Avenue, and the mean rating is 4.7
+user: Could you get me an alternative salon in Dublin?
+tool(FindProvider): ok n_results=1
+assistant: There is a lovely salon in Dublin called Great Clips.
+user: Yeah, that's perfect. I'd like to make a reservation at the salon for morning 10:30.
+assistant: What day would you like your reservation on?
+user: I would like to travel to the salon at next Friday.
+assistant: Please verify the following information: the name of the hair specialist is Great Clips, the reservation is on 10:30 am at March 8th.
+user: Yeah, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Your booking has been completed.
+user: I'd like to look a diner there for food on that day. I'm searching for a diner with vegetarian options and intermediate priced tag, and I would also love outdoor seating.
+assistant: What sort of cuisine are you searching for?
+user: Get me one that offers To-go.
+tool(FindRestaurants): ok n_results=1
+assistant: I discovered 1 diner you might enjoy. There is a lovely diner called Bj's restaurant & brewhouse in Dublin.
+user: Yeah, that's fine.
+assistant: Do you wish to book a spot there?
+user: Yeah, I do wish to book a spot for four people at 13:00.
+assistant: Please verify the following information: reserve a spot at Bj's Restaurant & Brewhouse in Dublin on March 8th, 1 pm, for 4 people.
+user: Yeah, that's fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete.
+user: Where is it located, and what is their contact number?
+assistant: The location is 3620 Fallon Road, and the contact number is 925-452-1155.
+user: Thank you for your assistance; that's all.
+assistant: Have a pleasant afternoon.

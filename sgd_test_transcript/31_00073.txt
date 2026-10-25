@@ -1,0 +1,47 @@
+user: Find me a unisex salon in Morgan Hill.
+tool(FindProvider): ok n_results=3
+assistant: I have for you 3 salons that you may like.A nice salon is Great Clips in Morgan Hill.
+user: Something else you can find?
+assistant: There in Morgan Hill is a nice salon called Sport Clips Haircuts Of Morgan Hill.
+user: Sounds good for me.
+assistant: With something else I can help you?
+user: Buy for me an appointment at a salon.
+assistant: On what date you want to be?
+user: On March 8th I want to visit the salon.
+assistant: At what time you want to be?
+user: I would like to be at five pm.
+assistant: Book an appointment at Sport Clips Haircuts Of Morgan Hill on March 8th at 5 pm.Is correct?
+user: Yes sounds good.Tell me the address and phone number for this place.
+tool(BookAppointment): ok n_results=0
+assistant: I am sorry but the appointment was not done.What else can I do?
+user: Try again if you can please but change on next Wednesday.
+assistant: You want an appointment at Sport Clips Haircuts Of Morgan Hill on March 6th at 5 pm.Is okay?
+user: No, make it at 16:30.
+assistant: Appointment is on March 6th at 4:30 pm.I'm right?
+user: Yes is okay.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is confirmed.
+user: Find me a restaurant there for a meal on that day.
+assistant: What type of food you prefer?
+user: I would like something where Taiwanese food is served.
+tool(FindRestaurants): ok n_results=2
+assistant: I have 2 options for you.A nice place in Morgan Hill called China Palace Restaurant.
+user: They have outdoor seating?
+assistant: No, they don't have.
+user: Something else you can recommend?
+assistant: A nice restaurant in Morgan Hill is Pearl River Restaurant.
+user: They have vegetarians options on the menu?
+assistant: Yes, They have good options for vegetarians.
+user: Yes,I like this one.
+assistant: You want a reservation here?
+user: Yes, I would like that.
+assistant: At what time you want to be?
+user: Make it at evening 7:30.
+assistant: Book a table for 2 people at Pearl River Restaurant in Morgan Hill on March 6th at 7:30 pm.
+user: No,make the table for one person.
+assistant: In city Morgan Hill you want a reservation for 1 people.Is Ok?
+user: Yes is good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation is done.
+user: Thank you a lot.That's all for now.
+assistant: Have a great day!

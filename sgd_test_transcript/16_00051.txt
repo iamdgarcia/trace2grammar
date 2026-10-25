@@ -1,0 +1,39 @@
+user: I am looking to buy a bus ticket
+assistant: How many do you want and where are you traveling from
+user: this is for four people and leaving from fresno
+assistant: What time are you leaving and where are you going to and when are you leaving
+user: i want to leave on the 14th at 3:15 pm going to la
+assistant: please confirm your ticket for 4 people from fresno to los angeles on march 14th at 3:15 pm
+user: no please change it to afternoon 2:45
+assistant: please confirm your changes to los angeles leave at 2:45 pm
+user: yes that is correct. What station does it arrive
+tool(BuyBusTicket): ok n_results=0
+assistant: sorry the transaction failed. what else can i do for you
+user: can you try again for 3 people going to sfo
+assistant: please confirm your changes for 3 people from fresno to san francisco on march 14th at 2:45 pm
+user: yes that is correct
+tool(BuyBusTicket): ok n_results=1
+assistant: sorry this transaction failed, what else can i do for you
+user: please try again leaving today from SD
+assistant: please confirm ticket for 3 people leaving from san diego to san francisco on march 1st at 2:45 pm
+user: yes please, how many stop does this but stop
+tool(BuyBusTicket): ok n_results=1
+assistant: this is a direct bus. This transaction failed again, would you like to change your depart time to 2:50 pm? this will be $57
+user: yes that is fine for me
+tool(BuyBusTicket): ok n_results=1
+assistant: your ticket is booked
+user: thank you, can you also look for 3 hotel rooms for me
+tool(SearchHotel): ok n_results=10
+assistant: what about 1 start hotel called amsterdam hostel san francisco
+user: what else can you find? i want a 3 star hotel
+tool(SearchHotel): ok n_results=10
+assistant: i located 10 3 star hotel for you. what about bei hotel san francisco
+user: perfect, i want to stay for four days
+assistant: when are you checking in
+user: i want to check in on the 10th
+assistant: please confirm your booking for 3 rooms in san francisco with bei hotel san francisco on march 10th for 4 days
+user: yes that is correct
+tool(ReserveHotel): ok n_results=1
+assistant: your hotel rooms are booked
+user: thank you, this is all i need
+assistant: have a nice day, bye

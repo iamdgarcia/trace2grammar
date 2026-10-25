@@ -1,0 +1,34 @@
+user: I would like to buy some bus tickets.
+assistant: At what date and time would you like the bus to leave?
+user: On the 12th of March at 12:15 in the afternoon if possible.
+assistant: Where would you like to leave from?
+user: I'm leaving from Portland.
+assistant: How many tickets would you like to purchase?
+user: I'll need two ticket.
+assistant: Where would you like to go?
+user: I would like to go to Seattle, WA.
+assistant: Please confirm the following: You would like 2 tickets for a bus from Portland to Seattle on March 12th at 12:15 pm.
+user: Confirmed. Ca you tell me what station it departs from and if it's a one-stop bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct but and will depart from SW Arthur & 1st. I'm sorry to say but I was unable to purchase tickets for the time you requested. How about a bus departing at 12:20 pm with a ticket price of $34.
+user: Umm. That will work for me I suppose.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been purchased.
+user: Great thanks. Think you can also find me some hotels in the area?
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels in the area. How about a 2 star hotel called Ace Hotel Seattle?
+user: What's their phone number?
+assistant: Their phone number is listed as +1 206-448-4721.
+user: Hmm. What's their price per night and is smoking allowed?
+assistant: Smoking is not allowed on the property and the price is $126 per night.
+user: Great, everything is checking out. Can you reserve me three rooms at the hotel?
+assistant: Yes. How long would you like to stay and when would you like to check in?
+user: On march 5th for seven days.
+assistant: Please confirm the following: You would like to book 3 rooms for 7 days at Ace Hotel Seattle in Seattle starting on March 5th.
+user: Yes that is correct, I confirm. Can you tell me their street address?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation at the hotel has been made without issue. Their address is listed as 2423 1st Avenue.
+user: Great, thank you for your help.
+assistant: You're welcome. Is there anything else you need?
+user: No that will be all.
+assistant: Okay. Good bye, have a nice day.

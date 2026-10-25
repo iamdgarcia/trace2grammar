@@ -1,0 +1,38 @@
+user: I am looking for a salon.
+assistant: In what city please?
+user: I am looking for a unisex salon in Redwood City.
+tool(FindProvider): ok n_results=4
+assistant: There is a nice one in Redwood City called August Barbershop.
+user: Can you give me the address please?
+assistant: Yes, it is located at 704 Winslow Street.
+user: Are there any other salons?
+assistant: There is another nice one in Redwood City called Natalie'S Salon.
+user: Can you give me the address?
+assistant: Yes, it is located at 2606 Broadway.
+user: That sounds great, can you also help me find a therapist in that area?
+assistant: What kind of therapist will you be needing and do you want me to look in Redwood City?
+user: Yes, that will work, I would like a Psychologist.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 that might work. There is Becker Hubert J. who is one Psychologist in Redwood City.
+user: Yes, can you book me an appointment with him?
+assistant: Yes, for what date please?
+user: I would like the appointment for the 5th of this month.
+assistant: And what time would you like the appointment for?
+user: I would like it to be quarter to 4 in the afternoon.
+assistant: Please confirm that you are booking an appointment with becker Hubert J on March 5th at 3:45 pm.
+user: No, the appointment time would be 15:30 next Friday.
+assistant: Please confirm you would like an appointment on March 8th at 3:30 pm.
+user: Yes, that will work! Can you give me their address please?
+tool(BookAppointment): ok n_results=1
+assistant: I have booked your appointment and you should be getting an email confirmation soon. The address is 1150 Veterans boulevard.
+user: Can you give me their phone number please?
+assistant: Yes, their phone number is 650-299-4827.
+user: Thank you, I appreciate your help! I would also like to go ahead and book an appointment at the salon you found.
+assistant: Do you know what time you would like?
+user: Yes, I would like the appointment for 18:45.
+assistant: Please confirm that you would like to book an appointment with Natalie's Salon at 6:45 pm on March 8th.
+user: That's correct!
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed your appointment.
+user: Thank you, that will be all I need!
+assistant: Have a great day!

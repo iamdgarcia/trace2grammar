@@ -1,0 +1,34 @@
+user: I wish to make a payment to Peter.
+assistant: How much do you want to transfer? Shall I transfer money from credit card or debit card?
+user: Send twenty four dollars from my money in app.
+assistant: Kindly ensure that, $24 will be transferred from your app balance to Peter. It will be visible to public.
+user: Yes. It is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is done. Peter will see the money soon.
+user: Thank you so much. Could you search a train now?
+assistant: When do you want to travel?
+user: I wish to travel on the 9th to San Diego.
+assistant: From which city do you want to travel?
+user: I need tickets from Fresno.
+tool(FindTrains): ok n_results=7
+assistant: I found 7 trains for you. What do you think about a train starting at 6 am? The total price is $84.
+user: It is nice.
+assistant: Do you need any other help?
+user: What will be the weather on the 9th at San Diego?
+tool(GetWeather): ok n_results=1
+assistant: The temperature will be 83 degree Fahrenheit. There is a possibility of 25 % rain.
+user: What about the humidity?
+assistant: It will be around 40 %
+user: Okay. Could you book the tickets in the train?
+assistant: Number of tickets do you need.
+user: I need only one seat.
+assistant: Are you interested in travel insurance?
+user: Yes. I wish to have trip insurance.
+assistant: Kindly ensure that, on March 9th, 1 Value ticket is booked in the train which is leaving from Fresno to San Diego at 6 am. It is covered with trip insurance.
+user: It is fine for me. What is the name of the leaving and arriving station?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are booked. The train will arrive at Santa Fe Depot and moving from Fresno Station.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: Nope. You are highly helpful. Thank you.
+assistant: See you later. Bye.

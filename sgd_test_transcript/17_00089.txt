@@ -1,0 +1,12 @@
+user: Can you find me some tickets for a train departing from New York?
+assistant: Sure, but first I'll need to know some more information. In which city would you like to travel to, and on which date?
+user: Find me tickets to Chi-town for Wednesday next week.
+tool(FindTrains): ok n_results=6
+assistant: I've found 6 trains that could work for you. What about a train that costs $112 in total and departs at 6 am.
+user: That will work for me.
+assistant: Would you like me to book a ticket for you?
+user: No, I'm not looking to book right now, but I would like to find a house to stay at while I'm there. I would like it if it had a rating of 4.3 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I've found 10 houses that match your search. How about a house with a rating of 4.3 located at 1 South Franklin Street?
+user: Sounds great to me. That will be all I need for now. I'll let you know of I need anything else.
+assistant: Okay. Enjoy the rest of your day, and good bye.

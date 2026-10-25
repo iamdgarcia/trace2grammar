@@ -1,0 +1,25 @@
+user: I want to find some interesting events around Sacramento. I need your help to search for some nice events to me.
+assistant: What type of events that you like the most?
+user: I think Music events are the best of mine.
+tool(FindEvents): ok n_results=6
+assistant: How about an event name Aftershock Festival which is taking place at Discovery Park on March 5th at 5:30 pm? Do you like it?
+user: Let me know the cost of ticket to decide.
+assistant: It costs about $20.
+user: And I also want to know the venue where this event will take place?
+assistant: It will take place at 1600 Garden Highway. Hope this is okay for you.
+user: Yes, but I also want to find some other events which is going to be take place on the 1st.
+tool(FindEvents): ok n_results=4
+assistant: How about the one among the 4 I got that is Popa Chubby which is very popular event and the same will be take place at The Sofia Tsakopoulos Center for the Arts on March 1st at 7:30 pm?
+user: I will decide later and find for some other events.
+assistant: What about Rhett And Link which is going to take place at Sacramento Memorial Auditorium on the same March 1st at 5:30 pm? Is that okay?
+user: Yes, this is perfect. Thanks.
+assistant: Shall I book the tickets to this event?
+user: Yes, do it for me.
+assistant: Let me know the number of tickets that you want to purchase.
+user: I need four tickets.
+assistant: Please confirm to book 4 tickets for the Event Rhett And Link at SAcramento on March 1st.
+user: That is confirmed. What about the ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: Ticket cost will be around $45 and I have successfully purchased the same.
+user: Thank you so much.
+assistant: Have a good day.

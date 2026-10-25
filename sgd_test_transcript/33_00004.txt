@@ -1,0 +1,32 @@
+user: I'm looking for a place to rent with two bed rooms.
+assistant: What city do you want to search in?
+user: I want a place in San Jose with 3 bed rooms.
+assistant: How many baths do you want?
+user: I want it to have two baths and a garage.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 10 houses for you. How about Almaden Garden Apartments at 947 Branham Lane # C for $3,550?
+user: Does it have a laundry machine?
+assistant: No, it does not.
+user: That sounds good. I'd like to visit the property.
+assistant: When do you want to visit it?
+user: I want to visit on the 4th of this month.
+assistant: Okay, you want to visit Almaden Garden Apartments on March 4th, right?
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled the visit.
+user: Thanks! I also want to share the location with Vincent.
+assistant: Okay, you want to share the address 947 Branham Lane # C with Vincent, right?
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: Thanks! I also need to find a cab ride for 3 to get there. I prefer a pool ride.
+assistant: Okay, you'd like a pool ride for 3 to 947 Branham Lane # C, right?
+user: Yes, that works.
+tool(GetRide): ok n_results=1
+assistant: I have booked the ride and it is on the way.
+user: How much does the cab cost and how long until it gets here?
+assistant: The ride is $30.03 and should be there in 7 minutes.
+user: Thanks!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

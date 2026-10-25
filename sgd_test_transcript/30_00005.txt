@@ -1,0 +1,31 @@
+user: Any musical shows you can find for me, I really want to do something interesting that I really like.
+assistant: Which city will you be searching for musical shows?
+user: Please search for shows around LA.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like, what about Ain Gordon, playing at Ralph Freud Playhouse on March 9th at 7 pm?
+user: What will it cost to reserve 1 ticket?
+assistant: One ticket will cost $60.
+user: That sounds reasonable, is there a house I can stay at in that area, one with a 3.1 rating or higher?
+tool(SearchHouse): ok n_results=10
+assistant: There is one house with a 3.1 rating in the area, it is located at 1020 South Figueroa Street.
+user: That house sounds perfect for me, what about the buses going there, is there anything available today?
+assistant: From which city will you be departing on bus?
+user: Long Beach, CA is where I want to leave from on bus.
+tool(FindBus): ok n_results=10
+assistant: There is one bus departing at 6 am that costs $13, would that work?
+user: Anything else you can find, it should be a direct bus and for 2 people.
+tool(FindBus): ok n_results=10
+assistant: There is another bus departing at 6:20 am, this one will cost $11.
+user: That one sounds good, thanks for finding it.
+assistant: Would you like to purchase tickets to this bus?
+user: Not right now, thanks for the offer though.
+assistant: Is there anything else that I can help you with for today?
+user: Please purchase 2 tickets to the musical show you found earlier.
+assistant: You want to reserve 2 tickets to Ain Gordon, occurring on March 9th in Los Angeles, correct?
+user: That is all correct, please make the reservation.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been confirmed, hope you have a great time!
+user: Can you tell me the address of the venue?
+assistant: Sure, the venue is located at 245 Charles E Young Drive East.
+user: Many thanks for all your help today, that will be all.
+assistant: No problem, enjoy the rest of your day.

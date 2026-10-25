@@ -1,0 +1,17 @@
+user: I am planning on taking a trip and will need to find a hotel ATL. Will you search for a 1 room at a 2 star hotel?
+tool(SearchHotel): ok n_results=1
+assistant: I found a 2 star hotel you may like called Holiday Inn Express & Suites Atlanta Downtown.
+user: That one sounds perfect.
+assistant: Are you interested in making reservations?
+user: Not at this time.
+assistant: May I help you with anything else today?
+user: Will you please tell me what the weather is like there on the 9th of March.
+tool(GetWeather): ok n_results=1
+assistant: The temperature averages 93 degrees on that day and usually has an 18 percent chance of rain.
+user: Great. Thanks for that information. Now will you reserve a room at the hotel you found earlier? I will be arriving on the 7th and staying for five days.
+assistant: Please confirm you would like hotel reservations for 5 days at the Holiday Inn Express & Suites Atlanta Downtown in Atlanta. You will be reserving 1 room and arriving on March 7th.
+user: That is absolutely right!
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservations have been made.
+user: Thank you! I truly appreciate your help! I don't need anything else at this time.
+assistant: No problem. Your are welcome! Enjoy your day!

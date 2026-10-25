@@ -1,0 +1,16 @@
+user: I like to find a place to live and want to buy with 2 baths and 3 bed rooms.
+assistant: In which place you want me to search the property?
+user: I need the property in El Sobrante.
+tool(FindHomeByArea): ok n_results=1
+assistant: I searched 1 good house of your choice at 4230 San Pablo Dam Road # b16 which cost $3,650,000 and property name is Redwood Manor Apartments.
+user: This is perfect. I like to visit that property.
+assistant: On which date you want to visit?
+user: On march 6th I like to visit the property.
+assistant: please give confirmation details: Your visit to the property Redwood Manor Apartments on march 6th is scheduled.
+user: Okay..this is perfect..Is there a garage ? Can i know the telephone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed and there is a garage. Contact number is 510-223-4061.
+user: Thanks for your help.
+assistant: Any other help you need?
+user: No, thank you so much.
+assistant: Have a wonderful day.

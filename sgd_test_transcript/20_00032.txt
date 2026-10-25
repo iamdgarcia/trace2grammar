@@ -1,0 +1,26 @@
+user: I would like to rent a car from LAX next Tuesday.
+assistant: What is your pickup time and return date?
+user: Picking up at 10:30 and returning on the 12th of March.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There is a Hatchback Nissan Qashqai available at LAX International Airport.
+user: Great. Can you also help me find a house rental?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options. 1020 South Figueroa Street is a 4.1 rated home in the area.
+user: I'm looking for something with a 4.3 rating or higher and laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options. 1224 Beverwil Drive has a 4.3 rating.
+user: What's their direct line?
+assistant: They can be reached at +1 877-334-5623.
+user: Sounds awesome. Thanks.
+assistant: Should I reserve the home?
+user: No but can you please book the car rental?
+assistant: Will you require insurance?
+user: No, I have insurance.
+assistant: Please confirm you are waiving the insurance and want to rent a hatchback from LAX International Airport on March 5th at 10:30 am until March 12th.
+user: Yes. That's right. Can I have the daily rate for it?
+tool(ReserveCar): ok n_results=1
+assistant: The daily rate is $29.00. Your reservation was a success.
+user: Thanks so much!
+assistant: Will you require anything else?
+user: Not at the moment. Thanks.
+assistant: You're welcome. Goodbye.

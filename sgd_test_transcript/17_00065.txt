@@ -1,0 +1,16 @@
+user: I'd like to find a train. I need two seats from Portland going to Seattle.
+assistant: When are you wanting to travel?
+user: Please find tickets for the 5th of this month.
+tool(FindTrains): ok n_results=9
+assistant: How about a train leaving at 9:10 am that costs $99?
+user: Where is it leaving from and where will it arrive at?
+assistant: It's leaving from Union Station and will arrive at King Street Station.
+user: That would be great. I'd like to find a house to stay at there.
+tool(SearchHouse): ok n_results=10
+assistant: How about a house located at 1000 1st Avenue that has a 4.5 rating.
+user: What other houses are there?
+assistant: There's a house at 1006 Spring Street with a 3.9 rating.
+user: That would be great.
+assistant: Would you like to reserve it?
+user: No, I don't want to now. That's all.
+assistant: It was my pleasure to be of assistance. Have a great day!

@@ -1,0 +1,16 @@
+user: Can you search for some songs from 2015?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. What about Back It Up by Prince Royce, from the album Double Vision?
+user: What genre of music is that song?
+assistant: It is a Pop song.
+user: That sounds good.
+assistant: Would you like to listen to the song now?
+user: Yeah, play it on the kitchen device, please.
+assistant: You would like to play the song Back It Up in on the device in the Kitchen, is this correct?
+user: Yes, go ahead.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: Thank you!
+assistant: Is there anything else I can help you with?
+user: No, I'm fine for now, thank you!
+assistant: Have a great day!

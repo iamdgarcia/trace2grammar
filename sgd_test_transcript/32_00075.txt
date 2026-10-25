@@ -1,0 +1,26 @@
+user: I am looking for a song from '18 by Jess Glynne.
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song called Thursday by Jess Glynne from the album Always In Between.
+user: Yes, That is the song I am looking for.
+assistant: Do you want me to play it for you?
+user: No, Not now. Maybe later.
+assistant: Can I help you with anything else?
+user: I want to watch movies featuring Daria Ekamasova online.
+assistant: What is the type of movies you want to watch?
+user: I prefer Comedy-drama movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie called Give me Liberty.
+user: Give me Liberty sounds nice to me.
+assistant: Would you like me to play it for you?
+user: No, not now. I would like you to play the song you just found.
+assistant: Please confirm: You want me to play Thursday in Living room.
+user: Yes, That works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. Enjoy!
+user: Can you tell me type of this music?
+assistant: The type of music is Pop.
+user: Okay. Thank you so much! I want see my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: I found an alarm for 7 am with the name as Breakfast.
+user: Okay. That is all I need for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

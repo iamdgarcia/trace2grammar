@@ -1,0 +1,10 @@
+user: I want to check the weather for Marshall on the 5th.
+tool(GetWeather): ok n_results=1
+assistant: The temperature on average for the day is 76 degrees F. with a 25 percent chance of rain.
+user: Okay what about in San Leandro.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is 91 degrees F with an 18 percent chance of rain.
+user: Sure that is fine.
+assistant: Is there anything else you would like?
+user: No. Thanks so much!
+assistant: To success.

@@ -1,0 +1,21 @@
+user: I need to find out what the weather will be on the day after tomorrow.
+assistant: What city would you like the weather report for?
+user: Please check Portland.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for that day is expected to be 70 degrees Fahrenheit. There is a 22 percent chance of rain.
+user: Will it be windy? And what is the humidity forecast?
+assistant: The average wind speed is expected to be 5 miles per hour. The humidity is 10 percent.
+user: OK, thank you.
+assistant: Is there anything else I can help you with?
+user: Yes, I would like to find out what there is to do there. What kind of attractions can you show me? Any type is okay.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions in the area. Crystal Springs Rhododendron Garden is a Park.
+user: Does it seem to be a child-friendly location?
+assistant: Yes, there are activities at the park for children.
+user: Sounds good, can you help me get a cab to there? I would like a luxury ride and it is one person.
+assistant: You would like a Luxury ride with 1 seat to Crystal Springs Rhododendron Garden, is this correct?
+user: Yes, that is right.
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and is on its way.
+user: Thank you for your help. I'm all done for now.
+assistant: Have a wonderful day!

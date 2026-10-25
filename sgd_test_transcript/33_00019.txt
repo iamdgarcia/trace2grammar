@@ -1,0 +1,17 @@
+user: I didn't do my hair cut for a long time. so i need to find a salon. will you find me a salon?
+assistant: in which city should i need to search in for?
+user: i need to find a salon in San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: there is a salon in San francisco, its address is 1512 Barber shop.
+user: ok thats great. How is the weather over there on 6th of march?
+tool(GetWeather): ok n_results=1
+assistant: the average temperature for the day should be 72 degrees Fahrenheit. There is a 3 percent chance of rain.
+user: ok , thats good. I need to book an appointment at the salon on that day. i need the appointment at quarter past 12 in the afternoon.
+assistant: please check and review the following details. The name of the hair stylist is 1512 Barber shop , the appointment is at 12:15 pm and the appointment is on March 6th.
+user: ok that's great. what is its average rating? is it unisex?
+tool(BookAppointment): ok n_results=1
+assistant: Appointment is confirmed. Its average rating is 4.8 and it is a unisex salon.
+user: thanks a lot for your immense help.
+assistant: whether i need to find anything else?
+user: no, thanks for now.
+assistant: have a wonderful day.

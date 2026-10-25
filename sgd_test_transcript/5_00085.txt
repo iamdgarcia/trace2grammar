@@ -1,0 +1,15 @@
+user: Can you find me a therapist please?
+assistant: Which is your preferred city?
+user: I am looking for a therapist in Novato.
+assistant: What type of therapist would you like me to search for?
+user: I am looking for a Psychologist.
+tool(FindProvider): ok n_results=5
+assistant: There are 5 therapist you may like. How about Christina M. Walker who is a Psychologist located in Novato.
+user: Can you look for any other therapist?
+assistant: What do think about Deborah Clark who is a psychologist located in Novato?
+user: Can you find me their address?
+assistant: The street address is 1615 hill Road.
+user: That sounds great to me.
+assistant: Would you like me to book an appointment with the therapist?
+user: No. Don't book the appointment now. That will be all. Bye!
+assistant: I am glad I could help. Have a great day!

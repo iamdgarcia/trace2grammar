@@ -1,0 +1,21 @@
+user: I need to find a four star hotel please
+assistant: In what city are we talking about?
+user: I want to find a hotel in New York
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 places including the 4 star 6 Columbus - Central Park Hotel
+user: That sounds good, now can you find me a nice museum to visit in the area
+tool(FindAttractions): ok n_results=10
+assistant: Sure, how about the 9/11 Tribute Museum which is a beautiful museum to visit
+user: Is it free?
+assistant: No you have to pay
+user: OK, got it. Now let's book that hotel please
+assistant: When do you want to check in?
+user: I want to get there March 9th
+assistant: How long will you be there for?
+user: I just need 1 room for 5 days please
+assistant: Confirming you want 1 room at 6 Columbus - Central Park Hotel from March 9th for 5 days in New York right?
+user: That's Right, what's their number and price per evening?
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked and it's $232 a night and reach them at +1 212-204-3000
+user: Thanks so much, you've been a big help that's all for now
+assistant: Sure thing, see you!

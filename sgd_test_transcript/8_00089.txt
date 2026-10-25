@@ -1,0 +1,13 @@
+user: Would you look for a train for me?
+assistant: What city will you leave from and which city are you going to? When will you travel?
+user: I'd like to find tickets on March 11th leaving from Sacramento and arriving in Fresno, CA.
+tool(FindTrains): ok n_results=7
+assistant: I have 7 possibilities. How about one that is $64 in total and leaves at 8 am?
+user: Do you have anything else?
+assistant: How about one that is $66 in total and leaves at 8:40 am?
+user: What station does it depart from?
+assistant: The train leaves from Sacramento Valley Station.
+user: Sounds good to me.
+assistant: Would you like me to book tickets?
+user: No, I don't want to make the booking.
+assistant: See you later.

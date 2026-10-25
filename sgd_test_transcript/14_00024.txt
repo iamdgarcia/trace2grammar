@@ -1,0 +1,19 @@
+user: I want to find some Drama movies featuring Dan Bittner.
+tool(FindMovies): ok n_results=1
+assistant: How about Brittany Runs a Marathon?
+user: Brittany Runs a Marathon would be great.
+assistant: Would you like me to play the movie now?
+user: Yes, please play it.
+assistant: Confirming that you want me to play Brittany Runs a Marathon with English subtitles?
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing your movie for you.
+user: Thanks. How is the weather in Los Gatos?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 93 degrees Fahrenheit. There is also a 17 percent chance of rain.
+user: Will it be very windy? What about the humidity?
+assistant: The average wind speed should be around 10 miles per hour with a humidity of around 28 percent.
+user: Okay, thank you.
+assistant: Is there anything else you'd like?
+user: No. Thanks a lot!
+assistant: You're welcome!

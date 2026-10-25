@@ -1,0 +1,9 @@
+user: I want you to find me a train.
+assistant: Can you tell me the city from where you will leave, and the city which will be your destination?
+user: I want to leave from NY, and I want to arrive at Chi-town.
+assistant: Can you tell me the date of your journey?
+user: I want to have tickets for the 1st.
+tool(FindTrains): ok n_results=6
+assistant: There is a $115 ticket, with a 6 am departure.
+user: That is right. That would be all.
+assistant: Later then!

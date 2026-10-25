@@ -1,0 +1,30 @@
+user: I want to get bus tickets.
+assistant: Please provide origin, time of departure, and number of tickets required.
+user: I need 3 tickets from SF to leave around 07:45.
+assistant: On what date are you starting and where are you going?
+user: I want to go to Long Beach, CA on the 7th of March.
+assistant: Please confirm that you need 3 tickets from San Francisco to Long Beach on the bus that leaves at 7:45 am on March 7th.
+user: Yes, that sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, the tickets could not be booked due to unforeseen errors. Shall I try to get tickets on the bus that departs at 7:40 am on which a ticket costs $44?
+user: Yes, please give it a try.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been booked successfully.
+user: At which station does the bus arrive?
+assistant: It arrives at the Downtown Station.
+user: From which station does it depart and is it a direct bus?
+assistant: Yes, it is a direct bus that departs from Transbay Terminal.
+user: Thank you for the assistance. I'd like to rent an SUV in Long Beach, CA which I plan to pick up at 12 in the afternoon.
+assistant: Do you want the car from March 7th and till when would you need it?
+user: I need the car from the 10th to 11th of this month.
+tool(GetCarsAvailable): ok n_results=3
+assistant: A nice Alfa Romeo Stelvio SUV is available at LGB Airport.
+user: That sounds good. I'd like to reserve it.
+assistant: Would you like to add insurance?
+user: No, I'll skip that.
+assistant: Please confirm that you want to reserve a SUV without insurance from the LGB Airport at 12 pm on March 10th and plan to return it on March 11th.
+user: That's perfect. How much is the rental cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved successfully and it costs $40.00 per day.
+user: Thank you for the help. That's all I need for now.
+assistant: Have a great day!

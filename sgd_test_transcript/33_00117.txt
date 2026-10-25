@@ -1,0 +1,19 @@
+user: My vacation is coming up and I would like to find some attractions to visit.
+assistant: Where should I search for attractions?
+user: Let's search in London.
+tool(FindAttractions): ok n_results=10
+assistant: You might like 30 St Mary Axe (the Gherkin). This is a historical landmark.
+user: Okay perfect. I also need a house to stay in there for 1 person. I will need laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available you might like. There's a house at 1 Addington Street that received a 4.3 rating.
+user: Are there any other houses?
+assistant: There's a nice house at 1 Baffin Way that received a 4.1 rating.
+user: That sounds great. I also need to find a round trip flight to get there. I'd like to leave on the 4th of this month and return on the 11th of March.
+assistant: What city are you leaving from?
+user: I'm flying out of Washington.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There's an American Airlines connecting flight that departs at 2:55 pm. The return flight leaves at 12:35 pm and the ticket price is $481.
+user: Okay sounds good.
+assistant: Is there anything else I can help you with?
+user: No, thank you for your help.
+assistant: Have a great day!

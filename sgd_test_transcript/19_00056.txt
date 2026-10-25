@@ -1,0 +1,29 @@
+user: Can you help me find a rental car?
+assistant: Where do you want to rent the car and at what time would you like to pick it up?
+user: I want something that can be picked up at 12 pm in Washington.
+assistant: From what date do you want the car and till what date?
+user: I need it from the 11th of this month to March 13th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available based on your preferences. A nice Alfa Romeo Stelvio SUV is available at Union Station.
+user: What is the rental charge per day?
+assistant: It costs $41.00 per day.
+user: Sounds good. Can you find me a bus for 1 person to go there? I'm not particular about it being a direct bus.
+assistant: From where are you planning to depart and on what date?
+user: I'll be starting from Philadelphia on the 7th of this month.
+tool(FindBus): ok n_results=8
+assistant: There are 8 suitable buses. Would you like to take the one departing at 6:20 am which has tickets available for $28?
+user: At which station does it arrive?
+assistant: It arrives at Silver Spring Bus Stop.
+user: That sounds good to me.
+assistant: Would you like me to get tickets for you on this bus?
+user: No. I don't want it now.
+assistant: Is there anything else I can assist you with?
+user: Can you find me a one-way flight to get there?
+assistant: Are you planning to leave on March 7th?
+user: No, I'll be leaving on the 9th of this month.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Would you be interested in the American Airlines flight that leaves at 5:45 pm. It has a layover and a ticket costs $220.
+user: Is this a Business class ticket? When does it reach the destination?
+assistant: No, this is an Economy class ticket and the flight is scheduled to arrive at the destination by 11:33 pm.
+user: Thank you. That's all I need for now.
+assistant: Have a great day!

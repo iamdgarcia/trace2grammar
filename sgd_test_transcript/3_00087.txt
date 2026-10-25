@@ -1,0 +1,13 @@
+user: I'm looking for a rental car.
+assistant: On which date and time will you pick it up and return it?
+user: I'd like to pick it up at 5:15 pm on March 13th till the 14th.
+assistant: Where would you like to rent the car from?
+user: I am looking for cars located in Philly.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I hve 10 cars. What about this nice Buick Regal Sportback at PHL International Airport? It's a Sedan.
+user: How much is it per day?
+assistant: It's $28.00 per day.
+user: That sounds great.
+assistant: Could I assist with something else?
+user: No, that's all.
+assistant: Have a fantastic day.

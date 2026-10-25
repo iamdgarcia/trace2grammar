@@ -1,0 +1,34 @@
+user: Can you please find me a rental car?
+assistant: Sure, but first give me a few more details like on which date and at what time do you need the car and until when do you plan on keeping it.
+user: I want to pick up the car on the 6th of March at nine in the morning and I plan to keep it until the 7th of March.
+assistant: OK. What is your desired pick up location?
+user: I'd like to pick up the car in Las Vegas.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars matching your criteria, out of which I recommend a very nice Sedan, an Audi A8, available for pick up at Union Plaza.
+user: OK. What's the daily rate for this car?
+assistant: The car is priced at $31.00 per day.
+user: Anything else available? Car type is not important.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's also another nice Sedan, a Buick Regal Sportback available for pick up at McCarran International Airport.
+user: Sounds perfect. Now let's book tickets to an event there.
+assistant: In which city do you want the event to be?
+user: Los Angeles, please.
+assistant: What event would you like to attend?
+user: The Third Annual Diversity Festival, please.
+assistant: Do you want a specific date?
+user: Yes, the 9th, please.
+assistant: For how many persons do you need tickets?
+user: I need three tickets, please.
+assistant: Can you please confirm that you want me to book 3 tickets for you on March 9th to the Third Annual Diversity Festival in Los Angeles?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully placed your reservation. Enjoy the event!
+user: Thanks a lot for everything. Now can you please also reserve the rental car you previously found?
+assistant: Yes, but first tell me if you want me to add insurance to the rental.
+user: No, I don't want insurance.
+assistant: Great, now can you please confirm that you want me to place a reservation for you for a Sedan car, with no added insurance, to be picked up from McCarran International Airport on March 6th at 9 am, due for drop off on March 7th?
+user: Yes, that's correct. Could you please tell me the daily rate for the rental car?
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully placed your reservation, which is priced at $30.00 per day.
+user: Thanks for everything. That will be all for now.
+assistant: Great! Have a nice day!

@@ -1,0 +1,17 @@
+user: I am in a mood to watch movie online and I need your help to search for a nice Fantasy Movie like Elijah Wood.
+tool(FindMovies): ok n_results=1
+assistant: How is The Lord of the Rings: The Return of the King? Do you like it?
+user: Search for something else and I change my mind. Now I want to watch Drama movies like Lizzo.
+tool(FindMovies): ok n_results=1
+assistant: Okay, I got Hustlers, do you like it?
+user: Yes, Hustlers is okay for me.
+assistant: Shall I play it now?
+user: Yes, do it for me.
+assistant: Need your confirmation to play Hustlers with English subtitles.
+user: That is confirmed to proceed.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing and you can enjoy the same now.
+user: Thanks for your help.
+assistant: Anything else you need?
+user: No, Thanks and that's all.
+assistant: Have a great day.

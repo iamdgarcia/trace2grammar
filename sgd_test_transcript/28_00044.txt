@@ -1,0 +1,21 @@
+user: Pull up Suspense genre movies with the actress Lisa Tharps in them.
+tool(FindMovies): ok n_results=1
+assistant: Sure, one moment. How about Madeline's Madeline? This movie has a rating of 88 out of 100.
+user: Sounds good to me. I'm going to also need to find a restaurant.
+assistant: Any particular type of restaurant I should search? Also what area should we search in as well?
+user: Look in Hercules for a restaurant serving Freshwater fish
+tool(FindRestaurants): ok n_results=2
+assistant: I see a Claws And Craws in Hercules. Will that do?
+user: Yes it will.
+assistant: Great, should we reserve now?
+user: Yes go ahead.
+assistant: What time would you prefer your reservation be made for and how many seats?
+user: I need a table for 1 at half past 5 in the evening.
+assistant: Alright, please confirm before I proceed that we are booking a table for 1 at 5:30 pm on March 1st at Claws and Craws in Hercules. Is that right?
+user: Yes that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I apologize that I was unable to complete your reservation at Claws and Craws. I could try for a reservation for 1 on March 1st at 5 pm if you would like?
+user: No, don't bother!
+assistant: Ok, Can I assist you with anything else?
+user: Nope, that was all! Good Bye!
+assistant: Alright, Good bye!

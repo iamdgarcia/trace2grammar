@@ -1,0 +1,30 @@
+user: I'm looking for a unisex salon, I think you can do it better than me
+assistant: probably. where do you want me to look?
+user: san francisco
+tool(FindProvider): ok n_results=10
+assistant: I got 10 you may actually like in the san francisco area. what about 1512 barber shop?
+user: do you have the phone number too?
+assistant: yes, it's 415-286-4371
+user: tell me the address and the rating.
+assistant: you'll find the salon at 1532 20th street and the place has been rated 4.8
+user: how nice
+assistant: I can make a reservation on your behalf
+user: not right now, I'll let you know when I'm ready to do it
+assistant: what can I do then?
+user: you can check the weather for the 6th of this month
+tool(GetWeather): ok n_results=1
+assistant: the temperature will be around 72 degrees fahrenheit and the probability of rain is 3 percent
+user: check the wind and the humidity please
+assistant: the wind will blow at 12 miles per hour and the humidity value is 16 percent
+user: got it. I'm ready to book that appointment now.
+assistant: when would you want it to be?
+user: the desired time is 12:15 in the afternoon.
+assistant: confirm the booking details: you want to make a reservation at 1512 barber shop on march 6th at 12:15 pm, is that right?
+user: yes it is
+tool(BookAppointment): ok n_results=1
+assistant: I was unable to proceed, I can book an appointment at 1512 barber shop on march 6th at 12:30 pm?
+user: try it please
+tool(BookAppointment): ok n_results=1
+assistant: this time you got it!
+user: that's awesome! I got to run now! bye!
+assistant: goodbye to you sir

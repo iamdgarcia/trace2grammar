@@ -1,0 +1,46 @@
+user: I need to find some entry fee free attractions that are child-friendly.
+assistant: Where should I look?
+user: Check in Paris please.
+tool(FindAttractions): ok n_results=10
+assistant: You should try American CHurch in Paris which is a place of worship.
+user: Okay, can you find a museum?
+tool(FindAttractions): ok n_results=10
+assistant: THe Cite de l'architecture et du patrimoine is a museum you may enjoy.
+user: What is the phone number?
+assistant: It is 1 58 51 52 00.
+user: What else can you find?
+assistant: The Cognacq-Jay Museum is a nice museum you may enjoy.
+user: What is the number?
+assistant: It is 1 40 27 07 21.
+user: Great, can you find me a rental there?
+assistant: Yes, would you like to pick it up in Paris? Which dates will you pick up and return the car?
+user: Paris is fine from the 3rd of this month until next Tuesday.
+assistant: What time will you be picking the car up?
+user: At 12:30 pm.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 available. One is an Alfa Romeo Stelvio SUV at Orly International Airport.
+user: What else do you have? I need one in London, UK, preferably a hatchback.
+tool(GetCarsAvailable): ok n_results=6
+assistant: THere is a nice Fiat Panda Hatchback at Heathrow International Airport.
+user: How much is it per day?
+assistant: It's $27.00 a day.
+user: SOunds great, I would like to reserve that one.
+assistant: Do you wanted added insurance.
+user: No thank you, I don't need it.
+assistant: You are picking up a hatchback from Heathrow International Airport on March 3rd at 12:30 pm and returning it on March 5th, correct?
+user: NO, I also need insurance.
+assistant: You want a hatchback with added insurance, correct?
+user: Yes that is good thanks.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks, can you share the location please?
+assistant: WHich address, Heathrow International Airport, Cognacq-Jay Museum or something else?
+user: Please share the Cognacq-Jay Museum address.
+assistant: WHo will you be sharing it with?
+user: I want to share with Richard please.
+assistant: You are sharing the cognacq-jay museum address with Richard, correct
+user: Yes that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location.
+user: Thanks, that's all for now.
+assistant: Have a great day!

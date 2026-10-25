@@ -1,0 +1,20 @@
+user: Can you find attractions for me?
+assistant: Where do you want me to look for them?
+user: I want to find something free in San Francisco.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 matching attractions. How about Alcatraz? It's a historical landmark.
+user: Okay, that's great. I'd like to see a film there.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies for you. What about Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: Ad Astra sounds good. Do you have any Thriller films online? Maybe something with Edie Martin.
+tool(FindMovies): ok n_results=1
+assistant: How about The Ladykillers?
+user: Ladykillers should be great.
+assistant: Do you want me to play it?
+user: Yes, please. Play the film.
+assistant: Please confirm: playing The Ladykillers with English subtitles.
+user: Yes, that'd be great.
+tool(PlayMovie): ok n_results=1
+assistant: I've started the film.
+user: Thanks, that'll be all!
+assistant: Have a great day!

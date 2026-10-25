@@ -1,0 +1,18 @@
+user: Can you help me find a place to eat with outdoor seating?
+assistant: What type of food do you prefer and in what city please?
+user: Check restaurants in Bolinas that serve Veggie.
+tool(FindRestaurants): ok n_results=1
+assistant: Coast Cafe is located in Bolinas and is very nice.
+user: Do they have vegetarians options on the menu? Can you get me their phone number please?
+assistant: Their phone number is 415-868-2298. I'm sorry, they don't have vegetarian options.
+user: Yes, that is good.
+assistant: Would you like to reserve a table here?
+user: Yes please, at 5 o"clock in the evening on 11th of this month.
+assistant: Please confirm the following details: You wish to book a table at Coast Cafe in Bolinas on March 11th at 5 pm for 2 people.
+user: Please change that to half past 6 in the evening on 14th of March.
+assistant: Please confirm the following details: The reservation change to 6:30 pm on March 14th.
+user: Yes that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you so much. That is all.
+assistant: Have a good day.

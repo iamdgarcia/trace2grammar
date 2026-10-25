@@ -1,0 +1,41 @@
+user: Can you find me a 5 star hotel in Cape Town that has 2 rooms available?
+tool(SearchHotel): ok n_results=10
+assistant: From 10 hotels, how about 12 Apostles Hotel & Spa, a 5 star hotel?
+user: Is there another hotel you can recommend for me?
+assistant: Another 5 star hotel I found is 15 On Orange Hotel, Autograph Collection.
+user: Not quite what I was looking for, anything else?
+assistant: May I recommend Camps Bay Retreat Boutique Hotel, also a 5 star hotel.
+user: Will you tell me the address of the hotel, and if it allows smoking?
+assistant: Smoking is not allowed at the hotel, which is located at 7 Chilworth Road, Camps Bay.
+user: That hotel works for me, please find me a round trip flight to there.
+assistant: On which date should the return flight be on?
+user: The return flight should be on March 8th.
+assistant: Will you leave on March 5th then?
+user: Actually I want to start my travel on Monday next week, for 2 tickets.
+assistant: From which city do you want to depart on plane from?
+user: The flight will be from San Fran.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: From 1 flight I found, would you be interested in an American Airlines layover flight, it takes off at 12:50 pm and its return flight takes off at 1:40 pm, ticket prices will cost $419?
+user: At what time will the return flight arrive, and is this an economy or business class ticket?
+assistant: This is an economy class seat, and the return flight arrives at 6:11 pm.
+user: That sounds good to me, reserve the hotel you found with a check in date on Monday next week.
+assistant: For your stay, how long will you be staying?
+user: I plan on staying only for 1 day.
+assistant: You will check in on March 4th at the Camps Bay Retreat Boutique Hotel in Cape Town for 2 rooms, and will stay for 1 day correct?
+user: That works for me, thanks.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been successfully booked.
+user: How much does it cost per night, and what is their phone number?
+assistant: The cost per night $555, contact number is +27 21 437 8300.
+user: Many thanks, you been really helpful.
+assistant: Anything else I can help you with?
+user: What about attractions, anything you can find near there?
+tool(FindAttractions): ok n_results=9
+assistant: From 9 attractions I found, how about a museum, you can check out Bo-Kaap?
+user: I am looking for a museum, so any other ones you can find that is child-friendly?
+tool(FindAttractions): ok n_results=2
+assistant: I found 2 attractions, one museum you can check out is District Six Museum.
+user: That sounds great, thanks.
+assistant: Will that be all I can assist you with for today?
+user: That was all for today, thanks!
+assistant: No problem , enjoy your trip.

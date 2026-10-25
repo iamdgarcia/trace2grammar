@@ -1,0 +1,25 @@
+user: Hey, can you find me some place to eat in Berkeley where I can get cheap vegetarian options?
+assistant: What kind of food are you looking for?
+user: I'm looking for an afforadable breakfast.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 nice restaurant in Berkeley, it's the Venus Restaurant.
+user: Sounds good. Can you get me a table there for five pm please?
+assistant: So a table for 2 at 5 pm on March 1st at the Venus Restaurant in Berkeley?
+user: Yes. Do they have tables on the outside? What's their phone number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was successful. They don't have outdoor siting and their number is 510-540-5950.
+user: Thanks a lot.
+assistant: Can I help you further?
+user: You could book me a cab so I can get there.
+assistant: Is the destination 2327 Shattuck Avenue? Do you want a pool or a regular ride?
+user: Yes, it is. A shared ride is fine.
+assistant: So 2 seats on a pool ride to 2327 Shattuck Avenue?
+user: Yes, that's it.
+tool(GetRide): ok n_results=1
+assistant: Your cab is booked and on the way.
+user: How much will it cost me?
+assistant: It should cost you $17.41.
+user: Thanks a lot.
+assistant: Can I help you further?
+user: No, thanks a lot.
+assistant: Have a great day.

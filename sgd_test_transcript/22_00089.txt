@@ -1,0 +1,52 @@
+user: I need you to find me a therapist.
+assistant: What type of therapist do you want and in what city shall I search in?
+user: Search for a Family Counselor in Lafayette.
+tool(FindProvider): ok n_results=5
+assistant: Building Better Relationships is a Family Counselor and they are located in Lafayette.
+user: What else do you have?
+assistant: Cynthia Mansur is a Family Counselor in Lafayette.
+user: Can you find a Psychologist in Redwood City?
+tool(FindProvider): ok n_results=9
+assistant: Becker Hubert J. is a Psychologist in Redwood City and is 1 of 9 therapists that I found.
+user: That works for me.
+assistant: Shall I schedule a session for you?
+user: Yes, schedule a session for me.
+assistant: What time and date do you want?
+user: I wish to go at 11:45 in the morning on the 10th of this month.
+assistant: You wish to see Becker Hubert J at 11:45 am on March 10th, correct?
+user: That is right. What is their contact number and what is the venue location?
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 1150 Veterans Boulevard and you can contact them at 650-299-4827. I can't book that session for you. Would you like an appointment with Becker Hubert J for 11:30 am on March 10th?
+user: That is fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is confirmed and you will receive an email shortly.
+user: Thanks a bunch. Now I need you to request a private payment for me.
+assistant: Who needs to send you money?
+user: Request money from Amelia.
+assistant: How much money are you requesting?
+user: She owe's me 128 bucks.
+assistant: You want to make a private transaction with Amelia for $128?
+user: That is right.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request has gone through.
+user: Thanks a bunch. Find me a Diner restaurant to eat that for that day.
+tool(FindRestaurants): ok n_results=6
+assistant: Aly's On Main is in Redwood City and is 1 of 6 results that I found.
+user: What is their location and are they expensive?
+assistant: You can find them at 911 Main Street and they have moderate prices.
+user: That is perfect.
+assistant: Shall I book a table for you?
+user: Yes, get me a reservation.
+assistant: What time do you wish to eat?
+user: I wish to eat at 1:15 pm.
+assistant: You want a reservation for 2 at Aly's On Main in Redwood City at 1:15 pm on March 10th, correct?
+user: That is correct. How can I contact them and do they have a vegetarian menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You can contact them at 650-995-7500 and they do not serve vegetarian food. I can't book that time. Is a reservation for 2 at Aly's On Main at 1:30 pm on March 10th all right with you?
+user: That is fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete.
+user: Thanks a bunch.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Have a pleasant day.

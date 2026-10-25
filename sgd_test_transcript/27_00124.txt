@@ -1,0 +1,27 @@
+user: I need you to help me find a bus which leaves from Anaheim, and I do not mind if it is a direct bus or not.
+assistant: Can you tell me your destination?
+user: I want to be arriving in LAX
+assistant: When have you planned to leave for your trip?
+user: I have my plans set for leaving on March 5th.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses which you might consider having, with one of them leaving at 7:50 am, and the ticket of which costs $12.
+user: Is there something else you can recommend, it should be for 4 people.
+tool(FindBus): ok n_results=9
+assistant: There are 9 buses left for you to consider. How would you like having the bus which leaves at 10:20 am, and the ticket of which costs $14.
+user: That is nice. Can you tell me about some attractions there, which is child-friendly, and for it to be considered as a place of interest.
+tool(FindAttractions): ok n_results=8
+assistant: You can consider visiting Hollywood Walk of Fame, and it is a Tourist Attraction.
+user: Alright, that is good. Now I would like for you to try buying the bus tickets you found earlier.
+assistant: Can you please confirm that you want to buy tickets for 4 people without extra luggage for the bus which leaves from Anaheim on March 5th at 10:20 am to go to Los Angeles?
+user: That suits me well.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked for you.
+user: Are you able to also find me some hotels that are in that area too?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which you might like, with one of them being a nice 3 star hotel which is called Ac Hotel By Marriott Beverly Hills.
+user: Is there any other hotel you can suggest which I might like?
+assistant: Another nice 3 star hotel which you might consider is the Airtel Plaza Hotel.
+user: Can you check if the hotel allows smoking?
+assistant: The hotel rules do not allow smoking.
+user: That is fine. That's all I needed at the moment.
+assistant: Goodbye, and have a wonderful day!

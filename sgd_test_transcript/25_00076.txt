@@ -1,0 +1,40 @@
+user: I'd like to review my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms that are currently set with one named Exercise for 8 am.
+user: Thanks! Can you find me a restaurant?
+assistant: Are you looking for a specific cuisine?
+user: I'd like something that offers Taiwanese cuisine.
+assistant: In which location would you like to dine?
+user: Find me the ones in Palo Alto.
+tool(FindRestaurants): ok n_results=5
+assistant: There are 5 restaurants in Palo Alto, that you might like and Chef Zhao Kitchen is a nice one among them.
+user: Do they have outdoor seating?
+assistant: Sorry, they don't.
+user: Can you get me their user rating?
+assistant: The restaurant has a user rating of around 4.2.
+user: Can you find me more restaurants?
+assistant: Jing-jing Szechwan & Hunan Gourmet is a nice restaurant in Palo Alto.
+user: Thank you. That sounds like a good choice.
+assistant: Shall I reserve a table for you here?
+user: No, thank you.
+assistant: What else can I do for you?
+user: I'd like to book a rental car there.
+assistant: Please provide your pickup date, pick up location and return date.
+user: I'd like to pick it up from the Pacific Central Station on Saturday this week and return it on the 5th of this month.
+assistant: Do you have a preferred car type and a preferred time for pick up?
+user: Get me a Sedan with insurance that I can pick up at 13:30.
+assistant: Please confirm that you want to book a rental Sedan with insurance for pick up from the Pacific Central Station at 1:30 pm on March 2nd and with a return date of March 5th.
+user: Yes, that's correct. Which car is it and how much does it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved successfully. It is a Subaru Impreza and costs $45.00 per day.
+user: Oh, can you please share the location?
+assistant: Would you like to share the location 443 Emerson Street and with who would you like to share it?
+user: No. Share the address Pacific Central Station with Heather.
+assistant: Are you sure you want to share the location Pacific Central Station with Heather?
+user: No, my bad. I actually want to share the adddress 443 Emerson Street with Harold.
+assistant: Okay. No problem. Shall I share the location 443 Emerson Street with Harold?
+user: Yes, please proceed.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared with Harold.
+user: That was very helpful! Thanks a bunch! That'll be all for now.
+assistant: Have a great day!

@@ -1,0 +1,17 @@
+user: I am looking for a movie that I can watch.
+assistant: What area are you located in?
+user: Look for movies in SF.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies in the list. What do you think of Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: I will go for Brittany Runs a Marathon. Can you search for some songs now? Maybe something from 2014. I am intrigued by Party Rock Mansion as I really like Popular songs.
+tool(LookupMusic): ok n_results=1
+assistant: You might like this 1 song I found for you. It is New THang by Redfoo and it is in the album Party Rock Mansion.
+user: Yeah that is what I was thinking about.
+assistant: Shall I play the song?
+user: Yes please go ahead.
+assistant: So you verify that you want New Thang played in the Living Room?
+user: Yep, I confirm.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy listening to the music.
+user: Thanks that was all I needed.
+assistant: You have a wonderful day.

@@ -1,0 +1,9 @@
+user: I'd like to find a nice Sedan to rent.
+assistant: Where do you want to rent it from and at what time do you want it?
+user: I want to rent it in San Diego and have it at 3 in the afternoon.
+assistant: And what is the date range that you want the car?
+user: I want it from the 12th of March until the 14th.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I've found 4 cars that match. There's a nice Audi A8 Sedan at SAN International Airport.
+user: Okay, nice. That's all for now.
+assistant: Have a terrific day.

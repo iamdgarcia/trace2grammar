@@ -1,0 +1,37 @@
+user: Can you search for me a intermediate priced restaurant?
+assistant: Sure. What type of cuisine do you prefer?
+user: I want something serving Barbecue.
+assistant: Where should I search?
+user: Find me a restaurant in Rohnert Park.
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 restaurants that you might like. How about Bear Republic Brewing Co.? It is a nice restaurant located in Rohnert Park.
+user: Can you give me their phone number and user rating?
+assistant: The user rating is around 4.3. You can contact them at 707-585-2722.
+user: Can you recommend me something else?
+assistant: The Daily Grill is a nice restaurant located in Rohnert Park.
+user: Yes, that sounds good.
+assistant: Would you like to make a reservation?
+user: Yes, please reserve me a table. I need a table for 1 person for the morning 10:30.
+assistant: Confirming that you want to reserve a table for 1 at the Daily Grill in Rohnert Park. Your reservation is for March 1st at 10:30 am. Is this information correct?
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry, but I was unable to make a reservation. Can I assist you with something else?
+user: Can you try again? Make the reservation for 12:15 pm.
+assistant: Can you confirm the following: you want to book at table for 1 at the Daily Grill in Rohnert Park. Your reservation is for March 1st at 12:15 pm. Is this information correct?
+user: Yes it is. Can you give me the restaurant's user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are rated at around 4.0. Sorry, but I was unable to make your reservation for 1 at the Daily Grill. Should I try for March 1st at 12 pm?
+user: Yes, that works for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: What's the address?
+assistant: They are located at 630 Park Court.
+user: Thanks. Can you arrange an Expensive cab ride to the restaurant?
+assistant: Sure. Confirming that you want a Luxury ride for 1 to 630 Park Court. Is this information correct?
+user: Yes, that works. How long until the cab gets here? How much will it cost.
+tool(GetRide): ok n_results=1
+assistant: Your cab is expected to arrive in 13 minutes. The ride will cost you $18.80. I have booked your ride and your cab is on its way.
+user: Thanks a lot for helping me.
+assistant: Is there anything else that you need?
+user: No, thanks a lot for your help.
+assistant: You're welcome. Have a wonderful day!

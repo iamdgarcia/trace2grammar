@@ -1,0 +1,27 @@
+user: What would the weather be like this Saturday.
+assistant: In which city.
+user: In San Bruno.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 77 degrees Fahrenheit with a 21 percent chance of rain.
+user: How humid would it be?
+assistant: It should be around 58 percent.
+user: I want to schedule a visit to Dixon Apartments.
+assistant: You would like to visit Dixon Apartments on March 2nd.
+user: Yes, that's great. How many baths are there?
+tool(ScheduleVisit): ok n_results=1
+assistant: It has 2 bathrooms. I have scheduled the visit.
+user: I would like to reserve a car.
+assistant: Would you like to reserve a SUV, a hatchback or another vehicle? What time would you like to pick it up and when would you like to drop it off.
+user: I need a lovely hatchback from 2:15 in the afternoon till the 5th of this month.
+assistant: You would like to pick it up on March 2nd?
+user: I would need it from the 1st of this month.
+assistant: Where would you like to pick it up?
+user: Estacion Buenavista would be convenient for me and I would like to buy insurance.
+assistant: You would like to pick up a hatchback at Estacion Buenavista on March 1st at 2:15 pm and drop it off on march 5th?
+user: I need it from this Saturday till this Sunday.
+assistant: I want to pick up the car on march 2nd and drop it off on March 3rd.
+user: That would be fine. What is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved and it would cost $24.00 daily.
+user: Thanks a lot. That would be all.
+assistant: Enjoy your day.

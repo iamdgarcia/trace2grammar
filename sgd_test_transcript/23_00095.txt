@@ -1,0 +1,34 @@
+user: I need to find a train.
+assistant: Where are you travelling from?
+user: I will be leaving from San Fran.
+assistant: When will you be travelling?
+user: Ideally I'd like to travel this Sunday if possible.
+assistant: Where would you like to travel to?
+user: I'm going to LA
+tool(FindTrains): ok n_results=9
+assistant: I have found a train that departs at 6:20 am. What do you think? Tickets cost $83.
+user: Which station does it leave from?
+assistant: It leaves from the Salesforce Transit Center.
+user: Please can you tell me the name of the destination station?
+assistant: Sure, no problem. The train arrives at Union Station.
+user: I like the sound of this option. Please can you go ahead and book me a ticket. I don't know if I'll definitely be travelling on that date so conditionally refundable tickets would be best.
+assistant: How many tickets would you like to purchase?
+user: Just one thanks.
+assistant: Okay so just to check that I've got this correct. You would like to book 1 value ticket on the train leaving from San Francisco to Los Angeles on March 3rd at 6:20 am.
+user: Actually can you make that a flexible ticket please. My plans may change.
+assistant: Okay sure, I'll book 1 flexible ticket.
+user: That's great thanks.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked.
+user: Thanks for your help. Now can you help me find something to do while I'm there on March 13th. I'd really like to go out and see a show.
+tool(FindEvents): ok n_results=10
+assistant: How about Asssscat? It's a show at Upright Citizens Brigade Sunset and there is a showing on March 13th at 6:30 pm.
+user: Ok that's perfect. Can you please share the location with my friend Louis
+assistant: Okay sure so you want to share the location Upright Citizens Brigade Sunset with Louis?
+user: Yes that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the location.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: Not right now thanks.
+assistant: Enjoy your day.

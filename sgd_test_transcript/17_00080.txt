@@ -1,0 +1,16 @@
+user: Can you please find me a train? I need one seat on the 11th to Fresno.
+assistant: What city do you want to depart from?
+user: I am looking for tickets from San Francisco.
+tool(FindTrains): ok n_results=8
+assistant: There are 8 trains that may work. I found one departing at 6:20 am that costs $63 total.
+user: What station does it depart from and which one does it arrive at?
+assistant: The train is leaving from the Salesforce Transit Center and arrives at Fresno Station.
+user: That sounds good.
+assistant: Shall I book the ticket?
+user: No thank you, not now.
+assistant: Is there anything else that I can help with?
+user: I would like to find a house to stay there for 4 people that offers laundry service. The rating needs to be 3.9 or higher.
+tool(SearchHouse): ok n_results=2
+assistant: There is a nice house located at 2233 Ventura Street with a rating of 3.9.
+user: This house is great. Thanks, that is all I need.
+assistant: It's been my pleasure to help you. Good bye.

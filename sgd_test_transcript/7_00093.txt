@@ -1,0 +1,18 @@
+user: I need movie tickets for Toy Story Four, now please.
+assistant: Number of tickets? What day?
+user: I need it in Union City at 11 in the night. I need four tickets.
+assistant: What is the show type?
+user: Regular, please.
+assistant: On which date would you like the show?
+user: I want today.
+assistant: So, 4 tickets for Toy Story 4 on March 1st in Union City, at 11 PM. This is a regular movie.
+user: Yes, that's it.
+tool(BuyMovieTickets): ok n_results=0
+assistant: The purchase could not be made. Anything else?
+user: Can you try again? But I want Angel Has Fallen at quarter past 10 in the night.
+assistant: So 4 tickets for Angel Has Fallen on March 1st in Union City, at 10:15 PM, as a regular movie.
+user: Yes, what's the address? What's a good one?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The purchase is done. The address is 32100 Union Landing Boulevard and the name is Century 25 Union Landing and XD.
+user: Thanks for that.
+assistant: Of course, have a good one.

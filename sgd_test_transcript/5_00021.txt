@@ -1,0 +1,12 @@
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: There are currently 2 set. The first is called Wake up and its set at 6 am.
+user: Great, can you add an alarm called Music Practice for half past 4 in the evening?
+assistant: Sure thing. You'd like me to create an alarm to go off at 4:30 pm titled music practice?
+user: Yes, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: It's been added.
+user: Thank you!
+assistant: No problem, need anything else?
+user: Nope, I appreciate it.
+assistant: My pleasure, enjoy your day.

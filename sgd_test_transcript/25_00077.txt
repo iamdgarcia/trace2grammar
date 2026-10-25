@@ -1,0 +1,26 @@
+user: I want to watch my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: Currently there are 2 alarms and there is a alarm called Event for 4 pm.
+user: This is cool..Can you search me a restaurant there where the pasta is available.
+assistant: Which city you preferred the restaurant?
+user: Search restaurant in San Francisco.
+tool(FindRestaurants): ok n_results=10
+assistant: There is a nice restaurant at San Francisco called 54 Mint Ristorante Italiano.
+user: This is perfect..can you reserve me a Sedan car there.I want to pick it up from Grand Central Station and i want the car till 11th of march.
+assistant: When you want the rental car and what is your time of pick up? Do you need insurance to this car?
+user: I like to pick it up 12:30 on wednesday next week and i like to add insurance.
+assistant: Please give confirmation details: You want to pick the Sedan car from Grand Central Station on march 6th at 12:30 pm and you need the car till march 11th. you want to add insurance.
+user: Okay..this is cool
+tool(ReserveCar): ok n_results=1
+assistant: Your car is successfully booked.
+user: Thanks a lot. Can i know the location address?
+assistant: Are you like to share address 16 mint plaza? To whom you want to share?
+user: I like to share the address Grand Central Station with Julie.
+assistant: Please give confirmation details: You want to share the Address of Grand Central Station with Julie.
+user: Sorry, i want to share the address of 16 mint plaza with Keith.
+assistant: Please give confirmation details: You want to share the Address of 16 mint plaza with Keith.
+user: This is cool.
+tool(ShareLocation): ok n_results=1
+assistant: Your location address is shared successfully.
+user: Thanks for your sweet help.
+assistant: Have a wonderful day.

@@ -1,0 +1,14 @@
+user: I want to watch a movie which is directed by Peter Strickland and I like Ghost movies. Please search for the suitable one.
+tool(FindMovies): ok n_results=1
+assistant: How about the 1 that is In Fabric which has 96 rating out of 100?
+user: I think I can prefer this. Thanks. Also I need you to search for some interesting events on there on that day.
+assistant: Do you have any particular City in your mind to search for the events?
+user: Yes, search in London, UK.
+assistant: City is okay. But I need to know your interested type of events like Music, or Theater or anything else?
+user: Yes, I like to search for Play.
+tool(FindEvents): ok n_results=10
+assistant: What about the one which is A Right Royale Tea will be take place at Amba Hotel Charing Cross on March 14th at 7 pm and the same is the best one I think among the 10 results that I got for you.
+user: Yes, I also like the same.
+assistant: Shall I purchase the tickets now ?
+user: No, not now. Thank you. That's all.
+assistant: Have a good day.

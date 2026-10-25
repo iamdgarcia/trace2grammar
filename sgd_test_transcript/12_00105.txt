@@ -1,0 +1,27 @@
+user: I'm looking for something fun to do.
+assistant: Yes, what type of events are you interested in?
+user: I'd like to see a show in the Napa area on the 14th.
+tool(FindEvents): ok n_results=1
+assistant: There is 1 event on March 14th. It is Matilda the Musical at Napa Valley College Performing Arts Center and it starts at 6 pm.
+user: What is the address of that venue?
+assistant: The venue is located at 2277 Napa Vallejo Highway.
+user: What is the price for a ticket?
+assistant: It is $30 per ticket.
+user: I think I would like that.
+assistant: Would you like to purchase tickets now?
+user: No, not right now. I just remembered I need to request a payment from Mahmoud.
+assistant: How much is the payment request?
+user: I need to request thirty bucks.
+assistant: You would like to request a payment of $30 from Mahmoud via a public transaction, is that right?
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been sent.
+user: Ok, now I'm ready to buy tickets for the show.
+assistant: How many ticket would you like to buy?
+user: I will need 4 tickets.
+assistant: Please verify you would llike 4 tickets for Matilda The Musical on March 14th in Napa.
+user: Yes, buy them please.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased. Have fun!
+user: Thanks! I don't need anything else right now.
+assistant: Great, have a nice time!

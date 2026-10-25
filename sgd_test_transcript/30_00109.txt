@@ -1,0 +1,20 @@
+user: My hair is a mess. I need a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: There is a lovely salon in Santa Rosa called Daredevils & Queens.
+user: Is there a contact number? What average rating does it have?
+assistant: The number is 707-575-5123 and the average rating is 4.6.
+user: That would be fine. I think I would like to catch a movie after. What would be showing around that time?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies available. Would you like to see After the WEdding, Fiddler: A Miracle of Miracles or Good Boys?
+user: Good Boys would be ideal.
+assistant: You would like to get tickets?
+user: Not at this time. What time would it be showing? I want to see it in imax at Airport Stadium Cinemas on the 2nd.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one show at 9:30 pm at Airport Stadium 12.
+user: That would be fine. I want to go to the salon that same at evening 4:45.
+assistant: You would like a hair appointment at Daredevils & Queens salon for 4:45 pm on March 2nd?
+user: That would be great. Is it a unisex salon? Where is it located?
+tool(BookAppointment): ok n_results=1
+assistant: It is not unisex. The salon is located on 122 4th Street. I was unable to make the appointment for you at Daredevils & Queens. Would you be available for an appointment on March 2nd at 4:30 pm.
+user: No. That would be all.
+assistant: Enjoy your day.

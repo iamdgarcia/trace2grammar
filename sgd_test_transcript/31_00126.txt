@@ -1,0 +1,26 @@
+user: Assistant. I need help finding a therapist. Please provide your assistance.
+assistant: Of course. What type of therapist do you require? A Family Counselor or Psychiatrist for example. Please tell me the city to conduct the search in as well.
+user: I want to search for a Family Therapist in Mountain View.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 therapists that could be of assistance to you. There is a Family Counselor in Mountain View named Kane Monique. Would you like to try them?
+user: I might talk to them first. Can you tell me the phone number for that location?
+assistant: Sure. The number is 650-964-6993 if you wish to speak with them.
+user: That sounds fine. Thanks for that information.
+assistant: Would you like me to proceed with booking an appointment at that office?
+user: I think so. Please go ahead and schedule the appointment for a quarter to 1 in the afternoon.
+assistant: What date would you want to visit this location?
+user: Actually, set the appointment time for morning 11:30 of Monday next week.
+assistant: I am now booking an appointment on March 4th at 11:30 am with Kane Monique in Mountain View. Shall I proceed?
+user: Go ahead and confirm the appointment. Tell me the address of their office as well.
+tool(BookAppointment): ok n_results=1
+assistant: I have made your appointment for you. The confirmation email will be arriving soon. The address of Kane Monique is 1059 El Monte Avenue # B.
+user: Oh thank you so very much. I can't tell you how much I appreciate your help. Moving on to something else though, please recommend a movie for me.
+tool(FindMovies): ok n_results=10
+assistant: I recommend the Midsommar. This movie is averaging a rating of 83 out of 100 currently.
+user: Not quite what I'm in the mood for. Try finding something with Kelvin Harrison Jr. in it. Preferably a mystery movie.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to see Luce? I highly recommend this movie with a high rating of 92 out of 100.
+user: Can you tell me who directed this film?
+assistant: The director of the movie is Julius Onah.
+user: That should work just fine. That's all I need for now. I appreciate it.
+assistant: It was my pleasure. As always, let me know if you need anything else. Bye.

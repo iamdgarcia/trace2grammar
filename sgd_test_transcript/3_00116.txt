@@ -1,0 +1,26 @@
+user: I'm going to need a rental car.
+assistant: What date and time do you need it?
+user: I want it on the 8th and I would prefer to get it at 15:00.
+assistant: Where will you be when you need the rental?
+user: I will be needing the car in Philly.
+assistant: How long where you planning to keep the car?
+user: I will have to have it until the 14th of March.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I found 9 cars you can choose from.There is a SUV at PHL International Airport of Citroen C5.
+user: What else is there?
+assistant: There is a Dodge Charger Sedan at Intercity Terminal.
+user: What would that run me?
+assistant: It is priced at $30.00 a day.
+user: I like that one.
+assistant: Should I reserve it for you.
+user: Yes, rent that one for me.
+assistant: Should I purchase insurance with the rental?
+user: No, I have my own.
+assistant: You want the Sedan from March 8th through March 14th and you will be picking it up from the Intercity Terminal at 3 pm with no extra insurance is that correct?
+user: Yes, you got it right.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle is booked.
+user: I appreciate your assistance.
+assistant: Would you like me to do something else?
+user: Not right now maybe later.
+assistant: Have a really nice day.

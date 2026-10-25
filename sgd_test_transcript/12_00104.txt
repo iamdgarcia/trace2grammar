@@ -1,0 +1,27 @@
+user: I need your guidance to find something fun to do on the 12th of march, I'm into drama
+assistant: tell me the city where I should look
+user: LAx area is the one
+tool(FindEvents): ok n_results=10
+assistant: you're in luck, there are 10 options. what about adieu monsieur haffmann at theatre raymond kabbaz on march 12th at 7 pm?
+user: sounds alright
+assistant: I can easily get the tickets for you
+user: not now, I want you to request a payment
+assistant: sure, tell me the name of the contact and the exact sum
+user: the transaction is with peter and it's for $79
+assistant: confirm the public transaction with peter for $79
+user: that's right
+tool(RequestPayment): ok n_results=1
+assistant: it's done
+user: great! now we can buy those tickets
+assistant: how many do you need?
+user: two are enough
+assistant: confirm the purchase before it's final. you need 2 tickets to see adieu monsieur haffmann on march 12th in los angeles
+user: I only need 1 ticket
+assistant: confirm again please. you need to buy 1 ticket for an event happening in los angeles
+user: correct. what is the price for one single ticket? What's the location?
+tool(BuyEventTickets): ok n_results=1
+assistant: one ticket is $60 and the location is at 10361 west pico boulevard. Your ticket has been purchased
+user: lovely!
+assistant: do you have more questions for me?
+user: No I don't, bye
+assistant: Enjoy the rest of your day

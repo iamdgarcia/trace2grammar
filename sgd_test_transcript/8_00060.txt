@@ -1,0 +1,16 @@
+user: My friend owes me some money. Can you put in a private transfer payment request for me with Wilson for forty two dollars?
+assistant: Sure. To confirm, you'd like to make a private transaction request with Wilson for $42, is that right?
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Ok, your payment request has been made.
+user: Great, thanks. I'd also like to make a payment.
+assistant: Sure, with whom?
+user: This transaction is with Yumi.
+assistant: Ok, how much is the payment for and should I transfer the funds from the app balance or your debit card?
+user: It's for $155, and you can transfer it from my JCB.
+assistant: Sure. To confirm, you'd like to transfer $155 to Yumi using your credit card via public transaction.
+user: Yes, that's fine.
+tool(MakePayment): ok n_results=1
+assistant: Ok, your payment has been made and the recipient should see it in their account shortly.
+user: Great, thanks for your help! That's all for now.
+assistant: No problem. If that's all then, bye!

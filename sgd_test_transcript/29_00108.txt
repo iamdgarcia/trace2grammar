@@ -1,0 +1,24 @@
+user: I want to do something fun! What is there in NY?
+assistant: Do you have an event preference?
+user: I like music and search for something on March 2nd.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events you may like. Abbi Jacobson will be at Kaufmann Concert Hall at 6:30 pm on March 2nd.
+user: That sounds like fun.
+assistant: Do you want tickets?
+user: Not now. I want to find a house to stay at.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 house available. One has a 4.4 rating and is located at 100 Greenwich Street.
+user: Sounds like a good house.
+assistant: Do you want a reservation?
+user: No, not at the moment. What buses are heating to NY? I am leaving next Monday from Washington. Make it for three.
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses you may like. One bus departs at 6:20 am and costs $36.
+user: Sounds good! I want tickets for the Abbi Jacobson event you mentioned earlier.
+assistant: Please confirm the following: booking 3 tickets for Abbi Jacobson on March 2nd in New York.
+user: Yes that works. What venue is the event at and how much does one ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed! The venue is 1395 Lexington Avenue and a ticket costs $45.
+user: Thanks for the help!
+assistant: May I assist you further?
+user: No, I'm good.
+assistant: Have a fantastic day!

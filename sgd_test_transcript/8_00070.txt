@@ -1,0 +1,15 @@
+user: I would like help selecting a train for a trip that I am taking.
+assistant: What is your destination city?
+user: My destination city is Phoenix
+assistant: And on which day are you planning to leave?
+user: I would like book tickets for day after tomorrow
+assistant: And where will you be leaving from for this trip?
+user: I will be leaving for my trip from LA
+tool(FindTrains): ok n_results=5
+assistant: The fare is $86 for a train that leaves at 6:30 am
+user: Great, that works
+assistant: Would you like to go ahead and purchase tickets for this train?
+user: No, not at this time. Thanks
+assistant: Do you need any further assistance?
+user: No, that's it for me. Thanks for all of your help!
+assistant: Take care.

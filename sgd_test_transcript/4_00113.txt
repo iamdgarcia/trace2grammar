@@ -1,0 +1,20 @@
+user: Can you help me look for a bus? I want a direct bus leaving on the 11th of this month.
+assistant: Where are you going and where are you leaving from?
+user: I am going to Los Angeles from Sacramento, CA.
+tool(FindBus): ok n_results=3
+assistant: There is a bus departing at 7:40 am for $48.
+user: That sounds great.
+assistant: Do you want to purchase tickets?
+user: Yes, I want to purchases tickets for 4 people.
+assistant: Please confirm: A bus ticket for 4 people from Sacramento to Los Angeles. The bus leaves on March 11th at 7:40 am. No extra luggage. Is that correct?
+user: No, only 3 people. I have extra luggage.
+assistant: Please confirm: 3 seat reservations and extra luggage.
+user: Yes, thanks. What station does the bus arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed. The bus arrives at North Hollywood Station.
+user: What station does it leave from?
+assistant: The bus departs from 65th Light Rail Station.
+user: Thank you so much.
+assistant: Anything else I can do for you?
+user: No, that's all. Thanks.
+assistant: Have a good day!

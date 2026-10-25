@@ -1,0 +1,25 @@
+user: I'd like to watch a movie, something along the lines of an eccentric story. Is there anything by Quentin Tarantino?
+tool(FindMovies): ok n_results=1
+assistant: Yes, there is 1 movie that fits your search, Once Upon a Time In Hollywood which has a 85 out of 100 rating.
+user: Who stars in this movie?
+assistant: Timothy Olyphant was a starring actor.
+user: That works. Is there a restaurant around there with moderate pricing and vegetarian options?
+assistant: What type of food are you interested in?
+user: Vietnamese would work.
+assistant: Where should I look?
+user: Hayward, please.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant that fits your search for Hayward, the Red Chili Thai Vietnamese Noodle Restaurant, does that work?
+user: Yes, that works. I'm looking to book a table for three at the restaurant, on March 7th at twelve in the afternoon please.
+assistant: Alright. Just to confirm, you are booking a reservation for 3 people at the Red Chili Thai Vietnamese Noodle Restaurant in Hayward on March 7th at 12 pm, is that correct?
+user: No, actually I'll be looking for only two people on the March 12th reservation.
+assistant: Okay, just to confirm, we are updating the booking to 2 people for March 12th, is that right?
+user: No, can we do it a little earlier, morning 11:30?
+assistant: Sure, just to confirm I will be booking the table at Red Chili Thai Vietnamese Noodle Restaurant at 11:30 am, is this correct?
+user: Yes, that'll work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: What's their number?
+assistant: Their number is 510-881-8593.
+user: Thank you, that's all.
+assistant: Have a wonderful day.

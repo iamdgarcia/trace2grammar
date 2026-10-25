@@ -1,0 +1,26 @@
+user: I want to search for a movie to watch. Please find me the one which is directed by Steven Spielberg and I like the Sci-Fi kind of movies.
+tool(FindMovies): ok n_results=1
+assistant: Do you like to watch the movie like Close Encounters of the Third Kind which got 95 out of 100 rating in average.
+user: That's nice and okay to me.
+assistant: What else do you want me to do?
+user: I have another plan that going to a nice restaurant. Can you find the one who is serving Cafe?
+assistant: Yes, of-course. Where do you want to search for the restaurant?
+user: I want you to search it in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: What about Acquolina? which is a good restaurant in San Francisco.
+user: Get me their address to decide.
+assistant: Please note down their address as 1600 Stockton Street.
+user: What is their price range? Is they offer expensive food?
+assistant: They offer food at moderate prices. Is it okay to you?
+user: No, search for something else to match my requirements.
+assistant: Okay. What about Broadway Dim Sum in San Francisco which is also a nice restaurant.
+user: I don't like it. Search for something else especially the one in Belmont.
+tool(FindRestaurants): ok n_results=1
+assistant: Got 1 and what do you think about Sumac Mediterranean Grill in Belmont?
+user: I think this is the suitable one and I want to book a table there for the time 17:30.
+assistant: I need your confirmation once again to book a table for 2 at Sumac Mediterranean Grill restaurant in Belmont on March 1st for the time at 5:30 pm.
+user: That is confirmed to proceed.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully reserved the table to you.
+user: Thank you so much and that's all for now.
+assistant: Have a great day.

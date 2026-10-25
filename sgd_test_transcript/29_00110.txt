@@ -1,0 +1,31 @@
+user: I'm bored, help me find something fun to do please.
+assistant: Any particular city we should search in?
+user: Let's check out what's happening in New York
+assistant: Any preference on the type of events we are looking for?
+user: I would enjoy a stage show.
+tool(FindEvents): ok n_results=10
+assistant: I understand. I've located 10 events that may work for you. I can suggest Acting For Teens is pretty popular. This event is taking place at 520 8th Ave. - Personal Valet Parking. This event is on March 4th at 6 pm.
+user: Sounds pretty good, I will also need a house to stay at there, what can you recommend.
+tool(SearchHouse): ok n_results=10
+assistant: There is a great house located at 100 Greenwich Street with a rating of 4.4.
+user: The house sounds good, are there any buses going there.
+assistant: Where would you be departing from? Will you be departing on March 5th.
+user: Yes that would work for me, and i'm leaving from Washington.
+tool(FindBus): ok n_results=7
+assistant: I've located 7 buses for you. May I suggest a bus that departs at 6:20 am that will cost $38
+user: List other options
+assistant: Sure, how about, the bus departing at 12:10 pm for a price of $33
+user: No, list more options, also there will be four people departing from Philly .
+tool(FindBus): ok n_results=6
+assistant: I've got 6 buses for you. How about a bus departing at 9 am and will run you $23.
+user: Is this a one-stop bus? I would also like to know which station the bus would arrive at?
+assistant: This is a direct bus and will arrive at Penn Station.
+user: Sounds perfect. I would like to purchase tickets to the event you found a little while ago.
+assistant: Alright, Please confirm you would like to book 4 tickets for Acting for Teens in New York on march 4th. Is that right?
+user: Yes, that is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation was confirmed. I hope you have a great time.
+user: Thank you for your help.
+assistant: your welcome. will there be anything else?
+user: No. that was all.
+assistant: Ok, Good bye

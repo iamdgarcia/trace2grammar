@@ -1,0 +1,27 @@
+user: Find me a bus from Sacramento.
+assistant: What is your departure date?
+user: I need a direct bus for the 11th of March.
+assistant: What is your destination?
+user: I'm going to LAX.
+tool(FindBus): ok n_results=3
+assistant: How about a 7:40 am departure? It costs $48.
+user: Anything else? I need two seats leaving from Anaheim.
+tool(FindBus): ok n_results=10
+assistant: How about a 7:50 am departure for $12?
+user: What is the departure station?
+assistant: It departs from the Anaheim Bus Station.
+user: What is the arrival station?
+assistant: The North Hollywood Station.
+user: Sounds good.
+assistant: Would you like to buy tickets?
+user: Yes, reserve me a seat.
+assistant: Confirming that you want 2 tickets on the March 11th Anaheim to Los Angeles bus. The bus departs at 7:50 am. You have no extra luggage.
+user: I do have extra luggage.
+assistant: Confirming that you need 2 tickets and you have extra carry on luggage.
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Thanks a lot.
+assistant: Do you need help with anything else?
+user: No, thanks for your help.
+assistant: You're welcome. Have a nice day.

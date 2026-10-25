@@ -1,0 +1,16 @@
+user: Can you find me a round trip plane from Chi-town that is economy and returning on Wednesday next week?
+assistant: When are you travelling and where are you headed?
+user: I'm gonna be flying out on the 2nd to Delhi
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's a United Airlines flight that leaves at 11:15 pm and is a direct flight. The return flight leaves at 1:20 pm, and all this will cost $368
+user: How many tickets will you get?
+assistant: I am getting it for 1 person
+user: When does that flight arrive at Delhi?
+assistant: It arrives at 8:59 pm, so not too late
+user: What if I fly to NYC instead?
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: You can fly for $222 via American Airlines with a 5:05 am connecting flight and a returning flight that takes off at 11:20 am?
+user: That sounds great
+assistant: Can I do something else for you right now?
+user: Right now, no thank you, have a good day and thanks for helping
+assistant: Sure, you too, take care

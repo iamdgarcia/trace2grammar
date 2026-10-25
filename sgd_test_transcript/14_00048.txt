@@ -1,0 +1,21 @@
+user: I'm in the mood for lots of entertainment today. Could you find me any movie with Herbert Ross as the director?
+tool(FindMovies): ok n_results=1
+assistant: I found Steel Magnolias which has an average rating of 70 out of 100.
+user: No, I've already watched that one. let's try something else. Please search for movies featuring Sarah McLeod, with Peter Jackson as director,.
+tool(FindMovies): ok n_results=1
+assistant: Your search yielded 1 suitable movie, The Lord of the Rings: The Return of the King. It's rated 93 out of 100. Will it work for you?
+user: Sure, that works for me. Now search my playlist for songs from '19.
+tool(LookupMusic): ok n_results=10
+assistant: May I suggest the song A Ghost In The Trenches by Sabaton from the The Great War album?
+user: What's the genre?
+assistant: The genre is Metal.
+user: I enjoy songs by Sabaton. Please suggest another song in the great The Great War album.
+tool(LookupMusic): ok n_results=7
+assistant: How does Devil Dogs by Sabaton from the The Great War album sound?
+user: Now that's a song I could listen to every day! Please play the song.
+assistant: Please confirm that you'd like Devil Dogs played in the Living room.
+user: sure, that's right. What's the genre?
+tool(PlayMedia): ok n_results=1
+assistant: The song's genre is Metal. Do enjoy listening to your music.
+user: Thank you very much. That will be all.
+assistant: Have a wonderful day!

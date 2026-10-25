@@ -1,0 +1,30 @@
+user: I need to purchase three bus tickets from Sacramento to SD please.
+assistant: Ok, I can help with that. What time would you like to leave?
+user: How about at half past 7 in the morning please.
+assistant: What day to you plan to depart?
+user: I would ideally like to head out on March 10th.
+assistant: Ok, Please confirm you would like to purchase 3 tickets from Sacramento to San Diego departing on March 10th at 7:30 am. Is this correct?
+user: No, and I will have excess luggage to carry.
+assistant: Alright, please confirm you would like to depart at 7:30 am with extra luggage carried on the bus. is this correct?
+user: No, I will be leaving from Long Beach and just 2 people will be on this trip.
+assistant: Ok, I understand. Please confirm, You would like 2 tickets departing from Long Beach. Is that correct?
+user: Yes that is! Which station will I arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Great news, your ticket is confirmed. You will arrive at El Cajon Bus Stop.
+user: Thank you for you help. Could you also look up hotels in that area as well. I will need three rooms and would prefer a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I've located 10 hotels that match your request. I would like to start by recommending Bahia Resort Hotel it also has a 3 star rating.
+user: Find out the address and phone number for the hotel.
+assistant: Sure thing, the number is +1 858-488-0551 and the address is 998 West Mission Bay Drive
+user: Are there any other hotels with a 4 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: i've located 10 hotels for you. May I recommend Catamaran REsort Hotel and Spa with a 4 star hotel.
+user: Sounds good. I would like to reserve a room please
+assistant: What date do you plan to check in?
+user: I'll be needing 2 days and checking in on March 12th
+assistant: Alright, I understand. Please confirm you would like 3 rooms for 2 days in San Diego at the Catamaran Resort Hotel And Spa. check in would be on March 12th.
+user: That sounds nice. Find out if smoking is allowed at the hotel and what will the price be per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation was successful. Unfortunately no smoking is allowed on the hotel property, the price is $468 per night.
+user: Thanks for your help, that will be all.
+assistant: Ok, Good Bye!

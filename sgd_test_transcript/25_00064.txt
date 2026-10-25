@@ -1,0 +1,38 @@
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set. It is for 4 pm and called, pick up kids.
+user: Okay that is good.
+assistant: Do you want to add one?
+user: No. I want to find a restaurant in Milpitas.
+assistant: What kind of restaurant.
+user: Find something with Coffee & light bites.
+tool(FindRestaurants): ok n_results=1
+assistant: What about Honey Thai Restaurant in Milpitas.
+user: What is the phone number?
+assistant: The number is 408-719-8200.
+user: Yeah that sounds good.
+assistant: Would you like a table there.
+user: No, I want a car.
+assistant: Whan do you want the car rental and do you need insurance.
+user: I don't need insurance thanks. I want the car from 11th of this month.
+assistant: What time are you able to pick up the car? And What car do you want?
+user: A hatchback would be good. I need to pick it up at half past 10 in the morning. I want to rent it until March 12th.
+assistant: Where do you want to pick it up from?
+user: From Kuala Lumpur International Airport.
+assistant: Okay let's confirm the details/ You want to pick up a car from Klia International Airport on March 11th at 10:30 am and drop it off on March 12th. The car will be a Hatchback and there will be no insurance.
+user: Yeah that's perfect.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car.
+user: What is the name of the car?
+assistant: It is a Fiat Panda.
+user: Thanks for your help.
+assistant: Can I help you with something else?
+user: Can you share my location?
+assistant: Who with? Which address do you want me to share? 57 North Milpitas Boulevard, KLIA International Airport or somewhere else?
+user: KLIA International Airport, yes. Please share it with Mary.
+assistant: Okay let's confirm the detail. KLIA International Airport shared with Mary.
+user: Sounds great.
+tool(ShareLocation): ok n_results=1
+assistant: You've just shared that location.
+user: Thanks you have been really helpful.
+assistant: Have a nice day.

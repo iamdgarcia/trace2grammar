@@ -1,0 +1,21 @@
+user: Please find me a therapist.
+assistant: What city could I look it. Do you need a psychiatrist or family counselor or something else?
+user: Find someone who is a psychologist in Redwood City.
+tool(FindProvider): ok n_results=9
+assistant: You could try Becker Hubert J. a psychologist in Redwood City.
+user: Tell me the phone number and address.
+assistant: The address is 1150 Veterans Boulevard and phone is 650-299-4827 .
+user: That sound good to me.
+assistant: Would you like to book an appointment with the therapist.
+user: Yes, I'd like to book an appointment time at 3 in the afternoon for March 8th.
+assistant: Please confirm details for an appointment with Becker Hubert J at 3 pm March 8th.
+user: Yes, that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you should get an email soon.
+user: Would you have some recommendations on movies to watch?
+tool(FindMovies): ok n_results=10
+assistant: What about Zama with an average movie rating of 96 out of 100.
+user: That sounds good to me.
+assistant: What else can I assist with?
+user: No thanks for the help.
+assistant: Happy I could help you.

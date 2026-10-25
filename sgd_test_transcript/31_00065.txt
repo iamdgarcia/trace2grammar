@@ -1,0 +1,35 @@
+user: Help me find a salon, please.
+assistant: In which city do you want to find the salon?
+user: Find me one in Burlingame.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons that you might like in Burlingame and there's a nice one called Burlingame Barber Shop.
+user: Thank you for that.
+assistant: Would you like to book an appointment here?
+user: Yes, please. Can you book one on March 11th?
+assistant: Do you have a preferred time?
+user: Can you check if one is available at afternoon 1?
+assistant: Please confirm that you want to book an appointment at the Burlingame Barber Shop at 1 pm on March 11th.
+user: Yes, sounds right to me. Can you get me their average rating and address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully. They are located at 1012 Oak Grove Avenue and have an average rating of 4.7.
+user: Can you find me a good restaurant where I can have a meal that day?
+assistant: Are you looking for a specific cuisine?
+user: I prefer restaurants serving Diner.
+tool(FindRestaurants): ok n_results=4
+assistant: There is a nice diner called 37 North in Burlingame.
+user: Thank you for the suggestion. Can you reserve a table for me as well?
+assistant: At what time will you be at the restaurant?
+user: I'll be there by quarter to 12 in the morning.
+assistant: Please confirm that you want to reserve a table for 2 at 37 North restaurant in Burlingame for 11:45 am on March 11th.
+user: Yes, that should work. Can I have their phone number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, the reservation request was unsuccessful. Is there anything else I can do for you?
+user: Can you try reserving the table for afternoon 1?
+assistant: Let me try that. So you want to reserve a table for 2 at 37 North restaurant in Burlingame for 1 pm on March 11th, correct?
+user: Yes, give that a try.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved successfully.
+user: Thanks a bunch!
+assistant: Is there anything else I can help with?
+user: No. That'll be all. Thank you very much.
+assistant: Have a great day!

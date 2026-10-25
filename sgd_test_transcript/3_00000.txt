@@ -1,0 +1,13 @@
+user: I am planning a trip. I will need three tickets. The tickets will be for a one way flight on Thursday next week.
+assistant: Which city would you like to fly out of.
+user: I am hoping to find a flight out of Los Angeles.
+assistant: Which city would you like to fly to?
+user: Atlanta will be my destination.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: Is Alaska Airlines acceptable for you. They have a plane leaving at 11:30 pm with no stops. The charge would be $171.
+user: What time would the flight arrive in Atlanta.
+assistant: The arrival time is projected at 7:29 am.
+user: Awesome. That flight will work for me.
+assistant: Is there anything else I can do for you?
+user: Nothing at the moment. Thanks so much for the assistance.
+assistant: Your welcome. I hope you have a great day.

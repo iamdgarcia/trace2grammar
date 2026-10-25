@@ -1,0 +1,31 @@
+user: I need bus tickets to SF.
+assistant: How many tickets?
+user: For just 1 person.
+assistant: Where are you leaving from? What date and time would you like to leave?
+user: I will be leaving Vegas on March 11th at 12:30 pm.
+assistant: You would like 1 ticket on a bus leaving Las Vegas for San Francisco on March 11th for 12:30 pm, with no extra luggage?
+user: That would be fine. How many stops would there be?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct trip. Your ticket is confirmed.
+user: I would need a rental car when I get there.
+assistant: Would you like to pick it up in San Francisco? What time would you like that car and when would you be returning it?
+user: I want it till the 14th of March and I will be picking it up at 3 o'clock in the afternoon.
+assistant: You would like the car from March 11th?
+user: No, from the 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available. You can pick up a lovely sedan audi A8 at Salesforce Transit Center.
+user: What is the daily cost?
+assistant: It is $31.00 a day.
+user: Go ahead and reserve the car for me.
+assistant: would you like insurance.
+user: I don't need it.
+assistant: You would like to pick up a sedan at Salesforce Transit Center on march 12th at 3 pm and return it on March 14th, with no insurance?
+user: No, I want insurance.
+assistant: You would like a sedan with insurance.
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved the car for you.
+user: Thanks a lot.
+assistant: Anything else you need?
+user: No. Thanks for your assistance.
+assistant: Enjoy your day.

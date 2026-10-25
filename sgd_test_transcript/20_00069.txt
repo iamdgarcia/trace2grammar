@@ -1,0 +1,19 @@
+user: I have planned for a short trip for which I need a car for rent. Please search for the one in Vancouver, BC. I need the same on next Monday at evening 4:30.
+assistant: To which date you need the car?
+user: I need the car till next Friday.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a Sedan Audi A8 car available for pick up at Pacific Central Station?.
+user: This is okay for me. I have another plan that I like to stay there for a while. Please search for a house to stay.
+tool(SearchHouse): ok n_results=10
+assistant: Got 10 house details. What about the one located at 1018 Granville Street with rating 4.2?
+user: I want to decide it and before that please let me know whether they are having laundry service there. Get me their phone number also for my reference.
+assistant: Their phone number is +1 877-972-6378 and they do not have laundry service.
+user: This house okay for me. Now, I want to book the car that I have selected before.
+assistant: Okay, let me know whether you want to book it along with insurance.
+user: Yes, book it including insurance.
+assistant: Please confirm to book a Sedan Car available for pickup at Pacific Central Station from March 4th at 4:30 pm to March 8th include insurance.
+user: Okay. you can go ahead. Get me the cost details per day.
+tool(ReserveCar): ok n_results=1
+assistant: It costs $54.00 per day. Your booking was successfully confirmed.
+user: Thanks and that's all.
+assistant: Have a great day.

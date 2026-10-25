@@ -1,0 +1,9 @@
+user: I am trying to book a dinner reservation in San Fran for one. Can you try booking a table at Lers Ros?
+assistant: What time would you like me to make a reservation for?
+user: If you could, please make the reservation for 12:15 in the afternoon.
+assistant: Confirm the following about your reservation: I am booking a table for Lers Ros Thai in San Francisco. The reservatin is on March 1st at 12:15 pm for 1 person. Is this acceptable?
+user: That will work just fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was unable to make a reservation with these details. I can book a table at Lers Ros Thai on March 1st at 12 pm for 1 person. Is that okay?
+user: No that's all the help I needed. Thanks.
+assistant: You are welcome. Have a great rest of your day.

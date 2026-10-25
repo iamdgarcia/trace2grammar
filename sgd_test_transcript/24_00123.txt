@@ -1,0 +1,25 @@
+user: I need help making a payment.
+assistant: I can help you with that. Please say the contact's name and the amount.
+user: The name is Amelia and it'll be for one hundred and twenty six dollars.
+assistant: Should I use the credit card or debit card to effect the transfer?
+user: Please transact from my money in app.
+assistant: Sure. Let me see if I got everything correctly: You'd like to use your app balance to pay $126 to Amelia, and the transaction is not private.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment and the amount should reflect at the recipient's end shortly.
+user: Thank you very much. You've been very helpful. Now please help me find a restaurant somewhere.
+assistant: Any particular city I should search in? What type of cuisine did you have in mind?
+user: Please look for SFO restaurants that offer Southern fare.
+tool(FindRestaurants): ok n_results=10
+assistant: Your search yielded 10 suitable San Francisco restaurants. Would you like to try the great 1760 restaurant?
+user: Please find out whether they also offer vegetarian dishes. Get me their contact number too.
+assistant: Unfortunately they don't offer vegetarian dishes. You can call them on 415-359-1212.
+user: That's okay. I just got off the phone with the chef and he offered to make my date a special vegetarian dish. You can go ahead and reserve a table at the restaurant.
+assistant: What's your preferred reservation time?
+user: Please reserve it for evening 5:45.
+assistant: Okay. Please confirm that you'd like to reserve a table for 2 at 1760 in San Francisco, for 5:45 pm on March 1st.
+user: That is correct. Please find out the restaurant's user rating, and whether it's ultra high-end.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation. The restaurant's average user rating is 4.4, and it's pricey.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Thank you, and have a wonderful day!

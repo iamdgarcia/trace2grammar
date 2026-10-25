@@ -1,0 +1,32 @@
+user: I want to visit some attractions
+assistant: In which city do you prefer?
+user: I want to find some attractions in Rio
+tool(FindAttractions): ok n_results=10
+assistant: I suggest Air And Space Museum, a Museum
+user: What is the phone number? Is it free entry?
+assistant: The number is 21 2157-2895. No, isn't free entry
+user: Thanks. I need a rental car there.
+assistant: Do you need a car in Rio de Janeiro? When do you want to pick up the car? How long do you need it?
+user: I want to pick it up from 1st of this month till 8th of this month.
+assistant: What time do you prefer to pick up the car?
+user: I prefer at 11 am. Any car model is fine
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 cars available. At Galeao International Airport there's a Sedan Buick Regal Sportback
+user: Yes, this is fine!
+assistant: So do I book this car?
+user: Yes, please! Book it!
+assistant: Do you need to add insurance?
+user: No, I don't want insurance
+assistant: Please confirm: a Sedan without insurance, from Galeao International Airport, from March 1st at 11 am till March 8th.
+user: Yes, I confirm! How much does the rental cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: It costs $35.00 per day. The car has been booked!
+user: Thanks! Can you share the location of Air And Space Museum?
+assistant: Sure! Who do you want to share the address with?
+user: I want to share the location with Jacob
+assistant: Sharing with Jacob the location Air And Space Museum. Do you confirm?
+user: Yes, I confirm. Thanks!
+tool(ShareLocation): ok n_results=1
+assistant: Sharing was successful
+user: You have been of great help. That's all for today
+assistant: Have a good day

@@ -1,0 +1,30 @@
+user: I want to find a round trip flight.
+assistant: Which is the date that you want to have the trip, and also which is the day that you are going to return? Can you tell me the city from where you will be leaving?
+user: I will be having the flight on 1st of March, and I want to return on 13th of this month, my onward flight is from SFO.
+assistant: Can you tell me your destination?
+user: I want to have three tickets for a flight which arrives in Seattle.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: How would you like having a flight with Alaska Airlines, which is a direct flight that leaves at 10:30 pm, and when it returns it departs at 3:35 pm, and that has a price of $193?
+user: That seems nice, though I also need to find a house for three people so that we have a place to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses which you might consider, a nice house with a rating of 4.5 can be found at 1000 1st Avenue.
+user: Can you tell me if this house has laundry service?
+assistant: I can confirm that there is laundry service there.
+user: This house seems as a good choice.
+assistant: Do you want to book this house for you?
+user: Yes I want this house booked for me.
+assistant: Will you be going there on March 1st?
+user: I actually want to go there on Saturday this week.
+assistant: Will you be leaving the house on March 13th or some other date?
+user: In fact I want to leave the house on the 8th.
+assistant: Can you then please confirm that you want to have a house for 3 people in Seattle, and that you are going there on March 2nd, and will need the house till March 8th?
+user: Yes, that is what I want.
+tool(BookHouse): ok n_results=1
+assistant: Your requested reservation has been made.
+user: Can you tell me about some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: You might consider visiting Alki Beach Park, which is a Park.
+user: Does this attraction have a free entrance? Which is the phone number I can use to get in touch with the?
+assistant: If you want to call them you can at 206-684-4075, though the entry to this attraction is not free of charge.
+user: Alright, nice. That's all I needed for now, goodbye!
+assistant: Have a good time!

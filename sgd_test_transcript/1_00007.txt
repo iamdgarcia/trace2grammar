@@ -1,0 +1,11 @@
+user: I would like to make a reservation at a restaurant for half past 1 in the afternoon.
+assistant: In which restaurant would you like a table?
+user: I would like a table at Left Bank.
+assistant: In which location would you like?
+user: I would like a restaurant in Larkspur.
+assistant: Booking a table at Left Bank Larkspur Brasserie in Larkspur for 2 people on March 1st at 1:30 pm.
+user: Yes, that reservation is good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: Thank you for your assistance.
+assistant: Have a good day.

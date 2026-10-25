@@ -1,0 +1,30 @@
+user: I'm looking for a rental car.
+assistant: When do you need the car and for how long?
+user: I need the car from March 2nd until the 5th of March.
+assistant: What time do you want to pick it up and from where?
+user: I want to find a car in Fresno, CA for pickup in the afternoon 12:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a sedan Dodge Charger available at Fresno Yosemite International Airport.
+user: Are there any other cars? I need it until the 3rd of March.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I found 9 cars available. There is a hatchback Ford Focus at Fresno Station.
+user: How much is it per day?
+assistant: The cost is $26.00 per day.
+user: Sounds great. I'd like to find tickets to an event around London on the 10th.
+assistant: How many tickets do you need?
+user: I need 3 tickets.
+assistant: What event are you looking for?
+user: I heard Ghosts is great.
+assistant: Please confirm: booking 3 tickets for Ghosts in London on March 10th.
+user: That sounds good.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been reserved. Have a great time!
+user: Thanks so much. I want to reserve the rental car?
+assistant: Would you like to add insurance?
+user: No, thank you.
+assistant: Please confirm: picking up a hatchback car form Fresno Station on March 2nd at 12:30 pm until March 3rd. The car is not insured.
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been booked.
+user: Thanks, that's all for now.
+assistant: Have a great day!

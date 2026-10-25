@@ -1,0 +1,31 @@
+user: I need to send money that I owe. My debit card will cover the funding.
+assistant: Who would you like to send money to?
+user: I need to send Wilson a payment please.
+assistant: How much should the transaction be for?
+user: You can send 82 dollars.
+assistant: Before I go ahead with the transaction I need you to confirm the details. I need to transfer $82 from your debit card to Wilson. This transfer will not be private.
+user: The details are precisely right.
+tool(MakePayment): ok n_results=1
+assistant: Your transfer request has been completed. The payment will arrive in the account you requested in no time.
+user: I am in the mood for a good vegetarian meal. I would like you to find something cheap.
+assistant: Is there a specific dish you have in mind?
+user: I was thinking about having a Burrito.
+assistant: Is there an area you prefer to dine in?
+user: Yes. San Mateo is where I will be going.
+tool(FindRestaurants): ok n_results=1
+assistant: Rubio's is 1 establishment that fits your requested wishes. The joint is in San Mateo.
+user: I am curious about this establishment. Is there somewhere outside to dine? Do they have a rating?
+assistant: Yes. They have been given a score of 3.9 by their customers. You can only dine inside though, not outside.
+user: Thanks for the information. I would like to reserve seating.
+assistant: When should I request a table for you?
+user: I would like my table saved for me at 5:15 in the evening.
+assistant: I would like to make sure I am understanding your request. I believe you would like me to book a spot for you at Rubio's in San Mateo. You would like your table reserved for 2 people at 5:15 pm on March 1st. Do I have your request understood properly?
+user: The information you just stated is exactly right. Thanks for checking.
+tool(ReserveRestaurant): ok n_results=1
+assistant: A table has been saved in your name.
+user: Please provide the contact number and location address.
+assistant: The restaurant is located at 38 East 4th Avenue. You can reach them at 650-581-7223.
+user: I am very grateful for your assistance.
+assistant: I can assist you with other needs if you want.
+user: I don't need any other help at the moment. Thanks for asking.
+assistant: Hope you enjoy dinner. Bring me back a byte.

@@ -1,0 +1,13 @@
+user: I want to find songs from the albu King Of The Dancehall.
+tool(LookupMusic): ok n_results=1
+assistant: I have 1 song for you. How about Colouring This Life by Vybz Kartel from the King Of The Dancehall song?
+user: That sounds good. What is the weather lik ther ien Sebastopol on 12th of March?
+tool(GetWeather): ok n_results=1
+assistant: The temperature on average for the day should be 93 degrees Fahrenheit with a 7 percent chance of rain.
+user: Great. Could you play the song that you just found?
+assistant: Please confirm that you want me to play Colouring This Life in Living Room.
+user: Sounds good. Was that the one that came out in 2017?
+tool(PlayMedia): ok n_results=1
+assistant: It actually came out in 2016. It's a Reggae Song. Hope you enjoy it.
+user: Thanks so much. That's it for now.
+assistant: Have a great day.

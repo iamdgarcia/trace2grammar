@@ -1,0 +1,29 @@
+user: I'd like to initiate a payment for 29 bucks from my master card.
+assistant: Whom are you paying?
+user: Send it to Amelia.
+assistant: Please confirm that you want to pay $29 to Amelia with your credit card via a public transaction.
+user: That's correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment was processed successfully and the recepient should receive it soon.
+user: Thank you. Can you now request a payment of $50?
+assistant: From whom would you like to request the money?
+user: The request is to Rachel.
+assistant: Please confirm that you want to request for $50 from Rachel via a public transaction.
+user: Right again. Please proceed.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was sent successfully.
+user: Thanks a bunch!
+assistant: Is there anything else I can do for you?
+user: I would like to make a payment.
+assistant: How much would you like to pay and to whom?
+user: This is to pay Peter forty two bucks.
+assistant: From which account would you like to transfer the amount?
+user: Use my checking account please.
+assistant: Please confirm that you want to pay $42 to Peter with your debit card via a public transaction.
+user: That's correct. Please proceed.
+tool(MakePayment): ok n_results=1
+assistant: The transaction was completed successfully.
+user: Thank you very much.
+assistant: Is there anything else I can do for you?
+user: No, thank you.
+assistant: Have a great day! Bye!

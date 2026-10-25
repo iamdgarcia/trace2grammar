@@ -1,0 +1,29 @@
+user: Can you please find a bus for me?
+assistant: Sure, but first tell me where to and when.
+user: I'd like to go to Seattle on March 6th.
+assistant: OK! Where are you departing from?
+user: I'm travelling from Vancouver, I'm not particular about it being a direct bus and I would like four tickets.
+tool(FindBus): ok n_results=10
+assistant: There's a bus leaving at 7:40 am with tickets priced at $26.
+user: Can you please find me another one, this time a direct bus?
+tool(FindBus): ok n_results=10
+assistant: Sure, there's one departing at 9:10 am with tickets costing $28.
+user: Anything else available?
+assistant: There's also one departing at 1:10 pm with tickets priced at $28.
+user: OK, can you please tell me the departure and arrival stations for this one?
+assistant: The bus departs from Pacific Central Station and arrives at Westlake Station.
+user: Sounds perfect for me.
+assistant: Do you want me to get you tickets for this bus?
+user: No, not at the moment. Meanwhile, please find me some child-friendly attractions there, maybe a garden.
+tool(FindAttractions): ok n_results=10
+assistant: There's an awesome Park you should definitely check out, the Alki Beach Park.
+user: Perfect. Now let's go back and buy the bus tickets.
+assistant: Sure, can you please confirm that you want 4 tickets without extra luggage for the bus from Vancouver to Seattle on March 6th at 1:10 pm?
+user: Yes, that's correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Perfect! Your tickets are confirmed.
+user: Thanks a lot for everything. Could you also find me a hotel in the area?
+tool(SearchHotel): ok n_results=10
+assistant: I'd recommend a very nice 2 star hotel, the Ace Hotel Seattle.
+user: Sounds perfect for me. That will be all for now!
+assistant: OK! Have a good one!

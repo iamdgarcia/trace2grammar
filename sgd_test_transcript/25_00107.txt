@@ -1,0 +1,28 @@
+user: I want to view my listed alarms. Can you show me the same now?
+tool(GetAlarms): ok n_results=3
+assistant: Yes, you have an alarm for 11 am in the name Call.
+user: That is okay. Now I want to go to a nice restaurant for which I need your help to search for a good one in Lafayette. I can manage with any price range but it should have tasty food.
+assistant: Okay, let me know your favorite kind of food so that I can search for the suitable one to you.
+user: I like to have Punjabi food and in particular with Vegetarian meals. Search it accordingly.
+tool(FindRestaurants): ok n_results=1
+assistant: What about the 1 named Swad Indian Cuisine in Lafayette. This is nice place to eat and you can definitely enjoy here.
+user: This seems okay to me.
+assistant: Shall I book a table there?
+user: Not now and thanks.
+assistant: Do you want any more help from me?
+user: Yes, I want to go there on Thursday next week for which I need your help to find a Car. I should come with insurance and a Hatchback type is okay to me.
+assistant: Which are the convenient place and time for your to pick up the car and till what date you need the same?
+user: Search for the one from Union Station for the pick up time ten am until 13th of this month.
+assistant: Please confirm to book a Hatchback car available for pick up at Union Station on March 7th at 10 am to the date March 13th including insurance.
+user: That is great and you can proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have booked the car successfully as per your requirement.
+user: Thanks. Do one more thing. please share the location address 960 Moraga Road #1 to Keith.
+assistant: Please confirm once again to share the location address 960 Moraga Road #1 to Keith.
+user: Yes, do it now.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location as it is.
+user: Thank you so much for your help.
+assistant: Anything else you need?
+user: Nothing for now. Thanks.
+assistant: Have a good day.

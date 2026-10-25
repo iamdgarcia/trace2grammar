@@ -1,0 +1,14 @@
+user: I want to find a hotel
+assistant: On which city you want to be?
+user: In Paris I want to be.
+tool(SearchHotel): ok n_results=10
+assistant: 10 results I have according to your criteria.A 4 star hotel called Ac Hotel By Marriott Paris Porte Maillot.
+user: Sounds very good.
+assistant: You want to make a reservation?
+user: Yes make me for 1 room with check in on March 2nd.I want to stay 5 days.
+assistant: You want 1 room on Paris at hotel Ac Hotel By Marriott Paris Porte Maillot.Check in date is March 2nd and you want to stay 5 days.Is that correct?
+user: Very good.Tell me if I can smoke here and total price per night.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel was booked.Per night it cost $112 and smoking is not allowed.
+user: Thank you. You were helpful.That's all.
+assistant: Bye!Have a nice day!

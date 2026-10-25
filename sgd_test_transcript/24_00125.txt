@@ -1,0 +1,35 @@
+user: I want to make a one hundred and twenty one dollars payment from my app balance.
+assistant: What is the name of the payee?
+user: The payee's name is Mary.
+assistant: Please confirm that you'd like $121 deducted from your app balance to pay Mary, and that your transaction is not private.
+user: That's correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment and the amount should reflect at the payee's end shortly.
+user: Okay, thanks. Now find me a restaurant around that area.
+assistant: In which city should I search?
+user: Look for restaurants in Pacifica.
+assistant: What type of cuisine would you like?
+user: Look for establishments serving Burrito.
+tool(FindRestaurants): ok n_results=1
+assistant: The Surf Spot is a nice restaurant operating in Pacifica.
+user: I've tried that before. What other restaurants do you have?
+tool(FindRestaurants): ok n_results=0
+assistant: Unfortunately I was unable to find any other restaurants meeting your specifications. Would you like my help with anything else?
+user: Yes. Please do another search for restaurants in Gilroy.
+tool(FindRestaurants): ok n_results=3
+assistant: Carnitas Michoacan is a nice restaurant operating in Gilroy.
+user: Where are they located?
+assistant: They're located at 7484 Monterey Road.
+user: Sure, that works.
+assistant: Should I reserve a table here?
+user: Yes, please reserve a table.
+assistant: What's your preferred reservation time?
+user: I'd like a 17:15 reservation.
+assistant: Okay. Please confirm that you'd like to reserve a table for 2 at Carnitas Michoacan in Gilroy, on March 1st at 5:15 pm.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry. I was unable to get a reservation at your preferred time at the nice Carnitas Michoacan restaurant. There's an open table for 2 on March 1st at 5 pm. Will that work?
+user: Nope!
+assistant: Will there be anything else?
+user: No. Thank you very much.
+assistant: Goodbye, and have a wonderful day!

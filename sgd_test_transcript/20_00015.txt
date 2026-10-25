@@ -1,0 +1,40 @@
+user: I'm heading out of town for business so i need a hotel
+assistant: What city should i search in?
+user: search in Philadelphia
+tool(SearchHotel): ok n_results=10
+assistant: I have found aka rittenhouse square, a 4 star hotel
+user: is smoking okay?
+assistant: It is a non-smoking hotel
+user: any other options? i need 1 room in a three star hotel
+tool(SearchHotel): ok n_results=10
+assistant: I've got aka university city, a 3 star hotel
+user: could you look in toronto, ontario?
+tool(SearchHotel): ok n_results=10
+assistant: I hve best western plus toronto north york hotel & suites, a 3 star hotel
+user: Okay it sounds good, i'll need a rental car as well
+assistant: When do you need the car until?
+user: book it through til march 12th
+assistant: What time do you want to collect the car
+user: Can you book pick up for half past 7 in the evening
+assistant: Are you picking up on march 6th?
+user: can you book it for friday next week
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have a buick regal sportback sedan available at toronto pearson international airport
+user: what other options are there?
+assistant: I have a Dacia Duster SUV available at toronto pearson international airport
+user: another sedan options
+tool(GetCarsAvailable): ok n_results=3
+assistant: I have 3 other options including a hyundai ioniq sedan available at toronto pearson international airport
+user: whats the cost per day?
+assistant: It comes to a total of $36.00 per day
+user: okay great can you book it in for me
+assistant: Should i add insurance
+user: No thank you
+assistant: Confirming you want to book a sedan, picking up at toronto pearson international airport on March 8th at 7:30 pm and drop off march 12th. Insurance is not included
+user: Yes thats all correct
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed
+user: Thanks so much for that
+assistant: Do you need help with anything else?
+user: No that's all for now
+assistant: Happy to help

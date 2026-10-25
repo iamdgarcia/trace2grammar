@@ -1,0 +1,36 @@
+user: I need to purchase bus tickets please.
+assistant: What time are you planning to depart?
+user: I need to take off at quarter to 3 in the afternoon.
+assistant: Where are you departing from please?
+user: Yes, I'll be going from Fresno.
+assistant: What number of tickets will you need?
+user: I'll need 2 tickets and I'd like to go on March 9th.
+assistant: What is your destination?
+user: That is going to be Anaheim, CA.
+assistant: Confirming 2 tickets on the March 9th bus from Fresno to Anaheim departing at 2:45 PM. You will not have additional luggage.
+user: No, sorry, I do have extra baggage. And I need it to be for 4 people.
+assistant: Confirming tickets for 4 and extra baggage.
+user: Correct, thank you.
+tool(BuyBusTicket): ok n_results=1
+assistant: I apologize, I was unable to purchase the tickets due to unknown errors. Would you like to try for the 3:10 PM bus, which has a ticket price of $48?
+user: yes, please do.
+tool(BuyBusTicket): ok n_results=1
+assistant: The reservation is complete.
+user: I'd also like to find a hotel there please.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 star hotel, the Alamo Inn & Suites.
+user: May I have the telephone number and address please?
+assistant: Of course, the hotel is located at 1140 West Katella Avenue and the phone number is +1 714-635-8070.
+user: That sounds fine, thank you.
+assistant: How else can I help you today?
+user: I'd like to get 2 hotel rooms.
+assistant: When would you like to check in and how long do you plan to stay?
+user: It will be a 4 day stay and I'd like to check in this Sunday.
+assistant: Confirming a reservation for 4 days at the Alamo Inn & Suites in Anaheim for a March 3rd check in. It will be for 2 rooms.
+user: Great, thanks. How much will that be?
+tool(ReserveHotel): ok n_results=1
+assistant: The room is $140 nightly. The reservation is complete.
+user: I appreciate your help.
+assistant: Is there anything else you need?
+user: No, I'm good.
+assistant: Thank you very much.

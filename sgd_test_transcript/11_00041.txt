@@ -1,0 +1,20 @@
+user: Find me a place to stay that will accommodate 3 people.
+assistant: Okay. In which city would you like me to find this place?
+user: We will be traveling to Anaheim, CA.
+tool(SearchHouse): ok n_results=10
+assistant: Okay. There is a nice house located at 1050 West Ball Road in Anaheim. It has a rating of 4.2.
+user: That sounds good to me.
+assistant: Would you like to make a reservation for the home?
+user: Yes, I would like to lock it down and make sure we will have the place when we get there.
+assistant: On which day do you plan on checking out?
+user: I want to check out on March 10th. No earlier.
+assistant: And on which day would you like to check in?
+user: On the 7th.
+assistant: Please confirm the following: Make a reservation for 3 at home in Anaheim from March 7th until March 10th.
+user: Yes, I confirm that. Can you tell me what the total price will be, and if the place has laundry services?
+tool(BookHouse): ok n_results=1
+assistant: The reservation has successfully been made. The total price was $783. The home has laundry service.
+user: Great. Thank you for making that so easy.
+assistant: I'm glad to have been able to be of assistance.
+user: Okay. Goodbye.
+assistant: Have a nice day.

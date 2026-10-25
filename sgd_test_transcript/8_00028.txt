@@ -1,0 +1,15 @@
+user: Hi, could you schedule a visit to a property for me please?
+assistant: Sure, which specific property are you looking at and when?
+user: Could you schedule a visit to Hastings East Apartments on the March 10th?
+assistant: Sure, please confirm your to Hastings East Apartments on the March 10th.
+user: Sorry, could you make the appointment on Saturday this week instead?
+assistant: No worries, please confirm your to Hastings East Apartments on the March 2nd.
+user: Could I visit the Capri Creek Apartments instead?
+assistant: Of course, please confirm your to Capri Creek Apartments on the March 2nd.
+user: Yes, that sounds good!
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit to the property has been scheduled!
+user: Thank you so much!
+assistant: No worries, how could I further assist you?
+user: No, that is all I need. Thank you.
+assistant: Have a pleasant day ahead!

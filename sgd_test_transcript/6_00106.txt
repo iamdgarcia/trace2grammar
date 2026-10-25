@@ -1,0 +1,16 @@
+user: I have to go out later and I need to find a unisex salon.
+assistant: In which city?
+user: preferable one in Windsor.
+tool(FindProvider): ok n_results=3
+assistant: There are 3 salons available in Windsor. Would you like to try the Great Clips?
+user: That would be great. I want to schedule an appointment for the 1st of this month.
+assistant: For what time?
+user: For half past 12 in the afternoon.
+assistant: You would like to schedule an appointment at Great Clips for March 1st at 12:30 pm
+user: I want the appointment for morning 10 on the 10th of this month.
+assistant: You would like the appointment for March 10th at 10 am?
+user: Yes, that would be fine. Where is it located?
+tool(BookAppointment): ok n_results=1
+assistant: I have scheduled your visit. The salon is located at 4055 Evergreen Village Square Ste 110.
+user: Thank you. That would be all.
+assistant: Enjoy the rest of your day.

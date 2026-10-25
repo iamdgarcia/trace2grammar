@@ -1,0 +1,46 @@
+user: Search for me a place to live in.
+assistant: What city do you wish to live?
+user: I wish to live in San Mateo.
+assistant: What number of bed rooms do you want?
+user: I want a place with 2 bed rooms.
+assistant: Do you wish to rent or buy?
+user: I want to buy a place.
+assistant: What number of bath rooms do you want?
+user: I only need 1 bath room.
+tool(FindHomeByArea): ok n_results=5
+assistant: Chesapeake Point Apartments is located at 1633 Marina Court and costs $2,400,000.
+user: That is perfect.
+assistant: Shall I book an appointment for you to visit the place?
+user: Yes, book an appointment.
+assistant: When do you wish to go?
+user: I wish to see the place on March 2nd.
+assistant: You wish to go see Chesapeake Point Apartments on March 2nd, correct?
+user: No, change the date to the 8th of this month.
+assistant: You wish to go see Chesapeake Point Apartments on March 8th, correct?
+user: That is right. How can I contact them and do they have a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your booking is confirmed and they do have a garage. You can get in touch with them at 866-571-7179.
+user: Thanks a bunch. Now I need you to share the location with Andrea.
+assistant: You wish to share 1633 Marina Court with Andrea, correct?
+user: No, change the name to Joseph.
+assistant: You wish to share 1633 Marina Court with Joseph, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared with him.
+user: I need a ride to get there too.
+assistant: Do you prefer a Regular, a Luxury, or some other type of ride?
+user: Get me a Luxury ride.
+assistant: How many people are going?
+user: There is only 1 person going.
+assistant: You want 1 Luxury seat to 1633 Marina Court, correct?
+user: No, change it to Economic.
+assistant: You want a Pool ride to 1633 Marina Court, correct?
+user: Change the number of people to 3.
+assistant: You need a ride for 3 people to 1633 Marina Court, correct?
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab has been confirmed.
+user: Thanks a bunch.
+assistant: Do you need more help?
+user: No, not right now. Thanks.
+assistant: Have a pleasant day.

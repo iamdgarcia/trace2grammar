@@ -1,0 +1,25 @@
+user: I need to find a rental sedan nice car in Washington.
+assistant: When and what time do you want to pick up the car and until when do you want it?
+user: I would need it until March 6th picking it up in the evening 5 later today.
+tool(GetCarsAvailable): ok n_results=4
+assistant: 4 cars are available including a nice Sedan Buick Regal Sportback car from Union Station.
+user: That sounds great. I'd like to reserve tickets to an event there.
+assistant: What particular city should I search?
+user: I would like something around London.
+assistant: What number of tickets do you want?
+user: I would like 3 tickets.
+assistant: What event are you interested in and what is the preferred date?
+user: I heard that Good People is good. I'd like something tomorrow.
+assistant: Please confirm details to book 3 tickets for Good People on March 2nd in London.
+user: Yes, that will work for me. Where will it take place and how much does one ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time at The Blues Kitchen Brixton. The ticket is $60.
+user: Would you be able to reserve the rental car you just found me?
+assistant: Would you like to add insurance?
+user: I won't need insurance.
+assistant: Please confirm details that you are picking up the car from Union Station on March 1st at 5 pm and dropping off March 6th a sedan car that doesn't come with insurance.
+user: Yes, that is sounding good. How much does it cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved and costs $35.00 per day.
+user: Thanks for the help and that is all I need.
+assistant: Have a nice day.

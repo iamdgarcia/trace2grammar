@@ -1,0 +1,25 @@
+user: Can you provide the weather forecast in Chicago for me please?
+tool(GetWeather): ok n_results=1
+assistant: Yes. The forecast predicts a 29 percent possibility of showers. The temperature throughout the day is predicted to average 73 degrees Fahrenheit.
+user: How muggy is it predicted to be? Also check how breezy it is expected to be please.
+assistant: The atmospheric moisture is expected to be 29 percent. The breezes are expected to average 15 miles an hour.
+user: I see. Please help me get a plane ride there. I prefer flying with Alaska Airlines. Economy seating will be just fine. I need to leave March 1st.
+assistant: Where would you like the trip to start?
+user: The airport should be somewhere in SF.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Alaska Airlines has a flight with no stops. The departure time is 6:10 am. The current price for the flight is $188.
+user: I see. I also need help renting a vehicle there please.
+assistant: Would March 1st be the day you prefer to pick up the rental?
+user: Next Tuesday would be best for me.
+assistant: Please provide a time of day that is best for you to pick up the car and the best date to return the car.
+user: The rental should start at 3:45 in the afternoon. I would like to have it until the 9th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I would suggest a SUV Dacia Duster. This vehicle can be picked up at Chicago Union Station.
+user: What are my other choices if any?
+assistant: O'Hare International Airport has a Sedan Dodge Charger available.
+user: Hmmm, what other cars are available?
+assistant: O'Hare International Airport also has a Hatchback Fiat Panda as a choice.
+user: I like that.
+assistant: I can assist you with other needs if you like/
+user: Thanks but I am all set for now.
+assistant: Stay well!

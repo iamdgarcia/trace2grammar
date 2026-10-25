@@ -1,0 +1,21 @@
+user: I need help locating a good Psychologist in the Santa Rosa area.
+tool(FindProvider): ok n_results=10
+assistant: Sure, Bert Epstein is a good Psychologist in Santa Rosa.
+user: Where is he located?
+assistant: The address is 2455 Bennett Valley Road.
+user: Can you give me their number?
+assistant: The contact number is 707-242-1989
+user: Great, thanks!
+assistant: Would you lik eme to make an appointment with the therapist for you?
+user: Yes, please do. Next Tuesday at 3 pm would work the best for me.
+assistant: Please verify you woud like to make an appointment to see Bert Epstein on March 5th at 3 pm.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you will receive a confirmation via email shortly.
+user: Thanks! Can you help me find a kids movie starring Lil Rel Howery. I think it is directed by Thurop Van Orman.
+tool(FindMovies): ok n_results=1
+assistant: Yes, I found 1 movie that matches that criteria. It is The Angry Birds Movie 2 and is has a rating of 72 out of 100.
+user: That's the one.
+assistant: Can I do anything else for you right now?
+user: Nothing further, thanks!
+assistant: You're very welcome. Have a great day.

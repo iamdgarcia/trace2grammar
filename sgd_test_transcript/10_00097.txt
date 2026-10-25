@@ -1,0 +1,14 @@
+user: I need to find a house to stay.
+assistant: In which city are you looking?
+user: Looking for something in Sacramento, CA
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available, of which there is a 4.4 rated house at 100 Capitol mall
+user: Does it have laundry service, and can i have the contact number of it?
+assistant: yes, they do have laundry service, and the contact number is +1 916-326-5000
+user: Anything else, i need a rating of 4.3 or above and for one person
+tool(SearchHouse): ok n_results=6
+assistant: There is a 4.3 rated house at 1121 15th Street
+user: thats is great
+assistant: should i make a reservation for it?
+user: no, not now. Thats all
+assistant: Have a good day, bye!

@@ -1,0 +1,23 @@
+user: Find me a place to live.
+assistant: You want to rent or to buy?
+user: I would like to buy.
+assistant: In which area you want to be and how many bed rooms you need?Tell me the number of baths.
+user: I need to have 3 bed rooms and 3 baths in Novato.
+tool(FindHomeByArea): ok n_results=2
+assistant: A very good property is Bay Vista located at 5 Hutchins Way and is cost $3,550,000.
+user: They also have a garage?Tell me the phone number for contact.
+assistant: No,the property doesn't have a garage.415-382-0801 is the contact number.
+user: Sounds very good.
+assistant: You want to schedule a visit?
+user: I would like that to be on 3rd of this month.
+assistant: You want to schedule a visit to Bay Vista on March 3rd.I'm right?
+user: Yes it's okay.Laundry machines inside the house they have?
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit to the property is scheduled.In-unit laundry is available.
+user: Thank you.Show me my alarms please.
+tool(GetAlarms): ok n_results=1
+assistant: You wave 1 alarm set for 8 am named Get up.
+user: Okay.I understand.
+assistant: You want to add an alarm now?
+user: No.Not now.That's all.
+assistant: Thank yu for all.

@@ -1,0 +1,21 @@
+user: Can you assist me in finding a home?
+assistant: How many bedrooms and are you wanting to buy or rent the property?
+user: For rent please with two bedrooms.
+assistant: How many baths and where should I search?
+user: One bath is fine and somewhere in Oakland.
+tool(FindHomeByArea): ok n_results=3
+assistant: There are 3 possibilities, one is Beth Eden Apartments costing $2,550 and the address is 1100 Market Street.
+user: That sounds fine.
+assistant: Would you like to visit the apartment?
+user: Yes please for the 9th of this month.
+assistant: To confirm then you want to visit Beth Eden Apartments on March 9th.
+user: Yes that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: You appointment is booked.
+user: Now can you show me any alarms I have set?
+tool(GetAlarms): ok n_results=4
+assistant: There is one called Meeting at 4:30 pm.
+user: great thank you.
+assistant: Would you like to add another alarm?
+user: No thanks, that is all I need for now.
+assistant: Thank you.

@@ -1,0 +1,25 @@
+user: Find a hotel
+assistant: Which city to look in?
+user: 2 rooms in New York city
+tool(SearchHotel): ok n_results=10
+assistant: I got 10 hotels of which there is a 5 star hotel, the 1 Hotel Brooklyn Bridge.
+user: Whats the tariff and is smoking allowed there?
+assistant: its $465 a night and smoking is allowwed
+user: any thing else, look for a 4 star hotel
+tool(SearchHotel): ok n_results=10
+assistant: There is a 4 star hotel, 6 columbus - central park hotel
+user: Thats great, now get me 4 flight tickets from Seattle
+assistant: whats the return date and are you leaving on March 7th?
+user: I will start tomorrow and return on 13th of march and i want to fly with American Airlines
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I got 1 flight of American Airlines. The 4:15 pm departure flight has a layover and the return flight leaves at 1:40 pm and costs $462
+user: Great, book me that hotel from 6th of this month for three days
+assistant: Please confirm: Booking 2 rooms at 6 columbus - central park hotel, in new york, with check in on March 6th and check out after 3 days
+user: right, thats correct
+tool(ReserveHotel): ok n_results=1
+assistant: it is booked
+user: Thanks a lot, ow find me some attraction nearby there
+tool(FindAttractions): ok n_results=10
+assistant: there are 10 attractions of which the 9/11 Tribute Museum is a popular museum
+user: thats good, thats all
+assistant: enjoy your day!

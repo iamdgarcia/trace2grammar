@@ -1,0 +1,14 @@
+user: Can you help me find a salon please
+assistant: Where are we looking for a salon?
+user: Let's find a unisex salon in San Francisco
+tool(FindProvider): ok n_results=10
+assistant: How about 1512 Barber Shop in San Francisco, I hear it's nice
+user: Yes that sounds great
+assistant: Should I book you an appointment?
+user: Yes please do, for the 9th of March at 18:00 if possible
+assistant: Sure, just to make sure I have it right, you want a appointment at 6 pm on March 9th at 1512 Barber Shop yes?
+user: Yes that's correct, what's their rating and address by the way?
+tool(BookAppointment): ok n_results=1
+assistant: They are rated 4.8 and are at 1532 20th Street, your appointment has been confirmed too by the way
+user: Thanks so much, take care that's all for now
+assistant: OK, I will, you take care too!

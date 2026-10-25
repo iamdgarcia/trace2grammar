@@ -1,0 +1,16 @@
+user: Are there any Cartoon movies showing at imax in Union City?
+tool(FindMovies): ok n_results=1
+assistant: At least 1, Toy Story 4.
+user: Hey Toy Story 4, that is the one I've been wanting to see, get me tickets for it please.
+assistant: How many seats do you need?
+user: There will be two of us.
+assistant: Do you have a certain time and/or date in mind?
+user: If I had my rathers I'd like the tickets for Wednesday next week for a 10:15 in the night showing.
+assistant: Your request is for the imax movie in Union City on March 6th at 10:15 pm, Toy Story 4 and you want 2 tickets is that correct?
+user: You got it.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your seats are reserved for that show.
+user: I really do thank you for your help.
+assistant: Do you have another task for me?
+user: No not at the moment thank you though.
+assistant: Have a really find day.

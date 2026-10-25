@@ -1,0 +1,21 @@
+user: I want to listen to music. Rumor has it Narrated For You by Alec Benjamin is awesome. I really like to listen to POP songs.
+tool(LookupMusic): ok n_results=6
+assistant: The album Narrated For You by Alec Benjamin has a song called Boy In The Bubble. Is that song a good choice?
+user: That choice is fantastic. What is the forecast there?
+assistant: What is the forcast where?
+user: I am looking for the forecast in Lagunitas.
+tool(GetWeather): ok n_results=1
+assistant: An 18 percent chance of showers is predicted. The daily temperature is predicted at 92 Fahrenheit.
+user: Thanks. Are you able to start that music we just discussed.
+assistant: I will play Boy In The Bubble on the Living room speaker for you if you like.
+user: The song is right but I would like to listen to it on the speaker in kitchen.
+assistant: I will play Boy In The Bubble in the Kitchen for you if that is right.
+user: No that is not right. Play in on the Patio please.
+assistant: The Patio speaker will be set to play Boy In The Bubble if my understanding is right.
+user: That is exactly what I would like.
+tool(PlayMedia): ok n_results=1
+assistant: Hope you like the song.
+user: What year was this song released?
+assistant: The song came out in 2018.
+user: You are so smart. I am finished needing your assistance now, thanks.
+assistant: Enjoy the rest of your day.

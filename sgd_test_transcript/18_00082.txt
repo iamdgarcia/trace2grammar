@@ -1,0 +1,17 @@
+user: Find me a hotel in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: 45 Park Lane is a nice 5 star hotel.
+user: That works for me. What will the weather be there on the 9th of March?
+tool(GetWeather): ok n_results=1
+assistant: The weather is predicting that it will be 90 degrees with a 5 percent chance of rain.
+user: I see. Book me the hotel from earlier. I want 1 room and want to arrive on the 5th.
+assistant: How long should I book the room for?
+user: Book the room for seven days.
+assistant: You want to stay in 1 room at 45 Park Lane in London for 7 days on March 5th. Is that correct?
+user: That is correct. How much does the place cost per night and do they allow smoking?
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel room is booked. The cost per night is $345 and smoking is not allowed on the premises.
+user: Thanks a lot for your help.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: Have a great day.

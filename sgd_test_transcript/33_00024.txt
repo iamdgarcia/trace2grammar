@@ -1,0 +1,17 @@
+user: Please find me a salon in Lafayette.
+tool(FindProvider): ok n_results=6
+assistant: 18|8 Fine Men'S Salons - Lafayette is among the 6 nice salons I found in Lafayette. Would that work for you?
+user: Yes, that works for me.
+assistant: Should I go ahead and make an appointment here?
+user: Not right away.
+assistant: Would you like my help with anything else?
+user: Yes. Please check the weather forecast there, for next Thursday.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature for the day is 89 degrees Fahrenheit, with a 26 percent chance of rain.
+user: All right. Cool. Now please go ahead and schedule an afternoon 2 appointment on that day, at the salon you just found.
+assistant: Sure. Please confirm that you'd like to schedule a 2 pm, March 7th appointment at 18|8 Fine Men'S Salons - Lafayette,
+user: That works for me. Please find out its average rating, and whether it's unisex.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully made your appointment. It's a unisex salon with an average rating of 4.3 stars.
+user: Thanks a lot. That will be all.
+assistant: Have a wonderful day.

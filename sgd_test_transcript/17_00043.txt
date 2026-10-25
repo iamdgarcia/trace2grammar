@@ -1,0 +1,10 @@
+user: I need to travel on a train.
+assistant: What city are you departing, and arriving and on what date are you travelling?
+user: Get me some tickets for next Wednesday from Sacramento to San Francisco.
+tool(FindTrains): ok n_results=10
+assistant: Search revealed 10 results. There is a train leaving at 7:30 am and costs $53.
+user: That works for me. Find me a house to stay in for 1 person that has a 4.3 rating or higher.
+tool(SearchHouse): ok n_results=10
+assistant: Search revealed a house at 1100 Market Street Hotel entrance is at, 45 McAllister Street that has a 4.3 rating.
+user: That works. That is all for now.
+assistant: Have a great day.

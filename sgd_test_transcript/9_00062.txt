@@ -1,0 +1,18 @@
+user: My cable is messing up so can you help me find a movie to watch?
+assistant: Sure, what area would you like me to search for movies in?
+user: Somewhere close to home so I don't have to drive far would be great, start with Brentwood.
+tool(FindMovies): ok n_results=8
+assistant: I see here that Ad Astra, Good Boys, and Hobbs and Shaw are playing. Do any of those interest you?
+user: Yes, I've heard great things about Ad Astra, let's purchase those tickets.
+assistant: Okay, I just need a few more details before I can purchase them for you. Tell me the type of show you're interested in, as well as the date and time you would like to watch it.
+user: I prefer a regular show, playing at 7:45 pm, on the 16th.
+assistant: And how many tickets in total will you need?
+user: It will only be me, so 1 is fine.
+assistant: So you would like me to purchase 1 ticket, to see Ad Astra, playing as a regular movie, in Brentwood, on March 16th, at 7:45 pm. Does that all sound right?
+user: Yes, everything you have have is correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: I was able to confirm that purchase for you.
+user: Thanks for helping, I appreciate it.
+assistant: Is there something else you need my assistance with?
+user: Nope, that will be all for now but thanks for asking.
+assistant: No problem, enjoy your movie and the rest of your day.

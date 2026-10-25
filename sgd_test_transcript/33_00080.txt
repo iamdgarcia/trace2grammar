@@ -1,0 +1,19 @@
+user: I need help finding something interesting to do in Toronto.
+assistant: What kind of things do you enjoy to do?
+user: Musical shows always seem to entertain me.
+tool(FindEvents): ok n_results=8
+assistant: I see there are 8 events going on. How about Funtcase at NEST on March 1st at 7 pm?
+user: That would be great, can you book my tickets?
+assistant: Yes, how many tickets do I need to reserve?
+user: I would need two tickets.
+assistant: Okay, so that would be 2 tickets for Funtcase on March 1st in Toronto?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully reserved your tickets.
+user: Can you also help me find a luxury cab ride for three?
+assistant: That would be a luxury cab ride for 3 to NEST?
+user: Yes, what is the total?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been reserved and the total is $45.38.
+user: Great, thank you, that will be all.
+assistant: You are welcome, have a great day.

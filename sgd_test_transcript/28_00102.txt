@@ -1,0 +1,26 @@
+user: Can you tell me about some attractions which I can visit?
+assistant: Could you please let me now where I should look for the attractions?
+user: I am interested in attractions in London, UK.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions which you might like. One of the attractions is 30 St Mary Axe (The Gherkin), which is a Historical Landmark.
+user: Alright, though is there some other attraction that you can suggest?
+assistant: You also can consider visiting Admiralty Arch, which is categorized as a Historical Landmark.
+user: Fine, good. Now I would like you to help me find a rental car there, and more specifically I am interested in a Hatchback which is in London, UK.
+assistant: Can you tell me from when you want to start renting the car, and till when are you going to need it? What time suits you better to pick up the car?
+user: I want to have the car from next Friday till March 10th, and I will be able to pick it up at 13:30.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is a nice car which is a Hatchback Fiat Panda, which you can pick up at Heathrow International Airport.
+user: That seems nice. I want to have this rental car booked for me.
+assistant: Would you like having insurance with the car?
+user: I am not interested to have insurance on the car.
+assistant: Can you please confirm that you want to rent a Hatchback car without insurance which you will be renting from March 8th to March 10th, and that you will be picking it up at Heathrow International Airport at 1:30 pm?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked for you.
+user: I appreciate your help. I am in need of sharing a location with Amber, and the location to be shared is Admiralty Arch.
+assistant: Can you please confirm that you want to share the Admiralty Arch address with Amber?
+user: Yes, that is what I want to do.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: Thank you, you have been very helpful. That's all I need at the moment.
+assistant: Have a good time!

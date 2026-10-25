@@ -1,0 +1,9 @@
+user: I'm hoping to motivate myself to do some chores around the house. I want to add an alarm called Cleaning.
+assistant: Sure, what time would you like to set the alarm for?
+user: I'd like to make it for five in the evening.
+assistant: Ok, the alarm will be created with the name Cleaning and is set to go off at 5 pm. Is that correct?
+user: Yes, that is correct.
+tool(AddAlarm): ok n_results=0
+assistant: Sorry, the alarm was not able to be created. Is there anything else that I can help you with?
+user: No, that's all I needed. Thanks.
+assistant: No problem. Sorry I wasn't able to help.

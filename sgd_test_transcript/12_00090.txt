@@ -1,0 +1,17 @@
+user: I need help searching for buses leaving the day after tomorrow.
+assistant: Sure, no problems. May I have your origin and destination cities?
+user: I'd like to leave Los Angeles for SD.
+tool(FindBus): ok n_results=10
+assistant: Would the $22 bus leaving at 6:50 am work for you?
+user: Yes, that works for me. Please go ahead and purchase the bus tickets.
+assistant: Please tell me the number of tickets you require.
+user: Get tickets for 2, please.
+assistant: Sure. Please confirm that you'd like to purchase 2 tickets on the Los Angeles to San Diego bus leaving on March 3rd at 6:50 am, and that you have no extra luggage.
+user: That is correct. Could you please tell me the origin and destination stations?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your ticket. it leaves from North Hollywood Station and arrives at El Cajon Bus Stop.
+user: Thank you very much. You've been very helpful. I also need help searching for hotels there. Anything rated 3.0 upwards works for me.
+tool(SearchHotel): ok n_results=10
+assistant: All right. I found 10 suitable hotels. There's a 3 star one called Bahia Resort Hotel.
+user: I like the sound of that. At the moment, that's all I need. Thanks.
+assistant: Goodbye, and have a wonderful day!

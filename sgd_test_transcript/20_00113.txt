@@ -1,0 +1,23 @@
+user: Find me a house for four people with minimum rating of 4.1 because I am travelling to LAX.
+tool(SearchHouse): ok n_results=10
+assistant: 10 houses fit your requirements.A nice house with rating 4.1 located at 1020 South Figueroa Street.
+user: Something else you can find me with rating 3.6 or higher?
+tool(SearchHouse): ok n_results=9
+assistant: I found 9 houses that are available.A nice house located at 10320 West Olympic Boulevard with rating 3.6.
+user: Can you find other houses with laundry service available for 1 people?
+tool(SearchHouse): ok n_results=8
+assistant: I have for your search 8 houses.With rating 3.6 is a nice house located at 10740 Wilshire Boulevard .
+user: A contact number for this house you have?
+assistant: +1 310-475-8711 is their phone number.
+user: I like this house.Buy it for me please.Check in date will be on Thursday next week and check out on March 14th.
+assistant: In Los Angeles you need for 1 people with check in date March 7th and check out date March 14th.
+user: Sounds very good.Tell me the total price.
+tool(BookHouse): ok n_results=1
+assistant: Reservation was made.$2,625 is the total price.
+user: Thank you for all.
+assistant: Something else I can do for you?
+user: Some attractions you can find me there?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, I found 10 results that you might like.You should check out a Historical Landmark called Angels Flight Railway.
+user: Great.Thanks that's all for now.
+assistant: Have fun!

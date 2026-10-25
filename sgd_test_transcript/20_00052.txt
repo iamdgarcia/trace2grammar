@@ -1,0 +1,33 @@
+user: Find me a SUV rental car and the pick up time at ten am.
+assistant: What should be the location and start time of pick up?
+user: I want it from 7th of March in Seattle.
+assistant: For how many days do you want the car?
+user: I want it till the 12th.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a SUV Citroen C5 available at Seattle-Tacoma International Airport.
+user: Anything else?
+assistant: There is a SUV GMC Terrain available at Seattle-Tacoma International Airport.
+user: Anything else?
+assistant: There is a SUV Suzuki Grand Vitara available at Seattle-Tacoma International Airport.
+user: That's great. Find me a house to stay there with rating 4.5 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 houses for you. The house located at 1000 1st Avenue with rating 4.5.
+user: Give me the contact number for this place?
+assistant: The contact number is +1 206-957-1000
+user: This house is very nice.
+assistant: Do you want me to make a reservation for this house?
+user: No, I want you to do it later.
+assistant: DO you want me to help you with anything more?
+user: Will you please reserve the rental car you just found for me?
+assistant: Would you like to include insurance?
+user: Not required.
+assistant: Please confirm, You are picking up the SUV car from Seattle-Tacoma International Airport on March 7th at 10 am. The drop-off is on March 12th. There is no insurance for this car.
+user: Please buy me the insurance for this car.
+assistant: Please confirm, The drop-off is on March 12th. There is insurance included for this car.
+user: Yes, that's great.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thank you very much
+assistant: Do you want me to help you with anything else?
+user: No, thanks a ton
+assistant: Have a great day.

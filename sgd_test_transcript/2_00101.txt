@@ -1,0 +1,11 @@
+user: I want you to find me a one way flight with Southwest Airlines, and I am in need of having 3 tickets.
+assistant: Can you tell me the date when you will take the trip?
+user: I will be starting my trip on 5th of March.
+assistant: From which city will you start your journey?
+user: I will be departing from Las Vegas.
+assistant: Can you please tell me the destination you want to arrive at?
+user: I want to go to Portland.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: How would you like flying with a connecting flight of Southwest Airlines, which takes off at 12:35 pm, and with a price of $195?
+user: That seems good. I appreciate it, that would be all.
+assistant: Have a nice day!

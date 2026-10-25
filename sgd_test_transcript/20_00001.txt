@@ -1,0 +1,28 @@
+user: I'm looking for a four star hotel.
+assistant: What city do you want to search in?
+user: I want a hotel in Long Beach.
+tool(SearchHotel): ok n_results=3
+assistant: I found 3 hotels for you. What about the 4 star Hyatt Centric The Pike Long Beach?
+user: Yes, that sounds good. I'd like to find a rental car there.
+assistant: What dates will you need the car from? Do you want to pick it up on March 9th? What time do you want to pick up the car.
+user: Yes, I'd like to pick it up on March 9th at 10:30 in the morning and drop it off on the 10th of this month.
+tool(GetCarsAvailable): ok n_results=7
+assistant: Okay, there is a Alfa Romeo Stelvio SUV available at LGB Airport.
+user: What else is there? I need it until March 11th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There are 6 cars available. How about an Audi A8 sedan at LGB Airport?
+user: What else is there?
+assistant: There is a Citroen C5 SUV at LGB Airport.
+user: Yes, that sounds good. I'd like to reserve it.
+assistant: Do you want to include insurance?
+user: No, I don't.
+assistant: Okay, you'd like an SUV from LGB Airport on March 9th at 10:30 am until March 11th without insurance, correct?
+user: No, I'd like to buy insurance.
+assistant: Okay, you want to pickup the rental car on March 9th with insurance, right?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation.
+user: Thank you!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

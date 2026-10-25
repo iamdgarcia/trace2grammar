@@ -1,0 +1,29 @@
+user: Can you find a one way flight for me?
+assistant: where are you going and what day works best?
+user: i'm going to philadelphia on the 7th of this month and i prefer united airlines.
+assistant: where are you leaving from?
+user: i'm leaving from chicago.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: there's 1 flight from united airlines that leaves at 4:25 pm that costs $126.
+user: is it just one ticket?
+assistant: yes it's for 1 traveller.
+user: when does it land?
+assistant: the flight lands at 7:36 pm.
+user: okay that works. can you find trains that go there?
+assistant: do you want it to leave on march 7th?
+user: no, look for the 12th of march.
+tool(FindTrains): ok n_results=3
+assistant: there are 3 trains for you. there's one that leaves at 8:30 am and costs $108.
+user: where does it leave from and where does it arrive?
+assistant: it leaves from 30th street station and arrives at chicago union station.
+user: are there no other trains?
+assistant: there's a train that leaves at 2:40 pm for $97.
+user: that works for me. can you book the train tickets?
+assistant: do you want travel insurance on the tickets? how many tickets do you want?
+user: yes i want insurance. i just need one seat.
+assistant: so you want 1 value ticket from chicago to philadelphia on march 12th at 2:40 pm?
+user: yes that's all correct. where does it leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: it's been booked. it leaves from Chicago union station.
+user: thanks, that's everything.
+assistant: see you soon.

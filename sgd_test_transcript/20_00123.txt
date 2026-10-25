@@ -1,0 +1,19 @@
+user: can you find me a place to stay?
+assistant: where do you want to stay?
+user: i'll be going to New York.
+tool(SearchHouse): ok n_results=10
+assistant: there's 10 places i found for you. how about a house with a 4.4 rating over on 100 Greenwich Street?
+user: that sounds good, can you book the house.
+assistant: for how many?
+user: there's gonna be two of us.
+assistant: what day will you be checking out?
+user: i want to go in next friday, and check out on the 14th of this month.
+assistant: so you want a house in new york for 2 people from march 8th until march 14th?
+user: yes. do they have laundry services? what's the total cost going to be?
+tool(BookHouse): ok n_results=1
+assistant: it's been booked. the price is $684. they do offer laundry service.
+user: can you show me cool things around there?
+tool(FindAttractions): ok n_results=10
+assistant: there's a museum called the 9/11 tribute museum.
+user: okay, cool. thanks for that, bye.
+assistant: have a good day!

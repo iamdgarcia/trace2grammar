@@ -1,0 +1,20 @@
+user: Fine me songs please.I have heard that album Everyday Is Christmas is really good.I enjoy Holiday songs and songs by Sia.
+tool(LookupMusic): ok n_results=1
+assistant: I have 1 song for you.How about Snowman by Sia from album Everyday Is Christmas?
+user: The song did come out six years back?
+assistant: The song it is from the year 2017.
+user: Sounds great.You can find some good movies online?
+assistant: Tell me what type of movies you like?
+user: Will be great some Dramatic story.
+tool(FindMovies): ok n_results=10
+assistant: What do you think about A Faithful Man, After The Wedding or Blinded by the Light.
+user: After The Wedding sounds really good.Play for me please the song that you just found.
+assistant: Play the song Snowman in Living room.I'm right?
+user: Yes that's correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks.Show me my alarms.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm currently set for 10 am called Badminton.
+user: Okay.That's all for now.
+assistant: Thank you very much!

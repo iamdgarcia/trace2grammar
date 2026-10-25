@@ -1,0 +1,9 @@
+user: Can you get me one ticket to the movie Hobbs and Shaw in San Leandro?
+assistant: What type of show are you interested in, on what date and at what time?
+user: Can you find me an imax show on the 6th of this month at night 10:30?
+assistant: Please confirm that you want 1 ticket to an imax show of Hobbs and Shaw at 10:30 pm, on March 6th, in San Leandro.
+user: That sounds perfect!
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, the reservation was not successful. Is there anything else I can do for you?
+user: No. That'll be all.
+assistant: Have a great day!

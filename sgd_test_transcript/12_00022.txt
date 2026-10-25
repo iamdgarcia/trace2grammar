@@ -1,0 +1,29 @@
+user: I need to get bus tickets for the family trip coming up. Would you help me arrange that, please?
+assistant: I'll be happy to assist you. Please tell me the number of tickets and the destination for your trip.
+user: I'm looking at a trip for four people going to LAX, please.
+assistant: What departure station do you want?
+user: We'll be heading out of Long Beach, CA.
+assistant: What departure time do you want?
+user: I would like us to catch the bus on March 1st at 7:30 in the evening.
+assistant: Okay. Are you ready to confirm a reservation for 4 seats on a bus departing from Long Beach on March 1st at 7:30 pm, going to Los Angeles?
+user: I'm ready. Confirm it.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your bus tickets are now confirmed.
+user: Great work, my friend. Now, would you set up a car rental reservation for when I get there?
+assistant: Is March 1st the date you want to pick up the rental car in Los Angeles?
+user: Actually, please make the car reservation for March 3rd at half past 1 in the afternoon.
+assistant: What is the drop-off date you want for returning the car?
+user: Make that the 7th of this month, for the drop off.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Got it. A Dacia Duster SUV is available at LAX International Airport for the rental. Does that interest you?
+user: What's the daily rental fee, please?
+assistant: The daily rental fee is $41.00.
+user: Very good. Let's set up that rental reservation, please.
+assistant: Shall I add insurance to the rental for you?
+user: No thanks, none needed.
+assistant: All right. Are you ready to confirm an SUV car rental reservation for pick up on March 3rd at 1:30 pm from LAX International Airport, with a drop-off date of March 7th?
+user: I'm ready. Confirm that, please.
+tool(ReserveCar): ok n_results=1
+assistant: Your car rental reservation is now confirmed.
+user: Wonderful. Really appreciate your help.
+assistant: Happy to assist you. Enjoy the rest of your day.

@@ -1,0 +1,25 @@
+user: Hi, could you make a payment with my mastercard to Jerry please?
+assistant: How much will you be paying him?
+user: 82 bucks will do. Thanks.
+assistant: Please confirm your public payment to Jerry for the amount of $82 with your credit card.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made and your recipient should receive the money soon.
+user: That's great! Could you get me a restaurant reservation please?
+assistant: Where are you interested in?
+user: Something in San Francisco will do.
+assistant: And any preference on the cuisine?
+user: Something which serves Dumplings will be great.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants in the San Francisco area you might like, how about Alice's.
+user: Sounds great! Thank you!
+assistant: Would you like me to make a reservation for you?
+user: Sure, could you get me a reservation there?
+assistant: And what time will you be dining there?
+user: Likely at 12:15 in the afternoon.
+assistant: Please confirm your reservation for 2 at Alice's in San Francisco at 12:15 pm on March 1st.
+user: Yes, that is fine. May I know if they have vegetarian options and outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. They do serve vegetarian food, however, they do not have outdoor seating.
+user: No worries, thank you so much. That is all I need.
+assistant: Have a great day ahead!

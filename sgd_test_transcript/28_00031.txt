@@ -1,0 +1,19 @@
+user: Help me find a mystery movie with Monica Dolan in it and directed by Gavin Hood please
+tool(FindMovies): ok n_results=1
+assistant: How about Official Secrets? It has a solid 78 rating
+user: That's good for me! Also help me find a restaurant to dine in in Campbell please
+assistant: What kind of cuisine?
+user: I want some Pizza and Pasta!
+tool(FindRestaurants): ok n_results=5
+assistant: I found 5 places in Campbell you might like, including A Bellagio Italian Restaurant
+user: Is it expensive there? And what's their number
+assistant: It's moderate pricing and it's 408-370-7705
+user: That's good, book me a table
+assistant: What time do you want it for?
+user: I want it in the morning 11:45 am
+assistant: Confirming you want a table for 2 at A Bellagio Italian Restaurant in Campbell on March 1st at 11:45 am yes?
+user: Yes that's right, also what's their rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's booked, and they have a 4.5 rating
+user: Great, that's all for now
+assistant: Sure thing, enjoy your meal there!

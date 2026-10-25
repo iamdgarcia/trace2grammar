@@ -1,0 +1,31 @@
+user: Is there a rental car available in London on the 10th of March onwards, any car will do?
+assistant: At what time will you be picking up the car?
+user: The car should be ready for pick up in the afternoon 1:30.
+assistant: Up until what date will you be needing the car?
+user: The 11th of March is when I will drop off the car.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A sedan is available at Heathrow International Airport, would you be interested in renting an Audi A8?
+user: That car sounds good, can you also reserve tickets to a nearby event?
+assistant: Is there a specific event and date that you were interested in, and how many tickets did you want to reserve at the moment?
+user: For next Friday I want to reserve one ticket to Kishi Bashi, I heard it was pretty good.
+assistant: Which city do you want to see the specified event?
+user: The event should be in Vancouver, BC.
+assistant: You wish to reserve 1 ticket to Kishi Bashi, showing in Vancouver on March 8th is that right?
+user: That all sounds right to me, thanks!
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been confirmed, have a great time there!
+user: At what time will the event start, do you happen to know?
+assistant: The event will start at 5 pm.
+user: What was the ticket price for this event?
+assistant: One ticket costs $45 for this event.
+user: Great, thanks for all the help and information, you may now reserve the rental car you found for me earlier.
+assistant: Would you like to add insurance to your rental?
+user: No, don't add insurance to this rental.
+assistant: You wish to rent a sedan from Heathrow International Airport on March 10th at 1:30 pm, and will drop off the car on March 11th, was that all correct?
+user: That all sounds correct, thanks for helping me out.
+tool(ReserveCar): ok n_results=1
+assistant: The car was successfully reserved.
+user: Awesome, I really appreciate all the help.
+assistant: Will that be all that I can help you with for today?
+user: That just about covers everything, thanks once again for the help.
+assistant: Your very welcome, enjoy your day.

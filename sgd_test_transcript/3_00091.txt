@@ -1,0 +1,9 @@
+user: I need a rental car for March 1st at 3:30 pm.
+assistant: Where do you want to pick up from?
+user: From Los Angeles please
+assistant: Whats return date?
+user: I need it through to the 7th of March
+tool(GetCarsAvailable): ok n_results=7
+assistant: Okay I have an Audi A8 Sedan available from Union Station.
+user: okay great thank you
+assistant: No problem at all.

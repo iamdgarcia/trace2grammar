@@ -1,0 +1,19 @@
+user: I need a salon for myself
+assistant: where?
+user: oakley is fine
+tool(FindProvider): ok n_results=2
+assistant: there are 2 options, one of them is great clips in oakley
+user: I like the sound of it, it would be even better if you could inform me about the weather there on the 4th of this month
+tool(GetWeather): ok n_results=1
+assistant: the temperature is going to be 75 degrees fahrenheit with a 11 percent probability of rain
+user: that's fine, I want an appointment now
+assistant: tell me the time you want to be there
+user: the perfect time would be 5 o'clock in the evening
+assistant: confirm all of these data. you want to book an appointment at great clips on march 4th at 5 pm, is that right?
+user: yes it is. let me know about their rating too.
+tool(BookAppointment): ok n_results=1
+assistant: the reservation has been made and the rating is 3.8
+user: awesome
+assistant: do you still need my services?
+user: no, you can shut down now.
+assistant: goodbye

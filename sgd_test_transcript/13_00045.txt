@@ -1,0 +1,19 @@
+user: Can you find me something to play on the 13th of March in Chi-town.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 options. All That He Was is taking place at The Buena, Pride Arts Center on March 13th at 5 pm.
+user: Great. I need a four star hotel in the area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options. Ace Hotel Chicago is a 4 star hotel.
+user: What's their address and phone number?
+assistant: They're located at 311 North Morgan Street and their phone number is +1 312-764-1919.
+user: Are there any other options?
+assistant: Ambassador Chicago is a 4 star hotel.
+user: Great. Can you book tickets for the event?
+assistant: Sure, how many tickets are you looking for?
+user: I need four tickets.
+assistant: Please confirm you want me to book 4 tickets for All That He Was on March 13th in Chicago.
+user: That works. How much is each ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking was a success. The total is $25.
+user: Thanks. That's all for now.
+assistant: You're welcome. Have a great day.

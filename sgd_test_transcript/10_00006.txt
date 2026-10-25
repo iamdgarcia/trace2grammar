@@ -1,0 +1,10 @@
+user: I want to watch a movie.
+tool(FindMovies): ok n_results=1
+assistant: I found a movie called Once Upon A Time In Hollywood. It has a rating of 85 percent.
+user: Anything else? I like films directed by Steven Spielberg in the Imaginative fiction genre.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie called Close Encounters of the Third Kind. It is rated 95 percent.
+user: Perfect!
+assistant: Anything else?
+user: No, that is all.
+assistant: Happy to help.

@@ -1,0 +1,27 @@
+user: Can you please help me find a hotel?
+assistant: Sure, in which city?
+user: I need one room in Los Angeles.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels matching your criteria, out of which I recommend a very nice 3 star hotel, the Ac Hotel By Marriott Beverly Hills.
+user: Do you know their phone number as well as if they allow smoking on the property?
+assistant: You can reach them at +1 323-852-7000 but unfortunately they don't allow smoking.
+user: OK, anything else available?
+assistant: Sure, there's also the Airtel Plaza Hotel, also a 3 star.
+user: OK, sounds great. Can you please help me find a car to rent there?
+assistant: Sure, but first tell me the period for the rental. Do you want the car from March 3rd?
+user: No, I need it from the 11th to the 14th of this month.
+assistant: At what time do you need the car?
+user: I'd like to pick it up at 6 pm.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a nice SUV, a Dacia Duster, available for pick up from LAX International Airport.
+user: OK. Please tell me the per day price for this vehicle.
+assistant: The car is $45.00 per day.
+user: Sounds perfect. Let's place a reservation.
+assistant: Sure, but first please tell me if you need me to add insurance.
+user: No, I won't be needing that.
+assistant: Can you please confirm that you want me to place a reservation for you to rent an SUV without adding insurance from LAX International Airport, from March 11th to March 14th, with the car ready for pickup at 6 pm?
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully booked your car.
+user: Thanks a lot for everything. That will be all for now.
+assistant: My pleasure. Have a nice day!

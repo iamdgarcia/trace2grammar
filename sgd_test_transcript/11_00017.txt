@@ -1,0 +1,14 @@
+user: I want to go to Sydney, Australia and need a place for three people that has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house at 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia. It has a 4.1 rating.
+user: That sounds great.
+assistant: Shall I make a reservation for the house?
+user: Yes, book me a house please.
+assistant: What day are you checking out?
+user: I'd like to check out on March 12th and check in next Tuesday.
+assistant: Coudl you confirm that there are 3 people in your group, and that you will stay from March 5th to March 12th? The location is Sydney.
+user: Sounds perfect.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks. That's all for now.
+assistant: It was my pleasure. Goodbye.

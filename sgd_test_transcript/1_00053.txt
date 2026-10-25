@@ -1,0 +1,12 @@
+user: I need help finding a hotel.
+assistant: I can help you with that. In which city would you like to find a hotel?
+user: Something in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels in London, UK. How about 45 Park Lane? It's a 5 star hotel.
+user: What else is there? I would like 2 rooms at a four star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels that match your criteria. How about a 4 star hotel called Ace Hotel London?
+user: What's the price per night?
+assistant: They charge $296 per night.
+user: I can deal with that. That will be all for now.
+assistant: Okay, let me know if you need anything else.

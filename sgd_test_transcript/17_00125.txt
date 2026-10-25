@@ -1,0 +1,21 @@
+user: I want the weather in SD for the 9th.
+tool(GetWeather): ok n_results=1
+assistant: It will be averaging a day temperature of 83 degrees Fahrenheit with a 25 percent possibility of raining.
+user: Fine. Get me a one-way flight to that place.
+assistant: What is the city you are leaving from and is it on March 9th?
+user: I am going to travel next Thursday and I need flights from Vegas.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: What do you think of flying American Airlines? The departing flight takes off at 11:05 pm and it is a direct flight costing you $85
+user: Is the ticket of Business type?
+assistant: It will be an Economy class seating
+user: Will it be for one person only?
+assistant: So it will be for 1 traveller.
+user: Can you get me other options?
+assistant: What do you think of flying Delta Airlines? The departing flight leaves at 8:20 am. This direct flight will cost you $74.
+user: Great. Will I get a rental car there?
+assistant: What date would you like? Maybe March 7th or March 9th? What will your time of pick up be like and when will you drop it off?
+user: I want it from next Friday until the 13th. I will pick it up at 5 in the evening.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I can get you a nice SUV Citroen C5 at SAN International Airport.
+user: That is great. That will be all.
+assistant: Have a nice day.

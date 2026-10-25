@@ -1,0 +1,23 @@
+user: I want to eat outside once and I need your help to search for the best place to eat.
+assistant: Do you have any favorite kind of food in your mind. If so let me know the same to short list my search.
+user: I like to have Ramen food and search for the place that have this kind of food.
+assistant: Okay, Where do you want to eat, is there any best place in your option?
+user: I think finding a restaurant in San Fran will be perfect for me.
+tool(FindRestaurants): ok n_results=10
+assistant: What about 2g Japanese Brasserie restaurant which is the best place in San Francisco to enjoy your food. What do you think?
+user: Yes, I think the same and I like this place.
+assistant: Shall I reserve a table there for you now?
+user: Yes, I need it and please book it for the date on the 12th and my convenient time is twelve in the afternoon.
+assistant: I need your final confirmation to book a table for 2 at 2g Japanese Brasserie restaurant in San Francisco on March 12th for the time at 12 pm.
+user: That is correct and you can proceed. Also get me their address for my reference. Is the price range cheap there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are having food at moderate prices and I have booked the table successfully. And please note their address is 601 Van Ness Avenue.
+user: Thanks a lot. Please do me one more help. Find me a cab to go there and I want it for one person in Expensive ride.
+assistant: Please confirm to book a cab for 1 person to 601 Van Ness Avenue with Luxury ride.
+user: Yes, that is confirmed. Let me also know about the cost per ride and time taken by the cab to reach here.
+tool(GetRide): ok n_results=1
+assistant: I have booked the cab and it will reach you within 14 minutes. The cost for this ride is $15.91.
+user: Thank you so much for your help.
+assistant: Anything else you want from me?
+user: Nothing for now and thanks for everything.
+assistant: Have a good day.

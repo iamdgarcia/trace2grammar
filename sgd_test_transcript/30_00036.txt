@@ -1,0 +1,27 @@
+user: I would like to reserve tickets to an event for the 2nd of this month around NY.
+assistant: How many tickets do you need and what is the event you are interested in?
+user: I would like four tickets and I heard Jethro Tull is good.
+assistant: Please confirm details for booking details for 4 tickets March 2nd in New York for Jethro Tull.
+user: No, Jamaica is a good one I heard.
+assistant: Please confirm details for booking 4 tickets to Jamaica in your reservation.
+user: Yes, that will work for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time.
+user: What about the buses going there?
+assistant: Where will you be leaving from?
+user: I am departing from Philadelphia.
+assistant: Would you plan to leave on March 2nd.
+user: I would like to plan to leave on the 1st of this month.
+tool(FindBus): ok n_results=6
+assistant: I have 6 buses I found for you. What about the bus leaving 9 am costing $23.
+user: That sounds great.
+assistant: Would you like to buy tickets for the bus?
+user: Yes, I'd like to reserve a seat.
+assistant: Please confirm details that you'd like a ticket on the bus leaving from Philadelphia to New York leaving March 1st at 9 am for 4 and not needing extra luggage.
+user: Yes, that will work for me. Is it direct the bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed for a direct bus.
+user: What station is it arriving at?
+assistant: It is arriving at Penn Station.
+user: Thanks so much for the help as that is all I need.
+assistant: Have a nice day.

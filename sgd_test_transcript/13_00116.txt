@@ -1,0 +1,20 @@
+user: Can you help me find some Offbeat movies online featuring Inbal Amirav?
+tool(FindMovies): ok n_results=1
+assistant: Sure, I found 1 movie for you, Once Upon a Time In Hollywood.
+user: Once Upon a Time In Hollywood sounds great. Can you please play it for me now. I don't need subtitles.
+assistant: Can you please confirm that you want me to play Once Upon a Time In Hollywood for you, with English subtitles?
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: I've started playing it for you.
+user: Thank you. Can you please tell me the weather for Pleasant Hill?
+tool(GetWeather): ok n_results=1
+assistant: There's a 9 percent change of rain with an average temperature of 94 Fahrenheit.
+user: Is it gonna be windy?
+assistant: No quite. The average wind speed will be 5 mph.
+user: Is it going to be humid.
+assistant: Humidity should be around 30 percent.
+user: Perfect. Now let's check the weather for March 3rd in Point Reyes Station.
+tool(GetWeather): ok n_results=1
+assistant: There's a 22 percent change of rain with an average temperature of 71 Fahrenheit.
+user: Perfect. Thanks for everything. Bye-bye!
+assistant: My pleasure. Have a nice day!

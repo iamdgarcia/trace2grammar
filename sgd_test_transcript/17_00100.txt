@@ -1,0 +1,15 @@
+user: What is the weather suppose to be on the 8th of this month in San Diego?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 93 degrees with a 6 percent chance of rain.
+user: What is the average wind and humidity?
+assistant: The wind is usually around 5 mph and the humidity averages 18 percent.
+user: I also need a one way flight going there on the 6th. I am leaving from SFO.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: Alaska Airlines has a flight leaving at 12:25 pm. The ticket is $104.
+user: Awesome! I need a rental car there too. I'll pick it up on the 7th of this month and drop it off on the 10th of March.
+assistant: What time do you need the car?
+user: 14:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a SUV, a Citroen C5 at SAN International Airport.
+user: That is all I need, thanks!
+assistant: Have a nice day.

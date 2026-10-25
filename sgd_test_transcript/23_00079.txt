@@ -1,0 +1,36 @@
+user: I am wanting to make a payment.
+assistant: How much would you like to pay?
+user: I am needing to pay 120 dollars.
+assistant: Who is the person you are making the payment to?
+user: I want to make a payment to Emma.
+assistant: Do you want me to transfer the money from a debit card or an app balance?
+user: Send the payment from my in-app balance.
+assistant: Confirm these details for me: You will be paying $120 from your app balance to Emma and your transaction will be visible to the public.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been successfully made. Your recipient should see the money soon.
+user: Thank you very much! Would you find a train for me now?
+assistant: What city are you leaving from?
+user: I am looking to leave from Fresno.
+assistant: What city are you heading to and which date would you like to travel to?
+user: Find me some tickets for later today to go to Sacramento.
+tool(FindTrains): ok n_results=7
+assistant: How about the train that leaves at 7:10 am? The total price is $57.
+user: At which station does the train arrive?
+assistant: The train will arrive at Sacramento Valley Station.
+user: That sounds fine. What is the weather in Sacramento like on March 3rd?
+tool(GetWeather): ok n_results=1
+assistant: The temperature on that day will average 87 degrees Fahrenheit and there will be a 14 percent chance of rain.
+user: Okay, thank you. Will you be able to get tickets to the train that you found?
+assistant: Would you like to get travel insurance?
+user: I would like to buy travel insurance?
+assistant: What number of tickets would you like to get?
+user: I would like to get one seat.
+assistant: Okay, confirm these details: you would like 1 ticket on the train leaving Fresno at 7:10 am on March 1st and going to Sacramento. This ticket is a value ticket and you are buying trip insurance.
+user: That works well for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets have been purchases successfully for you.
+user: What station is the train leaving from?
+assistant: The train will depart from Fresno Station.
+user: That was very helpful, thanks. That was all I needed.
+assistant: Talk to you again.

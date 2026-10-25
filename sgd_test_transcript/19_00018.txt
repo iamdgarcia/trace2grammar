@@ -1,0 +1,19 @@
+user: Can you help me find somewhere good to eat?
+assistant: What type of food are you interested in eating, and where did you want to dine?
+user: Can you look up Taiwanese restaurants in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: I have located Alice's in San Francisco.
+user: That would be fine. Can you see do they have one table available on the 9th for half past 7 in the evening.
+assistant: Okay, I will reserve a table for 1 at Alice's in San Francisco for 7:30 pm on March 9th, is that correct?
+user: Yes that is perfect. Can I have the address please, and do you know if this place serves vegetarian meals?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Yes this restaurant have vegetarian dishes. The address is 1599 Sanchez Street, and your reservation is complete.
+user: Thank you for that, now can you help me get a cab?
+assistant: Sure, do you have a ride preference?
+user: Yes, please look up shared rides.
+assistant: You would like 1 pool ride to 1599 Sanchez Street?
+user: Yes, that is it. Can I please have the total cost and how long the ride will be?
+tool(GetRide): ok n_results=1
+assistant: I have reserved your shared ride, the estimated travel time is 9 minutes and your total cost will be $17.97.
+user: Thank you so much. Good bye.
+assistant: You are welcome. Good bye.

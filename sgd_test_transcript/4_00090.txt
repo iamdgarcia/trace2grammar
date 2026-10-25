@@ -1,0 +1,13 @@
+user: Hey, I need to go on a short trip. Can you help me get a bus?
+assistant: What's the destination?
+user: The destination is LAX. I'll visit some friends there.
+assistant: And where will you be leaving from? Do you have a date in mind?
+user: I'm leaving from Long Beach, CA on March 6th.
+tool(FindBus): ok n_results=10
+assistant: I found 10 available buses. How about one departing at 6 am? The ticket costs $13.
+user: In which stations does it depart from and where does at arrive?
+assistant: It departs from Downtown Station towards North Hollywood Station.
+user: Sounds real good.
+assistant: Should I buy the ticket?
+user: Not right now, but thank you!
+assistant: Have an awesome day!

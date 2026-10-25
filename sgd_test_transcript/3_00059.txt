@@ -1,0 +1,11 @@
+user: Hey, can you help me get a cab? I need a ride to 491 30th Street #103.
+assistant: Sure thing! Would you like a luxury ride or a regular ride?
+user: A regular ride, please, for four people.
+assistant: No problem! Can you confirm the following details, please? You're taking a regular cab ride for 4 people to 491 30th Street #103.
+user: Yes, that's perfect.
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and on its way!
+user: Thanks so much!
+assistant: You're welcome! Can I help you with anything else?
+user: No. Thanks for everything.
+assistant: You're welcome! Have a wonderful day!

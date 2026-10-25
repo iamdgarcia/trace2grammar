@@ -1,0 +1,15 @@
+user: I want to check the weather on March 1st in NY.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is 66 degrees F with a 37 % chance of rain.
+user: How windy will it be and humid?
+assistant: The average wind speed will be 12 mph and humidity 41 %.
+user: Sure that is fine. Please show me some attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: There would be 10 attractions of interest including the 9/11 Tribute Museum which is a museum.
+user: Okay, that is good can you get me a shared cab ride for two?
+assistant: Please confirm these details that you want a ride to the 9/11 tribute Museum for 2 seats with a pool ride.
+user: Yes, that will work for me. What does it cost?
+tool(GetRide): ok n_results=1
+assistant: I booked the cab and it is on its way for a cost of $13.38.
+user: Thanks for the help. That is all I need.
+assistant: Have a nice day.

@@ -1,0 +1,19 @@
+user: I would like to find some movies online.
+assistant: What type of movies you like?
+user: Will be great a Dramatic story.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 options that you might like.What do you think about A Faithful Man, After The Wedding or Blinded by the Light?
+user: Blinded by the Light will be great.
+assistant: You want me to play the movie for you?
+user: Yes start it please. I don't care if it has subtitles or not.
+assistant: Play Blinded by the Light with subtitle in English.I'm right?
+user: Yes is good.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is started.
+user: Thank you.Tell me please how's the weather there?
+assistant: In which city you want to know?
+user: I would like in Valley Ford.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 72 degrees Fahrenheit and 6 percent chance of rain.
+user: Good.That's all I wanted.Bye!
+assistant: Bye!

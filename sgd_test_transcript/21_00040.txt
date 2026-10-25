@@ -1,0 +1,15 @@
+user: I want to hear some music. I'd like something from 2019. Songs by Teodora. I heard the album Borbena is really good.
+tool(LookupMusic): ok n_results=2
+assistant: I found 2 songs that fit your request. What about Story by Teodora from the Borbena album.
+user: What was the other one?
+assistant: Tom Ford from the Borbena album by Teodora.
+user: That's the one. How's the weather in Bolinas?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is around 85 degrees with a 28 percent chance of rain.
+user: Cool. Can you play the song on the speaker in kitchen.
+assistant: To confirm: you would like the song Tom Ford in the kitchen?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song. Did you need anything else?
+user: No, that's all I need. Thanks!
+assistant: Have a great day!

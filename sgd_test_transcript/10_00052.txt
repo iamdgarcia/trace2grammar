@@ -1,0 +1,14 @@
+user: I want to find a movie to watch online.
+assistant: What type of movie do you want to watch?
+user: I want to watch a drama movie.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies including A Faithful Man, After the Wedding, and Blinded by the Light.
+user: After the Wedding will be perfect.
+assistant: Are you ready to watch?
+user: Yes, play it with English subtitles.
+assistant: Please confirm, playing After The Wedding with English subtitles.
+user: Yes!
+tool(PlayMovie): ok n_results=1
+assistant: Plays movie.
+user: Thanks, that is everything.
+assistant: Have a nice day.

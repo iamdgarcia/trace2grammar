@@ -1,0 +1,17 @@
+user: Can you locate a rental house for me?
+assistant: Where will you be when you need it?
+user: I will be in Paris, France.
+tool(SearchHouse): ok n_results=10
+assistant: What about this one rated 4.5 the address is 1 Rue Bayard, 75008?
+user: Perfect, book it for one I plan to arrive the 3rd and leave on the 4th.
+assistant: I making a reservation for 1 in Paris beginning on March 3rd and ending on March 4th is that correct?
+user: You got it, by the way, is there laundry service there?
+tool(BookHouse): ok n_results=1
+assistant: Yes to the laundry and the reservation has been made.
+user: Appreciate it, thanks.
+assistant: Do you have any more requests?
+user: Actually what kind of attractions are available there?
+tool(FindAttractions): ok n_results=10
+assistant: I found these 10 already. You might like the American Church in Paris it is a Place of Worship.
+user: That's nice but I got to go.
+assistant: Have fun!

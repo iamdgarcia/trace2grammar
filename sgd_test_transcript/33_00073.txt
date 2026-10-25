@@ -1,0 +1,28 @@
+user: I am bored what is there to do?
+assistant: What do you enjoy, Music maybe or Theater, speak up.
+user: Well I guess I do enjoy Musical shows.
+assistant: Where should I look?
+user: Probably in Chi-town, that would work.
+tool(FindEvents): ok n_results=9
+assistant: On March 11th at 7:30 pm Ashe will be at the Chop Shop.
+user: What is the address and what would it run me?
+assistant: Seats are $20 and the address is 2033 West North Avenue.
+user: That's good and all but what about on March 14th, say in Long Beach, what can you find?
+tool(FindEvents): ok n_results=1
+assistant: The Long Beach Jazz Festival is on March 14th at 4 pm at Rainbow Lagoon Park.
+user: I definitely want to go reserve a ticket for one right now please.
+assistant: You are requesting 1 ticket for the March 14th Long Beach Jazz Festival in Long Beach, right?
+user: Absolutely hurry and get it.
+tool(BuyEventTickets): ok n_results=1
+assistant: You have a ticket have fun.
+user: Hey I need a cab, a Luxury cab there.
+assistant: You want a Luxury cab to Rainbow Lagoon Park for 1?
+user: Actually you better make that a Pool ride.
+assistant: So that will be a Pool cab ride to the Rainbow Lagoon Park right?
+user: Yes, yes for sure.
+tool(GetRide): ok n_results=1
+assistant: The cab know your destination and is headed here to pick you up.
+user: Thanks a bunch, really.
+assistant: Do you need anything else?
+user: No I got it from here thanks.
+assistant: Have a super duper day then.

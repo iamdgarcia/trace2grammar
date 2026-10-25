@@ -1,0 +1,27 @@
+user: I am looking for a one way flight
+assistant: where are you traveling to
+user: i am traveling to atlanta
+assistant: when would you like to travel
+user: i am traveling on 4th of march
+assistant: where are you traveling from
+user: i am traveling from philly
+tool(SearchOnewayFlight): ok n_results=4
+assistant: i found 4 flights that are perfect for you. what about american airlines departing at 3:20 pm for $176 per ticket
+user: that sounds good, can you also find me a train ticket to get there
+assistant: is this for march 4th as well
+user: please looking for 1 flexible ticket departing on the 13th
+tool(FindTrains): ok n_results=5
+assistant: what about 9:20 am departure for $194
+user: what station will i arrive at
+assistant: you will arrive at peachtree station
+user: what station am i deparitng from
+assistant: you will depart from 30th street station
+user: what other train can you find
+assistant: what about 11:40 am departure for $187
+user: that sounds good, please book a train ticket with travel insurance
+assistant: please confirm your purchase of 1 flexible ticket from philadelphia to atlanta on march 13th at 11:40 am
+user: yes that is fine. what station will i arrive at and leaving from
+tool(GetTrainTickets): ok n_results=1
+assistant: you will depart from 30th street station and arrive at peachtree station
+user: ok thank you, this is all i need
+assistant: see you soon

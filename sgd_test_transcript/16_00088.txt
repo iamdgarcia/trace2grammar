@@ -1,0 +1,40 @@
+user: I want to get a bus ticket please
+assistant: How many tickets do you want? Where are you going and what time are you heading out?
+user: I want to leave for Las Vegas at quarter to 6 in the evening and it will be 2 of us
+assistant: Where are you coming from?
+user: I'll be leaving from Fresno
+assistant: OK and when do you plan to leave
+user: I plan to leave on the 8th
+assistant: Please confirm you want 2 tickets from Fresno to Las Vegas on March 8th at 5:45 pm
+user: Yes that's correct
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry I couldn't make that purchase. Do you want me to try the $47 6 pm bus?
+user: OK try that
+tool(BuyBusTicket): ok n_results=1
+assistant: That one I was able to confirm
+user: How many stops does that bus take
+assistant: It' a direct bus
+user: What station does it depart from and arrive at?
+assistant: It arrives at Union Plaza and departs from 2660 Tulare St
+user: Thanks for that, can you look for hotels in the area?
+tool(SearchHotel): ok n_results=7
+assistant: How about the 3 star Best Western Plus Las Vegas West
+user: Is smoking allowed there?
+assistant: No sorry it's a non-smoking property
+user: OK that's fine
+assistant: OK do you want to reserve a room?
+user: Yes book one for me
+assistant: When are you checking in?
+user: I want to check in on the 7th
+assistant: How long will you be staying?
+user: I'll be there for seven days
+assistant: OK so 1 room on March 7th for 7 days at the Best Western Plus Las Vegas West in Las Vegas
+user: Actually make that 1 day instead of 7
+assistant: OK so March 7th and only a 1 day stay?
+user: Yes that's right
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked
+user: Thanks for all your help
+assistant: What else do you need?
+user: Nothing else now, thanks!
+assistant: OK you take care now!

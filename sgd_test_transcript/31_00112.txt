@@ -1,0 +1,21 @@
+user: I need you to search for a therapist for me.
+assistant: Shall I search for a Family Counselor, a Psychiatrist, or someone else and in what city shall I look in?
+user: I need a psychologist in Pleasant Hill.
+tool(FindProvider): ok n_results=4
+assistant: Christopher J. Celio is a Psychologist in Pleasant Hill.
+user: That works for me.
+assistant: Shall I schedule an appointment?
+user: Yes, set up an appointment for me.
+assistant: What date and time do you prefer?
+user: I want the appointment to be on the 14th of March at 4:30 pm.
+assistant: You want to see Christopher J. Celio on March 14th at 4:30 pm, correct?
+user: That is right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed and you will receive an email with your confirmation.
+user: What is their contact number and location?
+assistant: They are located at 101 Gregory Lane and you can contact them at 925-827-9876.
+user: Thanks a bunch. Find me some movies with Max Pava in it.
+tool(FindMovies): ok n_results=1
+assistant: Search revealed 1 result which is Brittany Runs a Marathon. It got a 90 out of 100 rating.
+user: That is perfect. That is everything for now.
+assistant: I am delighted to help you.

@@ -1,0 +1,28 @@
+user: Find me some places to see.
+assistant: What city shall I look in?
+user: Find me fun things in SFO.
+tool(FindAttractions): ok n_results=10
+assistant: Alcatraz is a Historical Landmark in SFO.
+user: I see. Find me any type of Life history movies to see near there.
+tool(FindMovies): ok n_results=1
+assistant: Do you like Fiddler: A Miracle of Miracles?
+user: Fiddler: A Miracle of Miracles works just fine for me.
+assistant: Shall I get you tickets to see it?
+user: No, not right now.
+assistant: Do you need more help?
+user: Find me some movies starring Anthony Jackson to see on the Internet.
+assistant: What genre of movies shall I look in?
+user: Search for Fantasy movies.
+tool(FindMovies): ok n_results=1
+assistant: Do you like the movie Labyrinth?
+user: Labyrinth works for me.
+assistant: Shall I start the movie for you now?
+user: Yes, start playing the movie for me.
+assistant: You want me to play the movie Labyrinth with English subtitles, correct?
+user: That is right.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is starting.
+user: Thanks a lot.
+assistant: Do you need more help?
+user: No, not right now. Thanks.
+assistant: Have a wonderful day.

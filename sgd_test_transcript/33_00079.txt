@@ -1,0 +1,21 @@
+user: I'm looking for something interesting to do
+assistant: In which city? What events would you like?
+user: In Chicago. I'd like Drama events
+tool(FindEvents): ok n_results=10
+assistant: There's Ada And The Engine, at The Artistic Home, on March 3rd at 5:30 pm
+user: Oh, very good! Thanks
+assistant: So you want to buy the ticket?
+user: Yes, I need 2 tickets!
+assistant: 2 tickets for Ada And The Engine in Chicago on March 3rd. Is it correct?
+user: Yes, It's correct. Thanks
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked! Have a good time!
+user: Thanks! I need a cab to go there. I want a Luxurious ride for one.
+assistant: 1 seats in a Luxury ride to The Artistic Home: do you confirm?
+user: No, I want a Regular ride
+assistant: 1 seats in a Regular ride. Do you confirm?
+user: Now it's correct. I confirm.
+tool(GetRide): ok n_results=1
+assistant: The ride has been booked, the cab is coming
+user: Thanks for your help, that's all for now
+assistant: Have a good day!

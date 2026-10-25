@@ -1,0 +1,35 @@
+user: I want to search for some movies online and can you find the one featuring Emilio Cuaik?
+assistant: Is there any favorite kind of movies that you want to search for?
+user: Yes, search for something like Play.
+tool(FindMovies): ok n_results=1
+assistant: Found a movie, This is not Berlin. Do you like to watch this movie?
+user: This is not Berlin is nice movie and I prefer this.
+assistant: Shall I play it now?
+user: I will ask it later.
+assistant: What do you want me to do now?
+user: Search for some attractive places to visit.
+assistant: Where do you want to visit the attractions? Let me know the same to search for.
+user: Find it in Paris, France.
+tool(FindAttractions): ok n_results=10
+assistant: What about a place of Worship? If you like it then you can try to visit American Church in Paris.
+user: How about the entry fee. Is this free there?
+assistant: Yes, entry is free there.
+user: Okay. Thanks. Search for some interesting songs.
+tool(LookupMusic): ok n_results=10
+assistant: I got 10 songs and what about the one which is Beating Heart by Ellie Goulding from the Album Halcyon Days?
+user: Find me a different one.
+assistant: Do you like Plume by Caravan Palace from the album Chronologic?
+user: I prefer this song.
+assistant: Shall I play it now?
+user: Yes, do it for me.
+assistant: Please confirm to play the song Plume in Living room speaker.
+user: That is confirmed. Also let me know the type of song and release date.
+tool(PlayMedia): ok n_results=1
+assistant: It was released in 2019 and this is a pop kind of song. The song was started playing now and you can enjoy it.
+user: Also please play the movie that you have found for me before. I like to watch it with Spanish subtitles.
+assistant: I want you to confirm to play the movie This is not Berlin with Spanish subtitles.
+user: That's correct to proceed.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing now and you can enjoy the same.
+user: Thanks and that's all.
+assistant: Have a great day.

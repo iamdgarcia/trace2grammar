@@ -1,0 +1,17 @@
+user: I want to find a movie to watch please
+assistant: Where are you trying to watch?
+user: I want to watch a 3D movie in Oakland please
+tool(FindMovies): ok n_results=7
+assistant: OK I found 7 films including: Blinded by the Light, Hobbs and Shaw, and Good Boys, do those interest you?
+user: Yeah, Good Boys sounds great! Also can you find me some music to listen to
+tool(LookupMusic): ok n_results=10
+assistant: Sure, how about Hate Me by Eurielle of the album Arcadia
+user: Yes that's the one, now play it on the kitchen device for me
+assistant: Stream Hate Me in the Kitchen yeah?
+user: yeah that's right, and what genre is this again?
+tool(PlayMedia): ok n_results=1
+assistant: It's a Pop song, and it's playing now
+user: Did it come out in 2012
+assistant: It's actually from 2015
+user: Got it, thanks that's all
+assistant: Noted, take care!

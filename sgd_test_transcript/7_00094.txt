@@ -1,0 +1,19 @@
+user: Hi, i need a help, i had like to buy movie tickets, could you help me?
+assistant: Sure, Please tell me How many tickets do you want?
+user: I want three tickets
+assistant: Okay, Can you tell me when do you want to watch the show?
+user: I need to watch it on 1st of March at night 10:15.
+assistant: Okay, Please tell me, do you want to watch a regular or imax show?
+user: i am interested to watch a regular show
+assistant: Okay, Please tell me the movie name do you want to watch?
+user: I need to watch 47 Meters Down
+assistant: Okay, Please tell me your location.
+user: Search for movies in San Jose
+assistant: Okay, Please confirm the following details: The movie name is 47 Meters Down: Uncaged and you need 3 tickets on March 1st in San Jose at 10:15 pm, it is a regular movie
+user: yes, it seems good for me. give me their address?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Congratulations You ticket booking has been confirmed, Theater address is 2190 Eastridge Loop
+user: Okay, Thank you, Please tell me the ticket cost and Which theater do you prefer for me?
+assistant: Ticket price is $11 and the theater name is AMC Eastridge 15
+user: Okay, thank you for your great help
+assistant: You are welcome, have a great day

@@ -1,0 +1,47 @@
+user: Can you help me to locate something interesting to do?
+assistant: Is there a particular category you are interested in? Perhaps music or theater or something else?
+user: I really enjoy stage show.
+assistant: Is there a specific city you want me to search in?
+user: I would like to find something around San Francisco.
+tool(FindEvents): ok n_results=10
+assistant: I have located 10 events I think you will like. A very popular one is Above Ground. This takes place at Mojo Theatre on March 6th at 5 pm.
+user: What is the price of one ticket and what is the location of the venue?
+assistant: The price is $35 and the venue is 2940 16th Street #217.
+user: That sounds good. Is there a bus going there? I need one for two people.
+assistant: Are you wanting to leave on March 6th? And what is your point of departure?
+user: I would like to leave on the 2nd of this month from San Diego.
+tool(FindBus): ok n_results=6
+assistant: I have located 6 buses for you. What do you think of the bus leaving at 6:30 am? The price is $49.
+user: Is there anything else that you can find for me?
+assistant: What about the bus that leaves at 7:20 am? The price of it is $53.
+user: Which station will it leave from and which station will it arrive at?
+assistant: The bus leaves out of El Cajon Bus Stop and will arrive at Transbay Terminal.
+user: Is there anything else you can find for me?
+assistant: What do you think about the bus that leaves at 9:10 am? The price of this bus is $53.
+user: That sounds fine. I would like to locate a round trip flight that will get me there.
+assistant: Will you be leaving on March 2nd?
+user: I would like to leave next Monday.
+assistant: What day do you want your return flight to be?
+user: I would like to fly with United Airlines and come back on the 11th of this month. I have no preference about which ticket class it is.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have located 1 flight for you. What do you think of flying with United Airlines? They have a direct flight that leaves at 7:35 pm and the return flight leaves at 8:20 am at a price of $165.
+user: When will the flight get to my destination?
+assistant: The onward flight will get to your destination at 9:15 pm.
+user: That sounds fine. Can you also find me hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I have located 10 hotels that fit your criteria. One of these is a 1 star hotel named Amsterdam Hostel San Francisco.
+user: Are there other hotels that fit what I am looking for?
+assistant: There is a 4 star hotel that is called Argonaut Hotel.
+user: That sounds very good.
+assistant: Do you want to reserve this hotel?
+user: I don't want to make a reservation at the current moment?
+assistant: Is there anything else you would like me to do for you?
+user: I would like to buy four tickets to the event you found for me earlier.
+assistant: Can you confirm the details for me? You want to book 4 tickets for Above Ground on March 6th in San Francisco.
+user: Yes, that would work well for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Have a wonderful time there!
+user: Thanks you very much for your help.
+assistant: Is there anything else I can do for you today?
+user: No, that is all. I appreciate all your help.
+assistant: Okay, have a wonderful day.

@@ -1,0 +1,42 @@
+user: I would like to find a salon please.
+assistant: In which city do you need a salon in?
+user: I would like to visit a salon in San Fran please.
+tool(FindProvider): ok n_results=10
+assistant: I found a nice salon in San Francisco called 1512 Barber Shop.
+user: Can you tell me what their average rating is please?
+assistant: They have an average rating of 4.8.
+user: I want an unisex salon, Can you please find me a different salon?
+tool(FindProvider): ok n_results=10
+assistant: There is salon in San Francisco called 20Th Salon And Barber.
+user: How about a different salon?
+assistant: There is a salon in San Francisco called A Businessman's Haircut.
+user: That sounds great.
+assistant: Would you like me to book an appointment there?
+user: No. Not at this time.
+assistant: Can I do anything else for you?
+user: Yes. I would like to find a therapist in this area as well.
+assistant: Would you like me to search the San Francisco area? What kind of therapist would you like me to search for.
+user: The San Francisco area is fine. I need a Psychologist please.
+tool(FindProvider): ok n_results=4
+assistant: I have found 4 in San Francisco, Their is a Psychologist by the name of Adam E. Pollock.
+user: Can you give me their address?
+assistant: Yes. They are located at 100 Masonic Avenue.
+user: That sounds great.
+assistant: Would you like me to book an appointment for that therapist?
+user: Yes, I do. I would like to make an appointment for 12:15 pm on the 4th of this month.
+assistant: So you want me to make an appointment with Adam E. Pollock on March 4th at 12:15 pm ?
+user: Yes I do. Can you give me their contact info please?
+tool(BookAppointment): ok n_results=1
+assistant: They can be reached at 415-346-2356. However I could not book that appointment. You may want to try a 12 pm appointment on March 4th with Adam E. Pollock.
+user: Yes that will be fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and a confirmation email should arrive shortly.
+user: Thanks, Now I would like to make an appointment at the salon that day in the evening 5:15.
+assistant: So you want me to book an appointment on March 4th at 5:15 pm at A Businessman'S Haircut?
+user: Yes, I do.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is made.
+user: Can you give me their average rating and contact info?
+assistant: Their average rating is 3.9 and they can be reached at 415-788-4936.
+user: Thanks, I am all set.
+assistant: Have a great day.

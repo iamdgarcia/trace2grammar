@@ -1,0 +1,32 @@
+user: Please show me my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms set one for 8:30 am with the name get up.
+user: Okay that is great. I would like to find a restaurant there.
+assistant: What type of food are you seeking?
+user: Please find something serving Southern.
+assistant: What location should I search?
+user: Please locate restaurants in San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: I have 10 restaurants you might like including 1760 a nice restaurant located in San Francisco.
+user: Tell me the address.
+assistant: The street address is 1760 Polk Street.
+user: What is the user rating and phone number of the restaurant?
+assistant: The user rating is around 4.4 and the phone number is 415-359-1212.
+user: Yes, that is great. I'd like to reserve a car that is a nice sedan there.
+assistant: What time would you like to pick up the car and when do you want to start the rental? Where would you like to pick up the car?
+user: I would like to pick it up at morning 10. Lawrence Station is convenient for me to pick it up as I need it the 3rd.
+assistant: Would you like to add insurance and until when do you want the car?
+user: I would like to buy insurance and need it until next Tuesday.
+assistant: Please confirm details that you are picking up the car from Lawrence station March 3rd at 10 am and drop-off date is March 5th for a sedan car with insurance.
+user: Yes, that is sounding good. How much is the cost for the day and the car's name?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved costing $44.00 per day for the Skoda Octavia.
+user: Oh, will you share the location with the address of 1760 Polk Street and can you share it with Juan.
+assistant: Please confirm details to share the location 1760 Polk Street with Juan.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully shared the location.
+user: Thanks that is very helpful.
+assistant: Will there be something else I can help with?
+user: No thank you that was pretty helpful.
+assistant: Have a great day.

@@ -1,0 +1,27 @@
+user: I want to find something interesting to do.
+assistant: Any particular category? Music, theater, etc.
+user: I want to find something on Broadway.
+assistant: What city are you looking in?
+user: I want to find something in London.
+tool(FindEvents): ok n_results=10
+assistant: A Right Royale Tea is a popular Broadway play at the Amba Hotel Charing Cross. It takes place on March 14th at 7 pm.
+user: Sounds good. I want to request a payment from Yumi.
+assistant: How much are you requesting?
+user: I want to request one hundred and nine bucks.
+assistant: Please confirm: Requesting $109 from Yumi. This transaction is public.
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: I want to buy tickets for the Broadway show. I need 4 tickets.
+assistant: Please confirm: 4 tickets for A Right Royale Tea in London on March 14th.
+user: No, I only need one ticket.
+assistant: Please confirm: 1 ticket for A Right Royale Tea.
+user: Yes, sounds good. How much is it?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket has been purchased. The ticket costs $50. Enjoy the show.
+user: Where is the venue?
+assistant: The venue is located in Strand.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a good day!

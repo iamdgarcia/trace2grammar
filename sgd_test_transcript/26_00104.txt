@@ -1,0 +1,28 @@
+user: I need to get a train.
+assistant: Where would you be departing from and when would you like to leave?
+user: I will be leaving Anaheim, CA Saturday this week.
+assistant: And heading to which city?
+user: I want a luxurious ticket for 1 to Los Angeles.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains leaving that day. There is one leaving at 6 am and the cost is $71.
+user: Which station would it be arriving at?
+assistant: At Anaheim Intermodal Center.
+user: That sounds like a great idea. What fun thing can I do when I get there on that day?
+assistant: What are you interested in? Music, theater or something else?
+user: I want to see a stage show.
+tool(FindEvents): ok n_results=1
+assistant: There is 1 such event available. You should check out Jesus Christ Superstar. It would be taking place at Stage Door Repertory Theatre on March 1st at 7 pm.
+user: That would be fine.
+assistant: Would you like tickets?
+user: Not right now. What else is there to do?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 events that day. You can take in a game at Angel Stadium of Anaheim. It is a sports venue.
+user: Is there an entrance fee and would my kids have fun?
+assistant: There is no cost to enter and I am sure your kids would have a good time.
+user: Ok then. I would need a house for two when I get there.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely house at 1050 West Ball Road and it has a rating on 4.2
+user: Is laundry service provided and can I have a contact number?
+assistant: The number is +1 714-860-4660 and there is laundry service available.
+user: That house would be suitable. That's all I need for now.
+assistant: Enjoy your day.

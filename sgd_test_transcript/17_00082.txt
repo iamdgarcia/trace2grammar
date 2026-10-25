@@ -1,0 +1,16 @@
+user: I need help finding a train please.
+assistant: Sure, what city are you traveling to?
+user: I'm headed to Philly.
+assistant: Wich city are you leaving from and on what day?
+user: I'll be leaving from NYC on the 10th of this month. Oh and I'll need three seats.
+tool(FindTrains): ok n_results=7
+assistant: I found 7 trains that may suffice. There's one that costs $125 and departs at 7:50 am.
+user: Sounds fine. Can you find me a house to stay at when I arrive with a rating of 3.9 or higher with laundry service?
+tool(SearchHouse): ok n_results=10
+assistant: There's a house with a 3.9 rating at 1 Logan Square.
+user: What else is there?
+assistant: There's one with a 3.9 rating at 1001 Intrepid Avenue.
+user: That's great, thanks.
+assistant: Shall I make you a reservation.
+user: Nope, not yet. That's all for now.
+assistant: Great, happy to help!

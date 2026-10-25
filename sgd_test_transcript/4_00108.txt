@@ -1,0 +1,23 @@
+user: I'm looking for a bus
+assistant: What is the destination? What day do you want to leave?
+user: The destination is Washington, and I want to leave on March 14th
+assistant: What is the city of departure?
+user: The city of departure is New York
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses available. There's a bus at 6 am and costs $34
+user: I prefer something else
+assistant: A bus at 6:20 am, that costs $35
+user: No, please look for another one. I need a direct bus for 4 people
+tool(FindBus): ok n_results=8
+assistant: There's a bus at 6:50 am that costs $33
+user: What is the departure station?
+assistant: The departure station is Penn Station
+user: Ok, It's good for me! I want to book tickets
+assistant: A ticket for 4 people, from New York to Washington, on March 14th at 6:50 am, no extra luggage. Do you confirm?
+user: Yes, I confirm, thanks!
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked!
+user: Very well, thank you!
+assistant: You need something else?
+user: No, thanks, It's all!
+assistant: Have a good day!

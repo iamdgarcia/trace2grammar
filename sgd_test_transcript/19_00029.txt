@@ -1,0 +1,42 @@
+user: Hi, could you get me a rental car for pick up at 12:30 till the 11th?
+assistant: Sure, and which date do you need the car from?
+user: A would like an SUV from the 5th please.
+assistant: Any preference on the pickup location?
+user: Something in NY is fine.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 available cars, how about a SUV Jaguar F-Pace from JFK International Airport?
+user: Are there any alternatives?
+assistant: How about a SUV Skoda Kodiaq from JFK International Airport?
+user: How much will this cost me each day?
+assistant: This will cost you $46.00 daily.
+user: Are there any alternatives?
+assistant: How about a SUV Suzuki Grand Vitara from Port Authority Station?
+user: How much does this cost each day?
+assistant: This will set you back $42.00 each day.
+user: Sounds great. Could you find me buses travelling there too?
+assistant: And where are you departing from?
+user: I would like 3 tickets on a ride departing from Philadelphia.
+assistant: And when do you plan to depart?
+user: Sorry, could you get a direct bus for one departing on March 2nd?
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses you might like, how about one departing at 9 am costing $22?
+user: Are there any alternatives?
+assistant: How about a bus departing at 10:10 am costing $25?
+user: May I know which station does it depart from?
+assistant: It departs from 10th and Filbert.
+user: Are there any alternatives? Does not matter whether it is direct or not.
+tool(FindBus): ok n_results=6
+assistant: How about one departing at 12:30 pm costing $21?
+user: And which station does it arrive at?
+assistant: You will arrive at Penn Station.
+user: Sounds great to me!
+assistant: Could I further assist you then?
+user: Could you also find me a one-way flight there?
+assistant: Are you departing on March 2nd or March 5th?
+user: Likely on the 5th. Thanks!
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Would you like a direct flight with American Airlines departing at 7:25 am costing $66?
+user: Sounds great!
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

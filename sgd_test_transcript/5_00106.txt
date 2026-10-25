@@ -1,0 +1,12 @@
+user: I need to see a therapist urgently.
+assistant: Would you like to see a Family Counselor or a psychologist or someone else? Which city would you prefer?
+user: I want to see a psychologist in lafayette.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 available. There is a psychologist called Alissa Scanlin psyd in Lafayette.
+user: I would rather see a male psychiatrist in fremont.
+tool(FindProvider): ok n_results=1
+assistant: There is a psychiatrist from Fremont called Charles Dennis Barton, Jr.
+user: Yes, I would rather see him.
+assistant: Would you like to schedule an appointment?
+user: No, I do not.
+assistant: I am glad I can be of assistance.

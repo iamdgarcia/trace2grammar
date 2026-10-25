@@ -1,0 +1,30 @@
+user: I wish to search a hotel in Phoenix, AZ.
+tool(SearchHotel): ok n_results=10
+assistant: Ac Hotel By Marriott Phoenix Biltmore is a fantastic hotel with 3 star.
+user: What is the contact address?
+assistant: The contact address is 2811 East Camelback Road.
+user: What is their contact number and what is the cost per night stay?
+assistant: Their contact number is +1 602-852-6500. The price is $117.
+user: It is nice. I wish to find a round Delta Airlines flight to go there.
+assistant: What is your departing city? When will you need a return flight? Will you start your travel on March 3rd?
+user: I need flights from NYC on today. I will return on the 9th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Are interested in flying with Delta Airlines? The layover flight will take off at 4:20 pm. The returning flight will take off at 6:15 pm. The cost of the ticket is $470.
+user: What is the arriving time of the return flight?
+assistant: It will be at 5:51 am.
+user: When will be the flight reach my destination? Is it a Premium Economy class ticket?
+assistant: It will arrive at 9:22 pm. It has Economy class seat.
+user: It is nice. I wish to book a hotel. I wish to have 3 rooms on the 6th.
+assistant: Up to which date do you need the room?
+user: I will check in on tomorrow and i need it for 5 days.
+assistant: Kindly ensure that, on March 2nd you need 3 rooms for 5 days at Ac Hotel By Marriott Phoenix Biltmore in Phoenix.
+user: Yes. It is correct. Whether the smoking is permitted in the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: Your room is successfully booked. Sorry, smoking is not permitted.
+user: I wish to see some attractions.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you. Your check out is Arizona Capitol Museum. It is a Museum.
+user: Okay. Nice.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Enjoy the trip. Bye.

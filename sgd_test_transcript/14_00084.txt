@@ -1,0 +1,17 @@
+user: I'd like to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies that you may like. Would you like to watch In Fabric which has an average rating of 96 out of 100?
+user: Thank you, sounds good. Can you find some Dubstep songs by Krewella from seven years back, for me?
+tool(LookupMusic): ok n_results=1
+assistant: There is only 1 such song and it is Alive by Krewella from the album Get Wet.
+user: Perfect! That's the one I was looking for.
+assistant: Shall I play the song for you?
+user: Yes, please do. Thank you.
+assistant: Please confirm that you want to listen to the song Alive in the Living room.
+user: Yes, that would be great!
+tool(PlayMedia): ok n_results=1
+assistant: Song is now playing. Enjoy your music!
+user: Thank you very much!
+assistant: Is there anything else I can do for you?
+user: No, thank you. That'll be all.
+assistant: Have a great day!

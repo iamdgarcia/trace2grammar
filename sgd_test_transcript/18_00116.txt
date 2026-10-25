@@ -1,0 +1,28 @@
+user: I would like to find a restaurant.
+assistant: Which city are you located and what type of food?
+user: I would like a bistro in berkeley.
+tool(FindRestaurants): ok n_results=1
+assistant: La Note is located in Berkeley.
+user: Do they have outdoor seating and a vegetarian menu.
+assistant: They have vegetarian options and outdoor seating.
+user: Yes, that sounds good.
+assistant: Would you like to reserve a table there?
+user: Yes, I would like to reserve a table.
+assistant: What time would you like your reservation?
+user: I would like to go quarter to 1 in the afternoon.
+assistant: Booking a table for 2 at La Note in Berkeley for March 1st at 12:45 pm.
+user: What is the rating of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant's rating is 4.4. Would you like to go to La Note restaurant at 1 pm on March 1st for 2 people.
+user: Yes, 1 pm works for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: Can you get me a cab pool ride to 2377 Shattuck Avenue.
+assistant: 2 seats on a pool ride to 2377 Shattuck Avenue.
+user: I would prefer a Luxurious ride.
+assistant: Booking 2 seats on a Luxury ride.
+user: Yes, how long before the cab gets here and what is the cost?
+tool(GetRide): ok n_results=1
+assistant: The cab will be there in 13 minutes and the cost is $24.68
+user: Thank you that is all I needed.
+assistant: Have a good day.

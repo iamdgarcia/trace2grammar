@@ -1,0 +1,28 @@
+user: Find me some attractions that could interest me. I want something with no entry fee.
+assistant: What location should I scan for attractions?
+user: I want to look for the attractions in San Francisco.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 attractions of interest. I want you to see Alcatraz which is a Historical Landmark.
+user: Is the place kid-friendly and get me their phone number?
+assistant: Yeah the place is great for kids and the digits are 415-561-4900.
+user: Fine. Look for a movie in there.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies you might like. What do you think of Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: I think Fiddler would be great.
+assistant: Shall I get you the tickets?
+user: I can't purchase now.
+assistant: Shall I help you with something else?
+user: Do you know any good online movies especially in Fantasy?
+tool(FindMovies): ok n_results=2
+assistant: Would you like Labyrinth or The Lord of the Rings: The Return of the King?
+user: Labyrinth is fantastic.
+assistant: Shall I play the movie?
+user: Yeah play it with Hindi subtitles.
+assistant: So you confirm that you want Labyrinth played with Hindi subtitles?
+user: Yeah. Who are the actors?
+tool(PlayMovie): ok n_results=1
+assistant: I have started your movie. The actor is Frank Oz.
+user: Thank you very much.
+assistant: Shall I do anything else for you?
+user: Nope. Thank you.
+assistant: Have a fantastic day!

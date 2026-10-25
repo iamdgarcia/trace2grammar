@@ -1,0 +1,16 @@
+user: I need a train ticket.
+assistant: What date would you like to travel?
+user: I need tickets for 1st of this month.
+assistant: What City is it that you are departing from?
+user: I want to go from Los Angeles.
+assistant: Which city are you going to?
+user: I want to go to Anaheim, CA.
+tool(FindTrains): ok n_results=10
+assistant: OK then there are 10 trains that you could get. What about this one that departs at 6 am? It will cost $37 in total.
+user: That sounds great, can you also find me a place to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: Yes, there is a house on 1050 West Ball Road. And the rating is 4.2.
+user: This sounds perfect to me.
+assistant: Would you like me to make the reservation?
+user: No, I don't need you to do that now.
+assistant: No problem goodbye.

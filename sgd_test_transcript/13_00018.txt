@@ -1,0 +1,28 @@
+user: I would like to find an event.
+assistant: In which city are you located and what type of event?
+user: I'm looking for a play in Seattle, WA.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events, there is a Beatleconcert taking place at 12th Avenue Arts on March 10th at 5 pm.
+user: Where is the venue located and how much is a ticket?
+assistant: The address is 1620 12th avenue for $50.
+user: Is there another Concert on March 11th.
+tool(FindEvents): ok n_results=3
+assistant: There is Claudia Oshry taking place at Illsley ball nordstrom recital hall on March 11th at 4:30 pm.
+user: Yes, that sounds good.
+assistant: Would you like to purchase tickets for this event?
+user: I would like to find a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: There is Ace Hotel Seattle that has a 2 star rating.
+user: What is their phone number and their cost per night?
+assistant: Their phone number is +1 206-448-4721 and It's $126 per night.
+user: That sounds good.
+assistant: Would you like to book a hotel?
+user: Not at the moment but would like to purchase four tickets for the previous event.
+assistant: Booking 4 tickets for Claudia Oshry in Seattle on March 11th.
+user: Yes, that works for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

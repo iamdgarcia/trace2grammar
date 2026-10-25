@@ -1,0 +1,26 @@
+user: I would like to find an attraction to go to please, something in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 possibilities to tell you about. Perhaps you'd be interested in the historical landmark Alcatraz.
+user: OK that's possible. What else could you suggest?
+tool(FindAttractions): ok n_results=9
+assistant: I have 9 other options to share with you. Alcatraz Island is a fascinating historical landmark.
+user: Is there an admission price? And do you know the phone number?
+assistant: Yes, there is a charge for admission. The phone number is 415-561-4900.
+user: OK, sounds good. I'd also like to see a film in that area.
+tool(FindMovies): ok n_results=3
+assistant: Certainly. Would you be interested in seeing Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: I don't think so, what else is there? I'd like to go to Balboa Theatre if possible.
+tool(FindMovies): ok n_results=2
+assistant: I have 2 possibilities for you. Would you be interested in either Official Secrets for IT Chapter Two?
+user: IT two would be great. How about some online movies in the comedy genre?
+tool(FindMovies): ok n_results=5
+assistant: I have 5 movies to tell you about. I recommend Good Boys, My Big Fat Greek Wedding and Chhichhore.
+user: I'd like to see Good Boys.
+assistant: How else may I help you today?
+user: I'd like to go ahead and start watching that movie right now, with English subtitles turned on please.
+assistant: Confirming playback of Good Boys with subtitles in English enabled.
+user: Great, thank you very much.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: That's all I need, thanks again.
+assistant: I'm happy to help.

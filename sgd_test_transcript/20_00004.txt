@@ -1,0 +1,23 @@
+user: I need to find a hotel with 3 rooms available in Paris, France. Can you help me out?
+tool(SearchHotel): ok n_results=10
+assistant: No problem. I've found a nice 4 star hotel called AC Hotel By Marriott Paris Porte Maillot that you may like.
+user: What's their number?
+assistant: They can be reached at the number +33 1 84 82 49 09.
+user: Thanks. What's the price per night? Is smoking allowed?
+assistant: This is a no smoking hotel. The cost per night is $432.
+user: Okay sounds good. Can you also help find a rental car for me?
+assistant: Sure thing. Will you need the car on March 3rd? What time would you like to pick it up?
+user: No, I need the car on the 11th of this month. I'd like to pick it up sometime in the evening 6:30.
+assistant: How long will you need the vehicle?
+user: I'll need it till the 12th of this month. Can you find a nice Sedan for me?
+tool(GetCarsAvailable): ok n_results=3
+assistant: Sure thing. I've found 3 cars you may like. How about a Sedan Buick Regal Sportback? There is one available at Charles de Gaulle International Airport.
+user: Yeah, that sounds good to me. I'd like to go ahead and reserve the car now.
+assistant: No problem. Would you like to add insurance on the vehicle?
+user: No, I don't think I'll need any insurance. I'm a pretty driver.
+assistant: Okay, just confirm the following for me. You will be picking up a Sedan from Charles de Gaulle International Airport on March 11th at 6:30 pm. The car is due to be dropped back off on March 12th. Is this correct?
+user: Yeah, that all sounds right to me.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been successfully reserved.
+user: Great! Thanks for your help. That's all for now.
+assistant: My pleasure. Have a good day.

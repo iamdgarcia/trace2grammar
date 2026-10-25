@@ -1,0 +1,13 @@
+user: Find me some tickets for a train going to Sacramento on the 6th of March.
+assistant: I can do that, but first I'll need to know from which city you would like to depart.
+user: I'll new two seats from San Francisco to Sacramento.
+tool(FindTrains): ok n_results=9
+assistant: I've found a train that matches your criteria. It departs at 6:10 am and the tickets will cost $82 in total.
+user: Which station does that train arrive at?
+assistant: The train will arrive in Sacramento Valley Station.
+user: And which station does it leave from?
+assistant: The train will leave from Salesforce Transit Center.
+user: That sounds good to me.
+assistant: Would you like me to book the tickets?
+user: No, not right now. I'll let you know if I need anything further.
+assistant: Okay. I'll be here, just let me know.

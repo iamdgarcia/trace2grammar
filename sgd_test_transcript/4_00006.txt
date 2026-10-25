@@ -1,0 +1,23 @@
+user: Hi I need something to get around, can you find me a rental car?
+assistant: Sure, what time would you like to pick up the rental?
+user: I'm looking to pick up the car in the evening 6:30.
+assistant: What day would you like to pick up the rental and where from? And how long will you be needing it for?
+user: I'd like to pick up the car on the 3rd of this month until March 6th. I would like a car from CDMX.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I managed to find a car at Benito Juarez International Airport. It's a nice Sedan, an Audi A8.
+user: Is there anything else you can find? I need it until next Monday.
+tool(GetCarsAvailable): ok n_results=7
+assistant: I managed to find 7 cars. There's a nice Sedan Dodge Charger available at Benito Juarez International Airport.
+user: What is the cost per day?
+assistant: The rental will cost $25.00 per day.
+user: That works for me, I'd like to book the reservation.
+assistant: Will you be wanting to add insurance?
+user: No, that's okay. I don't need any.
+assistant: So you'd like to reserve a Sedan car from Benito Juarez International Airport on March 3rd until March 4th. You will be picking up the car at 6:30 pm. Is this correct?
+user: Yes, that sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been booked.
+user: Thank you for all your help, I appreciate it.
+assistant: Anything else I can help you with?
+user: No that will be all. Thank you.
+assistant: Have a pleasant day.

@@ -1,0 +1,29 @@
+user: Find me some movies online.
+assistant: What type of movies you prefer?
+user: I enjoy Horror movies featuring Gwendoline Christie.
+tool(FindMovies): ok n_results=1
+assistant: How about In Fabric?
+user: Fabric sounds great.Show me some attractions there.
+assistant: Where you want to find attractions?
+user: In Philly I want.
+tool(FindAttractions): ok n_results=10
+assistant: 10 attractions I have that you may like.You should check out a Museum called Barnes Foundation.
+user: Sounds great for me.
+assistant: With something else I can help?
+user: Search for me some songs because I heard that the album Crust Fm is really good.
+tool(LookupMusic): ok n_results=1
+assistant: How about Crystal Dolphin byt Engelwood from album Crust Fm?
+user: Yes, I like this one.
+assistant: Want to hear the song now?
+user: Yes, cast it on the living room.
+assistant: Play song Crystal Dolphin in Living room.I'm right?
+user: Yes, is good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks.Start the movies that you have found with English subtitle.
+assistant: Play In Fabric with subtitle in English.Is correct?
+user: Yes, that's true.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is started.
+user: Thank you.That's all for now.
+assistant: Have a wonderful day!

@@ -1,0 +1,15 @@
+user: Can you schedule me a property visit soon please
+assistant: Which property do you want to set that at?
+user: I want to set that visit at Woodhaven Apartments
+assistant: When do you want that scheduled for you?
+user: Let's make it happen on the 13th of this month
+assistant: Confirming a March 13th visit to Woodhaven Apartments?
+user: Actually I changed my mind, let's visit Portola Meadows Apartments
+assistant: Confirm that you want to visit Portola Meadows Apartments on March 13th instead?
+user: Yes that's right
+tool(ScheduleVisit): ok n_results=1
+assistant: Then it has been scheduled!
+user: Great! What's their phone number, and do they have laundry machines?
+assistant: Good news is it does have an in-unit laundry machine. Feel free to reach them at 925-449-6167
+user: Thanks so much, that's it for now
+assistant: Thanks and let me know if I can help later

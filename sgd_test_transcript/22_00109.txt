@@ -1,0 +1,31 @@
+user: I demand your help with some movies recommendations
+assistant: what do you feel like watching?
+user: fantasy is on my mind
+tool(FindMovies): ok n_results=2
+assistant: I got 2 titles for you: labyrinth or the lord of the rings: the return of the king
+user: I prefer lord of the rings
+assistant: I can start the movie right now
+user: no, I want you to find some attractions in new york city in a wildlife spot
+tool(FindAttractions): ok n_results=10
+assistant: there's 10 of them, let's see if you are into nature preserve, if so, you'll love bronx zoo
+user: nice, name me something different
+assistant: there's another nature preserve called castle clinton national monument
+user: check if the place is okay for children
+assistant: it's ideal for kids
+user: would you look for some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: why not! I can play sick like me by in this moment taken from the album black widow
+user: I adore it! Play it on the kitchen speaker
+assistant: confirm the next operation: I'll play the song sick like me in the kitchen
+user: that's right. I would like some info about its genre and the release year
+tool(PlayMedia): ok n_results=1
+assistant: it's considered metalcore and the release year is 2014
+user: play the movie now
+assistant: confirm what you want me to do. you want me to play the movie the lord of the rings: the return of the king with english subs
+user: correct. who's the actor?
+tool(PlayMovie): ok n_results=1
+assistant: movie is on. elijah wood is one of the actors
+user: I like the man
+assistant: what more can I do?
+user: nothing. bye
+assistant: enjoy your flick!

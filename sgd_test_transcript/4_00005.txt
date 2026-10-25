@@ -1,0 +1,22 @@
+user: I need a rental car in Warsaw for a trip
+assistant: What time do you want to pick it up?
+user: Two in the afternoon would be good
+assistant: When do you want the car until?
+user: Book it though to Monday next week
+assistant: And what date should your booking start?
+user: Please book it in from Sunday this week
+tool(GetCarsAvailable): ok n_results=7
+assistant: Okay i have a Buick Regal Sportback sedan available at Warsaw Chopin Airport
+user: Okay thats good
+assistant: Do you need me to book it for you?
+user: Yes that would be good
+assistant: Do you need to add insurance?
+user: No I'm all good.
+assistant: Confirming the following details. You want to book a sedan from March 3rd 2 pm until March 4th, pickup Warsaw Chopin Airport. Insurance is not included.
+user: Yes that's correct, What is the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have made the reservation. The cost is $34.00 per day.
+user: Okay great thank you
+assistant: Do you need anything else?
+user: Nope that's it
+assistant: Glad to help.

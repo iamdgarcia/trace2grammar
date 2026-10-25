@@ -1,0 +1,27 @@
+user: I would be out of town and I need a house to stay in.
+assistant: In which city?
+user: I am going to LA.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely house located at 1020 South Figueroa Street that has a rating of 4.1
+user: That house would be fine.
+assistant: You would like to reserve it?
+user: Yes, go ahead and book it.
+assistant: When would you be checking in and checking out? How many persons will be traveling with you?
+user: I plan to check in on the 3rd and leave on the 7th of this month. The house is for one person.
+assistant: You would like accommodation for 1 in Los Angeles from March 3rd to March 7th?
+user: Actually, I would like to check in today.
+assistant: You need accommodation for 1 person on March 1st?
+user: I want to leave on the 6th of March.
+assistant: You would like accommodation for 1 person who would be checking out on March 6th?
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: I have made the reservation.
+user: May I have a contact number for the house. Also, is laundry service included?
+assistant: The number is +1 310-215-1000.
+user: That a lot. What fun places can I visit when I get there?
+tool(FindAttractions): ok n_results=10
+assistant: You would find Angels Flight Railway interesting. It is a historical landmark.
+user: I will check it out.
+assistant: Would you be needing anything else?
+user: Not at this time. Thank you.
+assistant: You are welcome.

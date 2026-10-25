@@ -1,0 +1,38 @@
+user: Can you help me find something going on the 12th of March?
+assistant: Sure, what city are you looking in what kinds of things are you interested in? Options include Music or Theater or anything else you enjoy.
+user: Find me a show in or around Philly.
+tool(FindEvents): ok n_results=6
+assistant: How about Comedysportz at The PLayground At The Adrienne on March 12th at 7:30 pm?
+user: That could work, where is it and how much?
+assistant: A ticket is $40 and its at 2030 Sansom Street.
+user: Great, are there buses there?
+assistant: From where are you departing?
+user: I'll be leaving from Washington.
+assistant: Is that on March 12th?
+user: Sunday this week.
+tool(FindBus): ok n_results=7
+assistant: There's a bus leaving at 8:30 am that costs $29.
+user: Find something else, for 3 people.
+tool(FindBus): ok n_results=7
+assistant: There's a $27 option leaving at 11:30 am.
+user: What are the stations it leaves from and arrives to?
+assistant: It leaves from Silver Spring Bus Stop and arrives at 10th and Filbert.
+user: Great, can you look for a flight there instead. Look on March 1st with a return date of the 13th of this month. Look for Delta Airlines.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's a $336 Delta Airlines flight departing at 10:30 am with a return take off time of 4:15 pm.
+user: Great, and look for two hotel rooms in the area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 you may like. How about the 4 star hotel Aka Rittenhouse Square?
+user: What's the number and address?
+assistant: It's +1 215-825-7000 and they're located at 135 South 18th Street.
+user: Great, thank you for that information.
+assistant: Shall I book you a room?
+user: No, not yet.
+assistant: Anything else I can do?
+user: Yeah, let's purchase tickets to that event.
+assistant: Sure, just confirm you'd like 3 tickets to Comedysportz on March 12th in Philadelphia.
+user: Yup, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Enjoy!
+user: Thanks, that's all for now.
+assistant: My pleasure, enjoy your day.

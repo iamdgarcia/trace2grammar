@@ -1,0 +1,14 @@
+user: I'm bored. Can you help me find some interesting things to do?
+assistant: Sure. In what area would you like me to look for events for you to do? Also is there a particular type of event you would prefer?
+user: I really like Music events, and something in Portland would be best.
+tool(FindEvents): ok n_results=8
+assistant: Bastille is a very popular event taking place at the Theater of The Clouds on March 10th at 5:30 pm.
+user: I've heard of them, but can you find me something on next Tuesday? Something in New York would be best.
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events which meet your criteria. How about Abbi Jacobson at the Kaufmann Concert Hall on March 5th at 5 pm?
+user: Maybe. How much is a ticket?
+assistant: Tickets cost $40 each.
+user: Yea, that will work for me.
+assistant: Would you like to purchase tickets to this event?
+user: No, not right now. That will be all, thank you.
+assistant: Okay, no problem. Enjoy the rest of your day.

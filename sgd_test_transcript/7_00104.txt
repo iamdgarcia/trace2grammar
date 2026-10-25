@@ -1,0 +1,17 @@
+user: Hey, can you help me get movie tickets to IT Chapter Two.
+assistant: How many tickets do you need.
+user: Only 1 ticket.
+assistant: When do you want to watch the movie and where are you located?
+user: I want to go on March 6th. And I'm located in San Jose.
+assistant: Is there a specific type of theater you want? And what viewing time is good for you?
+user: I think an imax showing would be cool. And I want to see it at the evening 7:45. Also can you look for shows on the 1st in San Ramon?
+assistant: I can get you 1 imax ticket for IT Chapter Two on March 1st at 7:45 pm in San Ramon. Is this good?
+user: Wait, no. Can I actually do 3d.
+assistant: I'll get you 1 3d ticket.
+user: Yes, that's good. Is there a theater that you recommend? And what's the address for it?
+tool(BuyMovieTickets): ok n_results=1
+assistant: I recommend Regal Crow Canyon on 2525 San Ramon Valley Boulevard.
+user: Thanks for all the assistance.
+assistant: Do you need any further help?
+user: Nope, thanks again.
+assistant: Have a fine day.

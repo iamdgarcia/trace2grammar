@@ -1,0 +1,39 @@
+user: I want to find a round trip flight.
+assistant: What day do you want to return?
+user: I want to return on the 13th of this month.
+assistant: Where are you traveling to?
+user: I'm going to Portland, OR.
+assistant: What date are you leaving?
+user: I want to leave on the 1st of March.
+assistant: What city do you want to leave from?
+user: I'm leaving from LA.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Do you want to fly Alaska Airlines? There is an onward flight that leaves at 4:40 am with a layover. The returning flight departs at 5:10 pm. The ticket is $257.
+user: Anything other flights?
+assistant: What about the Delta Airlines flight that leaves at 10:20 am. It's a direct flight. The returning flight departs at 9:25 am. The ticket is $208.
+user: When does the return flight arrive?
+assistant: The return flight arrives at 11:55 am.
+user: Sounds good. I'd like to find a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. 1000 Northeast Multnomah Street is a great house rated 4.1.
+user: I want to find a house rated 4.7 or higher for 1 person.
+tool(SearchHouse): ok n_results=1
+assistant: There's a house at 425 Northwest 9th Avenue rated 4.7.
+user: That sounds wonderful. I want to book the house and check out on March 9th.
+assistant: Do you want to check in on March 1st?
+user: I'd like to check in Friday next week.
+assistant: Please confirm: House in Portland for 1 person. Check in March 8th and check out March 9th.
+user: No I'd like to check out on the 13th of this month. I want to check in on Wednesday next week.
+assistant: Please confirm: Check in is March 6th and check out is March 13th.
+user: Yes, sounds good. What's the phone number? How much does it cost?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made. The price is $784 and the phone number is +1 971-351-0230.
+user: I want to find some attractions there. Something without an entry fee, preferably. And something child-friendly.
+tool(FindAttractions): ok n_results=7
+assistant: Crystal Springs Rhododendron Garden is a popular park.
+user: What's the phone number?
+assistant: The phone number is 503-771-8386.
+user: Okay, sounds great.
+assistant: Anything else I can do for you?
+user: No, that's all. Thank you so much.
+assistant: Have a great day!

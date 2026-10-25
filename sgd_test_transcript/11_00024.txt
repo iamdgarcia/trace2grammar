@@ -1,0 +1,20 @@
+user: I am going on vacation and will travellling to Kuala Lumpur. Will you search for a housethat is rated 3.8 or higher. It will be for one person.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 houses you may enjoy. There is a beautiful house located at 1, Jalan Pantai Jaya Tower 3, 59200 with a rating of 3.8.
+user: Please provide me with a contact number for this place.
+assistant: The phone number I have is +60 3-2298 1888.
+user: Wow, this house is beautiful!
+assistant: Are you interested in reserving this house?
+user: Definitely, I would like to make reservations for this house.
+assistant: On what day will you be arriving and what day will you be leaving?
+user: I plan on checking in on Tuesday, next week and departing on the 8th.
+assistant: Please confirm you would like to reserve the house on Kuala Lumpur for 1 person arriving on March 5th and leaving on March 8th.
+user: That is correct. What will be the final cost?
+tool(BookHouse): ok n_results=1
+assistant: The house has been reserved. The cost will be $1,116.
+user: Is laundry service available at this place?
+assistant: Yes, this place has laundry service.
+user: Thank you very much for your assistance!
+assistant: May I assist you with anything else today?
+user: No, thank you. That is all I need at the moment.
+assistant: It's been my pleasure to assist you! Have a good day!

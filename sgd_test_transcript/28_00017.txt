@@ -1,0 +1,28 @@
+user: Any movie you can find that I can watch, something I will really enjoy?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies you may enjoy, how about The Lord of the Rings: The Return of the King, which has an average rating of 93 out of 100.
+user: Is there anything else you can find, a movie directed by Thurop Van Orman perhaps?
+tool(FindMovies): ok n_results=1
+assistant: You may be interested in The Angry Birds Movie 2, this movie has an average rating of 72 out of 100.
+user: That movie sounds good, can you find me a restaurant that has a cheap menu?
+assistant: Can you tell me which location I should look for restaurants, and what kind of food you prefer to eat?
+user: Search for restaurants in San Jose, that serve dumplings.
+tool(FindRestaurants): ok n_results=5
+assistant: May I recommend the Golden House Restaurant, this restaurant is located in San Jose.
+user: Can you tell me their phone number, and whether they have vegetarian options?
+assistant: The restaurant has good vegetarian options you could consider, contact them by calling 408-225-8001.
+user: On second thought, can you recommend me another restaurant?
+assistant: Sure, another nice restaurant in San Jose is K K Chinese.
+user: That restaurant sounds good, thanks for finding it.
+assistant: Shall I book a table to this restaurant.
+user: Sure, please reserve me a table to this restaurant.
+assistant: At what time shall I make a reservation to this establishment?
+user: Book a table at one in the afternoon if available.
+assistant: You wish to book a table for 2 at 1 pm on March 1st at K K Chinese, located in San Jose correct?
+user: That is correct, does this restaurant have outdoor seating and whats its user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was made, the restaurant has no outdoor seating and its user rating is around 3.4.
+user: All right, thanks for the information and help.
+assistant: May I help you in any other way today?
+user: That was all I needed for now, thanks again for your help.
+assistant: No problem, have a good day.

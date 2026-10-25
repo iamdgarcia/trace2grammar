@@ -1,0 +1,21 @@
+user: I'd like to find a nice reasonably priced restaurant.
+assistant: What sort of food do you want to eat?
+user: How about Seafood?
+assistant: What location do you want me to look in?
+user: Find Walnut Creek restaurants.
+tool(FindRestaurants): ok n_results=4
+assistant: I have 4 restaurants that may work. What about Andy's Sushi in Walnut Creek?
+user: Do you have something else, with vegetarian options? How about Greek food?
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 restaurant called Opa Authentic Greek Cuisine Walnut Creek. It's in Walnut Creek.
+user: Sounds fabulous.
+assistant: Would you like to make a reservation?
+user: Yes, reserve a table. I am interested in a table for 3rd of March. Make the reservation for 19:15.
+assistant: Could you confirm that you want to book a table at Opa Authentic Greek Cuisine Walnut Creek in Walnut Creek? Your reservtion is at 7:15 pm on March 3rd for 2 people
+user: Sounds good. Tell me the restaurant's user rating.
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a user rating of about 4.2. Sorry, but I could not make a reservation. Should I try to make the reservation fo 2 people at Opa Opa Authentic Greek Cuisine Walnut Creek for March 3rd at 7 pm?
+user: No, thanks.
+assistant: Could I assist with anything further?
+user: No, but thank you.
+assistant: Have a nice day.

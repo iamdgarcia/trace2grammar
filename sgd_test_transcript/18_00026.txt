@@ -1,0 +1,23 @@
+user: Tell me what the weather will be Monday next week.
+assistant: What city do you want me to check?
+user: Check in SD.
+tool(GetWeather): ok n_results=1
+assistant: The normal temperature is 75 degrees with a 7 percent chance of precipitation.
+user: What is the wind speed?
+assistant: Winds average 9 miles an hour.
+user: I see. Get me a one-way flight in any class for 1 person to go there on Monday next week.
+assistant: What city are you leaving?
+user: Search for flights out of Washington.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: Search revealed 2 results. American Airlines takes off at 10:30 am, has a layover, and costs $243.
+user: That works for me. I need a rental car when I arrive too.
+assistant: Will you be picking up the car on March 4th and if so what time do you want to get it? When will you return the car?
+user: I want to pick it up at 2 o'clock in the afternoon on the 5th of March and will return it on the 6th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Search revealed 10 results. There is a SUV Citroen C5 at SAN International Airport.
+user: What else do you have?
+assistant: A Sedan Hyundai Ioniq is available at Santa Fe Depot.
+user: That works for me.
+assistant: Shall I get the car for you?
+user: No, not right now. That is all.
+assistant: Have a great day.

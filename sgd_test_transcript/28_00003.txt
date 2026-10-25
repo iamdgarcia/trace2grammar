@@ -1,0 +1,26 @@
+user: Hi, could you help me find a movie to watch please?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 available movies, how about Angel Has Fallen with a 39 percent rating?
+user: May I know who starred in this movie?
+assistant: The movie features Nick Nolte.
+user: I see, are there any alternatives?
+assistant: How about Steel Magnolias with a 70 percent rating?
+user: Anything else that is Science related directed by Steven Spielberg?
+tool(FindMovies): ok n_results=1
+assistant: How about Close Encounters of the Third kind with a 95 percent rating?
+user: Sounds great, could you get me a pricey restaurant with vegetarian options please?
+assistant: What type of food and location would you prefer?
+user: Find me some Parisian food in Berkeley please.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 restaurants you might like in Berkeley, how about Antoinette Restaurant.
+user: Yes, that is what I want. Could you get me a reservation please?
+assistant: And what time will you be dining?
+user: Please reserve it at eleven am please.
+assistant: Please confirm your booking for 2 at Antoinette Restaurant in Berkeley at 11 am on March 1st.
+user: Sure, may I have their user rating and contact number please?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. You can contact them at 510-549-8585 and they have a 2.0 rating.
+user: I see, thanks a bunch!
+assistant: Could I further assist you then?
+user: No, that is all I need. Thanks!
+assistant: Have a great day ahead.

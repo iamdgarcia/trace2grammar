@@ -1,0 +1,35 @@
+user: I am looking for for tickets on a bus.
+assistant: Can you please tell me your preferred destination, city of departure and the number of tickets?
+user: I am looking for one ticket in a bus going from Fresno to Vegas.
+assistant: What should I put as the date and time of departure?
+user: I am planning to leave at afternoon 1:15 on 10th of March.
+assistant: Please confirm: You want me to book 1 ticket in a bus going from Fresno to Las Vegas, departing at 1:15 pm on March 10th. And you don't have extra luggage.
+user: Yes, That is correct. Also find me the names of the stations it arrives at and depart from.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, But due to some reasons your tickets could not be purchased. Is there anything else I can assist you with?
+user: Can you please try again booking the tickets in a bus going from SF to Sacramento at afternoon 2:15?
+assistant: Please confirm: You want me to book 1 ticket in a bus going from San Francisco to Sacramento, departing at 2:15 pm on March 10th. And you don't have extra luggage.
+user: Yes, That sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, But due to some reasons your tickets could not be purchased. Do you want me to retry in bus departing at 2:20 pm with the ticket cost of $24?
+user: Yes, That sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked your tickets.
+user: Thank you so much!
+assistant: Is there anything else I can assist you with?
+user: Find me one room in a nice hotel in that area too.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels you may like. How about a nice 3 star hotel called Courtyard By Marriott Sacramento Cal Expo?
+user: Okay. Now find me their phone number and street address.
+assistant: You can call them on +1 916-929-7900 and the street address is 1782 Tribute Road.
+user: That sounds nice to me. Please reserve a room in that hotel.
+assistant: What should I put as the check in date?
+user: I will be checking in on Thursday next week.
+assistant: And what will be your duration of stay?
+user: I would like to book the room for 6 days.
+assistant: Please confirm: You want me to book 1 room in a nice hotel called Courtyard By Marriott Sacramento Cal Expo located in Sacramento for 6 days. And date of check in is March 7th.
+user: Yes, That is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: your reservation has been successfully made.
+user: Okay. That will be for now. Thank you!
+assistant: I am glad I could help. Thank you!

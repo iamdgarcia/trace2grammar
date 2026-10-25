@@ -1,0 +1,17 @@
+user: I need help finding a good movie online.
+assistant: I can help you, what type of movies do you prefer?
+user: I really enjoy drama flicks.
+tool(FindMovies): ok n_results=10
+assistant: I have found 10 drama films. Would you like to see A Faithful Man, After The Wedding or Blinded by the Light?
+user: I would like to view A Faithful Man.
+assistant: I can start the movie if you like?
+user: Yes please and thank you.
+assistant: Great! Would you like for me to start A Faithful Man with English subtitles?
+user: Yes the would be fine. Who is the lead actor of this movie?
+tool(PlayMovie): ok n_results=1
+assistant: The lead actor is Bakary Sangare.
+user: Thank you. Can you also tell me what the weather is like in Daly City?
+tool(GetWeather): ok n_results=1
+assistant: Sure, I show the temperature will is 77 degrees and there is a 6 percent chance for rain.
+user: Okay, thank you for that information. That will be all I need. Thank you. Bye!
+assistant: You are welcome, goodbye.

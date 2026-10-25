@@ -1,0 +1,14 @@
+user: Can you check to see if there's a concert in the Philly area?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 concerts. Anthony Green is playing at The Foundry on March 10th at 6 pm.
+user: How much are the tickets?
+assistant: They are $60 each.
+user: Perfect. I'd like to get four tickets.
+assistant: To confirm: You would like 4 tickets to see Anthony Green on March 10th in Philadelphia.
+user: You got it.
+tool(BuyEventTickets): ok n_results=1
+assistant: You're tickets are confirmed. Enjoy the concert.
+user: Thank you so much.
+assistant: Is there anything else I can do for you?
+user: No, that's all I need for now. Thanks.
+assistant: Enjoy the rest of your day.

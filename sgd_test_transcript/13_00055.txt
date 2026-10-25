@@ -1,0 +1,14 @@
+user: I wish to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: What is your opinion about The Lord of the Rings: The Return of the King with a rating of 93 for 100?
+user: It is nice. I wish to search for some what interesting to do like Concert.
+assistant: Which is your preferred city?
+user: I need something around London.
+tool(FindEvents): ok n_results=10
+assistant: I searched and found 10 events for you. The event Dimension is nice taking place at Electric Brixton on March 11th at 6 pm.
+user: It is nice. Could you please search some other events?
+assistant: for you. The event Efg is nice taking place at Purcell Room on March 6th at 4 pm.
+user: It is nice.
+assistant: Shall I get tickets?
+user: Nope. I don't need it now. That is what I want.
+assistant: Have a fantastic day.

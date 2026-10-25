@@ -1,0 +1,12 @@
+user: I want to find a train, any fare class will do
+assistant: Where are you leaving from and what date?
+user: I want a ticket from Seattle on the 12th
+assistant: Sure, where are you heading?
+user: I'm gonna make my way to Portland
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains that would work for you, so how about this 8 am train that costs $67?
+user: That's good for me, now help me find a house to stay in
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses I found, and one is rated 4.1 and it's at 1000 Northeast Multnomah Street.
+user: That's awesome, that's it for me right now
+assistant: Sure, glad I could be of help

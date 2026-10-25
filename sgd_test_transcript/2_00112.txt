@@ -1,0 +1,11 @@
+user: I'm taking a trip to Portland on the 6th of March. Can you find me a one flight? I will only be purchasing one ticket.
+assistant: Okay no problem. What city are you departing from?
+user: I will be leaving out of NY.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Okay, I've found 4 flights for you. Are you okay with flight American Airlines? There is a connecting flight taking off at 4:25 am. The ticket will be $278.
+user: No that's not what I'm looking for. Find something else for me.
+assistant: How about Delta Airlines? There is a connecting flight taking off at 5:30 am. Tickets are $313.
+user: Is this economy or business class?
+assistant: The ticket is for an Economy class seat.
+user: Okay, well that sounds good. That's all I need for now.
+assistant: My pleasure. Have a good day.

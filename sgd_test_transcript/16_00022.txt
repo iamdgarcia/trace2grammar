@@ -1,0 +1,38 @@
+user: I want to find a salon in SFO please.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 I can suggest. How about 1512 Barber Shop, which is a well-liked San Francisco salon?
+user: May I have the number there?
+assistant: Of course, that's 415-286-4371.
+user: Okay, thanks for that.
+assistant: Would you like to make an appointment?
+user: Not just yet.
+assistant: How else may I assist you?
+user: I need to find a therapist around there please.
+assistant: In San Francisco? And what type of therapist please?
+user: Yes, in San Francisco, and I want a psychologist.
+tool(FindProvider): ok n_results=4
+assistant: I have 4 options to tell you about. Adam E. Pollock is a psychologist in San Francisco.
+user: What is the office number for him?
+assistant: The number there is 415-346-2356.
+user: That's good, thanks.
+assistant: Shall I make an appointment for you?
+user: Yes, please set something up for Thursday next week at 12:30.
+assistant: Confirming a 12:30 PM appointment on March 7th with Adam E. Pollock.
+user: Actually let's do it at 1 in the afternoon.
+assistant: Confirming a 1 PM appointment on March 7th.
+user: That's right, thank you. May I have the address?
+tool(BookAppointment): ok n_results=1
+assistant: Of course, it's 100 Masonic Avenue. The appointment has been successfully scheduled and you will receive a confirmation email shortly.
+user: Thank you very much. I'd also like to make a salon appointment please at the one that you found.
+assistant: What time would you like that?
+user: I'd like it at quarter to 5 in the evening.
+assistant: Confirming an appointment at 4:45 PM on March 7th at 1512 Barber Shop.
+user: I'm sorry, please change that to quarter past 6 in the evening.
+assistant: Confirming an appointment at 6:15 PM at 1512 Barber Shop.
+user: That's perfect, thanks.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been scheduled.
+user: Thanks for all your help.
+assistant: Do you need anything else right now?
+user: No, I sure don't.
+assistant: Have a great day.

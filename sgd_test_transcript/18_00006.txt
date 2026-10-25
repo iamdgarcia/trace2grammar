@@ -1,0 +1,17 @@
+user: I want to know about the weather in Toronto, Canada on the 4th of this month.
+tool(GetWeather): ok n_results=1
+assistant: The temperature average will be 70 degrees Fahrenheit and there will be a 38 percent chance for rain.
+user: Okay, thanks for that.
+assistant: Do you need me to do anything else?
+user: I need two tickets for a one way flight there. Preferably with United Airlines.
+assistant: Will you be departing on March 4th?
+user: I'm planning on departing today from Washington.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 flight that matches. It is on United Airlines and leaves at 3:05 pm. It's direct and is $95.
+user: Yeah, that works. I also need a rental car when I get there.
+assistant: Do you want the car starting on March 4th? And when will you need it until? And what time do you want pick up to be?
+user: I want it from March 3rd until next Wednesday with a pick up of 20:15.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a nice Sedan Buick Regal Sportback from Toronto Pearson International Airport available for that period.
+user: Okay, nice. I don't need any further help.
+assistant: Have a terrific day.

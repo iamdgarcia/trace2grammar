@@ -1,0 +1,24 @@
+user: While I'm in Vancouver, BC, I want to have some fun. Can you list off some attractions I can attend on March 6th.
+assistant: Do you want Music or Theater? Or do you wish something completely different? Please let me know.
+user: The theater sounds like it would be right up my alley.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events that may pique your interest. On March 6th at 7:30 PM, there will be an event you may like. At the SFU Gallery, there is a program called Cinderella Kids.
+user: Oh that sounds like a lovely time. I want a house to stay at while I'm in Vancouver. I need one for 3 people with a 4.2 rating or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a home with a rating of 4.2 located at 1018 Granville Street.
+user: Oh this house looks fantastic. Okay, on to the next thing. I require 4 bus tickets for transportation on March 1st. Direct or not is fine by me.
+assistant: Please name the departure city.
+user: I'll be leaving from Portland on March 1st.
+tool(FindBus): ok n_results=7
+assistant: There is a bus leaving on March 1st at 7:10 am. It will cost $36.
+user: That should work for us. Now, please purchase tickets to the Cinderella Kids event.
+assistant: Confirm the following transaction: Purchasing 4 tickets to the Cinderella Kids event on March 6th in Vancouver.
+user: Please go ahead and buy those tickets. I'm sure we'll enjoy that.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased and reserved.
+user: How much do the tickets cost a piece? Also, can you tell me the address of the venue?
+assistant: The cost of the ticket is $30 each. SFU Gallery is located at 149 West Hastings Street.
+user: Thank you for helping me with my schedule.
+assistant: No problem. I'm happy to help you with anything else you need as well.
+user: That's all for today. Thank you again.
+assistant: Please enjoy the rest of your day.

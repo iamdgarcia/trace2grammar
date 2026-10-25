@@ -1,0 +1,17 @@
+user: I want to find a movie to watch please
+tool(FindMovies): ok n_results=10
+assistant: Sure, how about Labyrinth which has a 70 rating
+user: Who directed it? And what genre is it?
+assistant: It's a Jim Henson Fantasy film
+user: That sounds good! Can you help me find a Stage Show I could catch when I visit Chi-town on the 13th?
+tool(FindEvents): ok n_results=10
+assistant: Sure, I found 10 events on March 13th, including a 5 pm show of All That He Was at The Buena, Pride Arts Center!
+user: How much is entry?
+assistant: A ticket is $25
+user: That's good but can you find me some Musical shows I can catch next Friday instead?
+tool(FindEvents): ok n_results=6
+assistant: Ashe is a popular show at the Chop shop and there's a show on March 8th at 5 pm
+user: How much is that?
+assistant: It's a little pricier at $40
+user: OK that's great, thanks for now, bye
+assistant: OK, bye to you too!

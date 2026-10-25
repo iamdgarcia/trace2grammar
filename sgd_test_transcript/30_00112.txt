@@ -1,0 +1,37 @@
+user: I need to find a unisex salon.
+assistant: What city should I look in?
+user: I would like a salon in San Ramon.
+tool(FindProvider): ok n_results=4
+assistant: In San Ramon is a nice salon called Hair By Jane Joo In San Ramon.
+user: Will you find me a different salon?
+assistant: In San Ramon Sport Clips Haircuts of San Ramon.
+user: What will be its average rating?
+assistant: The average rating is 4.3.
+user: Tell me the address and contact number.
+assistant: The address is 120 Market Place and phone is 925-866-2887.
+user: Yes, that sounds nice and I'd like to watch a movie around there. Any type of show will be fine.
+tool(FindMovies): ok n_results=6
+assistant: What about Angel Has Fallen, Hustlers, or IT Chapter Two?
+user: Please find me some other dramatic story movie to watch at Regal Crow Canyon.
+tool(FindMovies): ok n_results=2
+assistant: What about The Art of Racing in the Rain?
+user: Racing in the Rain is perfect so what time can I watch it. I'd like to watch it this Saturday.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is a show at 7:30 pm in Regal Crow Canyon.
+user: What is the cost of the ticket and the address of the theater?
+assistant: The address is 2525 San Ramon Valley Boulevard for the theater and the price is $12 a person.
+user: That sounds nice.
+assistant: Do you want to buy tickets?
+user: I don't want to purchase now.
+assistant: What else can I help you with?
+user: I would like to book an appointment at the salon you found on that day.
+assistant: What time would you like your appointment.
+user: I would like an appointment at 1 pm.
+assistant: Please confirm details for the hair stylist at Sport Clips Haircuts of San Ramon at 1 pm for an appointment on March 2nd.
+user: Yes that is nice.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is confirmed.
+user: Thanks so much.
+assistant: What else can I assist you with?
+user: No thanks so much.
+assistant: Have a nice day.

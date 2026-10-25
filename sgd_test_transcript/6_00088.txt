@@ -1,0 +1,16 @@
+user: I need help finding a salon in SFO. Can you help me out?
+tool(FindProvider): ok n_results=10
+assistant: Sure thing. I've found 10 salons you may like. How about the 1512 Barber Shop in San Francisco? I hear it is pretty nice.
+user: What's the rating?
+assistant: They are rated at 4.8 stars.
+user: Okay, that sounds great.
+assistant: Would you like to go ahead and make an appointment?
+user: Yes, absolutely. Let's do it.
+assistant: Okay, what date shall I make your appointment?
+user: Can you make the appointment for 6:15 in the evening on the 5th?
+assistant: Okay, first let me confirm the following details. You want to make an appointment at 1512 Barber Shop for 6:15 pm on March 5th. Is this correct?
+user: Yes, that is exactly right. Also, can you find their number for me?
+tool(BookAppointment): ok n_results=1
+assistant: Okay, your appointment is confirmed. Their phone number is 415-286-4371.
+user: Okay, that's all I need. Thank you very much.
+assistant: My pleasure. Have a pleasant day.

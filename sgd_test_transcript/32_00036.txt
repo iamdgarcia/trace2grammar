@@ -1,0 +1,24 @@
+user: I need to search for songs now.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs including Boyfriend by Justin Bieber from the album Believe. What do you think?
+user: Yes, that would be it. Tell me if there are some good movies online.
+assistant: What type of movies do you like?
+user: I like Fantasy movies as they are great.
+tool(FindMovies): ok n_results=2
+assistant: They're 2 movies you might like. What about the movies Labyrinth or The Lord of the Rings: The Return of the King?
+user: The Lord of the Rings would be good. Can you play that song you found just now by casting it on the living room speaker?
+assistant: Please confirm details to play the song Boyfriend in Living Room.
+user: No, cast it on my kitchen.
+assistant: Please confirm details to play the song Boyfriend in the Kitchen.
+user: Yes, that would be correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Please show me my alarms.
+tool(GetAlarms): ok n_results=3
+assistant: I have 3 alarms set currently. One is for 6:30 am with the name Get up.
+user: Okay that is great.
+assistant: Would you like to add an alarm?
+user: No, I don't need any new alarms now.
+assistant: Is there anything else I can assist with?
+user: No thanks so much.
+assistant: Thanks to you.

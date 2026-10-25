@@ -1,0 +1,21 @@
+user: I want to travel during my holidays and I need to book a bus for me. Can you help me to search for the one?
+assistant: Yes, To which place you are going to travel and where do you need the bus?
+user: Please search for the bus from Fresno, CA to SD.
+assistant: What is your expected departure date?
+user: I want to leave on 6th of March. Search for the one from that date.
+tool(FindBus): ok n_results=6
+assistant: What about a bus leaving at 6:50 am which costs $47?
+user: I need some other options and the same for 3 persons.
+tool(FindBus): ok n_results=6
+assistant: Okay, let me know your interest to travel on a bus leaving at 8:20 am which costs $48.
+user: What is the arrival place of this bus?
+assistant: It will arrive at El Cajon Bus Stop. Hope it is okay for you.
+user: Yes, It is okay for me and I need to book the tickets now.
+assistant: I need your confirmation to book 3 tickets on a Bus leaving from Fresno on March 6th at 8:20 am to San Diego without any extra luggage.
+user: yes, that is confirmed to proceed.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked the tickets.
+user: Thank you so much.
+assistant: Anything else you need from me to do?
+user: No, nothing for now. Thanks.
+assistant: Have a good day.

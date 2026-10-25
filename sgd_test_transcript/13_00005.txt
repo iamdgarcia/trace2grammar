@@ -1,0 +1,26 @@
+user: I'd like to attend a concert in NY on the 5th of this month. Can you recommend anything?
+tool(FindEvents): ok n_results=10
+assistant: Kaufmann Concert Hall is hosting the very popular Abbi Jacobson on March 5th a 5 pm.
+user: Can you see what's available on the 9th of March instead?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 concerts happening on March 9th. Alpha Blondy will be playing at Sony Hall at 7:30 pm.
+user: Great. Can you make a payment request for me?
+assistant: I'd be happy to. What is the name of the contact and how much are you requesting?
+user: I need to ask Amelia for 135 dollars.
+assistant: You'd like to make a public transaction with Amelia for $135. Is this correct?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have made your payment request.
+user: Can you purchase tickets to the concert now?
+assistant: Of course. How many are in your party?
+user: I'll need 4 tickets in total.
+assistant: You'd like 4 tickets to see Alpha Blondy on March 9th in New York. Is that correct?
+user: I'm sorry, I only need 2 tickets.
+assistant: You'd like 2 tickets to the show in New York.
+user: Yes, that's right. Can you tell me the price of a ticket and what the address of the venue is?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets cost $25 and the address is 235 West 46th Street. The purchase was successful and you will receive an email receipt shortly.
+user: Great. Thank you for all of your help.
+assistant: Not a problem. Is there anything else I can do for you?
+user: No, you've been most helpful.
+assistant: Have a wonderful day.

@@ -1,0 +1,43 @@
+user: Help me find a therapist.
+assistant: Are you looking for a specialist like a Psychiatrist or Family Counselor? In which city would you like to see the therapist?
+user: Find me a Psychologist in Santa Rosa.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 therapists who might be suitable. You might want to try Bert Epstein, a Psychologist in Santa Rosa.
+user: That you for the recommendation.
+assistant: Shall I book an appointment for you with the therapist?
+user: Yes, can you book one for 2:30 in the afternoon on March 12th?
+assistant: Please confirm that you would like an appointment with Bert Epstein at 2:30 pm on March 12th.
+user: Yes, that sounds right to me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked and you should receive an e-mail confirmation soon.
+user: Thanks a bunch! Much appreciated.
+assistant: Is there anything else you would like me to do?
+user: Just remembered that I need to request a payment.
+assistant: From whom would you like to request payment?
+user: Send the request to Jerry.
+assistant: How much would you like to request for?
+user: It's a request for eighty four dollars.
+assistant: Please confirm that you want request $84 from Jerry via a public transaction.
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was made successfully.
+user: Find me a vegetarian restaurant in any price range there for a meal on that day.
+assistant: Are you looking for any specific cuisine?
+user: I'd prefer one that serves Mexican food.
+tool(FindRestaurants): ok n_results=1
+assistant: There is a nice Mexican restaurant called Chevys Fresh Mex in Santa Rosa.
+user: Can you get me their address and phone number please?
+assistant: They are located at 24 4th Street and their phone number is 707-571-1082.
+user: Thank you for getting me the information.
+assistant: Is there anything else I can do for you?
+user: I'd like to book a table at the restaurant.
+assistant: At what time would you prefer the reservation?
+user: Make it 11:30 in the morning.
+assistant: Please confirm that you want to reserve a table for 2 at the Chevys Fresh Mex restaurant in Santa Rosa at 11:30 am on March 12th.
+user: Yes, that's perfect!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, the reservation was unsuccessful. Would you like me to try and reserve a table for 2 at Chevys Fresh Mex at 11 am on March 12th?
+user: No, that won't work for me.
+assistant: Is there anything else I can assist you with?
+user: No. That'll be all for now. Thanks a ton!
+assistant: Have a great day!

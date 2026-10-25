@@ -1,0 +1,10 @@
+user: Could you help me find some cool attractions to check out?
+assistant: Sure, no problem, which city should I be looking in?
+user: I'm in Paris, France and I'd especially like to find a Museum.
+tool(FindAttractions): ok n_results=10
+assistant: Oh in that case you should go see the Choco-Story Paris - Musee du Chocolat. It's a chocolate museum.
+user: That sounds really fun. Any other great attractions you can find? This time maybe try in London, England. I'm open to anything.
+tool(FindAttractions): ok n_results=10
+assistant: Definitely, you might like to see 30 St Mary Axe (The Gherkin) which is actually a historical landmark.
+user: Oh great, that's everything then, thanks!
+assistant: Have a good time!

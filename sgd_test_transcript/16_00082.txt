@@ -1,0 +1,30 @@
+user: Can you help me get some bus tickets, please?
+assistant: Sure. But first tell me how many will you be needing and when as well as from where are you departing.
+user: I need 3 tickets from Long Beach on March 11th.
+assistant: Now please tell me your destination.
+user: I plan to go Fresno, CA.
+assistant: Do you have a particular departure time.
+user: I'd like to leave at morning 11:45.
+assistant: Can you please confirm that you want 3 tickets with no extra luggage for the bus departing on March 11th at 11:45 am from Long Beach to Fresno?
+user: Yes, that correct. Please tell me the number of stops that the bus has.
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus is direct but unfortunately I wasn't able to book your tickets. Are you OK with the bus leaving at 11:20 am. Tickets are $43.
+user: Yes, that's OK for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've successfully booked your tickets.
+user: Thanks a lot. Can you also find me some hotels in the area, please?
+tool(SearchHotel): ok n_results=4
+assistant: There are 4 hotels in the area out of which I'd recommend the very nice 3 star Doubletree By Hilton Hotel Fresno Convention Center.
+user: Sounds perfect for me.
+assistant: Do you want me to place a reservation for you?
+user: Yes, please do.
+assistant: OK, please tell me your check in date and the length of your stay.
+user: I plan to check in on the 6th of March, staying for seven days.
+assistant: Can you please confirm that you want 1 room at Doubletree by Hilton Hotel Fresno Convention Center in Fresno for 7 days from March 6th?
+user: On second thought, I want to check in Monday next week.
+assistant: Can you please confirm that you want to check in on March 4th at Doubletree by Hilton Hotel Fresno Convention Center
+user: Yes, that's correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I've successfully booked your room.
+user: Thanks for everything. That will be all for now!
+assistant: My pleasure. Have a nice day!

@@ -1,0 +1,31 @@
+user: I'm looking for a train to LA, Can you help?
+assistant: When do you thing you will go? Do you know what city you'll be leaving?
+user: I want to leave Phoenix on the 4th of this month.
+tool(FindTrains): ok n_results=5
+assistant: You could try the first train out at 7 am. It costs $95.
+user: What about something later, maybe try the 11th of this month. I just need one.
+tool(FindTrains): ok n_results=4
+assistant: There are 4 then. What about the 7:20 am bus then? Tickets are $93.
+user: Fine, what about something interesting to do in LA? Any ideas on my day there?
+assistant: What type of thing catches your fancy? For instance Music or Theater?
+user: I do like some songs.
+tool(FindEvents): ok n_results=10
+assistant: Well, what about checking out Ralph Freud Playhouse, Ain Gordon is playing there on March 9th at 7 pm?
+user: Fine but what about some type Broadway type show? I would like it to be on the 14th of this month.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 plays, starting with Anything Goes. It's at the Upright Citizens Brigade Sunset. It happens to be on March 14th at 4 pm.
+user: Fine but try again please. I'm interested in March 13th now.
+tool(FindEvents): ok n_results=10
+assistant: Well, you could try Asssscat. It's at Upright Citizens Brigade Sunset on March 13th at 6:30 pm. What do you think?
+user: Great, what about some attractions or other things to see there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 options for you, alphabetically starting with Angels Flight Railway, It's a Historical Landmark.
+user: How much does it cost? What's their phone?
+assistant: It is free and you can phone them at 213-626-1901.
+user: Fine, get me a house to stay in while there, there are 2 of us and we need at least a 4.5 rating.
+tool(SearchHouse): ok n_results=10
+assistant: You could check out 1800 Argyle Avenue, it has a 4.5 rating.
+user: That's a real beauty there.
+assistant: Shall I reserve it for you?
+user: No, I just require information now.
+assistant: I do love helping you, bye.

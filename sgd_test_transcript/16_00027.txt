@@ -1,0 +1,34 @@
+user: I want to change my hairstyle for which I need your help to find an Unisex salon.
+assistant: Where do you want to search for it?
+user: Search it in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: I got 10 Salons around your preferred area. What about the one at 18/8 Fine Men's Salons - Palo Alto located in Palo Alto?
+user: That I think is the suitable one. Now, I want to search for a Therapist in the same area that means in Palo Alto.
+assistant: What type of therapist you need to meet whether a Family Counselor or a Psychiatrist?
+user: I want to meet a Psychiatrist and search for someone in that area.
+tool(FindProvider): ok n_results=2
+assistant: I got details about 2 therapist. What about your opinion to meet Ariela Ora Karasov? who is also a Psychiatrist in Palo Alto.
+user: Let me decide, before that please let me know the phone number and address of that Therapist.
+assistant: You can contact them on 650-723-8659 and they are located at 401 Quarry Road #2204.
+user: Okay, that's fine. Thanks.
+assistant: Shall I book an appointment with that Therapist?
+user: Yes, book it now.
+assistant: Okay, let me know your convenient date and time to book the same.
+user: Book it on March 14th for the time 12 o'clock in the afternoon.
+assistant: Please confirm to book an appointment with the Therapist Ariela Ora Karasov for the time 12 pm on March 14th.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment and they send an confirmation e-mail to you shortly.
+user: Thank you so much. Now we go back to the booking of appointment with the salon that you have found for me before.
+assistant: What is your preferred time to book it?
+user: Book it at 5:45 pm.
+assistant: I need your confirmation to book an appointment with the Salon at 18/8 Fine Men's Salons - Palo Alto on March 14th at 5:45 pm.
+user: That is confirmed. You can proceed and get me their phone number for my reference.
+tool(BookAppointment): ok n_results=1
+assistant: You can contact them on 650-460-8290 and I have book the appointment successfully.
+user: Also let me know their address and average rating.
+assistant: They are located at 855 El Camino Real Building #1 Suite #3 and their rating is 3.9.
+user: Thanks for the information.
+assistant: How can I help you further?
+user: No, thanks and that's all.
+assistant: Have a good day.

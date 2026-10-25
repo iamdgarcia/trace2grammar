@@ -1,0 +1,14 @@
+user: Can you find me a train headed to Philadelphia on the 4th of March?
+assistant: Sure, where do you depart from?
+user: I'll be coming from Washington
+tool(FindTrains): ok n_results=8
+assistant: There's a $54 train that leaves at 6 am
+user: That sounds awesome!
+assistant: Do you want me to book you tickets?
+user: No not right now, but I need to find a house with laundry service
+tool(SearchHouse): ok n_results=10
+assistant: There's a 4.5 rated place on 1 Logan Square
+user: That's a great house!
+assistant: Do you want to reserve it now?
+user: No not right now, thanks for everything
+assistant: Sure, update me!

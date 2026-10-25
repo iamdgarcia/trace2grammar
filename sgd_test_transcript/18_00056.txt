@@ -1,0 +1,30 @@
+user: I am looking for a therapist.
+assistant: Which city you want me to look in?
+user: I am looking for a therapist in Santa Rosa.
+assistant: Are you looking for a Family Counselor or a Psychologist or any other kind?
+user: I am looking for a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: How about nice psychologist called Bert Epstein located in Santa Rosa?
+user: That sounds good to me.
+assistant: Would you like me to book an appointment with the therapist?
+user: Yes, Please book an appointment for 9th of March at 2:30 in the afternoon.
+assistant: Please confirm: You want me to book an appointment with Bert Epstein for March 9th at 2:30 pm.
+user: Yes, That is correct.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, Your appointment could not be booked due to some reasons. Can I help you with anything else?
+user: I want you to try again with the date of appointment as 13th of this month.
+assistant: Please confirm: You want me to book an appointment with Bert Epstein for March 13th at 2:30 pm.
+user: Yes, That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment. You will shortly receive a confirmation mail.
+user: Can you find me their address and the phone number?
+assistant: Their phone number is 707-242-1989 and the address is 2455 Bennett Valley Road.
+user: Thank you! I want to book an Expensive ride in a cab to go there for one people.
+assistant: Please confirm: You want me to book a Luxury ride in a cab to 2455 Bennett Valley Road for 1 people.
+user: Yes, That is correct. Find me the total cost and the expected arrival time.
+tool(GetRide): ok n_results=1
+assistant: Your ride is successfully booked and the cab will arrive within 10 minutes. The total cost for the ride is $30.05.
+user: Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

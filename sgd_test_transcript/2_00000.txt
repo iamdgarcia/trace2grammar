@@ -1,0 +1,12 @@
+user: Hey, I need some songs. I want some from the album This Is Acting, and I like songs by Sia, and also Popular genre songs.
+tool(LookupMusic): ok n_results=5
+assistant: There are 5 songs in this selection. I have found Alive by Sia from the album This Is Acting.
+user: Which year was that released anyway?
+assistant: Its release date is from the year 2013.
+user: Okay, give me that. I want it to play on the patio speaker.
+assistant: Please confirm the following details: Play Alive in Patio via speaker. Correct?
+user: Yes, that's it!
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your selection.
+user: Thank you so much!!
+assistant: Of course. Have a wonderful day.

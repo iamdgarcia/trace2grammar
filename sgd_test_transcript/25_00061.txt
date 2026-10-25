@@ -1,0 +1,17 @@
+user: Hi, are there any nice regular movies showing in San Jose at Century 20 Oakridge and XD?
+tool(FindMovies): ok n_results=4
+assistant: There are 4 movies you might like, how about Angel Has Fallen, Brittany Runs a Marathon or IT Chapter Two?
+user: Sorry, are there anything else I might like?
+assistant: Would you like Overcomer?
+user: Overcomer sounds great!
+assistant: Would you like me to make a reservation for you?
+user: No, that is not necessary. Could you find me some Country songs by Kelsea Ballerini in the album The First Time?
+tool(LookupMusic): ok n_results=1
+assistant: Would you like Peter Pan by Kelsea Ballerini from the album The First Time?
+user: Yes, that sounds great! Please play it for me now.
+assistant: Please confirm your request to play Peter Pan in the Living room now.
+user: Sure, may I know if it came out in 2019?
+tool(PlayMedia): ok n_results=1
+assistant: Your music has been played, enjoy! This song was released in 2015.
+user: I see, thanks for your help! That is all I need.
+assistant: No worries, have a great day ahead!

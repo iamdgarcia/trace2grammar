@@ -1,0 +1,24 @@
+user: Can you find me some attractions?
+assistant: Where would you like to look?
+user: In San Fran please.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10, Alcatraz is a historical landmark you may like.
+user: Great thank you.
+assistant: What else can I do for you?
+user: I need a movie in the area.
+tool(FindMovies): ok n_results=10
+assistant: I found 10. Would you like Ad Astra, Brittany Runs a Marathon, or Fiddler: A miracle of miracles?
+user: Brittany Runs a Marathon is good. Please find a good family movie online.
+tool(FindMovies): ok n_results=2
+assistant: I found 2. Would you like Steel Magnolias or the Farewell?
+user: Steel Magnolias is great thanks.
+assistant: Would you like to play it?
+user: YEs please play it with English subtitles.
+assistant: You want to play Steel Magnolias with English subtitles, Correct?
+user: Yes that is correct, who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: James Wlcek acted in the Movie.
+user: Thank you very much.
+assistant: What else can I do for you?
+user: That is all I need for now, thanks.
+assistant: Have a great day.

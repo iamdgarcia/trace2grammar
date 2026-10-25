@@ -1,0 +1,17 @@
+user: Can you help me find a movie please
+tool(FindMovies): ok n_results=10
+assistant: I hear Angel Has Fallen has a 39 rating, do you want to watch that?
+user: Sure that sounds good. Also find me a song, I hear that the songs by Kirk Degiorgio off the album Outlast is good, or any Asia based song
+tool(LookupMusic): ok n_results=1
+assistant: What about For the night by Kirk Degiorgio off the album Outlast
+user: Did it come out six years back?
+assistant: It came out in 2014 if that helps
+user: Yes that's it! Can you play it on the speaker in patio?
+assistant: Sure, confirming you want to play For The Night on the patio?
+user: Yes that's right
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music, playing now
+user: Thanks so much
+assistant: What can I do for you
+user: Nothing further for now
+assistant: OK, bye then!

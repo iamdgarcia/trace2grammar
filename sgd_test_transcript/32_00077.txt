@@ -1,0 +1,24 @@
+user: Hi, could you help me search for some Rock-and-roll songs please?
+tool(LookupMusic): ok n_results=10
+assistant: How about Be Somebody by Thousand Foot Krutch from their album The End Is Where We Begin?
+user: Yes, that was what I was looking for!
+assistant: Would you like me to play the song for you?
+user: Perhaps later on. Thanks.
+assistant: Do you need any other help then?
+user: Are there any nice online movies I could watch?
+assistant: Any specific genre you are looking at?
+user: Some cartoon will be great.
+tool(FindMovies): ok n_results=2
+assistant: Would you like to watch The Angry Birds Movie 2 or Toy Story 4?
+user: The Angry Birds sounds perfect! Could you play the song you found just now?
+assistant: Please confirm your request to play Be Somebody in the Living room.
+user: Sorry, could you play it with the speaker in kitchen instead?
+assistant: Please confirm your request to play Be Somebody in the kitchen.
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Your song has been played. Enjoy!
+user: Thank you so much. Could you show me my alarms please?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 active alarm at 4:30 pm titled Piano Time.
+user: I see, that is all I need. Thank you!
+assistant: Sure, have a pleasant day ahead.

@@ -1,0 +1,17 @@
+user: Can you find me a place to rent? I need three bedrooms.
+assistant: Which area do you want to live in and how many bathrooms do you need?
+user: I want a place in San Ramon with 2 bathrooms.
+tool(FindHomeByArea): ok n_results=6
+assistant: I have 6 possible houses for you, Canyon Creek Apartments is a very good property located at 1000 Canyon Village Circle. It will cost $3,600.
+user: That sounds really good.
+assistant: Shall I book a viewing for the property?
+user: Yes please, can you book it for 7th of March.
+assistant: Okay let's confirm the details. You are going to visit Canyon Creek Apartments on March 7th.
+user: Yes that's perfect, thanks.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled that for you now.
+user: Can you show me the alarms I have?
+tool(GetAlarms): ok n_results=3
+assistant: You currently have 3 set. You have one at 4 pm called Shopping.
+user: Okay, great. That's all I need.
+assistant: Thank's good luck with he viewing.

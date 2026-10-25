@@ -1,0 +1,23 @@
+user: Would you be able to help me with making a payment please?
+assistant: Definitely. What account would you like the transfer from and for how much?
+user: Take it out of my balance, if you would. 164 bucks.
+assistant: May I have the contact name for the transfer?
+user: Yes, her name is Emma.
+assistant: Confirming a transaction in the amount of $164 from your app balance for transfer to Emma. Please be advised that this transaction is publicly visible.
+user: Okay, gotcha, thanks.
+tool(MakePayment): ok n_results=1
+assistant: The transfer has processed and is complete. The funds will arrive immediately.
+user: Okay, good. May I also do a payment request?
+assistant: To whom please and for how much?
+user: This will be going to Victoria, 14 bucks.
+assistant: Very good. Confirming your visible public transaction with Victoria in the amount of $14.
+user: Yes, that sounds correct.
+tool(RequestPayment): ok n_results=1
+assistant: The payment has been successfully requested.
+user: I appreciate it, thanks. I also have to process a payment request to Bob for thirty six dollars out of my JCB please.
+assistant: Confirming a $36 transaction from your credit card for Bob. You are aware this is a publicly visible transaction, correct?
+user: Surely, thanks.
+tool(MakePayment): ok n_results=1
+assistant: Very good. The payment is complete and will soon deliver to the other party.
+user: Thank you very much. I'm all done now.
+assistant: Thank you very much. Have a super day.

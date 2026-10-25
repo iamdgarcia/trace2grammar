@@ -1,0 +1,34 @@
+user: I need to see my alarms.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm now and it is at 9 AM with the name Get Up.
+user: Okay, thanks for that.
+assistant: Would you like to add an alarm?
+user: No, I don't need to add any.
+assistant: Anything else to help with?
+user: I need a restaurant there.
+assistant: What kind of food and in which location?
+user: I need Asian restaurants in Berkeley.
+tool(FindRestaurants): ok n_results=8
+assistant: Da Lian Restaurant is a nice restaurant in Berkeley.
+user: Any others?
+assistant: Great China Restaurant is another in Berkeley.
+user: That's good and I need a reservation for a Hatchback car.
+assistant: When would you like to begin the rental and until when?
+user: I need it from the 11th of March and until the 14th.
+assistant: What time would you like to pick it up and where do you want to pick it up?
+user: I need it at half past 10 in the morning. Anaheim Intermodal Center is good to get it from.
+assistant: Would you like to add insurance?
+user: No, I don't need to add insurance.
+assistant: So, a car from Anaheim Intermodal Center, pickup date of March 11th at 10:30 AM with a drop-off date at March 14th for the Hatchback?
+user: Yes, that's all good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved now.
+user: Thanks for that and I need to share location info.
+assistant: Would you like to share the address of Anaheim Intermodal Center? Who to share with?
+user: I need to share the address of 2190 Bancroft Way and to share it with Peter.
+assistant: So share the location 2190 Bancroft Way with Peter?
+user: Yes that's it.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared this location.
+user: Thanks for that so much.
+assistant: Of course. Enjoy.

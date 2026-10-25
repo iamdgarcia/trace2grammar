@@ -1,0 +1,38 @@
+user: I'm looking to rent a nice SUV in the San Diego area. I'll be picking it up at three in the afternoon.
+assistant: How long do you wish to keep the car?
+user: I'll rent the car until the 6th of March.
+assistant: What date will you be picking the car up from?
+user: The rental will start on the 3rd of this month.
+tool(GetCarsAvailable): ok n_results=3
+assistant: 3 cars are available for rent in that area. It is a Citroen C5 SUV ready for pick up at SAN International Airport.
+user: I'll actually be needing the car later today. For that reason, can you find something else? Any car will do fine for me.
+tool(GetCarsAvailable): ok n_results=8
+assistant: At the Santa Fe Depot, there is a Hyundai Ioniq Sedan.
+user: That should get the job done. Thank you.
+assistant: Do you want me to reserve the car?
+user: Yes, but not right this minute.
+assistant: Do you need help setting up anything else?
+user: I'll be attending an event while I'm there. I want 3 tickets to see the event Angel Olsen. I heard it's worth a view.
+assistant: Do you have a certain date in mind for the event?
+user: I want the tickets for the 12th of March.
+assistant: Where should I look for this event?
+user: I want tickets for a showing in the Los Angeles area.
+assistant: Confirm the following: Booking 3 tickets for Angel Olsen in Los Angeles on March 12th.
+user: That should work just fine.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your 3 tickets have been purchased and reserved. I hope you have a wonderful time at your show.
+user: What is the start time for the event?
+assistant: The start time for the showing is 7:30 pm.
+user: By the way, how much is the ticket?
+assistant: The cost of the ticket is $55.
+user: Oh thank you very much. Now, can you rent that car for me?
+assistant: Sure. Would you like insurance?
+user: No. That's alright. I think I don't need it for the car.
+assistant: Now booking a Sedan for rent at Santa Fe Depot. The pick-up time is March 1st at 3 pm. You will return the car on March 6th. There is no insurance add-on. Is this correct?
+user: I changed my mind about that. I do want insurance after all.
+assistant: Confirm the following change: The Sedan will be dropped off at March 6th. You wish to purchase insurance.
+user: That's correct. Please make those changes and reserve the car.
+tool(ReserveCar): ok n_results=1
+assistant: Your car reservation has been made.
+user: I appreciate you helping me. That's all the help I'll be needing for now.
+assistant: I hope you enjoy your day.

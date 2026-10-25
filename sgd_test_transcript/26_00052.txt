@@ -1,0 +1,31 @@
+user: I need a round trip flight.
+assistant: When are you traveling? Where are you leaving from?
+user: I am leaving from SD for LAX on the 13th.
+assistant: What day do you want to travel?
+user: On March 4th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight with Alaska Airlines that leaves at 1:05 pm. The returning flight leaves at 12:15 pm. The ticket price is $172.
+user: What time does the flight arrive at LAX?
+assistant: 1:59 pm is the expected time.
+user: I also need a home to stay that offers laundry service and is rated 4.5 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found a great house at 1800 Argyle Avenue that is rated 4.5.
+user: Anything else available?
+assistant: Another house is 2151 Avenue of the Stars and it is rated 4.5.
+user: What is the phone number?
+assistant: The phone number is +1 310-284-6500.
+user: Any other homes? I need accommodations for three people.
+tool(SearchHouse): ok n_results=8
+assistant: I found 8 additional homes, like 300 Doheny Drive. It is rated 4.5.
+user: Please reserve me that house beginning on Wednesday next week and checking out the 13th.
+assistant: Please confirm, reserving home for 3 people in Los Angeles on March 6th and leaving March 13th.
+user: No, change it to the 8th of this month.
+assistant: Please confirm, checking in March 8th in Los Angeles.
+user: Yes, can you also give me the phone number and the total cost.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is complete. The phone number is +1 213-443-9200. The price is $1,305.
+user: Thanks, can you find me some things to do.
+tool(FindAttractions): ok n_results=10
+assistant: Angels Flight Railway, it is a historical landmark in Los Angeles.
+user: Ok, that is all for now.
+assistant: Have a nice day.

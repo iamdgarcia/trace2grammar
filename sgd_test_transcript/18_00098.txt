@@ -1,0 +1,19 @@
+user: I want to find a hotel please
+assistant: Where are you looking to stay in?
+user: I want to find a hotel in Washington
+tool(SearchHotel): ok n_results=10
+assistant: There's a 3 star hotel called Arc The. Hotel Washington D.C.
+user: That sounds like a good fit. What's the weather like there on the 7th of March?
+tool(GetWeather): ok n_results=1
+assistant: It's gonna be 81 degrees with a 20 percent chance of it raining
+user: OK good, let's book that hotel you found
+assistant: So you want to check in on March 7th right?
+user: Yes I do
+assistant: And how long do you plan to stay?
+user: I'll be there for four days
+assistant: Confirming your 4 day stay at Arc The. Hotel Washington D.C. starting on March 7th in Washington D.C. and you want 1 room
+user: Yes that's all perfect
+tool(ReserveHotel): ok n_results=1
+assistant: It has been booked for you
+user: Awesome, that's all then, bye
+assistant: OK, see you!

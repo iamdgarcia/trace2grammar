@@ -1,0 +1,27 @@
+user: I need a rental car in Rio de Janeiro until the 7th of this month. A SUV would be nice.
+assistant: When do you want to start the car rental?
+user: The day after tomorrow.
+assistant: What will be your pick up time?
+user: Nine in the morning.
+tool(GetCarsAvailable): ok n_results=2
+assistant: There is a nice Skoda Kodiaq SUV available at Galeao International Airport.
+user: That sounds good.
+assistant: Would you like to make a reservation?
+user: Yes, but not now.
+assistant: Do you need anything else?
+user: I also want to find a house to stay in.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house located at Avenida Almirante Silvio de Noronha, 365 - Centro. It is rated 4.6.
+user: The house sounds great.
+assistant: Do you want to make a reservation?
+user: No, not now. I want to reserve that rental car.
+assistant: Would you like to add insurance?
+user: No, I don't need insurance.
+assistant: Confirming that you will be picking up an SUV rental at the Galeao International Airport on March 3rd at 9 am. You will be dropping the rental off on March 7th. You do not need insurance. Is this correct?
+user: No. I need insurance.
+assistant: Confirming that you are picking up an insured SVU rental at Galeao International Airport?
+user: Yes, that's good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been successfully reserved.
+user: Thanks for your help. That's all.
+assistant: You're welcome. Have a good day!

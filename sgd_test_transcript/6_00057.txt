@@ -1,0 +1,12 @@
+user: Do you think you could help me find a new salon to go to?
+assistant: Sure. Where would you like this salon to be?
+user: Somewhere in Palo Alto would be best.
+tool(FindProvider): ok n_results=10
+assistant: I've found 10 Salons in Palo Alto. How about the 18/8 Fine Men's Salons - Palo Alto?
+user: No, I've heard of that place and don't like it. Can you find me a unisex salon in Sunnyvale?
+tool(FindProvider): ok n_results=8
+assistant: Sure. How about A+ Haircuts For Men in Sunnyvale?
+user: What's their average rating and address?
+assistant: They have an average rating of 4.1, and their address is listed as 450 East El Camino Real.
+user: Okay, nice. That sounds good. Thank you that will be all.
+assistant: Goodbye.

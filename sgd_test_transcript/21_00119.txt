@@ -1,0 +1,43 @@
+user: I need to find something interesting to do.
+assistant: Is there any category you prefer? Maybe Music or Theater or something? Should I look into any particular city?
+user: I love Concert. Look for something in the LAX area.
+tool(FindEvents): ok n_results=10
+assistant: You might find these 10 events suited for you. There is Ain Gordon which is getting famous. It is at the Ralph Freud Playhouse and it starts at 7 pm on March 9th.
+user: That is cool but I need some other event on the 5th.
+tool(FindEvents): ok n_results=10
+assistant: I can recommend you 10 events. What do you think of the popular Aldous Harding at Lodge Room. You can go there on March 5th at 5 pm.
+user: What is the cost of a ticket and where is this place?
+assistant: You will have to pay $30 for the ticket and you can find them at 104 North Avenue 56 2nd Floor.
+user: Sounds good but can you suggest me some other events?
+assistant: You might like Angel Olsen taking place at Palace theatre on March 5th and it starts at 4:30 pm.
+user: That is cool. Are there buses going there? I prefer a direct bus. I want it on the 1st and I leave from San Diego.
+tool(FindBus): ok n_results=10
+assistant: What about the bus leaving at 9:10 am? It will cost you about $24.
+user: Is there anything else you can find me? I want to leave on the 4th. I will be in a group of 4.
+tool(FindBus): ok n_results=10
+assistant: What do you think of the bus leaving at 9:20 am and it will cost you $25?
+user: That is great. Get me a round trip flight to go there. I would prefer flying with Alaska Airlines. I plan to return on the 13th and I don't care about the ticket class.
+assistant: Do you leave on March 4th?
+user: I will be starting my visit on the 5th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Do you like to board the Alaska Airlines direct flight that takes off at 1:05 pm? The return flight leaves at 10:05 am and the ticket is priced at $108.
+user: What time does the onward flight arrive at my destination and what time does the returning flight arrive?
+assistant: The onward flight will reach destination at 1:59 pm and your returning flight lands at 10:59 am.
+user: That is good. I need 1 room in a hotel that is in that location.
+tool(SearchHotel): ok n_results=10
+assistant: You can go to this 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: What location are they at?
+assistant: You will find them at 6399 Wilshire Boulevard.
+user: Are there any other hotels I can choose from?
+assistant: You can try the Airtel Plaza Hotel and it is a 3 star hotel.
+user: How much will it cost me a night?
+assistant: It will be $270 a night.
+user: That is great. Get me 2 event tickets.
+assistant: So do you confirm that you want 2 tickets to Angel Olsen on March 5th in Los Angeles?
+user: Yes that is all correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have confirmed your reservation. Enjoy your time there!
+user: Thanks very much for everything.
+assistant: Shall I do anything else for you?
+user: Nope thank you.
+assistant: Have a nice day!

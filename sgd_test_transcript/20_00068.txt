@@ -1,0 +1,32 @@
+user: I will be going out of town soon and need help finding a rental car I can pick up on Sunday this week in Vancouver.
+assistant: I can help you with that but I will also need to know the time you would like to retrieve the car and the date you will be returning the car.
+user: I would like to pick it up after work at 6 o'clock in the evening and hope to return the vehicle on the 4th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I can see here that Pacific Central Station has a Sedan Audi A8 available. Does that interest you?
+user: No, what else do you have on the 1st instead?
+tool(GetCarsAvailable): ok n_results=10
+assistant: YVR International Airport has a SUV Dacia Duster available if that sounds like something you may like.
+user: Yes, that one is more of what I was looking for.
+assistant: Would you like me to go ahead and reserve that car for you?
+user: Maybe in a little while.
+assistant: Can I help you with anything else right now?
+user: Yes, I will also be needing a place to stay while I am there. I have someone traveling with me so it needs to be big enough for two and I really prefer if it has a semi high rating of at least 4.6.
+tool(SearchHouse): ok n_results=4
+assistant: The first one I see is located at 1128 West Georgia Street and it has a rating of 4.6.
+user: That sounds nice, do you have a phone number for this place?
+assistant: Yes, the number listed is +1 604-689-1120.
+user: Perfect, I love this house!
+assistant: What about reservations for the house? Did you want me to proceed with those reservations?
+user: No, not quite yet.
+assistant: Can I help you find anything else?
+user: Yes, I would like to go back to the car rental and reserve it.
+assistant: Sure, just one last thing before we proceed with that, would you like insurance?
+user: No, thank you but I won't be needing it.
+assistant: Okay, so I have you picking up an SUV from YVR International Airport on March 1st, at 6 pm and returning it on March 4th. Does that sound right to you?
+user: Yes, everything you have is correct but I forgot to ask the price of the car per day.
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle I just reserved for you costs $43.00 a day.
+user: Okay thanks a lot.
+assistant: Was there anything else?
+user: No, you have been an immense help, thanks again.
+assistant: It was no problem at all, please enjoy your day!

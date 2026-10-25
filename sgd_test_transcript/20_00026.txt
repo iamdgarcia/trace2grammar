@@ -1,0 +1,32 @@
+user: Can you search for three star hotels for me?
+assistant: Where would you like to find a hotel?
+user: I would like to find one in Chi-town
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel there named Ac Hotel BY Marriott Chicago Downtown
+user: Can you tell me their exact location and get me a contact number?
+assistant: Sure. They are located at 630 North Rush Street and they can be reached at +1 312-981-6600
+user: Can you tell me if there are more hotels that fit with my search parameters?
+assistant: There is another 3 star hotel by the name of Acme Hotel Company.
+user: Great. I also need to search for a car that I can rent from the 12th.
+assistant: Do you have a specific time you would like to get the car? And for how long will you need it?
+user: I'd like to collect it at 6:30 in the evening and I want to have the car until March 14th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: So far, I've found 6 cars that may work for you. One is a lovely Sedan Dodge Charger that can be picked up at O'Hare International Airport
+user: And what is the price per day for this car?
+assistant: The price for this car per day is $34.00
+user: Are there any more options that fit?
+assistant: Sure, there's a Hatchback Fiat Panda also available for pick up at O'Hare International Airport
+user: Any more choices? I'd really like to get a Sedan.
+tool(GetCarsAvailable): ok n_results=2
+assistant: Sure. There is a good Sedan Subaru Impreza available at O'Hare International Airport.
+user: That works for me.
+assistant: Are you ready to make the reservation for this car?
+user: Sure, I'd like to secure the reservation now.
+assistant: Will you be needing insurance as well?
+user: No, no insurance necessary.
+assistant: To confirm then, you would like to book the Sedan available at O'Hare International Airport beginning at 6:30 pm om March 12th and returning on March 14th and you did not opt to include insurance. Is this all correct?
+user: Perfect, that works for me.
+tool(ReserveCar): ok n_results=1
+assistant: That booking has been successfully confirmed
+user: Great, that's everything. Thank you kindly
+assistant: Enjoy your day

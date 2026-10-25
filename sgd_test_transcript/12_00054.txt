@@ -1,0 +1,21 @@
+user: Please help me search for the bus for 4 people.
+assistant: Where and when are you going and leaving from? When are you leaving?
+user: I will be leaving March 9th to go to Las Vegas from Fresno, CA.
+tool(FindBus): ok n_results=10
+assistant: What about the bus leaving at 7:10 am costing $37.
+user: That sounds great. I'd like to buy bus tickets.
+assistant: Please confirm details that you want a bus ticket for the bus leaving Fresno to Las Vegas March 9th at 7:10 am for 4 people and you don't have extra luggage.
+user: No, I don't have any extra luggage to carry.
+assistant: Please confirm details for 4 people that you have extra luggage to carry on the bus.
+user: Yes, that will work for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed.
+user: Please look for hotels in the area too.
+tool(SearchHotel): ok n_results=7
+assistant: I have 7 matching hotels for your criteria including Best Western Plus Las Vegas West which is 3 stars.
+user: That sounds very nice.
+assistant: Do you wish to reserve the hotel?
+user: I don't wish to make a reservation now.
+assistant: What else can I assist you with?
+user: No thanks for your help.
+assistant: Bye and have a nice day.

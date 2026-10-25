@@ -1,0 +1,40 @@
+user: I'm bored. Find me some movies online, please.
+assistant: What film genre would you like?
+user: I love Supernatural films.
+tool(FindMovies): ok n_results=1
+assistant: The 1 movie I recommend is IT Chapter Two.
+user: IT Chapter Two sounds good.
+assistant: Would you like to watch the movie?
+user: No, not right away. What interesting places would you recommend I visit around that area?
+assistant: Sorry I didn't understand your question. Please tell me where to search for attractions.
+user: Oops! Please look for places to visit in Chi-town.
+tool(FindAttractions): ok n_results=10
+assistant: Sure. How about 360 CHICAGO, a Tourist Attraction?
+user: Can one visit this place free of charge?
+assistant: No. There is an entry fee.
+user: Okay. Please give me their contact number. Do you think this place is a nice place for kids?
+assistant: You can reach them on 888-875-8439. This is a great place for kids to visit.
+user: All right. Cool. Now that we have that out of the way, could you suggest some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: How about It Has Begun by Starset, from the Transmissions album?
+user: Which year was it released?
+assistant: It was released in 2014.
+user: What's the song's genre?
+assistant: The song's genre is Rock.
+user: What else would you recommend? I've heard great things about the Telling All My Secrets album. There's a song that is very popular.
+tool(LookupMusic): ok n_results=1
+assistant: Would you like to listen to Drunk Me by Mitchell Tenpenny from the Telling All My Secrets album?
+user: Yes, that's the song I want to listen to. Please play it over the living room device.
+assistant: All right. You want the song Drunk Me played in the living room?
+user: Yes, you got that right.
+tool(PlayMedia): ok n_results=1
+assistant: Do enjoy listening to your music.
+user: Thanks a bunch.
+assistant: Would you like my help with anything else?
+user: Please play the movie that you found.
+assistant: Sure, no problem. Please confirm that you'd like to watch IT Chapter Two with English subtitles.
+user: That's correct. Who's the actor?
+tool(PlayMovie): ok n_results=1
+assistant: Movie now playing. James Ransone is the actor.
+user: Thank you. That will be all for now.
+assistant: Have a pleasant day.

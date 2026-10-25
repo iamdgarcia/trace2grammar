@@ -1,0 +1,14 @@
+user: I need to set a reminder for my new schedule this week. Can you check what alarms I have set?
+tool(GetAlarms): ok n_results=2
+assistant: Sure, you have 2 alarms set right now. One of them is your Wake up alarm at 6 am.
+user: Ok, cool. Can you add an alarm for me?
+assistant: Sure, at what time?
+user: Can you make it for 16:15?
+assistant: No problem. To confirm, you want to set a New alarm for 4:15 pm, is that right?
+user: Yes, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: Ok, the alarm has been added.
+user: Great, thanks for your help.
+assistant: No problem. Anything else I can do?
+user: No, that's all for now.
+assistant: Ok, thank you.

@@ -1,0 +1,21 @@
+user: I would like to find me something interesting to do around NYC.
+assistant: What preferences do you have for the type of events?
+user: I really enjoy Music.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 options you might like.Very popular is Abbi Jacobson and is taking place at Kaufmann Concert Hall on March 11th at 7:30 pm.
+user: Sounds very good.Reserve for me tickets,please.
+assistant: How many tickets do you want to buy?
+user: Four tickets will be fine.
+assistant: Book 4 tickets for Abbi Jacobson in New York on March 11th.Is that correct?
+user: Yes is very good.Tell me how much is the cost for one ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is confirmed.$60 is the price for ticket.Have fun!
+user: Find me a cab to go there.I would like a Pool ride.
+assistant: You want a Pool ride to Kaufmann Concert Hall and you need 4 seats.I'm right?
+user: Yes very good.In how much time will arrive the cab?
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and the cab is expected in 3 minutes.
+user: How much is it?
+assistant: $29.60 is the cost for your ride.
+user: Thank you for all.That's all that I wanted.
+assistant: Have a great day!

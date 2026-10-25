@@ -1,0 +1,17 @@
+user: Can you tell me what the weather in SF is expected to be today?
+tool(GetWeather): ok n_results=1
+assistant: There is a 29 percent chance of rain and the average temperature will be 91 degrees Fahrenheit.
+user: Great. Can you help me find a one way flight there?
+assistant: I'd be happy to. Where will you be traveling from and will you be leaving on March 1st?
+user: Yes, I'm looking for flights from Rio.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 flight with LATAM Brasil available. Tickets cost $414 and the flight leaves at 0:50 am with 1 layover.
+user: That will work for me. I also need to get a rental car once I'm there.
+assistant: Will you be picking up the car on March 1st? If so, what time? How long will you need the reservation?
+user: I'd like to pick it up on the 7th of this month at evening 5:30. I'll return it on the 8th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 options for you to choose from. May I suggest a Sedan Audi A8 available at Salesforce Transit Center.
+user: That sounds fine.
+assistant: Do you need any further assistance?
+user: Not right now. Thank you for the help.
+assistant: You're welcome. Enjoy your flight!

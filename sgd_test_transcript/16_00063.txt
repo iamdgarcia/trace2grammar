@@ -1,0 +1,24 @@
+user: I need bus tickets for March 14th. I'm leaving at 11:45 in the morning.
+assistant: What is your departure city and destination? How many tickets will you be needing?
+user: I need three tickets for Vegas to San Francisco. I also have excess luggage to carry.
+assistant: Confirming that you want to book 3 tickets on the Las Vegas to San Francisco bus, leaving on March 14th at 11:45 am?
+user: Yes, that will work. What are the departure and arrival stations?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus departs from Union Plaza and arrives at Transbay Terminal. Sorry, but I was unable to purchase purchase your tickets. How about I try for 11:30 am? It will cost you $62.
+user: Yes, that works.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Thanks. Can you find me a nearby hotel?
+tool(SearchHotel): ok n_results=10
+assistant: How about the Amsterdam Hostel San Francisco? It is a 1 star hotel.
+user: Sounds good, can you make a reservation?
+assistant: How long do you expect your stay to be?
+user: I'm staying for three days.
+assistant: What is your check in date?
+user: Tuesday next week.
+assistant: Confirming that you want to book a room for 1 at the Amsterdam Hostel San Francisco in San Francisco on March 5th. You will be staying for 3 days. Is this information correct?
+user: Sure. What's their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: You can contact them at +1 415-673-3277. I have successfully booked your room.
+user: Thanks for your help. That's all for now.
+assistant: Have a good day. Goodbye!

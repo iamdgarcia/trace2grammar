@@ -1,0 +1,32 @@
+user: Please find me something interesting to do around Portland.
+assistant: What type of event did you have in mind?
+user: I adore Broadway. Search for something similar taking place on March 9th.
+tool(FindEvents): ok n_results=9
+assistant: I found 9 events that might interest you. The first is the very popular Annual School Performance taking place on March 9th from 7 pm. at Newmark Theatre.
+user: Very cool! Could you also search for four tickets on buses going there next Thursday?
+assistant: What's your departure city?
+user: My departure city is Vancouver, BC.
+tool(FindBus): ok n_results=8
+assistant: Your search yielded 8 suitable buses. Would you like the 7:10 am bus? The ticket price is $44.
+user: Is there something leaving from Seattle, WA? There's been a change of plans.
+tool(FindBus): ok n_results=8
+assistant: I found you 8 suitable buses. Will the bus leaving at 7:30 am work for you? The ticket price is $33.
+user: That works for me. Now please find me a round-trip flight there. It should be on United Airlines, but the ticket type isn't important.
+assistant: Are you departing on March 9th? What's your preferred return date?
+user: I'd like to leave later today and return on 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's a direct outbound United Airlines flight leaving at 11:40 pm. The inbound flight takes off at 4:40 am, and the cost per ticket is $104. How does that sound?
+user: What time does the outbound flight reach my destination? When does the inbound flight land?
+assistant: The outbound flight lands at 0:38 am. The inbound flight lands at 5:38 am.
+user: That works for me. Please find hotels in that area too.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel called Aloft Portland Airport At Cascade Station. I
+user: I like the sound of that.
+assistant: Should I go ahead and reserve the hotel?
+user: No, I'm not interested in reserving right away. Let's buy tickets to the event that you found earlier.
+assistant: Sure. Please confirm that you're booking 4 tickets for the Annual School Performance, taking place on March 9th in Portland
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy yourselves there!
+user: Thank you very much. You've been very helpful. That'll be all for now.
+assistant: Goodbye, and have a wonderful day!

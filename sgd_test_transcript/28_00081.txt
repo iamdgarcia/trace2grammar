@@ -1,0 +1,34 @@
+user: Hi, are there any nice attractions I can visit which is child-friendly and does not have an entry fee?
+assistant: Any particular location you are interested in?
+user: Something in Atlanta, GA is great.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like, how about Al-Farooq Masjid, a Place of Worship?
+user: May I have their contact number please?
+assistant: You can call them up at 678-886-3457.
+user: I see, could you get me a rental car there from today, preferably a SUV?
+assistant: What time will you be picking up the car, and will you be picking it up from Atlanta? Also, when are you using the car till?
+user: Yes, I will pick up the car at afternoon 12:30 and use it till the 6th.
+tool(GetCarsAvailable): ok n_results=3
+assistant: How about a nice SUV Jaguar F-Pace available for your pickup at Peachtree Station?
+user: Sounds good! Could you reserve it for me?
+assistant: Would you like any insurance?
+user: No need, thanks!
+assistant: Please confirm your booking for a SUV from Peachtree Station from March 1st at 12:30 pm to March 6th. This does not come with insurance.
+user: Sorry, I've changed my mind, could you add insurance please?
+assistant: Sure, please confirm your booking of an SUV car with insurance.
+user: Sounds great to me!
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: How much will this cost me each day?
+assistant: This will cost you $54.00 each day.
+user: Thank you so much. Could you share the location of Al-Farooq Masjid?
+assistant: And who would you like to share it with?
+user: Could you share it with Cynthia please?
+assistant: Sure, please confirm your request to share Al-Farooq Masjid location with Cynthia.
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Thank you for your kind assistance.
+assistant: Do you need any other help then?
+user: No, that is all I need. Thank you so much.
+assistant: My pleasure, have a great day ahead!

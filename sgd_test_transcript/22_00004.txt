@@ -1,0 +1,35 @@
+user: I need something fun to do such as a Stage show in LAX.
+tool(FindEvents): ok n_results=10
+assistant: A Year In Dragonfly is popular and is at Studio C Artists on March 1st at 7:30 PM.
+user: That is good and any others?
+assistant: Adieu Monsieur Haffmann is another and is at Theatre Raymond Kabbaz on March 4th at 6:30 PM.
+user: Where is it located and how much per ticket?
+assistant: The venue address is 10361 West Pico Boulevard and the ticket price is $45.
+user: Thanks and I need a bus on the 4th of March for four people total, direct or not.
+assistant: Where are you departing from?
+user: We are leaving from Vegas.
+tool(FindBus): ok n_results=4
+assistant: There is one at 6 AM with a ticket price of $38.
+user: That sounds good.
+assistant: Would you like to purchase these tickets now?
+user: No, not right now. I need a round trip flight to go there.
+assistant: Which day would you like the return flight to be? Will you depart on March 4th?
+user: Yes, I will return also on the 10th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Would you like it with Delta Airlines? The onward flight will depart at 7:45 PM and is a direct flight. The return flight will take off at 4:35 PM and the ticket price is $140.
+user: When will the flight arrive and is it a Business class ticket?
+assistant: This is an Economy class seat and the flight will arrive at 8:55 PM.
+user: Okay that sounds good. Can you look for hotels in the area, and 1 room in a 3 star hotel?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels, such as Ac Hotel By Marriott Beverly Hills, a 3 star hotel.
+user: Okay that is awesome.
+assistant: Would you like to make a reservation now?
+user: No, I don't want to reserve now.
+assistant: Is there anything else to help with?
+user: I need to buy tickets for that event.
+assistant: So book tickets for Adieu Monsieur Haffmann for 4 people in total on March 4th in Los Angeles?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks so much!
+assistant: Of course. Enjoy.

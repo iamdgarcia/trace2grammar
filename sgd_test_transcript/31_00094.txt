@@ -1,0 +1,33 @@
+user: Find me a unisex salon.
+assistant: In what city you want to be?
+user: in Antioch I want to be.
+tool(FindProvider): ok n_results=3
+assistant: A nice salon in Antioch is Himc Barber Studio.
+user: Tell me the average rating and their phone number.
+assistant: 925-238-0059 is their phone number and average rating is 4.0
+user: Sounds very good
+assistant: I want an appointment here?
+user: Yes make it on 5th of March at 10:00.
+assistant: You want an appointment on March 5th at 10 am for hair stylist called Himc Barber Studio.Is that correct?
+user: Yes very good.Tell me the address for this place.
+tool(BookAppointment): ok n_results=1
+assistant: Teh appointment is done.You can find it at 3136 Contra Loma Boulevard.
+user: Find me an restaurant there for a meal.
+assistant: What type of food you want?
+user: Something where Fish is served will be good.
+tool(FindRestaurants): ok n_results=2
+assistant: A nice restaurant located in Antioch is Okawa Japanese Restaurant
+user: Something else you have?I want a place tagged affordable for price.
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 option that you may like.A nice restaurant located in Antioch called Riverview Lodge.
+user: Yes, I like this one.
+assistant: You want to make an reservation here?
+user: Yes I would like that.
+assistant: At what time you want to be?
+user: Make it at quarter to 6 in the evening.
+assistant: Book a table for 2 people on March 5th at 5:45 pm.Location is Antioch and restaurant name is Riverview Lodge.Is taht okay?
+user: Yes very good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation was made.
+user: Thanks.That's all for now.
+assistant: Have a great day!

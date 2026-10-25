@@ -1,0 +1,36 @@
+user: I'd like to find a salon.
+assistant: What city do you want me to look in?
+user: Find a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: I have 9 salons that may be of interest. Daredevils & Queens is a nice Santa Rosa salon.
+user: What is the address and contact number?
+assistant: The address is 122 4th Street and phone number is 707-575-5123.
+user: Sounds good to me.
+assistant: Do you want me to book an appointment there?
+user: Yes, for 1:45 pm please.
+assistant: What date would you like the appointment on?
+user: I need the appointment on 2nd of March.
+assistant: Could you confirm that you want to go to Daredevils & Queens at 1:45 pm on March 2nd?
+user: Sounds right.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, the appointment could not be booked. How about Daredevils & Queens for March 2nd at 1:30 pm instead?
+user: Sounds good to me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed.
+user: I would also like to find a restaurant for a meal that day.
+assistant: What sort of food are you interested in?
+user: Find Malaysian food.
+tool(FindRestaurants): ok n_results=3
+assistant: Sea Noodle Bar is a nic restaurant in Santa Rosa.
+user: Sounds good. Book me a table at the restaurant.
+assistant: What time should I make the reservation for?
+user: Make it for 5:45 in the evening.
+assistant: Please confirm that you want to book a table at Sea Noodle Bar in Santa Rosa for 5:45 pm. The reservation is for 2 on March 2nd.
+user: Sounds good. How expensive is the restaurant? What is its user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are a moderate restaurant with a user rating aroudn 4.5. I apologize that I was unable to make the reservation. Would you like to try Sea Noodle Bar for 2 people on March 2nd at 6 pm?
+user: Okay.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: Thanks so much. That's it.
+assistant: Have a great day.

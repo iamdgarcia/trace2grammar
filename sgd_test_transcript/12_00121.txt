@@ -1,0 +1,25 @@
+user: I'm looking for things to do?
+assistant: What kind of events interest you? What city shall I look in?
+user: Look around Toronto, Canada, my preference is a Musical performance.
+tool(FindEvents): ok n_results=8
+assistant: I found 8 events you may like. Funtcase is supposed to be good. It's happening at NEST at 7 pm on March 1st.
+user: Where is that and how much are the tickets?
+assistant: 423 College Street. Tickets are $30 each.
+user: That sound good.
+assistant: Shall I order tickets?
+user: Not just yet.
+assistant: Is there anything else you need?
+user: Yes, I need to request a payment.
+assistant: What is the name of the contact and for what amount?
+user: It's Svetlana for 124 dollars.
+assistant: To confirm: You want to make a payment request with Svetlana in the amount of $124. This is a public transaction.
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request has been made.
+user: Okay, now I want to get 3 tickets to the concert.
+assistant: To confirm: You want 3 tickets to see Funtcase in Toronto on March 1st.
+user: Yes, that's it.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Thanks so much. That's all I need for now.
+assistant: Have a great day.

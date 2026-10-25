@@ -1,0 +1,34 @@
+user: I'm traveling overseas and would like to search for a hotel.
+assistant: What city should I search in?
+user: I'm looking for a hotel in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 5 star hotel called 45 Park Lane.
+user: Is smoking allowed there? And can you give me their address?
+assistant: There is no smoking allowed and the address is 45 Park Lane.
+user: Okay, sounds good.
+assistant: Would you like to book the hotel?
+user: Not right now.
+assistant: Anything else I can help you with?
+user: I also would like to find a round trip flight there on Delta Airlines in economy class.
+assistant: Are you departing March 7th? What city are you leaving from?
+user: I'm flying from ATL and would like to leave on the 4th.
+assistant: What day would you like to return?
+user: Returning on the 10th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight for you on Delta Airlines. The departing flight leaves at 6:05 am with a layover and the return flight leaves at 3:55 am. The cost of the ticket is $516.
+user: When does the flight arrive in London? And when does the return flight come in?
+assistant: The departing flight arrives at 9:12 pm and the return flight gets in at 4:26 pm.
+user: Sounds good. Let's book the hotel you found.
+assistant: How long is your stay?
+user: I'm staying for 7 days.
+assistant: Do you want to check in on March 4th?
+user: I'd like to check in on the 5th.
+assistant: Okay, let's confirm: You want to reserve 1 room at 45 Park Lane in London for 7 days, checking in on March 5th.
+user: Yes, that's great.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel has been booked.
+user: Can you help me find some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you might like, such as 30 St Mary Axe (The Gherkin) which is a historical landmark.
+user: Okay great. That's it for now, thanks.
+assistant: Enjoy!

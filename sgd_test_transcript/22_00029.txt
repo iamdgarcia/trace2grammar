@@ -1,0 +1,41 @@
+user: Can you find me something interesting to do around San Fran?
+assistant: Do you prefer a specific event type or are you okay with any event?
+user: I prefer watching a Play.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events based on your preference. There is an event by Above Ground, who are very popular, at the Mojo Theatre at 5 pm on March 6th.
+user: Thank you for the suggestions. Sounds great!
+assistant: Shall I get you tickets to the event?
+user: Not now; maybe later.
+assistant: Is there anything else I can do for you?
+user: Can you find me a direct bus to go there from LA on March 2nd?
+tool(FindBus): ok n_results=10
+assistant: There is a bus that departs at 6:40 am with tickets priced at $47. Does that work for you?
+user: Yes, it does. Thank you.
+assistant: Would you like me to book tickets for you on this bus?
+user: No, not now. Thank you.
+assistant: What else can I assist you with?
+user: Can you check whether there's a round trip flight to go there?
+assistant: On which date are you planning to depart, March 2nd or March 6th?
+user: I'd like to leave on the 3rd of this month.
+assistant: And when would you like to return?
+user: I'll be back on the 13th.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There are 5 suitable flights. There is an Alaska Airlines flight with tickets priced at $140. The departing flight leaves at 11:40 pm and the return flight takes off at 8:40 pm. Does that sound okay?
+user: Can you get me the arrival times of both the flights?
+assistant: The onward flight reaches the destination at 1:05 am and the return flight arrives at 10:05 pm.
+user: That sounds good to me. Can you find me some three star hotels in that area that allow smoking?
+tool(SearchHotel): ok n_results=8
+assistant: There is a 3 star hotel called Bei Hotel San Francisco. Want to consider it?
+user: How much do they charge per night and what's their phone number?
+assistant: Their phone number is +1 415-626-6103 and a room costs $198 per night.
+user: Thank you. Sounds good to me.
+assistant: Can I help you with anything else?
+user: Yes, please get me tickets to the event that you found.
+assistant: How many tickets would you like?
+user: Please get me two tickets.
+assistant: Please confirm that you want to book 2 tickets for the Above Ground event taking place in San Francisco on March 6th.
+user: Yes, that's correct. Can you get me the ticket price and the address of the venu?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been reserved successfully. Have fun at the event! The venue is at 2940 16th Street #217 and a ticket costs $35.
+user: Thank you for all the assistance. That's all I need for now.
+assistant: Have a great day!

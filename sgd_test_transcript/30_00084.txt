@@ -1,0 +1,27 @@
+user: What will the weather be on the 10th of March in Long Beach CA.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be 75 degrees with a 20 percent for rain.
+user: Will it be humid or windy?
+assistant: The humidity should be 50 percent with wind at 11 miles per hour.
+user: Okay, I would like to visit Orange Tree Apartments.
+assistant: Please confirm an appointment on March 10th at Orange Tree Apartments.
+user: Actually, I want to visit Maplewood.
+assistant: Confirming a visit to Maplewood on March 10th.
+user: That is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit is confirmed.
+user: I need to reserve a car, too.
+assistant: Would you like insurance?
+user: Yes, I would.
+assistant: Where will you pick up the car and for how long? Do you want the car starting on March 10th?
+user: I will pick up at Intercity Terminal on March 8th and return it on the 14th.
+assistant: Do you prefer a sedan, SUV or another model?
+user: Actually, I need the card until the 13th from Thursday next week. I would like a hatchback.
+assistant: What time will you pick up the car?
+user: Half past 4 in the evening at John Wayne Airport
+assistant: Confirming renting a hatchback with insurance from John Wayne Airport on March 7th at 4:30 pm and returning March 13th.
+user: That is correct. Which car is it and what is the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: It is a Kia Ceed and the rental is $48.00 per day.
+user: Thanks, I am all set.
+assistant: Have a nice day.

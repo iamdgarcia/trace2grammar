@@ -1,0 +1,19 @@
+user: Im looking for some attractions to visit. Like a tourist attraction
+assistant: Whats your preferred city
+user: I want in New York City and a child-friendly place
+tool(FindAttractions): ok n_results=9
+assistant: You can checkout Bethesda Terrace which is a tourist attraction
+user: Okay cool I want to find a house to stay too with a rating of 3.6 or higher for 1 people along with laundry service
+tool(SearchHouse): ok n_results=10
+assistant: I found a good house at 100 Greenwich Street which is 3.6 rated
+user: Can I get their contact number
+assistant: The phone number is +1 917-409-0800
+user: Thats amazing house. I want to find round trip flight to get there with Delta Airlines
+assistant: From which city and on which date you like to take flight? When are you planning to return?
+user: I will start my travel on 5th of this month and return on the 11th. find me some premium economy class ticket from Atlanta, GA
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Would you like to fly with Delta AIrlines at 8:25 am which is a direct flight and return flight takes off at 7:05 pm which costs $284
+user: WHen will the return flight arrives
+assistant: At 9:27 pm it will arrive
+user: Sound great. Thanks for it
+assistant: have a nice day

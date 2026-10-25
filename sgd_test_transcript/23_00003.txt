@@ -1,0 +1,28 @@
+user: I'm looking for some movies online. I want to find movies starring Samuel S. Hinds.
+assistant: What kind of movies are you looking for?
+user: I want to find drama movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. Stage Door is a drama film.
+user: Stage Door is a good film. I want to find some attractions in Rio.
+tool(FindAttractions): ok n_results=10
+assistant: The Air and Space Museum is a popular museum there.
+user: Great. Can you find me some songs?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. What about The Way I Talk by Morgan Wallen from the album If I Know Me.
+user: What other songs are there? I like Cairo Knife Fight.
+tool(LookupMusic): ok n_results=1
+assistant: What about Rezlord by Cairo Knife Fight form the album The Colossus?
+user: Did that come out in 2014? What is the genre?
+assistant: The song was released in 2014. The genre is rock music.
+user: Yes, sounds great. I want to play it on the kitchen device.
+assistant: Please confirm: playing Rezlord by Cairo Knife Fight in the kitchen.
+user: Yes, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Your music has started.
+user: I want to watch the movie you found earlier.
+assistant: Please confirm: playing the film Stage Door with English subtitles.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has started.
+user: Thank you. That's all.
+assistant: Have a great day.

@@ -1,0 +1,27 @@
+user: I want to search popular songs from 2013 such as the This Is Acting album.
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song, Alive by Sia on This Is Acting.
+user: Yes, that's it. Can you find some good online movies?
+assistant: Which type would you like to see?
+user: Drama is best.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies. How about a Faithful Man, After the Wedding or Blinded by the Light?
+user: Action would be great thanks.
+tool(FindMovies): ok n_results=5
+assistant: Do you like Angel Has Fallen, Hobbs and Shaw, or Mission Mangal?
+user: Angel Has Fallen would be nice. Please play the song.
+assistant: You want to hear Alive in the Living Room, correct?
+user: No on the speaker in kitchen please.
+assistant: You want to hear Alive in the Kitchen, correct?
+user: No on the speaker in patio.
+assistant: You want to hear Alive in the patio, correct?
+user: Yes thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thank you. please show me my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 set. One at 10 am called Paper.
+user: Great thank you.
+assistant: Do you want to add an alarm?
+user: Not right now. That's all thanks.
+assistant: Thanks, have a great day.

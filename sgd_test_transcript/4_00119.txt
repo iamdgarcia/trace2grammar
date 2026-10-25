@@ -1,0 +1,18 @@
+user: I need a bus for 2 people from LA to SD.
+assistant: When would you like to depart?
+user: I will be departing on March 10th.
+tool(FindBus): ok n_results=10
+assistant: I found 10 results for buses. I found on that costs $27 and leaves at 6:50 am. Will that work?
+user: Yes. Sounds great.
+assistant: Would you like me to make a reservation.
+user: Yes I do please. n
+assistant: So you want me to reserve 2 tickets on March 10th that leaves San Diego going to Los Angeles leaving at 6:50 am.
+user: No. I have extra baggage with me.
+assistant: The bus leaves on March 10th and you have extra baggage.
+user: Yes, that will work.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is reserved.
+user: What station will I be arriving at?
+assistant: The train will arrive at El Cajon Bus Stop.
+user: Thanks, I am all set.
+assistant: Have a wonderful day.

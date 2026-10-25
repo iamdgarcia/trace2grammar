@@ -1,0 +1,13 @@
+user: Can you find me a train headed to Phoenix?
+assistant: Sure thing, what date are you looking to travel?
+user: I need tickets for the 9th of this month.
+assistant: Okay, what city will you be departing from?
+user: I need tickets for a train out of Anaheim.
+tool(FindTrains): ok n_results=4
+assistant: I've found 4 trains that may work for you. How about the one leaving at 6:30 am? The ticket will be $126.
+user: What station is leaving from?
+assistant: The train departs from the Anaheim Intermodal Center.
+user: Okay, that sounds good. Thanks.
+assistant: Would you like me to book your ticket?
+user: No, not right now. Thanks anyway.
+assistant: My pleasure. Hope to hear from you again.

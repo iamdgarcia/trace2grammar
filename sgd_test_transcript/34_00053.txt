@@ -1,0 +1,15 @@
+user: I need a hotel in Paris.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels like Ac Hotel By Marriott Paris Porte Maillot. It is a 4 star hotel.
+user: Perfect! I want to find something to do there.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 options including American Church in Paris, this is a place of worship.
+user: I need two rooms at the hotel you found beginning on the 12th for 1 day.
+assistant: Please confirm, checking in the Ac Hotel by Marriott Paris Porte Maillot in Paris. You are arriving March 12th and staying for 1 day, 2 rooms have been reserved.
+user: Thanks! That is great.
+tool(ReserveHotel): ok n_results=1
+assistant: Your rooms have been booked.
+user: Is smoking permitted? What is the price per night?
+assistant: No, you cannot smoke. The cost is $192.
+user: Thanks! That is all.
+assistant: Have a nice day!

@@ -1,0 +1,30 @@
+user: Can you find me bus tickets?
+assistant: Where are you leaving from? When? Where will you be traveling?
+user: I want to go from Las Vegas to Anaheim, CA on the 14th of March.
+assistant: How many tickets would you like?
+user: There will be two of us.
+assistant: When will you be leaving?
+user: How about 6:30 am?
+assistant: Please confirm: You'll need 2 tickets from Las Vegas to Anaheim on March 14th at 6:30 am with no extra luggage.
+user: Yes, that's correct. What station will I depart from, and which will I arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: You'll be leaving Union Plaza, and arriving at Anaheim Bus Station. I can't book what you need, but there's another option at 6:40 am that costs $39.
+user: Yes, that one's fine too.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your seats are reserved.
+user: Thanks for the help. Can you also get me one hotel room in that area for a 3 star hotel?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 matching hotels. How about Anaheim Majestic Garden Hotel? It's a 3 star hotel in the area.
+user: That sounds great!
+assistant: Do you want me to reserve it for you?
+user: Yes, please, that'd be great.
+assistant: How long will you be staying? Which date do you want to check in?
+user: I'll be checking in on 11th of March for two days.
+assistant: Please confirm: 1 room for 2 days on March 11th at Anaheim Majestic Garden Hotel in Anaheim.
+user: Yes, that's correct. What does it cost?
+tool(ReserveHotel): ok n_results=1
+assistant: Your room is reserved. It costs $72 per night.
+user: Thank you, you've been a ton of help.
+assistant: Can I help you with anything else?
+user: No thank you, that'll be all for now.
+assistant: Have a great day!

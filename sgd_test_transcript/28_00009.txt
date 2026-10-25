@@ -1,0 +1,22 @@
+user: I want to watch a movie directed by Quentin Tarantino.
+tool(FindMovies): ok n_results=2
+assistant: Once Upon a Time in Hollywood is rated 85 / 100.
+user: Cool. I also want to find a place to eat after the movie.
+assistant: Where is the theater? What kind of food?
+user: I am in SF. I want pizza and pasta.
+tool(FindRestaurants): ok n_results=10
+assistant: 54 Mint Ristorante Italiano is a great place in San Francisco.
+user: Anything else? I want something not very costly.
+tool(FindRestaurants): ok n_results=10
+assistant: A16 is a good restaurant in San Francisco.
+user: Perfect. I need a table for 1 on March 12th.
+assistant: What time?
+user: I need a table for 3 on the 13th of March at 12:30.
+assistant: Please confirm, table for 3 at A16 in San Francisco on March 13th at 12:30 pm.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is complete.
+user: Thanks!
+assistant: Do you need anything else?
+user: No, that is all.
+assistant: Have a nice day.

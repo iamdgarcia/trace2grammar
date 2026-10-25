@@ -1,0 +1,19 @@
+user: Find me something under the Play genre for this Saturday in Chicago.
+tool(FindEvents): ok n_results=10
+assistant: Search revealed 10 results. Ada And The Engine is playing on March 2nd at 5 pm at The Artistic Home.
+user: That works for me.
+assistant: Shall I get you tickets now?
+user: Yes, buy me four tickets.
+assistant: You want 4 tickets to see Ada And The Engine in Chicago on March 2nd, correct?
+user: That is right. What is the event's address?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked and the event is located at 1376 West Grand Avenue #7761.
+user: Thanks a bunch. I need a taxi to get there.
+assistant: Do you want a Regular, Luxury, or any particular type of ride?
+user: Get me a Regular ride.
+assistant: You want a Regular ride for 4 people to The Artistic Home, correct?
+user: That is right.
+tool(GetRide): ok n_results=1
+assistant: Your order is booked and your ride is coming right now for you.
+user: Thanks a bunch. That is everything.
+assistant: Have a great day.

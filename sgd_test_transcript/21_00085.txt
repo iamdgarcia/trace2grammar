@@ -1,0 +1,26 @@
+user: I'd like to know the weather forecast for the 4th of this month.
+assistant: What city do you need the forecast for?
+user: The forecast for Seattle Washington.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for Seattle for the 4th of this month will be 69 degree Fahrenheit with a 43 percent chance of precipitation.
+user: Okay. I want to see some attractions in Seattle.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 listings for attractions. You may like Alki Beach Park. It is a family park.
+user: Okay. What else is there that's kid-friendly. Maybe something unusual?
+tool(FindAttractions): ok n_results=10
+assistant: There is a tourist attraction, Bill Speidel's Underground Tour.
+user: Okay. What about another one?
+assistant: There is a museum, the Burke Museum of Natural History and Culture.
+user: Is there a ticket cost for the museum? What is the telephone number?
+assistant: The entry to the museum is free and the telephone number is 206-685-3861.
+user: Okay. I would like a cab to go to the Burke Museum of Natural History and Culture.
+assistant: How many passengers will there be?
+user: It's just for me, so 1.
+assistant: Do you want a regular ride, pool ride, luxury ride or something else?
+user: I think I would just like the regular ride.
+assistant: Okay. Please confirm the following information. You want a regular ride for 1 to the Burke Museum of Natural History and Culture.
+user: Yes. How much is that going to cost and when will it get here?
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and should arrive in 5 to 8 minutes. The cost will be $16.80.
+user: Great. Thanks. That's all I need for right now.
+assistant: Enjoy your day at the museum.

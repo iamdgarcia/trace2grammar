@@ -1,0 +1,24 @@
+user: I need a one-way economy flight from Philadelphia.
+assistant: Which date are you departing and what is your destination?
+user: I need to go to Chi-town tomorrow.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There is a direct American Airlines flight leaving at 5:45 pm for a total of $120.
+user: Okay. Can you check tickets on a train on the 9th of March?
+tool(FindTrains): ok n_results=3
+assistant: There is a train departing at 12:10 pm for a total of $107.
+user: What are the departure and arrival station?
+assistant: The train departs from 30th Street Station and arrives at Chicago Union Station.
+user: Do you have any other options for two regardless of fare?
+tool(FindTrains): ok n_results=2
+assistant: There are 2 trains available. One is departing at 3:40 pm for a total of $187.
+user: That one sounds good.
+assistant: Should I book tickets for you?
+user: Yes, please reserve.
+assistant: Would you need insurance?
+user: No thanks, I have insurance.
+assistant: Please confirm you want 2 value tickets on the train leaving from Philadelphia and going to Chicago on March 9th at 3:40 pm.
+user: Yes, that's right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your reservation was a success.
+user: Thanks for all your help.
+assistant: You're welcome. Goodbye.

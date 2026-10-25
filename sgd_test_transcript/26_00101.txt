@@ -1,0 +1,38 @@
+user: Hi I need to travel somewhere, can you find me a train?
+assistant: Of course, which city will you be travelling to and where are you leaving from? Also, what day are you planning to travel?
+user: I'd like to go to Washington, departing from Atlanta, GA. I'll be travelling on the 3rd of March.
+tool(FindTrains): ok n_results=6
+assistant: I managed to find 6 trains that could work for you. How about the train leaving at 10 am? The ticket will cost $92.
+user: Is there anything else you can find? I'd like tickets for the 13th of March, any class is fine.
+tool(FindTrains): ok n_results=6
+assistant: How about the train that leaves at 1:20 pm? The ticket costs $104.
+user: Is there anything else you can find? I'd like an economy premium ticket.
+tool(FindTrains): ok n_results=6
+assistant: How about the train that leaves at 1:50 pm? The ticket will cost $124.
+user: That works for me.
+assistant: Is there anything else I can assist you with?
+user: Are there any attractions I can go to on that day?
+assistant: What kind of events are you interested in?
+user: I would prefer some Musical shows.
+tool(FindEvents): ok n_results=10
+assistant: I managed to find 10 events that you may like. I recommend a popular show called Adam Ant. It takes place at Atlanta Symphony Orchestra on March 11th at 5 pm.
+user: What is the location of the venue?
+assistant: You can find the venue at 1280 Peachtree Street Northeast.
+user: What is the cost per ticket?
+assistant: The ticket will cost $25.
+user: That works for me.
+assistant: Would you like to purchase tickets for the show?
+user: Not at this time, no.
+assistant: Is there anything else I can assist you with?
+user: Can you suggest some other attractions? Something that doesn't have an entree fee, preferably a Historical Landmark. It also need to be child-friendly.
+tool(FindAttractions): ok n_results=2
+assistant: I managed to find 2 attractions you may like. I suggest Martin Luther King, Jr. National Historical Park. It is a historical landmark.
+user: That sounds good. I'd like to find a house to stay at. Something with a rating of 4.4 or above. There will be 2 people staying there and I need laundry service.
+tool(SearchHouse): ok n_results=5
+assistant: How about this nice house located at 1065 Peachtree Street Northeast? It has a rating of 4.4.
+user: Can you please give me their phone number?
+assistant: The number for the house is +1 404-745-5000.
+user: This looks like a great house.
+assistant: Would you like me to reserve the house for you?
+user: No, not at this time. That's all I needed for now.
+assistant: Glad I could help, have a nice day.

@@ -1,0 +1,18 @@
+user: I am looking for a rental car. An SUV would be nice and I need it until March 12th in Warsaw.
+assistant: What is the day you want to begin the car rental?
+user: I need the car beginning on the 7th of March.
+assistant: What time would you like to pick up the car?
+user: I would like to pick it up at 4:30 in the evening.
+tool(GetCarsAvailable): ok n_results=1
+assistant: There is 1 car available at Warsaw Chopin Airport. This is a nice car, a SUV of Skoda Kodiaq.
+user: What is the price per day?
+assistant: The price is $48.00 a day.
+user: It sounds fine. I would like to reserve this rental car.
+assistant: Would you like to add insurance also?
+user: I don't want the insurance.
+assistant: Okay, confirm these details: You will pick up the car from Warsaw Chopin Airport on March 7th at 4:30 pm. You are renting an SUV without insurance and will be returning it on March 12th.
+user: Yes that sounds fine.
+tool(ReserveCar): ok n_results=1
+assistant: The reservation for the car has been made for you.
+user: Thank you for helping me. That was all I needed.
+assistant: Have a wonderful day.

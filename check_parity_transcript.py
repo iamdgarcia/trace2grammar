@@ -6,8 +6,8 @@ import os
 # timestamps; this one covers the pasted-text path the autopsy Space actually runs.
 import json, subprocess, os, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, ROOT + "/builds/trace2grammar")
+ROOT = os.path.dirname(os.path.abspath(__file__))  # repo root: portable, no hf/ layout assumed
+sys.path.insert(0, ROOT)
 from trace2grammar.extract import extract_transcript  # noqa: E402
 
 runner = """
@@ -17,16 +17,18 @@ const text = fs.readFileSync(process.argv[3], 'utf8');
 const norm = TAU.normalizeTranscript(text);
 const r = TAU.inferStates(norm.events);
 process.stdout.write(JSON.stringify({walk: r.walk, outcome: r.outcome,
-  cycle_depth: r.cycle_depth, error_count: r.error_count, events: norm.events}));
+  cycle_depth: r.cycle_depth, error_count: r.error_count, silent_failure_candidate: r.silent_failure_candidate, events: norm.events}));
 """
-runner_path = ROOT + "/runtime/_parity_transcript_runner.js"
+runner_path = ROOT + "/runtime/_parity_transcript_runner_%d.js" % os.getpid()
 open(runner_path, "w", encoding="utf-8").write(runner)
 
-SAMPLES_DIR = ROOT + "/builds/trace2grammar/samples"
+SAMPLES_DIR = ROOT + "/samples"
 cases = []
 for fname in sorted(os.listdir(SAMPLES_DIR)):
     if fname.endswith(".txt"):
-        cases.append((fname, open(os.path.join(SAMPLES_DIR, fname), encoding="utf-8").read()))
+        # normalize CRLF->LF: a Windows git checkout can put \r\n on disk; py and JS
+        # must receive the EXACT same text or the sha1 pacing hash diverges
+        cases.append((fname, open(os.path.join(SAMPLES_DIR, fname), encoding="utf-8", newline='').read().replace('\r\n', '\n')))
 
 # crafted edge cases: each exercises a branch the samples may not
 cases += [
@@ -40,12 +42,12 @@ cases += [
 fails = 0
 for name, text in cases:
     py = extract_transcript(text)
-    ev_path = ROOT + "/runtime/_parity_transcript_case.txt"
+    ev_path = ROOT + "/runtime/_parity_transcript_case_%d.txt" % os.getpid()
     open(ev_path, "w", encoding="utf-8", newline="\n").write(text)
     r = subprocess.run(["node", runner_path,
-                        ROOT + "/builds/conversation-autopsy/tau_port.js", ev_path],
+                        ROOT + "/autopsy_space/tau_port.js", ev_path],
                        capture_output=True, text=True, encoding="utf-8", timeout=60,
-                       cwd=ROOT + "/builds/trace2grammar")
+                       cwd=ROOT)
     if r.returncode != 0:
         print(name, "NODE ERROR:", r.stderr[:200]); fails += 1; continue
     js = json.loads(r.stdout)
@@ -53,7 +55,8 @@ for name, text in cases:
     ok = (js["events"] == py_events and js["walk"] == py["walk"]
           and js["outcome"] == py["outcome"]
           and js["cycle_depth"] == py["cycle_depth"]
-          and js["error_count"] == py["error_count"])
+          and js["error_count"] == py["error_count"]
+          and js["silent_failure_candidate"] == py["silent_failure_candidate"])
     print(("PASS " if ok else "FAIL "), name, "->", py["outcome"], "D=", py["cycle_depth"])
     if not ok:
         fails += 1

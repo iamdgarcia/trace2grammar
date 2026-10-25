@@ -1,0 +1,19 @@
+user: Can you find me Metal songs by Jinjer?
+tool(LookupMusic): ok n_results=1
+assistant: How about Pisces by Jinjer from album King Of Everything?
+user: Can you tell me the year it came out?
+assistant: I was launched in the year 2016.
+user: Yes, That is the song I am looking for.
+assistant: Do you want me to play the song for you?
+user: Not now. Can you look for good movies featuring Bruce Willis by Cult?
+tool(FindMovies): ok n_results=1
+assistant: What do you think of Pulp Fiction?
+user: Pulp Fiction sounds good. I would like you to play the song you found on any device.
+assistant: Please confirm: You want me to play the song Pisces in Living room.
+user: No, Please play it on the speaker outside.
+assistant: Please confirm: You want me to play the song Pisces in Patio.
+user: Yes, That sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. Enjoy!
+user: Okay. That will be all. Thank you so much!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,24 @@
+user: I'm looking for a bus that goes to San Francisco on the 14th of March. It's for 2 people.
+assistant: Where will you be departing from?
+user: I'm departing from Sacramento.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses for that date. There's one at 7:40 am for $25.
+user: Okay, that will work.
+assistant: Would you like to purchase tickets?
+user: No, I can do that later.
+assistant: What else can I help you with?
+user: What are some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Alcatraz is a Historical Landmark that might interest you.
+user: Sounds nice. Let's purchase those bus tickets from before.
+assistant: I'll purchase 2 tickets for Sacramento to San Francisco on March 14th at 7:40 am. With no extra luggage. Is that correct?
+user: No, I actually do have extra luggage.
+assistant: The ticket to Sacramento will have extra luggage for the bus. Is that correct?
+user: Yes, that's correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have purchased the tickets.
+user: Thanks so much. Do you know of any hotels there?
+tool(SearchHotel): ok n_results=10
+assistant: There's a 1 star hotel called Amsterdam Hostel San Francisco.
+user: Seems okay. That's all I need right now.
+assistant: Take care and have a fine day.

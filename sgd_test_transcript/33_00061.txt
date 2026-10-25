@@ -1,0 +1,23 @@
+user: I'd like your help with finding a drama event to attend on March 10th.
+assistant: Of course, in any specific city?
+user: Yes, in Chicago please.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 possible activities for you. Perhaps you be interested in seeing Ada And The Engine at The Artistic Home on March 10th at 5:30 PM.
+user: I sure would, thanks.
+assistant: Shall I buy tickets for you now?
+user: Yes, I'd like two of them.
+assistant: Confirming 2 tickets 28 Ada and the Engine on March 10th in Chicago.
+user: I think I'm actually going to need four tickets instead.
+assistant: Confirming admission for 4 in Chicago.
+user: Yes, great, thank you.
+tool(BuyEventTickets): ok n_results=1
+assistant: You're very welcome, enjoy the show.
+user: I'm wondering, how much is the ticket price and what is the address of the venue?
+assistant: The tickets are $25 and the theater is located at 1376 West Grand Avenue #7761.
+user: Thank you very much. I'd also like a cab please for the trip, the most comfortable possible.
+assistant: Confirming a luxury ride for 4 people to The Artistic Home.
+user: Thanks, that's great. How much will that cost and do you know when it will arrive?
+tool(GetRide): ok n_results=1
+assistant: The ride has been booked and dispatched. It should arrive in 7 minutes and the charge will be $35.82.
+user: Great, I appreciate all your help.
+assistant: It's my pleasure, goodbye.

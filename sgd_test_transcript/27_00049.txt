@@ -1,0 +1,25 @@
+user: I want to go to some attractive places and I need your help to search for the good one.
+assistant: In which City you want me to search for the attractive places?
+user: Search it in San Francisco and the same should also be a good place for Kids.
+tool(FindAttractions): ok n_results=10
+assistant: I got 10 attractions. Do you like to visit a Historical Landmark? If so then you can try the place Alcatraz which is the interested one to you.
+user: Thanks for the details. please also search for a nice movie to watch there.
+tool(FindMovies): ok n_results=10
+assistant: Got 10 movies. What is your best choice among Ad Astra, Brittany Runs a Marathon and Fiddler: A Miracle of Miracles? These are good movies I think.
+user: Search for something else an I like to prefer an Imax show.
+tool(FindMovies): ok n_results=9
+assistant: What about your opinion on movies like Hobbs and Shaw, Hustlers or IT Chapter Two? Do you like any one of this?
+user: Yes, I choose Hobbs and Shaw.
+assistant: That is nice movie. Shall I book the tickets now?
+user: No, not now and may be later.
+assistant: How can I help you further?
+user: I like to watch a movie online. Find me the one featuring Stephanie Vogt and I like Action movies.
+tool(FindMovies): ok n_results=1
+assistant: What about Hobbs and Shaw. Is it okay to you?
+user: Hobbs and Shaw is okay and I like to watch it now with English subtitles.
+assistant: Need your confirmation to play the movie Hobbs and Shaw with English subtitles.
+user: Okay, you go ahead.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing now and you can enjoy the same.
+user: That's all I need. Thanks.
+assistant: Have a great day.

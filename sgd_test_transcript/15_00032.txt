@@ -1,0 +1,19 @@
+user: Will you find a place to live in Mountain View?
+assistant: A place to rent or buy? How many bed rooms and baths do you prefer?
+user: I want to buy a property in Campbell with 2 bed rooms and 1 bath.
+tool(FindHomeByArea): ok n_results=4
+assistant: I found La Mancha Apartments at 240 Hollis Avenue for $2,550,000.
+user: Will you schedule a visit to the property for Thursday next week?
+assistant: Confirm a visit to La Mancha Apartments on March 7th.
+user: Great. Their phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit. You may reach them at 866-573-8123.
+user: Thanks. Will you show my alarms?
+tool(GetAlarms): ok n_results=2
+assistant: 2 alarms. Errands is set for 3 pm.
+user: Cool.
+assistant: Add an alarm?
+user: Not now.
+assistant: Anything else?
+user: That's all.
+assistant: Have a great day.

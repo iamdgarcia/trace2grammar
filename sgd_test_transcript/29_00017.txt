@@ -1,0 +1,28 @@
+user: I want to search for a nice Hotel to stay for a while and I need your help to do the same.
+assistant: Where do you want to search for the hotel? Do you have any plan to stay in a particular City?
+user: Yes, search for some nice hotels in Paris.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 4 star hotel in Paris which is in the name of Ac Hotel By Marriott Paris Porte Maillot. Do you like to stay here?
+user: I think this is okay. But I want to know the cost per night and their address details for my reference.
+assistant: They will charge you $432 per night and they are located at 6 Rue Gustave Charpentier, 75017.
+user: That is okay for me. Now find a round trip flight. What are the details required by you to search for the same?
+assistant: I need to know the starting date and return date of your travel. Shall I try to search for the flight on March 3rd as leaving date?
+user: No, I am planning to start my travel on today and I need the return flight on 13th of this month.
+assistant: And also let me know your present location to search for flight leaving from there.
+user: Search for something leaving from Seattle.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Got 2 results. How about your choice to fly with American Airlines? an onward flight takes off at 4:15 pm is available for $626 with layover and the return flight time is 2:35 pm.
+user: That's great. Now please reserve a room in the hotel that you have found for me.
+assistant: Shall I book it from March 1st? Let me know the number of days that you want to stay there.
+user: Book it from next Tuesday for 4 days.
+assistant: Please confirm to book 1 room in a hotel named Ac Hotel By Marriott Paris Porte Maillot from March 5th for 4 days in Paris.
+user: That is okay. Go ahead.
+tool(ReserveHotel): ok n_results=1
+assistant: Your rooms are booked in that hotel.
+user: Thank you for the same. One more last help. Please find some attractive places there to visit. I need the one which should be the safest place for Kids.
+tool(FindAttractions): ok n_results=10
+assistant: You can try American church in Paris which is a place of worship. This is the best one among the 10 results that I searched for you.
+user: That's great and thanks.
+assistant: What else you need?
+user: That's all for now.
+assistant: Have a good day.

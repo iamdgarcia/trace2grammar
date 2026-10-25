@@ -1,0 +1,32 @@
+user: Let's search songs from five years back by Ariana Grande please.
+tool(LookupMusic): ok n_results=3
+assistant: Sure, How about Best Mistake by Ariana Grande from her album My Everything?
+user: what kind of genre of music is this?
+assistant: this is a pop album.
+user: Yes that is the right album.
+assistant: Great, should I play this now for you?
+user: Maybe later. Are there any good movies playng online?
+assistant: I'll look for you. Any preference?
+user: Foreign story would be great!
+tool(FindMovies): ok n_results=2
+assistant: There're 2 movies you may be interested in. What about Tel Aviv on Fire or Zama?
+user: any other options?
+tool(FindMovies): ok n_results=0
+assistant: I apologize I have not been able to locate any other movies for you.
+user: Let's continue searching. How about Ghost movies featuring Robert Coote.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie i've found, called Theatre of Blood.
+user: Theatre of Blood sounds wonderful.
+assistant: Great, should I play this movie for you?
+user: No, not now. Can you play the song we found earlier please.
+assistant: Sure, please confirm. you would like to play Best Mistake in the Living room. is that right?
+user: Yes that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music.
+user: Can you show me my alarms.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm currently set. There is an alarm set for 3 pm under Errands.
+user: Ok, thank you for that.
+assistant: your welcome, would you like to add another alarm?
+user: No not right now. that will be all.
+assistant: ok, great. have a great day!

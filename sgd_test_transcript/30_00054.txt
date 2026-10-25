@@ -1,0 +1,23 @@
+user: I am looking to book tickets to a show. I've been told that Mimosas Cabaret is an excellent choice.
+assistant: In what location and on what date are you looking to attend a show? And what number of tickets do you need?
+user: I would two like tickets for a show in Seattle, WA on the 5th.
+assistant: Okay, so you would like to reserve 2 tickets for Mimosas Cabaret for the March 5th show in Seattle. Is this correct?
+user: Perfect. That's right!
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been successfully purchased. Enjoy the show!
+user: Can you tell me the venue for the show? And what is the price for a single ticket?
+assistant: The show is taking place at Unicorn and ticket prices are $25 each.
+user: Great. Thanks! I also need a direct bus to get there. I would like to leave from Vancouver, BC on the 4th.
+tool(FindBus): ok n_results=10
+assistant: There is a 7:40 am bus with a ticket price of $25.
+user: And can you tell me the departure and arrival stations for this bus?
+assistant: The bus leaves from Pacific Central Station and the arrival station is Westlake Station.
+user: Are there any other options?
+assistant: There is a $27 bus that leaves at 9:10 am
+user: Perfect. That works!
+assistant: To confirm then, you would like to purchase tickets for 2 people for the bus leaving at 9:10 am on March 4th from Vancouver and arriving in Seattle. There's no additional luggage to be checked. Correct?
+user: That is exactly right!
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been successfully purchased.
+user: Great, thank you so much. That's it for me.
+assistant: Enjoy your day.

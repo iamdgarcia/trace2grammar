@@ -1,0 +1,36 @@
+user: I am looking to make a payment.
+assistant: What is the name of the contact and from what account?
+user: I'd like it from my checking account and the name is Mahmoud.
+assistant: How much will it be?
+user: The amount is $180.
+assistant: Please confirm you're making a transaction for $180 from your debit card with Mahmoud and it will be visible to the public.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been confirmed and the receiver should see the money soon.
+user: Can you help me find a train for the 12th of March?
+assistant: From which city are you leaving from?
+user: I'm planning to leave from Sacramento, CA.
+assistant: Where are you going?
+user: I'm trying to get to San Fran.
+tool(FindTrains): ok n_results=10
+assistant: I found a train leaving at 7:30 am for $47.
+user: Which station does this train leave from?
+assistant: It is leaving from Sacramento Valley Station.
+user: That works. How will the weather be in San Fran on the 14th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is looking like 93 degrees F with a 12 % chance of rain.
+user: Sure, sounds good. Could you help me get tickets for the train you found?
+assistant: How many tickets were you looking for and did you need travel insurance?
+user: I would like travel insurance and I will need 1 seat.
+assistant: Please confirm you're booking a value ticket for 1 on the train leaving from Sacramento to San Francisco on March 12th at 7:30 am.
+user: I will need two seats actually.
+assistant: Please confirm you're getting a Value ticket for 2.
+user: I will actually need luxurious tickets.
+assistant: Please confirm you're getting a business ticket leaving at 7:30 am.
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your booking has been made.
+user: What station will this train arrive at?
+assistant: It should arrive at Salesforce Transit Center.
+user: Thank you for your help. That will be all I need.
+assistant: See you soon.

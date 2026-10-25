@@ -1,0 +1,29 @@
+user: I'm going out of town soon and I need your help finding a hotel to stay at.
+assistant: Okay. In which city would you like me to look for hotels in?
+user: I'll need a place in Anaheim, CA. I only need one room.
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels that match your criteria. How about a 2 star hotel called Alamo Inn & Suites.
+user: Maybe. Is smoking allowed?
+assistant: Smoking is not allowed on the property.
+user: Good, I hate smokers. Can you find me a rental car for while I'm there?
+assistant: Sure. What time would you like to pick the car up, and for how long would you like it?
+user: I'd like to pick it up at 12:30 in the afternoon, and I'll need it till the 14th of this month.
+assistant: Would you like to pick the car up on March 13th?
+user: Yes that is right.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I've found 10 cars available for you. There is a nice Buick Regal Sportback Sedan available at John Wayne Airport.
+user: How much will the rental cost per day?
+assistant: It costs $35.00 per day.
+user: That sounds good. Let me reserve that rental car.
+assistant: Would you like to get insurance?
+user: No, I don't think so.
+assistant: You would like to rent a sedan without insurance. You would like to pick the car up on March 13th at 12:30 pm at the John Wayne Airport and have the car until March 14th. Is that all correct?
+user: No that is not correct. I want insurance I changed my mind.
+assistant: You would like insurance and to pick the car up at the John Wayne Airport. Is that correct?
+user: Yes that sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Great. Thank you for that.
+assistant: No problem. Will that be all?
+user: Yes, for now.
+assistant: Okay. Good bye.

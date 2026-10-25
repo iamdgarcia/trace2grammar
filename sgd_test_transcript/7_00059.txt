@@ -1,0 +1,18 @@
+user: Hey, I'm currently searching for a place to live. Is there anyway you can help me out?
+assistant: Sure thing! What area would you like me to search in? How many baths will you require?
+user: Thank you! Please find me a place with three baths in San Jose if you can.
+assistant: No problem. How many bedrooms are you looking for?
+user: I need a place with three bed rooms.
+assistant: Are you looking to rent or buy?
+user: I'm looking for a place to rent right now.
+tool(FindHomeByArea): ok n_results=10
+assistant: Okay, I've found 10 nice places for you. There is a place called Aegena located at 1290 San Tomas Aquino Road. Rent will cost you $4,350.
+user: Do they have a garage?
+assistant: No they do not have a garage at this location.
+user: Well, okay it still sounds good. can you schedule a visit for me for the 13th?
+assistant: No problem, before we get started please confirm the following for me. You want to schedule a visit to Aegena on march 13th. Correct?
+user: Yes, that's correct. Can you give me their number as well?
+tool(ScheduleVisit): ok n_results=1
+assistant: Sure thing, your visit is now scheduled. The number for the property is 408-984-8888. Anything else?
+user: Thanks a lot! That will be all for now.
+assistant: My pleasure. Have a great day!

@@ -1,0 +1,19 @@
+user: life will be fun if we hear some good songs. Please find me some good songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: What do you think about Under your scars by Godsmack from the album When Legends Rise?
+user: Whether this song come out in six years back?
+assistant: no, it is from the year 2018.
+user: ok that's the one i searched for. Whether is there any good movies online?
+assistant: What type of movies you mostly prefer?
+user: Ghost movies is the one i need.
+tool(FindMovies): ok n_results=6
+assistant: what about 47 meters down: uncaged, In fabric or Midsommar?
+user: Uncaged is great. will you play the song which you found before? Play it on any devie.
+assistant: please check and review the following details. Playing the song under your scars in Living room.
+user: ok thats great. thats all i need.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music
+user: thanks a lot.
+assistant: whether i need to do anything else?
+user: no, thanks for now.
+assistant: bye , take care have a wonderful day

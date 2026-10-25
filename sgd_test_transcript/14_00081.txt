@@ -1,0 +1,19 @@
+user: Let me enjoy some Action move of Sanjay Kapoor directed by Jagan Shakti.
+tool(FindMovies): ok n_results=1
+assistant: Will Mission Mangal do? It has 67 rating out of 100.
+user: it is fine. Now look for some song album like Raees. I fond of Pavni Pandey.
+tool(LookupMusic): ok n_results=1
+assistant: Do you like to enjoy Laila Main Laila by Pavni Pandey from the album Raees?
+user: Tell me about the genre of music and year of release.
+assistant: it is South Asia song released in 2017.
+user: Thats fine for me.
+assistant: Shall I play it now?
+user: Surely, play it on speaker in patio.
+assistant: please confirm You need Laila Main Laila played in Patio.
+user: Right, go ahead.
+tool(PlayMedia): ok n_results=1
+assistant: It started playing, enjoy.
+user: Thank you very much.
+assistant: Do you need any other service?
+user: No thats all.
+assistant: Have a great day.

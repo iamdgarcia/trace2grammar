@@ -1,0 +1,28 @@
+user: I'd like to see some attractions to visit.
+assistant: Where should I search for them?
+user: Please find them in SFO.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 that may interest you. You can check out Alcatraz, which is a Historical Landmark.
+user: Would you say it's kid-friendly?
+assistant: Yes, it's okay to bring your children to.
+user: Is it free to enter?
+assistant: Yes, it is free.
+user: Alright. I also want to watch a regular movie around there.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies playing. There's Ad Astra, Brittany Runs a Marathon, and Fiddler: A Miracle of Miracles.
+user: Fiddler sounds great.
+assistant: Do you want to buy tickets?
+user: No, not right now.
+assistant: Is there anything else you need?
+user: Are there any good Fight movies online? I like movies with Samuel L. Jackson.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like. How about Pulp Fiction?
+user: Pulp Fiction is awesome.
+assistant: Do you want me to play it?
+user: Yes, please play it with French subtitles.
+assistant: Okay. To confirm: You want to play Pulp Fiction with French subtitles.
+user: Yes, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: I have started the movie.
+user: Thank you. That's all.
+assistant: Have a great day!

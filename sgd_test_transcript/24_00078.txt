@@ -1,0 +1,23 @@
+user: I want to spend my free time by watching a nice movie. Can you please search and find the best movie to watch?
+assistant: Yes, Where do you want to watch the movie?
+user: Find the one in Santa Clara.
+tool(FindMovies): ok n_results=9
+assistant: Got 9 movie results. What is your choice among the movies Ad Astra, Angel Has Fallen and Chhichhore?
+user: I will go with Angel Has Fallen. I want to eat there for which I need a restaurant. Please search for the one in the same area.
+assistant: Do you have any preferred Restaurant to search for and let me know our convenient time to reserve the table.
+user: Please reserve a table at quarter past 6 in the evening at La Paloma restaurant.
+assistant: Once again please confirm to book a table for 2 in the La Paloma Restaurant on March 1st for the time 6:15 pm in Santa Clara.
+user: Yes, proceed. Can you check for vegetarian food there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, they don't have vegetarian options. Unfortunately I was not able to book the table at your required time. Shall I try for some other time like 6 pm in the same Restaurant La Paloma on the same day March 1st for 2 persons?
+user: Okay, you can try that if possible.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked the table at new time.
+user: Can you tell me which is the best show time for the movie that I have selected before? I like to watch it at AMC Mercado and I prefer regular show.
+tool(GetTimesForMovie): ok n_results=1
+assistant: You can watch it at 9 pm in AMC Mercado 20.
+user: Any other possible time?
+tool(GetTimesForMovie): ok n_results=0
+assistant: No, only one show time is available there. How can I help you further?
+user: No, thanks and that's all.
+assistant: Have a great day.

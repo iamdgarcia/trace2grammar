@@ -1,0 +1,19 @@
+user: I want to watch a movie now and I need your help to find the best one. I want to find it in San bruno.
+tool(FindMovies): ok n_results=6
+assistant: Okay, what is your choice among Ad Astra, Chhichhore or Hobbs and Shaw?
+user: Chhichhore is the good one and I prefer it.
+assistant: Do you want met to book the tickets to this movie now?
+user: No, not now, may be later.
+assistant: What else you want from me?
+user: I think listening to some nice songs will be great now. especially I like the songs by Vybz Kartel. Can you search for songs from the album King of The Dancehall from three years ago?
+tool(LookupMusic): ok n_results=1
+assistant: Got 1 which is Colouring This Life by Vybz Kartel from your favorite album King of The Dancehall. Do you like to listen it now?
+user: I want to know about the type of this song first.
+assistant: It is a Reggae song and hope you will like it.
+user: Yes, I like it and please play it in my Living room speaker.
+assistant: I need your final confirmation to play the song Colouring this Life in Living room.
+user: Okay, please proceed.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing now.
+user: That's perfect. Thanks.
+assistant: Have a great day.

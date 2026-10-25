@@ -1,0 +1,31 @@
+user: I want to watch a movie online for which I need your help to find the best one. Can you search it for me?
+assistant: Yes, let me know the type of movie that you like to watch?
+user: I like to watch Funny movies and search the one like this.
+tool(FindMovies): ok n_results=5
+assistant: Please choose your best choice among the movies Chhichhore, Good boys and My Big Fat Greek Wedding. These are the best among the 5 results I got.
+user: I prefer to watch the movie Chhichhore.
+assistant: Shall I play it now?
+user: No, I will watch it later. Now, I want to find some attractive places there to visit and help me to search for the suitable one.
+assistant: Which is your convenient place to search for the attractions?
+user: I want it in Atlanta.
+tool(FindAttractions): ok n_results=10
+assistant: Do you like to visit to a place of Worship? If so then you can try to visit Al-Farooq Masjid.
+user: That's okay. Search some nice songs also for me to hear now. I need something from the Album like Maza Mar Liya Dhori Ke Niche.
+tool(LookupMusic): ok n_results=2
+assistant: Got 2 songs from the album Maza Mar Liya Dhori Ke Niche. Do you like to hear Lahnga Lasar Ke by Shailesh Premi in that album?
+user: Yes, please let me know the type of this song.
+assistant: It is a Country type song and hop you will like it.
+user: Yes, I prefer to hear this song. Thanks.
+assistant: Shall I play it now?
+user: Yes, I like to hear it now. Pleas play it on any of my device.
+assistant: Okay, please confirm to play the song Lahnga Lasar Ke in your Living room speaker.
+user: That is confirmed and you can proceed. Also please check whether this was released two years back.
+tool(PlayMedia): ok n_results=1
+assistant: It is from the year 2019 and the same was started playing now. You can enjoy it.
+user: Thanks and please play the movie that I have selected before.
+assistant: I need your confirmation to play the movie Chhichhore with English subtitles.
+user: Please go ahead.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing now and you can enjoy the same.
+user: Thanks and that's all for now.
+assistant: Have a great day.

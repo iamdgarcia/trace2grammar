@@ -1,0 +1,36 @@
+user: I need a salon in Fremont
+tool(FindProvider): ok n_results=10
+assistant: In Fremont there's 3Sixty Salon And Boutique
+user: Is It an unisex salon?
+assistant: No, 3Sixty Salon And Boutique isn't a unisex salon
+user: Can you give me the salon number?
+assistant: Sure! The number is 510-574-0881
+user: Are there other salons in that city?
+assistant: In Fremont there's Alex'S Classic Barber Shop too
+user: Do you have any other suggestions?
+assistant: In Fremont I suggest Beauology, a nice salon
+user: Yes, It's fine for me!
+assistant: Want to book an appointment now?
+user: No, thanks, maybe later. I would like to share the address of the salon
+assistant: The address to share is 5371 Mowry Avenue.
+user: Yes, share it, please
+assistant: Who is the person you want to share with?
+user: I need to share it with Hannah
+assistant: Sharing the location 5371 Mowry Avenue with Hannah: do you confirm?
+user: Yes, I confirm, thanks
+tool(ShareLocation): ok n_results=1
+assistant: Hannah received the location
+user: Very good, thank you so much. Can you show me which alarms I activated?
+tool(GetAlarms): ok n_results=4
+assistant: There's an alarm named Exercise at 8 am
+user: Perfect. Thank you.
+assistant: Need to add another alarm clock?
+user: Yes, please. An alarm for afternoon 3:15 named Music Practice
+assistant: Adding an alarm at 3:15 pm named Music Practice. Do you confirm?
+user: Yes, I confirm
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been added
+user: Very well, thank you very much
+assistant: Can I do something for you?
+user: No, It's all for today, thanks
+assistant: Thank you, have a nice day

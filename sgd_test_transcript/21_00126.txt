@@ -1,0 +1,42 @@
+user: Can you find me something interesting to do please?
+assistant: Sure, what kind of event are you thinking?
+user: I want to catch a musical performance if possible?
+assistant: What city are we gonna look in?
+user: I want to find a show in Vancouver, BC
+tool(FindEvents): ok n_results=7
+assistant: I found 7 events including one called Cavetown which takes place at Venue Nightclub and it's happening on March 5th 4 pm
+user: Where is the venue of this show and how much is it?
+assistant: It's located at 881 Granville Street and is $60 a day
+user: That sounds good
+assistant: Do you want tickets then?
+user: Not now, but can you find me a bus going there. I want a direct bus leaving today for 1
+assistant: Where are you coming from?
+user: I'll be leaving from Portland
+tool(FindBus): ok n_results=7
+assistant: How about the 7:10 am bus for $36
+user: What else is there?
+assistant: There's a 7:20 am bus for $46
+user: OK cool. Now I need a round trip flight leaving on March 3rd
+assistant: Which day are you coming back?
+user: I want to be back on the 11th of this month
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Do you want to fly on American Airlines at 11:20 am with a layover? It's returning flight leaves at 11:10 am and it'll be $383
+user: Is there something else? Maybe via Delta Airlines?
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight with Delta Airlines with a 4:35 am layover departure and a 6:35 am return flight for cheaper at $357
+user: When does the flight arrive at the destination
+assistant: It'll get there 10:47 am
+user: And the return flight?
+assistant: It'll be 4:23 pm
+user: Sounds good ,can you find hotels there too?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including the Atrium Inn Vancouver, it's a 3 star place
+user: How much is it a night
+assistant: It's $99 a night
+user: That sounds good, now lets get tickets to that event
+assistant: So you want 1 ticket to Cavetown on March 5th in Vancouver yes?
+user: Yes that's right
+tool(BuyEventTickets): ok n_results=1
+assistant: It's been booked!
+user: Thanks so much that's it
+assistant: Have a great day and enjoy it!

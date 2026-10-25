@@ -1,0 +1,23 @@
+user: Can you help me find a place to live please?
+assistant: Sure, how many baths and beds? Also for rent or to buy?
+user: I just need to rent a one bath 2 bed room place
+assistant: Got it, and where at?
+user: I need a rental in Cloverdale
+tool(FindHomeByArea): ok n_results=2
+assistant: There's a excellent property called Cloverdale Garden Apartments at 18 Clark Avenue that's $2,400 a month
+user: What about places in Sunnyvale?
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 10 places including Aster Park Apartments at 1059 Reed avenue that's a little pricier at $2,550
+user: That sounds good to me
+assistant: Do you want to visit the property?
+user: Yes I would like that
+assistant: For when though?
+user: I want to go there on March 4th please
+assistant: Confirming you want a visit to Aster Park Apartments on March 4th yes?
+user: Actually I changed my mind, move that to Sunday this week
+assistant: So a visit to Aster Park Apartments on March 3rd?
+user: Yes please, also to they have a garage and laundry machines in-home?
+tool(ScheduleVisit): ok n_results=1
+assistant: It's been booked! And it has in-unit laundry but no garage unfortunately
+user: OK, that's all for now then
+assistant: Enjoy your property visit!

@@ -1,0 +1,26 @@
+user: Hi I need help locating some attractions, can you help me with that?
+assistant: Sure, where would you like for me to look?
+user: Can you look for some in NY.
+tool(FindAttractions): ok n_results=10
+assistant: Okay, I have found 10 attractions that may interest you in NY. Would be interested in visiting a museum, the 9/11 Tribute Museum?
+user: Can I have the phone number to the museum? How much are the tickets?
+assistant: The phone number is 866-737-1184, and this museum is free.
+user: Cool! Can you also help me find a house to stay in nearby?
+tool(SearchHouse): ok n_results=10
+assistant: Yes I can. I have 10 homes in that area, how about 100 Greenwich Street, it has an 4.4 customer satisfaction rating.
+user: Can you tell me the other homes you have and the rating can be 3.6 or higher.
+tool(SearchHouse): ok n_results=9
+assistant: Sure, out of the 9 ones I see you may like, 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA, is has a 3.6 rating.
+user: Sure, that would will be just fine.
+assistant: Did you want me to make the reservations for you?
+user: No not right now. Can you help me find a round trip economy class ticket from LAX?
+assistant: When are you look to fly out?
+user: I will be flying our next Monday.
+assistant: When did you want to return?
+user: I will be needing to return on March 9th, it will need to be two tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I have found 4 flights matching your description. Would you like to fly with out with American Airlines for $314? The flight takes off at 12:05 pm and return take off is at 1:40 pm.
+user: Can you tell me about something else?
+assistant: How about Delta Airlines? They have a flight that takes off at 5:15 am and return take off is at 8 am for $429.
+user: Great! Thank you for that information, that will be all for me now.
+assistant: Good bye.

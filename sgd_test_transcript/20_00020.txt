@@ -1,0 +1,23 @@
+user: I am interested in finding a hotel.
+assistant: What is your preferred city search area for hotels?
+user: I need one room at a hotel in NY.
+tool(SearchHotel): ok n_results=10
+assistant: I was able to find 10 hotels that match your specifications. There is a 5 star hotel with the name 1 Hotel Brooklyn Bridge.
+user: Are there some more hotels that will meet my needs?
+assistant: There's a 5 star hotel named 1 Hotel Central Park.
+user: That sounds nice. Would you search for a rental car? Any kind is fine but I will need it until March 9th.
+assistant: What pick up time and do you want to get it from March 6th?
+user: I'll be getting it at 12 pm and from the 8th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 available cars. Port Authority Station has a SUV Alfa Romeo Stelvio and it's a good choice.
+user: Let's reserve the car, it sounds like a good choice.
+assistant: Would you like to add insurance?
+user: No, insurance isn't necessary.
+assistant: You will be picking up an SUV car from Port Authority Station on March 8th at 12 pm. You do not need insurance and will be bringing it back on March 9th. Is all the information correct?
+user: Yep, sounds like a plan.
+tool(ReserveCar): ok n_results=1
+assistant: The rental car has been reserved.
+user: Can you give me the daily price?
+assistant: There will be a daily cost of $42.00.
+user: That's all and thanks for your help!
+assistant: Enjoy the rest of the day.

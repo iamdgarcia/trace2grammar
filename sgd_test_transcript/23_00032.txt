@@ -1,0 +1,33 @@
+user: I want to see a movie online.
+assistant: What kind of movie?
+user: I want to see a comic movie.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 suitable options. You can watch Chhichhore, Good Boys or My Big Fat Greek WEdding.
+user: Let me see My Big Fat Greek Wedding. What fun park can I visit in London.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 suitable choices for you. You can try a park called Barbican Conservatory.
+user: Great. I want to listen to some tunesnow.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs that might interest you. Would you like to listen to Whore by In this Moment from the album Blood?
+user: Did that song come out four years ago?
+assistant: It came out in 2012.
+user: I want to hear something more contemporary.
+assistant: How about Nixta Ginontai Ta Thavmata by Malou Kyriakopoulou from the album Ores Aixmis?
+user: Yes, play that one.
+assistant: You would like to listen to Nixta Ginontai Ta Thavmata in the living room?
+user: No, on the speaker in patio.
+assistant: playing nixta ginontai ta thavmata in patio.
+user: Thanks. What kind of music is that?
+tool(PlayMedia): ok n_results=1
+assistant: It is a pop tune.
+user: Did it come out three years ago?
+assistant: No, it is from 2019.
+user: Ok, thanks a lot.
+assistant: Would you need anything else?
+user: Can you play the movie with English subtitles.
+assistant: You would like to see My Big Fat Greek Wedding with English subtitles?
+user: Yes, I do. Who was the main actor or actress in the film?
+tool(PlayMovie): ok n_results=1
+assistant: Andrea Martin. The movie has started.
+user: Thanks. That would be all.
+assistant: Enjoy your day.

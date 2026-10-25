@@ -1,0 +1,29 @@
+user: I need to make a payment of 50 bucks from my debit card
+assistant: Whoa are you sending it to
+user: I am sending the money to Mary
+assistant: OK confirming a public transfer of $50 bucks to Mary from your debit card
+user: Yes that's right
+tool(MakePayment): ok n_results=1
+assistant: It has been made and will reflect shortly
+user: Cool thanks for that
+assistant: Can I do anything else?
+user: Right now yes, request a payment for me
+assistant: In what amount
+user: Request eighteen bucks
+assistant: Who are you requesting this from?
+user: I need the money from Emma
+assistant: Ok confirming you are asking for $18 publicly from Emma
+user: Yes that's right
+tool(RequestPayment): ok n_results=1
+assistant: It has been requested!
+user: OK, now make another payment for me
+assistant: Are we paying via app balance or credit card
+user: I will pay via in-app balance please
+assistant: What amount and to who?
+user: It'll be 96 dollars being sent to Mahmoud
+assistant: Confirming your public transfer from your app balance to Mahmoud in the amound of $96
+user: Yes that's right
+tool(MakePayment): ok n_results=1
+assistant: It is done and they'll get the money soon
+user: That's all then, take care and thanks for your help
+assistant: Glad I could be of assistance

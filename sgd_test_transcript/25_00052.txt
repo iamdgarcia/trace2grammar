@@ -1,0 +1,21 @@
+user: I would like to find a 3D kids movie in Sonoma.
+tool(FindMovies): ok n_results=1
+assistant: I found 1, Toy Story 4.
+user: Toy Story 4 is exactly what I wanted.
+assistant: Would you like to reserve tickets now?
+user: No not at this time.
+assistant: Can I assist with anything else?
+user: Yes, please find me some songs.
+tool(LookupMusic): ok n_results=10
+assistant: I found you 10 songs. How about the Champion by Carrie Underwood from Cry Pretty.
+user: Yes that is perfect.
+assistant: Would you like to hear the song?
+user: Yes, please cast it to my kitchen.
+assistant: You want to hear the Champion in the kitchen, is that correct?
+user: Yes that is correct.`
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song.
+user: Thank you very much.
+assistant: Can I do anything more for you?
+user: No that will be all thanks.
+assistant: Have a fabulous day.

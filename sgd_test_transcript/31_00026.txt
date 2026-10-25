@@ -1,0 +1,28 @@
+user: I need to find a salon.
+assistant: In which city would you like to search in?
+user: I need a unisex salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons, such as Atelier Salon Willow Glen in San Jose.
+user: What is the address and rating?
+assistant: The address is 1047 Lincoln Highway Suite 101, with a rating of 4.3
+user: Is there another salon?
+assistant: Barba & Co. San Jose is a nice one in San Jose.
+user: Yes, that is good and I need a movie.
+tool(FindMovies): ok n_results=10
+assistant: How about 47 Meters Down: Uncaged, Ad Astra or After the Wedding?
+user: Anything else?
+assistant: There is Angel Has Fallen, Brittany Runs a Marathon, and Fiddler: A Miracle of Miracles.
+user: Fiddler: A Miracle of Miracles is great, but at what time?
+assistant: You can watch it on March 4th.
+user: Yes, that is good. I want to see it at 3 Below Theaters and Lounge.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one show at 4:30 PM in 3 Below Theaters and Lounge.
+user: That is good. I will book an appointment at the salon on that day.
+assistant: At what time would you like the appointment?
+user: I want it at 2:45 PM.
+assistant: So, Barba & Co. San Jose and the appointment is at 2:45 PM and the appointment is on March 4th.
+user: Yes, that is good. What is the number and rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked and the number is 669-258-9601. The rating is 5.0.
+user: Yes, thank you. That is what I need.
+assistant: Have a wonderful day.

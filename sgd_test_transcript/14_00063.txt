@@ -1,0 +1,20 @@
+user: I'd like to watch a movie
+tool(FindMovies): ok n_results=1
+assistant: Do you like Rojo? Its rating is 98 out of 100
+user: Who directed this movie?
+assistant: The director of this film is Benjamin Naishtat
+user: I prefer an Action movie with Prabhas acting in it
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie for you: Saaho. Its rating is 10 out of 100
+user: Who directed this movie?
+assistant: The director is Sujeeth
+user: Yes, I like it! Now I'd like to listen a song
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs for you. Do you like Miss Li? I propose you My Heart Goes Boom from the album Tangerine Dream
+user: Yes, I love Miss Li! Cast this song on the speaker outside.
+assistant: Playing My Heart Goes Boom in Patio: do you confirm?
+user: Yes, I confirm! Is it a pop song? In which year was it published?
+tool(PlayMedia): ok n_results=1
+assistant: It's a Pop song from the 2012. Good listening!
+user: Thanks! It's all for now!
+assistant: Have a nice day!

@@ -1,0 +1,43 @@
+user: Is it possible for you to find me a therapist in Fremont which is considered to be a Family Counselor?
+tool(FindProvider): ok n_results=3
+assistant: There are 3 therapists for you to consider. One you might consider having is Center For Well Being, which is a Family Counselor in Fremont.
+user: Can you tell me the address of this therapist?
+assistant: The address of this therapist is 1301 Mowry Avenue.
+user: Can you tell me the phone number of this therapist?
+assistant: If you want to get in touch with this therapist you can at 510-797-3941
+user: That seems alright. Is it possible for you to make a reservation for an appointment?
+assistant: Can you tell me your preferred date for the appointment?
+user: I will be available to have the appointment on 5th of March.
+assistant: What time suits you best for the appointment?
+user: I want to have the appointment at evening 4:15.
+assistant: Can you please confirm that you want to have an appointment with Center For Well Being on March 5th at 4:15 pm?
+user: Yes, that is what I want.
+tool(BookAppointment): ok n_results=1
+assistant: I apologize but I could not make the reservation you asked for. Though I can try to make again a booking for Center For Well Being on March 5th at 4 pm.
+user: That is good for me too.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been reserved, and an email should be coming to you to confirm that.
+user: I just remembered that I want to request a payment. The amount of the transaction is for $77, and it is with Svetlana.
+assistant: Can you please confirm that you want to make a public transaction for the amount of $77 with the person named Svetlana?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been done.
+user: Now I want to find a restaurant there where I can have something to eat at on that day. More specifically I am interested in a restaurant that is considered as economical, and that has vegetarian options.
+assistant: Can you tell me the kind of food you are interested in?
+user: I would like a place which serves Diner.
+tool(FindRestaurants): ok n_results=2
+assistant: You might consider Mirchi Cafe, which can be found in Fremont.
+user: That is good for me.
+assistant: Do you want to have a table booked for you at this restaurant?
+user: Yes, I actually want to have a table for 3 people booked for me at this restaurant at quarter to 11 in the morning.
+assistant: Can you please confirm that you want to book a table for 3 people at Mirchi Cafe in Fremont on March 5th at 10:45 am?
+user: That works well for me. Can you tell me if they have outdoor seating, and the phone number that I can use to get in touch with them?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Unfortunately they do not have outdoor seating. If you want to call them you can at 510-623-8500. I apologize but I could not make the reservation you requested. Mirchi Cafe is really a nice restaurant so I might try again to make the reservation for 3 people on March 5th at 11 am.
+user: That seems good to me too.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made.
+user: I appreciate it a lot.
+assistant: Is there something else I can help you with?
+user: Nothing. I am grateful for your help.
+assistant: Have a good time!

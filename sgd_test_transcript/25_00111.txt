@@ -1,0 +1,38 @@
+user: I want you to show my alarms
+tool(GetAlarms): ok n_results=2
+assistant: You are having 2 alarms set and one alarm is set at 7 am with name Get up
+user: Any other alarms set?
+assistant: There is one alarm set at 3:30 pm with name Piano time
+user: That is fine
+assistant: You require an alarm to be added?
+user: No, i don't need alarms
+assistant: Any other help?
+user: I want you to look for restaurant there
+assistant: Which is your preferred location and your choice of food?
+user: I want to look for restaurants in Occidental serving Pizza and Pasta
+tool(FindRestaurants): ok n_results=1
+assistant: There is a nice restaurant called Negri's Original Occidental located in Occidental
+user: Do they provide outdoor seating?
+assistant: They are not having outdoor seating
+user: Can i know their contact number?
+assistant: Their contact number is 707-874-0301
+user: Fine and i need to do car booking and need it from March 1st and i also require insurance
+assistant: Which place you like to pick the car and at what time? what is your preferred car type?
+user: I prefer to pick up a Sedan car around 12 in the afternoon around Intercity Terminal and i will be needing it tilll Wednesday next week
+assistant: Please give confirmation details: You are picking up a sedan car from Intercity Terminal at 12 pm on March 1st and the drop off date is on March 6th and car comes with insurance
+user: That is fine
+tool(ReserveCar): ok n_results=1
+assistant: Your car booking is done
+user: Thank you and can you share your location?
+assistant: Who do you want to share the location with?
+user: I prefer to share it with Madison
+assistant: Do you like to share this address 3700 Bohemian Highway?
+user: The sharing location is Intercity Terminal
+assistant: Please give confirmation details: You will be sharing the location Intercity Terminal with Madison
+user: No, the sharing address is 139 South B Street and like to share with Frank
+assistant: Please give confirmation details: You will be sharing the location 139 South B Street with Frank
+user: That is fine
+tool(ShareLocation): ok n_results=1
+assistant: Your location sharing is done
+user: Thank you very much
+assistant: Have a great day

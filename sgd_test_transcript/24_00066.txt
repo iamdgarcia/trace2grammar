@@ -1,0 +1,23 @@
+user: I want to see some sort of Play movie on Shattuck Cinemas in Berkeley. Can you help?
+tool(FindMovies): ok n_results=2
+assistant: There are 2 options. Do you want A faithful Man or Hustlers?
+user: A Faithful Man please.
+assistant: What about some tickets?
+user: No thanks, I don't want them just yet.
+assistant: What else can I help with?
+user: Get me a Restaurant seat for two nearby there at 17:00.
+assistant: Fine, where do you prefer?
+user: Make it at Dara.
+assistant: Sure, to confirm: 2 Seats at Dara Thai/lao Cuisine in Berkeley at 5 pm on March 1st.
+user: Wrong I want the 9th.
+assistant: Surely, to confirm: Reservation at 5 pm on March 9th.
+user: No, wrong again, oh wise one, I want 1 pm.
+assistant: Fine, to confirm: 1 pm reservation at Dara Thai/lao Cuisine.
+user: Yes, that's fine. Where is it located?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation worked It's at 1549 Shattuck Avenue.
+user: Thanks, what are the movie times?
+tool(GetTimesForMovie): ok n_results=1
+assistant: The show is at 9:30 pm at Landmark's Shattuck Cinemas.
+user: That's great, thanks.
+assistant: Enjoy your time away.

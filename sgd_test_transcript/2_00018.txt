@@ -1,0 +1,14 @@
+user: I want to find some cool things to do.
+assistant: What city would you like to look in?
+user: I want to find music events in San Francisco on the 1st of March.
+tool(FindEvents): ok n_results=9
+assistant: Alex Cameron is taking place at August Hall on March 1st at 7:30 pm.
+user: How much does it cost?
+assistant: The ticket is $20 each.
+user: Sounds good. Are there any other events? What about the 7th of this month?
+tool(FindEvents): ok n_results=9
+assistant: I found 9 events. Carmina Burana is taking place at the San Francisco Symphony on March 7th at 4:30 pm.
+user: Where is the venue located? How much is one ticket?
+assistant: The venue is located at 201 Van Ness Avenue. One ticket is $60.
+user: Sounds good. That's all.
+assistant: Have a good day.

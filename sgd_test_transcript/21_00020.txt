@@ -1,0 +1,21 @@
+user: I need to book a cab.
+assistant: How many passengers will there be and what is your destination? What type of ride would you prefer? Regular, luxury or something else?
+user: There will be 4 of us for a regular ride to Cafe Gibraltar.
+assistant: Please confirm that you want a regular ride for 4 passengers to Cafe Gibraltar.
+user: Yes, that's it. Could you let me know the cost and how long it will be before it gets here?
+tool(GetRide): ok n_results=1
+assistant: The ride is booked and will be there in approximately 4 minutes. The ride will cost $26.06.
+user: That's it. Thanks. Could you play a song from 2016, something by Frank Ocean? Some kind of pop song?
+tool(LookupMusic): ok n_results=4
+assistant: Would you like to hear the song Ivy by Frank Ocean? It is from the album Blonde.
+user: Yes. That sounds great.
+assistant: Would you like to hear this song now?
+user: Yes please.
+assistant: Please confirm that you want to hear the song Ivy by Frank Ocean playing in the living room.
+user: That's it exactly.
+tool(PlayMedia): ok n_results=1
+assistant: Playing Ivy by Frank Ocean.
+user: Thanks for your help.
+assistant: Would you like help with anything else?
+user: No. That's all I need.
+assistant: Enjoy the rest of your day.

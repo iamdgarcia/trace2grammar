@@ -1,0 +1,26 @@
+user: I'm looking for round trip plane tickets.
+assistant: Where are you departing from and traveling to? When do you want to depart?
+user: I want to travel from Mexico City to Las Vegas on the 4th
+assistant: When do you want to return?
+user: I want to return on the 9th and I don't care about the airline.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight for you. It is a Delta Airlines flight that departs at 3:10 pm with a layover. The return flight takes off at 4:55 pm and it costs $369.
+user: Okay, that sounds good. I'd like to find a house there for 1 person, with at least a 4.2 rating, and with laundry service.
+tool(SearchHouse): ok n_results=1
+assistant: There is 1 house that may work for you. It is a 4.2 rated house at 8669 West Sahara Avenue.
+user: That house sounds great.
+assistant: Do you want to make a reservation at the house?
+user: Yes, I want to check on on March 6th.
+assistant: Are you checking out on March 9th or another day?
+user: Yes, March 9th.
+assistant: Okay, you want to book the house in Las Vegas for 1 person checking in on March 6th and checking out on March 9th, right?
+user: Yes, that is correct. What is the price and phone number?
+tool(BookHouse): ok n_results=1
+assistant: I have successfully confirmed the reservation. The total price is $1,350 and the phone number is +1 702-256-3766.
+user: Thank you. What are some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: How about the museum Discovery Children's Museum?
+user: That sounds good, thanks.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

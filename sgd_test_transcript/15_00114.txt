@@ -1,0 +1,37 @@
+user: I want to go to a salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons in that area. There a nice spot called 1512 Barber Shop in San Francisco.
+user: Can you tell me their phone number and average rating.
+assistant: Their phone number is 415-286-4371 and they have a 4.8 average rating.
+user: That's a good rating. I also want to look for a therapist over there.
+assistant: Is there a certain kind of therapist you need? And this is in San Francisco, correct?
+user: Yeah, that's correct. I want to find a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: There's a Psychologist called Adam E. Pollock in San Francisco you might be interested in.
+user: Tell me their address and phone number.
+assistant: They are located at 100 Masonic Avenue and their number is 415-346-2356.
+user: I'm interested. Make me an appointment.
+assistant: What time do you want the appointment?
+user: Evening 5:45 would work best.
+assistant: And what's the date?
+user: I want it for March 12th.
+assistant: I'll book you an appointment with Adam E. Pollock for March 12th at 5:45 pm, is that right?
+user: Sorry, can you make it for the 1st at 11:15 am, I just checked my schedule.
+assistant: Okay, so 11:15 am on March 1st is good?
+user: Yes, that's better.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, but they are booked at that time. Do you want to make an appointment with Adam E. Pollock for March 1st at 11:30 am instead?
+user: Yes, try that.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been made. You'll receive a confirmation email shortly.
+user: And back to the salon, I also want to make an appointment for them on the same day.
+assistant: What time do you want it to be?
+user: Make it for 17:30.
+assistant: I'll book you an appointment at 1512 Barber Shop on March 1st at 5:30 pm. Is that okay?
+user: Yes, that's what I want. Is it a unisex salon, and can you give me their address?
+tool(BookAppointment): ok n_results=1
+assistant: I booked the appointment. It is unisex and its location is 1532 20th Street.
+user: Thanks so much.
+assistant: What else can I do for you?
+user: Nothing, thanks again.
+assistant: Have a fine day.

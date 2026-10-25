@@ -1,0 +1,39 @@
+user: I would like to book a round trip flight.
+assistant: What city are you departing from and when are you leaving?
+user: I would like to leave on March 6th from Berlin.
+assistant: On what day are you returning?
+user: I will need four tickets and plan on returning on March 9th.
+assistant: Where are you traveling to?
+user: I need one ticket to travel to Phoenix, AZ.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Delta Airlines leaves at 3:50 pm and the return fight leaves at 6:15 pm for $557
+user: Is there another option?
+assistant: United Airlines leaves t 4:05 am and the return flight leaves at 1:25 pm for $547.
+user: When does the flight reach destination?
+assistant: The onward flight reaches destination at 4:03 pm.
+user: Is this a business class ticket?
+assistant: This is a economy class ticket.
+user: I would like to find a house to rent in that area.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses. There is 10 East thomas road that has a 4.6 rating.
+user: Is there another house?
+assistant: There is 10601 North 56th street, Scottsdale, Arizona 85254, United States that has a 4.3 rating.
+user: I would like to book this house.
+assistant: Would you like to stay on March 6th to March 9th?
+user: I would like to check out on the 8th.
+assistant: How many people are staying in the house?
+user: There is one person.
+assistant: Booking house for 1 person in Phoenix on March 6th to March 8th.
+user: Yes, that is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was made.
+user: Can you find a theme park child-friendly attraction?
+tool(FindAttractions): ok n_results=4
+assistant: There are 4 attractions. There is Castles N' Coasters that is a theme park.
+user: Can you find a museum?
+tool(FindAttractions): ok n_results=5
+assistant: There is Arizona Capitol Museum it's, there is 5 museum.
+user: What is their phone number?
+assistant: Their phone number is 602-926-3620
+user: That is all I needed.
+assistant: Have a good day.

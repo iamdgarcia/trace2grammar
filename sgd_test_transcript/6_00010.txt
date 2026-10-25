@@ -1,0 +1,29 @@
+user: I'm looking for a Psychiatrist
+assistant: In which city?
+user: I need in Gilroy please
+tool(FindProvider): ok n_results=3
+assistant: There are 3 Psychiatrist in Gilroy, for example Bacosa Frances
+user: What's the address?
+assistant: Bacosa Frances is in 8339 Church St # 106
+user: Thanks. And what's the phone number?
+assistant: The phone number is 408-842-1119
+user: I'd like to look for a Psychologist
+tool(FindProvider): ok n_results=3
+assistant: In Gilroy there's Rachelle Coate, a Psychologist
+user: It's perfect for me
+assistant: Do you want an appointment here?
+user: Yes, I want it, please
+assistant: Which day and what time would you like the appointment?
+user: I prefer next Monday at 12:30
+assistant: An appointment with Rachelle Coate on March 4th at 12:30 pm. Is it correct?
+user: No, I prefer at half past 9 in the morning, please
+assistant: An appointment with Rachelle Coate at 9:30 am. Do you confirm?
+user: No, please make an appointment for the 11th
+assistant: An appointment on March 11th at 9:30 am. Is it correct?
+user: Yes, It's correct, thanks! What is Rachelle Coate's address?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been fixed and you will soon receive confirmation via e-mail. The address is 8339 Church Street.
+user: Thank you very much, you were very helpful!
+assistant: Can I help you in any other way?
+user: No, It's all. Thanks!
+assistant: Have a good day

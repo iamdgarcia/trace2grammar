@@ -1,0 +1,15 @@
+user: I'd like to search for songs, I like popular songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about Acapella by Karmin on the album Pulses?
+user: Yes that works. How's the weather in Sunnyvale on the 1st of march?
+tool(GetWeather): ok n_results=1
+assistant: The average temp is around 90 degrees with a 19 % chance of rain.
+user: Cool. Could you play the song you just found? Play it anywhere.
+assistant: Please confirm: Playing the song Acapella in the living room.
+user: Correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music
+user: Thanks!
+assistant: Do you need anything else?
+user: No thanks
+assistant: Have a great day.

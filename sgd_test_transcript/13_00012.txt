@@ -1,0 +1,25 @@
+user: I am looking for something interesting to do.
+assistant: Which category of event like Music or Theater or anything else you want me to search for?
+user: I am looking for Musical shows.
+assistant: Which city you want me to search the event in?
+user: Look for the event in Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like. How about a very popular show called Anthony Green taking place at The Foundry on March 10th at 6 pm?
+user: Find me the address of the venue and the cost of one ticket.
+assistant: The venue is located at 29 East Allen Street 2nd Floor and the cost for one ticket is $60.
+user: Okay, That sounds nice to me.
+assistant: Would you like me to buy tickets for this event?
+user: Not now. Now I would like to search for hotels in that area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels you may like. How about a 4 star hotel called Aka Rittenhouse Square?
+user: That sounds good to me.
+assistant: Do you want me to reserve the hotel for you?
+user: Not now. Please book 2 tickets for the event you just found.
+assistant: Please confirm: You want me to book 2 tickets for the event called Anthony Green taking place in Philadelphia on March 10th.
+user: Yes, That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked your tickets. Enjoy the show!
+user: Thank you so much.
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

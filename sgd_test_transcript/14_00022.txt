@@ -1,0 +1,15 @@
+user: I'd like some help finding a drama film to watch online, and I like a movie with Dan Bittner in it.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie for you, which is Brittany Runs a Marathon.
+user: Yes, Brittany Runs a Marathon will work. I think I would like to see that right now.
+assistant: Confirming playback of Brittany Runs a Marathon with English subtitles enabled.
+user: I'm sorry, would you please play it with Hindi subtitles?
+assistant: Confirming playback with Hindi subtitles enabled of Brittany Runs a Marathon.
+user: Thank you for that.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun playing.
+user: Great. May I get the weather forecast please for Rohnert Park and the 9th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature will average 92 degrees Fahrenheit on that day with a chance of rain at 20 percent.
+user: Thank you very much, I'm all set.
+assistant: You're very welcome, enjoy your day.

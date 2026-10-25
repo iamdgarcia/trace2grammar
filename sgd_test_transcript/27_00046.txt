@@ -1,0 +1,27 @@
+user: Could you tell me about several attractions to go to?
+assistant: What location ought I look for attractions in?
+user: Get me attractions in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: You ought to look for Alcatraz, which is a historical landmark.
+user: Cool, do you have some alternative attractions on your mind right now?
+assistant: You ought to visit Alcatraz island, which is a historical landmark.
+user: Alright, fine. I'd like to view a film near there.
+tool(FindMovies): ok n_results=7
+assistant: What do you think of ad Astra, Brittany runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: Please get me alternative films; I'd like to view a regular show.
+tool(FindMovies): ok n_results=7
+assistant: I discovered 7 films. What do you think of Give Me Liberty, Hobbs and Shaw, or Hustlers?
+user: Hobbs and Shaw is fine. Are there several lovely films online?
+assistant: What sort of films do you enjoy?
+user: I'd love some action films.
+tool(FindMovies): ok n_results=5
+assistant: Do you enjoy Angel Has Fallen, Hobbs and Shaw, or Mission Mangal?
+user: Angel Has Fallen would be lovely.
+assistant: Would you like to cast the film?
+user: Yeah, I'd like to cast the film.
+assistant: Please verify the following information: casting Angel Has Fallen with english subtitles.
+user: Yeah, please d oso.
+tool(PlayMovie): ok n_results=1
+assistant: The film began to play.
+user: Thank you; that is all I require.
+assistant: Have a pleasant afternoon.

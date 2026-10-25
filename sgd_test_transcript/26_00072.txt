@@ -1,0 +1,39 @@
+user: I need a Value train ticket to Phoenix, AZ.
+assistant: What is your departure city?
+user: I am departing San Diego.
+assistant: What day are you leaving?
+user: I am leaving the day after tomorrow.
+tool(FindTrains): ok n_results=5
+assistant: There is a train leaving at 11:20 am. It costs $83 and is 1 of 5 trains that I found.
+user: What else do you have?
+assistant: There is a train that leaves at 1:30 pm with a cost of $86.
+user: What else can you find?
+assistant: A train is leaving at 3:30 pm with a cost of $78.
+user: What are the departing and arrival stations?
+assistant: Santa Fe Depot is the departure station and Phoenix Union Station is the arrival station.
+user: That works for me.
+assistant: Do you need anymore help?
+user: Find me something fun to do there.
+assistant: Shall I search in Music, Theater, or some other category?
+user: Search for Concert events.
+tool(FindEvents): ok n_results=10
+assistant: Bad Suns is playing at The Van Buren on March 2nd at 4:30 pm and is 1 of 10 results that I found.
+user: I see. Try to find me a Broadway event on the 9th.
+tool(FindEvents): ok n_results=3
+assistant: Boondocks Improv is at the Dearing Acting Studio on March 9th at 7 pm and is 1 of 3 results that search found.
+user: What is the price per ticket?
+assistant: The price per ticket is $35.
+user: That is perfect. What attractions are nearby?
+tool(FindAttractions): ok n_results=10
+assistant: Arizona Capitol Museum is a cool Museum nearby.
+user: I see. What else can you find?
+assistant: Arizona Science Center is another cool Museum nearby.
+user: That is great. Find me a house near there for one person with laundry service and a rating of 4.5 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: 10 East Thomas Road meets all those requirements and has a 4.5 rating.
+user: That is perfect.
+assistant: Shall I reserve a room for you?
+user: No, not right now.
+assistant: Do you need more help?
+user: No, not right now. Thanks.
+assistant: I am glad to help you. Bye for now.

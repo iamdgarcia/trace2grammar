@@ -1,0 +1,20 @@
+user: I need attractions, like something with a stadium.
+assistant: In which city would you like?
+user: I need in SFO.
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 option like this. It is Oracle Park, a Sports Venue.
+user: Okay, I need a movie too, in SFMOMA - Phyllis Wattis Theater. I like World movies and want a regular show.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie like this, named Zama.
+user: Zama is perfect for this.
+assistant: Would you like tickets?
+user: Not right now but I want a good one online, like Fantasy and with David Aston.
+tool(FindMovies): ok n_results=1
+assistant: There is The Lord of the Rings: The Return of the King.
+user: The Lord of the Rings: The Return of the King is perfect for this. I want to see it now.
+assistant: Please confirm: Playing The Lord of the Rings: The Return of the King, in English subtitles.
+user: Yes, that is perfect.
+tool(PlayMovie): ok n_results=1
+assistant: Playing this movie now.
+user: Thanks a bunch.
+assistant: Of course. Have a wonderful day.

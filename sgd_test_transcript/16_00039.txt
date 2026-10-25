@@ -1,0 +1,43 @@
+user: I would like to find a salon.
+assistant: What city would you like to search in?
+user: I want to look for a salon in SF, please.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons in San Francisco, including 1512 Barber Shop.
+user: Is that a unisex salon? How was it rated by other customers?
+assistant: It is a unisex salon. It has an average rating of 4.8.
+user: OK, that sounds good, thanks.
+assistant: Would you like to book an appointment there?
+user: Not yet, maybe later.
+assistant: Is there anything else I can help you with?
+user: Yes, can you search for a therapist in that area?
+assistant: Would you like to search in San Francisco?
+user: Yes, let's start there.
+assistant: What type of therapist do you prefer to search for?
+user: Please find a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 therapists who meet that criteria in San Francisco, including Adam E. Pollock, a Psychologist.
+user: Let's search for other therapists. Try looking in Martinez.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 therapists in Martinez, including Miller Nicole G., a Psychologist.
+user: What is the address?
+assistant: The address is 150 Muir Rd.
+user: What is the phone number?
+assistant: The phone number is 925-372-2830.
+user: OK, thanks. Can you book an appointment for me?
+assistant: What date and time would you prefer to set the appointment for?
+user: I would prefer to make the appointment for the morning 11:30 on the 11th.
+assistant: You are booking an appointment with Miller Nicole G at 11:30 am on March 11th, is this correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. An email confirmation should arrive soon.
+user: Thank you very much. I appreciate it. Next I would like to make an appointment at the salon you found.
+assistant: What time would you like your appointment at?
+user: The time I would prefer is 2:30 pm.
+assistant: You would like to make an appointment with the hair stylist 1512 Barber Shop on March 11th at 2:30 pm, is that correct?
+user: Yes, thank you. What is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. The phone number is 415-286-4371.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, all set, thank you.
+assistant: Have a pleasant day!

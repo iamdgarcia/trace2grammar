@@ -1,0 +1,25 @@
+user: Would you please help me find a good place to make my home?
+assistant: I will need some information first. I need to know your preference for the number of bedrooms and bathrooms. It would also help if I know if you would like to purchase or rent a place.
+user: Good questions. I will need three bedrooms and 2 baths in the home. As of now I just want to rent.
+assistant: Is there a particular place I should search for you?
+user: Yes. I'm hoping to find something in the Santa Clara area.
+tool(FindHomeByArea): ok n_results=10
+assistant: You have 10 choices according to my search. One I picked is the Alderwood Apartments. The address is 900 Pepper Tree Lane. It is listed for $3,650.
+user: I like it so far.
+assistant: Would you like me to lend a hand with other tasks.
+user: Yes, please. I need to set a date to tour the real estate.
+assistant: Is there a date or time you prefer?
+user: The 4th would work best for me.
+assistant: I will attempt to schedule a viewing of Alderwood Apartments on March 4th with your permission.
+user: Yes, please. By the way is there a clothes washer and dryer in the home?
+tool(ScheduleVisit): ok n_results=1
+assistant: I have set a tour for you. I found out there are no machines for washing clothing in the home.
+user: Is there somewhere for me to park my car like a garage? I would also like the contact number for the place if you don't mind.
+assistant: The apartment has a garage for you. You can reach the office at 866-472-2645.
+user: You're a great help. I would also like to check on my alarms I have set.
+tool(GetAlarms): ok n_results=5
+assistant: I found one at 9 am. You labeled this alarm Call.
+user: Is that the only one you found?
+assistant: There is also one labeled Pick up Kids. This alarm is set for 5 pm.
+user: Thanks a million. I'm set for the moment.
+assistant: My pleasure. See you later.

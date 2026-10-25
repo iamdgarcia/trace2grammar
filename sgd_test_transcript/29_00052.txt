@@ -1,0 +1,34 @@
+user: I'm going to be staying in London, UK. Can you help me find 1 hotel room there?
+tool(SearchHotel): ok n_results=10
+assistant: 45 Park Lane is a 5 star hotel in that city.
+user: What is the phone number? Is smoking allowed inside the hotel?
+assistant: The phone number is +44 20 7493 4545. Smoking is not allowed on the property.
+user: Are there any other hotels in the city, maybe a 4 star hotel?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels that match your criteria. Ace Hotel London is a 4 star hotel.
+user: What others are there?
+assistant: Amba Hotel Charing Cross is also a 4 star hotel.
+user: OK, thanks. Now, can you help me look into a round trip flight to get there?
+assistant: What city are you departing from? Are you leaving on March 8th?
+user: I would like to leave from Washington on Monday next week.
+assistant: What day would you like the return flight?
+user: I would like to return on the 13th of March. I am going to need Economy class tickets.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: American Airlines has a flight with a layover leaving at 2:55 pm, with a return flight at 12:45 pm, for $588.
+user: What other flights are available? I need 1 ticket.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Delta Airlines has a flight with a layover leaving at 12:55 pm, with a return flight at 9:30 am, for a ticket price of $486.
+user: When does the flight arrive at my destination? What time does the return flight land?
+assistant: The flight to your destination arrives at 6:47 am. The returning flight arrives at 7:06 pm.
+user: OK, thanks. I would like to reserve the hotel you found. I will need to check in on March 11th and stay for two days.
+assistant: You would like 1 room at the Amba Hotel Charing Cross in London on March 11th for 2 days, is this correct?
+user: No, I'll only be staying 1 day, sorry.
+assistant: You would like to stay for 1 day at Amba Hotel Charing Cross, is that correct?
+user: Yes, that's right. Does the hotel allow smoking?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is booked. No, smoking is not allowed on the property at this hotel.
+user: Can you show me some attractions in the area, like a place of interest to check out while we are there? It's best if it's child-friendly.
+tool(FindAttractions): ok n_results=9
+assistant: Granary Square is a Tourist Attraction in the area.
+user: OK, that's good. Thank you, I'm all set.
+assistant: Have a great day!

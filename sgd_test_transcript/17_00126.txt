@@ -1,0 +1,28 @@
+user: Can you check the weather forecast in Phoenix for me?
+tool(GetWeather): ok n_results=1
+assistant: Yes. Phoenix shows a 15 Percent possibility of showers. The temperature throughout the day could average 89 degrees Fahrenheit.
+user: Will there be a lot of wind?
+assistant: The wind will blow aroubd 11 miles per hour.
+user: How muggy is it expected to be?
+assistant: There will be about a 23 percent concentration of water vapor in the air.
+user: Thank you for the information. Can you please locate a flight to Phoenix for me?
+assistant: Is March 1st the day you would like me to schedule the flight?
+user: That is right.
+assistant: Is there a location you prefer to leave from?
+user: I would like to catch the flight in Atlanta.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: You have a choice of 3 transport options. If American Airlines is suitable there is a plane leaving at 4:50 am. The charge will be $158.
+user: I will need passes for two people. What are my other choices?
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Southwest Airlines is another available choice. This trip begins at 6:15 am with no stops. The charge is showing as $177.
+user: I like that choice, thanks. I would also like to reserve a vehicle in the area.
+assistant: Will March 1st be the date you would like the rental for? Is there a time of day you prefer to pick up the car?
+user: Yes. 11:15 am is when I would like to pick up the car. I would like the rental to begin on the 11th.
+assistant: How long would you like the rental for?
+user: I would like to return the vehicle on the 12th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I found 8 choices for you. One choice is a Sedan Buick Regal Sportback. This car is available at the Sky Harbor International Airport.
+user: I like that choice, thanks.
+assistant: What else may I do for you today?
+user: You have been a super help. I don't need anything else at the moment, thanks.
+assistant: Hope your day is excellent.

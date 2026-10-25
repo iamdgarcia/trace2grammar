@@ -1,0 +1,24 @@
+user: I am looking for a place to live and it needs to have laundry in the unit.
+assistant: What is your desired property area?
+user: I would like it to be in the San Rafael area.
+assistant: Do you want a rental or to purchase? What is the number of bathrooms and bedrooms that you would like to have?
+user: I want buy a place that has one bedroom and one bathroom.
+tool(FindHomeByArea): ok n_results=4
+assistant: There is a lovely property in Deer Valley located at 2500 Deer Valley Road and is listed for $1,700,000.
+user: Will you look around for some other places? Also, I want a garage.
+tool(FindHomeByArea): ok n_results=3
+assistant: I have found 3 lovely homes for your consideration. Franciscan Manor is a lovely property located at 201 D Street. It is priced at $1,850,000.
+user: Can you give me the phone number for the property?
+assistant: The number to contact about the property is 415-720-6977.
+user: That sounds fantastic.
+assistant: Would you like to book an appointment to see the property?
+user: Yes, I would like to get an appointment to see the property on the 7th of March.
+assistant: You want to book an appointment to see Franciscan Manor on March 7th. Is this correct?
+user: Yes, you are right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property appointment has been reserved.
+user: Will you show me my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: Right now, you have 2 alarms set. One is for 7:30 am and titled wake up.
+user: I got it. That's good and all I need.
+assistant: Thanks!

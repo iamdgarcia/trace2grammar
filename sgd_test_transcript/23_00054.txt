@@ -1,0 +1,34 @@
+user: I want to send a money of 179 dollars from my check card to the person named Tom.
+assistant: Please give confirmation details: You want to transfer the amount of $179 from debit card to the account of tom and transaction should visible to the public.
+user: Okay..this is perfect.
+tool(MakePayment): ok n_results=1
+assistant: I transferred the money from your account successfully and the receiver will see the money soon.
+user: Thank you so much..I want you to find me a train?
+assistant: From which place you are starting and where you going?
+user: I want the ticket from Anaheim, CA and want to go to SF.
+assistant: Can i know your journey date?
+user: My travel date is for the 4th and i want 1 ticket.
+tool(FindTrains): ok n_results=7
+assistant: What is your opinion about the train starting at 6:40 am with cost of $84.
+user: From which station this train departs?
+assistant: This train departs from Anaheim Intermodal Center.
+user: Do you know the arrival station?
+assistant: The arrival station is Salesforce Transit Center.
+user: This is cool..what about the weather there on the 8th?
+assistant: Are you like to check the weather of San Francisco?
+user: Okay..I want it..
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is running at 70 degrees Fahrenheit and the chances of rain is 13 percent
+user: What about the humid there?
+assistant: This is around 36 percent.
+user: What about the wind there?
+assistant: Average wind speed is 10 miles per hour.
+user: Okay..fine..I want you to book the tickets in a train you just found and i need value tickets.
+assistant: What about travel insurance?
+user: I want to add travel insurance.
+assistant: Please give confirmation details: Booking 1 value ticket for train from Anaheim to San Francisco on March 4th at 6:40 am and It includes trip insurance
+user: This is perfect for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: I successfully booked your ticket.
+user: Thanks for the help..This much is okay for now..
+assistant: Bye..see you later.

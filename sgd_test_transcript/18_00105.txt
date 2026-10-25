@@ -1,0 +1,15 @@
+user: I will need you to locate a hotel for me.
+assistant: Where will you be when you check in?
+user: I will be in KL.
+tool(SearchHotel): ok n_results=10
+assistant: Alright, I located 10 so far, including the 5 star Alila Bangsar.
+user: That would work, what kind of weather can I expect at that place around the 13th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The prediction is for a 97 degree Fahrenheit average temperature and almost no chance of showers at 1 percent.
+user: Then I will take that hotel you located, make reservations for a 2 day stay that will commence on the 1st of this month.
+assistant: Your request is for a reservation of 1 room for 2 days at the Alila Bangsar in Kuala Lumpur beginning March 1st, do I have that right?
+user: Absolutely 100 percent correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your room is reserved.
+user: You have been a great help you are dismissed.
+assistant: I take my leave then, have a nice day.

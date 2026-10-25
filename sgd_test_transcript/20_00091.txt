@@ -1,0 +1,20 @@
+user: Can you help me find a house to stay in London, with laundry service?
+tool(SearchHouse): ok n_results=10
+assistant: Sure, there are 10 houses matching your criteria, out of which I recommend the one at 1 Addington Street, rated at 4.3.
+user: Nice. Is there anything else available? The house is for four people and it should be rated at least at 3.9.
+tool(SearchHouse): ok n_results=10
+assistant: There's also a very nice house at 1 Baffin Way, rated at 3.9.
+user: This one is perfect for me.
+assistant: Perfect. Is there anything else I could help you with.
+user: I would like to book the house.
+assistant: Can you tell me for which period?
+user: Sure, from next Thursday to the 12th of this month.
+assistant: Can you please confirm that you want to book the house in London, for 4 persons, from March 7th to March 12th?
+user: Yes, that's correct. Do you have a contact number for the property?
+tool(BookHouse): ok n_results=1
+assistant: I've successfully placed your reservation. You can reach the property at +44 20 3908 5000.
+user: Perfect. Are there any attractions which I might like in the area?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 which I think you'd like, out of which I recommend an awesome Historical Landmark, the 30 St Mary Axe (The Gherkin).
+user: Perfect. Thanks a lot for your help. That will be all for now.
+assistant: My pleasure. Have a nice day.

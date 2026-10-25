@@ -1,0 +1,27 @@
+user: Can you help me get a rental car?
+assistant: Any idea when you want to pick up and return and where you'll be?
+user: I need it until March 10th, I'll get it at 4:30 in the evening in Vancouver.
+assistant: When will you start renting it?
+user: I'll get it on March 9th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 options, what about pacific Central station, they have a Sedan Audi A8.
+user: That's probably the one.
+assistant: Do you want me to book it?
+user: Perhaps but first see if there will actually be somewhere for 1 person to stay?
+tool(SearchHouse): ok n_results=10
+assistant: Well, there are 10 option, what about 1018 Granville Street. It has a rating of 4.2.
+user: Can I get a contact number?
+assistant: Certainly, it is +1 877-972-6378.
+user: I think I like it.
+assistant: Do you want to reserve it.
+user: Not until I call them, no.
+assistant: what else do you need now?
+user: Get me that rental car, ok?
+assistant: How about some added insurance?
+user: No thank you.
+assistant: Sure to confirm: Pick up Sedan on March 9th at 4:30 pm at Pacific Central Station and return it on March 10th, sans insurance.
+user: Fine, that's it.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved.
+user: Thanks, that's great.
+assistant: Have a great day.

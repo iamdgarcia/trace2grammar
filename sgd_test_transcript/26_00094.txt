@@ -1,0 +1,46 @@
+user: I need help looking for a train.
+assistant: What is your origin city?
+user: I'll be leaving from Sacramento, CA.
+assistant: And what's your destination?
+user: I want to go to LAX.
+assistant: And what date is this for?
+user: It's for the 11th of March. And I'm going to need three value seats.
+tool(FindTrains): ok n_results=2
+assistant: There are 2 trains that match. There's a departure at 6:30 am for $237. Does that interest you.
+user: What other trains are there? How about we try 1 seat to San Diego?
+tool(FindTrains): ok n_results=10
+assistant: There's a departure at 7:20 am for $152.
+user: And what's the station that it leaves from?
+assistant: The origin station is Sacramento Valley Station.
+user: And what's the station it arrives at?
+assistant: The destination station is Santa Fe Depot.
+user: Let's keep looking. How about tickets for the 6th of this month. The type of ticket doesn't matter.
+tool(FindTrains): ok n_results=10
+assistant: There's a departure at 7:30 am for $162.
+user: That could work.
+assistant: Do you want to purchase tickets?
+user: No, we don't need to do that just yet.
+assistant: What else can I do for you?
+user: What are some interesting things to do when I'm there?
+assistant: What are you interested in, music, theater, or something else?
+user: Music related things would be good.
+tool(FindEvents): ok n_results=10
+assistant: Alejandro Sanz might interest you. They're at Cal Coast Credit Union Amphitheater on March 7th at 7:30 pm.
+user: Hoe much is a ticket and what's the venue's address?
+assistant: The venue's address is 5500 Campanile Drive and a ticket is $50.
+user: I'm down with that.
+assistant: Do you want to purchase tickets?
+user: We can do that later.
+assistant: What else can I do for you?
+user: Let's also look for attractions there, any type is fine.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might enjoy. Balboa Park is a park that's nice.
+user: Is it okay for kids?
+assistant: It is not recommended for kids.
+user: Alright, cool. Now I also need a house to stay in.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available in the area. There's a nice 4.6 rated house at 1003 Coast Boulevard, La Jolla, California 92037, United States.
+user: That's a high rating, seems good.
+assistant: Do you want to reserve the house?
+user: No, not right now. That's all for now, thanks for the help.
+assistant: It's been great helping you. Take care.

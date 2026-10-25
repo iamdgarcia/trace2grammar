@@ -1,0 +1,22 @@
+user: Find for me a rental car.
+assistant: When you need the car?
+user: From the 4th will be good.
+assistant: At what time you want to make the pick up?
+user: At 19:30 will be good.
+assistant: Do you need the car until?
+user: Till March 11th.
+assistant: From where you want to rent the car?
+user: I want cars in Rio.
+tool(GetCarsAvailable): ok n_results=1
+assistant: I have for you 1 car available.A nice Hatchback of Kia Ceed available at Galeao International Airport.
+user: Sounds very good.
+assistant: You want to book the car?
+user: Yes rent it for me please.
+assistant: Insurance you want to add?
+user: No.I don't need it.
+assistant: You want a Hatchback car without insurance from Galeao International Airport.The pick up date is March 4th at 7:30 pm and drop-off date is March 11th.Is that correct?
+user: Yes is very good.Tell me the cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: The car was reserved.$29.00 is the cost per day.
+user: Thanks.That's all.
+assistant: Have a great day!

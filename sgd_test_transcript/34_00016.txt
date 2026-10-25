@@ -1,0 +1,26 @@
+user: I need to locate a hotel please, someplace in SD where smoking is permitted.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 options that I can recommend to you. The Best Western Plus Bayside Inn is rated with 3 stars.
+user: I like that one.
+assistant: Shall I make a reservation for you?
+user: In a bit possibly. I'd like to find some attractions to visit there.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 possibilities to share with you. There is a park that is quite enjoyable, which is Balboa Park.
+user: Is it free to get in?
+assistant: No, it does not have free admission.
+user: Could you tell me the phone number?
+assistant: Of course, it's 619-239-0512.
+user: Okay, what else would you suggest? I want a child-friendly attraction please.
+tool(FindAttractions): ok n_results=10
+assistant: Perhaps you would enjoy a theme park, such as Belmont Park.
+user: Probably, yes. I think we should go ahead and book that hotel now.
+assistant: What is your check in date going to be?
+user: On Thursday next week.
+assistant: And the duration of your stay?
+user: Just five days, that's all.
+assistant: Confirming a reservation for 1 room at Best Western Plus Bayside Inn in San Diego on March 7th for a 5 day stay.
+user: Perfect, thanks so much.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation was successful.
+user: Thanks again for all your help.
+assistant: I'm happy to be able to assist you.

@@ -1,0 +1,17 @@
+user: I would need a house to stay in.
+assistant: In which city?
+user: I will be going to NY.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely home at 100 Greenwich Street and it has a rating of 4.4.
+user: That house would be great.
+assistant: Would you like to make a reservation?
+user: Yes, I would like to book the house for two people from the 6th to the 13th of March.
+assistant: You would like a house for 2 people in New York from March 6th to March 13th?
+user: Yes, that would be great. What would the total price be and is there laundry service?
+tool(BookHouse): ok n_results=1
+assistant: I have made the reservation for you. It costs $840 and there is laundry service.
+user: What interesting museum that I can take my kids to when I visit when I get there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that might be suitable. There is a museum call the 9/11 Tribute Museum.
+user: That would be ok for now.
+assistant: Take care of yourself.

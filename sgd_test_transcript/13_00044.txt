@@ -1,0 +1,23 @@
+user: I need something fun to do. I need something near Portland, OR and I like concert. I want it on the 14th of March.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events matching your search. Bastille is one, at Theater of the Clouds and it is on March 14th at 5 PM.
+user: Okay, that's it.
+assistant: Would you like tickets?
+user: Not now but I need hotels in the area, with at least three stars. I need three rooms for my group.
+tool(SearchHotel): ok n_results=10
+assistant: There is one called Aloft Portland Airport at Cascade Station. Thi sis 3 stars.
+user: Smoking is allowed there?
+assistant: No, no smoking is allowed.
+user: What is the address of it?
+assistant: Their address is 9920 Northeast Cascades Parkway.
+user: That sounds good.
+assistant: Would you like to reserve this hotel now?
+user: No, wrong time. I need tickets to the event, and for 4 people.
+assistant: So, 4 tickets for Bastille on March 14th in Portland?
+user: Yes, I want that, but how much is each? Where is it at?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed. Enjoy it and the ticket price is $40. The venue address is 1016-1098 North Center Court Street.
+user: Thanks for that.
+assistant: Is there anything else?
+user: No, mucho gracias.
+assistant: Have a wonderful day.

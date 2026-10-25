@@ -1,0 +1,14 @@
+user: Would you help me in searching for a train?
+assistant: To which city you want to travel and from where you want to depart and when is your travel date?
+user: I want to depart from Anaheim and destination is SFO. The travel date is the 1st.
+tool(FindTrains): ok n_results=7
+assistant: I found 7 trains of your choice. What is your opinion of the train departing at 6:40 am with ticket cost $83?
+user: This is perfect.
+assistant: Can i book the tickets in this train?
+user: No, i don't want it now.
+assistant: Any other help you want?
+user: Would you kindly help me to find a house with laundry service to stay for 1 person and the rating should be 3.9 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found one beautiful house with 3.9 rating located at 1095 Market Street.
+user: This is a nice house. I wanted this..
+assistant: Glad to help you..bye..

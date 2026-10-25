@@ -1,0 +1,28 @@
+user: I'm going to be taking a vacation soon and would like to check out some attractions while I'm there. Can you help me find some?
+assistant: Okay, where should I search for attractions?
+user: Let's look in SFO. I'm interested in a wildlife spot.
+tool(FindAttractions): ok n_results=3
+assistant: You might like Aquarium of the Bay which is a Nature Preserve.
+user: Can you give me their phone number and tell me if entrance is free?
+assistant: Yes, entrance is free. The phone number is 415-623-5300.
+user: Okay that's great.
+assistant: Is there anything else I can help with?
+user: I'd also like to see a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies you might like. What about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Ad Astra sounds good. Are there any good movies online?
+assistant: What type of movies do you like?
+user: I'm interested in Play movies and movies that feature Constance Wu.
+tool(FindMovies): ok n_results=1
+assistant: What about the movie Hustlers?
+user: Hustlers is great.
+assistant: Would you like to play the movie?
+user: Yes, let's play the movie with Hindi subtitles.
+assistant: Okay, let's confirm: Playing the movie Hustlers with subtitles in Hindi.
+user: Yes, thanks.
+tool(PlayMovie): ok n_results=1
+assistant: Okay, the movie is starting.
+user: Thank you.
+assistant: Anything else I can help with?
+user: No, thank you.
+assistant: Have a great day!

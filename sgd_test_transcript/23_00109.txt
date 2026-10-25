@@ -1,0 +1,33 @@
+user: Please look whether tickets are available on the 1st to go to Los Angeles by train?
+assistant: From where do you start journey?
+user: I am starting from Anaheim, CA.
+tool(FindTrains): ok n_results=10
+assistant: There is one departing at 6:30 am. The fare of ticket is $34.
+user: Ok, that will be good.
+assistant: You wish to get tickets now?
+user: Yes,get one ticket and not matter of fare class.
+assistant: Travel insurance can be added, no?
+user: Yeah, surely do it.
+assistant: How many of you are travelling?
+user: Only one seat,dear.
+assistant: Ok, look if request is correct, You need 1 ticket on train leaving from Anaheim and reaching Los Angeles. It starts at 6:30 am on March 1st. The ticket is Value one with trip insurance.
+user: Every detail is found correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: You can enjoy your journey with the confirmed ticket.
+user: Please search for any Musical shows there on 7th of this month.
+tool(FindEvents): ok n_results=10
+assistant: There is Ain Gordon, popular show at Ralph Freud Playhouse. It is on March 7th and starts at 4:30 pm.
+user: What about venue and cost?
+assistant: The ticket charge is $45 and taking place at 245 Charles E Young Drive East.
+user: Thats fine. please look where there are any Theater show on 13th of March.
+tool(FindEvents): ok n_results=10
+assistant: 10 events awaits you. One is Asssscat at Upright Citizens Brigade Sunset on March 13th at 6:30 pm.
+user: I think that will work. Please share the location.
+assistant: With whom do you want it shared?
+user: Please do it with Ann.
+assistant: Please confirm, you need to share the location Upright Citizens Brigade Sunset with Ann.
+user: Fine, thats correct.
+tool(ShareLocation): ok n_results=1
+assistant: It is shared, have fun.
+user: Great, your service is remarkable.
+assistant: My pleasure, keep in touch.

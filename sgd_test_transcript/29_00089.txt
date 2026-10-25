@@ -1,0 +1,32 @@
+user: Please find me something to do on the 9th. I will be in New York City that day. I prefer to go see things like a Drama.
+tool(FindEvents): ok n_results=10
+assistant: There is an event on March 9th at 5 pm. It is the Advanced Acting Scene Study at the TGW Acting Studio. Are you interested?
+user: It seems interesting. Please find more things for me to do.
+assistant: How about Blks? It's at 7:30 pm on March 9th at The Robert W. Wilson MCC Theater Space. Are you interested?
+user: What is the price of admission, and what is the address of the venue?
+assistant: Entry costs $35 and the address is 511 West 52nd Street.
+user: I'd like to attend that event. Please find a rental property for me there.
+tool(SearchHouse): ok n_results=10
+assistant: I have found a rental house with a 4.4 rating located at 100 Greenwich street. Would you like to know more?
+user: Please find the contact information for this rental property. Will this property come equipped with laundry?
+assistant: The phone number for the rental is +1 917-409-0800. The property is equipped with laundry services.
+user: Perfect, this suits my needs.
+assistant: Would you like to move forward and rent this property?
+user: Not right now.
+assistant: Do you require any further assistance?
+user: I need transportation there. I would like to find a bus leaving from Philadelphia on Saturday this week. I need tickets for 2 people.
+tool(FindBus): ok n_results=6
+assistant: There is a bus that leaves at 9 am. Each ticket costs $22.
+user: That works for me.
+assistant: Would you like to purchase tickets for this trip?
+user: Not right now.
+assistant: Do you require any further assistance?
+user: Please purchase tickets for the event.
+assistant: Please verify the following details are correct. You would like 2 tickets to Blks on March 9th in New York. Is this correct?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: You have successfully booked your tickets, enjoy the show.
+user: Thank you.
+assistant: Do you require any further assistance?
+user: No, I do not.
+assistant: Enjoy the rest of your day.

@@ -1,0 +1,30 @@
+user: Hi, could you find me a unisex salon in San Jose please?
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons you might like in San Jose, how about Atelier Salon Willow Glen?
+user: May I have their address and contact number please?
+assistant: They are located at 1047 Lincoln Highway suite 101 and you can call them up at 408-293-3494.
+user: Sounds great to me, could you get me an appointment on the 2nd?
+assistant: And when will you be visiting them?
+user: Likely at 12:30 in the afternoon.
+assistant: Please confirm your reservation at Atelier Salon Willow Glen at 12:30 pm on March 2nd.
+user: Sounds great, what is their current rating?
+tool(BookAppointment): ok n_results=1
+assistant: They have a rating of 4.3. Your reservation has been made.
+user: Thank you so much. Could you find me Ramen restaurants in that area too?
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants you might like, how about Bluefin restaurant in San JOse?
+user: Where are they located at?
+assistant: You can find them at 754 The Alameda #10.
+user: I see, do they have vegetarian options and outdoor seating?
+assistant: Unfortunately, they do not have vegetarian options nor outdoor seating.
+user: I see, that is fine. Could you reserve a table there for me?
+assistant: Sure, and what time will you be eating there?
+user: Likely at seven pm, please.
+assistant: Please confirm your booking for 2 at Bluefin in San Jose at 7 pm on March 2nd.
+user: Yes, I am fine with that.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much.
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

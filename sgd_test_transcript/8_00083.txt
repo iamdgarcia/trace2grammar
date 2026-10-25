@@ -1,0 +1,9 @@
+user: I am hoping to travel by train on my trip that is coming up. Can you help me with that?
+assistant: Sure, which city will you be departing from?
+user: I am hoping to leave from LAX.
+assistant: Alright, there are may trains leaving from there. Which city will you be going to?
+user: I am traveling to Fresno on the 6th.
+tool(FindTrains): ok n_results=9
+assistant: Ok, there is a train that matches your description that departs at 7:10 am. The ticket cost is $72.
+user: That sounds perfect! That is all that I needed today.
+assistant: Glad I could help! Have a great day!

@@ -1,0 +1,30 @@
+user: Can you find me something fun to do?
+assistant: In which city should I look?
+user: I need something around LAX on the 1st of this month like a stage show.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events, A Year in Dragonfly at Studio C Artists on March 1st at 7:30 pm.
+user: Sounds good, thank you.
+assistant: Do you want tickets to the event?
+user: Maybe later, I need to find a house with laundry service there.
+tool(SearchHouse): ok n_results=10
+assistant: How about 4.1 on 1020 South Figueroa Street?
+user: Sounds good, does it have buses going to it? I need seats for four to Long Beach, CA.
+assistant: Do you plan to leave on March 1st, March 3rd, or another day?
+user: I plan to leave on the the 3rd of this month.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses, how about one that departs at 6 am and costs $11.
+user: To which station does it arrive?
+assistant: It arrives at North Hollywood Station.
+user: Sounds good thank you.
+assistant: Do you want tickets on this bus?
+user: I don't want to buy them yet thanks.
+assistant: Can I do anything more for you?
+user: I need tickets to the event you found.
+assistant: You want tickets for 4 on March 1st to A Year In Dragonfly and takes place in Los Angeles, is that correct?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is made, enjoy.
+user: Thanks for your help.
+assistant: Can I do anything more for you?
+user: No, and thanks for your help.
+assistant: Have a fabulous time!

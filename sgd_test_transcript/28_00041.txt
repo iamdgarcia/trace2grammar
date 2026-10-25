@@ -1,0 +1,21 @@
+user: Hi, could you get me a movie to watch please?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies which you may like, how about Tigers Are Not Afraid with a 96 percent rating?
+user: May I know who directed this movie?
+assistant: This movie is directed by Issa Lopez.
+user: Sounds great! Could you get me a restaurant booking there too?
+assistant: Which location are you interested in?
+user: Something in SFO will do.
+assistant: Any preference on the cuisine?
+user: Something which serves Italian will be great.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants you may like in San Francisco, how about 54 Mint Ristorante Italiano?
+user: That sounds great! Could you book a table there on the 10th at 6 pm?
+assistant: Sure, please confirm your reservation for 2 at 54 Mint Ristorante Italiano in San Francisco at 6 pm on March 10th.
+user: That is fine with me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: May I know their user rating and address please?
+assistant: This restaurant has a rating of 4.4 and is located at 16 Mint Plaza.
+user: I see, that is all I need. Thank you!
+assistant: Have a great day ahead!

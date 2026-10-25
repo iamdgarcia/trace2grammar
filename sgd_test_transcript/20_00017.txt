@@ -1,0 +1,36 @@
+user: Find me 1 hotel room
+assistant: What city do you want me to look in?
+user: Find hotels in Chicago.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that should work. There's a 3 star hotel called Ac Hotel By Marriott Chicago Downtown.
+user: What is the address and phone number?
+assistant: The address is 630 North Rush Street and the phone number is +1 312-981-6600.
+user: Is there any other hotel that would math my criteria?
+assistant: How about the 4 star hotel Ace Hotel Chicago?
+user: Do you have something else that is 4 star?
+tool(SearchHotel): ok n_results=10
+assistant: What do you think of the 4 star Ambassador Chicago hotel?
+user: Okay, that works.
+assistant: Would you like to book it?
+user: Not right now.
+assistant: Shall I help with anything else?
+user: Would you look for a rental car there?
+assistant: Would you like to pick up the car on March 2nd? What time are you planning on picking it up?
+user: Sounds good to me. I'd like to pick it up at 18:30.
+assistant: When will you return it?
+user: I will return it on March 4th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I have 6 cars that you may like. There is a nice car at O'Hare International Airport. It's a Sedan Dodge Charger.
+user: What is the price per day?
+assistant: It's $35.00 per day.
+user: Sounds good. Reserve the rental car for me.
+assistant: Would you like insurance?
+user: No thanks.
+assistant: Could you confirm that you want to pick up the Sedan on March 2nd at 6:30 pm and return it on March 4th, from O'Hare International Airport?
+user: That sounds about right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car was booked.
+user: Thanks for helping.
+assistant: Could I assist with anything else?
+user: No, that is all.
+assistant: Have a great day.

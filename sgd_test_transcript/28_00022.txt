@@ -1,0 +1,26 @@
+user: I have leisure time so i plan to watch a movie. will you find a movie to watch ?
+tool(FindMovies): ok n_results=10
+assistant: How about Saaho movie ? the movie has an average rating of 10 out of 100.
+user: Who is the director of this movie and what genre is this movie?
+assistant: it is a Action movie and the movie is directed by Sujeeth.
+user: Ok thats great. will you find a restaurant over there?
+assistant: At which location should i search in for?
+user: will you find restaurants in Berkeley?
+assistant: What type of food you wish to have?
+user: Find something like vegetarian.
+tool(FindRestaurants): ok n_results=4
+assistant: I found 4 restaurants as per your interests. Great wall | Chinese Restaurant which is a nice restaurant. It is located in Berkeley.
+user: Ok that's great. I need to book a table at a restaurant. look a table on the 9th and number of people for the table is 3
+assistant: At what time should i reserve the table?
+user: the table is for 2 people . Make the reservation at 4:30 in the evening.
+assistant: Please check and confirm the following details. Table need to be booked at Great Wall | Chinese Restaurant. The city is Berkeley. The reservation is at 4:30 pm. The date is on March 9th. the reservation is for 2 people.
+user: ok that works for me. Is the restaurant average priced? what is their phone number?
+tool(ReserveRestaurant): ok n_results=0
+assistant: sorry, i am unable to make a reservation. Whether is there anything else to do?
+user: Will you try to book a table again? Book a table on March 12th and at time 17:45.
+assistant: Please check and confirm the following details. Booking a table at Great Wall | Chinese Restaurant. The city is Berkeley. The reservation is at 5:45 pm. the date is March 12th. The reservation is for 2 people.
+user: ok that works for me
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, i couldn't make a reservation. whether i need to do anything else?
+user: No, thanks for now
+assistant: have a wonderful day.

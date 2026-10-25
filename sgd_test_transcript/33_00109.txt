@@ -1,0 +1,27 @@
+user: I am planning to visit some interesting and attractive places for which I need your help to find the good one like a Garden which is liked by me very much.
+assistant: Let me know your desired location to search for the attractions.
+user: Search it in Toronto.
+tool(FindAttractions): ok n_results=10
+assistant: What about a Park named Allan Gardens? You will really like it as it is your favorite Garden type place.
+user: Yes, I like it. But I want more options. Can you search for something else?
+assistant: Yes, another park named Ashbridge's Bay. Do you like to visit this place?
+user: May be. Find me something else related to my interest.
+assistant: You can visit to Centennial Park. This is also a Park and you can enjoy here.
+user: First I want to know their contact number and then I will decide. Is this place is safe for kids?
+assistant: Yes this is the safest place for Children please note down their contact number as 416-394-8750.
+user: That's nice. Will decide about this park later. Now I want to search for a nice House there for one person with laundry service. Search for the one with 3.6 rating or higher.
+tool(SearchHouse): ok n_results=10
+assistant: What about the house at 108 Chestnut Street with rating 3.6? Do you like to stay here?
+user: Yes, I like it and it is okay for me.
+assistant: Do you want me to book this house now?
+user: No, not now. Will do later. Also I want to search for a round trip flight and I need your help to find the same.
+assistant: What is your expected dates of Travel both start and return and from where you are going to start your travel?
+user: Find a flight in San Diego from next Monday to March 13th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: How about a travel through a flight from United Airlines? I got 1 onward flight which will take off at 9:15 am and the take off time of returning flight will be 4:45 am. It costs $368 per ticket. How do you feel whether it is convenient or not?
+user: I have to think and decide. Please let me know the time of arrival of this flight to my final place. Did you searched the tickets for economy class or business class?
+assistant: I have searched it for Economy class tickets only and this flight will reach its destination at 7:34 pm.
+user: That is okay to me. Thanks.
+assistant: Any more help you want now?
+user: No, thanks a lot.
+assistant: Have a great day.

@@ -1,0 +1,27 @@
+user: Can you quickly fetch me a cab please?
+assistant: What number of seats do you want?
+user: I will need only 1 seat.
+assistant: What place are you visiting?
+user: I want to go to 100 Park Boulevard.
+assistant: Is there a particular type of ride you like?
+user: I want a Regular ride.
+assistant: So confirm that you want a 1 seat Regular ride to 100 Park Boulevard?
+user: Yeah that will do. What will I be charged?
+tool(GetRide): ok n_results=1
+assistant: I have reserved the ride and the cab is on the way and it will be charged $11.00.
+user: Can you find me some songs now?
+tool(LookupMusic): ok n_results=10
+assistant: I can recommend you 10 songs. Do you like The Muzik by Luis Alvarado that is from the I Feel The Muzik album?
+user: Yeah I like it.
+assistant: Shall I play this song?
+user: Cool. Play it on kitchen.
+assistant: So can you confirm that you want The Muzik played in Kitchen?
+user: Yeah that is right. Was it four years back that it was released?
+tool(PlayMedia): ok n_results=1
+assistant: I hope you like the music and the year was 2011 when it came out.
+user: What is the genre of music?
+assistant: The song is of House genre.
+user: Thanks a lot!
+assistant: Shall I get you something else?
+user: Nope, thanks a lot.
+assistant: Have a wonderful day!

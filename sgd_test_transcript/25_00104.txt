@@ -1,0 +1,32 @@
+user: Can you tell me when my alarms are set?
+tool(GetAlarms): ok n_results=3
+assistant: You have an alarm for 9 am that is titled Get up.
+user: Okay. Can you find a restaurant for me?
+assistant: What city or area should I search in?
+user: How about a restaurant in SFO?
+assistant: Okay. And what kind of food do you want, Chinese, Mexican or something else?
+user: I want a good Italian place the has pizza and pasta.
+tool(FindRestaurants): ok n_results=10
+assistant: There is a restaurant in San Francisco, 54 Mint Ristorante Italiano that is highly rated.
+user: Do they have tables outside?
+assistant: Yes, they do have tables outside.
+user: Is it an expensive place?
+assistant: It is considered a mid-price or moderate restaurant.
+user: Okay. I want to book a vehicle to pick up at 13:30.
+assistant: What are the dates for the car rental and do you want insurance added?
+user: I'll need it from Wednesday next week until March 7th. I won't need any insurance on it.
+assistant: What city or location would you like to pick up the vehicle and do you have a vehicle preference? It can be an SUV, sedan, Hatchback, or something else.
+user: I'd like a sedan and I'll pick it up at Benito Juarez International Airport.
+assistant: Please confirm the following information. You want to rent a sedan beginning March 6th and ending March 7th. You will pick it up at Benito Juarez International Airport at 1:30 pm. This vehicle does not have insurance.
+user: That's sound okay. How much does the sedan cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The sedan has been reserved. The cost is $25.00 per day.
+user: Okay. I need the address for Benito Juarez International Airport and I need to also share it with Vincent.
+assistant: Please confirm the following information: You want to share the location of Benito Juarez International Airport with Vincent.
+user: Yes. That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: That's really a great feature. Thanks.
+assistant: Would you like assistance with something else?
+user: No. That's all for now. Thanks for your help.
+assistant: You're very welcome. Good-bye.

@@ -1,0 +1,34 @@
+user: I need to find a salon.
+assistant: What city should I search?
+user: I would like a salon in Hayward.
+tool(FindProvider): ok n_results=3
+assistant: I have 3 salons you might like including King Of Kutz Barbershop a nice salon in Hayward.
+user: Yes, that sounds good to me.
+assistant: Should I book an appointment here?
+user: Yes, I would like to book an appointment at 16:30.
+assistant: Which date do you want your appointment?
+user: I would like to visit the salon today.
+assistant: Please confirm details for a hair stylist at King of Kutz Barbershop 4:30 pm on March 1st.
+user: Yes, that is great.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, I couldn't book the appointment but can I assist you with anything else?
+user: Can you please try again for an appointment at 10:15 in the morning on the 13th?
+assistant: Please confirm details for a hair stylist at King Of Kutz Barbershop 10:15 am on march 13th.
+user: Yes, that sounds nice. What is the rating on average?
+tool(BookAppointment): ok n_results=1
+assistant: The average rating is 4.6. Sorry I couldn't book the appointment for King Of Kutz Barbershop a nice salon though. What about an appointment on March 13th at 10:30 am?
+user: Yes, that sounds nice.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is confirmed.
+user: Tell me the address and if it is unisex.
+assistant: The address is 27659 Mission Boulevard and it is a unisex salon.
+user: Thanks so much. I'd like to find a restaurant there for a meal on that day. I need vegetarian options including something serving Pho.
+tool(FindRestaurants): ok n_results=1
+assistant: Red Chili Thai Vietnamese Noodle Restaurant which is nice in Hayward.
+user: Yes, that is a good one. I need to book a table for a restaurant for one person at 11 in the morning.
+assistant: Please confirm details for a table for 1 on March 13th at 11 am for the Red Chili Thai Vietnamese Noodle Restaurant in Hayward.
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is a success.
+user: Thanks so much and that is all.
+assistant: Have a nice day.

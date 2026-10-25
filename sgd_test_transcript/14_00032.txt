@@ -1,0 +1,18 @@
+user: I like to watch movies online and I need your help to find the best one which should be a Drama type movie.
+tool(FindMovies): ok n_results=10
+assistant: Which one is your selection among the following movies: A Faithful Man, After The Wedding and Blinded by the light?
+user: I think, I like to go with Blinded by the Light and I want to watch it online now. Don't care about the subtitles.
+assistant: Okay. I need your confirmation to play Blinded by the Light with English subtitles.
+user: That is confirmed. Please go ahead. Also let me know the actor of this film.
+tool(PlayMovie): ok n_results=1
+assistant: This film's lead role was acted by Meera Ganatra and the same was started playing.
+user: Thank you. I want to know about the Weather condition.
+assistant: Where do you want to check the Weather?
+user: Check it in Pleasanton.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature of that place will be 90 degrees Fahrenheit and there may be a chance of 4 percent of rain.
+user: That is okay and check the same in ATL on March 4th.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature of that place will be 75 degrees Fahrenheit and there may be a chance of 9 percent of rain.
+user: Okay, Thanks. That's all for now.
+assistant: Have a good day.

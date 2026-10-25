@@ -1,0 +1,26 @@
+user: Find me some songs would you?
+tool(LookupMusic): ok n_results=10
+assistant: Would you enjoy a song from Wind Rose album Wintersaga it called Diggy Diggy Hole?
+user: I love that song.
+assistant: Should I play it now?
+user: Perhaps another time. I would like to find a good online movie that stars Anri Katsu.
+assistant: What genre do you prefer?
+user: Right now I want Kids movies please.
+tool(FindMovies): ok n_results=1
+assistant: Paprika maybe?
+user: Paprika is super duper.
+assistant: Should the movie start now?
+user: No its for later. But I will listen to the song I chose earlier now.
+assistant: Would that be Diggy Diggy Hole and should I play it in the Living Room?
+user: No I want to listen to it in the Kitchen.
+assistant: So that will be Diggy Diggy Hole in the Kitchen?
+user: Wait, sorry, actually I would like it sent to the speaker outside.
+assistant: Okay Diggy Diggy Hole on the Patio it is right?
+user: That's what I decided yes.
+tool(PlayMedia): ok n_results=1
+assistant: Have a pleasant listening experience.
+user: Thanks, bring up my alarms would you?
+tool(GetAlarms): ok n_results=1
+assistant: Right now 1 alarm is set and it is for 9 am call Badminton.
+user: Good, good you can go now.
+assistant: Thanks bye.

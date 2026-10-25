@@ -1,0 +1,29 @@
+user: I am in the mood to watch a movie.
+assistant: Where are you located?
+user: I live in Santa Rosa.
+tool(FindMovies): ok n_results=10
+assistant: Would you like to see After the Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: I have seen those already. What else is there?
+tool(FindMovies): ok n_results=7
+assistant: There are 7 other movies available. How about Hobbs and Shaw, Hustlers or IT Chapter Two?
+user: Nope. Is there any other regular show I can watch?
+tool(FindMovies): ok n_results=4
+assistant: You have 4 options. There is official secrets, once upon a time in hollywood or scary stories to tell in the dark.
+user: Once upon a time in hollywood would be great.
+assistant: You would like to get tickets?
+user: Not right now.
+assistant: Is there anything else you need?
+user: I want to find a restaurant to eat in when I get there.
+assistant: What kind of restaurant and for what time would you like the reservation?
+user: I want to book a table at Belly Left Coast for afternoon 1:30.
+assistant: You would like a table for 2 at Belly Left Coast Kitchen & Taproom in Santa Rosa for March 1st at 1:30 pm?
+user: Yes, that would be great. Are there any vegetarian options and what is the restaurant's user ratings?
+tool(ReserveRestaurant): ok n_results=1
+assistant: There are no vegetarian options and the user rating is 4.4.
+user: Thanks a lot. At what time can I watch the movie at Roxy Stadium Cinemas?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one showtime at 8 pm at Roxy Stadium 14.
+user: What type of movie would be showing?
+assistant: An offbeat movie.
+user: That would be all I need.
+assistant: Enjoy your day.

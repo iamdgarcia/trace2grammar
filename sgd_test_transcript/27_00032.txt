@@ -1,0 +1,22 @@
+user: I'm going to San Fran pull up some free attractions to do there that are kid friendly please.
+tool(FindAttractions): ok n_results=10
+assistant: There is Alcatraz, it is a Historical Landmark.
+user: Alright. I would also like to watch a movie at the AMC Kabuki 8, see if there are any Play movies running.
+tool(FindMovies): ok n_results=2
+assistant: I located 2 movies, Brittany Runs a Marathon or Hustlers is playing?
+user: Hustlers sounds perfect.
+assistant: Should we buy tickets now?
+user: Nope, no need. Please check and see if any good movies are available online.
+assistant: Sure, what kind of movies can I look up for you?
+user: I would prefer some movies within the Song genre please.
+tool(FindMovies): ok n_results=1
+assistant: Alright, I located 1 movie you may be interested in called Echo In The Canyon.
+user: Echo In The Canyon sounds fantastic. Can you play this movie now with Spanish subtitles.
+assistant: Sure, please confirm that you would like to play Echo In The Canyon with subtitles on in spanish. Is that right?
+user: Yes it is. Who all is in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: Movie has started. Graham Nash is an actor in the movie.
+user: Thanks for your help.
+assistant: Your welcome. Will that be all?
+user: Yes. Good bye!
+assistant: Good bye!

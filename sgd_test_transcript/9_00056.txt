@@ -1,0 +1,23 @@
+user: Can you find me a movie to watch?
+assistant: Sure. Where are you located?
+user: I want to find a movie in Campbell.
+tool(FindMovies): ok n_results=1
+assistant: You might like IT Chapter Two.
+user: Can you find some other movies? Find something at the Balboa Theatre in SFO.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies for you. How about Ad Astra or Official Secrets?
+user: Official Secrets sounds prefect.
+assistant: Do you want to purchase tickets?
+user: Yes, I would like to buy them now.
+assistant: What type of show do you want to watch?
+user: A regular show.
+assistant: What date and how many tickets do you need?
+user: I need 2 tickets for the 2:30 pm show on March 10th.
+assistant: Please confirm that you want to buy 2 regular tickets for the March 10th showing of Official Secrets. You want to view the movie in San Francisco at 2:30 pm. Is this correct?
+user: Yes, that sounds good. How much will this cost? Can you get me the address of the theater?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets will cost $11 per person. The address of the theater is 3630 Balboa Street. Your tickets are confirmed.
+user: Thanks for your help.
+assistant: Do you need help with anything else?
+user: No. Thank you.
+assistant: You're welcome. Have a nice day.

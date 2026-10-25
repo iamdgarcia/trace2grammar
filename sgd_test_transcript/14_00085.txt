@@ -1,0 +1,19 @@
+user: Can you search me a movie with comedy genre and i want to watch..
+tool(FindMovies): ok n_results=5
+assistant: I have short listed 5 movies of your choice. What is your opinion about Chhichhore? This is a movie with average rating 60 out of 100.
+user: Can you tell me the actor and director of this movie?
+assistant: Directed by Nitesh Tiwari and actor is Sushant Singh Rajput.
+user: Oh..this is cool. Can you search some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: I have short listed 10 songs for you. What is your opinion about Raging from the album Cloud Nine by Kygo.
+user: Fine..this is okay..
+assistant: Can i play this song for you?
+user: Okay..play it on living room speaker..
+assistant: please give confirmation details: Run the song Raging in Living Room.
+user: This is perfect..Is this song released in "19?
+tool(PlayMedia): ok n_results=1
+assistant: This song is from the year 2016. Now enjoy your song.
+user: Thanks a lot.
+assistant: Any other help you want?
+user: No, not now..thanks a lot.
+assistant: Have a great day.

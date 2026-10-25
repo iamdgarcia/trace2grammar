@@ -1,0 +1,10 @@
+user: I'd like to know the weather forecast please.
+assistant: For what city please?
+user: I'd like to know the Woodside forecast for the 10th.
+tool(GetWeather): ok n_results=1
+assistant: Certainly, Woodside will have an average temperature of 86 degrees Fahrenheit and a 24 percent chance of rain on that day.
+user: Could you also tell me the forecast for Bodega Bay this Sunday?
+tool(GetWeather): ok n_results=1
+assistant: Yes, the temperature will average 77 degrees Fahrenheit that day and there will be an 8 percent possibility of precipitation.
+user: Terrific, that's all I need. Bye now.
+assistant: Goodbye, thank you very much.

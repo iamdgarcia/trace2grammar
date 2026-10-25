@@ -1,0 +1,9 @@
+user: Can you schedule a visit to a property?
+assistant: When and where would you like to visit?
+user: I'd like to see the Saratoga Senior Apartments on the 11th of this month, please.
+assistant: Please confirm: Saratoga Senior Apartments visit on March 11th.
+user: That's perfect. Can you tell me their address?
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit is scheduled. It's located at 1101 Burton Drive.
+user: Thank you very much, that'll be everything.
+assistant: Have a wonderful day!

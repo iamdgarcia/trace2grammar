@@ -1,0 +1,19 @@
+user: Can you help me check the weather please
+assistant: What city are we looking at
+user: I want to see what it's like in Vegas
+tool(GetWeather): ok n_results=1
+assistant: It's gonna be 84 degrees with an 18 percent chance of rain
+user: Good to know, now find me a one-way flight there
+assistant: Are you leaving on March 1st? If so where are you departing from?
+user: Yup, and I'll be coming from Paris, France
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Do you want to catch the 7:35 am flight with a layover via Air France? It'll be $356
+user: That's great, now I need a rental car there that I can pick up at 4:15 pm
+assistant: Do you want the car from March 1st? And for how long?
+user: I need it on the 3rd of March till Thursday next week actually
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a Audi A8 sedan from Union Plaza you might like
+user: How much is that daily?
+assistant: It's $27.00 a day
+user: Alright then, that's all, see you
+assistant: See you, bye!

@@ -1,0 +1,9 @@
+user: Hi, I need to get a cab for my friend and myself. A normal ride is fine.
+assistant: I can help you with that. Is the ride just going to be for you and your friend and where are you going to?
+user: Yes, it is just the 2 of us. We need a ride to 2550 El Camino Real.
+assistant: Alright, can you please confirm that you would like to book a regular cab for 2 to 2550 El Camino Real.
+user: Yes, that is correct.
+tool(GetRide): ok n_results=1
+assistant: OK, the ride is booked and the cab is on its way to you.
+user: Thanks so much for helping. That's all I needed today!
+assistant: No problem, glad I could help. Have a great day!

@@ -1,0 +1,14 @@
+user: I am looking for a salon in oakland
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons. 17 jewels salon is a good one in Oakland
+user: redmi a different one
+assistant: Benny Adem grooming parlor is a good salon in oakland
+user: yes great I want to book an appointment
+assistant: what's your preferred date and time
+user: make it one in the afternoon on Saturday this week
+assistant: please confirm the name of the hair stylist benny Adem grooming parlor appointment is at 1 pm. on March 2nd
+user: correct what is its address is it unisex
+tool(BookAppointment): ok n_results=1
+assistant: your booking is confirmed.its a unisex salon and the address is 408 14th street
+user: thanks a lot that's all for now
+assistant: have a nice day

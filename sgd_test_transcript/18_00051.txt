@@ -1,0 +1,25 @@
+user: i am not feeling well, will you find a therapist for me please?
+assistant: in which city should i search in for? Whether you need a Psychologist or a Family COunselor or perhaps any another kind?
+user: Find some Psychologist in San jose?
+tool(FindProvider): ok n_results=10
+assistant: i found 10 therapists that suits for me. What about Barskyex bryna G a psychologist in San jose?
+user: that sounds good.
+assistant: Whether i should book an appointment with the therapist?
+user: yes, i need to book an appointment.
+assistant: in which date you like to have an appointment?
+user: will you make an appointment for friday next week?
+assistant: At what time you prefer to make an appointment?
+user: the appointment time would be 13:30
+assistant: please check and confirm the following details. Appointment need to be booked with Barskyex Bryna G at 1:30 pm on March 8th.
+user: ok that suits for me. What is their address and its phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully. Email will be coming soon in your mail-id. their phone number is 408-363-4418 and their address is 5755 Cottle ROad # 4.
+user: Thanks for you immense help. Will you get a cab to go there?
+assistant: Which kind of ride would you prefer? whether luxury or Pool or anything else. How many seats do you need?
+user: I need two seats and i prefer a shared ride.
+assistant: please check and confirm the following details. Ride need to be booked to 5755 cottle road # 4 and number of seats is 2 and you prefer a pool ride.
+user: ok that works for me. How much does it cost?
+tool(GetRide): ok n_results=1
+assistant: ride has been booked successfully. the cab is on its way. the ride costs $15.63.
+user: thanks a lot for your immense help. that's all i need.
+assistant: Have a great day.

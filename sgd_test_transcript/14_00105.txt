@@ -1,0 +1,15 @@
+user: I fancy listening to some music, I have been told an album called Prequelle is fab.
+tool(LookupMusic): ok n_results=2
+assistant: What about Dance Macabre by Ghost from Prequelle.
+user: Yes I like the sound of that one. Now what about movies online.
+assistant: What genre do you prefer?
+user: Maybe an Eccentric story would be good.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 moved called Once Upon a Time In Hollywood?
+user: Yes Once Upon a Time is brilliant thanks. Now will you play that song you mentioned in the living room.
+assistant: To confirm then I will play Dance Macabre in the Living Room.
+user: That is right, what genre would you say it is?
+tool(PlayMedia): ok n_results=1
+assistant: It is Metal, I hope you enjoy.
+user: That is all for now, thanks for your help.
+assistant: have a lovely day.

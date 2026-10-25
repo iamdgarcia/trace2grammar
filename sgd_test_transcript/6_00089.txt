@@ -1,0 +1,20 @@
+user: Find me a salon please.
+assistant: On which city you want to be?
+user: In Sunnyvale will be great.
+tool(FindProvider): ok n_results=10
+assistant: I have for you 10 results that you may like.First is a nice salon in Sunnyvale called A+ Haircuts For Men.
+user: Something else you can find me?
+assistant: A nice salon in Sunnyvale is Alpha Barbershop.
+user: Sounds very good.I want an appointment on the 7th.
+assistant: At what time you want to be?
+user: At five pm will be okay.
+assistant: You want an appointment at Alpha Barbershop on March 7th at 5 pm.Is that correct?
+user: Yes that's good.Where is located the place?
+tool(BookAppointment): ok n_results=1
+assistant: Appointment is confirmed.472 North Mathilda Avenue is their address.
+user: Is a unisex salon?
+assistant: Yes this is an unisex salon
+user: Thank you for all.
+assistant: With something else I can help you?
+user: No.Thank you!
+assistant: Have a great day!

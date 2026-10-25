@@ -1,0 +1,19 @@
+user: Help me look for Pop songs from 2013. Maybe something by Justin Bieber.
+tool(LookupMusic): ok n_results=1
+assistant: Would you like to listen to All That Matters by Justin Bieber from the album Journals.
+user: Yeah, that would be nice.
+assistant: What else can I do for you?
+user: Help me look for Ghost movies online.
+tool(FindMovies): ok n_results=6
+assistant: There are 6 movies that match. How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: What else is there?
+assistant: There's also One Cut of the Dead, Scary Stories to Tell in the Dark, and Theatre of Blood.
+user: I like Theatre of Blood.
+assistant: Would you like me to play that?
+user: No, thanks. I do want the song we talked about to be played on the kitchen speaker.
+assistant: I'll play All That Matters in the Kitchen, is that right?
+user: Yeah, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks, that's all I need.
+assistant: Have a pleasant day.

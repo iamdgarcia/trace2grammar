@@ -1,0 +1,24 @@
+user: I need a rent car till tomorrow in Toronto, Canada.Any type of car will be okay.
+assistant: When you want to be the pick up and until when you need it?
+user: The pick up will be at 8 in the night and I will need it till 4th of March.
+tool(GetCarsAvailable): ok n_results=8
+assistant: 8 option I have for you.A nice Sedan of Audi A8 available at Toronto Pearson International Airport.
+user: Something else you have.I would like to pick it up at 15:30 in San Diego.
+tool(GetCarsAvailable): ok n_results=9
+assistant: I have for you 9 options.A nice SUV of Alfa Romeo Stelvio available at Santa Fe Depot.
+user: Tell me the cost per day.
+assistant: Per day it cost $42.00.
+user: Something else you have?I want it from today till tomorrow.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A nice Sedan of Buick Regal Sportback available at SAN International Airport.
+user: What is the cost per day?
+assistant: Per day it cost $35.00
+user: Sounds really good.I want to make a reservation.
+assistant: Insurance you want to add?
+user: Yes will be good.
+assistant: You want a Sedan car from SAN International Airport.Pick up date is March 1st at 3:30 pm and drop-off date is March 2nd.Is that correct?
+user: Yes is very good.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.
+user: Thanks.That's all that I wanted.
+assistant: Have a great day!

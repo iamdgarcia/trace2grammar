@@ -1,0 +1,17 @@
+user: Can you find any fantasy movies starring Danny John-Jules directed by Jim Henson?
+tool(FindMovies): ok n_results=1
+assistant: How about the movie labyrinth? It's rated 70 out of 100.
+user: Yeah, that sounds good. Could you also help me find some songs to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: No problem. I've found 10 songs for you. How about Tattooed Heart by Ariana Grande? It's from the album Yours Truly.
+user: Yeah, that sounds great. Go ahead and cast it on my Patio.
+assistant: No problem. Please confirm the following for me. Playing the song Tattooed Heart on the Patio. Correct?
+user: Yeah, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Done. Enjoy your music!
+user: Can you tell me what type of music it is? And if this came out '12 or '13?
+assistant: It's a Pop song and it was released in the year 2013.
+user: Great. Thanks!
+assistant: Anything else I can do for you?
+user: No thanks. That's all for now.
+assistant: My pleasure. Have a good day.

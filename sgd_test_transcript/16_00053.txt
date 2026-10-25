@@ -1,0 +1,27 @@
+user: I would like to purchase bus tickets please!
+assistant: How many tickets would you like?
+user: I would like three tickets.
+assistant: Can you tell me your departure date?
+user: Yes, I'm planning on departing on the 10th.
+assistant: And where will you be departing from?
+user: I will be departing from Washington.
+assistant: And what time are you departing?
+user: I would like to depart at 11 am
+assistant: Where is your destination?
+user: I will be departing from Long Beach and would like to go to Sacramento.
+assistant: Please confirm that you would like a bus from Long Beach to Sacramento for 3 people on March 10th departing at 11 am and that there is no extra luggage.
+user: Yes, that is perfect. Can you tell me the cost and the name of the station it departs from?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have confirmed your ticket. The cost of the ticket is $44 and it will be departing from Downtown Station.
+user: Can you help me find one hotel room in the area also?
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel called Courtyard By Marriott Sacramento Cal Expo.
+user: Are there any other hotels with my criteria?
+assistant: There is another 3 star hotel called Courtyard By Marriott Sacramento Midtown.
+user: Sounds perfect! I would like to reserve it for 5 days and would like to check in on Sunday this week.
+assistant: Please confirm that you would like 1 room on March 3rd at the Courtyard By Marriott Sacramento Midtown located in Sacramento for 5 days.
+user: Perfect! Can you give me their phone number please?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been successfully booked and their phone number is +1 916-455-6800.
+user: Thank you for your help! That will be all for now!
+assistant: Okay, enjoy your day!

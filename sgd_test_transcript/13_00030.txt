@@ -1,0 +1,25 @@
+user: I want you to find me something interesting which I can do. Usually I enjoy Concert events, though the event should be happening this Sunday.
+assistant: Is there some specific city I should look for the event?
+user: I will be around LA so please have a look there.
+tool(FindEvents): ok n_results=10
+assistant: There is the Aldous Harding event which is quite popular, and it will happen at Lodge Room on March 3rd at 6 pm.
+user: This one seems nice. Is there some other events which you can recommend?
+assistant: Altin Gun is also another popular event which will be happening at The Teragram Ballroom on March 3rd at 4:30 pm.
+user: This one seems quite good.
+assistant: Is there something else I can help you with today?
+user: I also want to find a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: I have a found a 3 star hotel which is called Ac Hotel By Marriott Beverly Hills.
+user: Can you give me the address of the hotel, and their phone number I can use to call them?
+assistant: The hotel is found at 6399 Wilshire Boulevard, and if you want to get in touch with them you can at +1 323-852-7000
+user: That seems nice. Now I would like to buy 1 ticket for the event you found earlier.
+assistant: Can you please confirm that you want to buy 1 ticket for the Altin Gun event which happens in Los Angeles on March 3rd?
+user: That is not right, because I want to have four tickets.
+assistant: Could you please confirm that you want to buy 4 tickets for the Altin Gun event?
+user: Yes, that suits me well.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested booking has been made. Enjoy your time there!
+user: Can you tell me the price of the ticket, and the address of the venue?
+assistant: The ticket has a price of $45, and the venue can be found at 1234 West 7th Street.
+user: I appreciate your help very much. That would be all.
+assistant: Have a wonderful time!

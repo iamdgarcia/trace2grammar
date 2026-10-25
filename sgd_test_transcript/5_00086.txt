@@ -1,0 +1,10 @@
+user: Can you locate a therapist for me please?
+assistant: What is the type of therapist you would like? In which city would you like me to look?
+user: I want a Psychologist in Campbell.
+tool(FindProvider): ok n_results=5
+assistant: You may consider Bacheler Janet, a Psychologist located in Campbell.
+user: Are there other therapists you can suggest? I am looking for a Family Counselor.
+tool(FindProvider): ok n_results=6
+assistant: I have located 6 therapists that may suit you. One is Beth Kane, a Family Counselor in Campbell.
+user: That sounds really good. Goodbye!
+assistant: I'm glad I could help you.

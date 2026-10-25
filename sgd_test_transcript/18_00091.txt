@@ -1,0 +1,23 @@
+user: I want to find a Hotel and I need your help to search for the suitable one.
+assistant: Where do you want to search for the Hotels? Do you have any preferred City to search for?
+user: Yes, I want to find it in London.
+tool(SearchHotel): ok n_results=10
+assistant: Got one which is 45 Park Lane with 5 stars. Do you want to stay there?
+user: I need more information. Check about the price per night and phone number of this hotel. I want the details to decide.
+assistant: Please note that their contact number is +44 20 7493 4545 and the total cost per night will be $375. Hope this is okay to you.
+user: Sorry, I need something else. Search for some other hotels based on my requirements.
+assistant: Another hotel is there and the name is Abbey Court Hotel (Hyde Park) with 3 stars. Do you like to stay in this hotel?
+user: I think so. Thanks. Also get me the details of weather condition there on March 10th.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 92 degrees Fahrenheit in average and there may be a chance of 6 percent for rain.
+user: What about humidity and wind speed?
+assistant: Humidity will be around 22 percent and wind speed will be 5 miles per hour in average. Hope the details are useful.
+user: Yes, thank you. Now we are going to book rooms at the Hotel that you have searched for me. Please book two rooms for four days from 1st of March.
+assistant: Need your final confirmation to book 2 rooms for 4 days in Abbey Court Hotel (Hyde Park) from March 1st in London.
+user: That is confirmed and go ahead. Also I want their contact number and address.
+tool(ReserveHotel): ok n_results=1
+assistant: Their phone number is +44 20 7402 0281 and their address is Sussex Gardens.
+user: Thanks for all your information.
+assistant: Anything else you want?
+user: Nothing for now and thanks.
+assistant: Have a great day.

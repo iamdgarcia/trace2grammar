@@ -1,0 +1,27 @@
+user: I want to ride the bus instead of flying this time. I need a direct bus line to Portland. Can you help me?
+assistant: What are you planning to depart from? Provide the departure date for me as well.
+user: My departure city is Seattle, WA on March 7th.
+tool(FindBus): ok n_results=8
+assistant: There is a direct bus leaving from Seattle on March 7th at 7:30 am. It has a cost of $33.
+user: Okay that should do fine.
+assistant: Please tell me any other tasks I can help you with.
+user: I need you to purchase 2 tickets for a direct bus from Seattle.
+assistant: I will now purchase 2 tickets for a bus leaving Seattle to head to Portland on march 7th at 7:30 am. Is that okay?
+user: Please go ahead and buy the tickets.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your purchase is confirmed. You now have 2 tickets to Portland on March 7th.
+user: Can you tell me the name of the departure and arrival station?
+assistant: The bus leaves from the Westlake Station in Seattle and will arrive at SW Arthur & 1st in Portland on March 7th.
+user: You make booking a trip so easy. Thanks for your help. But I'm not done yet. I want to find a hotel in Portland.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that may be acceptable. There is a 3 star hotel called Aloft Portland Airport At Cascade Station. It is a good establishment.
+user: Tell me the address to this hotel.
+assistant: My pleasure. The address to the Aloft Portland is 9920 Northeast Cascades Parkway.
+user: Do I have any other options concerning hotel choices?
+assistant: There is a higher rated 4 star hotel called the Canopy By Hilton Portland Pearl District. This may suit your criteria better.
+user: That sounds like a good one.
+assistant: Do you want me to go ahead and reserve your room now?
+user: No thanks. Let's save that for another.
+assistant: Sure. Do you need anything else at the moment?
+user: Not right now. Thanks though. You've been a great help to me.
+assistant: I'm always glad to help. Have a good evening. Bye!

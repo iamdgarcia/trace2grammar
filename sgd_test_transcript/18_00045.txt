@@ -1,0 +1,40 @@
+user: Find me a therapist, please.
+assistant: In which city you want to be?
+user: In Redwood City will be okay.
+assistant: What type of therapist you need?
+user: A Psychologist will be good.
+tool(FindProvider): ok n_results=9
+assistant: I have for you 9 options.You may try a Psychologist in Redwood City called Becker Hubert J.
+user: Something else you have?
+assistant: You can try a Psychologist in Redwood City caleed Cutting Linda P .
+user: Tell me their phone number.
+assistant: 650-299-4734 is the contact number.
+user: Tell me the address, please.
+assistant: 1150 Veterans Boulevard is the address.
+user: Sounds very good.
+assistant: You want to make an appointment at this therapist?
+user: Yes, I want an appointment at quarter past 3 in the afternoon.
+assistant: On what date you want to be?
+user: Try if you can for 5th of this month at 1:30 in the afternoon.
+assistant: Book an appointment at Cutting Linda P on March 5th at 1:30 pm.Is OK for you?
+user: Yes, that works for me.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry but something went wrong and the appointment failed.Whit something else can I help you?
+user: Try again please but change the date on March 10th.
+assistant: Book appointment with Cutting Linda P on March 10th at 1:30 pm.I'm right?
+user: Yes, is good.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is booked and you should get an confirmation email soon.
+user: Thanks, you helped me a lot.Get for me a cab to go there.
+assistant: Tell me the number of seats.
+user: I am part of a group of 1.
+assistant: What kind of ride you want.Regular or Pool or anything else?
+user: I want a Shared ride if is possible.
+assistant: You want a Pool ride and 1 seats to 1150 Veterans Boulevard.I s that correct/
+user: Yes, is okay for me.Tell me in how much time will arrive the cab.
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and the cab is on its way.Should arrive in 7 minutes.
+user: Tell me how much is the cost.
+assistant: $6.48 is the ride cost.
+user: Thank you very much.That's all.
+assistant: Have a good day!

@@ -1,0 +1,23 @@
+user: Will you make a private transfer?
+assistant: Contact name and amount? Transfer the money from app balance or debit card?
+user: Transfer of 93 bucks to Wilson from my credit card.
+assistant: Confirm a private transfer of $93 to Wilson from your credit card.
+user: Cool.
+tool(MakePayment): ok n_results=1
+assistant: Pay is successful. Recipient should receive the money soon.
+user: Thanks. Will you find an intermediate priced restaurant there?
+assistant: Which location?
+user: Restaurants in San Jose.
+assistant: Food preference?
+user: Something Asian Fusion.
+tool(FindRestaurants): ok n_results=10
+assistant: Found 10 restaurants. There's Dynasty in San Jose.
+user: Great. Will you reserve a table for two at half past 11 in the morning on Sunday this week?
+assistant: Confirm a table for 2 at Dynasty in San Jose at 11:30 am on March 3rd.
+user: Reserve a table for 4.
+assistant: Confirm a reservation for 4 at 11:30 am.
+user: Terrific.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've reserved your table.
+user: Thanks. That's all.
+assistant: Have a marvelous day.

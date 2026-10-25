@@ -1,0 +1,28 @@
+user: What film do you have there that you can recommend for a movie night with friends?
+tool(FindMovies): ok n_results=10
+assistant: Are you interested in a movie like Theatre of Blood, which shows a 93 percent positive rating?
+user: Hmm. That movie is in what category?
+assistant: It's a film in the Horror category.
+user: Okay. That might work. Can you switch gears and pull up a nice restaurant for me, some place in the average priced range?
+assistant: I can help you with that. Just tell me the city you want and the type of food you'd like.
+user: Sure. I fancy a restaurant that has Cambodian food, somewhere in Oakland.
+tool(FindRestaurants): ok n_results=4
+assistant: All right. The Holy Basil Pho restaurant in Oakland is coming up. Does that restaurant seem like what you want?
+user: Uh, what other restaurants can you suggest. Oh, and make sure a vegetarian menu is available, please.
+tool(FindRestaurants): ok n_results=4
+assistant: Okay. Also in Oakland, there is Le Cheval restaurant.
+user: How is the restaurant rated overall?
+assistant: The restaurant has a positive rating of about 4.3 stars.
+user: Great. I could go with that.
+assistant: Do you want to set up a table reservation for that restaurant?
+user: I think I will. Can you reserve a table for 1 person, arriving at half past 6 in the evening on the 9th of March?
+assistant: Sure can. Would you like to confirm a table reservation for 1 person at Le Cheval restaurant in Oakland on March 9th at 6:30 pm?
+user: I'm down for that. Go ahead and confirm it, please.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table reservation is now confirmed.
+user: Cool. Is there an outdoor area for serving guests at that restaurant?
+assistant: It appears that no outdoor area is available for guests.
+user: I see. That's okay. Appreciate your help.
+assistant: Do you need more information?
+user: Nope, that's it on that. Thanks mucho.
+assistant: Certainly. Enjoy your day.

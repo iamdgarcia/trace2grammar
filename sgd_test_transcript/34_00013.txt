@@ -1,0 +1,28 @@
+user: Can you find me a hotel?
+assistant: Sure. What city should I search in?
+user: Find me something in Paris, France.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels that match your criteria. How about Ac Hotel by Marriott Paris Porte Maillot? It is a 4 star hotel.
+user: That sounds good.
+assistant: Would you like to make a reservation?
+user: Not now, maybe later.
+assistant: Can I help you with anything else?
+user: Yes. Show me some local attractions.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that might interest you. How about American Church in Paris? It is a Place of Worship.
+user: Sounds good. Did you find anything else? How about a mall?
+tool(FindAttractions): ok n_results=1
+assistant: I found 1 attraction of interest. You should check out the Shopping Area Le Village Royal.
+user: Okay, sounds great.
+assistant: Is there anything else I can assist you with?
+user: I'd like to reserve the hotel that you found.
+assistant: Great! What is your check in date? How long will you be staying?
+user: I'm checking in on the 4th of this month and will be staying for 5 days.
+assistant: Can you confirm the following? You want to reserve 1 room at the Ac Hotel By Marriott Paris Porte Maillot in Paris. You will be checking in on March 4th and staying for 5 days. Is this information correct?
+user: Yes. Does the hotel allow smoking?
+tool(ReserveHotel): ok n_results=1
+assistant: No, the property is non-smoking. I have successfully booked your room.
+user: Thanks, you've been really helpful.
+assistant: Do you need help with anything else?
+user: No, thanks for your help.
+assistant: You're welcome. Have a good day. Goodbye!

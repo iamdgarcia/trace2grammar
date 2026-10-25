@@ -1,0 +1,11 @@
+user: I need a one way flight
+assistant: Where will you be departing from and going to?
+user: I need flights from San Fran to Portland Oregon
+assistant: And what date will you need to fly?
+user: I need to leave on the 11th of March
+tool(SearchOnewayFlight): ok n_results=5
+assistant: There is a flight at 7:35 am with Alaska Airlines. The cost would be $120.
+user: That sounds reasonable
+assistant: Do you need something else?
+user: No, that's all. Thanks.
+assistant: Have a nice day.

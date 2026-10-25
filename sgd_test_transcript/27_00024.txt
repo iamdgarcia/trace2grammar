@@ -1,0 +1,28 @@
+user: Would you show me some attractions I can visit?
+assistant: Where should I look?
+user: Find SF attractions.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that should be of interest. How about Alcatraz? It's a Historical Landmark.
+user: Can I get into the attraction free?
+assistant: Yes, it's free.
+user: Nice. Can you find me a movie around there too?
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies you may like. What about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Brittany Runs a Marathon sounds good. Do you have any good movies online?
+assistant: What sort of movies are you into?
+user: Comedy movies are my favorite.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies that may be of interest. Would you like to watch Chhichhore, Good Boys or My Big Fat Greek Wedding?
+user: Do you have something else?
+assistant: What about Where'd You Go, Bernadette or Yesterday?
+user: Yesterday is good.
+assistant: Would you like to play the movie?
+user: Yes, play me the movie.
+assistant: Would you confirm that you want to play Yesterday with English subtitles?
+user: Yes, do that. Who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie. Kate McKinnon was an actor in it.
+user: Thank you.
+assistant: What else can I help with?
+user: Nothing else.
+assistant: Have a great day.

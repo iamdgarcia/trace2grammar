@@ -1,0 +1,19 @@
+user: Can you help me reserve a rental car? I'd like to find a Sedan available at five pm until March 7th.
+assistant: Where will you picking up the car and what day would you like to do it?
+user: I will pick up the car in Washington tomorrow.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a Buick Regal Sportback Sedan available at Union Station.
+user: That works for me.
+assistant: Would you like to reserve it?
+user: Not at the moment. Can you help me find a bus there?
+assistant: Where are you traveling from and when will you be departing?
+user: I will be leaving New York on the 1st of March. I'm open to different types of buses.
+tool(FindBus): ok n_results=8
+assistant: For $42, there is a bus leaving at 6 am.
+user: That will be fine.
+assistant: Would you like to purchase your ticket?
+user: No, not right now. I'd like to compare the prices of a one-way flight first. Can you tell me what the price of ticket for the 1st of March would be?
+tool(SearchOnewayFlight): ok n_results=3
+assistant: If you like American Airlines, there is a flight leaving at 5 pm for $83 per ticket. It's a direct flight.
+user: Thanks for the information. That will be all for now.
+assistant: You're welcome. Have a wonderful day.

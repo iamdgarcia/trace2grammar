@@ -1,0 +1,25 @@
+user: I am looking for some nice movies to watch.
+assistant: Which city you want me to search the movie?
+user: I am looking for a movie in Berkeley.
+tool(FindMovies): ok n_results=8
+assistant: There are 8 movies. What do you think of A Faithful Man, Blinded by the Light or Good Boys?
+user: Good Boys sounds nice to me.
+assistant: Do you want me to purchase the tickets?
+user: No, Not now. Maybe later.
+assistant: Is there anything else I can help you with?
+user: I would like to book a table at a restaurant in that area.
+assistant: What is your preferred time for the booking?
+user: Book the table at morning 11.
+assistant: Which restaurant would you like me to book the table?
+user: I am looking to book a table at B&b Kitchen.
+assistant: Please confirm: You want me to book a table for 2 people at B&b Kitchen & Wine Bar located in Berkeley for March 1st at 11 am.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked the table for you.
+user: Can you check whether they have vegetarian options on the menu? And also find me the type of foods they serve.
+assistant: Yes, They have vegetarians options in the menu and they serve American.
+user: Thank you for the help! Find me the timing for a 3d show of the movie you just found at Regal UA Berkeley.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime at 10 pm in Regal UA Berkeley.
+user: That sounds great. That will be all.
+assistant: I am glad I could help. Have a nice day

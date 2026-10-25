@@ -1,0 +1,12 @@
+user: How will the weather be in Pacifica on the 11th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 82 degrees Fahrenheit with a 16 percent chance of rain on the 11th.
+user: Is it going to be very humid?
+assistant: Humidity is expected to be around 21 percent.
+user: Thank you. And how about the weather in Martinez on the 12th of March?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 85 degrees Fahrenheit with a 27 percent chance of rain on the 12th.
+user: Okay, thank you.
+assistant: Is there anything else I can do for you?
+user: No. Thanks a bunch!
+assistant: Have a great day! Bye!

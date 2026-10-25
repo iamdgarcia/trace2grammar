@@ -690,6 +690,7 @@ def infer_states(events: list[Event], config: ExtractionConfig | None = None) ->
     settled: set[str] = set()  # states exited via progress (for clarify re-open test)
     cycle_depth = 0
     error_count = 0
+    silent_failure = False
     pending_auth_call = False
     last_user_t = None
     outcome = None
@@ -761,7 +762,25 @@ def infer_states(events: list[Event], config: ExtractionConfig | None = None) ->
             # failure (retry → cycle) is decided by the next auth tool_call with the same name.
             pending_auth_call = False
             # tool result inside q_tool stays (the next assistant/user event resolves it)
-            # tool result inside q_tool stays (the next assistant/user event resolves it)
+            # silent-failure signal: an "ok" result that carried zero results (structured
+            # count attr at 0, or the adapter convention 'n_results=0' in the result content).
+            # Flag only: the outcome classification is deliberately untouched.
+            if not silent_failure:
+                a = ev.get("attrs") or {}
+                n_res = None
+                for k in (
+                    "result_count",
+                    "tool.result_count",
+                    "gen_ai.tool.call.result_count",
+                    "n_results",
+                ):
+                    if k in a:
+                        n_res = a[k]
+                        break
+                if n_res is None and re.search(r"\bn_results=0\b", content):
+                    n_res = 0
+                if str(n_res) in ("0", "0.0"):
+                    silent_failure = True
         elif kind == "tool_error":
             error_count += 1
             if state == "q_auth":
@@ -803,6 +822,7 @@ def infer_states(events: list[Event], config: ExtractionConfig | None = None) ->
         "outcome": outcome,
         "cycle_depth": cycle_depth,
         "error_count": error_count,
+        "silent_failure_candidate": silent_failure,
     }
 
 

@@ -1,0 +1,36 @@
+user: I am looking for housing and want to find something with a garage.
+assistant: I can help. How many bedrooms and bathrooms are you looking for and what area are you interested in?
+user: Can you look for something with two bed rooms and 1 bathroom in Hayward?
+assistant: Are you looking to rent or buy?
+user: I am looking for a something I can rent.
+tool(FindHomeByArea): ok n_results=8
+assistant: There are 8 houses that meet your criteria. For $2,800 you can rent an apartment at Alpine Vista Apartments which is located at 1282 Mattox Road.
+user: That sounds like what I am looking for.
+assistant: Would yu like a reserve a time to visit the apartments?
+user: Yes, please schedule a visit for me.
+assistant: Ok, what day works best for you?
+user: I'd like to check it out on March 12th if possible.
+assistant: Please confirm you would like to schedule a visit on March 12th to Alpine Vista Apartments.
+user: Yes, please schedule it.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled a property visit for you.
+user: Does the property have a washer & dryer available?
+assistant: Yes, the proeprty has in-unit laundry available.
+user: What is the contact number for the apartments?
+assistant: Yu can contact the property at 510-886-0385.
+user: That's great! Can you please share the address for me?
+assistant: Sure, who should I share the location with?
+user: I want Frank to see it.
+assistant: Alright, you would like to share 1282 Mattox Road with Frank, is that correct?
+user: Yes, please do it.
+tool(ShareLocation): ok n_results=1
+assistant: Ok, the location has been shared.
+user: Now I need to reserve a cab to get there.
+assistant: How many people will be going there and would you like a regular, luxury or other tyoe of ride?
+user: I'd like the cheapest ride available for 4 people.
+assistant: Please confirm you would like a pool ride to 1282 Mattox Road for 4 people.
+user: Yes, that is perfect.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is in route to you.
+user: Thanks great, thanks for your help!
+assistant: Have a nice time!

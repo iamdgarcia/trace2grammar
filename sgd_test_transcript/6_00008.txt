@@ -1,0 +1,23 @@
+user: Can you please find a therapist for me?
+assistant: What city shall I look in?
+user: I need to locate a psychologist in Portola Valley.
+tool(FindProvider): ok n_results=2
+assistant: You may want to try Mayer Johanna M, who is a Psychologist in Portola Valley.
+user: That sounds good, can you please book me an appointment?
+assistant: Do you have a preferred date and time for the appointment?
+user: Can you make me an appointment for the 12th around 15:30.
+assistant: Please confirm the following details: Booking an appointment with Mayer Johanna M at 3:30 pm on March 12th.
+user: No, I want the appointment at 12 in the afternoon.
+assistant: Please confirm the following details: Booking an appointment with Mayer Johanna M at 12 pm.
+user: Yes, that is correct. What is their phone number?
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, something went wrong, and I couldn't book the appointment. Is there something else I can help you with?
+user: Can you try booking the appointment again? Try for the 1st of this month.
+assistant: Please confirm the following details: Booking an appointment with Mayer Johanna M at 12 pm on March 1st.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked. You will receive an email confirmation soon.
+user: What is there address?
+assistant: The address is 4370 Alpine Rd # 102.
+user: Thank you very much, I certainly appreciate it. Good bye!
+assistant: Glad to help, good bye.

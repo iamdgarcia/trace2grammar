@@ -1,0 +1,13 @@
+user: i like to travel to attend a conference. Will you find me a train?
+assistant: At what date do you wish to travel?from which city you like to depart from and at what city are you plan to go?
+user: i'm looking for tickets from Anaheim, CA. to Phoenix, AZ and the tickets date is for 7th of March.
+tool(FindTrains): ok n_results=4
+assistant: THere are 4 trains that suits your need. it will depart at 6:30 am and it costs $123 in total.
+user: At which station the train leave from and at which station does it arrive at?
+assistant: THe train is leaving from Anaheim Intermodal Center and the train arrives at Phoenix Union Station.
+user: Ok that sounds good.
+assistant: Whether i need to book tickets in that train?
+user: no,not for now.
+assistant: Whether anything else i need to search for?
+user: no, thanks a lot thats all i need
+assistant: bye, have a great day.

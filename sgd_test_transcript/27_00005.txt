@@ -1,0 +1,30 @@
+user: I am bored and I want to visit any attractions.
+assistant: What location do you want me to find you an attraction in?
+user: Oh I will be in the San Francisco area.
+tool(FindAttractions): ok n_results=10
+assistant: I can tell you about 10 attractions based on what you are looking for. What do you think of this Historical Landmark called Alcatraz?
+user: Fantastic. I want to see a movie preferably an imax show at the AMC Kabuki 8.
+tool(FindMovies): ok n_results=5
+assistant: What do you think of Ad Astra, Hustlers or IT Chapter Two?
+user: I think I would love IT two.
+assistant: Do you want the tickets?
+user: Not now, maybe later.
+assistant: Shall I get you something else?
+user: I was looking for any nice movies online.
+assistant: Do you have any type of movies you would like?
+user: I want to see a Play movie.
+tool(FindMovies): ok n_results=10
+assistant: I have found you 10 movies that suits your interest. How about A Faithful Man, After The Wedding or Blinded by the Light?
+user: I think A Faithful Man would be really good.
+assistant: Shall I start playing the movie?
+user: Yeah I want the movie played but with English subs.
+assistant: Can you verify that you want A Faithful Man played with English subs?
+user: Not really, I will need Hindi subs.
+assistant: So do you confirm that you want to see A Faithful Man with Hindi subs?
+user: Sure, can you tell me what actor is in it?
+tool(PlayMovie): ok n_results=1
+assistant: I have started your movie and Dali Benssalah is the actor.
+user: Thank you very much.
+assistant: Shall I help you with anything else?
+user: Nope, thank you very much.
+assistant: I hope you have a wonderful day!

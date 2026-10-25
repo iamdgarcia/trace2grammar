@@ -1,0 +1,15 @@
+user: i want to watch a movie. i want a horror movie by ari aster.
+tool(FindMovies): ok n_results=1
+assistant: there's midsommar which has an 83 out of 100 rating.
+user: that works. can you find me interesting things to do there on that day.
+assistant: where should i look? is there anything specific you like, like music or theater?
+user: i like stage show and look in phoenix.
+tool(FindEvents): ok n_results=3
+assistant: there's a boondocks improv at dearing acting studio on march 10th at 6:30 pm.
+user: how much is it? where is it?
+assistant: it's $50 a ticket and it's over on 10806 north 32nd street.
+user: that works, but can you maybe find something else for the 13th?
+tool(FindEvents): ok n_results=2
+assistant: there's jack and the beanstalk at the great arizona puppet theater on march 13th at 6 pm.
+user: that sounds good, that's everything.
+assistant: have a good day.

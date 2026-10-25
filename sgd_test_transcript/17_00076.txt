@@ -1,0 +1,17 @@
+user: I would like a train ticket, 1 seat from Los Angeles to Anaheim, Ca.
+assistant: When would you like to travel?
+user: I would like to leave on Tuesday next week.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6 am for $34.
+user: I'm looking for a train from Fresno.
+tool(FindTrains): ok n_results=6
+assistant: There is one leaving at 7 am for $74.
+user: That one sounds good.
+assistant: Would you like to purchase a ticket?
+user: No, I would like to find a house to rent.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house located at 1050 West Ball Road that has a 4.2 rating.
+user: That house sounds good.
+assistant: Would you like to reserve this house?
+user: No, I just needed the information for now.
+assistant: Have a good day.

@@ -1,0 +1,29 @@
+user: Can you help me find a unisex salon?
+assistant: Sure, in what city?
+user: Look in Belmont.
+tool(FindProvider): ok n_results=4
+assistant: There's 4 you may like. How about Belmont Hair Studio in Belmont?
+user: Sounds good to me.
+assistant: Need me to book your appointment?
+user: Not yet. Ca you also find a psychiatrist in Belmont?
+tool(FindProvider): ok n_results=1
+assistant: Sure, I found 1. How about the psychiatrist Yoerg Robert L. in Belmont?
+user: Great, thank you.
+assistant: Should I book you an appointment?
+user: Yes, for 4 pm on the 11th of this month.
+assistant: Just confirm that you'd like me to book you an appointment with Yoerg Robert L at 4 pm on March 11th.
+user: Yes, what's the address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: I've made your appointment and you'll get an email confirmation shortly. They're located at 1301 Ralston Avenue # C and can be reached at 650-592-8750.
+user: Great, and can you book me an appointment at that salon for that same day at 12:15?
+assistant: Certainly, just confirm you'd like to book an appointment at Belmont Hair Studio on March 11th at 12:15 pm.
+user: Actually, do 10:45.
+assistant: Confirm you'd like the appointment on March 11th at 10:45 am.
+user: Yes, what's the rating?
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, that appointment didn't work. How about March 11th at 10:30 am instead? Belmont Hair Studio got an average rating of 4.4.
+user: Okay, that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: I've booked your appointment.
+user: Thanks, that's all for now.
+assistant: Have a nice day!

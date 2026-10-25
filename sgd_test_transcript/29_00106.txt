@@ -1,0 +1,35 @@
+user: Can you help me find something interesting do to?
+assistant: What city would you like to search in? Is there a particular type of events you would prefer?
+user: I would like to find something with Songs around the NYC area.
+tool(FindEvents): ok n_results=10
+assistant: Abbi Jacobson will be performing at Kaufmann Concert Hall on March 11th at 7:30 pm.
+user: OK, Thanks. What are some other events?
+assistant: Alma Deutscher is performing at Stern Auditorium / Perelman Stage on March 3rd at 7 pm.
+user: OK, what else is there to do? Something on March 5th.
+tool(FindEvents): ok n_results=9
+assistant: I found 9 events for that date. Ben Harper will be performing at Pier 17 on March 5th at 7:30 pm.
+user: OK, that's good, thank you. I'll need to find a house to stay in while we are there, one with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses that match your criteria. 100 Greenwich Street has a rating of 4.4.
+user: What is the phone number for this place?
+assistant: The phone number is +1 917-409-0800.
+user: That's a great house. What are some buses going there?
+assistant: Are you departing on March 5th? What city are you leaving from?
+user: I will be leaving from Philly on the 1st.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses for you. There is one departing at 9 am that costs $23.
+user: What station does it arrive at?
+assistant: It arrives in Penn Station.
+user: That sounds good.
+assistant: Would you like to buy tickets for this bus?
+user: Um, not right now, thank you.
+assistant: Is there anything else I can help you with?
+user: Yes, I want to buy tickets for the event you found.
+assistant: How many tickets would you like?
+user: I will need 3 tickets.
+assistant: You would like 3 tickets for Ben Harper in New York on March 5th, is that correct?
+user: Yes, that's right. Where is the venue located?
+tool(BuyEventTickets): ok n_results=1
+assistant: The venue is at 89 South Street.
+user: Thank you very much for your help. That's all for now.
+assistant: Have a great day!

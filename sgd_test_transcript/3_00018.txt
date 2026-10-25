@@ -1,0 +1,13 @@
+user: I have a plan for a trip and I need a round trip flight. Can you find me the one?
+assistant: Yes, for which date I have to search the flight?
+user: Search it for my travel on this Saturday.
+assistant: Which is your origin place and let me know the date of your return?
+user: I need the flight from Portland and search for the return flight on Friday next week.
+assistant: What is your destination?
+user: I need the flight to Vancouver, BC and you can search for any class of tickets.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: What about a connecting flight with Delta Airlines takes off at 4:35 am and the returning time at 6:35 am for the ticket cost $354?
+user: Yes, that works for me.
+assistant: How can I help you further?
+user: No, that's all. Thanks.
+assistant: Have a great day.

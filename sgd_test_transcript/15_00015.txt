@@ -1,0 +1,19 @@
+user: I want to find a place to live and buy three bedrooms
+assistant: How many baths you need
+user: Three baths
+assistant: In which area do you like
+user: Make it in Fremont
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 nice houses alborada apartments is a nice property 1001 Beethoven common costs $3,850,000
+user: Good I want to schedule a visit to it make it on the 9th
+assistant: Please confirm the following you are scheduling a visit to alborada apartments on March 9th
+user: Yes correct
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is confirmed
+user: Does it have garage and what is its phone number
+assistant: There is no garage the phone number is 510-797-1800
+user: Thanks a lot can you show me my alarms
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm at 10:30 am. with name commute
+user: OK great thank you
+assistant: Thank you

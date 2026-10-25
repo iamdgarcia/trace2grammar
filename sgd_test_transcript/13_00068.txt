@@ -1,0 +1,14 @@
+user: Would you help me to search for a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: I have short listed 10 movies for you. What is your opinion about Give Me Liberty with average rating of 92 out of 100?
+user: This is perfect. I like to do something interesting..
+assistant: In which city i should search?
+user: Find somewhere in Seattle, WA
+assistant: Which kind of event you prefer?
+user: I love the event like Theater
+tool(FindEvents): ok n_results=10
+assistant: I have short listed 10 events of your choice. Among them Beatleconcert is very famous which taking place on march 10th at 12th Avenue Arts around 5 pm.
+user: This is cool.
+assistant: Can i purchase tickets to this event?
+user: No, i don't want now.Thank you.
+assistant: Have a nice day.

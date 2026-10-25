@@ -1,0 +1,39 @@
+user: I am taking a trip next Thursday and I need to find a bus to get to my destination.
+assistant: What is your city of departure?
+user: I'm going to be departing from SFO and I'd like to get to Fresno
+tool(FindBus): ok n_results=9
+assistant: There are 9 possible buses that you can take. One is a 7 am bus and the fare is $31.
+user: Can you tell me the arrival station?
+assistant: This bus goes to 2660 Tulare St.
+user: And can you tell me where the bus leaves from? Also, is this bus direct?
+assistant: Sure. This bus leaves from Transbay Terminal and it is a direct schedule bus.
+user: Can you give me some other alternatives?
+assistant: Sure. There's a bus that leaves at 7:10 am and the fare for that bus is $36.
+user: Okay, that might work for me.
+assistant: Are you looking to purchase a ticket for this bus?
+user: Not this second, thanks.
+assistant: Was there anything further?
+user: Yes. I would like to get an idea of attractions and sights to see while I'm there. Can you tell me if there any Theme Park venues?
+tool(FindAttractions): ok n_results=2
+assistant: There us a Theme Park called Blackbeard's Family Entertainment that you might enjoy.
+user: Can you give me a contact number for them?
+assistant: Sure. They can be reached at 559-292-9000
+user: Are there different sights and places that are worth visiting? I really would like places that are suitable for kids and that are free to enter.
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 such attraction that you might enjoy. It's a Theme Park called Island Waterpark.
+user: And do you have a number for them?
+assistant: They can be reached at 559-277-6800
+user: Excellent. Thanks so much!
+assistant: Would you like help with anything further?
+user: Yes. I want to buy a ticket for the bus you mentioned earlier.
+assistant: And how many tickets would you like to purchase?
+user: I need two tickets.
+assistant: That's 2 tickets for the bus leaving at 7:10 am on March 7th from San Francisco and going to Fresno, do I have that right?
+user: Yes, that would be great.
+tool(BuyBusTicket): ok n_results=1
+assistant: That ticket purchase has been completed.
+user: Also, I was hoping to find one room in a 3 star hotel in the vicinity.
+tool(SearchHotel): ok n_results=4
+assistant: There are 4 3 star hotels that fit your parameters. One is the Doubletree By Hilton Hotel Fresno Convention Center.
+user: Great, thank you. That's everything at this moment.
+assistant: Take care and enjoy your day!

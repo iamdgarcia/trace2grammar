@@ -1,0 +1,26 @@
+user: I need a new salon.
+assistant: In what city?
+user: Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: I found 9 salons including Daredevils & Queens in Santa Rosa.
+user: Ok. I want to see a movie near there too.
+tool(FindMovies): ok n_results=10
+assistant: Here are some options; After The Wedding, Good Boys, and Fiddler: A Miracle of Miracles.
+user: After The Wedding would be great.
+assistant: When do you want to see it? March 2nd?
+user: Yes, that would be great.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 show at 8:30 pm at Summerfield Cinemas.
+user: What is the genre?
+assistant: Drama.
+user: Sounds great!
+assistant: Do you want to get tickets?
+user: No, not now. I want to book an appointment at the salon at 6:30 in the evening.
+assistant: Please confirm, appointment at Daredevils & Queens on MArch 2nd at 6:30 pm.
+user: Perfect! What is the salon's phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is set. The phone number is 707-575-5123.
+user: Thank you!
+assistant: Do you want anything else?
+user: No, that is all.
+assistant: Have a nice day.

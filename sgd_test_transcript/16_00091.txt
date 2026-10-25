@@ -1,0 +1,26 @@
+user: I need bus tickets to Vegas from Fresno, CA and I was hoping to leave at 3:15 pm.
+assistant: How many of you are there?
+user: Just the 2 of us.
+assistant: Did you have a date in mind?
+user: Yes, that would be the 14th of this month.
+assistant: You are requesting 2 seats on a bus that is going to Las Vegas from Fresno and the leaves on March 14th around 3:15 pm, no extra luggage is this correct?
+user: Yes, it sure is. Which stations are involved?
+tool(BuyBusTicket): ok n_results=1
+assistant: Union Plaza, oh wait, there has been an error which caused the purchase to not go through, would you like the 3:20 pm one instead, it is $44.
+user: That would be okay.
+tool(BuyBusTicket): ok n_results=1
+assistant: You have your seats.
+user: Thanks, great. Now I need a nearby hotel.
+tool(SearchHotel): ok n_results=7
+assistant: I have 7 listed. A 3 star one is Best Western Plus Las Vegas West.
+user: That would be alright.
+assistant: What else can I do for you?
+user: Get me 2 rooms for 1 day at that hotel I need it for March 1st.
+assistant: Is this right- 2 rooms, 1 day in Las Vegas at the Best Western Plus Las Vegas West on March 1st?
+user: That's perfect, what is the address there?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservations are made and it is located at 8669 West Sahara Avenue.
+user: Give me there number would you and what is their smoking policy?
+assistant: No smoking, anywhere and you can reach them at +1 702-256-3766.
+user: Appreciate your time, dismissed.
+assistant: Ta ta and good day.

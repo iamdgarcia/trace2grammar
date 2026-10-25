@@ -1,0 +1,37 @@
+user: I need to travel by train and need help finding tickets, can you lend a hand?
+assistant: Where are you travelling to and when?
+user: I'd like to check out Chicago on March 7th.
+assistant: Where will you be leaving from?
+user: I'll be leaving from NYC.
+tool(FindTrains): ok n_results=6
+assistant: There are 6 trains available that meet your criteria. How about one departing at 6 am? Tickets cost $119.
+user: That's a little early for me to be honest. Are there any other options? I only need 1 ticket.
+tool(FindTrains): ok n_results=6
+assistant: How about a slightly leter train at 6:10 am. The price per ticket is $124.
+user: That's better thanks.
+assistant: Do you want to book tickets now?
+user: Yes please go ahead and book tickets.
+assistant: Do you need any insurance?
+user: Yes please, you never know what could go wrong.
+assistant: Okay so that's 1 value ticket on the train from New York to Chicago on March 7th at 6:10 am?
+user: That's correct thanks.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked successfully.
+user: What is the departure station called?
+assistant: It leaves from Grand Central Station.
+user: What is the destination station called?
+assistant: It will travel to Chicago Union Station.
+user: Thanks for that. Now I'd like to find something interesting to do while I'm there on the 10th of this month. I like music and songs.
+tool(FindEvents): ok n_results=4
+assistant: There are 4 events that I have found but I think you might like Conor Maynard. He is playing at the Chop Shop on March 10th at 6:30 pm.
+user: That sounds perfect thanks. Can you share this location for me.
+assistant: Sure, who do you want to share it with?
+user: Send it to Bryan.
+assistant: So that's the Chop Shop location with Bryan?
+user: Yes that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for your help.
+assistant: Do you need anything else?
+user: Not right now thanks.
+assistant: Enjoy your day.

@@ -1,0 +1,19 @@
+user: I want to find a train leaving form Phoenix.
+assistant: What city are you traveling to?
+user: I'm going to Fresno, CA.
+assistant: When do you want to leave?
+user: I want to leave on the 6th.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains. There's a train departing at 7:20 am for $172.
+user: Are there any other trains? I need four seats.
+tool(FindTrains): ok n_results=2
+assistant: I found 2 trains you might like. There's a train departing at 8:30 am that costs $643.
+user: Any other trains?
+assistant: There's a train departing at 9:40 am that costs $651.
+user: Great. I want to find a house to stay in there for one person. I want to find something with laundry service and a rating of 3.9 or higher.
+tool(SearchHouse): ok n_results=2
+assistant: There's a house located at 2233 Ventura Street with a 3.9 rating.
+user: That sounds wonderful.
+assistant: Do you want to reserve the house now?
+user: No, not right now. That's all.
+assistant: Have a great day.

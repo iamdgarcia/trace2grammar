@@ -1,0 +1,25 @@
+user: I need to see a therapist in San Jose.
+assistant: What type of therapist shall I search for?
+user: Search for a Psychiatrist in Martinez.
+tool(FindProvider): ok n_results=2
+assistant: Andreas R. Bollinger is a Psychiatrist in Martinez and is 1 of 2 search results.
+user: What else do you have?
+assistant: Stoltzman Roger is a Psychiatrist in Martinez.
+user: Can you give me their contact number and their location?
+assistant: They are located at 150 Muir Road and you can contact them at 925-372-2746.
+user: That is perfect.
+assistant: Do you need more help?
+user: Book me a session for the 9th of March.
+assistant: What time do you wish to go?
+user: I wish to go at 3:15 pm on the 11th of March.
+assistant: You want to see Stoltzman Roger at 3:15 pm on March 11th, correct?
+user: No, make the appointment for half past 3 in the afternoon.
+assistant: You want an appointment with Stoltzman Roger at 3:30 pm, correct?
+user: Yes, that is right.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is confirmed and an email will be sent to you shortly.
+user: Thanks a bunch. Find me a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: Where'd You Go, Bernadette? has a 46 out of 100 rating and is 1 of 10 search results found.
+user: That is perfect. I don't need anything else right now.
+assistant: I am glad to help you.

@@ -1,0 +1,31 @@
+user: I need to get one bus ticket.
+assistant: What day and time do you expect to travel? What is the city you will be visiting?
+user: I will be heading out on the 10th of March in the evening 7:30. I will be visiting Long Beach.
+assistant: What is the city you are leaving out of?
+user: SFO is where I am heading out of.
+assistant: You would like to buy 1 bus ticket that is leaving from San Francisco and going to Long Beach on March 10th at 7:30 pm. You will not be bringing extra luggage. Is this correct?
+user: Wrong, I am going to be visiting Fresno.
+assistant: You need to get a bus ticket that is heading from San Francisco and going to Fresno. Is that correct?
+user: Yes, that's right. Can you tell me the arrival station and the price?
+tool(BuyBusTicket): ok n_results=1
+assistant: It will go to 2660 Tulare St. and will have a price of $34. The ticket is reserved.
+user: Will you search for a car rental in Fresno?
+assistant: Will you be getting the car on March 10th? What is the desired pick up time and how long will you need it?
+user: I will pick it up at 2 o'clock in the afternoon on the 11th and keep it until the 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a great Sedan Dodge Charger that can be found at the Fresno Yosemite International Airport.
+user: Can you check for other options?
+assistant: There is a Hatchback Ford Focus that is good and is located at the Fresno Station.
+user: Anything else available?
+assistant: The SUV GMC Terrain can be found at Fresno Station and it's a good car.
+user: What is the daily price?
+assistant: The price each day is $37.00.
+user: Yes, that sounds great and I want to book the car rental.
+assistant: Would you like to get additional insurance?
+user: No, additional insurance is unnecessary.
+assistant: You will be getting an SUV at the Fresno Station on March 11th at 2 pm and keep it until March 12th. You chose not get additional insurance. Is this all correct details?
+user: Yep, everything is correct.
+tool(ReserveCar): ok n_results=1
+assistant: The car rental is booked.
+user: I don't need anything else and thanks for all of your wonderful help.
+assistant: Enjoy your day.

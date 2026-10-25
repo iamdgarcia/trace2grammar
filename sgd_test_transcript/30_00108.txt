@@ -1,0 +1,27 @@
+user: Can you tell me the weather for next Wednesday?
+assistant: In which city?
+user: In Alamo, please.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 75 degrees Fahrenheit with a 7 % chance of rain.
+user: Okay, that sounds good. Can you schedule a property visit for that day?
+assistant: Which property do you want to see?
+user: I'd like to see Riley Square.
+assistant: Please confirm: Riley Square visit for March 6th.
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed.
+user: Thanks, I'd like to reserve a car with insurance.
+assistant: When will you be returning the car?
+user: I'll need it until the 8th.
+assistant: Do you want to pick up the car on March 6th? Where do you want to pick it up? Do you want a SUV, a Hatchback, or another type of car?
+user: I'll need it from March 4th at YVR airport. An SUV will be nice.
+assistant: What time would you like to pick up your car?
+user: How about 19:30?
+assistant: Please confirm: a SUV from YVR International Airport from 7:30 pm on March 4th until March 8th.
+user: Yes, that is all correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've reserved your car.
+user: Thanks for the assistance!
+assistant: Can I help you with anything else?
+user: No thank you, that will be all.
+assistant: Have a great night!

@@ -1,0 +1,17 @@
+user: I'm looking for a salon and I need your guidance
+assistant: where do you want it to be located?
+user: fremont area would be perfect
+tool(FindProvider): ok n_results=10
+assistant: I've scanned the fremont zone and I've found 3sixty salon and boutique
+user: cool, update me about the weather there on the 12th of this month
+tool(GetWeather): ok n_results=1
+assistant: the temperature will be around 73 degrees fahrenheit and the chance of rain is 10 percent
+user: got it, let's go back to the salon, book me an appointment for that day
+assistant: sure, do you know the time you want to be there?
+user: 18:00 is fine
+assistant: confirm the next step. you are about to book an appointment at 3sixty salon and boutique on march 12th at 6 pm
+user: I confirm.
+tool(BookAppointment): ok n_results=1
+assistant: you got your appointment
+user: that's wonderful, I don't need you any longer. bye
+assistant: Enjoy your day

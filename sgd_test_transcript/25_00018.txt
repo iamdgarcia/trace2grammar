@@ -1,0 +1,22 @@
+user: I want to make a money transaction and In need your help to do it in private. Help me to send the same from my app balance.
+assistant: Okay, how much do you want to transfer and also to whom you want to transfer the money?
+user: Please transfer $114 to Isabella.
+assistant: I need your confirmation to transfer $114 from your app balance to Isabella in private.
+user: Yes, that is confirmed. Please go ahead.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made the transaction and the money will reach the recipient shortly.
+user: Thank you. Now, I want to find a Restaurant in Santa Rosa. I like to eat Seafood and Please search for the one with supplying seafoods.
+tool(FindRestaurants): ok n_results=3
+assistant: What about a restaurant named Jojo Restaurant & Sushi Bar in Santa Rosa?
+user: It is okay. Thanks. please book me a table at 10:30 in this restaurant.
+assistant: I need your confirmation to book a table for 2 in the Jojo Restaurant & Sushi Bar on March 1st in Santa Rosa for the time 10:30 am.
+user: Yes, okay to proceed. Please check whether they have outdoor seating?
+tool(ReserveRestaurant): ok n_results=0
+assistant: Unfortunately I wan not able to book the table there for that time. How can I help you further?
+user: Please try to book the table at another time which is at 5:45 in the evening.
+assistant: I need your confirmation to book a table for 2 in the Jojo Restaurant & Sushi Bar on March 1st in Santa Rosa for the time 5:45 pm.
+user: Okay to proceed. Can you check about the price details for the food in that restaurant, was that much cheap there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are having moderate price ranges and I have booked the table at that time.
+user: Thank you for your help and that's all for now.
+assistant: Have a nice day.

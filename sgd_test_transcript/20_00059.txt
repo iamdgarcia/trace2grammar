@@ -1,0 +1,27 @@
+user: Get me a rental car.
+assistant: What dates do you want the car and in what city shall I search in?
+user: I need a car in Las Vegas from Monday next week until the 10th of March.
+assistant: What time will you get the car?
+user: I want to get the car at 6:30 pm.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There is a Hatchback Fiat Panda at Union Plaza and is 1 of 3 cars available.
+user: What is the cost per day to rent it?
+assistant: The price is $24.00 a day.
+user: That is perfect.
+assistant: Shall I reserve the car for you?
+user: Yes, but not right now.
+assistant: Do you need more help with something?
+user: Find me a house to stay in near there.
+tool(SearchHouse): ok n_results=7
+assistant: What about 1215 South Las Vegas Boulevard? It has a 3.7 average rating.
+user: That house is perfect for me.
+assistant: Shall I book the house for you?
+user: No, not right now, but you can reserve that car for me.
+assistant: Do you need insurance for your car?
+user: No, don't add any insurance.
+assistant: You want a Hatchback car for pickup from Union Plaza on March 4th at 6:30 pm and will return it on March 10th, correct?
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked.
+user: Thanks a lot. That is everything for now.
+assistant: Have a great day.

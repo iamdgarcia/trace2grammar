@@ -1,0 +1,21 @@
+user: I love Mystery movies: can you find a movie with Monica Dolan?
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie for you: Official Secrets
+user: I like Official Secrets! I'm looking for an attraction in Toronto, a religious spot.
+tool(FindAttractions): ok n_results=3
+assistant: I found 3 attractions for you: what about BAPS Shri Swaminarayan Mandir, a Place of Worship?
+user: Yes, I like this one! Now I want to listen to a song
+tool(LookupMusic): ok n_results=10
+assistant: I suggest you Beautiful Now by Zedd, from the album True Colors
+user: Yes, It's fine! Cast it on Patio, please.
+assistant: Playing Beautiful Now in Patio: Is it correct?
+user: Yes, I confirm! Is it a song from three years ago?
+tool(PlayMedia): ok n_results=1
+assistant: The song was released in 2015. Good listening!
+user: Thanks! I'd like to watch the movie you've found
+assistant: Playing Official Secrets with subtitles in English: do you confirm?
+user: Yes, I confirm! Thanks.
+tool(PlayMovie): ok n_results=1
+assistant: The movie starts!
+user: Thank you, It's all for now!
+assistant: Have a nice day

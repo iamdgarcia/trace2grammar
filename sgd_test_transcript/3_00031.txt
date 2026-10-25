@@ -1,0 +1,9 @@
+user: I'm about to leave and I need round trip tickets. I will depart from New York to land in Berlin. I want to return on the 14th of March
+assistant: When are you leaving?
+user: Tomorrow.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 suitable flights for you, one is from American Airlines and it will take off at 4:45 pm with 0 stops. The return trip is scheduled to leave at 1:35 am. You'll pay $373 for the ticket.
+user: It can work for me.
+assistant: DO you still need me?
+user: No I don't.
+assistant: Goodbye sir

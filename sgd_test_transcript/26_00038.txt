@@ -1,0 +1,28 @@
+user: I need a round trip flight.
+assistant: When are you traveling? Where are you going?
+user: I am going to New York on the 9th of March.
+assistant: What day would you like to return?
+user: The 11th.
+assistant: What city are you leaving from?
+user: London, UK.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Do you like Delta Airlines? They have a flight that leaves at 9:40 am. The returning flight leaves at 8:50 pm and the ticket is $360.
+user: How many people? What is the ticket class?
+assistant: It is the price for 1 person in economy seating.
+user: Perfect. Please find me a home for 1 to stay in while I'm there that offers laundry service. The rating must be higher than 4.4.
+tool(SearchHouse): ok n_results=10
+assistant: 111 North 12th Street, Brooklyn is rated 4.4.
+user: What is the phone number?
+assistant: +1 718-631-8400.
+user: Please book me that home beginning on the 9th of March until the 11th.
+assistant: Your reservation for 1 in New York begins on March 9th and ends on March 11th. Is that correct?
+user: No, I need to check out on the 10th of this month.
+assistant: Please confirm, reservation in New York, checking out on March 10th.
+user: Yes, that is correct. What is the total cost?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is complete. The price per night is $68.
+user: I want to find something free to do there.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 free attractions like Alley Pond Park. It is a popular park in NYC.
+user: Thanks! That is all I need
+assistant: Have a nice day.

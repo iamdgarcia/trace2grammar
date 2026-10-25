@@ -1,0 +1,20 @@
+user: Hey, can you help me find a psychologist in Vacaville please?
+tool(FindProvider): ok n_results=4
+assistant: I found 4. Caldwell Leslie is one good psychologist in Vacaville.
+user: What's their address and phone number?
+assistant: They're located at 1 Quality Drive and their number is 707-624-4000.
+user: Sounds real good. Can you book me an appointment there at quarter past 1 in the afternoon?
+assistant: For when would that be?
+user: Friday next week would be great.
+assistant: So an appointment with Caldwell Leslie at 1:15 pm on March 8th?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, but I couldn't book it when you wanted. Caldwell Leslie is free on March 8th around 1:30 pm, would you like to go then?
+user: Works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked. You'll soon get a confirmation email.
+user: Great. Can you recommend me some movies to watch right now?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 possibles options. A Faithful Man is a great one with a rating of 78 out of 100.
+user: Sounds good, that will be all.
+assistant: Great! Have a very good day!

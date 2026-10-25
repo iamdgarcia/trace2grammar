@@ -1,0 +1,16 @@
+user: Hi, I want to find a hotel please, something four star-rated in Toronto.
+tool(SearchHotel): ok n_results=10
+assistant: The Bisha Hotel Toronto has a rating of 4 stars.
+user: Great, okay. May I please book 1 room?
+assistant: What is your check in date expected to be?
+user: Let's make that for the 2nd of this month.
+assistant: Will do. What will be the duration of your stay?
+user: Just seven days.
+assistant: Confirming your stay at Bisha Hotel Toronto, 1 room, beginning March 2nd in Toronto for a total of 7 days.
+user: Yes, that's good, thanks!
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation has been successfully completed.
+user: Thank you so much for helping me with that.
+assistant: I'm very happy to assist you. Anything else today?
+user: Nothing else, no. Thank you again.
+assistant: You're very welcome and I hope you have a nice trip.

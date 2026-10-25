@@ -1,0 +1,16 @@
+user: Help me look for a hotel.
+assistant: What city do you want to look in?
+user: I need a hotel in NYC.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 matches in NYC. One of the matches is a 5 star hotel, it's 1 Hotel Brooklyn Bridge.
+user: That'll work.
+assistant: What else can I do for you?
+user: Make me a reservation for 1 room at that hotel.
+assistant: When would you like to check in and for how many days?
+user: I want to check in on the 8th for six days.
+assistant: I'll reserve you 1 room for 6 days starting on March 8th at 1 Hotel Brooklyn Bridge in New York. Is everything correct?
+user: Yeah, you got everything.
+tool(ReserveHotel): ok n_results=1
+assistant: The room has been booked.
+user: Nice, thanks a lot for helping. I don't need anything else.
+assistant: I'll be here if you need me, have a fine day.

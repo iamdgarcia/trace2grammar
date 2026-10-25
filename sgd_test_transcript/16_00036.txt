@@ -1,0 +1,39 @@
+user: Can you find me a unisex salon in Martinez?
+tool(FindProvider): ok n_results=2
+assistant: There are 2 that meet your criteria. Would you be interested in Citrus Salon in Martinez?
+user: What is the other salon available?
+assistant: Great Clips is also located in Martinez.
+user: I'd prefer that one.
+assistant: Would you like to make an appointment?
+user: Not right now. I need to find a therapist first.
+assistant: Are you interested in what is available in Martinez?
+user: Yes, I will need a Psychologist.
+tool(FindProvider): ok n_results=3
+assistant: Miller Nicole G is a Psychologist located in Martinez.
+user: That works for me.
+assistant: Would you like to make an appointment?
+user: Yes, please make an appointment.
+assistant: What day and time works best for you?
+user: I'd like to go on Monday next week at 3:30 in the afternoon if possible.
+assistant: You'd like to see Miller Nicole G on March 4th at 3:30 pm. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry. There isn't anything available at that time. Is there something else I can help you with?
+user: Could you try for an appointment at one in the afternoon instead?
+assistant: You would like to see Miller Nicole G on March 4th at 1 pm. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Congratulations. Your appointment has been booked. Check your email for a confirmation.
+user: Where are they located?
+assistant: The address is 150 Muir Rd.
+user: Can you tell me the contact number?
+assistant: You can reach them at 925-372-2830.
+user: Great! Can you make an appointment at that salon for 5 o'clock in the evening?
+assistant: Have I got the details correct? You'd like to make an appointment at Great Clips on March 4th at 5 pm.
+user: That would be perfect. Can you tell me what the salon is rated and what the phone number is?
+tool(BookAppointment): ok n_results=1
+assistant: Yes, the salon has an average rating of 3.8 and you may reach them at 925-679-0279. Your appointment was successfully made.
+user: Great. Thanks for the help.
+assistant: You're welcome. Is there anything else I can do for you?
+user: I think you've covered everything.
+assistant: Have a wonderful day!

@@ -1,0 +1,34 @@
+user: I am look for bus tickets to buy for my travel.
+assistant: What is your destination and at what time are you going?
+user: I will visit Philly and I will leave at 8:15 am.
+assistant: What number of tickets do you intend to purchase?
+user: There will be four of us.
+assistant: What date will you depart?
+user: I will go on the 4th of this month.
+assistant: What place do you leave from?
+user: I will going from NY.
+assistant: So you confirm that you want tickets for 4 people on the bus that leaves New York to Philadelphia on March 4th at 8:15 am. You will not have extra luggage. Is that right?
+user: Actually I do have extra luggage that I will be taking with me.
+assistant: So you want tickets to the bus from New York and you will carry excess luggage on the bus?
+user: Yep, that is good.
+tool(BuyBusTicket): ok n_results=1
+assistant: I couldn't buy the tickets due to some errors, sorry. What about the bus leaving at 7:50 am and it will cost you $32?
+user: Yeah that will also do it for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have your tickets confirmed.
+user: Can you find me a three -star hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found you a hotel called Aka University City and it is a 3 star hotel.
+user: That is fine.
+assistant: Shall I make a hotel reservation?
+user: Sure. Book it for me.
+assistant: What is your date of checking in?
+user: I need 1 room on March 2nd.
+assistant: How many days will you stay there?
+user: I will stay for six days and I actually want two rooms.
+assistant: So can you confirm that you want 2 rooms in the Aka University City hotel on March 2nd for 6 days in Philadelphia?
+user: Yes that checks out.
+tool(ReserveHotel): ok n_results=1
+assistant: I have your reservation for the hotel confirmed.
+user: Thank you. That was a lot of help. That will be all.
+assistant: I hope you enjoy your day!

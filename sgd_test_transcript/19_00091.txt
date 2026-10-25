@@ -1,0 +1,27 @@
+user: I need help finding a rental car next Tuesday please, in San Francisco.
+assistant: What date do you need to pick up the rental?
+user: I'll need it on the 4th of this month.
+assistant: Okay and do you have a time preference for when to pick it up?
+user: Yes, I'll need to pick it up at 18:00.
+tool(GetCarsAvailable): ok n_results=7
+assistant: There's a Sedan Audi A8 that will be available at the Salesforce Transit Center.
+user: That sounds great.
+assistant: Okay, so should I book it for you?
+user: No I'll do that later. I also need help reserving three tickets for something fun to do in Toronto, Ontario.
+assistant: No problem, anything in particular that you're interested in?
+user: Well I heard that Funtcase is cool. Will they be showing that on the 11th?
+assistant: Yeah, I can book you 3 tickets for Funtcase on March 11th in Toronto, if you'd like.
+user: Perfect, please do. Where is the venue located, by the way?
+tool(BuyEventTickets): ok n_results=1
+assistant: Alright I've confirmed the reservation. The venue's address is 423 College Street, it's called NEST. Have a fun time!
+user: Thanks for the help. Could you go ahead and reserve that car that we talked about, then?
+assistant: Sure, do you need insurance for that?
+user: Yes please.
+assistant: Okay, so just to confirm, you'd like me to reserve the Sedan car, with insurance, at the Salesforce Transit Center, to be picked up at 6 pm on March 4th and dropped off on March 5th?
+user: Yes that's exactly right. How much will I need to pay per day?
+tool(ReserveCar): ok n_results=1
+assistant: Alright, the reservation is set then, and that will cost $38.00 each day.
+user: Awesome, thank you for your help.
+assistant: No problem and do you need anything else?
+user: No, that'll be it, thank you.
+assistant: Alright, have a nice day then.

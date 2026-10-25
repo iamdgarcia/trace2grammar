@@ -1,0 +1,14 @@
+user: I'm interested in finding a 3 bath property in Lafayette. Can you help?
+assistant: I'd be happy to. Are you interested in a property to rent or did you want to buy one? How many bed rooms do you require?
+user: I'd like to buy a place with 3 bed rooms.
+tool(FindHomeByArea): ok n_results=2
+assistant: May I suggest Lafayette Commons Apartments? The address is 3263 Mount Diablo Court and it costs $3,500,000.
+user: That might work. I'd like to see it first.
+assistant: When would you like to make an appointment to view the property?
+user: Yes, can you check to see if they are available on the 11th of this month.
+assistant: Let me verify these details: You'd like to see Lafayette Commons Apartments on March 11th.
+user: Yes, that works for me. Can you tell me if the property has a garage and what the contact number is?
+tool(ScheduleVisit): ok n_results=1
+assistant: Certainly. The property does not have a garage. You may reach them at 925-287-1188. Your appointment to view the property has been confirmed.
+user: Great. I think that will be all for today. Thank you.
+assistant: You're welcome. Enjoy the rest of your day!

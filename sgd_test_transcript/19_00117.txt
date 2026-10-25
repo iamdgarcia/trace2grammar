@@ -1,0 +1,25 @@
+user: I need help locating a rental vehicle please.
+assistant: Of course, when would you like to pick up the car and where would you like to obtain it from? Also when will you be returning the car?
+user: I'd like to find something in San Jose that I could pick up at 12:30 and I'll need to have it until the 10th.
+assistant: Beginning when please?
+user: Starting on the 9th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 possible vehicles for you. At Diridon Station there is a Buick Regal Sportback, which is a sedan.
+user: Yes, that seems fine. I'd also like to find tickets to some kind of event. I'm thinking in the area of London, UK. Perhaps The Lion King, which I heard is great.
+assistant: How many tickets do you think you'll need? And is there a date in particular that you're interested in?
+user: Yes, the 12th of this month and I'll need two tickets.
+assistant: Confirming admission for 2 to The Lion King in London on March 12th.
+user: Yes, sounds correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased. Enjoy the show.
+user: Thank you. Could we also go ahead and book that rental car please?
+assistant: Would you like insurance for the vehicle?
+user: Yes, I sure would.
+assistant: Confirming pick up of a sedan rental with insurance coverage from Diridon Station on March 9th at 12:30 pm and a March 10th return.
+user: Sounds perfect, thanks so much.
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has been reserved.
+user: Great, thanks again.
+assistant: How else may I help you today?
+user: That's it, I'm all set.
+assistant: Thank you very much, goodbye.

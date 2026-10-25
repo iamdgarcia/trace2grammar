@@ -1,0 +1,28 @@
+user: I want to find a restaurant. Can you find me something serving Sandwich, with vegetarian options? Something in Los Gatos.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 nice restaurant. How about McDonald's in Los Gatos?
+user: Yes, that sounds good. I want to book a table.
+assistant: Sure. For what time?
+user: Make it for half past 12 in the afternoon.
+assistant: Can you confirm that you want to book a table for 2 at McDonald's in Los Gatos on March 1st at 12:30 pm?
+user: Yes, that works. Can you give me the address and user rating?
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry but I was unable to make your reservation. Can I help you with anything else?
+user: Try booking it again for 11:30.
+assistant: Confirming that you want to book a table for 2 at McDonald's in Los Gatos for March 1st at 11:30 am?
+user: Yes,that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thanks a lot. Can you get me a cab to go to the restaurant?
+assistant: Sure. What type of ride do you prefer?
+user: I want a Expensive ride to 15475 Los Gatos Boulevard.
+assistant: Confirming that you want a 2 seat Luxury ride to 15475 Los Gatos Boulevard?
+user: No. I only need 1 seat.
+assistant: Confirming that you want a ride for 1 to 15475 Los Gatos Boulevard?
+user: Yes. How much will this cost? When will the cab arrive?
+tool(GetRide): ok n_results=1
+assistant: Your cab is booked and on its way. The ride will cost $26.82 and will arrive in 13 minutes.
+user: Thanks for helping me.
+assistant: Can I help you with anything else?
+user: No, thanks a lot.
+assistant: You're welcome. Have a wonderful day.

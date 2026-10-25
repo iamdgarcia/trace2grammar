@@ -1,0 +1,25 @@
+user: Can you find me a place to eat around the SFO area?
+assistant: Sure, what kind of grub?
+user: I want some Ramen, that sounds good right now
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10 ramen places in San Francisco including 2g Japanese Brasserie which is a nice place
+user: Where are they located?
+assistant: They are at 601 Van Ness Avenue
+user: What else can you recommend to me?
+assistant: In San Francisco? How about Ace Wasabi Rock-n-roll Sushi?
+user: Is it pricey there? And what's their rating
+assistant: They are in the moderate range and have an average 4.4 rating
+user: What about cheap restaurants that you can recommend?
+tool(FindRestaurants): ok n_results=4
+assistant: I found 4 places like that in San Francisco including Fujiyama-ya
+user: Oh that sounds good, book me a table please!
+assistant: For what time?
+user: Dinner time, around 18:30
+assistant: Confirming you want a table for 2 at 6:30 pm on March 1st at Fujiyama-ya in San Francisco?
+user: Yes please, also what's their rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It has been booked! And it's around 4.4
+user: Great, thanks for that
+assistant: Can I do anything else?
+user: No, that's all for now, thank you
+assistant: Alright take care!

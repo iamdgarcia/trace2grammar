@@ -1,0 +1,14 @@
+user: Find me a train.
+assistant: Whats the travel date, city of travel, and city of departure?
+user: Looking for trains from Philadelphia to New York on 1st of March
+tool(FindTrains): ok n_results=8
+assistant: There are 8 trains, One leaving at 10:40 am and costs $48.
+user: Any other options?
+assistant: Another one leaving at 10:50 am and costs $44.
+user: Thats good, Find me a house to there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses and there is a 4.4 rated at 100 Greenwich Street
+user: Is there a Laundry Service and the contact number for it.
+assistant: Yes, it has a Laundry service and the contact number is +1 917-409-0800
+user: sounds great, thats all!
+assistant: Its my pleasure, bye!

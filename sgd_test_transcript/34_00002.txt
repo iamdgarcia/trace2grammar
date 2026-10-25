@@ -1,0 +1,21 @@
+user: Find me some attractions worth visiting.
+assistant: Where are you looking for attractions?
+user: I'm interested in the ones in London.
+tool(FindAttractions): ok n_results=10
+assistant: You should check out 30 St Mary Axe (The Gherkin), which is a Historical Landmark, if you are into history.
+user: Thank you for the tip. Can you find me some attractions in LAX?
+tool(FindAttractions): ok n_results=10
+assistant: Of the 10 attractions that you might find interesting, I would recommend Angels Flight Railway which is a Historical Landmark.
+user: Thank you very much. Can you find me some attractions that don't charge an entry fee?
+tool(FindAttractions): ok n_results=10
+assistant: If you would like to visit a Museum, I would suggest going to the Battleship USS Iowa Museum.
+user: Thank you. Can you find me a house for one person with a rating of 4.3 or higher for me to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house at 1224 Beverwil Drive which has a rating of 4.3.
+user: Thank you for finding the house for me. Can you find me a round trip flight to get there? I want to depart on the 3rd.
+assistant: Where will you be flying from and on what date would you like to return?
+user: I'll be departing from Toronto, Canada and plan to return on the 9th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Of the 2 convenient flights, there is an American Airlines connecting flight that departs at midnight with the return flight taking off at 12:05 pm and the ticket costs $438.
+user: That one sounds good to me. Thank you. That'll be all for now.
+assistant: Have a great day!

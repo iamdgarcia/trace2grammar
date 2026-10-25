@@ -1,0 +1,29 @@
+user: I'm headed to Vegas for a fun weekend. Can you help me find a bus to get there?
+assistant: What date would you like to go? Where will you be leaving from?
+user: I'm leaving from LAX on the 11th of March.
+tool(FindBus): ok n_results=4
+assistant: I found 4 buses that might work. There is one leaving at 8:50 am that costs $38.
+user: That sounds good.
+assistant: Would you like to buy bus tickets?
+user: Not right now, maybe later. Can you find me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you might like. You could visit the DISCOVERY Children's Museum, which is a museum.
+user: Okay that's great. Let's buy the bus ticket you just found.
+assistant: How many tickets would you like?
+user: I need 2 tickets.
+assistant: Okay, let's confirm: We're buying 2 tickets on the bus traveling from Los Angeles to Las Vegas, departing on March 11th at 8:50 am. You don't have any additional baggage.
+user: Yes, sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Okay, your ticket is confirmed.
+user: Can you also search for hotels in that area too?
+tool(SearchHotel): ok n_results=7
+assistant: I found 7 hotels that might work, such as the Best Western Plus Las Vegas West, which is a 3 star hotel.
+user: Are there any other hotels? I need one that allows smoking.
+tool(SearchHotel): ok n_results=4
+assistant: I found 4 hotels that might work, including a 1 star hotel called Budget Suites Of America.
+user: Okay, sounds good.
+assistant: Would you like to book this hotel?
+user: No, I don't want to reserve right now.
+assistant: Is there anything else I can help you with?
+user: No, thanks for all your help.
+assistant: Have a great day!

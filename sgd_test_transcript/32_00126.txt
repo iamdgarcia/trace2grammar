@@ -1,0 +1,38 @@
+user: Can you find me a place to live in Benicia
+assistant: How many bedrooms and baths? Also is it to rent or to buy?
+user: It should have 2 beds and 1 bath and it's to rent
+tool(FindHomeByArea): ok n_results=2
+assistant: I found 2 houses including one in Benicia Highlands at 900 Cambridge Drive for $2,750
+user: Does it have laundry machines in the house?
+assistant: It does have in-unit laundry
+user: That sounds good
+assistant: Shall I schedule you a visit
+user: Yes please do so
+assistant: When do you want to go
+user: I want to go on Thursday next week
+assistant: Confirming a March 7th visit to Benicia Highlands
+user: Actually let's go on the 13th of March
+assistant: So a March 13th Benicia Highlands visit
+user: Yes that's right. Give me their phone number and see if they have a garage
+tool(ScheduleVisit): ok n_results=1
+assistant: No garage there, but good news is the visit is scheduled. Also it's 707-745-6178
+user: Can you share the location with David
+assistant: Sure, so share 900 Cambridge Drive with David?
+user: Yes please do that
+tool(ShareLocation): ok n_results=1
+assistant: It's been shared for you
+user: OK, now get me a cab heading there
+assistant: Do you want luxury or pool? And how many seats?
+user: I want a luxury ride for three
+assistant: So 3 sears on a luxury cab to 900 Cambridge drive
+user: Actually fined me the cheapest ride possible for 1
+assistant: So 1 seat on a pool ride?
+user: Yes please, how long till the cab arrives?
+tool(GetRide): ok n_results=1
+assistant: It's book and will be there in 4 minutes or so
+user: How much is the fare?
+assistant: It's $16.32 total
+user: Thanks so much for your help
+assistant: What else can I do?
+user: Nothing else, thank you
+assistant: Take care then!

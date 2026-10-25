@@ -1,0 +1,38 @@
+user: Hey I need a round trip flight from Seattle
+assistant: When are you travelling and when do you want to go back? Also to where?
+user: I want to fly out to San Fran today and return on the 9th of this month
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flights including one via Alaska Airlines for $178, it takes off at 11:10 pm and has a returning flight at 5:55 am
+user: When does the returning flight arrive? Is this Premium Economy?i
+assistant: It is an economy seat ticket that arrives at 8:06 am
+user: Awesome, now find me a house to stay in
+tool(SearchHouse): ok n_results=9
+assistant: There's a 4.0 rated place at 1095 Market Street
+user: What about another place good for two people?
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 places that I found, but this one at 1100 Market Street Hotel entrance is at, 45 Mcallister Street has a 4.4 rating and looks good
+user: Do they have laundry? Also what's their number
+assistant: Yes they have laundry service and it's +1 415-735-7777
+user: Any other houses with a 4.2 rating or higher?
+tool(SearchHouse): ok n_results=10
+assistant: This one at 12 4th Street has a 4.2 rating
+user: That's great, I want to book a house to check in to today
+assistant: Are you checking out March 9th? Or another date?
+user: I want to leave the day after tomorrow
+assistant: Confirm you want to book this place in San Francisco for 2 with a March 1st Check-in and March 3rd Check-out?
+user: Actually I want to check-in on the 2nd instead
+assistant: Confirming a March 2nd check in at the San Francisco place
+user: Change my check-out to March 8th
+assistant: Checking out on March 8th in San Francisco yeah?
+user: Yeah! Give me their number please
+tool(BookHouse): ok n_results=1
+assistant: It's successful, and it's +1 415-788-5604
+user: Is there laundry there? How much is it?
+assistant: It'll be $2,340 and yes there's laundry service
+user: Great! Now find me a historical landmark I can visit with no entrance fee
+tool(FindAttractions): ok n_results=3
+assistant: Alcatraz is a neat historical landmark you'd enjoy
+user: OK cool, thanks
+assistant: What else can I do for you?
+user: Nothing else for now, thank you!
+assistant: You are welcome!

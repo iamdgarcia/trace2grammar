@@ -1,0 +1,31 @@
+user: I would like to check the weather on the 10th.
+assistant: What city would you like the weather forecast for?
+user: Check Hayward.
+tool(GetWeather): ok n_results=1
+assistant: The temperature for the day should be 80 degrees Fahrenheit and there is a 14 percent chance that it will rain.
+user: How humid will it be?
+assistant: The humidity is about 30 percent.
+user: How windy will it be?
+assistant: The average wind speed should be about 8 miles per hour.
+user: That sounds great. I want to schedule a visit to a property on that day.
+assistant: What property would you like?
+user: I would like to see Archstone Walnut Creek.
+assistant: Could you confirm that you want to visit Archstone Walnut Creek on March 10th?
+user: SOunds good. How many bedrooms? What is the phone number of the property?
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled your visit to the property. There are 3 bed rooms and the phone number is 925-943-7977.
+user: I would like to reserve a car.
+assistant: So you want the car from March 10th? Where will you pick it up from?
+user: No, I need it on March 7th. Heathrow Airport is a good place to pick it up.
+assistant: What time will you pick up the car? Would you like insurance?
+user: I want to pick up my car at 12:15 pm and I need insurance.
+assistant: When will you return the car?
+user: I will return it 11th of March.
+assistant: Would you like SUV, Sedan or anything else?
+user: A Sedan is nice.
+assistant: Could you confirm that you want to pick up the car from Heathrow International Airport on March 7th at 12:15 pm and drop it off on March 11th? It's a Sedan and comes with Insurance.
+user: Sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: The reservation did not go through. I have a nice car available at Heathrow International Airport for pickup on March 7th. It's a Volvo S90 and it costs $55.00 per day.
+user: No, that's all.
+assistant: Enjoy your day.

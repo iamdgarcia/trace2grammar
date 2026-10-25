@@ -1,0 +1,12 @@
+user: I need a hotel in London.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 5 star hotel at 45 Park Lane in London.
+user: That sounds good.
+assistant: Would you like to make a reservation?
+user: Yes, I'd like to make a reservation for 2 rooms for four days beginning the day after tomorrow.
+assistant: Okay. Please confirm the following: You will be checking in on March 3rd at 45 Park Lane in London. You will have 2 rooms and will be staying for 4 days.
+user: That's it. Can you give me the address and let me know the cost per night?
+tool(ReserveHotel): ok n_results=1
+assistant: The address is 45 Park Lane and the cost is $585 per night. The rooms have been booked.
+user: Thanks. That's all I need.
+assistant: Enjoy your stay in London.

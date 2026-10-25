@@ -1,0 +1,19 @@
+user: I am searching for a 5 star hotel
+assistant: What city do you want me to look in?
+user: Find me hotels in SD.
+tool(SearchHotel): ok n_results=2
+assistant: There's a hotel called Hotel Fairmont Grand Del Mar. It's a 5 star.
+user: Sounds great. Do you know of any attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Check out the Park Balboa Park.
+user: Is it free entrance to the attraction? What is the phone number?
+assistant: No, it is not free. The phone number is 619-239-0512.
+user: Okay, sounds good. Reserve that hotel. I would like to check in on the 4th of this month for 3 days and I need 1 room.
+assistant: Could you confirm that you want to stay at Hotel Fairmont Grand Del Mar on March 4th and that you will stay for 3 days? The hotel is in San Diego and you want 1 room.
+user: No, check me in this Saturday.
+assistant: Please confirm that you want to check in on March 2nd for 3 days.
+user: That sounds good. What is the street address? Is smoking allowed?
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked the hotel. The address is 5300 Grand Del Mar Court. No, you cannot smoke in this property.
+user: Thanks. YOu've been a great help. That's it for now.
+assistant: Have a great day.

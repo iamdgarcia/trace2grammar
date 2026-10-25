@@ -1,0 +1,17 @@
+user: Is there a movie online that I can watch you can recommend for me?
+assistant: Any particular genre you enjoy for movies?
+user: I like watching Drama movies.
+tool(FindMovies): ok n_results=10
+assistant: I have found 10 movies you may like, may I interest you in A Faithful Man, After The Wedding, or Blinded by the Light?
+user: I think Blinded by the Light sounds great, thanks for finding it.
+assistant: Can I help you with anything else?
+user: Please play the movie, with or without subtitles.
+assistant: The movie Blinded by the Light will now play with English subtitles.
+user: Thanks, can you tell me who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: The movie that is now playing stars Meera Ganatra.
+user: Great, what's the weather in Bodega Bay like at the moment?
+tool(GetWeather): ok n_results=1
+assistant: Bodega Bay is expected to average 80 degrees Fahrenheit today, with a 28 percent chance of rain.
+user: Thanks, that is just what I needed. That will be all, bye!
+assistant: Your welcome, enjoy your day.

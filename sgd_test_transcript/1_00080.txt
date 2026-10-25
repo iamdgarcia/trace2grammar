@@ -1,0 +1,18 @@
+user: I need to find a 5 star hotel in New York.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which match. There's a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: Please give me their address.
+assistant: They are located at 60 Furman Street, Brooklyn.
+user: Do they allow smoking there?
+assistant: Yes, the allow smoking.
+user: That works for me. I'd like to make a reservation.
+assistant: How long will your stay be?
+user: I'll be there for 5 days.
+assistant: And when do you want to check in?
+user: I want to check in next Wednesday.
+assistant: I'll book you 1 room for 5 days at 1 Hotel Brooklyn Bridge in New York starting on March 6th. Is everything correct?
+user: Yeah, that's all correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I've made the reservation.
+user: Thanks so much for the help. I'll be going now.
+assistant: Goodbye and have a wonderful day.

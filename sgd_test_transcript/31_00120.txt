@@ -1,0 +1,30 @@
+user: I want to look for a therapist, can you help me find one, please?
+assistant: What city do you want to look in?
+user: I would prefer to visit one in Vacaville.
+assistant: What type of therapist do you want to look for?
+user: I am looking for a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 therapists in Vacaville, including a Psychologist, Caldwell Leslie.
+user: What is the phone number?
+assistant: The phone number is 707-624-4000.
+user: OK, sounds good, thanks.
+assistant: Should I book an appointment for you with the therapist?
+user: Yes, I want to book an appointment.
+assistant: What date would you like to make the appointment on?
+user: I would like to make it for the 7th of March.
+assistant: What time would you prefer for the appointment?
+user: The best time for me is 15:30. Can you make the date the 12th of March instead?
+assistant: You are booking an appointment with Caldwell Leslie for 3:30 pm on March 12th, is that correct?
+user: Yes, that's right. What is the address?
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, I was not able to book an appointment for that date and time. Is there another time that would work for you?
+user: Can you try to make an appointment for half past 10 in the morning instead?
+assistant: You are booking an appointment with Caldwell Leslie at 10:30 am on March 12th, is this correct?
+user: Yes, let's try that one.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully. An email confirmation should reach you soon.
+user: OK, thank you. Can you recommend a movie to watch? Something directed by Jagan Shakti would be great.
+tool(FindMovies): ok n_results=1
+assistant: Mission Mangal has an average rating of 67 out of 100.
+user: That sounds good. That's all for now, thanks.
+assistant: Glad to help, have a great day.

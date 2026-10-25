@@ -1,0 +1,25 @@
+user: I will be having a trip so I need to find a one way flight.
+assistant: Can you tell me the date when you want to have the flight for the travel?
+user: I will be traveling on the 6th.
+assistant: Can you tell me the city from where you will be flying from?
+user: I will be taking my departure flight from Portland, OR.
+assistant: Can you tell me your destination?
+user: I want to arrive in Seattle.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: How would you like having a direct flight with Alaska Airlines which leaves at 9:45 am, and the ticket of which costs $73.
+user: Can you tell me when the flight will be arriving at the destination, and if it is for four people?
+assistant: The departure flight will be arriving at 10:43 am, and it is for 1 traveler.
+user: That is okay. Though I am interested to know about trains which go there, and more specifically the ticket should be for 4th of March.
+tool(FindTrains): ok n_results=9
+assistant: Would you like having the train which leaves at 9:10 am, and the ticket of which costs $62?
+user: That is nice. I would like to buy economy tickets for this train, and I also want to have trip insurance.
+assistant: Can you tell me the number of tickets you want to buy?
+user: I am in need of just one seat, and for the tickets to be Flexible one.
+assistant: Can you please confirm that you want to buy a Flexible ticket for 1 person including the trip insurance for the train which leaves from Portland on March 4th at 9:10 am to go in Seattle?
+user: That suits me well.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your requested ticket has been reserved for you.
+user: Can you tell me the name of the arrival station?
+assistant: The station where the train will arrive at is King Street Station.
+user: You have helped me a lot, and I want to thank you. That would be all.
+assistant: Till the other time then.

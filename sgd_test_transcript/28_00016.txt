@@ -1,0 +1,17 @@
+user: I want you to show me a movie directed by quentin tarantino and eric stoltz starring in it
+tool(FindMovies): ok n_results=1
+assistant: there is 1 result with that criteria and it's pulp fiction, rating is excellent, it's 92 out of 100
+user: marvellous. find me a restaurant now
+assistant: where do you want me to look? what food do you want to eat?
+user: pizza and pasta would be nice. the place should be located in sf
+tool(FindRestaurants): ok n_results=10
+assistant: I've scanned the san francisco area and there's 54 mint ristorante italiano
+user: is it pricey? do you know the rating?
+assistant: rating is 4.4 and as for the price range, it is considered moderate
+user: make a reservation there for 2 people on the 1st at afternoon 12:45
+assistant: confirm the next action: I'll book a table for 2 at 54 mint ristorante italiano in san francisco. the table is reserved on march 1st at 12:45 pm
+user: go on
+tool(ReserveRestaurant): ok n_results=1
+assistant: your table has been booked
+user: you have been very helpful, bye now.
+assistant: enjoy your day!

@@ -1,0 +1,19 @@
+user: Get me some move of the genre Owen Teague online.
+assistant: What genre do you like?
+user: Fine with Supernatural
+tool(FindMovies): ok n_results=1
+assistant: Do you prefer IT Chapter Two?
+user: Yeah, right choice, IT Chapter Two will do.
+assistant: Please verify, you like to watch IT Chapter Two with English subtitles.
+user: Good, carry on.
+tool(PlayMovie): ok n_results=1
+assistant: It started playing.
+user: Thank you for your service.
+assistant: Any other help?
+user: Tell me about weather in Dublin on Monday next week.
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 87 degrees with 23 percent chance of shower.
+user: Humidity condition and wind?
+assistant: You can expect wind with 10 miles per hour and 26 percent humidity.
+user: Great, thank you.
+assistant: Enjoy the day.

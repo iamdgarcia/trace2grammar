@@ -1,0 +1,31 @@
+user: I'm thinking of watching a movie to pass the time. Are there any cool films that you can recommend?
+assistant: In what area would you like to watch a film?
+user: I'm hoping to find one to watch in Union City
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies currently playing in that location. There's Angel Has Fallen, Hustlers, and IT Chapter Two.
+user: Hustlers sounds great.
+assistant: Do you want to purchase tickets to a showing of this movie?
+user: Not at this time.
+assistant: Was there anything additional you needed?
+user: Sure, I want to get some music to listen to. Can you look for some good tunes?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs that may fit with what you're looking for. There's Dark Necessities by Red Hot Chili Peppers. It's from their The Getaway album.
+user: What are some other choices? Anything by Justin Bieber?
+tool(LookupMusic): ok n_results=4
+assistant: Sure. There's 4 songs. All That Matters is a good one from Justin Bieber. It is from their Journals album.There
+user: More choices? Anything in Pop music?
+tool(LookupMusic): ok n_results=4
+assistant: The Justin Bieber song Boyfriend from the album Believe is another good one
+user: Perfect. That's it.
+assistant: do you want to listen to this track?
+user: Yes please. I'd like to hear it
+assistant: So you would like to listen to Boyfriend in your Living Room, correct?
+user: Perfect. That works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Happy listening to your song.
+user: Was this song released three years back?
+assistant: The song was released in 2012
+user: great, thanks so much
+assistant: Will there be anything additional?
+user: No, that was all I needed. Thanks!
+assistant: Enjoy your day.

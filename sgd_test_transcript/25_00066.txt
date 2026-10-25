@@ -1,0 +1,38 @@
+user: Can you show me the alarms that I currently have set?
+tool(GetAlarms): ok n_results=1
+assistant: There is currently only 1 alarm set. This alarm is named Event and set for 4 pm.
+user: Ah thanks for reminding me. I appreciate it.
+assistant: Can I be of help with anything else today?
+user: While i'm there, I'll be needing a place to grab a bite to eat. Find a restaurant for me.
+assistant: Find a restaurant in what location?
+user: Look for something average priced in the Pinole area please.
+assistant: Please tell me about the type of food you wish to eat.
+user: I'd like to eat at a restaurant serving Szcheuan meals.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 restaurants located in the Pinole area servinc Szcheuan cuisine. One of them is China House Restaurant.
+user: That sounds like a good place to eat.
+assistant: Id'be happy to reserve a table for your here.
+user: I appreciate it but no thank you.
+assistant: Do you require assistance with anything else?
+user: Set up a car reservation for me in the same location.
+assistant: How long will you be renting the car and where is the pick-up location?
+user: I'll be pick it up on March 6th and keep the car until March 11th. The pick-up location is Downtown.
+assistant: I have the pick-up location. Please provide the pick-up time for me as well. Lastly, indicate whether or not you want insurance.
+user: The pick-up time for the rental vehicle should be afternoon 1:30. I won't be needing insurance for the rental car.
+assistant: So I can find the correct vehicle for your needs, tell me if you'd like a Sedan, SUV, or another vehicle?
+user: I'd like to drive a Hatchback while I'm there.
+assistant: Confirm the rental information that follows: Picking up a Hatchback vehicle from Downtown on March 6th at 1:30 PM. This car has insurance. The return date for the vehicle is March 11th.
+user: That sounds right to me. What is the rental car's name?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation for a rental car is confirmed. The car is a Renault Clio.
+user: I want you to share this location for me. The address to be shared will be 1971 San Pablo Avenue.
+assistant: It'll be my pleasure to share the location for you. Who will you be sharing it with?
+user: I want to share that address with Kenneth please.
+assistant: In the process of sharing the location of 1971 San Pablo Avenue with Kenneth. Shall I complete this action?
+user: That sounds good to me.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has successfully been shared with Kenneth.
+user: Perfect. Thank you for being so helpful.
+assistant: What else can I have the pleasure of assisting you with?
+user: You've done more than enough to help me. That's all for now. Thank you.
+assistant: You are very welcome. Have a lovely day today!

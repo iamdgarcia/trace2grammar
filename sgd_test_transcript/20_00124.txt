@@ -1,0 +1,17 @@
+user: I would like to rent a house for 2 people and the rating should be 4.4 or higher.
+assistant: In which city are you staying?
+user: I am traveling to San Fran.
+tool(SearchHouse): ok n_results=3
+assistant: There is a house located at 138 King Street that has a 4.4 rating.
+user: I would like to reserve this house.
+assistant: Which day would you like to check in and check out?
+user: I would like to check in on the 13th and leave on the 14th.
+assistant: Reserving house in San Francisco for 2 people on March 13th to March 14th.
+user: Yes, that sounds good.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was made.
+user: Can you find a child-friendly attraction in that area?
+tool(FindAttractions): ok n_results=10
+assistant: There is Alcatraz that is a Historical Landmark.
+user: That is all I needed.
+assistant: Have a good day.

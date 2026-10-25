@@ -1,0 +1,20 @@
+user: I wish to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: I searched and found 10 movies for you. What is your opinion about The Art of Racing in the Rain with the rating of 43 for 100.
+user: Do you have any other movie. I wish to see the movie acted by Merrill Connally.
+tool(FindMovies): ok n_results=1
+assistant: I searched and found 1 movie for you. What is your opinion about Close Encounters of the Third Kind with the rating of 95 for 100.
+user: It is good. Please help me in finding some songs.
+tool(LookupMusic): ok n_results=10
+assistant: I searched and found 10 songs for you. What is your opinion about Great War by Sabaton from The Great War album?
+user: Yes. That is what I want. Please play the song on any device.
+assistant: Kindly ensure that, playing Great War song in Living room.
+user: Nope. Please play it on speaker in kitchen.
+assistant: Kindly ensure that, playing Great War song in kitchen.
+user: Yes. It is right.
+tool(PlayMedia): ok n_results=1
+assistant: Be happy with the music.
+user: Thank you so much.
+assistant: Do you need any other help?
+user: Nope. Thank you so much.
+assistant: Have a nice day.

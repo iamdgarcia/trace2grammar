@@ -1,0 +1,22 @@
+user: I am looking for a bus.
+assistant: What is the destination and the date and city of your departure?
+user: I will be leaving from Seattle to Portland on 12th of March.
+tool(FindBus): ok n_results=8
+assistant: What do you think of a bus departing at 7:30 am with the ticket price of $33?
+user: That sounds good to me. Can you find me some attractions without an entry fee?
+tool(FindAttractions): ok n_results=8
+assistant: How about a park called Crystal Springs Rhododendron Garden?
+user: Okay, cool. I would like you to purchase the bus tickets for the bus you just found.
+assistant: Can you tell me the number of required bus tickets?
+user: I want to book only one ticket.
+assistant: Please confirm: You want me to book 1 bus ticket from Seattle to Portland on March 12th at 7:30 am.
+user: Yes, That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked your ticket.
+user: Can you search for hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found a nice 3 star hotel called Aloft Portland Airport At Cascade Station.
+user: That sounds nice to me.
+assistant: DO you want me to reserve the hotel?
+user: No, not now. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day. bye!

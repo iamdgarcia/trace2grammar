@@ -1,0 +1,28 @@
+user: I would like to make a payment of $10 to Margaret.
+assistant: Which account do you want the payment from?
+user: I would like to make a payment from my MasterCard.
+assistant: Making a payment to Margaret from your credit card in the amount of $10.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made.
+user: I would like to find a restaurant.
+assistant: In which area are you looking and what type of food?
+user: I would like barbecue in Napa.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants. There is Brix Restaurant And Gardens located in Napa.
+user: Do they have a vegetarian menu?
+assistant: No, they do not have vegetarian options.
+user: I would like to book a table there.
+assistant: What time would you like your reservation?
+user: I would like to go at 11:45.
+assistant: Booking a table for 2 at Brix restaurant and gardens in napa for 11:45 am on March 1st.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was unable to book a table for 2 at brix restaurant and gardens at that time would you like to go at 12 pm on March 1st?
+user: Yes, that time works for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: What is their phone number and what is the average price?
+assistant: Their number is 866-531-2580 and they are pricey.
+user: Thank you that is all I needed.
+assistant: Have a good day.

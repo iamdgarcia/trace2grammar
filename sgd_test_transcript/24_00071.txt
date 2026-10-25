@@ -1,0 +1,20 @@
+user: Can you find me a movie to watch at Rialto Cinemas Cerrito
+assistant: Where's your location though
+user: Can you find me movies in El Cerrito
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie, how about IT Chapter Two
+user: IT2 is great, now can you book me a table at Little Hong Kong for 2 people at 13:15
+assistant: Confirming you want a table for 2 at the Little Hong Kong in El Cerrito on March 1st at 1:15 pm yes?
+user: Yes that's perfect!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry I couldn't get that table, do you want me to try a table for 2 on March 1st at 1:30 pm still at Little Hong Kong again
+user: Yes try that
+tool(ReserveRestaurant): ok n_results=1
+assistant: That one worked!
+user: Thanks for booking that, now what time can I watch that movie you found?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's a 7:30 pm show at the Rialto Cinemas Cerrito if you want
+user: What kind of movie is that? And how much per head?
+assistant: It's a supernatural film and it'll be $5 per person
+user: That's great, that's it for now thanks
+assistant: You're welcome, see ya

@@ -1,0 +1,21 @@
+user: I have a trip for 2 people and leaving on the 6th of this month. Would you search for a direct bus for me?
+assistant: Where the destination of departure?
+user: I will be heading out of NYC.
+assistant: can you tell me where you will be going?
+user: I will be going to Washington.
+tool(FindBus): ok n_results=8
+assistant: What do you think about the bus that is leaving at 6 am and is priced at $35?
+user: Look for something else that is leaving out of LA and going to Anaheim, CA.
+tool(FindBus): ok n_results=10
+assistant: There is a bus that is leaving at 6:40 am and has a price of $13. How about that?
+user: Okay, that works for me.
+assistant: Would you need further assistance?
+user: I would like to purchase some bus tickets.
+assistant: You would like to purchase 2 tickets for a bus that is departing Los Angeles at going to Anaheim on March 6th at 6:40 am. There is not any additional luggage to take with you. Are those details correct?
+user: Yes, that sounds right to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have verified your ticket purchase.
+user: Can you tell me the departure and arrival stations?
+assistant: You will leave from North Hollywood Station and arrive at the Anaheim Bus Station.
+user: Your help has been so great and that does it for me.
+assistant: Please have a wonderful day.

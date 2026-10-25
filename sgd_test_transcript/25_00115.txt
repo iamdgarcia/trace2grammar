@@ -1,0 +1,30 @@
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=4
+assistant: You have one for 5 pm titled meeting.
+user: Great. I would like to find a restaurant.
+assistant: What type of food would you like to eat and in which area?
+user: I would like some old fashioned pizza in san francisco.
+tool(FindRestaurants): ok n_results=10
+assistant: There is a lovely restaurant in San Francisco called 54 mint Ristorante Italiano.
+user: Great. I want to reserve a lovely hatchback when I get there on march 2nd and I would be returning it on the 6th.
+assistant: Where would you like to pick up the car and for what time?
+user: I want to pick it up at 12:30 pm at McCarran International Airport.
+assistant: You would like to add insurance?
+user: Yes, I do.
+assistant: You would like to pick up a hatchback at McCarran International Airport on March 2nd at 12:30 pm and return it on March 6th, with insurance?
+user: That would be fine. What model of car is it?
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved a renault clio for you.
+user: Great. I want to share the location.
+assistant: Which location? 16 Mint Plaza, McCarran International Airport or somewhere else? Who would you like to share it with?
+user: I want to share the location 16 mint plaza with sharon.
+assistant: You want to share the location 16 Mint plaza with sharon?
+user: I want to share it with Edward.
+assistant: You want to share the location 16 Mint plaza with Edward?
+user: Yes, I do.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: Thanks. You have been helpful.
+assistant: Is there something else you need?
+user: No, thanks. That would be all.
+assistant: Enjoy your day.

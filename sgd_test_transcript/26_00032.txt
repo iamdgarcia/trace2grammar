@@ -1,0 +1,32 @@
+user: I need a round trip flight for the 10th. I'm leaving from San Francisco.
+assistant: What day are you returning?
+user: I'm returning on the 14th.
+assistant: Where are you going?
+user: I'm going to Phoenix, AZ.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Is American Airlines okay? One flight takes off at 12:50 pm with one layover. The returning flight leaves at 4:35 am. A ticket would cost $282.
+user: Good. I want a place to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: One is located at 10 East Thomas Road with a 4.6 rating.
+user: That's a good one.
+assistant: Would you like to reserve it?
+user: Yes I would.
+assistant: Are you checking out March 14th or another day? Are you checking in on March 10th?
+user: Yes. I'm checking in on the 12th of March.
+assistant: How many people is it for?
+user: It's for 2 people.
+assistant: A home for 2 in Phoenix. Checking in on March 12th and checking out March 14th. Is this right?
+user: No, it's just for one person.
+assistant: A home for 1. Checking in on March 12th. Is this right?
+user: Yes, that's it.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: I want to see some attractions there. I want something free.
+tool(FindAttractions): ok n_results=7
+assistant: Arizona Science Center is a museum there.
+user: What else is there?
+assistant: Dream City Church * Phoenix is a place of worship there.
+user: That's a good one.
+assistant: What else do you need?
+user: That's all. Thanks.
+assistant: Have a nice day.

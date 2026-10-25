@@ -1,0 +1,40 @@
+user: I need to find a rental car that I can pick up Wednesday next week at 5 pm.
+assistant: Where would you like the car to be for pick up. And what date will you return the car?
+user: It should be in Philly and I will return it on the 8th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a nice SUV Alfa Romeo Stelvio at Intercity Terminal.
+user: What's the cost per day?
+assistant: It is $36.00 per day.
+user: What other cars are available?
+assistant: There's a nice Sedan Dodge Charger at 30th Street Station.
+user: What's the cost per day?
+assistant: It is $25.00 per day.
+user: Let's keep looking. How about a car in London, UK.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars that you might like. There's a nice Sedan Audi A8 at Heathrow International Airport.
+user: I'd like that.
+assistant: Would you like to reserve the car?
+user: Yes, but we can do that later. I do want tickets for an event over there.
+assistant: How many tickets do you want?
+user: Four tickets would be good.
+assistant: And where will this event take place and on what date?
+user: It should be in Vancouver, BC on March 9th.
+assistant: And what's the event name?
+user: It's called Kishi Bashi.
+assistant: I'll book 4 tickets for Kishi Bashi on March 9th in Vancouver, is this right?
+user: Yes, that's right. And what's the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been booked. Have a fun time! It's at Imperial Vancouver.
+user: Thanks for the help. I want to reserve that car too.
+assistant: Do you need insurance?
+user: No, I don't need insurance.
+assistant: You'll reserve the Sedan at Heathrow International Airport for pick up on March 6th at 5 pm and drop off at March 8th. Is that right?
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: The car is now reserved for you.
+user: What's the cost per day?
+assistant: It is $34.00 per day.
+user: Thanks for helping me.
+assistant: What else can I help you with?
+user: Nothing else, thanks again.
+assistant: Have a wonderful day.

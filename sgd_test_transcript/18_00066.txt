@@ -1,0 +1,23 @@
+user: Please help me find a hotel
+assistant: Which city do you like?
+user: I want in Toronto, Canada.
+tool(SearchHotel): ok n_results=10
+assistant: I found a hotel called Best Western Plus Toronto North York Hotel & Suites. And is is a 3 star hotel.
+user: Do they allow smoking ?
+assistant: Unfortunately not.
+user: Sounds better.
+assistant: Would you like to book there?
+user: Let me think of it.
+assistant: Is there anything else ?
+user: Is the weather there on the 11th good ?
+tool(GetWeather): ok n_results=1
+assistant: 59 degrees Fahrenheit is the average temperature on that day, therefore there's a 28 percent chance of rain.
+user: Okay book me in that hotel.
+assistant: Is the date final ? Is it on March 11th ? How many days do you plan to stay ?
+user: How about on the 3rd. I'll be staying for six days.
+assistant: Okay please confirm your reservations. 1 room for 6 days starting March 3rd on Best Western Plus Toronto North York Hotel & Suites located in Toronto.
+user: Okay that's it
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is successful
+user: Thanks that's all
+assistant: Okay bye. Have a nice day.

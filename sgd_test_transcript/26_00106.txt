@@ -1,0 +1,33 @@
+user: I am looking for a train from Anaheim, CA on the 10th.
+assistant: What is your destination?
+user: My destination is LA.
+tool(FindTrains): ok n_results=10
+assistant: There is train which leaves at 6:30 am and the cost of ticket is $35.
+user: Okay. Sounds nice. I am looking for something interesting to do on that day.
+assistant: What category of event do you prefer like Music or Theater or anything else?
+user: I mostly prefer Broadway.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like. How about a popular event called A Year In Dragonfly taking place at Studio C Artists on March 1st at 7:30 pm.
+user: Okay, That sounds good. But Find me some music events taking place on 13th of this month.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like. How about a popular event called Aldous Harding taking place at Masonic Lodge at Hollywood Forever on March 13th at 4:30 pm.
+user: Okay, That sounds good. But show me some other event.
+assistant: How about a popular event called Altin Gun taking place at The Teragram Ballroom on March 13th at 5:30 pm.
+user: That sounds great to me. Now, Find me some attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you may like. How about a Historical Landmark called Angels Flight Railway?
+user: Can you confirm whether this place is child friendly?
+assistant: Yes, This place is child friendly.
+user: Okay. Now, Find me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 house you may like. How about a house with 4.1 rating located at 1020 South Figueroa Street?
+user: Find me their contact number.
+assistant: You can call them on +1 213-748-1291.
+user: Can you check whether this place has laundry?
+assistant: Yes, This place comes with laundry service.
+user: The house sounds nice to me.
+assistant: Do you want me to reserve the house for you?
+user: No, Maybe some other time.
+assistant: Can I help you with anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

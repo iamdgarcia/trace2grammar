@@ -1,0 +1,16 @@
+user: What can you recommend for me to do that's interesting?
+assistant: Do you have a particular city in mind?
+user: Search for events around London?
+assistant: Are you interested in Music or Theater, or any other particular category?
+user: I'm particularly found of Play events.
+tool(FindEvents): ok n_results=10
+assistant: There is an event on March 14th at 7 pm, would you be interested in seeing A Right Royale Tea at the Amba Hotel Charing Cross?
+user: Sounds great, please reserve tickets to the event.
+assistant: Will you be reserving more than one ticket to the event?
+user: Yes, I want to reserve three tickets.
+assistant: You wish to reserve 3 tickets to A Right Royale Tea, playing on March 14th in London correct?
+user: That is all correct, where will the play take place?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made, the play will occur at the Strand, hope you enjoy the venue!
+user: Great, thanks for all your help, that was all I needed.
+assistant: Your welcome, have a great day.

@@ -1,0 +1,48 @@
+user: can you fine me a concert on the 7th of march in nyc?
+tool(FindEvents): ok n_results=10
+assistant: there's 10 i found for you. abbi jacobson is playing at the kaufmann concert hall on march 7th at 4:30 pm.
+user: that works for me.
+assistant: do you want tickets?
+user: not at the moment. can you get me a bus there?
+assistant: where are you departing from?
+user: i'm gonna depart from washington.
+assistant: do you want to leave on march 7th?
+user: i want to leave on the 3rd.
+tool(FindBus): ok n_results=7
+assistant: i found 7 buses. one leaves at 6:20 am and costs $38.
+user: where does it leave from?
+assistant: it leaves from silver spring bus stop.
+user: how many stops will it have?
+assistant: it's a direct bus.
+user: that's perfect.
+assistant: do you want to book tickets?
+user: no, not right now.
+assistant: is there something else i can do?
+user: can you find me one ticket for a roundtrip flight?
+assistant: do you want to leave on march 7th?
+user: no i want to leave on the 6th of this month.
+assistant: when do you want to come back?
+user: i want to return on the 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: there's an american airlines flight that leaves at 9:25 pm without stops, and the flight back leaves at 5 pm, and it costs $137.
+user: when does the flight back arrive?
+assistant: it arrives at 6:10 pm.
+user: is it economy or a business seat?
+assistant: it's an economy seat.
+user: are there other options? i want to leave on march 4th in a premium economy seat.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: i found 2 for you. there's a southwest airlines flight that leaves at 4 pm and the flight back leaves at 1:10 pm and it costs $218.
+user: that works for me. can you find me a hotel there too?
+tool(SearchHotel): ok n_results=10
+assistant: there's a 5 star hotel called 1 hotel brooklyn bridge.
+user: that sounds perfect.
+assistant: do you want to book it?
+user: no thanks, i'm good.
+assistant: is there something else i can do?
+user: can you book the tickets for the concert?
+assistant: you want 1 ticket to abbi jacobson on march 7th in new york?
+user: yeah that works. where's it at?
+tool(BuyEventTickets): ok n_results=1
+assistant: it's been booked. it's located on 1395 lexington avenue.
+user: thanks so much, that it.
+assistant: have a nice day.

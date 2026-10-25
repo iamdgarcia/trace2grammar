@@ -1,0 +1,24 @@
+user: Can you help me find a train ride for the 9th of March to San Diego?
+assistant: Where are you leaving from?
+user: I will be leaving form Sacramento.
+tool(FindTrains): ok n_results=10
+assistant: I have a trainf for $158 that is leaving at 6:30 am.
+user: Yes that works for me. I will need one conditionally refundable ticket.
+assistant: Did you want to include travel insurance.
+user: Yes, please include trip insurance.
+assistant: Okay, I will be booking you 1 value ticket for your trip from Sacramento to San Diego. Your train will leave on March 9th at 6:30 am.
+user: Yes that sounds right. What station will I be leaving from and arriving to?
+tool(GetTrainTickets): ok n_results=1
+assistant: You will depart from Sacramento Valley Station and arrive at Santa Fe Depot. Your reservation has been a success
+user: Thank you for that. Can you help me find something to do round that area dealing with songs on the 14th of March?
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events that may interest you. How about the Bastille at Cal Coast Credit Union Amphitheater. This event begins at 5 pm on March 14th.
+user: What is the address?
+assistant: The address is 5500 Campanile Drive.
+user: Great, can you also sent that location to my friend Andrea?
+assistant: You want me to send the address for Cal Coast Credit Union Amphitheater to Andrea?
+user: Yes please and thank you.
+tool(ShareLocation): ok n_results=1
+assistant: I have sent the address to Andrea for you.
+user: Thank for all your help. That will be all. Good Bye.
+assistant: You are welcome, goodbye.

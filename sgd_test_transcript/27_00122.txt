@@ -1,0 +1,37 @@
+user: I ma looking for a bus.
+assistant: What is your date and city of departure?
+user: I will be leaving from Long Beach on this Sunday.
+assistant: What is your destination?
+user: I need 1 ticket to Fresno, Ca.
+tool(FindBus): ok n_results=5
+assistant: There are 5 buses suitable for you. What do you think of a bus leaving at 8:10 am with the ticket cost of $35?
+user: Can you find whether it's a one-stop bus and the name of the station it departs from?
+assistant: It leaves from Downtown Station and it's a direct bus.
+user: Can you show me other buses departing from SF?
+tool(FindBus): ok n_results=9
+assistant: There are 9 buses you may like. What do you think of a bus leaving at 7 am with the ticket cost of $33?
+user: That sounds good. Now, Find me some nice child-friendly attractions there.
+tool(FindAttractions): ok n_results=3
+assistant: I found 3 attractions you may like. How about a nice tourist attraction called Christmas Tree Lane?
+user: Sounds great! Can you show me any other attractions?
+assistant: How about a nice nature preserve called Fresno Chaffee Zoo?
+user: Cool, I would like to purchase the bus tickets you just found.
+assistant: Please confirm: You want me to buy 1 ticket for the bus going from San Francisco to Fresno on March 3rd at 7 am. And you don't have any extra luggage.
+user: Yes, That is correct. Find me the name of the station it arrives at.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked the tickets. The name of the station is 2660 Tulare St.
+user: Okay. Find me the name of the station it departs from.
+assistant: The name of the station is Transbay Terminal.
+user: Thank you so much!
+assistant: Is there anything else I can assist you with?
+user: I want to book a room in a hotel in that area.
+tool(SearchHotel): ok n_results=4
+assistant: How about a nice 3 star hotel called Doubletree By Hilton Hotel Fresno Convention Center?
+user: Find me their street address.
+assistant: They are located at 2233 Ventura Street.
+user: Can you confirm whether smoking is allowed there?
+assistant: No, Smoking is prohibited on the property.
+user: Okay. That sounds nice to me.
+assistant: Can I help you with anything else?
+user: No. That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

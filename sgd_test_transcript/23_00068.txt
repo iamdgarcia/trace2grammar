@@ -1,0 +1,36 @@
+user: I want to transfer the amount.
+assistant: Can i know the amount and from which account i should transfer the money like app balance or debit card?
+user: Transfer the amount of 117 bucks from my checking account.
+assistant: To whose account i should transfer the money?
+user: I want to transfer the account pf Wilson.
+assistant: Please give confirmation details:You want to transfer the amount of $117 from debit card to the account of wilson and transaction should visible to the public.
+user: Okay..this is great.
+tool(MakePayment): ok n_results=1
+assistant: I have transferred the amount successfully and receiver will see the money soon.
+user: I want you to find me a train can you?
+assistant: When is your travel date and city of travel and departing city?
+user: I want to go to San Fran from LAX on 8th of this month.
+tool(FindTrains): ok n_results=8
+assistant: What is your opinion about the train departing at 7:50 am with cost $88.
+user: Can i know the arrival and leaving station?
+assistant: It leaves from union station and arriving to Salesforce Transit Center.
+user: Do you know any other trains?
+assistant: What is opinion about the train departing at 9:20 am with cost $91.
+user: This is fine..can i know the weather there on the 12th in san Fran.
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is running at 76 degrees Fahrenheit and the chances of rain is 23 percent
+user: This is cool.
+assistant: Any other help you want?
+user: I want you to buy the ticket you just found?
+assistant: Number of tickets you want?
+user: I want only 1 seat.
+assistant: Are you like to add travel insurance?
+user: Yes..i like to have travel insurance.
+assistant: Please give confirmation details: You like to buy a ticket leaving from Los Angeles and destination is San Francisco on march 8th at 9:20 am for 1 people with value ticket.
+user: This is perfect for me. Can i know the arrival station and leaving station?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket reservation is done and the train arrives at Salesforce Transit Center and leaving Union Station
+user: Thank you very much
+assistant: Any other help?
+user: No, thanks a lot
+assistant: See you some other time

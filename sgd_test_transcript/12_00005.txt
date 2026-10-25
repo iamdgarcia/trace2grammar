@@ -1,0 +1,38 @@
+user: I wish to get bus tickets.
+assistant: Which is your leaving place?
+user: I will leave from Vegas.
+assistant: Which time will you leave? Where do you want to go? Number of tickets you need is?
+user: I wish to go to Fresno at 10:30. I need four tickets.
+assistant: When will you leave?
+user: I will leave on 6th of March.
+assistant: Kindly ensure that, on March 6th, you need 4 tickets in the bus leaving from Las Vegas to Fresno at 10:30 am. You don't have any luggage.
+user: Yes. It is correct. What is the name of the departing station?
+tool(BuyBusTicket): ok n_results=1
+assistant: It will depart from Union Plaza. Sorry the purchase can not be due to some errors. What about a bust starting at 10:10 am? The price is $46.
+user: Yes. It is good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are booked.
+user: Thank you so much for your help. Could you search for a rental car to go there?
+assistant: Do you need it from March 6th? When do you want to pick up the car?
+user: I need it from next Friday. The pick time is 12:30 in the afternoon.
+assistant: Up to which date do you need that car?
+user: I want to have the car till 12th of this month.
+assistant: Is it from Fresno?
+user: Yes. It is good.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A Sedan Dodge Charger car is available at Fresno Yosemite International Airport.
+user: It is nice. Please reserve the rental car.
+assistant: Shall I add insurance?
+user: Sorry, I don't need the insurance.
+assistant: Kindly ensure that, on March 8th, you are picking up the Sedan car from Fresno Yosemite International Airport at 12:30 pm. The drop off date is March 12th. It will come without insurance.
+user: Nope. I need it with insurance.
+assistant: Kindly ensure that, March 8th is car pick up date and it is with insurance.
+user: Yes. It is nice.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked.
+user: What is the price per day?
+assistant: The price is $48.00 per day.
+user: Thank you for your help.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

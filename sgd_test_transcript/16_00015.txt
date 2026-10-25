@@ -1,0 +1,33 @@
+user: I need to find a salon in Fremont.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 salons including 3Sixty Salon and Boutique which is nic in Fremont.
+user: Will you find me a different salon?
+assistant: Alex'S Classic Barber shop is nice and in Fremont.
+user: Yes, that is good. I'd like to search for a therapist in that area.
+assistant: Should I locate someone in Fremont?
+user: Yes, that would work.
+assistant: Would you need a psychiatrist or Psychologist or perhaps another kind?
+user: I would need a family counselor.
+tool(FindProvider): ok n_results=3
+assistant: You could try the Center for well Being a family counselor in Fremont.
+user: That sounds great.
+assistant: Would you like to book an appointment with the therapist?
+user: I would like to book an appointment at 1:45 in the afternoon. Could you make an appointment for Friday next week?
+assistant: Please confirm details to book an appointment with Center For Well Being at 1:45 pm on March 8th.
+user: Yes, that will work for me. What is their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: The address is 1301 Mowry Avenue and you can call them at 510-797-3941. Sorry, something didn't work and I couldn't book an appointment so you may want to try the Center for Well Being which has an appointment on March 8th at 1:30 pm.
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was booked successfully and you should get an email confirmation soon.
+user: I would like to book an appointment at the salon you just found that day for afternoon 3:45.
+assistant: Please confirm details for the name of the hair stylist as Alex's Classic Barber Shop and the appointment is at 3:45 pm March 8th.
+user: No, I'd like the appointment at 5 in the evening.
+assistant: Please confirm details for an appointment at 5 pm March 8th.
+user: Yes, that is good. What is the average rating?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is confirmed and the average rating is 4.7.
+user: Thanks so much.
+assistant: Can I assist you with anything else?
+user: No thanks so much.
+assistant: Have a nice day.

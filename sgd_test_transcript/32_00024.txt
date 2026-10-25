@@ -1,0 +1,18 @@
+user: I would like to find songs from seven years ago. I heard the album Welcome To The Fishbowl was great.
+tool(LookupMusic): ok n_results=1
+assistant: How about Come Over by Kenny Chesney from the Welcome To the Fishbowl album?
+user: Yes, that is the one. Are there good movies online?
+assistant: What movie genre do you like?
+user: I like Thriller movies.
+tool(FindMovies): ok n_results=4
+assistant: Do you prefer Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: Rojo sounds great. Can you play the song you found?
+assistant: Please confirm: play the song Come Over in the Living room.
+user: That is correct. What kind of music is that?
+tool(PlayMedia): ok n_results=1
+assistant: Is is a Country song.
+user: Can you tell me my alarms
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm for 7:30 am named Running.
+user: Okay, that is all i needed
+assistant: Thank you.

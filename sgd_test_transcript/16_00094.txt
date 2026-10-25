@@ -1,0 +1,36 @@
+user: I would like purchase bus tickets.
+assistant: How many tickets are you needed and what is your destination?
+user: I would like to go to Sacramento, CA. This is for two people.
+assistant: What is the date that you want to leave?
+user: I will be leaving on March 8th.
+assistant: What time would you like to leave?
+user: I would like to leave at quarter to 4 in the afternoon.
+assistant: What is your point of departure?
+user: I will be leaving from LA.
+assistant: Can you confirm these details for me: You would like 2 tickets on the bus heading out of Los Angeles and going to Sacramento. The bus will depart on March 8th at 3:45 pm. You don't have any extra luggage.
+user: Yes that is fine with me. What is the station this bus will be arriving at and what is the price?
+tool(BuyBusTicket): ok n_results=1
+assistant: It will arrive at 65th Light Rail Station. I apologize, but the purchase was unable to be made because of unexpected errors. What do you think of the bus that leaves at 3:20 pm? The price is $52.
+user: Yes that is great for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed.
+user: Thanks very much for your help. Would you like to find hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: I have found a 3 star hotel called Courtyard By Marriott Sacramento Cal Expo.
+user: What is the cost per night and can get the address of the hotel?
+assistant: The address there is 1782 Tribute Road and the price for each night is $102.
+user: That sounds fine. I would like to make a reservation at the hotel.
+assistant: When are you wanting to check in?
+user: I would like to check in next Monday.
+assistant: What will be the length of your stay?
+user: I will stay for two days.
+assistant: Confirm these details for me: You would like the hotel Courtyard By Marriott Sacramento Cal Expo in Sacramento. You want 1 room and will be checking in March 4th and staying for 2 days.
+user: No, I actually would like two rooms and will check on on the 10th.
+assistant: Okay, confirm these details for me: You would like to check in on March 10th and you want 2 rooms.
+user: Yes, this is very good. Does this hotel allow smoking? Can I get their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been successfully booked for you. The phone number there is +1 916-929-7900 and they do not permit smoking.
+user: Thanks you very much. You have been very helpful to me.
+assistant: Is there else I can do for you?
+user: No. Thanks very much. This has been a lot of help to me.
+assistant: Bye, have a wonderful day!

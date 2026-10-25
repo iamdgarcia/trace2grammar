@@ -1,0 +1,43 @@
+user: I would like to find a salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons. There is 1512 Barber shop located in San Francisco.
+user: Yes, that salon sounds good.
+assistant: Can I help with something else?
+user: I would like to book an appointment.
+assistant: When would you like your appointment and at what time?
+user: I would like the appointment on the 4th of March at 15:15.
+assistant: Booking appointment at 1512 Barber shop at 3:15 pm on March 4th.
+user: What is their rating?
+tool(BookAppointment): ok n_results=1
+assistant: I was unable to book the appointment. Can I help with something else?
+user: I would like to book it for 6 in the evening I would like to visit the salon the day after tomorrow.
+assistant: Booking appointment at 1512 Barber shop on March 3rd at 6 pm.
+user: Yes that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked.
+user: I would like to find a economical restaurant that serves Egyptian food.
+tool(FindRestaurants): ok n_results=1
+assistant: Al-masri Egyptian restaurant is located in San Francisco.
+user: What is their address and do they have outdoor seating?
+assistant: They are located on 4031 Balboa Street and they don't have outdoor seating.
+user: Can you recommend another restaurant?
+tool(FindRestaurants): ok n_results=0
+assistant: I was unable to find another one. Can I help with something else?
+user: I would like to find a restaurant serving Izakaya.
+tool(FindRestaurants): ok n_results=10
+assistant: 2g Japanese Brasserie is located in San Francisco.
+user: Yes, that sounds good.
+assistant: Would you like to reserve a table?
+user: Yes, I would like to place reservation.
+assistant: What time is it for?
+user: I would like to go at five pm.
+assistant: Booking table for 2 at 2g Japanese Brasserie in San Francisco on March 3rd at 5 pm.
+user: Book a table for one at 12 in the afternoon instead.
+assistant: Booking table for 1 at 12 pm.
+user: Yes, that is correct. What is their address and do they have outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are located at 601 Van Ness Avenue and they do not have outdoor seating.
+user: Thank you for your information.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

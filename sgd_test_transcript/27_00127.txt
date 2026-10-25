@@ -1,0 +1,21 @@
+user: I would like to find a movie in the Family genre to watch. I am interested in something directed by Herbert Ross and with Betsy Widhalm acting in it.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie for you. What do you think of Steel Magnolias? The average rating for this movie is 70 out of 100.
+user: That sounds fine. I would like to find a restaurant there.
+assistant: What is the location you want me to search in?
+user: Find a restaurant for me in SFO.
+assistant: What is the type of food that you are interested in?
+user: Find me something that serves Latin American.
+tool(FindRestaurants): ok n_results=8
+assistant: I have located 8 restaurants that you might like. A nice restaurant located in San Francisco is called Alegrias.
+user: Yes, that sounds fine.
+assistant: Do you want to reserve a table at this restaurant?
+user: Yes, I would like to reserve a table there.
+assistant: What time would you like to set the reservation for?
+user: Try to make it at 13:15.
+assistant: Confirm these details for me: Book a table at Alegrias in San Francisco for 2 people on March 1st at 1:15 pm.
+user: Yes, that is good for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been successfully made.
+user: Thanks very much. That was all I needed.
+assistant: Have a wonderful day.

@@ -1,0 +1,17 @@
+user: I would like to find a therapist who is a Psychologist in Santa Clara please!
+tool(FindProvider): ok n_results=5
+assistant: I found 5 therapists. One is Cassie L. O'Brien who is a Psychologist in Santa Clara.
+user: Can you give me their address and phone number?
+assistant: Their address is 2885 Kaiser Drive and their phone number is 408-851-9200.
+user: Sounds great!
+assistant: Would you like for me to book an appoinment with the therapist.
+user: Yes, I would like three pm on the 13th of March.
+assistant: Please confirm you would like an appointment with Cassie L. O'Brien on March 13th at 3 pm.
+user: Yes, perfect!
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment and you should be getting an email confirmation soon.
+user: Can you recommend some movies?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies one of them being Luce which has an average rating of 92 out of 100.
+user: That will be perfect! Thank you!
+assistant: I'm glad I could help you!

@@ -1,0 +1,23 @@
+user: Hi, could you help me search for some songs please?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs you may like, how about Wolf Totem by The Hu in their album The Gereg?
+user: May I know when was the song release and what is the genre of the song?
+assistant: This is a rock song released in 2018.
+user: That was what I was looking for! Could you also help me search for movies featuring Javier Botet?
+assistant: Any preference on the movie genre?
+user: Some ghost movies would be great.
+tool(FindMovies): ok n_results=1
+assistant: How about Scary Stories to Tell in the Dark?
+user: Are there any alternatives, preferably a Dramatic Story featuring Vladislav Galard.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to watch A Faithful Man?
+user: A Faithful man sounds great to me! Could you play the song you found just now in my Living room please?
+assistant: Please confirm your request to play Wolf Totem in your living room.
+user: That is fine with me.
+tool(PlayMedia): ok n_results=1
+assistant: Your song has been played, enjoy!
+user: Could you also show me my alarms please?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 active alarms, one of which is at 3 pm titled Piano time.
+user: I see, that is all I need. Thank you!
+assistant: No worries, have a great day ahead!

@@ -1,0 +1,9 @@
+user: Can you help me find a round trip flight?
+assistant: Which city will you be departing, and which city will you be traveling to? What day will the return flight be?
+user: I'd like to travel this Sunday until the 10th of March from Chi-town.
+assistant: Where will you be traveling?
+user: Atlanta, GA.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 matching flights. One is from American Airlines. The flight will leave at 1:25 pm. It's a connecting flight. The return flight will depart at 5 pm. Tickets are $258.
+user: That's great, thank you. That'll be all.
+assistant: Have a great day!

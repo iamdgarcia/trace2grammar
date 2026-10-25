@@ -1,0 +1,36 @@
+user: I need help finding a round trip flight on American Airlines for the day after tomorrow. I'm travelling from London.
+assistant: Where are you travelling to? And when do you want the return flight to be?
+user: I'm going to San Fran and I want to return on Friday next week.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's 1 flight for $564 with American Airlines. The onward takes off at 12:45 pm and it does have a layover. The return flight takes off at 4 am.
+user: What's the arrival time for the onward flight?
+assistant: It is 1:05 am.
+user: Okay, nice. I also need a house when I'm there for 4 people, something rated 3.9 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice 3.9 rated house at 1095 Market Street.
+user: What's their phone number?
+assistant: You can reach them at +1 415-829-0000.
+user: Okay, that house seems pretty nice.
+assistant: Do you want to reserve it?
+user: Yeah, I do.
+assistant: Will check in be on March 3rd?7
+user: No, I want it starting on the 4th of March.
+assistant: And will check out be on March 8th?
+user: I want it until next Thursday.
+assistant: I'll reserve you the house in San Francisco for 4 people, check in on March 4th and check out on March 7th, is that right?
+user: Yes, please do that.
+tool(BookHouse): ok n_results=1
+assistant: I've reserved the house.
+user: How much is it altogether?
+assistant: It is $528 altogether.
+user: And is there laundry service there?
+assistant: Yes, there is laundry service.
+user: Thanks a lot. I also want to find attractions when I'm there, any kind, but it has to be okay for kids also.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that match. There's Alcatraz which is a Historical Landmark.
+user: What's their telephone number?
+assistant: You can call them at 415-561-4900.
+user: Sounds good.
+assistant: What else can I help you with?
+user: Nothing else, thanks for the help.
+assistant: Enjoy your trip!

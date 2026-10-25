@@ -1,0 +1,35 @@
+user: I am interested in find some attractions which do not have an entry fee.
+assistant: Can you tell me where I should look for the attractions?
+user: The attractions I am looking for should be in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: You might consider visiting Alexandra Palace, which is a Performing Arts Venue.
+user: Is this place considered to be friendly to kids? What phone number can I use to get in touch with them?
+assistant: This place is not suitable for kids. If you want to call them you can at 20 8365 2121.
+user: Alright, fine. Can you help me to find a car which I can rent there? I will need to rent the car from this Saturday till Monday next week, and it should be in London, England.
+assistant: Can you tell me your preferred time to pick up the car?
+user: I will be able to pick up the car at 16:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A nice car you can consider renting is a Sedan Audi A8 which is at Heathrow International Airport.
+user: Can you tell me how much renting this car will cost me per day?
+assistant: Renting this car will cost you $34.00.
+user: Is there something else you can suggest? I would prefer a Hatchback which is available in Fresno.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There is a nice Hatchback Ford Focus which you can take in Fresno Station.
+user: Can you tell me the cost per day for renting this car?
+assistant: If you rent this car, it will cost you $23.00 per day.
+user: That seems nice. I would like to book this car for me.
+assistant: Are you interested to have insurance with the car?
+user: I do not want to have insurance included.
+assistant: Can you please confirm that you want to to rent a Hatchback car without insurance, that you will be picking up from Fresno Station on March 2nd at 4:30 pm, and that you will need it till March 4th.
+user: That seems good to me.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked.
+user: I appreciate your help. Is it possible for you to share the location?
+assistant: Which is the address that you want to share, because it can be Fresno Station, Alexandra Palace or some other address. Can you tell me with whom you want to share the address with?
+user: The person I want to share the address with is Walter, and the address which I want to share is Fresno Station.
+assistant: Can you please confirm that you want to share the Fresno Station address with Walter?
+user: That is what I want.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: Thank you. You have helped me a lot. That would be all.
+assistant: Have a good time!

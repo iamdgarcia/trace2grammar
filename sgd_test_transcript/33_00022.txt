@@ -1,0 +1,20 @@
+user: I'm need help finding a unisex salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons that match. A nice spot is Berkeley Hair Studio in Berkeley.
+user: I can try that. What's the weather going to be like over there on the 14th of March?
+tool(GetWeather): ok n_results=1
+assistant: On average it will be 81 degree Fahrenheit with a chance of rain at 16 percent.
+user: Alright. Let's book an appointment at the salon in Berkeley. Make it for a quarter to 2 in the afternoon.
+assistant: I'll make you an appointment at Berkeley Hair Studio for 1:45 pm on March 14th. Is that right?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, they were all booked up for that time. Do you need me to do anything else?
+user: Please try to make an appointment for the morning 11:30 instead.
+assistant: I'll make you an appointment at Berkeley Hair Studio for 11:30 am on March 14th. Is that right?
+user: Yeah, that's right. What's their address?
+tool(BookAppointment): ok n_results=1
+assistant: I've made the appointment. They are located at 2556 Telegraph Avenue #4.
+user: Thanks so much.
+assistant: What else can I do for you?
+user: Nothing else, thank you.
+assistant: Have an excellent day.

@@ -1,0 +1,37 @@
+user: I am looking for a nice salon.
+assistant: Which city do you want me to search in?
+user: I am looking for a salon in San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons you may like. How about 1512 Barber shop located in San Francisco?
+user: Can you show me a different unisex salon?
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salons that might interest you. How about 20Th Salon And Barber located in San Francisco?
+user: Find me their average rating.
+assistant: The salon has an average rating of 4.5.
+user: Find me it's address.
+assistant: The salon is located at 2737 20Th Street.
+user: Okay. That sounds nice to me.
+assistant: Do you want me to book an appointment with the salon?
+user: Not now. Find me a nice movie to watch around there.
+tool(FindMovies): ok n_results=10
+assistant: What do you think of Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Can you some other movies to watch at AMC Kabuki 8?
+tool(FindMovies): ok n_results=7
+assistant: What so you think of Hustlers, IT Chapter Two or Official Secrets?
+user: Official Secrets sounds great to me.
+assistant: Do you want me to buy the tickets for the movie?
+user: Not now. Find me the timing for a regular show on the 3rd.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 show at 4 pm in AMC Kabuki 8.
+user: That sounds nice to me. Now, book me an appointment with the salon you just found for quarter to 5 in the evening.
+assistant: Please confirm: You want me to book an appointment with 20Th Salon And Barber at 4:45 pm on March 3rd.
+user: Yes that is correct.Find me their contact number.
+tool(BookAppointment): ok n_results=1
+assistant: You can reach them on 415-824-1335. Sorry due to some reasons I could not book the appointment. Do you want me to retry booking an appointment with 20Th Salon And Barber for 4:30 pm on March 3rd?
+user: Yes, That works for me.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment.
+user: Thank you for your help!
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

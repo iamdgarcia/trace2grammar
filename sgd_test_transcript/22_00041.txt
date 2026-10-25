@@ -1,0 +1,46 @@
+user: Hi! I'm interested in finding something to do.
+assistant: Where are you located?
+user: I'd like to find something in the Seattle, WA area.
+assistant: Would you be interested in attending a music or theater event.
+user: I do like Drama.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that might suit you. Beatleconcert will be held at 12th Avenue Arts on March 10th at 5 pm.
+user: I'd love to go.
+assistant: Would you like to purchase your tickets now?
+user: Not right now. Can you tell me what buses are traveling there from Portland?
+assistant: Will you be leaving on March 10th?
+user: I will be traveling on the 9th.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses that meet your criteria. The first leaves at 7 am and tickets are $33.
+user: Is this bus one-stop?
+assistant: No, this bus is direct.
+user: What else is available?
+assistant: There is another leaving at 11:20 am for $37.
+user: That one works better. I'd like to compare round trip flights there.
+assistant: When will you be returning?
+user: I plan to return on the 13th of March.
+assistant: Will you be leaving on March 9th or March 10th?
+user: I will be leaving next Friday.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Delta Airlines has a flight leaving at 12:20 pm and returning at 5:35 pm for $113.
+user: I need 3 tickets. What other options do I have?
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Southwest Airlines has a flight leaving at 2:10 pm that is a direct flight. It will return at 5:15 am. Tickets are $110 each.
+user: When will it arrive in Seattle and what time will it return?
+assistant: It will arrive in Seattle at 3:08 pm and land back home at 6:13 am.
+user: Great. What hotels are convenient to the airport?
+tool(SearchHotel): ok n_results=10
+assistant: The closest hotel is the 2 star Ace Hotel Seattle.
+user: What are some other options?
+assistant: Another 2 star hotel is the Belltown Inn.
+user: That works better for me.
+assistant: Would you like to make a room reservation?
+user: No, but I would like to purchase 3 tickets to the concert.
+assistant: You'd like 3 tickets to Beatleconcert on March 10th in Seattle. Is that correct.
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets were successfully purchased.
+user: Great. Thank you for the help.
+assistant: You're very welcome. Is there anything else I can do for you?
+user: No, that will be all.
+assistant: Have a wonderful trip.

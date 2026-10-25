@@ -1,0 +1,9 @@
+user: Help me find a round trip flight.
+assistant: Where will you be leaving from? And what day is your ideal return flight?
+user: I'm leaving from Seattle, WA. And I want to return on the 14th of this month.
+assistant: And what's the date of the flight? Also, where will you be heading to?
+user: I want the flight to be on the 12th of March. And I will be heading to LA.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There's an Alaska Airlines flight with a takeoff at 7:05 am. It does have a connection. The return trip is at 11:55 am. And it's $271 for a ticket.
+user: Okay, sounds like it could work. Thank you, that's all for now.
+assistant: Have a fine day.

@@ -1,0 +1,22 @@
+user: Can you help me search for a bus I can take
+assistant: Where are you going?
+user: I want to head to LAX
+assistant: Sure, and wen and where are you coming from?
+user: I'll be leaving San Fran on March 12th, and I'd like a direct bus please
+tool(FindBus): ok n_results=9
+assistant: How about this $52 bus that leaves at 7:30 am
+user: Where is it departing from?
+assistant: It departs from the Transbay Terminal
+user: Got it, but can you find me something else?
+assistant: Sure, how about this $51 bus leaving at 7:50 am?
+user: What station does it arrive and depart from?
+assistant: It arrives at North Hollywood station and leaves from Transbay Terminal
+user: That sounds great, book me 3 tickets on that bus
+assistant: OK so you need 3 people with no extra luggage on the bus from San Francisco to Los Angeles leaving at 7:50 am on March 12th?
+user: Yes that's all right
+tool(BuyBusTicket): ok n_results=1
+assistant: It has been reserved
+user: Great thanks for doing that
+assistant: Can I do something else for you?
+user: Right now that's it
+assistant: OK, let me know, take care!

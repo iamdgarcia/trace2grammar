@@ -1,0 +1,26 @@
+user: I am going to Anaheim, CA. I wish to travel in train with one Business ticket. Can you help?
+assistant: From where you embark?
+user: From Los Angeles and need economy premium ticket.
+assistant: When are you travelling?
+user: It is on 13th of this month.
+tool(FindTrains): ok n_results=10
+assistant: 10 trains are available. One is starting at 6 am with ticket fare of $56 in total. Do you prefer it?
+user: Yes, that will do. Are there anything interesting to do like a Musical performance, on 13th of this month?
+tool(FindEvents): ok n_results=1
+assistant: There is 1, at Crossroads at House of Blues Anaheim on March 13th . It is Brown Sabbath beginning at 4:30 pm.
+user: Venue and cost please.
+assistant: Venue is 1530 Disneyland Monrail System and you will cost $40.
+user: Great, matching one.
+assistant: Shall I get your tickets?
+user: NO, thank you.
+assistant: What other help do you need?
+user: Are there any attractions with no entry fee?
+tool(FindAttractions): ok n_results=8
+assistant: Yes, you please check out Angel Stadium of Anaheim which is a sports venue.
+user: Do you have phone number? Is it child-friendly?
+assistant: Yes it is child-friendly. their phone number is 714-940-2000.
+user: Good, look for a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: 10 houses are there. one is with 4.2 rating and located at 1050 West Ball Road.
+user: That will be ok.
+assistant: Thank you, meet again.

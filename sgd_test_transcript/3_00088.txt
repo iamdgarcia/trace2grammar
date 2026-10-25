@@ -1,0 +1,9 @@
+user: I'd like to look for a rental vehicle, which I require from the 9th of this month to the 14th. I'd alright with any type of vehicle.
+assistant: When would you like to pick up the vehicle, and what place do you wish to rent it from?
+user: I'm searching for vehicles in Paris, and would like to pick it up at afternoon 1:15.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 vehicles available. There's a lovely Audi A8 Sedan available from Charles de Gaulle International Airport.
+user: What's its price per day?
+assistant: The price is $36.00 per day.
+user: That's perfect for me; that's all.
+assistant: Have a pleasant afternoon.

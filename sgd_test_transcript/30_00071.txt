@@ -1,0 +1,27 @@
+user: How is the weather in Pinole?
+tool(GetWeather): ok n_results=1
+assistant: The temp there is 91 degrees Fahrenheit with 18 percent chance of rain
+user: Okay, visit a property visit for me there
+assistant: Which property are you planning on visiting?
+user: I want to go see Shorebreeze apartments
+assistant: The day of visit is March 1st right?
+user: Yes, that is right
+assistant: Just need your confirmation. Booking a visit to shorebreeze apartments on March 1st
+user: Cool, what's its cost?
+tool(ScheduleVisit): ok n_results=1
+assistant: Visit successfully scheduled. It costs $4,200.
+user: tell me their phone number
+assistant: It is 650-966-1328
+user: Thanks. I also need to reserve a car there.
+assistant: What kind of car? Sedan or hatchback? is there a preferred pickup location? till when would you need it?
+user: I need a sedan till 4th of March from Union plaza
+assistant: What time would you pick the car on March 1st? should I add insurance as well?
+user: Insurance sounds good. I will pick it up at morning 11:45
+assistant: Sure, just need your confirmation again. Booking a sedan at 11:45 am on march 1st from union plaza to march 4th
+user: Cool, which car is it and how much does it cost?
+tool(ReserveCar): ok n_results=1
+assistant: subaru impreza is successfully booked. It costs $38.00 per day
+user: Thanks a lot
+assistant: Anything else I can help with?
+user: No, that would be all.
+assistant: Have a great time there

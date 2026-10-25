@@ -1,0 +1,21 @@
+user: Can you find me a movie online, a Sci-fi movie would be ideal, and if possible one that features Bobby Nish.
+tool(FindMovies): ok n_results=1
+assistant: Would you be interested in Ad Astra?
+user: Can you find me something else?
+tool(FindMovies): ok n_results=0
+assistant: There are no movies I can find that match the parameters you have selected, can I help with anything else?
+user: How about suspense movies, ones that feature Jack Melford?
+tool(FindMovies): ok n_results=1
+assistant: How about The Ladykillers, would you like to watch this movie?
+user: That movies sounds good, please play The Ladykillers with Spanish subtitles.
+assistant: The movie The Ladykillers will now play with Spanish subtitles.
+user: Thanks, I really appreciate it.
+tool(PlayMovie): ok n_results=1
+assistant: That movie is now playing, enjoy.
+user: Great, can you tell me what the weather will be like on the 14th of March?
+assistant: The weather of which city will you be checking for?
+user: I want to now the weather in Chi-town.
+tool(GetWeather): ok n_results=1
+assistant: Chi-town is expected on that day to average 68 degrees Fahrenheit, and have a 24 percent chance of rain.
+user: Great, thanks for the info, that will be all, bye!
+assistant: No problem, have a pleasant day.

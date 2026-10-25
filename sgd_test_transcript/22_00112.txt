@@ -1,0 +1,25 @@
+user: I am search for movies that I can find online.
+assistant: What type of movies do you want?
+user: I love Fantasy movies.
+tool(FindMovies): ok n_results=2
+assistant: What do you think about Labyrinth or The Lord of the Rings: The Return of the King?
+user: I think I would love The Lord of the Rings: The Return of the King. I would also like to find attractions in Phoenix but I don't want to pay an entry fee.
+tool(FindAttractions): ok n_results=7
+assistant: I have found you 7 attractions. I recommend you try the Arizona Science Center which is a Museum.
+user: That sounds good. Now look for some songs I can listen.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 song suggestions. Would you like Consequences by Camila Cabello from the Camila album?
+user: Yeah I would like that.
+assistant: Shall I play you the song?
+user: Yeah, I want it played on the living room speaker.
+assistant: So do you confirm that you want the song Consequences played in Living Room?
+user: Sure. Was this song released six years back?
+tool(PlayMedia): ok n_results=1
+assistant: It was released in the year 2018 and I hope you have fun listening to the music.
+user: Thanks. Also I want you to play me the movie you found.
+assistant: So do you confirm that you want The Lord of the Rings: The Return of the King played with English subs?
+user: Sure. Can you name the actor?
+tool(PlayMovie): ok n_results=1
+assistant: I have started the movie and Elijah Wood is the actor.
+user: Thank you very much. That is it.
+assistant: Have a nice day!

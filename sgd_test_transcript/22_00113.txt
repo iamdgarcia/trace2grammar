@@ -1,0 +1,35 @@
+user: It's such a dreary day out today, I think i'll just stay in and watch some movies. Could you help me find a good Offbeat movie to watch?
+tool(FindMovies): ok n_results=1
+assistant: Once Upon a Time In Hollywood is available right now.
+user: Once upon a Time sounds perfect!
+assistant: Would you like me to begin playing the movie for you?
+user: Not right this second, i'll let you know a little later.
+assistant: Okay, is there something else you would like my help with?
+user: Yes, what attractions can you find right now?
+assistant: First I need to know the location you would like me to search in.
+user: Let's go with NY for now.
+tool(FindAttractions): ok n_results=10
+assistant: There is a popular park called Alley Pond Park that is nice.
+user: Okay, is there anything else you can find?
+assistant: There is also a Performing Arts Venue called Apollo Theater that seems fun.
+user: Okay, what else do you have?
+assistant: I see here that there is another park called Astoria Park.
+user: Okay, there's a nice group to choose from. Now could you help me find some songs to listen to from the year 2016 by Aaron Lewis?
+tool(LookupMusic): ok n_results=1
+assistant: I was only able to locate 1 song titled Lost And Lonely by Aaron Lewis, and it is from the albulm Sinner.
+user: Oh, that's perfect, I love that song.
+assistant: What else can I help you with?
+user: Could you go ahead and start playing that song for me?
+assistant: So you want to hear Lost And Lonely from the living room speaker?
+user: Yes, that sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Okay, have fun listening to your song.
+user: Before you go can you also go ahead and being playing that movie you found earlier?
+assistant: Sure, so you would like for me to begin playing Once Upon a Time In Hollywood with English subtitles?
+user: Yes, and can you tell me who stars in it?
+tool(PlayMovie): ok n_results=1
+assistant: I've started playing the movie that Timothy Olyphant stars in.
+user: Awesome, you rock!
+assistant: Do you have anything else I can assist you with?
+user: No, you've been an amazing help!
+assistant: Have a wonderful day!

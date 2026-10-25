@@ -1,0 +1,23 @@
+user: Hello, I am currently looking to find a nice hotel in New York. I need something that is at least 3 stars.
+tool(SearchHotel): ok n_results=10
+assistant: Okay, no problem. I've found a nice 3 star hotel for you called 11 Howard. What do you think?
+user: Can you find any other hotels? Also, I will only need one room.
+tool(SearchHotel): ok n_results=9
+assistant: Okay, I have found another 9 hotels for you. There is another 3 star hotel I think you may like called the Adria Hotel & Conference Center.
+user: Actually, I will need 2 rooms instead. I'm sorry about that. Do you have any other hotels you can recommend?
+tool(SearchHotel): ok n_results=8
+assistant: Sure thing. I've found another 8 hotels that match your new search. There is a nice 3 star hotel called Aloft Harlem I think you will like.
+user: Okay, that sounds good. Thanks.
+assistant: Would you like to make a reservation today?
+user: No, not right now. Maybe later on. Hey, can you tell me about the attractions in the area?
+tool(FindAttractions): ok n_results=10
+assistant: No problem. If you are looking for a nice Museum to visit then I highly recommend the 9/11 Tribute Museum.
+user: Okay, thanks. I've heard good things about that museum, very powerful place.
+assistant: Anything else I can help you with today?
+user: Yeah, I want to go on ahead and make a reservation at that hotel you found earlier. I'd like to check in on the 7th and will need the rooms for 3 days.
+assistant: Okay, just confirm the following for me please. You are booking 2 rooms at the Aloft Harlem hotel in New York on March 7th for 3 days. Correct?
+user: Yup, that's right. Can I also get their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: Sure thing. They can be contacted at +1 212-749-4000. Your rooms have been successfully reserved. Enjoy your stay!
+user: Thanks, you've been a major help. That's all I need for today.
+assistant: Bye! Have a good day!

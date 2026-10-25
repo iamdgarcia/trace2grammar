@@ -1,0 +1,18 @@
+user: I need a salon in Cupertino.
+tool(FindProvider): ok n_results=6
+assistant: There a 6 salons in Cupertino, including Great Clips!
+user: Perfect! Can you share the address with Jeremy? 20686 Homestead Road.
+assistant: Please confirm, sharing location 20686 Homestead Road with Jeremy.
+user: Pefecto!
+tool(ShareLocation): ok n_results=1
+assistant: Message to Jeremy sent.
+user: Thanks! Can you also show me my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms, beginning with 7 am for Exercise.
+user: Cool. I need to add a new alarm for Cleaning at 3:45 in the afternoon.
+assistant: Please confirm, cleaning at 3:45 pm.
+user: Yes.
+tool(AddAlarm): ok n_results=1
+assistant: Alarm was created.
+user: Thanks! That is all I need.
+assistant: Have a nice day!

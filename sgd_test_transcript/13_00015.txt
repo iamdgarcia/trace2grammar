@@ -1,0 +1,15 @@
+user: CAn you help me find a musical performance that I can catch on March 10th in Philadelphia?
+tool(FindEvents): ok n_results=10
+assistant: Sure! How about seeing Anthony Green at The Foundry on March 10th at 6 pm
+user: That's great, now find me 1 hotel room in that area too
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 places including the Aka Rittenhouse Square, it's a 4 star place
+user: That sounds awesome
+assistant: Do you want to book a room?
+user: Not right now, but get me 3 tickets to that show
+assistant: Confirming you want 3 tickets to Anthony Green on March 10th in Philadelphia
+user: That's perfect for me
+tool(BuyEventTickets): ok n_results=1
+assistant: It's booked, hope you enjoy
+user: Thanks for that, take care that's it for now
+assistant: You too, bye!

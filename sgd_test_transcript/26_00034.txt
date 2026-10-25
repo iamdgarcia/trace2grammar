@@ -1,0 +1,40 @@
+user: find me a round-trip flight.
+assistant: What date will you travel on?
+user: I'll leave today.
+assistant: What city will you leave from and where are you going?
+user: I will go to Chi-town from London, UK.
+assistant: What day will you return?
+user: Make the return 3rd of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: how about American Airlines? That outbound flight will take off at 12:45 pm. and it has a layover. The return flight leaves at 1:25 pm. This is a $627 ticket.
+user: That's good. Find me a house stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 houses that should work for you. How about a nice house with a 4.4 rating on 1 South Franklin Street?
+user: Is there a laundry service there?
+assistant: No, there is no laundry service.
+user: That works though. Book me this house for the 2nd.
+assistant: Would you like to check in on March 3rd or another day?
+user: Yes, that will work.
+assistant: How many people will be in your party?
+user: There are two people in my party.
+assistant: could you confirm that you want to go to Chicago and that there are 2 in your group? You will check in on March 2nd and check out on March 3rd.
+user: Sounds good to me.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was made successfully.
+user: Could you give me a phone number?
+assistant: The phone number is +1 312-776-2509.
+user: what is the price in total?
+assistant: The price and total is $348.
+user: Thank you for helping. Will you show me some attractions there? I'd like a child friendly attraction.
+tool(FindAttractions): ok n_results=10
+assistant: How about 360 Chicago? It's a tourist attraction.
+user: Cool, but do you have anything else?
+assistant: check out the tourist attraction Big Bus Tours Chicago (Tours begin at 98 E. Upper Wacker Dr.).
+user: Is there anything else that you can think of?
+assistant: What about Burnham Park? That's a park.
+user: Will you tell me their phone number?
+assistant: The phone number is 312-742-8520.
+user: Thanks.
+assistant: Could I assist with anything else?
+user: No, that's it. You've been a great help thanks
+assistant: Have a good one.

@@ -1,0 +1,30 @@
+user: Can you help me find a salon?
+assistant: What city should I be looking in?
+user: I'm looking for a unisex salon in Petaluma.
+tool(FindProvider): ok n_results=7
+assistant: Dukes and Dolls Salon is a great salon in Petaluma.
+user: Are there any other salons?
+assistant: Modern Classics Barber Shop is another reputable salon in Petaluma.
+user: What is the address?
+assistant: The address is 410 Petaluma Boulevard South.
+user: Can you find another salon?
+assistant: Salon Method is a great salon in Petaluma.
+user: That sounds good. I want to find a movie to watch there. Are there any regular kids showings at Boulevard Cinema?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. The Angry Birds Movie 2 is playing.
+user: The Angry Birds Movie two is great. What time is it?
+assistant: Is March 3rd okay?
+user: Yes, that's okay.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 showtime at 4 pm at Boulevard 14 Cinema.
+user: What's the address?
+assistant: The address is 200 C Street.
+user: Great. I want to book an appointment at the salon for 12:00.
+assistant: Please confirm: an appointment at Salon Method on March 3rd at 12 pm.
+user: Yes, that's correct. What is the salon rated?
+tool(BookAppointment): ok n_results=1
+assistant: The salon is rated 4.7 Your appointment has been made.
+user: What is the address and phone number?
+assistant: The address is 145 1st Street and the phone number is 707-981-8469.
+user: Thanks so much. Thanks, that's all.
+assistant: Have a great day!

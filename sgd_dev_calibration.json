@@ -1,0 +1,285 @@
+{
+ "method": "patterns derived from SGD dev split ONLY (2,482 dialogues); test never touched during calibration; 'thank you' excluded (mid-conversation false closes)",
+ "n_dev": 2482,
+ "dev_outcomes": {
+  "theta_cont": 1251,
+  "theta_aban": 1093,
+  "theta_hand": 138
+ },
+ "n_theta_aban": 1093,
+ "patterns": [
+  {
+   "regex": "\\bhave (yourself )?an? (wonderful|pleasant|fantastic|lovely|beautiful|awesome|cheerful)\\b",
+   "shape": "have (yourself) a(n) <adj-despedida> ...",
+   "dev_captures": 369
+  },
+  {
+   "regex": "\\benjoy (your|the rest of your)\\b",
+   "shape": "enjoy your <...> / enjoy the rest of your <...>",
+   "dev_captures": 235
+  },
+  {
+   "regex": "\\bsee you (later|soon)\\b",
+   "shape": "see you later/soon",
+   "dev_captures": 20
+  },
+  {
+   "regex": "\\btake care\\b",
+   "shape": "take care",
+   "dev_captures": 32
+  },
+  {
+   "regex": "\\bbye\\b",
+   "shape": "bye / bye now (goodbye ya cubierto por el default)",
+   "dev_captures": 59
+  },
+  {
+   "regex": "\\bcheers\\b",
+   "shape": "cheers (leavetaking britanico)",
+   "dev_captures": 7
+  }
+ ],
+ "dev_recognized_by_calibration": 722,
+ "dev_unattributed": [
+  {
+   "id": "10_00008",
+   "final": "Enjoy, be happy"
+  },
+  {
+   "id": "10_00015",
+   "final": "Thanks so much enjoy Vegas."
+  },
+  {
+   "id": "10_00021",
+   "final": "It's my pleasure."
+  },
+  {
+   "id": "10_00024",
+   "final": "My pleasure."
+  },
+  {
+   "id": "10_00041",
+   "final": "It was my pleasure."
+  },
+  {
+   "id": "10_00043",
+   "final": "Thank you very much."
+  },
+  {
+   "id": "10_00057",
+   "final": "Have a goodd ay."
+  },
+  {
+   "id": "10_00108",
+   "final": "Thank you, and have nice day!"
+  },
+  {
+   "id": "10_00116",
+   "final": "Thank you very much."
+  },
+  {
+   "id": "11_00058",
+   "final": "I enjoy to be of help to you!"
+  },
+  {
+   "id": "11_00059",
+   "final": "Glad to help you."
+  },
+  {
+   "id": "11_00061",
+   "final": "I'm glad I could help you out Any time."
+  },
+  {
+   "id": "11_00062",
+   "final": "Your welcome."
+  },
+  {
+   "id": "11_00063",
+   "final": "Happy to help!"
+  },
+  {
+   "id": "11_00064",
+   "final": "I enjoy helping you"
+  },
+  {
+   "id": "11_00065",
+   "final": "Glad to help."
+  },
+  {
+   "id": "11_00066",
+   "final": "Happy to be of service."
+  },
+  {
+   "id": "11_00068",
+   "final": "It is my pleasure to help you"
+  },
+  {
+   "id": "11_00071",
+   "final": "Happy I could help."
+  },
+  {
+   "id": "11_00072",
+   "final": "You're welcome, glad I could help!"
+  },
+  {
+   "id": "11_00074",
+   "final": "Glad to help you."
+  },
+  {
+   "id": "11_00076",
+   "final": "I'm glad I could help you ."
+  },
+  {
+   "id": "11_00077",
+   "final": "I am glad to be of assistance to you."
+  },
+  {
+   "id": "11_00078",
+   "final": "Enjoy!"
+  },
+  {
+   "id": "11_00081",
+   "final": "I'm so happy to be of help."
+  },
+  {
+   "id": "11_00083",
+   "final": "Pleasure to be of service."
+  },
+  {
+   "id": "11_00084",
+   "final": "I'm happy to help."
+  },
+  {
+   "id": "11_00087",
+   "final": "It's my pleasure."
+  },
+  {
+   "id": "11_00089",
+   "final": "Thank you very much."
+  },
+  {
+   "id": "11_00090",
+   "final": "You are very welcome."
+  },
+  {
+   "id": "11_00091",
+   "final": "Glad I could assist you."
+  },
+  {
+   "id": "11_00092",
+   "final": "I'm happy to help."
+  },
+  {
+   "id": "11_00093",
+   "final": "Always glad to help."
+  },
+  {
+   "id": "11_00094",
+   "final": "I am happy to be of assistance."
+  },
+  {
+   "id": "11_00097",
+   "final": "Thank you very much."
+  },
+  {
+   "id": "11_00099",
+   "final": "glad to help"
+  },
+  {
+   "id": "11_00100",
+   "final": "Glad to help you."
+  },
+  {
+   "id": "11_00107",
+   "final": "Glad I was able to help."
+  },
+  {
+   "id": "11_00109",
+   "final": "Happy to help."
+  },
+  {
+   "id": "12_00006",
+   "final": "You are welcome!"
+  },
+  {
+   "id": "12_00009",
+   "final": "see you next time"
+  },
+  {
+   "id": "12_00011",
+   "final": "Have a terrific day!"
+  },
+  {
+   "id": "12_00016",
+   "final": "talk to you next time"
+  },
+  {
+   "id": "12_00022",
+   "final": "It's my pleasure."
+  },
+  {
+   "id": "12_00026",
+   "final": "I'm happy to be able to do so."
+  },
+  {
+   "id": "12_00032",
+   "final": "Glad I could help."
+  },
+  {
+   "id": "12_00036",
+   "final": "No worries, have a safe trip."
+  },
+  {
+   "id": "12_00038",
+   "final": "Will do, thanks."
+  },
+  {
+   "id": "12_00041",
+   "final": "Thank you very much."
+  },
+  {
+   "id": "12_00119",
+   "final": "Okay, see you."
+  },
+  {
+   "id": "12_00121",
+   "final": "Okay, see you."
+  },
+  {
+   "id": "13_00009",
+   "final": "Okay, see you."
+  },
+  {
+   "id": "13_00019",
+   "final": "Great. Speak later."
+  },
+  {
+   "id": "13_00024",
+   "final": "Ok. I'll be here."
+  },
+  {
+   "id": "13_00025",
+   "final": "It's my pleasure."
+  },
+  {
+   "id": "13_00051",
+   "final": "Okay, see you."
+  },
+  {
+   "id": "13_00064",
+   "final": "Fine, good luck with that."
+  },
+  {
+   "id": "13_00066",
+   "final": "Have a super day."
+  },
+  {
+   "id": "13_00076",
+   "final": "Have a fabulous day!"
+  },
+  {
+   "id": "13_00084",
+   "final": "You're welcome. Talk to you soon."
+  }
+ ]
+}

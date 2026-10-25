@@ -1,0 +1,24 @@
+user: I want to have 4 tickets for a round trip flight, which has the returning flight on March 9th.
+assistant: Can you tell me the city from where you will be leaving?
+user: I will be starting my journey from Berlin.
+assistant: Which is your destination, and at what date do you want to have your trip?
+user: I want to arrive to LA, and will be leaving for my trip on March 4th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 flights which match what you want. One of the flights with Delta Airlines which has a layover, leaves at 3:40 pm and when it returns it flies at 6:35 am, with the ticket costing $458.
+user: That seems nice. I also need to have a house that I can stay there for three people. This house has a rating of 3.2 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses which you might like. One of the nice houses which you might consider has a 3.2 rating and is found at 1020 South Figueroa Street.
+user: Can you check if this house has a laundry service, and could you also tell me the contact number I can use to call them?
+assistant: I can confirm that the house as a laundry service, and if you want to call them you can at +1 213-748-1291.
+user: I really like this house.
+assistant: Do you want to have this house booked for you?
+user: Yes, I want this house to be booked for me, and I will need it till 7th of March, and I will be going there on Tuesday next week.
+assistant: Can you please confirm that you want to have a house in Los Angeles for 3 people booked for you, and that you will go to it on March 5th, and will need it till March 7th?
+user: Yes that is what I want. Can you tell me how much this will cost me?
+tool(BookHouse): ok n_results=1
+assistant: Your requested booking has been made, and it will cost you $648.
+user: Could you also inform me about some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: You might consider the Angels Flight Railway, which is a Historical Landmark.
+user: Alright, nice. That's all I needed, goodbye!
+assistant: Have a good time!

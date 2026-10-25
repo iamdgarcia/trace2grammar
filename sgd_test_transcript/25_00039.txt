@@ -1,0 +1,21 @@
+user: I'd like to go and see a movie. Just a regular showing of a Supernatural movie if possible.
+assistant: I can find showings for you. Please provide your location to me.
+user: Try searching for movies in the Vacaville area.
+tool(FindMovies): ok n_results=1
+assistant: Here is 1 movie that I found. Would you like to see IT Chapter Two?
+user: IT2 would be a great supernatural movie. Thanks!
+assistant: I'll buy those tickets for you now if you want.
+user: No I don't want that right now. Instead, please find some music for me to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: From the album Wake Up Dreaming, a song by Stephanie Mabey called The Zombie Song might be what you are looking for.
+user: What type of music is that? Also is it an old or newer song?
+assistant: It is a pop song that came out in 2012.
+user: Really? That's the song then. It should do fine.
+assistant: I can begin playing the music now if it is what you want.
+user: I'd like that.
+assistant: I will begin playing the song The Zombie Song in the Living room if you confirm you are ready.
+user: I'm ready. Start the song for me please.
+tool(PlayMedia): ok n_results=1
+assistant: Now playing the Living Room. I hope you like this song.
+user: Cool. Thank you so much. I can't think of anything else I need at the moment.
+assistant: You are welcome. Please have a wonderful evening.

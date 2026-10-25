@@ -1,0 +1,38 @@
+user: I would like you to show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm called get up that has been made for 6:30 am.
+user: Okay, that is good.
+assistant: Would you like to add an alarm?
+user: No, I don't want to add any more alarms right now.
+assistant: Is there anything else I can do for you?
+user: I would also like to locate a restaurant there.
+assistant: What is the location where you would like to me to search?
+user: Look for restaurants in Kenwood.
+assistant: Which type of food would you like to find?
+user: I would like a place that serves Freshwater fish.
+tool(FindRestaurants): ok n_results=1
+assistant: I have located 1 restaurant that you might like. It is located in Kenwood and is called Salt and Stone Restaurant.
+user: Can you tell me what the user rating is for the restaurant?
+assistant: The rating by users is around 4.6.
+user: Okay, that is good.
+assistant: Do you want to make a reservation for a table there?
+user: Thank you very much, but no.
+assistant: Is there anything else I can do for you?
+user: I would also like to reserve a car there.
+assistant: When would you like the car rental? And do you want a hatchback, sedan, or something else?
+user: I would like to get a sedan and I want it beginning on the 8th of this month.
+assistant: Until what date would you like there and where would you be picking it up? Also, would you like insurance for the car?
+user: An SUV would be nice. I would like to pick the car up at 9 in the morning at Benito Juarez Airport and would like to keep it until the 14th of this month. I don't want to get insurance.
+assistant: Okay, confirm these details: You will pick up the car at Benito Juarez International Airport on March 8th at 9 am and you will drop it off on March 14th. The car is an SUV and will not have insurance.
+user: Yes that sounds fine.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been successfully been reserved for you.
+user: Oh, and I would like the location shared with Roger. Can you do that?
+assistant: Would you like the Benito Juarez International Airport address shared?
+user: Yes, the address I would like to share is 9900 Sonoma Highway.
+assistant: Okay, confirm these details: You will be sharing the location of 9900 Sonoma Highway with Roger.
+user: Okay, that sounds very good.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you, that is very helpful. That was all I needed for now.
+assistant: Have a wonderful day!

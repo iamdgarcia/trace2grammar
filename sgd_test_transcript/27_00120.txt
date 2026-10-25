@@ -1,0 +1,30 @@
+user: I want go for a short trip and I need your help to search for a bus to go there.
+assistant: To which place you want me to search for a bus?
+user: I am planning to visit Las Vegas and please search for a bus to go there.
+assistant: What is your current location and on which date you need the bus?
+user: Search for the one on 10th of this month from San Francisco.
+tool(FindBus): ok n_results=6
+assistant: Do you like to travel through a bus which is going to depart at 7:50 am for the ticket cost $44?
+user: Let me know the destination station of this bus.
+assistant: This bus will reach its final station at Union Plaza. Is it okay?
+user: Yes, that is okay for me and I prefer this bus.
+assistant: That's nice. Shall I book the tickets now?
+user: I don't want to book it now. May be later. Now, I want to search for some attractive places to visit. I need something like a Tourist attraction. Can you find the one with free entrance?
+tool(FindAttractions): ok n_results=1
+assistant: Yes, I got 1 place which is a Tourist Attraction and the name is SlotZilla Zip Line. What do you think about this place?
+user: That is okay and thanks. Now, we go back to the booking of bus tickets. Please book tickets to the bus that I have selected before.
+assistant: Let me know the number of tickets required by you.
+user: I need only one ticket for me.
+assistant: I need your final confirmation to book 1 ticket on the bus which is leaving from San Francisco on March 10th at 7:50 am and reaches finally to Las Vegas with out any extra luggage.
+user: That is confirmed to proceed.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked the tickets on the selected bus.
+user: Again I need your help to search for a Hotel in that area. I am okay with three -star hotel and I need only one room for me.
+tool(SearchHotel): ok n_results=3
+assistant: Shall I book the hotel Best Western Plus Las Vegas West with 3 stars?
+user: Yes, you can book that one.
+assistant: You want to reserve it now?
+user: No, not now. We will do this booking later.
+assistant: Okay, what else you want me to do now?
+user: There is nothing for now and thanks for everything.
+assistant: That's okay. Have a nice day.

@@ -1,0 +1,32 @@
+user: I want to stay out side for a while and I need your help to search for some houses to live.
+assistant: Do you want to buy the house or you just want it for rent only? Let me know your required number of bedrooms in that house?
+user: I need a house with only one bed room and I just want to book it for rent.
+assistant: And about Bathrooms, do you want it as per number of Bed rooms?
+user: Yes, I need one bath room and it is enough to me.
+assistant: Where should I search for the house? Do you have any preferred location to search for?
+user: Yes, search it something in Sunnyvale.
+tool(FindHomeByArea): ok n_results=10
+assistant: Got 10 houses and their details. What about the one named Bonnie Terrace Apartments located at 660 Gail Avenue and the cost for the same is $1,750.
+user: Yes, it is perfect. I want to visit this property. Please make a schedule to visit there on March 8th.
+assistant: Okay, I need your final confirmation to make a schedule of visit to Bonnie Terrace Apartments on March 8th.
+user: That is confirmed to proceed.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your schedule of visit was successfully made.
+user: Thank you so much. Can you check for a garage there?
+assistant: Yes, they have a garage.
+user: That's nice. How can I contact them for any clarification? Do you have their phone number?
+assistant: Yes, please note it as 888-854-9884.
+user: Thank you so much for the details. Now I want to share the location to Nicole. Help me to do the same.
+assistant: Please confirm to share the location 660 Gail Avenue to Nicole.
+user: That is correct to proceed.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared it successfully.
+user: Noted. I want to go there for which please find a cab and I prefer Luxurious ride.
+assistant: For how many persons?
+user: Book it for one.
+assistant: Please confirm to book a cab to go to 660 Gail Avenue and you need 1 seat with luxury ride.
+user: Yes, correct. Go ahead.
+tool(GetRide): ok n_results=1
+assistant: I have booked the cab and it will reach you soon.
+user: Thank you and that's all for today.
+assistant: Have a great day.

@@ -1,0 +1,19 @@
+user: I want a property outside that is in Mountain View. I need your help to find the suitable one which should have in-unit laundry.
+assistant: Do you want the property for rent or you want to buy it?. And also let me know the number of bedrooms that you want in that property.
+user: I want to buy it and I need it with 2 bed rooms. Search for the suitable one please.
+assistant: Also let me know the number of baths required by you.
+user: only 1 bath is enough to me.
+tool(FindHomeByArea): ok n_results=5
+assistant: What about a property named Ginzton Terrace at 375 Oaktree Drive available for the cost $2,600,000.
+user: I want to know the phone number of this property for my reference.
+assistant: Please note down it as 650-390-9450.
+user: Okay. This property is okay for me. Please make a schedule of visit to that property on 11th of March.
+assistant: I need your confirmation to make a schedule of visit to the property named Ginzton Terrace on March 11th.
+user: That is correct. please go ahead. Please check whether they are having a garage there.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your visit to that property and the same has a garage.
+user: That's all fine and thank you. Show my listed alarms.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm name Wake up for 9 am.
+user: That is okay and thanks. That's all for now.
+assistant: Thanks and have a good day.

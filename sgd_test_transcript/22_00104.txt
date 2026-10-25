@@ -1,0 +1,41 @@
+user: I need a therapist, please
+assistant: In which city? What kind of therapist are you looking for?
+user: I need it in Vacaville. I'm looking for a Psychologist
+tool(FindProvider): ok n_results=4
+assistant: In Vacaville there's Caldwell Leslie, a Psychologist
+user: It could be fine for me
+assistant: Do you want to make an appointment?
+user: Yes I want an appointment with this psychologist
+assistant: Which day do you prefer the appointment?
+user: I would prefer an appointment for the 12th
+assistant: What time would you like to set an appointment?
+user: At 15:00 it might be fine
+assistant: An appointment with Caldwell Leslie at 3 pm on March 12th: do you confirm?
+user: No, I prefer on the 9th if it's possible
+assistant: An appointment on March 9th at 3 pm. Is it correct?
+user: Yes, It's correct. Can you give me the therapist's address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. You will soon receive a confirmation e-mail. The address is 1 Quality Drive, the phone number is 707-624-4000.
+user: Thank you so much! Now I have to request a payment
+assistant: What is the amount to pay? Who is the beneficiary?
+user: The beneficiary is Victoria. I have to pay $65
+assistant: A transaction worth $65 visible in the public with Victoria. Is it correct?
+user: Yes It's correct, thanks
+tool(RequestPayment): ok n_results=1
+assistant: The payment was successful
+user: Perfect! Now I want to find a restaurant on that day
+assistant: What kind of restaurant do you prefer?
+user: I prefer a steakhouse restaurant
+tool(FindRestaurants): ok n_results=1
+assistant: In Vacaville there's Applebee's Grill + Bar
+user: Where's the restaurant? What is the customer rating?
+assistant: The rating is around 3.7. The restaurant is in 160 Nut Tree Parkway.
+user: Good! I want to book a table for one people there. I prefer at one pm, please.
+assistant: A table for 1 people at Applebee's Grill + Bar in Vacaville, on March 9th at 1 pm. Do you confirm?
+user: Yes, It's correct, I confirm
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been booked
+user: Is there a vegetarian menu in this restaurant?
+assistant: There is no vegetarian menu
+user: All right anyway, thanks. It's all.
+assistant: Have a nice day

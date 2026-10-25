@@ -1,0 +1,14 @@
+user: Would you look for a direct bus?
+assistant: Where do you want to go?
+user: I would like to go to SD.
+assistant: When will you leave?
+user: I want to leave on March 13th.
+assistant: Where will you depart from?
+user: I would like to leave from LAX.
+tool(FindBus): ok n_results=10
+assistant: I have 10 buses for you. What do you think about one leaving at 6:50 am? It costs $26.
+user: Would you look for something else for 4 people?
+tool(FindBus): ok n_results=9
+assistant: I have 9 buses that should work. What about one leaving at 8:10 am? It's $26.
+user: Sounds great. That is all for now.
+assistant: Have a good one.

@@ -1,0 +1,10 @@
+user: I would like to find a bus for two people.
+assistant: Where are you going and when are you leaving?
+user: I'm leaving from Seattle, WA today and going to Portland.
+tool(FindBus): ok n_results=8
+assistant: There is a bus leaving at 7:30 am for $31.
+user: Is there a direct bus leaving on the 10th?
+tool(FindBus): ok n_results=8
+assistant: There is a bus leaving at 9 am for $36.
+user: Thank you for the information.
+assistant: Have a good day.

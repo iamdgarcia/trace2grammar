@@ -1,0 +1,13 @@
+user: Can you help me find a rental car that I could use
+assistant: What time do you need the car?
+user: I need it at around half past 9 in the morning if you could make that work
+assistant: For when to when are you gonna use it? And where do you want it picked up from?
+user: I need a car from Fresno and I need it only for a day, from the 11th of this month till the 12th
+tool(GetCarsAvailable): ok n_results=8
+assistant: There are 8 cars that work, what about a nice SUV of Dacia Duster that can be picked up at Fresno Yosemite International Airport?
+user: How much will that cost me per day?
+assistant: It's gonna be $43.00 total every day
+user: That's great then
+assistant: Can I assist you with something else?
+user: No, that's it for the time being
+assistant: Thank you and enjoy the rest of your day

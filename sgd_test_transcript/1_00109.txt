@@ -1,0 +1,16 @@
+user: I need to attend a conference so i need a hotel to stay. Will you find me a hotel ?
+assistant: At which city should i need to search for?
+user: I need hotels in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 hotels that suits your needs. there is a hotel called 45 Park Lane. It is a 5 star hotel.
+user: Is smoking allowed in the hotel?
+assistant: No, smoking is not allowed on the hotel.
+user: Ok sounds good. I like to reserve the hotel and i will check in on 6th of March. I need 1 rooms.
+assistant: ok sure. How long will you be staying over there?
+user: i'll be staying for 7 days.
+assistant: Please check and confirm the following details. Hotel is found at 45 Park Lane and Check in Date is on March 6th and You will be staying for 7 days. It is in London. You want 1 rooms.
+user: Ok that sounds good . What is their Phone Number?
+tool(ReserveHotel): ok n_results=1
+assistant: Hotel is booked successfully. Their Phone number is +44 20 7493 4545.
+user: Thanks a lot for your help. that's all i need
+assistant: Bye have a great day

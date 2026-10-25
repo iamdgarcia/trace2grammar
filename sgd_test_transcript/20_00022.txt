@@ -1,0 +1,25 @@
+user: Find me 1 hotel room in Anaheim, CA that is 3 stars.
+tool(SearchHotel): ok n_results=10
+assistant: Anaheim Majestic Garden Hotel has 3 stars.
+user: What is the venue location?
+assistant: They are located at 900 South Disneyland Drive.
+user: Can you give me their contact number and the price per night?
+assistant: You can contact them at +1 714-778-1700 and a room is $207 a night.
+user: That is great. Find me a rental care to get there.
+assistant: What time do you wish to get the car?
+user: I wish to get the car at half past 3 in the afternoon.
+assistant: Are you picking the car up on March 5th and when do you want to return it?
+user: I want the car from the 8th of March until the 13th of this month.
+tool(GetCarsAvailable): ok n_results=9
+assistant: There is a Sedan Buick Regal Sportback for rent at John Wayne Airport.
+user: That is perfect. Book me that car.
+assistant: Shall I get car insurance for you?
+user: No, I don't need that.
+assistant: You want a Sedan car at 3:30 pm on March 8th at John Wayne Airport until March 13th and you do not want insurance, correct?
+user: That is correct. What is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked and it will cost you $33.00 a day.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, not right now. Thanks again.
+assistant: Have a great day.

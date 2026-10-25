@@ -1,0 +1,25 @@
+user: Please help me make a payment of 97 bucks.
+assistant: Please say the account I should effect the transfer from.
+user: Use my debit card, please.
+assistant: Please say the name of the person receiving the payment
+user: Make the transfer to Victoria.
+assistant: Sure. Let me see if I got everything correctly: You'd like to use your debit card to pay $97 to Victoria, and the transaction is not private.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment and the amount should reflect at the recipient's end shortly.
+user: Thank you very much. You've been very helpful. Now help me find me a pricey restaurant in Danville.
+assistant: Did you have a particular cuisine in mind?
+user: Please find a Steakhouse restaurant.
+tool(FindRestaurants): ok n_results=1
+assistant: Your search yielded 1 suitable Danville restaurant. It's known as Forbes Mill Steakhouse. How does it sound?
+user: Sounds good!
+assistant: Should I go ahead and reserve a table here?
+user: Yes, please reserve a table for me.
+assistant: What's your preferred reservation time?
+user: Please make the reservation for it a 10:30 on the 10th.
+assistant: Okay. Please confirm that you'd like to reserve a table for 2 at Forbes Mill Steakhouse in Danville, for 10:30 am on March 10th.
+user: That is correct. May I have their location, please?
+tool(ReserveRestaurant): ok n_results=0
+assistant: Unfortunately, I was unable to make your preferred reservation. Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a great day.

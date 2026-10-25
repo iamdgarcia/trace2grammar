@@ -1,0 +1,11 @@
+user: Would you kindly help me to find a round trip flight?
+assistant: On which date you like to take the return flight?
+user: I like to start my journey tomorrow and returning on the 12th.
+assistant: Where do you want to go?
+user: I want to fly NYC.
+assistant: From which city you want to depart?
+user: Search for flights from ATL.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I searched 4 flights of your choice and one among them is American Airlines which takes off at 10:55 pm and it is a connecting flight. The returning flight takes off at 7:10 am with ticket cost $258.
+user: This is cool..thanks a lot..
+assistant: Have a nice day.

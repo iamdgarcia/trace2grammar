@@ -1,0 +1,29 @@
+user: My friends will be visiting and I would like to find a movie online. Would you search for one?
+assistant: Do you have a particular kind of movie you like?
+user: Yes, I like tragic drama movies.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie you may like to watch. What do you think og Tigers are not Afraid?
+user: I thinkg I would enjoy Tigers are not Afraid. I would also like you to search for attractions, preferrably garden ones.
+assistant: In what area would you like to visit the attraction?
+user: Please search in Chi-town.
+tool(FindAttractions): ok n_results=10
+assistant: There is a beautiful park you could visit called Burnham Park.
+user: Great. Thank you. Now I would like to find some songs. Please search for some songs.
+tool(LookupMusic): ok n_results=10
+assistant: I have a few choices you may enjoy. How about La Da Dee from Cody Simpson Surfers Paradise Album?
+user: That one sounds perfect.
+assistant: Would you like to hear this song?
+user: Yes, that would be great.
+assistant: Please confirm you would like to hear La Da Dee in the living room.
+user: Yes, that would be great.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy listening to the music.
+user: Thanks! Now will you play the movie you found earlier and please include the english subtitles.
+assistant: Please confirm you would like to watch Tigers are not Afraid with english subtitles.
+user: Yes. Who is the lead actor in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Hanssel Casillas is the main actor and your movie has begun playing.
+user: Thank you for your assistance.
+assistant: Is there anything else you need right now?
+user: No, that will be all. Thanks!
+assistant: Enjoy the rest of your day!

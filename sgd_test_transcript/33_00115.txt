@@ -1,0 +1,19 @@
+user: I want to do some things.
+assistant: What city do you want to do things in?
+user: I want to visit a garden in New York City.
+tool(FindAttractions): ok n_results=10
+assistant: Alley Pond Park is a park in NYC.
+user: What is the entrance fee? Is it child-friendly?
+assistant: It is free and it is great for kids.
+user: Ok, I also need a house to stay in while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 homes including one at 100 Greenwich Street. It is rated 4.4.
+user: That house is perfect!
+assistant: Are you ready to make a reservation?
+user: No, not now. But I need economy seats on a flight there.
+assistant: What day are you leaving? Where are you leaving from? When wil you be returning?
+user: I am leaving from Las Vegas on the 1st of March and returning on March 10th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found a flight on American Airlines that leaves at 8:20 am and arrives at 12:30 pm. The ticket is $443.
+user: Perfect, that is all.
+assistant: Have a nice day.

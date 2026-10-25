@@ -1,0 +1,36 @@
+user: Can you please show me active alarms?
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm named Wake up at 6 am.
+user: Any other active alarms?
+assistant: Yes, there's also one named Badminton at 7 am.
+user: OK, thanks a lot.
+assistant: Do you want me to add an alarm?
+user: No, not at the moment. I'd like you to help me find a restaurant now.
+assistant: Sure, but first tell me in which area to search.
+user: Please find me something in Morgan Hill.
+assistant: Perfect. Now please tell me about the kind of food you'd like.
+user: I'd like to go to a restaurant that serves Pizza.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 restaurants matching your criteria in Morgan Hill, out of which I recommend Betto's Bistro.
+user: Sounds perfect.
+assistant: Do you want me to book a table for you?
+user: No, not at the moment, thank you!
+assistant: Is there anything else I could do for you?
+user: I need you to find me a rental care in the area, preferably a SUV, that I can pick up on the 9th of March at 10:30 in the morning.
+assistant: OK, but first please tell me your desired pickup location as well as the date until you need the car.
+user: I'd like to pick up the car from Heathrow International Airport and I will be keeping it until the 14th.
+assistant: Do you want me to add insurance to your rental?
+user: No, I do not want insurance.
+assistant: Can you please confirm that you want me to place a reservation for a SUV without added insurance to be picked up from Heathrow International Airport on March 9th at 10:30 am, due for drop-off on March 14th.
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully placed your reservation.
+user: Can you please tell me the car model as well as the per day rate?
+assistant: It's a GMC Terrain priced at $37.00 per day.
+user: Thanks for everything! Please share the location for 17385 Monterey Road with Keith?
+assistant: Can you please confirm that you want me to share the location for 17385 Monterey Road with Keith?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location as requested.
+user: Thank you so much! That will be all for now!
+assistant: Have a great day!

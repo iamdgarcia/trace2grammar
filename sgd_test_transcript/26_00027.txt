@@ -1,0 +1,28 @@
+user: I need help finding a roundtrip flight.
+assistant: OK, What are your travel dates and where would you like to go?
+user: I want to fly to SFO on the 4th and fly back on the 10th of March.
+assistant: What city will you be flying out of?
+user: I will be leaving from Seattle the day after tomorrow and prefer Southwest Airlines.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Southwest Airlines has 1 direct flight that leaves at 1:35 pm. Your return flight would depart at 12:55 pm and the ticket price is $198.
+user: Great. I also need to rent a house there for just 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: I found a great house with a 4.0 rating at 1095 Market Street.
+user: What is the phone number for that house?
+assistant: They can be contacted at +1 415-829-0000
+user: I like that place!
+assistant: Should I reserve the house for you?
+user: Yes, please make a reservation beginning on the 4th.
+assistant: Will you be leaving on March 10th?
+user: No, I only need the house until the 5th of this month.
+assistant: Ok. You would like to reserve this house in San Francisco from March 4th to March 5th for 1 person, is that correct?
+user: Yes.
+tool(BookHouse): ok n_results=1
+assistant: Your reervation has been made.
+user: Thanks! Is there a historical spot you can recommend to see?
+tool(FindAttractions): ok n_results=8
+assistant: Yes, Alcatraz is an interesting historical landmark you may like to visit.
+user: That sounds good.
+assistant: Great. Do you need anything else for your trip?
+user: No, that was all.
+assistant: Have a reat trip!

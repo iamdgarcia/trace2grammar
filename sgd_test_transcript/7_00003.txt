@@ -1,0 +1,15 @@
+user: I want to check about the weather condition in NY. Can you do it for me?
+tool(GetWeather): ok n_results=1
+assistant: Yes please note that the average temperature will be 66 degrees Fahrenheit and there may be a chance of 37 percent for rain.
+user: That is okay. Also check about the same in Santa Clara on 3rd of March.
+tool(GetWeather): ok n_results=1
+assistant: the average temperature will be 84 degrees Fahrenheit and there may be a chance of 24 percent for rain.
+user: I also need to know the Wind speed and Humidity.
+assistant: Wind speed will be 4 miles per hour in average and Humidity is around 38 percent.
+user: Thanks. Please check the same on March 12th too.
+tool(GetWeather): ok n_results=1
+assistant: the average temperature will be 85 degrees Fahrenheit and there may be a chance of 21 percent for rain.
+user: Thank you for your information.
+assistant: How can I help you further?
+user: Nothing for now. Thanks.
+assistant: Have a good day.

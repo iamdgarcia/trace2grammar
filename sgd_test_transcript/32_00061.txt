@@ -1,0 +1,24 @@
+user: I want to find some songs right now.
+tool(LookupMusic): ok n_results=10
+assistant: I have found 10 songs for you. What is your opinion on Lost and Lonely off the album Sinner by Aaron Lewis?
+user: Yes, that is the one.
+assistant: Do you want this song to be played?
+user: Not at the moment, perhaps later.
+assistant: Is there anything else I can do for you?
+user: Are there any quality movies available online?
+assistant: Which type of movies are you interested in?
+user: I would really like some type of Supernatural movie.
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion of IT Chapter Two?
+user: IT two sounds really good. Would you be able to play the song you found earlier?
+assistant: Okay, confirm these details for me: playing the song Lost and Lonely in your living room.
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy the music.
+user: Thanks very much! Can you display for me the alarms that I have set?
+tool(GetAlarms): ok n_results=1
+assistant: Yes, you have 1 alarm set for 9 am and it is called Wake up.
+user: Okay, that is good.
+assistant: Would you like to add another alarm?
+user: No, I don't need to put another alarm on. That's all I wanted.
+assistant: Thanks very much.

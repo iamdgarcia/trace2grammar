@@ -1,0 +1,19 @@
+user: I would like to know what the weather in Vancouver, BC is like today.
+tool(GetWeather): ok n_results=1
+assistant: It will be around 75 degrees Fahrenheit with a 15 % chance of rain.
+user: Will it be windy?
+assistant: around 8 miles per hour.
+user: That is good. Now I fancy going somewhere. Can you help me to find a free attraction?
+tool(FindAttractions): ok n_results=10
+assistant: There is a Park called Dr. Sun Yat-Sen Classical Chinese Garden.
+user: Sounds fab. I want a cab there, preferably a Pool ride.
+assistant: How many seats do you require?
+user: Just the one.
+assistant: To confirm then that is a cab for 1, preferably a Pool ride to Dr. Sun Yat-Sen Classical Chinese Garden.
+user: That all sounds good. How much will it cost and how long will it take to reach me.
+tool(GetRide): ok n_results=1
+assistant: the booking is confirmed and it will be with you in round 3 minutes. The total cost is $6.56.
+user: thank you for your assistance.
+assistant: Anything else you need?
+user: no that is all thanks again.
+assistant: have a lovely day.

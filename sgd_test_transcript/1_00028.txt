@@ -1,0 +1,14 @@
+user: I'd like to book a table for 1 this sunday somewhere in half moon bay.
+assistant: Which restaurant? And what time should the booking be for?
+user: Could you find something at Miramar Beach, quarter past 11 in the morning?
+assistant: Please confirm: You want to book a tale at the Miramar Beach Restaurant in Half MOon bay at 11:15 am on march 3rd for 1.
+user: Exactly. What is their address, and what's the user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Their address is 131 mirada road, and they have a rating of 4.2 Sorry, I couldn't make that reservation at the Miramar Beach restaurant, however, they have an opening for 1 on march 3rd at 11:30 am, would that work?
+user: Yes.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was successful.
+user: Thank you so much.
+assistant: Do you need anything else?
+user: Nope! Thank you!
+assistant: You're very welcome, have a good day.

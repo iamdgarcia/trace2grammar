@@ -1,0 +1,23 @@
+user: I'm looking for a house to stay at in Los Angeles with a 3.9 rating or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses you may like. There is a house at 1020 South Figueroa Street with a 3.9 rating.
+user: What other houses are there?
+assistant: How about a house at 10320 West Olympic Boulevard with a 3.9 rating?
+user: What is the phone number for the property and does it have laundry service?
+assistant: The phone number is +1 310-556-2777 and it does have laundry service.
+user: Thanks, this house sounds great.
+assistant: Would you like to make a reservation at this house?
+user: Yes, I'd like to make a reservation for 1 checking out on the 8th of March.
+assistant: When are you checking in?
+user: I am checking in on the 3rd of this month.
+assistant: Okay, you want a reservation for 1 at the house in Los Angeles checking on on March 3rd and checking out on March 8th, correct?
+user: No, I'm checking in on the 5th of March.
+assistant: Okay, you are checking in on March 5th and checking out on March 8th, right?
+user: Yes, that is correct.
+tool(BookHouse): ok n_results=1
+assistant: I have confirmed the reservation.
+user: Are there any attractions there? I'm looking for a child-friendly garden.
+tool(FindAttractions): ok n_results=6
+assistant: I found 6 attractions you may like. How about the Park Exposition Park?
+user: Yes, that sounds good. That's all I needed.
+assistant: Have a great day.

@@ -1,0 +1,20 @@
+user: Are you able to help me find a good salon?
+assistant: Yes. I need to know the city you would like me to look in.
+user: Somewhere in San Francisco is fine.
+tool(FindProvider): ok n_results=10
+assistant: There is a good salon called 1512 Barber Shop in San Francisco.
+user: What are my other choices in the area?
+assistant: Another good salon in San Francisco is 20Th Salon and Barber.
+user: Is the salon available for both men and women? Do you have the phone number?
+assistant: The salon can be reached at 415-824-1335. They serve both men and women.
+user: That salon sounds great.
+assistant: What else can I help you with?
+user: Please set me an appointment at the salon. Wednesday next week at morning 10:30 works best for me.
+assistant: I will reserve an appointment at the 20Th Salon And Barber on March 6th at 10:30 am if that is right.
+user: That is correct. Are they rated?
+tool(BookAppointment): ok n_results=1
+assistant: The clients have given them an average rating of 4.5. I have set your appointment for you.
+user: You are a great help, thanks!
+assistant: What else would you like me to help you with?
+user: That's all for now. Thanks again.
+assistant: Enjoy the rest of your day.

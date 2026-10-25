@@ -1,0 +1,34 @@
+user: I wish to make a payment.
+assistant: How much money Shall I transfer the money from debit card or credit card? What is the contact name?
+user: Send $123 from my bank account to Isabella.
+assistant: Kindly ensure that, $123 will be transferred from your debit card to Isabella. It is visible to public.
+user: Yes. It is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is done. Isabella will receive the money soon.
+user: Thank you so much. I wish to search a train now.
+assistant: When do you wish to travel?
+user: I need tickets on 14th of March.
+assistant: From city do you want to move and which city do you want to reach?
+user: I need tickets from Anaheim to Sacramento.
+tool(FindTrains): ok n_results=10
+assistant: What is your opinion about a train staring at 6:50 am? The total price is $120.
+user: It is nice.
+assistant: Do you need any other help?
+user: What about the weather on 14th of March.
+assistant: Shall I check the weather at Sacramento?
+user: Yes please.
+tool(GetWeather): ok n_results=1
+assistant: The temperature is 92 degree Fahrenheit. There is a possibilty of 16 % rain.
+user: What about the windy?
+assistant: It will be 1 miles per hour.
+user: What about the humidity?
+assistant: It will be around 18 %.
+user: Sure. Thank you. Could you please reserve 1 Value ticket on the train? I need trip insurance.
+assistant: Kindly ensure that, on March 14th, 1 Value ticket is reserved on the train which is moving from Anaheim to Sacramento at 6:50 am. It covers the trip insurance.
+user: It is nice.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are booked.
+user: What is the name of the leaving and arriving station?
+assistant: The train will arrive at Sacramento Valley Station from Anaheim Intermodal Center.
+user: You are highly helpful. Thank you so much. That is what I want.
+assistant: Thank you. See you later. Bye.

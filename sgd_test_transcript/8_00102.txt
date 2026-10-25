@@ -1,0 +1,15 @@
+user: Can you find me two seats on a train
+assistant: What city do you want this train to head to?
+user: I want it to be going to Seattle
+assistant: Sure, and for what date?
+user: Let's look for tickets for the 10th of this month
+assistant: What city are you coming from?
+user: I'll be leaving from Portland, OR
+tool(FindTrains): ok n_results=9
+assistant: How about one that departs at 9:10 am that will run you $117
+user: That sounds like a good plan
+assistant: Should I book that train then?
+user: No right now I don't need the tickets yet
+assistant: Can I do something else for you then?
+user: No, for now that's it, you were great!
+assistant: I appreciate that, take care!

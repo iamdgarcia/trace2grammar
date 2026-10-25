@@ -1,0 +1,33 @@
+user: I need to book 1 ticket for a round trip flight for my upcoming trip. I prefer a flight on Delta Airlines
+assistant: When are you traveling and what is your destination?
+user: I will be traveling to Sydney on the 3rd of this month ideally.
+assistant: And what is your departure city? And do you have a return date in mind?
+user: I'm leaving from Atlanta and I'd like to come back on the 8th. I don't have a ticket class preference either.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight on Delta Airlines for with a ticket price of $542. The departure flight is at 5:50 am and has one stop. The return flight leaves at 10:55 am.
+user: That works for me. I also need to find accommodations with laundry facilities for my visit there.
+tool(SearchHouse): ok n_results=10
+assistant: There's a great place with a rating of 4.1 at 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia.
+user: Can you tell me if there are additional options? The reservation is for 1.
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 places that match your criteria. One is a lovely house with a 3.7 rating at 1 Hosking Place.
+user: Is there a phone number there?
+assistant: Their contact number is +61 2 9224 6400
+user: Great. I would like to reserve this place!
+assistant: Sure, with a check in date of March 3rd and until March 8th, or when?
+user: I'd like to check out on the 7th of this month actually, and check in Monday next week
+assistant: So you would like to reserve for 1 person for the Sydney house, checking in on March 4th and checking out on March 7th. Correct?
+user: That is not right. My check out is Monday next week and check in should be the 3rd of this month
+assistant: To confirm, check in date is March 3rd, checking out on March 4th, right?
+user: Perfect. That's it. How much is that going to cost?
+tool(BookHouse): ok n_results=1
+assistant: That booking has been completed. The cost for the reservation is $125
+user: Great, thank you. Now I'd like to find activities and places to see while I'm there
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like. One is a Sports Venue called ANZ Stadium.
+user: Is this a place that is free to enter and can you tell me if it is kid appropriate
+assistant: There is no entrance free and this venue is appropriate for children
+user: Perfect. thank you!
+assistant: Will there be anything further?
+user: No, you answered all of my questions. Thank you
+assistant: take care

@@ -1,0 +1,22 @@
+user: Can you help me find a therapist?
+assistant: Would you like to see a psychiatrist or a psychologist?
+user: I'd prefer to see a family therapist in Santa Rosa.
+tool(FindProvider): ok n_results=8
+assistant: Auer Patience is a family counselor in Santa Rosa.
+user: Is there another psychologist in Santa Rosa?
+tool(FindProvider): ok n_results=10
+assistant: Yes, Bert Epstein is another psychologist in Santa Rosa.
+user: Can you make me an appointment for three pm?
+assistant: What day works best for you?
+user: Try for the 13th of this month.
+assistant: You'd like to make an appointmnet with Bert Epstein on March 13th at 3 pm. Is that correct?
+user: I'm sorry. Can you change that to the 1st?
+assistant: Yes, of course. You'd like to make the appointment with Bert Epstein on March 1st.
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been set and you will get an email with further details shortly.
+user: What movies can you recommend for me.
+tool(FindMovies): ok n_results=10
+assistant: May I recommend Angel Has Fallen. It currently has a rating of 39 out of 100.
+user: That works for me. Thanks for the help.
+assistant: You're welcome. Have a wonderful day!

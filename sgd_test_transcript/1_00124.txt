@@ -1,0 +1,18 @@
+user: I'm in the mood for some music and would like to play some songs.
+tool(LookupMusic): ok n_results=10
+assistant: Okay, what about Masterpiece by Jessie J from the Sweet Talker album?
+user: Did that song come out six years ago?
+assistant: The song came out in 2014.
+user: What kind of music is it?
+assistant: This is a Pop song.
+user: Yes, that's the one I'm thinking of.
+assistant: Is there anything else I can do for you?
+user: Yes, please play that song on any device.
+assistant: Okay, let's confirm: Playing the song Masterpiece in the Living room.
+user: Yes, thanks.
+tool(PlayMedia): ok n_results=1
+assistant: Okay, enjoy your music.
+user: Thank you!
+assistant: Is there anything else I can do for you?
+user: No, that's all thanks.
+assistant: Have a great day!

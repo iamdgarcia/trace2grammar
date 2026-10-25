@@ -1,0 +1,11 @@
+user: I'd like to watch a movie.
+assistant: What movie would you like to watch?
+user: I want to watch The Ladykillers.
+assistant: please confirm: You want to watch The Ladykillers with English subtitles?
+user: No, actually, The Lord of the Rings.
+assistant: Please confirm: You want to watch The Lord of the RIngs: The Return of the King with English subtitles.
+user: Exactly, who stars in the movie, and what genre is it?
+tool(PlayMovie): ok n_results=1
+assistant: It's a fantasy movie starring Elijah Wood.
+user: Thank you, that's all I need.
+assistant: Have a good day.

@@ -1,0 +1,30 @@
+user: Help me please to find something interesting to do.
+assistant: In what category you want to be? Music or Theater or something else.
+user: I really enjoy Theater.
+assistant: In what city you prefer to be?
+user: Around NYC will be good for me.
+tool(FindEvents): ok n_results=10
+assistant: A very popular option is Acting For Teens and is taking place at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm.
+user: Sounds very good.
+assistant: You want to buy thickets at this event?
+user: No,maybe later.I want a house there with rating minimum 3.9.
+tool(SearchHouse): ok n_results=10
+assistant: According to your requirements I found 10 houses.A nice house located at 100 Greenwich Street with rating 3.9.
+user: Other options you have?
+assistant: A nice house with rating 3.9 located at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA.
+user: I like this one.
+assistant: You want to make an reservation?
+user: No,not now.Any bus going there you can find?
+assistant: From where are you leave and you plan to go on March 5th?
+user: I leave from Philadelphia on March 1st.
+tool(FindBus): ok n_results=6
+assistant: What you think about a bus that depart at 9 am and cost $23.
+user: Great.Buy for me thickets at the event that you have found.
+assistant: Tell me how many you need.
+user: Two tickets will be okay.
+assistant: Book 2 tickets for Acting For Teens in New York on March 4th.Is that okay for you?
+user: Yes is okay.Tell me where is the venue located and how much is cost one ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is done.520 8th Ave. - Personal Valet is the venue location and $35 is cost for one ticket.
+user: Thank you very much.That's all.
+assistant: Have a good day!

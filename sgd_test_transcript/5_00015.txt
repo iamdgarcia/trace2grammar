@@ -1,0 +1,14 @@
+user: I need four tickets on a direct bus to SF.
+assistant: When are you leaving? Where are you leaving from?
+user: I am leaving from Anaheim on the 9th.
+tool(FindBus): ok n_results=8
+assistant: There is a bus leaving at 8:50 am for $55 a ticket.
+user: That will work.
+assistant: Are you ready to buy tickets?
+user: Yes, please.
+assistant: Please confirm, 4 bus tickets from Anaheim to San Francisco on March 9th. The bus leaves at 8:50 am.
+user: Perfect! What is the name of the station I am leaving from and arriving to?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are reserved. You are leaving from Anaheim Bus Station and arriving at Transbay Terminal.
+user: Thanks, that is all I need.
+assistant: Have a nice day.

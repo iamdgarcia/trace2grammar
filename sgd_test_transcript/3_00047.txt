@@ -1,0 +1,13 @@
+user: Hey. Can you help me find a flight? I need something round trip.
+assistant: Sure. On which date would you like to leave, and on which date would you like to come back?
+user: I'd like to leave on the 1st of this month, and return on March 4th.
+assistant: Okay. Where would you like to go?
+user: To Vancouver, BC.
+assistant: And from which city would you like to depart?
+user: I'd like to leave from NY.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Would you be interested in a flight from American Airlines? They have a ticket that meets your criteria. The plane will take off at 9:45 am, and the return flight takes off at 11:20 am. It is a connecting flight, and the ticket costs $496.
+user: Possibly. When would the flight arrive in Vancouver? Also how many tickets is that?
+assistant: The flight is expected to arrive at 4:11 pm, and the ticket is for 1 traveller.
+user: Alright, cool. That will be all for now thank you.
+assistant: You're most welcome. Don't be afraid to ask for anything further.

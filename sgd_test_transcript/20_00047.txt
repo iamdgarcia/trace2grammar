@@ -1,0 +1,25 @@
+user: I'd like to look for a rental vehicle. I require it from March 10th and until March 13th, and I am searching for vehicles inside Seattle, WA.
+assistant: When would you like to pick up the vehicle?
+user: I'd like to pick it up at 20:00, and I am searching for vehicles in SF.
+tool(GetCarsAvailable): ok n_results=7
+assistant: There is a lovely Audi A8 sedan available at Salesforce Transit Center.
+user: What is its price per day?
+assistant: The price is $27.00 per day.
+user: That sounds lovely.
+assistant: Would you like to reserve the vehicle?
+user: Yeah, but perhaps later.
+assistant: Could I assist you with something else?
+user: I'd like to look for a place with a 3.4 rating or higher to reside in.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely residence with a 3.4 rating located at 1095 Market Street.
+user: This residence is lovely.
+assistant: D you wish to book a spot at this residence?
+user: Nope, I do not wish to do that. Could you book the rental vehicle you just discovered?
+assistant: Would you like to include insurance?
+user: I do not require insurance.
+assistant: Please verify the following information: you are picking up a sedan from Salesforce Transit Center on March 10th, 8 pm, with a trop off date on March 13th. It does not include insurance.
+user: Yeah, that sounds lovely.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: Thank you for your assistance; that's all.
+assistant: Have a pleasant afternoon.

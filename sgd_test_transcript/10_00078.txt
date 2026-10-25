@@ -1,0 +1,14 @@
+user: Can you find me a movie featuring Tom Skerritt. I like to watch it now online.
+assistant: I want to confirm the type of movie liked by you to search for.
+user: Fantasy would be great. Search for something featuring John Bach.
+tool(FindMovies): ok n_results=1
+assistant: I got 1 which is The Lord of the Rings: The Return of the King. What about your opinion?
+user: The Lord of the Rings: The Return of the King is nice movie and I like the same.
+assistant: Shall I play it for you now?
+user: Yes, do it for me.
+assistant: I need your confirmation to play The Lord of the Rings: The Return of the King with English subtitles.
+user: That is confirmed to proceed.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing now and you can enjoy the same.
+user: Thanks and that's all.
+assistant: Have a great day.

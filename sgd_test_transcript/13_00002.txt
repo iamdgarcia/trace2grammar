@@ -1,0 +1,25 @@
+user: Hello, could you help me find a Play that's interesting?
+assistant: Sure, which city would you like me to search?
+user: Something around LAX.
+tool(FindEvents): ok n_results=10
+assistant: Okay, I found a play at Studio C Artists called A year In Dragonfly. It's showing on March 1st at 7:30 pm.
+user: Okay, that sounds great!
+assistant: Would you like to purchase tickets to the event?
+user: Not right now.
+assistant: Okay, is there anything else you'd like help with?
+user: Yes, actually I just remembered I have to request a payment from Svetlana.
+assistant: Okay, what is the amount?
+user: It's for 35 bucks.
+assistant: Alright, please confirm the following: you're requesting a transaction of $35 from Svetlana.
+user: Yes that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Okay the request has been made.
+user: I'd like to buy tickets to the event you found earlier.
+assistant: Okay, how many tickets would you like to purchase?
+user: 4 tickets please.
+assistant: Okay; you're booking 4 tickets for March 1st to attend A Year In Dragonfly in Los Angeles. Is that correct?
+user: Yes that's perfect. What is the venue address?
+tool(BuyEventTickets): ok n_results=1
+assistant: Okay, your reservation is confirmed. the venue is located at 6448 California 2, enjoy your time there!
+user: Thank you that's all I need.
+assistant: Okay, have a nice day.

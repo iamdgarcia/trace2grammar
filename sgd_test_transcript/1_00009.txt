@@ -1,0 +1,11 @@
+user: I want to make a restaurant reservation.
+assistant: What's the name of the restaurant and what time would you like the reservation?
+user: It's name is La Hacienda and I want the reservation for 2 o"clock in the afternoon.
+assistant: And where is the restaurant located?
+user: It's in Cloverdale.
+assistant: I'll make a reservation for La Hacienda Mexican Restaurant in Cloverdale for March 1st at 2 pm for 2 people, is that good for you?
+user: Yeah,that's good. What's the user rating of the restaurant?
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry, but the reservation couldn't be completed. Is there anything else you need?
+user: No, thanks a lot.
+assistant: You're welcome, have a fine day.

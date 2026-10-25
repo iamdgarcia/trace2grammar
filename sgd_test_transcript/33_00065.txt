@@ -1,0 +1,25 @@
+user: Can you find me some interesting things to do?
+assistant: What city are you looking in? What type of events?
+user: I want to find a concert in the Philadelphia area.
+tool(FindEvents): ok n_results=10
+assistant: Anthony Green is playing at The Foundry on March 10th at 6 pm.
+user: Great. Can you find some other events?
+assistant: Ayokay is playing at The Foundry on March 11th at 6:30 pm.
+user: That sounds good. I want to buy tickets.
+assistant: How many tickets do you need?
+user: I want to buy 3 tickets.
+assistant: Please confirm: 3 tickets for Ayokay in Philadelphia on March 11th.
+user: Yes, sounds good. How much is each ticket? Where is the venue located?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased. Each ticket is $60. The venue is at 29 East Allen Street 2nd Floor.
+user: Thanks so much. Can you find me a cab to get there?
+assistant: What kind of ride would you like?
+user: I want to find a regular ride.
+assistant: Please confirm: A ride to The Foundry, 3 seats in a regular ride.
+user: Yes, sounds great. How long until the cab is here?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is on it's way. It should be there in about 6 minutes.
+user: How much will it cost?
+assistant: The ride is $29.81.
+user: Thanks so much. That's all.
+assistant: Have a great day.

@@ -1,0 +1,30 @@
+user: Please search train tickets for March 10th from Fresno, CA please.
+assistant: Sure thing, which city would you be traveling to?
+user: I want to go to Anaheim.
+tool(FindTrains): ok n_results=6
+assistant: There are 6 train options for you. There is one departing at 7 am for a cost of $75.
+user: That will work. Let's book these but with a conditionally refundable ticket. I will only need one ticket.
+assistant: Ok, I understand.Please confirm we are booking 1 ticket on March 10th for a train leaving from Fresno at 7 am and arriving at Anaheim. This is a value ticket. Is this information correct?
+user: Yes this will work. Which station would I be leaving from?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were booked successfully. The train will be departing from Fresno Station
+user: Lets find something to do on march 14th while i'm there. I would prefer a Drama activity if possible.
+tool(FindEvents): ok n_results=1
+assistant: On March 14th at 6 pm there is a very popular show called Jesus Christ Superstar is taking place at Stage Door Repertory Theatre.
+user: How much would one ticket cost?
+assistant: The tickets cost $30
+user: Where is this venue located?
+assistant: The address is 1045 North Armando Street
+user: This will work fine.
+assistant: Should we book now?
+user: No, not at this time. Can you please share the location with Sean please.
+assistant: I would be glad to. Please confirm you would like to share the location of STage Door Repertory Theatre with sean. Is that right?
+user: No, nevermind share with Jesse
+assistant: ok, please confirm you would like to share the location of Stage Door Repertory Theatre with Jesse, is that right?
+user: yes that is correct
+tool(ShareLocation): ok n_results=1
+assistant: Ok, location has successfully been shared with Jesse.
+user: Great. thank you.
+assistant: your welcome.
+user: Good bye.
+assistant: Good bye

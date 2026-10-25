@@ -1,0 +1,19 @@
+user: Hi, are there any houses with laundry service in the Paris, France area?
+tool(SearchHouse): ok n_results=10
+assistant: Yes, there are 10 houses you might like. How about a 4.5 rated house located at 1 Rue Bayard, 75008?
+user: Sounds good! Could you get me a booking there?
+assistant: And when will you be checking in?
+user: Likely on the 7th of March.
+assistant: How many people will be staying there and when will you be checking out?
+user: I will be checking out on the 13th of this month, and this is for one person.
+assistant: Please confirm your reservation for 1 for a house in Paris from March 7th to March 13th.
+user: That sounds perfect!
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you, could you find me some attractions in that area too?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, how about a Place of Worship called American Church in Paris?
+user: Sounds good.
+assistant: Could I further assist you then?
+user: No, thank you for your kind assistance.
+assistant: Have a great time there.

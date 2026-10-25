@@ -1,0 +1,24 @@
+user: Would you please help me find a therapist?
+assistant: Yes I can. Did you need a psychologist or psychiatrist?
+user: Can you find a psychologist.
+assistant: What city would you like for me to search?
+user: Can you look up psychologist in Corte Madera.
+tool(FindProvider): ok n_results=3
+assistant: I have located 3 psychologist in Corte Madera. How about Jeff Greenwald?
+user: He will do just fine, can you schedule my appointment?
+assistant: Do you have a date preference?
+user: Yes, I need something for the 11th.
+assistant: And what is a good time for you?
+user: I need something a quarter to 12 in the morning.
+assistant: Okay, that was an appointment with Jeff Greenwald at 11:45 am on March 11th?
+user: Yes that is right.
+tool(BookAppointment): ok n_results=1
+assistant: The only thing I see available for March 11th with Jeff Greenwald for 11:30 am, would that work for you?
+user: Yes, 11:30 am is just fine.
+tool(BookAppointment): ok n_results=1
+assistant: Great! I have successfully scheduled your appointment with Jeff Greenwald.
+user: Do you know of a good family movie that has Carol Sutton in it and directed by Herbert Ross?
+tool(FindMovies): ok n_results=1
+assistant: How about Steel Magnolias, it has a movie rating of 70.
+user: That would be just fine. Thank you again for all your help. That will be all now.
+assistant: You are welcome, enjoy the movie.

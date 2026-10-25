@@ -1,0 +1,35 @@
+user: Find me a Psychologist in Martinez.
+tool(FindProvider): ok n_results=3
+assistant: Miller Nicole G. is a Psychologist in Martinez and she is 1 of 3 search results.
+user: That works for me. Get me a session.
+assistant: What time and day do you want?
+user: Book a session for at 10 o'clock in the morning on the 1st of March.
+assistant: You want a session with Miller Nicole G for 10 am on March 1st, correct?
+user: That is right. Can you give me their address and contact number?
+tool(BookAppointment): ok n_results=1
+assistant: Your session is confirmed and you will receive an email shortly. They are located at 150 Muir Rd. and you can contact them at 925-372-2830.
+user: I also need to request someone to pay me.
+assistant: Who should I send the request to and for what amount?
+user: Request a transaction with Rachel for $111.
+assistant: You want to make a public transaction request with Rachel for $111, correct?
+user: No, change it to Svetlana for $96.
+assistant: You wish to make a payment request to Svetlana for $96, correct?
+user: That is right.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has successfully went through.
+user: Get me a place to eat for that day that serves Thai along with vegetarian options.
+tool(FindRestaurants): ok n_results=1
+assistant: Lemongrass Bistro meets those requirements and is located in Martinez.
+user: That works for me.
+assistant: Shall I book you a table?
+user: Yes, make a reservation for 2 people at half past 11 in the morning.
+assistant: You want a table for 2 at Lemongrass Bistro in Martinez for 11:30 am on March 1st, correct?
+user: That is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is reserved.
+user: How can I get in touch with them?
+assistant: You can contact them at 925-387-0388.
+user: Thanks a bunch.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Have a great day.

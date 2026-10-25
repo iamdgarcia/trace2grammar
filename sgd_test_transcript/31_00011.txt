@@ -1,0 +1,30 @@
+user: Hey, can you help me find a salon in Santa Rosa?
+tool(FindProvider): ok n_results=9
+assistant: Sure, I found 9 options. In Santa Rosa Daredevils & Queens is a great salon option.
+user: Good to know. I'm bored, help me find a movie I can watch around there.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 options. Does Good Boys, After The Wedding or Fiddler: A Miracle of Miracles sound good to you?
+user: Good Boys sounds like a perfect one.
+assistant: Should I buy the tickets?
+user: Not now, thank you.
+assistant: Can I help you with anything else?
+user: Do you know at what time can I watch the movie at Airport Stadium Cinemas?
+assistant: On March 2nd?
+user: Yes, all right.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's one session at 9:30 pm in Airport Stadium 12.
+user: Good to know! Help me book an appointment in the salon you found and on the day we discussed.
+assistant: At what time would you like that to be?
+user: At 3:45 pm would be great.
+assistant: So a 3:45 pm appointment on March 2nd with Daredevils & Queens?
+user: Yes, that's it.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is now confirmed.
+user: Is it a unisex salon?
+assistant: It is not.
+user: What's their average rating and contact number?
+assistant: Their rating is 4.6 and their number is 707-575-5123.
+user: Thanks a lot.
+assistant: Can I help you further?
+user: No, thanks a lot.
+assistant: Have a great day.

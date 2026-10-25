@@ -1,0 +1,25 @@
+user: I'm looking for 2 rooms at a 3 star hotel.
+assistant: What city do you want to search in?
+user: I want a hotel in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you. What about the 3 star Abbey Court Hotel (Hyde Park)?
+user: How much is it per night?
+assistant: It is $174 per night.
+user: That sounds good.
+assistant: Do you want to make a reservation?
+user: No, not right now. I'd like to find a rental car there.
+assistant: Are you picking it up on March 5th? What time do you want to pick it up and how long do you need it for?
+user: Yes, I will pick it up on March 5th around morning 9:30 and I need it until the 7th of March. I don't have a preference on the type of car.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 available cars. There is an Audi A8 sedan at Heathrow International Airport.
+user: What is the daily cost?
+assistant: It costs $30.00 per day.
+user: That sounds good, I'd like to reserve it.
+assistant: Do you want insurance?
+user: No, I don't.
+assistant: Okay, you want to rent a sedan from Heathrow International Airport on March 5th at 9:30 am until March 7th and you don't need insurance, right?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation.
+user: Thanks, that is all I needed.
+assistant: Have a great day.

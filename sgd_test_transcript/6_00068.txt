@@ -1,0 +1,18 @@
+user: Hi, could you help me search for a Salon in Berkeley please, preferably a unisex one.
+tool(FindProvider): ok n_results=10
+assistant: How about Berkeley Hair Studio in Berkeley?
+user: That sounds great! Could you get me a reservation there please?
+assistant: When would you like to visit them?
+user: At 5:30 pm, please.
+assistant: Sure, and which date will you be heading down?
+user: Likely on the 9th, could you get me an appointment at 11 o"clock in the morning instead?
+assistant: Will do, please confirm your appointment with the Berkeley Hair Studio at 11 am on March 9th.
+user: Sorry, could you get the appointment on this Sunday instead?
+assistant: Will do, please confirm your appointment with the Berkeley Hair Studio at 11 am on March 3rd.
+user: That sounds fine to me. May I have their address and contact number please?
+tool(BookAppointment): ok n_results=1
+assistant: You can visit them at 2556 Telegraph Avenue #4 and contact them at 510-540-1261. Your reservation has been made!
+user: Thank you so much for your help!
+assistant: Do you require further assistance?
+user: No, that is all. Thank you!
+assistant: No worries, have a great day ahead!

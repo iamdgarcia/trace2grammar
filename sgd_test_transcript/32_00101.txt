@@ -1,0 +1,42 @@
+user: I wish to search for a place with garage to live.
+assistant: Whether it is for rent or buy?
+user: I need it in Pleasant Hill. I wish to buy it.
+assistant: How many bed rooms do you need?
+user: I need 3 bed rooms.
+assistant: How many baths do you need?
+user: I need 3 baths.
+tool(FindHomeByArea): ok n_results=3
+assistant: Country View Apartments is a nice property situated at 301 Country View Lane # A. The cost is $3,550,000.
+user: What is their contact number?
+assistant: Their contact number is 925-676-6964.
+user: Whether laundry machine is available inside the house?
+assistant: Sorry, it is not available.
+user: It is nice.
+assistant: Shall I Schedule a visit to the property?
+user: Yes. Please.
+assistant: On which day do you need schedule?
+user: I wish to visit it on March 6th.
+assistant: Kindly ensure that, your scheduling is done to visit Country View Apartments on March 6th.
+user: Yes. It is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your schedule has been done.
+user: Please share the location with Walter.
+assistant: Kindly ensure that, you wish to share the location 301 Country View Lane # A with Walter.
+user: It is nice.
+tool(ShareLocation): ok n_results=1
+assistant: Location is shared.
+user: I wish to book a cab to go there.
+assistant: Number of seats do you need is?
+user: I need it for 2 persons.
+assistant: What is your preferred ride?
+user: I am happy with the Normal ride
+assistant: Kindly ensure that, you wish to go to 301 Country View Lane # A. The Regular ride has been booked for 2 persons.
+user: Okay. it is good. How much time the ride will take to come here?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been reserved and it is on its way. It will take 5 minutes.
+user: What is the cost?
+assistant: The cost is $32.74
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: No, Thank you so much for your help.
+assistant: Have a fantastic day.

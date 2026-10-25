@@ -1,0 +1,22 @@
+user: would you kindly help me to find a train?
+assistant: From which city you want to depart?
+user: I am starting from Sacramento, CA
+assistant: On which date you want to travel?
+user: Search tickets for Wednesday next week.
+assistant: To which place you are going?
+user: I want to go LAX.
+tool(FindTrains): ok n_results=5
+assistant: Starting at 6:30 am with ticket cost $83.
+user: This is perfect.
+assistant: Can i book the tickets?
+user: Okay..I want to book with trip insurance and ticket should be economy class.
+assistant: Number of tickets you need?
+user: I want only one ticket.
+assistant: please give confirmation details: You need a train ticket from Sacramento to Los Angeles on march march 6th at 6:30 am and it is for 1 people. Want the ticket with trip insurance and it should be a value ticket.
+user: This is cool. Can you tell me the departing and destination station?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your train ticket booked successfully and the train leaving from Sacramento Valley Station and arrives at Union Station.
+user: Thanks for your great help.
+assistant: Any other help you need?
+user: No, thanks a lot.
+assistant: Bye..for now..see you..

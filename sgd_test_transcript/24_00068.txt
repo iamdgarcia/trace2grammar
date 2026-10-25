@@ -1,0 +1,27 @@
+user: I like to watch a movie now for which I need your help to find the good one. Find me something to watch at Smith Rafael Film Center.
+assistant: In which city you want me to search for the movie?
+user: Search it in San Rafael.
+tool(FindMovies): ok n_results=1
+assistant: Do you like to watch a movie named A Faithful Man?
+user: A Faithful Man is nice movie. Now I want to search for a nice restaurant in the same location on the 7th.
+assistant: What is your convenient time to book the table and do you have any particular restaurant in you mind to book for?
+user: yes, I think booking a table at Bj's for the time evening 7 is perfect for me.
+assistant: I need your confirmation to book a table for 2 at Bj's Restaurant & Brewhouse in San Rafael on March 7th for the time 7 pm.
+user: Please change the place. Make the booking at Green Chile.
+assistant: Okay, need your confirmation once again to book a table at Green Chile Kitchen at 7 pm.
+user: That is confirmed to proceed. Can you get me the details about the type of food available there and user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Yes, it is 4.1 is the user rating and they serve Mexican food.
+user: Thanks for the information.
+assistant: How can I help you further?
+user: Let me know the show time of the movie that I have selected before.
+tool(GetTimesForMovie): ok n_results=1
+assistant: You can watch it at 6:30 pm in Smith Rafael Film Center and this is the only available show time.
+user: And what about the genre of this movie?
+assistant: It is a Drama type movie.
+user: That's great. Thanks.
+assistant: Shall I book the tickets now?
+user: No, will be later.
+assistant: Anything else you want?
+user: No, thanks for your help.
+assistant: Have a great day.

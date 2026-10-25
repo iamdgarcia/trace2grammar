@@ -1,0 +1,17 @@
+user: I would like to find a song. I love Rock-and-roll and songs by Get Scared.
+tool(LookupMusic): ok n_results=1
+assistant: What about Sarcasm by Get Scared from their album called Best Kind of Mess.
+user: Was it '16 it was released?
+assistant: It was released in 2010.
+user: That's the one. What will the weather be like on 2nd of this month?
+assistant: Which city will I check?
+user: In Tomales please.
+tool(GetWeather): ok n_results=1
+assistant: The ave temp will be around 75 degrees Fahrenheit with a 21 % chance of rain.
+user: Right thanks now can you play that song you mentioned.
+assistant: To confirm then I will play the song Sarcasm in the Living Room.
+user: Yes that would be great.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you like it.
+user: Thanks, that is all I need.
+assistant: Enjoy your day.

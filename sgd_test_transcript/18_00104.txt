@@ -1,0 +1,19 @@
+user: Can you find me a hotel with smoking rooms available?
+assistant: Sure. In which city would you like me to look?
+user: Find me something in KL. I need 3 rooms and a 2 star hotel would be best.
+tool(SearchHotel): ok n_results=6
+assistant: How about the Ceria Hotel Bukit Bintang, which is a 2 star hotel.
+user: What's their phone number and address?
+assistant: Their phone number is +60 3-2143 1111, and they're located at 270, Jalan Changkat Thambi Dollah, Pudu, 55100 Wilayah Persekutuan, Wilayah Persekutuan.
+user: Sounds good, I think. What's the weather like there?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be 102 degrees Fahrenheit. There is also an 8 percent chance of rain.
+user: How humid and windy is it supposed to be?
+assistant: The humidity is reported to be around 23 percent, and the wind speed 12 miles per hour.
+user: I'd like to reserve the rooms at the hotel we discussed earlier. I'll be staying for just one day and would like to check in later today.
+assistant: Please confirm the following: You would like to book 3 rooms at Ceria Hotel Bukit Bintang in Kuala Lumpur for 1 day starting from March 1st. Is that all correct?
+user: Yes that is all correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked you the rooms at the hotel. Will you be needing anything else?
+user: Thank you. That will be all for now.
+assistant: Okay, enjoy the rest of your day.

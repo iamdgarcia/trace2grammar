@@ -1,0 +1,24 @@
+user: I need to make a therapist appointment please. I would like a psychologist in Concord.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 possibility that I've discovered for you in Concord, it is the psychologist Karrah T. Fowler, Ms.
+user: OK, thank you very much.
+assistant: Would you like to schedule an appointment with that therapist now?
+user: Not at this time. I'd like to know with the weather forecast for the 11th.
+tool(GetWeather): ok n_results=1
+assistant: Certainly, it will be 93 degrees Fahrenheit on that day with a possible 18 percent rain chance.
+user: Could you check the humidity and wind conditions?
+assistant: Of course, humidity that day will be approximately 24 percent and the wind will be around 10 miles per hour.
+user: Thank you. I think I would like to set up an appointment with that therapist now.
+assistant: At what time please?
+user: Please see if you could do something at quarter to 10 in the morning.
+assistant: Confirming a 9:45 AM appointment on March 11th with Karrah T. Fowler, Ms.
+user: Yes, that should be fine.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately I was not able to book the appointment. Would you like to try March 11th at 10 AM with Karrah T. Fowler, Ms.?
+user: No problem, thank you.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been successfully scheduled and an email confirmation will be sent to you.
+user: May I get the phone number and address?
+assistant: Certainly, the address is 1026 Oak Grove Road and the phone number is 925-682-8000.
+user: Thank you very much, goodbye.
+assistant: Have a wonderful day.

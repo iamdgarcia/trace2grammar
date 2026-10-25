@@ -1,0 +1,34 @@
+user: I want to change my hair style and look for which I need to search for a Salon. Find me a one which should be an Unisex Salon.
+assistant: Where do you want to search for it? Or let me know your current location so that I can search it near to your residence.
+user: I need the one in Burlingame.
+tool(FindProvider): ok n_results=10
+assistant: Got one Salon which is in the name Burlingame Barber Shop in your required area Burlingame. Do yo want to go there?
+user: I have to decide. I need more details of that Salon to decide. Can you get me the rating and address details of that Salon.
+assistant: They are located at 1012 Oak Grove Avenue and they got 4.7 rating from their users in average. Is that nice?
+user: Yes, It is good and I prefer this Salon.
+assistant: Shall I proceed with the booking process?
+user: Yes, book me an appointment with that Salon.
+assistant: Let me know your convenient date and time to book the same.
+user: Can you get me an appointment at half past 11 in the morning on later today?
+assistant: Yes, please reconfirm to book an appointment with the salon named Burlingame Barber Shop on March 1st for the time 11:30 am.
+user: That is correct and you can book the same.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked the appointment successfully.
+user: Thanks. Let me know their contact number.
+assistant: It is 650-342-1602.
+user: That's okay. Now find me a restaurant around there on the same day. I want to take meal outside in that area.
+assistant: Is there any favorite food that you are looking for?
+user: Yes, find me the one who is serving Tofu.
+tool(FindRestaurants): ok n_results=1
+assistant: Okay. What about a restaurant named I Love Sushi & Tofu which is also located in Burlingame that is your current place.
+user: Okay, that's good. May I know their average user rating?
+assistant: Yes, it is around 3.9. Was that nice to you?
+user: Yes, I looks nice.
+assistant: What do you want me to do now? Do you need any other help?
+user: Yes, please book a table for 2 persons in that restaurant and make it for the time 12:30 in the afternoon.
+assistant: Please confirm to book a table for 2 in I Love sushi & Tofu restaurant situated in Burlingame for the time 12:30 pm on March 1st.
+user: That is okay to proceed.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table was booked there and you can enjoy your meal.
+user: Thanks and that's all for now.
+assistant: Have a great day.

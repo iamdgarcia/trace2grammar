@@ -1,0 +1,16 @@
+user: Can you find me a regular screening of a Supernatural genre movie at AMC NewPark
+assistant: Where are you looking to watch?
+user: Can you look in the Newark area?
+tool(FindMovies): ok n_results=1
+assistant: Sure I can, I found 1 movie called IT Chapter Two that fits your wants
+user: IT2 is great! Buy me three tickets for the 10:15 in the night showing on the 10th of March
+assistant: Confirming that you want 3 regular tickets to IT Chapter Two at 10:15 pm on March 10th in Newark
+user: Yes that's right
+tool(BuyMovieTickets): ok n_results=1
+assistant: I was able to book you those tickets
+user: Great, how do I get there?
+assistant: You can head to 400 Newpark Mall
+user: Thanks so much for booking those tickets and helping me
+assistant: Can I do anything else right now?
+user: No it's all good for now
+assistant: OK, enjoy your movie!

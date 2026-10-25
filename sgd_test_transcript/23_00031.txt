@@ -1,0 +1,27 @@
+user: Please go online and search for Fight movies featuring Ani Sava.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie that might interest you. How does Pulp Fiction sound?
+user: Pulp Fiction sounds great. Now please find me some attractions in that place.
+assistant: In what city do you want to find attractions?
+user: Search for NY attractions, please.
+tool(FindAttractions): ok n_results=10
+assistant: Your search yielded 10 attractions that might be of interest. You should visit the Museum known as 9/11 Tribute Museum.
+user: Sounds good! Now let's search for songs now.
+tool(LookupMusic): ok n_results=10
+assistant: Would you like All About That Bass in the Title album by Meghan Trainor?
+user: Yes, I'd like you to play that song on the kitchen speaker.
+assistant: Sure, no problem. Please confirm that you'd like to listen to All About That Bass in the Kitchen
+user: Yes, that's what I'd like. Please tell me the song's genre and year of release.
+tool(PlayMedia): ok n_results=1
+assistant: Do enjoy listening to your music. It is a 2014 Pop song.
+user: Thank you very much.
+assistant: Will there be anything else?
+user: I'd like to watch the movie you found. Please play it with English subtitles.
+assistant: Sure, no problem. Please confirm that you'd like to watch Pulp Fiction with English subtitles.
+user: That is correct.
+tool(PlayMovie): ok n_results=1
+assistant: Movie now playing.
+user: Thank you.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Goodbye, and have a wonderful day!

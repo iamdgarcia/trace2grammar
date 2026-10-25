@@ -1,0 +1,23 @@
+user: Find me something interesting to do.
+assistant: In what city you want to be?
+user: Around Los Angeles will be okay.
+assistant: What type of events do you prefer?
+user: I like Concert and I want to be something on 13th of March.
+tool(FindEvents): ok n_results=10
+assistant: A very popular option is Aldous Harding and is take place at Masonic Lodge at Hollywood Forever on March 13th at 4:30 pm.
+user: Where will take place the event and how much is a ticket?
+assistant: 5970 Santa Monica Boulevard is the venue and total cost is $25.
+user: Good.But find me something on 11th of this month around Portland, OR.
+tool(FindEvents): ok n_results=5
+assistant: Very popular is the event Bastille.Is taking place at Theater Of The Clouds on March 11th at 7 pm.
+user: Sounds really good.Reserve for me tickets please.
+assistant: Tell me the number of tickets .
+user: Three tickets will be okay.
+assistant: Book 3 tickets at event Bastille in Portland in March 11th.Is that correct?
+user: Yes is good for me.Tell me the price per ticket and where will take place.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is done.1016-1098 North Center Court Street is the venue and the ticket is $30.Have fun!
+user: Thank you very much.
+assistant: Can I still be useful to you?
+user: No.Thank you.That's all!
+assistant: Have a nice day!

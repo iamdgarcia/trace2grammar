@@ -1,0 +1,7 @@
+user: Can you find me a rental car in Las Vegas? I'd like to pick it up at 4:30 in the evening and I'll need it till the 14th of March.
+assistant: I can do that, but first i'll need to know on which date you would like to pick the rental car up.
+user: I'd like to pick it up on March 13th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available for you. There is a nice SUV of Alfa Romeo Stelvio available at Union Plaza.
+user: That sounds good. That will be all, thank you.
+assistant: Have a nice day.

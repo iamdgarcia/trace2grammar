@@ -1,0 +1,25 @@
+user: I want a movie, something directed by Steven Spielberg please.
+tool(FindMovies): ok n_results=1
+assistant: Probably a top option there would be Close Encounters of the Third Kind. It has a 95 % rating.
+user: Who was in that and what's the genre?
+assistant: It's Sci-fi and One actor there was Richard L. Hawkins.
+user: Fine, but get me a restaurant somewhere nearby.
+assistant: What is that location and what kind of food do you want?
+user: Get me Japanese in San Fran please.
+tool(FindRestaurants): ok n_results=10
+assistant: You have 10 choices, what about 2g Japanese Brasserie in San Francisco.
+user: What address do they have and how many stars.
+assistant: You can find them at 601 Van Ness Avenue and they have a 3.5 rating.
+user: What about another option please?
+assistant: Next up is Ace Wasabi Rock-n-roll Sushi in San Francisco.
+user: Fine, that seems better.
+assistant: Shall I get you a table?
+user: Fine, a table for 2 at 7:15 in the evening on the 11th.
+assistant: To confirm: 2 for Ace Wasabi Rock-n-roll Sushi in San Francisco at 7:15 pm on March 11th.
+user: That's perfect, thanks. What about outdoor seats there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You're table is booked, They don't have al fresco seating but their phone number is 415-567-4903.
+user: That's perfect thanks.
+assistant: What about a ride there or anything else?
+user: No, I'm driving my own car.
+assistant: Have a great meal.

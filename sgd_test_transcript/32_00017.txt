@@ -1,0 +1,25 @@
+user: I am looking for a Psychologist in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: How about a Psychologist called Barskyex Bryna G located in San Jose?
+user: Find me their phone number and their address.
+assistant: The street address is 5755 Cottle Road # 4 and contact number is 408-363-4418.
+user: Is there any other therapist you can show?
+assistant: How about a Psychologist called Burdge Sarah located in San Jose?
+user: That sounds good to me. Now, I would like to book an appointment.
+assistant: What is the date for the appointment?
+user: I am looking to book it on 5th of this month.
+assistant: Can you tell me the timing for the appointment?
+user: I am looking to book it at 5:30 in the evening.
+assistant: Please confirm: You want me to book an appointment with Burdge Sarah at 5:30 pm on March 5th.
+user: No. Make it at 4 o'clock in the evening.
+assistant: Please confirm: You want me to book an appointment with Burdge Sarah at 4 pm.
+user: Yes, That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment. You will shortly receive a confirmation mail.
+user: Can you find me some nice Dramatic story movies directed by Gurinder Chadha and the actor is Vincent Andriano?
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie called Blinded by the Light with an average rating of 88 out of 100.
+user: That sounds good to me.
+assistant: Can I help you with anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,18 @@
+user: Could you find me a therapist?
+assistant: Sure, what city should I search in, and would you like a psychiatrist, psychologist, or something else?
+user: I'd like a psychologist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: How about Alameda Children's Specialized, they're a psychologist in Oakland.
+user: Works for me, could you book an appointment at 3:45 in the afternoon?
+assistant: For what date?
+user: I'd like it on the 12th of this month please.
+assistant: Please confirm: You want an appointment with Alameda Children's SPecialized at 3:45 pm on March 12th?
+user: Yes.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked! You'll get a confirmation email soon.
+user: What's their address?
+assistant: 7200 Bancroft Ave # 125C
+user: What's their phone number?
+assistant: 510-383-5100.
+user: Thank you, that's all I need
+assistant: You're welcome, have a good day.

@@ -1,0 +1,32 @@
+user: I wish to see some attractions. I wish to see a historical spot.
+assistant: Where shall I search in?
+user: Search attractions in SF.
+tool(FindAttractions): ok n_results=8
+assistant: I searched and found 8 attractions. Your check out is Alcatraz. It is a historical Landmark.
+user: Nice. Can you find some other attractions?
+assistant: Your check out is Alcatraz Island. It is a historical Landmark.
+user: Okay. Good. I wish to see the movie there.
+tool(FindMovies): ok n_results=3
+assistant: What is your opinion about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Please find some other movies. I love Fantasy movies and I wish to see a regular show.
+tool(FindMovies): ok n_results=1
+assistant: I searched and found 1 movie. What is your opinion about Labyrinth?
+user: Labyrinth is nice.
+assistant: Shall I get the tickets?
+user: Nope. I don't need to get it now. Is there any other movies available online?
+assistant: What type of movie do you prefer?
+user: I prefer Scary movies.
+tool(FindMovies): ok n_results=6
+assistant: Are you interested in 47 Meters Down: Uncaged, In Fabric or Midsommar?
+user: Do you have any other options? I like Fantasy movies.
+tool(FindMovies): ok n_results=2
+assistant: Are you interested in Labyrinth or The Lord of the Rings: The Return of the King?
+user: Lord of the Rings is nice. I wish to watch it now and I do not have any specifications about the subtitles.
+assistant: Kindly ensure that, playing The Lord of the Rings: The Return of the King with English subtitles.
+user: Yes. Go ahead.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started.
+user: Thank you so much.
+assistant: Do you need any other help?
+user: Nope. thank you so much.
+assistant: Have a nice day.

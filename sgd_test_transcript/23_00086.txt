@@ -1,0 +1,36 @@
+user: Can you locate me a train?
+assistant: What city are going traveling to and depart from?
+user: I am traveling from San Fran and going to Fresno
+assistant: When would you like to travel
+user: Please find me ticket for march 6th
+tool(FindTrains): ok n_results=8
+assistant: What about ticket for $56 departing at 6:20 am
+user: that is perfect
+assistant: Would you like me to book the ticket for you
+user: Yes please make the reservation for me
+assistant: Do you require travel insurance? Also for how many ticket do you need
+user: I need one ticket with trip insurance
+assistant: Please confirm your booking for 1 value ticket departing on march 6th at 6:20 am from San Francisco to Fresno
+user: This is perfect
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is booked
+user: thank you very much for your help
+assistant: what else can i do for you
+user: i also want to find something fun to do
+assistant: What would you like me to search? you can say music or theater
+user: I like to go to broadway
+tool(FindEvents): ok n_results=1
+assistant: what about The government inspector at california arts academy on march 8th at 6:30 pm
+user: thats great for me
+assistant: would you like me to purchase the ticket
+user: Not yet, but can you share the location with laura for me
+assistant: please confirm you want me to share california arts academy with laura
+user: No i actually want to share with larry
+assistant: Please confirm to share location california arts academy with larry
+user: yes that is correct
+tool(ShareLocation): ok n_results=1
+assistant: your location is now sharing with larry
+user: thank you for your help
+assistant: what else can i do for you
+user: no that is all i need
+assistant: have a great day

@@ -1,0 +1,18 @@
+user: Is there a movie online you can find for me to watch?
+assistant: Any particular genre of movies you particularly like?
+user: Something kids would enjoy would be great.
+tool(FindMovies): ok n_results=2
+assistant: How about The Angry Birds Movie 2 or Toy Story 4?
+user: I think Toy Story four sounds great.
+assistant: Shall I begin playing the movie?
+user: Sure, play the movie and have it set with French subtitles.
+assistant: Understood, Toy Story 4 will play with French subtitles.
+user: Great, thanks for the help.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is now playing, enjoy.
+user: Quick question, who acted in this movie?
+assistant: One notable actor that stars in this movie is Flea.
+user: Great, thanks for the information.
+assistant: Is there anything else that I can help you with?
+user: No, that will be all, thanks.
+assistant: Your welcome, have a great day.

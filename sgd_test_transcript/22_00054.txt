@@ -1,0 +1,56 @@
+user: I need a therapist.
+assistant: Where should they be located? And do you want a Psychologist, Family Counselor, or other specialty?
+user: They should be in Redwood City. And I want a Psychologist.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 therapists in that area. You might be interested in Becker Hubert J., a Psychologist in Redwood City.
+user: I think they'll do.
+assistant: Do you need an appointment?
+user: Yes, please make an appointment for me.
+assistant: What date would you like to go?
+user: I want to go on the 1st.
+assistant: And what time do you prefer?
+user: I want it to be at 10:30 in the morning.
+assistant: I'll make you an appointment with Becker Hubert J for March 1st at 10:30 am, is that good for you?
+user: Yes, that is good.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, but that time is taken. What else can I do for you?
+user: Let's try a different time, how about on the 10th of this month instead?
+assistant: I'll make you an appointment with Becker Hubert J for March 10th at 10:30 am, is that good for you?
+user: Yes, that's good. And what's the phone number over there?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been made. You will receive an email confirmation shortly. Their phone number is 650-299-4827.
+user: And what's their location?
+assistant: They are located at 1150 Veterans Boulevard.
+user: Thanks so much for helping me.
+assistant: What else can I do for you.
+user: I need to request payment from someone.
+assistant: Who do you need payment from?
+user: It's from Isabella.
+assistant: How much is it?
+user: It's for $144.
+assistant: A payment request for $144 from Isabella will be sent. This will be publicly visible. Is this correct?
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request has been sent.
+user: And I also want to find a restaurant for when I'm at that appointment.
+assistant: What kind of cuisine are you interested in?
+user: A good old Diner would be fine.
+tool(FindRestaurants): ok n_results=6
+assistant: Aly's On Main fits that preference. It's in Redwood City.
+user: What else can you find?
+assistant: John Bentley's Restaurant fits that preference. It's in Redwood City.
+user: And what's their address? Also, what's the price range?
+assistant: The address is 2915 El Camino Real. They are in the moderate range.
+user: Okay, that works for me.
+assistant: What else can I do for you?
+user: Please book me at table at the restaurant.
+assistant: What time should it be for?
+user: It should be for 12:30.
+assistant: I'll book you a table for 2 at John Bentley's Restaurant in Redwood City on March 10th at 12:30 pm. is that good for you?
+user: Yes, that's perfect. Can you give me their phone number and user rating too?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table has been booked. You can call them at 650-365-7777 and their user rating is 4.6.
+user: Thanks a lot.
+assistant: What else can I do for you?
+user: Nothing else, thanks again.
+assistant: Have a pleasant day.

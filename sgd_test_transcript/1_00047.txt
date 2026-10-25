@@ -1,0 +1,12 @@
+user: I need to make a trip and don't want to spend much money. I'm looking for an affordable hotel. I am fine with a 1 star hotel.
+assistant: Ok, which city will you be visiting?
+user: I'll be going to London, England. I have some family there.
+tool(SearchHotel): ok n_results=10
+assistant: That sounds like fun. There is a 1 star hotel called Abercorn House there.
+user: I've looked at that online. Are there any others? I will just need 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: Yeah, another 1 star hotel is Astor Hyde Park Hostel.
+user: That one sounds good.
+assistant: I can help make reservations for the hotel if you would like.
+user: No thanks, I don't want to make the reservations yet. I don't need anything else right now.
+assistant: Alright, I hope you have a great day! Bye.

@@ -1,0 +1,23 @@
+user: Can you find a bus for me?
+assistant: When do you want to leave? Where are you leaving from and where do you want to go?
+user: I want to go Thursday next week, from Portland, OR to Seattle.
+tool(FindBus): ok n_results=10
+assistant: I found one leaving at 7 am for $28.
+user: What are some others? I want a direct route.
+tool(FindBus): ok n_results=10
+assistant: There's one leaving at 11:20 am for $30.
+user: That works. I'm looking for things to do there that don't have an entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: Bill Speidel's Underground Tour fits your request and is a popular tourist attraction.
+user: Great, thanks. Can you order some tickets for the bus?
+assistant: How many tickets do you need?
+user: I need tickets for three people.
+assistant: To confirm: You would like 3 tickets for the bus leaving at 11:20 am on March 7th, going from Portland to Seattle.
+user: That's right. Which stations does it leave from and arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: You leave from SW Arthur & 1st and arrive at Westlake Station. Your tickets are confirmed.
+user: Thanks! I also need a hotel while I'm there.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels. There's a 2 star hotel called Ace Hotel Seattle.
+user: Perfect. That's all I need for now. Thanks.
+assistant: Have a great day. Good bye.

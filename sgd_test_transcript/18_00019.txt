@@ -1,0 +1,24 @@
+user: I was wondering what the weather is like in Phoenix.
+tool(GetWeather): ok n_results=1
+assistant: The temperature will average 89 degrees Fahrenheit for the day with a 15 percent possibility of raining.
+user: Alright can you check for NY on March 9th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature must be 70 degrees for the day on average and I think it will have 38 percent possibility of raining.
+user: What is the wind like?
+assistant: The wind will average a speed of 7 miles per hour.
+user: What is the humidity like?
+assistant: About 47 percent should be the humidity.
+user: Alright, get me a one-way flight to there.
+assistant: Will you leave on March 9th? What city are you leaving from?
+user: I begin on the 6th of this month. So search for flights in Philadelphia.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 planes suited for you. What do you think of American Airlines. The onward plane departs at 1:20 pm and it is a direct flight. The price is $55.
+user: Fair enough. I want a rental car in that location. I will take it up at 14:30.
+assistant: Till what date will you be needing the car? Is it on March 9th that you want the car from?
+user: Great. I will drop it off on the 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: You can have a nice SUV Alfa Romeo Stelvio at Port Authority Station.
+user: That works for me.
+assistant: Shall I get you anything else?
+user: Nope. Thank you.
+assistant: Have a great day!

@@ -1,0 +1,23 @@
+user: I want to spend my free time by watching a nice Movie like the one with Dramatic Story. Can you find something for me and I want to watch it at Century 20 Oakridge and XD.
+assistant: Where do you want to search for the movie? Any preferred location?
+user: Search it in San Jose.
+tool(FindMovies): ok n_results=2
+assistant: Is that Brittany Runs a Marathon okay for you? Or you want to watch Overcomer?
+user: I prefer to go with Brittany Runs a Marathon.
+assistant: That's nice. Shall I book the tickets now?
+user: Yes, I want the same and please book 2 tickets on the 4th for a 3D show.
+assistant: what is your convenient time to watch the show?
+user: Book the show at ten pm.
+assistant: I need your confirmation to book 2 tickets for a 3D show of movie Brittany Runs a Marathon on March 4th in San Jose at 10 pm.
+user: That is okay to proceed. Also I want to know the address and cost details.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, I was not able to book the tickets as you required. How can I assist you further?
+user: Please try for some other time like half past 10 in the night on March 5th for a regular show.
+assistant: I need your confirmation to book 2 tickets for a regular show of Movie Brittany Runs a Marathon on March 5th in San Jose at 10:30 pm.
+user: That is confirmed to proceed.
+tool(BuyMovieTickets): ok n_results=1
+assistant: I have successfully booked the tickets.
+user: Thanks a lot.
+assistant: Anything else you need?
+user: Nothing for now and thanks.
+assistant: Have a great day.

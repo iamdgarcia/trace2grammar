@@ -1,0 +1,31 @@
+user: Let's search for a train ticket please.
+assistant: I can help with that, but first I need to know which city you want to travel to and depart from. Also do you know the date you want to leave on?
+user: I need a ticket from San Francisco to Fresno, CA for the 7th.
+tool(FindTrains): ok n_results=8
+assistant: I understand, There are 8 trains that may work for you. There is a train departing at 6:20 am for a total of $56.
+user: Are there any other options?
+assistant: There is a train departing at 4 pm for a total of $62.
+user: What is the name of the station i would arrive to?
+assistant: you would arrive at Fresno Station.
+user: I would like to find some fun stuff to do on that day. what can you recommend?
+assistant: Any particular preference such as music or parks?
+user: I would really enjoy a Musical performance
+tool(FindEvents): ok n_results=1
+assistant: There is 1 event in Brockhampton that is pretty popular. This event is taking place at Rainbow ballroom on March 12th at 6 pm.
+user: What is the address of the venue and how much is 1 ticket?
+assistant: The tickets are $25 each, and located at 1725 Broadway Street
+user: That sounds pretty good to me. Can you show me some other attractions as well.
+tool(FindAttractions): ok n_results=1
+assistant: Sure, there is also Blackbeard's Family Entertainment, this is a theme park.
+user: Is this place kid friendly? also is there a fee to get in?
+assistant: Yes, there is an entry fee. This venue is not appropriate for kids
+user: Thanks for that. Locate other attractions, I would prefer a historical spot if possible.
+tool(FindAttractions): ok n_results=1
+assistant: I found 1 attraction that may work for you. There is Forestiere Underground Gardens. This is a Historical Landmark.
+user: ok thanks. I would need to locate a house to stay at out there. This rental would be for just one person. Please make sure there is a laundry service available.
+tool(SearchHouse): ok n_results=4
+assistant: There are 4 houses that meet your search requirement, i would suggest first 1055 Van Ness Avenue with a rating of 3.8.
+user: This sounds perfect
+assistant: Should we book it now?
+user: NO, i was just curious. that will be all for now.
+assistant: ok, have a good day

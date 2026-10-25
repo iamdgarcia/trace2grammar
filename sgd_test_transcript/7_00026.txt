@@ -1,0 +1,12 @@
+user: I want to check weather in Sacramento
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 82 Fahrenheit and it has a 26 percent chance to rain
+user: What about humidity
+assistant: It's around 27 percent
+user: What about Portland on 12th of march
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 72 degrees Fahrenheit with a 16 percent chance to rain
+user: How windy it's gonna be in there
+assistant: It's 11 miles per hour
+user: Great. Thanks that's all for now
+assistant: Cheers and regards

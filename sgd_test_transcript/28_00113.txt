@@ -1,0 +1,41 @@
+user: Can you find me some attractions to visit?
+assistant: In which city are you trying to find attractions?
+user: Find me attractions in Sydney, NSW.
+tool(FindAttractions): ok n_results=10
+assistant: If you would like to visit a Sports Venue you should probably check out the ANZ Stadium.
+user: Can I have their phone number please?
+assistant: Their phone number is 2 8765 2000.
+user: Great, thank you! Can you find me a rental car there that I can use from the 4th?
+assistant: At what time do you want to pick up the car and until when will you be needing it?
+user: I'll pick it up at 1:30 in the afternoon and I need it till the 5th.
+assistant: Will you be picking it up from Sydney?
+user: Yes, that is correct.
+tool(GetCarsAvailable): ok n_results=9
+assistant: Of the 9 cars that are available, would you like to consider a Fiat Panda Hatchback that is available for pickup from the Kingsford Smith International Airport?
+user: How much does it cost per day?
+assistant: The rental charges are $27.00 per day.
+user: Can you find something else, preferably a Sedan?
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 cars based on your preferences. There is a nice Hyundai Ioniq Sedan available at the Kingsford Smith International Airport.
+user: Sounds good to me. I'd like to reserve that car.
+assistant: Should I add insurance?
+user: No, I'll skip that.
+assistant: Please confirm that you would like to book a Sedan without insurance, and that you will be picking it up at 1:30 pm on March 4th from the Kingsford Smith International Airport and dropping it off on March 5th.
+user: On second thoughts, I think I'll get insurance.
+assistant: Sure. So, you want to add insurance and you will pick up the car at 1:30 pm, is that correct?
+user: Yes, that sounds perfect.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been successfully reserved.
+user: How much do they charge per day?
+assistant: It comes to $43.00 per day.
+user: Thank you for the assistance.
+assistant: What else can I do for you today?
+user: Can you share the location of the ANZ Stadium with Harold?
+assistant: Are you sure that you want to share the location of ANZ Stadium with Harold?
+user: Yes, please go ahead.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thank you very much. That was really helpful.
+assistant: Is there anything else I can assist you with?
+user: No, thank you. That's all I need for now.
+assistant: Have a great day!

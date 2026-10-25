@@ -1,0 +1,35 @@
+user: I have planned to go for a short trip for which I need to find a Train. I want you to search for the one suitable to me.
+assistant: From which City you want to book the train? Or let me know your current location.
+user: Find me something in LA.
+assistant: Where are you going to visit? and When do you start your travel?
+user: I am planning to visit Anaheim, CA and find me a train on 10th of March.
+tool(FindTrains): ok n_results=10
+assistant: I got a train which is going to depart at 6 am and the ticket cost for the same is $34. Do you want to travel in this train?
+user: No, that time is not convenient to me. Search for something else.
+assistant: What about the one at 6:10 am for the ticket cost $33 in total?.
+user: No, please search for something else for the date on March 7th and I want to book 1 ticket.
+tool(FindTrains): ok n_results=10
+assistant: Do you want to travel on a train at 6:30 am for the ticket cost $31 in total.
+user: I have to decide. Let me know the origin station of this train.
+assistant: This train will leave from Union Station.
+user: That's okay.
+assistant: What else do you want to do now?
+user: I want to book the tickets now and I need Value tickets with trip insurance.
+assistant: Please confirm to book 1 value ticket on the train which is leaving from Los Angeles on March 7th at 6:30 am to Anaheim with trip insurance.
+user: That is correct to proceed.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have booked the tickets successfully.
+user: Thanks for your help. Could you search for some interesting events on that day that is March 14th. I prefer something like Play.
+tool(FindEvents): ok n_results=1
+assistant: What about an event like Jesus Christ Superstar will be taking place at Stage Door Repertory Theatre on March 14th at 6 pm?
+user: Yes, that is okay to me.
+assistant: Shall I book the tickets to this event?
+user: I will ask it later.
+assistant: What do you want me to do now?
+user: I want to share a location to Barbara.
+assistant: I need your confirmation to share the location of Stage Door Repertory Theatre with Barbara.
+user: Yes, please proceed.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the location.
+user: Thanks for your help and that's all I want.
+assistant: Have a great day.

@@ -1,0 +1,19 @@
+user: I am interested in seeing an Imax show, preferrably a cartoon movie. Would you search for this in Santa Rosa?
+tool(FindMovies): ok n_results=1
+assistant: Would you be interested in Toy Story 4?
+user: I would love to see Toy Story Four and would like to buy tickets.
+assistant: Do you have a particular date and time you would like to see this movie? Also, how many tickets are you wanting to purchase?
+user: I am interested in seeing the movie on the 4th at the quarter to 5 in the evening show and would lke 3 tickets.
+assistant: Please confirm you would like 3 tickets to the March 4th Imax Toy Story 4 movie at 4:45 pm in Santa Rosa.
+user: Yes, that is right. What is the ticket price?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Sorry, unfortunately the purchase did not go through. Is there anything else I can assist you with today?
+user: Would you please try purchasing the tickets again but for 1 ticket to the quarter past 4 in the evening movie later today?
+assistant: Please confirm you want to buy 1 ticket for the March 1st Toy Story 4 imax movie starting at 4:15 pm in Santa Rosa.
+user: That is correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your ticket purchase is confirmed.
+user: Thank you for your assistance.
+assistant: Do you need anything else today?
+user: Not at this time. Thank you for your assistance.
+assistant: Your welcome! Enjoy the day!

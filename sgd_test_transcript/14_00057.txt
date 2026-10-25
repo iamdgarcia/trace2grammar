@@ -1,0 +1,15 @@
+user: I want to find a movie to watch with Ving Rhames.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. What about Pulp Fiction? It is rated 92 out of 100.
+user: Sounds good. I want to find some songs now.
+tool(LookupMusic): ok n_results=10
+assistant: What about Colouring This Life by Vybz Kartel from the album King of the Dancehall?
+user: Yes, sounds good.
+assistant: Do you want to play the song?
+user: yes, please.
+assistant: Please confirm: playing the song Colouring This Life in the living room.
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Music is playing. Enjoy.
+user: Thanks so much.
+assistant: Have a great day!

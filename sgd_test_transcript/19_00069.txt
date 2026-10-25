@@ -1,0 +1,33 @@
+user: I would like to rent a car.
+assistant: When do you want to pick it up?
+user: I want to pick it up at 13:30 next Wednesday.
+assistant: How long do you want to rent the car, and from which city?
+user: I need it until the 9th of March in Sacramento, CA.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available including an SUV Alfa Romeo Stelvio at Sacramento Valley Station.
+user: What is the daily cost?
+assistant: The cost is $41.00 per day.
+user: That is perfect. I would also like to buy tickets to an event.
+assistant: How many tickets do you need? What date is the event?
+user: I want three tickets to an event on the 5th of March.
+assistant: What event do you want to attend?
+user: I want to go to the Chanticleer concert.
+assistant: What city are you looking in?
+user: I am looking for a concert in or near Belvedere.
+assistant: Please confirm you want 3 tickets to the Chanticleer concert on March 5th in Belvedere.
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been successfully purchased. Have fun!
+user: Where is the venue? How much did the tickets cost?
+assistant: The tickets cost $30 each and the concert is at 3 Bayview Avenue.
+user: Thank you very much. Can I reserve the car rental?
+assistant: Do you need to add insurance?
+user: No thank you.
+assistant: Please confirm you want to pick up the SUV from Sacramento Valley Station on March 6th at 1:30 pm and return on March 9th.
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: The reservation is successful.
+user: Thank you very much.
+assistant: May I further assist you?
+user: No, that will be all.
+assistant: Bye!

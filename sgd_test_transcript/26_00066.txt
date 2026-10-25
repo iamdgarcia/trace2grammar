@@ -1,0 +1,32 @@
+user: I want 4 tickets on a round trip flight from ATL. Look for Economy class tickets.
+assistant: Where are you going? When will you return?
+user: I will go to SFO and return on the 13th of this month.
+assistant: Which date would you like to travel?
+user: Start my travel on 6th of March.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Do you want to fly with American Airlines? The outbound flight takes off at 3:45 pm with a layover. The returning fliht takes off at 4 am and costs $354.
+user: When will my flight arrive at the destination and when it returns when will it arrive?
+assistant: The outbound flight arrives at 6:11 pm while the returning flight arrives at 2:04 pm.
+user: Sounds good. Find me a house to stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 houses available. There's a nice house at 1095 Market Street with a 4.0 rating.
+user: What is the contact number for this place? Is laundry service available?
+assistant: Yes there is laundry service and the phone number is +1 415-829-0000
+user: That sounds great.
+assistant: Do you want to book it
+user: Yes, book the house.
+assistant: How many people are there in your group? Are you checking in on March 6th and checkin out on March 13th?
+user: Sounds good. I want to check out on 9th of March. There are 3 in my party.
+assistant: Please confirm that you are going to San Francisco and that there are 3 in your group. You'll check in March 6th and check out March 9th. Is that right?
+user: No, make the check out on March 11th.
+assistant: Could you confirm that there are 3 people in your group and that you will check out on March 11th?
+user: No, I would like to check in on 9th of March for 1.
+assistant: Could you confirm that there ies 1 person in your group and that you will check in March 9th?
+user: Sounds good.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was successfully made.
+user: Thank you for helping. WOuld you show me some attractions there? I want something free.
+tool(FindAttractions): ok n_results=10
+assistant: Check out Alcatraz. It's a Historical Landmark.
+user: Sounds great. That's all, bye for now.
+assistant: Have a good time!

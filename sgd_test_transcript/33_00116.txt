@@ -1,0 +1,19 @@
+user: Hi, are there any free performance venue I can visit in London?
+tool(FindAttractions): ok n_results=9
+assistant: Yes, how about a Performing Arts Venue called Alexandra Palace?
+user: Are they child-friendly and may I have their contact number please?
+assistant: No, this is not exactly child-friendly, but you can contact them at 20 8365 2121.
+user: Sure, could you get me a house there too?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available, one of which has a 4.3 rating at 1 Addington Street.
+user: That sounds perfect!
+assistant: Could I further assist you then?
+user: Could you get me a round trip flight on March 2nd there please?
+assistant: Where will you be departing from?
+user: Likely from Washington.
+assistant: And which date will you be returning?
+user: Likely on the 14th, I suppose.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Would you like an American Airlines flight departing at 4:30 pm and returning at 12:35 pm costing $494?
+user: Sounds great, but that is all I need.
+assistant: Have a great day ahead!

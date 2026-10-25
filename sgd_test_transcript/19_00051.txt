@@ -1,0 +1,19 @@
+user: I want to find a rental car in Washington, starting on the 5th. I'm fine with any type of car.
+assistant: How long do you want the car, and what time do you want to pick it up?
+user: I'd like to pick it up at 4:30 pm and I'll need it until March 7th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice car available at Union Station. It is an Alfa Romeo Stelvio SUV.
+user: That sounds good.
+assistant: Is there something else I can help with?
+user: How about buses going there?
+assistant: Where are you leaving from and when do you plan to leave?
+user: I am leaving from NY on the 1st of March.
+tool(FindBus): ok n_results=8
+assistant: I have found 8 buses for you. There is one departing at 6 am and it costs $42.
+user: Sounds good. I would like to find a one-way flight there. Can you find me three economy tickets going on the 2nd of this month?
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I have found a direct flight with American Airlines that departs at 5 pm. Each ticket costs $84.
+user: When does the flight arrive?
+assistant: The flight arrives at 6:10 pm.
+user: Sounds good, thank you. That is all I need for now.
+assistant: Okay, have a good day.

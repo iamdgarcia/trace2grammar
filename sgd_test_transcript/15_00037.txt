@@ -1,0 +1,19 @@
+user: I need an apartment or house to live in.
+assistant: In what area do you want to be?
+user: I need it to be Sunnyvale.
+assistant: How many bed/baths do you want? Do you want to rent or buy?
+user: I need to buy a two bed, two bath place.
+tool(FindHomeByArea): ok n_results=10
+assistant: Well, there is a place at Arbor Terrace Apartments on 555 East El Camino Real, for $2,650,000.
+user: Fine, I'll take a look, how about a visit on the 10th?
+assistant: To be sure: Visit Arbor Terrace Apartments on March 10th?
+user: You got it.
+tool(ScheduleVisit): ok n_results=1
+assistant: You are scheduled.
+user: Fine, show me my alarms now.
+tool(GetAlarms): ok n_results=4
+assistant: Nex up is and alarm for 10:30 am for your commute.
+user: Fine, that's good.
+assistant: What else for you?
+user: Not anything.
+assistant: Great have a good one.

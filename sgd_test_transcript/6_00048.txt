@@ -1,0 +1,16 @@
+user: Hi, I am in need of a salon.
+assistant: A salon in what city please?
+user: Somewhere in SFO would be great.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 San Francisco salons I can suggest. One possibility is 1512 Barber Shop.
+user: No, how about something else? I need a unisex place and I think I should be looking in Mountain View instead.
+tool(FindProvider): ok n_results=6
+assistant: Christine'S Salon is a popular option in Mountain View.
+user: That may work. Can you tell me the address and also what they're rated on average?
+assistant: The salon, which is located at 2425 California Street # C, has a 4.4 average rating.
+user: Okay, that should be good enough.
+assistant: May I set an appointment for you then?
+user: Not just yet, but thanks for asking.
+assistant: Of course. How else may I help you?
+user: That's all I need help with right now.
+assistant: Very good, thank you.

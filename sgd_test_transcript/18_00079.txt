@@ -1,0 +1,27 @@
+user: Search for a hotel for me.
+assistant: What city shall I search in?
+user: Search for hotels in Sydney.
+tool(SearchHotel): ok n_results=10
+assistant: 1831 Boutique Hotel has 3 stars and is in Sydney.
+user: What is the per night room cost and where is the venue located?
+assistant: They are located at 631-635 George Street and a room is $225 a night.
+user: Can you find a four star hotel?
+tool(SearchHotel): ok n_results=10
+assistant: 28 Hotel Sydney is a 4 star hotel in Sydney.
+user: What else can you find? I am only interested in 1 room.
+tool(SearchHotel): ok n_results=9
+assistant: 57 Hotel is a 4 star hotel and is 1 of 9 search results.
+user: That works for me. What will the weather be like there on the 12th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature that day is 101 degrees with a 2 percent chance of precipitation.
+user: I see. Book that hotel for me.
+assistant: Are you checking in March 12th and what date are you leaving?
+user: I am arriving on the 7th and will stay for 5 days.
+assistant: You want 1 room for 5 days at 57 Hotel in Sydney with an arrival date of March 7th, correct?
+user: No, I am only staying for four days.
+assistant: You will be staying for 4 days in Sydney, correct?
+user: That is right. Can you tell the cost of the room per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Your room is confirmed. The cost per room is $256 a night.
+user: Thanks a bunch. That is everything.
+assistant: Have a great day.

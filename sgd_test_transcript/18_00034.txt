@@ -1,0 +1,27 @@
+user: I need help finding a therapist.
+assistant: What kind of therapist are you looking for and in what city?
+user: I'd like to find a Psychologist in Redwood City.
+tool(FindProvider): ok n_results=9
+assistant: Becker Hubert J. is a Psychologist in Redwood City.
+user: Great, thank you.
+assistant: Is there anything else you need?
+user: Can you make me an appointment for 10:30 am on March 7th?
+assistant: To confirm: You want an appointment with Becker Hubert J at 10:30 am on March 7th.
+user: On second thought, make it the 10th of March.
+assistant: Okay. To verify: You want an appointment with Becker Hubert J on March 10th.
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: You're appointment has been scheduled. You will receive a confirmation email soon.
+user: What's the address and phone number?
+assistant: 1150 Veterans Boulevard and the number is 650-299-4827.
+user: Thank you! Can you order a cab for me to go there?
+assistant: How many will be in the cab and what type do you prefer?
+user: There will be two of us and I want a shared ride.
+assistant: To verify: You want a pool ride for 2 to 1150 Veterans Boulevard.
+user: Yes. How long will it take to get here and how much is the charge?
+tool(GetRide): ok n_results=1
+assistant: The cab is on its way and should be here in 6 minutes. The cost will be $8.73.
+user: Thank you so much!
+assistant: Is there anything else you needed?
+user: No thanks. I appreciate your help.
+assistant: Have a great day.

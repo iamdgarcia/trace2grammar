@@ -1,0 +1,31 @@
+user: I would like to reserve tickets to an event.
+assistant: What particular city should I search?
+user: I would like something around Vegas.
+assistant: What event are you interested in and what number of tickets do yo want?
+user: I would like four tickets for Adam London as he is a good one.
+assistant: Would you have a preferred date for the event?
+user: I would like next Thursday.
+assistant: Please confirm details that you are booking 4 tickets for Adam London March 7th in Las Vegas.
+user: Yes, that will work for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time there.
+user: Where is the venue and what is the cost of one ticket?
+assistant: The ticket is $40 and the venue is at 301 Fremont Street.
+user: Thanks so much for the help. What about the buses going there?
+assistant: Where are you departing from and are you leaving on March 7th?
+user: I will be planning to leave on the 3rd from San Francisco.
+tool(FindBus): ok n_results=6
+assistant: I have 6 buses for you. What about the one bus departing at 7:50 am costing $50?
+user: What station will it arrive at?
+assistant: It will be arriving at Union Plaza.
+user: What station will it depart from and is it a direct bus?
+assistant: It is a direct bus leaving from Transbay Terminal.
+user: That sounds good.
+assistant: Would you like to buy tickets for this bus?
+user: Yes, I'd like to reserve a seat.
+assistant: Please confirm details that you want a ticket on the bus leaving from San Francisco to Las Vegas leaving March 3rd at 7:50 am for 4 people without extra luggage.
+user: Yes, that will work for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed.
+user: Thanks so much for the help. That is all I will need.
+assistant: Have a nice day.

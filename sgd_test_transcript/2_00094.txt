@@ -1,0 +1,9 @@
+user: I need a one way flight.
+assistant: From which city would you like to depart?
+user: I need flights from NYC.
+assistant: On which date would you like to travel? What is your destination?
+user: I need to travel on the 13th to Warsaw.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Would you like to fly with American Airlines? There is a great flight option at 11:20 AM. This is a connecting flight. The ticket price is $360.
+user: That sounds good, then. Thanks.
+assistant: Of course. Have a wonderful day.

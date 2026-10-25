@@ -1,0 +1,19 @@
+user: My friends and I plan to go out of town soon. Could you help me find a bus for three people?
+assistant: Sure. Please tell me your preferred travel date, and the departure and arrival cities.
+user: My preferred departure date is 14th of March, and I'm going from Long Beach, CA to SF.
+tool(FindBus): ok n_results=7
+assistant: Would you like to leave at 6:20 am at a cost of $38?
+user: Please confirm the origin station, and whether the bus is a one-stop bus.
+assistant: The origin station is Downtown Station, and it's a direct bus.
+user: That works for me. Please go ahead and purchase the bus tickets.
+assistant: sure. Let me see if I got everything correctly: You're buying 3 tickets on the March 14th Long Beach to San Francisco bus leaving at 6:20 am, and you have no extra luggage.
+user: No. I'll be carrying excess luggage.
+assistant: Okay, no problem. Please confirm that the bus reservation is for 3 people and you'll be carrying extra luggage.
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your ticket.
+user: Please me find a 4 star hotel around there.
+tool(SearchHotel): ok n_results=10
+assistant: How about the 4 star Argonaut Hotel?
+user: That will work for me. That will be all.
+assistant: Goodbye, and have a wonderful day!

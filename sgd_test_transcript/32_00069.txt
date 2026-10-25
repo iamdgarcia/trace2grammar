@@ -1,0 +1,28 @@
+user: I'm in the mood to hear some music and dance, can you help me find some Pop songs?
+tool(LookupMusic): ok n_results=10
+assistant: The first song on my list of 10 that I think you may like is titled Acapella, from the albulm Pulses, and by the artist Karmin.
+user: Was is released three years back.
+assistant: The description says it was released in the year 2013.
+user: Perfect, that sounds like just my style.
+assistant: Should I go ahead and play the song for you?
+user: Not yet, maybe in a little while.
+assistant: Was there something else I can do for you?
+user: Yes, what about movies? I think I would also like t find a play movie that features Micah Stock.
+tool(FindMovies): ok n_results=1
+assistant: Brittany Runs a Marathon fits that description.
+user: The movie Brittany Runs a Marathon sounds good.
+assistant: Is there anything else I can find for you?
+user: Yes, would you please play the song you previously found on the speaker outside?
+assistant: So you want to hear Acapella playing from the patio?
+user: No, I changed my mind, play it from the living room instead please.
+assistant: Okay, so you would like me to begin playing the song titled Acapella in the living room?
+user: Yes, please and thank you!
+tool(PlayMedia): ok n_results=1
+assistant: Have fun.
+user: One more thing, can you tell me what alarms I have set at the moment?
+tool(GetAlarms): ok n_results=3
+assistant: I see here that you currently have 3 alarms set. The first is set for 8 am labeled running.
+user: Okay, thank you!
+assistant: Is there an alarm you would like me to add to the existing ones?
+user: No, but thank you for asking. That is all I need for now.
+assistant: It was my pleasure.

@@ -1,0 +1,21 @@
+user: i need to travel for a meeting so i need to stay in a hotel. will you find me a hotel?
+assistant: in which city should i search for hotels in?
+user: i'm looking for hotels in san fran.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels matching your needs. THere is a hotel called AMSTERDAM Hostel San Francisco. It is a 1 star hotel.
+user: Whether smoking is allowed in that hotel? WHat is their phone number?
+assistant: THeir phone number is +1 415-673-3277. No, smoking is not allowed on the property.
+user: ok that sounds good. Will you show me some attractions over there? I like museum.
+tool(FindAttractions): ok n_results=10
+assistant: There is an another Museum called Cable car museum.
+user: okay thats good. I like to reserve the hotel before you found. I need 1 rooms. I need to be stay over there for 7 days. I will check in on March 6th.
+assistant: Please check and confirm the following details. HOtel room is booked in Amsterdam Hostel San Francisco.You're check in on March 6th. The number of days need to stay is 7 . the hotel is located in San francisco. You need 1 rooms.
+user: ok thats all i need.Please confirm it. what is their street address?
+tool(ReserveHotel): ok n_results=1
+assistant: Hotel is booked successfully. Their address is 749 Taylor Street.
+user: What is its costs per night?
+assistant: it costs $31 per night.
+user: Thanks a lot for your immense help .
+assistant: Whether is there anything else i need to do?
+user: no , thanks for now.
+assistant: bye , have a wonderful day.

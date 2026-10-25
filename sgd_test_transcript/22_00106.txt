@@ -1,0 +1,45 @@
+user: Hi, I am looking for a therapist. I actually need a psychiatrist.
+assistant: Sure I can help you with that. Which city are you looking in?
+user: I am hoping to find someone in Redwood City.
+tool(FindProvider): ok n_results=1
+assistant: OK, I found 1 therapist in Redwood City. The psychiatrist 's name is Paul Wilson.
+user: Okay, do you happen to have his phone number?
+assistant: Yes the number is 650-299-2015.
+user: Thanks do you have his address also?
+assistant: Yes, the address is 4, Tower Support Bldg, 1150 Veterans Boulevard.
+user: Thanks, that sounds good.
+assistant: Would you like to make an appointment?
+user: Sure, that would be great. I need to make it about 5 pm.
+assistant: OK, which day would you like to go?
+user: The day after tomorrow would work best for me if there is something available.
+assistant: It looks like an appointment is available with Paul Wilson at 5 pm on March 3rd. Would you like to book it?
+user: Yes, perfect.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is booked. You will get an email confirmation soon.
+user: Thanks so much! You've been so much help. Can you also help with a payment request?
+assistant: Yes, what is the amount of the payment?
+user: It is for fifty two bucks and I would like to request the payment from Emma. She borrowed the money from me and hasn't paid me back.
+assistant: Alright, the payment request will be made to Emma for $52. Would you like to make that public.
+user: Sure, maybe then she'll actually pay me back!
+tool(RequestPayment): ok n_results=1
+assistant: The request had been made successfully.
+user: Thanks again! I need one more thing. I need to find a restaurant near there to eat at that day.
+assistant: Ok, do you have a preference for a certain type of food?
+user: Well, a burger sounds really good!
+tool(FindRestaurants): ok n_results=6
+assistant: There are 6 restaurants serving burgers in Redwood City. Aly's on Main is really nice.
+user: Maybe, does the restaurant have outdoor seating? And also how cheap is it?
+assistant: Unfortunately, they don't have outdoor seating. The prices are moderate.
+user: I think that will work.
+assistant: Would you like to make reservations?
+user: Yes, I think I'll make the reservation for about evening 7:15. It will just be me, so table for one.
+assistant: Ok, please confirm that you would like make a reservation for 1 at 7:15 pm on March 3rd at Aly's on Main in Redwood City.
+user: That's correct, and can you tell me their address.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sure, the address is 911 Main Street and the reservation has been made.
+user: I should have asked earlier, but what is the restaurant rated?
+assistant: The rating is about 4.5.
+user: Ok, that is good, I just started to worry a little. Thanks, so much.
+assistant: No problem, do you need help with anything else?
+user: No, that's all I need right now.
+assistant: Ok, enjoy the rest of your day!

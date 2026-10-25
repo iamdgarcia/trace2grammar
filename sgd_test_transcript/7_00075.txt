@@ -1,0 +1,11 @@
+user: Hey. Can you help me purchase two movie tickets to a showing Wednesday next week in Santa Rosa?
+assistant: Sure. Would you like to see an Imax or 3d show? Also at what time would you like to see the show and what show would you like to see?
+user: I would like to see a regular showing of Hustlers. Look for something in Livermore around 21:45.
+assistant: Please confirm the following: You would like 2 tickets to Hustlers on March 6th at 9:45 pm in Livermore. The movie is a regular showing.
+user: Yes, confirmed. What genre is Hustlers?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased. Hustlers is a Drama movie.
+user: Awesome, thank you for your help.
+assistant: No problem. Will that be all you need?
+user: Yes, that will be all for now.
+assistant: Okay, have a nice day.

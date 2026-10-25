@@ -1,0 +1,20 @@
+user: Can you find me a therapist in Santa Rosa
+assistant: Sure, do you need a Family Counselor or a Psychologist?
+user: I need a Psychologist please
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in Santa Rosa including Psychologist Bert Epstein
+user: That's good for now. What's the weather like on the 1st of this month
+tool(GetWeather): ok n_results=1
+assistant: It's gonna be 83 degrees with a 6 percent chance of rain?
+user: Sure, now let's get back to booking that appointment, let's try for 13:30
+assistant: Confirming you want a 1:30 pm meeting with Bert Epstein on March 1st yes?
+user: Yes that works
+tool(BookAppointment): ok n_results=0
+assistant: Sorry I couldn't book that date and time, can I try another one?
+user: Yeah, try for half past 2 in the afternoon?
+assistant: Confirming you want a 2:30 pm on March 1st with Bert Epstein?
+user: Yes please, what's their address and number?
+tool(BookAppointment): ok n_results=0
+assistant: Sorry I couldn't book it or get that info
+user: It's ok, that's all for now
+assistant: Sorry, let me know if I can do anything else for you

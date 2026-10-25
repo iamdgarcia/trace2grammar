@@ -1,0 +1,20 @@
+user: I think I am going crazy. I need a therapist.
+assistant: In which city?
+user: In pleasant Hill.
+assistant: What type of therapist would you like?
+user: I want a psychologist.
+tool(FindProvider): ok n_results=4
+assistant: There are 4 options. There is a psychologist in pleasant Hill called Christopher J. Celio.
+user: That would be awesome.
+assistant: Would you like to see that therapist?
+user: Yes, I would like to schedule the visit.
+assistant: Which date and time would you like to make the appointment for?
+user: I would like to make an appointment for the 2nd of this month for 2 pm.
+assistant: You would like to make an appointment at Christopher J. Celio at 2 pm on March 2nd?
+user: That would be great. What is the location?
+tool(BookAppointment): ok n_results=1
+assistant: I have made the reservation and confirmation would be done via email. The location is 101 Gregory Lane.
+user: Thanks very much.
+assistant: Would you like more assistance?
+user: Not at this time.
+assistant: ok then. Take care.

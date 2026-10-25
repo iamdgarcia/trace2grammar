@@ -1,0 +1,18 @@
+user: I need to find a train please
+assistant: Sure, where are you coming from and on what date?
+user: I want to leave Fresno, CA on the 2nd of March
+assistant: Where are you going again?
+user: I am heading to LA
+tool(FindTrains): ok n_results=9
+assistant: What about the 7:20 am train, it'll be $77 for that one
+user: What stations does it leave and arrive at?
+assistant: It leaves Fresno Station and arrives at Union Station
+user: What other trains will work?
+assistant: How about the 7:40 am that's $69
+user: That's good, I want to also find a house for two people with laundry service with a 3.7 rating or highter
+tool(SearchHouse): ok n_results=10
+assistant: 1020 South Figueroa Street has a 3.7 rating and the rest of your requests
+user: OK, give me their number please
+assistant: Sure, it's +1 213-748-1291
+user: That house looks good, thanks for now
+assistant: Alright ,see you!

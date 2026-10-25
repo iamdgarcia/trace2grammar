@@ -1,0 +1,34 @@
+user: I have no idea what I have planned today. I'd like to see my alarms, please.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 active alarms. One is a 7 am alarm named Jogging.
+user: What other alarms are there?
+assistant: The alarm named Dentist is set for 4:30 pm.
+user: All right, cool. Please find me a restaurant in that area.
+assistant: What type of cuisine would you like? What area should I search in?
+user: Find Bistro restaurants in SF.
+tool(FindRestaurants): ok n_results=10
+assistant: Bistro 10un is a good restaurant located in San Francisco.
+user: Yes, that works.
+assistant: Should I reserve you a table here?
+user: No, thank you.
+assistant: Would you like my help with anything else?
+user: Yes, please reserve me a car there.
+assistant: What type of car would you like? You can say Sedan, SUV, or something else. What pick-up time would be convenient for you? Would you like to add insurance?
+user: I'd like to pick a Hatchback at 10:30. Yes, I'd like insurance.
+assistant: How long would you like to keep the car for? What pick-up location is convenient for you?
+user: I'll drop the car off on March 6th. My preferred pick-up location is Downtown.
+assistant: When would you like to pick the car?
+user: I want it starting tomorrow.
+assistant: Please confirm that you'd like to pick an insured Hatchback car from Downtown on March 2nd at 10:30 am and drop it off on March 6th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car.
+user: Tell me the car's make and model. What's the daily cost?
+assistant: The car is a Renault Clio and the daily cost is $40.00
+user: Thank you very much. You've been very helpful. Wait, I'd like to share the Downtown address with Jean.
+assistant: All right. Let me see if I got everything correctly: You want to share the Downtown address with Jean.
+user: Exactly.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the address.
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Have a wonderful day!

@@ -1,0 +1,19 @@
+user: I need help finding a direct bus for three people going to San Fran.
+assistant: Where would you be leaving from and when would you be planning to leave?
+user: I am planning to leave from LAX, Friday next week.
+tool(FindBus): ok n_results=10
+assistant: I have found 10 buses including a bus that costs $47 that leaves at 6:40 am.
+user: That sounds great. I want to buy some tickets for that bus.
+assistant: So you would like me to buy 3 bus tickets for March 8th leaving Los Angeles going to San Francisco leaving at 6:40 am with no extra luggage?
+user: Yes, I do.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation is all set.
+user: Thanks for that. Can you tell me where I can find a hotel in that area too?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, I have found 10 hotels in that area. Including a 1 star hotel by the name of Amsterdam Hostel San Francisco.
+user: That sounds great.
+assistant: Would you like me to make a reservation?
+user: No. I am all set for now.
+assistant: Is there anything else I can do for you?
+user: No. Thanks for all your help.
+assistant: Goodbye. Have a great day.

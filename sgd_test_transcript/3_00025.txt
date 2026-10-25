@@ -1,0 +1,11 @@
+user: Can you help me find a round trip flight from Atlanta?
+assistant: What is the travel date, and where will you be going?
+user: I'd like to travel to Philly on the 2nd.
+assistant: When would you like your return flight?
+user: I'll be returning on the 9th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found 2 matching flights. Do you want to fly with Delta Airlines? The flight will depart at 6:05 am. It's a connecting flight. The return flight will leave at 3 pm. Tickets are $265.
+user: That sounds great.
+assistant: Do you need anything else?
+user: No thank you, that will be all!
+assistant: Have a wonderful day!

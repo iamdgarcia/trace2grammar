@@ -1,0 +1,23 @@
+user: I'm looking for a place to live. I want 3 baths.
+assistant: Do you want to rent or buy? How many bedrooms are you looking for?
+user: I want a 3 bedroom place to rent.
+assistant: What area do you want to look in?
+user: I'm looking for a property in Fremont.
+tool(FindHomeByArea): ok n_results=10
+assistant: Alborada Apartments is located at 1001 Beethoven Common for $4,100.
+user: That sounds good.
+assistant: Do you want to schedule a visit?
+user: Yes, thank you.
+assistant: When would you like to schedule it?
+user: I want to visit later today.
+assistant: Please confirm: a visit to Alborada Apartments on March 1st.
+user: Yes, that's right. Does the property have a garage? What is the phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled. There is not a garage. The phone number is 510-797-1800.
+user: Can you tell me what my alarms are.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm named workout set for 9:30 am.
+user: Ok, thank you.
+assistant: Do you want to add one?
+user: No, not now. That's all.
+assistant: Have a great day!

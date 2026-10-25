@@ -1,0 +1,31 @@
+user: Can you find me a music event?
+assistant: In which city would you like me to search?
+user: I need an event in NYC please.
+tool(FindEvents): ok n_results=10
+assistant: Abbi Jacobson is taking place at Kaufmann Concert Hall on March 11th at 7:30 pm.
+user: How much are the tickets? What is the venue address?
+assistant: The venue is at 1395 Lexington Avenue and tickets are $60.
+user: These are good but can you find me a drama event?
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events, one is Acting for Teens at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm.
+user: What else can you find?
+assistant: Advanced Acting Scene Study will be at TGW Acting Studio on March 10th at 4:30 pm.
+user: Great please look for a house for me to rent.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 available, one is a 4.4 rating at 100 Greenwich Street.
+user: Sounds good thank you.
+assistant: Is there anything more I can do for you?
+user: I need a direct bus for 1 departing later today.
+assistant: From where are you leaving?
+user: I am departing from Philly.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses departing at 9 am $23.
+user: Perfect, I want to purchase tickets to the event please.
+assistant: You want tickets to Advanced Acting Scene Study for 1 on March 10th in New York, is that correct?
+user: Yes that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed at 358 West 44th Street.
+user: How much is one ticket?
+assistant: Tickets are $20 each.
+user: Thanks, that is all I needed.
+assistant: Have a wonderful day.

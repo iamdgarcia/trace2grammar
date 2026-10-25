@@ -1,0 +1,27 @@
+user: I want to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: What do you think of After The Wedding? Its rating averages 43 out of 100.
+user: Who performed in this movie and who directed it?
+assistant: Doris McCarthy acted in the movie and it was directed by Bart Freundlich.
+user: That sounds good. I would also like find a restaurant there.
+assistant: What type of food are you interested in? Which location do you want me to look in?
+user: Find restaurants for me in Oakland that serve Freshwater Fish.
+tool(FindRestaurants): ok n_results=7
+assistant: Alamar Kitchen & Bar is a good restaurant in Oakland.
+user: Are there other restaurants you can recommend? I would like to find one with a price that is tagged economical.
+tool(FindRestaurants): ok n_results=6
+assistant: Judoku Sushi is a good restaurant located in Oakland.
+user: What is the user rating of this restaurant? What is its address?
+assistant: The user rating is around 4.5 and the street address is 3314 Piedmont Avenue.
+user: Yes, that's fine. I would also like to book a table at a restaurant.
+assistant: What time would you like the reservation to be for?
+user: Set the reservation for 7:15 pm.
+assistant: Please confirm these details for me: You want to book a table for 2 people at Judoku Sushi in Oakland on March 1st at 7:15 pm.
+user: Yes that is fine. What is the phone number there? Do they offer outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The phone number is 510-645-1912. They do offer outdoor seating. I unfortunately was not able to make a reservation. Judoku Sushi is a good restaurant. Do you want me to try to make a reservation for 2 people on March 1st at 7:30 pm?
+user: Yes, that would be fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been successfully made.
+user: Thanks very much. That is all I needed.
+assistant: Have a wonderful day.

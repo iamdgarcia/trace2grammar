@@ -1,0 +1,24 @@
+user: I want to find a therapist in Los Gatos or somewhere near there.
+assistant: What type of therapist do you need? Do you need a massage therapist, psychiatrist, psychologist or something else?
+user: I want to find a psychiatrist in Los Gatos or somewhere near Los Gatos.
+tool(FindProvider): ok n_results=2
+assistant: Larkin Matt is a psychiatrist in Los Gatos. That practice is accepting new patients.
+user: Can you book an appointment for me for Tuesday next week or the next Tuesday after that?
+assistant: What time of day would work best?
+user: If it could be around quarter past 12 in the afternoon, that would be the absolute best.
+assistant: Please confirm the following information: You want an appointment with Larkin Matt on March 5th at 12:15 pm.
+user: Yes. That would be perfect.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry. An appointment is not available at that exact time. Would you like an appointment with Larkin Matt on March 5th at 12 pm?
+user: Oh, yes, that work work also. Thanks.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment with Dr. Larkin has been confirmed. You will receive an email confirmation.
+user: Great. Thanks. Could you also book a cab to 301 Los Gatos-Saratoga Road. It's just for me, so one passenger.
+assistant: Would you like a pool, luxury, or any other type of ride?
+user: I think I would like a luxurious ride.
+assistant: Please confirm the following information: You need a luxury ride for 1 person to 301 Los Gatos-Saratoga Road.
+user: Yes, that's what I need. Could you let me know how much that will cost?
+tool(GetRide): ok n_results=1
+assistant: The cost for the ride will be $32.68. The ride has been booked and it is on it's way.
+user: Great. That's all I need. Thanks.
+assistant: Enjoy the rest of your day.

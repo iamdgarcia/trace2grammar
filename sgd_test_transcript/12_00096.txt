@@ -1,0 +1,19 @@
+user: Hey, I'm going on a short trip. Can you help me find a bus?
+assistant: What's the destination?
+user: It's Vancouver, BC.
+assistant: When are you leaving and from where?
+user: I'm leaving from Seattle, WA on the 1st of March.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses that may suit you. There's one departing at 6:10 am which costs $29.
+user: In what station does it arrive at? Does it have many stops?
+assistant: It's a direct bus, so no stops. It arrives at Pacific Central Station.
+user: Sounds good. Can you help me buy a ticket for 1?
+assistant: So 1 ticket on a bus leaving Seattle towards Vancouver on March 1st at 6:10 am. Is that correct?
+user: Yes, that's all right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket was sucessfully booked.
+user: Thanks a lot. Can you help me find a hotel in which I can stay there too?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10. There's a great 3 stars one at the Atrium Inn Vancouver. I think you'll love it.
+user: Sounds good. That's all, thank you.
+assistant: Have a great day, goodbye!

@@ -1,0 +1,26 @@
+user: I want to search for some nice attractions to visit and especially I like Wildlife spot. Please find the one with free entrance and child-friendly.
+assistant: Do you have any particular City in your mind to search for the attractions or tell me your convenient place to search the same.
+user: Search it in SF.
+tool(FindAttractions): ok n_results=1
+assistant: What about a Nature Preserve. I got 1 named Aquarium of the Bay. Do you like to visit this place?
+user: That's nice. Can you get me their contact number?
+assistant: Yes, please note it as 415-623-5300
+user: Sounds good. Now I need your help to search for a movie to watch and I want the one at AMC Kabuki 8. Please search for a movie with Eccentric Story and I prefer regular Show.
+tool(FindMovies): ok n_results=1
+assistant: I searched as per wish and got 1 result that is Once Upon a Time In Hollywood. Do you like to watch this movie?
+user: Yes, Once upon a time is good movie and I choose this.
+assistant: Shall I book the tickets now?
+user: No, may be later. Now, I want to watch a movie online for which I need your help to search for the one like Action movies featuring Roman Reigns.
+tool(FindMovies): ok n_results=1
+assistant: What about Hobbs and shaw? this is the 1 I got for you.
+user: Hobbs and Shaw is okay to me. Can you play it now to watch.
+assistant: Yes, I need your confirmation to play the movie Hobbs and Shaw with English subtitles.
+user: Please play it with French subtitles and I am convenient in this language.
+assistant: That's okay. Please confirm to play Hobbs and Shaw with French subtitles.
+user: That is correct. Please proceed.
+tool(PlayMovie): ok n_results=1
+assistant: The movie was started playing and you can enjoy it now.
+user: Thank you so much for your help.
+assistant: Anything else you need?
+user: Nothing for now and thanks. Bye.
+assistant: Have a great day.

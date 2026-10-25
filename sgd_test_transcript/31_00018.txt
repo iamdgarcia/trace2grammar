@@ -1,0 +1,38 @@
+user: I'd like to find a salon.
+assistant: In which city should I look in?
+user: I'd like to find one in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. One nice salon is Atelier Salon Willow Glen in San Jose.
+user: Could you help me find a different one? I'm looking for a unisex salon.
+tool(FindProvider): ok n_results=9
+assistant: I found 9 salons for you. One nice salon is Barba & Co. San Jose in San Jose.
+user: What is their address?
+assistant: Their address is 1775 Park Avenue./
+user: That sounds great.
+assistant: Did you want to book an appointment here?
+user: Perhaps later.
+assistant: Did you need help with anything else?
+user: I'd also like to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: What do you think about 47 Meters Down: Uncaged, Ad Astra, or After The Wedding?
+user: I'd like to find some other movies and any kind of show is fine.
+tool(FindMovies): ok n_results=10
+assistant: I also found Angel Has Fallen, Brittany Runs a Marathon, and Fiddler: A Miracle of Miracles.
+user: Fiddler: A Miracle of Miracles sounds perfect. What times were available? I'd like to watch it at 3 Below Theaters and Lounge on the 4th.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 showtime for you. One show is 3 Below Theaters And Lounge at 4:30 pm.
+user: What kind of movie is it and where is the theater located?
+assistant: It's a Documentary and the theater is at 288 South 2nd Street.
+user: That sounds good.
+assistant: Did you want to buy tickets?
+user: No, not right now, but I'd like to book an appointment for the salon you found on that day.
+assistant: When did you want to book it?
+user: I'd like it for 2 in the afternoon.
+assistant: Please confirm you're booking an appointment at Barba & Co. San Jose on March 4th at 2 pm.
+user: Yes, that is correct. What is their average rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. Their average rating is 5.0.
+user: What is their phone number?
+assistant: It is 669-258-9601.
+user: Thank you. That is all I need.
+assistant: Have a good day.

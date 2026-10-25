@@ -1,0 +1,14 @@
+user: Hey, I need to go on a short trip. Can you help me find a train?
+assistant: Sure! What's the destination?
+user: The destination is Anaheim.
+assistant: When do you plan to leave and from what city?
+user: I plan to leave from Fresno on the 1st of this month.
+tool(FindTrains): ok n_results=6
+assistant: I found a ticket there departing at 7 am. It costs $72 dollars in total.
+user: In which stations does it departs from and arrives at?
+assistant: It leaves from Fresno Station towards the Anaheim Intermodal Center,
+user: Any other trains available? I just found out I'll actually be needing 4 tickets, the luxurious kind.
+tool(FindTrains): ok n_results=3
+assistant: There are 3 trains that could also work. One of them departs at 9:30 am and it costs $397 total.
+user: Sound great. That's all I need.
+assistant: Talk to you later! Have a great day.

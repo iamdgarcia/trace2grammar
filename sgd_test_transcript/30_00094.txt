@@ -1,0 +1,29 @@
+user: Can you check the weather in Moraga for the 9th of this month please?
+tool(GetWeather): ok n_results=1
+assistant: There's a 3 percent chance of rain and an average temperature of 86.
+user: Can you schedule a visit to Westwood Townhouse Apartments for that day?
+assistant: Sure, just confirm you'd like to schedule a visit to Westwood Townhouse Apartments on March 9th.
+user: Yes, is there 2 bathrooms and a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled. It has 1 bathroom and a garage.
+user: Thanks, can you also get me a car rental?
+assistant: Is it for March 9th as well?
+user: No, the 6th.
+assistant: Do you want insurance?
+user: Yes, please get that.
+assistant: When do you want to drop it off and what kind of car do you prefer?
+user: I'll need it until March 10th and prefer a hatchback.
+assistant: What time do you want to pick it up?
+user: At 12:45 in the afternoon.
+assistant: Where will you pick up?
+user: Heathrow International Airport.
+assistant: Just confirm you'd like to reserve a hatchback for pickup March 6th at 12:45 pm at Heathrow International Airport with a drop off date of March 10th.
+user: Actually, I want a sedan and only need it until the 9th of this month.
+assistant: Confirm you'd like a sedan until March 9th.
+user: Yes, what's the price per day?
+tool(ReserveCar): ok n_results=1
+assistant: I've reserved your sedan. It will be $48.00 a day.
+user: What kind of car?
+assistant: It's a Volvo S90.
+user: Great, that's all for now.
+assistant: Enjoy your day.

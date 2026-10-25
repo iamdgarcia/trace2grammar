@@ -1,0 +1,29 @@
+user: I want to find a restaurant please. I don't care about the price range.
+assistant: Certainly. What kind of cuisine would you like and where shall I search for you?
+user: See if there's anything in Danville please with Southern food.
+tool(FindRestaurants): ok n_results=4
+assistant: How about Blackhawk Grille, which is in Danville?
+user: What kind of a customer rating do they have there?
+assistant: They're rated 4.1.
+user: Okay, how about the address and phone number?
+assistant: Of course. They are located at 3540 Blackhawk Plaza Circle and the contact number is 925-736-4295.
+user: May I get some other recommendations from you? Maybe a place with patio dining, if possible, and somewhere that's reasonably priced.
+tool(FindRestaurants): ok n_results=2
+assistant: I have 2 options to tell you about. Perhaps you'd like Dana's in Danville.
+user: Oh, I think I would.
+assistant: Shall I make reservations for you?
+user: I think you should, yes.
+assistant: What time would you like?
+user: Let's shoot for 5:30 pm.
+assistant: Confirming a table for 2 at Dana's in Danville on March 1st. The booking will be for 5:30 pm.
+user: Actually can you make it for a party of 3 please?
+assistant: Yes, confirming a booking for 3 at Dana's.
+user: Sorry, I also need to move that to the 14th please.
+assistant: Not a problem. Confirming your March 14th booking at Dana's.
+user: Great, thanks. What is the address of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's 416 Sycamore Valley Road. Oh, your reservation is confirmed.
+user: Thanks for taking care of that.
+assistant: My pleasure. May I do anything else for you?
+user: No, I think I'm good.
+assistant: Thank you very much.

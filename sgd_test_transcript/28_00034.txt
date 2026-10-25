@@ -1,0 +1,25 @@
+user: I want to watch a Chris Reilly movie.
+tool(FindMovies): ok n_results=1
+assistant: Official Secrets is a movie with a 78 out of 100 rating.
+user: What genre is this movie and who is the director?
+assistant: Is is a mystery movie directed by Gavin Hood.
+user: Great. Can you help me find a restaurant there?
+assistant: In which city and what type of food are you interested in?
+user: I'm looking for a Spanish restaurant in SFO.
+tool(FindRestaurants): ok n_results=8
+assistant: Alegrias is a restaurant in the San Francisco area.
+user: Do they offer seating outside?
+assistant: No, they do not have outdoor seating.
+user: Okay, that's fine.
+assistant: Would you like to book a table?
+user: Yes, please book it.
+assistant: For what time?
+user: For 7 in the evening.
+assistant: Please confirm you want me to book a table for 2 at Alegrias in San Francisco on March 1st at 7 pm.
+user: Actually, can you make the reservation for eleven am?
+assistant: Please confirm you want me to book the table for 11 am in San Francisco.
+user: Yes, that's right. What's their number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking was a success. Their number is 415-929-8888.
+user: That's all. Thanks.
+assistant: Great. Have a great day.

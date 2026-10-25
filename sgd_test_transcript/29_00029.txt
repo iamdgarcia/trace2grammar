@@ -1,0 +1,28 @@
+user: I need your help in finding 1 hotel room in london, england for my next stay
+tool(SearchHotel): ok n_results=10
+assistant: you got 10 to chose from. one is 45 park lane and it's a 5 star hotel
+user: I love your pick
+assistant: I can book a room for you there
+user: mmmm.... not now. first, I need to book a round trip flight, I'll leave on march 5th
+assistant: where do you want to leave from?
+user: washington
+assistant: when were you thinking to be back?
+user: the chosen date is the 13th of march
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: there's an american airlines flight leaving at 2:55 pm, the return flight is scheduled for 12:45 pm and the ticket is $596
+user: okay, now let's go back to the hotel reservation. I intend to check in on march 9th and I'll be there for five days
+assistant: confirm the next step: you are about to book 1 room at 45 park lane in london. you'll arrive on march 9th and you'll stay for 5 days
+user: that's what I want
+tool(ReserveHotel): ok n_results=1
+assistant: you asked, you got it!
+user: what's the number to call in case I need to reach them?
+assistant: you must dial the number +44 20 7493 4545
+user: thanks. while there, I was thinking about visiting some attractions
+tool(FindAttractions): ok n_results=10
+assistant: there's a historical landmark called 30 st mary axe (the gherkin)
+user: may I bring my children there?
+assistant: yes, you may
+user: cool
+assistant: do you have more requests for me?
+user: no, I'm done with you, bye
+assistant: have a blessed day!

@@ -1,0 +1,23 @@
+user: Can you find me a taxi to take me to 2508.
+assistant: Do you have any specific ride preference, like Pool, Regular, or any other? And how many people are traveling?
+user: I would like a Luxury taxi with seats for 2 people.
+assistant: So you would like to book a Luxury taxi for 2 people, and your destination is 2508, right?
+user: No, that is not right. I need seats for one person.
+assistant: So you would like a taxi for 1 person, going to 2508, correct?
+user: Perfect. That will do.
+tool(GetRide): ok n_results=1
+assistant: Your taxi has been reserved and is en route.
+user: Can you tell me approximately how much time it will take to arrive? And what is the fare for the ride?
+assistant: The taxi should arrive in roughly 13 minutes and the fare is $19.99
+user: Great, thanks so much. Now I want to search for some Pop songs.
+tool(LookupMusic): ok n_results=10
+assistant: There's a nice song by Karmin called Acapella off their Pulses album.
+user: Perfect, I want to hear it!
+assistant: So you would like to hear Acapella in your Living room, right?
+user: Sure, that's exactly right.
+tool(PlayMedia): ok n_results=1
+assistant: Happy listening to your song.
+user: Excellent. Thanks again!
+assistant: Do you need assistance with anything additional?
+user: Nope, I'm all set. thanks
+assistant: Enjoy your day.

@@ -1,0 +1,26 @@
+user: I need a hotel.
+assistant: What city do you need a hotel in?
+user: I need a hotel in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels available in London. There is a 5 star hotel located at 45 Park Lane.
+user: Okay. Now I need to round trip flight to London.
+assistant: What city will you be departing from and will you be departing on March 7th?
+user: I'll be departing from Chicago on the 5th.
+assistant: What date do you need for the return flight?
+user: We will be returning on the 10th of this month. I'm going to need 4 tickets.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: American Airlines has a flight with a layover that leaves Chicago at 5:05 am. The return flight departs at 12:45 pm. The tickets are $622 each.
+user: Okay. Those sound good. I want to reserve two rooms at the hotel you found and we need to check in on the 10th of this month.
+assistant: How many days will you be staying in London?
+user: We need the hotel for 4 nights.
+assistant: Please confirm the following information. You want 2 rooms at the 45 Park Lane hotel in London for 4 nights beginning March 10th.
+user: Yes, that sounds about right.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been booked.
+user: Great. What is a nice tourist attraction near there? I need something that's kid-friendly.
+tool(FindAttractions): ok n_results=9
+assistant: Granary Square is a tourist attraction that would be child-friendly. There are 9 other attractions you might be interested in.
+user: Okay. I'll check into it later.
+assistant: Is there anything else that you need?
+user: Not right now. I'll check in again later. Thanks.
+assistant: You are very welcome.

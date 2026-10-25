@@ -1,0 +1,27 @@
+user: I want to search for some nice events and I need your help to book tickets to a good one.
+assistant: Which type of event you are looking for and in which City? Also let me know your required number of tickets to book the same.
+user: I came to know that The Armando is the interesting event and search for the one like this in Seattle, WA. And I need to book it for 4 persons.
+assistant: And let me know one more thing. What is your convenient event to go for this event?
+user: Search for something on the 7th.
+assistant: Okay. Please confirm to book 4 tickets to the event The Armando on March 7th in Seattle.
+user: That is confirmed to proceed. What is the starting date of this event?
+tool(BuyEventTickets): ok n_results=1
+assistant: It will start at 7:30 pm and I have booked the tickets successfully. Hope you will enjoy there.
+user: Yes, Definitely and thanks for your help. Please also help me to search for a bus to go there I need a direct bus from Portland for the date of 4th of March.
+tool(FindBus): ok n_results=10
+assistant: Yes, I have found some buses and what do you think about the one which is going to depart at 7 am. The ticket cost will come around $33. Is it okay to you?
+user: I think so, but I want to search for some other buses. Do you have any suitable one in your search list?
+assistant: Yes, another bus will leave at 11:20 am for ticket cost $32. Do you like to travel through this bus?
+user: Let me think and I want to know the Station name where this bus will reach finally.
+assistant: It will reach the Westlake Station finally. Any more information you need?
+user: No, but can you search for some other buses?
+assistant: Yes, what about the one which is leaving at 11:50 am for the ticket cost $29? Shall I book this bus?
+user: In the same way, let me know the destination station to decide.
+assistant: Its destination is also at Westlake Station.
+user: That's good and thanks. I want to book this bus and please buy the tickets for me.
+assistant: Once again please confirm to book 4 tickets on the bus from Portland in Seattle on March 4th for the leaving time 11:50 am without any extra luggage.
+user: Its confirmed. Let me know the origin station also.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have booked the tickets and this bus will leave from SW ARthur & 1st station.
+user: Thank you so much for all your help and that's all for now.
+assistant: Have a good day.

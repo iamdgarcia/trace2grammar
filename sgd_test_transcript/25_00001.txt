@@ -1,0 +1,29 @@
+user: I would like to make a payment to Mahmoud for 43 dollars.
+assistant: Are you transferring the money from your app balance or your debit card?
+user: It will be from my master card. I want to make the transfer private.
+assistant: You would like to set up a private payment transaction with Mahmoud for $43 from your credit card, is this correct?
+user: Yes, you got it.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is on its way. The recipient should be able to view the transaction soon.
+user: I would also like to find a restaurant, please.
+assistant: What city would you like to look in?
+user: Look for restaurants in SFO, please.
+assistant: Is there a specific type of food you would prefer?
+user: Yes, find something with Korean Barbeque.
+tool(FindRestaurants): ok n_results=10
+assistant: Aato is a restaurant meeting those criteria in San Francisco.
+user: Do they have outdoor seating? What is the phone number?
+assistant: The restaurant does not have outdoor seating. The phone number is 415-292-2368.
+user: OK, thank you. That will be alright.
+assistant: Would you like to reserve a table there?
+user: Yes, please reserve a table for two at twelve in the afternoon on March 7th. Thank you.
+assistant: You would like to book at table for 2 people at Aato in San Francisco at 12 pm on March 7th, is that correct?
+user: Oh, wait, I meant I need that on March 14th.
+assistant: You would like to reserve for 12 pm March 14th, is this correct?
+user: Yes, thank you.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is booked.
+user: Does the restaurant have vegetarian options on the menu? What is the address?
+assistant: Yes, they have several options for vegetarians. The street address is 1449 Lombard Street.
+user: Thank you very much, that's all for now.
+assistant: Have a great day!

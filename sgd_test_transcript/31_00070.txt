@@ -1,0 +1,30 @@
+user: I am interested in finding a salon in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: You might consider the 17 Jewels Salon, which is in Oakland.
+user: Is there some other salon you can suggest?
+assistant: Another salon you can consider is Benny Adem Grooming Parlor, which is in Oakland.
+user: That seems nice. I would like to make a reservation for an appointment at this salon.
+assistant: Can you tell me the time when you want to have the appointment?
+user: The appointment should be reserved for 12:30 pm.
+assistant: Can you tell me the date when you want to have the appointment?
+user: I will be able to go to the salon on the 14th.
+assistant: Can you please confirm that you want to make a reservation for an appointment at the Benny Adem Grooming Parlor hair stylist for March 14th at 12:30 pm?
+user: That is not right, because the appointment should be for 12th of March at 3:30 pm.
+assistant: Can you please confirm that you want to have the appointment at 3:30 pm on March 12th?
+user: That seems nice. Can you please give me the number I can use to call them, and could you also tell me if the salon is unisex?
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been made. The salon is considered a unisex one, and if you want to call them you can at 510-227-4268.
+user: I appreciate it very much. I also need to find a restaurant for that day so I can eat something.
+assistant: Is there some specific kind of food you are interested in?
+user: I would like a place which serves Diner.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants which you might consider, with one of them being Chop Bar, which is a nice restaurant in Oakland.
+user: Yes, this one seems nice.
+assistant: Do you want to have a table booked for you at this restaurant?
+user: Yes, I would like to make a reservation for a table at 18:45
+assistant: Can you please confirm that you want to book a table for 2 people at the Chop Bar restaurant in Oakland on March 12th at 6:45 pm?
+user: Yes, that is what I want. Can you tell me if the restaurant is considered reasonably priced, and also I want you to give me their phone number that I can use to get in contact with them.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made. This restaurant is considered as a moderate one, and if you want to call them you can at 510-834-2467.
+user: I appreciate it very much. That's all I needed for now.
+assistant: Have a good time!

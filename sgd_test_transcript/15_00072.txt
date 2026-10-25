@@ -1,0 +1,31 @@
+user: Can you search for any therapist in Sausalito?
+assistant: What specialist you are looking for, Psychiatrist or a Family Counselor?
+user: I am looking for a Psychologist.
+tool(FindProvider): ok n_results=1
+assistant: In Sausalito you can consult Richard J. Leary who are Psychologist.
+user: Are there any other?
+tool(FindProvider): ok n_results=0
+assistant: Not more, any other help?
+user: Please try to find a therapist in sunnyvale.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 in Sunnyvale who is a psychologist. His name is Akins Faren R.
+user: Give me their address.
+assistant: It is 990 West Fremont Avenue.
+user: Do you have contact number?
+assistant: Call them at 408-732-4412.
+user: Fine, what is the weather status?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 90 degrees Fahrenheit and chance for rain is 19 percent.
+user: Please fix appointment with the therapist confirmed.
+assistant: You want appointment on March 1st, no?
+user: Yeah, thats right.
+assistant: At which time do you need appointment?
+user: I need it in the morning 11:15.
+assistant: Please confirm your request, you need appointment with Akins Faren R on March 1st at 11:15 am.
+user: Yeah, right.
+tool(BookAppointment): ok n_results=1
+assistant: Appointment fixed as mentioned. You will get an email confirmation regarding it.
+user: Great, thank you.
+assistant: Any other help do you need?
+user: No, thanks a lot.
+assistant: Its my pleasure, keep in touch.

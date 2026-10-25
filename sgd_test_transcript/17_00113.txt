@@ -1,0 +1,31 @@
+user: Can you tell me what the weather will be like in Vancouver on the 4th?
+tool(GetWeather): ok n_results=1
+assistant: It will be 58 degrees fahrenheit with a 49 % of rain.
+user: will it be humid?
+assistant: around 54 % humidity.
+user: ok thanks, now can you help me get a flight there.
+assistant: which dity will you be leaving from?
+user: I need 3 premium economy tickets from LA.
+assistant: will you be leaving on March 4th?
+user: I want to leave this Saturday.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights. There is one with Alaska Airlines leaving at 8:10 am costing $225.
+user: At what time will it arrive at LA?
+assistant: At 11:14 am.
+user: That is fine, now could you help me get a rental car?
+assistant: What date will you return the car and at what time do you want to pick up the car?
+user: The 11th and 3 in the afternoon is when I will pick the car up.
+assistant: Do you need the car from March 2nd?
+user: no 8th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a Sedan Audi A8 available at Pacific Central Station.
+user: Is there anything else?
+assistant: There is a SUV Dacia Duster available at YVR International Airport.
+user: How much is it?
+assistant: It is $51.00 per day.
+user: that sounds fine.
+assistant: Do you want to book the car?
+user: not right now.
+assistant: Can I assist you with anything else?
+user: no that is everything, thanks.
+assistant: have a lovely day.

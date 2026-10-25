@@ -1,0 +1,19 @@
+user: Hello! I'd like to find a house to stay at. Can you help?
+assistant: I'd be happy to help. Where will you be staying?
+user: I will be in Sydney.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available. May I suggest 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia? It has a great average rating of 4.1.
+user: That would be perfect.
+assistant: Can I help you with something else?
+user: Yes, I'd like to book the house for March 5th to March 12th for one person.
+assistant: You'd like to reserve the house in Sydney for 1 person from March 5th until March 12th. Have I got that right?
+user: Yes, that's perfect. Can you tell me their contact number and how much it will be?
+tool(BookHouse): ok n_results=1
+assistant: The total will be $2,205. You may reach them at +61 2 8272 0900. Your reservation has been confirmed and you will be receiving an email with the details soon.
+user: Is there a Museum nearby?
+tool(FindAttractions): ok n_results=8
+assistant: There are 8 that you may like. If you'd like to visit a museum, I'd like to suggest the Art Gallery of New South Wales.
+user: Is there an entrance fee?
+assistant: Yes, there is an entrance fee.
+user: Thank you for that information.
+assistant: You're welcome! Have a wonderful trip.

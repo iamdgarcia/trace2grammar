@@ -1,0 +1,21 @@
+user: I want to see some type of imax show.
+assistant: what location do you prefer?
+user: Give San Rafael a try.
+tool(FindMovies): ok n_results=4
+assistant: Well, how about one of these: A Faithful Man, Hustlers, or Angel has Fallen?
+user: Try A Faithful man. Get me a song first.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 I think you'll love: I like it by Enrique Iglesias from the album Euphoria is one for you.
+user: What year was that put out? What type song is it?
+assistant: It is a 2010 Pop song.
+user: Fine, give it.
+assistant: To confirm: Play I like It in Living room.
+user: Wrong, play it in Kitchen.
+assistant: Fine I have: Play I like It in Kitchen.
+user: Got it, right.
+tool(PlayMedia): ok n_results=1
+assistant: enjoy it.
+user: Thanks so much.
+assistant: What else might you like?
+user: Nothing now.
+assistant: Have a great time, enjoy the music.

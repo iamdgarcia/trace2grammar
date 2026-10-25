@@ -1,0 +1,19 @@
+user: Can you find me some Cambodian restaurants that serve vegetarian food?
+assistant: What location should I search?
+user: Search around Fairfax.
+tool(FindRestaurants): ok n_results=1
+assistant: Siam Lotus is a nice restaurant located in Fairfax.
+user: Can you recommend me some Barbecue restaurants in SF?
+tool(FindRestaurants): ok n_results=10
+assistant: 25 Lusk is a nice restaurant in San Francisco.
+user: That sounds good. I need to book a table.
+assistant: For what time?
+user: Make it for evening 7:30.
+assistant: Confirming that you want a reservation for 2 at 25 Lusk in San Francisco. You want a table for March 1st at 7:30 pm.
+user: Yes. How expensive is the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is pricey. Your reservation is successful.
+user: Thank you very much.
+assistant: Is there anything else that you need?
+user: No. Thank you.
+assistant: You're welcome. Have a good day.

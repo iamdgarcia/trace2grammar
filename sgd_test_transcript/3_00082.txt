@@ -1,0 +1,11 @@
+user: I need a cab, please.
+assistant: What is your destination?
+user: I need to go to the Museum of Astronomy and Related Sciences.
+assistant: How many people will be traveling? And do you prefer a certain type of ride?
+user: It's just me, so one, and a regular ride is fine.
+assistant: Please confirm the following: You need a regular cab for 1 person to the Museum of Astronomy and Related Sciences.
+user: Yes, that's perfect. About how long will it be before the cab gets here?
+tool(GetRide): ok n_results=1
+assistant: The ride is booked and on its way. It will be arriving in approximately 2 minutes.
+user: Wow. That was fast. Thanks for your help.
+assistant: Enjoy your visit to the museum.

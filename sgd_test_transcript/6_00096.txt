@@ -1,0 +1,18 @@
+user: I'm looking for a salon.
+assistant: In which city?
+user: Please find one in Lafayette.
+tool(FindProvider): ok n_results=6
+assistant: 18|8 Fine Men'S Salons - Lafayette is in Lafayette.
+user: Are they a unisex salon and what's their direct line?
+assistant: Yes. It is a unisex salon. They can be reached directly at 925-297-5127.
+user: Great. Please book an appointment for the 14th of March in the evening 4:45.
+assistant: Please confirm you want to book an appointment at 18|8 Fine Men's Salons - Lafayette on March 14th at 4:45 pm.
+user: Yes. That's right and what's their rating?
+tool(BookAppointment): ok n_results=1
+assistant: Their rating is 4.3 and your booking was a success.
+user: Where are they located?
+assistant: They're located at 15 Fiesta Lane.
+user: Thanks for your help.
+assistant: Is there anything else I can help you with?
+user: No. Thanks. Goodbye.
+assistant: Goodbye. Have a great day.

@@ -1,0 +1,36 @@
+user: I want to search for some attractive places to visit and can you find the one which should be the safest place for Kids?
+assistant: Yes, I can. Where do you want to search for the attractions?
+user: I want to find it in SFO.
+tool(FindAttractions): ok n_results=10
+assistant: Okay. I got 10 places. How about a Historical Landmark like Alcatraz?. I think you can try this.
+user: Is it? Okay. Can you search for something else in any type?
+tool(FindAttractions): ok n_results=9
+assistant: Yes, got 9 and what about the one named Aquarium of the Bay which is a Nature preserve?
+user: I think I can choose this one. Let me know their contact number. Also check for the entrance fee, whether it is free?
+assistant: Yes, entrance is free there and you can contact them by 415-623-5300.
+user: That's nice. Thanks for the details. Now, find me a car to go there I need this rental car in SFO from 10th of this month to the 11th.
+assistant: For what time you want to pick up the car?
+user: Book a Hatchback type car to pick up at half past 10 in the morning.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found the same Hatchback Mazda 3 type car which is available for pick up at Salesforce Transit Center. Do you want to rent this car?
+user: Please search for something else and I need the same up to 12th of March.
+tool(GetCarsAvailable): ok n_results=1
+assistant: How about the 1 which is a Hatchback Vauxhaull Astra model and available for pick up at the same Salesforce Transit Center?
+user: I think I will prefer this car. Please book this one.
+assistant: You want to include insurance or not?
+user: No, please don't include it.
+assistant: Okay, confirm once again to book a Hatchback car for pick up at Salesforce Transit Center from March 10th at 10:30 am to March 12th without insurance.
+user: That is confirmed to proceed now.
+tool(ReserveCar): ok n_results=1
+assistant: Your car was successfully booked.
+user: What about the cost for that booking?
+assistant: I have booked it for $22.00 per day.
+user: Thanks and please also share this locatin to Christian.
+assistant: There are two address we discussed now. Which of them has to be shared? whether Aquarium of the Bay or Salesforce Transit center?
+user: Share the address which is Aquarium of the Bay.
+assistant: I need to confirm once again to share the Address Aquarium of the Bay with Christian.
+user: yes, that is perfect.
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared successfully.
+user: Thank you so much. Nothing else.
+assistant: Have a good day.

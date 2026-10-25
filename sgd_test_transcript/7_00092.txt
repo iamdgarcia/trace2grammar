@@ -1,0 +1,15 @@
+user: I have an extra day off work and want to go see a movie. Can you buy me a ticket?
+assistant: Sure, for a regular or 3d showing?
+user: I'd like to see an imax show actually.
+assistant: Ok, where at and what movie? Also, how many tickets do you want?
+user: I'd like to see Chhichhore in Santa Clara. Just one ticket is good.
+assistant: Sure, and what date do you want to watch it?
+user: This would be Tuesday next week.
+assistant: Ok, do you have a preferred time to see it?
+user: Yes, I'd like to go at 22:30 if possible.
+assistant: No problem. To confirm, you'd like to get 1 imax movie ticket for Chhichhore on March 5th at 10:30 pm in Santa Clara, is that right?
+user: Yes, that's right. What kind of movie is it and how much is the ticket?
+tool(BuyMovieTickets): ok n_results=0
+assistant: Oh no, unfortunately the ticket order failed. Is there something else I could help you with?
+user: No, that's all. Thanks anyways.
+assistant: Sure, have a good day.

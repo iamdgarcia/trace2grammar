@@ -1,0 +1,17 @@
+user: Can you help me locate a therapist?
+assistant: Yes I can. Would you be in need of a psychologist or a psychiatrist?
+user: I am in need of a psychologist, located in San Rafael.
+tool(FindProvider): ok n_results=1
+assistant: Would you like to try the psychologist at Rose Light, located in San Rafael?
+user: Yes, that is perfect. What will the weather be like on March 11th?
+tool(GetWeather): ok n_results=1
+assistant: There would be a 1 percent chance for rain, and the temperature will reach 79 degrees.
+user: Great! Can you schedule me an appointment for that day with an available therapist?
+assistant: Yes I can. What is a good time for you?
+user: I need something for 2:15 in the afternoon.
+assistant: Okay, so that will be an appointment for for 2:15 pm on March 11th with Rose Light?
+user: Yes that is correct. Can you also give me the phone number and address please.
+tool(BookAppointment): ok n_results=1
+assistant: Okay, the address is 7 Mount Lassen Drive # D110, and the phone number I have listed is 707-782-1948. I have the calendar in front of me for Rose Light, and on March 11th the only time available is 2:30 pm, would that work?
+user: No, that will be okay. Thank you anyways.
+assistant: No problem, goodbye.

@@ -1,0 +1,23 @@
+user: I need to find a rental car.
+assistant: What will be your pick up date and time?
+user: I want to pick up the car on Friday next week around morning 9:30. I'm looking for cars in Washington.
+assistant: How long will you need the car?
+user: I need it until the 13th of March. I'm fine with any type of car.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I found you 5 cars. How about a nice Sedan Dodge Charger? It is available at Dulles International Airport.
+user: Sounds good. How about buses?
+assistant: What is your departure date?
+user: I'm leaving on the 6th of March.
+assistant: What is your departure city?
+user: I will be leaving from Philadelphia.
+tool(FindBus): ok n_results=8
+assistant: I found 8 buses for you. How about at 6:20 am departure? It costs $25.
+user: How many stops are there on this bus?
+assistant: It is a direct bus.
+user: That sounds good.
+assistant: Would you like to buy tickets for this bus?
+user: No, not now. I'd like to find a one-way flight. Can you find me something on American Airlines? Preferably on Premium Economy class. I want to leave on March 7th.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: I found 1 flight. How about a 7:25 am departure on American Airlines? The ticket costs $238.
+user: Sounds good. That's all I need. Thanks!
+assistant: You're welcome. Have a good day!

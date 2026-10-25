@@ -1,0 +1,21 @@
+user: I am going for a short tour and I want to stay there for a while for which I need a house with laundry service and rating 4.1 or higher. Can you find me the suitable one?
+assistant: Yes, let me know the location that you want to stay so that I can search for a house there.
+user: I want to stay in Portland. Search for a house there.
+tool(SearchHouse): ok n_results=10
+assistant: I got 10 results. I think a house located at 1000 Northeast Multnomah Street with rating 4.1 is the suitable one to you. How about your opinion?
+user: Anything else you have in you options. Also search it for two persons.
+tool(SearchHouse): ok n_results=9
+assistant: Okay, what about a house located at 1150 Northwest 9th Avenue with rating 4.1 which is the good one among the 9 houses that I have searched for you.
+user: Yes, I think this is best. Now I want to book it for me.
+assistant: Until which date you want to book this house?
+user: I need this house until the 9th.
+assistant: Okay. What is your expected check-in date?
+user: I am planning to check it on next Friday.
+assistant: Please confirm to book a house for 2 in Portland from March 8th to March 9th.
+user: This is correct. you can proceed.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully booked the house.
+user: Thank you so much for your help.
+assistant: Anything else you need from me?
+user: No. Thanks and that's all for now.
+assistant: Have a great day.

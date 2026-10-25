@@ -1,0 +1,37 @@
+user: Find me a salon in San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: 10 salons I have that you may like.A nice salon in San Francisco called 1512 Barber Shop.
+user: Tell me the phone number.
+assistant: 415-286-4371 is their phone number.
+user: Find me another salon, please.
+assistant: A nice salon in San Francisco is 20Th Salon And Barber.
+user: Is a unisex salon?Tell me the phone number for this place.
+assistant: Yes, is a unisex salon.415-824-1335 is the phone number.
+user: Yes sounds really good.
+assistant: You want to book an appointment?
+user: No, not now maybe later.
+assistant: With something else may I help you?
+user: I would like to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies for you.What do you think about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Find me something else.I would enjoy to watch at AMC Kabuki 8.
+tool(FindMovies): ok n_results=7
+assistant: What you think about Hustlers, IT Chapter Two or Official Secrets?
+user: Official Secrets sounds perfect.
+assistant: You want to buy tickets?
+user: No,not now.At what time I can watch it?
+assistant: Would you like to watch it on March 3rd?
+user: Yes is very good.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I have found 1 showtimes for this movie.There's one at 4 pm in AMC Kabuki 8.
+user: What type of movie is?
+assistant: This is a Mystery movie.
+user: Sounds okay.Book for me an appointment at the salon that you have just found.
+assistant: At what time you want to be?
+user: At 9:45 am will be okay.
+assistant: You want an appointment at 20Th Salon And Barber on March 3rd at 9:45 am.I;m right?
+user: Yes is good.Tell me the average rating.
+tool(BookAppointment): ok n_results=1
+assistant: Average rating is 4.5.Sorry the appointment could not be achieved.How about an appointment on March 3rd at 10 am because 20Th Salon And Barber is a nice salon.
+user: No.Thank you that's all that I wanted.
+assistant: Have a nice day!

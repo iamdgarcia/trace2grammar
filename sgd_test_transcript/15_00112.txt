@@ -1,0 +1,42 @@
+user: I wish to search for a salon.
+assistant: In which city?
+user: I need a salon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: I searched and found 10 salons for you. 1512 Barber Shop is a great salon in San Francisco.
+user: What is their contact number?
+assistant: Their contact number is 415-286-4371.
+user: What is their rating? Whether it is a unisex?
+assistant: It is a unisex salon with the rating 4.8.
+user: Yes. It is good. I wish to find a therapist there.
+assistant: Shall I search someone in San Francisco.
+user: Yes. It is good. I wish to see a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: I searched and found 4 therapists for you. Are you willing to meet Adam E. Pollock, a Psychologist in San Francisco.
+user: What is their contact address and number?
+assistant: Their contact address is 100 Masonic Avenue and their number is 415-346-2356.
+user: Could you please find someone else?
+assistant: Are you willing to meet Deardorff Julianna, a Psychologist in San Francisco.
+user: It is nice. Please make an appointment.
+assistant: Which date and when do you want to meet him?
+user: I need an appointment on the 12th at half past 1 in the afternoon.
+assistant: Kindly ensure that, on March 12th, appointment is booked with Deardorff Julianna at 1:30 pm.
+user: It is fine. What is their contact number and address?
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, something is wrong. I am unable to make an appointment. Do you need any other help?
+user: Please try once again to make an appointment. It would be 12:45 pm on March 13th.
+assistant: Kindly ensure that, on March 13th, appointment is made with Deardorff Julianna at 12:45 pm.
+user: yes. it is good.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, I am unable to book an appointment. Are you interested in trying Deardorff Julianna on March 13th at 12:30 pm?
+user: Yes. it is good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked. You will receive a confirmation letter soon.
+user: Thank you so much. I appreciate your efforts. Please confirm the appointment at salon at 6 in the evening.
+assistant: Kindly ensure that, on March 13th, appointment has been made with 1512 Barber Shop at 6 pm.
+user: Nope. I need an appointment at 3 o'clock in the afternoon.
+assistant: Kindly ensure that, on March 13th an appointment is done at 3 pm.
+user: Yes. It is fine.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry I am unable to make an appointment. DO you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

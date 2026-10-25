@@ -1,0 +1,34 @@
+user: I'd like to reserve tickets to an event.
+assistant: What number of tickets do you want?
+user: I would like 1 ticket.
+assistant: What event are you interested in and in which particular city should I search?
+user: I have heard Shooting Star is a good one around LA.
+assistant: Will you have a preferred date for the event?
+user: I would like something on the 9th of march.
+assistant: Please confirm details for booking 1 ticket for Shooting Star on March 9th in Los Angeles.
+user: Yes, that will work for me. Where and when does it take place and start?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed for 6:30 pm at The Hudson Theatres. Have a nice time there!
+user: Thanks so much for the help. Tell me about buses going there.
+assistant: Will you plan to leave on March 9th?
+user: I will be planning to leave on the 5th of March.
+assistant: Where will you be leaving from?
+user: I will be leaving from SF.
+tool(FindBus): ok n_results=9
+assistant: I have 9 buses for you. What about the one leaving at 7:30 am costing $42?
+user: Will you find me something else like a direct bus?
+tool(FindBus): ok n_results=8
+assistant: I have 8 buses for you. What about the bus leaving at 7:50 am costing $50?
+user: What station will it arrive at?
+assistant: It will arrive at North Hollywood Station.
+user: Will you find me something else?
+assistant: What about the bus leaving at 11:20 am costing $51?
+user: What station does it arrive at and where does it depart from?
+assistant: It arrives at North Hollywood Station and leaves from Transbay Terminal.
+user: That sounds good. I'd like to buy bus tickets.
+assistant: Please confirm the details that you want a bus ticket leaving from San Francisco to Los Angeles March 5th at 11:20 am for 1 person with no extra luggage.
+user: Yes, that will work for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed.
+user: Thanks so much and that is all I need.
+assistant: Have a nice day.

@@ -1,0 +1,24 @@
+user: Find me a unisex salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: Atelier Salon Willow Glen is a unisex salon in San Jose and is 1 of 10 results that I found.
+user: That works for me. Tell me what the weather is near there.
+tool(GetWeather): ok n_results=1
+assistant: The average high is 78 degrees and there is a 19 percent chance of rain.
+user: What is today's date?
+assistant: Today is March 1st.
+user: What is the average humidity and wind speed?
+assistant: The average humidity is 24 percent with a wind averaging 3 miles a hour.
+user: I see. Set up a session at that salon from earlier.
+assistant: What time do you want to go?
+user: I want to go at evening 6:45.
+assistant: You wish to book a session for Atelier Salon Willow Glen at 6:45 pm on March 1st, correct?
+user: That is right.
+tool(BookAppointment): ok n_results=1
+assistant: I can't book that time. Does 6:30 pm on March 1st at Atelier Salon Willow Glen work for you?
+user: That works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is booked.
+user: Thanks a bunch.
+assistant: Do you need more help?
+user: No, not right now. Thanks.
+assistant: Have a great day.

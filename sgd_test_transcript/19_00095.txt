@@ -1,0 +1,35 @@
+user: Can you find me a rental car till the 11th of March
+assistant: Where do you want it from and what time can you get it?
+user: I want a car in SFO that I can get at 12 o'clock in the afternoon
+assistant: When do you want to pick it up, what date?
+user: I need it starting the 7th of March
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about this Audi A8 Sedan from Salesforce Transit Center?
+user: That sounds awesome
+assistant: Do you want to book it
+user: I do, but later
+assistant: What else can I assist with
+user: You can help me book 2 event tickets in Philadelphia
+assistant: Sure, what kind of event can I help you find?
+user: I want to watch Counterparts, I hear it's good
+assistant: OK, but on what date?
+user: Let's try for the 1st of this month
+assistant: Confirming you want 2 tickets to Counterparts on March 1st in Philadelphia
+user: Actually can you look for something on Monday next week
+assistant: So a March 4th showing of Counterparts instead?
+user: Actually I changed my mind, how about tickets to Louis The Child instead?
+assistant: So tickets to Louis The Child on March 4th?
+user: Yes that's correct
+tool(BuyEventTickets): ok n_results=1
+assistant: It's booked, I hope you enjoy it
+user: Can you book that car we found earlier?
+assistant: Sure, do you want insurance?
+user: No insurance thanks
+assistant: Confirming you want to rent that Sedan on March 7th 12 pm till March 11th from Salesforce Transit Center yes?
+user: Yes please, how much is that daily?
+tool(ReserveCar): ok n_results=1
+assistant: It's $28.00 a day and it's been reserved for you
+user: OK thanks so much!
+assistant: What else can I do
+user: Nothing at the time, thank you again
+assistant: Happy to be of service!

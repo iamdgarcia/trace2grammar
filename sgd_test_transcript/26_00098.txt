@@ -1,0 +1,27 @@
+user: I would like to look for a train.
+assistant: What are your travel dates? What city are you departing from, and what is your destination?
+user: I am looking for tickets from Seattle, WA to Portland, OR on the 14th.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 8 am with a cost of $60 in total.
+user: Are there any other trains? I will need one seat.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains that meet your criteria, including one leaving at 8:10 am with a total ticket price of $55.
+user: OK, that sounds good, thanks. I would also like to find something interesting to do while I am there.
+assistant: Is there any particular category of activity you would prefer, such as Music or Theater?
+user: Yes, I really like Musical shows.
+tool(FindEvents): ok n_results=8
+assistant: I found 8 events in that category. Bastille will be at Theater of The Clouds on March 10th at 5:30 pm.
+user: How much does one ticket cost? Where is the venue located?
+assistant: One ticket costs $20. The venue is located at 1016-1098 North Center Court Street.
+user: That sounds good, thanks. What are some other attractions there? Something child-friendly with no entry fee.
+tool(FindAttractions): ok n_results=7
+assistant: There are 7 attractions with those criteria, including Crystal Springs Rhododendron Garden, a Park.
+user: What is the phone number?
+assistant: The phone number is 503-771-8386.
+user: OK, great. I would also like to find a house to stay in there. I need a rating of 3.8 or higher, with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses matching those criteria, including 1000 Northeast Multnomah Street, with a rating of 3.8.
+user: That house is great.
+assistant: Would you like to reserve it?
+user: Not right now, I'm all set, thank you.
+assistant: It's my pleasure to help you, have a good day.

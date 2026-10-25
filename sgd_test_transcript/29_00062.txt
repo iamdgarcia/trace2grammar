@@ -1,0 +1,30 @@
+user: Can you help me to search a hotel?
+assistant: Which city you prefer?
+user: I am searching for hotels in Sydney, Australia and i want hotel with 2 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: I have selected 10 hotels of your choice. One among them is 1831 Boutique Hotel with 3 star rating.
+user: It is cool.
+assistant: Can i book this hotel?
+user: Not, now..will see later..I want a round trip flight to get there.
+assistant: From which city you want to depart and when do you want to return?
+user: Search flights from SF and i will return on the 13th.
+assistant: Is march 12th is your leaving date?
+user: No, i like to start my journey on 7th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Are you like to fly with Delta Airlines? Which has layover and this flight takes off at 9:35 am and returning flight takes off at 10:55 am with ticket cost $397.
+user: Can i know the returning flight arrival time?
+assistant: At 6:05 am the returning flight arrives.
+user: This is cool.. i want you to book the hotel you just found for me on the 10th for four days.
+assistant: Please give confirmation details: You want to book the hotel 1831 Boutique Hotel in Sydney for march 10th for 4 days with 2 rooms.
+user: Okay..fine.. Are they allow to smoke?
+tool(ReserveHotel): ok n_results=1
+assistant: Yes..smoking is allowed and your booking is confirmed.
+user: Can i know the street address and cost per night?
+assistant: The location address is 631-635 George Street and the cost is $132.
+user: Thanks for the great help..Do you know any attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There is a Sports Venue called ANZ Stadium.
+user: This is perfect.
+assistant: Any other help you want?
+user: No, thanks you so much.
+assistant: Have a nice day..

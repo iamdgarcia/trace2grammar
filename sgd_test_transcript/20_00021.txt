@@ -1,0 +1,23 @@
+user: I need to find a hotel.
+assistant: Where would you like a hotel?
+user: I'm looking in San Diego.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 possibilities: there is a 3 star hotel called Bahia Resort Hotel. How would that work?
+user: That works just fine. I also need to rent a sedan from the 8th of March. I need a pick up of 10:30 in the morning.
+assistant: How long do you need the car for?
+user: Until the 13th of March.
+tool(GetCarsAvailable): ok n_results=1
+assistant: I found 1 available car, a Sedan Hyundai Ioniq at the Santa Fe Depot.
+user: And how much will that cost, daily?
+assistant: It is $30.00 a day to rent.
+user: Yup, that works. I want to go ahead and reserve the car.
+assistant: Do you also want insurance?
+user: Nope, skip the insurance.
+assistant: Please confirm these details: You want to pick up a Sedan from the Santa Fe Depot at 10:30 am on March 8th with a return date of March 13th. Is that correct?
+user: Yup, that's what I wanted.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is complete.
+user: Thanks for the assistance!
+assistant: Is there anything else I can do to help?
+user: Nope, that was it, thanks.
+assistant: Enjoy your day.

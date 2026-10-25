@@ -1,0 +1,19 @@
+user: Can you find me a five star hotel in Paris, France that allows smoking?
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels that fit. Brach paris is a 5 star hotel you might like.
+user: Where are they located?
+assistant: There are located at 1-7 Rue Jean Richepin, 75016.
+user: Okay, that's good. What are some attractions around that area?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might enjoy. You can go to the American Church in Paris, it's a Place of Worship.
+user: What's their telephone number?
+assistant: You can call them at 1 40 62 05 00.
+user: Alright. Now back to the hotel. I want to make a reservation with a check in on the 7th of this month for three days.
+assistant: I'll book you 1 room at Brach Paris in Paris with check in on March 7th for 3 days, is that right?
+user: Yeah, that's right. And what's the hotel's phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel's phone number is +33 1 44 30 10 00. I've made the reservation.
+user: Thanks for all the help.
+assistant: Do you require any additional help?
+user: No, thanks again.
+assistant: Take care and have a fine day.

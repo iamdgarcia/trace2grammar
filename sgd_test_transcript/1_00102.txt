@@ -1,0 +1,28 @@
+user: I'm after a hotel for an upcoming trip
+assistant: What city should I search?
+user: Can you look in NYC
+tool(SearchHotel): ok n_results=10
+assistant: I have found 10 hotels including the 1 Hotel Brooklyn bridge, a 5 star hotel
+user: What's their contact?
+assistant: You can call them on +1 347-696-2500
+user: What else is there?
+assistant: I also have the 1 Hotel Central Park, a 5 star hotel
+user: nah what else
+assistant: I have the 11 Howard, a 3 star hotel
+user: Whats their number?
+assistant: You can reach them on +1 212-235-1111
+user: Okay sounds great
+assistant: Do you want me to book you a room?
+user: Yes please. I need 3 rooms and we're staying 2 night
+assistant: What is your preferred check in date?
+user: On the 7th
+assistant: Confirming you wish to book 3 rooms for 2 nights at the 11 Howard in New York, checking in on March 7th.
+user: Yes thanks, also whats the cost per night?
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully booked those rooms for you. the cost is $297 per night.
+user: Cool, whats the street address?
+assistant: The hotel is located at 11 Howard Street
+user: Great thanks so much?
+assistant: Is that all for now?
+user: Yeah, thanks so much
+assistant: Have a nice stay.

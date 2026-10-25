@@ -1,0 +1,23 @@
+user: I'm trying to find a bus. Can you help me?
+assistant: Where will you be departing from?
+user: I'll be leaving from Vancouver on the 7th.
+assistant: Where are you going to?
+user: I'm going to Portland.
+tool(FindBus): ok n_results=8
+assistant: There is a bus that departs at 7:10 am and a ticket costs $44. Does that sound good?
+user: Is it a direct bus?
+assistant: Yes, it is a direct bus.
+user: Okay. Sounds good. Can you get tickets for me on that bus please?
+assistant: How many tickets would you like?
+user: Get me two tickets please.
+assistant: Please confirm that you need 2 tickets from Vancouver to Portland on the bus that leaves at 7:10 am on March 7th and that you do not plan to carry extra luggage.
+user: Yes, that sounds perfect!
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been booked successfully!
+user: At which station does the bus arrive?
+assistant: It arrives at SW Arthur & 1st.
+user: Thanks a bunch for the assistance. Can you help me find hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Aloft Portland Airport At Cascade Station. Would you like to consider it?
+user: Sounds good to me. That's all I need for now.
+assistant: Bye and have a great day!

@@ -1,0 +1,18 @@
+user: Help me get a bus, will you?
+assistant: Of course, where would you like to go? Where will you depart from?
+user: I'm out of San Francisco and headed to Sacramento.
+assistant: What day will you depart?
+user: How about the 4th?
+tool(FindBus): ok n_results=10
+assistant: Sure, the bus leaving at 6 am costs $20?
+user: Is it one-stop? Which station will it terminate at?
+assistant: It IS a direct bus, it might stop for people but you don't have to transfer. It arrives at the 65th Light rail station.
+user: Fine, get them tickets.
+assistant: How many please?
+user: I only want one.
+assistant: Sure, to be clear: 1 ticket for bus leaving San Francisco going to Sacramento. It leaves March 4th at 6 am.
+user: Fine, What station do I have to get to first?
+tool(BuyBusTicket): ok n_results=1
+assistant: You'll leave from Transbay Terminal.
+user: Perfect, you've made my day.
+assistant: Have a good one.

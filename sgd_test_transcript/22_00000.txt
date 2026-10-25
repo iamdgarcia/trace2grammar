@@ -1,0 +1,47 @@
+user: What can I go do I am bored sitting here.
+assistant: What do you like to do and where would you like to do it?
+user: I want something to do in or around NYC and Musical shows are one of my favorites.
+tool(FindEvents): ok n_results=10
+assistant: I pulled up a list of 10 so far I think this one would interest you its on March 11th at 7:30 pm at the Kaufmann Concert Hall - Abbi Jacobson will be there.
+user: That does interest me. Is there a direct bus I can take to get there?
+assistant: Would you take the bus on March 11th?
+user: I think I'd make a week of it and take the bus on March 5th.
+assistant: Where did you want to get on the bus?
+user: I want to depart from Washington.
+tool(FindBus): ok n_results=7
+assistant: There are 7 possible buses you could take. One that costs $38 leaves at 6:20 am.
+user: What station would I have to go to?
+assistant: You would have to get on the bus at the Silver Spring Bus Stop.
+user: Then what station would it take me to?
+assistant: You would exit the bus at Penn Station.
+user: Okay lets try a round trip flight instead to get to where I'm going.
+assistant: Would you want to board the plane on March 5th?
+user: Yes I would.
+assistant: And what day would you want to come home?
+user: That would be on the 13th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: American Airlines offers a round trip direct flight for $127 that would leave at 9:25 pm and to come home you would depart at 5 pm, what about that one?
+user: When would I get where I am going?
+assistant: The plane is scheduled to land at your destination at 10:35 pm.
+user: Is the ticket a Premium Economy class ticket?
+assistant: It is just an Economy ticket.
+user: Do you have any other options for me?
+assistant: There is another flight, it costs $123 and is with Southwest Airlines that would leave at 4 pm to get there which is a direct flight and leave at 5:10 pm to go home.
+user: I like that one better. What hotels are around there?
+tool(SearchHotel): ok n_results=10
+assistant: I found these 10 to start one has a 5 star rating and is called 1 Hotel Brooklyn Bridge.
+user: That's great. Please get tickets for the show we discussed.
+assistant: How many of you will there be?
+user: I will be needing 4 seats please.
+assistant: Alright you want 4 seats for the March 11th happening in New York with Abbi Jacobson is that right?
+user: Almost I want 3 tickets instead.
+assistant: Alright then 3 tickets for March 11th correct?
+user: Yes that is what I want what is the address there?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your seats are taken care, you have a good time. Their location is 1395 Lexington Avenue.
+user: What is the cost per seat?
+assistant: That would be $60.
+user: Thank you for helping me.
+assistant: Is there any thing else you would like assistance with?
+user: No, you can go now thanks.
+assistant: Have a wonderful day.

@@ -1,0 +1,11 @@
+user: Could you help me book a flight please, one way?
+assistant: Where are you leaving from and where would you like to go?
+user: I'll be going from Paris, France and I'm heading to Los Angeles.
+assistant: On what date please?
+user: That would be on the 5th.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I have 3 possibilities for you. There is a flight on Air France which leaves at 0:25 am and that is a connecting flight. The ticket price for that one is $377.
+user: Is the ticket premium economy?
+assistant: That would be an economy seat.
+user: Terrific, sounds perfect. I think I'm all set.
+assistant: Wonderful, have a great day.

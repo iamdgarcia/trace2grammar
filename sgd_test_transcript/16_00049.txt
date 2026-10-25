@@ -1,0 +1,38 @@
+user: I am interested in finding a salon.
+assistant: Can you tell me the city where I should look for the salon?
+user: The salon I am looking for should be in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: You might consider the Atelier Salon Willow Glen salon which is in San Jose.
+user: That seems nice. Now I also want to find a therapist in the area, and more specifically a Psychologist.
+assistant: Do you want me to look for the therapist in San Jose?
+user: Yes, that is correct, though just reminding you again I want a Psychiatrist.
+tool(FindProvider): ok n_results=6
+assistant: You can consider having Dr. Manuj K. Nangia, which is a Psychiatrist that can be found in San Jose.
+user: That seems nice. I would like to have an appointment booked for me.
+assistant: Can you tell me the date and time which suits you best for having the appointment?
+user: Is it possible for you to make the reservation for the appointment for the 9th at quarter past 3 in the afternoon.
+assistant: Can you please confirm that you want to make a reservation for an appointment with Dr. Manuj K. Nangia on March 9th at 3:15 pm.
+user: That suits me well. Can you tell me the address of this therapist?
+tool(BookAppointment): ok n_results=1
+assistant: This therapist can be found in 2516 Samaritan Drive. I apologize but I was unable to make the reservation for the appointment. If you want I can try again to make the reservation for appointment with Dr. Manuj K. Nangia on March 9th at 3 pm.
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been booked for you, and an email which you will receive should confirm that.
+user: Can you tell me the phone number I can use to get in touch with the therapist?
+assistant: If you want to call the therapist you can at 408-357-0105.
+user: Thank you very much! I am grateful! On that day I also want to make a reservation for an appointment at the salon you found earlier.
+assistant: What time suits you best to have the appointment?
+user: I will be able to go there at 6:30 in the evening.
+assistant: Can you please confirm that you want to book an appointment with Atelier Salon Willow Glen salon on March 9th at 6:30 pm?
+user: That is not right, because I want the appointment to be for 11 in the morning.
+assistant: Can you please once again confirm that you want to book an appointment for March 9th at 11 am?
+user: Yes that is what I want.
+tool(BookAppointment): ok n_results=1
+assistant: I apologize but I did not manage to make the booking you requested. The Atelier Salon Willow Glen is really a nice salon, and I can try to make the booking again for March 9th at 11:30 am.
+user: Yes, please do that, seems nice.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested booking has been made.
+user: Can you tell me the address of this salon, and the number I can use to call them?
+assistant: The salon can be found on 1047 Lincoln Highway suite 101, and if you want to call them you can at 408-293-3494.
+user: I appreciate it very much. Thank you, that would be all.
+assistant: Have a good day!

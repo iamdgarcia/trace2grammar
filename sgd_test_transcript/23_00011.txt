@@ -1,0 +1,27 @@
+user: I'd like a play movie online.
+tool(FindMovies): ok n_results=10
+assistant: How about A Faithful Man, After The Wedding, or Blinded by the Light?
+user: After the Wedding will work. Are there any attractions there?
+assistant: Where would you like to search?
+user: London, UK please.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might like, how about the Historical Landmark 30 St Mary Axe (The Gherkin)?
+user: Sure, that works. I'd also like some songs. I'm looking for a song from Protoje from '14.
+tool(LookupMusic): ok n_results=1
+assistant: How about Who KNows by Protoje from the album Ancient Future?
+user: Yep, that's perfect.
+assistant: Would you like to play this song?
+user: Yes, I would.
+assistant: Alright, just to confirm, you are playing Who Knows in the Living room, is that correct?
+user: Yes, that is correct. What's the genre?
+tool(PlayMedia): ok n_results=1
+assistant: It is a Reggae song.
+user: Will you play the movie you found?
+assistant: Sure, just to confirm, you'd like to play the movie After The Wedding with English subtitles, is that correct?
+user: Yes, thank you. Who acted in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Alright, your movie is playing. Will Chase was a starring actor.
+user: Thank you very much.
+assistant: Is there anything else I can assist you with?
+user: No, thank you.
+assistant: Have a wonderful day.

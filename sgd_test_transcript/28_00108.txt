@@ -1,0 +1,32 @@
+user: Find me some attractions to visit
+assistant: Do you prefer any place?
+user: Look around in London, England
+tool(FindAttractions): ok n_results=10
+assistant: How about 30 St Mary Axe (The Gherkin) which is a historical landmark
+user: That's perfect. Now find me a rental car
+assistant: how long do you want the car?
+user: I want the car from 1st of this month till march 3rd
+assistant: On what time do you want the car to pick up you up from London
+user: I want the car at afternoon 1:30
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars. How about the car available at Heathrow International Airport. It is a Sedan Audi A8
+user: What is the cost
+assistant: The cost is $38.00 per day
+user: That's perfect. Now reserve the car
+assistant: Do you need insurance?
+user: No Please don't add insurance
+assistant: Please confirm this: You want a car from Heathrow International Airport on March 1st at 1:30 pm till march 3rd. The car is Sedan without insurance
+user: That's perfect
+tool(ReserveCar): ok n_results=1
+assistant: Car reservation successful
+user: Thank you so much. I want you to share the location
+assistant: To whom do you want to share it?
+user: Share it with Terry
+assistant: Do you want to share Heathrow International Airport, 30 St Mary Axe (The Gherkin) or some other address?
+user: Share the location 30 St Mary Axe (The Gherkin) with Emily
+assistant: Please confirm this: You share the location 30 St Mary Axe (The Gherkin) with Emily
+user: That's perfect
+tool(ShareLocation): ok n_results=1
+assistant: Location shared successfully
+user: Thank you so much that's all for now
+assistant: Have a wonderful day

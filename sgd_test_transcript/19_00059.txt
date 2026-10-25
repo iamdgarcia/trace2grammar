@@ -1,0 +1,23 @@
+user: Can you find me rental car, like a sedan, I need it till the 12th?
+assistant: At what time and date will you be picking up the rental, and from which area?
+user: I will pick up the rental at 3:30 pm, on March 11th in NY.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I have found 8 cars available, what about renting a sedan from JFK International Airport, an Audi A8?
+user: Anything else you can find?
+assistant: From JFK International Airport, you may also rent another type of sedan, a Buick Regal Sportback.
+user: That one sounds good, is there a bus heading there?
+assistant: From where will you like to depart on bus?
+user: Washington is my departure location.
+assistant: Which date will you be departing on bus?
+user: I want to leave on the day after tomorrow, for only one person.
+tool(FindBus): ok n_results=7
+assistant: What about a $38 bus, one that departs at 6:20 am?
+user: That bus sounds good, thanks for finding it.
+assistant: Would you like to buy bus tickets right now?
+user: Not right now, find me a one-way flight to my destination, it should be premium economy tickets and for a departure on the day after tomorrow.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There is a direct flight that leaves at 9:25 pm, it is an American Airlines flight that costs $146.
+user: At what time will the flight arrive at my destination?
+assistant: The plane should arrive t 10:35 pm.
+user: That sounds good, that is all I needed for now, thanks.
+assistant: Your welcome, enjoy the rest of your day.

@@ -1,0 +1,23 @@
+user: I want to have a cab.
+assistant: Can you tell me your destination?
+user: I want to arrive to Duchess Oakland.
+assistant: Can you tell me the kind of ride you would like to have? It can be a ride which is Luxury, Pool or something else. How many seats are you in need of?
+user: I just need to have a seat for 1 person, and for the ride to be a Shared one.
+assistant: Can you please confirm that you need 1 seat in a Pool ride to go to Duchess Oakland?
+user: That suits me well, but can you tell me how much it costs me?
+tool(GetRide): ok n_results=1
+assistant: Your requested cab has been booked, and is already on the way to you, regarding it's price it will cost you $8.48.
+user: I appreciate your help very much. Now I would like to find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs which you might like. How would you like listening to Dark Necessities by Red Hot Chili Peppers from The Getaway album?
+user: Alright, that is the song I was looking for, please start playing this song now.
+assistant: Can you please confirm that you want to listen to the Dark Necessities song in your Living room?
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time listening to the music.
+user: Can you tell me the type of music it is? Could you also please tell me the year when it was released?
+assistant: The song has been released in 2016, and it is considered a Rock song.
+user: I appreciate it very much.
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful.
+assistant: Have a wonderful time!

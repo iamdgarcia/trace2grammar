@@ -1,0 +1,25 @@
+user: How will be the weather on the 9th of this month?
+assistant: In which city are you interested?
+user: I'm interested in the weather in San Diego.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be around 83 degrees Fahrenheit with a 25 percent chance of rain.
+user: Is it going to be windy or humid?
+assistant: The humidity is expected to be around 40 percent with an average wind speed of 7 miles per hour.
+user: Thank you. Can you find me a one-way flight to go there from Cape Town on South African Airways?
+assistant: Will you be leaving on March 9th?
+user: I'm planning to depart on March 8th.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is just 1 flight that is suitable and it is a South African Airways flight the departs at 2:05 pm. A ticket costs $208.
+user: Is this an economy class ticket or a business class ticket?
+assistant: It is an Economy class ticket.
+user: Is the price for 1 person?
+assistant: Yes, it is for 1 passenger.
+user: Okay. Can you find me a rental car that I can use once I get there?
+assistant: On what date will you be picking up the car, March 8th or March 9th? At what time do you need the car to be available and when will you plan to return it?
+user: I need the car in the evening 4:45 on March 11th, till the 13th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available and one of them is a Citroen C5 which is a nice SUV that is available at SAN International Airport.
+user: What is the rental cost per day?
+assistant: It costs $53.00 per day.
+user: That sounds good to me. That's all I need for now.
+assistant: Have a great day!

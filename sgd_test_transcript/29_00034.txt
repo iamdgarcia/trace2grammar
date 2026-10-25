@@ -1,0 +1,32 @@
+user: I need to look for a hotel allowing smoking
+assistant: Which is your preferred city?
+user: I need it in Paris, France
+tool(SearchHotel): ok n_results=10
+assistant: I have looked in a 3 star hotel called Aparthotel Adagio Paris Montmartre
+user: I need to know their street address and contact number
+assistant: Their location is 10 Place Charles Dullin, 75018 and contact number is +33 1 42 57 14 55
+user: Fine and please look for round trip to go there in Economy Class ticket
+assistant: When are you planning to catch the return flight? will it be on March 12th and which is the place you are starting from?
+user: I will be departing on 8th of this month and look into flights from LAX and returning on the 14th
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: What is your opinion on traveling in American AIrlines taking off at 3:30 pm and it has a layover. The ticket cost will be $541 with returning flight at 7:15 am
+user: Fine and i need to do hotel booking
+assistant: Are you planning to check in on March 8th?
+user: I have to check in on the 9th
+assistant: How many days you wil stay?
+user: I will be there in hotel for five days
+assistant: Please give confirmation details: You require 1 room in a hotel in Aparthotel Adagio Paris Montmartre in Paris on March 9th and staying for 5 days
+user: No, i will be staying for 4 days
+assistant: Please give confirmation details: You need a hotel in Aparthotel Adagio Paris Montmartre and will be staying for 4 days
+user: No, i have to get one room
+assistant: Please give confirmation details: You need 1 room in a hotel in Aparthotel Adagio Paris Montmartre
+user: Ok, this is good
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is done
+user: Thank you and can you also look for some child-friendly attractions as i am interested in performance venue
+tool(FindAttractions): ok n_results=7
+assistant: You can look in Carreau du Temple which is a Performing Arts Venue
+user: Ok, any other attractions?
+assistant: You can look in to Cent Quatre which is also a Performing Arts Venue
+user: That is cool
+assistant: Have fun and enjoy

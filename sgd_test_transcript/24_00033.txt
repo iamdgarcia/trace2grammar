@@ -1,0 +1,32 @@
+user: I want a one way flight!
+assistant: Where are you heading?
+user: I want to go to Philly.
+assistant: On what day do you want to travel? And which city are you leaving from?
+user: I am leaving from Chicago and want to leave on the 6th of this month.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: American Airlines has an onward flight that costs $174 and takes off at 5:05 am.
+user: What else is there?
+assistant: Delta Airlines offers an onward flight that takes off at 1 pm and costs $109.
+user: Sounds great. What trains are heading there?
+assistant: Will you be departing on March 6th?
+user: No, March 10th.
+tool(FindTrains): ok n_results=3
+assistant: There are 3 trains that may work. One departs at 8:30 am and costs $109.
+user: What else is there? I want value tickets and change the date to the 1st of this month.
+tool(FindTrains): ok n_results=2
+assistant: There are 2 trains that may work. One train departs at 2:40 pm and costs $129.
+user: Which station does it depart from? And where does it arrive?
+assistant: The train arrives at 30th Street Station. The train is departing from Chicago Union Station.
+user: What else is there?
+assistant: How about the train departing at 5:20 pm. It costs $109.
+user: That works. Book that train.
+assistant: Do you want travel insurance?
+user: Yes, I do.
+assistant: How many tickets?
+user: I want just 1 seat.
+assistant: Please confirm the following: Booking 1 value ticket for the March 1st train that departs at 5:20 pm. The train departs from Chicago and arrives in Philadelphia.
+user: That works. Which station does it arrive at and where does it depart from?
+tool(GetTrainTickets): ok n_results=1
+assistant: You reservation was successful! The train arrives at 30th Street Station and leaves from Chicago Union Station.
+user: Thank you! Goodbye!
+assistant: Have a fantastic day!

@@ -1,0 +1,19 @@
+user: Could you help me find a hotel, please?
+assistant: Any particular city I should search for hotels in?
+user: Please search for hotels in SF.
+tool(SearchHotel): ok n_results=10
+assistant: Your search yielded 10 suitable hotels. Will the 1 star, Amsterdam Hostel San Francisco, work for you?
+user: That works for me. Could you also find me some attractions over there? I have no particular preference.
+tool(FindAttractions): ok n_results=10
+assistant: Of the 10 attractions I found, may I suggest visiting the Historical Landmark known as Alcatraz?
+user: All right, cool. That's settled then. Please go ahead and reserve the hotel you found earlier.
+assistant: Sure, no problem. I need to know your check-in date and duration of stay, please.
+user: I need to reserve two rooms, checking in on March 12th, for one day.
+assistant: Let me see if I got everything correctly: You'd like to check into 2 rooms at the Amsterdam Hostel San Francisco, in San Francisco on March 12th, and will be staying for 1 day.
+user: That is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully made your hotel reservation.
+user: Please find out whether the hotel allows smoking. While at it, also get me the nightly cost.
+assistant: I'm sorry. The hotel does not allow smoking. The nightly price is $56
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Goodbye, and have a wonderful day!

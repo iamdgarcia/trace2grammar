@@ -1,0 +1,12 @@
+user: I'm looking for a movie with Margaret Early that's available online.
+assistant: Is there a specific genre you want?
+user: I think a Drama movie would be ideal.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie that matches. How about Stage Door?
+user: I really like Stage Door. Please put that on.
+assistant: I'll play Stage Door with English subtitles, is that correct?
+user: Yeah, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is now playing.
+user: Thank you, that's all for now.
+assistant: Have a great movie watching experience.

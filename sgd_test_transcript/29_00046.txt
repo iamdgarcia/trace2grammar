@@ -1,0 +1,32 @@
+user: Hello. I need your help finding a hotel in Vancouver, BC. I'll need just one room and would prefer a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There is a nice 3 star hotel called Atrium Inn Vancouver. Would that work for you?
+user: Nah. What else is there?
+assistant: There is also a nice 3 star hotel called Best Western Plus Chateau Granville Hotel & Suites & Conference Ctr. How does that sound?
+user: That sounds good.
+assistant: Would you like to reserve a room at the hotel?
+user: Possibly later but not right now.
+assistant: Is there anything else that I would be able to help you with?
+user: Yes. I need a round trip flight with Delta Airlines.
+assistant: Would you like to leave on March 1st? Where would you like the departure city to be, and on which day would you like to take the return flight?
+user: Yes, March 1st is correct. I'd like to leave from Seattle and return on the 14th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Would you like a Delta Airlines flight that takes off at 4:25 am? it has a layover and the returning flight takes off at 6:35 am. The ticket price is $484.
+user: When is the flight expected to arrive at the destination?
+assistant: The flight should arrive at 4:11 pm.
+user: That sounds good to me. Can you reserve me a hotel at the hotel you found earlier now?
+assistant: How long would you like to stay for?
+user: I would like to stay for 6 days.
+assistant: Would you like to check in on March 1st?
+user: on the day after tomorrow.
+assistant: Please confirm the following: You would like to reserve 1 room at Best Western Plus Chateau Granville Hotel & Suites & Conference Ctr. for 6 days starting on March 3rd. The location of this hotel is Vancouver.
+user: That is all correct, I confirm that. Can you tell me what their phone number is also?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made without issue. Their phone number is listed as +1 604-669-7070.
+user: Great. Can you also tell me the address and price per night?
+assistant: The price of the room per night is $78. Their address is 1100 Granville street.
+user: Thank you for your help. One last thing. Can you recommend a nice museum to check out while I'm there?
+tool(FindAttractions): ok n_results=4
+assistant: You should check out the Museum of Vancouver, which is a museum.
+user: I will! Thanks again.
+assistant: You're welcome. Enjoy the evening.

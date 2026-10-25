@@ -1,0 +1,23 @@
+user: I want to meet a Therapist for which I need your help to find someone suitable for me.
+assistant: What type of Therapist you want to meet whether a Family Counselor or a Psychiatrist or any other Therapist? Is there any particular City in your plan to search for?
+user: Yes, find me a Psychologist in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I got 10 results based on your requirement. I think you can try Barskyex Bryna G who is also a Psychologist in San Jose. What do you think?
+user: I have changed my mind and now I want to meet a Family Therapist and please search for some one in Los Gatos.
+tool(FindProvider): ok n_results=5
+assistant: That's okay. I got 5 Therapist details. What about a Family Counselor named Emily Rosenbaum who is in Los Gatos? Do you want to meet?
+user: Yes, what is their address and contact number?
+assistant: Please note down their address as 401 Alberto Way #1 and phone number as 408-641-7353.
+user: Okay, thanks. I want to book an appointment with this therapist for the date on Monday next week and my convenient time is 1 pm.
+assistant: Once again please confirm to book an appointment with Emily Rosenbaum at 1 pm on March 4th.
+user: Confirmed and you can proceed now.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, I was not able to book the appointment at that time. I can get an appointment with Emily Rosenbaum at 12:30 pm on the same March 4th. Is it okay to you?
+user: Okay, please proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment and they will send you a confirmation email shortly.
+user: Thank you so much. I want your suggestion on a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: You can try Once Upon a Time In Hollywood which has the average rating of 85 out of 100. Do you like it?
+user: Yes, I like the same. Thanks and that's all.
+assistant: Have a good day.

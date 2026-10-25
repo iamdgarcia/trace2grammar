@@ -1,0 +1,25 @@
+user: Can I get the Portland, OR weather forecast for the 13th of this month?
+tool(GetWeather): ok n_results=1
+assistant: Portland is going to have an average temperature of 58 degrees Fahrenheit on that day with the chance of rain at 24 percent.
+user: How about the humidity?
+assistant: On that day, it'll be 13 percent.
+user: And what about the wind conditions?
+assistant: It should be a 15 mile-per-hour wind speed that day.
+user: All right, thanks. I also need a one-way flight on any airline please.
+assistant: Is that on March 13th? And where would be leaving from?
+user: From Paris, France please. And it would be for March 8th.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: How about a flight on Air France at 7:35 am? It's a layover flight and the fare is $326.
+user: For how many people and what's the arrival time?
+assistant: For 1 traveler and it's a 5:48 pm arrival time.
+user: Great, thanks. And could I get a rental vehicle there please at 19:30?
+assistant: For how long? And are planning on a March 8th pickup?
+user: No, the 13th of this month and I would return it on the 14th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 possible cars for you. If you would like an SUV, I have an Alfa Romeo Stelvio available for pickup from Portland Bus Station.
+user: That would work, I think
+assistant: Shall I book that for you?
+user: Not now, thank you.
+assistant: How else may I help you?
+user: Nope, thank for everything.
+assistant: You're very welcome, thank you.

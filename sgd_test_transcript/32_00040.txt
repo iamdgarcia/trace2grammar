@@ -1,0 +1,21 @@
+user: Hi, could you find me some Pop songs from the Album Warrior in 2012?
+tool(LookupMusic): ok n_results=1
+assistant: How about Die Young by Kesha in her album Warrior?
+user: Yes! That is the one I was looking for. Could you get me some nice movies to watch too?
+assistant: Any type of movie you are looking for?
+user: Some ghost movies would be great.
+tool(FindMovies): ok n_results=6
+assistant: How about 47 Meters Down: Uncaged, In Fabric or Midsommar?
+user: Are there any alternatives, preferably one feature Harumi Shuhama?
+tool(FindMovies): ok n_results=1
+assistant: There is 1 you might like, how about One Cut of the Dead?
+user: One Cut of the Dead sounds great! Could you play the song you found just now?
+assistant: Please confirm your request to play Die Young in the Living room.
+user: Yes, that is correct!
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy listening to your music.
+user: Could you also show me my alarms please?
+tool(GetAlarms): ok n_results=3
+assistant: You currently have 3 alarm sets, one titled Running at 7:30 am.
+user: I see, that is all I need. Thanks!
+assistant: Have a pleasant day ahead!

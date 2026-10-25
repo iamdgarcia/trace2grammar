@@ -1,0 +1,23 @@
+user: I'm looking for a therapist
+assistant: Where do you want to look for a therapist? What type of therapist do you need?
+user: I'm needing a psychologist in Mill Valley.
+tool(FindProvider): ok n_results=3
+assistant: What about the psychologist Brown Brooke A in Mill Valley.
+user: What is their phone number?
+assistant: Their phone number is 415-458-3177.
+user: Okay, thanks. I'd like to book an appointment there at quarter to 3 in the afternoon.
+assistant: What date do you want the appointment on?
+user: I want it on the 8th of this month.
+assistant: Okay, you'd like an appointment with Brown Brooke A on March 8th at 2:45 pm, right?
+user: No, I want the appointment at afternoon 2.
+assistant: Okay, you want the appointment with Brown Brooke A at 2 pm on March 8th, correct?
+user: No. I wan the appointment for the day after tomorrow.
+assistant: Okay, the appointment is on March 3rd at 2 pm, correct?
+user: Yes, that is right.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment and you should get a confirmation email shortly.
+user: Thank you. Can you recommend me a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: What about Once Upon a Time in Hollywood with a 85 out of 100 rating?
+user: Yes, that sounds good. That is all I needed.
+assistant: Have a great day.

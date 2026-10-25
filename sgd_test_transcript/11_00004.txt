@@ -1,0 +1,10 @@
+user: I am currently looking for a house to stay in.
+assistant: No problem, can you tell me which city to search in?
+user: I will be taking a vacation to Sydney.
+tool(SearchHouse): ok n_results=10
+assistant: Okay, I've found 10 houses in the area for you. There is a nice house rated at 4.1 stars, it is located at 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia.
+user: Are there any other houses in the area rated at least 4.0 or higher?
+tool(SearchHouse): ok n_results=10
+assistant: I've found another house for you at 1 Kensington Street, Chippendale New South Wales 2008, Australia. This place has a rating of 4.0.
+user: Okay, this house sounds amazing. That's all I need for now.
+assistant: My pleasure. Goodbye!

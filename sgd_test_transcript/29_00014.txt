@@ -1,0 +1,31 @@
+user: I'm looking for a 5 star hotel that allows smoking in London, England.
+tool(SearchHotel): ok n_results=8
+assistant: I found 8 hotels for you. How about the 5 star Courthouse Hotel Shoreditch?
+user: What other hotels are there?
+assistant: There is the 5 star Devonshire Club by Mantis.
+user: What else is there? I need three rooms.
+tool(SearchHotel): ok n_results=6
+assistant: I found 6 hotels you may like. How about the 5 star Four Seasons Hotel London at Ten Trinity Square?
+user: What is their address and how much is it per night?
+assistant: Their address is 10 Trinity Square and it costs $390 per night.
+user: That sounds good, thanks. I also need to find a round trip flight there. I need two tickets departing on the 12th of this month and returning on the 14th of this month.
+assistant: Where are you departing from?
+user: I'm leaving from Chicago.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight for you. It is an American Airlines flight departing at 1:25 pm with a layover. The return flight departs at 2:15 am and it costs $582.
+user: That sounds good. I'd like to make a reservation at the hotel now.
+assistant: How long will you be staying? Are you checking in on March 12th?
+user: Yes and I will be staying for one night.
+assistant: Okay, you want a reservation for 3 rooms and 1 night at the Four Seasons Hotel London at Ten Trinity Square in London and you will be checking on on March 12th, right?
+user: Yes, that is correct. What is their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: I have confirmed the reservation. Their phone number is +44 20 3297 9200.
+user: Thanks! I'd also like to find a shopping area that is free to enter and child-friendly near there.
+tool(FindAttractions): ok n_results=6
+assistant: I found 6 attractions for you. How about the shopping area Borough Market?
+user: What is their phone number?
+assistant: Their phone number is 20 7407 1002.
+user: Okay, thanks.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

@@ -1,0 +1,16 @@
+user: Hi! Could you help me search for a bus please?
+assistant: May I know where will you be departing from?
+user: I will be departing from Sacramento, CA, and would prefer a one-stop bus.
+assistant: May I also know where to and when will you be travelling?
+user: I will be leaving for Long Beach on the 2nd of this month.
+tool(FindBus): ok n_results=10
+assistant: Would you like a bus departing at 7:40 am costing $65?
+user: That sounds great! Could you get tickets for three please?
+assistant: Please confirm your bus reservation for 3 from Sacramento to Long Beach departing at 7:40 am on March 2nd.
+user: Sure, I am fine with that.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks for your kind assistance!
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: No worries, have a great day ahead!

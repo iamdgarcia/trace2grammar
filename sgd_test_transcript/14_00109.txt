@@ -1,0 +1,19 @@
+user: Help me find some pop songs. Maybe Madonna song, I like her.
+tool(LookupMusic): ok n_results=2
+assistant: How about Batuka by Madonna from the album Madame X?
+user: Do you have other songs?
+assistant: How about God Control by Madonna from the album Madame X?
+user: Was it released in '19?
+assistant: Yes, it is from 2019.
+user: Nice. Now help me look for some good movies online.
+assistant: Is there a genre you like?
+user: Movies that have a Dramatic story.
+tool(FindMovies): ok n_results=10
+assistant: There's A Faithful Man, After The Wedding, and Blinded By the Light.
+user: I really like A Faithful Man. But can you play the song we talked about earlier on the kitchen device.
+assistant: I'll play God Control in the kitchen, is that right?
+user: Yes, please play it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks, that's all I need.
+assistant: Have a great time listening to the song.

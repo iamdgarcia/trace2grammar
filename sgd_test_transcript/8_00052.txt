@@ -1,0 +1,16 @@
+user: I want to do a payment request, and I want for the transfer to be private. The person with whom I will do the transaction is Svetlana and it will be for the amount of 138 dollars.
+assistant: Can you please confirm that you want to make a private transaction with Svetlana for the amount of $138?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your requested payment has been done.
+user: Now I would like to actually do a payment.
+assistant: Which account will you be using to transfer the money from, and to whom are you going to transfer the money to? Also I need you to tell me the amount that you want to transfer.
+user: I will be sending the amount of $48 from my checking account to the contact named Rachel.
+assistant: Can you please confirm that you will be making a public transaction to send the amount of $48 from your debit card to Rachel?
+user: Yes, that is what I want to do.
+tool(MakePayment): ok n_results=1
+assistant: Your requested payment has been made, and the other person should be able to see the amount on their part soon.
+user: I appreciate it very much!
+assistant: Is there something else I can help you with?
+user: Nothing. I thank you for the help!
+assistant: Then we are done, take care!

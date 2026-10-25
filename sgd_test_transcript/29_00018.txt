@@ -1,0 +1,35 @@
+user: My friends and I are taking our yearly trip and I would like some help finding three hotel rooms in Philadelphia please.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels I was able to pull up for you and the first is called Aka Rittenhouse Square with a 4 star rating.
+user: I don't need anything that fancy, can you find me a three star hotel?
+tool(SearchHotel): ok n_results=10
+assistant: I see here that Aka University City is a 3 star hotel.
+user: That sounds more like what I am searching for.
+assistant: Did you want me to reserve those rooms for you now?
+user: No, let's wait a little bit on that.
+assistant: No problem, was there something else I can help with?
+user: Yes, I will also need a flight there, preferably a round trip flight.
+assistant: Okay but I need some more information first. Please tell me the city you will be departing from, the day in which you would like to return, and will you be leaving on March 1st?
+user: Yes, I will be leaving from NY and returning next Monday.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights with those details. You may like the one with American Airlines that departs at 8:35 am and the return flight leaves the airport at 3:20 pm, with the ticket costing $112.
+user: That sounds fine, now we can go ahead and reserve the rooms you found for me earlier.
+assistant: Before I do that I will also need to know the length of time you intend to stay.
+user: I will only need the room for 1 night.
+assistant: Is March 1st the date you would like to check in?
+user: No, I need the check in date to be next Monday.
+assistant: Okay, correct me if i'm wrong but so far I have you booking 3 rooms at the Aka University City, located in Philadelphia, checking in on March 4th, and staying a total of 1 night. Does that meet your requirements?
+user: Yes, you did an awesome job!
+tool(ReserveHotel): ok n_results=1
+assistant: I have confirmed your hotel and you are all set to check in on the specified date.
+user: Before I forget I need the address of their location and I don't remember if you told me the price.
+assistant: The hotel located at Cira Centre South, 2929 Walnut Street costs $243 per night.
+user: Thanks so much, I wouldn't have been able to get all this done today with out you.
+assistant: It was my pleasure, did you need anything else?
+user: Yes, I think I would like to go to an attraction while I am there. Are there any garden events that have a free admission?
+tool(FindAttractions): ok n_results=4
+assistant: Yes, Cira Green is a park and one of 4 of the attractions I have found.
+user: I will need to know if it is child friendly so can I have their phone number?
+assistant: I can tell you that it is a fun place to take your kids to and their phone number is 267-295-9565.
+user: Awesome, thanks so much.
+assistant: Have fun!

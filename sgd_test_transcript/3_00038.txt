@@ -1,0 +1,15 @@
+user: Could you please find me three Economy class round-trip flight tickets?
+assistant: What's your departure city?
+user: Please search for flights originating from Toronto, Ontario.
+assistant: Please tell me your destination, as well as your preferred departure and return dates.
+user: I'd like to leave for Philadelphia on the 6th, and return on the 12th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: American Airlines has a 4:15 am outbound, connecting flight, with a 5:45 pm inbound flight at $286 per ticket. Will this flight work for you?
+user: What time does the inbound flight land?
+assistant: The inbound flight lands at 1:13 am.
+user: What time does the outbound flight reach my destination?
+assistant: the outbound flight lands at 8:01 am.
+user: That works for me.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Do have yourself a fabulous day!

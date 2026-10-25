@@ -1,0 +1,20 @@
+user: Can you help me search for a bus please?
+assistant: Certainly. Please tell me where you are leaving from and your destination.
+user: I am leaving from Fresno heading to San Fran.
+assistant: When do you plan on leaving?
+user: I am leaving on March 5th. I need tickets for 3 people on a direct bus route.
+tool(FindBus): ok n_results=8
+assistant: I found 8 buses available. How about the bus departing at 10:50 am? The cost is $30.
+user: Which station does it depart from and arrive at?
+assistant: It departs from 2660 Tulare St.and arrives at Transbay Terminal.
+user: That will work fine.
+assistant: Can I help you with anything else?
+user: I want to purchase the bus tickets.
+assistant: Please confirm the following details: You want 3 tickets on the bus leaving from Fresno on March 5th at 10:50 am heading to San Francisco. You don't have extra luggage. Is this correct?
+user: Yes that is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Thanks for your help.
+assistant: Can I help you with anything else?
+user: No, that is all.
+assistant: Have a great day.

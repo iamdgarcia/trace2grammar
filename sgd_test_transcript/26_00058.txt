@@ -1,0 +1,28 @@
+user: I would like a round trip flight.
+assistant: What location are you planning to go?
+user: I am flying to the location of Berlin.
+assistant: What day would you like to take the return flight?
+user: I'm returning the 13th.
+assistant: Which date would you like to travel and what city are you departing from?
+user: I would like to travel on Sunday this week looking for flights from LA.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Do you want to fly with Delta Airlines with an onward flight taking off at 6:35 am with a layover and returning flight at 3:40 pm costing $468 for the ticket.
+user: When will the flight arrive at my destination?
+assistant: The onward flight comes in at 5:11 am.
+user: That sounds great. I'd like to find a house to stay there with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice home at Alt-Moabit 99, 10559 rated 4.4.
+user: This house is good. I'd like to book a house with check out on the 8th.
+assistant: Do you wish to check in on March 3rd? What is the number of people in your group?
+user: Yes, that is good and there is 1 person.
+assistant: Please confirm details for a location of Berlin for 1 person in the group with check in date of March 3rd and check out March 8th.
+user: Yes, that is great. Please get me a contact number and total price for the place.
+tool(BookHouse): ok n_results=1
+assistant: The reservation is a success with a total price of $480 and phone number of +49 30 2000320.
+user: Thanks for the help. Would you show me some attractions there? I'd like to have something which is child-friendly.
+tool(FindAttractions): ok n_results=10
+assistant: You should check out the Alte Nationalgalerie a museum.
+user: Tell me the phone number.
+assistant: The phone number is 30 266424242.
+user: Okay that is great and bye for now.
+assistant: Enjoy yourself.

@@ -1,0 +1,32 @@
+user: Find me some fun things to do.
+assistant: What city shall I look in?
+user: Search for events in Berlin.
+tool(FindAttractions): ok n_results=10
+assistant: Alte Nationalgalerie is a cool Museum.
+user: I see. I need any type of rental car for pickup at two in the afternoon and will return it on the 14th of March.
+assistant: What date are you picking the car up and are you getting the car in Berlin?
+user: I want to get the car on the 9th of March in Berlin.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a SUV Alfa Romeo Stelvio at Schoenefeld Airport and is 1 of 10 vehicles available.
+user: What is the price per day?
+assistant: The price is $51.00 each day.
+user: That is perfect. Book me that SUV.
+assistant: Do you need to add insurance to your order?
+user: No, I don't need insurance.
+assistant: You want to rent a SUV without insurance at 2 pm on March 9th at Schoenefeld Airport and will return it on March 14th, correct?
+user: No, add insurance to the order.
+assistant: You want to get the SUV with insurance from Schoenefeld Airport, correct?
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your SUV is booked.
+user: Please share the location with Theresa.
+assistant: Do you wish to share Schoenefeld Airport, Alte Nationalgalerie, or another address?
+user: Share the Alte Nationalgalerie with her.
+assistant: You wish to share the Alte Nationalgalerie location with Theresa, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with her.
+user: Thanks for your help.
+assistant: Do you need something more?
+user: No, that is all. Thanks again for the help.
+assistant: Have a great day.

@@ -1,0 +1,26 @@
+user: Help me find a movie to watch please.
+assistant: Sure thing, what is your location?
+user: Pull up movies playing in Napa.
+tool(FindMovies): ok n_results=4
+assistant: I've found 4 movies for you. Angel Has Fallen, Hustlers or Once Upon a Time in Hollywood.
+user: Once upon a time in hollywood is good.
+assistant: Can I assist you with anything else.
+user: I also need to book a table at a restaurant in the same area please.
+assistant: Sure, what time would you prefer to reserve?
+user: Make my reservation fro seven in the evening.
+assistant: Which restaurant would you like to book at?
+user: Villa Romano would be great please.
+assistant: Please confirm a booking for 2 at Villa Romano in Napa at 7 pm on March 1st.
+user: Yes that is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I apologize I was unable to book that request at Villa Romano for 2 people. May I suggest March 1st at 6:30 pm?
+user: Yes, that will do.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Great, I was able to successfully reserve your table.
+user: What time is the movie you found me playing on that day? I would like to watch a regular show.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 show at 8 pm in Century Napa valley and XD.
+user: Sounds great. thanks.
+assistant: your welcome, can I help with anything else?
+user: Nope, that was all.
+assistant: Ok, have a great day.

@@ -1,0 +1,28 @@
+user: I need therapy, is there someone in San Jose?
+assistant: What type therapy?
+user: What about Psychologist?
+tool(FindProvider): ok n_results=10
+assistant: There are 10 options. What about Barskyex Bryna G. They're listed first under Psychologist in San Jose.
+user: That seems great.
+assistant: Do you want to book this?
+user: Yes, get me an appointment for 14th of this month?
+assistant: What is your most preferred time?
+user: I want to go at 11:30 am.
+assistant: To be clear, 11:30 am appointment with Barskyex Bryna G on March 14th.
+user: No, wrong, get me 1:45 in the afternoon on the 13th. I can't wait.
+assistant: To confirm: 1:45 pm appointment on March 13th?
+user: You got it that time.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, that's no good. What about trying a 2 pm on March 13th with Barskyex Bryna G.?
+user: Try that then.
+tool(BookAppointment): ok n_results=1
+assistant: You are set now. They'll e mail you next.
+user: Giver me their phone number please.
+assistant: It's 408-363-4418.
+user: That seems good, can you recommend a movie now with Rob Brydon, with a Dramatic story line, directed by Gurinder Chadha.
+tool(FindMovies): ok n_results=1
+assistant: Do you mean Blinded by the Light? It's rated 88 out of 100.
+user: I think that's great.
+assistant: What more might you want?
+user: Nothing at this time.
+assistant: Glad to be of service.

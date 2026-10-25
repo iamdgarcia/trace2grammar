@@ -1,0 +1,16 @@
+user: Can you find me a place to stay in Anaheim that does laundry service
+tool(SearchHouse): ok n_results=10
+assistant: I found a house at 1050 West Ball Road that has a 4.2 rating
+user: That sounds cool, can you see if you can book it for just one person
+assistant: Sure, what date are you leaving?
+user: I want to check out on March 3rd please
+assistant: And when are you arriving?
+user: I'll be there on the 1st of March, so just two days
+assistant: OK so a house for 1 in Anaheim with a March 1st check-in and March 3rd check-out yes?
+user: Yes that's great, thank you
+tool(BookHouse): ok n_results=1
+assistant: It has been booked
+user: Thank you so much for doing that
+assistant: My pleasure, can I do anything else?
+user: No, for now we're all set
+assistant: Great, take care and enjoy your stay there

@@ -1,0 +1,23 @@
+user: Find me a place to live.I want to have garage and two bed rooms.Two baths will be okay.
+assistant: In which area you want to be?
+user: In Corte Madera will be great.
+assistant: You want to rent or to buy?
+user: I want to rent.
+tool(FindHomeByArea): ok n_results=1
+assistant: A very good proberty is Parc Marin Apartments located at 1441 Casa Buena Drive.$3,100 is the cost.
+user: Tell me the contact phone number and if they have laundry machines inside the house.
+assistant: 415-945-9636 is the phone number.This house have in-unit laundry.
+user: Sounds very good.Schedule for me a visit on the 6th.
+assistant: You are scheduling a visit to Parc Marin Apartments on March 6th.
+user: No.Make it on 14th of this month.
+assistant: You are scheduling a visit to Parc Marin Apartments on March 14th.Is that okay?
+user: Yes is very good.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit is scheduled.
+user: Show me please my alarms.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set for 7:30 am called Get up.
+user: Okay, very good.
+assistant: You want to add an alarm ?
+user: No.I don't want now.That's all that I wanted.
+assistant: Thank you very much.

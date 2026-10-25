@@ -1,0 +1,37 @@
+user: I have a little time free and I am thinking to watch a movie online to spend that time. Can you find me a nice movie especially the one featuring Madge Brindley?
+assistant: Of-course. What type of movie that you are looking for?
+user: I like Thriller movies the most and you can search it in that type.
+tool(FindMovies): ok n_results=1
+assistant: Gt 1 and what do you think about The Ladykillers? Is it a nice movie you think?
+user: Yes, I like the movie The Ladykillers and I choose this one. Now, I want to search for some attractive places there and please search for the one which should be the safest place for Kids also.
+assistant: Do you like to search for the attractions in any particular City?
+user: Yes, Search it in District of Columbia and find a nice place to visit.
+tool(FindAttractions): ok n_results=10
+assistant: Hope you will like a place like Nature Preserve. Do you want to visit the place at 56 Signers of the Declaration of Independence Memorial?
+user: I have to decide. Please let me know the contact number and also check for the availability of free entrance there.
+assistant: No free entrance there and you can contact them by 202-426-6841.
+user: That's okay. I like to go to a Museum. Can you search for some other places like a Museum?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, I go 10 results. What do you think about Dumbarton Oaks Museum which is also a Museum.
+user: I think this is nice place. That's fixed. Now, search for some nice songs especially the one from the album Lover as I heard that this album have nice songs.
+tool(LookupMusic): ok n_results=2
+assistant: Do you like to hear the song The Archer by Taylor Swift from your desired album Lover?
+user: Let me know the music type of this song.
+assistant: It is pop music.
+user: I like the singer Taylor Swift but find me different songs by the same singer.
+tool(LookupMusic): ok n_results=1
+assistant: What about the 1 like You Need to calm down by Taylor Swift from the album Lover?
+user: can yo tell me the year of release of this song?
+assistant: Yes, it is from the year 2019.
+user: This is nice song and I want to hear it in the living room speaker. Play it now.
+assistant: I need your confirmation to play the song You Need to Calm Down in your living room speaker.
+user: That's confirmed. I want to know the type of music of this song.
+tool(PlayMedia): ok n_results=1
+assistant: This is a pop song and the same was started playing now.
+user: Thanks. Also play the movie that I have chose before with subtitles in English.
+assistant: Okay, please confirm to play the movie The Ladykillers with English subtitles.
+user: Okay, go ahead.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie was started playing and you can enjoy the same now.
+user: Thanks and that's all.
+assistant: Have a great day.

@@ -1,0 +1,19 @@
+user: Hi, could you help me find a house with laundry service please?
+assistant: Which city would you prefer to stay in?
+user: A house in Rio is great.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available, how about Avenida Almirante Silvio de Noronha, 365 - Centro with a 4.6 rating?
+user: How can I contact them?
+assistant: You can call them at +55 21 3478-4100.
+user: I see, could you get me a reservation for one from March 4th to 10th of March?
+assistant: Please confirm your reservation for 1 at Rio de Janeiro from March 4th to March 10th.
+user: That is fine with me.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Are there any nice attractions I can visit there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 available, how about a Museum called Air And Space Museum?
+user: Sounds good, may I have their contact number and is the place child-friendly?
+assistant: Yes, your children will love this place. You can call them at 21 2157-2895.
+user: I see, that is all I need for now. Thanks!
+assistant: Have a great day ahead!

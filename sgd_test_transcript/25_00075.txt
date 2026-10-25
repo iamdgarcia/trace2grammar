@@ -1,0 +1,40 @@
+user: Please show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm at 5 pm with the name busy.
+user: Okay that is good.
+assistant: Would you like to add an alarm.
+user: No, I don't want to make any new alarms now.
+assistant: Is there anything else I can assist you with?
+user: I would like to find a restaurant there serving Izakaya. I'm seeking a restaurant tagged pricey for price.
+assistant: What location should I look in?
+user: Please find restaurants in Oakland.
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 restaurant you might like called Delage a nice restaurant located in Oakland.
+user: What is the phone number and are there vegetarian options on the menu?
+assistant: They don't have any vegetarian options and their phone number is 510-823-2050.
+user: Yes, that will be good.
+assistant: Do you want to reserve a table here?
+user: No thank you.
+assistant: Will you help me with anything else?
+user: I would like to reserve a car there.
+assistant: Until when will you want the car.
+user: I need it until the 12th.
+assistant: Will you want to add insurance and what kind of car do you like?
+user: I would like a hatchback which is nice and I'd like to buy insurance.
+assistant: Where would you like to pick up the car and at what time?
+user: I would like to pick up the car at 12:00 at JFK International Airport a convenient location.
+assistant: When do you wish to start the car rental?
+user: I need it starting March 7th.
+assistant: Please confirm details that you are picking up the car fro JFK International Airport with a pickup date of March 7th at 12 pm and drop off March 12th for a hatchback car coming with insurance.
+user: No, I'd like to pick it up at 6 o'clock in the evening.
+assistant: Please confirm details that you'd like to pick up at 6 pm a hatchback car.
+user: Yes, that will sound good.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.
+user: Thanks for the help. Will you share the location address of JFK International Airport with Joe.
+assistant: Please confirm details to share location of JFK international Airport with Joe.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully shared the location.
+user: Thanks this is helpful and all I need for now.
+assistant: Have a great day.

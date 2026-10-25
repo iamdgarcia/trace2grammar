@@ -1,0 +1,25 @@
+user: I need to find a house to stay in.
+assistant: Which city are you planning to stay in?
+user: I will be in Long Beach, CA.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house with a 4.0 rating at 1133 Atlantic Avenue.
+user: Can i get a phone number for that place? Does it have laundry service?
+assistant: It does have laundry service. The contact number is +1 562-590-8858.
+user: The house is great; I want to book it.
+assistant: Which day would you like to check in and how many people are in your group.
+user: There are 4 people and I would like to check in on 6th of March.
+assistant: what day will you check out?
+user: I will be checking out on the 10th.
+assistant: Please confirm: March 6th is the check in date for a home in Long Beach for a group of 4 people and the check out date is March 10th.
+user: Yes, that is correct. What is the total cost?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is complete. The total cost is $1,584.
+user: Can you should me attractions, preferably Museum, in the area?
+tool(FindAttractions): ok n_results=2
+assistant: I found 2 attractions. A museum that could interest you is the Long Beach Museum of Art.
+user: Is it child-friendly?
+assistant: No, its not exactly good for kids.
+user: What is the phone number?
+assistant: The phone number is 800-708-2538.
+user: Great, That's all for now.
+assistant: Enjoy!

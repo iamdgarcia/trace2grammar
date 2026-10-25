@@ -1,0 +1,22 @@
+user: I would like to go home and visit my family this spring. Can you help me find a train ticket to get there?
+assistant: Sure, I just need to know where you would like to depart from and where you will be arriving at.
+user: I would like to travel on March 9th from Vancouver, BC.
+assistant: Okay, and where will you be going?
+user: I will be travelling to my parent's house in Seattle, WA.
+tool(FindTrains): ok n_results=9
+assistant: I was able to find a train that leaves at 6:20 am for $55.
+user: Okay, that's not too bad. Which station does the train depart from?
+assistant: That particular train leaves from Pacific Central Station.,
+user: Okay, and can you also tell me which station it will be arriving at?
+assistant: I can see here that it will be arriving at King Street Station.
+user: Okay, that sounds like what I am looking for. Let's go ahead and reserve tickets for that train.
+assistant: I just need to know how many tickets you would like and if you want the travel insurance that they offer.
+user: I'm the only one traveling so just 1 ticket and I do want the insurance. I also would like the tickets to be conditionally refundable in case anything happens.
+assistant: Great, so I have 1 Value ticket, leaving Vancouver on March 9th at 6:20 am, going to Seattle. Is that correct?
+user: Yes, that sounds great!
+tool(GetTrainTickets): ok n_results=1
+assistant: I was successfully able to reserve those tickets for you, and you should be all set to travel.
+user: Thank you so much, you made it so much easier than I could have done alone.
+assistant: Can I help you with anything else?
+user: Nope, that is all I need for now, thanks for asking.
+assistant: It as my pleasure, let me know when you need anything else.

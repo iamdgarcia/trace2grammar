@@ -1,0 +1,21 @@
+user: I would like to get my hair done at a salon. Would you search for a salon?
+assistant: Do you have a particular city you would like me to search?
+user: Yes, please search for a salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: In San jose I have found 10 salons you may enjoy. One of the nicer salons I may suggest is the Atelier Salon Willow Glen.
+user: Thank you, however; I would like to find an unisex salon. Would you search for one that is unisex?
+tool(FindProvider): ok n_results=9
+assistant: With that criteria I have found 9 salons in San JOse. May I suggest Barba & CO. San Jose?
+user: Great. That one sounds perfect!
+assistant: Are you interested in scheduling an appointment?
+user: Yes, I am. Please schedule an appointment on the 10th at a quarter to 11 in the morning.
+assistant: Please confirm you would like a March 10th appointment at 10:45 am at Barba & CO. San Jose salon.
+user: No, please change that time to the morning 11:15 on the 12th of this month.
+assistant: Please confirm you would like a 11:15 am appointment on March 12th.
+user: Yes, that is correct. Please provide me with the address.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been scheduled and their address is 1775 Park Avenue.
+user: Thank you for your assistance!
+assistant: May I help with anything else?
+user: No, not at this time! Thank you again!
+assistant: Have a wonderful day!

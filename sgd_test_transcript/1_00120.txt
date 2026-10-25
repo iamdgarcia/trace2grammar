@@ -1,0 +1,12 @@
+user: Can you recommend a song to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: I'd be happy to help. May I suggest Roller Coaster from the album Crash My Party by Luke Bryan.
+user: Perfect! I love that song.
+assistant: Do you want me to play it now?
+user: Yes, I'd like to listen to it now.
+assistant: You'd like to hear Roller Coaster played in the Living room. Is that correct?
+user: Yes, that will be perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Your selection has begun streaming.
+user: Great! Thank you for the help.
+assistant: You're welcome. Have a wonderful day.

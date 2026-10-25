@@ -1,0 +1,26 @@
+user: Can you find me a bus for 1 person to Los Angeles?
+assistant: Where are you departing from and on what date?
+user: I'll be leaving from Anaheim, CA on the 9th of this month.
+tool(FindBus): ok n_results=10
+assistant: Would you like to consider the bus that leaves at 7:50 am with a ticket costing $12?
+user: How many stops does this bus have?
+assistant: It is a direct bus and therefore has no stops.
+user: That sounds good to me. Can you find me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: If you are looking for a Historical Landmark, you should check out Angels Flight Railway.
+user: That's cool! Can you suggest some more attractions?
+assistant: If you are into Museum hopping, you should try Autry Museum of the American West.
+user: Great! Thank you. Can you get me a ticket on the bus that you found?
+assistant: Please confirm that you want 1 ticket from Anaheim to Los Angeles on the bus that leaves at 7:50 am on March 9th and that you do not plan to carry extra luggage.
+user: Sorry, I do have excess luggage.
+assistant: Okay. So you want the ticket to Anaheim with extra luggage included. Is that correct?
+user: Yes. That sounds perfect. From which station does the bus depart and at which station does it arrive?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked successfully. It leaves from the Anaheim Bus Station and arrives at the North Hollywood Station.
+user: Can you find me a hotel in that areas please?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: What are the other options available to me?
+assistant: There's another 3 star hotel called the Airtel Plaza Hotel.
+user: That one sounds good. That'll be all for now.
+assistant: Have a great day! Bye!

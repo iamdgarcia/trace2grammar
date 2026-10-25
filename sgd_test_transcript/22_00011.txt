@@ -1,0 +1,55 @@
+user: I need some help finding something interesting to do, I would prefer Musical shows.
+assistant: I can help with that. Is there a particular city you would like to search in?
+user: How about around Philly.
+tool(FindEvents): ok n_results=10
+assistant: Alright, I see Anthony Green is very popular and is playing at The Foundry on March 10th at 6 pm. How does this sound?
+user: I would like to hear more options please.
+assistant: May I suggest Ayokay, this is a popular show playing at The Foundry as well on March 11th at 6:30 pm.
+user: Ok, thank you.
+assistant: Would you like to purchase the tickets?
+user: No not right now, maybe another time.
+assistant: Ok, I understand. Is there anything else I can help you with?
+user: Let's check out bus schedules going there please.
+assistant: Will you be leaving on March 11th? I also need to know which city you would be departing from please.
+user: Sure, I'm actually leaving on the 4th and I would like to depart from NYC.
+tool(FindBus): ok n_results=7
+assistant: Ok, great! I found 7 buses for you. How about the bus departing at 7:40 am for a cost of $23.
+user: Which station would I be arriving at? Also find out if it is a one-stop bus please.
+assistant: The bus will arrive at 10th and Filbert and is a direct bus.
+user: Ok, thank you.
+assistant: Your welcome, can I assist you with anything else?
+user: Yes, I'd like to also check out round trip flights to get there as well. I would like to travel on the 8th of this month and is an Economy class ticket.
+assistant: Which day would you like to return on?
+user: I'll be returning on 14th of this month please.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Alright, is American Airlines acceptable? There is an onward flight that takes off at 1:35 pm and is a direct flight. the returning flight takes off at 1:20 pm and the ticket is $95 total.
+user: When would the flight arrive at my destination?
+assistant: The onward flight would arrive at 2:26 pm.
+user: When does the return flight arrive? Is the ticket price quoted for four people?
+assistant: It is only for 1 traveller.The return flight arrives at 2:11 pm.
+user: Are there any other options?
+assistant: Yes, Southwest Airlines has an onward flight that takes off at 10:50 am and is a direct flight. The returning flight departs at 2:45 pm for a cost of $84.
+user: Ok, sounds pretty good. Can you look for hotels as well in that area . I would need three rooms at a four star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I've located a hotel called Aka Rittenhouse Square, this is a 4 star hotel.
+user: Great, find out if smoking is allowed and what is the address?
+assistant: Unfortunately smoking is not allowed on the property. The address is 135 South 18th Street.
+user: Are there any other options for my search query.
+assistant: Alright, there is a 4 star hotel at Hilton Philadelphia At Penn'S Landing.
+user: No, more options please.
+assistant: Ok, how about Kimpton Hotel Monaco Philadelphia which is also a 4 star hotel.
+user: That sounds nice.
+assistant: Great, would you like to book now?
+user: No I don't. I would like to purchase tickets to the event we found earlier.
+assistant: Ok, I can help with that. How many tickets would you like to purchase?`
+user: I would like one ticket please.
+assistant: Alright, please confirm you would like to book 1 ticket to Ayokay playing in Philadelphia on March 11th. Is that right?
+user: No, let's do 2 tickets please.
+assistant: Ok, please confirm you would like 2 tickets for the event in Philadelphia. Is that right?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Great your reservation was successfully created. Have a wonderful time.
+user: Thank you for your help.
+assistant: your welcome, can i help with anything else?
+user: No, that will be all.
+assistant: Ok, have a great day.

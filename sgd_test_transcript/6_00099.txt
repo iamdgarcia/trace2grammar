@@ -1,0 +1,12 @@
+user: I'm after a salon in Walnut Creek
+tool(FindProvider): ok n_results=10
+assistant: I've found Blow Dry bar in Walnut Creek.
+user: okay sounds good, can you book me in?
+assistant: What date and time would you like?
+user: Can you book Tuesday next week for quarter to 11 in the morning?
+assistant: Confirming you want to book an appointment at Blow Dry Bar on March 5th at 10:45 am?
+user: Yes thank you
+tool(BookAppointment): ok n_results=1
+assistant: Okay that's all booked in for you.
+user: Thanks so much, thats it for now.
+assistant: Have a great day.

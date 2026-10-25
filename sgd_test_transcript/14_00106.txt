@@ -1,0 +1,30 @@
+user: I need to listen to songs maybe by Enrique Iglesias as he is my favourite singer. Look for something from the Euphoria album.
+tool(LookupMusic): ok n_results=2
+assistant: You can choose from these 2 songs. What about heartbeat by Enrique Iglesias that was in the Euphoria album?
+user: Do you have something else?
+assistant: Would you like to listen to I Like it in the album Euphoria by Enrique Iglesias?
+user: What genre of music is it and was it seven years back that it came out?
+assistant: The song is Pop and it came out in the year 2010.
+user: Yeah I was thinking of the same one.
+assistant: Shall I do anything else for you?
+user: Do you have any nice movies online?
+assistant: Are there any particular type of movies you prefer?
+user: I do love drama movies.
+tool(FindMovies): ok n_results=10
+assistant: Would you like A Faithful Man, After The Wedding or Blinded by the Light?
+user: I want something else. Can you suggest something starring Dylan McDermott? I do like Family movies.
+tool(FindMovies): ok n_results=1
+assistant: I can recommend you 1 movie suited to your taste. Would you like to see Steel Magnolias?
+user: I think Steel Magnolias would be great.
+assistant: Shall I play that movie?
+user: Not at the moment. I want you to play that song you recommended. I want it played in on any device.
+assistant: So do you confirm that you want the song I like it played in Living room.
+user: Nope. Play it on speaker in patio.
+assistant: So confirm that you want to play I like it in Patio?
+user: Yeah sure that is right.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you have fun listening to the music.
+user: Thanks very much.
+assistant: Shall I help you with any other thing?
+user: Nope thanks a lot
+assistant: Have a wonderful day!

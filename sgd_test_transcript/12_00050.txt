@@ -1,0 +1,19 @@
+user: I want to find a bus.
+assistant: When are you leaving and form where? Where are you going?
+user: I'm leaving from San Diego to go to Fresno, CA on the 13th of March.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses. There's a bus departing at 6:50 am. It's $46.
+user: Great. I want to buy tickets for three people.
+assistant: Please confirm: 3 tickets for the bus leaving from San Diego to Fresno on March 13th at 6:50 am.
+user: Sounds great.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets has been booked.
+user: Thanks. I want to find hotels also.
+tool(SearchHotel): ok n_results=4
+assistant: I found 4 hotels. What about the Doubletree by Hilton Hotel Fresno Convention Center? It has 3 stars.
+user: That sounds good.
+assistant: Do you want to make a reservation?
+user: No, not now.
+assistant: Anything else I can do for you?
+user: No, that's all. Thanks.
+assistant: Have a great day!

@@ -1,0 +1,17 @@
+user: I need a hotel, in Anaheim, CA, and need two rooms.
+tool(SearchHotel): ok n_results=10
+assistant: There is one at Alamo Inn & Suites, with a rating of 2 stars.
+user: Okay, how is weather on the 4th?
+tool(GetWeather): ok n_results=1
+assistant: It will be 89 degrees Fahrenheit with a 20 percent chance of rain.
+user: Okay then, reserve me a room for 5 days.
+assistant: Would you like to check in on March 4th?
+user: No, on the 3rd please.
+assistant: So 2 rooms in Alamo Inn & Suites on March 3rd for check-in. The stay is 5 days and the hotel is in Anaheim.
+user: Yes, is smoking allowed?
+tool(ReserveHotel): ok n_results=1
+assistant: Yes, booked successfully. No smoking is allowed.
+user: What is their phone number?
+assistant: Their phone number is +1 714-635-8070.
+user: Thanks for that; that's all I need.
+assistant: Goodbye. Have a wonderful day.

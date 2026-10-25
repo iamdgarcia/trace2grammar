@@ -1,0 +1,21 @@
+user: What is the weather in Toronto, Ontario.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 58 degrees with a 13 percent chance of rain.
+user: Ok, I also need a flight there.
+assistant: Are you leaving on March 1st?
+user: Yes, I am.
+assistant: What city are you leaving from?
+user: San Diego.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: Southwest Airlines has a flight that leaves at 1:55 pm with a ticket price of $241.
+user: Is this a business class ticket? For how many people?
+assistant: It is an economy seat for 1 person.
+user: Find me some other choices.
+assistant: United Airlines has a flight that leaves at 9:15 am for a ticket price of $215.
+user: Perfect. I'll also need a rental car at 8 pm and I'll drop it off Wednesday next week.
+assistant: Do you want to pick up the car on March 1st?
+user: I need it the day after tomorrow.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a Buick Regal Sportback Sedan available at Toronto Pearson International Airport.
+user: That is perfect. That is all I need for now.
+assistant: Have a nice day.

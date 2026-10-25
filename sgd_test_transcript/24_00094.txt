@@ -1,0 +1,23 @@
+user: I want to see a movie.
+assistant: Where shall I look?
+user: Check in the Larkspur area.
+tool(FindMovies): ok n_results=7
+assistant: I found 7 movies in that area. Would you like Echo In The Canyon, Good Boys or Luce?
+user: Luce would be great.
+assistant: Would you like to order tickets?
+user: Not just yet. I also want make a reservation at a restaurant in the same area.
+assistant: Do you have a particular restaurant in mind? What time did you want the reservation for?
+user: The Melting Pot make it for half past 1 in the afternoon.
+assistant: To verify: You want a reservation for 2 at The Melting Pot in Larkspur for 1:30 pm on March 1st.
+user: Yes that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed.
+user: How pricey is the restaurant?
+assistant: They are pretty pricey.
+user: And what kind of food do they have?
+assistant: They specialize in Fondue.
+user: Okay, Thanks. What time is the movie? I want to see a regular show at the Lark Theater.
+tool(GetTimesForMovie): ok n_results=1
+assistant: The Lark Theater has it showing at 10 am.
+user: Perfect. That's all I need.
+assistant: Have a great day.

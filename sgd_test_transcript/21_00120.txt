@@ -1,0 +1,39 @@
+user: I would love to go see something like Musical shows in person. I need your help finding one.
+assistant: What city should I search in for you?
+user: Well, I'm not too picky. If you can, try to narrow it down to San Diego.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 Musical Events which fit your criteria. On March 7th, the Cal Coast Credit Union Amphitheater is hosting Alejandro Sanz. This popular show starts at 7:30 pm.
+user: That sounds like just what I'm looking for. I want a bus that will take me there on the 7th of this month. It does not have to be a direct bus line.
+assistant: What city will you be departing from?
+user: I'll be leaving from Los Angeles when I go.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses that are heading there on the 7th of this month. One bus is leaving at 6:50 am and costs $30 to ride.
+user: Tell me the departure and arrival bus stations.
+assistant: The bus will leave the North Hollywood Station. The arrival station is the El Cajon Bus Stop.
+user: I rather take another bus if possible.
+assistant: Another bus is leaving at 8:10 am with an associated cost of $26.
+user: That one sounds better. Thank you.
+assistant: I can buy those tickets for you now if you wish.
+user: No thank you. Let's worry about that later.
+assistant: Sure thing. What else can I help you with?
+user: I was considering taking a plane instead. Help me find a round trip flight heading there/
+assistant: Is there a certain date you wish to fly back to Los Angeles?
+user: I'll be needing 2 Premium Economy class tickets. I want the return date to be the 12th of this month please.
+assistant: Will you be departing on March 7th as well?
+user: No, I'll be leaving LA on the 4th of March. If possible, book my flight with Alaska Airlines.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Now booking with Alaska Airlines. The departing flight takes off 10:05 am and the return flight takes off at 1:05 pm. The total cost of the ticket is $153.
+user: Perfect. I need 3 hotel rooms while I'm there. Can you help?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel located there called Bahia Resort Hotel. Is that suitable?
+user: More than suitable, it sounds fine.
+assistant: Do you want to make reservations for your 3 rooms?
+user: No thank you. I'm more worried about the tickets to the event. Can you buy those for me immediately?
+assistant: Confirm your event details. Booking 2 tickets for ALejandro Sanz musical show. The event is taking place March 7th in San Diego.
+user: Please confirm with those details. Where's the venue located by the way?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made and confirmed. The address of the venue is 5500 Campanile Drive. I hope you have a wonderful time.
+user: Thank you for being so helpful.
+assistant: No need to thank me. It's my pleasure. What else can I assist you with?
+user: You've done more than enough. That's all for now.
+assistant: In that case, have a great day.

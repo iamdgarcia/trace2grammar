@@ -1,0 +1,39 @@
+user: Could you help me find something fun to do around NY on the 5th of this month? I really like Concert.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events for you. Abbi Jacobson is a very popular event taking place at Kaufmann Concert Hall on March 5th at 5 pm.
+user: That sounds wonderful
+assistant: Did you want to buy tickets for this event?
+user: Possibly later.
+assistant: Did you need help with anything else today?
+user: Do you know any buses going there?
+assistant: From where are you leaving?
+user: I will be leaving from Washington.
+assistant: Did you plan to leave on March 5th?
+user: I'd like to leave this Sunday.
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses. One leaves at 6:20 am and costs $38.
+user: What are the departing and arriving stations?
+assistant: It will leave from Silver Spring bus stop and arrive at Penn Station.
+user: Could you help me find something else?
+assistant: I also found a bus leaving at 12:10 pm for $32.
+user: That works. I'd like to find a round trip flight on United Airlines starting 4th of March. I will need four tickets.
+assistant: What day did you plan on taking the return flight?
+user: I'm going back Wednesday next week.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight for you. It is a direct United Airlines flight with the onward flight taking off at 4:35 pm and the returning flight leaving at 10:15 am for $127.
+user: When will the flight arrive at my destination?
+assistant: It will arrive at 5:45 pm.
+user: When will the return flight arrive and is this a Premium Economy ticket?
+assistant: The return flight will arrive at 11:25 am and it is a Economy class seat.
+user: That sounds good. Can you help me find hotels near there too?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you. One is a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: That sounds good. I'd like to buy tickets to the event you found.
+assistant: Please confirm you're booking 4 tickets for Abbi Jacobson on March 5th in New York.
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been booked. Have fun!
+user: Thank you for your help.
+assistant: Did you need help with anything else today?
+user: No, but thanks again.
+assistant: Have a wonderful day.

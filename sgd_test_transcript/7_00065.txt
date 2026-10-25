@@ -1,0 +1,14 @@
+user: Hi! Can you help me find a place to live? I need it to have 1 bath.
+assistant: I'd be happy to help. Let's get some details set first. Where are you interested in staying? How many bedrooms do you need? Are you going to purchase a home or rent?
+user: I'd like to rent a 2 bedroom place in Fairfield.
+tool(FindHomeByArea): ok n_results=10
+assistant: I have 10 options you might be interested in. I'd like to suggest Aspen Village Apartments. The property is located at 2355 Fairfield Avenue and is $2,400 per month.
+user: I'm very interested in it. Can you schedule a viewing?
+assistant: What day works best for you?
+user: March 9th would be perfect.
+assistant: Let me make sure I have it right. You'd like to see Aspen Village Apartments on March 9th.
+user: That would be great.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your showing has been confirmed.
+user: Great. That will be all. Thanks for the assistance.
+assistant: You're welcome. Have a wonderful day.

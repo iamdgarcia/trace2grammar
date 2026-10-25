@@ -1,0 +1,30 @@
+user: Hello, I'm interested in finding tickets for an LA event of some kind.
+assistant: How many tickets will you need? Also is there a specific event you're interested in and a date you'd like to go?
+user: I'm thinking about Famous Adjacent on March 14th and I would just need one ticket.
+assistant: Confirming admission for 1 on March 14th to Famous Adjacent in Los Angeles.
+user: Sorry, I'm actually going to need three tickets, I think. Also I heard Crabbe and Goyle is a good time.
+assistant: Confirming admission for 3 to Crabbe and Goyle.
+user: OK, that's perfect.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been completed, enjoy the show.
+user: Thank you very much. Could you tell me about buses to get there?
+assistant: Would you like a bus for March 14th?
+user: Actually I'll be taking off on the 2nd.
+assistant: Leaving from where please?
+user: That would be Long Beach.
+tool(FindBus): ok n_results=10
+assistant: I have 10 options for you. There is a bus with a $12 fare which departs at 6 am.
+user: I need a direct bus. Would you look for something else please?
+tool(FindBus): ok n_results=10
+assistant: There is a bus with a 6:20 am departure time and a ticket price of $11.
+user: Yes, that works.
+assistant: Would you like to purchase tickets now?
+user: Yes, I would.
+assistant: Confirming 3 tickets from Long Beach to Los Angeles on the March 2nd 6:20 am bus. Will you be traveling with extra luggage?
+user: Yes, in fact I will.
+assistant: Confirming the Long Beach bus with extra luggage on board.
+user: Great, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: The tickets have been purchased.
+user: Thank you, you been very helpful today.
+assistant: I'm happy to hear that, you're welcome.

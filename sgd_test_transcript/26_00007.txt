@@ -1,0 +1,32 @@
+user: I would like to find a flight from Vegas on the 5th.
+assistant: Where are you traveling?
+user: I'm flying to LA.
+assistant: Which day would you like to return?
+user: I would like one ticket and I plan to return on the 12th of March.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 options. There is Delta Airlines leaving at 7:45 pm and the return is at 4:35 pm for $129.
+user: When does the flight arrive? Is this a economy ticket?
+assistant: The flight arrives at 5:45 pm and yes it's a economy seat.
+user: I would like to find a house to stay while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses. There is one located on 1020 South Figueroa street and the rating is 4.1
+user: Does it have laundry service and what is their contact number?
+assistant: Their phone number is +1 213-748-1291 and yes they have laundry service.
+user: Is there another house?
+assistant: There is 10320 West Olympic Boulevard that has a 4.1 rating.
+user: I would like to book this house.
+assistant: How many people are you checking in with and are you checking in on March 5th?
+user: Yes, on that day and we are three people.
+assistant: Are you checking out on March 12th?
+user: I would like to check in on the 8th of this month.
+assistant: Check in on March 8th and check out on March 12th for 3 people in Los Angeles.
+user: Yes, that is correct. What is their phone number and is there a laundry service?
+tool(BookHouse): ok n_results=1
+assistant: Yes, their is laundry service and the phone number is +1 818-980-8000
+user: Can you find an attraction there?
+tool(FindAttractions): ok n_results=10
+assistant: There is Angels Flight Railway it's a historical landmark.
+user: Ok, thanks for the information.
+assistant: Can I help you with something else?
+user: No, that is all for now.
+assistant: Have a good day.

@@ -1,0 +1,17 @@
+user: I want to check about the weather condition in Atlanta. Do you check for me?
+tool(GetWeather): ok n_results=1
+assistant: Yes, Please note that the temperature will be 86 degree Fahrenheit in average and the chance of rain will be at 28 percent.
+user: Also let me know about the Wind speed and Humidity.
+assistant: 45 percent of Humidity and wind speed is will be 11 miles per hour in average. Hope this information useful to you.
+user: Thanks for your information. I want to visit some attractive places there and I need your help to search for the best one.
+tool(FindAttractions): ok n_results=10
+assistant: Got 10 results and what about your decision to visit a place of Worship like Al-Farooq Masjid?
+user: That is great. I want to go there for which I need to book a Cab with normal ride.
+assistant: Let me know the number of seats required by you to book the same.
+user: I need only one seat.
+assistant: I need your confirmation to book 1 seat in a Cab with regular ride to Al-Farooq Masjid.
+user: That is correct to proceed and let me know the cost details for that ride.
+tool(GetRide): ok n_results=1
+assistant: The total cost will be $24.80 for that ride and your Cab was booked and the same will reach you soon.
+user: Thank you so much. That's all I want now.
+assistant: Have a good day.

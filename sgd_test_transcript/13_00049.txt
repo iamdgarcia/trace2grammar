@@ -1,0 +1,19 @@
+user: I want you to find me something interesting which I can do.
+assistant: Is there some specific category you enjoy? It can be Music or Theater or some other kind. Do you have a city in mind where I should search?
+user: I am interested in something around London, England, and I prefer Stage show.
+tool(FindEvents): ok n_results=10
+assistant: An event A Right Royale Tea is quite popular. This event will happen at Amba Hotel Charing Cross on March 14th at 7 pm.
+user: Can you tell me the price of one ticket, and the location where the event will be happening?
+assistant: The venue where the event will take place is Strand, and the price of the ticket costs $50.
+user: That seems nice. Can you also search for hotels which are found in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which you might consider. One of these hotels is a 5 star hotel which is called 45 Park Lane.
+user: That seems nice. Now I want to have 3 tickets bought for the event which you found before.
+assistant: Can you please confirm that you want to buy 3 tickets for the A Right Royale Tea which will happen on March 14th in London?
+user: Yes, that suits me well.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested bookings have been made. Enjoy your time at the event.
+user: I appreciate your help very much.
+assistant: Is there something else I can help you with today?
+user: Nothing. I am grateful for the help you provided.
+assistant: Have a good time!

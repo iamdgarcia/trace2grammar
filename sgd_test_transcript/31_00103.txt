@@ -1,0 +1,37 @@
+user: Will you help me find a salon?
+assistant: What is the desired city?
+user: I would like to find a salon in South San Francisco.
+tool(FindProvider): ok n_results=2
+assistant: I was able to locate 2 possible salons. There is a great salon that may work in South San Francisco by the name of Philgood Cuts.
+user: Can you tell me their normal rating?
+assistant: They have a 4.2 average rating.
+user: Okay, that sounds nice. Can you go ahead and book an appointment for me at that salon?
+assistant: What is the best time?
+user: I think the best appointment time would be 2:15 pm.
+assistant: Can you tell me the desired date for the booking?
+user: I want to go on the 13th of March and make it for six in the evening.
+assistant: Making an appointment for Philgood Cuts on March 13th at 6 pm. Is that correct?
+user: Yep, that works great. Can you give me their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. You can find them at 1027 Airport Boulevard and reach them at 650-873-5887.
+user: Thanks! I'd like to go eat when I visit them. Will you find me some average priced restaurants?
+assistant: What type of food do you like?
+user: Will you look for Thai food?
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 restaurants of interest. There is a good restaurant in South San Francisco by the name of Thai Satay Restaurant & Bar.
+user: Can you check for outdoor seating and tell me where they are located?
+assistant: Unfortunately, they don't have seating outside. They have an address of 265 Grand Avenue.
+user: Great, sounds terrific. Can you reserve a table for 2 at the restaurant?
+assistant: What is the best time?
+user: Make the reservation for 3 people at 20:00.
+assistant: Making a reservation for 3 people at the restaurant Thai Satay Restaurant & Bar on March 13th at 8 pm in South San Francisco. Are these details correct?
+user: Yep, that is right.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I apologize, but I couldn't make the reservation. Do you want any more help?
+user: Will you try to make the reservation again and make it for the evening 5 instead.
+assistant: Making a reservation for 3 people at Thai Satay Restaurant & Bar n March 13th at 5 pm. The restaurant is located in South San Francisco. Is that right?
+user: Yes, that's correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have been able to make the reservation.
+user: Thanks for everything, and that takes care of it for me.
+assistant: Enjoy your day.

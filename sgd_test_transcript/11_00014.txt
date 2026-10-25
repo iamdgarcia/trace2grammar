@@ -1,0 +1,20 @@
+user: I am going out of town and I would need a house to stay in.
+assistant: In which city?
+user: I will be going to London.
+tool(SearchHouse): ok n_results=10
+assistant: You have 10 options. There is a lovely home at 1 Addington Street that has a rating of 4.3.
+user: May I have a contact number for there?
+assistant: It is +44 333 400 6116.
+user: That sounds awesome.
+assistant: Would you like to reserve the residence?
+user: Yes, for 2 people.
+assistant: When would you like to check in and check out?
+user: I want to check in on the 6th of this month and check out on the 12th.
+assistant: You would like a house in London for 2. You want to check in on March 6th and then check out on March 12th.
+user: Great. How much would it cost?
+tool(BookHouse): ok n_results=1
+assistant: I have made the reservation and the cost is $828.
+user: Thanks a lot.
+assistant: Would you be needing anything else?
+user: No, thank you.
+assistant: It has been great to assist you.

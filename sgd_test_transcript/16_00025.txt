@@ -1,0 +1,25 @@
+user: Can you find me a nice salon in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons that might interest you. How about Atelier Salon Willow Glen located in San Jose?
+user: Okay, That sounds nice to me. Can you also look for a Psychologist in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: There are 10 therapists you may like. How about a Psychologist called Barskyex Bryna G located in San Jose?
+user: Okay, That sounds great.
+assistant: Would you like me to book an appointment with the Psychologist?
+user: Yes, Please book an appointment for next Friday at 12:30.
+assistant: Please confirm: You want me to book an appointment with Barskyex Bryna G at 12:30 Pm on March 8th.
+user: Yes, That is correct. Can you find me the phone number and their address?
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, Your appointment could not be booked due to some reasons. The address is 5755 Cottle Road # 4 and the phone number is 408-363-4418. Would you like me to retry booking appointment with Barskyex Bryna G for March 8th at 1 pm?
+user: Okay, Go ahead and try booking.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. You will shortly receive a confirmation mail.
+user: Okay, Thank you for the help. Now please book an appointment at the salon you just found and on the same day.
+assistant: What time do you want me to book the appointment?
+user: Book the appointment at 6 o'clock in the evening.
+assistant: Please confirm: You want me to book an appointment at Atelier Salon Willow Glen at 6 pm on March 8th.
+user: Yes, that is correct. Also find me the average rating and the contact number of the salon.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. The average rating is 4.3 and you can contact them at 408-293-3494.
+user: Okay. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

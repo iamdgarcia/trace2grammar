@@ -1,0 +1,11 @@
+user: Can you check the weather for the 14th?
+assistant: What city should I check in?
+user: Morgan Hill, make it March 3rd instead.
+tool(GetWeather): ok n_results=1
+assistant: It should average around 70 degrees with a 23 percent chance of rain.
+user: Is it supposed to be humid?
+assistant: The humidity should be around 43 percent.
+user: And the wind?
+assistant: Should be around 7 miles per hour.
+user: Okay, thanks. That's all I needed.
+assistant: You're welcome. Bye.

@@ -1,0 +1,20 @@
+user: I'll be in new york very soon and I would like to visit a museum
+tool(FindAttractions): ok n_results=10
+assistant: I've managed to find 10 proposals for you. there's this museum in particular that is called 9/11 tribute museum
+user: List me something else in chicago, a historical landmark would be awesome
+tool(FindAttractions): ok n_results=4
+assistant: I got 4 offers listed as historical landmark, one is s. r. crown hall
+user: Marvellous! find me a house there!
+tool(SearchHouse): ok n_results=10
+assistant: I've found a 4.4 rated house at 1 south franklin street
+user: I like this one
+assistant: I can make a reservation so you can visit it.
+user: No, I'm not that interested
+assistant: Okay then. do you have anything else to ask me?
+user: Yes, I do, find me a round trip flight with american airlines
+assistant: I can do that. When do you want do leave and come back? Where are you leaving from exactly?
+user: The flight must start from philly on the 5th of this month and the return must be on the 14th
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: If american airlines is fine with you, there's 1 flight leaving at 5:45 pm and coming back at 2 pm. for the ticket, the price to pay is $232
+user: I took note, thank you, bye for now.
+assistant: Enjoy your day.

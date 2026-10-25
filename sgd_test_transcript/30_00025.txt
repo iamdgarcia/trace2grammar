@@ -1,0 +1,29 @@
+user: I'd like to book three tickets to an event on March 3rd. I heard America is good.
+assistant: Did you have a particular city in mind?
+user: I'd like to find something near Los Angeles.
+assistant: Please confirm you're booking 3 tickets for America in Los Angeles on March 3rd.
+user: Yes, that sounds good. What time does the event start?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Have fun! The event will start at 6:30 pm.
+user: What buses go there?
+assistant: Were you planning to leave on March 3rd?
+user: I'd like to leave on the 2nd of this month.
+assistant: Where were you planning to leave from?
+user: I'd like to leave from San Fran.
+tool(FindBus): ok n_results=9
+assistant: I found a bus leaving at 7:30 am for $48.
+user: What station does it leave from and what station will it arrive at?
+assistant: It will leave from Transbay Terminal and arrive at North Hollywood Station.
+user: That sounds good.
+assistant: Did you want to buy tickets for this bus?
+user: Yes, I'd like to book a seat.
+assistant: Please confirm you're booking a bus ticket for 3 people from San Francisco to Los Angeles on March 2nd leaving at 7:30 am and you don't have extra luggage.
+user: No, I do have excess luggage.
+assistant: Please confirm you are booking 3 tickets and you do have extra luggage.
+user: Yes, that is correct. How many stops will this bus have?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation has been made. The bus is a direct bus.
+user: Thank you for your help.
+assistant: Did you need help with anything else?
+user: No, but thank you again.
+assistant: Have a wonderful day,

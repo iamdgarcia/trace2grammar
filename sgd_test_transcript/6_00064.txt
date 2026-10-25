@@ -1,0 +1,18 @@
+user: I am interested in finding a unisex salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: A good salon in Berkeley which I can suggest is Berkeley Hair Studio.
+user: That seems a nice one.
+assistant: Do you want to have an appointment reserved for you at this salon?
+user: I do want to make a reservation for an appointment at this salon.
+assistant: Can you tell me the time when you want to have the appointment for?
+user: I will be free to go there at 3 in the afternoon.
+assistant: Can you tell me the date for the appointment you want to book?
+user: Actually I changed my mind regarding time because I want to have the appointment at morning 10 on 12th of this month.
+assistant: Can you please confirm that you want to book an appointment for March 12th at 10 am at Berkeley Hair Studio salon?
+user: Yes that suits me well.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been booked successfully.
+user: I appreciate it very much.
+assistant: Is there something else I can help you with?
+user: Nothing. I am thankful for the help you provided to me.
+assistant: Have a good day!

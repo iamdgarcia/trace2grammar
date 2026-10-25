@@ -1,0 +1,26 @@
+user: I want to go see some attractions or events.
+assistant: What city would you like to search in?
+user: I want attractions in San Francisco or the surrounding area.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might enjoy. Alcatraz is a Historical Landmark.
+user: Do you have the telephone number for Alcatraz?
+assistant: The telephone number for Alcatraz is 415-561-4900.
+user: Okay. What about a movie near there? Maybe something at the Roxie Theater, a regular show?
+tool(FindMovies): ok n_results=6
+assistant: There are 6 movies at the Roxie Theater. Are you interested in Give Me Liberty, or In Fabric, or Labyrinth?
+user: Fabric sounds like a good movie. What about some good movies online?
+assistant: What type of movies are you interested in?
+user: I really like Action movies. Do you have any movies starring Roman Reigns?
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie that fits what you're interested in. Would you want to see Hobbs and Shaw?
+user: Yes. I would like to see Hobbs and Shaw now.
+assistant: Please confirm the following information for me. You want to watch the movie Hobbs and Shaw with English Subtitles.
+user: I want to watch Hobbs and Shaw, but I want French subtitles.
+assistant: Please confirm the following information. You want to watch the movie Hobbs and Shaw with French subtitles.
+user: Yes. That's what I'd like to see.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is beginning.
+user: Great. Thanks for your help.
+assistant: Is there anything else you'd like?
+user: No, that's it. Thanks for your help.
+assistant: You're welcome. Enjoy the movie.

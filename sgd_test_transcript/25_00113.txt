@@ -1,0 +1,32 @@
+user: I'd like to see what alarms I have set please.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm enabled for 8:30 AM that is titled get up.
+user: Alright, thank you.
+assistant: Would you like to create an additional alarm?
+user: No, thank you, not right now. I also like to locate a restaurant please.
+assistant: Where would you like me to look and what kind of cuisine would you like?
+user: I'd like something in Redwood City, a place that serves Persian food.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant for you in Redwood City. Would you like to go to Rocknwraps and Kabobs?
+user: Do they have patio dining?
+assistant: No, I'm sorry, they don't.
+user: That's OK. I would also like to get a rental vehicle.
+assistant: When would you like to get the car and how long will you need it?
+user: I'd like to get the car at twelve in the afternoon and I will return it next Friday.
+assistant: Where would you like to pick the car up from and when do you want to begin the rental? Also would you like an SUV, a hatchback or another kind of car?
+user: I would like a sedan. And may I pick it up downtown the 7th of March?
+assistant: Shall I add insurance do the car?
+user: Yes, please do.
+assistant: Confirming pick up of a rental sedan March 7th at 12 pm, picking up downtown and returning March 8th.
+user: Yes, that's great. What kind of car is it?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed. You will be renting an Audi A8.
+user: OK, great. Also, would you mind sharing that location? The sharing address is downtown.
+assistant: Who is the sharing recipient?
+user: Her name is Sarah.
+assistant: Confirming location sharing of downtown with Sarah.
+user: Yes, that's correct, thank you.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you, I appreciate the help. I'm all set now.
+assistant: Thank you very much.

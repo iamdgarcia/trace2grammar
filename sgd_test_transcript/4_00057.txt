@@ -1,0 +1,16 @@
+user: I have friends visiting and would like to find a place to eat.
+assistant: In what area would you like to eat and is there a particular type of cusine you are wanting to eat?
+user: I enjoy freshwater fish and would like to dine in San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants meeting your criteria in San Francisco. A very nice restaurant is Akiko's sushi Bar.
+user: Is this an ultra high-end restaurant? I will also need their address.
+assistant: This restaurant is considered pricey and their address is 542 A Mason Street.
+user: This place sounds great. Please reserve a table here.
+assistant: What time would you like you reservation?
+user: Please make a reservation for 12:30 on March 2nd.
+assistant: Please confirm you would like a table for 2 at Akiko's Sushi Bar in San Francisco. The reservation will be for March 2nd at 12:30 pm.
+user: That is exactly right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thank you for your help! That is all I need at the moment.
+assistant: Enjoy your day!

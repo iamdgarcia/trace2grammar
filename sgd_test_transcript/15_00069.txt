@@ -1,0 +1,19 @@
+user: Can you help me find a therapist in San Jose?
+assistant: Absolutely. Would you prefer to see a Psychiatrist or a Psychologist?
+user: I'd like to see a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: Barskyex Bryna G is a Psychologist located in San Jose.
+user: That would be fine. Can you tell me what the weather forecast is for the 13th?
+tool(GetWeather): ok n_results=1
+assistant: It is predicted to be 85 degrees Fahrenheit with an 18 percent chance of rain.
+user: Do you know what the humidity is supposed to be?
+assistant: It should be around 29 percent.
+user: Great. Can you make an appointment for 11:15 with the therapist?
+assistant: Yes. You'd like to see Barskyex Bryna G on March 13th at 11:15 am. Is that correct?
+user: I'm sorry. Can you make that for 11:30 in the morning?
+assistant: You would like to make the appointment for the morning of March 13th at 11:30 am. Have I got that right?
+user: That's right. Can you tell me the address of the office?
+tool(BookAppointment): ok n_results=1
+assistant: Certainly. You can find them at 5755 Cottle Road # 4. Your appointment has been made and you will receive an email with the details soon.
+user: That was easy! Thanks for the help.
+assistant: You're very welcome. Have a wonderful day.

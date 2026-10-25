@@ -1,0 +1,23 @@
+user: I am interested in seeing a movie in the Livermore area. will you please search for movies?
+tool(FindMovies): ok n_results=8
+assistant: I have several choices for you. Are you interested in seeing Angel Has Fallen, Blinded by the Light or Close Encounters of the Third Kind?
+user: No, please search for other movie choices.
+assistant: Here are some choices: Hustlers, IT Chapter Two or The Art of Racing in the Rain.
+user: No, please continuing searching.
+assistant: There is The Farewell or The Lord of the Rings: The Return of the King.
+user: The Farewell sounds like a good option.
+assistant: Are you interested in purchasing tickets?
+user: No, not at this time. I am interested in find a restaurant in the same area and making a reservation.
+assistant: Do you have a certain restaurant you would like and what is preference for the resevation time?
+user: Please make a 12:30 in the afternoon reservation at Roppongi.
+assistant: Please confirm you would like a table for 2 people at the Livermore Roppongi sushi restaurant at 12:30 pm on March 1st.
+user: Actually please reserve the table for four people and on the day after tomorrow.
+assistant: Please confirm the table is for 4 people on March 3rd.
+user: Yes, that is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thank you! I would also like to see a regular show at Vine Cinema on the same day. What are the movie times?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 show at Vine Cinema & Alehouse. the show time is 1 pm.
+user: Great. That is all I need right now.
+assistant: Enjoy your day!

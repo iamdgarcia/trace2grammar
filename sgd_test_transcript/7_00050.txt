@@ -1,0 +1,24 @@
+user: I want to search for a new property for me. I need your help to do the same. Can you find the one with two baths?
+assistant: Yes, of-course, please let me know some more details to find it. Tell me whether you need to buy the house or you want it for rent? And also how many bed rooms you need in that house.
+user: I need three bed rooms and I need it for rent only.
+assistant: Do you have any preferred area to search for?
+user: Yes, please search it in Walnut Creek.
+tool(FindHomeByArea): ok n_results=7
+assistant: Okay. then let me know your interest in a house located at 150 Sierra Drive in the name Affordable Housing Associates which costs $3,900. I think this is the best among the 7 houses that I have searched for you. Do you want this?
+user: No, please search for some other houses.
+assistant: What about your opinion on Birchwood Apartments located at 1195 Saranap Avenue # 14 which costs $3,650?
+user: I want the house with garage and tell me whether this house have garage in it?
+assistant: Yes, It has a garage.
+user: Okay, then it is good.
+assistant: Shall I make a schedule to visit this house now?
+user: Yes, I want to make a schedule and please do it for me now.
+assistant: Okay. When do you want to visit this property? Please let me know the exact date to make the schedule.
+user: Make it for the 8th.
+assistant: Please confirm to make a schedule of visit to the property at Birchwood Apartments on March 8th.
+user: Yes, that is confirmed to proceed. Can you check whether they have laundry service in house?
+tool(ScheduleVisit): ok n_results=1
+assistant: Sorry, this house does not have any laundry machines in it and I have made the schedule of visit successfully.
+user: That's okay. Thanks. Get me their contact number.
+assistant: Please note down it as 925-937-1324.
+user: Thank you so much and that's all for now.
+assistant: Have a good day.

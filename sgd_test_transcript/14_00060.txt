@@ -1,0 +1,15 @@
+user: I want to find a comic type movie to watch starring Fiona Reid and directed by Joel Zwick.
+tool(FindMovies): ok n_results=1
+assistant: You might like My Big Fat Greek Wedding, its average rating is 76 out of 100.
+user: That sounds interesting. Now I also want to look for Popular songs, maybe something from Sigrid from two years ago.
+tool(LookupMusic): ok n_results=1
+assistant: How about Strangers by Sigrid from the album Sucker Punch.
+user: I like that, yeah.
+assistant: Do you want me to play the song?
+user: Yes, please play it.
+assistant: I'll play the song Strangers in the Living room, is that okay?
+user: Yes, that would be good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks, that's all I need.
+assistant: Have a great time listening, take care.

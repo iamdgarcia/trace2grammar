@@ -1,0 +1,23 @@
+user: I'm looking for a direct bus from San Diego. I need it for 3 people.
+assistant: What's your destination?
+user: My destination is Anaheim.
+assistant: And when do you want to leave?
+user: I want to leave on the 13th.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses that fit what you want. There's a bus leaving at 7:20 am for $21.
+user: What else is there?
+assistant: There's a bus leaving at 8:20 am for $22.
+user: I like that.
+assistant: Would you like me to purchase tickets?
+user: Yes, please buy tickets.
+assistant: I'll purchase you 3 bus tickets for San Diego to Anaheim on March 13th departing at 8:20 am. How does that sound?
+user: That's perfect for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've purchased the tickets.
+user: Thanks for doing that. Now I also need a hotel over there. Something that's 2 stars. And I'll need 2 rooms.
+tool(SearchHotel): ok n_results=10
+assistant: There's a 2 star hotel called Alamo Inn & Suites that you might like.
+user: That will work for me.
+assistant: Do you want me to book the rooms?
+user: No, don't book the rooms just yet. I don't need anything else.
+assistant: Alright, have a pleasant day.

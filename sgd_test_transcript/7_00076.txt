@@ -1,0 +1,18 @@
+user: I wish to purchase movie tickets to watch it on Wednesday next week.
+assistant: What do you prefer regular or imax show?
+user: I wish to see a 3d show.
+assistant: When do you need it and what is your preferred genre?
+user: I wish to see The Lord of the Rings at evening 6.
+assistant: Which is your desired location and number of tickets you need?
+user: I wish to see movies depicted in Livermore and I need one ticket.
+assistant: Kindly ensure that, on March 6th, you need 1 ticket to see 3d movie The Lord of the Rings: The Return of the King in Livermore at 6 pm.
+user: It is good.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, I am unable to book the ticket. Do you need any other help?
+user: Please try again. I wish to see a imax show at 6:15 in the evening.
+assistant: Kindly ensure that, on March 6th, you need 1 ticket to see imax movie The Lord of the Rings: The Return of the King in Livermore at 6:15 pm.
+user: It is good. What is the name of the theater and their address?
+tool(BuyMovieTickets): ok n_results=1
+assistant: I purchased the tickets. The address is 2490 First Street and the name is Livermore 13 Cinema.
+user: Thank you very much for your help. That is what I want.
+assistant: Have a wonderful day.

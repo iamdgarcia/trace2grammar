@@ -1,0 +1,24 @@
+user: I would like to locate a salon.
+assistant: Which cities are you interested in?
+user: I would like to find a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: There is a nice salon in Santa Rosa called Daredevils & Queens.
+user: That sounds perfect.
+assistant: Would you like me to book you an appointment?
+user: Yes, but not right now! Are there any movies in that area?
+tool(FindMovies): ok n_results=10
+assistant: Would you be interested in After The Wedding, Fiddler: A Miracle of Miracles or the movie Good Boys?
+user: I would like to see Good Boys.
+assistant: Do you want to purchase the tickets?
+user: No, not right now.
+assistant: Do you need me to assist you with anything else?
+user: Can you tell me what time I can watch the movie and if I can watch it at Airport Stadium Cinemas on March 2nd?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is a show at Airport Stadium 12 at 9:30 pm.
+user: That sounds perfect. I would also like to book an appointment at the salon you found for me for quarter past 5 in the evening on that same day.
+assistant: Please confirm that you would like an appointment on March 2nd at 5:15 pm at the stylist called Daredevils & Queens.
+user: Yes, sounds perect! Can you tell me the average rating and the contact number please?
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed your appointment. The phone number is 707-575-5123 and it has a rating of 4.6.
+user: Thank you, that is all I need for now!
+assistant: Have a great day!

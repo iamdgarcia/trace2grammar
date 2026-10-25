@@ -1,0 +1,26 @@
+user: Assistant, can you help me find a hotel? I'll be needing one soon.
+assistant: I would be glad to help. First, please provide me the location in which you will be staying.
+user: Oh I should've been more specific. Find me hotels in Atlanta, GA.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 4 star hotel in Atlanta, GA that you may find suitable. It is called the AC Hotel By Marriott Atlanta Buckhead At Phipps Plaza.
+user: Four star is a bit higher. Are there any hotels that fit my criteria that are three star?
+tool(SearchHotel): ok n_results=10
+assistant: There is another hotel called Ac Hotel by Marriott Atlanta Downtown. This hotel is only 3 stars.
+user: Please provide me with any other hotels that match my criteria.
+assistant: Another 3 star hotel available in Atlanta, Georgia is the Aloft Atlanta Downtown.
+user: That one sounds more like what I'm looking for.
+assistant: I can reserve a room for you now if you want me to.
+user: Not right now. Maybe a little later.
+assistant: What else can I assist you with today?
+user: Tell me how the weather will be in Atlanta on the 6th of this month.
+tool(GetWeather): ok n_results=1
+assistant: On the 6th of the month, Atlanta will experience a temperature of 87 degrees Fahrenheit with a 25 percent chance of rain.
+user: Thanks. Let's move back to the hotel. I'll need 1 room for 4 days starting on the 2nd of March.
+assistant: Booking 1 room for 4 days starting on March 2nd at the Aloft Atlanta Downtown located in Atlanta, Georgia. Do you wish for me to confirm this reservation?
+user: Go ahead. That sounds like a really nice place to stay. How much does the room cost per night?
+tool(ReserveHotel): ok n_results=1
+assistant: I have booked your hotel reservation. The price of the hotel room is $126 per night.
+user: Okay one more question for now. What is the phone number of the hotel?
+assistant: The phone number to the Aloft Atlanta Downtown is +1 678-515-0300.
+user: Perfect. Thank you for being so helpful with this. That's all I need for now.
+assistant: Farewell for now. Have a lovely day.

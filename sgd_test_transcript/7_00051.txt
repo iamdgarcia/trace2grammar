@@ -1,0 +1,21 @@
+user: I want to find a place to rent with an in-unit laundry and a garage.
+assistant: How many bedrooms and baths and which location?
+user: I would like 3 bedrooms and 3 bathrooms in Walnut Creek.
+tool(FindHomeByArea): ok n_results=3
+assistant: I have 3 options. Kingston Place Apartments is nice and it is located at 3055 North Main Street for $4,400 a month.
+user: What else did you find?
+assistant: Walnut Creek Apartments is located at 1595 Sunnyvale Avenue #1 with rent of $3,950.
+user: What about a place I could buy with four bedrooms?
+tool(FindHomeByArea): ok n_results=1
+assistant: I found 1 at Diablo Pointe Apartments at 1450 Creekside Drive with a price of $4,350,000.
+user: I would like to visit the property on the 11th of this month.
+assistant: Please confirm an appointment at Diablo Pointe Apartments on March 11th.
+user: Yes, that is great.
+tool(ScheduleVisit): ok n_results=1
+assistant: You are confirmed.
+user: What is the phone number?
+assistant: It is 925-930-9625.
+user: Thanks.
+assistant: Do you need anything else?
+user: No, all good.
+assistant: Have a nice day.

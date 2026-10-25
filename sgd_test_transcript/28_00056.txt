@@ -1,0 +1,21 @@
+user: I'll be having company over later on tonight. Could you find me a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: Sure. The search yielded 10 movies that might interest you. How does Paprika, which has an average rating of 84 out of 100 sound?
+user: I like the sound of that. Now that we've gotten that out of the way, please find my date and I a restaurant.
+assistant: Any particular city I should search in? What type of cuisine did you have in mind?
+user: Please search for anything in SF serving Diner type fare.
+tool(FindRestaurants): ok n_results=10
+assistant: I found a nice San Francisco restaurant known as 1760.
+user: Sure, that works for me.
+assistant: Should I go ahead and reserve a table here?
+user: Yes, please make a table reservation.
+assistant: For what time should I make the reservation?
+user: Make a 13:30 reservation, please.
+assistant: Okay. Please confirm that you'd like to reserve a table for 2 at 1760 in San Francisco, for 1:30 pm on March 1st.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation.
+user: Thanks a lot.
+assistant: Would you like my help with anything else?
+user: No. Thanks a lot. At the moment, that's all I need.
+assistant: Have a wonderful day!

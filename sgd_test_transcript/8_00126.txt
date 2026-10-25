@@ -1,0 +1,25 @@
+user: There is an Expo coming up in Washington that I would like to attend and need to find a train ticket to get me there from Chicago.
+assistant: I am happy to help, just tell me the date you are planning on leaving.
+user: I would like to go there on the 9th of this month.
+tool(FindTrains): ok n_results=6
+assistant: The first ticket I found leaves at 6:20 am costing $106.
+user: I only need 1 seat, can you find me something else?
+tool(FindTrains): ok n_results=5
+assistant: There are 5 others starting with one that leaves at 11:50 am costing $109. Does that interest you?
+user: IT depends, what station does this train arrive at?
+assistant: This train is scheduled to arrive at Union Station.
+user: Okay, and what station does it leave from?
+assistant: The information I see here shows it leaving from Chicago Union Station.
+user: That works for me.
+assistant: Is there something else I can look up for you?
+user: Yes, I would like to go ahead and book the tickets for that train ride but I would like the tickets to be conditionally refundable if possible.
+assistant: Okay, I can do that. First let me just make sure everything I have is correct. You would like 1 Value ticket for the train that is leaving Chicago on March 9th, at 11:50 am, and travelling to Washington. Does that sound right?
+user: No, I would like economy premium tickets instead.
+assistant: Alright, I have change that to a flexible ticket for you. Is that the only change you would like to make before submitting?
+user: Yes, now everything sounds right.
+tool(GetTrainTickets): ok n_results=1
+assistant: I am happy to inform you that I have reserved those tickets for you.
+user: Thank you, that was much easier with your help.
+assistant: It was my pleasure, can I do anything else for you?
+user: No, you've taken care of the only item on my agenda for now, thank you.
+assistant: I'm here when you need me again.

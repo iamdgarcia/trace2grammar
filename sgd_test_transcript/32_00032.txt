@@ -1,0 +1,26 @@
+user: I would like to find a rock song by Radwimps from the '16.
+tool(LookupMusic): ok n_results=4
+assistant: There is Dream Lantern by Radwimps from the album your name.
+user: Yes, that is correct.
+assistant: Would you like to play the song?
+user: Maybe later not at the moment.
+assistant: Can I help with something else?
+user: I would like to find a family movie online.
+tool(FindMovies): ok n_results=2
+assistant: There is Steel Magnolias or The Farewell?
+user: Steel Magnolias sounds good can you cast it on Patio?
+assistant: Playing the song Dream Lantern in Patio.
+user: Cast it in the living room speaker instead.
+assistant: Playing Dream Lantern in living room.
+user: Yes, that is good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music.
+user: Can you show my alarm?
+tool(GetAlarms): ok n_results=3
+assistant: There are 3 alarms. There is one at 10:30 am for Class.
+user: Ok, that sounds good.
+assistant: Do you want to add an alarm?
+user: Not at the moment.
+assistant: Can I help with something else?
+user: No, that's all I needed.
+assistant: Have a good day.

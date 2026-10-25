@@ -1,0 +1,36 @@
+user: I would like to find a salon in Antioch.
+tool(FindProvider): ok n_results=4
+assistant: I have located 4 salons that you might like. One is a nice one in Antioch called Divine Beauty Salon.
+user: What is the phone number there?
+assistant: The phone number there is 925-238-0519.
+user: Is there a different salon you can locate for me?
+assistant: Another nice salon is called Himc Barber Studio and is in Antioch.
+user: Yes, that sounds fine. I would like to book an appointment at this salon.
+assistant: What is the date you would like to schedule your appointment for?
+user: I would like to visit the salon on the 7th.
+assistant: What time would you like to set the appointment for?
+user: I would like to have the appointment at 1 o'clock in the afternoon.
+assistant: All right, please confirm these details for me: The hair stylist is called Himc Barber Studio, the appointment is set for 1 pm and you would like to have the appointment on March 7th.
+user: No, I would rather have the appointment at 10 in the morning on the 1st of this month.
+assistant: Okay, confirm these details: the appointment is at 10 am and it is for March 1st.
+user: Yes that sounds fine.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been confirmed for you.
+user: What is the average rating and what is the contact number?
+assistant: The phone number there is 925-238-0059 and the rating is 4.0.
+user: Thanks very much.
+assistant: Is there anything else I can do for you today?
+user: I would also like to locate a restaurant that serves Coffeehouse for a meal that day.
+tool(FindRestaurants): ok n_results=1
+assistant: I have located 1 nice restaurant in Antioch called Mcdonald's.
+user: Yes, that is very good.
+assistant: Is there anything else I can do for you?
+user: I would like to book a table there.
+assistant: What time would you like to make the reservation for?
+user: I would like the reservation to be at 1 o'clock in the afternoon.
+assistant: Okay, confirm these details: You would like to book a table for 2 people at Mcdonalds in Antioch at 1 pm on March 1st.
+user: Yes that would be good. Can you tell me how pricey the restaurant is and what the rating is?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been successfully made. The restaurant is cheap and has a user rating of around 3.3.
+user: Thank you very much. That's all I needed.
+assistant: Have a great day.

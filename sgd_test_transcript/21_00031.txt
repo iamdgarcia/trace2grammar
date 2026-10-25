@@ -1,0 +1,23 @@
+user: I would like to hear a popular song by phan Dinh Tung from the album Hat Nhan.
+tool(LookupMusic): ok n_results=1
+assistant: I have found 1 song for you Would you like to listen to Khuc Hat Mung Sinh Nhat by phan Dinh Tung from the album Hat Nhan?
+user: Is it from nine years back?
+assistant: It is from 2011
+user: I want to hear that one. What is the weather like in Hercules?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 81 degrees Fahrenheit with 19 percent chance of rain.
+user: And how humid should it be?
+assistant: Around 40 percent.
+user: Ok. play the song I requested please.
+assistant: You would like to listen to Khuc Hat Mung Sinh Nhat in the living room?
+user: No, I want to hear it on the patio device.
+assistant: You would like to listen to Khuc Hat Mung Sinh Nhat on the patio?
+user: No, in my kitchen.
+assistant: You would like to listen to Khuc Hat Mung Sinh Nhat in the kitchen?
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy the music.
+user: Thanks a lot.
+assistant: Anything else you need>
+user: Not at this time. Thank you.
+assistant: Enjoy your day.

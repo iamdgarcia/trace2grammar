@@ -1,0 +1,18 @@
+user: Can you find me a Thriller directed by Josephine Decker starring Sunita Mani?
+tool(FindMovies): ok n_results=1
+assistant: I have 1 option, Madeline's Madeline, rated 88 out of 100.
+user: Cool that's the one. Can you find me a restaurant in Oakland?
+assistant: Any type of food you're craving?
+user: Can you find a Thai place?
+tool(FindRestaurants): ok n_results=8
+assistant: I've located 8 restaurants in Oakland including 3 Seasons Thai Bistro in
+user: Can you book me a table for 11:15 for the 12th of this month?
+assistant: Confirming you want to book a table for 2 at 3 Seasons Thai Bistro in Oakland for 11:15 am on March 12th.
+user: Yes thank you. Whats the price range?
+tool(ReserveRestaurant): ok n_results=1
+assistant: 3 Seasons Thai Bistro is a moderate priced restaurant. Unfortunately i couldn't make that booking, should i try for 2 people at 11 am on March 12th?
+user: Yes that's fine
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Okay great thanks for your help.
+assistant: Have a nice day.

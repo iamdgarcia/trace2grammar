@@ -1,0 +1,33 @@
+user: I need to find a hotel for one with smoking please.
+assistant: Where should I look?
+user: Looking for a 4 star hotel in Los Angeles.
+tool(SearchHotel): ok n_results=9
+assistant: I found 9 hotels that match your criteria called Dream Hollywood which is a 4 star hotel.
+user: What is the price per night and address?
+assistant: The hotel is located at 6417 Selma Avenue, Hollywood, CA 90028, USA and is $148 a night.
+user: What else can you find with a 2 star rating? I will need 2 rooms.
+tool(SearchHotel): ok n_results=7
+assistant: Beverly Laurel Motor Hotel is a nice 2 star.
+user: Great I need 3 round trip tickets from Chicago.
+assistant: Which day would you like the return flight?
+user: I am returning on the 12th of this month.
+assistant: Are you leaving on March 9th?
+user: I want to travel on the 5th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4, how about American Airlines leaving at 10:20 am and returning at 5:15 am and costs $430.
+user: When does the flight arrive.
+assistant: The outgoing flight arrives at 12:52 pm.
+user: When does the return flight arrive?
+assistant: At 11:47 am the return flight arrives.
+user: Great please reserve the hotel you found starting on the 6th of March for six days.
+assistant: You want to reserve 2 rooms in Beverly Laurel Motor Hotel on March 6th for 6 days in Los Angeles, is that correct?
+user: Yes that is correct, what is their number?
+tool(ReserveHotel): ok n_results=1
+assistant: Booked, the number is +1 800-947-7666.
+user: What is the address and how much is it per night?
+assistant: It is $222 and is located at 8018 Beverly Boulevard.
+user: Thanks for your help. I need a child-friendly museum without an entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: Battleship USS Iowa Museum is a museum you may like.
+user: Great that is all thanks.
+assistant: Goodbye!

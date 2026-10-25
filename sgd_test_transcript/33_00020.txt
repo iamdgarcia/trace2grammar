@@ -1,0 +1,21 @@
+user: I am looking for a salon.
+assistant: Can you tell me the city where I should look in?
+user: The salon should be a unisex one, and should be found in Oakley.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 salons which you might be interested in. One of the salons is Great Clips and it can be found in Oakley.
+user: Yes that is a good one. Can you tell me how the weather is there on the 4th?
+tool(GetWeather): ok n_results=1
+assistant: For your requested location should be about 75 degrees Fahrenheit, and the chance of raining at 11 percent.
+user: Can you also check how windy is going to be there?
+assistant: The wind should be at an average of 10 miles per hour.
+user: Alright, nice. I would like to make a reservation for an appointment on that day, at the salon you found.
+assistant: Can you tell me the time you want to have the appointment?
+user: I will be free to have the appointment at 1:15 in the afternoon.
+assistant: Can you please confirm that you want to book an appointment at 1:15 pm on March 4th at Great Clips salon?
+user: Yes that is a nice one. Can you give me their address, and also the phone number I can use to call them?
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been booked, and the salon can be found at 5214B Diamond Heights Boulevard. If you want to call them you can at 415-285-8852.
+user: I appreciate it very much.
+assistant: Is there something else I can help you with?
+user: Nothing. I am grateful for your help.
+assistant: Have a good time!

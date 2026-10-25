@@ -1,0 +1,29 @@
+user: I have planned to go for a short trip for which I need your help to search for a car for rent.
+assistant: When and Where do you want to pick up the car?
+user: I need to pick up it from San Fran and please book it from March 6th to 10th of March.
+assistant: That is okay. I also want to know your convenient time to pick up the car.
+user: Make your search to book a car for pick up time at two pm and I can go on any type of car.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Got 10 results. What about a Sedan Audi A8 car available for pick up at Salesforce Transit Center.
+user: I think this car will be perfect.
+assistant: Shall I book it now?
+user: We will book it later. Now I want to search for some nice events there an please book tickets too.
+assistant: Where do you want to find the events?
+user: Something around Phoenix, AZ will be perfect.
+assistant: I want to know some more details of your requirement to search for. Let me know your favorite event and desired date to search for and how many tickets you want to book?
+user: Search for something like Gymnologize on this Saturday around Toronto, Canada. 4 tickets are enough to me.
+assistant: Please confirm to book 4 tickets to the event Gymnologize on March 2nd in Toronto.
+user: That is confirmed and you can proceed with booking. Also get me the ticket cost and venue address.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have booked the tickets successfully for the cost $20 and the saem will be held at Red Sandcastle Theatre.
+user: Thank you so much for your help. Now we go back to the booking of a car that you have found for me before.
+assistant: Shall I book it including insurance?
+user: No, don't include insurance.
+assistant: Please confirm to book a Sedan car which is available for pickup from Salesforce Transit Center on March 6th at 2 pm to the date March 10th without insurance.
+user: that is okay to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: Your car was successfully booked.
+user: How much did you spent to book the tickets?
+assistant: It is $29.00 per day.
+user: Thanks for your help and that's all for today.
+assistant: Have a great day.

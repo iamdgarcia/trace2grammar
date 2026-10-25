@@ -1,0 +1,39 @@
+user: Can you find me a place to live?
+assistant: Don you want to rent or buy the place?
+user: I am looking for a place to rent.
+assistant: Tell me the number of bedrooms you prefer in the property?
+user: I prefer three bed rooms.
+assistant: Which area do you want me to look for the property?
+user: I am looking for a property in Napa.
+assistant: How many bath would you like to have in the property?
+user: I prefer three baths.
+tool(FindHomeByArea): ok n_results=4
+assistant: How about a nice property called Bristol Apartments located at 135 Freeway Drive which costs $4,200.
+user: Can you find me their phone number and also confirm whether they have laundry machines inside the house?
+assistant: You can call them on 707-253-8954 and they don't have laundry machines inside the house.
+user: Are there any other place with garage available for buy?
+tool(FindHomeByArea): ok n_results=1
+assistant: There a 1 nice house called Marina Park Townhomes located at 613 Cabot Way which costs $3,450,000.
+user: The property sounds good. Schedule a visit to the property on the 14th.
+assistant: Please confirm: You want me to schedule a visit to Marina Park Townhomes on March 14th.
+user: Yes, That works for me. Can you find me their phone number and also confirm whether there is a laundry machine inside?
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your visit. You can reach them on 707-265-9373 and the house doesn't have laundry machine inside.
+user: Okay, I want you to share the location.
+assistant: Can you please tell me the name of the contact you want me to share the location with?
+user: I would like to share the location with Jerry.
+assistant: Please confirm: You want me to share the location 613 Cabot Way with Jerry.
+user: Yes, That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Location has been successfully shared.
+user: Thank you! Find me a cab to get there.
+assistant: Can you tell me the number of required seats and preferred type of ride like Regular or Luxury or anything else?
+user: I need a regular ride for one people.
+assistant: Please confirm: You want me to book a regular ride for 1 people to 613 Cabot Way.
+user: Yes, That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your ride is successfully booked and the cab is on the way.
+user: Thank you so much!
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

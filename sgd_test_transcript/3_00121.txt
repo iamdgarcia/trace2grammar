@@ -1,0 +1,16 @@
+user: I am looking for a car rental that is available later today, and I'll need it ready for a 2 in the afternoon pick up. I'd like to reserve it through Sunday this week as well.
+assistant: Is there a specific pick up location that you would like to get the car?
+user: Yes,I would like to pick it up in Philly
+tool(GetCarsAvailable): ok n_results=10
+assistant: Based on your requirements, that are 10 cars that are available. You can reserve a lovely Buick Regal Sportback Sedan, and it can be picked up at PHL International Airport.
+user: Perfect. I'd like to go ahead and book the rental.
+assistant: Would you like to include insurance on this?
+user: No, thanks. I won't be needing insurance.
+assistant: So, you would like to reserve a Sedan for pick up on March 1st at 2 pm at the PHL International Airport, with a return date of March 3rd. You won't be needing the insurance option. Is this correct?
+user: Sure, it works!
+tool(ReserveCar): ok n_results=1
+assistant: That reservation has been successfully made.
+user: Great, thanks!
+assistant: Do you need any further assistance?
+user: No, that's all. Thanks!
+assistant: Enjoy your day!

@@ -1,0 +1,14 @@
+user: I need you to locate a therapist for me.
+assistant: What city and what kind of therapy are you seeking?
+user: I want to find someone in Mill Valley if possible, a Psychologist.
+tool(FindProvider): ok n_results=3
+assistant: Would you consider this Psychologist in Mill Valley, a Brown Brooke A?
+user: Are there any more available?
+assistant: Yes, another Psychologist in Mill Valley would be Pamela Butler, Psychologist.
+user: Could I get the phone number for that one please?
+assistant: Yes, it is 415-332-3352.
+user: Could you look for a Family Counselor located in Gilroy please?
+tool(FindProvider): ok n_results=5
+assistant: Leininger Anne would be one. A Family Counselor that is located in Gilroy.
+user: That would be the one See you later.
+assistant: Helping you is a joy.

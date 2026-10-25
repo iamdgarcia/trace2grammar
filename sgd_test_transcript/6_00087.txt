@@ -1,0 +1,16 @@
+user: Can you find me a salon please
+assistant: Sure thing, where are we looking?
+user: Let's look for one in San Jose
+tool(FindProvider): ok n_results=10
+assistant: How about this nice place in San Jose called Atelier Salon Willow Glen
+user: Yes that sounds great
+assistant: Should I book you an appointment?
+user: Yes please do that
+assistant: What date and time do you prefer?
+user: I prefer to go around quarter past 11 in the morning next Friday if possible
+assistant: Confirming you want a 11:15 am appointment on march 8th at the Atelier Salon Willow Glen?
+user: Yes please! Also give me their number and address for my records
+tool(BookAppointment): ok n_results=1
+assistant: Atelier Salon Willow Glen is located at 1047 Lincoln Highway suite 101 and can be called at 408-293-3494. But I couldn't book that one, do you want me to try at 11 am on March 8th instead?
+user: No it's ok for now, that's it for the moment
+assistant: Ok, have a wonderful day then

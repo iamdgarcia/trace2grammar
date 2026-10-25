@@ -1,0 +1,23 @@
+user: Hello. Can you help me find a nice hotel?
+assistant: Sure thing. Just let me know what city you would like to conduct a search in?
+user: Find me something nice in Chi-town!
+tool(SearchHotel): ok n_results=10
+assistant: Okay. I've found 10 hotels I think you will like. There is a nice 3 star hotel called Ac Hotel By Marriott Chicago Downtown that you may be interested in.
+user: Okay, that sounds good. Can you tell me about any interesting attractions out there?
+tool(FindAttractions): ok n_results=10
+assistant: Absolutely! I think you should check out the very popular Tourist Attraction called 360 Chicago. I think you'd love it.
+user: That sounds amazing. Thanks. Hey, can you go ahead and book a reservation at that hotel you found earlier?
+assistant: No problem. What date would you like to check in?
+user: I'll be down there on the 6th of this month.
+assistant: Okay. How long will you be staying?
+user: I'll need a room for four days total.
+assistant: Okay, just confirm the following for me. You are booking 1 room at the Ac Hotel By Marriott Chicago Downtown in Chicago on march 6th. You will be reserving the room for a total of 4 days. Correct?
+user: No, actually I'm looking to check in this Saturday.
+assistant: Okay, just confirm the following. Your check in date for the hotel in Chicago is now March 2nd. Correct?
+user: Also, I will need one room and will be staying for six days total.
+assistant: Okay, please confirm again. You will be reserving 1 room and will be staying for 6 days. Correct?
+user: Yes, that is correct. Can you tell me the price and phone number for the place?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made! The room will cost $102 a night. The contact number for the hotel is +1 312-981-6600.
+user: Thanks, you've been a great help. That's all for now.
+assistant: No problem. Have a great day!

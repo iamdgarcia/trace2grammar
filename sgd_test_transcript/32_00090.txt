@@ -1,0 +1,32 @@
+user: I need a place to live.
+assistant: Are you renting or buying? How many baths would you like?
+user: I want three baths and want to buy.
+assistant: Where would you like it?
+user: I want it in Dixon.
+assistant: How many bedrooms would you like?
+user: I want three bedrooms.
+tool(FindHomeByArea): ok n_results=2
+assistant: I found 2 homes. Bristol Apartment Homes is at 1550 Valley Glen Drive and costs $3,750,000.
+user: Does it have laundry machines?
+assistant: It has in-unit laundry machines.
+user: That's a good one.
+assistant: Would you like to visit the property?
+user: Yes. I'll visit on March 11th.
+assistant: Visiting Bristol Apartment Homes on March 11th. Is this right?
+user: Yes it is.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled.
+user: Where is it? Share it with Philip.
+assistant: You want to share the location 1550 Valley Glen Drive with Philip?
+user: Yes I do.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: I want a cab to get there.
+assistant: What type of ride do you want? How many people is it for?
+user: I want the most comfortable one. It's just for one person.
+assistant: A luxury ride for 1 to 1550 Valley Glen Drive. Is this right?
+user: Yes. When will the cab get here? How much will it cost?
+tool(GetRide): ok n_results=1
+assistant: Your cab is on its way. It will arrive in 7 minutes and costs $17.13.
+user: Thank. That's all.
+assistant: Have a nice day.

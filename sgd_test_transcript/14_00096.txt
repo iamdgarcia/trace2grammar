@@ -1,0 +1,19 @@
+user: I want to listen to Sia songs.
+tool(LookupMusic): ok n_results=7
+assistant: Alive by Sia from This Is Acting is very good.
+user: Yes, that is it!
+assistant: Do you want to listen to it now?
+user: Later. I want to find Ryan Kiera Armstrong movies. I like dramatic story movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie like The Art of Racing in the Rain.
+user: The Art of Racing in the Rain is fantastic.
+assistant: Do you want to watch the movie now?
+user: No, not now.
+assistant: Anything else?
+user: Please play the song you found it the kitchen.
+assistant: Please confirm, playing Alive in the kitchen.
+user: Yes, that kind of music is it? What year did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: It is a pop song from 2013.
+user: Thanks, that is all!
+assistant: Have a nice day.

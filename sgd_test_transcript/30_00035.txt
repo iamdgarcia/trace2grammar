@@ -1,0 +1,25 @@
+user: I want to go to a Damien Jurado Event in Portland, OR. Can you help me reserve 1 ticket?
+assistant: What date do you wish to attend this event?
+user: I'm looking to go on Tuesday next week if possible.
+assistant: Confirm your event details: Purchasing 1 ticket for the Damien Jurado event on March 5th in Portland. Shall I proceed?
+user: Please do. How much is the cost associated with the ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: The cost of the ticket is $30. Your reservation has been confirmed. I hope you have a great time at your event.
+user: Can you tell me the name of the venue that the event will be taking place in as well as its address.
+assistant: The Old Church Concert Hall located at 1422 Southwest 11th Avenue is the location.
+user: Thank you so much for setting that up for me.
+assistant: I'm happy to. Can I assist you with anything else?
+user: Are any buses traveling to that location? Direct or indirect is fine by me.
+assistant: Do you plan to leave on March 5th for your trip? If so, where you leaving from?
+user: I want to leave Seattle on the 3rd of March please.
+tool(FindBus): ok n_results=8
+assistant: There are 8 options available for your bus ride. I can purchase a ticket that costs $32. The departure from Seattle is at 7:30 am.
+user: That'll work for me. Purchase those tickets if you will.
+assistant: Now purchasing 1 bus ticket for a trip to Portland from Seattle on March 3rd at 7:30 am. Is that correct?
+user: You got it right. Buy that ticket for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have confirmed the purchase of your ticket to Portland.
+user: Nice. Thank you very much for your help.
+assistant: Do you need anything else today?
+user: No thank you. You've done more than enough.
+assistant: In that case, enjoy the rest of your day. Bye.

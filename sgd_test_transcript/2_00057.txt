@@ -1,0 +1,12 @@
+user: Can you help me in finding interesting things I can do? I would like to find something on March 6th. I love Musical shows and I would like to find something around Livermore.
+tool(FindEvents): ok n_results=1
+assistant: REO Speedwagon has a lot of popularity. It takes place at Concerts at Wente Vineyards on March 6th at 4:30 pm.
+user: That sounds very good. I would like to reserve tickets to a concert.
+assistant: What number of tickets do you want?
+user: I would like to get 1 ticket.
+assistant: Please confirm these details: Booking tickets to see Reo Speedwagon. This reservation is for 1 ticket on March 6th in Livermore.
+user: Yes that is good for me. What is the cost of one ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is made and the cost is $50. Have a wonderful time there!
+user: Thank you very much for helping me. That was all I was wanting help with.
+assistant: Have a wonderful day.

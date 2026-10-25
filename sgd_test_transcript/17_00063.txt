@@ -1,0 +1,16 @@
+user: I need a hand today, I nned to buy train tickets from sacramento, I need 1 seat and I don't care the fare class of it.
+assistant: when were you thinking to leave and which city do you need to reach by train?
+user: I need to be in san francisco and the tickets must be dated 11th of march
+tool(FindTrains): ok n_results=10
+assistant: I've looked at the timetables for you and there's a train departing at 7:30 am and it will cost you $45
+user: tell me the next one
+assistant: there's one train at 8:10 am and the ticket costs $45
+user: can you tell me the name of the final station?
+assistant: yes, it's salesforce transit center
+user: it can work out.
+assistant: great! May I assist you in another procedure?
+user: yes, you can find a house there
+tool(SearchHouse): ok n_results=10
+assistant: there's this house in 1095 market street and it's rated 4.0
+user: I like it. I don't need you any longer.
+assistant: glad I could have helped you. have a great one

@@ -1,0 +1,43 @@
+user: can you find me a unisex salon in san jose?
+tool(FindProvider): ok n_results=10
+assistant: there's a salon in san jose called atelier salon willow glen.
+user: that sounds good to me.
+assistant: do you want to book an appointment?
+user: not at the moment.
+assistant: is there something else i can do?
+user: can you find me a psychologist in san jose?
+tool(FindProvider): ok n_results=10
+assistant: there's a psychologist in san jose called barskyex bryna g.
+user: where are they located and what's their number?
+assistant: their number is 408-363-4418 and they're located on 5755 Cottle road # 4.
+user: that works, can you book them?
+assistant: what time works best for you?
+user: i want something at three in the afternoon.
+assistant: what day is best?
+user: can you book it for the 3rd?
+assistant: so you want an appointment with barskyex bryna g on march 3rd at 3 pm?
+user: yes that's correct.
+tool(BookAppointment): ok n_results=0
+assistant: sorry, i couldn't book that. is there something else i can do?
+user: can you try making the same appointment for evening 4:45?
+assistant: so you want an appointment with barskyex bryna g on march 3rd at 4:45 pm?
+user: yes that's right.
+tool(BookAppointment): ok n_results=1
+assistant: i couldn't book that either. you can try barskyex bryna g on march 3rd at 5 pm.
+user: okay that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: it's been booked, you will be getting an email confirmation soon.
+user: thanks. can you get me a salon appointment at the place you mentioned earlier?
+assistant: when would you like your appointment to be?
+user: i want it at 10:30 in the morning.
+assistant: so you want an appointment at atelier salon willow glen on march 3rd at 10:30 am?
+user: yes that's right. where are they located?
+tool(BookAppointment): ok n_results=0
+assistant: i couldn't book that. is there anything else i can do?
+user: can you try again and book at 13:30 instead?
+assistant: so you want an appointment at atelier salon willow glen on march 3rd at 1:30 pm?
+user: yes that's correct. what's their number?
+tool(BookAppointment): ok n_results=0
+assistant: i couldn't book that. is there something else?
+user: no that's it.
+assistant: have a great day.

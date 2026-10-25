@@ -1,0 +1,39 @@
+user: Can you find a movie with Meera Ganatra online for me?
+assistant: Sure, what type of movies do you prefer?
+user: I enjoy movies with a dramatic story.
+tool(FindMovies): ok n_results=1
+assistant: I recommend seeing Blinded by the Light.
+user: Blinded by the Light sounds good.
+assistant: Should I play the movie now?
+user: No, I think I will wait to see it.
+assistant: Is there something else I can do for you?
+user: Yes, I want to find something fun to do.
+assistant: What city do you want to find attractions in?
+user: Please look for something in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: Yu may enjoy visiting the historical landmark at 30 St Mary Axe (The Gherkin).
+user: I'll think about it, what else is there to do?
+assistant: Another historical landmark in the area is Admiralty Arch.
+user: Is this a good place to take kids?
+assistant: Yes, the attraction is child-friendly.
+user: That sounds good.
+assistant: Is there anything else I can do for you right now?
+user: Yes, I'd like to find some songs by James Blunt.
+tool(LookupMusic): ok n_results=1
+assistant: Always Hate Me is a good song by James Blunt. It is from his Moon Landing album.
+user: That sounds good.
+assistant: Should I play this song now?
+user: Yes, play it now.
+assistant: You would like to play Always Hate Me in the living room, correct?
+user: Sounds good. What type of music is this considered to be and when was it released?
+tool(PlayMedia): ok n_results=1
+assistant: It is a pop song that was released in 2013. Hope you enjoy it.
+user: Thanks! Can yu now play the movie you mentioned earlier with english subtitled?
+assistant: You would like to watch Blinded by the Light with english subtitles, is that right?
+user: No, actually I would rather see it with subtitled in Hindi.
+assistant: Can you verify you want to see Blinded by the Light with Hindi subtitles?
+user: yes, that's what I want.
+tool(PlayMovie): ok n_results=1
+assistant: Alright, your movie has started.
+user: Perfect! Goodbye for now.
+assistant: Enjoy the movie!

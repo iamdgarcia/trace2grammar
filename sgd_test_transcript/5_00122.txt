@@ -1,0 +1,22 @@
+user: I want to meet a Therapist and I need your help in this regard. please search for some one who is the best.
+assistant: Let me know your required type of Therapist to search for.
+user: I want to meet a Family Therapist and search for the best one.
+assistant: Do you have any preferred City in your mind to search for the Therapist?
+user: Search it in Gilroy and I need a Psychologist.
+tool(FindProvider): ok n_results=3
+assistant: I found a Psychologist named Rachelle Coate in Gilroy and you may try this Therapist.
+user: Let me know their contact number and address to decide further.
+assistant: Please note down the phone number as 831-665-5053 and their address is 8339 Church Street. Hope this information was useful.
+user: Yes, it is and I need to book an appointment with this Therapist.
+assistant: What is your convenient date and time to book the appointment?
+user: Book it on March 10th at 11:30
+assistant: Please confirm to book an appointment with Rachelle Coate on March 10th at 11:30 am.
+user: Please change the time to 12:45 and book accordingly.
+assistant: Please confirm to book the appointment at 12:45 pm on March 10th.
+user: Sorry, I forgot to say that I want the appointment on 4th of this month. Please change this.
+assistant: Please confirm to book an appointment with Rachelle Coate on March 4th.
+user: That's all correct and go ahead.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment with the Therapist and they will send you an confirmation e-mail soon.
+user: That is nice and thanks for your help.
+assistant: Have a nice day.

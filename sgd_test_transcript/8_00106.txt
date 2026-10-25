@@ -1,0 +1,16 @@
+user: Would you find me a train with 3 seats?
+assistant: Which city do you want leave from and go to?
+user: I will leave from LAX and og to Anaheim, CA.
+assistant: What date will you leave?
+user: I will leave 10th of March.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains that should be suitable. There's one that leaves at 6 am and costs $74.
+user: Sounds good to me. Book me train tickets. I need trip insurance and want conditionally refundable tickets.
+assistant: Could you confirm that you want a train ticket leaving from Los Angeles and going to Anaheim on March 10th at 6 am for 3 people? The train ticket comes with trip insurance and is a value ticket.
+user: That sounds good. What station will it leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: I have made your booking successfully. The train leaves from Union Station.
+user: What station will it go to?
+assistant: The train goes to Anaheim Intermodal Center.
+user: That's a great help. That is all.
+assistant: See you later.

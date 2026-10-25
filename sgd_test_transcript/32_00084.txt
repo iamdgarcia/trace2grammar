@@ -1,0 +1,30 @@
+user: Find me a place to leave.
+assistant: On which area you want to be?How many bath you want and how many bed rooms?
+user: In El Cerrito with two bed rooms and two baths,
+assistant: You want to rent or to buy?
+user: I would like to buy.
+tool(FindHomeByArea): ok n_results=1
+assistant: I have 1 nice house for you at 10944 San Pablo Avenue # 800 called Civic Plaza Apartments and cost $2,650,000.
+user: Laundry machines inside the house is available.Do it have garage?
+assistant: Yes is has garage and it has in-unit laundry.
+user: Sounds good.Schedule a visit for me on March 14th.
+assistant: You schedule a visit to Civic Plaza Apartments on March 14th.Correct?
+user: Yes is good.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled.
+user: Share the location with Thomas.
+assistant: Share location 10944 San Pablo Avenue # 800 called Civic Plaza Apartments with Thomas.I'm right?
+user: Yes is good.
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared.
+user: Get for me a cab to go there.
+assistant: What type of ride you want?
+user: A Normal ride will be okay.
+assistant: Tell me the number of seats.
+user: I am part of a group of one.
+assistant: You want 1 seat to 10944 San Pablo Avenue # 800 called Civic Plaza Apartments and you prefer a Regular ride.Is correct?
+user: Yes good.Tell is how much time will arrive the cab here and the cost.
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and the cab is on its way,should arrive in 3 minutes.Cost of ride is $20.04
+user: Thank you.That's all for now.
+assistant: Have a great day!

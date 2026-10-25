@@ -1,0 +1,34 @@
+user: Can you find me some movies online?
+assistant: Sure. What genre would you like to search for?
+user: Try finding some Horror movies.
+tool(FindMovies): ok n_results=6
+assistant: I found 6 movies that you might like. How about 47 Meters Down: Uncaged, In Fabric or Midsommar?
+user: Midsommar sounds great. Can you find me some attractions?
+assistant: What location should I search for attractions in?
+user: Find me something in Paris, France.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that might interest you. You might want to check out American Church in Paris. It is a Place of Worship.
+user: Cool. Did you find anything else? How about a garden with free admission?
+tool(FindAttractions): ok n_results=4
+assistant: I found 4 attractions that you might like. How about Bagatelle park? It is a Park.
+user: Great. Can you find me some songs now?
+tool(LookupMusic): ok n_results=10
+assistant: Sure. I found 10 songs. How about Pond Creek Road by Upchurch? It is from the album Creeker.
+user: What genre is that? Did the song come out six years ago?
+assistant: The song is a Rock song from the year 2018.
+user: That's the song that I want to play.
+assistant: Confirming that you want to play Pond Creek Road in the Living room?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music.
+user: Thanks!
+assistant: Do you need help with anything else?
+user: Can you play that movie with French subtitles?
+assistant: Confirming that you want to watch Midsommar with French subtitles?
+user: Yes. Who starred in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Bjorn Andresen is one of the stars. I have started playing your movie.
+user: Thank you.
+assistant: Is there anything else?
+user: No, thanks.
+assistant: You're welcome. Have a good day.

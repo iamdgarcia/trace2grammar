@@ -1,0 +1,16 @@
+user: Can you find me some interesting things to do in London?
+assistant: Sure. What are your interests? Music, theater or something else?
+user: I would really like to see a Play.
+tool(FindEvents): ok n_results=10
+assistant: How about A Right Royale Tea? It is a very popular event taking place at Amba Hotel Charing Cross on March 14th. It begins at 7 pm.
+user: How much are tickets?
+assistant: One ticket costs $50.
+user: That sounds really good.
+assistant: Would you like me to buy tickets for this event?
+user: Yes. Please get me four tickets.
+assistant: Can you confirm the following? I am booking 4 tickets to A Right Royale Tea taking place on March 14th in London. Is this correct?
+user: Yes, that works. Where is the event location?
+tool(BuyEventTickets): ok n_results=1
+assistant: The event is taking place at the Strand. You're reservation is confirmed. Have a great time!
+user: Thank you. That's all I need for now.
+assistant: You're welcome. Have a nice day.

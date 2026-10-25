@@ -1,0 +1,36 @@
+user: I am looking to by some bus tickets for my trip next Monday.
+assistant: Okay. Just let me know your destination and how many tickets you want.
+user: I'm traveling to Fresno, CA and need two tickets.
+assistant: Sure thing. Can you tell me where you are departing from and when you wish to leave?
+user: I am headed out of Long Beach, CA and would like to leave at around 7:45 in the morning.
+assistant: Just confirm the following for me please. You are attempting to purchase 2 tickets from Long Beach to Fresno on March 4th at 7:45 am. You are not taking any extra luggage. Correct?
+user: Yeah, that all sounds good to me. Can you let me know the ticket price and how many stops the bus will have?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus is a direct trip to your destination and tickets cost $43. However I am sorry to inform you that I was unable to get tickets for this bus due to unexpected errors. Would you like to take the 8:10 am bus instead?
+user: Yeah, that will work.
+tool(BuyBusTicket): ok n_results=1
+assistant: Okay, your ticket has been confirmed.
+user: Thanks alot. I will also need a rental car out there Tuesday next week. Can you find a nice SUV I can pick up around 11 am?
+assistant: Okay. Just let me know how long you will require the vehicle.
+user: I'll need it until next Friday sometime.
+assistant: Are you picking it up in Fresno?
+user: Yes I am.
+tool(GetCarsAvailable): ok n_results=3
+assistant: Okay there is a very nice SUV GMC Terrain at Fresno Station available for you.
+user: How much does it cost to rent per day?
+assistant: The SUV will be $38.00 a day.
+user: That's a little steep for me. Can you find me anything else?
+assistant: How about a nice SUV Jaguar F-Pace available at Fresno Station?
+user: What's the cost per day?
+assistant: This vehicle is only $33.00 per day.
+user: Okay, that's a little better.
+assistant: Anything else I can help you with?
+user: Yeah, I want to go on ahead and rent that car.
+assistant: Would you like to add insurance on your vehicle?
+user: No thank you.
+assistant: Okay, just confirm the following details for me. You will be picking up a SUV from Fresno Station on March 5th at 11 am. Your drop-off date is on March 8th. Correct?
+user: Yup, that all sounds right to me. Thanks.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car. Enjoy!
+user: Thank you! I appreciate the help. That will be all for today.
+assistant: My pleasure. Have a good day!

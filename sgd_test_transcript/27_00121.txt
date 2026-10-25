@@ -1,0 +1,23 @@
+user: I want to get a direct bus to San Francisco, I will leave from SD.
+assistant: On which date are you leaving to San Francisco?
+user: March 13th, so were you able to find any buses?
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses available for your trip, what about a bus departing at 6:30 am that costs $62?
+user: That bus sounds good, can you find me attractions in San Francisco?
+tool(FindAttractions): ok n_results=10
+assistant: From 10 attractions, would you be interested in a historical landmark, Alcatraz?
+user: Is Alcatraz a child-friendly attraction, how can I contact this establishment?
+assistant: Alcatraz is a good place to take kids along to visit, contact them by calling 415-561-4900.
+user: Sounds great, please purchase four bus tickets to the bus you found earlier.
+assistant: You wish to buy 4 tickets to a bus leaving from San Diego to San Francisco on March 13th, at 6:30 am , correct?
+user: That works for me, what stations does it depart and arrive to?
+tool(BuyBusTicket): ok n_results=1
+assistant: The tickets have been purchased, the bus departs from El Cajon Bus Stop and arrives at Transbay Terminal.
+user: What about hotels in the area, what are currently available?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels you may be interested in, how about Amsterdam Hostel San Francisco, it is a 1 star hotel?
+user: Any other hotels you can find, I only need 1 room?
+tool(SearchHotel): ok n_results=10
+assistant: What about Argonaut Hotel, it has a 4 star rating?
+user: Great, that is just what I needed, no further assistance is necessary.
+assistant: Understood, have a very good day!

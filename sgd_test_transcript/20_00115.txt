@@ -1,0 +1,17 @@
+user: Hi, could you get me a house to stay for 2 in Paris, France?
+tool(SearchHouse): ok n_results=10
+assistant: Sure, how about a 4.5 rated house located at 1 Rue Bayard, 75008?
+user: That sounds great! Please reserve it for me.
+assistant: When will you be checking in and out?
+user: Likely from the 2nd to the 5th of March.
+assistant: Sure, please confirm your stay in Paris for 2 from March 2nd to March 5th.
+user: That sounds great!
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: May I know if they provide laundry services?
+assistant: Yes, they do.
+user: Thank you for your help, Could you find me a child-friendly museum over there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions which you may like, how about a Museum called Cinematheque Francaise?
+user: I see, that is all I need for now. Thank you!
+assistant: No worries, have a pleasant day ahead!

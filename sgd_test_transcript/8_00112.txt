@@ -1,0 +1,22 @@
+user: I would like to find a train.
+assistant: What city do you plan to depart from?
+user: I am planning to leave from NYC.
+assistant: What city is your destination?
+user: I am going to Chi-town.
+assistant: When will you be departing on your trip?
+user: We would like to board the train on the 9th of this month. We will need three seats.
+tool(FindTrains): ok n_results=4
+assistant: There is a train departing at 6 am that will cost $305 in total.
+user: What station does that train leave from?
+assistant: The train leaves from Grand Central Station.
+user: That sounds good, I would like to book tickets for that train.
+assistant: Would you like to include travel insurance.
+user: Yes, I would like the trip insurance, please.
+assistant: You would like 3 Value tickets on the train from New York to Chicago leaving at 6 am on March 9th, is this correct?
+user: Yes, that is all correct. What station does the train arrive in?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were booked. The train arrives in Chicago Union Station.
+user: Thank you for your help.
+assistant: Is there anything else I can help you with?
+user: No, you have been very helpful, thank you.
+assistant: Have a good trip!

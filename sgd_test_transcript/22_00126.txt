@@ -1,0 +1,30 @@
+user: I want to watch a comedy movie.
+tool(FindMovies): ok n_results=5
+assistant: What about Chhichhore, Good Boys, or My Big Fat Greek Wedding?
+user: What else? I like Claudia Doumit.
+tool(FindMovies): ok n_results=1
+assistant: How about Where'd you go, Bernadette?
+user: Where'd You Go, Bernadette is a good one. I want some attractions there.
+assistant: Where should I look?
+user: Look in Sydney, NSW.
+tool(FindAttractions): ok n_results=10
+assistant: ANZ Stadium is a sports venue there.
+user: Is it child-friendly? Is it free to attend?
+assistant: You can take your kids. Entrance is free.
+user: I want to hear some music now. Look for some Foster The People.
+tool(LookupMusic): ok n_results=2
+assistant: What about Houdini by Foster the People from the Torches album.
+user: That's fine. Play it for me.
+assistant: Play the song Houdini in your living room. Is this what you want?
+user: No. Play it on my kitchen speaker.
+assistant: Play the song Houdini in your kitchen. Is this what you want?
+user: Yes. What kind of song is it? When did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: The song has begun. It's an indie song from 2011.
+user: I want to watch the movie now.
+assistant: Play Where'd You Go, Bernadette with English subtitles. Is this right?
+user: Yes it is.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Thanks. That's all.
+assistant: Have a nice day.

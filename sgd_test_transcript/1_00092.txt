@@ -1,0 +1,14 @@
+user: I am excited about a trip to Paris. While I am visiting I will need to book one room at a 3 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: A lovely hotel found with a 3 star rating is known as the Aparthotel Adagio Access Paris La Villette.
+user: Are you able to provide the hotel address? I would also like to know if smoking is allowed at the hotel.
+assistant: The hotel is located at 28bis Avenue Corentin Cariou, 75019. This hotel does not allow smoking anywhere.
+user: Thank you. It seems like a nice place to stay.
+assistant: I can make you a reservation if you like.
+user: I would like a reservation. Thank you for asking. I would love to stay for 5 days with a check in on the 1st of this month.
+assistant: With your approval I will reserve 1 room for 5 days at the Aparthotel Adagio Access Paris La Villette located in Paris. The reservation will begin March 1st.
+user: Approval granted, thanks.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is set.
+user: You are a great help. I will not need any more assistance at the moment.
+assistant: Au revoir, enjoy the rest of the day>

@@ -1,0 +1,25 @@
+user: What is the weather like in New Delhi?
+tool(GetWeather): ok n_results=1
+assistant: It should be 99 degrees Fahrenheit with a 4 percent chance of rainfall.
+user: Great. I want to schedule a visit for then.
+assistant: For March 1st? What property would you be reviewing?
+user: Yes, I want to visit Santa Familia Apartments on that day.
+assistant: You would like to visit Santa Familia Apartments on March 1st?
+user: Yes, I do.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled the visit.
+user: I would need a car to get there.
+assistant: Where would you like to pick up the car and at what time?
+user: I want to pick it up at pacific central station for afternoon 2.
+assistant: Till when would you need the car?
+user: I need a hatchback from the 1st of March to the 4th.
+assistant: Would you like to add insurance?
+user: Yes, I want to buy some.
+assistant: You would like to pick up a hatchback at pacific central station on March 1st at 2 pm and drop it off on March 4th?
+user: Yes, that would work. What is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved the car and it would cost $36.00 daily.
+user: Thanks a lot.
+assistant: Do you need assistance with something else?
+user: No. I am good. Thanks.
+assistant: Enjoy your day.

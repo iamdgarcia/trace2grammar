@@ -1,0 +1,14 @@
+user: I wonder what a good Family movie with Carol Sutton would be?
+tool(FindMovies): ok n_results=1
+assistant: Give Steel Magnolias a try it's a good 1. It has a rating of 70 out of 100.
+user: Who directed that?
+assistant: It was Herbert Ross.
+user: Fine, find me something else interesting to do on Sunday this week.
+assistant: What kind of event makes you happy?
+user: I'd like to see a play.
+assistant: What city please?
+user: How about NY.
+tool(FindEvents): ok n_results=10
+assistant: There are at least 10, first alphabetically is Advanced Acting Scene Study. It's at TGW Acting Studio. It's on March 3rd at 6 pm.
+user: Fine, that's a help.
+assistant: Have a great time.

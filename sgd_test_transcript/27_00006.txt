@@ -1,0 +1,30 @@
+user: I wonder if you can help me find some attractions to visit in SF? I would like to visit a stadium but without an entry fee.
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 attraction that meets your criteria. Oracle Park is a Sports Venue.
+user: What is the phone number there?
+assistant: The phone number is 415-972-2000.
+user: OK, that's great. I also want to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: Some of the movies playing are Ad Astra, Brittany Runs a Marathon, and Fiddler: A Miracle of Miracles.
+user: Please find some other movies.
+assistant: There are also Give Me Liberty, Hobbs and Shaw, and Hustlers.
+user: Yeah, Hobbs and Shaw sounds just right.
+assistant: Would you like to buy tickets?
+user: No, now right now, thanks.
+assistant: Is there anything else I can help you with?
+user: Are there any good movies online?
+assistant: What type of movies would you like to look for?
+user: Thriller movies would be great.
+tool(FindMovies): ok n_results=4
+assistant: There are 4 movies available in that category. Would you be interested in watching Madeline's Madeline, Rojo, or The Art of Self-Defense?
+user: Yeah, I want to watch Rojo. Can you play it now, with French subtitles, please?
+assistant: You would like to play Rojo with subtitles in French, is that correct?
+user: Yes, I would, please.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is starting.
+user: Who plays the lead role?
+assistant: Rudy Chernicoff stars in the movie.
+user: Thank you, I like his work.
+assistant: Is there anything else I can help you with?
+user: No, that's all, thanks.
+assistant: Have a great day!

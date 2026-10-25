@@ -1,0 +1,18 @@
+user: I would like to request a payment. Please set up a private transaction with Mary.
+assistant: What is the amount, please?
+user: The amount is $30.
+assistant: You would like to create a private transaction with Mary in the amount of $30, is that correct?
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request was made successfully.
+user: Thank you! I would also like to make a payment. Please set up a transaction with Yumi using the money in app.
+assistant: What is the amount, please?
+user: This one is for 94 bucks.
+assistant: You would like to send $94 to Yumi from your app balance, is this correct? This transaction will be visible to the public.
+user: Yes, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is successful. The recipient should be able to see the transaction soon.
+user: Thank you very much!
+assistant: Is there anything else I can help with?
+user: No, that's all for now, thanks!
+assistant: Have a great day!

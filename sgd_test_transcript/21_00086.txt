@@ -1,0 +1,23 @@
+user: Tell me what the weather is.
+assistant: What city shall I search for?
+user: Tell me the weather in New Delhi.
+tool(GetWeather): ok n_results=1
+assistant: Today's average temperature is 99 degrees with a 4 percent chance of precipitation.
+user: What is the humidity level?
+assistant: The average humidity is 21 perent.
+user: I see. What fun things are there to do there?
+tool(FindAttractions): ok n_results=10
+assistant: Adventure Island is a Theme Park and is one of 10 attractions that search found.
+user: Will kids like it and what is their contact number?
+assistant: Kids will love it and you can contact them at 83770 02902.
+user: I see. I need a ride for two people to get there.
+assistant: Do you prefer a Regular, Luxury, or some other type of ride?
+user: Book me a Luxurious cab.
+assistant: You want a Luxury cab for 2 people to Adventure Island, correct?
+user: That is right.
+tool(GetRide): ok n_results=1
+assistant: Your ride is confirmed and is coming for you right now.
+user: What is the total cost and my wait time?
+assistant: The total cost is $27.80 and your ride will be there in 12 minutes.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

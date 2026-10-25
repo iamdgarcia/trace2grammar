@@ -1,0 +1,22 @@
+user: I'm trying to find a film to watch.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 possible movies that I have for you. Would you like to watch the movie Paprika? It has an 84 rating out of 100 possible.
+user: That'll be fine. I'm also going to need to find some place to eat.
+assistant: In what city and what type of cuisine?
+user: Just some place with comfort food in San Jose.
+tool(FindRestaurants): ok n_results=2
+assistant: How about Dickey's Barbecue Pit in San Jose?
+user: I love it, thanks.
+assistant: What else may I do for you?
+user: I need to make a restaurant reservation.
+assistant: At what time please?
+user: I'd like that at quarter to 1 in the afternoon.
+assistant: Confirming a table for 2 people at Dickey's Barbecue Pit in San Jose on March 1st at 12:45 PM.
+user: That all sounds correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I apologize, I was not able to successfully book that table. Would you like to try a reservation for 2 at Dickey's Barbecue Pit on March 1st at 12:30 PM?
+user: Sure, let's try it.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table has been booked.
+user: Thanks a lot, I'm all set.
+assistant: Have a terrific day.

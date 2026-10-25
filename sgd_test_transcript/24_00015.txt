@@ -1,0 +1,31 @@
+user: I am planning a trip. I need help finding a plane ride there.
+assistant: Where will your trip be? Do you have a preferred travel date in mind? Where will your travels begin?
+user: My traveling plan is to start in SF and go to Phoenix. I want to start my trip on the 7th.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: Is Alaska Airlines an acceptable choice for you? They have a flight leaving at 11 pm. It will only cost $116.
+user: I like that suggestion. Thanks.
+assistant: Are you in need of further assistance?
+user: I'm thinking about taking a train there. See if passes are available for the 3rd of this month pleas passes.e. I will need two
+tool(FindTrains): ok n_results=3
+assistant: One train available is schedules to leave at 6 am. Both seats will cost $379.
+user: Exactly where will the train drop me off?
+assistant: The train will take you to Phoenix Union Station.
+user: Is that train my only choice?
+assistant: No. I found a train that leaves at 6:20 am. This option will have a cost of $357.
+user: Where would this train pick me up and drop me off?
+assistant: You will be boarding the train at the Salesforce Transit Center. This option takes you to the Phoenix Union Station.
+user: That would be perfect.
+assistant: I can reserve seats for you if you are ready.
+user: Yes. Please buy the tickets for me.
+assistant: The option to purchase insurance is available.
+user: That's a good idea. Add the insurance please.
+assistant: With your permission I will purchase 2 Value tickets. The passes will be good for a train trip from San Francisco to Phoenix. The date of travel will be March 3rd. The time to board will be 6:20 am.
+user: Actually I would like you to purchase fully refundable tickets please.
+assistant: Do you want Flexible tickets to Phoenix?
+user: Yes. That is what I am requesting.
+tool(GetTrainTickets): ok n_results=1
+assistant: The passes have been saved in your name for you.
+user: I would like to express the deepest gratitude for your help.
+assistant: I am here for you always. What else can I help with?
+user: Nothing but thanks for offering.
+assistant: Have a wonderful day.

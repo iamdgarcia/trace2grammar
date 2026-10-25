@@ -1,0 +1,23 @@
+user: I have a plan to eat outside once and I need a nice restaurant for me. Can you search for the one in San Ramon?
+assistant: Yes, what is your favorite food? If you tell me the same then I can search for the best restaurants.
+user: I want to eat some Pakistani food and search it accordingly.
+tool(FindRestaurants): ok n_results=1
+assistant: That's easy. I found 1 restaurant named Cafe Tandoor which is in San Ramon. Do you like to go there?
+user: Let me know their address to decide further.
+assistant: They are located at 420 Market Place.
+user: That is okay for me. Can I get a table there?. Please book it for me now.
+assistant: Sure, I will book it and let me know your convenient time to book the same.
+user: Make it at evening 4:30.
+assistant: Okay. Please confirm to book a table for 2 at Cafe Tandoor in San Ramon on March 1st for the time at 4:30 pm.
+user: That is confirmed and you can go ahead.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I am so sorry that I was not able to book it at that time. Shall I try for something else?
+user: Please check it for another time that is 1:30 pm.
+assistant: Please confirm to book a table for 2 at Cafe Tandoor in San Ramon on March 1st for the time at 1:30 pm.
+user: That is confirmed. Please proceed.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked the table as you requested.
+user: That is nice and thank you so much.
+assistant: Anything else you need?
+user: No, nothing for now.
+assistant: Have a great day.

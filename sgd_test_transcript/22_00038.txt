@@ -1,0 +1,35 @@
+user: I am looking for some interesting things to do.
+assistant: Which city and category like Music or Theater or anything else do you prefer for the event?
+user: I am searching for musical performance events around Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that meets your requirements. How about a very popular event called Anthony Green taking place at The Foundry on March 10th at 6 pm?
+user: Can you find me the address of the venue and the price for one ticket?
+assistant: The address of the venue is 29 East Allen Street 2nd Floor and the cost for one ticket is $60.
+user: Okay, That sounds good to me. Find me some buses going there from NYC on March 8th.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses you may like. How about a bus leaving at 7:40 am with the cost of the ticket as $24?
+user: Show me some more options.
+assistant: How about a bus leaving at 7:50 am with the cost of the ticket as $24?
+user: That sounds nice to me.
+assistant: Is there anything else I can help you with?
+user: I would like to buy 3 tickets in a Southwest Airlines flight going there.
+assistant: Is your date of departure March 8th and what will be your date of return?
+user: I will be leaving on March 6th and will return on 11th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 Southwest Airlines flight whose onward flight takes off at 10:50 am and the return flight takes off at 2:45 pm. The cost of the ticket is $98.
+user: That sounds good to me.
+assistant: Is there anything else I can help you with?
+user: Can you search for 1 room in a 3 star hotel?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels matching your requirements. How about a 3 star hotel called Aka University City?
+user: That sounds nice to me.
+assistant: Do you want me to reserve the hotel?
+user: No, Maybe some other time.
+assistant: Can I assist you with anything else?
+user: I would like to book tickets for the events you found.
+assistant: Please confirm: You want me to book 3 tickets for the event called Anthony Green taking place at Philadelphia on March 10th.
+user: Yes, That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets for you.
+user: Okay, That will be all. Thank you!
+assistant: I am glad I could help. Thank you!

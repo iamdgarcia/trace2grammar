@@ -1,0 +1,30 @@
+user: I need a therapist please, get someone in Gilroy though.
+assistant: What type of therapist do you want?
+user: How about Family Therapist.
+tool(FindProvider): ok n_results=5
+assistant: First listed is Leininger Anne. She's listed as Family Counselor in Gilroy.
+user: Try a Psychologist in Sausalito, for fun.
+tool(FindProvider): ok n_results=1
+assistant: You can try Richard J. Leary in Sausalito, he's a Psychologist.
+user: He sounds quite Sage, right?
+assistant: How about booking a date?
+user: Perhaps later on.
+assistant: What more might you want?
+user: Give me the weather there.
+tool(GetWeather): ok n_results=1
+assistant: It's going to be about 77 degrees, only 1 % chance of rain.
+user: What's the humidity there?
+assistant: Very low, 16 %.
+user: What will the winds be there? What is the actual date today?
+assistant: It's March 1st and wind will be low at 4 MPH.
+user: Fine, book an appointment with the therapist on that day at 1:45 in the afternoon please.
+assistant: To confirm: appointment on March 1st at 1:45 pm with Richard J. Leary.
+user: No, change that to 16:45.
+assistant: To be clear: Appointment with Richard J. Leary at 4:45 pm.
+user: You got it.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, that's not working, what about we try booking with Richard J. Leary on March 1st at 5 pm?
+user: No, I don't want that.
+assistant: what else might you want?
+user: Nothing, I'm done.
+assistant: Thanks, and have a good day.

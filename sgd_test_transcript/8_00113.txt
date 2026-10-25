@@ -1,0 +1,20 @@
+user: Hey, I need to go on a short trip. Find me tickets for the 6th of this month. I'll need one seat on business class.
+assistant: Where will you be leaving from and what's your destination?
+user: I'm leaving from Vancouver to Portland.
+tool(FindTrains): ok n_results=8
+assistant: I found 8 trains that could work. There's one departing at 6:50 am with a $117 ticket.
+user: In which station does it arrives at?
+assistant: It arrives at Union Station.
+user: Sounds real good.
+assistant: Should I book the tickets?
+user: Yes, please do.
+assistant: Would you like to get a travel insurance?
+user: I already have one, thanks.
+assistant: So 1 ticket for a train leaving Vancouver and going to Portland, departing at 6:50 am on March 6th. You'll be seating on business class. Is that correct?
+user: Yes, it is. In what station will I arrive?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is confirmed. You'll arrive at Pacific Central Station.
+user: You really helped me, thanks a lot.
+assistant: Can I help you further?
+user: No, that was all. Thanks.
+assistant: See you later. Have a great day.

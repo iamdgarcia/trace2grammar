@@ -1,0 +1,18 @@
+user: I want to find a house to stay with laundry service.
+assistant: What city are you going to stay in?
+user: There is one person travelling to LAX.
+tool(SearchHouse): ok n_results=10
+assistant: There would be 10 houses for your search available with a nice house at 1020 South Figueroa Street rated 4.1.
+user: The house is great.
+assistant: Will you like to make reservations for this house?
+user: Yes, I'd like to book the house
+assistant: What day are you checking in?
+user: I would like to check in Wednesday next week.
+assistant: What day are you checking out?
+user: I would like to check out the 8th of March.
+assistant: Please confirm the details for the location in Los Angeles with 1 person in my group with check in March 6th and check out March 8th.
+user: Yes, that is great and could I get a contact number for this place?
+tool(BookHouse): ok n_results=1
+assistant: The reservation is successful with a phone number of +1 310-825-2923 .
+user: Thanks for the help and that is all I need.
+assistant: It's my pleasure helping you. Goodbye.

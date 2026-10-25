@@ -1,0 +1,28 @@
+user: I am going on a trip. I'm in need of a plane ride there.
+assistant: Where will your destination be? Where would you like your trip to begin. Do you have a certain date you prefer to travel on?
+user: My trip will begin on March 1st. My destination will be NYC. I would like to catch a flight from Chi-town on the 1st of March. I only need one ticket.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: One available flight I found is with American Airlines. Your plane would leave at 5:05 am. The plane flies direct to your destination. The charge for this flight is $148.
+user: Do you have the time of arrival available.
+assistant: Yes. You will get to your destination at 8:24 am.
+user: That won't work. Do I have other options?
+assistant: Another option is with Delta Airlines. There are no stops. The plane takes off at 8 am. The total charge shows as $128.
+user: What time is the plane scheduled to land?
+assistant: You will get to your destination at 11:19 am.
+user: That is a great option, thanks for checking. Also look for a train going to my destination on the 12th of this month please.
+tool(FindTrains): ok n_results=7
+assistant: I found a train that leaves at 7:30 am. The total charge is $105.
+user: Do I have an option for an alternate train possible for this Sunday?
+tool(FindTrains): ok n_results=7
+assistant: Another option I found costs $123. This train leaves at 8 am.
+user: Thanks, that will work great.
+assistant: I can reserve passes for you if you like?
+user: That would be fantastic. Please book the train.
+assistant: You are able to get trip insurance if you like?
+user: That is a great idea. Yes, please.
+assistant: With your permission I will reserve a pass for 1. The train will leave March 3rd at 8 am. You will begin your travels in Chicago and end your travel in New York. The pass will be a value pass.
+user: You have my permission. What is the name of the station I need to catch the train at?
+tool(GetTrainTickets): ok n_results=1
+assistant: The Chicago Union Station is where your trip will begin. You now own a ticket.
+user: Once again you have really helped me out. I am set for now.
+assistant: Have a fun day!

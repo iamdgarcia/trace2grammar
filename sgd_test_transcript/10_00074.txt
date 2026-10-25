@@ -1,0 +1,18 @@
+user: I fancy an online movie possibly with Yaniv Biton.
+assistant: What genre do you want?
+user: I like exotic movies.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie called Tel Aviv on Fire?
+user: Tel Aviv on Fire is Fab!
+assistant: Would you like to watch it?
+user: yes play it now.
+assistant: To confirm I will play Tel Aviv on Fire with subtitles in English.
+user: Actually can I watch it with Hindi subtitles.
+assistant: To confirm I will play Tel Aviv on Fire with Hindi subtitles.
+user: Yes that it correct.
+tool(PlayMovie): ok n_results=1
+assistant: Movie has now started.
+user: Thanks for that.
+assistant: Do you need anything else.
+user: no thank you.
+assistant: Enjoy the movie and have a good one.

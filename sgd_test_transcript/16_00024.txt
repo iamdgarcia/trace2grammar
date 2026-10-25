@@ -1,0 +1,38 @@
+user: Hey, I'm looking for a salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: Okay. There is a nice salon called Atelier Salon Willow Glen in San Jose you may like.
+user: Sound interesting. Is it unisex? What's the average rating?
+assistant: It is absolutely a unisex salon. They are rated at an average of 4.3.
+user: Okay that sounds good. I'm also looking for a good therapist in the area.
+assistant: Are you looking for one in San Jose? What type of therapist do you need exactly?
+user: Yeah, look for a good Psychologist in San Jose for me.
+tool(FindProvider): ok n_results=10
+assistant: Alright. I've found 10 therapists in San Jose that may work for you. There is a Psychologist by the name of Barskyex Bryna G that you may like.
+user: Can I get their address and phone number please?
+assistant: No problem. Their address is 5755 Cottle Road # 4 and their contact number is 408-363-4418.
+user: Okay, sounds good thanks.
+assistant: Your welcome. Would you like to make an appointment?
+user: Yes I would.
+assistant: Okay. Just tell me the date and time that works best for you.
+user: Make the appointment for the 12th of March at around a quarter past 5 in the evening.
+assistant: Okay, just confirm the following for me please. Booking an appointment with Barskyex Bryna G for March 12th at 5:15 pm. Correct?
+user: No, actually can you make the appointment for March 7th instead? I forgot I have something to do on the 12th.
+assistant: Okay, just confirm the following. Booking an appointment with Barskyex Bryna G on March 7th. Correct?
+user: Yeah, that works. thanks.
+tool(BookAppointment): ok n_results=1
+assistant: I'm terribly sorry but I was not able to make an appointment for that date. Would you like to set up an appointment with Barskyex Bryna G for 5 pm on March 7th?
+user: Okay, that works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Alright, your appointment was completed successfully. You will get an email confirmation soon. Anything else?
+user: Yeah, let's get back to that salon we talked about earlier. I would like to go ahead and make an appointment now if I can.
+assistant: No problem. What time would you like to make your appointment?
+user: Make it for sometime in the morning 9:45. Thanks.
+assistant: Just confirm the following details for me please. Making an appointment with Atelier Salon Willow Glen on March 7th at 9:45 am. Correct?
+user: Yeah, that's correct. Can you get their address and phone number for me as well?
+tool(BookAppointment): ok n_results=1
+assistant: Their number is 408-293-3494 and they are located at 1047 Lincoln Highway suite 101. Whoops, I am terrible sorry but I could not book an appointment at that time. Would you like to schedule another appointment with Atelier Salon Willow Glen on March 7th at 10 am?
+user: Okay, that still works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed.
+user: Okay, thank you very much! That will be all for now, thanks again.
+assistant: My pleasure. Have a pleasant day.

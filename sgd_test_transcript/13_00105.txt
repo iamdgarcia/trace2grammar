@@ -1,0 +1,18 @@
+user: I want to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: How about Brittany Runs a Marathon? It has an average rating of 90 out of 100.
+user: Do you have something else?
+assistant: What do you think of Toy Story 4? It's rated 97 out of 100.
+user: That's fine. I want something interesting to do this Sunday. I'm into Stage show.
+assistant: What city should I search in?
+user: Find something around Los Angeles.
+tool(FindEvents): ok n_results=10
+assistant: A Year In Dragonfly is a popular one taking place at Studio C Artists on March 3rd at 5:30 pm.
+user: Where will it take place?
+assistant: It will take place at 6448 California 2.
+user: Sounds good to me.
+assistant: Would you like to purchase tickets?
+user: Not at the moment.
+assistant: Could I assist with anything further?
+user: No, that's all. Thank you for helping.
+assistant: Have a good one.

@@ -1,0 +1,31 @@
+user: Assistant. Find me something new and interesting to do.
+assistant: Something like Music or Theater? If you prefer something else, please let me know. These are merely suggestions.
+user: Well...I'd like to see a Stage show. That'd be a nice change of pace.
+assistant: What city would you like to view a Stage show in?
+user: Find me one in NY. There should be quite a few in a city that size.
+tool(FindEvents): ok n_results=10
+assistant: You are correct. I've found 10 events you may enjoy. On March 4th at 6 pm, there is a stage show taking place. It is called Acting For Teens and it is happening at 520 8th Ave. - Personal Valet Parking.
+user: That's an interesting title for a show. Sounds great. Find me a direct bus heading there on the 1st of March.
+assistant: I need to know your departure city to accomplish that.
+user: I'm planning to leave from Philly. Purchase a ticket for only one person.
+tool(FindBus): ok n_results=6
+assistant: I have found ab us departing at 9 am with a ticket purchase price of $23.
+user: That should work. I'll need a flight to get to NY. If you can, find me Economy tickets from Delta Airlines. I plan to come back on March 12th.
+assistant: Are you departing on March 1st?
+user: Sooner than that. I'll be packing and leaving tomorrow.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have found a Delta Airlines flight leaving at 3 pm. The returning flight leaves at 12:20 pm. The cost of the ticket is $83. How does that sound?
+user: Sounds pretty good if you ask me. While you are at it, find me a three - star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star hotel called 11 Howard?
+user: As long as it's 3 star, it sounds good to me.
+assistant: Want me to reserve this hotel room for you?
+user: Not yet. I want to consider my options a bit longer. I do, however, want you to purchase tickets to the event you mentioned earlier.
+assistant: You want 1 ticket for Acting For Teens? It is taking place on March 4th in New York.
+user: Yes that's what I want. Thank you.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have bought your ticket to Acting For Teens. I hope you have a lovely time.
+user: How much did that ticket cost? Provide me with the address of location that the event is taking place in.
+assistant: The cost of the ticket is $35. The venue address is 520 8th Ave. - Personal Valet.
+user: Alright then. Thank you for all your help today. I won't be needing anything else at the moment.
+assistant: I hope you have a wonderful day.

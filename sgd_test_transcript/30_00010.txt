@@ -1,0 +1,30 @@
+user: I'll be near New York City soon. While I'm there, I want to attend an event. Please help me purchase 1 ticket for Improv and Acting.
+assistant: What date should I purchase the ticket for?
+user: I want to attend the event on the 13th of March please.
+assistant: Booking 1 ticket tot he Improv and Acting Event in New York. The event will be taking place on March 13th. Shall I purchase the tickets for you?
+user: Yeah I still want to attend this event. Please buy my ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed. I hope you have a great time at the event.
+user: What is the starting time for the event? Oh, and give me the address of the venue.
+assistant: The start time for Improv and Acting is 4:30 PM on March 13th. The address of the venue is 349 5th Avenue.
+user: I can't wait to see that performance. Thank you very much. I need help finding a bus to that location. Please help.
+assistant: Where will you be departing from?
+user: I'll be leaving from Washington to go on my trip.
+assistant: Is the departure date March 13th?
+user: No it is not. I'm planning on leaving next Monday.
+tool(FindBus): ok n_results=7
+assistant: A bus is leaving at 6:20 am on next Monday. The cost of the ticket is $36.
+user: I want something else. It doesn't matter if it is a direct bus or not. But I am leaving from Philly if that helps narrow it down.
+tool(FindBus): ok n_results=6
+assistant: There is a bus leaving from that area at 9 am. The ticket price is $24.
+user: That sounds better. I'll go ahead and purchase those tickets.
+assistant: The following details are concerning your bus ride. You are departing from Philadelphia and heading to New York on March 4th at 9 am. The ticket is for 1 person without extra luggage.
+user: That's not entirely correct. I do have excess luggage with me.
+assistant: Confirm the following change. The ticket is for 1 person with extra luggage to carry onto the bus. Is that right?
+user: That change is correct. Those details should work just fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been purchased and reserved. Enjoy your trip.
+user: You have my thanks. Setting this up would be difficult withour your help.
+assistant: Can I assist you with anything else today?
+user: No no. That's all I need for now. Thank you again.
+assistant: Have a lovely evening and take care.

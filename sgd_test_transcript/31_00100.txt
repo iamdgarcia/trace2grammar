@@ -1,0 +1,32 @@
+user: I need to look good for my date. Please help me find a salon.
+assistant: Sure. I can help you with that. Tell me where to center the search.
+user: I'd like to visit a hairstylist in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I found a nice salon in San Jose called Atelier Salon Willow Glen.
+user: That won't work. My favorite hairstylist left. Please search for a another salon.
+assistant: Sure. Barba & Co. San Jose is another good salon operating in San Jose.
+user: Hmm. Interesting. Find out its average rating. Also, get me its location.
+assistant: It has an average rating of 5.0 stars. It's at 1775 Park Avenue.
+user: Okay, that salon works for me. Please book me an appointment for next Friday at 11:30 in the morning.
+assistant: Okay. I first need you to confirm the following: You want to set an appointment at Barba & Co. San Jose salon for March 8th at 11:30 am.
+user: Yes, that's correct. Get me their phone number, please.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. You can reach them on 669-258-9601.
+user: Thanks a bunch. I'll be taking my date out for a meal on that day. Could you search for a restaurant in that area?
+assistant: Do you have a particular cuisine in mind?
+user: Yes, anything offering Brazilian works for me.
+tool(FindRestaurants): ok n_results=1
+assistant: I found Taurinus Brazilian Steak House, a nice restaurant operating in San Jose.
+user: Yeah, that will do.
+assistant: Should I go ahead and reserve a table here?
+user: Yes, please book me a table.
+assistant: What reservation time is convenient for you?
+user: A quarter to 12 in the morning reservation is fine.
+assistant: Sure. Please confirm that you'd like to reserve a table for 2 at Taurinus Brazilian Steak House in San Jose, for March 8th at 11:45 am.
+user: Yes, that's correct. What's the restaurant's price range? On what number can I call them?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is categorized as pricey. You can call them on 855-586-9288. Unfortunately, I was unable to book your preferred reservation at the nice Taurinus Brazilian Steak House, but I found an open table for 2 on March 8th at 12 pm. Will that be fine?
+user: No, that will not be fine.
+assistant: Would you like my help with anything else?
+user: No. Thanks a lot.
+assistant: Goodbye, and have a wonderful day!

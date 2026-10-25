@@ -1,0 +1,37 @@
+user: Will you search for a train for me?
+assistant: Please give me your travel date and city of interest.
+user: I'll be going to Fresno on the 12th of this month and will need two tickets.
+assistant: What is your departing city?
+user: The tickets will be from Sacramento, CA.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains that seem to fit your needs. Will a train leaving at 8 am work? The total price is $113.
+user: That sounds just right.
+assistant: Would you like for me to book your tickets?
+user: Yes, let's make a reservation.
+assistant: Would you like to get travel insurance?
+user: I would prefer having travel insurance.
+assistant: You would like 2 value tickets for the train that is departing Sacramento on March 12th at 8 am. It will arrive in Fresno. You have opted to have trip insurance. Are these details correct?
+user: Yes, they work fine. What are the departure and arrival stations?
+tool(GetTrainTickets): ok n_results=1
+assistant: The departure station is Sacramento Valley Station and Fresno Station is the arrival location. The tickets have been booked.
+user: I really appreciate all of your help. Search for some activities that are interesting to do there.
+assistant: Are there preferred events?
+user: I need something on the 14th and would love theater.
+tool(FindEvents): ok n_results=1
+assistant: There is a very hip event called The Government Inspector going on March 14th at 5:30 pm. It is at the California Arts Academy.
+user: They sound great, but will you find other things to do? I very much like songs.
+tool(FindEvents): ok n_results=1
+assistant: The Rainbow Ballroom is having the event of Brockhampton on March 14th at 5:30 pm. It's quite popular.
+user: Give me the ticket price and venue location.
+assistant: You can go to it at 1725 Broadway Street and pay $45 per ticket.
+user: Perfect. Will you share the location with Andrea?
+assistant: You want to share the location for Rainbow Ballroom with Andrea. Right?
+user: No, Natalie is whom to share it with.
+assistant: You would like to share the location to the Rainbow Ballroom with Natalie. Is that correct?
+user: Works great.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with success.
+user: Thank you, that's so helpful.
+assistant: Do you need more help?
+user: Nope, your helps great and thanks.
+assistant: Have a beautiful day!

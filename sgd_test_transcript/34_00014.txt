@@ -1,0 +1,28 @@
+user: Can you find me a hotel?
+assistant: In what city?
+user: somewhere in Chi-town.
+tool(SearchHotel): ok n_results=10
+assistant: There's Ac Hotel by Marriott Chicago Downtown, it's a 3 star hotel.
+user: Can you find me a hotel in London, England? I need one where you can smoke.
+tool(SearchHotel): ok n_results=10
+assistant: Abbey Court Hotel (Hyde Park) fits the bill, it is also a 3 star.
+user: Can you give me their phone number and address?
+assistant: It's +44 20 7402 0281 the address is Sussex Gardens.
+user: That sounds great.
+assistant: Is there anything else I can do for you?
+user: Can you look up some good child-friendly attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 that fit your needs. There's 30 St Mary Axe (The Gherkin) which is an historical landmark.
+user: Great, thanks. I'd like to make a reservation at the hotel.
+assistant: When did you want to check in?
+user: Make it for the 8th.
+assistant: How long will you be staying?
+user: For two days.
+assistant: To verify: You want to reserve 1 room for 2 days at Abbey Court Hotel (Hyde Park) in London on March 8th.
+user: Yes, you got it right.
+tool(ReserveHotel): ok n_results=1
+assistant: You're reservation is confirmed.
+user: What is the per night cost?
+assistant: It is $216.
+user: Thanks again. That's all I need for now.
+assistant: Have a great day, bye.

@@ -1,0 +1,44 @@
+user: I need something interesting. I want your help in finding me something.
+assistant: Is there any type of event you would prefer? In what city shall I search?
+user: I love a Concert. I will be in the NYC area.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 such events. You might like Abbi Jacobson that takes place at Kaufmann Concert Hall. It will be on March 11th at 7:30 pm.
+user: It is nice, but are there any other events?
+assistant: What about Alma Deutscher that will happen at Stern Auditorium / Perelman Stage on March 3rd at 7 pm?
+user: What is the address of this venue?
+assistant: The address is 881 7th Avenue.
+user: It does sound OK but can you look for anything else like say Broadway events?
+tool(FindEvents): ok n_results=10
+assistant: You might like Acting For Teens which takes place at 520 8th Ave. - Personal Valet Parking. It starts at 6 pm on March 4th.
+user: What is the price of a ticket and where is this venue?
+assistant: The address is 520 8th Ave. - Personal Valet and the ticket is priced at $35.
+user: This is good.
+assistant: Shall I get you tickets for the event?
+user: Not at the moment. Do you have buses to get there? I will leave on the 1st of this month. I want one ticket.
+assistant: What place are you departing from?
+user: I will depart from Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: What do you think of the bus leaving at 9 am? You will need to pay $23.
+user: That is cool. I want a round trip flight that returns on 10th of this month.
+assistant: Do you leave on March 1st?
+user: Yes that is right.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I can suggest you fly the American Airlines which has a direct onward flight that takes off at 1:20 pm and the returning flight leaves at 11:20 am. The ticket is priced at $97.
+user: What time is the returning flight landing? Is the type of ticket economy or business class?
+assistant: At 12:11 pm the returning flight will land and the seat will be Economy.
+user: That is great. I will need a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: You can check out this 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: How much do they charge per night? Can I have their phone number?
+assistant: They will charge you $465 a night and you can reach them at +1 347-696-2500.
+user: That is cool.
+assistant: Shall I reserve this hotel?
+user: No skip the reservation for now and get me the event tickets that you found earlier.
+assistant: So do you confirm that you want 1 ticket for the Acting For Teens event in New York on March 4th?
+user: Sure that will be nice.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have made your reservation successfully and I wish you a good time there!
+user: Thank you very much for everything.
+assistant: Shall I do more for you?
+user: Nope. Thank you.
+assistant: Have a wonderful day!

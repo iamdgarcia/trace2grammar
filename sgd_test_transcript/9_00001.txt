@@ -1,0 +1,16 @@
+user: I need help finding a train.
+assistant: What city is your point of departure and what is your destination? What is the date that you are wanting to travel?
+user: I am going to Portland, OR and would like tickets for 13th of March. I am leaving from Vancouver, BC.
+tool(FindTrains): ok n_results=8
+assistant: I see 8 trains that work for this. One leaves at 6:50 am and the price is $83 total.
+user: Which station will this train end up at?
+assistant: The train will end up at Union Station.
+user: That sounds fine. I would like to book tickets for this train. I need one seat that is conditionally refundable.
+assistant: Would you like to buy travel insurance?
+user: Yes I would like to get trip insurance.
+assistant: Okay sir, can you confirm these details: you would like a ticket on the train departing out of Vancouver and going to Portland. This train departs at 6:50 am on March 13th. The ticket is a Value ticket for 1 person, with trip insurance.
+user: That sounds good to me.
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets have been booked successfully for you.
+user: You have been very helpful, thank you. That was all I wanted.
+assistant: See you another day.

@@ -1,0 +1,26 @@
+user: I need to reserve a rental vehicle.
+assistant: What location or city do you want to pick up the car in and what date?
+user: I need to pick it up in Las Vegas the day after tomorrow.
+assistant: What time do you want to pick it up day after tomorrow and when will you return it?
+user: I need to pick it up by 2 pm and I will return it on March 8th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There is a Sedan Audi A8 at Union Plaza.
+user: A sedan is fine, but is there something else? Is something available at the airport?
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 sedans available at McCarran International Airport. Would you like the Sedan Buick Regal Sportback?
+user: Buick Regal? That sounds good.
+assistant: Would you like me to reserve the vehicle?
+user: I don't think so. I need to think about it.
+assistant: Do you need anything else?
+user: What about some information on buses going to Las Vegas? I'll be leaving from SF on the 1st of this month. It is just for me, so one ticket.
+tool(FindBus): ok n_results=6
+assistant: There is a bus departing San Francisco at 7:50 am with a cost of $44.
+user: What station in Las Vegas will it arrive at? Does it make any stops along the way?
+assistant: It is a direct bus with no stops. It arrives at Union Plaza in Las Vegas.
+user: Okay. How about a one-way flight going to Las Vegas?
+assistant: Would you still be leaving on March 1st?
+user: No. I'd like to leave the day after tomorrow.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 flights from San Francisco to Las Vegas the day after tomorrow. Would you like to fly the Alaska Airlines flight that departs San Francisco at 10:20 am? It is a direct flight that costs $99.
+user: Yes. And that's all I need for now. Thanks.
+assistant: You are most welcome.

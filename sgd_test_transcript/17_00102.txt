@@ -1,0 +1,28 @@
+user: What will the weather be in Marshall on the 1st of this month?
+tool(GetWeather): ok n_results=1
+assistant: There will be a 5 percent change of rain with an average temperature of 86 degrees.
+user: OK, What is the weather forecast for Delhi, India on the 10th of March?
+tool(GetWeather): ok n_results=1
+assistant: It is expected to be 102 degrees on average that day with inly a 4 percent chance of rain.
+user: Will it be very humid or windy?
+assistant: The wind is predicted to be around 4 miles per hour and the humidity should be about 18 percent.
+user: Alright, can you help me find a one-way flight there?
+assistant: Sure, will you be flying out on March 10th?
+user: Yes, that is when I would like to leave.
+assistant: What city will be you flying from?
+user: I need a flight that leaves from NYC please.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: OK, there are 2 flights available. Southwest Airlines has a flight that leaves at 3:45 pm and costs $232.
+user: What type of ticket is that? I just need 1 ticket.
+assistant: That is the price for 1 Economy class ticket.
+user: That works. I will need a rental car for my trip. I will need it beginning at 5 in the evening on the 11th and prefer a hatchback car.
+assistant: How long do you need the car for?
+user: I will return it on the 13th.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I found 4 cars for you. There is a Hatchback Fiat Panda available at the Indira Gandhi International Airport.
+user: That would work great.
+assistant: Shouold I reserve the car for you?
+user: No, I don't want to reserve it just yet.
+assistant: Aliright, can I help you with anything else?
+user: No, that is all I needed.
+assistant: OK. Have a wonderful day.

@@ -1,0 +1,41 @@
+user: Hello! I'd like to find a therapist in Los Altos.
+assistant: Hello! Would you like to see a family counselor or a psychiatrist?
+user: Actually, I'd like to see a psychologist.
+tool(FindProvider): ok n_results=1
+assistant: May I suggest Susan Bernadett-Shapiro? She is a Los Altos based Psychologist.
+user: Can you tell me the contact number?
+assistant: You can reach the office at 650-948-7292.
+user: Thank you for the information.
+assistant: Is there something else I can help you with?
+user: Yes, I'd like to make an appointment with her.
+assistant: What day and time works best with your schedule?
+user: I'd like to see if there is anything available for the 4th of March at 5 in the evening.
+assistant: You'd like to see Susan Bernadett-Shapiro on March 4th at 5 pm. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you will receive an email confirmation with the details.
+user: Great. Can you tell me where the office is located?
+assistant: They are located at 4546 El Camino Real Suite 242.
+user: Perfect. Can you request a payment?
+assistant: Absolutely. Who should I make the request of and how much should I ask?
+user: Please request 126 dollars from Emma.
+assistant: Have I got it right? You'd like to make a public transaction request with Emma in the amount of $126.
+user: I'm sorry. I already asked her. I need to ask Jerry for thirty dollars.
+assistant: You need to request $30 from Jerry. Is that right?
+user: Yes but please make it a private transaction.
+assistant: You are requesting to make the transaction with Jerry private.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: Can you find me a place to get breakfast?
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 restaurants near the office in Los Altos. May I suggest Rick's Cafe?
+user: I'd like an ultra high-end restaurant that features vegetarian options.
+assistant: Although they have great vegetarian selections, they are considered a moderate restaurant.
+user: That's fine. Can you make a reservations for 1 at 1:15 in the afternoon?
+assistant: You'd like to reserve a table for 1 at Rick's Cafe in Los Altos for the afternoon of March 4th at 1:15 pm.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Great. Thank you for the help. That will be all.
+assistant: You're welcome. Have a wonderful day.

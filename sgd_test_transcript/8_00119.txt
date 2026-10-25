@@ -1,0 +1,25 @@
+user: I'm looking for a train
+assistant: What is the city of arrival?
+user: I want to go to Seattle
+assistant: What is the city of departure? Which day do you want to leave?
+user: I'm leaving from Portland, on 14th of this month
+tool(FindTrains): ok n_results=9
+assistant: There's a train at 9:10 am that costs $66 in total
+user: From which station does it start and in which station does it arrive?
+assistant: The train leaves from Union Station and arrives at King Street Station
+user: Is there a train from Vancouver?
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains. There is one at 6:20 am that costs $58
+user: Is there another train?
+assistant: A train leaving at 6:40 am and costs $53
+user: Yes, this is fine for me
+assistant: Do I book a ticket?
+user: Yes, please, with a trip insurance.
+assistant: How many tickets do you want to book?
+user: I need only one seats, thanks.
+assistant: A Value ticket for 1 people on the train from Vancouver To Seattle, at 6:40 am on March 14th. Do you confirm?
+user: Yes, I confirm, thanks. From which station does it start and in which station does it arrive?
+tool(GetTrainTickets): ok n_results=1
+assistant: It departs from Pacific Central Station and arrives at King Street Station. Your ticket has been booked!
+user: Thank you so much! That's all!
+assistant: Have a nice day!

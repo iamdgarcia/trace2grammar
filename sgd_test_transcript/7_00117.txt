@@ -1,0 +1,13 @@
+user: Can you schedule a visit to a property?
+assistant: Which property would you like me to schedule the visit?
+user: I would like to visit the property Country Club Apartments.
+assistant: What should I put as the date for?
+user: Please put the date as Tuesday next week.
+assistant: Please confirm: You want me to schedule a visit to Country Club Apartments on March 5th.
+user: Yes, That sounds great! Find me the address.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your visit to the property located at 2807 Yulupa Avenue.
+user: Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

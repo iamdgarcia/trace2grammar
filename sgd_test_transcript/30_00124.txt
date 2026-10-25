@@ -1,0 +1,30 @@
+user: I need a professional groomer somewhere in San Francisco
+tool(FindProvider): ok n_results=10
+assistant: I have discovered 10 great beauty parlors in the San Francisco area. Would you be interested in visiting the 1512 Barber Shop?
+user: What are my other options?
+assistant: San Francisco has a lovely parlor called 20th Salon And Barber.
+user: That option will suit my needs.
+assistant: I can schedule a visit for you if you wish.
+user: Not at the present moment, thanks. Right now I am in the mood for a quality regular Mystery flick.
+tool(FindMovies): ok n_results=2
+assistant: Two suggestions I would like to make are Luce and Official Secrets.
+user: Official Secrets sounds like a great feature. When are the showtimes?
+assistant: Should I check showtimes on March 3rd?
+user: Yes, that will be fine.
+tool(GetTimesForMovie): ok n_results=1
+assistant: I could only populate 1 movie showtime. The AMC Kabuki 8 is playing the flick at 4 pm.
+user: Awesome, that will work for me.
+assistant: Shall I secure seating for you?
+user: I do not want to spend any cash yet. First I will need to reserve a spot on that day at the parlor you suggested earlier.
+assistant: Is there a time of day you would like to make your visit?
+user: Yes. 6 in the evening would be best for me.
+assistant: I am under the impression you need me to book a spot at 6 pm on March 3rd at the 20th Salon and Barber. Is that right?
+user: Everything but the time is correct. Please make the reservation in the morning 10:45.
+assistant: Let me know if you need me to schedule the appointment on March 3rd at 10:45 am please.
+user: That time and date is exactly what I want, thanks.
+tool(BookAppointment): ok n_results=1
+assistant: The parlor has a spot reserved in your name.
+user: What have previous clients rated the establishment?
+assistant: The parlor has received a typical value of 4.5 from its clients.
+user: Much gratitude for the assistance. There is nothing else I currently need help with.
+assistant: See you soon.

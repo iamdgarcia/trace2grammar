@@ -1,0 +1,18 @@
+user: Could you search a locomotive for me? I need 1 seat for a conditionally refundable ticket for one headed to Anaheim, CA.
+assistant: What metropolis do you intend to leave from?
+user: I'm searching for business tickets departing from San Diego.
+assistant: When do you intend to depart?
+user: Get me tickets on March 11th.
+tool(FindTrains): ok n_results=8
+assistant: Tickets for a train leaving at 8:30 am costs $90.
+user: That's fine with me.
+assistant: Would you like me to reserve tickets?
+user: Yeah, I'd like to make the booking.
+assistant: Would you like to get travel insurance?
+user: I'd like to get travel insurance.
+assistant: Please verify the following information: you'd like a business ticket for 1 person with travel insurance that departs from San Diego on March 11th, 8:30 am, to Anaheim.
+user: That's fine with me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been reserved.
+user: Thank you for your assistance; that's all.
+assistant: I hope to see you later.

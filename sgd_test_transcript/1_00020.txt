@@ -1,0 +1,13 @@
+user: Can you help me to book a table at a restaurant for 2 people at evening 6:30
+assistant: Is there any choice of restaurant you want to book?
+user: Would you kindly book the table at Mcdonalds?
+assistant: In which place you want me to search?
+user: Search restaurants in Morgan Hill and it is for next monday
+assistant: Please give the confirmation details:your table booking at Mcdonalds in the city Morgan Hill on march 4th for 2 people at 6:30 pm.
+user: Okay..this is cool
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is confirmed.
+user: Is there outdoor seating in that restaurant and can i know the phone number
+assistant: There is no outdoor seating and telephone number is 408-779-8182.
+user: This is cool..thanks a lot.
+assistant: Have a nice day.

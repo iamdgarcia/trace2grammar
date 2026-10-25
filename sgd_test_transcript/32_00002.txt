@@ -1,0 +1,19 @@
+user: I want to search for a therapist. Can you locate a Psychologist in Oakland?
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in that area. Alameda Children'S Specialized is a Psychologist in Oakland.
+user: What is their phone number?
+assistant: The phone number is 510-383-5100.
+user: OK, that's good.
+assistant: Would you like to book an appointment with the therapist?
+user: Yes, please book an appointment for the 3rd at afternoon 3.
+assistant: You would like to book an appointment with Alameda Children'S Specialized at 3 pm on March 3rd, is this correct?
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment booking is successful. You should get a confirmation by email soon.
+user: Can you recommend some movies to watch? I am looking for something in the Family Genre directed by Lulu Wang and starring Aoi Mizuhara.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie for you. The Farewell has an average rating of 99 out of 100.
+user: Yeah, sounds good.
+assistant: Is there anything else I can help you with?
+user: No, thank you for your help.
+assistant: Glad to be of assistance.

@@ -1,0 +1,23 @@
+user: I want to make a payment to Mahmoud for 149 bucks.
+assistant: Which account do you want to use?
+user: Use my debit card.
+assistant: Please confirm that you want to send $149 to Mahmoud fromyour debit card. This will be a public transaction.
+user: No, make the transfer private.
+assistant: Okay, so you want to send $149 and make the transaction private.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made successfully. The money should be available to the recipient soon.
+user: Find me a restaurant there serving Fish with outdoor seating.
+assistant: What location do you want me to look in?
+user: Find San Jose restaurants.
+tool(FindRestaurants): ok n_results=4
+assistant: I have 4 restaurants that should work. Big T's Seafood Market Bar is a good San Jose restaurant.
+user: Is it expensive?
+assistant: It's moderate priced.
+user: Okay, good. Book me a table and make the reservation at 6:30 in the evening for 4. I want to find a table on March 12th.
+assistant: Please confirm that you want to book at Big T's Seafood Market Bar in San Jose and that you want to reserve for 6:30 pm for 4 people on March 12th.
+user: That should work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made successfully.
+user: Thanks so much. That's it.
+assistant: Have a great day.

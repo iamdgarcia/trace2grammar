@@ -1,0 +1,29 @@
+user: I need to get a haircut. I would like to find a salon in Sunnyvale.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons in Sunnyvale, including A+ Haircuts for Men.
+user: What is the rating of that salon? Is it a unisex salon?
+assistant: The average rating is 4.1 It is a unisex salon.
+user: OK, that sounds good.
+assistant: Would you like to book an appointment?
+user: Not yet. I would also like to search for a therapist. Please find a Psychiatrist in Sunnyvale.
+tool(FindProvider): ok n_results=1
+assistant: I found 1 therapist in Sunnyvale, a Psychiatrist, Sunnyvale Psychiatry.
+user: What is the address there?
+assistant: Their address is 505 West Olive Avenue.
+user: OK, that will be good. Can you book an appointment for me with them on the 10th of March at 2 o'clock in the afternoon?
+assistant: You want to book an appointment with Sunnyvale Psychiatry at 2 pm on March 10th, is this correct?
+user: Yes, that's right. What is their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You appointment is successfully booked. You can expect a confirmation by email soon. The phone number is 650-380-3823.
+user: Thank you very much, I appreciate it. I would also like to book an appointment at the salon you found. Please make it for 10:15 am.
+assistant: You would like to book an appointment at A+ Haircuts For Men at 10:15 am on March 10th, is that correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, that time was not available at A+ Haircuts For Men. There is an opening on March 10th at 10:30 am, would you like that time?
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked.
+user: What is the address?
+assistant: The address is 450 East El Camino Real.
+user: Thank you very much, that's all for now.
+assistant: Have a pleasant day!

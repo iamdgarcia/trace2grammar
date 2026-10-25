@@ -1,0 +1,39 @@
+user: I'd like to find some movies to watch online.
+assistant: What kind of movies are you interested in?
+user: I like drama films.
+tool(FindMovies): ok n_results=10
+assistant: I have 10 possibilities for you. Perhaps you'd like to watch A Faithful Man, After the Wedding or Blinded by the Light?
+user: Could you suggest anything else?
+assistant: Certainly. What about Live Flesh, Hustlers, or Brittany Runs a Marathon?
+user: I don't know, what else do you suggest?
+assistant: Well, how about Stage Door, Overcomer or The Art of Racing in the Rain?
+user: I think I'd like to watch Stage Door. I also need to find some attractions to visit, like a park maybe.
+assistant: In what city please?
+user: In Warsaw please.
+tool(FindAttractions): ok n_results=4
+assistant: I have 4 possibilities to tell you about. There is a park called The Center for Biological Diversity Conservation in Powsin.
+user: Is that a place that's good for children and is there a charge to get in?
+assistant: Yes, it is child friendly and there is no admission price.
+user: That sounds ideal. Thank you.
+assistant: May I help you with anything else?
+user: I'd also like to find some songs to hear.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 options for you. How about the song Running After You from the album Run by Matthew Mole?
+user: That will work. Could you play that for me on any device?
+assistant: Confirming playback of Running After You on the living room speaker.
+user: Sorry, play it on my kitchen speaker.
+assistant: Confirming playback of Running After You on the kitchen speaker.
+user: That's right, thanks. Was that released six years back?
+tool(PlayMedia): ok n_results=1
+assistant: The song is from 2016. Hope you enjoy.
+user: Thanks! I'd also like to start watching that movie with Spanish subtitles enabled.
+assistant: Confirming playback of Stage Door with Spanish subtitles turned on.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Could you tell me who's in it?
+assistant: The movie features Jack Carson.
+user: Thank you very much.
+assistant: How else may I help you today?
+user: That will do it, thank you.
+assistant: You are very welcome.

@@ -1,0 +1,25 @@
+user: I need to find a house to stay in.
+assistant: In which city were you looking for?
+user: I'm going to London and I will need laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice house at 1 Addington Street with a 4.3 rating.
+user: Did you have a contact number?
+assistant: It is +44 333 400 6116.
+user: This house looks great. I'd like to book it.
+assistant: What is the check out date?
+user: I'd like to check out on March 9th.
+assistant: On which day did you want to check in?
+user: I'd like to check in on the 6th of this month.
+assistant: And for how many people?
+user: There are three people in my group.
+assistant: Please confirm the location of London for a group of 3 people checking in March 6th and checking out March 9th.
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: What will the total price be?
+assistant: It will be $1,728.
+user: Thank you. Could you help me find some attractions there? I'm looking for a historical spot and I prefer something child-friendly.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you. One Historical Landmark is 30 St Mary Axe (The Gherkin).
+user: Sounds great. That's all for now, goodbye.
+assistant: Have fun!

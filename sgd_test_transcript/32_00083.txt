@@ -1,0 +1,37 @@
+user: I'm looking for a place to rent in Castro Valley. I need an in-unit laundry.
+assistant: How many bed rooms and baths would you like on the property?
+user: I want 3 bed rooms and 2 baths.
+tool(FindHomeByArea): ok n_results=3
+assistant: I found 3 houses. Continental Apartments is a great property located at 22281 Center Street #57. The price is $3,850.
+user: Is there a garage? What's the phone number to the property?
+assistant: There is not a garage. The phone number is 510-538-0995.
+user: What are some other places?
+assistant: Creekside Terrace Apartments is a nice property at 22160 Center Street for $3,650.
+user: I want to find a place in San Jose.
+tool(FindHomeByArea): ok n_results=10
+assistant: Boynton Brooks Apartments is a great property located at 416 Boynton Avenue for $3,800.
+user: Sounds great. I want to visit the property.
+assistant: When do you want to visit?
+user: I'd like to visit on the 14th of March.
+assistant: Please confirm: a visit to the property Boynton Brooks Apartments on March 14th.
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been booked.
+user: Thanks so much.
+assistant: Anything else I can help with?
+user: Can you share the location with Frances?
+assistant: Please confirm: Sharing the location 416 Boynton Avenue with Frances.
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Thank you. Can you find me a cab there?
+assistant: How many seats?
+user: Just one seat.
+assistant: What kind of ride do you want? Luxury or regular?
+user: I want an expensive ride.
+assistant: Please confirm: a luxury ride for 1 to 416 Boynton Avenue.
+user: Yes, sounds good.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is on the way.
+user: Thanks so much. That's all.
+assistant: Have a great day!

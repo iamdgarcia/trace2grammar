@@ -1,0 +1,42 @@
+user: I want to know which alarms I have set.
+tool(GetAlarms): ok n_results=6
+assistant: You have an alarm set at 9:30 am titled Paper.
+user: Are there other alarms set?
+assistant: There is also an alarm at 8:30 am called Jogging.
+user: Are there anymore alarms set?
+assistant: Another alarm set for 7:30 am is called Get up.
+user: Alright, that is nice.
+assistant: Would you like to have an alarm added?
+user: No, I am not interested to have another alarm added now, but I want to find a restaurant there.
+assistant: Is there some specific kind of food you are looking for?
+user: I would like a place which serves Seafood.
+assistant: Can you tell me the location where I should look for the restaurant?
+user: The restaurant I am looking for should be in San Leandro.
+tool(FindRestaurants): ok n_results=2
+assistant: You might consider Angry Fish restaurant which is a good one, and is located in San Leandro.
+user: Does this restaurant have vegetarian options, and could you also check if the restaurant has outdoor seating?
+assistant: This restaurant unfortunately does not have outdoor seating, but they actually do have quite great vegetarian options in the menu.
+user: Alright, that is fine. Now I would like to rent a care there, which I will need from the 4th.
+assistant: Till when do you want to have the car rented, and would you like to have a SUV, Hatchback or some other kind of car. Can you also tell me if you want to have insurance with the car?
+user: I would like to have a Sedan car without insurance, and I will need to rent it till next Tuesday.
+assistant: Can you tell me where are you able to pick up the car?
+user: It would suit me quite well to pick up the car at Orly International Airport.
+assistant: Which time is best for you to pick up the car?
+user: I will be available to pick up the car at morning 10:30.
+assistant: Can you please confirm that you want to rent a Sedan car without insurance which you will pick up from Orly International Airport on March 4th at 10:30 am, and that you will need it till March 5th?
+user: That is not right, because I changed my mind and I do want to have insurance included.
+assistant: Can you then please once again confirm that you want a car with insurance which you will need till March 5th?
+user: Yes, that is what I want. How much will this car cost me per day to rent?
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked, and renting it will be costing you $43.00 per day.
+user: Can you tell me the name of the car?
+assistant: The car is called Skoda Octavia.
+user: I appreciate your help. I just remembered can you share the location?
+assistant: Can you tell me the address you want to share? It can be 16250 East 14th Street, Orly International Airport or some other address, and please can you also tell me with whom you want to share the address?
+user: The address I would like to share is 16250 East 14th Street, and the person with whom I want to share it is Brittany.
+assistant: Can you please confirm that you want to share the address 16250 East 14th Street with the person named Brittany?
+user: That is what I want to do.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: I appreciate it. You have been very helpful. That would be all.
+assistant: Have a good time!

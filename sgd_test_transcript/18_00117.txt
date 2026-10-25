@@ -1,0 +1,29 @@
+user: I want to find a place to eat in Occidental.
+assistant: What kind of food do you want to eat?
+user: I want to find Parisian cuisine.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant. Bistro Des Copains is a great restaurant in Occidental.
+user: That sounds great.
+assistant: Do you want to book a table?
+user: Yes I want a table for 3.
+assistant: What time would you like the reservation?
+user: Make it for 11 o'clock in the morning.
+assistant: Please confirm: a table for 3 at Bistro Des Copains in Occidental on March 1st at 11 am.
+user: Yes, that's correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservations have been made.
+user: Thank you. I want to find a cab there.
+assistant: Where are you going? 3782 Bohemian Highway?
+user: Yes, that's correct.
+assistant: What kind of ride would you like? Luxury or regular?
+user: I want to find the cheapest ride to 2150 Chestnut Street.
+assistant: Please confirm: a pool ride for 3 to 2150 Chestnut Street.
+user: Yes, sounds great.
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked at the cab is on the way.
+user: How much will it be?
+assistant: The ride will be $17.96.
+user: How long until the cab is here?
+assistant: The cab will be there in 3 minutes.
+user: Thanks so much. That's all for now.
+assistant: Have a great day!

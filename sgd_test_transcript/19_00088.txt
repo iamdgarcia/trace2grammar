@@ -1,0 +1,29 @@
+user: I could use some help finding a rental car. I'll need a car in Long Beach starting from the 12th. I would prefer a sedan.
+assistant: When would you like to pick the car up?
+user: On the 12th at 5 in the evening.
+assistant: And for how long will you need the car?
+user: Until the 14th of March.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a nice Audi A8 Sedan available at LGB Airport. Would that interest you?
+user: That sounds good enough for now. Can you reserve me tickets to an event in Seattle on March 13th? I want to get stuff booked up and ready to go.
+assistant: What kind of event are you interested in?
+user: I heard Maritess Zurbano Hypnotist is a good show to watch.
+assistant: How many tickets would you like to this show?
+user: I'll need three tickets.
+assistant: Please confirm the following details: You would like 3 tickets to Maritess Zurbano Hypnotist on March 13th in Seattle.
+user: Yes, I confirm that. Can you tell me when it starts?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchased. The show is listed as starting at 7 pm.
+user: Great. Can you reserve me the rental car we discussed earlier now?
+assistant: I can. Would you like to get insurance on that?
+user: No, I don't need insurance.
+assistant: Please confirm the following details: You would like to reserve a Sedan without insurance for rental. You will pick the car up at the LGB Airport on March 12th at 5 pm, and the drop-off date will be March 14th. Is that correct?
+user: Yep. That's all correct.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Great. Can you tell me how much it will cost per day?
+assistant: It says that the price of the vehicle will be $33.00 per day.
+user: Thanks for your help, I couldn't have done it so quickly and easily by myself.
+assistant: You're welcome. Will that be all?
+user: Yes, for now. Good bye.
+assistant: Okay, have a nice day.

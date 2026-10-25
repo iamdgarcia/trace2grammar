@@ -1,0 +1,36 @@
+user: I need attractions info.
+assistant: Where should I search for attractions?
+user: I need them in Paris, France.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions, such as American Church in Paris, a Place of Worship.
+user: Okay, and any others? I need one at Performing Arts Venue, without the entry fee.
+tool(FindAttractions): ok n_results=2
+assistant: There is Cent Quatre, a Performing Arts Venue.
+user: Okay thanks. I need a rental until Sunday this week and to pick it up at two in the afternoon on the 1st.
+assistant: Would you like it from Paris?
+user: Yes, that sounds great.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice one from orly International Airport and is an SUV Alfa Romeo Stelvio.
+user: Is there anything else, such as a Hatchback from the 2nd?
+tool(GetCarsAvailable): ok n_results=6
+assistant: There are 6 cars such as a nice one from Charles de Gaulle International Airport and is a Hatchback Ford Focus.
+user: How much is it per day?
+assistant: It costs $27.00 per day.
+user: Okay and I need to reserve a rental.
+assistant: Would you like to add insurance?
+user: No, no insurance.
+assistant: So pick up from Charles de Gaulle International Airport on March 2nd at 2 PM, with a drop-off date of March 3rd. This is a Hatchback.
+user: Okay, sounds awesome.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks for that, and I need to share location.
+assistant: Who to share it with?
+user: Share it with Alan please.
+assistant: Would you like to share the address Charles de Gaulle International Airport?
+user: The address is Cent Quatre.
+assistant: So, share the location Cent Quatre with Alan?
+user: That's exactly right.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared this location.
+user: Okay, thanks for that!
+assistant: Of course. Enjoy.

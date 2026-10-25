@@ -1,0 +1,28 @@
+user: I'm looking for ticket to an event.
+assistant: What is the name of the event and when do you want to attend?
+user: I want tickets for Collective Soul on March 5th.
+assistant: What city is the event in and how many tickets do you want to purchase?
+user: The event is in Vancouver and I need 4 tickets.
+assistant: Okay, you want 4 tickets for Collective Soul in Vancouver on March 5th, correct?
+user: Yes, that is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have purchased the tickets, enjoy!
+user: Thanks for your help. I also need a direct bus ticket from Seattle, WA on March 5th.
+tool(FindBus): ok n_results=10
+assistant: There is a bus departing at 6:10 am for $28.
+user: What else is there? I'm planning on departing on Sunday this week from Portland, OR.
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses for you. What about a bus departing at 7:10 am for $38?
+user: What other buses are there?
+assistant: There is a bus leaving at 7:20 am for $37.
+user: Yes, that sounds good.
+assistant: Do you want to purchase tickets for the bus?
+user: Yes, I do.
+assistant: Okay, you want 4 bus tickets traveling from Portland to Vancouver on March 3rd at 7:20 am and you don't have extra luggage, right?
+user: Yes, that is correct. What station does the bus depart from and arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have purchased the tickets. The bus departs from SW Arthur & 1st and arrives at Pacific Central Station.
+user: Okay, thank you.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

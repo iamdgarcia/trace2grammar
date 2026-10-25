@@ -1,0 +1,17 @@
+user: I want to watch a movie
+tool(FindMovies): ok n_results=10
+assistant: I have 10 suggestions, including Luce with a rating of 92 out of 100.
+user: Okay cool. I'm also after dinner, probably burgers. Any price is okay.
+assistant: What location are you wanting?
+user: Can you look in SF
+tool(FindRestaurants): ok n_results=10
+assistant: I have 10 suggestions, including 5a5 Steak Lounge in San Francisco.
+user: Okay great. Can you book a table for 17:15?
+assistant: Confirming you want to book a table for 2 at 5a5 Steak Lounge, San Francisco on March 1st at 5:15 pm.
+user: Yes that's all correct. Can you tell me the phone number and if there's outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made the reservation for you. You can call them on 415-989-2539. Unfortunately no outdoor seating.
+user: Thanks a lot.
+assistant: Anything else I can do for you?
+user: No that's it.
+assistant: Not a problem.

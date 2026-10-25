@@ -1,0 +1,40 @@
+user: I'm looking for a unisex salon
+assistant: Which city are interested in?
+user: I'm looking for something in san Mateo
+tool(FindProvider): ok n_results=10
+assistant: Elite Hair Design is a nice salon in San Mateo
+user: Could you please find me a different salon?
+assistant: Great Clips is another nice salon in San mateo
+user: What's the address?
+assistant: The address is 207 east 4th avenue
+user: That's perfect
+assistant: Would you like me to book an appointment for you?
+user: Yes please. I'd like to book an appointment at 1:15 in the afternoon
+assistant: On what date you'd like your appointment to be?
+user: i'd like to go on march 9th
+assistant: Please confirm the following details: Appointment on march 9th at 1:15 pm at Great clips
+user: No, please change it to march 13th at 1:30 in the afternoon
+assistant: Please confirm the following details: appointment at 1:30 pm on march 13th
+user: That's it. Could you please tell me their contact and their average rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. Their phone is 650-685-1888 and the average rating is 3.4
+user: Thanks. Could you also help me finding an affordable restaurant it tat area for that day?
+assistant: What kind of food would you like to eat?
+user: I'd like chinese food
+tool(FindRestaurants): ok n_results=4
+assistant: I founf 4 restaurants you may like: Gau poang is a nice restaurant in San Mateo
+user: What's their contact? do they have outdoor sitting?
+assistant: They do not have outdoor sitting and their contact is 650-286-9386
+user: Perfect, thanks
+assistant: Is there anything else I can do for you?
+user: I'd like to book a table for two at the restaurant
+assistant: What time wuould you like your reservaation to be?
+user: Please make the reservation in the afternoon 12:15
+assistant: Please confirm the following details: reservation for 2 people at Gau Poang in San Mateo at 12:15 pm on march 13th
+user: Yes, that's it. What'c the rating of the restaurant? Do they serve vegetarian food?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You reservation is confirmed. they have nice vegetarian options and their rating is 4.6
+user: Thanks a lot
+assistant: Is there anything else I can do for you?
+user: No, thanks that's all
+assistant: Have a good day

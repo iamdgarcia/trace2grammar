@@ -1,0 +1,21 @@
+user: Can you call me a cab to go to 222 Great Mall Drive.
+assistant: Is there a cab type you prefer?
+user: A normal ride is fine.
+assistant: And how many seats do you require?
+user: 2 seats please.
+assistant: I'll get you a regular cab for 2, destination 222 Great Mall Drive, is that correct?
+user: Yes, please get it.
+tool(GetRide): ok n_results=1
+assistant: I've called the cab and it will be here shortly.
+user: When will the cab get here, and what's its cost?
+assistant: It will be here in 6 minutes. The cost of the cab is $34.93.
+user: Thanks for the help. Now can you look for songs while we wait.
+tool(LookupMusic): ok n_results=10
+assistant: How about The Way by Ariana Grande from the album Yours Truly.
+user: That's a good one. Please play it.
+assistant: I'll play The Way in the living room, is that okay?
+user: Yeah, please play it. Was this released four years back? And what genre is it?
+tool(PlayMedia): ok n_results=1
+assistant: It's from 2013 and it's from the pop genre. Enjoy the song.
+user: Thank you, I don't need anything else.
+assistant: Have a wonderful day.

@@ -1,0 +1,29 @@
+user: I would like to find a rental car for pick up at 11 am in Phoenix.
+assistant: Until when would you like the car?
+user: I would like it until Wednesday next week.
+assistant: When would you like to start the car rental?
+user: I would need it from March 3rd.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There is a nice car at Sky Harbor International Airport a Sedan Buick Regal Sportback.
+user: How much does the car cost per day?
+assistant: It is $34.00 per day.
+user: It sounds good and I'd like to find a house to stay there rated 4.2 or higher. There are two people and we need laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There's a great house located at 10 East Thomas Road rated 4.2.
+user: Would there be any other houses?
+assistant: There's a great house at 10601 North 56th Street, Scottsdale, Arizona 85254, United States rated 4.2.
+user: Can I get a contact number for the place?
+assistant: The contact number is +1 480-948-6100.
+user: The house is great.
+assistant: Do you want to make a reservation for this house?
+user: I don't want to do that now.
+assistant: Would there be anything else I can do for you?
+user: Will you reserve the rental car you found for me?
+assistant: Would you like to add insurance?
+user: I don't need some insurance.
+assistant: Please confirm details that you are picking up the car from Sky Harbor International Airport March 3rd at 11 am and dropping off March 6th a sedan car that doesn't come with insurance.
+user: Yes, that sounds nice.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Thanks for all the help and that is all I need.
+assistant: Have a nice day.

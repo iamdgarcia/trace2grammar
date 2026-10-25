@@ -1,0 +1,31 @@
+user: I am looking for some suggestions for must see attractions for my upcoming trip.
+assistant: Where will you be visiting?
+user: I'm looking for attractions that are rated kid friendly in the Los Angeles area
+tool(FindAttractions): ok n_results=10
+assistant: There is a Historical Landmark that you might enjoy; it is called Angels Flight Railway.
+user: Excellent. I'll also need to rent a car while I'm there. So I need it from tomorrow until the 3rd of this month.
+assistant: And do you have a time you'd like to pick up the rental?
+user: Sure. I would like to get it at eleven am
+assistant: And is Los Angeles the pick up location?
+user: That works for me.
+tool(GetCarsAvailable): ok n_results=8
+assistant: There are 8 cars that match your preferences. One is an SUV Dacia Duster that is available for pick up from LAX International Airport
+user: Are there any others? A Sedan for pick up at morning 10 would be ideal
+tool(GetCarsAvailable): ok n_results=2
+assistant: There is a Sedan Hyundai Ioniq that you can pick up at LAX International Airport
+user: That works for me. I'd like to book this one.
+assistant: Should I include insurance.
+user: That won't be necessary.
+assistant: To confirm then,you want to book the Sedan available at LAX International Airport from 10 am on March 2nd until March 3rd. Correct?
+user: Yes, that's perfect.
+tool(ReserveCar): ok n_results=1
+assistant: That car has been successfully booked.
+user: Great. thank you! Also, I want to share the location with Melissa.
+assistant: You are looking to share the location for LAX International Airport, correct?
+user: Yes. Actually, I'd like to have it sent to Brittany.
+assistant: So you want to share LAX International Airport with Brittany, right?
+user: That's exactly it
+tool(ShareLocation): ok n_results=1
+assistant: That address has been sent to Brittany
+user: Thanks so much. That's everything for me at the moment.
+assistant: Thanks and have a lovely day!

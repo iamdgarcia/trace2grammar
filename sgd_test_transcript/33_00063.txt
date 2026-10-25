@@ -1,0 +1,21 @@
+user: Hi, I am lookig for some help in locating something interested to do, can you help with that?
+assistant: Sure, did you have a particular city and event you are interested in?
+user: Yes. I want to see a stage show on the 9th of March in London, UK.
+tool(FindEvents): ok n_results=10
+assistant: I have located 10 events matching your description. Would you be interested in attending A Right Royale Tea at Amba Hotel Charing Cross. This event is on March 9th and it begins at 7 pm.
+user: That would be perfect, can you reserve my tickets.
+assistant: Sure I can, how many will you be needing.
+user: I will only need to purchase one ticket.
+assistant: Okay, that will be 1 ticket for A Right Royale Tea event in London on March 9th, is that correct?
+user: Yes that is correct. How much is the ticket and what city is the venue located in?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket price came to $50, and the venue is located in Strand.
+user: Thank you, can you also help me book a cab ride there too?I
+assistant: Sure, would you be interested in a regular or pool ride?
+user: I would like a pool ride please.
+assistant: Okay, 1 pool ride to Amba Hotel Charing Cross.
+user: Yes that is correct. What time will the cab get here?
+tool(GetRide): ok n_results=1
+assistant: Your cab ride has been successfully reserved and it is expected to arrive in 3 minutes.
+user: Great! Thanks that is all for now.
+assistant: You are welcome, enjoy your event.

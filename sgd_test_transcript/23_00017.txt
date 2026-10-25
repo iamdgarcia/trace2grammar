@@ -1,0 +1,27 @@
+user: Can you find me some movies online?
+assistant: What kind of movie do you want to watch?
+user: I want to find ghost movies.
+tool(FindMovies): ok n_results=6
+assistant: I found 6 movies. How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: Uncaged sounds good. I want to find some attractions there. Preferably something child-friendly. I want to find a museum in Vegas.
+tool(FindAttractions): ok n_results=3
+assistant: I found 3 attractions. How about the Las Vegas Natural History Museum. It is a popular museum.
+user: Okay, sounds good. I want to find some songs now.
+tool(LookupMusic): ok n_results=10
+assistant: What about Head Over Boots by Jon Pardi from the album California Sunrise.
+user: Yes, sounds good.
+assistant: Do you want to play the song?
+user: Yes. Play it on the kitchen speaker.
+assistant: Please confirm: playing Head Over Boots in the kitchen.
+user: Yes, sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Playing the song.
+user: Thank you. I want to play the movie you found, with English subtitles.
+assistant: Please confirm: playing 47 Meters Down: Uncaged with English subtitles.
+user: Yes, thank you.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is playing.
+user: Who stars in it?
+assistant: Brianne Tju stars in the film.
+user: Thank you, that's all.
+assistant: Have a great day!

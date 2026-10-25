@@ -1,0 +1,18 @@
+user: I would like to see all of the alarms that I have set currently
+tool(GetAlarms): ok n_results=2
+assistant: At this time, you have 2 alarms that are ongoing. The first is an 8 am alarm called Wake Up
+user: Can you tell me if there are additional ones?
+assistant: Sure. You have a 10 am alarm that is called Shuttle to Work
+user: Excellent. That sounds good
+assistant: Would you like to create a new alarm?
+user: Yes please. I want to create an alarm
+assistant: What is the time for this new alarm?
+user: I would like to create an alarm for four pm
+assistant: To confirm, you would like a new alarm set for 4 pm.
+user: Sure, that works for me.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been created
+user: Great, Thank you so much!
+assistant: Do you need assistance with anything more?
+user: Nope, that's it. Thanks again!
+assistant: Thanks and take care

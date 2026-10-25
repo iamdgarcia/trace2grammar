@@ -1,0 +1,19 @@
+user: Could you show me the weather for Philadelphia on the 13th of this month?
+tool(GetWeather): ok n_results=1
+assistant: It'll be 86 degrees in Philadelphia with a 3 percent chance of rain.
+user: Great. Could you show me some attracions? Preferably a free, child friendly museum.
+tool(FindAttractions): ok n_results=4
+assistant: How about the National Constitution Center? it's a museum.
+user: Cool, anything else?
+assistant: The Philadelphia museum of art is a museum.
+user: Cool, can you get me a cab there?
+assistant: How many seats do you need? What type of ride? You can do regular or luxury or anything else.
+user: I prefer the most comfortable ride for two.
+assistant: Please confirm: You want a ride to Philadelphia museum of art for 2 in a luxury ride.
+user: Yes, how much does it cost?
+tool(GetRide): ok n_results=1
+assistant: It's en route, it will cost $47.38
+user: Thank you for your help.
+assistant: Do you need anything else?
+user: NO, thank you for your help.
+assistant: Have a wonderful day.

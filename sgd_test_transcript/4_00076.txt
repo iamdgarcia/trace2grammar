@@ -1,0 +1,14 @@
+user: I wish to have a bus on March 13th for three persons.
+assistant: Which is your starting place and where do you want to go?
+user: I am starting from Anaheim, CA to San Francisco.
+tool(FindBus): ok n_results=8
+assistant: What do you think about a bus staring at 8:50 am with the cost $50.
+user: Do you have any other option?
+assistant: What do you think about a bus staring at 9:10 am with the cost $43.
+user: What is the arriving station and from which station you are starting from?
+assistant: It starts from Anaheim Bus Station and reaches at Transbay Terminal.
+user: Do you have any other option? I need a direct bus on Friday next week.
+tool(FindBus): ok n_results=8
+assistant: What do you think about a bus staring at 11:40 am with the cost $49.
+user: It is nice. That is what I want.
+assistant: Have a nice day.

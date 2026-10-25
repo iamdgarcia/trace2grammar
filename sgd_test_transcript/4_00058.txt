@@ -1,0 +1,18 @@
+user: I'm planning to dine out soon. Can you help me select a restaurant in Mountain View?
+assistant: Do you have a specific type of cuisine in mind?
+user: Sure, search for restaurants that have Ramen.
+tool(FindRestaurants): ok n_results=9
+assistant: There are 9 such places in Mountain View that may suit your tastes. One such restaurant is Bushido
+user: Can you tell me if they have seating available outside?
+assistant: This restaurant does not have seating outside.
+user: What is the average user rating for this establishment? Also, can you give me their contact number?
+assistant: The restaurant has an average user rating of 4.1 and they can be reached at: 650-386-6821
+user: Great, thanks!
+assistant: Do you want to make a reservation for this restaurant?
+user: Sure, I'd like to make a reservation for 1 person at eleven in the morning on the 4th.
+assistant: So you would like to reserve a table for 1 at 11 am on March 4th at Bushido in Mountain View. Is this correct?
+user: That is correct. Can you tell me the price range of this restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been booked. The price range is moderate for this restaurant.
+user: Great, thanks for your help! That's it for me.
+assistant: Enjoy your day!

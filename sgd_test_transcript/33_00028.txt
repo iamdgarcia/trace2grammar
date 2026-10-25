@@ -1,0 +1,22 @@
+user: Hey, can you help me find a salon? I need to change my hair.
+assistant: In which city?
+user: In Pleasanton please.
+tool(FindProvider): ok n_results=9
+assistant: Cosmo'S Barber Shop is a great one in Pleasanton.
+user: Sounds real good.
+assistant: Should I book an appointment for you?
+user: Maybe some other time. Can you tell me how's the weather is there?
+tool(GetWeather): ok n_results=1
+assistant: The weather there is currently at an average temperature of 90 Degrees Fahrenheit with a 4 percent chance of rain.
+user: And how humid is it?
+assistant: The humidity is around 16 percent.
+user: And how's it gonna be on March 4th?
+tool(GetWeather): ok n_results=1
+assistant: At an average of 78 degrees Fahrenheit with a 13 percent chance of rain.
+user: Good to know, I want to book an appointment at the salon you found at three pm that day.
+assistant: So a 3 pm appointment on March 4th at Cosmo's Barber Shop. Is that correct?
+user: Yes. What's their rating, by the way?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. Their rating is 4.3.
+user: Thanks a lot, that's all I need.
+assistant: Have a great day.

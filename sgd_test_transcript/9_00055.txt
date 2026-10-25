@@ -1,0 +1,16 @@
+user: Can you find me a movie to watch at a Regal Jack London theater in Oakland? It should be a regular show.
+tool(FindMovies): ok n_results=3
+assistant: Would you be interesting in watching Good Boys Hobbs and Shaw, or IT chapter Two?
+user: I would like to buy tickets to IT two, it sounds perfect.
+assistant: When will you be watching the movie, what date and time specifically, and how many tickets will you be purchasing?
+user: Reserve 2 tickets for the movie at 21:45 for next Thursday.
+assistant: You will purchase 2 tickets to a regular showing of IT Chapter Two in Oakland on March 7th at 9:45 pm, was that all correct?
+user: That is all correct, what is the address of the theater?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets were bought successfully, the theater's address is 100 Washington street.
+user: Quick question, what genre is this movie classified as?
+assistant: The movie is classified as a Supernatural movie.
+user: Great, thanks for the help?
+assistant: Will that be all I can assist you for today?
+user: That is all, once again thanks for the help.
+assistant: No problem, have a good day.

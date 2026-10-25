@@ -1,0 +1,34 @@
+user: I want to check out seattle theatresports improv comedy in seattle, wa.
+assistant: How many tickets are you after?
+user: I need two tickets
+assistant: What date do you want to book for?
+user: Can you get tickets for the March 3rd performance
+assistant: Confirming you want to book 2 tickets for seattle theatresports improv comedy in seattle on March 3rd
+user: Yes thank you
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been successful, you should receive a confirmation email with your tickets
+user: Where is the show, also what was the ticket cost?
+assistant: It is playing at unexpected productions improv and tickets are $50
+user: Are there any buses going there
+assistant: Do you want to leave on March 3rd?
+user: No can you look for buses leaving on the 2nd
+assistant: What is your departure location?
+user: Look for buses from Vancouver
+tool(FindBus): ok n_results=10
+assistant: There is a bus departing at 7:40 am, tickets are $27
+user: What other options are there?
+assistant: There is a bus departing at 9:10 am, tickets are $28
+user: Can you actually find me a direct service from portland?
+tool(FindBus): ok n_results=10
+assistant: There is a bus departing at 7 am, tickets are $30
+user: okay can you get me tickets for that bus
+assistant: Confirming you want to book 2 tickets for the 7 am bus from portland to seattle on March 2nd, and you do not need additional luggage.
+user: Yes thats right
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been confirmed. You should get a confirmation email shortly.
+user: Can you tell me the departure and arrival stations?
+assistant: The bus departs from SW Arthur & 1st and arrives at westlake station
+user: Thanks so much
+assistant: Do you need any further assistance?
+user: No that's all for now
+assistant: Happy to help.

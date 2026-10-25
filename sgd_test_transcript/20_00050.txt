@@ -1,0 +1,34 @@
+user: I need help finding a rental car.
+assistant: From where do you want to rent the car and on what date?
+user: I want a car from the day after tomorrow in Toronto, Canada.
+assistant: At what time will you pick up the car and when are you planning to return it?
+user: I'll pick it up at 14:00 and need it till March 9th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is a nice Buick Regal Sportback Sedan available at Toronto Pearson International Airport.
+user: How much do they charge per day?
+assistant: The car rental costs $31.00 per day.
+user: Can you find me a Hatchback in London?
+tool(GetCarsAvailable): ok n_results=2
+assistant: How about a Fiat Panda Hatchback which is available at the Heathrow International Airport?
+user: And how much does that cost?
+assistant: It costs $29.00 per day.
+user: Thank you. Can you help me find a house for three people there?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses based on your requirements. There is a nice house at 1 Addington Street which is rated 4.3.
+user: Does it offer laundry service?
+assistant: Yes, it does have laundry service.
+user: That seems like a great house!
+assistant: Would you like to reserve the house?
+user: No, hold on. Can you reserve the rental car that you found for me?
+assistant: Would you like to add insurance?
+user: No, I'll not need that.
+assistant: Please confirm that you want to book a Hatchback rental car without insurance from March 3rd to March 9th and that you will be picking it up from Heathrow International Airport at 2 pm.
+user: On second thought, I'll include insurance.
+assistant: Of course. So, you want to pick it up at 2 pm and want to include insurance, right?
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved successfully.
+user: Thank you for the assistance.
+assistant: Is there anything else I can help with?
+user: No, that'll be all for now. Thank you very much.
+assistant: Have a great day!

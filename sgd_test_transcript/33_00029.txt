@@ -1,0 +1,23 @@
+user: I am looking for a salon to get my hair done.
+assistant: In what geographic area are you looking for a salon?
+user: I would like to find one in Santa Rosa
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salon that may suit your needs. One is a lovely place called Daredevils & Queens in Santa Rosa.
+user: Sure, that works.
+assistant: Would you like to schedule a visit now?
+user: Not at this moment. Can you tell me what the weather will be like in this area on 2nd of March?
+tool(GetWeather): ok n_results=1
+assistant: On that day, the expected temperature is 86 degrees Fahrenheit with a 27 percent chance of rain.
+user: Great. Let's go ahead and schedule a visit to the salon you mentioned previously.
+assistant: And for what time should I schedule the visit?
+user: I would like to go at evening 6:30
+assistant: So, you would like to schedule a visit to Daredevils & Queens salon for March 2nd at 6:30 pm, correct?
+user: No, I would like to go at evening 5.
+assistant: So, you would like a visit scheduled for March 2nd at 5 pm. Correct?
+user: Perfect. That works!
+tool(BookAppointment): ok n_results=1
+assistant: The visit has been successfully booked.
+user: Great. Thanks!
+assistant: Will that be all?
+user: Yes. Thanks again!
+assistant: Enjoy your day.

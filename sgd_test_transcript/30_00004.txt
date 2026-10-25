@@ -1,0 +1,30 @@
+user: I searching for something around Seattle, WA on March 11th. I like Songs.
+tool(FindEvents): ok n_results=3
+assistant: Claudia Oshry is nice one. It is at Illsley Ball Nordstrom Recital Hall on March 11th at 4:30 pm.
+user: Where it is located? What is the cost of one ticket?
+assistant: The address is 200 University Street. The cost of the ticket is $50.
+user: it is nice. I wish to search for a house to stay.
+tool(SearchHouse): ok n_results=10
+assistant: A beautiful house is situated at 1000 1st Avenue with the rating 4.5
+user: It is nice. Is there any buses to go that place?
+assistant: When will you leave? March 11th, March 5th or any other date?
+user: I will leave on March 2nd.
+assistant: From which place are you moving?
+user: I will move from Portland, OR.
+tool(FindBus): ok n_results=10
+assistant: What is your opinion about a bus starting at 7 am. The price is $30.
+user: What is the name of the reaching and starting station?
+assistant: It starts from SW Arthur & 1st and will reach at Westlake Station.
+user: It is good. I wish to get the ticket to that event.
+assistant: Number of tickets do you need?
+user: I wish to have 4 tickets.
+assistant: Kindly ensure that, on March 11th, 4 tickets have been booked for Claudia Oshry at Seattle.
+user: Nope. I wish to have three tickets.
+assistant: Kindly ensure that, 3 tickets have been booked for Claudia Oshry.
+user: Yes. it is good for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is done. Have a nice time there.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your help.
+assistant: Have a nice day.

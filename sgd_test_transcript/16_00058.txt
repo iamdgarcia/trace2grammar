@@ -1,0 +1,24 @@
+user: I need to travel to attend a function. Will you find a bus ticket?
+assistant: From which place you are leaving from? How many tickets do you need?
+user: I want to leave at 6:15 pm. i am leaving from Long Beach, CA and i need 3 tickets.
+assistant: When are you plan to leave at what date? to which place are you going?
+user: I am plan to leave on the 13th. and i need to go to vegas.
+assistant: please check and confirm the following details. Need a bus ticket leaving from Long beach. The destination is Las Vegas. The bus leaves on March 13th and leaves at 6:15 pm. the number of ticket is 3 and don't have extra luggage.
+user: ok that suits for me. Which is the origin station for the bus and which is the destination station?
+tool(BuyBusTicket): ok n_results=1
+assistant: it arrives at Union Plaza and it origin station is downtown station. Sorry bus tickets can't be booked. How about the bus depart at 5:50 pm? it costs $37.
+user: ok that works for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Bus tickets has been booked successfully.
+user: Will you search for hotels in that area?
+tool(SearchHotel): ok n_results=7
+assistant: there is a hotel called Best Western Plus Las vegas West. It is a 3 star hotel.
+user: WHat is their phone number?
+assistant: their phone number is +1 702-256-3766.
+user: It sounds good. I need to reserve for the hotel. Room need for seven days and i need one rooms. I will check it on tomorrow.
+assistant: Please check and review the following details. Hotel name is Best Western Plus Las vegas West. You will check in on March 2nd. Room need for 7 days and it is located in Las Vegas. You need 1 room
+user: ok that's great. Book it. What is their street address? whether smoking is allowed in that hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: Hotel room is booked successfully. No, smoking is not allowed in that hotel. Their address is 8669 west sahara avenue.
+user: THanks for your immense help . that's all i need.
+assistant: bye, take care , have a wonderful day

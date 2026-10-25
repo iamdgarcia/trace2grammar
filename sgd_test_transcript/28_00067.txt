@@ -1,0 +1,28 @@
+user: I'm planning on being in London soon, and will be spending some time with my nieces over there. Please help me find some free-to-enter, child-friendly attractions to visit.
+tool(FindAttractions): ok n_results=10
+assistant: Sure. I can help you with that. A nice Place of Worship to visit is All Saints, Margaret Street.
+user: All right, cool. Please also find me a rental car there, available for pickup at half past 1 in the afternoon, to be dropped off on 14th of this month.
+assistant: Let me see if I got everything correctly: Your preferred pick-up location is London.
+user: Yes, you got that right.
+assistant: What date would you like to pick up the car?
+user: I'd like to have the car starting 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars that might interest you. One is a nice, Audi A8 Sedan, available for pickup from Heathrow International Airport.
+user: What are the daily charges?
+assistant: The daily charges are $30.00.
+user: Sure, that works for me. Please reserve the rental car.
+assistant: Should I add insurance?
+user: No. Insurance won't be necessary.
+assistant: Please confirm that you'd like to pick a Sedan car without insurance, from Heathrow International Airport on March 12th at 1:30 pm and drop it off on March 14th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car.
+user: Thank you very much. You've been very helpful. Now, please share the Heathrow International Airport address with Scott.
+assistant: Let me see if I got everything correctly: You'd like to share the Heathrow International Airport address with Scott.
+user: Oops! Not the airport's address. Sorry. I meant to share Maurizio's address.
+assistant: Sure, no problem. Please confirm that you'd like to share Maurizio's address with Scott.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the address.
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Goodbye, and have a wonderful day!

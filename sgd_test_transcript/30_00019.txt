@@ -1,0 +1,37 @@
+user: I wish to book tickets to an event.
+assistant: Do you have any preferred date?
+user: It will be on March 7th.
+assistant: What type of event you are interested in and in which city?
+user: I know that Adieu Monsieur Haffmann is a nice one. I wish to see it at LAX.
+assistant: Number of tickets you need is?
+user: I need 4 tickets.
+assistant: Kindly ensure that, on March 7th, 4 tickets have been booked for the event Adieu Monsieur Haffmann at Los Angeles.
+user: Yes. It is good. Where is the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is confirmed. Have a nice time there. It will be at Theatre Raymond Kabbaz.
+user: What is the cost of the one ticket?
+assistant: The cost per ticket is $55.
+user: Thank you so much for your help. Is there any bus facility to that place?
+assistant: Are you interested in leaving on March 7th?
+user: I wish to go on next Tuesday.
+assistant: Which is your leaving place?
+user: I will start from Anaheim.
+tool(FindBus): ok n_results=10
+assistant: I searched and found 10 buses for you. What about a bus starting at 7:50 am. The price is $12.
+user: From which station the bust starts from?
+assistant: It will move from Anaheim Bus Station.
+user: What is the name of the arriving station? Number of stops the bus have?
+assistant: It is a direct bus and it will arrive at North Hollywood Station.
+user: It is nice.
+assistant: Do you need any other help?
+user: I wish to book bus tickets.
+assistant: Kindly ensure that, on March 5th, 4 tickets are booked in the bus which if starting from Anaheim to Los Angeles at 7:50 am. You don't have extra luggage.
+user: Nope. I have a luggage.
+assistant: Kindly ensure that, you need tickets in the bus which if starting from Anaheim and you have extra luggage.
+user: Yes. It is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is booked.
+user: Thank you so much for your help.
+assistant: Do you need any other help?
+user: Nope. Thank you so much for your kind help.
+assistant: Have a nice day.

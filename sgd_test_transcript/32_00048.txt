@@ -1,0 +1,20 @@
+user: Would you please help me to find a songs now?
+tool(LookupMusic): ok n_results=10
+assistant: What is your opinion about the song Time Up from the album Big A Presents One Chance Riddim by Shenseea?
+user: Okay..this is perfect.
+assistant: Can i run the song for you?
+user: No, will see later..Is there any good online movies with Dramatic Story?
+tool(FindMovies): ok n_results=10
+assistant: What about A Faithful Man, After The Wedding, or Blinded by the Light?
+user: Okay...A Faithful Man is good..Would you play the song you found for me?
+assistant: Please confirm the following details: Running the song Time Up in Living Room.
+user: This is perfect..Do you know the type of music and in which year it come out?
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your music..Its a Reggae song from the year 2017.
+user: Would you please show my alarms?
+tool(GetAlarms): ok n_results=1
+assistant: Currently there is a 1 alarm for 10 am with name Running.
+user: Okay...this is cool.
+assistant: Are you like to add an alarm?
+user: I don't like to add new alarms now.
+assistant: Thank you so much.

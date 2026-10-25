@@ -1,0 +1,23 @@
+user: What fun thing can I do?
+assistant: In which city? What do you like to do?
+user: I would like to see a Broadway show in Seattle, WA.
+tool(FindEvents): ok n_results=10
+assistant: There is a show at Beatleconcert at 12th Avenue Arts for March 10th at 5 pm.
+user: That would be fine. I want tickets.
+assistant: How many tickets?
+user: I need 1 ticket.
+assistant: You would like to attend Beatleconcert in Seattle. I need 1 ticket for March 10th.
+user: That would be fine. Where is the venue located and what is the cost of a ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: I have made the reservation. The tickets are $50 and the location is 1620 12th Avenue.
+user: Thanks very much. I would need a cab to get there.
+assistant: Would you like a regular or a pool ride?
+user: I just want a normal ride.
+assistant: You would like 1 seat on a regular ride to 12th Avenue Arts?
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: The ride will arrive shortly.
+user: Thanks very much.
+assistant: Is there anything else you need?
+user: No, that would be all.
+assistant: Enjoy your day.

@@ -1,0 +1,28 @@
+user: Can you find me a bus leaving this Saturday?
+assistant: Sure. What is your departure city and destination?
+user: I'm leaving LAX and headed towards Long Beach.
+tool(FindBus): ok n_results=10
+assistant: How about a 6:50 am departure that costs $12?
+user: Sounds good. Can you show me some local attractions?
+tool(FindAttractions): ok n_results=8
+assistant: You should check out the Aquarium of the Pacific. It is a Nature Preserve.
+user: Okay, that sounds nice.
+assistant: Do you need help with anything else?
+user: Can you buy me that bus ticket?
+assistant: Sure. How many tickets do you want?
+user: I need three tickets.
+assistant: Confirming that you want 3 tickets on the March 2nd Los Angeles to Long Beach bus that departs at 6:50 am. You have no extra luggage. Is this correct?
+user: Yes, that is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Can you find me some local hotels? Something three -star with 1 room.
+tool(SearchHotel): ok n_results=8
+assistant: I found 8 hotels matching your criteria. How about the Best Western Of Long Beach? It is a 3 star hotel.
+user: What's the address?
+assistant: They are located at 1725 Long Beach Boulevard.
+user: Sounds good.
+assistant: Do you want to make a reservation?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: No, you have been very helpful. Thanks!
+assistant: You're welcome. Have a good day!

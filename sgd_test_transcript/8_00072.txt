@@ -1,0 +1,9 @@
+user: I am looking for one seat in a train.
+assistant: Can you tell me the city of departure and the city you are traveling to?
+user: I am traveling from SD to ANaheim.
+assistant: What is the date of departure?
+user: I will be leaving on 12th of this month.
+tool(FindTrains): ok n_results=8
+assistant: I found 8 trains that might interest you. How about a train departing at 8:30 am and the cost of the ticket is $53?
+user: That sounds nice to me. That will be all for now.
+assistant: I am glad I could help. See you again.

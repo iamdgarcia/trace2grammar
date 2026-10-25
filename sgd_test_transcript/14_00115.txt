@@ -1,0 +1,17 @@
+user: I wanna search for a song from around two years back
+tool(LookupMusic): ok n_results=10
+assistant: How about the song Airplane Mode by Limbo off of their album Holo
+user: Yes that's good, now help me find a Mystery movie with Monica Dolan in it
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie you might like called Official Secrets
+user: I wanna watch Official Secrets!
+assistant: Do you want me to play it then?
+user: No not right now, but play that song earlier on the patio device
+assistant: Confirming you want Airplane Mode played on your patio?
+user: Yes that's right
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: Thanks for that
+assistant: Can I do anything else for you?
+user: No that's all thanks!
+assistant: You're very welcome

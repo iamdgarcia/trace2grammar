@@ -1,0 +1,30 @@
+user: Show me the alarms I have set.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm named Wake up that is set for 8:30 am.
+user: Okay, good. I would like to find a restaurant there in SFO.
+assistant: What type of food are you interested in?
+user: I want a place that serves Asian and I need vegetarian options.
+tool(FindRestaurants): ok n_results=10
+assistant: Bai Thong Thai is a nice restaurant that is located in San Francisco.
+user: Yes, that is good. I would like to reserve a car there to be picked up on March 12th and I need it until March 14th.
+assistant: Would you like to add insurance?
+user: No, I don't need the insurance.
+assistant: What type of car would you like to get?
+user: I want to pick it up in Clayton Valley. A hatchback would be nice.
+assistant: What time would you like to pick the car up?
+user: I would like to pick the car up at 6:30 pm.
+assistant: Please confirm these details: You want to pick up the car from Clayton Valley om March 12th at 6:30 pm and drop it off on March 14th. This car is a hatchback and doesn't come with insurance.
+user: Yes that sounds fine. What is the cost of the car per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved at a cost of $24.00 per day.
+user: Oh, can you share the location? I want to share with Noah the address 298 Gough Street.
+assistant: Okay, can you confirm these details? You want to share with Noah the location 298 Gough Street.
+user: No, the address I would like to share is Clayton Valley.
+assistant: Confirm these details: You are sharing with Noah the location Clayton Valley.
+user: No, I want to share the location with Charles.
+assistant: Okay, confirm these details for me: You will share with Charles the location Clayton Valley.
+user: Yes, that sounds fine.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you. That is very helpful. That was all I needed for now.
+assistant: Have a wonderful day!

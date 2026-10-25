@@ -1,0 +1,22 @@
+user: Find me a song to listen to.
+tool(LookupMusic): ok n_results=10
+assistant: Do you like Hey Hey Hey by Katy Perry on the Witness album?
+user: That song is perfect.
+assistant: Shall I cast the song for you?
+user: No, not at the moment. Find me a movie to see on the Internet.
+assistant: What movie genre should I search in?
+user: Search for Animation movies.
+tool(FindMovies): ok n_results=2
+assistant: The Angry Birds Movie 2 and Toy Story 4 are the only 2 result that I found.
+user: The Angry Birds Movie is perfect. Cast that earlier song to any device for me.
+assistant: You wish to cast the song Hey Hey Hey to the Living room, correct?
+user: That is right. What music genre is it and what year was it released?
+tool(PlayMedia): ok n_results=1
+assistant: Your Pop song from 2017 has started playing.
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm named Shopping set for 3:30 pm.
+user: What other alarms do I have set?
+assistant: There is an alarm named Shuttle to work set for 8 am.
+user: That is perfect. I don't need anymore help.
+assistant: Thanks for letting me help you.

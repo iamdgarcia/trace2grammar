@@ -1,0 +1,33 @@
+user: Search for a train for me.
+assistant: What city shall I search in?
+user: I need any type of train ticket to get to Portland.
+assistant: What is your departure city?
+user: I am departing out of Vancouver.
+assistant: What is your travel date?
+user: I am departing on the 11th.
+tool(FindTrains): ok n_results=8
+assistant: There is a train leaving at 6:50 am. It costs $81 and is 1 of 8 search results.
+user: That is perfect. Get me a train ticket.
+assistant: How many people are going?
+user: I only need 1 ticket.
+assistant: Do you wish to add travel insurance?
+user: Yes, add travel insurance to the ticket.
+assistant: You want 1 Value train ticket with insurance that departs Vancouver at 6:50 am on March 11th and heads to Portland, correct?
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is confirmed.
+user: What cool things are there to do there?
+assistant: Shall I search in Music, Theater, or some other type of genre?
+user: Find me something in Songs for the 14th of March.
+tool(FindEvents): ok n_results=6
+assistant: Bastille is happening at Theater of The Clouds on March 14th at 5 pm and is 1 of 6 attractions that I found.
+user: That is okay. Find me some events in the Play category.
+tool(FindEvents): ok n_results=6
+assistant: Beirut By Alan Bowne is playing at The Shoe Box Theater on March 14th at 4:30 pm.
+user: That is perfect. Share the location with Kathryn.
+assistant: You wish to share the Shoe Box Theater location with Kathryn, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with her.
+user: Thanks for your help. That is everything for now.
+assistant: Have a great day.

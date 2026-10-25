@@ -1,0 +1,20 @@
+user: I need to collect money from someone who has yet to pay me back.
+assistant: I will be happy to help, just give me the name of the person you would like to collect funds from.
+user: I need to collect fro Mary.
+assistant: I will also need the dollar amount you would like to request.
+user: She owes me 60 bucks.
+assistant: Great, so you would like to collect $60 from Mary and this transaction be be publicly visible. Would you like to proceed?
+user: Yes, please.
+tool(RequestPayment): ok n_results=1
+assistant: I was able to send that request for you.
+user: Can you also help me with making a payment as well?
+assistant: Sure, I just need a few details first. Please given me the name of the person you would like to send the payment to, what account you would like the funds to come out of, and the dollar amount you would like to send.
+user: Can you please send Bob 115 dollars from my in-app balance?
+assistant: Okay, so I am sending Bob $115 from your app balance and this transaction will also be publicly visible. Would you still like me to proceed?
+user: Yes, please, everything sounds good.
+tool(MakePayment): ok n_results=1
+assistant: I was able to confirm that payment for you and the recipient should receive your payment any moment.
+user: Thanks a lot, that was easy.
+assistant: Is there anything else I can assist you with right now?
+user: No, that was all I needed for now.
+assistant: Enjoy the rest of your day, goodbye.

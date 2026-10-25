@@ -1,0 +1,44 @@
+user: I wish to search for something which are interesting. I like Theater.
+assistant: In which city do you need?
+user: I am searching for something in London, England.
+tool(FindEvents): ok n_results=10
+assistant: A Right Royale tea is a popular place at Amba Hotel Charing Cross. It will be on March 14th at 7 pm.
+user: It is nice. Please search some other events around LAX on the 10th.
+tool(FindEvents): ok n_results=10
+assistant: A Year In Dragonfly is a popular place at Studio C Artists. It will be on March 10th at 5:30 pm.
+user: It is fine. Please find some other event.
+assistant: Adieu Monsieur Haffmann is a popular place at Theatre Raymond Kabbaz. It will be on March 10th at 5 pm.
+user: It is fine.
+assistant: Shall I get the tickets for event?
+user: It can be later. Is there any buses going there?
+assistant: From which place do you want to leave?
+user: I am moving from SD.
+assistant: Do you want to leave on March 10th?
+user: I will leave on March 4th.
+tool(FindBus): ok n_results=10
+assistant: What is opinion about a bus starting at 9:10 am? The cost is $27.
+user: It is nice.
+assistant: Do you need any other help?
+user: I wish to search for a round trip flight to go there.
+assistant: Are you interested in leaving on March 10th? When will you need a return flight?
+user: I will travel on the 2nd and will return on 11th of this month.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Are you interested in flying with Alaska Airlines? The starting flight will takes off at 1:05 pm and the returning flight takes off at 10:05 am. The price of the ticket is $101.
+user: What is the arriving flight time and where it will arrive?
+assistant: The returning flight will arrive at 10:59 am and the onward flight will arrive at 1:59 pm.
+user: It is nice.
+assistant: Do you need any other help?
+user: Please search for some hotels in that area and I need one room.
+tool(SearchHotel): ok n_results=10
+assistant: A 3 star Ac Hotel By Marriott Beverly Hills is available.
+user: It is nice.
+assistant: Shall I reserve the hotel?
+user: I am not interested in reserving it now.
+assistant: DO you need any other help?
+user: I need four tickets to the event.
+assistant: Kindly ensure that, on March 10th, 4 tickets have been booked for the event Adieu Monsieur Haffmann at Los Angeles.
+user: It is nice.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is done. Have a nice time there.
+user: Thank you so much for your help. That is what I want.
+assistant: Have a fantastic day.

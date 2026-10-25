@@ -1,0 +1,41 @@
+user: Search for a salon for me.
+assistant: Which city shall I look under?
+user: Find me a salon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is located in San Francisco and is 1 of 10 salosn that I found.
+user: Where are they located and what is their phone number?
+assistant: They are located at 1532 20th Street and you can contact them at 415-286-4371.
+user: Try to find me a unisex salon in Burlingame.
+tool(FindProvider): ok n_results=10
+assistant: Burlingame Barber Shop is located in Burlingame and is 1 of 10 salons that I found.
+user: What other salons do you have?
+assistant: Didi Salon is also located in Burlingame.
+user: That works for me.
+assistant: Do you wish to set up an appointment now?
+user: No, not right now. Share the location of 1221 Donnelly Avenue with Dylan.
+assistant: You wish to share the location of 1221 Donnelly Avenue with Dylan, correct?
+user: No, I want to share the address of 255 North 1st Street with Nicole.
+assistant: You wish to share the address of 255 North 1st Street with Nicole, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The address has been shared with her.
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm named Exercise set for 10 am.
+user: What other alarms do I have?
+assistant: There is an alarm named Get up set for 9 am.
+user: That is good.
+assistant: Do you need help with anything else?
+user: Create a new alarm for me and name it Music practice.
+assistant: When should the alarm be set for?
+user: Name the alarm Leave for home and set it for quarter to 4 in the afternoon.
+assistant: You wish to set a new alarm called Leave for home at 3:45 pm, correct?
+user: No, make that 5 pm.
+assistant: You wish to set a new alarm at 5 pm named Leave for home, correct?
+user: That is right.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm is all set.
+user: Thanks for that.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Thanks for letting me help you.

@@ -1,0 +1,23 @@
+user: I would like to find a therapist in Lafayette.
+assistant: Would you like a psychiatrist or psychologist or something else?
+user: A family counselor in El Cerrito
+tool(FindProvider): ok n_results=1
+assistant: I found 1 family counselor in El Cerrito named Rigg Christie.
+user: Good, please make an appointment.
+assistant: Do you have a time preference?
+user: Four pm is good.
+assistant: And which date would you like?
+user: I would like the 1st of this month.
+assistant: Confirming a 4 pm appointment with Rigg Christie on March 1st.
+user: Actually, make is 12:30 pm.
+assistant: OK, confirming a 12:30 pm appointment with Rigg Christie on March 1st.
+user: Great, what is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: It is 510-287-5845 and the appointment is confirmed.
+user: Please tell me the address.
+assistant: 11100 San Pablo Ave # 209
+user: Great, what is a good movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: Ad Astra has a rating of 84 out of 100.
+user: OK, thank you.
+assistant: You are welcome.

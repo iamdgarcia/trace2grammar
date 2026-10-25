@@ -1,0 +1,23 @@
+user: I'd like to find a hotel.
+assistant: What city would you prefer?
+user: Look for something in Cape Town.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels matching your criteria. How about 12 Apostles Hotel & Spa? It is a 5 star hotel.
+user: That sounds good.
+assistant: Do you want to reserve this hotel?
+user: No, not right now. Can you find me a rental car? I need it for March 9th until the 13th of this month. I'd like to pick it up at 6 pm.
+tool(GetCarsAvailable): ok n_results=7
+assistant: I found you a nice Sedan Audi A8 at Cape Town International Airport.
+user: How much does the rental cost each day?
+assistant: It costs $37.00 per day.
+user: That sounds good. I'd like to reserve this car.
+assistant: Would you like to add insurance?
+user: No, I don't need insurance.
+assistant: Please confirm the following: you will be picking a Sedan rental car up from Cape Town International Airport on March 9th at 6 pm. You will be dropping the car off on March 13th. Is this correct?
+user: No. I'd like to buy insurance.
+assistant: Please confirm the following: you will be picking the car up on March 9th and you would like to add insurance. Is this correct?
+user: Yes, that sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been successfully reserved.
+user: Thanks for your help. That's all that I need.
+assistant: You're welcome. Have a good day!

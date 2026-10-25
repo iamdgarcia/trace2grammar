@@ -1,0 +1,28 @@
+user: Find me some attractions to visit.
+assistant: Where should I find attractions?
+user: Look for attractions in SFO.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that should be of interest. What about Alcatraz? It's a Historical Landmark.
+user: Could you tell me their phone number?
+assistant: The phone number is 415-561-4900.
+user: Is entrance to the attraction free?
+assistant: Yes, it's free.
+user: Fantastic. I'd like to watch a movie there at the Roxie Theater. I'm into Ghost movies. I'd love to watch a 3d show.
+tool(FindMovies): ok n_results=1
+assistant: What about in Fabric?
+user: In Fabric is great. Could you find me some good Dramatic story movies online?
+tool(FindMovies): ok n_results=10
+assistant: How about A Faithful Man, After The Wedding or Blinded by the Light?
+user: Blinded by the Light is a good one.
+assistant: Would you like to play it?
+user: Yes, play it.
+assistant: Please confirm that you want to play Blinded by the Light in English.
+user: No, put it on in French subtitles.
+assistant: So you want to play Blinded by the Light in French subtitles?
+user: No, put it on with Spanish subtitles.
+assistant: Please confirm that you want to play Blinded by the Light with Spanish subtitles.
+user: Yes, that's great. Who acte idn it?
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing it. Frankie Fox acted in it.
+user: Thanks. That is what I needed.
+assistant: Have a great day.

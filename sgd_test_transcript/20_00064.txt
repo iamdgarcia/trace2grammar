@@ -1,0 +1,38 @@
+user: I would like to find a rental car in Phoenix, AZ.
+assistant: What is the time you wish to pick up the car
+user: I would like to pick it up 3 in the afternoon.
+assistant: When would you like to start the car rental and when do you want it until?
+user: I would like it from March 10th to March 11th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a great car available at Phoenix Union Station called a sedan Audi A8.
+user: What is the cost per day?
+assistant: It will cost $26.00 a day.
+user: Do you want a sedan instead.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There would be 5 cars available including a nice car at Sky Harbor International Airport called a Sedan Buick Regal Sportback.
+user: What does it cost per day?
+assistant: It will cost $31.00 a day.
+user: That sounds good.
+assistant: Would you want to book the car?
+user: Yes, but later probably because I want to find a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available for the search including a nice house located at 10 East Thomas Road rated 4.6.
+user: Will this place have laundry service.
+assistant: The place has laundry service.
+user: Can I get the contact number for this place?
+assistant: The phone is +1 602-222-1111.
+user: The house is great.
+assistant: Do you want to make a reservation for the house?
+user: No, I don't want that at this time but can you reserve the rental car you found for me?
+assistant: Would you like to add insurance?
+user: I don't need any insurance.
+assistant: Please confirm details for picking up the car from Sky Harbor International Airport March 10th at 3 pm and dropping off March 11th a sedan car without insurance.
+user: No, I want insurance purchased.
+assistant: Please confirm pickup dates of March 10th with insurance.
+user: Yes, that is good sounding.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Thanks for your help.
+assistant: What else can I assist you with.
+user: No thanks for your help.
+assistant: Have a nice day.

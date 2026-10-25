@@ -1,0 +1,23 @@
+user: I need a therapist in Los Gatos.
+assistant: Are you looking for a family counselor or a psychiatrist?
+user: I want to see a psychologist.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 psychologist in Los Gatos including Jacome Paulette D.
+user: What is the phone number?
+assistant: The number is 408-356-1414.
+user: I actually want a therapist in Novato.
+tool(FindProvider): ok n_results=5
+assistant: There are 5 psychologist in Novato including Christina M. Walker.
+user: Can I have an appointment Wednesday next week at quarter past 2 in the afternoon?
+assistant: Please confirm you want an appointment with Christina M. Walker on March 6th at 2:15 pm.
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: That appointment time is not available. Christina M. Walker might have an appointment on March 6th at 2 pm.
+user: That is good.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been booked successfully and you should receive an email confirmation.
+user: Do you have any movie recommendations?
+tool(FindMovies): ok n_results=10
+assistant: This Is Not Berlin is rated 86 of 100.
+user: That is good.
+assistant: See you soon!

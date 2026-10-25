@@ -1,0 +1,33 @@
+user: Get me a round trip plane ticket.
+assistant: What is your departure and return date and what city are you departing from?
+user: I am departing out of New Delhi Friday next week and will return on the 13th.
+assistant: What is your arrival city?
+user: I am going to Philly.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: United Airlines has departure times of 1:20 pm and 9:35 pm respectively. There is a layover and the cost is $551.
+user: That works for me. I need a house to stay in near there.
+tool(SearchHouse): ok n_results=10
+assistant: 1 Logan Square has a 4.5 rating.
+user: That is perfect.
+assistant: Do you need any more help?
+user: Book that house for 2 people. I will be arriving on the 9th of March and will leave on the 12th.
+assistant: You want a house reservation for 2 in Philadelphia from March 9th to March 12th, correct?
+user: That is right. Is laundry service available.
+tool(BookHouse): ok n_results=1
+assistant: Your house is booked and the place does offer laundry service.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: What fun things are there to do there?
+tool(FindAttractions): ok n_results=10
+assistant: Barnes Foundation is a Museum and is 1 of 10 attractions that search found.
+user: What other things can you find? I don't have any preference type.
+tool(FindAttractions): ok n_results=10
+assistant: Bartram's Garden is a neat Park.
+user: How can I contact them?
+assistant: You can contact them at 215-729-5281.
+user: I see. What else can you find?
+assistant: Ben Franklin Bridge is a Historical Landmark.
+user: Do kids like it?
+assistant: Yes, kids love it.
+user: That is perfect. I don't need anymore help right now. Thanks.
+assistant: Have a fun time.

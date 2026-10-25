@@ -1,0 +1,18 @@
+user: i have to search for a movie to watch
+assistant: Which is your place?
+user: I need you to find me movies in San Jose
+tool(FindMovies): ok n_results=10
+assistant: What is your opnion on 47 Meters Down: Uncaged, Ad Astra or After The Wedding?
+user: I prefer Ad Astra and need four tickets
+assistant: Do you prefer a 3d or imax and which date?
+user: I have to see a regular show movie at 10:30 in the night
+assistant: Which is your preferred date?
+user: I prefer to see it on 16th of this Month
+assistant: please give confirmation details: You need 4 tickets to watch a regular show of Ad Astra in at San Jose on March 16th at 10:30 pm
+user: That is cool
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets got
+user: Thank you very much
+assistant: Is there any other help?
+user: No,Thank you very much
+assistant: Have a nice day

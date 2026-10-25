@@ -1,0 +1,37 @@
+user: Hey, do you think you can help me find a hotel?
+assistant: No problem. Just let me know which city you would like me to search in.
+user: Awesome. Can you find me a hotel somewhere in NYC?
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels that match your criteria. There is a very nice 5 star rated hotel called 1 Hotel Brooklyn Bridge I think you may enjoy.
+user: Yeah, that one sounds nice. Thanks a lot.
+assistant: Would you like me to book a room there for you?
+user: Nah, maybe later. I'd like to search for flights to the area. Can you find a nice round trip flight to NYC for sometime next Monday?
+assistant: Absolutely. Can you please tell me which area you are flying out of?
+user: I need to search for flights out of Chicago.
+assistant: Okay, what day would you like to return?
+user: I want to return on the 13th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Okay. I've found 4 flights for you. How about a round way flight with American Airlines? The ticket will be $247 total and the onward flight departs at 5:05 am with one layover. Your return flight takes off at 11:20 am.
+user: What time will the flight touch down in NYC?
+assistant: Your onward flight will arrive at your destination at 8:24 am.
+user: Can you tell me about the other flights as well? I will be purchasing 4 tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Okay no problem! There is another flight with Delta Airlines you may like better. The tickets are $220 per person and he onward flight departs at 8 am with no layovers. Your returning flight will take off at 8:55 am.
+user: Okay, thanks for the information. I'll decide on the flight a little later. Can we go ahead and make a reservation at that hotel you found earlier?
+assistant: No problem. How long will you be staying?
+user: I'll be in town for five days.
+assistant: Are you checking in on March 4th?
+user: I need a reservation for Wednesday next week.
+assistant: Okay, just confirm the following for me. You want to book 1 room at 1 Hotel Brooklyn Bridge in New York. Your check in date is March 6th and you will be staying for 5 days. Correct?
+user: Yeah, that all sounds good to me.
+tool(ReserveHotel): ok n_results=1
+assistant: Okay, your hotel has been booked.
+user: Thanks. Can you get me the address? Also, do they allow smoking?
+assistant: Yes, smoking is permitted. They are located at 60 Furman Street, Brooklyn. Anything else?
+user: Thanks, you've been a great help. Can you tell me about the attraction in area?
+tool(FindAttractions): ok n_results=10
+assistant: Yeah, no problem. Would you like to go to a Museum? If so I suggest you check out the 9/11 Tribute Museum, it is a very popular destination.
+user: Sounds nice. Is it free to enter? I also need to know if it's child friendly as well, you can never be to sure these days.
+assistant: Entrance is 100% free and this is a very child friendly museum.
+user: Okay, great. Thanks for the help. By for now!
+assistant: My pleasure. Enjoy your trip!

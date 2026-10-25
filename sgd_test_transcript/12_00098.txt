@@ -1,0 +1,19 @@
+user: I need to pull up some bus schedules for an upcoming trip please.
+assistant: Sure, I can assist you with that. Where will you be traveling to and on what date would you be leaving? It will also be helpful if you now which city you would like to depart from as well.
+user: I'm planning on leaving on March 10th from Long Beach and traveling to LA.
+tool(FindBus): ok n_results=10
+assistant: Ok, I have located a bus departing at 6 am for $13, would this time work for you?
+user: Maybe, which station would I be departing from?
+assistant: This bus will be departing form Downtown Station.
+user: Ok, that will work, let's purchase three tickets now please.
+assistant: Sure thing, first please confirm we are purchasing 3 tickets for the bus departing from Long Beach headed to Los Angeles on March 10th at 6 am. Are these details correct before I proceed?
+user: No, I will have excess luggage to carry on, it's enough for two peole.
+assistant: Ok, please confirm you will have enough luggage for 2 people as a carry on. Is this correct?
+user: Yes that is right. Which station will we be arriving at? Also find out if this is a direct bus or not.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sure thing, your tickets have been confirmed and you will be arriving at North Hollywood Station. Also, yes this is a direct bus.
+user: While i'm thinking about it, please pull up hotels in the area too.
+tool(SearchHotel): ok n_results=10
+assistant: Ok, I show a hotel with a 3 star rating at Ac Hotel By Marriott Beverly Hills.
+user: Thank you for looking that up for me. That will be all.
+assistant: Alright, your welcome. Good Bye!

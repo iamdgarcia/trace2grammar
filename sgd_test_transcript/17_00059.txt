@@ -1,0 +1,16 @@
+user: Locate the train schedule, I would like to get details to catch a train to Fresno, CA.
+assistant: Sure thing. Which city would you like to depart from?
+user: I would really like to leave from San Diego.
+assistant: Ok, and which date were you thinking?
+user: How about Tuesday next week? Also please make sure the tickets are conditionally refundable.
+tool(FindTrains): ok n_results=7
+assistant: I show a ticket for $85 departing at 6:50 am. Would that work?
+user: That would be good.
+assistant: Should we book now?
+user: No! I was just looking for information.
+assistant: Oh ok. Is there anything else I could help with?
+user: Locate a house that has laundry service available while i'm there.
+tool(SearchHouse): ok n_results=4
+assistant: I've located a great recommendation located at 1055 Van Ness Avenue, with a average rating of 3.8.
+user: That could work out great. Thanks for looking it up. That will be all for now.
+assistant: It was my pleasure to help you out today. Good Bye!

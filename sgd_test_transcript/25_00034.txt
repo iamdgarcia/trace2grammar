@@ -1,0 +1,21 @@
+user: Find me a regular War movie to see at 3 Below Theaters and Lounge.
+assistant: What city shall I search in?
+user: Find movies in San Jose.
+tool(FindMovies): ok n_results=1
+assistant: The Load is the 1 movie that I found.
+user: The Load works for me.
+assistant: Shall I get you tickets?
+user: No, not at the moment.
+assistant: Do you need more help?
+user: Find me songs by The Dead South from the Good Company album in 2013.
+tool(LookupMusic): ok n_results=1
+assistant: Search revealed 1 result which is Banjo Odyssey by The Dead South on the Good Company album.
+user: That is perfect. Play it on any device.
+assistant: Is playing the song Banjo Odyssey in the Living room okay with you?
+user: Yes, that is fine.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is starting.
+user: What music genre is it?
+assistant: It is listed under the Folk music genre.
+user: Thanks. That is everything for now.
+assistant: Have a pleasant day.

@@ -1,0 +1,20 @@
+user: Hi, could you get me a bus from Vegas to Fresno on the 7th of this month?
+tool(FindBus): ok n_results=10
+assistant: How about one which departs at 7:20 am costing $41?
+user: Sounds great! Could you find me some Nature Preserve in that area?
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 Nature Preserve you might like, how about Fresno Chaffee Zoo?
+user: Sounds good, could you get me 2 tickets for the bus ride there?
+assistant: Please confirm your purchase for 2 tickets for the bus ride from Las Vegas to Fresno on March 7th at 7:20 am.
+user: That sounds perfect!
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation has been made.
+user: May I know which station will I arrive at?
+assistant: You will arrive at 2660 Tulare St.
+user: Thank you, could you help me find some hotels there too?
+tool(SearchHotel): ok n_results=4
+assistant: There are 4 hotels you might like. How about a 3 star hotel called Doubletree By Hilton Hotel Fresno COnvention Center.
+user: Sounds great!
+assistant: Would you like a reservation there?
+user: No, that is all I need for now.
+assistant: Have a great day ahead! Goodbye.

@@ -1,0 +1,15 @@
+user: I would like help searching for songs that were released two years ago.
+tool(LookupMusic): ok n_results=10
+assistant: I have 10 songs you may like. How about Airplane Mode by Limbo off the Holo album?
+user: Yes, that song would be just fine. Can you tell how the weather will be in Fremont on the 13th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature is going to be 72 degrees and there is only a 15 percent chance for rain.
+user: Will is be reall windy or a humid day?
+assistant: The humidity shows it will only be 28 percent and the wind speed is just 3 miles per hour.
+user: Great! Thank you so much for that information, now you can play the song we discussed earlier.
+assistant: You want to hear Airplane Mode in the living room, right?
+user: Yes please and thank you. What genre is the song?
+tool(PlayMedia): ok n_results=1
+assistant: This song belongs to the pop genre.
+user: Great! That will be all, bye.
+assistant: Bye.

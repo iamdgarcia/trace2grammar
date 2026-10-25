@@ -1,0 +1,29 @@
+user: I have the whole day to myself and plan to enjoy every second of it. First, please help me find movies online.
+assistant: I can help you with that. Please tell me the type of movies you prefer.
+user: I really like Animation type movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie that might interest you. It's called Paprika.
+user: Paprika sounds cool. Now, can you also find me places to visit later on? The type of attraction doesn't matter, really.
+assistant: What location should I search for the places to visit?
+user: Please search for Atlanta attractions.
+tool(FindAttractions): ok n_results=10
+assistant: May I suggest Al-Farooq Masjid, a Place of Worship?
+user: All right. Cool. Now, please find me songs by Kolohe Kai from '11. Use my playlist to find the song that I listen to most.
+tool(LookupMusic): ok n_results=1
+assistant: Sure, no problem. Your search yielded 1 song by Kolohe Kai that might interest you. It's called First True Love, from the album Love Town.
+user: Whoa! You are right. That's the song I want to listen to, over the living room device.
+assistant: Sure, no problem. Please confirm that you'd like to listen to the song First True Love in the Living room.
+user: No. Actually it's a nice day to sit outside. Please play it over the patio device.
+assistant: Sure, no problem. Please confirm that you'd like to listen to the song First True Love on the Patio.
+user: You got that right.
+tool(PlayMedia): ok n_results=1
+assistant: Do enjoy listening to your music.
+user: What's the song's genre?
+assistant: The song's genre is Reggae.
+user: Thanks! Now please play the movie that you found.
+assistant: Sure, no problem. Please confirm that you'd like to play Paprika with English subtitles.
+user: That is correct. Do you know the actor?
+tool(PlayMovie): ok n_results=1
+assistant: Movie now playing. Koichi Yamadera is the actor.
+user: Thank you very much. You've been very helpful. That will be all for now.
+assistant: Thank you, and have a wonderful day!

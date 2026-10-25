@@ -1,0 +1,44 @@
+user: Tell me what alarms I have set.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm named Exercise set for 9:30 am.
+user: That is good.
+assistant: Shall I set a new alarm for you?
+user: No, not right now.
+assistant: Do you need any other help?
+user: Find me a place to eat at.
+assistant: What type of food do you like?
+user: Find a place that serves Breakfast.
+assistant: What city do you wish to eat in?
+user: I wish to eat in San Bruno.
+tool(FindRestaurants): ok n_results=1
+assistant: Jack's Restaurant and Bar - San Bruno meets your requirements and is located in San Bruno.
+user: Do they have pricey food?
+assistant: They are have moderate prices.
+user: What is their location and do they have a vegetarian menu?
+assistant: They are located at 1050 Admiral Court A and they have excellent choices for vegetarians.
+user: That is perfect.
+assistant: Shall I book a reservation for you?
+user: No, not right now.
+assistant: Do you need any more help?
+user: Book me a car rental with insurance to get there.
+assistant: What day are you returning the car?
+user: I will return the car on the 14th of March.
+assistant: Do you prefer a Hatchback, SUV or another type of car and what time and date will you get the car?
+user: I want to pick up a Sedan at King Street Station at 9 o'clock in the morning.
+assistant: What date are you getting the car?
+user: I want to pick the car up on March 12th.
+assistant: You want to pick up a Sedan with insurance from King Street Station at 9 am on March 12th and return it on March 14th, correct?
+user: That is right. What is the name of the car I am getting?
+tool(ReserveCar): ok n_results=1
+assistant: Your Audi A8 has been booked.
+user: Share the location with Stephen.
+assistant: Shall I share King Street Station with him?
+user: Yes, that is right.
+assistant: You wish to share the King Street Station location with Stephen, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has now been shared with him.
+user: Thanks for the help.
+assistant: Do you need anymore help?
+user: No, that is all. Thanks.
+assistant: Have a pleasant day.

@@ -1,0 +1,25 @@
+user: Search for me a hotel.
+assistant: In which city you want to be?
+user: In San Francisco will be okay.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 1 star hotel called Amsterdam Hostel San Francisco.
+user: Great.Some attractions you can find me.I would like a garden.
+tool(FindAttractions): ok n_results=8
+assistant: You may check out a Park called Fort Funston.
+user: This place is child-friendly?What is their phone number?
+assistant: 415-561-4700 is the phone number.No,this place is not good for kids.
+user: Nice.Do you have any other variants?
+assistant: You could go to a Park named Golden Gate Park.
+user: Great.I want to make a reservation for 1 room at the hotel that you have found.
+assistant: In what date will be the check in?
+user: The check in date I want to be on 9th of this month and I will be staying for five days.
+assistant: You need 1 room in San Francisco at a hotel in Amsterdam Hostel San Francisco on March 9th for 5 days.Is okay?
+user: Sure,okay.Smoking is allowed in this hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is booked.No, smoking is not allowed.
+user: Tell me their phone number and address.
+assistant: +1 415-673-3277 is the phone number and 749 Taylor Street is their address.
+user: Thank you for helping me.
+assistant: With something else I can help?
+user: No.Thank you for all.
+assistant: Have a great day.Bye!

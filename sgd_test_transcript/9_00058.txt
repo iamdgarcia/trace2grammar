@@ -1,0 +1,20 @@
+user: My friends want to go see a movie, can you help?
+assistant: First tell me the area you would like me to start my search in.
+user: Can you start your search by looking for Eccentric Story movies in the San Fran area?
+tool(FindMovies): ok n_results=1
+assistant: I see here that Once Upon a Time In Hollywood is playing.
+user: Once Upon a Time In Hollywood sounds great.
+assistant: Would you like to proceed with purchasing tickets?
+user: Yes, let's go ahead and purchase them now before they sell out.
+assistant: What show time are you interest in and how many tickets should I reserve?
+user: I will need three tickets for the 8:15 pm show if available.
+assistant: They offer both imax and 3d, which one would you prefer?
+user: I think we would all much prefer the 3d show.
+assistant: And what date would you like me to reserve the tickets for?
+user: The March 2nd show I think will be the best option.
+assistant: Now that I have everything, I just need you too confirm that I have all the details correct. You would like 3 tickets for the 8:15 pm, 3d movie titled Once Upon a Time In Hollywood, playing on March 2nd in San Francisco.
+user: Yes, all the information you have is correct. What theater would you suggest and how much will the tickets cost?
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets that I just purchased for you cost a total of $6 per head and are for the movie that will be playing at Four Star Theatre.
+user: Great, you've been an amazing help, thank you.
+assistant: My pleasure, have a great day!

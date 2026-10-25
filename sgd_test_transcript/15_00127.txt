@@ -1,0 +1,43 @@
+user: Please find me a salon.
+assistant: Sure. In what city?
+user: Find a salon in Cupertino.
+tool(FindProvider): ok n_results=6
+assistant: I found 6 nice salons that you might like to try. How about Great Clips in Cupertino?
+user: Can you find me the address and average rating?
+assistant: They are located at 20686 Homestead Road and have an average rating of 3.6.
+user: Yes, that sounds good.
+assistant: Would you like to make an appointment?
+user: No, maybe later. Can you find me a therapist in the area?
+assistant: You mean Cupertino? What kind of therapist do you need?
+user: Yes, I need a Psychologist in Cupertino.
+tool(FindProvider): ok n_results=1
+assistant: You might want to check out Center For Learning. They are a Psychologist located in Cupertino.
+user: Can you find me the address and phone number?
+assistant: They are located at 20823 Stevens Creek Boulevard # C3 and you can contact them at 408-973-9332.
+user: That sounds good.
+assistant: Would you like to book an appointment with the therapist?
+user: Yes, please arrange that. Try to make it for Wednesday next week.
+assistant: Do you have a preferred time for the appointment?
+user: Make the appointment for 17:30.
+assistant: Confirming that you want to book an appointment with Center For Learning for March 6th at 5:30 pm?
+user: Nope. Make the appointment for afternoon 12:30.
+assistant: Confirming that you want to book an appointment with Center For Learning at 12:30 pm?
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, but I was unable to book the appointment. Is there anything else I can help you with?
+user: Can you try again? Try making the appointment for March 13th.
+assistant: Confirming that you want to book an appointment with Center For Learning for March 13th at 12:30 pm?
+user: Yes, that works.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked and you should receive an email confirmation soon.
+user: I want to make an appointment at the salon from earlier.
+assistant: Sure. For what time?
+user: Schedule it for five in the evening.
+assistant: Confirming that you want to schedule an appointment at Great Clips for March 13th at 5 pm?
+user: Yes, that sounds good. Can you give me the phone number? Is the salon unisex?
+tool(BookAppointment): ok n_results=1
+assistant: The salon is unisex and you can contact them at 650-595-5855. Your appointment is confirmed.
+user: Thank you very much!
+assistant: Do you need anything else?
+user: No, thank you.
+assistant: My pleasure. Have a pleasant day.

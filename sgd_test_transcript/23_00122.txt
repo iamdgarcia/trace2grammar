@@ -1,0 +1,38 @@
+user: I need to find a train, can you help me search for one?
+assistant: Which cities are you departing from and going to?
+user: I will need tickets from NYC to Chi-town.
+assistant: What date are you leaving?
+user: I would like tickets for the 1st of March, please.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains that meet your travel criteria. There is a train departing at 7:30 am with a total ticket price of $114.
+user: What stations does the train leave from and arrive in?
+assistant: The train departs from Chicago Union Station, and arrives in Grand Central Station.
+user: Are there any other trains?
+assistant: There is a train departing at 8 am with a total ticket price of $118.
+user: That train sounds good. I would like to book a ticket for it.
+assistant: How many tickets would you like?
+user: I need one seat.
+assistant: Would you like travel insurance?
+user: I would like economy tickets, and yes, I would like trip insurance.
+assistant: You would like 1 Value ticket on the train from Chicago to New York leaving March 1st at 8 am, is that correct?
+user: Yes, that's right. What stations does that train depart from and arrive in?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were booked successfully. The train leaves from Chicago Union Station and arrives in Grand Central Station.
+user: I would also like to find something interesting to do while I am there.
+assistant: Is there a particular type of event you prefer?
+user: I like Broadway a lot.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events like that. Acting For Teens is taking place at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm.
+user: Where is that venue?
+assistant: The venue is located at 520 8th Ave. - Personal Valet.
+user: OK, that sounds great. Can you share that location?
+assistant: Who would you like to share it with?
+user: Please share it with Bryan.
+assistant: You would like to share the location 520 8th Ave. - Personal Valet Parking with Bryan, is that correct?
+user: No, I meant Donald.
+assistant: You would like to share the location 520 8th Ave. - Personal Valet Parking with Donald, is that correct?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you for all your help. That's all I need for now.
+assistant: Have a great day!

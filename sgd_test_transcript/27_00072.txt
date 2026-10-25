@@ -1,0 +1,38 @@
+user: Can you please help me find a bus?
+assistant: Sure, but first please tell me your departure location.
+user: I plan on departing from Los Angeles on the 1st of this month.
+assistant: Perfect. Can you please tell me your destination?
+user: Yes, I plan to go to Las Vegas.
+tool(FindBus): ok n_results=4
+assistant: There's 4 buses matching your criteria, out of which I recommend the one departing at 8:50 am, with tickets priced at $36.
+user: Is there anything else available? Forgot to mention, I'm looking for three tickets.
+tool(FindBus): ok n_results=3
+assistant: There are 3 other buses available, one at 10 am with tickets priced $39.
+user: Sounds perfect.
+assistant: Do you want me to purchase tickets for you for this bus?
+user: Not at the moment.
+assistant: Is there anything else I could do for you?
+user: Yes, please find me some child-friendly attractions at destination.
+tool(FindAttractions): ok n_results=8
+assistant: There's a nice Park you should definitely check out, the Floyd Lamb Park.
+user: Perfect. Now let's go back and buy the bus tickets.
+assistant: Can you please confirm that you want 3 tickets with no extra luggage for the bus leaving from Los Angeles to Las Vegas on March 1st at 10 am.
+user: Yes, that's correct. Please also tell me if the bus is direct, as well as its departure statiom.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've successfully booked your tickets. The bus is a direct one and it departs from North Hollywood Station.
+user: Can you please find me some nice three star hotels in the area?
+tool(SearchHotel): ok n_results=3
+assistant: There are 3 hotels matching your criteria, out of which I recommend a very nice 3 star hotel, the Best Western Plus Las Vegas West.
+user: Anything else available?
+assistant: There's also another 3 star hotel, the Hampton Inn Las Vegas/Summerlin.
+user: Can you please tell me the per night rate as well as the address for this hotel?
+assistant: The hotel is located at 7100 Cascade Valley Court and rooms are $60 per night.
+user: Anything else available? Forgot to mention - I need two rooms.
+tool(SearchHotel): ok n_results=3
+assistant: There's also another 3 star hotel, the Oasis At Gold Spike.
+user: Sounds perfect.
+assistant: Do you want me to place a reservation for you?
+user: No, not at the moment.
+assistant: Anything else I could help you with?
+user: No, that will be all for now. Thanks for everything!
+assistant: Have a great day!

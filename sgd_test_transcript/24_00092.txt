@@ -1,0 +1,23 @@
+user: I would like to see a movie in Vallejo.
+tool(FindMovies): ok n_results=3
+assistant: Would you like to see Good Boys, Hobbs and Shaw or hustlers?
+user: I am in the mood for an action film, so I choose Hobbs and Shaw. I would also like to reserve a table for a restaurant when I get there.
+assistant: For which restaurant?
+user: To eat at Mcdonald's.
+assistant: For what time?
+user: I want the reservation for 18:00
+assistant: You would like to book a table at Mcdonald's in Vallejo for 2 persons for March 1st at 6 pm?
+user: Yes, that would be great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made the reservation.
+user: Can we sit outdoors? Where is the restaurant located?
+assistant: It is on 2565 Springs Road and there is no outdoor seating.
+user: Thanks a lot. What time would be the movie be showing?
+tool(GetTimesForMovie): ok n_results=1
+assistant: It would be showing at 10 pm in Century Vallejo 14.
+user: That would be fine.
+assistant: You would like to get the tickets?
+user: Not right now.
+assistant: Would there be anything else?
+user: No. Thanks very much.
+assistant: Enjoy your day.

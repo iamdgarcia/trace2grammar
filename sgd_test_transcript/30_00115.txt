@@ -1,0 +1,41 @@
+user: Can you help me to find a salon?
+assistant: In which city are you trying to find one?
+user: Find me one in San Rafael.
+tool(FindProvider): ok n_results=2
+assistant: There are 2 salons that you might like in San Rafael and one of the nice ones is Best Coast Cuts.
+user: What is their address and average rating?
+assistant: They are located at 294 North San Pedro Road and have an average rating of 5.0.
+user: Thank you, that sounds good to me.
+assistant: Would you like me to get an appointment for you here?
+user: No now, maybe later. Can you help me to find a movie that I can watch at Century Regency?
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies based on your preferences and they are Brittany Runs a Marathon and The Farewell.
+user: Are there any other movies?
+tool(FindMovies): ok n_results=0
+assistant: Sorry, there are no other movies that match your requirements. Is there anything else I can help you with?
+user: Could you try again, this time find me movies that I can watch at Smith Rafael Film Center. I am okay with any type of show.
+tool(FindMovies): ok n_results=1
+assistant: There is just 1 movie and it is A Faithful Man.
+user: A Faithful Man is perfect! Thank you.
+assistant: Shall I get tickets for you?
+user: No, not now.
+assistant: Is there anything else I can do for you?
+user: Can you find me the showtime of the movie on March 8th?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is only 1 show of the movie at 6:30 pm in Smith Rafael Film Center.
+user: From what genre is the movie?
+assistant: It's a Drama.
+user: Thank you. Can you now go on and book an appointment at the salon that you found at 1 pm on that day?
+assistant: Please confirm that you would like to book an appointment at Best Coast Cuts for 1 pm on March 8th.
+user: Yes, that's correct. Please go ahead.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, the appointment could not be booked. Is there anything else I can do for you?
+user: Can you try to book the appointment at ten in the morning please?
+assistant: Sure. So you would like to book an appointment at Best Coast Cuts for 10 am on March 8th. Is that right?
+user: Yes, that's correct. Can you get me their contact number? Is it a unisex salon?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. It is a unisex salon and their phone number is 415-250-4370.
+user: Thanks a lot!
+assistant: What else can I do for you today?
+user: That'll be all. Thank you very much for the assistance.
+assistant: Have a great day!

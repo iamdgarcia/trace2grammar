@@ -1,0 +1,27 @@
+user: I have to make a payment
+assistant: How much is the payment? Who is the beneficiary? Do you transfer money from the app balance or debit card?
+user: 117 dollars to Tom, from my in-app balance. Thank you.
+assistant: You want to transfer $117 for Tom from your app balance, with a visible transaction to the public. Do you confirm?
+user: No, I prefer a private transfer form my saving account
+assistant: A private transaction from your debit card. Is it correct?
+user: Yes, It's correct, thanks
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been successful!
+user: Thank you. I need to request a payment
+assistant: How much is the payment?
+user: One hundred and twenty dollars, please
+assistant: Who is the payment for?
+user: The name of the contact is Jerry
+assistant: $120 to Jerry, with a transaction visible to the public: do you confirm?
+user: Yes, I confirm.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment has been made
+user: Now I want to make a paymento to Wilson, from my JCB
+assistant: How much is the transaction?
+user: I need to transfer 125 dollars
+assistant: $125 to Wilson from your credit card, with a transaction visible to the public. Is it correct?
+user: Yes, It's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has taken place!
+user: Thank you, you were very helpful. That's all for now.
+assistant: I'm happy to help you. Bye!

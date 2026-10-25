@@ -1,0 +1,34 @@
+user: Can you help me find a salon?
+assistant: In which city are you trying to find a salon?
+user: Can you find me one in Sonoma?
+tool(FindProvider): ok n_results=3
+assistant: There are 3 salons that you might like in Sonoma and C C Beauty Salon is a nice one among them.
+user: Is it a unisex salon?
+assistant: No, it is not.
+user: Okay, thanks for that. Can you find me an Animation movie that I can watch at Sonoma Cinema? I'm not particular about the show type.
+tool(FindMovies): ok n_results=1
+assistant: There's just 1 movie based on your preferences and it is Toy Story 4.
+user: Toy Story 4 is perfect!
+assistant: Shall I get you tickets to the movie?
+user: No, not now.
+assistant: Is there anything else I can do for you?
+user: Can you find the show times for Saturday this week.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's only one show at 4:30 pm in Sonoma Cinema.
+user: Can you get me the price of the ticket and the address of the theater?
+assistant: The theater is at 200 Siesta Way #4451 and a ticket costs $11.
+user: Thank you. Sounds good to me.
+assistant: Is there anything else I can assist with?
+user: Can you book an appointment for me on this Saturday at the salon that you found?
+assistant: At what time would you like the appointment?
+user: Please check if something is available for afternoon 12:30.
+assistant: Please confirm that you would like to book an appointment at the C C Beauty Salon at 12:30 pm on March 2nd.
+user: Not quite. Can you make that afternoon 1?
+assistant: No problem. So, you would like an appointment at C C Beauty Salon at 1 pm, right?
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, the appointment could not be booked at C C Beauty Salon. Shall I try to book one at 12:30 pm on March 2nd?
+user: No, thank you.
+assistant: Is there anything else that I can do for you?
+user: No. Thanks a bunch!
+assistant: Have a great day!

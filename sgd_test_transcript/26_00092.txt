@@ -1,0 +1,22 @@
+user: Can you find me a train?
+assistant: Which city are you leaving from and going to? Are there specific dates that you want to travel?
+user: I am looking to leave next Monday, going from Anaheim to Sacramento, CA.
+tool(FindTrains): ok n_results=10
+assistant: I found a train departing at 6:50 am that costs $143 in total.
+user: That sounds good. I want to find something interesting to do there.
+assistant: Do you have any preferences on the type of event?
+user: I really like a musical performance.
+tool(FindEvents): ok n_results=6
+assistant: The Aftershock Festival is popular. It takes place at Discovery Park on March 5th starting at 5:30 pm.
+user: That sounds great.
+assistant: Do you want to buy tickets for the event?
+user: Not right now. Can you show me some attractions there? I'd like to visit a historical spot.
+tool(FindAttractions): ok n_results=1
+assistant: You can check out Old Sacramento Waterfront District. This is an historical landmark.
+user: What is there phone number? Would you say this place is kid-friendly?
+assistant: Yes, it is kid-friendly and their number is 916-970-5226.
+user: Okay, great. I would like to find a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available. There is a nice house located at 100 Capitol Mall that has a 4.4 rating.
+user: This house sounds great. That is all I need for now, thanks.
+assistant: It's been my pleasure to help. Good bye.

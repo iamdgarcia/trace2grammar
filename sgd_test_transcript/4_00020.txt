@@ -1,0 +1,18 @@
+user: I'm looking for a restaurant, can you help?
+assistant: Where would you like me to look and what kind of food would you prefer?
+user: Check in the San Jose area. I'd like to find a place that serves Diner style food.
+tool(FindRestaurants): ok n_results=10
+assistant: 71 Saint Peter is a nice diner style restaurant in San Jose.
+user: Great! can you make a reservation for one on Saturday this week?
+assistant: For what time?
+user: For lunch at 12 in the afternoon.
+assistant: To verify: You would like a reservation at 71 Saint Peter in San Jose for 1 person at 12 pm on March 2nd.
+user: On second thought, make it for Tuesday next week.
+assistant: So that would be a reservation at 71 Saint Peter on March 5th.
+user: Yes. Also see if they have outdoor seating and what their rating is.
+tool(ReserveRestaurant): ok n_results=1
+assistant: There user rating is around 4.0 and they do have outdoor seating. Your reservation has been made.
+user: Great! Thank you.
+assistant: Is there anything else I can help you with?
+user: No, thank you. I'm good for now.
+assistant: Have a wonderful day!

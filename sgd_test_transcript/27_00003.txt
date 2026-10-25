@@ -1,0 +1,24 @@
+user: Can you show me some child-friendly attractions to visit?
+assistant: What location should I search?
+user: Find something in San Francisco, preferably without an entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you might like. How about Alcatraz? It is a Historical Landmark.
+user: Sounds great. I'd like to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies that you may like. How about Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: Brittany Runs a Marathon would be perfect.
+assistant: Do you want to purchase tickets?
+user: No, not right now.
+assistant: Is there anything else that I can help you with?
+user: Can you find me some good movies online?
+assistant: What genre do you prefer?
+user: I like Scary movies.
+tool(FindMovies): ok n_results=6
+assistant: I found 6 movies that you may like. How about 47 Meters Down: Uncaged, In Fabric, or Midsommar?
+user: Midsommar sounds great. I'd like to watch it with French subtitles.
+assistant: Confirming that you want to watch Midsommar with French subtitles?
+user: Yes, please. Who stars in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Bjorn Andresen starred in this movie. I have started playing the movie.
+user: Thank you. That's all I need.
+assistant: You're welcome. Have a good day!

@@ -1,0 +1,31 @@
+user: I need a rental car.
+assistant: Can you give me your pick up and drop off dates? Also, can you give me your pick up time?
+user: I need it from the 13th of this month until the 14th. I want to pick it up at twelve in the afternoon.
+assistant: What is your pick up location?
+user: I'm looking for a rental in Philadelphia.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars for you. How about a nice Alfa Romeo Stelvio SUV? It is available at Intercity Terminal.
+user: How much does it cost?
+assistant: It will cost you $38.00 per day.
+user: Did you find anything else?
+assistant: How about a nice Dodge Charger Sedan? It is available at the 30th Street Station.
+user: For how much?
+assistant: It will cost you $32.00 per day.
+user: Sounds good. Find me a house with a 4.3 or higher rating. I need laundry service and rooms for 3 people.
+tool(SearchHouse): ok n_results=9
+assistant: I found 9 houses available. How about a nice house located at 1 Logan Square? It has a rating of 4.3.
+user: House sounds great.
+assistant: Would you like to make a reservation?
+user: No, not right now.
+assistant: Is there anything else I can help you with?
+user: Yes, I want to reserve that rental car.
+assistant: Would you like to add insurance?
+user: Yes, I want insurance.
+assistant: Confirming that you will be picking up a Sedan rental car on March 13th at 12 pm at the 30th Street Station. You will be dropping the rental off on March 14th. Is this correct?
+user: Yes, sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been reserved.
+user: Thank you for your help.
+assistant: Do you need help with anything else?
+user: No, thank you.
+assistant: You're welcome. Have a good day!

@@ -1,0 +1,14 @@
+user: My car will be in the shop for a while. I need to get a rental car on March 14th around 2 o"clock in the afternoon.
+assistant: I can help with that. When and where do you want to rent your car?
+user: I'll pick it up on the 13th from LAX.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a lovely Audi A8 Sedan that is available at LAX International Airport.
+user: Oh an Audi? That's a great car. Please reserve that car for me.
+assistant: Do you want rental insurance along with your car rental?
+user: No thanks. I'll just use my own insurance.
+assistant: These are your rental details: On March 13th, you will pick up a Sedan from the LAX International Airport at 2 pm. You will be returning the car on March 14th. Do these details sound correct to you?
+user: Yeah that all sounds right, but how much will it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved and will cost you $38.00 per day to rent.
+user: Okay thank you. That should do it for now.
+assistant: Please enjoy the rest of your evening.

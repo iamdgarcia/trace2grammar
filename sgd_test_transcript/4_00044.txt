@@ -1,0 +1,18 @@
+user: Hey, do you think you could help me find a nice place to eat?
+assistant: Sure thing. What city would you like me to search in? Do you have any particular type of food you were thinking about?
+user: Yeah, I could really go for some Punjabi right now. Can you find me something in San Carlos?
+tool(FindRestaurants): ok n_results=2
+assistant: I hear Kamakshi's Kitchen Restaurant is really nice. They have a location right in San Carlos
+user: Awesome! That sounds great.
+assistant: Would you like to reserve a table there?
+user: Yes I would. Can you reserve a table for three at eleven AM on the 13th of this month?
+assistant: I will see what I can do but first please confirm the following for me. You are booking a table for 3 at Kamakshi's Kitchen Restaurant in San Carlos for 11 am on March 13th. Is this correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Okay your reservation was a success. Anything else?
+user: Yeah, can you get their address for me?
+assistant: No problem. Their address is 601 Old County Road.
+user: Okay, thank you so much!
+assistant: Anything else I can help you with today?
+user: No that is all. Thank you very much.
+assistant: My pleasure, have a good day.

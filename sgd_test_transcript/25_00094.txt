@@ -1,0 +1,36 @@
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm called Get up that is set for 8:30 am.
+user: Ok, perfect.
+assistant: Would you like to set an additional alarm?
+user: No, not right now but I do want to find a restuarant.
+assistant: I can help with that. What type of food would you like and in which city?
+user: I would like to find a Szcheuan restaurant in San Jose please.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants in San Jose that match your search. How about Chef Li?
+user: Does that restaurant offer vegetarian options and can yu give me their contact number?
+assistant: The restaurant does offer vegetarian options and can be reached at 408-377-8310.
+user: That sounds great.
+assistant: Is there something else I can do for you?
+user: Yes, I need to rent a car in the area.
+assistant: What day should the car rental begin?
+user: I need the car beginning on the 4th.
+assistant: Alright, what type of car do you prefer and when would you like to pick it up? Also, would you like insurance for the car?
+user: No, I don't need insurance. I would prefer a hatchback that I could pick up at 10:30 am.
+assistant: Where would you like to pick up the car and when will you return it?
+user: I will return the car on the 9th of March and would like to pick it up at Union Plaza.
+assistant: Please confirm you would like to reserve a hatchback car with no insurance from March 4th to March 9th and will pick it up at 10:30 am from Union Plaza.
+user: Yes, please make the reservation.
+tool(ReserveCar): ok n_results=1
+assistant: Your car reservation has been confirmed.
+user: How much will I be charged for each day?
+assistant: The car reservation is $23.00 per day.
+user: What type of vehicle is it?
+assistant: The car is a Fiat Panda.
+user: Great! Can you share the address of Union Plaza with Billy please?
+assistant: Yu would like to share the Union PLaza location with Billy, is that correct?
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for your help, that's all I needed.
+assistant: Enjoy your trip!

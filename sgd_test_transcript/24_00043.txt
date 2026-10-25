@@ -1,0 +1,21 @@
+user: I need to find a flight on the 10th.
+assistant: What is your destination?
+user: I need 3 tickets to NY.
+assistant: What is your departure city?
+user: Departing from Washington.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 options. Is American Airlines okay? There is a 9:25 pm flight for a total of $84.
+user: Sounds okay but can you check a train instead?
+assistant: Would you be travelling on March 10th?
+user: Actually, check for March 6th.
+tool(FindTrains): ok n_results=6
+assistant: There is a train departing at 6:40 am for $147.
+user: Please book conditionally refundable train tickets.
+assistant: Will you need travel insurance?
+user: Yes, I need trip insurance.
+assistant: Please confirm you want 3 value train tickets departing from Washington to New York leaving on March 6th at 6:40 am.
+user: Yes, that's right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were successfully booked.
+user: Thanks, that's all for now.
+assistant: You're welcome. Have a great day.

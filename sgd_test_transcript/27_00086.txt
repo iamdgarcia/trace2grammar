@@ -1,0 +1,37 @@
+user: Could you assist me in looking for a bus?
+assistant: What place will you depart from, and what time do you intend to depart? What location are you headed to?
+user: I am departing from Long Beach, and I intend to depart on March 12th to head to Fresno.
+tool(FindBus): ok n_results=5
+assistant: I discovered 5 buses for you; what do you think about a bus leaving at 8:10 am, costing $39?
+user: What station does it leave from, and where does it come to?
+assistant: It leaves from Downtown Station, and comes to 2660 Tulare St.
+user: Could you search for something else? I'd like a direct bus for three people
+tool(FindBus): ok n_results=5
+assistant: What about the bus leaving at 11:20 am that has a $37 price?
+user: That's fine with me.
+assistant: Would you like to purchase tickets for the bus?
+user: Not now, but perhaps later.
+assistant: Could I assist you with something else?
+user: Could you tell me about several attractions here? I'd like an amusement park that does not have an entrance fee.
+tool(FindAttractions): ok n_results=2
+assistant: There are 2 attractions that may interest you; you ought to check out Blackbeard's family entertainment, which is a theme park.
+user: Can you tell me their contact number?
+assistant: Their contact number is 559-292-9000.
+user: Do you think this location is friendly to children?
+assistant: Nope, this location is not child friendly.
+user: Cool; could you think of some other attractions?
+assistant: You ought to try Island Waterpark, a theme park.
+user: Alright, fine. Can you buy the bus ticket you recently discovered?
+assistant: Please verify the following information: you'd like a ticket for 3 on a bus departing from Long Beach to Fresno on March 12th, 11:20 am. You do not possess extra baggage.
+user: Nope; I do possess extra baggage to carry.
+assistant: Please verify the following information: it is for 3 people, and you possess extraneous baggage to carry on the bus.
+user: Yeah, that's fine with me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been verified.
+user: What place does it leave from?
+assistant: It leaves from Downtown Station.
+user: Thank you for your assistance. Could you search for hotels in that location as well?
+tool(SearchHotel): ok n_results=4
+assistant: There is a 3 star hotel known as Doubletree By Hilton Hotel Fresno Convention Center.
+user: That's fine. That is all.
+assistant: Farewell, and have a pleasant afternoon!

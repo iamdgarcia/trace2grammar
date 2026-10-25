@@ -1,0 +1,20 @@
+user: Are you able to help me find a car to rent in Warsaw? I will need the rental from the 10th until the 11th of this month.
+assistant: Is there a certain time you would like to get the rental?
+user: Yes. In the afternoon 12 would be great.
+tool(GetCarsAvailable): ok n_results=7
+assistant: A Sedan from the Buick Regal Sportback line can be rented from Warsaw Chopin Airport.
+user: Do you know what the daily charge will be?
+assistant: Yes. The car is rented at a daily rate of $33.00.
+user: Are there other choices available?
+assistant: Warsaw Chopin Airport also has a Hatchback from the Mazda 3 line available to rent.
+user: How much does the Hatchback cost per day?
+assistant: The daily price for the Hatchback is $29.00.
+user: That car is a good choice. I would like you to make a reservation for me.
+assistant: Would you like insurance added to the rental?
+user: Insurance is not necessary but thanks.
+assistant: I understand you would like to pick up the rental on March 10th at 12 pm from Warsaw Chopin Airport. You prefer the Hatchback which will be needed until March 11th.
+user: That is exactly right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car reservation has been completed.
+user: I don't need anything else right now. Thanks again.
+assistant: No problem. Take it easy.

@@ -1,0 +1,32 @@
+user: Hey, can you find me some attractions I could go to?
+assistant: In which city?
+user: In New York City please.
+tool(FindAttractions): ok n_results=10
+assistant: The 9/11 Tribute Museum is a great Museum in New York.
+user: Is it child friendly?
+assistant: Yes, it's a great place for kids.
+user: What's their phone number? Do they charge an entrance fee?
+assistant: They do charge an entrance fee and their number is 866-737-1184.
+user: Good to know. Any other museum I could go to?
+tool(FindAttractions): ok n_results=9
+assistant: There are other 9. Another great Museum is the American Folk Art Museum.
+user: Any other one?
+assistant: The American Museum Of Natural History is also a great Museum.
+user: Good to know.
+assistant: Anything else I can do to help?
+user: I need to find a house I can stay in over there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses that may suit you. There's a great one at 100 Greenwich Street with a 4.4 rating.
+user: Seems like a great house.
+assistant: Should I make a reservation?
+user: Not now, thank you. Help me find 3 Economy tickets on a round trip flight going there, leaving on the 13th of this month.
+assistant: When would you like to go and from what city will you be departing from?
+user: I want to leave on the 2nd of March from Philadelphia.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flight options. There's an American Airlines one taking off at 1:20 pm and returning at 11:20 am. The ticket will cost you $101.
+user: When does the onward flight arrives there and at what time does the return flight gets here?
+assistant: The onward flight arrives there at 2:11 pm and the returning flight arrives at 12:11 pm.
+user: Sounds very good.
+assistant: Anything else I can help you with?
+user: No, thanks a lot.
+assistant: Have an amazing day.

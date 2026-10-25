@@ -1,0 +1,19 @@
+user: I need to see what the weather will be like in London, UK on the 12th of March
+tool(GetWeather): ok n_results=1
+assistant: It looks like it's gonna be 87 degrees with a 21 percent chance of it raining there
+user: Cool, now how windy and humid is it expected to be?
+assistant: It's expected to be around 32 percent humidity with a 2 mile per hour wind speed
+user: OK thanks for that
+assistant: What else can I do for you?
+user: I need a one way ticket there
+assistant: Where are you flying from? And are you leaving March 12th?
+user: I want to leave on the 11th from Seattle, WA
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I found 2 flights including an Alaska Airlines Flight at 7:05 am with a layover, it's $391
+user: Sounds good, can you find me a rental car
+assistant: When do you need it from? March 11th? March 12th? Also for how long and when are you picking it up?
+user: I I need tie from the 13th of this month at 10:15 am till the 14th of this month
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a nice Audi A8 Sedan type car you can get from Heathrow International Airport
+user: That's good for now, thanks!
+assistant: Sure, see you!

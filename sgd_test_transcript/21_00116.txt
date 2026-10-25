@@ -1,0 +1,35 @@
+user: I have some business in NYC. So can you find something interesting to do there after the business.
+assistant: What type of events are you looking for?
+user: Songs are my passion, that will do.
+tool(FindEvents): ok n_results=10
+assistant: Then you can really enjoy Abbi Jacobson, very famous. It is at Kaufmann Concert Hall on march 11th commencing at 7:30 pm.
+user: Oh, wonderful. Shall I get buses to reach there?
+assistant: Do you mean on March 11th? Where is your departing station?
+user: I will be leaving from Philly on 5th of this month.
+tool(FindBus): ok n_results=6
+assistant: You can avail of 6 buses. One is leaving at 9 am. The ticket fare is $23.
+user: That sounds great.
+assistant: Do you need tickets now?
+user: No, not now. Search for a round trip flight to go over there preferably American Airlines and in Economy class tickets.
+assistant: You are leaving on March 5th, no?
+user: I would be returning on 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: 1 flight available is American Airlines taking off at 7:25 am and it is a direct flight. the returning flight leaves at 11:20 am. you will cost $97.
+user: Found correct. Are there hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: 10 hotels are there matching your need. It is a 5 star one named 1 Hotel Brooklyn Bridge.
+user: Address and price please.
+assistant: It is at 60 Furman Street, Brooklyn and cost is $465 per night.
+user: Seems fine. thank you.
+assistant: Can I help you any more?
+user: Yes, get the tickets for the event found.
+assistant: You need 1 ticket?
+user: No 2 tickets please.
+assistant: Please confirm, you need 2 tickets for Abbi Jacobson on March 11th in New York.
+user: Fine, where is the venue and what is the cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: You got successful confirmation. the venue is 1395 Lexington Avenue and the cost of ticket is $60.
+user: Great help, thank you.
+assistant: Any more help.
+user: No, thank you.
+assistant: My pleasure, keep in touch.

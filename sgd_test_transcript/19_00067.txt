@@ -1,0 +1,27 @@
+user: I am planning to go for a short trip and I need a car for rent. can you help me to find the one?
+assistant: Yes, What is your required time to pick up the car and from where?
+user: Search for the one from Washington for the pick up time at 3 pm.
+assistant: I want to know your planned dates of travel, so that I can search for the suitable car on particular dates required by you.
+user: Okay, please find the one from the 13th to 14th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about your opinion on a ride through SUV Alfa Romeo Stelvio Car? and the same was available for pick up at Union Station.
+user: What about the cost of rent per day? Is this much expensive?
+assistant: It will come around $37.00 per day.
+user: Okay, nice. I can prefer this car.
+assistant: That's nice. Shall I book it now?
+user: No, thanks. May be later I think.
+assistant: How can I help you further?
+user: Yes, I need one more help. Search for a bus from Philly on the 7th and I want to book 3 tickets in it.
+tool(FindBus): ok n_results=8
+assistant: Many buses available and what about the one which will leave at 6:20 am and the cost per ticket will come around $28.
+user: I think this is okay to me. Thanks.
+assistant: How about the tickets? Shall I book the same now?
+user: No, we will do it later.
+assistant: What else you want now?
+user: I want to search for an one-way flight and I need your help to find the suitable one.
+assistant: What is your expected leaving date? Do you want me to try it for March 7th or March 13th?
+user: I am planning to start my travel on 2nd of March and you can search for the one on that date.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Got 4 flight details. One of them is an onward flight belongs to American Airlines which will take off at 5:45 pm for the ticket cost $236. Do you want this flight to book?
+user: Yes, that is okay and we will discuss about the booking later. Thanks and that's all for now.
+assistant: Have a great day.

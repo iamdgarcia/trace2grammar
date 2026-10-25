@@ -1,0 +1,34 @@
+user: I want to make a payment.
+assistant: What is the name of the contact, from which account should I transfer from, and for what amount?
+user: The name is Victoria. Send $3 from my master card.
+assistant: Please confirm you're making a public transaction for $3 from your credit card with Victoria.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successful and the recipient should see the money soon.
+user: Can you help me find two seats on a train now?
+assistant: Which city are you leaving from?
+user: I'd like to leave from Washington in any fare class.
+assistant: On which day did you want to travel?
+user: I'd like to travel on 5th of March.
+assistant: Which city is your planned destination?
+user: I am going to NYC.
+tool(FindTrains): ok n_results=9
+assistant: I found a train leaving at 6:20 am for $128.
+user: That works. How is the weather looking next Thursday in NYC?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 65 degrees F with a 15 % chance of rain.
+user: Sure, sounds good. Could you help me book tickets on the train you found?
+assistant: Did you need travel insurance?
+user: I would like trip insurance.
+assistant: Please confirm you're booking a Value ticket with trip insurance for 2 on the train from Washington to New York on March 5th at 6:20 am.
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your booking has been confirmed.
+user: What is the name of the departure station?
+assistant: The train will leave from Union Station.
+user: What is the name of the destination station?
+assistant: The train will arrive at Grand Central Station.
+user: Thank you. You were very helpful.
+assistant: Did you need help with anything else?
+user: No, but thank you again, you were very helpful.
+assistant: See you soon.

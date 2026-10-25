@@ -1,0 +1,31 @@
+user: I need to find a train please.
+assistant: When will you be leaving? From which city?
+user: I need tickets for Anaheim, CA on the 2nd of this month.
+assistant: Which city will you be going to?
+user: I want 1 economy ticket to Phoenix.
+tool(FindTrains): ok n_results=4
+assistant: There are 4 trains that would, one is 6:30 am and costs $123.
+user: Sounds great thank you.
+assistant: Do you want to book tickets?
+user: Not at this time thanks.
+assistant: Can I do anything more for you?
+user: I need an interesting event on that day.
+assistant: Do you like music, Theater, or anything else?
+user: I really enjoy musical performance.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events, one is Bad Suns at the Van Buren on March 2nd on 4:30 pm.
+user: What else can you find?
+assistant: Dodie is popular and will be at the Van Buren on March 4th at 7 pm.
+user: Where is it located, and how much will it be?
+assistant: Tickets are $20 and the venue is at 401 WEst Van Buren Street.
+user: SOunds great, can you find some attractions?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10, one is a museum called Arizona Capitol Museum.
+user: Great I need a house as well.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10, one is a 4.6 at 10 East Thomas Road.
+user: Are there other houses rated 4.4 of higher?
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 and, one located at 15 East Monroe Street and is 4.4.
+user: Thanks that is all I needed.
+assistant: My pleasure, have a great day.

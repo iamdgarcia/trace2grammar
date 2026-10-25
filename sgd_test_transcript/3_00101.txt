@@ -1,0 +1,11 @@
+user: I am looking to get a rental car
+assistant: At which time do you want to pick up the car? Also when do you want to start the car rental?
+user: I want to pick up it up today at 19:15.
+assistant: From where do you want to rent the car from and also until when do you want the car?
+user: I am looking for cars in Chi-town and I want it till 4th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice car available at Chicago Union Station and it is a SUV of Alfa Romeo Stelvio.
+user: How much will it cost per day?
+assistant: It will cost you $35.00 per day.
+user: It all sounds good. That's all I needed.
+assistant: Have a nice day.

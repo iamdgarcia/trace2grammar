@@ -1,0 +1,19 @@
+user: Hi, could you find me a therapist please?
+assistant: Any specific therapist and location you are looking at?
+user: A Psychologist in Santa Rosa will do.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 Psychologist you may like in Santa Rosa, how about Bert Epstein?
+user: Sounds great! What is the weather there on March 1st?
+tool(GetWeather): ok n_results=1
+assistant: There average temperature is 83 degrees Fahrenheit with a 6 percent chance of rain.
+user: Perfect. Could you get me an appointment with the therapist on that day?
+assistant: Sure, and what time will you be visiting?
+user: Likely at 1:15 in the afternoon.
+assistant: Please confirm your appointment with Bert Epstein at 1:15 pm on March 1st.
+user: Sure, may I have their contact number and address please?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made, and you should get a email confirmation soon. You can visit them at 2455 Bennett Valley Road and call them at 707-242-1989.
+user: I see, thanks! Appreciate your help.
+assistant: Do you need any other assistance?
+user: No, that is all. Thank you!
+assistant: No worries, have a great day ahead!

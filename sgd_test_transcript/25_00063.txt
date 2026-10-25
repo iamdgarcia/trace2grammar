@@ -1,0 +1,28 @@
+user: Hey. Show me my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: You currently have 2 alarms set. There is one set for 9 am with the name Get up.
+user: What's the other alarm?
+assistant: It's for 4:30 pm with the name Busy.
+user: That's what I thought. Can you find me a restaurant to eat at?
+assistant: Certainly. But first i'll need to know in which location should I look, and would you prefer any particular type of food?
+user: Yes. Find me someplace serving Peruvian cuisine in Burlingame.
+tool(FindRestaurants): ok n_results=1
+assistant: I've found 1 restaurant that matches your criteria. How about Limon Rotisserie Burlingame in Burlingame?
+user: Yes I've heard of that place. Can you secure me a rental ride there?
+assistant: I can, but first i'll need a bit of information. Where would you like to pick the car up, and how long will you want it for? Also would you like a Sedan, SUV, or something else?
+user: A Hatchback is always nice. Let me pick it up at the Dulles International Airport, and I'll need it till the 8th of this month.
+assistant: Would you like to add insurance? Also when would you like to pick the car up?
+user: I don't need any insurance, and I want to pick it up at half past 9 in the morning on the 5th of this month.
+assistant: You would like to reserve a hatchback rental car from Dulles International Airport from March 5th at 9:30 am until March 8th. Is that correct?
+user: Yes that is correct. Does it say the cars name, or how much the car will cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved for you. The name of the car is a Fiat Panda and it costs $26.00 per day.
+user: Great, thank you for the help. Can you share the location with Grace?
+assistant: Which address would you like to share? 1101 Burlingame Avenue, Dulles International Airport, or something else?
+user: Share Dulles International Airport with her so she knows where to pick the car up.
+assistant: You would like to share the location Dulles International Airport with Grace. Is that correct?
+user: Yes that is correct, go for it.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Awesome. You've been super helpful and I appreciate.
+assistant: I'm always glad to help out. Let me know if you need anything else and I'll be here.

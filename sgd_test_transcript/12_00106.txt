@@ -1,0 +1,35 @@
+user: Is there something interesting I can do on the 11th?
+assistant: Do you have a city in mind that you want to look for interesting events?
+user: Yeah, find events or something around ATL.
+assistant: What about a specific category, do you like music, theater, or another kind of event?
+user: Music, I really like Music events so that would be preferred.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like, how about Adam Ant playing at the Atlanta Symphony Orchestra on March 11th at 5 pm?
+user: What about the location, where is the venue located?
+assistant: Address for the venue is 1280 Peachtree Street Northeast.
+user: Okay, what will it cost to purchase one ticket?
+assistant: One ticket will cost $25 for this venue.
+user: Sounds good, but I will like to hear more about another type of event.
+assistant: How about Benjamin Francis Leftwich, playing at Vinyl on March 11th at 6 pm?
+user: All right, that event sounds great, thanks.
+assistant: Would you like to purchase tickets to this event?
+user: Some other time perhaps, actually I need to request a private payment of eleven dollars from somebody.
+assistant: Can you tell me the name of the person of the payment request?
+user: I want to request a payment from Jerry.
+assistant: There will be a private transaction with Jerry for $11, is that acceptable?
+user: Everything seems to be in order, please complete it.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was finalized successfully.
+user: Okay, now I am ready to buy tickets.
+assistant: What amount of tickets are you buying for the event?
+user: Please buy three tickets for me.
+assistant: 3 tickets will be booked for Benjamin Francis Leftwich, playing in Atlanta on March 11th correct?
+user: That all works for me, what was the ticket cost for this event?
+tool(BuyEventTickets): ok n_results=1
+assistant: One ticket cost $50, and the reservation was made successfully, hope you enjoy the event!
+user: What is the address for this event?
+assistant: Address for this venue is 1374 West Peachtree Street Northwest.
+user: Thank you for all your help, I really appreciate it.
+assistant: Anything else I can be of service for today?
+user: Not at the moment, thanks a lot for your help.
+assistant: Understood, enjoy the rest of your day.

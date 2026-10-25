@@ -1,0 +1,41 @@
+user: Can you help me buy bus tickets?
+assistant: Where are you leaving from and what time would you prefer to leave? How many tickets will you need?
+user: I will need 1 ticket leaving from San Francisco by 10:45.
+assistant: Where are you going, and what date do you plan to travel?
+user: I am planning to leave for Sacramento on the 11th of March.
+assistant: You would like 1 ticket on the bus from Sacramento to San Francisco, leaving on March 11th at 10:45 am, without extra luggage, is that correct?
+user: Yes, that's correct. How much is the ticket?
+tool(BuyBusTicket): ok n_results=0
+assistant: I'm sorry, I was not able to book a seat on that bus trip. Is there another ticket I can help you purchase?
+user: Yes, let's try again. Check if there is a bus going to Anaheim, CA on the 1st of this month.
+assistant: You would like 1 ticket, without extra luggage, on the bus from San Francisco to Anaheim, leaving on March 1st at 10:45 am, is that correct?
+user: Yes, that's fine. What station does it arrive at? How many stops does this bus make?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus arrives at Anaheim bus station. It is a direct bus. I'm sorry, I was not able to complete the ticket purchase for that time. Would you like to book the 10:30 am departure for $45?
+user: Yes, that's ok.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket purchase is successful.
+user: Thank you very much for your help. Can you find me a rental car there? I will need it until next Friday. Any type of car is fine.
+assistant: Are you planning to pick it up from Anaheim? What time would you like to pick up the rental car?
+user: Yes, that's the right city. I would like to pick it up at morning 8:30.
+assistant: Are you planning to rent the car from March 1st?
+user: I will need it starting this Sunday. I would rather pick it up in morning 11.
+tool(GetCarsAvailable): ok n_results=9
+assistant: There is a Buick Regal Sportback Sedan available at John Wayne Airport.
+user: How much does it cost per day?
+assistant: The price is $31.00 per day.
+user: OK, that sounds fine.
+assistant: Would you like to book the car?
+user: Yes, I would like to rent the car.
+assistant: Would you like to add insurance?
+user: No, I don't need to add it, I already have it.
+assistant: You would like to pick up a rental Sedan without extra insurance from John Wayne Airport at 11 am on March 3rd and return it March 8th, is that correct?
+user: No, I made a mistake. I want to buy the insurance.
+assistant: You would like to rent the Sedan with insurance, is this correct?
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been reserved.
+user: Thank you for your help.
+assistant: Is there anything else I can help you with?
+user: No, thank you, I'm all set.
+assistant: Have a great day!

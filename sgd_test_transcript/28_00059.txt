@@ -1,0 +1,24 @@
+user: Can you please help me find a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: Sure! Would you like Steel Magnolias, rated at 70 out of 100?
+user: Sounds perfect. Let's now find an Italian restaurant in the area. Please search for something not very costly.
+assistant: Sure, in which area?
+user: Search in Napa, please.
+tool(FindRestaurants): ok n_results=7
+assistant: In Napa there's Allegria, which matches your criteria.
+user: Perfect. Please tell me their address and phone number.
+assistant: They're located at 1026 1st Street and you can reach them at 707-254-8006.
+user: Perfect. Now let's try to book a table there.
+assistant: OK, for what time do you want your reservation.
+user: I'd like a reservation for 1:45 pm.
+assistant: Can you please confirm that you want me to book a table for 2 at Allegria in Napa, at 1:45 pm on March 1st?
+user: Yes, that's correct.
+tool(ReserveRestaurant): ok n_results=0
+assistant: Unfortunately I wasn't able to book your table. Is there anything else I could do for you?
+user: Let's retry with a reservation at evening 7.
+assistant: Can you please confirm that you want me to book a table for 2 at Allegria in Napa, at 7 pm on March 1st?
+user: Yes, that's correct. Please also tell me their rating as well as if they have vegetarian options.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've successfully placed your reservation. The restaurant is rated at 4.3 but unfortunately they do not have vegetarian options.
+user: OK, thanks. That will be all for now.
+assistant: My pleasure. Have a nice day!

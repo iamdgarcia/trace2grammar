@@ -1,0 +1,27 @@
+user: i didn't do my hair cut for a long time.will you find me a unisex salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salon as per your need. What about atelier salon willow Glen which is a nice salon in San Jose.
+user: Will you find me a different salon?
+assistant: what about Barba & Co. San jose which is a nice salon in San jose.
+user: Ok that sounds good. I need to watch a movie over there. will you find a good non-fiction movies at 3 Below Theaters and Lounge?
+tool(FindMovies): ok n_results=1
+assistant: How about Fiddler: A Miracle of Miracles?
+user: Fiddler: A Miracle of Miracles is perfect . At what time will i able to watch it?
+assistant: whether do you need to watch it on March 4th?
+user: ok that sounds good to me. I need to watch a regular show.
+tool(GetTimesForMovie): ok n_results=1
+assistant: i found 1 showtimes for the movie. The show is at 4:30 pm in 3 Below THeaters and Lounge.
+user: what is the cost of the ticket ? what is the address of the theater?
+assistant: The theatre's address is 288 south 2nd street. The price is $6 per person.
+user: that's great. I need to book an appointment at the salon which you found earlier on that day. I need the appointment to fix at quarter to 3 in the afternoon.
+assistant: please check and confirm the following details. The name of the hair stylist is Barba & Co. San Jose, the appointment timing is at 2:45 pm and the appointment is on March 4th.
+user: ok that suits for me.
+tool(BookAppointment): ok n_results=1
+assistant: sorry i could not able to book the appointment. Barba & Co. San jose is a nice salon. How about an appointment on March 4th at 3 pm?
+user: Ok that suits for me.
+tool(BookAppointment): ok n_results=1
+assistant: Appointment is confirmed successfully.
+user: what is its contact number?
+assistant: the phone number is 669-258-9601.
+user: thanks a lot, that's all i need.
+assistant: have a wonderful day.

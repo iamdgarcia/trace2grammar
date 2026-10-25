@@ -1,0 +1,30 @@
+user: Can you help me find a salon?
+assistant: In which city are you looking for a salon?
+user: Find me one in Sunnyvale.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons based on your preferences and A+ Haircuts For Men is a nice one in Sunnyvale.
+user: Can you get me their contact number?
+assistant: Their phone number is 408-743-5780.
+user: Can you find me a unisex salon in San Rafael?
+tool(FindProvider): ok n_results=2
+assistant: There are 2 salons in San Rafael and Best Coast Cuts is a nice one.
+user: Thank you. Can you find me a regular show of a movie of Play genre that I can watch at Smith Rafael Film Center?
+tool(FindMovies): ok n_results=1
+assistant: There is only 1 movie based on your preferences and it is A Faithful Man.
+user: A Faithful Man is perfect!
+assistant: Shall I get you tickets to the movie?
+user: No, not now. At What time can I watch it on the 8th of March?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is only 1 showtime on that date and it is at 6:30 pm in Smith Rafael Film Center.
+user: Thank you. Can you book an appointment for me at the salon that you found at 5:45 in the evening on that day?
+assistant: Please confirm that you want to book an appointment at 5:45 pm on March 8th at Best Coast Cuts.
+user: Yes, that's correct. Can you get me their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, the appointment could not be booked. Is there anything else I can do for you?
+user: Can you try to book it again at quarter past 12 in the afternoon?
+assistant: Please confirm that you want to book an appointment at 12:15 pm on March 8th at Best Coast Cuts.
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully.
+user: Thank you very much. That's all I need for now.
+assistant: Have a great day!

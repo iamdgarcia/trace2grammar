@@ -1,0 +1,34 @@
+user: I need a round tripl flight from LAX to Paris returning on 14th of this month
+assistant: What is the departure date?
+user: I want to leave on 10th of this month
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There's an American Airlines flight at 3:30 pm with a layover, the returning flight takes off at 7:15 am. It costs $513 in total
+user: What time does the flight arrive?
+assistant: It arrives at 1:48 pm
+user: I want one ticket in economy class: what flights are available?
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There's a United Airlines flight at 8 pm with layover, with return at 6:05 am. The ticket costs $517
+user: What time is the landing scheduled? What time does the return flight arrive?
+assistant: The onward flight is scheduled for 6:18 pm. The arrival of the return flight is scheduled for the 5:15 pm.
+user: Good! Now I want to find a house for one people there, with laundry service. I prefer a rating of 3.9 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There's a house with rating 3.9 at 1 Rue Bayard, 75008
+user: Are there houses with rating 4.4 or higher?
+tool(SearchHouse): ok n_results=10
+assistant: Sure! There's a house with rating 4.4 at 10 Rue de Passy, 75016
+user: Very well! It's fine for me!
+assistant: Do you want to book this house?
+user: Yes, I want to book there from 10th of this month to 14th of this month
+assistant: A house for 1 people in Paris, from March 10th till March 14th. Do you confirm?
+user: No, I prefer to check in on 12th of March and check out on 13th of March. Thanks
+assistant: Please confirm: check in on March 12th and check out on March 13th
+user: Yes, It's correct! How much does it cost in all? What is the house phone number?
+tool(BookHouse): ok n_results=1
+assistant: It costs $315 in total. The phone number is +33 1 43 87 10 10. The reservation has been made!
+user: Can you find attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions, for example there's American Church in Paris, a Place of Worship
+user: Ok, I like it!
+assistant: You need anything else?
+user: No, It's all for now. Thank you!
+assistant: Have a good time!

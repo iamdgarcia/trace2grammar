@@ -1,0 +1,21 @@
+user: Is there a movie you can recommend for me to watch?
+assistant: Can you tell me your current location?
+user: I am in Union City, so please search for movies in this city.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies you may be interested in, what about watching Angel Has Fallen, Hustlers, or IT Chapter Two?
+user: I think Angel Has Fallen sounds perfect, also please book me a table at Hong Kong in that area for 1 person.
+assistant: At what time do you wish to book a table to that establishment?
+user: The reservation should be made at evening 7.
+assistant: A reservation will be made at 7 pm on March 1st at Hong Kong Restaurant in Union City for 1, is that accurate?
+user: That is all true, thank you.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was made successfully.
+user: Great, what time can I watch the movie you found in that area?
+tool(GetTimesForMovie): ok n_results=1
+assistant: For that day, there is one showing at 10:30 pm at Century 25 Union Landing and XD.
+user: Can you tell me the address of the theater?
+assistant: It is located at 32100 Union Landing Boulevard.
+user: All right, that sounds good, thanks for the information.
+assistant: Shall I purchase the movie tickets for you?
+user: Not right now, I don't want to make the purchase at the moment. Thanks for all the help, that is all.
+assistant: Your welcome, have a good day.

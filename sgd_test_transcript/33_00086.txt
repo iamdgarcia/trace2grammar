@@ -1,0 +1,19 @@
+user: Will you show me some attractions to visit. I would prefer something child-friendly.
+assistant: Where can I search for attractions in?
+user: I would like to look for a park without an entry fee in Atlanta, GA.
+tool(FindAttractions): ok n_results=2
+assistant: Please check out Atlanta Botanical Garden a Park.
+user: Okay that is good. I'd like to find a house to stay in there rated 4.2 or higher with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice home at 101 Andrew Young International Boulevard Northwest rated 4.2.
+user: Could you give me a contact number for the place?
+assistant: The phone is +1 404-524-5555.
+user: The house is great. I want a round trip flight to get there.
+assistant: What day would you like to take the return flight? which date do you want to travel and which city do you wish to depart from?
+user: I would like to start travelling the 10th of March returning on the 13th looking for flights from Berlin.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I have 2 flights for you. Do you wish to fly with American Airlines taking off 1:35 am being a connecting flight. The return flight is taking off 3:45 pm costing $643 per ticket.
+user: That sounds nice.
+assistant: Can I assist you with anything else?
+user: No thanks for the help.
+assistant: Have a nice day.

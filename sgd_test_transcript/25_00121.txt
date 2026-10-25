@@ -1,0 +1,42 @@
+user: Can you please show me my active alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an 8 am alarm named Workout.
+user: OK, thanks!
+assistant: Do you want me to add an alarm for you?
+user: No, not at the moment.
+assistant: Is there anything else I could do for you?
+user: Yes, please find me a Cantonese restaurant in the area. I don't care about a particular price range.
+assistant: Sure, but first tell me in which area I should search.
+user: Please find me a restaurant in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: Alice's is a very good San Francisco restaurant.
+user: OK, perfect!
+assistant: Do you want me to book a table for you?
+user: No, not at the moment, thank you!
+assistant: Is there anything else I could do for you?
+user: Yes, I'd like to reserve a car there, please.
+assistant: Please tell me the kind of car you want as well as the time when you want to pick it up.
+user: I'd like to pick the car up at 10:00 and I would prefer it to be a Hatchback.
+assistant: From where do you want to pick it up?
+user: It would be perfect if I could pick it up at Intercity Terminal.
+assistant: OK. No please tell me on which date do you want to start your rental, as well as if you'll be needing insurance.
+user: I do not want insurance and I need to pick up the car today.
+assistant: Until when do you plan to keep the car?
+user: I will be keeping it until this Sunday.
+assistant: Can you please confirm that you want me to place a reservation for you for a Hatchback, with no extra insurance, to be picked up on March 1st at 10 am from Intercity Terminal, due for drop off on March 3rd.
+user: Yes, that's correct. Can you please tell me what car is it?
+tool(ReserveCar): ok n_results=1
+assistant: I've successfully placed your reservation for a Renault Clio.
+user: Thanks for everything. Could you please share the location for Intercity Terminal?
+assistant: Yes, with whom?
+user: Please share the address 1599 Sanchez Street with Brittany.
+assistant: Can you please confirm that you want me to share the location 1599 Sanchez Street with Brittany?
+user: On second thought, please share it with Willie?
+assistant: Can you please confirm that you want me to share the location 1599 Sanchez Street with Willie?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks a lot!
+assistant: Anything else I could do for you?
+user: No, that will be all for now. Thanks!
+assistant: Have a great day!

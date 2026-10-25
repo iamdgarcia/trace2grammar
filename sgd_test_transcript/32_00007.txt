@@ -1,0 +1,24 @@
+user: I'm looking to go to therapy, please find me a therapist.
+assistant: What kind of therapist will you be needing and what city should I look in?
+user: Please find me a Psychologist in Cupertino.
+tool(FindProvider): ok n_results=1
+assistant: I suggest Center For Learning. They are a Psychologist in Cupertino.
+user: Is there anyone else you can find? Maybe a therapist in Oakland?
+tool(FindProvider): ok n_results=10
+assistant: I suggest Alameda Children's Specialized, they are a psychologist in Oakland.
+user: Are there any other therapists you suggest?
+assistant: I suggest Brown Timothy A., they are a psychologist in Oakland.
+user: What is their address and phone number?
+assistant: You can find them at 3900 Broadway and their phone number is 510-752-6706.
+user: That sounds good. Please book an appointment for the 6th of March at 13:00.
+assistant: So you'd like an appointment with Brown Timothy A for March 6th at 1 pm. Is this correct?
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully. You will receive an email confirmation shortly.
+user: Can you suggest me a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: I suggest After The Wedding, it has a rating of 43 out of 100.
+user: Who directed it and who starred in it?
+assistant: The movie is directed by Bart Freundlich and stars Doris McCarthy.
+user: That sounds good, that's all I needed.
+assistant: Glad I could help you today.

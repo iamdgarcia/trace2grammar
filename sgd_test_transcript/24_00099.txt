@@ -1,0 +1,23 @@
+user: Find me a movie to see.
+assistant: What city shall I search in?
+user: Search for movies playing in Redwood City.
+tool(FindMovies): ok n_results=7
+assistant: Ad Astra, Brittany Runs a Marathon and Hustlers are all plying in Redwood City.
+user: Brittany Runs a Marathon sounds good. Book me a restaurant table at Yokohama for morning 11.
+assistant: You want to book a table at Yokohama in Redwood City for 2 people on March 1st at 11 am, correct?
+user: No, the reservation is for 3 people.
+assistant: Your reservation is for 3 people on March 1st, correct?
+user: That is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked.
+user: What kind of food is on the menu and can you sit outside?
+assistant: They have Japanese food and there is no outdoor seating.
+user: Thanks a bunch.
+assistant: Do you need anything more?
+user: What times are that movie playing?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime and it is at Century Redwood City Downtown 20 and XD at 11 pm.
+user: How much does it cost and what movie genre is it?
+assistant: The cost is $8 a person and it is under the Drama genre.
+user: That is good. I don't need anymore help right now.
+assistant: Have a great day.

@@ -1,0 +1,36 @@
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=4
+assistant: You have one called Get Up for 6 am.
+user: Okay, cool.
+assistant: Do you want a new alarm?
+user: Not right now. Find me a restaurant there.
+assistant: What locations should I look in?
+user: Find restaurants that sell Fish in Walnut Creek.
+tool(FindRestaurants): ok n_results=6
+assistant: Andy's Sushi is a good restaurant in Walnut Creek.
+user: Is outdoor seating available?
+assistant: There is no outdoor seating.
+user: Could you tell me their phone number?
+assistant: The phone number is 925-378-7924.
+user: Sounds good.
+assistant: Do you need help with something else?
+user: Find me a car there.
+assistant: Would you like insurance? What time will you pick up the car?
+user: Pick it up at 09:00. Purchase insurance for me.
+assistant: When and where will you pick up the rental? Do you like Sedan, Hatchback or anything else?
+user: I'd like to pick up a Hatchback at Galeao International Airport on March 4th.
+assistant: When will you return it?
+user: I will return it the 7th.
+assistant: Could you confirm that you are picking up the Hatchback car at Galeao International Airport on March 4th at 9 am and returning it on March 7th?
+user: Sounds good. What sort of car is it?
+tool(ReserveCar): ok n_results=1
+assistant: It's a Kia Ceed. Your reservation has bee made.
+user: Thank you for helping. Please share the location.
+assistant: Who do you want to share the location with? You would like to share the address 1690 Locust Street?
+user: Yep. Share it with Donald.
+assistant: Please confirm that I should share 1690 Locust Street with Donald.
+user: Yes, right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thanks. That was a good help. That's it for now.
+assistant: Enjoy your day.

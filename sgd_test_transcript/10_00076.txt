@@ -1,0 +1,14 @@
+user: I'm looking for some movies online. I really like Brady Noon and comic movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you may like. How about Good Boys?
+user: Good Boys is a great film.
+assistant: Should I play the movie.
+user: Yes, please play the movie.
+assistant: Please confirm: playing the film Good Boys with English subtitles.
+user: No, I'd like to watch it with Hindi subtitles, please.
+assistant: Please confirm: playing the film Good Boys with Hindi subtitles
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started playing.
+user: Thank you, that's all.
+assistant: Have a great day.

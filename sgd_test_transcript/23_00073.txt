@@ -1,0 +1,34 @@
+user: I have to make a payment
+assistant: What is the name of the beneficiary?
+user: The name is Margaret. I have to make the transaction from my Visa card
+assistant: How much do you have to transfer to Margaret?
+user: I want to transfer $111
+assistant: A public transaction with Margaret from your credit card in the amount of $111. Do you confirm?
+user: Yes, It's correct and I confirm
+tool(MakePayment): ok n_results=1
+assistant: Well, the transaction was successful
+user: Thanks! Now I need two seats in a train from Philly
+assistant: What is the destination city? Which day should you leave?
+user: The destination is New York City. I need tickets for next Tuesday.
+tool(FindTrains): ok n_results=8
+assistant: There's a train at 10:40 am which costs $95 in total.
+user: Are other trains available?
+assistant: There's a train at 10:50 am which costrs $84 in total
+user: Yes, that's perfect for me!
+assistant: Do you want to buy the ticket now?
+user: Not now, I'll do it later
+assistant: You need something else?
+user: Yes, I would like to know what the weather will be like in New York City on the 12th
+tool(GetWeather): ok n_results=1
+assistant: Average temperature: 70 degrees Fahrenheit. Chance of rain: 4 percent.
+user: Will it be a very windy day?
+assistant: Average wind speed: 7 miles per hour
+user: Perfect! Now I want to buy the tickets of train. I prefer Value tickets and I want also trip insurance.
+assistant: A Value ticket for 2 people with trip insurance on the train which leaves on March 5th at 10:50 am from Philadelphia to New York. Is it correct?
+user: Yes, It's correct. What is the departure station?
+tool(GetTrainTickets): ok n_results=1
+assistant: The departure station is 30th Street Station. The ticket has been booked
+user: Very well, thank you so much!
+assistant: Can I help you again?
+user: No, It's all for today, thanks!
+assistant: Have a nice day!

@@ -1,0 +1,36 @@
+user: I am interested in finding a round trip flight.
+assistant: Can you tell me the date when you are going to depart, and when you are going to return? Also could you tell me your destination?
+user: I want to go to Chi-town, and I will be flying today, to return next Friday.
+assistant: From which city will you be leaving for your flight?
+user: I am interested in flights which leave from Washington.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: How would you like having the direct flight with American Airlines which leaves at 7:10 pm, and when it returns it flies at 8:35 pm, the ticket of which costs $193.
+user: Can you tell me for how many people you need tickets?
+assistant: I just need ticket for 1 person.
+user: Do you want your ticket to be an economy class one or a business class one.
+assistant: The ticket I want should be an Economy class ticket.
+user: Can you suggest something else?
+assistant: How would you consider having the direct flight with Delta Airlines which leaves at 10:30 am, and when it returns it flies at 6:45 pm, the ticket of which costs $170.
+user: That seems nice. Now I would like to find a house that I can stay in there, which also has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: A nice house which you consider is found at 1 West Wacker Drive, and has a rating of 4.5.
+user: This house seems good, and I would like to book it. I will need the house till next Friday.
+assistant: Will you be going there on March 1st?
+user: I actually want to go on March 6th.
+assistant: Can you tell me the number of people that are in your group?
+user: It is just one person.
+assistant: Can you please confirm that you want the house in Chicago for 1 person, and that you will go there on March 6th, and will leave the house on March 8th?
+user: That would be nice. Can you tell me how much it will cost me? Which is their phone number that I can use to get in touch with them?
+tool(BookHouse): ok n_results=1
+assistant: Your requested reservation has been made, and this house costs $504. If you want to call them you can at +1 312-930-0000.
+user: I appreciate your help. Is there some attractions there that you can suggest, and I do not mind what kind of attraction it is.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you to consider, with one of them being 360 CHICAGO, which is a Tourist Attraction.
+user: Alright, though can you recommend some other attraction?
+assistant: You might consider visiting Big Bus Tours Chicago (Tours begin at 98 E. Upper Wacker Dr.), which is a Tourist Attraction.
+user: Can you give me their phone number, and could you tell me if this place is suitable for kids?
+assistant: If you want to call them you can at 877-285-4796, and I can confirm that this place is quite appropriate for kids.
+user: Alright, that is good.
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful for your help.
+assistant: Have a good time!

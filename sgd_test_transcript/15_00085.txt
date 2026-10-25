@@ -1,0 +1,31 @@
+user: Can you locate a therapist in Menlo Park?
+assistant: Should they specialize in something?
+user: Look in Vacaville instead for a Psychiatrist please.
+tool(FindProvider): ok n_results=1
+assistant: I found a Psychiatrist in Vacaville you might like a Paz George G.
+user: Is there an address and phone number listed and can you give those to me?
+assistant: No problem they are located at 1 Quality Drive and the number listed is 707-624-2830.
+user: Did you come across any others?
+tool(FindProvider): ok n_results=0
+assistant: That was the only one that met your requirements. What else could I do for you?
+user: I need you to search again, for a Psychologist please.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 that might be of help the first one is a Psychologist in Vacaville named Caldwell Leslie.
+user: Alright that mighty be okay.
+assistant: Should I schedule a visit for you?
+user: Not just yet. Could you tell me what the weather is suppose to be like there on March 4th?
+tool(GetWeather): ok n_results=1
+assistant: There is supposed to be a 24 percent chance of showers and an average temp in Fahrenheit of 77.
+user: What about the humidity that day?
+assistant: The humidity forecast is for 55 percent.
+user: And the wind speed?
+assistant: They are forecasting 6 miles an hour average wind speed.
+user: I am ready to schedule that visit now with the therapist we decided on. I would like to schedule my visit for 14:45 please.
+assistant: Okay that is a 2:45 pm visit for March 4th with Caldwell Leslie is that what you wanted?
+user: No actually half past 1 in the afternoon would be better.
+assistant: Okay so 1:30 pm on March 4th is that correct now?
+user: Yes I am pretty sure.
+tool(BookAppointment): ok n_results=0
+assistant: I encountered an error and could not get that time slot are there other things I could assist you with?
+user: No but I appreciate your efforts.
+assistant: Happy to be of service.

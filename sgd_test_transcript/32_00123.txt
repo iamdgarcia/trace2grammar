@@ -1,0 +1,34 @@
+user: I need to find a new place to live, this place isn't cutting it anymore.
+assistant: Okay. How many baths would you like the new place to have?
+user: I think three baths would be perfect.
+assistant: How many bed rooms would you like the new place to have, and in what area would you like it to be located?
+user: I would like a place in Santa Rosa, and if it had three bed rooms as well that would be perfect.
+assistant: Are you looking for a place to rent or buy?
+user: I would like to buy.
+tool(FindHomeByArea): ok n_results=10
+assistant: I've found at least 10 houses that match your criteria. How about the Brush Creek Apartments at 6221 Montecito Boulevard. The cost is $3,950,000.
+user: That sounds like a decent place. Can I schedule a property visit?
+assistant: You sure can. When would you like to make the visit for?
+user: Make it for the 3rd of March.
+assistant: You would like to schedule a property visit to Brush Creek Apartments on March 3rd. Is that correct?
+user: Yes that is correct. Can you tell me if they have laundry machines in the house? Oh, also let me know what their phone number is please.
+tool(ScheduleVisit): ok n_results=1
+assistant: The property visit is scheduled. It seems the house does not already have laundry machines inside. The contact phone number is 707-888-5505.
+user: Great. Can you share the location with Joe from my contacts?
+assistant: Please confirm the following: Share location 6221 Montecito Boulevard with Joe.
+user: That's wrong, I messed it up, send it to Raymond.
+assistant: Please confirm the following: Share location 6221 Montecito Boulevard with Raymond.
+user: That is correct, I confirm.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks. You're pretty help you know that. Can you get me a cab to go there now? I want to check it out. I'm in a group of three.
+assistant: Which type of ride would you prefer? You can say Regular, Luxury, or anything else.
+user: I'm fine with just a regular ride.
+assistant: You would like a regular ride for 3 to 6221 Montecito Boulevard. Is that correct?
+user: Yes. How much will it cost and how long before the cab reaches us?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked, it's 7 minutes out and cost $28.18.
+user: Great. Thank you again.
+assistant: You're welcome. Will that be all?
+user: For now, yes. Good bye.
+assistant: Bye, have a wonderful day.

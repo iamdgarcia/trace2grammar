@@ -1,0 +1,38 @@
+user: Hi, I'll be travelling and would like to purchase some bus tickets.
+assistant: Where will you be travelling to?
+user: I'd like to travel to Sacramento, CA.
+assistant: How many tickets do you wish to purchase and when do you plan to leave? Also, where are you leaving from?
+user: I'll be leaving from San Diego on March 4th, it's for 2 people.
+assistant: What time are you wanting to leave at?
+user: I'd like to leave at 6 am.
+assistant: So you'd like 2 tickets for a bus leaving from San Diego to Sacramento on March 4th at 6 am. Is this correct?
+user: Yes, that's great. Is it a direct bus ride?
+tool(BuyBusTicket): ok n_results=0
+assistant: I'm sorry there was an error with your purchase. Is there anything else I can assist you with?
+user: Can you please try again? I'd like to leave from Long Beach to LAX on March 1st.
+assistant: So you'd like 2 bus tickets leaving from Long Beach to Los Angeles on March 1st at 6 am, is this correct?
+user: Yes, sounds good. Is it a one-stop bus and which station does it reach?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been purchased. The bus arrives at North Hollywood Station, and yes it is direct.
+user: Thank you, could you also find me a rental car I can use until the 8th? I'd like an SUV.
+assistant: You'd like to pick up the car on March 1st, correct?
+user: I'll need the car next Tuesday.
+assistant: Are you wanting to pick up the car from Los Angeles?
+user: Yes, that works for me.
+assistant: What time are you wanting to pick up the rental car?
+user: I'd like to pick up the car at five in the evening.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I recommend this nice SUV Dacia Duster located at LAX International Airport.
+user: That sounds good to me.
+assistant: Is there anything else I can assist you with?
+user: I'd like to reserve that car.
+assistant: Would you like any added insurance?
+user: No, I don't think I'll need it.
+assistant: So you'd like to rent an SUV from LAX International Airport on March 5th at 5 pm until March 8th. Is this correct?
+user: Yes, that's great. What is the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car reservation has been booked. The cost per day is $42.00.
+user: Thanks for your help.
+assistant: Is there anything else I can assist you with today?
+user: No, that's all. Thanks again.
+assistant: Have a wonderful day!

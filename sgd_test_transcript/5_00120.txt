@@ -1,0 +1,28 @@
+user: Hi, I'd like to go to therapy. Can you find me a therapist please?
+assistant: Will you be needing a psychiatrist or a family counselor?
+user: I would like to see a psychiatrist.
+assistant: In what city would you like them to be in?
+user: Please find some in the Belmont area.
+tool(FindProvider): ok n_results=1
+assistant: I suggest Yoerg Robert L. They are a psychiatrist located in Belmont.
+user: Is there anyone else you can recommend? I'd like a psychologist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I managed to find Alameda Children's Specialized. They're a psychologist located in Oakland.
+user: Is there anyone else you can recommend to me?
+assistant: I also recommend Brown Timothy A. They are a psychologist located in Oakland.
+user: Ok what is their contact number and address?
+assistant: Their phone number is 510-752-6706 and you can locate them on 3900 Broadway.
+user: That works for me.
+assistant: Is there anything else I can assist you with?
+user: I'd like to book an appointment, can you do that for me?
+assistant: What time would you like the appointment to be and on what date?
+user: Please make the appointment for the 10th of March in the evening 4:15.
+assistant: So you'd like an appointment with Brown Timothy A at 4:15 pm on March 10th. Is this correct?
+user: Yes, that would be great.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry there was a problem booking the appointment. I would suggest an appointment at 4 pm instead on March 10th with Brown Timothy A.
+user: That works fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked and you will receive an e-mail confirmation shortly.
+user: Thank you for all of your help, I appreciate it.
+assistant: It's been a pleasure.

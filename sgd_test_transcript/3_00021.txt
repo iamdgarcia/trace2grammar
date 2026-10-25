@@ -1,0 +1,11 @@
+user: Can you find me a nice round trip flight to LAX with Southwest Airlines?
+assistant: No problem. When would you like your return flight?
+user: Make the return flight for March 14th.
+assistant: What city will you be departing from?
+user: Find flights out of Chicago.
+assistant: What is your travel date?
+user: Find flights for the 9th of this month.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Okay, I've found 1 flight for you with Southwest Airlines. The flight takes off at 7:20 pm and will be a direct flight with no layovers. Your returning flight will take off at 12 pm and your tickets will be a total of $276.
+user: Sounds good. Thanks for the help! That's all for now.
+assistant: My pleasure. Have a good day.

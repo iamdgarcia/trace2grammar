@@ -1,0 +1,17 @@
+user: I would like to find a salon.
+assistant: What city would you like to find a salon in?
+user: I would like to find a unisex salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: I found a nice salon called Palo Alto, called 18/8 Fine Men'S Salons - Palo Alto.
+user: That sounds great.
+assistant: Is there anything else I can help with?
+user: Yes. What is the weather there/
+tool(GetWeather): ok n_results=1
+assistant: The weather has a 4 percent chance of rain and an average temp of 79 degrees Fahrenheit.
+user: Great. I need to book an appointment later today in the evening 6 please.
+assistant: So you would like me to book an appointment on March 1st at 6 pm at 18/8 Fine Men'S Salons - Palo Alto?
+user: Yes, do you have their phone number
+tool(BookAppointment): ok n_results=1
+assistant: Yes. the phone number is 650-460-8290. Your appointment is made.
+user: Thanks, I am all set.
+assistant: Have a great day.

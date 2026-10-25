@@ -1,0 +1,32 @@
+user: Can you help me find something to do?
+assistant: Where would you like me to look?
+user: Please find something in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 places I can recommend. May I suggest the popular historical landmark 30 St Mary Axe (The Gherkin)?
+user: That works. I need to get a rental car as well.
+assistant: When will you need to pick it up and how long will you need it? Will you be picking it up in London?
+user: Yes, and I will need it from the 12th until the 13th of March.
+assistant: What time works best for you?
+user: I'd like to pick it up at 3 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is an Audi A8 sedan available at Heathrow International Airport.
+user: What is the daily rate?
+assistant: It's $34.00 each day.
+user: That works for me.
+assistant: What else can I help you with today?
+user: I'd like to reserve that car.
+assistant: Would you like to purchase the additional insurance?
+user: No, I am declining the additional insurance.
+assistant: Okay, let me review your order. You'd like to pick up the sedan at Heathrow International Airport on March 12th at 3 pm and you will return it on March 13th.
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Great. Can you share the location for me?
+assistant: Who would you like to share the address with? Is it the 30 St Mary Axe (The Gherkin) or Heathrow International Airport?
+user: I'd like to share 30 St Mary Axe (The Gherkin) with Kimberly.
+assistant: You'd like to share 30 St Mary Axe (The Gherkin) with Kimberly. Is that correct?
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Thank you for all of the help. That will be all for now.
+assistant: You're welcome. Have a wonderful day.

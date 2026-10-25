@@ -1,0 +1,20 @@
+user: I'm going out with some friends this weekend and we'd like to see a movie.
+assistant: What is your location?
+user: Can you help me find movies in El Cerrito?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like. What about IT Chapter Two?
+user: IT2 sounds great.
+assistant: Would you like me to buy tickets?
+user: Yes, let's get the tickets now.
+assistant: What date and time would you like to see the movie? Would you prefer 3d or a regular show?
+user: I'd like to see the movie on Sunday this week at 19:15. A regular show is fine.
+assistant: How many tickets should I get?
+user: I'd like four tickets.
+assistant: Okay, let's confirm the details: We're buying 4 tickets to the regular showing of IT Chapter Two for March 3rd in El Cerrito, starting at 7:15 pm.
+user: Yes, that's perfect.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Okay, the tickets have been purchased.
+user: Thanks for your help.
+assistant: Is there anything else I can help you with?
+user: No that's all thanks.
+assistant: Have a great day!

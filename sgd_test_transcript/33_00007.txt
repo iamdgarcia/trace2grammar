@@ -1,0 +1,19 @@
+user: I need help finding a salon.
+assistant: Okay, which city are you looking in?
+user: Find a unisex salon in Antioch.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 that may work, how about Himc Barber Studio in Antioch?
+user: That sounds good.
+assistant: Do you want me to book an appointment?
+user: Not yet, what's the weather like there on the 7th?
+tool(GetWeather): ok n_results=1
+assistant: It will average around 71 degrees Fahrenheit with a 0 percent chance of rain.
+user: Okay, let's book the appointment that day.
+assistant: Okay, what time?
+user: 11:30 in the morning.
+assistant: Please confirm you'd like to book an appointment at Himc Barber Studio on March 7th at 11:30 am.
+user: Yes, that's correct.
+tool(BookAppointment): ok n_results=1
+assistant: I've booked it.
+user: Thanks, that's all.
+assistant: My pleasure, enjoy your day.

@@ -1,0 +1,13 @@
+user: I want to visit a property.
+assistant: Which property and when, please.
+user: The Canal Apartments on March 10th.
+assistant: Please confirm a visit to the Canal Apartments on March 10th.
+user: Change it to March 5th.
+assistant: OK, please confirm a visit to the Canal Apartments on March 5th.
+user: Good, what is the address and is there a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: There is not a garage and the location is 330 Canal Street.
+user: Perfect, thank you.
+assistant: Can I do anything else for you?
+user: No, that is all.
+assistant: Have a nice day.

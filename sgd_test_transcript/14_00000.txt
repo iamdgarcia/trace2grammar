@@ -1,0 +1,17 @@
+user: Can you help me find a good fantasy movie online?
+tool(FindMovies): ok n_results=2
+assistant: Yes I can. Would you be interested in seeing The Lord of the Rings: The Return of the King or Labyrinth?
+user: Let's do Labyrinth.
+assistant: Did you want me to start the movie for you now?
+user: Yes, that would be fine.
+assistant: Okay, did you want me to play the movie Labyrinth with English subtitles?
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: Okay, your movie will begin shortly.
+user: Can you tell me how the weather is in Petaluma?
+tool(GetWeather): ok n_results=1
+assistant: Sure, the temperature is 82 degrees and their is a 29 percent chance of rain.
+user: Is this the temperature for today? How about the humidity level?
+assistant: Yes, this is the accurate weather for today, March 1st, and the humidity level is said to be around 57 percent.
+user: Thank you for that information. That will be all.
+assistant: You are welcome. Goodbye.

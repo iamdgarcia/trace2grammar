@@ -1,0 +1,25 @@
+user: I need to find a place to live.
+assistant: Where would you like me to search? How many bathrooms do you need?
+user: Find me something with 1 bath in Walnut Creek.
+assistant: How many bedrooms do you need?
+user: I'd like something with 2 bedrooms.
+assistant: Would you like to rent or buy?
+user: I would like to buy.
+tool(FindHomeByArea): ok n_results=8
+assistant: How about Affordable Housing Associates? It is a very good property located at 150 Sierra Drive. It costs $2,300,000.
+user: Do you have the phone number?
+assistant: You can contact them at 925-945-1701.
+user: That sounds good.
+assistant: Would you like to schedule a visit to see the property?
+user: Yes, I want to schedule a visit for March 10th.
+assistant: I will schedule you an appointment to visit Affordable Housing Associates on March 10th. Is this correct?
+user: No. Make it for the 7th of this month.
+assistant: Confirming that you want to visit Affordable Housing Associates on March 7th?
+user: Yes, that is correct. Does the property have laundry machines inside the house? Is there a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: The house doesn't have laundry machines, but there is a garage. Your visit has been scheduled.
+user: Thanks. Can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm for 6 am named Wake up.
+user: Okay. That will be all. Thanks.
+assistant: You're welcome.

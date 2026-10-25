@@ -1,0 +1,17 @@
+user: I am interested in finding a movie that I can watch, and more specifically I am interested in movies where Zach Woods acts in? Also I want to find a movie which is directed by Thurop Van Orman.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie which you might like. How would you consider watching The Angry Birds Movie 2? This movie has an average rating of 72 out of 100.
+user: That seems nice. Now can you help me find me some songs?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs which you might consider. How would you like listening Hate Me by Eurielle from the Arcadia album?
+user: Can you tell me the year of release of this song, and the genre that this music belongs to?
+assistant: The genre of the song is a Pop one, and it is released in the 2015 year.
+user: Alright, that is a good one. I would like for this song to start playing on my patio speaker.
+assistant: Can you please confirm that you want the song Hate Me to start plying in Patio?
+user: That is not right, because I want the song to be cast on Kitchen.
+assistant: Can you please once again confirm that the song Hate me should be cast in Kitchen?
+user: Yes, that is what I want.
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time listening to the music.
+user: I appreciate it! That's all I needed.
+assistant: Have a good time!

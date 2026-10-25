@@ -1,0 +1,24 @@
+user: I'll be traveling with my company and would like to find a house to stay in.
+assistant: What would be your desired location to find the house?
+user: It will be in New Delhi.
+tool(SearchHouse): ok n_results=10
+assistant: I've found a nice house with a 4.4 rating located at 12, Doctor APJ Abdul Kalam Road, New Delhi.
+user: What a great house!
+assistant: May I assist you with anything else?
+user: I'd like to book a house with the check out date the 13th of March.
+assistant: What is the occupancy number in the house?
+user: We will have a total of three people.
+assistant: What day would you like to check in?
+user: We will be checking in on the 11th of this month.
+assistant: Can you confirm that you would like to check into a house in Delhi on March 11th with 3 people? Your group will be checking out on March 13th.
+user: That is correct. Do you have a number I can call for this location?
+tool(BookHouse): ok n_results=1
+assistant: You've successfully made a reservation. The number for this location is +91 11 3090 8000.
+user: Thank you. We will have some time to have fun and would like to ask you for ideas on attractions to visit while there.
+tool(FindAttractions): ok n_results=10
+assistant: I've found 10 attractions that may be of interest to you. A top rated attraction is Adventure Island Theme Park.
+user: That sounds fun. What other attractions do you recommend?
+tool(FindAttractions): ok n_results=10
+assistant: There is a famous place of worship called Akshardham.
+user: That sounds great. That is all I need for now.
+assistant: Have a great day.

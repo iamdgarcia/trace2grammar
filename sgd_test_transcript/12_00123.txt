@@ -1,0 +1,34 @@
+user: Please help me to find something interesting to do. I prefer Stage show.
+assistant: DO you consider any particular city for the search?
+user: I am searching for something around NY which I need on March 11th.
+tool(FindEvents): ok n_results=10
+assistant: On March 11th at 7 pm, Acting For Teens is happening at place 520 8th Ave. - Personal Valet Parking and it's the popular one.
+user: What's the cost for one ticket?
+assistant: The cost of one ticket is $45
+user: What's the venue location?
+assistant: The venue is located at 520 8th Ave. - Personal Valet.
+user: Other than these, please find me some other events around London, UK.
+tool(FindEvents): ok n_results=10
+assistant: At the Wanstead Library is happening A Taste For Murder on March 11th at 6:30 pm which is very famous.
+user: That's great. I want to make a request for payment.
+assistant: Under what name is the contact? What is the payment amount?
+user: Rachel is the contact name and the amount is $137.
+assistant: Your transaction is public with amount $137 and name Rachel. Please make a confirmation.
+user: I am sorry. The person name is Yumi and the amount is 144 bucks
+assistant: Please give a confirmation for the transaction with person name Yumi and amount is $144.
+user: Please change the transaction to private.
+assistant: Please give confirmation on making private transaction with Yumi.
+user: That's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request for the payment was successful.
+user: Thank you. Please purchase tickets for the event you searched for.
+assistant: What number of tickets to buy?
+user: Please get 4 tickets.
+assistant: Please make a confirmation on booking details 4 tickets for the event A Taste For Murder on March 11th in London.
+user: Please change the number of tickets to 1
+assistant: Please make a confirmation, 1 ticket booked for A Taste For Murder.
+user: That's great. What is the cost of 1 ticket and the location of venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket reservation is confirmed. The cost for the ticket is $55 and the location is Spratt Hall Road.
+user: Thank you very much
+assistant: Have a good day.

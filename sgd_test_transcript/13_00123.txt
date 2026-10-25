@@ -1,0 +1,19 @@
+user: Can you help me find a movie online?
+assistant: Sure, any particular genre?
+user: Yeah, a kids movie.
+tool(FindMovies): ok n_results=2
+assistant: There's 2 you might enjoy: The Angry Birds Movie 2 or Toy Story 4.
+user: Let's do Toy Story 4.
+assistant: Should I play it?
+user: Yes, please do.
+assistant: Please confirm you'd like to watch Toy Story 4 with English subtitles.
+user: Yup, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: I've started the movie.
+user: What's the weather like on March 14th in Corte Madera?
+tool(GetWeather): ok n_results=1
+assistant: It'll be 91 degrees Fahrenheit on average with a 13 percent chance of rain.
+user: Sound good, thanks.
+assistant: Need anything else at the moment?
+user: Nope, thanks again.
+assistant: My pleasure, enjoy!

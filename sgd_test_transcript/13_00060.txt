@@ -1,0 +1,18 @@
+user: I'm looking to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies for you. How about Stage Door? It has a rating of 95.
+user: Who directed the movie?
+assistant: The movie is directed by Gregory La Cava.
+user: Who starred in the movie and what is the genre?
+assistant: Jack Carson starred in the movie and it is a Drama.
+user: Okay, thanks. I'd like to find a stage show in Chi-town
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events you may like. How about Ada And the Engine at The Artistic Home on March 3rd at 5:30 pm?
+user: That sounds good, but what else is there?
+assistant: THere is All That He Was at The Buena Pride Arts Center on March 6th at 7:30 pm?
+user: How much is the ticket and where is the event taking place?
+assistant: The ticket costs $45 and is at 4147 North Broadway.
+user: Okay, that sounds good.
+assistant: Do you want to buy tickets?
+user: No, thank you. That is all I needed.
+assistant: Have a great day.

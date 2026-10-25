@@ -1,0 +1,23 @@
+user: I'm kind of bored and I would like to browse some events happening on the 6th of march
+assistant: good idea. where do you want me to look? do you enjoy music, theater or what exactly?
+user: the area must be portland, or and a stage show would be top!
+tool(FindEvents): ok n_results=5
+assistant: there are 5 suitable events for you, the most popular one is beirut by alan bowne on march 6th at 7 pm. the venue is shoe box theater.
+user: can you be more specific and write me the address of it? also, don't forget to mention the price of the ticket.
+assistant: the address to reach is 2110 southeast 10th avenue and the price to pay to join the show is $50
+user: I might be interested, I'll just need a hotel room while there
+tool(SearchHotel): ok n_results=10
+assistant: I can book a room at aloft portland airport at cascade station, it's a 3 star hotel
+user: how much will it cost me for a single night? what's the number to call?
+assistant: it's $342 per night and you can reach them at +1 503-200-5678
+user: how amazing!
+assistant: May I book a room for you?
+user: No, you may not
+assistant: may I do something else, then?
+user: yes, you can start by purchasing three tickets to the event
+assistant: I'm happy to help you with that, confirm what follows. You want to buy 3 tickets for beirut by alan bowne happening on march 6th in portland
+user: yup
+tool(BuyEventTickets): ok n_results=1
+assistant: tickets are yours!
+user: I'm glad to know everything worked smoothly, I no longer need your services.
+assistant: have fun and be safe! bye!

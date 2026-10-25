@@ -1,0 +1,24 @@
+user: Can you find me a therapist to talk to?
+assistant: Are you looking for a family counselor or psychiatrist or another sort of therapist?
+user: Look for a psychologist please
+assistant: what city do you need?
+user: I want to see someone in San Jose
+tool(FindProvider): ok n_results=10
+assistant: You could try Barskyex Bryna G a psychologist in San jose
+user: What is their telephone number?
+assistant: You can reach them on 408-363-4418
+user: Okay thank you
+assistant: do you need me to book you an appointment
+user: If you don't mind
+assistant: What date and time would you prefer?
+user: Please try for 13:15 on the 7th of this month
+assistant: Okay confirming you want to book an appointment with Barskyex Bryna G at 1:15 pm on March 7th.
+user: Actually can you change that to the 8th of this month?
+assistant: Okay confirming you want to book an appointment with Barskyex Bryna G on March 8th.
+user: Yes thank you
+tool(BookAppointment): ok n_results=1
+assistant: I have made the appointment for you and you'll get a confirmation email shortly.
+user: Okay great thank you
+assistant: Do you need anything else?
+user: No, that's all for now.
+assistant: Have a nice day.

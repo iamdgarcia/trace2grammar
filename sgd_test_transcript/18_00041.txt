@@ -1,0 +1,36 @@
+user: I would like to search for a therapist. Can you find me someone in Redwood City?
+assistant: What type of therapist would you prefer to search for, such as Psychologist, Family Counselor, or another type?
+user: Look for a psychologist, please.
+tool(FindProvider): ok n_results=9
+assistant: I found 9 therapists meeting those criteria including Becker Hubert J, a Psychologist in Redwood City.
+user: Who are some of the other therapists you found?
+assistant: Cutting Linda P. is a Psychologist in Redwood City.
+user: What is her address?
+assistant: The address is 1150 Veterans Boulevard.
+user: OK, thank you. Can you book me an appointment there?
+assistant: What time would you like to make the appointment for?
+user: 3 pm, please.
+assistant: What date would you like to make the appointment for?
+user: Let's try the 13th of this month.
+assistant: You would like to make an appointment with Cutting Linda P at 3 pm on March 13th, is this correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, I was not able to to get an appointment at the date and time you requested. Would you like to try another date or time?
+user: Yes, let's check if there is availability on the 6th of this month.
+assistant: You would like to make an appointment with Cutting Linda P at 3 pm on March 6th, is this correct?
+user: No, for that day it would be half past 2 in the afternoon.
+assistant: You would like to make an appointment with Cutting Linda P at 2:30 pm, is this correct?
+user: Yes, that's right. What is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked successfully. A confirmation should reach you by email soon. The phone number is 650-299-4734.
+user: Thank you very much, I appreciate it. Can you help me order a cab to get there? I need the cheapest ride.
+assistant: How many seats do you need?
+user: I am in a group of 4.
+assistant: You would like a Pool ride with 4 seats to 1150 Veterans Boulevard, is that correct?
+user: Yes, that's right. How much is the cab? How long until it gets here?
+tool(GetRide): ok n_results=1
+assistant: You cab ride is booked an on its way, with an expected arrival in 3 minutes. The cost is $14.28.
+user: Thanks a lot for your help.
+assistant: Is there anything else I can help you with?
+user: No, that's all, thank you.
+assistant: Have a great day!

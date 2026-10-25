@@ -1,0 +1,29 @@
+user: I am going to need to rent a car. Can you help me find a rental car in New York City starting March 4th? Any type of car is fine.
+assistant: What time would you like to pick up the car?
+user: It would be best if I can pick it up at eleven in the morning.
+assistant: When would you like to return the rental car?
+user: I will need it until the 5th of this month.
+tool(GetCarsAvailable): ok n_results=7
+assistant: There are 7 cars available, including an Alfa Romeo Stelvio SUV at Port Authority Station.
+user: OK, that sounds good, thank you.
+assistant: Would you like to book the rental?
+user: Yes, but not yet. First I need to find a house to stay in while there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available in that area. There is a house at 100 Greenwich Street with a rating of 4.4.
+user: Yeah, that house would be great.
+assistant: Would you like to reserve the house?
+user: No, not right now, thanks.
+assistant: Is there anything else I can help you with?
+user: Yes, can you reserve the rental car you found for me?
+assistant: Would you like to include insurance?
+user: No, I don't need to add it, my company provides travel insurance for business trips.
+assistant: You would like to pick up an SUV rental car at 11 am on March 4th from Port Authority Station and return it on March 5th, and you do not want to include insurance, is this correct?
+user: Yes, that is all correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been reserved.
+user: How much is the car per day?
+assistant: The rental costs $32.00 per day.
+user: Thank you for your help.
+assistant: Is there anything else I can help you with?
+user: No, that's all, thank you.
+assistant: Have a great day!

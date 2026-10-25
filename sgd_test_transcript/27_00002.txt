@@ -1,0 +1,29 @@
+user: I'm looking for one business ticket for a train going to Los Angeles.
+assistant: And where will you be leaving from?
+user: I'm leaving from Fresno. And can you update the request to 2 tickets.
+assistant: And what date will you be travelling on?
+user: I'll be travelling on March 1st.
+tool(FindTrains): ok n_results=9
+assistant: There's a train leaving at 7:20 am. It is $215.
+user: What station is it leaving from and what station does it arrive at?
+assistant: It leaves from Fresno station and arrives at Union station.
+user: That works for me. Now I need recommendations for interesting things to do on that day over there.
+assistant: Is there anything in particular that interests you such as music or theater?
+user: I'm a big fan of Musical Performance.
+tool(FindEvents): ok n_results=10
+assistant: People seem to enjoy Ain Gordon. It's at Ralph Freud Playhouse on March 9th at 7 pm.
+user: I think I'd like that.
+assistant: Do you want to purchase tickets?
+user: Maybe later. Now what about some attractions there also?
+tool(FindAttractions): ok n_results=10
+assistant: You can visit the Angels Flight Railway, it's a Historical Landmark.
+user: Alright, nice. What about something like a historical spot that's also good for kids.
+tool(FindAttractions): ok n_results=6
+assistant: The Bradbury Building is a Historical Landmark that matches what you want.
+user: Sounds nice. I also need a house for one person to stay at while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice 4.1 rated house at 1020 South Figueroa Street.
+user: That sound really good.
+assistant: Do you want me to book the house for you?
+user: No, that's not necessary. I don't need anything else right now.
+assistant: It's been enjoyable to help you. Take care.

@@ -1,0 +1,41 @@
+user: Find me a salon.
+assistant: what city do you want me to search in?
+user: Find me a salon in San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is a good San Francisco Salon.
+user: What is the address of the salon and the average rating?
+assistant: The address is 1532 20th Street and it has an average rating of 4.8.
+user: Sounds good to me.
+assistant: Should I book the appointment then?
+user: In a while. For now, I want to find a therapist in that area.
+assistant: Do you want me to look in San Francisco? Would you like a family counselor or a psychiatrist or some other kind?
+user: That's good. Find me a psychologist.
+tool(FindProvider): ok n_results=4
+assistant: How about Adam E. Pollock, who is the psychologist in San Francisco?
+user: Okay, that should work.
+assistant: Shall I assist with anything further?
+user: Would you book me an appointment for Saturday this week?
+assistant: What time would you like to appointment to be?
+user: The appointment time should be 16:45.
+assistant: Please confirm that you are booking with Adam E. Pollock at 4:45 pm on March 2nd.
+user: Yes that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Oops, something went wrong. The appointment wasn't able to be booked. How about trying Adam E. Pollock for March 2nd at 4:30 pm??
+user: Sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was made successfully. You'll be getting an email confirmation shortly.
+user: What is the phone number?
+assistant: You can call them at 415-346-2356.
+user: Thanks so much. It's much appreciated.
+assistant: Could I help with anything further?
+user: Make me an appointment at the salon you just found, for that day.
+assistant: What time should the appointment be?
+user: Make it ten am.
+assistant: Please confirm that you want to book at 1512 Barber Shop at 10 am on March 2nd.
+user: Sounds good. Is this a unisex salon? What is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. It's a unisex salon and the phone number is 415-286-4371.
+user: Thanks.
+assistant: Would I be able to assist with anything else?
+user: No, that's all.
+assistant: Have a good day.

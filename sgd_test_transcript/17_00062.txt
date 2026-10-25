@@ -1,0 +1,16 @@
+user: Can you help me find a train out of Philly on the 8th of this month? I really need tickets at a good Value.
+assistant: No problem. What city will you be traveling to?
+user: I'm headed to Atlanta.
+tool(FindTrains): ok n_results=5
+assistant: Okay, I've found 5 trains that could work for you. There is a train departing at 9:20 am. Tickets will be $158. Is this okay?
+user: Yeah, that sounds good.
+assistant: Would you like for me to order your tickets?
+user: No, not right now. Maybe later.
+assistant: Okay. Anything else I can help you with today?
+user: Yeah. Can you help me find a house to stay at for two out there? I need something rated at least 3.7 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I've found 10 houses that match your search. There is a nice house rated at 3.7 located at 101 Andrew Young International Boulevard Northwest. Sound good?
+user: Yes! That house sounds great.
+assistant: Would you like to make a reservation?
+user: No, gathering info right now. That's all I need for today. Thanks.
+assistant: My pleasure. Bye!

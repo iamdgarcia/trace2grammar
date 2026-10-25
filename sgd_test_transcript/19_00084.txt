@@ -1,0 +1,27 @@
+user: I'm looking for a rental car in Palo Alto starting on March 4th.
+assistant: What time would you like to pick up the car?
+user: I want to pick it up in Vancouver, BC at 3 o'clock in the afternoon. I need the car until Wednesday next week.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars. There is a sedan Audi A8 at Pacific Central Station.
+user: What is the price per day?
+assistant: The rental is $33.00 per day.
+user: Okay, sounds great.
+assistant: Would you like the reserve the car?
+user: Not right now. I want to purchase tickets to an event there. I heard Blood Water Paint is good. I want to find something on the 7th of this month in Seattle, WA.
+assistant: How many tickets do you need?
+user: I need one ticket.
+assistant: Please confirm: 1 ticket for Blood Water Paint in Seattle on March 7th.
+user: Yes, that's correct. What time does it start?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. The show starts at 4:30 pm.
+user: Where is the venue?
+assistant: The venue is at 12th Avenue Arts.
+user: Thanks so much. I want to book the rental car.
+assistant: Would you like to add insurance?
+user: No, thank you.
+assistant: Please confirm: picking up a sedan car from Pacific Central Station at 3 pm on March 4th. Drop off is March 6th.
+user: Yes, sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: Your rental car has been booked.
+user: Thanks so much. That's all.
+assistant: Have a great day!

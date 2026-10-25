@@ -1,0 +1,35 @@
+user: I want to find me a 4 star hotel in Sydney.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 option that you may like.A 4 star hotel called 28 Hotel Sydney.
+user: Can you smoke here?Tell me the address.
+assistant: No, smoking is not allowed here.28 Regent Street, Chippendale New South Wales 2008, Australia is their address.
+user: Something else you have for me?
+assistant: A 4 star hotel called 57 Hotel.
+user: Sounds okay.Find me a round trip flight to get there.I will start my travel on day after tomorrow and I want Premium Economy class tickets.
+assistant: On which day you will return?
+user: 12th of March is the date on which I will return.
+assistant: From which city you want to depart?
+user: From Las Vegas.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have 1 flight for you.You like United Airlines?The onward flight takes off at 4:30 am and return is take off at 4:55 pm.It has a layover and ticket cost $697.
+user: Good.I wish you to reserve me the hotel that you have found.
+assistant: How many days you will stay ?
+user: I want to stay for 6 days.
+assistant: Check in date is March 3rd?
+user: Sure is very good.
+assistant: You want 1 room to stay for 6 days at 57 Hotel in Sydney.Check in date is on March 3rd.Is that correct?
+user: Sure that's good.Tell me their address.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is successfully booked.57 Foveaux Street, Surry Hills New South Wales 2010, Australia is their address.
+user: Thank you. You were a real help.Find me some attractions there that have free entry and is child-friendly.I have no preference regarding the type of events.
+tool(FindAttractions): ok n_results=10
+assistant: I have for you 10 attractions that you may like.You can check out a Sports Venue called ANZ Stadium.
+user: Nice,something else you have?
+assistant: You should check out a Museum named Australian National Maritime Museum.
+user: Tell me their phone number.
+assistant: 2 9298 3777 is the phone number.
+user: Nice,something else you have? Performance venue will be great for me.
+tool(FindAttractions): ok n_results=1
+assistant: You should check out a Performing Arts Venue called The Concourse.
+user: Great.That's all that I wanted for now.Bye.
+assistant: Have fun!Bye

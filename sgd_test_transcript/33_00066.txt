@@ -1,0 +1,23 @@
+user: Hi there, could you get me some interesting events which I can participate in?
+assistant: Any preference on the type of event?
+user: A drama event in London, Uk is fine.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like, how about A Right Royale Tea taking place at Amba Hotel Charing Cross on March 14th at 7 pm?
+user: I see, may I know its venue and the cost of the ticket?
+assistant: This ticket will cost you $50 and is taking place at Strand.
+user: I see, could you get me three tickets to the event?
+assistant: Please confirm your purchase for 3 tickets to A Right Royale Tea in London on March 14th.
+user: That is fine with me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, enjoy!
+user: Thank you for your kind assistance. Could you also get me a cab right there?
+assistant: Any preference on the type of ride, such as a Luxury or Pool ride?
+user: A luxury ride would be great.
+assistant: Please confirm your booking for 3 seats on a Luxury ride to Amba Hotel Charing Cross.
+user: That is fine with me. How much will this cost me?
+tool(GetRide): ok n_results=1
+assistant: Your booking has been made and is on its way to you, and this will cost you $32.23.
+user: And how long does the cab reach me?
+assistant: The cab will reach you in 12 minutes.
+user: Thank you for your kind assistance. That is all I need.
+assistant: No problem, have a great day ahead!

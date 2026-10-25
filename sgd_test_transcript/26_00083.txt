@@ -1,0 +1,45 @@
+user: I need to find train tickets for the 12th, can you help me?
+assistant: What cities are you departing from and going to?
+user: I would like to travel from NY to Chicago.
+tool(FindTrains): ok n_results=6
+assistant: There is a train departing at 6 am with a ticket price of $117 in total.
+user: Are there any other trains? I need three seats with Business tickets.
+tool(FindTrains): ok n_results=4
+assistant: There is a train departing at 6:10 am with a total ticket price of $485.
+user: What other trains are there?
+assistant: There is another train departing at 9:50 am with a total cost of $461.
+user: What stations does this train leave from and arrive in?
+assistant: The train leaves from Grand Central Station and arrives in Chicago Union Station.
+user: OK, that sounds good, thanks.
+assistant: Would you like to book tickets?
+user: Not right now, thanks.
+assistant: Is there anything else I can help with?
+user: Yes, I would like to find something interesting to do while we are there.
+assistant: Is there a particular type of event you prefer?
+user: Yes, I like Musical shows best.
+tool(FindEvents): ok n_results=9
+assistant: I found 9 events like that. Ashe is taking place at Chop Shop on March 11th at 7:30 pm.
+user: OK, that sounds great.
+assistant: Is there anything else I can help with?
+user: What other attractions are there? Focus on ones with no entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions like that, including Big Bus Tours Chicago (Tours begin at 98 E. Upper Wacker Dr.), a Tourist Attraction.
+user: OK, I'll look into that. What is the phone number?
+assistant: The phone number is 877-285-4796.
+user: Is that a child-friendly activity?
+assistant: Yes, the tour is child-friendly.
+user: Cool, what other attractions are there?
+assistant: There is a Park, Burnham Park.
+user: OK, great, thanks.
+assistant: Is there anything else I can help with?
+user: Yes, I need to find a house to stay in while we are there.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house at 1 South Franklin Street with a rating of 4.4.
+user: Does it have laundry service?
+assistant: No, it doesn't have laundry service.
+user: It still looks pretty great.
+assistant: Would you like to reserve the house?
+user: No, not right now, thanks.
+assistant: Is there anything else I can help with?
+user: No, that's all, thank you for your help.
+assistant: My pleasure, have a great day!

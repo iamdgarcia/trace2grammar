@@ -1,0 +1,33 @@
+user: I want to find a hotel in KL with 5 stars.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels. There is a 5 star hotel called Alila Bangsar.
+user: Are you allowed to smoke in the hotel?
+assistant: No, smoking is not permitted.
+user: What is the phone number?
+assistant: The phone number is +60 3-2268 3888.
+user: Any other hotels? 4 star would be fine.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels. Aloft Kuala Lumpur Sentral is a 4 star hotel.
+user: That sounds great.
+assistant: Do you want to make a reservation.
+user: Not right now. Can you find a rental car?
+assistant: What time do you want to pick it up.
+user: I want to pick it up on March 8th at 2 pm.
+assistant: How long do you need the car?
+user: I need it until the 14th.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I found 5 cars. There is a SUV Alfa Romeo Stelvio at KLIA International Airport.
+user: How much is it per day?
+assistant: The cost is $32.00 per day.
+user: Is there anything else? A sedan would be okay.
+tool(GetCarsAvailable): ok n_results=1
+assistant: I found 1 car. There is a sedan Volvo S90 at KLIA International Airport.
+user: Great. I want to reserve it.
+assistant: Would you like to add insurance?
+user: No, thank you.
+assistant: Please confirm: picking up a sedan from KLIA International Airport on March 8th at 2 pm until March 14th. No insurance.
+user: Yes, that's correct. How much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: The rental is $23.00 per day. The car has been reserved.
+user: Thanks so much. That's all.
+assistant: Have a great day!

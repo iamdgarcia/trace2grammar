@@ -1,0 +1,19 @@
+user: I'm about to do my workout and I'd like to play some songs. I'm really into House music and I heard that The Martin Garrix Experience album is great.
+tool(LookupMusic): ok n_results=2
+assistant: Okay, what about No Sleep by Martin Garrix from The Martin Garrix Experience album?
+user: Did that come out in '16?
+assistant: It was released in 2019.
+user: Okay, that's the one I want.
+assistant: Would you like me to play the song?
+user: In a little while. Also, are there any good movies playing online? I like anything with Adam Sietz. Play movies are good too.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like. It's called Brittany Runs a Marathon.
+user: Brittany Runs a Marathon would be great. Can you play that song you just found?
+assistant: Okay, let's confirm: I'm playing the song No Sleep in the living room.
+user: Yes, sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music!
+user: Thanks a lot!
+assistant: Is there anything else I can do for you?
+user: No, thank you!
+assistant: Have a great day!

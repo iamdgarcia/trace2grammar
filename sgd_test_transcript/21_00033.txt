@@ -1,0 +1,25 @@
+user: I am in a nice mood and I would like to listen some nice songs, I need you to search for the good one.
+tool(LookupMusic): ok n_results=10
+assistant: What about a song name Planet Loop by Nayutalien from the Album Nayutan Sei Kara No Buttai Y?. How about your opinion?
+user: Can you check whether this song is from '10? and what about the type of music of this song?
+assistant: It is a Rock type song and the same was released in the year 2016.
+user: That's great and I like this song.
+assistant: Shall I play it now?
+user: No, I will ask it later. Now, I want to check for the weather condition there on the 7th.
+assistant: Where do you want to check the same, Do you have any particular place to check for?
+user: Yes, check it in Discovery Bay.
+tool(GetWeather): ok n_results=1
+assistant: Please note that the temperature will be 85 degrees Fahrenheit in average and there will be a chance of 28 percent for the rain fall.
+user: What about the humidity and Wind speed?
+assistant: The Humidity will be around 56 % and the wind speed will be 9 miles per hour.
+user: That's okay and thanks for the information.
+assistant: How can I help you further?
+user: I need one more help. I want to hear the song that I have selected before. can you play it now?
+assistant: Yes, please confirm to play the song Planet Loop in Living room speaker.
+user: Yes, play it now.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing and you can enjoy it now.
+user: Thanks for your help.
+assistant: Anything else you need?
+user: No, that's all.
+assistant: Have a great day.

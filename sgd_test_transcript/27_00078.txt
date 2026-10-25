@@ -1,0 +1,28 @@
+user: I need a bus service for a show i need to go to
+assistant: When do you want to depart? What is your departure and arrival location?
+user: I need tickets for 3 people, leaving next monday from sacramento, ca. We're heading to long beach. Any bus is fine.
+tool(FindBus): ok n_results=10
+assistant: I have 10 options, there's a bus leaving at 7:40 am, tickets are $57
+user: What else is there?
+assistant: There's a service departing 7:50 am, tickets are $59
+user: Okay that sounds great
+assistant: Do you want to book tickets now?
+user: Not yet. What attractions are nearby?
+tool(FindAttractions): ok n_results=8
+assistant: The aquarium of the pacific is a very popular nature preserve
+user: Is it free to go? can we bring kids?
+assistant: It's not rated as good for children, and there is an entry fee
+user: okay, any other options?
+assistant: The earl burns miller japanese garden is a beautiful park
+user: Sounds nice, can you get those bus tickets now?
+assistant: Confirming you want 3 tickets for the bus service from Sacramento to long beach on march 4th, departing at 7:50 am, and you have no additional luggage
+user: Yes thanks you. What station do we leave from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your booking has been confirmed. The bus departs from 65th light rail station
+user: Okay thanks. Can you look for a hotel for me too
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 options including best western of long beach, a 3 star hotel
+user: How much is it for a night?
+assistant: Rooms are $78 per night
+user: okay thanks for that, that's all i need
+assistant: Happy to help

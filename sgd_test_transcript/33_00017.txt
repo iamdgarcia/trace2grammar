@@ -1,0 +1,30 @@
+user: I am looking for a salon.
+assistant: What city do you want me to search in?
+user: I would like to find one in SFO.
+tool(FindProvider): ok n_results=10
+assistant: I have located 10 salons that may interest you. One good one that is in San Francisco is 1512 Barber Shop.
+user: Would you be able to find a different salon for me? I would like a salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I have located 10 salons that you might like. Atelier Salon Willow Glen is a good salon in San Jose.
+user: Yes that sounds fine. What is the weather like there on the 11th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature for the day should average 79 degrees Fahrenheit. The chance of rain is 0 percent.
+user: What is the humidity expected to be on that day?
+assistant: The humidity will be around 15 percent.
+user: What will the wind be like on that day?
+assistant: The wind speed should average about 12 miles per hour.
+user: Yes, that is fine.
+assistant: Is there anything else you would like?
+user: I would like to book an appointment on that day at the salon you found.
+assistant: What time do you want the appointment to be?
+user: I would like the appointment to be at 2:30 pm.
+assistant: Okay, confirm these details for me: The hair stylist is named Atelier Salon Willow Glen and the appointment will be on March 11th at 2:30 pm.
+user: Yes that sounds fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed.
+user: What is the contact number there and what is their average rating?
+assistant: The phone number is 408-293-3494 and the average rating is 4.3.
+user: Thank you for your help.
+assistant: Is there anything else I can help you with?
+user: No, thanks very much.
+assistant: Have a great day.

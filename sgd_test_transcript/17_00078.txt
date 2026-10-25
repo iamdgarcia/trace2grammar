@@ -1,0 +1,14 @@
+user: Think you could find me a train for a trip I'm going to be taking soon?
+assistant: I think so. In which city would you like to catch the train?
+user: I'm looking for tickets to a train that leaves from Fresno, CA.
+assistant: On which date would you like to travel?
+user: Uh, on Saturday this week.
+assistant: Okay. And which city would you like to be the destination?
+user: I need to get to San Diego.
+tool(FindTrains): ok n_results=7
+assistant: I've found 7 trains that could work for what you need. How about a train that departs at 6 am and costs $93 in total?
+user: Works for me. Can you also find me somewhere to stay there? Preferably a house.
+tool(SearchHouse): ok n_results=10
+assistant: There are at least 10 houses available that I can find. Would a house with a rating of 4.6 located at 1003 Coast Boulevard, La Jolla California 92037, United States work?
+user: Sounds great to me. That will be all for now.
+assistant: Okay. Let me know if you need anything further, and good bye.

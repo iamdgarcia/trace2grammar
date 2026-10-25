@@ -1,0 +1,36 @@
+user: I'll be relocating soon. Could you help me find a place to live?
+assistant: Sure. I can help you with that. Please tell me the city you'd like to live in, and the number of bedrooms and baths you'd like the property to have.
+user: I'd like a two bedroom, 1 bath property in Fremont.
+assistant: Would you like to buy or rent the property?
+user: I'm looking for a place to buy.
+tool(FindHomeByArea): ok n_results=10
+assistant: All right. I found Birchwood Apartments, a very nice property situated at 3500 Pennsylvania Avenue # 101, going for $2,300,000.
+user: Thanks. Please get me the contact number for the place, and find out whether it has a garage.
+assistant: You can call the property on 510-943-8264. No, there's no garage.
+user: All right, that works.
+assistant: Should I go ahead and schedule a property visit?
+user: Yes, please schedule a visit to the place.
+assistant: Please tell me a convenient date to schedule the visit.
+user: 11th of this month works perfectly.
+assistant: All right. Please confirm that you'd like to schedule a March 11th visit to Birchwood Apartments.
+user: No. One of my meetings for today just got postponed. Please make it today, 7th of March instead. Sorry about that.
+assistant: No problem. Please confirm that you'd like to schedule a March 7th visit to Birchwood Apartments.
+user: Yes, that works.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your property visit.
+user: Wait, please share the address with Noah.
+assistant: Sure. You'd like to share the address 3500 Pennsylvania Avenue # 101 with Noah. Is this correct?
+user: No. I forgot that he's out of town. Please share it with James.
+assistant: All right. Please confirm that you'd like to share the address 3500 Pennsylvania Avenue # 101 with James.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your address has been successfully shared.
+user: Now get me an Expensive ride in a cab going there.
+assistant: How many seats should I search for?
+user: I'm in a party of 3.
+assistant: Please confirm that you'd like 3 luxury ride seats in a cab going to o 3500 Pennsylvania Avenue # 101.
+user: Yes, sounds good.
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your cab and it should be here shortly.
+user: Thank you very much. You've been very helpful. That is all for now.
+assistant: Have a great day!

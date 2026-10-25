@@ -1,0 +1,22 @@
+user: I need to find a new place to live close to my new job. I'm looking for something with two bathrooms and a garage.
+assistant: Okay, would you prefer a place for sale or for rent?
+user: I just want to find a place for rent for now.
+assistant: I need the name of the city where you would like me to search and the number of bedrooms you would like the place to have.
+user: I would like it to be close to my new job in Fremont and it needs to have two bedrooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: There is a place called Boulevard, located at 40001 Fremont Boulevard, and they are asking $3,050 a month.
+user: That sounds good and is in my price range.
+assistant: Can I do anything else for you?
+user: Yes, can you help me schedule a walk through?
+assistant: I certainly can, when would be a convenient time for you?
+user: The sooner the better, so later today would be great.
+assistant: Sure, you would like to schedule a walk through at Boulevard on March 1st, is that correct?
+user: No, I'm sorry, I don't think I have time today. Can we try to schedule it for March 4th instead?
+assistant: I've went ahead and changed that to a walk through at Boulevard on March 4th. Is that right?
+user: Yes, everything you have is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: I am happy to inform you that your appointment has been scheduled.
+user: Does it provide information on a washer and dryer inside the house?
+assistant: I'm sorry but it does't appear to have a washer and dryer.
+user: Okay, thanks for everything.
+assistant: My pleasure, enjoy the rest of your day!

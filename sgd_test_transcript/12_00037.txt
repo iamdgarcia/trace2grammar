@@ -1,0 +1,38 @@
+user: Help me get some bus tickets.
+assistant: What's the amount of tickets you need?
+user: I need tickets for four people.
+assistant: Where are you travelling to and what time do you want to depart?
+user: I want to depart at 10:30 in the morning to go to San Fran.
+assistant: And what day will you be departing?
+user: I want to depart on Tuesday next week.
+assistant: And where will you be departing from?
+user: I will be departing from Fresno, CA.
+assistant: I'll get you 4 bus tickets with no extra luggage for Fresno to San Francisco on March 5th at 10:30 am. Please confirm if this is correct.
+user: I confirm that's correct. What station is the departure from and what's the price?
+tool(BuyBusTicket): ok n_results=1
+assistant: The departure is from 2660 Tulare St. I'm sorry but the tickets could not be purchased, would you like to buy tickets for the 10:50 am departure for $30?
+user: Yes, try that.
+tool(BuyBusTicket): ok n_results=1
+assistant: The tickets have been purchased.
+user: Thanks for that. I also need a rental car while I'm there. I want to get it at 6 in the evening.
+assistant: And you'll be picking it up in San Francisco?
+user: Yes, that's right.
+assistant: And you want the car from March 5th?
+user: I want it from March 9th.
+assistant: And how long do you need the car?
+user: I want to have it until the 10th of this month.
+tool(GetCarsAvailable): ok n_results=7
+assistant: There are 7 cars that may interest you. There's a nice Sedan Audi A8 at Salesforce Transit Center.
+user: What's the cost per day?
+assistant: The cost per day is $31.00.
+user: That will work.
+assistant: Do you want to reserve the car?
+user: Yes, I do.
+assistant: Would you like to add insurance?
+user: No, that's not necessary.
+assistant: I'll reserve for you the Sedan, no insurance, at Salesforce Transit Center with pick up on March 9th at 6 pm and drop off on March 10th. Is that good for you?
+user: Yes, that is what I want.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Thanks for all the help. I'll be going now.
+assistant: Take care and have a fine day.

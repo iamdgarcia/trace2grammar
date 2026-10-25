@@ -1,0 +1,23 @@
+user: I need you to find me a therapist.
+assistant: Should I search for a Psychiatrist, a Psychologist, or someone else and in what city shall I search in?
+user: I need a Psychologist in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: Alameda Children'S Specialized is a Psychologist in Oakland.
+user: That works for me. Get me an appointment.
+assistant: What day and time do you prefer?
+user: Try to find me something for tomorrow at 1 pm.
+assistant: You want to see Alameda Children'S Specialized at 1 pm on March 2nd, correct?
+user: That is right.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is booked and you will get a confirmation email soon.
+user: I need a ride to get there for 1 person.
+assistant: What type of ride do you want and are you travelling to 7200 BAncroft Ave # 125C?
+user: I want a Shared ride and that location address is correct.
+assistant: Is a Pool ride for 1 person to 7200 Bancroft Ave # 125C okay with you?
+user: That is fine.
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, not right now. Thanks.
+assistant: Have a great day.

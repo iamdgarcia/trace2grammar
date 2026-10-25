@@ -1,0 +1,36 @@
+user: Help me fine a salon please.
+assistant: Where do you want the service of salon?
+user: I would like to get in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: 9 Salons are there. One is Daredevils & Queens is a nice one in Santa Rosa.
+user: That is found nice.
+assistant: Do you need a reservation there?
+user: Not now, thank you.
+assistant: Do you need any other help?
+user: I want to enjoy a movie there preferably a regular show. I like Drama movies at Summerfield Cinemas.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie i After The Wedding. Do you like?
+user: After the Wedding is a right choice. When can I watch it?
+assistant: Do you like to watch it on March 2nd?
+user: That is found good.
+tool(GetTimesForMovie): ok n_results=1
+assistant: In summerfield Cinemas you can watch it. the show time is 8:30 pm
+user: Give me the address of the theater and details of fare of the ticket
+assistant: the cost of ticket is $10 per person. The address is 551 Summerfield Road.
+user: Thats great. Please reserve a time in the salon selected. Try to get it at half past 12 in the afternoon.
+assistant: Please confirm the following. you need appointment in Daredevils & Queens at 12:30 pm and the appointment is on March 2nd.
+user: Thats found great.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, I failed to fix your seat. Any other help you need?
+user: Please try again to fix at 4:15 pm.
+assistant: Please confirm the details, you need appointment at Daredevils & Queens, at 4:15 pm on March 2nd.
+user: Great, give their phone number and address.
+tool(BookAppointment): ok n_results=1
+assistant: The address is 122 4th street. Contact them on 707-575-5123. It is also failed to book. do you wish to visit Daredevils & Queens on March 2nd at 4:30 pm?
+user: Thats found food.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you very much.
+assistant: Do you need any other service?
+user: No, thats all.
+assistant: Have a great day.

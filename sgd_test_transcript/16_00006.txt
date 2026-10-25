@@ -1,0 +1,32 @@
+user: I am interested in finding a salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons which you might consider, with one of them being 1512 Barber Shop which is a good salon in San Francisco.
+user: That seems nice to me.
+assistant: Do you want to have an appointment booked at this salon?
+user: Some other time maybe.
+assistant: Is there something else I can help you with?
+user: I also want to find a therapist in the area, which is a Psychologist.
+assistant: Are you interested in someone in San Francisco?
+user: That would work well for me.
+tool(FindProvider): ok n_results=4
+assistant: You might consider having Adam E. Pollock which is a Psychologist, and can be found in San Francisco.
+user: That seems a good option.
+assistant: Do you want to have an appointment reserved for you with this therapist?
+user: Yes, I want to have an appointment booked for me with this therapist.
+assistant: Can you tell me the suitable date and time for the appointment?
+user: I will be able to have the appointment for tomorrow in afternoon 2:30.
+assistant: Can you please confirm that you want to book an appointment with Adam E. Pollock at 2:30 pm on March 2nd?
+user: Yes, that suits me well.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested booking has been made, and you should receive an email soon which confirms it.
+user: Thank you, I am grateful. Now I would like to make a reservation for the appointment at the salon you found earlier for that day.
+assistant: Can you tell me the time you want to have for the appointment?
+user: The time when I want to have the appointment should be for 5 in the evening.
+assistant: Can you please confirm that you want to book an appointment with the hair stylist 1512 Barber Shop for March 2nd at 5 pm?
+user: Yes that is alright. Can you give me the address of the salon, and could you also tell me about the average rating the salon has?
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been booked. The salon can be found at 1532 20th Street, with a rating of 4.8
+user: I am grateful for you helping me.
+assistant: Do you want me to help you with something else?
+user: Nothing. I appreciate it very much.
+assistant: Have a good time!

@@ -1,0 +1,21 @@
+user: Can you find songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: I pulled up 10 right off one is by Shawn Mendes off the album Illuminate and is called Treat You Better. How does that sound?
+user: Sounds good.
+assistant: Wold you like to listen to it now?
+user: Not right this minute.
+assistant: Would you like assistance with another task?
+user: Are there any movies I'd like with Madisen Beaty that are online?
+assistant: What genre would you prefer?
+user: I would enjoy Eccentric story types of movies.
+tool(FindMovies): ok n_results=1
+assistant: Here's 1 its called Once Upon a Time In Hollywood.
+user: I think I would like that one, Once upon a Time. I am ready to hear that song now please.
+assistant: Would you like me to cast Treat you Better to the Living Room?
+user: No I want it to go to the speaker in patio.
+assistant: Alright your requesting that I cast Treat You Better to the Patio right?
+user: That would be correct.
+tool(PlayMedia): ok n_results=1
+assistant: May you experience audio enjoyment as you listen.
+user: Thanks, you can go now.
+assistant: Have a nice day.

@@ -1,0 +1,36 @@
+user: Can you find me a hotel please
+assistant: What city are you looking in?
+user: I want to find 1 star hotel in London, England
+tool(SearchHotel): ok n_results=10
+assistant: The Abercorn House is a 1 star place
+user: That sounds OK with me
+assistant: Do you want to reserve a room?
+user: Maybe in a bit
+assistant: What else can I do?
+user: Can you find me a round trip flight
+assistant: Which day are you coming back?
+user: I want to fly via Delta Airlines on Economy with a 9th of March return date
+assistant: What city are you leaving from?
+user: I want flights from New York?
+assistant: Are you heading out on March 3rd?
+user: I actually want to leave Saturday this week
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Conforming you want a flight on Delta Airlines at 8:50 pm with a 9:40 am return flight, it'll be $354
+user: OK cool, when does the returning flight arrive and when does the main flight arrive?
+assistant: The onward flight will get there at 9:12 am and the returning flight arrives at 2:02 pm
+user: OK cool, now reserve me a hotel from earlier
+assistant: OK, how long will you be there? Checking in on March 2nd?
+user: I'll be checking in on the 9th of March for five days
+assistant: Confirming 1 room at Abercorn House on March 9th for 5 days in London
+user: Yes please, can I smoke there by the way?
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked and no, it's non-smoking property
+user: OK great, now find me some attractions please
+tool(FindAttractions): ok n_results=10
+assistant: Sure, I found 10 including this historical landmark at 30 St Mary Axe (The Gherkin) which you might like
+user: Is it child friendly?
+assistant: Yes it is good for kids
+user: OK good to hear
+assistant: What else can I do?
+user: For now, nothing else
+assistant: OK then see you

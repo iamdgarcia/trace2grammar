@@ -1,0 +1,10 @@
+user: Please find me any of the songs that I've played the most this week.
+tool(LookupMusic): ok n_results=10
+assistant: How about Strangers by Sigrid, from her album Sucker Punch?
+user: Cool! That's the song I'd like you to play.
+assistant: Sure! Please confirm that you'd like to play Strangers in the Living room.
+user: You got that right.
+tool(PlayMedia): ok n_results=1
+assistant: Do enjoy listening to your music.
+user: Thank you very much. That will be all.
+assistant: Do have yourself a great day!

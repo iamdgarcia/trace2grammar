@@ -1,0 +1,24 @@
+user: I need a train.
+assistant: When are you leaving?
+user: I'm leaving next Wednesday.
+assistant: Where are you coming from? Where are you going?
+user: I'm going from Sacramento to SD.
+tool(FindTrains): ok n_results=10
+assistant: I found 10 trains. One is departing at 6:30 am and costs $138.
+user: That's a good one.
+assistant: Would you like tickets?
+user: No, not right now.
+assistant: Do you need anything else?
+user: I want something to do. Look for music events for next Wednesday.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events. Angel Olsen is performing at The Observatory North Park at 7 pm on March 6th.
+user: Sounds fun. What attractions are there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. Balboa Park is a park.
+user: Good. I'd like a house near there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. One is located at 1003 Coast Boulevard, La Jolla, California 92037, United States with a 4.6 rating.
+user: I'd like their number. Do they offer laundry?
+assistant: Their number is +1 858-224-7600. They offer laundry services.
+user: That's a good one. That's all.
+assistant: Have a nice day. Bye.

@@ -1,0 +1,29 @@
+user: Assistant, help me find a nice movie to watch.
+assistant: Sure. What type of movie are you in the mood to see?
+user: Something Offbeat sounds great right now. If possible, find one featuring Mikey Madison.
+tool(FindMovies): ok n_results=1
+assistant: Once Upon a Time in Hollywood features Mikey Madison. How does that sound?
+user: I would love to see Once Upon a Time. Can you show me attractions in a similar area?
+assistant: What area are you specifically talking about?
+user: Oh I thought I had said. I'm looking for attractions in CDMX.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Nature Preserve in CDMX. It is called Acuario Inbursa.
+user: Is this location considered child-friendly? I want their phone number as well. I have some questions.
+assistant: This particular location is not suitable for kids. The number to this location is 55 5395 4586.
+user: Okay, perfect. I want to find some music now. Play something for me that is popular right now like the album Sing To Me Instead. I love songs that are by Ben Platt.
+tool(LookupMusic): ok n_results=1
+assistant: Here is 1 song that you would like. It is Grow As We Go by Ben Platt from his album Sing To Me Instead.
+user: How long ago did it come out? Was it seven years ago?
+assistant: That is incorrect. It came out in the year 2019.
+user: That's exactly what I'm looking for. Please play this song for me.
+assistant: You wish me to play Grow As We Go in the Living room correct?
+user: Yes that's right. Go ahead.
+tool(PlayMedia): ok n_results=1
+assistant: Now playing. Please enjoy your music.
+user: Awesome. Can you play Once Upon a Time In Hollywood with English subtitles?
+assistant: Please confirm the following movie details. Getting ready to play Once Upon a Time in Hollywood with subtitles in English.
+user: Yep. That's right. I'm ready to watch it.
+tool(PlayMovie): ok n_results=0
+assistant: I failed to play this movie for you. I apologize for the inconvenience. Can I help you with something else instead?
+user: It's quite alright. I don't need anything else at the moment. Thank you.
+assistant: You are welcome. Have a wonderful evening.

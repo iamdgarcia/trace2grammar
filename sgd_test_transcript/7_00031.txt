@@ -1,0 +1,20 @@
+user: I'm looking for a new place to live.
+assistant: Are you looking to buy or rent? How many bedrooms and bathrooms do you want?
+user: I want to buy a place. I'd like two bedrooms and two bathrooms.
+assistant: What area is are you interested in?
+user: I like the Fremont area.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 10 houses that fit your criteria. Boulevard is nice. It is located at 40001 Fremont Boulevard and sells for $2,800,000.
+user: Sounds promising. I'd like to make an appointment to see it.
+assistant: When should I make the appointment for?
+user: Make it for the 9th of March.
+assistant: To confirm: You would like to see the property on Fremont Boulevard on March 9th.
+user: No, make it the 2nd of this month instead.
+assistant: To confirm: you would like an appointment to see the property on Fremont Boulevard on March 2nd.
+user: You got it.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your appointment is confirmed.
+user: That's great. Thank you.
+assistant: Is there anything else you needed?
+user: Not right now, thanks.
+assistant: Have a wonderful day.

@@ -1,0 +1,13 @@
+user: I would like to search for a round trip flight from Vancouver with three tickets available, please.
+assistant: What are your travel dates for departure and return?
+user: I would like to start the trip on the 3rd, and return on the 8th.
+assistant: Where would you like to go?
+user: I will be flying to Washington.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: American Airlines has a connecting flight at 1:10 pm, with a return flight at 2:55 pm, for $442.
+user: Would these be Economy class tickets? What time does the return flight land?
+assistant: Yes, the seats are Economy. The return flight arrives at 9:56 pm.
+user: OK, that all sounds good.
+assistant: Is there anything else I can help you with?
+user: No, thank you for your help.
+assistant: Have a great day!

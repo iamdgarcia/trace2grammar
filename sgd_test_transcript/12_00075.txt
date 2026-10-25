@@ -1,0 +1,21 @@
+user: I would like a bus from Long Beach, CA to SD.
+assistant: When would you like to leave?
+user: Thursday next week.
+tool(FindBus): ok n_results=9
+assistant: There is a bus leaving at 6:50 am and it costs $24.
+user: Yes, that would work. I want to get tickets on that bus.
+assistant: How many tickets?
+user: I need 2.
+assistant: You would like 2 tickets for a bus leaving Long Beach and arriving at San Diego on March 7th at 6:50 am with no extra luggage?
+user: That would be fine. Where would the bus be stopping off at?
+tool(BuyBusTicket): ok n_results=1
+assistant: At El Cajon Bus Stop.
+user: Great. I would need a hotel to stay in when I get there.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 suitable accommodations. There is a 3 star hotel called Bahia Resort Hotel.
+user: That would work.
+assistant: You would like to make a reservation?
+user: Not right now.
+assistant: Is there anything else you need?
+user: No. I have everything I need.
+assistant: Enjoy your day.

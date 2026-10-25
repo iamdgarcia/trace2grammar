@@ -1,0 +1,28 @@
+user: Will you find me a bus departing at 10:30?
+assistant: I will do my best. Do you know where you would like to pick up the bus and where you are going?Do you have a date in mind?
+user: Yes. The trip will be from Anaheim to Sacramento, CA. I would like to leave the 5th of March.
+assistant: Just one ticket?
+user: Actually I will need 4 tickets.
+assistant: I believe you need passes for a bus ride for 4 from Sacramento to Anaheim this March 5th. The bus will leave at 10:30 am. If I am correct there will be no extra bags.
+user: That's right. Do you know the name of the station I will get on the bus at? Also is this a one-stop bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: Yes. It is a one-stop trip. You would board the bus at 65th Light Rail Station. For some odd reason I could not secure the passes. I can attempt to get passes for an alternate bus that leaves at 10:50 am for $55.
+user: That's better than nothing.
+tool(BuyBusTicket): ok n_results=1
+assistant: The passes will be in your name when you arrive.
+user: I am grateful beyond belief for your assistance. When I arrive I will also need a rental vehicle.
+assistant: I can help with that request. Will March 5th be the pick up date. Would picking up the car in Anaheim be suitable?
+user: The date for the rental should be from March 6th to March 9th. Thanks for checking.
+assistant: When is the best time for you to get the car?
+user: 4:30 in the evening would be perfect.
+tool(GetCarsAvailable): ok n_results=10
+assistant: You have 10 available choices. One good choice is a Sedan Buick Regal Sportback available from the John Wayne Airport.
+user: That's a great choice. Please make the reservation in my name.
+assistant: You have the option to include insurance.
+user: Yes please. Thanks for reminding me.
+assistant: I believe you are requesting help booking a car with insurance from the John Wayne Airport. A Sedan would be suitable. The rental dates will be from March 6th to March 9th.You are okay picking up the rental at 4:30 pm. Are the details correct?
+user: The details are exactly right. Thanks for checking.
+tool(ReserveCar): ok n_results=1
+assistant: The rental has been booked in your name.
+user: Much gratitude. I don't need anything else right now.
+assistant: Take it easy.

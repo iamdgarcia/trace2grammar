@@ -1,0 +1,31 @@
+user: There is need for a car for the proposed tour. What about getting one?
+assistant: Can you please mention the pick up date and period of use?
+user: I wish to used it till 5th of this month From March 8th.
+assistant: Please mention the placed and time of pick up.
+user: I need it at 4:30 pm from Long Beach, CA.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is one meeting your demand, an SUV Alfa Romeo Stelvio from LGB Airport.
+user: That looks perfect.
+assistant: What about booking the car?
+user: I want booking but not now.
+assistant: Then what else do you need?
+user: You please book ticket for any event there.
+assistant: Are you particular with location and type of event?
+user: Yeah, preferably Third Annual Diversity Festival around Los Angeles.
+assistant: No of tickets and date you prefer please.
+user: Try for one on 9th of March and need one ticket
+assistant: Please confirm, you are intending to watch Third Annual Diversity Festival on March 9th in Los Angeles. There will be 1 person to watch it.
+user: Yeah, details are correct. What is the time of start?
+tool(BuyEventTickets): ok n_results=1
+assistant: It is booked and starts at 7 pm.
+user: Ok, fine, now you can go on with reserving the car we found.
+assistant: You like to add insurance, no?
+user: NO, I dont need.
+assistant: Please go through the details, You are picking up a SUV car from LGB Airport on March 5th at 4:30 pm. The drop-off date is March 8th.
+user: Please add insurance.
+assistant: Ok, the details of request is , SUV on rent with insurance added.
+user: Yeah, fine, thank you.
+tool(ReserveCar): ok n_results=1
+assistant: It is reserved for you.
+user: Great, thank you very much.
+assistant: Enjoy a happy day.

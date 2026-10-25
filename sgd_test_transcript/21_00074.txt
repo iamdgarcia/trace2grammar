@@ -1,0 +1,19 @@
+user: I need to find out the weather.
+assistant: What city would you like to check the weather in?
+user: Let's check Anaheim, CA.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be 78 degrees Fahrenheit, and there is a 29 percent chance of rain.
+user: Thank you. I would like to find something to do there. Can you show me some attractions in the area that are child-friendly, with no admission fee? Any type is fine.
+tool(FindAttractions): ok n_results=6
+assistant: There are 6 attractions that meet your criteria, including Angel Stadium of Anaheim, a Sports Venue.
+user: What is the phone number?
+assistant: The phone number is 714-940-2000.
+user: OK, sounds great. Can you help me order a cab to get there?
+assistant: What type of ride would you prefer, for example Pool or Luxury? How many seats do you need?
+user: I prefer a Shared ride. We have a group of two.
+assistant: You would like a car to Angel Stadium of Anaheim with 2 seats available in a Pool ride, is that correct?
+user: Yes, that sounds great.
+tool(GetRide): ok n_results=1
+assistant: Your cab is booked and is on its way.
+user: Thanks very much for your help! That's all I need for now.
+assistant: Have a wonderful day!

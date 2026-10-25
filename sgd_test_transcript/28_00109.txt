@@ -1,0 +1,42 @@
+user: Hello! I'd like to find some kid-friendly attractions.
+assistant: Where would you like me to search?
+user: Please look for things in London, UK.
+tool(FindAttractions): ok n_results=10
+assistant: 30 St Mary Axe (The Gherkin) is a very popular historical landmark.
+user: Can you tell me if there is an entrance fee and what the contact number is?
+assistant: You can reach them at 20 7071 5029 and there is an entrance fee to access the place.
+user: Thank you for the information.
+assistant: Is there something else I can help you with?
+user: I'd like to rent a sedan from the 10th of March to March 12th.
+assistant: Would you be picking it up in London. What time works best for you?
+user: I'd like to pick it up in London at 1:30 pm.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is a Audi A8 sedan available at Heathrow International Airport.
+user: What is the cost?
+assistant: It is $35.00 each day.
+user: Can you tell me what is available in Fresno?
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a Dodge Charger sedan available at Fresno Yosemite International Airport.
+user: Would there be anything else available if I were interested in a Hatchback?
+tool(GetCarsAvailable): ok n_results=5
+assistant: There are 5 that meet your criteria at Fresno Station. One is a Ford Focus Hatchback.
+user: I'd like that one.
+assistant: Would you like to make the reservation now?
+user: Yes, please confirm the car for me.
+assistant: Would you like to purchase additional insurance?
+user: No, I don't need it.
+assistant: You'd like to pickup a Hatchback at Fresno Station on March 10th at 1:30 pm. You will return it on March 12th and you are declining additional insurance.
+user: On second thought, I think I should get the insurance.
+assistant: You'd like to reserve the hatchback with insurance. Is that correct?
+user: Yes, that's right. What is the price of the rental per day?
+tool(ReserveCar): ok n_results=1
+assistant: It is $36.00 per day and your reservation was successful.
+user: Great. Can you share the 30 St Mary Axe (The Gherkin) address?
+assistant: With whom would you like to share it?
+user: Send it to Nathan.
+assistant: You'd like to share 30 St Mary Axe (The Gherkin) with Nathan.
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Great. Thank you for all of your help.
+assistant: You're very welcome. Have a wonderful day.

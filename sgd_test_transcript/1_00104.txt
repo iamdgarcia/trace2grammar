@@ -1,0 +1,18 @@
+user: I want to stay in a nice Hotel for a while and I need your help to search for the good one. Can you search it in Rio?
+tool(SearchHotel): ok n_results=10
+assistant: What about a 2 star hotel named Atlantico Copacabana Hotel? Do you like to stay there?
+user: Let me decide and I want to know their phone number. Is they allow smoking there?
+assistant: No, smoking it not permitted there and their phone number is +55 21 2548-0011
+user: That's okay and thanks.
+assistant: Shall I reserve it now?
+user: Yes, I need to reserve it now and do it for me.
+assistant: Let me know the number of days that you want to stay in that hotel to book the same and from which date you need to book?
+user: I want to book it from the 1st and I need it for four days.
+assistant: Please confirm to book 1 room for 4 days in Hotel Atlantico Copacabana Hotel from March 1st in Rio de Janeiro.
+user: That is okay to proceed. I also want to know their address and cost per night.
+tool(ReserveHotel): ok n_results=1
+assistant: It costs $62 per night and they are located at Rua Siqueira Campos, 90 - Copacabana. Your booking was confirmed.
+user: Thank you for your information and help.
+assistant: Anything else you need/
+user: No, thanks and that's all.
+assistant: Have a good day.

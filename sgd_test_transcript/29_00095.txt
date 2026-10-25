@@ -1,0 +1,38 @@
+user: Find for me something interesting to do around Vancouver, BC on 5th of March.
+assistant: In what category you prefer to be? Music ,Theater or something else.
+user: I would like to be on 10th of this month.I really enjoy Play.
+tool(FindEvents): ok n_results=7
+assistant: A very popular option is Alice In Glitterland and is taking place at The Wise on March 10th at 4:30 pm.
+user: Sounds really good.
+assistant: You want to buy tickets?
+user: No, not now maybe later
+assistant: With something else I can help?
+user: Find me a house to stay there for 1 people with minimum rating 4.5.
+tool(SearchHouse): ok n_results=6
+assistant: 6 houses I have for you.A nice house located at 1128 West Georgia Street with rating 4.5.
+user: Laundry service is available here?
+assistant: Yes this place has laundry service.
+user: Something else you have.We are two people.
+tool(SearchHouse): ok n_results=6
+assistant: A nice house with rating 4.5 located at 1177 Melville Street.
+user: Laundry service they have?Tell me the contact phone number for this place.
+assistant: Yes the place has laundry service.+1 604-669-5060 is the phone number.
+user: I like this house.
+assistant: You want to make an reservation here?
+user: No,not now.Find me some buses that goes there.I want to leave from Seattle, Wa on 4th of this month and I want a direct bus.
+tool(FindBus): ok n_results=10
+assistant: I have 10 buses for you.What do you think about one that depart at 6:10 am and cost $29.
+user: Something else you can find?I plan to leave on March 1st.
+tool(FindBus): ok n_results=10
+assistant: How about one that depart at 7:20 am and cost $31.
+user: Good.Buy for me 2 two tickets at the event that you have found.
+assistant: Book 2 tickets for Alice In Glitterland in Vancouver on March 10th.I'm right?
+user: No.Book 4 tickets please.
+assistant: You want 4 tickets on March 10th.Is correct?
+user: Yes is okay for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is done.Have fun!
+user: Thanks a lot for your help.
+assistant: With something else can I help you?
+user: No.Thank you very much.
+assistant: Have a good day!

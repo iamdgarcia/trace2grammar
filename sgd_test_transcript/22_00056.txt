@@ -1,0 +1,57 @@
+user: please find a therapist in santa rosa for me
+assistant: are you looking for psychiatrist or psychologist
+user: i am looking for psychiatrist
+tool(FindProvider): ok n_results=6
+assistant: what about a psychiatrist called beck jennifer p in santa rosa
+user: what about psychologist
+tool(FindProvider): ok n_results=10
+assistant: do you want to try psychologist called bert epstein in santa rosa
+user: perfect. please booking an appointment for me at quarter to 3 in the afternoon
+assistant: what date do you want the appointment to be
+user: i want this to be at half past 11 in the morning on saturday this week
+assistant: please confirm your appointment with bert epstein at 11:30 am on march 2nd
+user: yes that is correct. what is their address
+tool(BookAppointment): ok n_results=0
+assistant: sorry they are booked, what else can i do for you
+user: can you try again on the 11th
+assistant: pleas confirm your appointment with bert epstein at 11:30 am on march 11th
+user: yes that is correct
+tool(BookAppointment): ok n_results=1
+assistant: your appointment is booked
+user: thank you, i also need to request a payment
+assistant: how much is the payment amount
+user: this is for 126 bucks
+assistant: who is the contact
+user: please request payment with tom
+assistant: please confirm your request for payment from tom for $126
+user: yes that is correct
+tool(RequestPayment): ok n_results=1
+assistant: your request for payment is completed
+user: please also find me a restaurant in that area
+assistant: what type of food do you like
+user: i want something that is non meat
+tool(FindRestaurants): ok n_results=1
+assistant: i found 1 non meat restaurant in santa rosa called rubio's
+user: what is their user rating
+assistant: their rating is 3.8
+user: how afforadable is this place
+assistant: this is a cheap restaurant
+user: ok, please book a table for me
+assistant: what time do you want to go
+user: please make it two in the afternoon
+assistant: please confirm your booking for 2 people with rubio's in santa rosa at 2 pm on march 11th
+user: yes that is correct
+tool(ReserveRestaurant): ok n_results=0
+assistant: sorry they are booked on that time would you like to try different time
+user: yes, please change it to 13:15
+assistant: please confirm your booking with rubio's for 2 people in santa rosa at 1:15 pm on march 11th
+user: yes that is correct. Is there outdoor seating and vegetarians option
+tool(ReserveRestaurant): ok n_results=1
+assistant: they do not have outdoor seating and yes for vegetarians option. Would you like to try booking for 2 people with rubio's at 1:30 pm on march 11th
+user: yes that is fine
+tool(ReserveRestaurant): ok n_results=1
+assistant: your seat is reserved
+user: thank you a lot
+assistant: what else can i do for you
+user: no that is all i need
+assistant: have a nice day

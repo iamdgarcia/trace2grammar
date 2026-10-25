@@ -1,0 +1,17 @@
+user: can you find me some movies online with Michaela Watkins?
+assistant: what genre do you like?
+user: I like movies with Christoph Maria Herbst. kids movies work too.
+tool(FindMovies): ok n_results=1
+assistant: there's 1 i found. how about The Angry Birds Movie 2?
+user: The Angry Birds works for me. Can you put it on with English subtitles?
+assistant: you want me to play The Angry Birds Movie 2 with english subtitles?
+user: yes.
+tool(PlayMovie): ok n_results=1
+assistant: the movie is now playing.
+user: thanks, what's the weather going to be like on the 9th of march in chi-town?
+tool(GetWeather): ok n_results=1
+assistant: the temperature that day will be 68 degrees Fahrenheit. there will be a 38 percent chance of rain.
+user: sure, cool.
+assistant: is there anything else?
+user: no, thanks!
+assistant: have a good day.

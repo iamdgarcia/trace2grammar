@@ -1,0 +1,29 @@
+user: Can you find me a train from Los Angeles?
+assistant: What is your departure date and city?
+user: Departing from San Fran on the 10th of March.
+tool(FindTrains): ok n_results=8
+assistant: 8 trains available. There is a 7:50 am train for a total of $94.
+user: Can you give me another option for two in Anaheim?
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6 am for a total of $53.
+user: What is the arrival station?
+assistant: Arriving at Anaheim Intermodal Center.
+user: I would like to find something to do with songs there as well.
+tool(FindEvents): ok n_results=1
+assistant: Brown Sabbath will be at Crossroads at House of Blues Anaheim on March 2nd at 7:30 pm.
+user: That one sounds good.
+assistant: Should I book tickets for you?
+user: Not at the moment.
+assistant: Is there anything else I can do for you?
+user: I would like to see some attractions near there.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 options. Angel Stadium of Anaheim is a sports venue in the area.
+user: Is it free and kid-friendly?
+assistant: It is free and kids will enjoy it as well.
+user: Are there any other attractions I might be interested in?
+assistant: Cars Land is another Tourist Attraction in the area.
+user: I will also need a home there with a 3.6 or higher rating for three.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 homes available. 1050 West Ball Road is a home with a 3.6 rating in the area.
+user: That home is great. That' will be all for now.
+assistant: Okay. Have a nice day. Goodbye.

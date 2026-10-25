@@ -1,0 +1,16 @@
+user: I need help finding a place to live.
+assistant: Would you prefer to rent or buy? Please say the number of bedrooms the property should have.
+user: I'd like to buy a place with 1 bedroom and 1 bath.
+assistant: Any particular area I should search in?
+user: Please find a property that has a garage, in San Jose.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found a very good property called Avenel Apartments, located at 750 North King Road, at a price of $1,700,000.
+user: I like that.
+assistant: Should I go ahead and schedule a visit to the property?
+user: Yes, please go ahead and schedule a visit for tomorrow.
+assistant: Sure no problem. Let me see if I got everything correctly: You'd like to book a visit to Avenel Apartments on March 2nd. Is that correct?
+user: You got that right. Could you find out the property's phone number? Also find out whether it has laundry machines inside the house.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully booked your appointment. You can contact the property on 408-844-4803. There are no machines inside the house.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Have a lovely day.

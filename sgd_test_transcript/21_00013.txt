@@ -1,0 +1,21 @@
+user: I'm going out and need help finding a cab.
+assistant: I can help you with that. Please tell me the number of seats, your ride preference, as well as your destination.
+user: I'd like The most comfortable ride for 1 to The Garden Restaurant.
+assistant: Okay. Please confirm that you'd like 1 Luxury ride seat in a cab going to The Garden Restaurant.
+user: That is correct. Do you know how long it'll take the cab to get here?
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your cab and it should be here in approximately 13 minutes.
+user: What's the price?
+assistant: $26.53 is the price for the ride.
+user: Thank you very much. You've been very helpful. While waiting, please find me some of the favorite songs on my playlist over the last 3 years.
+tool(LookupMusic): ok n_results=10
+assistant: Sure. The search yielded 10 songs that might interest you. How does Take Back Home Girl by Chris Lane in the Laps Around The Sun album sound?
+user: Could you tell me its genre and whether it was released in '18?
+assistant: It is a Country song that was released in 2017.
+user: That's the song I want to listen to. Please play it.
+assistant: Sure, no problem. Please confirm that you want the song Take Back Home Girl played in Living room.
+user: You got that right.
+tool(PlayMedia): ok n_results=1
+assistant: Do enjoy listening to your music.
+user: At the moment, that's all I need. Thanks.
+assistant: Goodbye and have a great day.

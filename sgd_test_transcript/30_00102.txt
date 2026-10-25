@@ -1,0 +1,27 @@
+user: Will you check the weather in Clayton on March 1st?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 70 degrees Fahrenheit with a 1 percent chance of rain.
+user: Will you schedule a visit to the property San Marcos?
+assistant: Confirm a visit to San Marcos on March 1st.
+user: Cool. Does it have 3 bedrooms and in-unit laundry?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit. It has in-unit laundry and 3 bed rooms?
+user: Thanks. Will you reserve a car there?
+assistant: You need the car until when?
+user: 6th of March is the return date.
+assistant: You need it from March 1st?
+user: That's fine.
+assistant: Any preference? Add insurance?
+user: A Sedan. Insurance is not necessary.
+assistant: Pick up time?
+user: Pick up at 11 o'clock in the morning.
+assistant: Pick up location?
+user: I prefer Vancouver Airport for pick up.
+assistant: Confirm a Sedan for pick up from YVR International Airport on March 1st at 11 am and drop off on March 6th.
+user: Awesome. Cost per day? Car's name?
+tool(ReserveCar): ok n_results=1
+assistant: I've reserved you a Volvo S90 for $35.00 per day.
+user: Thanks.
+assistant: Anything else?
+user: That's all for now.
+assistant: Have a wonderful day.

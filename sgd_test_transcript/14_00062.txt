@@ -1,0 +1,19 @@
+user: Hey, I'm bored and I'm looking for something to watch. Can you find me something with Lawrence Bender and directed by Quentin Tarantino?
+tool(FindMovies): ok n_results=1
+assistant: Sure, I found 1 movie you may enjoy. It's called Pulp Fiction and it has a rating of 92 out of 100.
+user: What genre is it?
+assistant: It's a Cult film.
+user: Sounds fun. Can you help me find something to listen?
+tool(LookupMusic): ok n_results=10
+assistant: How about the song Tu Larka Hai Bihari from the album Maza Mar Liya Dhori Ke Niche by Ravi Raj Surendra?
+user: What kind of music is it? When did it come out?
+assistant: Its a Country song from 2019.
+user: That's the one. Please play it for me.
+assistant: So you want to hear the song Tu Larka Hai Bihari on the living room?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song.
+user: Thanks a lot!
+assistant: Can I help you with anything else?
+user: No, that's all.
+assistant: Have a great day.

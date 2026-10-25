@@ -1,0 +1,23 @@
+user: I would like some assistance finding something to do that is interesting.
+assistant: Sure, I can help with that. Do you have any preference on the type of event or the city I should search?
+user: Yes, I would like Drama and see what's happening in Seattle, WA.
+tool(FindEvents): ok n_results=10
+assistant: On March 10th at 5 pm at the 12th Avenue Arts, there is a very popular event, Beatleconcert showing.
+user: Find out how much a ticket would run me please.
+assistant: Sure, the tickets are $50.
+user: That actually sounds pretty good.
+assistant: Should we go ahead and book a ticket now for the concert?
+user: Yes, I will be needing 3 tickets please.
+assistant: Alright please confirm: Purchase of 3 tickets for March 10th in Seattle for the Beatleconcert. Is this correct?
+user: Yes it is. Please locate the address for me as well.
+tool(BuyEventTickets): ok n_results=1
+assistant: Great news, I was able to successfully book your tickets. I also located the address to the venue, it is 1620 12th Avenue.
+user: Thank you, can you also help set up a cab to get there?
+assistant: Yes I can! Is there a preference on the type of ride you would like such as Luxury or shared ride?
+user: I would like just a normal ride please.
+assistant: No problem! Please confirm that we will be reserving a Regular ride for 3 people going to 12th Avenue Arts. Is this correct?
+user: Yes it is. What will the ride cost in total please?
+tool(GetRide): ok n_results=1
+assistant: I created your booking and the cab is on it's way. The ride will be $37.67.
+user: Great, thanks for your help. That will be all!
+assistant: Your welcome. Good bye!

@@ -1,0 +1,36 @@
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set. There is an alarm for 6 am titled get up.
+user: Okay, thanks. I'm looking for a restaurant.
+assistant: What type of food are you looking for? What city do you want to search in?
+user: I'm looking for an average priced restaurant serving Indian food in Berkeley.
+tool(FindRestaurants): ok n_results=5
+assistant: I found 5 restaurants for you. How about Ajanta in Berkeley?
+user: Yes, that sounds good. I'd like to reserve a rental car there.
+assistant: What time do you want to pick up the car?
+user: I want to pick it up at two pm.
+assistant: What date do you want to pick up the car and drop it off?
+user: I want the car from the 5th of March until the 10th.
+assistant: Do you want to include insurance?
+user: No, I don't
+assistant: Do you want a hatchback, SUV, or something else?
+user: A hatchback sounds good.
+assistant: Where do you want to pick up the car from?
+user: I'd like to pick it up from Orly International Airport.
+assistant: Okay, you want to pickup a hatchback from Orly International Airport from March 5th at 2 pm until March 10th, right?
+user: No, I want to pick it up from Heathrow International Airport on the 4th.
+assistant: Okay, you'd like to pick the car up from Heathrow International Airport on March 4th, correct?
+user: Yes, that works. What type of car is it and how much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation. It is a Nissan Qashqai and it is $28.00 per day.
+user: Okay, thank you. I want to share a location.
+assistant: Do you want to share the location of Heathrow International Airport? Who do you want to share it with?
+user: No, I want to share the address 1888 Solano Avenue with Maria.
+assistant: Okay, you'd like to share the address 1888 Solano Avenue with Maria, right?
+user: No, I want to share the address of Heathrow International Airport.
+assistant: Okay, sharing the address of Heathrow International Airport with Maria, correct?
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: Thank you. That is all I need.
+assistant: Have a great day.

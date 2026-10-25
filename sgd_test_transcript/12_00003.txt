@@ -1,0 +1,33 @@
+user: I need to get a bus ticket.
+assistant: What is your departure time?
+user: Leaving at half past 12 in the afternoon.
+assistant: What are you departure and arrival cities?
+user: I'm leaving from Portland and going to Seattle.
+assistant: What is you departure date and how many in your party?
+user: There are 4 in our party leaving on the 9th.
+assistant: Please confirm you don't have any extra baggage and want me to book 4 tickets on a bus departing from Portland and arriving at Seattle on March 9th at 12:30 pm.
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been booked.
+user: What is the rate and is it a one-stop bus?
+assistant: The bus is direct and will cost $28.
+user: Thanks. Can you help me find a car rental there on the 11th of this month also?
+assistant: Will you be picking up the car on March 9th?
+user: No, I need it on March 10th.
+assistant: Will you be picking the vehicle up in Seattle and at what time?
+user: Yes, that's correct and picking up at six pm.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 options. An Audi A8 Sedan is available at King Street Station.
+user: Sounds like a nice one.
+assistant: Should I book the car?
+user: Yes, please book it.
+assistant: Will you be requiring insurance?
+user: No, I will not need insurance.
+assistant: Please confirm you have waived the insurance and want me to book a sedan from King Street Station to be picked up on March 10th at 6 pm and dropped off on March 11th.
+user: Yes and can I get the daily rate?
+tool(ReserveCar): ok n_results=1
+assistant: The daily rate is $30.00. Your car reservation was successfully booked.
+user: Thanks so much!
+assistant: Can I assist you with anything else today?
+user: No. That's all. Thanks.
+assistant: You're welcome. Have a great day.

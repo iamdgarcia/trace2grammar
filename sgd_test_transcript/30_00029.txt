@@ -1,0 +1,25 @@
+user: I want to get tickets for an event please, 3 tickets.
+assistant: Is there a specific event and city you're talking about?
+user: The city is Philly and I was thinking about maybe seeing Musiq Soulchild.
+assistant: On what date please?
+user: The 9th of March please.
+assistant: Confirming admission for 3 to Musiq Soulchild on March 9th in Philadelphia.
+user: Great, sounds good. Where is that happening please?
+tool(BuyEventTickets): ok n_results=1
+assistant: The show takes place at City Winery. The tickets have been purchased. Enjoy the show!
+user: What's the address and when does the show begin?
+assistant: The show starts at 6:30 pm at 990 Filbert Street.
+user: Thanks for that. I'm also going to need a direct bus to that location.
+assistant: Is that also on March 9th? And departing from where please?
+user: No, the 6th of March please, from NYC.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses I can tell you about. There is a 7:40 am departure that has a fare of $21.
+user: Great, I need to get some tickets please.
+assistant: Confirming 3 fares on the 7:40 am bus from New York to Philadelphia on March 6th. No extra luggage, yes?
+user: Yes, correct. What's the departure station please?
+tool(BuyBusTicket): ok n_results=1
+assistant: That would be Penn Station. Your tickets have been purchased.
+user: Thank you very much for your help.
+assistant: Anything else I can help you with?
+user: Nope, I am all good, thanks.
+assistant: Thank you very much.

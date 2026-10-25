@@ -1,0 +1,27 @@
+user: What's the weather like on the 11th of this month?
+assistant: What location are you interested in?
+user: Sorry, the weather in Montara.
+tool(GetWeather): ok n_results=1
+assistant: The temperature average will be 86 degrees Fahrenheit and the chance of rain is 17 percent.
+user: Alright. I'm planning on visiting a property on that day, please help me schedule it?
+assistant: What property do you want to visit?
+user: It's Foothill - Twin Creeks.
+assistant: I'll schedule you a visit to Foothill - Twin Creeks on March 11th, is that right?
+user: That is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled your visit.
+user: Thanks, how much is the property and how many bedrooms does it have?
+assistant: The property is $3,700,000 and it has 3 bed rooms.
+user: Thanks. I also want to reserve a car on March 10th.
+assistant: What pick up time do you want and until when will you need the car? Also, do you require insurance?
+user: I'd like pick up to be 12:30 and I'll need the car until the 11th of this month. I don't require insurance.
+assistant: And where would you like to pick the car up from.
+user: I'd prefer to pick it up at SAN Airport.
+assistant: Would you like a Sedan, Hatchback, or any other style?
+user: I'd like a Sedan.
+assistant: I'll reserve a Sedan for you with pick up from SAN International Airport on March 10th at 12:30 pm and drop off on March 11th with no insurance. Are all the details correct?
+user: Everything is correct. What make and model is the car?
+tool(ReserveCar): ok n_results=1
+assistant: I've reserved the car. It is a Volvo S90.
+user: You've been really helpful, thank you. I'll be going now.
+assistant: Have a pleasant day.

@@ -1,0 +1,15 @@
+user: I'm looking for a psychologist in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 options. Barskyex Bryna G is a psychologist in San Jose.
+user: That one sounds great. What will the weather be like?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 78 degrees Fahrenheit with a 19 percent chance of rain.
+user: Sounds good. Can you book me an appointment with the psychologist.
+assistant: Would you like to make your appointment for March 1st and on which date?
+user: March 1st is good. Can you make it for 6 pm.
+assistant: Please confirm you want me to book an appointment with Barskyex Bryna G on March 1st at 6 pm.
+user: That's perfect.
+tool(BookAppointment): ok n_results=0
+assistant: I was unable to book your appointment. Is there anything else I can do today?
+user: No. That will be all. Thanks.
+assistant: You're welcome. Goodbye.

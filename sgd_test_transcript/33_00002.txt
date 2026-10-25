@@ -1,0 +1,30 @@
+user: Could you find me a place to live in Pittsburg with two bedrooms?
+assistant: How many baths do you need?
+user: I need one bath.
+assistant: Would you like to buy or rent a place?
+user: Find me a place to buy.
+tool(FindHomeByArea): ok n_results=4
+assistant: Belmont Apartment Homes is a nice property at 1010 Power Avenue that costs $2,650,000.
+user: That sounds good.
+assistant: Would you like to schedule a visit?
+user: Yes, schedule a visit for the 11th.
+assistant: Could you confirm that you want to schedule a visit for Belmont Apartment Homes and would like to visit on March 11th?
+user: Yes, that's right. Is there a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: There is no garage. I have scheduled your visit to the property.
+user: What is the phone number for the property?
+assistant: The phone number is 925-439-5655.
+user: Thank you. Could you tell me where it's located? Share it with Natalie.
+assistant: The address is 1010 Power Avenue and you're sharing the location with Natalie.
+user: That's right.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Would you get me a cab to go there?
+assistant: What sort of ride would you like? You can get pool, regular, or something else. How many seats do you want?
+user: I would like a normal ride in a group of one.
+assistant: Please confirm that you would like a ride to 1010 Power Avenue and that you need 1 seat in a regular ride.
+user: Works for me.
+tool(GetRide): ok n_results=1
+assistant: I have booked your ride and the cab is on its way.
+user: Thanks for helping. That's all I wanted.
+assistant: Have a good day.

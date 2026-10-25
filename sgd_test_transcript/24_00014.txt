@@ -1,0 +1,27 @@
+user: Find me a one way flight
+assistant: Whats the travel date and the city of departure?
+user: Looking for flights from ATL on 9th of March
+assistant: Where are you going?
+user: Going to washington
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I got 4 flight of American Airlines. The 2:55 pm departure flight without any layover and costs $123
+user: It is an Economy ticket?
+assistant: Yes, it is an Economy ticket
+user: Is it for one person, also whats the arrival time at washington?
+assistant: It is for 1 traveler and the arrival time is 4:46 pm
+user: thats great, get me trains going there?
+assistant: Is March 9th the start of travel ?
+user: no, Its March 11th
+tool(FindTrains): ok n_results=6
+assistant: Ok, there is a train leaving at 1 pm and costs $108
+user: ok thats good
+assistant: should i book the tickets?
+user: yes, please book Value tickets
+assistant: How many tickets?
+user: I want 2 flexible tickets with insurance
+assistant: Please confirm: Booking 2 flexible tickets to Atlanta from Washington on March 11th at 1 pm
+user: it works, whats the arrival and departure station?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are booked, It arrives at Union station and leaves Peachtree Station
+user: thanks a lot
+assistant: bye, have a good day!

@@ -1,0 +1,35 @@
+user: I'm looking for an online movie with Roberts Blossom.
+assistant: What type of movie?
+user: A sci-fi movie.
+tool(FindMovies): ok n_results=1
+assistant: Close Encounters of the Third Kind is 1 option.
+user: Close Encounters sounds good.
+assistant: Should I play the movie?
+user: Not right now.
+assistant: Is there anything else I can help you with?
+user: I would like to do something there?
+assistant: Where would you like me to search for attractions?
+user: In London, England, please.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 options. 30 St Mary Axe (The Gherkin) is a historical landmark in the area.
+user: Sounds interesting. Can you find me a song by Dierks Bentley?
+tool(LookupMusic): ok n_results=2
+assistant: There are 2 options. Burning Man by Dierks Bentley is available on The Mountain album.
+user: That one is perfect.
+assistant: Should I play the song?
+user: Yes, please play on patio device.
+assistant: Please confirm you want me to play Burning Man in the patio.
+user: Actually, make that on the living room.
+assistant: Please confirm you want me to play Burning Man in the living room.
+user: Yes. Thanks a lot.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy your song.
+user: Was this song released eight years back?
+assistant: It was released in 2018.
+user: Thanks. Can you please play the movie with or without subtitles?
+assistant: Please confirm you want me to play Close Encounters of the Third Kind with English subtitles.
+user: Yes, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started playing.
+user: Thank you. That's all.
+assistant: Please enjoy your day.

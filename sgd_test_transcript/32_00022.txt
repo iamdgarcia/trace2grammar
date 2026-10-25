@@ -1,0 +1,26 @@
+user: Search for therapist in san jose
+assistant: What's your preferred therapist type
+user: I am looking for a psychologist
+tool(FindProvider): ok n_results=10
+assistant: What about barskyex bryna g. A psychologist in San Jose
+user: Good can you book an appointment for me
+assistant: For what date do you want it
+user: Make it for 14th of this month
+assistant: What about your preferred time am
+user: It will be by evening 4:15 can you make it on 9th of March
+assistant: Please confirm the details making a booking with Barskyex bryna g at 4:15 pm. on March 9th
+user: What's the phone number and address
+tool(BookAppointment): ok n_results=1
+assistant: The address is 5755 cottle road # 4 you can call them on 408-363-4418. I couldn't make the appointment you want to try Barskyex bryna g on march 9th at 4:30 pm
+user: Great okay
+tool(BookAppointment): ok n_results=1
+assistant: Successfully booked it you will receive an email soon
+user: Thanks a lot for it
+assistant: Can i help you with anything else
+user: Recommend me to watch some movies
+tool(FindMovies): ok n_results=10
+assistant: 10 movies what about it chapter two which has 64 out of hundred rating
+user: Siunds great
+assistant: Do you need any more help
+user: No thank you that's all for now
+assistant: Have a nice day happy to be helped

@@ -1,0 +1,17 @@
+user: Assistant, help me find a therapist in Gilroy. Specifically, I'm looking for a Psychiatrist.
+tool(FindProvider): ok n_results=3
+assistant: A well-reviewed psychiatrist in Gilroy is Bacosa Frances.
+user: Can you provide me with the address and phone number please?
+assistant: Bacosa Frances is located at 8339 Church St # 106 in Gilroy. You can call them at 408-842-1119.
+user: That sounds acceptable. Oh. Can you tell me the forecast for the weather on the 10th of March in that area?
+tool(GetWeather): ok n_results=1
+assistant: There is an 18 percent chance of rain on the 10th of March with an average temperature of 72 degrees Fahrenheit.
+user: Sounds like pretty decent weather. Will it be windy that day?
+assistant: The wind speed will only be roughly 1 mile per hour.
+user: Thank you. Enough about the weather. Let's go back to booking the appointment. Can you schedule my appoint for the afternoon 3:15?
+assistant: Yes I can. Now booking an appointment with Bacosa Frances in Gilory on March 10th at 3:15 pm. If there are no corrections, I can proceed.
+user: Go ahead. Everything sounds fine to me.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked your appointment for March 10th at 3:15 pm. Check your inbox soon for a confirmation email.
+user: Thank you so much. Setting appointments are much easier with you to help. That's all for now. Bye.
+assistant: You are quite welcome. Farewell.

@@ -1,0 +1,30 @@
+user: I need a new place to live.
+assistant: Would you like to rent or to buy? How many baths and bed rooms are you looking for?
+user: I want to rent a place that has two bedrooms and one bath.
+assistant: In which area?
+user: Somewhere in Sunnyvale.
+tool(FindHomeByArea): ok n_results=10
+assistant: Aster park apartments is a nice place on 1059 Reed Avenue and the cost is $2,550.
+user: Great. I want to schedule a visit for the 7th of march.
+assistant: You would like to visit Aster park apartments on March 7th?
+user: Yes, I do.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled the visit.
+user: Now I want to share the location.
+assistant: You would like to share it with who?
+user: I want to share it with Jacob.
+assistant: You would like to share the location 1059 Reed Avenue with Jacob?
+user: Yes, I do.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location.
+user: I would need a regular cab ride for two to get there.
+assistant: You would like 2 seats on a regular cab ride to 1059 Reed Avenue?
+user: Yes, that is correct. How much would that cost?
+tool(GetRide): ok n_results=1
+assistant: I have booked the ride and your cab should be here shortly. The ride is $21.26.
+user: How long again do I have to wait till the cab gets here?
+assistant: About 5 minutes.
+user: Ok, thanks a lot.
+assistant: Anything else you need assistance with?
+user: No. You have been great.
+assistant: Enjoy the rest of your day.

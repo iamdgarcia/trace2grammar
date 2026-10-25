@@ -1,0 +1,21 @@
+user: I'm looking for a movie to see.
+assistant: Where are you located?
+user: I'm in Vacaville.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie that you can watch. What do you think of IT Chapter Two?
+user: I loved the first one. So I really want to see IT two. I also want make a reservation for a restaurant near there.
+assistant: What time do you want to make the reservation for?
+user: I want the reservation for afternoon 12:30.
+assistant: And what restaurant is this?
+user: It's Roline's, please make a reservation there.
+assistant: I'll make a reservation for 2 for Roline's in Vacaville on March 1st at 12:30 pm. Is that okay?
+user: Yes, that's very good. Are there vegetarian items there? And what's the user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've made the reservation. They do not have vegetarian items. They have 4.4 user rating.
+user: Thanks a lot. What are the movie times for IT two on that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's 1 time it is playing, it's 9:30 pm at Brenden Theatres.
+user: Okay, that will work.
+assistant: Do you want to purchase tickets?
+user: Not right now, I'll be going, I don't need any more help.
+assistant: Have an excellent day and take care.

@@ -1,0 +1,26 @@
+user: I would like to find a three star hotel in New York.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels. There is 11 Howard that is a 3 star hotel.
+user: What is their phone number and is it smoking friendly?
+assistant: Yes, you can smoke and their phone number is +1 212-235-1111.
+user: Yes, that sounds good.
+assistant: Would you like to reserve a room?
+user: Maybe later. I would like to find a flight with Southwest Airlines from Chicago on March 8th.
+assistant: Do you want to leave on March 5th?
+user: I would like to leave next Monday.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight with Southwest Airlines that leaves at 5:05 pm and returns is at 11:45 am for $185.
+user: When does the flight reach destination?
+assistant: The flight reaches destination at 8:24 pm an the returning flight arrives at 1:04 pm.
+user: I would like to book 1 room and check in next Monday for 5 days.
+assistant: Booking 1 room for 5 days on March 4th at 11 Howard in New york.
+user: Yes, that is perfect.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel has been booked.
+user: Can I find an event in that area?
+tool(FindAttractions): ok n_results=10
+assistant: There is a 9/11 tribute museum it's a nice museum.
+user: Ok, thank you for the information.
+assistant: Can I help with something else?
+user: That is all I needed.
+assistant: Have a good day.

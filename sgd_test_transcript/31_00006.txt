@@ -1,0 +1,32 @@
+user: I am in a mood for some self pampering and I want you to look for a salon.
+assistant: What city shall I look into?
+user: Find me a unisex salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: There is this nice salon in San Jose called Atelier Salon Willow Glen.
+user: Can you get me their address?
+assistant: They are on 1047 Lincoln Highway suite 101.
+user: Is there any other salon?
+assistant: In San Jose, you can also visit Barba & Co. San Jose.
+user: Get me their phone number.
+assistant: You can call them at 669-258-9601.
+user: Cool. Now I want to find a movie to watch at the 3 Below Theaters and Lounge. I don't mind any type of show.
+tool(FindMovies): ok n_results=4
+assistant: What do you think of After The Wedding, Fiddler: A Miracle of Miracles or The Art of Self-Defense?
+user: I think Fiddler is great.
+assistant: Shall I get you the tickets?
+user: Nope. Not now. What is the timings when I can see it?
+assistant: Is that on March 4th you want it for?
+user: Yeah that is correct.
+tool(GetTimesForMovie): ok n_results=1
+assistant: You have one show for 4:30 pm in the 3 Below Theaters And Lounge.
+user: Cool, make an appointment for that salon you found.
+assistant: What shall I make the timing of appointment to be?
+user: Book an appointment for 15:45.
+assistant: So do you confirm that you want an appointment with the salon Barba & Co. San Jose for March 4th at 3:45 pm?
+user: Yeah I confirm. Get me their address as well.
+tool(BookAppointment): ok n_results=1
+assistant: They are located on 1775 Park Avenue. I unfortunately couldn't get you the appointment. Would you like an appointment for March 4th at 3:30 pm instead at Barba & Co. San Jose?
+user: No, I don't want that.
+assistant: Shall I do anything else for you?
+user: Not really. Thanks.
+assistant: I hope you have a wonderful day!

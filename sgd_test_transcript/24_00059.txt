@@ -1,0 +1,23 @@
+user: I'd like to watch a movie.
+assistant: Where are you located?
+user: I'm in San Jose.
+tool(FindMovies): ok n_results=10
+assistant: What do you think about 47 Meters Down: Uncaged, Ad Astra, or After The Wedding?
+user: Uncaged sounds good. I'd like to book a table at a restaurant near there too.
+assistant: Which restaurant did you want to book at and what time did you want it for?
+user: I'd like a table at San Jose Original Joe's at 6 in the evening.
+assistant: Please confirm you're booking a table for 2 at San Jose Original Joe's in San Jose on March 1st at 6 pm.
+user: Yes, that sounds good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: What is the phone number of the restaurant?
+assistant: The restaurant's phone number is 408-292-7030.
+user: Thank you. What times can I watch the movie?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 showtime at AMC Eastridge 15 at 10 pm
+user: That sounds good.
+assistant: Did you want to buy tickets?
+user: No, not right now.
+assistant: Did you need help with anything else?
+user: No, but thank you.
+assistant: Have a great day.

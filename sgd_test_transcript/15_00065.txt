@@ -1,0 +1,30 @@
+user: Please help me to find a therapist.
+assistant: In which city shall I search in? What type of therapist you prefer?
+user: Search a Psychologist in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I searched and found 10 therapists for you. Do you want to meet Barskyex Bryna G, a Psychologist at San Jose.
+user: It is nice.
+assistant: When do you want to meet him?
+user: It can be done later. May I know the whether there on 13th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The temperature is 85 degree Fahrenheit and 18 % chance of rain.
+user: How windy it will be?
+assistant: The wind speed is 11 miles per hour.
+user: How much humidity will be?
+assistant: The humidity is around 29 %
+user: Thank you. Please go back to book an appointment with the therapist.
+assistant: Which is your preferred time?
+user: The appointment time is 14:30.
+assistant: Kindly ensure that, appointment has been booked with Barskyex Bryna G at 2:30 pm on March 13th.
+user: Yes. It is nice. What is their contact address?
+tool(BookAppointment): ok n_results=1
+assistant: Their contact address is 5755 Cottle Road # 4. I am sorry that, I could not make an appointment. Do you want to meet Barskyex Bryna G, a Psychologist on March 13th at 2 pm
+user: Yes. It is good.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. You will receive a confirmation mail.
+user: What is their contact number?
+assistant: Their contact number is 408-363-4418.
+user: Thank you so much. I appreciate your efforts.
+assistant: Do you need any other help?
+user: No. Thank you so much. I appreciate your efforts again.
+assistant: Happy to help you.

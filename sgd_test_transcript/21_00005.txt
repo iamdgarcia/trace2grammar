@@ -1,0 +1,21 @@
+user: I need a cab.
+assistant: How many seats do you want? What type of ride do you want?
+user: Three seats. I want a shared ride.
+assistant: Where are you going?
+user: I'm going to Eden Roc Apartments.
+assistant: A pool ride with 3 seats to Eden Roc Apartments. Is this right?
+user: Yes, that's it.
+tool(GetRide): ok n_results=1
+assistant: Your cab has been booked and is on its way.
+user: Thanks. I want to hear some songs. Find me some Sivik songs from four years ago. I want pop songs.
+tool(LookupMusic): ok n_results=1
+assistant: High by Sivik from the Winter Collection album is a god song.
+user: That's a good one.
+assistant: Would you like me to play it?
+user: Yes. Play it in my living room.
+assistant: Play High in your living room. Is this right?
+user: Yes, that's it.
+tool(PlayMedia): ok n_results=1
+assistant: The music has started. Enjoy.
+user: Thanks. That's all.
+assistant: Have a nice day.

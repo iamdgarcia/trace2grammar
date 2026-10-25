@@ -1,0 +1,22 @@
+user: Can you find me a salon in sf?
+tool(FindProvider): ok n_results=10
+assistant: there's 1512 barber shop in san francisco.
+user: that works, can you book an appointment?
+assistant: what date and time works best for you?
+user: can you make it for the 8th at 11:00?
+assistant: so you want to book an appointment over on 1512 barber shop for march 8th at 11 am?
+user: yes, that's right. what's their number? do they do men and women's hair?
+tool(BookAppointment): ok n_results=1
+assistant: it's been booked. the salon is unisex, and you can call them at 415-286-4371.
+user: thanks. can you find me somewhere to eat that serves french food and is affordable?
+tool(FindRestaurants): ok n_results=10
+assistant: there's amelie san francisco in san francisco.
+user: that sounds good. can you get me a table there?
+assistant: what time should i book?
+user: maybe it for evening 6:30 please.
+assistant: so you want a table for 2 at amelie san francisco in san francisco on march 8th at 6:30 pm?
+user: yes that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: it's been booked.
+user: thanks, that's everything.
+assistant: have a great day.

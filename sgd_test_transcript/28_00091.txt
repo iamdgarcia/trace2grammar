@@ -1,0 +1,32 @@
+user: can you show me cool child friendly things in phoenix, az?
+tool(FindAttractions): ok n_results=10
+assistant: there's 10 things you may like. how about a museum called the arizona capitol museum?
+user: are there any others? i want something for free.
+tool(FindAttractions): ok n_results=4
+assistant: there's 4 things for you. how about the museum called the arizona science center?
+user: is that all of them? i want some attracting in sydney, nsw.
+tool(FindAttractions): ok n_results=10
+assistant: there's 10 places for you. there's a sports venue called the anz stadium.
+user: okay cool. can you get me a rental car there until the 7th of march.
+assistant: do you want to pick it up in sydney? when do you want to pick it up and start the rental?
+user: yes i do. i want to pick it up on sunday this week at 1:30 pm.
+tool(GetCarsAvailable): ok n_results=9
+assistant: there's 9 cars i found. there's a hatchback fiat panda in kingsford smith international airport.
+user: how much is it a day?
+assistant: it's $26.00.
+user: that works for me. can you book it?
+assistant: do you want insurance on it?
+user: no thanks i don't need it.
+assistant: so you want a hatchback car from kingsford smith international airport on march 3rd at 1:30 pm until march 7th?
+user: yes that works for me.
+tool(ReserveCar): ok n_results=1
+assistant: it's been reserved.
+user: thanks. can you share the location for anz stadium with julia?
+assistant: you want to share the anz stadium location with julia?
+user: yes that's right.
+tool(ShareLocation): ok n_results=1
+assistant: it's been shared.
+user: thanks, that helps a lot.
+assistant: is there anything else?
+user: no, that's it.
+assistant: have a great day.

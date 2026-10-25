@@ -1,0 +1,18 @@
+user: I would like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: There is The Art of Racing in the rain that is a rating of 43 out of 100.
+user: Who is the director of this movie?
+assistant: The movie is directed by Simon Curtis.
+user: I would like to find an event for that day.
+assistant: What type of event would you like, Music, Theater or something else?
+user: I would like to see a Concert.
+assistant: In which city should I search?
+user: I would like to find one in New York City.
+tool(FindEvents): ok n_results=10
+assistant: Abbi Jacobson is at Kaufmann Concert Hall on March 11th at 7:30 pm.
+user: That movie sounds good.
+assistant: Would you like to purchase a ticket?
+user: No, I just wanted the information.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

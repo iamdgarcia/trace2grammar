@@ -1,0 +1,20 @@
+user: I'm looking for a classy restaurant in SF. Please help me find one.
+assistant: I can certainly help you with that. What type of cuisine are you searching for?
+user: I'm craving something like Japanese. Find something like Izakaya.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants you may enjoy. A top rated restaurant is 2g Japanese Brasserie in San Francisco.
+user: That sounds like just what I'm looking for.
+assistant: I can reserve a table for you. Do you wish for me to proceed?
+user: I sure do. Book it for me.
+assistant: What time would you like the reservation to be?
+user: Please make the reservation for 7:45 pm.
+assistant: At 7:45 pm on March 1st, you will be going to 2g Japanese Brasserie in San Francisco. The reservation is for 2 people. Is that acceptable?
+user: That works just fine for me. I can't wait to go.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Okay. I have booked your reservation at 2g Japanese Brasserie.
+user: Is there outdoor seating available? I need their phone number as well.
+assistant: I am sorry but there is no outdoor seating.However, the phone number to 2g Japanese Brasserie is 415-292-9997.
+user: No outdoor seating? That's okay. Anyway, thank you for your help.
+assistant: Do you require any other assistance?
+user: No that's all. Thank you for your help.
+assistant: You are welcome. Have a great day.

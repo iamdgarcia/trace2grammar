@@ -1,0 +1,28 @@
+user: I need a rental car for pickup at 3 o'clock in the afternoon.
+assistant: What is your pick up location?
+user: I'll be picking it up in San Fran.
+assistant: What are your pick up and drop off dates?
+user: March 6th until the 10th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice Audi A8 Sedan available at the Salesforce Transit Center.
+user: How much per day?
+assistant: It costs $30.00 per day.
+user: Is there anything else? How about a Hatchback?
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found 6 cars. How about a Hatchback Fiat Panda? It is available at SFO International Airport.
+user: How much per day?
+assistant: It costs $30.00 per day.
+user: That sounds good.
+assistant: Would you like to book the rental?
+user: Maybe later. Can you find me a house to stay in?
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 available houses. How about a nice house located at 1095 Market Street. It is rated 4.0.
+user: Sounds good. Can you reserve me that rental car?
+assistant: Would you like to add insurance?
+user: No, I don't need insurance.
+assistant: Confirming that you will be picking up a Hatchback rental at SFO International Airport on March 6th at 3 pm. You will be dropping off the rental on March 10th. You do not need insurance. Is this information correct?
+user: Yes, that all sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car rental has been successfully made.
+user: Thanks. That's all I need.
+assistant: You're welcome. Have a good day!

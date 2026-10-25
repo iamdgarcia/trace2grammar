@@ -1,0 +1,15 @@
+user: Can you help me find a good and regular show to watch possibly life history movies?
+assistant: Sure, where do you want to view this movie.
+user: I would like you to look up places in Santa Rosa.
+tool(FindMovies): ok n_results=1
+assistant: Would you be interested in seeing Fiddler: A Miracle of Miracles?
+user: Fiddler sounds great to me. Now can you help me find a good rock song from 2018 by Godsmack?
+tool(LookupMusic): ok n_results=2
+assistant: How about Under Your Scars by Godsmack off of the When Legends Rise album?
+user: Sure, play that one please.
+assistant: Would you like to hear Under Your Scars in your living room?
+user: Yes that would be fine.
+tool(PlayMedia): ok n_results=1
+assistant: Great, your song is is playing.
+user: Thank you so much, that will be all for me today.
+assistant: You are welcome, enjoy the rest of your day.

@@ -1,0 +1,28 @@
+user: Can you find me some child-friendly attractions in Mexico City?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that you might like and if you plan to visit a Museum, you should consider the Arte Carrillo Gil Museum.
+user: Thanks for the tip. Can you find me a rental car there?
+assistant: Are you planning to pick it up from Mexico City? On what date and at what time do you want to pick up the car?
+user: Yes, I plan to pick up the car at 10:30 am on the 3rd of March from Mexico City.
+assistant: When do you plan to return the car?
+user: I need it till the 7th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 suitable cars available and among them a nice Citroen C5 SUV is available for pick up at Benito Juarez International Airport.
+user: That sounds like a good option and I'd like to reserve it.
+assistant: Would you like to add insurance?
+user: No, I'll not be needing insurance.
+assistant: Please confirm that you want to reserve a SUV without insurance from 10:30 am on March 3rd to March 7th and that you will be picking it up from Benito Juarez International Airport.
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked as per your requirements.
+user: Thank you for the assistance.
+assistant: Is there something else I can do for you?
+user: Can you share the location of Arte Carrillo Gil Museum with Nathan?
+assistant: Please confirm that you want to share the location of Arte Carrillo Gil Museum with Nathan.
+user: Yes, please go ahead.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared with Nathan.
+user: That's very helpful of you. Thank you.
+assistant: Is there anything else I can do for you?
+user: No. Thank you. You have been very helpful.
+assistant: Have a great day!

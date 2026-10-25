@@ -1,0 +1,30 @@
+user: I want to go for a business trip and I need to find an one way flight from Vancouver, BC to Seattle. Search for one on the date of 12th of this month.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Is it comfortable for you to travel through American Airlines? I got an onward flight which takes off at 5:10 pm and the cost for the same is $268. Is it okay to you?
+user: Did you search it for Premium Economy class tickets?
+assistant: It is Economy class ticket and do you want the same?
+user: Let me know the number of persons that you have searched for the tickets and the time of arrival of this flight to my destination.
+assistant: It will reach to the destination at 2:17 am and I searched the same for 1 person only.
+user: Okay. Search for some other flights which should match my requirement.
+assistant: What do you think about an onward flight with Delta Airlines which takes off at 6:35 am with layover for the ticket cost $214?
+user: I prefer this flight. Please search for a train.
+assistant: When do you want to start your travel? Shall I search it for March 12th?
+user: I want the train from March 14th.
+tool(FindTrains): ok n_results=9
+assistant: Do you like to travel through a train departing at 6:20 am for the ticket cost $58?
+user: Let me decide and I want to know the origin and destination stations of this Train.
+assistant: Please note that this train will leave from Pacific Central Station and will reach finally to King Street Station.
+user: Please continue your search and find some other trains for four Economy seats.
+tool(FindTrains): ok n_results=5
+assistant: Got 5 results and what about a train departing at 7:10 am for the ticket cost $215 in total?
+user: Yes, this is the one I want. Thanks.
+assistant: Shall I book the tickets now?
+user: Do it for me now.
+assistant: Shall I include Travel insurance while booking the tickets?
+user: I need to add trip insurance.
+assistant: Please confirm to book 4 Value tickets on the train leaving from Vancouver on March 14th at 7:10 am to Seattle with trip insurance.
+user: That is okay to proceed. Let me know the origin and destination station of this train.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked the tickets to the selected train and the same will leave from Pacific Central Station and reaches to King Street Station.
+user: Thanks for all your information. That's all for today.
+assistant: Have a good day.

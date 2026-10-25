@@ -1,0 +1,23 @@
+user: I need help searching for a place to eat.
+assistant: Is there a type of food you prefer? And where do you want to search.
+user: I want to look for Korean Barbeque in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants I've found. Aato is a nice spot in San Francisco.
+user: Is there outdoor seating? And what's their user rating?
+assistant: There is not outdoor seating. Their user rating is 3.6.
+user: Okay, that can work. Please book me a table.
+assistant: What time do you want the table?
+user: I want it for half past 10 in the morning.
+assistant: I'll book you a table for 2 at Aato in San Francisco for March 1st at 10:30 am. Is that right?
+user: That is right.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry, but that time is all booked. Do you need anything else?
+user: Can we try for a table at 7 pm?
+assistant: I'll book you a table for 2 at Aato in San Francisco for March 1st at 7 pm. Is that right?
+user: That is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made the reservation.
+user: Thanks a lot.
+assistant: What else can I assist you with?
+user: Nothing else, thanks a lot.
+assistant: Have a pleasant day.

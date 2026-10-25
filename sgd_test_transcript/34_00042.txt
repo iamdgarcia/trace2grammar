@@ -1,0 +1,24 @@
+user: Is there a hotel you can find in Atlanta, GA?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 4 star hotel in that city, what about Ac Hotel by Marriott Atlanta Buckhead At Phipps Plaza?
+user: That hotel sounds good, thanks for finding it.
+assistant: Shall I make a reservation to this hotel?
+user: Perhaps some other time, not right now.
+assistant: Will that be all that I can help you with for today?
+user: What about attractions, what are some you can find in that city?
+tool(FindAttractions): ok n_results=9
+assistant: There is a place of worship you may like to visit, check out the Al-Farooq Masjid.
+user: Any other attractions you can find, one that is child-friendly?
+tool(FindAttractions): ok n_results=9
+assistant: There are 9 other attractions that may interest you, what about a park, the Atlanta Botanical Garden?
+user: That sounds great, please reserve me a room at the hotel you found earlier.
+assistant: What will be the duration of your stay, and when will you be checking in?
+user: I will only be staying for two days after checking in on the 11th of this month.
+assistant: You will book 1 room in Atlanta at the Ac Hotel By Marriott Atlanta Buckhead at Phipps Plaza on March 11th, for a 2 day stay is that right?
+user: That all sounds good to me, thanks.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel room was successfully booked, hope you enjoy your stay.
+user: Awesome, thanks for the help, I really appreciate it.
+assistant: May I assist you with anything else?
+user: That won't be necessary, you been really helpful, thank you.
+assistant: Your welcome, have a nice day.

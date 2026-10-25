@@ -1,0 +1,23 @@
+user: Can you find a movie for me at Stanford Theatre?
+assistant: What city will you be in?
+user: Find movies in Palo Alto please.
+tool(FindMovies): ok n_results=2
+assistant: I came up with these 2 - Stage Door and The Ladykillers.
+user: The Ladykillers please.
+assistant: Should I get seats to that for you?
+user: No thanks, I do want to reserve a table at the restaurant Osteria Toscana though, can you do that?
+assistant: When did you want to eat?
+user: Make it for 3 persons at 11:30.
+assistant: That's 3 people at the Osteria Toscana in Palo Alto on March 1st at 11:30 am do I have that right?
+user: I changed up on you, forget that one and make a reservation for four of us at the Green Elephant Gourmet,
+assistant: Alright same info except 4 of you and at the Green Elephant Gourmet right?
+user: Yes that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been booked.
+user: What are the showtimes of the movie I'm interested in for that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: The Stanford Theatre is only offering 1 showtime and that is 7:30 pm.
+user: That works for me.
+assistant: Will there be anything else?
+user: No, go on now, thank you.
+assistant: Have a nice day.

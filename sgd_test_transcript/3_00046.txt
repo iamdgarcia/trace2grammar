@@ -1,0 +1,9 @@
+user: I need a round trip flight.
+assistant: What do would you like it on? What city are you coming from?
+user: I'm leaving from Philadelphia and coming back on the 7th.
+assistant: Where are you going? What date are you going?
+user: I'm leaving next Tuesday. I wanna go to NYC. I'm fine with any class.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 flights for you. Is American Airlines okay? One flight takes off at 3:20 pm with the returning flight at 1:35 pm. The tick would cost $162.
+user: That's good. Thank you. That's all.
+assistant: Have a nice day.

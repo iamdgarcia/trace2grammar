@@ -1,0 +1,13 @@
+user: Hey I want to see a movie right now
+assistant: What movie in particular?
+user: I want to watch The Load, I hear it's good
+assistant: Confirm that you want me to play The Load with English subtitles?
+user: No actually I changed my mind and want to watch The Farewell insead.
+assistant: So The Farewell with English subtitles, is that ok?
+user: Yes please, what genre is that movie?
+tool(PlayMovie): ok n_results=1
+assistant: I'm playing it now, and it's a Family themed movie
+user: Great, thank you!
+assistant: Can I do anything else for the time being
+user: No, that's all for now
+assistant: OK enjoy your movie!

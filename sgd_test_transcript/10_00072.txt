@@ -1,0 +1,20 @@
+user: I am looking for online films.
+assistant: What genre do you prefer?
+user: A comedy, funny please.
+tool(FindMovies): ok n_results=5
+assistant: What about Chhichhore, Good Boys or My Big Fat Greek Wedding?
+user: What else do you have?
+assistant: Where'd You Go, Bernadette or Yesterday?
+user: No maybe something else?
+tool(FindMovies): ok n_results=0
+assistant: I cannot find anything else. Can I assist you with something else?
+user: Keep looking for movies please. I do like Peter Dinklage and Cartoon movies.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 called The Angry Birds Movie 2?
+user: angry birds is perfect, can I watch it now?
+assistant: To confirm then I will play The Angry Birds Movie 2 in English with subtitles.
+user: Yes that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: Movie has started.
+user: Thanks that is all for now.
+assistant: Have a lovely day.

@@ -1,0 +1,45 @@
+user: I want to find 2 smoking rooms at a four star hotel.
+assistant: What city do you want me to look in?
+user: Please look for hotels in KL.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that should meet your needs. Capri By Fraser Kuala Lumpur is a hotel with 4 stars.
+user: Are there some more hotels that match my needs? I need 1 room in LAX.
+tool(SearchHotel): ok n_results=9
+assistant: There is a 4 star hotel named Dream Hollywood.
+user: I like how that sounds.
+assistant: Do you want to make a reservation at the hotel?
+user: Not at this time.
+assistant: What else can I help you with?
+user: Will you look for rental cars in that area?
+assistant: How long do you want the car?
+user: I will need to keep it until March 12th.
+assistant: Will you need to get it on March 4th?
+user: I need to have it from the 11th of this month.
+assistant: What time would you like to get it?
+user: I want to get it at 6:30 pm.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I found 8 open cars. There is a reliable SUV Dacia Duster that can be picked up at LAX International Airport.
+user: What is the daily cost?
+assistant: The price is $47.00 each day.
+user: Can you look for a Sedan? That would be good.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 available Sedan. A Hyundai Ioniq can be picked up at LAX International Airport.
+user: What is the price a day?
+assistant: You will pay $31.00 each day.
+user: Anything else?
+assistant: There is a great Sedan Volvo S90 at LAX International Airport.
+user: I think that would be good.
+assistant: Do you need something else?
+user: I would like to get the rental car.
+assistant: Would you like to add insurance to it?
+user: Insurance isn't needed.
+assistant: You are going to pick up a Sedan car at the LAX International Airport on March 11th at 6:30 pm and keep until March 12th. You do not want insurance. Is that correct?
+user: No, I do want to purchase insurance.
+assistant: you want to get insurance and bring the car back on March 12th. Correct?
+user: Yes, that seems fine.
+tool(ReserveCar): ok n_results=1
+assistant: I have made your rental car reservation.
+user: Will you give me the daily cost?
+assistant: You will pay $43.00 daily cost.
+user: Thanks for your help and I'm done.
+assistant: I hope you have a great day.

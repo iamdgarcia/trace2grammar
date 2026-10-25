@@ -1,0 +1,27 @@
+user: I would like to find a family movie with Dolly Parton directed by Herbert Ross.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie there is Steel Magnolias that as a 70 out of 100 rating.
+user: I would like to find a restaurant.
+assistant: In what area would you like to go and what type of food would you like?
+user: I would like to find some Nepalese food in San Fran.
+tool(FindRestaurants): ok n_results=5
+assistant: There are 5 restaurants. There is Cuisine Of Nepal Restaurant in San Francisco.
+user: Can you find a restaurant in California?
+tool(FindRestaurants): ok n_results=10
+assistant: Al's Place is located in San Francisco.
+user: Yes, that restaurant sounds good.
+assistant: Would you like to reserve a table?
+user: Yes, I would like to book a table.
+assistant: What time is your reservation for?
+user: I would like to go at 12:15.
+assistant: Booking a table for 2 at Al's place on March 1st at 12:15 pm in San Francisco.
+user: I would like to go on the 9th of this month at 16:45.
+assistant: Booking a table for March 9th at 4:45 pm.
+user: Yes, that works for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Booking a table for 2 at Al's place on March 9th at 5 pm.
+user: Yes, that is perfect.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was made.
+user: That is all I needed.
+assistant: Have a good day.

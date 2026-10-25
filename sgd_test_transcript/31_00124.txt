@@ -1,0 +1,28 @@
+user: Can you search for a family counselor in the Los Gatos area?
+tool(FindProvider): ok n_results=5
+assistant: There is a Family Counselor with the name of Emily Rosenbaum in Los Gatos.
+user: Will you look for other therapists?
+assistant: Perhaps you would like to go to family counselor Fredkin Susan in Los Gatos.
+user: Will you look for other therapists?
+assistant: Maybe Michael P. Healy would be a good choice as a family counselor in Los Gatos.
+user: Can you give me their phone number and address?
+assistant: You can reach them at 408-379-7747 and find their address at 800 Pollard Road.
+user: Great. Would you make an appointment?
+assistant: What is the best date for your appointment?
+user: Would you make it on the 3rd at 11:45?
+assistant: Making an appointment with Michael P. Healy on March 3rd at 11:45 am. Are these details correct?
+user: No. Can you make it for the 9th at 2:15 in the afternoon?
+assistant: Please verify the following specifics: March 9th at 2:15 pm.
+user: Yes, that is great.
+tool(BookAppointment): ok n_results=1
+assistant: I apologize, but there was an issue and I was unable to make the appointment. You may want to see if you can get an appointment on March 9th at 2 pm with Michael P. Healy.
+user: Alright, I can do that.
+tool(BookAppointment): ok n_results=1
+assistant: I was able to make the appointment. There should be a confirmation email coming soon.
+user: Thanks so much! Could you give me some movie suggestions? I would really enjoy movies with Director Quentin Tarantino and that are a bizarre story line. I like movies with actor Lucia Oskerova.
+tool(FindMovies): ok n_results=1
+assistant: I was able to find 1 movie that you might like. The movie Once Upon A Time in Hollywood has a rating of 85, which is out of 100.
+user: Sounds like a plan.
+assistant: Do you need more help?
+user: Nope, and thanks so much.
+assistant: It was a pleasure to help you.

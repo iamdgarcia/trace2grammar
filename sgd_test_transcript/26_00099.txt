@@ -1,0 +1,26 @@
+user: Hey, can you help me get 1 seat on a train leaving from Chicago on the 8th please?
+assistant: What's your destination?
+user: It is NYC.
+tool(FindTrains): ok n_results=7
+assistant: I found a train leaving at 7:30 am with a ticket that costs $124.
+user: Sounds like a good one.
+assistant: Should I book it?
+user: Not now, thank you.
+assistant: Can I help you with anything else?
+user: Can you find me some stage show I can go to on the 10th of March?
+tool(FindEvents): ok n_results=10
+assistant: I found 10 of them. On March 10th at 4:30 pm the Advanced Acting Scene Study will be playing at the TGW Acting Studio.
+user: Sounds really great.
+assistant: Should I buy the tickets?
+user: Not now. Can you first find me some child friendly park I can go to?
+tool(FindAttractions): ok n_results=10
+assistant: Alley Pond Park is a great child friendly park.
+user: Good to know. I also need help finding a house there.
+tool(SearchHouse): ok n_results=10
+assistant: There's a 4.4 on 100 Greenwich Street.
+user: Do they have laundry service? What's their phone number?
+assistant: They do and their number is +1 917-409-0800.
+user: Sounds like a great house.
+assistant: Should I make a reservation?
+user: Not now, thank you. That's all I need.
+assistant: Glad to be of help, goodbye!

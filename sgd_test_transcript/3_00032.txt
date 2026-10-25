@@ -1,0 +1,12 @@
+user: Hi can you help me find a round trip flight? I'm leaving next Tuesday and I want to come back on the 13th. I don't really care about the class.
+assistant: Which city are you leaving and where are you going?
+user: I'll be starting in Los Angeles and I need to get to Portland, OR.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: Great, I found 5 options for you. One flight on Alaska Airlines leaves at 4:40 am, with a connecting flight, and it returns at 5:10 pm. It would cost $228.
+user: Can you find any other options? I actually need three Economy tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: How about Delta Airlines? They have a flight leaving at 10:20 am and returning at 9:25 am. It is a direct flight and only costs $191.
+user: What time would that flight arrive in Portland?
+assistant: It arrives at 12:50 pm.
+user: That sounds good to me, I think that's all. Thank you.
+assistant: Have a great day, then.

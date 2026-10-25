@@ -1,0 +1,30 @@
+user: For my trip, I'll require a hotel room. Help me find one.
+assistant: Can you provide me the name of a city to search in?
+user: Whatever hotel you find, I have two requirements. It needs to be in New York City and it needs to allow smoking.
+tool(SearchHotel): ok n_results=10
+assistant: The 1 Hotel Brooklyn Bridge is a 5 star hotel located in New York City.
+user: Is that the only hotel that matches what I'm looking for?
+assistant: What about the 1 Hotel Central park? This establishment is a 5 star hotel.
+user: That hotel sounds much better.
+assistant: Do you want me to reserve this room while it's available?
+user: I don't think so. Let's come back to that later.
+assistant: Okay. What can I assist you with?
+user: Tell me the weather for New York City on the 10th of this month.
+tool(GetWeather): ok n_results=1
+assistant: There is a 0 percent chance of rain in New York. The temperature will be 59 degrees Fahrenheit.
+user: Is the wind going to be bad that day? Tell me the humidity as well if you can.
+assistant: The humidity will be 15 percent and the wind will measure around 5 miles per hour.
+user: What about the weather on the 14th?
+tool(GetWeather): ok n_results=1
+assistant: On the 14th, New York City will experience 60 degrees Fahrenheit with a 6 percent chance of rain.
+user: Thank you. I have a good sense of what the weather will be like. Now, concerning the hotel you found earlier. I want to book 1 room.
+assistant: Will you be checking in on March 14th?
+user: I want to check on on Monday next week. I'll be staying there for 2 days.
+assistant: I am booking you 1 hotel room at the 1 Hotel Central Park in New York. The check-in date is March 4th and stay for 2 days. Is this right?
+user: Yeah that's right. Should be a nice stay. Tell me the address of 1 Hotel Central Park.
+tool(ReserveHotel): ok n_results=1
+assistant: Hotel Booking is complete. The address to the hotel is 1414 6th Avenue.
+user: Great. Thank you for being such a helpful assistant.
+assistant: I'm happy to help. Do you require any other assistance?
+user: No thank you. You've done more than enough.
+assistant: Have a wonderful day. Farewell.

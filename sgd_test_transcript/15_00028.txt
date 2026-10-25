@@ -1,0 +1,21 @@
+user: I want to find a property to live and I need your help to search for the good and suitable one for me.
+assistant: Let me know some details about your requirement. Do you want to buy that house or you want it for rent only? Also tell me about the number of bed rooms and baths required by you in that house?
+user: I want to rent that house and it should have one bed room and one bath.
+assistant: Also let me know about the area in which you want to search fort he house for rent.
+user: Search it in Fairfield. I just changed my mind and I want to buy that property and it should also contain a garage. Can you search for the suitable one for me?
+tool(FindHomeByArea): ok n_results=4
+assistant: Yes, I have searched and got a house named Blue Sky Apartments located at 320 East Tabor Avenue for total cost $1,850,000. Do you want to buy this house?
+user: I like it. Thanks.
+assistant: Shall I make an appointment to visit this house?
+user: Yes, make a schedule for me.
+assistant: What is your convenient date to visit there?
+user: Make it on March 6th.
+assistant: I need your confirmation to make a schedule of visit to Blue Sky Apartments on March 6th.
+user: That is correct to proceed.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your visit to there.
+user: Thank you so much and I want to view my alarm list. Can you show it to me?
+tool(GetAlarms): ok n_results=4
+assistant: Yes, you have an alarm in the name Errands at 4 pm.
+user: That is okay. Thanks and that's all.
+assistant: Have a nice day.

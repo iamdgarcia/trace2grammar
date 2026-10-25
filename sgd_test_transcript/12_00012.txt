@@ -1,0 +1,36 @@
+user: I want to find bus tickets
+assistant: What time are you leaving and from where?
+user: I'm leaving from Las Vegas at 09:15.
+assistant: How many tickets do you need and when are you leaving?
+user: I need 3 tickets. We're leaving on the 9th of this month.
+assistant: Where are you traveling to?
+user: I'm going to Sacramento. One person.
+assistant: Please confirm: 1 bus ticket leaving Las Vegas to Sacramento on March 9th at 9:15 am, no extra luggage.
+user: Yes, that's correct. What station does it arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus arrives at 65th Light Rail Station. Sorry, could not reserve tickets. What about the bus leaving at 9 am for $58?
+user: Yes, sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked.
+user: What station does it leave from? How many stops are there?
+assistant: The bus leaves from Union Plaza with one-stop.
+user: Thanks so much. I want to find a rental car in Sacramento.
+assistant: What time do you want to pick it up? How long do you need it for?
+user: I need it until March 14th and I'd like to pick it up at 3 in the afternoon.
+assistant: Do you want to pick it up on march 9th?
+user: I need it on the 11th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is an SUV Alfa Romeo Stelvio for pickup at Sacramento Valley Station.
+user: How much is it per day?
+assistant: The rental is $36.00 per day.
+user: Sounds great. I want to book the car.
+assistant: Do you want insurance, as well?
+user: No, no insurance.
+assistant: Please confirm: Picking up an SUV from Sacramento Valley Station on March 11th at 3 pm. Drop off is March 14th. No insurance included.
+user: Yes, sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all. Thanks.
+assistant: Have a great day!

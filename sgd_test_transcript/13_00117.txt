@@ -1,0 +1,15 @@
+user: I want to ask you for a ghost movie featuring arthur lowe
+tool(FindMovies): ok n_results=1
+assistant: there's this one called theatre of blood
+user: I love theatre of blood, play it right away
+assistant: sure, just tell me if I got this right. you want to watch the movie theatre of blood with english subtitles.
+user: yup
+tool(PlayMovie): ok n_results=1
+assistant: the movie has started
+user: nice, can you tell me something about philly 's weather?
+tool(GetWeather): ok n_results=1
+assistant: sure thing. Today's temperature is 81 degrees fahrenheit and the chance of rain equals to 8 percent
+user: got it.
+assistant: do you have more questions for me?
+user: No, I'm done.
+assistant: have a great one.

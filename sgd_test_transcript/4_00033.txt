@@ -1,0 +1,14 @@
+user: I'm really hungry, but on a budget. Could you please help me find restaurants with moderate prices, in Palo Alto?
+assistant: What type of cuisine did you have in mind?
+user: Anything that serves Diner type food will do.
+tool(FindRestaurants): ok n_results=8
+assistant: Okay, I found Bazille, a nice restaurant in Palo Alto.
+user: Great! I really like the sound of that. Please reserve me a table for 1 at that restaurant.
+assistant: For what time should I make the reservation?
+user: Let it be a 12:30 in the afternoon reservation, please.
+assistant: Okay. Please confirm that you'd like to reserve a table for 1 at Bazille in Palo Alto, for 12:30 pm on March 1st.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Do have yourself a great day!

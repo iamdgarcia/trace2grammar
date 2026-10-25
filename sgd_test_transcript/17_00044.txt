@@ -1,0 +1,16 @@
+user: I would like to take the train on the 2nd of this month.
+assistant: Which city are you departing from and reaching?
+user: I will be departing from Washington and traveling to Philly.
+tool(FindTrains): ok n_results=8
+assistant: There is a train departing at 6 am for $61.
+user: Which station does this train reach?
+assistant: The destination is 30th Street Station.
+user: Is there any other train available?
+assistant: There is one leaving at 7:20 am and the cost is $50.
+user: Is there another train available?
+assistant: There is a train leaving at 8 am and the cost is $56.
+user: I would like to rent a house that is 3.9 rating or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house located at 1 Logan Square that has a 3.9 rating.
+user: That is all I needed.
+assistant: Have a good day.

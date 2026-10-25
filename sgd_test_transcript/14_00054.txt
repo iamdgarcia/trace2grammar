@@ -1,0 +1,19 @@
+user: I am seeking a movie to watch directed by Herbert Ross.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 movie for you. What about Steel Magnolias rated 70 out of 100.
+user: That sounds nice. What about searching some songs for me now including Ariana Grande. I like popular songs and heard the album Yours Truly is great.
+tool(LookupMusic): ok n_results=4
+assistant: What are your thoughts on Baby I by Ariana Grande from the Yours Truly album?
+user: What year was it released?
+assistant: It was released in 2013.
+user: Yes, that would be the one.
+assistant: Do you want me to play this song?
+user: Yes, sure I would.
+assistant: Please confirm the details for playing Baby I in the Living Room.
+user: Yes, that is the correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks so much.
+assistant: What else can I assist you with?
+user: No thanks for the help.
+assistant: Have a nice day.

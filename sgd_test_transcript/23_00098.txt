@@ -1,0 +1,43 @@
+user: Is it possible for you to find me a train?
+assistant: Can you tell me the date when you will have your trip?
+user: I want to have tickets for a trip on the 10th.
+assistant: Can you tell me your destination?
+user: I want to arrive in Anaheim.
+assistant: Can you tell me the city from where you will leave for your trip?
+user: The tickets should be for a train leaving from Sacramento.
+tool(FindTrains): ok n_results=6
+assistant: How would you like having the train which leaves at 6:30 am, and the ticket of which costs $117.
+user: Can you tell me the station where the train will be going to?
+assistant: This train's arrival station is Anaheim Intermodal Center.
+user: It seems nice. I would like to buy tickets for this train.
+assistant: Can you tell me the number of the tickets you would like to have, and also can you tell me if you need travel insurance?
+user: I am interested to have trip insurance included, and I just need one seat.
+assistant: Can you please confirm that you want to buy a Value ticket for 1 person for the train which leaves from Sacramento on March 10th at 6:30 am to go to Anaheim?
+user: That is what I want. Can you tell me the station from where this train departs?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your requested ticket has been booked. This train will depart from Sacramento Valley Station.
+user: You have been quite helpful, thank you!
+assistant: Is there something else I can do to help you?
+user: I would like to know about some interesting things I can do there.
+assistant: Is there some specific category you are looking for? It can be Music, Theater or something else.
+user: I usually enjoy Broadway.
+tool(FindEvents): ok n_results=1
+assistant: You might take into consideration Jesus Christ Superstar which is quite popular, and that will happen at Stage Door Repertory Theatre on March 1st at 7 pm.
+user: Can you tell me how much the ticket cost for this event, and also can you tell me the location of the venue?
+assistant: The address of the venue is 1045 North Armando Street, and the ticket has a price of $45.
+user: It seems nice. Though is it possible for you to suggest some other event? More specifically look for a Musical performance which happens on March 13th.
+tool(FindEvents): ok n_results=1
+assistant: You might consider Brown Sabbath which is quite popular, and it will happen at Crossroads at House of Blues Anaheim on March 13th at 4:30 pm.
+user: That seems good to me. Is it possible for you to share the location?
+assistant: Can you tell me the person with whom you want to share the location with?
+user: The person with whom I want to share the location is Scott.
+assistant: Can you please confirm that you want to share the Crossroads at House of Blues Anaheim address with the person called Scott?
+user: That is not right, because I want to share the location with Raymond.
+assistant: Can you please confirm that you want to share the address Crossroads at House of Blues Anaheim with the person named Raymond?
+user: That seems nice to me.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: Thank you. You have been very helpful.
+assistant: Can I do something else to help you?
+user: Nothing. Thank you! You have helped me a lot.
+assistant: Have a good time!

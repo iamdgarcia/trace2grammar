@@ -1,0 +1,23 @@
+user: I want to check the weather condition in Sunol for which I need your help.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 92 degrees Fahrenheit and there may be a chance of 12 percent for rain.
+user: Thanks. I want to make a schedule of visit to a property on a particular day.
+assistant: I want to know the property details to make a schedule and please confirm to fix the same on March 1st.
+user: Okay, you can fix it on the same day and the property is located at 888 San Mateo.
+assistant: Once again confirm to book a schedule of visit to the property at 888 San Mateo on March 1st.
+user: That is confirmed to proceed.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your schedule of visit was successfully confirmed on that day.
+user: Thank you and I want to reserve a car now which should be a Sedan car and I want the same until 3rd of March.
+assistant: Do you want to rent it with insurance? Also let me know your convenient time to pick up the same.
+user: I want it with insurance and for the time at seven pm.
+assistant: Which is your convenient place to pick up the car?
+user: I want it from Toronto Pearson Airport.
+assistant: Do you want it from March 1st?
+user: Yes, of courser, date is okay.
+assistant: Once again confirm all things: You want to pick up a Sedan Car from Toronto Pearson International Airport from March 1st at 7 pm to March 3rd including insurance.
+user: That is okay and you proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have booked the car successfully.
+user: Thank you so much.
+assistant: Have a great day.

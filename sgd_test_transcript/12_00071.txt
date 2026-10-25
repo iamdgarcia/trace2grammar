@@ -1,0 +1,19 @@
+user: Can you help me find a bus please?
+assistant: When and where will you be departing? Where will you be going?
+user: I'm going from LA to SF on the 10th of this month.
+tool(FindBus): ok n_results=10
+assistant: How about a 6:40 am departure for $47?
+user: That sounds great. Can you get me 2 tickets?
+assistant: Please confirm: 2 tickets for the San Francisco to Los Angeles bus on March 10th at 6:40 am. There will be no extra baggage.
+user: Yes, that's correct. What station will I depart and arrive?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation is confirmed. You'll be traveling from North Hollywood Station to Transbay Terminal.
+user: Can you find me a hotel in the area? I'd like 2 rooms in a 3 -star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 potential 3 star hotels. One is called Bei Hotel San Francisco.
+user: That sounds good.
+assistant: Do you want me to reserve it?
+user: Not right now.
+assistant: Can I help you with anything else?
+user: No thanks, that will be all.
+assistant: Thank you! Have a great day!

@@ -1,0 +1,27 @@
+user: I have a plan to travel in order to attend a meeting. will you find me a rental car. i need to pick it up at five pm and i need it from March 6th. I like Sedan cars
+assistant: From which place you want to rent the car?
+user: i need the cars From SFO.
+assistant: Till which date you want the car?
+user: i need it till the 10th.
+tool(GetCarsAvailable): ok n_results=7
+assistant: there is a nice car available at Salesforce Transit Center. It is a Sedan Audi A8.
+user: How much does it cost per day?
+assistant: the car costs $30.00 per day.
+user: ok it sounds good. i need a house to stay over there.
+tool(SearchHouse): ok n_results=10
+assistant: there are 10 houses available as per you interest. There's a nice house located at 1095 market street and its rating is 4.0
+user: ok that house is great.
+assistant: Will you like to make a reservation for this house?
+user: no, not for now.
+assistant: whether is there anything else i need to do?
+user: will you reserve the rental car which you found earlier?
+assistant: Whether you need to add insurance?
+user: no i don't want insurance.
+assistant: please check and review the following details. Car is need to be pick up from Salesforce Transit Center from date March 6th at 5 pm. The drop-off date is March 10th and the car is Sedan Car which does not come with insurance.
+user: No, i need the car with insurance.
+assistant: Please confirm the following details: Car need to be pick up from Salesforce Transit Center with insurance.
+user: ok that sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Car has been reserved successfully.
+user: thanks for your immense help . that's all i need.
+assistant: have a wonderful day.

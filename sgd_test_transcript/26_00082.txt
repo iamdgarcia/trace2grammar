@@ -1,0 +1,24 @@
+user: I want a train with conditionally refundable tickets from Los Angeles to San Francisco.
+assistant: What day are you travelling?
+user: I am travelling on March 10th.
+tool(FindTrains): ok n_results=8
+assistant: There is a train leaving at 7:50 am with a total cost of $94.
+user: What are the departure and arrival stations?
+assistant: The departure station is Union Station and the arrival station is Salesforce Transit Center.
+user: That works for me. Find me some interesting Musical shows there on March 11th.
+tool(FindEvents): ok n_results=10
+assistant: Finneas is playing at August Hall on march 11th at 5:30 pm and is one of 10 results that search found.
+user: What is the price of a ticket?
+assistant: The ticket price is $55.
+user: What is their address?
+assistant: They are located at 420 Mason Street.
+user: That works for me. What other attractions are there?
+tool(FindAttractions): ok n_results=10
+assistant: Alcatraz is a neat Historical Landmark.
+user: What is their contact information and would kids like it?
+assistant: Kids think that it is a cool place and you can contact them at 415-561-4900.
+user: That is great. I need a house for one person with laundry service near there.
+tool(SearchHouse): ok n_results=10
+assistant: 1095 Market Street has a 4.0 rating.
+user: That is perfect. That is all for now.
+assistant: I am goad to help. Bye for now.

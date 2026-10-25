@@ -1,0 +1,12 @@
+user: Can you tell me the weather in Campbell on the 4th?
+tool(GetWeather): ok n_results=1
+assistant: Sure thing. The average temperature for the day will be around 72 degrees Fahrenheit with a 29 percent chance of rain.
+user: How windy will it be that day?
+assistant: The average wind speed will be around 5 miles per hour.
+user: What's the humidity?
+assistant: The humidity will be around 44 percent.
+user: Okay thanks. Tell me the weather in Yountville on March 3rd.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be around 75 degrees fahrenheit that day with a 16 percent chance of rain.
+user: Thanks. That's all for now. Appreciate the help.
+assistant: My pleasure! Goodbye.

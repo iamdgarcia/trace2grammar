@@ -1,0 +1,19 @@
+user: I need help getting 1 ticket for a train leaving Philadelphia on the 8th.
+assistant: Where are you headed?
+user: I'm going to NYC.
+tool(FindTrains): ok n_results=8
+assistant: There are 8 choices, first up is a 10:40 am. The price on the ticket is $43.
+user: What about a later option?
+assistant: If you take the 10:50 am train it will cost $52.
+user: Why don't you offer a luxurious ticket option?
+tool(FindTrains): ok n_results=8
+assistant: A more expensive train is the 12:20 pm. It costs $84.
+user: I appreciate your options.
+assistant: How about a ticket?
+user: No, maybe later.
+assistant: What more might you want?
+user: Get me a nice house with laundry facilities. It needs to be 3.9 rating or higher.
+tool(SearchHouse): ok n_results=10
+assistant: You could try 100 Greenwich Street. It is rated 3.9.
+user: Fine, I'll consider that. I have enough now.
+assistant: I live to serve.

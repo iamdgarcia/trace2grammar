@@ -1,0 +1,30 @@
+user: Hey, can you check for me how's the weather gonna be in Washington D.C. on Thursday next week?
+tool(GetWeather): ok n_results=1
+assistant: It should be 81 degrees Fahrenheit with a 20 percent chance of rain.
+user: And how humid?
+assistant: At around 27 percent.
+user: And how windy?
+assistant: The wind speed should be around 2 miles per hour.
+user: Good to know.
+assistant: Anything else I can do for you?
+user: Can you check if there'll be occurring any child friendly attractions over there then?
+tool(FindAttractions): ok n_results=10
+assistant: The 56 Signers of the Declaration of Independence Memorial is a nature preserve that's always there.
+user: Any other attraction, like a place of interest?
+tool(FindAttractions): ok n_results=1
+assistant: There's 1 other tourist attraction. The Madame Tussauds Washington DC.
+user: Do they charge an entrance fee? What's their phone number?
+assistant: They don't charge an entrance fee and their number is 202-942-7300.
+user: Great, good to know.
+assistant: Can I help you further?
+user: Can you help me find a cab going there?
+assistant: How many will be going and what type of ride do you prefer? Regular or luxury?
+user: A luxury ride for one would be great.
+assistant: So 1 luxury ride going to Madame Tussauds Washington DC?
+user: Yes, that's it.
+tool(GetRide): ok n_results=1
+assistant: Your cab is booked and on the way.
+user: Thanks a lot for the help.
+assistant: Can I do anything else for you?
+user: No, thanks a lot.
+assistant: Have an amazing day.

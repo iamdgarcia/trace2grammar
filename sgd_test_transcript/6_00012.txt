@@ -1,0 +1,23 @@
+user: I need to find a therapist
+assistant: Sure thing, in what city?
+user: Let's find one in Lafayette
+assistant: OK, what kind? Do you need a Psychiatrist? Or perhaps a Family Counselor?
+user: I actually need a Psychologist
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in the Lafayette vicinity including Psychologist Alissa Scanlin Psyd
+user: Great, book me an appointment for the 5th of this month
+assistant: What time do you want that set?
+user: Set it at ten am please
+assistant: Confirming you want a meeting with Alissa Scanlin Psyd on March 5th at 10 am yes?
+user: Yes that's correct
+tool(BookAppointment): ok n_results=0
+assistant: Sorry that doesn't work, do you want me to try another dime?
+user: Yeah, try for the evening 5 pm please
+assistant: Confirming you want a meeting with Alissa Scanlin Psyd at 5 pm on March 5th
+user: Actually change the date to the 10th of March
+assistant: OK so a March 10th meeting with Alissa Scanlin Psyd?
+user: Yes please, also what's their contact number
+tool(BookAppointment): ok n_results=1
+assistant: It's been booked and you'll get an e-mail soon! Also reach them at 707-371-2433
+user: Cool, thanks for that, take care for now
+assistant: OK, you as well!

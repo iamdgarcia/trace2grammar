@@ -1,0 +1,14 @@
+user: I want to see what the weather will be on Sunday this week.
+assistant: Which city do you want to know the weather for?
+user: That would be Rio Vista on 10th of March.
+tool(GetWeather): ok n_results=1
+assistant: The temperature on that day looks like it will average 77 degrees Fahrenheit and there will be a 26 percent chance of rain.
+user: What will the wind be like that day?
+assistant: The wind speed on that day is forecast to be 9 miles per hour.
+user: What is the humidity level going to be that day?
+assistant: The humidity is predicted to be about 32 percent.
+user: Okay, how about the weather in Newark that day.
+tool(GetWeather): ok n_results=1
+assistant: The temperature on that day will average 92 degrees Fahrenheit and there will be a 16 percent chance of rain.
+user: Okay, thank you. Good bye for now!
+assistant: Have a fine day.

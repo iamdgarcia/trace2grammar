@@ -1,0 +1,10 @@
+user: I need a house to stay in, with a rating of 4.6 or higher. I need laundry service too. I need to go to Chicago.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses found. There is a great option at 1118 North State Street, with a rating of 4.6.
+user: Are there any other houses? There are two people in total.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house at 113-125 North Green Street. The average rating out of 5 is a 4.6.
+user: That sounds fantastic.
+assistant: Would you like to place a reservation for this house option?
+user: No, not right now, but thanks!
+assistant: Of course. Have a wonderful day.

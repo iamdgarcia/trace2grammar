@@ -1,0 +1,36 @@
+user: Find me a Museum to visit in Warsaw.
+tool(FindAttractions): ok n_results=10
+assistant: Center for Contemporary Art Ujazdowski Castle is a Museum in Warsaw and is 1 of 10 results that I found.
+user: That is good.
+assistant: Do you need more help?
+user: I need a rental car to get there.
+assistant: What day will you return the car?
+user: I want to pickup the car on the 7th and return it on March 11th.
+assistant: Will you get the car in Warsaw and if so, what time do you wish to pick it up?
+user: I wish to pick up the car in Warsaw at five in the evening.
+tool(GetCarsAvailable): ok n_results=9
+assistant: There is a Sedan Audi A8 at Warsaw Chopin Airport and is 1 of 9 cars that I found.
+user: That is perfect. Book me that car.
+assistant: Shall I add insurance to your order?
+user: No, don't add insurance.
+assistant: You wish to pickup a Sedan without insurance at Warsaw Chopin Airport at 5 pm on March 7th and will return it on March 11th, correct?
+user: No, change the order to add insurance.
+assistant: You wish to pickup the Sedan with insurance, correct?
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is now booked.
+user: What is the price per day?
+assistant: The car costs $46.00 each day.
+user: Thanks a lot. I need you to share the location for me.
+assistant: Who shall I share the location with?
+user: Share the location with Judy.
+assistant: Shall I share the Warsaw Chopin Airport, Center for Contemporary Art Ujazdowski Castle or another address with her?
+user: Share the Center for Contemporary Art Ujazdowski Castle with her.
+assistant: You wish to share the Center for Contemporary Art Ujazdowski Castle with Judy, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location with her.
+user: Thanks for the help.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Have a great day.

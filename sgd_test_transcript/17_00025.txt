@@ -1,0 +1,28 @@
+user: Please search for salons?
+assistant: In which city should I look?
+user: I need to find one in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: Aya Salon & Spa in Berkeley is nice.
+user: Perfect. Could you share 1880 Solano Avenue with Jeffrey please.
+assistant: You want to share 1880 Solano Avenue with Jeffrey.
+user: No 3734 West Belmont Avenue please.
+assistant: You want to share 3734 West Belmont Avenue with Jeffrey right?
+user: No I want to share it with Douglas.
+assistant: You want to share 3734 West Belmont Avenue with Douglas, correct?
+user: Yes that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Thanks, can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm for get up at 7:30 am.
+user: great thank you.
+assistant: DO you need to add an alarm?
+user: Yes lets add one.
+assistant: What time should I set it for?
+user: For quarter past 3 in the afternoon.
+assistant: You want an alarm set for 3:15 pm and titled new alarm.
+user: Yes please.
+tool(AddAlarm): ok n_results=1
+assistant: New alarm has been added.
+user: Thank you very much, that's all I need.
+assistant: Have a great day.

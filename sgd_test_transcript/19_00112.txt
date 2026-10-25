@@ -1,0 +1,37 @@
+user: Book me a car rental.
+assistant: Where and when do you wish to rent the car?
+user: I want to rent a car in Long Beach Thursday next week.
+assistant: When do you wish to return the car?
+user: I will return the car on the 12th of March.
+assistant: What time do you wish to get the car?
+user: I wish to get the car at twelve in the afternoon.
+tool(GetCarsAvailable): ok n_results=9
+assistant: There is a SUV Alfa Romeo Stelvio at Downtown Station.
+user: That is perfect.
+assistant: Shall I rent the car for you now?
+user: Yes, but not right now.
+assistant: Do you need help with something else?
+user: Get me tickets to see an event near there.
+assistant: What event do you wish to see?
+user: I wish to see Knives in Hens.
+assistant: How many people are going and what city and date should I search for?
+user: Search for 1 ticket in Toronto, Canada on the 11th.
+assistant: You want 1 ticket to see Knives in Hens in Toronto on March 11th, correct?
+user: That is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket has been ordered. Have fun!
+user: What is the price for a ticket?
+assistant: The total price is $20.
+user: What venue is it happening at and what is it's location?
+assistant: It is happening at The Coal Mine Theatre and is located at 1454 Danforth Avenue.
+user: Thanks a bunch. Book that rental car from earlier.
+assistant: Do you wish to put insurance on your order?
+user: No, don't add any insurance.
+assistant: You wish to rent a SUV without insurance from Downtown Station on March 7th at 12 pm and wish to return it on March 12th, correct?
+user: That is right. What is the price per day of the car?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked and it costs $40.00 a day.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, not right now. Thanks.
+assistant: Have a pleasant day.

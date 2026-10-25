@@ -1,0 +1,17 @@
+user: I need help finding a place to rent. Pull up some options and make sure a garage is int he description please.
+assistant: Alright no problem. What area should I search? How many bathrooms and bed rooms would you prefer I search for?
+user: Let's look up three bed room and 2 baths in San Jose please.
+tool(FindHomeByArea): ok n_results=10
+assistant: Ok, got it! How about Almaden Garden Apartments at 947 Branham Lane # C, cost would be $3,550.
+user: That sounds promising, can we schedule a property tour please.
+assistant: Sure, what date is good for you?
+user: How about Thursday next week?
+assistant: Please confirm you would like to schedule a property tour of Almaden Garden Apartments on March 7th. Is that correct?
+user: Yes, that's right. I'll need the phone number to the property. Also find out if there is laundry service available there also.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property tour is scheduled. No laundry service available at this location. The number you requested is 408-265-4808
+user: thank you. Can you show me my alarms scheduled please.
+tool(GetAlarms): ok n_results=4
+assistant: Sure, I show an alarm set for 8 am named commute.
+user: Okay, that will be all for now.
+assistant: Ok, Good Bye!

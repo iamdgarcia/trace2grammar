@@ -1,0 +1,25 @@
+user: I'm looking for a hotel.
+assistant: What location do you want to search in?
+user: I want a hotel in Phoenix.
+tool(SearchHotel): ok n_results=10
+assistant: How about the 3 star AC Hotel by Marriott Phoenix Biltmore?
+user: What is the address and price per night?
+assistant: The address is 2811 East Camelback Road and it costs $117 per night.
+user: What other hotels are there?
+assistant: There is the 3 star Aloft Phoenix-Airport.
+user: That sounds good. I also need to pick up a rental car there on March 9th.
+assistant: What time do you want to pick it up?
+user: I want to get it at half past 6 in the evening.
+assistant: How long do you need the car?
+user: I need it until the 14th of this month.
+tool(GetCarsAvailable): ok n_results=9
+assistant: Okay, there is a Buick Regal Sportback Sedan available at Sky Harbor International Airport.
+user: That sounds good, I'd like to reserve the car.
+assistant: Do you need insurance?
+user: No, I don't
+assistant: Okay, you want to rent a sedan at Sky Harbor International Airport from March 9th at 6:30 pm until March 14th and you don't need insurance, right?
+user: Yes, that is correct. How much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation. The car is $28.00 daily.
+user: Thank you, that is all I need.
+assistant: Have a great day.

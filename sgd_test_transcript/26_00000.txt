@@ -1,0 +1,40 @@
+user: Will you let me see my alarms set.
+tool(GetAlarms): ok n_results=3
+assistant: There are 3 alarms set. One of the alarms is at 6:30 am and titled Get Up.
+user: Okay, got it. Will you find a restaurant.
+assistant: Where should I search?
+user: look for restaurants in Pleasanton.
+assistant: What foods do you like?
+user: Look for restaurants that serve Punjabi.
+tool(FindRestaurants): ok n_results=7
+assistant: There is a good place in Pleasanton and it's named Aappakadai.
+user: Can you tell me what their rating is and give me a phone number?
+assistant: You can reach them at 925-750-7709 and they have a 3.6 rating.
+user: Okay, I like that.
+assistant: You would like to book a table?
+user: No, but I want to get a car rental there.
+assistant: How long will you keep the car?
+user: I will have it until March 9th.
+assistant: What day and time will you get the car? What are your preferences? You can choose from a Hatchback, Sedan and other choices.
+user: I like driving a Sedan. I would like to get it at Chicago Airport at 16:00 for the day after tomorrow.
+assistant: Would you like to get insurance?
+user: Insurance is not needed.
+assistant: You will pick up the car at O'Hare International Airport on March 3rd at 4 pm and keep it until March 9th. You want a Sedan without insurance. Is all of that right?
+user: No, I'd rather have a good Hatchback.
+assistant: you will pick up a Hatchback from O'Hare International Airport. Will that work?
+user: Yes, that works great.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car.
+user: What is the brand of the car and what will it be in price each day?
+assistant: The brand is SEAT Leon and will be a daily cost of $32.00.
+user: You are so much help. Also, will you share the address of O'Hare International Airport?
+assistant: Who would you like to share the location with?
+user: I would like to let Judith have it.
+assistant: You want to share O'Hare International Airport location with Judith. Is that correct?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location was a success in sharing.
+user: That really helps me out, thanks.
+assistant: Do you need anything else?
+user: No, your help is great and thanks.
+assistant: I hope you enjoy the beautiful day.

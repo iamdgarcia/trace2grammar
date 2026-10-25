@@ -1,0 +1,30 @@
+user: I would like a round trip flight that would return on March 14th.
+assistant: When would you like to leave and where are you going to?
+user: I will be flying to Chicago on March 2nd.
+assistant: Which city would you be leaving from?
+user: I would be leaving New York City.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: You would like an American Airlines onward flight that leaves at 11:20 am and returns at 2 pm? There a layover and the price is $250.
+user: That is expensive. Is it a business class ticket and when would the returning flight arrive?
+assistant: It returns at 5:19 pm and it is economy class.
+user: Ok, then. I would need a house to stay in when I get there that has a rating of 4.2 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely house located at 1 South Franklin Street that has a rating of 4.2.
+user: That house would be ideal.
+assistant: You would like to reserve the house?
+user: Yes, I do.
+assistant: You would like to check out on march 14th or some other date? How many persons would be staying with you at the house?
+user: I want to check out on the 6th of March and there would just be one person.
+assistant: You would like to check in on March 2nd?
+user: I want to check in the day after tomorrow.
+assistant: You would like accommodation for 1 in Chicago and you would like to check in on March 3rd and check out on March 6th?
+user: Great. May I have a contact number?
+tool(BookHouse): ok n_results=1
+assistant: I have reserved the house and the number is +1 312-787-6000.
+user: How much would that be in all?
+assistant: It would cost $2,040.
+user: Thanks. What fun thing can I do when I get there?
+tool(FindAttractions): ok n_results=10
+assistant: You could check out a tourist attraction called 360 chicago.
+user: That sounds like fun. Thanks, that's all I need.
+assistant: Enjoy your day.

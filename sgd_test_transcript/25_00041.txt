@@ -1,0 +1,21 @@
+user: What about a movie to watch? Do you help me to find a good one?
+assistant: Yes, what is your current location? Tell me the same to search for movies near to your location.
+user: Search for something in San Ramon.
+tool(FindMovies): ok n_results=6
+assistant: Do you like to choose a movie among Angel Has Fallen, Hustlers and IT Chapter Two?
+user: Something else please. I like to watch a imax show at Regal Crow Canyon. Search accordingly.
+tool(FindMovies): ok n_results=4
+assistant: What about Once upon a time in Hollywood or do you like The Art of Racing in the Rain?
+user: I choose to go with The Art of racing in the Rain. Now. I want to search for some songs. Find me the best one to hear now.
+tool(LookupMusic): ok n_results=10
+assistant: What do you think about a song called with you I am by Cody Johnson from the album Gotta Be Me? This is the best one among the 10 that I got.
+user: I need something else by Sabaton from 2019.
+tool(LookupMusic): ok n_results=8
+assistant: Do you like to hear A Ghost In the Trenches by Sabaton from the Album The Great War?
+user: Okay, play it now.
+assistant: I need your confirmation to play the song A Ghost In the Trenches in Living Room.
+user: That is confirmed to play and also get me the type of music of this song.
+tool(PlayMedia): ok n_results=1
+assistant: This is a Metal song and the same was started playing now.
+user: Thanks and That's all for now.
+assistant: Have a great day.

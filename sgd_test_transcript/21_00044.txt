@@ -1,0 +1,25 @@
+user: I want to listen to some songs. I am think of songs that used be one years back. I know that Cry Pretty album is really good.
+tool(LookupMusic): ok n_results=2
+assistant: There are 2 songs you might like. How would you like Southbound by Carrie Underwood which is from her album Cry Pretty?
+user: What genre is that music?
+assistant: It would be Pop.
+user: Is there anything else you can suggest?
+assistant: How about The Champion by Carrie Underwood from the Cry Pretty album?
+user: What is the genre of that music?
+assistant: That song would be Pop.
+user: Yeah that is something I would choose.
+assistant: Shall I play you that song?
+user: Not at the moment. What is the weather like on 11th of this month there?
+assistant: What city are you asking the weather for?
+user: The place is Sacramento, CA.
+tool(GetWeather): ok n_results=1
+assistant: It would average a day temperature of 84 degrees Fahrenheit with a 26 percent possibility of raining.
+user: Yes fine. Now play me that song we found in the kitchen.
+assistant: Can you confirm that you want The Champion played in the kitchen?
+user: Actually no. I want it cast on the living room device.
+assistant: So you will confirm that the song The Champion should be played in the living room?
+user: That is right.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you have fun with the music.
+user: Thank you very much. That is it.
+assistant: Have a wonderful day.

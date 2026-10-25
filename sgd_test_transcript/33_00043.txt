@@ -1,0 +1,17 @@
+user: Can you help me find a salon in Sunnyvale please?
+tool(FindProvider): ok n_results=10
+assistant: Sure, there's 10 that may suit your needs. How about A+ Haircuts for Men in Sunnyvale?
+user: Sounds good to me.
+assistant: Want me to book an appointment?
+user: Not, yet. What's the weather like there next Monday?
+tool(GetWeather): ok n_results=1
+assistant: It will be around 71 degrees with a 28 percent chance of rain.
+user: How windy and humid will it be?
+assistant: The humidity will be around 18 percent and the average wind speed will be 9 miles per hour.
+user: Okay, book an appointment for that day at 17:30.
+assistant: Please confirm that you'd like an appointment at A+ Haircuts for Men in on March 4th at 5:30 pm.
+user: Yup, what's their number and is it unisex?
+tool(BookAppointment): ok n_results=1
+assistant: I've booked your appointment. They can be reached at 408-743-5780. It is unisex.
+user: Thanks, that's all for now.
+assistant: My pleasure, enjoy the day!

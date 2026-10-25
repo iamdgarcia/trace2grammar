@@ -1,0 +1,11 @@
+user: Can you please help me in finding a bus?
+assistant: From which place are you planning to leave and where are you going?
+user: I am planning to leave from 10th of this month and planning to go to Seattle, WA.
+assistant: From which place do you plan to leave from?
+user: I am looking to leave from Portland.
+tool(FindBus): ok n_results=10
+assistant: I have found 10 buses for you. There is a bus departing at 7 am and it will cost you $32.
+user: From which station does it depart and at station will it arrive?
+assistant: It will depart from SW ArthUr & 1st and will arrive at Westlake Station.
+user: That sounds good. That's all I needed.
+assistant: Have a nice day.

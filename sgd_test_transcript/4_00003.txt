@@ -1,0 +1,16 @@
+user: Find me a Hatchback rental in Sacramento from 13th of March
+assistant: whats the pickup time?
+user: From 12 pm
+assistant: When will you return it?
+user: On 14th of this month
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is Hatchback, a Fiat Panda available at SMF International Airport
+user: Looks good, please reserve it
+assistant: Should i add insurance to it?
+user: No, not required.
+assistant: Please confirm: Booking a Hatchback, without insurance, for pick up from SMF International Airport on March 13th 12 pm and drop off on March 14th
+user: yes, thats good. Whats the cast per day?
+tool(ReserveCar): ok n_results=1
+assistant: Its booked, the cost is $32.00 per day
+user: thanks, thats all
+assistant: have a good day!

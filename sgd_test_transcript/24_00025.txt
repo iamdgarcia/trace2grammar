@@ -1,0 +1,24 @@
+user: I need a flight from New York City to Chi-town. I'd like the fly premium economy.
+assistant: When are you traveling?
+user: Sunday this week.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: A flight on Delta Airlines would be $169 and it leaves at 8:55 pm.
+user: What time does the flight arrive?
+assistant: 10:14 pm.
+user: I want something else. And I need just 1 ticket.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I found 2 flights on Southwest Airlines. The first leaves at 11:45 am and the ticket price is $194.
+user: That will be great. I'll need a train to get to the airport.
+assistant: Are you traveling on March 3rd?
+user: No, March 6th.
+tool(FindTrains): ok n_results=6
+assistant: I found 6 trains beginning with a train leaving at 6 am for a ticket price of $112.
+user: That will be perfect.
+assistant: Are you ready to make a reservation?
+user: Yes, I want economy seats.
+assistant: Please confirm, 1 value ticket on the train leaving fron New York to Chicago on March 6th at 6 am.
+user: Yes, that is great. What station does the train leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: Grand Central Station. Your ticket purchase is complete.
+user: Thanks, that is all.
+assistant: Have a nice day.

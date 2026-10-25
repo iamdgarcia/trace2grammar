@@ -1,0 +1,33 @@
+user: Find me some attractions because I want to visit.
+assistant: Where you want to be?
+user: In London will be great.
+tool(FindAttractions): ok n_results=10
+assistant: You can check out a Historical Landmark at 30 St Mary Axe (The Gherkin).
+user: Do you have any other recommendations?I want something that is child friendly and have a paid entry.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 variants that you may like.You can check out All Saints, Margaret Street.Is a Place of Worship.
+user: Great.Find me an rental car because I want a car that I will pick it up at 09:30
+assistant: When you want to start the car rental and until when you need it?
+user: From tomorrow till next Tuesday.
+assistant: The pick up is from London?
+user: Yes sounds good.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 options for you.A nice Sedan Audi A8 available at Heathrow International Airport.
+user: Sounds very good.Make a reservation, please.
+assistant: You need to add insurance too?
+user: No, I don't need one.
+assistant: You want a Sedan car without insurance from Heathrow International Airport.Pick up date is March 2nd at 9:30 am and drop-off date is March 5th.I'm right?
+user: Sounds good.Tell me cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.$36.00 is the cost per day.
+user: Try for me to share the location Heathrow International Airport.
+assistant: Whit who you want to share?
+user: Share it with Joseph.
+assistant: You share with Joseph the location Heathrow International Airport..
+user: Sounds okay for me.
+tool(ShareLocation): ok n_results=1
+assistant: The location is shared.
+user: Thanks.You have been a great help to me.
+assistant: Can I do something else for you?
+user: No.Thank you.
+assistant: Have a great day!

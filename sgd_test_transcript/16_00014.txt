@@ -1,0 +1,29 @@
+user: I need help finding a salon in Pleasant Hill.
+tool(FindProvider): ok n_results=4
+assistant: Your search yielded 4 salons that might interest you. Would you like to try Cool Tops, a nice Pleasant Hill salon?
+user: Sure, that could work. Please also find me a therapist around that area.
+assistant: Do you need someone based in Pleasant Hill, specifically? Please tell me the kind of therapist you need. You can say Psychologist or Family Counselor or something else.
+user: Sure. Please find me a Family Therapist
+tool(FindProvider): ok n_results=7
+assistant: Your search yielded 7 Pleasant Hill based therapists that might interest you. Would you like to see Aguilar Churchill Spence, a Family Counselor?
+user: You know what, I'll be doing some business in San Jose later that day. Let's search for therapists in there instead.
+tool(FindProvider): ok n_results=8
+assistant: There are 8 San Jose based therapists that you may like. How about Banner Linda L., a Family Counselor?
+user: That works for me.
+assistant: Should I go ahead and book an appointment with the therapist
+user: Yes, please. Book me an appointment.
+assistant: Please say your preferred appointment date and time.
+user: Please schedule the appointment for March 13th at 15:00.
+assistant: Please confirm that you'd like to book a 3 pm, March 13th appointment with Banner Linda L.
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment, and a confirmation email will be sent to you shortly.
+user: Thank you very much. You've been very helpful. Now please also book me a ten am appointment on that day, at the salon you just found.
+assistant: Sure, no problem. Please confirm that you'd like to book a 10 am March 13th appointment at Cool Tops salon.
+user: You got that right. Please find out whether it's unisex.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. The salon serves both men and women.
+user: Thanks a lot.
+assistant: Would you like my help with anything else?
+user: No. Thanks a lot.
+assistant: Have a great day.

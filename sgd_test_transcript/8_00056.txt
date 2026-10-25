@@ -1,0 +1,14 @@
+user: Please request a 117 bucks payment from Margaret.
+assistant: Sure, no problem. Let me see if I got everything correctly: You'd like to request a $117 payment payment, which is publicly visible, from Margaret.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made your payment request.
+user: Thank you very much. Now, please make a $93 payment from my money in app.
+assistant: Please say the contact's name.
+user: The contact's name is Mary. Please send it from my credit card instead.
+assistant: Okay. Please confirm that you'd like to make a publicly visible, $93 credit card payment to Mary.
+user: You got that right.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment, and the money should reflect on the recipient's end shortly.
+user: Thank you very much. You've been very helpful. That's all. See you!
+assistant: That's all. See you!

@@ -1,0 +1,35 @@
+user: Can you please find me a therapist?
+assistant: Sure, but first please tell me what kind of therapist do you need.
+user: Please find me a Psychologist.
+assistant: OK, in which city?
+user: Santa Clara, please.
+tool(FindProvider): ok n_results=5
+assistant: Cassie L. O'Brien is a Psychologist located in Santa Clara.
+user: Anyone else available?
+assistant: There's also Loffer Shirley, also a Psychologist located in Santa Clara.
+user: Sounds perfect. Can you please book me an appointment for afternoon 1:15?
+assistant: Sure, on which date?
+user: The 4th of March, please.
+assistant: Can you please confirm that you want me to book an appointment for you with Loffer Shirley on March 4th at 1:15 pm?
+user: On second thought, please make it for the day after tomorrow.
+assistant: Can you please confirm that you want to book an appointment with Loffer Shirley on March 3rd?
+user: Yes, but make it at afternoon 1:30.
+assistant: Can you please confirm that you want the appointment to be on March 3rd at 1:30 pm?
+user: Yes, that's correct. Can you please give me their address?
+tool(BookAppointment): ok n_results=1
+assistant: I've successfully booked your appointment, for which you'll shortly receive a confirmation email. They're located at 160 Saratoga Ave # 280.
+user: Can you please give me their phone number?
+assistant: Sure, you can reach them at 408-248-9563.
+user: Perfect! Can you please find me a cab to get there?
+assistant: What type of ride do you prefer?
+user: I'd like a Normal ride.
+assistant: For how many persone?
+user: Two persons, please.
+assistant: Can you please confirm that you want a Regular ride for 2 to 160 Saratoga Ave # 280?
+user: Yes, that's correct. How much is the ride price?
+tool(GetRide): ok n_results=1
+assistant: I've successfully booked your cab, which is on its way to your location. Total ride price is $25.48.
+user: Thanks a lot for everything!
+assistant: Is there anything else I could help you with?
+user: No, not at the moment. Thanks again!
+assistant: Have a nice day!

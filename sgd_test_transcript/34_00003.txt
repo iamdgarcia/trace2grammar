@@ -1,0 +1,19 @@
+user: I am looking for a five star hotel.
+assistant: What city will you be staying in?
+user: I need a hotel in Sydney, NSW.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 5 star hotel called Amora Hotel Jamison Sydney.
+user: That is perfect. What attractions are available?
+tool(FindAttractions): ok n_results=10
+assistant: There is a sports venue called ANZ Stadium.
+user: What other attractions are there?
+assistant: There is a museum called the Art Gallery of New South Wales.
+user: That is perfect. I would like to reserve 2 rooms at that hotel and will be checking in on the 9th of March.
+assistant: How long do you want to reserve the rooms for?
+user: We will be staying for one day.
+assistant: Please confirm you want to reserve 2 rooms for 1 day starting on March 9th at the Amora Hotel Jamison Sydney in Sydney.
+user: That is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation is successful.
+user: Thank you, that will be all.
+assistant: See you soon!

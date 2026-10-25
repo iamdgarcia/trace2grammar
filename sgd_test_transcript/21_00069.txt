@@ -1,0 +1,17 @@
+user: I'm a big fan of Sara Evans but I haven't had a chance to listen to most of her songs. My cousin Vince is going on about a song on her Stronger album that he had on loop while house sitting for me last week. Could you please find me that song?
+tool(LookupMusic): ok n_results=1
+assistant: A Little Bit Stronger by Sara Evans from the Stronger album is the most frequently played song on last week's playlist.
+user: Yes, that must be the song that he was raving about then. Oh, before I forget, I plan on going out to Gilroy later. What's the weather forecast like, there?
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature for the day is 91 degrees Fahrenheit, with a 29 percent chance of rain.
+user: And the expected humidity?
+assistant: The expected average humidity is 35 percent.
+user: Oh, all right. Now please play the song that you found.
+assistant: Sure, no problem. Please confirm that you'd like to listen to A Little Bit Stronger in the Living room.
+user: You got that right.
+tool(PlayMedia): ok n_results=1
+assistant: Do enjoy listening to your music.
+user: Thank you very much.
+assistant: Will there be anything else?
+user: That will be all. Thank you very much.
+assistant: Thank you, and have a wonderful day!

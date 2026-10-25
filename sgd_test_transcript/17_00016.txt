@@ -1,0 +1,32 @@
+user: Find me a salon.
+assistant: What city shall I look in?
+user: Search for a salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is located in San Francisco.
+user: What other salons can you find?
+assistant: 20Th Salon And Barber is located in San Francisco.
+user: That is perfect. Can you share the location with someone?
+assistant: Who do you want to share the location with and do you wish to share the location of 2737 20th Street?
+user: The address is correct and I want to share it with Deborah.
+assistant: You wish to share 2737 20th Street with Deborah, correct?
+user: No, JFK International Airport is what I want to share with her.
+assistant: You wish to share the location JFK International Airport with Deborah, correct?
+user: No, send it to Kathryn.
+assistant: You wish to share the location JFK International Airport with Kathryn, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with her.
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=2
+assistant: There is a 6 am alarm named Get up and is 1 of 2 alarms set.
+user: That is good.
+assistant: Do you wish to add another alarm?
+user: Yes, add an alarm for quarter to 4 in the afternoon.
+assistant: You wish to set an alarm for 3:45 pm and name it New Alarm, correct?
+user: That is right.
+tool(AddAlarm): ok n_results=1
+assistant: Your new alarm is set.
+user: Thanks for everything.
+assistant: Do you need more help?
+user: No, that is all. Thanks again.
+assistant: Thank you for letting me help you.

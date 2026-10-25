@@ -1,0 +1,46 @@
+user: Would you be able to help me find a hotel please in Los Angeles? I need somewhere that allows smoking and I'd like a place with a 3 star rating.
+tool(SearchHotel): ok n_results=7
+assistant: how about the Homewood Suites by Hilton Los Angeles International Airport? It's rated with 3 stars.
+user: Where is it exactly?
+assistant: The address of the hotel is 6151 West Century Boulevard.
+user: How much does it cost? And can I get the phone number?
+assistant: The room charges $225 per night and the phone number is +1 310-215-3300.
+user: What else can you find?
+assistant: I also recommend Inn at Venice Beach, which has a 3 star rating.
+user: Is there anything else?
+assistant: Another 3 star recommendation I have is La Quinta Inn & Suites By Wyndham Lax.
+user: I like the sound of that one.
+assistant: Shall I make reservations for you?
+user: Not just yet.
+assistant: How else may I help you?
+user: I need to book a round trip flight please with a return on the 14th of this month.
+assistant: Is that a March 8th departure? And where are you planning to depart from?
+user: I'll actually be leaving on the 4th of this month from Ciudad de Mexico.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have a flight on United Airlines which departs at 7:10 AM, has one layover, and returns at 5:30 PM. The ticket price is $285.
+user: What else can you find?
+tool(SearchRoundtripFlights): ok n_results=0
+assistant: I apologize, I don't have any other flights. May I help you with anything else?
+user: Would you please try again? Look for something on American Airlines in premium economy for 2 please.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have 1 possibility for you on American Airlines, which is an 8:20 AM departure and a 9:35 PM return. It is a direct flight with the ticket price of $374.
+user: When does that flight get in and when does the return get in?
+assistant: It has a 9:40 AM arrival and the return is at 2:55 AM.
+user: That works perfectly.
+assistant: Great. What else may I do for you?
+user: I'd like to make reservations at that hotel please.
+assistant: Are you planning on a March 4th check in and how long do you plan on being at the hotel?
+user: I will actually be checking in next Thursday and it will be for a 5 day stay.
+assistant: Confirming 1 room at the La Quinta Inn & Suites by Wyndham Lax in Los Angeles on March 7th for 5 days.
+user: Exactly right, thank you.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation is complete.
+user: What's the cost of that?
+assistant: The room price is $117.
+user: Excellent. Would you mind also looking for some attractions for me?
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 options for you. You might enjoy Angels Flight Railway, which is a historical landmark.
+user: I'd love that, thank you.
+assistant: How else may I help you?
+user: I'm all set, thanks so much.
+assistant: You're welcome, have a great day.

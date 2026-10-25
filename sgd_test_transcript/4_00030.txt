@@ -1,0 +1,23 @@
+user: Can you please help me find a place to eat?
+assistant: What location should I search in?
+user: Please find restaurants in Santa Clara.
+assistant: What type of food are you looking for?
+user: Please find something serving Latin American food.
+tool(FindRestaurants): ok n_results=5
+assistant: El Amigo Burrito is a nice restaurant in Santa Clara.
+user: What is there phone number?
+assistant: The phone number is 408-248-3113.
+user: Yes, that sounds good.
+assistant: Would you like me to book a table there?
+user: Yes please, reserve a table.
+assistant: What time should I try to reserve for?
+user: Please make the reservation at 5:30 in the evening.
+assistant: Please confirm the following details: Booking a table at El Amigo Burrito in Santa Clara for 5:30 pm on March 1st. The reservation is for 2 people.
+user: Yes, that is correct. Do they have vegetarian options on the menu, and what is their user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The rating is around 4.3 stars and they have good options for vegetarians. Sorry, I was unable to make the reservations at El Amigo Burrito at that time. Shall I try again for 2 people on March 1st at 5 pm?
+user: Yes, that works.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was successful.
+user: Thank you very much, that is all I need for now.
+assistant: Okay, have a good day.

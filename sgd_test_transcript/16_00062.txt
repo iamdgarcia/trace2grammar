@@ -1,0 +1,38 @@
+user: I would like to buy bus tickets.
+assistant: What number of tickets and when do you want to leave?
+user: I want to leave on the 4th for four people.
+assistant: What time will you want to leave?
+user: I would like to leave 18:15.
+assistant: Where are you departing from and where are you going?
+user: I am departing Vegas going to SF.
+assistant: Please confirm details you want a ticket on the bus leaving from Las Vegas to San Francisco March 4th at 6:15 pm for 4 people without extra luggage.
+user: Yes, that will work for me.
+tool(BuyBusTicket): ok n_results=0
+assistant: Sorry, the purchase didn't work due to unexpected errors. Can I assist you with anything else?
+user: Can you try that again. I'd like to leave at half past 6 in the morning going to Anaheim, CA for two people.
+assistant: Please confirm details that you want a ticket on the bus leaving from Las Vegas to Anaheim March 4th leaving at 6:30 am for 2 people without extra luggage.
+user: Yes, that will work for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry the purchase didn't work due to unexpected errors. What about the bus leaving at 6:40 am costing $35.
+user: Yes, that will work for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed.
+user: Thanks so much for the help. Will you look for hotels in the area too. I'm looking for a three - star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There would be a hotel named Anaheim Majestic Garden Hotel a 3 star hotel.
+user: What other hotels match my criteria for 1 room looking for a four star hotel?
+tool(SearchHotel): ok n_results=2
+assistant: I have 2 hotels matching the criteria including Doubletree Suites By Hilton Hotel Anaheim Resort - Convention Center a 4 star hotel.
+user: What is the nightly price? What is their phone?
+assistant: The phone is +1 714-750-3000 and is $216 a night.
+user: That sounds nice. I would like a reservation to the hotel for three days.
+assistant: When do you wish to check in?
+user: I'm looking for check in on the 10th.
+assistant: Please confirm details to find a hotel in Doubletree Suites By Hilton Hotel Anaheim Resort - Convention Center March 10th for 3 days in Anaheim 1 room.
+user: Sure that is nice and what is the street address? Do they allow smoking in the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: You have booked the hotel successfully but no smoking is allowed on the property and the address is 2085 South Harbor Boulevard.
+user: Thanks and you have been really helpful.
+assistant: What else can I help you with?
+user: No thanks you have been of help.
+assistant: Bye and have a nice day.

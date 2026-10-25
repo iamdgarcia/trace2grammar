@@ -1,0 +1,35 @@
+user: I need a hotel please, just one room. I'd like a 4 star place.
+assistant: In what city please?
+user: Something in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options to choose from. How about the Ace Hotel London, which has a 4 star rating?
+user: What's the address of that one?
+assistant: They are located at 100 Shoreditch High Street.
+user: I'd like the phone number too, please. And what is the room price?
+assistant: The hotel costs $296 a night and the telephone number is +44 20 7613 9800.
+user: Okay, that's fine. I want to find some attractions there too, please.
+tool(FindAttractions): ok n_results=10
+assistant: I recommend 30 St Mary Axe (The Gherkin), which is a popular historical landmark.
+user: Okay, maybe. What else do you recommend? I want something with no admission price.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 possibilities for you. Alexandra Palace is a popular performing arts venue.
+user: What's the phone number please?
+assistant: You can reach them at 20 8365 2121.
+user: Okay, thanks. Can you suggest another performing arts venue?
+tool(FindAttractions): ok n_results=8
+assistant: I have 8 others. Another well-received performing arts venue is Cambridge Theatre.
+user: Yes, thanks. Oh, I want to make the hotel reservation please.
+assistant: When would you like the room and for how long?
+user: I'll be getting there on the 6th and it'll be for a 6 day stay.
+assistant: Confirming a March 6th check in to the Ace Hotel London in London, where you are reserving 1 room for 6 days.
+user: Sorry, no, make it 3 days with a check in on the 9th of March.
+assistant: Confirming a check in date of March 9th and a 3 day stay.
+user: Great, that's all correct.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation has completed successfully.
+user: Can I smoke in the room?
+assistant: No, it is a non-smoking hotel.
+user: Okay, thanks for all the help.
+assistant: Do you need anything else today?
+user: No, I'm good to go, thanks.
+assistant: It's my pleasure, thank you.

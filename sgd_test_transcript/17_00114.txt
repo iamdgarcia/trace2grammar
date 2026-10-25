@@ -1,0 +1,21 @@
+user: What's the weather like in LA?
+tool(GetWeather): ok n_results=1
+assistant: It will be 76 degrees and there is a 28 % chance of rain.
+user: What will be the humidity and how windy do you think it will be?
+assistant: Humidity in LA will be about 75 % and winds are light at 4 MPH.
+user: Fine, get me four tickets for a flight.
+assistant: Which city will you leave?
+user: Vegas baby.
+assistant: Will you leave on March 1st.
+user: I concur with that.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: You have 4 choices. Alphabetically first is American Airlines. It takes off at 10:25 am. It costs $84.
+user: Fine, what about a rental car there. I can pick it up on the 3rd and will need a SUV at 1:45 in the afternoon.
+assistant: When will you return the SUV?
+user: I'll return it on the 4th of this month.
+tool(GetCarsAvailable): ok n_results=5
+assistant: Well, there are 5 choices. You can get a SUV Dacia Duster at LAX International Airport.
+user: Fine, that sounds good.
+assistant: What more might you like?
+user: Nothing, I'm good.
+assistant: Have a great trip.

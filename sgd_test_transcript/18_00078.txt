@@ -1,0 +1,33 @@
+user: Please help me find lodging. I am in need of 2 rooms.
+assistant: Where would you like me to search?
+user: LAX is the area I would like to stay in.
+tool(SearchHotel): ok n_results=10
+assistant: A very nice hotel in the area is Ac Hotel By Marriott Beverly Hills. They have received a score of 3 stars.
+user: Is there a number available to contact them at?
+assistant: Yes. You can dial +1 323-852-7000 for assistance.
+user: Is this hotel smoke free?
+assistant: Yes. The hotel does not allow any smoking.
+user: Hmmm. I think a different hotel will work better for me. Try to find 1 room at a hotel with a 2 star rating.
+tool(SearchHotel): ok n_results=10
+assistant: I was able to find 10 hotels that match your criteria. You may like the Best Western Hollywood Plaza Inn. The hotel has been given a 2 star rating.
+user: See if you can find a hotel with a four star rating please.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 4 star hotel. The name is the Beverly Hills Marriott.
+user: That sounds fantastic.
+assistant: Do you need further assistance?
+user: I would like the weather report in that area.
+tool(GetWeather): ok n_results=1
+assistant: The weather team has predicted a 28 percent chance of showers. The team thinks the temperature average will be 76 degrees Fahrenheit.
+user: How breezy is it expected to be. How much water vapour has been predicted to be in the air?
+assistant: The breeze is predicted to blow at 4 miles per hour. The humidity prediction is 75 percent.
+user: Thanks. Please get me a room at the hotel we just discussed.
+assistant: Would you like to start your visit this March 1st? Do you know how much time you will be spending at the hotel?
+user: Yes, March 1st is right. I would like my visit to last four days.
+assistant: With your approval I will book 1 room for 4 days at the Beverly Hills Marriott hotel in Los Angeles. Your visit will begin March 1st. Correct me if I have made a mistake.
+user: No correction necessary.
+tool(ReserveHotel): ok n_results=1
+assistant: Happy to have reserved the hotel in your name for you.
+user: Is this hotel smoke free? I would also be grateful for a number to reach the hotel at.
+assistant: Yes. This hotel does not allow smoking. You can call the hotel by dialing +1 310-553-6561.
+user: You make my life so much easier. You can take a break.
+assistant: Thanks! Talk to you later.

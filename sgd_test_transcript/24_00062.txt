@@ -1,0 +1,23 @@
+user: I'm looking for a movie to watch.
+assistant: Where do you want to see the movie?
+user: I want to see a movie in San Ramon.
+tool(FindMovies): ok n_results=6
+assistant: I found 6 movies you may like. What about Angel Has Fallen, Hustlers, or IT Chapter Two?
+user: IT2 sounds perfect!
+assistant: Do you want to purchase tickets?
+user: No, not right now. I'd like to reserve a table at a restaurant there.
+assistant: What time do you want to make the reservation for?
+user: I'd like a table at Three Brothers From China on the 4th at seven in the evening.
+assistant: Okay, you'd like a reservation for 2 at Three Brothers From China in San Ramon on March 4th at 7 pm, right?
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully confirmed the reservation.
+user: Thank you. What time can I watch that movie at Regal Crow Canyon?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is a 11 pm showtime at Regal Crow Canyon.
+user: How much does the ticket cost and what type of movie is it?
+assistant: The tickets cost $12 per person and it is a supernatural movie.
+user: That sounds good.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

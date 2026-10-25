@@ -1,0 +1,28 @@
+user: help me search for a hotel
+assistant: Which city are you searching in?
+user: I want something in London, England
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 places for you. How about the 5 star 45 park lane?/
+user: Sounds good to me.
+assistant: Anything else I can help with?
+user: Yes, find me a round trip flight to there
+assistant: When do you want to book the return flight?
+user: I need three returning tickets on march 10th
+assistant: Do you leave on March 7th? Which city are you traveling from?
+user: I am leaving on the 2nd from Atlanta. I need economy tickets.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: How does the american airlines flight at 8:50 am sound? The returning flight is at 8:05 pm and costs $360
+user: What is the arrival time?
+assistant: It lands at 10:54 pm
+user: Cool. I would also like to reserve the hotel we discussed earlier.
+assistant: Sure, is the check in on March 2nd? what is your duration of stay?
+user: No, I want to check in on the 3rd for three days.
+assistant: Sure, just need for you to confirm. Booking 1 room in 45 park lane for 3 days starting March 3rd in London.
+user: Sure, how much does it cost? what is their address?
+tool(ReserveHotel): ok n_results=1
+assistant: Booking confirmed. The cost is $230 per night and their address is 45 park lane.
+user: Thanks, can you also show me some child friendly tourist attraction there?
+tool(FindAttractions): ok n_results=9
+assistant: Sure, I have 9 tourist attraction suggestions for you. How about the granary square?
+user: Thanks, That would be all.
+assistant: Have a nice time there!

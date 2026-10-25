@@ -1,0 +1,19 @@
+user: Find me a unisex salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: Do you like 18/8 Fine Men'S Salons - Palo Alto in Palo Alto?
+user: That is perfect. What will the weather be like there on the 5th?
+tool(GetWeather): ok n_results=1
+assistant: It will average 88 degrees with a 27 percent chance of rain.
+user: What is the humidity percentage?
+assistant: It averages 53 percent humidity.
+user: What is the wind speed?
+assistant: It averages 1 mile per hour.
+user: I see. Make me an appointment at 4:45 pm for that day.
+assistant: You want an appointment at 18/8 Fine Men'S Salons - Palo Alto for 4:45 pm on March 5th, correct?
+user: No, the book the appointment for 18:00.
+assistant: You want an appointment at 18/8 Fine Men'S Salons - Palo Alto for 6 pm on March 5th, correct?
+user: That is right. What is their location and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your session is booked. You can find them at 855 El Camino Real Building #1 Suite #3 and you can contact them at 650-460-8290.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

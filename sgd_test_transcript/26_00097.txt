@@ -1,0 +1,28 @@
+user: I require assistance booking a trip on a train.
+assistant: Please name the departure and arrival city as well the date you wish to leave.
+user: I'm leaving Fresno and heading to Los Angeles on the 5th of this month.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains that are available on the 5th. There is one in particular that is leaving at 7:20 am and costs $66 for the ticket.
+user: That sounds pretty good to me. Thanks.
+assistant: I can book those for you right now. Is that alright?
+user: No thank you. I just wanted the information for the time being.
+assistant: Can I help you with something else then?
+user: I want to find something fun and interesting to do while I'm there on that day.
+assistant: Are you in the mood for Music or Theater? If you have something completely different in mind, just ask.
+user: I'm a big fan of Drama. Try searching for that.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that fall under the category of Drama. On March 1st, there is a production called A Year in Dragonfly taking place at 7:30 pm at Studio C Artists.
+user: What's the address of Studio C Artists?
+assistant: The venue is located at 6448 California 2.
+user: And the cost of the ticket is what?
+assistant: The ticket costs $55.
+user: Alright. Everything sounds in order then. Before I let you go though, can you tell me about attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I have found 10 that you may enjoy. The first is a Historical Landmark called Angels Flight Railway.
+user: That sounds really interesting. Thanks for that. Can you find me a house to stay in as well?
+tool(SearchHouse): ok n_results=10
+assistant: 10 houses match your criteria. One home has a rating of 4.1 and is located at 1020 South Figueroa Street.
+user: Wow. That house seems amazing.
+assistant: Would you like me to go ahead and reserve the home for you?
+user: No thanks. I'm still working out some details on that. Thanks for the information though. That's all I need for now.
+assistant: Please let me know if you need anything else. It's always a pleasure. Bye.

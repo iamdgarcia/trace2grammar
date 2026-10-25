@@ -1,0 +1,16 @@
+user: I am planning to watch a nice movie online for which I need your help to find the good one for me/
+assistant: Do you have any favorite kind of movie?
+user: I like to watch Kids movies and search for something related to this.
+tool(FindMovies): ok n_results=2
+assistant: What about the movie The Angry Birds Movie 2 or Do you like Toy Story 4?
+user: I like to go with Toy Story four.
+assistant: How can I help you further?
+user: I want to watch it now with English subtitles.
+assistant: Please confirm to play the movie Toy story 4 with English subtitles.
+user: Yes, proceed to play.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing and you can enjoy it now.
+user: Thanks a lot.
+assistant: Anything else you need.
+user: No. Nothing for now.
+assistant: Have a great day.

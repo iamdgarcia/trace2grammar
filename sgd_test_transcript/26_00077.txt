@@ -1,0 +1,25 @@
+user: Hi can you find me 2 seats for a train to LAX leaving on the 12th of this month.
+assistant: Which city will you be leaving from?
+user: I'd like to buy a value ticket. I'm leaving from San Francisco.
+tool(FindTrains): ok n_results=9
+assistant: How about the train leaving at 6:20 am? The price is $160.
+user: Is there any other trains you can find? I'd like a ticket from Washington going to Atlanta.
+tool(FindTrains): ok n_results=6
+assistant: I found 6 trains that could work. How about the train leaving at 10 am? It will cost $187 in total.
+user: That works for me. Now I need some songs to listen to live. I'd like to go on the 14th.
+tool(FindEvents): ok n_results=10
+assistant: I managed to find 10 events that you might enjoy. Benjamin Francis Leftwich is supposed to be good. It will take place at Vinyl on March 14th at 6 pm.
+user: That sounds perfect.
+assistant: Would you like to purchase tickets at this time?
+user: No, not at this time.
+assistant: Is there anything else I can assist you with?
+user: Please show me some attractions. I want something that's free. I'm looking for a performing arts venue and something that is child-friendly.
+tool(FindAttractions): ok n_results=1
+assistant: How about the Fox Theatre? It's a performing arts venue.
+user: Awesome. I also need a house for 2 to stay in with a 4.3 rating or higher. I need laundry service too.
+tool(SearchHouse): ok n_results=9
+assistant: How about 1065 Peachtree Street Northeast? It has a rating of 4.3.
+user: What's their phone number?
+assistant: You can call them at +1 404-745-5000.
+user: That sounds good, that's all I needed.
+assistant: It's been a pleasure to help you. Have a great day.

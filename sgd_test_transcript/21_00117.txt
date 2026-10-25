@@ -1,0 +1,43 @@
+user: Can you find me something fun to do
+assistant: What do you like? you can say anything from music to theater
+user: i want to go to a concert in philadelphia on 11th of march
+tool(FindEvents): ok n_results=10
+assistant: what about anthony green at the foundry at 6:30 pm on march 11th
+user: where is that at and how much is the ticket
+assistant: the ticket is $35 and it is located in 29 east allen street 2nd floor
+user: ok perfect, what else can you find
+assistant: what about ayokay at the foundry at 6:30 pm on march 11th
+user: that is good, but what else can you find? i like some theater
+tool(FindEvents): ok n_results=2
+assistant: i found 2 events. what about comedysportz at the playground at the adrienne at 6:30 pm on march 11th
+user: that sounds good, can you find me a bus going there
+assistant: where are you traveling from and is this leaving on march 11th
+user: i am traveling from new york city next tuesday
+tool(FindBus): ok n_results=7
+assistant: i found 7 buses. what about 7:40 am departure for $22
+user: what station will i arrive at
+assistant: you will arrive at 10th and filbert
+user: is this a direct bus
+assistant: yes it is a direct bus
+user: what else can you find for three people
+tool(FindBus): ok n_results=6
+assistant: i found 6 buses. what about 7:50 am departure for $20
+user: perfect. i also looking for a round trip flight to get there
+assistant: when would you like to return and is this leaving on march 5th
+user: i want to leave on 7th of march and return on 12th of march
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: what about american airlines for $92 departing at 11:20 am with return flight departing at 3:20 pm
+user: that is what i want
+assistant: what else can i do for you
+user: can you find me hotels in that area as well
+tool(SearchHotel): ok n_results=10
+assistant: i found 10 hotels in that area. What about a 4 star hotel called aka rittenhouse square
+user: what is the address and price per night
+assistant: their address is 135 south 18th street and it is $148 per night
+user: perfect, now please book the event tickets for me
+assistant: please confirm your booking for 3 tickets to comedysportz in philadelphia on march 11th
+user: yes that is correct
+tool(BuyEventTickets): ok n_results=1
+assistant: your ticket is booked
+user: thank you for your help
+assistant: have a nice day

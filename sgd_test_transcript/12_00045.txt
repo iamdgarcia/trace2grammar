@@ -1,0 +1,32 @@
+user: I need to buy bus tickets. I'm leaving on Monday next week.
+assistant: What is your destination? Your departure time? How many tickets do you need?
+user: I need 3 tickets to Anaheim. I want to leave around evening 5:45.
+assistant: Where are you departing from?
+user: I'm leaving Las Vegas.
+assistant: Confirming that you want 3 bus tickets from Las Vegas to Anaheim. You will be departing on March 4th at 5:45 pm. You have no extra luggage. Is this correct?
+user: No. I will be departing from Fresno.
+assistant: Confirming that you want a ticket on the bus departing from Fresno. You have no extra luggage. Is this correct?
+user: Yes, that works for me. How many stops are there on this bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: This is a direct bus. I'm sorry but I was unable to purchase your tickets. Would you like to try the 6:10 pm bus instead? It cost $39.
+user: Yes, that will work.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: What is the departure station?
+assistant: The bus departs from 2660 Tulare St.
+user: Thanks. Can you get me a rental car from Anaheim? I need it from the 8th of March until the 12th of March.
+assistant: What time will you be picking the car up?
+user: Around three pm.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a nice Buick Regal Sportback Sedan. It is available at John Wayne Airport.
+user: That sounds good.
+assistant: Do you want to reserve this car?
+user: Yes, please.
+assistant: Will you be needing insurance?
+user: No, I don't.
+assistant: Confirming that you will be picking up a Sedan rental car on March 8th at 3 pm at the John Wayne Airport. You will be dropping the rental off on March 12th. Is this correct?
+user: That sounds good. How much is the rental per day?
+tool(ReserveCar): ok n_results=1
+assistant: It will cost you $32.00 per day. Your car has been reserved.
+user: Thanks a lot for your help. That's all I need.
+assistant: You're welcome. Have a good day.

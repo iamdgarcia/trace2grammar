@@ -1,0 +1,27 @@
+user: I am on a short trip and I want to search for a car for rent. Do you help me?
+assistant: Yes, let me know your convenient time to book the car.
+user: I want to pick up the car at two in the afternoon.
+assistant: From when and Where do you want the Car for rent and to which date you need this?
+user: I want to book it from tomorrow to day after tomorrow and I want to pick up it from Las Vegas.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a nice Car which is a SUV of Alfa Romeo Stelvio car which will be available for pick up at Union Plaza. Do you want to rent it?
+user: I want to know the total cost per day.
+assistant: It will be around $41.00 per day. Shall I book it now?
+user: Leave it and Search for something else in the same SUV type.
+tool(GetCarsAvailable): ok n_results=4
+assistant: What about a SUV of Jaguar F-Pace Car available at McCarran International Airport?
+user: I think this will suit to me.
+assistant: Shall I book it now?
+user: Yes, I want to book this car for rent. Do it for me.
+assistant: Okay, Shall I include the insurance?
+user: No need to add the insurance.
+assistant: Please confirm to book a SUV Car which is available for pick up at McCarran International Airport from March 2nd at 2 pm to the date of March 3rd.
+user: That is okay to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have booked the car successfully.
+user: Thank you so much and let me know the cost per day for this car.
+assistant: It will cost around $42.00 per day.
+user: That is okay and thanks.
+assistant: Anything more help you want from me?
+user: No, thanks and that's all.
+assistant: Have a great day.

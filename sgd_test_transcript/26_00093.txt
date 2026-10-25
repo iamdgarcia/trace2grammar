@@ -1,0 +1,27 @@
+user: Find me a train I want luxurious ticket for Tuesday next week
+assistant: What's your preferred City to depart from and where are you going to
+user: I am looking for a tickets from Seattle to Portland for one seat
+tool(FindTrains): ok n_results=10
+assistant: What about the train departs at 8 am. and costs $103
+user: That sounds great
+assistant: Do you want to get the tickets
+user: No I don't want to get the tickets now I am looking for some interesting things on the 11th of March
+assistant: What's your preferred type you can says music for theater
+user: I like songs
+tool(FindEvents): ok n_results=5
+assistant: There are 5 events bastille is a popular one at theater of the clouds on March 11th at 7 pm.
+user: sounds great
+assistant: Do you want to get the tickets for the event
+user: No not right now show me some attractions there
+tool(FindAttractions): ok n_results=10
+assistant: You should check out crystal springs rhododendron garden which is the park
+user: Ok good
+assistant: Do you need any more help
+user: I want to find a house to stay there with an average rating 4.4 or higher
+tool(SearchHouse): ok n_results=8
+assistant: There are 8 houses available there is a good house at 1150 Northwest 9th Avenue with an average rating 4.4
+user: Is there any other houses for 4 people
+tool(SearchHouse): ok n_results=8
+assistant: There is a good house located at 1510 Southwest harbor way which has a rating 4.4
+user: The house is good that's all I need
+assistant: Thank you have a nice day bye

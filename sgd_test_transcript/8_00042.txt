@@ -1,0 +1,27 @@
+user: I'd like to pay for something.
+assistant: Okay, but first a few questions. Would you like me to transfer the money from your app balance or your debit card? How much would you like to make the payment amount? Who would you like to make the payment to?
+user: I'd like to make the payment to Wilson from my balance. Pay him one hundred and twenty three bucks, please.
+assistant: Okay. You'd like to make a payment of $123 to Wilson from your app balance. This transaction will be visible to the public. Please confirm is this is correct.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Great. Your payment was successful! Your payment will arrive to Wilson shortly.
+user: Awesome, thanks!
+assistant: Is there anything else I can do for you?
+user: Yes actually. I'd like to request a payment from someone.
+assistant: Okay. Just a few questions: how much are you requesting? Who are you requesting money from?
+user: I'd like to request 80 dollars from Rachel.
+assistant: Okay. You're requesting $80 from Rachel. Your transaction will be visible to the public. Please confirm is this is correct.
+user: Yes, that's correct.
+tool(RequestPayment): ok n_results=1
+assistant: Alright great! The request has been completed.
+user: Thanks. I'd like to make another payment.
+assistant: Okay. A few questions first. Who would you like to make the payment to? Which account do you want the money to be withdrawn?
+user: I'd like to send some money from my bank account to Jerry.
+assistant: Okay, how much would you like to send?
+user: 45 dollars, please.
+assistant: Okay. You'll be paying Jerry $45 from your debit card. This transaction will be visible to the public. Please confirm if this is correct.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Okay. Your request has completed. Jerry will receive the money shortly.
+user: Awesome. Thanks so much. That's all I needed. Bye!
+assistant: You're welcome. Have a great day!

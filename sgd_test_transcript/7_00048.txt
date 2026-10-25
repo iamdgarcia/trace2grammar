@@ -1,0 +1,21 @@
+user: I need to find a place to live in.
+assistant: How many bedrooms do you need?
+user: I need 2 bedrooms.
+assistant: Will you by the renting or buying? In which area?
+user: I need a place I can buy that is in San Fran and has 2 baths.
+tool(FindHomeByArea): ok n_results=2
+assistant: I found 2 nice houses that you can buy. Vantaggio Suites is located at 835 Turk Street and is $3,000,000.
+user: What else can you fine. Something with in-unit laundry and one bath.
+tool(FindHomeByArea): ok n_results=6
+assistant: Carter Terrace is at 530 Carter Street and is $2,700,000.
+user: What is the phone number? Is there a garage?
+assistant: The number is 415-584-4800. There is no garage.
+user: Sounds good, please schedule a visit on the 13th.
+assistant: You would like to visit Carter Terrace on March 13th, correct?
+user: No please make it the 4th of this month.
+assistant: You want to visit Carter Terrace on March 4th, correct?
+user: Yes, thank you.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thank you, that's all I need right now.
+assistant: Have a nice day.

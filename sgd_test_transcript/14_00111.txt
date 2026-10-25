@@ -1,0 +1,29 @@
+user: I'm in the mood for some music. Assistant, search for songs.
+tool(LookupMusic): ok n_results=10
+assistant: From the Album Cloud Nine, the song Carry Me by Kygo is a top choice.
+user: I'm not sure what kind of music that is. Please tell me.
+assistant: It is classified as Downtempo music.
+user: And in what year did this song debut?
+assistant: The song debuted in the year 2016.
+user: Oh really? That's a good one then.
+assistant: Shall I begin playing this song for you?
+user: Not at the moment. Maybe later on.
+assistant: What can I assist you with then?
+user: I'd be interested in finding some good online movies. A funny movie would nice. Maybe one with Lil Rel Howery?
+tool(FindMovies): ok n_results=1
+assistant: Would the movie Good Boys be of interest to you?
+user: Do you have any other movies besides that one?
+tool(FindMovies): ok n_results=0
+assistant: Unfortunately, that is the only movie to match your criteria. Can I assist you with anything else?
+user: Keep looking for movies for me. Try looking for Play movies.
+tool(FindMovies): ok n_results=1
+assistant: I have found a movie named Brittany Runs a Marathon. Is this of interest to you?
+user: Brittany Runs a Marathon would be just what I'm in the mood for. Let's go back to the music. Play the song you found in the Living room.
+assistant: Confirm that this is the correct song. Preparing to play Carry Me in the Living Room.
+user: No. Please play the song Carry Me in the Kitchen.
+assistant: Preparing to play Carry Me in the Kitchen. Shall I proceed?
+user: Yep. Please play the song for me.
+tool(PlayMedia): ok n_results=1
+assistant: The song is now playing in the Kitchen. Enjoy!
+user: Thank you so much! I won't be needing anything else right now.
+assistant: Please enjoy your music and have a great day.

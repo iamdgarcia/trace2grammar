@@ -1,0 +1,16 @@
+user: I need to find somewhere new to move to.
+assistant: What floor plan do you want? Do you know what part of town or what area you want to move to?
+user: I need it to be in Fremont and it has to have 2 baths and 2 bedrooms.
+assistant: How about buy or rent for this?
+user: I have to buy, I need to get rid of some cash quick.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found 10 choices. Why don't you just move into Boulevard at 40001 Fremont Boulevard. It runs for $2,800,000.
+user: Fine, you got a deal. When can I look at my new home.
+assistant: When will you want to go?
+user: I can't go until March 10th.
+assistant: Sure, easy, confirm: visit Boulevard on march 10th.
+user: Great, that's perfect.
+tool(ScheduleVisit): ok n_results=1
+assistant: You have a visit to your new home set.
+user: Perfect, that's a load off my mind.
+assistant: Enjoy your new home.

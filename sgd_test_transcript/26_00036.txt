@@ -1,0 +1,36 @@
+user: I need help finding a flight.
+assistant: what's your return date?
+user: I'd like return on March 9th.
+assistant: Tell me your departure and destination cities, please.
+user: I'm travelling from SFO to ATL. Find flights on that route.
+assistant: When would you like to leave?
+user: I'd like to depart on Wednesday next week.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Your search yielded 4 suitable flights. There's an outbound American Airlines flight with a layover leaving at 4:55 am. The inbound flight leaves at 3:45 pm. The cost per ticket is $379. Would you like this flight?
+user: How many people is it for? Two?
+assistant: No. It is for 1 passenger.
+user: All right. Now please find me a house for 3 people to stay over there. It must be rated 4.0 stars or higher, and must offer laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses meeting your requirements. How about the nice 4.0 rated house situated at 101 Andrew Young International Boulevard Northwest?
+user: Please let me have the phone number for this place.
+assistant: You can call them at +1 404-524-5555.
+user: This house is perfect.
+assistant: Should I go ahead and reserve this house?
+user: Yes, please reserve me the house.
+assistant: When would you like to check out? March 9th or another date?
+user: I'll be checking out on the 8th.
+assistant: Will you be checking in on March 6th?
+user: I plan on checking in on 7th of this month.
+assistant: All right. Your party of 3 is checking into a house in Atlanta on March 7th, and checking out on March 8th. Is this correct?
+user: Yes, that is correct.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation.
+user: What attractions do you recommend there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you might like. I recommend Al-Farooq Masjid, which is a Place of Worship.
+user: Do you have their contact number? Does this place welcome children?
+assistant: Their contact number is 678-886-3457. Yes, the place is child-friendly.
+user: All right. Cool.
+assistant: Will there be anything else?
+user: No. You've been very helpful. I appreciate it.
+assistant: Have a good time!

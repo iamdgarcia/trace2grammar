@@ -1,0 +1,19 @@
+user: Can you suggest me some attractions?
+assistant: In which city would you like to visit attractions?
+user: I would like to search in SF
+tool(FindAttractions): ok n_results=10
+assistant: I found a Historical Landmark: Alcatraz
+user: Beautiful! Now I have to find a house, with a rating of 4.2 or higher
+tool(SearchHouse): ok n_results=10
+assistant: At 1100 Market Street Hotel entrance is at, 45 McAllister Street there's a nice house with 4.2
+user: Yes, this is good for me. I need a Premium Economy class tickets from Phoenix. A round trip flight. Any airline is fine.
+assistant: What is the day of return?
+user: The day for the return flight is March 13th
+assistant: What is the day of your outbound flight?
+user: I have to leave on March 7th
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 flights: a direct flight with Delta Airlines leaving at 4:45 am. The returing flight at 8:30 am. The ticket costs $304 in total
+user: Yes, It's fine for me!
+assistant: You need anything else?
+user: No, It's all for now!
+assistant: Have a nice day!

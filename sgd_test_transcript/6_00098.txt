@@ -1,0 +1,20 @@
+user: I would like to find a salon.
+assistant: On which city you want to be the salon?
+user: In Walnut Creek will be good for me.
+tool(FindProvider): ok n_results=10
+assistant: A nice salon in Walnut Creek is Blow Dry Bar.
+user: Sounds very good.
+assistant: You want to book an appointment at this salon?
+user: Yes I would like that.
+assistant: At what time you prefer to be?
+user: At afternoon 3:15 will be very good.
+assistant: On what date you want to be?
+user: On this Sunday will be okay.
+assistant: You want an appointment on March 3rd at 3:15 pm and Blow Dry Bar is the name of the hair stylist.I'm right?
+user: Yes is okay.What is the average rating and their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: 4.4 is the average rating and phone number is 925-837-2990.I'm sorry but the appointment at Blow Dry Bar could not be achieved.What you think about change it on March 3rd at 3 pm because is a nice salon.
+user: No.Thank you.
+assistant: Can I do anything else for you?
+user: No.Thank you for all.
+assistant: Have a good day!

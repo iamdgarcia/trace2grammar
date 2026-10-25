@@ -1,0 +1,32 @@
+user: Can you buy bus tickets for me?
+assistant: Can you tell me the number of required tickets, Date and time of your departure?
+user: I want 3 tickets in a bus leaving at 9:15 in the morning on March 11th.
+assistant: What is city of departure and your destination?
+user: I will be going from San Diego to Sacramento.
+assistant: Please confirm: You want me to book 3 tickets in bus going from San Diego to Sacramento on March 11th at 9:15 am.
+user: Yes, That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, Your seats could not be booked due to some reasons. What do you think of a bus departing at 9:10 am with the cost of the ticket as $64?
+user: Yes, that sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked your tickets.
+user: Can you tell me the name of the station it arrives?
+assistant: The name of the station it arrives is 65th Light Rail Station.
+user: Can you tell me the name of the station it departs from and the number of stops?
+assistant: It starts it's journey from El Cajon Bus Stop with one-stop.
+user: Thank you! Now, I would like to book a rental car in Sacramento with the drop off date as 14th of March and would like to up it up at 5 pm.
+assistant: Do you want me to book the car from March 11th?
+user: No. Book the car from 12th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars suitable to you. How about a SUV Alfa Romeo Stelvio available for pick up at Sacramento Valley Station?
+user: Okay, That sounds nice to me. I would like to reserve the car.
+assistant: Would you like to have insurance as well?
+user: No. Please don't add insurance.
+assistant: Please confirm: You want me to book a SUV car for pick up at Sacramento Valley Station on March 12th at 5 pm and the drop off date is March 14th.
+user: Yes, That is correct. Also find me the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved the car. And the total cost per day is $39.00.
+user: Thank you so much!
+assistant: Can I help you with anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

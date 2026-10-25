@@ -1,0 +1,19 @@
+user: I need help finding movies online.
+assistant: Any particular type of movie I should search for?
+user: I absolutely love Cartoon movies.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies that might interest you. Between The Angry Birds Movie 2 and Toy Story 4, which do you prefer?
+user: I prefer Toy story four, since I've heard great things about it. I'd like to watch the movie right away.
+assistant: Sure, no problem. Please confirm that you'd like to watch Toy Story 4 with English subtitles.
+user: That is correct. Do you know the movie actor?
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is now playing. Tony Hale was the actor in the movie.
+user: Thank you. Do you know what the weather is like there?
+assistant: Any particular city I should check the weather for?
+user: Check the weather in Hayward.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature is 80 degrees Fahrenheit, with a 9 percent chance of rain.
+user: Cool. All right.
+assistant: Will there be anything else?
+user: No. Thank you very much.
+assistant: Goodbye.

@@ -1,0 +1,17 @@
+user: Can you show me my alarms, please?
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm named Wake up for 9 am.
+user: Do I have any more alarms?
+assistant: You have an alarm named Pick up kids set for 4:30 pm.
+user: Great. I want to add an alarm for evening 5.
+assistant: I am creating an alarm named New alarm for 5 pm. Is this correct?
+user: Yes it is.
+tool(AddAlarm): ok n_results=0
+assistant: Sorry but I couldn't set the alarm. Is there anything else I can help you with?
+user: Can you try again? Set it for three in the afternoon.
+assistant: Confirming that you want me to create a New alarm for 3 pm?
+user: Yes, that is correct.
+tool(AddAlarm): ok n_results=1
+assistant: I have successfully added your alarm.
+user: Thanks a ton. That's all for now.
+assistant: You're welcome.

@@ -1,0 +1,16 @@
+user: I need to find a therapist in Petaluma if you can help me
+assistant: Sure thing, what kind of therapist in particular?
+user: I need a Psychologist please
+tool(FindProvider): ok n_results=4
+assistant: Sure, I found 4 in the Petaluma area. Do you want to give Psychologist Dunlap Peter T a try?
+user: What is his number and address?
+assistant: He is located at 1 Bodega Avenue # 2 and you can call him at 707-782-0400
+user: What about a Psychiatrist in the Palo Alto area in case I need one?
+tool(FindProvider): ok n_results=2
+assistant: There's a Psychiatrist called Ariela Ora Karasov located in Palo Alto
+user: OK that's great then
+assistant: Do you want me to book any appointments for you?
+user: At the moment, that's not necessary
+assistant: Can I assist with anything else?
+user: No, that's all for now, it means a lot to me
+assistant: I'm happy I was able to assist

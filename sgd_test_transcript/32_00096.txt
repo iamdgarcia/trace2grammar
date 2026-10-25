@@ -1,0 +1,38 @@
+user: Hello. I'd like to buy a place with three baths. Can you offer some suggestions?
+assistant: I'd be happy to help. How many bedrooms should it have?
+user: I'd like a four bed room place.
+assistant: Where should I begin the search?
+user: I'd like to find a place in Livermore.
+tool(FindHomeByArea): ok n_results=5
+assistant: There are 5 places that meet your criteria. Acacia Capital Cor-Ironwood Ap located at 5643 Charlotte Way is a beautiful property for $4,250,000.
+user: Does it have a laundry room or garage?
+assistant: Unfortunately, it doesn't have either.
+user: That's okay. We can work around it.
+assistant: Would you like to view the property?
+user: Yes, please schedule a showing for me.
+assistant: What time works best for you?
+user: I'd like to go on March 7th.
+assistant: You'd like to see Acacia Capital Cor-Ironwood AP on March 7th. Is that correct?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: You are booked to view the property.
+user: Great! Can you share this property?
+assistant: Of course. Who would you like to share it with?
+user: Send it to Sophia, please.
+assistant: You'd like to share 5643 Charlotte Way with Sophia. Is that right?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with Sophia.
+user: I'd like to get a cab there.
+assistant: How many are in your party?
+user: There are three of us.
+assistant: Would you prefer a regular or luxury ride?
+user: I'd like a normal ride please.
+assistant: Have I got this right? You'd like a regular ride for 3 to 5643 Charlotte Way.
+user: That is perfect.
+tool(GetRide): ok n_results=1
+assistant: Your cab has been confirmed is in route.
+user: Thank you so much.
+assistant: Is there something else I can do for you?
+user: That will be all. Thank you again.
+assistant: You're welcome. Have a wonderful day.

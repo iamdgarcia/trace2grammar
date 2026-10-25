@@ -1,0 +1,27 @@
+user: I'd like to know the weather in Burlingame.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for that day is looking like 81 degrees F with a 2 percent chance of rain.
+user: Sure, sounds good. I'd like to schedule a visit to a property on the 1st.
+assistant: Which property did you prefer?
+user: I'd like to visit Washington Creek Apartments.
+assistant: Please confirm you're booking a visit to Washington Creek Apartments on March 1st.
+user: Yes, that sounds good. Does it have 4 bathrooms and a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been booked. It has 3 bathrooms and a garage.
+user: I'd like to book a car and pick it up at Intercity Terminal. I'd also like to buy insurance.
+assistant: When did you want to pick the car up?
+user: I'd like it at 12:30 in the afternoon.
+assistant: What kind of car did you prefer and until when did you want it? Did you want it starting March 1st?
+user: Yes, that sounds good. I'd like it until next Wednesday and I prefer a Hatchback.
+assistant: Please confirm you're picking up a Hatchback from Intercity Terminal on March 1st at 12:30 pm and dropping it off on March 6th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: How much will the car cost per day?
+assistant: It will cost $49.00 a day.
+user: What is the car's name?
+assistant: The car is named Renault Clio.
+user: Thank you for your help.
+assistant: Did you need help with anything else?
+user: No, but thanks again.
+assistant: Have a great day.

@@ -1,0 +1,11 @@
+user: Can you book a reservation for a restaurant at this evening 5:30?
+assistant: At which restaurant would you like to make a reservation?
+user: See if you can get a table at Mi Zacatecas.
+assistant: In which location is Mi Zacatecas?
+user: It's in American Canyon.
+assistant: Please confirm the following: Book 1 table at Mi Zacatecas Family Restaurant in American Canyon for 2 at 5:30 pm on March 1st.
+user: Confirm. Can you tell me what type of food they serve there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation has successfully been made. They serve Mexican food.
+user: Great, that will be all.
+assistant: Enjoy the rest of your day.

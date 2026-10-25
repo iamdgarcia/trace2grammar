@@ -1,0 +1,23 @@
+user: I am interested in locating a hotel.
+assistant: What is the city of interest to search?
+user: I would like to find hotels in London.
+tool(SearchHotel): ok n_results=10
+assistant: I was able to find 10 hotels that meet your specifications. 45 Park Lane is a hotel with a 5 star rating.
+user: Can you give me their address and phone number?
+assistant: They are located at 45 Park Lane and can be reached at +44 20 7493 4545.
+user: That sounds nice. Tell me about the attractions there. I would like to go to a museum and one that doesn't require an entry cost.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. You may want to go to the museum BODY WORLDS London.
+user: Good, got it. I want to book a room at the hotel you suggested.
+assistant: What is the date of check in?
+user: I plan on checking in on the 4th.
+assistant: What is the length of your stay?
+user: I am going to stay there for 7 days.
+assistant: You want 1 room to stay at 45 Park Lane in London. Your stay is for 7 days and has a check in date of March 4th.
+user: Right, that's good. Can you tell me the cost per night and if I can smoke at the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: The price is $540 each night and there isn't any smoking at the hotel. I was able to book the room.
+user: Thank you, I really appreciate all your help!
+assistant: Do you need anything else?
+user: Nope, thanks so much for your help.
+assistant: Goodbye, enjoy your day!

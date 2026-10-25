@@ -1,0 +1,33 @@
+user: Think you might be able to find some interesting thing for me to do?
+assistant: What kind of things are you interested in? You can say things such as Music, Theater, or anything else.
+user: I like Songs of course, stuff like that.
+assistant: In which city would you like me to search?
+user: Find me something in the Sacramento area.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events that match your criteria in that area. The Aftershock Festival is a popular event which is taking place at Discovery park on March 5th starting at 5:30 pm.
+user: It sounds cool. How much does a ticket cost?
+assistant: The ticket price is $20.
+user: That's nice and cheap. I'll have to check it out. Can you find me a house to stay at while I'm in the area?
+tool(SearchHouse): ok n_results=10
+assistant: There are at least 10 houses available in the area. There is a house with a rating of 4.4 located at 100 Capitol Mall. Would that interest you?
+user: That sounds pretty good to me. I know the area and it's nice.
+assistant: Would you like to make a reservation for this house?
+user: No, I don't want to make any commitments right now.
+assistant: Is there anything else that I can help you with then?
+user: You could find me a bus going there. There will be two of us and we'll be leaving from Las Vegas. I don't care if it is a direct bus or not.
+assistant: When would you like to leave? Is it on March 6th, March 5th, or some other day?
+user: I would like a one-stop bus that leave next Tuesday.
+tool(FindBus): ok n_results=7
+assistant: I've found 7 buses for you. How about one that departs at 6 am and costs $70.
+user: Plans have changed. Find me 3 tickets for a bus from San Diego.
+tool(FindBus): ok n_results=10
+assistant: How about a bus that departs at 6:30 am and costs $63?
+user: That will work for what I need.
+assistant: Would you like to purchase tickets for this bus?
+user: I don't want to buy bus tickets right now. But I wouldn't mind buying some tickets to that event from earlier.
+assistant: You would like 3 tickets to the Aftershock Festival in Sacramento on March 5th. Is that correct?
+user: Yes that is correct. Can you tell me the address of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets were purchased without issue. The address of the venue is 1600 Garden Highway.
+user: Great. Thanks again, that will be all.
+assistant: Okay. Have a great rest of your day.

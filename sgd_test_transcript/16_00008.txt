@@ -1,0 +1,38 @@
+user: I want to change my hairstyle and I need to find a Salon. Can you search for the one?
+assistant: Yes, Where do you want to search for the Salon? Is there any particular place to search for?
+user: Yes, find the one in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I got 10 results and what about a Salon at Atelier Salon Willow Glen in San Jose?.
+user: That is okay for me.
+assistant: That's nice. Do you want me to book an appointment there now?
+user: I will ask it later. Now, search for a Therapist there.
+assistant: Let me know your required type of Therapist to search for and also confirm to search for the same in San Jose.
+user: That is okay and I need to meet a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I found a Psychologist in San Jose whose name is Barskyex Bryna G. Do you want to meet them?
+user: I have to decide and first let me know their contact number.
+assistant: It is 408-363-4418.
+user: Search for someone else.
+assistant: What about a Psychologist whose name is Burdge Sarah in San Jose?
+user: As usual I want to know their phone number and address to decide.
+assistant: You can contact them over number 650-274-8004 and they are located at 2880 Zanker Road # 203.
+user: Thanks for the details.
+assistant: Shall I book an appointment with that Therapist?
+user: Yes, do it now.
+assistant: What is your convenient date and time to fix that?
+user: I need to book it on 3rd of March at 10:00.
+assistant: I want to confirm to book an appointment with Burdge Sarah on March 3rd at 10 am.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment and you will get an email soon.
+user: Thanks for your help and Please book an appointment with the Salon that I have selected before.
+assistant: At what time?
+user: Book it at 14:45.
+assistant: Please confirm to book an apponitment with the Stylist Atelier Salon willow Glen on March 3rd at 2:45 pm.
+user: That is good thanks.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was confirmed successfully.
+user: Thanks for that.
+assistant: Anything else you need?
+user: No, that's all for now.
+assistant: Have a good day.

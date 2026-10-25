@@ -1,0 +1,24 @@
+user: I am interested in finding a unisex salon which is in Emeryville.
+tool(FindProvider): ok n_results=1
+assistant: There is 1 salon which you might consider that is called New Florence Salon and can be found in Emeryville.
+user: Can you give me the number I can use to contact them, and also could you tell me the average rating the salon has?
+assistant: If you want to call them you can at 510-547-5000, and it has a rating at an average of 4.9.
+user: Alright, that seems a good option.
+assistant: Do you want to have an appointment booked at this place?
+user: Yes I want to have an appointment reserved for me.
+assistant: Can you tell me the time when you want to have the appointment, and also the date for it?
+user: I will be available to have the appointment at six pm on next Wednesday.
+assistant: Can you please confirm that you want to book an appointment at the New Florence Salon on March 6th at 6 pm?
+user: Yes that is correct. Can you tell me the address of the salon?
+tool(BookAppointment): ok n_results=1
+assistant: Your requested booking for an appointment has been done, and the salon can be found in 1195 65th Street.
+user: I appreciate it very much. I also need to find a restaurant there so that I can eat something on that day. The restaurant I am interested in should be considered as reasonably priced, and that is serves Dumplings.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant which matches what you want. A great restaurant found in Emeryville is the Hong Kong East Ocean Seafood Restaurant.
+user: Alright, I like it. I want to have a table for three people booked for me at this restaurant at 5:45 pm.
+assistant: Can you please confirm that you want to have a table for 3 people booked for you at the Hong Kong East Ocean Seafood Restaurant in Emeryville on March 6th at 5:45 pm.
+user: Alright, that suits me well. Can you tell me the address of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant can be found in 3199 Powell Street, but unfortunately I could not make the reservation in the restaurant you wanted. The Hong Kong East Ocean Seafood Restaurant is actually a good restaurant so do you want me to try again to make the reservation for 3 people on March 6th at 6 pm?
+user: No I do not want that. That's all I needed.
+assistant: Have a good time!

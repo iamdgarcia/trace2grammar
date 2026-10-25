@@ -1,0 +1,21 @@
+user: Can you find me a bus please?
+assistant: Sure from where to where, and when?
+user: I wanna go from LAX to Anaheim on March 5th
+tool(FindBus): ok n_results=10
+assistant: How about this 6 am bus for $13
+user: Can you find me another one?
+assistant: There's a 6:40 am bus that's cheaper, $12
+user: That sounds great
+assistant: Do you want to get tickets for this then?
+user: Sure, just one seat please
+assistant: Confirming you want this bus for 1 with no extra luggage from Los Angeles to Anaheim leaving on March 5th 6:40 am
+user: Yes that's good, how many stops does that bsu have
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed, and it's direct
+user: How about hotels, can you find me one too
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including a 2 star place called the Alamo Inn & Suites
+user: That sounds good for me
+assistant: Do you want to book the hotel then?
+user: No that's all for now, thank you
+assistant: Sure thing, you're welcome

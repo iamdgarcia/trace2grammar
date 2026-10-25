@@ -1,0 +1,32 @@
+user: I need to get my hair done so I'm looking for a salon in Sonoma.
+tool(FindProvider): ok n_results=3
+assistant: You may want to try C C Beauty Salon in Sonoma.
+user: I think I would like that one.
+assistant: Would you like to make an appointment?
+user: Not right now, but thanks.
+assistant: Alright, if there anything else you need?
+user: I'm thinking about seeing a regular movie at the Sonoma Cinema.
+tool(FindMovies): ok n_results=3
+assistant: Toy Story 4, Hustlers, and Angel Has Fallen are all playing there.
+user: Toy Story 4 sounds great. What time is it playing ont he 2nd of this month?
+tool(GetTimesForMovie): ok n_results=1
+assistant: Sonoma Cinema has one showing at 4:30 pm.
+user: Do you know what type of movie it is?
+assistant: Yes, it's an Animation film.
+user: What is the ticket price?
+assistant: Tickets cost $11 each.
+user: Ok, that works.
+assistant: Should I purchase tickets for the show?
+user: I don't need to buy tickets, but I would like to make an appointment that day for the salon you mentioned.
+assistant: What is a good appointment time for you?
+user: I would like a 9:45 am appointment please.
+assistant: Alright, you would like to make an appointment at C C Beauty Salon on March 2nd for 9:45 am, is that correct?
+user: Actually an appointment at 11 o'clock in the morning would be best.
+assistant: You would like an appointment at 11 am on March 2nd, right?
+user: Yes, please book it. Can you give me the address and do you know if it is a unisex place?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. The salon is location at 18615 California 12 and it is not unisex.
+user: great, I appreciate the help.
+assistant: Do you need anything further?
+user: Nope. Thanks so much!
+assistant: You're welcome. Enjpy your day.

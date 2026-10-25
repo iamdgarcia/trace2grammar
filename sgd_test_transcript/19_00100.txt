@@ -1,0 +1,27 @@
+user: I am interested in finding a car which I can rent.
+assistant: Can you tell me from where you will be renting the car, and from when you will be starting to rent the car, and for how long will you need to have the car rented?
+user: I need to have the car rented from today till 3rd of March, and I prefer to rent the car in Toronto, Canada.
+assistant: Can you tell me the time when you want to pick up the car?
+user: I will be available to pick up the car at afternoon 1:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a good car which is a Sedan Buick Regal Sportback, which you can take at Toronto Pearson International Airport.
+user: That seems nice. Now I would like to buy four tickets for an event there, which will be happening around Ciudad de Mexico on March 2nd.
+assistant: Is there some specific event you are interested in?
+user: Some friends told me that Ohtli is nice.
+assistant: Can you please confirm that you want to buy 4 tickets for the Ohtli event which will happen in Mexico City on March 2nd?
+user: Yes, that is correct. Can you tell me the location of the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested tickets have been booked, and I wish you enjoy your time there. The venue of the event is called Calle Sor Juana Ines de La Cruz 114, Santa Maria la Ribera, 06400 Cuauhtemoc, Ciudad de Mexico, Mexico.
+user: Which is the place where the event will happen, and the time when it will start?
+assistant: The time of the event is 6 pm, and the location of the event is TEATRO Sergio Magana.
+user: I am grateful for your help. Now I would like you to help me rent the car which you found earlier.
+assistant: Are you interested in having insurance with your car?
+user: I am not willing to have an insurance on the car.
+assistant: Can you then please confirm that you want to rent a Sedan car without insurance which you will pick up at Toronto Pearson International Airport on March 1st at 1:30 pm, and that you will need it till March 3rd?
+user: That seems good. Can you tell me how much this car will be costing me per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked, and it will be costing you $39.00 per day.
+user: I am grateful for your help.
+assistant: Can I do something else to help you?
+user: Nothing. I appreciate that you helped me.
+assistant: Have a wonderful time!

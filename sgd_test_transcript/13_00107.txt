@@ -1,0 +1,14 @@
+user: I want to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: What about Madeline's Madeline? It is rated 88 out of 100.
+user: Who directed it?
+assistant: It is directed by Josephine Decker.
+user: Great. I want to find something fun to do on that day around London, UK.
+assistant: Any particular category? Music, theater, etc.?
+user: I'd like to see a play.
+tool(FindEvents): ok n_results=10
+assistant: A Right Royale Tea is a popular play taking place at the Amba Hotel Charing Cross on March 14th at 7 pm.
+user: Sounds good.
+assistant: Do you want to purchase tickets?
+user: No, not now. Thanks.
+assistant: Have a good day!

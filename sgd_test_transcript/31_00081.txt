@@ -1,0 +1,33 @@
+user: Hi, could you help me find a salon please?
+assistant: And which city should I search in?
+user: Something in Newark will be great!
+tool(FindProvider): ok n_results=3
+assistant: How about Kim P Beauty Care in Newark?
+user: Sounds great to me!
+assistant: Do you need an appointment there?
+user: Yes please, please make one at quarter past 2 in the afternoon on 9th of March.
+assistant: Please confirm your appointment at Kim P Beauty Care at 2:15 pm on March 9th.
+user: Sounds great to me!
+tool(BookAppointment): ok n_results=1
+assistant: Your booking could not be made. How about an appointment at Kim P Beauty Care at 2 pm on March 9th.
+user: I am fine with that too!
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made.
+user: May I have their contact number, and is this a unisex salon?
+assistant: No, this is not a unisex salon. You can call them at 510-795-7852.
+user: Thanks! Could you find me a burger restaurant which is not very costly please?
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant in Newark you may like, how about Chuck E. Cheese's?
+user: Do they have outdoor seating and where are they located?
+assistant: They are located at 39839 Mowry School Road, and unfortunately, they do not have outdoor seating.
+user: I see, that is fine with me then.
+assistant: Would you like a reservation there?
+user: Sure, could you make one at half past 5 in the evening?
+assistant: Please confirm your reservation for 2 at Chuck E. Cheese's in Newark at 5:30 pm on March 9th.
+user: Sounds great to me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much for your help.
+assistant: Could I further help you then?
+user: No, that is all. Thank you so much!
+assistant: Have a great day ahead.

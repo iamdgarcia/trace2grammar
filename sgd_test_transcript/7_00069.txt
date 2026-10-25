@@ -1,0 +1,20 @@
+user: I am looking for a new Property for me to live and I need your help to find the good one.
+assistant: Is there any particular place in your mind to search for the property? Also let me know whether you want to take it for a rent or you want to buy the same? And how many bedrooms you need in it?
+user: I need the property with 2 bed rooms. I want to buy it in Fremont. Please search it there for me.
+assistant: Let me know the number of baths required by you.
+user: 2 baths are enough to me.
+tool(FindHomeByArea): ok n_results=10
+assistant: Okay, let me know your interest to buy the property named Boulevard which is a nice one and located at 40001 Fremont Boulevard and the cost for the same is $2,800,000
+user: May I know their contact number?
+assistant: Yes, please note it as 510-455-8815.
+user: I need to search in some other places, can you do it for me?
+assistant: Yes, what about the property named Briarwood At Central Park at 4200 Bay Street which costs $2,750,000.
+user: Yes, I think this suits to me. I want to make a schedule to visit this property on March 14th. Please make it for me.
+assistant: I need your confirmation to make a Schedule of visit to a property named Briarwood At Central Park on March 14th.
+user: That is confirmed to proceed. Also get me their contact number for my reference.
+tool(ScheduleVisit): ok n_results=1
+assistant: Yes, note that the phone number is 510-455-8813 and the schedule of visit was perfectly made.
+user: Thank you so much.
+assistant: Anything else you need?
+user: Not, that's all for now.
+assistant: Have a good day.

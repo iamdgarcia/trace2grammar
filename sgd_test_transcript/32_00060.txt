@@ -1,0 +1,30 @@
+user: Could you find some songs for me please.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10. You may like Lost Within by Fivefold from The Story.
+user: What type of music?
+assistant: It's rock music.
+user: YEs that would be great.
+assistant: Would you like to play it?
+user: Not right now thanks.
+assistant: Can I do anything else for you?
+user: I need a good movie to watch online.
+assistant: What type of movies do you like?
+user: I like funny movies.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies. How about Chhichhore, Good Boys, or my big Fat Greek Wedding?
+user: I like My Big Fat Greek Wedding.
+assistant: Would you like to play it?
+user: Not right now. How about playing the song I found you?
+assistant: You would like to hear Lost WIthin cast to the living room, correct?
+user: Yes that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your tune!
+user: Show me my alarms please.
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm at 8:30 am called coffee.
+user: Okay great thank you.
+assistant: Do you need to add one?
+user: Not right now thanks.`
+assistant: Can I do anything else for you?
+user: No thanks very much.
+assistant: My pleasure, have a goood day.

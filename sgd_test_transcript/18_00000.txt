@@ -1,0 +1,25 @@
+user: I am interested to know how the weather is going to be on 7th of March in San Diego.
+tool(GetWeather): ok n_results=1
+assistant: For your requested location the temperature should be at an average of 90 degrees Fahrenheit, and with a chance of raining at 17 percent.
+user: Alright, fine. Now I would like to find a one-way flight to go there, and I do not mind which airline I will have.
+assistant: Will you be having your flight on March 7th?
+user: In fact I will be taking the flight on the 6th.
+assistant: Can you tell me from which city will you be leaving from?
+user: I will be taking the flight from Paris, France on 2nd of this month.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Would you like to have a flight with Air France which has layover, and leaves at 7:35 am. The price of ticket costs $353.
+user: Can you tell me when the flight will be arriving at the destination of my choice, and could you tell me if the ticket is an Economy one?
+assistant: The flight ticket is an Economy class ticket, and your flight will be departing at 2:05 pm.
+user: That is alright with me.
+assistant: Is there something else I can help you with?
+user: Would it be possible for you to find me a rental car to go there?
+assistant: Till when are you going to need to have the car?
+user: I would like to have a Sedan car, and I will need it till the 14th.
+assistant: From when will you be needing it, from March 7th, March 2nd or some other day? Which time suits you best to pick up the car?
+user: I want to have the car from 9th of March, and I can pick it up at quarter to 4 in the afternoon.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 cars which you might like, with one of them being a Sedan Hyundai Ioniq, which you can pick up at Santa Fe Depot.
+user: That seems a nice one.
+assistant: Can I do something else to help you with?
+user: Nothing. I appreciate your help.
+assistant: Have a good time!

@@ -1,0 +1,30 @@
+user: Can you find me a psychologist therapist please?
+assistant: What city should I look in?
+user: Please find someone in Belmont.
+tool(FindProvider): ok n_results=1
+assistant: You can try Edelstein Mary R. a psychologist in Belmont.
+user: That sounds good to me.
+assistant: Would you like to book an appointment with a therapist?
+user: Yes, I'd like to book an appointment.
+assistant: Tell me the preferred time for the appointment.
+user: The appointment will be in the afternoon 3:15.
+assistant: Which date do you want the appointment?
+user: I would like the appointment March 5th.
+assistant: Please confirm details to book an appointment with Edelstein Mary R 3:15 pm on March 5th.
+user: Yes, that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry something is wrong. I can't book the appointment so you may want to try Edelstein Mary R for March 5th at 3 pm.
+user: Yes, that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was a success for being booked and you'll get an email soon.
+user: Will you get me a cab to go there?
+assistant: What is the number of seats you need?
+user: I need a group of 1.
+assistant: What is your preferred ride? Will you be going to 1301 Ralston Avenue # C?
+user: Yes, that will work and I'd like the most comfortable ride.
+assistant: Please confirm details for a ride to 1301 Ralston Avenue # C for 1 seat luxury ride.
+user: Yes, that will work.
+tool(GetRide): ok n_results=1
+assistant: I have booked your ride and the cab is on its way.
+user: Thanks so much for the help. That is all I need.
+assistant: Have a nice day.

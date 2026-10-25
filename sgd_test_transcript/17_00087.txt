@@ -1,0 +1,12 @@
+user: I'd like to find a train going from Portland, OR with flexible tickets.
+assistant: What's your destination, and when are you travelling?
+user: The 1st of this month, heading to seattle, WA
+tool(FindTrains): ok n_results=9
+assistant: I have 9 options. How about this one leaving at 9:10 am for $80.
+user: Sounds good, can I find a house there?
+tool(SearchHouse): ok n_results=10
+assistant: There's 10 houses available. How about 1000 1st avenue, rated 4.5?
+user: Do they have laundry?
+assistant: Yes.
+user: Thanks, that's all I need.
+assistant: Have a good day!

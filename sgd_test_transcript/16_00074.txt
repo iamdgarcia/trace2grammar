@@ -1,0 +1,24 @@
+user: I will be leaving on Sunday this week at 16:45 heading to SD, can you please help get my tickets.
+assistant: Sure, I would love to. Where are you departing from?
+user: I will be leaving out of LA.
+assistant: Great! How many tickets will you need to purchase?
+user: Just 2 tickets please.
+assistant: No problem. Please confirm that you would like to purchase 2 tickets from Los Angeles to San Diego on March 3rd departing at 4:45 pm. Did I get this correct?
+user: Yes you did! Which station will I depart from? Also find out if this is non stop trip as well.
+tool(BuyBusTicket): ok n_results=1
+assistant: this will be a direct bus with no stops on the trip. You will be departing from North Hollywood Station. I do apologize, but i was unable to complete your ticket purchase due to unexpected errors. May I suggest the bus departing at 4:40 pm for $25?
+user: Yes, that will do.
+tool(BuyBusTicket): ok n_results=1
+assistant: Great your ticket is confirmed
+user: Can you also locate a hotel for 1 room. I would prefer 3 star hotels if possible.
+tool(SearchHotel): ok n_results=10
+assistant: I have located 10 matches for your criteria. May I suggest first the Bahia Resort Hotel it is a 3 star hotel as requested.
+user: Great, I think I would like to reserve that now also.
+assistant: Ok, How long would your stay be for?
+user: 7 days. I will be checking in on next Wednesday
+assistant: great, please confirm: you would like to book 1 room for 7 days at Bahia Resort Hotel in San Diego. Check in date is March 6th. is this right?
+user: Yes, that is right. I can't wait to get there!
+tool(ReserveHotel): ok n_results=1
+assistant: Great, your booking was completed successfully
+user: Thank you. That's all for now.
+assistant: your welcome. Good bye!

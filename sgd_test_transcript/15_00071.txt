@@ -1,0 +1,21 @@
+user: I would like to find a therapist. Can you search for a Psychologist in Redwood City please?
+tool(FindProvider): ok n_results=9
+assistant: I found 9 therapists in that area. Becker Hubert J. is a Psychologist in Redwood City.
+user: What is the address for that psychologist?
+assistant: The psychologist is located at 1150 Veterans Boulevard.
+user: What is the phone number?
+assistant: The phone number is 650-299-4827.
+user: OK, thank you. What will the weather be like in that area on the 10th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature that day is expected to be 74 degrees Fahrenheit, and there is a 25 percent chance of rain.
+user: What is the expected humidity that day?
+assistant: It is projected to be around 58 percent.
+user: And how windy will it be?
+assistant: The average wind speed is expected to be 7 miles per hour.
+user: Thank you. Can we set up an appointment with the therapist you found earlier? I would like to make it for a quarter to 2 in the afternoon.
+assistant: You would like to book an appointment with Becker Hubert J at 1:45 pm on March 10th, is this correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I was not able to book an appointment for that time and date. Becker Hubert J has an opening at 1:30 pm on March 10th.
+user: No, thank you. I'm all set for now.
+assistant: I am glad to assist you.

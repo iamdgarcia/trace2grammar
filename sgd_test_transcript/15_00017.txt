@@ -1,0 +1,27 @@
+user: I'd like to look for a place to reside in that I could buy.
+assistant: What location would you like the residence in, and how many bed rooms do you desire in the residence?
+user: I'd like a residence in Sebastopol, and it ought to have one bed room.
+assistant: How many baths would you like?
+user: It ought to have one bath.
+tool(FindHomeByArea): ok n_results=3
+assistant: I discovered 3 lovely residences. There is an excellent residence called Burbank Business Management situated at 699 Gravenstein Highway North, costing $1,600,000.
+user: That's perfect for me.
+assistant: Would you like to plan a trip to the residence?
+user: Yeah, I'd like to plan a trip.
+assistant: When would you like to plan the trip?
+user: I'd like to go on the 12th.
+assistant: Please verify the following information: you are planning a trip to Burbank Business Management on March 12th.
+user: Nope; I'd like to travel on March 13th.
+assistant: Please verify the following information: you are planning a trip to Burbank Business Management and you'd like to take a tirp there on March 13th.
+user: Yeah, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your travel to the residence has been planned.
+user: Does the residence possess laundry machines and a garage?
+assistant: It does not possess laundry machines or a garage.
+user: Thank you for your assistance; could you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: Tere exists an alarm at 4 pm under the title Piano time.
+user: Alright, that's fine.
+assistant: Would you like to add an alarm?
+user: Nope; I do not wish to include new alarms for now. That's all.
+assistant: Thank you for your assistance.

@@ -1,0 +1,9 @@
+user: Can you help me to search for a round trip flight from Delhi
+assistant: On which date you want to travel?
+user: I like to travel on march 1st.
+assistant: To which place you want to travel and when do you want to return?
+user: I want to fly Atlanta with 2 tickets and coming back on march 10th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: The connecting flight United Airlines takes off at 1:20 pm and returning flight takes off at 9:30 am with ticket cost $585.
+user: This is perfect for me.
+assistant: Have a wonderful day

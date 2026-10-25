@@ -1,0 +1,16 @@
+user: Find for me a house to stay with minimum rating 3.9.I want to be for 1 people and with laundry service available.
+assistant: On which city you plan to stay?
+user: I travel to SD.
+tool(SearchHouse): ok n_results=10
+assistant: With rating 3.9 is a nice house located at 1003 Coast Boulevard, La Jolla, California 92037, United States.
+user: Sounds very good buy it for me.
+assistant: Tell me the check in and check out date.
+user: Check in will be on 3rd of this month and check out date is March 4th.
+assistant: Location is San Diego for 1 people with check in date March 3rd and check out date March 4th.I'm right?
+user: Perfect.Tell me the total price.
+tool(BookHouse): ok n_results=1
+assistant: Reservation is ready.$138 is the total price.
+user: Thank you for all.
+assistant: I can help you with something else?
+user: No.Thank you very much.
+assistant: Happy to help you.Bye.

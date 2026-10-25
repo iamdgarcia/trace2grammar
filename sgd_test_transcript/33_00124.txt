@@ -1,0 +1,15 @@
+user: I have some time off and I would like to visit a shopping district
+assistant: where do you want me to look?
+user: KL is fine
+tool(FindAttractions): ok n_results=2
+assistant: There's a shopping area called central market kuala lumpur
+user: seems nice, find me a place there.
+tool(SearchHouse): ok n_results=10
+assistant: I've found a house rated 3.7 and the address is 1, jalan 2/142a, taman len seng, 56000 kuala lumpur, wilayah persekutuan
+user: the place needs a visit, find me a round trip flight.
+assistant: sure, just tell me when do you want to be there, when you want to be back and where are you leaving from.
+user: I'm leaving from las vegas and on the 7th of march and I'll be back on the 14th of this month. tickets must be 3
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: there's 1 possibility for you, you'll travel with american airlines and you will leave at 4:25 am, then you'll have to take a connecting flight. You will start your return flight at 10:30 am and the ticket is $613
+user: I like the plan, thank you and bye bye
+assistant: Enjoy your day

@@ -1,0 +1,20 @@
+user: Can you search for a Family Therapist for me?
+assistant: In what city would yo like me to search?
+user: Look for one in Santa Rosa.
+tool(FindProvider): ok n_results=8
+assistant: There is a Family Counselor in Santa Rosa by the name of Auer Patience.
+user: Can you give me their number?
+assistant: They can be reached at 707-526-7604.
+user: Will you tell me their street address?
+assistant: Their location is 2455 Bennett Valley Road.
+user: Okay, that works for me.
+assistant: Would you like to set up an appointment to see this therapist?
+user: Yep, go ahead and get me an appointment.
+assistant: What is the best time and date for the appointment?
+user: Please make me an appointment for 12:30 in the afternoon on March 11th.
+assistant: Making an appointment on March 11th at 12:30 pm with Auer Patience. Will you verify this is correct?
+user: Right, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I was able to make the appointment without any issues. Look for an email that confirms the details soon.
+user: You've been so much help and thanks a lot. Goodbye!
+assistant: I am happy to assist you.

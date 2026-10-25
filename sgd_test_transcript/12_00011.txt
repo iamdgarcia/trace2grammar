@@ -1,0 +1,30 @@
+user: I need a bus ticket that accommodates extra luggage and that goes from San Diego to LA.
+assistant: How many ticket do you want and what is your departure date?
+user: I need four tickets for next Wednesday.
+assistant: What time are you departing?
+user: I am departing at two pm.
+assistant: You want 4 tickets accommodating extra luggage departing San Diego March 6th at 2 pm with a destination to Los Angeles, correct?
+user: That is right.
+tool(BuyBusTicket): ok n_results=1
+assistant: I can't purchase your tickets. There is a bus leaving at 2:20 pm with a cost of $38.
+user: That is fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are booked.
+user: I need a SUV rental until the 12th of March while in LA.
+assistant: Are you picking up the car on March 6th and what time do you wish to get it?
+user: I wish to get the SUV on the 7th of March at evening 6:30.
+tool(GetCarsAvailable): ok n_results=1
+assistant: Search revealed 1 result which is a SUV Dacia Duster at LAX International Airport.
+user: What is the cost per day?
+assistant: The SUV costs $43.00 a day.
+user: That works for me. Book me this SUV.
+assistant: Shall I buy insurance for you?
+user: No, don't buy insurance.
+assistant: You want a SUV for rent without insurance and will pickup the car on March 7th at 6:30 pm from LAX International Airport and will return the car on March 12th, correct?
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your SUV is booked.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, that is all. Thanks.
+assistant: Have a great day.

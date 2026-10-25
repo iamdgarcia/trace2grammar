@@ -1,0 +1,17 @@
+user: I am in need of a place to live and I hope you can help.
+assistant: Sure. How many bedrooms would you like?
+user: Something with three bedrooms please and I plan to buy.
+assistant: What area are you interested in? And what number of bathrooms are you hoping for?
+user: Three bathrooms and please look in Antioch.
+tool(FindHomeByArea): ok n_results=5
+assistant: There is a property at 2005 San Jose Drive, the Baywoods Apartment Homes, with a list price of $3,600,000.
+user: Okay, I should visit the property then. Can you set something up for the 11th of March?
+assistant: Confirming your March 11th visit to Baywoods Apartment Homes.
+user: Yes, thanks. May I have the phone number please? And I forgot to ask if there are laundry machines in the home?
+tool(ScheduleVisit): ok n_results=1
+assistant: No, I'm sorry, there are no laundry machines. The phone number there is 925-757-1250 and your visit has been booked.
+user: Thanks! I'm wondering, what alarms do I have set?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 set alarms right now. There is a Breakfast alarm set for 10 am.
+user: Good, I guess that's everything.
+assistant: Thank you very much.

@@ -1,0 +1,28 @@
+user: Can you help me to find something interesting to do
+assistant: What's your preferred City
+user: Look in New York city
+assistant: What about type of events
+user: I like drama
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events. Acting for teens is a nice and famous one at 520 8th Ave. - personal valet parking on March 4th at 6 pm
+user: That sounds good
+assistant: Do you like to get the tickets
+user: Not now get me a house there with rating 4.1 or higher
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses and a good house at 100 Greenwich street with 4.1 rating
+user: This is a nice one
+assistant: Is there anything should I help you with
+user: What about buses to there for 2 people with a direct bus leaving from philly
+assistant: When will you leave is it March 5th March 4th or any other dates
+user: It's on 3rd of march
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses what about bus departs at 9 am and costs $25
+user: Sounds great
+assistant: Shall I get the tickets for the bus
+user: No not now maybe later I want to purchase tickets to the event you just found
+assistant: Details booking tickets for acting for teens in New York on March 4th and its for 2 tickets
+user: Yes correct where is the venue located and how much is cost
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed unsuccessful have a nice time there the value is 520 8th Ave. - personal valet and costs $35
+user: Thanks a lot that's all for now
+assistant: Have a nice day

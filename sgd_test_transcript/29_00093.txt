@@ -1,0 +1,26 @@
+user: I'm so bored. Find me interesting things to do.
+assistant: In which area would you like me to look?
+user: Find me something around LAX.
+assistant: Do you have any preference as to the type of event?
+user: I really would like a Musical performance or something like that.
+tool(FindEvents): ok n_results=10
+assistant: Ain Gordon is a very popular musical event taking place at Ralph Freud Playhouse on March 9th at 7 pm.
+user: What is the address and how much does one ticket cost?
+assistant: The venue is located at 245 Charles E Young Drive East and a single ticket costs $60.
+user: That sounds like a cool event, I will have to check it out. Can you find me a house to stay at while i'm there? I need something with a rating of 4.1 or higher that will accommodate one person.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house located at 1020 South Figueroa Street with a rating of 4.1 Would that work for you?
+user: That sounds great. I'll write that down and then can you find me a bus to get there?
+assistant: Would you like to leave on March 9th?
+user: On Saturday this week actually.
+assistant: Where would you like to leave from?
+user: From Fresno, CA and I want a direct bus, just one ticket.
+tool(FindBus): ok n_results=8
+assistant: I've found 8 buses that could work. How about one that leaves at 7:50 am and costs $35?
+user: I'll keep that in mind. Now can I buy tickets to that event we talked about earlier? I just realized I should get them before they are gone.
+assistant: Please confirm that you would like me to purchase 1 ticket to Ain Gordon in Los Angeles on March 9th.
+user: That is correct, I confirm.
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased. I hope you enjoy the show.
+user: Thanks, I'm sure I will. I'll let you know if I need anything else.
+assistant: Okay. Good bye.

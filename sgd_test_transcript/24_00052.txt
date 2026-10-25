@@ -1,0 +1,17 @@
+user: I'm looking for a movie in Orinda, just a regular type at the Orinda Theatre.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 show there, Once Upon a Time in Hollywood.
+user: Once upon a Time sounds perfect.
+assistant: How about tickets?
+user: No, but how about a restaurant booking in that area. I lik Siam orchid. Can you get a table there at half past 11 in the morning? I will go on Sunday this week.
+assistant: To be clear: 2 people dining at Siam Orchid in orinda at 11:30 am. on March 3rd?
+user: No wrong, I said Casa Orinda silly, and I need a table for 3.
+assistant: Sure, sorry about my ineptitude. You want: Table at Casa Orinda for 3.
+user: Finally a winner, ding, ding, ding. What about a patio there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: This worked. No outdoor dining though, sorry.
+user: What are the movie times on the film?
+tool(GetTimesForMovie): ok n_results=1
+assistant: Only one at 3 pm in Orinda Theatre.
+user: Fine, your a real peach.
+assistant: I appreciate your confidence.

@@ -1,0 +1,30 @@
+user: I need you to find me a place to live.
+assistant: What city do you want? How many bed rooms do you need and do you want to rent or buy?
+user: I want a place to rent in Fremont that has 2 bed rooms and 2 bath rooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: Boulevard is located at 40001 Fremont Boulevard and costs $3,050 a month.
+user: How can I contact them and are there laundry machines there?
+assistant: You can contact them at 510-455-8815 and they do not have laundry machines there.
+user: That is perfect. Schedule me a visit for there.
+assistant: What day do you wish to go?
+user: I want to see the place on March 14th.
+assistant: You want to see Boulevard on March 14th, correct?
+user: No, change it to the 4th of this month.
+assistant: You wish to go see Boulevard on March 4th, correct?
+user: That is right. Is there a garage there?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is all scheduled and it does have a garage.
+user: Thanks a bunch. I need you to share the location with someone.
+assistant: Who shall I send the location to?
+user: Send the location with Eugene.
+assistant: You wish to share 40001 Fremont Boulevard with Eugene, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with him.
+user: I need a Normal ride for one to get there.
+assistant: You want a Regular ride for 1 person to 40001 Fremont Boulevard, correct?
+user: That is right. What is the total price?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and the total cost is $17.35.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

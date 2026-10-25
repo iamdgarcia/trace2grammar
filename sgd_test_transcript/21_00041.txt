@@ -1,0 +1,15 @@
+user: Find me some Hillbilly songs by Shailesh Premi on the Maza Mar Liya Dhori Ke Niche album.
+tool(LookupMusic): ok n_results=1
+assistant: Do you like the song Lahnga Lasar Ke sung by Shailesh Premi on the Maza Mar Liya Dhori Ke Niche album?
+user: What year was it released?
+assistant: It was released in 2019.
+user: That is perfect. Can you tell me what the weather is right no in Healdsburg?
+tool(GetWeather): ok n_results=1
+assistant: It is 71 degrees with a 9 percent chance of rain.
+user: I see. Can you play the previous song on the living room device?
+assistant: You want to cast the song Lahnga Lasar Ke to the Living room, correct?
+user: That is right.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is now playing.
+user: Thanks. That is everything for now.
+assistant: Have a great day.

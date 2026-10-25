@@ -1,0 +1,34 @@
+user: I need a new home.
+assistant: What location are you interested in? Do you know how many bedrooms you'll need? Will you rent or buy it?
+user: I just want to rent a three bedroom in Sunnyvale.
+assistant: How many baths will you need?
+user: I require three.
+tool(FindHomeByArea): ok n_results=10
+assistant: You might try Arbor Terrace Apartments, It's at 555 East El Camino Real. It's $4,450 monthly.
+user: What's the contact number?
+assistant: Phone there is 408-738-0935.
+user: That's solid data.
+assistant: How about getting a look at it?
+user: Sure schedule something on March 9th.
+assistant: To be clear: Schedule visit to Arbor Terrace Apartments on march 9th.
+user: Yes, that's good.
+tool(ScheduleVisit): ok n_results=1
+assistant: You have a visit set.
+user: Can you share this location information with Amanda?
+assistant: Sure, to be clear: Sharing location 555 East El Camino Real with Amanda now.
+user: No, I want to share with Sandra.
+assistant: Sure, to clarify: Share 555 East El Camino Real with Sandra.
+user: That's right, thanks.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the local.
+user: Fine, how about setting up a cab to get there?
+assistant: What type ride will you need, Luxury or Regular? How many seats?
+user: I need Luxurious and only one.
+assistant: To clarify: 1 riding in Luxury to 555 East El Camino Real.
+user: Wrong you silly billy, I want Economic.
+assistant: To confirm: Ride to 555 East El Camino Real with Pool ride.
+user: Yes, that's better. How much will this run me?
+tool(GetRide): ok n_results=1
+assistant: You're ride is coming and will cost $12.58.
+user: That's really great, thanks.
+assistant: Have a good ride.

@@ -1,0 +1,31 @@
+user: I want to have a payment made.
+assistant: Can you tell me the name of the contact for the transfer, and which account do you want to be used for the transfer?
+user: The payment should be sent from my balance to the person named Diego.
+assistant: Can you tell me the amount you want to transfer?
+user: The amount I want to transfer is for one hundred and nineteen bucks.
+assistant: Can you please confirm that you want to make a private transaction for the amount of $119 which will be transferred from your app balance to Diego?
+user: That is what I want.
+tool(MakePayment): ok n_results=1
+assistant: Your requested payment has been made, and the other person should be able to see the transferred money soon.
+user: Now I want to look for a restaurant there, and more specifically the restaurant should be considered affordable priced, have outdoor seating and that serves American.
+assistant: Can you tell me the location I should look for the restaurant?
+user: The restaurant I am looking for should be in Novato.
+tool(FindRestaurants): ok n_results=4
+assistant: There are 4 restaurants which you might like, one of the restaurants is the Finnegan's Marin Restaurant & Bar which is in Novato.
+user: Is there some other restaurant you can suggest?
+assistant: Another nice restaurant is the Rickey's Restaurant which can be found in Novato.
+user: Can you tell me if they have vegetarian options there, and also could you tell me their address?
+assistant: The address of the restaurant is 250 Entrada Drive, though unfortunately they do not have the vegetarian options.
+user: That seems good to me.
+assistant: Do you want to book a table at this restaurant?
+user: Yes, I want to have a table booked for me at this restaurant.
+assistant: Can you tell me the time that you want the reservation be made for?
+user: The table should be booked for 7:45 in the evening.
+assistant: Can you please confirm that you want to book a table for 2 people at the Rickey's Restaurant in Novato for March 1st at 7:45 pm?
+user: Yes, that is correct. Can you inform me what the user rating of the restaurant is?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested table has been booked, and the restaurant has a rating of about 4.0
+user: I appreciate it very much.
+assistant: Is there something else I can do to help you?
+user: Nothing. I am grateful.
+assistant: Have a good time!

@@ -1,0 +1,11 @@
+user: Hi, there! I need to book a round trip flight. I'm hoping to travel on the 4th. I'd like to buy three tickets on American Airlines.
+assistant: Okay, great! Where are you planning to go?
+user: We need to go to Atlanta.
+assistant: Okay, nice! Where are you departing from?
+user: Berlin, Germany.
+assistant: Beautiful! Which day would you like to return?
+user: On the 11th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Perfect! I found a great American Airlines flight for you. It departs at 1:35 am. It does have a connecting flight. The return flight takes off at 3:45 pm. The tickets will be $581 each. How does that sound?
+user: That sounds good. That's all I need!
+assistant: Have a good day!

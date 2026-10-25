@@ -1,0 +1,17 @@
+user: Help me look for animation movies online. Something with Christina-Ann Zalamea.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might enjoy. How about The Angry Birds Movie 2?
+user: I really liked The Angry Birds Movie Two. Can you put that on?
+assistant: I'll play The Angry Birds Movie 2 with English subtitles, is that right?
+user: Yes, please play it.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is starting.
+user: Can you tell me about the weather on the 8th?
+assistant: What is the location?
+user: The weather in Campbell.
+tool(GetWeather): ok n_results=1
+assistant: The temperature average will be 88 degrees Fahrenheit with a 17 percent chance of rain.
+user: And what about the wind and humidity?
+assistant: The average wind speed will be around 8 miles per hour and the humidity will be around 24 percent.
+user: Okay thanks, that's all the help I need, talk to you later.
+assistant: Okay, until later. Bye.

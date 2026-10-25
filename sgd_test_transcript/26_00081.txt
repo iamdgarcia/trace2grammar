@@ -1,0 +1,34 @@
+user: Will you find me a train?
+assistant: What city are you leaving from and going to?
+user: I'm looking for tickets from Sacramento to San Diego.
+assistant: Which date will you want to travel?
+user: I want to find tickets for March 6th.
+tool(FindTrains): ok n_results=10
+assistant: What about the train leaving at 6:30 am costing $138 total.
+user: What station does it leave from?
+assistant: The train departs from Sacramento Valley Station.
+user: What station does it arrive at?
+assistant: It arrives at Santa Fe Depot.
+user: Would there be any other trains that could work?
+assistant: What about the train leaving 7:20 am costing $140 total.
+user: That sounds great.
+assistant: Would you like me to book tickets.
+user: No, I'm not looking to book tickets, but I'd like to find something interesting to do there that day. I like Broadway and want something on March 6th.
+tool(FindEvents): ok n_results=4
+assistant: About Time is popular taking place at Talent to AMuse Theatre Co. happening March 6th starting 5 pm.
+user: Where is the venue?
+assistant: The venue is located at 3919 Normal Street.
+user: That sounds good.
+assistant: Would you want to buy tickets for the event?
+user: No, not now.
+assistant: Can I assist you with anything else?
+user: Will you show me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Check out Balboa Park a park.
+user: Okay that is good. I'd like to find a home to stay there with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 homes in your search including a nice one at 1003 Coast Boulevard, La Jolla, California 92037, United States rated 4.6.
+user: That house is great.
+assistant: What else can I assist you with?
+user: No, thanks for the help.
+assistant: It's my pleasure helping you goodbye.

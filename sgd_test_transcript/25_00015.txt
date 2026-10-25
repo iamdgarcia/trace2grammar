@@ -1,0 +1,27 @@
+user: I would like to make a payment.
+assistant: Would you like to transfer the money from your app balance or debit card? Who would you like to send the money to? What is the amount?
+user: Please send Wilson fifty one bucks from my visa.
+assistant: You would like to send Wilson $51 from your credit card, and the transaction is public, is this correct?
+user: No, actually, I want to send it from my saving account.
+assistant: You would like to send $51 from your debit card, is that correct?
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been sent successfully. The recipient should be able to view the transaction soon.
+user: OK, thanks. Can you help me find an afforadable restaurant in SF?
+assistant: What kind of food would you prefer?
+user: I would like to find one with Austrian cuisine.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant for you, Leopold's in San Francisco.
+user: Yes, that will be good. I would like to book at table at that restaurant.
+assistant: What time would you like the reservation for?
+user: Please make that for 17:45.
+assistant: You would like to reserve a table for 2 at Leopold's in San Francisco at 5:45 pm on March 1st, is that correct?
+user: No, evening 7:30 would be better, and I need a table for 3.
+assistant: You would like the reservation at 7:30 pm for 3 people, is that correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is reserved.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, I'm all set, thanks.
+assistant: Have a great day!

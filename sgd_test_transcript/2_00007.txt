@@ -1,0 +1,18 @@
+user: Can you help me search for some songs?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs you may like. How about Touch from the Glory Days album by Little Mix?
+user: What kind of music is it and from what year?
+assistant: Its a pop song from 2016.
+user: Okay, I'd like that one.
+assistant: Shall I play it now?
+user: Yes, that would be great.
+assistant: To verify: you would like to hear the song Touch in the Living room.
+user: No, play it on the patio speaker.
+assistant: To confirm: you would like to hear the song Touch on the Patio.
+user: You got it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: I will, thanks.
+assistant: Is there anything else you need?
+user: No thanks, I'm good.
+assistant: Have a great day.

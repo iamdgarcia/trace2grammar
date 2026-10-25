@@ -1,0 +1,27 @@
+user: Find me a hotel please.
+assistant: In which city you want to be?
+user: In Anaheim I want to be.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that match to your requirements.A 2 star hotel called Alamo Inn & Suites.
+user: Something else you have.I want 1 room.
+tool(SearchHotel): ok n_results=9
+assistant: 9 hotels are according to your requirements.First is a 2 star hotel called Anaheim Desert Inn And Suites.
+user: Great.Find me some attractions there.
+tool(FindAttractions): ok n_results=3
+assistant: A Sports Venue called Angel Stadium of Anaheim.You should check it out.
+user: Nice,but something else you have?I want a Theme Park that is child-friendly.
+tool(FindAttractions): ok n_results=3
+assistant: 3 attractions are available that maybe will interest you.You should check out a Theme Park named Disney California Adventure Park.
+user: Tell me the contact number for this place.
+assistant: 714-781-7290 is their contact phone number.
+user: Great.Make for me a reservation at the hotel that you have found.
+assistant: When will be the check in date?
+user: I want to check in on March 7th and I will stay for six days.
+assistant: You need 1 hotel room in Anaheim Desert Inn And Suites located in Anaheim.Check in date is on March 7th and you want to stay for 6 days.I'm right?
+user: Sure,it's okay.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is successfully booked.
+user: Tell me the street address.
+assistant: 1600 South Harbor Boulevard is their address.
+user: Thank you for being helpful.That's all .
+assistant: Have a great day!Bye.

@@ -1,0 +1,22 @@
+user: So I'm wanting to go to Washington. Could you get me a train ticket? I'd like it conditionally refundable if possible.
+assistant: Okay, when would you like to go? Where are you departing from?
+user: I'd like to leave from Philly on March 4th.
+tool(FindTrains): ok n_results=8
+assistant: There's a departure for the tickets at 8:30 am for that date. Total cost is $56.
+user: Okay, cool. What's the name of the station it arrives?
+assistant: It will arrive at Union Station.
+user: What about which station it leaves?
+assistant: It will leave from 30th Street Station in Philly.
+user: Okay, cool.
+assistant: Would you like to reserve the tickets?
+user: Yes, please make the reservation for the ticket.
+assistant: How many tickets would you like to purchase? Additionally, do you want any travel insurance for this trip?
+user: I'd like 1 seat and yes, I want insurance for the trip.
+assistant: Okay. So you'd like a train ticket leaving from Philadelphia and arriving in Washington. This ticket is for March 4th, departing at 8:30 am. You are purchasing 1 Value ticket with trip insurance. Please confirm if this is okay.
+user: Confirmed.
+tool(GetTrainTickets): ok n_results=1
+assistant: Okay, great. Your ticket was reserved successfully!
+user: Thanks so much, you were a great help.
+assistant: You're welcome. Anything else I can do?
+user: Nope, that's it. Thanks again.
+assistant: You're welcome. have a great day!

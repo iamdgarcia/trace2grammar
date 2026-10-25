@@ -1,0 +1,18 @@
+user: Can you help me find a therapist?
+assistant: I would be happy to assist you. I just need to know where you are located and what type of therapist were you looking for?
+user: I really need to find a good Psychologist in El Cerrito.
+tool(FindProvider): ok n_results=2
+assistant: Okay, I have found 2 therapist in El Cerrito that you may like. How about the Psychologist Bower Rosemary A?
+user: Can you give me their address please?
+assistant: They are located at 11100 San Pablo Ave # 207.
+user: Can you also help me find a good Psychiatrist in Pittsburg?
+tool(FindProvider): ok n_results=1
+assistant: I would recommend checking out Expanding Horizons they are one of the top Psychiatrist in Pittsburg.
+user: What's their address and phone number?
+assistant: They are located at 327 E Leland Rd and they can be contacted at 925-432-3980.
+user: Okay, sounds good. Thanks
+assistant: Would you like to make an appointment?
+user: No, not right now.
+assistant: Anything else I can help you with today?
+user: No, that's all. I really appreciate your help, thank you.
+assistant: My pleasure. Glad I could be of service.

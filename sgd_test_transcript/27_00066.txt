@@ -1,0 +1,24 @@
+user: I'd like to visit some attractions.
+assistant: Where would you like me to look?
+user: Look for some in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: Alcatraz is a historical landmark there.
+user: I want to watch a movie there at Clay Theatre. I enjoy life history movies. A regular show is fine.
+tool(FindMovies): ok n_results=1
+assistant: What about Fiddler: A Miracle of Miracles?
+user: Fiddler is a good one.
+assistant: Do you want to buy tickets?
+user: Not right now. What are some good movies online? I like foreign movies. Ashraf Farah is my favorite actor.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. Tel Aviv on Fire is available.
+user: Tel Aviv on Fire is a good one.
+assistant: Would you like to watch the movie?
+user: Yes. Play it with English subtitles.
+assistant: Play Tel Aviv on Fire with English subtitles. Is this correct?
+user: No, make them Hindi subtitles.
+assistant: Play Tel Aviv on Fire with Hindi subtitles. Is this correct?
+user: Yes it is.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Thanks. That's all.
+assistant: Have a nice day.

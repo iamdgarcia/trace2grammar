@@ -1,0 +1,31 @@
+user: can you find a train for me? i want a luxurious ride.
+assistant: when and where do you want to travel? where are you leaving from?
+user: i want tickets from anaheim to sacramento, ca for march 6th.
+tool(FindTrains): ok n_results=10
+assistant: there's a train that leaves at 6:50 am for $154.
+user: that works for me.
+assistant: do you want to book tickets?
+user: not at the moment?
+assistant: what else can i help with?
+user: can you find me some music events to do on march 8th?
+tool(FindEvents): ok n_results=2
+assistant: rhett and link are at the sacramento memorial auditorium on march 8th at 7 pm.
+user: how much is a ticket?
+assistant: a ticket will be $35.
+user: that's cool, but are there any others? i like Play a lot.
+tool(FindEvents): ok n_results=1
+assistant: there's 1 event for you. Nick Jr Live is at the Sacramento Memorial Auditorium on march 8th at 6 pm
+user: that sounds cool.
+assistant: do you want tickets for it?
+user: not right now. is there something that's free entry?
+tool(FindAttractions): ok n_results=5
+assistant: you can go to california state capitol museum which is a museum.
+user: what's their number?
+assistant: you can call them at 916-445-2841.
+user: are there any other places?
+assistant: you can go to california state railroad museum which is a museum.
+user: okay cool. can you find me a house there?
+tool(SearchHouse): ok n_results=10
+assistant: there's 10 places. one has a 4.4 rating and is on 100 capitol mall.
+user: that sounds perfect. thanks, that's everything.
+assistant: okay, have a great day.

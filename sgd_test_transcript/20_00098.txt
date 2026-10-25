@@ -1,0 +1,33 @@
+user: I need a house to stay
+assistant: In which city do you need it?
+user: I need it in Washington D.C.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses available. For example there's a house with rating 4.3 at 1 Washington Circle Northwest, Washington, District of Columbia 20037, United States
+user: Can you suggest other solutions?
+assistant: There's a house with rating 4.3 at 10 Thomas Circle Northwest, Washington District of Columbia 20005, United States
+user: Is there a laundry service? Can you give me the phone number of the house?
+assistant: Yes, there's a laundry service. The number is +1 202-842-1300
+user: Thanks. Other houses?
+assistant: A house at 1009 11th Street Northwest, Washington, District of Columbia 20001, United States with rating of 4.3
+user: Oh, It's perfect for me! I want to book there for 1 people till 14th of March
+assistant: What is the day of arrival?
+user: I arrive on 10th of this month
+assistant: A house for 1 people in Washington D.C. from March 10th till March 14th. Is it correct?
+user: No, I prefer to check in on 1st of this month and check out on Wednesday next week
+assistant: Please confirm: a house from March 1st till March 6th
+user: I need a house for 2 people
+assistant: A house in Washington D.C. for 2 people. Is it correct?
+user: Yes, now it's all correct!
+tool(BookHouse): ok n_results=1
+assistant: The house has been booked
+user: Thanks! How much does it cost in all?
+assistant: It costs $380 in total
+user: Is there a laundry service? Can you give me the phone number?
+assistant: There's a laundry service there. The number is +1 202-737-2333
+user: Thank you. I'm looking for a kid-friendly attraction, I'd like it with entry free. I like historical spot
+tool(FindAttractions): ok n_results=6
+assistant: There's Franklin Delano Roosevelt Memorial, a Historical Landmark
+user: Very good! Thanks!
+assistant: Can I do anything else for you?
+user: No, It's all for now, thank you!
+assistant: Have a good time!

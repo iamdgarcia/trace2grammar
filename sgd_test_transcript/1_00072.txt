@@ -1,0 +1,13 @@
+user: I want to find a hotel. Smoking preferred.
+assistant: What city are you looking in?
+user: I want to find some hotels in New York City.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels. 1 Hotel Brooklyn Bridge is a 5 star hotel.
+user: What's the address and the phone number?
+assistant: The address is 60 Furman Street, Brooklyn and the number is +1 347-696-2500.
+user: Sounds great.
+assistant: Do you want to make a reservation?
+user: Not right now.
+assistant: Anything else I can do for you?
+user: No, that's all. Thanks.
+assistant: Have a great day!

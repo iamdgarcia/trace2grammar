@@ -1,0 +1,17 @@
+user: Hi, i need a help, could you find me a train?
+assistant: Sure, i will help you, Please tell me What date do you want to travel, where are you going to and where are you going from?
+user: I am going to vancouver, BC from Seattle, i need tickets for this Sunday.
+tool(FindTrains): ok n_results=9
+assistant: Okay, i have found 9 trains for you, what about the train departing at 6:20 am and it costs $58 in total?
+user: Okay, Could you find another train for me?, i don't care about the fare class.
+tool(FindTrains): ok n_results=9
+assistant: Okay, i have found a train for you, the train departing at 6:40 am and it costs $58 in total.
+user: It seems good to me. I need to find a house to stay there
+tool(SearchHouse): ok n_results=10
+assistant: Okay, I have found 10 houses for you, one of the best house is located at 1000 1st Avenue and the rating is 4.5
+user: Okay, Please give me their contact number, Does this place have laundry service?
+assistant: Their phone number is +1 206-957-1000, This place has laundry service.
+user: Okay, could you find another house for me?
+assistant: Okay, there is a nice house located at 1006 Spring Street and the rating is 3.9
+user: Okay, it is seems good to me.Thank you,
+assistant: You are welcome, have a great day.

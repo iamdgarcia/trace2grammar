@@ -1,0 +1,24 @@
+user: I want to find a fantasy movie to watch. I want to find something directed by Peter Jackson starring Sarah McLeod.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. The Lord of the Rings: The Return of the King is rated 93 out of 100.
+user: Okay, great. I want to find a restaurant.
+assistant: What kind of food do you want to eat? What location do you want to look in?
+user: I want to find comfort food in San Francisco.
+tool(FindRestaurants): ok n_results=4
+assistant: I found 4 restaurants. Baby Blues Bbq is a popular restaurant in San Francisco.
+user: Can you find some other restaurants? I want to find something in Napa.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant. The Q Restaurant & Bar is a nice restaurant located in Napa.
+user: Yes, sounds good.
+assistant: Do you want to make a reservation?
+user: Yes, I want to book a table on March 1st.
+assistant: What time would you like to make the reservation for?
+user: I want to make the reservation for 13:00.
+assistant: Please confirm: A table for 2 at The Q Restaurant & Bar in Napa on March 1st at 1 pm.
+user: Yes, sounds good. What is the address? Is it pricey?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. The price range is moderate. The address is 3900 Bel Aire Plaza D.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day!

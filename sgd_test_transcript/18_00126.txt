@@ -1,0 +1,19 @@
+user: I'd like to find a place to eat at.
+assistant: Where should I search? What kind of food do you want?
+user: Please find me something serving Burrito in Mountain View.
+tool(FindRestaurants): ok n_results=9
+assistant: Agave Mexican Bistro is a nice restaurant in Mountain View.
+user: That would be great. I'd like to book a table at morning 11 on the 14th of this month.
+assistant: Please confirm the following: You want a table at Agave Mexican Bistro in Mountain View at 11 am on March 14th for 2 people.
+user: Yes, that would work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table has been booked.
+user: Thanks so much! Can you get me a cab there?
+assistant: What type would you like? You can take Regular or Luxury or any other kind. Are you going to 194 Castro Street?
+user: Yes, that would work. I'd prefer a Luxurious ride.
+assistant: Please confirm the following: You want a Luxury ride with 2 seats to 194 Castro Street.
+user: Yes, that works for me. How long before it arrives?
+tool(GetRide): ok n_results=1
+assistant: I have booked your ride and its on its way and should arrive in 11 minutes.
+user: Thanks so much! That's all for now.
+assistant: Have a great day!

@@ -1,0 +1,18 @@
+user: I would like to find a song to listen to please, something from '19 in the Metal genre. The album The Great War is supposed to be good, I hear.
+tool(LookupMusic): ok n_results=7
+assistant: Would you like to hear the song A Ghost In The Trenches which is from the Sabaton album The Great War?
+user: I would, thank you.
+assistant: Shall I play that song for you now?
+user: No, not right now, thanks. I want to find a movie, too, please. I love an eccentric story and I'd like something with Inbal Amirav, I think.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to see Once Upon A Time In Hollywood?
+user: Sure, Once Upon A Time In Hollywood would be terrific. Would you mind playing that song now?
+assistant: Confirming playback of A Ghost In The Trenches on the Living room speaker.
+user: Sounds good, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: My pleasure, enjoy the song.
+user: May I see the alarms I have please?
+tool(GetAlarms): ok n_results=4
+assistant: There's an alarm named Badminton which is at 9 am.
+user: Excellent, thank you for your help.
+assistant: I'm happy to help, have a nice day.

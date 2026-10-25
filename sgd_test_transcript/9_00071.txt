@@ -1,0 +1,18 @@
+user: I would like to watch a regular show at 3rd Street Cinema in Santa Rosa.
+tool(FindMovies): ok n_results=3
+assistant: There is The Art of racing in the rain, Toy Story 4 or Yesterday?
+user: Toy story four is perfect.
+assistant: Would you like to purchase tickets?
+user: Yes, I would like three tickets.
+assistant: When do you want to watch the movie?
+user: I would like to go in the evening 4:45.
+assistant: When do you want to go?
+user: I would like to watch it next Thursday.
+assistant: Booking 3 tickets regular for Toy Story 4 on March 7th in Santa Rosa at 4:45 pm.
+user: Yes, that is perfect.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets are bought.
+user: Thank you for your time.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

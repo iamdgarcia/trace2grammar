@@ -1,0 +1,21 @@
+user: I am interested in finding a movie I can watch at Stanford Theatre, and usually I enjoy watching Dramatic story movies.
+assistant: Can you tell me the location where you want to watch the movie?
+user: I want to know about movies which are screened in Palo Alto.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie for you to consider. How would you like watching Stage Door?
+user: Stage Door would be really great. Can you find me some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs that you can consider. How would you like to listen to Barefoot In The Park by James Blake from the Assume Form album?
+user: Can you tell me if this song was released in 2011?
+assistant: Actually the year of release of the song is 2019.
+user: Alright, that is the one I want.
+assistant: Do you want the song to start playing?
+user: Alright, that is what I want.
+assistant: Can you please confirm that you want the song Barefoot In The Park to start playing in your Living room?
+user: Yes, that is right. Can you tell me the genre of this song?
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time listening to the music. The song is considered to be a Pop one.
+user: I appreciate it!
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful!
+assistant: Have a good time!

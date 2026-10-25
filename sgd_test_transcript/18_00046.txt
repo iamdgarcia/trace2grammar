@@ -1,0 +1,32 @@
+user: I need to see a therapist. Please locate a good Psychologist for me.
+assistant: Which area would you like me to search for you?
+user: I would like you to search the Menlo Park area.
+tool(FindProvider): ok n_results=4
+assistant: My search located 4 potential therapists for you. One Psychologist on the list is Kate Corcoran. The office is in Menlo Park.
+user: Please provide a contact number for her office.
+assistant: This therapist can be reached by calling 650-308-4240.
+user: Thanks for the number.
+assistant: I can try to book a spot with the doctor for you.
+user: I definitely need an appointment. Thanks.
+assistant: What time of day should I try?
+user: Try to schedule me in afternoon 1.
+assistant: Do you know the day you would like to set the visit for.
+user: If your able reserve me a place on the 9th.
+assistant: I will attempt to schedule you to see Kate Corcoran on March 9th at 1 pm. Is that what you need?
+user: That is precisely what I need.
+tool(BookAppointment): ok n_results=0
+assistant: Oh no, something happened. I was not able to get you on the schedule. Sorry. Is there something else I can help you with?
+user: I really need to see this doctor. Please try to reserve a spot for me. This time try the 1st of March at 2 pm.
+assistant: I think you are asking me to get you on the schedule to see Kate Corcoran at her office. You would like to visit at 2 pm on March 1st. Is this correct?
+user: That is right. Will you please share the office address with me?
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation request has been accepted. An email with the appointment details will arrive in your inbox soon. This doctor is located at 845 El Camino Real.
+user: I also need your help getting a ride to the location.
+assistant: Is there a certain mode of transport you prefer? Is it just for you or will there be others riding?
+user: Just 1 person, me. I would like the cheapest mode of transportation you can find.
+assistant: I understand a Pool ride to 845 El Camino Real for 1 is what you are requesting.
+user: You understood my request. How much time do I have before my ride gets here? How much money will the ride cost?
+tool(GetRide): ok n_results=1
+assistant: You have 5 minutes before your ride gets here as it has been requested. Your total charge should be $10.02.
+user: What would I do without you. I am going to get ready. Bye.
+assistant: Good luck and have fun.

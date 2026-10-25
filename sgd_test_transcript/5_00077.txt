@@ -1,0 +1,14 @@
+user: Would you help me to find therapist please? I want Family Counselor
+assistant: In which city you want me to look in?
+user: Search someone in Napa
+tool(FindProvider): ok n_results=2
+assistant: There is one Family Counselor called Nancy L Waldeck in Napa
+user: Do you know any other therapist in Novato?
+tool(FindProvider): ok n_results=2
+assistant: There is one Family Counselor called Jones Jeannette in Novato.
+user: This is cool.
+assistant: Can i book the appointment with this therapist?
+user: No, i don't want now.
+assistant: Any other help you need?
+user: No, thanks for your help.
+assistant: Thanks a lot.

@@ -1,0 +1,25 @@
+user: Hello! Can you recommend at restaurant?
+assistant: I'd be happy to help. What type of cuisine are you interested in?
+user: I'd like to have some spicy Indian food.
+assistant: Where would you like me to search?
+user: Please find something near Mill Valley.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant that meets your criteria. Would you be interested in trying Prabh Indian Kitchen in Mill Valley?
+user: Do they offer vegetarian dishes? Is it considered an ultra high-end restaurant?
+assistant: It is considered a moderate restaurant with many vegetarian options.
+user: That sounds nice. Can you reserve me a table for four on the 12th?
+assistant: What time would work best for you?
+user: 13:00 would work best for me.
+assistant: You'd like to reserve a table for 4 at Prabh Indian Kitchen in Mill Valley at 1 pm on March 12th. Is that correct?
+user: I'm sorry, I need to make that for the 10th of this month.
+assistant: You'd like to reserve a table for 4 on March 10th.
+user: That is correct. Can you tell me if they offer al fresco dining and what the address is?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are located at 24 Sunnyside Avenue and they do have outdoor seating. Your table has been confirmed.
+user: Can you help me find the cheapest cab there?
+assistant: You'd like a pool ride for 4 to 24 Sunnyside Avenue. Is that correct?
+user: Yes, that is perfect.
+tool(GetRide): ok n_results=1
+assistant: Your ride is on the way.
+user: Thanks for the assistance.
+assistant: You're welcome. Have a nice dinner!

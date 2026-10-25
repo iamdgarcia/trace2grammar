@@ -1,0 +1,17 @@
+user: I want to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 options. Steel Magnolias has a 70 out of 100 rating.
+user: Can you help me find a pop song by Jai Waetford on the Heart Miles album.
+tool(LookupMusic): ok n_results=1
+assistant: Shy by Jai Waetford is an option on the Heart Miles album.
+user: Is that the album that came out in 2017?
+assistant: The album came out in 2015.
+user: Yes, can you please play the song?
+assistant: Please confirm you want me to play the song Shy in the living room.
+user: Actually, please play in the kitchen.
+assistant: Please confirm you want me to play the song Shy in the kitchen.
+user: Yes. Thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy your song.
+user: Thanks. That's it.
+assistant: Okay, please enjoy your day.

@@ -1,0 +1,22 @@
+user: Hi I need a hotel that allows smoking. Can you find one for me?
+assistant: In what city would you like the hotel to be in?
+user: I'd like a hotel in Sydney.
+tool(SearchHotel): ok n_results=10
+assistant: I managed to find a hotel called 1831 Boutique Hotel with a 3 star rating.
+user: That works for me.
+assistant: Would you like me to book you a room?
+user: Yes, that would be great.
+assistant: How long will your stay be?
+user: I'd like to stay for two days.
+assistant: What day would you like to check in?
+user: I'd like to check in on Tuesday next week.
+assistant: So you'd like to book 1 room at 1831 Boutique Hotel in Sydney for March 5th. You will be staying for 2 days. Is this correct?
+user: Yes, that works great.
+tool(ReserveHotel): ok n_results=1
+assistant: I have booked your hotel room.
+user: How much is the room per night and what is their address?
+assistant: The cost is $234 per night and their address is 631-635 George Street.
+user: Thanks, I really appreciate your help.
+assistant: Is there anything else I can assist you with today?
+user: No that would be all, thank you very much.
+assistant: Have a wonderful day!

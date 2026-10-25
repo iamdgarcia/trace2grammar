@@ -1,0 +1,13 @@
+user: I'm looking for a flight, a one way flight.
+assistant: When will you be travelling?
+user: This flight is for March 14th.
+assistant: And where will you be going?
+user: I'll be going to New York.
+assistant: And where will you be travelling from?
+user: I'll be travelling from Vegas.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights that match. There's an American Airlines flight that leaves at 8:20 am, which is a connecting flight. It is $276 per ticket.
+user: Okay, that works for me.
+assistant: Do you need me to do anything else for you?
+user: Nope, thanks a lot for the assistance.
+assistant: Have a pleasant day.

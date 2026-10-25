@@ -1,0 +1,27 @@
+user: I want to find 2 rooms at a 4 star hotel in Los Angeles.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels. Beverly Hills Marriott is a 4 star hotel.
+user: Any other hotels? I need one room.
+tool(SearchHotel): ok n_results=10
+assistant: Crowne Plaza Los Angeles Airport is a 4 star hotel.
+user: Any other hotels? I want to be able to smoke. I want to find hotels in KL.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels. Capri By Fraser Kuala Lumpur is a 4 star hotel.
+user: That sounds good.
+assistant: Do you want to make a reservation.
+user: Not now. What are some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Aquaria KLCC is a nature preserve.
+user: Is it child-friendly? What's the phone number?
+assistant: Yes, it is kid-friendly. The phone number is 3-2333 1888.
+user: Great. I want to make the hotel reservation now for 6 days. I'm checking in this Sunday.
+assistant: Please confirm: 1 room at Capri By Fraser Kuala Lumpur in Kuala Lumpur for 6 days. Check in is on March 3rd.
+user: Yes, that sounds good.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel has been booked.
+user: How much per night?
+assistant: The hotel is $160 per night.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, thanks so much. That's all.
+assistant: Have a great day!

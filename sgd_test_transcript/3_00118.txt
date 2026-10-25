@@ -1,0 +1,27 @@
+user: I need a rental car
+assistant: Where are you going to need it?
+user: I need one in Toronto, Ontario
+assistant: OK, for what date and time time and till when?
+user: I need it from the 2nd picking it up in the afternoon 2 pm, and I need it till the 6th
+tool(GetCarsAvailable): ok n_results=8
+assistant: OK, there's an Audi A8 Sedan that you can get from Toronto Pearson International Airport
+user: Give me another alternative
+assistant: How about this Buick Regal Sportback Sedan also from Toronto Pearson International Airport
+user: How much is that daily?
+assistant: It'll be $30.00 a day
+user: What about a hatchback car that I can get today?
+tool(GetCarsAvailable): ok n_results=3
+assistant: There's a Nissan Qashqai Hatchback also from Toronto Pearson International Airport
+user: Sure thing, reserve that for me
+assistant: Do you need insurance added to that?
+user: No don't add that
+assistant: So you are picking up your hatchback car from Toronto Pearson International Airport on March 1st 2 pm and returning it on March 6th with no insurance
+user: I changed my mind, buy insurance for me
+assistant: OK so booking this hatchback with insurance?
+user: Yes please, now give me the updated cost per day
+tool(ReserveCar): ok n_results=1
+assistant: It'll now cost $47.00 a day
+user: OK that's fine, thanks for that
+assistant: Can I help with something else?
+user: No, that's all for now thanks
+assistant: OK, enjoy your day

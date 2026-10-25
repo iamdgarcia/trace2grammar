@@ -1,0 +1,19 @@
+user: I'm looking for an online movie.
+assistant: What type of movies do you like?
+user: I'd like to watch a crime story movie.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like, it is Pulp Fiction.
+user: Pulp Fiction sounds great. I'd like to watch the movie now and I don't care about subtitles.
+assistant: Okay, you want to play Pulp Fiction with English subtitles, correct?
+user: Yes, that is right.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie. Quentin Tarantino starred in the movie.
+user: Thank you. What is the weather like?
+assistant: What city do you want to check the weather for?
+user: Point Reyes Station.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature in Point Reyes Station should be around 81 degrees Fahrenheit with a 3 percent chance of rain.
+user: Okay, thanks.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

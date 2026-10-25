@@ -1,0 +1,35 @@
+user: I need to book a bus for a trip coming up for 2 people.
+assistant: What's your destination and when are you departing?
+user: I'm leaving on the 14th of March and I'm headed to Long Beach, CA.
+assistant: And where are you departing from?
+user: I'm leaving from Los Angeles.
+tool(FindBus): ok n_results=10
+assistant: I found a bus leaving at 6:50 am that costs $14.
+user: Okay, sounds good.
+assistant: Do you want to book the tickets?
+user: Not right now, maybe later.
+assistant: Is there anything else I can help you with?
+user: Can you find me some attractions there? Any kind of attraction is fine, as long as there's no entry fee.
+tool(FindAttractions): ok n_results=5
+assistant: You might like the Earl Burns Miller Japanese Garden which is a park.
+user: Is this place child-friendly?
+assistant: Yes, it's a nice place for kids.
+user: Any other attractions I might like? I'd be interested in a museum.
+tool(FindAttractions): ok n_results=1
+assistant: I found 1 museum you might like. It's the Museum of Latin American Art (MOLAA).
+user: Can you give me their phone number? Is this place kid-friendly?
+assistant: No it's not great for kids. The phone number is 562-437-1689.
+user: Okay, that's great. Let's purchase the bus ticket we found.
+assistant: Okay, let's confirm: We're buying 2 tickets on the bus leaving from Los Angeles heading to Long Beach departing on March 14th at 6:50 am. You don't have extra luggage.
+user: No, I do have excess luggage to bring.
+assistant: Okay, let's confirm: You're headed to Long Beach and you do have extra luggage to bring.
+user: Yes, that works. What station does the bus leave from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed. The bus leaves from North Hollywood Station.
+user: Can you find hotels in that area also?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels you might like. There is a Best Western of Long Beach which is a 3 star hotel.
+user: What's their address?
+assistant: The address is 1725 Long Beach Boulevard.
+user: Sounds good, that's it for now.
+assistant: Have a great day!

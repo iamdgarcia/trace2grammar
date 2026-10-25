@@ -1,0 +1,33 @@
+user: Find a therapist in Antioch.
+assistant: What kind of therapist do you need?
+user: Find me a Psychiatrist.
+tool(FindProvider): ok n_results=1
+assistant: How about trying Allied Medical and Consultation Services? They are a Psychiatrist in Antioch.
+user: Do you have ae phone number?
+assistant: You can reach them on 510-509-7236.
+user: What is the address?
+assistant: The address is 3701 Lone Tree Way suite-5.
+user: Sounds great.
+assistant: Could I help with anything else?
+user: Would you book an appointment?
+assistant: What date do you want the appointment?
+user: Would you make the appointment for March 4th?
+assistant: What time would you like the appointment?
+user: Ideally it should be quarter to 4 in the afternoon.
+assistant: Please confirm that you want to book an appointment with Allied Medical and Consultation Services at 3:45 pm on March 4th.
+user: Sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: I wasn't able to book an appointment. You may try Allied Medical And Consultation Services for an appointment on March 4th at 3:30 pm.
+user: That should work.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was made successfully.
+user: Thanks. It's much appreciated. Do you have any movies you would recommend?
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies I think you might like. What about Yesterday? It is rate 63 out of 100 on average.
+user: How about any other movies? I like movies in the Dramatic story genre. Something directed by Paul Downs Colaizzo is good.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie for you. What do you think about Brittany Runs a Marathon? It is rated 90 out of 100 on average.
+user: Tell me who played in the movie.
+assistant: Jillian Bell acted in the movie.
+user: Sounds good. That's it.
+assistant: I am glad to have helped.

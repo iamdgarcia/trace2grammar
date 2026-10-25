@@ -1,0 +1,36 @@
+user: I am interested in finding a place where I can live at.
+assistant: Can you tell me the number of bedrooms, and the number of bedrooms the property you looking for should have?
+user: The property I am interested in should have 3 bedrooms, and two bathrooms.
+assistant: Can you tell me if you want to rent or buy this place, and in which area you would like for the property to be located?
+user: The house I am looking for should be in Richmond, and I want to rent it.
+tool(FindHomeByArea): ok n_results=4
+assistant: You might consider the Crescent Park property which is a good one, and it can be found at 5000 Hartnett Avenue with a cost of $3,600.
+user: Can you suggest some other place?
+assistant: Another nice property for you to consider is Monterey Pines which can be found at 680 South 37th Street, and which costs $3,600.
+user: Can you recommend some other property?
+assistant: You might also consider the Montoya Garden Apartments, which is a nice property that can be found at 5005 Montoya Avenue, and that has a cost of $3,900.
+user: Does this property have garage, and can you also tell me if it has laundry machines inside the house?
+assistant: Unfortunately it does not have a garage, and from what I can tell it also does not have laundry machines inside.
+user: That seems nice. I would like to book a visit at this property for Sunday this week.
+assistant: Can you please confirm that you want to make a reservation for a visit to Montoya Garden Apartments on March 3rd?
+user: Yes, that suits me well. Can you tell me the phone number I can use to call them?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your requested visit has been booked, and if you want to call them you can at 510-235-6341.
+user: Would it be possible for you to share the location?
+assistant: With whom do you want to share the location?
+user: The location should be shared with Terry.
+assistant: Can you please confirm that you want to share the 5005 Montoya Avenue address with Terry?
+user: That is what I want to do.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: Thank you. You have helped me a lot. Is it possible for you to get me a cab which gets me there.
+assistant: Can you tell me the number of seats you want to have, and the kind of ride you would like to have? The ride can be Regular, Pool or something else.
+user: I would like to have a Shared ride, and I need it for two people.
+assistant: Can you please confirm that you want 2 seats in a Pool ride to go to 5005 Montoya Avenue?
+user: Yes, that is correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab was booked and is already coming to you.
+user: I appreciate your help very much.
+assistant: Is there something else I can do to help you?
+user: Nothing. I am grateful for the help you provided to me.
+assistant: Have a good time!

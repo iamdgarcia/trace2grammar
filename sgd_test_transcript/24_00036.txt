@@ -1,0 +1,30 @@
+user: I'm looking for a one way flight. I need three economy class tickets.
+assistant: When do you want to leave?
+user: I'm leaving on the 11th of March.
+assistant: What city are you leaving from?
+user: I'm leaving from SF.
+assistant: Where are you going?
+user: I'm going to Phoenix, AZ.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: I found 5 flights. There is an Alaska Airlines flight that leaves at 11:50 pm for $120.
+user: What time does the flight arrive?
+assistant: The flight arrives at 1:57 am.
+user: Can you find me premium economy tickets?
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I found 2 flights. There is a Delta Airlines flight that leaves at 8:30 am for $188.
+user: That sounds great. I want to find a train there.
+assistant: Are you leaving on March 11th?
+user: I want to leave on the 1st of March.
+tool(FindTrains): ok n_results=3
+assistant: What about a train leaving at 6 am for $508?
+user: That sounds great.
+assistant: Do you want to purchase the tickets?
+user: Yes, thank you.
+assistant: Do you want to add travel insurance?
+user: Yes, I want to add travel insurance.
+assistant: Please confirm: 3 value tickets leaving from San Francisco to Phoenix on March 1st at 6 am.
+user: Sounds great. What station does the train arrive at and where does it leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been reserved. The train leaves from Salesforce Transit Center and arrives at Phoenix Union Station.
+user: Thank you, that's all.
+assistant: Have a great day!

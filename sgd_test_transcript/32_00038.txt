@@ -1,0 +1,22 @@
+user: Could you search Country Songs for me now? I want songs by Little Big Town.
+tool(LookupMusic): ok n_results=2
+assistant: I have short listed 2 songs of your choice. What is your opinion about the song Girl Crush from the album Pain Killer by Little Big Town.
+user: Can you tell me in which year it is released?
+assistant: This song is from the year 2014.
+user: Okay this is fine..Do you know any good online movies?
+assistant: What type of film you like?
+user: I like crime films.
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion about Pulp Fiction?
+user: The film Pulp Fiction is good..Could you run the song you just found for me and i want to run it on any device.
+assistant: please give the confirmation details:Run the song Girl Crush in Living Room.
+user: Okay..this is perfect..
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your music..
+user: Thanks a lot.
+assistant: Any other help you want?
+user: Please show my alarms now..
+tool(GetAlarms): ok n_results=4
+assistant: The alarm is at 7 am with name wake up.
+user: This is cool..this much is okay for now..
+assistant: Thank you so much..

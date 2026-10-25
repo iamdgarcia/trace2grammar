@@ -225,6 +225,26 @@ check("samples: sim2 diverse batch spans all 3 classes",
 check("samples: real set spans 3 outcome classes",
       {v for k, v in _sample_outcomes.items() if not k.startswith("sim")} == {"theta_cont", "theta_aban", "theta_hand"})
 
+# --- silent-failure flag: "ok" tool with zero results, outcome untouched -------------
+_tx_silent = """user: quiero dos entradas
+assistant: busco la funcion
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, the reservation was not successful. Have a great day!"""
+_sf = extract(_tx_silent, "transcript")
+check("silent-failure: zero-result ok tool flags", _sf["silent_failure_candidate"] is True)
+check("silent-failure: close still contained (no re-classify)", _sf["outcome"] == "theta_cont")
+_sf_err = extract("user: entradas\nassistant: un momento\ntool(BuyMovieTickets): error declined\nuser: vaya", "transcript")
+check("silent-failure: tool error does not flag", _sf_err["silent_failure_candidate"] is False)
+_sf_ok = extract("user: entradas\nassistant: un momento\ntool(BuyMovieTickets): ok n_results=3\nassistant: listas, have a nice day", "transcript")
+check("silent-failure: non-zero results do not flag", _sf_ok["silent_failure_candidate"] is False)
+_sf_otel = extract({"resourceSpans": [{"scopeSpans": [{"spans": [
+    {"name": "execute_tool", "startTimeUnixNano": str(1_000_000_000), "endTimeUnixNano": str(2_000_000_000),
+     "attributes": [{"key": "gen_ai.tool.name", "value": {"stringValue": "BuyMovieTickets"}},
+                    {"key": "gen_ai.tool.call.id", "value": {"stringValue": "c1"}},
+                    {"key": "gen_ai.tool.call.result", "value": {"stringValue": "no tickets available"}},
+                    {"key": "result_count", "value": {"intValue": 0}}]}]}]}]}, "otel")
+check("silent-failure: structured count attr at 0 flags (otel)", _sf_otel["silent_failure_candidate"] is True)
+
 # --- summary ---------------------------------------------------------------------
 fails = [n for n, ok in checks if not ok]
 print()

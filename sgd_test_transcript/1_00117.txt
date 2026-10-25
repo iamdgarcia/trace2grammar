@@ -1,0 +1,14 @@
+user: I am going on a trip and need a hotel room.
+assistant: Do you have a preferred city to stay in?
+user: Yes, thanks for asking. New Delhi please.
+tool(SearchHotel): ok n_results=10
+assistant: I found a hotel with a 5 star rating called Aloft New Delhi Aerocity.
+user: Sweet. Please make me a reservation at that hotel.
+assistant: Do you know how long you would like to stay? When you would like to check in?
+user: Yes, I would like to stay for 5 days with a preferred check in on Tuesday next week.
+assistant: Let me know if these details are correct. You would like to check in the Aloft New Delhi Aerocity in Delhi on March 5th. You would like 1 room for 5 nights.
+user: The details are correct. What is the hotel smoking policy? I also need the address please.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has a no smoking policy. You can find the hotel at 5B IGI T3 Road Delhi Aerocity, New Delhi. Your reservation has been made.
+user: That's perfect, thanks so much. I'm set for the time being.
+assistant: Talk to you later.

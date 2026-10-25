@@ -1,0 +1,19 @@
+user: I want to find a movie to watch online
+assistant: What kind of movie are you diggin?
+user: I want to watch an Animation movie
+tool(FindMovies): ok n_results=2
+assistant: I found 2, how about Toy Story 4 or The Angry Birds Movie 2?
+user: Toy Story 4 sounds good, play it for me
+assistant: Toy Story 4 with English subtitles?
+user: Yes please, who's in that film
+tool(PlayMovie): ok n_results=1
+assistant: It's playing, and Tony Hale is one of the people in that film
+user: Thanks so much. Can you help me check the weather on March 10th?
+assistant: Sure, in what city?
+user: Let's check in Petaluma
+tool(GetWeather): ok n_results=1
+assistant: It'll be 70 degrees Fahrenheit with a 13 percent chance of rain that date
+user: OK thanks for that
+assistant: What else can I do?
+user: That's it, I appreciate the help
+assistant: Glad I could be of service!

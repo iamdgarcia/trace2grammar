@@ -1,0 +1,39 @@
+user: I am looking for a therapist.
+assistant: What type of therapist like Psychiatrist or a Family Counselor or any other type are you looking for?
+user: I am looking for a Psychiatrist.
+assistant: Which city do you want me to search for the Psychiatrist?
+user: Find me a Family Therapist in Los Gatos.
+tool(FindProvider): ok n_results=5
+assistant: How about Emily Rosenbaum who is a Family Counselor located in Los Gatos.
+user: Find me their phone number.
+assistant: Their contact number is 408-641-7353.
+user: Are there any other therapists you can show me?
+assistant: How about Fredkin Susan who is a Family Counselor located in Los Gatos.
+user: That sounds good to me.
+assistant: Would you like me to book an appointment with the therapist?
+user: Yes, Please book an appointment with them at three pm on the 12th.
+assistant: Please confirm: You wan me to book an appointment with Fredkin Susan at 3 pm on March 12th.
+user: Yes, That is correct. Find me their address and the phone number.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment and you will shortly receive a confirmation mail. The address is 401 Alberto Way # 2C and their phone number is 408-472-1773.
+user: Okay. Now request a payment of 120 bucks for me in private.
+assistant: Can you please tell me the name of the contact?
+user: The name of the contact is Yumi.
+assistant: Please confirm: You want me to request a payment of $120 from Yumi in private.
+user: Yes, That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made the payment request.
+user: Okay. Find me a restaurant for a meal on that day.
+assistant: What type of food do you prefer?
+user: I am looking for a restaurant which serves COmfort Food.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant called The Cats located in Los Gatos.
+user: Okay. That sounds good to me. Book me a table for one people fro evening 5 at the restaurant.
+assistant: Please confirm: You want me to book a table for 1 people in The Cats located in Los Gatos for 5 pm on March 12th.
+user: Yes, That is correct. Find me whether they have outdoor sitting and also get me their number.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully reserved the table for you. They don't have outdoor sitting and you can reach them on 408-354-4020.
+user: Okay. Thank you for the help!
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

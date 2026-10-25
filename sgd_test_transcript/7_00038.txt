@@ -1,0 +1,24 @@
+user: I'm looking for a place to live in.
+assistant: Do you want to rent it or buy? And how many baths should there be?
+user: I want to buy. And I want 3 baths.
+assistant: And how many bed rooms should it have?
+user: I want 3 bed rooms.
+assistant: And where should the property be located?
+user: It should be in Fairfield.
+tool(FindHomeByArea): ok n_results=9
+assistant: Aspen Village Apartments has a place that you might like. It's located at 2355 Fairfield avenue and costs $3,900,000.
+user: Okay, I like that. Schedule me a visit for the 11th of March.
+assistant: I'll schedule you a visit to Aspen Village Apartments on March 11th.
+user: Wait, change that to the 10th.
+assistant: I'll schedule you a visit to Aspen Village Apartments on March 10th.
+user: Yeah, that's good.
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled the visit.
+user: Are there laundry machines in the property?
+assistant: Yes, there is in-unit laundry.
+user: And is there a garage? Also, please give me their phone number.
+assistant: There is no garage. Their phone number is 707-429-1271.
+user: Thanks for that.
+assistant: What else can I do for you?
+user: Nothing else. Thanks again.
+assistant: Have a wonderful day.

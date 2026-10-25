@@ -1,0 +1,22 @@
+user: I'm due for a haircut and need help finding a unisex salon.
+assistant: I can help you with that. Please tell me the city I should search in.
+user: Search for a salon in Santa Clara.
+tool(FindProvider): ok n_results=8
+assistant: How does About Time Barber Shop, one of 8 nice Santa Clara salons I found, sound?
+user: Sorry, change of plans. Please find me a different salon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: Sure, no problem. Your search for San Francisco salons yielded 10 nice ones that might interest you. Would you like to try 1512 Barber Shop?
+user: Please tell me its average rating and its phone number.
+assistant: It has an average rating of 4.8 and can be reached on 415-286-4371.
+user: All right, cool. Now check what the weather will be over there on Wednesday next week.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature for the day is 72 degrees Fahrenheit, with a 3 percent chance of rain.
+user: All right, nice. Now, please book me a 15:45 appointment on that day, at the salon you just found.
+assistant: Sure. First, please confirm that you wish to book a March 6th, 3:45 pm appointment at 1512 Barber Shop.
+user: Yes, that is correct. Could you tell me where it's situated?
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. It's situated at 1532 20th Street.
+user: Thanks a lot.
+assistant: Would you like my help with anything else?
+user: No. Thanks a bunch.
+assistant: Have a wonderful day.

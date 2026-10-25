@@ -1,0 +1,21 @@
+user: I'm looking for some guidance in picking the best movie to enjoy
+tool(FindMovies): ok n_results=10
+assistant: there's mission mangal that would be an interesting choice, rating it 67 out of 100
+user: look further
+assistant: there's saaho then, rating is 10 out of 100
+user: okay, look for a pizza restaurant in mill valley, check if they have outdoor seating
+tool(FindRestaurants): ok n_results=2
+assistant: piazza d'angelo is in mill valley
+user: send the number
+assistant: it's 415-388-2126
+user: where are they exactly? do you think they serve food suitable for vegetarians?
+assistant: they have interesting veggie meals. The address to reach is 22 miller avenue
+user: I like the place, book a table for 2 tomorrow at 7 pm
+assistant: confirm that this is what you want. you need a table for 2 at piazza d'angelo in mill valley on march 2nd at 7 pm
+user: it's what I want
+tool(ReserveRestaurant): ok n_results=1
+assistant: you got it
+user: that was fast, thanks
+assistant: can I assist you with something else?
+user: no, bye bye
+assistant: enjoy the rest of your day

@@ -1,0 +1,35 @@
+user: I'm looking for a rental car.
+assistant: When do you need the rental and until when?
+user: I want to pick it up on March 5th at 13:30. I need it until the 6th of this month.
+assistant: Where do you want to pick it up?
+user: I want to pick it up from Sacramento, CA.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is an SUV Alfa Romeo Stelvio at Sacramento Valley Station.
+user: How much is it per day?
+assistant: It's $43.00 per day.
+user: Are there any other cars?
+assistant: There's a Sedan Audi A8 at SMF International Airport.
+user: Sounds good to me.
+assistant: Do you want to reserve the rental?
+user: Yes, but not now.
+assistant: Anything else I can do for you?
+user: I want to book tickets for an event.
+assistant: What kind of event do you want tickets for? What city should I look in?
+user: I want to find something in Vancouver. Shakespeare In Love is supposed to be a good one. I'd like to find an event on the 2nd of March.
+assistant: How many tickets do you need?
+user: I need 3 tickets for something on March 14th.
+assistant: Please confirm: 3 tickets for Shakespeare In Love on March 14th in Vancouver.
+user: Sounds good. Where is the venue and when does it start?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Enjoy the show. It starts at 7:30 pm at 1695 Whyte Avenue.
+user: I want to reserve the rental now.
+assistant: Would you like to add insurance?
+user: Yes, add insurance.
+assistant: Please confirm: picking up sedan from SMF International Airport on March 5th at 1:30 pm. Drop off is March 6th.
+user: Yes, sounds great.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day!

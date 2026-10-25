@@ -1,0 +1,19 @@
+user: Please help me find a good movie to enjoy.
+assistant: Can you tell me your location?
+user: I would like to watch movies shown in Morgan Hill.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 such movies. Are you interested in Good Boys, Hobbs and Shaw or Hustlers?
+user: I think Hobbs and Shaw will be fine. Please reserve a seat in a restaurant there too.
+assistant: Tell me about the time and name of restaurant.
+user: Book seat at Odeum at six in the evening.
+assistant: Please confirm your request. At 6 pm on March 1st you need a table for 2 people at Odeum in Morgan Hill.
+user: Fine, is there outdoor seating.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Yes there is outdoor seating, and your table is booked.
+user: Give me their phone number. Does their menu contain veg food?
+assistant: They do not offer veg food. You can contact them on 408-782-5151
+user: When can I watch the movie?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime at 9:30 pm in CineLux Tennant Station Stadium 11.
+user: Good, thank you.
+assistant: Enjoy the day.

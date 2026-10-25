@@ -1,0 +1,34 @@
+user: Can you please help me pull up Family movies starring Debbie McCann in them?
+tool(FindMovies): ok n_results=1
+assistant: Sure, I've found 1 movie you may be interested in called Steel Magnolias.
+user: Steel Magnolias sounds perfect. I'm also wanting to pull up some kid friendly attractions.
+assistant: What area would you like to search attractions?
+user: Search in Cape Town please.
+tool(FindAttractions): ok n_results=9
+assistant: I've found 9 attractions for you. Let me recommend first Bo-Kaap. This is a Museum.
+user: Are there any other attractions?
+assistant: Yes, you could check out Cape Town Stadium, this is a sports Venue
+user: alright, can you list more attractions. Make sure there is no entry fee.
+tool(FindAttractions): ok n_results=5
+assistant: i've got 5 available attractions, starting with the Museum called District Six Museum
+user: ok, let's switch it up and search for some songs now!
+tool(LookupMusic): ok n_results=10
+assistant: Alright, How does Fortunately I Met You by Witwisit Hiranyawongkul off the album Quarter sound?
+user: Which year did that album come out?
+assistant: That album is from 2014
+user: What genre of music is that?
+assistant: Pop music!
+user: Yes, this will work. Go ahead and play that song on any device now.
+assistant: Ok, please confirm you would like to play Fortunately I Met You in the Living room. Is this correct?
+user: Yes, please play.
+tool(PlayMedia): ok n_results=1
+assistant: Ok, Enjoy your music
+user: Thank you. Can I also have you go ahead and play the movie you found for me earlier, please turn on the English subtitles as well.
+assistant: No problem, please confirm playing steel magnolias with english subtitles. is that right?
+user: Yes. thank you .
+tool(PlayMovie): ok n_results=1
+assistant: Movie has started playing.
+user: Thank you very much.
+assistant: Your welcome. Will there be anything else I can help you with?
+user: No that is all.
+assistant: Have a wonderful day!

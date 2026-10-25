@@ -1,0 +1,28 @@
+user: Look up the weather forecast for the 11th would you?
+assistant: The forecast for where?
+user: Make that the 4th, in Lafayette for the weather.
+tool(GetWeather): ok n_results=1
+assistant: There is a 15 percent chance of rain predicted and an average temperature of 91 Fahrenheit.
+user: Can you tell me anything about the humidity or the wind speed?q
+assistant: Of course I can humidity is expected to be about 29 percent and a 5 miles and hour wind speed.
+user: Okay now for Bolinas please.
+tool(GetWeather): ok n_results=1
+assistant: There it is expected to average 85 Fahrenheit with a 12 percent chance of showers.
+user: That is the day I want to visit Evergreen Ridge Apartments I believe I need to schedule that visit.
+assistant: On March 4th you want to visit Evergreen Ridge Apartments and I am scheduling that visit for you correct?
+user: That is right. Could you tell me a little about it like how many bathrooms and bedrooms they have?
+tool(ScheduleVisit): ok n_results=1
+assistant: I made arrangements for your visit and there are 2 bedrooms and 2 bathrooms.
+user: I need to get a rental car and I want to get it at Peachtree Station.
+assistant: What time would be good for you?
+user: Ten in the morning is what suits me.
+assistant: What type of vehicle do you want a Hatchback, a Sedan maybe or state your preference, how long do you plan to have the vehicle and should I get the insurance?
+user: Insurance won't be necessary and I want a Hatchback that I can keep until March 5th.
+assistant: Was March 4th the pick up date?
+user: Actually I need it starting this Sunday.
+assistant: Okay this is what I have you want to rent a Hatchback that you can get at Peachtree Station on March 3rd at 10 am and you plan to return it March 5th is that right?
+user: Yes, you got it.
+tool(ReserveCar): ok n_results=1
+assistant: Your car will be ready.
+user: Thank you that will be all.
+assistant: Have a splendid day.

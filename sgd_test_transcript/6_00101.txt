@@ -1,0 +1,16 @@
+user: I'm looking for a salon.
+assistant: What city do you want me to look in?
+user: I would like to find a salon in Newark.
+tool(FindProvider): ok n_results=3
+assistant: I have located 3 salons you might like. One of these is a nice location in Newark called Kim P Beauty Care.
+user: Yes that sounds fine, please book me an appointment at the salon.
+assistant: What time do you want your appointment to be?
+user: I would like to schedule the appointment at 11:45.
+assistant: What date do you want to have this appointment?
+user: I would like to visit this salon on Monday next week.
+assistant: Okay, confirm these details: the hairstylist will be Kim P Beauty Care and the appointment is set for March 4th at 11:45 am.
+user: Yes that sounds fine. Can you tell me their address and their average rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is now set. The address of the salon is 36935 Sycamore Street and they have an average rating of 4.4
+user: Thanks a lot. That was all I was looking for today.
+assistant: Have a wonderful day.

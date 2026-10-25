@@ -1,0 +1,22 @@
+user: Since i have a plan travel, so i need a house to stay over there. Will you find me a house with laundry service? Number of people to stay is 1.
+assistant: In which city are you planning to stay in?
+user: I need a house in SFO.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses as per your taste. There's a nice house located at 1095 Market Street and the rating is 4.0.
+user: Not interested. is there any other houses?
+assistant: THere's is an another house located at 1100 Market STreet Hotel Entrance is at, 45 McAllister Street. The rating is 4.4
+user: No, not interested. Tell me any other house?
+assistant: ok, what about a nice house located at 111 Mason Street? Its rating is 3.5.
+user: Ok this house sounds good to me. I need to book a house.
+assistant: In which day you need to check out?
+user: I want to check out on March 5th.
+assistant: in which day do you need to check in?
+user: I want to check in on 4th of this month.
+assistant: Please check and review the details; THe location is San Francisco. There are 1 people in your group. The check in date is March 4th.The check out date is March 5th.
+user: Ok that's great. Please book it.
+tool(BookHouse): ok n_results=1
+assistant: Reservation made successfully.
+user: THanks for your immense help
+assistant: Whether i need to do anything else?
+user: No, thanks a lot , not for now.
+assistant: ok bye Take care Have a wonderful day.

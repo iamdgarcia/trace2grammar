@@ -1,0 +1,20 @@
+user: Would you look in San Jose for some movies to see?
+tool(FindMovies): ok n_results=10
+assistant: I have some suggestions of 47 Meters Down: Uncaged, After the Wedding or Ad Astra?
+user: Look around for some other movie options, such as a Dramatic story.
+tool(FindMovies): ok n_results=3
+assistant: I was able to find 3 movies. What do you think about Hustlers, Overcomer or Brittany Runs a Marathon.
+user: See if you can find some other movies in San Rafael please.
+tool(FindMovies): ok n_results=1
+assistant: I see 1 movie that is A Faithful Man.
+user: I want to get some movie tickets to a 3d show of A Faithful Man. It' sounds great.
+assistant: Can you tell me the time and date that you would like to see it? Also, what is the number of tickets?
+user: I need 3 tickets to see it on the 8th of this month for the evening 6:15 show.
+assistant: You are interested in getting 3 tickets to see A Faithful Man in 3d on March 8th at 6:15 pm in San Rafael.
+user: Right, that's great.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased.
+user: Your help has been invaluable.
+assistant: Would you need more help?
+user: Actually, no, but thanks so much.
+assistant: Hope you have a fantastic day.

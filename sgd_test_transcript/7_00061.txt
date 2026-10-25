@@ -1,0 +1,29 @@
+user: I am looking for a place to live
+assistant: Do you know how many baths you would like and if you are wanting to rent or buy?
+user: I would like to rent and I am looking for 3 baths.
+assistant: What is the amount of bedrooms you want on your property?
+user: I need 3 bedrooms.
+assistant: Are there any particular areas you desire?
+user: Yes, I'm hoping to find something in Richmond.
+tool(FindHomeByArea): ok n_results=3
+assistant: There is a very nice property called Arbors Apartments located at 5317 Creely Avenue that is going for $3,950.
+user: Do you know if it comes with laundry machines?
+assistant: No there are no laundry machines inside the house.
+user: Are there any other places?
+assistant: There is Liberty Village Apartments which is a very good property located at 298 West Chanslor Avenue that is going for $4,150.
+user: Oh, that sounds nice! Does it come with a garage?
+assistant: Yes, it does have a garage!
+user: Are there any places in San Mateo?
+tool(FindHomeByArea): ok n_results=3
+assistant: Yes, there is one located at 888 North San Mateo Drive called 888 San Mateo going for $4,300.
+user: That sounds perfect, can I schedule a visit to see the property?
+assistant: Sure! When would you like to visit?
+user: I would like to see it on the 8th of March.
+assistant: Please confirm that you would like to schedule a visit to 888 San Mateo on March 8th.
+user: Actually I would like to visit on the 1st.
+assistant: Please confirm you would like to schedule a visit to 888 San Mateo on March 1st.
+user: Yes, sounds great!
+tool(ScheduleVisit): ok n_results=1
+assistant: Ok, I have scheduled your visit.
+user: Thank you, that is all I'll need for now.
+assistant: Ok, have a wonderful day, bye!

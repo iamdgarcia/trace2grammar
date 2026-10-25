@@ -1,0 +1,28 @@
+user: I will be going on vacation and will be flying out of Atlanta, GA on the 12th. Will you please search for a round trip flight?
+assistant: What day will you be returning and what is your destination?
+user: I will be flying to Berlin and plan on returning on the 14th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I have an American Airlines flight that departs at 3:45 pm with a layover. The return flight departs at 2:55 am. The cost of this flight is $626.
+user: What type of ticket is this: economy, business or class? Also, what time does my flight arrive at my destination?
+assistant: This is an economy flight and the flight arrives at 6:30 pm.
+user: Great. I also would like to find a house in that area, preferrably one with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I have found a beautiful house, with a rating of 4.4, at Alt-Moabit 99, 10559.
+user: Is there a phone number to contact someone about this place?
+assistant: Yes, the contact number is +49 30 399200.
+user: Wow, this house is gorgeous!
+assistant: Are you interested in reserving this house?
+user: Yes, most definitely I woud like to reserve this house. Please reserve it from the 12th to the 13th for 1 person.
+assistant: Please confirm the location is Berlin and your reservation is for 1 person from March 12th to March 13th.
+user: Yes, that is right.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Please provide me with the total cost.
+assistant: Your total cost is $288.
+user: Thank you for your assistane. I would like to find some attractions in this area.
+tool(FindAttractions): ok n_results=10
+assistant: There is a great museum you may enjoy called Alte Nationalgalerie.
+user: Is this place kid-friendly and please provide with their phone number.
+assistant: Yes, this is a kid-friendly place. The phon number is 30 266424242.
+user: Great, that is all I need. Thank you!
+assistant: Enjoy your trip!

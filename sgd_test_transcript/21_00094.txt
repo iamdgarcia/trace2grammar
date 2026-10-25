@@ -1,0 +1,20 @@
+user: What's the weather forecast for Mexico City on March 1st?
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature for the day is 102 degrees Fahrenheit, with a 0 percent chance of rain.
+user: What about the expected wind speed?
+assistant: 12 miles per hour winds are expected.
+user: And the expected humidity?
+assistant: 15 percent humidity is expected.
+user: Okay, thanks. Could you also check the forecast for 7th of March?
+tool(GetWeather): ok n_results=1
+assistant: Sure. The expected average temperature for the day is 93 degrees Fahrenheit, with a 6 percent chance of rain.
+user: Cool! Thanks. Now please help me find some attractions there, preferably a Park.
+tool(FindAttractions): ok n_results=4
+assistant: I found the Bosque de Chapultepec Park.
+user: All right, good! I'd actually like to check it out today! Please find me a cab for 2 going there, preferably a Luxury ride.
+assistant: Please confirm that you'd like 2 Luxury ride seats in a cab going to Bosque de Chapultepec.
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your cab and it should be here shortly.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Have a great day.

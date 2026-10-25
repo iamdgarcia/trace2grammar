@@ -1,0 +1,33 @@
+user: I want to find a train.
+assistant: What city do you want to leave from and when? Where are you going?
+user: I want to find tickets to Seattle, WA from Portland next Wednesday.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 trains. There is a train departing at 9:10 am for $61.
+user: Sounds great. I want to find something cool to do that day.
+assistant: Do you want to find music, theater, or something else?
+user: I want to find a play.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events. Beatleconcert is a very populer play at 12th Avenue Arts on March 10th at 5 pm.
+user: How much is a ticket?
+assistant: One ticket is $50.
+user: Are there other events? I want to find a concert next Wednesday.
+tool(FindEvents): ok n_results=2
+assistant: I found 2 events. Claudia Oshry is playing at Illsley Ball Nordstrom Recital Hall on March 6th at 7 pm.
+user: How much is a ticket and where is the venue?
+assistant: One ticket is $25 and the venue is at 200 University Street.
+user: Sounds good. What are some attractions there? A park is great.
+tool(FindAttractions): ok n_results=10
+assistant: Alki Beach Park is a great park.
+user: What are some other attractions?
+assistant: Carkeek Park is a cool park there.
+user: I want to find a house there. Something rated 4.5 or higher for four people. Laundry service would be great.
+tool(SearchHouse): ok n_results=10
+assistant: There's a great house at 1000 1st Avenue rated 4.5.
+user: What is the phone number?
+assistant: The phone number is +1 206-957-1000.
+user: That sounds great.
+assistant: Do you want to make a reservation?
+user: No, not now.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day!

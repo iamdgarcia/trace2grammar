@@ -1,0 +1,25 @@
+user: I would like to find an event around SD.
+assistant: What type of event do you prefer?
+user: I would like to see a Musical shows.
+tool(FindEvents): ok n_results=10
+assistant: Alejandro Sanz is at Cal Coast Credit Union Amphitheater on March 7th at 7:30 pm.
+user: How much is the cost of a ticket?
+assistant: Tickets are $50 each.
+user: Can you find another event?
+assistant: Angel Olsen is at The Observatory North Park on March 4th at 5 pm.
+user: I would like to purchase one ticket.
+assistant: Booking 1 ticket for Angel Olsen on March 4th in San Diego.
+user: What is the cost of the ticket and where is the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: The venue is at 2891 University Avenue and the cost is $30.
+user: Can you get me a cab to get there?
+assistant: What type of ride do you prefer?
+user: I would prefer a pool ride.
+assistant: 1 pool Ride to The Observatory North Park.
+user: I would prefer an expensive ride.
+assistant: 1 luxury ride to The Observatory North Park.
+user: Yes, that is correct. How long till the cab gets here and what is the cost?
+tool(GetRide): ok n_results=1
+assistant: Your cab should be there in 13 minutes and the cost is $17.19.
+user: That is all I needed.
+assistant: Have a good day.

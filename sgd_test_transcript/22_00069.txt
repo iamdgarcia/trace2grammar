@@ -1,0 +1,40 @@
+user: please find a therapist for me
+assistant: are you looking for family counselor or psychologist
+user: i am looking for psychologist in lafayette
+tool(FindProvider): ok n_results=10
+assistant: i located 10 psychologist in lafayette. what about alissa scanlin psyd
+user: what else can you find? i want family counselor
+tool(FindProvider): ok n_results=5
+assistant: i located 5 family counselor in lafayette. what about building better relationships
+user: that sound great
+assistant: do you want to make an appointment
+user: yes, please book it at 11:15 am on 5th of march
+assistant: please confirm your booking with building better relationships at 11:15 am on march 5th
+user: no, please change it to eleven in the morning on the 8th
+assistant: please confirm your changes to 11 am on march 8th
+user: yes please. what is their address
+tool(BookAppointment): ok n_results=1
+assistant: your appointment is confirmed. their address is 3470 mount diablo boulevard a200
+user: thank you. i also need to request a payment from isabella
+assistant: how much is the payment
+user: it is $59
+assistant: please confirm your request for payment with isabella for $59
+user: yes that is correct
+tool(RequestPayment): ok n_results=1
+assistant: your request is submit
+user: i also want to find a restaurant for the meal
+assistant: what kind of food do you like
+user: i want some burger
+tool(FindRestaurants): ok n_results=5
+assistant: what about american kitchen in lafayette
+user: is it pricey? is outdoor seating an option there
+assistant: they are moderate and they do have outdoor seating
+user: ok perfect, please book it
+assistant: when time would you like to go
+user: i want to go half past 1 in the afternoon
+assistant: please confirm your booking for 2 people with american kitchen in lafayette at 1:30 pm on march 8th
+user: what is their address and number
+tool(ReserveRestaurant): ok n_results=1
+assistant: their address is 71 lafayette circle and number is 925-385-0352
+user: thank you a lot
+assistant: have a nice day

@@ -1,0 +1,36 @@
+user: I'm looking for 1 flexible train ticket to Sacramento, CA.
+assistant: When is the ticket for?
+user: It's for Wednesday next week.
+assistant: And where will you be departing from?
+user: I'll be departing from San Francisco.
+tool(FindTrains): ok n_results=9
+assistant: There's a $67 train at 6:10 am.
+user: What's the station it departs from?
+assistant: The station is Salesforce Transit Center.
+user: And what's the arrival station?
+assistant: The arrival station is Sacramento Valley Station.
+user: Okay, good, I want to purchase a ticket.
+assistant: Do you need travel insurance?
+user: Yes, please add that.
+assistant: I'll book you 1 Flexible ticket with insurance for San Francisco to Sacramento on March 6th at 6:10 am. Do you confirm this?
+user: Yes, I confirm it.
+tool(GetTrainTickets): ok n_results=1
+assistant: The ticket has been purchased.
+user: Thanks so much for the help. What are some interesting things to do when I'm there?
+assistant: What kind of things do you enjoy?
+user: I really enjoy Music.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events that fit your preference. A lot of people like Aftershock Festival. It's at Discovery Park on March 5th at 5:30 pm.
+user: I think I'd like that.
+assistant: Do you want to purchase a ticket?
+user: No, some other time.
+assistant: What else can I do for you?
+user: I want to share a location with Douglas?
+assistant: Is it Discovery Park you want to share with Douglas?
+user: Yes, it is.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with Douglas.
+user: Thanks so much, that was helpful.
+assistant: What else can I do for you?
+user: Nothing else, thanks for the help.
+assistant: Have a great day!

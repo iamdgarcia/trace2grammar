@@ -1,0 +1,29 @@
+user: I need to rent a car for a trip. Can you help me look for a rental car?
+assistant: When will you need the car until?
+user: I will need the car until the 11th of March.
+assistant: What day would you like to start the car rental?
+user: I will need it starting Wednesday next week.
+assistant: What city would you like to pick up the car in?
+user: I will need the car when I am in Washington.
+assistant: What time would you like to pick up the car?
+user: I would like to pick it up at 3:30 pm. Can you search for an SUV, please?
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is an Alfa Romeo Stelvio SUV available at Union Station.
+user: How much does it cost per day?
+assistant: I will be $35.00 per day.
+user: OK, sounds good. How about buses going there? There would be 3 of us leaving from New York. We would prefer a direct bus.
+assistant: When do you plan to leave?
+user: We will be leaving on the 4th.
+tool(FindBus): ok n_results=8
+assistant: I found 8 buses for you. There is a bus departing at 6 am that costs $36.
+user: What stations does the bus depart from and arrive to?
+assistant: The bus departs from Penn Station, and arrives at Silver Spring Bus Stop.
+user: OK, thank you. I think I will go with a one-way flight instead, can you help me locate one please?
+assistant: Will you be leaving on March 6th?
+user: I plan to start my trip this Sunday.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: I found 2 flights that match your plans. American Airlines has a direct flight leaving at 6:20 am. The ticket price is $86.
+user: OK, that sounds good, thanks.
+assistant: Is there anything else I can help you with?
+user: No, I'm all set for now, thank you for your help.
+assistant: Have a great day!

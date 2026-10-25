@@ -1,0 +1,11 @@
+user: I would like to check the weather.
+assistant: Where would you like to know the weather.
+user: In Albany, please.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 92 degrees with a 19 percent chance of rain.
+user: Is is humid?
+assistant: The humidity is 29 percent.
+user: What about the wind?
+assistant: Average speed of 8 miler per hour.
+user: OK, thank you.
+assistant: You are welcome.

@@ -1,0 +1,19 @@
+user: Could you find me a therapist for me?
+assistant: In which city you want to be and do you need a Psychologist or a Family Counselor or perhaps another king?
+user: I need a Family Counselor in Mountain View.
+tool(FindProvider): ok n_results=2
+assistant: Could you try a Family Counselor called Kane Monique in Mountain View.
+user: Sounds very good.
+assistant: Yo want to make an appointment on this therapist?
+user: No,not now.Tell me how will be the weather there on 6th of March.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 75 degrees Fahrenheit and 21 percent of chance of rain.
+user: Okay.Go back please and book me an appointment at the therapist that you have found in that day on afternoon 3:15.
+assistant: Book an appointment on March 6th at 3:15 pm at Kane Monique.Is Ok?
+user: No.Make the appointment on afternoon 12.
+assistant: At 12 pm on March 6th.I'm right?
+user: Yes that's very good.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry but the appointment couldn't be done. Can I help with anything else?
+user: No.Thank you for your effort.
+assistant: Happy to help !

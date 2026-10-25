@@ -1,0 +1,39 @@
+user: I have to find a salon, my hair needs a touch up.
+assistant: What city would you like to search in?
+user: I would like to find a unisex salon in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons in Oakland, including 17 Jewels Salon.
+user: Let's look for a different one. Look for salons in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is a salon in San Francisco.
+user: What are the reviews for that one?
+assistant: The average rating is 4.8.
+user: What is the phone number?
+assistant: The phone number is 415-286-4371.
+user: What other salons are there?
+assistant: 20th Salon And Barber is another salon in San Francisco.
+user: Yes, ok, I'll choose that one. I would like to book an appointment.
+assistant: What date and time would you like the appointment for?
+user: I would like to go to the salon at 4:30 pm on March 7th.
+assistant: You would like to make an appointment at the hair stylist 20th Salon And Barber at 4:30 pm on March 7th, is this correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked.
+user: What is the address?
+assistant: The address is 2737 20th Street.
+user: What are the ratings?
+assistant: The average rating is 4.5
+user: Thank you very much. I would also like to find an Italian restaurant with moderate prices to eat at while I am there that day. It needs to have vegetarian options.
+tool(FindRestaurants): ok n_results=10
+assistant: 54 Mint Ristorante Italiano is a restaurant matches those criteria in San Francisco.
+user: What is the address? Is there outdoor seating?
+assistant: The street address is 16 Mint Plaza. There is outdoor seating at the restaurant.
+user: OK, that sounds good. I would like to go ahead and reserve a table for two there.
+assistant: What time would you like to make the reservation for?
+user: I would like it for 12 pm.
+assistant: You would like to reserve a table for 2 at 54 Mint Ristorante Italiano in San Francisco for 12 pm on March 7th, is this correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you so much. That's all for now.
+assistant: Have a great day!

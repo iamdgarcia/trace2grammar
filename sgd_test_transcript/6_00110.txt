@@ -1,0 +1,9 @@
+user: I would like to know about the weather
+assistant: Okay, just tell me the city where you want me to look.
+user: The place is Walnut Creek.
+tool(GetWeather): ok n_results=1
+assistant: Temperature is 72 degrees Fahrenheit with a 13 percent probability of rain.
+user: Got it.
+assistant: What can I do for you now?
+user: Nothing. Thank you.
+assistant: Bye

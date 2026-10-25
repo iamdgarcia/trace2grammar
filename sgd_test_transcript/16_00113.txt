@@ -1,0 +1,30 @@
+user: I need a unisex salon in San Jose, please.
+tool(FindProvider): ok n_results=10
+assistant: In San Jose there's Atelier Salon Willow Glen
+user: Good. Do you give me the phone number?
+assistant: Sure! Phone number is 408-293-3494
+user: Thanks. What is the address of the salon?
+assistant: Atelier Salon Willow Glen is at 1047 Lincoln Highway suite 101
+user: Very good. Thank you!
+assistant: Do you want to make an appointment?
+user: Not now, thanks! I would like to share the location.
+assistant: Who do you prefer with?
+user: I want to share the location with Julie
+assistant: Share the location 1047 Lincoln Highway suite 101 with Julie. Do you confirm?
+user: No, sorry! I want to share the location with Donald!
+assistant: Share the location 1047 Lincoln Highway suite 101 with Donald. Do you confirm?
+user: Yes, I confirm, thanks!
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared!
+user: Very well, thank you! Can you show me the alarms I've set?
+tool(GetAlarms): ok n_results=1
+assistant: There's 1 alamr for 6 am named Get up
+user: Good. I need to add an alarm named Leave for home for afternoon 3:30
+assistant: Creating an alarm at 3:30 pm named Leave for home. Do you confirm?
+user: Yes, It's correct
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been set!
+user: Very well! Thanks!
+assistant: You need anything else?
+user: No, It's all, thanks!
+assistant: Have a good day

@@ -1,0 +1,18 @@
+user: I'm searching for a location to dine at.
+assistant: what place ought I look in, and what sort of cuisine are you searching for?
+user: Get me a diner in San Francisco that offers Asian cuisine.
+tool(FindRestaurants): ok n_results=10
+assistant: There is a lovely diner called 8 Immortals Restaurant in San Francisco.
+user: Yeah, that's fine with me.
+assistant: Do you wish to book a spot there?
+user: Yeah, I'd like to make a reservation on March 5th.
+assistant: When should I book for?
+user: Make the booking for 12:30 pm.
+assistant: Please verify the following information: reserve a spot for 2 people at 8 Immortals Restaurant in San Francisco, with the date being March 5th 12:30 pm.
+user: Yeah, that's fine. Is the diner cheap? Where is it located?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete, and yes - it is a cheap diner. The location is 1433 Taraval.
+user: Thank you for your assistance.
+assistant: Could I assist you with something else?
+user: Nope; thank you for your help.
+assistant: Have a pleasant afternoon.

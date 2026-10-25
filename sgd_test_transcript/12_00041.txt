@@ -1,0 +1,27 @@
+user: I need a bus ticket from Sacramento, CA to Anaheim, CA and I have extra luggage with me.
+assistant: What day are you departing?
+user: I am departing on the 11th of this month.
+assistant: How many people are going?
+user: There are 3 people going.
+assistant: What departure time do you want?
+user: I wish to depart at 13:00.
+assistant: You want 3 bus tickets departing from Sacramento on March 11th at 1 pm headed to Anaheim and you have extra luggage, correct?
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are ordered.
+user: I need a rental car when I get there until the 14th.
+assistant: Are you picking the car up March 11th in Anaheim?
+user: I am getting the car in Anaheim and want to pick it up on the 13th.
+assistant: What time do you wish to get the car?
+user: I wish to get the car morning 10:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: A Sedan Buick Regal Sportback is available at John Wayne Airport.
+user: That works for me. Book me the car now.
+assistant: Shall I get you insurance too?
+user: Yes, add insurance to the rental.
+assistant: You want a Sedan car with insurance for pickup at 10:30 am on March 13th at John Wayne Airport and will return it on March 14th, correct?
+user: That is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your booking is complete.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

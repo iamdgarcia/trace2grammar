@@ -1,0 +1,21 @@
+user: I would like to find a therapist. Please search for a Psychiatrist in Cupertino.
+tool(FindProvider): ok n_results=1
+assistant: Baker Patricia L is a Psychiatrist in Cupertino.
+user: OK, thank you. What will the weather be like there on the 9th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is expected to be 88 degrees Fahrenheit, and there is a 4 percent chance of rain.
+user: Will it be very humid or windy?
+assistant: The humidity is expected to be 19 percent. The average wind speed is projected to be 2 miles per hour.
+user: OK, thanks. Can you book an appointment for me with the therapist you found?
+assistant: What time would you like to book the appointment for?
+user: Please try to make the appointment for 10 in the morning.
+assistant: You would like to book an appointment with Baker Patricia L at 10 am on March 9th, is that correct?
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment booking was successful. You should get confirmation by email soon.
+user: What is the address?
+assistant: The address is 20833 Stevens Creek Boulevard.
+user: And what is their phone number?
+assistant: The phone number is 408-342-0617.
+user: Thanks a lot, I appreciate it! I'm all set.
+assistant: Glad to be of assistance.

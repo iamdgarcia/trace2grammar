@@ -1,0 +1,40 @@
+user: I'm looking for an Amusement Park I can go to.
+assistant: Where do you want to look?
+user: I want it to be in New Delhi.
+tool(FindAttractions): ok n_results=3
+assistant: There's a theme park called Adventure Island that might interest you.
+user: I'll need their phone number.
+assistant: You can contact them at 83770 02902.
+user: That interests me. I'm going to need to rent a car when I'm there.
+assistant: Until what date do you need the car?
+user: I want it until next Wednesday.
+assistant: And do you want to do the pick up in Delhi? What's the date and time that you want to pick the car up?
+user: Yes, in Delhi. I want the pick up to be Monday next week at evening 5.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I've found 8 cars that are available. There's a nice Sedan Audi A8 at Indira Gandhi International Airport.
+user: And what's the cost per day?
+assistant: It is $32.00 per day.
+user: I can do that. Please reserve the car.
+assistant: Do you need insurance also?
+user: No, no insurance.
+assistant: The Sedan with no insurance at Indira Gandhi International Airport will be reserved for you for March 4th at 5 pm to March 6th. Is that correct?
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved for you.
+user: I also need to share a location.
+assistant: Who will you be sharing a location with?
+user: I'll share it with Barbara.
+assistant: Is the location you are sharing Indira Gandhi International Airport?
+user: No it's Adventure Island.
+assistant: Adventure Island location will be shared with Barbara, is this correct?
+user: Wait, sorry, it's actually the Indira Gandhi International Airport I want to share.
+assistant: Indira Gandhi International Airport location will be shared with Barbara, is this correct?
+user: No, share it with Johnny instead.
+assistant: Indira Gandhi International Airport location will be shared with Johnny, is this correct?
+user: Yeah, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks for doing that.
+assistant: What else can I do for you?
+user: Nothing else, thanks again for helping.
+assistant: You're welcome. Have a good day.

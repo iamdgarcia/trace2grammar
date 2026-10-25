@@ -1,0 +1,26 @@
+user: Hey, can you help me book some bus tickets to this trip I'm going?
+assistant: At what time do you want to leave and what's your destination? How many tickets should I get?
+user: Just one ticket to Sacramento at 9 in the morning please.
+assistant: When do you plan to leave and from where?
+user: I plan to leave next Thursday from Anaheim, CA.
+assistant: So you want 1 ticket on a bus leaving Anaheim towards Sacramento on March 7th at 9 am. Is that correct!
+user: Yes, that's it. Is it a direct bus? From which station does it depart from?
+tool(BuyBusTicket): ok n_results=1
+assistant: It's a one-stop bus leaving from Anaheim Bus Station, but sorry, I couldn't book it. There's another bus, leaving at 9:10 am and costing $57 you may like.
+user: That works too.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed.
+user: Thanks a lot. Can you help me rent a Hatchback there? I'll want it on the 8th of this month and I'll pick it up at afternoon 1:30.
+assistant: Will you pick it up in Sacramento? Until when you'll keep the car?
+user: Sounds good. I'll return it on the 9th of March.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There's a nice Hatchback Ford Focus at SMF International Airport if you want it.
+user: Sounds good, I want to make a reservation.
+assistant: Will you want insurance with it?
+user: No insurance, thank you.
+assistant: So you'll pick up a Hatchback car with no insurance from SMF International Airport on March 8th at 1:30 pm and you'll drop it off on March 9th. Is that's correct?
+user: All good. What's the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation was successful. The cars will cost you $30.00 per day.
+user: Thanks a lot, that's all I need.
+assistant: Have a great day!

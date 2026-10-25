@@ -1,0 +1,25 @@
+user: I want to make a money transfer for which I need your help.
+assistant: How much do you want to transfer and from which of your account you want to transfer it whether from your app balance or debit card?
+user: I want to transfer 121 dollars from my MasterCard.
+assistant: To whom you want to transfer the money?
+user: Make it to Amelia.
+assistant: Once again please confirm to transfer $121 from your Credit Card to Amelia and the same will be visible to public.
+user: Okay and you can go ahead.
+tool(MakePayment): ok n_results=1
+assistant: Successfully transferred the money and the same will reach the recipient soon. Any other help you need?
+user: Yes, I want to find a nice restaurant and I need the one which is serving Gastrobar.
+assistant: What is your convenient location to search for the same?
+user: Search it in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: Do you like to go to B-side restaurant which is the good one in San Francisco.
+user: Yes, I like to go there. Please book a table there.
+assistant: Let me know your convenient time to go there so that I can book the table accordingly.
+user: I think 13:00 will be the convenient time to me. Book it at that time.
+assistant: I need your confirmation to book a table for 2 at B-side restaurant in San Francisco on March 1st for the time 1 pm.
+user: Please change the booking to the date March 3rd and it will be for one person only.
+assistant: Okay, finally confirm to book a table for 1 on March 3rd.
+user: That is confirmed and you can proceed now. I want some more details about the restaurant. Can you check whether they have outdoor seating and vegetarian food?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have booked the table but they don't have both outdoor seating as well as Vegetarian food.
+user: That's okay. Thanks and that's all.
+assistant: Have a great day.

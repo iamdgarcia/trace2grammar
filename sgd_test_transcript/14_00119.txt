@@ -1,0 +1,25 @@
+user: Would you search me some songs from the album Joanne
+tool(LookupMusic): ok n_results=2
+assistant: What is your opinion about Million Reasons from the album Joanne by Lady Gaga.
+user: Okay..this is perfect..Do you know any good online movies acted by Prashant Narayanan.
+assistant: What type of movie you want?
+user: I like comedy movies
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion about Chhichhore?
+user: Oh...Chhichhore is a good movie.
+assistant: Can i play this movie for you?
+user: Sorry, i don't want to watch now.
+assistant: Any other help you want?
+user: I want you to play the song you just found for me.
+assistant: Please give confirmation details: Running the song Million Reasons in Living Room.
+user: Sorry..run it on Patio.
+assistant: Please give confirmation details: Running the song Million Reasons in Patio
+user: Sorry...play it on my Kitchen
+assistant: Please give confirmation details:Running the song Million Reasons in Kitchen.
+user: This is fine..Can i know the type of music? Is it come out in one years ago?
+tool(PlayMedia): ok n_results=1
+assistant: This song is a pop song from the year 2016. Have fun with your music.
+user: Thanks a lot.
+assistant: Any other help you want?
+user: No, thank you so much.
+assistant: Have a great day.

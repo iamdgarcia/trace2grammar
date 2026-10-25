@@ -1,0 +1,32 @@
+user: What are some attractions that are worth visiting, like a place of interest. And I'd like it to have free entry.
+assistant: What city should I search in?
+user: Search in Anaheim.
+tool(FindAttractions): ok n_results=4
+assistant: Cars Land is a Tourist Attraction that fits your criteria.
+user: Alright, nice. I also need a rental car when I'm there, something like a nice Sedan. And I want to get it at three in the afternoon.
+assistant: Will you be picking it up in Anaheim? Also, what date range do you want to have the car?
+user: Yes, from Anaheim. I want the car from March 7th to the 9th of this month.
+tool(GetCarsAvailable): ok n_results=5
+assistant: There's a nice Sedan Buick Regal Sportback available at John Wayne Airport.
+user: What's the price per day?
+assistant: It is $30.00 for a day.
+user: What else is there?
+assistant: There's a nice Sedan Hyundai Ioniq available at Anaheim Intermodal Center.
+user: What's the price per day.
+assistant: It is $31.00 for a day.
+user: Okay, that works. Please reserve it.
+assistant: Will you need insurance.
+user: No, don't get insurance.
+assistant: I'll reserve you the Sedan at Anaheim Intermodal Center for pick up on March 7th at 3 pm and drop on March 9th. Is that correct?
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've reserved the car.
+user: Thanks for the help. I also want to share a location.
+assistant: Do you want to share the Cars Land address? And who will you be sharing with?
+user: Yes, that location. I want to it with Beverly.
+assistant: I will share the location of Cars Land with Beverly, is that right?
+user: Yes, please shar it.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks for all the help. I don't need anything else.
+assistant: Have a great day!

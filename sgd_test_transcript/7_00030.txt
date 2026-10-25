@@ -1,0 +1,21 @@
+user: Would you help me in finding a place to live?
+assistant: In which place you want the property? Is it for a rent or to buy? Number of baths you need?
+user: Search property around Dixon for rent with 3 baths.
+assistant: Number of bed rooms you want in the property?
+user: I want 3 bed rooms.
+tool(FindHomeByArea): ok n_results=2
+assistant: There is a good property at 1550 Valley Glen Drive called Bristol Apartment Homes with cost $4,200.
+user: Do you know some other property? I want in-unit laundry.
+tool(FindHomeByArea): ok n_results=1
+assistant: I searched 1 good property called Lincoln Creek Apartments at 1395 North Lincoln Street with cost $4,400.
+user: Can i get the phone number? Is there a garage?
+assistant: No, there is no garage and phone number is 888-820-0137
+user: It is cool. I like to visit that property.
+assistant: On which day you want to visit?
+user: I like to go on 9th of march.
+assistant: please give confirmation details: your visit to the property Lincoln Creek Apartments is on march 9th is scheduled.
+user: okay..this is cool.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed
+user: Thank you so much.
+assistant: Have a good day

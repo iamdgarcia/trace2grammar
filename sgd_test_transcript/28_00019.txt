@@ -1,0 +1,24 @@
+user: I am bored and want to see a movie.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 suitable movies. Would you like to see Stage Door, which has an average rating of 95 our of 100?
+user: Who was in that movie?
+assistant: Jack Carson is one of the actors.
+user: That could work. I would like to find a restaurant in Napa while I am there that serves pizza.
+tool(FindRestaurants): ok n_results=9
+assistant: There are 9 such restaurants available. Allegria is a lovely restaurant located in Napa.
+user: That would be great.
+assistant: You would like to reserve a table there?
+user: Yes, I want to eat there.
+assistant: For what time?
+user: For 1:30 in the afternoon.
+assistant: You would like to reserve a table for 2 at Allegria in Napa for 1:30 pm on march 1st?
+user: Yes, but is the restaurant cheap? I do not have much money. What about its rating?
+tool(ReserveRestaurant): ok n_results=0
+assistant: I was unable to make the reservation for you. Is there anything else you would like.
+user: Can you book it for evening 7 instead?
+assistant: You would like a table for 2 at Allegria in Napa for 7 pm on March 1st?
+user: Yes, that is what I want.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made the reservation.
+user: Thanks a lot.
+assistant: Your very welcome.

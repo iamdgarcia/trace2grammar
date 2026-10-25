@@ -1,0 +1,34 @@
+user: Hey, can you help me find an interesting play I can go to on the 5th of March in New York City?
+tool(FindEvents): ok n_results=10
+assistant: A very popular play taking place at the TGW Acting Studio on March 5th at 6:30 pm is the Advanced Acting Scene Study.
+user: Sounds great. Any buses going there?
+assistant: Leaving on March 5th? From where?
+user: Leaving on March 3rd, actually, from Washington.
+tool(FindBus): ok n_results=7
+assistant: I found 7 possible options. There's one departing at 6:20 am and costing $38.
+user: Sounds good. Help me find some round trip flights going there next Monday and returning on March 10th please.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: I found 3 flights. There's an American Airlines one costing $112, it takes off at 9:25 pm and returns at 6:20 am.
+user: Anything else available? Just one ticket on a Southwest Airlines flight is fine.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There's a Southwest Airlines direct flight leaving at 4 pm and returning at 5:10 pm if you want it. It costs $130.
+user: Is it a business class seat?
+assistant: It's an Economy ticket, actually.
+user: When does the returning flight arrives?
+assistant: It arrives at 6:20 pm.
+user: Good to know. Can you check if there any hotels over there? I need one room in a five star hotel where smoking is allowed.
+tool(SearchHotel): ok n_results=8
+assistant: The 1 Hotel Brooklyn Bridge is a great 5 star hotel you may enjoy.
+user: What's their address and phone number?
+assistant: Their number is +1 347-696-2500 and they're located at 60 Furman Street, Brooklyn.
+user: Sounds good!
+assistant: Should I make a reservation?
+user: Not now, thanks, but I'll be needing tickets to the event you found.
+assistant: So 1 ticket to Advanced Acting Scene Study on March 5th in New York?
+user: Yes, correct. How much is the ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation was successful. Have fun! The ticket costs $30.
+user: Thanks a lot for the help.
+assistant: Can I help you with anything else?
+user: No, thanks a lot.
+assistant: Have a great day.

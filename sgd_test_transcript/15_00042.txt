@@ -1,0 +1,21 @@
+user: I need a place to live.
+assistant: How many beds and baths are you looking for?
+user: Four beds three baths please.
+assistant: Are you looking to buy or rent?
+user: I would like to rent a home in Sunnyvale.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 options. Apricot Pit Apartments is a good property located at 400 East Remington Drive for a cost of $4,750.
+user: That one sounds good.
+assistant: Would you like to schedule a visit?
+user: Yes, please schedule for the 9th of March.
+assistant: Please confirm you want to visit the property at Apricot Pit Apartments on March 9th.
+user: Yes and can I have their phone number please.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been booked. They can be reached at 408-738-4862.
+user: Thanks. I also want to see my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm names call for 8:30 am.
+user: Okay sounds good.
+assistant: Would you like to add another alarm?
+user: No. That's all. Thanks.
+assistant: You're welcome and goodbye.

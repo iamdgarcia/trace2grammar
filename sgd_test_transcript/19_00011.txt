@@ -1,0 +1,28 @@
+user: I want to get dinner. Can you find me a reasonably priced Coffeehouse, please?
+assistant: What city would you like me to look in?
+user: Look for restaurants in Oakland.
+tool(FindRestaurants): ok n_results=2
+assistant: Paulista Brazilian Kitchen and Taproom is in Oakland.
+user: That will be fine. I would like to reserve a table.
+assistant: What time would you like the reservation for?
+user: Make it for a quarter to 5 in the evening.
+assistant: You would like a table for 2 at Paulista Brazilian Kitchen and Taproom in Oakland at 4:45 pm on March 1st, is that correct?
+user: Yes, you got it. Do you they have outdoor seating? What is the phone number?
+tool(ReserveRestaurant): ok n_results=0
+assistant: I'm sorry, I was not able to make a reservation for that time. Is there anything else I can help you with?
+user: Can you try to book the table at half past 6 in the evening instead?
+assistant: You would like a table for 2 at Paulista Brazilian Kitchen and Taproom in Oakland at 6:30 pm on March 1st, is that correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you. Can you order me a cab to go there?
+assistant: Are you going to 4239 Park Boulevard?
+user: Yes, that's correct. I would prefer the most comfortable ride.
+assistant: You would like a Luxury ride to 4239 Park Boulevard with 2 seats, is this correct?
+user: Yes, that's right.
+tool(GetRide): ok n_results=1
+assistant: You cab is booked and on its way.
+user: Thank you for all your help.
+assistant: Is there anything else I can help you with?
+user: No, that's all, thank you.
+assistant: Have a great day!

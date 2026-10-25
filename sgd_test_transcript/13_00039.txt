@@ -1,0 +1,24 @@
+user: I would like to search for something that's entertaining.
+assistant: Are you interested in any specific activities? Feel free to say thing like Music, Theater, or other topics. And do you have a specific location where you would like to find entertainment?
+user: I'd love something in Music in the NYC area.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 shows that may suit your tastes. There is Abbi Jacobson at the Kaufmann Concert Hall, one of the more well liked shows. It starts at 7:30 pm on March 11th.
+user: What's the price for a ticket to this event? And where exactly is the concert hall?
+assistant: The show is $60 per ticket and the hall is located at 1395 Lexington Avenue
+user: Excellent. What about hotels in that vicinity?
+tool(SearchHotel): ok n_results=9
+assistant: There's a 5 star hotel in that area called 1 Hotel Brooklyn Bridge.
+user: Can you tell me what it costs for a night's stay? Also, do they permit smoking in the hotel?
+assistant: This hotel does allow smoking. The rate for a night's stay is $465
+user: Are there any other hotel options? I am looking to book 1 room.
+tool(SearchHotel): ok n_results=9
+assistant: Sure. There are 9 that fit your preferences. One is a 5 star hotel, 1 Hotel Central Park.
+user: Excellent. That works for me.
+assistant: Shall I book you a room at this hotel?
+user: Not at this moment. But I would like to go ahead and buy 1 ticket to the show that you mentioned earlier.
+assistant: Okay, so you want 1 ticket to Abbi Jacobson on March 11th in New York?
+user: Correct, that's it.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket has been purchased. Enjoy the show!
+user: Thank you so much! I'm all set.
+assistant: Enjoy your day.

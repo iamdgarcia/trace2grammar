@@ -1,0 +1,39 @@
+user: Can you help me find a salon?
+assistant: I'd be happy to help. Where should I search?
+user: Please find something in Mountain View.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salons you may like in Mountain View. May I suggest Bollywood Beauty Salon?
+user: Can you tell me where it is and if it's a unisex salon?
+assistant: It is not a unisex salon. It's located at 820 East El Camino Real.
+user: What else is available?
+assistant: Christine's Salon is located in Mountain View and is very popular.
+user: That works for me.
+assistant: Would you like to make an appointment?
+user: No, not right now.
+assistant: What else can I do for you today?
+user: I'd like to find a Psychologist in Mountain View as well.
+tool(FindProvider): ok n_results=3
+assistant: Bishop Sue A is a highly rated Psychologist in Mountain View.
+user: Can you tell me their contact information?
+assistant: The phone number is 650-969-0288 and they are located at 2672 Bayshore Parkway # 611.
+user: Can you recommend a Psychiatrist in Los Gatos?
+tool(FindProvider): ok n_results=2
+assistant: There are 2 in Los Gatos. Larkin Matt is a good Psychiatrist.
+user: Okay, can you make me an appointment in the afternoon 1:30?
+assistant: What day works best for you?
+user: I'd like to see if there is anything available on the 13th of this month.
+assistant: You'd like an appointment with Larkin Matt on March 13th at 1:30 pm. Is this correct?
+user: Yes, that is correct. Can you tell me their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 301 Los Gatos-Saratoga Road. You can reach them at 408-399-5677. Your appointment was confirmed and you will receive an email with more details soon.
+user: Great! Can you book an appointment at the salon now?
+assistant: I'd be happy to. What time works best for you?
+user: Try for ten in the morning.
+assistant: Let me review your request. You'd like to visit Christine's Salon on March 13th at 10 am.
+user: That would be perfect.
+tool(BookAppointment): ok n_results=1
+assistant: Congratulations. Your appointment has been confirmed.
+user: Is this a unisex salon? How can I reach them?
+assistant: It is a unisex salon and you can call them at 650-966-8588.
+user: Great! You've been so helpful. Thank you.
+assistant: You're welcome. Have a wonderful day.

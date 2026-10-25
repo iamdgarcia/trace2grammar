@@ -1,0 +1,11 @@
+user: I want you to find me a bus.
+assistant: Can you tell me the time when you will be leaving, and the location from where you will leave?
+user: I have my mind set on leaving on 1st of March from Long Beach.
+assistant: Can you tell me your destination?
+user: I want to have a direct bus which will take me to SFO.
+tool(FindBus): ok n_results=7
+assistant: How would you like having a $52 ticket for a bus which leaves at 6:20 am?
+user: Can you tell me the station from where this bus departs from?
+assistant: This bus leaves from Downtown Station
+user: That seems nice. That would be all.
+assistant: Have a good time!

@@ -1,0 +1,17 @@
+user: I need to hear some beautiful song. will you search for songs now? The songs should be from the year 2014.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs as per your need. What about the song Addicted by Popcaan from the album Where we come from?
+user: ok thats great. Whether there are some good movies online? Find some scary movies.
+tool(FindMovies): ok n_results=6
+assistant: There are 6 movies as per your need. DO you like 47 Meters down: uncaged, In Fabric or Midsommar?
+user: Ok Midsommar is great.
+assistant: Whether i need to play that movie?
+user: no, i don't want it now. will you paly the song you find just before?
+assistant: Please confirm the following details: Playing the song Addicted in Living room.
+user: Ok that sound good to me. What type of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: It is a Reggae song . Enjoy the music Addicted.
+user: THanks a lot . thats all i need.
+assistant: whether i need to find anything else?
+user: no , thanks for now.
+assistant: have a wonderful day

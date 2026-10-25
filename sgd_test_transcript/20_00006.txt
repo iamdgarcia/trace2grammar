@@ -1,0 +1,33 @@
+user: Find me a hotel please.
+assistant: In what city you want to be?
+user: In LA will be good.
+tool(SearchHotel): ok n_results=10
+assistant: I have for you 10 hotels that fit to your criteria.A 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: You can smoke here?Tell me their address.
+assistant: Smoking is not allowed here.+1 323-852-7000 is their phone number.
+user: Sounds very good.
+assistant: You want to make an reservation for this place?
+user: No, not now.
+assistant: With something else can I help you?
+user: Try to find me a car there please.I would like a Sedan till the 6th an I want to pick it up at 3:30 pm.
+assistant: From March 2nd you want it?
+user: Yes sounds good.
+tool(GetCarsAvailable): ok n_results=4
+assistant: A nice Sedan Hyundai Ioniq is available at LAX International Airport.
+user: Tell me the cost per day.
+assistant: $36.00 is the cost per day.
+user: Something else you have?
+assistant: A nice Sedan Lexus Gs available at Union Station.
+user: Sounds good for me.
+assistant: You want to book the car?
+user: Yes,I would like to rent it.
+assistant: You want to add insurance?
+user: No,I dont't need.
+assistant: You want a Sedan car without insurance from Union Station.Pick up date is March 2nd at 3:30 pm and drop-off date on March 6th.I'm right?
+user: Yes is good.Tell me the cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved for you.$29.00 is the cost per day.
+user: Thank you for your help.
+assistant: Can I help you with anything else?
+user: No.Thank you very much.
+assistant: Have a great day!

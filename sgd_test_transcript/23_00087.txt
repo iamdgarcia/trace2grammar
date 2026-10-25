@@ -1,0 +1,38 @@
+user: I need 1 train ticket, departing from Portland and going to Seattle please.
+assistant: What day are you departing?
+user: I will be leaving the 10th of March.
+tool(FindTrains): ok n_results=9
+assistant: I have located 9 tickets, did you want to leave at 9:10 am for $64?
+user: What other times do you have available?
+assistant: how about a ticket for 10:10 am for $61?
+user: What is the departure station?
+assistant: The train departs from Union Station.
+user: And to what station will the trin arrived to?
+assistant: The train we go to King Street Station.
+user: Great, that sounds like a go.
+assistant: Did you want me to purchased the tickets?
+user: Yes would you please?
+assistant: Sure, did you need travel insurance?
+user: Yes, I will defintely want trip insurance.
+assistant: That will be 1 value train ticket from Portland to Seattle. The train will depart on March 10th at 10:10 am. Does this sound correct to you?
+user: Yes, that is all perfect.
+tool(GetTrainTickets): ok n_results=1
+assistant: Great! your ticket has been successfully
+user: Thank you. Can you look up some interesting events I can attend while in Seattle.
+assistant: Sure, do you like music or theater?
+user: Yes, I love Broadway!
+tool(FindEvents): ok n_results=10
+assistant: I have located 10 events you may enjoy. How about Beatleconcert at 12th Avenue Arts on March 10th at 5 pm?
+user: What else do you have?
+assistant: How about Blood Water Paint. This also will be held at 12th Avenue Arts. This event takes place March 2nd at 6 pm.
+user: That sounds like a plan, can you please send the location to Kyle for me?
+assistant: Sure I can send 12th Avenue Arts to Kyle.
+user: No, actually send it to Virginia instead.
+assistant: Okay, you want me to send 12th Avenue Arts to Virginia?
+user: Yes please and thank you.
+tool(ShareLocation): ok n_results=1
+assistant: I have sent Virginia the location sucessfully.
+user: Thank you for your help with that.
+assistant: Did you need my help with anything else?
+user: No that is all for me. Thank you again. Bye
+assistant: You are welcome, Have a safe trip!

@@ -1,0 +1,15 @@
+user: I'm looking for a salon.
+assistant: In which city?
+user: I'm looking for something in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 options. 17 Jewels Salon is located in Oakland.
+user: Are there any other options in Gilroy?
+tool(FindProvider): ok n_results=4
+assistant: Garlic City Barbers is located in Gilroy.
+user: What's their address and contact number?
+assistant: They're located at 7520 Eigleberry Street and their direct line is 408-763-6990.
+user: Are there any other unisex salons in the area?
+tool(FindProvider): ok n_results=2
+assistant: There are 2 options. Great Clips is a salon in Gilroy.
+user: That one sounds great. That will be all.
+assistant: Have a great day. Goodbye.

@@ -1,0 +1,48 @@
+user: I would like you to find me a therapist, and more specifically I am in need of a Psychologist.
+assistant: Can you tell me the city where I should search for the therapist?
+user: I am interested in a therapist which can be found in Menlo Park.
+tool(FindProvider): ok n_results=4
+assistant: You might consider having Kate Corcoran, which is a Psychologist, and can be found in Menlo Park.
+user: Can you give me the phone number I can use to call the therapist, and also can you tell me the address where the therapist is?
+assistant: The therapist can be found at 845 El Camino Real, and if you want to give the therapist a call you can at 650-308-4240.
+user: That seems fine.
+assistant: Do you want to make a reservation for an appointment with this therapist?
+user: Yes, I want to have an appointment reserved for me with this therapist.
+assistant: Can you tell me the time that would suit you best for having the appointment?
+user: I want to have the appointment at 1:30 pm.
+assistant: Can you also tell me the date you prefer to have the appointment on?
+user: Is it possible for you to make the reservation for the appointment on March 7th?
+assistant: Can you please confirm that you want to make a reservation for an appointment with Kate Corcoran at 1:30 pm on March 7th?
+user: Yes, that suits me well.
+tool(BookAppointment): ok n_results=0
+assistant: I apologize but there has been an error, and I was unable to make the reservation you asked for. Is there something else I can help you with?
+user: Would it be possible for you to try make the reservation again, and this time try to book it for next Friday.
+assistant: Can you please confirm that you want to book an appointment with Kate Corcoran for March 8th at 1:30 pm?
+user: Yes, that is what I want.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been made, and an email which you will receive should confirm that.
+user: I just recalled that I have a payment to request.
+assistant: Can you tell me the name of the contact you are going to request the payment from, and the amount of the transfer?
+user: The transaction will be made with Amelia, and the amount of the transfer is for 30 bucks.
+assistant: Can you please confirm that you want to make a public transaction for the amount of $30 with the person named Amelia.
+user: That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request for payment has been done.
+user: I appreciate it. Now I also want to find a restaurant where I can eat something on that day, and more specifically I am interested in an affordable priced restaurant.
+assistant: Is there some specific kind of food you are interested in?
+user: I would like a restaurant which serves Pizza.
+tool(FindRestaurants): ok n_results=5
+assistant: There are 5 restaurants for you to consider. One of the restaurants is Angelo Mio which is a good restaurant that can be found in Menlo Park.
+user: Can you tell me if this restaurant has vegetarian options, and could you also tell me the phone number I can use to call the restaurant?
+assistant: If you want to give them a call you can at 650-323-3665, though unfortunately they do not have vegetarian options.
+user: Okay, that is fine anyway. I would like to have a table booked for me at the restaurant.
+assistant: Can you tell me the time that suits you best for the booking?
+user: I would like to have the reservation be made for quarter to 11 in the morning.
+assistant: Can you please confirm that you want to book a table for 2 people at the Angelo Mio restaurant in Menlo Park for March 8th at 10:45 am.
+user: Yes, that is what I want.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made.
+user: I appreciate it a lot.
+assistant: Is there something else I can do to help you?
+user: Nothing. I am grateful.
+assistant: Have a good time!

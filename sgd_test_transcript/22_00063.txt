@@ -1,0 +1,43 @@
+user: I am looking for a Psychiatrist in Santa Rosa.
+tool(FindProvider): ok n_results=6
+assistant: Beck Jennifer p is a very good Psychiatrist located in Santa Rosa.
+user: Sounds nice. I want to book an appointment with them.
+assistant: What should I put as the date for the appointment?
+user: I would like to book the appointment for 4th of March if it is possible.
+assistant: What should I put as the time for the appointment?
+user: I would like to book the appointment at half past 4 in the evening if it is possible.
+assistant: Please confirm: You want me to book an appointment with Beck Jennifer P at 4:30 pm on March 4th.
+user: Yes, That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment and you will shortly get a confirmation mail.
+user: Find me their contact number.
+assistant: The phone number is 707-566-4600.
+user: Thank you so much!
+assistant: Can I assist you with anything else?
+user: Yes, Please make a request for a payment of $86 in private.
+assistant: Please tell me the name of the contact you want me to make the request.
+user: The name of the contact is Svetlana.
+assistant: Please confirm: You want me to make a request for $86 from Svetlana in private.
+user: Yes, That is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made the request for the payment.
+user: Please find me a restaurant for meal on that day.
+assistant: What type of food do you prefer?
+user: I am looking for a restaurant which serves American.
+tool(FindRestaurants): ok n_results=9
+assistant: How about a nice restaurant called Belly Left Coast Kitchen & Taproom located in Santa Rosa?
+user: Okay, That sounds nice to me. Please book me a table at the restaurant.
+assistant: What time do you want me to reserve the table?
+user: I would like to make the reservation at 11:30.
+assistant: Please confirm: You want me to book a table for 2 people at Belly Left Coast Kitchen & Taproom located in Santa Rosa for 11:30 am on March 4th.
+user: No, Please make the reservation for four people.
+assistant: Please confirm: You want me to book a table at Belly Left Coast Kitchen & Taproom for 4 people.
+user: No, Please change the time to quarter past 1 in the afternoon and number of people to three.
+assistant: Please confirm again: You want me to book a table at Belly Left Coast Kitchen & Taproom for 3 people at 1:15 pm.
+user: Yes, That is correct. can you check whether they serve vegetarian?
+tool(ReserveRestaurant): ok n_results=1
+assistant: No, They don't serve vegetarian. Sorry Your booking was not successful due to some reasons. DO you want me to try again booking a table at Belly Left Coast Kitchen & Taproom for 3 people on March 4th at 1 pm.
+user: No, don't do that.
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Thank you!

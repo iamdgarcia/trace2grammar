@@ -1,0 +1,38 @@
+user: Can you find me a Psychologist?
+assistant: Sure. In what city?
+user: Search in Santa Rosa.
+tool(FindProvider): ok n_results=10
+assistant: How about Bert Epstein? He is a Psychologist in Santa Rosa.
+user: Any other therapists? I need a Family Counselor.
+tool(FindProvider): ok n_results=8
+assistant: I found 8 therapists for you. How about Auer Patience? They are a Family Counselor located in Santa Rosa.
+user: Can you give me the phone number and address?
+assistant: You can contact them at 707-526-7604. They are located at 2455 Bennett Valley Road.
+user: Did you find any other therapists?
+assistant: How about Ayne Shore? They are a Family Counselor located in Santa Rosa.
+user: Sounds good. Can you book me an appointment for March 12th?
+assistant: What is your preferred time?
+user: Try for half past 5 in the evening?
+assistant: Confirming that you want an appointment with Ayne Shore on March 12th at 5:30 pm?
+user: Nope. Make it for the 8th at evening 4:30.
+assistant: Confirming that you want an appointment for March 8th at 4:30 pm?
+user: Yes, that works.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked. You should receive a email confirmation soon.
+user: What's their address?
+assistant: They are located at 534 B Street.
+user: What's their phone number?
+assistant: You can contact them at 707-696-6978.
+user: Thanks, I really appreciate your help. Can you book me a cab to the appointment?
+assistant: Do you have a ride preference? How many seats do you need?
+user: Book me the Cheapest ride for 1.
+assistant: Confirming that you want to book a Pool ride for 1 to 534 B Street?
+user: No, I'm in a group of 2.
+assistant: Confirming that you need 2 seats in a Pool cab ride.
+user: Yes. How much will this cost?
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked an on its way. It will cost you $13.70.
+user: Thanks a lot.
+assistant: Do you need anything else?
+user: No, thanks a lot.
+assistant: You're welcome. Have a wonderful day!

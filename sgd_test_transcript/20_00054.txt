@@ -1,0 +1,29 @@
+user: I need a rental next Monday, I will be in SD.
+assistant: How long will you be needing it?
+user: I was planning on using it until the 5th of March.
+assistant: When during the day can you go get the car?
+user: I was hoping I could get one at 3:30 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have a list of 10 here there will be a SUV Citroen C5 you could use then at the SAN International Airport.
+user: What would that run me?
+assistant: It rents for $43.00 a day.
+user: That works. Next I need a house with laundry service available there what have you got?
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 ideas ready for you, how about one rated 4.6, it is at 1003 Coast Boulevard, La Jolla, California 92037, United States?
+user: Do they list a phone number and can I get it from you?
+assistant: That would be +1 858-224-7600.
+user: Tell me about another one.
+assistant: This one is rated 4.5 and is at 10044 Pacific Mesa Boulevard.
+user: That one sounds better.
+assistant: Should I book it?
+user: Not yet, but I am ready to get that car we discussed okay?
+assistant: Do you need the added insurance?
+user: No, I have my own.
+assistant: Let me run this by you - you want to pick up the SUV on March 4th at 3:30 pm at the SAN International Airport and you will return it March 5th, is this correct?
+user: Yes, that's perfect.
+tool(ReserveCar): ok n_results=1
+assistant: The car is taken care of.
+user: I appreciate it.
+assistant: Can I be of further asssistance?
+user: No that will be all thank you.
+assistant: Have a very nice day.

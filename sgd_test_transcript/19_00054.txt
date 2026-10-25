@@ -1,0 +1,24 @@
+user: I'm looking for a rental car in San Diego.
+assistant: What date do you want to pick up the car? What time would you like to pick it up?
+user: I want to pick it up on Wednesday next week at half past 12 in the afternoon.
+assistant: How long do you need the car?
+user: I need it until the 12th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I found 8 available cars. There is a Sedan Hyundai Ioniq at Santa Fe Depot.
+user: Sounds great. Are there any buses going there form LA?
+assistant: When are you leaving?
+user: I am leaving on Tuesday next week.
+tool(FindBus): ok n_results=10
+assistant: I found 10 available buses. There is a bus departing at 6:50 am for $24.
+user: What station does it depart from?
+assistant: It departs from the North Hollywood Station.
+user: Can you find me another bus? It's for one person.
+tool(FindBus): ok n_results=9
+assistant: I found 9 available buses. There is a bus departing at 8:10 am for $25.
+user: Great. I'm looking for a one-way flight there.
+assistant: Are you leaving on March 5th, March 6th, or a different day?
+user: I'm leaving on the 2nd of this month.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 available flights. Alaska Airlines has a flight that leaves at 10:05 am for $65.
+user: Okay great. That's all.
+assistant: Have a great day!

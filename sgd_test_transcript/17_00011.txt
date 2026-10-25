@@ -1,0 +1,24 @@
+user: I'd like to find a salon.
+assistant: What city should I check?
+user: Find a salon in Mill Valley.
+tool(FindProvider): ok n_results=7
+assistant: Ap Luxe Salon is a nice Mill Valley salon.
+user: Sounds good. Would you share the location, 40 Millwood Street, with Abigail?
+assistant: Please confirm that you want to share the location 40 Millwood Street with Abigail.
+user: Okay.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks. That's a great help. Would you display my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There's an alarm for 7:30 am called Get up.
+user: That sounds great.
+assistant: Would you like to add an alarm?
+user: Yes, let's do that.
+assistant: What time shall I set the new alarm for?
+user: Make it for quarter to 5 in the evening.
+assistant: Could you confirm that you want to create an alarm for 4:45 pm called New alarm?
+user: Yep.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm was successfully added.
+user: Thanks a bunch. That's it.
+assistant: You're welcome, thanks!

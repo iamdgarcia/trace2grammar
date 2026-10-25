@@ -1,0 +1,27 @@
+user: Could you tell me what the weather will be on March 9th?
+assistant: And what location are you interested in?
+user: For Seattle, Wa
+tool(GetWeather): ok n_results=1
+assistant: The average for today is 64 degrees Fahrenheit, with a 14 percent chance of rain.
+user: Will it be windy?
+assistant: The wind should be about 5 miles per hour.
+user: Will it be humid?
+assistant: Expect it to be 13 percent.
+user: Great, how about some attractions?
+tool(FindAttractions): ok n_results=10
+assistant: How about Alki Beach Park. That's a Park.
+user: Do they charge for admission? Would be good for kids?
+assistant: It's great for kids and there is a charge.
+user: Anything else ?
+assistant: Take a look at Bill Speidel's Underground Tour. It's a Tourist Attraction.
+user: Please order a cab to take me there.
+assistant: Do you want that to be Luxury or Regular or another type. For how many people.
+user: Get me an Expensive ride. There's just me. So order one.
+assistant: To confirm: You need 1 Luxury seat on Bill Speidel's Underground Tour.
+user: Great. How much will they charge. How long before it gets here?
+tool(GetRide): ok n_results=1
+assistant: That's booked for 11 minutes from now and will cost $34.79.
+user: Thanks, I appreciate that.
+assistant: Will there be anythin else?
+user: No, that's great. Thanks
+assistant: Take care now.

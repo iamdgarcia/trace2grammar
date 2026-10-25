@@ -1,0 +1,23 @@
+user: i have a plan to travel , please check the weather in Antioch on next wednesday.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 72 degrees fahrenheit. there is a 7 percent chance of rain.
+user: ok thats good. i need to schedule a visit to the property on that day. Will you fix a schedule to the property RIverwood Grove?
+assistant: please check and review the following details. A visit is scheduled to Riverwood Grove and you need to visit the property on March 6th.
+user: No, i want to visit the property to Cypress Point Villas.
+assistant: Ok please check and review the following details. A visit is scheduled to Cypress Point Villas and you need to visit the property on March 6th.
+user: ok that's sound good to me
+tool(ScheduleVisit): ok n_results=1
+assistant: Visit to the property is scheduled successfully.
+user: i want to reserve a car to go over there.
+assistant: Do you want the car on March 6th? From which place the car is need to pick up?
+user: I need it from the 3rd. I need the car at John F. Kennedy Airport to pick me .
+assistant: Whether you want to add insurance? Which type of car you like the most, SUV or Sedan or anything else? At what time you want to pick up the car?
+user: i donot need insurance. I need to pick it up at 4:30 pm. i need a Hatchback car.
+assistant: Till what day you need the car?
+user: i need it till next wednesday.
+assistant: Please check and confirm the following details. Car is needed from JFK International Airport. Pickup date is March 3rd. The time of the pickup is 4:30 pm. the drop-off date is March 6th. it is a Hatchback car and does not have insurance.
+user: ok that sounds good to me.
+tool(ReserveCar): ok n_results=1
+assistant: Car reservation is done successfully.
+user: thanks for your immense help. that's all i need
+assistant: have a wonderful day.

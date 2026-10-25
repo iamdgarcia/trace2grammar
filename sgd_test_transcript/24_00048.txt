@@ -1,0 +1,31 @@
+user: Can you please help me find a one way flight.
+assistant: I can help, but first I'll need a bit of information. Where are you planning on going, which city would you like to depart from, and on what date would you like to travel?
+user: I would like to fly from SFO to San Diego on March 1st. I think that's everything you asked for.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I've found 4 flights that match your criteria. Would a flight with American Airlines that takes off at 10:05 pm and costs $110 work?
+user: Possibly. How many people is this flight for, and when does it arrive at its destination?
+assistant: The onward flight will arrive at its destination at 11:45 pm and the trip is for 1 traveller.
+user: That sounds fine, but let me check out the trains there.
+assistant: Would you still like to start travelling on March 1st?
+user: Yes. Find me tickets for the 13th of this month.
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains that could work for you. How about a train that departs at 6:40 am and costs $88 in total?
+user: That sounds fine to me.
+assistant: Would you like to purchase tickets?
+user: Yes, I would.
+assistant: Would you also like to buy travel insurance?
+user: Yes I would.
+assistant: How many tickets would you like to purchase?
+user: Just the 1.
+assistant: Please confirm the following details: You would like 1 value ticket for a train from San Diego to San Francisco. The train leaves on March 13th at 6:40 am.
+user: No, I do not confirm. Get me economy premium tickets instead.
+assistant: You would like a flexible ticket and trip insurance. Is that correct?
+user: No. Make it a business ticket instead.
+assistant: You would like a business ticket for the train that leaves on March 13th. Is that correct?
+user: Yes that is correct. Can you tell me which station the train leave from and which it will arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets were purchased without issue. The train will depart from Santa Fe Depot and arrive at Salesforce Transit Center.
+user: Great. You've been most help, I appreciate it.
+assistant: I'm always glad to help. Will that be all?
+user: Yes that will be all for now, thank you.
+assistant: You are welcome. See you again.

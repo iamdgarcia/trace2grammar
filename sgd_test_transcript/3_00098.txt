@@ -1,0 +1,11 @@
+user: I want to find a rental car please
+assistant: Sure thing, when do you want to rent it and until when? Also any specific city?
+user: I need it from the 7th of March till the 9th of March in Sacramento
+assistant: What time do you want to get it?
+user: I'm free at around 2 o"clock in the afternoon
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a great sedan Buick Regal Sportback available at Sacramento Valley Station that might work for you
+user: That sound perfect for me
+assistant: Should I book that car then?
+user: Not yet, I'll let you know but that's it for now
+assistant: OK, let me know, take care!

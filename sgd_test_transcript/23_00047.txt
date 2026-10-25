@@ -1,0 +1,26 @@
+user: Can you please send Peter a payment from my checking account?
+assistant: I'd be happy to help. How much would you like to send?
+user: I need to send him $111.
+assistant: Let me make sure I have the details correct. You'd like to send Peter $111 from your debit card in a public transaction.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your transaction has been successful.
+user: I'd like to find a train now.
+assistant: Where are you leaving from and where are you traveling to? When will you want to begin your travels?
+user: I will be traveling to New York from Washington next Wednesday.
+tool(FindTrains): ok n_results=9
+assistant: The first train departs at 6:20 am and the ticket price is $62.
+user: That works for me.
+assistant: Is there anything else I can do for you?
+user: Yes, I'd like to know the weather forecast for New York on the 12th of this month.
+tool(GetWeather): ok n_results=1
+assistant: It is predicted to be 70 degrees Fahrenheit with only a 4 percent chance of rain.
+user: That sounds good. Can you purchase the train ticket now?
+assistant: Of course. How many are in your party and would you like to purchase travel insurance?
+user: I only need one ticket but I would like insurance.
+assistant: You'd like 1 ticket from Washington to New York at 6:20 am on March 6th. It will be a value ticket with trip insurance. Is this correct?
+user: That is correct. Can you tell me the stations of origin and destination?
+tool(GetTrainTickets): ok n_results=1
+assistant: Yes, the train leaves Union Station and will arrive at Grand Central Station. Your ticket has been successfully purchased and you will receive an email confirmation shortly.
+user: That sounds great. Thank you for all of your help.
+assistant: You're very welcome. Enjoy the trip!

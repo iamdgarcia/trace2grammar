@@ -1,0 +1,20 @@
+user: Would you help me to search a train which going to Phoenix from Anaheim and i want 1 ticket.
+assistant: On which date you want to travel?
+user: Search luxurious ticket for march 12th.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains of your choice which departs at 6:30 am and the ticket cost is $164.
+user: Can i know the leaving station?
+assistant: Anaheim Intermodal Center is the leaving station.
+user: Can i know the arrival station?
+assistant: Phoenix Union Station is the arrival station.
+user: This is cool. I like to book the tickets.
+assistant: Do you need travel insurance?
+user: Yes, I need travel insurance.
+assistant: please give confirmation details: You need a train ticket leaving from Anaheim to Phoenix for march 12th at 6:30 am and ticket is for 1 people with trip insurance and business class ticket.
+user: This is perfect for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Train ticket is booked successfully.
+user: Thanks for your great help.
+assistant: Any other help you want?
+user: No, not now..thanks a lot
+assistant: Bye for now..see you soon..

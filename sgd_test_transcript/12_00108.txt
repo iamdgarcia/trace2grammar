@@ -1,0 +1,23 @@
+user: Find me something interesting to do before I start getting angry.
+assistant: In which city would you like me to find an event? Also is there a particular type of event you are interested in, such as Music or Theater?
+user: I would like to see a play in Seattle, WA. Is that so hard to understand?
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events which I think you might like. The Beatleconcert is a very popular event that is taking place at 12th Avenue Arts on March 10th at 5 pm.
+user: Wow, you actually did something for once. That sounds like something I would like to see.
+assistant: Would you like to purchase tickets to this event?
+user: Not right now, but I just remembered that I nee to request a payment.
+assistant: What is the amount of the payment?
+user: It will be for $153.
+assistant: What is the name of the contact?
+user: The name of the contact is Amelia.
+assistant: You would like to transfer $153 with Amelia through a public transaction. Is that correct?
+user: Yes that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been made without issue.
+user: Buy me 1 ticket to that event you found me from earlier.
+assistant: You would like 1 ticket to Beatleconcert on March 10th in Seattle. Is that correct?
+user: Yea baby you know it is. Can you tell me how much the ticket costs and where the venue is located?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket has been purchased. It cost $50 and the venue is located at 1620 12th Avenue.
+user: Great, thank you for your help. That will be all. You really won me over with your assistance.
+assistant: I'm always glad to be of assistance and I'm happy to hear you are satisfied. Enjoy the rest of you day.

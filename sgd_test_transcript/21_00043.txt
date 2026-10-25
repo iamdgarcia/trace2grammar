@@ -1,0 +1,21 @@
+user: I'm trying to find a song to listen to, preferably a pop song. I'm a big Taylor Swift fan.
+tool(LookupMusic): ok n_results=4
+assistant: I have 4 songs you might like. Would you be interested in hearing the Taylor Swift song Long Live from the Speak Now album?
+user: I sure would, thanks.
+assistant: How else may I help you today?
+user: Could you give me the Santa Rosa weather forecast for the 7th?
+tool(GetWeather): ok n_results=1
+assistant: Yes, it will be 76 degrees Fahrenheit that day and the chance of rain will be 12 percent.
+user: How about the wind conditions and humidity?
+assistant: The wind speed is expected to be 10 miles per hour with a humidity level of about 15 percent.
+user: Thanks! Would you please play the song we just talked about?
+assistant: Confirming playback of the song Long Live on the living room speaker.
+user: Sorry, no, my kitchen speaker please.
+assistant: Confirming playback of Long Live on the speaker in the kitchen.
+user: Yes, thanks. Could you tell me, is that song from six years back?
+tool(PlayMedia): ok n_results=1
+assistant: It is a 2010 song. Enjoy!
+user: Thank you so much for all your help.
+assistant: It's my pleasure. Anything else today?
+user: No, I'm all set, thanks.
+assistant: Thank you very much.

@@ -1,0 +1,22 @@
+user: Hi, are there any salons in Foster City?
+tool(FindProvider): ok n_results=2
+assistant: Yes, there are 2 salons in Foster City. How about Barberia Salon?
+user: Sounds great!
+assistant: Would you like me to make a reservation there?
+user: Perhaps at a later time.
+assistant: Could I help you with something else then?
+user: May I know the weather there on the 10th then?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 72 degrees Fahrenheit with a 5 percent chance of rain.
+user: I see, could you get me an appointment there at 2:30 in the afternoon please?
+assistant: Please confirm your appointment at Barberia Salon at 2:30 pm on March 10th.
+user: Sounds great! Where are they located at?
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, your appointment cannot be made. Could I further assist you?
+user: Could you try booking it again at eleven in the morning instead?
+assistant: Please confirm your appointment at Barberia Salon at 11 am on March 10th.
+user: Sounds great to me!
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made.
+user: Thank you so much for your kind assistance, that is all I need.
+assistant: Have a great day ahead!

@@ -1,0 +1,32 @@
+user: I would like something fun to do.
+assistant: Do you prefer music, theater or something else? And in which city.
+user: I like musical performance and would like it is Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 options. How about Anthony Green at the Foundry at 6 pm on March 10th.
+user: That is great.
+assistant: Would you like tickets.
+user: Not right now. I also need a house.
+tool(SearchHouse): ok n_results=10
+assistant: A house with a rating of 4.5 is located at 1 Logan Square.
+user: Does it have laundry service and can I have the phone number.
+assistant: Laundry is available. The number is +1 215-963-1500.
+user: Are there other options?
+assistant: There is a house at 100 North Christopher Columbus Boulevard with a rating of 4.1.
+user: Any other choices.
+assistant: There is a 4.5 rated home at 1001 Intrepid Avenue.
+user: Love the house. Are there buses available?
+assistant: Where are you departing and is the date March 10th.
+user: I will be leaving from Washington on the 2nd of March.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses. One leaves at 8:30 am for $32.
+user: I would like 4 tickets for the event.
+assistant: Confirming 4 tickets on March 10th in Philadelphia to see Anthony Green.
+user: Actually, three tickets please.
+assistant: Booking 3 tickets for Anthony Green.
+user: That is good.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed.
+user: How much is one ticket.
+assistant: It is $60.
+user: Great, I am good.
+assistant: Have a nice day.

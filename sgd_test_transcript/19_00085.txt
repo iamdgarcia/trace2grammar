@@ -1,0 +1,31 @@
+user: I don't want to use my car at the moment can you find me a rental car please?
+assistant: Where do you need to collect the car and when would you like to start the rental?
+user: Can you find me something in LAX available from the 6th of this month.
+assistant: What time would you like to collect the car?
+user: 13:30 would be perfect thanks.
+assistant: How long will you need the car for?
+user: Until next Thursday.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found an SUV Dacia Duster at LAX International Airport that you might like.
+user: I like the sound of that. Now I want to book tickets to an event while I'm there.
+assistant: What city would you like to go to an event in? How many people will be attending and what kind of events are you interested in?
+user: Please can you find me something in London UK because that's my favourite city. I'll only need one ticket but I've heard that Toddler Drama Classes are great!
+assistant: When would you like to attend this event?
+user: On the 14th of March.
+assistant: So just to confirm, you would like 1 ticket to Toddler Drama Classes in London on March 14th?
+user: Actually I've just been speaking to a friend and they have recommended the Lion King.
+assistant: Okay so that's the Lion King in London?
+user: Yes that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have booked the ticket for you.
+user: What is the name of the venue?
+assistant: The event is happening at Christopher's.
+user: Thanks for your help. Now can you go ahead and book the rental car for me.
+assistant: Would you like insurance with the rental?
+user: No I'm good thanks.
+assistant: Okay so before booking I'd just like to check that you need an SUV at LAX International Airport on March 6th at 1:30 pm and you will be returning the car on March 7th.
+user: Yes that is all correct thanks. Can you tell me the cost of the rental per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked successfully. The daily cost for rental is $37.00.
+user: Thanks for your help, I don't need anything else right now?
+assistant: Enjoy your day!

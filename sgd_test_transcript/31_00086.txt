@@ -1,0 +1,33 @@
+user: Look for a unisex salon in the Concord area.
+tool(FindProvider): ok n_results=6
+assistant: There are 6 salons in the area. You may want to visit Breds Barbershop which is a pretty good salon in Concord.
+user: Get me their address and phone number.
+assistant: You can call them at 925-446-4144 and you will find them at 4330 Clayton Road suite j.
+user: That is cool.
+assistant: Can I get you an appointment there?
+user: Sure make an appointment at the salon for quarter to 4 in the afternoon on the 13th.
+assistant: So you verify that you want an appointment at Breds Barbershop salon at 3:45 pm on March 13th?
+user: Sure that is all correct.
+tool(BookAppointment): ok n_results=1
+assistant: I couldn't make the appointment unfortunately. Shall I get you an appointmet for March 13th at 4 pm at the Breds Barbershop salon instead?
+user: Yeah that will work for me.
+tool(BookAppointment): ok n_results=1
+assistant: I have your appointment confirmed.
+user: Now I want to eat somewhere nice, so look for a restaurant there.
+assistant: Is there any preference of the type of food?
+user: Can you find a place serving Nicaraguan food?
+tool(FindRestaurants): ok n_results=1
+assistant: You can try the La Fritanguera in Concord which is a rather nice restaurant.
+user: Get me their phone number and is that restaurant cheap?
+assistant: The restaurant is moderate and you can ring them at 925-446-6141.
+user: Yeah can you go back to booking a table at the restaurant?
+assistant: What time are you making the reservation for?
+user: I want it booked for 12:30 pm.
+assistant: So you confirm that you want a table for 2 at La Fritanguera in Concord at 12:30 pm on March 13th?
+user: Yeah that will do.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have your reservation made successfully.
+user: Thanks very much.
+assistant: Shall I do anything else for you?
+user: Nope. That was great help thanks.
+assistant: Have a fantastic day ahead!

@@ -1,0 +1,15 @@
+user: I want to find some nice songs. Can you find the one which is from one years ago?
+tool(LookupMusic): ok n_results=10
+assistant: yes, I got 10 songs. Do you like the song African Beauty by Diamond Platnumz from the album A Boy From Tandale?
+user: Let me decide, before I need to know the type of this song.
+assistant: It is Pop type song and hope you like it.
+user: Yes, I like the same. And search also a movie online especially in Documentary type to watch now.
+tool(FindMovies): ok n_results=1
+assistant: What about the 1 in the name Fiddler: A Miracle of Miracles. Do you like to watch this movie now?
+user: Fiddler: A Miracle of Miracles is the best movie and I like the same. But now I want to listen to the song that I have selected before. Please play it on the living room.
+assistant: Okay. I need your confirmation to play the song African Beauty in Living Room.
+user: That is correct. Please go ahead.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music and the same was started now.
+user: Thanks and that's all for now.
+assistant: Have a great day.

@@ -1,0 +1,21 @@
+user: Can you get me a taxi to take me to my destination?
+assistant: What is your destination and how many do you need seats for in the taxi? Also, are you looking for a particular type of ride?
+user: My destination is Franchino and I need seats for two people, in an Expensive taxi if possible.
+assistant: So that's a Luxury taxi for 2, going to Franchino, right?
+user: Actually, make that a taxi for 1 person.
+assistant: So you would like a taxi with space for 1 person, and going to Franchino, right?
+user: Sure, that's perfect.
+tool(GetRide): ok n_results=1
+assistant: Your taxi is confirmed and your driver is on the way.
+user: Great. Now can you help me find some cool Dubstep songs?
+tool(LookupMusic): ok n_results=3
+assistant: There's Alive by Krewella from their Get Wet album.
+user: Perfect, I want that one.
+assistant: Shall I start play this track?
+user: Yes please. I would like to listen to this song on any device.
+assistant: To confirm, you want to hear Alive in the Living Room, right?
+user: Perfect, that works.
+tool(PlayMedia): ok n_results=1
+assistant: Happy listening to your tune.
+user: Great, thanks. That's everything for me right now.
+assistant: Enjoy your day!

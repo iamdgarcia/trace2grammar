@@ -1,0 +1,14 @@
+user: I'm looking for a one-way flight for 2 to LA.
+assistant: For what date?
+user: For the 13th of this month.
+assistant: Where are you leaving from?
+user: I'm leaving from NY.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 possible flights. There's on with American Airlines for $199 that leaves at 1:40 pm.
+user: Is it economy or business class? What time does it get to LA?
+assistant: It's economy and arrives at 4:50 pm.
+user: On second thought I want four tickets for the day after tomorrow.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Delta Airlines has one leaving at 7:50 am for $178.
+user: That sounds good. That's all I need for now.
+assistant: Have a wonderful day.

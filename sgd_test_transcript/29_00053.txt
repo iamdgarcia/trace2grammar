@@ -1,0 +1,24 @@
+user: I'm searching for discover a 3 -star hotel.
+assistant: What metropolis ought I search for hotels in?
+user: I'm searching for hotels within New York.
+tool(SearchHotel): ok n_results=10
+assistant: I discovered 10 hotels suitable for your tastes. There is a 3 star hotel called 11 Howard.
+user: That's lovely. I want to search for a round trip flight to arrive there.
+assistant: Will you depart on March 5th?
+user: I'd like to begin my trip on the 4th of March and come back on the 9th of this month.
+assistant: What metropolis would you like to leave from?
+user: Search for flights coming from Atlanta, GA.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Do you wish to fly with American Airlines? The departure flight is on 10:30 pm and is direct one, while the returning flight leaves at 9:45 am. The ticket price is $211.
+user: What time does the flight come to my destination?
+assistant: The onward flight comes at 0:52 am.
+user: That's fine. I'd like to book the hotel you discovered, and I require 2 rooms for 3 days. I intend to check in on the 6th of March.
+assistant: Please verify the following information: you'd like to look for 2 rooms in the hotel 11 Howard, located in New York, to check in on March 6th for 3 days.
+user: Yeah, that's fine. Does the hotel permit smoking? What is their contact number?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel reservation is complete, and the hotel does allow smoking. Their contact number is +1 212-235-1111.
+user: Thank you for your assistance. Could you tell me about attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: You ought to see the 9/11 Tribute Museum, which is a museum.
+user: Alright, wonderful. That is all; see ya.
+assistant: Have a pleasant afternoon!

@@ -1,0 +1,16 @@
+user: Find for me please a house to stay.
+assistant: On which city you plan to stay?
+user: To NY I travel.
+tool(SearchHouse): ok n_results=10
+assistant: I have for you 10 house according to your requirements.First is a nice house with rating 4.4 located at 100 Greenwich Street.
+user: This house sounds very good.
+assistant: You want to make a reservation?
+user: Yes,I want to book.
+assistant: Tell me the date for checking in and checking out.You want to be for how many people.
+user: Is for 1 people with check in on 10th of March and check out on March 11th.
+assistant: Location is New York for 1 people and check in date is March 10th.Check out will be on March 11th.I'm right?
+user: Yes, perfect.Tell me the total price and contact number.
+tool(BookHouse): ok n_results=1
+assistant: The reservation was made.Total cost is $171 and phone number is +1 212-513-0003
+user: Thank you.That's what I wanted.
+assistant: Happy to help!Bye

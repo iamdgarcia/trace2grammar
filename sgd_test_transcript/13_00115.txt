@@ -1,0 +1,17 @@
+user: I wanna watch a film.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 you might like. How does In Fabric sound? It has a 96 out of 100 rating.
+user: What kind of movie is it? Who's in it?
+assistant: It's a horror film starring Hayley Squires.
+user: Anything else?
+assistant: there's also Where'd You Go, Bernadette, which has a 46 out of 100 rating.
+user: are there any others with Ian Hughes in it?
+tool(FindMovies): ok n_results=1
+assistant: i found 1 you might like. There's The Lord of the Rings: The Return of the King. that one has a 93 out of 100 rating.
+user: That works. can you find me something cool to do on the 10th of march that has something to do with songs.
+assistant: where should i look?
+user: look around Seattle, WA.
+tool(FindEvents): ok n_results=1
+assistant: Cody Johnson is playing at the Flamingo Lot at 4:30 pm on March 10th.
+user: That works for me. thanks that's everything.
+assistant: have a good day.

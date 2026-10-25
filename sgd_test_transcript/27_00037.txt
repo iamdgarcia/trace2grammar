@@ -1,0 +1,33 @@
+user: Would you find me attractions to visit?
+assistant: Where should I look for attractions?
+user: Find SF attractions.
+tool(FindAttractions): ok n_results=10
+assistant: HOw about Alcatraz? It's a Historical Landmark.
+user: Could you tell me the phone number?
+assistant: The phone number is 415-561-4900.
+user: Okay, do you have anything else? I want something child-friendly.
+tool(FindAttractions): ok n_results=10
+assistant: How about Aquarium of the Bay? It's a Nature Preserve.
+user: Okay. I'd like to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: What about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Find me some other movies.
+assistant: How about Give Me Liberty, Hobbs and Shaw or Hustlers?
+user: Give Me Liberty sounds perfect.
+assistant: Do you want to purchase tickets?
+user: Not at the moment. Do you have some good movies online?
+assistant: What sort of movies would you like?
+user: Play movies sound perfect.
+tool(FindMovies): ok n_results=10
+assistant: What about A Faithful Man, After The Wedding or Blinded By the Light?
+user: Blinded By the Light sounds perfect.
+assistant: Would you like to play the movie?
+user: Yes, I would like to play the movie with Hindi subtitles.
+assistant: Could you confirm that you want me to play Blinded by the Light in Hindi?
+user: That's right.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started playing.
+user: Who was an actor in it?
+assistant: Viveik Kalra was an actor in it.
+user: Thanks. That is what I needed.
+assistant: Have a great day.

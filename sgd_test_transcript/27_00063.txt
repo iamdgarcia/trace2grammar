@@ -1,0 +1,22 @@
+user: I need some recommendations for attractions?
+assistant: Where would you like them to be located?
+user: Oh, sorry, they should be in SF.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might enjoy. There's Alcatraz which is an interesting Historical Landmark.
+user: Cool. I'd also like to go to a movie when I'm there.
+tool(FindMovies): ok n_results=10
+assistant: Would Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles interest you?
+user: Fiddler seems really interesting.
+assistant: Do you want me to purchase tickets?
+user: No, not right now. How about movies online. Something that's action and stars Stephanie Vogt would hit the spot.
+tool(FindMovies): ok n_results=1
+assistant: What do you think of Hobbs and Shaw?
+user: I would be down for some Hobbs and Shaw.
+assistant: Would you like to watch the movie now?
+user: Yes, please. And subtitles don't matter.
+assistant: I'll play Hobbs and Shaw with English subtitles, is that okay?
+user: Yes, please play it.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is now starting.
+user: Thanks, I don't need anything else.
+assistant: Enjoy the movie and have a great day.

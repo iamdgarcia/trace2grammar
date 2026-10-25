@@ -1,0 +1,18 @@
+user: I'm looking for a hotel.
+assistant: What area are you looking for a hotel?
+user: I want a hotel in Cape Town.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you. How about the 5 star 12 Apostles Hotel & Spa?
+user: What is the phone number and address?
+assistant: The phone number is +27 21 437 9000 and the address is Victoria Street, Camps Bay.
+user: Okay, that sounds good.
+assistant: Do you want to make a reservation?
+user: Yes, I'd like a reservation for six days, checking in on March 7th.
+assistant: Okay, I have a reservation checking in on March 7th for 1 room at the 12 Apostles Hotel & Spa in Cape Town for 6 days, right?
+user: Yes, that is correct. Does the hotel allow smoking in the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully confirmed the reservation. Smoking is not allowed on property.
+user: Thank you
+assistant: Is there anything else I can help with?
+user: No, thank you.
+assistant: Have a great day.

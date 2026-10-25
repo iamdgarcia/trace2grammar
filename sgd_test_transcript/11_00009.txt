@@ -1,0 +1,21 @@
+user: I like to search a house to stay.
+assistant: Is there any choice of city to stay in?
+user: I am going to Atlanta, GA
+tool(SearchHouse): ok n_results=10
+assistant: I have short listed 10 houses of your choice and one one good house is located at 101 Andrew Young International Boulevard Northwest with 4.3 rating.
+user: Can you search some other houses with rating 4.5 or higher and i want laundry service.
+tool(SearchHouse): ok n_results=5
+assistant: I found one beautiful house located at 1065 Peachtree Street Northeast with 4.5 rating.
+user: Can you tell me the telephone number?
+assistant: +1 404-745-5000 is the telephone number.
+user: This is cool. I want to book this house.
+assistant: On which day you want to check in and what is your check out date? For how many people you want to book?
+user: I decided to check in on 10th of march and check out is 12th of this month and book the house for 1 people.
+assistant: please give confirmation details: Your place is Atlanta with check in date march 10th and check out date is march 12th. The house is for 1 people.
+user: Okay..this is fine.
+tool(BookHouse): ok n_results=1
+assistant: Your booking is successfully done.
+user: Thanks a lot.
+assistant: Do you need any other help?
+user: No, thank you very much.
+assistant: It's my honor to help you.

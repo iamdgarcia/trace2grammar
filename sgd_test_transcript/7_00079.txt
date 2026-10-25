@@ -1,0 +1,13 @@
+user: I want to watch a movie and I need your help to purchase the tickets for the movie.
+assistant: I which City, you want to find the movie tickets?
+user: I need to buy it in Pittsburg.
+assistant: Which Movie you want to watch on which date? Also let me know whether you like regular or 3D show?
+user: I need the tickets for regular show for the movie Overcomer on 2nd of March.
+assistant: Let me know the number of tickets you want me to purchase and what is your convenient time to watch the movie?
+user: Buy 1 ticket for the show time night 10.
+assistant: I need your confirmation to purchase 1 ticket for regular show of movie Overcomer on March 2nd at 10 pm in Pittsburg.
+user: Yes, confirmed.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Successfully purchased your tickets.
+user: Thanks and that's all.
+assistant: Have a nice day.

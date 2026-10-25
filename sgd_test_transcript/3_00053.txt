@@ -1,0 +1,13 @@
+user: Can you help me get a cab?
+assistant: I'd be happy to be of assistance. Where are you going? Do you have a certain type of ride in mind?
+user: I'd like the most comfortable ride available to 34050 Westchester Terrace.
+assistant: How many are traveling in your party?
+user: There are 2 of us.
+assistant: You'd like a luxury ride for 2 to 34050 Westchester Terrace. Is that correct?
+user: Yes, can you tell me when the cab will arrive and how much it will be?
+tool(GetRide): ok n_results=1
+assistant: The cab will be here in 8 minutes and the cost is $42.60
+user: Thank you for the help.
+assistant: Is there something else I can do for you?
+user: No, you've got it covered. Thank you again.
+assistant: You're very welcome. Have a wonderful night!

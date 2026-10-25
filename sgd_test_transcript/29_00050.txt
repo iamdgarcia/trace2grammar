@@ -1,0 +1,41 @@
+user: I'm looking for a three star hotel, one room onlt
+assistant: What city do you want to book it in?
+user: I need one in Philly
+tool(SearchHotel): ok n_results=10
+assistant: How about Aka University City, it's a 3 star hotel
+user: What else fits my criteria but in New York, also it has to be smoker friendly
+tool(SearchHotel): ok n_results=10
+assistant: How about 11 Howard, it's also a 3 star hotel but in New York
+user: What's their number and nightly price
+assistant: It's +1 212-235-1111 and it's $66 a night
+user: OK great, now find me a round trip flight there
+assistant: When do you want to return?
+user: I wanna be back on the 7th of this month
+assistant: What city are you leaving from?
+user: I need flights from San Francisco
+assistant: Are you leaving on March 5th?
+user: Yes that sounds right
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flights including one on American Airlines that leaves at 4:55 am and is a direct flight. The return flight is at 12:30 pm and is $354
+user: Is this an economy ticket
+assistant: It is economy class yes
+user: OK that's good. Now let's book that hotel from earlier
+assistant: How long are you staying
+user: I'll be there for 2 days
+assistant: Do you want to check in on March 5th
+user: Actually I wanna get there on the 10th of this month
+assistant: Confirming your 2 night stay for 1 person at 11 Howard with a March 10th Check in Date in New York yes?
+user: Yes that is correct
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked
+user: Cool can you tell me their address
+assistant: It's also 11 Howard Street
+user: Great can you find me cool attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: How about a museum like the 9/11 Tribute Museum?
+user: What's their phone number?
+assistant: It's 866-737-1184
+user: Is it a child friendly attraction
+assistant: Yes I think it would be great for the kids
+user: Ok that's it then. Thanks!
+assistant: Sure thing, bye!

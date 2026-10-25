@@ -1,0 +1,23 @@
+user: Could you help me to buy bus tickets to Portland, OR and I like to leave at nine in the morning. There is more luggage to carry.
+assistant: On which date you are leaving and from where you leaving?
+user: I like to leave on 9th of march from seattle.
+assistant: Number of tickets you want?
+user: I want only one ticket.
+assistant: please give the confirmation details: Your bus ticket for the date march 9th for 1 people from Seattle to portland at 9 am.
+user: Sorry, i like to leave today.
+assistant: please give the confirmation details:The ticket is for march 1st and more luggage to carry.
+user: This is perfect...what is the ticket price? To which station it arrives?
+tool(BuyBusTicket): ok n_results=1
+assistant: Bus arrives at SW Arthur & 1st and the cost is $37. I confirmed your ticket.
+user: Can you find hotels in that place?
+tool(SearchHotel): ok n_results=10
+assistant: I have short listed 10 hotels of your choice. One among them is a 3 star hotel called Aloft Portland Airport At Cascade Station.
+user: Is there any other hotel of my choice?
+assistant: There is a 4 star hotel called Canopy By Hilton Portland Pearl District.
+user: This is perfect..I like to book the hotel for two days and like to check on the 8th.
+assistant: please give the confirmation details: You want to book the hotel Canopy By Hilton Portland Pearl District on march 8th for 2 days with 1 room which is in portland.
+user: Okay..this is cool..can i know the contact number?
+tool(ReserveHotel): ok n_results=1
+assistant: I booked your hotel successfully and the telephone number is +1 971-351-0230.
+user: Thanks for your great help..
+assistant: Have a nice day...bye for now..

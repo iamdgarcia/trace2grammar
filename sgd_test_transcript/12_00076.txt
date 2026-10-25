@@ -1,0 +1,25 @@
+user: Hi, could you help me search for a bus please?
+assistant: Sure, where will you be travelling from and heading to?
+user: I will be travelling from Fresno, CA and heading to Vegas!
+assistant: And when do you plan to leave?
+user: Likely on the 5th.
+tool(FindBus): ok n_results=10
+assistant: I see, there are 10 available buses, how about one departing at 7:20 am costing $41.
+user: Sounds great! Could you get me bus tickets please?
+assistant: How many tickets do you need?
+user: Just 2 will do, thanks!
+assistant: Please confirm your purchase for 2 seats on the bus from Las Vegas to Fresno on March 5th at 7:20 am. You do not require extra luggage.
+user: That is fine with me!
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation has been made.
+user: May I know which station will I depart from and arrive at?
+assistant: You will be travelling from Union Plaza to 2660 Tulare St.
+user: I see, could you get me a hotel in that area too? Preferablye 2 rooms in a 3 star hotel which allow smoking.
+tool(SearchHotel): ok n_results=1
+assistant: How about a 3 star hotel in Piccadilly Inn Airport?
+user: Sounds perfect to me!
+assistant: Would you like me to make a reservation for you?
+user: No, that is not necessary. Thanks!
+assistant: Do you require further assistance then?
+user: No, that is all I need. Thank you.
+assistant: Have a great day ahead. Good bye.

@@ -1,0 +1,21 @@
+user: I have some leisure time , will you find me a movie to watch? i need a 3d show.
+assistant: What is your location?
+user: will you search movies shown in Palo Alto?
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies. how about brittany Runs a Marathon or The Ladykillers?
+user: Brittany runs a marathon is perfect one. Will you find some songs for me now? I need songs which come out six years ago. I heard that the album The New Classic is great.
+tool(LookupMusic): ok n_results=3
+assistant: what about the songs Bounce by Iggy Azalea from the album The New Classic.
+user: ok that's great , that's all i need.
+assistant: whether i need to play this song?
+user: sure, play this song
+assistant: please check and confirm the following details. Playing the song Bounce in Living room
+user: Ok thats great.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your music ,get good relaxation
+user: what type of music is it?
+assistant: it is a pop song.
+user: thanks a lot for your immense help
+assistant: whether i need to find anything else?
+user: no, thanks for now
+assistant: have a wonderful day

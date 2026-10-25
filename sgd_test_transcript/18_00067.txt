@@ -1,0 +1,21 @@
+user: Hi, i need a help, i am looking for a 3 star hotel in Cape Town.
+tool(SearchHotel): ok n_results=10
+assistant: Sure, i have found 10 hotel for you, One of the best hot el is Cape Diamond Hotel and it is a 3 star hotel
+user: Okay, Could you find another hotel for me? i need to be able to smoke in the hotel, i am looking for four star hotel.
+tool(SearchHotel): ok n_results=5
+assistant: Okay, i have found 5 hotels for you, One of the best hotel is Cape town Lodge Hotel and it is a 4 star hotel.
+user: Find another hotel for me in Sydney, NSW
+tool(SearchHotel): ok n_results=10
+assistant: Okay, I have found a good hotel for you, Hotel name is Adina Apartment Hotel Sydney Darling harbour and it is a 4 star hotel.
+user: It seems good to me, Could you tell me How is the weather there on March 10th.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for that day should be 92 degrees Fahrenheit and 5 percent chance of rain.
+user: Okay, I need to book the hotel on next Tuesday.
+assistant: Okay, how many days will you be staying?
+user: i will be staying for 6 days
+assistant: Okay, please confirm the following details: The hotel name is Adina Apartment Hotel Sydney Darling harbour and You are checking in on March 5th , the hotel is located in Sydney, You want 1 rooms for 6 days.
+user: Yes, you are right, Please give me their phone number and what is the price per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Congratulations, It costs $372 per night and their phone number is +61 2 9249 7000
+user: Thank you very much for your help
+assistant: You are welcome, have a great day.

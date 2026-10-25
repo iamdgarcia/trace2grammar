@@ -1,0 +1,24 @@
+user: I plan on travelling soon and will need a house in which to stay. Please help me find one.
+assistant: Which city will your travel plans be taking you?
+user: I'll be going to New York City
+tool(SearchHouse): ok n_results=10
+assistant: Your search yielded 10 houses. The first on the list is a nice, 4.4 star rated house at 100 Greenwich Street.
+user: Please find out whether the place provides laundry service.
+assistant: Yes, there's laundry service here.
+user: Could you give me its phone number?
+assistant: Sure. The contact number is +1 917-409-0800.
+user: This house works for me.
+assistant: Should I go ahead and reserve this house?
+user: Yes, please go ahead and reserve the house.
+assistant: What's your preferred check-out date?
+user: I'd like to check out on 11th of this month.
+assistant: Please let me know the size of your group, as well as your check-in date.
+user: We'll be a party of 4, checking in on the 5th.
+assistant: Okay, thanks. Please confirm that a party of 4 will be checking into the house in New York on March 5th, and checking out on March 11th.
+user: That is correct. May I know the total price?
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. That comes to a total of $1,800.
+user: Thank you very much. You've been very helpful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Glad to have been of service. Goodbye.

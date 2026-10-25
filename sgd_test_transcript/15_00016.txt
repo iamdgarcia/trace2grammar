@@ -1,0 +1,21 @@
+user: Help me find a place where I can live as I am moving out
+assistant: What number of bathrooms are you looking for and what area do you prefer? Should I look for a place to rent or buy?
+user: I am looking for something in Walnut Creek for rent with 1 bath.
+assistant: What number of bed rooms do you like in the place?
+user: I want 2 bed rooms and 2 baths.
+tool(FindHomeByArea): ok n_results=5
+assistant: I can recommend 5 houses. Archstone Walnut Creek might be suitable for you and it is located at 1445 Treat Boulevard. The price would be $2,700.
+user: That is great.
+assistant: Shall I book a visit schedule for the place?
+user: Yes go ahead and book a visit.
+assistant: What date do you want to visit?
+user: I will be visiting it on 2nd of March
+assistant: So confirm that you will be visiting Archstone Walnut Creek on March 2nd.
+user: True. That is all right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have your visit scheduled.
+user: Thank you. Can I see my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have a 4 pm alarm labelled Busy.
+user: That is all need.
+assistant: Thanks a lot

@@ -1,0 +1,28 @@
+user: I am looking for an economy flight on the 6th of this month to LAX.
+assistant: Where would you be leaving from?
+user: I want three tickets and I will be leaving SFO.
+assistant: When would you like to travel?
+user: On March 1st.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 available flights. You can leave on Alaska Airlines at 12:25 pm and return on 11:55 am. The ticket costs $145.
+user: Ok, great. I would need a house to stay in when I get there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options available. There is a lovely house on 1020 South Figueroa Street that has a rating on 4.1.
+user: I do not like that street. Is there anything else available?
+assistant: There is a lovely house at 10320 West Olympic Boulevard that has a rating of 4.1.
+user: That would be great. I want to book a house for one on March 1st.
+assistant: Do you want to check out on March 6th or another day?
+user: I want to leave on the 4th.
+assistant: You would like a house for 1 in Los Angeles. You want to check in on March 1st and check out on March 4th?
+user: Yes, that would work.
+tool(BookHouse): ok n_results=1
+assistant: I have made the reservation.
+user: May I have a contact number and what is the total cost?
+assistant: The number is +1 818-821-8031 and the price is $384.
+user: Thanks a lot. Is there anywhere I can take my kids that has no entry fee?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 sites that they might like. There is a Historical Landmark called Angels Flight Railway.
+user: Is there a contact number?
+assistant: You can call 213-626-1901.
+user: That would be fine. That's all.
+assistant: Enjoy your time.

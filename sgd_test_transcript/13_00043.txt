@@ -1,0 +1,32 @@
+user: Please find me something interesting todo.
+assistant: Is there any sort of event that you like in particular? What city should I look in?
+user: I like Drama. Please look around LAX.
+tool(FindEvents): ok n_results=10
+assistant: A Year In DragonFly is popular. It will take place at Studio C Artists on March 1st at 7:30 pm.
+user: What is the address of the venue and how much is one ticket?
+assistant: The ticket is $55 and the venue is 6448 California 2.
+user: That sounds good. Would you find me other events around London, UK on March 14th?
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events that you should like. A Right Royale Tea is a popular one taking place at Amba Hotel Charing Cross on March 14th starting at 7 pm.
+user: Sounds good to me.
+assistant: Would you like to buy tickets?
+user: Not at the moment.
+assistant: Could I assist with anything further?
+user: Would you look for hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that match that criteria. There's a hotel called 45 Park Lane and it's a 5 star hotel.
+user: That sounds great.
+assistant: Could I assist with anything further?
+user: I would like to buy tickets to that event that you found.
+assistant: How many tickets do you want?
+user: I would like 4.
+assistant: Could you confirm that you want to book 4 tickets or A Right Royale Tea? Your reservation is for March 14th and it's taking place in London.
+user: No, I need three tickets.
+assistant: So you want to book tickets for A Right Royale Tea and you have 3 tickets.
+user: Sounds good to me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed. Have a great time.
+user: Thank you for helping.
+assistant: Would I be able to assist with anything further?
+user: No, that is all. Thank you for helping.
+assistant: Have a good day.

@@ -1,0 +1,15 @@
+user: I'd like to find a movie to watch.
+assistant: Where are you located?
+user: Can you help me find something in San Jose?
+tool(FindMovies): ok n_results=10
+assistant: What do you think about 47 Meters Down: Uncaged, Ad Astra, or After The Wedding?
+user: Uncaged sounds good. Could you find some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: How about In Summer by Josh Gad from the album Frozen?
+user: Yes, that is correct. I'd like to play this song.
+assistant: Please confirm you're playing In Summer in the Living room.
+user: That is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thank you very much! That's all.
+assistant: Have a nice day.

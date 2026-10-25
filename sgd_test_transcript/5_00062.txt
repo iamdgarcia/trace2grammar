@@ -1,0 +1,13 @@
+user: Can you add an alarm to go off at 3 pm?
+assistant: Sure, please confirm you'd like me to set a New alarm for 3 pm.
+user: Yes, but title the alarm Leave for home.
+assistant: Okay, confirm you'd like a new alarm set for 3 pm titled Leave for home.
+user: Actually, scratch that. Call it cleaning and set is for half past 4 in the evening.
+assistant: Sure, confirm you'd like an alarm set called cleaning at 4:30 pm?
+user: Yup, that's right.
+tool(AddAlarm): ok n_results=1
+assistant: I've added your new alarm.
+user: Thanks, appreciate it.
+assistant: Do you need anything else?
+user: Nope, that's all.
+assistant: Have a great day.

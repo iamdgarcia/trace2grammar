@@ -1,0 +1,31 @@
+user: I'm looking for a rental car.
+assistant: When do you want to pick it up?
+user: I want to pick it up on Thursday next week.
+assistant: When do you want to drop it off?
+user: I want to drop it off on the 12th of this month.
+assistant: What time would you like to pick it up?
+user: I'd like to pick it up at twelve pm.
+assistant: Where do you want to pick it up?
+user: I need to pick it up in Anaheim.
+tool(GetCarsAvailable): ok n_results=9
+assistant: There is a sedan Buick Regal Sportback at John Wayne Airport.
+user: Sounds good. I want to find tickets for an event on the 11th of March.
+assistant: What events are you interested in? What city should I look in?
+user: I want to find something in Seattle, WA. Twelfth Night is supposed to be good.
+assistant: How many tickets do you want?
+user: I need 2 tickets.
+assistant: Please confirm: booking 2 tickets for Twelfth Night in Seattle on March 11th.
+user: Sounds good. Where is the venue? How much is each ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservations have been made. The venue is located at 305 Harrison Street. Tickets are $35 each.
+user: I want to reserve the rental car you found earlier.
+assistant: Would you like to add insurance?
+user: No, thank you.
+assistant: Please confirm: picking up a sedan from John Wayne Airport on March 7th at 12 pm. Drop off is March 12th.
+user: That sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked.
+user: What is the cost per day?
+assistant: It is $38.00 per day.
+user: Thanks so much. That's all.
+assistant: Have a great day.

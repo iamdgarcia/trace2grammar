@@ -1,0 +1,19 @@
+user: Would you help me to search a movie acted by J. Patrick McNamara and directed by Steven Spielberg and search something with Future scientific fiction genre.
+tool(FindMovies): ok n_results=1
+assistant: I searched 1 movie of your choice with average rating of 95 out of 100 called Close Encounters of the Third Kind.
+user: This is perfect..Can you search some songs for me now? The album Rise Remixes is very popular and i love the songs of Katy Perry. Search something from 2016.
+tool(LookupMusic): ok n_results=1
+assistant: I searched 1 song of your choice. What is your opinion about the song Rise from the album Rise Remixes by Katy Perry?
+user: Can i know the type of music?
+assistant: I think it is a pop song.
+user: Okay..this is fine.
+assistant: Can i play this song for you?
+user: Okay..run it on any device.
+assistant: please give confirmation details: Run the song Rise in Living Room.
+user: No, run this song on kitchen device.
+assistant: please give confirmation details: Run the song Rise in Kitchen.
+user: This is perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your music.
+user: Thanks a lot.
+assistant: Have a nice day.

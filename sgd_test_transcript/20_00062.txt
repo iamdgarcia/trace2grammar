@@ -1,0 +1,31 @@
+user: I'm looking to rent a car from Thursday next week until March 12th. Can you search car rental businesses for me?
+assistant: What location will you be renting the car from?
+user: Search for rental cars in Cape Town.
+assistant: What time do you wish to pick the car up?
+user: I should be coming by the rental office around 3 o'clock in the afternoon.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I have found 5 suitable vehicles. The first is a Audi A8 Sedan at the Cape Town International Airport.
+user: How much does the car cost to rent on a per-day basis?
+assistant: The car's rental price is $30.00.
+user: That's a fair price. While I'm there, I want a house to stay in. Not a fan of hotels. So please find me a house with laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 houses during my search. A house with a rating of 4.5, is located at 1 Cullinan Street, Cape Town City Centre.
+user: What is the contact number for this house?
+assistant: The phone number to the house in question is +27 21 415 4000.
+user: Name another house that you found in your search.
+assistant: There is a lovely home located at 1 Lower Buitengracht, Cape Town City Centre. The rating of this home is 4.4.
+user: That home sounds fantastic.
+assistant: Do you wish for me to make a reservation here?
+user: No, I'll take care of that later.
+assistant: What else can I assist you with?
+user: About that rental car. Can you rent it now for me?
+assistant: Do you need insurance?
+user: No thank you. I don't need insurance for the car.
+assistant: Your Sedan will be picked up on March 7th from the Cape Town International Airport at 3 pm. The car is yours until March 12th. There is no add on for car insurance.
+user: I changed my mind. I want to buy insurance after all.
+assistant: Confirm the following change: The Sedan for rental now comes with insurance. Is that acceptable?
+user: That sounds fine to me. Thank you.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car.
+user: I appreciate all the help and advice. I won't be needing anything else for today.
+assistant: Alright. Please enjoy the rest of your day.

@@ -1,0 +1,19 @@
+user: Will you help me find something interesting to do?
+assistant: Would you like a particular category. You can say something like Music or Theater or something else.
+user: I like Broadway a lot.
+assistant: Is there a particular city I should look in?
+user: I need something around the 14th of this month around Los Angeles.
+tool(FindEvents): ok n_results=10
+assistant: Anything Goes is popular and taking place at Upright Citizens Brigade Sunset on March 14th at 4 pm.
+user: That sounds good. Will you look for hotels in that area too because I need one room.
+tool(SearchHotel): ok n_results=10
+assistant: There would be a hotel called Ac Hotel By Marriott Beverly Hills which is a 3 star hotel.
+user: That sounds good so I'd like to purchase 3 tickets to the event.
+assistant: Please confirm details for booking 3 tickets for Anything Goes on March 14th in Los Angeles.
+user: No, I'd like just two tickets.
+assistant: Please confirm details for booking 2 tickets for Anything Goes in my reservation.
+user: Yes, that will work for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed and have a nice time there.
+user: Thanks for your help. That is all I will need.
+assistant: Have a nice day.

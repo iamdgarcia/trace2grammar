@@ -1,0 +1,17 @@
+user: I am in need of a bus, can you get me one?
+assistant: Please tell me about your destination, departing station and date of leave?
+user: Fix it on the 4th from SD to Anaheim.
+tool(FindBus): ok n_results=8
+assistant: You can avail one of 8 buses. Do you like to get into the one leaving at 7:20 am which costs $23.
+user: I think that will do.
+assistant: Shall I try for your tickets now?
+user: Yes, please make it for 3 people.
+assistant: Please confirm, you need 3 tickets to Anaheim from San Diego on March 4th in the bus leaving at 7:20 am. You are carrying no extra luggage.
+user: Good, please inform the departing and arriving stations.
+tool(BuyBusTicket): ok n_results=1
+assistant: Departure from El Cajon Bus Stop and destination at Anaheim Bus Station. Your seats are booked.
+user: Can you tell me about hotels there?
+tool(SearchHotel): ok n_results=10
+assistant: You can enjoy the facility of Alamo Inn & Suites, a 2 star hotel.
+user: Great, thank you.
+assistant: Have a nice day

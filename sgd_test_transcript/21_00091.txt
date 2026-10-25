@@ -1,0 +1,19 @@
+user: I need to know something about the weather. Give me the forecast for March 8th in Chi-town please.
+tool(GetWeather): ok n_results=1
+assistant: There is a warm temperature of 72 degrees Fahrenheit with a 23 percent chance of rain.
+user: Okay. Can you also tell me about how humid and windy it will be that day?
+assistant: There humidity will hover around 31 percent on March 8th. The wind speed is estimated to be 8 miles per hour.
+user: Thank you. That's all I need to know about weather. Moving on, I want to know about attractions in Chicago. I'm not too familiar with the area.
+tool(FindAttractions): ok n_results=10
+assistant: There are many attractions in Chicago. I have narrowed the choices down to 10. To start with, you should consider a Tourist Attraction called 360 CHICAGO.
+user: Sounds quite interesting. I don't want to drive there though. Can you find me a Pool ride there?
+assistant: How many seats do you wish for me to reserve?
+user: Oh just a group of 1. That should suffice.
+assistant: Please tell me if I have the right details. You want a 1 seat Pool ride to 360 Chicago. Is that right?
+user: Yep. That's what I'm looking for.
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your ride and the cab is on its way now.
+user: Awesome. Thank you for your help as always.
+assistant: How can I further assist you today?
+user: That's all the help I need. You've been a big help.
+assistant: In that case, enjoy the rest of your day.

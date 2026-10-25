@@ -1,0 +1,18 @@
+user: I am planning a trip and would like you to search for a rental car.
+assistant: When will you need the rental car and when do you plan on returning the car. Also, where would you like to pick up the car?
+user: I will need the car from MArch 11th to the 14th of March and would like to pick it up in Sydney, NSW.
+assistant: Do you have an approximate time you would like to pick up the car?
+user: Yes, I prefer to pick up the car at 3 o"clock in the afternoon.
+tool(GetCarsAvailable): ok n_results=6
+assistant: You may like this nice sedan that it is available. It is a Dodge Charger and is available at the Kingsford Smith International Airport.
+user: That one sounds perfect and I would like to reserve the car.
+assistant: Would you like the additional insurance that is available?
+user: No, I don't need the insurance.
+assistant: Please confirm the date of your Sedan rental car is from March 11th to March 14th. You will be be picking it up at 3 pm from Kingsford Smith International Airport. You have opted out of the insurance.
+user: That is right. What will be my daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been booked and it will be a daily cost $28.00.
+user: Thank you! I appreciate your help!
+assistant: Do you need further assistance?
+user: Not at this time. Thank you!
+assistant: Your welcome! Enjoy your day!

@@ -1,0 +1,41 @@
+user: Would you find me something interesting to do?
+assistant: What city should I check? Is tehre any sort of category that you like, Music, Theater or someting else?I
+user: I'd like you to find Songs around Philly.
+tool(FindEvents): ok n_results=10
+assistant: Anthony Green is popular and taking place at The Foundry on March 10th at 6 pm.
+user: What is the price of one ticket?
+assistant: One ticket costs $60.
+user: Where is the venue located?
+assistant: It's located at 29 East Allen Street 2nd floor.
+user: Sounds good. Can you find me a bus to go there?
+assistant: What about March 10th? Where will you leave from?
+user: I want to leave on Saturday this week from Washington.
+tool(FindBus): ok n_results=7
+assistant: I have 7 buses that could work. What about a bus leaving at 8:30 am that costs $32?
+user: Is this a direct bus?
+assistant: Yes, it is a direct bus.
+user: Would you search for something else?
+assistant: How about a bus leaving at 11:30 am? It's $26.
+user: That's good.
+assistant: Would you like tickets for this bus?
+user: Not at the moment. Find me a round trip flight to get there that returns on the 12th. I'd like one Economy class ticket.
+assistant: Would you like to leave March 2nd, March 10th or another day?
+user: I'd like to leave on 8th of this month.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Would you like to try Delta Airlines? The outbound flight takes off at 10:30 am and it has a layover. The return takes off at 4:15 pm and costs $359.
+user: That should work. Would you search for hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: There's a hotel called Aka Rittenhouse Square. It's a 4 star.
+user: What is the street address and phone number?
+assistant: The phone number is +1 215-825-7000 and the address is 135 South 18th Street.
+user: That's great.
+assistant: Would you like to make the reservation?
+user: Not at the moment.
+assistant: Could I assist with anything else?
+user: I would like to find tickets to that event you mentioned.
+assistant: Please confirm that you want to book 1 ticket to Anthony Green for March 10th in Philadelphia.
+user: Sounds good to me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation was made. Enjoy your time there.
+user: Thanks for helping. That is all for now.
+assistant: Enjoy your day.

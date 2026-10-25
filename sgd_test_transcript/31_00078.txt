@@ -1,0 +1,47 @@
+user: Find me a salon.
+assistant: Which city do you want to look?
+user: Let's look in Castro Valley.
+tool(FindProvider): ok n_results=5
+assistant: I have located 5 salons you may enjoy. There is a Great Clips in Castro Valley and it's pretty nice.
+user: Will you look for another salon? Look for a unisex salon in Santa Clara.
+tool(FindProvider): ok n_results=8
+assistant: There are 8 salons that may work. There is a good salon in Santa Clara called About Time Barber Shop.
+user: Can you give me their address?
+assistant: They are located on 2485 De La Cruz Boulevard.
+user: will you look for another salon?
+assistant: There's a good salon in Santa Clara and it's called Jimmy Hair Team.
+user: Yes, that sounds like a good place.
+assistant: Would you like to make an appointment?
+user: Yes, make an appointment for twelve in the afternoon on the 14th of this month.
+assistant: you want an appointment at 12 pm on March 14th at Jimmy Hair Team. Is that correct?
+user: Yep, that's good.
+tool(BookAppointment): ok n_results=0
+assistant: I apologize but I can't book the appointment. Do you need some other help?
+user: Will you try to do it again? I want to go on the 7th of this month at two pm.
+assistant: You want an appointment on March 7th at 2 pm at Jimmy Hair Team. Are those correct details?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have reserved your appointment.
+user: Will you find a good restaurant for that day?
+assistant: What is your interest in food?
+user: I would like to find a spot that serves noodles.
+tool(FindRestaurants): ok n_results=5
+assistant: There is a Chef Ming's in Santa Clara and they are good.
+user: Can you give me their address?
+assistant: You can go there at 61 Washington Street.
+user: Do you have other restaurant recommendations?
+assistant: There is a lovely spot in Santa Clara and its name is China Stix.
+user: Do you have some more restaurant suggestions? I want one that is not very costly for my budget.
+tool(FindRestaurants): ok n_results=5
+assistant: There is one named Din Tai Fung in Santa Clara.
+user: Can you tell me their street address?
+assistant: They are located at 2855 Stevens Creek Boulevard #1259.
+user: Okay, that's great.
+assistant: Do you want to book a table?
+user: Yes, please get a table for 1 o'clock in the afternoon.
+assistant: Making a reservation for 2 people at 1 pm on March 7th at Din Tai Fung in Santa clara. Is that right?
+user: Yes, that sounds fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have made your reservation.
+user: Thanks for all your help and I'm done.
+assistant: Enjoy the day.

@@ -1,0 +1,41 @@
+user: I am looking for some attractions to visit?
+assistant: Which city do you want me to search for the event in?
+user: I am looking for the attractions in New York City.
+tool(FindAttractions): ok n_results=10
+assistant: How about museum called 9/11 Tribute Museum?
+user: Great, can you suggest me any other attractions?
+assistant: How about Performing Arts Venue called 92nd Street Y?
+user: Great, can you suggest me any other attractions?
+assistant: How about a Park called Alley Pond Park?
+user: Okay, That sounds perfect. Find me a car for rent there?
+assistant: What is the date and time of pick up?
+user: I want to pick up the car at 12 o'clock in the afternoon on 2nd of this month.
+assistant: Is your pick up location New York and what will be the drop off date for the car?
+user: Yes, That is correct and I will drop off the car after 7th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars you may like. How about a nice SUV Alfa Romeo Stelvio available for pick up at Port Authority Station?
+user: Can you show me a Hatchback with the drop off date as 3rd of this month?
+tool(GetCarsAvailable): ok n_results=4
+assistant: How about a nice Hatchback Kia Ceed available for pick up at Port Authority Station?
+user: Find me the cost per day.
+assistant: The cost per day is $23.00.
+user: Okay, That sounds good to me.
+assistant: Can I assist you with anything else?
+user: Find me a car for rent.
+assistant: Would you like to have insurance?
+user: No, Please do not add insurance.
+assistant: Please confirm: you want me to book a Hatchback car with insurance available for pick up at Port Authority Station on March 2nd at 12 pm with the drop off date as March 3rd.
+user: No, Please include insurance also.
+assistant: Please confirm: You want me to book a Hatchback car with insurance.
+user: Yes, That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked the car.
+user: Okay, Can you share the location Port Authority Station with Logan?
+assistant: Please confirm: You want me to share the location Port Authority Station with Logan.
+user: Yes, That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared successfully.
+user: Thank you for your help!
+assistant: Can I assist you with something else?
+user: No, That will be all. Thank you!
+assistant: I am glad I could help. have a nice day!

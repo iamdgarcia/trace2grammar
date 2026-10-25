@@ -1,0 +1,31 @@
+user: I have decided to watch an event. Please reserve ticket for that.
+assistant: What kind of event are you looking for? How many of you are going to watch it?
+user: One one person. The event is Write About Now.
+assistant: Are you particular about any date?
+user: I intend to watch it on Monday Next week.
+assistant: Have you fixed any location?
+user: The Broadway Buddy Mentorship Cabaret on 5th of this month is the place selected or some place around NY.
+assistant: Please confirm the request. You asked for reservation of 1 ticket to watch Broadway Buddy Mentorship Cabaret on March 5th in New York.
+user: Exactly, where is the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: It is booked. Please be at Leonard Nimoy Thalia at Symphony Space.
+user: Thank you. Are there bus service to that place?
+assistant: Where do you want to depart?
+user: I want to get in from Washington on a direct bus.
+assistant: The date of departure is March 5th, right?
+user: No, I am leaving on the 2nd.
+tool(FindBus): ok n_results=7
+assistant: You have 7 buses and one is leaving at 6:20 am. The ticket will cost $34.
+user: Name of departing and arriving stations please.
+assistant: Departs from Silver Spring Bus Stop and arrives at Penn Station.
+user: Is there any alternative?
+assistant: You an otherwise go by the bus leaving at 12:10 pm with ticket fare of $38.
+user: I think that will be good.
+assistant: Do you need the tickets reserved?
+user: Yeah, please reserve a seat.
+assistant: See whether the details are correct, you are leaving to New York from Washington by bus on March 2nd at 12:10 pm. There will be 1 people with no extra luggage.
+user: Details are found correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is reserved.
+user: Awesome, thanks for the help.
+assistant: Enjoy a great day.

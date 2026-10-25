@@ -1,0 +1,24 @@
+user: Please show me some attractions to visit.
+assistant: Where should I look for attractions?
+user: Find some attractions in San Francisco.
+tool(FindAttractions): ok n_results=10
+assistant: There would be 10 attractions that are of interest to you. Check out Alcatraz a historical landmark.
+user: Okay that is great. Please watch a movie around there including mystery movies as I want to watch a regular show.
+tool(FindMovies): ok n_results=2
+assistant: What about Luce or Official Secrets?
+user: Official Secrets will be perfect.
+assistant: Do you wish to buy tickets?
+user: No, I don't want tickets. Are there good movies online?
+assistant: What type of movies do you like?
+user: I like War movies as they are great.
+tool(FindMovies): ok n_results=1
+assistant: What do you think about The Load.
+user: The Load is good.
+assistant: What else can I assist with?
+user: I'd like to watch movies now.
+assistant: Please confirm details that you'd like to play The Load with subtitles in English.
+user: Yes, please tell me who acted in it.
+tool(PlayMovie): ok n_results=1
+assistant: Start playing the movie that Pavle Cemerikic acted in.
+user: Thanks for that. That is all for now.
+assistant: Have a nice day.

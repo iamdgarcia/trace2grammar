@@ -1,0 +1,34 @@
+user: Can you show me the alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm at 7:30 am named Wake up
+user: Very well, thank you
+assistant: Do you need to add another alarm?
+user: Not now, thanks. I want to find a restaurant.
+assistant: In which city do you want to find a restaurant?
+user: I'd like to find a restaurant in Palo Alto
+assistant: What kind of food would you prefer?
+user: I'd like a restaurant that serves Soup & Salad
+tool(FindRestaurants): ok n_results=1
+assistant: In Palo Alto there's Green Elephant Gourmet
+user: This is fine. I need a car at 9:30 in the morning
+assistant: Which day do you want to rent a car? In which city? Do you prefer to add insurance?
+user: I need the car from Monday next week till the 8th. I prefer to pick it up from PHL International Airport. Yes, I want to add insurance.
+assistant: Do you prefer Sedan, SUV or something else?
+user: I prefer a Hatchback, please.
+assistant: A Hatchback wih insurance from PHL International Airport from March 4th at 9:30 am, till March 8th. Do you confirm these details?
+user: No, I prefer a Sedan till 6th of March. Thanks
+assistant: A sedan car till March 6th. Is it correct?
+user: Yes, now it's correct. What car model is available?
+tool(ReserveCar): ok n_results=1
+assistant: There's a Skoda Octavia. Your car is booked!
+user: Very good, thanks! I want to share the location to 3950 Middlefield Road
+assistant: What is the name of the person you want to share the location with?
+user: The name is Deborah. Share with her PHL International Airport address
+assistant: Sharing with Deborah the location PHL International Airport. Is it correct?
+user: Yes, It's correct. Thanks
+tool(ShareLocation): ok n_results=1
+assistant: The location was shared with Deborah
+user: Very good! Thanks
+assistant: Do you need anything else?
+user: No, It's all for today. Thank you
+assistant: Have a good day!

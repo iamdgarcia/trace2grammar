@@ -1,0 +1,24 @@
+user: I would like to book train tickets from Sacramento.
+assistant: What is your destination?
+user: I am going to Fresno, CA.
+assistant: What is your date of departure?
+user: I would like to depart later today.
+tool(FindTrains): ok n_results=7
+assistant: I found 7 trains that suits your requirements. How about a train which departs at 8 am and the cost is $65?
+user: Which station is it's arrival and leaving point?
+assistant: The train leaves from Sacramento Valley Station and goes to Fresno Station.
+user: Okay, The train sounds good to me.
+assistant: Would you like me to book tickets for you?
+user: Yes, Please make a reservation for me.
+assistant: Can you tell me the number of tickets required?
+user: I want to book only 1 seat.
+assistant: Would like to have travel insurance as well?
+user: Yes, I would like to have a trip insurance as well.
+assistant: Please confirm: You want me to book 1 Value ticket in a train leaving from Sacramento to Fresno on March 1st at 8 am.
+user: Yes, That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked your ticket.
+user: Thank you so much for all the help.
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Bye! See you again!

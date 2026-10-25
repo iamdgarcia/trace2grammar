@@ -1,0 +1,35 @@
+user: I need some tickets
+assistant: What day would you like to leave, and at what time?
+user: I want to leave on 10th of this month at morning 10:30. I need tickets for 3 people
+assistant: What is your destination?
+user: I have to go to SD
+assistant: What is the city of departure?
+user: The city of departure is Anaheim, CA
+assistant: A ticket for 3 people on the bus from Anaheim to San Diego, on March 10th at 10:30 am. Do you confirm?
+user: Yes, I confirm. What is the ticket cost? What is the departure station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket costs $22. The departure station is Anaheim Bus station. Your ticket was purchased!
+user: Very well, thanks. Now I need a rental car there.
+assistant: Do you need the car from March 10th? Do you want to rent a car in San Diego?
+user: Yes, in San Diego, but I need it from 13th of this month
+assistant: What time do you prefer to pick it up? Until when do you need the car?
+user: I prefer to pick it up at half past 1 in the afternoon. I would like the car until the 14th of this month
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars. There's a SUV Citroen C5 at SAN International Airport
+user: Are there any other models?
+assistant: Yes, there's a Sedan Hyundai Ioniq at Santa Fe Depot
+user: How much is the rent per day?
+assistant: The rent costs $30.00 per day
+user: Are there any other solutions?
+assistant: A SUV Jaguar F-Pace in Santa Fe Depot
+user: Wow! It's nice for me!
+assistant: Want to book this car?
+user: Yes, I like it! Book it!
+assistant: Do you prefer to add insurance?
+user: No, I don't want it
+assistant: A SUV car without insurance, from Santa Fe Depot on March 13th at 1:30 pm, till March 14th. Is it correct?
+user: Yes, It's correct! I confirm.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been booked!
+user: Thank you very much! It's all for now!
+assistant: Have a nice day

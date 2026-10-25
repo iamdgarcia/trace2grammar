@@ -1,0 +1,22 @@
+user: Can you help me find a car to rent?
+assistant: Sure, what time do you need it and till when?
+user: I need it in the afternoon 12:30 pm and I'll be driving it till the 12th
+assistant: Noted on this, what date do you need it?
+user: I need it starting on the 8th of March
+assistant: What location are we talking about?
+user: I'm talking about the Long Beach area
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars including a SUV, a Alfa Romeo Stelvio that you can pick up from Downtown Station
+user: How much is that a day
+assistant: It costs $36.00 a day
+user: That sounds good for me then
+assistant: What else can I do for you?
+user: Help me book that car
+assistant: Do you need insurance for it?
+user: No thanks, that's ok
+assistant: Confirming you want to book that SUV from March 8th 12:30 pm till March 12th from Downtown Station?
+user: Yes that's all correct
+tool(ReserveCar): ok n_results=1
+assistant: It has been booked for you
+user: Thanks for doing that, take care
+assistant: You too, take care!

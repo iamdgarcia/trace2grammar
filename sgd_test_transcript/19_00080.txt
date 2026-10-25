@@ -1,0 +1,29 @@
+user: Search for me a rental car.
+assistant: Where and when do you want to rent a car?
+user: I want to pick up the car Thursday next week in Long Beach.
+assistant: What time do you want to get the car and when will you return it?
+user: I want to get the car at 2 o'clock in the afternoon and will return it on the 14th of March.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There is a SUV Alfa Romeo Stelvio at Downtown Station and is 1 of 3 cars available that search found.
+user: That is perfect.
+assistant: Do you need more help?
+user: Find me tickets to see Frances Ruffelle.
+assistant: What city shall I look in and how many tickets do you want?
+user: Find me four tickets near New York City?
+assistant: What date do you prefer?
+user: Find me something on the 2nd of this month.
+assistant: You want 4 tickets to see Frances Ruffelle on March 2nd in New York, correct?
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are ordered. Have fun!
+user: Book that rental car from earlier for me.
+assistant: Shall I get you insurance too?
+user: Yes, add insurance to my order.
+assistant: You want to pickup a SUV with insurance at 2 pm at Downtown Station on March 7th and will return it on March 14th, correct?
+user: That is correct. What does the SUV cost a day?
+tool(ReserveCar): ok n_results=1
+assistant: Your rental is booked and the SUV costs $67.00 a day.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, that is all. Thanks.
+assistant: Have a great day.

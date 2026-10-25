@@ -1,0 +1,19 @@
+user: Hi, I need help booking the most comfortable ride to 855 East Tabor Avenue for two.
+assistant: Okay, that will be a luxury ride for 2 to 855 East Tabor Avenue?
+user: Yes, that sounds perfect.
+tool(GetRide): ok n_results=1
+assistant: I have successfully reserved your luxury ride, which will be to you soon.
+user: Thank you. How long will it be before the cab is here, and is the total cost?
+assistant: Your ride will be there in 13 minutes, and the total came to $22.23.
+user: Thank you again for that. Can you help me find some good tunes to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: Sure I have 10 songs you may like. Do you want to hear Solway Firth by Slipknot from their We Are Not Your Kind album?
+user: What genre is this music and was this album released in '19?
+assistant: It is a metal song that was released in 2019
+user: Great! Can you play that song on my kitchen device?
+assistant: Sure, I will play Solway Firth in your kitchen.
+user: Great, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: You are welcome I hope you enjoy this track.
+user: Thank you I will. Have a nice day.
+assistant: You too. Bye.

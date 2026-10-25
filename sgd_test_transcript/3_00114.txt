@@ -1,0 +1,20 @@
+user: I'd like to find a rental car.
+assistant: What time would you like to pick up the car?
+user: I'd like to pick up a hatchback at afternoon 3:30.
+assistant: Where would you like to rent the car from and when do you want to start the car rental. Until when would you like the car?
+user: I need it March 2nd till Wednesday next week and am looking for ars in Fresno.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There would be 6 cars available with a nice car available at Fresno Station being a Hatchback of Fiat Panda.
+user: What is the cost per day?
+assistant: It is $27.00 per day.
+user: That sounds good and I'd like to reserve a rental car.
+assistant: Would you like to add insurance?
+user: I won't need insurance.
+assistant: Please confirm details that you are picking up from Fresno Station March 2nd at 3:30 pm with a drop-off date of March 6th. It is a Hatchback vehicle not coming with insurance.
+user: Yes that is good.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved for you.
+user: Thanks for your help.
+assistant: What else can I help with?
+user: No thanks I don't need help.
+assistant: Have a nice day.

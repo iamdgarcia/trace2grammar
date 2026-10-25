@@ -1,0 +1,35 @@
+user: I want to buy tickets for a bus that leaves at 15:00 for Sacramento.
+assistant: Where do you want to depart from?
+user: I will be departing from Anaheim.
+assistant: And what date is this for?
+user: It is for the 9th of this month.
+assistant: And how many tickets do you need?
+user: I need three tickets.
+assistant: I'll get you 3 bus tickets for Anaheim to Sacramento on March 9th at 3 pm, no extra luggage. Is everything correct?
+user: Yes, that's what I want.
+tool(BuyBusTicket): ok n_results=0
+assistant: I'm sorry, but there was an error during the purchase. What else can I do for you?
+user: How about trying for the 2nd of this month at 12:00.
+assistant: I'll get you 3 bus tickets for Anaheim to Sacramento on March 2nd at 12 pm, no extra luggage. Is everything correct?
+user: Yes, that's good. Are there stops on this trip?
+tool(BuyBusTicket): ok n_results=1
+assistant: It's a one-stop trip. I'm sorry, but there was an error during the purchase. Do you want to try for the 11:50 am bus, it's $55.
+user: Yes, try that please.
+tool(BuyBusTicket): ok n_results=1
+assistant: I've purchased the tickets successfully.
+user: Nice. Now I need to look for a hotel there, just one room.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels you might like. There's a 3 star hotel called Courtyard By Marriott Sacramento Cal Expo.
+user: What other hotels are there?
+assistant: There's a 3 star hotel called Courtyard By Marriott Sacramento Midtown.
+user: What's a number I can call them at?
+assistant: You can call them at +1 916-455-6800.
+user: Alright, great. I want to make a reservation for three days?
+assistant: When would you like to check in?
+user: I want to check in on the 2nd of this month. And I actually want it to be for five days.
+assistant: I'll book you 1 room at Courtyard By Marriott Sacramento Midtown in Sacramento with a check in on March 2nd for 5 days. Is that right?
+user: Yeah, that's right. Can you also tell me the cost per night and their address?
+tool(ReserveHotel): ok n_results=1
+assistant: I've reserved the room. They are located at 4422 Y Street and per night it is $102.
+user: Thanks for all the help. I'll be going now.
+assistant: Goodbye and have a terrific day.

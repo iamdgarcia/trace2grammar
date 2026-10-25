@@ -1,0 +1,17 @@
+user: I'd like to search for songs on the Holo album.
+tool(LookupMusic): ok n_results=1
+assistant: How about Airplane Mode by Limbo on the Holo album.
+user: What kind of music and what year was it released?
+assistant: It's a pop song from 2017.
+user: Okay, that's what I want. What are some good movies online?
+assistant: What kind do you like?
+user: I'm looking for something supernatural.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 you may like, IT Chapter Two.
+user: IT2 is great, I'll remember that for later. For now, can you play that song we just talked about on any device?
+assistant: Sure, please confirm you'd like me to play Airplane Mode in the Living room.
+user: Yup, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Hope you enjoy!
+user: That's all for now.
+assistant: Enjoy your day!

@@ -1,0 +1,29 @@
+user: Could you find out what the weather will be in American Canyon on March 12th?
+tool(GetWeather): ok n_results=1
+assistant: On that day, the expected average temperature is 75 degrees wwith a 15 percent chance of rain.
+user: All right, great. Schedule a property visit for me on that day.
+assistant: I can help you with that. Which property are you interested in?
+user: I'd like to check out Portofino Apartments.
+assistant: Sure. Let me see if I got everything correctly: You'd like to schedule a visit to Portofino Apartments for March 12th?
+user: Yes, you got that right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled your visit to the property.
+user: Okay thanks. I'd like to drive there. Could you reserve me a car?
+assistant: Will you be picking the car on March 12th?
+user: No. Actually I'd like to pick it on March 11th.
+assistant: Okay. What is your preferred pick-up location? And your preferred drop-off date?
+user: My preferred pick-up location is Sunnyvale Caltrain Station. I'd like to drop it off on March 12th.
+assistant: Would you like to buy insurance?
+user: Yes, please add insurance.
+assistant: Do you have a particular type of car in mind?
+user: I would like a Sedan.
+assistant: What is a convenient pick-up time for you?
+user: A 3 pm pick-up time works for me.
+assistant: Okay. Please confirm that you'll be picking an insured Sedan car from Sunnyvale Caltrain Station on March 11th at 3 pm and dropping it off on March 12th.
+user: No. Something came up and I'll need to pick it up on 6th of this month.
+assistant: No problem. Let me see if I got everything correctly: You'll pick it up on March 6th and you'll be adding insurance.
+user: Yes, that's correct. What's the car's make and model? How much is the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car. The car is a Buick Regal Sportback. The daily cost is $47.00.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Goodbye, and have a great day.

@@ -1,0 +1,23 @@
+user: Can you help me find a 4 star hotel?
+assistant: Sure thing. Just let me know what city you would like me to search for hotels in.
+user: I'm looking for a nice hotel somewhere in London.
+tool(SearchHotel): ok n_results=10
+assistant: I've found a nice 4 star hotel for you. How about the Ace Hotel London?
+user: Yeah, if it's rated 4 stars then it sounds good to me. How will the weather be out there on the 12th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be around 87 degrees Fahrenheit with a 21 percent chance of rain.
+user: How windy will it be that day?
+assistant: The average wind speed will be around 2 miles per hour.
+user: Will it be really humid out there?
+assistant: The humidity will be around 32 percent, so not to bad.
+user: Okay, thanks for the info! I would like to go ahead and make a reservation at that hotel you found earlier.
+assistant: No problem. Would you like to check in on March 12th? How long will your stay be?
+user: I need to check in on the 4th and I'll be staying for five days.
+assistant: Okay before we finish just confirm the following for me. You want to book 1 room at the Ace Hotel London in London on March 4th and you will be staying for 5 days. Correct?
+user: Yeah, that's correct. Can you also get the address for me?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation is complete. The hotel is located at 100 Shoreditch High Street.
+user: Thanks for the help. I truly appreciate it.
+assistant: Anything else I can help you with today?
+user: No thanks. You've been a great help. Goodbye!
+assistant: Goodbye. Have a good day!

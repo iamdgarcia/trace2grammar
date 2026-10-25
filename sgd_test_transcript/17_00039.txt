@@ -1,0 +1,17 @@
+user: Hi, could you get me a Value train ticket from Sacramento, CA on the 10th of this month?
+assistant: Sure, and where are you heading to?
+user: I will need 2 seats to San Diego, please.
+tool(FindTrains): ok n_results=10
+assistant: Would you like the train departing at 6:30 am which will cost you $273 in total?
+user: Are there any alternatives? Would prefer one departing from SFO.
+tool(FindTrains): ok n_results=6
+assistant: How about the train departing at 6 am which costs $164 in total?
+user: That sounds great!
+assistant: Would you like me to make a reservation?
+user: No thanks, could you get me a house for 1 with a 4.5 rating or higher? Would prefer one which has laundry service!
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses you might like, how about a 4.5 rated house at 1003 Coast Boulevard, La Jolla, California 92037, United States?
+user: That sounds great!
+assistant: Would you like me to make a reservation for you?
+user: No thanks, that is all I need for now.
+assistant: Sure, it is my pleasure to help you. See you again!

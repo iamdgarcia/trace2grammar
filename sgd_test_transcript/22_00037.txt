@@ -1,0 +1,38 @@
+user: I am looking fro something interesting to do on March 5th.
+assistant: Which type of events do you prefer?
+user: I mostly prefer Theater.
+assistant: Which city do you want me to look for the event?
+user: Find me the event in New York City.
+tool(FindEvents): ok n_results=10
+assistant: How about a very popular event called Advanced Acting Scene Study taking place at TGW Acting Studio on March 5th at 6:30 pm?
+user: Okay, The event sounds good to me.
+assistant: Would you like me to book tickets for the event?
+user: Not now. Find me 2 tickets in a bus going there from Washington on March 3rd.
+tool(FindBus): ok n_results=7
+assistant: What do you think of a bus leaving at 6:20 am with the ticket cost of $38?
+user: Find me the names of the stations it arrives at and departs from.
+assistant: The name of the stations are Penn Station and Silver Spring Bus Stop respectively.
+user: Okay. That sounds nice to me.
+assistant: Would you like me to book the tickets for the bus?
+user: No, maybe some other time.
+assistant: Is there anything else I can assist you with?
+user: Yes, Find me a round trip flight to go there.
+assistant: Is your date of departure March 3rd and what is your date of return?
+user: I will be leaving today and will return on the 10th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: How about a direct American Airlines flight whose onward flight leaves at 9:25 pm and the return flight takes off at 6:20 am with the cost of the ticket as $122?
+user: Are there any other flights available on March 5th? I wish to book economy class tickets.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: How about a direct Southwest Airlines flight whose onward flight leaves at 4 pm and the return flight takes off at 5:10 pm with the cost of the ticket as $124?
+user: Okay, That sounds good to me. Find me some hotels in that area.
+tool(SearchHotel): ok n_results=10
+assistant: How about a nice 5 star hotel called 1 Hotel Brooklyn Bridge?
+user: Find me it's price per night?
+assistant: The price per night is $465.
+user: Okay, That sounds nice to me. Now, book me the tickets fro the event you found.
+assistant: Please confirm: You want me to book 2 tickets for Advanced Acting Scene Study taking place in New York on March 5th.
+user: Yes, That is correct. Find me the cost of one ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked your tickets and the cost for one ticket is $30.
+user: Okay. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

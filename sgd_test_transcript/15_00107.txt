@@ -1,0 +1,32 @@
+user: I would like to find a salon.
+assistant: In which city do you prefer the salon to be located?
+user: In SFO will be great.
+tool(FindProvider): ok n_results=10
+assistant: A nice salon in San Francisco is 1512 Barber Shop.
+user: Sounds really good.Find for me a therapist around there.
+assistant: What type of therapist do you need?
+user: I would need a Psychologist.
+assistant: In San Francisco you want to search?
+user: Yes, is good.
+tool(FindProvider): ok n_results=4
+assistant: You can try a Psychologist in San Francisco called Adam E. Pollock.
+user: Where can I find and what is the contact phone number.
+assistant: 100 Masonic Avenue is the address and 415-346-2356 is the phone number.
+user: Sounds okay for me.
+assistant: You need an appointment?
+user: Yes I would like to be at five in the evening and if is possible in 12th of this month.
+assistant: You want to book an appointment at Adam E. Pollock on March 12th at 5 pm.Is OK?
+user: No,try to make it on March 8th at 10:30 in the morning.
+assistant: You want to be on March 8th at 10:30 am.I'm right?
+user: Yes is okay.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is done and you should get an confirmation email soon.
+user: Make for me an appointment at the salon that you found in that day.
+assistant: At what time you want to be?
+user: Make it at five in the evening.
+assistant: You want an appointment at 1512 Barber Shop on March 8th at 5 pm.Is that correct?
+user: Yes, very good.Tell me if is a unisex salon and what is the average rating.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is done.Yes, it is an unisex salon with average rating 4.8.
+user: Thank you.That's all!
+assistant: Have a great day!

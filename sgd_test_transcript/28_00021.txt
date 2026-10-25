@@ -1,0 +1,20 @@
+user: Find me a movie
+tool(FindMovies): ok n_results=10
+assistant: What about ad Astra which Has a rating of 84 out of 100
+user: Nice. Now find me a vegetarian restaurant which is not very costly in Berkeley
+assistant: Which type of food do you prefer
+user: Find me Indian food
+tool(FindRestaurants): ok n_results=5
+assistant: How about Ajanta in Berkeley
+user: That's great. Now book me a table at the restaurant for 3 people on the 13th at two in the afternoon
+assistant: please confirm this: booking a table for 3 people at Ajanta in Berkeley at 2 pm on March 13th
+user: That's perfect. May i know the user rating
+tool(ReserveRestaurant): ok n_results=0
+assistant: Reservation unsuccessful. Do you need anything else?
+user: Make the booking again on the 4th for two people's at evening 6:30
+assistant: Please confirm this: booking table at Ajanta in Berkeley at 6:30 pm on March 4th for 2 people
+user: That's perfect
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking has made successfully
+user: That's all for now. Thank you so much
+assistant: Have a nice day

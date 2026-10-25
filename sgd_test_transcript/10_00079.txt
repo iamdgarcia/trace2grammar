@@ -1,0 +1,14 @@
+user: I would like to find some movies online, specifically featuring Sala Baker.
+assistant: What type of movies are you interested in?
+user: I really like fantasy movies.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie that might interest you. What is your opinion on The Lord of the Rings: The Return of the King?
+user: The Lord of the Rings three sounds really great. I would like to see the movie now.
+assistant: Please confirm these details: playing the movie The Lord of the Rings: The Return of the King with English subtitles.
+user: Yes, that would be great.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun to play.
+user: Thank you very much.
+assistant: What else can I do for you?
+user: Nothing else, thank you.
+assistant: Have a great day.

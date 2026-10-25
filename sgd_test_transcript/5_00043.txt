@@ -1,0 +1,12 @@
+user: Can you review my alarms for me?
+tool(GetAlarms): ok n_results=2
+assistant: Of course. You have a total of 2 alarms set. The first is a 9 am Wake up alarm.
+user: Thank you! Can you add one at half past 4 in the evening and name it Cleaning?
+assistant: You'd like to add an alarm for Cleaning at 4:30 pm. Is this correct?
+user: I'm sorry, I have to change that. I'd like it called Phone home and set it for afternoon 3:15.
+assistant: You'd like an alarm to remind you to Phone home at 3:15 pm. Is that right?
+user: Yes, that's correct.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm had been added.
+user: Great! Thank you for the help.
+assistant: You're welcome. Have a wonderful day!

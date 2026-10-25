@@ -1,0 +1,15 @@
+user: A friend and I are traveling to London soon. I need a house for two people with laundry service. Please find one for me.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses in the London area that meet that criteria. On 1 Addington Street, there is a lovely house with a rating of 4.3.
+user: Such a high rating? That sounds magnificent.
+assistant: I can make a reservation for this house if you wish.
+user: Please do. I'd love to reserve that one. Make the check-in date on March 9th and the date I'll be leaving on the 12th.
+assistant: Reserving a house for 2 people in London. The check in date is March 9th with a check out date of March 12th.
+user: That sounds perfect. Go ahead and reserve that for me.
+tool(BookHouse): ok n_results=1
+assistant: The reservation has been successfully confirmed.
+user: What's around that area to do? What attractions are well-known in London?
+tool(FindAttractions): ok n_results=10
+assistant: There is a Historical Landmark you may be interested in. If so, check out 30 St Mary Axe (The Gherkin). It is a popular attraction in London.
+user: I'll gladly take your advice. That's all I need for the time being. Thank you.
+assistant: My pleasure. Please enjoy your day.

@@ -1,0 +1,11 @@
+user: I am searching for a round trip flight to Seattle, WA
+assistant: From which city you like to depart?
+user: Search flights from Vancouver, BC
+assistant: On which day you like to take the return flight? On what date you want to travel?
+user: I like to start my journey on March 5th and want to take the return flight on next Thursday.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: The connecting flight American Airlines which takes off at 11:20 am and returning flight takes off at 2:20 pm with ticket cost $373.
+user: This is cool.
+assistant: Do you need any other help?
+user: No, thank you very much.
+assistant: Have a nice day.

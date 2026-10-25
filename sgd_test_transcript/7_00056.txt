@@ -1,0 +1,16 @@
+user: I would like to look for a place to live.
+assistant: Are you looking to rent or buy? How many bedrooms and bathrooms would you like the property to have?
+user: I am looking for a property to buy in San Leandro. It needs to have one bedroom and one bathroom.
+tool(FindHomeByArea): ok n_results=6
+assistant: I found 6 houses that meet your criteria. Ashland Village Apartments at 1300 Kentwood Lane costs $1,900,000.
+user: Does that property have a garage?
+assistant: That one doesn't have a garage.
+user: OK, sounds good. I would like to make an appointment to visit the house on March 11th.
+assistant: You would like to visit Ashland Village Apartments on March 11th, is this correct?
+user: Yes, that's correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your appointment to visit the property is scheduled.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No thanks, I'm done now.
+assistant: Have a great day!

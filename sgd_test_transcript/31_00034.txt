@@ -1,0 +1,30 @@
+user: can you find me a salon?
+assistant: where should i look?
+user: can you look in santa rosa?
+tool(FindProvider): ok n_results=9
+assistant: i found 9 for you. how about daredevils & queens in santa rosa?
+user: that works. can you find me a movie around there too?
+tool(FindMovies): ok n_results=10
+assistant: there's after the wedding, fiddler: a miracle of miracles, and good boys.
+user: after the wedding sounds good.
+assistant: do you want to get tickets?
+user: not right now. where's the theater? i want to see it in imax.
+assistant: do you want it for march 2nd?
+user: yes please.
+tool(GetTimesForMovie): ok n_results=1
+assistant: there's 1 show at 8:30 pm at summerfield cinemas.
+user: where's that at?
+assistant: it's located on 551 summerfield road.
+user: that works for me.
+assistant: can i help with something else?
+user: i need an appointment for the salon you mentioned earlier.
+assistant: when do you want it for?
+user: i want it for half past 3 in the afternoon.
+assistant: so you want an appointment at daredevils & queens on march 2nd at 3:30 pm?
+user: yes, is it for boys and girls?
+tool(BookAppointment): ok n_results=1
+assistant: it's been booked. it's not unisex.
+user: thanks so much.
+assistant: is there anything else?
+user: no that's it.
+assistant: have a great day.

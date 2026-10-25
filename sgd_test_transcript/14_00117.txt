@@ -1,0 +1,21 @@
+user: Could you assist me to find some songs? I love Popular songs, song by Kesha and I have been told an album called Rainbow is fab.
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song called Praying by Kesha from the album Rainbow.
+user: Was it out about five years ago?
+assistant: it was released in 2017.
+user: Yes that is the correct one. Now could you recommend any good online movies?
+assistant: What genre do you prefer?
+user: Crime story movies are my thing.
+tool(FindMovies): ok n_results=1
+assistant: What do you think of Pulp Fiction.
+user: Pulp Fiction is a brilliant movie.
+assistant: Will i play it for you?
+user: not right now.
+assistant: What else can I assist you with?
+user: Will you play that song by Kesha?
+assistant: To confirm then Praying will play in the Living Room.
+user: yes that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: that is all I need, thanks.
+assistant: have a lovely day.

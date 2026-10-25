@@ -1,0 +1,29 @@
+user: Can you find me a therapist?
+assistant: What type of therapist and in what city?
+user: I'm looking for a Psychologist in Petaluma.
+tool(FindProvider): ok n_results=4
+assistant: Dunlap Peter T is a Psychologist in Petaluma.
+user: Okay. How's the weather looking there on the 12th?
+tool(GetWeather): ok n_results=1
+assistant: Temperatures should average 78 degrees with a 19 percent chance of rain.
+user: Okay, thank you.
+assistant: Is there anything else I can help you with?
+user: Can you make me an appointment for three pm?
+assistant: To confirm: You would like an appointment with Dunlap Peter T at 3 pm on March 12th.
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, I was unable to make that appointment. Is there anything else you need?
+user: Can you try again? Make it for 12:30 pm.
+assistant: To confirm: You would like an appointment with Dunlap Peter T at 12:30 pm on March 12th.
+user: Correct. What is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: It's 707-782-0400. I'm sorry I was unable to make that appointment. I may be able to make one with Dunlap Peter T at 1 pm on March 12th.
+user: That works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made. You should receive an email confirmation soon.
+user: What's the address?
+assistant: it's 1 Bodega Avenue # 2.
+user: Great. Thanks so much?
+assistant: Is there anything else you need?
+user: No thanks. I appreciate your help.
+assistant: Happy to do so.

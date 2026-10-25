@@ -1,0 +1,25 @@
+user: I need to find a place to live
+assistant: How many baths and in what area? Also for rental or buying?
+user: I need to rent a 2 bath place in San Jose
+assistant: How many bed rooms do you want?
+user: I need 2 bed rooms in the place
+tool(FindHomeByArea): ok n_results=10
+assistant: OK, I found 10 places including 888 Golden Saratoga-Cupertino Apartment Homes at 1546 Maurice Lane that'll cost $2,850
+user: Do they have a a garage and in-home laundry?
+assistant: It doesn't have either unfortunately
+user: Then find me another place please
+assistant: How about this place at Alameda Gardens Apartments at 73 North Keeble Avenue for $2,950
+user: Find me a place with in-unit laundry
+tool(FindHomeByArea): ok n_results=9
+assistant: I found 9 places like that including Almaden House at 2415 Rinconada Drive for $3200
+user: That's great, no book me a property visit
+assistant: For when do you want?
+user: I want to go on March 9th
+assistant: Confirming a March 9th visit to Almaden House
+user: Yes please, also what's their number, and do they have a garage
+tool(ScheduleVisit): ok n_results=1
+assistant: It has been booked and yes there is a garage there. Call them at 408-516-4212
+user: Thanks for doing that
+assistant: Can I do anything else for you?
+user: No that's it for now
+assistant: OK, enjoy your property visit!

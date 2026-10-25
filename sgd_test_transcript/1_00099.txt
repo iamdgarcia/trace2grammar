@@ -1,0 +1,23 @@
+user: I'm hoping to find a hotel where I can stay.
+assistant: In what city please?
+user: In the city of Chi-town please.
+tool(SearchHotel): ok n_results=10
+assistant: All right. Perhaps you'd like the Ac Hotel By Marriott Chicago Downtown, which is a hotel with a 3 star user rating.
+user: What other three star hotels can you recommend? Someplace I can smoke, too, please.
+tool(SearchHotel): ok n_results=10
+assistant: Acme Hotel Company is also a hotel with a 3 star rating.
+user: Where are they located exactly?
+assistant: Of course, the hotel's address is 15 East Ohio Street.
+user: Great, thank you.
+assistant: Shall I make a reservation for you there?
+user: Yes, could you book 1 room for me there starting on March 8th for a five day stay?
+assistant: Confirming your booking at the Acme Hotel Company in Chicago on March 8th, 1 room for 5 days.
+user: My bad, I should have said check-in on the 9th.
+assistant: Confirming your March 9th check-in at Acme Hotel Company.
+user: Yes, thanks. How much is that?
+tool(ReserveHotel): ok n_results=1
+assistant: The room costs $105 nightly. The reservation just completed, so you're all set.
+user: Thank you for your great help.
+assistant: How else may I help you today?
+user: Nothing else right now. Thanks so much.
+assistant: You're very welcome. Have a great day.

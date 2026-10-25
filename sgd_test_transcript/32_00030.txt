@@ -1,0 +1,22 @@
+user: I'd like to search for some Metal songs from the year '19. I've heard good things about the album The Nothing.
+tool(LookupMusic): ok n_results=1
+assistant: How about Cold by Korn from the album The Nothing?
+user: Yes, that's it. Are there any good movies online featuring Brad Pitt?
+assistant: What type of movies do you want?
+user: I like Future scientific fiction movies.
+tool(FindMovies): ok n_results=1
+assistant: How about Ad Astra?
+user: Ad Astra sounds good. Can you play that song?
+assistant: Alright. You want me to play Cold in the Living room, right?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song!
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=2
+assistant: You currently have 2 alarms. There's on for 7:30 am named Get up.
+user: Okay, that's fine.
+assistant: Do you want to add another?
+user: No, I don't need any more.
+assistant: Is there anything else I can do?
+user: No. Thank you so much.
+assistant: Thanks. Have a good one!

@@ -1,0 +1,22 @@
+user: I need to find a salon please.
+assistant: What city should I search in?
+user: I need one in SFO.
+tool(FindProvider): ok n_results=10
+assistant: The 1512 Barber Shop is a nice one in San Francisco.
+user: Yes, that sounds good.
+assistant: Shall I book an appointment for you?
+user: Maybe later. How is the weather there?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature today should be about 91 degrees and there is a 29 percent chance of rain.
+user: Okay, how about next Wednesday?
+tool(GetWeather): ok n_results=1
+assistant: The temperature for the day should be 72 degrees with a 3 percent chance of rain.
+user: How humid is it expected to be?
+assistant: The humidity will be low, around 16 percent.
+user: Sure, okay. I would like to book an appointment with the salon you just found. Please make the appointment for afternoon 2.
+assistant: Please confirm the following details: Booking an appointment at 1512 Barber Shop on March 6th at 2 pm.
+user: Correct. What is the address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. The address is 1532 20th Street.
+user: Thank you very much, that is all I need.
+assistant: My pleasure, have a great day.

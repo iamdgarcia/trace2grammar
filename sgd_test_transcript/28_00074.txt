@@ -1,0 +1,28 @@
+user: I want to find some attractions to visit
+assistant: Which city are you looking for?
+user: I am looking for some free attractions in San Diego
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 options for you. If you like theme park, you should check out belmont park
+user: Cool, help me find a rental car there.
+assistant: What is the booking duration? do you want to pick it up from San Diego?
+user: Yes, I want it from Thursday next week till March 12th
+assistant: What time will you pick it up?
+user: 3:30 in the afternoon suits me
+tool(GetCarsAvailable): ok n_results=8
+assistant: I have 8 cars for you. How about SUV jaguar F-Pace at Santa fe depot?
+user: Cool, book it.
+assistant: Do you need insurance as well
+user: Yes, buy that for me
+assistant: Sure, just need you to confirm. Booking a SUV from March 7th 3:30 pm to March 12th from Santa Fe Depot
+user: Cool, what is its per day cost?
+tool(ReserveCar): ok n_results=1
+assistant: Booking confirmed. It costs $59.00 per day
+user: Thanks, can you share the location of the Santa Fe depot as well?
+assistant: Whom should I share it with?
+user: Share it with Ryan
+assistant: Cool, sharing the location of Santa Fe Depot with Ryan.
+user: Sounds perfect to me
+tool(ShareLocation): ok n_results=1
+assistant: Location successfully shared.
+user: Thanks, that would be all!
+assistant: Have a great time there.

@@ -1,0 +1,41 @@
+user: Can you find a good Family Counselor for me?
+assistant: No problem. Can you let me know which city you would like me to search in?
+user: Sorry about that. Can you find someone in San Jose for me?
+tool(FindProvider): ok n_results=8
+assistant: There is one highly recommended Family Counselor in San Jose you may like. The name of the therapist is Banner Linda L.
+user: Sounds good. Can you give me their address and phone number?
+assistant: They are located at 2516 Samaritan Drive and their number is 408-358-7401.
+user: Awesome. Thanks. Can you book an appointment for next Monday for me?
+assistant: No problem. What time would you like to make your appointment?
+user: Make it for sometime in the evening 5.
+assistant: Okay, just confirm the following. Booking at appointment with Banner Linda L for 5 pm on March 4th. Correct?
+user: Yeah, that sounds good. Thanks.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked successfully. You should receive a confirmation email soon.
+user: Awesome! Thanks a lot, I truly appreciate it. Can you do something else for me as well? I just remembered I need to request a payment.
+assistant: No problem. What's the name of the contact?
+user: I need to make a transaction with Peter.
+assistant: Okay. What amount will be transferred?
+user: The total amount will be for $71.
+assistant: Okay, just confirm the following for me. You are making a public transaction with Peter for $71. This transaction will be visible to the public.
+user: Yes, that's fine.
+tool(RequestPayment): ok n_results=1
+assistant: Okay, your payment request was a success.
+user: Okay. Thanks alot. Could you also find a restaurant around on the same day? I could really use some Comfort Food right now.
+tool(FindRestaurants): ok n_results=2
+assistant: No problem. I've found 2 restaurants you may like. I think you should check out Dickey's Barbecue Pit in San JOse.
+user: What's their number?
+assistant: Their number is 408-725-1686.
+user: What is their price range? Are they expensive?
+assistant: I would say they have a moderate price range. Nothing too bad.
+user: Okay, that sounds good. Can you reserve a table for three people there for the afternoon 12.
+assistant: Okay, please confirm the following details. Booking a table for 3 at Dickey's Barbecue Pit in San Jose on March 4th at 12 pm. Correct?
+user: No, actually I will need a table for four people. Sorry.
+assistant: No problem. Just confirm the following for me. Booking a table for 4 at Dickey's Barbecue Pit. Correct?
+user: Yup, that's works.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Alright your reservation was a success. Enjoy!
+user: Thank you so much. I truly appreciate it.
+assistant: Anything else I can do for you today?
+user: No thanks. That will be all for now. Thanks again!
+assistant: My pleasure. Have a good day.

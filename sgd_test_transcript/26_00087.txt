@@ -1,0 +1,34 @@
+user: Can you find me a train with one business class ticket for the 3rd please
+assistant: Where are you looking to leave from?
+user: I'll be coming from Phoenix, AZ
+assistant: Where are you going?
+user: I'll be ending up in Los Angeles
+tool(FindTrains): ok n_results=5
+assistant: There's a 7 am train that costs $137 you might want to take
+user: What station does it leave from?
+assistant: It leaves from Phoenix Union Station
+user: OK cool now I want to find something interesting to do
+assistant: Do you have a preference for what kind of event?
+user: I want to watch Musical Shows!
+tool(FindEvents): ok n_results=10
+assistant: I found 10 including Ain Gordon who is playing at Ralph Freud Playhouse on March 9th at 7 pm
+user: That sounds ok but can you find me something else?
+assistant: How about Aldous Harding? They're playing at the Lodge Room On March 14th at 7:30 pm
+user: That sounds awesome
+assistant: Do you want to buy tickets for that?
+user: No thanks, not right now
+assistant: Can I do anything else to help you?
+user: Can you find me some attractions please?
+tool(FindAttractions): ok n_results=10
+assistant: There's a Historical Landmark at Angels Flight Railway you might like
+user: Okay thanks for that
+assistant: What else can I assist you with
+user: I want to find a house to stay in with a 4.3 rating and laundry service, for one is good
+tool(SearchHouse): ok n_results=10
+assistant: How about this 4.3 rated place at 1224 Beverwil Drive
+user: What's their number?
+assistant: It's +1 877-334-5623
+user: That house looks great
+assistant: OK do you want to reserve it?
+user: No that's ok for now, thanks for now
+assistant: OK sure, bye!

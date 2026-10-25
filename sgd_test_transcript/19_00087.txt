@@ -1,0 +1,31 @@
+user: I am taking a trip and will be in need of a rental car. Will you find a rental car that is available for pick up around 6 o'clock in the evening on the 12th of March, and that I may return on the 13th.
+assistant: Where will you be picking up the car?
+user: I will be in chi-town.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a SUV you may pick up at Chicago Union station. It is a Dacia Duster.
+user: That one sounds good.
+assistant: Are you interested in reserving the car?
+user: Yes, but not at this time.
+assistant: What else may I help you with today?
+user: I am interested in going to an event and would kike to reserve tickets.
+assistant: What are the number of tickets you wish to purchase?
+user: I am looking at buying 4 tickets.
+assistant: What event interests you and in what city should I search?
+user: Please search for Jon Pardi tickets in San Diego.
+assistant: What date do you wish to attend this event?
+user: Please search the date of March 10th.
+assistant: Please confirm you wish to purchase 4 tickets to Jon Pardi in San Diego on March 10th.
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets have been purchase! Enjoy the concert!
+user: I appreciate your help! Thanks!
+assistant: What else can I assist you with today?
+user: Remember earlier the rental car you found? I would now like you to reserve it for me.
+assistant: Do you wish to add the insurance coverage?
+user: No, I'm not interested in buying the insurance.
+assistant: Please confirm you are picking up a SUV at Chicago Union station on March 12th at 6 pm, and will be returning the car on March 13th. You have elected no insurance.
+user: Great. What will be my cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: This car has been reserved with a cost of $38.00 per day.
+user: Wow, thanks for being so helpful! I am done for now.
+assistant: Enjoy your day!

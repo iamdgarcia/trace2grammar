@@ -1,0 +1,33 @@
+user: I want to change my hair style for which I need a salon to make me good looking. Can you search for the suitable one?.
+assistant: Where do you want to search it? Or let me know your current location to search for the same.
+user: I want to search it in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: I got 9 Salons around your area and what about the one named Daredevils & Queens in Santa Rosa.
+user: That is okay and thanks. Now I want to search for some nice movies around there. Do you have any nice movies in your list?
+tool(FindMovies): ok n_results=10
+assistant: Yes, I have After The Wedding, Fiddler: A Miracle of Miracles and Good Boys in my list. What is y our choice?
+user: I prefer to watch After the wedding. Can you check for the available show times to this movie and any type of show is okay to me.
+assistant: What is your convenient date to check for the show time? Shall I try on March 2nd?
+user: Yes, find a suitable show time on that day.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 show time available at 8:30 pm in Summerfield Cinemas. Is that okay to you?
+user: I want to know some more details. Can you tell me the address of the theater?
+assistant: Yes, it is situated at 551 Summerfield Road.
+user: What type of movie is this?
+assistant: It is a Drama type of movie. Anything else?
+user: No, thanks and this movie is okay to me. Now I want to book an appointment with the Salon that I have selected before for the time at five in the evening.
+assistant: Need you confirmation to book an appointment with the salon Daredevils & Queens on March 2nd for the time at 5 pm.
+user: All are okay but please change the time to evening 6:45.
+assistant: Please confirm to book an appointment at 6:45 pm on March 2nd.
+user: That is correct to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately I was not able to book for that time. Shall I try to book it at another time 6:30 pm at Daredevils & Queens on the same day March 2nd.
+user: That is correct to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed your appointment.
+user: Let me know their contact number and rating.
+assistant: Their phone number is 707-575-5123 and their rating is 4.6.
+user: Thanks for the information.
+assistant: What else you need to do now?
+user: Nothing for now and thanks for everything.
+assistant: Have a good day.

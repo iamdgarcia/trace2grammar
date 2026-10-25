@@ -1,0 +1,15 @@
+user: I need 1 great room in New York city please?
+tool(SearchHotel): ok n_results=10
+assistant: Why not try a top notch 5 star hotel like 1 Hotel Brooklyn Bridge?
+user: Fine, what about a historical Landmark near there that is good for kids?
+tool(FindAttractions): ok n_results=10
+assistant: Well, the Bayonne Bridge is a Historical Landmark in that city.
+user: How may I call them?
+assistant: The phone number is 212-435-7000
+user: Fine, reserve the room Tuesday Next week for six days.
+assistant: Here's what I heard: 1 room for 6 nights at 1 Hotel Brooklyn Bridge on March 5th in New York.
+user: Perfect hearing thanks.
+tool(ReserveHotel): ok n_results=1
+assistant: You have the room.
+user: You really put your foot in it, thanks.
+assistant: You're more than welcome really.

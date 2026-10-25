@@ -1,0 +1,31 @@
+user: What are some good attractions locally?
+assistant: Where are you wanting to check?
+user: Check San Francisco.
+tool(FindAttractions): ok n_results=10
+assistant: Try to visit Alcatraz, it's an iconic Historical Landmark there.
+user: How may I phone for information? Is it child friendlY?
+assistant: Yes, It's historically relevant and kids like it. You can call 415-561-4900.
+user: Fine, how about a movie nearby?
+tool(FindMovies): ok n_results=6
+assistant: Well, you can see Ad Astra, Brittany Runs a Marathon or even Fiddler: A Miracle of Miracles.
+user: Nope, hard pass. Try again.
+assistant: I suggest either Give Me Liberty, Hobbs and Shaw or perhaps Hustlers.
+user: No, I want something better, just a regular type show.
+tool(FindMovies): ok n_results=4
+assistant: Here are another Trio of options of the 4 left: IT Chapter Two, In Fabric, or Labyrinth.
+user: I think IT Chapter TWo sounds interesting.
+assistant: How about some tickets then?
+user: No, maybe I should see something online. Can you suggest a Fantasy movie?
+tool(FindMovies): ok n_results=2
+assistant: You could see either Labyrinth or The Lord of the Rings: The Return of the King.
+user: Labyrinth sounds good, Let's just watch now.
+assistant: To confirm these details: Watch Labyrinth now with English Subtitles.
+user: No give me Hindi Subtitles.
+assistant: To Confirm: Playing Labyrinth with Hindi Subtitles.
+user: yes, do that.
+tool(PlayMovie): ok n_results=1
+assistant: I'm starting the show now.
+user: Fine, thanks.
+assistant: What more can I get you?
+user: Nothing, I'm good.
+assistant: Enjoy labyrinth now.

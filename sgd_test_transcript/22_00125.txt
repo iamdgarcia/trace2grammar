@@ -1,0 +1,40 @@
+user: I would like to find a funny movie featuring Ana de Armas.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie Yesterday.
+user: Yesterday seems like a good movie.
+assistant: Would you like to play the movie?
+user: Maybe later, not at the moment.
+assistant: Can I help with something else?
+user: I would like to find an attraction.
+assistant: In which area should I search?
+user: I would like an attraction in Chi-town.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions. There is 360 Chicago that is a tourist attraction.
+user: I would like to find a Museum.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions. There is Chicago Children's Museum it's a nice Museum.
+user: Is there an entrance fee?
+assistant: Yes, there is a entry fee.
+user: I would like to find a song to play.
+tool(LookupMusic): ok n_results=10
+assistant: There is Arty Hearty by Baby Genius from the album Anthropology.
+user: Yes, that is a good song.
+assistant: Would you like to play the song?
+user: I would like to play the song on any device.
+assistant: Playing Arty Hearty in the living room.
+user: Yes, that sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music that is playing.
+user: What type of music is this song and what year did it come out?
+assistant: It's a pop song from the year 2014.
+user: Can you play the movie previously found?
+assistant: Playing Yesterday with english subtitles.
+user: I would like to watch it with Hindi subtitles.
+assistant: Playing Yesterday with Hindi subtitles.
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie started playing.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day!

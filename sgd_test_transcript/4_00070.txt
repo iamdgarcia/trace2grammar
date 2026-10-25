@@ -1,0 +1,16 @@
+user: I need to search for a bus, can you help me?
+assistant: On which date and from where will you depart, and to what destination?
+user: I'm planning on leaving on the 13th of March to Long Beach, CA, from SFO.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses available for that trip, would you be fine with a $46 fare bus departing at 7 am?
+user: Can you tell me its departure and arrival stations?
+assistant: The bus will arrive at Downtown Station, it departs from Transbay Terminal.
+user: Is there another direct bus that you can find, for three people?
+tool(FindBus): ok n_results=6
+assistant: From 6 buses, would you be interested in a bus that departs at 7:40 am that costs $44?
+user: That sounds good, thanks.
+assistant: Would you like to buy tickets to this bus?
+user: Not at the moment, thanks for the offer?
+assistant: Will that be all I can help you with today?
+user: That is all, thanks a lot for your help.
+assistant: Your welcome, have a great day.

@@ -1,0 +1,30 @@
+user: I will be out of the area and I need a house to stay in.
+assistant: In which city?
+user: In paris, France.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options. How about a lovely house on 1 Rue Bayard, 75008 that has a rating of 4.5?
+user: Is laundry service available?
+assistant: Yes it is.
+user: What else is there?
+assistant: There is lovely house on 1 Rue Daunou, 75002 that has a rating of 4.1.
+user: I do not like that street. Is there anything else available?
+assistant: There is a lovely house on 1 Rue de Libourne, 75012 that has a rating of 4.4.
+user: May I have a contact number for there. Do they have laundry service?
+assistant: The number is +33 1 44 67 34 00 and there is laundry service available.
+user: I want to stay there.
+assistant: You would like to reserve the house?
+user: Yes, I would. I will be checking in Wednesday next week and checking out on the 10th.
+assistant: How may persons would be in your group
+user: Just 1, only me. I want to check out on the 13th of March.
+assistant: You would like to reserve the house in paris for 1 person, checking in on March 6th and checking out on March 13th?
+user: No, there are 4 people in my group.
+assistant: There would be 4 people staying at the house and you would be checking out on March 13th?
+user: I will be checking in on the 11th.
+assistant: You would be checking in at a house in paris on March 11th?
+user: Yes, that would be fine. What is the total cost?
+tool(BookHouse): ok n_results=1
+assistant: I have reserved the house. The full cost is $696.
+user: Thanks a lot.
+assistant: Would you like anything else?
+user: No, not at this time.
+assistant: Enjoy your day.

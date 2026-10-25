@@ -1,0 +1,22 @@
+user: I would like to find attraction to visit. A wildlife spot that is child-friendly.
+assistant: In what location are you looking?
+user: I'm looking for attraction in SFO.
+tool(FindAttractions): ok n_results=2
+assistant: There is Aquarium of the Bay that is a Nature Preserve.
+user: I would like to find a movie in that area.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies. There is Ad Astra, Brittany Runs a Marathon and Fiddler: A Miracle of Miracles?
+user: Ad Astra sounds like a good movie.
+assistant: Would you like to purchase tickets?
+user: No, not at the moment.
+assistant: Can I help with something else?
+user: I would like to find a movie online. Supernatural movies featuring Javier Botet.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie: It Chapter Two.
+user: Yes It Two is great, play it with english subtitles.
+assistant: Playing IT chapter two with english subtitles.
+user: Yes, that sounds good.
+tool(PlayMovie): ok n_results=1
+assistant: The movie started playing.
+user: That is all I needed.
+assistant: Have a good day.

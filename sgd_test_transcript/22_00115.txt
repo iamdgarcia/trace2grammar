@@ -1,0 +1,31 @@
+user: I have a nice plan that I want to watch a movie online. Can you help me to search for some movies to watch it online?
+assistant: Yes, let me know your favorite kind of movies to search for.
+user: I like to watch Scary movies and you can search it in the similar type.
+tool(FindMovies): ok n_results=6
+assistant: I got 6 movies and what is your choice among the movies like 47 meters Down: Uncaged, In Fabric and Midsommar?
+user: I like to go with Midsommar and I fix this. Now, I want to go to a Museum. Can you help me to find a nice place like this?
+assistant: Yes, I can help you. Where do you want to find the Museum?
+user: I want to find it in Berlin.
+tool(FindAttractions): ok n_results=10
+assistant: I found one Museum which is Alte Nationalgalerie. Do you like to visit this place?
+user: Can you check whether the entrance to this place is free and also I want to confirm whether this place is the safest one for Kids too.
+assistant: This is the safest place for kids also but No free entrance available there.
+user: That's nice. search for some songs now.
+tool(LookupMusic): ok n_results=10
+assistant: Do you like to hear The Trip by Still Corners from the album Strange pleasures?
+user: Yes, I fix this and thanks.
+assistant: Shall I play it now?
+user: Yes, do it now.
+assistant: Please confirm to play the song The Trip in your living room speaker.
+user: That's correct to proceed and let me know the type of this song.
+tool(PlayMedia): ok n_results=1
+assistant: This is an Electropop song and the same was started playing now. You can enjoy the music.
+user: Let me know whether it is from seven years ago?
+assistant: This song was released in the year 2013.
+user: Thanks for the details. Now, please play the movie that I have selected before with or without subtitles.
+assistant: Please confirm to play the movie Midsommar with English Subtitles.
+user: confirmed. Go ahead. What is the name of actor in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: William jackson Harper acted in this movie and the same was started playing now.
+user: Thank you so much and that's all.
+assistant: Have a great day.

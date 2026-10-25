@@ -1,0 +1,24 @@
+user: Will you reserve 4 tickets for Brockhampton on 13th of March?
+assistant: Which city?
+user: Events in Philadelphia.
+assistant: Confirm 4 tickets reserved for Brockhampton in Philadelphia on March 13th.
+user: Wonderful. Location?
+tool(BuyEventTickets): ok n_results=1
+assistant: I've reserved your tickets. Location is 29 East Allen Street.
+user: Thanks. Can I get there by bus?
+assistant: You looking for a bus on March 13th? Departing city?
+user: I prefer to leave from Washington on Sunday this week.
+tool(FindBus): ok n_results=7
+assistant: Found a bus leaving at 8:30 am for $29.
+user: Anything else? I prefer a direct bus departing from NYC.
+tool(FindBus): ok n_results=7
+assistant: Found a bus leaving at 7:40 am for $23.
+user: Great. Will you buy bus tickets?
+assistant: Confirm tickets for 4 on a bus departing from New York to Philadelphia on March 3rd at 7:40 am.
+user: Cool. Departing and arriving station?
+tool(BuyBusTicket): ok n_results=1
+assistant: I've reserved your ticket. Bus leaves from Penn Station and arrives at 10th and Filbert.
+user: Thanks.
+assistant: Anything else?
+user: That's all.
+assistant: Have a wonderful day.

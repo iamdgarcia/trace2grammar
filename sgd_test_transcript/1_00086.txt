@@ -1,0 +1,16 @@
+user: Me and my boyfriend are hoping you can recommend a four star hotel. We are hoping to get one room.
+assistant: Is there a certain city you prefer the hotel to be in?
+user: London, England is where we would prefer to get a hotel room.
+tool(SearchHotel): ok n_results=10
+assistant: My search located 10 hotels with a 4 star rating. One of the hotels is called Ace Hotel London.
+user: I will trust your choice.
+assistant: I can make a reservation for you if you like.
+user: I would like a reservation, thank you. My preferred check in date is the 5th of March. I would like to book the room for 7 days.
+assistant: With your approval I will reserve 1 room at the Ace Hotel London on March 5th for 7 days. This hotel is in London.
+user: You have my approval, thank you.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation has been made.
+user: That's great. You are a wonderful assistant.
+assistant: What else may I assist you with?
+user: I do not need further help. I appreciate your assistance.
+assistant: Don't hesitate to ask for anything else. You have a great day.

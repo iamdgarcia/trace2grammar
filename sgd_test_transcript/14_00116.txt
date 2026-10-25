@@ -1,0 +1,19 @@
+user: Find me some Pop songs from '19 on the Ores Aixmis album.
+tool(LookupMusic): ok n_results=1
+assistant: Do you like Nixta Ginontai Ta Thavmata by Malou Kyriakopoulou on the Ores Aixmis album?
+user: That is perfect. Find me a movie to watch on the Internet.
+assistant: What genre of movies shall I look in?
+user: Search for Sci-fi movies starring Cy Young.
+tool(FindMovies): ok n_results=1
+assistant: Do you like Close Encounters of the Third Kind?
+user: I love Close Encounters of the Third Kind.
+assistant: Shall I cast the movie for you now?
+user: No, not right now.
+assistant: Do you need anything else?
+user: Cast that song from before to the speaker outside.
+assistant: You wish to cast the song Nixta Ginontai Ta Thavmata to the Patio, correct?
+user: That is right.
+tool(PlayMedia): ok n_results=1
+assistant: Your song has started.
+user: Thanks a bunch. That is everything for now.
+assistant: Have a great day.

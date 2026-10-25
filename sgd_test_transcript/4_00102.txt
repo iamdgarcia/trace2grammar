@@ -1,0 +1,11 @@
+user: Hi, could you search for a bus for me please?
+assistant: Sure, where and when do you plan to depart to and where will you be departing from?
+user: I would likely depart from San Diego tomorrow and visiting Los Angeles.
+tool(FindBus): ok n_results=10
+assistant: I see, there are 10 available buses, how about a bus departing at 9:10 am costing $26?
+user: Are there any alternatives?
+assistant: How about the bus departing at 9:20 am costing $27?
+user: Sure, that sounds great!
+assistant: Would you like to purchase tickets for this bus ride?
+user: No thanks , that is all I need for now.
+assistant: Sure, have a great day ahead!

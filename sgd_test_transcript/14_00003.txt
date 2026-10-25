@@ -1,0 +1,15 @@
+user: I'd like to see several films online, and some scientific fiction films will be lovely.
+tool(FindMovies): ok n_results=2
+assistant: What do you think of Ad Astra or Close Encounters of the Third Kind?
+user: I'd love ad Astra.
+assistant: Would you like to cast the film?
+user: Yeah, I'd like to cast the film.
+assistant: Please verify the following informatio: cast Ad Astra with English subtitles.
+user: Yeah, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: The film began casting.
+user: What is the climate like in Toronto, Ontario?
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for today ought to be 58 degrees Fahrenheit with a 13 percent probability of raining.
+user: Sure, alright. That's all; see ya!
+assistant: Have a pleasant afternoon.

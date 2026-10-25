@@ -1,0 +1,40 @@
+user: I want to visit an attraction soon. Something like a natural spot. Can you recommend some?
+assistant: I'd be happy to help if you tell me the city to look in.
+user: I'm looking for natural spots in the NYC area.
+tool(FindAttractions): ok n_results=8
+assistant: Here are 8 attractions that fit your criteria. The first is a Nature Preserve called Castle Clinton National Monument.
+user: How much does it cost for entry? It is free by any chance?
+assistant: I am sorry but the entry is not free at this location.
+user: No worries. Can you provide the phone number?
+assistant: The phone number to this attraction is 212-344-7220.
+user: Thanks for that. In the meantime, tell me about more attractions you found.
+assistant: What about the Central Park Zoo? It's a Nature Preserve located in NYC.
+user: That sounds great. Moving on, let's find a nice rental car.
+assistant: Will you be picking up the car in New York? If so, what time will you pick it up and what time will you return it?
+user: Yep. I want one in New York. I'll pick it up at afternoon 2 and return it on the 3rd of March.
+assistant: When will you began the car rental? Please provide a date.
+user: I'm looking to rent a Sedan from the 1st.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I have found a nice vehicle. It is an Audi A8 Sedan that you can pick up from JFK International Airport.
+user: That sedan sounds good to me. Please let me reserve that rental car.
+assistant: Would you like insurance added on?
+user: Nah. I don't think I want insurance right now.
+assistant: Confirm your car rental details: On March 1st at 2 pm, you will pick up a Sedan from JFK International Airport. The drop-off date is March 3rd. This car is without insurance.
+user: Those car rental details are correct. Tell me what the price is per day.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car. It only costs $29.00 a day to rent the Audi A8 sedan.
+user: Can you share this location for me?
+assistant: I can. Please provide the name of the individual with whom you wish to share it.
+user: I'd like to share the location with Christian please.
+assistant: What location are you trying to share? Are you sharing the address Central Park Zoo?
+user: Yes please. I want to share it with Elizabeth if possible.
+assistant: Now sharing the location Central Park Zoo with Elizabeth. Do you want me to proceed?
+user: No. That is not correct. I want to share the address JFK International Airport.
+assistant: Confirm these sharing details: Sharing the JFK International Airport location with Elizabeth.
+user: That is correct. Thank you in advance.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared with Elizabeth.
+user: Thank you very much. You've been helpful as always.
+assistant: I'd be happy to help you with anything else you may need.
+user: I don't need anything else now but thank you.
+assistant: If that is the case, have a great day.

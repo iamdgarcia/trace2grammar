@@ -1,0 +1,30 @@
+user: Find me a movie to watch.I would like a regular show.
+assistant: What is your exact location?
+user: Search for movies shown in Santa Clara.
+tool(FindMovies): ok n_results=9
+assistant: What do you think about Ad Astra, Angel Has Fallen or Chhichhore?
+user: Anything else you can find?
+assistant: How about Good Boys, Hustlers or IT Chapter Two?
+user: I like Good Boys.Search for me now please some songs.
+tool(LookupMusic): ok n_results=4
+assistant: What you think about album Sweet Talker by Jessie J and song Masterpiece?
+user: Anything else?I really enjoy songs by Radwimps.
+tool(LookupMusic): ok n_results=4
+assistant: I have 4 songs that can fit.What about album Your Name by Radwimps and song Dream Lantern ?
+user: What type of music is?
+assistant: This is a rock song.
+user: Anything else you can find?
+assistant: What do you say about Nandemonaiya by Radwimps from album Your Name?
+user: Yes, I like this one.
+assistant: You want to play this song?
+user: Sure, cast it on living room device.
+assistant: Play the song Nandemonaiya in Living room.I'm right?
+user: Yes, that's true.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: This is from '19?What type of music is ?
+assistant: This is a rock song from 2016.
+user: Thank you very much.
+assistant: Can I still be useful?
+user: No.Thank you very much.
+assistant: Have a great day!

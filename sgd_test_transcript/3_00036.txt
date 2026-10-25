@@ -1,0 +1,9 @@
+user: Hi! Can you help me find a round trip flight?
+assistant: I'd be happy to. Where will you be departing from and when will you be returning?
+user: I'd like to find a flight from Atlanta for the 13th of this month.
+assistant: What day will you begin your trip and what is your destination?
+user: I'd like an Economy ticket on a Southwest Airlines flight departing San Fran next Thursday.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight that matches your criteria. There is a Southwest Airlines flight leaving at 10:20 am and returning at 6:45 pm for $287.
+user: That will work. Thanks for your help.
+assistant: You're welcome. Have a wonderful trip.

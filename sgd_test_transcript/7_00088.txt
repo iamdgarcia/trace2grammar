@@ -1,0 +1,17 @@
+user: I'm looking for two movie tickets for Good Boys.
+assistant: What area do you want to see the movie? Do you want a 3d or regular show?
+user: I want to see the a regular show in Milpitas.
+assistant: When do you want to watch the movie?
+user: I want to see IT Chapter Two on the 7th of March.
+assistant: What time do you want to see the movie?
+user: I want to see it at eleven pm.
+assistant: Okay, I have 2 regular tickets for IT Chapter Two on March 7th at 11 pm in Milpitas, correct?
+user: Yes, that sounds good. What theatre is the movie at?
+tool(BuyMovieTickets): ok n_results=1
+assistant: I have purchased the tickets and the theatre is Century 20 Great Mall and XD.
+user: What is the address of the theatre and how much are the tickets?
+assistant: The address is 1010 Great Mall Drive and the tickets are $11 per person.
+user: Thank you!
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

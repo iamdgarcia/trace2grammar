@@ -1,0 +1,24 @@
+user: I will be travelling soon and need a round trip flight, please help me find one.
+assistant: On what day will you be travelling and which city are you departing from?
+user: I plan to leave on March 6th from LAX.
+assistant: What day will you be returning and where are you travelling to?
+user: I will be going to ATL and returning on March 13th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: How about travelling with American Airlines? I found 4 flight for you. The departing flight leaves at 3:05 pm. It's a direct flight. The returning flight will be taking off at 7:25 am. The cost for the ticket is $265.
+user: That works well for me. I'll also need a house to stay at.
+tool(SearchHouse): ok n_results=10
+assistant: I managed to find 10 houses that you may like to stay at. There's one with a 4.3 rating located at 101 Andrew Young International Boulevard Northwest.
+user: That sounds great. I'd like to book that one for 1 person. I want to check out on March 13th and check in on March 6th.
+assistant: So you'd like to book it for 1 person in Atlanta and check in on March 6th and check out on March 13th. Is this correct?
+user: No, actually I want to check out on the 10th of this month and there will be two people.
+assistant: So there are now 2 people in your group and you'd like to check out on March 10th. Is this correct?
+user: That's perfect. What is their phone number and what is the total price?
+tool(BookHouse): ok n_results=1
+assistant: Your house has been booked! The cost is $1,152 and you can call them at +1 404-876-8888.
+user: Are there any attractions you can show me?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. I suggest Al-Farooq Masjid, it's a place of worship.
+user: Is there anything else you can find me?
+assistant: I suggest a park called Atlanta Botanical Garden.
+user: That's good. Ok that's all I needed, thank you.
+assistant: Have a great day!

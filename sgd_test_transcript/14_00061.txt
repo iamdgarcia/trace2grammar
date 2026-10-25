@@ -1,0 +1,19 @@
+user: I'd like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: I have found 10 movies that would work. How does Theatre of Blood sound? It has a rating of 93 out of 100.
+user: Who directed it?
+assistant: The movie was directed by Douglas Hickox.
+user: That would be great. I'd like to find some music now.
+tool(LookupMusic): ok n_results=10
+assistant: How about the song Cold by Korn from their album The Nothing?
+user: What other songs do you have?
+assistant: How about Only You by Ric Hassani from The African Gentleman?
+user: What genre is it?
+assistant: It's a pop song.
+user: Yes, that would be great. I'd like to play the song on the living room device.
+assistant: Please confirm the following: You want to play the song Only You in the Living Room.
+user: Yes, that would work. Is the song from 2018?
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy. And the song is from 2017.
+user: Thanks, that's all for now!
+assistant: Have a great day!

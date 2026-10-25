@@ -1,0 +1,19 @@
+user: I'll be travelling to Sydney, Australia and need a house for 1 person to stay. Its rating should be 4.4 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: 110 Cumberland Street, The Rocks New South Wales 2000, Australia is among 10 nice houses that might interest you. It has a rating of 4.4.
+user: May I have their phone number?
+assistant: Their contact number is +61 2 8272 0900.
+user: It's a great house and I'd like to book it. My check-out date is the 10th.
+assistant: May I have your preferred check-in date please?
+user: I'd like to check in on 7th of this month.
+assistant: Okay. Let me see if I got everything correctly: 1 person checking into the house in Sydney on March 7th, and checking out on March 10th?
+user: That is correct. May I know the total cost? Also, please check whether the place has laundry service.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. This place offers laundry service and the total cost is $1,860.
+user: Thank you very much. You've been very helpful. I also plan on taking my nephew out while there. Could you also help me find any type of child-friendly attraction?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. I highly suggest that you visit the Sports Venue known as ANZ Stadium.
+user: All right. Cool.
+assistant: Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a great time!

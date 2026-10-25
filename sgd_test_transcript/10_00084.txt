@@ -1,0 +1,14 @@
+user: I'm in the mood for some family movies.
+tool(FindMovies): ok n_results=2
+assistant: I got 2 of them, steel magnolias and the farewell.
+user: farewell is fine with me
+assistant: I can play it right away if you wish
+user: yes, do it please
+assistant: confirm me the next step. I'll play the farewell with english subtitles.
+user: I confirm. Who's in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: the movie is playing. there's zhao shuzhen in the movie
+user: good
+assistant: can I assist you furthermore?
+user: No you can't
+assistant: Enjoy your pick.

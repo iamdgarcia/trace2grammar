@@ -1,0 +1,19 @@
+user: I am looking for a Tourist Attraction in London, England.
+tool(FindAttractions): ok n_results=10
+assistant: I have found 10 results including a Tourist Attraction called Banqueting House.
+user: Great, now I need to find a house with laundry service to stay at while I am there.
+tool(SearchHouse): ok n_results=10
+assistant: I have found one with a 4.3 rating at 1 Addington Street.
+user: That sounds great.
+assistant: Do you want me to make you a reservation there?
+user: No, not at this time. However I would like to find a Economy round trip tickets there with American Airlines from San Fran.
+assistant: When do you plan on traveling?
+user: I plan to travel Saturday this week.
+assistant: When would you be returning?
+user: I want to return the 9th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have found 1 flight with American Airlines that leaves at 4:55 am and the return flight leaves at 12:45 pm that costs $594. Would you like that one?
+user: When would that flight arrive at my destination? And when to does the returning flight arrive?
+assistant: The destination flight arrives at 6:47 am and the return flight arrives at 1:05 am.
+user: Thanks, I am all set for now.
+assistant: Have a great day.

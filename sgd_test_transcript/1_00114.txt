@@ -1,0 +1,18 @@
+user: I'm searching for a hotel.
+assistant: What metropolis ought I search for hotels at?
+user: I'm searching for hotels in Los Angeles, since I require one room.
+tool(SearchHotel): ok n_results=10
+assistant: I discovered 10 hotels suitable for you. There is a 3 star hotel known as Ac Hotel By Marriott Beverly Hills.
+user: Do you have some alternative hotels suitable for me?
+assistant: There is a 3 star hotel known as the Airtel Plaza Hotel.
+user: That's perfect. I want to book the hotel for three days.
+assistant: What time do you intend to check in?
+user: I in tend to check in on the 11th of this month.
+assistant: Please verify the following information: you'd like 1 room for 3 days at the Airtel Plaza Hotel, located in Los Angeles, with the check-in day being March 11th.
+user: Yeah, that's fine with me. How much does it cost, and what is their contact number?
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel reservation is complete. The hotel price is $144 per day, and their contact number is +1 818-997-7676.
+user: Thank you; you've been a huge assistance.
+assistant: Could I assist you with something else?
+user: Nope; thank you for your helpful assistance.
+assistant: Farewell, and have a pleasant day!

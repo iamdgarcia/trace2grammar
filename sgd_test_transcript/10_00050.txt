@@ -1,0 +1,16 @@
+user: Hi, could you help me search for some Mystery movies online?
+tool(FindMovies): ok n_results=2
+assistant: Would you like to watch Luce or Official Secrets?
+user: Are there any alternatives?
+tool(FindMovies): ok n_results=0
+assistant: No, there isn't. How can I further assist you?
+user: Could you help me find for Ghost movies featuring Ian Hendry instead then?
+tool(FindMovies): ok n_results=1
+assistant: Would you like to watch Theatre of Blood then?
+user: Sure, theatre of blood sounds great! Could you play it for me now?
+assistant: Please confirm your request to play the Theatre of Blood with English subtitles.
+user: That is fine with me.
+tool(PlayMovie): ok n_results=0
+assistant: Sorry, I was not able to play your movie. Could I help you in some other way?
+user: No, that is all. Thank you!
+assistant: Have a pleasant day ahead!

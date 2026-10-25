@@ -1,0 +1,26 @@
+user: Can you find some attractions to visit?
+assistant: Where do you want to find attractions?
+user: I'm looking for attractions in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions. Alcatraz is a historical landmark.
+user: Is it kid-friendly? What is the entrance fee?
+assistant: Entry is free. Yes, it is child-friendly.
+user: Okay, thank you. I want to find a movie to watch there. I want to watch a movie at Four Star Theatre.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies. What about Luce or Once Upon a Time In Hollywood?
+user: Once Upon a Time sounds good.
+assistant: Do you want to buy tickets?
+user: No, not right now.
+assistant: Anything else I can do for you?
+user: I want to find some movies online. Cartoon movies or movies featuring Thurop Van Orman.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie. How about The Angry Birds Movie 2?
+user: The Angry Birds sounds good.
+assistant: Do you want to play this movie?
+user: Yes, thank you.
+assistant: Please confirm: playing The Angry Birds Movie 2 with English subtitles.
+user: Yes, thank you.
+tool(PlayMovie): ok n_results=0
+assistant: Cannot play the movie right now. Anything else I can do for you?
+user: No, thank you.
+assistant: Have a great day!

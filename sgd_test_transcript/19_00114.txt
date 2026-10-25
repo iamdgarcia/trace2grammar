@@ -1,0 +1,35 @@
+user: I'm looking for a rental car.
+assistant: What day and time do you want to pick it up?
+user: I want to pick it up on March 7th at 16:30.
+assistant: Where do you want to pick the car up from?
+user: I want to get it from KL.
+assistant: How long do you need the car?
+user: I need it until the 12th of March.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is an Alfa Romeo Stelvio SUV available at KLIA International Airport.
+user: That sounds good.
+assistant: Do you want to reserve the car?
+user: Yes, but not right now. I'd like to buy tickets to an event.
+assistant: When do you want to go?
+user: I want to go on the 4th of March.
+assistant: What event do you want to go to?
+user: I want to visit the Sad Summer Festival.
+assistant: How many tickets do you need?
+user: I just need one ticket.
+assistant: What city is the event taking place?
+user: It is in NY.
+assistant: Okay, you want to purchase 1 ticket for the Sad Summer Festival in New York on March 4th, right?
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have purchased the ticket, enjoy!
+user: Thank you! I'd also like to reserve that rental car now.
+assistant: Do you want to add insurance?
+user: No, I don't.
+assistant: Okay, you'd like to reserve an SUV at KLIA International Airport from 4:30 pm on March 7th until March 12th and you don't need insurance, right?
+user: Yes, that sounds good. How much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed the reservation. The car is $33.00 per day.
+user: Okay, thank you.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.

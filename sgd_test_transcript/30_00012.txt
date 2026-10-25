@@ -1,0 +1,25 @@
+user: Hi, could you get me tickets for the Frances Ruffelle event in NY on Saturday this week?
+assistant: Sure, how many tickets are you looking to get?
+user: Just 2 will do. Thanks.
+assistant: Please confirm your purchase of 2 tickets for the Frances Ruffelle event in new york on March 2nd.
+user: That is fine with me. May I know where and what time does the event commence?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. It will start at 6 pm at The Green Room 42.
+user: I see, could you get me a direct bus ride there too?
+assistant: Will you be departing on March 2nd?
+user: No, I will be leaving later today.
+assistant: I see, and where will you be departing from?
+user: Likely fro Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses you might like, how about the 9 am bus costing $23?
+user: May I know which station will I depart from and arrive at?
+assistant: You will be travelling from 10th and Filbert and arriving at Penn Station.
+user: Sounds great, could you get me the bus tickets please?
+assistant: Please confirm your purchase for 2 bus tickets for the bus ride from Philadelphia to New York at 9 am on March 1st.
+user: Could you include excess luggage too?
+assistant: Please confirm your purchase for 2 bus tickets for the bus ride from Philadelphia with extra luggage.
+user: Sure, that is fine with me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket purchase has been made.
+user: That is all I need, thank you!
+assistant: Have a great day ahead!

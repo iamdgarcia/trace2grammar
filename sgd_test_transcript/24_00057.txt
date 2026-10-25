@@ -1,0 +1,21 @@
+user: I would like to find a movie to watch at the theater.
+assistant: What city would you like to look in?
+user: Let's find out what movies are playing in Berkeley.
+tool(FindMovies): ok n_results=8
+assistant: I found 8 movies, including A Faithful Man, Blinded by the Light, and Good Boys.
+user: A Faithful Man will be great.
+assistant: Would you like to buy tickets for the movie?
+user: No, I don't want to buy the tickets yet. I would like to book a table for 4 at a restaurant in the same city on the 8th of this month at 11:30 in the morning.
+assistant: What restaurant would you like to make reservations at?
+user: See if you can get me a table at Priya, please.
+assistant: You would like to book a table for 4 at Priya Indian Cuisine in Berkeley at 11:30 am on March 8th, is that correct?
+user: Yes, that sounds right. What is the address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful. The street address is 2072 San Pablo Avenue.
+user: Thank you very much. What time is the movie you found playing at Shattuck Cinemas? Any type of show works.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's a show at 9:30 pm at Landmark's Shattuck Cinemas.
+user: That sounds good, thanks.
+assistant: Is there anything else I can help you with?
+user: No, I'm all set, thank you for your help.
+assistant: Have a great day!

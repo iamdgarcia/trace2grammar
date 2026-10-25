@@ -1,0 +1,13 @@
+user: Can you get me tickets to watch the movie Good Boys on the 9th of this month?
+assistant: Do you prefer a regular or imax show, what show time do you prefer and how many tickets do you need?
+user: I'd like four tickets to the regular show t half past 9 in the night.
+assistant: In which location would you like to watch the movie?
+user: In Santa Rosa please.
+assistant: Please confirm that you need 4 tickets to watch a regular show of the movie Good Boys at 9:30 pm on March 9th in Santa Rosa.
+user: Sounds perfect to me.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets have been reserved successfully.
+user: What is the genre of the movie? Can you get me the address of the theater?
+assistant: It's a comedy and the theater is located at 409 Aviation Boulevard.
+user: Thank you for the assistance. That's all I need for now.
+assistant: Have a great day!

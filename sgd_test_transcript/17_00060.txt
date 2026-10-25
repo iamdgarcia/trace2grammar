@@ -1,0 +1,19 @@
+user: Could you find me a train?
+assistant: For what date, and what's your destination?
+user: I want to go to Anaheim, CA thursday next week.
+assistant: Where are you departing from?
+user: San Francisco.
+tool(FindTrains): ok n_results=7
+assistant: I have 7 options. How about this one leaving at 7:10 am for $94.
+user: Where does it depart from and arrive at?
+assistant: It departs from the salesforce transit center and arrives at the Anaheim intermodal center.
+user: That sounds good.
+assistant: Do you want to book tickets?
+user: No but i'd like to find a house with a rating of 4.3 or higher to stay in.
+tool(SearchHouse): ok n_results=10
+assistant: I have 10 options. How about this one at 1160 west ball road with a rating of 4.3.
+user: Do you have anything else, with at least a 4.2 rating?
+tool(SearchHouse): ok n_results=9
+assistant: I have 9 options. How about 1050 west ball road with a rating of 4.2
+user: SOunds good, i'm all set.
+assistant: Hope you have a great day.

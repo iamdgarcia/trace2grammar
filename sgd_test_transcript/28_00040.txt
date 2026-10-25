@@ -1,0 +1,26 @@
+user: I want to see a movie with Steve Terada in it.
+tool(FindMovies): ok n_results=1
+assistant: I recommend you 1 movie. It is The Art of Self-Defense. The average rating for it is 83 out of 100.
+user: Perfect. I also need a restaurant there.
+assistant: What area shall I look in?
+user: I want a restaurant in Oakland.
+assistant: What cuisine food are you searching for?
+user: I want Cantonese food.
+tool(FindRestaurants): ok n_results=7
+assistant: In Oakland you can go to this nice restaurant called Becky's
+user: What is the user rating for the restaurant?
+assistant: The user rating is 4.3.
+user: Great. I want a table at the restaurant.
+assistant: What would the timing of reservation be?
+user: I want to reserve it at evening 7:45.
+assistant: So you confirm that you want a table booked at Becky's in the city of Oakland. You want it reserved at 7:45 pm on March 1st. You want it reserved for 2 people.
+user: That is all correct. Is the restaurant expensive?
+tool(ReserveRestaurant): ok n_results=0
+assistant: I couldn't make the reservation, sorry. Shall I do anything else for you?
+user: Make another attempt to book the table for 16:45.
+assistant: So want a table booked at Becky's for 2 people in Oakland at 4:45 pm on March 1st?
+user: Yeah that should do.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I made your booking successfully.
+user: Thanks very much. That will be all.
+assistant: Have a great day!

@@ -1,0 +1,10 @@
+user: You have to help me in finding a hotel.
+assistant: Where?
+user: Rio de Janeiro
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options available. I got a 2 star hotel called Atlantico Copacabana Hotel.
+user: Look for a 3 star hotel, I only need 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: I've found a 3 star, it's the Clh Suites Copacabana Domingos Ferreira
+user: I like it, thanks. Bye
+assistant: Have a wonderful day!

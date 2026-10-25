@@ -1,0 +1,28 @@
+user: I need to buy travel tickets.
+assistant: Where and when are you goin?
+user: I am going to Anaheim on March 7th.
+assistant: Where are you leaving from? How many tickets?
+user: There are 3 people leaving Los Angeles at 14:30.
+assistant: Here is your reservation, 3 tickets on the bus leaving from Los Angeles to Anaheim on March 7th at 2:30 pm.
+user: Yes, great! What is the name of the station the bus arrives? What is the price of the ticket?
+tool(BuyBusTicket): ok n_results=1
+assistant: The arrival destination is Anaheim Bus Station. Your reservation was not successful. I found another bus that leaves at 2:50 pm for $12.
+user: That will be fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation is complete.
+user: I'll also need a hotel room?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 star hotel called Alamo Inn & Suites that is popular.
+user: What is the phone number?
+assistant: +1 714-635-8070.
+user: What is the cost per night?
+assistant: $52 for a room each night.
+user: That will work. Please reserve me 2 rooms for 3 days. We're checking in on the 8th.
+assistant: Please confirm, 2 rooms for 3 days at Alamo Inn & Suites in Anaheim. Your stay begins on March 8th.
+user: Yes, that is all correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel has been reserved.
+user: What is the address? Do they allow smoking?
+assistant: No, no smoking is allowed. The address is 1140 West Katella Avenue.
+user: Thanks, that is all I need.
+assistant: Have a nice day.

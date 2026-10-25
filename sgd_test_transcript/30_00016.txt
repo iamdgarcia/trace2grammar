@@ -1,0 +1,19 @@
+user: How about getting me one ticket on the 12th of this month to Seattle WA to an event?
+assistant: What event do you prefer?
+user: I'm curious about Beatleconcert?
+assistant: To confirm, 1 ticket to Beatleconcert on March 12th in Seattle.
+user: you got it.
+tool(BuyEventTickets): ok n_results=1
+assistant: You have a ticket now.
+user: Fine, how about getting me a bus there? I leave on the 3rd of March?
+assistant: From whence will you travel?
+user: From Portland, OR.
+tool(FindBus): ok n_results=10
+assistant: How about the $30 ticket for a bus leaving at 7 am?
+user: Fine, book that.
+assistant: To be clear: 1 ticket for a bus departing Portland, headed to Seattle on March 3rd at 7 am.
+user: Yes, that's great.
+tool(BuyBusTicket): ok n_results=1
+assistant: You're set with that.
+user: Much appreciated, thanks.
+assistant: Have a pleasant time.

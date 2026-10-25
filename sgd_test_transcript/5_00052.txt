@@ -1,0 +1,13 @@
+user: I need to add an alarm
+assistant: At what time is it
+user: Make it 3:30 in the afternoon
+assistant: Please confirm that creating an alarm at 3:30 pm with name new alarm
+user: No call it as Cleaning
+assistant: Please confirm that creating an alarm at 3:30 pm with name cleaning
+user: No make it for 4:15 pm
+assistant: Please confirm creating alarm at 4:15 pm with name cleaning
+user: Correct
+tool(AddAlarm): ok n_results=1
+assistant: Alarm added successfully
+user: thanks a lot that's all
+assistant: Thank you

@@ -1,0 +1,28 @@
+user: I'm looking for bus tickets.
+assistant: Where are you traveling to?
+user: I'm going to Los Angeles.
+assistant: Where are you departing from, when are you leaving, and how many tickets do you need?
+user: I'm departing from Long Beach, CA on the 14th and I need three tickets.
+assistant: What time do you want to depart?
+user: I want to leave at 6 in the morning.
+assistant: Okay, you want 3 bus tickets departing from Long Beach to Los Angeles on March 14th at 6 am and you don't have extra luggage, correct?
+user: Yes, that is right.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have purchased the tickets.
+user: Thank you! I also need a three star hotel that allows smoking in that area.
+tool(SearchHotel): ok n_results=7
+assistant: How about the 3 star Homewood Suites by Hilton Los Angeles International Airport hotel?
+user: What other hotels are there? I need three rooms.
+tool(SearchHotel): ok n_results=7
+assistant: What about the 3 star Inn at Venice Beach?
+user: Yes, that sounds good.
+assistant: Do you want to make a reservation?
+user: Yes, I do.
+assistant: How long will you be staying and when will you check in?
+user: I'm only staying for 1 day and I'll be checking in on the 3rd of March.
+assistant: Okay, you'd like a reservation for 3 rooms at Inn At Venice Beach in Los Angeles checking in on March 3rd for 1 day, correct?
+user: Yes, that is right. What is their phone number.
+tool(ReserveHotel): ok n_results=1
+assistant: I have confirmed the reservation. Their phone number is +1 310-821-2557.
+user: Thank you, that is all I needed.
+assistant: Have a great day.

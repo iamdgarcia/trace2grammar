@@ -1,0 +1,27 @@
+user: I want to find me some movies online.I enjoy movies featuring Betsy Widhalm.
+assistant: What type of movies you like?
+user: I would like some Family movies.
+tool(FindMovies): ok n_results=1
+assistant: I have for you 1 movie.How about Steel Magnolias?
+user: Steel Magnolias sounds great.Some attractions there you can find me?
+assistant: Where you want to be?
+user: In NYC will be good.
+tool(FindAttractions): ok n_results=10
+assistant: You should check a Museum called 9/11 Tribute Museum.
+user: Great.Search for me songs from '13.Where We Come From is the album that I heard is great.
+tool(LookupMusic): ok n_results=1
+assistant: What is your opinion about album Where We Come From by Popcaan and song Everything Nice?
+user: I like this one.
+assistant: You want to play for you this song?
+user: Sure.I would like that.
+assistant: Play the song Everything Nice in Living room.Is that okay?
+user: Yes, is good.Tell me what type of music is that?
+tool(PlayMedia): ok n_results=1
+assistant: This is a Reggae song.Enjoy it!
+user: Thanks.Play the movie that you have sound with French subtitle.
+assistant: Play Steel Magnolias with subtitle in French.I'm right?
+user: Yes is very good.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is started.
+user: Thank you.That's all that I wanted.
+assistant: Have a great day.

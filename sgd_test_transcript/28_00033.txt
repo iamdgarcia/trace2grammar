@@ -1,0 +1,28 @@
+user: I want to search for a movie something like a Crime type and I like to watch the one which is acted by Kathy Griffin.
+tool(FindMovies): ok n_results=1
+assistant: That's easy. Do you like to see the movie Pulp Fiction with rating of 92 out of 100 in average?
+user: Yes, I like it. Thanks. Find me a restaurant there to eat once at outside.
+assistant: What is your comfortable location to search for the restaurant?
+user: I think I want to search it in San Pablo.
+assistant: Do you have any favorite type of food to search for the restaurant with that kind of food?
+user: Yes, I like Italian dishes and search for suitable one.
+tool(FindRestaurants): ok n_results=1
+assistant: What about La Strada Italian Cuisine in San pablo. Do you like to go there?
+user: Yes, I like that restaurant.
+assistant: What do you want me to do now?
+user: I want to book a table in that restaurant for which I need your help to book it for two persons.
+assistant: Is there any particular time to book it?
+user: Yes, book it at quarter to 11 in the morning.
+assistant: Please confirm to book a table for 2 at La Strada Italian Cuisine in San Pablo on March 1st for the time 10:45 am.
+user: All are okay but please change the time to evening 7:15 which is convenient to me.
+assistant: Okay, confirm to proceed with a booking of table at 7:15 pm on March 1st.
+user: that is confirmed. Go ahead.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Unfortunately I was not able to book the table at that time. Shall I try to book it for another time like 7:30 pm in the same La Strada Italian Cuisine restaurant on March 1st? And it is for 2 persons.
+user: Okay, you can try that time.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table was successfully booked.
+user: Thanks for your help.
+assistant: Anything else you want me to do?
+user: Nothing for now and thanks.
+assistant: Have a great day.

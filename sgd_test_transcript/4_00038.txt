@@ -1,0 +1,12 @@
+user: Can you find a place for me to eat in Los Gatos?
+assistant: Sure, anything in particular you want to eat?
+user: Yes, try searching for Chinese.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 places. How about Jasmine Chinese Cuisine in Los Gatos?
+user: Great, can you make a reservation there next Tuesday at morning 11:30.
+assistant: Sure, please confirm you'd like a reservation for 2 at Jasmine Chinese Cuisine in Los Gatos for March 5th at 11:30 am.
+user: Yup, that's great. What's their rating an do they have outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've successfully made your reservation. They don't have outdoor seating and their rating is 3.7.
+user: Thanks, that's all for now.
+assistant: My pleasure.

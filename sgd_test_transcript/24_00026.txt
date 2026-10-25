@@ -1,0 +1,28 @@
+user: I want to go for a short trip for which I need to search for an one way flight. Do you help me.
+assistant: Of-course. I need to know some more information to search it. What is your planned starting date and place of travel? Where are you going now?
+user: I want to find a flight from San Diego on this Sunday and my planned destination is Phoenix, AZ.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Do you prefer Alaska Airlines? I got details of an onward flight with this Airlines. It will take off at 6:25 am and the cost for the ticket will be $85. Is this okay for you?
+user: Search for some other flights and I want to book two tickets.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: What about an onward flight from American Airlines? I got 2 flight details on is going to take off at 8:40 pm and cost of ticket will be $94. What is your opinion on this flight?
+user: Please continue to search for some other flights.
+assistant: Okay, how about a flight with Southwest Airlines which will take off at 12:45 pm for the ticket cost $92?
+user: Yes, this is okay to me. Thanks. Now please search for a train to go there.
+assistant: What is your expected leaving date? Shall I search it for March 3rd?
+user: No, I want the train on March 11th.
+tool(FindTrains): ok n_results=5
+assistant: Okay. There are 5 trains available for that date and what about the one which is going to leave at 11:20 am and the ticket cost will be $154?
+user: That is okay and thanks.
+assistant: Shall I book tickets in this train now?
+user: Yes, do it for me. I want conditionally refundable tickets including insurance.
+assistant: I need your confirmation to book 2 tickets in a train which is going to leave from San Diego on March 11th at 11:20 am to the destination at Phoenix. And note that this is a value ticket with trip insurance.
+user: I need to book fully refundable tickets only.
+assistant: Okay, please confirm to book Flexible tickets on the train which is leaving from San Diego.
+user: That is correct and proceed. What is the destination station name?
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked the tickets and it will reach finally at Phoenix Union Station.
+user: And what about the origin station? Thanks for the tickets.
+assistant: I will leave from Santa Fe Depot.
+user: Thank you so much for your help and that's all for now.
+assistant: Have a good day.

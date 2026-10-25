@@ -1,0 +1,28 @@
+user: Can you inform me of the weather in Benicia on March 6th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature on March 6th will be 85 degrees Fahrenheit in Benicia. There is a 24 percent chance of rainfall.
+user: Can you tell me the weather on March 12th for the same city?
+tool(GetWeather): ok n_results=1
+assistant: On March 12th in Benicia, the tempeature will be 73 degrees Fahrenheit with a 4 percent chance of rain.
+user: That's what I needed to know. Can you schedule a visit to a property on that day?
+assistant: You'll be make a visit to what property?
+user: I'd like to schedule a visit to the Casa Del Sol Apartments please.
+assistant: I can help you with that. Confirm the following visit details: Scheduling a vist on March 12th to Casa Del Sol Apartments.
+user: Confirm that visit for me. While you are it, provide the address as well as the number of bedrooms for the property.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have confirmed your visit to the Casa Del Sol Apartments. The property has 1 bed room and is located at 135 135 Acalanes Drive.
+user: I'd like to reserve a car in that area.
+assistant: What type of car would you like? A Sedan, Hatchback, or something else?
+user: If you can find one, I'd like to rent an SUV.
+assistant: Will you be renting the car from March 12th? Please provide the pick-up location as well.
+user: I'll pick up the car on March 10th from the McCarran International Airport. It's convenient as I'll be in that area.
+assistant: When time should I schedule the pick-up for?
+user: I'll be picking it up pretty early. I'd say 9:45 am should work.
+assistant: Please state how long you plan on keeping the vehicle. Would you like me to add on insurance too?
+user: I'll rent the car until the 13th if possible. Please buy insurance as well.
+assistant: You will be picking up an SUV from McCarran International Airport starting on March 10th at 9:45 am. You will keep this vehicle until March 13th. Lastly, you wish to add on insurance. If this is right, please confirm the details.
+user: All of that is correct. What kind of car is the rental vehicle and how much will it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car reservation has been made and confirmed. The cost of the Mazda CX-5 is $52.00 a day.
+user: Alright. Thank you for helping me to schedule that. I won't be needing anything else at the moment.
+assistant: I hope you have a fantastic day. Bye for now.

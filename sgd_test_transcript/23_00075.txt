@@ -1,0 +1,31 @@
+user: I would like to make a payment.
+assistant: What account would you like your payment from app balance or credit card?
+user: I would like to send seventy five dollars to Rachel from amex.
+assistant: Sending $75 to Rachel from your credit card.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was successfully made.
+user: Can you find a train?
+assistant: Where are you traveling and when are you leaving?
+user: I would like to go to SD from LA on March 8th.
+tool(FindTrains): ok n_results=10
+assistant: There is a train departing at 6:50 am for $56.
+user: Which station does the train leave from?
+assistant: The train leaves from Union Station.
+user: How is the weather there on March 8th in SD?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 93 degrees and there is a 6 percent chance of rain.
+user: How is the weather on the 12th of March?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 90 degrees and there is a 10 percent chance of rain.
+user: How will be the wind and humidity?
+assistant: The wind will be 5 miles per hour and the humidity around 27 percent.
+user: I would like to purchase one seat on the train you previously found.
+assistant: Do you want travel insurance?
+user: I would like a trip insurance.
+assistant: Booking 1 value ticket from Los Angeles to San Diego on march 8th leaving at 6:50 am.
+user: Which station does it arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: The destination station is Santa Fe Depot.
+user: That is all I needed.
+assistant: Have a good day.

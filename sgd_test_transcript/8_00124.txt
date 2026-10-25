@@ -1,0 +1,24 @@
+user: I'm about to plan my next trip and I need to find a train.
+assistant: When are you leaving? What is your destination?
+user: I need to reach Sacramento, CA and the date is march 12th
+assistant: What is your departure location?
+user: I'll leave from Anaheim, CA
+tool(FindTrains): ok n_results=10
+assistant: Me research tells me that there are 10 trains meeting your needs. What about leaving at 6:50 am? The price to pay is $132.
+user: Where am I leaving from? Where will I arrive?
+assistant: You'll leave from Anaheim intermodal center and arrive at sacramento valley station
+user: Fine
+assistant: I can book the tickets on your behalf
+user: awesome, do it then
+assistant: how many tickets do you want me to buy?
+user: 1 is more than enough
+assistant: You can add travel insurance if you like
+user: I think it's a great idea.
+assistant: Confirm the procedure before it's final. I'm about to buy 1 value train ticket that will leave from anaheim on march 12th at 6:50 am and will reach sacramento
+user: yup
+tool(GetTrainTickets): ok n_results=1
+assistant: I confirm you that the tickets are yours.
+user: You've been a great help, thank you
+assistant: No problem, can I assist you furthermore?
+user: No, it's fine.
+assistant: Take care.

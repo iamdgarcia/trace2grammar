@@ -1,0 +1,22 @@
+user: I need help finding a rental car.
+assistant: I can help you with that. Please tell me your preferred pick-up location, date, and time.
+user: I'd like to pick it up from Vegas on Wednesday next week at half past 4 in the evening.
+assistant: Until what date would you like to keep the car?
+user: I'd like to keep it till 13th of this month.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found a nice SUV of Alfa Romeo Stelvio available for pick up at Union Plaza.
+user: That works for me. Please go ahead and reserve the rental car.
+assistant: Would you like me to add insurance?
+user: No, I won't be needing insurance.
+assistant: Okay, no problem. Please confirm that you'd like to pick an SUV car, without insurance, from Union Plaza on March 6th at 4:30 pm and drop it off on March 13th.
+user: No. On second thoughts, I'd like to purchase insurance.
+assistant: Sure. Please confirm that you'd like to pick up the car, which has insurance, on March 6th.
+user: Yes, you got that right.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your your car.
+user: What's the daily cost?
+assistant: The daily cost is $66.00.
+user: Thank you very much. You've been very helpful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Do have yourself a great day!

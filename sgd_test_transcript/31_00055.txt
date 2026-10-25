@@ -1,0 +1,35 @@
+user: Please search for salons.
+assistant: In what area should I search?
+user: Please search in the San Fran area.
+tool(FindProvider): ok n_results=10
+assistant: There is a salon called 1512 Barber Shop in San Francisco.
+user: Please search for other salons.
+assistant: There is a salon called 20Th Salon And Barber in San Francisco.
+user: That works. I want to reserve an appointment at that salon.
+assistant: What time and day would you like to reserve an appointment.
+user: I want to reserve an appointment on the 9th of this month at afternoon 2:30.
+assistant: Please verify the following details are correct. You want to reserve an appointment at 20Th Salon And Barber at 2:30 pm on March 9th. Is this correct?
+user: Yes that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I apologize but the timeslot at 20Th Salon and Barber was unavailable. There is an open slot at 2 pm on March 9th, would you like to reserve it?
+user: Yes please.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thank you. Please search for restaurants in the area.
+assistant: What type of restaurant would you like to search for?
+user: Please find Cambodian restaurants.
+tool(FindRestaurants): ok n_results=10
+assistant: There is a restaurant called Baan Thai House & Wine bar located in San Francisco.
+user: Please tell me if the restaurant is pricey or not. What is the address of this restaurant?
+assistant: The pricing is moderate. This restaurant is located at 534 Irving Street.
+user: Okay, please reserve a table at that restaurant.
+assistant: At what time would you like to reserve a table?
+user: Please reserve a table at 19:00.
+assistant: Please verify the following details. You would like to reserve a table for 2 at Baan Thai House & Wine Bar in San Francisco at 7 pm on March 9th. Is this correct?
+user: Yes that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation has successfully gone through.
+user: What is the phone number of that restaurant?
+assistant: The phone number of that restaurant is 415-379-4505.
+user: Thank you.
+assistant: Enjoy the rest of your day.

@@ -1,0 +1,29 @@
+user: Would you look for a bus for me for 2? I would like to leave on March 4th and want to go to Fresno, CA.
+assistant: Where will you leave from?
+user: I will leave from Portland and want to go to Seattle, WA.
+tool(FindBus): ok n_results=10
+assistant: I have 10 buses. How about the bus leaving from 7 am that costs $33?
+user: What station will it arrive at?
+assistant: It will arrive at Westlake Station.
+user: Would you look for something else? It's for 4 people and I need a direct bus.
+tool(FindBus): ok n_results=10
+assistant: What about the bus that leaves at 11:20 am and that costs $32?
+user: What station will it arrive at? What station does it leave from?
+assistant: It leaves at SW Arthur & 1st at Westlake Station.
+user: That sounds good. Would you show me some attractions there? I'm would like to see a tourist attraction.
+tool(FindAttractions): ok n_results=4
+assistant: There are 4 attractions that should be of interest. Check out Bill Speidel's Underground Tour. It's a Tourist Attraction.
+user: Sounds great. Would you buy the bus tickets that you found?
+assistant: Could you confirm that you want a ticket on the bus leaving from Portland and going to Seattle on March 4th? It leaves at 11:20 am and is for 4. You do not have extra luggage.
+user: No, I have no extra luggage to carry.
+assistant: Would you confirm that you are leaving at 11:20 am and that you have extra luggage to carry on the bus?
+user: That sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed.
+user: Thanks for helping. Would you find hotels in the area as well?
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that should work. What about the 2 star Ace Hotel Seattle?
+user: Can I smoke in the hotel?
+assistant: No, smoking isn't allowed on the property.
+user: That sounds good. That's it for now.
+assistant: Bye and have a fabulous day.

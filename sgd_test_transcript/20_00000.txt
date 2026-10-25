@@ -1,0 +1,37 @@
+user: Can you find me a hotel?
+assistant: Which city do you want me to search for the hotel?
+user: Find me a hotel in Sydney, Australia.
+tool(SearchHotel): ok n_results=10
+assistant: How about a nice 3 star hotel called 1831 Boutique Hotel?
+user: Are there any other hotel according to my requirements?
+assistant: How about a nice 4 star hotel called 28 Hotel Sydney?
+user: Are there any other hotel according to my requirements?
+assistant: How about a nice 4 star hotel called 57 Hotel?
+user: Can you find me their phone number and whether smoking is allowed there?
+assistant: You can contact them on +61 2 9011 5757 and smoking is not allowed there.
+user: Okay, That sounds good. Find me a rental car there.
+assistant: What will be your drop off date?
+user: I will drop it off after 14th of March.
+assistant: What will be your pick up time?
+user: I would like to pick up the car at evening 6.
+assistant: Would you like to pick up the car on March 11th?
+user: Yes, That is correct. book me a Hatchback till the 12th.
+tool(GetCarsAvailable): ok n_results=4
+assistant: How about a nice Hatchback Fiat Panda available for pick up at Kingsford Smith International Airport.
+user: Find me it's per day cost.
+assistant: The cost per day is $24.00.
+user: Can you show me something else?
+assistant: How about a nice Hatchback Mazda 3 available for pick up at Kingsford Smith International Airport.
+user: Okay, That sounds nice to me.
+assistant: Would you like me to book this car foe you?
+user: Yes, Please reserve the car for me.
+assistant: Would you like to have insurance?
+user: No, I don't want the insurance.
+assistant: Please confirm: You want me to book a Hatchback available for pick up at Kingsford Smith International Airport on March 11th at 6 pm with the drop off date as March 12th.
+user: Yes, That is correct. Find me it's cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked your car and it's cost pr day is $34.00.
+user: Okay. Thank you so much!
+assistant: Can I assist you with anything else?
+user: No. That is all I need for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,32 @@
+user: I need a round trip flight to ATL returning on the 6th of March. I want it with American Airlines.
+assistant: On which date to travel and which city to depart from?
+user: I want it on the 2nd and from Chicago.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: There is 1 flight for you with American Airlines and onward flight departs at 1:25 PM, with a layover. The returning flight is at 5 PM. The ticket price is $272.
+user: Okay I want a house there with ratings of 4.3 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There is one located at 1065 Peachtree Street Northeast with a rating of 4.3 stars.
+user: That's awesome then.
+assistant: Would you like to reserve now?
+user: Yes, now is good.
+assistant: Would you like to check out on March 6th or another day?
+user: Yes that's fine.
+assistant: Would you like to check in on March 2nd? How many in your party?
+user: I want to check in on the 3rd of this month and there are two people total.
+assistant: So location is Atlanta, party size is 2, check in date is March 3rd and check out date is March 6th.
+user: No I want to check out on the 5th of this month and there are 3 people.
+assistant: So there are 3 people in your group and the check out date is March 5th.
+user: Yes, that is awesome.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is now successful.
+user: Does this area have laundry service?
+assistant: Yes, it does have laundry service.
+user: What is the price and contact number?
+assistant: The total price is $1,000 and the contact number is +1 404-237-2700.
+user: Thanks a lot, and attractions?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions such as Al-Farooq Masjid, a Place of Worship.
+user: What is the phone number? is it child friendly?
+assistant: The contact number is 678-886-3457 and the place is suitable for children.
+user: Okay, awesome. Thanks!
+assistant: Of course. Enjoy.

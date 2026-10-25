@@ -1,0 +1,27 @@
+user: Please look for some movies to watch online.
+assistant: What genre do you prefer?
+user: Comic would be great.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 movies. Chhichhore, Good Boys, My Big Fat Greek Wedding are options.
+user: Good Boys sounds good. Can you search attractions please?
+assistant: Where should I search for attractions?
+user: In Las Vegas please.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10. One is the Discovery Children's Museum is a museum.
+user: Great, please find songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about Tom Ford by Teodora from Borbena?
+user: That is perfect thanks.
+assistant: Would you like to play it now?
+user: Yes play it anywhere.
+assistant: You want to hear Tom Ford in the Living Room, correct?
+user: Correct, when did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: It's from 2019.
+user: Can you play the movie with English Subtitles please?
+assistant: You want to watch Good Boys in English, correct?
+user: Yes please. Who starred in it?
+tool(PlayMovie): ok n_results=1
+assistant: The movie started and Alexander Calvert is the star.
+user: Thanks that is all.
+assistant: Have a wonderful day!

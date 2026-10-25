@@ -1,0 +1,40 @@
+user: I need to catch a train.
+assistant: Where are you going and what city are you leaving?
+user: I want to go to Sacramento, CA and look for tickets from San Diego.
+assistant: What is your date of travel?
+user: I need tickets for the 14th.
+tool(FindTrains): ok n_results=9
+assistant: Would you like the train leaving at 6:10 am? It will cost you $145 in all.
+user: Do you think you can find any other train?
+assistant: How about the train of 6:40 am? You will pay $142 in all.
+user: What station is this departing from and where does it arrive?
+assistant: This train departs from Santa Fe Depot and arrives at Sacramento Valley Station.
+user: That is cool.
+assistant: Shall I get you the tickets?
+user: Sure, make that reservation.
+assistant: What number of tickets shall I get you?
+user: I will be needing only one seat.
+assistant: Should I get you travel insurance?
+user: I do want the travel insurance.
+assistant: So do you confirm that you want a Value ticket for 1 person from San Diego to Sacramento on March 14th and the departing time is at 6:40 am.
+user: That sound good.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have your tickets booked.
+user: Thank you for the help. Is there anything interesting that I can do there on the 14th?
+assistant: Is there any type of event you particularly prefer?
+user: I love Songs.
+tool(FindEvents): ok n_results=4
+assistant: There are 4 such events. You should like the Aftershock Festival at Discovery Park. It starts on March 14th at 5 pm.
+user: What is the address of the venue?
+assistant: You can spot them at 1600 Garden Highway.
+user: That is cool. Can you share that location?
+assistant: With whom shall I share the location?
+user: I want Beverly to get it.
+assistant: So do you confirm that you want the location of Discovery Park to be shared with Beverly?
+user: That is great.
+tool(ShareLocation): ok n_results=1
+assistant: I have your location shared successfully.
+user: Thank you, that was a lot of help.
+assistant: Shall I do anything else for you?
+user: No thanks. That is all the help I wanted.
+assistant: Have a wonderful day!

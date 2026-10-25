@@ -1,0 +1,44 @@
+user: I am looking for a Park, can you show me some attractions?
+assistant: What city should I search in?
+user: I'm interested in Chicago.
+tool(FindAttractions): ok n_results=10
+assistant: There is a park called Burnham Park that might interest you.
+user: Is the park child-friendly?
+assistant: Yes, it is child-friendly!
+user: Can you give me their phone number and tell me if it is free to get in?
+assistant: Their phone number is 312-742-8520 and it is free entry.
+user: Wonderful!
+assistant: Is there anything else I can help you with?
+user: Yes, I need to find a rental car in Chicago that I will need till next Thursday.
+assistant: What date and time would you like to pick up the rental car?
+user: I would like to pick it up next Monday at half past 10 in the morning.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is a nice Sedan Dodge Charger available at O'Hare International Airport.
+user: Can you tell me the cost per day?
+assistant: It costs $42.00 per day.
+user: Is there anything else?
+assistant: There is a Hatchback Fiat Panda available at O'Hare International Airport.
+user: That sounds great!
+assistant: Would you like for me to book the car?
+user: Yes, I would like to rent it.
+assistant: Would you like insurance?
+user: No thanks! I won't be needing insurance!
+assistant: Please confirm that you are picking up a Hatchback from O'Hare International Airport on March 4th at 10:30 am and dropping off on March 7th. The car also does not come with insurance.
+user: Yes, that is correct, can you tell me the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car for $30.00 per day.
+user: Okay, can you also share the location?
+assistant: With whom do you want to share it with?
+user: I would like to share it with Aaron.
+assistant: Do you want to share the address for O'Hare International Airport?
+user: Yes, that will be great!
+assistant: Please confirm you are sharing the location of O'Hare International Airport with Aaron.
+user: Actually I wish to share the address for 8 Kenneth Rexroth Place with Danielle.
+assistant: Please confirm you are sharing the location 8 Kenneth Rexroth Place with Danielle.
+user: Yes, that is correct!
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you for your help!
+assistant: Can I assist you with anything else?
+user: No thank you, that will be all!
+assistant: Have a great day!

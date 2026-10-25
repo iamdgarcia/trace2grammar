@@ -1,0 +1,38 @@
+user: Hi I need to get my hair done and would like to find a salon. Please find me a unisex salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: I managed to find 10 salons you might be interested in. I recommend 18/8 Fine Men'S Salons - Palo Alto. It is a great salon located in Palo Alto.
+user: What is their phone number and what's the average rating for the salon?
+assistant: You can call them at 650-460-8290 and their average rating is 3.9.
+user: That sounds good to me.
+assistant: Would you like to book an appointment at the salon?
+user: Not at this time, no.
+assistant: Is there anything else I can assist you with?
+user: I'd like to go to a therapist. Please find me a Psychiatrist in the Palo Alto area.
+tool(FindProvider): ok n_results=2
+assistant: How about Ariela ORa Karasov? They're a psychiatrist in the palo alto area.
+user: That works for me.
+assistant: Would you like to book an appointment here?
+user: Yes, please book me an appointment for later today.
+assistant: What time would you like to go to the therapist?
+user: I'd like to go there at 11:45 am.
+assistant: So you'd like an appointment with Ariela Ora Karasov at 11:45 am on March 1st, is this correct?
+user: That works for me. What's their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You will find them at 401 Quarry Road #2204 and their phone number is 650-723-8659. And I apologize but something went wrong and I couldn't book your appointment. I suggest getting an appointment with Ariela Ora Karasov on March 1st at 11:30 am instead.
+user: That's fine, I can do that.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment with the therapist has been booked and you'll get an e-mail confirmation shortly.
+user: I'd also like to book an appointment with the salon we discussed earlier.
+assistant: What time would you like to go to the salon?
+user: I'd like an appointment at the salon for half past 6 in the evening.
+assistant: So you'd like an appointment at 18/8 Fine Men'S Salons - Palo Alto, for 6:30 pm on March 1st, is this correct?
+user: That is correct, yes.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, I was unable to book the appointment. Can I assist with something else?
+user: Please try again, I'd like to try for an appointment at quarter to 5 in the evening.
+assistant: So you'd like to change your appointment at 18/8 Fine Men's Salons - Palo Alto to 4:45 pm on March 1st, is this correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, something went wrong. I was unable to book an appointment at 18/8 Fine Men's Salons - Palo Alto at the time you requested but I can do March 1st at 4:30 pm instead.
+user: No, that's ok. That's all I needed.
+assistant: Have a wonderful day.

@@ -1,0 +1,10 @@
+user: I need to find a hotel.
+assistant: In which city should I look in for a hotel?
+user: I need a hotel in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I have found a 5 star hotel, located at 45 Park Lane.
+user: I need 1 room. Is there any others that meet my needs?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, there is a 3 star hotel called Abbey Court Hotel (Hyde Park).
+user: Great. I am all set.
+assistant: Goodbye have a great day!

@@ -1,0 +1,14 @@
+user: Can you find me some movies featuring Gil Bellows?
+assistant: What type of movies do you want me to search for?
+user: Search for scary movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie called Scary Stories to tell in the Dark.
+user: Scary stories sounds great to me. I would like to watch this movie with English subtitles.
+assistant: Please confirm: You want me to play Scary stories to tell in the Dark with English subtitles.
+user: Yes, That sounds great.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is playing. Enjoy the movie.
+user: Thank you for the help.
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a great day!

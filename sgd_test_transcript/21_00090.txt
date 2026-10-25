@@ -1,0 +1,19 @@
+user: I have to check the weather on next Wednesday.
+assistant: What city do you wish to check the weather for?
+user: I need for NYC.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is 64 degrees F with a 26 % chance of rain.
+user: Sure that is fine. Will you show me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There will be 10 attractions that interest you. You can check out 9/11 Tribute Museum a museum.
+user: Okay that is great. Will you get me a cab to go there?
+assistant: What type of ride will you prefer, a luxury or regular or anything else?
+user: I prefer pool rides.
+assistant: What number of seats do you need?
+user: I am in a group with 2.
+assistant: Please confirm details that you want a ride to 9/11 Tribute Museum for 2 seats preferring a pool ride.
+user: Yes, that will work for me.
+tool(GetRide): ok n_results=1
+assistant: I booked the ride and the cab is on its way.
+user: Thanks for the help. That's all that is needed.
+assistant: Have a nice day.

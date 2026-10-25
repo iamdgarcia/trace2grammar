@@ -1,0 +1,18 @@
+user: I need to collect money from someone who purchase a basket from my online store.
+assistant: I can help you with that, I just need the name of your contact and the amount you need to collect.
+user: Amelia is the name of the person I need to collect $112 from.
+assistant: Okay, before I submit your request, let's just make sure I have the details correct. You would like to collect a total of $112 from Amelia, correct?
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I was successfully able to request that transaction for you.
+user: I also need to make a payment to Svetlana for 27 dollars.
+assistant: How would you like me to process this transaction, with a credit card or debit card?
+user: I would prefer to sent it via UnionPay.
+assistant: Great, before I proceed please confirm the following for me. You would like to send $27 from your credit card to Svetlana, is that right?
+user: Yes, that is also sorrect.
+tool(MakePayment): ok n_results=1
+assistant: I was able to successfully make that payment for you and the recipient will receive it shortly.
+user: Thanks so much!
+assistant: Is there anything else you would like me to assist with?
+user: No, that will be all for now, thanks again.
+assistant: No problem, have a good day.

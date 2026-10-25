@@ -1,0 +1,19 @@
+user: I wanna see a movie please
+tool(FindMovies): ok n_results=10
+assistant: I found 10 films including Paprika which has an 84 rating
+user: That sounds great, now find me a restaurant to eat at
+assistant: Where should I look, and what kind of food?
+user: I want some Barbecue somewhere in Sunnyvale
+tool(FindRestaurants): ok n_results=7
+assistant: How about the Black Angus Steakhouse in Sunnyvale?
+user: Yes please, that sounds good
+assistant: Would you like to book a table?
+user: Yes please do
+assistant: What time do you want to go?
+user: Let's try for the evening 7 pm
+assistant: Confirming a table for 2 at the Black Angus Steakhouse in Sunnyvale for 7 pm on March 1st right?
+user: Yes that's right
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's been booked
+user: Thanks so much, that's it
+assistant: OK, enjoy your meal!

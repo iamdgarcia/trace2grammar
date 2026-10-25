@@ -1,0 +1,32 @@
+user: I am looking for some musical performance in New York city on 12th of this month.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like. How about a very popular show called Alma Deutscher taking place at Stern Auditorium / Perelman Stage on March 12th at 5 pm?
+user: Okay, That sounds good to me. Find me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: How about a nice house with 4.4 rating located at 100 Greenwich Street?
+user: Can you check whether this place has laundry service?
+assistant: Yes, This place has laundry service.
+user: Can you show me any other houses?
+assistant: How about a nice house with 4.2 rating located at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA?
+user: The house sounds nice to me.
+assistant: Do you want me to make a reservation for this house?
+user: No, Not now. Find me some buses going there.
+assistant: What will be your place of departure and Are you planning to leave on March 12th, March 5th or any other day?
+user: I am looking for a direct bus from Washington on 4th of March.
+tool(FindBus): ok n_results=7
+assistant: What do you think of a bus leaving at 6:20 am with the ticket cost of $36?
+user: That sounds good to me. Buy me tickets for the event you just found.
+assistant: Tell me the number of required tickets.
+user: The number of tickets required is one.
+assistant: Please confirm: You want me to buy 1 ticket for Alma Deutscher taking place in New York on March 12th.
+user: No, Change the number o tickets to two.
+assistant: Please confirm: You want me to buy 2 ticket for Alma Deutscher taking place in New York on March 12th.
+user: Yes, That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets. Enjoy!
+user: Find me the cost for one ticket.
+assistant: The cost for one ticket is $30.
+user: Okay. Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

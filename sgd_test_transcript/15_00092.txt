@@ -1,0 +1,21 @@
+user: Hi, I think I need some help. Can you get me the best SF Psychologist please?
+tool(FindProvider): ok n_results=4
+assistant: There are actually 4 that would be good. Try Adam E. Pollock, he's a top Psychologist in San Francisco.
+user: Where is he located, and how can I reach him?
+assistant: He's listed at 100 Masonic Avenue, 415-346-2356
+user: Fine, that's good.
+assistant: Do you want an appointment?
+user: Not right now.
+assistant: What else can I do for you?
+user: What's the weather going to be like there on the 13th of this month?
+tool(GetWeather): ok n_results=1
+assistant: It will be about 94 Degrees and there will be a 9 % chance of rain.
+user: Fine, get me that appointment please at 5:30 pm.
+assistant: Please confirm: Appointment on March 13th at 5:30 pm with Adam E. Pollock.
+user: No, what are you talking about, I said 11 am.
+assistant: To confirm: Appoinment with Pollock on March 13th at 11 am.
+user: Finally a winner.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry something went badly awry, I can't book this. What else may I get for you?
+user: Nothing, I really can't believe you can't help me.
+assistant: Sorry, feel better.

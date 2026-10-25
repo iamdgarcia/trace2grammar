@@ -1,0 +1,23 @@
+user: I'm ready for a new summer hairstyle, and I'd like to go to a salon that specializes in color. Would you help me find a salon to set up an appointment before I have to leave for work?
+assistant: I can help you with that. Where would you like to visit a salon?
+user: My first choice is to go to a salon in Palo Alto, please.
+tool(FindProvider): ok n_results=10
+assistant: Okay. You may be able to get an appointment in Palo Alto at the 18/8 Fine Men's Salons - Palo Alto.
+user: I see. What is the street location of the salon, and does it have unisex stylists?
+assistant: The salon's street location is 855 El Camino Real Building #1 Suite #3 and, yes, unisex services are offered.
+user: Cool. That could work.
+assistant: Would you like to set up an appointment now?
+user: Hmm, perhaps after a check on the weather where I'd be going.
+tool(GetWeather): ok n_results=1
+assistant: I'm showing that, so far, a temperature of 79 degrees Fahrenheit with a 4 percent possibility of rain is the average forecast.
+user: Nice. Let's go ahead and set up an appointment at that salon, please.
+assistant: Would you like the appointment for March 1st?
+user: That would be fine.
+assistant: What's the time you want for the appointment?
+user: An appointment for 10:30 in the morning would be ideal.
+assistant: All right. Are you ready to confirm your hair appointment with a stylist at 18/8 Fine Men's Salons - Palo Alto for March 1st at 10:30 am?
+user: Yep. You have my go-ahead.
+tool(BookAppointment): ok n_results=1
+assistant: Your hair appointment is all set up for you.
+user: Very nice. I can cross that off my to-do list. Thanks mucho.
+assistant: Sure thing. Enjoy your day.

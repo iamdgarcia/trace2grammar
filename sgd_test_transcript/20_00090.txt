@@ -1,0 +1,17 @@
+user: I'm after a house for one person in Kuala Lumpur, with laundry service please.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 options including 1, Jalan 2/142a, Taman Len Seng, 56000 Kuala Lumpur, Wilayah Persekutuan, rated 3.7.
+user: Great, can you book it for me
+assistant: What are you check in and check out dates?
+user: Checking in 8th of march, checking out 14th of march
+assistant: Confirming you want to book a house for 1 person in Kuala Lumpur checking in march 8th, checking out march 14th
+user: Yes thank you. What's their phone number?
+tool(BookHouse): ok n_results=1
+assistant: Your booking has been made. You can reach them on +60 3-2143 7001.
+user: Can you find me a nearby place of worship?
+tool(FindAttractions): ok n_results=4
+assistant: A nearby Place of Worship includes the Federal Territory Mosque.
+user: Okay thank you
+assistant: Do you need any further help?
+user: No thank you
+assistant: Have a nice time.

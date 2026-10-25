@@ -1,0 +1,32 @@
+user: My hair looks terrible and I need a new look. Can you help me find a salon?
+assistant: Where would you like me to look?
+user: Please search in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salons in the Santa Rosa. How about Daredevils & Queens, it's a nice place.
+user: Yeah that sounds good thanks. Now I'd like to watch a movie while I'm out.
+tool(FindMovies): ok n_results=10
+assistant: There are a few movies available. How about After The Wedding, Fiddler: A Miracle of Miracles or Good Boys?
+user: From the options available I'd like to watch Good Boys.
+assistant: Do you need help with anything else?
+user: What time is there a show on at the Airport Stadium Cinemas on March 2nd?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 show on at Airport Stadium 12 at 9:30 pm.
+user: Can you give me the address of the theatre? What genre of movie is it?
+assistant: The address is 409 Aviation Boulevard. The movie is a Comedy.
+user: That sounds good thanks.
+assistant: Do you want to buy tickets now?
+user: Not right now thanks. Can you make me an appointment at the salon you found for 3 pm?
+assistant: Sure, so to confirm: You would like to make an appointment at Daredevils & Queens on March 2nd at 3 pm.
+user: Yes that's correct.
+tool(BookAppointment): ok n_results=0
+assistant: I couldn't book the appointment at your requested time. Do you need help with anything else?
+user: Can you try and book a later appointment at the salon for 5:45 pm.
+assistant: OK. I'll try and book on March 2nd at 5:45 pm at Daredevils & Queens.
+user: Thanks for that. What is their customer rating and are they unisex?
+tool(BookAppointment): ok n_results=1
+assistant: Daredevils & Queens is not a unisex salon but they have a rating of 4.6. I couldn't make you an appointment but I could try again on March 2nd at 6 pm?
+user: Yes, that would be great.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed.
+user: Thanks for your help.
+assistant: Enjoy your day!

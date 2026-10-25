@@ -1,0 +1,21 @@
+user: I like to check the weather.
+assistant: In which area you want me to check the weather?
+user: I like to check the weather in woodside.
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is 78 degrees Fahrenheit with 6 percent rain chance.
+user: This is cool..I like to visit the property Wilford Lane Apartments on 1st of march.
+assistant: please give the confirmation details: Your property visit to Wilford Lane Apartments on march 1st is scheduled.
+user: This is perfect..Is there a laundry service inside the property? Is there a 2 bathrooms?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed and the property has 3 bath rooms and in-unit laundry.
+user: I like to book car there with insurance and want from 1st of march till the 4th.
+assistant: At what time you want the car and which type of car you want? From where you want to pick up?
+user: I like to pick up the car from Schoenefeld Airport and i want SUV and like to pick up at 12:15.
+assistant: please give the confirmation details: You want to book SUV car on march 1st at 12:15 pm from Schoenefeld Airport and need the car till march 4th.
+user: This is cool..What about the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The cost is $55.00 per day. Your car booking is confirmed.
+user: Thanks a lot.
+assistant: Any other help you want?
+user: No, not now..thanks
+assistant: Have a great day.

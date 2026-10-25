@@ -1,0 +1,15 @@
+user: I need a cab.
+assistant: For how many and what kind of ride would you like?
+user: A pool ride and just for one.
+assistant: Where is your destination?
+user: I'm going to Gum Kuo.
+assistant: To confirm: You would like 1 seat on a Pool ride to Gum Kuo.
+user: Yes, that's it.
+tool(GetRide): ok n_results=1
+assistant: Your ride is on it's way.
+user: What is the total cost?
+assistant: It will be $6.22.
+user: And when will it get here?
+assistant: It should arrive in 5 minutes.
+user: Thank you so much. That's all I need for now.
+assistant: Enjoy the rest of your day.

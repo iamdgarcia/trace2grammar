@@ -1,0 +1,21 @@
+user: I am going for a short trip. I need your help to search for a bus. Do you search for the comfortable one?
+assistant: yes, Let me know your place of visit to search for the same.
+user: I am planning to travel to San Diego. Search for the bus going there.
+assistant: What is your expected leaving date and from which place you are leaving?
+user: I am planning to leave on the 13th from Long Beach. Search for a bus from there.
+tool(FindBus): ok n_results=9
+assistant: Okay, what about a bus leaving at 6:50 am which costs $24 which is the comfortable one I think from the 9 buses I got.
+user: No, please search for some other buses available to go to SFO.
+tool(FindBus): ok n_results=6
+assistant: I got 6 buses and what about a bus leaving at 7 am with cost $57?
+user: I think this will suit to me and please purchase the tickets for me.
+assistant: Let me know the number of tickets required by you.
+user: Book for 4 persons.
+assistant: I need your confirmation to book 4 tickets on a bus leaving from San Francisco on March 13th at 7 am to San Diego without any extra luggage.
+user: That is correct to proceed and also I want to know the leaving station of this bus.
+tool(BuyBusTicket): ok n_results=1
+assistant: This bus will leave from Transbay Terminal station and your tickets are successfully purchased.
+user: Thanks for your work and let me know the number of stops does this bus have.
+assistant: It is a direct bus. Is it okay?
+user: Yes, and thanks for your work.
+assistant: Have a good day.

@@ -1,0 +1,31 @@
+user: I need a rental car.
+assistant: Where do you want to pick up the car?
+user: I need to pick it up in Vegas.
+assistant: How long would you like the rental for? And what time pick up works for you?
+user: I'd like to pick it up at eleven am and I need it until next Wednesday. I'm not picky about the type of car, anything is fine.
+assistant: And what day do you want to pick up the rental?
+user: I want to pick it up on the 1st of March. Could you look in London?
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a Sedan Audi A8 at Heathrow International Airport.
+user: And how much does that cost?
+assistant: It is $36.00 per day.
+user: Okay, that works. I also need a house to rent, for three people.
+tool(SearchHouse): ok n_results=10
+assistant: 1 Addington Street has a 4.3 rating.
+user: What is their contact number? Also, do they have laundry service?
+assistant: The phone number is +44 333 400 6116. Yes, it does have laundry service.
+user: Are there other houses?
+assistant: There is a 4.1 rated house at 1 Baffin Way.
+user: Yeah, that looks perfect.
+assistant: Do you want to go ahead with a reservation there?
+user: No, not right now.
+assistant: Is there anything else I can help with?
+user: Can you go ahead and reserve that rental car?
+assistant: Do you want to add insurance to the car?
+user: No, I don't need it.
+assistant: Please confirm the following details: Reserve a sedan rental car at Heathrow International Airport, picking up 11 am on March 1st and returning March 6th. You didn't want to add insurance.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: The rental car has been reserved.
+user: Thanks for helping, that's all I needed.
+assistant: Enjoy your day!

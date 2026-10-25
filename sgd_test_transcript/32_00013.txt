@@ -1,0 +1,24 @@
+user: Hey, do you think you could find me a family therapist in Gilroy?
+tool(FindProvider): ok n_results=5
+assistant: Certainly. You may want to try the Family Counselor Leininger Anne in Gilroy.
+user: Possibly. What is their address?
+assistant: Their address is listed as 8339 Church Street # 212.
+user: That sounds good to me. Think you can book me an appointment?
+assistant: Sure, but first I'll need to know the date and time that you'd like me to book the appointment for?
+user: Let me think for a second. Okay, make it for 2:15 pm on the 9th of this month.
+assistant: You would like me to book you an appointment with Leininger Anne on March 9th at 2:15 pm. Is that correct?
+user: Yes that is all correct.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately I was not able to get you an appointment at that time. Would an appointment at Leininger Anne on March 9th for 2 pm work?
+user: That would work for me I guess.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully booked. An email confirmation will be sent to you shortly.
+user: Great, thank you for your help.
+assistant: Is there anything else that I could assist you with?
+user: Yeah, do you have any movie recommendations? I want to watch something funny with Sophia Di Martino.
+tool(FindMovies): ok n_results=1
+assistant: I've found 1 movie that matches that criteria. It's called Yesterday and has an average rating of 63 out of 100.
+user: Yes, that is the one. Thank you.
+assistant: Will that be all?
+user: Yes that is all, I'll let you know if I need anything else.
+assistant: Okay, good bye.

@@ -1,0 +1,20 @@
+user: Can you find me train from Vancouver? I need two seats in economy premium.
+assistant: Where will you be traveling? And on which date?
+user: I'll be going to Seattle on the 6th.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 potential trains for you. How about a $145 option departing at 6:20 am?
+user: That one sounds good. Can you find something interesting to do in Seattle when I arrive?
+assistant: Do you prefer a certain type of event?
+user: I like a good stage show.
+tool(FindEvents): ok n_results=10
+assistant: At 12th Avenue Arts, on March 10th at 5 pm, Beatleconcert is happening.
+user: That one sounds good. Can you show me some nearby attractions?
+tool(FindAttractions): ok n_results=10
+assistant: I found a Park for you called Alki Beach Park.
+user: Is it free? And is it child-friendly?
+assistant: It's child-friendly, but it is not free.
+user: Okay, that's great. I need to find a house to stay in with laundry services.
+tool(SearchHouse): ok n_results=10
+assistant: There's a 4.5 rated house at 1000 1st Avenue you might like.
+user: That one works great. That'll be all!
+assistant: Have a great day!

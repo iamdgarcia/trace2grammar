@@ -1,0 +1,17 @@
+user: I would like to find a movie to watch.
+assistant: Tell me your location.
+user: Will you search for movies shown in Danville.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies, what are your thoughts on IT Chapter Two or Saaho.
+user: Saaho is good. What about looking for some songs for me now. I like Red Hot Chili Peppers and rock songs.
+tool(LookupMusic): ok n_results=3
+assistant: What are your thoughts on Dark Necessities by Red Hot Chili Peppers from the album The Getaway.
+user: Yes, that is the one. I'd like to play this song.
+assistant: Please confirm details to play the song Dark Necessities in the living room.
+user: Yes, that is the one.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Was it released in 2013.
+assistant: It is from 2016.
+user: Thanks so much and that is it.
+assistant: Have a nice day.

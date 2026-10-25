@@ -1,0 +1,21 @@
+user: Can you look for some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 you may like. What about Colder Weather from the Pass The Jar album by Zac Brown Band?
+user: That would be great!
+assistant: Shall I play it now?
+user: Not just yet. Can you check the weather?
+assistant: For what city?
+user: Check in Vancouver.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should average 75 degrees with a 15 percent chance of rain.
+user: And the humidity?
+assistant: Around 19 percent.
+user: Will it be windy? What's today's date?
+assistant: The wind speed should average 8 miles an hour. Today is March 1st.
+user: Thanks. I'd like to hear the song now, on my kitchen speaker.
+assistant: To confirm: You would like to hear the song Colder Weather in the kitchen.
+user: You got it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks! That's all I need.
+assistant: Have a great day!

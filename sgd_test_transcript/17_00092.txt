@@ -1,0 +1,15 @@
+user: I would like 4 train tickets on business class from Portland, OR.
+assistant: When would you like to travel and where are you heading to?
+user: I will be going to Seattle, WA on the 5th.
+tool(FindTrains): ok n_results=5
+assistant: There is a train leaving at 9:10 am that costs $339.
+user: That would be great. I would need a house to stay in when I get there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 options available. There is a lovely house located at 1000 1st Avenue that has a rating of 4.5
+user: I don't want to stay there. Is there anything else that is 4.4 or higher that has laundry service available?
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 such houses available. There is a lovely house on 1007 1st Avenue that has a rating of 4.4
+user: That house would be fine.
+assistant: You would like to reserve it?
+user: Not at this time. That would be all.
+assistant: Take care of yourself.

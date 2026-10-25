@@ -1,0 +1,27 @@
+user: I have nothing to do for the next few hours. Can you put on some music for me?
+tool(LookupMusic): ok n_results=10
+assistant: Sure, I found 10 you might like. How about Fortunately I Met You by Witwisit Hiranyawongkul from the album Quarter?
+user: What year is that from and what genre?
+assistant: It's a pop song from 2014.
+user: Ok, that sounds good.
+assistant: Would you like me to play it?
+user: No, not right now.
+assistant: Ok, anything else I can do then?
+user: Yeah, can you see if there are any good Ghost movies online, or any movies with Milo O'Shea?
+tool(FindMovies): ok n_results=1
+assistant: Sure, how about Theatre of Blood?
+user: Theatre of Blood sounds good.
+assistant: Do you want me to put it on?
+user: No, not right now. Can you go back and play that song you found actually?
+assistant: Sure, to confirm, you want to play Fortunately I Met You in the Living Room, is that right?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Your song is playing, enjoy!
+user: Great, thanks! Can you also tell me what alarms I have set?
+tool(GetAlarms): ok n_results=4
+assistant: Sure, you have an alarm for Shopping at 5 pm.
+user: Ok, any other ones?
+tool(GetAlarms): ok n_results=0
+assistant: No, there are no other alarms set right now. Anything else I can do?
+user: No, that's all. Thanks.
+assistant: Sure, thank you.

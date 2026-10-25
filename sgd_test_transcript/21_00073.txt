@@ -1,0 +1,21 @@
+user: What is the weather like in London, UK on the 3rd?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 88 degrees Fahrenheit and there is a 29 percent chance of rain.
+user: How windy and humid will it be during the day?
+assistant: The mile should be around 2 miles per hour and the humidity should be around 66 percent.
+user: Can you find an attraction there?
+tool(FindAttractions): ok n_results=10
+assistant: There is 30 St Mary Axe (The Gherkin) it's a Historical Landmark.
+user: Is this a child-friendly attraction?
+assistant: Yes, It's a child-friendly place.
+user: I would like a luxurious ride to get there we are 3 people.
+assistant: You need a luxury ride to 30 St Mary Axe (The Gherkin) for 3 people.
+user: I would prefer a regular ride instead for one person.
+assistant: Booking 1 seat in a regular ride.
+user: Yes, how long before the cab gets here and what is the cost?
+tool(GetRide): ok n_results=1
+assistant: The cab will be there in 2 minutes and the cost is $21.17.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all.
+assistant: Have a good day.

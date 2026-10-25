@@ -1,0 +1,30 @@
+user: Can you help me look for a hotel to stay at?
+assistant: Yes, what city do you want to stay in?
+user: I'll be staying in LA.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel named Ac Hotel By Marriott Beverly Hills you may like.
+user: That sounds nice.
+assistant: Should I reserve the hotel for you?
+user: I don't want to make a reservation yet.
+assistant: Alright, can I assist you with something else?
+user: Yes, I need to look for a round trip flight to LA.
+assistant: Are you planning on leaving on March 2nd, and when would you ike to fly back? Also, what city will yu be leaving from?
+user: Yes, that is the correct departure date. I want to leave from New York City and fly back on March 7th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: American Airlines has a flight that leaves at 1:40 pm and costs $365. The return flight would depart at 6:40 am.
+user: When does the return flight land and what class of ticket is this?
+assistant: This is an economy ticket and the return flight lands at 4:50 pm.
+user: Great. Please make a two day reservation for the hotel you recommended beginning on the 12th.
+assistant: You would like to book 1 room at the Ac Hotel By Marriott Beverly Hills in Los Angeles for 2 days beginning on March 12th, is that correct?
+user: Yes, please make the reservation. I also need the address and contact number for the hotel.
+tool(ReserveHotel): ok n_results=1
+assistant: Your room as been reserved. The hotel is located at 6399 Wilshire Boulevard and their contact number is +1 323-852-7000.
+user: Perfect! Are there any free attractions there you can recommend?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, Angels Flight Railway is a historical landmark you may enjoy seeing.
+user: Is this a good attraction for kids? Can yu give me their phone number please?
+assistant: Yes, this is a kid friendly attraction. They can be reached at 213-626-1901.
+user: That sounds good, thanks!
+assistant: Is there something else I can help you with right now?
+user: No, that was all I needed.
+assistant: Have a nice trip!

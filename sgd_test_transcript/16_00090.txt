@@ -1,0 +1,30 @@
+user: My family and I will be traveling soon and I need to buy some bus tickets.
+assistant: How many tickets will you need?
+user: I need 3 tickets.
+assistant: Where will you be departing from?
+user: We're leaving from Sacramento, CA.
+assistant: What's your destination and what date and time would you like to leave?
+user: We're heading to Anaheim, CA and we'd like to leave on the 8th of March at 8:15 in the morning.
+assistant: Okay, let's confirm: You need 3 tickets on the bus from Sacramento to Anaheim that departs on March 8th at 8:15 am.
+user: Yes, that's it. Can you tell me how much the tickets cost and which station it departs from?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus departs from 65th Light Rail Station. Unfortunately the purchase couldn't be completed due to some unexpected errors. How about the bus that departs at 7:50 am which costs $58?
+user: Yes, that's fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Okay, your tickets are confirmed.
+user: Could you also search for hotels in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels that you might like. There is the Alamo Inn & Suites which is a 2 star hotel.
+user: Yes, sounds good.
+assistant: Would you like to reserve this hotel?
+user: Yes, let's reserve 3 rooms.
+assistant: What date would you like to check in?
+user: I want to check in on March 6th.
+assistant: And how long will you be staying?
+user: I need to stay for 6 days.
+assistant: Okay, let's confirm the details: You are booking 3 rooms for 6 days at the Alamo Inn & Suites in Anaheim, checking in on March 6th.
+user: Yes, that's great.
+tool(ReserveHotel): ok n_results=1
+assistant: Okay, you're all set. The hotel is booked.
+user: Thanks for all your help, that's it for now.
+assistant: Have a great day!

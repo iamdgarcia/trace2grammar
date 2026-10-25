@@ -1,0 +1,31 @@
+user: Can you please help me look for a car that I can rent on the 8th from 5 o'clock in the evening.
+assistant: How long would you like the rental car for?
+user: I will need to have it until the 9th of March
+assistant: And where would you prefer to pick it up?
+user: I need to pick up in Concord
+tool(GetCarsAvailable): ok n_results=10
+assistant: There us a great SUV Alfa Romeo Stelvio that you can pick up from Canterbury Village
+user: Are there other options available?
+assistant: There is also a lovely Sedan Buick Regal Sportback that you can get at Canterbury Village
+user: That works for me
+assistant: Would you like to reserve this rental?
+user: Possibly, but not this second
+assistant: Do you need assistance with anything further?
+user: Sure. I'm hoping to attend an event while there. Can you find me tickets to shows that are happening on the 12th. I need only 1.
+assistant: Where would you like to attend an event?
+user: I would like shows taking place in the Philly area.
+assistant: Do you have any particular show in mind?
+user: I've been told that Toto might be worth attending.
+assistant: So, you want to purchase 1 ticket for the Toto show in Philadelphia on March 12th. Correct?
+user: Sure, that sounds like a plan.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket has been purchased. Enjoy the show!
+user: Thanks! I would like to secure the rental car you mentioned earlier now please.
+assistant: Will you be needing the insurance?
+user: No, no insurance necessary.
+assistant: To make sure I have it right, you would like to reserve the Sedan available for pick up at Canterbury Village starting on March 8th at 5 pm. You don't need insurance and you would like to return it on March 9th.
+user: That's it, yes. Can you tell me what the price will be for that?
+tool(ReserveCar): ok n_results=1
+assistant: That car has been booked for the requested time and the price per day is $28.00
+user: Great. Thanks so much. I'm all set!
+assistant: Have a nice day

@@ -1,0 +1,19 @@
+user: I need to travel by bus.
+assistant: Which city are you traveling from?
+user: I am leaving Fresno, CA.
+assistant: Where are you going and when?
+user: I am traveling to San Diego on the 4th.
+tool(FindBus): ok n_results=6
+assistant: There is a $49 bus departing at 6:50 am.
+user: That is good, may I buy the ticket?
+assistant: How many tickets do you need?
+user: We are two people.
+assistant: Please confirm you need 2 tickets on the March 4th 6:50 am bus from Fresno to San Diego.
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: The tickets have been purchased.
+user: Can you find a hotel there too?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Bahia Resort Hotel.
+user: That will be good. Thank you.
+assistant: See you soon!

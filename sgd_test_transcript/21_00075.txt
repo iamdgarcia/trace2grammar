@@ -1,0 +1,23 @@
+user: Will you see what the weather is on March 9th?
+assistant: In what city would you like me to find this?
+user: Please look in Fresno, CA.
+tool(GetWeather): ok n_results=1
+assistant: The day should have an average temperature of 93 degrees Fahrenheit. The chance of rain is 25 percent.
+user: Can you tell me the humidity and how windy it will be that day?
+assistant: The humidity will have a level of 27 percent and the wind will have average speeds of 5 miles per hour.
+user: Alright, got it. Would you tell me about the attractions that have a natural spot?
+tool(FindAttractions): ok n_results=1
+assistant: There's 1 attraction you may like. The Fresno Chaffee Zoo is a Nature Preserve so you may really like it.
+user: Right, sounds lovely.
+assistant: Would you like me help with anything else?
+user: Would you find me a cab that would take me there?
+assistant: What is the number of seats and what is your ride preference?
+user: There will only be 1 and I would like to have a shared ride.
+assistant: You need a pool ride for 1 to the Fresno Chaffee Zoo. Is that correct?
+user: Yep, that's correct. What will the price?
+tool(GetRide): ok n_results=1
+assistant: The ride will be a total charge of $13.19. The ride is reserved and heading your way.
+user: I really appreciate all your help.
+assistant: Do you need more assistance?
+user: Nope, but thanks so much.
+assistant: Enjoy this lovely day.

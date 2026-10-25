@@ -1,0 +1,37 @@
+user: I'm looking for a movie.
+assistant: What kind of movie do you want to watch?
+user: I like fantasy movies.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies. What about Labyrinth or The Lord of the Rings: The Return of the King?
+user: Are there any other movies?
+tool(FindMovies): ok n_results=0
+assistant: I couldn't find any other films. What else can I help you with?
+user: I want to find movies featuring Purab Kohli. Action movies are cool too.
+tool(FindMovies): ok n_results=1
+assistant: How about Mission Mangal?
+user: Mission Mangal sounds good. I want to find some attractions in Anaheim. Preferably something child-friendly.
+tool(FindAttractions): ok n_results=8
+assistant: I found 8 attractions. Angel Stadium of Anaheim is a sports venue.
+user: That sounds good.
+assistant: Anything else I can do for you?
+user: I want to find some songs by Rihanna.
+tool(LookupMusic): ok n_results=6
+assistant: I found 6 songs. How about California King Bed by Rihanna from the album Loud?
+user: What other songs are there?
+assistant: What about Man Down by Rihanna from the album Loud?
+user: Yes, play it please.
+assistant: Please confirm: playing Man Down in the living room.
+user: Yes, thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Your song is playing. Enjoy.
+user: What year was it released?
+assistant: It was released in 2010.
+user: Thanks. Can you play the movie you found earlier.
+assistant: Please confirm: playing Mission Mangal with English subtitles.
+user: No, I want Spanish subtitles.
+assistant: Please confirm: playing Mission Mangal with subtitles in Spanish.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is playing.
+user: Thanks that's all for now.
+assistant: Have a great day!

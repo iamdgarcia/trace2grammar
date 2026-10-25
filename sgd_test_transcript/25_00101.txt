@@ -1,0 +1,36 @@
+user: I need to see my alarms
+tool(GetAlarms): ok n_results=2
+assistant: There are 2 alarms set for you and there is an alarms for you at 6:30 am with wake up name
+user: Fine and search for a hotel with Kaiseki food
+assistant: Which place you prefer?
+user: I need it in San Mateo
+tool(FindRestaurants): ok n_results=1
+assistant: I have short listed 1 restaurant of your liking and that is a nice restaurant called Wakuriya in San Mateo
+user: Can i have their contact number?
+assistant: Their contact number is 650-286-0410
+user: Is it ultra high-end?
+assistant: Yes the restaurant is ultra high-end
+user: Fine then and now i also need a car
+assistant: What is the pick time for car?
+user: I need it around 2:30 pm
+assistant: which date you want car rental and which car?
+user: I require a Hatchback on March 2nd
+assistant: Which is your preferred place to car pick up and do you need add insurance?
+user: I don't need insurance and require to pick up at 30th street station
+assistant: Till which date you need the car?
+user: I require the car till March 9th
+assistant: Please give confirmation details: You are picking up a Hatchback car at 30th street station on March 2nd at 2:30 pm with drop off date on March 9th and car does not come with insurance
+user: Fine and can i know the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked and it costs $22.00 per day
+user: Thank you, can you share the location? the address to share is 115 De Anza Boulevard
+assistant: Who do you need to share it?
+user: I prefer sharing it with Natalie
+assistant: Please give confirmation details: You are sharing the location 115 De Anza Boulevard with Natalie
+user: No, i need to share it with Catherine
+assistant: Please give confirmation details: you are sharing location 115 De Anza Boulevard with Catherine.
+user: This is cool.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location successfully.
+user: This much is enough for now. Thank you.
+assistant: Have a great Day.

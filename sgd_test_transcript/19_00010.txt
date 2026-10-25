@@ -1,0 +1,29 @@
+user: What are some good restaurants?
+assistant: What kind of cuisine do you prefer and where would you like to search?
+user: I'm in the mood for European food in Concord.
+tool(FindRestaurants): ok n_results=1
+assistant: There's 1 restaurant you might enjoy in Concord. It is D J's Bistro.
+user: Please give me their address and phone number.
+assistant: The address is 1825 Sutter Street #C and their phone number is 925-825-3277.
+user: I like the sound of that.
+assistant: Do you want to book a table?
+user: Yes, please. Book a table for the 14th of March at 11:00
+assistant: I'll book you a table for 2 at D J's Bistro in Concord for March 14th at 11 am. Is that correct?
+user: No, I have some corrections. Make it for half past 7 in the evening and for a 3 person table.
+assistant: I'll book the table for 3 for 7:30 pm. Is that correct?
+user: Actually, the table should be for four and change the date to this Sunday.
+assistant: I'll book the table for 4 for March 3rd. Is that correct?
+user: Yes, that's correct. Do they have an outdoor seating area?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've booked the table. There is no outdoor seating.
+user: I also need a cab to get there.
+assistant: Do you have a specific type of cab you prefer such as regular or pool?
+user: I just want the cheapest cab.
+assistant: I'll get you a pool cab to 1825 Sutter Street #C for 4 people. Is that correct?
+user: Wait, just make it a normal cab.
+assistant: I'll get you a regular cab to 1825 Sutter Street #C. Is that correct?
+user: Yeah, that is correct.
+tool(GetRide): ok n_results=1
+assistant: The cab is booked and on route.
+user: Thanks for all the help. I'll be going now.
+assistant: Have a great day.

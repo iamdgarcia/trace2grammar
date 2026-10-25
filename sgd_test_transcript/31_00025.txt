@@ -1,0 +1,38 @@
+user: I need help locating a salon.
+assistant: Sure, what city are you interested in?
+user: I would like to find a salon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: You may want to try to 1512 Barber Shop in San Francisco?
+user: What other salons are there?
+assistant: Another good salon in San Francisco is 20Th Salon and Barber.
+user: Ok, is that a unisex salon and what is the phone number?
+assistant: Yes, it is a unisex salon and their number is 415-824-1335
+user: That works. Can you help me find a movie to see in the same area?
+tool(FindMovies): ok n_results=10
+assistant: Yes, there are 10 movies that are playing. Would you like to see Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: No, I want to see something else, preferably a mysterious movie.
+tool(FindMovies): ok n_results=2
+assistant: Luce or Official Secrets are playing.
+user: I think I would like Official Secrets. What time is it playing?
+assistant: Are you planning on watching the movie on March 3rd?
+user: Yes, that is right.
+tool(GetTimesForMovie): ok n_results=1
+assistant: The AMC Kabuki 8 theater has 1 showing at 4 pm.
+user: Where is that theater located and how much do they charge for a ticket?
+assistant: The theater is located a 1881 Post Street and a ticket cost $5.
+user: That's great, thanks!
+assistant: Should I purchase tickets for you?
+user: No, I don't need a ticket right now but I would like to book an appointment at the salon you suggested for half past 10 in the morning.
+assistant: Please confirm you would like to make an appointment at 20Th Salon And Barber on March 3rd at 10:30 am.
+user: Yes, please make the appointment. Can you give me their address and rating?
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, I was unable to make the appointment. Is there something else I can do for you?
+user: Can you see if they have a 4:15 pm appointment available?
+assistant: You would like to make an appointment on March 3rd at 4:15 pm at 20th Salon And Barber, correct?
+user: Yes, that is what I want.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully make youor appointment.
+user: Great, that is perfect!
+assistant: Is there anything further I can do for you?
+user: No, that was all I needed for now.
+assistant: Great, enjoy the rest of your day!

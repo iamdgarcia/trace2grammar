@@ -1,0 +1,19 @@
+user: I want to listen to some music, imagine dragons would be awesome, somebody told me about the night visions album
+tool(LookupMusic): ok n_results=1
+assistant: there's the song radioactive by imagine dragons and it's from the album night visions as you wished.
+user: I love that song! Tell me one more thing, do you know if there are good movies online? I would love to watch a play movie
+tool(FindMovies): ok n_results=10
+assistant: I got 10 for you. What about a faithful man, after the wedding or blinded by the light?
+user: after the wedding will work for me
+assistant: May I play it now?
+user: No, not now
+assistant: what can I do then?
+user: play the song you found earlier, play it on any device
+assistant: Confirm me if this is what you asked. you want me to play the song radioactive in living room
+user: exactly. an you tell me the genre it belongs to? do you also know if the song came out in '11?
+tool(PlayMedia): ok n_results=1
+assistant: it's a rock song from 2012
+user: you're precious!
+assistant: thank you. May I help you furthermore?
+user: No, that would be all. cheers
+assistant: Goodbye

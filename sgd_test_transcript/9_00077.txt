@@ -1,0 +1,20 @@
+user: Can you help me find a movie to watch?
+assistant: What location should I look in?
+user: I need to find a movie in Santa Rosa.
+tool(FindMovies): ok n_results=10
+assistant: I have found a total of 10 movies. Including Good Boys, After The Wedding or Fiddler: A Miracle of Miracles.
+user: Good Boys sounds great.
+assistant: Would you like to purchase tickets?
+user: Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.
+assistant: How many tickets would you like me to purchase?
+user: I would like to purchase 2 tickets.
+assistant: So you want me to purchase 2 regular movie tickets Good Boys on March 3rd for the 10:15 pm showing in Santa Rosa?
+user: No. This Saturday would work better.
+assistant: So you want me to purchase the regular movie on March 2nd?
+user: Yes I do.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets are purchased.
+user: Thanks for everything.
+assistant: Is there anything else I can help with?
+user: No. I am all set. Thank You.
+assistant: Have a great day.

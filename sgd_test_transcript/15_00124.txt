@@ -1,0 +1,38 @@
+user: Could you help me in finding a unisex salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is a great salon in San Francisco
+user: What is their contact address?
+assistant: Their contact address is 1532 20th Street.
+user: What about their rating?
+assistant: Their average rating is 4.8
+user: Yes. it is good.
+assistant: Shall I make an appointment?
+user: It can be done later.
+assistant: Do you need any other help?
+user: Please help me to find a therapist in that area.
+assistant: Whom you need? A Family Counselor or a Psychologist or perhaps another kind?
+user: I want to meet a Psychologist.
+assistant: Shall I search someone is San Francisco?
+user: Yes. It will be good.
+tool(FindProvider): ok n_results=4
+assistant: I searched and found 4 therapist for you. Do you want to meet Adam E. Pollock, a Psychologist at San Francisco.
+user: What is their contact address?
+assistant: Their contact address is 100 Masonic Avenue.
+user: What is their phone number?
+assistant: Their contact number is 415-346-2356
+user: It is nice.
+assistant: Shall I make an appointment?
+user: Yes. Please. The time would be 5:30 in the evening on the 13th.
+assistant: Kindly ensure that, on March 13th appointment is confirmed with Adam E. Pollock at 5:30 pm.
+user: Yes. It is correct.
+tool(BookAppointment): ok n_results=1
+assistant: It is booked. You will receive an email about it.
+user: I wish to have an appointment at the salon at 13:30.
+assistant: Kindly ensure that, on March 13th, the appointment is booked with the hair stylist 1512 Barber Shop at 1:30 pm.
+user: Nope. I wish to have an appointment at 11:45 am.
+assistant: Kindly ensure that, on March 13th, the appointment is booked at 11:45 am.
+user: Yes. It is good. What is their contact number?
+tool(BookAppointment): ok n_results=1
+assistant: I am sorry that, I am unable to book an appointment. Do you need any other help?
+user: No. Thank you so much for your help.
+assistant: Have a nice day.

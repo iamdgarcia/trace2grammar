@@ -1,0 +1,23 @@
+user: Hi, i need a help, i want to check the weather on 8th of March in London
+tool(GetWeather): ok n_results=1
+assistant: Okay, The average temperature for the day should be 93 degrees Fahrenheit and 24 percent chance of rain.
+user: Okay, how humidity is it expected to be, and how windy is it gonna be?
+assistant: The humidity is around 19 percent and the wind speed should be 4 miles per hour.
+user: Okay, i need to find a one way flight going there, i need to start my travel on 6th of this month.
+assistant: Okay, which city you want depart from?
+user: I am Looking for flights from Philadelphia
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Okay, i have found 4 flights for you, are you interested to fly with American Airlines, The onward flight takes off at 1:20 pm and it has a layover, the ticket cost is $234
+user: Okay, Is this an economy class or business class ticket, is it for 1 people?
+assistant: It is a Economy class and it is for 1 travellers
+user: It seems good to me
+assistant: Okay, Can i help you with anything more?
+user: Yes, i need a rental car there.
+assistant: Okay, Please tell me the time do you want to pick up the car? Do you need the car from March 6th and until when do you want the car?
+user: i need to pick up the car at 10 o'clock in the morning, i want it from 12th of march to until 14th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Okay, i have found a nice car at Heathrow International Airport and it is a Sedan Audi A8
+user: Okay it seems good to me
+assistant: Okay, can i help you with anything more?
+user: No, thank you very much for your help
+assistant: You are welcome, have a great day.

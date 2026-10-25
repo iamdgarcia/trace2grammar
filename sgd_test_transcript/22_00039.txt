@@ -1,0 +1,27 @@
+user: I want to find something interesting to do around Los Angeles on March 9th. I'm looking for a stage show?
+tool(FindEvents): ok n_results=10
+assistant: A Year in Dragonfly is a great show playing at Studio C Artists. It's happening on March 9th at 4 pm.
+user: Sounds good. Are there any buses going there? I want to leave on the 4th.
+assistant: Where are you departing from?
+user: I'm leaving from San Fran.
+tool(FindBus): ok n_results=9
+assistant: I found 9 buses. There is a bus departing at 7:30 am for $53.
+user: Okay. I want to find a round trip flight there.
+assistant: What day do you want to return? March 4th , March 9th, or a different day.
+user: I want to leave on the 6th and return on March 10th. I want to find economy class tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flights. There is an American Airlines direct flight that leaves at 7:10 pm. The return flight leaves at 9:30 am. The ticket is $147.
+user: Great. Can you find some hotels in the area?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Ac Hotel by Marriott Beverly Hills.
+user: What is the street address?
+assistant: The address is 6399 Wilshire Boulevard.
+user: Okay. I want to buy tickets to the event.
+assistant: How many tickets do you need?
+user: I need one ticket.
+assistant: Please confirm: 1 ticket for A Year In Dragonfly in Los Angeles on March 9th.
+user: Yes, sounds great.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. Enjoy.
+user: Thanks so much. That's all.
+assistant: Have a good day.

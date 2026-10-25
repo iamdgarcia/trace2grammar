@@ -1,0 +1,23 @@
+user: Hey, can you help me reserve tickets for an event?
+assistant: Sure thing. Just let me know the date, what city you would like to search in, and any events in particular you are interested in.
+user: I hear Anthony Green is having a show tomorrow in Philadelphia. Can you help me find some tickets?
+assistant: Sure thing. How many tickets will you need?
+user: I need 2 tickets.
+assistant: Okay, just confirm the following for me first. Booking 2 tickets for Anthony Green on March 2nd in Philadelphia. Is this correct?
+user: Yea, that's it. What time does the show start?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is now reserved. The show starts at 6 pm. Have fun!
+user: Thanks! Can you also find any buses that are headed that way for me?
+assistant: Are you leaving on March 2nd?
+user: No, I'm actually leaving a day earlier on March 1st.
+assistant: Okay, where will you be leaving from?
+user: I'll need a bus leaving from Washington.
+tool(FindBus): ok n_results=7
+assistant: Okay, I've found 7 buses for you that day. There is a bus departing at 8:30 am. Tickets are $29 a seat.
+user: Okay, that sounds good. I'd like to go ahead and purchase tickets please.
+assistant: Okay, just confirm the following for me. Purchasing 2 tickets from Washington to Philadelphia for the bus leaving on March 1st at 8:30 am. Correct?
+user: Yeah that works for me. What station will the bus arrive at? Are there any stops on the way there?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been confirmed. This is a direct bus so no stops and it will arrive at 10th and Filbert.
+user: Okay, thanks for your help. That's all I need for now.
+assistant: My pleasure to serve. Have a great day!

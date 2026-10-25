@@ -1,0 +1,30 @@
+user: I'm looking for a hotel.
+assistant: What city do you want to look in?
+user: I want a hotel in London, England.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you. How about the 5 star 45 Park Lane?
+user: Okay, that sounds good. I'd like a round trip flight there.
+assistant: Are you departing on March 7th? When are you returning and where are you departing from?
+user: Yes, I'm departing on March 7th from Washington and returning on March 13th.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There is an American Airlines flight that departs at 4:30 pm with a layover. The return flight takes off at 12:45 pm and it costs $628.
+user: Is it an economy or business ticket?
+assistant: It is an economy ticket.
+user: Okay, thanks. I'd like to make a reservation at the hotel now.
+assistant: How long will you be staying?
+user: I'm staying for four days.
+assistant: Are you checking in on March 7th?
+user: No, I will be checking in on the 10th.
+assistant: Okay, you want a reservation for 4 days and 1 room at the 45 Park Lane hotel in London and you will be checking in on March 10th, right?
+user: Yes, that is correct. What is their address.
+tool(ReserveHotel): ok n_results=1
+assistant: I have placed the reservation and their address is 45 Park Lane.
+user: Thank you. I'm also looking for an attraction that is free to enter.
+tool(FindAttractions): ok n_results=10
+assistant: How about the performing arts venue Alexandra Palace?
+user: What else is there?
+assistant: There is the place of worship All Saints, Margaret Street.
+user: What is their phone number? Is it child-friendly?
+assistant: Their phone number is 20 7636 1788 and it is child-friendly.
+user: Okay, thanks. That is all I needed.
+assistant: Have a great day.

@@ -1,0 +1,20 @@
+user: Please help me find interesting thing to do.
+assistant: Do you prefer Music or Theater or anything else?
+user: I want Show.
+assistant: Which city do you want?
+user: Something around LA on 1st of March.
+tool(FindEvents): ok n_results=10
+assistant: How about A Year In Dragonfly at Studio C Artists on March 1st at 7:30 pm?
+user: How much is the ticket and where is the event takes place?
+assistant: It's at 6448 California 2 and ticket costs $55.
+user: That's good. Please reserve me tickets for 4.
+assistant: Okay, you want to book 4 tickets for A Year In Dragonfly events in Los Angeles on March 1st. Please confirm.
+user: I just want 1 tickets.
+assistant: Okay, you want 1 tickets for the event in Los Angeles. Please confirm.
+user: That's good.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is done!
+user: Thank you.
+assistant: Anything else you need?
+user: No, thanks/
+assistant: You are welcome.

@@ -1,0 +1,23 @@
+user: Hi, I would like to pay Amelia $84 for the ticket she bought me yesterday.
+assistant: I can help with that. Do you want to transfer the money from your credit card or from your app balance?
+user: Please take it from my in-app balance.
+assistant: Sure. Please confirm that you would like to pay Amelia $84 from your app balance. The transaction will be made public.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Ok, the payment had gone through. The recipient should receive the money shortly.
+user: Thanks so much, I would also like to request a payment from another friend.
+assistant: Sure, what is the name of the contact and how much would you like to request?
+user: I would like to request ninety three dollars from Isabella.
+assistant: Alright, will you please confirm that you would like to request $93 from Isabella? This will also be visible to the public.
+user: Yes, that sounds right.
+tool(RequestPayment): ok n_results=1
+assistant: Ok, the request has been made.
+user: Thanks again. I also need one last thing today. Will you send one hundred and twelve bucks from my master card?
+assistant: Sure, who would you like to send it to?
+user: Oh, sorry. I'd like to send it to Mahmoud.
+assistant: Alright, will you please confirm that you would like to send $112 to Mahmoud from your credit card?
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment has been made. The payment should be received soon.
+user: Thank you so much for helping me today! Bye!
+assistant: No problem, I hope you have a great day! Goodbye!

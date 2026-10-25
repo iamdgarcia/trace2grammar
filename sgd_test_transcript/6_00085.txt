@@ -1,0 +1,16 @@
+user: Can you find me a salon in Windsor, preferably a unisex salon?
+tool(FindProvider): ok n_results=3
+assistant: There are 3 salons in Windsor matching your description, how about Great Clips?
+user: Sounds good, thanks for finding me this salon.
+assistant: Will that be all I can assist you for today?
+user: Can you also book me an appointment to the salon you found?
+assistant: What date and time works best for you, for your appointment?
+user: Make the appointment on March 2nd, at 2:30 in the afternoon.
+assistant: You wish to make an appointment to Great Clips, on March 2nd at 2:30 pm, was that all correct?
+user: All correct, that sounds perfect.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been successfully made.
+user: Great, thank you very much.
+assistant: Will that be all that I can help you with?
+user: That is all, thanks once again for the help.
+assistant: No problem, have a pleasant day.

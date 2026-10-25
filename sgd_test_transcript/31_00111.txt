@@ -1,0 +1,17 @@
+user: Can you help me find a psychiatrist in Pittsburg please?
+tool(FindProvider): ok n_results=1
+assistant: Sure, would you be interested in visiting a psychiatrist from Expanding Horizons located in Pittsburg?
+user: Yes, that would be great. Can you schedule my appointment?
+assistant: What day and time works best for you?
+user: I would like to schedule something for Tuesday next week, at 11:15 am.
+assistant: So that was an appointment at Expanding Horizons at 11:15 am on March 5th?
+user: No, can we actually schedule the appointment for one pm on March 13th?
+assistant: Okay, so that will be for 1 pm on March 13th?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Great! your appointment has been schedule, and you will receive an email confirmation shortly.
+user: Do you know any good movies you can reccommend?
+tool(FindMovies): ok n_results=10
+assistant: The movie My Big Fat Greek Wedding has a rating of 76 out of 100, would you like to see that?
+user: Yes, that will be great. Well thanks for all of your hlep, goodbye.
+assistant: You are welcome, enjoy the rest of your day.

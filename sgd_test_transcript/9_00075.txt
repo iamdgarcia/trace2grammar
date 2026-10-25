@@ -1,0 +1,18 @@
+user: Hi, could you help me find a regular show to watch at Roxy Stadium Cinemas in Santa Rosa please?
+tool(FindMovies): ok n_results=4
+assistant: Would you like to watch Good Boys, Hustlers or Once Upon a Time in Hollywood?
+user: Good Boys sounds great!
+assistant: Could I further assist you then?
+user: Could you get me the movie tickets please?
+assistant: When would you like to watch it and how many tickets do you need?
+user: I need two tickets for the movie at half past 9 in the night.
+assistant: Sure, and what date will that be for?
+user: On the March 3rd please.
+assistant: Please confirm your reservation for 2 tickets for the regular screening of Good Boys in Santa Rosa on March 3rd at 9:30 pm.
+user: That sounds great! How much does this cost?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your reservation has been made, which will cost you $12 per person.
+user: May I have the theater's address please?
+assistant: You can visit them at 85 Santa Rosa Avenue.
+user: I see, that is all I need. Thank you!
+assistant: Have a great day ahead!

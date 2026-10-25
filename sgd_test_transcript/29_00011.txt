@@ -1,0 +1,28 @@
+user: Can you help me find a hotel?
+assistant: Where will you be staying?
+user: I'll need something in SF.
+tool(SearchHotel): ok n_results=10
+assistant: May I suggest the 1 star Amsterdam Hostel San Francisco?
+user: That works for me. Can you help me find a round trip economy class flight to get there?
+assistant: I'd be happy to. Will you begin your travels on March 1st? When will you be returning.
+user: Yes and I will be returning on the 13th.
+assistant: Where are you traveling from?
+user: I need three tickets from Atlanta, GA.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: If you like American Airlines, there is a flight with one layover that leaves at 3:45 pm and returns at 4 am with a ticket price of $329.
+user: When is it scheduled to arrive back home?
+assistant: It is estimated to land back in Atlanta at 2:04 pm.
+user: That will be fine. I'd like to make a reservation at the hotel now.
+assistant: Will you be checking in on March 1st? What is the duration of your stay?
+user: I will check in on March 6th for a seven day stay.
+assistant: You'd like a reservation for 1 at the Amsterdam Hostel San Francisco in San Francisco for 7 days beginning on March 6th. Is that correct?
+user: Yes, that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel reservation has been made. You'll receive an email confirmation soon.
+user: What are some nearby attractions?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 that may suit you. One very popular attraction is the Historical Landmark Alcatraz.
+user: I'd like to see that!
+assistant: Is there something else I can help you with today?
+user: No, that will be all. Thank you!
+assistant: You're very welcome. Enjoy the trip.

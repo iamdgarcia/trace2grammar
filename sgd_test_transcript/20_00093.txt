@@ -1,0 +1,19 @@
+user: I'm looking for a house to stay at in SFO. I want a 4.2 or higher rating.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses that meet your needs. There's a nice one at 1100 Market Street Hotel entrance is at 45 McAllister Street, with a 4.2 rating.
+user: What are some others?
+assistant: There's another 4.2 rated house at 12 4th Street.
+user: That sounds good, I'd like to reserve it.
+assistant: How many people and when did you want to check out?
+user: It's for 2 people and I'd be checking out on the 11th.
+assistant: When did you want to check in?
+user: On the 10th of March.
+assistant: To verify: You want to reserve the house in San Francisco for 2 on March 10th and check out on March 11th.
+user: That's right. What is the price?
+tool(BookHouse): ok n_results=1
+assistant: It's $216. Your reservation is confirmed.
+user: Great, thanks! Can you check on a child-friendly museum.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 that are child-friendly museum. There's the Cable Car Museum.
+user: Sounds good. That's all I need.
+assistant: Have a great trip.

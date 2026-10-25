@@ -1,0 +1,39 @@
+user: I am looking for some attractions to see with my kids.
+assistant: What regions should I look for the attractions?
+user: Attractions in New York City would be good.
+tool(FindAttractions): ok n_results=10
+assistant: I recommend you check out a Museum called the 9/11 Tribute Museum.
+user: Nice. Fetch me a rental car when I am there.
+assistant: What is the time of picking up your car?
+user: I will be there at 9:45 am for the pick up.
+assistant: Till what date will you be needing the car?
+user: I will need the car until 6th of this month and I will be in New York City.
+assistant: What date and time will you be starting the car rental?
+user: I need the car from Saturday this week and I will pick it up at 16:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I can suggest you a total of 10 cars. How would you like a nice SUV Alfa Romeo Stelvio at Port Authority Station?
+user: Is there any other option. I have no preference as to the type of car.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a nice Sedan Audi A8 at JFK International Airport?
+user: Is there anything else you can recommend?
+assistant: You can get a nice Sedan Buick Regal Sportback at JFK International Airport.
+user: What will be the daily cost?
+assistant: You will be charged $31.00 per day.
+user: That is great. Book me this car for rent.
+assistant: Should I add insurance?
+user: I wouldn't want insurance.
+assistant: So you confirm that you need a Sedan car without insurance on March 2nd till March 6th. You will pick up the car at 4:30 pm from JFK International Airport?
+user: Yeah that is all right.
+tool(ReserveCar): ok n_results=1
+assistant: I have your car reserved.
+user: Please share this location with Philip.
+assistant: So you want to share the 9/11 Tribute Museum 's street address?
+user: Share the location for JFK International Airport.
+assistant: So confirm that you want the JFK International Airport location to be shared with Philip.
+user: Not really. Share it with Sean and make the address to be 951 Pomona Avenue.
+assistant: So confirm that you want the location 951 Pomona Avenue to be shared with Sean.
+user: Yeah that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared your location successfully.
+user: Thank you for the help. That will be all.
+assistant: Have a wonderful day!

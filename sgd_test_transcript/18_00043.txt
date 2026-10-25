@@ -1,0 +1,29 @@
+user: I'm in dire need of a therapist. Could you help me find one?
+assistant: Sure. I can help you with that. Please tell me the kind of therapist to look for, and the city to search in.
+user: Search for a Pleasant Hill based Psychologist, please.
+tool(FindProvider): ok n_results=4
+assistant: Your search for Pleasant Hill based therapists yielded 4 suitable therapists, among them a Psychologist known as Christopher J. Celio.
+user: Not that one. He's a relative. What other therapists did you find?
+assistant: David A. Flakoll is another Psychologist practicing in Pleasant Hill.
+user: Cool. That should work.
+assistant: Should I go ahead and schedule a visit with the therapist?
+user: Yes, please schedule a visit.
+assistant: Tell me your preferred appointment time.
+user: Set the appointment for 5 pm, please.
+assistant: What appointment date would work for you?
+user: An appointment on the 8th of March would be perfect.
+assistant: Please confirm that you'd like to book a 5 pm, March 8th appointment with David A. Flakoll.
+user: No, sorry. I totally forgot that I have something scheduled for that day. Make the appointment for afternoon 1:30 on March 9th instead.
+assistant: Sure. Please confirm that you're booking an appointment for 1:30 pm on March 9th.
+user: That is correct. Could you get me their location and contact number?
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment, and a confirmation email will be sent to you shortly. They are located at 101 Gregory Lane and can be reached on 925-827-1008.
+user: Thank you very much. You've been very helpful. Please also find me one Pool ride seat in a cab going there.
+assistant: Please confirm that you'd like 1 Pool ride seat in a cab going to 101 Gregory Lane.
+user: That is correct. Do you know the cost and how long the cab will take to get here?
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your cab and it's headed here. It should take approximately 6 minutes. The cost of the ride is $8.69.
+user: Thank you very much. You've been very helpful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Goodbye, and have a wonderful day.

@@ -1,0 +1,14 @@
+user: I am looking for a train.
+assistant: What is the destination, date and the city of your departure?
+user: I will be leaving from San Francisco to Sacramento, CA today.
+tool(FindTrains): ok n_results=9
+assistant: How about a train departing at 6:10 am with the ticket price of $42?
+user: That sounds nice to me.
+assistant: Would you like me to book tickets for you?
+user: No, not now. Maybe later.
+assistant: Is there anything else I can help you with?
+user: I am looking for a house with laundry service and rating of 4.1 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses that might interest you. How about a house with 4.1 rating located at 100 Capitol Mall?
+user: That house sounds great to me. That will be all. Thank you!
+assistant: I am glad I could help. Bye!

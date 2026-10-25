@@ -1,0 +1,23 @@
+user: What's the weather like in Lagunitas this Saturday?
+tool(GetWeather): ok n_results=1
+assistant: It should be around 87 degrees Fahrenheit with a 17 percent chance of rain.
+user: I'd like to visit the Creekside Village property there.
+assistant: A visit to Creekside Village on March 2nd. Is this right?
+user: Yes, that's it.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is scheduled.
+user: What's the address?
+assistant: It's at 17055 Creekside Cir.
+user: I need to reserve a car there. I'll pick it up at 12:45.
+assistant: So you need it for March 2nd? What kind of car do you want? Where will you pick it up?
+user: Yes, that's right. I'd like an SUV. I'll pick it up at Benito Juarez International Airport.
+assistant: Would you like insurance? How long do you want the car?
+user: I want insurance. I want it until March 4th.
+assistant: Picking up a SUV from Benito Juarez International Airport on March 2nd at 12:45 pm until March 4th. Is this right?
+user: Yes, that's it.
+tool(ReserveCar): ok n_results=1
+assistant: The SUV has been reserved.
+user: How much will it cost me? What's the car brand?
+assistant: It'll cost $46.00 per day. It's a Mazda CX-5.
+user: Thanks. That's all.
+assistant: Have a nice day.

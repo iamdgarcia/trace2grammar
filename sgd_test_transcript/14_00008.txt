@@ -1,0 +1,17 @@
+user: I'd like to search several films online.
+assistant: What type of films do you enjoy?
+user: I'd love some action films.
+tool(FindMovies): ok n_results=5
+assistant: There are 5 films you might enjoy. Do you enjoy Angel Has Fallen, Hobbs and Shaw, or Mission Mangal?
+user: I'd love Angel Has Fallen.
+assistant: Would you like to cast the film?
+user: Yeah, I'd like to cast the film with subtitles in Hindi.
+assistant: Please verify the following information: casting Angel Has Fallen with Hindi subtitles.
+user: Yeah, that's right.
+tool(PlayMovie): ok n_results=1
+assistant: The film began casting.
+user: What is the climate like in Berkeley on March 7th?
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for that day ought to be 88 degrees Fahrenheit with a 29 probability of raining.
+user: Sure, alright. That's all; see ya!
+assistant: Have a pleasant afternoon.

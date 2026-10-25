@@ -1,0 +1,34 @@
+user: I have to set my hair style in new way for that I want to search for a Salon. Can you find an Unisex Salon in San Jose?
+tool(FindProvider): ok n_results=10
+assistant: yes, I searched and got 10 salons. What about the one called Atelier Salon Willow Glen in San Jose?
+user: I want some more details to choose this salon. How much rating is achieved by them by their users?
+assistant: They got 4.3 in average.
+user: And their address is what?
+assistant: They are located at 1047 Lincoln Highway suite 101.
+user: That's okay. But this will not comfortable to me. So please search for some other Salon.
+assistant: How about Barba & Co. San Jose in San Jose? Do your prefer this one?
+user: No, please search for something else.
+assistant: What about Beautique Salon in San Jose. I think you can visit there.
+user: That's nice, I will go to this one. Thanks. Please find me a Therapist in that area. I want to meet a Psychologist.
+assistant: Did you mean that you want it in San Jose?
+user: Yes, the same place. Search for some Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: Barskyex Bryna G. is also a Psychologist in San Jose. You can try this contact as they are very good therapist.
+user: Okay. Book me an appointment to this therapist at 10:30.
+assistant: On which date?
+user: Book it on next Tuesday.
+assistant: Please confirm to book an appointment to the Therapist Barskyex Bryna G on March 5th for the time 10:30 am.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully made and they will send an email confirmation shortly.
+user: Thanks. I want to book another appointment and this is for the Salon that I have selected before.
+assistant: What is your convenient time to book the same?
+user: Book it at 13:30.
+assistant: Please confirm to book an appointment to the Salon named Beautique Salon on March 5th for the time 1:30 pm.
+user: That is correct. you can proceed it now. Get me their address and user rating details.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment and they are located at 1186 South 2nd street. They got their rating at 4.5 in average.
+user: Thanks for the details.
+assistant: What else you want me to do?
+user: No, thanks. That's all.
+assistant: Have a good day.

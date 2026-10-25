@@ -1,0 +1,26 @@
+user: Could you help me locate a parlor?
+assistant: Yes but It would help to know where.
+user: Please look for a parlor in SF.
+tool(FindProvider): ok n_results=10
+assistant: A good choice is 1512 Barber Shop. It is in the San Francisco area.
+user: Does this salon have a rating and contact number?
+assistant: You can reach them at 415-286-4371. Customers have given them a mean score of 4.8.
+user: Seems like a great place. I also need help sharing their address, 1532 20th Street, with Joshua.
+assistant: You would like me to send the location details, 1532 20th Street, to Joshua, right?
+user: Yes, that is right.
+tool(ShareLocation): ok n_results=1
+assistant: Joshua will receive the location details shortly.
+user: Please give me a run down of the alarm settings I have.
+tool(GetAlarms): ok n_results=1
+assistant: I found 1 alarm. It is labeled Gym and set for 8:30 am.
+user: Thanks for letting me know.
+assistant: Would you like any other reminders set on the clock?
+user: As a matter of fact I do. Label the reminder Phone home.
+assistant: What time would you like the notification to go off at?
+user: Set it for 5 o'clock in the evening please.
+assistant: I will set a new reminder to go off t 5 pm and label it Phone home if I understand right.
+user: Yes, please and thank you.
+tool(AddAlarm): ok n_results=1
+assistant: Something went wrong. I was unable to create the alarm.What else would you like help with?
+user: Nothing right now. I am very grateful for your help.
+assistant: Thanks for the appreciation. See you later.

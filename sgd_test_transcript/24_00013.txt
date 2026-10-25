@@ -1,0 +1,24 @@
+user: Can you search for one way flight for me?
+assistant: What is your date of departure?
+user: I will be leaving on 11th of March.
+assistant: What is your destination and the city of departure?
+user: I will be leaving from Berlin to Phoenix, AZ.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: How about Delta Airlines, whose onward flight takes off at 3:50 pm and the cost of one ticket is $405?
+user: Can you look for any other flights from SFO?
+tool(SearchOnewayFlight): ok n_results=5
+assistant: How about Alaska Airlines, whose onward flight takes off at 11:50 pm and the cost of one ticket is $120?
+user: Okay. That sounds nice to me. Now, I would like to book three fully refundable tickets in a train going there on 6th of March.
+tool(FindTrains): ok n_results=3
+assistant: What do you think of a train departing at 6 am with the ticket price of $619?
+user: Okay. That train sounds nice to me.
+assistant: Would you like me to book tickets for this train?
+user: Yes, Please make a reservation with trip insurance for me.
+assistant: Please confirm: You want me to book 3 Flexible train tickets from San Francisco to Phoenix on March 6th which leaves at 6 am.
+user: Yes, That is correct. Can you tell me the name of the stations it arrives and depart from?
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked your tickets and the train departs from Salesforce Transit Center and arrives at Phoenix Union Station.
+user: Thank you for your help!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

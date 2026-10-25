@@ -1,0 +1,29 @@
+user: Hey, can you help me get tickets for this event I want to go to?
+assistant: How many tickets?
+user: Four tickets please.
+assistant: When is the event and in which city?
+user: It's on the 4th of this month in New York.
+assistant: And what is the event?
+user: It's the one with Ruth Bader Ginsburg.
+assistant: So you want 4 tickets to Ruth Bader Ginsburg on March 4th in New York?
+user: Actually, get me tickets to Blackbear for next Friday.
+assistant: So tickets to Blackbear on March 8th?
+user: Correct. Where will it be?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation was successful. Have fun! The event is at Pier 17.
+user: Thanks a lot, can you help me find a bus so I can get there?
+assistant: Will you leave on March 8th?
+user: On the 1st actually.
+assistant: And where will you be leaving from?
+user: I'll leave from Washington.
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses that may work. There's one leaving at 6:20 am and costing $40.
+user: Sounds like a good one.
+assistant: Should I buy the tickets?
+user: Please do it.
+assistant: So 4 tickets on a bus leaving from a Washington to a New York on March 1st at 6:20 am. Is that correct?
+user: Yes, all correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed.
+user: Thanks for the help, that's all.
+assistant: Have an amazing day.

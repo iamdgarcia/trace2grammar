@@ -1,0 +1,14 @@
+user: Can you add an alarm for four in the evening?
+assistant: Understood, I will create an alarm at 4 pm titled New alarm.
+user: Actually change the name of the new alarm to Cleaning.
+assistant: An alarm called Cleaning will be set for 4 pm, is that correct?
+user: Correct, thank you.
+tool(AddAlarm): ok n_results=0
+assistant: Unfortunately I could not set the alarm for those parameters, can I help you with anything else?
+user: What about if you set the alarm for 4:45 in the evening? Also change the name for Leave for home.
+assistant: The alarm Leave for home will be set at 4:45 pm, correct?
+user: That is correct, thank you.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added successfully.
+user: Great, thanks a ton. That is all I needed.
+assistant: Thank you, have a pleasant day.

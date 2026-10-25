@@ -1,0 +1,24 @@
+user: I want to go to an IMAX show at 3rd Street Cinema.
+assistant: Where are you?
+user: Santa Rosa. I want to see a dramatic story.
+tool(FindMovies): ok n_results=1
+assistant: What about The Art of Racing in the Rain?
+user: Racing in rain is great!
+assistant: Do you want tickets?
+user: No, not now.
+assistant: Do you have anything else for me?
+user: I want a table at Bruno's for 17:15.
+assistant: Please confirm, table for 2 at Bruno's On Fourth in Santa Rosa on March 1st at 5:15 pm.
+user: Yes, that is perfect!
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, that didn't work. Should I try again at Bruno's on Fourth for 2 people on March 1st at 5:30 pm?
+user: Yes, that will be fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is complete.
+user: Thanks, can you please play that movie you found earlier?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I found 1 showtime at 8:30 pm at 3rd Street Cinema.
+user: How much is the ticket? What is the address?
+assistant: The ticket is $9. The address is 620 3rd Street.
+user: Sounds great, that is all.
+assistant: Have a nice day.

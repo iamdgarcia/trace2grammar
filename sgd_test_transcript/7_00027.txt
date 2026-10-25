@@ -1,0 +1,18 @@
+user: Since staying in lodge is very uncomfortable i wish to search for a place to live. will you find me a place that have two baths ?
+assistant: How many bed rooms do you prefer? In which area i need to search it for?
+user: I want a property in Santa Clara. It should have three bed rooms.
+assistant: DO you want to find a place to rent or buy?
+user: I want it for rent
+tool(FindHomeByArea): ok n_results=10
+assistant: What about Alderwood Apartments ? It is a good property located at 900 Pepper Tree Lane. It costs $3,650.
+user: DOes it have laundry machine inside the house?
+assistant: No it doesn't have laundry machines inside the house
+user: ok that sounds good. I need to schedule a visit to a property
+assistant: When do you want to schedule the visit?
+user: I want to visit on the 10th.
+assistant: Please check and confirm the details. Your visit has been scheduled to Alderwood Apartments and the visit date is on March 10th.
+user: ok thats correct
+tool(ScheduleVisit): ok n_results=1
+assistant: Personal Visit to the property is scheduled
+user: Thanks a lot and thanks for your help
+assistant: have a good day.

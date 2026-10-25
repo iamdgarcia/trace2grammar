@@ -1,0 +1,22 @@
+user: Find me songs from three years ago from the album Starboy.
+tool(LookupMusic): ok n_results=1
+assistant: How about I Feel It Coming by The Weeknd from the Starboy album?
+user: What sort of music is it?
+assistant: It's a disco song.
+user: That's it. Can you find some good movies online?
+assistant: What sort of movies are you into?
+user: Bizarre story movies sound great.
+tool(FindMovies): ok n_results=1
+assistant: How about Once Upon a Time In Hollywood?
+user: Once upon a time is a good one. Could you play the song you just found?
+assistant: Please confirm that you want to play the song I Feel It Coming in the Living Room.
+user: No, it should be cast on the patio device.
+assistant: Okay so you want to play I feel It Coming on Patio?
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy.
+user: Thanks. Would you show me your alarms?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set at the moment. There's one for 9:30 am called Catch bus.
+user: Sounds good. That's it for now.
+assistant: Thanks.

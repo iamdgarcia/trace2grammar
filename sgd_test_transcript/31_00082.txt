@@ -1,0 +1,40 @@
+user: Help me find a salon.
+assistant: Tell me the city you would like?
+user: I'd like to go to a salon in Pinole.
+tool(FindProvider): ok n_results=3
+assistant: There is a good salon named Great Clips in Pinole.
+user: Would you search for another option?
+assistant: Pinole also has a very good salon named Jovance Salon & Barbering.
+user: Will you look for another salon? Search for a unisex one in Windsor.
+tool(FindProvider): ok n_results=3
+assistant: Windsor has Supercuts and it's quite nice.
+user: Can you give me their contact information and their location?
+assistant: you can reach them at 707-657-4717 and find them at 6400 Hembree Lane #300.
+user: Okay, that will work. Book me an appointment at that salon.
+assistant: What is the date and time you'd like your appointment?
+user: I want to go there on March 11th at half past 11 in the morning.
+assistant: Your hair stylist is Supercuts and you will visit them for an appointment on March 11th at 11:30 am. Is that correct?
+user: Yep, that's right. Tell me their average rating?
+tool(BookAppointment): ok n_results=1
+assistant: They have a rating of 3.4 on average. I was able to make your appointment with success.
+user: Will you search for a restaurant for me to eat at that day?
+assistant: What is your food interest?
+user: Look for a burger joint that serves vegetarian items.
+tool(FindRestaurants): ok n_results=1
+assistant: Windsor has a great place named Kin Windsor.
+user: Is it a cheap restaurant?
+assistant: They have moderate prices.
+user: Okay, that's fine. Go ahead and book a table for me.
+assistant: What time?
+user: Please make the reservation for 2 pm.
+assistant: You are booking a table at Kin Windsor for 2 people on March 11th at 2 pm. It is located in Windsor. Do these details meet your satisfaction?
+user: Yes, that works good for me.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I apologize, but I couldn't book the reservation. Would you like more help?
+user: Will you try to make the reservation again? You can reserve the table at quarter to 6 in the evening.
+assistant: Making a reservation for 2 at Kin Windsor in Windsor on March 11th at 5:45 pm. Is that right?
+user: Yes, that is good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I apologize, but was unable to book the table. Do you need more help?
+user: No, thanks anyway.
+assistant: Enjoy your day.

@@ -1,0 +1,33 @@
+user: Can you find me a bus for 1 person to leave on 7th of March?
+assistant: From where are you departing?
+user: I need to go to NYC from Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: There are 6 suitable buses. There is one that leaves at 9 am with tickets costing $26 per person.
+user: Sounds good to me.
+assistant: Shall I get you a ticket on the bus?
+user: No, not now. I'll probably get one later.
+assistant: Is there anything else I can help you with?
+user: Can you find me some attractions that I can visit while I'm there?
+tool(FindAttractions): ok n_results=9
+assistant: If you would like to visit a Museum, I would suggest the 9/11 Tribute Museum.
+user: Thank you for the information. Are there any child-friendly attractions you can think of?
+tool(FindAttractions): ok n_results=9
+assistant: There are 9 attractions that would be fun for kids. One of them is a Performing Arts Venue at 92nd Street Y.
+user: Can you find their phone number for me?
+assistant: Their phone number is 212-415-5500.
+user: Do they charge an entry fee?
+assistant: Yes, there is an entrance fee.
+user: Okay, thank you. Can you get me a ticket on the bus that you found?
+assistant: Please confirm that you want 1 ticket from Philadelphia to New York on the bus that leaves at 9 am on March 7th and that you do not plan to carry extra luggage.
+user: Yes, that's right. At which station does the bus arrive?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your seat has been confirmed. The bus arrives at the Penn Station.
+user: From which station does this bus depart and how many stops does it have?
+assistant: The bus departs from 10th and Filbert and has no stops as it is a direct bus.
+user: Thank you for the assistance. Can you find me a hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels based on your preferences. There is a 5 star hotel called 1 Hotel Brooklyn Bridge.
+user: That sounds good to me.
+assistant: Shall I reserve a room for you at the hotel?
+user: No, not now. Thank you. That's all I need for now.
+assistant: Bye and have a great day!

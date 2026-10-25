@@ -1,0 +1,24 @@
+user: I would like your help finding a hotel.
+assistant: What town would you like me to search?
+user: London, England is where I would like to stay.
+tool(SearchHotel): ok n_results=10
+assistant: I found a hotel with a 5 star rating. The name is 45 Park Lane.
+user: That seems nice. I will also need to rent a car while I am there.
+assistant: I think you need the car starting March 7th.How long will you be renting the car?
+user: You are correct. I would like to get the rental at 4:30 in the evening and keep it until next Friday.
+tool(GetCarsAvailable): ok n_results=10
+assistant: One good choice I found is the Sedan Audi A8. You can pick this car up at the Heathrow International Airport.
+user: I changed my mind. I want to get the car at three in the afternoon. I would also like different car choices please.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found an alternate choice for you. The car is a Sedan Buick Regal Sportback. You can pick this car up at the Gatwick International Airport.
+user: Do you know what the daily charge is?
+assistant: Yes. The charge is $30.00 each day.
+user: That car will be fine. Please make a reservation for me.
+assistant: Would you like insurance with your reservation?
+user: Yes, please get insurance for me.
+assistant: I understand to reserve the Sedan available at the Gatwick International Airport. The reservation will start March 7th at 3 pm and end March 8th. The rental includes insurance.
+user: You are 100% correct.
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has been booked in your name.
+user: Thank you so much for the assistance. I don't need anything else right now.
+assistant: Hope your day goes well.

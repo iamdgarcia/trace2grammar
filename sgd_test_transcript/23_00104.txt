@@ -1,0 +1,32 @@
+user: Search for a train for me on the 4th.
+assistant: What is your departure and arrival city?
+user: I am travelling from San Fran to Anaheim.
+tool(FindTrains): ok n_results=7
+assistant: There is a train leaving at 7:10 am and costs $91.
+user: What is the departure station?
+assistant: Salesforce Transit Center is the departing station.
+user: That is perfect.
+assistant: Shall I get you train tickets now?
+user: Yes, book me some train tickets.
+assistant: How many people are going and do you need travel insurance?
+user: I need 1 ticket with travel insurance.
+assistant: Your want 1 train Value ticket with trip insurance departing San Francisco on March 4th at 7:10 am that goes to Anaheim, correct?
+user: That is right.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is ordered.
+user: Thanks a bunch. Find me something to do there under the Theater genre on the 5th of this month.
+tool(FindEvents): ok n_results=1
+assistant: Search revealed 1 result which is Jesus Christ Superstar at Stage Door Repertory Theatre on March 5th at 5:30 pm.
+user: That is perfect.
+assistant: Do you need any more help?
+user: Share that location with Dorothy.
+assistant: You wish to share the Stage Door Repertory Theatre with Dorothy, correct?
+user: No, I want you to share it with Christian.
+assistant: You wish to share the Stage Door Repertory Theatre with Christian, correct?
+user: That is perfect.
+tool(ShareLocation): ok n_results=1
+assistant: The location is successfully shared with him.
+user: Thanks. That was helpful.
+assistant: Do you need more help?
+user: No, that is all. Thanks for the help.
+assistant: Have a great day.

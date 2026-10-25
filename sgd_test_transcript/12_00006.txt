@@ -1,0 +1,29 @@
+user: I need bus tickets.
+assistant: How many tickets?
+user: For three people.
+assistant: When would you like to leave and at what time? Where are you heading to?
+user: I want to leave for Anaheim on the 11th of March at afternoon 3:30.
+assistant: Where would you be leaving from?
+user: I would be leaving LA.
+assistant: You would like tickets for 3 on a bus leaving Los Angeles for Anaheim on March 11th at 3:30 pm with no extra luggage.
+user: That would be fine. How many stops are there and which station would it be leaving from?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct bus and it would be leaving North Hollywood Station. I have bought the tickets.
+user: I would need a nice SUV rental car in Anaheim on the 12th of this month.
+assistant: What time would you like to pick up the car and till when would you like it?
+user: I want to pick it up at 12 in the afternoon and drop it off on the 13th of this month.
+tool(GetCarsAvailable): ok n_results=2
+assistant: There is a nice SUV Dacia Duster available at Anaheim Intermodal Center.
+user: How much does it cost daily?
+assistant: It cost $43.00 a day.
+user: Go ahead and reserve the car.
+assistant: Would you like to add insurance?
+user: I don't need it.
+assistant: You would like to pick up a SUV at Anaheim Intermodal Center on March 12th at 12 pm and drop it off on March 13th
+user: Yes, that would be great.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved the car.
+user: Thanks a lot.
+assistant: Anything else you need?
+user: No, thanks a lot.
+assistant: Enjoy your day.

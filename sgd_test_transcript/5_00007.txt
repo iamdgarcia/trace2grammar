@@ -1,0 +1,18 @@
+user: I want to find a one-stop bus because I want to arrive to SD.
+assistant: Can you tell me from where you will be departing?
+user: I will start my trip from Sacramento, CA.
+assistant: Can you tell me when you will be leaving?
+user: I have my mind set to leave on 4th of this month.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses which you might consider. How would you like having the bus which departs at 7:10 am, the ticket of which costs $62?
+user: That suits me well.
+assistant: Do you want to have a ticket booked for this bus?
+user: Yes I want to have a seat booked for me on this bus.
+assistant: Can you tell me the number of tickets you need?
+user: I will need to have tickets for three people.
+assistant: Can you then please confirm that you want to buy tickets for 3 people for the bus which leaves on March 4th at 7:10 am from Sacramento to go to San Diego?
+user: Yes that is what I want. Can you tell me the station where I will be arriving, and the station from where I will be leaving?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested ticket has been booked. The bus will leave from 65th Light Rail Station and it's arrival station is El Cajon Bus Stop.
+user: I appreciate your help very much. That would be all.
+assistant: Have a good time!

@@ -1,0 +1,41 @@
+user: Would you help me to find something interesting to do?
+assistant: In which city you prefer?
+user: Search something around Philly.
+assistant: In which category you want the events?
+user: I want Concert.
+tool(FindEvents): ok n_results=10
+assistant: There is a famous event called Anthony Green at The Foundry which is taking place on march 10th at 6 pm.
+user: Can i know the street address and ticket cost?
+assistant: The address is 29 East Allen Street 2nd Floor with cost $60.
+user: This is cool..can you tell me the buses going there?
+assistant: Are you decided to leave on march 10th and from where you are leaving?
+user: I decided to leave on march 9th from washington.
+tool(FindBus): ok n_results=7
+assistant: What is your opinion about the bus departing at 8:30 am with cost $30.
+user: Do you know anything else?
+assistant: What is your opinion about the bus departing at 11:30 am with cost $28.
+user: Can i know the number of stops and from which station it departs?
+assistant: This bus departs from Silver Spring Bus Stop and it is a direct bus.
+user: This is cool.
+assistant: Can i buy the tickets in this bus?
+user: No, not now...i want you to search round trip flight to go there..
+assistant: Are you decided to leave on March 10th and when do you want to take the return flight?
+user: I like to travel on March 7th and will return on the 14th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: What is your opinion about American Airlines? This flight takes off at 7:10 pm and has layover and returning will takes off at 7:25 am with total cost $286.
+user: Can you tell me when does this flight arrives the destination?
+assistant: This onward flight arriving tome is 0:41 am.
+user: This is perfect..I want you to find 2 star hotels in that area with three rooms and smoking should be allowed.
+tool(SearchHotel): ok n_results=1
+assistant: What is your opinion about 2 star hotel called Rodeway Inn Center City?
+user: This is cool.
+assistant: Any other help you want?
+user: Can you buy tickets for the events you found?
+assistant: How many tickets you want?
+user: I need four tickets.
+assistant: Please give confirmation details: You want to buy tickets for the event called Anthony Green for 4 people on march 10th which taking place at Philadelphia.
+user: Okay..this is okay for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is over..enjoy there.
+user: Thank you so much..
+assistant: Have a wonderful day.

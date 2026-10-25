@@ -1,0 +1,20 @@
+user: I would like a bit of help coming up with some interesting activity please.
+assistant: Do you have an activity type in mind, perhaps Theater or Music, for example? And also a specific city?
+user: What I'd really love is to see a Stage show, whatever there is in Toronto, Ontario that fits the bill.
+tool(FindEvents): ok n_results=9
+assistant: I've discovered 9 possible events you might enjoy. On March 2nd at 7 pm, the Lower Ossington Theatre will present Anne Of Green Gables.
+user: What are the tickets going for?
+assistant: Ticket price is $60.
+user: And where is this happening?
+assistant: The address is 100 Ossington Avenue.
+user: Okay, I like how that sounds.
+assistant: Would you like to make ticket purchases now?
+user: I think I should, yes.
+assistant: How many shall I purchase for you?
+user: Let's get 3 please.
+assistant: Confirming your purchase of 3 tickets to Anne Of Green Gables on March 2nd in Toronto.
+user: I can't wait, thank you!
+tool(BuyEventTickets): ok n_results=1
+assistant: You're welcome. The transaction is complete, so you're all set.
+user: You've been very helpful, thank you.
+assistant: I'm happy to be able to help.

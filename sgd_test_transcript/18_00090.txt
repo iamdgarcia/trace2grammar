@@ -1,0 +1,22 @@
+user: I'm looking for a hotel to stay at.
+assistant: Of course, in what city?
+user: In the city of Sydney please.
+tool(SearchHotel): ok n_results=10
+assistant: I have a 3 star hotel in Sydney, the 1831 Boutique Hotel.
+user: Is there anything else you recommend? I'm only going to need 1 room, by the way.
+tool(SearchHotel): ok n_results=9
+assistant: I have 9 options for you. How about 28 Hotel Sydney, which has a 4 star rating?
+user: OK, great. Can I get the weather forecast for that area?
+tool(GetWeather): ok n_results=1
+assistant: Certainly, the temperature will average 94 degrees Fahrenheit and a chance of rain will be 4 percent.
+user: What about the wind conditions that day?
+assistant: Wind speed will average approximately 2 miles per hour.
+user: Alright, thank you. May I go ahead and make those hotel reservations?
+assistant: Yes, what is the duration of your stay going to be?
+user: 7 days total. I'd like to check in on March 1st.
+assistant: Confirming 1 room in Sydney at the 28 Hotel Sydney beginning on March 1st for a total of 7 days.
+user: Super, thanks. Could you tell me what their phone number is and also what the room price is?
+tool(ReserveHotel): ok n_results=1
+assistant: Certainly, they can be reached at +61 2 9102 2828 in the room is priced at $168. The reservation has been successfully booked.
+user: Thank you so much, I really appreciate it.
+assistant: It's my pleasure, thank you.

@@ -1,0 +1,18 @@
+user: I want to find some Drama movies online.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies that you may like. How about A Faithful Man, After The Wedding, or Blinded by the Light?
+user: After The Wedding would be great.
+assistant: Do you want to play the movie now?
+user: Yes, please play the movie.
+assistant: Confirming that you want to play After The Wedding with English subtitles?
+user: Yes, that's correct. Who stars in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Will Chase is one of the actors. Your movie has started playing.
+user: Can you get me the weather for Discovery Bay? Check for the 3rd of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 71 degrees Fahrenheit with a 26 percent chance of rain.
+user: Okay. Can you check Vancouver, BC?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 57 degrees Fahrenheit with a 54 percent chance of rain.
+user: Okay, that's all for now. Goodbye!
+assistant: Goodbye!

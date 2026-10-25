@@ -1,0 +1,19 @@
+user: I am looking for a Science related movie to watch. I prefer something with the actor James Keane that is directed by Steven Spielberg
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie, Close Encounters of the Third Kind. It has a rating of 95 out of 100.
+user: Good. I'd also like to find a restaurant there.
+assistant: What location should I search? What kind of food do you want?
+user: Find restaurants in San Francisco that serve Sushi.
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10 restaurants 2g Japanese Brasserie is a nice restaurant in San Francisco.
+user: Yes, that sounds good.
+assistant: Do you want to reserve a table?
+user: Yes, I want to reserve a table for later today, 11:15.
+assistant: Please confirm: Reserve a table for 2 people at 11:15 am on March 1st at 2g Japanese Brasserie in San Francisco.
+user: No, I need a table this Saturday. It should be for 2 people.
+assistant: Please confirm: The reservation date is March 2nd for 2 people.
+user: Yes, that is correct. What is the phone number and do they have vegetarian options?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is complete. The phone number is 415-292-9997. They do have vegetarian options.
+user: Thanks, that is all.
+assistant: Enjoy your day.

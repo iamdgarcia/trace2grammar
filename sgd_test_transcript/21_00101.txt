@@ -1,0 +1,26 @@
+user: I need to check weather for tomorrow please.
+assistant: In which city?
+user: In Oakley please.
+tool(GetWeather): ok n_results=1
+assistant: The average temp is set to be 93 degrees Fahrenheit. There is a 3 percent chance of rain.
+user: he What about on the 9th of this month in Sacramento?
+tool(GetWeather): ok n_results=1
+assistant: The temp is to be 92 degrees Fahrenheit and there is a 23 percent chance of rain.
+user: How windy is it?
+assistant: The average wind speed is 9 MPH.
+user: How humid is it to be?
+assistant: The humidity is to be 31 percent.
+user: Okay, I need attractions.
+tool(FindAttractions): ok n_results=8
+assistant: You should see California State Capitol Museum, a Museum.
+user: Would you say it is child friendly? What is the attraction fee?
+assistant: No, this place is not good for kids. Yes entry is free.
+user: Okay, I need a cab to go there, a shared ride in a group of two.
+assistant: So, a ride to California State Capitol Museum. 2 Seats and a Pool ride?
+user: No, I actually want a Regular one in a group of 1.
+assistant: So 1 seat in a Regular riode?
+user: Yes, and how long before the cab arrives?
+tool(GetRide): ok n_results=1
+assistant: Your ride is now booked with the cab en route to your location, and it is expected in 3 minutes.
+user: Thanks so much for all that!
+assistant: Of course. Have a safe ride.

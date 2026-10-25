@@ -1,0 +1,17 @@
+user: Hi, could you recommend me some nice attractions which I can visit?
+assistant: Where would you prefer to visit?
+user: I would like a child-friendly attraction in NYC please.
+tool(FindAttractions): ok n_results=10
+assistant: How about a museum called 9/11 Tribute Museum?
+user: That sounds great! Could you get me a house there too?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses which you may like, how about a 4.4 rated house located at 100 Greenwich Street?
+user: Sure, could you also get me a round trip flight there?
+assistant: Which date and where will you be travelling there from, and when will you be returning from?
+user: I would like to travel from Seattle, WA on the 1st, returning on March 10th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Would you like to fly with American Airlines which departs at 4:15 pm and you will return at 12:30 pm? This will cost you $489.
+user: Sounds great to me!
+assistant: Do you require any other assistance?
+user: No, that is all. Thank you!
+assistant: No worries, have a great day ahead!

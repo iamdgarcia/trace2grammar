@@ -1,0 +1,19 @@
+user: Can you search me a therapist please?
+assistant: Any city you prefer and what kind of therapist you want?
+user: I want psychologist..somewhere in Lafayette.
+tool(FindProvider): ok n_results=10
+assistant: I have short listed 10 therapist for you. One among them is Alissa Scanlin Psyd.a psychologist in Lafayette.
+user: Okay..fine..what about the weather there on day after tomorrow?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 85 degrees Fahrenheit and there is a 17 percent chances of rain.
+user: Okay...this is perfect.
+assistant: Any other help you want?
+user: I wanted to you to book the appointment with the therapist you searched and appointment should be at 11:15 in the morning.
+assistant: please give confirmation details: Your appointment on march 3rd at 11:15 am with Alissa Scanlin Psyd
+user: Oh...sorry...take the appointment at 10:30 in the morning.
+assistant: please give confirmation details: Appointment on march 3rd at 10:30 am.
+user: This is perfect.
+tool(BookAppointment): ok n_results=0
+assistant: Oh..sorry i was not able to book the appointment.. Any other help you need?
+user: It's okay..thanks for the help.
+assistant: Its my pleasure to help you.

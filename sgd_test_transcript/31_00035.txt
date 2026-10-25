@@ -1,0 +1,36 @@
+user: I am looking for a salon.
+assistant: Which city do you want me to search in?
+user: I am looking for a salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons that might interest you. How about a nice salon called Atelier Salon Willow Glen located in San Jose?
+user: Are there any other salons you can show me?
+assistant: How about a nice salon called Barba & Co. San Jose located in San Jose?
+user: Find me it's street address and average rating.
+assistant: The salon is located at 1775 Park Avenue and it has an average rating of 5.0.
+user: Okay, That sounds good to me.
+assistant: Do you want me to book an appointment there?
+user: No, not now. Find me a nice movie to watch there.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies you may like. What do you think of 47 Meters Down: Uncaged, Ad Astra or After The Wedding?
+user: Can you show me any other nice movies?
+assistant: What do you think of Angel Has Fallen, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Fiddler: A MIracle of Miracles sounds great to me.
+assistant: Do you want me to buy the tickets for you?
+user: No, not now. Can you find me the showtimes for the movie?
+assistant: Would you like to watch it on March 4th?
+user: Yes, That sounds great to me.
+tool(GetTimesForMovie): ok n_results=1
+assistant: How about a show at 4:30 pm in 3 Below Theaters And Lounge?
+user: Find me the address of the theater and the cost of one ticket.
+assistant: The address is 288 South 2nd Street and the cost of ticket is $6.
+user: That sounds good. Book me an appointment on that day with the salon you just found.
+assistant: What should I put the timing for the appointment?
+user: Put the time for the appointment as 2:30 pm.
+assistant: Please confirm: You want me to book an appointment with Barba & Co. San Jose on March 4th at 2:30 pm.
+user: Yes, That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked the appointment.
+user: Thank you so much for the help.
+assistant: Is there anything else I can assist you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

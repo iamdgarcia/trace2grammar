@@ -1,0 +1,30 @@
+user: I need to send thirty six bucks from my app cash.
+assistant: Who are you sending it to?
+user: Bob, my friend from work.
+assistant: Please confirm, sending Bob $36 from app balance.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was sent.
+user: Thanks!
+assistant: Anything else you need?
+user: I need one ticket on the train on the 12th.
+assistant: Where are you going? Where are you leaving from?
+user: Looking for something leaving Fresno for LAX.
+tool(FindTrains): ok n_results=9
+assistant: I found 9 choices, including a train leaving at 7:20 am for $61.
+user: Anything else?
+assistant: Another train is leaving at 7:40 am and is $66 for a ticket.
+user: That sounds better.
+assistant: Are you ready to reserve your tickets?
+user: I need to think about it. What is the weather expected to be on the 12th at LAX.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 77 degrees with a 27 percent chance of rain.
+user: Ok, lets buy those train tickets!
+assistant: Do you want the travel insurance?
+user: No, I have my own.
+assistant: Please confirm, 1 value ticket on the train leaving at 7:40 am from Fresno to Los Angeles on March 12th.
+user: Yes, that is correct. What is the name of the station in Fresno?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket purchase is complete. The train leaves from Fresno Station.
+user: Thanks! That is all I need.
+assistant: Have a nice day!

@@ -1,0 +1,14 @@
+user: I have to attend a meeting and I need to train tickets to leave SFO.
+assistant: Where are you heading?
+user: I am going to Sacramento, CA.
+assistant: When would you like to leave?
+user: For the 1st.
+tool(FindTrains): ok n_results=9
+assistant: There is a train departing at 6:10 am and costs $42.
+user: Hmm. At which station would it be departing and where would it arrive?
+assistant: It leaves at Salesforce Transit Center and arrives at Sacramento Valley Station.
+user: Is there anything else? I need 1 seat that is conditionally refundable.
+tool(FindTrains): ok n_results=8
+assistant: There are 8 options. There is one leaving at 6:20 am and it costs $46.
+user: That would be fine. That's all for now.
+assistant: Take care of yourself.

@@ -1,0 +1,12 @@
+user: I want to find a film to watch please
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies including The Farewell which has a whopping 99 out of 100 score!
+user: OK sounds great! Also find me a stage show I can catch on the 10th of March
+assistant: Where should I search?
+user: Let's look for one in SFO
+tool(FindEvents): ok n_results=6
+assistant: How about catching Above Ground at the Mojo Theatre, it's super popular and there's a show at 6:30 pm on March 10th
+user: That sounds awesome
+assistant: Should I reserve some tickets for you?
+user: No, that's all I need for now
+assistant: Sure thing, see you!

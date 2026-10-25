@@ -1,0 +1,22 @@
+user: I'd like to look for a rental vehicle in Paris, France.
+assistant: How long do you require the vehicle for, and when would you like to pick it up?
+user: I'd like to have the vehicle from half past 6 in the evening to March 5th.
+assistant: What day would you like to begin the vehicle rental?
+user: I require the vehicle from the 3rd of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 vehicles available. There is a lovely Sedan of Audi A8 available from Charles de Gaulle International Airport.
+user: What is its price per night?
+assistant: The price is $37.00 per night.
+user: Do you posses an alternative?
+assistant: There is a lovely Citroen C5 SUV available from Orly International Airport.
+user: That's fine with me.
+assistant: Would you like to reserve the vehicle?
+user: Yeah, I'd like to rent the car.
+assistant: Do you wish to include insurance?
+user: I do not require insurance.
+assistant: Please verify the following information: you are picking up an SUV from Orly International Airport from March 3rd, 6:30 pm to March 5th, and it does not include insurance.
+user: Yeah, that's fine with me. What is its price per night?
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked, and its price is $43.00 per night.
+user: Thank you for your assistance; that's all.
+assistant: Have a pleasant afternoon.

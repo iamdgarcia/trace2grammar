@@ -1,0 +1,20 @@
+user: I have a plan to visit to a place for a meeting,so i need a house to stay over there. Will you find me a house to stay for one people and with laundry service?
+assistant: In which city i should search for house?
+user: Please search for house at the place Nairobi.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses available as per your needs. What about 9042/1044 Tower Avenue Jomo Kenyatta Intl Airport, Kenya? THe rating is 4.5.
+user: What is the phone number for this place?
+assistant: The phone number is +254 709 760000.
+user: the house is good and it suits for me.
+assistant: Whether you like to make a reservation for this house?
+user: Yes , I need to book that house.
+assistant: From which day you will be check in and in which day you will check out?
+user: I want to check out on March 13th and i need to check in on the 7th.
+assistant: Please check and review the details. The location is Nairobi. there are 1 people to stay . the check in date is March 7th. and the check out date is March 13th.
+user: Yes, that sound good.
+tool(BookHouse): ok n_results=1
+assistant: Reservation is confirmed.
+user: Thanks for your help and that's all i need.
+assistant: whether i need to do anything else?
+user: no, thanks for now
+assistant: Have a wonderful day. take care

@@ -1,0 +1,14 @@
+user: I am in a nice mood and I like to listen to nice songs. How do you think about the album Overthinking which contains many good songs and also I like the songs by Shy Martin. Can you search for something from two years ago?
+tool(LookupMusic): ok n_results=1
+assistant: Yes, of-course, what about the song Good Together by Shy Martin from the album Overthinking? Do you like it to listen now?
+user: Yes, I think I may like to hear this song now. Thanks.
+assistant: Shall I play it now for you?
+user: Yes, play it on Speaker in Kitchen.
+assistant: Please confirm to play the song Good Together in Kitchen.
+user: Sorry, please play it for me in the Living room device.
+assistant: give me your confirmation to play the song Good Together in Living room.
+user: Yes, proceed and also let know the type of song.
+tool(PlayMedia): ok n_results=1
+assistant: It is a Pop song and the same was started playing for you now.
+user: Thanks and that's all for now.
+assistant: Have a great day.

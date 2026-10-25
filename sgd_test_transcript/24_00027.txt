@@ -1,0 +1,25 @@
+user: Hi, could you get me three Delta Airlines one-way flight tickets from Vancouver, BC?
+assistant: Where to and when do you plan to travel?
+user: I will be travelling to Seattle on the 1st.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Would you like a Delta Airlines flight departing at 6:35 am with 1 layover costing $241?
+user: Sounds great, but could you help me find train rides travelling there too?
+assistant: Will you be travelling on March 1st too?
+user: No, could you search for tickets departing on the 5th instead?
+tool(FindTrains): ok n_results=6
+assistant: Would you like a train departing at 6:40 am costing $131?
+user: Are there any alternatives?
+assistant: How about a train departing at 7:10 am costing $151?
+user: May I know which station will I depart from and arrive at?
+assistant: You will be travelling from Pacific Central Station to King Street Station.
+user: I see, are there any alternatives then?
+assistant: How about a train departing at 3:10 pm costing $140?
+user: Sounds great! Could you get me economy tickets with trip insurance then?
+assistant: Please confirm your purchase of 3 value train tickets from Vancouver to Seattle on March 5th at 3:10 pm.
+user: Sorry, could you get me economy premium tickets instead?
+assistant: Sure, please confirm your purchase of flexible tickets to Seattle.
+user: That sounds great. May I know which station will I arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your reservation has been made, and you will arrive at King Street Station.
+user: I see, that is all I need. Thanks!
+assistant: See you soon, have a great day ahead.

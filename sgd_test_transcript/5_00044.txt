@@ -1,0 +1,10 @@
+user: Hi there, what alarms do I have that are currently active?
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 set alarms, one of which is at 8:30 am titled Wake up.
+user: Sure, could you add an alarm at four pm titled Phone home please?
+assistant: Sure, please confirm your request to at an alarm at 4 pm with the title Phone home.
+user: That sounds great to me!
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been successfully added!
+user: Thanks alot! That is all I need.
+assistant: No worries, have a great day ahead!

@@ -1,0 +1,19 @@
+user: Would you find me a direct bus?
+assistant: When will you leave?
+user: I'll leave on the 4th.
+assistant: Where will you leave from and where are you going?
+user: I will leave from Anaheim, CA and go to LAX.
+tool(FindBus): ok n_results=10
+assistant: I have 10 buses for you. What about one leaving at 7:50 am and that costs $13?
+user: Would you find me something else for 1?
+tool(FindBus): ok n_results=10
+assistant: How about a bus leaving at 10:20 am that costs $16?
+user: Okay, purchase tickets for me.
+assistant: Could you confirm that you want to leave from Anaheim and go to Los Angeles on March 4th at 10:20 am and that you need 1 ticket? You don't have extra luggage.
+user: Sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been confirmed.
+user: Thank you for helping.
+assistant: Would I be able to assist with something else?
+user: No, thank you for helping.
+assistant: Have a fantastic day.

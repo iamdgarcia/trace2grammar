@@ -1,0 +1,16 @@
+user: Can you help me find some songs?
+tool(LookupMusic): ok n_results=10
+assistant: Found 10 songs that you may like. Would you be interested in Hate Me from the album Arcadia by Eurielle?
+user: Yes, that's the one I was looking for.
+assistant: Shall I play this song for you?
+user: Yes, please do.
+assistant: Please confirm that you would like to play the song Hate Me in the Living room.
+user: Can you play it on the kitchen speaker instead?
+assistant: Sure. Playing the song Hate Me in the Kitchen. Shall I proceed?
+user: Yes, please go ahead and play it.
+tool(PlayMedia): ok n_results=1
+assistant: Song is playing now. Enjoy your music.
+user: What genre is it?
+assistant: It's a Pop song.
+user: Thank you. That's all I need.
+assistant: Have a great day!

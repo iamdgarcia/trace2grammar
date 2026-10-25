@@ -1,0 +1,27 @@
+user: I need a place to eat.
+assistant: What location and kind of food are you seeking?
+user: Please find a restaurant in Berkeley serving barbecue.
+tool(FindRestaurants): ok n_results=10
+assistant: B&b kitchen & Wine Bar is nice and is a restaurant in Berkeley.
+user: What is the phone number and are they expensive in the restaurant?
+assistant: The restaurant is moderate and has a phone number of 510-647-9329.
+user: Yes, that is great.
+assistant: Do you wish to reserve a table here?
+user: Yes, I'd like to reserve a table for four people March 13th at 7 in the evening.
+assistant: Please confirm details to book a table for 4 on March 13th at 7 pm at B&b kitchen & Wine Bar in Berkeley.
+user: Yes, that will work and what is the address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is a success and the street address is 2116 Shattuck Avenue.
+user: Are there vegetarian options on the menu?
+assistant: They have some good options that are vegetarian.
+user: Thanks so much and can you get me a cab there?
+assistant: Would you have a preferred type of ride?
+user: I will be in a group of 3 that is the cheapest ride.
+assistant: Please confirm details for a ride to 2116 Shattuck Avenue for 3 seats pool ride.
+user: Yes, that will work for me.
+tool(GetRide): ok n_results=1
+assistant: I have a cab booked for the ride and its on its way.
+user: Thanks so much for your help.
+assistant: Would I be able to help you with anything else?
+user: No thanks for your help a lot.
+assistant: Have a nice day.

@@ -1,0 +1,40 @@
+user: I would love your help in finding interesting events.
+assistant: Is there any specific thing you enjoy? Just tell me if it's Music, theater or anything you like.
+user: I love a concert.
+assistant: What city do you want?
+user: I'd like the area of San Francisco.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events I believe you'd enjoy. A popular one would be Alex Cameron. This will be at the August Hall on March 8th at 7 pm.
+user: Sounds like an awesome time.
+assistant: Do you need more help?
+user: Can you tell me about the buses heading there? I would need a direct route for 3 people that is leaving on the 4th of March.
+assistant: What is the departure location?
+user: I'll be departing from SD.
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses fitting your wants. There is a bus leaving at 6:30 am and has a price of $61. What do you think about it?
+user: Tell me the arrival station?
+assistant: Transbay Terminal is the arrival station.
+user: Where does it depart?
+assistant: El Cajon Bus Stop is the departing station.
+user: Will you look for other options?
+assistant: What about a bus leaving at 7:20 am and will be $55?
+user: look for something else for 2 people.
+tool(FindBus): ok n_results=4
+assistant: There are 4 buses and one leaves at 9:10 am, with a cost of $53. Does that work?
+user: That works perfect.
+assistant: Would you like tickets for this bus?
+user: Not at this moment, I don't want to buy them.
+assistant: Would you like more help?
+user: I need a round trip flight with Delta Airlines. I will be leaving on the 7th of March and returning on the 14th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Delta Airlines is your preference? There is an onward flight that will leave at 5:10 pm and has a return flight that will leave at 9:45 am. The cost is $213 per ticket and there is a layover.
+user: Sounds fine to me. Will you look around for hotels in that location?
+tool(SearchHotel): ok n_results=10
+assistant: There's a 1 star hotel by the name of Amsterdam Hostel San Francisco.
+user: That's fine. I want to buy tickets for the event you mentioned.
+assistant: Buying 2 tickets for the Alex Cameron event in San Francisco on March 8th. Do you approve?
+user: Yes, I like that. Tell me ticket prices and venue spot.
+tool(BuyEventTickets): ok n_results=1
+assistant: The venue is at 420 Mason Street and will have a ticket price of $25. I booked your reservation and have a blast!
+user: You're so much help! That takes care of it for me.
+assistant: Hope your day is good.

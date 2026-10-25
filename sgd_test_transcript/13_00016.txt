@@ -1,0 +1,19 @@
+user: I need help with finding interesting things to do in Philadelphia.
+assistant: Are there any kinds of events you prefer?
+user: I prefer Musical performance type events.
+tool(FindEvents): ok n_results=10
+assistant: People enjoy Anthony Green. He's having a show at The Foundry on March 10th at 6 pm.
+user: What's the price of a ticket? And what's the address?
+assistant: It is $60 for a ticket. The address is 29 East Allen Street 2nd Floor.
+user: I think I'd enjoy that.
+assistant: Would you like me to buy you tickets?
+user: Not right now. I do need a hotel there. Just one room, preferably in a three star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 matches I've found. There's a 3 star hotel called Aka University City that could work.
+user: Yeah, I like the sound of that. Now, back to that event we were talking about. I need 2 tickets.
+assistant: I'll book you 2 tickets for Anthony Green in Philadelphia on March 10th. Is that correct?
+user: Yeah, you got it.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've booked the tickets. Enjoy the event!
+user: Thanks for doing everything. I don't need any more help.
+assistant: Have a wonderful day.

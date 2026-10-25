@@ -1,0 +1,50 @@
+user: I want you to find me a train which leaves from Philly, and I want to have 1 seat for it.
+assistant: Can you tell me the date when you are going to have your travel?
+user: The tickets I am looking for should be for the 12th.
+assistant: Can you tell me your destination?
+user: I want to go to NYC.
+tool(FindTrains): ok n_results=8
+assistant: How would you like having the train which leaves at 10:40 am, and the ticket of which costs $47?
+user: Can you tell me the station from where the train leaves, and the station where the train arrives at?
+assistant: The train will be departing from 30th Street Station, and it's arrival station is Grand Central Station.
+user: Is there some other train that you can suggest? More specifically I want to have a train which leaves from Washington, and I do not mind the class of the fare.
+tool(FindTrains): ok n_results=8
+assistant: I found 8 trains which match what you want. One of the trains that you can consider leaves at 6:20 am, and that it costs $66.
+user: That is what I want.
+assistant: Do you want to have tickets booked for you for this train?
+user: Actually I do not want to have tickets for this train bought at this moment.
+assistant: Is there something else I can do to help you?
+user: I also would like to know about some interesting things to do there, I usually enjoy the Musical shows.
+tool(FindEvents): ok n_results=10
+assistant: You might consider going to Abbi Jacobson which is quite popular, and it will happen at Kaufmann Concert Hall on March 11th at 7:30 pm.
+user: It seems fine, though is there some other event you can recommend?
+assistant: Another event for you to consider is Alma Deutscher which is also popular, and it will happen at Stern Auditorium / Perelman Stage on March 3rd at 7 pm.
+user: That is okay, but I want you to tell me about other alternatives for March 13th.
+tool(FindEvents): ok n_results=8
+assistant: There are 8 events that you might want to go to. One of the events is Alpha Blondy which is a good one, and it will happen at Sony Hall on March 13th at 5:30 pm.
+user: Can you tell me the location of the venu?
+assistant: The address of the venue is 235 West 46th Street.
+user: Can you tell me the price of the ticket?
+assistant: The ticket has a price of $60.
+user: That seems nice. Can you recommend some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you to consider, with one of the attractions being 9/11 Tribute Museum, which is a Museum.
+user: Can you tell me the phone number of this attraction, and could you also tell me if the entrance to this attraction is free?
+assistant: Unfortunately entering this attraction is not free of charge, and if you want to call them you can at 866-737-1184
+user: Alright, though can you recommend some other attractions? More specifically I want something without entry fee, and that it is suitable for kids.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions for you to consider, with one of them being Alley Pond Park, which is a Park.
+user: Alright, is there some other alternative attraction, more specifically a Museum?
+tool(FindAttractions): ok n_results=10
+assistant: Matching what you want I found 10 attractions, with one of the attractions being Brooklyn Children's Museum, which is a Museum.
+user: Alright, fine. Now I would like to find a house there, which has laundry service, and I need it for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: A nice house for you to consider can be found at 100 Greenwich Street, and it has a rating of 4.4
+user: What is the phone number of this place?
+assistant: If you want to call them you can at +1 917-409-0800
+user: This house seems a nice choice to me
+assistant: Do you want to make a booking for this house?
+user: No, I do not want to have a booking be made at this moment.
+assistant: Can I do something else to help you?
+user: Nothing, I am grateful for the help you provided.
+assistant: I enjoy helping you. Goodbye!

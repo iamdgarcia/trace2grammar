@@ -1,0 +1,42 @@
+user: I want to change my hairstyle for which I need to find a Salon. Can you find the one for me?
+assistant: Yes, Where do you want to search for the Salon?
+user: Search it in Mountain View.
+tool(FindProvider): ok n_results=9
+assistant: Okay. I got 9 results. Do you like to visit a Salon called Bollywood Beauty Salon in Mountain View?
+user: Yes, That is okay. I want to search for a Therapist in that area and I need your help to find someone suitable to me.
+assistant: Let me know your required type of Therapist to search for whether a Psychologist or a Family Counselor? and also do you have any particular city in your mind to search for the Therapist? or shall I search it in Mountain View itself?
+user: Yes, search it there and I want to meet a Psychologist.
+tool(FindProvider): ok n_results=3
+assistant: Do you like to meet Bishop Sue A who is also a Psychologist in Mountain View?
+user: Let me know their phone number to decide.
+assistant: Their contact number is 650-969-0288.
+user: Can you search for some other therapist?
+assistant: Yes, what about Culberson Couple Counseling? who is a Psychologist in Mountain View.
+user: Yes, that is okay to me.
+assistant: Shall I book an appointment with this Therapist?
+user: Yes, book it for me on the 6th.
+assistant: What is your convenient time to book the same?
+user: I think you can book it at 12 o'clock in the afternoon.
+assistant: I need your confirmation to book an appointment with Culberson Couple Counseling on March 6th for the time at 12 pm.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=0
+assistant: Unfortunately I was not able to book the same on that day. How can I help you further?
+user: Please try to book it on next Thursday.
+assistant: I need your confirmation to book an appointment with Culberson Couple Counseling on March 7th for the time at 12 pm.
+user: That is correct and you can try now. Also let me know their address and contact number.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked the appointment for that day. They will send an e-mail to confirm the same soon. Also note that they are located at 2672 Bayshore Parkway # 1045 and you can contact them by phone number 650-988-1915.
+user: That's fine and thanks for the details. Now, please make a booking at the Salon that I have selected before. I need the same for the time at 5:45 in the evening.
+assistant: I want to confirm to book an appointment to the Salon Bollywood Beauty Salon on March 7th at 5:45 pm.
+user: That is okay to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I was not able to book it on that time. Can I try that for the time 6 pm on March 7th with Bollywood Beauty Salon?
+user: Yes, that is also okay.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked it successfully.
+user: Let me know their contact number.
+assistant: It is 650-938-2400
+user: Thanks so much.
+assistant: How can I help you further?
+user: I don't need anything else now.
+assistant: Have a good day.

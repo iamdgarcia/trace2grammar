@@ -1,0 +1,12 @@
+user: Could you find me something interesting to do in Belvedere? I really like musical shows.
+tool(FindEvents): ok n_results=1
+assistant: There's the Chanticleer Concert, taking place at the St. Stephen's Episcopal church on march 8th at 6 pm.
+user: That sounds great, can I reserve tickets?
+assistant: How many tickets?
+user: 2 tickets please.
+assistant: Please confirm: You want to book 2 tickets for the Chanticleer Concert on March 8th in Belvedere.
+user: Correct. Where is the event, and how much does each ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed. It's taking place at 3 bayview avenue, and costs $55 per ticket.
+user: Thank you, that's all I need.
+assistant: you're very welcome, have a good day.

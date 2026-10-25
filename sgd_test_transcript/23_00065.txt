@@ -1,0 +1,28 @@
+user: I want to make a payment to Bob for 116 dollars.
+assistant: What account would you like to send it from?
+user: Send from money in app, please.
+assistant: Please confirm: Sending $116 to Bob via your app balance. This transaction is public.
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made. Your transaction will be posted soon.
+user: I want to find train tickets. I want to find tickets on the 6th from Fresno to Phoenix.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains. There is a train departing at 6 am for $179.
+user: What station does it leave from and where does it arrive?
+assistant: The train leaves from Fresno Station and arrives at Phoenix Union Station.
+user: Sounds good. What is the weather in Phoenix on the 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 86 Fahrenheit with a 29 percent chance of rain.
+user: What is the humidity going to be?
+assistant: The humidity is projected to be around 46 percent.
+user: I want to purchase tickets for the train.
+assistant: How many tickets do you need to purchase?
+user: I need one seat.
+assistant: Would you like to add travel insurance?
+user: Yes, thank you.
+assistant: Please confirm: 1 value ticket for the train leaving Fresno on March 6th at 6 am arriving in Phoenix.
+user: Yes, that's correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been reserved.
+user: Thank you so much for everything!
+assistant: Have a wonderful day!

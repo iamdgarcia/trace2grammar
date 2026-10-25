@@ -1,0 +1,36 @@
+user: I've had a long day and I want to relax with some movies. Can you find some online movies? Maybe that stars Carol Sutton?
+assistant: What type of movies do you like?
+user: I like family movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you might like. What about Steel Magnolias?
+user: I like Steel Magnolias.
+assistant: Should I play the movie?
+user: Not just yet. I'd also like to search for some attractions for the weekend.
+assistant: What city should I search in?
+user: Let's look in the New York area.
+tool(FindAttractions): ok n_results=10
+assistant: You might the 9/11 Tribute Museum which is a museum.
+user: Okay, what other attractions are there? I'd like something more child-friendly.
+tool(FindAttractions): ok n_results=9
+assistant: I found 9 attractions you may like. There is 92nd Street Y which is a performing arts venue.
+user: Okay, that might work. Can you also find me some songs to play? I'm really into hillbilly songs.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs you may like. What about A Little Bit Stronger by Sara Evans off the Stronger album?
+user: Yes, sounds good, please play this song.
+assistant: Okay, let's confirm: Playing A Little Bit Stronger in the living room.
+user: No, cast it to the speaker outside.
+assistant: Okay, let's confirm: Playing the song A Little Bit Stronger on the Patio.
+user: No, cast it to the kitchen instead.
+assistant: Okay, let's confirm: Playing A Little Bit Stronger in the kitchen.
+user: Yes sounds good. When did that song come out?
+tool(PlayMedia): ok n_results=1
+assistant: The song is from 2010.
+user: Thanks! Can you start the movie you found?
+assistant: Okay, let's confirm: Playing Steel Magnolias with English subtitles.
+user: Yes, thanks.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: Okay, thanks.
+assistant: Anything else I can help with?
+user: No, thank you.
+assistant: Have a great day!

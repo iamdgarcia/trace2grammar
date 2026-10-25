@@ -1,0 +1,20 @@
+user: Can you find me a nice movie to watch?
+assistant: Which is your preferred city for the movie?
+user: I am looking for a regular show of a movie in Brentwood.
+tool(FindMovies): ok n_results=8
+assistant: There are 8 movies you may like. What do you think of Ad Astra, Good Boys or Hobbs and Shaw?
+user: Hobbs and Shaw sounds good to me. Can you search a nice pop song from five years ago?
+tool(LookupMusic): ok n_results=10
+assistant: How about All About That Bass by Meghan Trainor from the album Title?
+user: Is there any other song by Iggy Azalea?
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song called Black widow by Iggy Azalea from the album The New Classic.
+user: Yes, That is the song I am looking for. I would like you to play this song on speaker in patio.
+assistant: Please confirm: You want me to play Black Widow in Patio.
+user: No, Play it on Kitchen speaker.
+assistant: Please confirm: You want me to play Black Widow in Kitchen speaker.
+user: Yes, That works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. enjoy!
+user: That will be all for now. Thank you so much!
+assistant: I am glad I could help. Have a nice day!

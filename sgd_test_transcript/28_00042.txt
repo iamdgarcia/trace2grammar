@@ -1,0 +1,27 @@
+user: Help me search for a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: Would you be interested in Stage Door? The movie is well received with an average rating of 95 out of 100.
+user: Must be a really good movie. Sounds like something I'd like. Now, I need help finding a restaurant.
+assistant: What location will I search for a restaurant in?
+user: Find nice restaurants located in Santa Rosa.
+assistant: What type of food do you prefer?
+user: I'm looking to eat a pasta dish at the restaurant. Find something that prepares that type of meal.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 restaurants in that area that I have found. Basilico servers pasta dishes and is located in Santa Rosa.
+user: What's the phone number to that establishment?
+assistant: The phone number to Basilico is 707-539-0260.
+user: Okay. Let's try another restaurant instead.
+assistant: Ca'bianca is located in Santa Rosa. It may be adequate for you.
+user: Any other restaurants that I may like?
+assistant: How about Italian Affair? It is another restaurant in Santa Rosa that servers pasta dishes.
+user: That one. I like the sound of that restaurant.
+assistant: It is possible for me to reserve a table for you at that location. Would you like me to?
+user: Yeah you can go ahead and reserve it. I'll try and see how that restaurant's food is.
+assistant: What time should the reservation be scheduled for?
+user: I'll want to dine there at six in the evening.
+assistant: Booking a table for 2 at Italian Affair in Santa Rosa. The reservation is being made for 6 pm on March 1st. Is this information correct?
+user: Yes that is correct. Do they have outdoor seating at their location? What's the address of Italian Affair as well?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved for March 1st at 6 pm. The address of Italian Affair is 1055 4th Street.
+user: Perfect. Thank you you for your assistance. That's all I need help with.
+assistant: Have a wonderful evening.

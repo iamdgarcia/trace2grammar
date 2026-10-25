@@ -1,0 +1,19 @@
+user: I need to find a hotel please
+assistant: Sure, in what city?
+user: I need to find a place in Long Beach please
+tool(SearchHotel): ok n_results=10
+assistant: How about the 3 star Best Western of Long Beach?
+user: OK that's great, now find me an attraction with no entry fee
+tool(FindAttractions): ok n_results=5
+assistant: You should try out this park called the Earl Burns Miller Japanese Garden!
+user: OK that's cool, now let's book that hotel
+assistant: When are you checking in?
+user: I want to go today actually
+assistant: Sure, and for how long?
+user: I'll be there for 6 days
+assistant: OK confirming you want a 6 day stay starting on March 1st at the Best Western of Long Beach in Long Beach and you need 1 room
+user: Sure, how much is it nightly and can I smoke there?
+tool(ReserveHotel): ok n_results=1
+assistant: It's been booked! It's non-smoking and will be $279 a night
+user: OK that's it, you've been a big help
+assistant: Glad I could be of help!

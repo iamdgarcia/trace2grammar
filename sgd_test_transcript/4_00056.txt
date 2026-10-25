@@ -1,0 +1,16 @@
+user: Can you find me a Filipino place to eat.
+assistant: In which city?
+user: I'm looking for something in Geyserville serving pasta outdoors.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 option. Diavola Pizzeria & Salumeria is in Geyserville.
+user: That one sounds okay.
+assistant: Should I book a table?
+user: Yes. Please book.
+assistant: For what time?
+user: Please reserve for 1 in the afternoon.
+assistant: Please confirm you want me to reserve a table for 2 at 1 pm at Diavola Pizzeria & Salumeria in Geyserville on March 1st.
+user: Yes. That's correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was a success.
+user: Thanks. That will be all.
+assistant: Okay. Have a great day. Goodbye.

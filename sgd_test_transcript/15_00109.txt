@@ -1,0 +1,43 @@
+user: Search for some nice Salon and I need it to change my Hair appearance.
+assistant: Where do you want to search for it? Is there any particular place in you mind?
+user: Yes, search it in Fairfield.
+tool(FindProvider): ok n_results=2
+assistant: What about C'S Barber Shop in Fairfield? Do you think whether this place is comfortable one?
+user: I want to know their average rating first.
+assistant: That is 4.9 in average.
+user: And what about their location?
+assistant: They are located at 2240 NOrth Texas Street.
+user: That's great and thanks.
+assistant: Do you want me to book an appointment there now?
+user: No, I will ask it later.
+assistant: How can I help you further?
+user: Search for some Therapist there. I want to meet someone in that area.
+assistant: What type of Therapist you want to search for? Whether you need meet a Psychiatrist or a Family Counselor?
+user: I want to meet a Family Therapist in Fairfield.
+tool(FindProvider): ok n_results=1
+assistant: Got 1 result which is Family Solutions Inc. and they are a Family Counselor in Fairfield. Do you want to meet them?
+user: Yes, I want to meet them and please book an appointment to them on 9th of March.
+assistant: Let me know your convenient time to book the same.
+user: Book it at 12:30 pm.
+assistant: I want to confirm once again to book an appointment at Family Solutions Inc on March 9th at 12:30 pm.
+user: That is confirmed and you can proceed. Also I want to know their address and contact number.
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 2550 Hilborn Road and they can be contacted by their phone number 707-631-0276. Unfortunately I was not able to book an appointment with Family Solutions Inc on March 9th for your required time. Shall I try to book it on another time at 1 pm?
+user: Yes, try that one.
+tool(BookAppointment): ok n_results=1
+assistant: I have booked successfully on new time and they will send their confirmation through e-mail soon to you.
+user: Thank you so much for your help.
+assistant: What else do you want from me?
+user: Now, Please book an appointment with the Salon that I have selected before.
+assistant: At what time?
+user: Book it at quarter to 4 in the afternoon.
+assistant: Please confirm to book an appointment with the Salon C'S Barber Shop on March 9th at 3:45 pm.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was successfully confirmed.
+user: Let me know their phone number.
+assistant: It is 707-673-7601.
+user: Thanks for the detail.
+assistant: Anything else you need?
+user: Nothing for now and thanks.
+assistant: Have a good day.

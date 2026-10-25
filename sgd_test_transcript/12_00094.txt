@@ -1,0 +1,17 @@
+user: I need to find a bus.
+assistant: What is your departure and arrival destination and which date are you travelling?
+user: I'm going from Anaheim to San Diego tomorrow.
+tool(FindBus): ok n_results=9
+assistant: There are 9 options. A bus departs at 7:20 am for a total of $26.
+user: That one sounds great.
+assistant: Should I reserve seats for you?
+user: Yes, please reserve 1 seat.
+assistant: Please confirm you want me to reserve 1 seat for the bus leaving from Anaheim to San Diego on March 2nd at 7:20 am.
+user: That bus sounds good. Is it direct?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct bus. Your reservation has been confirmed.
+user: I also need a hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options. The Bahia Resort Hotel has a 3 star rating.
+user: Great. That's all I need.
+assistant: Okay. Goodbye.

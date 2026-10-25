@@ -1,0 +1,18 @@
+user: I'm in need of a hotel.
+assistant: Where will you need it?
+user: How about Toronto, Canada?
+tool(SearchHotel): ok n_results=10
+assistant: Why not try Best Western Plus Toronto North York Hotel & Suites? It has 3 stars.
+user: Fine, book it.
+assistant: When will you check in?
+user: How about on the 10th of March.
+assistant: How many nights?
+user: I'll be there 2 days.
+assistant: To confirm, 1 room for 2 nights at Best Western Plus Toronto North York Hotel & Suites on March 10th in Toronto.
+user: Fine, is there smoking allowed? How much per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Sorry no smoking, the price is $99 a night.
+user: Fine, I'll deal. Thanks
+assistant: What else can I help with?
+user: Nothing, You're the cat's meow.
+assistant: Gee thanks, I don't get that enough.

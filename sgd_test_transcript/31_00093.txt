@@ -1,0 +1,33 @@
+user: I want to change my hair style for which I need your help to find a good salon. Search for something in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: What about the one at 1512 Barber Shop in San Francisco? Do you prefer this one?
+user: Yes, I like to go to this Salon.
+assistant: That's good. How about an appointment, shall I book the same now?
+user: Of-course. Do it for me now.
+assistant: Okay, Let me know your convenient date visit the Salon so that I can fix an appointment on that day.
+user: Make it on March 5th.
+assistant: For what time?
+user: 11:15 in the morning is the perfect time to me.
+assistant: Please confirm to book an appointment with the Salon at 1512 Barber Shop for the time at 11:15 am on March 5th.
+user: Yes, please proceed. And let me know their address and rating.
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 1532 20th street and their average rating is 4.8. But I was unable to fix the appointment at that time. Shall I try to book it at the same Salon located at 1512 Barber Shop for the time 11 am on March 5th?
+user: Yes, that is also a comfortable time to me. please proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment.
+user: Thank you. Now, help me to search for a good restaurant. I want to eat there on that day.
+assistant: What is your favorite kind of food?.
+user: I love to eat Pasta. Can you search for the one which is serving this food?
+tool(FindRestaurants): ok n_results=10
+assistant: Yes, what do you think about the restaurant at 54 Mint Ristorante Italiano in San Francisco? which is the best place among the 10 results that I searched for you.
+user: I prefer this restaurant and thanks.
+assistant: Do you want me to book a table there?
+user: Yes, I want to reserve it now and I want to book it for two persons for the time 16:30.
+assistant: Please confirm to book a table for 2 at 54 Mint Ristorante Italiano in San Francisco for the time 4:30 pm on March 5th.
+user: Sorry, I want to book it for four persons and the for time 12:30.
+assistant: Need your final confirmation to book the table for 4 at 12:30 pm.
+user: This is correct and proceed. Also check for the outdoor seating there.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Yes, outdoor seating is available there but I was not able to book the table at that time. Shall I try to book it at the same restaurant 54 Mint Ristorante Italiano on March 5th for 4 persons at 1 pm? Is this time is convenient to you?
+user: No, that is not suitable to me. Thanks.
+assistant: Have a great day.

@@ -1,0 +1,12 @@
+user: I would like to hear some music.
+tool(LookupMusic): ok n_results=10
+assistant: Would you like to hear Die Young from the album Warrior by Kesha? I have 10 other songs in mind, also.
+user: Yes, I'd like to hear Die Young by Kesha.
+assistant: Okay. Please confirm that you want to hear Die Young in the Living room.
+user: Yes, I want to hear it in the living room. Did that song come out in 2010 or 2011? Is it hip-hop?
+tool(PlayMedia): ok n_results=1
+assistant: It is a pop song from 2012. Enjoy your music.
+user: Great. Thanks very much.
+assistant: Would you like me to play an additional song?
+user: No. That's all, thanks.
+assistant: You're welcome. Enjoy your music.

@@ -1,0 +1,18 @@
+user: I'm going out for a date this weekend and I'd like to go see a movie.
+assistant: Where would you like to search?
+user: Let's look for movies in Oakland.
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies you might like. How about Blinded by the Light, Good Boys or Hobbs and Shaw?
+user: I'd love to see Hobbs and Shaw.
+assistant: Would you like to purchase tickets?
+user: Yes, let's buy the tickets.
+assistant: How many tickets would you like?
+user: Let's get three tickets.
+assistant: What date and when would you like to see it? Are you looking for Imax or a regular show?
+user: I'd like to see the show at night 10 on the 2nd. I'm fine with a regular show.
+assistant: Okay, let's confirm the details: We're buying 3 tickets to a regular showing of Hobbs and Shaw on March 2nd, playing in Oakland at 10 pm.
+user: Yes, that's perfect. What's the address of the theater?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Okay, all set. The address to the theater is 100 Washington Street.
+user: Thanks for your help, that's it for now.
+assistant: Have a great day!

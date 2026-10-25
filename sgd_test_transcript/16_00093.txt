@@ -1,0 +1,32 @@
+user: I would like to purchase bus tickets from Anaheim, CA from SF.
+assistant: What time will you depart? How many tickets would you like? When will you leave?
+user: I would like to leave Friday next week at three pm and need tickets for 4 people.
+assistant: Could you confirm that you would like a bus ticket leaving from Anaheim and going to San Francisco on March 8th at 3 pm for 4 people? You do not have extra luggage. Is this right?
+user: That sounds good to me.
+tool(BuyBusTicket): ok n_results=0
+assistant: The purchase did not go through because of unexpected errors. Could I assist with anything else?
+user: Would you try again? I would like to leave at half past 5 in the evening going to LAX.
+assistant: Could you confirm that you want a ticket on the bus that leaves from Anaheim and goes to Los Angeles on March 8th at 5:30 pm for 4 people and that you don't have extra luggage?
+user: Sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The purchase did not go through because of unexpected errors. What about a bus leaving at 5:40 pm that costs $13?
+user: Sounds good to me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket was confirmed.
+user: Thank you for helping. Would you find a two star hotel in that area? I would like two rooms.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that should work. What about the hotel called Best Western Hollywood Plaza Inn? It's a 2 star hotel.
+user: Could you tell me the street address?
+assistant: The street address is 2011 North Highland Avenue, Hollywood, CA 90068, USA.
+user: Do you have any other hotels that would work? I would like 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: How about a hotel called Best Western Los Angeles Worldport Hotel. It's a 2 star.
+user: That sounds good. I'd like to make the reservation for 4 days. How about checking in on Saturday this week?
+assistant: Could you confirm that you want to find ad hotel in Best Western Los Angeles Worldport Hotel and will check in on March 2nd? You will stay for 4 days in Los Angeles and you need 1 room, right?
+user: Sure, that's great.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation went through.
+user: What is the street address and price per night?
+assistant: The address is 1402 West Pacific COast Highway, Wilmington CA 90744, USA. It's $222 per night.
+user: Thank you. That's been a great help. That's it for now.
+assistant: Bye and have a fantastic day.

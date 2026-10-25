@@ -1,0 +1,24 @@
+user: I could use your help in finding a salon to go to.
+assistant: In which city would you like me to look for salons?
+user: Find me something in Mill Valley, preferably a unisex salon.
+tool(FindProvider): ok n_results=5
+assistant: I've found 5 salons that meet your criteria. You might like Ap Luxe Salon in Mill Valley.
+user: What's their contact number and average rating?
+assistant: They have an average rating of 4.4 and their contact number is 415-987-5893.
+user: Great. Can you share the location with Jessica? Just the clarify the address to send is 40 Millwood Street.
+assistant: You would like to share the location 40 Millwood Street with Jessica. Is that correct?
+user: Yes that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has successfully been shared.
+user: Great, thank you. Can you show me my alarms now?
+tool(GetAlarms): ok n_results=4
+assistant: You're welcome. You have an alarm set for 6 am with the name Wake up.
+user: Can you add an alarm for 17:15 and make the name Leave for home?
+assistant: You would like to create a new alarm for 5:15 pm with the name Leave for home. Is that correct?
+user: No, make it for five pm and call it cleaning.
+assistant: You would like to create a new alarm for 5 pm with the name Cleaning. Is that correct?
+user: That is correct, yes.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added without issue.
+user: Great, thanks again that will be all.
+assistant: You are most welcome, enjoy the rest of your day.

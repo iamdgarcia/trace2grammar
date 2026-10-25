@@ -1,0 +1,29 @@
+user: I really need to schedule a therapist appointment. Can you help?
+assistant: I need to know where you would like your visit to be.
+user: Santa Rosa is where I would like you to look.
+assistant: There are several types of therapists. Are you in need of a Psychologist or perhaps a Family Counselor?
+user: I would like to visit a Psychologist. Thanks for double checking.
+tool(FindProvider): ok n_results=10
+assistant: Santa Rosa has a psychologist available. One option is Bert Epstein.
+user: That will be fine. Can you let me know the weather report there for the 1st of this month.
+tool(GetWeather): ok n_results=1
+assistant: The forecast predicts a mean temperature of 83 degrees Fahrenheit. There will only be a 6 percent chance of rainfall.
+user: Will it be a lot of dew during the day? Please check the wind forecast also.
+assistant: The moisture level is predicted at 21 percent. The wind will blow around 8 miles an hour.
+user: Thanks for the report. That day will be perfect to get the therapist appointment for.
+assistant: What hour of the day would you like your visit to be at?
+user: I would like my visit to be at 18:00.
+assistant: Please let me know if the following details are correct. You would like me to set an appointment on March 1st at 6 pm with Bert Epstein.
+user: The details are correct.
+tool(BookAppointment): ok n_results=0
+assistant: I don't know what happened but I failed to get the appointment set. Do you need anything else.
+user: I really need your help setting that appointment. Could you please try 3:15 in the afternoon.
+assistant: I can try to set your appointment at 3:15 pm this March 1st with Bert Epstein if you like.
+user: Please and thank you.
+tool(BookAppointment): ok n_results=1
+assistant: That time was not available, sorry. I suggest trying 3 pm on March 1st with Bert Epstein.
+user: I will take your advice.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment details will be sent to your email address as the booking was successful.
+user: Much gratitude for the assistance. See you later.
+assistant: That's what I'm here for. Take it easy.

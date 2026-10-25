@@ -1,0 +1,37 @@
+user: Could you find me a therapist please?
+assistant: In what city you want to be?
+user: In Walnut Creek I would like to be.
+assistant: What kind of therapist interests you?
+user: A Family Counselor would be okay.
+tool(FindProvider): ok n_results=4
+assistant: 4 therapists I have that you may like.You may try Family Counselor in Walnut Creek called Andreotti Daniel
+user: Sounds okay.Book for me an appointment.
+assistant: Tell me at what time you prefer to be.
+user: I would like to be at 4 pm.
+assistant: On what date you need?
+user: Try to make it for 2nd of March
+assistant: Book an appointment with Andreotti Daniel at 4 pm on March 2nd.I'm right?
+user: No.Make it for 13th of March.
+assistant: Book an appointment with Andreotti Daniel on March 13th.Is okay for you?
+user: Yes is very good.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry but the appointment failed.With something else can I help you now?
+user: Try please again but change it on evening 4:15.
+assistant: Book an appointment with Andreotti Daniel at 4:15 pm on March 13th.Is okay?
+user: Yes that's okay for me.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry but but it could not be done.You may try Andreotti Daniel on March 13th at 4:30 pm .
+user: Yes is okay.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was booked and an confirmation email should came to you soon.
+user: Get for me a cab to go there.
+assistant: What type of ride you want.A Regular or Pool or anything else.You will go to 45 Quail Court # 200 and how many seats you want?
+user: Yes is okay.I prefer a Shared ride and I am in a group of 1.
+assistant: You need 1 seat at a Pool ride to 45 Quail Court # 200.I'm right?
+user: Yes is okay for me.
+tool(GetRide): ok n_results=1
+assistant: The ride is booked and the cab is ont its way.
+user: Thank you very much.
+assistant: With something else I can help you?
+user: No.Thank you!
+assistant: Have a great day!

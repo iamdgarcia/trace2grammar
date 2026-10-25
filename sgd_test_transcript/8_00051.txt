@@ -1,0 +1,16 @@
+user: I want to ask for a payment from Amelia for 155 bucks.
+assistant: Please verify the following information: you are making a publicly visible transaction with Amelia for $155.
+user: Yeah, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your query for payment has been filed.
+user: Thank you for your help! I'd like to now make a payment.
+assistant: Do you want me to transfer the cash from credit card or debit card? Also, how much are you sending, and who is the contact?
+user: The contact is Svetlana, the amount is 119 dollars, and the money should be transferred from my credit card.
+assistant: Please verify the following information: you will make a publicly visible transaction with Svetlana by sending her $119 from your credit card.
+user: Yeah, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been completed, and the contact ought to see their cash shortly.
+user: Thank you for your assistance.
+assistant: Could I assist with something else?
+user: No, thank you for your help.
+assistant: That's all for now; see ya!

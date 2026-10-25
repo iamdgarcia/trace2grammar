@@ -1,0 +1,25 @@
+user: I want to watch a fantasy movie with Dominic Monaghan. Look for movies directed by Peter Jackson.
+tool(FindMovies): ok n_results=1
+assistant: The Lord of the Rings: The Return of the King is available. It has a 93 rating.
+user: Fine. I want a restaurant.
+assistant: What type of food do you want? Where should I look?
+user: I want Punjabi food. Look in Redwood City.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant. Broadway Masala is in Redwood City.
+user: Is there outdoors seating? Where is it?
+assistant: There's no outdoor seating. It's at 2397 Broadway.
+user: That's fine then.
+assistant: Would you like a table?
+user: Yes, I want a reservation.
+assistant: What time would you like it?
+user: It want it at 7 pm.
+assistant: A table for 2 at Broadway Masala in Redwood City at 7 pm on March 1st. Is this right?
+user: Yes it is.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: How expensive are they? Are there veggie meals?
+assistant: They have a moderate price range. They have vegetarian meals.
+user: Thank you.
+assistant: Do you need anything else?
+user: No, that's all.
+assistant: Have a nice day.

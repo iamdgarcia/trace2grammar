@@ -1,0 +1,36 @@
+user: I'm looking for a salon.
+assistant: What city are you looking in?
+user: I want to find something in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is a great salon in San Francisco.
+user: What's the address and what is it rated?
+assistant: The address is 1532 20th Street and it has a rating of 4.8.
+user: Can you find a different salon?
+assistant: 20Th Salon And Barber is a nice salon in San Francisco.
+user: Sounds good to me.
+assistant: Do you want to book an appointment ?
+user: Yes, please. Make the appointment for 4 o'clock in the evening next Thursday.
+assistant: Please confirm: a hair appointment at 20Th Salon And Barber on March 7th at 4 pm.
+user: No, make the appointment for 5 pm instead.
+assistant: Please confirm: a hair appointment at 20Th Salon And Barber at 5 pm.
+user: That sounds great.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made.
+user: Can you find me a restaurant there that day? I want a burger.
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10 restaurants. 1760 is a popular restaurant in San Francisco.
+user: Is there outdoor seating?
+assistant: No, there's not outdoor or patio seating.
+user: What are some other restaurants?
+assistant: 25 Lusk is a nice restaurant located in San Francisco.
+user: That sounds good. I want to make a reservation.
+assistant: What time would you like the reservation for?
+user: I'd like the reservation for 5 pm.
+assistant: Please confirm: a table for 2 at 25 Lusk in San Francisco on March 7th at 5 pm.
+user: Yes sounds good. What's the restaurant rated? What is the address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made. The street address is 25 Lusk Street and they have a rating of 4.4.
+user: Thanks so much.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day!

@@ -1,0 +1,29 @@
+user: Find for me one way flight to Chi-town.
+assistant: From which city you will depart?
+user: From New York I will depart.
+assistant: On what date you will travel?
+user: I want that my travel to start on the 4th.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: You like American Airlines?The onward flight takes off at 11:20 am and has a layover.$180 is the price for thicket.
+user: Sounds very good.Find me trains that goes there on the 13th.
+tool(FindTrains): ok n_results=6
+assistant: 6 trains would be for you.What about one that depart at 6 am and cost $96 in total?
+user: Tell me at which station will arrive.
+assistant: Will arrive at Chicago Union Station.
+user: Are there any other trains that are good for me?
+assistant: What you think about one that depart at 6:10 am and cost in total $123.
+user: Anything else you can find?
+assistant: How about one that depart at 7:50 am and cost $116 in total.
+user: Tell me from which station will leave.
+assistant: Grand Central Station is the station .
+user: Sounds good.Buy for me tickets with trip insurance.
+assistant: Tell me how many tickets you want.
+user: I need 1 seat.
+assistant: You want 1 Value ticket at train that go from New York to Chicago on March 13th at 7:50 am.I'm right?
+user: Yes that work for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: The purchase is done.
+user: At which station does this arrive?
+assistant: At Chicago Union station will arrive the train.
+user: Thank you for being so helpful to me.That's all!
+assistant: See you next time.

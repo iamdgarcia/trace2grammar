@@ -1,0 +1,35 @@
+user: Both my brother and I are in dire need of a haircut. Can you help me find a unisex salon?
+assistant: Sure do you know the city you woould like me to search in?
+user: Vacaville is a halfway point between his house and mine so I think that wold be a nice place to meet at a salon.
+tool(FindProvider): ok n_results=4
+assistant: There is one called Primo's Barbershop located in Vacaville.
+user: Okay, can you find the rating for me and I will also need the address.
+assistant: That salon has a 4.5 star rating and is located at 198 Dobbins Street.
+user: Okay, great. Could you set me up an appointment for next Thursday at 6:45 pm?
+assistant: I would be happy to book you an appointment at Primo's Barbershop on March 7th, at 6:45 pm. Are the details I have correct?
+user: Yes, everything sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: I'm so sorry but I was not able to get the appointment for you, is there something else I can help you with?
+user: Yes, how about you try that salon aging but this time try for March 12th at twelve pm.
+assistant: Okay so you would like to see if there is an opening at Primo's Barbershop on March 12th, at 12 pm this time?
+user: Yes, let's try that and can I also get the phone number incase I need to reschedule or cancel?
+tool(BookAppointment): ok n_results=1
+assistant: I was able to successfully confirm that appointment for you and they can be contacted at 707-689-5136.
+user: Okay great, the next item on my agenda is finding a place to get a bite to eat that day as well.
+assistant: Is there a specific type of cuisine you would like?
+user: I haven't had Filipino in a while so that sounds good and different.
+tool(FindRestaurants): ok n_results=1
+assistant: There is a restaurant matching that criteria called Roline's located in Vacaville.
+user: Would you say that their menu items are an intermediate priced?
+assistant: They are classified as cheap from what I can see.
+user: Okay, as long as it is affordable i'm happy. Can you set the reservation there for 5:45 pm?
+assistant: Sure, let's make sure everything is in order before we go further really quick. You would like a table for 2 at Roline's, located in Vacaville, on March 12th at 5:45 pm, is that right?
+user: Yes, that sounds great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have confirmed your reservation and they will expect to see you then.
+user: I forgot to ask, what is their rating?
+assistant: Currently they have a user rating of 4.4.
+user: Thanks, you were extremely helpful!
+assistant: Is there anything else you need?
+user: No, but thanks for asking!
+assistant: My pleasure, enjoy the rest of your day!

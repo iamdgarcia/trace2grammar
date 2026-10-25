@@ -1,0 +1,37 @@
+user: I am interested in finding a salon.
+assistant: Can you tell me the city where I should look for the salon?
+user: The salon I am looking for should be in Santa Clara.
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salons for you to consider. One of the salons which is a good one is About Time Barber Shop which is in Santa Clara.
+user: Can you give me their address?
+assistant: The address of the salon is 2485 De La Cruz Boulevard.
+user: That seems nice. Now I would like to have an appointment reserved for me at this salon. The appointment should be booked for 10:45 on March 6th.
+assistant: Can you please confirm that you want to book an appointment at the About Time Barber Shop salon on March 6th at 10:45 am?
+user: That seems right.
+tool(BookAppointment): ok n_results=1
+assistant: I apologize but I was unable to make the requested booking. About Time Barber Shop is a really nice salon so do you want me to try again the booking for March 6th at 10:30 am?
+user: That suits me well too.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been booked.
+user: Can you tell me if the salon is considered to be a unisex one, and also what phone number can I use to call them?
+assistant: The salon is defined as unisex, and if you want to call them you can at 408-727-2200.
+user: I appreciate it a lot. Now I would like also to know about a restaurant there where I can eat something on that day. More specifically the restaurant I am looking for should be considered as afforadable regarding the price.
+assistant: Is there some specific kind of food you enjoy?
+user: I would like for the restaurant to be serving Freshwater fish.
+tool(FindRestaurants): ok n_results=2
+assistant: You might consider going to the Kobe Japanese Restaurant which is a good restaurant in Santa Clara.
+user: Can you tell me the address of the restaurant?
+assistant: The restaurant can be found in 2086 El Camino Real.
+user: That seems nice to me.
+assistant: Is there something else I can help you with?
+user: I would like to book a table for me at the restaurant.
+assistant: Can you tell me the time that suits you best for the reservation?
+user: I want to have a table for 2 people, and the table should be booked for 11:30 in the morning.
+assistant: Can you please confirm that you want to book a table for 2 people at the Kobe Japanese Restaurant in Santa Clara on March 6th at 11:30 am?
+user: That is not right, because some friends called me so the table should be for 4 people, and the time of the reservation should be evening 6:45.
+assistant: Can you please then confirm again that you want a table for 4 people to be booked for 6:45 pm?
+user: Yes that is correct. Can you tell me if the restaurant has outdoor seating, and the phone number I can use to call them:?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made, though unfortunately the restaurant does not have outdoor seating. If you want to give them a call you can at 408-984-5623.
+user: I am grateful! That would be all.
+assistant: Have a good time!

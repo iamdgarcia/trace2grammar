@@ -1,0 +1,27 @@
+user: I want to find an activity to do next Monday, I am an fan of Theater.
+assistant: Which city are you in?
+user: in San Diego.
+tool(FindEvents): ok n_results=7
+assistant: There is an event called About Time at Talent to aMuse Theatre Co which people seem to love. It is on March 4th at 6 pm.
+user: Where is that and how much would it cost?
+assistant: It is located at 3919 Normal Street and the ticket price is $30.
+user: that sound brilliant.
+assistant: Would you like tickets purchased for this?
+user: possibly later on.
+assistant: do you need assistance with more?
+user: yes please, I need to request a payment of 111 dollars from Diego.
+assistant: To confirm then that is a public transaction from Diego for $111.
+user: yes that is right.
+tool(RequestPayment): ok n_results=1
+assistant: you payment has gone through.
+user: could you now assist me to purchase tickets for that event previously discussed?
+assistant: certainly, how many do you require?
+user: just the one ticket.
+assistant: to confirm then that is 1 ticket for the event About Time on March 4th in San Diego.
+user: actually can I have 3 tickets.
+assistant: to confirm then that is 3 tickets for About Time.
+user: yes that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: your booking is now through, u hope you have a lovely time.
+user: great, that is all for now but thanks for that.
+assistant: have a good one.

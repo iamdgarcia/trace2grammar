@@ -1,0 +1,25 @@
+user: Find a place where I can get a bite to eat please. I really like Pho cuisine.
+assistant: Is there an area you would like me to search?
+user: A joint in San Fran is preferred.
+tool(FindRestaurants): ok n_results=10
+assistant: One idea is eating at the Anh Hong restaurant. They are in the San Francisco area.
+user: Is there patio type dining available at the location? I would also like a number to contact the restaurant please.
+assistant: They only serve inside the building. You can call them by dialing 415-885-5180.
+user: I see. Thanks.
+assistant: I would be happy to make a reservation for you.
+user: Thank you very much, please do. I would like table at 19:30.
+assistant: I want to make sure I understand your request. One reservation is to be made at the Anh Hong joint in San Francisco. The table will be for 2. The time will be 7:30 pm this March 1st.
+user: Thank you for checking. Everything is right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been saved for you.
+user: Is the price range expensive or cheap. Does the joint have a user rating?
+assistant: Their prices fall in the moderate range. Their rating is 4.4.
+user: I see. Once again I would like to express my gratitude for your excellent assistance.
+assistant: My pleasure. I am able to assist you with other tasks if you like.
+user: I would like further assistance. I am looking for a Normal ride for 2 of us to 808 Geary Street.
+assistant: Great. I will search for a Regular ride for 2 going to 808 Geary Street if my details are correct?
+user: That is exactly what I need help with.
+tool(GetRide): ok n_results=1
+assistant: A taxi will be arriving soon.
+user: Once again I am grateful fr your help. Have a good one!
+assistant: Enjoy dinner tonight!

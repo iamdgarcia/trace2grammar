@@ -1,0 +1,23 @@
+user: Hi I'm in the mood to watch a movie, please find me one.
+assistant: Where are you located?
+user: Please find me a movie in the San Ramon area.
+tool(FindMovies): ok n_results=6
+assistant: How does Angel Has Fallen, Hustlers, or IT Chapter Two sound?
+user: IT2 sounds good to me.
+assistant: Do you want to purchase tickets now?
+user: Not at this time, no.
+assistant: Is there anything else I can assist you with?
+user: I'd like to book a restaurant reservation in that area.
+assistant: What time do you want the reservation to be and which restaurant?
+user: Please book a table at Pearl Garden at 1 in the afternoon.
+assistant: So you'd like to book a table for 2 at Pearl Garden Restaurant in San Ramon for March 1st at 1 pm. Is this correct?
+user: That sounds good.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been successfully booked!
+user: Now what time can I watch that movie today? I'd like to go to a 3d showing.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for the movie at 8 pm in Regal Crow Canyon.
+user: What is the price for a ticket and what's the address?
+assistant: The address for the cinema is 2525 San Ramon Valley Boulevard and it costs $12 per ticket.
+user: That's perfect, that's all I needed.
+assistant: Have a wonderful day!

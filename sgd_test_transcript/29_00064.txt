@@ -1,0 +1,26 @@
+user: I'm looking for a 2 star hotel.
+assistant: Ok, i can help you with your search. Which city should i search?
+user: Let's check in LA please.
+tool(SearchHotel): ok n_results=10
+assistant: Ok, I found a 2 star hotel called Best Western hollywood Plaza Inn.
+user: What is the price per nigh and I would also like the hotel phone number as well.
+assistant: The cost is $168 per night and the number you requested is +1 323-851-1800.
+user: Great, I will also require a round trip flight to get there. Let's see what Delta Airlines has available on the 12th.
+assistant: Which city will you be departing from?
+user: Let's leave from San Francisco
+assistant: Will you like to depart on March 7th?
+user: Let's find 2 tickets from Portland leaving on next Tuesday.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I've located 1 flight for you on Delta Airlines with the flight departing at 7:15 pm with a layover. Your return flight will depart at 5:15 am and the ticket will cost $246.
+user: Thanks for that. Let's reserve the hotel you located for me. I would be needing to check in on the 11th for 2 days please.
+assistant: Sure, please confirm we are booking 1 room for 2 days in Los Angeles at Best Western Hollywood Plaza Inn on March 11th. Is this correct?
+user: Yes, perfectly done. Get me the street address to the hotel please.
+tool(ReserveHotel): ok n_results=1
+assistant: Reservations have been booked successfully.Please be advised no smoking allowed on the property. The address you requested is 2011 North Highland Avenue, Hollywood, CA 90068, USA.
+user: Great, Find some local attractions in that area. Make sure they are child friendly.
+tool(FindAttractions): ok n_results=10
+assistant: I've got 10 attractions you may be interested in. I would like to recommend first Angels Flight Railway, this is a historical landmark.
+user: Ok, thank you.
+assistant: Your welcome, will there be anything else at this time?
+user: Nope, that was all.
+assistant: Ok, your welcome.

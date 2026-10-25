@@ -1,0 +1,25 @@
+user: Could you help me find an online movie, like a song movie?
+tool(FindMovies): ok n_results=1
+assistant: How about the film Echo In The Canyon?
+user: Yes, Echo In The Canyon is perfect. I also want to find attractions to visit please in the CDMX area.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 suggestions we can talk about. One of the recommendations to consider is Acuario Inbursa, which is a nature preserve.
+user: Terrific, thanks. Would you mind searching for some reggae music for me now? I'm thinking tunes from, say, five years ago, maybe something by Protoje.
+tool(LookupMusic): ok n_results=1
+assistant: How about the song Who Knows, which is by Protoje from the Ancient Future album?
+user: Perfect, thanks! Could you play that for me now. Any device is fine.
+assistant: Confirming playback of Who Knows on the living room speaker.
+user: No, use the kitchen speaker instead, if you would.
+assistant: Confirming playback of Who Knows on the kitchen speaker.
+user: You got it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thanks! Would you start up the movie now and please turn on the Spanish subtitles?
+assistant: Certainly. Starting playback of Echo In The Canyon with Spanish subtitles enabled.
+user: Yes, thank you for that.
+tool(PlayMovie): ok n_results=1
+assistant: The movie playback has started.
+user: I appreciate all your help.
+assistant: May I help you with anything else today?
+user: You've done it all, so I'm good.
+assistant: You are very welcome.

@@ -1,0 +1,42 @@
+user: I need a place to rent with a garage and two bathrooms.
+assistant: Where should I look and what number of bed rooms will work?
+user: I need at least two bedrooms and you can look in Walnut Creek.
+tool(FindHomeByArea): ok n_results=1
+assistant: There is one for $2800 at Park Lake at Walnut Creek the address is 260 Park Lake Circle B.
+user: Try looking in Santa Rosa please.
+tool(FindHomeByArea): ok n_results=8
+assistant: There are 8 possibles there this one is $3,050 at the Del Nido Apartments at 850 Russell Avenue.
+user: Is there a phone number listed?
+assistant: Yes it is 707-542-2883.
+user: Is there a washer or dryer inside?
+assistant: No no washer or dryer.
+user: Please look some more an inside private laudry is mandatory.
+tool(FindHomeByArea): ok n_results=4
+assistant: Montecito Pines Apartments would work for $2,700 they have a Leasing Office, 6600 Montecito Boulevard is the address.
+user: I like that one.
+assistant: Should I make an appointment for you to view the property?
+user: Absolutely, please make me an appointment.
+assistant: What time would be convenient for you?
+user: Make it for the 9th.
+assistant: You would like to make an appointment to view the property at Montecito Pines Apartments onn March 9th correct?
+user: That's what I said? Do they list a phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: I made the appointment for you and the number I have for the them is 707-538-1516.
+user: Oh yeah I want to sen that information to Charles.
+assistant: You want to send Charles the address of the Leasing Office, 6600 Montecito Boulevard is that correct?
+user: That's what I requested.
+tool(ShareLocation): ok n_results=1
+assistant: The information transfer is complete.
+user: Thank you. You've been useful. I will be needing a ride my preference is for an Expensive cab for one please.
+assistant: Do I have this right? You need a Luxury cab ride for 1 to the Leasing Office, 6600 Montecito Boulevard?
+user: The wife decided to go so make it for two.
+assistant: So that will be 2 for the Luxury ride?
+user: No make it a Shared ride now.
+assistant: Okay then its a Pool ride for 2 yes?
+user: You got it.
+tool(GetRide): ok n_results=1
+assistant: The cab has been informed of your destination and is en route.
+user: Thanks a bunch for your assistance.
+assistant: Can I help with something else?
+user: No, but thanks.
+assistant: Good day then.

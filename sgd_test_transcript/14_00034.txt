@@ -1,0 +1,15 @@
+user: I'm in the mood to watch an action movie online
+tool(FindMovies): ok n_results=5
+assistant: I found a few including: Angel has Fallen, Hobbs and Shaw, and Mission Mangal
+user: I really wanna see Angel Has Fallen, play it with English Subtitles
+assistant: Confirming you want to play Angel has Fallen with those English subtitles
+user: Yes please, who stars in it again?
+tool(PlayMovie): ok n_results=1
+assistant: It's playing for you, and it stars Antonio Bustorff among others
+user: Great! Also I wanna know the weather in American Canyon on the 14th of March please
+tool(GetWeather): ok n_results=1
+assistant: It should be around 81 degrees with a low 13 percent chance of rain
+user: Sure, got it
+assistant: What else do you need help with?
+user: Nothing else, thanks!
+assistant: Sure thing, bye!

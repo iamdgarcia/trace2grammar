@@ -1,0 +1,49 @@
+user: I want to search for some nice house to live. I need your help to find the good one for me.
+assistant: Le me know the number of bedrooms required by you in that house.
+user: I need three bed rooms.
+assistant: Do you have any specific area to search for the house?
+user: Search for the one in Hayward.
+assistant: Also I want to confirm one more thing that let me clarify whether you need this house for rent or you want to buy it.
+user: I need this house for rent only.
+assistant: That's nice, Please also let me know the required number baths in that house.
+user: I need two baths.
+tool(FindHomeByArea): ok n_results=10
+assistant: Okay, thanks for the details. Please note that I got 10 houses and the best one is in the name Amberwood Garden Apartments located at 26100 Gading Road for the cost $3,900. Do you like to live in this house?
+user: Search for something else and I need three baths.
+tool(FindHomeByArea): ok n_results=10
+assistant: What about Amador Apartments located at 24660 Amador Street and the cost for which is $4,300.
+user: Check for availability of Garage and Laundry machines there.
+assistant: They do not have any garage as well as laundry machines.
+user: Then, search for some other places which should fulfill my requirements.
+assistant: Another house named Amador Royal located at 25173 Cypress Avenue for the Cost $3,900. Do you like this house?
+user: Yes, I like this place and I want to book it.
+assistant: Shall I make a schedule of visit to that house now?
+user: Yes, make it for me.
+assistant: Okay, What is your convenient date to visit to that house?
+user: Make a schedule for the 10th.
+assistant: I need your confirmation to book a visit schedule to Amador Royal on March 10th.
+user: That is confirmed to proceed.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully booked the visit schedule.
+user: That is very nice and thanks. Now I want to share my location for which I need your help.
+assistant: To Whom you want to share the location?
+user: share it with Ruth.
+assistant: Please confirm to share the location 25173 Cypress Avenue with Ruth.
+user: That is confirmed to proceed.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared it successfully.
+user: Thanks for your help and please get a cab to go there.
+assistant: Let me know your required number of seats to book a Cab.
+user: Book it for 4 persons.
+assistant: Do you like to take a Regular ride or Luxury ride?
+user: I like to travel through a Luxury ride.
+assistant: I need your confirmation to book a Car for Luxury ride to 25173 Cypress Avenue and the same is for 4 persons.
+user: Book it for only 1 person.
+assistant: Okay, confirm to book a Car for 1 person to go to 25173 Cypress Avenue.
+user: That is confirmed and you can proceed now.
+tool(GetRide): ok n_results=1
+assistant: I have booked the car and same will reach you soon.
+user: Thank you for your help.
+assistant: Anything else you need?
+user: No, that's all for today.
+assistant: Have a good day.

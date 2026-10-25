@@ -1,0 +1,24 @@
+user: I would like to find a unisex salon in Daly City.
+tool(FindProvider): ok n_results=2
+assistant: I have found 2 salons that may interest you. One of these is a very good one located in Daly City called Black & Gold Barber Lounge.
+user: What is the average rating for this salon and what is their address?
+assistant: The address is 6755 Mission Street and they are rated at 4.6
+user: Would you be able to find a different salon for me, one in San Francisco?
+tool(FindProvider): ok n_results=10
+assistant: I have located 10 salons that might interest you. One very good one in San Francisco is called 1512 Barber Shop.
+user: Great, that sounds fine. What is the weather going to be like there on March 6th?
+tool(GetWeather): ok n_results=1
+assistant: On that day, the average temperature looks like it will be about 72 degrees Fahrenheit and there is a 3 percent chance of rain.
+user: What will the wind be like that day?
+assistant: The wind on that day is forecast to average about 12 miles per hour.
+user: What will the humidity be like on that day?
+assistant: The humidity looks to be about 16 percent.
+user: Okay. I would like to make an appointment at the salon you found earlier at quarter to 2 in the afternoon.
+assistant: Okay, confirm these details for me. The salon is called 1512 Barber Shop and the appointment will be made for 1:45 pm on March 6th.
+user: No, I would like the appointment to be at quarter to 4 in the afternoon.
+assistant: Okay, confirm these details for me: The hair stylist is 1512 Barber Shop and the appointment will be set for 3:45 pm.
+user: Yes that sounds fine. Can you tell me their average rating?
+tool(BookAppointment): ok n_results=1
+assistant: The average rating is 4.8. My apologies, but I could not book the appointment. 1512 Barber Shop is a fine salon. Would you like to book an appointment for March 6th at 3:30 pm?
+user: No. I appreciate your help and that was all I wanted.
+assistant: Have a good day.

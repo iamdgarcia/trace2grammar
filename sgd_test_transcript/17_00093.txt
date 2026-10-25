@@ -1,0 +1,19 @@
+user: Will you find me a train with tickets from Los Angeles that are flexible and for tomorrow?
+assistant: What city are you travelling to?
+user: I'm headed to San Francisco.
+tool(FindTrains): ok n_results=8
+assistant: There would be 8 trains that would work. What do you think about the train leaving at 7:50 am for $106 in total.
+user: Would there be any other trains that work. I need 1 seat.
+tool(FindTrains): ok n_results=7
+assistant: There would be 7 trains that work. What do you think about the one leaving at 9:20 am costing $120 total.
+user: What station does it leave from?
+assistant: The train leaves from Union Station.
+user: Would there be any other trains that work?
+assistant: What about the train leaving at 11 am costing $113 total?
+user: That is good. I'd like to find a house to stay there with 1 person needing laundry service and rated 4.5 or higher?
+tool(SearchHouse): ok n_results=3
+assistant: There's a nice house rated 4.5 at 138 King Street.
+user: That house is good.
+assistant: What else can I do for you?
+user: No that is all and thanks for the help.
+assistant: It's been my pleasure helping you. Goodbye.

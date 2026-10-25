@@ -1,0 +1,15 @@
+user: I am having a plan to go for a short trip and I need a Train for me and I need to book 2 seats on March 4th.
+assistant: That is easy to find. Which City are you planning to travel?
+user: I am planning to visit SD.
+assistant: From which City you are going to depart?
+user: Please search for the Train in Sacramento, CA from where I am planning to depart.
+tool(FindTrains): ok n_results=10
+assistant: I got one Train which is going to depart at 6:30 am and the cost for the tickets will be $296 in total. What about your opinion?
+user: Search for some other Trains as I need to book luxurious tickets and please search for the destination Fresno.
+tool(FindTrains): ok n_results=7
+assistant: How about your convenience to travel in the Train departing at 8 am under cost $205 in total?
+user: Yes, it seems okay to me. I want to stay there for a while and I need one house there for one person and the house should have laundry service and rating 3.9 or higher.
+tool(SearchHouse): ok n_results=2
+assistant: I got 2 house details among which one house located at 2233 Ventura Street is the good one with rating 3.9. How about your opinion?
+user: Yes, that is okay and thanks for everything.
+assistant: Have a good day.

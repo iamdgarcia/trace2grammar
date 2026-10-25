@@ -1,0 +1,18 @@
+user: Can you find me a movie I can watch online?
+assistant: Which genre of movies are you interested in?
+user: I want to watch a comic movie.
+tool(FindMovies): ok n_results=5
+assistant: From 5 potential movies, would you like to watch Chhichhore, Good Boys, or My Big Fat Greek Wedding?
+user: I think Chhichhore sounds great, please play it right now.
+assistant: You wish to play Chhichhore with English subtitles correct?
+user: Actually, play it with Spanish subtitles.
+assistant: Understood, Chhichhore will be played with Spanish subtitles.
+user: On second thought, play the movie with French subtitles.
+assistant: Chhichhore will play shortly with French subtitles, is that right?
+user: That is right, thank yo.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has now commenced.
+user: Can you tell me who acted in the movie.
+assistant: A notable actor in the movie is Varun Sharma.
+user: Great, that is all I needed for now, thanks.
+assistant: No problem, have a good day.

@@ -1,0 +1,28 @@
+user: Can you help me find some interesting things to do?
+assistant: Are you looking for activities in any specific city?
+user: I'm interested in something around New York City.
+assistant: Do you have any preferred event types?
+user: I'm a fan of Theater.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that you might like. Acting For Teens is a very popular event that is taking place at 520 8th ave. - Personal Valet Parking at 6 pm on March 4th.
+user: That sounds interesting. Can you help me find a house to stay there?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses based on your preferences and a nice one among them is located at 100 Greenwich Street and is rated 4.4.
+user: That sounds like a great house.
+assistant: Shall I reserve the house for you?
+user: No, maybe I'll do that later.
+assistant: Can I help you with anything else?
+user: Can you find me tickets for 3 people on a bus to Washington?
+assistant: Are you planning to leave on March 4th or March 5th?
+user: I'm looking for a direct bus that leaves from Philadelphia on March 1st.
+tool(FindBus): ok n_results=6
+assistant: There is a bus that departs at 9 am and a ticket on it costs $23.
+user: That should work for me.
+assistant: Shall I get tickets for you on the bus?
+user: Hold on for now. Can you get me tickets to the event that you found?
+assistant: Please confirm that you want to book 3 tickets to the Acting For Teens event scheduled for March 4th in New York.
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are confirmed. Have fun!
+user: Thank you for the assistance. That'll be all for now.
+assistant: Have a great day!

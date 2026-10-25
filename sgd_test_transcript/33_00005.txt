@@ -1,0 +1,32 @@
+user: Can you please find a place to live for me with 3 bedrooms?
+assistant: Sure, but first give me a few more details, specifically the number of bathrooms you require, the area in which you'd like the property to be as well as whether you're looking to rent or buy.
+user: I'd like to buy a property in Sunnyvale with 3 bathrooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: There's a very nice property located at 555 East El Camino Real, priced at $3,850,000 - the Arbor Terrace Apartments.
+user: Sounds nice. Let's schedule a visit there.
+assistant: When would you like me to schedule it?
+user: I'd like to visit the property on the 9th.
+assistant: Can you please confirm that you want me to schedule a visit for you on March 9th at Arbor Terrace Apartments?
+user: Yes, please do. Also, do you know if the property has a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've successfully scheduled your visit and, yes, the property does have a garage.
+user: Perfect. Thanks. Could you please share the location?
+assistant: Yes! With whom should I share it?
+user: Please share it with Robert.
+assistant: Can you please confirm that you want me to share the location for 555 East El Camino Real with Robert?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Perfect. Now please get me a cab to go there.
+assistant: OK, but first tell me the number of seats you need as well as the ride type - Pool, Regular or maybe some other type.
+user: It's just for me, so 1 seat and I'd like to get a Shared ride.
+assistant: Can you please confirm that you want me to find you a Pool ride for 1 to 555 East El Camino Real?
+user: Yes, that's correct.
+tool(GetRide): ok n_results=1
+assistant: I've successfully booked your cab, which is now on its way to your location.
+user: Please tell me the price for the ride as well as how long will it take for it to reach my locaiton.
+assistant: Your ride should be arriving in 8 minutes and costs $12.58.
+user: Perfect. Thanks for everything!
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks again!
+assistant: My pleasure. Have a nice day!

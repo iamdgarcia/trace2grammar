@@ -1,0 +1,19 @@
+user: I need to find a place to live that has three bedrooms.
+assistant: You would like to buy the place or just rent it? Where would you like to live and how many baths do you want?
+user: I want to rent somewhere in San Jose that has three baths.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 suitable options. There is a lovely residence called Aegena that is located at 1290 San Tomas Aquino Road and costs $4,350.
+user: That would be fine.
+assistant: Would you like to schedule a visit to the residence?
+user: Yes, I would like to see it on the 12th of this month.
+assistant: You would like to visit Aegena on March 12th?
+user: Yes, I would like that.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled the visit.
+user: Is there a garage?
+assistant: No, there is none.
+user: Thanks. I would like to know which alarms I have.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set presently. The next one is called Get up and it is set for 9 am.
+user: Thanks a lot. I do not need anything else.
+assistant: Thank you very much.

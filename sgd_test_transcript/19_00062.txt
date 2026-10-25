@@ -1,0 +1,17 @@
+user: Can you help me find a rental car?
+assistant: Sure thing. Just give me a date and location of when and where you need to pick up your vehicle.
+user: I'd like to pick it up on the 6th in the city of SF.
+assistant: Okay. What time would you like to pick up the car? How long will you be renting it?
+user: I'll need to rent it until the 7th of this month. I'd like to pick it up around 10:30 in the morning.
+tool(GetCarsAvailable): ok n_results=7
+assistant: Okay, I've found 7 cars you may like. There is a very nice Sedan Audi A8 available at Salesforce Transit Center. How does that sound?
+user: Sounds good! Can you help me find a bus to get there? I will be leaving from Vegas on the 4th of this month. I'll need 2 tickets.
+tool(FindBus): ok n_results=7
+assistant: I've found 7 buses for you. There is a bus departing at 6:40 am with tickets that cost $51 dollars.
+user: Can you tell me what station it will be arriving at?
+assistant: It will arrive at the Transbay Terminal.
+user: Okay, I think I'd rather just take a flight. Can you find Economy class tickets for a one-way flight on the 5th?
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I've found 4 flights for you. There is an American Airlines flight that leaves at 8:20 am. A ticket will cost you $105.
+user: Okay, that sounds good. I'll think about it. That's all for now.
+assistant: My pleasure. Have a good day.

@@ -1,0 +1,40 @@
+user: Show me my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms. You have an alarm for Coffee at 7 am.
+user: Ok thank you for checking.
+assistant: Would you like to add an alarm?
+user: Not at the moment.
+assistant: Can I help you with something else?
+user: I would like to find a restaurant.
+assistant: What type of food are you wanting and in what city?
+user: I would like Japanese food in Livermore.
+tool(FindRestaurants): ok n_results=1
+assistant: There is Kawa Sushi located in Livermore.
+user: What is their phone number and are they affordable?
+assistant: Their phone number is 925-606-7222 and they are moderate priced.
+user: Thank you for the information.
+assistant: Can I help with something else?
+user: I would like to rent a car.
+assistant: When do you want to pick up the car and from which location?
+user: I would like to pick up the car downtown at 10 am and I don't need insurance.
+assistant: Would you like a SUV, Sedan or other car?
+user: I would like a Hatchback until the 13th of this month.
+assistant: When do you want the rental to start?
+user: I would like to get it from the 10th of March.
+assistant: Booking Hatchback from Downtown on March 10th at 10 am until March 13th.
+user: I would like a sedan instead.
+assistant: Booking a Sedan car instead.
+user: How much does it cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The cost is $32.00 per day.
+user: Can you share location of 2180 Third Street.
+assistant: Who would you like to share location with?
+user: I would like to share with William.
+assistant: Sharing 2180 Third Street with William.
+user: Yes, that sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared your location.
+user: That was helpful thank you.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

@@ -1,0 +1,22 @@
+user: I would like to find a house to stay at, please.
+assistant: What city are you planning to visit?
+user: I will be travelling to Paris, France.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house available at 1 Rue Bayard, 75008 with a rating of 4.5.
+user: What is the contact number for that house, please?
+assistant: The phone number is +33 1 53 75 62 62.
+user: Is laundry service offered at this property?
+assistant: Yes, this place has laundry service for guests.
+user: Are there some other houses?
+assistant: There is another house, at 1 Rue Daunou, 75002, with a rating of 4.1.
+user: That one sounds great, I would like to book the house.
+assistant: What dates do you plan to check in and out? How many people will be staying in your group?
+user: I would like to check in the day after tomorrow and check out on the 7th. There is 1 person.
+assistant: You would like to reserve a house for 1 person in Paris, checking in March 3rd and checking out March 7th, is this correct?
+user: Actually, now that I think about it, I would like to check out on the 6th, and there are 2 people. I am still adjusting to traveling as a couple.
+assistant: You would like to reserve a house for 2 people with a check out date of March 6th, is this correct?
+user: Yes, that sounds great.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you for your help, that's all I need for now.
+assistant: It's my pleasure to assist you, have a great day.

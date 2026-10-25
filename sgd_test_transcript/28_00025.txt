@@ -1,0 +1,25 @@
+user: Hey, can you find me a movie directed by Jovanka Vuckovic I can watch?
+tool(FindMovies): ok n_results=1
+assistant: I found 1, Riot Girls, it has a rating of 100.
+user: What genre is it and who is in it?
+assistant: It's an action movie and Alexandre Bourgeois is in the cast.
+user: Sounds good. Help me find a restaurant I can go too.
+assistant: In which city should I look for and what kind of food?
+user: Somewhere that serves pasta in Healdsburg please.
+tool(FindRestaurants): ok n_results=3
+assistant: Baci | Cafe & Wine Bar is a great Restaurant in Healdsburg.
+user: It does sound good.
+assistant: Do you want me to book you a table there?
+user: Please do it.
+assistant: For what time?
+user: 12 o'clock in the afternoon please.
+assistant: So a table for 2 at Baci | Cafe & Wine Bar in Healdsburg at 12 pm on March 1st?
+user: Actually, change the date to the 2nd of March and make the reservation just for 1 please.
+assistant: So a table for 1 on March 2nd?
+user: Yes, correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was successful.
+user: Thanks a lot.
+assistant: Can I help you with something else?
+user: No, thanks a lot.
+assistant: Have a great day.

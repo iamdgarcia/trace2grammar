@@ -1,0 +1,14 @@
+user: I need a train arriving in Sacramento, CA under any class of ticket.
+assistant: What is your departing city and departure date?
+user: I am departing SD on the 8th of March.
+tool(FindTrains): ok n_results=9
+assistant: There is a train leaving 6:10 am with a total cost of $145.
+user: What is the departure station?
+assistant: The departure station is Santa Fe Depot.
+user: What is the arrival station?
+assistant: The arrival station is Sacramento Valley Station.
+user: That works for me. I need a house to stay in there too.
+tool(SearchHouse): ok n_results=10
+assistant: 100 Capitol Mall has a 4.4 rating.
+user: That is perfect. I don't need anything else right now.
+assistant: I am glad that I could help you. Have a great day.

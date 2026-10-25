@@ -1,0 +1,9 @@
+user: I'm looking for fully refundable train tickets departing from LA.
+assistant: What date are you leaving and where are you traveling to?
+user: I need 1 ticket going to San Diego and I want to depart on March 8th.
+tool(FindTrains): ok n_results=10
+assistant: I found 10 trains for you. There is a train departing at 6:50 am for $77.
+user: That sounds good.
+assistant: Would you like to purchase the ticket now?
+user: No, not right now. That is all I needed.
+assistant: Have a great day.

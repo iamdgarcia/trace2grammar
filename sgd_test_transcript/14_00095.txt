@@ -1,0 +1,25 @@
+user: I would like to listen to a song
+tool(LookupMusic): ok n_results=10
+assistant: I suggest you The Night We Met by Lord Huron from the album Strange Trails
+user: I like it! Thanks!
+assistant: Do you want to listen to the song now?
+user: Not now, thanks. I'll listen to it later
+assistant: You need anything else?
+user: Yes, I'd like to watch a movie online: I'd rather to watch a ghost movie with Louise Peterhoff
+tool(FindMovies): ok n_results=1
+assistant: There 1 movie for you: Midsommar
+user: Very good! Midsommar it's fine for me
+assistant: Want to watch the movie now?
+user: Not now; now I'd rather listen to the song you just found, on the speaker outside
+assistant: Playing the song The night we Met in Patio: do you confirm?
+user: No, I prefer to listen it on the living room
+assistant: Playing The Night We Met in Living room: is It correct?
+user: Yes, now It's correct. Is it a pop song?
+tool(PlayMedia): ok n_results=1
+assistant: No, It's a Rock song. Good listening!
+user: Was this song released in '16?
+assistant: This song was released in 2015
+user: Thanks for the information
+assistant: Can I help you again?
+user: No, It's all for now, thanks
+assistant: Have a nice day

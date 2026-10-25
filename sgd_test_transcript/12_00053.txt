@@ -1,0 +1,21 @@
+user: I need to find a direct bus please.
+assistant: When will you be leaving?
+user: I will be leaving on the 13th of March.
+assistant: From where are you leaving and where will you be going?
+user: I am going to NYC from Philly.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses. How about one that departs at 9 am and costs $22?
+user: Sounds good. I need tickets for 4 people.
+assistant: You want to leave Philadelphia for New York on March 13th at 9 am for 4 people and will have no extra luggage, correct?
+user: Yes that is correct. Which station does it depart from? Which does it arrive to?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed and departs from 10th and Filbert and arrives at Penn Station.
+user: Thanks. Could you also find me a hotel?
+tool(SearchHotel): ok n_results=10
+assistant: How about 1 Hotel Brooklyn Bridge which is a 5 star.
+user: Great, thanks.
+assistant: Would you like to make a reservation?
+user: Not at this time thanks.
+assistant: Can I do anything else for you?
+user: No thats all thank you!
+assistant: Okay, have a fabulous day!

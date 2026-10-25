@@ -1,0 +1,32 @@
+user: I really want to check out a museum, any suggestions?
+assistant: What city do you want to look in?
+user: Can you look in san fran?
+tool(FindAttractions): ok n_results=10
+assistant: i have 10 options you might enjoy including the cable car museum, a city museum
+user: Is it a good place for kids?
+assistant: Yes, this is a highly rated museum for children
+user: Whats their contact number?
+assistant: You can reach them on 415-474-1887
+user: Okay thank you
+assistant: Do you need any other help?
+user: I think I want to see a movie there too
+tool(FindMovies): ok n_results=10
+assistant: I have found 10 options, there's ad astra, brittany runs a marathon and fiddler: a miracle of miracles
+user: Ad astra sounds good, I've heard good things
+assistant: Do you want to book tickets?
+user: No not at the moment
+assistant: Do you need any other help?
+user: Any good movies streaming right now, something cult. I love christopher walken
+tool(FindMovies): ok n_results=1
+assistant: I have 1 you might like, pulp fiction
+user: I haven't seen pulp fiction in ages, can you play that
+assistant: Confirming you want to stream pulp fiction with english subtitles
+user: Can you turn on hindi subtitles
+assistant: Confirming you want to stream pulp fiction with hindi subtitles
+user: Yes thank you
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has started
+user: Thanks so much
+assistant: Is that all for now?
+user: Yes thank you
+assistant: Enjoy your film

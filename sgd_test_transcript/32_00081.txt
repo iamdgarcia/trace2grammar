@@ -1,0 +1,32 @@
+user: I need to find a place to live.
+assistant: What is the number of beds you want on the property and would you like to rent or buy?
+user: It should have two bed rooms as I want to find a place to rent.
+assistant: What number of baths do you want and in which area do you want the property?
+user: I would like a property in San Jose with one bath.
+tool(FindHomeByArea): ok n_results=10
+assistant: Almaden Lake Apartments is very good and located at 978 Almaden Lake Drive for $2750.
+user: Does it have laundry machines in the home?
+assistant: It does not have laundry machines in the home.
+user: That sounds good. I'd like to schedule a visit to the property March 8th.
+assistant: Please confirm details that you are scheduling a visit to Almaden Lake Apartments on March 8th.
+user: No, I'd like to visit the 13th of this month.
+assistant: Please confirm details to schedule a visit to Almaden lake Apartments on March 13th.
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: The visit to the property is scheduled.
+user: Thanks so much. Could you share the location so I can share it with Dylan.
+assistant: Please confirm details that you are sharing the location 978 Almaden Lake Drive with Dylan.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully shared the location.
+user: Thanks that is pretty helpful. Can you get me a cab there, preferably a luxurious ride for a group of three.
+assistant: Please confirm details for a ride to 978 Almaden Lake Drive for 3 seats luxury.
+user: No, I want a pool ride instead.
+assistant: Please confirm details you need 3 seats pool ride.
+user: Yes, that will work for me. What is the cost and how long before the cab reaches here?
+tool(GetRide): ok n_results=1
+assistant: I booked the ride and the cab is on its way costing $25.15 expected in 4 minutes.
+user: Thanks so much for your help.
+assistant: Can I assist you with anything else?
+user: No, thanks for the help.
+assistant: Have a nice day.

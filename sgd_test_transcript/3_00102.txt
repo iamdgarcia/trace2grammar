@@ -1,0 +1,11 @@
+user: Get me a rental car?
+assistant: When do you want it?
+user: I need it next Monday.
+assistant: Whats the pickup time and till when?
+user: I will pick it up from half past 1 in the afternoon till March 8th
+assistant: where do you want the car from?
+user: looking in San Fran
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a Dodge Charger Sedan at Salesforce Transit center
+user: Its good, thats all
+assistant: have a pleasant day!

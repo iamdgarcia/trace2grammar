@@ -1,0 +1,18 @@
+user: I need a train going to LA.
+assistant: On what date?
+user: on the 8th of this month.
+assistant: Where will you be leaving from?
+user: From Sacramento city.
+tool(FindTrains): ok n_results=5
+assistant: There is one departing at 6:30 am costing $90.
+user: I like the sound of that.
+assistant: Will I book you some tickets?
+user: Yes that would be good.
+assistant: How many tickets and do you require travel insurance?
+user: I have insurance thanks and one seat please.
+assistant: To confirm then that is a Value train ticket for 1, peaving Sacramento travelling to Los Angeles on March 8th at 6:30 am.
+user: Sounds good. Which station does it arrive at in LA?
+tool(GetTrainTickets): ok n_results=1
+assistant: Union Station and your booking is now confirmed.
+user: That is great thanks and that is all for now.
+assistant: See you again soon.

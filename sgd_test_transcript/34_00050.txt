@@ -1,0 +1,19 @@
+user: I need to find two hotel rooms.
+assistant: In which city do you need a hotel room?
+user: I need a hotel in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: I have found 10 hotels including a 5 star hotel by the name of 45 Park Lane.
+user: Can you tell me the cost per night/ And what is their phone number?
+assistant: The phone number is +44 20 7493 4545 and costs $375 a night.
+user: Sounds great. Any attractions nearby?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, I have found 10 attractions including one that is a Historical Landmark that is called 30 St Mary Axe (The Gherkin).
+user: Is this attraction free?
+assistant: No, it is not.
+user: Thanks, I need to make a reservation for 4 days, beginning the 4th of March.
+assistant: So you want me to book 2 Hotel rooms on March 4th at 45 Park Lane in London for 4 days?
+user: Sounds good. Can I smoke in this hotel and what is the address of this hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: It is located at 45 Park Lane, smoking is not allowed at the property. Your reservation is booked.
+user: Thanks for all your help. I am all set.
+assistant: Have a great day.

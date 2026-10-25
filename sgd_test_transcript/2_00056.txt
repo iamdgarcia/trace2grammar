@@ -1,0 +1,12 @@
+user: I am in search of some interesting show around Portland. Are there?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events. At Newmark Theatre a popular event, Annual School Performance is taking place on March 2nd at 5 pm. Do you like?
+user: Yeah, that will the right one.
+assistant: Shall I confirm your tickets now?
+user: Ok, please get one ticket.
+assistant: Please verify, you need 1 ticket to watch Annual School Performance on March 2nd in Portland.
+user: Correct, thank you.
+tool(BuyEventTickets): ok n_results=1
+assistant: It is confirmed, enjoy it.
+user: Thank you. great service.
+assistant: See you, thank you.

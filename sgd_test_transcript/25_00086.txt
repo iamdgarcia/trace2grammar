@@ -1,0 +1,36 @@
+user: May I see the alarms that I have set?
+tool(GetAlarms): ok n_results=1
+assistant: Yes, there is 1 alarm currently enabled for 10 AM which is called catch bus.
+user: Thank you very much.
+assistant: Would you like to create a new alarm?
+user: No, I don't need to.
+assistant: May I help you with anything else?
+user: Yes, I need a restaurant.
+assistant: What type of cuisine would you like and what area Are you interested in?
+user: I need a fast food place in Pittsburg please.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant in Pittsburg I can recommend, which is McDonald's.
+user: Yes, I think that will do.
+assistant: Is there anything else I can help you with right now?
+user: I need to get a car to rent.
+assistant: On what date would you like it?
+user: Starting on the 4th of March.
+assistant: Would you like insurance with the vehicle and would you prefer a hatchback, an SUV or something else? Also where would you like to pick the car up?
+user: I'd like to get the car from PHL International Airport and I'd prefer a sedan if possible. I won't need insurance.
+assistant: What time will you need the vehicle?
+user: That's going to be 9:30 in the morning please.
+assistant: When will you be returning the vehicle?
+user: I'll give it back on the 10th of this month and actually I'd like to pick it up at 10:30.
+assistant: Confirming rental of a sedan from PHL International Airport on March 4th at 10:30 AM and returning on March 10th.
+user: Great, thanks. What is that going to cost?
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has a daily price of $26.00. The reservation is complete.
+user: Thanks a lot. I also need to share a location of 2203 Loveridge Road.
+assistant: Who is the recipient please?
+user: His name is Bobby.
+assistant: Confirming location sharing of 2203 Loveridge Road with Bobby.
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you very much, I'm all set.
+assistant: You are very welcome.

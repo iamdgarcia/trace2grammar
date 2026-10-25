@@ -1,0 +1,32 @@
+user: I'd like to find a place to eat.
+assistant: What type of food?
+user: I'd like something European.
+assistant: Where did you want me to look?
+user: I'd like a place in Berkeley.
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 restaurants for you. One is Hs Lordships Restaurant in Berkeley.
+user: That sounds good. I'd like to book a table.
+assistant: What time did you want to book it?
+user: I'd like a table for three on 9th of this month at quarter to 6 in the evening.
+assistant: Please confirm you're booking a table for 3 at Hs Lordships Restaurant in Berkeley on March 9th at 5:45 pm.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, I was unable to book your reservation. How about a reservation for 3 at Hs Lordships Restaurant in Berkeley on March 9th at 6 pm.
+user: Yes, that sounds good
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thank you. Can you help me find a cab to 199 Seawall Drive?
+assistant: Did you have a preference for the type of ride?
+user: I'd like a Shared ride.
+assistant: Please confirm you're booking a Pool ride for 3 to 199 Seawall Drive.
+user: No, I'd like a Luxurious ride.
+assistant: Please confirm you're booking a Luxury ride for 3.
+user: Yes, that is correct. When will the cab be here?
+tool(GetRide): ok n_results=1
+assistant: The cab will be h ere in 14 minutes.
+user: How much will it be
+assistant: It will be $55.11.
+user: Thank you.
+assistant: Did you need help with anything else
+user: No but thank you
+assistant: HAve a good day.

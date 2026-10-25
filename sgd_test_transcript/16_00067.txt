@@ -1,0 +1,36 @@
+user: Hey. Buy me some bus tickets please.
+assistant: I can do that, but first I'll need some more information. Where would you like to leave from, and at what date and time?
+user: I would like to leave from Las Vegas on March 10th around 11:15 am.
+assistant: Where would you like to go and how many tickets will you need?
+user: I'd like to go to Anaheim and I only need one ticket.
+assistant: you would like 1 ticket for a bus from Las Vegas to Anaheim. The bus will leave on March 10th at 11:15 am. Is that all correct?
+user: Yes I think so. Can you tell me if it's a one-stop bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct bus. I'm sorry but the purchase failed. Would you be interested in a bus that departs at 11:30 am and costs $39 instead?
+user: Umm, sure, that is fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been purchased.
+user: Great. Can you tell me what station it will arrive at and leave from?
+assistant: It is listed as arriving at Anaheim Bus station and leaving from Union Plaza.
+user: Cool. Think you can find me some hotels in the area too?
+tool(SearchHotel): ok n_results=10
+assistant: I've already found 10 hotels in the area. There is a 2 star hotel called Alamo Inn & Suites. Would that interest you?
+user: Nah, what else?
+assistant: There is also a 2 star hotel called Anaheim Desert Inn And Suites.
+user: What's their price per night?
+assistant: A room costs $150 per night.
+user: Geeze, is smoking allowed? What's their contact number?
+assistant: Smoking is not allowed on the property and their contact number is +1 714-772-5050.
+user: It sounds like the place will work for my needs. Can you book me 2 rooms at the hotel for four days?
+assistant: When would you like to check in?
+user: Next Friday would be best.
+assistant: Please confirm the following details: You would like to book 2 rooms for 4 days starting on March 8th at the Anaheim Desert Inn And Suites in Anaheim.
+user: I changed my mind. Make it one room for 2 days.
+assistant: You would like 1 room for 2 days. Is that correct?
+user: Yes that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I've successfully booked your room at the hotel.
+user: Awesome. Can you tell me their street address?
+assistant: Their street address is listed as 1600 South Harbor Boulevard.
+user: Thanks. You've been super helpful. That will be all for now.
+assistant: I'm always happy to help out. Enjoy the rest of your day, and don't be afraid to ask for anything else.

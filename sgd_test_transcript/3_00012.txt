@@ -1,0 +1,13 @@
+user: I need a round trip flight from Phoenix, AZ.
+assistant: What are your travel dates.
+user: I want to depart on March 7th.
+assistant: Where do you plan to go? What day would you like for your return flight?
+user: I am going to Seattle and would like to return on 14th of March.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Would you prefer to travel on American Airlines? A connecting flight takes off at 4:10 pm and a returning flight takes off at 2:20 pm. The ticket price is $350.
+user: Is the ticket Economy class? What is the arrival time for the returning flight?
+assistant: The seating is Economy. The arrival time for the returning flight is 6:43 pm.
+user: That sounds good.
+assistant: Can I assist you with something else?
+user: No thank you.
+assistant: Enjoy your day.

@@ -1,0 +1,37 @@
+user: Hi, could you help me search for a hotel please?
+assistant: And which city are you interested in?
+user: Hotels in Los Angeles will be great.
+tool(SearchHotel): ok n_results=10
+assistant: I see, there are 10 hotels you might like, how about a 3 star hotel called Ac Hotel By Marriott Beverly Hills?
+user: May I have their street address and their nightly rates please?
+assistant: They are located at 6399 Wilshire Boulevard and will cost you $75 each night.
+user: Sounds great to me!
+assistant: Would you like to make a reservation there?
+user: Perhaps later on, thanks.
+assistant: How can I further assist you then?
+user: Could you get me a rental car there?
+assistant: And will you be using the car from March 2nd, and when will you be using it till?
+user: How about a Hatchback for use from Monday next week till the 5th of March?
+assistant: And what time will you be picking the car up?
+user: Likely at 3:30 in the afternoon.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There are 4 available car, one of which is a Hatchback Fiat Panda available for pickup at LAX International Airport.
+user: Are there any alternatives?
+assistant: How about a Hatchback Ford Focus available for pickup at Union Station?
+user: May I know what is the daily cost?
+assistant: This will cost you $27.00 each day.
+user: Are there any alternatives?
+assistant: How about a Hatchback Nissan Qashqai available at LAX International Airport?
+user: Sounds great, could you reserve it for me please?
+assistant: And do you require insurance?
+user: No, that is not necessary.
+assistant: Please confirm your reservation for a Hatchback for pickup from LAX International Airport at 3:30 pm on March 4th for use till March 5th, with no insurance.
+user: Sorry, could you get me insurance instead?
+assistant: Please confirm your request to rent the car till March 5th with insurance.
+user: Sounds great! How much does this cost me each day?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made, which will cost you $39.00 each day.
+user: Thank you for your kind assistance.
+assistant: Do you need any further help?
+user: No, that is all. Thank you!
+assistant: Have a safe ride!

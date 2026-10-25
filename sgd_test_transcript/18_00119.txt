@@ -1,0 +1,19 @@
+user: I'm trying to find a restaurant please.
+assistant: Of course, what type of cuisine are you interested in and in which location should I look?
+user: I'd like to go someplace in the Belmont area and I love spicy noodles.
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 possibility for you, which is Thai Tamarind Restaurant in Belmont.
+user: OK, great. Would you please set a one pm reservation for me?
+assistant: Confirming a table for 2 on March 1st at 1 PM at Thai Tamarind Restaurant in the city of Belmont.
+user: Excellent, thank you. I'm wondering, are there vegetarian dishes on their menu? And I'd like the address please.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation has been booked. Yes, they do have vegetarian meals and the address of the restaurant is 1316 El Camino Real.
+user: Thank you for that. I'd like to book a taxi as well.
+assistant: What type of ride please? Would you like a regular ride or luxury?
+user: A luxury ride, please.
+assistant: Confirming luxury transportation for 2 with a destination of 1316 El Camino Real.
+user: Sounds good. When will the ride arrive?
+tool(GetRide): ok n_results=1
+assistant: The ride has been dispatched and will be here shortly, in approximately 11 minutes.
+user: Thank you very much for all your help.
+assistant: It's entirely my pleasure.

@@ -1,0 +1,19 @@
+user: I want to see a good movie.
+tool(FindMovies): ok n_results=10
+assistant: One really great film is Spielberg's Close Encounters of the Third Kind. It has a rating of 95 %.
+user: What Genre is that? Who was in it?
+assistant: It's a Sci-fi. Richard L. Hawkins was one of the actors.
+user: Fine, How about a song first though. I'm in love with the popular group Limbo. I want something from about two years back.
+tool(LookupMusic): ok n_results=1
+assistant: 1 song I have fits that. It's Called Airplane Mode by Limbo from their album Holo.
+user: Fine, that's great.
+assistant: How about I play it for you?
+user: Do that in the Living Room please.
+assistant: To be sure: Play Airplane Mode in the Living room now.
+user: You got it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song.
+user: I think I just will.
+assistant: What more is there for you?
+user: Nothing, that's it.
+assistant: Enjoy your music.

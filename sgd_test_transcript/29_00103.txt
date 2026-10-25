@@ -1,0 +1,26 @@
+user: Hey. Do you think you can find me something interesting to do? I really would like to see a play or something on the 4th.
+assistant: I can help you with that. Which city would you like me to search for events in?
+user: Find me something around NYC.
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events which I believe you will like. Acting For Teens is a very popular event that is taking place at 520 8th Ave. - Personal Valet Parking on March 4th at 6 pm.
+user: Sounds interesting.
+assistant: Would you like to purchase tickets to the event?
+user: Possibly at another time. Right now I need your help finding a house to stay while i'm there. I will need for it to have laundry service and be able to accommodate 3 people.
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice house with a rating of 4.4 at 100 Greenwich Street. Would that work?
+user: That sounds great. Now can you help me find a bus to get there?
+assistant: Yes, but first I will need some information. Where would you like to leave from? Also when would you like to leave? Is it March 3rd, March 4th, or another day?
+user: I'd need to leave from Philadelphia and would like to leave tomorrow on a direct bus.
+tool(FindBus): ok n_results=6
+assistant: How about a bus that departs at 9 am and costs $22?
+user: That would work for me. Keep that in mind, but I just got a text from my family and they want to go to that event. Can you buy four tickets now before they are gone?
+assistant: You would like me to purchase 4 tickets to Acting For Teens on March 4th in New York. Is that correct?
+user: No, I meant 3 tickets, sorry.
+assistant: You would like 3 tickets to the event on March 4th. Is that correct?
+user: Yes that is correct. Can you tell me where the venue is located and how much just one ticket costed?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets were purchased. The venue is located at 520 8th Ave. - Personal Valet and the ticket price was $35.
+user: Great. Thank you for your help.
+assistant: You're welcome. Is there anything else I could assist you with.
+user: Not right now, I'll let you know if I need anything further.
+assistant: Okay, until then. Good bye.

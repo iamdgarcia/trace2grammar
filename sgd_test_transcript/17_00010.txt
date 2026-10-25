@@ -1,0 +1,32 @@
+user: My friend told me about an unisex salon and now I am interested in going to one. Will you find a unisex salon in Corte Madera.
+tool(FindProvider): ok n_results=3
+assistant: There are 3 salons that meet your criteria i Corte Madera. You may like Colour Bar.
+user: What have customers rated this place?
+assistant: The place has an average rating of 4.0.
+user: Will you give me their address?
+assistant: They are located at 208 Redwood Avenue.
+user: Great. This one looks perfect.
+assistant: Would you like me to schedule an appointment at this place?
+user: No, I'm not interested in scheduling an appointment. While I am thinking of it will you share the location?
+assistant: To whom should I share?
+user: Please share it with MArie.
+assistant: Please confirm you would like to share the location 208 Redwood Avenue with Marie.
+user: Actually, please share this with Lawrence instead.
+assistant: Please confirm you would like to share the location 208 Redwood Avenue with Lawrence.
+user: Great, thanks so much.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: I appreciate your help. Thank you!
+assistant: Do you need anything further this evening?
+user: Will you show me what I have set for my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm for the gym at 7:30 am.
+user: Thank you for your help.
+assistant: Would you like me to add an another alarm?
+user: Pleas add and alarm for my music practice this evening 5.
+assistant: Please confirm you would like an alarm created for your music practice at 5 pm.
+user: That is right.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been scheduled.
+user: Thank you for all your help today!
+assistant: Your welcome! Enjoy the day!

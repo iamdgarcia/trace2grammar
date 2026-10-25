@@ -1,0 +1,20 @@
+user: I'm new in town and would like to find a place to get something to eat.
+assistant: What is the name of the area you would like me to look in?
+user: Somewhere close by, so Mountain View would be great.
+assistant: Is there a specific type of cuisine you would like?
+user: I really enjoy French food, if you can find a place that serves it.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 that I was able to find. The first is Chez Tj and it is located in Mountain View.
+user: That sounds great!
+assistant: Should I proceed with booking you a table?
+user: Yes, please. I need to book a table for 4 and prefer it to be in the morning 11:45.
+assistant: Let's just make sure I have everything in order before I make the reservation for you. You would like a table for 4, at Chez Tj, located in Mountain View, on March 1st, at 11:45 am.
+user: That sounds great! Can you provide me with their location?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant I was successfully able to book you a table at is located at 938 Villa Street.
+user: Can you give ma an idea of how pricey the establishment is?
+assistant: This restaurant has been rated on the ultra high-end regarding cost.
+user: Thanks a lot!
+assistant: Is there anything else I can do for you?
+user: Nope, that's all I need at the moment.
+assistant: Happy to help, have a great day!

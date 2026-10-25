@@ -1,0 +1,32 @@
+user: I want to change my hair style for which I need to find a Salon. Can you help me to find the suitable one?
+assistant: Where do you want to search for the salon? Is there any particular City you want to search for?
+user: Yes, please search it in Sonoma.
+tool(FindProvider): ok n_results=3
+assistant: What about your opinion on a nice salon named C C Beauty Salon in Sonoma?
+user: This looks perfect. Thanks.
+assistant: Do you want me to book the appointment now?
+user: We will discuss about this later. Now, I want to search for a movie there to watch. Help me to do this.
+tool(FindMovies): ok n_results=3
+assistant: I got 3 movies and what about your choice among Angel Has Fallen, Hustlers or Toy Story 4?
+user: I prefer to watch Toy Story 4.
+assistant: Okay, lets book the tickets to this movie.
+user: No, please. I will ask it later.
+assistant: Then, what do you want now?
+user: Let me know the available show time of this movie.
+assistant: Inform us your convenient date to watch the movie so that I can check for the show time. Shall I search it for March 2nd?
+user: Yes, check it on that day.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 show time available at 4:30 pm in Sonoma Cinema.
+user: That's perfect. Thanks.
+assistant: It's okay. How can I help you further?
+user: Now, we go back to the booking of appointment with the Salon that I have selected before.
+assistant: What is your convenient time to book the appointment?.
+user: Book it for the time 10:15 am.
+assistant: I want to confirm to book an appointment with C C Beauty Salon for the time 10:15 am on March 2nd.
+user: Please book it at 16:00.
+assistant: Pleas confirm to book the appointment 4 pm on March 2nd.
+user: That is correct to proceed. Also check whether this Salon is an Unisex one?
+tool(BookAppointment): ok n_results=1
+assistant: No, it is not an Unisex Salon. I have confirmed the appointment. Is that okay?
+user: That's okay. That's all I want now.
+assistant: Have a good day.

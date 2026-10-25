@@ -1,0 +1,18 @@
+user: I want to find a hotel in Toronto, Canada.I will need 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 results according to your requirements.A 3 star hotel called Best Western Plus Toronto North York Hotel & Suites.
+user: Tell me please if smoking is allowed and the price per night.
+assistant: $63 is the cost per night.Smoking is not allowed in this hotel.
+user: Something else you can find?
+assistant: A 3 star hotel called Best Western Premier Toronto Airport Carlingview Hotel.
+user: Perfect.I want to reserve the hotel for 4 days.
+assistant: The check in date when will be?
+user: I would like to be on Tuesday next week.
+assistant: You want 1 room at hotel Best Western Premier Toronto Airport Carlingview Hotel located in Toronto.Check in date is on March 5th ad you want to stay 4 days.Is that okay ?
+user: Great.Tell me their street address and the price for night.
+tool(ReserveHotel): ok n_results=1
+assistant: Booking was made.Cost per night is $117 and you can find them at 135 Carlingview Drive Etobicoke, Ontario M9W 5E7, Canada.
+user: Thanks a lot for helping.
+assistant: Can I help you with anything else?
+user: No.Thank you!
+assistant: Bye.Have a nice day!

@@ -1,0 +1,16 @@
+user: I want to request a payment.
+assistant: From who and for how much?
+user: I want to request 164 bucks from Isabella.
+assistant: Please confirm: Requesting a transaction with Isabella for $164. The transaction is visible to the public.
+user: Yes, thanks.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: Thank you. I would also like to make a payment via app cash for Wilson.
+assistant: How much?
+user: The amount is 109 bucks.
+assistant: Please confirm: Sending Wilson $109 via app balance. Your transaction is visible to the public.
+user: Yes, thanks.
+tool(MakePayment): ok n_results=1
+assistant: Your payment has been made.
+user: Thank you, that's all.
+assistant: Have a good day.

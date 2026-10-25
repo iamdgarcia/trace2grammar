@@ -1,0 +1,15 @@
+user: I need to find a four star hotel in San Francisco which allows smoking.
+tool(SearchHotel): ok n_results=3
+assistant: I found 3 hotels including a 4 star hotel called Hotel G.
+user: That is good. I need some child-friendly attractions without entry fee, maybe a historical landmark?
+tool(FindAttractions): ok n_results=2
+assistant: There are 2 historical landmark attractions including Alcatraz.
+user: Do they have a phone number?
+assistant: The number is 415-561-4900.
+user: I would like to reserve 1 room at that hotel for 2 days, checking in on the 12th.
+assistant: Please confirm you want to check into Hotel G in San Francisco on March 12th for 2 days in 1 room.
+user: That is perfect.
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation is confirmed.
+user: Thank you very much. That will be all.
+assistant: See you soon!

@@ -1,0 +1,19 @@
+user: I need a salon.
+assistant: In what city?
+user: Alameda.
+tool(FindProvider): ok n_results=8
+assistant: I found 8 salons like Al's Barber Shop in Alameda.
+user: Perfect! What will the weather be like there on March 6th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 88 degrees with a 27 percent chance of rain.
+user: How windy are how humid is it going to be?
+assistant: The average wind speed is 12 MPH and the average humidity is 27 percent.
+user: Ok, please make me an appointment at the salon on that day.
+assistant: What time would you like an appointment?
+user: I would like it at half past 3 in the afternoon.
+assistant: Please confirm, appointment at Al's Barber Shop on March 6th at 3:30 pm.
+user: Yes, that is perfect. Is it a unisex salon?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is complete. It is a unisex salon.
+user: Thanks! That is all I need.
+assistant: Have a nice day.

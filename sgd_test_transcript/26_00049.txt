@@ -1,0 +1,36 @@
+user: Hey, could you find 1 ticket for a round trip flight?
+assistant: Sure I can help you with that. Tell me your departure date and city.
+user: I'd like to leave from New York City on Saturday this week.
+assistant: What is your destination?
+user: My destination is Cape Town.
+assistant: What's your preferred return date?
+user: A return date of 13th of this month works for me.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: All right. Your search yielded 1 suitable flight. How does flying with American Airlines sound? They have a 6:20 am outbound flight with a layover, and an inbound flight taking off at 2:05 pm. The ticket price is $328.
+user: Is the ticket class Business? What time does the flight land at my destination?
+assistant: The ticket class is Economy. The outbound flight lands at 7:57 pm.
+user: That works. Please find a house for 3, over there. It must offer laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice, 4.5 -star rated house situated at 1 Cullinan Street, Cape Town City Centre.
+user: What other houses are there?
+assistant: There's a nice, 4.4 -star rated house situated at t 1 Lower Buitengracht, Cape Town City Centre.
+user: What other houses are there?
+assistant: How about the nice, 4.2 -star rated house located at t 1 Mountain Road, Chapmans Peak?
+user: This house is perfect. The location works for me.
+assistant: Shall I reserve the house for you?
+user: Yes, please reserve it with a check-in date of the 4th.
+assistant: Will you be checking out on March 13th, or another date?
+user: A March 10th check-out date works for me.
+assistant: All right. Please tell me whether the following is correct: Your party of 3 would like to check into the house in Cape Town on March 4th. You will be checking out on March 10th.
+user: Yes, that is correct. Could you please tell me the phone number and total cost?
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made your reservation. You can reach them on +27 21 406 5000. The total cost is $3,480.
+user: What child-friendly places would you recommend visiting?
+tool(FindAttractions): ok n_results=9
+assistant: I have 9 attractions that you might like. I recommend visiting the museum known as Bo-Kaap.
+user: Is entry to this attraction free-of-charge? What phone number can I reach them on?
+assistant: Yes, there is no admission charge. You can reach them on 21 481 3938.
+user: All right, cool!
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a great time!

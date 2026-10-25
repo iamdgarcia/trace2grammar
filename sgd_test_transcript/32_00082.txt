@@ -1,0 +1,34 @@
+user: I'm looking for a home in San Leandro with two baths.
+assistant: Are you looking to rent or buy? And how many bed rooms would you prefer?
+user: I want three bed rooms. And I want to buy.
+tool(FindHomeByArea): ok n_results=6
+assistant: There are 6 houses that match. Bermuda Garden Apartments at 1475 167th Avenue has a very good property which costs $3,200,000.
+user: Can you give me their phone number? And is there a laundry machine in the house?
+assistant: You can reach them at 510-962-8120. There is no laundry machine in the house.
+user: Okay, that sounds interesting.
+assistant: What else can I do for you?
+user: I want to go and visit the place, how about on March 13th.
+assistant: I'll schedule you a visit to Bermuda Garden Apartments for March 13th, is that okay?
+user: Actually, make it for March 8th.
+assistant: I'll schedule you a visit to Bermuda Garden Apartments for March 8th, is that okay?
+user: Yes, that's okay. Is there a garage on the property?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled the visit. There is a garage on the property.
+user: I also want you to share a location with someone.
+assistant: Who is the recipient of the location?
+user: I'm sharing with Judith.
+assistant: I'll send the location of 1475 167th Avenue to Judith, is that right?
+user: Wait, no. I want to share it with Kimberly.
+assistant: I'll send the location of 1475 167th Avenue to Kimberly, is that right?
+user: Yes, please share it.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks for the help. Now I need a cab to go over there. I want a luxury cab for 1.
+assistant: I'll get you a luxury cab for 1 to 1475 167th Avenue, is that right?
+user: Yes, that's right. What's the cost?
+tool(GetRide): ok n_results=1
+assistant: I've booked the cab and it's on route. The cost is $15.61.
+user: And when will the cab get here?
+assistant: The cab will be here in 13 minutes.
+user: Thanks for all the help. That's it for now.
+assistant: Have a great day.

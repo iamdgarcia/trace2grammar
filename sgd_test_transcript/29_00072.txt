@@ -1,0 +1,24 @@
+user: I would like to search for a hotel, please.
+assistant: What city would you like to look for hotels in?
+user: I am looking for a hotel in NY.
+tool(SearchHotel): ok n_results=10
+assistant: 1 Hotel Brooklyn Bridge is a 5 star hotel.
+user: OK, sounds good. I will also need to find a round trip flight to get there from Atlanta.
+assistant: What day would you like the return flight?
+user: I will be flying back on the 13th of this month.
+assistant: Are you departing on March 8th for your visit?
+user: Yes, that is right.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flight options. American Airlines has a flight for $248 that takes off at 10:55 pm with a layover. The return flight takes off at 7:10 am.
+user: OK, sounds good. I would like to reserve 1 room at the hotel you found. I will be checking in March 9th and staying for 4 days.
+assistant: You would like to reserve 1 room at 1 Hotel Brooklyn Bridge in New York, checking in on March 9th and staying for 4 days, is that correct?
+user: Yes, that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel reservation is successful.
+user: Thank you for all your help. Can you help me find some attractions to visit while I am there?
+tool(FindAttractions): ok n_results=10
+assistant: If you would like to visit a Museum, there is the 9/11 Tribute Museum.
+user: OK, thank you.
+assistant: Is there anything else I can assist you with?
+user: No, thank you for your help.
+assistant: Have a great trip!

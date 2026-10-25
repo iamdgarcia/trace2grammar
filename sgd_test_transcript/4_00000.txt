@@ -1,0 +1,18 @@
+user: I am planning to go for an outing and I need a Car for rent. Can you find me the one like SUV in Atlanta, GA? I need the same till 10th of this month.
+assistant: From which date you want to book the Car for rent?
+user: I want to book it from the 4th at afternoon 3. I think Hatchback is much better.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I got 4 results and what about your opinion on a Hatchback of Mazda 3 Car available for pickup at Peachtree Station.
+user: I think, this will work for me. I want to reserve it.
+assistant: Shall I book the car and include the insurance for the same?
+user: No, I don't need the insurance now.
+assistant: Okay, Please confirm to book a Hatchback Car available for pickup at Peachtree Station from March 4th at 3 pm to March 10th.
+user: Sorry, I need the insurance also. Make the booking accordingly.
+assistant: Please confirm finally to book the Car at 3 pm with Insurance.
+user: That is correct to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved the Car for you.
+user: Thank you so much for your work.
+assistant: Anything else you need from me?
+user: No, that's all for now.
+assistant: Have a great day.

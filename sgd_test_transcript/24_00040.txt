@@ -1,0 +1,28 @@
+user: I am looking for buying Economy class tickets in a one way flight to New York on March 14th.
+assistant: What will be your city of departure?
+user: I am looking for flights from Washington.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 flights you may like. How about an American Airlines flight, whose onward flight takes off at 9:25 pm with the ticket price of $86?
+user: Is there any other flights?
+assistant: How about a Delta Airlines flight, whose onward flight takes off at 12:55 pm with the ticket price of $83?
+user: That sounds good to me.
+assistant: Is there anything else I can help you with?
+user: Can you find me three economy tickets in a train going there next Monday?
+tool(FindTrains): ok n_results=6
+assistant: What do you think of a train departing at 6:20 am with the total cost as $166?
+user: Can you show any other other trains with business tickets?
+tool(FindTrains): ok n_results=7
+assistant: I found 7 trains you may like. What do you think of a train departing at 6:40 am with the total cost as $311?
+user: Can you show any other other trains?
+assistant: What do you think of a train departing at 10:40 am with the total cost as $287?
+user: Can you tell me the names of the stations it arrives at and departs from?
+assistant: The train departs from Union Station ad arrives at Grand Central Station.
+user: That sounds nice to me. Book me the train tickets with trip insurance.
+assistant: Please confirm: You want me to book 3 business tickets in train from Washington to New york on March 4th. And the train leaves at 10:40 am.
+user: Yes, That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully booked your ticket.
+user: Thank you so much for your help!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,20 @@
+user: I'm interested in finding some attractions nearby.
+assistant: Where would you like me to begin the search?
+user: Please search SFO.
+tool(FindAttractions): ok n_results=10
+assistant: Alcatraz is a very popular Historical Landmark.
+user: Perfect. I'd like to see a regular movie at the Presidio Theatre as well.
+tool(FindMovies): ok n_results=1
+assistant: May I suggest The Farewell? It has been very well received.
+user: Farewell will be perfect. I'd also like to stream a cartoon movie. What's available?
+tool(FindMovies): ok n_results=2
+assistant: I have 2 options you may like. Have you seen The Angry Birds Movie 2 or Toy Story 4?
+user: I'd like to see The Angry Birds Movie. Can you begin streaming it for me?
+assistant: I'd be happy to. Would you like to view The Angry Birds Movie 2 with English subtitles?
+user: That would be fine.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie selection has begun.
+user: Thank you so much for the help.
+assistant: Is there anything else I can do for you?
+user: Not right now.
+assistant: Enjoy your movie.

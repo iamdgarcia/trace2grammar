@@ -1,0 +1,17 @@
+user: I'm looking to buy tickets to see a movie.
+assistant: How many tickets would you like?
+user: Just 1 ticket please.
+assistant: What kind of show are you interested in?
+user: Just a regular show, nothing special.
+assistant: When do you want to watch the movie and what film do you want to watch?
+user: I want to watch Good Boys at 22:00.
+assistant: When would you like to watch it and where are you based?
+user: Please find movies in Santa Rosa on March 2nd.
+assistant: Okay sure so just to confirm, you want 1 ticket to watch a regular movie called Good Boys in Santa Rosa on March 2nd at 10 pm.
+user: Yes that's correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your ticket has been purchased.
+user: Thanks a lot.
+assistant: Do you need anything else?
+user: No that's all for now thanks.
+assistant: Enjoy your day.

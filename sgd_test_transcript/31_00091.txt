@@ -1,0 +1,33 @@
+user: I'll be in San Ramon and want to go to a salon.
+tool(FindProvider): ok n_results=5
+assistant: How about Dream Salon? It is located in San Ramon.
+user: What type of rating does it have.
+assistant: Customers gave it an average rating of 4.4.
+user: Do you know if it is a unisex place?
+assistant: No, the salon is not unisex.
+user: Alright, that will work. Please make me an appointment for that salon.
+assistant: What day and time would you like the appointment for?
+user: It woul dbe great if I could go there tomorrow at 10:00.
+assistant: You would like to make an appointment on March 2nd at 10 am at Dream Salon, correct?
+user: Yes, book it please.
+tool(BookAppointment): ok n_results=1
+assistant: Alright, your appointment has been made.
+user: Can you find me a place to eat that day?
+assistant: Sure, what type of cuisine do you like?
+user: I'm on a diet do I would like a healthy meal.
+tool(FindRestaurants): ok n_results=1
+assistant: Mcdonald's in San Ramon is nice.
+user: Is it very pricey and do they offer vegetarian options?
+assistant: It is a cheap restaurant that does not offer vefetarian options.
+user: That's alright, I would still like make a reservation for 3 people.
+assistant: What time would you like the reservation to be for?
+user: 6:45 pm would work best.
+assistant: Please verify you would like to make a reservation at Mcdonald's in San Ramon for 3 people on March 2nd at 6:45 pm.
+user: Yes, that is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Unfortunately I was not able to successfully reserve that time. Mcdonalds has a table for 3 available on March 2nd at 7 pm, would that work?
+user: Yes, that time is fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Ok, your reservation has been made.
+user: That's great! I'm done now.
+assistant: Hope you have a nice time!

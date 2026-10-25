@@ -1,0 +1,25 @@
+user: Search for me movies shown in Napa.I would like to watch at Century Napa Valley and XD.
+tool(FindMovies): ok n_results=4
+assistant: I have for you 4 option.What do you think about Angel Has Fallen, Hustlers or Once Upon a Time in Hollywood?
+user: Find me something else.I want to watch a regular show.
+tool(FindMovies): ok n_results=4
+assistant: What do you think about The Angry Birds Movie 2?
+user: The Angry Birds Movie 2 is very good.Buy for me tickets please.
+assistant: When you want to watch it?
+user: At 22:15 will be okay.
+assistant: How many tickets you need?
+user: Three tickets will be great.
+assistant: On what date you want to be?
+user: I want four tickets for tomorrow.
+assistant: You want 4 tickets at a regular movie called The Angry Birds Movie 2 in Napa on March 2nd at 10:15 pm.
+user: Yeah that's good.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets was booked.
+user: What is the ticket price?
+assistant: $7 per person.
+user: Tell me the address of the theater and what kind of movie is it?
+assistant: The theater is located at 195 Gasser Drive.This is a Animation movie.
+user: Thanks for helping me.
+assistant: With something else I can help you?
+user: No thank you a lot.
+assistant: Have a great day!

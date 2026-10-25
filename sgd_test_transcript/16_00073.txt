@@ -1,0 +1,40 @@
+user: I'm travelling soon and need to purchase bus tickets.
+assistant: I can help you with that. Please tell me your departure date and the number of tickets you'd like.
+user: I'll be leaving on 12th of March. I'm in a group of 3.
+assistant: What is your destination?
+user: I'll be going to Sacramento, CA.
+assistant: Which city are you leaving from? What's your preferred departure time?
+user: I'll like to leave at morning 6 from SD.
+assistant: One moment please. I need your confirmation that you're purchasing 3 tickets on the bus leaving San Diego for Sacramento on March 12th at 6 am, and that you have no extra luggage.
+user: Yes, that is correct.
+tool(BuyBusTicket): ok n_results=0
+assistant: Unfortunately, due to a system glitch the purchase was unsuccessful. Would you like my help with anything else?
+user: Please try again, for two people leaving from Las Vegas.
+assistant: Sure. No problem. Please confirm that you're purchasing 2 tickets on the bus leaving Las Vegas for Sacramento on March 12th at 6 am, and that you have no extra luggage.
+user: Sounds good to me!
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your ticket.
+user: Thank you very much. You've been very helpful. Please help me find one room in hotels there, also. The rating should be 3.0 or higher.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel known as Courtyard By Marriott Sacramento Cal Expo.
+user: Are there other hotels meeting my requirements?
+assistant: How about Courtyard By Marriott Sacramento Midtown? It has a 3.0 user rating.
+user: Are there additional hotels meeting my requirements?
+assistant: You might want to try the 3 star rated Doubletree By Hilton Hotel Sacramento.
+user: Is it smoker-friendly?
+assistant: No, the property has a no-smoking policy.
+user: Their contact number, please?
+assistant: You can reach them on +1 916-929-8855.
+user: That works for me. I hate the smell of cigarette smoke!
+assistant: Will there be anything else?
+user: Please go ahead and reserve the hotel.
+assistant: Tell me your preferred check-in date.
+user: I'd like to check in on 5th of March.
+assistant: What's the duration of your stay?
+user: I want to stay for four days.
+assistant: One moment please. Let me see if I got everything correctly: You are looking to check into 1 room at the Doubletree By Hilton Hotel Sacramento in Sacramento, on March 5th for a duration of 4 days
+user: Yes, that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully made your hotel reservation.
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Goodbye, and have a wonderful day!

@@ -1,0 +1,28 @@
+user: Hi, could you find a therapist in San Jose please?
+assistant: What type of therapist do you need?
+user: A Psychologist will do.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 Psychologist in the San Jose area, how about Barskyex Bryna G?
+user: May I have their address?
+assistant: They are located at 5755 Cottle Road # 4?
+user: And how can I contact them?
+assistant: You can call them at 408-363-4418
+user: Sounds great! Could you get me an appointment on the 7th of March at 15:45?
+assistant: Please confirm your appointment at Barskyex Bryna G at 3:45 pm on March 7th.
+user: Sure, that is fine with me.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry your reservation could not be made. How about an appointment at Barskyex Bryna G at 4 pm on March 7th.
+user: Yes, that is fine with me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made, you should get a confirmation through email soon.
+user: Could you get me an Expensive cab ride there for one?
+assistant: Sure, please confirm your request for a luxury ride for 1 to 5755 Cottle Road # 4.
+user: Sorry, could you get me a normal ride instead?
+assistant: Please confirm your regular ride for 1.
+user: Sure, how much will this cost me?
+tool(GetRide): ok n_results=1
+assistant: Your ride is on its way to you and will cost you $20.83.
+user: I see, thanks so much for your help.
+assistant: Could I further help you then?
+user: No, that is all I need.
+assistant: Have a great day ahead

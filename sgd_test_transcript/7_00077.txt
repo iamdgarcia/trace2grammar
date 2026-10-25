@@ -1,0 +1,13 @@
+user: Can you help me to buy movie tickets?
+assistant: When do want to watch the movie and how many tickets would you like?
+user: I'd like 4 tickets to watch the show at nine pm.
+assistant: Do you have a preferred movie or show type?
+user: I'd like to watch IT2 in imax.
+assistant: Where are you located and on what date do you want to watch the movie?
+user: Find me shows for the 8th in Campbell.
+assistant: Please confirm that you want 4 tickets to watch IT Chapter Two in imax at 9 pm on March 8th in Campbell.
+user: That's right. What type of movie is it and how much does the ticket cost?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets have been booked. It's a supernatural movie and tickets are priced at $10 per person.
+user: Thank you very much for the assistance. That's all I need for now.
+assistant: Have a great day!

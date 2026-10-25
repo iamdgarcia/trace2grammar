@@ -1,0 +1,43 @@
+user: Can you please find something interesting for me to do?
+assistant: Please tell me if you'd like events from a particular category, like maybe Music or Theater as well as the city in which I should search.
+user: I'd like to do something involving Songs in Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: How about Anthony Green performing at The Foundry on March 10th at 6 pm.
+user: Can you please tell me the venue's address as well as the ticket price?
+assistant: Yes, tickets are $60 each and the venue is located at 29 East Allen Street 2nd Floor.
+user: Sounds perfect. Can you please find me a bus to go there?
+assistant: Sure, but first please tell me from where as well as if you plan on travelling on March 10th.
+user: No, I'm travelling on the 7th of March from Washington.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses matching your criteria, out of which I'd recommend the one leaving at 8:30 am with tickets priced at $28.
+user: Is this bus a one-stop one?
+assistant: The bus is direct.
+user: Sounds perfect.
+assistant: Do you want me to get tickets for you for this bus?
+user: Not at the moment. Let's search for round trip flights to there.
+assistant: Please tell me on which day do you want to return, as well as if you plan to travel on March 7th.
+user: I'll be travelling this Sunday and I plan to return on the 13th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There's a good American Airlines flight taking off at 7:10 pm, with one layover and with the returning flight taking of at 7:25 am . Tickets are $280.
+user: Is this ticket in Economy?
+assistant: Yes, the ticket is for an Economy class seat.
+user: Can you please tell me if is it for 3 persons, as well as the arrival time at destination?
+assistant: The ticket is for 1 and the onward flight lands at 0:41 am.
+user: Sounds perfect. Now let's find some hotels in the area.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels matching your criteria, out of which I recommend Aka Rittenhouse Square, a very nice 4 star hotel.
+user: Can you please tell me their address?
+assistant: Sure, they're located at 135 South 18th Street.
+user: Do they allow smoking?
+assistant: No, unfortunately they do not allow smoking.
+user: Sounds perfect. Let's now purchase 4 tickets for the event you've found earlier.
+assistant: Can you please confirm that you want 4 tickets to Anthony Green for March 10th in Philadelphia?
+user: On second thought, I just want 1 ticket.
+assistant: can you please confirm that you want 1 ticket for the event in Philadelphia?
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully booked your ticket. Enjoy the show!
+user: Thanks a lot for everything?
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks again!
+assistant: Have a nice day!

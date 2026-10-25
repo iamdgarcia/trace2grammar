@@ -1,0 +1,11 @@
+user: Can you find a train for me. I want 1 ticket leaving from LA.
+assistant: What is your destination and what is the day you want to travel?
+user: I'm going to SFO and would like tickets that are for Wednesday next week.
+tool(FindTrains): ok n_results=8
+assistant: I have one leaving at 7:50 am. The total price is $83.
+user: That sounds fine.
+assistant: Would you like me to book tickets?
+user: No, I don't want to book tickets at present.
+assistant: Is there anything else I can do for you?
+user: No. That was very helpful, thank you.
+assistant: Talk to you again.

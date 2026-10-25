@@ -1,0 +1,27 @@
+user: Can you please check the weather for me for March 7th.
+assistant: Sure, but first tell me for which city.
+user: For London, UK please!
+tool(GetWeather): ok n_results=1
+assistant: There's a 27 percent chance of rain with an average temperature of 71 degrees Fahrenheit.
+user: OK, thanks. Now please help me look for a one way flight to there, preferably some Economy tickets with Delta Airlines. I'll be taking off from New York.
+assistant: Sure! Do you plan to leave on March 7th?
+user: No, I'll be starting my travel on March 3rd.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There's 1 flight matching your criteria, a Delta Airlines flight taking off at 8:50 pm. The tickets are $210 and the flight is direct.
+user: OK. When does it arrive?
+assistant: The flight lands at destination at 9:12 am.
+user: The price you've mentioned is for 1 person, right?
+assistant: Yes, for 1 person.
+user: Sounds perfect. Now, can you please find me a car to rent at destination?
+assistant: Sure, but first please tell me you desired pick up date and time as well as the rental period. Do you plan to pick-up the car on March 3rd, March 7th or other day, maybe?
+user: I will be needing the car from March 7th to the 12th and I would like to pick it up at 13:30.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There's a very nice sedan, an Audi A8, available to rent at Heathrow International Airport.
+user: OK. What the per day price for this vehicle?
+assistant: The car is priced at $36.00 per day.
+user: Sounds perfect to me.
+assistant: Do you want me to place a reservation for you for this car?
+user: No, not at the moment.
+assistant: Is there anything else I could do for you?
+user: No, but thanks for everything.
+assistant: My pleasure! Have a nice day.

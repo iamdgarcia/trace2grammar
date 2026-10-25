@@ -1,0 +1,28 @@
+user: Please find some Popular songs preferably of Tyler Shaw.
+tool(LookupMusic): ok n_results=1
+assistant: Do you like With You , 1 of Tyler Shaw? It is from Intuition.
+user: Do you know if its of eight years ago?
+assistant: It is 2018 song.
+user: the right one, thank you.
+assistant: Shall I play it for you now.
+user: Not now, thank you.
+assistant: Do you need any other help?
+user: Can I enjoy movies online?
+assistant: Which type of movie will please you?
+user: I prefer Offbeat movies.
+tool(FindMovies): ok n_results=1
+assistant: 1 such type movie is Once upon a time in Hollywood. Do you like it?
+user: Once Upon a Time in Hollywood is really great. now please play the song selected on any device.
+assistant: Please ensure the request: playing With you in Living room.
+user: Please play it on kitchen device.
+assistant: Please confirm that you asked for With you to be played in Kitchen.
+user: Yeah, thats it.
+tool(PlayMedia): ok n_results=1
+assistant: It started, make your heart relaxed.
+user: One more favor, my alarms please.
+tool(GetAlarms): ok n_results=5
+assistant: You have an alarm at 8:30 am to Wake Up.
+user: No more alarms.
+assistant: Another one is at 4:30 Pm titled Piano time.
+user: Fine, thanks for your help
+assistant: My pleasure, keep relaxed.

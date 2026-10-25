@@ -1,0 +1,13 @@
+user: I want to see the movie right now. It can have subtitles or not.
+assistant: Which movie are you interested in seeing?
+user: I want to see The Load.
+assistant: You would like to see The Load with English subtitles?
+user: I prefer to see it with French subtitles.
+assistant: You would like to see The Load with French subtitles?
+user: Yes, that would be fine.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: What type of movie is it and who is the main actor?
+assistant: It is a War movie and Marko Grba Singh is the main actor.
+user: Thanks. That would be all.
+assistant: Enjoy your day.

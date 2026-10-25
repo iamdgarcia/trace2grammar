@@ -1,0 +1,15 @@
+user: Can you get me train tickets from Phoenix to SF?
+assistant: When are you planning to travel?
+user: I need to travel on the 11th.
+tool(FindTrains): ok n_results=5
+assistant: There is a train that departs at 7 am and a ticket costs $193. Would you like to consider it?
+user: That sounds good. Can you also find a house that has laundry service for me to stay while I'm there?
+tool(SearchHouse): ok n_results=10
+assistant: Of the 10 houses available the one located at 1095 Market Street is a nice one that has a rating of 4.0.
+user: Are there any other houses suitable for 4 people?
+tool(SearchHouse): ok n_results=9
+assistant: Of the 9 suitable houses, the one at 1100 Market Street Hotel entrance is at, 45 McAllister Street, which has a rating of 4.4, is a nice one.
+user: That sounds like a great place to live!
+assistant: Shall I reserve the house for you?
+user: No, not now. That's all I need. Thank you.
+assistant: Have a great day! Bye!

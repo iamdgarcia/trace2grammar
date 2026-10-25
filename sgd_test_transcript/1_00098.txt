@@ -1,0 +1,18 @@
+user: I want to search for a Hotel to stay and I need two rooms there. Please search for some nice 1 star Hotels.
+assistant: Do you have any particular City in your mind to search for the Hotels?
+user: Yes, search it in Anaheim, CA.
+tool(SearchHotel): ok n_results=2
+assistant: Got 2 hotels. How about a hotel named Best Western Plus Pavilions with 1 star.
+user: I want to know the contact number of that hotel for my reference.
+assistant: Please note down it as +1 714-776-0140.
+user: Thanks and also I want to know their address. Please also check whether they will allow smoking in their hotel.
+assistant: No smoking is allowed there and their address is 1176 West Katella Avenue.
+user: That is okay for me.
+assistant: Shall I reserve it now for you?
+user: Yes, do it for 7 days from 4th of March.
+assistant: Please confirm to book 2 rooms for 7 days in Best Western Plus Pavilions from March 4th in Anaheim.
+user: That is confirmed. You can proceed with booking. May I know the rate details per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Yes, it costs $76 per night and your booking was successfully made.
+user: Thank you so much and that's all.
+assistant: Have a good day.

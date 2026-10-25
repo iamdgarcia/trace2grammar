@@ -1,0 +1,20 @@
+user: Can you help me get a rental car?
+assistant: I need to know where you would like to get the rental.
+user: I would like to pick up the car in Vegas.
+assistant: How long will you need the car. What time and date would you like the rental for.
+user: I will need the car starting March 6th and plan to return the car March 12th. Two in the afternoon would be a good time for me to pick up the car.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a SUV of Alfa Romeo Stelvio that can be picked up at Union Plaza.
+user: I knew I could count on you to find the best rental for me.
+assistant: Shall I reserve the car for you?
+user: That would be appreciated.
+assistant: Would you like to insure the rental?
+user: No.Thanks for asking.
+assistant: With your approval I will rent the SUV from Union Plaza. I understand the rental will start at 2 pm on March 6th and you would like to keep the rental until March 12th
+user: You have my approval to rent the car.
+tool(ReserveCar): ok n_results=1
+assistant: The reservation has been completed.
+user: You're a great help, thanks.
+assistant: What else can I do for you?
+user: I'm all set for now. Thanks again.
+assistant: My pleasure. Have a great day.

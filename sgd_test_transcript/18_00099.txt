@@ -1,0 +1,18 @@
+user: I need help searching for hotels in London.
+tool(SearchHotel): ok n_results=10
+assistant: I found 45 Park Lane, a 5 star hotel.
+user: That could work. Please tell me the weather forecast for the 12th.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature is 87 degrees Fahrenheit, with a 21 percent chance of rain.
+user: All right. Also check the 9th of March.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature is 90 degrees Fahrenheit, with a 5 percent chance of rain.
+user: Sounds good. All right, now please reserve one room for three days in the hotel you found earlier.
+assistant: Will you be checking in on March 9th?
+user: I'd like my check-in date to be Wednesday next week.
+assistant: Let me see if I got everything correctly: You'd like to check into 1 rooms at 45 Park Lane in London on March 6th, and will be staying for 3 days.
+user: Yes, that is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully made your reservation at the hotel.
+user: Thank you very much. You've been very helpful. That will be all for now.
+assistant: Goodbye, and have a wonderful day!

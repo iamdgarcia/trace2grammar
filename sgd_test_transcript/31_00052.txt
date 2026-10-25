@@ -1,0 +1,34 @@
+user: I need to find a salon
+assistant: In which city do you need?
+user: I need it in Oakland
+tool(FindProvider): ok n_results=10
+assistant: In Oakland there's 17 Jewels Salon
+user: It could go well. I would like an appointment in this salon
+assistant: Which day do you want to set the appointment?
+user: I prefer to set it on March 12th
+assistant: Do you have preferences about the time?
+user: Yes, I prefer at 14:30
+assistant: An appointment at 2:30 pm on March 12th in 17 Jewels Salon. Do you confirm?
+user: Yes, I confirm. Thank you
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked
+user: Can you give me the address of the salon? Is a unisex salon?
+assistant: Sure! It's 4801 Telegraph Avenue. Yes, is a unisex one.
+user: Very good! I want to find a Taiwanese restaurant there.
+tool(FindRestaurants): ok n_results=1
+assistant: In Oakland there's Dragon Gate.
+user: Yes, this may be fine.
+assistant: So do I book a table?
+user: Yes, I want to book a table in that restaurant
+assistant: What time would you like to have lunch?
+user: I would prefer at two pm
+assistant: A table for 2 people at Dragon Gate in Oakland at 2 pm on March 12th. Is it correct?
+user: No, I prefer at 1:45 in the afternoon, please
+assistant: A reservation for 2 people at 1:45 pm. Do you confirm?
+user: No, a reservation is for 1 people.
+assistant: A table for 1 people at Dragon Gate. Is It correct?
+user: Now It's correct, thanks. Is It an intermediate priced restaurant? Is there a vegetarian menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: No, there isn't a vegetarian menu there. It's a moderate restaurant. Your table has been booked!
+user: Thank you! It's all for now!
+assistant: Have a nice day!

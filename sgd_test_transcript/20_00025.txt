@@ -1,0 +1,25 @@
+user: What about hotels? Are there sweet ones?
+assistant: Where do you want the service?
+user: I need it in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: One 5 star hotel is there. It is named 45 Park Lane.
+user: Their cost and phone number please.
+assistant: You need to pay $375 per night. You can contact them at +44 20 7493 4545.
+user: Look for other hotels there.
+assistant: Another one is Abbey Court Hotel (Hyde Park). It is 3 star one.
+user: That seems good.
+assistant: Do you need a reservation there?
+user: Not now. Please get me a rental car.
+assistant: Do you need it from March 6th? How long do you need it? What is the time of pick up?
+user: I need it from March 7th and will pick it up at 9:30 in the morning. I want it until 9th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: You can get a Sedan Audi A8 from Heathrow International Airport.
+user: Good, Please reserve it.
+assistant: Shall I add insurance?
+user: Not needed, thank you.
+assistant: Please confirm the details of your request, you need a rental car from Heathrow International Airport on March 7th till March 9th. You will pick it at 9:30 am. It is a Sedan one with no insurance.
+user: Details are correct. What is the cost?
+tool(ReserveCar): ok n_results=1
+assistant: You will cost $29.00 per day. It is booked for you.
+user: Great service, thank you.
+assistant: Enjoy a wonderful journey.

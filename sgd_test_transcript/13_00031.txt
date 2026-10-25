@@ -1,0 +1,37 @@
+user: I am looking for some fun things to do. I really enjoy listening to music. Will you search for something to do that includes songs?
+assistant: Do you have a city in which you would like me to search?
+user: Yes, please look for something around LAX.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events in that area that meet your criteria. You may enjoy Ain Gordon playing at the Ralph Freud Playhouse on March 9th starting at 7 pm.
+user: That sounds interesting, but will you search for some other choices. Please look in New York that has something to do with play.
+tool(FindEvents): ok n_results=10
+assistant: I have found 10 events you may like including Acting for Teens on March 4th starting at 6 pm. This is at 520 8th Ave. - Personal Valet Parking.
+user: Thank you. I like these but please continue your search for other events.
+assistant: Maybe you would enjoy the Advanced Acting Scene Study at the TGW Acting Studio. This is on March 10th at 4:30 pm.
+user: What is the price of tickets for this event and where is the venue location?
+assistant: The ticket cost is $20 and the address is 358 West 44th Street.
+user: That one sounds perfect.
+assistant: Would you like to purchase tickets?
+user: Not at this time, however will you search for a 3 star hotel in this area. I will need 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: I found the 11 howard which is a 3 star hotel.
+user: Please provide me with some other choices that are a 2 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that meet your criteria. One of them is the Bklyn House Hotel which is a 2 star.
+user: What are my other choices?
+assistant: There is the 2 star Bogart Hotel.
+user: What is the cost?
+assistant: This hotel costs $116 per night.
+user: Does this hotel allow smoking? Also, please give me their phone number.
+assistant: This hotel does allow smoking. You may reach them at +1 718-381-1118.
+user: Great. Now I would like to purchase tickets for the event you found earlier.
+assistant: How many tickets should I purchase?
+user: I would like 1 ticket.
+assistant: Please confirm you would like 1 ticket for the Advanced Acting Scene Study on March 10th in New York.
+user: That is right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made.
+user: I appreciate all your help today!
+assistant: Is there anything else I may assist you with today?
+user: No, that will be all for now. Thanks again!
+assistant: Enjoy the day!

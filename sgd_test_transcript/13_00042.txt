@@ -1,0 +1,29 @@
+user: What fun stuff is there to do?
+assistant: In which city? Are you interested in music or theater or something else?
+user: I I want to see a play in LA.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events available. Would you like to see A Year in Dragonfly at Studio C Artists at 7:30 pm on March 1st?
+user: Where is it located and what is the cost of a ticket?
+assistant: It is at 6448 California 2 and the price is $55.
+user: That is fine. What else is there to do?
+assistant: There is Adieu Monsieur Haffmann which takes at Theatre Raymond Kabbaz at 6:30 pm on March 4th .
+user: That would be ok, but is there anything else?
+assistant: There is the popular show called Anything Goes that takes place at Upright Citizens brigade sunset on March 6th at 5:30 pm.
+user: That would be fine.
+assistant: You would like tickets?
+user: Not right no.
+assistant: Is there anything else?
+user: I would need a hotel to stay in when I get there.
+tool(SearchHotel): ok n_results=10
+assistant: You should try AC Hotel by Marriott Beverly Hills. It is a 3 star hotel.
+user: Great. I would like tickets to the event.
+assistant: How many tickets?
+user: I need four.
+assistant: You would like 4 tickets to see Anything Goes in Los Angeles on march 6th?
+user: That would be great.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made.
+user: How much does a ticket cost and where is the venue located?
+assistant: It is located on 5419 Sunset Boulevard and costs $25.
+user: Thanks very much. That's all for now.
+assistant: Enjoy your day.

@@ -1,0 +1,19 @@
+user: I want to see a movie that stars Jennifer Connelly. I would prefer something with Jim Henson as the director.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 such movie called the Labyrinth. It is rated an average of 70 out of 100.
+user: Yeah perfect. Now find me a place to eat vegetarian food.
+assistant: What type of food shall I look for and in what locality?
+user: I enjoy outdoor seating. I would love Italian food in a reasonably priced restaurant in Morgan Hill area.
+tool(FindRestaurants): ok n_results=3
+assistant: In Morgan Hill you have a good restaurant called Betto's Bistro.
+user: Tell me the user rating for that restaurant.
+assistant: They have a user rating of about 4.4.
+user: That is nice.
+assistant: Shall I book a table for you there?
+user: Yes go ahead. Reserve a table for 2 at morning 11.
+assistant: So you want a table for 2 at Betto's Bistro at 11 am on March 1st in the city of Morgan Hill. Is that correct?
+user: Sure. Get me their phone number as well.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have your reservation booked and their contact number is 408-779-7422
+user: Thanks a ton. I am done.
+assistant: Have a wonderful day.

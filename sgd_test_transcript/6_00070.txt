@@ -1,0 +1,18 @@
+user: Hi, could you help me find a salon please?
+assistant: Which city would you like?
+user: I would prefer a unisex salon in Berkeley please.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons you may like, how about Berkeley Hair Studio in Berkeley?
+user: May I have their contact number and ratings please?
+assistant: They have an average rating of 4.8 and you can contact them at 510-540-1261.
+user: That sounds great! Could you get me a appointment there?
+assistant: What time and date would you prefer?
+user: Could you schedule it at 6:15 in the evening on the 6th of this month?
+assistant: Sure, please confirm your appointment with Berkeley Hair Studio at 6:15 pm on March 6th.
+user: That sounds great!
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made.
+user: Thank you so much!
+assistant: Could I further assist you then?
+user: No, that is all I need. Thank you!
+assistant: Have a great day ahead!

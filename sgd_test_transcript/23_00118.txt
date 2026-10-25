@@ -1,0 +1,40 @@
+user: I need a train from Phoenix. Can you help me get tickets?
+assistant: What city will you be visiting?
+user: I need to reach LAX.
+assistant: When are you making the travel?
+user: I need tickets for the 13th.
+tool(FindTrains): ok n_results=5
+assistant: You can choose from 5 trains. How do you like the train leaving at 7 am? You will have to pay $87 in all.
+user: That will work.
+assistant: Shall I get you the tickets?
+user: Sure make the reservation.
+assistant: What is the number of tickets you want?
+user: I want only one seat.
+assistant: Shall I get you travel insurance too?
+user: Get me luxurious tickets and the travel insurance.
+assistant: So do you confirm that you want 1 Business ticket from Phoenix to Los Angeles on March 13th on the train leaving at 7 am?
+user: Not really. I want 2 seats.
+assistant: So can you verify that you want tickets for 2 people for the train departing Phoenix?
+user: That will be nice.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have your tickets booked.
+user: Thanks very much. Now can you explore for something interesting to do on that day in that place?
+assistant: Is there any preference of category you like? Maybe Music or Theater or something like that.
+user: I love to see a Play.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that might suit your taste. A year In Dragonfly will start at 7:30 pm on March 1st at Studio C Artists.
+user: What will a ticket cost me?
+assistant: One ticket is priced at $55.
+user: That is really cool.
+assistant: Shall I get you the event tickets?
+user: Nope, not now.
+assistant: Shall I do anything else for you?
+user: I want the location shared with Doris.
+assistant: So do you confirm that you want the Studio C Artists location to be shared with Doris?
+user: Nope. I need you to share it with Kathleen.
+assistant: So do you confirm you want the location of Studio C Artists to be shared with Kathleen?
+user: That is great.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared that location successfully.
+user: Thank you for all the help. That will be all.
+assistant: Have a wonderful day!

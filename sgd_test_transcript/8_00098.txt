@@ -1,0 +1,9 @@
+user: Can you get me two fully refundable tickets on a train from SFO?
+assistant: Sure, where are you going and when are you leaving?
+user: I'm going to SD on the 11th of this month.
+tool(FindTrains): ok n_results=6
+assistant: There's one leaving at 6 am that costs $232.
+user: What stations does it leave from and arrive to?
+assistant: It leaves from Salesforce Transit Center and arrive at Santa Fe Depot.
+user: Great, that's it for now.
+assistant: My pleasure, enjoy your day.

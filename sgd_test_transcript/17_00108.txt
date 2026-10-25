@@ -1,0 +1,23 @@
+user: Can you show me the weather of New York on the 4th?
+tool(GetWeather): ok n_results=1
+assistant: The expected temperature will be 59 degrees Fahrenheit with 22 percent chance of rain.
+user: Can you check for the wind speed that day?
+assistant: The expected average wind speed is 8 mph.
+user: Okay, great. I wold like to book a one-way flight.
+assistant: What is your city of departure?
+user: I am looking for a flight from Mexico City on 3rd of March.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: How about American Airlines, whose onward direct flight departs at 2:05 am with the ticket cost of $163?
+user: Can you check whether it is premium Economy class tickets and the price is for 4 people?
+assistant: No, It is an Economy -class ticket and the fare is for 1 passenger.
+user: That sounds good. I want to book any type of rental car till March 10th.
+assistant: Would you like to book the car from March 3rd?
+user: I want to book the car from the 7th.
+assistant: What will be the time of pickup?
+user: The time of pickup will be four in the evening.
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a nice SUV Alfa Romeo Stelvio car available for pickup at Port Authority Station.
+user: Can you find me the price per day?
+assistant: The price per day is $36.00.
+user: That sounds great to me. That will be all for now. Thank you!
+assistant: I am glad I could help. have a nice day.

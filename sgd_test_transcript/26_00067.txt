@@ -1,0 +1,33 @@
+user: Can you please help me find a round trip flight?
+assistant: Sure, but first tell me your departure city.
+user: I will be travelling on the 8th from LAX and I plan to return on the 12th of March.
+assistant: OK, now please tell me your desired destination.
+user: I plan to go to Seattle.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: I found an Alaska Airlines flight for you taking off at 11:55 am, with a layover and with the return flight at 7:05 am. Tickets are priced at $264.
+user: Anything else availabla in Economy?
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: There's also a direct American Airlines flight taking of at 11 pm, with the return flight at 6:15 pm. Tickets are priced at $218.
+user: OK, this sounds perfect. Now please find me a house to stay at destination for 3 persons, that is rated at least 4.3 and that provides laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found a very nice house for you at 1000 1st Avenue, rated at 4.3.
+user: Anything else available?
+assistant: There's also a pretty nice house at 1007 1st Avenue, also rated at 4.3.
+user: Can you please give me the phone number of this house?
+assistant: Sure, you can reach them at +1 206-624-4844.
+user: Thanks. Now let's place a reservation for this house.
+assistant: Will you be checking in on March 8th?
+user: NO, I plan to check in on the 10th of March.
+assistant: Do you plan to check out on March 12th?
+user: Yes, I do.
+assistant: Can you please confirm that you want me to place a reservation for 3 persons for a house in Seattle from March 10th to March 12th?
+user: On second thought, I'll be checking in on the 11th.
+assistant: Can you please confirm that you'll be checking into the house in Seattle on March 11th?
+user: Yes, that's correct. Please tell me the price of the reservation.
+tool(BookHouse): ok n_results=1
+assistant: I've successfully booked your reservation which costs $420.
+user: Thanks a lot! Could you please also find me some attractions around there?
+tool(FindAttractions): ok n_results=10
+assistant: I recommend a great Park, the Alki Beach Park.
+user: Thanks! That will be all for now!
+assistant: My pleasure. Have a nice day!

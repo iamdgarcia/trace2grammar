@@ -1,0 +1,18 @@
+user: I need help finding a place to live.
+assistant: How many baths and bedrooms are you wanting for this property? Do you want to buy or rent?
+user: I would like to find a place to rent. This place should have three baths and 4 bedrooms.
+assistant: What area would you like to have this property in?
+user: I would like it to be in SF.
+tool(FindHomeByArea): ok n_results=7
+assistant: Betel Apartments is a great property at 1227 Hampshire Street. The cost is $4,800.
+user: That sounds very good.
+assistant: Would you like to schedule a visit to this property?
+user: Yes I would. I would like to visit on 8th of March.
+assistant: Please confirm these details: You want to schedule a visit to Betel Apartments on March 8th.
+user: Yes that is good. Does this place have a garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled. This place does have a garage.
+user: Thank you very much.
+assistant: Is there anything else I can do for you?
+user: No, that's all. Thank you very much.
+assistant: Have a wonderful day.

@@ -1,0 +1,16 @@
+user: Help me find a therapist please.
+assistant: What city and which therapist do you need?
+user: Please find a psychiatrist in Gilroy.
+tool(FindProvider): ok n_results=3
+assistant: You could try Bacosa Frances a psychiatrist in Gilroy.
+user: That sounds could so could you book an appointment for the 1st?
+assistant: What is the preferred time for the appointment?
+user: The appointment is 12:00.
+assistant: Please confirm an appointment with Bacosa Frances 12 pm March 1st.
+user: Yes, that is good. Tell me their address and phone number.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you'll get an email soon. Call them at 408-842-1119 and the address 8339 Church St # 106.
+user: Thanks so much. I appreciate the help.
+assistant: Is there anything else I can assist with?
+user: No thanks I appreciate it.
+assistant: Glad to help you.

@@ -1,0 +1,21 @@
+user: Could you help me find a rental car?
+assistant: Please tell me the date you'd like to pick the car, and how long you'd like to keep it.
+user: I'd like to pick it this Saturday and keep it until 6th of this month.
+assistant: What's your preferred pick-up time?
+user: I'd like to pick the car at afternoon 12 in Philly.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars that might interest you. One is a nice, SUV Alfa Romeo Stelvio, available for pickup from Intercity Terminal.
+user: What's the daily cost?
+assistant: The daily cost is $34.00.
+user: All right. Cool. We'll get back to that later. First find me a house for 1 person to stay in while there. It should have a rating of 3.9 stars or higher, and offer laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: I found a nice house at 1 Logan Square that's rated 3.9 stars.
+user: This house is cool. I'll look into reserving it later. Could you now please reserve the car you found me earlier?
+assistant: Would you like to include insurance?
+user: No, I won't be needing insurance.
+assistant: Please confirm that you'd like to pick an SUV car from Intercity Terminal on March 2nd at 12 pm and drop it off on March 6th, and you won't be adding insurance.
+user: That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Glad to have been of service. Have a wonderful day!

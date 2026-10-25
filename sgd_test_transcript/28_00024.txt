@@ -1,0 +1,25 @@
+user: I have planned to watch a movie and can you find me a suitable one?
+tool(FindMovies): ok n_results=10
+assistant: Yes, what do you think about A Faithful Man which is a good movie with average rating of 78 out of 100?
+user: I want to know the director and genre of this movie.
+assistant: This is a Drama movie and the same was directed by Louis Garrel.
+user: That's nice and find me a restaurant there with tagged affordable prices.
+assistant: Where do you want to find the restaurant?
+user: Find the one in San Jose and this is the convenient place to me.
+assistant: Do you have any favorite kind of food to search for?
+user: Yes, search for something offer Quick Meal
+tool(FindRestaurants): ok n_results=4
+assistant: Got 4 results. What about your opinion on a restaurant at 4th St Pizza Co in San Jose? Do you want to go there?
+user: Let me decide and please check whether they are having outdoor seating and vegetarian food.
+assistant: They are having variety of Vegetarian food but not out door seating is there. Is that okay?
+user: Yes, it's okay and thanks for searching the same.
+assistant: Shall I reserve a table there?
+user: Yes, Book a table for three persons on 2nd of March for the time at morning 11:30.
+assistant: I need your confirmation to book a table for 3 at 4th St Pizza Co in San Jose on March 2nd for the time at 11:30 am.
+user: That is confirmed to proceed.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully reserved the table.
+user: Thank you and get me their phone number.
+assistant: Their phone number is 408-286-7500.
+user: Thanks and that's all.
+assistant: Have a great day.

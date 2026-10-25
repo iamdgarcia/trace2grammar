@@ -1,0 +1,34 @@
+user: Could you help me find a bus?
+assistant: Where were you planning to leave from and where are you going?
+user: I'm going from Sacramento, CA to LAX.
+assistant: When did you plan on leaving?
+user: I would like to leave on the 12th.
+tool(FindBus): ok n_results=3
+assistant: There is a bus leaving at 7:40 am for $43.
+user: Could you help me find something else? I'd like a direct bus.
+tool(FindBus): ok n_results=2
+assistant: I found 2 buses you might like. One bus leaves at 9:40 am for $48.
+user: Sure, that works. Could you help me find some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you. One attraction is Angels Flight Railway which is a Historical Landmark.
+user: Sounds great. Could you buy the ticket you just found?
+assistant: How many tickets did you need?
+user: I'd like 3 tickets.
+assistant: Please confirm you're booking 3 tickets on the bus leaving from Sacramento to Los Angeles on March 12th at 9:40 am and you don't have extra luggage.
+user: Yes, that sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked.
+user: Thank you for your help. Could you also help me find a 4 star hotel in the area?
+tool(SearchHotel): ok n_results=10
+assistant: I found a 4 star hotel called Beverly Hills Marriott.
+user: Does the hotel allow smoking?
+assistant: No, it is a non-smoking property.
+user: Did you find any other hotels that match my criteria? I'd like 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 4 star hotel called Crowne Plaza Los Angeles Airport.
+user: That works.
+assistant: Did you want to book the hotel?
+user: No, not right now.
+assistant: Did you need help with anything else?
+user: No, but thank you, you have been really helpful.
+assistant: Goodbye. Have a great day!

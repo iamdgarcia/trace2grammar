@@ -1,0 +1,14 @@
+user: Will you check the weather?
+assistant: Weather for which city?
+user: Chi-town on 14th of March please.
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 68 degrees Fahrenheit with a 24 percent chance of rain.
+user: What's the humdity?
+assistant: Humidity should be around 26 percent.
+user: What's the weather like in Phoenix on next Thursday?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 86 degrees Fahrenheit with 19 percent chance of rain.
+user: What's the humidity? How windy?
+assistant: Average wind speed is at 11 miles per hour with humidity at 36 percent.
+user: Great. That's all.
+assistant: Have a nice day.

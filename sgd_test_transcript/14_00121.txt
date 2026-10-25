@@ -1,0 +1,17 @@
+user: Can you search for some songs?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. How about A Ghost In The Trenches by Sabaton? It is from the album The Great War.
+user: Yes, that sounds like the one.
+assistant: Do you need help with anything else?
+user: Can you find me some good John Travolta movies online? Cult movies would be great, as well.
+tool(FindMovies): ok n_results=1
+assistant: How about Pulp Fiction?
+user: Pulp Fiction is perfect. Will you play that song that you found?
+assistant: Confirming that you want me to play the song A Ghost In The Trenches in the Living room?
+user: Yes, that's correct. Can you tell me what year the song came out?
+tool(PlayMedia): ok n_results=1
+assistant: The song is from the year 2019. Enjoy your music.
+user: Thank you!
+assistant: Anything else I can help you with?
+user: No. Thanks a lot!
+assistant: You're welcome. Have a good day.

@@ -1,0 +1,16 @@
+user: Hello, I would like to request a payment of one hundred and fifty seven dollars. The request will be made to Isabella.
+assistant: Okay, please confirm the following for me. You are making a transaction with Isabella for $157. Note that this transaction will be visible to the public.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Okay, your payment request has been made successfully.
+user: I would like to make another transaction. I need to make a payment.
+assistant: Okay, which account are you transferring from? What is the name of the other party?
+user: I am making this transaction with Peter. Please send 51 bucks from my checking account.
+assistant: No problem, just confirm the following for me. You are making a debit card transaction of $51 dollars to Peter. Please note that this transaction will be visible to the public.
+user: Yes, that is correct. Thanks.
+tool(MakePayment): ok n_results=1
+assistant: Okay, your payment was a success! The recipient should see their money soon.
+user: Alright, thanks alot!
+assistant: Anything else I can help you with today?
+user: No that's all. Thank's a lot, you've been a great help.
+assistant: My pleasure. Have a great day!

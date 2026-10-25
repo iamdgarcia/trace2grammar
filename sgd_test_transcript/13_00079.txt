@@ -1,0 +1,20 @@
+user: Can you find me some nice movies to watch?
+tool(FindMovies): ok n_results=10
+assistant: What do you think of A Faithful Man with an average rating of 78 out of 100?
+user: Can you find me the name of the director of this movie?
+assistant: Louis Garrel is the director of this movie.
+user: Are there any other movies directed by Ari Aster?
+tool(FindMovies): ok n_results=1
+assistant: What do you think of Midsommar with an average rating of 83 out of 100?
+user: Can you find me the name of the actor of this movie?
+assistant: William Jackson Harper is the actor of this movie.
+user: That sounds good to me. Can you find me some stage show around Chi-town on 2nd of this month?
+tool(FindEvents): ok n_results=10
+assistant: There is very popular show called Ada And The Engine taking place at The Artistic Home on March 2nd starting at 5 pm.
+user: This sounds good. But I am looking for musical shows.
+tool(FindEvents): ok n_results=6
+assistant: There is very popular show called Ashe taking place at Chop Shop on March 2nd starting at 6:30 pm.
+user: Can you find me the address and the price for one ticket for this event?
+assistant: The address of the venue is 2033 West North Avenue and the ticket is priced at $50.
+user: Okay. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,28 @@
+user: Hello, I am looking for some attractions to see.
+assistant: All right, where would you like me to look?
+user: I'd like something in NY.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 options I can tell you about. There is a museum I can recommend, which is the 9/11 Tribute Museum.
+user: That sounds interesting. I'm also going to need a vehicle rental. I'd like one I could pick up at 2 in the afternoon on March 4th, maybe a hatchback.
+assistant: Are you planning to pick it up in New York and when will you be returning the car?
+user: Yes, that's correct and I'll need it until the 11th.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 vehicles with availability. I have a car available at Grand Central Station, and it is a Kia Ceed hatchback.
+user: What is the price of that one?
+assistant: That rental is $25.00 for a day.
+user: What else do you have please?
+assistant: I also have a Peugeot 208 hatchback which will be available at JFK International Airport.
+user: I think that sounds good. I'd like to reserve that one.
+assistant: Shall I add insurance for you?
+user: No, thank you.
+assistant: Confirming a vehicle rental pick up at JFK International Airport on March 4th at 2 pm and a March 11th return. The vehicle is a hatchback and the rental will be with no insurance.
+user: Correct, thank you so much.
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle has been booked.
+user: Thanks again. Would you mind sharing the location of the 9/11 Tribute Museum with Natalie please?
+assistant: Confirming location sharing with Natalie of 9/11 Tribute Museum.
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thanks for all your help today.
+assistant: You're very welcome, thank you.

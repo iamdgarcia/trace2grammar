@@ -1,0 +1,17 @@
+user: I have plenty of time after my office hours, so i wish to watch a movie. will you find some movies online?
+assistant: what type of movies do you wish to watch?
+user: offbeat movies will be good to watch.
+tool(FindMovies): ok n_results=1
+assistant: what about once upon a time in hollywood?
+user: Once upon a time in Hollywood is great movie to watch.
+assistant: Whether i need to play that movie?
+user: yes i want to play that movie.
+assistant: Please check and review the following details. Playing Once upon a time in Hollywood with subtitles in English.
+user: Ok thats great. who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: Movie has been played successfully. the actor in that movie is Timothy Olyphant.
+user: THanks a lot. How's the weather over there in pleasant hill?
+tool(GetWeather): ok n_results=1
+assistant: the average temperature for the day should be 94 degrees fahrenheit. There is a 9 percent chance of rain.
+user: ok thats all i need. bye
+assistant: have a wonderful day

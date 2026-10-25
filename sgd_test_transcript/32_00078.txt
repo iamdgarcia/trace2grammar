@@ -1,0 +1,24 @@
+user: I would like to find songs. I heard Raees is good.
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 called Laila Main Laila by Pavni Pandey from Raees.
+user: Good, also a movie.
+assistant: What type of movie?
+user: A fantasy movie with Natalie Finland
+tool(FindMovies): ok n_results=1
+assistant: There is 1 called Labyrinth.
+user: OK, Labyrinth is good.
+assistant: Would you like to watch it now?
+user: No, thank you.
+assistant: Can I help with anything else?
+user: Can you play that song on any device?
+assistant: Confirming playing Laila Main Laila in the Living Room.
+user: Actually, play it is the kitchen.
+assistant: OK, confirming playing Laila Main Laila in the kitchen.
+user: What kind of music is it an is it from 2014?
+tool(PlayMedia): ok n_results=1
+assistant: It is a South Asia song from 2017.
+user: What alarms do I have?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 and one titled shuttle to work at 9:30 am.
+user: Ok, that's good.
+assistant: Thank you.

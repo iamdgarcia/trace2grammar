@@ -1,0 +1,21 @@
+user: Can you check the weather for me?
+assistant: Sure. For what city?
+user: For London, please.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be around 81 degrees Fahrenheit. There is a 23 percent chance of rain.
+user: How windy will it be?
+assistant: The average wind speed should be around 10 miles per hour.
+user: Okay. Can you find me a one-way flight there?
+assistant: Sure. What is your departure city? Will you be leaving on March 1st?
+user: Yes. I need flights from Los Angeles.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I found 3 flights. How about Delta Airlines? There is a 6:05 am departure with a layover. The ticket costs $403.
+user: Sounds good. I also need to find a rental car for the day after tomorrow. I want to pick it up at four in the evening. A Sedan would be nice.
+assistant: How long will you need the rental?
+user: Until Wednesday next week.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found a nice Sedan Audi A8. It is available at the Heathrow International Airport.
+user: Did you find anything else?
+assistant: There is also a nice Buick Regal Sportback available at Gatwick International Airport. It is a Sedan.
+user: Sounds good. That's all I need for now.
+assistant: Have a good day!

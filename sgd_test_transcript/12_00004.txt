@@ -1,0 +1,32 @@
+user: Can you get me some bus tickets?
+assistant: Where will you go, when will you leave and from where?
+user: I'm leaving Long Beach, CA on the 8th going to LAX.
+assistant: How many tickets may I get? Do you have a time for leaving?
+user: I need three tickets and want to leave at 8 pm.
+assistant: PLease confirm this: 3 tickets for the 8 pm bus on March 8th going from Long Beach to Los Angeles
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: I'm sorry, the purchase didn't work. How about a bus leaving at 7:50 pm? That's $12.
+user: Fine, pull the trigger on that.
+tool(BuyBusTicket): ok n_results=1
+assistant: You have the tickets.
+user: Thanks, next up rental car baby.
+assistant: What time will you pick up the car? When do you plan to return it? You're picking up from Los Angeles right?
+user: Yes, and I need it until the 14th of this month. I can be there to pick it up at twelve in the afternoon.
+assistant: Do you want it from March 8th?
+user: No thanks, I want from the 10th of March.
+tool(GetCarsAvailable): ok n_results=8
+assistant: You have 8 options. What about a nice SUV Dacia Duster? You can get that from LAX International Airport if you want?
+user: How much will that sucker run me?
+assistant: only $46.00 a day.
+user: Fine, rent it then.
+assistant: How about insurance?
+user: I don't need no stinkin' insurance.
+assistant: To be clear: Pick up rental car, SUV at 12 pm on March 10th at LAX International Airport and return it March 14th. No insurance for you.
+user: I was only doing an impression earlier, I do want insurance after all.
+assistant: Please confirm: Drop off date on SUV is March 14th and you will get insurance.
+user: you got it, thanks.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is all set now.
+user: Thanks a bunch and thanks for putting up with my silliness.
+assistant: Have a great trip.

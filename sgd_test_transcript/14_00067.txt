@@ -1,0 +1,19 @@
+user: I want to watch a Yuri Lowenthal movie.
+tool(FindMovies): ok n_results=1
+assistant: Paprika is a cool movie rated 84 / 100.
+user: What is the genre?
+assistant: Anime.
+user: Cool. I want to listen to some rock songs.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs like Be Somebody by Thousand Foot Krutch from the CD The End Is Where We Begin.
+user: Yes! That is it!
+assistant: Do you want to hear the song?
+user: Yes! Cast it on the living room speaker.
+assistant: Please confirm, playing Be Somebody in the Living room.
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your songs!
+user: Thanks!
+assistant: Anything else?
+user: No, that is all.
+assistant: Have a nice day.

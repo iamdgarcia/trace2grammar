@@ -1,0 +1,43 @@
+user: I am looking for conditionally refundable tickets in a train going from Anaheim, CA to Phoenix, AZ.
+assistant: What is the date of departure?
+user: I would like to depart on 4th of this month.
+tool(FindTrains): ok n_results=4
+assistant: I found 4 trains that might be suitable for you. How about a train departing at 6:30 am with the ticket cost of $122?
+user: Can you find me the names of the stations it arrives at and depart from?
+assistant: It departs from Anaheim Intermodal Center and arrives at Phoenix Union Station.
+user: Can you show me any other trains suitable to my requirements?
+assistant: How about a train departing at 6:40 am with the ticket cost of $123?
+user: Can you show me any other trains suitable to my requirements?
+assistant: How about a train departing at 12 pm with the ticket cost of $137?
+user: This train sounds good to me.
+assistant: Would you like me to book the tickets for you?
+user: No, I don't want to book the tickets now.
+assistant: Can I assist with anything else?
+user: Find me something interesting to do there.
+assistant: What type of events do you prefer?
+user: I mostly prefer Theater.
+tool(FindEvents): ok n_results=3
+assistant: How about a very popular show called Boondocks Improv taking place at Dearing Acting Studio on March 10th at 6:30 pm.
+user: This event sounds good. Are there any other available event?
+assistant: How about a very popular show called Chaos Comedy Improv Show taking place at Dearing Acting Studio on March 7th at 5 pm.
+user: Find me the address of the venue and the cost of one ticket?
+assistant: The address of the venue is 10806 north 32nd Street and the cost of one ticket is $20.
+user: It sounds good. But can you find me a musical performance event on the 11th?
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events you may like. How about a very popular event called Dreamers taking place at The Van Buren on March 11th at 7:30 pm?
+user: Okay, That sounds perfect. Please find me museum there.
+tool(FindAttractions): ok n_results=7
+assistant: I found 7 museum. How about Arizona Capitol Museum?
+user: Is this museum child friendly?
+assistant: Yes, This museum is child friendly.
+user: Can you check whether the fee for entrance is free?
+assistant: No, The entry is not free.
+user: Okay, cool. Find me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 nice houses. How about a house with 4.6 rating located at 10 East Thomas Road?
+user: Can you check whether this house has laundry service?
+assistant: Yes, laundry service is there inside the house.
+user: Find me the contact number of this house please.
+assistant: The contact number is +1 602-222-1111.
+user: Okay, This house sounds perfect. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

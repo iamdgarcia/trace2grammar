@@ -1,0 +1,23 @@
+user: I need to pay someone.
+assistant: From which account, to whom, and how much?
+user: I want to pay Mary eighty five bucks via MasterCard.
+assistant: Fine, here's what I heard: Pay Mary $85 from credit card?
+user: That's right, yes.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is in progress now.
+user: Thanks, how about a restaurant?
+assistant: What type food do you want?
+user: Fetch me something Thai.
+assistant: Which town do you prefer?
+user: South San Francisco.
+tool(FindRestaurants): ok n_results=2
+assistant: First up is Thai Satay Restaurant & Bar in South San Francisco.
+user: Yes, get me a table.
+assistant: What time do you want?
+user: 6:15 pm please.
+assistant: Fine, to confirm: 2 for 6:15 pm March 1st at Thai Satay Restaurant & Bar in South San Francisco.
+user: Fine, is it cheap?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You have your table and it has moderate pricing.
+user: Fine, thank you.
+assistant: Enjoy your meal.

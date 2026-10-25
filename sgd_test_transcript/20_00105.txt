@@ -1,0 +1,21 @@
+user: I need a 4.4 rated or higher house to stay in
+assistant: Where are you looking to stay?
+user: I need a spot in Phoenix
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses including this 4.4 rated house at 10 East Thomas Road you might like
+user: That looks great!
+assistant: Do you want to make a reservation for this then?
+user: Yes please, let's book it
+assistant: How many people are you staying with and when is your check in and out?
+user: I'll be with 2 people and will be there from the 2nd of March till March 6th
+assistant: Please confirm you want a stay for 2 from March 2nd to March 6th in Phoenix
+user: Yes that's good for me
+tool(BookHouse): ok n_results=1
+assistant: It's been booked
+user: Can you find me some attractions too then?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, I found 10 things including a museum called Arizona Capitol Museum
+user: Is this place child-friendly? And what's their phone number
+assistant: Yes it's kid friendly, and it's 602-926-3620
+user: OK that's good for now, thanks
+assistant: Sure, see you!

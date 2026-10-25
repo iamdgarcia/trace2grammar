@@ -1,0 +1,22 @@
+user: I am looking for a regular dramatic story movie in Healdsburg.
+tool(FindMovies): ok n_results=1
+assistant: Do you want to see Blinded by the Light?
+user: Blinded by the Light is a good movie. I would also like to eat at a restaurant there. I need a table for four at The Taste of Tea on the 4th of March.
+assistant: What time do you want the reservation?
+user: I want to eat at 1:30 pm.
+assistant: Please confirm you want to reserve a table for 4 people at The Taste of Tea in Healdsburg on March 4th at 1:30 pm.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=0
+assistant: I could not make that reservation. Do you need further assistance?
+user: Try again to make a reservation for next Friday.
+assistant: Please confirm you want to reserve a table for 4 people at the Taste of Tea in Healdsburg on March 8th at 1:30 pm.
+user: That is correct. What kind of restaurant is it?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It is a ramen restaurant and your reservation is successful.
+user: Thank you. What time is the movie showing on that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is one show at 8:30 pm at Raven Film Center.
+user: That is perfect.
+assistant: Do you want to purchase a ticket?
+user: Not at this time.
+assistant: See you soon!

@@ -1,0 +1,48 @@
+user: Can you please find a therapist for me? I want to look for a Family Counselor.
+assistant: What city do you want to look in?
+user: Look in Los Gatos.
+tool(FindProvider): ok n_results=5
+assistant: I found 5 therapists in Los Gatos, including Emily Rosenbaum, a Family Counselor.
+user: What is her phone number and address?
+assistant: The phone number is 408-641-7353. The address is 401 Alberto Way #1.
+user: OK, sounds good.
+assistant: Do you want to book an appointment with the therapist?
+user: Yes, can you book the appointment for me?
+assistant: What date and time do you prefer to make the appointment for?
+user: Find out if there is time available at 4:15 pm on the 6th of this month, thanks.
+assistant: You are booking an appointment with Emily Rosenbaum at 4:15 pm on March 6th, is this correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry, I was not able to book an appointment with Emily Rosenbaum at that time and date. There is an opening at 4:30 pm on March 6th.
+user: Yes, that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. An email confirmation should arrive soon.
+user: OK, thanks. I just remembered that I am supposed to request a payment.
+assistant: Sure, what is the amount, and who would you like to request it from?
+user: Please set up a transaction with Tom for $36.
+assistant: You are requesting a payment from Tom in the amount of $36, and the transaction is visible to the public, is this correct?
+user: Oh, is that who I said? No, I was thinking of an old request. This one is Yumi, and the amount is $106.
+assistant: You are setting up a transaction with Yumi in the amount of $106, is this correct?
+user: Please add that the transfer is private.
+assistant: You are creating a private transaction with Yumi, is this correct?
+user: Yes, I think we got it this time.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been sent successfully.
+user: OK, thanks. Now, please find me a Cambodian restaurant to eat at while I am in the city. I need one with vegetarian options.
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 restaurants like that, including Coup De Thai in Los Gatos.
+user: What are the customer reviews?
+assistant: The rating is around 4.3.
+user: OK, that will work. Can you book a table at that restaurant?
+assistant: What time would you like the reservation to be?
+user: I would like it to be at one in the afternoon.
+assistant: You would like to book a table for 2 at Coup De Thai in Los Gatos at 1 pm on March 6th, is this correct?
+user: No, it's a table for 3, and let me change that time to a quarter to 2 in the afternoon.
+assistant: You would like a reservation for 3 people at 1:45 pm, is that correct?
+user: Yes, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I'm sorry, I was not able to reserve a table at Coup De Thai at that time. Would you like to reserve a table for 3 at 1:30 pm on March 6th?
+user: No, we can't get there any earlier.
+assistant: Is there anything else I can help you with?
+user: No, that's ok, thank you very much.
+assistant: Have a great day!

@@ -1,0 +1,36 @@
+user: I'm bored and am looking for something to do.
+assistant: Alright, what type of activities do you prefer? For example, Music, Theater, or something different.
+user: I would like to see a play.
+assistant: What city would you like me to look in?
+user: Check for things in New York City please.
+tool(FindEvents): ok n_results=10
+assistant: Acting for Teens takes place on March 4th at 6 pm at 520 8th Ave. - Personal Valet Parking.
+user: That would be fun.
+assistant: Should I purchase a ticket for you?
+user: No, not right now.
+assistant: Is there something else I can do for you?
+user: Yes, can you look for a house there with a 4.6 or higher rating that has laundry service?
+tool(SearchHouse): ok n_results=10
+assistant: I found a house that is rated 4.6 and is located at 120 West 41st Street.
+user: What outher houses are available?
+assistant: Another house with a 4.6 rating that I found is located at 130 West 44th Street.
+user: That one sounds good.
+assistant: Would you like to reserve this house now?
+user: No, not yet. Can you look for a bus to get there?
+assistant: Sure, which city will you depart from? Will you be leaving on March 1st?
+user: Yes, that is the correct date and I will be traveling from Washington.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses available. The first leaves at 6:20 am and a ticket is $40.
+user: That would work great.
+assistant: Would you like to purchase a bus ticket?
+user: No, but I would like to buy a ticket for the event you mentioned now.
+assistant: Sure, how many tickets would you like to get?
+user: I need three tickets please.
+assistant: Please confirm you would like to purchase 3 tickets for Acting For Teens in New York on March 4th,
+user: Yes, that is correct. What is the price per ticket and what is the venue address?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets are $35 each and the event takes place at 520 8th Ave. - Personal Valet. Your tickets have been successfully reserved.
+user: Thanks so much for your assistance.
+assistant: You're welcome, do you need anything further?
+user: No, that's all. Thanks!
+assistant: Hope you have a wonderful day.

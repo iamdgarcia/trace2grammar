@@ -1,0 +1,32 @@
+user: Can you find me a house that has a garage that I can rent?
+assistant: In which area would you like to find the house? How many bedrooms and baths do you prefer?
+user: Find me one in Vacaville with two beds and two baths.
+tool(FindHomeByArea): ok n_results=3
+assistant: There are 3 nice houses based on your preferences. Meadowood Apartments located at 199 Aegean Way is a very good property available for $3000.
+user: Does it have laundry machines inside the property?
+assistant: Yes, it does have in-unit laundry.
+user: That sounds good to me.
+assistant: Shall I schedule a property visit for you?
+user: Yes, please schedule one foot Sunday this week.
+assistant: Please confirm that you want to schedule a property visit to Meadowood Apartments on March 3rd.
+user: Hold on. Can you make that March 10th?
+assistant: Sure. So you want to schedule a property visit to Meadowood Apartments on March 10th. Right?
+user: Yes, please go ahead. Can you get me their phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit has been scheduled successfully. Their phone number is 707-448-7056.
+user: Can you also share their address?
+assistant: With whom should I share the address?
+user: Send it to Jonathan.
+assistant: Please confirm that you want to share the location 199 Aegean Way with Jonathan.
+user: That's right.
+tool(ShareLocation): ok n_results=1
+assistant: Location has been successfully shared.
+user: Thank you for the assistance. Can you find me a cab to get there?
+assistant: Do you have any preferences for the type of ride and how many of you will be traveling?
+user: I just need a normal ride for one.
+assistant: Please confirm that you need a regular ride for 1 person to 199 Aegean Way.
+user: Yes, that's correct.
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and it's on its way.
+user: Thank you very much for all the help. That's all I need.
+assistant: Have a great day!

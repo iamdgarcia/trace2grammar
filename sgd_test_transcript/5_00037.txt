@@ -1,0 +1,14 @@
+user: I would like to see all of the alarms that I have set as of this time.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 active alarms at this time. One alarm is titled Wake up and it is set for 7:30 am
+user: And can you tell me if there are additional alarms?
+assistant: You also have an alarm titled Workout that is set for 8:30 am
+user: Excellent. Can you please add a new alarm for 4:45 in the evening and label it Music practice?
+assistant: Okay, you would like to add a new alarm for 4:45 pm with the name Music practice, correct?
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: that alarm has been created.
+user: Great. Thanks so much!
+assistant: Do you need my assistance with anything further?
+user: No, that was all for me. Thanks!
+assistant: Have a nice day.

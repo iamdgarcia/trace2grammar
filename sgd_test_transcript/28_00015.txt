@@ -1,0 +1,23 @@
+user: I'm trying to find a movie to watch, something with Peter Strickland as the director that stars Gavin Brocker. I'd like a movie in the ghost genre.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 film to suggest. Would you like to watch the movie In Fabric, which is rated 96 out of 100?
+user: That works. I'm also looking for a restaurant please, something in Milpitas that has halal food and I don't care about the price range.
+tool(FindRestaurants): ok n_results=1
+assistant: I have 1 restaurant in Milpitas to recommend. Perhaps you would enjoy Darda Seafood.
+user: Do you know if they have patio dining?
+assistant: No, I'm sorry, they don't.
+user: That's okay, no problem.
+assistant: Would you like to make a reservation?
+user: I would, thanks. I'd like a table for two on the 9th of March.
+assistant: At what time?
+user: At 12 o'clock in the afternoon.
+assistant: Confirming a reservation for 2 at Darda Seafood in Milpitas on March 9th at 12 PM.
+user: Perfect, thanks. Could you tell me what rating the restaurant has?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Yes, they are rated 4.2 and the reservation is complete.
+user: I'd like the address please and I'm also wondering if they have vegetarian dishes.
+assistant: Yes, they have vegetarian options and the address of the restaurant is 296 Barber Court.
+user: Thanks a lot.
+assistant: Is there anything else I can help you with?
+user: I'm good to go, thank you.
+assistant: Thank you very much.

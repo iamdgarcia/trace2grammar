@@ -1,0 +1,18 @@
+user: Hi, could you help me find some nice Action movies to watch please?
+assistant: Where are you located at?
+user: A show in Danville will be great.
+tool(FindMovies): ok n_results=1
+assistant: There are 1 available movie, would you like to watch Saaho?
+user: Saaho sounds great! Could you get me the tickets please?
+assistant: When will you be watching it?
+user: Likely at 6:30 pm.
+assistant: And which date will that be on and how many tickets will you need?
+user: Four tickets for later today please.
+assistant: Any preference on the type of show?
+user: An IMAX show will be great!
+assistant: Please confirm your reservation for 4 for an IMAX viewing of Saaho in Danville on March 1st at 6:30 pm.
+user: That sounds great! Which theater will that be at?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your reservation for your show at Century Blackhawk Plaza has been made.
+user: Sure, that is all I need. Thank you!
+assistant: Have a pleasant day ahead!

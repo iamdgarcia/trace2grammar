@@ -1,0 +1,32 @@
+user: I need to find a hotel to stay at while I'm out of town.
+assistant: Okay. In which city will you be staying at?
+user: Find me a hotel in LAX.
+tool(SearchHotel): ok n_results=10
+assistant: I've found 10 hotels that match your criteria. There is a nice 3 star hotel called Ac Hotel By Marriott Beverly Hills that you may like.
+user: That sounds great to me.
+assistant: Do you need anything else?
+user: I would like to find a round trip flight to get there.
+assistant: What would you like your departure city to be? Also would you like to leave on March 2nd?
+user: Yes I would like to leave on March 2nd from Chi-town. I prefer American Airlines for the airline company.
+assistant: Oh what day would you like the return flight to be?
+user: I would like to return on the 9th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I've found 1 flight that matches your criteria. It is an American Airlines flight. The departure flight leaves at 12:50 pm and the returning flight leaves at 5:15 am. The ticket price is $265.
+user: When will the flight arrive at the destination?
+assistant: The onward flight is expected to arrive around 3:22 pm.
+user: That sounds like it would work. Can you reserve me the hotel you found earlier?
+assistant: Would you like to check in on March 2nd?
+user: Eh, I'd like to check in on this Sunday.
+assistant: How long would you like to stay?
+user: For seven days.
+assistant: Please confirm the following: You would to book 1 room at Ac Hotel By Marriott Beverly Hills in Los Angeles starting on March 3rd for 7 days.
+user: Yes that is correct. I confirm. Can you tel me what their phone number is and if smoking is allowed?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel room was booked without issue. Smoking is not allowed on their property and their phone number is +1 323-852-7000.
+user: Great. Thank you for your help. What kind of attractions are going on there?
+tool(FindAttractions): ok n_results=10
+assistant: You're welcome. I've found at least 10 attractions that could interest you. You should check out Angels Flight Railway which is a Historical Landmark.
+user: Great, I will.
+assistant: Is there anything else I could help you with?
+user: No, that will be all. Thanks again.
+assistant: You're welcome. Good bye.

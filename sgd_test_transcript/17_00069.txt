@@ -1,0 +1,18 @@
+user: I need 1 train ticket to travel from SD to Phoenix.
+assistant: When are you traveling?
+user: I want to go on the 11th of March.
+tool(FindTrains): ok n_results=5
+assistant: There are 5 trains including one departing at 11:20 am with an $86 ticket.
+user: Which stations does it depart from and arrive to?
+assistant: The train leaves from Santa Fe Depot and arrives at Phoenix Union Station.
+user: That is perfect.
+assistant: Do you want to book the ticket?
+user: Not at this time.
+assistant: May I further assist you?
+user: I need a place to stay.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses including a 4.6 rated house at 10 East Thomas Road.
+user: That is good.
+assistant: Do you want to reserve it?
+user: Not at this time.
+assistant: See you soon!

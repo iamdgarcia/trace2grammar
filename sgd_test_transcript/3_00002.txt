@@ -1,0 +1,16 @@
+user: Can you help me find a one way flight please
+assistant: Where are you headed and on what day?
+user: I wanna fly out to Las Vegas on the 12th please
+assistant: Sure, and where are you coming from?
+user: I'll be departing from Portland, OR
+tool(SearchOnewayFlight): ok n_results=4
+assistant: OK, I found 4 flights that might work for you including this Alaska Airlines flight that leaves at 10:05 am for $187
+user: Can I get three tickets for that?
+assistant: No it's only for 1 person
+user: Then find me something else that can accommodate three tickets
+tool(SearchOnewayFlight): ok n_results=3
+assistant: I found 3 flights with available seats including an American Airlines 9:35 am flight for $193
+user: That sounds great then
+assistant: Can I do something else for you
+user: Right now we're ok, thanks
+assistant: Take care and update me

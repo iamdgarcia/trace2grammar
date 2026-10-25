@@ -1,0 +1,29 @@
+user: Help me make a payment to Emma.
+assistant: Which account would you like me to use and how much is the payment?
+user: Use my saving account and it's $116.
+assistant: I'll send Emma $116 from your debit card. This will be a public transaction. Is everything correct?
+user: Yes, that's correct.
+tool(MakePayment): ok n_results=1
+assistant: I've payed Emma successfully. They will have the money shortly.
+user: Thanks so much. I also need help finding a restaurant.
+assistant: What kind of cuisine are you interested in?
+user: I can go for burgers.
+assistant: Is there a location you had in mind?
+user: Look for places in Los Gatos.
+tool(FindRestaurants): ok n_results=2
+assistant: In Los Gatos there's Chicago Steak & Fish which is nice.
+user: Can you give me their phone number and the user rating they have.
+assistant: You can call them at 408-354-8858 and they have a 3.6 user rating.
+user: Okay, that seems good.
+assistant: Do you want to reserve a table?
+user: Yes, please reserve me a table for 4 for Saturday this week at quarter past 12 in the afternoon.
+assistant: I'll reserve you a table for 4 at Chicago Steak & Fish at Los Gatos on March 2nd at 12:15 pm. Do you want to confirm?
+user: No, I actually want it for seven in the evening and just a table for 1.
+assistant: I'll reserve you a table for 1 at 7 pm. Is that correct?
+user: And I also want it for Wednesday next week.
+assistant: I'll reserve you a table for 1 on March 6th, is that correct?
+user: Yeah, that's correct now. Are there vegetarian items there? And is it an ultra high-end place?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I've reserved your table. There are no vegetarian items. And it's a moderate restaurant.
+user: Thanks a lot. I don't need anything else.
+assistant: Have an excellent day.

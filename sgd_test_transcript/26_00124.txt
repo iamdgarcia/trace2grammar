@@ -1,0 +1,34 @@
+user: I need a train from SF.
+assistant: When will you be leaving?
+user: I want Flexible tickets on the 9th please.
+assistant: Which city will you go to?
+user: Sacramento, CA is my destination.
+tool(FindTrains): ok n_results=9
+assistant: How about a 6:10 am train that costs $69?
+user: Are there any other trains from Los Angeles for 1.
+tool(FindTrains): ok n_results=5
+assistant: There are 5 trains, how about the $109 at 9:20 am?
+user: Which station does it leave from? Which does it arrive at?
+assistant: The train leaves from Union Station and arrives to Sacramento Valley Station.
+user: Sounds good, I also need something interesting to do.
+assistant: What type of event? Perhaps Music or Theater?
+user: I would like a musical performance.
+tool(FindEvents): ok n_results=6
+assistant: Aftershock Festival at Discovery Park on March 5th at 5:30 pm is a popular event.
+user: How much are tickets?
+assistant: One costs $20.
+user: Could you find some other events?
+assistant: Aftershock Music Festival at Discovery Park on March 5th at 4 pm is a popular event.
+user: Can you find something on March 10th please?
+tool(FindEvents): ok n_results=4
+assistant: I found 4 events. One is Popa Chubby which takes place at the Sofia Tsakopoulos Center for the Arts on March 10th at 6:30 pm.
+user: How much are tickets?
+assistant: The ticket is $40 and it's going to be at 2700 Capitol Avenue.
+user: Sounds good, can you find child friendly attractions?
+tool(FindAttractions): ok n_results=6
+assistant: There are 6. How about the museum called Crocker Art Museum?
+user: Great, I also need a house to rent for 1 that has laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is a nice house at 100 Capitol Mall and is rated 4.4.
+user: Great that is all I need.
+assistant: You are welcome, goodbye.

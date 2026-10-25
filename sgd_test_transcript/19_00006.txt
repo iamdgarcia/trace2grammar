@@ -1,0 +1,33 @@
+user: I'd like to find a place to eat.
+assistant: Where did you want me to look in?
+user: I'd like to find something in San Mateo.
+assistant: What type of food were you trying to find?
+user: I'd like to find a Burger place.
+tool(FindRestaurants): ok n_results=4
+assistant: I found 4 restaurants for you. One nice place is Central Park Bistro in San Mateo.
+user: Did you have any other recommendations?
+assistant: I also found Poplar Creek Grill. It is a nice place located in San Mateo.
+user: Does this restaurant have outdoor seating?
+assistant: Yes, they do.
+user: What is the price range?
+assistant: It is a pricey restaurant.
+user: Did you have any other recommendations?
+assistant: Porterhouse is also a nice restaurant in San Mateo.
+user: Yes, that sounds good. I'm trying to book a table for three at a restaurant.
+assistant: What time would you like to book it?
+user: I'd like it at seven in the evening.
+assistant: Please confirm you're booking a table for 3 at Porterhouse in San Mateo on March 1st at 7 pm.
+user: Yes, that is correct. Where is it located?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking has been made. It is at 60 East 3rd Avenue.
+user: Thank you very much. Could you also help me find a cab there?
+assistant: Did you have a preference for the type of ride?
+user: I'd like a Shared ride.
+assistant: Please confirm you're booking a Pool ride for 3 to 60 East 3rd Avenue.
+user: Yes, that is correct. How much will the ride be and when will it get here?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked. It will be $28.35 and it should be herre in 9 minutes.
+user: Thank you for your help.
+assistant: Did you need help with anything else?
+user: No, but thanks again.
+assistant: Have a great day.

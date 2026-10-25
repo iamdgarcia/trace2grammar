@@ -1,0 +1,26 @@
+user: I need weather in Valley Ford on the 12th of March.
+tool(GetWeather): ok n_results=1
+assistant: The average temp is set to be 92 degrees Fahrenheit and there is an 11 percent chance of rain.
+user: Okay, I also need to schedule a visit to the property Macara Gardens Apartments for that day.
+assistant: So schedule a visit to Macara Gardens Apartments on March 12th?
+user: Yes, indeed correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thanks and I also need to reserve a car until the 13th of March okay?
+assistant: Which brand of vehicle would you like?
+user: I'm fine with anything, but a sedan is preferred.
+assistant: Where would you like to pick up the vehicle? Is it needed from MARCH 12th? At what time?
+user: I need it from the 11th. Toronto Pearson Airport is a convenient place for pick up at 13:45.
+assistant: Would you like to add insurance?
+user: No, thank you.
+assistant: So pick up the vehicle from Toronto Pearson International Airport on March 11th. The time of pickup is 1:45 PM and the drop-off date is March 13th, for a Sedan.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Sorry, but your reservation has failed. Is there anything else?
+user: Can you try it again? SFO Airport is fine too for pick up at 2:45 PM. I am fine with a Hatchback.
+assistant: So pick up the vehicle from SFO International Airport on March 11th, at 2:45 PM, and the drop-off date is March 13th. A Hatchback is nice.
+user: Yes, that is good. How much is it?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has now been reserved, for $31.00 per day.
+user: Thanks for that. That is what I needed.
+assistant: Of course. Enjoy.

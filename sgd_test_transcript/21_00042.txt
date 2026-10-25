@@ -1,0 +1,15 @@
+user: I'd like to look for some songs now.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs. One song is Adrenalize by In this Moment from the album Blood.
+user: That's the one. How is the weather?
+assistant: Which city did you want to look in?
+user: I'd like to know the weather in Graton.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is looking like 76 degrees F with a 25 % chance of rain.
+user: That sounds right. Could you play the song you just found?
+assistant: Please confirm you're playing Adrenalize in the Living room.
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: Thank you, that's all I need for now.
+assistant: Have a great day.

@@ -1,0 +1,17 @@
+user: Hi, could you help me search for a hotel please?
+assistant: Any preferred city of location?
+user: Something in Kuala Lumpur will be great.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels in that area, how about Alila Bangsar, a 5 star hotel?
+user: Are there any alternative three star hotel with one room?
+tool(SearchHotel): ok n_results=10
+assistant: Sure, there are 10 hotels which you may like, how about a 3 star hotel called Alpha Genesis Hotel?
+user: Sure, could you make a reservation on the 4th of March please?
+assistant: And how long will you be staying for?
+user: Most likely for 4 days.
+assistant: Sure, please confirm your reservation for 1 room at Alpha Genesis Hotel in Kuala Lumpur for 4 days from March 4th.
+user: Sure, may I have their street address and nightly cost please?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made. They are located at 45, Tengkat Tong Shin, Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan and this will set you back $162 each night.
+user: I see, thanks so much for your help. That is all I need.
+assistant: No worries, have a great day ahead!

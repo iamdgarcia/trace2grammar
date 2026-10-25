@@ -1,0 +1,33 @@
+user: I need a rental car in Philly at 09:30 and I need it till the 9th
+assistant: When do you want to start renting it?
+user: I need it Sunday this week
+tool(GetCarsAvailable): ok n_results=6
+assistant: There are 6 cars that work including a Hatchback Mazda 3 available at PHL International Airport
+user: How much is that daily?
+assistant: It's $31.00 a day
+user: Do you have another option
+assistant: Also at PHL International Airport is a Hatchback SEAT Leon
+user: How much is that a day?
+assistant: It's $27.00 a day
+user: That sounds good, now help me find event tickets out there
+assistant: What kind of event?
+user: I heard that Newton Faulkner is a great show to catch
+assistant: What date and how many tickets?
+user: I want three tickets for today if possible
+assistant: OK, and in what city?
+user: I want something in London please
+assistant: Confirming you want 3 tickets to see Newton Faulkner on March 1st in London?
+user: Yes that's absolutely right
+tool(BuyEventTickets): ok n_results=1
+assistant: It's been booked, have a good time!
+user: Can we also book that car you found
+assistant: Sure, do you want insurance
+user: No thanks, that's all
+assistant: Confirming you want that hatchback car from PHL International Airport at March 3rd 9:30 am and drop off on March 9th
+user: Yes that is perfect
+tool(ReserveCar): ok n_results=1
+assistant: It's been reserved
+user: Thanks for all the help
+assistant: What else can I help with?
+user: Nothing else for now
+assistant: OK then, take care!

@@ -1,0 +1,29 @@
+user: I want to search for a Hotel to stay for a while and I need your help to find the same.
+assistant: Where do you want to find the hotel, Do you like any particular place to stay?
+user: Yes, find something suitable in London.
+tool(SearchHotel): ok n_results=10
+assistant: What about the one located at 45 Park Lane which is a 5 star hotel? Is it convenient for you to stay in this hotel?
+user: I have to think and decide. In the meantime let me know their contact number for my reference. Does they allow smoking there?
+assistant: They do not allow smoking and you can contact them at any time by the phone number +44 20 7493 4545.
+user: It looks okay to me.
+assistant: Do you want me to reserve rooms at this hotel now or you want me to done it later.
+user: Not now, will be later.
+assistant: How can I help you further?
+user: I want to visit some nice places and I need your help to find the attractive one.
+tool(FindAttractions): ok n_results=10
+assistant: Do you prefer a Historical Landmark? If it is okay for you then you can try to visit 30 St Mary Axe (The Gherkin).
+user: Yes, I like the Historical places and this is okay to me.
+assistant: What else you want from me?
+user: I think now you can book the rooms at the hotel that I have selected before.
+assistant: What is your check-in date?
+user: Book it from 6th of March.
+assistant: How many days you want to stay there or what is your checkout date?
+user: I need to book it for 4 days and 1 room is enough to me.
+assistant: Please confirm to book 1 room for 4 days in a hotel at 45 Park Lane from March 6th in London.
+user: That is okay to proceed. You can go ahead.
+tool(ReserveHotel): ok n_results=1
+assistant: Your rooms are booked successfully.
+user: Thank you for the same.
+assistant: Anything else you want me to do?
+user: Nothing for now and that's all for today.
+assistant: Have a good day.

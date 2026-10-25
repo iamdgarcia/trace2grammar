@@ -1,0 +1,31 @@
+user: I need help to amuse myself
+assistant: I can make you feel better if you just tell me where do you want me to look for some fun activity and what you're into, music, theater or whatever
+user: you could look around the ny area for stage show
+tool(FindEvents): ok n_results=10
+assistant: you're in luck, I got 10 for you! acting for teens is the best and it will happen at 520 8th ave. - personal valet parking on march 4th from 6 pm
+user: seems amusing
+assistant: Can I buy the tickets?
+user: no
+assistant: what can I do then?
+user: you can look for a house where I can stay while there
+tool(SearchHouse): ok n_results=10
+assistant: I've found a nice place to stay at 100 greenwich street and the rating is 4.4
+user: check if laundry servicy is available
+assistant: You got it!
+user: how wonderful, the only thing I need now is a bus ride for 2 to reach the place. I'll leave on the 5th
+assistant: what's your departure city?
+user: it's washington
+tool(FindBus): ok n_results=7
+assistant: you have 7 rides, one leaves at 6:20 am and it costs $38
+user: tell me both of the stations, departure and destination.
+assistant: the first is silver spring bus stop and the second is penn station
+user: look for another solution. I'll leave on march 3rd and I prefer a direct bus
+tool(FindBus): ok n_results=6
+assistant: you have 6 solutions, one of them leaves at 12:10 pm and costs $32
+user: seems valid. buy the tickets for the event you mentioned earlier
+assistant: confirm the process before it's final: you want 2 tickets for acting for teens happening on march 4th in new york
+user: positive
+tool(BuyEventTickets): ok n_results=1
+assistant: you own the tickets to see the show now
+user: I feel better already, bye
+assistant: glad I could have been of some service to you

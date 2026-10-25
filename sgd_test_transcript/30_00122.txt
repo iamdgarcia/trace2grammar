@@ -1,0 +1,38 @@
+user: can you find me a unisex salon?
+assistant: where should i look?
+user: can you look in petaluma?
+tool(FindProvider): ok n_results=7
+assistant: there's 7 i found for you. how about dukes and dolls salon in petaluma?
+user: are there any others?
+assistant: there's also modern classics barber shop in petaluma.
+user: where's that at?
+assistant: it's located on 410 petaluma boulevard south.
+user: what kind of ratings does it have and what's their number?
+assistant: they have a 5.0 rating and you can reach them at 707-364-6469.
+user: can you find me another?
+assistant: there's also salon method in petaluma.
+user: that one sounds good.
+assistant: do you want me to book an appointment?
+user: not at the moment.
+assistant: is there something else?
+user: can you find me a movie to watch at boulevard cinema?
+tool(FindMovies): ok n_results=5
+assistant: there's blinded by the light, scary stories to tell in the dark, and the angry birds movie 2.
+user: scary stories works for me.
+assistant: is there anything else i can assist with?
+user: what time is the movie showing?
+assistant: are you looking for a showing on march 3rd?
+user: yes that's correct.
+tool(GetTimesForMovie): ok n_results=1
+assistant: there's 1 showtime that day at boulevard 14 cinema at 5 pm.
+user: okay that works. can you book me an appointment at the salon you mentioned earlier?
+assistant: what time?
+user: can you make it for 11 am?
+assistant: so you want an appointment at salon method on march 3rd at 11 am?
+user: yes. where are they located and what's their rating?
+tool(BookAppointment): ok n_results=1
+assistant: they're located on 145 1st street and they have a 4.7 rating. your appointment is booked.
+user: thanks so much.
+assistant: is there anything else?
+user: no that's it.
+assistant: have a great day.

@@ -1,0 +1,40 @@
+user: Can you find me a therapist please
+assistant: Sure, in what city?
+user: Can you find me one in Santa Clara
+assistant: Sure. Do you need a Family Counselor or Psychiatrist?
+user: I need a Family Counselor in Walnut Creek
+tool(FindProvider): ok n_results=4
+assistant: I found 4 in Walnut creek including Family Counselor Andreotti Daniel
+user: Great, can you book me a 14:15 appointment on the 10th of this month?
+assistant: Confirming your March 10th appointment with Andreotti Daniel at 2:15 pm yes?
+user: Yes please, thank you
+tool(BookAppointment): ok n_results=1
+assistant: Sorry I couldn't book that time with Andreotti Daniel, do you want to try for March 10th at 2:30 pm?
+user: Yes please do that
+tool(BookAppointment): ok n_results=1
+assistant: That one worked, it's booked and you'll get an email soon
+user: What's their address and phone number?
+assistant: They're at 45 Quail Court # 200 and it's 925-930-9650
+user: Thanks so much, now help me request a payment please
+assistant: What's the amount and from who?
+user: Request $17 from Jerry please
+assistant: Confirming your public request for $17 from Jerry
+user: Yes that's right
+tool(RequestPayment): ok n_results=1
+assistant: It's been made for you
+user: I want to find a restaurant now with vegetarian options
+assistant: What kind of cuisine?
+user: Find me some Asian cuisine
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 in Walnut Creek including Bombay Indian Restaurant
+user: What's their address
+assistant: They're at 1512 North Main Street
+user: OK cool, book me a table for 3 in the morning 11:45 am
+assistant: Confirming an 11:45 am table for 3 on March 10th at Bombay Indian Restaurant in Walnut Creek yes?
+user: Yes please, also is there outdoor seating there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: No they don't, and I couldn't book that time. Do you want me to try to book a table for 3 on March 10th att 11:30 am still at Bombay Indian Restaurant
+user: No that's ok thanks
+assistant: What else can I do
+user: Nothing else for now, thank you
+assistant: You are welcome

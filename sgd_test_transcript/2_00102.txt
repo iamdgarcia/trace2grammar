@@ -1,0 +1,11 @@
+user: I need a one way flight, please.
+assistant: On which date would you like to travel on?
+user: I want to leave like on March 14th.
+assistant: From which city would you like to depart from?
+user: I need flights from Las Vegas on that day.
+assistant: What is your desired destination?
+user: I need two Economy tickets to the city of Sydney, Australia, please.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There are 3 flights matching your description. One is with American Airlines, and the flight is to take off at 7:35 AM. This is a connecting flight. The ticket price is $299. Okay?
+user: Alright then, thanks for now.
+assistant: Of course. Enjoy your day.

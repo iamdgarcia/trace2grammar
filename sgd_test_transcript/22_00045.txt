@@ -1,0 +1,47 @@
+user: I want to find some interesting events to spend my free time there. Can you search for the one on 10th of this month and I need the same around New York City?
+assistant: Yes, What type of events that you are looking for? Is there any favorite kine of events like Music Or Theater or anything else?
+user: yes, find me something like Broadway.
+tool(FindEvents): ok n_results=10
+assistant: Okay. I got 10 results and what about the event named Advanced Acting Scene Study will be taking place at TGW Acting Studio on March 10th at 4:30 pm?
+user: That's okay. Let me know the ticket cost and venue address for my reference.
+assistant: This event will takes place at 358 West 44th street and the cost per ticket will be $20.
+user: Its okay and thanks.
+assistant: Shall I book the tickets to this event now?
+user: No, I will ask it later.
+assistant: That's okay. What else you want from me to do now?
+user: I need a bus to go there. Search for the suitable one.
+assistant: Okay, let me know some more details. From which place you need to take a bus?
+user: Search for the one from Philly.
+assistant: Okay, shall I search it for the leaving date from March 10th?
+user: No, please note that I will leave on the 5th and book it for one person.
+tool(FindBus): ok n_results=6
+assistant: I have a bus detail which is departing time at 9 am and the cost is $23. Do you like to book seats in this bus?
+user: No, please search for some other buses.
+assistant: What about the one which is departing at 10:10 am for the ticket cost $23?
+user: I need a direct bus.
+assistant: This is also a direct bus.
+user: What about the origin and destination stations?
+assistant: Origin station name is 10th and Filbert and this bus will reach finally to Penn Station.
+user: I want to find some other bues.
+assistant: What about another bus will leave at 12:30 pm for the ticket cost $22?
+user: That's nice I think. thanks. Now I want to find a round trip flight to go there and I need this flight from later today. Returning date is 14th of March. You can book tickets in any class.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Got 4 flights. Do you feel comfortable to fly with American Airlines? I found an onward flight which will take off at 1:20 pm and the return flight will take off at 11:20 am for the ticket cost $95. Shall I book this flight?
+user: Let me know the arrival time of onward and return flights.
+assistant: The onward flight arrives at 2:11 pm and return flight time is 12:11 pm.
+user: Search for something else.
+assistant: What about an onward flight from Delta Airlines which will take off at 3 pm and it is a direct flight. The return flight time is at 12:20 pm and the total ticket cost will be $153?
+user: That is nice and thanks. Now, please search for some nice hotels in that area.
+tool(SearchHotel): ok n_results=10
+assistant: What about the one at 1 Hotel Brooklyn Bridge with 5 stars which is the best one among the 10 results I got?
+user: That's great.
+assistant: Shall I book rooms in this hotel?
+user: No, not now. May be later. Now, I want to book the tickets to the event that I have selected before.
+assistant: I need your confirmation to book 1 ticket to the event Advanced Acting Scene Study on for March 10th in New York.
+user: Yes, correct to proceed.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have booked the tickets successfully.
+user: Thanks for your help.
+assistant: What else you want from me?
+user: No, that's all for now.
+assistant: have a good day.

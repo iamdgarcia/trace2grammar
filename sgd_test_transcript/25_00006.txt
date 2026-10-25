@@ -1,0 +1,17 @@
+user: I need your help in making a payment to margaret for 18 bucks from my jcb
+assistant: confirm the next procedure. you want to send $18 to margaret from your credit card. I need to inform you that the transaction will be public.
+user: I confirm, let's proceed.
+tool(MakePayment): ok n_results=1
+assistant: payment has been done
+user: good, now I want a restaurant
+assistant: okay, where should it be, what kind of food do you wish to eat?
+user: I'm in the mood for italian food, the area should be san rafael
+tool(FindRestaurants): ok n_results=4
+assistant: I can list you 4 option but the best one in san rafael is gaspare's pizzeria ristorante
+user: I like the place, book me a table on the 4th at one in the afternoon
+assistant: Yes, just tell me if my date are alright for you. you want a table for 2 on march 4th at 1 pm at gaspare's pizzeria ristorante in san rafael
+user: everything is alright
+tool(ReserveRestaurant): ok n_results=1
+assistant: the table is yours
+user: that's great, bye for now
+assistant: enjoy the rest of your day

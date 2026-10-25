@@ -1,0 +1,28 @@
+user: I need you to buy me some tickets to Los Angeles on the 7th.
+assistant: Okay. From where and at what time would you like to leave?
+user: I would like to leave in the morning 6:15 from Long Beach, CA if possible.
+assistant: How many tickets will you need?
+user: Just the one.
+assistant: You would like me to purchase 1 ticket for a bus from Long Beach to Los Angeles on March 7th at 6:15 am. You do not have extra luggage. Is this all correct?
+user: Yes that is all correct, go for it. Can you also tell me the name of the bus station that it will arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus will arrive at North Hollywood Station. I'm sorry to inform you though, but the purchase failed due to unexpected errors. How about a bus departing at 6:20 am? The cost will be $12.
+user: That's fine, just do it.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been purchased.
+user: Great. Think you can also find me some hotels in the area as well?
+tool(SearchHotel): ok n_results=10
+assistant: Sure. How about the 3 star hotel Ac Hotel By Marriott Beverly Hills?
+user: Okay yea, good to know, that will work for me.
+assistant: Would you like to reserve a room at the hotel?
+user: Yes, that would be best I think.
+assistant: How long would you like to stay for and when would you like to check in?
+user: I'll need to stay there for three days starting on Wednesday next week.
+assistant: You would like to book 1 room for 3 days starting on March 6th at the Ac Hotel By Marriott Beverly Hills in Los Angeles. Is that correct?
+user: Ye, that is correct. Can you also tell me if smoking is allowed i the hotel?
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel room has been booked. I'm sorry to inform you that smoking is not allowed on the property.
+user: Okay. Thank you for help.
+assistant: You are most welcome. Will that be all?
+user: For now, yes. I'll let you know if I need anything else.
+assistant: Okay. Goodbye then.

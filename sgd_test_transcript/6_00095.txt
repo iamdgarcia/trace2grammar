@@ -1,0 +1,26 @@
+user: I'm thinking about finding a salon in Berkeley
+tool(FindProvider): ok n_results=10
+assistant: You can pick among 10 choices. What do you say about aya salon & spa in berkeley?
+user: can you tell me if it is unisex?
+assistant: it is not.
+user: look for a different one then, try antioch
+tool(FindProvider): ok n_results=3
+assistant: I've found 3 options. I can suggest you himc barber studio in antioch
+user: cool, tell me the phone number and the rating.
+assistant: rating is 4.0 and the phone number is 925-238-0059
+user: this one is okay, make me a reservation there on march 2nd at two in the afternoon
+assistant: confirm before I proceed. I'm going to book an appointment at himc barber studio on march 2nd at 2 pm
+user: yup
+tool(BookAppointment): ok n_results=0
+assistant: booking the appointment was not possible. ask me something else.
+user: try a different time, 11:45 am is still fine with me
+assistant: confirm the new data. you want to visit the himc barber studio on march 2nd at 11:45 am
+user: wrong, I want to be there next monday
+assistant: confirm the new acquired data. you want to pay a visit to himc barber studio on march 4th
+user: it's fine now
+tool(BookAppointment): ok n_results=1
+assistant: I made sure you got the appointment as you've asked.
+user: great!
+assistant: do you still need me?
+user: No, you can leave now.
+assistant: goodbye sir

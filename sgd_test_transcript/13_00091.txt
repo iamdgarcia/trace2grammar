@@ -1,0 +1,14 @@
+user: I wish to search a Dramatic story movie which is directed by Alex Kendrick and acted by Aryn Wright-Thompson.
+tool(FindMovies): ok n_results=1
+assistant: I searched and found 1 movie for you. What is your opinion about Overcomer with the rating of 46 for 100.
+user: It is good.
+assistant: Do you need any other help?
+user: I am looking for something interesting around Seattle, WA.
+assistant: What type of events do you prefer?
+user: I prefer Stage show.
+tool(FindEvents): ok n_results=10
+assistant: I searched and found 10 events for you. The event Beatleconcert is at 12th Avenue Arts on March 10th at 5 pm.
+user: It is nice.
+assistant: Shall I book tickets?
+user: Nope. I don't need it right now. That is what I want.
+assistant: Have a nice day.

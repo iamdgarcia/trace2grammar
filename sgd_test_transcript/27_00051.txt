@@ -1,0 +1,25 @@
+user: Can you please find me some free attractions to visit in SF?
+tool(FindAttractions): ok n_results=10
+assistant: There's Alcatraz, an amazing Historical Landmark that you should'n miss!
+user: Do you have a number where I can reach them?
+assistant: Sure, it's 415-561-4900.
+user: Could you recommend other attractions, preferably child-friendly?
+tool(FindAttractions): ok n_results=9
+assistant: Sure! I found 9 attractions that I think you'll enjoy, out of which I recommend a fantastic Nature Preserve, the Aquarium of the Bay.
+user: Perfect. Now let's find me a Mysterious movie to watch in the area, in a regular show.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies matching your criteria - Luce and Official Secrets.
+user: I'd prefer Luce. Do you know if any good movies are online?
+assistant: What type of movie do you prefer?
+user: I'd go for a Family movie.
+tool(FindMovies): ok n_results=2
+assistant: May I recommend Steel Magnolias and The Farewell?
+user: Steel Magnolias is supposed to be awesome. Please play it for me, without subtitles.
+assistant: Can you please confirm that you want me to play Steel Magnolias with English subtitles.
+user: On second thought, better make the subtitles Spanish.
+assistant: Can you please confirm that you want me to play Steel Magnolias with Spanish subtitles?
+user: Yes, please do.
+tool(PlayMovie): ok n_results=1
+assistant: I've started playing the movie. Enjoy!
+user: Thank you. That will be all for now.
+assistant: My pleasure. Have a nice day!

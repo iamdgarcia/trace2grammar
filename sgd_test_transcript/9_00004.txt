@@ -1,0 +1,28 @@
+user: I need a train.
+assistant: Which cities will you leave and go to? What date will you travel?
+user: I'm headed to Sacramento, Ca to San Diego on the 7th of this month.
+tool(FindTrains): ok n_results=9
+assistant: You can go at 6:10 am for $148.
+user: What station is it from?
+assistant: It departs from Santa Fe Depot.
+user: Aren't there later trains? I need two seats.
+tool(FindTrains): ok n_results=8
+assistant: There are 8 others. Next departing would be 6:40 am for $274.
+user: Which station does it depart from?
+assistant: It also leaves from Santa Fe Depot.
+user: Can't you get something later. I'm heading from Anaheim, CA.
+tool(FindTrains): ok n_results=10
+assistant: There are 10 trains from there, starting as early as 6:50 am. The cost is $233.
+user: That's perfect.
+assistant: Shall I book your tickets now?
+user: Yes, lets make it.
+assistant: How about some travel insurance for you today?
+user: Yes, give me trip insurance.
+assistant: To confirm: 2 tickets for train leaving Anaheim going to Sacramento on March 7th at 6:50 am. You are getting a value ticket with trip insurance.
+user: It's fine, thanks.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are all set.
+user: You really are the cat's meow.
+assistant: Is something else needed?
+user: No, absolutely not.
+assistant: Have a great trip.

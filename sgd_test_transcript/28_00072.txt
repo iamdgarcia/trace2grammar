@@ -1,0 +1,41 @@
+user: I want to search for some attractive places and I need your help to find a good one to visit.
+assistant: Is there any particular City in your mind to search for the attractions?
+user: Yes, search for the one in Berlin.
+tool(FindAttractions): ok n_results=10
+assistant: I got 10 places which are interesting to you. What about the one like Alte Nationalgalerie which is a Museum. Do you like to visit a Museum?
+user: Yes, that is okay for me. Can you help me to find a Car to go there. I prefer a Sedan model car and I need to pickup it in Berlin at the time twelve in the afternoon.
+assistant: Let me know the final date of your visit to book the car until that date.
+user: Book it till 9th of this month.
+assistant: At which place you want to pick up the Car?
+user: book it for the pick up at 8th of March.
+tool(GetCarsAvailable): ok n_results=6
+assistant: How about a Sedan Buick Regal Sportback model car available for pickup at Schoenefeld Airport?
+user: Get me the cost details to decide.
+assistant: It is $32.00 per one day.
+user: Okay, search for something else to book on Monday next week and any type of car is okay for me.
+tool(GetCarsAvailable): ok n_results=9
+assistant: How about a car in SUV Citroen C5 model for the pickup at Schoenefeld Airport which is the best car I think from the 9 results that I got for you.
+user: As usual let me know the cost per day.
+assistant: It is $41.00.
+user: That is great. Thanks.
+assistant: What else you want to do now?
+user: I want to book this car for rent.
+assistant: Shall I include insurance to this booking?
+user: No, don't include it.
+assistant: Okay. Please confirm finally to book a SUV model Car for the pick up at Schoenefeld Airport from March 4th at 12 pm to March 9th without insurance.
+user: That is confirmed to proceed now.
+tool(ReserveCar): ok n_results=1
+assistant: I have booked the car successfully.
+user: Thanks and please share the location.
+assistant: To whom you want to share it?
+user: Share it to William.
+assistant: Which address whether it is Schoenefeld Airport or Alte Nationalgalerie?
+user: Share the address Alte Nationalgalerie.
+assistant: Please confirm to share the address Alte Nationalgalerie to William.
+user: Yes, please proceed.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location as per your wish.
+user: Thank you so much.
+assistant: Anything else you need?
+user: No, thanks and that's all.
+assistant: Have a good day.

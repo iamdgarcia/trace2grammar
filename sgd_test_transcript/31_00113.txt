@@ -1,0 +1,23 @@
+user: I would like to find a therapist.
+assistant: What city shall I look in? Are you looking for a Psychiatrist, a Family Counselor or some other kind of therapist?
+user: Look for a Psychiatrist in Walnut Creek.
+tool(FindProvider): ok n_results=3
+assistant: I found 3 that meet your criteria. There's Churchill Pat who is a Psychiatrist in Walnut Creek.
+user: What are some of the others?
+assistant: There's O'Grady David, who is also a Psychiatrist in Walnut Creek.
+user: He sounds good.
+assistant: Would you like me to schedule an appointment?
+user: Yes please. See if you can get me an appointment for about 2 in the afternoon on the 13th of this month.
+assistant: To confirm: You would like an appointment with O'Grady David, March 13th at 2 pm.
+user: That's right. What is the address?
+tool(BookAppointment): ok n_results=1
+assistant: It's 1600 South Main Street. Your appointment is made and you should receive a confirmation email soon.
+user: What's the phone number?
+assistant: It's 925-938-6786
+user: Great, thanks. Can you recommend a movie to watch?
+tool(FindMovies): ok n_results=10
+assistant: Close Encounters of the Third Kind has a 95 our of 100 rating.
+user: What kind of movie is it?
+assistant: It's a Sci-fi.
+user: That sounds good. That's all I need for now.
+assistant: Have a wonderful day.

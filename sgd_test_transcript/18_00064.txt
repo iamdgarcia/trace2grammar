@@ -1,0 +1,25 @@
+user: I'd like a hotel.
+assistant: Which city are you looking in?
+user: I'm trying to find one in NY.
+tool(SearchHotel): ok n_results=10
+assistant: Okay, there are 10 hotels that may suit you. There is a 5 star hotel called 1 Hotel Brooklyn Bridge, does that work?
+user: Are there any others?
+assistant: Sure, there is a 5 star hotel called 1 Hotel Central Park.
+user: Is smoking allowed?
+assistant: Yes, smoking is allowed.
+user: Sure, that sounds good. How will the weather be there on Thursday next week?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for that day will be 65 degrees Fahrenheit with a 15 percent chance of rain.
+user: Oh okay, great.
+assistant: Is there anything else I can help with?
+user: I'd like to reserve 2 rooms for six days at the hotel you found.
+assistant: Will you be checking in on March 7th?
+user: I'd like to check in on the 4th.
+assistant: Okay, just to confirm, you'd like to book 2 rooms for 6 days starting March 4th at the 1 Hotel Central Park in New York, is that correct?
+user: Yes, that is correct. How much is it per night? And where is it located?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made, it will cost $270 per night at 1414 6th Avenue.
+user: Thank you, you've helped a lot.
+assistant: Is there anything else I can assist you with?
+user: No, thank you.
+assistant: Have a wonderful day.

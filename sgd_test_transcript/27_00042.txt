@@ -1,0 +1,31 @@
+user: Will you show me some attractions to visit?
+assistant: Where should I look for attractions in?
+user: I'd like something without a fee for entry at a historical spot in Paris.
+tool(FindAttractions): ok n_results=5
+assistant: You can check out the Catacombs of Paris a Historical Landmark.
+user: Cool, what other attractions can you think of? Can you find attractions in SFO?
+tool(FindAttractions): ok n_results=3
+assistant: You can check out Alcatraz a Historical Landmark.
+user: Would you say it's a child-friendly place and what is the phone number?
+assistant: Yes, the place is pretty nice to take kids to and the phone number is 415-561-4900.
+user: Okay that is great. I'd like to watch a movie around there.
+tool(FindMovies): ok n_results=10
+assistant: What about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Fiddler: A Miracle of Miracles is great.
+assistant: Do you wish to buy tickets?
+user: No, I don't want to buy tickets now.
+assistant: Can I assist you with anything else?
+user: Would there be some good movies online?
+assistant: What type of movies do you like?
+user: Movies of song would be great.
+tool(FindMovies): ok n_results=1
+assistant: There's 1 movie you might like. What do you think about Echo in the Canyon?
+user: Echo in the Canyon is nice. I would like to watch the movie now with English subtitles.
+assistant: Please confirm details for to play Echo in the Canyon with subtitles in English.
+user: Yes, please do so. Who acted in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: It started playing the movie and Roger McGuinn acted in it.
+user: Thanks so much.
+assistant: What else can I assist you with?
+user: No thanks so much.
+assistant: Have a nice day.

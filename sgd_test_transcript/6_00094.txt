@@ -1,0 +1,26 @@
+user: Hello, I would like to find a salon, please.
+assistant: What city would you like to search in?
+user: Please search in Mill Valley.
+tool(FindProvider): ok n_results=7
+assistant: I found 7 salons. Ap Luxe Salon is located in Mill Valley.
+user: What other salons are in the city?
+assistant: D&O Salon is another option in Mill Valley.
+user: What is the average rating of that salon?
+assistant: The average rating is 4.4 for that salon.
+user: What is the address where the salon is located? Is it a unisex salon?
+assistant: The salon is at 800 Redwood Highway #220. Yes, it is a unisex salon.
+user: How about another one?
+assistant: Edward'S Salon is also in Mill Valley.
+user: That sounds good, I would like to book an appointment at that salon, please.
+assistant: Sure, what date and time would you like the appointment to be?
+user: Please make the appointment for 3 in the afternoon on the 10th of this month.
+assistant: You would like to make an appointment at Edward'S Salon at 3 pm on March 10th, is that correct?
+user: No, I changed my mind. Please make it at a quarter past 5 in the evening on the 4th of March.
+assistant: You would like the appointment at 5:15 pm on March 4th, is that correct?
+user: Yes, that's right. What is the address and phone number for the salon?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. The salon is located at 655 Redwood Highway #140, and its phone number is 415-381-1950.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, that is all, thank you.
+assistant: Have a great day!

@@ -1,0 +1,22 @@
+user: I want to spend my free time with some interesting events. Can you help me to search for the good one to do?
+assistant: Of-course. What is your favorite type of events and in which City you want me to search for the same?
+user: Find me the one like Musical performance and I want the same in NYC.
+tool(FindEvents): ok n_results=10
+assistant: Got 10 results. What do you think about an event like Abbi Jacobson will be held at Kaufmann Concert Hall on March 11th at 7:30 pm?
+user: That is great and I like the same. Find me a house to stay for a while and it should have the rating at 3.8 or higher. There are 2 persons are going to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: Searched for houses based on your requirements and got 10 results. What about the one at 100 Greenwich Street with rating 3.8?
+user: This is the one need and I want to go there. My present location is Philadelphia and I want to search for a bus from here.
+assistant: When do you plan to leave from your current location. Is it March 11th?
+user: No, I may leave on 5th of March. Search for a bus on that date.
+tool(FindBus): ok n_results=6
+assistant: What about your choice of travelling through a bus which is going to leave at 9 am under ticket cost $23?
+user: I think, this will work for me. Thanks.
+assistant: How can I assist you further?
+user: Now, we are going back to the event that you have found for me. Please book one ticket to that event.
+assistant: Okay, please confirm to book 1 ticket to the event Abbi Jacobson on March 11th in New York.
+user: Confirmed to proceed. Get me the details of venue address and ticket cost for my reference.
+tool(BuyEventTickets): ok n_results=1
+assistant: Venue is situated at 1395 Lexington avenue and ticket cost will be $60. Your tickets are booked.
+user: Thank you so much for your help.
+assistant: Have a nice day.

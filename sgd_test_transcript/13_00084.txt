@@ -1,0 +1,14 @@
+user: Wanting to watch a movie, what can you recommend?
+tool(FindMovies): ok n_results=10
+assistant: There are 10 movies you may be interested in, how about Tel Aviv on Fire, it has a rating of 92 out of 100?
+user: The movie that you found, what genre is it classified as?
+assistant: The movie is considered a world movie.
+user: That movie sounds good, can you find something to do on the 7th of March, like a Stage show?
+assistant: Which city should I look for events?
+user: Search for events in New York City, and actually search for musical shows on March 9th.
+tool(FindEvents): ok n_results=10
+assistant: Playing on March 9th at 7:30 pm at Sony Hall, can I recommend Alpha Blondy?
+user: Sounds great, thanks for finding this event.
+assistant: Would you like to buy tickets for this event?
+user: Not at the moment, I got all what I needed.
+assistant: Understood, have a great day.

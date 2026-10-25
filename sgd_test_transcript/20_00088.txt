@@ -1,0 +1,23 @@
+user: I would like to find a home to stay in.
+assistant: Where would you like me to look?
+user: A place in London is what I am looking for.
+tool(SearchHouse): ok n_results=10
+assistant: I found a home. It is rated 4.3. The home can be found at 1 Addington Street.
+user: You found a real good one. I would like to reserve the home.
+assistant: During what time frame are you looking to reserve the home?
+user: Next Thursday is the day I would like to check out of the home.
+assistant: When would you like to start the reservation? Is it just you staying in the home or are there others?
+user: Only one person, me. I would like to begin my visit March 6th.
+assistant: I understand you would like to start the home rental March 6th and leave March 7th. The home is in London and only for 1 person. Is that right?
+user: That is absolutely right. Does the location have a phone number that I can reach them at?
+tool(BookHouse): ok n_results=1
+assistant: I was able to book the home for you. You can contact the location by calling +44 20 8371 6060.
+user: Your help is appreciated. Are you able to find a child-friendly attraction. A performing Arts Venue would be really great.
+tool(FindAttractions): ok n_results=10
+assistant: I think you will like a Performing Arts Venue called the Barbican Centre.
+user: Does the center have a contact number for customers?
+assistant: Yes. You can reach them at 20 7638 8891.
+user: Nice. Thank you very much.
+assistant: What else may I assist you with?
+user: I'm fine right now but thanks.
+assistant: Have a wonderful day.

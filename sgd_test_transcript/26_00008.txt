@@ -1,0 +1,29 @@
+user: Can you look for round trip flights to SFO for me?
+assistant: What is the city of departure and when do you plan to return?
+user: I am looking for flights from Atlanta, GA. I need to travel back on the 14th
+assistant: And what date would you be starting the journey?
+user: I want to start on March 2nd
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Is American airlines flight fine for you? There's a direct flight that leaves at 3:45 pm with a return flight at 9:20 pm. The cost is $318
+user: Great. I also need a house with laundry service for one person above 3.5 rating
+tool(SearchHouse): ok n_results=10
+assistant: I have a 3.5 rated house for you at 1095 market street
+user: sounds interesting. Get me its contact number
+assistant: it is +1 415-829-0000
+user: How about some houses rated 4.5 or higher
+tool(SearchHouse): ok n_results=3
+assistant: there is a 4.5 rated house at 138 king street
+user: that sounds great
+assistant: Should I make a booking for you there?
+user: Sure, I would like to check out on the 10th
+assistant: okay. Would the check in date be march 2nd?
+user: No, it is 3rd of this month
+assistant: Sure, confirm the details please. Booking a place in san francisco for 1 from march 3rd to march 10th
+user: Cool. how much does it cost? I need the contact number as well.
+tool(BookHouse): ok n_results=1
+assistant: Booking confirmed. The price is $182 and their phone number is +1 415-834-1000
+user: Thanks, I need to find attractions like a historical spot there. Something child friendly and free.
+tool(FindAttractions): ok n_results=2
+assistant: I found 2 places for you. How about Alcatraz, a historical landmark?
+user: Sounds good. That would be all. Thanks!
+assistant: 1My pleasure. Enjoy your trip

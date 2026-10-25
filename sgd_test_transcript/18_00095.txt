@@ -1,0 +1,25 @@
+user: I need to do hotel search
+assistant: Which is your preferred city for hotel?
+user: I want hotels in Kuala Lumpur with 1 room.
+tool(SearchHotel): ok n_results=10
+assistant: I have selected 10 hotels of your choice. One among them is Alila Bangsar with 5 star rating.
+user: Do you know any other hotels of my choice?
+assistant: What about the hotel called Aloft Kuala Lumpur Sentral with 4 star rating?
+user: Can i know the street address? What about the cost per night?
+assistant: The address is No. 5, Jalan Stesen Sentral, 50470 Kuala Lumpur, Wilayah Persekutuan with cost $88 per night.
+user: This is cool.
+assistant: Can i book this hotel?
+user: No, not now..will see later..What about the weather there on next tuesday?
+tool(GetWeather): ok n_results=1
+assistant: The average day temperature is running at 100 degrees Fahrenheit and the chances of rain is 5 percent
+user: Fine..now i like to book the hotel you found for me..I like to check in on 3rd of march.
+assistant: Till what date you are staying there?
+user: Book the hotel for three days.
+assistant: Please give confirmation details: Booking the hotel Aloft Kuala Lumpur Sentral for march 3rd for 3 days with 1 room which located in Kuala Lumpur.
+user: Okay..this is great.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel booking is over.
+user: Thanks for your help.
+assistant: Any other help you want?
+user: No, thanks for your help.
+assistant: Bye..have a nice day.

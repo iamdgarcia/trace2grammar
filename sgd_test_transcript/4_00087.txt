@@ -1,0 +1,9 @@
+user: I want you to look for a bus for me, and I do not mind if it is a direct bus or not.
+assistant: Can you tell me your destination?
+user: I want to arrive to LAX.
+assistant: Could you please tell me the time when you plan to leave and from where you will leave from?
+user: I will be leaving from Long Beach on 3rd of this month.
+tool(FindBus): ok n_results=10
+assistant: There are 10 buses which you might consider. How would you like having the bus which departs at 6 am, and the ticket of which costs $11?
+user: That is nice. That would be all.
+assistant: Have a good time!

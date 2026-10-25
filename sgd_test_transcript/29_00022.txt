@@ -1,0 +1,24 @@
+user: I want a hotel in KL.
+tool(SearchHotel): ok n_results=10
+assistant: Alila Bangsar is a 5 star hotel.
+user: I need a round trip flight to get there. I'll need 2 tickets. I'm coming back on the 12th of this month.
+assistant: So you're leaving on March 10th?
+user: Yes I am.
+assistant: Where are you leaving from?
+user: I'm leaving from SFO.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Is American Airlines okay? The flight takes off at 4 am and has a layover. The returning flight comes at 5:30 am. It costs $625.
+user: When will the returning flight arrive?
+assistant: It will arrive at 4:25 pm.
+user: When will the flight be at my destination? Is it a premium economy ticket?
+assistant: The onward flight will be there at 4:07 pm. It's an economy class seat.
+user: I'd like a reservation at the hotel for the 10th of this month. I'm staying for 2 days.
+assistant: A 1 room reservation at Alila Bangsar in Kuala Lumpur on March 10th for 2 days. Is this right?
+user: Yes. Is there smoking allowed? What's their number?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been booked. Smoking is not allowed. Their number is +60 3-2268 3888.
+user: Thank you. What are some attractions there. I want a museum. I need something child-friendly.
+tool(FindAttractions): ok n_results=4
+assistant: The National Art Gallery is a museum there.
+user: Sounds good. That's all for now.
+assistant: Enjoy it.

@@ -1,0 +1,18 @@
+user: I am planning to travel to SF and for which I need your help to search for a bus. Can you do it for me?
+assistant: Yes. What is your planned leaving date to search for the bus?
+user: I am planning to leave on the 3rd and I need the bus from this date.
+assistant: Let me also know the place where you want to leave from.
+user: I need the bus from LAX.
+tool(FindBus): ok n_results=10
+assistant: I got a bus which is leaving at 6:40 am for which the cost will be $51. Do you like to travel through this bus?
+user: Yes, I want to book the tickets in this bus and I need only one ticket. Please book it for me.
+assistant: Please confirm to book 1 ticket without extra luggage on a bus leaving from Los Angeles on March 3rd at 6:40 am to San Francisco.
+user: That is confirmed and you can proceed with booking now. I want to know the final station of this bus.
+tool(BuyBusTicket): ok n_results=1
+assistant: It will arrive at Transbay Terminal station and your tickets are confirmed.
+user: May I also know the origin station?
+assistant: Yes, it departs from North Hollywood Station. Was that information useful to you?
+user: Yes, thanks for the same.
+assistant: How can I assist you further?
+user: No, thanks and that's all for now.
+assistant: Have a good day.

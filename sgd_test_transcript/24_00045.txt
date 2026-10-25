@@ -1,0 +1,26 @@
+user: I have to get a flight. I want to get out of Chi-town on Economy with Delta Airlines.
+assistant: When do you want to go and what is your destination?
+user: I need to get to Washington Friday next week please.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Do you want Delta Airlines on the 6:45 pm for $99?
+user: Can you see what a train would cost me Next Tuesday, two seats, but I want fully refundable ones.
+tool(FindTrains): ok n_results=6
+assistant: What about the train leaving at 6:20 am, for $249?
+user: What about other trains?
+assistant: Well, you could take the 11:50 am for just $224.
+user: What is the terminating station there?
+assistant: You're going to Union Station.
+user: What about a different, more luxurious train?
+tool(FindTrains): ok n_results=6
+assistant: Well, you could take the 12:50 pm, it costs $278.
+user: What station does this end up at? What station will I depart from?
+assistant: You're going from Chicago Union Station and going to Union Station.
+user: Sounds fine, Get me train tickets with insurance please.
+assistant: Can you confirm the detail on this: 2 tickets Business class from Chicago to Washington on March 5th at 12:50 pm, with insurance.
+user: That works great.
+tool(GetTrainTickets): ok n_results=1
+assistant: You're tickets are all set.
+user: You were really the best at this.
+assistant: What more would you like?
+user: Nothing, I'm good.
+assistant: Have a great train trip.

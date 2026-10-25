@@ -1,0 +1,30 @@
+user: Will you show me some attractions to visit. I prefer a child-friendly attraction in Chicago.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like including 360 CHICAGO a tourist attraction.
+user: Okay that is good. Will you find me a rental car there. I need it from the 11th and a sedan would be nice.
+assistant: What time do you wish to pick up the car and would you like it picked up from Chicago. When do you want the car until?
+user: That sounds good and I'll need it until the 14th of this month picking it up at 13:30.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There's a good Sedan Dodge Charger car available at O'Hare International Airport.
+user: What is the daily cost?
+assistant: The daily cost is $39.00 per day.
+user: That sounds nice.
+assistant: Would you like to book the car?
+user: Yes, I'd like to rent a car.
+assistant: Would you like to add insurance?
+user: I don't need any insurance.
+assistant: Please confirm details that you are picking up the car from O'Hare International Airport on March 11th at 1:30 pm and dropping off March 14th a Sedan car that doesn't come with insurance.
+user: Yes, that sounds nice.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved.
+user: Thanks for helping. Can you share the location?
+assistant: What address do you wish to share? Would you share 360 CHICAGO O'Hare International Airport or something else?
+user: I want to share it with Timothy the address 360 CHICAGO.
+assistant: Please confirm details for the location 360 CHICAGO with Timothy.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Thanks that is pretty helpful.
+assistant: Would there be something else I can help with?
+user: No thanks that is pretty helpful.
+assistant: Have a good day.

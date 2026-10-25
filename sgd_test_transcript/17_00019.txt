@@ -1,0 +1,26 @@
+user: Can you help me search for a hairdresser to get my hair trimmed?
+assistant: In what location would you like to find a salon?
+user: I'd love a place in Palo Alto
+tool(FindProvider): ok n_results=10
+assistant: There's a great place in Palo Alto called 18/8 Fine Men'S Salons - Palo Alto.
+user: That seems like it would work, Can you possibly share the location for it?
+assistant: The exact location is 855 El Camino Real Building #1 Suite #3. With whom should I share this address?
+user: Perfect. I would like it sent to Joyce.
+assistant: Sure. So you would like the address 855 El Camino Real Building #1 Suite #3 shared with Joyce, correct?
+user: That works great
+tool(ShareLocation): ok n_results=1
+assistant: That address has been shared as requested
+user: Now I'd like to review my alarms
+tool(GetAlarms): ok n_results=4
+assistant: You currently have an alarm called Workout that is set for 8:30 am
+user: Sounds good. Thanks!
+assistant: Are you looking to create a new alarm?
+user: Sure, I'd like to create a new one.
+assistant: And for what time would you like to make this alarm?
+user: I'd like it to be set for 4:15 pm, please
+assistant: Okay then, you want to create an additional alarm with the title New alarm and the time set for 4:15 pm, right?
+user: That sounds perfect
+tool(AddAlarm): ok n_results=1
+assistant: Your new alarm has been created
+user: Great. Thanks a lot for your help!
+assistant: Have a nice day!

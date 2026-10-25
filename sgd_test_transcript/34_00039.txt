@@ -1,0 +1,19 @@
+user: Can you search nice hotels for me?
+assistant: Which is your preferred city for the hotel?
+user: I would like a booking in a 4 -star hotel located in Sydney, NSW.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels suitable to your choices. How about a 4 star hotel called 28 Hotel Sydney?
+user: That Hotel sounds good to me. Can you show me some child-friendly wildlife spot there?
+tool(FindAttractions): ok n_results=2
+assistant: I found 2 attractions according to your interest. I would like you to suggest a nice Nature preserve called Featherdale Wildlife Park.
+user: Okay, That sounds perfect. Please continue with booking the hotel you found.
+assistant: What will be the duration of your stay?
+user: I would like to reserve it for two days.
+assistant: what will be the date of check in?
+user: I will be checking in on Saturday this week.
+assistant: Please confirm: You want me to reserve 1 room in 28 Hotel Sydney located in Sydney for 2 days and your check in date is March 2nd.
+user: Yes, That is correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I have successfully reserve the hotel.
+user: Okay. That will be all for now. Thank you!
+assistant: I am glad I could help you. Bye and have a nice day!

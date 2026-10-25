@@ -1,0 +1,36 @@
+user: I am looking to purchase two tickets for a round trip flight from the 4th of March till Friday next week.
+assistant: Sure thing. What is your destination?
+user: I am traveling to Phoenix.
+assistant: What city are you departing from?
+user: I need to find a flight out of Chicago.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Okay, I've found 1 flight for you. There is a flight with Delta Airlines with an onward flight taking off at 4:10 pm and a return flight at 6:15 pm. The tickets will be $439.
+user: Are these Business class tickets?
+assistant: No, this ticket price is for Economy class seating.
+user: Oh, ok. What time will the second flight return home?
+assistant: Your returning flight will arrive at it's destination at approximately 3:57 am.
+user: Okay, that sounds good. Can you also do a search for a house in the area for me.
+tool(SearchHouse): ok n_results=10
+assistant: I've found a nice house rated at 4.6 stars. It is located at 10 East Thomas Road.
+user: What's their number?
+assistant: Their number is +1 602-222-1111.
+user: Okay thanks. Any other houses available in the area?
+assistant: There is another house located at 10601 North 56th Street, Scottsdale, Arizona 85254, United States. They are rated at an average of 4.3.
+user: Okay, that house sounds good to me. Let's go ahead and make a reservation.
+assistant: Will you be staying from March 8th until March 4th? How many people will be in your group?
+user: Yea that sounds good. Make a reservation for just 1 person, I want to check in on Thursday next week please.
+assistant: Okay, please confirm. booking a stay for 1 person in the house in Phoenix from March 7th to March 8th. Correct?
+user: Yeah, that's right. Can you tell me if they offer laundry service?
+tool(BookHouse): ok n_results=1
+assistant: Yes, they do offer laundry service. Your reservation has been completed.
+user: Okay, thanks for the help. Do you know of any good attractions in the area? I'd prefer something without an entry fee.
+tool(FindAttractions): ok n_results=7
+assistant: Okay, I've found 7 attractions you may enjoy. How about the Arizona Science Center? It is a very popular Museum in the area.
+user: That sounds cool, but can you find anything else in the area?
+assistant: How about the Dream City Church * Phoenix? It's a pretty popular Place of Worship in the area.
+user: Sounds cool. What's their number? Is this a child-friendly place?
+assistant: Yeah this is an excellent place to take children to. Their number is 602-867-7117.
+user: Okay, thanks.
+assistant: Anything else I can help you with today?
+user: No, thanks for the help.
+assistant: My pleasure. Enjoy!

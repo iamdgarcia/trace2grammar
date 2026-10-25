@@ -1,0 +1,20 @@
+user: Will you find movies online?
+assistant: What genre?
+user: Comedy featuring Emma Nelson.
+tool(FindMovies): ok n_results=1
+assistant: Found Where'd You Go, Bernadette.
+user: Anything else? Horror movies starring Dean Norris?
+tool(FindMovies): ok n_results=1
+assistant: Found Scary Stories to Tell in the Dark.
+user: Scary Stories to Tell in the Dark is awesome. Play it with English subtitles.
+assistant: Confirm playing of Scary Stories to Tell in the Dark with English subtitles.
+user: Cool.
+tool(PlayMovie): ok n_results=1
+assistant: Movie is playing.
+user: What's the weather in Benicia on 2nd of March?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 92 degrees Fahrenheit with a 5 percent chance of rain.
+user: Great.
+assistant: Anything else?
+user: That's all.
+assistant: Enjoy.

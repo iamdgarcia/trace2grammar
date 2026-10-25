@@ -1,0 +1,27 @@
+user: I need to find a therapist that is a Psychologist in San Jose please!
+tool(FindProvider): ok n_results=10
+assistant: I found 10 therapists in San Jose. One is a Psychologist at Barskyex Bryna G.
+user: Great! Can you set an appointment for me please?
+assistant: What time would you like your appointment for?
+user: I would like it to be 14:00.
+assistant: And for what date?
+user: I would like it for the 13th of March.
+assistant: Please confirm you would like an appointment with Barskyex Bryna G on March 13th at 2 pm.
+user: Yes, that will work, can you give me their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: I have booked your appointment and you will receive an email confirmation soon. Their phone number is 408-363-4418.
+user: Can you give me their address too?
+assistant: Yes, their address is 5755 Cottle Road # 4.
+user: Thank you! I appreciate it. Can you recommend any movies to watch?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies. One of them is This Is Not Berlin and has an average rating of 86 out of 100.
+user: Are there any others?
+assistant: There is Labyrinth with a rating of 70 out of 100.
+user: How about any others?
+assistant: There is Give Me Liberty with an average rating of 92 out of 100.
+user: Can you tell me the director of the movie and the genre?
+assistant: It is a Comedy-drama and is directed by Kirill Mikhanovsky.
+user: That sounds perfect!
+assistant: Is there anything else I can assist you with?
+user: No but thank you for all your help!
+assistant: I enjoyed helping you!

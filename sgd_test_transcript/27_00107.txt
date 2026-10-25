@@ -1,0 +1,32 @@
+user: I want to board a bus. Help me out.
+assistant: What place are you departing?
+user: I will leave Long Beach.
+assistant: What date do you leave and what is your destination?
+user: I am in a group of 4. I am leaving to Fresno, CA on the 14th.
+tool(FindBus): ok n_results=5
+assistant: Would you like the bus that leaves at 8:10 am and it will cost about $35.
+user: That will work for me.
+assistant: Shall I get you the tickets?
+user: Not at the moment. I will let you know later.
+assistant: Shall I do anything else for you?
+user: I want to explore some attractions there.
+tool(FindAttractions): ok n_results=5
+assistant: I suggest you see the Blackbeard's Family Entertainment which is a Theme Park.
+user: Fine, are there any other attractions though?
+assistant: How would you like the Christmas Tree Lane. It is a Tourist Attraction.
+user: Get me their phone digits and check out if there is an entrance fee for this attraction?
+assistant: They will charge an entry fee and you can call them at 559-348-9200.
+user: OK, can you suggest some other attractions?
+assistant: I think you will like the Forestiere Underground Gardens. It is known to be a Historical Landmark.
+user: Fantastic. Now could you get me those tickets for the bus you found earlier?
+assistant: So do you confirm that you want tickets to the bus leaving on March 14th at 8:10 am from Long Beach to Fresno? You will be a total of 4 people and you have no extra luggage. Is that right?
+user: Yeah that is all right.
+tool(BuyBusTicket): ok n_results=1
+assistant: I have your ticket confirmed.
+user: Thanks very much. I will need hotels in that locale too.
+tool(SearchHotel): ok n_results=4
+assistant: How about the Doubletree By Hilton Hotel Fresno Convention Center which is a 3 star hotel?
+user: That will work.
+assistant: Shall i make a hotel reservation?
+user: I wouldn't want to reserve it now. That will be all.
+assistant: Thanks. Have a nice day!

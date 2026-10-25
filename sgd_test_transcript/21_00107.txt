@@ -1,0 +1,48 @@
+user: I am looking for something interesting to do?
+assistant: Which city would you like for me to search?
+user: Something around London, UK would be good.
+assistant: Which type of events do you prefer?
+user: Is there any Show?
+tool(FindEvents): ok n_results=10
+assistant: There is a very popular show called A Right Royale Tea that is taking place at Amba Hotel Charing Cross on March 14th at 7 pm.
+user: That sounds good, are there any other events?
+assistant: There is a popular one called A Taste For Murder that is on March 12th at 4:30 pm at Wanstead Library.
+user: Can you give me the location of the venue?
+assistant: It is at Spratt Hall Road.
+user: Great! Are there any events on March 7th in Seattle, WA?
+tool(FindEvents): ok n_results=10
+assistant: There is one called Beatleconcert that is very popular and is happening on March 7th at 6:30 pm at 12th Avenue Arts.
+user: What is the price of one ticket?
+assistant: One ticket is $50.
+user: Are there any direct buses going there?
+assistant: Are you planning on leaving March 7th, and what location are you leaving from?
+user: I would like to leave from Vancouver, BC on the 3rd of March.
+tool(FindBus): ok n_results=10
+assistant: There is a bus that departs at 7:40 am for $30.
+user: That sounds perfect!
+assistant: Would you like to purchase the bus ticket now?
+user: Not at this time, I need to find a round trip flight there.
+assistant: Which day would you be returning?
+user: I would be returning on March 12th.
+assistant: Would you be leaving on March 3rd or March 7th or some other day?
+user: I would leave next Tuesday.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There is an American Airlines flight with a layover that leaves at 11:20 am and returns at 2:20 pm for $390.
+user: Would that be for 3 people?
+assistant: No, it is for 1 traveler.
+user: Sounds great! Can you find a 3 star hotel in that area too please?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Best Western Plus Pioneer Square Hotel Downtown.
+user: Sounds great!
+assistant: Do you wish to reserve the hotel now?
+user: No, not at this time.
+assistant: Is there anything else I can assist you with?
+user: I would like to purchase 4 tickets to the event you had found earlier.
+assistant: Please confirm you are booking 4 tickets for Beatleconcert on March 7th in Seattle.
+user: Yes, that is correct!
+tool(BuyEventTickets): ok n_results=1
+assistant: I have confirmed your reservation, have a wonderful time!
+user: Can you tell me where the venue is located?
+assistant: It is at 1620 12th Avenue.
+user: Thank you for your help, that will be all I need for now.
+assistant: Have a wonderful day!

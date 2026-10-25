@@ -1,0 +1,28 @@
+user: I need to get a cab Preferably, a regular ride.
+assistant: Where are you traveling to and how many seats do you need?
+user: I need a ride to Burke Museum of Natural History and Culture. I need two seats.
+assistant: Please confirm: 2 regular seats to the Burke Museum of Natural History and Culture.
+user: Yes, sounds good. How much is it? When will the cab be here?
+tool(GetRide): ok n_results=1
+assistant: Your ride has been booked and is on its way. It will be there in about 4 minutes. The ride will be $14.62.
+user: I want to find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: What about Mascara by Niykee Heaton from the album Starting Over?
+user: What other songs are there?
+assistant: What about Shaane Top Agavle by Vijay Prakash from the album Sinnga.
+user: What other songs are there? I like songs by Tupper Ware Remix Party. I want to listen to something from '18.
+tool(LookupMusic): ok n_results=1
+assistant: How about Starlight Brigade by Tupper Ware Remix Party from the album Together Through Time.
+user: What kind of music?
+assistant: The genre is rock.
+user: Yes, that's right.
+assistant: Do you want to play this song?
+user: Yes. Play it on the patio speaker please.
+assistant: Please confirmL playing the song Starlight Brigade on the patio.
+user: No, play it on the speaker in kitchen.
+assistant: Please confirm: playing the song Starlight Brigade in the kitchen.
+user: Yes, sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing, enjoy.
+user: Thanks, that's all.
+assistant: Have a great day!

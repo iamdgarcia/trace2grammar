@@ -1,0 +1,23 @@
+user: Do you think you could help me find a nice Theme Park to visit?
+assistant: No problem. Where would you like me to conduct a search?
+user: Find me something around Vancouver please.
+tool(FindAttractions): ok n_results=2
+assistant: There is a nice Theme Park called FlyOver Canada I think you should check out.
+user: Sounds fun. What's their number?
+assistant: Their number is 855-463-4822.
+user: Thanks. Anything else you can find around town that you'd think would be fun?
+assistant: There is another Theme Park called Playland / PNE Events you may enjoy.
+user: Is this a child friendly place? Is it free to enter?
+assistant: Yeah, it's a nice child friendly environment and entrance is 100% free.
+user: Okay, that sounds great. Could you also find a nice house we could stay in while we visit? I need something that can fit two people.
+tool(SearchHouse): ok n_results=10
+assistant: No problem. I've found 10 houses you may like. How about the house at 1018 Granville Street? It's rated pretty high at 4.2 stars.
+user: Do you know if they have laundry service? While you're at it, can you tell me the phone number?
+assistant: No they do not offer laundry service, sorry. They can be contacted at +1 877-972-6378.
+user: Okay, I think this house will work. I'd also like to book a round trip flight to Vancouver. I need 4 tickets and will be leaving this Saturday.
+assistant: No problem. Can you tell me what city you are departing from and when you'd like to book a return flight?
+user: We are leaving out of Seattle and will need a return flight on March 13th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I've found 2 flights for you. How about a flight with Delta Airlines? The tickets cost $364. Your first flight will be at 4:10 am and does have one layover. Your returning flight will take off at 6:35 am.
+user: Okay, sounds good. That's all I need for now. Thanks a lot.
+assistant: My pleasure. Have a good day.

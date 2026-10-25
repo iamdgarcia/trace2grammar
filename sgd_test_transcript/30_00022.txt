@@ -1,0 +1,21 @@
+user: My friends tell me that any Raveena event is a must-attend. Help me find tickets for one happening on 12th of this month.
+assistant: Sure, no problem. Please tell me the number of tickets you need and the city in which to search.
+user: Please get me four tickets around SFO.
+assistant: Okay. Let me see if I got everything correctly: You'd like to reserve 4 tickets to the March 12th Raveena event in San Francisco, correct?
+user: That's correct. Please find out the event venue and address.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy! It's at The Chapel on 777 Valencia Street.
+user: Could you also search for buses from LAX, going there on 9th of March? I don't mind whether the bus has a connection or not.
+tool(FindBus): ok n_results=10
+assistant: How does the $42 bus leaving at 6:40 am sound?
+user: That works for me.
+assistant: Would you like my help with anything else?
+user: I'd like to purchase bus tickets.
+assistant: Sure, no problem. Please confirm that you'd like 4 tickets on the March 9th, 6:40 am Los Angeles to San Francisco bus, and that you have no extra luggage.
+user: That is correct. May I know its origin station?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully confirmed your ticket. The origin station is North Hollywood Station
+user: And the destination station?
+assistant: Transbay Terminal is the destination station.
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Thank you, and have a wonderful day!

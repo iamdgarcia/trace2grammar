@@ -1,0 +1,23 @@
+user: Can you find me a Mystery movie with Hattie Morahan in it directed by Gavin Hood?
+tool(FindMovies): ok n_results=1
+assistant: There's Official Secrets which has a 78 out of 100 rating.
+user: That works. I'm also looking for a restaurant.
+assistant: What kind of food and in what area should I look?
+user: Look in the Mountain View area for a pick-up restaurant.
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 pick-up restaurants in Mountain View. There's Chef Zhao Bistro.
+user: What's their rating?
+assistant: It's about 3.9.
+user: What is the price range and where are they located?
+assistant: It is a cheap restaurant located at 400 Moffett Boulevard.
+user: Great, can you make a reservation for me?
+assistant: Sure, what time did you want it for?
+user: I'd like to go at 5:30 pm.
+assistant: To verify: You would like a table for 2 at Chef Zhao Bistro in Mountain View at 5:30 pm on March 1st.
+user: Correct. Do they have vegetarian options?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Yes they have many good vegetarian options. Your reservation is confirmed.
+user: Great! Thank you.
+assistant: Is there anything else you need?
+user: No. I'm good. Thanks.
+assistant: Have a great day.

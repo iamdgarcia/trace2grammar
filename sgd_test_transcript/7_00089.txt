@@ -1,0 +1,18 @@
+user: I'd like to get movie tickets to go watch After The Wedding.
+assistant: Can you tell me your location and the kind of show you are interested in? Also, what is the day you want to see it?
+user: I would like to see a regular show on March 10th in the San Jose area.
+assistant: When is the time you'd like to see it and how many tickets?
+user: I think I'd like to get 1 ticket for the evening 7:30 pm showing.
+assistant: You want 1 ticket for After The Wedding on March 10th in San Jose. It would be for a regular show at 7:30 pm.
+user: That's right, good deal.
+tool(BuyMovieTickets): ok n_results=0
+assistant: I'm sorry, but I wasn't able to make the purchase. Would you like additional help?
+user: Please give it a go again and look in San Francisco. I'd like a showing at 6:30 in the evening for Fiddler: A Miracle of Miracles.
+assistant: You would like 1 ticket to see a regular movie for Fiddler: A Miracle of Miracles on March 10th in San Francisco at 6:30 pm.
+user: Yep, that is correct.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased.
+user: I really thank you for your help.
+assistant: Do you need my help with anything else?
+user: No, that's it and thanks.
+assistant: Enjoy your day.

@@ -1,0 +1,27 @@
+user: I am interested in finding a salon in Walnut Creek, and for the salon to be a unisex one.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons for you to consider, with one if them which is a good salon called Blow Dry Bar which is in Walnut Creek.
+user: Is there some other salon you can recommend?
+assistant: Another nice salon for you to consider is Dipietro Todd Salon which is in Walnut Creek.
+user: Is there some other salon you can suggest that is in SF?
+tool(FindProvider): ok n_results=10
+assistant: There are 10 salons matching what you requested, with one of them being 1512 Barber Shop which is in San Francisco.
+user: Can you tell me the address of this salon, and also the average rating it has?
+assistant: The salon can be found at 1532 20th Street, and has an average rating of 4.8
+user: That seems nice to me.
+assistant: Can you make a reservation for an appointment at this salon?
+user: I am not interested in having a booking made now. Is it possible for you to share the location with Edward?
+assistant: Can you please confirm that you want to share the 1532 20th Street address with Edward?
+user: That is what I want.
+tool(ShareLocation): ok n_results=1
+assistant: Your requested location has been shared.
+user: I appreciate it. You have helped me a lot. Can you tell me about the alarms that I have set?
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm set for 8 am, which is titled Get up.
+user: Alright, good. I would like for another alarm to be added for quarter past 3 in the afternoon, and the alarm to be called Music practice.
+assistant: Can you please confirm that you want to set an alarm for 3:15 pm, and for it to be titled Music practice?
+user: That is what I want to do.
+tool(AddAlarm): ok n_results=1
+assistant: Your requested alarm has been set.
+user: I appreciate it a lot. That's all I needed.
+assistant: Thank you too, have a good time!

@@ -1,0 +1,31 @@
+user: My next day off is on the 10th and I would like to find something to go out and do in Vancouver that preferably has to do with music or songs.
+tool(FindEvents): ok n_results=5
+assistant: The first of 5 events I was able to find matching your description is Cavetown, playing at the Venue Nightclub on March 10th, at 4 pm. Does that peak your interest?
+user: Yes, that sounds perfect!
+assistant: Would you like me to go ahead and reserve those tickets for you?
+user: Not at this very moment.
+assistant: Is there something else I can do for you?
+user: Yes, I also will need help with requesting a payment from someone.
+assistant: Sure, just tell me the name of the person in which you would like to make the request and the dollar amount please.
+user: The transaction will be between myself and Mahmoud for 56 dollars.
+assistant: Okay, so I have you making a public transaction with Mahmoud for $56. Do I have that right?
+user: Yes, those details are correct!
+tool(RequestPayment): ok n_results=1
+assistant: I have just confirmed that transaction for you.
+user: Thanks, now that that's out of the way, lets proceed with getting those tickets for the event you found for me.
+assistant: Sure, do you know the number of tickets you would like?
+user: Yes, it's no fun going alone so I would like two tickets.
+assistant: One more time, I just need to confirm the details with you. You would like 2 tickets to the show titled Cavetown, located in Vancouver on March 10th. Is that also correct?
+user: No, I'm sorry but I think it would be ore fun if there were three of us so lets add on more ticket.
+assistant: Not a problem, I have changed those details to 3 tickets to the show in Vancouver. Is that correct now?
+user: Yes, that sounds better.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are reserved and you are all set. Enjoy the show!
+user: Can you quickly tell me where the Venue of the show is located?
+assistant: The address of the Venue where I have just confirmed your tickets is at 881 Granville Street.
+user: Okay, I know where that is. Can you also tell me the cost of one ticket.
+assistant: Each ticket is $50.
+user: Okay, that's affordable, thanks again.
+assistant: Is there anything else before I go?
+user: No, you've been a great help, I really appreciate it!
+assistant: Enjoy the rest of your day and the show!

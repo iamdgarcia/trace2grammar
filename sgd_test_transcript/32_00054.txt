@@ -1,0 +1,22 @@
+user: I want to find music. Can you search for songs.
+tool(LookupMusic): ok n_results=10
+assistant: What about Real Friends by Camila Cabello from the album Camila?
+user: Didn't that come out about eight years back? What genre of music is it?
+assistant: It's a pop song from 2017.
+user: Yeah, that's the right one. Also, I'd like to watch a war movie online.
+tool(FindMovies): ok n_results=1
+assistant: An option would be The Load.
+user: Yes, The Load works great. Could you also play that song you found on any device?
+assistant: Please confirm these details: play Real Friends in Living Room.
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music!
+user: Thanks! Can you also show me what alarms I have?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 current alarms. There is a 3:30 pm alarm labelled as Dentist.
+user: Okay, cool, thanks.
+assistant: Do you want to add any alarms?
+user: Nope, I have everything I need.
+assistant: Can I be of other assistance?
+user: Nope, that was it, thanks a lot.
+assistant: Have a good day!

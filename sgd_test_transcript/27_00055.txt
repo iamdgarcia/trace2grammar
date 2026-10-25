@@ -1,0 +1,22 @@
+user: I want to visit an attraction in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 options. You can go to Alcatraz, a Historical Landmark.
+user: Is it child friendly, though?
+assistant: Yes, It's fine for kids.
+user: What is the number? Is there an entrance fee?
+assistant: No, entry is free and the number is 415-561-4900.
+user: Okay, can you find me a movie to watch there too. Maybe, Presidio Theatre. It should be a family movie.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 for you. The Farewell.
+user: The Farewell is good, what about some online movies. Animation movies with Tom Hanks would be good.
+tool(FindMovies): ok n_results=1
+assistant: Do you like Toy Story 4?
+user: Yes, Toy Story 4 is a good shout.
+assistant: Let's confirm the details then. Toy Story 4 with English subtitles.
+user: Yeah, that's it.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is now playing.
+user: Thank you.
+assistant: What else can I do for you?
+user: Nothing, that will be all.
+assistant: Enjoy the film then!

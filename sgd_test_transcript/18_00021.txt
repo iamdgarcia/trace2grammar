@@ -1,0 +1,31 @@
+user: What is the weather going to be like Wednesday next week in Philly?
+tool(GetWeather): ok n_results=1
+assistant: The forecasts are predicting average temperature to be 94 Fahrenheit with a 26 percent chance of precipitation.
+user: Okay, got it.
+assistant: Do you still need assistance?
+user: I need you to locate a one way flight to get there.
+assistant: Where do you plan to be when you leave?
+user: I plan to take off out of NY?
+assistant: And would that be on March 6th?
+user: No it would be the 5th of March.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found a direct flight for $54 that leaves at 11:20 am the carrier is American Airlines.
+user: That would probably work, can I get a rental car there?
+assistant: I need some details when will you pick the car up March 6th? How long do you intend to use it and what time do you want to get it?
+user: The starting date is right and I would be keeping it until the 10th of March I need to pick it up at 3:15 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Intercity Terminal has a SUV Alfa Romeo Stelvio what do you think?
+user: I am okay with almost any car but do you have anything else?
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a Dodge Charger Sedan at the 30th Street Station.
+user: What if I want it from March 7th and could take it in the evening 6:30 could you find another option?
+tool(GetCarsAvailable): ok n_results=5
+assistant: I found 5 possibilities including a Ford Focus Hatchback at the 30th Street Station.
+user: What does it run by the day?
+assistant: It is $27.00.
+user: I like that one.
+assistant: Should I reserve it for you?
+user: Not right this minute.
+assistant: Can I be of any further assistance?
+user: Not today, thanks.
+assistant: Have a most wonderful day.

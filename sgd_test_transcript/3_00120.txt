@@ -1,0 +1,16 @@
+user: Can you find me a rental car? I'd like a hatchback from the 9th of this month until March 12th.
+assistant: What time do you want to pick up the car and from what city?
+user: San Diego at 7:30 pm.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There are 4 hatchback cars available. At Santa Fe Depot they have a Nissan Qashqai.
+user: Sound good. I'd like to reserve that one.
+assistant: Do you want to add insurance?
+user: No I wont need it.
+assistant: To verify: You want to pick up the hatchback from Santa Fe Depot at 7:30 pm on March 9th and return it March 12th.
+user: On second thought, let's add the insurance.
+assistant: Okay, you still want to pick it up at 7:30 pm and add insurance.
+user: Yes. What is the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: It will be $37.00 per day. Your car has been reserved.
+user: Thanks! That's all I need.
+assistant: Have a good day.

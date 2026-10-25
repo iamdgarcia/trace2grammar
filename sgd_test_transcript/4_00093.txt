@@ -1,0 +1,13 @@
+user: Would you help me to find a bus?
+assistant: Where are you leaving from and where do you want to go? When are you planning to leave?
+user: I would like to leave on March 10th from Sacramento and heading to San Fran.
+tool(FindBus): ok n_results=10
+assistant: I have located 10 buses for you. What do you think of the bus that leaves at 7:40 am? The price is $24.
+user: What is the station this bus will arrive at?
+assistant: It will arrive at Transbay Terminal.
+user: That sounds fine.
+assistant: Would you like to purchase tickets on this bus?
+user: I don't wish to buy at the moment.
+assistant: Is there anything else I can help you with?
+user: No. Thanks very much for the help.
+assistant: Have a wonderful day.

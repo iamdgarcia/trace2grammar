@@ -1,0 +1,19 @@
+user: Can you find me some interesting things to do in Los Angeles on the 13th of this month?
+assistant: Sure, how about something music related or a theater show?
+user: I really love the Theater!
+tool(FindEvents): ok n_results=10
+assistant: Asssscat is a popular show being held at Upright Citizens Brigade Sunset on March 13th at 6:30 pm
+user: That's great, now I need to request a payment from Victoria for 6 dollars please
+assistant: Sure thing, confirming a $6 public money request from Victoria yes?
+user: Yes that's correct
+tool(RequestPayment): ok n_results=1
+assistant: Your payment has been made successfully
+user: I want to purchase tickets to the event you found
+assistant: How many tickets are you thinking of getting?
+user: I just want two tickets
+assistant: Confirming 2 tickets to the March 13th showing of Asssscat in Los Angeles?
+user: Yes please, where's the venue, and how much is a ticket again?
+tool(BuyEventTickets): ok n_results=1
+assistant: It's confirmed and will be $50 a ticket. It's at 5419 Sunset Boulevard
+user: Thanks for your help, that's all
+assistant: Enjoy the show!

@@ -1,0 +1,36 @@
+user: Hey, can you check the weather for me? I need to know the weather in Oakland on March 7th.
+tool(GetWeather): ok n_results=1
+assistant: Sure. The average temperature for the day is expected to be 80 degrees Fahrenheit, and there is a 19 percent chance of rain.
+user: How windy is it going to be?
+assistant: The average wind speed is predicted to be 4 miles per hour.
+user: So far so good. How humid?
+assistant: The humidity is 28 percent.
+user: Okay how about on the day of March 14th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature on that day should be 84 degrees Fahrenheit, and there is a 22 percent chance of rain.
+user: That sounds look a good day for a property visit. Can I schedule one for that day?
+assistant: Which property would you like to visit?
+user: I would like to visit the Villas Papillon property.
+assistant: Please confirm the following: Schedule property visit to Villas Papillon for March 14th.
+user: That is incorrect. I changed my mind and want to visit the Glen View Apartments instead.
+assistant: Please confirm the following: Schedule property visit to Glen View Apartments for March 14th.
+user: That sounds right, I confirm.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit has been scheduled with the apartment.
+user: Great. Can you tell me how many bedrooms the place has and how much a unit costs?
+assistant: It has 2 bedrooms and costs $2,500,000.
+user: Perfect. Can you get me a car there?
+assistant: What kind of car would you like?
+user: I want a Sedan and I'd like to pick it up at half past 8 in the morning.
+assistant: Until when would you like the car?
+user: I'm going to need it until March 14th.
+assistant: Where would you like to pick up the car? Also would you like insurance?
+user: I would like insurance and Union Plaza would be the most convenient place for me to pick it up.
+assistant: Would you like to have the car from March 14th?
+user: No, I'll need it from the 12th of March.
+assistant: Please confirm the following: You would like to rent a Sedan from Union Plaza. You will pick the car up on March 12th at 8:30 am and drop it off on March 14th. You would like insurance.
+user: That is all correct, I confirm it all.
+tool(ReserveCar): ok n_results=0
+assistant: I'm sorry but the reservation has failed. Is there anything else I could help you with?
+user: Darn. No, forget about it.
+assistant: Okay, good bye.

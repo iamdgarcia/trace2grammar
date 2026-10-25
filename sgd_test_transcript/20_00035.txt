@@ -1,0 +1,29 @@
+user: I'd like to rent a car please, can you help me find something?
+assistant: When would you like to rent a car?
+user: Starting on March 11th.
+assistant: Where would you like to book a car and when would you like to pick it up? How long will you need it for?
+user: I'd like to collect a car at 12:30 in Berlin and will need it until the 14th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found 10 cars that meet your criteria. How about an SUV Alfa Romeo Stelvio? There is one available at Schoenefeld Airport.
+user: Perfect that will do nicely. Can you help me find a house to stay in while I'm there?
+tool(SearchHouse): ok n_results=10
+assistant: Sure. There is a house with a rating of 4.4 located at Alt-Moabit 99, 10559.
+user: I'd like you to keep on searching please.
+assistant: Okay sure, how about one with a rating of 3.6 at Alt-Reinickendorf 4-5 13407.
+user: Can you get me the address please? Also does this place have a laundry service for me to use? I'd like to relax while I'm there.
+assistant: The number is +49 30 498830 and there is a laundry service available.
+user: Are there any other options?
+assistant: How about one with a rating of 4.3 at Am Borsigturm 1, 13507?
+user: That sound more like it thanks!
+assistant: Do you want to make a reservation for this house now?
+user: Not right now thanks but could you reserve the car you found?
+assistant: No problem. Do you want to add insurance to the booking?
+user: No thanks I'm not interested.
+assistant: So you'd like to rent an SUV from Schoenefeld Airport on March 11th at 12:30 pm and will be returning the car on March 14th.
+user: That's correct thanks. What is the cost per day for the rental?
+tool(ReserveCar): ok n_results=1
+assistant: Your rental booking has been made successfully. Per day the cost will ne $45.00.
+user: Thanks for your help.
+assistant: Do you need help with anything else?
+user: Not right now thanks.
+assistant: Enjoy your day.

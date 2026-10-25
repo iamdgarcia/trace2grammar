@@ -1,0 +1,11 @@
+user: Can you locate a train for me? I want one seat.
+assistant: What is the date that you wish to travel? Which city are you heading to?
+user: See if you can find me tickets for 4th of March heading to Phoenix, AZ.
+assistant: What is your point of departure?
+user: I need tickets leaving from Anaheim.
+tool(FindTrains): ok n_results=4
+assistant: There are 4 trains that might work for you. One leaves at 6:30 am and costs $122 in all.
+user: Are there trains besides that one that might work?
+assistant: There is one leaving at 6:40 am. This one's price is $123 in all.
+user: That sounds fine, that was all I needed.
+assistant: See you another day.

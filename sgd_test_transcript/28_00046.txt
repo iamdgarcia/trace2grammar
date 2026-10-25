@@ -1,0 +1,27 @@
+user: Can you help me find the name of the movie directed by Joel Zwick that Joey Fatone acted in?
+tool(FindMovies): ok n_results=1
+assistant: It may be My Big Fat Greek Wedding. It has a rating of 76 out of 100.
+user: What kind of movie is it?
+assistant: I's considered a comedy.
+user: I think that's it. I'd like to find a nearby restaurant please.
+assistant: Where should I begin the search?
+user: I need something in Santa Rosa.
+assistant: What type of cuisine are you hungry for?
+user: I'd like to find a pizza place.
+tool(FindRestaurants): ok n_results=10
+assistant: Basilico is a popular pizza restaurant in Santa Rosa.
+user: That works for me.
+assistant: Would you like to make a reservation?
+user: Yes, please make a reservation for me.
+assistant: What time works best for you?
+user: I'd like to arrive at 6:30 pm.
+assistant: You'd like a table for 2 at Basilico in Santa Rosa on March 1st at 6:30 pm. Is that correct?
+user: I'm sorry, I need the table the day after tomorrow instead.
+assistant: You'd like to make that reservation for 2 on March 3rd.
+user: Yes, that's correct. Can you tell me what the restaurant's user rating is?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have a user rating of 4.4. Your table has been reserved.
+user: Great. Can you tell me the contact number?
+assistant: You may reach them at 707-539-0260.
+user: Great. Thanks for the assistance.
+assistant: You're welcome. Enjoy your day.

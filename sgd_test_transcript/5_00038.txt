@@ -1,0 +1,14 @@
+user: I want to check the alarms I have.
+tool(GetAlarms): ok n_results=2
+assistant: There are 2 alarms which you have set currently, with one of the alarms being at 6:30 am, and it is called Wake Up.
+user: Alright, that is good.
+assistant: Are you interested to add another alarm?
+user: Actually I am, I do want to add another alarm. I want the alarm to be called Grocery run.
+assistant: Can you tell me the time for when you want the alarm to be set for?
+user: The alarm should be set for 4:45 PM.
+assistant: Can you please confirm that you want to create an alarm called Grocery run for 4:45 pm?
+user: Yes, that is what I want.
+tool(AddAlarm): ok n_results=1
+assistant: Your requested alarm has been added
+user: I appreciate it very much. That is all I wanted for now.
+assistant: Thank you too.

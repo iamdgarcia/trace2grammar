@@ -1,0 +1,44 @@
+user: Will you help me find something interesting to do?
+assistant: Will you have a preference for event type?
+user: I like Musical performance a lot.
+assistant: What city in particular should I search in?
+user: I am seeking something in Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: Anthony Green at the Foundry March 10th at 6 pm is popular.
+user: Where is the venue at?
+assistant: The venue is located at 29 East Allen Street 2nd floor.
+user: What does one ticket cost?
+assistant: The ticket will be $60.
+user: That is good, however, can you find me some other events on the 13th of March.
+tool(FindEvents): ok n_results=10
+assistant: Babymetal is popular and takes place at The Fillmore Philadelphia March 13th at 7 pm.
+user: That sounds good what about the buses going there?
+assistant: Where will you be leaving from and would you like to leave March 13th?
+user: I would like a direct bus leaving March 9th from NYC.
+tool(FindBus): ok n_results=7
+assistant: I have 7 buses for you. What about the one leaving 7:40 am for $21?
+user: What station does it arrive at?
+assistant: It will arrive at 10th and Filbert.
+user: That sounds nice. I'd like a round trip flight there.
+assistant: What day do you want to take the return flight leaving March 9th or March 13th or some other day.
+user: I would like to travel on the 1st of March Premium Economy class tickets returning on the 14th of this month.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: Do you want to fly with American Airlines with an onward flight taking off at 11:20 am direct flight taking off 1:20 pm and tickets costing $148.
+user: When will the returning flight come?
+assistant: The return flight arrives at 2:11 pm.
+user: Will it be for 3 people?
+assistant: It is for 1 person travelling.
+user: That sounds nice. Can you seek hotels in the area too?
+tool(SearchHotel): ok n_results=10
+assistant: There's a hotel called Aka Rittenhouse Square that is 4 stars.
+user: That sounds nice and I'd like to purchase tickets to the event you found.
+assistant: What number of tickets do you want?
+user: I would like 1 ticket.
+assistant: Please confirm details that you'd like to book 1 tickets for Babymetal in your reservation for March 13th in Philadelphia.
+user: Yes, that will work for me.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed so have a great time there.
+user: Thanks a lot for the help.
+assistant: What else can I assist you with today?
+user: No thanks for the help.
+assistant: Have a nice day.

@@ -1,0 +1,20 @@
+user: I need help finding a therapist in El Cerrito - a Psychologist to be exact, .
+tool(FindProvider): ok n_results=2
+assistant: How about Bower Rosemary A., a Psychologist practicing in El Cerrito?
+user: Could you give me their location and contact number?
+assistant: They're located at 11100 San Pablo Ave # 207, and can be reached on 510-233-8679.
+user: That should work. What's the weather forecast there, for 1st of this month? I intend to ride my bike on that day.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature is 89 degrees Fahrenheit, with a 22 percent chance of rain.
+user: All right, cool. Now let's go back and book an evening 5:15. appointment for that day, with the therapist you found.
+assistant: Sure. Please confirm that you'd like to schedule an appointment with Bower Rosemary A, at 5:15 pm. on March 1st
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately, there was a glitch and I was unable to book the appointment. Bower Rosemary A. has an open slot on March 1st at 5:30 pm. Will that work for you?
+user: Sure. That will be okay.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. An email confirmation will be sent to you shortly.
+user: Thank you very much. I'm very grateful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Happy to have been of help.

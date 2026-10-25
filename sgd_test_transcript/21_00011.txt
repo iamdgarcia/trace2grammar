@@ -1,0 +1,25 @@
+user: I would like to find a regular cab to 540 El Camino Real.
+assistant: How many seats do you need?
+user: I just need 1 seat.
+assistant: Booking a regular ride for 1 person to 540 El Camino Real.
+user: How much does it cost and how long before the cab gets to my house?
+tool(GetRide): ok n_results=1
+assistant: Your cab is on the way and should be there in 2 minutes. The cost is $22.68.
+user: I would like to find a song by Petit Biscuit an Electronica song.
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song, Sunset lover by petit biscuit from the album presence.
+user: Did it come out nine years back?
+assistant: It's from the year 2015.
+user: Yes, I would like that song.
+assistant: Would you like to play the song?
+user: Yes, play the song.
+assistant: Playing Sunset Lover in the living room.
+user: Please play the song in the kitchen.
+assistant: Playing Sunset lover in the kitchen.
+user: Yes, that works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music playing.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

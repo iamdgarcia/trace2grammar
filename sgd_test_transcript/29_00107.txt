@@ -1,0 +1,28 @@
+user: I want to find some interesting things to do and I need your help to search for suitable one.
+assistant: Which is your favorite type of event and Where do you want to search for the same? Tell me any of your desire place to short-list my search.
+user: I think I want to attend the events in New York and I prefer Musical Shows.
+tool(FindEvents): ok n_results=10
+assistant: What about the one named Abbi Jacobson will be held at Kaufmann Concert Hall on March 11th at 7:30 pm? Is this show time is convenient to you?
+user: Yes, It is. I want to find a house there to stay for a while and I need the same with laundry service. Please find the one with rating 3.9 or higher I the only one person to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: Okay. I got 10 houses and the one is located at 100 Greenwich Street and the rating is 3.9. Do you like to stay in this house?
+user: Search for something else.
+assistant: Okay, what about the one located at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA and the rating of this house is 3.9?
+user: I think this will work for me. Shall we try to get a bus to go there?
+assistant: Yes, I am ready to search and tell me your leaving place to do the same.
+user: I want a bus from Philly and search the one from here.
+assistant: One more detail that I need to know is your expected leaving date. Tell me whether you are leaving on March 11th or March 5th?
+user: I have planned to leave on tomorrow.
+tool(FindBus): ok n_results=6
+assistant: Got 6 buses and what about the one leaving at 9 am for the ticket cost $22?.
+user: What is the origin station of this bus and how many stops are there?
+assistant: It is a direct bus and it will leave from 10th and Filbert.
+user: That is okay and thank you for the details. Now I want to buy the tickets to the event that you have found for me.
+assistant: Yes, I do and let me know the number of tickets required by you.
+user: Book for four tickets.
+assistant: Please confirm to book 4 tickets to the event Abbi Jacobson in New York on March 11th.
+user: Yes, that is confirmed and let me know the cost of ticket and venue address.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets under cost $60 and the event will be held at 1395 Lexington Avenue.
+user: Thank you so much and that's all for now.
+assistant: Have a good day.

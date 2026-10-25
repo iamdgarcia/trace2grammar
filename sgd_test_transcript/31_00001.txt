@@ -1,0 +1,33 @@
+user: I need to locate a salon.
+assistant: In which city?
+user: I'm looking for something in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: Daredevils & Queens is a salon in the Santa Rosa area.
+user: Can I have their address and rating?
+assistant: The have a 4.6 rating and are located at 122 4th Street.
+user: Great. Can you also help me find a movie in the area.
+tool(FindMovies): ok n_results=10
+assistant: There are 10 options. After the Wedding, Good Boys and Fiddler: A Miracle of Miracles are 3 options.
+user: After the Wedding sounds great!
+assistant: Should I reserve tickets for you?
+user: Not right now but can I have the times for a regular show at Summerfield Cinemas on the 2nd of this month?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 option at 8:30 pm in the Summerfield Cinemas.
+user: What type of movie is it and what is the cost per ticket?
+assistant: It is a drama and the cost per ticket is $10.
+user: Great! Can you please help me book an appointment at the salon you mentioned?
+assistant: For what time?
+user: For 1 o'clock in the afternoon, please.
+assistant: Please confirm you want me to book an appointment at Daredevils & Queens on March 2nd at 1 pm.
+user: Yes. That is correct.
+tool(BookAppointment): ok n_results=0
+assistant: I was unable to confirm the appointment. Is there anything else I can assist you with?
+user: Could you try booking at 4:15 pm?
+assistant: Please confirm you want to book an appointment at Daredevils & Queens on March 2nd at 4:15 pm.
+user: Yes. That's correct and can you tell me whether it's a unisex salon and give me their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: It is not a unisex salon and they can be contacted directly at 707-575-5123.
+user: Thanks for all your help.
+assistant: Is there anything else I can assist you with today?
+user: No. Thanks a bunch.
+assistant: You're welcome. Enjoy the rest of your day.

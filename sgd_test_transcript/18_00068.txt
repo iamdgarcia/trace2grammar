@@ -1,0 +1,21 @@
+user: I want to be staying in a hotel. Can you look for something?
+assistant: In what city shall I look for this hotel?
+user: I will be in New York so scan that area.
+tool(SearchHotel): ok n_results=10
+assistant: I think you will like this 5 start hotel called 1 Hotel Brooklyn Bridge.
+user: That is fine.
+assistant: Shall I book you this hotel?
+user: Some other time. Tell me what the weather is like on March 12th in that place?
+tool(GetWeather): ok n_results=1
+assistant: The temperature will be around 70 degrees Fahrenheit on average per day with a 4 percent possibility of raining.
+user: Fine. Now book me that hotel on next Monday.
+assistant: How many days will you be planning to stay?
+user: I want to stay there for 3 days.
+assistant: So do you confirm that you want 1 room for 3 days in the 1 Hotel Brooklyn Bridge on March 4th in New York?
+user: Great. What do they charge per night?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is booked successfully and it will cost you $330 per night.
+user: Thank you very much for the help.
+assistant: Shall I get you some other help?
+user: Nope thank you for the help.
+assistant: Goodbye have a nice day!

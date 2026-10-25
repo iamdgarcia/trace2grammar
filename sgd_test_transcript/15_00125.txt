@@ -1,0 +1,39 @@
+user: Can you help me find a salon please
+assistant: In what city
+user: Can you find me one in SF
+tool(FindProvider): ok n_results=10
+assistant: There's a place in San Francisco called 1512 Barber shop that looks good
+user: Can you find me a different place?
+assistant: How about 20th Salon and Barber, also in San Francisco
+user: That sounds good. Now help me find a therapist in the area please
+assistant: What kind of therapist? Somewhere in San Francisco?
+user: Yes that works, now find me a Psychologist
+tool(FindProvider): ok n_results=4
+assistant: You may want to try Adam E. Pollock, they are a Psychologist in San Francisco
+user: That sounds good to me
+assistant: Do you want an appointment?
+user: Yes please book me one if possible on March 14th at 11:45 am
+assistant: Confirming that you want a March 14th appointment with Adam E. Pollock at 11:45 am yeah?
+user: Actually I changed my mind, make that in the afternoon 1:15 pm
+assistant: OK so 1:15 pm on March 14th instead?
+user: Yes that's correct
+tool(BookAppointment): ok n_results=1
+assistant: Sorry I couldn't book that time, do you want to try Adam E. Pollock again but on March 14th at 1:30 pm
+user: OK sure try that
+tool(BookAppointment): ok n_results=1
+assistant: That was successful and it's booked for you and you'll get confirmation soon
+user: What's their address?
+assistant: They are at 100 Masonic Avenue
+user: Give me the phone number for them
+assistant: It's 415-346-2356
+user: Thanks for doing that
+assistant: What else can I do
+user: Let's book an appointment at that salon we found earlier, let's do it at quarter to 4 in the afternoon
+assistant: Confirming that you want to book a 3:45 pm appointment at 20th Salon and Barber on March 14th
+user: No, let's try for 6 in the evening instead
+assistant: Confirming a 6 pm March 14th visit at your salon of choice
+user: Yes that's right
+tool(BookAppointment): ok n_results=1
+assistant: It's been booked too!
+user: Thanks so much, that's it!
+assistant: OK, enjoy your appointment!

@@ -1,0 +1,25 @@
+user: There are two of us that are going to SkyJump. I want to book a cab to take us there.
+assistant: What kind of ride would you like?
+user: I want to travel in style so a luxurious ride would be great.
+assistant: Sure so that's a luxury ride for 2 people to SkyJump.
+user: Actually the plans have changed and I'll be travelling alone. Please book a cab for one. A pool ride is fine.
+assistant: Okay no problem , so that's a pool ride for 1 person.
+user: That's correct thanks. How long will the cab take to arrive and what will the fare be?
+tool(GetRide): ok n_results=1
+assistant: Your cab has been booked and should be with you in 6 minutes. The total cost for the ride will be $16.00.
+user: I'm in the mood to listen to some music, can you help me find some songs from around four years back? If you can find the album Got Your Six then songs from that would be perfect.
+tool(LookupMusic): ok n_results=2
+assistant: How about the song called I Apologize from Got Your Six by Five Finger Death Punch.
+user: That's great thanks.
+assistant: Do you want to play this song now?
+user: Yeah, play it in the kitchen for me please.
+assistant: Okay sure so you'd like to listen to I Apologize in the kitchen.
+user: I'd like to listen to it on the patio speaker instead.
+assistant: No problem. I'll play I apologize in the patio then.
+user: That's right thanks.
+tool(PlayMedia): ok n_results=1
+assistant: I hope you enjoy your music.
+user: I will, thanks for your help.
+assistant: Do you need anything else?
+user: Not right now thanks.
+assistant: Enjoy your day.

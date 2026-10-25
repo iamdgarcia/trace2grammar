@@ -1,0 +1,37 @@
+user: Can you find me a restaurant?
+assistant: Sure. What type of cuisine would you like?
+user: Find me a Barbecue restaurant.
+assistant: What location should I search in?
+user: Find me something in SF.
+tool(FindRestaurants): ok n_results=10
+assistant: I have found 10 restaurants for you. You might like 1760. It is a nice restaurant in San Francisco.
+user: Can you recommend any place else?
+assistant: 25 Lusk is a nice restaurant located in San Francisco.
+user: Can you get me the phone number?
+assistant: You can contact them at 415-495-5875.
+user: Do they have outdoor seating? Can you get me the address?
+assistant: The restaurant does not have outdoor seating. Their street address is 25 Lusk Street.
+user: Any place else you find? How about something cheap?
+tool(FindRestaurants): ok n_results=6
+assistant: I found 6 possible restaurants for you. How about Chaparral in San Francisco?
+user: Yes, that would be good. I need to book a table for three people. Make it for the 6th at 10:45.
+assistant: Confirming that you want a table for 3 at Chaparral in San Francisco. Your reservation will be for March 6th at 10:45 am. Is this information correct?
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, but I was unable to book your table for 3 at Chaparral. Should I try for March 6th at 11 am?
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been confirmed.
+user: Thank you so much.
+assistant: Is there anything else that I can help you with?
+user: Yes, get me a cab to the restaurant.
+assistant: You need a cab to 471 Haight Street? What type of ride do you need, Pool, Regular or something else?
+user: Yes I want a Shared ride to that address.
+assistant: Can you confirm that you want a Pool ride for 3 to 471 Haight Street?
+user: Yes, that is fine. How long will the cab be? How much will it cost?
+tool(GetRide): ok n_results=1
+assistant: I have successfully booked your cab and it will arrive in 6 minutes. It will cost you $18.52.
+user: Thanks a lot.
+assistant: Is there anything else?
+user: No, thanks for your help.
+assistant: You're welcome. Have a wonderful day!

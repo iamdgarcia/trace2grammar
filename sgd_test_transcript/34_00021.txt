@@ -1,0 +1,21 @@
+user: I need a 3 star hotel where I can smoke.
+assistant: In which city?
+user: I need to 2 rooms in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Abbey Court Hotel (Hyde Park).
+user: That one sounds good.
+assistant: Would you like me to book rooms there?
+user: Can I first find some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: 30 St Mary Axe (The Gherkin) is a Historical Landmark.
+user: Are there any other attractions in the area?
+assistant: Admiralty Arch is a Historical Landmark in the area.
+user: Sounds awesome. Please book the hotel for four days coming in later today.
+assistant: Please confirm you want 2 rooms for 4 days at the Abbey Court Hotel (Hyde Park) on March 1st in London.
+user: Perfect. What's their direct line?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation was as success. They can be reached at +44 20 7402 0281.
+user: What's their address and nightly rate?
+assistant: They're located at Sussex Gardens and costs $252 nightly.
+user: Great, Thanks. That's all for now.
+assistant: Have a great day and goodbye.

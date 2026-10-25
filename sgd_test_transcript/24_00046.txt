@@ -1,0 +1,23 @@
+user: I would like to book a one-way fight.
+assistant: Where are you departing from and what is your destination?
+user: I'm flying from Vancouver to Portland, OR on the 14th.
+tool(SearchOnewayFlight): ok n_results=2
+assistant: There is American Airlines flight leaves at 11:20 am and the cost is $226.
+user: When does the flight arrive to my destination?
+assistant: The flight reaches destination at 5:48 pm for 1 person.
+user: I would like 2 economy premium seats for tomorrow.
+tool(FindTrains): ok n_results=8
+assistant: There is a train leaving at 6:50 am for $173.
+user: Which station does it depart from?
+assistant: The train leaves from Pacific Central Station.
+user: Which station does it arrive at?
+assistant: The train reaches Union Station.
+user: I would like to purchase train tickets.
+assistant: Would you like travel insurance?
+user: Yes, I want a trip insurance.
+assistant: Booking flexible ticket for 2 people from Vancouver to Portland leaving at 6:50 am on March 2nd.
+user: Yes, that sounds good.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been purchased.
+user: That is all I needed.
+assistant: Have a good day.

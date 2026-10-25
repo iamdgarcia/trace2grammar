@@ -1,0 +1,18 @@
+user: I need a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: I have 10 movies for you including Chhichhore with an average rating of 60 out of 100.
+user: Are there any other movies?
+assistant: What about Labyrinth with a rating of 70 out of 100.
+user: What kind of movie is that?
+assistant: That is a Fantasy movie.
+user: Who is in the movie and who directs it?
+assistant: The movie is directced by Jim Henson with Ron Mueck acting in it.
+user: That is good sounding. I'd like to find something interesting to do there on that day.
+assistant: What particular city should I search in?
+user: I would like to look for something around New York City.
+assistant: Would you like any particular category like Music or Theater or anything else you could say.
+user: I prefer Drama.
+tool(FindEvents): ok n_results=10
+assistant: Acting for Teens is popular and taking place at 520 8th Ave. - Personal Valet Parking. That is on March 4th starting at 6 pm.
+user: That is good sounding and all I need.
+assistant: Have a nice day.

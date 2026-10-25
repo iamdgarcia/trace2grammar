@@ -1,0 +1,49 @@
+user: Can you help me find a therapist?
+assistant: What kind of therapist would you like to see. Where should I begin the search?
+user: Please look for a psychologist in Pleasant Hill.
+tool(FindProvider): ok n_results=4
+assistant: Christopher J. Celio is a well rated Psychologist in Pleasant Hill.
+user: Okay. Can you make me an appointment on the 8th of March for half past 1 in the afternoon?
+assistant: You'd like to see Christopher J. Celio on March 8th at 1:30 pm. Is that correct?
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry but there are no appointments available at that time. Is there anything else I can do for you?
+user: Yes, can you try making one for March 4th at 14:45?
+assistant: You'd like me to make an appointment for you with Christopher J. Celio on March 4th at 2:45 pm.
+user: Yes. Can you tell me the contact information of the office and where they are located?
+tool(BookAppointment): ok n_results=1
+assistant: You can reach them at 925-827-9876 and they are located at 101 Gregory Lane. There are no appointments available for that time either. Would you like to try booking with CHristopher J. Celio on March 4th at 3 pm?
+user: That would be fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been set. You will receive an email confirmation shortly.
+user: Great. Thanks for the help.
+assistant: You're welcome. Can I help you with anything else?
+user: Yes, I'd like to request a payment.
+assistant: Who should I request payment from.
+user: Please initiate a transaction with Amelia.
+assistant: How much is the transaction for?
+user: It will be for 14 dollars.
+assistant: You'd like to make a public transaction request with Amelia for $14.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your request has been made.
+user: Can you help me find a restaurant in that area that specializes in vegetarian food? Price doesn't matter.
+assistant: What type of cuisine do you like?
+user: I'd like an Italian restaurant.
+tool(FindRestaurants): ok n_results=1
+assistant: There's a great restaurant in Pleasant Hill called Zio Fraedo's.
+user: Do they offer dining al fresco? What's the address?
+assistant: They do not offer outdoor seating. The address is 611 Gregory Lane.
+user: That will be fine.
+assistant: Would you like to make a reservation?
+user: Yes, please reserve a table for me.
+assistant: What time works best for you?
+user: Please reserve a table for one at quarter past 12 in the afternoon.
+assistant: Have I got the details right? You'd like a table for 1 at Zio Fraedo's in Pleasant Hill on March 4th at 12:15 pm.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: You're table has been reserved.
+user: Great. Thank you for the assistance.
+assistant: You're welcome. Is there something else I can do for you?
+user: No, you've got it all covered.
+assistant: Have a wonderful day.

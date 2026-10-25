@@ -1,0 +1,26 @@
+user: I want to find some popular music. If you can, find some music by Pitbull. I really like their music.
+tool(LookupMusic): ok n_results=5
+assistant: I can play Celebrate by Pitbull. It's from his album Globalization.
+user: I do like Pitbull but I don't want that song. Try finding music by Passenger. The album All The Little Lights is extremely popular.
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song that matches your criteria. The song Let Her Go by Passenger is from their album All The Little Lights. Is that the song you are looking for?
+user: That's it! That's the song I wanted.
+assistant: Can I help you with anything else at the moment?
+user: While we're on entertainment, find me some good movies online please.
+assistant: I'd be happy to help. What type of movies do you enjoy?
+user: A family movie featuring Gale J. Odom would be fantastic.
+tool(FindMovies): ok n_results=1
+assistant: Would the movie Steel Magnolias suit your tastes?
+user: It would more than suit my tastes. Steel Magnolias is a great choice.
+assistant: Want me to play the movie for you?
+user: No thank you. I'll watch that later. How about playing the song you just found?
+assistant: I can. Please confirm the information. Now playing the song Let Her Go in the Living Room. Proceed?
+user: That's right. Please play it for me.
+tool(PlayMedia): ok n_results=1
+assistant: Now playing. Please enjoy your song.
+user: Did this song come out two years back by any chance?
+assistant: It is actually from the year 2012 to be precise.
+user: Ah okay. Thank you for that information!
+assistant: Did you require assistance with anything else?
+user: No. That's all I need for now. Thanks a lot.
+assistant: My pleasure. Have a wonderful day.

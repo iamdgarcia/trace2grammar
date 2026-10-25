@@ -1,0 +1,43 @@
+user: Get met economy train tickets for the 2nd of March.
+assistant: What are you departure and arrival cities?
+user: I am departing New York City and headed to Chi-town.
+tool(FindTrains): ok n_results=6
+assistant: There is a train leaving at 6 am with a cost of $130.
+user: What is the departing station?
+assistant: Grand Central Station is the departure station.
+user: What other trains can you find?
+assistant: There is a train leaving at 6:10 am and costs $103.
+user: What are the departing and arrival stations?
+assistant: Grand Central Station is the departing station and Chicago Union Station is the arrival station.
+user: What else can you find?
+assistant: A train is leaving at 7:50 am with a total cost of $125.
+user: That works for me. Book that train for me.
+assistant: How many people are going and do you wish to add travel insurance?
+user: The trip is for 1 person and I would like to add travel insurance to my order.
+assistant: You want a Value ticket with travel insurance for 1 person for a train ride departing New York at 7:50 am on March 2nd and goes to Chicago, correct?
+user: That is correct. What are the arrival and departure stations?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is confirmed. The train departs Grand Central Station and arrives at Chicago Union Station.
+user: What fun things are there to do there?
+assistant: What type of events should I search for?
+user: Search for Drama events.
+tool(FindEvents): ok n_results=10
+assistant: Ada And The Engine is showing at The Artistic Home on March 3rd at 5:30 pm and is 1 of 10 drama events that I found.
+user: That is okay. Find me some event Songs on the 2nd of March.
+tool(FindEvents): ok n_results=6
+assistant: Ashe is playing at the Chop Shop at 6:30 pm on March 2nd.
+user: What is the price for a ticket?
+assistant: The price of a ticket is $50.
+user: What is their address?
+assistant: They are located at 2033 West North Avenue.
+user: That is perfect. Share the location for me.
+assistant: Who are sharing the location to?
+user: Share the location with Ralph.
+assistant: You want to share the Chop Shop location with Ralph, correct?
+user: That is right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared with him.
+user: Thanks for the help.
+assistant: Do you need more help?
+user: No, that is all. Thanks.
+assistant: Have a pleasant day.

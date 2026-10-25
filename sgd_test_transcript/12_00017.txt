@@ -1,0 +1,32 @@
+user: I am taking a trip and would like to travel by bus. Will you please search for bus tickets.
+assistant: How many tickets will you need> What time are you leaving and from where are you leaving?
+user: There will be 3 people traveling from LAX and we would like to leave at 3:15 in the afternoon.
+assistant: What date are you leaving and to where are you traveling?
+user: I am going to Anaheim, CA later today.
+assistant: Please confirm you wish to take a bus from Los Angeles to Anaheim leaving on March 1st at 3:15 pm, and there will be 3 people. You do not plan to have extra luggage.
+user: Actually I am leaving from Fresno, CA.
+assistant: Please confirm you are leaving from Fresno and traveling to Anaheim.
+user: Yes, that is correct. What station will I depart from?
+tool(BuyBusTicket): ok n_results=1
+assistant: You will be leaving from 2660 Tulare St. Unfortunately that purchase failed unexpectantly. There is another bus that departs at 3:10 pm for a cost of $47.
+user: That will work for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Now I will also need a rental car while I am in Anaheim, CA.
+assistant: How long will you need the rental car?
+user: I will need the care until March 8th.
+assistant: Are you planning to pick up the car on March 1st? Also, what time do you plan on picking up the car?
+user: No, I don't need the car until March 5th, and would like to pick it up that day at 14:00.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found 10 cars available at John Wayne Airport. Would you like a sedan Buick Regal Sportback?
+user: That sounds perfect. Please reserve this rental car for me.
+assistant: Would you like the additional insurance?
+user: No, I don't need the insurance.
+assistant: Please confirm you are picking up a sedan at the John Wayne Airport on March 5th at 2 pm and will be dropping it off on March 8th.
+user: That is correct. What will be my daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is done and it will be $36.00 per day.
+user: I appreciate all your help!
+assistant: Can I assist you with anything else today?
+user: No, that is all for now. Thanks!
+assistant: Enjoy your day!

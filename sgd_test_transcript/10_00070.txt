@@ -1,0 +1,18 @@
+user: I wish to search a movie to watch online like Keira Knightley.
+assistant: Which genre do you prefer?
+user: I liek Mystery movies.
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion about Official Secrets?
+user: It is great to see Official Secrets.
+assistant: Shall I play the movie?
+user: Yes. Please go ahead.
+assistant: Kindly ensure that, Official Secrets movie is playing with the English subtitle.
+user: Nope. i wish to see it with French subtitles.
+assistant: Kindly ensure that, Official Secrets movie is playing with the French subtitle.
+user: Nope. i wish to see it with Hindi subtitles.
+assistant: Kindly ensure that, Official Secrets movie is playing with the Hindi subtitle.
+user: Yes. Good.
+tool(PlayMovie): ok n_results=1
+assistant: Moving is started.
+user: Thank you so much. That is what I want.
+assistant: Have a nice day.

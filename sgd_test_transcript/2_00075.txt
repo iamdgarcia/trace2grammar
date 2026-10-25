@@ -1,0 +1,14 @@
+user: Can you help me? I am looking for something to do on the 13th of this month. I am a big fan of Theater and want to find something around Palo Alto.
+tool(FindEvents): ok n_results=1
+assistant: A popular event taking place at Albert & Janet Schultz Cultural Arts Hall is Belarus to Brooklyn. This event is on March 13th and starts at 4:30 pm.
+user: That sounds very good.
+assistant: Would you like to purchase tickets for this event?
+user: Yes I want to buy one ticket.
+assistant: Confirm these details please: I will book 1 ticket for you to Belarus to Brooklyn, which is occurring in Palo Alto on March 13th.
+user: Yes, that is fine with me. What is the price of one ticket and where is this event happening?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been confirmed. I hope you have a great time! The event happens at a venue called San Antonio Road and the ticket price is $50.
+user: Thanks very much for helping me.
+assistant: Is there anything else you would like help with today?
+user: No. I appreciate your help.
+assistant: Have a fantastic day.

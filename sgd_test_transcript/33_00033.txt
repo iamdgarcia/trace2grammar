@@ -1,0 +1,25 @@
+user: I would like to search for a unisex salon in Windsor to get my hair cut.
+tool(FindProvider): ok n_results=3
+assistant: There is a lovely salon called Great Clips that is located in Windsor.
+user: I would like to get another option other than that one.
+assistant: There is also a fantastic salon, Supercuts and they are also located in Windsor.
+user: Is there another option?
+assistant: There is The Gentlemen's Barbershop, a great place also in Windsor.
+user: Great, that works for me.
+assistant: Are you interested in setting up a visit to this place?
+user: Not right at this time. Can you tell me what kind of weather I can expect there on the 11th of this month?
+tool(GetWeather): ok n_results=1
+assistant: On that day, the temperature will be around 89 degrees Fahrenheit with a 28 percent chance of rain.
+user: What about wind conditions?
+assistant: The wind speed is expected to be around 12 miles per hour
+user: And what will humidity be like?
+assistant: Humidity is expected to hover at 64 percent
+user: Great. I'd like to go ahead and schedule a visit to the salon you just mentioned for two pm.
+assistant: You would like to schedule a visit to The Gentlemen's Barbershop for 2 pm on March 11th, correct?
+user: Sure, that works. What's the rating for this place? And can you also tell me their exact location?
+tool(BookAppointment): ok n_results=1
+assistant: The salon is located at 9025 Old Redwood Highway D and they have a rating of 4.8. Your desired reservation for The Gentlemen's Barbershop was not successful. Would you like to try to schedule a visit for March 11th at 2:30 pm?
+user: No, that won't be necessary.
+assistant: Did you need any further assistance?
+user: No, that was it. Thanks!
+assistant: Enjoy your day.

@@ -1,0 +1,38 @@
+user: I need to see if there is a therapist in Novato.
+assistant: Are you looking for a Psychologist, Psychiatrist or what?
+user: I want to talk to a Psychologist.
+tool(FindProvider): ok n_results=5
+assistant: There is a Psychologist in Novato - Christina M. Walker.
+user: Can I get the number?
+assistant: Yes it is 415-887-8329.
+user: I like that one I think.
+assistant: Can I be of further assistance today?
+user: Yes, schedule a consolation for 11:45 am please.
+assistant: And what day would you like it on?
+user: For the 3rd but make it in the evening 5:30 instead please.
+assistant: You want the consultation for March 3rd at 5:30 pm with Christina M. Walker correct?
+user: Yes, thanks and where is she located?
+tool(BookAppointment): ok n_results=1
+assistant: Your visit has been scheduled and you should get an email to confirm it. The location is 250 Bel Marin Keys Boulevard.
+user: I greatly appreciate your help. I should request a payment from Wilson for $170 and I need it to be a private deal.
+assistant: Alright you want a private payment transaction for $170 with Wilson.
+user: Yes I do.
+tool(RequestPayment): ok n_results=1
+assistant: The payment transaction was completed.
+user: Super how about finding a place to eat that day. I want somewhere economical in cost that has vegetarian menu items and serves fish.
+tool(FindRestaurants): ok n_results=1
+assistant: I assume in Novato and Boca Pizzeria is .
+user: What else would be good, try Latin American cuisine and if possible somewhere with outdoor seating.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 in Novato called Maya Palenque Restaurant.
+user: I bet they have good food.
+assistant: Should I book you a table?
+user: Yes for two please.
+assistant: What time would you like it for?
+user: In the morning 11:15 please.
+assistant: Alright you want a table for 2 on March 3rd at 11:15 am in Novato at the Maya Palenque Restaurant correct?
+user: Absolutely what are they rated?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was completed and they are rated 4.2.
+user: Thank you.Dismissed.
+assistant: Have a nice day.

@@ -1,0 +1,18 @@
+user: I need to find a home.
+assistant: Would you like to rent or buy? Where would you like to live? How many baths would you like?
+user: I want to buy a three bath property in San Jose.
+assistant: How many bedrooms do you want?
+user: I need 4 bedrooms.
+tool(FindHomeByArea): ok n_results=10
+assistant: I found you 10 nice houses. Aegena is a nice property located at 1290 San Tomas Aquino Road. It is priced at $4,000,000.
+user: Does the property have a garage? Can you give me the phone number?
+assistant: The house doesn't have a garage. The phone number is 408-984-8888.
+user: Sounds good. Can you schedule a visit?
+assistant: Sure. For what date?
+user: I want to visit on the 7th.
+assistant: Confirming that you want to schedule a visit to Aegena for March 7th?
+user: Yes, that is correct. Does the house have a laundry machine?
+tool(ScheduleVisit): ok n_results=1
+assistant: The house does have a in-unit laundry. Your visit is successfully scheduled.
+user: Thanks a lot. That's all I need.
+assistant: You're welcome. Have a good day.

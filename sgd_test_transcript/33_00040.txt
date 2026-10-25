@@ -1,0 +1,17 @@
+user: Find me a salon in Napa.
+tool(FindProvider): ok n_results=4
+assistant: Napa has Stags Barbershop
+user: Yes, thats good. Hows the weather in Napa on the 2nd?
+tool(GetWeather): ok n_results=1
+assistant: There is a 29 percent chance of rain, and the average temperature is 72 degrees Fahrenheit.
+user: Whats the humidity and wind speed?
+assistant: The wind speed will be 5 mph and the humidity is 45 %
+user: Great, get an appointment at 1:45 in the afternoon
+assistant: ok Please confirm: Booking an appointment at Stags Barbershop at 1:45 pm on march 2nd
+user: yes, thats good
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, there was an error. Rebooking an appointment at Stags Barbershop at 1:30 pm on march 2nd
+user: no, i dont want that
+assistant: ok, anything else?
+user: no, thanks a lot
+assistant: have a good day!

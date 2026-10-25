@@ -1,0 +1,20 @@
+user: I am looking for a place to live.
+assistant: Do you want to rent or buy? What area would you like to find property in?
+user: I want a place to rent in SF.
+assistant: What number of baths do you want?
+user: I want it to have 3 baths.
+assistant: What number of bed rooms would you like to have in the property?
+user: I would like 4 bed rooms.
+tool(FindHomeByArea): ok n_results=7
+assistant: A good property is Betel Apartments at 1227 Hampshire Street. The cost is $4,800.
+user: That sounds fine.
+assistant: Would you like to schedule a visit to this property?
+user: Yes I would like to schedule a visit.
+assistant: When would you like to schedule this visit?
+user: I would like to schedule a visit for the 10th of this month.
+assistant: Confirm these details please: You want to schedule a visit to Betel Apartments on March 10th.
+user: Yes that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been successfully scheduled to this property.
+user: Thanks very much. That was all I needed.
+assistant: Have a wonderful day.

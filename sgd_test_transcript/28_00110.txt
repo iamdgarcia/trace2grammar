@@ -1,0 +1,32 @@
+user: I'm trying to find some attractions that are good for kids please.
+assistant: In what area please?
+user: I'm looking for things in Seattle.
+tool(FindAttractions): ok n_results=10
+assistant: You migt enjoy Alki Beach Park, which is a park.
+user: Maybe, thanks. Would you also help me find a rental car please?
+assistant: What are the dates you need the car for?
+user: From March 2nd until the 6th.
+assistant: Is that for a Seattle pick up and at what time?
+user: Yes, that's right and I'd like to get it at 3 pm.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have a Audi A8 sedan available at King Street Station.
+user: That sounds like a good one.
+assistant: Would you like to reserve that vehicle?
+user: Yes, I would please.
+assistant: Would you like to buy insurance, too?
+user: No, thank you.
+assistant: Confirming pick up of a rental sedan from King Street Station on March 2nd at 3 pm until March 6th.
+user: Great, thanks. What is the price for a day?
+tool(ReserveCar): ok n_results=1
+assistant: The vehicle is $32.00 daily and the reservation is complete.
+user: Thank you. Can I get you to share that location please?
+assistant: You would like to share the King Street Station address?
+user: Yes, I'd like to share it with Matthew.
+assistant: Confirming location sharing of King Street Station with Matthew.
+user: Correct, thank you.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared successfully.
+user: Thank you for helping me with everything today.
+assistant: How else may I help you?
+user: Nothing else, thank you.
+assistant: Thank you very much.

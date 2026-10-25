@@ -1,0 +1,30 @@
+user: I want to find a Hatchback that I can rent till Friday next week in Rio.
+assistant: On what date will you need the car?
+user: I'll need it from the 4th.
+assistant: At what time do you expect to pick up the car?
+user: I am hoping to pick it up around 2 pm.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There is a nice Ford Focus Hatchback available at Galeao International Airport.
+user: That sounds good to me.
+assistant: Shall I book the car for you?
+user: Yes, but maybe later.
+assistant: Is there anything else I can do for you?
+user: Can you find me a house with laundry service there?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses based on your preferences. Would you like to consider the house located at Avenida Almirante Silvio de Noronha, 365 - Centro which is rated 4.6?
+user: Can you find something else for 1 person?
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 houses and the one at Avenida Embaixador Abelardo Bueno, 1430 is a nice one with a rating of 4.7.
+user: Can you give me more options please?
+assistant: There's one with a rating of 4.5 at Avenida Embaixador Abelardo Bueno, 1511 - Barra da Tijuca.
+user: That sounds like a fantastic option.
+assistant: Shall I book the house on your behalf?
+user: No, I'll wait. Can you book the rental car that you found for me?
+assistant: Would you like to add insurance?
+user: Nope. I won't need it.
+assistant: Please confirm that you would like to reserve a rental Hatchback without insurance from 2 pm on March 4th to March 8th and that you want to pick it up from Galeao International Airport.
+user: That's perfect!
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked.
+user: Thank you for all the assistance. That'll be all.
+assistant: Have a great day!

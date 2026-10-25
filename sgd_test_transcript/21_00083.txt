@@ -1,0 +1,24 @@
+user: I want to know what the weather would be like in Sydney, Australia on the 2nd.
+tool(GetWeather): ok n_results=1
+assistant: The estimated temperature for that day is 101 degrees Fahrenheit with a 2 percent chance of rainfall.
+user: Great. What fun places can I visit when I get there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 sites that might appeal to you. There is the ANZ stadium, which is a sports venue.
+user: I do not really like sports. Is there anything else which doesn't have an entrance fee?
+tool(FindAttractions): ok n_results=10
+assistant: There is a museum called Australian National Maritime Museum.
+user: Would my kids find the place cool? May I have a contact number?
+assistant: The number is 2 9298 3777 and your kids would have a good time there.
+user: Ok. I want a cab to get there.
+assistant: What kind of ride would you like?
+user: A luxury ride.
+assistant: How may seats?
+user: Just two seats.
+assistant: You would like 2 seats on a Luxury ride to the Australian National Maritime Museum?
+user: Yes, I would.
+tool(GetRide): ok n_results=1
+assistant: I have made the reservation and the cab should arrive shortly.
+user: Thanks very much.
+assistant: Anything else you need assistance with?
+user: No, that would be all.
+assistant: Enjoy your day.

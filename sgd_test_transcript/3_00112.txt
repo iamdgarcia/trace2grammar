@@ -1,0 +1,22 @@
+user: I need to find a rental car, like a sedan. I need to pick it up at 6:30 in the evening in New York.
+assistant: When do you want to start the car rental?
+user: I need it starting next Wednesday.
+assistant: How long do you intend to keep the car?
+user: I need it until Friday next week.
+tool(GetCarsAvailable): ok n_results=5
+assistant: I have found 5 cars available. There is a Audi A8 Sedan available at the JFK International Airport.
+user: That sounds good.
+assistant: Would you like to book the car?
+user: Yes please.
+assistant: Would you like to add insurance?
+user: No thank you, I don't need insurance.
+assistant: Please confirm the following details: You are picking up the sedan from the JFK International Airport on March 6th at 6:30 pm. The drop off date is March 8th, and the car does not come with insurance.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved.
+user: What is the cost per day?
+assistant: The car costs $34.00 per day.
+user: Thank you for your help.
+assistant: Is there anything else that I can help with?
+user: No thank you, that is all.
+assistant: Okay, have a nice day.

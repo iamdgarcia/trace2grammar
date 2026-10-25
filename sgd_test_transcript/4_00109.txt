@@ -1,0 +1,24 @@
+user: I have a plan to travel in order to attend a function. Will you find a bus to travel?
+assistant: To which place you wish to go?
+user: I want to go to Sacramento.
+assistant: When are you planning to leave? From where you plan to leave?
+user: I am leaving from San Fran. I am planning to leave on next tuesday.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses that suits your need. How about the bus depart at 6 am? it costs around $22.
+user: Which is the station name that bus arrive at?
+assistant: It arrives at 65th Light Rail Station.
+user: From which station does it depart?
+assistant: it departs from Transbay Terminal.
+user: Ok thats great.
+assistant: Do you wish to buy tickets for this bus?
+user: Yes i need to reserve a seat.
+assistant: How many tickets do you need?
+user: it is for 4 people.
+assistant: Please check and review the following details. Bus ticket need to be booked from San Francisco. The destination is Sacramento. THe bus leaves on March 5th at 6 am. The number of passengers is 4 with no extra luggage.
+user: Ok that suits for me. Book it.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed.
+user: THanks a lot for your immense help.
+assistant: whether i need to find anything else?
+user: No, thanks for now.
+assistant: bye take care have a wonderful day.

@@ -1,0 +1,35 @@
+user: Find me a hotel.
+assistant: What city do you want me to look?
+user: Search in Kuala Lumpur.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels that should work. There's a 5 star hotel called Alila Bangsar.
+user: Do you have something else? Search in San Fran.
+tool(SearchHotel): ok n_results=10
+assistant: I have a 1 star hotel called Amsterdam Hostel San Francisco.
+user: What is the phone number and street address?
+assistant: The phone number is +1 415-673-3277 and the address is 749 Taylor Street.
+user: Okay then. Find me a round trip flight to get there as well.
+assistant: What city do you want to leave from?
+user: I'm looking for LAX flights.
+assistant: What day would you like to hve your return flight?
+user: I will return March 13th.
+assistant: Do you want to leave March 1st?
+user: Okay.
+tool(SearchRoundtripFlights): ok n_results=5
+assistant: How about flying with Alaska Airlines? The onward flight leaves at 11:40 pm and it's a direct flight. The reutnr flight leaves at 8:40 pm and costs $146.
+user: When will the flight arrive at the destination? How many people is it for?
+assistant: It's for 1 person. The outbound flight arrives at 1:05 am.
+user: Sounds great. Reserve the hotel you found. I just need one room for four days.
+assistant: Would you like to check in on March 1st?
+user: I will check in on Thursday next week.
+assistant: Could you confirm that you want to book at Amsterdam Hostel San Francisco from March 7th for 4 days in San Francisco? You want 1 room.
+user: That sounds good.
+tool(ReserveHotel): ok n_results=1
+assistant: I have booked the hotel successfully.
+user: Can I smoke on the property? How much is it per night?
+assistant: It's $39 per night and smoking is not allowed on the property.
+user: That's been very helpful. Would you show me some attractions there? Find me a Historical Landmark that is free.
+tool(FindAttractions): ok n_results=3
+assistant: I think you should check out the Historical Landmark Alcatraz.
+user: That sounds good. Catch you later.
+assistant: Have a good day.

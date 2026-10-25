@@ -1,0 +1,28 @@
+user: I'd like to buy bus tickets, can you help?
+assistant: Sure, what time do you want to leave and where are you departing from?
+user: I want to leave from Washington at a quarter past 5 in the evening.
+assistant: What is your destination and how many tickets would you need?
+user: I'm going to Philadelphia on the 10th and there will be four people travelling in total.
+assistant: Okay so just to check, you would like 4 tickets for a bus to Philadelphia leaving from Washington on March 10th at 5:15 pm.
+user: Yes that's correct. What is the name of the destination station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The destination station is called 10th and Filbert. Unfortunately there was a problem with your booking and it was unsuccessful. Would you like me to try and book for the bus leaving at 5:10 pm instead? The cost is $31.
+user: Ok sure that sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been purchased successfully.
+user: Thanks for your help. Can you help me find hotels in the area?
+tool(SearchHotel): ok n_results=10
+assistant: How about Aka Rittenhouse Square, it is a 4 star hotel?
+user: I like the sound of that.
+assistant: Do you want to make a reservation now?
+user: Yes please, go ahead and make a reservation.
+assistant: When would you like to check in?
+user: On the 4th of this month.
+assistant: How long would you like to stay for?
+user: I'd like to stay for four days in total.
+assistant: Before I go ahead, I'd just like to confirm: You would like 1 room at Aka Rittenhouse Square hotel in Philadelphia on March 4th and will be staying for 4 days.
+user: That sounds great.
+tool(ReserveHotel): ok n_results=1
+assistant: Your booking has been successful.
+user: Thanks for your help. I don't need anything else right now.
+assistant: Enjoy your day.

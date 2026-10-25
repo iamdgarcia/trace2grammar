@@ -1,0 +1,14 @@
+user: Can you help me to find some online movies?
+assistant: Which type of movie you want?
+user: For me suspense movies is okay.
+tool(FindMovies): ok n_results=4
+assistant: I have short listed 4 movies of your choice. Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: I want to watch Rojo movie now with spanish subtitles.
+assistant: Please give confirmation details:Run Rojo with spanish subtitles.
+user: Okay, This is perfect.
+tool(PlayMovie): ok n_results=1
+assistant: The movie started playing now.
+user: Can you tell me the actor of this movie?
+assistant: The actor is Rafael Federman.
+user: This is cool..Thank you
+assistant: Have a nice day..

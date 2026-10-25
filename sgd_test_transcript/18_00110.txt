@@ -1,0 +1,29 @@
+user: I need to find a place to eat.
+assistant: Where would you like to search? Which type of cuisine?
+user: I want somewhere in Santa Clara that serves a light meal.
+tool(FindRestaurants): ok n_results=2
+assistant: I found 2 restaurants, one is Dae Bak in Santa Clara.
+user: What is the rating? And the location?
+assistant: The rating is around 4.1 and it is located at 3284 El Camino Real.
+user: That sounds great thanks.
+assistant: Would you like to reserve a table?
+user: Yes, please make a reservation for 1 this Saturday at 6:30 in the evening.
+assistant: You want a table for 1 at Dae Bak in Santa Clara at 6:30 pm on March 2nd, correct.
+user: Yes that is great thanks. Is it pricey?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is reserved. The restaurant's pricing is moderate.
+user: Do they have outdoor seating or vegetarian options?
+assistant: They do not have either.
+user: Thank you for your help.
+assistant: Can I do anything more for you?
+user: I would like a luxurious ride there.
+assistant: You want a Luxury ride for 1 to 3284 El Camino Real, correct?
+user: Yes that is correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab is on the way.
+user: When does it arrive?
+assistant: It will arrive in 8 minutes.
+user: Thanks for your assistance.
+assistant: Can I do anything more for you?
+user: No that is all thank you.
+assistant: Have a great day!

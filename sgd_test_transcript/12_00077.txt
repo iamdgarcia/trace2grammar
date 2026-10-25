@@ -1,0 +1,17 @@
+user: Can you find me a bus from Vegas please
+assistant: Where are you headed and when are you leaving?
+user: I want to leave next Friday and go to Anaheim, CA
+tool(FindBus): ok n_results=4
+assistant: How about the 6:40 am bus for $32
+user: That's good for me
+assistant: What else can I do?
+user: I need four bus tickets
+assistant: Confirming 4 tickets with no extra bags leaving at 6:40 am from Las Vegas to Anaheim on March 8th
+user: Yup that's fine
+tool(BuyBusTicket): ok n_results=1
+assistant: It's been confirmed
+user: Thanks, now can you find me 2, 2 -star hotel rooms
+tool(SearchHotel): ok n_results=10
+assistant: Sure, there are 10 that fit that including the 2 star Alamo Inn & Suites
+user: OK that's good for now, thanks!
+assistant: Sure thing, laters!

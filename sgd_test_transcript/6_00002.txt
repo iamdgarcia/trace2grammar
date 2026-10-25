@@ -1,0 +1,14 @@
+user: Find me a therapist please.
+assistant: What city and which type of therapist do you need?
+user: Find me a Family Counselor in St. Helena.
+tool(FindProvider): ok n_results=2
+assistant: You could try Ellsworth Elizabeth a Family Counselor in St. Helena.
+user: That sounds great.
+assistant: Do you wish to book a therapist appointment?
+user: Yes, I'd like to book a March 9th appointment afternoon 2.
+assistant: Please confirm an appointment with Ellsworth Elizabeth 2 pm March 9th.
+user: Yes, that will work. What is the address?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you'll get an email confirmation soon for 999 Adams Street # 300.
+user: Thanks so much I appreciate it. Good Bye!
+assistant: Glad to help you.

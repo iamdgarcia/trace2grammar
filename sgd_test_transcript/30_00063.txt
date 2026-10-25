@@ -1,0 +1,27 @@
+user: I want to know the weather in San Pablo next Monday.
+tool(GetWeather): ok n_results=1
+assistant: There will be an 18 percent chance of rain with an average temperature of 80.
+user: Alright. I wish to visit a property on that day.
+assistant: Which property do you want to visit?
+user: I'm wanting to see Park Hill Apartments.
+assistant: Okay. To confirm: You want to schedule a visit to Park Hill Apartments on March 4th.
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled your visit.
+user: What does the apartment cost? Does it include a laundry machine?
+assistant: The cost is $3,650,000 and it does have laundry inside the unit.
+user: Thanks. I need to rent a car there. I'd like a Hatchback until the 5th of March and would like to pick it up at John Wayne Airport.
+assistant: When do you want to pick it up?
+user: I'd like to get it at 1:30 in the afternoon.
+assistant: Would you like insurance?
+user: No, I don't need it.
+assistant: Do you want it starting March 4th?
+user: I'll need it later today until next Monday.
+assistant: Okay. Let me confirm. You want to pick up a Hatchback car from John Wayne Airport on March 1st at 1:30 pm. You'd like to drop it off on March 4th. You do not need insurance.
+user: Yes, that's right.
+tool(ReserveCar): ok n_results=1
+assistant: I have reserved your car.
+user: Thank you so much.
+assistant: Do you need help with anything else?
+user: No, thanks. That's all.
+assistant: Have a great day!

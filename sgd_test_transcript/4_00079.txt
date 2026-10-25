@@ -1,0 +1,11 @@
+user: I'd like to find a bus ticket.
+assistant: I'd be happy to help. Let's get some details first. Where are you departing from and where will you be going? When will you be starting your travels?
+user: I'd like to find a bus from Sacramento to SFO for next Friday.
+tool(FindBus): ok n_results=10
+assistant: There is a bus that leaves at 7:40 am for $24.
+user: That works for me.
+assistant: Would you like to purchase your tickets now?
+user: No, I'm not ready to purchase the tickets just yet.
+assistant: Is there anything else I can help you with?
+user: No, I think you've covered everything for the moment. Thank you!
+assistant: You're welcome. Have a wonderful day.

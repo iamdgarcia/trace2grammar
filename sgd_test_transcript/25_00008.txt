@@ -1,0 +1,28 @@
+user: I'd like to schedule a payment for one hundred and forty one bucks.
+assistant: What account ought I transfer using? Who is the contact?
+user: The contact individual is Margaret, and you should transfer using my saving account.
+assistant: Please verify the following information: this will come form your debit card, and the amount is $141. You are making a publicly visible transaction with Margaret.
+user: Yeah, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Your payment is complete. The contact ought to view the cash shortly.
+user: I'd like to look for a diner nearby; get me one that offers ramen.
+assistant: What place ought I look in?
+user: Get me diners in Oakland.
+tool(FindRestaurants): ok n_results=6
+assistant: There is a lovely diner called Delage in Oakland.
+user: Could you recommend some other diner? Get me a diner in San Mateo that offers lobster.
+tool(FindRestaurants): ok n_results=9
+assistant: There is a lovely diner called Andes Cafe San Mateo, situated in San Mateo.
+user: Yeah, that's fine.
+assistant: Do you wish to book a spot there?
+user: Yeah, I'd like to book a spot on the 7th of March.
+assistant: When ought I attempt to book for?
+user: Book it at 11:45 am.
+assistant: Please verify the following information: reserve a spot at Andes Cafe san Mateo in San Mateo. The booking is for 11:45 am on March 7th, for 2 people.
+user: Yeah, that's right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your booking is complete.
+user: Thank you for your assistance.
+assistant: Could I assist you with something else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

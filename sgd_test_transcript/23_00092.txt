@@ -1,0 +1,36 @@
+user: I would like 1 ticket from Anaheim, CA.
+assistant: Where are you traveling to?
+user: I'm going to San Fran on March 8th.
+tool(FindTrains): ok n_results=7
+assistant: There is a train leaving at 6:40 am for $92.
+user: Is there another train available?
+assistant: There is another train leaving at 7:20 am for $88.
+user: Yes, that sounds good. I would like to purchase a ticket.
+assistant: Would you like travel insurance?
+user: Yes, I would like a trip insurance.
+assistant: Booking 1 value ticket from Anaheim to San Francisco on March 8th leaving at 7:20 am.
+user: Yes, that works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been purchased.
+user: I would like to find an attraction in that area on that day.
+assistant: What type of event do you prefer?
+user: I would like to see a Show.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events. There is Above Ground at Mojo Theatre on March 6th at 5 pm.
+user: Where is the venue located?
+assistant: The venue is located at 2940 16th Street #217.
+user: That sounds good, thank you.
+assistant: Do you want to buy a ticket for this event?
+user: No, I would like to share a location.
+assistant: Who would you like to share the location with?
+user: I would like to share it with Katherine.
+assistant: Sharing location Mojo Theatre with Katherine.
+user: I would like to share it with Rachel instead.
+assistant: Sharing location of Mojo Theatre with Rachel.
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed at the moment.
+assistant: Have a nice day!

@@ -1,0 +1,28 @@
+user: I'd like to find a place to eat.
+assistant: What type of food would you like?
+user: Chinese.
+assistant: Where should I search?
+user: San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10 options for chinese in San Francisco. How about Alice's?
+user: What else is there? I'd like something affordable priced.
+tool(FindRestaurants): ok n_results=10
+assistant: There's Beijing Restaurant in San Francisco.
+user: What's their number? Do they have outdoor seating?
+assistant: They do not. BUt their number is 415-333-8182.
+user: That works.
+assistant: Would you like a table?
+user: Yes please, on march 6th at 6:30 in the evening.
+assistant: Please confirm: YOu want a reservation at beijing restaurant in san francisco for 2 on march 6th at 6:30 pm.
+user: Exactly, what's their rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was successful. The rating is 4.1
+user: Could you get me a cab there?
+assistant: To 1801 Alemany Boulevard? Do you have a preferred type of ride?
+user: Yes, and I do, a normal ride.
+assistant: Please confirm: Book a cab going to 1801 alemany boulevard for 2, a regular ride.
+user: Exactly.
+tool(GetRide): ok n_results=1
+assistant: It's booked and on its way!
+user: Thank you, that's all I need.
+assistant: Have a wonderful day!

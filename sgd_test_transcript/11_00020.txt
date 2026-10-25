@@ -1,0 +1,14 @@
+user: I'd like to find a house to stay in that has a 3.6 or higher rating from London, UK. I have three people in my group.
+tool(SearchHouse): ok n_results=10
+assistant: How about 1 Addington Street? It has a 3.6 rating.
+user: Do you have a phone number for the place? Is laundry service available?
+assistant: The phone number is +44 333 400 6116 and it does have laundry service.
+user: This house sounds great. Book me this house for March 3rd.
+assistant: What day will you check out?
+user: I'd like to check out on March 10th.
+assistant: Could you cofirm that the location is in London and that you have 3 people in your group and that you want to check in on March 3rd and check out on March 10th?
+user: That sounds great. How much is it in total?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was made successfully and the total is $3,465.
+user: Thank you for helping. That is all I wanted.
+assistant: It was my pleasure to help. Have a good one.

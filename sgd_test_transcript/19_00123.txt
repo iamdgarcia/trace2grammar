@@ -1,0 +1,33 @@
+user: Can you search a hotel for me?
+assistant: Which city do you want me to search for the hotel?
+user: I want to book a hotel in Vancouver, BC.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star hotel called Atrium Inn Vancouver?
+user: Are there any other hotel which meets my requirements?
+assistant: How about a 4 star hotel called Auberge Vancouver Hotel?
+user: Find me their address and the phone number.
+assistant: The street address is 837 West Hastings Street and you can call them on +1 604-678-8899.
+user: Are there any other hotel which meets my requirements?
+assistant: How about a 3 star hotel called Best Western Plus Chateau Granville Hotel & Suites & Conference Ctr.?
+user: That sounds good. Book me a Sedan car for rent there.
+assistant: Would you like to pick up on March 1st?
+user: I would like to pick up on the 4th.
+assistant: What is the pick up time and drop off date?
+user: I would pick it up at 12:30 pm and drop it off on March 8th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: How about a Sedan Audi A8 available for pick up at Pacific Central Station?
+user: That sounds nice to me. Book me the car.
+assistant: Would you like to have insurance?
+user: No. I don't want to have an insurance.
+assistant: Please confirm: You want me to reserve a Sedan car for rent available for pick up at Pacific Central Station at 12:30 pm on March 4th with the drop off date as March 8th.
+user: No, Please add insurance.
+assistant: Please confirm: You want me to book a car for pick up at Pacific Central Station with insurance.
+user: Yes, That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked your car.
+user: Find me the cost per day.
+assistant: The cost per day is $54.00.
+user: okay. Thank you so much!
+assistant: Can I assist you with anything else?
+user: No. That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,32 @@
+user: My car is in the garage, can you help me buy a bus ticket please?
+assistant: How many would you like?
+user: 3 tickets in total please.
+assistant: Where would you like to go and where are you leaving from?
+user: I want to leave from Fresno and will be travelling to Long Beach, CA.
+assistant: When would you like to travel?
+user: I'll be leaving on the 14th.
+assistant: What time are you planning to leave?
+user: It's not a late start so around 11:15 am would be fine.
+assistant: Okay so to confirm, you want 3 tickets for a bus leaving from Long Beach to Fresno on March 14th at 11:15 am and there is no extra luggage that you will be taking on your journey.
+user: The plans have changed slightly, I'll now need to go to Sacramento, CA and there will be four people travelling as my other friend is joining us.
+assistant: Okay no problem so that's 4 people in total travelling to Sacramento.
+user: Yes that's correct. Is is a one-stop bus journey that goes directly to the destination.
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a one-stop service. Unfortunately the booking failed but I have found another option for you that departs at 11:20 am. The cost is $51.
+user: That's perfect thanks.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your booking has been successful.
+user: Thanks for that. Can you help me find hotels in the area, a 3 star place would be fine. I need 2 rooms in total.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that you might like. How about a 3 star place called Courtyard By Marriott Sacramento Cal Expo?
+user: How much does this place cost. It sounds pretty expensive. Is this a smoking hotel?
+assistant: Smoking in this hotel is not permitted. The cost is $198 per night.
+user: I like the sound of that place. Can you go ahead and make the reservation. I want to check in on March 2nd.
+assistant: How long do you want to stay at the hotel for?
+user: I'll be staying for seven days in total.
+assistant: Okay so to confirm, you would like to book 2 rooms at the Courtyard By Marriott Sacramento Cal Expo in Sacramento on March 2nd for 7 days.
+user: That's correct thanks for confirming.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel booking has been successful.
+user: Thanks for your help, I don't need anything else right now.
+assistant: Enjoy your day.

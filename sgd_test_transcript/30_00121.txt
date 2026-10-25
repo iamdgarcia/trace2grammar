@@ -1,0 +1,35 @@
+user: My roots are showing through pretty bad and I even think I see some grey hair. Could you help me find a salon?
+assistant: Sure, let's start with the name of the city you would prefer the salon be located in.
+user: I like the San Jose area so let's look there first.
+tool(FindProvider): ok n_results=10
+assistant: Of the 10 salon's I was able to find I think you will like Atelier Salon Willow Glen, located in San Jose.
+user: No, I think I would like something different, what's next on the list?
+assistant: The next one I would suggest to you is Barba & Co. San Jose, located in San Jose.
+user: Yep, that sounds like the one for me. Now let's find a movie playing around there.
+tool(FindMovies): ok n_results=10
+assistant: Of the 10 movies I see are playing, the more popular ones are 47 Meters Down: Uncaged, Ad Astra, and After The Wedding.
+user: None of those sound remotely interesting. What other movies are playing?
+assistant: The next ones I would recommend are Angel Has Fallen, Brittany Runs a Marathon, and Fiddler: A Miracle of Miracles.
+user: The movie Fiddler sounds like something I would enjoy!
+assistant: Should I get those tickets for you now?
+user: Not yet, I have a few more things to get in order first.
+assistant: No problem, what else can I do for you?
+user: I need the movie play times for the 4th of this month please.
+tool(GetTimesForMovie): ok n_results=1
+assistant: That movie only has 1 showtime at 4:30 pm, in 3 Below Theaters And Lounge.
+user: Can you tell me what genre this movie is classified as and the price of the ticket please.
+assistant: That film is a documentary costing $6 per person.
+user: Great, let's back track to the salon and schedule that appointment for 10:15 am.
+assistant: So you would like an appointment at Barba & Co. San Jose, on March 4th, at 10:15 am, correct?
+user: Yes that's right and will I need the address to find my way there. I'm also curious about the average rating this place has.
+tool(BookAppointment): ok n_results=1
+assistant: I'm terribly sorry but I won't be able to set that appointment for you at this time. Would you like me to do something elsse for you?
+user: Yes, I really like the sound of that salon so could you try to book the appointment for 12:30 in the afternoon instead?
+assistant: Absolutely, I've changed that to an appointment at Barba & Co. San Jose on March 4th, at 12:30 pm. Is that right?
+user: Yes, hopefully that appointment is available.
+tool(BookAppointment): ok n_results=1
+assistant: You will be happy to know that I have successfully confirmed that appointment for you.
+user: Thanks so much, I really appreciate it!
+assistant: Is there anything else oyu need right now?
+user: No, you've taken care of everything thanks.
+assistant: I'm happy to help, have a great day!

@@ -1,0 +1,29 @@
+user: Find some music for me to listen to please.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs that may interest you. The first is Turn Me On by Konshens. This song is from their Album It Feel Good.
+user: What year did that Album come out. Just asking.
+assistant: The song was released in 2017 on the Album It Feel Good.
+user: Find me another song please.
+assistant: From the Album, King of Everything, the song Pisces by Jinjer may suit your tastes.
+user: That's more like it. Thank you. Can you provide me with a weather forecast?
+assistant: A forecast for what city?
+user: I need to know the weather in American Canyon.
+tool(GetWeather): ok n_results=1
+assistant: There is a 10 percent change that American Canyon will see rain. The temperature is 83 degrees Fahrenheit.
+user: Will it be windy that day?
+assistant: The wind speed should be roughly 3 miles per hour.
+user: Can you tell me what date this is?
+assistant: This particular forecast is for March 1st.
+user: Alright. Play the song Pisces that you found for me earlier.
+assistant: You wish for me to play Pisces in the Living Room for you? Please confirm.
+user: No. No in the living room. Play it on the patio device.
+assistant: Making that change. Playing Pisces on the Patio device. Is that right?
+user: That is certainly correct. Thank you.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy your song.
+user: What kind of music does this classify as? Oh and did it come out in '16?
+assistant: It is a Metal Song from the year 2016.
+user: Okay. Thank you very much.
+assistant: Can I help you with anything else right now?
+user: I don't think so. Thank you again.
+assistant: Have a great evening. Bye for now.

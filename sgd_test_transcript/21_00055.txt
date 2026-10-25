@@ -1,0 +1,15 @@
+user: I want to find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about Bread Winner by Prince Swanny from the Breadwinner album?
+user: That's good. How's the weather there in Palo Alto?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be 79 degrees Fahrenheit on average with a 4 percent chance of rain.
+user: How windy and humid will it be?
+assistant: The humidity is about 19 percent and average wind speed is about 4 miles per hour.
+user: Okay. Would you play the song that you came up with on the living room device?
+assistant: Please confirm that you want to play Bread Winner in Living room.
+user: Sounds good. What sort of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: It's a Reggae song. Please enjoy.
+user: Thanks. That's it.
+assistant: Have a great day.

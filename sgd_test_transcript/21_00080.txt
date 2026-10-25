@@ -1,0 +1,23 @@
+user: I need to check weather for the 10th of this month.
+assistant: In which city would you like to check in?
+user: I wanna see for Portland, OR.
+tool(GetWeather): ok n_results=1
+assistant: The average temp is expected to be 58 degrees Fahrenheit with a 25 percent chance of rain.
+user: How windy is it gonna be?
+assistant: The average wind speed is expected to be 4 MPH.
+user: Humidity information for that day?
+assistant: It is expected to have a humidity of 39 percent.
+user: Thanks for that.
+assistant: Yes, is there anything else to help with?
+user: Is there any good places to visit?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 options, such as Crystal Springs Rhododendron Garden, a park.
+user: Okay, I need a cab for there.
+assistant: Which type of ride would you like? There is Pool or Regular, and anything else. Seats in total?
+user: I need an expensive one this time and have a group of 2.
+assistant: So you would like a ride to Crystal Springs Rhododendron Garden, and 2 seats as a Luxury ride?
+user: Yes, indeed.
+tool(GetRide): ok n_results=1
+assistant: Your ride is now booked and cab is on the way.
+user: Wow then, thanks for that!
+assistant: Of course. Enjoy your safe travels.

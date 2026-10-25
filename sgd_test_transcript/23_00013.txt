@@ -1,0 +1,27 @@
+user: I'd like to look for some films online. I enjoy films showcasing Peter Jackson.
+assistant: What sort of films do you enjoy?
+user: I'd love some fantasy films.
+tool(FindMovies): ok n_results=1
+assistant: What do you think of The Lord of the Rings: The Return of the King?
+user: Lord of the Rings is lovely. Could you tell me about several attractions there?
+assistant: What place ought I look for attractions in?
+user: Look for attractions inside Toronto, Canada?
+tool(FindAttractions): ok n_results=10
+assistant: You ought to look for 3D Toronto sign, which is a tourist attraction.
+user: Alright, fine. What about looking for several music for me right now? Get me something from three years ago by I Prevail.
+tool(LookupMusic): ok n_results=1
+assistant: What is your opinion about Scars by I Prevail from the album Lifelines?
+user: Yeah, that's right.
+assistant: Do you wish for me to cast the music?
+user: Alright. Play it in the living room speaker.
+assistant: Please verify the following information: cast the music Scars in living room.
+user: Yeah, that's right. What sort of song is it?
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your song, which is a metalcore music.
+user: Could you cast the film you discovered? I'd like to view it with subtitles in Hindi.
+assistant: Please verify the following information: casting The Lord of the Rings: The Return of the King, with Hindi subtitles.
+user: Alright, please do so.
+tool(PlayMovie): ok n_results=1
+assistant: The film began casting.
+user: Thank you; that's all for now.
+assistant: Have a pleasant afternoon.

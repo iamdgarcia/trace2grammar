@@ -1,0 +1,17 @@
+user: Hi I'll be travelling from SF to Phoenix and I need to find a one way flight. I'll be leaving on the 14th.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: How about travelling with Alaska Airlines? The departing flight will take off at 11 pm. It's a direct flight and the ticket cost is $123.
+user: That works for me. I also need an economy ticket for a train there.
+assistant: Will you be leaving on March 14th?
+user: Please find me tickets for this Sunday.
+tool(FindTrains): ok n_results=3
+assistant: How about leaving at 6 am? The cost for the ticket is $196 all together.
+user: That works for me. Please book me 1 seat on the train. I'd also like trip insurance.
+assistant: So you'd like 1 ticket for a train leaving from San Francisco and going to Phoenix. The train will be departing on March 3rd at 6 am. It includes trip insurance and it is a value ticket. Is this correct?
+user: That's perfect. What station does it reach and where does it depart from?
+tool(GetTrainTickets): ok n_results=1
+assistant: The train will arrive at Phoenix Union Station and leaves from Salesforce Transit Center.
+user: Thank you so much for all your help.
+assistant: Will you be needing anything else today?
+user: No that's all, thank you again.
+assistant: Have a wonderful day, see you.

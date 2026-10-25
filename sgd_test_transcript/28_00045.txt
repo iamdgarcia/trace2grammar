@@ -1,0 +1,25 @@
+user: Can you find me a movie from the Play genre?
+tool(FindMovies): ok n_results=10
+assistant: Would you like to watch A Faithful Man which has a rating of 78 out of 100?
+user: That sound good to me.
+assistant: Is there anything else I can do for you?
+user: I'm looking for a restaurant in Sunnyvale.
+assistant: Are you interested in any specific cuisine or type?
+user: I prefer a Coffeehouse.
+tool(FindRestaurants): ok n_results=2
+assistant: There are 2 coffeehouses that you may like. Would you like to try Mcdonald's in Sunnyvale?
+user: Do they offer outdoor seating?
+assistant: Sorry, they do not have outdoor seating.
+user: Can you get me their address?
+assistant: Their address is 556 E El Camino Real.
+user: That sounds good. Can you please reserve a table for 4 people at 1 o'clock in the afternoon on March 6th?
+assistant: Please confirm that you would like to reserve a table for 4 at 1 pm on March 6th at the Mcdonald's in Sunnyvale.
+user: Hold on. Can you make that reservation for next Thursday?
+assistant: Okay. So, you would like the table to be reserved for 4 on March 7th. Is that correct?
+user: Yes, that sounds perfect.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table has been reserved successfully.
+user: Thanks a bunch!
+assistant: Is there anything else I can do for you?
+user: No, that'll be all. Thank you.
+assistant: Have a great day!

@@ -1,0 +1,33 @@
+user: I want a SUV rental car from March 12th till 14th of March.
+assistant: What should be the pick up location and time for the car?
+user: The pick up time should be 4:30 pm from Kuala Lumpur.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There is a SUV Alfa Romeo Stelvio car available at KLIA International Airport.
+user: That's great
+assistant: Should I book the car?
+user: Yes, in sometime.
+assistant: Do you want me to help you with anything else?
+user: I want to make an event reservation there.
+assistant: Do you prefer any particular city and time for the event?
+user: Yes, I want it around New York City on March 2nd.
+assistant: How many tickets should I reserve for you?
+user: Reserve 3 tickets.
+assistant: What events are you interested in?
+user: Improv And Acting is very popular
+assistant: Please confirm, 3 tickets booked for Improv And Acting on March 2nd in New York.
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation is confirmed. Have a good time.
+user: What is the venue and start time?
+assistant: The venue is Vimbly and starts at 5:30 pm.
+user: Thank you very much. Now book the rental car you just found for me?
+assistant: Do you want me to include the insurance?
+user: No, not needed.
+assistant: Please confirm, The pick up of the rental car is from KLIA International Airport on March 12th at 4:30 pm. The drop-off is on March 14th. The car is SUV with no insurance.
+user: That's perfect. Tell me the cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: The car reservation is confirmed and costs $29.00 per day.
+user: Thank you very much
+assistant: Do you want me to help you with anything else?
+user: Not now thank you
+assistant: Have a great day!

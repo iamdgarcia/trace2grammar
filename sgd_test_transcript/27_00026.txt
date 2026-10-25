@@ -1,0 +1,29 @@
+user: Hey, I'm bored. Can you find me some attractions I can visit?
+assistant: In which city?
+user: In a San Fran, and I want something with wildlife spot please.
+tool(FindAttractions): ok n_results=3
+assistant: The Aquarium of the Bay is a great Nature Preserve there.
+user: Good, can you help me find a movie I can watch there too?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 of them. How about Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles? Do they sound good to you?
+user: Ad Astra seems like a perfect one.
+assistant: Should I buy the tickets?
+user: Not now, first check if there are any good ones available online.
+assistant: What kind of movies would you like to watch?
+user: I love watching Fantasy.
+tool(FindMovies): ok n_results=2
+assistant: There's either Labyrinth or The Lord of the Rings: The Return of the King. Do they sound good to you?
+user: Anything else? I want to see a crime story featuring Peter Greene.
+tool(FindMovies): ok n_results=1
+assistant: What about Pulp Fiction? It meets your criteria.
+user: Pulp Fiction does sound great.
+assistant: Should I play it?
+user: Please do it.
+assistant: So Pulp Fiction with English subtitles?
+user: Yes, please.
+tool(PlayMovie): ok n_results=1
+assistant: Just started playing it.
+user: Thanks a lot!
+assistant: Anything else I can help you with?
+user: No, thanks a lot.
+assistant: Have an amazing day.

@@ -1,0 +1,29 @@
+user: I want to search some songs now.
+tool(LookupMusic): ok n_results=10
+assistant: I got some 10 songs for you how about mine by Taylor Swift in the album speak now
+user: What is the genre of thistmusic?
+assistant: It's a pop genre.
+user: Yeah that's perfect.
+assistant: Wanna play this song?
+user: Not now maybe later.
+assistant: Is there something else so that I can help you with?
+user: How is the climate there on 2nd of March.
+assistant: Can you name the city which you want to check the climate?
+user: It's pescadero.
+tool(GetWeather): ok n_results=1
+assistant: There is 18 percent chance of rain the average temperature is 76 degree fahrenheit
+user: How humid is expected and also how about windy it gonna be?
+assistant: The average speed of wind is 8 miles per hour and humidity is around 24 percent
+user: Ok thanks
+assistant: Something else would you like?
+user: Can you play the song You just found out?
+assistant: Please confirm the following details : playing mine songsin living room
+user: No can you cast on Patio speaker.
+assistant: Please confirm the following details : playing mine song in patio
+user: Yes that's good can you tell me which year did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: It come out in 2010 ,enjoy your music
+user: Thank you
+assistant: Anything else can I help you with?
+user: No , thanks a lot
+assistant: Have a great day

@@ -1,0 +1,40 @@
+user: Show me my alarms please.
+tool(GetAlarms): ok n_results=2
+assistant: You have 2 alarms set.First is set for 10 am called Commute.
+user: Okay that's great.
+assistant: You want to add an alarm now?
+user: No,I don't want now.
+assistant: Can I do something else for you now?
+user: Find me a restaurant there.
+assistant: What kind of food you want and in which location you want to be?
+user: Find me something where Ramen is served in Livermore.
+tool(FindRestaurants): ok n_results=2
+assistant: I have for you 2 restaurants that you may like.A nice restaurant in Livermore is Kawa Sushi.
+user: Tell me the user rating.
+assistant: Is around 4.3.
+user: Where is this place located?
+assistant: 2180 Third Street is the address.
+user: I like this one, make an reservation for a car there.
+assistant: When you want to be and at what time?
+user: The pick up I want to be at morning 11 and I will need it from 10th of March.
+assistant: What type of car you want and until when?
+user: I would like a Sedan and I want to make the pick up from Palo Alto Caltrain Station.I will need it till March 14th.
+assistant: You need insurance too?
+user: No,I don't need it.
+assistant: You a Sedan car without insurance from Palo Alto Caltrain Station.Pick up date is March 10th at 11 am and drop-off date on March 14th.Is okay for you?
+user: No.I want to make the pick up from Heathrow International Airport.
+assistant: You pick up a Sedan car from Heathrow International Airport.Is okay?
+user: Tes is good.What's the car name and how much is cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.Is a Volvo S90 and cost $28.00 per day.
+user: Thank you a lot.Share please the location with Shirley.
+assistant: You want to share this location 2180 Third Street?
+user: Sounds really good.
+assistant: You share location 2180 Third Street with Shirley.I'm right?
+user: No, address is Heathrow International Airport.
+assistant: You share location Heathrow International Airport with Shirley.Is OK?
+user: Yes is sound good.
+tool(ShareLocation): ok n_results=1
+assistant: The locations is shared.
+user: Thank you. You helped me a lot.That's all.
+assistant: Have a good day!

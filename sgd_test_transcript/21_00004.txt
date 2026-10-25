@@ -1,0 +1,27 @@
+user: I need to catch a cab, but the information I'm getting is a bit sketchy right now. So far, the address where I need to go is 3236 Grand Avenue, and the most comfortable mode of travel would be appreciated. Can you start working through this with me?
+assistant: Certainly. Do you know the number of passengers for the cab ride?
+user: There would be two passengers.
+assistant: All right. Would you like to confirm a luxury cab ride for 2 passengers, going to 3236 Grand Avenue?
+user: Oh, sorry, a different destination has come up. Please make that a trip to the Cascades Apartments with Normal seating.
+assistant: The change is noted. Are you ready to confirm a regular cab ride to the Cascades Apartments?
+user: Oh, and change the number of passengers to one, please.
+assistant: Will do. I can confirm your cab ride for 1 passenger, going to the Cascades Apartments, if you like.
+user: Yep, you've got it right. Let's confirm that.
+tool(GetRide): ok n_results=1
+assistant: Your cab ride is confirmed and is scheduled to pick you up in about 5 minutes.
+user: Great. What's the ride going to cost me?
+assistant: The total for your trip is $22.83.
+user: Good deal. Really appreciate that. I could listen to some cool music to soothe my nerves. What Popular songs would you suggest, maybe something from the fantastic Happiness Begins album?
+tool(LookupMusic): ok n_results=3
+assistant: I'm showing 3 songs that might interest you from the Happiness Begins album. Would you like to hear the song Cool by the Jonas Brothers?
+user: That's a perfect choice. Play it now, please.
+assistant: All right. Please confirm that you want to play the song Cool in the Living room?
+user: Um, please play it on the patio device.
+assistant: Got it. Please verify that the song Cool will play on the Patio.
+user: Yep, giving you the go-ahead.
+tool(PlayMedia): ok n_results=1
+assistant: The song will play now. Enjoy.
+user: Super. You have my gratitude.
+assistant: Would you like further assistance?
+user: Nope, that's it for now. Thanks so much.
+assistant: Sure thing. Enjoy the rest of your day.

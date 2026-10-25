@@ -1,0 +1,25 @@
+user: I'd like to find a house with a 4.4 or higher rating to stay in while visiting New York City.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 that match your criteria. May I suggest 111 North 12th Street, Brooklyn? It has a 4.4 average user rating.
+user: What is the phone number?
+assistant: You can reach them at +1 718-631-8400.
+user: Do you know if they offer laundry service?
+assistant: They do offer laundry service.
+user: Nice. I'd like to make a reservation.
+assistant: What is the timeline for your stay.
+user: I'd like to leave on the 13th.
+assistant: When will you be arriving? How many are in your party?
+user: There will be three of us arriving on March 8th.
+assistant: Let me review this reservation with you. You'd like to reserve the house in New York For March 8th until March 13th and there are 3 people in your party.
+user: I'm sorry, I have some changes to that. I'd like to extend it a day and leave on the 14th instead and there will be a total of four of us now.
+assistant: You'd like to make the reservation for 4 people and check out on March 14th.
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been successful. You should be receiving an email confirmation shortly.
+user: I'd like to find a kid-friendly museum nearby.
+tool(FindAttractions): ok n_results=10
+assistant: If you are interested in visiting a museum, you might like the 9/11 Tribute Museum.
+user: That may work.
+assistant: Is there something else I can help you with today?
+user: No, thank you.
+assistant: You're very welcome. Have a wonderful day!

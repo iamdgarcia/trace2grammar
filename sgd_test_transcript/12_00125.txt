@@ -1,0 +1,32 @@
+user: Can you help me some interesting fun things to do on the 1st? I really like Songs and stuff like that.
+assistant: I can help with that. Is there any particular city you would like me to search in?
+user: Find me something around London.
+tool(FindEvents): ok n_results=6
+assistant: Hansard is a very popular event taking place at Lyttleton Theatre on March 1st starting at 6 pm.
+user: They are alright, but what I'm not interested. Find me something else in LA.
+tool(FindEvents): ok n_results=10
+assistant: Ain Gordon is a popular event taking pace at Ralph Freud Playhouse on March 1st at 7:30 pm.
+user: That sounds fantastic.
+assistant: Would you like to purchase tickets to this event?
+user: Not right now.
+assistant: Is there anything else I could help you with?
+user: Yes. I just remembered that I need to request a payment.
+assistant: Who would you like to make the payment to?
+user: The person I need to send the payment to is in my contacts as Mary.
+assistant: What amount would you like to transfer?
+user: I would like to transfer 117 bucks.
+assistant: You would like to transfer $117 to Mary. Is that correct?
+user: Yes that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: The payment has been made without issue.
+user: Great. Can I buy three tickets to that event from earlier now?
+assistant: Certainly. You would like 3 tickets to Ain Gordon on March 1st in Los Angeles. Is that correct?
+user: No, actually I want four tickets.
+assistant: You would like 4 tickets to Ain Gordon. Is that correct?
+user: Yes that is correct. Can you tell me where the venue is located and how much 1 ticket costed?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets have been purchased. The ticket cost was $40 and the venue is located at 245 Charles E Young Drive East.
+user: Awesome, good to know. Thank you for that.
+assistant: Is there anything else I can assist you with today?
+user: Not right now, I'll let you know if I need anything.
+assistant: Okay, Good bye.

@@ -1,0 +1,12 @@
+user: Can you find me a nice hotel?
+assistant: Which is your preferred city?
+user: Find the hotel in LAX.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel called Ac Hotel By Marriott Beverly Hills.
+user: Can you find me two rooms in any other hotel?
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel called Ac Hotel By Airtel Plaza Hotel.
+user: Can you find out whether smoking allowed in the hotel and the street address of the hotel?
+assistant: Smoking is not allowed and the street address is 7277 Valjean Avenue, Van Nuys, California 91406, United States.
+user: That sounds good. That will be all now.
+assistant: I am glad I could help. Bye! Have a nice day!

@@ -1,0 +1,33 @@
+user: Help me find a salon.
+assistant: What area are you interested in?
+user: I want a salon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: I've found 10 salons that match. There's a nice salon called 1512 Barber Shop in San Francisco.
+user: I like the sound of that.
+assistant: Do you want to make an appointment.
+user: Yes I do.
+assistant: What is the date and time that you prefer?
+user: It should be on the 5th of March at 5:45 in the evening.
+assistant: I'll make you an appointment at 1512 Barber Shop on March 5th at 5:45 pm. Please confirm this is what you want.
+user: That's what I want. Can you also tell me their average rating and phone number
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry but they're all booked at that time. How about an appointment for March 5th at 6 pm at 1512 Barber Shop? Their phone number is 415-286-4371 and their average rating is 4.8.
+user: Yes, try an appointment at that time.
+tool(BookAppointment): ok n_results=1
+assistant: I've made the appointment successfully.
+user: Thanks, what restaurants are around there, I need to find a place to eat that day.
+assistant: Is there a type of food you prefer?
+user: I really like Latin American food.
+tool(FindRestaurants): ok n_results=8
+assistant: There are 8 restaurants that match. Alegrias is a nice place in San Francisco.
+user: Okay, that works.
+assistant: Do you want to reserve a table?
+user: Yes, please do the reservation.
+assistant: What time would you like the table.
+user: I want it for 18:45.
+assistant: I'll reserve a table for 2 at Alegrias in San Francisco on March 5th at 6:45 pm. Is everything correct?
+user: Yes, that's correct. Is it expensive there and do they have any outdoor dining?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's moderate in price range and they do not have outdoor dining. I'm sorry but Alegrias is all booked at that time. How about a reservation for 2 on March 5th at 7 pm?
+user: That won't work. I don't need any more help.
+assistant: Have a good rest of your day.

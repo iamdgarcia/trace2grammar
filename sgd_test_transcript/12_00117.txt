@@ -1,0 +1,23 @@
+user: I'm trying to find an interesting activity.
+assistant: What kind of event were you interested in?
+user: I very much enjoy musical performance.
+assistant: Is there a city in particular that you were thinking of?
+user: Yes, I'd like something in the Phoenix, AZ area.
+tool(FindEvents): ok n_results=10
+assistant: There is a performance at The Van Buren of the group Bad Suns. That's at 4:30 pm on March 2nd.
+user: What's the address please? Also what is the ticket price?
+assistant: The venue is located at 401 West Van Buren Street and the cost of admission is $55.
+user: OK, that will work. I also have a payment request that I need to make. It would be in the amount of 13 dollars and I needed to go to Victoria.
+assistant: Confirming a $13 transaction with Victoria. Please be aware that this is a public transaction.
+user: That's fine, thank you.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request has completed successfully.
+user: Great. I'd like to go ahead and get tickets now for that event, three of them please.
+assistant: Confirming 3 tickets for the Bad Suns show in Phoenix on March 2nd.
+user: On second thought, I think I just need 1 ticket.
+assistant: Confirming a ticket for 1 to the Bad Suns performance.
+user: Yes, that's correct, thanks.
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket has been purchased. Enjoy the show!
+user: Thank you very much. I'm all set.
+assistant: You are very welcome.

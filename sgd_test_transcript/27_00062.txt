@@ -1,0 +1,27 @@
+user: Find me attraction to visit please.
+assistant: Where should I look?
+user: In San Francisco.
+tool(FindAttractions): ok n_results=10
+assistant: Here are the first 10 this is one of the best known one's its Alcatraz a Historical Landmark.
+user: That's good but how about some more - something a kid could get into.
+tool(FindAttractions): ok n_results=9
+assistant: Okay what about these 9 the Nature Preserve called the Aquarium of the Bay is a big hit with families.
+user: That works, I will probably want to take in a movie to I want to see it at the Century San Francisco Centre 9 and XD and my favorite genre is Supernatural.
+tool(FindMovies): ok n_results=1
+assistant: Maybe IT Chapter Two?
+user: IT Chapter Two alright that has to be a good one.
+assistant: Will you be needing me further?
+user: Yes, find a good online movie that has Daniel Veronese as a main character.
+assistant: What genre?
+user: Exotic genre would be nice this time thanks.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 its is called Zama what do you think?
+user: Zama would be good.
+assistant: Should I start it now?
+user: Yes I want to see it now and I want subtitles- in English please.
+assistant: That's Zama with English subtitles correct?
+user: You got it.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Appreciate it you can go now.
+assistant: Have a really nice day.

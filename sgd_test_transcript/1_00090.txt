@@ -1,0 +1,18 @@
+user: Hi, could you help me search for a hotel please?
+assistant: Any preferred city I should look at?
+user: Something in NY is fine.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 5 star hotel called 1 Hotel Brooklyn Bridge?
+user: Could you make a reservation for 2 rooms at that hotel?
+assistant: And how long will you be staying?
+user: Just one day will do.
+assistant: When will you be checking in?
+user: Likely on March 1st.
+assistant: Please confirm your reservation for 2 rooms at 1 Hotel Brooklyn Bridge in New York on March 1st for 1 day.
+user: Sure, that is fine.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel reservation has been made.
+user: Thank you for your help!
+assistant: No worries, any further help you would need?
+user: No, that is all. Thank you!
+assistant: Have a great day ahead!

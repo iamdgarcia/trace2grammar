@@ -1,0 +1,19 @@
+user: I'm trying to find three rooms in a hotel in London that allows guests to smoke.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star hotel called the Abbey Court Hotel (Hyde Park)?
+user: That sounds like a good option.
+assistant: Shall I book the rooms for you?
+user: Not now, maybe later.
+assistant: Is there anything else I can do for you?
+user: How's the weather there on March 1st?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be around 81 degrees Fahrenheit with a 23 percent chance of rain.
+user: Thanks for that. Now I'd like to reserve the hotel that you found for 7 days starting March 1st.
+assistant: Please confirm that you would like to book 3 rooms in Abbey Court Hotel (Hyde Park) in London, for 7 days from March 1st.
+user: That's perfect! Can you get me their street address and the price per night?
+tool(ReserveHotel): ok n_results=1
+assistant: The rooms have been successfully booked. A room costs $252 per night and their address is Sussex Gardens.
+user: Thank you for the assistance.
+assistant: Can I help you with anything else?
+user: No, thank you. You have been very helpful.
+assistant: Have a great day! Bye!

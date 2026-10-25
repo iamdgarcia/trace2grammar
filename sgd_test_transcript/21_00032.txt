@@ -1,0 +1,15 @@
+user: Hi, I'm in the mood for some good music. Can you help me find some tracks by Konshens? I really dig Reggaeton music.
+tool(LookupMusic): ok n_results=2
+assistant: There are 2 songs that you may like. One is by Konshens from the It Feel Good album called Bruk off Yuh Back.
+user: What year was that song released?
+assistant: This song was released in 2016.
+user: Perfect, that's what I want to hear. Can you tell me what the weather is expected to be like on 10th of March in Vancouver, BC?
+tool(GetWeather): ok n_results=1
+assistant: On that day, the expected weather temperatures will be 68 degrees Fahrenheit with a 25 percent chance of rain.
+user: Great. Now can I listen to the track you previously mentioned?
+assistant: You would like to hear the song Bruk Off Yuh Back in the Living Room?
+user: Sure, that works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Happy listening to your song!
+user: Great, that's everything I needed. Thanks.
+assistant: Enjoy your day.

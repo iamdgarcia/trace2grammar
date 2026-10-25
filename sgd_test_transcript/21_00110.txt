@@ -1,0 +1,36 @@
+user: Can you find me something fun to do on the 9th of this month around New York?
+assistant: Do you want a theater show? Music? Or some other kind of attraction?
+user: I want to watch a great Stage Show
+tool(FindEvents): ok n_results=10
+assistant: I think you might like the Advanced Acting Scene Study that's at TGW Acting Studio happening on March 9th at 5 pm
+user: That's awesome, but can you find me some other events on the 12th of March
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events including Broadway Brunch which is a popular show taking place at the Engine Room New York on March 12th at 7 pm
+user: That sounds great
+assistant: Do you want tickets for this?
+user: Not now, maybe in a bit
+assistant: OK what else can I assist you with?
+user: Find me buses headed there
+assistant: Do you want to leave on March 12th?
+user: Actually I plan to head out on Monday next week
+assistant: Where are you coming from?
+user: I'll be coming from Washington
+tool(FindBus): ok n_results=7
+assistant: I found 7 buses that work including a 6:20 am bus for $36
+user: What else is there?
+assistant: How about this 12:10 pm bus for $39
+user: OK great. Now I need four round trip flight tickets with Southwest Airlines with a March 14th return date
+assistant: Do you want to leave on March 4th or March 12th or another date?
+user: I want to leave on the 2nd of this month
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight via Southwest Airlines leaving at 4 pm with a 5:10 pm return flight for $122
+user: That sounds good, now I need two hotel rooms in the area that allow smoking, any three star hotel will do
+tool(SearchHotel): ok n_results=10
+assistant: OK I found 10 hotels including the 3 star 11 Howard
+user: That's great. Now find me tickets to that event you found
+assistant: You want 4 tickets to Broadway Brunch on March 12th in New York right?
+user: Yes that works, and how much is a ticket and where is the venue?
+tool(BuyEventTickets): ok n_results=1
+assistant: It's been booked and it'll be $45 each located at 707 8th Avenue
+user: Thanks for that, that's all for now
+assistant: OK bye then!

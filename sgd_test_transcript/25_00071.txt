@@ -1,0 +1,38 @@
+user: What alarms do I have set?
+tool(GetAlarms): ok n_results=4
+assistant: You have Wake up, set for 9 am.
+user: All right, cool.
+assistant: Would you like to set another alarm?
+user: No, I don't want to set another alarm right now.
+assistant: Would you like my help with anything else?
+user: Yes, please search for restaurants in that area.
+assistant: Sorry I didn't understand your request. Please tell me the city I should search in.
+user: Sorry. Please search for Italian restaurants in SFO.
+tool(FindRestaurants): ok n_results=10
+assistant: Sure. I found a nice San Francisco known as 54 Mint Ristorante Italiano.
+user: Could you tell me the restaurant's user rating? Also find out if they offer vegetarian dishes.
+assistant: They are rated around 4.4 stars, and offer a good selection of vegetarian dishes.
+user: Cool, that's great. Please reserve me a car in that area.
+assistant: No problem. Please tell me your preferred car type, and pick-up and drop-off dates.
+user: I'd like to pick up an SUV at 2 o'clock in the afternoon and drop it off on Friday next week.
+assistant: what's your preferred pick-up location? Would you like to buy insurance?
+user: Yes, please add insurance. I'd like to pick it up at Sacramento Valley Station.
+assistant: Okay. What's your preferred pick-up date and time?
+user: I'd like to pick it up next Wednesday at 4 pm.
+assistant: All right. Please confirm that you'd like to pick an SUV from Sacramento Valley Station on March 6th at 4 pm. and drop it off on March 8th.
+user: No. I'd actually like to pick it at Heathrow Airport. There's been a change of plans and I'll be travelling. My drop-off date is 7th of March
+assistant: All right, no problem. Please confirm that you'd like to pick up the car from Heathrow International Airport and drop it off on March 7th.
+user: Yes, that is correct. The car make and model, please? And what's the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car. The car is a GMC Terrain. The daily cost is $55.00.
+user: Wait, I'd like to share the address.
+assistant: Please tell me the location you want to share. You can say 16 Mint Plaza, Heathrow International Airport or something else.
+user: Please share the 16 Mint Plaza address with Alan.
+assistant: All right. Let me see if I got everything correctly: You want to share the 16 Mint Plaza address with Alan.
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Address successfully shared.
+user: Thank you very much. You've been very helpful.
+assistant: Will there be anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a great day!

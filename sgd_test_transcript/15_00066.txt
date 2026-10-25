@@ -1,0 +1,28 @@
+user: I am looking for a therapist, specifically a Psychiatrist practicing in San Jose.
+tool(FindProvider): ok n_results=6
+assistant: May I suggest Dr. Manuj K. Nangia a Psychiatrist based in San Jose?
+user: Where are they located?
+assistant: They are located at 2516 Samaritan Drive.
+user: Do you have their contact number?
+assistant: Their phone number is 408-357-0105.
+user: Please continue searching for other therapists. Search for a Psychologist in Lafayette.
+tool(FindProvider): ok n_results=10
+assistant: Your search yielded 10 therapists that might interest you. Would you like to try Alissa Scanlin Psyd, a Lafayette based Psychologist?
+user: Sounds like that could work. Please also find out the weather forecast for the day after tomorrow.
+tool(GetWeather): ok n_results=1
+assistant: The expected average temperature for the day is 85 degrees Fahrenheit, with a 17 percent chance of rain.
+user: And the expected wind speeds?
+assistant: The average wind speeds should be around 7 mile per hour.
+user: How much humidity is expected?
+assistant: The humidity is approximately 18 percent.
+user: Okay, thanks. Sound like a good day to ride my bike. Please book me an appointment on that day, with the therapist you just found.
+assistant: For what time should I book the appointment?
+user: Please book the appointment for 10:45.
+assistant: Please confirm that you'd like to book a 10:45 am. March 3rd appointment with Alissa Scanlin Psyd.
+user: No, sorry I've just realized I'll not be done with a prior engagement. Please make the appointment time morning 11:30.
+assistant: Sure, no problem. Please confirm that the date and time is March 3rd at 11:30 am.
+user: That is correct. Could you give me their location and contact number?
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment, and a confirmation email will be sent to you shortly. They are located at 3468 Mount Diablo Boulevard, and their phone number is 707-371-2433.
+user: Thank you very much. You've been very helpful. Goodbye!
+assistant: Happy to have been of help.

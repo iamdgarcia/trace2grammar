@@ -1,0 +1,30 @@
+user: I wish to get bus tickets.
+assistant: Where do you want to go?
+user: I wish to go to Long Beach.
+assistant: When do you want to go? Number of tickets you want?
+user: I need it for 3 persons at half past 5 in the evening.
+assistant: From which place do you want to leave and when will you leave?
+user: I will leave on March 8th from SFO.
+assistant: Kindly ensure that, on March 8th, 3 tickets have been booked from San Francisco to Long Beach at 5:30 pm. You don't have extra luggage.
+user: It is nice for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, I am unable to purchase the tickets. What about a bus stating at 5 pm? The total cost is $48.
+user: It is good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is booked.
+user: Could you please help me to find a rental car?
+assistant: Do you need it from March 8th?
+user: I need a car from Long Beach on the 9th. I need it upto 12th of March.
+assistant: What is your pick up time?
+user: I wish to pick it up at half past 4 in the evening.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice SUV Alfa Romeo Stelvio car available at LGB Airport.
+user: It is nice. Please reserve the car.
+assistant: Shall I add insurance?
+user: No. I don't need it.
+assistant: Kindly ensure that, on March 9th, a SUV car will pick up from LGB Airport at 4:30 pm. The drop off date is March 12th.
+user: It is good. What is the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: The reservation is successful. The total price is $36.00 per day.
+user: Thank you so much. That is what I want.
+assistant: Have a nice day.

@@ -1,0 +1,16 @@
+user: Could you help me find some online movies to watch?
+assistant: I sure could. What type of movies were you thinking of?
+user: I really want to see something funny.
+tool(FindMovies): ok n_results=5
+assistant: How about My Big Fat Greek Wedding, Chhichhore or Good Boys, which are all funny movies?
+user: I've been wanting to see Greek wedding, so that'll be fine.
+assistant: Would you like to begin watching the movie now?
+user: I sure do and I want the English subtitles to be turned on.
+assistant: Confirming playback of the film My Big Fat Greek Wedding with the English subtitles feature turned on.
+user: Cool, thanks. Hey, could you tell me who's in the cast?
+tool(PlayMovie): ok n_results=1
+assistant: The cast includes Andrea Martin and the movie is now playing.
+user: Okay, thank you for doing that.
+assistant: You're welcome. Will there be anything else?
+user: Nope, but thanks again.
+assistant: Thank you very much.

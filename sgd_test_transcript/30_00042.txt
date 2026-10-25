@@ -1,0 +1,27 @@
+user: I want to buy tickets to an event coming soon.
+assistant: How many tickets do you want me to purchase for you?
+user: I only need one ticket to the event.
+assistant: What event do you want a ticket to and what date do you want to attend?
+user: I want to view Chaos Theory on Sunday this week.
+assistant: The event takes place in multiple places. What city do you wish for me to search in?
+user: Look for something in the NY area.
+assistant: I am booking 1 ticket for Chaos Theory on March 3rd in New York. Shall I proceed?
+user: Alright. Purchase the tickets for me but I have a couple of questions. How much is the ticket and what time does the event start?
+tool(BuyEventTickets): ok n_results=1
+assistant: I have confirmed the reservation to your event. The start time is 4 pm. The cost of the ticket is $35.
+user: Great. Thanks for booking the event. What buses are heading there on the 1st of this month?
+assistant: Can you provide me the departure location for the bus?
+user: I'll be departing from Philly.
+tool(FindBus): ok n_results=6
+assistant: There is a bus leaving at 9 am with a ticket price of $23. Is that okay with you?
+user: Can you provide me with more options?
+assistant: There is another bus that is departing at 10:10 am. It costs slightly less at $21.
+user: That sounds better to me.
+assistant: If you want, I can buy tickets for this bus ride. Shall I go ahead?
+user: Yes, please reserve a seat for me.
+assistant: If you wish for me to proceed, confirm the following. Buying 1 ticket for a bus leaving on March 1st from Philadelphia to New York at 10:10 am.
+user: That works fine for me. Purchase the tickets. Now, can you tell me the station it will leave from and arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been purchased. The bus will depart from 10th and Filbert and arrive at Penn Station.
+user: That's all I will be needing for now. Thank you for helping me figure out my travel plans.
+assistant: It was my pleasure. Enjoy your day.

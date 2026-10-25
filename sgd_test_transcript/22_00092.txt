@@ -1,0 +1,40 @@
+user: Hi, could you get me a therapist please?
+assistant: Any specific therapist and location you are look at?
+user: A psychologist in Novato will be great.
+tool(FindProvider): ok n_results=5
+assistant: How about a Psychologist in Novato called Christina M. Walker?
+user: Are there any alternatives?
+assistant: How about a Psychologist in Novato called Deborah Clark?
+user: Sounds great! Could you get an appointment with her at 5:30 pm?
+assistant: And what date will this be for?
+user: On the 8th please.
+assistant: Please confirm your booking with Deborah Clark at 5:30 pm on March 8th.
+user: Sounds great to me!
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, your appointment could not be made. How about an appointment with Deborah Clark at 5 pm on March 8th?
+user: I am fine with this arrangement too.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you should receive an email confirmation soon.
+user: Could you also help me request a payment please?
+assistant: How much and who are you requesting the payment from?
+user: Could you request 43 bucks from Tom?
+assistant: Sure, please confirm your public request for $43 from Tom.
+user: Sure, that is fine with me.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been successfully made.
+user: Could you get me a restaurant with vegetarian options in that area on that day please?
+assistant: And what type of food would you prefer?
+user: A Sushi Bar will be great!
+tool(FindRestaurants): ok n_results=2
+assistant: How about Sushi Tri, located in Novato?
+user: May I have their user rating please?
+assistant: They have a current rating of 4.6.
+user: Sounds perfect to me!
+assistant: Would you like to reserve a table there?
+user: Could you do so for one at 11:15 in the morning please?
+assistant: Please confirm your booking for 1 at Sushi Tri in Novato at 11:15 am on March 8th.
+user: This is fine with me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much, that is all I need.
+assistant: Have a great day ahead!

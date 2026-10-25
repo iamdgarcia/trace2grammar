@@ -1,0 +1,28 @@
+user: I want to check the weather for Wednesday next week.
+assistant: What city would you like to check?
+user: I want the weather in Cotati
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 93 Fahrenheit with a 27 percent chance of rain.
+user: What will the humidity be? Is it going to be windy?
+assistant: The humidity is projected to be around 41 percent with a wind speed of 9 miles per hour.
+user: What will the weather be in Chicago on Monday next week?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 65 degrees Fahrenheit with a 35 percent chance of rain.
+user: Thank you. I want to find a one-way flight there.
+assistant: Do you want to leave on March 4th?
+user: I am leaving on the 2nd of March.
+assistant: What city are you departing from?
+user: I'm leaving from New York City.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 flights. There is an American Airlines flight that leaves at 11:20 am with one layover for $190.
+user: When will my flight arrive?
+assistant: The flight arrives in Chicago at 3:06 pm.
+user: Great. Can you find a rental car there? I'd like to pick it up at 5:15 pm on the 10th of March.
+assistant: How long do you need the car?
+user: I need it until the 12th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: .I found 10 cars. There is a SUV Dacia Duster at Chicago Union Station
+user: That sounds good.
+assistant: Anything else I can do for you?
+user: No, that's all. Thank you.
+assistant: Have a great day!

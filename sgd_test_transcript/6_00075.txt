@@ -1,0 +1,18 @@
+user: Can you help me find a salon?
+assistant: What city shall I check for you?
+user: I would prefer one in Livermore.
+tool(FindProvider): ok n_results=6
+assistant: Fusion 3 Salon Livermore is nice one located in Livermore.
+user: Can you give me the address and telephone number please?
+assistant: The telephone is 925-447-1776, they are located at 1776 First Street
+user: Thank you, sounds good.
+assistant: Shall I make an appointment?
+user: Yes please for 2:30 in the afternoon on the 10th of March.
+assistant: To confirm: You would like an appointment at Fusion 3 Salon Livermore on March 10th at 2:30 pm. Is this correct?
+user: Yes it is. Do you know if they're unisex and what their rating is?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. They have a rating of 4.8, they are not unisex.
+user: Thank you.
+assistant: Is there anything else i can do?
+user: No that will be all.
+assistant: Have a lovely day.

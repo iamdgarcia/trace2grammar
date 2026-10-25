@@ -1,0 +1,38 @@
+user: I would like to find a unisex salon.
+assistant: Which city should I search in?
+user: I would like a salon in SFO.
+tool(FindProvider): ok n_results=10
+assistant: There is 1512 Barber shop that is located in San Francisco.
+user: I would like to find a therapist psychologist in SFO.
+tool(FindProvider): ok n_results=4
+assistant: There is Adam E. Pollock he's a psychologist from San Francisco.
+user: What is their address and phone number?
+assistant: Their address is 100 Masonic Avenue and their phone number is 415-346-2356
+user: Yes, that sounds good.
+assistant: Would you like to book an appointment?
+user: Yes, I would like to book an appointment.
+assistant: What time would you like to go?
+user: I would like to go at 4:45 in the evening.
+assistant: When would you like your appointment?
+user: I would like to go today.
+assistant: Booking appointment at Adam E. Pollock at 4:45 pm on March 1st.
+user: Can you make the appointment for the 2nd of this month?
+assistant: Booking appointment at Adam E. Pollock on March 2nd.
+user: Yes, that works with me.
+tool(BookAppointment): ok n_results=1
+assistant: I was unable to book an appointment at that time would you like to go at 4:30 pm at Adam E. Pollock on March 2nd?
+user: Yes, that would work.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked.
+user: I would like to go to the previous salon found that day at 12:00.
+assistant: Booking appointment at 12 pm at 1512 Barber shop on March 2nd.
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=0
+assistant: I was unable to book that appointment. Can I help with something else?
+user: I would like to go at 13:30.
+assistant: Booking appointment at 1512 Barber shop at 1:30 pm on March 2nd.
+user: Yes, that sounds good.
+tool(BookAppointment): ok n_results=0
+assistant: I was unable to book at that time. Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

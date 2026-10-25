@@ -1,0 +1,20 @@
+user: I need to locate a house.
+assistant: In which city?
+user: I'm going to Phoenix.
+tool(SearchHouse): ok n_results=10
+assistant: There is a home located at 10 East Thomas Road with a 4.6 rating.
+user: Can you book the home for 2 guests for the 5th of March.
+assistant: What is your check in date?
+user: Checking in later today.
+assistant: Please confirm you want me to book a home for 2 guests in Phoenix checking in on March 1st and checking out on March 5th.
+user: That sounds perfect.
+tool(BookHouse): ok n_results=1
+assistant: Thanks. Your reservation was a success.
+user: Can you show me a museum in the area which is child friendly?
+tool(FindAttractions): ok n_results=5
+assistant: There are 5 options. The Arizona Capitol Museum is a Museum in the area.
+user: Are there any other free attractions?
+tool(FindAttractions): ok n_results=1
+assistant: There is 1 option. The Arizona Science Center is a museum attraction in the area.
+user: Thanks that's all for now. Goodbye.
+assistant: Okay. Goodbye.

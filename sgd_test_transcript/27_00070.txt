@@ -1,0 +1,24 @@
+user: Hello, I was hoping you can help me find bus tickets.
+assistant: Yes, I can do that. Where are you leaving from?
+user: I will be leaving from Fresno, CA.
+assistant: What date are you planning to leave and what is your destination?
+user: I am planning to leave on the 12th of March and want to travel to Sacramento, CA.
+tool(FindBus): ok n_results=6
+assistant: I have found 6 buses that might work for you. There is a bus departing at 6:20 am and tickets are $34.
+user: That sounds good. Can you also show me things to do around Sacramento?
+tool(FindAttractions): ok n_results=8
+assistant: There are 8 attractions that might interest you. There is a museum called the California State Capitol Museum.
+user: That sounds cool. Can you tell me more?
+assistant: There is also a museum called the California State Railroad Museum.
+user: Okay, that sounds great. Can you purchase the bus ticket we discussed earlier?
+assistant: How many tickets will you need?
+user: I will need three tickets.
+assistant: Please confirm the following details: You would like 3 tickets for the bus leaving from Fresno to Sacramento on March 12th. The bus will depart at 6:20 am. No extra luggage in this trip.
+user: Yes, that is correct. What station will it depart from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed. It departs from 2660 Tulare St.
+user: Thank you for your help! Can you help me find hotels in that area, also?
+tool(SearchHotel): ok n_results=10
+assistant: I have found 10 hotels that match, one being the Courtyard by Marriott Sacramento Cal Expo. It is a 3 star hotel.
+user: Sounds great, but that will be all for now.
+assistant: Have a good trip! Goodbye!

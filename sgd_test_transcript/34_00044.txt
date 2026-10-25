@@ -1,0 +1,20 @@
+user: I want to find a three star hotel.
+assistant: What city are you looking in?
+user: I want to find hotels in Paris, France.
+tool(SearchHotel): ok n_results=10
+assistant: Aparthotel Adagio Access Paris La Villette is a 3 star hotel.
+user: Great. What are some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that may interest you. American Church in Paris is a place of worship.
+user: Cool, are there any attractions that are child-friendly?
+tool(FindAttractions): ok n_results=9
+assistant: There are 9 attractions you might like. Arc de Triomphe is a historical landmark.
+user: What is the phone number.
+assistant: The phone number is 1 55 37 73 77.
+user: Great. I want to make a reservation for the 7th. I'll be staying for six days.
+assistant: Please confirm: 1 room at the Aparthotel Adagio Access Paris La Villette in Paris. Check in is March 7th. You'll be staying for 6 days.
+user: Sounds good. Is smoking allowed?
+tool(ReserveHotel): ok n_results=1
+assistant: No, smoking is not allowed. Your reservation has been made.
+user: Thank you, that's all for now.
+assistant: Have a great day!

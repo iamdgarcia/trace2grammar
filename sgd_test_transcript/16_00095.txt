@@ -1,0 +1,39 @@
+user: I am looking for a salon.
+assistant: What city do you want me to look in?
+user: I would like to find one in San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: I have located 10 salons that might interest you. One nice one is called 1512 Barber Shop and it is located in San Francisco.
+user: Would you be able to locate a different one for me?
+assistant: Another good salon that is in San Francisco is 20Th Salon and Barber.
+user: What is the phone number there?
+assistant: You can reach them by phone at 415-824-1335.
+user: What is the average rating there?
+assistant: Their average rating is 4.5.
+user: Are you able to locate a different salon for me? I would like to find one in Rohnert Park that is a unisex salon.
+tool(FindProvider): ok n_results=4
+assistant: Barber's Garage is a good one that can be found in Rohnert Park.
+user: Yes that sounds fine, can you share the location?
+assistant: Who would you like to share the location with?
+user: I want it shared with Kelly.
+assistant: Would you like to share the address of 6469 Redwood Drive?
+user: That sounds fine. I would like to share it with Olivia.
+assistant: Okay, confirm these details: You want to share the location of 6469 Redwood Drive with Olivia.
+user: No, the address I would like to share is 3810 Mowry Avenue.
+assistant: Okay, confirm these details for me: You would like to share the location 3810 Mowry Avenue with Olivia.
+user: That sounds fine.
+tool(ShareLocation): ok n_results=1
+assistant: You have shared the location successfully.
+user: Would you please show me my alarms?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set currently. There is also an alarm at 7 am with the name Gym.
+user: Okay that is good. I would like to add a new alarm called cleaning.
+assistant: What time would you like the alarm set for?
+user: That would be for 3:30 in the afternoon.
+assistant: Please confirm these details for me: Creating an alarm at 3:30 pm with the name cleaning.
+user: Yes, that would be good.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm was added successfully.
+user: Thank you very much.
+assistant: Is there anything else I can do for you?
+user: No, thanks very much.
+assistant: Thank you very much.

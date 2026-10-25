@@ -1,0 +1,31 @@
+user: I want to find a train.
+assistant: What city are you traveling to and where are you leaving from? What date are you leaving?
+user: I want to find tickets from Chi-town to ATL for the 10th of March.
+tool(FindTrains): ok n_results=1
+assistant: I found 1 train. There's a train at 6:20 am for $241.
+user: What station does it leave from?
+assistant: The train leaves from Chicago Union Station.
+user: That sounds great.
+assistant: Do you want to purchase tickets?
+user: No, not right now.
+assistant: Anything else I can do for you?
+user: I want to find something cool to do there that day.
+assistant: What kind of events are you looking for?
+user: I like drama.
+tool(FindEvents): ok n_results=6
+assistant: Babyshower For The Antichrist is a popular drama at Fulton County West End Performing Arts Center on March 12th at 7:30 pm.
+user: That works for me.
+assistant: Do you want to purchase tickets?
+user: No, maybe later. What are some other attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Al-Farooq Masjid is a popular Place of Worship.
+user: Is it kid-friendly? What's the phone number?
+assistant: Yes, it is child-friendly. The phone number is 678-886-3457.
+user: What are some other attractions? I want to find a museum.
+tool(FindAttractions): ok n_results=7
+assistant: Atlanta History Center is a popular museum.
+user: Can you find me a house to stay there? I want something rated 4.4 or higher.
+tool(SearchHouse): ok n_results=6
+assistant: There's a house rated 4.4 at 1065 Peachtree Street Northeast.
+user: That sounds great. That's all for now.
+assistant: Have a great day!

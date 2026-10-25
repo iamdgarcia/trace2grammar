@@ -1,0 +1,33 @@
+user: I'm looking for attractions to visit
+assistant: In which city do you want to search for?
+user: I would like attractions in San Francisco
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions, for example Alcatraz, a Historical Landmark
+user: Is it a child-friendly place? Is entry free?
+assistant: The entry is free and it's a good place for kids
+user: Very good! Can you give me any other suggestions? Any attraction is fine
+tool(FindAttractions): ok n_results=9
+assistant: I found 9 attractions. I suggest Alcatraz Island, a Historical Landmark
+user: This is fine too
+assistant: You need anything else?
+user: Yes, I'd like to watch a movie there, preferably a 3d show
+tool(FindMovies): ok n_results=10
+assistant: There are Ad Astra, Brittany Runs a Marathon and Fiddler: A miracle of miracles.
+user: I'd like other proposals
+assistant: There are Hobbs and Shaw, IT Chapter Two and In Fabric
+user: I like IT two! What online movies do you propose?
+assistant: What kind of movie do you prefer?
+user: I love Suspense movies
+tool(FindMovies): ok n_results=4
+assistant: I found 4 movies: do you prefer Madeline's Madeline, Rojo or The Art of Self-Defense?
+user: I prefer The Art of Self-Defense! I want to watch it now with English subtitles
+assistant: Playing The Art of Self-Defense with English subtitles: do you confirm?
+user: No, I prefer with French subtitles, thanks!
+assistant: Playing The Art of Self-Defense with French subtitles: do you confirm?
+user: Now it's correct, I confirm.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is starting!
+user: Who is the main actor?
+assistant: The mai actor is Alessandro Nivola.
+user: Thank you! It's all for now!
+assistant: Have a nice day!

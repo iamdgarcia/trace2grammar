@@ -1,0 +1,13 @@
+user: I have a plan to travel . Please find a round trip flight. It should be Premium Economy class tickets and flight should be United Airlines.
+assistant: from which city you wish to depart from?
+user: I like to depart from chicago.
+assistant: where are you planning to go?
+user: i am planning to go to Philadelphia.
+assistant: At what date you wish to travel?
+user: I need to start my travel on March 6th
+assistant: At which day do you need to take the return flight?
+user: I wish to return on next Friday.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight which is a united airlines. The flight takes off at 4:25 pm and it is a direct flight and the returning flight takes off at 1:55 pm and the ticket costs $321.
+user: oK that sound good to me and that's all i need.
+assistant: Have a wonderful day.

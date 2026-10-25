@@ -1,0 +1,15 @@
+user: I want to go out this evening. How about some tickets to see a movie at quarter past 6 in the evening?
+assistant: When would you like to see it? Where would you like to go to see the movie and which movie would you like to see?
+user: I want to see Luce at Oakland on the 2nd of March.
+assistant: Would you like to see it in imax or a regular show?
+user: A regular show would be ok.
+assistant: How many tickets would you like?
+user: Just 1 would be needed.
+assistant: You would like 1 regular ticket to see Luce at 6:15 pm at Oakland on March 2nd?
+user: Yes, that would be fine.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased.
+user: Thanks a lot.
+assistant: Would there be anything else?
+user: No. I am good.
+assistant: Enjoy your day.

@@ -1,0 +1,37 @@
+user: Can you find me something fun to do
+assistant: what city should i search in
+user: please search san rafael
+assistant: do you like music or theater
+user: i want to go broadway
+tool(FindEvents): ok n_results=5
+assistant: i located 5 events for you. what about cabaret kids at marin center showcase theater on march 2nd at 5:30 pm
+user: thats perfect can you find me something in nyc on the 7th
+tool(FindEvents): ok n_results=10
+assistant: i found 10 events in NYC. what about advanced acting scene study at tgw acting studio on march 7th at 6:30 pm
+user: this is great for me
+assistant: would you like me to buy the ticket
+user: not right now. I want to find a house with 3.7 rating for higher
+tool(SearchHouse): ok n_results=10
+assistant: what about a 3.7 rating house at 100 greenwich street
+user: this is perfect. can you find me a direct bus going there for three people
+assistant: where are you traveling from and when are you leaving? is this for march 5th or march 7th
+user: i am leaving from philly on 2nd of this month
+tool(FindBus): ok n_results=6
+assistant: how about 9 am bus for $22
+user: this sounds good for me
+assistant: would you like me to buy the ticket
+user: no, not right now
+assistant: what else can i do for you
+user: please buy the ticket for the event for me
+assistant: please confirm your purchase of 3 ticket in new york for advanced acting scene study on march 7th
+user: no i need three tickets
+assistant: please confirm 3 tickets on march 7th
+user: yes that is correct
+tool(BuyEventTickets): ok n_results=1
+assistant: your ticket is booked
+user: where is the venue
+assistant: the venue is located at 358 west 44th street
+user: thank you for your help
+assistant: what else can i do for you
+user: no that is all i need
+assistant: have a nice day

@@ -1,0 +1,35 @@
+user: Hi, could you find something interesting for me to do in Sacramento please?
+assistant: Any specific type of event you are looking for?
+user: Some events with Songs will be great.
+tool(FindEvents): ok n_results=6
+assistant: There are 6 events you might like, how about the Aftershock Festival at the Discovery Park on March 5th at 5:30 pm?
+user: Sounds great, but are there any alternatives around NYC on the 7th of this month instead?
+tool(FindEvents): ok n_results=10
+assistant: How about a Abbi Jacobson event taking place at Kaufmann Concert Hall on March 7th at 4:30 pm?
+user: How much does a ticket cost, and where is the event venue?
+assistant: The event will cost you $35 per person and it is held at 1395 Lexington Avenue.
+user: I see, sounds great to me!
+assistant: Would you like to purchase the tickets?
+user: Perhaps later one. Could you find me a house to stay in that area, preferably one with laundry service and a 4.1 or higher rating?
+tool(SearchHouse): ok n_results=10
+assistant: How about a 4.1 rated house at 100 Greenwich Street?
+user: What is their contact number?
+assistant: You can contact them at +1 917-409-0800.
+user: I see, that sounds good to me!
+assistant: Would you like me to make a reservation for you then?
+user: No, that is not necessary. Could you help me check for buses heading there on March 4th, regardless of the number of intermediate stops?
+assistant: And where are you departing from?
+user: I would prefer three seats on a direct bus departing from Washington.
+tool(FindBus): ok n_results=7
+assistant: How about one departing at 6:20 am costing $36?
+user: Sounds great to me!
+assistant: Would you like to purchase the bus tickets?
+user: No, could you purchase the event tickets instead?
+assistant: Please confirm your purchase for 3 tickets for the Abbi Jacobson event in New York on March 7th.
+user: Sounds great to me!
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made, enjoy!
+user: Thank you so much.
+assistant: How can I further assist you?
+user: No, that is all I need. Thank you so much.
+assistant: No worries, enjoy your event!

@@ -1,0 +1,45 @@
+user: Hi, could you find me a therapist please?
+assistant: Any specific therapist and location you are looking at?
+user: I would like a Psychologist in Santa Rosa please.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 psychologist in the Santa Rosa area, how about Bert Epstein?
+user: Are there any alternatives?
+assistant: How about a psychologist in Santa Rosa called Blank Gary A?
+user: Sounds great to me.
+assistant: Would you like me to book an appointment with him?
+user: Yes please, could you do so?
+assistant: And what time would you be visiting him?
+user: Likely at 5:30 pm.
+assistant: When will you be heading down then?
+user: I think I will like to visit him on the 14th.
+assistant: Please confirm your appointment with Blank Gary A at 5:30 pm on March 14th.
+user: Sounds great to me!
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you should get an email confirmation soon.
+user: May I have their phone number please?
+assistant: Sure, you can contact them at 707-526-2525.
+user: Thank you so much. Could you request a payment from Emma for 115 bucks?
+assistant: Please confirm your public request to request a payment from Emma for $115.
+user: Sure, that is right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been made.
+user: Thank you! Could you help me find a Persian restaurant to dine in that area on that day, preferably one with outdoor seating?
+tool(FindRestaurants): ok n_results=1
+assistant: How about Monti's in Santa Rosa?
+user: May I have their cost and user rating?
+assistant: They are moderate priced and has a rating of 4.3.
+user: Could you recommend me some other restaurants then?
+tool(FindRestaurants): ok n_results=0
+assistant: Sorry, I could not find any other restaurants. How can I further assist you?
+user: Could you try finding some Pizza and Pasta restaurants? I have no preference on the price range.
+tool(FindRestaurants): ok n_results=7
+assistant: How about Ca'bianca in Santa Rosa?
+user: Sounds great to me! Could you get me a reservation there?
+assistant: And what time would you like to dine in?
+user: Please make it at 12:30.
+assistant: Please confirm your reservation for 2 at Ca'bianca in Santa Rosa at 12:30 pm on March 14th.
+user: That is fine with me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made.
+user: Thank you so much, that is all I need.
+assistant: Have a great day ahead!

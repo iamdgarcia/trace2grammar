@@ -1,0 +1,19 @@
+user: Search for me please a bus.
+assistant: Tell me where you are going and when.Where are you going from?
+user: I plan to leave from Fresno to SFO on March 12th.
+tool(FindBus): ok n_results=8
+assistant: I have 8 option for you.How do you think about a bus that depart at 10:50 am and cost $27?
+user: Sounds great.Buy tickets please.
+assistant: Tell me how many you need.
+user: I want for three people.
+assistant: You want 3 tickets from Fresno to San Francisco on March 12th at 10:50 am.Is that correct?
+user: Yes is okay for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Tickets were purchased.
+user: This is a direct bus?At which station will depart from?
+assistant: This is a direct bus.Will depart from 2660 Tulare St.
+user: Thank you.Search for me please a hotel in that area.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 options you might like.A 1 star hotel called Amsterdam Hostel San Francisco.
+user: Sounds okay.That's all that I wanted for now.
+assistant: Have a great day !Bye.

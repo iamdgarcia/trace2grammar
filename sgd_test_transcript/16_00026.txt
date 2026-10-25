@@ -1,0 +1,41 @@
+user: My hair has grown over my shoulder. Can you find me a salon?
+assistant: Where do you like to go?
+user: Please look for one in SF.
+tool(FindProvider): ok n_results=10
+assistant: You can avail service out of 10 salons. In San Francisco 1512 Barber Shop is one of the nice ones.
+user: I think I can visit that.
+assistant: Do you need an appointment there?
+user: Do it later. Now I want know whether I can get service of a therapist there.
+assistant: You mean one in San Francisco? What therapist are you looking for, Family Counselor or Psychologist?
+user: I am looking for one there, and should be Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: There are 4 therapists matching your request. You can consult Adam E. Pollock, a Psychologist. You can find them in San Francisco.
+user: Do you have address and phone number?
+assistant: Address in 100 Masonic Avenue and phone number is 415-346-2356.
+user: Are there any other therapists?
+assistant: Another option is Deardorff Julianna. they are also psychologist in San Francisco
+user: Thats fine. Do you have details of any other therapist?
+assistant: Another Psychologist in San Francisco is Perez Linda M.
+user: That seems good.
+assistant: shall I fix an appointment with them?
+user: Yeay, surely, you carry on,
+assistant: Please mention the date and time you need.
+user: Get it on 5th of this month at 3 in the afternoon.
+assistant: Please confirm the details, You need appointment with Perez Linda M at 3 pm on March 5th.
+user: Details are correct. Can I get their phone number and address?
+tool(BookAppointment): ok n_results=0
+assistant: Sorry failed to book appointment. Do you need any other help?
+user: Would you make another try with them to get appointment for next Friday?
+assistant: Please confirm the details, want to consult Perez Linda M at 3 pm on March 8th
+user: Yeah, that is right.
+tool(BookAppointment): ok n_results=1
+assistant: Congratulations, your booking is confirmed. You will receive email in this regard.
+user: Please confirm an appointment in the salon we found on the same day at afternoon 12.
+assistant: Please see if your booking details are correct, date is March 8th, time is 12 pm and name of salon is 1512 Barber Shop.
+user: Great, please give me their address.
+tool(BookAppointment): ok n_results=1
+assistant: It is confirmed. Address is 1532 20th Street.
+user: Thanks for the service.
+assistant: Any other help you need?
+user: Not thank you.
+assistant: Enjoy the day.

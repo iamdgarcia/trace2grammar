@@ -1,0 +1,16 @@
+user: Please find me train tickets for the 13th.
+assistant: Sure. Please tell me your origin and destination cities.
+user: Please search for tickets from NYC to ATL.
+tool(FindTrains): ok n_results=7
+assistant: Your search has yielded 7 suitable trains. There's a train leaving at 7:20 am and the total cost is $190.
+user: The origin and destination stations, please?
+assistant: The train leaves from Grand Central Station, destined for Peachtree Station.
+user: That would work.
+assistant: Should I go ahead and reserve tickets?
+user: No, I don't want to by ticket at the moment. Please find me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 nice houses that might interest you, among them at 4.3 rated house at 101 Andrew Young International Boulevard Northwest.
+user: This house sounds good.
+assistant: Should I go ahead and reserve this house?
+user: No, At the moment, I don't want to. That will be all.
+assistant: Glad to have been of service. Bye.

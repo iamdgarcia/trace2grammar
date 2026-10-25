@@ -1,0 +1,14 @@
+user: Find me some movies for Kids online, please.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 possible movies for you. How about The Angry Birds Movie 2 or Toy Story 4?
+user: The Angry Birds is great. Can you play the movie now with Hindi subtitles?
+assistant: Confirming that you want me to play The Angry Birds Movie 2 with Hindi subtitles?
+user: Yes, that is correct.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie.
+user: Who stars in this movie?
+assistant: Maya Rudolph is one of the actors in this movie.
+user: Thank you.
+assistant: Is there anything else I can help you with?
+user: No. Thank you.
+assistant: You're welcome. Have a good day.

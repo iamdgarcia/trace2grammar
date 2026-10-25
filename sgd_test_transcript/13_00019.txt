@@ -1,0 +1,19 @@
+user: I want to attend a fun Music event in San Diego on the 13th of March.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that are suitable. Alejandro Sanz is performing at Cal Coast Credit Union amphitheater on March 13th at 4 pm.
+user: That would be great. Are there any hotels in that area that I can stay in?
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Bahia Resort Hotel.
+user: How much does a night cost and is smoking allowed there?
+assistant: It costs $144 and smoking is not allowed.
+user: That is awesome. I want to get tickets to the show.
+assistant: How many tickets?
+user: I need 4 tickets.
+assistant: You would like 4 tickets to see Alejandro Sanz in San Diego on March 13th?
+user: Yes, that would be great. Where is the venue located?
+tool(BuyEventTickets): ok n_results=1
+assistant: It is on 5500 Campanile Drive. I have made the reservation. Enjoy yourself.
+user: Thanks very much.
+assistant: Would you be needing anything else?
+user: No, thank you.
+assistant: Enjoy your day.

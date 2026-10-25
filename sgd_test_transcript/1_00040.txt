@@ -1,0 +1,20 @@
+user: I would like to search for a hotel for my upcoming trip
+assistant: And in what location or area do you need the hotel?
+user: I would like to search for New Delhi hotels
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that may suit your needs. One such hotel is a 5 star hotel named Aloft New Delhi Aerocity
+user: Are there any more hotels that fit my search criteria?
+assistant: Sure, there's another 5 star hotel named Andaz Delhi - A Concept By Hyatt.
+user: Can you tell me the rate for that hotel per night?
+assistant: It is $175 for a one night stay.
+user: And what is their exact location and contact number, please?
+assistant: They are located at Asset No.1 Aerocity, New Delhi and they can be reached at +91 11 4903 1234
+user: Are there additional hotels that fit my preferences? I am looking to book two rooms
+tool(SearchHotel): ok n_results=10
+assistant: Yes. There is a 3 star hotel, Bloomrooms @ New Delhi Railway Station.
+user: great.
+assistant: Are you looking to book the rooms at this hotel now?
+user: Not at this moment.
+assistant: Do you need any further assistance?
+user: No, that was everything. Thanks so much for your help
+assistant: Have a nice day!

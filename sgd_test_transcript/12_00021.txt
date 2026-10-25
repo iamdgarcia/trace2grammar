@@ -1,0 +1,45 @@
+user: I'd like to buy bus tickets.
+assistant: How many did you need?
+user: I will need two.
+assistant: When are you leaving, where are you leaving from, and where did you want to go?
+user: I'd like to go from Sacramento to Long Beach and I'm leaving at 17:15.
+assistant: What day did you plan on leaving?
+user: I'm thinking of leaving the 12th of March.
+assistant: Please confirm you're booking 2 tickets on the bus from Sacramento to Long Beach on March 12th at 5:15 pm and you don't have extra luggage.
+user: No, I'm leaving from SFO at morning 11:45.
+assistant: Please confirm you're getting a ticket on the bus from San Francisco leaving at 11:45 am.
+user: Yes, that is correct.
+tool(BuyBusTicket): ok n_results=0
+assistant: Sorry, your purchase was unable to be completed. Did you need help with anything else?
+user: Can you try again? I'd like to go to Sacramento on the 1st of this month for 4 people.
+assistant: Please confirm you're booking 4 tickets on the bus from San Francisco to Sacramento on March 1st at 11:45 am and you don't have extra luggage.
+user: Yes, that is correct. How many stops does the bus have and which station is it leaving from.
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus is a direct bus leaving from Transbay Terminal. Sorry, your purchase could not be completed. There is a bus leaving at 11:50 am for $23.
+user: Yes, that sounds good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your purchase has been confirmed.
+user: Could you also help me find a rental car there?
+assistant: Until when did you need the car? Did you need it starting from March 1st?
+user: I will need it from March 10th until 14th of March.
+assistant: When did you want to pick the car up?
+user: I want to pick it up at evening 7:30.
+assistant: Did you want to pick it up from Sacramento?
+user: Yes, I would.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I found 8 cars for you. One nice car is a SUV Alfa Romeo Stelvio available at Sacramento Valley Station.
+user: How much does the car cost per day?
+assistant: It will costs $52.00 a day.
+user: That sounds good.
+assistant: Did you want to book the car?
+user: Yes, I'd like to rent a car.
+assistant: Did you need insurance?
+user: No, I did not.
+assistant: Please confirm you're picking up a SUV car from Sacramento Valley Station on March 10th at 7:30 pm and dropping it off on March 14th.
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been booked.
+user: Thank you for your help.
+assistant: Did you need help with anything else?
+user: No, but thanks again.
+assistant: Have a wonderful day.

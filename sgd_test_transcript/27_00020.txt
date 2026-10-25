@@ -1,0 +1,31 @@
+user: Can you find me some attractions to visit, preferably a Museum?
+assistant: In which city would you like to find the attractions?
+user: Find me the ones around San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: If you are keen on visiting a Museum, you should definitely check out the Cable Car Museum.
+user: Thanks for the tip. Can you find me a movie that I can watch while I'm there?
+tool(FindMovies): ok n_results=6
+assistant: Would you be interested in Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles?
+user: Can you find some other movies that I can watch at Roxie Theater?
+tool(FindMovies): ok n_results=6
+assistant: There are 6 movies based on your preference. Would you like to watch Give Me Liberty, In Fabric or Labyrinth?
+user: Can you give me more options please?
+assistant: How about Paprika, Riot Girls or This Is Not Berlin?
+user: This Is Not Berlin is perfect! Thank you.
+assistant: Shall I get tickets for you?
+user: No, not now.
+assistant: Is there anything else I can do for you?
+user: Can you help me find some good movies to watch online?
+assistant: Do you prefer any specific genres?
+user: I kind of like Fantasy movies. So, something from that genre would be great.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies that you may like. Would you be interested in Labyrinth or The Lord of the Rings: The Return of the King?
+user: The Lord of the Rings three is a great pick!
+assistant: Would you like to watch the movie now?
+user: Yes, please play the movie.
+assistant: Please confirm that you want to watch The Lord of the Rings: The Return of the King with English subtitles.
+user: Yes, that's right. Who played the lead in the movie?
+tool(PlayMovie): ok n_results=1
+assistant: The movie stars Elijah Wood and it has started playing.
+user: Thank you. That'll be all for now.
+assistant: Have a great day!

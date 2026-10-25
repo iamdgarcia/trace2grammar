@@ -1,0 +1,32 @@
+user: I would like to take a look in my alarms, please.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm for 4 pm with the name Pick up kids.
+user: OK, that's good.
+assistant: Would you like to add an alarm?
+user: No, that's ok, I don't need to add a new alarm right now. I'd like to look for a Punjabi restaurant in San Fran with a moderate price range.
+tool(FindRestaurants): ok n_results=10
+assistant: August 1 Five is a restaurant in San Francisco that matches your search features.
+user: Yes, that's a good restaurant.
+assistant: Would you like to reserve a table there?
+user: No, I'll just walk in. I would like to reserve a car to get there.
+assistant: When will you need the car until?
+user: I will need it until the 14th.
+assistant: What kind of car do you prefer?
+user: Can you find an SUV?
+assistant: What day would you like to pick up the car? Would you like to add insurance?
+user: I will need the car beginning on the 10th of March. I won't need to add insurance, my coverage includes rental cars.
+assistant: What time and location would you like to pick up the car?
+user: I would like to pick it up at 2:30 in the afternoon at Sky Harbor Airport, if possible. That's the most convenient location for me.
+assistant: You would like to pick up your rental SUV at 2:30 pm from Sky Harbor International Airport on March 10th and return it on March 14th, is that correct?
+user: Yes, you got it. How much does the car cost each day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved. The cost is $47.00 per day.
+user: Thank you for your help. Almost forgot, I want to share the location with Roger.
+assistant: Is the address you would like to share Sky Harbor International Airport, 524 Van Ness Avenue?
+user: Yes, share the address 524 Van Ness Avenue.
+assistant: You would like to share the location 524 Van Ness Avenue with Roger, is this correct?
+user: Yes, that's right.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared.
+user: Thank you. You've been very helpful. That's all for now.
+assistant: Have a great day!

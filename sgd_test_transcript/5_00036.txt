@@ -1,0 +1,12 @@
+user: Please show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: You have a Wake up alarm at 6:30 am.
+user: Thanks, that is great.
+assistant: Would you like me to add an alarm?
+user: Yes, please add an alarm for quarter to 5 in the evening called Phone home.
+assistant: So you want me to create an alarm at 4:45 pm called phone home.
+user: Yes, I do.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added.
+user: Thanks so much. I am all set.
+assistant: Have a great day. Thank you.

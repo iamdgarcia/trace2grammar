@@ -1,0 +1,17 @@
+user: I like to watch movies online. Can you search for the best one to watch now?
+assistant: Yes, What is your favorite kind of movies to search for?
+user: I like to watch Ghost movies and search for the one like this.
+tool(FindMovies): ok n_results=6
+assistant: Do you have interest to watch 47 Meters Down: Uncaged or In Fabric or Midsommar?
+user: I choose Midsommar and I want to watch it now.
+assistant: Please confirm to play the movie Midsommar with English subtitles.
+user: Yes, that is confirmed to proceed.
+tool(PlayMovie): ok n_results=1
+assistant: The movie was started playing now and you can enjoy the same.
+user: Thank you. Now I want to search for the weather condition on the 3rd.
+assistant: In which City, you want me to search for the Weather?
+user: Search it in Sunnyvale.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature of that place will be 72 degrees Fahrenheit and there may be a chance of 17 percent of rain.
+user: Thank you for your information and that's all for now.
+assistant: Have a great day.

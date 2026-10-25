@@ -1,0 +1,36 @@
+user: I need to find a direct bus from Long Beach, CA to San Diego.
+assistant: When do you plan to leave?
+user: I would need to leave on the 10th of March.
+tool(FindBus): ok n_results=9
+assistant: I found 9 buses that match those criteria. There is a bus departing at 6:50 am that costs $25.
+user: What other buses are available?
+assistant: There is a bus departing at 7:30 am that costs $24.
+user: What stations does it depart from and arrive in?
+assistant: The bus departs from Downtown Station and arrives at El Cajon Bus Stop.
+user: OK, sounds good, thanks.
+assistant: Is there anything else I can help you with?
+user: Yes, I would like to look for some attractions there. Any type, and I would prefer it they are child-friendly and with no entry fee.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Theme Park called Belmont Park in that area.
+user: Oh, good, what is the phone number?
+assistant: The phone number is 858-228-9283.
+user: OK, cool, any other attractions in the city?
+assistant: There is a Nature Preserve, Birch Aquarium at Scripps Institution of Oceanography.
+user: What is the phone number?
+assistant: The phone number is 858-534-3474.
+user: OK, thank you. Can you purchase the bus tickets you found for me?
+assistant: How many tickets would you like?
+user: There are 3 people.
+assistant: You would like 3 tickets on the bus from Long Beach to San Diego leaving at 7:30 am on March 10th, is that correct?
+user: Yes, that's what I would like.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket purchase is successful.
+user: OK, great. I need to look for hotels in that area as well.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels that match your travel plans. Bahia Resort Hotel is a 3 star hotel.
+user: OK, that sounds fine.
+assistant: Would you like to make reservations at the hotel?
+user: No, not right now, but thank you.
+assistant: Is there anything else I can help you with?
+user: No, that's all for now, thank you for your help.
+assistant: Have a great day!

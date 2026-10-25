@@ -1,0 +1,54 @@
+user: Please help me find a therapist practicing in Campbell.
+assistant: Sure, I can help you with that. First tell me the kind of therapist you need. You can say Psychiatrist, Family Counselor, or something else.
+user: I'd like a Family Counselor.
+tool(FindProvider): ok n_results=6
+assistant: Okay. Your search yielded 6 therapists that might interest you. Would you like to see Beth Kane, a Family Counselor practicing in Campbell?
+user: No, that's my neighbor! Tell you what? Find me a psychologist in San Jose instead.
+tool(FindProvider): ok n_results=10
+assistant: All right. Barskyex Bryna G. is a San Jose based Psychologist.
+user: Goodness, I know that one too! What other therapists do you recommend?
+assistant: How about Burdge Sarah, a San Jose based Psychologist.
+user: Do you have their location?
+assistant: They're situated at 2880 Zanker Road # 203.
+user: That works for me.
+assistant: Shall I schedule a visit with the therapist?
+user: Yes, please schedule a visit.
+assistant: What is a convenient appointment date and time?
+user: 11th of this month at one in the afternoon would be perfect.
+assistant: One moment. Let me see if I got everything correctly: You'd like to schedule a 1 pm visit with Burdge Sarah on March 11th.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=0
+assistant: Unfortunately there was a glitch and I was unable to book an appointment. Will you be needing my help with anything else?
+user: Please try scheduling the visit again. I would like to be seen at quarter to 5 in the evening.
+assistant: Sure. Please confirm that you're booking a 4:45 pm appointment with Burdge Sarah on March 11th.
+user: Yes, you got that right.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, due to an error, I was unable to book your appointment. Burdge Sarah has a 4:30 pm. opening on March 11th. Would you like an appointment for that time?
+user: Yes, sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment, and a confirmation email will be sent to you shortly.
+user: Thank you very much. I am very grateful. Oh, I almost forgot. Please make a payment request from Tom.
+assistant: I can help you with that. Tell me the amount, please.
+user: That will be a 150 bucks. Please make it a private transfer.
+assistant: Let me see if I got everything correctly: You'd like to effect a private transaction of $150 with Tom.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: I have successfully made your payment request.
+user: Thank you very much. Now, please find me a restaurant around that area on that day.
+assistant: What type of cuisine did you have in mind?
+user: Look for restaurants serving Sichuan dishes.
+tool(FindRestaurants): ok n_results=10
+assistant: Among the 10 suitable San Jose restaurants I found is the nice Chef Li restaurant.
+user: Is it an ultra high-end restaurant offering al fresco seating?
+assistant: No, they are a moderate restaurant without al fresco seating.
+user: Okay, sounds good.
+assistant: Shall I reserve a table here?
+user: Yes, please make table reservations.
+assistant: What would be a convenient reservation time?
+user: A one in the afternoon reservation would be awesome.
+assistant: All right. Okay. Please confirm that you'd like to make a March 11th, 1 pm reservation for 2 at Chef Li in San Jose.
+user: You got that right.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Reservation successfully made.
+user: Thanks a bunch. At the moment, that's all I need.
+assistant: Have a wonderful day!

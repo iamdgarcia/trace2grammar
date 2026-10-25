@@ -1,0 +1,32 @@
+user: Can you please find me a place to live?
+assistant: Sure, but first provide me with a bit more information. Do you plan on renting or on buying? How many bathrooms and bedrooms do you need the property to have?
+user: I plan to buy a property with 4 bedrooms and three bathrooms.
+assistant: In which area?
+user: Look for properties in Pleasanton.
+tool(FindHomeByArea): ok n_results=4
+assistant: There are 4 properties matching your criteria, out of which I'd recommend Kottinger Place Apartments-Seniors, priced at $4,550,000 and conveniently located at 240 Kottinger Drive.
+user: Please tell me their contact number as well as if whether they do or do not have laundry machines inside the house.
+assistant: The property has laundry machines inside the house and you can reach them at 925-846-0133.
+user: Sounds perfect.
+assistant: Is there anything else I could do for you?
+user: Yes, please schedule a visit for me to the property for Tuesday next week.
+assistant: Can you please confirm that you want me to schedule a visit for you on March 5th to Kottinger Place Apartments-Seniors?
+user: Yes, please do.
+tool(ScheduleVisit): ok n_results=1
+assistant: I've successfully scheduled your visit.
+user: Thanks. Can you please share the location with Andrea?
+assistant: Can you please confirm that you want me to share the location 240 Kottinger Drive with Andrea?
+user: Yes, that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Now can you please order me a cab to there?
+assistant: Sure, but please tell me the number of seats you'll be needing as well as the type of ride ( Luxury, Regular or something else).
+user: It's for just one person, me, and I would like to get the most comfortable ride possible.
+assistant: Can you please confirm that you want me to get you one Luxury ride for 1 person to 240 Kottinger Drive?
+user: Yes, that's correct. Please tell me the price as well as how soon will it arrive to my location.
+tool(GetRide): ok n_results=1
+assistant: Your ride is booked and it should reach you in about 13 minutes. Total fare cost is $24.69.
+user: Thanks a lot for everything.
+assistant: Is there anything else I could do for you?
+user: No, thanks. That will be all for now!
+assistant: My pleasure. Have a nice day.

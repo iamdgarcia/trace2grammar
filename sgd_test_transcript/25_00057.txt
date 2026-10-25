@@ -1,0 +1,23 @@
+user: I need to watch movies in Larkspur
+tool(FindMovies): ok n_results=7
+assistant: What is your opinion on Echo In The Canyon, Good Boys or Luce?
+user: I need some other movies
+assistant: What is your opinion on Tel Aviv on Fire, The Farewell or Where'd You Go, Bernadette?
+user: I prefer Where'd You Go
+assistant: You need tickets?
+user: Yes, i need tickets and will you also also find some songs now?
+tool(LookupMusic): ok n_results=10
+assistant: What is your opinion on Sarcasm by Get Scared from the album Best Kind Of Mess
+user: Anything more you have?
+assistant: What is your opinion on Fortunately I Met You by Witwisit Hiranyawongkul from the album Quarter
+user: That is fine
+assistant: Is there any other help?
+user: I need to play the song in Living Room Speaker
+assistant: Please give confirmation details: To play the song Fortunately I Met You in Living Room
+user: That is fine
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy with this music
+user: Was the music released two years ago and what is the kind of music it is?
+assistant: It got released in 2014 and it is a pop song
+user: Thank you very much
+assistant: Have a great day

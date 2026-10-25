@@ -1,0 +1,28 @@
+user: I want to make a payment.
+assistant: Tell me the name of the contact and from where you want to transfer.From app balance or credit card?
+user: Make the transaction to Rachel from my visa.
+assistant: Tell me what amount of money you want to transfer.
+user: Transfer 55 bucks.
+assistant: You want to make an transaction of $55 from your credit card to Rachel.Is that correct?
+user: Yes, very good.
+tool(MakePayment): ok n_results=1
+assistant: The payment is done.The recipient should see soon the money.
+user: Find me a train for next Tuesday.
+assistant: Tell me from which city you want to depart and on which city you want to go.
+user: I need economy tickets from Fresno to LAX.
+tool(FindTrains): ok n_results=9
+assistant: 9 trains I found for you.What you think about a train that depart at 7:20 am and cost $66.
+user: Tell me at which station will arrive.
+assistant: Union Station is the station.
+user: Sounds good.But how will be the weather there in LAX on the 8th.
+tool(GetWeather): ok n_results=1
+assistant: Average temperature for the day should be 81 degrees Fahrenheit and a 21 percent of rain.
+user: Okay.Get for me tickets at the train that you have found for one person with trip insurance.
+assistant: You want 1 Value ticket at the train that goes from Fresno to Los Angeles on March 5th at 7:20 am.Is okay?
+user: Yes this is very good.From which station will leave?
+tool(GetTrainTickets): ok n_results=1
+assistant: The purchase was made.From Fresno Station will leave.
+user: Thank you for all your help.I appreciate.
+assistant: Can I still help you?
+user: No.That's all.Thanks.
+assistant: See you next time.Bye!

@@ -1,0 +1,30 @@
+user: Can you search for arental car?
+assistant: What will be your pick up and drop off date and the time for your pick up?
+user: I want to pick up a hatchback car at 09:45 on March 8th and need it till the 12th.
+assistant: Which city do you want me to search for the car?
+user: Search for the car in Washington.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 cars available for pick up. How about a Hatchback Fiat Panda available at Dulles International Airport?
+user: Are there any other car for pick up at 15:30?
+tool(GetCarsAvailable): ok n_results=4
+assistant: How about a Hatchback Mazda 3 available at Union Station?
+user: Okay, That sounds nice to me.
+assistant: Would you like me to book the car?
+user: Not now. Show me the buses going there.
+assistant: Which city will you be leaving from?
+user: I want one seat in a bus from Philly.
+assistant: Which is your preferred date of departure?
+user: I will be leaving from Saturday this week.
+tool(FindBus): ok n_results=8
+assistant: What do you think of a bus departing at 6:20 am with the cost of ticket is $25.
+user: That sounds nice to me. Can you search for a one- way flight going there?
+assistant: Are you looking to leave on March 2nd, March 8th or some other day?
+user: I would like to leave on March 4th.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There are 4 flights you may like. How about an American Airlines, whose onward flight takes off at 3:20 pm with the ticket cost of $150?
+user: Can you confirm whether the seat is business or economy tickets?
+assistant: The ticket is an Economy class seat.
+user: That sounds good to me.
+assistant: Is there anything else I can help you witch?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

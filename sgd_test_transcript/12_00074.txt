@@ -1,0 +1,19 @@
+user: I hope you can help me, I need to find a bus to take to Long Beach, CA. I'd like something that's one-stop.
+assistant: What is your place of departure?
+user: I'll be heading out from Sacramento.
+assistant: And when do you plan to travel?
+user: I need to go on the 2nd of this month and it's just going to be for 1 person.
+tool(FindBus): ok n_results=10
+assistant: I have 10 options for you to choose from. There is a bus with a 7:40 am departure and $65 ticket price.
+user: Leaving from where and going to where please?
+assistant: The bus leaves from 65th Light Rail Station and its destination is Downtown Station.
+user: That will work. I'd like to get tickets please.
+assistant: Confirming a ticket for 1 on the March 2nd bus from Sacramento to Long Beach leaving at 7:40 am.
+user: Correct, thank you.
+tool(BuyBusTicket): ok n_results=1
+assistant: The reservation has been booked successfully.
+user: Thank you very much. I'd also like to find a hotel please. How about something with a three star rating and out only need 1 room.
+tool(SearchHotel): ok n_results=8
+assistant: I recommend Best Western of Long Beach, which has a 3 star rating.
+user: OK, I guess that will do it then.
+assistant: Thank you very much.

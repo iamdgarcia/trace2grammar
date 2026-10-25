@@ -1,0 +1,30 @@
+user: I want to send a payment to someone.
+assistant: Who are you sending money to and in what amount. Do you wish to use app balance or credit card?
+user: I want to send seventy two bucks to Mary using in-app balance.
+assistant: You wish to send $72 in a public transaction to Mary using your app balance, correct?
+user: That is right.
+tool(MakePayment): ok n_results=1
+assistant: Your transfer is done. Mary will get the money soon.
+user: Thanks a bunch. I need you to book me a train ticket.
+assistant: What city are you departing from and arriving at. Also, what dayu are you departing?
+user: Find me tickets going from Sacramento, CA to San Diego on the 7th.
+tool(FindTrains): ok n_results=10
+assistant: There is a train leaving at 6:30 am that costs $144 and is 1 of 10 results that search found.
+user: What is the departing station?
+assistant: Sacramento Valley Station is the departure station?
+user: What other trains can you find?
+assistant: There is a train leaving at 7:20 am with a total bill of $150.
+user: That works for me. What is the weather forecast to be on the 7th in San Diego?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 90 with a 17 percent chance of rain.
+user: I see. Book me those train tickets.
+assistant: How many people are going and do you want to add travel insurance?
+user: There is one person going and I do want to add travel insurance.
+assistant: You want 1 Value train ticket with insurance that departs Sacramento on March 7th at 7:20 am and arrives in San Diego, correct?
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is confirmed.
+user: What are the departure and arrival stations?
+assistant: The train departs Sacramento Valley Station and arrives in Santa Fe Depot.
+user: Thanks a bunch. I don't need any more help right now.
+assistant: Have a great day.

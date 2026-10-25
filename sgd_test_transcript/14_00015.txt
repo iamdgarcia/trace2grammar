@@ -1,0 +1,18 @@
+user: I want to find some movies.
+assistant: What kind of movies are you looking for?
+user: I want to find imaginative fiction movies.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies you may life. How about Ad Astra or Close Encounters of the Third Kind?
+user: Anything else? I like Nadim Sawalha. I also like foreign story movies.
+tool(FindMovies): ok n_results=1
+assistant: How about Tel Aviv on Fire?
+user: Tel Aviv on Fire sounds great. I want to watch it now.
+assistant: Please confirm: playing Tel Aviv on Fire with English subtitles.
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie is playing.
+user: What is the weather in Vallejo?
+tool(GetWeather): ok n_results=1
+assistant: The average for the day is 83 degrees Fahrenheit with a 10 percent chance of rain.
+user: Okay, thanks. That's all I need.
+assistant: Have a great day!

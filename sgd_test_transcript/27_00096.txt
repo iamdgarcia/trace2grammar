@@ -1,0 +1,33 @@
+user: I need to find a bus. It doesn't matter how many stops it makes.
+assistant: What is your departure date and city?
+user: I'm leaving on the 1st of March from Los Angeles.
+assistant: What is your destination?
+user: I'm headed to Long Beach.
+tool(FindBus): ok n_results=10
+assistant: There are 10 options. There is a bus departing at 6:50 am for a cost of $11.
+user: Do you have any others?
+assistant: There is a bus departing at 8:20 am for a cost of $12.
+user: Is there anything else for a group of four?
+tool(FindBus): ok n_results=10
+assistant: There is another bus departing at 11:20 am for a total of $11.
+user: That one sounds okay.
+assistant: Would you like me to book the tickets?
+user: Not at the moment.
+assistant: Is there anything else I can help you with?
+user: Yes, I would like to visit something free like a park that is kid-friendly in the area.
+tool(FindAttractions): ok n_results=3
+assistant: There are 3 options. Earl Burns Miller Japanese Garden is a park in the area.
+user: Sounds awesome. Can you book the bus tickets?
+assistant: Please confirm you do not have extra baggage and want to book 4 tickets on the bus departing from Los Angeles and arriving at Long Beach on March 1st at 11:20 am.
+user: Yes and can I have the name of the departure station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The bus departs from North Hollywood Station. Your tickets have been successfully booked.
+user: I also will need to find 1 room in a hotel in the area.
+tool(SearchHotel): ok n_results=10
+assistant: Best Western of Long Beach is a 3 star hotel in the area.
+user: Okay, sounds nice.
+assistant: Do you want me to book the room for you?
+user: No, not right now.
+assistant: Can I assist you with anything else?
+user: No. That's all. Thanks.
+assistant: You're welcome. Enjoy your day. Goodbye.

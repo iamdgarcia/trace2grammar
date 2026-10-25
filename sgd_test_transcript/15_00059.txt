@@ -1,0 +1,19 @@
+user: I am in need of finding a place where I can live, and I am interested in a place in Petaluma.
+assistant: Do you want to have the place rented or bought? Can you tell me the number of bedrooms and the number of bathrooms you want the property to have?
+user: I am interested to rent the place, and it should have 4 bedrooms and 3 bathrooms.
+tool(FindHomeByArea): ok n_results=6
+assistant: A nice place I can recommend is Addison Ranch which can be found at 200 Greenbriar Circle, and the cost of this place is $5,150.
+user: Can you tell me if the property has a garage, and could you also tell me the phone number I can use to call them?
+assistant: I can confirm that the property has a garage, and if you want to call them you can at 855-243-4986.
+user: That seems nice. I want to make a visit at this place, so I want to have it booked for me.
+assistant: Can you tell me when you want to go to have the visit?
+user: I will be able to make the visit on 8th of this month.
+assistant: Can you please confirm that you want to book a visit at the Addison Ranch on March 8th?
+user: Yes, that is what I want.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your requested visit at this property has been booked.
+user: I appreciate it. Could you tell me the alarms I have set?
+tool(GetAlarms): ok n_results=3
+assistant: I can see that you have 3 alarms which are set, with one of the alarms for 11 am which is titled Study.
+user: Alright, that is nice. That's all I needed.
+assistant: Thank you too.

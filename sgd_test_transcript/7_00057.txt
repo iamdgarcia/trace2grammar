@@ -1,0 +1,18 @@
+user: I'm looking to move into a new place to live. I'm flexible on the property itself, but it must have an in-unit laundry.
+assistant: What are do you wish for me to search in and how many bathrooms do you need?
+user: I'm looking for a property in Antioch that has two baths.
+assistant: Will you be renting or buying the property? I need to know the amount of bedrooms you will require too.
+user: I think I'll go with buy. It needs a garage and two bedrooms.
+tool(FindHomeByArea): ok n_results=3
+assistant: There are 3 very nice homes available. The Magnolia Apartments located at 1015 Fitzuren Road #7 has a price tag of $2,550,000.
+user: A bit pricey but that should be within my budget. Sounds good to me.
+assistant: If you wish to see the property, I can schedule a visit to it. Would you like me to do that?
+user: If you can schedule the appointment for the 2nd of this month, please go ahead.
+assistant: Your visit to the Magnolia Apartments will be on March 2nd. Please confirm the details.
+user: I changed my mind. Make the visit for next Monday. Sorry about that.
+assistant: The changes I have made will put your visit to Magnolia Apartments occur on March 4th instead. Is that okay?
+user: That should work. Thanks.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit to the Magnolia Apartments is set and confirmed.
+user: Thank you so much. I won't need anything else for now. I really appreciate your help.
+assistant: You are quite welcome. Enjoy your day.

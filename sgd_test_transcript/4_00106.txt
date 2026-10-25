@@ -1,0 +1,19 @@
+user: I need help looking for a direct bus.
+assistant: What date will you be travelling on and where are you travelling to and from.
+user: I want to travel to SD from Fresno, CA on the 11th of March
+tool(FindBus): ok n_results=6
+assistant: There are 6 buses that match. There's one that leaves at 6:50 am for $41.
+user: What else is there? It doesn't have to be direct.
+tool(FindBus): ok n_results=6
+assistant: There's one that leaves at 8:20 am for $48.
+user: Okay, that works.
+assistant: Would you like me to purchases tickets?
+user: Yes, please do.
+assistant: What's the number of tickets that you want?
+user: Just one ticket.
+assistant: I'll purchase you 1 ticket for the 8:20 am bus from Fresno to San Diego on March 11th, no extra luggage. Is that what you want?
+user: Yeah, that's it. Can you tell me the arrival station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The arrival station is El Cajon Bus Stop. I've purchased the ticket.
+user: Thank you for the help. I don't need anything else.
+assistant: Have a wonderful day.

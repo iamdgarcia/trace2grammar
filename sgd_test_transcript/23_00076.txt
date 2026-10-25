@@ -1,0 +1,44 @@
+user: i need to make a payment
+assistant: Do you want me to make the payment with your app balance or debit card? who is the contact
+user: please send via my visa to bob
+assistant: how much do you want me to transfer
+user: please send him 148 dollars
+assistant: please confirm your payment of $148 via credit card to bob
+user: yes that is correct
+tool(MakePayment): ok n_results=1
+assistant: your payment has been send
+user: thank you, please find me a train now
+assistant: where do you want to go and what date
+user: i want to go to sd on 8th of this month
+assistant: what city are you traveling from
+user: i will be leaving from la
+tool(FindTrains): ok n_results=10
+assistant: there are 10 trains. what about departing at 6:50 am for $56
+user: what other trains can you find
+assistant: what about departing at 8:10 am for $53
+user: what station am i leaving from
+assistant: you will be leaving from union station
+user: what else can you find for me
+assistant: what about 9:50 am departure for $52
+user: what station am i leaving from and arrive to
+assistant: you will depart from union station and arrive to santa fe depot
+user: ok that sound perfect
+assistant: would you like to buy a ticket
+user: not right now. please tell me the weather in sd on 9th of this month
+tool(GetWeather): ok n_results=1
+assistant: the average temperature is 83 degree with 25 percent chance of rain
+user: ok, can you book the train ticket
+assistant: do you need a travel insurance
+user: yes, i need a travel insurance
+assistant: how many train ticket do you want
+user: i need 1 ticket
+assistant: please confirm your purchase of 1 value train ticket on march 8th at 9:50 am leaving from los angeles traveling to san diego
+user: no, please make it two
+assistant: please confirm your change to 2 tickets leaving at 9:50 am
+user: yes that is correct
+tool(GetTrainTickets): ok n_results=1
+assistant: your ticket is booked
+user: thank you for your help
+assistant: what else can i do for you
+user: no that is all i need
+assistant: have a nice day

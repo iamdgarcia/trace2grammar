@@ -1,0 +1,40 @@
+user: Can you find me some things to do in the city
+assistant: What city are you looking in?
+user: I want to look for something in Portland, OR
+assistant: Do you have a preference for the type of event?
+user: I really want to catch a show
+tool(FindEvents): ok n_results=10
+assistant: How about catching the Annual School Performance at Newmark Theatre happening on March 2nd at 5 pm
+user: Where is the venue located
+assistant: The venue is at 1111 Southwest Broadway
+user: That's good, but can you find me some other event?
+assistant: How about seeing Beirut by Alan Bowne taking place at Shoe Box Theater on March 11th at 6:30 pm
+user: How much is a ticket to that?
+assistant: It'll be $50
+user: That's good, what about other events on March 4th
+tool(FindEvents): ok n_results=7
+assistant: I found 7 events including Heathers The Musical which is a popular show taking place at Funhouse Lounge happening on March 4th at 7:30 pm
+user: That's awesome for me
+assistant: What else can I do
+user: Can you find me a hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels including a 3 star one called Aloft Portland Airport at Cascade Station you might like
+user: That Sounds great
+assistant: Do you want to book a room?
+user: No not right now
+assistant: What else can I help you with?
+user: I want tickets to that event from earlier
+assistant: How many tickets
+user: Just 1 ticket for me please
+assistant: Confirm you want 1 ticket to Heathers The Musical on March 4th in Portland
+user: No actually I want three tickets
+assistant: 3 tickets to the show in Portland?
+user: Yes that's right
+tool(BuyEventTickets): ok n_results=1
+assistant: OK it's been booked, I hope you enjoy it!
+user: Thanks! Also how much is a ticket?
+assistant: It's $25 a ticket
+user: Thanks for your help
+assistant: What else can I assist with?
+user: Nothing else for the time being, thank you for your help
+assistant: It was my pleasure

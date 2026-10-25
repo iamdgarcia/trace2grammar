@@ -1,0 +1,43 @@
+user: I want to book a hotel.
+assistant: What city do you want me to look in?
+user: I'm looking for Sydney hotels.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels you may be interested in. How about a 3 star hotel called 1831 Boutique Hotel?
+user: what is the street address?
+assistant: The address is 631-635 George Street.
+user: Can I smoke in the hotel?
+assistant: Yes, smoking is allowed.
+user: do you have other options for me?
+assistant: How about a 4 star hotel called 28 Hotel Sydney?
+user: Do you have anything else at all?
+assistant: how about 57 Hotel, a 4 star hotel?
+user: That sounds great.
+assistant: So you want to book it?
+user: Maybe in a little bit.
+assistant: Would I be able to assist with anything else?
+user: I want to buy a round trip ticket there. I need four tickets.
+assistant: Are you going to be leaving on March 11th? What day will you return?
+user: I want to leave on March 10th and return on March 12th.
+assistant: What city will you leave from?
+user: Search for flights from Phoenix, AZ.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: How about this flight with Delta Airlines? The outbound flight will take off at 6:15 pm and it has a layover. You will return at 3:10 PM. This ticket cost $463.
+user: Are there any other possible options? I will return the 13th of this month and the airline doesn't matter.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: How about United Airlines? The outbound flight takes off at 1:25 pm. and it has a layover. The return flight takes off at 4:55 pm. The ticket cost $443.
+user: would this be an economy or business-class ticket? When will the flight arrive at my destination?
+assistant: The outbound flight will arrive at 8:51 pm and this is an Economy-class Economy.-class ticket.
+user: That sounds great to me. Would you reserve the hotel that you mentioned?
+assistant: how long will you stay? Would you like to check in on March 10th?
+user: I want to check in on the 11th of this month for three days.
+assistant: Could you confirm that you want to book at 57 Hotel on March 11th and that you will stay for 3 days? This hotel is in Sydney and you need 1 room.
+user: That sounds good to me. What is their phone number?
+tool(ReserveHotel): ok n_results=1
+assistant: The booking has gone through. The phone number is +61 2 9011 5757.
+user: Will you show me some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: How about ANZ Stadium, a sports venue?
+user: Okay that sounds good.
+assistant: Would I be able to assist you with anything else?
+user: No that's it but you did help me a lot. Thanks.
+assistant: Have a good time.

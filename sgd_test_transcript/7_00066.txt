@@ -1,0 +1,20 @@
+user: Can you help me find a place to live in Oakland?
+assistant: Sure, are you looking to rent or to buy? How many beds and how many baths?
+user: I'm looking to buy a place with one bed and one bath.
+tool(FindHomeByArea): ok n_results=3
+assistant: There are 3 houses that may work. How about Beth Eden Apartments which is located at 1100 Market Street and costs $2,000,000.
+user: Does it have a garage and what is the phone number?
+assistant: It does not have a garage and the number is 510-832-2249.
+user: Great, can you schedule me a visit?
+assistant: Sure, when do you want to go?
+user: Sometime today would be good.
+assistant: Can you confirm you'd like to schedule a visit to Beth Eden Apartments on March 1st?
+user: actually, schedule it for next Wednesday.
+assistant: Sure, please confirm you'd like to visit Beth Eden Apartments on March 6th.
+user: Confirmed. Is there laundry in the house?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is confirmed. There isn't laundry.
+user: Great, thanks again.
+assistant: Need anything else?
+user: Nope, thanks again.
+assistant: My pleasure.

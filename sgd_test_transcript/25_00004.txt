@@ -1,0 +1,25 @@
+user: Please effect a private payment transaction using my check card.
+assistant: Sure. Who's the contact and what's the amount.
+user: You'll be paying Svetlana 17 bucks.
+assistant: Sure. Let me see if I got everything correctly: You'd like to use your debit card to pay $17 to Svetlana, and the transaction is private.
+user: That is correct.
+tool(MakePayment): ok n_results=1
+assistant: I have successfully made your payment and the amount should reflect at the recipient's end shortly.
+user: Thank you very much. Now please find me a restaurant there.
+assistant: Did you have a particular cuisine, such as Chinese, American or anything else in mind?
+user: Any restaurant serving Pizza works for me.
+assistant: Any particular city I should search in?
+user: The restaurants should be in Half Moon Bay.
+tool(FindRestaurants): ok n_results=3
+assistant: I found 3 nice Half Moon Bay restaurants that might interest you. Would you like to try Half Moon Bay Joe's?
+user: Yes, that works for me. Please book me a table there.
+assistant: What's your preferred reservation time?
+user: Let's go with a 12:00 reservation.
+assistant: Okay. Please confirm that you'd like to reserve a table for 2 at Half Moon Bay Joe's in Half Moon Bay, for 12 pm on March 1st.
+user: That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully made your reservation.
+user: Please find out their user rating, and whether they offer vegetarian fare.
+assistant: The don't offer vegetarian dishes. Their average user rating is 3.9.
+user: Thanks a lot. That will be all.
+assistant: Glad to have been of service. Have a great day!

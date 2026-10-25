@@ -1,0 +1,43 @@
+user: Can you help me find an interesting activity?
+assistant: In which city would you like to look?
+user: Something in Philadelphia would be great.
+assistant: Do you like music, theater, or anything else?
+user: I enjoy musical performance.
+tool(FindEvents): ok n_results=10
+assistant: Anthony Green will be at the foundry March 10th at 6 pm.
+user: How much are tickets?
+assistant: Tickets are $60.
+user: Sounds great thanks.
+assistant: DO you want to purchase tickets?
+user: Not right now thank you.
+assistant: Can I do anything else for you?
+user: I need a direct bus leaving NYC on the 3rd of March.
+tool(FindBus): ok n_results=7
+assistant: I found 7. How about the 7:40 am that costs $23?
+user: Sounds great thanks.
+assistant: Do you want to buy tickets now?
+user: I don't want to buy them right now. I'd like to find a round trip flight.
+assistant: Which day would you like to return?
+user: I want to return on the 13th.
+assistant: Will you be leaving on March 10th?
+user: Sounds great thanks, I need economy class tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There is an American Airlines flight that leaves at 11:20 am and returns on 1:20 pm and costs $97.
+user: Sounds great thanks.
+assistant: Can I do anything else for you at this time?
+user: Could you find me a hotel, I need 1 room in a 3 star hotel.
+tool(SearchHotel): ok n_results=10
+assistant: How about Aka University City is a nice 3 star hotel.
+user: Do they allow smoking? What is the number?
+assistant: The number is +1 215-372-9000 and they do allow smoking.
+user: Sounds like a good match.
+assistant: Would you like to make a reservation?
+user: Not at this time thanks.
+assistant: Can I do anything else for you?
+user: I need to buy 1 ticket to the event you found.
+assistant: You want 1 ticket to Anthony Green in Philadelphia on March 10th, correct?
+user: Yes that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks for everything, that's all I need.
+assistant: Have a wonderful day.

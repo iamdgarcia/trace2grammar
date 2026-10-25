@@ -1,0 +1,11 @@
+user: I would like weather information.
+assistant: Which city would you like?
+user: Montara on March 10th.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 72 degrees with a 20 percent chance of rain.
+user: What about the wind?
+assistant: The average wind speed should be around 6 miles per hour.
+user: And the humidity percentage?
+assistant: Humidity is about 22 percent.
+user: Great, thank you.
+assistant: Cheers.

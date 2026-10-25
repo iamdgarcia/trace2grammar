@@ -1,0 +1,35 @@
+user: Find me a Museum to visit.
+assistant: What city shall I look for museums in?
+user: Find me some museums in SF.
+tool(FindAttractions): ok n_results=10
+assistant: Cable Car Museum is a museum in San Francisco and is 1 of 10 results that search found.
+user: Does this have free admission?
+assistant: No, this museum does not offer free admission.
+user: Try to find m a historical spot that doesn't charge an entry fee.
+tool(FindAttractions): ok n_results=3
+assistant: Alcatraz is a Historical Landmark and is 1 of 3 results that search returned.
+user: How can I contact them?
+assistant: You can contact them at 415-561-4900.
+user: That is neat. What else can you find?
+assistant: Sutro Baths is also a Historical Landmark.
+user: That is fantastic. Find me a 3d Bizarre story movie to watch at AMC Kabuki 8 near there.
+tool(FindMovies): ok n_results=1
+assistant: Search revealed 1 result which is Once Upon a Time in Hollywood.
+user: Once upon a Time works for me.
+assistant: Shall I get you movie tickets?
+user: No, not right now. Can you find some Ghost movies on the Internet?
+tool(FindMovies): ok n_results=6
+assistant: I found 47 Meters Down: Uncaged, In Fabric, and Midsommar.
+user: Fabric works for me.
+assistant: Shall I cast the movie for you?
+user: Yes, cast the movie for me.
+assistant: You want me to cast the movie In Fabric with English subtitles, correct?
+user: That is right.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has begun.
+user: Who starred in the movie?
+assistant: Caroline Catz starred in the movie.
+user: Thanks a lot.
+assistant: Do you need more help?
+user: No, not right now. Thanks again.
+assistant: Have a great day.

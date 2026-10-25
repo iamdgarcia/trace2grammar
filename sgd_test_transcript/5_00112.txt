@@ -1,0 +1,19 @@
+user: I want to find a therapist. I need a psychologist.
+assistant: What city are you looking in?
+user: I want to find a psychologist in Petaluma.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 therapists. Dunlap Peter T. is a psychologist in Petaluma.
+user: Are there any other therapists? I want to find a psychiatrist in San Jose.
+tool(FindProvider): ok n_results=6
+assistant: I found 6 therapists. Dr. Manuj K. Nangia is a psychiatrist in San Jose.
+user: That sounds great.
+assistant: Would you like to make an appointment.
+user: Yes, please. Make the appointment for the 12th of this month at 12:30 in the afternoon.
+assistant: Please confirm: An appointment with Dr. Manuj K. Nangia at 12:30 pm on March 12th.
+user: Yes, sounds great. What's the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made and you will receive an email confirmation. The phone number is 408-357-0105.
+user: What's the address?
+assistant: The address is 2516 Samaritan Drive.
+user: Thank you! I appreciate it.
+assistant: Glad I could help.

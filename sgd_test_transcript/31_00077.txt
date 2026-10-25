@@ -1,0 +1,41 @@
+user: Can you find me a salon in Campbell?
+tool(FindProvider): ok n_results=5
+assistant: How about Bella Capelli Salon, located in Campbell?
+user: How can I contact this salon, and is it unisex?
+assistant: The salon can be contacted by calling 408-371-2051, and yes it is unisex.
+user: Great, that salon sounds good for me.
+assistant: Will you make an appointment to visit this salon?
+user: Sure, book me an appointment for the 13th of this month.
+assistant: What time shall I make the appointment to?
+user: Make the appointment at 18:30.
+assistant: The appointment will be made for March 13th at 6:30 pm for a visit to Bella Capelli Salon, is that right?
+user: On second thought, change the date to the 10th.
+assistant: Understood, the appointment will be made for March 10th for a visit to Bella Capelli Salon.
+user: All right that sounds good, what is the salon's average rating?
+tool(BookAppointment): ok n_results=1
+assistant: The salon has an average rating of 4.7, and the appointment has now been made.
+user: Is there a restaurant nearby the salon I can visit for a meal on that day?
+assistant: Which kind of food do you prefer to eat?
+user: I like to eat at a steakhouse, with an intermediate priced menu, and that has outdoor seating.
+tool(FindRestaurants): ok n_results=2
+assistant: How about the Grill Em Steak House & Sports Bar in Campbell?
+user: Is there vegetarian options available, and whats the restaurant's average rating?
+assistant: No vegetarian options are available, and the average rating is around 4.4.
+user: Sounds good, please book a table to the restaurant.
+assistant: At what time shall I make the reservation for?
+user: The reservation should be made for six in the evening if possible.
+assistant: A reservation will now be made for 2 people at the Grill Em Steak House & Sports Bar in Campbell, on March 10th at 6 pm.
+user: Change the reservation for one person, and have it set at 4:45 pm.
+assistant: Understood, the reservation is now for 1 person and at 4:45 pm.
+user: That works, can you tell me the address of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Grill Em Steak House & Sports Bar is located at 2509 South Bascom Avenue, however I was unable to make a reservation. Shall I make a reservation for 1 on March 10th at 5 pm instead?
+user: That works for me, please try it out.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was made successfully.
+user: Can you tell me the phone number of the establishment?
+assistant: Contact the restaurant by calling 408-371-8729.
+user: Many thanks for all your help today?
+assistant: Is there something else you need assistance with?
+user: Not really, that was all, thank you so much.
+assistant: Your welcome, enjoy your day.

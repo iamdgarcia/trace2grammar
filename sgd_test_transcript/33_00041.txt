@@ -1,0 +1,19 @@
+user: Hey, can you help me find a salon? I need to change my hair.
+assistant: In which city?
+user: In Berkeley please.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 Salons you may enjoy. How about the Aya Salon & Spa? It's in Berkeley.
+user: Sounds good. How will the weather be there on the 9th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 74 degrees Fahrenheit with a 24 percent chance of rain.
+user: Any how windy and humid will it be?
+assistant: The humidity should be around 41 percent and the average wind speed 4 miles per hour.
+user: Okay, good to know. Book me an appointment on the salon you found on this day, I want it at 11 in the morning.
+assistant: Son an appointment at Aya Salon & Spa at 11 am on March 9th?
+user: Actually, I want it at 1:45 pm.
+assistant: So an appointment at 1:45 pm on March 9th?
+user: Correct. What's their address?
+tool(BookAppointment): ok n_results=1
+assistant: 1880 Solano Avenue. Sorry, I couldn't book it on the time you wanted in Aya Salon & Spa. How about on March 9th at 2 pm?
+user: Never mind, but thanks anyway.
+assistant: Have an amazing day.

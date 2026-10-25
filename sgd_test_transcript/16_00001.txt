@@ -1,0 +1,48 @@
+user: Hi, could you help me find a salon please?
+assistant: Which city are you interested in?
+user: A salon in Fremont will be great.
+tool(FindProvider): ok n_results=10
+assistant: How about a salon in Fremont called 3Sixty Salon and Boutique?
+user: Is this a unisex salon?
+assistant: No, it is not.
+user: Are there any alternatives in SFO?
+tool(FindProvider): ok n_results=10
+assistant: How about 1512 Barber Shop in San Francisco?
+user: Sounds great, may I have their address and contact please.
+assistant: You can locate them at 1532 20th Street and contact them at 415-286-4371.
+user: Are there any alternatives?
+assistant: How about 20th Salon and Barber in San Francisco?
+user: Sounds great too!
+assistant: Would you like an appointment there?
+user: Perhaps later.
+assistant: Could I further assist you then?
+user: Could you find me a therapist in the SFO area please.
+assistant: Would you require a Family COunselor or Psychologist?
+user: A Psychologist will do
+tool(FindProvider): ok n_results=4
+assistant: How about a Psychologist in San Francisco called Adam E. Pollock?
+user: Sounds great to me.
+assistant: Would you like me to make an appointment then?
+user: Could you do so at six pm on the 13th?
+assistant: Sure, please confirm your appointment with Adam E. Pollock at 6 pm on March 13th.
+user: Sorry, could you make it at 12:45 on the 7th of this month instead?
+assistant: Sure, please confirm your appointment with Adam E. Pollock at 12:45 pm on March 7th.
+user: Yes, I am fine with that.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, your appointment could not be made. How about an appointment with Adam E. Pollock at 1 pm on March 7th?
+user: I am fine with that too.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been made, and you should get an email confirmation soon.
+user: May I have their address and contact please?
+assistant: You can call them at 415-346-2356 and visit them at 100 Masonic Avenue.
+user: I see, could you book an appointment at the salon too?
+assistant: And what time would you like to book it?
+user: At 5 o'clock in the evening please.
+assistant: Please confirm your booking at 20th Salon And Barber at 5 pm on March 7th.
+user: Sure, what is their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: You can call them at 415-824-1335, and your appointment has been made.
+user: Thank you so much!
+assistant: How can I further assist you then?
+user: No, that is all I need. Thanks!
+assistant: Have a great day ahead!

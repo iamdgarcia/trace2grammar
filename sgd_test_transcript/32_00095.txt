@@ -1,0 +1,34 @@
+user: I like you to search a place to live with three bed rooms.
+assistant: Number of baths you want?
+user: There should be 2 baths.
+assistant: In which area you want the property and whether you like house for rent or to buy?
+user: I like to buy the property in Brentwood.
+tool(FindHomeByArea): ok n_results=2
+assistant: There is a nice property called Avery At Towncentre which located at 1275 Central Boulevard with cost of $3,600,000
+user: Is there a garage and laundry machine inside the house?
+assistant: No, there is no garage and there is in-unit laundry.
+user: This is cool.
+assistant: Anything else you want?
+user: I like to visit a property on 11th of this month.
+assistant: Please give confirmation details: Your visit to the property called Avery At Towncentre on march 11th.
+user: This is perfect..Can i know the contact number?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed..The contact number is 925-513-1110.
+user: Thank you so much..I want you to share the location.
+assistant: To whom you want to share?
+user: I like to share with Adam.
+assistant: Please give confirmation details: You want to share the location 1275 Central Boulevard with Adam.
+user: This is cool.
+tool(ShareLocation): ok n_results=1
+assistant: I have shared the location successfully.
+user: Thanks a lot for your help.
+assistant: Any other help you want me to do?
+user: I want you to book a cab there with the most comfortable ride.
+assistant: Number of seats you want?
+user: Only one seat is enough.
+assistant: Please give confirmation details: Your ride to 1275 Central Boulevard with luxury ride and 1 seat.
+user: This is perfect for me.
+tool(GetRide): ok n_results=1
+assistant: I booked the cab and it coming on its way.
+user: Thank you so much..
+assistant: have a nice day.

@@ -1,0 +1,24 @@
+user: I need to see what the weather is on the 5th of March.
+assistant: What is the city you want to find out about the weather?
+user: Let's look in Marshall.
+tool(GetWeather): ok n_results=1
+assistant: There's a 25 percent chance of rain that day. The average temperature will be around 76 degrees Fahrenheit that day.
+user: Right, what about checking San Fran for the 4th.
+tool(GetWeather): ok n_results=1
+assistant: That day there will be about an average temp of 71 degrees and have a 16 percent rain chance.
+user: Will it be humid or windy?
+assistant: The average wind will have speeds of 8 miles per hour and a humidity of near 19 percent.
+user: Right, okay then. Please search for some flights that are one way that is going there. I want to go with Delta Airlines and will be leaving from NY.
+assistant: Will you be leaving on March 4th?
+user: I actually will be going on the 3rd.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 flight. The onward flight will leave at 9:35 pm and will have a ticket price of $217. Is Delta Airlines your flight choice?
+user: Sounds just right. Will you search for car rentals there?
+assistant: Do you need a car starting from March 3rd?
+user: I actually need it from the 7th of this month.
+assistant: What is the pick up time you'd like and how long do you want to keep it?
+user: I will need it until March 8th and will get it at 2:45 in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found a good car that can be picked up at Salesforce Transit Center. The car is a Sedan Audi A8.
+user: All right, great. That's all.
+assistant: Enjoy your day.

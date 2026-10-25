@@ -1,0 +1,40 @@
+user: Can you help me make a payment?
+assistant: Sure, who are you making the payment to?
+user: That'll be with Svetlana.
+assistant: Alright, do you want the money transferred from your debit card or from an app balance?
+user: Neither, my credit card.
+assistant: How much will you be transferring?
+user: That'll be $58.
+assistant: To confirm: You'll be transferring $58 from your credit card to Svetlana?
+user: Yeah, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Okay, this payment has gone through, Svetlana should receive it soon.
+user: Okay, next I need to get 4 flexible train tickets, can you help me with that?
+assistant: I can do that, what city are you leaving from?
+user: I'd leave from Vancouver on the 5th.
+assistant: And where are you traveling to?
+user: I'd go to Seattle, WA.
+tool(FindTrains): ok n_results=3
+assistant: Okay, how about a 6:20 am departure for $261?
+user: Yeah, great.
+assistant: Would you like to get the tickets now?
+user: I'll think about it - hows the weather in Seattle, WA on the 7th of March?
+tool(GetWeather): ok n_results=1
+assistant: That day it will be 69 degrees Fahrenheit with a 16 percent chance of rain.
+user: How windy will it be?
+assistant: I'm seeing 8 miles per hour.
+user: Will it be humid?
+assistant: It'll be around 20 percent humidity that day.
+user: Okay, great.
+assistant: Can I help with anything else?
+user: I think i'll get those train tickets.
+assistant: Alright, do you want to get insurance?
+user: Yeah, that's probably a good idea.
+assistant: Okay, so you'd like 4 flexible train tickets from Vancouver to Seattle on March 5th at 6:20 am?
+user: Yeah, great - what stations am I leaving from and arriving at?
+tool(GetTrainTickets): ok n_results=1
+assistant: You'll leave from Pacific Central Station and arrive at King Street Station.
+user: Thanks, that's great.
+assistant: Can I do anything else for you?
+user: No, that's all for today.
+assistant: Have a great trip.

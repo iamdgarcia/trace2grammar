@@ -1,0 +1,28 @@
+user: I'm interested in seeing something new. Can you suggest attractions that are worth visiting?
+assistant: I certainly can. Where should I conduct this search?
+user: Find me interesting attractions in the SF area.
+tool(FindAttractions): ok n_results=10
+assistant: I have found 10 attractions that could interest you. There is a Historical Landmark worth visiting. It is Alcatraz and is located in SF.
+user: Does this attraction have a phone number I can reach them at?
+assistant: Yes they do. Their phone number is 415-561-4900.
+user: Alright. Thank you. Can you also find me a movie in a similar area?
+tool(FindMovies): ok n_results=10
+assistant: Of the 10 movies found, would you like Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles?
+user: None of those interest me sadly. Can you find some other movies?
+assistant: Here are three other movies you may enjoy. Give Me Liberty, Hobbs and Shaw, and Hustlers. Do any of these suit your tastes?
+user: Hustlers sounds like the perfect movie to see.
+assistant: I can buy you tickets for that right now. Is that okay?
+user: No thanks. I don't want to purchase tickets to any movie at the moment. What you can help me with is finding some good movies online. Something like a Dramatic Story. If you can, find one with Adam Sietz.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie that meets that criteria. Would you enjoy seeing Brittany Runs a Marathon?
+user: Brittany Runs a Marathon? That sounds like a great movie to watch online.
+assistant: I can play that movie for you. Do you want me to?
+user: Yeah I want to watch that now. I can't wait.
+assistant: Preparing to play Brittany Runs a Marathon with English subtitles. Proceed?
+user: Yes please do.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing Brittany Runs a Marathon. Enjoy your movie.
+user: Thank you very much. I appreciate it.
+assistant: My pleasure. Do you require assistance with something else?
+user: No. You've been a big help. Thanks a ton.
+assistant: Enjoy your movie and have a great day.

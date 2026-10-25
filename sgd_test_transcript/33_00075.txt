@@ -1,0 +1,27 @@
+user: I am trying to find something interesting to do on the 10th of this month somewhere in San Diego or in surrounding areas.
+assistant: Do you have something in mind such as sporting events, plays or something else?
+user: Maybe a play or a show.
+tool(FindEvents): ok n_results=8
+assistant: There are 8 events that you might enjoy. About Time is a play that is very popular. It is playing at Talent to aMuse Theatre Co on March 10th at 5:30 pm.
+user: That sounds interesting.
+assistant: Would you like me to purchase a ticket for you for the play?
+user: Yes. I will just need 1 ticket.
+assistant: Please confirm the following information for me. You want 1 ticket for the play About Time which is playing on March 10th in San Diego.
+user: Yes. That sounds good. But what is the cost of the ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket is $20 and has been purchased.
+user: Okay. Now I need a cab to go to the play.
+assistant: Would you like a regular ride, pool ride, luxury ride or something else?
+user: I would like the expensive ride and there will be three passengers.
+assistant: Please confirm the following information. You want a luxury ride for 3 passengers to Talent to aMuse Theatre Co.
+user: Yes. That's it.
+tool(GetRide): ok n_results=1
+assistant: The cab has been booked and it is on the way.
+user: How much will that ride cost?
+assistant: The cost for the luxury ride is $27.99.
+user: And how long will it be before it arrives?
+assistant: The ride is expected in 12 to 15 minutes.
+user: Great. Thanks for booking everything.
+assistant: Do you need help with anything else?
+user: No. That's it. Thanks.
+assistant: Enjoy the play.

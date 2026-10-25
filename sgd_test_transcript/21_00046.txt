@@ -1,0 +1,21 @@
+user: I want to look for a song at this moment.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs which you might enjoy. How would you like listening to Masterpiece by Jessie J of the Sweet Talker album?
+user: That is the song I want.
+assistant: Do you want this song to start playing now?
+user: Some other time maybe.
+assistant: Can I do something else to help you?
+user: Can you check how there weather is there?
+assistant: Can you tell me for which city I should check the weather?
+user: I am interested in knowing the weather in Fresno.
+tool(GetWeather): ok n_results=1
+assistant: For your requested location the temperature should be at an average of 72 degrees, with a chance of raining at 2 percent.
+user: Alright, fine. Now could you start playing the song you found earlier? I do not mind on which device it is played.
+assistant: Can you please confirm that that you want the song Masterpiece to start playing in your Living room?
+user: Yes, that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time listening to the music
+user: I appreciate it very much!
+assistant: Do you want me to help you with something else?
+user: Nothing. I am grateful to you!
+assistant: Have a wonderful time!

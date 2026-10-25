@@ -1,0 +1,28 @@
+user: Are there any flights from Washington to San Francisco, round trip that return on the 13th?
+assistant: What would be your departure date?
+user: That 1st, that would be the 1st.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: So far there are 3. One is with Delta Airlines departing at 6:50 pm there will be a layover on that flight and you would leave to come back home at 10:50 am at a price of $444.
+user: When would I get where I am going and what class is it, economy, business?
+assistant: It is Economy class and it would have you there at 11:25 pm.
+user: That will probably work. Are there any houses 3.5 or more available?
+tool(SearchHouse): ok n_results=10
+assistant: Yes, one is 3.5 it's at 1095 Market Street.
+user: What are some more options for houses?
+assistant: This one is also 3.5 its called the 1100 Market Street Hotel entrance is at, 45 McAllister Street.
+user: I want it, reserve it for 3 of us please.
+assistant: Are these dates correct check in March 1st and check out March 13th?
+user: Partially make March 5th the check out date.
+assistant: You will be arriving March 1st and staying until March 5th in San Francisco and there are 3 in your group do I have that right?
+user: Sorry, I want to change that again, make next Monday my arrival date and I will stay until the 10th of this month.
+assistant: So I will change the check in and out dates to March 4th and March 10th, is that correct?
+user: Yes, hey check for laundry service please.
+tool(BookHouse): ok n_results=1
+assistant: Yes on the laundry and your room is booked.
+user: Thanks and another thing what are some the attractions available around there?
+tool(FindAttractions): ok n_results=10
+assistant: There is the Historical Landmark Alcatraz.
+user: Alright that's something.
+assistant: Do you need me for anything else right now?
+user: No that is all bye.
+assistant: Take pleasure.

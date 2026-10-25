@@ -1,0 +1,41 @@
+user: I need to find a salon.
+assistant: What city should I look in?
+user: I would like a salon in SF.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber shop is a very nice salon in San Francisco.
+user: Would it be unisex?
+assistant: The salon is unisex.
+user: Will you find me a different salon in Pleasant Hill.
+tool(FindProvider): ok n_results=4
+assistant: A nice salon in Pleasant Hill is Cool Tops.
+user: Yes, that is sounding good.
+assistant: What else can I assist you with?
+user: I would like to search for a therapist in the area.
+assistant: What type of therapist would you need?
+user: I would like a psychologist.
+assistant: Should I search someone in Pleasant Hill?
+user: Yes, that will work for me.
+tool(FindProvider): ok n_results=4
+assistant: You might want to try Christopher J. Celio a psychologist in Pleasant Hill.
+user: What is the address and phone number?
+assistant: The address is 101 Gregory Lane and you can call them at 925-827-9876.
+user: That sounds nice so could you book an appointment ten am.
+assistant: Which date do you want an appointment?
+user: Will you make an appointment for the 6th?
+assistant: Please confirm details for an appointment with Christopher J. Celio 10 am on March 6th.
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was a success to be booked. You should get a confirmation by email soon.
+user: I would like to book an appointment at the salon you found that day.
+assistant: What time would you like the appointment?
+user: I would like the appointment at 12:45 in the afternoon.
+assistant: Please confirm details that the name of the stylist is Cool Tops for 12:45 pm on March 6th.
+user: No, I'd like an appointment at 4:30 in the evening.
+assistant: Please confirm details that the name of the hair stylist is Cool Tops and the appointment is 4:30 pm.
+user: Yes, that is sounding good. Would it be unisex and what is the address?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is confirmed and the address is 2255 Contra Costa Boulevard a unisex salon.
+user: Thanks so much.
+assistant: Will I be able to assist you with anything else?
+user: No, thanks so much.
+assistant: Have a nice day.

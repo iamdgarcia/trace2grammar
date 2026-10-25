@@ -1,0 +1,14 @@
+user: I want to check weather on the 13th
+assistant: For which city you want
+user: Make it in Newark
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 82 degrees Fahrenheit and there is a 9 percent chance to rain
+user: What about humidity windy
+assistant: The average wind speed is 2 miles per hour and humidity around 25 Percent
+user: How about in foster city
+tool(GetWeather): ok n_results=1
+assistant: It is 94 degrees Fahrenheit and there is a 23 percent chance to rain
+user: Sure great
+assistant: Shall I assist anything more
+user: Thanks a lot
+assistant: Cheers have a nice day

@@ -1,0 +1,24 @@
+user: I have a visit to SF, can you find some attractions there something like a park?
+tool(FindAttractions): ok n_results=8
+assistant: You will surely love Fort Funston, nice park.
+user: I would like to know whether it is child-friendly and entrance is free.
+assistant: Entrance is free but not meant for kids.
+user: Then check any other attractions are there
+assistant: Another option is Golden Gate park, also another Park.
+user: One more help, are there show times for movies?
+tool(FindMovies): ok n_results=10
+assistant: You can enjoy from 10 movies. I think you may like Ad Astra, Brittany Runs a Marathon or Fiddler: A Miracle of Miracles.
+user: Brittany Runs a Marathon will be the one I choose.
+assistant: Do you need to book tickets for that?
+user: Not now, thank you.
+assistant: Any other help?
+user: Check if Imaginative fiction movies are available online preferably of Norman Bartold.
+tool(FindMovies): ok n_results=1
+assistant: You can watch Close Encounters of the Third Kind.
+user: Close encounters is a good choice. Please help to watch it now.
+assistant: Please confirm the request, you want to watch Close Encounters of the Third Kind with English subtitles online
+user: Correct, go on.
+tool(PlayMovie): ok n_results=0
+assistant: Sorry, it is not available, any other help?
+user: No thats all.
+assistant: My pleasure to help you.

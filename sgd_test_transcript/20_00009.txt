@@ -1,0 +1,23 @@
+user: I need to find 1 room in a 3 star hotel which allows smoking.
+assistant: Can you tell me the city where you want me to find the hotel?
+user: The hotel I am looking for should be located in SFO.
+tool(SearchHotel): ok n_results=8
+assistant: A nice 3 star hotel which you might like is Bei Hotel San Francisco.
+user: That seems nice. I also want you to find me an SUV car which I can rent there, and I will be having it from March 11th.
+assistant: Till when are you going to have the care rented, and when will it be possible for you to pick up the car?
+user: I will be available to pick up the car at 2 o'clock in the afternoon, and I will need to rent it till 14th of this month.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I have found 4 cars which you might consider, with one of them being a SUV GMC Terrain, which you can pick up at SFO International Airport.
+user: Can you tell me how much this car will cost me per day?
+assistant: Renting this car will cost you $45.00 per day.
+user: That seems nice. I would like to book for me this rental car.
+assistant: Do you want to have also insurance on this car?
+user: Actually I want to have the insurance on the car.
+assistant: Can you please confirm that you want to rent a SUV car including insurance which you will be picking up on March 11th at 2 pm at the SFO International Airport, and you will need it till March 14th?
+user: Yes that is what I want.
+tool(ReserveCar): ok n_results=1
+assistant: Your requested car has been booked.
+user: I appreciate your help.
+assistant: Can I do something else to help you?
+user: Nothing. I am grateful for your help.
+assistant: Have a good time!

@@ -1,0 +1,17 @@
+user: Search me some songs, something Hillbilly like Rearview Town
+tool(LookupMusic): ok n_results=3
+assistant: I got 3 songs, would you like Girl Like You by Jason Aldean for the album Rearview Town
+user: Is it from 2014
+assistant: no, its from 2018
+user: yes, thats the right one. Hows the weather in Oakland?
+tool(GetWeather): ok n_results=1
+assistant: It will be 72 degrees Fahrenheit with a 16 % chance of rain
+user: sure, play that song
+assistant: Please confirm: Playing the song Girl Like You in the living room
+user: yes, thats right
+tool(PlayMedia): ok n_results=1
+assistant: enjoy the song
+user: thanks a lot
+assistant: any thing else
+user: no, thats all
+assistant: have a good time

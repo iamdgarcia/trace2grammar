@@ -1,0 +1,19 @@
+user: What will the weather in San Diego be like.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 90 degrees Fahrenheit with a 1 percent chance of rain.
+user: I'm also looking for an economy one-way flight to go there.
+assistant: Will you be leaving on March 1st?
+user: Yes and will need three ticket with American Airlines.
+assistant: What is your departure city?
+user: Leaving from Las Vegas.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Is you preferred airline American Airlines? There is a direct flight taking off at 11:05 pm for a cost of $85.
+user: At what time does the departure flight arrive.
+assistant: The departure flight arrives of 0:19 am.
+user: Great, I will also need a rental sedan to be picked up at 6:30 pm.
+assistant: Will you be picking the car on March 1st and for how many days?
+user: I will need it from March 10th until the 12th.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 options. A sedan Hyundai Ioniq is available at Santa Fe Depot.
+user: Okay, That's all for now.
+assistant: Okay. Take care and goodbye.

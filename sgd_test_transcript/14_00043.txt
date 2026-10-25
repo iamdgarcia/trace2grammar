@@ -1,0 +1,17 @@
+user: I am curious about movies starring Marianne Jean-Baptiste.
+assistant: What genre do you like?
+user: Maybe Fight movies. Something with Bronagh Gallagher.
+tool(FindMovies): ok n_results=1
+assistant: 1 movie fits your choice, Pulp Fiction.
+user: That Pulp Fiction is supposed to be good lets see it.
+assistant: To confirm, Play Pulp Fiction with English subtitles.
+user: Sure, do it.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is going now.
+user: The weather on the 10th in Dixon? Will it be nice?
+tool(GetWeather): ok n_results=1
+assistant: Yes, 76 degrees and 5 % chance of rain is great for humans.
+user: Fine, ok.
+assistant: What more now?
+user: Nothing, I'm happy.
+assistant: Enjoy the show.

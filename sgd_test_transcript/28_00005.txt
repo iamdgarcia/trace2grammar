@@ -1,0 +1,21 @@
+user: Can you get me a movie with Daniel Camp in it?
+tool(FindMovies): ok n_results=1
+assistant: There is 1, what about Steel Magnolias? it got 70 rating.
+user: Fine, how about a restaurant?
+assistant: What food do you prefer?
+user: I only eat pasta, you know that.
+assistant: Where will you go, what town?
+user: Fine Livermore please.
+tool(FindRestaurants): ok n_results=4
+assistant: You might like Campo Di bocce Of Livermore, it is in Livermore after all.
+user: Yea, that' fine. How about a table on Saturday this week?
+assistant: What time do you want to eat?
+user: at 1:45 in the afternoon please.
+assistant: Sure to confirm: 2 for Campo Di Bocce Of Livermore in Livermore at 1:45 pm on March 2nd.
+user: No wrong, I need a table for three.
+assistant: Sure, to be clear: 3 People eating on March 2nd?
+user: Yes, are they Ultra high-end? How can I reach them?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You can phone Campo Di bocce Of Livermore at 925-249-9800, and they have moderate pricing. The time you chose doesn't work, Do you want me to try a reservation on March 2nd at 1:30 pm for 3?
+user: No, I can't do that.
+assistant: Have a pleasant time.

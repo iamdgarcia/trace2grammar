@@ -1,0 +1,20 @@
+user: I am in a mood to watch movies online. I like Fantasy Movies and I need your help to search the one for me.
+tool(FindMovies): ok n_results=2
+assistant: What about your choice among the 2 movies Labyrinth or the Lord of the Rings: The Return of the King?
+user: I think you can search for the one featuring Julia Ragnarsson. I like Ghost movies and make the search based on my interest.
+tool(FindMovies): ok n_results=1
+assistant: What about the 1 movie that I searched which is Midsommar?
+user: Midsommar is the nice one and it is Okay.
+assistant: Shall I play it for you?
+user: Yes, I want to watch it with English subtitles.
+assistant: Please confirm to play the movie Midsommar with English subtitles.
+user: That is confirmed to proceed.
+tool(PlayMovie): ok n_results=1
+assistant: Movie started playing now and you can enjoy it.
+user: Thanks and I want to know the weather there on March 10th in Newark.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature of that place will be 92 degrees Fahrenheit and there may be a chance of 16 percent of rain.
+user: That is okay. Thanks.
+assistant: Anything else you need?
+user: nothing for now. Thanks.
+assistant: Have a nice day.

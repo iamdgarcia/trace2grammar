@@ -1,0 +1,26 @@
+user: Can you help find me a Therapist?
+assistant: Where should they be located?
+user: They should be in Lafayette.
+assistant: Is there a specialty they should have?
+user: They should be a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: Alissa Scanlin Psyd is a Psychologist in Lafayette.
+user: Please give me their address and phone number.
+assistant: They are located at 3468 Mount Diablo Boulevard and their phone number is 707-371-2433.
+user: Okay, that can work.
+assistant: Do you want me to make an appointment?
+user: Yes, please do that.
+assistant: What time would you like the appointment?
+user: I want it for 10:30 in the morning.
+assistant: And what date is that for?
+user: it's for March 13th.
+assistant: I'll make you an appointment with Alissa Scanlin Psyd at 10:30 am on March 13th, is that correct?
+user: No, I actually want it for half past 3 in the afternoon, sorry.
+assistant: I'll make you an appointment with Alissa Scanlin Psyd for 3:30 pm.
+user: Yeah, that's good.
+tool(BookAppointment): ok n_results=1
+assistant: I've booked the appointment. There will be an email confirmation shortly.
+user: Thanks so much. Your help has been very good.
+assistant: Do you need me to do anything else?
+user: No, that's all I need. Thanks again.
+assistant: I'm happy to help.

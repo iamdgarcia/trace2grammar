@@ -1,0 +1,24 @@
+user: I want you to find me Electropop songs by Tove Lo.
+tool(LookupMusic): ok n_results=1
+assistant: This one is off the album Lady Wood by Tove Lo called Cool Girl how about that one?
+user: I'd love it, what are some good movies you can find online?
+assistant: What genre would you like me to search for?
+user: Cartoon is my favorite right now.
+tool(FindMovies): ok n_results=2
+assistant: I have 2 suggestions, would you enjoy The Angry Birds Movie 2 or perhaps Toy Story 4?
+user: I choose Toy Story 4 sound good.
+assistant: Should I start the movie for you?
+user: Not right now may be later.
+assistant: Do you need anything else?
+user: Yes, cast the song I wanted to Patio please.
+assistant: Cast Cool Girl to Patio correct?
+user: No wait play it on the kitchen speaker I changed my mind
+assistant: Alright that's Cool Girl in the Kitchen correct?
+user: Yes I am sure of that
+tool(PlayMedia): ok n_results=1
+assistant: May your listening bring you pleasure.
+user: Hey, wait, what are my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: There are 3 - Wake up for 6:30 am is one.
+user: Super just checking you can go now.
+assistant: Enjoy yourself.

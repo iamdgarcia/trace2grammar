@@ -1,0 +1,43 @@
+user: I can't seem to find the type of Salon I'm looking for. Assistant, can yu help me find a unisex Salon?
+assistant: I'd be happy to if you provide the city name.
+user: I want to find a Salon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: There are 10 Salons that you may like. There is the Atelier Salon Willow Glen located in San Jose. Would you like this location?
+user: Please find a different Salon for me.
+assistant: How about the Barba & Co. San Jose located in San Jose?
+user: Yeah. I think I would enjoy going to that one more.
+assistant: Book an appointment at this location?
+user: It sounds nice but I am not sure I want to reserve it right now.
+assistant: Okay. What else can I assist you with today?
+user: I think I need to schedule a therapy appointment. In particular, I need to a Psychologist.
+assistant: Should I search in the San Jose area for this as well?
+user: Yes that's correct.
+tool(FindProvider): ok n_results=10
+assistant: Here are 10 therapists for you. In San Jose, there is Barskyex Bryna G. This office is home to a Psychologist.
+user: That should work just fine for me.
+assistant: Should I proceed with booking an appointment with the therapist?
+user: Go ahead and schedule the appointment.
+assistant: What date and time do you want to schedule this office visit?
+user: I would like it to be at 11:30 in the morning on the day after tomorrow. Is that possible?
+assistant: Confirm your appointment information: I am now booking an appointment with Barskyex Bryna G at 11:30 am on March 3rd. Shall I confirm this?
+user: Yeah assistant. Confirm the appointment for me please.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed the appointment with the therapist. You should be receiving a confirmation notice in your email.
+user: What is the address of their office?
+assistant: The office is located at 5755 Cottle Road # 4.
+user: Tell me the phone number to this establishment as well.
+assistant: To reach the office, please call 408-363-4418.
+user: Great. I appreciate you helping me set up a this important appointment. Now, I need help with another appointment. Schedule a visit to the last Salon you mentioned to me.
+assistant: What time would you like to book your appointment?
+user: I want the salon appointment to be at 14:45 if possible.
+assistant: Scheduling an appointment for the hair stylist at Barba & Co. San Jose. The appointment will be scheduled for 2:45 pm on March 3rd. Are these details correct?
+user: Everything sounds right to me. What's the address and rating of this Salon?
+tool(BookAppointment): ok n_results=1
+assistant: The establishment is located at 1775 Park Avenue. The average rating for the Salon is 5.0. Unfortunately, I was unable to book the appointment with the details you provided. Would you be willing to visit Barba & Co. San Jose at 3 pm on March 3rd?
+user: That will work just as well for me.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been made and confirmed.
+user: Alright. Thank you for booking those appointments for me.
+assistant: Do you need help with any other than what you mentioned?
+user: I think that's all for now. Thanks for your help.
+assistant: My pleasure. Have a great day.

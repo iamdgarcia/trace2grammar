@@ -1,0 +1,23 @@
+user: Hi I'll be travelling and need a hotel to stay in, can you find one for me?
+assistant: Of course, in what city would you like the hotel to be in?
+user: I would like a hotel with a 1 star rating in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: I managed to find a 1 star hotel called Abercorn House.
+user: Is there anything else? Preferably with three rooms?
+tool(SearchHotel): ok n_results=10
+assistant: I found a 1 star hotel called Astor Hyde Park Hostel.
+user: How much is the room per night? And what is their contact number?
+assistant: The room cost is $90 per night and you can call them at +44 20 7581 0103.
+user: That works for me.
+assistant: Would you like me to book the hotel room for you?
+user: Yes, I would like to reserve a room.
+assistant: What day would you like to check in?
+user: I would like to check in on the 9th of this month.
+assistant: What will be the duration of your stay?
+user: I would like to stay for 4 days.
+assistant: So you would like to stay at the Astor Hyde Park Hostel in London on March 9th. The duration of your stay will be 4 days and you would like 3 rooms. Is this correct?
+user: Yes, that works for me? Is smoking permitted in the hotel? What's their address?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been booked. Their address is 191 Queen's Gate and smoking is not allowed.
+user: Thank you, I appreciate all of your help. That's all I needed.
+assistant: No problem, have a great day!

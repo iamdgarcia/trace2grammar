@@ -1,0 +1,22 @@
+user: I need to find a one way flight.
+assistant: What date would you like to travel?
+user: I'd like to start my travel on March 14th.
+assistant: Where are you departing from, and where are you planning to go?
+user: I am flying from SD to Los Angeles.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found a flight with Alaska Airlines that departs at 10:05 am and costs $70.
+user: That sounds good. Can you find some trains going there? Can you find three luxurious seats for the 10th of March?
+tool(FindTrains): ok n_results=10
+assistant: How about a train departing at 6:50 am that costs $243 in total?
+user: Are there any other trains that may work, maybe on the 13th?
+tool(FindTrains): ok n_results=7
+assistant: There are 7 trains that may work for you. How about a train departing at 12 pm that costs $241 in total?
+user: That sounds good. I want to book the train tickets.
+assistant: Do you want travel insurance?
+user: Yes please, I would like insurance.
+assistant: Please confirm the following details: Purchasing 3 train tickets leaving from Los Angeles to San Diego on March 13th at 12 pm. The seats are business class.
+user: Correct. What station does the train leave from and arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were successfully booked. The train departs from Union Station and arrives at Santa Fe Depot.
+user: Thank you, you have been helpful. That is all I need.
+assistant: You're welcome. Have a great day.

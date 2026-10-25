@@ -1,0 +1,18 @@
+user: I would like to find a 3 star hotel in San Diego.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 hotels. One is called Bahia Resort Hotel and has 3 stars.
+user: Is smoking permitted?
+assistant: No, it is not.
+user: Ok then, that is fine.
+assistant: Can I do anything else for you?
+user: I would like to reserve the hotel for next Tuesday.
+assistant: When will you check out?
+user: I will need one room for 6 days.
+assistant: Please confirm 1 room for 6 days beginning on March 5th at the Bahia Resort Hotel in San Diego.
+user: Great, what is the number?
+tool(ReserveHotel): ok n_results=1
+assistant: The reservation is confirmed and the number is +1 858-488-0551.
+user: Great, thanks for the help.
+assistant: Can I do anything else for you?
+user: No, I am all set.
+assistant: Have a great day.

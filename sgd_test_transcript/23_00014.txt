@@ -1,0 +1,37 @@
+user: I'd like to watch a movie online
+assistant: What is your favorite movie genre?
+user: I love Global movies
+tool(FindMovies): ok n_results=2
+assistant: I propose Tel Aviv on Fire and Zama: which do you prefer?
+user: I prefer Tel Aviv on Fire!
+assistant: Want to watch it right away?
+user: No, maybe I'll watch it later
+assistant: What else can I do for you?
+user: I would like to find attractions in London, UK
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions for you. There's 30 St Mary Axe (The Gherkin), a Historical Landmark
+user: Nice, thanks! Now I'd like to look for songs
+tool(LookupMusic): ok n_results=10
+assistant: Do you like Mine by Taylor Swift from the album Speak Now?
+user: Is it a song of 11? Is it a pop song?
+assistant: No, It's from the year 2010. Yes, It's a pop song!
+user: Okay then, I want to listen it
+assistant: Do you want to listen to this song?
+user: Yes, please, on patio speaker
+assistant: Playing the song Mine in Patio. Is it correct?
+user: No, I prefer on kitchen speaker
+assistant: Playing Mine in Kitchen. Do you confirm?
+user: Yes, now it's correct, I confirm
+tool(PlayMedia): ok n_results=1
+assistant: Good listen!
+user: Thanks. Now I want to watch the movie with english subtitles.
+assistant: Playing Tel Aviv on Fire with English subtitles. Is it correct?
+user: Yes, It's correct. Thanks
+tool(PlayMovie): ok n_results=1
+assistant: The film is about to begin
+user: What is the main actor?
+assistant: There's Amer Hlehel in the movie.
+user: Very well. Thanks
+assistant: What can I still do for you?
+user: Nothing, It's all for now.
+assistant: Have a nice day

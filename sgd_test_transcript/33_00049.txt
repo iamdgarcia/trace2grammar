@@ -1,0 +1,17 @@
+user: Help me find a salon?
+assistant: Where should it be located?
+user: It should be in Union City.
+tool(FindProvider): ok n_results=1
+assistant: Precision Cutz in Union City is nice.
+user: Okay, that can work. Tell me what the weather will be like there on the 8th?
+tool(GetWeather): ok n_results=1
+assistant: It will be 86 degrees Fahrenheit on average with a chance of rain of 25 percent.
+user: Okay, thanks. Now please book me an appointment at that salon we were talking about for 11:00.
+assistant: I'll book you an appointment at Precision Cutz for March 8th at 11 am. Is everything correct?
+user: Yeah, that's correct. Also, tell me their phone number.
+tool(BookAppointment): ok n_results=1
+assistant: I've made the appointment. You can call them at 510-477-4782.
+user: Thanks a lot.
+assistant: Do you need any further help?
+user: No, thanks again.
+assistant: Have a great day.

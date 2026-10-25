@@ -1,0 +1,28 @@
+user: Search for a rental car for me.
+assistant: What city shall I search in?
+user: Search for rental cars in Philly.
+assistant: What dates do you want the car and what time do you want to get it?
+user: I will pick it up at 2 pm on the 2nd of March and will return it on the 7th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: SUV Alfa Romeo Stelvio is available at Intercity Terminal and is 1 of 10 cars that search found.
+user: That is perfect.
+assistant: Shall I get the car rental for you now?
+user: No, not right now. Can you find me a bus to get there?
+assistant: What is your departure date?
+user: I wish to depart later today.
+assistant: What is your departing city?
+user: I am departing out of Washington.
+tool(FindBus): ok n_results=7
+assistant: There is a bus leaving at 8:30 am with a price tag of $29.
+user: What else do you have, preferably a direct bus?
+tool(FindBus): ok n_results=6
+assistant: There is a bus leaving at 11:30 am, costs $25 and is 1 of 6 results that search found.
+user: What are the departure and arrival stations?
+assistant: Silver Spring bus Stop is the departure station and the arrival station is 10th and Filbert.
+user: That is perfect. Find me a one-way flight to get there later today for one person.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: American Airlines departs at 7:10 pm, has a layover, costs $221 and is 1 of 4 results that search found.
+user: That is perfect.
+assistant: Do you need more help?
+user: No, not right now. Thanks.
+assistant: Have a great day.

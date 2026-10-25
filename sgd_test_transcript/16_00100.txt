@@ -1,0 +1,26 @@
+user: I'd like to find a unisex salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. One nice salon in Berkeley is Berkeley Hair Studio.
+user: That sounds good. Could you help me share the location? The address is 2556 Telegraph Avenue #4.
+assistant: Who did you want to share it with?
+user: I'd like to share it with Emily.
+assistant: Please confirm you're sharing 2556 Telegraph Avenue #4 with Emily.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: The location has successfully been shared.
+user: Thank you, that was very helpful.
+assistant: Did you need help with anything else?
+user: Can I see my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: You have 1 alarm for 10:30 am with the name Class.
+user: That sounds good.
+assistant: Did you want to add another alarm?
+user: Yes, I'd like to add a new alarm for quarter to 4 in the afternoon named Cooking.
+assistant: Please confirm you're creating an alarm at 3:45 pm called Cooking.
+user: That is correct.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm was successfully added.
+user: Thank you very much.
+assistant: Did you need help with anything else?
+user: No, but thank you again.
+assistant: Thanks.

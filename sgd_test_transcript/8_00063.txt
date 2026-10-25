@@ -1,0 +1,18 @@
+user: I wish to demand for a payment of 83 dollars.
+assistant: Who is the contact?
+user: The contact person name is Mahmoud.
+assistant: Kindly ensure that, $83 transaction has been made with Mahmoud and it is visible to public.
+user: Yes. It is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your demand has been made successfully.
+user: I wish to make a payment ot Bob.
+assistant: Is it from credit card or app balance?
+user: Transfer it from my check card.
+assistant: How much amount?
+user: Transfer $46.
+assistant: Kindly ensure that, $46 will be transferred from your debit card to Bob and it is visible to public.
+user: Yes. You are correct.
+tool(MakePayment): ok n_results=1
+assistant: Transfer has been done. Bob will receive the amount soon.
+user: Thank you so much. That is what I want. Bye.
+assistant: That is all about everything. Bye.

@@ -1,0 +1,28 @@
+user: Find me a song
+tool(LookupMusic): ok n_results=10
+assistant: I got 10 songs for you. What's your opinion about Sick Like Me by In This Moment from the Black Widow album.
+user: What year was it when it come out?
+assistant: It's the year 2014
+user: Yes, that is the one I am looking for.
+assistant: Are you interested in to listen to this song?
+user: Maybe after sometime. Did you find any good movies online?
+assistant: What type of movies do you prefer?
+user: I love movies featuring Bill Thurman. Imaginative fiction movies would be preferred.
+tool(FindMovies): ok n_results=1
+assistant: What do you say about Close Encounters of the Third Kind?
+user: Close Encounters of the Third Kind is the best.
+assistant: Can I play the movie for you?
+user: No, not now. Play the song you just found. Any device is preferred.
+assistant: Can you confirm the following details: playing the song Sick Like Me in Living room.
+user: No. Please cast it on the Speaker outside.
+assistant: Can you confirm the details below: playing the song Sick Like Me in Patio.
+user: Yes, that's right.
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with your music.
+user: Can I know my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: A 4 pm alarm with name Event.
+user: Okay, that's great.
+assistant: Anything else do you want me to help with ?
+user: No, Thank you.
+assistant: Thanks a lot.

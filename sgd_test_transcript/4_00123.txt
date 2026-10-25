@@ -1,0 +1,20 @@
+user: Need your help to find a bus, can you?
+assistant: What date you are starting and from which place? which place you are planning to go for?
+user: I will be going to Long Beach on 13th of this month and will be starting from San Diego
+tool(FindBus): ok n_results=10
+assistant: I looked in 10 buses for you and what is your opinion on a bus starting at 6:50 am with cost $25?
+user: Can i know the number of stops of bus?
+assistant: The bus is a direct one
+user: Which is the station bus starting from and where does it arrive?
+assistant: The bus will be starting from El Cajon Bus Stop which arrives at Downtown Station
+user: This looks very fine
+assistant: You require buying tickets?
+user: Yes i need tickets for two people
+assistant: please give confirmation details: Your ticket requirement is for 2 people without extra luggage for leaving to Long Beach from San Diego on March 13th at 6:50 am
+user: This is perfect
+tool(BuyBusTicket): ok n_results=1
+assistant: Ticket booking is done
+user: Thank you very much
+assistant: Is there any other help you require?
+user: No, thank you very much
+assistant: Have a wonderful day

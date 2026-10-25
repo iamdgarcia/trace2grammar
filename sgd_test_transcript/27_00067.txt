@@ -1,0 +1,29 @@
+user: Can you find me good attractions in San Francisco? Maybe a child-friendly historical landmark.
+tool(FindAttractions): ok n_results=6
+assistant: How about Alcatraz? That's a matching historical landmark.
+user: That sounds great. Can you find me a nearby movie as well? A regular showing of a family film at AMC Kabuki 8.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 option for you. Do you want to see The Farewell?
+user: Farewell will be perfect.
+assistant: Do you want me to buy tickets for you?
+user: No thank you. Do you know of any good movies online?
+assistant: What genres do you prefer?
+user: I like funny movies.
+tool(FindMovies): ok n_results=5
+assistant: I found 5 options for you. How about Chhichhore, Good Boys, or My Big Fat Greek Wedding?
+user: Do you have other options?
+assistant: How about Yesterday or Where'd You Go, Bernadette?
+user: Do you have more options? Maybe kids movies with Kristen Schaal.
+tool(FindMovies): ok n_results=1
+assistant: Sure, I found 1 option. What do you think of Toy Story 4?
+user: Toy Story Four sounds great to me.
+assistant: Can I help you with anything else?
+user: I'd like you to play the film now.
+assistant: Please confirm: Play Toy Story 4 with English subtitles.
+user: Yes, that's all correct.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has begun.
+user: Thank you so much!
+assistant: Can I do anything else for you?
+user: No thank you, that'll be all.
+assistant: Have a wonderful evening.

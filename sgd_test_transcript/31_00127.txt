@@ -1,0 +1,26 @@
+user: Could you look a therapist for me please? I require a family therapist in Gilroy.
+tool(FindProvider): ok n_results=5
+assistant: I discovered 5 therapists that might be suitable. You may wish to try out Leininger anne, which is a family counselor in Gilroy.
+user: What is their contact number, and where are they located?
+assistant: Their location is 8339 Church Street # 212. You may contact them on 408-847-2100.
+user: That sounds lovely.
+assistant: Would you like to reserve an appointment with the therapist?
+user: Yeah, I'd like to make the reservation.
+assistant: What day do you wish to have the booking for?
+user: The reservation time ouguht to be 4:30 pm. Could you make the reservation on the 6th of this month?
+assistant: Please verify the following information: reserve a spot with Leininger Anne on March 6th, 4:30 pm.
+user: Yeah, that's fine.
+tool(BookAppointment): ok n_results=0
+assistant: I apologize, but something went wrong and I could not make the reservation. Could I assist you with something else?
+user: Could you attempt the reservation once more? Could you make the reservation for March 11th?
+assistant: Please verify the following information: reserve a spot with Leininger Anne on March 11th, 4:30 pm.
+user: Yeah, that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation has been completed. You ought to receive an email verification shortly.
+user: Do you posses some recommendations on films to view?
+tool(FindMovies): ok n_results=10
+assistant: I discovered 10 films for you. What do you think of This is Not Berlin, which has a mean rating of 86 out of 100?
+user: Who directed this film?
+assistant: The film's director is Hari Sama.
+user: That sounds lovely; that's all.
+assistant: I am happy to be of service.

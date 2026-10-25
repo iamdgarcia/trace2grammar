@@ -1,0 +1,28 @@
+user: Search for me some songs.
+tool(LookupMusic): ok n_results=10
+assistant: What is your opinion about the album The New Classic by Iggy Azalea with song Work.
+user: What type of music is this.In four years back has came out?
+assistant: From 2013 and is a Pop song.
+user: Yes I like this one.
+assistant: You want to play this song?
+user: No.Not now maybe later.
+assistant: With something else I can help you?
+user: You can find me some movies,I enjoy movies featuring Patch Darragh.
+assistant: What type of movies you like?
+user: Something Dramatic story will be great.
+tool(FindMovies): ok n_results=1
+assistant: What do you think about Brittany Runs a Marathon?
+user: Brittany Runs a Marathon sounds really good.
+assistant: You want to watch it now?
+user: No.Not now.
+assistant: Can I still help you?
+user: Play in any device the song that you have found.
+assistant: Play the song Work in Living room.Is okay?
+user: Yes that's good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Show me my alarms,please.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm with name Shuttle to work at 8:30 am.
+user: Okay.That's all for now.
+assistant: Thank you very much.

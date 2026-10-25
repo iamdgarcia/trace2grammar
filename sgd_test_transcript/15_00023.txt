@@ -1,0 +1,17 @@
+user: Can you please find a place to live for me, in San Jose, with a garage and one bed room?
+assistant: Sure, but first please tell me if you want to rent it or buy it, as well as the number of bathrooms you need.
+user: I'm looking to rent a place with one bathroom.
+tool(FindHomeByArea): ok n_results=10
+assistant: There are 10 houses matching your criteria, out of which I recommend Avenel Apartments, a very nice complex located at 750 North King Road. Rent is $1,600.
+user: Sounds very nice.
+assistant: Is there anything else I could do for you?
+user: Yes, please schedule a visit to the property on the 1st of this month.
+assistant: Can you please confirm that you want me to schedule a visit to Avenel Apartments on March 1st?
+user: Yes, please do. Also, let me know if they have laundry machines inside the apartments as well as the phone number at which I can reach them.
+tool(ScheduleVisit): ok n_results=1
+assistant: I've successfully scheduled your visit as per your requirements. You can reach the property at 408-844-4803 but unfortunately they do not have laundry machines inside the house.
+user: OK, thanks. Now please show me my active alarms.
+tool(GetAlarms): ok n_results=3
+assistant: At this moment you have 3 alarms, the first being 6 am, named Wake up.
+user: Perfect. Thanks, that's all for now.
+assistant: My pleasure. Have a nice day!

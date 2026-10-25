@@ -1,0 +1,19 @@
+user: Hello, could you please help me find a house to stay in?
+assistant: No problem, can you tell me which city you would like to stay in?
+user: I will be taking a trip to Paris so I'm looking for something in the area.
+tool(SearchHouse): ok n_results=10
+assistant: Okay no problem. I've found a very nice house for you rated at 4.5 stars. It's located at 1 Rue Bayard, 75008.
+user: That house sounds great, let's go ahead and make a reservation.
+assistant: Sure thing. On what day will you be checking out?
+user: I would like to check on on the 5th of March and will be checking out on the 8th.
+assistant: Okay thanks. How many people will be staying at the house?
+user: I will be in a group of two.
+assistant: Alright, just confirm the following for me first. You are making a reservation for 2 people for the house in Paris from March 5th to March 8th. Correct?
+user: Yes, that's right. Can you tell me the total price?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation was a success. Your total will be $1,575.
+user: Thanks for the help! Can you help me find anything to do around town while I'm there? I'd really like to see a nice Museum.
+tool(FindAttractions): ok n_results=10
+assistant: No problem. I've found 10 attractions you may find interesting. How about the Museum, Choco-Story Paris - Musee Du Chocolat?
+user: Okay that sounds great. Thanks a bunch. That will be all for now, see ya!.
+assistant: My pleasure. Enjoy!

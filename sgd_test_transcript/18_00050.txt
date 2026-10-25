@@ -1,0 +1,36 @@
+user: I need help looking for a therapist.
+assistant: Where do you want them to be located?
+user: They should be in San Jose, and I'd also prefer a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: There's a Psychologist in San Jose call Barskyex Bryna G. How about them?
+user: Can you give me their address and phone number?
+assistant: They are at 5755 Cottle Road # 4 and their phone number is 408-363-4418.
+user: Is there anyone else? How about a Psychiatrist in Vacaville?
+tool(FindProvider): ok n_results=1
+assistant: There's a Psychiatrist in Vacaville called Paz George G. How about them?
+user: That could work. Can you make me an appointment for the 2nd of March at 14:15?
+assistant: I'll make an appointment with Paz George G for March 2nd at 2:15 pm, is that right?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry but the appointment couldn't be made. What else can I do for you?
+user: Let's try another time. How about Monday next week at 5:30 pm.
+assistant: I'll make an appointment with Paz George G for March 4th at 5:30 pm, is that right?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=1
+assistant: I've book the appointment, an email confirmation should be arriving shortly.
+user: I also need a cab to get there.
+assistant: The cab is for 1 Quality Drive? Is there a type of cab you prefer and how many passengers will there be?
+user: Yes, for there. I just want a normal ride for 1 person.
+assistant: I'll book you a regular cab for 1 to 1 Quality Drive. Is that correct?
+user: Actually I want it to Humayun's Tomb, sorry. And it's for 2.
+assistant: I'll book you a cab to Humayun's Tomb for 2 people. Is that correct?
+user: Yes, that's correct.
+tool(GetRide): ok n_results=0
+assistant: I'm sorry but there are no cabs of that type available. What else can I do for you?
+user: Let's look for a luxurious cab then.
+assistant: I'll book you a luxury cab to Humayun's Tomb for 2 people. Is that correct?
+user: Yes, that's correct.
+tool(GetRide): ok n_results=0
+assistant: There are no cabs available. What else can I do for you?
+user: Nothing else. Thanks for helping.
+assistant: Have a fine day.

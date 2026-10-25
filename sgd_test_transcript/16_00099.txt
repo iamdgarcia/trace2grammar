@@ -1,0 +1,32 @@
+user: Hey, can you help me find a salon? I really need to get my hair done.
+assistant: No problem, just let me know which city you would like to search in.
+user: I need to find something in SF.
+tool(FindProvider): ok n_results=10
+assistant: Okay, I've located 10 salons that I think you will like. How about the 1512 Barber Shop in San Francisco? I hear it is pretty nice.
+user: What's their number?
+assistant: Their phone number is 415-286-4371.
+user: Okay thanks. What other salons can you find for me?
+assistant: There is another nice salon in San Francisco called the 20th Salon And Barber I think you will enjoy.
+user: Okay cool. What's their address and phone number?
+assistant: Their number is 415-824-1335 and they are located at 2737 20th Street.
+user: Okay, that sounds good. Can you share this location with Louis for me please.
+assistant: Okay, just confirm the following. You're sharing the location 2737 20th Street with the contact Louis. Correct?
+user: Yeah, that's right. Thanks.
+tool(ShareLocation): ok n_results=1
+assistant: Okay, the location has been shared successfully.
+user: Thanks. Appreciate your help.
+assistant: Anything else I can do for you today?
+user: Yeah, can you show me my current alarms?
+tool(GetAlarms): ok n_results=1
+assistant: No problem, you have 1 alarm titled Class that is currently set for 10 am.
+user: Okay, awesome. I would like to add another alarm as well.
+assistant: Okay. What time would you like to set the alarm for?
+user: Set it for 3:15 pm please.
+assistant: Okay, please confirm. Creating an alarm for 3:15 pm called New alarm. Correct?
+user: No, actually make that for the evening 5:15.
+assistant: Okay, just confirm the following for me. Creating an alarm for 5:15 pm, titled New alarm. Correct?
+user: Yup, that will do. Thanks.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been added successfully.
+user: Great. Thanks a lot. That's all for today.
+assistant: Thank you and have a great day!

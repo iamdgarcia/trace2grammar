@@ -1,0 +1,19 @@
+user: I want to find a house to stay for 1.
+assistant: Which city are you interested in?
+user: In London England.
+tool(SearchHouse): ok n_results=10
+assistant: There is a lovely house with a 4.3 rating on 1 Addington Street.
+user: What else is there with at least 3.7 rating and which has a laundry service.
+tool(SearchHouse): ok n_results=10
+assistant: There is one with a 3.7 rating at 1 Baffin Way.
+user: Is there a phone number available?
+assistant: Yes it is +44 20 7517 1100.
+user: This house is perfect, I would like to book it.
+assistant: Which day will you arrive and when will you depart?
+user: Checking in tomorrow and departing on 3rd of March.
+assistant: To confirm then for 1 person in London from March 2nd to March 3rd.
+user: Perfect, how much will it cost altogether?
+tool(BookHouse): ok n_results=1
+assistant: Your booking is confirmed and the total cost is $512.
+user: that is all for me thank you.
+assistant: It has been an absolute pleasure, goodbye.

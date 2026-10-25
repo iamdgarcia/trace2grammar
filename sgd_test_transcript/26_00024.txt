@@ -1,0 +1,36 @@
+user: Can you please help me find a round trip flight?
+assistant: Sure, but first please tell me when do you plan to return.
+user: I plan to return on the 12th.
+assistant: Now please tell me when do you plan on travelling as well as your departure and destination.
+user: I want to fly out of New York towards Atlanta on the 9th of this month.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 flights matching your criteria, out of which I'd recommend a direct American Airlines flight taking off at 9:45 am, with the returning flight at 10:55 pm. Total ticket price is $201.
+user: Anything else available in Economy class?
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights matching your criteria, out of which I recommend a direct Delta Airlines flight taking off at 4:20 pm with the return flight taking off at 6:05 am. Total ticket price is $179.
+user: Can you please tell me the landing times for both the onward and return flights?
+assistant: Sure, the onward flight lands at 6:42 pm and the return flight at 8:27 am.
+user: Sounds perfect. Let's now find a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I recommend a very nice, 4.3 rated house at 101 Andrew Young International Boulevard Northwest.
+user: Could you give me a contact number for the house?
+assistant: Yes, you can reach them at +1 404-524-5555.
+user: Anything else available, preferably rated 4.6 or higher?
+tool(SearchHouse): ok n_results=4
+assistant: There's a nice 4.6 rated house at 1414 West Peachtree Street Northwest.
+user: This is perfect.
+assistant: Do you want me place a reservation for you for this house?
+user: Yes, please do.
+assistant: OK, please tell me how many persons will be staying at the house, as well as the check in and check out dates. Are you planning to check in on March 9th and check out on March 12th?
+user: 2 persons will be staying at the house and I'd like to check in on the 10th and check out on March 11th.
+assistant: Can you please confirm that you want me to book a house for 2 persons in Atlanta, checking in on March 10th and checking out on March 11th?
+user: Yes, that's correct. Can you please tell me the total price as well as if they have laundry service?
+tool(BookHouse): ok n_results=1
+assistant: I've successfully placed your reservation which is priced at $432, but unfortunately they do not provide laundry service.
+user: Can you please find me some child-friendly attractions there, a Nature Preserve if possible?
+tool(FindAttractions): ok n_results=2
+assistant: There's a Nature Preserve you should definitely check out, the Georgia Aquarium.
+user: Do they charge entrance? Do you know their contact number.
+assistant: Yes, they do charge entrance and you can reach them at 404-581-4000.
+user: Great, thanks! That will be all for now.
+assistant: My pleasure. Have a nice day!

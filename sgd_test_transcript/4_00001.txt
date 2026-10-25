@@ -1,0 +1,25 @@
+user: Can you help me find a rental car?
+assistant: Sure, from when till when do you need it? And from where?
+user: I need the car in Washington this evening 5 pm-ish and I'll use it till Thursday next week.
+assistant: When do you want to pick it up?
+user: I need it on March 3rd thanks
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars including a nice Alfa Romeo Stelvio SUV from Dulles International AIrport that fits the bill
+user: What else do you have?
+assistant: There's a Buick Regal Sportback Sedan available at Union Station?
+user: What is the daily cost of that?
+assistant: It'll run you $28.00 daily
+user: What else do you have that I can use till Monday next week?
+tool(GetCarsAvailable): ok n_results=10
+assistant: How about a Dodge Charger Sedan also from Union Station?
+user: How much is that daily?
+assistant: That one is $29.00 a day
+user: OK, let's reserve that one
+assistant: Do you want to add insurance
+user: No, that's fine thank
+assistant: Confirming you want the sedan car from Union Station from March 3rd 5 pm till March 4th?
+user: Yes that's perfect
+tool(ReserveCar): ok n_results=1
+assistant: It has been booked for you
+user: That's great, that's it for now
+assistant: Alright, enjoy your rental!

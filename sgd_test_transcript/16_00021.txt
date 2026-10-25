@@ -1,0 +1,35 @@
+user: I am in desperate need for a haircut, can you help me find a salon in San Fran?
+tool(FindProvider): ok n_results=10
+assistant: You're in luck, I was able to locate 10 salons, the first of the 10 is located at 1512 Barber Shop in San Francisco.
+user: What else do you have, I don't think I like that area.
+assistant: There is another one that you may like called 20Th Salon And Barber also located in San Francisco.
+user: Where is that one located?
+assistant: The address listed for that salon is 2737 20th Street.
+user: Okay, I like the sound of that one.
+assistant: Would you like me to make an appointment for you?
+user: Not right now, but thank you.
+assistant: Is there something else I can do for you?
+user: Yes, I also need to find a Psychologist in San Fran. I've been putting this off long enough.
+tool(FindProvider): ok n_results=4
+assistant: The first Psychologist out of 4 that I have found goes by Adam E. Pollock and he is located in San Francisco.
+user: Great, he sounds nice.
+assistant: Are you ready to schedule an appointment with him?
+user: Yes, my next available day is the 14th at 1:15 pm. Let's see if he has an opening then.
+assistant: Okay, I will see if Adam E. Pollock has an opening for you on March 14th at 1:15 pm.
+user: Great, everything sounds good.
+tool(BookAppointment): ok n_results=1
+assistant: I'm sorry but I was not able to confirm that appointment for you. Would you like me to try scheduling another appointment with Adam E. Pollock on March 14th at 1:30 pm instead?
+user: Yes, I believe I can squeeze that into my schedule.
+tool(BookAppointment): ok n_results=1
+assistant: I am happy to inform you that I was able to confirm that appointment for you and your confirmation email should arrive soon.
+user: Great, can we backtrack to the salon you found earlier and schedule an appointment there for the same day?
+assistant: Absolutely, I can see if they have any openings. What time would you like the appointment to be?
+user: It would have to be around quarter past 5 in the evening to prevent me from double booking anything else.
+assistant: Okay, I will see if the stylist at 20Th Salon And Barber has an opening on March 14th at 5:15 pm. Does that still work?
+user: Yes, and I will also need to trouble you for the phone number in case I run late.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed your appointment at the salon that can be reached at 415-824-1335.
+user: Can you please tell me if the salon services both men and woman or just one gender and what it's rating is?
+assistant: The salon provides services to both men and women, with a 4.5 star rating.
+user: Thanks so much, you were very helpful. That is all I need for now.
+assistant: It was my pleasure, enjoy the rest of your day.

@@ -1,0 +1,19 @@
+user: Could you find a therapist for me in los Gatos?
+assistant: Sure, what kind of therapist?
+user: I need a family therapist.
+tool(FindProvider): ok n_results=5
+assistant: I found 5 therapists. How about Emily Rosenbaum, she's a family counselor in Los Gatos.
+user: That works, could you book an appointment?
+assistant: Sure. For what day and time?
+user: Could you make it for the 13th at afternoon 1?
+assistant: Please confirm: You want an appointment with Emily Rosenbaum at 1 pm on march 13th?
+user: Correct.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry, I can't book that appointment, can I do anything else?
+user: Could you try making the appointment again, but on the 9th?
+assistant: Please confirm the following: Book an appointment on march 9th at 1 pm with Emily Rosenbaum?
+user: That works, what's their address? And phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been successfully booked! You'll get an email confirmation soon. You can contact them at 408-641-7353, and their address is 401 alberto way #1
+user: Thank you! I'm all set.
+assistant: Have a good day.

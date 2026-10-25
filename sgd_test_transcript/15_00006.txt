@@ -1,0 +1,17 @@
+user: Can you search for a popular song for me to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: I've found 10 songs. Would you like to hear Acapella by Karmin from their album Pulses?
+user: Maybe. Is that the song that came out seven years back?
+assistant: The song came out in 2013.
+user: That's the one! Can you find me some good movies online?
+assistant: What kind of movies do you like?
+user: I like Dramatic story movies, maybe someting featuring Brandon Keener.
+tool(FindMovies): ok n_results=1
+assistant: I've found 1 movie you may like. How about Hustlers?
+user: Hustlers sounds great. I don't want to watch it right now though. Can you play the song you just found though? You can play it on any device.
+assistant: Please confirm that you would like me to play the song Acapella in area Living room.
+user: Yes, I confirm that.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music and let me know if you need anything else.
+user: Thank you. That will be all for now. I'll talk to you later.
+assistant: You're welcome. Good bye.

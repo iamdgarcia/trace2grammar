@@ -1,0 +1,12 @@
+user: I would like to rent a house.
+assistant: In which city are you staying?
+user: I'm traveling to Atlanta.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house at 101 Andrew Young International Boulevard Northwest for 4.3 rating.
+user: I would like the phone number please. Do they have laundry service?
+assistant: The phone number is +1 404-524-5555. Yes, there is laundry service.
+user: Is there a house for 3 people that has a rating of 4.3.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house at 1065 Peachtree Street Northeast and the rating is 4.3.
+user: That is good thank you.
+assistant: Have a good day.

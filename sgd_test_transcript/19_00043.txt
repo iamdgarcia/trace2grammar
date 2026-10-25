@@ -1,0 +1,30 @@
+user: I am interested to find a car which I can rent.
+assistant: Can you tell me from where you will be renting the car, and till when will you need to rent it? Could you also tell me the time when you want to pick up the car?
+user: I will need to have the car rented till the 14th, and I want to pick it up at half past 1 in the afternoon, also the car I am looking for should be in Washington.
+assistant: Can you tell me from when are you willing to have the car rented?
+user: I want to have the car rented from March 9th.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars which you might consider, with one of them being a SUV Alfa Romeo Stelvio which is available at Union Station.
+user: How much renting this car costs per day?
+assistant: Renting this car will be costing you $32.00 per day.
+user: That seems alright.
+assistant: Do you want to have this car reserved for you?
+user: No I do not want to make a booking now. Can you tell me about buses which go there?
+assistant: From where will you be leaving for your trip?
+user: I will be leaving for my journey from Philly.
+assistant: Could you please tell me when are you planning to leave?
+user: I have my mind set on March 4th, and we are a group of 3 people.
+tool(FindBus): ok n_results=8
+assistant: There are 8 buses which you might consider, with one of the buses leaving at 6:20 am, and the ticket of which costs $29.
+user: Is there some other suggestion you can give, if I will be leaving on day after tomorrow, and if I want to take a direct bus?
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses which match what you requested. How would you like taking the bus which leaves at 10 am, and the ticket of which costs $28?
+user: That seems nice. Though I am looking for a one-way flight to go there, and I want to have an Economy class ticket with the American Airlines.
+assistant: Will you be departing on March 9th?
+user: Yes, that would be good.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: How would you like having a flight with American Airlines, which has a layover and leaves at 5:45 pm? The ticket for this flight costs $220.
+user: That seems as a good choice.
+assistant: Can I do something else to help you?
+user: Nothing. I appreciate your help!
+assistant: Have a good time!

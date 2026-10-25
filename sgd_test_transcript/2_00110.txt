@@ -1,0 +1,11 @@
+user: Find me a one way flight.
+assistant: where are you going?
+user: Going to KL.
+assistant: What is the city of departure?
+user: I need four tickets from Chi-town
+assistant: whats the date of travel?
+user: ok, find me me Southwest Airlines economy tickets for 14th of this month.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Ok, there is a Southwest Airlines connecting flight leaving at 6:40 am and $485
+user: that is great, thats all.
+assistant: have a good day!

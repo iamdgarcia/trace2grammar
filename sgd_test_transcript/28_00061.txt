@@ -1,0 +1,28 @@
+user: Hi, could you help me search for movies directed by Steven Spielberg and featuring Josef Sommer?
+tool(FindMovies): ok n_results=1
+assistant: Are you looking for Close Encounters of the Third Kind? This movie has a 95 per cent rating.
+user: Yes, that was what I was looking for. Could you also help me search for a restaurant there?
+assistant: And what type of food are you looking for and where will you be dining at?
+user: Find me a restaurant serving Tacos in South San Francisco please.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 you might like in South San Francisco, how about Chevys Fresh Mex?
+user: Do they serve vegetarian food and are they average priced?
+assistant: No, they are moderate priced and do not serve vegetarian options.
+user: I see, that is fine with me.
+assistant: Would you need a reservation there?
+user: Sure, could you do so for me please?
+assistant: And what time will you be dining there?
+user: I would need a reservation for 4 on the 13th of this month at quarter to 2 in the afternoon.
+assistant: Please confirm your reservation for 4 at Chevys Fresh Mex in South San Francisco at 1:45 pm on March 13th.
+user: Sure, I am fine with that.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Sorry, your reservation could not be made. How about a reservation for 4 at Chevys Fresh Mex in South San Francisco at 1:30 pm on March 13th.
+user: I am fine with that too.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been made!
+user: How do I contact them?
+assistant: You can call them up at 650-755-0614.
+user: I see, thank you so much!
+assistant: Could I further assist you?
+user: No, that is all I need. Thank you!
+assistant: No worries, have a great day ahead.

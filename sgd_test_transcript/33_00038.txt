@@ -1,0 +1,17 @@
+user: I want to change my hairstyle and I need you help to find a Salon for me.
+assistant: In which you want me to search for the Salon?
+user: Search it in Gilroy.
+tool(FindProvider): ok n_results=4
+assistant: What about a Salon named Garlic City Barbers in Gilroy?.
+user: Let me know their average rating and phone number.
+assistant: Please note down their phone number as 408-763-6990 and they have rating at 4.4.
+user: It is okay for me. Thanks. What about the weather condition there on 14th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average Temperature will be 72 degrees Fahrenheit and there may be a chance of 9 percent for rain.
+user: Thanks for this information. Now, please book an appointment with the Salon that I have selected before. Make it at 15:45.
+assistant: Please confirm to book an appointment with the Garlic City Barbers salon on March 14th at 3:45 pm.
+user: That is confirmed to proceed.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed your appointment at the required time.
+user: Thank you so much.
+assistant: Have a good day.

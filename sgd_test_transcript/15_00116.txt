@@ -1,0 +1,41 @@
+user: I need to find a salon in SFO, please.
+tool(FindProvider): ok n_results=10
+assistant: 1512 Barber Shop is a salon in San Francisco.
+user: Sure, that sounds good. I also want to search for a therapist in SFO, a Psychologist.
+tool(FindProvider): ok n_results=4
+assistant: Adam E. Pollock is a Psychologist in San Francisco.
+user: What about a Psychiatrist in Pittsburg?
+tool(FindProvider): ok n_results=1
+assistant: Expanding Horizons is a Psychiatrist in Pittsburg.
+user: OK, that sounds good, thanks.
+assistant: Would you like to book an appointment with the therapist?
+user: Yes, I would. Please try to get an appointment at 4:45 in the evening on Wednesday next week.
+assistant: You would like to book an appointment at Expanding Horizons at 4:45 pm on March 6th, is that correct?
+user: You know what, I think I would rather have it at 14:00.
+assistant: You would like the appointment at 2 pm on March 6th, is that correct?
+user: Yes, that's right.
+tool(BookAppointment): ok n_results=0
+assistant: I'm sorry, I was not able to get an appointment at that time and date. Would you like to try setting it for a different time or day?
+user: Yes, can you find out if there is time available the day after tomorrow?
+assistant: You are booking an appointment at Expanding Horizons at 2 pm on March 3rd, is that correct?
+user: Yes it is. What is their phone number and address, please?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked. A confirmation should arrive by email soon. The phone number of the therapist is 925-432-3980. The address is 327 E Leland Rd.
+user: I would also like to book an appointment at the salon you found.
+assistant: What time would you like the appointment for?
+user: I would like to go at evening 6.
+assistant: You would like to make an appointment at 1512 Barber Shop at 6 pm on March 3rd, is that correct?
+user: No, actually I would rather make that at a quarter to 11 in the morning instead.
+assistant: You would like to make an appointment at 1512 Barber Shop at 10:45 am, is this correct?
+user: Yes, that's right. What is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: The phone number is 415-286-4371. I'm sorry, I was not able to book an appointment at 1512 Barber Shop at the time and date you chose. Would you like to take an opening at 10:30 am March 3rd?
+user: Yes, that will be fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked.
+user: What is the address? Is that a unisex salon?
+assistant: The address is 1532 20th Street. It is a unisex salon.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, that's all for now, thank you. `
+assistant: Have a great day!

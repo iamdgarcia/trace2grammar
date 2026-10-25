@@ -1,0 +1,21 @@
+user: Can you search me a therapist please?
+assistant: What kind of therapist you need? Is it a Psychiatrist or a Family Counselor or other type? In which city i should search?
+user: I want a Psychologist in San Fran.
+tool(FindProvider): ok n_results=4
+assistant: I have short listed 4 therapists of your choice and one among them is Adam E. Pollock who is a Psychologist in San Francisco.
+user: This is perfect.
+assistant: Can i book the appointment with this therapist?
+user: Okay..book the appointment at half past 11 in the morning.
+assistant: On which day should i book?
+user: Would you kindly book for next Friday?
+assistant: please give confirmation details: Your appointment with Adam E. Pollock on march 8th at 11:30 am.
+user: This is perfect.
+tool(BookAppointment): ok n_results=0
+assistant: No, sorry..i was not able to book the appointment. Any other help you want?
+user: Would you kindly try booking again and try for the 1st?
+assistant: please give confirmation details:Your appointment with Adam E. Pollock on march 1st at 11:30 am.
+user: Okay..this is fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your booking is successfully done and you will receive a confirmation email soon.
+user: Thanks for your help. Bye for now.
+assistant: It's my pleasure to help you.

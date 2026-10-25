@@ -1,0 +1,19 @@
+user: Can you help me find a Psychologist please?
+assistant: Where are we looking?
+user: I need one in Gilroy please
+tool(FindProvider): ok n_results=3
+assistant: I found 3 therapists including a Psychologist named Rachelle Coate in Gilroy
+user: What's their address and number?
+assistant: You can call them at 831-665-5053 and find them at 8339 Church Street
+user: How's the weather there on the 12th of March
+tool(GetWeather): ok n_results=1
+assistant: It's 79 degrees and 0 chance or rain, so no need for an umbrella
+user: Sure thing, do you think we could go back to booking that therapist? Let's try for 1:15 pm
+assistant: Confirming you want at 1:15 pm meeting with Rachelle Coate on March 12th?
+user: Yes that's perfect
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is booked and you'll get an e-mail soon for that
+user: Thanks so much I owe you!
+assistant: Anything else I can do
+user: No, that's all for now
+assistant: Sure, glad I could be of help!

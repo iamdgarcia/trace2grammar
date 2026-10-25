@@ -1,0 +1,34 @@
+user: Can you check the weather on the 1st for me
+assistant: Sure, in what city
+user: Let's look in San Lorenzo
+tool(GetWeather): ok n_results=1
+assistant: It'll be 76 degrees with a low 3 percent chance of rain
+user: How about in Chicago on the 5th of this month
+tool(GetWeather): ok n_results=1
+assistant: It'll be 71 degrees with a higher 28 percent chance of it raining
+user: OK let's book a property visit on that day
+assistant: Which property are you talking about?
+user: I want to visit the Waterstone Fremont property
+assistant: Confirming you want to visit the Waterstone Fremont property on March 5th
+user: Actually no, let's make that Pinecrest Apartments
+assistant: Ok so Pinecrest Apartments on March 5th?
+user: Yeah that's right
+tool(ScheduleVisit): ok n_results=1
+assistant: It's been booked for you
+user: How many baths does it have, and what's their addresss?
+assistant: It has 3 bathrooms and it's at 837 Hancock Street
+user: Thanks so much, reserve me a car with insurance now
+assistant: What time do you want it and till when?
+user: I need it next Wednesday and I want to get it in the evening 5:30 pm
+assistant: Do you want it form March 5th?
+user: I actually need it the day after tomorrow
+assistant: Where do you want it from?
+user: I want it from King Street Station
+assistant: Do you want a Hatchback, and SUV, or something else?
+user: An SUV will suffice
+assistant: Confirming you want an SUV with insurance from King Street Station from March 3rd 5:30 pm till March 6th yes?
+user: Yes that is right
+tool(ReserveCar): ok n_results=1
+assistant: It's been booked for you
+user: Thanks so much, take care
+assistant: Bye, you too!

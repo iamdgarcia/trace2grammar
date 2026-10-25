@@ -1,0 +1,22 @@
+user: I'm looking for a salon in Santa Rosa
+tool(FindProvider): ok n_results=9
+assistant: There are 9 salons you may like: Daredevils & queens is a nice salon in Santa Rosa
+user: That's good. I'd also like to watch a movie in the same area, a regular show: i usually like Play movies
+tool(FindMovies): ok n_results=3
+assistant: Here I have three options for you: After The Wedding, Hustlers or The art of Racing in the rain
+user: The art of racing in the rain is perfect. At what time can I watch it on the 2nd at 3rd Street cinema?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's only 1 showtime at 3rd street cinema at 8:30 pm
+user: Could you please tell me the price of the ticket and the address of the theater?
+assistant: The theater is at 620 3rd street and the price is $9 per person
+user: Sounds perfect. Could you please book an appointment at the salon you found on that day?
+assistant: At what time would you like your appointment?
+user: Please book at 3:30 pm
+assistant: Please confirm the following details: March 2nd at 3:30 pm at Daredevils & queens
+user: Yes, that's it. What's the rating?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been confirmed. The average rating is 4.6
+user: Thanks for your help
+assistant: Is there anything else I can do for you?
+user: No, thanks, that's it
+assistant: Have a good day

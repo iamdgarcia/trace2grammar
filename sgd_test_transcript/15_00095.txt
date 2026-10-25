@@ -1,0 +1,19 @@
+user: I need to find someone who can help me understand why my son gets so afraid when he has to go on the field to play soccer. Would you please assist me with locating a therapist?
+assistant: I'll be happy to assist you with that. What city and kind of therapist do you prefer?
+user: My first choice is a Psychologist, perhaps one located in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: Okay. I'm showing 10 therapists you can consider. One of the options is Alameda Children's Specialized. This is a Psychologist office in Oakland.
+user: I see. Do you show the number to call and their address?
+assistant: Yes. You can reach them at 510-383-5100, and their address is 7200 Bancroft Ave # 125C.
+user: Thanks, that's good to know.
+assistant: Shall I set up an appointment for you with that therapist?
+user: Hmm, I'm thinking. What's the weather going to be like on March 11th, please?
+tool(GetWeather): ok n_results=1
+assistant: On that day, you can expect the temperature to be 76 degrees Fahrenheit on average with a 24 percent possibility of rain.
+user: All right. In that case, please set up an appointment with the therapist you suggested for that day at 4:30 pm.
+assistant: Certainly. Are you ready to confirm an appointment I'm setting up for you to visit Alameda Children's Specialized on March 11th at 4:30 pm?
+user: I'm ready. Go ahead and confirm that, please.
+tool(BookAppointment): ok n_results=1
+assistant: All done. Your appointment is confirmed, and a confirmation email is to be sent to you shortly.
+user: Wonderful. You've been a great help and many thanks.
+assistant: Of course, happy to help.

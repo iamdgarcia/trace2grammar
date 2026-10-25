@@ -1,0 +1,27 @@
+user: I need to check weather in Menlo Park on the 11th of March.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is set to be 71 degrees Fahrenheit. There is a 19 percent chance of rain.
+user: Okay, I need to schedule a visit to a property.
+assistant: Which property would you like?
+user: I need to visit Park Manor Apartments.
+assistant: So, schedule a visit to Park Manor Apartments on March 11th.
+user: Yes, indeed. Does it have a garage, and how many baths?
+tool(ScheduleVisit): ok n_results=1
+assistant: Scheduled now, and it has 2 bathrooms and a garage.
+user: Thanks for the info. I need to reserve a car.
+assistant: Until when would you like it?
+user: I need it until the 13th of this month from March 9th.
+assistant: Where would you like it from and at what time?
+user: Union Station is a good pick up area and at 4:30 PM.
+assistant: Would you like insurance?
+user: No, no insurance now.
+assistant: Would you prefer Sedan, SUV or other?
+user: I want a Sedan most likely.
+assistant: So, pick up from Union Station, a sedan vehicle. The date is March 9th at 4:30 PM. The drop off date is March 13th.
+user: No, from the 8th please.
+assistant: Please confirm the following: The pickup date is March 8th and it does not come with insurance.
+user: Yes that sounds good. How much does it cost?
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved now. The price is $30.00 per day.
+user: Thanks, that was all!
+assistant: Of course. Enjoy.

@@ -1,0 +1,38 @@
+user: Hi I need to make a payment to Victoria, sent from my app cash. Please make the transfer private.
+assistant: What is the amount you will be transferring?
+user: I'd like to transfer 173 bucks.
+assistant: So you'd like to make a transaction with Victoria for the amount of $173 from your app balance and you want a private transaction, is this correct?
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made and they should see the money soon.
+user: Thank you! Can you also help me find a train?
+assistant: What city will you be travelling to and where are you leaving from? Also, which date do you wish to travel?
+user: I'd like to leave on March 5th and it's from Sacramento, CA to SF.
+tool(FindTrains): ok n_results=10
+assistant: Would you like to depart at 7:30 am? The cost will be $51.
+user: What station does the train go to?
+assistant: The train will arrive at Salesforce Transit Center.
+user: Ok, that works for me.
+assistant: Would you like to purchase tickets now?
+user: No, not at this time.
+assistant: Is there anything else I can assist you with?
+user: What's the weather like there on the 6th of this month?
+assistant: You'd like to check the weather in San Francisco, correct?
+user: Yes, that's right.
+tool(GetWeather): ok n_results=1
+assistant: The temperature for that day should be about 72 degrees Fahrenheit with a 3 percent chance of rain.
+user: Is it going to be very windy? How about the humidity?
+assistant: There should be wind speeds of about 12 miles per hour with 16 percent humidity.
+user: Okay, good. Now back to those train tickets you found earlier.
+assistant: How many tickets do you wish to purchase?
+user: I'd like to buy one conditionally refundable ticket and I'd also like trip insurance.
+assistant: So you'd like 1 ticket from Sacramento to San Francisco on March 5th at 7:30 am and you'd like a value ticket, is this correct?
+user: Yes, that is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked!
+user: What station does the train leave from?
+assistant: The train departs from Sacramento Valley Station.
+user: Thank you so much, you've been helpful.
+assistant: Is there anything else I can assist you with today?
+user: No, that's all. Thanks again.
+assistant: Have a wonderful day.

@@ -1,0 +1,12 @@
+user: I want to change my hairstyle and I need your help to find a perfect Salon.
+assistant: In which City, do you want me to search for?
+user: Search it in Walnut Creek. This is convenient to me.
+tool(FindProvider): ok n_results=10
+assistant: What about a nice Salon named Blow Dry Bar at Walnut Creek?
+user: Search for something else which should be Unisex.
+tool(FindProvider): ok n_results=10
+assistant: What about Dipietro Todd Salon in Walnut Creek?
+user: Yes, that is great for me.
+assistant: What else do you need from me?
+user: Nothing for now. Thanks a lot.
+assistant: Have a good day.

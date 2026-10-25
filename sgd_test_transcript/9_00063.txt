@@ -1,0 +1,12 @@
+user: Hi, could you get me a regular Imaginative fiction movie in Hayward please?
+tool(FindMovies): ok n_results=1
+assistant: Sure, would you like to watch Ad Astra?
+user: Ad Astra sounds great to me! Could you help me purchase the tickets please?
+assistant: What is your preferred date and time for the movie, and how many tickets are you looking at?
+user: I will need 3 tickets for the 9:45 pm movie on the 10th of this month.
+assistant: Sure, please confirm your purchase of 3 tickets for the Ad Astra regular movie on the March 10th at 9:45 pm in Hayward.
+user: That is fine with me, may I have their address please?
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your tickets have been purchased. You can visit them at Cinema Place.
+user: I see, that is all I need. Thank you so much!
+assistant: No worries, have a great day ahead!

@@ -1,0 +1,16 @@
+user: Can you find me a salon in San Rafael, it should be a unisex salon.
+tool(FindProvider): ok n_results=2
+assistant: May I recommend Best Coast Cuts, located in San Rafael.
+user: That sounds good, please make an appointment to this salon.
+assistant: Which date are you available for this appointment?
+user: Set the appointment for a visit on the 11th of March.
+assistant: What time should I set the appointment to?
+user: Set the appointment at 6:30 pm, and have it set to March 7th instead.
+assistant: You wish to visit Best Coast Cuts on March 7th at 6:30 pm, is that correct?
+user: Actually set the appointment to afternoon 1.
+assistant: The appointment will be made at 1 pm, for Best Coast Cuts correct?
+user: That all sounds good, thanks.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment could not be made at Best Coast Cuts, would March 7th at 12:30 pm work for you?
+user: No, its find, thanks for the help anyways.
+assistant: Understood, enjoy the rest of your day.

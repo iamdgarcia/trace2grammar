@@ -1,0 +1,17 @@
+user: Hey, can you find me somewhere to visit? Any attraction would be cool.
+assistant: In which city should I search for them?
+user: In Toronto, Ontario please.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 you may enjoy. The 3D Toronto Sign is a great tourist attraction around there.
+user: Good to know. Can you help me find a house with laundry service I can stay? It needed to have at least a 3.6 rating.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10. There's a nice one at 108 Chestnut Street with a 3.6 rating you would really love.
+user: Sounds great. Can you help me book some round trip flights to get there, leaving from Atlanta, GA?
+assistant: When would you like to go and return?
+user: I'd like to go tomorrow and return on the 11th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found 2 flight that may appeal to you. There's a connecting American Airlines one taking off at 5:10 am, the return flight is at 4:15 am and the total cost is $332. Is it good for you?
+user: Sounds real good.
+assistant: Can I help you with anything else?
+user: No, that's all. Thank you.
+assistant: Have an amazing day.

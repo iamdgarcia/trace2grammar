@@ -1,0 +1,26 @@
+user: I want to go out the 12th of March what can I go do that I will enjoy?
+assistant: What is it you enjoy Music maybe or Theater or whatever just speak it and where were you planning to go out?
+user: I would like Music and around LAX okay?
+tool(FindEvents): ok n_results=10
+assistant: I found this on March 12th at 6:30 pm Aldous Harding - who is reputed to be very sought after will be at the Lodge Room.
+user: That would be cool, is there a house available?
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 already what would you think about a 4.1 rated house at 1020 South Figueroa Street?
+user: Get me there phone number please and can you tell me if there is any way to do laundry.
+assistant: You can call +1 213-748-1291 to speak to someone and yes they have a laundry service.
+user: That house is super. I'm going to need three bus tickets from Anaheim and I want to go March 1st.
+tool(FindBus): ok n_results=10
+assistant: Is a 7:50 am start time okay and the tickets are $12?
+user: That would be okay.
+assistant: Should I purchase your seats now?
+user: Not just yet thank you.
+assistant: Do you need more assistance?
+user: Yes get me three tickets to the Music thing we started out with.
+assistant: You are asking me to purchase 3 seats for the March 12th appearance of Aldous Harding in Los Angeles correct?
+user: Exactly right, wow how much are the seats and could I get an address?
+tool(BuyEventTickets): ok n_results=1
+assistant: No problem the seats are saved at $20 each and the location is 104 North Avenue 56 2nd Floor.
+user: You were a big help thank you.
+assistant: Do you want me for anything else?
+user: No you can go now.
+assistant: Cheers!

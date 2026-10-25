@@ -1,0 +1,23 @@
+user: I'm bored out of my wits! Please help me find something interesting to do.
+assistant: Do you have a particular preference, such as Music or Theater, or something else? What city should I search in?
+user: I'm a huge fan of Concert. Please search for anything of type around LAX.
+tool(FindEvents): ok n_results=10
+assistant: The much-liked Ain Gordon has a performance at Ralph Freud Playhouse on March 9th, starting 7 pm.
+user: I like the sound of that.
+assistant: Should I go ahead and reserve tickets for this event?
+user: Not right way, thanks. Please help me find a 3 -star hotel in the area, too.
+tool(SearchHotel): ok n_results=10
+assistant: Sure. Your search yielded 10 suitable hotels. How about the 3 star-rated Ac Hotel By Marriott Beverly Hills?
+user: Where are they're located? Does the hotel allow smoking?
+assistant: They are located at 6399 Wilshire Boulevard. I'm sorry, the property has a no-smoking policy.
+user: Very good that works perfect because I'm a non-smoker.
+assistant: Should I go ahead and reserve the hotel?
+user: At the moment, I don't want to make any reservation.
+assistant: Would you like my help with anything else?
+user: Remember the event you found earlier? Please buy me 1 ticket.
+assistant: Sure. Please confirm that you'd like to buy 1 ticket to the Ain Gordon performance taking place on March 9th in Los Angeles.
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy yourself over there!
+user: Thank you very much. You've been very helpful.
+assistant: Have a wonderful day!

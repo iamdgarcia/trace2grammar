@@ -1,0 +1,28 @@
+user: Hi, could you help me find a salon in Foster City please?
+tool(FindProvider): ok n_results=2
+assistant: How about Barberia Salon in Foster City?
+user: Sounds great! Could you share the location, 939 Edgewater Boulevard E., to someone else?
+assistant: And who will you be sharing it to?
+user: Linda, please. Thanks.
+assistant: Please confirm your sharing of 939 Edgewater Boulevard E., to Linda.
+user: Sounds great!
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Thank you, could you retrieve my alarms please?
+tool(GetAlarms): ok n_results=3
+assistant: You currently have 3 alarms, one of which is at 4:30 pm titled Busy.
+user: I see, are there any more.
+assistant: There is also one at 6 am titled Get up.
+user: I see, perfect!
+assistant: Would you like me to add an alarm?
+user: Could you do so please?
+assistant: And what time will you be setting it for?
+user: Likely at 4:15 pm.
+assistant: Please confirm your request to set an alarm at 4:15 pm titled New alarm.
+user: Sure, that sounds great!
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been successfully made.
+user: Thank you so much!
+assistant: Do you need any other help?
+user: No, that is all I need.
+assistant: Thank you so much.

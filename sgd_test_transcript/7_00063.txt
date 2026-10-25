@@ -1,0 +1,18 @@
+user: I'm looking for a place to live.
+assistant: How many bathrooms do you want?
+user: I want two bathrooms.
+assistant: How many bedrooms do you want? What location do you want to search in? Are you looking to rent or buy?
+user: I'm looking to buy a place in San Rafael with 3 bed rooms.
+tool(FindHomeByArea): ok n_results=4
+assistant: How about 400 Canal Street Apartments at 400 Canal Street # 131 for $3,100,000?
+user: Yes, that sounds good.
+assistant: Would you like to visit the property?
+user: Yes, I'd like to schedule a visit for Friday next week.
+assistant: Okay, I have a visit for 400 Canal Street Apartments on March 8th, correct?
+user: Yes, that is right. Does the property have a garage? What is the phone number?
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled the property visit. It does have a garage and the phone number is 415-454-6223.
+user: Thank you!
+assistant: Is there anything else I can help with?
+user: No, thank you.
+assistant: Have a great day.

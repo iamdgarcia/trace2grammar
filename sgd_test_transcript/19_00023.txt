@@ -1,0 +1,32 @@
+user: I'm looking for a good car to rent.
+assistant: What is your plan? When will you pick up the car, return it and from where?
+user: I'll pick it up in Philadelphia on the 3rd of March and return it on the 9th of March.
+assistant: What time of day can you do it?
+user: I want it at 10 am.
+tool(GetCarsAvailable): ok n_results=6
+assistant: Fine, there are 6 options. What about a SUV Alfa Romeo Stelvio from Intercity Terminal?
+user: No, try again.
+assistant: You can get a great Hatchback Renault Clio from INtercity Terminal.
+user: Fine, I need a bus for 4 people to get there.
+assistant: From where are you coming?
+user: I'm leaving Washington.
+assistant: What day will you depart?
+user: I plan on leaving March 1st.
+tool(FindBus): ok n_results=7
+assistant: You have 7 choices. You could take the 8:30 am but for just $29.
+user: Can you do better, I'll leave from NYC and I require a direct bus.
+tool(FindBus): ok n_results=7
+assistant: What about a 7:40 am bus for $26?
+user: At which station does it arrive?
+assistant: It's going to 10th and Filbert.
+user: Fine, I like the sound of that.
+assistant: How about I get you tickets?
+user: Not right now, Maybe I'll fly with Southwest airlines and just get there like that.
+assistant: Which day will you leave? march 1st or March 3rd?
+user: I want to head out on March 1st please.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Well, you can fly southwest Airlines and take of at 10:50 am. It's direct. The ticket is $56.
+user: Fine, that's solid reporting.
+assistant: What else do you require?
+user: I need nothing.
+assistant: Have a great trip.

@@ -1,0 +1,32 @@
+user: Hi I'll be hanging out with a friend, can you suggest us some attractions?
+assistant: What city would you like to look in?
+user: Please find me some attractions in the LA area.
+tool(FindAttractions): ok n_results=10
+assistant: I suggest Angels Flight Railway, it's a historical landmark.
+user: What is their contact number?
+assistant: You can call them at 213-626-1901.
+user: That's great. Can you also find me a rental car? I'll need it next Friday until the 11th of this month.
+assistant: What time are you planning to pick up the car?
+user: I'd like to pick up the car in the afternoon 12.
+assistant: And you want to pick it up from Los Angeles?
+user: Yes, that is correct.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I suggest a SUV Dacia Duster, available at LAX International Airport.
+user: That sounds nice, I'd like to reserve it.
+assistant: Would you like any added insurance?
+user: No, I don't think I'll need it.
+assistant: So you'd like to pick up an SUV at 12 pm from LAX International Airport from March 8th to March 11th. Is this correct?
+user: Yes, that is correct.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been successfully booked.
+user: Can you please share the location with someone?
+assistant: Of course, who shall I share it with?
+user: Please share the location of Angels Flight Railway with Jessica.
+assistant: You would like to share the Angels Flight Railway location with Jessica, is that correct?
+user: Yes, that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the location with Jessica.
+user: Thank you, I appreciate the help.
+assistant: Is there anything else I can assist with?
+user: No, that's all. Thank you.
+assistant: Have a wonderful day.

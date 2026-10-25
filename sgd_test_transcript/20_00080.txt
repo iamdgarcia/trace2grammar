@@ -1,0 +1,20 @@
+user: I need a house to rent for 1 with a rating of 4.6 or higher.
+assistant: What city will you be staying in?
+user: In Delhi, India. I need one with laundry service.
+tool(SearchHouse): ok n_results=5
+assistant: How about a nice house located at 2, Sardar Patel Marg, Diplomatic Enclave, New Delhi which has a 4.6 rating.
+user: Great, I'd like to check in on the 7th of this month and check out on March 12th.
+assistant: You want a house for 1 in Delhi. You will be checking in on March 7th and checking out on March 12th, correct?
+user: Yes that is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Can you show me a place of worship please.
+tool(FindAttractions): ok n_results=3
+assistant: I found 3. How about Akshardham, which is a place of worship.
+user: Cool, can you think of any attractions without an entry fee.
+tool(FindAttractions): ok n_results=7
+assistant: Check out Adventure Island, which is a theme park.
+user: Great thanks.
+assistant: Can I do anything else for you?
+user: No that is all thanks.
+assistant: Have a great day!

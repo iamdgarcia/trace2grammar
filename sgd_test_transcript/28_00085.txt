@@ -1,0 +1,32 @@
+user: Would you find me some cool attractions?
+assistant: What area should I search in?
+user: Find New York City attractions.
+tool(FindAttractions): ok n_results=10
+assistant: I have 10 attractions that should be of interest. What about 9/11 Tribute Museum? It's a Museum.
+user: Sounds good. Would you find me a rental car there?
+assistant: When shall I start the car rental
+user: I need it from the 4th.
+assistant: Would you like to pick it up from New York?
+user: Sounds good to me.
+assistant: What time will you pick up the car?
+user: I'll pick it up at half past 3 in the afternoon.
+assistant: When will you return it?
+user: I would like it till 5th of this month. I want to find cars in London, England. Any type of car is okay.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 cars available. There's a nice car at Heathrow International Airport. It's a Sedan Audi A8.
+user: Sounds good to me.
+assistant: Would you like to book the car?
+user: Yes, book it.
+assistant: Will you add insurance?
+user: No, insurance is not necessary.
+assistant: Please confirm that you want to pick up the car from Heathrow International Airport on March 4th at 3:30 pm and drop it off on March 5th. It's a Sedan and doesn't come with insurance. Is this right?
+user: Sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your car has been reserved.
+user: Could you share the location Heathrow International Airport with Nicole?
+assistant: Please confirm that you want to share the location Heathrow International Airport with Nicole.
+user: That's rihgt.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been shared.
+user: Thanks. That's helpful. I don't need anything else at the moment.
+assistant: Have a good day.

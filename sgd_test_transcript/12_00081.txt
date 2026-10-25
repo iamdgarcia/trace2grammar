@@ -1,0 +1,27 @@
+user: Will you look for a bus for me?
+assistant: When and where will you be leaving? What is your destination?
+user: I'll be leaving from Fresno to Sacramento, and I'd like to leave the 1st of March.
+tool(FindBus): ok n_results=6
+assistant: Sure. There's a bus departing at 6:20 am for $31, does this work?
+user: Where does it leave from? Are there any stops?
+assistant: No, it is a direct bus, departing from 2660 Tulare St.
+user: That sounds good.
+assistant: Would you like to buy the tickets for this bus?
+user: Yes, I'd like to reserve a seat.
+assistant: How many tickets would you like?
+user: Only one person.
+assistant: Sure. Just to confirm, you'd like to book 1 ticket for the March 1st bus going from Fresno to Sacramento at 6:20 am, is this correct?
+user: Yes, that works.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked.
+user: Where does it arrive?
+assistant: It will arrive at the 65th Light Rail Station.
+user: Thank you. Are there hotels in that area too?
+tool(SearchHotel): ok n_results=10
+assistant: Yes, there is a 3 star hotel, the Courtyard by Marriott Sacramento Cal Expo.
+user: That sounds good.
+assistant: Would you like to reserve this hotel?
+user: Not right now.
+assistant: Is there anything else I can assist you with?
+user: No, thank you. You've helped a lot.
+assistant: Have a wonderful day.

@@ -1,0 +1,27 @@
+user: I need to fly with Delta Airlines and require 3 tickets for round trip
+assistant: Which is your preferred travel date and which place you start?
+user: I will be traveling on later today and please look for LAX flights
+assistant: Which place are you traveling and when are you planning to return?
+user: i will be flying to San Francisco and will be back on March 10th
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I have short listed 1 flight for you and how about direct flying with Delta Airlines which takes off at 9:05 pm and returning at 9:45 am with ticket cost $136
+user: This is cool..Would you find me a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: I have selected 10 houses of your choice. One among them is located at 1095 Market Street with 4.0 rating.
+user: Do you know some other hotels with rating 3.5 or higher and it is for 1 people.
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 houses of your choice. One nice hose is located at 1100 Market Street Hotel entrance is at, 45 McAllister Street with rating 3.5.
+user: This is perfect.
+assistant: Are you like to book this house?
+user: Yes, i want to book this house and like to check out on march 6th.
+assistant: You want to check in on march 1st?
+user: No, i want to check in on the 2nd.
+assistant: Please give confirmation details: Your house booking in the location San Francisco for march 2nd to march 6th and it is for 1 people.
+user: Perfect...Is there a laundry service in this place? Could you tell me the contact number of this house?
+tool(BookHouse): ok n_results=1
+assistant: Yes..there is a laundry service and phone number is +1 415-771-3000. Your house booking is confirmed.
+user: Thanks for the help. Do you know some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There is a Historical Landmark called Alcatraz.
+user: Okay..fine..bye for now.
+assistant: Have fun..

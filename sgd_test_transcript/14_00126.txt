@@ -1,0 +1,17 @@
+user: I am in a nice mood and I like to listen to some nice songs. Can you search for something best for me?
+tool(LookupMusic): ok n_results=10
+assistant: Yes, what about your opinion on Carry Me by Kygo from the album Cloud Nine?
+user: Yes, it is good. Now, I am thinking about to watch a Movie full of song and I especially the one featuring Michelle Phillips.
+tool(FindMovies): ok n_results=1
+assistant: I got 1 movie which is Echo In The Canyon and do you like the same?
+user: Yes, Echo In The Canyon is a nice movie and thanks.
+assistant: Shall I play it for you now?
+user: No, not now.
+assistant: Anything else you want from me?
+user: Yes, I want you to play the song that I have selected before.
+assistant: Please confirm to play the song Carry Me in the Living room speaker.
+user: Yes, confirmed, go ahead.
+tool(PlayMedia): ok n_results=1
+assistant: The song was started playing now and you can enjoy it.
+user: Thanks and that's all.
+assistant: Have a great day.

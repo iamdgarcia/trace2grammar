@@ -1,0 +1,23 @@
+user: I would like to get a cab for 4 that is the cheapest ride.
+assistant: Where are you going?
+user: I would like a ride to Sticky Rice Chinese Bistro & Bar.
+assistant: Please confirm details for a ride for 4 to Sticky Rice Chinese Bistro & Bar with a Pool ride.
+user: Yes, that will work for me. How much will it cost and how long before the cab reaches here.
+tool(GetRide): ok n_results=1
+assistant: I booked the ride and the cab is on its way costing $14.18 arriving in 3 minutes.
+user: What about searching for some songs for me now?
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs you may like. What are your thoughts on Still Got Time by Zayn Malik from the album Icarus Falls.
+user: What type of music is it?
+assistant: It would be a pop song.
+user: Yes, that would be the one.
+assistant: Do you like to play this song.
+user: Sure I would.
+assistant: Please confirm details for to play the song Still Got Time in the Living Room.
+user: Yes, that would be correct. What year did it come out?
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music from the year 2017.
+user: Thanks so much!
+assistant: What else can I help you with?
+user: No thanks so much.
+assistant: Have a nice day.

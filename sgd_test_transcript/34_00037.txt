@@ -1,0 +1,18 @@
+user: Hi, could you help me find hotels in the San Diego area please?
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star hotel called Bahia Resort Hotel?
+user: Are there any alternatives? I will need two rooms.
+tool(SearchHotel): ok n_results=9
+assistant: There are 9 hotels you might like, how about a 2 star hotel called Best Western Mission Bay?
+user: Sounds great! Are there any shopping district without an entry fee in that area?
+tool(FindAttractions): ok n_results=2
+assistant: Yes, there are 2 you might like, how about a Shopping Area called Liberty Public Market.
+user: May I have their contact number and is the area child-friendly?
+assistant: Of course, it is a child-friendly destination and you can call them up at 619-487-9346.
+user: I see, could you make a reservation at the hotel for tomorrow? I will be staying there for seven days.
+assistant: Sure, please confirm your reservation for 2 rooms at Best Western Mission Bay in San Diego on March 2nd for 7 days.
+user: That sounds perfect! How much will this cost me per night?
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been made, which will cost you $156 each night.
+user: Thanks for your assistance, that is all I need for now.
+assistant: Goodbye, have a great day ahead!

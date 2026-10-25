@@ -1,0 +1,41 @@
+user: I need to find a saloon
+assistant: In which city?
+user: I need it in Larkspur, please
+tool(FindProvider): ok n_results=3
+assistant: There's Barber Lane Marin, a nice salon in Larkspur
+user: Can you give me the phone number and address of the salon?
+assistant: Sure! Phone number is 415-419-5260, and address is 1802, 2001 Larkspur Landing Circle
+user: Very good, thank you
+assistant: Want to make an appointment at the saloon?
+user: Yes, I want an appointment on 12th of this month
+assistant: What time do you prefer?
+user: I'd like at quarter past 5 in the evening if it's possible.
+assistant: An appointment at Barber Lane Marin on March 12th at 5:15 pm. Is it correct?
+user: No, I prefer on the 2nd at 12 pm.
+assistant: An appointment on March 2nd at 12 pm. Do you confirm?
+user: Yes, It's correct, now I confirm
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been fixed
+user: Very well. Is it an unisex salon? What is the customer rating?
+assistant: Yes, It's a unisex salon, and its rating is 3.9
+user: Ok, perfect! I need a restaurant on that day
+assistant: Which food would you prefer?
+user: I prefer a restaurant serving Noodles
+tool(FindRestaurants): ok n_results=1
+assistant: In Larkspur there's Dj's Chinese Cuisine
+user: At what address is the restaurant located? Are there seats outside?
+assistant: No, there aren't outdoor seating. It's at 435 Magnolia Avenue
+user: I want to find something serving American with vegetarian options
+tool(FindRestaurants): ok n_results=1
+assistant: In Larkspur there's Farm House Local
+user: Yes, I like it
+assistant: Want to book a table?
+user: Yes, I want to book there
+assistant: Which time do you prefer?
+user: I prefer to book at 6:30 pm
+assistant: A table for 2 people at Farm House Local in Larkspur, on March 2nd at 6:30 pm. Do you confirm?
+user: Yes, I confirm, thanks
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table was booked
+user: Very good! It's all for now
+assistant: Have a nice day

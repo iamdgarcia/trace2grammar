@@ -1,0 +1,17 @@
+user: I'm looking for some new songs to listen to. I'd like to listen to something from the album Run.
+tool(LookupMusic): ok n_results=1
+assistant: I managed to find 1 song that you may like. It's called Running After You by Matthew Mole from the album Run.
+user: Yes, that's just what I'm looking for.
+assistant: Should I play this song for you?
+user: Not at this time, no.
+assistant: Is there anything else I can assist you with?
+user: How's the weather in Danville?
+tool(GetWeather): ok n_results=1
+assistant: The temperature in Danville should be about 83 degrees Fahrenheit with a 24 percent chance of rain.
+user: Ok, great. Please play the song we discussed just now.
+assistant: So you'd like to play Running After You in the living room, is this correct?
+user: Yes, that's perfect. What genre is the song?
+tool(PlayMedia): ok n_results=1
+assistant: The genre of the song is Pop. Enjoy!
+user: Thanks, that's all I needed.
+assistant: Have a wonderful day!

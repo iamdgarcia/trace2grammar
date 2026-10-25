@@ -1,0 +1,19 @@
+user: I need to go for a meeting , so need a rental car. Will you find me a rental car till March 8th ? I need to pick it up 12:00 and i need cars in Seattle.
+assistant: In which date do you like to use the car as rental?
+user: I need it from 4th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available. Nice car available at King street Station and it is a sedan Audi A8.
+user: ok it sounds good. What about buses going around there?
+assistant: In which date you plan to leave?
+user: i am planning to leave on this sunday.
+assistant: In which place you plan to leave from?
+user: I am leaving from Portland, OR.
+tool(FindBus): ok n_results=10
+assistant: How about the bus departing at 7 am? it costs around $30
+user: Ok that sounds good. I need to find a one-way flight going over there. I need one tickets.
+assistant: In which date you want to leave , whether on March 4th or March 3rd or some other day?
+user: I need to start my travel on the 2nd.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 flights . what about travel by Alaska AIrlines.the oneward flight takes off at 9:45 am. It is a direct flight.the ticket costs around $55.
+user: ok that sounds good. that is all i need.
+assistant: have a wonderful day.

@@ -1,0 +1,25 @@
+user: Can you find me a place to eat?
+assistant: Which city do you want me to search in?
+user: I am looking for restaurants in Half Moon Bay.
+assistant: What type of food do you want to have?
+user: I am looking for a restaurant that serves Fish.
+tool(FindRestaurants): ok n_results=3
+assistant: There is a nice restaurant called Flying Fish Bar & Grill located in Half Moon Bay.
+user: Okay, That sounds nice to me. Can you book me a table there?
+assistant: What is your preferred timing for the booking?
+user: I want to book the table for one pm.
+assistant: Please confirm: You want me to book a table for 2 people at Flying Fish Bar & Grill located in Half Moon Bay on March 1st at 1 pm.
+user: Yes, That is correct. Can you confirm whether they have outdoor seating and vegetarian options in the menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked the table for you and they neither have outdoor seating nor have vegetarian options in the menu.
+user: I want a cab to go there.
+assistant: Can you confirm me whether your destination is 211 San Mateo Road and what type of ride do you want?
+user: Yes, That is correct and book me a Regular ride.
+assistant: Please confirm: You want me to book a regular ride in a cab going to 211 San Mateo Road for 2 people.
+user: Yes, That is correct. Can you tell me the cost and the expected arrival time for the cab?
+tool(GetRide): ok n_results=1
+assistant: Your ride is successfully booked and the cab will be here in 4 minutes. The total cost for the cab is $30.69.
+user: Thank you so much!
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

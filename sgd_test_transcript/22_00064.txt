@@ -1,0 +1,42 @@
+user: I need to find a psychiatrist in San Jose.
+tool(FindProvider): ok n_results=6
+assistant: Dr. Manuj K. Nangia is a psychiatrist in San Jose that you may want to try.
+user: What is the address please?
+assistant: Dr. Manuj's address is 2516 Samaritan Drive.
+user: What is the number to the office?
+assistant: The phone number is 408-357-0105.
+user: Did you find any other therapists?
+assistant: Another option is Pfaff Loretta who is a psychiatrist in San Jose.
+user: Great can you make me an appointment for tomorrow 16:30?
+assistant: You want an appointment with Pfaff Loretta at 4:30 pm on March 2nd, correct?
+user: Yes that is correct, what is the phone number?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment has been booked and you can reach them at 408-303-2435.
+user: I need to request payment from Bob, and please make it a private transaction.
+assistant: In what amount?
+user: I need to request payment for ninety nine dollars.
+assistant: You want to request $99 from Bob by way of a private transaction, correct?
+user: Yes that is correct thanks.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been made.
+user: I need to find a restaurant as well please.
+assistant: What type of food?
+user: I want a place that serves Sichuan.
+tool(FindRestaurants): ok n_results=10
+assistant: I found 10, how about Chef Li in San Jose?
+user: What else did you find?
+assistant: CHina delight is another option in San Jose.
+user: What else did you find?
+assistant: China Station REstaurant is another nice place in San Jose.
+user: Sounds good, please make a reservation.
+assistant: What time would you like?
+user: Make it at 11:30 please.
+assistant: You would like to book a table at CHina Station Restaurant in San Jose on March 2nd for 2 at 11:30 am, correct?
+user: Yes that is correct. Do they serve vegetarian options and what is the phone number please?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Their number is 408-225-9101. They do have vegetarian options but I was unable to make the reservation. How about China Station Restaurant for 2 on March 2nd at 11 am?
+user: Yes that will do thanks.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your table is booked.
+user: Thanks, that is all I needed.
+assistant: Have a great day!

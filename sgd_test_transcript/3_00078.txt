@@ -1,0 +1,11 @@
+user: I need to book a cad please.
+assistant: I can make it happen, just tell me where to, the number of the seats and the kind of ride, I mean Regular, Luxury or what?
+user: A Pool ride for 1 is fine, the place to reach is Ariake.
+assistant: Okay, I'll recap it for you. You need to reach Ariake on a Pool ride for 1 person.
+user: That's correct. How long do I have to wait for my ride? How much will I pay for it?
+tool(GetRide): ok n_results=1
+assistant: The ride will be there in 6 minutes and the sum to pay is $15.46
+user: Great. Thank you very much.
+assistant: Do you still need me to assist you?
+user: No thanks.
+assistant: Goodbye sir.

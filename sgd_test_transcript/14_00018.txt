@@ -1,0 +1,17 @@
+user: I want to see a scary movie online.
+tool(FindMovies): ok n_results=6
+assistant: Would you like to see 47 Meters Down: Uncaged, In Fabric or Midsommar?
+user: I want to see Midsommar.
+assistant: You would like to see the movie?
+user: Yes, I would.
+assistant: You would like to see Midsommar with English subtitles.
+user: Yes, that would be great. Who is the main actor?
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started. William Jackson Harper is the main actor.
+user: Great. What would the weather in Stanford be like on the 11th?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 86 degrees Fahrenheit with a 9 percent chance of rain.
+user: Ok, that would be fine.
+assistant: Is there anything else I can assist you with?
+user: No, that would be fine.
+assistant: Take care of yourself.

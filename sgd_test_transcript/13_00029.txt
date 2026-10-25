@@ -1,0 +1,26 @@
+user: I would like help finding something entertaining to do Saturday this week around Philadelphia.
+assistant: Does Music or Theater interest you?
+user: I really enjoy musical shows. Do you seen any going on the 9th of this month?
+tool(FindEvents): ok n_results=10
+assistant: Would you be interested in attending Babymetal. It a very popular event that will be at the Fillmore Philadelphia. This event will take place on March 9th at 4 pm.
+user: That will be perfect. Can you help book a room too?
+tool(SearchHotel): ok n_results=7
+assistant: Sure, Would you like to stay at Aka Rittenhouse Square, it has a 4 star rating.
+user: Can I have the address and does this hotel allow smoking?
+assistant: The address I have is 135 South 18th Street, and no they do not allow smoking. Did you want me to look else where?
+user: Yes please I need at least 2 rooms that allow smoking please.
+tool(SearchHotel): ok n_results=7
+assistant: No problem, I have found 7 hotel that match your needs. Would you like to stay at Aka University City, it is a 3 star hotel.
+user: Great! that will work. Can I book my tickets to the event first?
+assistant: Sure, I will be happy to help you with that. How tickets do you need?
+user: I will only be needing 1 ticket.
+assistant: Okay, so that is 1 ticket for Babymetal on March 9th in Philadelphia?
+user: Yes that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Great! your tickets has been successfully reserved.
+user: Thank you. What was the total cost for the ticket, and can I have the venue address?
+assistant: The address is 29 East Allen Street, and your ticket total came to $45.
+user: Great! Thank you so much.
+assistant: Would there be anything else you need?
+user: No that will be all for me today. Thank you again for all of your help.
+assistant: You are very welcome, and I hope you enjoy the rest of your day.

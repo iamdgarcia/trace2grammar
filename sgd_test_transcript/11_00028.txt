@@ -1,0 +1,20 @@
+user: I want a house for 2 people.
+assistant: What city should I look in?
+user: I'm going to NY.
+tool(SearchHouse): ok n_results=10
+assistant: A house is at 100 Greenwich Street with a 4.4 rating.
+user: That's a good one.
+assistant: Do you want a reservation?
+user: Yes. I'll check out on the 11th of March.
+assistant: When will you check in?
+user: I'm checking in on the 10th of this month.
+assistant: A reservation in New York for 2 people. You're checking in on March 10th and checking out on March 11th. Is this right?
+user: No, I'm checking in Wednesday next week.
+assistant: You're checking in on March 6th in New York. Is this right?
+user: No, I'll check out March 12th.
+assistant: You're checking out March 12th with 2 people. Is this right?
+user: Yes.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made.
+user: Thanks. That is all.
+assistant: Have a nice day. Bye.

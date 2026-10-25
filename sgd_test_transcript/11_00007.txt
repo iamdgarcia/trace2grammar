@@ -1,0 +1,18 @@
+user: I am looking for a house to stay.
+assistant: Which is preferred city for the house?
+user: I am looking for a house in Paris, France.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses which you might like. How about a nice house with 4.5 rating located in 1 Rue Bayard, 75008?
+user: This house sounds great to me.
+assistant: Do you want me to make a reservation for this house?
+user: Yes, Please make a reservation for 4 people.
+assistant: What is your date of check out?
+user: My check in and check out dates are March 11th and the 13th respectively.
+assistant: Please confirm: You want me book a house for 4 people in Paris with the check in and check out date as March 11th and March 13th.
+user: Yes, That is correct. Can you check whether this place has laundry service?
+tool(BookHouse): ok n_results=1
+assistant: I have successfully booked the house and the place has laundry service.
+user: Thank you so much!
+assistant: Can I help you with anything else?
+user: No. That will be all. Thanks!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,16 @@
+user: I need a train ticket, I want to go to Sacramento from Anaheim, CA.
+assistant: Do you know what day you want to leave?
+user: I need seats for the 5th of March.
+tool(FindTrains): ok n_results=10
+assistant: I have a list of 10 trains that fit your requirements, how about one for $132 that leaves at 6:50 am?
+user: Where would I be leaving from and getting to?
+assistant: You would end up at Sacramento Valley Station after leaving from Anaheim intermodal Center.
+user: I like that one.
+assistant: Should I reserve you a seat?
+user: No, not just yet, I also want to locate a house there so I have a place to stay.
+tool(SearchHouse): ok n_results=10
+assistant: I found one rated 4.4, the address is 100 Capitol Mall.
+user: That house would be wonderful.
+assistant: Can I help you more?
+user: No thanks for what you've done though.
+assistant: I was happy to do so goodbye.

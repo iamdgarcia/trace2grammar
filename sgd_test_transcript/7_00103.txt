@@ -1,0 +1,15 @@
+user: I'm looking for some 3d movie tickets in San Jose.
+assistant: How many tickets do you need and what time do you want to see the movie?
+user: I need 1 ticket for a movie at 8:15 pm.
+assistant: What date do you want to see the movie?
+user: I want to see it on the 5th of March.
+assistant: What movie do you want to watch?
+user: I want to watch The Load.
+assistant: Okay, I have 1 3d ticket for The Load on March 5th at 8:15 pm in San Jose, correct?
+user: Yes, that sounds good.
+tool(BuyMovieTickets): ok n_results=1
+assistant: I have successfully purchased the ticket.
+user: Thank you.
+assistant: Is there anything else I can help with?
+user: No, thank you.
+assistant: Have a great day.

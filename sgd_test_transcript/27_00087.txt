@@ -1,0 +1,28 @@
+user: Can you find me a bus?
+assistant: Sure. Can you give me the following information? Your departure date, departure city and destination?
+user: I'm leaving on the 8th of March. I'm leaving from Fresno, CA and headed towards Vegas.
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses for you. How about a 7:10 am departure that costs $39.
+user: What is the arrival station?
+assistant: The bus arrives at Union Plaza.
+user: What is the departure station? How many stops are there?
+assistant: This is a direct bus that departs from 2660 Tulare St.
+user: That sounds good. Can you find me a free, child-friendly, Tourist Attraction?
+tool(FindAttractions): ok n_results=1
+assistant: I found 1 Tourist Attraction for you. How about the SlotZilla Zip Line?
+user: Can you give me the phone number?
+assistant: You can contact them at 702-678-5780.
+user: Okay, great. Can you buy me 3 of those bus tickets?
+assistant: Confirming that you want me to buy 3 tickets on the March 8th bus leaving Fresno at 7:10 am and arriving in Las Vegas. You have no extra luggage. Is this information correct?
+user: No, I need four tickets. I also have extra luggage.
+assistant: Confirming that you need 4 tickets and you do have extra luggage to carry on the bus?
+user: Yes, that's correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation is confirmed.
+user: Thanks for your help.
+assistant: Is there anything else?
+user: I need one room at a hotel.
+tool(SearchHotel): ok n_results=7
+assistant: How about the Best Western Plus Las Vegas West? It Is a 3 star hotel.
+user: That sounds good. That's all I need for now.
+assistant: Goodbye. Have a good day!

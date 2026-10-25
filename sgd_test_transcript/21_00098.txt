@@ -1,0 +1,24 @@
+user: Check for me the weather on 13th of March in Pinole.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 84 degrees Fahrenheit and 18 percent of rain.
+user: Tell me how windy will be?
+assistant: Average wind speed should be 9 miles per hour.
+user: How much humidity will be?
+assistant: Around 29 percent.
+user: Good.In Ciudad de Mexico how will be?
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 91 degrees Fahrenheit and 8 percent of rain.
+user: Good.Some attractions there you can show me?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you might like.You can check out a Nature Preserve called Acuario Inbursa.
+user: Good.Get for me a cab to go there.I want a Cheapest ride and I am part for a group of 4.
+assistant: You want a Pool ride for with 4 seats to Acuario Inbursa.Is okay?
+user: No.I am part of a group of one.
+assistant: You want 1 seats at a ride to Acuario Inbursa.I'm right?
+user: No.I want a Regular ride.
+assistant: You want a Regular ride to Acuario Inbursa.Confirm me please.
+user: That's good.In how much time will arrive the cab?
+tool(GetRide): ok n_results=1
+assistant: Your ride was booked and the cab is on its way, should arrive in 4 minutes.
+user: Thank you a lot.That;s all that I wanted.
+assistant: Have a good day!

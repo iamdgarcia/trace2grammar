@@ -1,0 +1,26 @@
+user: I need a therapist in Gilroy. How about a psychologist?
+tool(FindProvider): ok n_results=3
+assistant: There are 3 options. Rachelle Coate is a psychologist in Gilroy.
+user: What about a Psychiatrist?
+tool(FindProvider): ok n_results=3
+assistant: There are 3 Psychiatrist in Gilroy. Bacosa Frances is one.
+user: Can you get contact info. for me?
+assistant: Sure, phone is 408-842-1119 and they are located at 8339 Church St # 106.
+user: Give me more options.
+assistant: Galindo Jaime is in Gilroy. They are a Psychiatrist.
+user: Fine, get me an appointment. Try 16:00.
+assistant: What date works best?
+user: Do it for the 1st of this month.
+assistant: Sure to confirm: Appointment with Galindo Jaime at 4 pm on March 1st.
+user: Fine, pull the trigger on that.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry that didn't work. Anything more?
+user: Try again. How about Friday next week. I forgot, there is no way that the 1st of this month hasn't already passed. Book it in the afternoon 12.
+assistant: Sure, I'm booking an appointment with Galindo Jaime on March 8th at 12 pm.
+user: Fine, that's good.
+tool(BookAppointment): ok n_results=1
+assistant: You appointment is set.
+user: What is their phone and address?
+assistant: Phone is 408-846-2443. They are at 290 Ioof Avenue.
+user: Thanks you saved me.
+assistant: I'm tickled to help.

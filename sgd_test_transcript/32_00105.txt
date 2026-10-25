@@ -1,0 +1,34 @@
+user: I'd like to look for a location to reside in. It ought to have 2 bed rooms, 2 baths for me to buy it.
+assistant: What location would you like the property in?
+user: I'd like the residence in Vacaville, and I'd like to rent it.
+tool(FindHomeByArea): ok n_results=5
+assistant: I discovered 5 residences. There is a lovely residence called Meadowood Apartments in 199 Aegean Way, with a price of $3,000.
+user: Can you tell me the contact number for the residence?
+assistant: The residence's contact number is 707-448-7056.
+user: That's fine with me.
+assistant: Would you like to plan a trip to the residence?
+user: Yeah, I'd like to plan a trip.
+assistant: What time do you wish to plan the trip?
+user: I'd like to travel on March 9th.
+assistant: Please verify the following information: you are planning a trip to Meadowood Apartments on March 9th.
+user: Yeah, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your trip to the residence is planned.
+user: Ah, can you share the address?
+assistant: Who would you like to share the location with?
+user: I'd like to share it with Larry.
+assistant: Please verify the following information: you are sharing the address 199 Aegean Way with Larry.
+user: That's fine with me.
+tool(ShareLocation): ok n_results=1
+assistant: You have been successful in sharing the location.
+user: Could you grab a taxi for me to head there?
+assistant: What sort of taxi do you prefer? You may have regular, luxury, or something else. How many seats do you require?
+user: I'd like a Luxurious taxi, and I'm in a group of 1 person.
+assistant: Please verify the following information: you'd like a luxury taxi for 1 seat to 199 Aegean Way
+user: Yeah, that's fine with me. How long will the taxi take to arrive?
+tool(GetRide): ok n_results=1
+assistant: I reserved your taxi and it is on its way. IT should arrive in 13 minutes.
+user: Thank you for your assistance.
+assistant: Could I assist you with something else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

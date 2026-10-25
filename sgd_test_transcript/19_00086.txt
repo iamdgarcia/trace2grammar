@@ -1,0 +1,29 @@
+user: Find me a rental car in Mexico City because I will need a car till March 13th.I think that a Sedan is nice.
+assistant: When you want to star the rental and at what hour you will make the pick up?
+user: The pick up I want to be at afternoon 3:30 and I will need it from 12th of this month.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found 6 cars available.A nice Sedan Dodge Charger available at Benito Juarez International Airport.
+user: Sounds good.Reserve for me tickets to an event there.
+assistant: Tell me the number of tickets that you want.
+user: 4 tickets will be okay.
+assistant: In which city do you prefer to be and at which event?
+user: Around Sacramento will be good.Aftershock Festival I heard that is good.
+assistant: In what date you want to be?
+user: On March 14th will be okay.
+assistant: Book 4 tickets for Aftershock Festival in Sacramento on March 14th.Is that okay?
+user: Yes that's good.
+tool(BuyEventTickets): ok n_results=1
+assistant: Reservation is confirmed.Have fun!
+user: Reserve for me the rental car that you have found.
+assistant: You want to add insurance?
+user: No.I don't need one.
+assistant: You want a Sedan car from Benito Juarez International Airport.The pick up date is March 12th at 3:30 pm and drop-off on March 13th.Is okay?
+user: No.Buy for me insurance.
+assistant: Time for pick up is 3:30 pm and is come with insurance.
+user: Sounds very good.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.
+user: Tell me the cost per day.
+assistant: $34.00 is the cost per day.
+user: Thank you for all.That's all that I wanted.
+assistant: Have a wonderful day!

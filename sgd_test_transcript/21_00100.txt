@@ -1,0 +1,19 @@
+user: I need to check the weather in Portland please
+tool(GetWeather): ok n_results=1
+assistant: It's gonna be 75 degrees with a 9 percent chance of rain
+user: OK great, now help me find a park to visit there
+tool(FindAttractions): ok n_results=8
+assistant: There are 8 including a park called the Crystal Springs Rhododendron Garden
+user: OK cool, can you book me a cab there?
+assistant: How many people are you with
+user: It'll be 2 of us
+assistant: Do you prefer any kind of ride?
+user: Yes, a luxury ride please!
+assistant: Confirming your 2 luxury seats headed to Crystal Springs Rhododendron Garden?
+user: Yes confirm that
+tool(GetRide): ok n_results=1
+assistant: It's confirmed and on the way
+user: Thanks so much for your assistance
+assistant: Can I assist with anything else?
+user: No that's all for now
+assistant: Sure, enjoy your visit to the garden!

@@ -1,0 +1,10 @@
+user: I would like to find a movie featuring Andrea Frigerio, a suspense movie.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie you make like Rojo?
+user: Rojo is great. Can you play the movie now?
+assistant: Yes, playing Rojo with subtitles in English.
+user: Yes, that is good.
+tool(PlayMovie): ok n_results=0
+assistant: I was unable to play the movie. Can I help further?
+user: No, that is all.
+assistant: Have a good day.

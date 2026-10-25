@@ -1,0 +1,9 @@
+user: Can you find me a round trip flight out of NYC? I would like to fly with Southwest Airlines and will be returning on the 14th of this Month.
+assistant: Sure thing, what date will you be leaving?
+user: I will be leaving on Tuesday next week.
+assistant: What is your destination?
+user: I am traveling to San Fran.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Alright. I've found 1 flight for you with Southwest Airlines. The flight takes off at 6:15 pm and will be a direct flight. The returning flight will take off at 4:45 am. Your total ticket cost will be $285.
+user: Okay, sounds good. Thanks, that's all for now.
+assistant: My pleasure! Have a good day.

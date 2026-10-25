@@ -1,0 +1,23 @@
+user: I would like to rent a house with 2 bedrooms.
+assistant: Which area should I search in? How many baths do you need?
+user: A house in Palo Alto and it needs at least 1 bath.
+assistant: Would you like to rent or buy a house?
+user: I would like to buy a place.
+tool(FindHomeByArea): ok n_results=6
+assistant: There is 275 Hawthorne Apartments, it's located at 275 Hawthorne Avenue for the cost of $2,750,000.
+user: Can you find another house?
+assistant: There is Arastradero Park Apartments located at 574 Arastradero road for the coast of $2,350,000.
+user: Yes, that house sounds good.
+assistant: Would you like to visit the property?
+user: Yes, can you schedule a visit on the 7th?
+assistant: Scheduling a visit to Arastradero Park Apartments on March 7th.
+user: Yes, that is correct.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: There are 3 alarms set. There is one for 9:30 am with the name Breakfast.
+user: Ok, thank you for the information.
+assistant: Would you like to add an alarm?
+user: No, not at the moment.
+assistant: Have a good day.

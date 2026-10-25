@@ -1,0 +1,16 @@
+user: Hi, I need to book 1 seat on a train please. The fare class doesn't matter to me.
+assistant: No problem, let me just get a few details from you. Where are you leaving from, where are you going to, and on what date?
+user: I need a train from Atlanta to Washington and that should be on March 12th.
+tool(FindTrains): ok n_results=6
+assistant: There is a train with a 1 pm departure for a fare of $118 total.
+user: Works for me. May I reserve that one please?
+assistant: Yes. Would like to purchase travel insurance for your trip?
+user: Yes, I think I should.
+assistant: Confirming a 1 pm train from Atlanta to Washington on March 12th, for a 1 person Value ticket.
+user: Yes, that all sounds perfect.
+tool(GetTrainTickets): ok n_results=1
+assistant: The reservation has been completed.
+user: That's a big help, thank you.
+assistant: How else may I assist you today?
+user: Nothing else right now, thank you.
+assistant: You're welcome. I'm happy to have been able to help you.

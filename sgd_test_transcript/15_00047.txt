@@ -1,0 +1,17 @@
+user: Hey, can you help me find a new place to live? I'm moving out.
+assistant: Sure. How many bathrooms would you like? Is it a rent or a buy?
+user: I want to rent someplace with three bathrooms please.
+assistant: And how many bedrooms? Do you have a preferred are you would like your new place at?
+user: I want something with three bedrooms in Lafayette.
+tool(FindHomeByArea): ok n_results=2
+assistant: I found 2 nieces houses. One of them is on Lafayette Commons Apartments at 3263 Mount Diablo Court and it costs $4,150.
+user: Sounds real good. Please schedule me a visit there on the 10th of March.
+assistant: So a visit to Lafayette Commons Apartments on March 10th?
+user: Correct. Can you tell me their number and if they have laundry machines in the house?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit was successfully scheduled. Their number is 925-287-1188 but unfortunately the house doesn't have laundry machines.
+user: Okay. Can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There's a 8 am alarm titled breakfast.
+user: Okay, good to know. That's all.
+assistant: Thank you and have a great day.

@@ -1,0 +1,16 @@
+user: I want to hear a Reggaeton song.
+tool(LookupMusic): ok n_results=10
+assistant: How about Addicted from the Where We Come From album by Popcaan?
+user: That's the one I wanted. Thanks!
+assistant: Shall I play it now?
+user: Yes, please do.
+assistant: To verify: you would like to listen to the song Addicted in the Living room.
+user: No I'd like to hear it on the speaker in kitchen.
+assistant: To confirm: you would like me to play the song Addicted in the kitchen.
+user: On second thought make it the patio speaker.
+assistant: Okay, you would like me to play Addicted on the patio.
+user: You got it.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy! Do you need anything else?
+user: No thank you.
+assistant: Have a wonderful day.

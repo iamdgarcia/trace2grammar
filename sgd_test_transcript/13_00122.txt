@@ -1,0 +1,17 @@
+user: Find me some movies online.I enjoy movies featuring Travis Harrison.
+assistant: What type of movies do you like?
+user: Will be great Family movies.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie you may like.How about Steel Magnolias?
+user: Steel Magnolias sounds great.Play it please.
+assistant: Play Steel Magnolias with subtitles in English.Is that correct?
+user: Yes that's true.
+tool(PlayMovie): ok n_results=1
+assistant: The movie is started.
+user: Tell me how will be the weather on 7th of this month in Healdsburg.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 73 degrees Fahrenheit and 9 percent chance of rain.
+user: Tell me how will be the humidity and windy?
+assistant: Wind speed should be 10 miles per hour and humidity around 22 percent.
+user: Okay.Thanks that's all.Bye!
+assistant: Bye!

@@ -1,0 +1,14 @@
+user: I would like a regular drama movie at Regal Crow Canyon.
+assistant: What is your location?
+user: Please look in San Ramon,
+tool(FindMovies): ok n_results=2
+assistant: There are 2. Hustlers or The Art of Racing in the Rain.
+user: I would like 3 tickets for Hustlers at quarter past 7 in the evening.
+assistant: Which date?
+user: On the 3rd of March.
+assistant: Please confirm 3 tickets for Hustlers, a regular movie, in San Ramon on March 3rd at 7:15 pm.
+user: Yes, what is the address>
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets have been purchased. The address is 2525 San Ramon Valley Boulevard.
+user: Thanks, I am good now.
+assistant: Have a nice time.

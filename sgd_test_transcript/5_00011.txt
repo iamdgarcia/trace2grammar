@@ -1,0 +1,18 @@
+user: I would like to find a bus leaving from Portland, OR going to Vancouver, BC on March 7th.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses. There is one departing at 7:10 am for $43.
+user: That sounds good.
+assistant: Would you like to purchase a ticket?
+user: Yes, I would like a seat for 1.
+assistant: 1 bus ticket from Portland to Vancouver on March 7th at 7:10 am.
+user: I have extra luggage to carry as well.
+assistant: Bus leaving at 7:10 am with extra luggage to carry.
+user: Yes, that is perfect. Which station does it leave from?
+tool(BuyBusTicket): ok n_results=1
+assistant: It departs from SW Arthur & 1st.
+user: How many stop does the bus have and what is the destination station?
+assistant: It's a direct bus and the destination is Pacific Central Station.
+user: Thank you for the information.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

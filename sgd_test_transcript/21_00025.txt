@@ -1,0 +1,31 @@
+user: I would like to get a cab.
+assistant: What number of seats do you need?
+user: I would need a group of 4.
+assistant: Where would you wish to go and with what type of ride. There is Pool, Luxury, or anything else?
+user: I would like a ride to Hunan Home's Restaurant preferring a luxurious ride.
+assistant: Please confirm details that you want a ride to Hunan Home's Restaurant for 4 seats luxury style.
+user: No, I'd like a shared ride to 3945 24th street.
+assistant: Please confirm details for a pool ride to 3945 24th Street.
+user: Yes, that will work for me.
+tool(GetRide): ok n_results=1
+assistant: I booked the ride and the cab is on its way.
+user: How long before the cab comes here?
+assistant: The cab will be coming in 9 minutes.
+user: How much will the cab cost?
+assistant: The cab will cost $16.44.
+user: Thanks for the help. What about searching some songs for me now from 2015?
+tool(LookupMusic): ok n_results=10
+assistant: What are your thoughts on Back It Up by Prince Royce from the album Double Vision?
+user: What type of music is it?
+assistant: It is Pop music.
+user: Yes that would be the one. I would like to play this song.
+assistant: Please confirm details to play the song Back It Up in the living room.
+user: No, cast I on the kitchen.
+assistant: Please confirm details to play the song Back It Up in the Kitchen.
+user: No, cast it on the speaker in patio.
+assistant: Please confirm details to play the song Back It Up in Patio.
+user: Yes, that would be correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks so much. That is it.
+assistant: Have a nice day.

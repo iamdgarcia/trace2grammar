@@ -1,0 +1,25 @@
+user: When my colleagues and I take our trip to SF for the regional conference, we'd really like to do something interesting. What would you suggest for the evening of the 1st, something in line with a Stage show?
+tool(FindEvents): ok n_results=10
+assistant: Well, there is the popular Above Ground event at the Mojo Theatre that's scheduled for March 1st at 5:30 pm.
+user: I see. What's the ticket price and street address for that event?
+assistant: Each ticket is $40 and the street address is 2940 16th Street #217.
+user: I think that would be quite nice.
+assistant: Would you like to get tickets to attend that event?
+user: I'm thinking about it. Perhaps, shortly.
+assistant: Would you like more information?
+user: It's just coming to my mind that requesting a payment is what I need to do now. Please set up a transaction for 35 dollars with Bob.
+assistant: Okay. I can confirm that you are requesting a transaction with Bob, which is being made public, for a total of $35. Shall I do that now?
+user: Please do that as soon as you can.
+tool(RequestPayment): ok n_results=1
+assistant: Your request for payment is now confirmed.
+user: Super. Appreciate that.
+assistant: Do you need more assistance?
+user: Well, I'm ready to get tickets for that event you suggested for me.
+assistant: All right. I just need to know the number of tickets you want.
+user: Sure, make that three tickets, please.
+assistant: Got it. Shall I confirm a reservation for 3 persons to attend Above Ground in San Francisco on March 1st?
+user: That's on point. Let's do it.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket reservation is all set so you can have a fun evening.
+user: Outstanding. That'll do it for now, and I really appreciate your assistance.
+assistant: Happy to assist you, and hope you have a pleasant day.

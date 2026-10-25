@@ -1,0 +1,21 @@
+user: Can you find me a movie to watch?
+assistant: Which city would you like to watch the movie?
+user: I am looking for a movie in Sonoma.
+tool(FindMovies): ok n_results=3
+assistant: There are 3 movies you may like. What do you think about Angel Has Fallen, Hustlers or Toy Story 4?
+user: Toy Story four sounds good to me. Can you search some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs you may want to listen. How about Just Kiss Her by Concorde from the album Summer House?
+user: Can you find me the type of music?
+assistant: It's genre is Pop.
+user: Can you find me the year it came out?
+assistant: It was released in the year 2012.
+user: Yes, That is the song I am looking for. Please play the song for me.
+assistant: Please confirm: You want me to play Just Kiss Her in living room.
+user: Yes, That works for me.
+tool(PlayMedia): ok n_results=1
+assistant: Your music is playing. Enjoy!
+user: Thank you for your help.
+assistant: Can I help you with anything else?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

@@ -1,0 +1,25 @@
+user: What is the weather in San Mateo?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 80 degrees with a 13 percent chance of rain.
+user: Can I also have the wind speed and humidity?
+assistant: The wind speed will be around 11 miles per hour with the humidity approximately 18 percent.
+user: Okay. I would also like to visit the Americana today.
+assistant: Please confirm you want to visit the Americana on March 1st?
+user: Yes, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is confirmed.
+user: How many bedrooms does the property have and does it have a garage?
+assistant: It has a garage and 3 bedrooms.
+user: Thank you. I need to book a hatchback from King Street Station for today.
+assistant: What is your pick up time and will you require insurance?
+user: Yes, I will need insurance and will be picking up at 12:30 in the afternoon.
+assistant: What is your drop off date?
+user: Dropping off on the 6th of this month.
+assistant: Please confirm you want to rend a hatchback from King Street Station on March 1st at 12:30 pm and returning on March 6th.
+user: Yes. That is correct. What's the vehicle's daily rate?
+tool(ReserveCar): ok n_results=1
+assistant: The daily rate is $40.00. Your booking was a success.
+user: Thanks so much.
+assistant: Can I do anything else for you today?
+user: No. Thanks. That's all.
+assistant: You're welcome. Goodbye.

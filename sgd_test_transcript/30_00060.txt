@@ -1,0 +1,29 @@
+user: I want to check the weather in Tomales for March 11th.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature on that day is expected to be 89 degrees Fahrenheit and the chance of rain is 23 percent.
+user: What will the humidity level and wind be like?
+assistant: The wind speed is expected to be 2 miles per hour and the humidity is around 25 percent.
+user: Sure, sounds good. I would like to schedule a visit to a property for that date.
+assistant: Which property are you interested in?
+user: The property I want to visit is Catalina Crest Apartment Homes.
+assistant: Okay, confirm these details for me: You would like to schedule a visit to Catalina Crest Apartment Homes on March 11th.
+user: Yes, that is right.
+tool(ScheduleVisit): ok n_results=1
+assistant: This visit has been scheduled for you.
+user: Thank you very much. I would also like to reserve a car there.
+assistant: Until what date do you want to keep the car?
+user: I would like the car until March 14th.
+assistant: Would you like to have the car starting from March 11th?
+user: Yes that sounds fine.
+assistant: What time do you want to get the car and would you like a Hatchback, SUV, or something else?
+user: I would like to buy insurance. A hatchback would be nice and I would like to pick it up at five pm.
+assistant: Where would you like to pick the car up?
+user: It would be really convenient for me to pick it up at Fresno Station.
+assistant: Please confirm these details: You will pick up the car on March 11th at 5 pm at Fresno Station and drop it off on March 14th. The car is a hatchback that will come with insurance.
+user: Yes that sounds very good.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation has been made
+user: Thank you very much for the help.
+assistant: Is there anything else I can do for you?
+user: No, thank you very much for the help.
+assistant: Have a wonderful day.

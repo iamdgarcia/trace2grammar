@@ -1,0 +1,21 @@
+user: I would like to find some songs.
+tool(LookupMusic): ok n_results=10
+assistant: How about Faster from The Unforgiving album by Within Temptation.
+user: That is good.
+assistant: Would you like it to play?
+user: Not right now. What will the weather be on March 1st in San Carlos?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 90 degrees with 8 % of rain.
+user: What is the humidity supposed to be?
+assistant: Around 26 percent.
+user: Will it be windy?
+assistant: The average speed may be 3 miles per hour.
+user: Ok, getting back to the song, please play is on the patio.
+assistant: Confirming playing Faster on the patio.
+user: Great, thanks a lot.
+tool(PlayMedia): ok n_results=1
+assistant: Have a good time.
+user: Thank you again.
+assistant: Can I do anything else for you?
+user: No, I am good.
+assistant: Have a nice day.

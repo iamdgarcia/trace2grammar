@@ -1,0 +1,34 @@
+user: I forgot what I have planned for the rest of today! I need to see my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: The Pick up kids alarm is set for 5 pm.
+user: All right, cool. Now search for restaurants around that area.
+assistant: In which city should I center the search?
+user: Look for restaurants San Fran restaurants.
+assistant: Did you have a particular cuisine in mind?
+user: Anything serving Asian works.
+tool(FindRestaurants): ok n_results=10
+assistant: 8 Immortals Restaurant is a good San Francisco restaurant.
+user: What other restaurants can you suggest?
+assistant: Bai Thong Thai is a good San Francisco restaurant.
+user: Do they have al fresco dining? Do they offer vegetarian fare?
+assistant: They don't have al fresco tables. They offer good choices for vegetarians.
+user: Okay, that works. Please reserve me a car there.
+assistant: Please tell me the duration of your car rental, and whether you'd like to add insurance.
+user: I want to pick it up on 9th of March and keep it until 14th of March. I am not interested in insurance.
+assistant: Please tell me your preferred car type, pick-up time, and location.
+user: I prefer a Sedan. Picking it at 09:30 from Benito Juarez Airport works for me.
+assistant: Okay. Please confirm that you'd like to pick a Sedan car from Benito Juarez International Airport on March 9th at 9:30 am and drop it off on March 14th. Also confirm that you are not adding insurance.
+user: Yes, that is correct. What's the daily cost? What's the car's make and model?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car. The daily cost is $23.00. Dodge Charger is the car's make and model.
+user: Thank you very much. You've been very helpful. I'd like to share the address.
+assistant: What's the name of the person to share it with?
+user: Please share it with Dorothy.
+assistant: Please tell me the location you'd like to share. Is it Benito Juarez International Airport, 298 Gough Street or something else?
+user: Share the Benito Juarez International Airport location.
+assistant: Please confirm that you'd like to share the Benito Juarez International Airport address with Dorothy.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Address successfully share.
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Have a great day!

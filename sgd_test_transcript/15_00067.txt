@@ -1,0 +1,32 @@
+user: I need to find a therapist in the new City I just moved to, can you help me search for one?
+assistant: Sure, I will just need the name of the City please.
+user: I would prefer it close, so look in St. Helena please.
+assistant: There are several different types of therapists, do you know which area of expertise you would like the therapist to specialize in?
+user: I am on medication, so I need one that can provide prescriptions like a Psychiatrist and would prefer if they are located in Menlo Park.
+tool(FindProvider): ok n_results=3
+assistant: The first one of 3 that I found matching that criteria is a Psychiatrist by the name of Dr. Kalpana I. Nathan, located in Menlo Park.
+user: What about a Psychologist instead?
+tool(FindProvider): ok n_results=4
+assistant: Yes, I was able to find a Psychologist by the name of Kate Corcoran also located in Menlo Park.
+user: Great, can you give me their address and contact information?
+assistant: The phone number for the Psychologist located at 845 El Camino Real is 650-308-4240.
+user: Was that the only therapist you were able to find for me?
+assistant: No, there is another Psychologist by the name Katharine C. Sears located in Menlo Park as well.
+user: I like the sound of that one the best. Can you tell me what the forecast is in that location on March 14th?
+tool(GetWeather): ok n_results=1
+assistant: As of right now they are calling for a 12 percent chance of rain and an average temperature of 79 degrees Fahrenheit for that particular day.
+user: Does it say anything about the wind speeds?
+assistant: Currently the average wind speed expected is 9 miles per hour.
+user: Okay, and what about the humidity?
+assistant: Currently the expected humidity is 18 percent.
+user: Everything sounds good for an appointment on that day. Can we proceed with booking an appointment?
+assistant: No problem, what time were you hoping to schedule the appointment?
+user: I'm available at 16:45, can you see if there is an opening then?
+assistant: Sure, so you would like an appointment with Katharine C. Sears, on March 14th, at 4:45 pm, is that correct.
+user: Yes, that sounds wonderful.
+tool(BookAppointment): ok n_results=1
+assistant: I am happy to inform you that I have scheduled that appointment for you and you will receive an email notification, confirming it shortly.
+user: Thank you so much, that helps a lot.
+assistant: Is there anything else I can assist you with?
+user: No, that is all I need for now, Thank you again.
+assistant: It was my pleasure, have a great day!

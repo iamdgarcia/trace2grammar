@@ -1,0 +1,23 @@
+user: I would like to find attraction to visit.
+assistant: In which city should I search?
+user: I would like to find an attraction that is child-friendly in NY.
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions. There is 9/11 Tribute Museum that is a museum.
+user: Is this attraction free and what is their phone number?
+assistant: No, It's not free and the phone number is 866-737-1184.
+user: I would like to find a house to stay there.
+tool(SearchHouse): ok n_results=10
+assistant: There is a house located at 100 Greenwich Street and the rating is 4.4.
+user: Does this place have laundry service?
+assistant: Yes, there is a laundry service.
+user: This house sounds good.
+assistant: Can I help you with anything else?
+user: I would like to book a round trip flight.
+assistant: Which city are yo departing from?
+user: I'm looking to leave from SF.
+assistant: What date would you like to depart and return?
+user: I would like to depart on March 5th and return on March 13th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 flights. There is American Airlines that leaves at 4:55 am and the returns takes off at 6 pm for $415.
+user: That sounds good, It's all I needed.
+assistant: Have a good day.

@@ -1,0 +1,14 @@
+user: I need an economy train ticket for March 14th to Phoenix, AZ.
+assistant: Where will you be departing from?
+user: I'll be departing from Los Angeles.
+tool(FindTrains): ok n_results=5
+assistant: I have 5 trains that match. What do you think about a 6:30 am departure? It is $88.
+user: What are the departure and arrival stations?
+assistant: The departure is from Union Station and the arrival is at Phoenix Union Station.
+user: I like the sound of that.
+assistant: What else can I do for you?
+user: I'll need a house to stay in. I want a 4.2 or higher rating. And it's just for 1 person.
+tool(SearchHouse): ok n_results=10
+assistant: There's a 4.2 rated house at 10 East Thomas Road.
+user: That house will work. I don't need any more help.
+assistant: It's been great helping you, take care.

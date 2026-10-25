@@ -1,0 +1,25 @@
+user: I want tickets to Bastille.
+assistant: What city should I look in?
+user: Look in Portland.
+assistant: How many tickets do you want?
+user: Just one.
+assistant: What date would you like them?
+user: I want it on Sunday this week.
+assistant: 1 ticket to Bastille on March 3rd in Portland. Is this right?
+user: Yes. How much will it cost? When is it?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation has been made. It costs $20 and starts at 7 pm.
+user: I need a bus to get there.
+assistant: Where are you coming from? Are you leaving on March 3rd?
+user: I'm leaving March 2nd from Vancouver, BC.
+tool(FindBus): ok n_results=8
+assistant: I found 8 buses. One is leaving at 7:10 am and costs $39.
+user: That's good. I'd like tickets.
+assistant: 1 ticket for the bus leaving from Vancouver to Portland on March 2nd at 7:10 am. No extra luggage. Is this right?
+user: Yes, that's it. What station will it be at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been booked. It will come to SW Arthur & 1st.
+user: Thanks for everything.
+assistant: Do you need anything else?
+user: No, that's all.
+assistant: Have a nice day.

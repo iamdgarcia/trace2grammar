@@ -1,0 +1,30 @@
+user: I am looking for something interesting to do.
+assistant: Which city should I search for?
+user: Please search something around London, UK.
+assistant: What is your preferred category like Music or Theater or anything else?
+user: I mostly prefer Broadway.
+tool(FindEvents): ok n_results=10
+assistant: There is a very popular event called A Right Royale Tea taking place at Amba Hotel Charing Cross on March 14th at 7 pm.
+user: Can you find me the address of the venue and the cost for one ticket?
+assistant: The venue is located in Strand and the cost for one ticket is $50.
+user: That sounds good to me.
+assistant: Would you like me to buy tickets for the event?
+user: Not now. Find me hotels in that area with smoking allowed in it.
+tool(SearchHotel): ok n_results=10
+assistant: How about a 3 star hotel called Abbey Court Hotel (Hyde Park)?
+user: Find me the contact number and the cost per night.
+assistant: You can contact them on +44 20 7402 0281 and the cost per night is $93.
+user: Are there any other 5 star hotel that meets my requirement?
+tool(SearchHotel): ok n_results=8
+assistant: There are 8 hotels according to your needs. How about a 5 star hotel called Courthouse Hotel Shoreditch?
+user: Are there any other hotel that meets my requirement?
+assistant: How about a 5 star hotel called Devonshire Club By Mantis??
+user: That sounds good to me. Please buy 2 tickets for this event.
+assistant: Please confirm: You want me to book 2 tickets for A Right Royale Tea taking place in London on March 14th.
+user: No, Make it one ticket.
+assistant: Please confirm: You want me to book 1 tickets for A Right Royale Tea taking place in London.
+user: Yes, That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets for you. Enjoy!
+user: Okay. That will be all for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

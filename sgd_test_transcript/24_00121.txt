@@ -1,0 +1,21 @@
+user: I want to make a payment to Jerry for $82 from my master card
+assistant: Confirming you want to pay Jerry $82 with your credit card yes?
+user: Yes that's right
+tool(MakePayment): ok n_results=1
+assistant: It's been made, they should get their money soon
+user: Great, now help me find a restaurant
+assistant: Where at, and what kind of cuisine?
+user: I want to find a Cafe somewhere in Antioch
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1, a Mcdonald's in Antioch
+user: Yes please, let's get a table there
+assistant: For what time?
+user: Try in the evening 5:30 pm
+assistant: Confirming your table at the Mcdonald's in Antioch for 2 at 5:30 pm on March 1st
+user: Yes that works for me
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's been booked
+user: What's their number and rating?
+assistant: They have a 3.5 overall rating and you can call them at 925-754-6114
+user: Awesome, thanks for now
+assistant: Sure thing, bye bye

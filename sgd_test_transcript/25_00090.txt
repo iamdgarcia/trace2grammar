@@ -1,0 +1,34 @@
+user: Can you show me my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: You currently have 3 alarms set. You have an alarm for 6:30 am named Get up.
+user: Okay, that's great.
+assistant: Would you like to add an alarm?
+user: No, not now. Can you find me a restaurant with vegetarian options?
+assistant: Can you give me a location to search in?
+user: Find me something in Point Reyes Station.
+assistant: What type of cuisine do you desire?
+user: I would like some Freshwater fish.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant for you. You might like Station House Cafe. It is a nice restaurant located in Point Reyes Station.
+user: Is this restaurant ultra high-end? What is their user rating?
+assistant: It is a moderate priced restaurant. They are rated at around 4.3.
+user: Yes, that sounds good.
+assistant: Do you want to reserve a table?
+user: No thank you.
+assistant: Can I assist you with something else?
+user: Can you reserve me a car to pick up from Orly International Airport?
+assistant: Sure. Can you give me the following information: do you want a SUV, Sedan or something else? What will be your pick up and drop off dates?
+user: I would like a Hatchback. I need it from the 10th until March 13th.
+assistant: What will be your pick up time? Would you like to add insurance?
+user: I don't need insurance and I will be picking the car up at 10:30.
+assistant: Confirming that you will be picking up a Hatchback rental car on March 10th from the Orly International Airport. You will pick up at 10:30 am. You will be dropping the car off at March 13th. You do not need insurance. Is this information correct?
+user: Yes, that sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car.
+user: Can you share the location of Orly International Airport with Matthew?
+assistant: Confirming that you want to share the location Orly International Airport with Matthew?
+user: Yes, that sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: Location successfully shared.
+user: Thanks. You've been helpful. That's all for now.
+assistant: You're welcome. Have a nice day!

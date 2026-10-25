@@ -1,0 +1,34 @@
+user: i am looking for some horror movies online similar to dean norris
+tool(FindMovies): ok n_results=1
+assistant: there is 1 movie similar to your taste. what do you think of scary stories to tell in the dark
+user: scary stories sounds like a good movie
+assistant: would you like me to play the movIE
+user: maybe play later but not right now
+assistant: what else can i do for you
+user: can you find me some attractions? i want some child friendly attractions in phoenix
+tool(FindAttractions): ok n_results=10
+assistant: there are 10 attractions that you may like, what about a museum called arizona capitol museum?
+user: nice, what else can you find? i am looking for something that is 0 entry fee
+tool(FindAttractions): ok n_results=4
+assistant: there are 4 attraction with no entry fee. what about a museum called arizona science center
+user: perfect! now, can you find me a song
+tool(LookupMusic): ok n_results=10
+assistant: i found 10 songs you may like. what about praying by kesha in her album rainbow
+user: this is the one, please play it on the speaker outside
+assistant: please confirm to play praying in patio
+user: yes please. did this song come out in '18
+tool(PlayMedia): ok n_results=1
+assistant: please enjoy, this is from 2017
+user: thank you so much
+assistant: what else can i do for you
+user: can you play the movie now
+assistant: please confirm to play the movie scary stories to tell in the dark with english subtitles
+user: no i want this in hindi subtitles
+assistant: please confirm to play scary stories to tell in the dark in hindi subtitles
+user: yes, please go ahead
+tool(PlayMovie): ok n_results=1
+assistant: move is playing now
+user: than you very much
+assistant: what else can i do for you
+user: no this is it
+assistant: have a nice day

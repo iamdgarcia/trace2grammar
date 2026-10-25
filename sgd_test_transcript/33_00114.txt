@@ -1,0 +1,18 @@
+user: Can you find me an attraction to visit in New York, maybe a park of something child-friendly?
+tool(FindAttractions): ok n_results=10
+assistant: Sure, I found 10 places including a park called Alley Pond Park that fits
+user: Cool, what else is there? Maybe a nice historical spot with free entry
+tool(FindAttractions): ok n_results=6
+assistant: How about the Empire State Building, it's a wonderful Historical Landmark
+user: OK, great, now find me a house to stay in
+tool(SearchHouse): ok n_results=10
+assistant: How about this place at 100 Greenwich Street with a 4.4 rating
+user: That's great, now find me a round trip flight there
+assistant: Where are you leaving from? And when do you want to travel back and forth
+user: I want to leave next Monday and come back on March 13th. I need 3 tickets from Atlanta
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I found 4 flights that work including an American Airlines flight that leaves at 10:30 pm and is a connected flight and has a 7:10 am return flight for $256
+user: Sure that's good
+assistant: What else can I do you for?
+user: That's it for now, bye!
+assistant: OK, see you!

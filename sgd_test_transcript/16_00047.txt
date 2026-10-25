@@ -1,0 +1,40 @@
+user: I need some help finding a hair dresser to get my hair cut, please.
+assistant: In what geographic area would you like me to find salons?
+user: I'm hoping to locate a place in Cupertino that's unisex, actually.
+tool(FindProvider): ok n_results=6
+assistant: There are 6 salons in the Cupertino area. One that you may find suitable is Great Clips.
+user: Sure, that works for me.
+assistant: Would you like me to schedule a visit for you to this location?
+user: Not right this second, thanks.
+assistant: Is there something additional I can assist you with?
+user: Sure. I do also need to locate a therapist in the Cupertino area.
+assistant: Are you looking for a particular specialty?
+user: Yes. I'm interested in finding a Psychologist.
+tool(FindProvider): ok n_results=1
+assistant: There is a Psychologist in Cupertino that may work for your needs. They are called Center for Learning.
+user: That works. I want to go ahead and schedule a visit for 4:15 pm.
+assistant: Sure, and om what date at 4:15 pm?
+user: I would like to go in on the 12th of this month if they have availability.
+assistant: Just to be sure, you'd like to schedule your visit to the Center for Learning for March 12th at 4:15 pm, right?
+user: Perfect, that's it.
+tool(BookAppointment): ok n_results=1
+assistant: Unfortunately, I was not able to schedule that visit. Would you like my assistance with anything further?
+user: Yes please. I'd like to try for an alternate appointment on the 3rd of this month at afternoon 12:15.
+assistant: Okay, so you want to try to schedule a visit for March 3rd at 12:15 pm with Center For Learning, is that right?
+user: Excellent. That's right. Can you also give me their exact location as well as a contact number?
+tool(BookAppointment): ok n_results=1
+assistant: They are located at 20823 Stevens Creek Boulevard # C3 and they can be reached at 408-973-9332. Unfortunately, that visit to Center For Learning could not be scheduled for the date and time requested. Would you like to try for March 3rd at 12 pm?
+user: Sure, let's try that.
+tool(BookAppointment): ok n_results=1
+assistant: Your visit has been scheduled and an email will be sent shortly to confirm the details.
+user: Great. Now I'd like to also schedule a visit to the hairdresser that you found earlier for 5 o'clock in the evening.
+assistant: You want to schedule a visit to Great Clips for March 3rd at 5 pm. Is this right?
+user: Sure thing. That works for me.
+tool(BookAppointment): ok n_results=1
+assistant: That visit has been successfully scheduled for the date and time requested.
+user: Can you also give me a phone number for the location?
+assistant: They can be reached at 510-243-0808
+user: Great. Thank you for your help.
+assistant: Do you need anything further?
+user: No, all set. Thanks.
+assistant: Enjoy your day.

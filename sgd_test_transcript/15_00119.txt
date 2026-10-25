@@ -1,0 +1,30 @@
+user: I'm looking for a salon.
+assistant: What city do you want to search in?
+user: I want a salon in Walnut Creek.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons for you. What about Blow Dry Bar in Walnut Creek?
+user: That sounds good.
+assistant: Do you want to make an appointment?
+user: Not right now. I'd like to find a Psychologist in Walnut Creek.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 therapists you may like. There is the Psychologist Alvarez Scott in Walnut Creek.
+user: Okay, thanks.
+assistant: Do you want to make an appointment here?
+user: Yes, I do.
+assistant: What time do you want it for?
+user: I want it for 12:30 in the afternoon.
+assistant: What date do you want it on?
+user: Can you check if the 13th of March is open?
+assistant: Okay, you want to make appointment with Alvarez Scott on March 13th at 12:30 pm, right?
+user: No, I want it for the 12th of March.
+assistant: Okay, you'd like the appointment for March 12th at 12:30 pm, correct?
+user: Yes, that is right. What is their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed the appointment and you will get an email shortly. Their phone number is 925-274-1881 and address is 43 Quail Court.
+user: Thank you! I would also like to make an appointment at that salon on that day at quarter past 2 in the afternoon.
+assistant: Okay, you want an appointment at Blow Dry Bar on March 12th at 2:15 pm, right?
+user: Yes, that works.
+tool(BookAppointment): ok n_results=1
+assistant: I have confirmed the appointment.
+user: Thank you! That is all I needed.
+assistant: Have a great day.

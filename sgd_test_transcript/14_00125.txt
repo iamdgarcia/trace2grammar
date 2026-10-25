@@ -1,0 +1,19 @@
+user: I need to search for songs now and I love pop ones. Please find me something from seven years ago maybe the album Halcyon because it is great.
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song. What are your thoughts on Burn by Ellie Goulding from the album Halcyon?
+user: Yes, that is one for me. Do you see some good movies online?
+assistant: What genre of movies do you like?
+user: A dramatic story movie would be good.
+tool(FindMovies): ok n_results=10
+assistant: Would you like A Faithful Man, After the Wedding, or Blinded by the Light?
+user: A Faithful Man is good.
+assistant: Would you want to play the movie?
+user: No, I don't wish to now but can you play the song you just found?
+assistant: Please confirm the details for the playing the song Burn in Living Room.
+user: No, please cast it on patio device.
+assistant: Please confirm details about playing the song Burn in Patio.
+user: Yes, that is the one.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy the music.
+user: Thanks so much. That is it.
+assistant: Have a nice day.

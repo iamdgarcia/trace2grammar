@@ -1,0 +1,26 @@
+user: Can you find some place to live?
+assistant: Number of baths you want?
+user: There should be 2 baths.
+assistant: Number of bed rooms you need in the property?
+user: There should be three bed rooms.
+assistant: Which type of property you want? rent or buy and which is the area of your choice?
+user: I want a house for rent in SFO.
+tool(FindHomeByArea): ok n_results=4
+assistant: I have selected 4 beautiful houses of your choice. One among them is at 201 Harrison Street called Baycrest with cost of $3,550.
+user: Do you know any other property? I want to buy the property and there should be in-unit laundry facility.
+tool(FindHomeByArea): ok n_results=3
+assistant: There is a nice property at 900 Chestnut Street # 102 called Chestnut Place with cost of $3,350,000
+user: Can i know the telephone number and is there a garage?
+assistant: No, there don't have garage and the number is 415-441-5668
+user: This is cool..I like to visit this property.
+assistant: On which date you want to visit?
+user: I like to visit on the 14th.
+assistant: Please give confirmation details: Your visit to the property called Chestnut Place on march 14th.
+user: This is perfect.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your property visit is confirmed.
+user: I want you to show my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: There is a alarm called Piano time for 5 pm.
+user: This is cool. This much is okay..
+assistant: Thanks a lot.

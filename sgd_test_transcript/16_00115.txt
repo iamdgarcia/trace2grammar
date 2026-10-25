@@ -1,0 +1,34 @@
+user: I need a unisex in Pleasanton.
+tool(FindProvider): ok n_results=7
+assistant: Cosmo's Barber shop in Pleasanton is nice.
+user: Sounds good thank you.
+assistant: Should I make you an appointment?
+user: No I don't want to book it now. Could you share the location please?
+assistant: With whom do you want to share?
+user: Please share with Christina.
+assistant: Do you want to share 4275 First Street?
+user: Yes please share it.
+assistant: You want to share 4275 First Street with Christina, is that correct?
+user: No please share the German Spy Museum address with Donna.
+assistant: You want to share German Spy Museum with Donna, correct?
+user: Yes that's correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location was shared successfully.
+user: Thanks, can you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There is a 9 am alarm named Call.
+user: Great thank you.
+assistant: Do you want to add a new one?
+user: Yes let's do that.
+assistant: What time would you like added?
+user: I need one for evening 4:45..
+assistant: You want a new alarm created at 4:45 pm, correct?
+user: No please set it for 15:30.
+assistant: You want an alarm at 3:30 pm called new alarm?
+user: YEs that is right.
+tool(AddAlarm): ok n_results=1
+assistant: You alarm has been added.
+user: Thanks very much.
+assistant: Anything else I can do for you?
+user: No, thank you very much.
+assistant: THanks, have a great day.

@@ -1,0 +1,16 @@
+user: Help me please to find a bus that leave on 3rd of March.
+assistant: Tell me from where are you leaving from?
+user: From Long Beach I plan to leave.
+assistant: Where you want to go?
+user: In SFO I want to go.
+tool(FindBus): ok n_results=7
+assistant: I have 7 buses for you.What do you think about one that depart at 6:20 am and cost $48.
+user: Sounds very good buy for me 3 tickets.
+assistant: You want on the bus that go from Long Beach to San Francisco 3 tickets on March 3rd at 6:20 am.Is that correct?
+user: Yes is very good.
+tool(BuyBusTicket): ok n_results=1
+assistant: Tickets are purchased.
+user: Tell me if is a direct bus and at which station arrive.
+assistant: This is a direct bus and arrive at Transbay Terminal.
+user: Thanks for your help.That's all.
+assistant: Have a good day!

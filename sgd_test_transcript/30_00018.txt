@@ -1,0 +1,27 @@
+user: Get me tickets to see Toto.
+assistant: How many tickets do you want and in what city?
+user: I need three tickets near Philly on the 2nd of March.
+assistant: You want 3 tickets to see Toto in Philadelphia on March 2nd, correct?
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are booked. Have fun!
+user: Can you find me buses to get that leave on the 1st?
+assistant: What city are you departing?
+user: I will be departing New York City.
+tool(FindBus): ok n_results=7
+assistant: There is a bus leaving at 7:40 am with a cost of $26.
+user: What is the departing station?
+assistant: Penn Station is the departing station.
+user: What is the arrival station and does it only have one-stop?
+assistant: The arrival station is 10th and Filbert and it is a direct bus.
+user: That is perfect.
+assistant: Shall I get you bus tickets?
+user: Yes, book a reservation.
+assistant: You want 3 bus tickets on March 1st with a departing time of 7:40 am from New York that goes to Philadelphia, correct?
+user: That is right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are booked.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, that is all. Thanks.
+assistant: Have a good day.

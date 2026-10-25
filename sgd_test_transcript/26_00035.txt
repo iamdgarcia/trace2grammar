@@ -1,0 +1,26 @@
+user: Please help me to find a full circle flight.
+assistant: I would be happy to assist. First I need to know the travel dates and the locations.
+user: The trip will be to ATL from LA. The 3rd of this month is my preferred day of travel.
+assistant: When are you hoping to catch the flight coming back?
+user: The 10th of March will be my date to come back.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I have populate 4 suitable options. One is with American Airlines if that company is one you like. The itinerary states you would leave at 3:05 pm and come back at 7:25 am. This choice has no stops and costs $298.
+user: I see. Will you also assist me in finding a house at the location.
+tool(SearchHouse): ok n_results=10
+assistant: Of course. 10 are showing up in my search. One home, with a rating of 4.3, is located at 101 Andrew Young International Boulevard Northwest.
+user: I like that home.
+assistant: I am able to reserve the home for you if you like.
+user: That is a great idea. Please make a reservation.
+assistant: I need more details.How many people will be in your party? Will the reservation begin March 3rd?
+user: The reservation should begin on March 4th. There will be 4 of us staying.
+assistant: Will you need the reservation until March 10th or an alternate date?
+user: I would like the reservation to be until the 9th please.
+assistant: I am under the impression the reservation will be for 4 . You would like to start the reservation in Atlanta on March 4th and end the reservation on March 9th. Am I right?
+user: That is exactly what I want, thanks.
+tool(BookHouse): ok n_results=1
+assistant: The home is booked in your name.
+user: That's a load off my shoulders. Are there any fun happenings in the area?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 interesting things to do. I would suggest going to Al-Farooq Masjid, a Place of Worship.
+user: Nice. I will check back with you later. Bye.
+assistant: Until we chat again.

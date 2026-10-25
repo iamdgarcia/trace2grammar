@@ -1,0 +1,16 @@
+user: Could you find me a rental car, preferably a Sedan, for pick up at 18:30 in Cape Town?
+assistant: How long would you like to keep the car?
+user: I'd like to keep it until 14th of March.
+assistant: What date would you to begin renting the car?
+user: I'd like to rent the car starting the 10th of this month.
+tool(GetCarsAvailable): ok n_results=2
+assistant: I found 2 cars that might interest you. One is a Sedan of SEAT Cordoba, available for pickup at Cape Town International Airport.
+user: I like that. Please reserve the car.
+assistant: Would you like to add insurance?
+user: No, insurance won't be necessary.
+assistant: Please confirm that you'd like to pick a Sedan car, that doesn't include insurance, from Cape Town International Airport on March 10th at 6:30 pm and drop it off on March 14th.
+user: Yes, that's correct. What's the daily cost?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car. The daily cost is $31.00.
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Have yourself a great day!

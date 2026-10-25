@@ -1,0 +1,35 @@
+user: Would you kindly help me to find some online comic movies?
+tool(FindMovies): ok n_results=5
+assistant: I have short listed 5 movies of your choice like Chhichhore, Good Boys or my Big Fat Greek Wedding?
+user: The Movie My Big Fat Greek Wedding is good. I want you to search some attractions there?
+assistant: Which place you want the attractions in?
+user: I want attractions in Paris, France.
+tool(FindAttractions): ok n_results=10
+assistant: There is a attraction called American Church in Paris which is a place of worship.
+user: Fine..any other attractions you know?
+assistant: There is a attraction called Arab World Institute which is a Performing Arts Venue.
+user: Is it a place of child-friendly and can i know the phone number?
+assistant: I think this place is not good for kids and the contact number is 1 40 51 38 38.
+user: Fine..can you search some songs for me now which is very popular.
+tool(LookupMusic): ok n_results=10
+assistant: What is your opinion about the song Acapella from the album Pulses by Karmin?
+user: Did this song released eight years ago?
+assistant: This song is from the year 2013.
+user: Any thing else you want?
+assistant: What is your opinion about the song African Beauty from the album A boy from Tandale by Diamond Platnumz.
+user: Is this song released in the year 2013?
+assistant: This song is from the year 2018.
+user: Anything else you want?
+assistant: What is your opinion about the song Airplane Mode from the album Holo by Limbo.
+user: okay this one i want. Play the song in kitchen.
+assistant: Please give confirmation details: Running the song Airplane Mode in kitchen.
+user: Okay..fine..Is this song is from the year 2013?
+tool(PlayMedia): ok n_results=1
+assistant: Have fun with this music. This song is from 2017.
+user: Thanks a lot. I want you to play the movie you found and any subtitles is okay.
+assistant: Please give confirmation details: Running the Movie My Big Fat Greek Wedding with subtitles in English.
+user: Okay...this is fine..
+tool(PlayMovie): ok n_results=1
+assistant: Your movie started playing now.
+user: Thank you..this much is okay for now..
+assistant: Have a good day..

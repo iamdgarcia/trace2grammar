@@ -1,0 +1,15 @@
+user: I am looking for a place with four bedrooms and three baths.
+assistant: Which area are you looking for the property? And Are you looking to buy or rent it?
+user: I am looking for a property in Campbell to rent.
+tool(FindHomeByArea): ok n_results=4
+assistant: There are 4 houses that you may like. How about Appletree Apartments located at 831 Gale Drive with the total cost of $5,100?
+user: That sounds nice to me. I would like to schedule a visit to the property on the 13th.
+assistant: Please confirm: You want me to schedule a visit to Appletree Apartments on March 13th.
+user: Yes, That sounds great. Can you confirm whether the property has laundry and garage?
+tool(ScheduleVisit): ok n_results=1
+assistant: I have successfully scheduled the visit and the property does not have a garage and laundry machines.
+user: I would like to see my alarms.
+tool(GetAlarms): ok n_results=2
+assistant: There are currently 2 alarms. One is at 9 am with name as Wake up.
+user: Okay. That is all I need for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

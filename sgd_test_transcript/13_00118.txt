@@ -1,0 +1,19 @@
+user: I'm looking for an online movie?
+assistant: What type of movie?
+user: I'm looking for a mysterious movie.
+tool(FindMovies): ok n_results=2
+assistant: Luce and Official Secrets are 2 options.
+user: Please play Luce with or without subtitles.
+assistant: Please confirm you want me to play Luce with English subtitles.
+user: Actually, please play it with Hindi subtitles.
+assistant: Please confirm you want me to play Luce with Hindi subtitles.
+user: Thanks. Who acted in it.
+tool(PlayMovie): ok n_results=1
+assistant: Christopher Mann was an actor in the movie. The movie has started.
+user: Thank you. What's the weather like?
+assistant: In which city?
+user: In Milpitas, please?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 73 degrees Fahrenheit with a 28 percent chance of rain.
+user: That's all. Bye.
+assistant: Okay. Thank you and Goodbye.

@@ -1,0 +1,19 @@
+user: I'll be in LAX on March 10th. Please find me interesting Music events happening then.
+tool(FindEvents): ok n_results=10
+assistant: Sure. Ain Gordon will be playing at Ralph Freud Playhouse on March 10th at 7:30 pm.
+user: Very cool! Go ahead and search for hotels around there too.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel known as Ac Hotel By Marriott Beverly Hills.
+user: Please look for other hotels meeting my requirements.
+assistant: Okay. How abou the 3 star rated Airtel Plaza Hotel?
+user: Let me have the contact number and location, please.
+assistant: They are located at 7277 Valjean Avenue, Van Nuys, California 91406, United States, and you can reach them on +1 818-997-7676.
+user: Very cool!
+assistant: Should I go ahead and reserve the hotel?
+user: Let's not make any reservations right away. Instead, please buy me two tickets for the event you found earlier.
+assistant: Sure. Let me see if I got everything correctly: You'd like to book 2 tickets for the March 10th Ain Gordon event in Los Angeles. Is that correct?
+user: That is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy your time there!
+user: Thank you very much. You've been very helpful. That will be all.
+assistant: Have a wonderful day!

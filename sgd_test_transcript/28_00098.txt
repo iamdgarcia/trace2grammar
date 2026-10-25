@@ -1,0 +1,43 @@
+user: Is there an attraction I can visit you can recommend?
+assistant: What city are you looking in for attractions?
+user: SF, so anything interesting you can find?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions that may interest you, how about Alcatraz a historical landmark?
+user: Sounds cool, anything else you can find?
+assistant: There is also Alcatraz Island, also a historical landmark.
+user: That works, could you find me a car to rent there?
+assistant: At what time and date will you pick up the car and on what date will you drop it off?
+user: The car will be picked up on March 6th at afternoon 3, and I will need it till Thursday next week.
+assistant: Is the car rental going to be picked up in San Francisco.
+user: That is correct, did you find anything?
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available, how about a sedan from Salesforce Transit Center, it is an Audi A8.
+user: What will it cost to rent it per day?
+assistant: The car will cost $32.00 per day to rent.
+user: Anything else you can find, a hatchback sounds nice.
+tool(GetCarsAvailable): ok n_results=6
+assistant: A hatchback is available at SFO International Airport, interested in a Fiat Panda?
+user: Whats that going to cost per day?
+assistant: This car costs $30.00 per day.
+user: That car sounds good, please reserve it for me.
+assistant: Would you like to add insurance?
+user: No thanks, don't need it.
+assistant: You will pick up a hatchback from SFO International Airport on March 6th at 3 pm, the drop off date is March 7th, was that all correct?
+user: On second thought, add insurance to the rental.
+assistant: The car rental will include insurance, drop off date is till March 7th.
+user: That sounds good, thanks for helping me out.
+tool(ReserveCar): ok n_results=1
+assistant: The car was successfully reserved.
+user: Thank you for the help, also share the location for me?
+assistant: To whom and which location will you share with somebody, Alcatraz Island or SFO International Airport?
+user: Share SFO International Airport with Denise so she knows where it is.
+assistant: You will now share the location of SFO International Airport with Denise.
+user: Actually, share the location of Madison Square Park with Denise.
+assistant: Understood, Denise will receive the location of Madison Square Park.
+user: That is correct, thanks.
+tool(ShareLocation): ok n_results=1
+assistant: The location has been successfully shared with Denise.
+user: You've been pretty helpful today, I really appreciate it.
+assistant: Any other way I can be of help for you today?
+user: Not at the moment, I am all set for now, thanks.
+assistant: Your welcome, hope you enjoy the rest of your day.

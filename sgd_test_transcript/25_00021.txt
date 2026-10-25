@@ -1,0 +1,17 @@
+user: I have to look for Comedy movies to watch
+assistant: Where is your place?
+user: Would you help me look for movies in Dublin?
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion on Good Boys?
+user: Good Boys is fine and can you also search for songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: I have short listed 10 songs of your liking and what is your opinion on One Last Time by Ariana Grande from the album My Everything
+user: That is perfect
+assistant: Is there any other help from me?
+user: I need to hear to this song and play it in any device
+assistant: Please confirm the following details: To play the song One Last Time in Living Room
+user: Perfect.Was it released two years ago? what kind of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: This pop song was released in the year 2014
+user: Thanks a lot
+assistant: Have a wonderful day

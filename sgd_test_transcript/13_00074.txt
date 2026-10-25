@@ -1,0 +1,14 @@
+user: I wanna see a thriller movie, maybe something directed with Riley Stearns and starring Steve Terada
+tool(FindMovies): ok n_results=1
+assistant: How about The Art of Self-Defense which has an 83 rating, you might like that
+user: That sounds good then
+assistant: What else can I do for you?
+user: Can you find me something fun to do?
+assistant: What kind of thing or event? And where at?
+user: I wanna watch Theater, maybe in Portland, OR
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events including the Annual School Performance at Newmark Theatre which starts at 5 pm on March 2nd
+user: I like that
+assistant: Do you want tickets then?
+user: For now, no thanks, that's it
+assistant: OK then, see ya later

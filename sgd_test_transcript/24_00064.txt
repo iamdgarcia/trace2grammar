@@ -1,0 +1,19 @@
+user: I'm after a Play movie in San Ramon, just a regular show.
+tool(FindMovies): ok n_results=2
+assistant: You could try Hustlers or The Art of racing in the Rain.
+user: Hustlers sounds good. I'd like to eat out nearby. Can you book a table at Izzy's Steaks in the evening 5:45 on the 4th of this month?
+assistant: Confirming you want to book a table for 2 at Izzy's Steaks & chops in San Ramon at 5:45 pm on March 4th.
+user: Actually can you make it for three people and change the time to 11 in the morning.
+assistant: Confirming you want to change the reservation time to 11 am and make the booking for 3 people.
+user: Actually, can you change the restaurant to Senro and make the booking for the 5th?
+assistant: Okay, confirming you want to book at Senro Sushi on March 5th.
+user: Yes thank you. Is it vegetarian friendly?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation was a success. There are no vegetarian option on the menu.
+user: Thank you. Can you find a movie session on that day?
+tool(GetTimesForMovie): ok n_results=1
+assistant: I have 1 option, at the regal Crow canyon at 10:30 pm.
+user: What are ticket prices and where are they?
+assistant: They are located at 2525 San Ramon Valley boulevard. Tickets are $10 for adults.
+user: Okay thank you.
+assistant: Have a nice day.

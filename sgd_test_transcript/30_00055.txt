@@ -1,0 +1,25 @@
+user: I want to have a ticket booked for an event.
+assistant: Can you tell me the event which you want to attend? Also could you tell me the date that you want to attend the event?
+user: It will be possible for me to go on the 10th. Some people told me that Teatro Intimo Del Flamenco is a nice one.
+assistant: Can you tell me the number of tickets you want to have, and also the city where I should look for the event?
+user: I am in need of having 4 tickets, and the event should be found in Vancouver, BC.
+assistant: Can you please confirm that you want to have 4 tickets for the Teatro Intimo Del Flamenco which will happen in Vancouver on March 10th.
+user: Alright, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested tickets have been booked, enjoy your time there!
+user: I appreciate your help very much.
+assistant: Is there something else I can help you with today?
+user: Can you tell me about direct buses which go there? I will be leaving for the trip on the 10th from Portland, OR.
+tool(FindBus): ok n_results=7
+assistant: How would you like having the bus which leaves at 7:10 am, and the ticket of which costs $37.
+user: Can you tell me the station where the bus will arrive at, and from which station it will leave from?
+assistant: The destination station of the bus is Pacific Central Station, and the station from which it leaves is SW Arthur & 1st.
+user: That seems good.
+assistant: Are you willing to have tickets bought for this bus?
+user: Yes I want to have a seat booked for me in this bus.
+assistant: Can you please confirm that you want to have tickets for 4 people without extra luggage for the bus which leaves from Portland on March 10th at 7:10 am to go to Vancouver.
+user: That is what I wanted.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested tickets have been successfully booked for you.
+user: I am grateful for the help you provided. That would be all.
+assistant: Have a good time!

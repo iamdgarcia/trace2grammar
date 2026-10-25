@@ -1,0 +1,30 @@
+user: I would like to make a payment.
+assistant: What account would you like your payment from and who is receiving the payment?
+user: The payment is from my balance for $72 to Amelia.
+assistant: Sending $72 to Amelia from your app balance.
+user: Yes, that is correct.
+tool(MakePayment): ok n_results=1
+assistant: Your payment was made.
+user: Can you find me a train?
+assistant: Where are you traveling and when are you leaving?
+user: I'm looking for tickets from Sacramento to Fresno on the 13th.
+tool(FindTrains): ok n_results=7
+assistant: There is a train leaving at 8 am for $70.
+user: How is the weather there on March 14th in Fresno?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 84 degrees and there is a 2 percent chance of rain.
+user: How humid is the day going to be?
+assistant: There is a 16 percent humidity level.
+user: How windy is the day going to be?
+assistant: The wind will be around 3 miles per hour.
+user: Can you purchase tickets for the train previously found.
+assistant: Yes, how many tickets would you like? Do you want a travel insurance?
+user: I would like a trip insurance and I need one ticket.
+assistant: Booking 1 value ticket from Sacramento to Fresno on March 13th leaving at 8 am.
+user: Which station does the train leave from and arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: The train leaves from Sacramento Valley Station and arrives at Fresno Station.
+user: Thank you for the information.
+assistant: Can I help with anything else?
+user: No, that is all I needed.
+assistant: Have a good day.

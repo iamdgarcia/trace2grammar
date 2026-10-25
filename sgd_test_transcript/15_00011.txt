@@ -1,0 +1,21 @@
+user: I am in need of finding a place to live which has one bedroom.
+assistant: Can you tell me the area where you want to find the place, and the number of bathrooms you want it to have?
+user: The property I am looking for should have one bathroom and it should be in Foster City.
+assistant: Are you interested to rent or to buy this place?
+user: I want to rent the house.
+tool(FindHomeByArea): ok n_results=2
+assistant: There are 2 good houses matching what you asked for. One of the good houses which can be found at 1288 East Hillsdale Boulevard is Miramar Apartments and it will be costing you $2,000.
+user: Can you check if it has a garage, and whether there are laundry machines in it?
+assistant: The house doesn't have a garage, and unfortunately it doesn't have laundry machines either.
+user: Anyway seems nice. I would like to book a visit for this house on 1st of March.
+assistant: Can you please confirm that you want to book a visit for the Miramar Apartments on March 1st?
+user: That is not right, because I want to have the visit on the 13th.
+assistant: Can you please confirm that you want to make a visit to Miramar Apartments on March 13th?
+user: Yes, that is what I want. What phone number can I use to contact them?
+tool(ScheduleVisit): ok n_results=1
+assistant: Your requested visit has been booked. If you want to call them you can at 844-334-0618.
+user: I appreciate it very much. Can you tell me about the alarms I have set?
+tool(GetAlarms): ok n_results=1
+assistant: There is 1 alarm which is set for you, and it is set for 4 pm, and it is titled Dentist.
+user: Alright that is nice. That's all I needed.
+assistant: Thank you too.

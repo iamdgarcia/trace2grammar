@@ -1,0 +1,33 @@
+user: I'm in the mood for some good music. Find me a few songs please.
+tool(LookupMusic): ok n_results=10
+assistant: The Album Double Vision features a song called Back It UP by Prince Royce. Would you like to hear it?
+user: You got a good one on the first try. That's the one I wanted to hear.
+assistant: Do you want me to begin playing this song now?
+user: Not right now. I'll listen to it later.
+assistant: If not that, what else can I help you with?
+user: How about a good movie instead? Are there any online?
+assistant: Sure. What kind of movie are you in the mood for?
+user: An Anime movie would be just what I want to see right now.
+tool(FindMovies): ok n_results=1
+assistant: Would you like to view the anime movie Paprika?
+user: No thanks. I don't want to see that right now. A family movie featuring Tzi Ma would be more specific to what I want.
+tool(FindMovies): ok n_results=1
+assistant: I have found 1 movie fitting that requirement. It is a movie called The Farewell.
+user: Farewell sounds like a lovely time. That's perfect.
+assistant: I can play that movie for you right now if you want.
+user: No no. Sorry I didn't mean right this minute.
+assistant: Is there anything else I can assist you with?
+user: How about playing the song you found for me earlier?
+assistant: Would you like me to play Back It Up in the Living room?
+user: Yeah start it up for me. What kind of music is Back It Up exactly?
+tool(PlayMedia): ok n_results=1
+assistant: It is a Pop song. Please enjoy your song.
+user: Show me my current alarms that are set.
+tool(GetAlarms): ok n_results=4
+assistant: There is an alarm set for 7 am with the title Gym.
+user: Okay. Thanks for the reminder.
+assistant: Would you like me to add an alarm?
+user: No, I don't want any new alarms. Just wanted to know about the ones already set.
+assistant: Alright. What else can I help you with today?
+user: Nothing else for now. Thanks a bunch for your help.
+assistant: Thank you for allowing me to help. Farewell.

@@ -1,0 +1,23 @@
+user: Can you please help me search for rental cars available through the 5th of this month. I think a Hatchback would be cool.
+assistant: And on which date are you looking to have the rental begin? Is there a specific pick up time that you have in mind? And location you hope to get the rental from?
+user: I would like to have the car from the 3rd at 3 in the afternoon. Also, the location I'd like is Atlanta, GA.
+tool(GetCarsAvailable): ok n_results=5
+assistant: 5 cars match your search criteria. How about a lovely Hatchback Fiat Panda with pick up at Hartsfield-Jackson International Airport?
+user: Great, that works. Can you also help me search for places to stay while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: So far, I've got 10 houses that you may be interested in. One such home has a 4.3 rating and the address is 101 Andrew Young International Boulevard Northwest.
+user: Are there laundry facilities at this house? Also, what is their phone number?
+assistant: Yes, laundry facilities are located on premises. They can be reached at +1 404-524-5555.
+user: Perfect. This one is excellent!
+assistant: Are you looking to book this home now?
+user: Not at this time,thanks.
+assistant: Do you need any further assistance?
+user: Yes, I'd like to go ahead and book the car that you mentioned.
+assistant: Should I include insurance on that rental?
+user: No thanks, that's not necessary.
+assistant: So you would like to reserve the Hatchback available for pick up at Hartsfield-Jackson International Airport for March 3rd at 3 pm, with a return date of March 5th. And you do not want insurance. Is this correct?
+user: Perfect! Can you tell me the price per day for this?
+tool(ReserveCar): ok n_results=1
+assistant: That reservation has been confirmed at a price of $32.00 a day.
+user: Great, that's all for me. Thanks so much!
+assistant: Take care

@@ -1,0 +1,24 @@
+user: I need your help finding a one way flight. I only need one ticket and I would like it to be an economy ticket.
+assistant: I can help you with that but first i'll need to know a few things. Where would you like to go, from which city would you like to depart from, and on which date would you like to trave?
+user: I want to travel on the 4th to Chi-town from NYC.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Would you be interested in an American Airlines flight that takes off at 11:20 am with a ticket price of $180? The flight also has a layover.
+user: That is fine. I'll keep it in mind but I want to check out the options for trains as well.
+assistant: Would you still like to leave on March 4th?
+user: No, on Tuesday next week.
+tool(FindTrains): ok n_results=6
+assistant: There are 6 trains that meet your criteria. How about a train that departs at 6 am and costs $122?
+user: What else is there? I want a ticket for the 4th and anything will work I don't care about the fare class.
+tool(FindTrains): ok n_results=5
+assistant: There are 5 trains that could work for you. How about one that departs at 6:10 am and costs $114?
+user: That sounds great, not too expensive. I like a good train trip too.
+assistant: Would you like to purchase tickets?
+user: Yes let me buy a ticket. Get me trip insurance too.
+assistant: You would like 1 value ticket for a train from New York to Chicago on March 4th at 6:10 am. Is that correct?
+user: Yes that is correct. Can you tell which station the train leaves from?
+tool(GetTrainTickets): ok n_results=1
+assistant: The ticket has been purchased. The train will leave from Grand Central Station.
+user: And which station will it arrive at?
+assistant: The train will arrive at the Chicago Union Station.
+user: Great. You were very helpful, thanks. That will be all.
+assistant: You're welcome. Good Bye.

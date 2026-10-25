@@ -1,0 +1,32 @@
+user: I need bus tickets.
+assistant: When do you plan to leave and at what time? Where would you leave from?
+user: I want to leave on the 12th, for 2 people from San Diego at 10 in the morning.
+assistant: What is the destination?
+user: I'm going to SFO.
+assistant: So, a ticket to San Diego to San Francisco on March 12th at 10 AM for 2 people.
+user: Yes, that is exact.
+tool(BuyBusTicket): ok n_results=0
+assistant: Sorry, but this purchase did not go through. Is there anything else?
+user: Um, try one more time from Long Beach, CA.
+assistant: So a bus ticket from Long Beach to San Francisco, on March 12th at 10 AM for 2 people.
+user: Yes, that works and how much is it for? How many stops?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is now confirmed and the cost is $47 with a direct bus.
+user: Is there a rental car there?
+assistant: Would you like it from March 12th and from San Francisco?
+user: Yes, that is good and from the 13th of this month.
+assistant: Until when would you like it?
+user: I need it until the 14th of this month?
+assistant: At what time would you like to pick up?
+user: I want it at afternoon 3.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice car from Salesforce Transit Center and is a Sedan Audi A8.
+user: Okay, I want that.
+assistant: Would you like insurance?
+user: No, I don't need that.
+assistant: So a car from Salesforce Transit Center on March 13th at 3 PM with a drop-off date of March 14th and is a Sedan car.
+user: Yes, how much is it per day?
+tool(ReserveCar): ok n_results=1
+assistant: It is $33.00 per day.
+user: Thanks for that; that is all.
+assistant: Of course. Enjoy.

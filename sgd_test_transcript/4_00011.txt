@@ -1,0 +1,20 @@
+user: I am looking for rental cars in Delhi.
+assistant: What is your expected date and time for your pick up and return of the car?
+user: I would like to pick up the car on 11th of this month at 1:30 pm and I will return it on the 12th.
+tool(GetCarsAvailable): ok n_results=8
+assistant: How about a nice Sedan of Buick Regal Sportback available for pick up at Indira Gandhi International Airport.
+user: Can you show some other options?
+assistant: How about a nice SUV of Citroen C5 available for pick up at Indira Gandhi International Airport.
+user: Can you show some other options?
+assistant: How about a nice Sedan of Lexus GS available for pick up at Indira Gandhi International Airport.
+user: What is the cost per day?
+assistant: The cost per day is $34.00.
+user: That sounds good. I would like to reserve this car.
+assistant: Would you like me to add an insurance?
+user: No. Don't add any insurance.
+assistant: Please confirm: You want me to reserve a Sedan car for pick up at Indira Gandhi International Airport on March 11th at 1:30 pm with the drop off date as March 12th.
+user: Yes, That is correct.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved the car foe you.
+user: Thank you so much! That will be all for now.
+assistant: I am glad I could help. Have a nice day!

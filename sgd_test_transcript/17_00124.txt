@@ -1,0 +1,19 @@
+user: I want to check weather on March 13th in Portland
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be 58 degree Fahrenheit and there is a 24 percent chance to rain
+user: OK get me one way flight to go there
+assistant: Are you leaving on March 13th
+user: I want to start my travel on the 10th
+assistant: Which city will you depart
+user: Make it from Vancouver
+tool(SearchOnewayFlight): ok n_results=1
+assistant: i found 1 American Airlines which dates of at 5:10 pm. and it has a layover cost $277
+user: Great can you find me a rental car there
+assistant: At what time you want it
+user: I will pick it up at 12 o'clock in the afternoon
+assistant: When do you want it from March 10th for March 13th or any other dates until when you need it
+user: I want it from March 11th till March 13th
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a good car at Portland bus station it is an SUV Alfa Romeo stelvio
+user: Sounds great that's all I need
+assistant: Have a nice day

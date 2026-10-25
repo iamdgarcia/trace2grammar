@@ -1,0 +1,41 @@
+user: I'd like to purchase tickets.
+assistant: What time would you like to depart?
+user: I'd like to depart at quarter past 7 in the morning.
+assistant: How many tickets would you like?
+user: Get me 3.
+assistant: Where are you leaving from and going? When will you leave?
+user: I'll leave on 14th of March from Sacramento to Anaheim.
+assistant: So you are going from Sacramento to Anaheim on March 14th at 7:15 am. You need 3 tickets. You will not be carrying extra luggage. Right?
+user: No, make that 3:45 in the afternoon. I would like to go to San Fran.
+assistant: So you want to go to San Francisco, is that right? The bus departs at 3:45 pm.
+user: Sounds about right. what station will I leave from? What station am I going to?
+tool(BuyBusTicket): ok n_results=1
+assistant: It will arrive at transbay Terminal. It leaves from 65th Light Rail station. I'm sorry, but the purchase did not go through. How about the 3:20 pm bus? That is $24.
+user: Sounds fantastic.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your booking was successfully made.
+user: Thank you for helping. Could you search for hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 suitable hotels. There's a hotel called Amsterdam Hostel San Francisco which is a 1 star hotel.
+user: Can I smoke there?
+assistant: No, you cannot smoke on the property.
+user: Do they have a phone number?
+assistant: Yes, the phone number is +1 415-673-3277.
+user: Do you have anything else at all that will fit my criteria? I need one room.
+tool(SearchHotel): ok n_results=10
+assistant: How about the 4 star Argonaut Hotel?
+user: That is perfect.
+assistant: Do you need help with anything else?
+user: Reserve the hotel from the 6th.
+assistant: How long will you stay?
+user: I will be there 7 days.
+assistant: So you would like to stay at The Argonaut Hotel on March 6th for 7 days. This hotel is in San Francisco and you need 1 room. Is this all correct?
+user: Okay, that's good.
+tool(ReserveHotel): ok n_results=1
+assistant: The booking was made.
+user: What is the nightly price?
+assistant: It's $208 per night.
+user: Thanks, that has been a great help.
+assistant: Shall I assist with anything further?
+user: No, that's good.
+assistant: Bye, have a great day.

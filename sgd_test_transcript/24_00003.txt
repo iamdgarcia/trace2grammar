@@ -1,0 +1,30 @@
+user: I need a one way flight.
+assistant: From which city to depart from?
+user: Depart from Philly.
+assistant: On which date and to where?
+user: I am flying from New York City tomorrow.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Would you like to fly with American Airlines at 1:20 PM? The ticket price is $68 and it is direct.
+user: No, I want Premium Economy seats.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 flight, such as with Delta Airlines and the flight takes off at 3 PM, with a ticket price of $83.
+user: Okay, I need trains.
+assistant: Would you like to begin travelling on March 2nd?
+user: I need tickets on March 10th.
+tool(FindTrains): ok n_results=8
+assistant: What about a train leaving at 10:40 AM with a ticket price of $46?
+user: At which station does it reach? Which station does it leave from?
+assistant: The train will reach at Grand Central Station and will leave from the 30th Street Station.
+user: Any other trains?
+assistant: There is one to depart at 10:50 AM and the ticket price is $49.
+user: That sounds good.
+assistant: Would you like to book tickets?
+user: Yes, I would like to make a reservation.
+assistant: How many tickets would you like and do you have any travel insurance?
+user: I want trip insurance for 1 seat.
+assistant: So, you would like a ticket on the train to depart from Philadelphia to New York. The train is to depart on March 10th and leaves at 10:50 AM, for 1 person. This has trip insurance and it is a Value ticket.
+user: Yes, that works.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been booked.
+user: You were very helpful. Thanks.
+assistant: Of course. Take care.

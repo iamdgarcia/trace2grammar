@@ -1,0 +1,23 @@
+user: Can you help me find a movie to watch?
+assistant: Where did you want to go watch this movie?
+user: I would like to find somewhere in Brentwood.
+tool(FindMovies): ok n_results=8
+assistant: Would you be interested in seeing Ad Astra, Good Boys or Hobbs and Shaw?
+user: No, what else do you have?
+assistant: How about Hustlers, IT Chapter Two or Overcomer?
+user: I would like to watch overcomer. Can you make me reservations at a restaraunt for 11:30 am?
+assistant: Do you have a restaraunt in mind?
+user: YEs, I would like a table at JAlisco's.
+assistant: Okay, that will be reservations for 2 on MArch 1st at 11:30 am at Jalisco's Restaurant in Brentwood?
+user: Yes, and can you tell me if they have out door seating and the customer satisfaction rating.
+tool(ReserveRestaurant): ok n_results=1
+assistant: They do not have out door seating at this time and the customer rating is 4.2. Your reservation is complete.
+user: Thank you. What time does the movie start?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime of 7:30 pm for AMC Brentwood 14.
+user: That will be great.
+assistant: Did you want me to reserve the tickets?
+user: No, that will be okay.
+assistant: Did you need anything else?
+user: No that will be all. Thank you.
+assistant: You are welcome, Bye bye.

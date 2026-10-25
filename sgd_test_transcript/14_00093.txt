@@ -1,0 +1,17 @@
+user: I fancy listening to some music.
+tool(LookupMusic): ok n_results=10
+assistant: There is a song called Rockabye by Caitlin De Ville and the album is called Covers Collection.
+user: Yes sounds good. Now I want to search for a movie online, something with a Dramatic story would be fab.
+tool(FindMovies): ok n_results=10
+assistant: What about A Faithful Man, Blinded by the Light or After the Wedding?
+user: After The Wedding is perfect. Now will you play the song you suggested previously?
+assistant: To confirm I will play Rockabye in the Living Room.
+user: Yes that is right.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song.
+user: When did it come out? 2010?
+assistant: It was 2018.
+user: thanks for that.
+assistant: Anything else I can assist you with?
+user: no thank you.
+assistant: have a lovely day.

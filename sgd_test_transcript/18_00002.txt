@@ -1,0 +1,20 @@
+user: Can you check the weather for me?
+assistant: Sure thing. Which city would you like to check?
+user: Can you tell me the weather in SFO?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 91 degrees fahrenheit with a 29 percent chance of rain.
+user: Cool, thanks for the info. Sounds like a nice day out there today. Can you help me find a one-way flight to the area?
+assistant: No problem. Will you be leaving March 1st? What city will you be departing from?
+user: I need 2 tickets for flights out of Philadelphia.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I've found a $259 dollar flight with American Airlines. The flight will be departing at 5:45 pm. Would you like to book a ticket?
+user: No, I'm really looking for something with United Airlines. I think they have the best flights.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: Okay, i've found a flight with United Airlines for you. The flight will depart at 1:55 pm and tickets will cost $296.
+user: Okay, sounds good to me. Can you also find a rental car for me as well? I will need it until Friday next week.
+assistant: Will you be picking the car up on March 1st? Also, what time would you like to pick up the vehicle?
+user: I'd like to pick it up on the 5th around 19:45.
+tool(GetCarsAvailable): ok n_results=7
+assistant: I've found 7 cars for you. How about a nice Sedan Audi A8? You can pick it up from the Salesforce Transit Center.
+user: Okay, that sounds good. Thanks. That's all for now.
+assistant: My pleasure. Have a good day.

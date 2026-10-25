@@ -1,0 +1,22 @@
+user: Can you help me find a bus?
+assistant: Where do you want to leave from and go to? When did you want to leave?
+user: I'm leaving on the 13th. I'm going from SF to Anaheim, CA.
+tool(FindBus): ok n_results=8
+assistant: I found one leaving at 7:20 am for $51.
+user: Maybe not so early. I just need 1 ticket.
+tool(FindBus): ok n_results=8
+assistant: There's another leaving at 8:50 am for $46.
+user: That sounds perfect.
+assistant: Shall I order you a ticket?
+user: Yes, please do.
+assistant: To verify: you want 1 ticket on the March 13th bus leaving at 8:50 am from San Francisco to Anaheim.
+user: Correct. Which station does it leave from??
+tool(BuyBusTicket): ok n_results=1
+assistant: It leaves from Transbay Terminal.
+user: Can you also check some hotels for me? A 1 star hotel is fine.
+tool(SearchHotel): ok n_results=2
+assistant: I found a 1 star hotel called Best Western Plus Pavilions.
+user: What is there address and phone number?
+assistant: It's 1176 West Katella Avenue and the number is +1 714-776-0140.
+user: Great, that's all I need for now.
+assistant: Have a great day.

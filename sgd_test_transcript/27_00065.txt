@@ -1,0 +1,30 @@
+user: I'd like to find some attractions.
+assistant: What location should I search in?
+user: Search for attractions in San Fran.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you might be interested in. How about a Historical Landmark like Alcatraz?
+user: Can you give me the phone number?
+assistant: You can contact them at 415-561-4900.
+user: Is this attraction child-friendly?
+assistant: Yes, it is a nice place to take children.
+user: Great! Can you find me a movie nearby?
+tool(FindMovies): ok n_results=10
+assistant: You might like Ad Astra, Brittany Runs a Marathon, or Fiddler: A Miracle of Miracles.
+user: Brittany Runs a Marathon sounds perfect.
+assistant: Do you want to buy tickets?
+user: No, not at this time.
+assistant: Is there anything else I can help you with?
+user: Can you find me some good Maisa Abd Elhadi movies online?
+assistant: What genre would you like to search?
+user: Exotic movies would be fine.
+tool(FindMovies): ok n_results=1
+assistant: How about Tel Aviv on Fire?
+user: Tel Aviv on Fire would be great.
+assistant: Would you like to watch the movie?
+user: Yes, please. Can you play it with English subtitles?
+assistant: Confirming that you want to watch Tel Aviv on Fire with English subtitles?
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing your movie.
+user: Thank you. That's all I need.
+assistant: You're welcome. Have a good day.

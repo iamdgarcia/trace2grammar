@@ -1,0 +1,32 @@
+user: I need to find a salon please.
+assistant: In which city should I search?
+user: I need to find one in Oakland.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons, one is 17 Jewels Salon in Oakland.
+user: What is it's average rating?
+assistant: It is rated 4.7.
+user: Where is it located? Is it a unisex salon?
+assistant: It is a unisex salon and the address is 4801 Telegraph Avenue.
+user: Yes that is good thanks.
+assistant: SHould I schedule an appointment?
+user: Not at this time thank you.
+assistant: Can I do anything more for you?
+user: Yes please share the location.
+assistant: Who will you share it with?
+user: I want to share with Patricia.
+assistant: You want to share 4801 Telegraph Avenue with Patricia, correct?
+user: Yes that is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Your location has been shared.
+user: Thanks for your help. What alarms do I have?
+tool(GetAlarms): ok n_results=4
+assistant: There is a 3:30 pm alarm called pick up kids.
+user: Okay perfect thank you.
+assistant: Can I do anything more for you?
+user: I need a 4:45 pm alarm called phone home.
+assistant: You want to create an alarm 4:45 pm called phone home, is that correct?
+user: Yes that is right.
+tool(AddAlarm): ok n_results=1
+assistant: Your alarm has been added.
+user: Thanks a bunch, that is all.
+assistant: Thank you, enjoy your day.

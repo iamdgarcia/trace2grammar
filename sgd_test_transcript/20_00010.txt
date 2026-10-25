@@ -1,0 +1,36 @@
+user: Hi there. Can you please help me search for 3 star hotels? I need to book one room for an upcoming trip.
+assistant: Where would you like to find a hotel?
+user: Oh, I need a hotel in London, UK.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 3 star hotel in London. It's the Abbey Court Hotel (Hyde Park).
+user: Are there additional hotels that might work?
+assistant: There's another 3 star hotel by the name of Accommodation London Bridge that might interest you.
+user: Great. Can you tell me their exact location as well as the contact number?
+assistant: They are located at 58 Great Dover Street and can be reached at +44 20 7407 7566.
+user: Excellent. I'd also like to look for a car to rent for my time there.
+assistant: Are you planning on having the car from March 6th?
+user: No, in fact I will want to have the car from the 9th of March.
+assistant: And do you have a preference of pick up times?
+user: Sure, I'd like to get it at around evening 4:30 if possible
+assistant: And for what length of time will you need the rental?
+user: 12th of March is how long I'd like to have it
+tool(GetCarsAvailable): ok n_results=10
+assistant: So far, I've found 10 cars that you may be interested in. One is a lovely Sedan Audi A8 available for pick up at Heathrow International Airport.
+user: What other options are there? I'd like a great Hatchback until the 10th.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is a great Hatchback Fiat Panda available for pick up at Heathrow International Airport.
+user: I'd like to hear more choices.
+assistant: There is also a decent Hatchback Ford Focus that you can get at Gatwick International Airport.
+user: What is the price for a single day for that car?
+assistant: The price is $29.00 for each day.
+user: Perfect. That works. I'd like to go ahead and reserve this rental!
+assistant: Will you be needing the optional insurance coverage on the car?
+user: No thank you, no insurance.
+assistant: Okay, so you would like to reserve the Hatchback available from Gatwick International Airport, beginning on March 9th at 4:30 pm, returning on March 10th, correct?
+user: Perfect. That all works for me.
+tool(ReserveCar): ok n_results=1
+assistant: That rental car has been booked for the time requested.
+user: Thank you so kindly!
+assistant: Do you need further assistance?
+user: Nope, I'm all set. Thanks again.
+assistant: Enjoy your day.

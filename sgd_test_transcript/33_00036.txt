@@ -1,0 +1,19 @@
+user: I need you to find me a unisex salon in SF
+tool(FindProvider): ok n_results=10
+assistant: I've found 1512 barber shop in the san francisco area
+user: it may be okay, can you update me about the weather over there?
+tool(GetWeather): ok n_results=1
+assistant: Today's temperature is 91 degrees fahrenheit and there is a 29 percent probability of rain
+user: can you tell me today's date?
+assistant: it's march 1st
+user: thank you. book an appointment for me at the salon we discussed earlier, make it at 2:30 in the afternoon
+assistant: before I do so, confirm the request. You want an appointment on march 1st at 2:30 pm at 1512 barber shop
+user: that's right. do you know its rating?
+tool(BookAppointment): ok n_results=1
+assistant: rating is 4.8 and I'm proud to tell you that your reservation has been made
+user: do you have the address and the phone number of the salon?
+assistant: you'll find the salon at 1532 20th street and the phone number 415-286-4371
+user: you've been extremely helpful
+assistant: my pleasure, I can still help you if you need me.
+user: no, I'm okay
+assistant: good bye then.

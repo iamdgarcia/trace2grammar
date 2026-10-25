@@ -1,0 +1,38 @@
+user: I got to grab a bus.
+assistant: Give me the details.
+user: I'm heading to LA later today, from Fresno.
+tool(FindBus): ok n_results=8
+assistant: I got 8 for you. There's a 7:50 am for $40.
+user: What else do you see?
+assistant: An 8:10 am for $38.
+user: From what station and how many stops?
+assistant: From 2660 Tulare St. Its a direct.
+user: I like the sound of that.
+assistant: Should I book it?
+user: No, put that on the back burner.
+assistant: Ok. Whats on the front?
+user: Some fun place of interest for the kids once we are there.
+tool(FindAttractions): ok n_results=8
+assistant: I see 8. Try the Hollywood Walk of Fame, a very popular tourist attraction.
+user: Is it free? What's their number?
+assistant: 323-469-8311. It's not free.
+user: Ok. Get me that bus ticket.
+assistant: How many you want?
+user: I need two seats.
+assistant: Ok. 2 seats on an 8:10 am Fresno to Los Angeles bus on March 1st?
+user: You got that straight.
+tool(BuyBusTicket): ok n_results=1
+assistant: Tickets are confirmed.
+user: Where exactly does it arrive?
+assistant: At North Hollywood Station.
+user: OK. Very cool.
+assistant: I'm ready for your next task.
+user: OK. I need three rooms in a hotel there.
+tool(SearchHotel): ok n_results=10
+assistant: Try this 3 star, Ac Hotel by Marriott Beverly Hills.
+user: Thats a good pick.
+assistant: Should I grab you the rooms?
+user: No. Chill out for now.
+assistant: Is there anything else?
+user: No, I'm good for now.
+assistant: Have a good day.

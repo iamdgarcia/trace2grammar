@@ -1,0 +1,27 @@
+user: I need a one way flight.
+assistant: What date is it for?
+user: I want it for the 12th.
+assistant: And what city will you be departing from?
+user: I'll be departing from NY.
+assistant: And where will you be travelling to?
+user: I'll be travelling to Washington.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: There's a 5 pm flight from American Airlines for $92 that is direct.
+user: I'd prefer a different flight.
+assistant: There's a 5:10 pm flight from Southwest Airlines for $82 that is direct.
+user: That's a good one. How about train options for travelling there. Look for 1 economy ticket for later today.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains available. There's a departure at 7:20 am for $70 you might prefer.
+user: What's the departure station?
+assistant: The departure station is Grand Central Station.
+user: And what's the arrival station?
+assistant: The arrival station is Union Station.
+user: I think that's good. Please book the ticket with trip insurance.
+assistant: I'll book you 1 value ticket for New York to Washington for March 1st at 7:20 am, is everything correct?
+user: Yes, please book it.
+tool(GetTrainTickets): ok n_results=1
+assistant: I've booked the ticket for you.
+user: Thank you, you've been of great help.
+assistant: What else can I do for you?
+user: Nothing else, thanks again for being so helpful.
+assistant: You're welcome, I'll talk to you later.

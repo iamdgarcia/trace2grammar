@@ -1,0 +1,17 @@
+user: Search the internet for some songs for me will ya? I'd like to find some Metal songs from 2019. I like songs by Sabaton.
+tool(LookupMusic): ok n_results=8
+assistant: I've found 8 songs that meet your criteria. How about A Ghost In The Trenches by Sabaton from their album The Great War?
+user: Heck yea I love that song. Can you tell me what the weather will be like on the day after tomorrow? I need to know for a friend.
+assistant: Which city or area would you like to know the weather for?
+user: They need to know the weather in Valley Ford.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day is expected to be 91 degrees. There is also a 13 percent chance of rain today.
+user: How humid and windy though?
+assistant: The humidity is currently around 22 percent and the average wind speed is 9 miles per hour.
+user: Great. Play the song from earlier in my kitchen now.
+assistant: You would like to play A Ghost In The Trenches in your Kitchen. Is that correct?
+user: Yes that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: The music will begin playing momentarily, enjoy.
+user: Thanks, good bye.
+assistant: You're welcome. Have a nice evening.

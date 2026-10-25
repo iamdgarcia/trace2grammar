@@ -1,0 +1,33 @@
+user: Hi I'll be travelling and need to find a 4 star hotel in San Diego.
+tool(SearchHotel): ok n_results=10
+assistant: I managed to find 10 hotels you may like. I suggest Catamaran Resort Hotel And Spa, it's a 4 star hotel like you asked.
+user: That sounds nice.
+assistant: Would you like me to book the hotel room?
+user: Not right now, I'd like to find a round trip flight to get there.
+assistant: What city will you be leaving from?
+user: I would like to leave from SFO.
+assistant: Will you be leaving on March 9th?
+user: I would like to depart on Wednesday next week.
+assistant: On what day will you be returning?
+user: I would like to return on March 10th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: I managed to find 4 flights for you. Are you ok with travelling with Alaska Airlines? The flight takes off at 12:25 pm and has one layover. On the way back, the flight leaves at 1:05 pm. The ticket cost is $194.
+user: What time does the returning flight arrive there? And when will the flight arrive at my destination?
+assistant: The flight going there will arrive at 2:05 pm, and the returning flight will get there at 4:25 pm.
+user: Could you find something else? I need 4 economy class tickets.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Are you ok travelling with American Airlines? Your first flight will take off at 9:20 am, it is direct so no layovers. The returning flight takes off at 10:05 pm and the ticket will be $160.
+user: That works for me. Now back to the hotel you found, I need 3 rooms for 5 days.
+assistant: Are you checking in on March 6th?
+user: No, I want to check in on March 9th.
+assistant: So you'd like to stay at Catamaran Resort Hotel And Spa in San Diego for 3 days from March 9th and staying for 5 days. Is this correct?
+user: That sounds good to me.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been booked.
+user: Please show me attractions in that area.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions you may like. I suggest Balboa Park, it's a Park.
+user: That sounds nice.
+assistant: Is there anything else I can assist you with?
+user: No that will be all, thank you.
+assistant: Enjoy your trip!

@@ -1,0 +1,11 @@
+user: I would like to buy a movie ticket in Concord on the 9th for four people.
+assistant: Which movie would you like to watch?
+user: I would like to watch Hustlers.
+assistant: On which day do you want to watch the movie? Also do you want to watch it in imax or 3d?
+user: I want to watch in a imax show at 9:30 in the night.
+assistant: Can you please confirm the details: Movie is Hustlers for 4 people for March 9th in Concord starting at 9:30 pm and it is an imax movie.
+user: Yes. That's sounds good.
+tool(BuyMovieTickets): ok n_results=1
+assistant: The tickets are now purchased.
+user: Thanks for all your help. That's all I needed for now.
+assistant: Have a nice day.

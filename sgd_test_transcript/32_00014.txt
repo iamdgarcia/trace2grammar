@@ -1,0 +1,29 @@
+user: I need a therapist.
+assistant: Where do I need to search?
+user: I want to find one in Lafayette.
+assistant: What specialty or you looking for a Family Counselor maybe or perhaps a Psychiatrist or name another?
+user: I it is a Psychologist I want.
+tool(FindProvider): ok n_results=10
+assistant: Here's one in Lafayette, Alissa Scanlin Psyd., Psychologist.
+user: Can I get both the street address and the contact phone number for that one?
+assistant: Certainly you can reach someone by phone at this number - 707-371-2433 and they are located at 3468 Mount Diablo Boulevard.
+user: I like that one could you schedule a visit for me please?
+assistant: What day and time are best for you?
+user: If possible I would want the 14th of March at 14:00.
+assistant: I should try for a 2 pm visit on March 14th with Alissa Scanlin Psyd correct?
+user: Actually I just checked my calendar and I think I would rather make it for March 2nd just afternoon 12:15 or so okay?
+assistant: Okay so change date and time to March 2nd at around 12:15 pm right?
+user: I am pretty sure, yes that's good.
+tool(BookAppointment): ok n_results=1
+assistant: I could not make an appointment for the time you requested, may I suggest the same day - March 2nd - and same therapist - Alissa Scanlin Psyd except a different time, say 12:30 pm?
+user: That would be fine by me.
+tool(BookAppointment): ok n_results=1
+assistant: Your visit has been scheduled and you have been emailed a confirmation which you should get shortly.
+user: Help me find a movie for Kids that is directed by Josh Cooley and stars Mel Brooks is there anything you would suggest?
+tool(FindMovies): ok n_results=1
+assistant: Toy Story 4 would probably go over well and it rated 97.
+user: Did you come up with any more movies?
+tool(FindMovies): ok n_results=0
+assistant: Sorry I that was the only one that met your requirements. Do you still need my assistance?
+user: Thanks, but no goodnight.
+assistant: It was a pleasure serving you.

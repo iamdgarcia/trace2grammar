@@ -1,0 +1,9 @@
+user: I need to get out of the city and I need a round trip flight.
+assistant: Where would you like to go and where would you be leaving from? When would you like to go?
+user: I will be leaving SF and heading NYC. I want to return on March 8th.
+assistant: When would you like to leave?
+user: I want to go on March 5th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Would you like a flight on American Airlines that costs $343 that leaves at 4:55 am and returns at 12:30 pm?
+user: Yes, that would be great. Thanks, that's all.
+assistant: Enjoy your day.

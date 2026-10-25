@@ -1,0 +1,21 @@
+user: Find me an attractive child friendly place without an entry fee
+assistant: Do you prefer any place
+user: Look around Berlin
+tool(FindAttractions): ok n_results=10
+assistant: How about Berggruen Museum which is a museum
+user: That's perfect. Now find me a house to stay with rating 3.9 or higher
+tool(SearchHouse): ok n_results=9
+assistant: How about house at Alt-Moabit 99, 10559 which has 3.9 rating
+user: That's great
+assistant: Do you want to make a reservation
+user: No not now. Now find me a round trip flight to there
+assistant: From where do you want to depart and on what day? When are you returning?
+user: I'm starting my travel on March 1st from Chi-town and returning on March 14th
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights. How about American Airlines that take off at 4:35 pm. This flight has a layover. The returning flight takes off at 2:55 am. The ticket cost is $514
+user: Is that a business or economy class ticket
+assistant: This is an economy class seat
+user: When will the flight reach at destination
+assistant: The flight reaches at 6:30 pm
+user: That's great. Thank you. That's all I need
+assistant: Have a nice day

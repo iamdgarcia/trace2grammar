@@ -1,0 +1,20 @@
+user: I need to rent a sedan in San Fran.
+assistant: When do you need the rental and for how long?
+user: I need it the 5th of this month until March 6th.
+assistant: When do you want to pick it up?
+user: I would prefer 3:30 pm.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is a Dodge Charger sedan available at Salesforce Transit Center.
+user: What is the price per day?
+assistant: It is $33.00.
+user: Please reserve it.
+assistant: Would you like insurance?
+user: No, thank you.
+assistant: Please confirm the pick up date of March 5th at 3:30 pm from Salesforce Transit Center and dropping off on March 6th. The car id a sedan with no insurance.
+user: I changed my mind, I would like insurance.
+assistant: OK, picking up from Salesforce Transit Center and buying insurance.
+user: Great.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.
+user: Thank you for your help.
+assistant: Have a great day.

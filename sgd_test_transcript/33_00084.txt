@@ -1,0 +1,19 @@
+user: Find me some child-friendly attractions in Seattle, WA.
+tool(FindAttractions): ok n_results=10
+assistant: You will probably be interested in a Park named Alki Beach Park.
+user: Can I have their phone number please?
+assistant: Sure. It is 206-684-4075.
+user: Find me a house there for 1 person that has laundry service and is rated 4.1 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses based on your preferences. There's a nice house located at 1000 1st Avenue which is rated 4.1.
+user: That's sounds like a great house. Can you find me a round trip flight to get there?
+assistant: Where will you be departing from?
+user: I'll be leaving from SF.
+assistant: On what date are you leaving and when do you plan to return?
+user: I'll be leaving on Saturday this week and plan to return on the 14th of this month. I'm okay with any airline.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 suitable flights. Would you like to consider the American Airlines direct flight with the outward flight departing at 8 pm and return flight taking off at 4:15 pm? A ticket costs $180.
+user: That sounds good to me.
+assistant: Is there anything else I can help with?
+user: No, thank you. That's all I need for now.
+assistant: Have a great day!

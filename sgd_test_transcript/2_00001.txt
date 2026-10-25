@@ -1,0 +1,19 @@
+user: Hello, I want to find songs please, ones like on the album The New Classic. Or tunes from, say, six years back.
+tool(LookupMusic): ok n_results=3
+assistant: How about the Iggy Azalea song Bounce, which is from The New Classic album?
+user: What other popular songs can you suggest? Those are the ones I like.
+tool(LookupMusic): ok n_results=2
+assistant: There are 2 options you might like. One of them is Change Your Life, which is also from the Iggy Azalea album, The New Classic.
+user: Anything else that you think is good?
+assistant: Another good Iggy Azalea track from The New Classic is the song Work.
+user: Okay, I like that one the best.
+assistant: Shall I play that song for you at this time?
+user: Yes, and please do it in the Living room.
+assistant: Confirming playback of Work on the Living room speaker.
+user: Sorry, no, do it on the speaker in kitchen instead.
+assistant: Certainly. Confirming kitchen speaker playback of the track Work.
+user: Right, that's what I'd like.
+tool(PlayMedia): ok n_results=1
+assistant: Please enjoy your selection.
+user: Thanks, I'm sure I will.
+assistant: You're very welcome. Have a lovely day.

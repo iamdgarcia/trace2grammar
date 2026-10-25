@@ -1,0 +1,29 @@
+user: find some movies for me to watch online
+assistant: Any specific movies types preferred by you
+user: sure, Comedy movies are preferable
+tool(FindMovies): ok n_results=5
+assistant: How about my big fat greek wedding, good boys or chhichhore?
+user: Chhichhore sounds great. I also need to show me some free attractions there.
+assistant: Which city should I search in?
+user: I am looking for something in Anaheim, CA
+tool(FindAttractions): ok n_results=8
+assistant: There's a sports venue that you can check out- Angel stadium of anaheim
+user: thanks, please play some songs by Sean paul for me
+tool(LookupMusic): ok n_results=1
+assistant: How about the song how deep is your love from tomahawk technique album by sean paul
+user: What is its year of release?
+assistant: It came out in 2012
+user: cool, play it on my living room speakers
+assistant: sure, just need your confirmation. Playing how deep is your love in the living room
+user: Cool, what is the kind of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: It is a reggae song
+user: Thanks, now play the movie I selected with spanish subtitles.
+assistant: Sure, need your confirmation again. Playing Chhichhore with spanish subtitles.
+user: Thank you so much.
+tool(PlayMovie): ok n_results=1
+assistant: Playing the movie now
+user: Who is the actor in it?
+assistant: It has Naveen Polishetty.
+user: Thanks, that would be all.
+assistant: My pleasure. Enjoy your day.

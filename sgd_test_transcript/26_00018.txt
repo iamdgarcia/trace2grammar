@@ -1,0 +1,35 @@
+user: I'm going on vacation and I need to find a round trip flight.
+assistant: What's your destination and what date would you like to travel?
+user: I'm flying to London, England and I would like to depart on March 1st.
+assistant: Okay, and what day will you return home? What city are you departing from?
+user: I'm leaving from Philadelphia and would like to return on the 12th.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I found 2 flights that might work. There is an American Airlines flight that departs at 1:20 pm and has a layover. The return flight departs at 12:35 pm and the ticket costs $418.
+user: Okay, sounds good. I would also like to find a house to stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses you might like. There is a nice house located at 1 Addington Street that received a 4.3 rating.
+user: Any other houses?
+assistant: I found a nice house located at 1 Baffin Way which received a 4.1 rating.
+user: What other houses are there? I'm looking for something with laundry service and that sleeps two people.
+tool(SearchHouse): ok n_results=8
+assistant: I found 8 houses that meet that criteria. There is a nice house at 1 Ham Yard that was rated 4.5.
+user: Can you give me the phone number for this place?
+assistant: Sure the phone number is +44 20 3642 2000.
+user: That house sounds great.
+assistant: Would you like to reserve this house?
+user: Yes, I'd like to book it.
+assistant: Would you like to check in on March 1st and out on March 12th or a different date?
+user: I'd like to check in on the 2nd of this month and check out on the 7th of March.
+assistant: Okay, let's confirm the details: There are 2 people checking into the house in London on March 2nd and checking out on March 7th.
+user: No, let's change it to checking in on the 3rd and checking out on the 6th of March.
+assistant: Okay, just to confirm: Check in will be March 3rd and check out is March 6th.
+user: Yes, that sounds great.
+tool(BookHouse): ok n_results=1
+assistant: Okay, your reservation is set. The total cost is $504.
+user: Thanks. Can you help me find some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: You may like 30 St Mary Axe (The Gherkin) which is a historical landmark.
+user: Okay, great.
+assistant: Is there anything else I can help with?
+user: No that's great, thank you.
+assistant: Enjoy!

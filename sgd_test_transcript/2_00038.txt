@@ -1,0 +1,14 @@
+user: Can you find me some interesting things to entertain me please?
+assistant: What kind of interesting things or events do you want?
+user: I love Drama related things
+assistant: Any place you want to look for events in particular?
+user: How about around the Pacifica area?
+tool(FindEvents): ok n_results=1
+assistant: How about catching The Music man which is at Pacifica Spindrift Players on March 1st at 6 pm
+user: Where is this gonna be taking place?
+assistant: The address of the venue is 1050 Crespi Drive
+user: That's good but can you find me other options?
+tool(FindEvents): ok n_results=0
+assistant: I'm sorry, but I can't find anything else that matches your criteria, can I do something else though?
+user: No thanks, that's all for your help for now
+assistant: Sure, have a good one

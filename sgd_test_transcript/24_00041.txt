@@ -1,0 +1,32 @@
+user: I need to find a one way flight, can you help me search for one?
+assistant: What date would you like to depart?
+user: I am planning to leave on Thursday next week.
+assistant: What cities are you departing from and heading to?
+user: I need to fly from Washington to Atlanta, GA.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: I found 4 flights that match your travel plans. American Airlines has a direct flight that takes off at 4:30 pm, with a ticket price of $111.
+user: Are the tickets Premium Economy class? Are there seats for 3 people?
+assistant: There is 1 seat available, and it is in Economy class.
+user: OK, let's look for a train instead.
+assistant: Would you like to depart on March 7th?
+user: Look for tickets on March 10th.
+tool(FindTrains): ok n_results=6
+assistant: There is a train departing at 10 am that will cost $109 in total.
+user: Are there any other trains that we could take?
+assistant: Another train departs at 1:20 pm and will cost $94 in total.
+user: What station does that train leave from?
+assistant: The train leaves from Union Station.
+user: What station does it arrive at?
+assistant: The train arrives at Peachtree Station.
+user: Are there any other trains that could work for my trip? It can be any fare class.
+tool(FindTrains): ok n_results=4
+assistant: There are 4 trains that match your travel plans. There is a train departing at 1:50 pm that will cost $97 in total.
+user: That one sounds good.
+assistant: Would you like to book the tickets?
+user: Yes, I would like to reserve 1 seat with trip insurance, please.
+assistant: You would like to book 1 Value ticket on the train from Washington to Atlanta leaving March 10th at 1:50 pm, is that correct?
+user: Yes, that's right. What stations does this train leave from and arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been booked. The train leaves from Union Station and arrives in Peachtree Station.
+user: You have been very helpful, thank you, that's all for now.
+assistant: Have a great day!

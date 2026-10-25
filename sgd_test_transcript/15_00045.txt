@@ -1,0 +1,21 @@
+user: I am looking for a nice property to live. Can you help me to search for the suitable one?
+assistant: Yes, let me know whether you want to buy that property or you just need to rent the house?
+user: I want it for rent only. Search for the suitable one.
+assistant: I need more information to find the suitable one. Tell me about your requirements like number of bed rooms, baths and which is your preferred area to live?
+user: Find me the rental house with Three bed rooms and two baths in Fremont.
+tool(FindHomeByArea): ok n_results=10
+assistant: I searched and got 10 results. A property name Case Verde Apartment which is located at 4101 Eggers Drive # 16 and the total rent will be $3,700. Do you choose this one?
+user: I have to decide and I need to know whether a garage is there?
+assistant: No, there is no garage there in that house.
+user: But it is okay for me.
+assistant: Shall I make a schedule of visit to that house?
+user: I want to make it on next Tuesday.
+assistant: please confirm to make a schedule of visit to the property named Case Verde Apartment on March 5th.
+user: Confirmed. Go ahead. Just do me one more help. Please check there for a laundry machine in that house.
+tool(ScheduleVisit): ok n_results=1
+assistant: It has in-unit laundry service and your schedule of visit was successfully made.
+user: Thank you so much and I want to view my alarms list.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm at 8 am in the name Call.
+user: That is okay. Thanks and that's all.
+assistant: Have a good day.

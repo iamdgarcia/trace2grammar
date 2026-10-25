@@ -1,0 +1,23 @@
+user: Hows the weather in Brentwood on march 8th
+tool(GetWeather): ok n_results=1
+assistant: It will be 86 degrees Fahrenheit with a 19 % chance of rain
+user: Whats the expected Humidity and the wind speed?
+assistant: Humidity will be 29 percent and wind speed is 3 mph
+user: Schedule me a visit to the Creekside Terrace Apartments for that day
+assistant: Please confirm: Scheduling a visit to Creekside Terrace Apartments on March 8th
+user: yes, thats right. Does it have a laundry service?
+tool(ScheduleVisit): ok n_results=1
+assistant: its scheduled, yes it has a laundry machine
+user: Please book me a car there till march 8th and pick up from Portland Bus station
+assistant: Whats the pickup time? Also the pick up date will be march 8th?
+user: I need it from the 4th and pick up at quarter to 7 in the evening with insurance
+assistant: What kind of car SUV, a Hatchback or something else?
+user: A Sedan is good
+assistant: Please confirm: picking up a Sedan from Portland Bus station on march 4th at 6:45 pm and drop off on march 8th and it is with insurance
+user: Yes, thats good
+tool(ReserveCar): ok n_results=1
+assistant: Sorry, there was an error. Trying again picking up a Sedan from Portland Bus station on march 4th, SEAT cordoba and costs $41.00 a day
+user: no, i dont want that
+assistant: any thing else?
+user: no, thats all
+assistant: have a great day!

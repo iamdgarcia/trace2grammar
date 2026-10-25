@@ -1,0 +1,14 @@
+user: I'm after an Imax film at Century Blackhawk Plaza in Danville can you tell me whats on?
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies playing, IT Chapter two and Saaho.
+user: Yes IT2 please.
+assistant: Do you want to book tickets?
+user: Yes can I get them now? book for the 3rd of this month at night 10:30.
+assistant: How many tickets?
+user: Just one please
+assistant: okay confirming 1 IMAX ticket for IT Chapter Two at 10:30 pm on March 3rd in Danville.
+user: Yes thank you. How much is it and what kind of movie is it?
+tool(BuyMovieTickets): ok n_results=0
+assistant: The booking has failed. Can i help you with anything else?
+user: No that's it.
+assistant: Have a nice day.

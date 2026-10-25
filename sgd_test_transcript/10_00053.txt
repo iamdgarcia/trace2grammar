@@ -1,0 +1,17 @@
+user: I'm looking for a movie on line some future scientific fiction would be my first choice.
+tool(FindMovies): ok n_results=2
+assistant: Would you like Ad Astra or Close Encounters of the Third Kind?
+user: On second thought I'd like something with Prashant Narayanan in it, perhaps a comic movie.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 it's called Chhichhore.
+user: Chhichhore would be great. I'd like to watch it now.
+assistant: To confirm: You would like to see Chhichhore with English subtitles.
+user: Make it French subtitles.
+assistant: Okay, you would like to see Chhichhore with French subtitles.
+user: That's it, thanks.
+tool(PlayMovie): ok n_results=1
+assistant: Your movie will start now.
+user: Thanks, I really appreciate it.
+assistant: Did you need anything else?
+user: No, just the movie. Thanks
+assistant: Enjoy your film.

@@ -1,0 +1,15 @@
+user: Would you kindly help me to watch a movie acted by Gwendoline Christie and directed by Peter Strickland. Search with scary genre.
+tool(FindMovies): ok n_results=1
+assistant: What is your opinion about In Fabric? This is a movie with rating 96 out of 100.
+user: This is perfect..can you search some pop songs now> I just love it..
+tool(LookupMusic): ok n_results=10
+assistant: I have short listed 10 songs for you. What is your opinion about Acapella from the album Pulses by Karmin?
+user: Okay this is the one i wanted. Play the song on kitchen speaker.
+assistant: please give confirmation details: Run the song Acapella in Kitchen.
+user: Okay..perfect..Is this song released in the year "12?
+tool(PlayMedia): ok n_results=1
+assistant: Its from the year 2013..Have fun with your song.
+user: Thanks a lot.
+assistant: Any other help you want?
+user: No, not now..
+assistant: Have a great day.

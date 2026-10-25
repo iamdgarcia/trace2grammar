@@ -1,0 +1,23 @@
+user: Would you look for something interesting to do?
+assistant: Is there a category in particular that you like? How about Music or Theater or something else?
+user: I'm into Broadway.
+assistant: What city should I search in?
+user: Find me something around NYC.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events that are suitable. Acting For Teens is a popular one that is taking place at 520 8th Ave. - Personal Valet Parking. on March 4th at 6 pm.
+user: Sounds good to me. Find me 2 tickets.
+assistant: Could you confirm that you want to book tickets for 2 tickets for Acting For Teens for March 4th in New York?
+user: Sounds good. Where is the venue and how much is one ticket?
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been made. I hope you enjoy it. Each ticket costs $35. The venue is 520 8th Ave. - Personal Valet.
+user: Thanks for helping. Would you arrange for a cab?
+assistant: What sort of ride would you like? You can get a pool or luxury ride.
+user: I would like a regular ride.
+assistant: Would you confirm that you want to ride to 520 8th Ave. - Personal Valet Parking and that you need 2 seats in a Regular ride?
+user: Sounds good.
+tool(GetRide): ok n_results=1
+assistant: I have booked your ride. The cab is coming.
+user: Thanks for helping.
+assistant: Would I be able to assist with anything futher?
+user: No, but thanks for helping.
+assistant: Have a great day.

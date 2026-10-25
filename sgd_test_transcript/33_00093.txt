@@ -1,0 +1,15 @@
+user: Hi, are there any child-friendly attractions in Chicago?
+tool(FindAttractions): ok n_results=10
+assistant: Yes, there are 10 attractions you may like. How about a Tourist Attraction called 360 CHICAGO?
+user: Sure, could you get me a house there too?
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses you may like, one of which has a 4.4 rating located at 1 South Franklin Street.
+user: I see, could you get me a round trip flight there please?
+assistant: Which date are you travelling from and returning? And where will you be departing from?
+user: I will be travelling from SFO from the 7th of March to March 14th.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 flights you may like, how about an American Airlines flight departing at 5 pm and returning at 4:35 pm costing $281?
+user: Sounds great!
+assistant: Do you need any other help?
+user: No, that is all I need. Thank you!
+assistant: No worries, have a great day ahead!

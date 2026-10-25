@@ -1,0 +1,18 @@
+user: Please locate a nice restaurant in Petaluma for me.
+assistant: Is there a food type you prefer?
+user: Yes. A Light meal would be perfect.
+tool(FindRestaurants): ok n_results=1
+assistant: Petaluma has a nice restaurant called Speakeasy.
+user: Sounds like a good choice.
+assistant: Shall I make a reservation for you?
+user: Please make a reservation.
+assistant: Is there a time you prefer the reservation to be made at?
+user: I would like to book a table at 6:15 in the evening.
+assistant: I will book a table at Speakeasy in Petaluma at 6:15 pm for 2 this March 1st if that is what you want.
+user: That is exactly what I want, thanks.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table for 2 has been booked.
+user: Thanks a million.
+assistant: My pleasure. What else can I do for you?
+user: Nothing right now, thanks.
+assistant: Enjoy dinner tonight.

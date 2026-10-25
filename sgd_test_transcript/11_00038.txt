@@ -1,0 +1,20 @@
+user: Hey, do you think you can help me find a house to stay in?
+assistant: I'm sure I can! What city would you like me to search in?
+user: I am traveling to London, England so please find something nice for me out there.
+tool(SearchHouse): ok n_results=10
+assistant: I've found a really nice house for you! It's located at 1 Addington Street and is rated 4.3 stars.
+user: Awesome, that house sounds great.
+assistant: Would you like to make a reservation?
+user: Yes I would. Lets go ahead and book a reservation.
+assistant: Okay. Can you tell which day you would like to check in?
+user: I'd like to check in on Friday next week.
+assistant: And how many people will be in your group?
+user: I just need a reservation for one person.
+assistant: What day will you be checking out?
+user: I will be leaving on the 13th of this month.
+assistant: Okay, please confirm the following details for me. You are making a reservation for 1 for the house in London on March 8th through March 13th. Correct?
+user: yes, that would be great. Thanks!
+tool(BookHouse): ok n_results=1
+assistant: Okay, your reservation was a success! Anything else?
+user: That's all for today. Thank you!
+assistant: My pleasure. Bye.

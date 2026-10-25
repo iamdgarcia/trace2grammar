@@ -1,0 +1,12 @@
+user: I'd like some help trying to find a bus please.
+assistant: Of course. What is your destination and where will you be leaving from?
+user: I'll be going to Portland, OR from Seattle.
+assistant: Which day will you be traveling out?
+user: I'm going to go on the 11th of March.
+tool(FindBus): ok n_results=8
+assistant: I have a bus which leaves at 7:30 AM and the fare is $30.
+user: Actually, I'm sorry, I need to go to Vancouver, BC. What do you have for that?
+tool(FindBus): ok n_results=10
+assistant: There are 10 possible buses for you. I have a 6:10 AM departure with a $29 ticket price.
+user: I think that's going to work.
+assistant: Great, have a wonderful day.

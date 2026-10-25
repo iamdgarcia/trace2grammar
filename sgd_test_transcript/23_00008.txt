@@ -1,0 +1,33 @@
+user: Hi, could you search for some online movies for me please?
+assistant: Any preferred movie genre?
+user: Some cartoon will be great.
+tool(FindMovies): ok n_results=2
+assistant: Would you like to watch The Angry Birds Movie 2 or Toy Story 4?
+user: Toy story four is great.
+assistant: Would you like me to play the movie now?
+user: Perhaps later, could you get me some nice attractions please?
+assistant: Any preferred location?
+user: Something in Delhi is fine.
+tool(FindAttractions): ok n_results=10
+assistant: How about a Theme Park called Adventure Island?
+user: May I have their contact number, and is this a free attraction?
+assistant: Yes, entry is free and you can call them at 83770 02902.
+user: I see, could you find me some songs to listen to?
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs you might like, how about Faster by Within Temptation from the album The Unforgiving?
+user: Yep, that was what I was looking for, could you play it please?
+assistant: Please confirm your request to play Faster in the Living room.
+user: Yes please, what is the music genre?
+tool(PlayMedia): ok n_results=1
+assistant: This is a metal song. Your music has been played.
+user: Was this released in 2018?
+assistant: No, it was released in 2010.
+user: I see, could you play the movie you found just now?
+assistant: Please confirm your request to play Toy Story 4 with English subtitles.
+user: Sorry, could you play it with Hindi subtitles instead?
+assistant: Please confirm your request to play Toy Story 4 with Hindi subtitles.
+user: Yes please. Who acted in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: Your movie has been played, and this movie features Blake Clark.
+user: I see, that is all I need.
+assistant: Have a great day ahead!

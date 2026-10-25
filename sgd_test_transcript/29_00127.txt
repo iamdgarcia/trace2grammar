@@ -1,0 +1,40 @@
+user: Is it possible for you to find me something interesting which I can do? I am interested in things around Philadelphia happening on 7th of this month, and more specifically I enjoy Musical performance.
+tool(FindEvents): ok n_results=10
+assistant: You might consider Anthony Green event which is a popular one, and that is happening at The Foundry on March 7th at 7:30 pm.
+user: Can you tell me the price of the ticket for this event?
+assistant: The price of ticket is $55.
+user: It seems nice, though is there some other event you can recommend?
+assistant: Babymetal is another interesting event, which will happen on March 7th at 6:30 pm at The Fillmore Philadelphia.
+user: Can you tell me the location of the venue?
+assistant: The venue can be found at 29 East Allen Street.
+user: These seem alright, but can you suggest some other event?
+assistant: You also can consider the Bars And Melody event which is quite great, and that it will happen on March 7th at 4 pm at The Foundry.
+user: This one seems good.
+assistant: Do you want to have tickets bought for you for this event?
+user: Some other time maybe. Now I would like to find a house that I can stay in there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses for you to consider, with one of them being at 1 Logan Square, and which has a rating of 4.5.
+user: This house seems nice. Can you tell me about buses that go there?
+assistant: Will you be leaving on March 2nd? Could you tell me from where will you be starting the trip?
+user: That is correct, and I will depart from Washington.
+tool(FindBus): ok n_results=7
+assistant: How would you like taking the bus which leaves at 8:30 am, and the ticket of which costs $32?
+user: Is there some other alternative? I need tickets for four people, and I do not mind whether it is a direct bus or not.
+tool(FindBus): ok n_results=7
+assistant: You can consider having the bus which leaves at 11:30 am, and has a ticket with a price of $26.
+user: Can you suggest some other bus, more specifically a direct bus?
+tool(FindBus): ok n_results=7
+assistant: You have the possibility to take the bus which leaves at 12:40 pm, and the ticket of which costs $32.
+user: That seems a good one.
+assistant: Do you want to have tickets bought for this bus?
+user: No I do not want to have the tickets bought at this moment.
+assistant: Is there something else I can help you with?
+user: I would like to book tickets for the event you found earlier.
+assistant: Can you please confirm that you want to buy 4 tickets for the Bars and Melody event in Philadelphia, which happens on March 7th?
+user: Yes, that suits me well.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested tickets have been booked, and I wish you have a good time there!
+user: I appreciate your help very much!
+assistant: Do you want me to help you with anything else today?
+user: Nothing. I am grateful for the help you provided.
+assistant: Have a wonderful day!

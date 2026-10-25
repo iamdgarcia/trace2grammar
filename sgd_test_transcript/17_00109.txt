@@ -1,0 +1,36 @@
+user: Whats the current weather at the moment?
+assistant: Any particular city that you want to check the weather at the moment?
+user: Check the current weather in Vallejo.
+tool(GetWeather): ok n_results=1
+assistant: Average temperatures in Vallejo for today is 83 degrees Fahrenheit, with a 10 percent chance of rain.
+user: How about the weather in SF on the 10th?
+tool(GetWeather): ok n_results=1
+assistant: For SF on the 10th, the average temperatures is expected to be 93 degrees Fahrenheit, with a 12 percent chance of rain.
+user: What about the humidity, whats that going to be like on that day?
+assistant: Humidity is expected to be around 26 percent.
+user: How about wind conditions, how windy is it going to be?
+assistant: Wind speed should be on average about 6 miles per hour.
+user: Thanks for all the info, I appreciate it.
+assistant: Is there anything else you need assistance on?
+user: Can you find me a one-way flight going there?
+assistant: From which city will you depart in plane from?
+user: I want to depart from New York City.
+assistant: Will you be leaving on March 10th?
+user: No, actually I want to start my travel on the 8th of March.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: There is an American Airlines direct flight that takes off at 12:30 pm, it costs $187, will that suffice?
+user: Can you find me something else?
+assistant: What about a Delta Airlines direct flight that costs $212, this flight takes off at 9:35 pm?
+user: Will that flight be a business class ticket, and when does the flight arrive at my destination?
+assistant: The flight will arrive at 1:01 am, and it is an economy class seat.
+user: That sounds good, can you find me a rental car in that area?
+assistant: When will you drop off the rental car?
+user: The rental car will be needed until the 12th of March.
+assistant: At what time will you pick up the car, and will it be on March 8th, March 10th, or another date?
+user: The car will be picked up on the 11th at evening 5:45.
+tool(GetCarsAvailable): ok n_results=7
+assistant: I found 7 cars available, there is a sedan available at Salesforce Transit Center, are you interested in an Audi A8?
+user: That car sounds enticing, thanks for finding it.
+assistant: Will that be all for today, or can I help you with anything else?
+user: That will be all for today, thanks for all the help.
+assistant: Your welcome, enjoy the rest of your day.

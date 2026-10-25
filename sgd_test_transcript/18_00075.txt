@@ -1,0 +1,21 @@
+user: I would like to book a hotel.
+assistant: In which city would you like?
+user: I would like a hotel in Paris.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels. There is Ac Hotel By Marriott Paris Porte Maillot that has a 4 star hotel.
+user: That hotel sounds good.
+assistant: Would you like to place a reservation.
+user: No, not at the moment.
+assistant: Can I help with something else?
+user: I would like to know how the weather will be on the 6th of March?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 72 degrees Fahrenheit and there is a 13 percent chance of rain.
+user: I would like to go back and book one room for the 1st of this month for 6 days.
+assistant: Booking 1 hotel room in Paris at Ac Hotel By Marriott Paris Porte Maillot on March 1st for 6 days.
+user: Yes, that works for me.
+tool(ReserveHotel): ok n_results=1
+assistant: Your hotel room is booked.
+user: Thank you that is all I needed.
+assistant: Can I help with anything further?
+user: No, that is all I needed.
+assistant: Have a good day.

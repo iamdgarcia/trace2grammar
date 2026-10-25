@@ -1,0 +1,11 @@
+user: I'd like to plan a trip to a property.
+assistant: What property would you prefer, and when do you wish to plan the trip?
+user: I'd like to go on March 2nd. I'd like to visit the property Whispering Oaks.
+assistant: Please verify the following information: You are planning a trip to Whispering Oaks and you'd like to travel to the property on March 2nd.
+user: Yeah, that's right.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your trip to the property has been reserved.
+user: Thank you for your help.
+assistant: Could I assist with something else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

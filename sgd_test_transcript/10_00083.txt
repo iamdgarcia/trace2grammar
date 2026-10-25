@@ -1,0 +1,17 @@
+user: What are some online movies?
+assistant: What genre of movie are you looking for?
+user: I would like to see Dramatic story movies if you can find any.
+tool(FindMovies): ok n_results=10
+assistant: I came across these 10. Would you like any of these: After The Wedding, A Faithful Man or what about Blinded by the Light?
+user: Tell me some more choices.
+assistant: Would you be interested in Live Flesh or perhaps Hustlers or Brittany Runs a Marathon?
+user: No, what about an Animation movies with John Schwab in it?
+tool(FindMovies): ok n_results=1
+assistant: Okay, I found 1 called The Angry Birds Movie 2.
+user: Angry birds are wonderful. Could you start that now and include English subtitles?
+assistant: You are asking me to play The Angry Birds Movie 2 and you want English subtitles correct?
+user: You got it right.
+tool(PlayMovie): ok n_results=1
+assistant: I have begun the movie for you.
+user: Super you can go now.
+assistant: Have a most stimulating day.

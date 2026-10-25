@@ -1,0 +1,27 @@
+user: I'm in need of a car to rent. I need it at 10 o'clock in the morning please.
+assistant: Sure. From what location please?
+user: I am in the Philly area.
+assistant: For what time period please?
+user: I'd like to have the car from the 4th up to the 6th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have 10 options for you. There is an SUV available, an Alfa Romeo Stelvio, which can be picked up from Intercity Terminal.
+user: What would that cost?
+assistant: That rental price is $35.00 daily.
+user: That would work, I think.
+assistant: Shall I reserve that for you?
+user: Not at the moment, no.
+assistant: How else may I help you please?
+user: I need a bus, too, on the 3rd of this month.
+assistant: Leaving from where please?
+user: That'll be New York City.
+tool(FindBus): ok n_results=7
+assistant: I've found 7 buses. There is a bus leaving at 7:40 am. The fare for that bus is $23.
+user: Okay, great, thank you.
+assistant: Do you want to buy a ticket for that one?
+user: Not yet. I'd like to see about a one-way flight too please on the 4th. I would need two Economy seats.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: How about an 11:20 am flight on American Airlines? That's a $68 direct flight.
+user: What's the arrival time?
+assistant: That is 12:11 pm.
+user: Okay, great. I think that's everything then.
+assistant: Thank you very much.

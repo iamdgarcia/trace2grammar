@@ -1,0 +1,23 @@
+user: I'm bored. Can you help me find something going on?
+assistant: What type of activity would you like, a movie, play, sporting event or something else?
+user: I would like to go to the theater if possible
+assistant: What city or area would you like me to search in?
+user: I'm in London, so London England.
+tool(FindEvents): ok n_results=10
+assistant: The play, A Right Royale Tea is playing at the Amba Hotel Charing Cross on March 14th. The play begins at 7 pm.
+user: Oh, yes. That sounds perfect. I'll need 2 tickets.
+assistant: Please confirm that you want 2 tickets to the play A Right Royale Tea in London England on March 14th at 7 pm.
+user: Yes, that sounds good. What is the cost of one ticket and where is the Amba Hotel located?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets are $50 each and the Amba Hotel is located on the Strand.
+user: I need to book a ride to get there.
+assistant: Would you like a pool, luxury, or some other type of ride?
+user: I think I would like a luxury ride for that.
+assistant: Please confirm that you need a luxury ride for 2 persons to Amba Hotel Charing Cross.
+user: Yes. That's it. Could you let me know how much it will cost and how long before the ride gets here?
+tool(GetRide): ok n_results=1
+assistant: The total cost is $34.49 and should be there in 12 to 15 minutes.
+user: Great. Thanks for your help.
+assistant: Do you need assistance with anything else?
+user: No. That's all I need. Thanks.
+assistant: Enjoy the rest of your day.

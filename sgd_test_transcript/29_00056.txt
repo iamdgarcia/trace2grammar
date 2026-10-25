@@ -1,0 +1,36 @@
+user: Hi, I need somewhere to stay. Please find me a hotel.
+assistant: What city would you like me to find a hotel in?
+user: Please look for hotels in Rio.
+tool(SearchHotel): ok n_results=10
+assistant: I found a 2 star hotel called Atlantico Copacabana Hotel.
+user: How much does it cost per night and do they allow smoking?
+assistant: They do not allow smoking and the cost per night is $174.
+user: That works for me.
+assistant: Would you like to book a room here?
+user: Not right now, no. I need to find a round trip flight to travel there.
+assistant: What city will you be leaving from and are you leaving on March 4th?
+user: I'd like to depart from Atlanta with Delta Airlines on March 2nd.
+assistant: What day will you be returning?
+user: I'll be coming back on the 5th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: I found 1 flight that may work for you with Delta Airlines. The flight takes off at 5:50 pm and has a layover. The returning flight leaves at 10:25 pm. The price for the ticket is $452.
+user: Is it an economy class ticket and when does the returning flight get there?
+assistant: The returning flight will get to the destination at 8:42 am, and yes it is an economy class ticket.
+user: That works for me. Now back to reserving that hotel you found.
+assistant: What will be the duration of your stay?
+user: I would like to stay there for 4 days.
+assistant: Will you be checking in on March 2nd?
+user: No, I'd like to to check in on the 10th.
+assistant: So you'd like 1 room at Atlantico Copacabana Hotel in Rio de Janeiro for March 10th and you will be staying for 4 days, is this correct?
+user: That sounds good to me.
+tool(ReserveHotel): ok n_results=1
+assistant: Your reservation has been booked!
+user: Thank you, I appreciate it. Please also show me some attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions that you may like. I suggest a museum called Air And Space Museum.
+user: Is there anything else you can find?
+assistant: I'd also suggest Aquario Marinho do Rio de Janeiro, it's a nature preserve.
+user: That sounds great.
+assistant: Is there anything else I can help you with?
+user: That'll be all, thanks for your help.
+assistant: Enjoy your trip!

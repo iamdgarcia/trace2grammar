@@ -1,0 +1,10 @@
+user: Hi, I'd like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: How about Chhichhore? It has a 60 out of 100 average rating.
+user: That sounds good. I'd like to look for something interesting to do on that day.
+assistant: Is there any sort of events you are into and any type of city I should look in?
+user: I am interested in something on 3rd of March. I am into Musical performance around New York.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 events that you should like. Alma Deutscher is a popular one. The event will be at Stern Auditorium / Perelman Stage on March 3rd at 7 pm.
+user: Sounds awesome. That's all for now.
+assistant: Have a good one.

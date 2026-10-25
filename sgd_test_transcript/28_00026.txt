@@ -1,0 +1,21 @@
+user: I would like to find a movie to watch. Is there something featuring Vincent Andriano and directed by Gurinder Chadha?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie that matches your criteria. Blinded by the Light has an average rating of 88 out of 100.
+user: Sounds great. I would like to find a restaurant as well.
+assistant: What city would you like to look in? Is there a particular cuisine you would like to search for?
+user: I would like to order Spicy Indian food in Concord.
+tool(FindRestaurants): ok n_results=1
+assistant: Hot Basil Cafe is a restaurant in Concord that matches your criteria.
+user: Yes, that would be great.
+assistant: Would you like to reserve a table there?
+user: Yes, I would like a table.
+assistant: What time would you like the reservations to be for?
+user: Try to set the reservations at half past 12 in the afternoon.
+assistant: You would like a table for 2 at Hot Basil Cafe in Concord for 12:30 pm on March 1st, is this right?
+user: Yes, that's right. What is the phone number? Are there vegetarian options on the menu?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful. The phone number is 925-288-0000. They have several vegetarian options.
+user: Thank you very much.
+assistant: Is there anything else I can help you with?
+user: No, thank you so much, I'm good.
+assistant: Have a great day!

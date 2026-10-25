@@ -1,0 +1,25 @@
+user: I want to search for a car for rent. Find me a suitable one.
+assistant: To which date you need to book the car for rent?
+user: I need to book it until the 9th.
+assistant: Which are your convenient date, time and place to book the car for rent?
+user: Please book it for the pick up on 8th of March from LAX at 6:30 in the evening.
+tool(GetCarsAvailable): ok n_results=8
+assistant: Do you like to travel on a SUV Dacia Duster Car which is available for pickup from LAX International Airport?
+user: Yes, this is okay to me. Now I want to search for some nice events around there. Find me a good one and reserve tickets.
+assistant: Do you have any particular type of events in your mind to search for?
+user: Yes, I like Nellie Mckay and I feel this is the good one.
+assistant: Let me know your required number of tickets to book and when do you want to book the same. Do you want to search for the events in any particular date and City?
+user: I like to go the events which will be held at Napa and on 3rd of this month. Please book 3 tickets for me.
+assistant: I need your final confirmation to book 3 tickets to the event Nellie Mckay on March 3rd in Napa.
+user: Yes, that is confirmed. I want to know the address where this event will be held.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully booked the tickets to the event you liked and the same will be held at 1030 Main Street.
+user: Thanks. Now please book the Car that I have selected before. Do you want any information to book the same?
+assistant: Yes, please tell me whether you need insurance?
+user: No, I don't.
+assistant: Then please confirm to book a SUV Car available for pick up at LAX International Airport from March 8th at 6:30 pm to March 9th.
+user: That is okay to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: Your car was successfully booked.
+user: Thank you so much and that's all for today.
+assistant: Have a good day.

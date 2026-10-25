@@ -1,0 +1,20 @@
+user: Could you look for a train for me?
+assistant: On what date and what city are you going to?
+user: I will be going to Anaheim and it will be for the 2nd of this month.
+assistant: What city will you leave from?
+user: I want Value tickets from Sacramento.
+tool(FindTrains): ok n_results=6
+assistant: I will depart at 6:30 am and it costs $132.
+user: That sounds great.
+assistant: Would you like me to book tickets?
+user: Yes, make the reservation for one.
+assistant: Would you like travel insurance?
+user: Yes, get me trip insurance.
+assistant: Please confirm that you want to leave from Sacramento and go to Anaheim on March 2nd at 6:30 am for 1 person. You need trip insurance and it's a Value ticket.
+user: That sounds good. What station does it arrive at and leave from?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket was successfully booked. The train will go to Anaheim Intermodal Center from Sacramento Valley Station.
+user: That's a great help. Thank you.
+assistant: Could I assist with something else?
+user: No, that was really helpful. Thank you.
+assistant: See you next time.

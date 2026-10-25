@@ -1,0 +1,26 @@
+user: I'm after a new apartment with 3 bedrooms
+assistant: How many baths? Do you want to rent or buy?
+user: Two baths please and this is to buy.
+assistant: What areas should I look in?
+user: Can you search San Jose
+tool(FindHomeByArea): ok n_results=10
+assistant: I have found 10 properties of interest. 888 Golden Saratoga-Cupertino Apartment homes is a sought after location at 1546 Maurice Lane. The listing price is $3,400,000
+user: Whats the phone number?
+assistant: You can reach them on 408-818-0710
+user: Can you search again for places to rent?
+tool(FindHomeByArea): ok n_results=10
+assistant: Okay Almaden Garden Apartments is nice located at 947 Branham Lane # C for $3,550.
+user: Can you look for places with 3 baths?
+tool(FindHomeByArea): ok n_results=10
+assistant: There's 10 options including Aegena located at 1290 San Tomas Aquino Road for $4,350.
+user: Sounds good can you schedule a walk through?
+assistant: What date do you want?
+user: Can you try 7th of March?
+assistant: Okay confirming details for a visit to Aegena on March 7th.
+user: Yes thank you. Does it have internal laundry facilities? Also can you tell me the phone number
+tool(ScheduleVisit): ok n_results=1
+assistant: I have scheduled the visit for you. You can reach them on 408-984-8888. The apartment has an in-unit laundry.
+user: Okay thanks
+assistant: Anything else you need right now?
+user: No that's all for now
+assistant: Have a nice day.

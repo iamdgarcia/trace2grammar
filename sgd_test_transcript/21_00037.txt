@@ -1,0 +1,28 @@
+user: Find me a song to listen to that I might enjoy.
+tool(LookupMusic): ok n_results=10
+assistant: There are 10 songs available, how about The Message by Still Corners from their Slow Air album?
+user: For that song, what genre is it classified under?
+assistant: This song is considered a pop song.
+user: Was the song released in 2010?
+assistant: The song was actually released in 2018.
+user: Any other songs you can find, perhaps one from Sia, I did hear the Everyday is Christmas album was a great one to listen to.
+tool(LookupMusic): ok n_results=1
+assistant: There are 1 song you may like, what about Snowman by Sia from Everyday is Christmas?
+user: That song sounds perfect, thanks.
+assistant: Shall I begin playing the song?
+user: Not at the moment, maybe later.
+assistant: Anything else I can help you with for today?
+user: What's the weather like?
+assistant: Should I check for the weather in you location, or another city?
+user: Check the current weather in Duncans Mills.
+tool(GetWeather): ok n_results=1
+assistant: In Duncan Mills, the average temperature for the day should be 77 degrees Fahrenheit, with a 13 percent chance of rain;.
+user: Alright thanks, you may now play the song you found earlier.
+assistant: Snowman will now begin playing in the Living Room.
+user: That is fine by me, thanks again.
+tool(PlayMedia): ok n_results=1
+assistant: The song is now playing, hope you enjoy it.
+user: Thanks so much for the help.
+assistant: Will that be all I can help you with for today.
+user: Yes, that is all, thank you!
+assistant: Your welcome, have a good day.

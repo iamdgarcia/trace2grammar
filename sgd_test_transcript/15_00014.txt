@@ -1,0 +1,21 @@
+user: I want to find a property for me to live and it should have three bed rooms and a garage. Can you help to search the suitable one for me?
+assistant: Yes, I can. Let me know whether you are going to buy that property or you need that for rent and also let me know the number of baths required by you in that house.
+user: I need to buy the house and I need 2 baths.
+assistant: I need one more information. Please tell me in which area you want to search for the house?
+user: I need to buy a property in Rohnert Park. Do you search here?
+tool(FindHomeByArea): ok n_results=2
+assistant: Yes, In searched and got 2 houses. What about your opinion on Emerald Pointe Apartments located at 8670 Camino Colegio for the total cost $3,250,000?
+user: I think this looks good. Can you make me a schedule of visit to that property. I want to visit there.
+assistant: Yes, what is your convenient date to visit that house?
+user: Make it on 14th of March.
+assistant: Please confirm to make a schedule of visit on March 14th to Emerald Pointe Apartments.
+user: That is confirmed to proceed. Also check about laundry service there.
+tool(ScheduleVisit): ok n_results=1
+assistant: Yes, they have in-unit laundry service and I have successfully booked the visit schedule.
+user: Thank you so much. Also show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm at 10 am in the name Gym.
+user: That's nice. Thanks.
+assistant: Do you want me to set a new alarm now?
+user: NO, not now and thanks for all.
+assistant: Have a good day.

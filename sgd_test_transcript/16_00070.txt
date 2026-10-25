@@ -1,0 +1,22 @@
+user: I want to buy bus tickets leaving from Las Vegas. I'd like to leave at 07:15.
+assistant: How many tickets do you want?
+user: I need tickets for 3 people.
+assistant: When do you plan to leave, and where are you going?
+user: I am going to Anaheim, CA and leaving on the 2nd of this month.
+assistant: Please confirm the following details: You want 3 bus tickets leaving from Las Vegas to Anaheim on March 2nd departing at 7:15 am. There is no additional luggage.
+user: Yes, that is correct. What station does it depart from and is it a direct bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct bus and it leaves from Union Plaza. Sorry, the purchase failed due to unexpected errors. How about a bus departing at 7 am that costs $42?
+user: Yes, that works for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are confirmed.
+user: Can you look for hotels in that area as well?
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 hotels for you. There is one called the Alamo Inn & Suites and it is a 2 star hotel.
+user: Sounds good. I would like to reserve the hotel. I'll need 1 room and will be staying for four days. I'm checking in on the 8th of this month.
+assistant: Please confirm the following details: You want 1 hotel room at the Alamo Inn & Suites in Anaheim for 4 days. You are checking in on March 8th.
+user: Correct.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is successfully booked.
+user: Thank you, you have been helpful. That is all for now.
+assistant: My pleasure, have a good day.

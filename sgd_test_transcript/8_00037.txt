@@ -1,0 +1,25 @@
+user: I need to arrange a transaction please for a payment I'd like to make to Rachel.
+assistant: Where will you be transferring from please and in what amount?
+user: You can take it out of my app cash and it should be for thirty four bucks.
+assistant: Confirming a visible public transaction with Rachel in the amount of $34, which will be deducted from your app balance amount.
+user: Great, that all sounds correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment processing has succeeded. The funds will be delivered to the other party momentarily.
+user: Cool. I also need to do a payment request with Tom and that's going to be for fifty eight bucks, okay?
+assistant: Of course, no problem. Confirming your visible public transaction with Tom in the amount of $58.
+user: Yes, that is confirmed.
+tool(RequestPayment): ok n_results=1
+assistant: The payment has been requested and is processing successfully.
+user: Terrific, thank you. Last thing I need to do is send a payment please.
+assistant: In what amount and from which account would you like that?
+user: One hundred and forty one dollars from the saving account.
+assistant: May I have the name of the other party please?
+user: His name is Bob.
+assistant: Confirming a $141 transaction with Bob. Please be aware that this is a visible public transaction which will be coming from your debit card
+user: That's fine, yes.
+tool(MakePayment): ok n_results=1
+assistant: That has processed successfully as well and Bob will have the money shortly.
+user: Perfect, you're the best.
+assistant: Thank you. Anything else today?
+user: No, you did it all!
+assistant: Thank you very much.

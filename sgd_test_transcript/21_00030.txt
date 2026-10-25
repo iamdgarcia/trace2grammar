@@ -1,0 +1,17 @@
+user: Can you help me find a specific song to stream? I think it's by Spice from their 2018 album Captured.
+tool(LookupMusic): ok n_results=1
+assistant: I have 1 song that matches that description. Would you like to hear Cool It by Spice? It's from the album Captured.
+user: That's it! Can you tell me what the weather is expected to be on th e 13th of March?
+assistant: Where are you interested in checking?
+user: Please check the weather in Moraga.
+tool(GetWeather): ok n_results=1
+assistant: It is expected to have an average temperature of 73 degrees Fahrenheit with only a 5 percent chance of rain.
+user: Thanks. Can you start that song now?
+assistant: Would you like to stream Cool It in the Living room?
+user: No, I'm sorry. Please play it in the kitchen.
+assistant: You'd like me to stream Cool It in the kitchen. Is that right?
+user: Yes, that would be great.
+tool(PlayMedia): ok n_results=1
+assistant: Your selection has started.
+user: Thank you for the assistance.
+assistant: You're welcome. Have a wonderful day!

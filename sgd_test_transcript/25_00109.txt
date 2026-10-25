@@ -1,0 +1,42 @@
+user: I have absolutely no idea what alarms I have set. Please show me my alarms.
+tool(GetAlarms): ok n_results=4
+assistant: You have the Catch bus alarm set for 10:30 am.
+user: All right. Cool.
+assistant: Do you want to create a new alarm?
+user: No. At the moment, I don't want to create any additional alarms.
+assistant: Will there be anything else?
+user: Yes, please find me a Latin American restaurant in that area.
+assistant: Sorry I didn't understand your request. Tell me the city you would like to conduct the search in.
+user: Oops! Sorry. Please search for Berkeley restaurants.
+tool(FindRestaurants): ok n_results=1
+assistant: Juan's Place is 1 nice Berkeley restaurant.
+user: Yes, that works for me.
+assistant: Would you like my help with anything else?
+user: Yes, please reserve me a car there.
+assistant: Sure. Tell me the type of car you'd like, and the most convenient location for you to pick up the car.
+user: I prefer a sedan, and would like to pick it up from Downtown.
+assistant: How long would you like to keep the car?
+user: I'll be keeping the car until 12th of this month.
+assistant: Would you like to buy insurance?
+user: No. I won't be needing insurance.
+assistant: What pick-up time works for you?
+user: Half past 5 in the evening would be a perfect pick-up time.
+assistant: And what pick-up date did you have in mind?
+user: A pick-up date of 5th of March works for me. Listen, there's been a change of plans and I'll be in Europe then. Please change the pick-up location to Heathrow Airport
+assistant: One moment please. Could you confirm the following details: You'd like to pick up a Sedan car from Heathrow International Airport on March 5th at 5:30 pm and drop it off on March 12th, and you have opted not to add insurance.
+user: Yes, that's correct. The car's make and model, please?
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully reserved your car. The car is a Volvo S90.
+user: How much is the daily cost?
+assistant: The daily cost is $34.00.
+user: Thank you very much. You've been very helpful. Wait, one last thing. Please share the Heathrow International Airport address.
+assistant: Which contact would you like to share it with?
+user: Please share it with Justin.
+assistant: Let me see if I got everything correctly: You'd like to share the Heathrow International Airport address with Justin.
+user: No, sorry I made a mistake. I'm very distracted today. Please share the Market Broiler Fremont location instead.
+assistant: No problem. Please confirm that you're sharing the Market Broiler Fremont address with Justin.
+user: That is correct.
+tool(ShareLocation): ok n_results=1
+assistant: Address successfully shared.
+user: Thank you very much. You've been very helpful. At the moment, that's all I need.
+assistant: Have a fabulous day!

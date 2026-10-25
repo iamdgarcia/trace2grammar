@@ -1,0 +1,29 @@
+user: Tell me about the weather on the 7th of March.
+assistant: What is the location you want to check?
+user: I want to check San Ramon.
+tool(GetWeather): ok n_results=1
+assistant: It will be 74 degrees Fahrenheit on average. The chance of rain is 5 percent.
+user: And what will the wind be like?
+assistant: The wind speed will be 12 miles per hour on average.
+user: And what about the humidity?
+assistant: It will be around 17 percent for humidity.
+user: Alright. I want to visit a property on that day, can you schedule the visit?
+assistant: What property is it?
+user: It's the Grand Oak Apartments.
+assistant: I'll schedule a visit to Grand Oak Apartments on March 7th. Please confirm.
+user: That is what I want. How much is the cost and does it have 1 bathroom?
+tool(ScheduleVisit): ok n_results=1
+assistant: I've scheduled the visit. The cost is $4,700 and there are 3 bathrooms.
+user: I'll also need a rental car. I'll be using it until March 11th.
+assistant: Will you need the car starting March 7th? And is there a type you'd prefer such as a Sedan or SUV?
+user: I want it starting next Wednesday. And I'd prefer an SUV.
+assistant: What time will you be picking up the car?
+user: I'd like to pick it up at half past 6 in the evening.
+assistant: And where would you like to pick it up. Also, would you like insurance?
+user: No insurance. I'd like to pick it up at Pacific Central Station, it's convenient.
+assistant: I'll reserve you an SUV at Pacific Central Station for pick up at 6:30 pm on March 6th and drop off on March 11th, no insurance. Are all the details correct?
+user: Yeah, you got it right.
+tool(ReserveCar): ok n_results=1
+assistant: The car has been reserved successfully.
+user: Thanks a lot. I'll be going now.
+assistant: Have a good rest of your day.

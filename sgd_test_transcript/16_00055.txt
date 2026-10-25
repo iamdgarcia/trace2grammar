@@ -1,0 +1,35 @@
+user: I am looking to buy bus tickets.
+assistant: How many tickets do you want to buy and also when are you leaving?
+user: I want it for 1 people from Philly.
+assistant: Which time do you want to leave and where are you going? Also on which day do you plan to leave?
+user: I want to leave at 12 pm and I want to go to New York City. I am planning to leave on day after tomorrow.
+assistant: Can you please confirm the following details: You are planning to buy a ticket from Philadelphia to New York on March 3rd at 12 pm for 1 person. Also you don't have any extra luggage.
+user: Yes. This will work fine for me.
+tool(BuyBusTicket): ok n_results=0
+assistant: Sorry but the purchase was failed due to some unexpected errors. Is there anything else I can assist you with?
+user: Can you please try again? I want to leave at afternoon 2:15 from Anaheim, CA to Sacramento, CA.
+assistant: Can you please confirm the following details: You are planning to buy a ticket to Sacramento from Anaheim on March 3rd at 2:15 pm. The booking is for 1 person and you don't have any extra luggage.
+user: Yes. This works fine for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, the purchase was failed due to unexpected errors. How about a bus which leave at 2:30 pm and it will cost you $64.
+user: Yes. This will work fine for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket has been confirmed.
+user: Is this a direct bus?
+assistant: It has one-stop.
+user: Thanks a lot for all your help. Can you please help me in looking for a hotel in that area too? I need 1 room
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels that match your choice. There is a hotel called Courtyard By Marriott Sacramento Cal Expo which is a 3 star hotel.
+user: This sounds good.
+assistant: Would you like to make a reservation?
+user: Yes. I would like to make a reservation.
+assistant: On which date do you plan to check in?
+user: I am planning to check in on the 9th.
+assistant: How long will you be staying at the hotel?
+user: I will be staying there for 4 days.
+assistant: Can you please confirm the following details: You want to book a hotel in Courtyard By Marriott Sacramento Cal Expo from March 9th for 4 days. The booking is for 1 room and hotel is in Sacramento.
+user: Yes. This is nice.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel has been successfully booked.
+user: Thanks a lot for all your help. That's all for now.
+assistant: Bye and have a nice day.

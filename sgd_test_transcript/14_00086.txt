@@ -1,0 +1,15 @@
+user: I want to watch a movie now and I need your help to find a Family type movie which should be directed by Herbert Ross.
+tool(FindMovies): ok n_results=1
+assistant: What do you think about 1 movie named Steel Magnolias which has an average rating of 70 out of 100?
+user: Let me decide. Before that I need to know the actor of this movie.
+assistant: James Wlcek is the actor of this movie. Do you like it?
+user: Yes, I like this movie. I also want to search for some nice songs to listen now. Do you have nice collections?
+tool(LookupMusic): ok n_results=10
+assistant: Yes, I got 10 songs and what about the one which is First True Love by Kolohe Kai from the Album Love Town?
+user: I like this song and I want to listen it now? Do you play for me?
+assistant: Yes, please confirm to play the song First True Love in my Living room.
+user: That is confirmed to proceed now.
+tool(PlayMedia): ok n_results=1
+assistant: Okay, song started playing now and enjoy the same.
+user: Thanks and that's all for now.
+assistant: Have a good day.

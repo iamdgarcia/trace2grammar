@@ -1,0 +1,14 @@
+user: Hey, I feel like listening to some tunes right now. Can you find me something from two years ago?
+tool(LookupMusic): ok n_results=10
+assistant: Sure! What about the song Airplane Mode from the album Holo by Limbo?
+user: I love it.
+assistant: Should I play it?
+user: Please do. Cast it on the living room device.
+assistant: So you want the song the song Airplane Mode on the Living room device?
+user: Actually, cast it on the patio device.
+assistant: So you want me to play the song Airplane Mode on the Patio?
+user: Yes, that's it. What kind of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy! It's a pop song.
+user: Thanks! That's all.
+assistant: Have a great day!

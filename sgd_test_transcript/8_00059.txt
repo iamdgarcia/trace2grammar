@@ -1,0 +1,18 @@
+user: I need to make a payment request.
+assistant: How much money are you requesting for payment?
+user: The payment will be for a total of one hundred and seventy five dollars.
+assistant: From who are you requesting payment?
+user: I want to request a payment from Margaret.
+assistant: You wish to request a payment from Margaret, a total of $175, will that be all for this public transaction?
+user: Yes, that is all.
+tool(RequestPayment): ok n_results=1
+assistant: The payment request was made successfully.
+user: Thank you for the help, can you also make a payment from my in-app balance to Victoria?
+assistant: How much will you be drawing from your balance?
+user: The amount will be 168 bucks.
+assistant: You will be making a public payment to Victoria from your app balance, the total will be $168, is that correct?
+user: That is all correct, thanks.
+tool(MakePayment): ok n_results=1
+assistant: The payment was made successfully, the recipient will be notified shortly.
+user: That is all, thanks for the help, bye!
+assistant: No problem, have a good day.

@@ -1,0 +1,44 @@
+user: I am interested in finding a unisex salon which is in Los Gatos.
+tool(FindProvider): ok n_results=6
+assistant: There are 6 salons for you to consider, with one of them being Great Clips which is a good salon in Los Gatos.
+user: Can you tell me the average rating of this salon, and it's address?
+assistant: The salon is found at 15992 Los Gatos Boulevard, wich has a rating of 3.8
+user: That seems good to me.
+assistant: Do you want to have an appointment reserved for you at this salon?
+user: Yes I want to have an appointment booked for me at this salon.
+assistant: Can you tell me the suitable time for you to have the appointment, and the date you would like to have the appointment on?
+user: I will be available to have the appointment at 12:45 in the afternoon, and the date for the visit should be the 1st.
+assistant: Can you please confirm that you want to book an appointment at Great Clips salon at 12:45 pm on March 1st?
+user: Yes, that is correct. Can you tell me the phone number I can use to call them?
+tool(BookAppointment): ok n_results=1
+assistant: I apologize but I was unable to make the reservation you asked for. Can I do something else to help you?
+user: Is it possible for you to try making the reservation again, but this time try to make it for 12:15 pm.
+assistant: Can you please confirm that you want to make a reservation for Great Clips salon on March 1st at 12:15 pm?
+user: Yes that is correct. Can you give me the phone number I can use to call them?
+tool(BookAppointment): ok n_results=1
+assistant: If you want to call them you can at 408-358-2232, though I was unable to make the booking for the appointment. Great Clips is indeed a good salon, so how would you like for me to try making the reservation for the appointment on March 1st at 12 pm?
+user: Yes that is what I want.
+tool(BookAppointment): ok n_results=1
+assistant: Your requested appointment has been made.
+user: I also need to find a restaurant there so I can eat something on that day.
+assistant: Is there some specific kind of food you are interested in?
+user: I would like a place which serves Pizza.
+tool(FindRestaurants): ok n_results=8
+assistant: You might consider Aldo's Ristorante & Bar, which is a good salon that can be found in Los Gatos.
+user: Can you tell me if they have vegetarian options there?
+assistant: Unfortunately they do not have vegetarian options there.
+user: Can you give me the address of the restaurant, and also could you tell me if they have outdoor seating?
+assistant: The address of the restaurant is 14109 South Winchester Boulevard, though from what I can see they do not have outdoor seating.
+user: Is there some other restaurant you can suggest?
+assistant: Another restaurant for your consideration is Campo Di Bocce Of Los Gatos, which can be found in Los Gatos.
+user: That is alright with me.
+assistant: Are you willing to have a table booked for you at this place?
+user: Yes, I want to have a table booked for me at this restaurant.
+assistant: Can you tell me the time which suits you best for the reservation?
+user: The reservation should be for 6:30 pm
+assistant: Can you please confirm that you want to book a table for 2 people at the Campo Di Bocce Of Los Gatos in Los Gatos for March 1st at 6:30 pm?
+user: Yes that suits me well. Can you tell me if this restaurant has vegetarians options? Could you also let me know their phone number that I can use to call them?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your requested reservation has been made, though unfortunately the restaurant does not have vegetarian options. If you want to call them you can at 408-395-7650.
+user: I am grateful to you. That's all I needed.
+assistant: Have a good time!

@@ -1,0 +1,26 @@
+user: I would like to find a salon.
+assistant: What city should I search in?
+user: I would like a salon in Menlo Park. I want a unisex salon.
+tool(FindProvider): ok n_results=2
+assistant: I would like 2 salons like Great Clips a nice salon in Menlo Park.
+user: Yes that is good. Could you share the location of 325 Sharon Park Drive Ste F-2. I'd like to share it with Nancy.
+assistant: Please confirm details of the location 325 Sharon Park Drive Ste F-2 with Nancy.
+user: No, the address to share would be 1174 Solano Avenue and I'd like to share it with Kimberly.
+assistant: Please confirm details that you're sharing the location 1174 Solano Avenue with Kimberly.
+user: That sounds good.
+tool(ShareLocation): ok n_results=1
+assistant: You have successfully shared the location.
+user: Thanks and that's pretty helpful.
+assistant: Would there be something else I can help with?
+user: Will you show me my alarms?
+tool(GetAlarms): ok n_results=4
+assistant: There would be an alarm for 10 am with the name Call.
+user: Okay that is great. I"d like to add an alarm for four in the evening so call the new alarm phone home.
+assistant: Please confirm details to create an alarm at 4 pm with the name Phone home.
+user: No, it is for quarter to 4 in the afternoon.
+assistant: Please confirm details to create an alarm at 3:45 pm with the name phone home.
+user: Yes, I will.
+tool(AddAlarm): ok n_results=1
+assistant: The alarm has been added successfully.
+user: Thanks so much. That will be all.
+assistant: Thank you so much.

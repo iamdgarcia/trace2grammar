@@ -1,0 +1,29 @@
+user: I'm due for a hair cut, and need help finding a salon.
+assistant: Any particular city I should search in?
+user: Please find a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: Your search for Santa Rosa salons yielded 9 suitable results. The first is the nice Daredevils & Queens salon.
+user: Please confirm whether the salon is unisex.
+assistant: No, the salon does not serve both genders.
+user: That's all right with me. I prefer non-unisex salons. While there, I'd like to watch a movie. Could you help me find one?
+tool(FindMovies): ok n_results=10
+assistant: sure. I can help you with that. Your search yielded 10 movies that might interest you. The first three are After The Wedding, Fiddler: A Miracle of Miracles and Good Boys.
+user: I prefer After The Wedding,
+assistant: There's a screening on March 2nd. Would you like to watch it on that day?
+user: Yes, that works for me.
+tool(GetTimesForMovie): ok n_results=1
+assistant: There's only 1 showtime for the movie on that day. It is 8:30 pm. in Summerfield Cinemas.
+user: What's the cost of one ticket?
+assistant: One ticket costs $10.
+user: That works for me. Please book me a 5:30 in the evening appointment on that day at the salon you just found.
+assistant: Sure. Let me see if I got everything correctly: You're book a 5:30 pm hair appointment on March 2nd at Daredevils & Queens salon. Is that correct.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: It's located at 122 4th Street. Unfortunately, I was unable to book your preferred appointment at the nice Daredevils & Queens salon. There's an opening on March 2nd at 5 pm. Will that be fine?
+user: Yes, that will be fine.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment.
+user: Thank you very much. You've been very helpful.
+assistant: Would you like my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Goodbye, and have a wonderful day!

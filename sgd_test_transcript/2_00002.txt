@@ -1,0 +1,12 @@
+user: I would like to search for songs at this time.
+tool(LookupMusic): ok n_results=10
+assistant: What do you think about Where Have You Been by Rihanna from the Talk That Talk album?
+user: What year did it come out?
+assistant: It was from 2011.
+user: Yes, that's the one I'd like to play songs so cast it on the speaker outside.
+assistant: Please confirm playing the song Where Have You Been in Patio.
+user: Yes, that is the one.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks so much. That is it.
+assistant: Have a great day.

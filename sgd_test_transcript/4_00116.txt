@@ -1,0 +1,22 @@
+user: I'd like to search for a direct bus.
+assistant: Where are you going?
+user: I'm going to LA.
+assistant: Where will you be departing from and on what date?
+user: I'll be leaving from Long Beach on the 4th of March.
+tool(FindBus): ok n_results=10
+assistant: Of the 10 suitable buses, there is one with ticket priced at $12, that leaves at 6 am. Would you be interested in it?
+user: Which station does it leave from?
+assistant: It departs from the Downtown Station.
+user: And which station does it arrive at?
+assistant: It arrives at the North Hollywood Station.
+user: That sounds good to me.
+assistant: Shall I get you tickets on this bus?
+user: Yes, please get me 1 ticket.
+assistant: Please confirm that you want 1 ticket from Long Beach to Los Angeles on the bus that leaves at 6 am on March 4th.
+user: Hold on. I also have extra luggage.
+assistant: Okay. So you will be traveling to Los Angeles with extra luggage. Is that correct?
+user: Yes, that's right.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket has been reserved successfully.
+user: Thank you very much for the assistance. That's all I need.
+assistant: Have a great day!

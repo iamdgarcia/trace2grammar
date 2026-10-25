@@ -1,0 +1,20 @@
+user: Can you please find me some nice attractions in San Fran? Attraction type is not important.
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 which I think you'd like. I recommend checking out a great Historical Landmark, Alcatraz.
+user: Perfect. Now let's find a Mystery movie to watch in a regular show at Balboa Theatre.
+tool(FindMovies): ok n_results=1
+assistant: Do you think you'd like to watch Official Secrets?
+user: Actually, Official Secrets sounds awesome.
+assistant: Is there anything else I could do for you?
+user: Yes, I'd like you to find me some good Scary movies online featuring Isabelle Grill.
+tool(FindMovies): ok n_results=1
+assistant: There's just 1 movie matching your criteria - Midsommar.
+user: Midsommar sounds perfect. Please play it for me and bear in mind that I do not need subtitles.
+assistant: Can you please confirm that you want me to play Midsommar with English subtitles?
+user: Yes, that's correct.
+tool(PlayMovie): ok n_results=1
+assistant: I've started playing it. Enjoy!
+user: Thanks a lot!
+assistant: Is there anything else I could do for you?
+user: No, not at the moment. Thanks!
+assistant: My pleasure. Have a nice day!

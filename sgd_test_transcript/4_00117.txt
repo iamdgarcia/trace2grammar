@@ -1,0 +1,20 @@
+user: Hey, I need to go on a short trip. Can you help me find a bus?
+assistant: What's the destination?
+user: Vegas is what I plan.
+assistant: And where will you be leaving from?
+user: I'll be leaving from San Fran, I believe.
+assistant: And when do you plan to go?
+user: On the 3rd of March would be great.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses. How about one departing at 7:50 am with a ticket that costs $50?
+user: Sounds perfect. I'll want it.
+assistant: How many tickets should I get?
+user: Just 1 please.
+assistant: So 1 ticket for a bus leaving San Francisco at 7:50 am on March 3rd towards Las Vegas? And no extra luggage?
+user: Yes, that's it. Which station does it departs from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed. You'll be departing from Transbay Terminal.
+user: Thanks a lot for the help.
+assistant: Can I help you further?
+user: No, that's all. Thanks a lot.
+assistant: Have an amazing day.

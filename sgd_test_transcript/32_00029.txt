@@ -1,0 +1,22 @@
+user: Can you search for songs by Cody Johnson, maybe something three years back from the album Gotta Be Me?
+tool(LookupMusic): ok n_results=1
+assistant: I found With You I Am by Cody Johnson from the album Gotta Be Me.
+user: Yes, perfect!
+assistant: Would you like to hear it now?
+user: No, not right now thanks!
+assistant: Can I assist you with anything else?
+user: Yes, can you help me find some Science related movies featuring Justin Dreyfuss?
+tool(FindMovies): ok n_results=1
+assistant: I found 1 you may like called Close Encounters of the Third Kind.
+user: Close encounters would be perfect!
+assistant: Would you like to see the movie now?
+user: No, not at this time, but can you cast the song you just found in my kitchen?
+assistant: Please confirm you would like to hear With You I Am in the Kitchen.
+user: Yes, and what kind of music is that?
+tool(PlayMedia): ok n_results=1
+assistant: It is a Country song, enjoy!
+user: Thanks, can you show me my alarms?
+tool(GetAlarms): ok n_results=1
+assistant: You have 1 alarm set for 4 pm with the name Shopping.
+user: Okay, perfect, that will be all for now!
+assistant: Thank you very much!

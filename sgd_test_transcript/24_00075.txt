@@ -1,0 +1,17 @@
+user: I want to watch the movie Regal Crow Canyon.
+assistant: Where are you?
+user: I am looking in San Ramon.
+tool(FindMovies): ok n_results=4
+assistant: I found 4 movies currently playing like Hustlers, IT Chapter Two, Once Upon a Time In Hollywood.
+user: IT2 is good. I want to find a place to eat near the theater too.
+assistant: Do you have a restaurant in mind? A time?
+user: I would like to go to Inchin's at 12:30 in the afternoon.
+assistant: Please confirm, reservation for Inchin's Bamboo Garden in San Ramon on March 1st at 12:30 pm for 2 people.
+user: Yes, that is correct. What is the seating situation? What kind of food do they serve?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is complete. They are a Chinese restaurant without outdoor seating.
+user: What time does the 3d show of the movie I want to see start?
+tool(GetTimesForMovie): ok n_results=1
+assistant: It has 1 showing at 8 pm at Regal Crow Canyon.
+user: Thanks! That is all.
+assistant: Have a nice day.

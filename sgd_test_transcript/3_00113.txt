@@ -1,0 +1,22 @@
+user: I'd like to look for a rental vehicle.
+assistant: What time would you like to begin the vehicle rental?
+user: I require the vehicle beginning on the 4th of this month.
+assistant: When would you like to pick up the vehicle, where do you require the vehicle from, and to what date do you desire the vehicle?
+user: I'd like to pick up the vehicle on five in the evening to the 5th of March, and I'm searching for vehicles in Sydney, Australia.
+tool(GetCarsAvailable): ok n_results=6
+assistant: There is a lovely Dodge Charger sedan available from Kingsford Smith International Airport.
+user: What is its price per night?
+assistant: The price is $37.00 per night.
+user: Do you possess an alternative?
+assistant: There is a lovely Ford Focus Hatchback available from Kingsford Smith International Airport.
+user: That's fine with me. I'd like to book a rental vehicle.
+assistant: Do you wish to include insurance?
+user: I do not require insurance.
+assistant: Please verify the following information: you are picking up a Hatchback from Kingsford Smith International Airport on March 4th, 5 pm, until March 5th.
+user: Yeah, that's perfect for me.
+tool(ReserveCar): ok n_results=1
+assistant: Your vehicle has been booked.
+user: Thank you for your assistance.
+assistant: Could I assist with anything else?
+user: No, thank you for your assistance.
+assistant: Have a pleasant afternoon.

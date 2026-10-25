@@ -1,0 +1,10 @@
+user: I would like to check the weather in Alamo for next Wednesday.
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 75 degrees Fahrenheit and there is a 7 percent chance of rain.
+user: How will the humidity be?
+assistant: The humidity will be around 20 percent.
+user: How will Mountain View be on the 9th of March?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be around 77 degrees and there is a 27 percent chance of rain.
+user: That is all I needed.
+assistant: Have a good day.

@@ -1,0 +1,15 @@
+user: I am in need of a ride and would like to order a cab. Will you assist me with booking one?
+assistant: Do you have a preference in the type of ride and how many people will be in the group?
+user: There will be 2 people and we would like to take a shared ride.
+assistant: What is your planned destination?
+user: The address of my destination is 660 Gail Avenue.
+assistant: Please confirm you would like a pool ride for 2 people to 660 Gail Avenue.
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab has been booked and is on its way here.
+user: What is my expected cost?
+assistant: The ride will cost around $23.90.
+user: Thanks so much for your help!
+assistant: Is there anything else I may assist you with today?
+user: No, that is all for now. Thank you!
+assistant: Have a great day!

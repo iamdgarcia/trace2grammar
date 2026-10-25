@@ -1,0 +1,40 @@
+user: I am planning to visit some attractive places for which I need your help. Can you find me an interesting place like a Historical Landmark? Search for something which is safe place for Children also.
+assistant: Okay. Do you want to search it near to your location? If so let me know your current location or do you like to search it in any particular city?
+user: Search for the one in Paris, France.
+tool(FindAttractions): ok n_results=6
+assistant: That's noted. I got 6 attractive places in your desired City. What about the one named Arc De Triomphe which is also a historical Landmark.
+user: That's fine and thanks. Now, help me to book a car for rent and I need to book it from this Saturday.
+assistant: What is the final date until you require the car and shall I search it in Paris itself?
+user: Yes, search for the car in the same place and I want to book it till 6th of this month.
+assistant: Okay. one more detail required. Let me know your comfortable time to pick it up.
+user: Book it for the pick up at 3 o'clock in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: Okay. What about a Car model SUV Alfa Romeo Stelvio? Do you prefer this model? Then you can choose a Car available at Orly International Airport. What do you think?
+user: What about the cost? How much for one day?
+assistant: It is around $46.00 per day.
+user: Okay, this car is okay to me and please book it now.
+assistant: Shall I book it including insurance?
+user: No, Don't add insurance.
+assistant: Okay, now I want to confirm to book a SUV model Car available at Orly International Airport from March 2nd for the pick time 3 pm to March 6th without insurance.
+user: Sorry. I have changed my mind and please add insurance.
+assistant: That's no problem. Please confirm once again to book a SUV car with insurance.
+user: That is correct and you can proceed now.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked the car as per your requirement.
+user: Thanks. I just want to share the location now.
+assistant: Which location? whether Arc De Triomphe or Orly International Airport?
+user: Share the location Orly International Airport.
+assistant: To whom you want to share?
+user: Share it with Beverly.
+assistant: Please confirm to share the location Orly International Airport with Beverly.
+user: Please share it with Emily instead of Beverly.
+assistant: Okay, please confirm once again to share the location Orly International Airport with Emily.
+user: Sorry, I forgot to change the address. Please share the address Mendoza's Restaurant to Emily.
+assistant: That's okay. Please confirm finally to share the location Mendoza's restaurant with Emily.
+user: That is confirmed to proceed.
+tool(ShareLocation): ok n_results=1
+assistant: Your location was successfully shared.
+user: Thank you for your kind help.
+assistant: Anything else you want?
+user: No, thank you so much.
+assistant: Have a good day.

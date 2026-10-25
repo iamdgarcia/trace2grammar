@@ -1,0 +1,44 @@
+user: I want to search for some nice events and I need your help to find the suitable one on 9th of this month.
+assistant: Do you have any particular City in your mind to search for the events?
+user: Yes, find the one in Vancouver.
+assistant: What type of event that you are looking for whether it is like a Music or Theater or anything else?
+user: Find the one like Drama Events.
+tool(FindEvents): ok n_results=4
+assistant: I got an event named Alice In Glitterland which will take place at The Wise and on the date of March 9th at 7:30 pm. Do you like to go to this event?
+user: Yes, I like it.
+assistant: What else you want me to do now?
+user: Search for some buses to go there.
+assistant: From which place you need to book the bus?
+user: Book it from Portland.
+assistant: Shall I book it from March 9th?
+user: No, please book it from next Monday and I need two tickets.
+tool(FindBus): ok n_results=7
+assistant: Got 7 buses and what about your opinion to travel on a bus which will leave at 7:10 am for the ticket cost $46?
+user: That's okay. But I want to search for a direct bus on March 6th. Find me the suitable one.
+tool(FindBus): ok n_results=7
+assistant: Found a bus which is going to depart at 7:20 am and the cost for the ticket will be $36. Is it okay to you?
+user: Yes, I think so. Let us search for a round trip flight to go there. I want your help to do the same.
+assistant: What about the leaving date? shall I consider it as March 9th?
+user: Please search for the flight to start my travel on March 6th.
+assistant: Okay, let me know your return date so that I can book the flight accordingly.
+user: Return date is on 11th of March.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Got 2 flights. One is an onward flight with American Airlines which is going to takes off at 11:20 am and the return flight time is 11:10 am for the ticket cost $383. Do you want to book this flight?
+user: Yes, I like it. but I need to book it later.
+assistant: What else you want from me now?
+user: I need your help to find a hotel to book 1 room around that area and it should be a four star hotel. I also need permission to smoke there. Can you search for the suitable one?
+tool(SearchHotel): ok n_results=2
+assistant: Yes, What about the hotel named Auberge Vancouver Hotel with 4 stars?
+user: Let me know their location address.
+assistant: They are located at 837 West Hastings Street.
+user: That's okay. Search for something else please.
+assistant: What about an another hotel named Exchange Hotel Vancouver which is a 4 star hotel and do you like to stay there?
+user: Let me know their contact number first.
+assistant: It is +1 604-563-4693.
+user: That is okay and thanks. Now we go back to the booking of tickets to the event that I have selected before.
+assistant: Please confirm to book 2 tickets to the event Alice In Glitterland on March 9th in Vancouver.
+user: That is confirmed to proceed.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are successfully booked to the event.
+user: Thanks and that's all.
+assistant: Have a good day.

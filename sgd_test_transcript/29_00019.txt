@@ -1,0 +1,24 @@
+user: Can you please help me find a hotel?
+assistant: Sure, in which city?
+user: Please find me something in London.
+tool(SearchHotel): ok n_results=10
+assistant: OK, there are 10 hotels matching your criteria, out of which I'd recommend an awesome 5 star hotel, the 45 Park Lane.
+user: Perfect. Now let's find a round trip flight to there.
+assistant: From where are you going to be travelling?
+user: I'm flying out of Chi-town and I would prefer to fly American Airlines.
+assistant: Please tell me the date for your return flight as well as if you are leaving on March 7th.
+user: I'll be flying out this Sunday and I plan to return on March 12th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: If you prefer American Airlines, there's a flight with a layover, taking of at 1:25 pm. The return flight is at 12:45 pm and the total price is $630.
+user: OK, perfect. Now let's go back and place a reservation for 1 room at the hotel you found earlier, starting next Tuesday, for seven days.
+assistant: Can you please confirm that you want 1 room in London at 45 Park Lane, from March 5th, for 7 days?
+user: Yes, that's correct.
+tool(ReserveHotel): ok n_results=1
+assistant: I've successfully placed your reservation.
+user: Perfect. Can you please give me the hotel's phone number?
+assistant: Sure, you can reach them at +44 20 7493 4545.
+user: Perfect! Thanks so much! Can you please find me some interesting attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There's a Historical Landmark which you shouldn't miss - 30 St Mary Axe (The Gherkin).
+user: Got it! Thanks again! That will be all for now.
+assistant: My pleasure. Have a nice day!

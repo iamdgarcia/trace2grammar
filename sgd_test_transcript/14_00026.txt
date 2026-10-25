@@ -1,0 +1,13 @@
+user: I would like to see a fantasy movie starring Timothy Bateson.
+tool(FindMovies): ok n_results=1
+assistant: There is 1 movie that is suitable called Labyrinth.
+user: I want to see Labyrinth right now with French subtitles.
+assistant: You would like to see Labyrinth with French subtitles?
+user: Yes, I do.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: Thanks. What would the weather be like in Napa next Monday?
+tool(GetWeather): ok n_results=1
+assistant: The temperature should be 85 degrees Fahrenheit with 5 percent chance of rain.
+user: Ok then. That would be all.
+assistant: Take care of yourself.

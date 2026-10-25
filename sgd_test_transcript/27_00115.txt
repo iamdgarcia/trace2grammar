@@ -1,0 +1,24 @@
+user: We four people are planning to leave for LAX from San Diego. Shall we get a bus?
+assistant: What is the time of departure?
+user: We will leave on next Friday.
+tool(FindBus): ok n_results=10
+assistant: You can avail one of 10 buses. Do you prefer the one leaving at 9:10 am with ticket fare $25.
+user: Fine, are there any attractions?
+tool(FindAttractions): ok n_results=10
+assistant: 10 attractions are there. You may like the Angels Flight Railway, a historical Landmark.
+user: Good, please get the tickets booked.
+assistant: Verify your request, you need tickets for 4 people on the bus leaving at 9:10 am on March 8th, from San Diego to Los Angeles, with no extra luggage.
+user: Found correct. Is it one-stop bus. From where will it depart?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is direct bus from El Cajon Bus Stop. Your tickets are booked.
+user: Are there any nice hotels to get one room?
+tool(SearchHotel): ok n_results=10
+assistant: yes, 10 hotels you can get. Ac Hotel By marriott Beverly Hills is cozy with 3 star status.
+user: Any other suitable one?
+assistant: Airtel Plaza Hotel is another one with 3 star status.
+user: Look for another one.
+assistant: Banana Bungalow Hollywood is 1 star hotel. Is it ok?
+user: Give me their phone number.
+assistant: +1 323-469-2500 is their contact number.
+user: Good, thanks for the help.
+assistant: Enjoy the day.

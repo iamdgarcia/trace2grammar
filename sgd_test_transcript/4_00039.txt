@@ -1,0 +1,16 @@
+user: Find for me please a restaurant tagged affordable for price that have outdoor seating.I would like that Steakhouse to be served.
+assistant: On which location you want to be?
+user: In Livermore will be okay.
+tool(FindRestaurants): ok n_results=1
+assistant: Located in Livermore is a nice restaurant called Castle Rock Restaurant.
+user: Sounds very good.Book a table for 3 people.
+assistant: At what time you want me to try to reserve?
+user: Try to make it at half past 1 in the afternoon.
+assistant: Book a table for 3 people on March 1st at 1:30 pm in city Livermore at Castle Rock Restaurant.Is that correct?
+user: Yes, very good.Tell me the user rating for this restaurant.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation was made successfully.User rating is around 3.7.
+user: Thank you for all.
+assistant: With something else can I help you?
+user: No.Thanks.
+assistant: Have a great day!

@@ -1,0 +1,32 @@
+user: I need to look up a one way flight please.
+assistant: Sure, I can help you with that. Which city do you want to travel to? I would also need a departure date and city?
+user: Ok, I am flying to Las Vegas from SF on the 1st of this month.
+tool(SearchOnewayFlight): ok n_results=5
+assistant: I found Alaska Airlines has a flight at 3:40 pm for a price of $95. Would this be acceptable?
+user: No, give me more options. I am flying to SD and I will only require one ticket.
+tool(SearchOnewayFlight): ok n_results=4
+assistant: Ok, I understand. I've located 4 flights for you. I would like to recommend American Airlines onward flight departs at 9:20 am, this is a direct flight for a cost of $106. How does this sound?
+user: Sounds good. I would like to also look up trains going there as well.
+assistant: Sure, Would you be travelling on March 1st?
+user: Search tickets for Wednesday next week and makes sure tickets are conditionally refundable.
+tool(FindTrains): ok n_results=6
+assistant: Sure! There are 6 trains that may work for you. I show a train departing at 6 am for a cost of $91 total.
+user: I would like Business class tickets. Please give me more options.
+tool(FindTrains): ok n_results=5
+assistant: Ok, there are 5 trains that fit your request. There is a train departing at 9:20 am for $140 total.
+user: Which station would I arrive at?
+assistant: This train will arrve at Santa Fe Depot
+user: Look up more option for March 2nd please.
+tool(FindTrains): ok n_results=4
+assistant: Sure thing! there are 4 trains that may work for you. There is a train departing at 12 pm for a total of $126 total.
+user: Which station does this train leave from and arrive at?
+assistant: The train will arrive at Santa Fe Depot and will leave from Salesforce Transit Center.
+user: That sounds great. Let's book tickets now, also add trip insurance as well please.
+assistant: I understand, one moment. Please confirm we are purchasing 1 ticket from San Francisco headed to San Diego. This train will leave on March 2nd at 12 pm and is a Business ticket. It also has trip insurance added.
+user: That is correct.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket is successfully booked.
+user: That was super easy. thank you
+assistant: your welcome. will there be anything else?
+user: nope that was all.
+assistant: ok, enjoy your day

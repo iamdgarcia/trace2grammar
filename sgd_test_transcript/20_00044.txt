@@ -1,0 +1,25 @@
+user: I'd like a rental car through the 9th, please.
+assistant: Sure, when and what time would you like to begin the rental? Where will you be renting from?
+user: I'd like to grab it on the 7th of this month at six pm in Sydney.
+tool(GetCarsAvailable): ok n_results=9
+assistant: Okay, there are 9 options for your search. There is a Hatchback at Kingsford Smith International Airport available, a Fiat Panda. Does that work?
+user: Sure. I'd like a house to stay there as well. Please find one for one person with at least a 3.9 star rating.
+tool(SearchHouse): ok n_results=10
+assistant: Okay, there is a 3.9 star house at 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia. Does that work?
+user: Do they have laundry service? Can I get a contact number for them?
+assistant: Yes, they do. Their number is +61 2 9634 9634
+user: Are there any other options?
+assistant: Yes, there is another 3.9 star at 1 Kensington Street, Chippendale New South Wales 2008, Australia. Does that work?
+user: Yes that works.
+assistant: Would you like to reserve it?
+user: No, not now.
+assistant: Is there anything else I can help you with?
+user: Yes, please reserve the car rental you found for me.
+assistant: Would you like insurance?
+user: Yes, I would.
+assistant: Alright. Just to confirm, you're looking to reserve the Hatchback car at Kingsford Smith International Airport from March 7th at 6 pm to March 9th. Is that correct?
+user: Yep, sounds good.
+tool(ReserveCar): ok n_results=1
+assistant: Your reservation is complete.
+user: Thank you, that's all.
+assistant: Have a wonderful day.

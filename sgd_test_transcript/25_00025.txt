@@ -1,0 +1,25 @@
+user: I am planning for a long time to watch a movie at AMC Saratoga. But I can't. Now, I must watch it for which I need your help to choose the best movie to watch at that place.
+assistant: Okay, we will do it right now. Let me know your current location to search for the movie.
+user: I want the same in San Jose.
+tool(FindMovies): ok n_results=4
+assistant: You can choose among Ad Astra, Angel has fallen and Hustlers.
+user: No, I don't like any one of this. Do you have some other options?
+assistant: Yes, what about IT Chapter Two?
+user: Yes, IT two is a good movie and I fix this. Also I want to hear some nice songs now. Can you find the one in Rock-and-roll type and by the singer Radwimps released from three years back?
+tool(LookupMusic): ok n_results=4
+assistant: Yes, I got 4 results based on your details. Do you like to hear the song Dream Lantern by Radwimps from the Album Your Name?
+user: I choose this song and thanks for your help to find the same.
+assistant: How can I assist you further?
+user: Play this song now.
+assistant: Okay, please confirm to play the song Dream Lantern in Living room speaker.
+user: I want to hear it in the speaker outside.
+assistant: Okay, please confirm to play the song Dream Lantern in Patio.
+user: Sorry, play it in my Kitchen.
+assistant: Okay, please confirm to play the song Dream Lantern in Kitchen speaker.
+user: That is confirmed.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing and you can enjoy the same now.
+user: Thank you so much.
+assistant: Anything else you want?
+user: No, thanks for everthing.
+assistant: Have a great day.

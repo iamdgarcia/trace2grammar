@@ -1,0 +1,26 @@
+user: Find me some attractions to go to?
+assistant: In what area would you like me to look in?
+user: Look in the area of London, UK.
+tool(FindAttractions): ok n_results=10
+assistant: I found a historical landmark that you should go visit. It's 30 St Mary Axe (The Gherkin).
+user: Great, can you look for some others? I would prefer something that's free.
+tool(FindAttractions): ok n_results=10
+assistant: There is a Performing Arts Venue by the name of Alexandra Palace.
+user: Can you tell me their phone number?
+assistant: You can contact them at 20 8365 2121.
+user: Alright, fantastic. I also need to find a house to crash at there.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses that fit your search. There is a 4.3 rated house found at 1 Addington Street.
+user: That sounds like a great home.
+assistant: Do you want to reserve this house?
+user: No, maybe later. But, I want to check on round trips there. I'll be coming back next Thursday.
+assistant: What is your departure city and the dates of travel?
+user: I need one ticket that's leaving from Seattle, WA and will begin on the 1st.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Is Delta Airlines good for you? They have a flight leaving at 8:35 am and has a layover. The return flight will leave at 9:30 am and the ticket price is $647.
+user: Would that be a Premium Economy ticket? When will the return flight get back?
+assistant: The seat is Economy class and will return at 7:22 pm.
+user: Okay, that works for me.
+assistant: Would you like more help?
+user: Nope, but thanks for everything.
+assistant: Enjoy your day.

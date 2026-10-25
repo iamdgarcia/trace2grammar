@@ -1,0 +1,34 @@
+user: Hello, I am looking for a Walnut Creek unisex salon please.
+tool(FindProvider): ok n_results=10
+assistant: How about Blow Dry Bar in Walnut Creek?
+user: Yes, great. I also need to find a therapist in that same area.
+assistant: Are you looking for a psychologist or a psychiatrist or something else?
+user: I want a family counselor actually.
+assistant: In Walnut Creek also?
+user: Yes, that's right.
+tool(FindProvider): ok n_results=4
+assistant: There are 4 therapists in that area. Andreotti Daniel is family counselor in Walnut Creek.
+user: Where is the office located?
+assistant: It is at 45 Quail Court # 200.
+user: And the phone number please?
+assistant: Sure, it's 925-930-9650.
+user: That sounds good to me.
+assistant: Shall I make an appointment with you?
+user: Yes, please do.
+assistant: On what date and time please?
+user: I'd like it for one in the afternoon on the 5th of this month.
+assistant: Confirming an appointment with Andreotti Daniel on March 5th at 1 pm.
+user: Sorry, change that to the afternoon 3:30 please.
+assistant: Confirming a March 5th appointment at 3:30 pm.
+user: Correct, thanks for that.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment has been set and you will receive a confirming email shortly.
+user: Thanks. I'd like to set a salon appointment too please at 6:45 pm.
+assistant: Confirming a 6:45 pm appointment at Blow Dry Bar on March 5th.
+user: That works, thanks. What's the phone number and address please?
+tool(BookAppointment): ok n_results=1
+assistant: The phone number is 925-837-2990 and they are located at 1639 North California Boulevard. But there was a problem making the appointment. Would you like to try for Blow Dry Bar on March 5th at 6:30 pm?
+user: No thanks, that's okay.
+assistant: Anything else I can help you with today?
+user: Nope, I'm good, thanks.
+assistant: Thank you very much.

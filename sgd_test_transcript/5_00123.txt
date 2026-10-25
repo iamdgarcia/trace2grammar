@@ -1,0 +1,19 @@
+user: I want a Psychiatrist.
+assistant: Where are you?
+user: In Novato please.
+tool(FindProvider): ok n_results=2
+assistant: There is a psychiatrist called Dillon Charles R in Novato.
+user: Actually could you find me a Family Counselor in Fremont?
+tool(FindProvider): ok n_results=3
+assistant: I have come up with 3. There is Center For Well Being in Fremont with a Family Counselor.
+user: Can I have their address and phone number?
+assistant: 1301 Mowry Avenue and their phone number is 510-797-3941.
+user: I am happy with that. Please book me an appointment for 14th of this month at 12:30 in the afternoon.
+assistant: To confirm then that is an appointment with Center For Well Being at 12:30 pm on March 14th.
+user: Acutally change that to the 6th of this month at 10:30 in the morning.
+assistant: To confirm then that is March 6th at 10:30 am.
+user: Yes that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is now confirmed and you will receive an email to confirm this in time.
+user: Thanks so much. Goodbye.
+assistant: I am glad to have been of service.

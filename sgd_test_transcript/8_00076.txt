@@ -1,0 +1,15 @@
+user: Would you look for a train?
+assistant: When will you travel?
+user: Find tickets for March 2nd.
+assistant: What city will you go to?
+user: I need tickets from Anaheim going to Sacramento, CA.
+tool(FindTrains): ok n_results=10
+assistant: How about one that leaves at 6:50 am and costs $131?
+user: WHt station does it leave from and arrive to?
+assistant: Te train leaves from Anaheim Intermodal Center and arrives at Sacramento Valley Station.
+user: Sounds good to me.
+assistant: Would you like to get the tickets?
+user: Not right now.
+assistant: Should I help with anything else?
+user: No, but it was a great help.
+assistant: See you later.

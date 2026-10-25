@@ -1,0 +1,38 @@
+user: I would like to make a payment to Jerry.
+assistant: Sure thing. What is the amount you wish to transfer?
+user: Send him one hundred and four dollars please.
+assistant: Would you like to transfer the money from your app balance or credit card?
+user: Go ahead and send it from the money in app.
+assistant: No problem. Just confirm the following for me. Making a public transaction by transferring $104 dollars from your app balance to Jerry. Correct?
+user: Yes, that's right.
+tool(MakePayment): ok n_results=1
+assistant: Okay, your payment was made successfully. Jerry should see the money soon. Anything else?
+user: Could you find me a nice restaurant?
+assistant: Okay. Just let me know what type of food you would like to eat.
+user: Know of any places that have good Burgers?
+assistant: No problem. What location would you like me to search in?
+user: Find me something in Fremont please.
+tool(FindRestaurants): ok n_results=2
+assistant: Okay, I've found 2 restaurants you may like. How about claim Jumper Restaurants in Fremont? I hear they some really nice burgers.
+user: They are a bit much for me. Can you find any more economical places in the area?
+tool(FindRestaurants): ok n_results=2
+assistant: I hear Spin A Yarn is a very nice restaurant in Fremont. What do you think?
+user: No thanks. Anything else around town?
+tool(FindRestaurants): ok n_results=0
+assistant: No, sorry there are no more restaurants that match your query. Is there anything else I can help you with?
+user: Well okay then. Can you find me something else? How about vegetarian places? Something Taiwanese?
+tool(FindRestaurants): ok n_results=1
+assistant: B K's Bistro is a really nice restaurant in Fremont.
+user: What's their rating?
+assistant: They have a nice average user rating of around 4.1.
+user: Do you know if they have outdoor seating? What's their number?
+assistant: They do not have outdoor seating, sorry. You can contact them at 510-770-8818.
+user: Okay, this place sounds nice.
+assistant: Would you like to reserve a table there?
+user: Yeah, sure thing. Make a reservation for two for half past 5 in the evening on the 12th of this month.
+assistant: Just confirm the following details. Booking a table for 2 at B K's Bistro in Fremont for 5:30 pm on March 12th. Correct?
+user: Yup, that works for me. Can I get the address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Okay, your reservation was a success! The restaurant is located at 3113 Stevenson Boulevard.
+user: Okay, thanks alot. That's all for now.
+assistant: My pleasure. Have a good day.

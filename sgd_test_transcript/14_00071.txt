@@ -1,0 +1,15 @@
+user: Will you find Fantasy movies directed by Peter Jackson?
+tool(FindMovies): ok n_results=1
+assistant: Found 1 movie. The Lord of the Rings: The Return of the King with an average rating of 93 out of 100.
+user: Who's in this movie?
+assistant: Liv Tyler is in it.
+user: Great. Find some songs for me?
+tool(LookupMusic): ok n_results=10
+assistant: Found 10 songs. One of them is Malibu by Miley Cyrus from the album Younger Now.
+user: Nice. Will you play this song?
+assistant: Confirm Malibu playing in Living room.
+user: Terrific. What genre? What year was it released?
+tool(PlayMedia): ok n_results=1
+assistant: It's Pop from 2017.
+user: Thanks.
+assistant: Enjoy your day.

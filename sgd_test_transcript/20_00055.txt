@@ -1,0 +1,32 @@
+user: I have a trip and intend to go by a rental car. Can you look for one?
+assistant: When do you want it and how long will you use it?
+user: I need it from March 7th to 12th of March.
+assistant: Please the give the location and time of pick up.
+user: Let me pick it up from Anaheim at 12:30.
+tool(GetCarsAvailable): ok n_results=9
+assistant: You can choose from 9 cars. one is a Sedan Buick Regal Sportback available at John Wayne Airport.
+user: What will be the rent?
+assistant: You need to pay $33.00 for one day.
+user: I think that will be fine. Are there houses to stay?
+tool(SearchHouse): ok n_results=9
+assistant: You can stay at 1050 West Ball Road which is with 4.2 rating.
+user: Do you have contact number?
+assistant: You can contact them on +1 714-860-4660
+user: That is the only one, no other houses. It is for one people.
+tool(SearchHouse): ok n_results=9
+assistant: There are 9 houses other than this. One is with 4.0 rating and located in 1057 West Ball Road.
+user: How can I contact them?
+assistant: Please call over +1 714-774-7600
+user: I think that will be right one.
+assistant: Shall I fix a reservation?
+user: Not now.Thank you.
+assistant: Do you need any other help?
+user: Please book the rental car we selected.
+assistant: I think insurance can be added.
+user: Not needed, thank you.
+assistant: Please confirm the details, you are picking up a Sedan car from John Wayne Airport on March 7th at 12:30 pm and drop it on March 12th. There will will no insurance added.
+user: Yeah, correct. Thank you.
+tool(ReserveCar): ok n_results=1
+assistant: It is booked.
+user: Great service, thank you.
+assistant: Enjoy a great day.

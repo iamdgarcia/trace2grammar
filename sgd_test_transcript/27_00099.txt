@@ -1,0 +1,28 @@
+user: I need to travel on March 11th and can you look for a bus?
+assistant: Which place are you moving to?
+user: I have to move to LAX
+assistant: Which place are you leaving from?
+user: I will be moving from Long Beach
+tool(FindBus): ok n_results=10
+assistant: I have short listed 10 buses of your choice and what is your opinion on a bus leaving at 6 am which costs $11?
+user: Fine. Can you also find me some child-friendly attractions with free entry as i like Nature Preserve
+tool(FindAttractions): ok n_results=1
+assistant: You can look into Cabrillo Marine Aquarium which is a very good Nature Preserve
+user: Cool and can you get me a bus ticket to go there?
+assistant: What number of tickets you need?
+user: I wanted three tickets
+assistant: Please give confirmation details: You wanted 3 tickets for bus moving from Long Beach to Los Angeles on March 11th at 6 am and you are not having extra luggage
+user: Cool and which station bus arrive and can you tell me the number of stops bus has?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your direct bus ticket is booked which will arrive at North Hollywood Station
+user: Thank you very much
+assistant: Is theer any other help?
+user: I need four star hotel and can you find me in same area?
+tool(SearchHotel): ok n_results=10
+assistant: I have found out a 4 star hotel called Beverly Hills Marriott
+user: That is good
+assistant: You need hotel booking now?
+user: I don't need booking now
+assistant: Any other help you need?
+user: No, thank you very much
+assistant: Have a great day

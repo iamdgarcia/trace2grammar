@@ -1,0 +1,19 @@
+user: Will you check the weather in ATL on 7th of March?
+tool(GetWeather): ok n_results=1
+assistant: Average temperature is 83 degrees Fahrenheit with 26 percent chance of rain.
+user: Humidity and wind speed?
+assistant: Average wind speed is 9 miles per hour with humidity around 45 percent.
+user: Cool. Will you find attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: Found Al-Farooq Masjid, a Place of Worship.
+user: Free entry? Their phone number?
+assistant: You may reach them at 678-886-3457. Entry is free.
+user: Fantastic. Will you reserve a shared ride for 2 to go there?
+assistant: Confirm a Pool ride for 2 to Al-Farooq Masjid.
+user: Great. When does the cab get here?
+tool(GetRide): ok n_results=1
+assistant: I've booked your cab. Expect it in 7 minutes.
+user: Cost of the ride?
+assistant: $13.00 for the ride.
+user: Thanks. That's all.
+assistant: Have a great day.

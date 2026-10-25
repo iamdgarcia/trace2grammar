@@ -1,0 +1,15 @@
+user: I want to find a horror movie to watch in San Jose. I would like to see it at West Wind Capitol Drive-In.
+tool(FindMovies): ok n_results=1
+assistant: I was able to locate 1 movie. What do you think about Scary Stories to Tell in the Dark?
+user: Scary stories would be great. Will you search for some songs I may like now?
+tool(LookupMusic): ok n_results=10
+assistant: Do you think you may like the song Lahnga Lasar Ke that is sung by Shailesh Premi? It's from the album Maza Mar Liya Dhori Ke Niche.
+user: Yep, that's what I wanted.
+assistant: Do you want me to play the song?
+user: Sure thing!
+assistant: Starting the song Lahnga Lasar Ke in the living room. Is that right?
+user: Yes, that sounds good. Can you tell me what kind of music it is?
+tool(PlayMedia): ok n_results=1
+assistant: The song is country. I hope you like it!
+user: Thanks! That's all I need right now.
+assistant: Hope you have a great day!

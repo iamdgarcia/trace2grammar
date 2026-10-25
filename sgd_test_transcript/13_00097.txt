@@ -1,0 +1,16 @@
+user: Find me a movie to see.
+tool(FindMovies): ok n_results=10
+assistant: Search revealed 10 results. Do you want to see Tel Aviv on Fire? It is rated 92 out of 100.
+user: What genre is it and who directed it?
+assistant: It is under the World genre and was directed by Sameh Zoabi.
+user: That works for me. What other interesting things are there to do nearby?
+assistant: What city shall I look in?
+user: Look for things to do in New York.
+assistant: Are you looking for Music, Theater, or any other particular genre?
+user: Find me some Songs for March 7th.
+tool(FindEvents): ok n_results=10
+assistant: Search revealed 10 results. Abbi Jacobson is playing on March 7th at 4:30 pm at Kaufmann Concert Hall.
+user: That works for me.
+assistant: Do you need anything more?
+user: No, that is all. Thanks.
+assistant: Have a good day.

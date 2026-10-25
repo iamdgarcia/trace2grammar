@@ -1,0 +1,19 @@
+user: Hello! I'd like to find a house to stay at.
+assistant: I'd be happy to help. Where should I begin searching?
+user: Please look in London, England.
+tool(SearchHouse): ok n_results=10
+assistant: I'd like to suggest 1 Addington Street. It has a solid rating of 4.3.
+user: Can you tell me if they have laundry service and what the phone number is?
+assistant: You can reach them at +44 333 400 6116. It does offer laundry service.
+user: That will be perfect. Is it available from next Monday until the 7th of this month?
+assistant: How many are in your party?
+user: There are two of us.
+assistant: Let's make sure I have the detail correct. You'd like to reserve the house in London for 2 people from March 4th until March 7th.
+user: That is correct.
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been confirmed. You'll receive an email with the details soon.
+user: Is there a garden to visit nearby?
+tool(FindAttractions): ok n_results=10
+assistant: If you'd like to visit a park, Barbican Conservatory is a wonderful place.
+user: Great! Thanks for the assistance.
+assistant: You're welcome. Enjoy your trip!

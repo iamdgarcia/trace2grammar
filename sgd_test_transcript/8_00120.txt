@@ -1,0 +1,16 @@
+user: I'm looking for one train ticket traveling from Vancouver, BC to Portland.
+assistant: What date are you traveling on?
+user: I'm departing on March 4th.
+tool(FindTrains): ok n_results=8
+assistant: I found 8 trains that may work. There is one departing at 6:50 am for $76.
+user: Okay, that sounds good.
+assistant: Would you like to purchase a ticket?
+user: Yes, I would like to purchase conditionally refundable tickets.
+assistant: Would you like to include travel insurance?
+user: Yes, I do and I'd like economy premium tickets.
+assistant: Okay, I have 1 flexible ticket with trip insurance for the train departing from Vancouver on March 4th at 6:50 am traveling to Portland, correct?
+user: Yes, that works.
+tool(GetTrainTickets): ok n_results=1
+assistant: I have successfully purchased the ticket.
+user: Thank you! That is all I needed.
+assistant: Have a great day.

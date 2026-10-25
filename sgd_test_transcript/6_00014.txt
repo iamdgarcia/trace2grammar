@@ -1,0 +1,14 @@
+user: Things are horrible at home. I need help finding a Family Counselor.
+assistant: Any particular city I should search in?
+user: Look for someone in Gilroy.
+tool(FindProvider): ok n_results=5
+assistant: Among the 5 suitable therapists I found is Leininger Anne, who is a Family Counselor based in Gilroy.
+user: That should work.
+assistant: Should I go ahead and book an appointment with the therapist?
+user: Yes, please schedule an appointment for March 11th, at quarter to 3 in the afternoon.
+assistant: Sure, no problem. Let me see if I got everything correctly: You'd like to an appointment with Leininger Anne at 2:45 pm on March 11th?
+user: That is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment, and you should be receiving a confirmation email shortly.
+user: Thank you very much. I'm grateful for your help. Bye-bye.
+assistant: Bye. Happy to have been of help.

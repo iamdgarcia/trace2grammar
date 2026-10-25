@@ -1,0 +1,20 @@
+user: I want to look for some good songs from 2012 that I can listen to. Halcyon is an album worth listening to, I'm told. Can you help me pick something?
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 song that you might find cool. It's from the album Halcyon and it's called Burn. The artist is Ellie Goulding.
+user: Perfect. That's it. Now, can you help me look for some nice movie options online?
+assistant: Are you interested in a particular genre?
+user: Sure, I like Sci-fi a lot.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 movies that fit with your preferences. There's Ad Astra and also Close Encounters of the Third Kind.
+user: Close encounters sounds really cool. Actually, I'd like to listen to the song you just mentioned.
+assistant: You want to listen to Burn in the Living Room, correct?
+user: Perfect, that's it. What genre does this song fall under?
+tool(PlayMedia): ok n_results=1
+assistant: The song is considered Pop music. Happy listening!
+user: Great. I want to review my current alarms, please.
+tool(GetAlarms): ok n_results=4
+assistant: You have an alarm called Badminton that is set for 9 am.
+user: Excellent. Thank you!
+assistant: Are you looking to create a new alarm?
+user: Not at this time, thanks. That was everything I needed for now.
+assistant: Have a nice day.

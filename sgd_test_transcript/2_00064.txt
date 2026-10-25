@@ -1,0 +1,12 @@
+user: Could you find me something interesting to do next tuesday in LA? I really like songs.
+tool(FindEvents): ok n_results=10
+assistant: I have 10 options. How about Aldous Harding, it's at the Lodge Room on march 5th at 5 pm.
+user: How much is a ticket?
+assistant: $30.
+user: Sounds great, i'd like to reserve three tickets.
+assistant: Please confirm; you want 3 tickets to Aldous Harding on March 5th in Los Angeles.
+user: Exactly.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is confirmed! Have a good time!
+user: Thanks, that's all I need.
+assistant: Have a good day.

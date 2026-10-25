@@ -1,0 +1,18 @@
+user: Can you help me find a train?
+assistant: Which city are you going to?
+user: Heading to LAX.
+assistant: Which city are you looking to depart from and on what date?
+user: I'm looking for tickets from SFO for 13th of March.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains that could work. One departs at 6:20 am and costs $96.
+user: That sounds good, please book train tickets.
+assistant: How many tickets do you need and would you like insurance?
+user: I will need 1 seat with trip insurance please.
+assistant: Please confirm the following details: you would like 1 ticket on the train leaving from San Francisco at 6:20 am heading to Los Angeles on March 13th. This is a Value ticket with insurance.
+user: Sounds good to me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets were booked successfully.
+user: Can you tell me the departing and arrival station please?
+assistant: The train is leaving from Salesforce Transit Center and arrives at Union Station.
+user: Thank you. That is all for now.
+assistant: Have a nice day.

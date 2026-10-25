@@ -1,0 +1,21 @@
+user: I want to find an event. Can you help me find something interesting to do?
+assistant: Is there any particular city you would like to look in? Is there a particular type of events you prefer?
+user: Yes, I would like to find a Concert in the Portland, OR area.
+tool(FindEvents): ok n_results=8
+assistant: Bastille will be taking place at Theater Of The Clouds at 5:30 pm on March 10th.
+user: Yeah, that sounds great. Oh, um, I just remembered, I need to send a payment request. I want to make the transfer private.
+assistant: Who are you requesting the payment from, and what is the amount?
+user: Please set up the transaction with Rachel for four bucks.
+assistant: You are making a private transaction with Rachel in the amount of $4, is this correct?
+user: Yes, that's right.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been sent successfully.
+user: OK, great. Now I would like to buy two tickets for that event you found.
+assistant: You would like to book 2 tickets for Bastille in Portland on March 10th, is this correct?
+user: Yes, that's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket purchase is complete. Enjoy the show!
+user: Thank you very much for your help.
+assistant: Is there anything else I can help you with today?
+user: No, that's all for now, thank you.
+assistant: Have a great day!

@@ -1,0 +1,39 @@
+user: I want to find some attractive places to visit and can you search for the suitable one for me?
+assistant: Yes. Where do you want to search for the attractions?
+user: I like the one in Toronto. Search accordingly.
+tool(FindAttractions): ok n_results=10
+assistant: Do you like to visit a Tourist Attraction? If so then you can try to visit 3D Toronto Sign.
+user: That's okay. But I want to find some other places which should offer free entrance. Any type is okay for me.
+tool(FindAttractions): ok n_results=10
+assistant: What do you think about a Museum like the one named Aga Khan Museum? Shall I fix this?
+user: Yes, fix this and get a car to go there. I want to book it for rent.
+assistant: To which date you need that car?
+user: Book it till the 8th.
+assistant: Shall I book it from Toronto or any other places from which you want to pick up the car?
+user: Yes, book it from Toronto and I want to pick it at five pm.
+assistant: And what about the date? When do you book it?
+user: Book it from 7th of March.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I got 10 results. What about a Sedan Buick Regal Sportback model car available for pick up at Toronto Pearson International Airport?
+user: It looks great and thanks.
+assistant: What else you want to do now?
+user: I want to reserve the car now.
+assistant: Shall I include Insurance?
+user: No, I don't need it.
+assistant: Please confirm to book a Sedan model car for the pick up at Toronto Pearson International Airport from March 7th at 5 pm to March 8th without insurance.
+user: Sorry, please include insurance.
+assistant: Please confirm once again to book the car at 5 pm with insurance.
+user: That is confirmed to proceed. What is the cost for one day?
+tool(ReserveCar): ok n_results=1
+assistant: It costs $44.00 per day and your car was successfully booked.
+user: That's great and thanks. Can you help me to share the location?
+assistant: Do you want me to share the location Aga Khan Museum or Toronto Pearson International Airport and to whom you want to share the same?
+user: Share the location Toronto Pearson International Airport to Paul.
+assistant: Once again please confirm to share the location Toronto Pearson International Airport with Paul.
+user: That is confirmed to proceed further.
+tool(ShareLocation): ok n_results=1
+assistant: I have successfully shared the location.
+user: Thanks for your help.
+assistant: How can I help you further.
+user: That's all I want for now.
+assistant: Have a good day.

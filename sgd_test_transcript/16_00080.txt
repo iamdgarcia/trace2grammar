@@ -1,0 +1,35 @@
+user: I would like to purchase bus tickets.
+assistant: How many tickets do you need and where are you going?
+user: I need three tickets for the 7th of this month to get to Long Beach, CA.
+assistant: What time would you like to leave?
+user: I would like to leave at 8:30 am.
+assistant: Where are you leaving from?
+user: I'm leaving from San Diego.
+assistant: Booking bus for 3 people from San Diego to Long Beach on March 7th at 8:30 am.
+user: Yes, that is perfect.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been purchased.
+user: How much is the cost?
+assistant: The cost is $26.
+user: How many stops does the bus have?
+assistant: The bus is direct.
+user: Can you find a hotel in that area?
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels. There is Best Western Of Long Beach that is 3 star.
+user: What is their phone number and are they pricey?
+assistant: Their phone number is +1 562-599-5555 for $78.
+user: I would like to reserve a room.
+assistant: When would you like to check in?
+user: I would like to check in on the 9th of this month.
+assistant: How long are you staying?
+user: I will be staying for three days and I need 2 rooms.
+assistant: Booking 2 rooms for 3 people at Best Western Of Long Beach on March 9th in Long Beach.
+user: Yes, this is nice.
+tool(ReserveHotel): ok n_results=1
+assistant: Your rooms are booked.
+user: What is their address and is smoking allowed at the hotel?
+assistant: No, smoking is not permitted. Their address is 1725 Long Beach Boulevard.
+user: That was helpful thank you.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

@@ -1,0 +1,10 @@
+user: I want to find a funny movies with Megan Mullally online.
+tool(FindMovies): ok n_results=1
+assistant: I have 1 you might think is good. Where'd You Go, Bernadette?
+user: Where would you go sounds really good. Can I watch it now.
+assistant: Okay, let's confirm the details: You want to watch Where'd You Go, Bernadette? And you would like English Subtitles.
+user: Yeah that's the one.
+tool(PlayMovie): ok n_results=1
+assistant: Movie is now playing.
+user: Thanks. That is all I need.
+assistant: Enjoy the movie, thanks.

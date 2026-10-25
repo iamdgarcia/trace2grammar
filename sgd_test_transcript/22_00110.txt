@@ -1,0 +1,32 @@
+user: My friends are coming over and we would really like to watch a movie. Will you search online for a movie?
+assistant: What type of movie are you interested in watching?
+user: I enjoy watching movies that are fantasy based.
+tool(FindMovies): ok n_results=2
+assistant: I found 2 movies that you may enjoy. Would you be interested in watching Labyrinth or The Lord of the Rings: The Return of the King?
+user: I would enjoy watching Labyrinth. Will you now search for attractions nearby?
+assistant: In what area what you like me to search?
+user: Please search in San Diego.
+tool(FindAttractions): ok n_results=10
+assistant: There are quite a few attractions here you may like. One of the 10 I found i a park called Balboa Park.
+user: That does sound awesome, but will you search for some more attractions. I would prefer ones that are kid-friendly and do not charge an admissions fee.
+tool(FindAttractions): ok n_results=10
+assistant: There is a theme park you may like called Belmont Park.
+user: Great. Thank you. Will you now search for some songs from 2017 and that are sung by Pavni Pandey?
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song by Pavni Pandey. Would you like to listen to Laila Main Laila fro her album Raees?
+user: What genre of music is this song?
+assistant: It is a song from South Asia.
+user: Yes, I would like to listen to this song and please play it on the speaker in patio.
+assistant: Please confirm you would like to hear Laila Main Laila in the patio.
+user: That is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy listening to your music!
+user: Thanks! Now will you please play the movie you found ealier with Hindi subtitles?
+assistant: Please confirm you would like to watch Labyrinth with Hindi subtitles.
+user: Yes, that is correct. Will you tell me who the lead actor is in this movie?
+tool(PlayMovie): ok n_results=1
+assistant: The star of this movie is Frank Oz.
+user: I appreciate the information. Thanks!
+assistant: Is there something else I can assist you with today?
+user: No, not at this time. Thanks again!
+assistant: Enjoy the beautiful day!

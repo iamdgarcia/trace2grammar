@@ -1,0 +1,31 @@
+user: I need you to find me a Family Therapist.
+assistant: What city shall I search in?
+user: Search for a Family Therapist in Campbell.
+tool(FindProvider): ok n_results=6
+assistant: Beth Kane is a Family Counselor in Campbell.
+user: Who else can you find? Look for a Psychiatrist in Corte Madera.
+tool(FindProvider): ok n_results=2
+assistant: Ellen M. Sanford is a Psychiatrist in Corte Madera and is 1 of 2 results that search found.
+user: That works for me. Book me a session.
+assistant: What day and time do you prefer?
+user: I want a session for 12:45 in the afternoon on the 8th.
+assistant: You want a session with Ellen M. Sanford at 12:45 pm on March 8th, correct?
+user: That is right.
+tool(BookAppointment): ok n_results=1
+assistant: I can't book that time. Is a 12:30 pm session on March 8th with Ellen M. Sanford okay?
+user: That is fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your session is confirmed and you will get an email soon with your confirmation.
+user: Thanks a bunch. Can you get me a ride to get there?
+assistant: How many people are going and is the address 45 San Clemente Drive b200?
+user: There is 1 person going and that is the address that I am going to.
+assistant: What type of ride do you prefer?
+user: Get me a Luxurious ride.
+assistant: You want a Luxury ride for 1 person to 45 San Clemente Drive b200, correct?
+user: That is right. What is the total bill and total wait time?
+tool(GetRide): ok n_results=1
+assistant: Your ride is confirmed and will arrive for you. The wait time is 14 minutes and the total bill is $17.53.
+user: Thanks a bunch.
+assistant: Do you need more help?
+user: No, that is all. Thanks again.
+assistant: Have a great day.

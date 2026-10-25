@@ -1,0 +1,36 @@
+user: Find me a hotel.
+assistant: What city shall I search in?
+user: Search for hotels in Sydney, NSW.
+tool(SearchHotel): ok n_results=10
+assistant: 1831 Boutique Hotel has 3 stars and is 1 of 10 hotels that I found.
+user: Do they allow smoking and how much is a room per night?
+assistant: The do allow smoking and a room wiil set you back $225 a night.
+user: That is perfect.
+assistant: Shall I reserve a room for you?
+user: No, not at the moment. Find me a round trip flight to there that leaves on the 6th of March.
+assistant: When are you returning?
+user: I will be returning on the 13th of this month.
+assistant: What is your departure city?
+user: I am departing Las Vegas.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: Delta Airlines has a flight with a layover. The departure times are 4:55 pm and 10:55 am respectively. The total price is $434 and is 1 of 2 results that I found.
+user: How many people does this price cover and in what class is it?
+assistant: This is an Economy ticket for 1 person.
+user: That is perfect. Now, I need you to book that hotel room for earlier.
+assistant: How long will your stay be?
+user: I will be there for three days.
+assistant: Are you arriving on March 6th?
+user: I will be arriving on March 10th.
+assistant: You wish to book 1 room at 1831 Boutique Hotel in Sydney with an arrival date of March 10th with a 3 day stay, correct?
+user: That is right. What is their location?
+tool(ReserveHotel): ok n_results=1
+assistant: Your order is complete and you can find them at 631-635 George Street.
+user: How can I contact them?
+assistant: You can contact them at +61 2 9265 8888.
+user: Thanks for your help. What fun things are there to do there?
+tool(FindAttractions): ok n_results=10
+assistant: ANZ Stadium is a Sports Venue and is 1 of 10 results that I found.
+user: That is good.
+assistant: Do you need more help?
+user: No, that is everything. Thanks.
+assistant: Have a great time.

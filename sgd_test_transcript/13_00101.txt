@@ -1,0 +1,19 @@
+user: I am interested in finding a movie which I can watch.
+tool(FindMovies): ok n_results=10
+assistant: How would you like watching the movie Ad Astra which has a rating of 84 out of 100?
+user: Can you tell me the genre this movie is?
+assistant: This movie is considered as Sci-fi movie.
+user: Is there some other movie? More specifically I am interested in a movie directed by Bart Freundlich and for the movie to be in the Dramatic story genre.
+tool(FindMovies): ok n_results=1
+assistant: How would you like watching After The Wedding movie which has a rating of 43 out of 100?
+user: Can you tell me who stars in this movie?
+assistant: Acting in this movie is Doris McCarthy.
+user: That seems nice. Now I would like to find something interesting which I can do. I enjoy usually Songs, and I am interested in finding something around Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: A quite popular event is Anthony Green which will happen at The Foundry on March 10th at 6 pm.
+user: That seems nice to me.
+assistant: Are you willing to have tickets bought for this event?
+user: No I do not want to do that now.
+assistant: Is there something else I can help you with today?
+user: Nothing, I am grateful for the help you provided.
+assistant: Have a good time!

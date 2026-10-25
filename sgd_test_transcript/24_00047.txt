@@ -1,0 +1,29 @@
+user: I would like to book a one way flight.
+assistant: Where are you traveling and when are you leaving?
+user: I'm traveling from SD to Phoenix and I'm leaving on March 2nd with Southwest Airlines.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: There is 1 flight with Southwest Airlines leaving at 12:45 pm and the cost is $98.
+user: Is this economy or business class?
+assistant: It's a economy seat.
+user: I would like to find a train to get there.
+assistant: Are you traveling on March 2nd?
+user: I would like to leave on the 14th of this month.
+tool(FindTrains): ok n_results=5
+assistant: There is a train departing at 11:20 am for $84.
+user: Which station does this train leave from?
+assistant: The train leaves form Santa Fe Depot.
+user: Which station is the destination?
+assistant: The destination is Phoenix Union Station.
+user: Yes, that sounds good.
+assistant: Would you like to purchase a ticket?
+user: Yes I would like to make a reservation.
+assistant: How many tickets do you need and would you like a travel insurance?
+user: I would need a trip insurance for 1 person.
+assistant: Booking 1 value ticket for train going from San Diego to Phoenix on March 14th at 11:20 am.
+user: Yes, that works for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets are purchased.
+user: Thank you for your help.
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

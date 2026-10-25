@@ -1,0 +1,42 @@
+user: I would like to find a psychiatrist in Novato.
+tool(FindProvider): ok n_results=2
+assistant: There is Dillon Charles R. he's a Psychiatrist in Novato.
+user: Is there another option?
+assistant: There is Dixon Lilo who is a Psychiatrist in Novato.
+user: Yes, that sounds good.
+assistant: Would you like to schedule an appointment?
+user: Yes, I would like to book an appointment.
+assistant: What time would you prefer?
+user: I would like to go at 9:30 am.
+assistant: What date would you like to go?
+user: I would like to go on the 13th of March.
+assistant: Booking appointment with Dixon Lilo on March 13th at 9:30 am.
+user: Yes, that is correct.
+tool(BookAppointment): ok n_results=1
+assistant: I was unable to book an appointment with Dixon Lilo for that time on March 13th, would you like to go at 10 am?
+user: Yes, that time works for me.
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment was booked.
+user: I need to request a payment.
+assistant: What is the amount of the payment and who is the contact?
+user: The payment is of $112 to Tom.
+assistant: Paying Tom in the amount of $112.
+user: Yes, that is correct.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment was made.
+user: I would like to find a restaurant in that area.
+assistant: What type of food are you looking for?
+user: I would like some freshwater fish.
+tool(FindRestaurants): ok n_results=1
+assistant: There is 1 restaurant Boca Pizzeria that is located in Novato.
+user: What is their rating and their address?
+assistant: Their rating is 4.2 and they are located at 454 Ignacio Boulevard.
+user: I would like to book a table for one at 12:15 pm.
+assistant: Booking a table for 1 at Boca Pizzeria in Novato on March 13th at 12:15 pm.
+user: Do they have vegetarian option and is there outdoor seating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They have options for vegetarians and they have outdoor seating.
+user: Thank you for the information..
+assistant: Can I help with something else?
+user: No, that is all I needed.
+assistant: Have a good day.

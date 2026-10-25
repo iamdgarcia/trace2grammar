@@ -1,0 +1,24 @@
+user: I am in a nice mood and I want to hear some nice songs. Can you search for the best one?
+tool(LookupMusic): ok n_results=10
+assistant: I searched and got 10 songs and what about the one called Time Up by Shenseea from the album Big A Presents One chance riddim?
+user: This looks perfect for me. Thanks.
+assistant: Shall I play it now?
+user: Not now, I will hear it later. Now, search for some movies to watch online.
+assistant: Is there any favorite kind of movie you have in your mind?
+user: Yes, I think Violent movies will be good for this time.
+tool(FindMovies): ok n_results=1
+assistant: What about the movie named Pulp Fiction? Do you like it? It is also in the same genre as you like.
+user: Pulp Fiction is okay to me.
+assistant: How can I assist you further. Shall I play this movie now?
+user: No, please play the song that I have selected before and I want to hear the same in the living room.
+assistant: Okay, once again confirm to play the song Time Up in your living room speaker.
+user: Sorry, I want to hear it my Kitchen speaker as I have some work to do in the Kitchen.
+assistant: That's okay. Give me your confirmation to play the song Time UP in your Kitchen speaker.
+user: That is confirmed to proceed.
+tool(PlayMedia): ok n_results=1
+assistant: Song started playing and you can enjoy the same.
+user: Thanks and I want to view my alarm list. Can you show it to me?
+tool(GetAlarms): ok n_results=2
+assistant: Yes, you have 2 alarms and the one is for the time 4:30 pm in the name Piano time.
+user: That's great and thanks.
+assistant: Have a great day.

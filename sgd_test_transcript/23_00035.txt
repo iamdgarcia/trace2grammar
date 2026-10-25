@@ -1,0 +1,33 @@
+user: I need to see some movie online I think?
+assistant: What genre do you want?
+user: I love a good Thriller.
+tool(FindMovies): ok n_results=4
+assistant: I have 4: Madeline's Madeline, Rojo or even the Art of Self-Defense should start you.
+user: Rojo sounds good. What are some things nearby to see?
+assistant: Where shall I search?
+user: How about London, England?
+tool(FindAttractions): ok n_results=10
+assistant: People always seem to rave about 30 St mary Axe (The Gherkin). It's a historical landmark.
+user: Nah, what about something really child friendly that is free?
+tool(FindAttractions): ok n_results=10
+assistant: I have at least 10 for you. What about All Saints, Margaret Street. It's listed under Place of Worship.
+user: Fine, I'm not sure my kid's going to be into church. What about a Park In New York City?
+tool(FindAttractions): ok n_results=10
+assistant: Well, Alley Pond Park is alphabetically first there under park.
+user: Fine, let's think about music now. What about a popular tune by Ben Platt?
+tool(LookupMusic): ok n_results=1
+assistant: There is 1 option. Grow As We Go is by Ben Platt from his, Sing to Me Instead.
+user: Fine, get it.
+assistant: Ok, Playing Grow As We Go in the living room now.
+user: Yes, that's great.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the song, playing now.
+user: Fine, play that movie too.
+assistant: To confirm, Play Rojo with english subtitles.
+user: No I don't like speaking in English, get me French instead.
+assistant: To confirm, Play Rojo with French Subtitles.
+user: Yes, great. Who acted in this?
+tool(PlayMovie): ok n_results=1
+assistant: Rudy Chernicoff did, I'm starting it now.
+user: Fine, that'll do pig.
+assistant: Have a good day Maaa.

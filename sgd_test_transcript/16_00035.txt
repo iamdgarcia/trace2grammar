@@ -1,0 +1,32 @@
+user: Can you locate a salon for me please?
+assistant: Where would you like me to look?
+user: Find one in SF.
+tool(FindProvider): ok n_results=10
+assistant: This one is in San Francisco its called 1512 Barber Shop.
+user: I hope its unisex is it?
+assistant: Yes it is a unisex salon.
+user: Great, I like that one.
+assistant: Should I have then schedule you a visit?
+user: Not right away. I was hoping to find a Psychologist in that area also.
+assistant: So I should look in San Francisco?
+user: That's what I said.
+tool(FindProvider): ok n_results=4
+assistant: I found 4 in San Francisco the Psychologist Adam E. Pollock is one.
+user: Give me their number please.
+assistant: 415-346-2356 is the one they list.
+user: I might go there.
+assistant: Should I schedule a visit for you now?
+user: Yes, please get in for a visit there.
+assistant: Do you have a day and time that would be best for you?
+user: Yes I do I would like it for next Monday at about half past 12 in the afternoon.
+assistant: Just to make sure you would prefer a 12:30 pm time slot on March 4th with Adam E. Pollock is that right?
+user: Exactly right can I get the location please?
+tool(BookAppointment): ok n_results=1
+assistant: Of course, it is at 100 Masonic Avenue and your visit is scheduled they will be sending an email to you to confirm it.
+user: I want to schedule a salon visit now for the salon we found for the same day at 4 o'clock in the evening.
+assistant: Okay then that would be at 1512 Barber Shop you want me to schedule a visit for March 4th at 4 pm correct?
+user: Yes, you got it.
+tool(BookAppointment): ok n_results=1
+assistant: Your visit has been scheduled.
+user: Thank a bunch you can go now.
+assistant: Have a lovely day!

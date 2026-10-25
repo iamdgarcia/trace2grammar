@@ -1,0 +1,41 @@
+user: Can you find me a therapist to see
+assistant: Do you need a Psychologist or a Psychiatrist? What city do you want to look in
+user: Find me a Psychologist in Santa ROsa
+tool(FindProvider): ok n_results=10
+assistant: How about Psychologist Bert Epstein in Santa Rosa
+user: Yes please, book me an appointment
+assistant: What date are you looking for and what time?
+user: I'm free on the 13th of this month at 14:30
+assistant: Confirming a meeting with Bert Epstein at 2:30 pm on March 13th
+user: Actually let's change that to 4 o'clock in the evening on the 7th of this month
+assistant: Confirming a 4 pm meeting on March 7th
+user: Yes that works, what's their phone number and address
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is set and you'll get e-mail confirmation. Their address is 2455 Bennett Valley Road and it's 707-242-1989
+user: Thanks so much for that, I appreciate it. Can you request a payment for me please
+assistant: In what amount?
+user: It's for 4 dollars
+assistant: What is the name of the contact?
+user: Let's request it from Isabella please
+assistant: So you want a public request of $4 from Isabella right?
+user: Yes that is right
+tool(RequestPayment): ok n_results=1
+assistant: It has been requested
+user: Thanks so much for that. Can you find me a restaurant with vegetarian options please
+assistant: What kind are you looking for
+user: Let's find some Oriental food
+tool(FindRestaurants): ok n_results=3
+assistant: Best of Burma in Santa Rosa is nice
+user: Do they have outdoor seating there?
+assistant: They do not have outdoor seating sorry
+user: It's OK, let's book a restaurant
+assistant: What time should I reserve for?
+user: Let's try for 6:30 pm
+assistant: So a table for 2 at Best of Burma in Santa Rosa at 6:30 pm on March 7th
+user: Yes please. Also give me their address
+tool(ReserveRestaurant): ok n_results=1
+assistant: It's booked and it's 528 7th Street
+user: What's their phone number and what's the restaurant's rating?
+assistant: It's a 4.6 rating and it's 650-235-9339
+user: Thanks so much, that's it
+assistant: Sure thing, see you!

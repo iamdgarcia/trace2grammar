@@ -1,0 +1,19 @@
+user: Would you be able to assist me in finding an event to attend? I love musical shows and I'm hoping to find something on the 12th of this month.
+assistant: Is there a specific city I should look in?
+user: In the LAX area please.
+tool(FindEvents): ok n_results=10
+assistant: There is a show at Lodge Room entitled Aldous Harding, which is recommended. The date of that is March 12th and the show begins at 6:30 PM.
+user: OK, I like that. I also need to find a hotel in that same area.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 possible options for you. You might like the AC Hotel By Marriott Beverly Hills, which has a 3 star rating.
+user: OK. Oh, let's go ahead and get four tickets for the performance that you mentioned.
+assistant: Confirming 4 seats at Aldous Harding in Los Angeles on March 12th.
+user: Perfect, thanks a lot.
+tool(BuyEventTickets): ok n_results=1
+assistant: The reservation has been booked. Enjoyed the show.
+user: How much are the tickets, by the way? And where is the theater?
+assistant: The ticket price is $20 each and the address of the theater is 104 North Avenue 56 2nd floor.
+user: Thanks for all your assistance.
+assistant: Certainly. Is there anything else I can do for you?
+user: No, I'm all taken care of.
+assistant: Thank you, have a great day.

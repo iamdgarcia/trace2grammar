@@ -1,0 +1,32 @@
+user: I'm taking a trip and need help locating a rental car, preferably one with a hatchback for easy access and I will need to pick the car up after business hours, around 7:30 in the evening.
+assistant: First just give me a few more details such as the date you would like to retrieve the vehicle and the day you will be returning the vehicle.
+user: I need to have it from March 3rd until the 5th of this month.
+assistant: Is there a specific place you have in mind where you would like to get the vehicle from?
+user: Not really, just the Toronto, Canada area.
+tool(GetCarsAvailable): ok n_results=4
+assistant: I was able to locate 4 cars for you, the first of which is a Hatchback Kia Ceed located at the Toronto Pearson International Airport.
+user: Okay, and can you tell me how much that vehicle will cost me for each day that I have it.
+assistant: That particular vehicle is $26.00 a day.
+user: Let's try something different, how about if I pick the vehicle up on the 1st of March from LAX instead.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There are 3 cars matching that criteria. I think you will like the Hatchback Fiat Panda that is available at the LAX International Airport.
+user: That sounds more my style. I would also like to get tickets for an event I heard good things about called Raphael on the 14th of this month.
+assistant: And do you know what city that event is taking place in?
+user: I believe there is one in NY soon.
+assistant: Okay and what about the number of tickets you would like?
+user: I will be taking someone with me so I will need two two tickets.
+assistant: Great, as of right now the information I have is 2 tickets to see Raphael in New York on March 14th. Does that sound right to you?
+user: Yes, that sounds great.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have reserved your tickets, enjoy the show!
+user: Before you go, can you also tell me where it will be held and the cost of the tickets?
+assistant: That event is being held at Stern Auditorium / Perelman Stage and the tickets are $35.
+user: Okay, great, now just one more thing, can we go back to the car rental and get that set up please?
+assistant: Sure, will you be adding insurance to this car?
+user: No, I will not need it, but thank you for asking.
+assistant: For the car rental I have you picking up a Hatchback from LAX International Airport on March 1st at 7:30 pm and returning the car on March 5th. Is that correct?
+user: Yes, down to the last detail!
+tool(ReserveCar): ok n_results=1
+assistant: I have confirmed that for you, and you are all set to pick up your car rental on the specified date.
+user: Thank you so much, you made my life a little easier for the day!
+assistant: Happy to help, enjoy the rest of your day.

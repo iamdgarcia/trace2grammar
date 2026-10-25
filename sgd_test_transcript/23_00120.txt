@@ -1,0 +1,33 @@
+user: I am planning a trip by train. Please fine one.
+assistant: Where is the starting station?
+user: Please find one from Vancouver, BC. The date is March 4th and destination is Seattle.
+tool(FindTrains): ok n_results=9
+assistant: Do you like to depart at 6:20 am? the cost of ticket is $61
+user: That will be fine.
+assistant: Can I book your ticket?
+user: yes, carry on.
+assistant: How many passengers? Do you wish to add travel insurance?
+user: Trip insurance can be added and only 1 ticket is needed.
+assistant: Please confirm, You are leaving to Seattle from Vancouver on March 4th by train. The time of departure is 6:20 am. 1 person is travelling with Value ticket and trip insurance.
+user: Right, carry on.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your seats are reserved.
+user: Are there any interesting thing to do on that day, preferably at Broadway.
+tool(FindEvents): ok n_results=10
+assistant: 10 events are there. One is Beatleconcert at 12th Avenue arts. it is taking place on March 10th at 5 pm.
+user: What is the cost of ticket and name of venue?
+assistant: The venue is 1620 12th Avenue and cost of ticket is $50.
+user: OK, are there any event on March 9th.
+tool(FindEvents): ok n_results=9
+assistant: on March 9th Blood water paint is there at 12th Avenue Arts at 4:30 pm. Or you can go to 9 other events.
+user: Thats sounds apt.
+assistant: Shall I reserve your ticket?
+user: No, not needed now.
+assistant: What other help do you need?
+user: Please share the location with Victoria.
+assistant: Please confirm, you wish to share the 12th Avenue Arts location with Victoria.
+user: Yes, thats all.
+tool(ShareLocation): ok n_results=1
+assistant: It is shared with Victoria.
+user: Thanks for you tremendous help.
+assistant: Welcome sir, have a nice day.

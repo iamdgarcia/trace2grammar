@@ -1,0 +1,19 @@
+user: Can you find me a salon in Fremont?
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons that you might like. How about 3Sixty Salon And Boutique? It is a nice salon located in Fremont.
+user: Is the salon unisex? Can you give me the phone number?
+assistant: No, the salon is not unisex. You can contact them at 510-574-0881.
+user: That sounds good.
+assistant: Would you like to make an appointment?
+user: Maybe later. Can you tell me the weather for there?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature for the day should be around 84 degrees Fahrenheit. There is a 0 percent chance of rain.
+user: Okay. Can you book me an appointment at the salon that you found? I want to visit on the 1st of this month at around afternoon 3.
+assistant: Confirming that you want to schedule an appointment at the 3Sixty Salon And Boutique for March 1st at 3 pm?
+user: Yes, that sounds good. Can you find me the average rating for the salon?
+tool(BookAppointment): ok n_results=1
+assistant: The salon has an average rating of 4.7. Your appointment is confirmed.
+user: Can you get me the address?
+assistant: They are located at 5154 Mowry Avenue.
+user: Thank you very much! That's all I need.
+assistant: You're welcome. Have a pleasant day!

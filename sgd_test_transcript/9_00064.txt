@@ -1,0 +1,23 @@
+user: I want to spend my free time with some relaxing process and I want to watch a movie to refresh myself. Can you help me to find a nice movie to watch?
+assistant: Yes, what is your convenient area to watch the movie to search for?
+user: I want to search for it in San Jose and I would like to prefer a 3D show.
+tool(FindMovies): ok n_results=10
+assistant: I got 10 results and let me know your choice among the following movies: 47 Meters down: Uncaged, Ad Astra and After The Wedding.
+user: I want to find some other movies and I think Supernatural movies will be perfect for me and search for the one showing at AMC Saratoga.
+tool(FindMovies): ok n_results=1
+assistant: What about your opinion on IT Chapter Two?
+user: Yes, IT two is the nice one and Please also purchase the tickets for me.
+assistant: Let me know the number of tickets required by you and also let me know your convenient time to watch the movie.
+user: I want to watch it at 8:30 pm and please buy 2 tickets.
+assistant: What is the suitable date to book the show for you?
+user: Book it on the 7th.
+assistant: Please confirm to book 2 tickets for a 3D show of Movie IT Chapter Two on March 7th in San Jose at 8:30 pm.
+user: Please change the date and time to 1st of March at half past 9 in the night.
+assistant: Please confirm to book the show at 9:30 pm on March 1st.
+user: Also book for 4 tickets.
+assistant: Okay, please confirm to book 4 tickets for the 3D movie.
+user: All are okay to proceed.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Sorry, I was not able to book the tickets. How can I help you further?
+user: It's okay. Thank you and that's all.
+assistant: Have a great day.

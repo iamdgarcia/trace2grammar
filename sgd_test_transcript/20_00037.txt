@@ -1,0 +1,34 @@
+user: I'm looking for a car to rent.
+assistant: Is there a pick up time you prefer?
+user: I prefer to pick it up at afternoon 1:30.
+assistant: And what date do you want the rental to begin, and what location will you need the car for?
+user: I want to start the rental on the 10th of March. And I need the car in Paris, France.
+assistant: And when do you need the car until?
+user: I want it until the 14th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I've found 10 cars. There's a nice SUV Alfa Romeo Stelvio at Orly International Airport.
+user: That seems like a good car.
+assistant: Do you want to reserve it?
+user: Yes, but we can do that later. I also need a house for when I'm there. I want it to have a 3.6 rating or higher, laundry service, and room for 2 people.
+tool(SearchHouse): ok n_results=10
+assistant: There'a nice 3.6 rated house at 1 Rue Bayard, 75008.
+user: What other houses are there?
+assistant: There's nice 3.6 rated house at 1 Rue Daunou, 75002.
+user: Any other houses, how about just for 1 person?
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice 3.6 rated house at 1 Rue de Libourne, 75012.
+user: What's their phone number?
+assistant: You can contact them by phone at +33 1 44 67 34 00.
+user: Okay, I think that house sounds very good.
+assistant: Do you want me to reserve the house?
+user: Not right now. Let's go back to the rental car.
+assistant: Back to that car, do you need insurance for the car?
+user: No, I don't.
+assistant: I'll reserve you the SUV at Orly International Airport with a pick up on March 10th at 1:30 pm and drop off on March 14th. Is that correct?
+user: Yes, that's correct.
+tool(ReserveCar): ok n_results=1
+assistant: I've reserved the car.
+user: What's the price per day?
+assistant: The price per day is $47.00.
+user: Thank you for the assistance. I don't need anything else.
+assistant: Have a pleasant day.

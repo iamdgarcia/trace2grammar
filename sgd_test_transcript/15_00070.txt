@@ -1,0 +1,21 @@
+user: Find me a therapist please.
+assistant: In which city you want to be and what kind of therapist you want?
+user: I need a Psychologist in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options for you.You can try a Psychologist in San Jose called Barskyex Bryna G.
+user: This sounds very good.
+assistant: You want to book an appointment?
+user: No.Not now.Tell me how will be the weather there on March 13th.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 85 degrees Fahrenheit and 18 percent chance of rain.
+user: Okay.Thank you!
+assistant: What else can I do for you?
+user: Go back please at the appointment that you have found in that day and make the appointment at 11:45 am.
+assistant: Book an appointment with Barskyex Bryna G at 11:45 am on March 13th.
+user: Yes that work for me.Where can I find them at what address?
+tool(BookAppointment): ok n_results=1
+assistant: The appointment is successfully booked and an confirmation email should be coming to you soon.5755 Cottle Road # 4 is their address.
+user: Thanks for all your help.
+assistant: Can I help you with something else?
+user: No.Thanks.I really appreciate for help.
+assistant: Happy to help you!

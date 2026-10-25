@@ -1,0 +1,19 @@
+user: I'd searching for a film to view.
+tool(FindMovies): ok n_results=10
+assistant: What do you think of In Fabric, which has a mean review of 96 out of 100?
+user: That's good. I'd like to search for some fun ting to do on March 9th near Chicago; I enjoy Stage show.
+tool(FindEvents): ok n_results=10
+assistant: Ada and The Engine is in vogue, and it starts on the Artistic Home on March 9th at 7:30 pm.
+user: What is the ticket price?
+assistant: The ticket price is $50.
+user: What location will the event occur at?
+assistant: The location is 1376 West Grand Avenue #7761.
+user: That's fine; however, could you search for some other activities?
+assistant: Casa Valentina is in vogue, and it will occur at PRIDE ARTS CENTER on March 9th at 6:30 pm.
+user: That's fine. However, could you search for some other activities? I'm searching for one near Seattle, WA on the 14th.
+tool(FindEvents): ok n_results=10
+assistant: I discovered 10 activities that you'll enjoy. Beatleconcert is in vogue, and will occur at the 12th Avenue Arts on March 14th at 5 pm.
+user: That's perfect for me.
+assistant: Would you like to purchase tickets for the activity?
+user: Nope, not now. That is all.
+assistant: Have a pleasant afternoon.

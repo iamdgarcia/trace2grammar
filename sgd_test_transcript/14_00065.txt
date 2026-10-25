@@ -1,0 +1,17 @@
+user: I think I'd like to see a movie this weekend. Can you help me find something?
+tool(FindMovies): ok n_results=10
+assistant: I found 10 movies you might like. There's Yesterday which received a rating of 63 out of 100.
+user: Okay, that sounds good. Can you also find some songs for me? I like anything by Karmin, maybe something from the Pulses album.
+tool(LookupMusic): ok n_results=1
+assistant: I found 1 song that you might like. What about Acapella by Karmin from the Pulses album?
+user: Yeah, that sounds great.
+assistant: Would you like me to play the song?
+user: Yes.
+assistant: Okay, please confirm: Playing the song Acapella in the living room.
+user: No, cast it to the speaker in kitchen.
+assistant: Okay, just to confirm: I'm playing the song Acapella in the kitchen.
+user: Yes, sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy your song.
+user: Thanks, that's it for now.
+assistant: Have a great day!

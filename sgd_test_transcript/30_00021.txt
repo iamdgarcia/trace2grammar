@@ -1,0 +1,30 @@
+user: MY three year sobriety anniversary is coming up and I would like to treat myself. Can you help me find tickets to some kind of upcoming event?
+assistant: Sure, first tell me the number of tickets you will need and the date or dates that you would like to attend an event.
+user: I will only be treating myself so 1 ticket is fine and I would prefer it be on my sobriety day which is the 13th.
+assistant: Is there anything specific that you had in mind for the event?
+user: One of my colleagues told me that Comedysportz is pretty good.
+assistant: Great, now tell me the area I should start my search in.
+user: I will be away on vacation, so if you could find something in Philly that would be great.
+assistant: Before I proceed let's just make sure I got the details correct. I have 1 ticket for Comedysportz, located in Philadelphia on March 13th. Is that correct?
+user: Yes, that sounds amazing, I can't wait!
+tool(BuyEventTickets): ok n_results=1
+assistant: I was able to confirm that for you, have fun!
+user: Before you go, can you give me the location of the venue it will be at?
+assistant: The address of the venue is 2030 Sansom Street.
+user: Thanks for your help so far but I still need help finding a bus to take me there on the 1st of March.
+assistant: Sure, I need to know the name of the city you will be leaving.
+user: I will be traveling from New York City.
+tool(FindBus): ok n_results=7
+assistant: I found one that departs at 7:40 am, costing $26.
+user: What else do you have that leaves from Washington instead?
+tool(FindBus): ok n_results=7
+assistant: The first bus I found in a list of 7 departs at 8:30 am and costs $29.
+user: What else do you have on the list?
+assistant: I have another bus leaving at 11:30 am costing $25.
+user: That one sounds best, I would like to purchase those ones.
+assistant: I just want to make sure I have everything correct before I reserve it. You would like 1 bus ticket for the bus departing Washington at 11:30 am on March 1st, and arriving in Philadelphia. Is that information correct?
+user: Yes, that sounds perfect!
+tool(BuyBusTicket): ok n_results=1
+assistant: I am pleased to tell you that I have reserved your ticket and you should be all set with you travel.
+user: Thanks so much, that will be all for now.
+assistant: Have a wonderful day and enjoy your trip.

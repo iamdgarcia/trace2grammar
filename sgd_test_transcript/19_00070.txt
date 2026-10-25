@@ -1,0 +1,35 @@
+user: I need to get a rental car.
+assistant: When do you need the car and how long would you like it.
+user: I'd like to pick it up at 13:30 and I'll need to keep it until next Thursday.
+assistant: From which date would you want to rent the car?
+user: I'll want to get in the 6th of this month.
+assistant: Where did you need to get the car?
+user: I'd something in Washington.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There is a nice SUV Alfa Romeo Stelvio available at Union Station.
+user: How much would I have to pay per day?
+assistant: It will cost you $41.00 per day.
+user: That sounds great.
+assistant: Would you like to book it?
+user: Yes, but not now.
+assistant: Would you like help with anything else?
+user: I'd like to reserve tickets to an event there.
+assistant: Do you have a preference on the date?
+user: I would like to have something for the 6th of this month.
+assistant: How many tickets are you looking for and for which city?
+user: I want two tickets around Chicago.
+assistant: What is the name of the event?
+user: The Armando Diaz Experience is supposed to be a good event.
+assistant: Okay. Please confirm: You want to book 2 tickets for The Armando Diaz Experience on March 6th in Chicago.
+user: Yes, that is correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have confirmed your reservations. Have fun!
+user: Thanks so much. Now, can you reserve that rental car you just mentioned?
+assistant: Would you like insurance?
+user: No, I don't need it.
+assistant: Alright. To confirm, you are picking up a SUV car from Union Station on March 6th at 1:30 pm and will be dropping it off on March 7th.
+user: Yes, that all sounds right.
+tool(ReserveCar): ok n_results=1
+assistant: It has been reserved.
+user: Thanks. That will be all.
+assistant: Have a great day.

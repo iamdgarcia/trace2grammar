@@ -1,0 +1,17 @@
+user: Can you find me some interesting things to entertain me
+assistant: Sure, but what city and category? Maybe music or perhaps theater?
+user: I really love Musical performance shows, so let's look for one in NYC
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events including one from Abbi Jacobson at Kaufmann Concert Hall that's happening on March 11th at 7:30 pm, how does that sound?
+user: That sounds really good, but can you try looking for events on March 12th
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events again, one of them being Alma Deutscher at Stern Auditorium / Perelman Stage that's at 5 pm on March 12th
+user: Where is the venues address?
+assistant: It's at 881 7th Avenue
+user: That sounds cool, book me three tickets to that.
+assistant: Confirming you want 3 tickets to Alma Deutscher on March 12th in New York?
+user: Yes that's absolutely perfect
+tool(BuyEventTickets): ok n_results=1
+assistant: It's booked, I hope you enjoy the show!
+user: Thanks, I hope so too, that's all for now
+assistant: Enjoy and take care!

@@ -1,0 +1,18 @@
+user: I think I need a therapist. Can you schedule an appointment with one for me?
+assistant: I'd be glad to. What type of therapist do you wish to see? I can find one for you if you provide the location as well.
+user: I want to see a Psychologist in the Oakland area.
+tool(FindProvider): ok n_results=10
+assistant: I have found 10 options that meet your criteria. The top choice I found is Alameda Children'S Specialized. They are a local psychologist in Oakland.
+user: Can you provide me with the address?
+assistant: The psychologist is located at 7200 Bancroft Ave # 125C.
+user: Okay thank you for that info.
+assistant: Do you want me to schedule an appointment at that location?
+user: Yeah. Go ahead and make the appointment for me.
+assistant: Can you please provide the preferred date and time for appointment?
+user: I'm looking for something on March 6th. Preferable something around 5:30 in the evening when I'm off from work.
+assistant: I am booking an appointment with Alameda Children'S Specialized on March 6th at 5:30 pm. Is that okay?
+user: That should work fine. Go ahead and confirm it. While you're at it, can you tell me their phone number?
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully booked your appointment. There will be a confirmation email provided to you soon. The phone number is 510-383-5100.
+user: I appreciate the help! Thank you so much.
+assistant: It was my pleasure. Please let me know if you need anything else.

@@ -1,0 +1,43 @@
+user: Can you help me find something interesting to do?
+assistant: What kind of event do you want to see and in what city?
+user: I really want to see some musical shows in Philly if possible
+tool(FindEvents): ok n_results=10
+assistant: Anthony Green is someone you'd like maybe? He's playing at The Foundry on March 10th at 6 pm
+user: That's good but can you find me some other event?
+assistant: Ayokay is performing at The Foundry as well on March 11th at 6:30 pm
+user: Cool, how much is a ticket and what's the venue address?
+assistant: It's at 29 East Allen Street 2nd Floor and it's $60
+user: That sounds good to me
+assistant: Do you want to buy tickets for this event?
+user: Not now, but maybe later. But can you find me some buses going there?
+assistant: Where are you coming from?
+user: I'm coming from NY on the 2nd of March
+tool(FindBus): ok n_results=7
+assistant: How about the bust leaving at 7:40 am for $23
+user: That sounds good, can you now find me a round trip flight to get there
+assistant: Are you leaving on March 11th
+user: I want to start my travels on the 7th of this month actually
+assistant: OK and when do you want to come back?
+user: I want to return on the 14th of March
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Do you want to fly with American Airlines? If so, they have an 11:20 am flight that's direct and it has a 1:20 pm return flight for $95
+user: What else is there?
+assistant: How about Delta Airlines and their 12:20 pm direct flight and a 3 pm return flight for a little bit more at $101
+user: Is that a Premium Economy ticket/
+assistant: It's just regular economy
+user: When does the return flight arrive?
+assistant: It arrives at 3:51 pm
+user: OK that sounds good. Now find me a hotel in the area
+tool(SearchHotel): ok n_results=10
+assistant: How about the 4 star Aka Rittenhouse Square?
+user: That sounds great!
+assistant: Do you want me to book that hotel for you?
+user: For now not yet, but buy me 3 tickets to the event we found earlier
+assistant: Confirming that you want 3 tickets to Ayokay on March 11th in Philadelphia
+user: Actually I just need 1 ticket
+assistant: Please confirm you want 1 ticket to Ayokay
+user: Yes that works for me
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is booked, have a great time there!
+user: Thanks for your help, that's all for now
+assistant: Great, take care!

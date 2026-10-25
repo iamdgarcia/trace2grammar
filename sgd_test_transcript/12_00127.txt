@@ -1,0 +1,25 @@
+user: I want to find some interesting things to do.
+assistant: What type of events? What city should I search in?
+user: I like Musical shows. Find me something around New York City.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events that you might like. How about Abbi Jacobson? It is a very popular event taking place on March 11th at Kaufmann Concert Hall. It starts at 7:30 pm.
+user: That sounds great.
+assistant: Would you like to buy tickets for this event?
+user: No, maybe later. I need you to help me request a payment.
+assistant: Sure. What is the amount?
+user: It is for 103 bucks.
+assistant: Can I have the contact name?
+user: The contact name is Mary.
+assistant: Can you confirm the following: You are making a public transaction with Mary for $103. Is this correct?
+user: Yes it is.
+tool(RequestPayment): ok n_results=1
+assistant: Your payment request has been successfully made.
+user: Thanks a lot! I'd like to purchase four tickets to the event that you found earlier.
+assistant: Can you confirm the following: you need to book 4 tickets for the Abbi Jacobson event taking place in New York on March 11th.
+user: Yes, that works.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is successful. Have a great time!
+user: Thanks for your help.
+assistant: Can I help you with anything else?
+user: No. Thanks a lot.
+assistant: You're welcome. Have a great day!

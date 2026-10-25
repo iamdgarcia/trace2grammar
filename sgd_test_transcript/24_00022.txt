@@ -1,0 +1,25 @@
+user: I'd like to have four tickets for a one way flight.
+assistant: What city would you like to leave from, and what location do you intend to head to? What day do you wish to go?
+user: I am headed to Los Angeles, and I'd like to begin my trip at next friday. Search for flights coming from Phoenix Az.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Do you wish to fly on American Airlines? The onward direct flight leaves at 2:40 pm, and the ticket price is $78.
+user: Get me some other alternative.
+assistant: Do you wish to fly on Delta Airlines? The onward direct flight leaves at 9:15 am, and the ticket price is $101.
+user: That sounds lovely. I'd like to look for locomotives leaving there.
+assistant: Would you like to begin travelling on March 8th?
+user: That's fine by me.
+tool(FindTrains): ok n_results=2
+assistant: What do you think about the locomative leaving at 7 am? The price is $322.
+user: What location does this come to, and what place will it depart from?
+assistant: The locomotive comes to Union Station. The locomotive comes from Phoenix Union Station.
+user: That sounds fine with me.
+assistant: Would you like to reserve tickets?
+user: Yeah, I'd like to make the booking with trip insurance.
+assistant: Please verify the following information: you'd like a ticket from the locomotive departing from Phoenix to Los Angeles. The locomotive departs on March 8th 7 am, and it is a value ticket for 4 people.
+user: That's fine with me.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your tickets have been reserved.
+user: Thank you for your help.
+assistant: Could I assist you with something else?
+user: Nope; thank you for your help.
+assistant: I hope to see you later.

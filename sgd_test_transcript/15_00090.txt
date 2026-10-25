@@ -1,0 +1,27 @@
+user: Could you look a therapist for me? I require a psychiatrist in Lafayette.
+tool(FindProvider): ok n_results=1
+assistant: You ought to try Donnelly Diane, a psychiatrist in Lafayette.
+user: Can you tell me their contact number?
+assistant: Their phone number is 925-284-1599.
+user: Where is it located?
+assistant: The location is 3468 Mount Diablo Boulevard.
+user: That's fine. What is the climate like on Sunday this week?
+tool(GetWeather): ok n_results=1
+assistant: The mean temperature for that day ought to be 85 degrees Fahrenheit. There is a 17 percent probability of raining.
+user: What is the humidity going to be like?
+assistant: The humidity level will be near 18 percent.
+user: What is the wind speed going to be like?
+assistant: The mean wind speed ought to be 7 miles per hour.
+user: Alright, that's fine.
+assistant: Is there something else you need?
+user: I'd like to go back to reserving the appointment with the therapist you discovered on that day.
+assistant: When would you prefer your reservation to be at?
+user: The reservation time ought to be half past 2 in the afternoon.
+assistant: Please verify the following information: reserve an appointment with Donnelly Diane on March 3rd for 2:30 pm.
+user: Yeah, that's fine.
+tool(BookAppointment): ok n_results=1
+assistant: Your reservation has been completed. You ought to receive an email verification shortly.
+user: Thank you for your help; I appreciate it.
+assistant: Could I assist you with something else?
+user: Nah. Thank you for your help; I appreciate it.
+assistant: I am happy to be of service.

@@ -65,6 +65,7 @@
     var state = 'q_greet';
     var cycleDepth = 0;
     var errorCount = 0;
+    var silentFailure = false;
     var pendingAuthCall = false;
     var lastUserT = null;
     var outcome = null;
@@ -125,6 +126,19 @@
         }
       } else if (kind === 'tool_result') {
         pendingAuthCall = false;
+        /* silent-failure signal: an "ok" result that carried zero results
+         * (structured count attr at 0, or the adapter convention 'n_results=0'
+         * in the result content). Flag only; outcome classification untouched. */
+        if (!silentFailure) {
+          var a = ev.attrs || {};
+          var nRes;
+          ['result_count', 'tool.result_count', 'gen_ai.tool.call.result_count', 'n_results'].some(function (k) {
+            if (k in a) { nRes = a[k]; return true; }
+            return false;
+          });
+          if (nRes === undefined && /\bn_results=0\b/.test(content)) nRes = 0;
+          if (String(nRes) === '0' || String(nRes) === '0.0') silentFailure = true;
+        }
       } else if (kind === 'tool_error') {
         errorCount += 1;
         if (state === 'q_auth') {
@@ -160,7 +174,7 @@
         outcome = state === 'q_close' ? 'theta_cont' : 'theta_aban';
       }
     }
-    return { walk: walk, outcome: outcome, cycle_depth: cycleDepth, error_count: errorCount };
+    return { walk: walk, outcome: outcome, cycle_depth: cycleDepth, error_count: errorCount, silent_failure_candidate: silentFailure };
   }
 
   /* Transcript → canonical events: VERBATIM port of _normalize_transcript

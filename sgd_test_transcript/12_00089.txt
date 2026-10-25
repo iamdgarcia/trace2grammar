@@ -1,0 +1,17 @@
+user: I need to find a bus.
+assistant: For when is that?
+user: I need it for one on March 6th.
+assistant: Where do you want go to?
+user: I want to end up in Anaheim from Fresno, it doesn't have to be nonstop.
+tool(FindBus): ok n_results=4
+assistant: There is one that leaves at 1:50 pm for $38 would that work?
+user: Probably, can you get the tickets for me?
+assistant: That will be 1 seat, no extra luggage, on a bus leaving Fresno at 1:50 pm on March 6th scheduled for arrival in Anaheim, right?
+user: That is correct.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your seat has been purchased.
+user: Fantastic now I need one room at a 3 star hotel in the same area.
+tool(SearchHotel): ok n_results=10
+assistant: I found 10 right off like this 3 star one the Anaheim Majestic Garden Hotel.
+user: That would probably be nice, catch you later.
+assistant: Have a nice day!

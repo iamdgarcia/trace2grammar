@@ -1,0 +1,19 @@
+user: I need to search for songs from '19. I hear the album Reincarnation is nice. I like Reggaeton songs.
+tool(LookupMusic): ok n_results=1
+assistant: What are your thoughts on Top Shotta by Tommy Lee Sparta from the album Reincarnation?
+user: Yes, that would be the one. What is the weather like there?
+assistant: What city do you wish to check weather for?
+user: I'd like in Philadelphia.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature is 81 degrees F with an 8 % chance of rain.
+user: What is the date today and how windy will it be?
+assistant: The average wind speed is 4 mph on March 1st forecast.
+user: Sure that is fine. Can you play the song you found now?
+assistant: Please confirm details to play the song Top Shotta in Living Room.
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music.
+user: Thanks so much.
+assistant: What else can I assist you with?
+user: No I don't need anything else thanks.
+assistant: Have a nice day.

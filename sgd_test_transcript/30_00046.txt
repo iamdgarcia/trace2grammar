@@ -1,0 +1,27 @@
+user: I am interested in reserving three tickets for an event happening on 2nd of March. Some friends told me that Read The Tempest is a nice one.
+assistant: Can you tell me the city where I should look for the event?
+user: The event I am looking for should be happening around Seattle, WA.
+assistant: Can you please confirm that you want to buy 3 tickets for the Read The Tempest which happens on March 2nd in Seattle?
+user: Yes, that is what I want. Can you tell me the time when the event starts, and how much the ticket of the event costs?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your requested tickets have been booked. Enjoy your time there! The price of the ticket is $20, and the time of the event is 5:30 pm.
+user: I appreciate your help very much. Could you tell me about the buses which go there?
+assistant: Is the date that you are leaving March 2nd? Can you tell me from where will you be departing?
+user: The bus I am looking for should be a direct one, and I am planning to depart from Portland, OR on 1st of March.
+tool(FindBus): ok n_results=10
+assistant: How would you like having the bus which leaves at 7 am, and the ticket costs $28.
+user: That seems nice. I would like to have these tickets of this bus bought.
+assistant: Can you please confirm that you want to buy tickets for 3 people without extra luggage for the bus which leaves from Portland on March 1st at 7 am, and it arrives in Seattle.
+user: That is not right because I actually have excess luggage.
+assistant: Can you then please confirm once again that you are going to have extra luggage on the bus which leaves at 7 am?
+user: That is what I want.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested tickets have been bought.
+user: Can you tell me the station from where the bus leaves?
+assistant: The bus leaves from SW Arthur & 1st.
+user: Can you tell me the station where the bus will arrive at?
+assistant: The arrival station of the bus is Westlake Station.
+user: I appreciate your help very much.
+assistant: Is there something else I can do to help you?
+user: Nothing. I am grateful for your help.
+assistant: Have a wonderful time!

@@ -1,0 +1,14 @@
+user: I want to check the weather please
+assistant: What place are you interested in checking?
+user: I wanna see what it's like in Las Vegas
+tool(GetWeather): ok n_results=1
+assistant: Well right now it's 84 degrees Fahrenheit with a rough 18 percent chance of rain
+user: How about in San Pablo on March 12th?
+tool(GetWeather): ok n_results=1
+assistant: The temperature there is around 81 degrees with a 28 percent chance of it raining
+user: Is it expected to be humid and windy?
+assistant: Wind speeds are pretty low at 2 miles per hour, and humidity is at around 15 percent
+user: OK, thanks for all of that information
+assistant: Anything else you want me to check?
+user: No that's it for now
+assistant: Cheers, have a good one

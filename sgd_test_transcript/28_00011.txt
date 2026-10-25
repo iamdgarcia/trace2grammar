@@ -1,0 +1,24 @@
+user: I want to find a movie to see.
+tool(FindMovies): ok n_results=10
+assistant: I located 10 movies. What do you think about Once Upon a Time in Hollywood? There is a rating of 85 out of 100 on average.
+user: I like how that sounds. I also want to find a restaurant in that area.
+assistant: What is your type of food you want? Which location would you like me to look in?
+user: Find some places that have pizza in San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: I have found 10 restaurants you may enjoy. There is a good restaurant named 54 Mint Ristorante Italiano in San Francisco.
+user: Okay, that works.
+assistant: Do you want to reserve a table there?
+user: yes, get me a reservation for 1 person. I want the time to be at evening 5:15.
+assistant: Reserve a table for 1 person at the restaurant 54 Mint Ristorante Italiano in San Francisco at 5:15 pm on March 1st. Can you make sure those details are right?
+user: No, I need a table for two and make the time at 11:15.
+assistant: Make reservations for 11:15 am for 2 seats. Is that right?
+user: Yes, that is what I want. Is the restaurant pricey? Will you see if there is an outdoor eating area?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant is priced moderate and there is an eating area outdoor. I apologize because I couldn't make the reservation. However, 54 Mint Ristorante Italiano is a lovely place to dine so would you like to try to make reservations for 2 on March 1st at 11:30 am?
+user: Sure, that's fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I was able to make the reservations.
+user: Thanks, you are great help.
+assistant: Do you need anything else?
+user: No, thanks for everything.
+assistant: I hope you have a lovely day.

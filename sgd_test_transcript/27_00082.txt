@@ -1,0 +1,22 @@
+user: Would you be able to help me with a bus? I'd like to find a direct bus to take on March 6th.
+assistant: Where are you traveling to?
+user: I need to go to SD.
+assistant: And where will you be departing from?
+user: I'm taking off from Long Beach, CA.
+tool(FindBus): ok n_results=9
+assistant: I have a bus with a $24 fare that leaves at 6:50 am.
+user: That sounds OK. How about finding an attraction there for me? A wildlife spot perhaps.
+tool(FindAttractions): ok n_results=4
+assistant: I think you would enjoy Birch Aquarium at Scripps Institution of Oceanography, which is a nature preserve.
+user: I like that. Also I think I would like to purchase the bus tickets now. May I get four of them please?
+assistant: Confirming 4 seats from Long Beach to San Diego on the bus leaving at 6:50 am on March 6th.
+user: Yes, that's correct, thanks.
+tool(BuyBusTicket): ok n_results=1
+assistant: The tickets have been purchased.
+user: Thanks again. I'm also going to need to book three rooms at a hotel somewhere in that area, some place with three stars please.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 3 star hotel called Bahia Resort Hotel that I recommend.
+user: That sounds really good.
+assistant: Is there anything else I can help you with today?
+user: No, I appreciate everything.
+assistant: It's my pleasure, thank you.

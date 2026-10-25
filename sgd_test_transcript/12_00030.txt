@@ -1,0 +1,44 @@
+user: I need to purchase tickets.
+assistant: Where are you travelling? What date and time would you like to leave?Ho
+user: I am going to LOng Beach on the 7th of March in the afternoon 3:15.
+assistant: Where are you departing from?
+user: I am departing from SD.
+assistant: How many tickets will you need?
+user: FOr 2 please.
+assistant: You want 2 tickets to from Long Beach to San Diego on March 7th at 3:15 pm, correct?
+user: Yes that is correct, is it a direct bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: It is a direct trip, but that time is unavailable. How about 3:20 pm, which costs $22.
+user: YEs that would be fine.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your ticket is confirmed.
+user: I also need a rental car there.
+assistant: WIll you be picking it up in Long BEach?
+user: Yes that would be great.
+assistant: What time would you like to pick it up? Will you pick it up on March 7th.
+user: I'll pick it up on the 9th of this month at 5 in the evening.
+assistant: When will you return it?
+user: I will return it on the 14th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There are 10 cars available. One is at LGB Airport and is an SUV Alfa ROmeo Stelvio.
+user: Did you find anything else?
+assistant: There is a nice Buick Regal Sportback Sedan at Downtown Station.
+user: How much will it cost daily?
+assistant: It costs $24.00 a day.
+user: What else did you find?
+assistant: THere is a Fiat Panda Hatchback at LGB Airport.
+user: How much is it daily?
+assistant: IT's $31.00 a day.
+user: That sounds good.
+assistant: Do you want to reserve the rental car?
+user: YEs please rent the car.
+assistant: Do you want too add insurance?
+user: NO thanks, I don't need it.
+assistant: You are picking up a hatchback from LGB Airport on March 9th at 5 pm and returning it on March 14th. You do not need additional insurance.
+user: I do need insurance.
+assistant: You want to pick up the rental at 5 pm and you do need to add insurance, is that correct?
+user: Yes that is correct thanks.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is reserved.
+user: Thanks, that is all for now.
+assistant: Have a great day.

@@ -1,0 +1,36 @@
+user: I need help looking for a train.
+assistant: Where will you be travelling to?
+user: I'll be travelling to Anaheim, CA.
+assistant: And where will you be departing from and on what date?
+user: I'll be travelling from SF on the 6th of March.
+tool(FindTrains): ok n_results=7
+assistant: There's a train departing at 7:10 am for $90, are you interested?
+user: What's the departure and arrival station?
+assistant: The departure is at Salesforce Transit Center and the arrival is at Anaheim Intermodal Center.
+user: That will work.
+assistant: Would you like me to reserve tickets?
+user: Yes, please do.
+assistant: How many tickets do you want? And will you need travel insurance?
+user: I just want 1 ticket, and I'd like travel insurance.
+assistant: I'll book you 1 value train ticket with travel insurance for San Francisco to Anaheim on March 6th at 7:10 am. Do you confirm?
+user: Yes, I confirm.
+tool(GetTrainTickets): ok n_results=1
+assistant: I've booked the ticket.
+user: Thanks a lot, you've been of great help.
+assistant: What else can I do for you?
+user: What are some interesting things to do there, I want to see a Play.
+tool(FindEvents): ok n_results=1
+assistant: A lot of people enjoy Jesus Christ Superstar. It's at the Stage Door Repertory Theatre on March 1st at 7 pm.
+user: I think I'd enjoy that.
+assistant: Do you want to purchase tickets?
+user: No, maybe later.
+assistant: What else can I do for you?
+user: I want to share the Play's location with someone.
+assistant: Who would you like to share it with?
+user: Share it with Jacob please.
+assistant: I'll share the location of Stage Door Repertory Theatre with Jacob, is that okay?
+user: Yeah, that's it.
+tool(ShareLocation): ok n_results=1
+assistant: I've shared the location.
+user: Thanks so much. I need to go now.
+assistant: Have a good rest of your day.

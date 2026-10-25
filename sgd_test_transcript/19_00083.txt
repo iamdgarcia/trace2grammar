@@ -1,0 +1,33 @@
+user: My car is in the shop and I need to rent a car.
+assistant: When would you like to start and end the car rental? What time would you like to pick it up?
+user: I need to pick it up this Saturday at 2 in the afternoon and return it on the 7th of this month.
+assistant: Where would you like to rent the car from?
+user: I'm looking for something in SD.
+tool(GetCarsAvailable): ok n_results=8
+assistant: I found a nice car at the SAN International Airport. This is a SUV Citroen C5.
+user: Yes, sounds good.
+assistant: Should I book the car?
+user: Yes, but maybe later.
+assistant: Anything else I can help with?
+user: I'd like to book tickets to an event there.
+assistant: What event are you interested in?
+user: I'm interested in Dimension.
+assistant: Any certain city I should search in?
+user: I'm looking for something in London.
+assistant: What date did you have in mind? How many tickets do you need?
+user: I need one ticket on the 11th of March.
+assistant: Let's confirm: We're booking 1 ticket for Dimension playing in London on March 11th.
+user: Yes, sounds good. What time does it start?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket is booked, enjoy! The show starts at 6 pm.
+user: Thank you. Can you reserve that rental car you found for me?
+assistant: Would you like to add insurance?
+user: Yes, let's get the insurance.
+assistant: Let's confirm: You're booking a SUV with insurance from SAN International Airport, picking up on March 2nd at 2 pm and returning it on March 7th.
+user: Yes, sounds good. What's the cost per day?
+tool(ReserveCar): ok n_results=1
+assistant: Okay, the car is reserved. The cost is $71.00 per day.
+user: Okay, thank you.
+assistant: Anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day!

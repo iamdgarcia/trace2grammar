@@ -1,0 +1,38 @@
+user: Please check whether there are any regular show of Dramatic story in Vine Cinema?
+assistant: Please detail your location.
+user: Please find any movie shown in Livermore.
+tool(FindMovies): ok n_results=1
+assistant: Do you like Blinded by the light?
+user: Thats ok, but see whether any other there?
+tool(FindMovies): ok n_results=0
+assistant: Apologies, no more matching the request.Any other help?
+user: Please try to find any movie there at Livermore Cinema.
+tool(FindMovies): ok n_results=2
+assistant: 2 movies are there. Hustlers and The art of Racing in the rain are those.
+user: Look for any Supernatural movies to watch a imax show.
+tool(FindMovies): ok n_results=1
+assistant: IT Chapter Two is 1 such movie.
+user: IT Two can be chosen.I need a reservation at SAuced Bbq at evening 7:30.
+assistant: Please confirm, you want to reserve a table at Sauced Bbq & Spirits in Livermore. the time is 7:30 pm on March 1st. You will be 2 people.
+user: Good, go on
+tool(ReserveRestaurant): ok n_results=0
+assistant: Failed, sorry for the trouble. Any other help you need?
+user: Try to book a table 5:45 in the evening.
+assistant: Please check the details are correct. You need a table at Sauced Bbq & Spirits in Livermore at 5:45 pm on March 1st for 2 people.
+user: Perfect. Will I get vegetarian food there?
+tool(ReserveRestaurant): ok n_results=1
+assistant: No vegetarian food is available. Reservation failed. Do you prefer a table for 2 people on March 1st at 6 pm in Sauced Bbq & Spirits.
+user: Ok, thats enough.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation made successfully.
+user: Thanks for the favor.
+assistant: How can I help you any more?
+user: When can I watch the movie selected for me?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is a show at 10 pm. the location is Livermore 13 Cinema.
+user: Do you have their address?
+assistant: 2490 First Street is their address.
+user: Great, thank you.
+assistant: Do you need tickets now?
+user: No, not now, thank you
+assistant: Have a funny day.

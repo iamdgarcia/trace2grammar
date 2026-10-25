@@ -1,0 +1,18 @@
+user: I need 1 seat on a train on March 13th. I need to go to Washington.
+assistant: What city are you leaving from?
+user: I am leaving from Atlanta, GA.
+tool(FindTrains): ok n_results=6
+assistant: A train is leaving at 1 pm. The ticket is $115.
+user: Perfect, book me that train.
+assistant: Do you want travel insurance?
+user: Yes, I want to buy insurance.
+assistant: Please confirm, 1 value ticket from Atlanta to Washington on March 13th at 1 pm.
+user: That is perfect.
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been purchased.
+user: What is the name of the arrival station?
+assistant: Union Station.
+user: What is the departing station?
+assistant: Peachtree Station.
+user: That is all, thanks!
+assistant: Goodbye!

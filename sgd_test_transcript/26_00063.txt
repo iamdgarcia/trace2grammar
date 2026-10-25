@@ -1,0 +1,28 @@
+user: I'm planning to take a trip beginning on the 8th of this month. Can you search for round trip flights?
+assistant: When do you want to come back?
+user: I plan to come back on the 12th of March
+assistant: And what is your destination?
+user: I'm heading to San Francisco
+assistant: Where are you planning on leaving from?
+user: I'd like to leave from London
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 flights that match your search criteria. The first is an American Airlines flight that departs at 12:45 pm, making one stop. The return flight is at 4:55 am. The fare for this ticket is $658.
+user: Great, thanks. I'd also like to find accommodations there.
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 places that may suit your tastes. The first is a lovely 4.0 star rated home on 1095 Market Street.
+user: That one sounds perfect. I'd like to reserve it for the 12th of March until the 8th of this month for 2 people.
+assistant: So you would like to reserve the home in San Francisco for 2 people, from March 8th to March 12th, correct?
+user: Actually, no. I would like to reserve it from the 10th of this month until March 11th.
+assistant: To confirm, you want to book your stay from March 10th to March 11th, correct?
+user: Yes, that is right.
+tool(BookHouse): ok n_results=1
+assistant: Your accommodations have been booked
+user: Can you tell me what the final cost will be?
+assistant: The final cost is $216.
+user: Great. Thanks! Now I'd like to find some fun attractions there that are free to see.
+tool(FindAttractions): ok n_results=10
+assistant: There is the Historical Landmark, Alcatraz which is worth seeing.
+user: Perfect, thank you!
+assistant: Will that be all?
+user: Yes. I'm all set. Thanks for your assistance.
+assistant: Have a nice day!

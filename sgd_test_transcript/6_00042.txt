@@ -1,0 +1,16 @@
+user: I am interested in getting my hair done and am looking for a salon.
+assistant: In what city shall I look for the salon?
+user: Please look for a salon in Berkeley.
+tool(FindProvider): ok n_results=10
+assistant: You have 10 salon choices in this area. A nice one is Aya Salon & spa located in Berkeley.
+user: Thank you, but please look for a unisex salon.
+tool(FindProvider): ok n_results=10
+assistant: I found one located in Berkeley named Berkeley Hair studio.
+user: Please provide me with the address.
+assistant: The place is located at 2556 Telegraph Avenue #4.
+user: Please tell me the average rating of this place and also the contact number.
+assistant: Their rating averages 4.8 and you may reach them at 510-540-1261.
+user: This place sounds perfect.
+assistant: Would you like me to schedule an appointment?
+user: Not at this time. Thank you for your assistance.
+assistant: Enjoy your day!

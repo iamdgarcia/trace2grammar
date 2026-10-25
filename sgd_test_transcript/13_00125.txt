@@ -1,0 +1,17 @@
+user: I'd like to find a movie to watch online.
+assistant: What kind would you like to watch?
+user: Animation would be great.
+tool(FindMovies): ok n_results=2
+assistant: There are 2 that you might like. How about The Angry Birds Movie 2 or Toy Story 4?
+user: Angry Birds would be great.
+assistant: Would you like to play the movie?
+user: Yes, please play the movie. I'd like to watch it with Spanish subtitles.
+assistant: Please confirm the following: You want to play The Angry Birds Movie 2 with Spanish subtitles.
+user: Yes, that would be great. Who is in it?
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started. Bill Hader is in it.
+user: Thanks, how's the weather in Oakley?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature will be 73 degrees Fahrenheit and there's a 3 percent chance of rain.
+user: Awesome. That's all for now! Bye!
+assistant: Have a great day!

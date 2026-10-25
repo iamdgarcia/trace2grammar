@@ -1,0 +1,15 @@
+user: It's suppose to be raining all day so I'm cooped up in the house and bored. Can you help find me a movie to watch, preferably one that is classified as a Comic and directed by Nitesh Tiwari?
+tool(FindMovies): ok n_results=1
+assistant: I was able to find one titled Chhichhore, but it has a substantially low rating of only 60 percent.
+user: That doesn't sound like something I would like. Is there anything else?
+tool(FindMovies): ok n_results=0
+assistant: I regret to inform you no, I was unable to find anything anything else matching that criteria. Can I assist you with something else?
+user: Okay, let's try something else. How about a movie directed by Gene Stupnitsky instead?
+tool(FindMovies): ok n_results=1
+assistant: The rating on Good Boys is a little better than the last film I found with a 79 percent rating.
+user: Can you tell me the names of the Actors and Actresses that star in this movie?
+assistant: The star of this film is Alexander Calvert.
+user: Okay, that more along the lines of what I was looking for.
+assistant: Great, can I help you with anything else?
+user: No, you were a great help, thank you!
+assistant: It was my pleasure.

@@ -1,0 +1,21 @@
+user: Hello, could you help me out? I am currently looking for a nice house to stay in for my trip.
+assistant: Which city are you planning to stay in?
+user: I will be traveling to Paris.
+tool(SearchHouse): ok n_results=10
+assistant: Okay, I have located 10 very nice houses for you in the area. How about the house located 1 Rue Bayard, 75008. It has a great rating at 4.5 stars.
+user: No, anything else available? I need something rated around at least 4.6 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: Okay, I have located 10 houses for you. There is a nice place at 116 Rue du Temple, 75003. It's rated at 4.6 stars.
+user: Okay, now that sounds much better! I would like to go ahead and book a reservation for two people. I will be checking in on the 12th and leaving on the 14th.
+assistant: Sure thing, but before we start please confirm the following for me. Booking a reservation for 2 at the house located in Paris from March 12th through March 14th. Correct?
+user: No, actually I will be checking in on the 10th of March. My mistake.
+assistant: Okay, please confirm. The check in date is now March 10th and your check out date is March 14th. Is this right?
+user: Yes, that's correct. .
+tool(BookHouse): ok n_results=1
+assistant: Okay, your reservation was a complete success. Anything else?
+user: Yeah, what is the total price? Also can I get their phone number please?
+assistant: The total price will be $1,488 and their number is +33 1 53 16 33 33.
+user: Okay, thanks for the assist! Appreciate it.
+assistant: Anything else I can do for you today?
+user: No, that will be all. Thank you so much.
+assistant: It was my pleasure to help. Goodbye!

@@ -1,0 +1,18 @@
+user: Can you help me find a place to eat?
+assistant: Sure. Where would you like me to look, and what kind of food are you interested in?
+user: I feel like Thai food. Find me something in San Fran.
+tool(FindRestaurants): ok n_results=10
+assistant: I've found 10 restaurants that match that criteria. How about Baan Thai House & Wine Bar in San Francisco?
+user: Depends. What's their rating? Also do they have vegetarian options?
+assistant: They have a user rating of 4.3 and good options for vegetarians.
+user: Awesome. That sounds good to me.
+assistant: Would you like to make a reservation?
+user: Yes, I do.
+assistant: What time would you like to make the reservation for?
+user: Make it for 11:30 in the morning.
+assistant: Please confirm the following details: Book a table for 2 at Baan Thai House & Wine Bar in San Francisco for 11:30 am on March 1st.
+user: Yes, confirmed.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has successfully been made.
+user: Great. Thank you.
+assistant: You're welcome. Enjoy the rest of your day.

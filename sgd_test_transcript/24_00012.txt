@@ -1,0 +1,34 @@
+user: I need to buy 1 ticket for a one way flight
+assistant: where are you leaving from and where's the place you need to reach?
+user: I'm departing from new york to land in chicago
+assistant: when will you start your trip?
+user: on the 4th
+tool(SearchOnewayFlight): ok n_results=4
+assistant: there's 4 options you may consider. american airlines has a flight leaving at 11:20 am for $180
+user: okay. look for trains with flexible tickets to reach that place
+assistant: do you want to depart on march 4th?
+user: sunday this week is okay
+tool(FindTrains): ok n_results=6
+assistant: you could leave at 6 am by paying a $137 ticket
+user: where am I leaving from?
+assistant: you'll leave from grand central station
+user: show me more trains that will match my request
+assistant: you can leave at 6:10 am and it will cost you $145
+user: look for trains leaving on the 13th of this month, I'll only need 1 seat
+tool(FindTrains): ok n_results=6
+assistant: You can leave on the 7:50 am train and it will cost you $139
+user: what's the final station?
+assistant: it's called chicago union station
+user: it can be okay
+assistant: I can buy tickets then
+user: yes, buy them
+assistant: do you think you'll need the travel insurance
+user: yes, I think it's the best option
+assistant: confirm the data: you need 1 flexible train ticket to go from new york to chicago on march 13th at 7:50 am. you want to buy the insurance too
+user: yes, you may proceed with the purchase
+tool(GetTrainTickets): ok n_results=1
+assistant: it's final, you got your ticket
+user: where will I leave from?
+assistant: grand central station, sir
+user: you helped me bit time, thanks a lot! Goodbye
+assistant: Talk to you soon! Bye!

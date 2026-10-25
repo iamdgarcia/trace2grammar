@@ -1,0 +1,29 @@
+user: Can you reserve me tickets for cody johnson please
+assistant: How many tickets are you after, and for which date?
+user: Can you get me two tickets for the show on the 12th of this month?
+assistant: Which city should i search for?
+user: His concert in seattle
+assistant: Confirming you want to book 2 tickets to see cody johnson in seattle on march 12th
+user: Can you change that to three tickets for the day after tomorrow
+assistant: Confirming you want 3 tickets for march 3rd
+user: Yes thank you
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking was successful
+user: Can you look into buses going there
+assistant: Do you want to depart on march 3rd? What is your departure city
+user: Can you check for buses from portland, OR on the 1st of this month
+tool(FindBus): ok n_results=10
+assistant: There is a bus leaving at 7 am, tickets cost $28
+user: How many stops are there, and where does it get in?
+assistant: This is a direct service arriving at westlake station
+user: what other options are there
+assistant: There is a bus departing at 11:20 am, is costs $30
+user: Okay can you reserve me tickets
+assistant: Confirming you want to book 3 tickets for 11:20 am bus service from Portland to Seattle on March 1st. There's no extra luggage.
+user: Yes that's all correct. How many stops are there, and which station are we departing from?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets have been confirmed. This is a direct service, departing from sw arthur & 1st
+user: okay great thanks
+assistant: Do you need anything else right now?
+user: No that's all
+assistant: happy to help

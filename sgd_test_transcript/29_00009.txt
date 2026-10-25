@@ -1,0 +1,28 @@
+user: I am looking for a hotel.
+assistant: Which city would you like?
+user: Please search NYC.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 options. A 5 star hotel is 1 Hotel Brooklyn Bridge.
+user: Good, I need a round trip flight.
+assistant: Leaving on March 8th and returning when?
+user: Actually, I need to leave on the 1st of March and back on March 10th.
+assistant: Where do you want to depart?
+user: Out of Vancouver on Tuesday next week.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights. American Airlines has a flight taking off at 11:20 am with a layover and returning at 1:40 pm. The ticket costs $498.
+user: That sounds good.
+assistant: Can I do anything else for you?
+user: Yes, please reserve the hotel.
+assistant: Would you like to arrive on March 5th and what date for check out?
+user: I will check in on March 10th for four days and I only need one room.
+assistant: Confirming 1 room for 4 days at 1 Hotel Brooklyn Bridge beginning on March 10th in New York,
+user: Great, what is the number?
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is booked. The number is +1 347-696-2500.
+user: I would love to see a garden.
+tool(FindAttractions): ok n_results=10
+assistant: There is a park called Alley Pond Park
+user: Is it child friendly? What is the phone number.
+assistant: Should be fine for your kids. The number is 212-639-9675.
+user: Great, thank you.
+assistant: Have a ncie trip.

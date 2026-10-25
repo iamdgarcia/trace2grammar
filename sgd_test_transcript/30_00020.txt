@@ -1,0 +1,25 @@
+user: Find me four tickets on the 14th of this month for Yacht Rock Revue.
+assistant: What city shall I look for?
+user: Find me something with Michael Feinstein in New York City.
+assistant: You want 4 tickets to see Michael Feinstein in New York on March 14th, correct?
+user: That is right. What venue is it at?
+tool(BuyEventTickets): ok n_results=1
+assistant: Your tickets are ordered and the event is at The Appel Room.
+user: Thanks a bunch. Can you find me a bus to get there?
+assistant: Are you departing on March 14th and from what city are you departing from?
+user: I am departing out of Philadelphia on March 2nd.
+tool(FindBus): ok n_results=6
+assistant: There is a bus that leaves at 9 am and costs $22.
+user: What are the departing and arrival stations?
+assistant: The departing station is 10th and Filbert and it arrives at Penn Station.
+user: That works for me.
+assistant: Shall I get you bus tickets?
+user: Yes, book me a seat.
+assistant: You want 4 bus tickets on March 2nd with a departure time of 9 am from Philadelphia to New York, correct?
+user: That is right. Can you tell me if it is a direct bus?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are ordered and it is a direct bus.
+user: Thanks a bunch.
+assistant: Do you need something more?
+user: No, that is all. Thanks.
+assistant: Have a wonderful day.

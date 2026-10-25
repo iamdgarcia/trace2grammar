@@ -1,0 +1,16 @@
+user: I would like a train.
+assistant: What date and departure city?
+user: The 10th of March from Sacramento, CA.
+assistant: What city is arrival?
+user: It is Fresno.
+tool(FindTrains): ok n_results=7
+assistant: I have 7, one departing at 8 am for $66.
+user: I want to book it.
+assistant: How many and do you want insurance?
+user: One seat and yes for insurance.
+assistant: Confirm 1 Value seat for March 10th at 8 am from Sacramento to Fresno.
+user: What is arrival and departing stations?
+tool(GetTrainTickets): ok n_results=1
+assistant: Departure is Sacramento Valley Station and arrival is Fresno Station.
+user: Thanks, that is all.
+assistant: See you again.

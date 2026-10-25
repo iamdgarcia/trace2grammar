@@ -1,0 +1,32 @@
+user: Can you find me round trip flights?
+assistant: What will be the city of your departure, date of journey and return?
+user: I will traveling from Seattle, WA on 4th of March and will return on Wednesday next week.
+assistant: And what is your destination?
+user: I will be traveling to SD.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There are 3 flights you might want to fly with. How about a delta airlines flight, whose onward flight takes off at 4:10 am and return flight takes off at 6:15 pm? And the total cost for the ticket is $358.
+user: Can you tell me the timing for the arrival of the return flight?
+assistant: The time for the arrival of the return flight is 11:31 pm.
+user: That sounds good to me. Can you find me a house with laundry service and it should have a rating of 4.2 or higher?
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses you may like. How about a house having 4.2 rating located at 1003 Coast Boulevard, La Jolla, California 92037, United States?
+user: Find me their contact number?
+assistant: You can call them on +1 858-224-7600.
+user: Okay, That sounds good to me.
+assistant: Do you want me to reserve the house for you?
+user: Yes, Please reserve the house for me.
+assistant: Will you check out on March 6th or any other date?
+user: There are four people in my group and will be checking out on 5th of March.
+assistant: And Are you going to check in on March 4th?
+user: Yes, That is correct.
+assistant: Please confirm: You want me to book a house for 4 people in San Diego with the check in and check out dates as March 4th and March 5th.
+user: Yes, That works for me. Also find me the total price.
+tool(BookHouse): ok n_results=1
+assistant: I have successfully made the reservation and the total price is $560.
+user: Okay. Now show me some nice child-friendly attractions there.
+tool(FindAttractions): ok n_results=10
+assistant: There is a nice theme park called Belmont Park.
+user: Okay. That sounds good to me.
+assistant: Is there anything else I can help you with?
+user: No. That will be all. Thank you!
+assistant: I am glad I could help. Have a nice day!

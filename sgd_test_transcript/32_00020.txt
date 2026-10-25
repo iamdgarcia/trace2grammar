@@ -1,0 +1,17 @@
+user: I'm trying to find a therapist in the San Jose area please. Specifically I'm looking for a Psychologist.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 options for you. How about Barskyex Bryna G. They are a San Jose based Psychologist.
+user: Yes, that sounds fine.
+assistant: Shall I set an appointment with the therapist for you?
+user: If you don't mind please.
+assistant: What date and time would you like that to be?
+user: I need something on March 12th if possible, in the evening 5:30.
+assistant: Confirming your March 12th appointment with Barskyex Bryna G at 5:30 pm.
+user: Yes, thanks so much.
+tool(BookAppointment): ok n_results=1
+assistant: Certainly. The appointment has been set and you will receive a confirming email shortly.
+user: Thanks for your help. Oh, may I also get a movie recommendation from you?
+tool(FindMovies): ok n_results=10
+assistant: Would you like to see Brittany Runs A Marathon? It's rated 90 on a scale from 0 to 100.
+user: That would be great. Thanks!
+assistant: You are very welcome.

@@ -1,0 +1,20 @@
+user: I have plan for a short travel and I need a Car for rent. Do you help me to find a suitable one for me?
+assistant: Yes, of-course. What is your expected date and time of travel and until which date you want to book it?
+user: I am planning to start my travel on 10th of March and I want to book it till 11th of this month. Please search for the one available for the pickup time at 3:30 pm.
+assistant: From which place you want to book the car?
+user: Book it from Philly.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I have found suitable Car available at PHL International Airport and teh same was a Sedan of Buick Regal Sportback. Is that okay for you?
+user: Yes, I think this is the suitable one. Thanks.
+assistant: Shall I book it now?
+user: Yes, book the same for me.
+assistant: How about adding Insurance while booking the car?
+user: No, not need to include insurance.
+assistant: I need your confirmation to book a Sedan car with out insurance available for the pickup from PHL International Airport on March 10th at 3:30 pm to March 11th.
+user: Sorry, I made a mistake. please include the insurance as I need it now.
+assistant: Please confirm to book the car including insurance, upto March 11th.
+user: Yes, that is correct to proceed.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked the car.
+user: Thanks and that's all for now.
+assistant: Have a great day.

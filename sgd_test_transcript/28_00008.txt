@@ -1,0 +1,23 @@
+user: I'd like to find a movie to watch. Something funny directed by Danny Boyle would be perfect.
+tool(FindMovies): ok n_results=1
+assistant: What about a film called Yesterday? It has a rating of 63 out of 100.
+user: Who stars in this movie?
+assistant: Kate McKinnon is in the film.
+user: That sounds great. Now I'd like to find a restaurant.
+assistant: What kind of food would you like to eat?
+user: My favourite food is italian. I love pizza and pasta.
+assistant: Where would you like me to search?
+user: Please search in Burlingame.
+tool(FindRestaurants): ok n_results=6
+assistant: There is a nice place in Burlingame called Cafe La Scala Italian Rest.
+user: That sounds perfect. I'd like to book a table.
+assistant: What time do you want to make reservations for?
+user: Make them for half past 7 in the evening.
+assistant: Okay so that's a reservation for 2 on March 1st at 7:30 pm at Cafe La Scala Italian Rest. The restaurant is in Burlingame.
+user: That's correct thanks.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation has been successful.
+user: What is the phone number and do they have vegetarian options on the menu?
+assistant: Their number is 650-347-7672 and they don't serve vegetarian food.
+user: Thanks for your help.
+assistant: Enjoy your day.

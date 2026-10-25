@@ -1,0 +1,19 @@
+user: Can you find me a nice movie to watch?
+assistant: Which area do you want me to search in?
+user: I am looking for a movie in Sebastopol.
+tool(FindMovies): ok n_results=3
+assistant: There are 3 movies that you may like. What do you think of After The Wedding, Blinded by the Light or IT Chapter Two?
+user: Blinded by the Light sounds good to me.
+assistant: Do you want me to buy the tickets for you?
+user: No, Not now. I would like to reserve a table at a restaurant on 3rd of this month at one pm.
+assistant: Can you tell me the name of your preferred restaurant?
+user: Is it possible to book a table at Gypsy?
+assistant: Please confirm: You want me to book a table for 2 people at Gypsy Cafe located in Sebastopol on March 3rd at 1 pm.
+user: Yes, That is correct.
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have successfully booked the table for you.
+user: Thank you for the help. Can you show me the timings of the imax show for the movie you found?
+tool(GetTimesForMovie): ok n_results=1
+assistant: You can watch it at 9 pm in Rialto Cinemas.
+user: That sounds nice to me. That will be all. Thank you!
+assistant: I am glad I could help. Have a great day!

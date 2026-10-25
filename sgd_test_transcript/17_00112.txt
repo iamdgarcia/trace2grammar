@@ -1,0 +1,26 @@
+user: I'd like to check the weather in toronto, canada
+tool(GetWeather): ok n_results=1
+assistant: The average temp there will be 58 degrees with a 13 % chance of rain.
+user: How humid and windy will it be?
+assistant: The humidity will be around 25 %, with a wind speed of 9 mph.
+user: Could you find me a plane ticket there, a premium economy one?
+assistant: Where should it depart from, and when, march 1st?
+user: Yes, leaving from philly.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Would you like to fly with american airlines? It leaves at 5:45 pm for $323.
+user: How many people is this for?
+assistant: 1
+user: Find me something else, I'd like to fly with united airlines frmo washington.
+tool(SearchOnewayFlight): ok n_results=1
+assistant: I have 1 option. how about united airlines leaving at 3:05 pm for $144.
+user: How many people is this for, and when does it arrive at my destination?
+assistant: It is for 1 leaving at 4:30 pm.
+user: That works. Could you find me a rental there? I want to pick it up at 8:30 in the night until the 11th of this month.
+assistant: Do you want the car from march 1st?
+user: No, the 4th of this month.
+tool(GetCarsAvailable): ok n_results=3
+assistant: There's a nice Dacia Duster, an SUV at the toronto pearson international airport
+user: That works.
+assistant: Would you like anything else?
+user: No thanks.
+assistant: have a good day.

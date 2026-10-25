@@ -1,0 +1,31 @@
+user: I really want to find some interesting to do. I'm bored.
+assistant: Do you have an idea of what you'd like to do? Something athletic or something like a museum? What city or area are you interested in?
+user: I'm in New York City and I really like the theater or shows.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events that might interest you. The class Acting for Teens is being held March 4th at 6 pm. It is at 520 8th Ave. - Personal Valet Parking.
+user: Instead of that, what about something in Los Angeles near LAX? Something with concerts or songs.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events near LAX that you might enjoy. Ain Gordon is at the Ralph Freud Playhouse on March 9th at 7 pm.
+user: Okay. That sounds good. I need a house to stay near LAX. It's just for 1 person and I'd like a pretty high rating, maybe 3.7 or higher.
+tool(SearchHouse): ok n_results=10
+assistant: I have found 10 houses available near LAX. A house with a rating of 3.7 is at 1020 South Figueroa Street.
+user: That's perfect. Now I need a bus going to LAX.
+assistant: Where will you be departing from and what day do you plan to leave? Is it March 3rd, March 9th, or somewhere in between?
+user: I'm in Fresno, CA and I want to leave today.
+tool(FindBus): ok n_results=8
+assistant: There is a bus departing Fresno at 7:50 am and the cost is $40.
+user: What station will that leave from in Fresno and is it a one-stop bus?
+assistant: It will depart from the station at 2660 Tulare St and there are no stops; it is a direct bus.
+user: Is there another bus later?
+assistant: There is a bus departing 30 minutes later at 8:10 am and it is cheaper at $38.
+user: Okay. That sounds a little better.
+assistant: Do you want to purchase the bus tickets?
+user: Not yet. But I want to get tickets for that event.
+assistant: How many tickets do you need for the Ain Gordon concert?
+user: I will need two tickets for the concert.
+assistant: Please confirm the following information. You want 2 tickets for the Ain Gordon concert on March 9th in Los Angeles.
+user: Okay.How much are those tickets? And were is that concert being held?
+tool(BuyEventTickets): ok n_results=1
+assistant: The tickets are $60 each. The Ain Gordon concert will be held at 245 Charles E Young Drive East. The tickets have been purchased.
+user: Okay. Thanks. That's all I need right now.
+assistant: Enjoy your concert.

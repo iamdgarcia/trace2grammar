@@ -1,0 +1,30 @@
+user: I need a train ticket to ATL from Philadelphia.
+assistant: What date will you be travelling?
+user: I will be travelling on the 2nd of March.
+tool(FindTrains): ok n_results=5
+assistant: There's a train at 9:20 am for $173. How does that sound?
+user: What's the departure station?
+assistant: The departure station is 30th Street Station.
+user: And what's the arrival station?
+assistant: The arrival station is Peachtree Station.
+user: Okay, nice. What are some interesting things to do next Wednesday, something Songs related.
+tool(FindEvents): ok n_results=9
+assistant: There are 9 events you might enjoy. Adam Ant is well liked and will be at Atlanta Symphony Orchestra on March 6th at 6 pm.
+user: I think I'd like that.
+assistant: Do you want to purchase tickets?
+user: We can do that later.
+assistant: What else can I help you with?
+user: Tell me about attractions there also.
+tool(FindAttractions): ok n_results=10
+assistant: You can go to Al-Farooq Masjid. It's a Place of Worship.
+user: Is it free to go there? And I'd like to call them, what's their number?
+assistant: It is free to go there. Their number for calls is 678-886-3457.
+user: Nice. Now I'll need a house for when I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: I've found 10 houses. There's a nice 4.3 rated house at 101 Andrew Young International Boulevard Northwest.
+user: That sounds really good.
+assistant: Do you want to reserve the house?
+user: No, not right now.
+assistant: What else can I do for you?
+user: Nothing else, thanks for the help.
+assistant: It's been my pleasure, take care.

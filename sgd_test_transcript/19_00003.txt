@@ -1,0 +1,26 @@
+user: Hi! Can you help me find an economical Moroccan restaurant?
+assistant: I'd be happy to help. Where would you like me to search?
+user: I need to find something in San Francisco.
+tool(FindRestaurants): ok n_results=3
+assistant: There are 3 that meet your criteria. May I suggest El Mansour in San Francisco?
+user: That sounds nice. Can you reserve a table for me?
+assistant: Of course. What time works best for you?
+user: Please make it for 11:15 in the morning.
+assistant: You'd like to reserve a table for 2 at El Mansour in San Francisco at 11:15 am on March 1st. Is this correct?
+user: Yes, that's correct. Can you tell me the address of the restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: They are located at 3119 Clement Street. Unfortunately, El Mansour does not have a table available at that time. Would you like me to try for a table for 2 on March 1st at 11:30 am instead?
+user: That would be fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Great! Your table has been reserved.
+user: I'd like to get a cab ride there but I'd prefer an expensive car.
+assistant: You'd like a luxury ride for 2 to 3119 Clement Street. Is that correct?
+user: That is correct.
+tool(GetRide): ok n_results=1
+assistant: Your cab is on the way.
+user: Can you tell me the estimated arrival time?
+assistant: It should be here in 7 minutes.
+user: What will the total be?
+assistant: The total cost of the cab ride will be $43.50.
+user: Perfect. Thanks for the assistance.
+assistant: You're welcome. Have a nice day!

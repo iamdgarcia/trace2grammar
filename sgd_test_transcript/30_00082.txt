@@ -1,0 +1,21 @@
+user: I need weather info for Sebastopol on the 11th of this month.
+tool(GetWeather): ok n_results=1
+assistant: The average temp should be 75 degrees Fahrenheit and there is a 6 percent rain chance.
+user: Okay I need to schedule a visit now.
+assistant: Which property is this for?
+user: It is for the Dana Garden Apartments.
+assistant: So Dana Garden Apartments on March 11th.
+user: Yes, tat is exact.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your visit is now scheduled in.
+user: Thanks. I also need a car from March 4th at 3:15 PM. I need a hatchback.
+assistant: Would you like insurance? Where would you like it from and untikl when?
+user: I need insurance. I need it until the 11th of this month from Orly International Airport.
+assistant: Okay, so pick up from Orly International Airport at 3:15 PM on March 4th and until March 11th. This is a Hatchback.
+user: Yes, that is fine.
+tool(ReserveCar): ok n_results=1
+assistant: Reservation has failed. There is another at Orly International Airport and is available at March 4th. It is Peugeot 208 and the cost is $51.00 a day.
+user: No, I don't want.
+assistant: Anything else to help with?
+user: No, thanks though.
+assistant: Of course. Enjoy.

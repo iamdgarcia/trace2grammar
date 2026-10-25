@@ -1,0 +1,27 @@
+user: I would like to find a movie to watch.
+tool(FindMovies): ok n_results=10
+assistant: What about the Farewell that has a rating of 99 out of 100.
+user: What is the genre and who is the lead actor?
+assistant: Zhao Shuzhen is the lead and it is a family movie.
+user: Are there other choices?
+assistant: What about Labyrinth that has a rating of 70 out of 100.
+user: Are there any other choices?
+assistant: Ad Astra has a rating of 84 out of 100.
+user: OK, I would like to find a restaurant in California with any price point.
+assistant: Which location in California?
+user: Look in Lafayette for szcheuan with egatarian choices.
+tool(FindRestaurants): ok n_results=2
+assistant: Great Wall Restaurant is located in Lafayette.
+user: OK, that sounds good.
+assistant: Would you like a reservation?
+user: Yes, I would.
+assistant: What time, please.
+user: 12:30 in the afternoon.
+assistant: Confirming the following reservation at Great Wall Restaurant in Lafayette for 2 people at 12:30 pm on March 1st.
+user: Great, what is the address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The table is booked. The address is 3500 Golden Gate Way.
+user: Thank you very much.
+assistant: Do you need anything else?
+user: No, I am good.
+assistant: Have a nice day.

@@ -1,0 +1,14 @@
+user: I have some extra time and am looking to find some things of interest.
+assistant: Is there something of particular interest such as Music or theater that you enjoy? What city would you like me to search?
+user: I would like to see a musical performance in the LAX area on the 7th.
+tool(FindEvents): ok n_results=10
+assistant: The popular Ain Gordon is at the Ralph Freud Playhouse on March 7th and is begines at 4:30 pm.
+user: Those are great choices, but would you seach for events in the Drama category.
+tool(FindEvents): ok n_results=10
+assistant: One option you may like is Adieu Monsieur Haffmann. You may see this at the Theatre Raymond Kabbaz at 6 pm on March 7th.
+user: What is the ticket price for one?
+assistant: Your ticket will cost $55.
+user: What is the address of this place?
+assistant: The venue's address is 10361 West Pico Boulevard.
+user: Great. That is all I need right now. Thank you!
+assistant: Enjoy your day!

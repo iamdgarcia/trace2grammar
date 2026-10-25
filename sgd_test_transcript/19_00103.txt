@@ -1,0 +1,31 @@
+user: Could you help me to search a rental car.
+assistant: From which place you want to pick it up?
+user: I like to pick the car from Phoenix.
+assistant: For how many days you want the car?
+user: I want the sedan car from tuesday next week to march 9th.
+assistant: At what time you want to pick up the car?
+user: I like to pick it up at twelve pm.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I found one nice sedan Audi A8 car at Phoenix Union Station.
+user: What about the rent per day?
+assistant: The rent is $28.00 per day.
+user: It is fine for me and i need to book tickets for the event there. I want it around Long Beach on the 7th and i came to know La Cage Aux Folles is a nice one
+assistant: Number of tickets you want?
+user: My requirement is 4
+assistant: Please give confirmation details: Booking 4 tickets for La Cage Aux Folles in Long Beach on March 7th
+user: This is cool.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your booking is done. Enjoy there.
+user: Thanks for your help..I want you to book the car you just found to me.
+assistant: Are you like to add insurance?
+user: No, i don't need it.
+assistant: Please give confirmation details: You want to pick up the Sedan car from Phoenix union station on march 5th at 12 pm and you want the car till march 9th. There is no need to add insurance.
+user: Sorry, I need insurance.
+assistant: Please give confirmation details: The car requirement is till March 9th with insurance.
+user: Okay..this is cool.
+tool(ReserveCar): ok n_results=1
+assistant: Your car booking is confirmed.
+user: thank you so much.
+assistant: Any other help you want?
+user: No, thank you so much.
+assistant: Have a wonderful day.

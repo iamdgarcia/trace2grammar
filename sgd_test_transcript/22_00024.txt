@@ -1,0 +1,33 @@
+user: I have some friends visiting and want to find something for us to do. Can you see if there are any concert events happening around Philly on the 8th of March?
+tool(FindEvents): ok n_results=10
+assistant: Sure, how about Anthony Green at the Foundry on March 8th at 7 pm?
+user: That sounds good. What buses are available to get there?
+assistant: Is this for March 8th? And where from?
+user: It's for next Monday from Washington.
+tool(FindBus): ok n_results=7
+assistant: There's one at 8:30 am for $29. Does that work?
+user: Yes, that sounds fine.
+assistant: Do you want to buy tickets?
+user: No, not now.
+assistant: Ok, anything else I can help with?
+user: Can you look up flights to get there?
+assistant: Sure, what day will you be returning?
+user: Just economy class tickets that would be returning on the 13th please.
+assistant: Ok, and are you leaving on March 8th, March 4th, or another day?
+user: I'd be leaving on the 1st of March.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: Ok, I found a flight with American Airlines for $281 that leaves at 7:10 pm on the way there with one layover, and returns at 7:25 am.
+user: Ok, that sounds good. Can you also look up hotels there?
+tool(SearchHotel): ok n_results=10
+assistant: Sure, there's a 4 star hotel called Aka Rittenhouse Square. How about that?
+user: How much per night, and is smoking allowed?
+assistant: It's $148 per night and non-smoking only.
+user: Ok, that's fine. Can you go back and purchase 4 tickets for that event?
+assistant: Sure. To confirm, you want 4 tickets to Anthony Green in Philadelphia on March 8th. Is that right?
+user: Yes, that's right.
+tool(BuyEventTickets): ok n_results=1
+assistant: Ok, I've purchased your tickets. Have fun!
+user: Thanks for your help!
+assistant: Sure, anything else I can do?
+user: No, that's all. Thanks.
+assistant: Sure, have a good day.

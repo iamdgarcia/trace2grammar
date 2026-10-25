@@ -1,0 +1,36 @@
+user: Buy for me tickets because I want to leave at quarter to 11 in the morning.
+assistant: When you want to go and where?
+user: I plan to leave from SF on March 11th.
+assistant: Where you will go and how many tickets you need?
+user: I need for one people to Long Beach.
+assistant: You want 1 ticket from San Francisco to Long Beach on March 11th at 10:45 am and you don't have extra luggage.Is correct?
+user: No.Excess luggage I have to carry.
+assistant: Leave at 10:45 am and you have extra luggage to carry on the bus.I'm right?
+user: Yes that's good for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: Sorry, but the purchase was not due to an error.What do you think about the bus that depart at 11:10 am and cost $55?
+user: Yes, is okay for me.
+tool(BuyBusTicket): ok n_results=1
+assistant: The ticket is confirmed.
+user: Thank you.You can find me an rental car there?I would like a Hatchback.
+assistant: You want the car from March 11th?
+user: I want to be in Long Beach from March 12th.
+assistant: At what time you want to make the pick up and until when you need the car?
+user: I want to pick it up at 11:00 and I will need it till March 14th.
+tool(GetCarsAvailable): ok n_results=3
+assistant: 3 cars available for you I found.A nice Hatchback Fiat Panda available at LGB Airport.
+user: Something else you have?
+assistant: A nice hatchback Mazda 3 available at LGB Airport.
+user: Tell me the cost per day.
+assistant: $25.00 is the cost per day
+user: Sounds good.Make a reservation for me.
+assistant: You need to add insurance?
+user: No, I don't need one.
+assistant: You want a Hatchback car without insurance from LGB Airport.The pick up date is March 12th at 11 am and drop off date is March 14th.Is that correct?
+user: Yes is great.
+tool(ReserveCar): ok n_results=1
+assistant: The car is reserved.
+user: Thank you for your help.
+assistant: With something else can I help you?
+user: No.Thank you for all.
+assistant: Have a great day!

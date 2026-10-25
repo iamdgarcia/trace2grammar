@@ -1,0 +1,40 @@
+user: I believe I have some notifications set. Can you please check for me?
+tool(GetAlarms): ok n_results=3
+assistant: Yes. You do have notifications. I found 3. One of them is labeled jogging. It is set for 7 am.
+user: Good. I thought I forgot to set the reminders.
+assistant: Would you like me to set up another reminder?
+user: Thank you but no. I was just checking what I had set.
+assistant: Do you require further aid?
+user: Yes. I am looking for a good place to sit down and have a bite to eat there.
+assistant: I am not sure where you would like me to search.
+user: Locate a good outlet in San Rafael please.
+assistant: Do you have the taste for any type of particular food?
+user: I am craving a good Latin American dish.
+tool(FindRestaurants): ok n_results=3
+assistant: According to your preference and location request 3 places fit your requested criteria. One option in San Rafael is Celia's Mexican Restaurant
+user: Please check if the pricing is cheap or expensive. Oh, are vegetarian dishes served there?
+assistant: Unfortunately fruitarian dishes are not on the menu. The pricing level is moderate.
+user: I can live with that. Thanks.
+assistant: Do you want me to have a table saved in your name at the restaurant?
+user: Thanks for offering but no thanks.
+assistant: I am here if you need any other type of aid.
+user: I do need help securing a rental car there. I need to have coverage on the vehicle. The rental dates will be from the 2nd of this month and will end on the 5th.
+assistant: I need more detailed information to complete your request. It would help to know the type of car you prefer, where the rental will begin and if there is a preferred time of day to start the rental.
+user: Good questions. The rental should begin at 12 o'clock in the afternoon. I will need to pick up the vehicle at JFK International Airport. I would like a Hatchback style car.
+assistant: I have gathered you would like to start the rental on March 2nd at 12 pm. You want the Hatchback with coverage included. You will pick up the vehicle at JFK International Airport. You will return the vehicle on March 5th. Are my details in line with your needs?
+user: You have gathered the details just as I have requested, thanks. How much will I pay every day? Does the vehicle have a name?
+tool(ReserveCar): ok n_results=1
+assistant: I have set the rental up for you. You will pay $42.00 every day. This car is named the Kia Ceed.
+user: I also need you to send the location details to Douglas. Please send him 1 Vivian Street.
+assistant: I will send Douglas a notification. The notification will be 1 Vivian Street.
+user: The location is right but I changed my mind. Please send the details to Nancy.
+assistant: I want to make sure I complete your request as you wish. I understand to send Nancy a map of 1 Vivian Street.
+user: I made a mistake. The location to send is JFK International Airport.
+assistant: I do not want to send the incorrect spot to Nancy. You want me to send a map of JFK International Airport to her, right?
+user: That is precisely what I am requesting. Thanks for verifying the details.
+tool(ShareLocation): ok n_results=1
+assistant: I have sent the location information for you.
+user: That's one less thing for me to do. You're really a time saver.
+assistant: Do you have any other requests?
+user: You have been a great help. I don't need anything else at the moment.
+assistant: Hope you day is fantastic.

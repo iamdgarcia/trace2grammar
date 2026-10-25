@@ -1,0 +1,9 @@
+user: I am going to need 2 tickets because I am visiting someone on March 4th. Look for a round trip flight.
+assistant: When are you taking the return flight? What is your destination and what city are you leaving from?
+user: I want flights from Atlanta to San Francisco and I will come back on 12th of March.
+tool(SearchRoundtripFlights): ok n_results=4
+assistant: There are 4 flights that you will like. How about the American Airlines which is a direct flight and takes off at 3:45 pm. The return flight leaves at 9:20 pm. It will cost you $279.
+user: What is the time of arrival for the returning flight?
+assistant: The returning flight will land at 5:46 am.
+user: That is perfect. Thank you. That is all.
+assistant: Have a wonderful day!

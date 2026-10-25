@@ -1,0 +1,13 @@
+user: I need your help to make a schedule of visit for me to look my property.
+assistant: Let me know the date of visit to make a schedule.
+user: Make it on 12th of this month.
+assistant: I need to know the details about the property so that I can make a schedule.
+user: The property name is Skylark Apartments. Please make a schedule for me.
+assistant: I need your confirmation to make a schedule of visit to Skylark Apartments on March 12th.
+user: No, I have changed my mind and now I need to look up the property at Bermuda-Trinidad Apartments on 1st of this month. Please change it accordingly.
+assistant: Okay, give me your confirmation to make a schedule of visit to Bermuda-Trinidad Apartments on March 1st.
+user: That is confirmed. You can proceed.
+tool(ScheduleVisit): ok n_results=1
+assistant: Your schedule of visit was confirmed.
+user: Thanks and that's all for now.
+assistant: Have a good day.

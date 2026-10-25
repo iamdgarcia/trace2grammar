@@ -1,0 +1,40 @@
+user: Make a transaction for me from my balance with Rachel.
+assistant: Tell me what amount you want.
+user: I want to be 63 dollars.
+assistant: From your app balance you want a transaction with Rachel and amount is $63.The transactions is visible to the public.I;m right?
+user: Yes that's true.
+tool(MakePayment): ok n_results=1
+assistant: The payment is done and the recipient should see the money soon.
+user: Thank you very much.
+assistant: Can I do something else for you now?
+user: Find me a train because I need two seats.
+assistant: From which city you want to depart?
+user: I want tickets from San Francisco.
+assistant: In what date you want to be?
+user: From Washington on the 12th.
+assistant: In what city you want to go?
+user: I will go to ATL.
+tool(FindTrains): ok n_results=6
+assistant: What do you think about the train that depart at 10 am and cost $187 in total?
+user: Sounds okay for me.
+assistant: You want to buy tickets at this train?
+user: I will think about it. Maybe I will want later.
+assistant: What else can I help?
+user: Tell me how will be the weather there in ATL on the 14th.
+tool(GetWeather): ok n_results=1
+assistant: For the day the average temperature should be 86 degrees Fahrenheit and 1 percent chance of rain.
+user: Tell me how will be the humidity and how will be the wind.
+assistant: Average wind speed should be 6 miles per hour and humidity around 16 percent.
+user: Good.Could you buy tickets at the train that you have found?
+assistant: You need travel insurance?
+user: Yes, I would like to have travel insurance.
+assistant: You want 2 Value tickets at the train that leave from Washington to Atlanta on March 12th at 10 am and have trip insurance.I'm right?
+user: No.I want to have fully refundable tickets.
+assistant: The train leave on March 12th and you need Flexible ticket.Is Ok?
+user: Yes is good for me.
+tool(GetTrainTickets): ok n_results=1
+assistant: The tickets is booked.
+user: Thanks, you helped me a lot.
+assistant: Can I do something else for you?
+user: No.Thank you for all your help.
+assistant: See you next time.

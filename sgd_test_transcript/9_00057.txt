@@ -1,0 +1,20 @@
+user: I'm looking for a movie to go see.
+assistant: In which city?
+user: Try Healdsburg please.
+tool(FindMovies): ok n_results=3
+assistant: Blinded by the Light, Where'd You Go, Bernadette and IT Chapter Two are some options.
+user: IT2 sounds great.
+assistant: Should I book tickets for you?
+user: Yes. Please book for Saturday this week.
+assistant: How many tickets will you need and for what time and do you prefer regular or imax?
+user: A regular show is fine. I need one ticket for 7:45 pm.
+assistant: Please confirm you want to book 1 ticket for a regular showing of IT Chapter Two in Healdsburg on March 2nd at 7:45 pm.
+user: Actually can you make that a 3d showing for later today?
+assistant: Please confirm you want to book a 3d showing for March 1st.
+user: Yes and please give me their address.
+tool(BuyMovieTickets): ok n_results=1
+assistant: They're located at 415 Center Street. Your ticket has been booked.
+user: Thanks so much!
+assistant: Is there anything else I can help you with today?
+user: No. That will be all.
+assistant: Okay. Have a great day. Goodbye.

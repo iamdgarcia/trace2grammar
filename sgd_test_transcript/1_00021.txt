@@ -1,0 +1,14 @@
+user: I would like to reserve a table for 1 at La Briciola tomorrow morning 11.
+assistant: What city should I search?
+user: Search in SFO, please.
+assistant: You would like to reserve a table for 1 at La Briciola in San Francisco on March 1st at 11 am, is this correct?
+user: No, please make it a table for 3.
+assistant: Please confirm, you would like the reservation for 3 people in San Francisco.
+user: Yes, that sounds great. What type of food do they serve?
+tool(ReserveRestaurant): ok n_results=1
+assistant: It is an Italian restaurant. Sorry, I was unable to reserve the time you selected. Would you like to reserve a table for 3 at La Briciola on March 1st at 11:30 am?
+user: That sounds fine.
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is successful.
+user: Thank you, I'm all set.
+assistant: Have a great day!

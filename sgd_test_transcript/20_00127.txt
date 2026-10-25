@@ -1,0 +1,25 @@
+user: I need you to call me a cab.
+assistant: How many fares will there be and what class do you want?
+user: Its just for me, so one and I want The most comfortable experience.
+assistant: And what would your destination be?
+user: Oh dear, it's now a group of 3 and we need to go to Playa Mill Valley.
+assistant: Do I have this right there are 3 fares going to Playa Mill Valley and you want the Luxury experience right?
+user: No we decided to go to Atami Sushi Bar & Grill instead and make that a Normal cab experience.
+assistant: Once again then you want a Regular cab and the destination is now Atami Sushi Bar & Grill is that right?
+user: Works for me, is the cab going to be here soon?
+tool(GetRide): ok n_results=1
+assistant: I found a cab its en-route now with an eta of 4 minutes.
+user: Find some songs for me while I wait.
+tool(LookupMusic): ok n_results=10
+assistant: Certainly I have 10 listed here, would you like to hear the song Legendary off the Victorious album by Skillet?
+user: What would you call that kind of music anyway, was that the one that debuted four years back?
+assistant: No it is a Rock song from 2019.
+user: I'd like that one please.
+assistant: Should I play it?
+user: Of course, on the speaker in kitchen okay?
+assistant: I will play Legendary in Kitchen correct?
+user: Hit the nail on the head, you did.
+tool(PlayMedia): ok n_results=1
+assistant: May you have a pleasant listening experience.
+user: Thanks you're dismissed.
+assistant: The best of days to you.

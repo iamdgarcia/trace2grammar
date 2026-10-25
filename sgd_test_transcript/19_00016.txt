@@ -1,0 +1,32 @@
+user: Can you help me find a restaurant in SFO that serves Pizza and Pasta? Don't worry about the price range.
+tool(FindRestaurants): ok n_results=10
+assistant: There are 10 such restaurants in San Francisco. One great restaurant that may you suit your needs is 54 Mint Ristorante Italiano
+user: Are there others that may be good?
+assistant: Sure. A16 is another lovely one that is also in San Francisco
+user: Can you tell me their exact location? As well as the number where they can be reached?
+assistant: Sure thing. They are located at 2355 Chestnut Street and you can contact them by calling 415-771-2216
+user: Perfect. That sounds great
+assistant: Are you looking to make a reservation at this restaurant?
+user: Yes please. I'd like to make a reservation for two
+assistant: And what time would you prefer?
+user: Let's make it for 1:30 in the afternoon
+assistant: Okay, so that's a reservation for 2 at 1:30 pm on March 1st at A16 restaurant in San Francisco, right?
+user: Actually, let's change the time to afternoon 12:15
+assistant: So that's a 12:15 pm reservation for the restaurant located in San Francisco. Correct?
+user: Yes. That is exactly what I'd like. By the way, can you tell me the user rating for this restaurant?
+tool(ReserveRestaurant): ok n_results=1
+assistant: The restaurant has a user rating of 4.3. That reservation for A16 restaurant was not successful, unfortunately. Would you like me to try for a reservation for 2 at the restaurant on March 1st at 12 pm instead?
+user: Sure thing, that would be great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: That booking has been confirmed.
+user: Great. I also need a taxi to get to the restaurant
+assistant: Are you looking fora specific type of ride?
+user: Yes please. An Expensive ride would be nice
+assistant: To confirm then, you want a Luxury taxi for 2 and your destination is 2355 Chestnut Street?
+user: Yes, that would be perfect!
+tool(GetRide): ok n_results=1
+assistant: Your taxi has been reserved and your driver is on the way.
+user: Great. Thanks so much for everything!
+assistant: Will there be anything further?
+user: Nope. I'm all set. Thanks!
+assistant: Enjoy your evening!

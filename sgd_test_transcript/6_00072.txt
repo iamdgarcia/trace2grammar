@@ -1,0 +1,20 @@
+user: Hey, my hair is a mess. Can you help me find a salon?
+assistant: Sure! In which city should I search for it?
+user: In Benicia please.
+tool(FindProvider): ok n_results=2
+assistant: I found 2 Salons you may enjoy. The Sport Clips Haircuts Of Benicia is one of the best ones in Benicia.
+user: Sounds really good,
+assistant: Should I make a reservation?
+user: Please do it.
+assistant: For what date?
+user: The 1st please.
+assistant: And what time you'll work best for you?
+user: At afternoon 3:45. It's when I'm free.
+assistant: So an appointment at the Sport Clips Haircuts of Benicia on March 1st at 3:45 pm?
+user: Actually, change the time to 11:45 am and the date to the 12th of March. I just remembered I already had something scheduled on the other day.
+assistant: So an appointment at 11:45 am on March 12th?
+user: Sounds good. What's their number? Is it a unisex salon?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is confirmed. And yes, it is a unisex salon. Their number is 707-751-1775.
+user: Thanks a lot, that's all I need.
+assistant: Have a real pleasant day.

@@ -1,0 +1,13 @@
+user: I would like to rent a SUV.
+assistant: When would you like the rental?
+user: I need it on the 5th.
+assistant: What time will you oick up the SUV?
+user: I would like 3 o"clock in the afternoon.
+assistant: Where do you want to rent it?
+user: In Portland, OR.
+assistant: How long will you rent the car?
+user: Until March 9th.
+tool(GetCarsAvailable): ok n_results=4
+assistant: There is an Alfa Romeo Stelvio SUV at the Portland Bus Station.
+user: Great, that is all.
+assistant: Have a nice day.

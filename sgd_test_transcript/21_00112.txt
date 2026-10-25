@@ -1,0 +1,58 @@
+user: Can you please find something interesting for me to do in London, some musical shows would be great.
+tool(FindEvents): ok n_results=10
+assistant: I recommend Dimension at Electric Brixton on March 11th at 6 pm.
+user: Sounds nice, but can you find me something else on the 10th of March.
+tool(FindEvents): ok n_results=9
+assistant: There are 9 events matching your criteria, out of which I recommend Efg at Purcell Room on March 10th at 5 pm.
+user: Sounds nice, but please find me something else on March 5th in Philadelphia.
+tool(FindEvents): ok n_results=10
+assistant: There are 10 events matching your criteria out of which I recommend Anthony Green at The Foundry on March 5th at 7:30 pm.
+user: Sounds perfect.
+assistant: Do you want me to get you tickets to this event?
+user: Not at the moment.
+assistant: Is there anything else I could do for you?
+user: Yes, please find me some buses going there!
+assistant: Are you travelling on March 5th?
+user: No, I'm travelling on the 3rd of this month.
+assistant: Can you please tell me from where are you departing.
+user: Sure, I'll be travelling from Washington.
+tool(FindBus): ok n_results=7
+assistant: There are 7 buses matching your criteria, the first being at 8:30 am with tickets priced at $29.
+user: Is there anything else available?
+assistant: Sure, there's also a bus at 11:30 am with tickets priced at $27.
+user: Anything else available?
+assistant: There's also a bus at 12:40 pm with tickets priced at $27.
+user: Sounds perfect for me.
+assistant: Do you want me to get you tickets for this bus?
+user: No, not at the moment.
+assistant: Is there anything else I could help you with?
+user: Yes, please look for some round trip flights to there.
+assistant: Are you travelling on March 5th, March 3rd or on another day? Also, please tell me when do you plan on returning.
+user: I'm flying out on the 3rd of this month and I'll be returning on the 9th of March.
+tool(SearchRoundtripFlights): ok n_results=3
+assistant: There's an American Airlines flight at 7:10 pm with one layover, with the return flight at 5:45 pm. Tickets are $344 each.
+user: Anything else available in Economy?
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: There are 2 flights matching your criteria, out of which I recommend Delta Airlines with a flight at 10:30 am with one layover and with the return flight at 4:15 pm. Tickets are $350.
+user: Can you please tell me when does the return flight land?
+assistant: Sure, the return flight lands at 9:43 pm.
+user: Can you please tell me when does the onward flight land?
+assistant: Sure, it lands at 4:11 pm.
+user: Anything else available?
+assistant: Sure, there also an United Airlines flight with one layover, taking off at 11:45 am, with the returning flight at 1:55 pm. Tickets are priced at $330.
+user: Sounds perfect. Please find me one room in a three star hotel at destination.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels matching your criteria, out of which I recommend Aka University City, a very nice 3 star hotel.
+user: Anything else available?
+assistant: Sure, there's also the 3 star Aloft Philadelphia Airport.
+user: Sounds perfect for me!
+assistant: Do you want me to place a reservation for you?
+user: No, not at the moment. Let's go back and get four tickets to the event you found earlier.
+assistant: Can you please confirm that you want 4 tickets to Anthony Green in Philadelphia on March 5th?
+user: Yes, that's correct. Please also tell me how much do they cost as well as the venue's address.
+tool(BuyEventTickets): ok n_results=1
+assistant: I've successfully placed your reservation. Tickets are $40 each and the venue is located at 29 East Allen Street 2nd Floor.
+user: Thanks a lot for everything.
+assistant: Is there anything else I could do for you?
+user: No, that will be all for now.
+assistant: Have a nice day!

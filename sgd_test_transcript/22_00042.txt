@@ -1,0 +1,51 @@
+user: Hello, I'm trying to find an interesting activity in the LAX area.
+assistant: Is there a type of activity you're interested in, such as theater or music?
+user: I'm a big Broadway fan.
+tool(FindEvents): ok n_results=10
+assistant: I recommend A Year in Dragonfly, which is very popular and is being presented at Studio C Artists on March 1st. The show starts at 7:30 PM.
+user: That's a possibility. Is there something else?
+assistant: I also recommend Adieu Monsieur Haffmann which is at Theatre Raymond Kabbaz on March 4th at 6:30 PM.
+user: Where is that please?
+assistant: The address is 10361 West Pico Boulevard
+user: What is the ticket price?
+assistant: The tickets cost $45.
+user: OK, possibly. What else would you suggest?
+assistant: I also suggest Anything Goes, which is at Upright Citizens Brigade Sunset. That's on March 6th at 5:30 PM.
+user: I like the sound of that one. I also need help finding a bus on March 4th from SF. I'm going to need 4 tickets.
+tool(FindBus): ok n_results=9
+assistant: There is a bus with a 7:30 AM departure for $53.
+user: Do you know how many stops it has?
+assistant: It is a direct line.
+user: Where does it leave from and where does it wind up?
+assistant: It leaves from Transbay Terminal and goes to North Hollywood Station.
+user: I think that sounds fine.
+assistant: Would you like to purchase tickets at this time?
+user: Not right now.
+assistant: Is there anything else I can help you with?
+user: I was curious about a round trip flight. If I go this Saturday, what kind of economy class fare could I get on American Airlines?
+assistant: when do you plan to return?
+user: I'll be coming back the 11th of March.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: On American Airlines, I have a 7:10 PM departure which is a direct flight arriving at 9:30 AM and the ticket price is $165.
+user: What's the arrival time?
+assistant: That flight gets in at 8:35 PM.
+user: And the returning flight?
+assistant: The returning flight has a 10:55 AM arrival time.
+user: Terrific. How about finding a hotel as well please? I'd like something that's rated 3 stars.
+tool(SearchHotel): ok n_results=10
+assistant: I have 10 possible hotels for you. The Ac Hotel by Marriott Beverly Hills has a 3 star rating.
+user: Where is that please? And how much does it cost?
+assistant: The hotel has a room rate of $75 nightly and it's located at 6399 Wilshire Boulevard.
+user: That sounds ideal.
+assistant: Are you interested in making reservations now?
+user: Not right at this moment.
+assistant: I can'ts there anything else I can help you with?
+user: Yes, I'd like to purchase tickets for that event you told me about.
+assistant: Confirming 4 tickets for Anything Goes on March 6th in Los Angeles.
+user: Correct, thanks. I'd like to know the ticket price and the address of the theater.
+tool(BuyEventTickets): ok n_results=1
+assistant: Of course, the ticket price is $25 and the theater address is 5419 Sunset Boulevard.
+user: You've been very helpful, I appreciate it.
+assistant: Is there anything else I can help you with?
+user: You've done it all.
+assistant: Thank you very much.

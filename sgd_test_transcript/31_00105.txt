@@ -1,0 +1,42 @@
+user: Could you help me in finding a unisex salon?
+assistant: In which city do you need the salon?
+user: I wish to visit a salon in Morgan Hill.
+tool(FindProvider): ok n_results=3
+assistant: Great Clips is a great salon in Morgan Hill.
+user: What about their rating?
+assistant: Their average rating is 4.2.
+user: It is nice.
+assistant: Shall I make an appointment now?
+user: Yes please. I need it at 15:00.
+assistant: When will you need an appointment?
+user: I wish to visit the salon later today.
+assistant: Kindly ensure that, on March 1st, an appointment is made with the hair stylist Great Clips at 3 pm.
+user: Good. What is their phone number and address?
+tool(BookAppointment): ok n_results=1
+assistant: Your appointment is done. Their address is 790 Oak Grove Road Ste B. Their contact number is 925-681-2887.
+user: I am searching for a vegetarian restaurant with outdoor seating
+assistant: What type of food do you need?
+user: I wish to have Fish.
+tool(FindRestaurants): ok n_results=1
+assistant: Rosy's At The Beach is a great restaurant in Morgan Hill.
+user: Is there any other options?
+tool(FindRestaurants): ok n_results=0
+assistant: I am sorry that I am unable to find other restaurants. DO you need any other help?
+user: Please try again. I am searching for economical priced restaurant which serves Pizza and Pasta.
+tool(FindRestaurants): ok n_results=3
+assistant: I searched and found 3 restaurant for you. Betto's Bistro is a great restaurant in Morgan Hill.
+user: That is their contact number and what is their rating?
+assistant: Their contact number is 408-779-7422. Their rating is 4.4.
+user: It is good.
+assistant: Do you need any other help?
+user: I wish to reserve a table for 4 persons in the restaurant.
+assistant: When do you need it?
+user: The reservation is for two persons at 12:15 in the afternoon.
+assistant: Kindly ensure that, On March 1st, booking is done for 2 persons at Betto's Bistro in Morgan Hill at 12:15 pm.
+user: Yes. It is correct. What is their contact address?
+tool(ReserveRestaurant): ok n_results=1
+assistant: Your reservation is done. Their address is 17385 Monterey Road
+user: Thank you very much.
+assistant: Do you need any other help?
+user: Nope. Thank you very much.
+assistant: Have a nice day.

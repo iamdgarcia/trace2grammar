@@ -1,0 +1,26 @@
+user: I'd like to see a Broadway show in Seattle, WA on March 7th.
+tool(FindEvents): ok n_results=10
+assistant: Beatleconcert is showing at 12th Avenue Arts on March 7th 6:30 pm.
+user: What is the ticket price? Where us the venue?
+assistant: The ticket price is $50. The address is 1620 12th Avenue.
+user: That will be perfect. Please find me a home to stay at while I'm there.
+tool(SearchHouse): ok n_results=10
+assistant: 1000 1st Avenue is rated 4.5.
+user: What is the phone number? Is there laundry service available?
+assistant: The phone number is +1 206-957-1000.
+user: That house will be perfect. Any buses going there?
+assistant: Are you leaving March 5th?
+user: No, I am leaving on the 3rd of this month.
+assistant: Where are you leaving from?
+user: Vancouver, BC.
+tool(FindBus): ok n_results=10
+assistant: I found 10 options including a bus that leaves at 7:40 am. The ticket is $30.
+user: Great! I'll need one ticket to that event you found earlier?
+assistant: Please confirm, 1 ticket for Beatleconcert on March 7th in Seattle.
+user: That is great.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your ticket is purchased.
+user: Thanks for the help.
+assistant: Anything else?
+user: No, that is all.
+assistant: Have a nice day.

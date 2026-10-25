@@ -1,0 +1,26 @@
+user: I'd like to find a hotel that is two -star hotel.
+assistant: What city should I look for hotels in?
+user: I would like to look for hotels in San Diego.
+tool(SearchHotel): ok n_results=10
+assistant: There is a hotel by the name of Best Western Mission Bay that is 2 star hotel.
+user: What is the price night and phone number?
+assistant: The cost is $50 per night and the phone number is +1 619-275-5700.
+user: I need 1 room in another hotel that matches my criteria.
+tool(SearchHotel): ok n_results=10
+assistant: There is a 2 hotel called Best Western San Diego/Miramar Hotel.
+user: That sounds good.
+assistant: Do you want to reserve the hotel?
+user: Maybe at a later time. What's the weather there on the 9th of this month?
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 83 degrees F with a 25 percent chance of rain.
+user: Sure that is fine.
+assistant: Is there anything else you'd like?
+user: I would like a hotel reserved Sunday this week staying for 6 days.
+assistant: Please confirm details to find a hotel in Best Western San Diego/Miramar Hotel checking in March 3rd staying for 6 days in San Diego 1 room.
+user: Sure that is nice.
+tool(ReserveHotel): ok n_results=1
+assistant: The hotel is successfully booked.
+user: What is the street address and phone number?
+assistant: The address is 9310 Kearny Mesa Road with a phone number of +1 858-578-6600.
+user: Thanks you have been of help. That is it for now.
+assistant: Bye and have a nice day.

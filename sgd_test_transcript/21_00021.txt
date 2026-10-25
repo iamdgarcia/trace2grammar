@@ -1,0 +1,27 @@
+user: I need a cab for 1 passenger.
+assistant: What is your destination?
+user: I need a ride to The San Diego Museum of Art.
+assistant: Do you want a regular ride or a shared ride or something else?
+user: I would like a luxury ride this time.
+assistant: Please confirm the following information. You want a luxury ride for 1 passenger to The San Diego Museum of Art.
+user: Yes. Is it booked?
+tool(GetRide): ok n_results=1
+assistant: Yes. The ride is booked and it is on the way.
+user: Thanks. Could you play some music while I wait?
+tool(LookupMusic): ok n_results=10
+assistant: Would you like to hear something from the album Rainbow by Kesha? Would you like to hear the song Praying?
+user: Praying? Yes, that sounds good.
+assistant: Would you like to hear this song now?
+user: Yes. Please play it on the speaker outside.
+assistant: Please confirm the following information: Play the song Praying from the album Rainbow by Kesha on the patio.
+user: Great. That sounds good.
+tool(PlayMedia): ok n_results=1
+assistant: Enjoy the music by Kesha.
+user: What kind of music is that song?
+assistant: That album is considered Pop.
+user: What year is that album from?
+assistant: The album Rainbow came out in the year 2017.
+user: Great. Thanks for your help.
+assistant: Do you need help with anything else?
+user: No. I think that's it. You've been very helpful.
+assistant: Enjoy the rest of your day.

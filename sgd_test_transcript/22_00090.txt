@@ -1,0 +1,40 @@
+user: Please find me a therapist in Pittsburg that is a psychiatrist.
+tool(FindProvider): ok n_results=1
+assistant: I found 1 therapist that might work called Expanding Horizons a psychiatrist in Pittsburg.
+user: That sounds good.
+assistant: Would you like to book the therapist appointment.
+user: Yes, I'd like to book an appointment. The time would be 2:30 pm March 5th. Can you book it?
+assistant: Please confirm details for an appointment booked at Expanding Horizons at 2:30 pm March 5th.
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=0
+assistant: Sorry it didn't work. I couldn't book the appointment. What else can I assist you with.
+user: Could you try booking again for the 12th?
+assistant: Please confirm details to book an appointment with Expanding Horizons at 2:30 pm March 12th.
+user: Yes, that will work.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was successfully booked and you'll get an email confirmation soon.
+user: What is the address and phone number?
+assistant: The address is 327 E Leland Rd and you can call them at 925-432-3980.
+user: Thanks so much. I appreciate it and I need to request a payment.
+assistant: Tell me the amount and name of the contact.
+user: The person making a transaction is Amelia for one hundred and twenty four dollars.
+assistant: Please confirm details to make a transaction with Amelia for $124 visible to the public.
+user: Yes, it is.
+tool(RequestPayment): ok n_results=1
+assistant: The payment was a success.
+user: Thanks so much. I need to find a restaurant there for a meal that day serving burrito at any price.
+tool(FindRestaurants): ok n_results=1
+assistant: I found 1 restaurant La Pinata located in Pittsburg which is nice.
+user: Yes, that is nice and I'm looking to book a table at a restaurant for 3 people.
+assistant: What time will I reserve for?
+user: Make the reservation for half past 11 in the morning.
+assistant: Please confirm details to book a table at La Pinata in the city of Pittsburg at 11:30 am on March 12th for 3 people.
+user: Yes, that will work for me.
+tool(ReserveRestaurant): ok n_results=1
+assistant: The reservation is a success.
+user: Do they have seating outdoors?
+assistant: They don't have outdoor seating.
+user: Thanks so much.
+assistant: What else can I help you with?
+user: Nothing, thanks so much.
+assistant: Have a nice day.

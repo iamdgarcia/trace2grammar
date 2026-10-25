@@ -1,0 +1,31 @@
+user: I need you to make a payment to Mary.
+assistant: Where would you like me to take the money from?
+user: Use my checking account.
+assistant: How much would you like to pay?
+user: Make the amount one hundred and thirty four dollars.
+assistant: You are requesting a public transaction be made by paying Mary $134 on your debit card, is this correct?
+user: Yes it is correct.
+tool(MakePayment): ok n_results=1
+assistant: The payment should be visible to Mary shortly because the money went through.
+user: I want to find a place that serves pricey Burgers can you locate one for me please?
+assistant: Where should I look?
+user: I want to eat in SF.
+tool(FindRestaurants): ok n_results=6
+assistant: So far I located 6 places in San Francisco one of which is 5a5 Steak Lounge.
+user: Is there one you think I would like more than the others?
+assistant: Bobo's is in San Francisco you could try that.
+user: I think I will.
+assistant: Should I book you a table there?
+user: Definitely make it for 4 persons.
+assistant: Do you have a preferred time for that?
+user: Yes make it for the afternoon 1.
+assistant: I have a table for 4 at 1 pm on March 1st at Bobo's in San Francisco is that what you want?
+user: No, I only need the table of 2 now.
+assistant: Alright the rest stand and make it March 1st for 2 persons?
+user: Yes that is correct and I want the address and phone number also.
+tool(ReserveRestaurant): ok n_results=1
+assistant: There location is 1450 Lombard Street and the number is 415-441-8880.
+user: Many thanks to you.
+assistant: Will you be needing any more assistance?
+user: Not right away, thanks you can go now.
+assistant: Have a happy day.

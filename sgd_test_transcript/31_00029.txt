@@ -1,0 +1,24 @@
+user: Find me a salon to go to.
+assistant: What city shall I look in?
+user: Search for a salon in Santa Rosa.
+tool(FindProvider): ok n_results=9
+assistant: Daredevils & Queens is in Santa Rosa and is one of 9 salons that search found.
+user: Can you give me their phone number?
+assistant: Their contact number is 707-575-5123.
+user: That works for me.
+assistant: Do you want to schedule an appointment?
+user: No, not right now. Find me a Comic movie to watch at 3rd Street Cinema.
+tool(FindMovies): ok n_results=1
+assistant: Yesterday is 1 search result found.
+user: Yesterday works for me. What time is it playing on the 2nd?
+tool(GetTimesForMovie): ok n_results=1
+assistant: There is 1 showtime for Yesterday and it is at 9 pm at 3rd Street Cinema.
+user: That works for me. Get me a booking for the salon.
+assistant: What time do you want to go?
+user: I want to go at 6:45 pm.
+assistant: You want a 6:45 pm booking on March 2nd for Daredevils & Queens, correct?
+user: That is right. What are they rated at?
+tool(BookAppointment): ok n_results=1
+assistant: Your booking is complete and they have a 4.6 rating.
+user: Thanks a bunch. That is all for now.
+assistant: Have a great day.

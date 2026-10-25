@@ -1,0 +1,18 @@
+user: I'm ready to buy movie tickets.
+assistant: How many tickets? Do you want to see a 3D or regular movie?
+user: I need one ticket to a regular show.
+assistant: What movie do you want to see? Where and when do you want to see the movie?
+user: I want to see Hustlers in Brentwood at 7:30 pm.
+assistant: On what day do you want to see the movie?
+user: On the 3rd of this month.
+assistant: Please confirm, 1 regular ticket for Hustlers on March 3rd for the 7:30 pm showing in Brentwood.
+user: Yes, that will be great.
+tool(BuyMovieTickets): ok n_results=0
+assistant: Those tickets were not available. Anything else?
+user: Could you try March 4th at 10:30 pm in Santa Clara.
+assistant: Please confirm, 1 regular ticket to Hustlers on March 4th at 10:30 pm in Santa Clara.
+user: Yes, that will be perfect.
+tool(BuyMovieTickets): ok n_results=1
+assistant: Your ticket purchase is complete.
+user: Thanks for everything! That is all I need.
+assistant: Have a nice day!

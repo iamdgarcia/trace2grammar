@@ -1,0 +1,25 @@
+user: Hey, can you help me find a therapist in Stanford?
+assistant: What kind of therapist?
+user: A psychiatrist please.
+tool(FindProvider): ok n_results=1
+assistant: Mahendra T. Bhati is one of the best psychiatrist in Stanford.
+user: Sounds like they're good.
+assistant: Should I book an appointment?
+user: Maybe later, not now.
+assistant: Can I help you with anything else?
+user: I want to know how's the weather gonna be there this Sunday.
+tool(GetWeather): ok n_results=1
+assistant: The average temperature should be 71 degrees Fahrenheit with a 7 percent chance of rain.
+user: And how windy will it be?
+assistant: The wind speed should be at around 3 miles per hour.
+user: And how humid?
+assistant: At around 24 percent.
+user: Good to know. Book me an appointment with the therapist you found for 2:15 pm please.
+assistant: So a 2:15 pm appointment with Mahendra T. Bhati on March 3rd?
+user: That's all correct.
+tool(BookAppointment): ok n_results=1
+assistant: Sorry, I couldn't book it. There's an appointment available with Mahendra T. Bhati at 2 pm on March 3rd. Does it work for you?
+user: Sorry, but it doesn't.
+assistant: Can I help you with something else?
+user: No, that's all. Thanks a lot.
+assistant: No problem, have a great day!

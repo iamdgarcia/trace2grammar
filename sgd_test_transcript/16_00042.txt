@@ -1,0 +1,30 @@
+user: I am going to Antioch today, can you look for any unisex salon there?
+tool(FindProvider): ok n_results=3
+assistant: In Antioch Himc Barber Studio will be nice one.
+user: Good, any therapist there?
+assistant: In Antioch you mean?
+user: Yeah, look there.
+assistant: What therapist you need, Psychologist or Family Counselor?
+user: Get me a Family Therapist.
+tool(FindProvider): ok n_results=2
+assistant: 2 Family Counselor are there in Antioch. Kappl & Wilson will be an apt choice.
+user: No other there?
+assistant: Or you can consult Morales Miliciades. They are well known Family Counselor in Antioch.
+user: That sounds good.
+assistant: Shall I try to fix appointment with them?
+user: Yes, please do it.
+assistant: Date and time you wish please.
+user: Fix it on morning 10:30. Can I get it on the 1st ?
+assistant: Please verify, you need appointment with Morales miliciades at 10:30 am on March 1st.
+user: Great. do you have their address and phone number?
+tool(BookAppointment): ok n_results=1
+assistant: It is booked. the address is 2400 Sycamore Drive and phone number is 925-754-9300.
+user: Thanks, please fix appointment in the salon selected also.
+assistant: What is the time of appointment?
+user: Get it at 5 o'clock in the evening.
+assistant: Please confirm, you need appointment with Himc Barber Studio at 5 pm on March 1st.
+user: Yeah, right. Give me their address and phone number.
+tool(BookAppointment): ok n_results=1
+assistant: Please call at 925-238-0059 and visit at 3136 Contra Loma Boulevard. Your appointment fixed.
+user: Great help, thank you.
+assistant: Make a memorable day, see you.

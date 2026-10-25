@@ -1,0 +1,9 @@
+user: I wish to find a round trip flight.
+assistant: When will you travel and where do you want to go? When will you need the return flight?
+user: I will travel today to Las Vegas and will return on the 4th.
+assistant: From which city do you want to start your travel?
+user: I need flights from Atlanta, GA.
+tool(SearchRoundtripFlights): ok n_results=2
+assistant: I searched and found 2 American Airlines flight and it will start at 3:45 pm. The price is $377 and the return flight will start at 10:25 am.
+user: It is nice. Thank you so much. That is what I want.
+assistant: Have a fantastic day.

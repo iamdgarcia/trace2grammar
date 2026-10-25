@@ -1,0 +1,12 @@
+user: My wife and I would like to go out to the movies this weekend and we're looking for something to see. Maybe an Action movie directed by David Leitch.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie that would work. It's Hobbs and Shaw which received a rating of 67 out of 100.
+user: That sounds good. We'd also like to find something interesting to do that same day.
+assistant: Any certain city I should search in?
+user: We'll be in the Philadelphia area.
+assistant: And any certain type of event you prefer?
+user: We'd really like to see a musical performance. Can you also search around Chicago in case we feel spontaneous?
+tool(FindEvents): ok n_results=9
+assistant: You might really enjoy the show Ashe. It's playing at the Chop Shop on March 11th at 7:30 pm.
+user: That sounds perfect. That's it for now.
+assistant: Have a great day!

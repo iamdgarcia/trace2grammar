@@ -1,0 +1,13 @@
+user: Looking to book a table at the Academy bar?
+assistant: Which location to look in and at what time?
+user: Find in San Fran at 19:00
+assistant: Please confirm: Booking a table for 2 at the Academy Bar and Kitchen in San Francisco at 7 pm on March 1st.
+user: Yes, thats right
+tool(ReserveRestaurant): ok n_results=1
+assistant: it is done
+user: Any vegetarian options there?
+assistant: yes, there are good options
+user: thanks a lot
+assistant: any thing else?
+user: no, thanks again
+assistant: have a great day!

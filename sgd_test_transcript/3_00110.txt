@@ -1,0 +1,20 @@
+user: I need a rental car in Las Vegas on 11th of March.
+assistant: What date will you return the car?
+user: The 14th of March.
+assistant: What time will you collect the car?
+user: At 2 o"clock in the afternoon.
+tool(GetCarsAvailable): ok n_results=10
+assistant: There ia an Alfa Romeo Stelvio SUV at Union Plaza.
+user: I am interested in that, can you book it for me?
+assistant: Would you like insurance?
+user: No I do not.
+assistant: To confirm then you will collect an SUV car at 2 pm from Union Plaza on March 11th to March 14th.
+user: Actually could I purchase insurance.
+assistant: So you want an SUV with insurance.
+user: Yes that is right.
+tool(ReserveCar): ok n_results=1
+assistant: Your car is now booked.
+user: Thank you for that.
+assistant: Can I assist you with anything else?
+user: no thank you.
+assistant: Have a lovely day.

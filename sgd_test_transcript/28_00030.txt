@@ -1,0 +1,24 @@
+user: I'd like to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: Okay, I found 10 movies for you. There is a movie with a 79 out of 100 rating called Good Boys. Will that work?
+user: Are there others? I'd like a Crime movie starring Bruce Willis.
+tool(FindMovies): ok n_results=1
+assistant: Pulp Fiction has a rating of 92 out of 100. Will that work?
+user: Sure. I'd also like to find a fast food restaurant around there.
+assistant: Which location would you like me to search?
+user: Santa Rosa will work.
+tool(FindRestaurants): ok n_results=1
+assistant: Okay. There is 1 Mcdonald's in Santa Rosa.
+user: That will work.
+assistant: Would you like me to make your reservation?
+user: Yes, please, reserve a table
+assistant: What time would you like to reserve?
+user: I'd like to reserve a table for 2 at quarter past 1 in the afternoon.
+assistant: Okay, just to confirm, you'd like to book a table for 2 people on March 1st at 1:15 pm at the Mcdonald's in Santa Rosa, is that correct?
+user: Actually, no. I'd like it on March 6th at half past 10 in the morning, please.
+assistant: Okay, just to confirm that change, it will be at 10:30 am March 6th?
+user: Yes, that will work.
+tool(ReserveRestaurant): ok n_results=0
+assistant: Sorry, I can't make a reservation at this time. Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a nice day.

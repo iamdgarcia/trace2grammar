@@ -1,0 +1,22 @@
+user: My hair is so long , i need to do hair cut. Find me a salon in san jose?
+tool(FindProvider): ok n_results=10
+assistant: i found 10 salons as per your need. Atelier salon willow glen is a nice salon in san jose.
+user: ok that's great.
+assistant: whether i need to do anything else?
+user: could you share the location of the salon?
+assistant: Do you want to share this address 1047 lincoln highway suite 101? to whom do you share it with?
+user: ok thats good. I wish to share it with christopher.
+assistant: Please confirm the following details. You need to share the location 1047 lincoln Highway suite 101 with christopher.
+user: ok thats great.
+tool(ShareLocation): ok n_results=1
+assistant: location is shared successfully
+user: thanks for your immense help. Will you show me may alarms?
+tool(GetAlarms): ok n_results=3
+assistant: There are 3 alarms currently set. There is an alarm for 8:30 am with name Get up.
+user: Okay thats good. I need to add an alarm. It will be for 4:45 pm. Name the new alarm as Leave for home.
+assistant: Please check and review the following details. Creating an alarm at 4:45 pm with name Leave for home
+user: ok that suits for me.
+tool(AddAlarm): ok n_results=1
+assistant: sorry, i am unable to set the alarm. whether anything else i need to do?
+user: no, thanks for now.
+assistant: have a wonderful day.

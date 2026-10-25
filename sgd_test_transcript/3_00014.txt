@@ -1,0 +1,9 @@
+user: Find for me please a round trip flight.
+assistant: Tell me in what date you want to go and where.On which day you will return?
+user: I plan to fly to Philly on March 8th and return on 10th of this month.
+assistant: You will depart from which city?
+user: From New Delhi will be okay.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: What is your opinion about United Airlines?You can take the connecting fight at 1:20 pm and returning is at 9:35 pm.Cost per ticket is $582.
+user: Sounds very good.That's what I wanted for the moment.
+assistant: Have a great day!

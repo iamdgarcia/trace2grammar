@@ -1,0 +1,23 @@
+user: Would you kindly help me to find a unisex saloon in San Fran.
+tool(FindProvider): ok n_results=10
+assistant: There is one nice saloon called 1512 Barber Shop at San Francisco.
+user: Can i know its address?
+assistant: 1532 20th street is the address.
+user: Would you help me to find some other saloon?
+assistant: There is one good saloon at San francisco called 20th Salon And Barber.
+user: Sorry, I want a saloon in San Jose.
+tool(FindProvider): ok n_results=10
+assistant: I have short listed 10 saloons of your choice and one among them is Atelier Salon Willow Glen at San Jose.
+user: This is perfect. I want to book an appointment.
+assistant: For which date you want the appointment?
+user: I want the appointment for 5th of march.
+assistant: Can i know the appointment time?
+user: Make it for 5:15 in the evening.
+assistant: please give confirmation details: Your appointment with Atelier Salon Willow Glen on march 5th at 5:15 pm.
+user: This is cool. Can i know the contact number?
+tool(BookAppointment): ok n_results=1
+assistant: 408-293-3494 is the contact number. Sorry i was not able to book the appointment. Atelier Salon Willow Glen is a good saloon. Can i try the appointment on march 5th at 5 pm?
+user: NO, I don't want.
+assistant: Any other help you need?
+user: No, thanks a lot.
+assistant: Have a nice day.

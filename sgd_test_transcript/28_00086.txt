@@ -1,0 +1,41 @@
+user: I wish to see some attractions.
+assistant: Where shall I search in?
+user: I am searching for Museum in SD. I am looking for something without entrance fee.
+tool(FindAttractions): ok n_results=5
+assistant: I searched and found 5 attractions for you. Your check out is Fleet Science Center. It is a Museum.
+user: Nice. I wish to book a rental car to go there.
+assistant: Up to which date do you need the car? Which time do you need it?
+user: I want to have up to 11th of this month. I wish to pick it up at 18:00
+assistant: Whether do you need to pick up from San Diego? When do you want to start the rental car?
+user: It is good. I want it from next Thursday.
+tool(GetCarsAvailable): ok n_results=6
+assistant: I searched and found 6 cars for you. A Sedan Hyundai Ioniq car is available at Santa Fe Depot.
+user: What is the price per day?
+assistant: The price is $30.00 per day.
+user: Do you have any other option? I want it from the 1st, till tomorrow.
+tool(GetCarsAvailable): ok n_results=6
+assistant: A SUV Jaguar F-Pace car is available at Santa Fe Depot.
+user: It is nice.
+assistant: Shall I book it now?
+user: Yes. Please go ahead.
+assistant: What about insurance?
+user: Sorry, I don't need it.
+assistant: Kindly ensure that, on March 1st, a SUV Jaguar F-Pace car is available at Santa Fe Depot at 6 pm. It will drop off at March 2nd. It didn't have any insurance coverage.
+user: Nice. What is the price per day?
+tool(ReserveCar): ok n_results=1
+assistant: Your car is booked. The total price is $37.00 per day.
+user: Please share the location.
+assistant: Shall I share this address Santa Fe Depot?
+user: Fleet Science Center is the address to be shared.
+assistant: To whom do you want to share it?
+user: Share it with Lisa.
+assistant: Kindly ensure that, the location Fleet Science Center is shared with Lisa.
+user: Nope. Share it with Bruce.
+assistant: Kindly ensure that, the location Fleet Science Center is shared with Bruce.
+user: It is good.
+tool(ShareLocation): ok n_results=1
+assistant: Location has been shared.
+user: Thank you for your kind help.
+assistant: Do you need any other help?
+user: Nope. Thank you for your kind help.
+assistant: Have a fantastic day.

@@ -1,0 +1,27 @@
+user: I need help looking for a bus.
+assistant: When do you want it for? And what are you going from and to?
+user: I want it for the 5th of March. I'll be travelling from Fresno to San Diego.
+tool(FindBus): ok n_results=6
+assistant: There's a bus departing at 6:50 am for $41. Does that work for you?
+user: What station does it go to and does it have any stops?
+assistant: It goes to 2660 Tulare St and it's a direct bus.
+user: What other buses are there?
+assistant: There's a bus departing at 7:20 am for $52. Does that work for you?
+user: Yeah, that' works. Let's purchase tickets.
+assistant: How many ticket do you want to purchase?
+user: I want 4 tickets.
+assistant: I'll get you 4 tickets for San Diego to Fresno on March 5th at 7:20 am, no extra luggage. Is that correct?
+user: Yes, that's correct. I also forgot to ask, what's the departure station?
+tool(BuyBusTicket): ok n_results=1
+assistant: The departure station is El Cajon Bus Stop. I've purchased the ticket.
+user: And does this bus have any stops?
+assistant: No, it's a direct trip.
+user: Thanks for help. I also want to look for two hotel rooms in that area.
+tool(SearchHotel): ok n_results=4
+assistant: There are 4 hotels that you might like. There's a 3 star hotel called Doubletree By Hilton Hotel Fresno Convention Center.
+user: I think I'd like that.
+assistant: Do you want to reserve the rooms?
+user: No, not right now.
+assistant: What else can I help you with?
+user: Nothing else, thanks for everything.
+assistant: You're welcome, have a great day, goodbye.

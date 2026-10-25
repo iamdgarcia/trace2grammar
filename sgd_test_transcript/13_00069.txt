@@ -1,0 +1,17 @@
+user: I want to watch a movie.
+tool(FindMovies): ok n_results=10
+assistant: I found Live Flesh, it is rated 80 / 100.
+user: Anything else? I like Steven Spielberg movies.
+tool(FindMovies): ok n_results=1
+assistant: Close Encounters of the Third Kind is rated 95 / 100.
+user: Perfect! I also want to find something to do there on the 13th of March.
+assistant: What city? What kind of activity? Music? Theater?
+user: I want to see a play in Toronto.
+tool(FindEvents): ok n_results=6
+assistant: I found 6 events like Anne Of Green Gables at Lower Ossington Theatre on March 13th at 6 pm.
+user: That will be great!
+assistant: Are you ready buy tickets?
+user: No, not yet.
+assistant: Do you need anything else?
+user: Thanks, that is all.
+assistant: Have a nice day.

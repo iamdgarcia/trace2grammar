@@ -1,0 +1,24 @@
+user: Can you find me some interesting things to do? Something in or around London, UK for March 10th. I really like Drama.
+tool(FindEvents): ok n_results=10
+assistant: I found 10 events that you might like. How about A Right Royale Tea? It is a very popular event taking place on March 10th. It starts at 6:30 pm at the Amba Hotel Charing Cross.
+user: How much are tickets?
+assistant: Each ticket costs $50.
+user: Sounds good, but can you find me some other events? Something around ATL.
+tool(FindEvents): ok n_results=5
+assistant: I found 5 events that you may like. What about Babyshower For The Antichrist? It takes place on March 10th at the Fulton County West End performing Arts Center. It starts at 4:30 pm.
+user: Sounds great. Can you find me a 4 -star hotel in that area? I need one room with smoking allowed.
+tool(SearchHotel): ok n_results=1
+assistant: How about Hotel Clermont? It is a 4 star hotel.
+user: Did you find anything else?
+tool(SearchHotel): ok n_results=0
+assistant: I failed to find any other hotels that meet your requirements. Is there anything else that I can help you with?
+user: Search again for a three -star hotel. I need three rooms.
+tool(SearchHotel): ok n_results=3
+assistant: How about the Embassy Suites By Hilton Atlanta Buckhead? It is a 3 star hotel.
+user: Sounds nice. I want to purchase 4 tickets for the event that you found earlier.
+assistant: You want to purchase 4 tickets for Babyshower For The Antichrist for March 10th in Atlanta. Is this correct?
+user: Yes, that works.
+tool(BuyEventTickets): ok n_results=1
+assistant: Your reservation is successful. Have a great time!
+user: Thanks for all of your help. That's all I need.
+assistant: My pleasure. Have a great day!

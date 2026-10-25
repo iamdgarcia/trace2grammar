@@ -1,0 +1,46 @@
+user: I'm on my annual leave but I'm bored. Please suggest something interesting to do.
+assistant: I can help you with that. First, tell me what type of events you like. You can say Music or Theater or something else.
+user: I love Theater.
+assistant: Is there a specific city I should search in?
+user: I'd like to find something around LAX.
+tool(FindEvents): ok n_results=10
+assistant: Your search yielded 10 events that might interest you. The well-liked A Year In Dragonfly is taking place at Studio C Artists on March 1st from 7:30 pm. How does that sound?
+user: Sounds good. But I'd like you to find me something happening next Tuesday around Vancouver, BC.
+tool(FindEvents): ok n_results=8
+assistant: Sure. No problem. You may want to check out the well-liked Alice In Glitterland, taking place at The Wise on March 5th from 4 pm.
+user: What's the cost per ticket? Where is it taking place?
+assistant: The cost is $40 per ticket. It'll take place at 1882 Adanac Street.
+user: Awesome! Thanks.
+assistant: Should I purchase tickets for this event?
+user: Not right away. Could you search for buses going there from Seattle, WA? The bus doesn't have to be direct. I need only one seat.
+assistant: Will you be leaving on March 5th?
+user: On second thoughts, get me a direct bus. I intend to leave on the 1st.
+tool(FindBus): ok n_results=10
+assistant: I found 10 suitable buses. Will the $29 bus leaving at 6:10 am work for you>
+user: That works for me.
+assistant: Shall I go ahead and purchase tickets for this bus?
+user: I don't want to buy it right away.
+assistant: Would you like my help with anything else?
+user: Yes, in case I can't make it by bus, I'd still like to get there. Please find me a round trip flight to get there.
+assistant: Sure. Please tell me which day you plan on leaving. You can say March 1st, March 5th, or another day? When would you like to fly back?
+user: I'd like to leave on 3rd of March and return on March 14th.
+tool(SearchRoundtripFlights): ok n_results=1
+assistant: Delta Airlines has an outbound flight with a layover, leaving at 4:10 am. The inbound flight departs at 6:35 am, at $379 per ticket. Does this flight interest you?
+user: Is the ticket class Economy?
+assistant: Yes, the seat class is Economy.
+user: That works. Please find three -star hotels in that area also. I'd like one room.
+tool(SearchHotel): ok n_results=10
+assistant: I found Atrium Inn Vancouver, a 3 star hotel.
+user: Very nice, thanks!
+assistant: Should I go ahead and reserve the hotel?
+user: No, I don't want to reserve right away.
+assistant: Will there be anything else?
+user: Remember the event that you find? Please buy me tickets to it.
+assistant: Sure. Please confirm that you're reserving 1 ticket for the March 5th Alice In Glitterland performance in Vancouver.
+user: Yes, that's correct.
+tool(BuyEventTickets): ok n_results=1
+assistant: I have successfully made your reservation. Enjoy yourself over there!
+user: Thank you very much. You've been very helpful.
+assistant: Will you be needing my help with anything else?
+user: No. Thank you very much. You've been very helpful.
+assistant: Have a wonderful day!

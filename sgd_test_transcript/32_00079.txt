@@ -1,0 +1,20 @@
+user: Hey, I'm in the mood to listen to some pop songs from 2015. Double Vision is supposed to be good.
+tool(LookupMusic): ok n_results=1
+assistant: How about Back It Up by Prince Royce from the album Double Vision?
+user: That's exactly what I'm looking for. How about online movies? Play movies are what I'm looking for, something featuring Vincent Andriano.
+tool(FindMovies): ok n_results=1
+assistant: I found 1 movie that you might like, how about Blinded by the Light?
+user: Blinded by the Light is perfect.
+assistant: Should I play the movie for you?
+user: No, not at this time.
+assistant: Anything else I can assist you with?
+user: Please play the song we just discussed on the speaker in patio.
+assistant: So you'd like to listen to Back It Up in patio. Is this correct?
+user: Yes, perfect.
+tool(PlayMedia): ok n_results=1
+assistant: Hope you enjoy your music.
+user: Thanks! Also, can you show me my alarms?
+tool(GetAlarms): ok n_results=3
+assistant: You have 3 alarms set right now. There's one for 3 pm with the name pick up kids.
+user: Okay perfect, thanks for your help.
+assistant: Thank you very much.

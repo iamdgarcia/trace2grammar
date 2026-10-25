@@ -1,0 +1,34 @@
+user: I want you to help me find a bus.
+assistant: Can you tell me from where you will leave for your trip, and what is your destination?
+user: I will depart from LA to arrive in Anaheim
+assistant: Can you tell me when have you planned to leave?
+user: I want to have a direct bus, with which I will leave on March 13th.
+tool(FindBus): ok n_results=10
+assistant: How would you like having a bus which leaves at 6 am, and the ticket of which costs $12.
+user: Can you tell me the station from where the bus will be departing?
+assistant: The bus will be leaving from North Hollywood Station
+user: Which is the station where the bus will be arriving at?
+assistant: The destination station of the bus is Anaheim Bus Station.
+user: That seems right to me.
+assistant: Are you willing to have tickets bought for this bus?
+user: Not at this moment, some other time maybe. Can you tell me about the attractions which can be found there?
+tool(FindAttractions): ok n_results=10
+assistant: I found 10 attractions which you might might like, with one of them being Angel Stadium of ANaheim, which is a Sports Venue.
+user: Nice, though can you recommend some other attraction?
+assistant: You might consider the Cars Land, which is a Tourist Attraction.
+user: That is nice, but can you recommend some other attraction?
+assistant: Another attraction you can visit is Disney California Adventure Park, which is a Theme Park.
+user: That is good. Now I would like to buy tickets for 4 people for the bus which you found earlier.
+assistant: Can you please confirm that you want to buy tickets for 4 people without extra luggage for the bus which leaves from Los Angeles on March 13th at 6 am to go in Anaheim?
+user: That is not right because I actually want tickets for two people, and I will have excess luggage to carry.
+assistant: Can you please confirm once again that you want to have bus tickets for 2 people, and that you also have extra luggage to take with you on the bus?
+user: That suits me well.
+tool(BuyBusTicket): ok n_results=1
+assistant: Your requested tickets have been booked.
+user: Is it possible for you to find me a three star hotel in that area, and I just need to have one room.
+tool(SearchHotel): ok n_results=10
+assistant: There are 10 hotels which you might consider, with one of them being Anaheim Majestic Garden Hotel, which is a 3 star hotel.
+user: That seems nice to me.
+assistant: Do you want to make a reservation at this hotel?
+user: I am not willing to make a booking at this moment. That's all I needed.
+assistant: Goodbye, and have a good time!

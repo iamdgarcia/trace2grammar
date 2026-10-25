@@ -1,0 +1,21 @@
+user: I need a Supernatural type movie in Sebastopol.
+tool(FindMovies): ok n_results=1
+assistant: You only have 1 choice, IT Chapter Two.
+user: It Chapter Two it is then.
+assistant: How about tickets?
+user: No but give me a restaurant there.
+assistant: Which place do you prefer?
+user: I Want Himalayan Tandoori please.
+assistant: What time do you want to go?
+user: Reserve for 19:00 please.
+assistant: Sure, to confirm: 2 for Himalayan Tandoori and Curry house in Sebastopol at 7 pm on March 1st.
+user: You got it. What's their phone number?
+tool(ReserveRestaurant): ok n_results=1
+assistant: You have a table and can phone them at 707-824-1800.
+user: How much does it cost there? Is it pricey?
+assistant: They have moderate pricing.
+user: Thanks, What are the show times for IT at Rialto Cinemas?
+tool(GetTimesForMovie): ok n_results=1
+assistant: You can see it at 9 pm at the Rialto Cinemas.
+user: Fine, that's it.
+assistant: Have a good time out.

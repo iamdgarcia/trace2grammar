@@ -1,0 +1,22 @@
+user: I want to find a house to stay in please
+assistant: Where are you planning to stay?
+user: I am going to Cape Town
+tool(SearchHouse): ok n_results=10
+assistant: There are 10 houses including one at 1 Cullinan Street, Cape Town City Centre with a 4.5 rating
+user: What else is there that is 4.6 or higher?
+tool(SearchHouse): ok n_results=10
+assistant: There's a nice place at 1 Waal Straat that has a 4.6 rating
+user: Can you give me a contact number please?
+assistant: It's +27 21 819 2000
+user: I want to check in next Tuesday and out next Wednesday and there are three of us
+assistant: Confirming you want to book the place in Cape Town for 3 from March 5th to March 6th
+user: Yes that's perfect for me
+tool(BookHouse): ok n_results=1
+assistant: It's been booked!
+user: Can you show me some attractions in the area
+tool(FindAttractions): ok n_results=9
+assistant: There are 9 things you could do including checking out the Bo-Kaap Museum
+user: OK thanks for that info
+assistant: What else can I do for you?
+user: That's all for now, thanks
+assistant: Enjoy your day

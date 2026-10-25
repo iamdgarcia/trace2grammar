@@ -1,0 +1,20 @@
+user: Hey, I'm bored. Can you find some movie I can watch?
+tool(FindMovies): ok n_results=10
+assistant: I found 10. Would you like to see This Is Not Berlin? It has a rating of 86 out of 100 so it must be good.
+user: What kind of music is it?
+assistant: It's a drama film.
+user: Any other available? I want something from the Scientific fiction genre.
+tool(FindMovies): ok n_results=2
+assistant: There's Ad Astra. It has a rating of 84 out of 100.
+user: Sounds fun. Can you find me something to hear by Enrique Iglesias, by the way?
+tool(LookupMusic): ok n_results=2
+assistant: Sure, how about the song Heartbeat from the album Euphoria? It's one of the Enrique Iglesias classics.
+user: I'd love to hear it.
+assistant: Where should I play it?
+user: On my living room please.
+assistant: So the song Heartbeat on the living room?
+user: Correct? Did it come out three years back? It sounds a little old. What kind of music is it?
+tool(PlayMedia): ok n_results=1
+assistant: It's a pop song from 2010.
+user: Thanks! That will be all.
+assistant: Have a great day.

@@ -1,0 +1,23 @@
+user: Hi, could you get me a bus departing on the 2nd of March?
+assistant: Where are you departing from and heading to?
+user: I will be travelling from San Diego to SFO.
+tool(FindBus): ok n_results=6
+assistant: Sure, there are 6 buses you may like, how about one departing at 6:30 am and costing $49?
+user: May I know where will I be departing from?
+assistant: This departs from the El Cajon Bus Stop.
+user: I see, sounds great!
+assistant: Do you need me to purchase the tickets for you?
+user: Yes please, for one person will do.
+assistant: Please confirm your purchase for 1 seat on the bus ride from San Diego to San Francisco on March 2nd at 6:30 am.
+user: Sorry, could I get the tickets for 4 instead?
+assistant: No worries, please confirm your booking for 4 seats for the bus departing on March 2nd.
+user: Could you add on excess luggage for me please?
+assistant: Sure, please confirm your bus ride with excess luggage departing from San Diego.
+user: That is fine with me. May I know if this is a direct bus and which station will I arrive at?
+tool(BuyBusTicket): ok n_results=1
+assistant: Your reservation has been made. This is a direct bus to Transbay Terminal.
+user: I see, could you get me a hotel reservation too?
+tool(SearchHotel): ok n_results=10
+assistant: Sure, how about a 1 star hotel called Amsterdam Hostel San Francisco?
+user: Sounds great! That is all I need for now.
+assistant: Sure, have a great day ahead!

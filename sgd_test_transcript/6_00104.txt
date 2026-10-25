@@ -1,0 +1,21 @@
+user: Find me a unisex salon in Healdsburg.
+tool(FindProvider): ok n_results=1
+assistant: 1 option I found that you may like.A nice salon called Wash & Brushup Co. in Healdsburg.
+user: Sounds good.Buy for me an appointment here.
+assistant: On what date and time you want to be?
+user: On the 12th at evening 4:15.
+assistant: You want an appointment on March 12th at 4:15 pm.Wash & Brushup Co. is the name of the hair stylist.Is that okay?
+user: No.Make it please at 9:30 am.
+assistant: On March 12th at 9:30 am.I'm right?
+user: No.I changed my mind.Make it on 1st of this month.
+assistant: On March 1st at 9:30 am.Confirm me please.
+user: Sounds good.Tell me their address.
+tool(BookAppointment): ok n_results=1
+assistant: 340 Healdsburg Avenue is the address.I'm sorry the reservation was not made.You would like to try on March 1st at 10 am because Wash & Brushup Co. is a nice salon.
+user: Yes sounds very good.
+tool(BookAppointment): ok n_results=1
+assistant: The appointment was made.
+user: Tell me the average rating for this place.
+assistant: 5.0 is the average rating.
+user: Thanks.That's all that I wanted.
+assistant: Have a great day!

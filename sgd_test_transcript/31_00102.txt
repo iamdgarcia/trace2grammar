@@ -1,0 +1,40 @@
+user: I am looking for a unisex salon in Palo Alto.
+tool(FindProvider): ok n_results=10
+assistant: I have 10 for you. 18/8 Fine Men's Salons - Palo Alto is there in Palo Alto.
+user: What is the address?
+assistant: It is 855 El Camino Real Building #1 Suite #3.
+user: What is the contact number and the rating?
+assistant: The number is 650-460-8290 and it is rated 3.9.
+user: Yeah that sounds awesome.
+assistant: Shall I book you an appointment.
+user: Yes please, on March 8th.
+assistant: What time would you like it.
+user: I want it for eleven in the morning.
+assistant: Okay, Let's confirm the details. 18/8 Fine Men's Salons - Palo Alto with an appointment on March 8th at 11 am.
+user: Yes that is it.
+tool(BookAppointment): ok n_results=1
+assistant: That's all booked for you.
+user: I want a restaurant near there too.
+assistant: What kind of food?
+user: Anything that has freshwater fish.
+tool(FindRestaurants): ok n_results=4
+assistant: Odori Japanese Cuisine is really nice place in Palo Alto.
+user: What is there a address?
+assistant: 2111 El Camino Real and their number is 650-327-2222.
+user: Can you give me another recommendation please.
+assistant: P.F. Chang's in Palo Alto.
+user: Yeah, that sounds better to me.
+assistant: Do you want me to reserve it?
+user: Yes please for two people.
+assistant: What time would you like me to reserve it for?
+user: Make the reservation for 12 pm.
+assistant: Okay let's confirm the details. A table for 2 at P.F. Chang's in Palo alto on March 8th at 12 pm.
+user: Yeah that sounds great.
+tool(ReserveRestaurant): ok n_results=1
+assistant: That is all booked for you now.
+user: Is it a pricey restaurant and what is it rated?
+assistant: It is moderate. And, it is rated 3.7.
+user: Thanks a lot.
+assistant: Can I do anything else?
+user: No. That will be all.
+assistant: Have a nice day.

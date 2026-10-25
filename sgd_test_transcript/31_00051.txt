@@ -1,0 +1,28 @@
+user: I would like to take my sister out and I know she has been complaining about her hair so can you find me a unisex salon in Burlingame?
+tool(FindProvider): ok n_results=10
+assistant: The salon called Burlingame Barber Shop, located in Burlingame seems to be a popular choice.
+user: That sounds like a nice salon, let's make an appointment there.
+assistant: Okay, I just need to know the date and time you would like the appointment to be on.
+user: I will be with my sister this Saturday so Saturday at twelve pm would be great.
+assistant: I just want to relay this back to you before I finalize it if that's okay. You would like an appointment at 12 pm on March 2nd at Burlingame Barber Shop, right?
+user: That is correct and I will need the address as well please.
+tool(BookAppointment): ok n_results=1
+assistant: I have successfully confirmed your appointment at the salon located at 1012 Oak Grove Avenue.
+user: Great, now just one more thing, can you help me find a place to eat that day as well?
+assistant: Absolutely, do you have a specific type of cuisine in mind?
+user: I would love to have some fish, I think it's been a while since I've had any kind of sea food.
+tool(FindRestaurants): ok n_results=2
+assistant: The first of 2 restaurants I was able to pull up for you is Grand Harbor located in Burlingame.
+user: What type of prices are the menu items there?
+assistant: It appears that their prices are considered to be moderate.
+user: Okay, so it's affordable. Let's go ahead and reserve a table for 2 at 19:00 please.
+assistant: No problem, I will reserve a table for 2 at Grand Harbor, located in Burlingame, on March 2nd, at 7 pm. Is that right?
+user: Actually, maybe I will invite a couple more people, so let's make the reservation for 4 instead and change the time to in the evening, 4:45.
+assistant: No problem, I have changed the number of people to 4 and the time to 4:45 pm. Is that correct now?
+user: Yes, so far everything sounds good. Can you tell me if they offer vegetarian entrees and what is their user rating?
+tool(ReserveRestaurant): ok n_results=1
+assistant: I have confirmed your table but unfortunately this establishment does not offer vegetarian meals and its user rating is 3.8.
+user: Great, you were very helpful, thanks.
+assistant: Is there anything else I can help you with?
+user: No, that will be all for now but thanks for asking.
+assistant: Enjoy the rest of your day!

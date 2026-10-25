@@ -1,0 +1,20 @@
+user: I need to find a salon.
+assistant: Which city should I search in.
+user: I would like San Francisco.
+tool(FindProvider): ok n_results=10
+assistant: I found 10 salons. 1512 Barber Shop in San Francisco.
+user: What is the rating and address.
+assistant: The rating is 4.8 and the address is 1532 20th Street.
+user: Is there another one.
+assistant: 20th Salon and Barber is also good and in San Francisco,
+user: That sounds good.
+assistant: Would you like an appointment?
+user: Yes, please book it.
+assistant: Which date do you prefer?
+user: Next Thursday in the morning 10:30.
+assistant: Please confirm your 10:30 am appointment on March 7th at 20th Salon and Barber.
+user: Thanks, that is great.
+tool(BookAppointment): ok n_results=1
+assistant: It is confirmed.
+user: Thank you very much.
+assistant: Have a nice day.

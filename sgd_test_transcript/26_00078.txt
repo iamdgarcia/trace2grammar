@@ -1,0 +1,24 @@
+user: Can you look for a train?
+assistant: when are you planing to travel and which city are you moving to? where is your departing place?
+user: I have plans to go to SFO from LAX on March 12th
+tool(FindTrains): ok n_results=8
+assistant: I have looked in to 8 trains of your choice and what is your opinion on the train moving at 7:50 am costing $87 in total?
+user: Fine and i also have to find some other interesting things to do there
+assistant: What is your choice of event type?
+user: I really like songs on 14th of March
+tool(FindEvents): ok n_results=9
+assistant: I have short listed 9 events of your choice and one among them is a very popular Alex Cameron taking place at August Hall on March 14th at 4:30 pm
+user: Where is event taking place and what will be the ticket price?
+assistant: The location of event is 420 Mason Street costing $45
+user: That is perfect
+assistant: Is there any other help?
+user: Can you also look for some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: I have found out 10 attractions of your liking and you could check out Alcatraz which is a Historical Landmark
+user: Fine and i also have to look for a house to stay there
+tool(SearchHouse): ok n_results=10
+assistant: I have found a house at 1095 Market Street with rating 4.0
+user: This is fine
+assistant: Do you need to make booking there?
+user: No, i don't need now
+assistant: It was good to talk to you and help you, bye

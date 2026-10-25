@@ -1,0 +1,19 @@
+user: I want to find a house in Sydney, Australia. I'd like laundry service included.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses you might like. There is a house rated 4.1 at 1 Columbia Court, Baulkham Hills New South Wales 2153, Australia.
+user: What's the phone number?
+assistant: The contact number is +61 2 9634 9634
+user: Great, I want to book the house for one person.
+assistant: When are you checking in and checking out?
+user: I want to check in on the 7th of March and check out on the 13th of March.
+assistant: Please confirm: going to Sydney. 1 person. Checking in March 7th and checking out on March 13th.
+user: Sounds good. What's the price?
+tool(BookHouse): ok n_results=1
+assistant: Your reservation has been made. The total is $522.
+user: What are some attractions there?
+tool(FindAttractions): ok n_results=10
+assistant: There are 10 attractions you might like. ANZ Stadium is a sports venue.
+user: Sounds good.
+assistant: Anything else I can do for you?
+user: No, that's all.
+assistant: Have a great day!

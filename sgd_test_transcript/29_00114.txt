@@ -1,0 +1,30 @@
+user: Can you help me find something interesting to do?
+assistant: What type of events do you like?
+user: I really enjoy Stage show.
+assistant: What city should I search in?
+user: Search for something around NYC.
+tool(FindEvents): ok n_results=10
+assistant: Acting For Teens is very popular and happening on March 4th at 6 pm. It takes place at 520 8th Ave. - Personal Valet Parking.
+user: That sounds good. I would like to find a house for 1 to stay in there. It should have laundry service and a 3.5 or higher rating.
+tool(SearchHouse): ok n_results=10
+assistant: I found 10 houses. I found a nice home with a 3.5 rating located at 100 Greenwich Street.
+user: What is the contact number for the place?
+assistant: The contact number is +1 917-409-0800.
+user: Are there any other houses?
+assistant: I found a nice house with a 3.5 rating located at 100-15 Ditmars Boulevard, East Elmhurst, NY 11369, USA.
+user: That house sounds great.
+assistant: Can I assist you with anything else?
+user: What about buses going there? I want a direct bus for 1 person leaving on March 5th.
+assistant: Where are you leaving from?
+user: I will be leaving from Philadelphia.
+tool(FindBus): ok n_results=6
+assistant: I found 6 buses. How does the bus that cost $23 that leaves at 9 am sound?
+user: Sounds good. I want to purchase tickets for the event you found.
+assistant: Please confirm: book 1 ticket for Acting For Teens that is taking place in New York on March 4th.
+user: Yes, that is correct. How much does one ticket cost?
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket price is $35. Your reservation has been confirmed.
+user: Thanks for your help.
+assistant: Can I assist you with anything else?
+user: No thank you.
+assistant: Enjoy your day.

@@ -1,0 +1,23 @@
+user: Can you find me a one way flight from Portland, OR for Tuesday next week? I would like a Premium Economy ticket.
+assistant: Sure. Where would you like to go?
+user: To Seattle, WA.
+tool(SearchOnewayFlight): ok n_results=3
+assistant: Would a flight with Alaska Airlines interest you? The flight takes off at 9:45 am and a ticket will cost $104.
+user: That would work, but can you find me some trains going to the same place?
+assistant: Would you like to travel on March 5th?
+user: No, find me tickets for the 9th of this month.
+tool(FindTrains): ok n_results=9
+assistant: There are 9 trains that meet your criteria. What about a train departing at 9:10 am with a ticket price of $63?
+user: That sounds good to me.
+assistant: Would you like to book tickets now?
+user: Yes, let's do it now.
+assistant: How many tickets would you like? And would you like travel insurance?
+user: I would like to have travel insurance, and I'll only need 1 ticket.
+assistant: Please confirm the following: You would like 1 value ticket for a train leaving from Portland to Seattle on March 9th at 9:10 am.
+user: Yes, I confirm. Can you also tell me which station the train will leave from and arrive at?
+tool(GetTrainTickets): ok n_results=1
+assistant: Your ticket has been purchased. The train will leave from Union Station and arrive at King Street Station.
+user: Great. You've been helpful, thanks.
+assistant: You're welcome. Will that be all?
+user: Yes, for now.
+assistant: Okay, good bye.

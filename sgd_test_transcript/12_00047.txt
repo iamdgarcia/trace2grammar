@@ -1,0 +1,27 @@
+user: I would like to book three bus tickets for a bus leaving at evening 7 on 11th of this month.
+assistant: Which city you want to leave from?
+user: I want to take the bus from LAX.
+assistant: And what is your destination?
+user: I will be traveling to Sacramento.
+assistant: Please confirm: You want me to book 3 bus tickets from Los Angeles to Sacramento for March 11th in a bus leaving at 7 pm.
+user: Yes, That is correct. Can you tell me the name of the station it departs from?
+tool(BuyBusTicket): ok n_results=1
+assistant: I have successfully booked your tickets and the bus departs from North Hollywood Station.
+user: Can you confirm whether it is a direct bus? And also find me the station it arrives at?
+assistant: Yes, It is a direct bus and it arrives at 65th Light Rail Station.
+user: Thank you so much! I am looking for a rental car from March 12th.
+assistant: Would you like to pick it up from Sacramento and also tell me the time for pick up?
+user: Yes, That works for me and I would like to pick it up at 1:30 pm.
+assistant: Til what date you will be keeping the car?
+user: I want the car till 13th of this month.
+tool(GetCarsAvailable): ok n_results=10
+assistant: I found 10 cars you may like. How about a SUV Alfa Romeo Stelvio available for pick up at Sacramento Valley Station.
+user: That sounds nice to me. Please reserve the car for me.
+assistant: Would you like me to add insurance?
+user: No, Don't add insurance.
+assistant: Please Confirm: You want me to book a SUV car for pick up at Sacramento Valley Station on March 12th at 1:30 pm. And you want to return it on March 13th.
+user: Yes, That is correct. Find me the cost per day.
+tool(ReserveCar): ok n_results=1
+assistant: I have successfully booked your car and the costs per day is $44.00.
+user: Okay. That is all I need for now. Thank you!
+assistant: I am glad I could help. Have a nice day!

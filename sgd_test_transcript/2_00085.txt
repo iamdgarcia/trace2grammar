@@ -1,0 +1,14 @@
+user: Hey, you think you could find me something to do? I would love something to do with Music around LA.
+tool(FindEvents): ok n_results=10
+assistant: I've found 10 events like that. Would you like Ain Gordon, which is taking place at Ralph Freud Playhouse on March 9th at 7 pm?
+user: Sounds alright. How much does a ticket cost, and what's the address?
+assistant: The venue is located at 245 Charles E Young Drive East, and a ticket costs $60.
+user: That sounds good to me, can you reserve me one ticket to the event?
+assistant: Please confirm the following: You would like 1 ticket to Ain Gordon on March 9th in Los Angeles.
+user: Confirmed. Buy me that ticket.
+tool(BuyEventTickets): ok n_results=1
+assistant: The ticket has successfully been purchased. I hope you enjoy your time there.
+user: Awesome, thank you.
+assistant: You're most welcome. Is there anything else I could assist you with today?
+user: No, that will be all.
+assistant: Okay. Goodbye.

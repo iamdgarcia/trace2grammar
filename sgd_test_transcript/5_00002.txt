@@ -1,0 +1,24 @@
+user: Can you help me find a one-stop bus leaving tomorrow please?
+assistant: Where are you coming from?
+user: I'll be coming from San Diego
+assistant: Where are you headed though?
+user: I'm gonna be making a stop in Sacramento
+tool(FindBus): ok n_results=10
+assistant: I found 10 buses that work including a $58 bus that leaves at 6:30 am, how is that?
+user: Where does that depart from and which station in Sacramento does it arrive at?
+assistant: It leaves from El Cajon Bus Stop and arrives at 65th Light Rail Station
+user: Can you see what other options are available?
+assistant: How about this bust that leaves at 6:50 am and costs $58?
+user: That's fine, get me one ticket
+assistant: Confirming you want 1 ticket on the March 2nd bus at 6:50 am from San Diego to Sacramento with no luggage
+user: Actually that's wrong, I have excess luggage
+assistant: OK confirming that you will have extra luggage on the March 2nd bus departure
+user: I actually need 3 tickets my fault
+assistant: Sure thing, so 3 people o the 6:50 am bus?
+user: Yes that's perfect
+tool(BuyBusTicket): ok n_results=1
+assistant: Your tickets are booked!
+user: Where does it leave from again?
+assistant: It leaves from El Cajon Bus Stop
+user: OK got it, that's it for now thanks
+assistant: Sure, glad I could help!

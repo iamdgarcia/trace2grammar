@@ -1,0 +1,16 @@
+user: I'm looking for online movies.
+assistant: What type of movies are you interested in?
+user: I would prefer a cartoon.
+tool(FindMovies): ok n_results=2
+assistant: Would The Angry Birds Movie 2 or Toy Story 4 interest you?
+user: The Angry Birds Movie Two sounds good.
+assistant: Should I play it?
+user: Yes. Please play it with English subtitles.
+assistant: Please confirm you want me to play The Angry Birds Movie 2 with English subtitles.
+user: Yes. That's right.
+tool(PlayMovie): ok n_results=1
+assistant: The movie has started.
+user: Who acts in it?
+assistant: Britta Steffenhagen is an actor in the movie.
+user: Okay. That's all. Thanks.
+assistant: Okay. Have a great day. Goodbye.

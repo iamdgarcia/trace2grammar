@@ -1,0 +1,31 @@
+user: I'm looking for an anime movie online.
+tool(FindMovies): ok n_results=1
+assistant: How about Paprika?
+user: Yes, Paprika sounds great. I'd also like to search for some attractions.
+assistant: What city do you want to search in?
+user: I'm looking for one in DC.
+tool(FindAttractions): ok n_results=10
+assistant: How about the Nature Preserve 56 Signers of the Declaration of Independence Memorial?
+user: That sounds good. I'm also looking for some songs.
+tool(LookupMusic): ok n_results=10
+assistant: I found 10 songs for you. What about the song Who Knows by Protoje from the album Ancient Future?
+user: When did it come out?
+assistant: It came out in 2014.
+user: What type of song is it?
+assistant: It is a Reggae song.
+user: Yes, that is the one! I'd like to play the song.
+assistant: Okay, you want to play the song Who Knows in the living room, right?
+user: Yes, that is correct.
+tool(PlayMedia): ok n_results=1
+assistant: I have started playing the song, enjoy.
+user: Okay, thanks. I'd like to play that movie now.
+assistant: You want to play the movie Paprika with English subtitles, right?
+user: No, I want to watch it with Spanish subtitles.
+assistant: Okay, you want to play Paprika with Spanish subtitles, correct?
+user: Yes, who acted in it?
+tool(PlayMovie): ok n_results=1
+assistant: I have started playing the movie. Katsunosuke Hori acted in it.
+user: Thank you.
+assistant: Is there anything else I can help you with?
+user: No, thank you.
+assistant: Have a great day.
