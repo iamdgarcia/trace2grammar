@@ -51,7 +51,7 @@ if (fm) {
 }
 
 /* 4) files shipped */
-['index.html','tau_port.js','game.js','README.md'].forEach(f =>
+['index.html','tau_port.js','game.js','llm.js','README.md'].forEach(f =>
   check('file present: ' + f, fs.existsSync(path.join(__dirname, f))));
 
 /* 5) tau_port byte-identical to the parity-verified original */

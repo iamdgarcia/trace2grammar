@@ -123,6 +123,7 @@ Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
  <button id="m2" class="ghost">Mission 2: the refund</button>
  <span class="spacer"></span>
  <span class="badges" id="badges" title="endings collected"></span>
+ <button id="llm" class="ghost" title="load a real 0.5B model in your browser (WebGPU, ~350 MB)">model: off</button>
  <button id="voice" class="ghost" title="read bot lines aloud (browser TTS)">voice: off</button>
  <button id="info" class="ghost">info</button>
 </header>
@@ -136,8 +137,9 @@ Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
    <button id="send" class="primary">Send</button>
    <button id="walkaway" title="leave mid-flow; the walker rules on what exists">walk away</button>
   </div>
-  <p class="hint">The bot is deterministic (tables, no LLM). Say <code>human</code> to push for a
-  transfer, answer the OTP to stay contained, or try to make it break its script.</p>
+  <p class="hint">Default bot: deterministic tables (no LLM). Switch on <code>model: on</code> to face a
+  real 0.5B LLM and try to make it leak its internals. Say <code>human</code> to push for a
+  transfer, answer the OTP to stay contained, or exceed my authority (mission 2: limit 200).</p>
  </div>
  <div>
   <div class="panel" style="margin-bottom:14px">
@@ -157,7 +159,7 @@ Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
     <div class="dhint">walk away mid-flow, or just stop typing for 45s</div>
     <div class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
    <div class="door d-escape" id="door-escape"><div class="dname">4 · Escape</div>
-    <div class="dhint">a scripted bot has rules; some sentences make it forget them</div>
+    <div class="dhint">table mode: some sentences make it forget the script · model mode: make the LLM leak its internals</div>
     <div class="bars"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
   </div>
  </div>
@@ -179,17 +181,22 @@ Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
 <dialog id="infoDialog">
  <button class="x ghost" id="infoClose">close</button>
  <h3>The Four Endings — what is honest here</h3>
- <p><b>The bot is scripted.</b> A table-driven reply engine (no LLM, no randomness): its reactions
- reuse the walker's own pattern tables plus the vocabulary of our sample generator
- (make_samples.py). Nothing is sent anywhere: zero network calls, zero API keys.</p>
+ <p><b>Two bot modes, one referee.</b> By default the bot is a table-driven reply engine
+ (no LLM, no randomness). Press <code>model: on</code> and a real 0.5B LLM
+ (<code>Qwen2.5-0.5B-Instruct</code>) downloads to YOUR browser (~350 MB, WebGPU, no API
+ keys, no backend) and writes the bot's words. The flow brain stays deterministic in both
+ modes: it decides when tools fire, when a handoff happens and when the call closes — so
+ the four endings always exist.</p>
  <p><b>The verdict is the walker's, not the game's.</b> After every turn the parity-verified
  JavaScript port of trace2grammar's <code>infer_states</code> classifies the accumulated
  transcript (<code>tau_port.js</code>, 585/585 parity against the Python on the repo fixtures).
  The walk you see is the walk it computed.</p>
  <p><b>Escape is an audit check.</b> In the paper, compliance escape is detected post-hoc
- (the agent said things outside its allowed script), never as a walk state. When the bot leaks
- its internal tables, the raw walker still sees an unfinished conversation; the game labels the
- ending as an <i>audit check</i>, exactly like the paper does.</p>
+ (the agent said things outside its allowed script), never as a walk state. In table mode the
+ scripted leak prints the walker's real tables. In model mode there is no script to leak:
+ your injection line goes to the model and the audit scans what it ACTUALLY said for leaked
+ internals; if it never leaks, you never get the ending. The raw walker still sees an
+ unfinished conversation; the game labels it an <i>audit check</i>, exactly like the paper.</p>
  <p><b>Abandoned is yours to make.</b> Leave mid-flow (button, or 45s of silence) and there is
  no terminal event: the walker rules abandonment on what exists. That is the real failure mode
  this instrument watches: confident closing, silent abandonment.</p>
@@ -198,8 +205,9 @@ Instrument by <a href="https://huggingface.co/iamdgarcia">iamdgarcia</a> ·
  <a href="https://github.com/iamdgarcia/trace2grammar" target="_blank" rel="noopener">trace2grammar</a>.</p>
 </dialog>
 
-<footer>Runs entirely in your browser: no backend, nothing uploaded, no model download.
-The walker is a line-for-line JavaScript port of trace2grammar's infer_states
+<footer>Runs entirely in your browser: no backend, nothing uploaded. The optional model
+mode downloads a 0.5B model (~350 MB) to your tab and runs it on WebGPU. The walker is a
+line-for-line JavaScript port of trace2grammar's infer_states
 (<a href="https://github.com/iamdgarcia/trace2grammar">repo</a>), parity-checked 585/585
 against the Python. Sister instruments:
 <a href="https://iamdgarcia-conversation-autopsy.static.hf.space">Conversation Autopsy</a> ·
@@ -207,6 +215,7 @@ against the Python. Sister instruments:
 
 <script src="tau_port.js"></script>
 <script src="game.js"></script>
+<script src="llm.js"></script>
 <script>
 const $ = id => document.getElementById(id);
 const STATE_NAMES = {q_greet:'GREETING', q_auth:'AUTHENTICATING', q_intent:'INTENT',
@@ -338,12 +347,14 @@ function afterTurn() {
   }
 }
 
-function send() {
+async function send() {
   const text = $('input').value.trim();
   if (!text || !g || g.over) return;
   $('input').value = '';
   addMsg({type:'user', text});
-  const res = FOUR.turn(g, text);
+  const res = (FOUR.voiceActive && FOUR.voiceActive())
+    ? await FOUR.turnAsync(g, text)
+    : FOUR.turn(g, text);
   (res.replies || []).forEach(m => { addMsg(m); if (m.type === 'bot') speak(m.text); });
   afterTurn();
   resetIdle();
@@ -388,6 +399,24 @@ $('voice').onclick = () => {
   voiceOn = !voiceOn;
   $('voice').textContent = 'voice: ' + (voiceOn ? 'on' : 'off');
   if (!voiceOn && 'speechSynthesis' in window) speechSynthesis.cancel();
+};
+$('llm').onclick = async () => {
+  if (!window.FOUR_LLM) { $('llm').textContent = 'model: unavailable'; return; }
+  if (FOUR_LLM.isReady()) {
+    FOUR.setVoice(null);
+    $('llm').textContent = 'model: off';
+    return;
+  }
+  $('llm').textContent = 'model: loading 0%';
+  try {
+    await FOUR_LLM.load(p => { $('llm').textContent = 'model: loading ' + p + '%'; });
+    FOUR.setVoice(msgs => FOUR_LLM.speak(msgs));
+    $('llm').textContent = 'model: ON';
+    addMsg({type:'sys', text:'— real model loaded (' + FOUR_LLM.MODEL.split('/')[1] + '): the bot now answers with it; the walker still rules —'});
+  } catch (e) {
+    $('llm').textContent = 'model: unavailable';
+    addMsg({type:'sys', text:'— model mode needs WebGPU (' + (e && e.message ? e.message : 'load failed') + '); the scripted game keeps working —'});
+  }
 };
 renderBadges();
 startMission('card_replacement');
