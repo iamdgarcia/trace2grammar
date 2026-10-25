@@ -32,7 +32,17 @@ does your evaluation actually exercise — and can you trust the outcome your tr
    its sign **inverts** (polite close in 66.8% of PASS episodes vs 76.4% of FAILED ones). In SGD,
    the "confident closing, silent failure" mode appears as 5 confirmed courteous-closes over
    failed service calls (plus 4.6% of contained verdicts carrying the tool-ok/empty-result
-   signal as candidates). If you count outcomes from transcripts alone, you absorb this silently.
+   signal as candidates); in the real-agent anchor it is 21.7% of failures (173/797) — 8.7%
+   of all runs. If you count outcomes from transcripts alone, you absorb this silently.
+4. **Two executed results the anchor returns for free (25-oct)** — (a) ablation: the walk
+   carries delivered-outcome signal beyond surface text: TF-IDF+LR test AUROC 0.713 → 0.733
+   with walk features (paired bootstrap 95% CI [+0.008, +0.033], above the predeclared
+   +0.01 margin); walk features beat the raw rule vector by +0.072. (b) turn-level risk
+   curve: 14,011 walker-inferred prefixes, deterministic; turns 1–3 chance (stated), turn 4
+   first signal (+13.4pp fixed-flag lift), first stable AUROC ≥ 0.65 at turn 7, best
+   in-flight 0.82 at turn 11 (small cell, declared). **TraceGrammar-Anchor release:**
+   `dataset/` (3 corpora, one schema, DATASET_CARD + MANIFEST.sha256, verify_dataset.py
+   45/45 PASS) + `experiments/` (the two scripts that produce the numbers).
 
 **Who consumes this:** the paper (*Turn-Level Trajectory Grammars for Voice Agents*), the three
 live demos it powers (below), and anyone with agent traces — paste a transcript or load an OTel
