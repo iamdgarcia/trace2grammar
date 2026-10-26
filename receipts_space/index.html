@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Receipts Audit</title>
+<style>
+  :root {
+    --paper: #e9e3d5;
+    --ink: #1c1b18;
+    --muted: #6b675e;
+    --slip: #fffdf7;
+    --red: #b3261e;
+    --green: #1f6f35;
+    --line: #d8d2c2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 36px 0 8px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: 1px; }
+  .subtitle { color: var(--muted); margin: 0 0 18px; }
+  .landing {
+    border: 1px solid var(--ink);
+    background: var(--slip);
+    padding: 14px 18px;
+    box-shadow: 4px 4px 0 rgba(0,0,0,.12);
+    font-size: 14px;
+  }
+  .landing p { margin: 6px 0; }
+  h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 6px;
+    margin: 36px 0 14px;
+  }
+  /* morning brief */
+  .brief { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+  .task {
+    background: var(--slip);
+    border: 1px solid var(--line);
+    padding: 8px 12px;
+    font-size: 13px;
+    display: flex; gap: 10px; align-items: baseline;
+  }
+  .task .tid { color: var(--muted); white-space: nowrap; }
+  .task.revoked { border-color: var(--red); background: #fdeeed; }
+  .task.revoked .tid { color: var(--red); font-weight: 700; }
+  /* rulebook */
+  .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 640px) { .rules { grid-template-columns: 1fr; } }
+  .rule {
+    background: var(--slip);
+    border: 1px solid var(--line);
+    padding: 10px 12px;
+    font-size: 12.5px;
+  }
+  .rule .rid { font-weight: 700; color: var(--ink); }
+  .rule .rname { font-weight: 700; }
+  .rule p { margin: 4px 0 0; color: #3c3a34; }
+  /* receipts stream */
+  .receipt {
+    position: relative;
+    background: var(--slip);
+    border-top: 2px dashed var(--line);
+    border-bottom: 2px dashed var(--line);
+    margin: 14px 0;
+    padding: 14px 18px 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  }
+  .r-head { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+  .r-verb { font-weight: 700; letter-spacing: 2px; color: var(--ink); }
+  .r-target { font-weight: 700; margin-top: 4px; }
+  .r-detail { font-size: 13px; margin-top: 2px; }
+  .r-note { font-size: 12.5px; font-style: italic; color: #4d4a42; margin-top: 6px; border-left: 3px solid var(--line); padding-left: 8px; }
+  .r-foot { display: flex; justify-content: space-between; align-items: baseline; margin-top: 10px; font-size: 12px; }
+  .r-src { color: var(--muted); }
+  .r-amt { font-weight: 700; }
+  .r-btns { margin-top: 12px; display: flex; gap: 10px; }
+  .r-btns button {
+    font-family: inherit;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 7px 16px;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid var(--ink);
+  }
+  .r-btns .b-ok { color: var(--green); border-color: var(--green); }
+  .r-btns .b-no { color: var(--red); border-color: var(--red); }
+  .r-btns .b-ok.sel { background: var(--green); color: #fff; }
+  .r-btns .b-no.sel { background: var(--red); color: #fff; }
+  .r-btns button:focus-visible { outline: 3px solid #6a8db8; outline-offset: 2px; }
+  /* divider */
+  .divider {
+    background: var(--red);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    margin: 22px 0;
+    font-size: 13px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);
+  }
+  /* finish bar */
+  .finishbar {
+    position: sticky; bottom: 0;
+    background: var(--paper);
+    padding: 12px 0;
+    border-top: 1px solid var(--ink);
+    display: flex; align-items: center; gap: 16px; justify-content: space-between;
+  }
+  #count { font-size: 13px; color: var(--muted); }
+  #finish {
+    font-family: inherit; font-size: 14px; letter-spacing: 1px;
+    padding: 10px 22px; background: var(--ink); color: var(--paper);
+    border: none; cursor: pointer;
+  }
+  #finish:disabled { opacity: .35; cursor: not-allowed; }
+  /* reveal stamps */
+  .stamp {
+    position: absolute; top: 10px; right: 14px;
+    border: 3px solid; border-radius: 6px;
+    padding: 2px 10px;
+    font-weight: 800; letter-spacing: 3px; font-size: 13px;
+    transform: rotate(-8deg);
+    mix-blend-mode: multiply;
+    animation: stampin .18s ease-out;
+    pointer-events: none;
+  }
+  .stamp.overreach { color: var(--red); border-color: var(--red); background: rgba(179,38,30,.07); }
+  .stamp.fine { color: var(--green); border-color: var(--green); background: rgba(31,111,53,.07); }
+  @keyframes stampin { from { transform: rotate(-8deg) scale(1.7); opacity: 0; } to { transform: rotate(-8deg) scale(1); opacity: 1; } }
+  .r-why { margin-top: 10px; font-size: 12.5px; background: #f2efe6; border: 1px solid var(--line); padding: 8px 10px; }
+  .r-why .rbadge { display: inline-block; font-weight: 700; background: var(--ink); color: var(--paper); padding: 1px 7px; margin-right: 6px; font-size: 11px; letter-spacing: 1px; }
+  .r-echo { margin-top: 6px; font-size: 12px; color: var(--muted); }
+  .r-echo::before { content: "on the record: "; font-weight: 700; color: #4d4a42; }
+  /* verdict + totals */
+  #verdict, #totals { display: none; }
+  #verdict.show, #totals.show { display: block; }
+  .score {
+    font-size: 20px; font-weight: 700; margin: 10px 0;
+  }
+  .score-sub { font-size: 13px; color: #3c3a34; margin: 4px 0; }
+  .totals-receipt {
+    width: 400px; max-width: 100%;
+    margin: 18px auto;
+    background: #fff;
+    border-top: 2px dashed #bbb;
+    border-bottom: 2px dashed #bbb;
+    padding: 18px 22px;
+    font-size: 13px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+  }
+  .totals-receipt .thead { text-align: center; font-weight: 800; letter-spacing: 2px; margin-bottom: 4px; }
+  .totals-receipt .tsub { text-align: center; color: var(--muted); font-size: 11px; margin-bottom: 12px; }
+  .trow { display: flex; justify-content: space-between; gap: 8px; margin: 3px 0; }
+  .trow .dots { flex: 1; border-bottom: 1px dotted #999; margin-bottom: 4px; }
+  .trow.total { border-top: 1px solid #333; margin-top: 10px; padding-top: 6px; font-weight: 800; font-size: 15px; }
+  .tline { margin: 10px 0 0; font-size: 12px; color: #3c3a34; }
+  .again {
+    display: block; margin: 18px auto 0;
+    font-family: inherit; font-size: 13px; letter-spacing: 1px;
+    padding: 9px 18px; background: transparent; border: 2px solid var(--ink); cursor: pointer;
+  }
+  footer {
+    margin-top: 48px; padding: 18px 0 42px;
+    border-top: 1px solid var(--ink);
+    font-size: 11.5px; color: var(--muted);
+  }
+  footer a { color: var(--muted); }
+  .missed { color: var(--red); font-weight: 700; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>&#129534; The Receipts Audit</h1>
+  <p class="subtitle">14 receipts. 6 rules. One morning.</p>
+  <div class="landing" id="landing"></div>
+</header>
+
+<main class="wrap">
+  <section id="brief">
+    <h2>The morning brief (what you asked)</h2>
+    <div class="brief" id="briefList"></div>
+  </section>
+
+  <section id="rulesec">
+    <h2>The rulebook (you grade against this)</h2>
+    <div class="rules" id="ruleList"></div>
+  </section>
+
+  <section id="streamsec">
+    <h2>The receipts (stamp every one)</h2>
+    <div id="stream"></div>
+  </section>
+
+  <div class="finishbar">
+    <span id="count">0/14 audited</span>
+    <button id="finish" disabled>Finish the audit</button>
+  </div>
+
+  <section id="verdict">
+    <h2>Your audit</h2>
+    <div class="score" id="score"></div>
+    <p class="score-sub" id="scoreSub"></p>
+    <p class="score-sub" id="missedSub"></p>
+  </section>
+
+  <section id="totals">
+    <h2>The session totals</h2>
+    <div class="totals-receipt" id="totalsSlip"></div>
+    <button class="again" id="again">Audit it again</button>
+  </section>
+
+  <footer>
+    <p>The six rules are distilled from a voice-agent authority threat model: identity versus authority, speculative execution on state-changing actions, and per-action provenance. Real-world echoes in the reveal are drawn from the 2026 personal-agent incidents (unsolicited purchasing, private messages read, dossier building, a leaked home address) and from the research record: S2A survey, arXiv:2610.15390; Heartbeat Thinking, arXiv:2610.26233.</p>
+    <p>Verdicts are mechanical: every overreach cites exactly one published rule. The rulebook is on the table before the first stamp. Companion pieces: <a href="https://huggingface.co/spaces/iamdgarcia/conversation-autopsy">conversation-autopsy</a> (can you trust the transcript?) and <a href="https://huggingface.co/spaces/iamdgarcia/the-four-endings">the-four-endings</a> (the four ways a conversation ends). Built by iamdgarcia. <a href="https://github.com/iamdgarcia/trace2grammar">Code</a>.</p>
+  </footer>
+</main>
+
+<noscript><p style="padding:20px">This audit needs JavaScript: the whole thing runs in your browser, nothing is sent anywhere.</p></noscript>
+<script src="receipts_data.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.RECEIPTS_DATA;
+  var KEY = "agent-receipts-v1";
+  var receipts = D.receipts.filter(function (r) { return r.verdict !== "divider"; });
+  var N = receipts.length;
+  var answers = load();
+  var revealed = false;
+
+  function load() {
+    try { var a = JSON.parse(localStorage.getItem(KEY)); return (a && typeof a === "object") ? a : {}; }
+    catch (e) { return {}; }
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(answers)); } catch (e) {} }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function eur(n) { return "&euro;" + n.toFixed(2); }
+  function ruleById(id) {
+    for (var i = 0; i < D.rules.length; i++) if (D.rules[i].id === id) return D.rules[i];
+    return null;
+  }
+
+  // landing (explains itself: what you learn, what you do)
+  document.getElementById("landing").innerHTML =
+    '<p><strong>What you will learn:</strong> ' + D.meta.landing_learn + '</p>' +
+    '<p><strong>What you do:</strong> ' + D.meta.landing_do + '</p>';
+
+  // brief
+  var bl = document.getElementById("briefList");
+  D.morning.forEach(function (t) {
+    var d = document.createElement("div");
+    d.className = "task" + (t.revoked ? " revoked" : "");
+    d.innerHTML = '<span class="tid">' + esc(t.id) + ' &middot; ' + esc(t.time) + '</span><span>' + t.text + '</span>';
+    bl.appendChild(d);
+  });
+
+  // rules
+  var rl = document.getElementById("ruleList");
+  D.rules.forEach(function (r) {
+    var d = document.createElement("div");
+    d.className = "rule";
+    d.innerHTML = '<span class="rid">' + esc(r.id) + '</span> <span class="rname">' + esc(r.name) + '</span><p>' + r.text + '</p>';
+    rl.appendChild(d);
+  });
+
+  // receipts
+  var stream = document.getElementById("stream");
+  var cards = {};
+  receipts.forEach(function (r, i) {
+    var div = D.receipts.indexOf(r) > 0 && D.receipts[D.receipts.indexOf(r) - 1].verdict === "divider";
+    if (div) {
+      var dv = document.createElement("div");
+      dv.className = "divider";
+      dv.textContent = "10:14 - YOU REVOKE EVERYTHING";
+      stream.appendChild(dv);
+    }
+    var c = document.createElement("div");
+    c.className = "receipt";
+    var amt = r.amount != null ? '<span class="r-amt">' + eur(r.amount) + '</span>' : "";
+    c.innerHTML =
+      '<div class="r-head"><span>RECEIPT ' + (i + 1) + ' OF ' + N + ' &middot; ' + esc(r.t) + '</span><span class="r-verb">' + esc(r.verb) + '</span></div>' +
+      '<div class="r-target">' + r.target + '</div>' +
+      '<div class="r-detail">' + r.detail + '</div>' +
+      (r.note ? '<div class="r-note">agent&rsquo;s note: &ldquo;' + esc(r.note) + '&rdquo;</div>' : "") +
+      '<div class="r-foot"><span class="r-src">source: ' + esc(r.source) + '</span>' + amt + '</div>' +
+      '<div class="r-btns">' +
+        '<button class="b-ok" data-i="' + i + '" aria-pressed="false">OK</button>' +
+        '<button class="b-no" data-i="' + i + '" aria-pressed="false">CONTEST</button>' +
+      '</div>';
+    stream.appendChild(c);
+    cards[i] = c;
+    c.querySelector(".b-ok").addEventListener("click", function () { stamp(i, "ok"); });
+    c.querySelector(".b-no").addEventListener("click", function () { stamp(i, "contest"); });
+  });
+
+  function stamp(i, val) {
+    if (revealed) return;
+    answers[i] = val;
+    save();
+    var c = cards[i];
+    c.querySelector(".b-ok").classList.toggle("sel", val === "ok");
+    c.querySelector(".b-no").classList.toggle("sel", val === "contest");
+    c.querySelector(".b-ok").setAttribute("aria-pressed", val === "ok" ? "true" : "false");
+    c.querySelector(".b-no").setAttribute("aria-pressed", val === "contest" ? "true" : "false");
+    updateCount();
+  }
+
+  function done() {
+    return receipts.filter(function (r, i) { return answers[i]; }).length;
+  }
+  function updateCount() {
+    document.getElementById("count").textContent = done() + "/" + N + " audited";
+    document.getElementById("finish").disabled = done() < N;
+  }
+
+  // restore prior answers
+  receipts.forEach(function (r, i) {
+    if (answers[i]) {
+      var c = cards[i];
+      c.querySelector(".b-ok").classList.toggle("sel", answers[i] === "ok");
+      c.querySelector(".b-no").classList.toggle("sel", answers[i] === "contest");
+      c.querySelector(".b-ok").setAttribute("aria-pressed", answers[i] === "ok" ? "true" : "false");
+      c.querySelector(".b-no").setAttribute("aria-pressed", answers[i] === "contest" ? "true" : "false");
+    }
+  });
+  updateCount();
+
+  document.getElementById("finish").addEventListener("click", reveal);
+
+  function reveal() {
+    if (revealed || done() < N) return;
+    revealed = true;
+    var correct = 0, caught = 0, falseAlarms = 0, missed = [];
+    receipts.forEach(function (r, i) {
+      var c = cards[i];
+      c.querySelector(".r-btns").style.display = "none";
+      var isOver = r.verdict === "overreach";
+      var contested = answers[i] === "contest";
+      var ok = contested === isOver;
+      if (ok) correct++; 
+      if (isOver && contested) caught++;
+      if (!isOver && contested) falseAlarms++;
+      if (isOver && !contested) missed.push(r);
+      var st = document.createElement("div");
+      st.className = "stamp " + (isOver ? "overreach" : "fine");
+      st.textContent = isOver ? "OVERREACH" : "WITHIN SCOPE";
+      c.appendChild(st);
+      var rule = r.rule ? ruleById(r.rule) : null;
+      var why = document.createElement("div");
+      why.className = "r-why";
+      why.innerHTML = (rule ? '<span class="rbadge">' + esc(rule.id) + " &middot; " + esc(rule.name).toUpperCase() + '</span>' : "") + r.why;
+      c.appendChild(why);
+      if (r.echo) {
+        var ec = document.createElement("div");
+        ec.className = "r-echo";
+        ec.innerHTML = r.echo;
+        c.appendChild(ec);
+      }
+    });
+    var you = document.getElementById("verdict");
+    you.classList.add("show");
+    document.getElementById("score").textContent = "You called it right on " + correct + " of " + N + " receipts.";
+    document.getElementById("scoreSub").textContent =
+      "Overreach caught: " + caught + " of 7. False alarms (you contested receipts that held up): " + falseAlarms + ".";
+    var ms = document.getElementById("missedSub");
+    if (missed.length) {
+      ms.innerHTML = '<span class="missed">The quiet ones you passed:</span> ' +
+        missed.map(function (r) { return esc(r.verb.toLowerCase() + " " + r.target.replace(/<[^>]+>/g, "")); }).join("; ") + ".";
+    } else {
+      ms.textContent = "You missed none. The agent did not get past you.";
+    }
+    // totals slip
+    var T = D.totals;
+    var rows = T.items.map(function (it) {
+      return '<div class="trow"><span>' + it.label + '</span><span class="dots"></span><span>' + eur(it.amount) + '</span></div>';
+    }).join("");
+    rows += '<div class="trow total"><span>Beyond instructions</span><span class="dots"></span><span>' + eur(T.beyondInstructions) + '</span></div>';
+    rows += '<div class="tline">MEMORIES WRITTEN BEYOND TASKS: ' + T.memories + '<br>DOCUMENTS FORWARDED: ' + T.documentsForwarded + '<br>ACTIONS AFTER REVOKE: ' + T.postRevokeExecutions + '</div>';
+    rows += '<div class="tline">AUDITOR: you &middot; ' + correct + "/" + N + ' calls correct</div>';
+    document.getElementById("totalsSlip").innerHTML =
+      '<div class="thead">SESSION TOTALS</div>' +
+      '<div class="tsub">agent session, Oct 26, 08:00 to 10:31</div>' + rows;
+    document.getElementById("totals").classList.add("show");
+    document.getElementById("finish").disabled = true;
+    you.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  document.getElementById("again").addEventListener("click", function () {
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>
