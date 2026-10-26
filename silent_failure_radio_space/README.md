@@ -10,11 +10,14 @@ colorTo: red
 
 # Silent Failure Radio 📻
 
-Every track is the **last thing an agent said** in a real conversation. Some of those
-conversations delivered; some didn't, and the agent closed politely anyway. Listen,
-vote DELIVERED or FAILED, and flip the card.
+**What you will learn here:** support agents that fail politely are invisible. QA reads the
+last line, sees gratitude, logs a success. In **1,980 real evaluated conversations**, tasks
+the environment marked FAILED ended in a polite close **more often** than tasks that passed
+(76.4% vs 66.8%): the closing phrase is a blind proxy on real agent runs.
 
-**The voice sounds identical on both sides. That is the point.**
+Every track is the **last thing an agent said** in one of those conversations. Some delivered;
+some didn't, and the agent closed politely anyway. Listen, vote DELIVERED or FAILED, and flip
+the card. **The voice sounds identical on both sides. That is the point.**
 
 ## What is on air
 
