@@ -186,7 +186,7 @@ async function ensureEngine(){
   eng.innerHTML = "loading neural voice\u2026 <div class='bar'><i></i></div>";
   const bar = eng.querySelector(".bar i");
   try {
-    tts = await K.KittenTTS.create({ model: "nano-int8", defaultVoice: currentVoice(), analytics: false },
+    tts = await K.KittenTTS.create({ model: "nano-int8", defaultVoice: currentVoice(), analytics: false, player: K.createBrowserAudioPlayer() },
       (p) => { if (bar) bar.style.width = Math.round(p * 100) + "%"; });
     engineReady = true;
     eng.innerHTML = "neural voice ready (cached for next visit)";
