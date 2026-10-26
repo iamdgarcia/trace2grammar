@@ -78,7 +78,12 @@ powering three Hugging Face Spaces: [Conversation Autopsy](https://iamdgarcia-co
 [The Four Endings](https://iamdgarcia-the-four-endings.static.hf.space)
 (chat with a scripted bot and speedrun the four endings — contained / abandoned / handoff /
 escape — with the same walker ruling the verdict live; `four_endings_space/`, engine in
-`game.js`, walker byte-identical to `autopsy_space/tau_port.js`).
+`game.js`, walker byte-identical to `autopsy_space/tau_port.js`) and
+[Silent Failure Radio](https://iamdgarcia-silent-failure-radio.static.hf.space)
+(a blind listening test: every track is the real final line of a real conversation; 33 failed closings,
+33 delivered; the voice sounds identical on both sides, which is exactly the
+*confident closing, silent failure* mode of section 5 made audible; `silent_failure_radio_space/`,
+voice = KittenTTS in-browser, verdicts = published walker).
 
 ## Supported formats (and how to add one)
 

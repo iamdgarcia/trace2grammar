@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silent Failure Radio</title>
+<style>
+  :root{
+    --bg:#161616; --card:#262626; --card2:#333333; --line:#393939;
+    --tx:#f4f4f4; --tx2:#c6c6c6; --tx3:#8d8d8d;
+    --red:#fa4d56; --green:#42be65; --blue:#78a9ff; --cyan:#3ddbd9; --yellow:#f1c21b;
+    font-size:16px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+    min-height:100vh;display:flex;flex-direction:column}
+  header{padding:1.4rem 1.6rem .6rem;max-width:1080px;margin:0 auto;width:100%}
+  .brand{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+  h1{margin:0;font-size:1.5rem;letter-spacing:.06em;font-weight:600}
+  .live{color:var(--red);font-size:.72rem;letter-spacing:.22em;font-weight:600}
+  .tag{color:var(--tx2);font-size:.92rem;margin-top:.45rem;max-width:62ch;line-height:1.45}
+  .tag b{color:var(--tx)}
+  main{flex:1;width:100%;max-width:1080px;margin:0 auto;padding:.6rem 1.6rem 2rem}
+  .deck{display:grid;grid-template-columns:1.15fr .85fr;gap:1rem}
+  @media (max-width:860px){.deck{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1.1rem 1.2rem}
+  .klabel{font-size:.68rem;letter-spacing:.18em;color:var(--tx3);text-transform:uppercase;margin-bottom:.6rem}
+  /* player */
+  #stage{min-height:210px;display:flex;flex-direction:column;justify-content:space-between;gap:1rem}
+  #trackhead{display:flex;align-items:center;gap:.8rem}
+  #playbtn{width:64px;height:64px;border-radius:50%;border:1px solid var(--line);
+    background:var(--card2);color:var(--tx);font-size:1.5rem;cursor:pointer;flex:none}
+  #playbtn:disabled{opacity:.45;cursor:default}
+  #playbtn:not(:disabled):hover{border-color:var(--blue)}
+  #trackmeta{color:var(--tx2);font-size:.9rem;line-height:1.5}
+  #trackmeta .corpus{color:var(--tx3);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+  #lyric{font-size:1.28rem;line-height:1.55;margin:.2rem 0 0;min-height:3.2em;color:var(--tx2)}
+  #lyric .w{transition:color .12s}
+  #lyric .w.on{color:var(--cyan)}
+  #lyric.confessed .w.on{color:var(--yellow)}
+  #lyric.bad .w{color:var(--tx3)}
+  #lyric.bad .w.on{color:var(--red)}
+  #lyric.good .w{color:var(--tx3)}
+  #lyric.good .w.on{color:var(--green)}
+  /* init progress */
+  #engine{color:var(--tx3);font-size:.85rem}
+  #engine .bar{height:4px;background:var(--card2);border-radius:2px;margin-top:.5rem;overflow:hidden}
+  #engine .bar i{display:block;height:100%;width:0%;background:var(--blue);transition:width .2s}
+  /* votes */
+  #votes{display:flex;gap:.7rem;margin-top:1rem}
+  #votes button{flex:1;padding:.85rem .5rem;font-size:.95rem;font-weight:600;cursor:pointer;
+    border-radius:3px;border:1px solid var(--line);background:var(--card2);color:var(--tx)}
+  #votes button:hover:not(:disabled){border-color:var(--tx3)}
+  #votes button:disabled{opacity:.4;cursor:default}
+  /* reveal */
+  #reveal{display:none}
+  #reveal .verdict{font-size:1.05rem;font-weight:600;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+  #reveal.hit .verdict{color:var(--green)}
+  #reveal.miss .verdict{color:var(--red)}
+  #reveal .truth{color:var(--tx2);font-size:.92rem;line-height:1.55}
+  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+  .chip{font-size:.72rem;letter-spacing:.06em;padding:.22rem .55rem;border:1px solid var(--line);
+    border-radius:10px;color:var(--tx2);background:var(--card2)}
+  .chip.warn{border-color:var(--red);color:var(--red)}
+  .chip.ok{border-color:var(--green);color:var(--green)}
+  #next{margin-top:1rem;width:100%;padding:.75rem;font-weight:600;cursor:pointer;border-radius:3px;
+    border:1px solid var(--line);background:transparent;color:var(--blue)}
+  #next:hover{border-color:var(--blue)}
+  /* side */
+  #score{font-size:2.1rem;font-weight:600;letter-spacing:.02em}
+  #score small{font-size:.85rem;color:var(--tx3);font-weight:400;display:block;margin-top:.2rem}
+  #history{margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.3rem}
+  #history span{width:16px;height:16px;border-radius:3px;background:var(--card2);border:1px solid var(--line)}
+  #history span.hit{background:var(--green);border-color:var(--green)}
+  #history span.miss{background:var(--red);border-color:var(--red)}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:.6rem}
+  .small{font-size:.78rem;color:var(--tx3);line-height:1.5}
+  label.dj{display:flex;gap:.45rem;align-items:center;margin-top:.9rem;color:var(--tx2);font-size:.85rem;cursor:pointer}
+  .voices{display:flex;gap:.4rem;margin-top:.9rem;flex-wrap:wrap}
+  .voices button{font-size:.75rem;padding:.3rem .6rem;border-radius:10px;cursor:pointer;
+    border:1px solid var(--line);background:var(--card2);color:var(--tx2)}
+  .voices button.on{border-color:var(--cyan);color:var(--cyan)}
+  footer{max-width:1080px;margin:0 auto;width:100%;padding:1rem 1.6rem 2.4rem;color:var(--tx3);font-size:.8rem;line-height:1.6}
+  footer a{color:var(--blue)}
+  #fallback{display:none;color:var(--yellow);font-size:.8rem;margin-top:.5rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><h1>SILENT FAILURE RADIO</h1><span class="live">&#9679; ON AIR</span></div>
+  <p class="tag">Every track is the <b>last thing an agent said</b> in a real conversation.
+  Some conversations delivered. Some didn't, and the agent closed politely anyway.
+  <b>Listen. Vote. Reveal.</b> The voice sounds identical on both sides. That is the point.</p>
+</header>
+<main>
+  <div class="deck">
+    <section class="card">
+      <div class="klabel">Now playing</div>
+      <div id="stage">
+        <div>
+          <div id="trackhead">
+            <button id="playbtn" title="Tune in">&#9654;</button>
+            <div id="trackmeta"><span class="corpus">station idle</span><br>Press tune in. A real goodbye, spoken by a 24&nbsp;MB neural voice running in your browser.</div>
+          </div>
+          <p id="lyric"></p>
+          <div id="fallback">engine unavailable here; using the browser system voice. The experiment survives the fallback: the closings are the data, not the voice.</div>
+        </div>
+        <div id="votes">
+          <button id="v-ok" disabled>DELIVERED</button>
+          <button id="v-fail" disabled>FAILED</button>
+        </div>
+        <div id="engine"></div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="klabel">Your score</div>
+      <div class="row"><div id="score">0 / 0<small>chance alone gets you 50%</small></div></div>
+      <div id="history"></div>
+      <label class="dj"><input type="checkbox" id="dj"> auto-DJ (keep the station playing)</label>
+      <div class="klabel" style="margin-top:1.1rem">Voice</div>
+      <div class="voices" id="voices"></div>
+      <p class="small" style="margin-top:1rem">You are hearing assistant <i>closings only</i>:
+      the walker (state machine over conversation form) already classified every episode.
+      The reveal tells you what the transcript alone cannot.</p>
+    </section>
+  </div>
+
+  <section class="card" id="reveal" style="margin-top:1rem">
+    <div class="verdict"><span id="r-ico"></span><span id="r-verdict"></span></div>
+    <div class="truth" id="r-truth"></div>
+    <div class="chips" id="r-chips"></div>
+    <button id="next">next track &#9654;</button>
+  </section>
+</main>
+<footer id="prov"></footer>
+
+<script src="kittentts-web.js"></script>
+<script src="station_data.js"></script>
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+const K = window.KittenTTSWeb;
+const TRACKS = STATION.tracks;
+
+/* ---------- deck ---------- */
+let deck = [];
+let pos = -1;
+let track = null;
+let played = null;
+let voted = false;
+let hits = 0, total = 0;
+let tts = null, engineReady = false, usedFallback = false;
+let result = null, timer = null;
+
+function reshuffle(){
+  deck = TRACKS.map((t, i) => i);
+  for (let i = deck.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
+  pos = -1;
+}
+function nextTrack(){
+  if (pos + 1 >= deck.length) reshuffle();
+  pos += 1;
+  track = TRACKS[deck[pos]];
+  voted = false;
+  result = null;
+  stopHighlight();
+  $("v-ok").disabled = false;
+  $("v-fail").disabled = false;
+  $("reveal").style.display = "none";
+  $("lyric").className = "";
+  $("lyric").textContent = "\u2026";
+  $("trackmeta").innerHTML = "<span class='corpus'>track " + (pos + 1) + " / " + deck.length
+    + "</span><br>" + (track.prev ? "\u2026user said: \u201C" + esc(track.prev) + "\u201D" : "a real closing line, nothing else.");
+}
+
+/* ---------- engine ---------- */
+async function ensureEngine(){
+  if (engineReady) return true;
+  const eng = $("engine");
+  eng.innerHTML = "loading neural voice\u2026 <div class='bar'><i></i></div>";
+  const bar = eng.querySelector(".bar i");
+  try {
+    tts = await K.KittenTTS.create({ model: "nano-int8", defaultVoice: currentVoice(), analytics: false },
+      (p) => { if (bar) bar.style.width = Math.round(p * 100) + "%"; });
+    engineReady = true;
+    eng.innerHTML = "neural voice ready (cached for next visit)";
+    return true;
+  } catch (e) {
+    usedFallback = true;
+    eng.innerHTML = "";
+    $("fallback").style.display = "block";
+    return true; // fallback path still plays
+  }
+}
+function currentVoice(){ return window._voice || "bella"; }
+
+async function play(){
+  if (!track) return;
+  $("playbtn").disabled = true;
+  const ok = await ensureEngine();
+  if (!ok) { $("playbtn").disabled = false; return; }
+  const line = track.line;
+  $("lyric").textContent = "";
+  $("lyric").className = "";
+  try {
+    if (usedFallback || !tts) {
+      speechSynthesisSpeak(line, () => { $("playbtn").disabled = false; maybeAutoNext(); });
+      karaokeTimed(line, null);
+    } else {
+      result = await tts.generate(line, { voice: currentVoice() });
+      const words = (result.wordTimings || []).slice().sort((a, b) => a.wordIndex - b.wordIndex);
+      await tts.play(result, {
+        onPlaybackStart: () => {
+          startHighlight(words, line);
+        },
+      });
+      $("playbtn").disabled = false;
+      maybeAutoNext();
+    }
+  } catch (e) {
+    $("playbtn").disabled = false;
+    $("lyric").textContent = line; // never lose the line to a playback bug
+  }
+}
+
+/* auto-DJ: advance when a line ends without a vote */
+function maybeAutoNext(){
+  if ($("dj").checked && !voted){
+    setTimeout(() => { if ($("dj").checked && !voted){ nextTrack(); play(); } }, 1500);
+  }
+}
+
+/* speechSynthesis fallback with timed karaoke (approximate) */
+function speechSynthesisSpeak(text, done){
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 1.0;
+    u.onend = () => { done && done(); };
+    u.onerror = () => { done && done(); };
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  } catch (e) { done && done(); }
+}
+
+/* ---------- karaoke ---------- */
+function renderLyric(words, text){
+  const el = $("lyric");
+  el.classList.remove("bad", "good"); // reveal state decides later
+  if (!words || !words.length){ el.textContent = text; return; }
+  el.innerHTML = words.map(w => "<span class='w'>" + esc(w.word) + "</span>").join(" ");
+}
+function startHighlight(words, text){
+  stopHighlight();
+  renderLyric(words, text);
+  if (!words || !words.length) return;
+  const spans = $("lyric").querySelectorAll(".w");
+  const t0 = Date.now();
+  timer = setInterval(() => {
+    const s = (Date.now() - t0) / 1000;
+    let active = null;
+    for (const w of words){ if (s >= w.startTime && s < w.endTime){ active = w; break; } }
+    spans.forEach((sp, i) => sp.classList.toggle("on", active ? i === active.wordIndex : false));
+  }, 60);
+}
+function karaokeTimed(text, _null){
+  /* fallback voice: highlight by word count over an estimated duration */
+  stopHighlight();
+  const words = text.split(/\s+/).map((w, i) => ({ word: w, wordIndex: i, startTime: i * 0.32, endTime: (i + 1) * 0.32 }));
+  startHighlight(words, text);
+}
+function stopHighlight(){
+  if (timer){ clearInterval(timer); timer = null; }
+}
+function esc(s){
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+/* ---------- vote & reveal ---------- */
+function vote(cat){
+  if (voted || !track) return;
+  voted = true;
+  stopHighlight();
+  const truth = track.cat;
+  const hit = cat === truth;
+  total += 1;
+  if (hit) hits += 1;
+  const rev = $("reveal");
+  rev.style.display = "block";
+  rev.className = "card " + (hit ? "hit" : "miss");
+  $("r-ico").textContent = hit ? "\u2713" : "\u2717";
+  $("r-verdict").textContent = (hit ? "You heard it right. " : "You missed it. ")
+    + "This one " + (truth === "failed" ? "FAILED." : "was DELIVERED.");
+  const lyric = $("lyric");
+  lyric.classList.add(truth === "failed" ? "bad" : "good");
+  const chips = [];
+  if (track.corpus === "tau"){
+    chips.push(track.truth);
+    chips.push("walker verdict: theta_cont (contained: polite close)");
+    if (track.model) chips.push("model: " + track.model);
+    if (track.dom) chips.push("domain: " + track.dom);
+    if ((track.D || 0) >= 2) chips.push("retry depth D=" + track.D + " (early-warning territory)");
+    if (track.task !== null && track.task !== undefined) chips.push("task_id " + track.task);
+  } else {
+    chips.push(track.truth);
+    if (track.cat === "failed") chips.push("walker verdict: contained anyway");
+  }
+  if (played === null) played = 0;
+  played += 1;
+  $("r-chips").innerHTML = chips.map((c, i) =>
+    "<span class='chip " + (i === 0 ? (truth === "failed" ? "warn" : "ok") : "") + "'>" + esc(c) + "</span>").join("");
+  paintScore();
+  if ($("dj").checked){ setTimeout(() => { if ($("dj").checked){ nextTrack(); play(); } }, 3200); }
+}
+function paintScore(){
+  const pct = total ? Math.round(100 * hits / total) : null;
+  $("score").innerHTML = hits + " / " + total
+    + "<small>" + (pct === null ? "chance alone gets you 50%"
+    : (pct + "% (chance: 50%). The walker's early-warning signal separates them at 61.2% vs 40.6%.")) + "</small>";
+  const h = $("history");
+  h.innerHTML = historyDots();
+}
+let historyArr = [];
+const _origVote = vote;
+vote = function(cat){ const before = total; _origVote(cat); historyArr.push(cat === track.cat); paintScore(); };
+function historyDots(){ return historyArr.map(x => "<span class='" + (x ? "hit" : "miss") + "'></span>").join(""); }
+
+/* ---------- voices ---------- */
+function paintVoices(){
+  const box = $("voices");
+  const ids = ["bella", "luna", "bruno", "leo"];
+  box.innerHTML = "";
+  ids.forEach(v => {
+    const b = document.createElement("button");
+    b.textContent = v;
+    b.className = v === currentVoice() ? "on" : "";
+    b.onclick = () => { window._voice = v; paintVoices(); };
+    box.appendChild(b);
+  });
+}
+
+/* ---------- provenance ---------- */
+function paintProv(){
+  const c = STATION.counts;
+  $("prov").innerHTML =
+    "<b>Silent Failure Radio</b> is built on the <i>closure != delivery</i> seam of the trace2grammar paper. "
+    + c.tracks + " tracks: " + c.failed + " failed closings and " + c.delivered + " delivered ones, sampled with seed "
+    + STATION.seed + ". <b>Failed (tau-bench)</b>: official eval runs with reward 0.0 that still ended in a polite close "
+    + "(walker outcome theta_cont); retry depth D&gt;=2 goes first. <b>Failed (SGD)</b>: the agent textually confessed the failure and still said goodbye. "
+    + "<b>Delivered</b>: reward &gt; 0 (tau) / effective service call (SGD), same polite shape. "
+    + "Verdicts come from the published walker, byte-identical to the one in <a href='https://iamdgarcia-conversation-autopsy.static.hf.space/'>Conversation Autopsy</a>; "
+    + "the space atlas of the same episodes lives at <a href='https://iamdgarcia-where-conversations-die.static.hf.space/'>Where Conversations Die</a>. "
+    + "Voice: KittenTTS (nano-int8, Apache-2.0) running locally in your browser via ONNX Runtime Web; no text leaves the page. "
+    + "The point is not the voice. The point is that you cannot hear the difference; a small semantic detector can.";
+}
+
+/* ---------- wire ---------- */
+$("playbtn").onclick = play;
+$("v-ok").onclick = () => vote("delivered");
+$("v-fail").onclick = () => vote("failed");
+$("next").onclick = () => { nextTrack(); play(); };
+$("dj").onchange = () => { if ($("dj").checked && !voted && track && !$("playbtn").disabled) play(); };
+
+paintVoices();
+paintProv();
+paintScore();
+reshuffle();
+nextTrack();
+</script>
+</body>
+</html>
