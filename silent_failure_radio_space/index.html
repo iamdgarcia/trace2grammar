@@ -68,6 +68,9 @@
   #next{margin-top:1rem;width:100%;padding:.75rem;font-weight:600;cursor:pointer;border-radius:3px;
     border:1px solid var(--line);background:transparent;color:var(--blue)}
   #next:hover{border-color:var(--blue)}
+  .ledger{display:none;margin-top:.9rem;padding:.7rem .8rem;background:var(--card2);border:1px solid var(--line);
+    border-radius:3px;font-family:"IBM Plex Mono","Consolas",monospace;font-size:.78rem;line-height:1.7;color:var(--tx2)}
+  .ledger b{color:var(--tx3);font-weight:500}
   /* side */
   #score{font-size:2.1rem;font-weight:600;letter-spacing:.02em}
   #score small{font-size:.85rem;color:var(--tx3);font-weight:400;display:block;margin-top:.2rem}
@@ -132,6 +135,7 @@
     <div class="verdict"><span id="r-ico"></span><span id="r-verdict"></span></div>
     <div class="truth" id="r-truth"></div>
     <div class="chips" id="r-chips"></div>
+    <div id="r-ledger" class="ledger" style="display:none"></div>
     <div id="r-mach" class="small" style="display:none;margin-top:.7rem;color:var(--cyan)"></div>
     <button id="next">next track &#9654;</button>
   </section>
@@ -349,6 +353,11 @@ function vote(cat){
   played += 1;
   $("r-chips").innerHTML = chips.map((c, i) =>
     "<span class='chip " + (i === 0 ? (truth === "failed" ? "warn" : "ok") : "") + "'>" + esc(c) + "</span>").join("");
+  const led = $("r-ledger");
+  led.style.display = "block";
+  led.innerHTML = "<b>you asked:</b> " + esc(track.ask || "(not captured)")
+    + "<br><b>what the tools delivered:</b> " + (track.ledger && track.ledger.length ? esc(track.ledger.join("  \u00b7  ")) : "(nothing recorded)")
+    + "<br><b>the goodbye you heard:</b> \u201C" + esc(track.line) + "\u201D";
   showMachine(track);
   paintScore();
   if ($("dj").checked){ setTimeout(() => { if ($("dj").checked){ nextTrack(); play(); } }, 3200); }

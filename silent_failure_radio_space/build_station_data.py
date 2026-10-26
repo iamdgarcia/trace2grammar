@@ -48,13 +48,17 @@ def speech_ok(t):
 
 
 def final_lines(txt):
-    alines, ulines = [], []
+    alines, ulines, tools = [], [], []
     for l in txt.splitlines():
         if l.startswith("assistant:"):
             alines.append(l[len("assistant:"):].strip())
         elif l.startswith("user:"):
             ulines.append(l[len("user:"):].strip())
-    return alines, ulines
+        elif l.startswith("tool("):
+            m = re.match(r"tool\(([^)]+)\):\s*(ok|error|call)", l)
+            if m and m.group(2) in ("ok", "error"):
+                tools.append(m.group(1) + " " + m.group(2))
+    return alines, ulines, tools
 
 
 def main():
@@ -78,7 +82,7 @@ def main():
         if not os.path.exists(p):
             continue
         txt = open(p, encoding="utf-8").read()
-        alines, ulines = final_lines(txt)
+        alines, ulines, tlines = final_lines(txt)
         if not alines:
             continue
         line = clean(alines[-1])
@@ -88,6 +92,8 @@ def main():
         out.append({
             "id": e["id"], "corpus": "tau", "cat": cat,
             "line": line, "prev": prev[:140],
+            "ask": clean(ulines[0])[:160] if ulines else "",
+            "ledger": tlines[:8],
             "model": e.get("model"), "dom": e.get("domain"),
             "D": e.get("D", 0), "n": e.get("n_states"),
             "walk": e.get("walk", [])[-6:],
@@ -114,7 +120,7 @@ def main():
     for did, cat in ([(d, "failed") for d in sgd_fail]
                      + [(d, "delivered") for d in rng.sample(sgd_good, min(15, len(sgd_good)))]):
         txt = open(os.path.join(SGD_TX, did + ".txt"), encoding="utf-8").read()
-        alines, ulines = final_lines(txt)
+        alines, ulines, tlines = final_lines(txt)
         if not alines:
             continue
         line = clean(alines[-1])
@@ -124,6 +130,8 @@ def main():
         out.append({
             "id": did, "corpus": "sgd", "cat": cat,
             "line": line, "prev": prev[:140],
+            "ask": clean(ulines[0])[:160] if ulines else "",
+            "ledger": tlines[:8],
             "model": None, "dom": "SGD",
             "D": None, "n": None, "walk": [], "task": None,
             "truth": "the agent itself said the task failed mid-conversation, then said goodbye nicely"
