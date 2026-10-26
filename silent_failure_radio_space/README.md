@@ -34,12 +34,16 @@ the card. **The voice sounds identical on both sides. That is the point.**
 
 ## Why it matters
 
-The closing phrase is what dashboards, logs and QA reviews actually see. On real agent
-runs the proxy's sign **inverts**: PASSED episodes close politely 66.8% of the time,
-FAILED episodes 76.4% (*closure != delivery*). This station makes the failure mode of
-the trace2grammar paper — **confident closing, silent failure** — audible.
+Support agents that fail politely are invisible: dashboards and QA read the goodbye and
+log a success. On real agent runs the proxy's sign **inverts**: PASSED episodes close
+politely 66.8% of the time, FAILED episodes 76.4% (*closure != delivery*). This station
+makes that failure mode audible.
 
-The verdicts come from the published walker (byte-identical to
+**The machine bets too.** After your vote, the same detector the paper locked (MiniLM
+farewell centroid, threshold 0.3) runs in your browser and shows what it saw: the
+closing was detected, the walker ruled *contained*... and the task still failed. Form
+was never in doubt. Delivery is the question. The verdicts come from the published
+walker (byte-identical to
 [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space/));
 the behavior plane of the same episodes is
 [Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space/).

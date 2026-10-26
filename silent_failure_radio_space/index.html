@@ -131,6 +131,7 @@
     <div class="verdict"><span id="r-ico"></span><span id="r-verdict"></span></div>
     <div class="truth" id="r-truth"></div>
     <div class="chips" id="r-chips"></div>
+    <div id="r-mach" class="small" style="display:none;margin-top:.7rem;color:var(--cyan)"></div>
     <button id="next">next track &#9654;</button>
   </section>
 </main>
@@ -313,6 +314,7 @@ function vote(cat){
   played += 1;
   $("r-chips").innerHTML = chips.map((c, i) =>
     "<span class='chip " + (i === 0 ? (truth === "failed" ? "warn" : "ok") : "") + "'>" + esc(c) + "</span>").join("");
+  showMachine(track);
   paintScore();
   if ($("dj").checked){ setTimeout(() => { if ($("dj").checked){ nextTrack(); play(); } }, 3200); }
 }
@@ -356,6 +358,56 @@ function paintProv(){
     + "the space atlas of the same episodes lives at <a href='https://iamdgarcia-where-conversations-die.static.hf.space/'>Where Conversations Die</a>. "
     + "Voice: KittenTTS (nano-int8, Apache-2.0) running locally in your browser via ONNX Runtime Web; no text leaves the page. "
     + "The point is not the voice. The point is that you cannot hear the difference; a small semantic detector can.";
+}
+
+/* ---------- the machine (H2 detector, in-browser) ---------- */
+/* Same mechanism as the paper's locked Tier-B: MiniLM-L6-v2, mean pooling,
+   L2-normalized, cosine vs the 354-seed S2 centroid, threshold 0.3, final
+   line only. Centroid shipped precomputed (station_detector.js). */
+let extractor = null, detLoading = false, simCache = {};
+function loadDetector(onProgress){
+  if (extractor) return Promise.resolve(extractor);
+  if (detLoading) return Promise.reject(new Error('already loading'));
+  detLoading = true;
+  return import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3')
+    .then(function (mod) {
+      mod.env.allowLocalModels = false;
+      return mod.pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {
+        dtype: 'q8',
+        progress_callback: function (p) {
+          if (onProgress && p.status === 'progress' && p.total)
+            onProgress(Math.min(99, Math.round(100 * p.loaded / p.total)));
+        }
+      });
+    })
+    .then(function (pipe) { extractor = pipe; return pipe; })
+    .finally(function () { detLoading = false; });
+}
+function lineSim(line){
+  if (simCache[line] !== undefined) return Promise.resolve(simCache[line]);
+  return loadDetector().then(function (pipe) {
+    return pipe(line, { pooling: 'mean', normalize: true }).then(function (out) {
+      const v = new Float32Array(out.data);
+      let dot = 0;
+      for (let i = 0; i < DETECTOR.centroid.length; i++) dot += v[i] * DETECTOR.centroid[i];
+      simCache[line] = dot;
+      return dot;
+    });
+  });
+}
+function showMachine(track){
+  const box = $("r-mach");
+  box.style.display = "block";
+  box.textContent = "the machine (H2 detector, loading in your browser\u2026)";
+  lineSim(track.line).then(function (sim) {
+    const close = sim >= DETECTOR.threshold;
+    box.textContent = "the machine (H2 detector, in-browser): sim " + sim.toFixed(2)
+      + (close
+        ? " \u2265 0.30 \u2192 close detected \u2192 the walker rules CONTAINED. The form was never in doubt."
+        : " \u2192 missed this closing (tau farewells sit outside its calibration domain; on SGD it recalls 99.2%).");
+  }).catch(function () {
+    box.textContent = "the machine: detector unavailable here; the walker's verdict stands.";
+  });
 }
 
 /* ---------- wire ---------- */
