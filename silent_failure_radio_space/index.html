@@ -357,7 +357,7 @@ function paintProv(){
     + "Verdicts come from the published walker, byte-identical to the one in <a href='https://iamdgarcia-conversation-autopsy.static.hf.space/'>Conversation Autopsy</a>; "
     + "the space atlas of the same episodes lives at <a href='https://iamdgarcia-where-conversations-die.static.hf.space/'>Where Conversations Die</a>. "
     + "Voice: KittenTTS (nano-int8, Apache-2.0) running locally in your browser via ONNX Runtime Web; no text leaves the page. "
-    + "The point is not the voice. The point is that you cannot hear the difference; a small semantic detector can.";
+    + "The point is not the voice. You cannot hear the difference because the closing does not carry it: nothing in the audio separates delivered from failed. The signal lives earlier (retry depth) and outside the audio (tool results).";
 }
 
 /* ---------- the machine (H2 detector, in-browser) ---------- */
@@ -398,14 +398,22 @@ function lineSim(line){
 function showMachine(track){
   const box = $("r-mach");
   box.style.display = "block";
-  box.textContent = "the machine (H2 detector, loading in your browser\u2026)";
+  box.textContent = "the machine (H2 detector, loading in your browser\u2026 ~23 MB, once)";
+  let settled = false;
+  const slow = setTimeout(function () {
+    if (!settled) box.textContent = "the machine (H2 detector): still downloading (~23 MB, cached for next visit)\u2026";
+  }, 30000);
   lineSim(track.line).then(function (sim) {
+    settled = true;
+    clearTimeout(slow);
     const close = sim >= DETECTOR.threshold;
     box.textContent = "the machine (H2 detector, in-browser): sim " + sim.toFixed(2)
       + (close
         ? " \u2265 0.30 \u2192 close detected \u2192 the walker rules CONTAINED. The form was never in doubt."
         : " \u2192 missed this closing (tau farewells sit outside its calibration domain; on SGD it recalls 99.2%).");
   }).catch(function () {
+    settled = true;
+    clearTimeout(slow);
     box.textContent = "the machine: detector unavailable here; the walker's verdict stands.";
   });
 }
