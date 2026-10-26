@@ -200,32 +200,64 @@ async function ensureEngine(){
 }
 function currentVoice(){ return window._voice || "bella"; }
 
+function status(msg, isErr){
+  const el = $("engine");
+  el.textContent = msg;
+  el.style.color = isErr ? "var(--red)" : "";
+}
+
 async function play(){
   if (!track) return;
   $("playbtn").disabled = true;
-  const ok = await ensureEngine();
-  if (!ok) { $("playbtn").disabled = false; return; }
-  const line = track.line;
-  $("lyric").textContent = "";
-  $("lyric").className = "";
   try {
+    await ensureEngine();
+    const line = track.line;
+    $("lyric").textContent = "";
+    $("lyric").className = "";
     if (usedFallback || !tts) {
+      status("playing via system voice (fallback)");
       speechSynthesisSpeak(line, () => { $("playbtn").disabled = false; maybeAutoNext(); });
       karaokeTimed(line, null);
-    } else {
-      result = await tts.generate(line, { voice: currentVoice() });
-      const words = (result.wordTimings || []).slice().sort((a, b) => a.wordIndex - b.wordIndex);
-      await tts.play(result, {
-        onPlaybackStart: () => {
-          startHighlight(words, line);
-        },
-      });
-      $("playbtn").disabled = false;
-      maybeAutoNext();
+      return;
     }
-  } catch (e) {
+    status("generating audio\u2026");
+    result = await tts.generate(line, { voice: currentVoice() });
+    const arr = result.audio ?? result.samples;
+    const n = arr ? arr.length : 0;
+    let mx = 0;
+    if (arr) for (let i = 0; i < arr.length; i++){ const a = Math.abs(arr[i]); if (a > mx) mx = a; }
+    const dur = result.sampleRate ? (n / result.sampleRate).toFixed(2) : "?";
+    if (!n || mx < 0.001) {
+      status("engine returned " + (n ? "SILENT" : "EMPTY") + " audio (" + dur + "s, peak " + mx.toFixed(4) + "); using system voice", true);
+      usedFallback = true;
+      speechSynthesisSpeak(line, () => { $("playbtn").disabled = false; maybeAutoNext(); });
+      karaokeTimed(line, null);
+      return;
+    }
+    status("audio " + dur + "s (peak " + mx.toFixed(3) + "), playing\u2026");
+    const words = (result.wordTimings || []).slice().sort((a, b) => a.wordIndex - b.wordIndex);
+    const watchdog = setTimeout(function () {
+      status("no sound after 20s: the browser is likely blocking audio; click play once more", true);
+    }, 20000);
+    try {
+      await tts.play(result, { onPlaybackStart: () => { startHighlight(words, line); } });
+      clearTimeout(watchdog);
+      status("done \u2014 vote below");
+    } catch (err) {
+      clearTimeout(watchdog);
+      throw err;
+    }
     $("playbtn").disabled = false;
-    $("lyric").textContent = line; // never lose the line to a playback bug
+    maybeAutoNext();
+  } catch (e) {
+    const msg = e && e.message ? e.message : String(e);
+    if (/NotAllowed|autoplay|gesture|permission/i.test(msg)) {
+      status("PLAYBACK BLOCKED by the browser. Click play once more; the first interaction grants audio permission.", true);
+    } else {
+      status("ERROR: " + msg, true);
+    }
+    $("playbtn").disabled = false;
+    $("lyric").textContent = track ? track.line : "";
   }
 }
 
