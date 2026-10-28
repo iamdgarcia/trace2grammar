@@ -299,10 +299,13 @@
   function sx(x) { return PAD + (x - bounds.x0) / (bounds.x1 - bounds.x0) * (W - 2 * PAD); }
   function sy(y) { return H - PAD - (y - bounds.y0) / (bounds.y1 - bounds.y0) * (H - 2 * PAD); }
 
+  // discrete ramp: one color per D value PRESENT in the corpus (D=7/8 don't occur).
+  // Mass-critical boundary D0 (68%) vs D1 (22%) is separated by hue (gray vs blue),
+  // not just lightness — the linear ramp spent its range on the 2.4% with D>=3.
+  var DEPTH_RAMP = { 0: '#c1c7cd', 1: '#a6c8ff', 2: '#78a9ff', 3: '#4589ff',
+    4: '#0f62fe', 5: '#0043ce', 6: '#002d9c', 9: '#001141' };
   function depthColor(d) {
-    var t = Math.min(1, d / 9);
-    var a = [0xc1, 0xc7, 0xcd], b = [0x0f, 0x62, 0xfe];
-    return 'rgb(' + a.map(function (v, i) { return Math.round(v + (b[i] - v) * t); }).join(',') + ')';
+    return DEPTH_RAMP[d] || '#001141';
   }
   function pointColor(p) {
     if (state.colorBy === 'domain') return COLORS.domain[p.domain] || '#525252';
@@ -347,10 +350,10 @@
     var el = document.getElementById('legend');
     var items = [];
     if (state.colorBy === 'depth') {
-      items.push('<span><i style="background:' + depthColor(0) + '"></i>D=0</span>');
-      items.push('<span><i style="background:' + depthColor(3) + '"></i>D=3</span>');
-      items.push('<span><i style="background:' + depthColor(9) + '"></i>D=9 (max)</span>');
-      items.push('<span>cycle depth: regression transitions per run</span>');
+      Object.keys(DEPTH_RAMP).forEach(function (k) {
+        items.push('<span><i style="background:' + DEPTH_RAMP[k] + '"></i>D=' + k + '</span>');
+      });
+      items.push('<span>cycle depth: regression transitions per run (D=7/8 absent from this corpus)</span>');
     } else {
       var c = COLORS[state.colorBy];
       Object.keys(c).forEach(function (k) {
