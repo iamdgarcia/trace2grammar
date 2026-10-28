@@ -50,7 +50,7 @@ leak anymore, your injection line goes to the model, and the audit check scans w
 
 Sister instruments: [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space)
 (paste your own transcript and watch where it died) ·
-[Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space)
+[Trajectory Grammar Atlas](https://iamdgarcia-trajectory-grammar-atlas.static.hf.space)
 (the atlas of untested conversation behavior).
 
 Built by [iamdgarcia](https://huggingface.co/iamdgarcia) — realtime voice agent engineer.

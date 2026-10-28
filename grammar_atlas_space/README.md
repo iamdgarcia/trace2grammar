@@ -10,7 +10,7 @@ colorTo: blue
 
 # Trajectory Grammar Atlas 🗺️
 
-**▶ Try it live:** https://iamdgarcia-where-conversations-die.static.hf.space
+**▶ Try it live:** https://iamdgarcia-trajectory-grammar-atlas.static.hf.space
 
 **Code on GitHub:** https://github.com/iamdgarcia/trace2grammar
 

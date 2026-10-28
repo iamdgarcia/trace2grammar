@@ -30,7 +30,7 @@ against the Python implementation on 585 transcripts** (the repo's sample set pl
 crafted edge cases: handoff tools, tool errors, continuation lines, no-terminal closes).
 
 Related research: the walker is the same instrument that powers
-[where-conversations-die](https://iamdgarcia-where-conversations-die.static.hf.space)
+[trajectory-grammar-atlas](https://iamdgarcia-trajectory-grammar-atlas.static.hf.space)
 (the latent-space atlas of untested conversation behavior) and the coverage grammar in
 the trace2trajectory paper.
 

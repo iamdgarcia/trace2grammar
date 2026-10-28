@@ -1,4 +1,4 @@
-# Build the data blob for the where-conversations-die Space.
+# Build the data blob for the trajectory-grammar-atlas Space.
 # Everything data-true: walks computed by the shipped extract(), PCA real-anchored,
 # grid+coverage by the shipped coverage(). The blob embeds the FULL transcripts so
 # the demo can show the conversation behind every point without a server.
@@ -75,7 +75,7 @@ blob = {
 }
 # ponytail: fixed absolute output path to the sibling Space build; move to config when a second consumer appears
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                   "where-conversations-die", "atlas_data.js")
+                   "trajectory-grammar-atlas", "atlas_data.js")
 os.makedirs(os.path.dirname(out), exist_ok=True)
 with open(out, "w", encoding="utf-8") as fh:
     fh.write("var ATLAS = ")

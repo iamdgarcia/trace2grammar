@@ -25,7 +25,7 @@ def edge_type(a: str, b: str) -> str:
 
 
 def main() -> int:
-    space = Path(sys.argv[1] if len(sys.argv) > 1 else Path(__file__).parent.parent / "where-conversations-die")
+    space = Path(sys.argv[1] if len(sys.argv) > 1 else Path(__file__).parent.parent / "trajectory-grammar-atlas")
     src = (space / "atlas_data.js").read_text(encoding="utf-8")
     blob = json.loads(src[src.index("=") + 1:].rstrip().rstrip(";"))
     real = [p for p in blob["points"] if p["kind"] == "real"]

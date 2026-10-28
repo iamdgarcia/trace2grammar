@@ -1,4 +1,4 @@
-# Re-anchor the where-conversations-die Space on REAL agent runs.
+# Re-anchor the trajectory-grammar-atlas Space on REAL agent runs.
 # Real = 1,980 official tau-bench episodes (gpt-4o + sonnet-3.5, airline+retail) via the
 # shipped extract(fmt='taubench'), untouched. Sim = the 60 production-shaped sim2 templates
 # (same set the sim2 wave shipped; labeled template-based in the copy). Same blob contract
@@ -19,7 +19,7 @@ from tb_to_events import to_extract_obj, strip_injected_terminal  # noqa: E402
 
 LBL = {"theta_cont": "contained", "theta_aban": "abandoned", "theta_hand": "handoff"}
 OUT_SPACE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                         "where-conversations-die")
+                         "trajectory-grammar-atlas")
 
 # ---- real: extract verbatim, walks + conversational verdict (no injected terminal) ----
 FILES = {

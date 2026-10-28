@@ -46,7 +46,7 @@ was never in doubt. Delivery is the question. The verdicts come from the publish
 walker (byte-identical to
 [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space/));
 the behavior plane of the same episodes is
-[Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space/).
+[Trajectory Grammar Atlas](https://iamdgarcia-trajectory-grammar-atlas.static.hf.space/).
 
 ## Voice
 
