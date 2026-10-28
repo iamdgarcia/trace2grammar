@@ -74,7 +74,9 @@ transcript (paste) ┘
 powering three Hugging Face Spaces: [Conversation Autopsy](https://iamdgarcia-conversation-autopsy.static.hf.space)
 (paste a conversation, watch where and why it died),
 [Where Conversations Die](https://iamdgarcia-where-conversations-die.static.hf.space)
-(the latent-space atlas of untested behavior) and
+(the trajectory-grammar atlas: a table of real conversations next to their 2D latent-space
+map, with the grammar of any selection induced live from its walks — `grammar.js`,
+verified by `smoke_grammar.js` + `check_parity_grammar.py`) and
 [The Four Endings](https://iamdgarcia-the-four-endings.static.hf.space)
 (chat with a scripted bot and speedrun the four endings — contained / abandoned / handoff /
 escape — with the same walker ruling the verdict live; `four_endings_space/`, engine in
