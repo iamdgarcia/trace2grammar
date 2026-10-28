@@ -96,6 +96,7 @@ voice = KittenTTS in-browser, verdicts = published walker).
 | **LangSmith API export** | `fmt='langsmith'` | `{runs: [{name, run_type, inputs, outputs, start_time, end_time, parent_run_id, error}]}` |
 | **tau-bench episode** | `fmt='taubench'` | `{task_id, reward, info, traj[]}` (single or list) from `historical_trajectories/*.json` — environment-verified outcome drives the terminal (pass→contained, fail→handoff as documented public analogue) |
 | **Plain transcript** | `fmt='transcript'` | pasted text: `assistant:`/`user:` lines, `tool(name): ok|error <msg>` — the one export every human owns |
+| **pipecat-evals** | `fmt='pipecat-evals'` (alias `pipecat`) | pipecat's `EvalConversation` files (JSON list of `user`/`assistant`/`tool_call` messages, no results, no timing) and its simulation `results.jsonl` records (`messages` field; container keys tried in order: `messages`, `conversation`, `transcript`, `turns`, or `--key`). Checks: `tests/test_adapters.py` |
 
 To add a format: write one `_normalize_<fmt>(obj, cfg) -> list[Event]` function producing the
 canonical stream (`{t_ms, kind, name, attrs}` with `kind ∈ user_msg | assistant_msg | tool_call |
@@ -152,6 +153,29 @@ generator for training the learned emission mapper later, not the final model. W
 mapper lands, `infer_states()` is the function it replaces; the interface does not change.
 
 ## Quick start
+
+```bash
+# one conversation + domain/metadata -> the embedding (walk + feature vector):
+python embed_conversation.py conv.json --fmt pipecat-evals --domain banking --meta model=gpt-4o
+
+# a whole pipecat evaluations run (results.jsonl): one embedding per line:
+python embed_conversation.py run/results.jsonl --fmt pipecat-evals --domain banking
+
+# fit the 2D behavior plane on a corpus, then project single conversations onto it:
+python embed_conversation.py corpus/*.json --fmt transcript --save-basis basis.json
+python embed_conversation.py conv.json --fmt pipecat-evals --basis basis.json
+
+# programmatically:
+from trace2grammar import to_grammar, fit_basis, project_features
+emb = to_grammar(conversation, "pipecat-evals", meta={"domain": "banking"})
+emb["2d"] = project_features(emb["features"], fit_basis(corpus_features))
+```
+
+The embedding is outcome-free by design: it is the trajectory representation
+(walk, cycle depth, feature vector). The built-in check runs with
+`python embed_conversation.py --self-check`; the adapter registry (23 checks
+including the otel/langsmith fixtures and the pipecat containers) with
+`python tests/test_adapters.py`.
 
 ```bash
 python tests/test_extract.py        # ALL CHECKS PASSED
