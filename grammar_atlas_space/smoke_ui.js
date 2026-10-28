@@ -28,17 +28,15 @@ function makeEl(tag) {
   return el;
 }
 const byId = {};
-const els = {};
 function get(id) { return byId[id] || (byId[id] = makeEl('div#' + id)); }
-const chips = ['all', 'theta_cont', 'theta_aban'].map(o => { const e = makeEl('button'); e.dataset.outcome = o; return e; });
-const ths = ['outcome', 'n_states', 'D'].map(k => { const e = makeEl('th'); e.dataset.sort = k; return e; });
+const ths = ['n_states', 'D'].map(k => { const e = makeEl('th'); e.dataset.sort = k; return e; });
 
 global.window = { addEventListener() {} };
 global.document = {
   getElementById: get,
   createElementNS: (ns, tag) => makeEl(tag),
   createElement: tag => makeEl(tag),
-  querySelectorAll: sel => (sel.indexOf('chip') >= 0 ? chips : ths)
+  querySelectorAll: sel => (sel.indexOf('sortable') >= 0 ? ths : [])
 };
 const canvas = makeEl('canvas');
 get('map').getContext = canvas.getContext;
@@ -71,20 +69,22 @@ const all = walkAll(svg, []);
 const rects = all.filter(c => c.tag === 'rect');
 const texts = all.filter(c => c.tag === 'text');
 const paths = all.filter(c => c.tag === 'path');
-check('svg has 7 progress rects + 4 terminal rects', rects.length === 11, String(rects.length));
-check('svg has node labels', texts.length >= 11, String(texts.length));
+check('svg has exactly the 7 progress state rects', rects.length === 7, String(rects.length));
+check('svg has node labels', texts.length >= 7, String(texts.length));
 check('svg has edge paths', paths.length >= 15, String(paths.length));
+check('no terminal nodes drawn', all.every(c => !(c.textContent || '').includes('θ_')));
 const of = get('grammar-of').textContent;
 check('grammar-of mentions 1,980 runs', of.indexOf('1,980') >= 0, of);
-check('grammar-of mentions 24 edges', of.indexOf('24 edges') >= 0, of);
+check('grammar-of mentions 19 edges', of.indexOf('19 edges') >= 0, of);
 const flow = get('rules-flow-list').innerHTML;
 check('flow rules list has q_tool edges', flow.indexOf('q_tool') >= 0, flow.slice(0, 80));
 const loops = get('rules-loops-list').innerHTML;
 check('loops list has backward edges', loops.indexOf('q_confirm') >= 0, loops.slice(0, 80));
 const pathsList = get('rules-paths-list').innerHTML;
 check('templates list populated', pathsList.indexOf('runs') >= 0, pathsList.slice(0, 80));
+check('no outcome words anywhere in the rendered UI', [flow, loops, pathsList, of].every(s => s.indexOf('contained') < 0 && s.indexOf('abandoned') < 0));
 check('landing nRuns filled', get('ln-nruns').textContent === '1,980', get('ln-nruns').textContent);
-check('landing transitions filled', get('ln-trans').textContent === '30,556', get('ln-trans').textContent);
+check('landing transitions filled', get('ln-trans').textContent === '28,576', get('ln-trans').textContent);
 check('footer has tau-bench provenance', get('foot').innerHTML.indexOf('tau-bench') >= 0);
 console.log(fails === 0 ? 'UI SMOKE OK' : 'UI SMOKE FAILED: ' + fails);
 process.exit(fails === 0 ? 0 : 1);

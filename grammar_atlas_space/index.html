@@ -76,10 +76,6 @@
   td.mono { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-secondary); white-space: nowrap; }
   td.first { color: var(--text-secondary); }
   td .n { font-variant-numeric: tabular-nums; }
-  .oc-tag { display: inline-block; padding: 1px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
-  .oc-tag.contained { background: var(--tag-green-bg); color: var(--tag-green); }
-  .oc-tag.abandoned { background: var(--red-10); color: var(--red-60); }
-  .oc-tag.handoff { background: var(--tag-orange-bg); color: var(--tag-orange); }
   .search { height: 26px; width: 180px; border: 1px solid var(--cool-gray-30); border-radius: 4px; font-family: inherit; font-size: 13px; padding: 0 8px; }
 
   /* map */
@@ -102,11 +98,6 @@
   .walk-chips { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; font-family: var(--font-mono); font-size: 10.5px; margin-bottom: 8px; }
   .wchip { padding: 1px 6px; border-radius: 4px; background: var(--cool-gray-10); border: 1px solid var(--cool-gray-20); color: var(--text-secondary); white-space: nowrap; }
   .wchip.back { border-color: var(--red-60); color: var(--red-70); }
-  .wchip.term { font-weight: 600; border-width: 2px; }
-  .wchip.term.t-cont { color: var(--oc-cont); border-color: var(--oc-cont); }
-  .wchip.term.t-aban { color: var(--oc-aban); border-color: var(--oc-aban); }
-  .wchip.term.t-hand { color: var(--oc-hand); border-color: var(--oc-hand); }
-  .wchip.term.t-esc { color: var(--oc-esc); border-color: var(--oc-esc); }
   .tx-toggle { border: 0; background: none; color: var(--blue-60); font-size: 12px; cursor: pointer; font-family: inherit; padding: 0; text-decoration: underline; }
   .tx { display: none; margin-top: 8px; max-height: 240px; overflow-y: auto; background: var(--cool-gray-10); border: 1px solid var(--cool-gray-20); border-radius: 8px; padding: 8px 10px; font-size: 11.5px; line-height: 1.5; }
   .tx.show { display: block; }
@@ -157,8 +148,8 @@
   <div class="card landing">
     <h1>Every conversation is a walk through a grammar</h1>
     <p id="landing-learn">You are looking at the <b>latent space of a trajectory grammar</b>: 7 progress states
-    (greet, auth, intent, tool, clarify, confirm, close) and 4 terminal outcome classes. Each of the
-    <span class="num" id="ln-nruns">&hellip;</span> conversations below &mdash; the official, publicly released
+    (greet, auth, intent, tool, clarify, confirm, close). Each of the <span class="num" id="ln-nruns">&hellip;</span>
+    conversations below &mdash; the official, publicly released
     <a href="https://github.com/sierra-research/tau-bench">tau-bench</a> evaluation runs
     (gpt-4o and claude-3.5-sonnet, airline + retail) &mdash; is a walk through those states, and the map is the
     PCA projection of each walk&rsquo;s state-visit features. The grammar is <b>not drawn by hand</b>:
@@ -167,16 +158,11 @@
     <span class="num" id="ln-top6">&hellip;</span> of all movement.</p>
     <p class="do"><b>What to do:</b> <b>click</b> a table row or a map point to read one conversation&rsquo;s walk and
     transcript. <b>Drag a box</b> on the map to pick a region of the latent space: the machine below is re-induced
-    from exactly the conversations living there. <b>Filter</b> by outcome, domain or model to see how contained and
-    abandoned service induce different grammars.</p>
+    from exactly the conversations living there. <b>Filter</b> by domain or model to compare the grammar of
+    different regions of the space.</p>
   </div>
 
   <div class="card toolbar">
-    <div class="chip-row"><span class="chip-row__label">Outcome</span>
-      <button class="chip on" data-outcome="all">All</button>
-      <button class="chip" data-outcome="theta_cont">Contained</button>
-      <button class="chip" data-outcome="theta_aban">Abandoned</button>
-    </div>
     <div class="chip-row"><span class="chip-row__label">Domain</span>
       <select id="f-domain"><option value="all">all</option><option value="airline">airline</option><option value="retail">retail</option></select>
     </div>
@@ -184,7 +170,7 @@
       <select id="f-model"><option value="all">all</option><option value="gpt4o">gpt-4o</option><option value="sonnet">claude-3.5-sonnet</option></select>
     </div>
     <div class="chip-row"><span class="chip-row__label">Color by</span>
-      <select id="f-color"><option value="outcome">outcome</option><option value="domain">domain</option><option value="model">model</option><option value="depth">cycle depth</option></select>
+      <select id="f-color"><option value="domain">domain</option><option value="model">model</option><option value="depth">cycle depth</option></select>
     </div>
     <button class="btn-clear" id="btn-clearbox">Clear region</button>
     <span class="count-pill" id="count-pill"></span>
@@ -201,7 +187,6 @@
         <table>
           <thead><tr>
             <th>Conversation</th><th>First user message</th>
-            <th class="sortable" data-sort="outcome">Outcome</th>
             <th class="sortable" data-sort="n_states">Turns</th>
             <th class="sortable" data-sort="D">D</th>
           </tr></thead>
@@ -268,14 +253,12 @@
   var REAL = ATLAS.points.filter(function (p) { return p.kind === 'real'; });
 
   var COLORS = {
-    outcome: { theta_cont: '#0e6027', theta_aban: '#da1e28', theta_hand: '#8a3800', theta_esc: '#525252' },
     domain: { airline: '#0f62fe', retail: '#6929c4' },
     model: { gpt4o: '#0f62fe', sonnet: '#ee538b' }
   };
-  var OC_NAME = { theta_cont: 'contained', theta_aban: 'abandoned', theta_hand: 'handoff', theta_esc: 'compliance-escape' };
   var STATE_SHORT = { q_greet: 'greet', q_auth: 'auth', q_intent: 'intent', q_tool: 'tool', q_clarify: 'clarify', q_confirm: 'confirm', q_close: 'close' };
 
-  var state = { outcome: 'all', domain: 'all', model: 'all', colorBy: 'outcome', search: '', sortKey: null, sortDir: 1, selId: null, box: null, hoverId: null };
+  var state = { domain: 'all', model: 'all', colorBy: 'domain', search: '', sortKey: null, sortDir: 1, selId: null, box: null, hoverId: null };
   var txCache = {};
 
   function fmt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
@@ -285,7 +268,6 @@
   function filtered() {
     var q = state.search.toLowerCase();
     return REAL.filter(function (p) {
-      if (state.outcome !== 'all' && p.outcome !== state.outcome) return false;
       if (state.domain !== 'all' && p.domain !== state.domain) return false;
       if (state.model !== 'all' && p.model !== state.model) return false;
       if (q && (p.id + ' ' + p.first).toLowerCase().indexOf(q) < 0) return false;
@@ -323,7 +305,6 @@
     return 'rgb(' + a.map(function (v, i) { return Math.round(v + (b[i] - v) * t); }).join(',') + ')';
   }
   function pointColor(p) {
-    if (state.colorBy === 'outcome') return COLORS.outcome[p.outcome] || '#525252';
     if (state.colorBy === 'domain') return COLORS.domain[p.domain] || '#525252';
     if (state.colorBy === 'model') return COLORS.model[p.model] || '#525252';
     return depthColor(p.D);
@@ -373,8 +354,7 @@
     } else {
       var c = COLORS[state.colorBy];
       Object.keys(c).forEach(function (k) {
-        var name = state.colorBy === 'outcome' ? OC_NAME[k] : k;
-        items.push('<span><i style="background:' + c[k] + '"></i>' + name + '</span>');
+        items.push('<span><i style="background:' + c[k] + '"></i>' + k + '</span>');
       });
     }
     el.innerHTML = items.join('');
@@ -393,8 +373,8 @@
   function showTip(p, mx, my) {
     tooltip.style.display = 'block';
     tooltip.innerHTML = '<div class="tt-id">' + p.id + '</div>' +
-      '<div><b>' + OC_NAME[p.outcome] + '</b> &middot; ' + p.domain + ' &middot; ' + (p.model === 'gpt4o' ? 'gpt-4o' : 'claude-3.5-sonnet') + '</div>' +
-      '<div>turns ' + p.n_states + ' &middot; D ' + p.D + ' &middot; env reward ' + p.reward + '</div>' +
+      '<div>' + p.domain + ' &middot; ' + (p.model === 'gpt4o' ? 'gpt-4o' : 'claude-3.5-sonnet') + '</div>' +
+      '<div>turns ' + p.n_states + ' &middot; D ' + p.D + '</div>' +
       '<div style="margin-top:3px;color:#c1c7cd">' + p.first.replace(/</g, '&lt;').slice(0, 110) + '</div>';
     var wrap = canvas.parentElement.getBoundingClientRect();
     var tx = mx + 14, ty = my + 14;
@@ -455,17 +435,14 @@
     if (!state.sortKey) return rows;
     var k = state.sortKey, dir = state.sortDir;
     return rows.slice().sort(function (a, b) {
-      var va = k === 'outcome' ? OC_NAME[a.outcome] : a[k];
-      var vb = k === 'outcome' ? OC_NAME[b.outcome] : b[k];
+      var va = a[k], vb = b[k];
       if (va < vb) return -dir; if (va > vb) return dir; return 0;
     });
   }
   function rowHtml(p) {
-    var oc = OC_NAME[p.outcome];
     return '<tr data-id="' + p.id + '">' +
       '<td class="mono">' + p.id + '</td>' +
       '<td class="first">' + p.first.replace(/</g, '&lt;').slice(0, 88) + '</td>' +
-      '<td><span class="oc-tag ' + oc + '">' + oc + '</span></td>' +
       '<td class="n">' + p.n_states + '</td>' +
       '<td class="n"' + (p.D > 0 ? ' style="color:var(--red-60);font-weight:600"' : '') + '>' + p.D + '</td></tr>';
   }
@@ -518,14 +495,11 @@
     if (!p) return;
     document.getElementById('sel-card').classList.add('show');
     document.getElementById('sel-id').textContent = p.id;
-    var oc = OC_NAME[p.outcome];
     document.getElementById('sel-meta').innerHTML =
-      '<span class="oc-tag ' + oc + '">' + oc + '</span>' +
       '<span class="badge">' + p.domain + '</span>' +
       '<span class="badge">' + (p.model === 'gpt4o' ? 'gpt-4o' : 'claude-3.5-sonnet') + '</span>' +
       '<span class="badge">turns ' + p.n_states + '</span>' +
-      '<span class="badge">D ' + p.D + '</span>' +
-      '<span class="badge ' + (p.reward === 1 ? 'good' : 'bad') + '">env reward ' + p.reward + '</span>';
+      '<span class="badge">D ' + p.D + '</span>';
     // walk chips: collapse consecutive repeats, mark backward steps
     var w = p.walk, chips = [], runs = [];
     for (var i = 0; i < w.length; i++) {
@@ -538,7 +512,6 @@
       html += (idx ? '<span style="color:#878d96">&rarr;</span>' : '') +
         '<span class="wchip' + (prev ? ' back' : '') + '">' + STATE_SHORT[r.s] + (r.n > 1 ? '&times;' + r.n : '') + '</span>';
     });
-    html += '<span style="color:#878d96">&rarr;</span><span class="wchip term t-' + p.outcome.slice(6) + '">&theta; ' + oc + '</span>';
     document.getElementById('sel-walk').innerHTML = html;
     document.getElementById('sel-tx').classList.remove('show');
     document.getElementById('sel-tx-toggle').textContent = 'Read transcript';
@@ -578,10 +551,9 @@
   /* ---------- grammar panel ---------- */
   var SVGNS = 'http://www.w3.org/2000/svg';
   var NODE_POS = {
-    q_greet: [86, 380], q_auth: [208, 380], q_intent: [330, 380], q_tool: [452, 380],
-    q_confirm: [574, 380], q_close: [696, 380],
-    q_clarify: [513, 205],
-    theta_cont: [845, 380], theta_aban: [845, 268], theta_hand: [845, 176], theta_esc: [845, 84]
+    q_greet: [100, 380], q_auth: [240, 380], q_intent: [380, 380], q_tool: [520, 380],
+    q_confirm: [660, 380], q_close: [800, 380],
+    q_clarify: [590, 205]
   };
   function el(tag, attrs, parent) {
     var n = document.createElementNS(SVGNS, tag);
@@ -589,10 +561,7 @@
     if (parent) parent.appendChild(n);
     return n;
   }
-  function markerId(type, b) {
-    if (type === 'terminal') return 'arr-' + b;
-    return 'arr-' + type;
-  }
+  function markerId(type) { return 'arr-' + type; }
   function renderGrammar() {
     var pts = grammarSet();
     var svg = document.getElementById('grammar-svg');
@@ -604,13 +573,13 @@
       ['rules-flow-list', 'rules-loops-list', 'rules-paths-list'].forEach(function (id) { document.getElementById(id).innerHTML = ''; });
       return;
     }
-    var g = G.induce(pts.map(function (p) { return { walk: p.walk, outcome: p.outcome }; }));
+    var g = G.induce(pts.map(function (p) { return { walk: p.walk }; }));
     of.textContent = 'induced from ' + fmt(g.nRuns) + ' runs · ' + fmt(g.nTransitions) + ' transitions · ' +
       g.nDistinctEdges + ' edges · top-6 edges ' + pct(g.top6Share) + ' of mass';
 
     /* defs: arrow markers */
     var defs = el('defs', {}, svg);
-    var mcolors = { progress: '#343a3f', backward: '#da1e28', self: '#878d96', 'theta_cont': '#0e6027', 'theta_aban': '#da1e28', 'theta_hand': '#8a3800', 'theta_esc': '#525252' };
+    var mcolors = { progress: '#343a3f', backward: '#da1e28', self: '#878d96' };
     Object.keys(mcolors).forEach(function (k) {
       var m = el('marker', { id: 'arr-' + k, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
       el('path', { d: 'M 0 0 L 10 5 L 0 10 z', fill: mcolors[k] }, m);
@@ -626,12 +595,8 @@
       if (!A || !B) return;
       var ax = A[0] + 46, ay = A[1], bx = B[0] - 46, by = B[1];
       var back = e.type === 'backward';
-      var term = e.type === 'terminal';
       var c1x, c1y, c2x, c2y;
-      if (term) {
-        // curve toward the terminal column, fanned by target y
-        c1x = ax + 40; c1y = ay; c2x = bx - 40; c2y = by;
-      } else if (A[1] !== B[1]) { // to/from clarify
+      if (A[1] !== B[1]) { // to/from clarify
         c1x = ax; c1y = ay + (B[1] > A[1] ? 34 : -34); c2x = bx; c2y = by + (A[1] > B[1] ? 34 : -34);
       } else if (back) {
         c1x = ax + (bx - ax) * 0.3; c1y = ay + 46; c2x = ax + (bx - ax) * 0.7; c2y = by + 46;
@@ -642,15 +607,14 @@
       var grp = el('g', {}, svg);
       var t = el('title', {}, grp);
       t.textContent = e.a + ' -> ' + e.b + ' : ' + fmt(e.count) + ' transitions (' + pct(e.share) + ' of ' + e.a + ' exits)';
-      var stroke = term ? mcolors[e.b] : (back ? '#da1e28' : '#343a3f');
+      var stroke = back ? '#da1e28' : '#343a3f';
       el('path', {
         d: 'M ' + ax + ' ' + ay + ' C ' + c1x + ' ' + c1y + ', ' + c2x + ' ' + c2y + ', ' + bx + ' ' + by,
         fill: 'none', stroke: stroke, 'stroke-width': w, 'stroke-opacity': 0.8,
-        'stroke-dasharray': back ? '6 4' : 'none', 'marker-end': 'url(#' + markerId(e.type, e.b) + ')'
+        'stroke-dasharray': back ? '6 4' : 'none', 'marker-end': 'url(#' + markerId(e.type) + ')'
       }, grp);
       if (e.count >= labelMin) {
         var mx = (ax + bx) / 2, my = (ay + by) / 2 + (back ? 34 : -8);
-        if (term) { mx = ax + (bx - ax) * 0.55; my = (ay + by) / 2 - 6; }
         el('text', { x: mx, y: my, 'text-anchor': 'middle', class: 'elabel' }, grp)
           .textContent = fmt(e.count) + ' · ' + pct(e.share);
       }
@@ -677,17 +641,6 @@
       el('text', { x: P[0], y: P[1] + 1, 'text-anchor': 'middle', 'font-size': 12, 'font-weight': 600, fill: '#121619' }, grp).textContent = s;
       el('text', { x: P[0], y: P[1] + 30, 'text-anchor': 'middle', class: 'elabel' }, grp).textContent = '×' + fmt(v) + ' visits';
     });
-    /* clarify sits above; draw its connectors' label */
-    Object.keys(NODE_POS).forEach(function (s) {
-      if (G.PROGRESS.indexOf(s) >= 0) return;
-      var P = NODE_POS[s];
-      var count = g.terminalCounts[s] || 0;
-      var zero = count === 0;
-      var grp = el('g', {}, svg);
-      el('rect', { x: P[0] - 50, y: P[1] - 17, width: 100, height: 34, rx: 2, fill: zero ? '#f2f4f8' : mcolors[s] === '#da1e28' ? '#fff1f1' : '#ffd9be', stroke: zero ? '#c1c7cd' : mcolors[s], 'stroke-width': 1.2, 'stroke-dasharray': zero ? '5 3' : 'none' }, grp);
-      el('text', { x: P[0], y: P[1] + 1, 'text-anchor': 'middle', 'font-size': 12, 'font-weight': 600, fill: zero ? '#878d96' : '#121619' }, grp).textContent = s.replace('theta_', 'θ_');
-      el('text', { x: P[0], y: P[1] + 30, 'text-anchor': 'middle', class: 'elabel' }, grp).textContent = zero ? 'not induced here' : '×' + fmt(count);
-    });
 
     /* rules lists */
     var flow = g.edges.filter(function (e) { return e.type === 'progress'; }).slice(0, 8);
@@ -702,9 +655,9 @@
       var chips = tp.seq.map(function (s, i) {
         return (i ? '<span style="color:#878d96">&rarr;</span>' : '') +
           '<span class="wchip">' + STATE_SHORT[s] + '</span>';
-      }).join('') + '<span style="color:#878d96">&rarr;</span><span class="wchip term t-' + tp.outcome.slice(6) + '">&theta;</span>';
+      }).join('');
       return '<div class="tmpl"><div class="walk-chips" style="margin-bottom:0">' + chips + '</div>' +
-        '<div class="tmpl__meta">×' + fmt(tp.count) + ' runs · ' + pct(tp.count / g.nRuns) + ' of selection · ends ' + OC_NAME[tp.outcome] + '</div></div>';
+        '<div class="tmpl__meta">×' + fmt(tp.count) + ' runs · ' + pct(tp.count / g.nRuns) + ' of the selection</div></div>';
     }).join('') || '<div class="empty-gram">—</div>';
   }
   function ruleHtml(edge, count, share, frac, back) {
@@ -714,13 +667,6 @@
   }
 
   /* ---------- toolbar wiring ---------- */
-  document.querySelectorAll('.chip[data-outcome]').forEach(function (c) {
-    c.addEventListener('click', function () {
-      document.querySelectorAll('.chip[data-outcome]').forEach(function (x) { x.classList.remove('on'); });
-      c.classList.add('on'); state.outcome = c.dataset.outcome;
-      renderTableHead(); renderGrammar(); drawMap();
-    });
-  });
   function wireSelect(id, key) {
     document.getElementById(id).addEventListener('change', function () {
       state[key] = this.value;
@@ -734,7 +680,7 @@
   });
 
   /* ---------- landing numbers + footer (all computed from the embedded data) ---------- */
-  var all = G.induce(REAL.map(function (p) { return { walk: p.walk, outcome: p.outcome }; }));
+  var all = G.induce(REAL.map(function (p) { return { walk: p.walk }; }));
   document.getElementById('ln-nruns').textContent = fmt(all.nRuns);
   document.getElementById('ln-trans').textContent = fmt(all.nTransitions);
   document.getElementById('ln-edges').textContent = fmt(all.nDistinctEdges);
