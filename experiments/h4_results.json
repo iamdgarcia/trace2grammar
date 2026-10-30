@@ -1,0 +1,57 @@
+{
+ "protocol": {
+  "split": "task_id parity (dev=even, test=odd)",
+  "tuning": "C in {0.1,1,10} by GROUPED 5-fold CV (groups=task_id) on dev only",
+  "seed": 20261025,
+  "label": "fail=positive (reward<1)",
+  "text": "all roles except system (policy boilerplate)",
+  "verdict_rule": "CONFIRM if dAUROC(B-A) >= +0.01 AND cluster-bootstrap 95% CI excludes 0"
+ },
+ "missing_text_episodes": [],
+ "results": [
+  {
+   "arm": "A B1p tfidf-all-roles+meta",
+   "C": 1.0,
+   "dev_cv_grouped": 0.6608,
+   "test_auroc": 0.7814
+  },
+  {
+   "arm": "B A+walk-pure",
+   "C": 1.0,
+   "dev_cv_grouped": 0.6746,
+   "test_auroc": 0.7914
+  },
+  {
+   "arm": "C B2p rules+meta",
+   "C": 10.0,
+   "dev_cv_grouped": 0.6603,
+   "test_auroc": 0.7088
+  },
+  {
+   "arm": "D M1-pure walk-only",
+   "C": 0.1,
+   "dev_cv_grouped": 0.6251,
+   "test_auroc": 0.6259
+  },
+  {
+   "arm": "E content-blind",
+   "C": 1.0,
+   "dev_cv_grouped": 0.6342,
+   "test_auroc": 0.6327
+  }
+ ],
+ "headline": {
+  "dAUROC_B_minus_A": 0.0099,
+  "cluster_bootstrap_ci": [
+   -0.0142,
+   0.0351
+  ],
+  "verdict": "REFRAME",
+  "aux": {
+   "M1pure_minus_contentblind": -0.0068,
+   "B2p_test": 0.7088,
+   "M1pure_test": 0.6259,
+   "contentblind_test": 0.6327
+  }
+ }
+}

@@ -28,21 +28,36 @@ does your evaluation actually exercise — and can you trust the outcome your tr
    episodes (31.7%) re-enter settled states (D up to 9) where every human wizard corpus shows D=0:
    real agents exercise the loop benchmarks never do.
 3. **Verdict-vs-truth confrontation** — on the tau-bench anchor every episode carries the
-   environment-verified reward: the closing phrase does not predict the delivered outcome, and
-   its sign **inverts** (polite close in 66.8% of PASS episodes vs 76.4% of FAILED ones). In SGD,
-   the "confident closing, silent failure" mode appears as 5 confirmed courteous-closes over
-   failed service calls (plus 4.6% of contained verdicts carrying the tool-ok/empty-result
-   signal as candidates); in the real-agent anchor it is 21.7% of failures (173/797) — 8.7%
-   of all runs. If you count outcomes from transcripts alone, you absorb this silently.
-4. **Two executed results the anchor returns for free (25-oct)** — (a) ablation: the walk
-   carries delivered-outcome signal beyond surface text: TF-IDF+LR test AUROC 0.713 → 0.733
-   with walk features (paired bootstrap 95% CI [+0.008, +0.033], above the predeclared
-   +0.01 margin); walk features beat the raw rule vector by +0.072. (b) turn-level risk
-   curve: 14,011 walker-inferred prefixes, deterministic; turns 1–3 chance (stated), turn 4
-   first signal (+13.4pp fixed-flag lift), first stable AUROC ≥ 0.65 at turn 7, best
-   in-flight 0.82 at turn 11 (small cell, declared). **TraceGrammar-Anchor release:**
-   `dataset/` (3 corpora, one schema, DATASET_CARD + MANIFEST.sha256, verify_dataset.py
-   45/45 PASS) + `experiments/` (the two scripts that produce the numbers).
+   environment-verified reward: the closing phrase does not predict the delivered outcome
+   (polite close in 66.8% of PASS episodes vs 76.4% of FAILED ones pooled; the inversion is
+   compositional and does not survive model × length stratification, `h5_inversion_stratified.py`)
+   — the deliverable claim is the *absence* of a reliable surface signal, not an inverted one.
+   In SGD, the "confident closing, silent failure" mode appears as 9 terminal courteous-closes
+   over failed service calls (of 198 silent-failure-candidate dialogs, 189 — 95.45% — recover
+   via a later effective call; the walker misses 6 of the 9 terminal ones, `h7_d_crosstab.py`
+   companion check on `dataset/sgd/dialogs.csv`), plus 4.6% of contained verdicts carrying the
+   tool-ok/empty-result signal as candidates; in the real-agent anchor it is 21.7% of failures
+   (173/797) — 8.7% of all runs. If you count outcomes from transcripts alone, you absorb this
+   silently.
+4. **Executed results, kill-or-confirm pass (25-oct + 30-oct honesty audit)** — (a) walk-vs-text
+   ablation, DE-CONFOUNDED (`experiments/h4_confound_control.py`): once the text baseline sees ALL
+   roles (the tool-result channel) and both arms get model/domain one-hots, the walk's add-on
+   delta is +0.0099 (cluster-bootstrap 95% CI [-0.0142, +0.033], includes 0) — the walk CONDENSES
+   structural regularity + the tool-error channel (D equals error_count in 1,980/1,980 tau
+   episodes, `h7_d_crosstab.py`), it is not signal beyond text on this corpus. The earlier
+   +0.020/+0.072 deltas carried a model one-hot in the walk arm. (b) turn-level risk curve:
+   14,011 walker-inferred prefixes, deterministic; turns 1–3 chance (stated), turn 4 first
+   signal (+13.4pp fixed-flag lift), first stable AUROC ≥ 0.65 at turn 7, best in-flight 0.82 at
+   turn 11 (small cell, declared). (c) the polite-close inversion (66.8% of PASS vs 76.4% of
+   FAILED episodes end politely) does NOT survive stratification: CMH p=0.37, per-cell deltas
+   from +31.9pp (sonnet/airline) to -1.3pp (gpt4o/retail) — compositional, treat as descriptive
+   (`h5_inversion_stratified.py`). (d) the sim-to-real gap itself is real: median sim→real NN
+   distance is 1.6× the real→real NN scale (bootstrap CI [1.04, 1.69]; 21/60 sim points inside
+   the real-median radius) — the honest restatement of kernel-free coverage 0.0%, which demanded
+   exact float collision (`h6_coverage_nn.py`).
+   **TraceGrammar-Anchor release:** `dataset/` (3 corpora, one schema, DATASET_CARD +
+   MANIFEST.sha256, verify_dataset.py 45/45 PASS) + `experiments/` (the scripts that produce the
+   numbers).
 
 **Who consumes this:** the paper (*Turn-Level Trajectory Grammars for Voice Agents*), the three
 live demos it powers (below), and anyone with agent traces — paste a transcript or load an OTel

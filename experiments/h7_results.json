@@ -1,0 +1,55 @@
+{
+ "tau_crosstab": {
+  "(True, True)": 628,
+  "(False, False)": 1352
+ },
+ "tau_D_equals_error_count": "1980/1980",
+ "d_gt0_table": {
+  "taubench": [
+   628,
+   1980,
+   0.3172
+  ],
+  "sgd_verbatim": [
+   0,
+   4201,
+   0.0
+  ],
+  "sgd_calibrated": [
+   0,
+   4201,
+   0.0
+  ],
+  "multiwoz": [
+   0,
+   1000,
+   0.0
+  ]
+ },
+ "tau_D_distribution": {
+  "0": 1352,
+  "1": 444,
+  "2": 118,
+  "3": 40,
+  "4": 14,
+  "5": 7,
+  "6": 4,
+  "9": 1
+ },
+ "sgd_silent_failure": {
+  "candidates": 198,
+  "recovered": 189,
+  "recovered_rate": 0.9545,
+  "terminal": 9,
+  "terminal_missed_as_contained": 6,
+  "terminal_missed_ids": [
+   "1_00005",
+   "7_00074",
+   "7_00086",
+   "7_00091",
+   "7_00092",
+   "7_00095"
+  ]
+ },
+ "verdict": "REFRAME"
+}

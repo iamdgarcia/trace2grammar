@@ -1,0 +1,94 @@
+{
+ "n": 1980,
+ "tercile_edges": [
+  12,
+  18
+ ],
+ "pooled": {
+  "pass_close": 0.6678,
+  "fail_close": 0.7641
+ },
+ "cells": [
+  {
+   "cell": "gpt4o/airline",
+   "n": 200,
+   "pass_close": 0.6667,
+   "fail_close": 0.7672,
+   "delta_pp": 10.1
+  },
+  {
+   "cell": "gpt4o/retail",
+   "n": 460,
+   "pass_close": 0.7158,
+   "fail_close": 0.7033,
+   "delta_pp": -1.3
+  },
+  {
+   "cell": "sonnet/airline",
+   "n": 400,
+   "pass_close": 0.5054,
+   "fail_close": 0.8241,
+   "delta_pp": 31.9
+  },
+  {
+   "cell": "sonnet/retail",
+   "n": 920,
+   "pass_close": 0.6939,
+   "fail_close": 0.7562,
+   "delta_pp": 6.2
+  }
+ ],
+ "strata": [
+  {
+   "stratum": "gpt4o/T0",
+   "n": 244,
+   "fail": 105,
+   "close": 120,
+   "close_fail": 50,
+   "delta_pp": -2.7
+  },
+  {
+   "stratum": "gpt4o/T1",
+   "n": 212,
+   "fail": 75,
+   "close": 159,
+   "close_fail": 56,
+   "delta_pp": -0.5
+  },
+  {
+   "stratum": "gpt4o/T2",
+   "n": 204,
+   "fail": 118,
+   "close": 193,
+   "close_fail": 111,
+   "delta_pp": -1.3
+  },
+  {
+   "stratum": "sonnet/T0",
+   "n": 407,
+   "fail": 101,
+   "close": 150,
+   "close_fail": 45,
+   "delta_pp": 10.2
+  },
+  {
+   "stratum": "sonnet/T1",
+   "n": 451,
+   "fail": 167,
+   "close": 341,
+   "close_fail": 127,
+   "delta_pp": 0.7
+  },
+  {
+   "stratum": "sonnet/T2",
+   "n": 462,
+   "fail": 231,
+   "close": 436,
+   "close_fail": 220,
+   "delta_pp": 1.7
+  }
+ ],
+ "cmh_common_or": 0.1932,
+ "cmh_p": 0.37118,
+ "verdict": "REFRAME"
+}
