@@ -1,0 +1,522 @@
+{
+ "protocol": {
+  "res": 24,
+  "eps": 0.05,
+  "bw_frac": 0.04,
+  "seed": 20261030,
+  "model": "gemini-2.5-flash-lite",
+  "n_real": 1980,
+  "n_naive": 20,
+  "n_adv": 18,
+  "predicates": {
+   "P1_landing_pct_min": 60,
+   "P2_delta_pp_min": 15,
+   "P3_D_ge1_pct_min": 30
+  }
+ },
+ "naive": {
+  "coverage_pct": 85.0,
+  "uncovered": 18,
+  "instance_honest_pct": 0.21
+ },
+ "combined": {
+  "coverage_pct": 99.2,
+  "uncovered": 1,
+  "instance_honest_pct": 0.73
+ },
+ "P1_landing_pct": 5.6,
+ "P2_delta_pp": 14.2,
+ "P3_D_ge1_pct": 100.0,
+ "round0": {
+  "n": 18,
+  "landing_pct": 0.0,
+  "stats": [
+   {
+    "i": 0,
+    "lines": 24,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 1,
+    "lines": 34,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 2,
+    "lines": 16,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 3,
+    "lines": 26,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 4,
+    "lines": 13,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 5,
+    "lines": 20,
+    "D": 1,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 6,
+    "lines": 22,
+    "D": 1,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 7,
+    "lines": 20,
+    "D": 0,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 8,
+    "lines": 12,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 9,
+    "lines": 28,
+    "D": 0,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 10,
+    "lines": 18,
+    "D": 1,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 11,
+    "lines": 20,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 12,
+    "lines": 10,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 13,
+    "lines": 16,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 14,
+    "lines": 28,
+    "D": 0,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 15,
+    "lines": 22,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 16,
+    "lines": 38,
+    "D": 4,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 17,
+    "lines": 32,
+    "D": 2,
+    "outcome": "theta_aban"
+   }
+  ]
+ },
+ "round1": {
+  "n_regenerated": 18,
+  "stats": [
+   {
+    "i": 0,
+    "lines": 34,
+    "D": 1,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 1,
+    "lines": 42,
+    "D": 1,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 2,
+    "lines": 12,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 3,
+    "lines": 28,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 4,
+    "lines": 13,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 5,
+    "lines": 20,
+    "D": 1,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 6,
+    "lines": 26,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 7,
+    "lines": 26,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 8,
+    "lines": 12,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 9,
+    "lines": 24,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 10,
+    "lines": 22,
+    "D": 1,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 11,
+    "lines": 20,
+    "D": 1,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 12,
+    "lines": 12,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 13,
+    "lines": 15,
+    "D": 2,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 14,
+    "lines": 18,
+    "D": 1,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 15,
+    "lines": 22,
+    "D": 1,
+    "outcome": "theta_aban"
+   },
+   {
+    "i": 16,
+    "lines": 24,
+    "D": 2,
+    "outcome": "theta_cont"
+   },
+   {
+    "i": 17,
+    "lines": 26,
+    "D": 2,
+    "outcome": "theta_aban"
+   }
+  ]
+ },
+ "adv_D_distribution": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "adv_outcomes": [
+  "theta_aban",
+  "theta_cont"
+ ],
+ "landing": [
+  {
+   "i": 0,
+   "cell": [
+    13,
+    8
+   ],
+   "target": [
+    15,
+    6
+   ],
+   "chebyshev": 2,
+   "hit": false
+  },
+  {
+   "i": 1,
+   "cell": [
+    14,
+    8
+   ],
+   "target": [
+    15,
+    7
+   ],
+   "chebyshev": 1,
+   "hit": true
+  },
+  {
+   "i": 2,
+   "cell": [
+    8,
+    7
+   ],
+   "target": [
+    5,
+    2
+   ],
+   "chebyshev": 5,
+   "hit": false
+  },
+  {
+   "i": 3,
+   "cell": [
+    13,
+    10
+   ],
+   "target": [
+    15,
+    5
+   ],
+   "chebyshev": 5,
+   "hit": false
+  },
+  {
+   "i": 4,
+   "cell": [
+    8,
+    7
+   ],
+   "target": [
+    6,
+    1
+   ],
+   "chebyshev": 6,
+   "hit": false
+  },
+  {
+   "i": 5,
+   "cell": [
+    10,
+    7
+   ],
+   "target": [
+    15,
+    8
+   ],
+   "chebyshev": 5,
+   "hit": false
+  },
+  {
+   "i": 6,
+   "cell": [
+    10,
+    8
+   ],
+   "target": [
+    14,
+    9
+   ],
+   "chebyshev": 4,
+   "hit": false
+  },
+  {
+   "i": 7,
+   "cell": [
+    12,
+    9
+   ],
+   "target": [
+    10,
+    11
+   ],
+   "chebyshev": 2,
+   "hit": false
+  },
+  {
+   "i": 8,
+   "cell": [
+    8,
+    7
+   ],
+   "target": [
+    4,
+    4
+   ],
+   "chebyshev": 4,
+   "hit": false
+  },
+  {
+   "i": 9,
+   "cell": [
+    10,
+    9
+   ],
+   "target": [
+    13,
+    10
+   ],
+   "chebyshev": 3,
+   "hit": false
+  },
+  {
+   "i": 10,
+   "cell": [
+    10,
+    7
+   ],
+   "target": [
+    16,
+    7
+   ],
+   "chebyshev": 6,
+   "hit": false
+  },
+  {
+   "i": 11,
+   "cell": [
+    9,
+    6
+   ],
+   "target": [
+    15,
+    4
+   ],
+   "chebyshev": 6,
+   "hit": false
+  },
+  {
+   "i": 12,
+   "cell": [
+    8,
+    7
+   ],
+   "target": [
+    4,
+    3
+   ],
+   "chebyshev": 4,
+   "hit": false
+  },
+  {
+   "i": 13,
+   "cell": [
+    8,
+    7
+   ],
+   "target": [
+    5,
+    1
+   ],
+   "chebyshev": 6,
+   "hit": false
+  },
+  {
+   "i": 14,
+   "cell": [
+    9,
+    6
+   ],
+   "target": [
+    15,
+    9
+   ],
+   "chebyshev": 6,
+   "hit": false
+  },
+  {
+   "i": 15,
+   "cell": [
+    12,
+    6
+   ],
+   "target": [
+    16,
+    6
+   ],
+   "chebyshev": 4,
+   "hit": false
+  },
+  {
+   "i": 16,
+   "cell": [
+    10,
+    10
+   ],
+   "target": [
+    16,
+    8
+   ],
+   "chebyshev": 6,
+   "hit": false
+  },
+  {
+   "i": 17,
+   "cell": [
+    10,
+    8
+   ],
+   "target": [
+    11,
+    11
+   ],
+   "chebyshev": 3,
+   "hit": false
+  }
+ ],
+ "verdicts": {
+  "P1": "FAIL",
+  "P2": "FAIL",
+  "P3": "PASS"
+ }
+}

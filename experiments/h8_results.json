@@ -1,0 +1,26 @@
+{
+ "n_real": 1980,
+ "n_sim": 60,
+ "shipped": {
+  "r_median_real_nn_all_points": 0.0,
+  "instance_coverage_pct": 0.0
+ },
+ "unique_real": 961,
+ "honest": {
+  "r_median_real_nn_unique": 0.079987,
+  "instance_coverage_pct": 2.29,
+  "per_class": {
+   "theta_aban": 2.31,
+   "theta_cont": 2.25
+  }
+ },
+ "sim_within_r": "21/60",
+ "nn_ratio": {
+  "R": 1.595,
+  "bootstrap_ci": [
+   1.0437,
+   1.6886
+  ],
+  "median_sim_to_real_nn": 0.127578
+ }
+}
