@@ -64,10 +64,12 @@ does your evaluation actually exercise — and can you trust the outcome your tr
    read-only tasks / strict checks) — typed, not hidden. **h11 decomposition
    (`h11_decompose.py`): the text curve is not just a task prior — within-task AUC
    (transcript evidence over knowing the task) is 0.6734@k1 pooled (shuffle null 0.49) and
-   0.6409@k1 out-of-sample (test tasks only, 49 tasks), 0.67@k3-5; both failure families
-   rank within task (divergent 0.68, silent 0.66 — the silent family is invisible to the
-   divergence-POINT method of E3 but rankable by a trained model): the cross-task curve =
-   task prior + real per-episode evidence from turn 1. (c) the polite-close inversion (66.8% of PASS vs 76.4% of
+   0.6409@k1 out-of-sample (test tasks only, 49 tasks), 0.67@k3-5; at final turn only the
+   DIVERGENT failure family ranks within task (0.657, n=27 tasks, wide CI) while the silent
+   family is at chance out-of-sample (0.500, n=23) — as E3 predicted (an earlier pooled
+   reading claiming both families rank was a dev-memorization artifact, caught by audit and
+   retracted; `h11b_family_testonly.py`): the cross-task curve = task prior + real
+   per-episode evidence from turn 1. (c) the polite-close inversion (66.8% of PASS vs 76.4% of
    FAILED episodes end politely) does NOT survive stratification: CMH p=0.37, per-cell deltas
    from +31.9pp (sonnet/airline) to -1.3pp (gpt4o/retail) — compositional, treat as descriptive
    (`h5_inversion_stratified.py`). (d) the sim-to-real gap itself is real: median sim→real NN
