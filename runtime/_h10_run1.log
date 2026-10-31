@@ -1,0 +1,12 @@
+loaded cached rows: 14011
+A0: pick=GBM{'max_depth': 5, 'max_iter': 200, 'random_state': 20261031} min_k=3 dev=0.6621
+A1: pick=GBM{'max_depth': 5, 'max_iter': 200, 'random_state': 20261031} min_k=3 dev=0.7450
+A2: pick=GBM{'max_depth': 5, 'max_iter': 200, 'random_state': 20261031} min_k=3 dev=0.7572
+A3: pick=GBM{'max_depth': 5, 'max_iter': 200, 'random_state': 20261031} min_k=3 dev=0.8263
+- mean k4-9: {"A0": 0.6458833333333333, "A1": 0.6662333333333333, "A2": 0.6650333333333334, "A3": 0.6870833333333333}
+- P-EARLY per arm: {"A0": null, "A1": 6, "A2": 4, "A3": 5}
+- P-MEAN delta (A3 - A0): mean 0.0407 CI95 [0.0023332985771325324, 0.07726824235816968]
+- **P-EARLY: PASS** (stable AUC>=0.65 at k<=6 (k,k+1, n>=100) | h3: k=7)
+- **P-MEAN: FAIL** (mean k4-9 >= 0.70 (h3: 0.6459))
+- **P-FINAL: FAIL** (final-turn AUC >= 0.70 (h3: 0.6477, content-blind: 0.6327))
+wrote results.json + model_select.json + REPORT.md
