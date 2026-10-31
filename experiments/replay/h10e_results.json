@@ -1,0 +1,150 @@
+{
+ "protocol": {
+  "predicate": "P-CAUSAL-FLIGHT: >=2/3 flagged omission failures flip reward at the flag turn k* (prefix replay + derived write)",
+  "not_evaluable_if": "fewer than 2 flagged failures in the batch",
+  "tasks": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "agent": "gemini-2.5-flash-lite",
+  "oracle": "claude-sonnet-4-6-sa",
+  "predeclared": "knowledge_base/threads/t2g-sota/PLAN.md"
+ },
+ "episodes": [
+  {
+   "task_id": 5,
+   "reward": 0.0,
+   "done": true,
+   "secs": 12.1,
+   "k_star_omission_flag": null,
+   "derived_calls": [],
+   "family": "no-omission-flag (wrong-write or read-only; typed answer)"
+  },
+  {
+   "task_id": 6,
+   "reward": 0.0,
+   "done": true,
+   "secs": 8.3,
+   "k_star_omission_flag": null,
+   "derived_calls": [],
+   "family": "no-omission-flag (wrong-write or read-only; typed answer)"
+  },
+  {
+   "task_id": 7,
+   "reward": 0.0,
+   "done": true,
+   "secs": 19.3,
+   "k_star_omission_flag": null,
+   "derived_calls": [],
+   "family": "no-omission-flag (wrong-write or read-only; typed answer)"
+  },
+  {
+   "task_id": 8,
+   "reward": 0.0,
+   "done": true,
+   "secs": 17.3,
+   "k_star_omission_flag": null,
+   "derived_calls": [],
+   "family": "no-omission-flag (wrong-write or read-only; typed answer)"
+  },
+  {
+   "task_id": 9,
+   "reward": 1.0,
+   "done": true,
+   "secs": 27.9
+  },
+  {
+   "task_id": 10,
+   "reward": 1.0,
+   "done": true,
+   "secs": 32.6
+  },
+  {
+   "task_id": 11,
+   "reward": 0.0,
+   "done": true,
+   "secs": 37.3,
+   "k_star_omission_flag": 8,
+   "derived_calls": [
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W5490111",
+      "item_ids": [
+       "4579334072",
+       "1421289881",
+       "6117189161",
+       "4947717507"
+      ],
+      "payment_method_id": "credit_card_3124723"
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W7387996",
+      "item_ids": [
+       "5796612084"
+      ],
+      "payment_method_id": "paypal_9497703"
+     }
+    }
+   ],
+   "reward_at_k_star_after_repair": 1.0,
+   "flipped": true
+  },
+  {
+   "task_id": 12,
+   "reward": 0.0,
+   "done": true,
+   "secs": 14.4,
+   "k_star_omission_flag": null,
+   "derived_calls": [],
+   "family": "no-omission-flag (wrong-write or read-only; typed answer)"
+  },
+  {
+   "task_id": 13,
+   "reward": 1.0,
+   "done": true,
+   "secs": 165.1
+  },
+  {
+   "task_id": 14,
+   "reward": 0.0,
+   "done": true,
+   "secs": 37.6,
+   "k_star_omission_flag": 5,
+   "derived_calls": [
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W5490111",
+      "item_ids": [
+       "1421289881"
+      ],
+      "payment_method_id": "credit_card_3124723"
+     }
+    }
+   ],
+   "reward_at_k_star_after_repair": 0.0,
+   "flipped": false
+  }
+ ],
+ "families": {
+  "no-flag": 5,
+  "omission-flagged": 2
+ },
+ "P-CAUSAL-FLIGHT": {
+  "flagged": 2,
+  "flips": 1,
+  "verdict": "FAIL"
+ }
+}

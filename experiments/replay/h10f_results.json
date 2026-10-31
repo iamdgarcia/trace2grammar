@@ -1,0 +1,440 @@
+{
+ "protocol": {
+  "oracle": "claude-sonnet-4-6-sa",
+  "oracle_input": "task.actions (env's own write expectations) + instruction + DB + saved traj",
+  "predicate": "P-CAUSAL-FLIGHT unchanged: >=2/3 FLAGGED failures flip at k*",
+  "flagged_set": [
+   11,
+   14
+  ],
+  "exploratory": "full-replay flips for ALL failures (repairability taxonomy)"
+ },
+ "episodes": [
+  {
+   "task_id": 5,
+   "expected": [
+    "find_user_id_by_name_zip",
+    "get_user_details",
+    "get_order_details",
+    "get_product_details",
+    "return_delivered_order_items"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_name_zip",
+     "kwargs": {
+      "first_name": "Mei",
+      "last_name": "Kovacs",
+      "zip": "28236"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mei_kovacs_8020"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W0000000"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": ""
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "",
+      "item_ids": [],
+      "payment_method_id": ""
+     }
+    }
+   ],
+   "secs": 14.9,
+   "reward_full_replay": 0.0,
+   "flipped_full": false
+  },
+  {
+   "task_id": 6,
+   "expected": [
+    "find_user_id_by_name_zip",
+    "get_user_details",
+    "get_order_details",
+    "get_product_details",
+    "get_product_details",
+    "exchange_delivered_order_items"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_name_zip",
+     "kwargs": {
+      "first_name": "Mei",
+      "last_name": "Kovacs",
+      "zip": "28236"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mei_kovacs_8020"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W5123456"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": "water_bottle_product_id"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": "desk_lamp_product_id"
+     }
+    },
+    {
+     "name": "exchange_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W5123456",
+      "item_ids": [
+       "desk_lamp_item_id"
+      ],
+      "new_item_ids": [
+       "new_desk_lamp_item_id"
+      ],
+      "payment_method_id": "payment_method_id"
+     }
+    }
+   ],
+   "secs": 14.0,
+   "reward_full_replay": 0.0,
+   "flipped_full": false
+  },
+  {
+   "task_id": 7,
+   "expected": [
+    "find_user_id_by_name_zip",
+    "get_user_details",
+    "get_order_details",
+    "get_product_details",
+    "get_product_details",
+    "exchange_delivered_order_items"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_name_zip",
+     "kwargs": {
+      "first_name": "Mei",
+      "last_name": "Kovacs",
+      "zip": "28236"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mei_kovacs_8020"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W0000000"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": "water_bottle_product_id"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": "desk_lamp_product_id"
+     }
+    },
+    {
+     "name": "exchange_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W0000000",
+      "item_ids": [
+       "desk_lamp_item_id"
+      ],
+      "new_item_ids": [
+       "less_bright_lamp_id"
+      ],
+      "payment_method_id": "payment_id"
+     }
+    }
+   ],
+   "secs": 16.7,
+   "reward_full_replay": 0.0,
+   "flipped_full": false
+  },
+  {
+   "task_id": 8,
+   "expected": [
+    "find_user_id_by_name_zip",
+    "get_user_details",
+    "get_order_details",
+    "get_product_details",
+    "get_product_details",
+    "exchange_delivered_order_items"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_name_zip",
+     "kwargs": {
+      "first_name": "Mei",
+      "last_name": "Kovacs",
+      "zip": "28236"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mei_kovacs_8020"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W5318608"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": "7843456789"
+     }
+    },
+    {
+     "name": "get_product_details",
+     "kwargs": {
+      "product_id": "1122334455"
+     }
+    },
+    {
+     "name": "exchange_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W5318608",
+      "item_ids": [
+       "5606522780"
+      ],
+      "new_item_ids": [
+       "6805564527"
+      ],
+      "payment_method_id": "credit_card_1234567"
+     }
+    }
+   ],
+   "secs": 14.2,
+   "reward_full_replay": 0.0,
+   "flipped_full": false
+  },
+  {
+   "task_id": 11,
+   "expected": [
+    "find_user_id_by_email",
+    "get_user_details",
+    "get_order_details",
+    "get_order_details",
+    "return_delivered_order_items",
+    "return_delivered_order_items"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_email",
+     "kwargs": {
+      "email": "mia.garcia2723@example.com"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mia_garcia_4516"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W5490111"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W7387996"
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W5490111",
+      "item_ids": [
+       "4579334072",
+       "1421289881",
+       "6117189161",
+       "4947717507"
+      ],
+      "payment_method_id": "credit_card_3124723"
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W7387996",
+      "item_ids": [
+       "5796612084"
+      ],
+      "payment_method_id": "paypal_9497703"
+     }
+    }
+   ],
+   "secs": 10.6,
+   "reward_full_replay": 1.0,
+   "flipped_full": true,
+   "k_star": 8,
+   "reward_at_k_star": 1.0,
+   "flipped_at_k_star": true
+  },
+  {
+   "task_id": 12,
+   "expected": [
+    "find_user_id_by_email",
+    "get_user_details",
+    "get_order_details",
+    "get_order_details",
+    "return_delivered_order_items",
+    "transfer_to_human_agents"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_email",
+     "kwargs": {
+      "email": "mia.garcia2723@example.com"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mia_garcia_4516"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W1111111"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W2222222"
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W1111111",
+      "item_ids": [
+       "item1"
+      ],
+      "payment_method_id": "paypal_XXXXXXX"
+     }
+    },
+    {
+     "name": "transfer_to_human_agents",
+     "kwargs": {
+      "summary": "Customer mia_garcia_4516 wants to return non-gaming items and keep keyboard and mouse. Prefers PayPal refund but payment method issue encountered."
+     }
+    }
+   ],
+   "secs": 14.4,
+   "reward_full_replay": 1.0,
+   "flipped_full": true
+  },
+  {
+   "task_id": 14,
+   "expected": [
+    "find_user_id_by_email",
+    "get_user_details",
+    "get_order_details",
+    "get_order_details",
+    "return_delivered_order_items",
+    "return_delivered_order_items"
+   ],
+   "derived_calls": [
+    {
+     "name": "find_user_id_by_email",
+     "kwargs": {
+      "email": "mia.garcia2723@example.com"
+     }
+    },
+    {
+     "name": "get_user_details",
+     "kwargs": {
+      "user_id": "mia_garcia_4516"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W5490111"
+     }
+    },
+    {
+     "name": "get_order_details",
+     "kwargs": {
+      "order_id": "#W7387996"
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W5490111",
+      "item_ids": [
+       "1421289881"
+      ],
+      "payment_method_id": "credit_card_3124723"
+     }
+    },
+    {
+     "name": "return_delivered_order_items",
+     "kwargs": {
+      "order_id": "#W7387996",
+      "item_ids": [
+       "5796612084"
+      ],
+      "payment_method_id": "paypal_9497703"
+     }
+    }
+   ],
+   "secs": 10.1,
+   "reward_full_replay": 0.0,
+   "flipped_full": false,
+   "k_star": 5,
+   "reward_at_k_star": 1.0,
+   "flipped_at_k_star": true
+  }
+ ],
+ "P-CAUSAL-FLIGHT": {
+  "flagged": 2,
+  "flips": 2,
+  "verdict": "PASS"
+ },
+ "exploratory_receipt": {
+  "failures": 7,
+  "full_replay_flips": 2
+ }
+}

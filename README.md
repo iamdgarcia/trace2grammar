@@ -48,7 +48,20 @@ does your evaluation actually exercise — and can you trust the outcome your tr
    +0.020/+0.072 deltas carried a model one-hot in the walk arm. (b) turn-level risk curve:
    14,011 walker-inferred prefixes, deterministic; turns 1–3 chance (stated), turn 4 first
    signal (+13.4pp fixed-flag lift), first stable AUROC ≥ 0.65 at turn 7, best in-flight 0.82 at
-   turn 11 (small cell, declared). (c) the polite-close inversion (66.8% of PASS vs 76.4% of
+   turn 11 (small cell, declared). **h10 SOTA push (31-oct, `h10_sota_curve.py` + `h10d_fusion.py`,
+   outputs `runtime/h10_sota_curve/`):** adding the write channel + omission flag (failures are
+   env-verified omissions, replay thread) moves the walk-only stable-0.65 detection from turn 7
+   to turn 5 (paired delta vs the h3 anchor +0.046 mean AUC over turns 4–9, cluster-bootstrap
+   95% CI [0.014, 0.080]); the text channel measured AT TURN LEVEL for the first time is the new
+   practical SOTA — AUROC 0.72 from turn 1, 0.76 at turn 4, 0.80 at turn 8 (mean 4–9: 0.787) —
+   and the walk adds no AUC beyond text in-flight either (fusion dAUROC −0.008, CI [−0.030,
+   +0.011]): the walk's value is interpretability + format-agnosticism, not add-on accuracy.
+   Causal receipt on fresh episodes (10 new flash-lite runs, `experiments/replay/h10e*` +
+   `h10f*`): the omission flag fires in-flight on 2/7 failures and BOTH flip the environment
+   reward 0→1 when repaired AT the flag turn (k*=8, k*=5, oracle = the env's own expected
+   actions); one of them repairs at k* but NOT after the agent's wrong writes — the in-flight
+   advantage made causal. The other 5 failures are not write-repairable (wrong answers on
+   read-only tasks / strict checks) — typed, not hidden. (c) the polite-close inversion (66.8% of PASS vs 76.4% of
    FAILED episodes end politely) does NOT survive stratification: CMH p=0.37, per-cell deltas
    from +31.9pp (sonnet/airline) to -1.3pp (gpt4o/retail) — compositional, treat as descriptive
    (`h5_inversion_stratified.py`). (d) the sim-to-real gap itself is real: median sim→real NN
