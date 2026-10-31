@@ -1,0 +1,60 @@
+{
+ "protocol": {
+  "alpha": 0.5,
+  "embed": "gemini-embedding-001",
+  "res": 24,
+  "eps": 0.05,
+  "pca": "numpy eigh top-2 (declared; _pca_basis cannot carry 3110 dims)"
+ },
+ "spaces": {
+  "structural": {
+   "region_bw0.04": {
+    "coverage_pct": 86.6,
+    "occupied": 313,
+    "uncovered": 42
+   },
+   "region_bw0.12": {
+    "coverage_pct": 100.0,
+    "occupied": 504,
+    "uncovered": 0
+   },
+   "instance": {
+    "r_honest": 0.0054,
+    "coverage_pct": 0.21,
+    "unique_real": 975
+   },
+   "nn_ratio": {
+    "R": 14.1568,
+    "ci": [
+     6.651,
+     36.917
+    ]
+   }
+  },
+  "composed": {
+   "region_bw0.04": {
+    "coverage_pct": 38.9,
+    "occupied": 355,
+    "uncovered": 217
+   },
+   "region_bw0.12": {
+    "coverage_pct": 89.8,
+    "occupied": 511,
+    "uncovered": 52
+   },
+   "instance": {
+    "r_honest": 0.0002,
+    "coverage_pct": 0.0,
+    "unique_real": 1669
+   },
+   "nn_ratio": {
+    "R": 76.5757,
+    "ci": [
+     57.594,
+     101.643
+    ]
+   }
+  }
+ },
+ "verdict": "PASS"
+}

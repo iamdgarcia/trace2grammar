@@ -1,0 +1,1349 @@
+{
+ "protocol": {
+  "n_pairs": 102,
+  "n_band_pairs": 138,
+  "band": "p90 per k",
+  "predicate": "P-A>=60% defined, P-B>=50% confirmed(+/-2)"
+ },
+ "P_A_pct": 51.0,
+ "P_A": "FAIL",
+ "P_B_pct": 40.4,
+ "P_B": "FAIL",
+ "tau_distribution": {
+  "1": 13,
+  "2": 10,
+  "3": 10,
+  "4": 7,
+  "5": 6,
+  "7": 2,
+  "8": 4
+ },
+ "pairs": [
+  {
+   "pair": [
+    "gpt4o:airline:39:2",
+    "gpt4o:airline:39:0"
+   ],
+   "task": "39",
+   "domain": "airline",
+   "model": "gpt4o",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "gpt4o:airline:43:1",
+    "gpt4o:airline:43:0"
+   ],
+   "task": "43",
+   "domain": "airline",
+   "model": "gpt4o",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "gpt4o:airline:47:2",
+    "gpt4o:airline:49:2"
+   ],
+   "task": "47",
+   "domain": "airline",
+   "model": "gpt4o",
+   "tau_sem": 2,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "gpt4o:retail:86:0",
+    "gpt4o:retail:86:3"
+   ],
+   "task": "86",
+   "domain": "retail",
+   "model": "gpt4o",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 9
+  },
+  {
+   "pair": [
+    "sonnet:airline:0:0",
+    "sonnet:airline:0:4"
+   ],
+   "task": "0",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 7,
+   "confirmed": false,
+   "shared_turns": 9
+  },
+  {
+   "pair": [
+    "sonnet:airline:1:1",
+    "sonnet:airline:1:0"
+   ],
+   "task": "1",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:airline:2:6",
+    "sonnet:airline:2:0"
+   ],
+   "task": "2",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:4:2",
+    "sonnet:airline:4:0"
+   ],
+   "task": "4",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:airline:5:1",
+    "sonnet:airline:5:0"
+   ],
+   "task": "5",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:6:0",
+    "sonnet:airline:6:2"
+   ],
+   "task": "6",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:airline:7:0",
+    "sonnet:airline:7:3"
+   ],
+   "task": "7",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 7,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:airline:9:3",
+    "sonnet:airline:9:0"
+   ],
+   "task": "9",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": 9,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:airline:10:1",
+    "sonnet:airline:10:0"
+   ],
+   "task": "10",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:airline:11:0",
+    "sonnet:airline:11:6"
+   ],
+   "task": "11",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 5,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:airline:13:1",
+    "sonnet:airline:13:0"
+   ],
+   "task": "13",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 8,
+   "err_turn": 8,
+   "confirmed": true,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:airline:14:3",
+    "sonnet:airline:14:0"
+   ],
+   "task": "14",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:airline:15:2",
+    "sonnet:airline:15:0"
+   ],
+   "task": "15",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": 6,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:airline:16:1",
+    "sonnet:airline:16:0"
+   ],
+   "task": "16",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:airline:17:0",
+    "sonnet:airline:17:3"
+   ],
+   "task": "17",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:20:2",
+    "sonnet:airline:20:0"
+   ],
+   "task": "20",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:21:0",
+    "sonnet:airline:21:1"
+   ],
+   "task": "21",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 3
+  },
+  {
+   "pair": [
+    "sonnet:airline:24:6",
+    "sonnet:airline:24:0"
+   ],
+   "task": "24",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:airline:27:0",
+    "sonnet:airline:27:5"
+   ],
+   "task": "27",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:airline:28:0",
+    "sonnet:airline:28:6"
+   ],
+   "task": "28",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 5,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:airline:29:0",
+    "sonnet:airline:29:1"
+   ],
+   "task": "29",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:30:0",
+    "sonnet:airline:30:1"
+   ],
+   "task": "30",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:airline:31:0",
+    "sonnet:airline:31:2"
+   ],
+   "task": "31",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 2
+  },
+  {
+   "pair": [
+    "sonnet:airline:32:0",
+    "sonnet:airline:32:3"
+   ],
+   "task": "32",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 6,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:airline:34:1",
+    "sonnet:airline:34:0"
+   ],
+   "task": "34",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:airline:35:1",
+    "sonnet:airline:35:0"
+   ],
+   "task": "35",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 2
+  },
+  {
+   "pair": [
+    "sonnet:airline:37:2",
+    "sonnet:airline:37:0"
+   ],
+   "task": "37",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:airline:39:1",
+    "sonnet:airline:39:0"
+   ],
+   "task": "39",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:40:3",
+    "sonnet:airline:40:0"
+   ],
+   "task": "40",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:41:0",
+    "sonnet:airline:41:3"
+   ],
+   "task": "41",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 2
+  },
+  {
+   "pair": [
+    "sonnet:airline:47:0",
+    "sonnet:airline:47:2"
+   ],
+   "task": "47",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:airline:48:0",
+    "sonnet:airline:48:3"
+   ],
+   "task": "48",
+   "domain": "airline",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 1
+  },
+  {
+   "pair": [
+    "sonnet:retail:0:3",
+    "sonnet:retail:0:0"
+   ],
+   "task": "0",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:1:5",
+    "sonnet:retail:1:0"
+   ],
+   "task": "1",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:2:1",
+    "sonnet:retail:2:0"
+   ],
+   "task": "2",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 4,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:3:0",
+    "sonnet:retail:3:1"
+   ],
+   "task": "3",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:4:3",
+    "sonnet:retail:4:0"
+   ],
+   "task": "4",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:5:0",
+    "sonnet:retail:5:2"
+   ],
+   "task": "5",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": 5,
+   "confirmed": true,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:6:3",
+    "sonnet:retail:6:0"
+   ],
+   "task": "6",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:7:0",
+    "sonnet:retail:7:1"
+   ],
+   "task": "7",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 3,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:8:0",
+    "sonnet:retail:8:4"
+   ],
+   "task": "8",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 5,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:9:2",
+    "sonnet:retail:9:0"
+   ],
+   "task": "9",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 5,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:12:4",
+    "sonnet:retail:12:0"
+   ],
+   "task": "12",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": 5,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:retail:14:6",
+    "sonnet:retail:14:0"
+   ],
+   "task": "14",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:15:4",
+    "sonnet:retail:15:0"
+   ],
+   "task": "15",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:16:2",
+    "sonnet:retail:16:0"
+   ],
+   "task": "16",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:20:0",
+    "sonnet:retail:20:1"
+   ],
+   "task": "20",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:21:0",
+    "sonnet:retail:21:4"
+   ],
+   "task": "21",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": 4,
+   "confirmed": true,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:22:0",
+    "sonnet:retail:22:1"
+   ],
+   "task": "22",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 8,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 9
+  },
+  {
+   "pair": [
+    "sonnet:retail:23:3",
+    "sonnet:retail:23:0"
+   ],
+   "task": "23",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 9
+  },
+  {
+   "pair": [
+    "sonnet:retail:27:0",
+    "sonnet:retail:27:6"
+   ],
+   "task": "27",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:29:4",
+    "sonnet:retail:29:0"
+   ],
+   "task": "29",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:33:1",
+    "sonnet:retail:33:0"
+   ],
+   "task": "33",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:35:1",
+    "sonnet:retail:35:0"
+   ],
+   "task": "35",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:38:5",
+    "sonnet:retail:38:0"
+   ],
+   "task": "38",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 3,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:retail:42:0",
+    "sonnet:retail:42:6"
+   ],
+   "task": "42",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 9
+  },
+  {
+   "pair": [
+    "sonnet:retail:43:7",
+    "sonnet:retail:43:0"
+   ],
+   "task": "43",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:45:0",
+    "sonnet:retail:45:2"
+   ],
+   "task": "45",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:46:1",
+    "sonnet:retail:46:0"
+   ],
+   "task": "46",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:47:7",
+    "sonnet:retail:47:0"
+   ],
+   "task": "47",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 3,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:49:2",
+    "sonnet:retail:49:0"
+   ],
+   "task": "49",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:51:7",
+    "sonnet:retail:51:0"
+   ],
+   "task": "51",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 2,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 3
+  },
+  {
+   "pair": [
+    "sonnet:retail:54:0",
+    "sonnet:retail:54:4"
+   ],
+   "task": "54",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 7,
+   "err_turn": 3,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:55:0",
+    "sonnet:retail:55:2"
+   ],
+   "task": "55",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:56:1",
+    "sonnet:retail:56:0"
+   ],
+   "task": "56",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:57:4",
+    "sonnet:retail:57:0"
+   ],
+   "task": "57",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:58:4",
+    "sonnet:retail:58:0"
+   ],
+   "task": "58",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:60:0",
+    "sonnet:retail:60:1"
+   ],
+   "task": "60",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 4
+  },
+  {
+   "pair": [
+    "sonnet:retail:64:1",
+    "sonnet:retail:64:0"
+   ],
+   "task": "64",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 5,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:67:4",
+    "sonnet:retail:67:0"
+   ],
+   "task": "67",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 7,
+   "err_turn": 3,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:69:5",
+    "sonnet:retail:69:0"
+   ],
+   "task": "69",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": 3,
+   "confirmed": true,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:71:0",
+    "sonnet:retail:71:1"
+   ],
+   "task": "71",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:72:4",
+    "sonnet:retail:72:0"
+   ],
+   "task": "72",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:74:0",
+    "sonnet:retail:74:4"
+   ],
+   "task": "74",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 3,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:77:1",
+    "sonnet:retail:77:0"
+   ],
+   "task": "77",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 5,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:81:0",
+    "sonnet:retail:81:1"
+   ],
+   "task": "81",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 5,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:82:0",
+    "sonnet:retail:82:2"
+   ],
+   "task": "82",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 4,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:85:4",
+    "sonnet:retail:85:0"
+   ],
+   "task": "85",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 4,
+   "err_turn": 5,
+   "confirmed": true,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:87:5",
+    "sonnet:retail:87:0"
+   ],
+   "task": "87",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:88:2",
+    "sonnet:retail:88:0"
+   ],
+   "task": "88",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:89:1",
+    "sonnet:retail:89:0"
+   ],
+   "task": "89",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:90:4",
+    "sonnet:retail:90:0"
+   ],
+   "task": "90",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:91:0",
+    "sonnet:retail:91:3"
+   ],
+   "task": "91",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:93:1",
+    "sonnet:retail:93:0"
+   ],
+   "task": "93",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 1,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:94:1",
+    "sonnet:retail:94:0"
+   ],
+   "task": "94",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 5
+  },
+  {
+   "pair": [
+    "sonnet:retail:96:2",
+    "sonnet:retail:96:0"
+   ],
+   "task": "96",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:97:2",
+    "sonnet:retail:97:0"
+   ],
+   "task": "97",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:100:0",
+    "sonnet:retail:100:1"
+   ],
+   "task": "100",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 10
+  },
+  {
+   "pair": [
+    "sonnet:retail:101:0",
+    "sonnet:retail:101:4"
+   ],
+   "task": "101",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 8,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:102:0",
+    "sonnet:retail:102:1"
+   ],
+   "task": "102",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:103:4",
+    "sonnet:retail:103:0"
+   ],
+   "task": "103",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 6,
+   "confirmed": false,
+   "shared_turns": 6
+  },
+  {
+   "pair": [
+    "sonnet:retail:105:0",
+    "sonnet:retail:105:3"
+   ],
+   "task": "105",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 12,
+   "confirmed": false,
+   "shared_turns": 13
+  },
+  {
+   "pair": [
+    "sonnet:retail:107:5",
+    "sonnet:retail:107:0"
+   ],
+   "task": "107",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": 3,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:108:1",
+    "sonnet:retail:108:0"
+   ],
+   "task": "108",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:110:0",
+    "sonnet:retail:110:2"
+   ],
+   "task": "110",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:111:2",
+    "sonnet:retail:111:0"
+   ],
+   "task": "111",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 8
+  },
+  {
+   "pair": [
+    "sonnet:retail:112:5",
+    "sonnet:retail:112:0"
+   ],
+   "task": "112",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": null,
+   "err_turn": null,
+   "confirmed": false,
+   "shared_turns": 7
+  },
+  {
+   "pair": [
+    "sonnet:retail:113:0",
+    "sonnet:retail:113:2"
+   ],
+   "task": "113",
+   "domain": "retail",
+   "model": "sonnet",
+   "tau_sem": 8,
+   "err_turn": 6,
+   "confirmed": true,
+   "shared_turns": 8
+  }
+ ]
+}

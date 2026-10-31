@@ -1,0 +1,55 @@
+{
+ "sweep": [
+  {
+   "alpha": 0.0,
+   "auroc": 0.3434
+  },
+  {
+   "alpha": 0.1,
+   "auroc": 0.3432
+  },
+  {
+   "alpha": 0.2,
+   "auroc": 0.3441
+  },
+  {
+   "alpha": 0.3,
+   "auroc": 0.3446
+  },
+  {
+   "alpha": 0.4,
+   "auroc": 0.3443
+  },
+  {
+   "alpha": 0.5,
+   "auroc": 0.3434
+  },
+  {
+   "alpha": 0.6,
+   "auroc": 0.3453
+  },
+  {
+   "alpha": 0.7,
+   "auroc": 0.3441
+  },
+  {
+   "alpha": 0.8,
+   "auroc": 0.3446
+  },
+  {
+   "alpha": 0.9,
+   "auroc": 0.3452
+  },
+  {
+   "alpha": 1.0,
+   "auroc": 0.5395
+  }
+ ],
+ "structural_only": 0.3429,
+ "best": {
+  "alpha": 1.0,
+  "auroc": 0.5395
+ },
+ "kill_triggered": false,
+ "verdict": "KEEP"
+}

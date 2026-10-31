@@ -1,0 +1,20 @@
+{
+ "protocol": {
+  "predicate": "miss_rate(N) - miss_rate(D) >= +15pp",
+  "definition": "walker-miss = fail twin's shipped walker verdict == theta_cont"
+ },
+ "populations": {
+  "N": {
+   "n": 50,
+   "walker_miss": 9,
+   "miss_rate": 18.0
+  },
+  "D": {
+   "n": 52,
+   "walker_miss": 8,
+   "miss_rate": 15.4
+  }
+ },
+ "diff_pp": 2.6,
+ "verdict": "FAIL"
+}

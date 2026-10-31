@@ -1,0 +1,29 @@
+{
+ "protocol": {
+  "predicate": ">=2/3 scripted-correct replays flip env reward",
+  "seed": [
+   1,
+   2,
+   4
+  ],
+  "version": 6
+ },
+ "probes": [
+  {
+   "task_id": 1,
+   "flipped": true,
+   "reward": 1.0
+  },
+  {
+   "task_id": 2,
+   "flipped": true,
+   "reward": 1.0
+  },
+  {
+   "task_id": 4,
+   "flipped": true,
+   "reward": 1.0
+  }
+ ],
+ "verdict": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+ "protocol": {
+  "P_R3": "earliest-k exists 3/3 and reproducible",
+  "P_R4": ">=2/3 discriminate"
+ },
+ "results": {
+  "1": {
+   "n_trace_calls": 3,
+   "sep_k": 0,
+   "sep_repro": 0,
+   "wrong_reward": 0.0,
+   "k_mis": 1
+  },
+  "2": {
+   "n_trace_calls": 5,
+   "sep_k": 0,
+   "sep_repro": 0,
+   "wrong_reward": 0.0,
+   "k_mis": 0
+  },
+  "4": {
+   "n_trace_calls": 2,
+   "sep_k": 0,
+   "sep_repro": 0,
+   "wrong_reward": 0.0,
+   "k_mis": 0
+  }
+ },
+ "P_R3": "PASS",
+ "P_R4": "PASS"
+}

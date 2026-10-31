@@ -1,0 +1,38 @@
+{
+ "protocol": {
+  "n_groups_mixed": 102,
+  "n_groups_passonly": 53,
+  "n_pairs": {
+   "mixed": 1159,
+   "passpass": 347
+  },
+  "embed_model": "gemini-embedding-001",
+  "alpha": 0.5,
+  "seed": 20261030,
+  "predicate": "composed>=0.60 AND semantic<=0.55 AND structural<=composed"
+ },
+ "results": {
+  "semantic": {
+   "auroc": 0.4745,
+   "ci": [
+    0.4424,
+    0.5077
+   ]
+  },
+  "structural": {
+   "auroc": 0.3953,
+   "ci": [
+    0.3586,
+    0.4347
+   ]
+  },
+  "composed": {
+   "auroc": 0.3948,
+   "ci": [
+    0.3592,
+    0.4318
+   ]
+  }
+ },
+ "verdict": "FAIL"
+}

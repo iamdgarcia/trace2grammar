@@ -1,0 +1,215 @@
+{
+ "protocol": {
+  "n": 34,
+  "predicate": "flip>=50%",
+  "model": "gemini-2.5-flash-lite"
+ },
+ "P_E6": "PASS",
+ "flip_pct": 58.8,
+ "detail": [
+  {
+   "id": "sonnet:airline:0:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:airline:1:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:airline:7:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:airline:9:3",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:airline:11:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:airline:13:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:airline:15:2",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:airline:32:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:2:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:5:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:6:3",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:7:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:8:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:9:2",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:12:4",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:21:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:27:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:33:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:35:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:38:5",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:43:7",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:46:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:47:7",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:55:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:56:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:58:4",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:64:1",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:67:4",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:69:5",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:85:4",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:103:4",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:105:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  },
+  {
+   "id": "sonnet:retail:107:5",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_aban",
+   "flip": false
+  },
+  {
+   "id": "sonnet:retail:113:0",
+   "verdict0": "theta_aban",
+   "verdict2": "theta_cont",
+   "flip": true
+  }
+ ]
+}

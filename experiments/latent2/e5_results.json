@@ -1,0 +1,364 @@
+{
+ "protocol": {
+  "n_pairs": 39,
+  "predicate": "flip>=60% AND rejoin>=60%",
+  "band": "p90 pass-pass per k",
+  "split": "C = F[:tau-1] + P[tau:]"
+ },
+ "P_E5": "FAIL",
+ "flip_pct": 20.5,
+ "rejoin_pct": 51.3,
+ "detail": [
+  {
+   "pair": [
+    "gpt4o:airline:39:2",
+    "gpt4o:airline:39:0"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.67
+  },
+  {
+   "pair": [
+    "gpt4o:airline:43:1",
+    "gpt4o:airline:43:0"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "gpt4o:airline:47:2",
+    "gpt4o:airline:49:2"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.75
+  },
+  {
+   "pair": [
+    "sonnet:airline:1:1",
+    "sonnet:airline:1:0"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:airline:6:0",
+    "sonnet:airline:6:2"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.75
+  },
+  {
+   "pair": [
+    "sonnet:airline:9:3",
+    "sonnet:airline:9:0"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.86
+  },
+  {
+   "pair": [
+    "sonnet:airline:10:1",
+    "sonnet:airline:10:0"
+   ],
+   "tau": 2,
+   "flip": true,
+   "rejoin": 0.83
+  },
+  {
+   "pair": [
+    "sonnet:airline:13:1",
+    "sonnet:airline:13:0"
+   ],
+   "tau": 8,
+   "flip": true,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:airline:15:2",
+    "sonnet:airline:15:0"
+   ],
+   "tau": 2,
+   "flip": true,
+   "rejoin": 0.86
+  },
+  {
+   "pair": [
+    "sonnet:airline:20:2",
+    "sonnet:airline:20:0"
+   ],
+   "tau": 2,
+   "flip": true,
+   "rejoin": 0.83
+  },
+  {
+   "pair": [
+    "sonnet:airline:28:0",
+    "sonnet:airline:28:6"
+   ],
+   "tau": 5,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:airline:29:0",
+    "sonnet:airline:29:1"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:airline:39:1",
+    "sonnet:airline:39:0"
+   ],
+   "tau": 4,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:airline:41:0",
+    "sonnet:airline:41:3"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:5:0",
+    "sonnet:retail:5:2"
+   ],
+   "tau": 4,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:6:3",
+    "sonnet:retail:6:0"
+   ],
+   "tau": 4,
+   "flip": false,
+   "rejoin": 0.33
+  },
+  {
+   "pair": [
+    "sonnet:retail:8:0",
+    "sonnet:retail:8:4"
+   ],
+   "tau": 5,
+   "flip": false,
+   "rejoin": 0.5
+  },
+  {
+   "pair": [
+    "sonnet:retail:9:2",
+    "sonnet:retail:9:0"
+   ],
+   "tau": 5,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:15:4",
+    "sonnet:retail:15:0"
+   ],
+   "tau": 4,
+   "flip": true,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:16:2",
+    "sonnet:retail:16:0"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.75
+  },
+  {
+   "pair": [
+    "sonnet:retail:20:0",
+    "sonnet:retail:20:1"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:21:0",
+    "sonnet:retail:21:4"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.83
+  },
+  {
+   "pair": [
+    "sonnet:retail:22:0",
+    "sonnet:retail:22:1"
+   ],
+   "tau": 8,
+   "flip": false,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:43:7",
+    "sonnet:retail:43:0"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.25
+  },
+  {
+   "pair": [
+    "sonnet:retail:46:1",
+    "sonnet:retail:46:0"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.8
+  },
+  {
+   "pair": [
+    "sonnet:retail:51:7",
+    "sonnet:retail:51:0"
+   ],
+   "tau": 2,
+   "flip": false,
+   "rejoin": 0.8
+  },
+  {
+   "pair": [
+    "sonnet:retail:54:0",
+    "sonnet:retail:54:4"
+   ],
+   "tau": 7,
+   "flip": false,
+   "rejoin": 0.5
+  },
+  {
+   "pair": [
+    "sonnet:retail:55:0",
+    "sonnet:retail:55:2"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.83
+  },
+  {
+   "pair": [
+    "sonnet:retail:57:4",
+    "sonnet:retail:57:0"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 0.5
+  },
+  {
+   "pair": [
+    "sonnet:retail:58:4",
+    "sonnet:retail:58:0"
+   ],
+   "tau": 4,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:64:1",
+    "sonnet:retail:64:0"
+   ],
+   "tau": 5,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:67:4",
+    "sonnet:retail:67:0"
+   ],
+   "tau": 7,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:69:5",
+    "sonnet:retail:69:0"
+   ],
+   "tau": 4,
+   "flip": false,
+   "rejoin": 0.33
+  },
+  {
+   "pair": [
+    "sonnet:retail:74:0",
+    "sonnet:retail:74:4"
+   ],
+   "tau": 3,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:77:1",
+    "sonnet:retail:77:0"
+   ],
+   "tau": 5,
+   "flip": false,
+   "rejoin": 1.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:81:0",
+    "sonnet:retail:81:1"
+   ],
+   "tau": 5,
+   "flip": true,
+   "rejoin": 0.5
+  },
+  {
+   "pair": [
+    "sonnet:retail:85:4",
+    "sonnet:retail:85:0"
+   ],
+   "tau": 4,
+   "flip": false,
+   "rejoin": 0.5
+  },
+  {
+   "pair": [
+    "sonnet:retail:101:0",
+    "sonnet:retail:101:4"
+   ],
+   "tau": 8,
+   "flip": true,
+   "rejoin": 0.0
+  },
+  {
+   "pair": [
+    "sonnet:retail:113:0",
+    "sonnet:retail:113:2"
+   ],
+   "tau": 8,
+   "flip": true,
+   "rejoin": 0.0
+  }
+ ]
+}
