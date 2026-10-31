@@ -1,0 +1,51 @@
+{
+ "protocol": {
+  "predicate": ">=3/5 episodes complete with reward signal",
+  "tasks": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "results": [
+  {
+   "task_id": 0,
+   "steps": 13,
+   "reward": 0.0,
+   "done": true,
+   "secs": 36.8
+  },
+  {
+   "task_id": 1,
+   "steps": 17,
+   "reward": 0.0,
+   "done": true,
+   "secs": 185.6
+  },
+  {
+   "task_id": 2,
+   "steps": 5,
+   "reward": 0.0,
+   "done": true,
+   "secs": 17.3
+  },
+  {
+   "task_id": 3,
+   "steps": 9,
+   "reward": 0.0,
+   "done": true,
+   "secs": 34.4
+  },
+  {
+   "task_id": 4,
+   "steps": 10,
+   "reward": 0.0,
+   "done": true,
+   "secs": 35.4
+  }
+ ],
+ "ok": 5,
+ "verdict": "PASS"
+}
