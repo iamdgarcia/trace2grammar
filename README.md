@@ -69,7 +69,13 @@ does your evaluation actually exercise — and can you trust the outcome your tr
    family is at chance out-of-sample (0.500, n=23) — as E3 predicted (an earlier pooled
    reading claiming both families rank was a dev-memorization artifact, caught by audit and
    retracted; `h11b_family_testonly.py`): the cross-task curve = task prior + real
-   per-episode evidence from turn 1. (c) the polite-close inversion (66.8% of PASS vs 76.4% of
+   per-episode evidence from turn 1. **h12 two-channel decomposition (`h12_two_channel.py`):
+   the walk channel is ALSO episode-bearing within task (0.6185 final-turn, CI [0.551,
+   0.691]) but builds its evidence later (chance at turns 1-2, ~0.60-0.64 from turn 3) while
+   text has it from turn 1; on the silent (write-check) family NO channel ranks within task
+   (walk inverted 0.40 — silent failures are structurally cleaner than passes, echoing E2;
+   text 0.50; omission flag 0.50) — there the signal is the causal repair point (2/2
+   env-verified flips), not a ranking: rephrase as "act, don't re-rank". (c) the polite-close inversion (66.8% of PASS vs 76.4% of
    FAILED episodes end politely) does NOT survive stratification: CMH p=0.37, per-cell deltas
    from +31.9pp (sonnet/airline) to -1.3pp (gpt4o/retail) — compositional, treat as descriptive
    (`h5_inversion_stratified.py`). (d) the sim-to-real gap itself is real: median sim→real NN
